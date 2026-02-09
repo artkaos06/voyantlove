@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -63,7 +64,14 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.ico" />
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+        <Script
+          src="https://glyphex.io/tracker.js"
+          data-site-id="b2906866-3097-4875-b470-7b8e7c49b01f"
+          strategy="afterInteractive"
+        />
+      </body>
     </html>
   );
 }
