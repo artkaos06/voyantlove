@@ -1,0 +1,589 @@
+{
+  "meta": {
+    "version": "1.0",
+    "language": "fr-FR",
+    "domain": "voyance-amoureuse",
+    "niche": "Love and romantic psychic consultations",
+    "lastUpdated": "2025-02-08",
+    "totalEntities": 120
+  },
+  
+  "coreEntities": {
+    "primary": [
+      {
+        "id": "voyance-amoureuse",
+        "term": "voyance amoureuse",
+        "definition": "Consultation de voyance spécialisée dans les questions sentimentales et amoureuses",
+        "synonyms": ["voyance sentimentale", "voyance du cœur", "consultation amour"],
+        "relatedTerms": ["tarot amoureux", "voyant spécialisé amour", "guidance amoureuse"],
+        "searchVolume": "very-high",
+        "importance": "critical"
+      },
+      {
+        "id": "tarot-amour",
+        "term": "tarot de l'amour",
+        "definition": "Lecture des cartes de tarot spécifiquement pour les questions amoureuses",
+        "synonyms": ["tirage amoureux", "tarot du couple", "tarot sentimental"],
+        "relatedTerms": ["tarot relationnel", "tirage de l'amour"],
+        "searchVolume": "very-high",
+        "importance": "critical"
+      },
+      {
+        "id": "voyant-amour",
+        "term": "voyant spécialisé amour",
+        "definition": "Voyant expert en questions sentimentales et relationnelles",
+        "synonyms": ["voyant de l'amour", "expert sentimental"],
+        "relatedTerms": ["conseil amoureux", "guidance sentimentale"],
+        "searchVolume": "high",
+        "importance": "critical"
+      },
+      {
+        "id": "question-amoureuse",
+        "term": "question amoureuse",
+        "definition": "Interrogation portant sur la vie sentimentale",
+        "synonyms": ["question sentimentale", "question de cœur"],
+        "relatedTerms": ["doute amoureux", "interrogation relation"],
+        "searchVolume": "high",
+        "importance": "high"
+      }
+    ],
+    
+    "loveSituationCategories": [
+      {
+        "id": "reconciliation",
+        "term": "réconciliation amoureuse",
+        "category": "Rupture & Retour",
+        "definition": "Retrouver son ex-partenaire et reconstruire la relation",
+        "synonyms": ["reconquête", "retour de l'être aimé", "retrouvailles"],
+        "relatedTerms": ["reconquérir son ex", "ex qui revient", "seconde chance"],
+        "searchVolume": "very-high",
+        "importance": "critical",
+        "emotionalIntensity": "very-high"
+      },
+      {
+        "id": "rupture",
+        "term": "rupture amoureuse",
+        "definition": "Séparation d'un couple et ses conséquences émotionnelles",
+        "synonyms": ["séparation", "fin de relation", "breakup"],
+        "relatedTerms": ["chagrin d'amour", "peine de cœur", "séparation difficile"],
+        "searchVolume": "very-high",
+        "importance": "critical",
+        "emotionalIntensity": "very-high"
+      },
+      {
+        "id": "ex-retour",
+        "term": "retour de l'ex",
+        "definition": "Ex-partenaire qui revient dans la vie",
+        "synonyms": ["ex qui revient", "retour ex", "comeback"],
+        "relatedTerms": ["signes de retour", "ex qui regrette", "possibilité de retour"],
+        "searchVolume": "very-high",
+        "importance": "critical",
+        "emotionalIntensity": "high"
+      },
+      {
+        "id": "nouvelle-rencontre",
+        "term": "nouvelle rencontre amoureuse",
+        "definition": "Faire une nouvelle rencontre sentimentale",
+        "synonyms": ["rencontre amoureuse", "nouvelle relation", "nouvel amour"],
+        "relatedTerms": ["trouver l'amour", "rencontrer quelqu'un", "début de relation"],
+        "searchVolume": "very-high",
+        "importance": "critical",
+        "emotionalIntensity": "medium"
+      },
+      {
+        "id": "ame-soeur",
+        "term": "âme sœur",
+        "definition": "La personne destinée, le partenaire idéal",
+        "synonyms": ["âme jumelle", "moitié", "partenaire idéal"],
+        "relatedTerms": ["flamme jumelle", "destinée amoureuse", "rencontre karmique"],
+        "searchVolume": "high",
+        "importance": "high",
+        "emotionalIntensity": "high"
+      },
+      {
+        "id": "infidelite",
+        "term": "infidélité",
+        "definition": "Trahison amoureuse, relation extraconjugale",
+        "synonyms": ["tromperie", "adultère", "trahison"],
+        "relatedTerms": ["mensonge", "double vie", "soupçon d'infidélité"],
+        "searchVolume": "high",
+        "importance": "high",
+        "emotionalIntensity": "very-high"
+      },
+      {
+        "id": "distance",
+        "term": "relation à distance",
+        "definition": "Couple séparé géographiquement",
+        "synonyms": ["amour à distance", "couple éloigné", "longue distance"],
+        "relatedTerms": ["éloignement", "distance géographique", "séparation physique"],
+        "searchVolume": "medium",
+        "importance": "medium",
+        "emotionalIntensity": "medium"
+      },
+      {
+        "id": "engagement",
+        "term": "engagement amoureux",
+        "definition": "S'engager dans une relation sérieuse",
+        "synonyms": ["commitment", "officialisation", "projet de couple"],
+        "relatedTerms": ["mariage", "pacs", "vie commune"],
+        "searchVolume": "medium",
+        "importance": "medium",
+        "emotionalIntensity": "medium"
+      },
+      {
+        "id": "amour-impossible",
+        "term": "amour impossible",
+        "definition": "Relation amoureuse empêchée par des obstacles",
+        "synonyms": ["amour interdit", "relation impossible", "amour contrarié"],
+        "relatedTerms": ["obstacle amoureux", "barrière", "empêchement"],
+        "searchVolume": "medium",
+        "importance": "medium",
+        "emotionalIntensity": "very-high"
+      },
+      {
+        "id": "triangle-amoureux",
+        "term": "triangle amoureux",
+        "definition": "Situation impliquant trois personnes sentimentalement",
+        "synonyms": ["amour à trois", "rivalité amoureuse"],
+        "relatedTerms": ["choix entre deux personnes", "hésitation amoureuse"],
+        "searchVolume": "low",
+        "importance": "medium",
+        "emotionalIntensity": "high"
+      }
+    ],
+    
+    "emotionalStates": [
+      {
+        "id": "chagrin-amour",
+        "term": "chagrin d'amour",
+        "definition": "Souffrance émotionnelle suite à une déception amoureuse",
+        "synonyms": ["peine de cœur", "cœur brisé", "douleur sentimentale"],
+        "relatedTerms": ["guérir", "surmonter", "oublier"],
+        "searchVolume": "very-high",
+        "importance": "critical"
+      },
+      {
+        "id": "doute-amoureux",
+        "term": "doute amoureux",
+        "definition": "Incertitude sur ses sentiments ou la relation",
+        "synonyms": ["questionnement", "hésitation sentimentale"],
+        "relatedTerms": ["interrogation", "remise en question"],
+        "searchVolume": "high",
+        "importance": "high"
+      },
+      {
+        "id": "jalousie",
+        "term": "jalousie",
+        "definition": "Peur de perdre l'être aimé au profit d'un rival",
+        "synonyms": ["possessivité", "insécurité amoureuse"],
+        "relatedTerms": ["manque de confiance", "peur de perdre"],
+        "searchVolume": "medium",
+        "importance": "medium"
+      },
+      {
+        "id": "amour-non-partage",
+        "term": "amour non partagé",
+        "definition": "Sentiments amoureux non réciproques",
+        "synonyms": ["amour à sens unique", "amour non réciproque"],
+        "relatedTerms": ["ami-zone", "friendzone", "rejet amoureux"],
+        "searchVolume": "medium",
+        "importance": "medium"
+      },
+      {
+        "id": "manque",
+        "term": "manque affectif",
+        "definition": "Sentiment d'absence de l'être aimé",
+        "synonyms": ["absence", "éloignement émotionnel"],
+        "relatedTerms": ["distance émotionnelle", "besoin de présence"],
+        "searchVolume": "medium",
+        "importance": "medium"
+      },
+      {
+        "id": "espoir",
+        "term": "espoir amoureux",
+        "definition": "Attente positive d'une issue favorable en amour",
+        "synonyms": ["espérance", "optimisme sentimental"],
+        "relatedTerms": ["croire en l'amour", "garder espoir"],
+        "searchVolume": "medium",
+        "importance": "medium"
+      }
+    ],
+    
+    "relationshipStages": [
+      {
+        "id": "debut-relation",
+        "term": "début de relation",
+        "definition": "Phase initiale d'une relation amoureuse",
+        "synonyms": ["commencement", "prémices", "premiers moments"],
+        "relatedTerms": ["coup de foudre", "séduction", "premiers rendez-vous"],
+        "searchVolume": "high",
+        "importance": "high"
+      },
+      {
+        "id": "couple-naissant",
+        "term": "couple naissant",
+        "definition": "Relation amoureuse en construction",
+        "synonyms": ["jeune couple", "nouvelle relation"],
+        "relatedTerms": ["construction relation", "apprendre à se connaître"],
+        "searchVolume": "medium",
+        "importance": "medium"
+      },
+      {
+        "id": "vie-de-couple",
+        "term": "vie de couple",
+        "definition": "Quotidien et dynamique d'une relation établie",
+        "synonyms": ["vie à deux", "relation établie"],
+        "relatedTerms": ["routine de couple", "harmonie", "équilibre"],
+        "searchVolume": "high",
+        "importance": "high"
+      },
+      {
+        "id": "crise-couple",
+        "term": "crise de couple",
+        "definition": "Période difficile dans la relation",
+        "synonyms": ["conflit", "tensions", "problèmes relationnels"],
+        "relatedTerms": ["dispute", "désaccord", "incompréhension"],
+        "searchVolume": "high",
+        "importance": "high"
+      },
+      {
+        "id": "reconstruction",
+        "term": "reconstruction du couple",
+        "definition": "Processus de réparation après une crise",
+        "synonyms": ["reconstruire", "réparer la relation"],
+        "relatedTerms": ["pardon", "nouveau départ", "seconde chance"],
+        "searchVolume": "medium",
+        "importance": "medium"
+      }
+    ],
+    
+    "loveConcepts": [
+      {
+        "id": "amour-veritable",
+        "term": "amour véritable",
+        "definition": "Sentiment amoureux profond et authentique",
+        "synonyms": ["vrai amour", "amour sincère", "amour profond"],
+        "relatedTerms": ["authenticité", "sentiments vrais"],
+        "searchVolume": "high",
+        "importance": "high"
+      },
+      {
+        "id": "compatibilite",
+        "term": "compatibilité amoureuse",
+        "definition": "Adéquation entre deux personnes sur le plan sentimental",
+        "synonyms": ["affinité", "accord", "harmonie"],
+        "relatedTerms": ["compatibilité astrale", "signes astrologiques"],
+        "searchVolume": "medium",
+        "importance": "medium"
+      },
+      {
+        "id": "destine",
+        "term": "destinée amoureuse",
+        "definition": "Chemin prédestiné en matière de vie sentimentale",
+        "synonyms": ["destin amoureux", "karma amoureux"],
+        "relatedTerms": ["âme sœur", "rencontre karmique"],
+        "searchVolume": "medium",
+        "importance": "medium"
+      },
+      {
+        "id": "avenir-amoureux",
+        "term": "avenir amoureux",
+        "definition": "Futur sentimental et évolution de la relation",
+        "synonyms": ["futur sentimental", "évolution de couple"],
+        "relatedTerms": ["prédiction amour", "projection future"],
+        "searchVolume": "very-high",
+        "importance": "critical"
+      },
+      {
+        "id": "signes-amour",
+        "term": "signes d'amour",
+        "definition": "Indices révélant les sentiments de l'autre",
+        "synonyms": ["preuves d'amour", "manifestations sentimentales"],
+        "relatedTerms": ["déclaration", "attention", "gestes"],
+        "searchVolume": "high",
+        "importance": "high"
+      }
+    ],
+    
+    "divinatoryMethods": [
+      {
+        "id": "tirage-amour",
+        "term": "tirage amoureux",
+        "definition": "Tirage de cartes spécifique aux questions d'amour",
+        "types": ["tirage à 3 cartes", "tirage en croix", "tirage relationnel"],
+        "relatedTerms": ["spread amoureux", "consultation cartes"],
+        "searchVolume": "very-high",
+        "importance": "critical"
+      },
+      {
+        "id": "oracle-amour",
+        "term": "oracle de l'amour",
+        "definition": "Jeu de cartes oracle dédié aux questions sentimentales",
+        "types": ["oracle des anges", "oracle gé", "oracle amoureux"],
+        "relatedTerms": ["guidance amoureuse", "messages d'amour"],
+        "searchVolume": "high",
+        "importance": "high"
+      },
+      {
+        "id": "astrologie-amoureuse",
+        "term": "astrologie amoureuse",
+        "definition": "Étude des compatibilités et affinités astrologiques",
+        "synonyms": ["synastrie", "compatibilité astrale"],
+        "relatedTerms": ["signes compatibles", "thème de couple"],
+        "searchVolume": "high",
+        "importance": "high"
+      },
+      {
+        "id": "numerologie-amour",
+        "term": "numérologie amoureuse",
+        "definition": "Analyse des nombres pour comprendre la relation",
+        "synonyms": ["numérologie du couple"],
+        "relatedTerms": ["chemin de vie amoureux", "compatibilité numérologique"],
+        "searchVolume": "medium",
+        "importance": "medium"
+      }
+    ],
+    
+    "specificQuestions": [
+      {
+        "id": "quand-rencontre",
+        "term": "quand vais-je rencontrer quelqu'un",
+        "queryPattern": "quand vais-je rencontrer l'amour",
+        "intent": "timing-prediction",
+        "searchVolume": "very-high",
+        "importance": "critical"
+      },
+      {
+        "id": "va-t-il-revenir",
+        "term": "va-t-il/elle revenir",
+        "queryPattern": "est-ce que mon ex va revenir",
+        "intent": "reconciliation-prediction",
+        "searchVolume": "very-high",
+        "importance": "critical"
+      },
+      {
+        "id": "maime-t-il",
+        "term": "m'aime-t-il/elle",
+        "queryPattern": "est-ce qu'il/elle m'aime vraiment",
+        "intent": "feelings-verification",
+        "searchVolume": "very-high",
+        "importance": "critical"
+      },
+      {
+        "id": "pense-t-il-moi",
+        "term": "pense-t-il/elle à moi",
+        "queryPattern": "est-ce qu'il/elle pense à moi",
+        "intent": "thoughts-about-me",
+        "searchVolume": "high",
+        "importance": "high"
+      },
+      {
+        "id": "que-ressent-il",
+        "term": "que ressent-il/elle",
+        "queryPattern": "quels sont ses sentiments",
+        "intent": "feelings-analysis",
+        "searchVolume": "high",
+        "importance": "high"
+      },
+      {
+        "id": "sommes-nous-faits",
+        "term": "sommes-nous faits l'un pour l'autre",
+        "queryPattern": "compatibilité avec mon partenaire",
+        "intent": "compatibility-check",
+        "searchVolume": "high",
+        "importance": "high"
+      },
+      {
+        "id": "va-t-on-se-remettre",
+        "term": "va-t-on se remettre ensemble",
+        "queryPattern": "réconciliation possible",
+        "intent": "reconciliation-possibility",
+        "searchVolume": "very-high",
+        "importance": "critical"
+      },
+      {
+        "id": "dois-je-attendre",
+        "term": "dois-je l'attendre",
+        "queryPattern": "dois-je attendre mon ex",
+        "intent": "decision-guidance",
+        "searchVolume": "high",
+        "importance": "high"
+      }
+    ],
+    
+    "obstacles": [
+      {
+        "id": "distance-physique",
+        "term": "distance géographique",
+        "definition": "Éloignement physique entre les partenaires",
+        "synonyms": ["éloignement", "séparation géographique"],
+        "relatedTerms": ["relation longue distance", "couple éloigné"],
+        "searchVolume": "medium",
+        "importance": "medium"
+      },
+      {
+        "id": "difference-age",
+        "term": "différence d'âge",
+        "definition": "Écart d'âge important entre partenaires",
+        "synonyms": ["écart d'âge"],
+        "relatedTerms": ["couple avec différence d'âge"],
+        "searchVolume": "low",
+        "importance": "low"
+      },
+      {
+        "id": "famille-opposee",
+        "term": "opposition familiale",
+        "definition": "Famille qui désapprouve la relation",
+        "synonyms": ["famille contre", "désapprobation familiale"],
+        "relatedTerms": ["obstacle familial", "conflit famille"],
+        "searchVolume": "low",
+        "importance": "medium"
+      },
+      {
+        "id": "ex-envahissant",
+        "term": "ex envahissant",
+        "definition": "Ancien partenaire qui interfère dans la nouvelle relation",
+        "synonyms": ["ex qui dérange", "ex présent"],
+        "relatedTerms": ["interférence ex", "présence ex"],
+        "searchVolume": "medium",
+        "importance": "medium"
+      },
+      {
+        "id": "manque-confiance",
+        "term": "manque de confiance",
+        "definition": "Difficulté à faire confiance en amour",
+        "synonyms": ["insécurité", "méfiance"],
+        "relatedTerms": ["peur d'être trahi", "blessure passée"],
+        "searchVolume": "high",
+        "importance": "high"
+      }
+    ],
+    
+    "solutions": [
+      {
+        "id": "oublier-ex",
+        "term": "oublier son ex",
+        "definition": "Processus de guérison après une rupture",
+        "synonyms": ["tourner la page", "passer à autre chose"],
+        "relatedTerms": ["deuil amoureux", "reconstruction"],
+        "searchVolume": "very-high",
+        "importance": "critical"
+      },
+      {
+        "id": "reconquerir",
+        "term": "reconquérir",
+        "definition": "Récupérer son ex-partenaire",
+        "synonyms": ["récupérer son ex", "regagner"],
+        "relatedTerms": ["stratégie reconquête", "silence radio"],
+        "searchVolume": "very-high",
+        "importance": "critical"
+      },
+      {
+        "id": "pardon",
+        "term": "pardonner",
+        "definition": "Accepter et dépasser une faute",
+        "synonyms": ["pardon", "absoudre"],
+        "relatedTerms": ["pardonner infidélité", "dépasser trahison"],
+        "searchVolume": "medium",
+        "importance": "high"
+      },
+      {
+        "id": "communication",
+        "term": "communication de couple",
+        "definition": "Dialogue et échange dans la relation",
+        "synonyms": ["dialogue", "échange"],
+        "relatedTerms": ["parler ensemble", "exprimer sentiments"],
+        "searchVolume": "high",
+        "importance": "high"
+      },
+      {
+        "id": "prendre-recul",
+        "term": "prendre du recul",
+        "definition": "S'éloigner temporairement pour mieux réfléchir",
+        "synonyms": ["pause", "distance temporaire"],
+        "relatedTerms": ["break", "temps de réflexion"],
+        "searchVolume": "medium",
+        "importance": "medium"
+      }
+    ],
+    
+    "timing": [
+      {
+        "id": "quand",
+        "term": "timing amoureux",
+        "definition": "Moment propice pour une rencontre ou évolution",
+        "queryPatterns": ["quand vais-je", "dans combien de temps"],
+        "searchVolume": "very-high",
+        "importance": "critical"
+      },
+      {
+        "id": "bientot",
+        "term": "bientôt",
+        "definition": "Dans un avenir proche",
+        "relatedTerms": ["prochainement", "dans les semaines à venir"],
+        "searchVolume": "high",
+        "importance": "high"
+      },
+      {
+        "id": "cette-annee",
+        "term": "cette année",
+        "definition": "Dans l'année en cours",
+        "relatedTerms": ["dans l'année", "avant la fin de l'année"],
+        "searchVolume": "high",
+        "importance": "high"
+      }
+    ],
+    
+    "trustSignals": [
+      {
+        "id": "temoignage-amour",
+        "term": "témoignage voyance amoureuse",
+        "definition": "Retour d'expérience client sur consultation amour",
+        "synonyms": ["avis consultation amour", "retour client"],
+        "searchVolume": "high",
+        "importance": "high"
+      },
+      {
+        "id": "prediction-realisee",
+        "term": "prédiction réalisée",
+        "definition": "Prédiction amoureuse qui s'est avérée exacte",
+        "synonyms": ["prédiction juste", "voyance précise"],
+        "searchVolume": "medium",
+        "importance": "high"
+      }
+    ]
+  },
+  
+  "situationModifiers": [
+    {
+      "prefix": "comment",
+      "examples": ["comment reconquérir", "comment oublier", "comment savoir"],
+      "intent": "how-to-guidance",
+      "searchVolume": "very-high"
+    },
+    {
+      "prefix": "pourquoi",
+      "examples": ["pourquoi il/elle est parti(e)", "pourquoi ça ne marche pas"],
+      "intent": "understanding-reasons",
+      "searchVolume": "high"
+    },
+    {
+      "prefix": "quand",
+      "examples": ["quand va-t-il revenir", "quand vais-je rencontrer"],
+      "intent": "timing-prediction",
+      "searchVolume": "very-high"
+    },
+    {
+      "prefix": "est-ce-que",
+      "examples": ["est-ce qu'il m'aime", "est-ce qu'on va se remettre ensemble"],
+      "intent": "yes-no-prediction",
+      "searchVolume": "very-high"
+    },
+    {
+      "prefix": "dois-je",
+      "examples": ["dois-je l'attendre", "dois-je partir", "dois-je lui pardonner"],
+      "intent": "decision-guidance",
+      "searchVolume": "high"
+    }
+  ]
+}

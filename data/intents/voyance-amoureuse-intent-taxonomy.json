@@ -1,0 +1,513 @@
+{
+  "meta": {
+    "version": "1.0",
+    "description": "User intent classification for voyance amoureuse (romantic psychic consultation) queries",
+    "domain": "voyance-amoureuse",
+    "totalIntents": 8,
+    "lastUpdated": "2025-02-08"
+  },
+  
+  "intentTaxonomy": [
+    {
+      "id": "get-ex-back",
+      "name": "Reconquérir son Ex",
+      "priority": "critical",
+      "searchVolume": "very-high",
+      "emotionalIntensity": "very-high",
+      "description": "L'utilisateur veut savoir comment récupérer son ex-partenaire",
+      "userGoals": [
+        "Comprendre pourquoi la rupture a eu lieu",
+        "Savoir si un retour est possible",
+        "Obtenir des conseils pour reconquérir",
+        "Connaître le timing idéal pour agir",
+        "Savoir ce que l'ex ressent actuellement"
+      ],
+      "queryPatterns": [
+        "reconquérir son ex voyance",
+        "comment récupérer mon ex",
+        "voyance retour de l'ex",
+        "est-ce qu'il/elle va revenir",
+        "reconquête amoureuse voyance",
+        "tarot pour récupérer son ex"
+      ],
+      "serpFeatures": [
+        "Featured Snippet",
+        "People Also Ask",
+        "Related searches",
+        "Video results"
+      ],
+      "contentRequirements": {
+        "wordCount": "400-600",
+        "mustInclude": [
+          "Étapes concrètes de reconquête",
+          "Timing selon le tarot/astrologie",
+          "Signes que l'ex pense à vous",
+          "Erreurs à éviter",
+          "Tirage de tarot spécifique",
+          "Questions à poser au voyant"
+        ],
+        "structuredData": ["Article", "HowTo", "FAQPage"]
+      },
+      "conversionGoal": "Consultation booking",
+      "competitorApproach": "Generic advice without divination angle",
+      "emotionalTone": "Empowering, hopeful, strategic"
+    },
+    
+    {
+      "id": "move-on",
+      "name": "Oublier son Ex / Surmonter une Rupture",
+      "priority": "critical",
+      "searchVolume": "very-high",
+      "emotionalIntensity": "very-high",
+      "description": "L'utilisateur cherche à guérir d'une rupture et tourner la page",
+      "userGoals": [
+        "Surmonter le chagrin d'amour",
+        "Comprendre pourquoi ça n'a pas marché",
+        "Savoir quand la douleur va s'atténuer",
+        "Se préparer à rencontrer quelqu'un d'autre",
+        "Obtenir une guidance pour avancer"
+      ],
+      "queryPatterns": [
+        "oublier son ex voyance",
+        "surmonter rupture amoureuse",
+        "guérir chagrin d'amour voyance",
+        "tourner la page ex",
+        "voyance pour passer à autre chose",
+        "quand vais-je oublier mon ex"
+      ],
+      "serpFeatures": [
+        "Featured Snippet",
+        "People Also Ask",
+        "Related searches"
+      ],
+      "contentRequirements": {
+        "wordCount": "400-600",
+        "mustInclude": [
+          "Processus de guérison étape par étape",
+          "Timing de guérison selon le tarot",
+          "Signes que vous êtes prêt(e) à avancer",
+          "Guidance spirituelle pour lâcher prise",
+          "Rituel de libération émotionnelle",
+          "Préparation à nouvelle rencontre"
+        ],
+        "structuredData": ["Article", "HowTo", "FAQPage"]
+      },
+      "conversionGoal": "Consultation for closure",
+      "competitorApproach": "Psychology-based without spiritual dimension",
+      "emotionalTone": "Compassionate, healing, gentle"
+    },
+    
+    {
+      "id": "will-they-return",
+      "name": "Va-t-il/elle Revenir ?",
+      "priority": "critical",
+      "searchVolume": "very-high",
+      "emotionalIntensity": "very-high",
+      "description": "L'utilisateur veut une prédiction sur le retour de l'ex",
+      "userGoals": [
+        "Savoir si l'ex va revenir (oui/non)",
+        "Connaître le timing du retour",
+        "Comprendre ce qui se passe dans sa tête",
+        "Identifier les signes de retour",
+        "Décider s'il faut l'attendre ou avancer"
+      ],
+      "queryPatterns": [
+        "va-t-il revenir voyance",
+        "mon ex va-t-il revenir tarot",
+        "prédiction retour ex",
+        "signes que mon ex va revenir",
+        "voyance retour être aimé",
+        "oracle retour de l'ex"
+      ],
+      "serpFeatures": [
+        "Featured Snippet (Yes/No answer style)",
+        "People Also Ask",
+        "Related searches"
+      ],
+      "contentRequirements": {
+        "wordCount": "350-500",
+        "mustInclude": [
+          "Tirage de tarot spécifique pour cette question",
+          "Signes astrologiques de retour possible",
+          "Interprétation des cartes clés",
+          "Timeline probable selon la voyance",
+          "Facteurs qui favorisent le retour",
+          "Que faire en attendant (ou non)"
+        ],
+        "structuredData": ["Article", "FAQPage"]
+      },
+      "conversionGoal": "Immediate consultation",
+      "competitorApproach": "Generic relationship advice",
+      "emotionalTone": "Direct, honest, balanced (hope + realism)"
+    },
+    
+    {
+      "id": "do-they-love-me",
+      "name": "M'aime-t-il/elle ? Ses Vrais Sentiments",
+      "priority": "critical",
+      "searchVolume": "very-high",
+      "emotionalIntensity": "high",
+      "description": "L'utilisateur veut vérifier les sentiments de l'autre personne",
+      "userGoals": [
+        "Confirmer si l'autre personne a des sentiments",
+        "Comprendre la nature de ses sentiments",
+        "Identifier les signes d'amour",
+        "Savoir s'il/elle pense à moi",
+        "Décider si je dois m'investir ou non"
+      ],
+      "queryPatterns": [
+        "m'aime-t-il voyance",
+        "ses vrais sentiments tarot",
+        "voyance sentiments amoureux",
+        "est-ce qu'il m'aime vraiment",
+        "décrypter ses sentiments voyance",
+        "pense-t-il à moi tarot"
+      ],
+      "serpFeatures": [
+        "Featured Snippet",
+        "People Also Ask",
+        "Related searches"
+      ],
+      "contentRequirements": {
+        "wordCount": "350-500",
+        "mustInclude": [
+          "Tirage pour révéler les sentiments",
+          "Signes qu'il/elle vous aime",
+          "Différence entre amour et attachement",
+          "Ce que les cartes révèlent",
+          "Blocages émotionnels possibles",
+          "Comment obtenir une réponse claire"
+        ],
+        "structuredData": ["Article", "FAQPage"]
+      },
+      "conversionGoal": "Consultation for clarification",
+      "competitorApproach": "Behavioral psychology signs",
+      "emotionalTone": "Reassuring, analytical, compassionate"
+    },
+    
+    {
+      "id": "when-will-i-meet",
+      "name": "Quand Vais-je Rencontrer l'Amour / Âme Sœur",
+      "priority": "critical",
+      "searchVolume": "very-high",
+      "emotionalIntensity": "medium",
+      "description": "L'utilisateur cherche à savoir quand il/elle va rencontrer quelqu'un",
+      "userGoals": [
+        "Connaître le timing de la prochaine rencontre",
+        "Savoir où/comment cette rencontre aura lieu",
+        "Identifier les signes annonciateurs",
+        "Comprendre ce qui bloque actuellement",
+        "Se préparer émotionnellement à la rencontre"
+      ],
+      "queryPatterns": [
+        "quand vais-je rencontrer quelqu'un voyance",
+        "rencontre âme sœur tarot",
+        "prédiction nouvelle rencontre",
+        "quand vais-je trouver l'amour",
+        "voyance rencontre amoureuse",
+        "oracle de la rencontre"
+      ],
+      "serpFeatures": [
+        "Featured Snippet",
+        "People Also Ask",
+        "Related searches",
+        "Video results"
+      ],
+      "contentRequirements": {
+        "wordCount": "350-500",
+        "mustInclude": [
+          "Tirage pour timing de rencontre",
+          "Périodes astrologiques favorables",
+          "Profil de la personne à rencontrer",
+          "Lieux propices à la rencontre",
+          "Blocages énergétiques à lever",
+          "Comment se préparer à l'accueillir"
+        ],
+        "structuredData": ["Article", "FAQPage"]
+      },
+      "conversionGoal": "Consultation for timing + guidance",
+      "competitorApproach": "Dating advice without spiritual dimension",
+      "emotionalTone": "Optimistic, encouraging, patient"
+    },
+    
+    {
+      "id": "relationship-crisis",
+      "name": "Crise de Couple / Problèmes Relationnels",
+      "priority": "high",
+      "searchVolume": "high",
+      "emotionalIntensity": "high",
+      "description": "L'utilisateur traverse des difficultés dans son couple",
+      "userGoals": [
+        "Comprendre l'origine du problème",
+        "Savoir si la relation peut être sauvée",
+        "Obtenir des conseils pour améliorer la situation",
+        "Décider de rester ou partir",
+        "Restaurer l'harmonie et la communication"
+      ],
+      "queryPatterns": [
+        "crise de couple voyance",
+        "problème relationnel tarot",
+        "sauver son couple voyance",
+        "infidélité voyance",
+        "jalousie couple tarot",
+        "dispute couple guidance"
+      ],
+      "serpFeatures": [
+        "Featured Snippet",
+        "People Also Ask",
+        "Related searches"
+      ],
+      "contentRequirements": {
+        "wordCount": "400-600",
+        "mustInclude": [
+          "Diagnostic de la situation par le tarot",
+          "Causes profondes révélées",
+          "Solutions et actions concrètes",
+          "Pronostic de la relation",
+          "Guidance pour la communication",
+          "Quand envisager la séparation"
+        ],
+        "structuredData": ["Article", "HowTo", "FAQPage"]
+      },
+      "conversionGoal": "Urgent consultation",
+      "competitorApproach": "Couples therapy approach",
+      "emotionalTone": "Serious, honest, solution-oriented"
+    },
+    
+    {
+      "id": "compatibility-soulmate",
+      "name": "Compatibilité / Sommes-nous Faits l'un pour l'Autre",
+      "priority": "high",
+      "searchVolume": "high",
+      "emotionalIntensity": "medium",
+      "description": "L'utilisateur veut vérifier la compatibilité amoureuse",
+      "userGoals": [
+        "Évaluer la compatibilité avec le partenaire",
+        "Savoir si c'est l'âme sœur",
+        "Comprendre les défis du couple",
+        "Connaître le potentiel d'avenir ensemble",
+        "Identifier les forces et faiblesses"
+      ],
+      "queryPatterns": [
+        "compatibilité amoureuse voyance",
+        "sommes-nous faits l'un pour l'autre tarot",
+        "âme sœur astrologie",
+        "synastrie amoureuse",
+        "compatibilité signes astrologiques",
+        "est-ce le bon tarot"
+      ],
+      "serpFeatures": [
+        "Featured Snippet",
+        "People Also Ask",
+        "Calculator tools (for astrology)",
+        "Related searches"
+      ],
+      "contentRequirements": {
+        "wordCount": "350-500",
+        "mustInclude": [
+          "Analyse de compatibilité par le tarot",
+          "Compatibilité astrologique (si dates connues)",
+          "Points de connexion et défis",
+          "Notion d'âme sœur vs partenaire compatible",
+          "Évolution possible de la relation",
+          "Conseils pour renforcer l'harmonie"
+        ],
+        "structuredData": ["Article", "FAQPage"]
+      },
+      "conversionGoal": "Compatibility reading",
+      "competitorApproach": "Astrology calculators only",
+      "emotionalTone": "Insightful, balanced, educational"
+    },
+    
+    {
+      "id": "love-future",
+      "name": "Avenir Amoureux / Prédictions Sentimentales",
+      "priority": "high",
+      "searchVolume": "very-high",
+      "emotionalIntensity": "medium",
+      "description": "L'utilisateur veut connaître son avenir sentimental global",
+      "userGoals": [
+        "Savoir ce que l'avenir réserve en amour",
+        "Connaître les périodes favorables",
+        "Anticiper les défis à venir",
+        "Comprendre sa destinée amoureuse",
+        "Obtenir une vision d'ensemble"
+      ],
+      "queryPatterns": [
+        "avenir amoureux voyance",
+        "prédiction sentimentale",
+        "futur amoureux tarot",
+        "que me réserve l'amour",
+        "voyance vie sentimentale",
+        "destinée amoureuse"
+      ],
+      "serpFeatures": [
+        "Featured Snippet",
+        "People Also Ask",
+        "Related searches",
+        "Video results"
+      ],
+      "contentRequirements": {
+        "wordCount": "350-500",
+        "mustInclude": [
+          "Tirage de l'avenir amoureux",
+          "Prévisions pour les 6-12 prochains mois",
+          "Périodes astrologiques importantes",
+          "Conseils pour optimiser son avenir",
+          "Notion de libre arbitre vs destin",
+          "Préparation aux opportunités"
+        ],
+        "structuredData": ["Article", "FAQPage"]
+      },
+      "conversionGoal": "Full love reading",
+      "competitorApproach": "Generic horoscope",
+      "emotionalTone": "Forward-looking, empowering, holistic"
+    }
+  ],
+  
+  "intentCombinations": [
+    {
+      "primary": "get-ex-back",
+      "secondary": ["will-they-return", "do-they-love-me"],
+      "reasoning": "Reconquérir implique de savoir s'ils reviendront et leurs sentiments actuels"
+    },
+    {
+      "primary": "move-on",
+      "secondary": ["when-will-i-meet", "love-future"],
+      "reasoning": "Après avoir tourné la page, la question naturelle est quand rencontrer quelqu'un"
+    },
+    {
+      "primary": "will-they-return",
+      "secondary": ["get-ex-back", "do-they-love-me"],
+      "reasoning": "Si oui ils reviendront, alors comment reconquérir; si non, comprendre pourquoi"
+    },
+    {
+      "primary": "when-will-i-meet",
+      "secondary": ["love-future", "compatibility-soulmate"],
+      "reasoning": "Après timing de rencontre, questions sur la personne et compatibilité"
+    },
+    {
+      "primary": "relationship-crisis",
+      "secondary": ["compatibility-soulmate", "get-ex-back", "move-on"],
+      "reasoning": "Crise peut mener à vérifier compatibilité, ou décider de sauver/quitter"
+    },
+    {
+      "primary": "do-they-love-me",
+      "secondary": ["compatibility-soulmate", "love-future"],
+      "reasoning": "Vérification sentiments mène à questions de compatibilité et avenir ensemble"
+    }
+  ],
+  
+  "emotionalJourneyMapping": {
+    "post-breakup-path": [
+      "will-they-return",
+      "get-ex-back OR move-on",
+      "when-will-i-meet",
+      "love-future"
+    ],
+    "new-relationship-path": [
+      "do-they-love-me",
+      "compatibility-soulmate",
+      "love-future"
+    ],
+    "established-relationship-path": [
+      "relationship-crisis",
+      "compatibility-soulmate",
+      "love-future"
+    ],
+    "seeking-love-path": [
+      "when-will-i-meet",
+      "love-future",
+      "do-they-love-me"
+    ]
+  },
+  
+  "contentStrategyByIntent": {
+    "get-ex-back": {
+      "headingStructure": "H2: Peut-on Reconquérir son Ex? / H3: Étapes de Reconquête / H3: Timing Idéal / H3: Erreurs à Éviter",
+      "wordCountTarget": 500,
+      "keyElements": ["Action plan", "Timing guidance", "Do's and don'ts", "Success stories"],
+      "internalLinking": ["Link to will-they-return", "Link to do-they-love-me", "Link to relationship-crisis"],
+      "cta": "Consultation personnalisée pour stratégie de reconquête"
+    },
+    "move-on": {
+      "headingStructure": "H2: Surmonter une Rupture / H3: Processus de Guérison / H3: Quand Serez-vous Prêt(e) / H3: Préparer l'Avenir",
+      "wordCountTarget": 500,
+      "keyElements": ["Healing timeline", "Emotional stages", "Closure guidance", "New beginnings"],
+      "internalLinking": ["Link to when-will-i-meet", "Link to love-future", "Link to will-they-return"],
+      "cta": "Guidance pour tourner la page et avancer"
+    },
+    "will-they-return": {
+      "headingStructure": "H2: Va-t-il/elle Revenir? / H3: Ce que le Tarot Révèle / H3: Signes de Retour / H3: Que Faire Maintenant",
+      "wordCountTarget": 450,
+      "keyElements": ["Direct answer", "Tarot interpretation", "Signs to watch", "Decision guidance"],
+      "internalLinking": ["Link to get-ex-back", "Link to move-on", "Link to do-they-love-me"],
+      "cta": "Tirage personnalisé pour votre situation"
+    },
+    "do-they-love-me": {
+      "headingStructure": "H2: M'aime-t-il/elle Vraiment? / H3: Décrypter les Sentiments / H3: Signes d'Amour / H3: Différence Amour/Attachement",
+      "wordCountTarget": 450,
+      "keyElements": ["Feeling verification", "Love signs", "Psychological insights", "Tarot reading"],
+      "internalLinking": ["Link to compatibility-soulmate", "Link to love-future", "Link to will-they-return"],
+      "cta": "Consultation pour clarifier ses sentiments"
+    },
+    "when-will-i-meet": {
+      "headingStructure": "H2: Quand Vais-je Rencontrer l'Amour? / H3: Timing selon le Tarot / H3: Périodes Favorables / H3: Se Préparer",
+      "wordCountTarget": 450,
+      "keyElements": ["Timeline prediction", "Astrological periods", "Meeting circumstances", "Preparation"],
+      "internalLinking": ["Link to love-future", "Link to compatibility-soulmate", "Link to move-on"],
+      "cta": "Prédiction personnalisée de rencontre"
+    },
+    "relationship-crisis": {
+      "headingStructure": "H2: Crise de Couple / H3: Diagnostic de la Situation / H3: Solutions Possibles / H3: Décision à Prendre",
+      "wordCountTarget": 550,
+      "keyElements": ["Problem analysis", "Root causes", "Solutions", "Decision framework"],
+      "internalLinking": ["Link to compatibility-soulmate", "Link to get-ex-back", "Link to move-on"],
+      "cta": "Consultation d'urgence pour crise"
+    },
+    "compatibility-soulmate": {
+      "headingStructure": "H2: Compatibilité Amoureuse / H3: Analyse du Couple / H3: Forces et Défis / H3: Potentiel d'Avenir",
+      "wordCountTarget": 450,
+      "keyElements": ["Compatibility analysis", "Strengths", "Challenges", "Future potential"],
+      "internalLinking": ["Link to do-they-love-me", "Link to love-future", "Link to relationship-crisis"],
+      "cta": "Analyse de compatibilité complète"
+    },
+    "love-future": {
+      "headingStructure": "H2: Votre Avenir Amoureux / H3: Prédictions / H3: Périodes Clés / H3: Conseils pour Optimiser",
+      "wordCountTarget": 450,
+      "keyElements": ["General predictions", "Key periods", "Opportunities", "Guidance"],
+      "internalLinking": ["Link to when-will-i-meet", "Link to compatibility-soulmate", "Link to all intents"],
+      "cta": "Lecture complète de l'avenir amoureux"
+    }
+  },
+  
+  "serpAnalysis": {
+    "topCompetitors": [
+      {
+        "type": "Generic voyance sites",
+        "intentsFulfilled": ["love-future", "compatibility-soulmate"],
+        "strengths": ["Established authority", "Reviews"],
+        "gaps": ["Generic content", "Not situation-specific", "No emotional nuance"]
+      },
+      {
+        "type": "Relationship advice blogs",
+        "intentsFulfilled": ["get-ex-back", "move-on", "relationship-crisis"],
+        "strengths": ["Psychological depth", "Practical advice"],
+        "gaps": ["No divination angle", "No spiritual dimension", "No prediction"]
+      },
+      {
+        "type": "Astrology sites",
+        "intentsFulfilled": ["compatibility-soulmate", "when-will-i-meet"],
+        "strengths": ["Astrological authority"],
+        "gaps": ["Too technical", "Not tarot-focused", "Lack of personal guidance"]
+      }
+    ],
+    "opportunityGaps": [
+      "Situation-specific divination guidance",
+      "Emotional tone matching intensity",
+      "Tarot + Astrology + Psychology blend",
+      "Actionable spiritual advice",
+      "Empathetic yet honest predictions"
+    ]
+  }
+}

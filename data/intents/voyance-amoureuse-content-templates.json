@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "version": "1.0",
+    "description": "Content generation templates for 8 primary voyance amoureuse intents",
+    "lastUpdated": "2025-02-08",
+    "wordCountGuideline": "Answer capsules: 150-170 words for LLM optimization"
+  },
+  
+  "templates": {
+    "get-ex-back": {
+      "situation": "reconquerir-son-ex",
+      "heading": "Voyance Amoureuse : Reconquérir son Ex",
+      "emotionalTone": "empowering-hopeful-strategic",
+      "answerCapsule": {
+        "structure": "hope + strategy + timing",
+        "template": "Reconquérir son **ex** après une **rupture amoureuse** est possible selon la **voyance** et le **tarot**. Les cartes révèlent que {percentage}% des couples se remettent ensemble après avoir travaillé sur les causes de la séparation. Le **retour de l'ex** dépend de plusieurs facteurs : la raison de la rupture, le temps écoulé, et surtout votre capacité à transformer ce qui n'a pas fonctionné.\n\nLe **tarot amoureux** peut vous guider sur le moment idéal pour reprendre contact et les mots justes à utiliser. La période actuelle {astrological_context} favorise les **réconciliations amoureuses** pour ceux qui sont prêts à évoluer. L'erreur principale est d'agir trop vite par désespoir au lieu de reconstruire d'abord votre propre équilibre émotionnel.\n\nLa **reconquête** réussit quand elle part d'un lieu d'amour authentique et non de manque ou de peur de la solitude. Un **voyant spécialisé en amour** peut vous révéler ce que votre ex ressent actuellement et si un retour est inscrit dans votre **destin amoureux**.",
+        "wordCount": "165-170",
+        "entities": ["ex", "rupture", "voyance", "tarot", "reconquête", "réconciliation", "retour"],
+        "entityDensity": "7 entities per 167 words"
+      },
+      "extendedContent": {
+        "sections": [
+          {
+            "h3": "🔮 Ce que le Tarot Révèle sur la Reconquête",
+            "content": "Tirage spécifique pour la reconquête, cartes clés (L'Amoureux, Le Deux de Coupe, Le Retour), interprétation selon position",
+            "wordCount": "120-150",
+            "format": "text + tarot card mentions"
+          },
+          {
+            "h3": "⏰ Le Timing Idéal pour Agir",
+            "content": "Périodes astrologiques favorables, lune croissante vs décroissante, Vénus en transit, moment de reprendre contact",
+            "wordCount": "100-130",
+            "format": "timeline + astrology"
+          },
+          {
+            "h3": "✅ Les Étapes de la Reconquête Réussie",
+            "content": "1. Silence radio initial, 2. Travail sur soi, 3. Reprise de contact subtile, 4. Reconstruction progressive, 5. Nouvelle relation",
+            "wordCount": "150-180",
+            "format": "numbered steps"
+          },
+          {
+            "h3": "❌ Les Erreurs à Éviter Absolument",
+            "content": "Harceler, supplier, culpabiliser, agir par désespoir, ignorer les vraies causes de la rupture",
+            "wordCount": "100-130",
+            "format": "warning list"
+          },
+          {
+            "h3": "💡 Signes que Votre Ex Pense à Vous",
+            "content": "Contacts indirects, stalking réseaux sociaux, questions via amis communs, synchronicités, rêves",
+            "wordCount": "100-130",
+            "format": "signs list"
+          }
+        ]
+      },
+      "faqs": [
+        {
+          "question": "Le tarot peut-il me dire si mon ex va revenir ?",
+          "answer": "Le tarot révèle les énergies actuelles et les potentiels d'avenir. Il peut indiquer si un retour est probable selon les dynamiques en présence, mais le libre arbitre de chacun reste déterminant. Un tirage honnête vous dira si vous devez espérer ou tourner la page.",
+          "entities": ["tarot", "ex", "retour", "avenir", "libre arbitre"]
+        },
+        {
+          "question": "Combien de temps faut-il attendre avant d'essayer de reconquérir son ex ?",
+          "answer": "La période de silence radio idéale varie selon les situations, généralement 3 à 6 semaines. Le tarot peut affiner ce timing selon votre situation spécifique. Ce temps permet à chacun de prendre du recul et de manquer l'autre.",
+          "entities": ["reconquérir", "ex", "silence radio", "tarot", "timing"]
+        },
+        {
+          "question": "Quels sont les signes astrologiques que mon ex va revenir ?",
+          "answer": "Vénus en rétrogradation, retour de la Lune sur sa position natale, ou transits harmonieux entre vos thèmes astraux favorisent les retours. Un voyant peut analyser votre synastrie pour identifier les périodes propices à la réconciliation.",
+          "entities": ["astrologie", "ex", "retour", "Vénus", "synastrie", "réconciliation"]
+        },
+        {
+          "question": "La voyance peut-elle m'aider à savoir ce que mon ex ressent ?",
+          "answer": "Oui, un voyant peut capter les émotions et pensées actuelles de votre ex à travers le tarot ou la clairvoyance. Cela vous aide à comprendre s'il/elle éprouve encore des sentiments, des regrets, ou a tourné la page.",
+          "entities": ["voyance", "ex", "sentiments", "tarot", "clairvoyance"]
+        }
+      ],
+      "internalLinks": [
+        {
+          "anchor": "savoir si mon ex va revenir",
+          "target": "will-they-return",
+          "context": "after discussing possibility of return"
+        },
+        {
+          "anchor": "comprendre ses vrais sentiments",
+          "target": "do-they-love-me",
+          "context": "when discussing what ex feels"
+        },
+        {
+          "anchor": "surmonter la rupture si le retour n'est pas possible",
+          "target": "move-on",
+          "context": "as alternative path"
+        }
+      ],
+      "cta": {
+        "primary": "Consultation Reconquête Personnalisée",
+        "secondary": "Tirage Tarot Retour de l'Ex"
+      }
+    }
+  }
+}

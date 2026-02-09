@@ -1,0 +1,644 @@
+{
+  "meta": {
+    "version": "1.0",
+    "description": "Complete content generation templates for 8 voyance amoureuse intents",
+    "lastUpdated": "2025-02-08",
+    "wordCountGuideline": "Answer capsules: 150-170 words for LLM optimization",
+    "totalTemplates": 8
+  },
+  
+  "globalVariables": {
+    "commonEntities": ["voyance amoureuse", "tarot", "voyant", "consultation", "prédiction", "avenir amoureux"],
+    "methodMentions": ["tarot de l'amour", "tirage amoureux", "oracle", "astrologie amoureuse", "clairvoyance"],
+    "emotionalStates": ["espoir", "doute", "chagrin", "jalousie", "amour", "peine"],
+    "defaultPercentage": "65-70",
+    "astrologicalContext": "avec Vénus en position favorable"
+  },
+  
+  "templates": {
+    
+    "get-ex-back": {
+      "id": "reconquerir-son-ex",
+      "heading": "Voyance Amoureuse : Reconquérir son Ex",
+      "metaTitle": "Reconquérir son Ex : Voyance et Tarot Amoureux | Guidance Retour",
+      "metaDescription": "Comment reconquérir votre ex selon la voyance et le tarot ? Découvrez le timing idéal, les étapes de reconquête et ce que votre ex ressent vraiment.",
+      "emotionalTone": "empowering-hopeful-strategic",
+      "emotionalIntensity": "very-high",
+      
+      "answerCapsule": {
+        "wordCount": "165-170",
+        "entities": 7,
+        "template": "Reconquérir son **ex** après une **rupture amoureuse** est possible selon la **voyance** et le **tarot**. Les cartes révèlent que 65-70% des couples se remettent ensemble après avoir travaillé sur les causes de la séparation. Le **retour de l'ex** dépend de plusieurs facteurs : la raison de la rupture, le temps écoulé, et surtout votre capacité à transformer ce qui n'a pas fonctionné.\n\nLe **tarot amoureux** peut vous guider sur le moment idéal pour reprendre contact et les mots justes à utiliser. La période actuelle avec Vénus en position favorable favorise les **réconciliations amoureuses** pour ceux qui sont prêts à évoluer. L'erreur principale est d'agir trop vite par désespoir au lieu de reconstruire d'abord votre propre équilibre émotionnel.\n\nLa **reconquête** réussit quand elle part d'un lieu d'amour authentique et non de manque ou de peur de la solitude. Un **voyant spécialisé en amour** peut vous révéler ce que votre ex ressent actuellement et si un retour est inscrit dans votre **destin amoureux**."
+      },
+      
+      "sections": [
+        {
+          "h3": "🔮 Ce que le Tarot Révèle sur la Reconquête",
+          "content": "Le tirage de tarot spécifique à la reconquête utilise des cartes clés comme L'Amoureux (renaissance de l'amour), Le Deux de Coupe (réconciliation), et La Roue de la Fortune (timing du retour). La position de ces cartes indique si votre ex est ouvert à un retour, les obstacles à surmonter, et le moment propice pour agir. Un tirage honnête révèle aussi si la reconquête est dans votre intérêt ou si tourner la page serait plus bénéfique pour votre évolution.",
+          "wordCount": "80-100"
+        },
+        {
+          "h3": "⏰ Le Timing Idéal pour Reconquérir",
+          "content": "Le timing astrologique joue un rôle crucial. Vénus en transit harmonieux favorise les réconciliations. La lune croissante amplifie les énergies de retour, tandis que la lune décroissante aide à lâcher prise. Le silence radio initial (3-6 semaines selon les cas) permet à chacun de prendre du recul. Le tarot peut affiner ce timing selon votre situation spécifique et identifier le moment où l'énergie entre vous redevient réceptive.",
+          "wordCount": "80-100"
+        },
+        {
+          "h3": "✅ Les 5 Étapes de la Reconquête Réussie",
+          "content": "1. **Silence radio complet** : Laissez l'émotion retomber et le manque s'installer. 2. **Travail sur soi** : Transformez ce qui n'a pas fonctionné dans votre comportement. 3. **Reprise de contact subtile** : Message léger, sans pression ni attente. 4. **Reconstruction progressive** : Nouvelles interactions positives, sans parler du passé trop tôt. 5. **Nouvelle relation** : Si le retour se confirme, construisez une relation 2.0, pas une copie de l'ancienne.",
+          "wordCount": "90-120"
+        },
+        {
+          "h3": "❌ Les Erreurs Fatales à Éviter",
+          "content": "**Harceler** votre ex détruit toute chance de retour. **Supplier** vous place en position de faiblesse. **Culpabiliser** crée du ressentiment. **Agir par désespoir** transparaît et repousse l'autre. **Ignorer les vraies causes** garantit une rupture à nouveau. **Se précipiter** sans avoir travaillé sur soi reproduit les mêmes schémas. La reconquête demande patience, stratégie et authenticité émotionnelle.",
+          "wordCount": "70-90"
+        },
+        {
+          "h3": "💡 Signes que Votre Ex Pense à Vous",
+          "content": "Contacts indirects (like sur réseaux sociaux, réponses rapides), questions via amis communs sur votre vie actuelle, «stalking» de vos stories, synchronicités répétées (vous le/la croisez «par hasard»), rêves récurrents le/la mettant en scène. Le tarot peut confirmer si ces signes traduisent des sentiments persistants ou simple curiosité. L'oracle révèle aussi ce que votre ex n'ose pas exprimer directement.",
+          "wordCount": "75-95"
+        }
+      ],
+      
+      "faqs": [
+        {
+          "question": "Le tarot peut-il me dire avec certitude si mon ex va revenir ?",
+          "answer": "Le tarot révèle les énergies actuelles et les potentiels d'avenir selon la trajectoire présente. Il indique si un retour est probable, les conditions nécessaires, et le timing favorable. Cependant, le libre arbitre de chacun reste déterminant. Le tarot vous dit si vous devez garder espoir et agir, ou tourner la page pour votre bien.",
+          "entities": ["tarot", "ex", "retour", "avenir", "libre arbitre", "espoir"]
+        },
+        {
+          "question": "Combien de temps attendre avant de reconquérir son ex ?",
+          "answer": "La période de silence radio idéale varie : 3-4 semaines pour ruptures courtes, 6-8 semaines pour relations longues. Le tarot peut affiner ce timing selon votre situation et l'évolution émotionnelle de votre ex. Ce temps permet le manque de s'installer et à chacun de prendre du recul nécessaire.",
+          "entities": ["reconquérir", "ex", "silence radio", "tarot", "timing", "rupture"]
+        },
+        {
+          "question": "Quels signes astrologiques indiquent un possible retour de l'ex ?",
+          "answer": "Vénus rétrograde ramène souvent d'anciens amours. Les transits de Vénus sur votre Soleil ou Vénus natale favorisent les retours. La synastrie entre vos thèmes révèle si vous êtes destinés à vous retrouver. Un voyant peut analyser ces configurations pour identifier les périodes propices à la réconciliation.",
+          "entities": ["astrologie", "ex", "retour", "Vénus", "synastrie", "voyant", "réconciliation"]
+        },
+        {
+          "question": "Comment savoir ce que mon ex ressent vraiment ?",
+          "answer": "Un voyant capte les émotions et pensées de votre ex à travers le tarot, la clairvoyance ou la lecture énergétique. Le tirage révèle s'il/elle éprouve encore de l'amour, des regrets, de la colère, ou a tourné la page. Cette clarté vous aide à décider de votre stratégie : reconquête active ou guérison.",
+          "entities": ["ex", "sentiments", "voyant", "tarot", "clairvoyance", "amour"]
+        }
+      ],
+      
+      "internalLinks": [
+        { "anchor": "va-t-il/elle revenir", "target": "will-they-return" },
+        { "anchor": "ses vrais sentiments", "target": "do-they-love-me" },
+        { "anchor": "oublier son ex", "target": "move-on" }
+      ],
+      
+      "cta": {
+        "primary": "Consultation Reconquête Personnalisée",
+        "secondary": "Tirage Tarot Retour de l'Ex",
+        "tertiary": "Analyse Astrologique de votre Situation"
+      }
+    },
+    
+    "move-on": {
+      "id": "oublier-son-ex-surmonter-rupture",
+      "heading": "Voyance Amoureuse : Oublier son Ex et Surmonter la Rupture",
+      "metaTitle": "Oublier son Ex : Voyance pour Guérir et Tourner la Page | Tarot",
+      "metaDescription": "Comment surmonter une rupture et oublier son ex selon la voyance ? Découvrez le processus de guérison, le timing de reconstruction et quand vous rencontrerez à nouveau.",
+      "emotionalTone": "compassionate-healing-gentle",
+      "emotionalIntensity": "very-high",
+      
+      "answerCapsule": {
+        "wordCount": "160-170",
+        "entities": 7,
+        "template": "Surmonter une **rupture amoureuse** et **oublier son ex** est un processus de guérison que la **voyance** peut accompagner avec douceur. Le **tarot** révèle que le **chagrin d'amour** suit un cycle naturel de 3 à 6 mois selon l'intensité de la relation, mais chaque personne a son propre rythme de reconstruction émotionnelle.\n\nLe **tirage de l'oubli** vous aide à comprendre pourquoi cette relation devait se terminer, les leçons à en tirer, et quand vous serez prêt(e) à accueillir un **nouvel amour**. La voyance n'efface pas la douleur magiquement, mais elle éclaire le chemin de guérison et vous rassure sur votre capacité à aimer à nouveau. L'astrologie identifie les périodes propices à la fermeture émotionnelle et à l'ouverture vers l'avenir.\n\nTourner la page ne signifie pas oublier complètement, mais transformer la douleur en sagesse. Un **voyant bienveillant** vous guide vers votre reconstruction intérieure et la préparation à votre **prochaine rencontre** amoureuse."
+      },
+      
+      "sections": [
+        {
+          "h3": "💔 Les Étapes du Deuil Amoureux selon le Tarot",
+          "content": "Le tarot identifie 5 phases : le Choc (Tour foudroyée), le Déni (Pendu inversé), la Colère (Cinq d'Épée), la Tristesse (Trois d'Épée), et l'Acceptation (Tempérance). Chaque phase a sa durée selon votre thème astral et l'intensité de la relation. Un tirage spécifique révèle où vous en êtes actuellement et combien de temps il faut encore pour guérir complètement. Accepter ces étapes sans les forcer accélère paradoxalement la guérison.",
+          "wordCount": "85-105"
+        },
+        {
+          "h3": "⏰ Combien de Temps pour Guérir ?",
+          "content": "La règle générale : environ 1 mois de guérison par année de relation, mais le tarot affine selon votre situation. Certains guérissent en 3 mois, d'autres ont besoin de 12-18 mois. Les transits de Saturne et Pluton indiquent les phases difficiles et les moments de libération. Le voyant ne vous donnera pas de faux espoirs mais une estimation honnête basée sur votre énergie actuelle et votre travail intérieur.",
+          "wordCount": "85-105"
+        },
+        {
+          "h3": "🌱 Rituels de Libération Émotionnelle",
+          "content": "Rituel de la lettre brûlée (écrire ce que vous n'avez pas dit, puis brûler), tirage de libération avec enfouissement des cartes, nettoyage énergétique de votre espace (sauge, encens), coupure des liens éthériques pendant la nouvelle lune. Ces pratiques spirituelles accompagnent le travail psychologique et accélèrent le détachement émotionnel tout en honorant ce qui a été vécu.",
+          "wordCount": "75-95"
+        },
+        {
+          "h3": "✨ Signes que Vous Êtes Prêt(e) à Aimer à Nouveau",
+          "content": "Vous pensez moins souvent à votre ex, les souvenirs ne font plus mal, vous êtes curieux(se) de rencontrer de nouvelles personnes, vous avez retrouvé votre joie de vivre, vous ne comparez plus, vous pouvez souhaiter du bonheur à votre ex sans amertume. Le tarot confirme cette ouverture émotionnelle avec des cartes comme Le Soleil, L'Étoile, ou l'As de Coupe. C'est le moment d'accueillir l'avenir.",
+          "wordCount": "85-105"
+        },
+        {
+          "h3": "💫 Préparer Votre Prochaine Rencontre",
+          "content": "Une fois guéri(e), le tarot révèle quand et comment vous rencontrerez quelqu'un. Travaillez votre ouverture du cœur, clarifiez ce que vous voulez vraiment dans une relation, libérez les schémas répétitifs qui ont causé l'échec précédent. La voyance identifie les périodes astrologiques favorables aux nouvelles rencontres et le profil de votre prochain partenaire potentiel.",
+          "wordCount": "75-95"
+        }
+      ],
+      
+      "faqs": [
+        {
+          "question": "Combien de temps faut-il pour oublier son ex ?",
+          "answer": "Il n'y a pas de durée fixe. La règle générale est 1 mois par année de relation, mais le tarot révèle votre timeline personnelle selon votre thème astral et votre travail intérieur. Certains guérissent en 3 mois, d'autres en plus d'un an. L'important n'est pas la vitesse mais la profondeur de la guérison.",
+          "entities": ["oublier", "ex", "tarot", "guérison", "thème astral", "timeline"]
+        },
+        {
+          "question": "La voyance peut-elle accélérer le processus d'oubli ?",
+          "answer": "La voyance ne fait pas disparaître la douleur instantanément, mais elle vous donne de la clarté sur pourquoi la relation devait se terminer et vous rassure sur votre capacité à aimer à nouveau. Cette compréhension spirituelle facilite l'acceptation et donc accélère naturellement la guérison émotionnelle.",
+          "entities": ["voyance", "oubli", "guérison", "clarté", "acceptation", "spirituel"]
+        },
+        {
+          "question": "Comment savoir si je dois oublier ou espérer un retour ?",
+          "answer": "Le tarot répond clairement à cette question cruciale. Un tirage honnête révèle si votre ex reviendra ou si vous devez tourner la page. S'accrocher à un faux espoir prolonge inutilement votre souffrance. Le voyant vous dira la vérité même si elle est difficile à entendre, pour votre bien.",
+          "entities": ["tarot", "oublier", "espoir", "retour", "ex", "voyant"]
+        },
+        {
+          "question": "Quand vais-je être prêt(e) à rencontrer quelqu'un d'autre ?",
+          "answer": "Le tarot identifie le moment où votre cœur sera à nouveau ouvert. Les signes : penser moins à votre ex, retrouver joie et curiosité, ne plus comparer. L'astrologie révèle les périodes propices aux nouvelles rencontres, souvent 6-12 mois après la rupture pour les relations sérieuses.",
+          "entities": ["tarot", "rencontre", "cœur", "astrologie", "périodes", "rupture"]
+        }
+      ],
+      
+      "internalLinks": [
+        { "anchor": "quand vais-je rencontrer quelqu'un", "target": "when-will-i-meet" },
+        { "anchor": "mon avenir amoureux", "target": "love-future" },
+        { "anchor": "reconquérir si finalement je veux essayer", "target": "get-ex-back" }
+      ],
+      
+      "cta": {
+        "primary": "Consultation Guérison et Fermeture",
+        "secondary": "Tirage pour Tourner la Page",
+        "tertiary": "Guidance Reconstruction Émotionnelle"
+      }
+    },
+    
+    "will-they-return": {
+      "id": "va-t-il-elle-revenir",
+      "heading": "Voyance Amoureuse : Va-t-il/elle Revenir ?",
+      "metaTitle": "Mon Ex Va-t-il Revenir ? Réponse du Tarot et Voyance | Prédiction",
+      "metaDescription": "Votre ex va-t-il/elle revenir ? Le tarot répond à cette question cruciale. Découvrez les signes de retour, le timing probable et ce qu'il/elle ressent vraiment.",
+      "emotionalTone": "direct-honest-balanced",
+      "emotionalIntensity": "very-high",
+      
+      "answerCapsule": {
+        "wordCount": "155-165",
+        "entities": 7,
+        "template": "La question \"**va-t-il/elle revenir**\" est la plus posée en **voyance amoureuse**. Le **tarot** peut répondre en analysant les énergies actuelles, les sentiments de votre **ex**, et les probabilités de **retour** selon la configuration astrologique. La réponse n'est jamais un simple oui ou non, mais une analyse nuancée des facteurs en jeu.\n\nLe tirage révèle : ce que votre ex ressent maintenant, s'il/elle pense à vous, les obstacles au retour, le **timing** probable si retour il y a, et surtout si ce retour serait dans votre intérêt. Parfois, le tarot vous montrera qu'un retour est possible mais déconseillé pour votre évolution. D'autres fois, il confirmera un retour imminent avec des signes concrets à observer.\n\nUn **voyant honnête** ne vous donnera pas de faux espoirs. Si les cartes montrent que votre ex a tourné la page, il vous le dira avec bienveillance pour vous permettre d'avancer. Si un **retour** est probable, il vous indiquera les conditions et le timing."
+      },
+      
+      "sections": [
+        {
+          "h3": "🔮 Ce que le Tarot Révèle sur le Retour",
+          "content": "Le tirage du retour de l'ex analyse 4 positions : 1) Sentiments actuels de l'ex, 2) Pensées et regrets, 3) Obstacles au retour, 4) Probabilité et timing. Les cartes clés : Le Retour (retour probable), Le Deux de Coupe (réconciliation), L'Amoureux (renaissance amour), Le Pendu (attente), La Tour (impossible actuellement). Un voyant interprète ces cartes selon votre situation spécifique et vous donne une réponse claire.",
+          "wordCount": "80-100"
+        },
+        {
+          "h3": "📅 Timing du Retour selon l'Astrologie",
+          "content": "Si retour il y a, quand ? Vénus rétrograde ramène souvent d'anciens amours (tous les 18 mois). Les éclipses provoquent des retournements de situation. La pleine lune favorise les retours émotionnels soudains. Le tarot affine ce timing : dans quelques semaines, 3 mois, 6 mois, ou après une période de croissance personnelle de chacun. Certains retours nécessitent un an de maturation.",
+          "wordCount": "80-100"
+        },
+        {
+          "h3": "💡 Les Signes Concrets qu'il/elle Va Revenir",
+          "content": "Votre ex reprend contact pour des raisons futiles, pose des questions sur votre vie sentimentale, réagit à vos stories, vous croise «par hasard», parle de vous à des amis communs, garde vos affaires, dit qu'il/elle pense souvent à vous. En voyance : synchronicités répétées (voir son nom partout, rêves prémonitoires), carte du Retour dans vos tirages, votre intuition vous le dit fortement.",
+          "wordCount": "80-100"
+        },
+        {
+          "h3": "❌ Les Signes qu'il/elle Ne Reviendra Pas",
+          "content": "Nouvelle relation officielle, blocage sur réseaux sociaux, absence totale de contact malgré vos tentatives, discours ferme de fermeture, récupération de ses affaires, vie transformée sans vous. Dans le tarot : La Tour inversée (rupture définitive), Le Dix d'Épée (fin), Le Huit de Coupe (partir pour de bon). Un voyant honnête vous le dira clairement pour vous libérer.",
+          "wordCount": "75-95"
+        },
+        {
+          "h3": "🤔 Que Faire en Attendant ?",
+          "content": "Si le tarot indique un retour probable : silence radio, travail sur vous, laissez-le/la venir. Ne harcelez pas, ne suppliez pas. Si le tarot indique que c'est terminé : entamez votre processus de deuil, ouvrez-vous aux nouvelles rencontres. Dans le doute : consultez régulièrement pour suivre l'évolution de la situation tous les 2-3 mois.",
+          "wordCount": "75-95"
+        }
+      ],
+      
+      "faqs": [
+        {
+          "question": "Le tarot peut-il me dire avec certitude si mon ex reviendra ?",
+          "answer": "Le tarot indique les probabilités selon les énergies actuelles et les choix de libre arbitre de chacun. Il révèle si un retour est très probable, possible, improbable ou impossible. Un bon voyant vous donnera un pourcentage honnête basé sur les cartes et ne vous promettra jamais un retour à 100% car le futur reste mouvant.",
+          "entities": ["tarot", "ex", "retour", "probabilités", "voyant", "futur"]
+        },
+        {
+          "question": "Combien de temps faut-il attendre pour savoir ?",
+          "answer": "Le tarot peut donner un timing : quelques semaines, 3 mois, 6 mois, 1 an. Si après ce délai rien ne se passe, c'est qu'il faut lâcher prise. Attention aux faux espoirs : si après 6 mois de silence total votre ex n'a fait aucun signe, les chances diminuent drastiquement.",
+          "entities": ["tarot", "timing", "attendre", "espoir", "ex", "lâcher prise"]
+        },
+        {
+          "question": "Quels sont les signes astrologiques d'un retour imminent ?",
+          "answer": "Vénus rétrograde dans votre signe ou celui de votre ex, éclipse sur votre axe relationnel (Descendant), transit de Vénus sur votre Soleil natal, nouvelle lune en maison 7. Ces périodes astrologiques créent des ouvertures propices aux retours. Un voyant astrologue peut analyser votre thème pour identifier ces moments.",
+          "entities": ["astrologie", "retour", "Vénus", "éclipse", "voyant", "thème"]
+        },
+        {
+          "question": "Dois-je attendre mon ex ou tourner la page ?",
+          "answer": "Le tarot répond clairement à cette question cruciale. S'il montre un retour probable dans un délai raisonnable (3-6 mois) et que ce retour est bénéfique, vous pouvez attendre tout en vivant votre vie. S'il montre que c'est terminé, tournez la page pour votre bien. Un voyant vous conseille honnêtement.",
+          "entities": ["tarot", "attendre", "ex", "tourner la page", "retour", "voyant"]
+        }
+      ],
+      
+      "internalLinks": [
+        { "anchor": "reconquérir si la réponse est oui", "target": "get-ex-back" },
+        { "anchor": "tourner la page si la réponse est non", "target": "move-on" },
+        { "anchor": "ce qu'il/elle ressent vraiment", "target": "do-they-love-me" }
+      ],
+      
+      "cta": {
+        "primary": "Tirage Retour de l'Ex Personnalisé",
+        "secondary": "Consultation Prédiction Retour",
+        "tertiary": "Analyse Complète de votre Situation"
+      }
+    },
+    
+    "do-they-love-me": {
+      "id": "maime-t-il-elle-sentiments",
+      "heading": "Voyance Amoureuse : M'aime-t-il/elle ? Ses Vrais Sentiments",
+      "metaTitle": "M'aime-t-il/elle Vraiment ? Tarot et Voyance des Sentiments",
+      "metaDescription": "Découvrez ses vrais sentiments grâce au tarot et à la voyance. M'aime-t-il/elle vraiment ? Pense-t-il/elle à moi ? Que ressent-il/elle ?",
+      "emotionalTone": "reassuring-analytical-compassionate",
+      "emotionalIntensity": "high",
+      
+      "answerCapsule": {
+        "wordCount": "160-170",
+        "entities": 7,
+        "template": "La question \"**m'aime-t-il/elle vraiment**\" révèle votre **doute amoureux** légitime. Le **tarot** et la **clairvoyance** peuvent percer le voile des apparences pour révéler les **vrais sentiments** de l'autre personne. Un **voyant** capte les émotions réelles au-delà des mots et comportements parfois contradictoires.\n\nLe **tirage des sentiments** explore plusieurs niveaux : l'attraction physique, l'attachement émotionnel, l'amour profond, et l'engagement futur. Il révèle aussi les peurs et blocages qui empêchent l'autre d'exprimer ses sentiments ouvertement. Parfois, la personne vous aime mais ne peut ou ne veut pas s'engager pour des raisons complexes que le tarot éclaire.\n\nLa différence cruciale entre **amour véritable** et simple attachement, entre passion et amitié, entre amour et habitude - le tarot fait cette distinction précise. Un voyant honnête vous dira si cette personne vous aime authentiquement ou si vous vous accrochez à une illusion."
+      },
+      
+      "sections": [
+        {
+          "h3": "💖 Les Signes d'Amour Véritable selon le Tarot",
+          "content": "Les cartes de l'amour authentique : L'Amoureux (amour vrai), Le Deux de Coupe (réciprocité), Le Dix de Coupe (bonheur partagé), Le Soleil (joie ensemble). Si ces cartes apparaissent, oui il/elle vous aime. À l'inverse : Le Diable (attachement toxique), Le Cinq de Coupe (regrets), Le Huit d'Épée (piégé), Le Cavalier de Coupe inversé (sentiments superficiels) indiquent un amour absent ou problématique.",
+          "wordCount": "80-100"
+        },
+        {
+          "h3": "🧠 Différence entre Amour et Attachement",
+          "content": "Amour véritable : vous veut du bien même s'il/elle n'est pas avec vous, respecte votre liberté, vous valorise. Attachement toxique : possessif, jaloux, dépendant, crée de la souffrance. Le tarot distingue ces nuances que le comportement brouille. Certains sont attachés sans aimer, d'autres aiment mais ne peuvent s'attacher par peur. La voyance révèle la vraie nature du lien.",
+          "wordCount": "75-95"
+        },
+        {
+          "h3": "🎭 Pourquoi il/elle Cache ses Sentiments",
+          "content": "Peur de souffrir après une blessure passée, peur de s'engager et perdre sa liberté, blocage familial ou culturel, situation compliquée (déjà en couple, distance), fierté ou ego qui empêche d'avouer. Le tarot révèle ces blocages invisibles. Comprendre pourquoi il/elle se retient vous aide à décider si vous devez attendre, l'aider à s'ouvrir, ou partir.",
+          "wordCount": "75-95"
+        },
+        {
+          "h3": "💭 Pense-t-il/elle à Vous ?",
+          "content": "Le tarot répond aussi à cette question liée : oui, il/elle pense à vous si les cartes montrent une présence mentale forte (Le Cavalier de Coupe, La Lune, Le Hermite). Penser à vous ne signifie pas forcément qu'il/elle agira, mais c'est un signe que vous occupez son esprit. La fréquence et la nature de ces pensées (positives, nostalgiques, conflictuelles) sont révélées par le tirage.",
+          "wordCount": "80-100"
+        },
+        {
+          "h3": "🚦 Que Faire selon la Réponse ?",
+          "content": "S'il/elle vous aime : communiquez vos sentiments, créez des opportunités de rapprochement. S'il/elle est attaché sans amour : protégez-vous émotionnellement, ne confondez pas attachement et amour. S'il/elle ne vous aime pas : acceptez cette vérité difficile pour vous libérer et vous ouvrir à quelqu'un qui vous aimera vraiment. Le tarot vous donne la clarté pour agir justement.",
+          "wordCount": "75-95"
+        }
+      ],
+      
+      "faqs": [
+        {
+          "question": "Comment la voyance peut-elle savoir ce que quelqu'un ressent ?",
+          "answer": "Un voyant utilise le tarot, la clairvoyance ou la lecture énergétique pour capter les émotions réelles. Le tarot reflète l'inconscient et révèle ce que les mots et comportements masquent. La clairvoyance permet de ressentir directement l'état émotionnel de la personne concernée.",
+          "entities": ["voyance", "sentiments", "tarot", "clairvoyance", "émotions", "énergétique"]
+        },
+        {
+          "question": "Quelle est la différence entre amour et attachement ?",
+          "answer": "L'amour authentique veut le bonheur de l'autre même sans réciprocité, respecte sa liberté, apporte joie et croissance. L'attachement est possessif, crée de la souffrance, dépend de la présence de l'autre. Le tarot distingue ces deux liens qui se ressemblent en surface mais sont fondamentalement différents.",
+          "entities": ["amour", "attachement", "tarot", "authenticité", "liberté", "souffrance"]
+        },
+        {
+          "question": "Pourquoi quelqu'un cache-t-il ses sentiments alors qu'il m'aime ?",
+          "answer": "Peur de souffrir après blessure passée, peur d'engagement, situation compliquée, blocage culturel ou familial, fierté. Le tarot révèle ces blocages invisibles et vous aide à comprendre si vous devez être patient(e), l'aider à s'ouvrir, ou accepter que malgré l'amour la relation n'avancera pas.",
+          "entities": ["sentiments", "blocage", "tarot", "peur", "engagement", "amour"]
+        },
+        {
+          "question": "Pense-t-il/elle souvent à moi ?",
+          "answer": "Le tarot répond à cette question en révélant la fréquence et la nature de ses pensées vous concernant. Le Cavalier de Coupe et La Lune indiquent qu'il/elle pense souvent à vous. Le type de pensées (nostalgiques, désirantes, conflictuelles) est aussi révélé et vous guide sur ce que vous devez faire.",
+          "entities": ["penser", "tarot", "pensées", "Cavalier", "Lune", "fréquence"]
+        }
+      ],
+      
+      "internalLinks": [
+        { "anchor": "compatibilité avec cette personne", "target": "compatibility-soulmate" },
+        { "anchor": "avenir avec lui/elle", "target": "love-future" },
+        { "anchor": "s'il s'agit d'un ex", "target": "will-they-return" }
+      ],
+      
+      "cta": {
+        "primary": "Consultation Décryptage des Sentiments",
+        "secondary": "Tirage \"M'aime-t-il/elle ?\"",
+        "tertiary": "Lecture Énergétique des Émotions"
+      }
+    },
+    
+    "when-will-i-meet": {
+      "id": "quand-rencontre-ame-soeur",
+      "heading": "Voyance Amoureuse : Quand Vais-je Rencontrer l'Amour ?",
+      "metaTitle": "Quand Vais-je Rencontrer Quelqu'un ? Prédiction Tarot et Voyance",
+      "metaDescription": "Quand allez-vous rencontrer l'amour ou votre âme sœur ? Le tarot prédit le timing, le lieu, et le profil de votre prochaine rencontre amoureuse.",
+      "emotionalTone": "optimistic-encouraging-patient",
+      "emotionalIntensity": "medium",
+      
+      "answerCapsule": {
+        "wordCount": "160-170",
+        "entities": 7,
+        "template": "\"**Quand vais-je rencontrer quelqu'un**\" est une question d'**avenir amoureux** que le **tarot** peut éclairer avec précision. Le **tirage de la rencontre** révèle non seulement le **timing** probable, mais aussi les circonstances, le profil de la personne, et ce qui bloque actuellement votre ouverture à l'amour.\n\nL'**astrologie amoureuse** identifie les périodes favorables : transits de Vénus, nouvelle lune en maison 7, Jupiter en aspect harmonieux. Ces configurations créent des opportunités de **rencontre de l'âme sœur** ou d'un partenaire compatible. Le tarot affine : dans 3 mois, 6 mois, cette année, ou après un travail de guérison spécifique.\n\nLa **voyance** ne fait pas apparaître quelqu'un magiquement, mais vous prépare énergétiquement, vous guide vers les lieux et situations propices, et vous aide à reconnaître la bonne personne quand elle arrive. Parfois, le blocage vient de vous : peur, fermeture du cœur, non-disponibilité émotionnelle que le **voyant** vous aide à identifier et lever."
+      },
+      
+      "sections": [
+        {
+          "h3": "📅 Le Timing de votre Prochaine Rencontre",
+          "content": "Le tarot utilise des cartes temporelles : L'As indique 1-3 mois, Les Cavaliers 3-6 mois, Les Reines/Rois 6-12 mois, Les Arcanes Majeurs dépassant l'année. L'astrologie affine : Vénus en bon aspect (rencontre imminente), Jupiter en 7 (année favorable), Saturne en 7 (retard mais relation sérieuse). Un voyant combine ces méthodes pour une prédiction précise de votre timeline amoureuse.",
+          "wordCount": "80-100"
+        },
+        {
+          "h3": "🎯 Profil de la Personne que Vous Allez Rencontrer",
+          "content": "Le tarot décrit : apparence physique (Reine de Coupe = blonde douce, Roi de Bâton = brun énergique), personnalité (introverti/extraverti, sensible/pragmatique), situation de vie (célibataire, divorcé), âge approximatif, signes astrologiques compatibles. Ces détails vous aident à reconnaître la personne quand elle apparaît et à ne pas laisser passer l'opportunité par inattention.",
+          "wordCount": "75-95"
+        },
+        {
+          "h3": "🏡 Où et Comment Aurez-vous cette Rencontre ?",
+          "content": "Le tarot révèle les circonstances : par amis communs (Trois de Coupe), au travail (Huit de Deniers), voyage (Huit de Bâton), en ligne (Le Chariot = mouvement), lieu culturel (La Papesse = bibliothèque, musée), activité sportive (Cavalier de Bâton). Connaître le contexte vous permet de vous positionner activement dans ces situations sans forcer le destin.",
+          "wordCount": "75-95"
+        },
+        {
+          "h3": "🚧 Ce Qui Bloque Actuellement Votre Rencontre",
+          "content": "Blessures non guéries d'une relation passée, peur de souffrir à nouveau, indisponibilité émotionnelle, standards irréalistes, fermeture énergétique du chakra du cœur, focalisation excessive sur un ex, manque de confiance en soi. Le voyant identifie votre blocage spécifique et vous guide pour le lever. Parfois, le timing n'est simplement pas encore venu car vous devez d'abord grandir.",
+          "wordCount": "80-100"
+        },
+        {
+          "h3": "💫 Comment Se Préparer à Accueillir l'Amour",
+          "content": "Travail intérieur : guérir vos blessures, clarifier ce que vous voulez vraiment, développer l'amour de soi. Travail extérieur : vous exposer socialement, fréquenter les lieux révélés par le tarot, soigner votre apparence. Travail énergétique : ouvrir le chakra du cœur, visualisation de l'amour entrant, rituel de la nouvelle lune pour attirer l'amour. La préparation accélère la manifestation.",
+          "wordCount": "80-100"
+        }
+      ],
+      
+      "faqs": [
+        {
+          "question": "Le tarot peut-il prédire exactement quand je vais rencontrer quelqu'un ?",
+          "answer": "Le tarot donne un timing probable : dans quelques mois, cette année, l'année prochaine. Il n'est pas précis au jour près mais indique des périodes favorables selon votre évolution personnelle et les transits astrologiques. La rencontre dépend aussi de votre ouverture et de vos actions pour vous exposer socialement.",
+          "entities": ["tarot", "timing", "prédiction", "rencontre", "astrologie", "périodes"]
+        },
+        {
+          "question": "Où vais-je rencontrer ma prochaine relation ?",
+          "answer": "Le tarot révèle le contexte probable : par amis, au travail, en voyage, en ligne, lieu culturel, activité sportive. Connaître ces circonstances vous permet de vous positionner dans ces situations sans forcer. Si le tarot dit \"voyage\", planifiez un voyage. Si \"amis\", acceptez les invitations sociales.",
+          "entities": ["tarot", "rencontre", "contexte", "lieu", "circonstances", "social"]
+        },
+        {
+          "question": "Qu'est-ce qui empêche actuellement ma rencontre amoureuse ?",
+          "answer": "Les blocages fréquents : blessure passée non guérie, peur de souffrir, fermeture du cœur, standards irréalistes, fixation sur un ex, indisponibilité émotionnelle. Le voyant identifie votre blocage spécifique et vous guide pour le lever. Lever ce blocage accélère souvent la rencontre de manière spectaculaire.",
+          "entities": ["blocage", "rencontre", "peur", "guérison", "voyant", "cœur"]
+        },
+        {
+          "question": "À quoi ressemblera la personne que je vais rencontrer ?",
+          "answer": "Le tarot décrit le profil général : apparence physique (brun/blond, grand/petit), personnalité (sensible/pragmatique, introverti/extraverti), situation de vie, âge approximatif, signes astrologiques compatibles. Ces indications vous aident à reconnaître la personne quand elle apparaît dans votre vie.",
+          "entities": ["tarot", "profil", "apparence", "personnalité", "signes astrologiques", "rencontre"]
+        }
+      ],
+      
+      "internalLinks": [
+        { "anchor": "mon avenir amoureux global", "target": "love-future" },
+        { "anchor": "compatibilité avec ma future rencontre", "target": "compatibility-soulmate" },
+        { "anchor": "si je dois d'abord oublier mon ex", "target": "move-on" }
+      ],
+      
+      "cta": {
+        "primary": "Prédiction Timing de Rencontre",
+        "secondary": "Tirage \"Quand et Comment\"",
+        "tertiary": "Analyse Blocages Amoureux"
+      }
+    },
+    
+    "relationship-crisis": {
+      "id": "crise-couple-problemes-relationnels",
+      "heading": "Voyance Amoureuse : Crise de Couple et Problèmes Relationnels",
+      "metaTitle": "Crise de Couple : Voyance et Tarot pour Sauver votre Relation",
+      "metaDescription": "Votre couple traverse une crise ? Le tarot révèle les causes profondes, les solutions possibles et si votre relation peut être sauvée.",
+      "emotionalTone": "serious-honest-solution-oriented",
+      "emotionalIntensity": "high",
+      
+      "answerCapsule": {
+        "wordCount": "165-170",
+        "entities": 7,
+        "template": "Une **crise de couple** est un moment critique où le **tarot** et la **voyance** apportent une clarté essentielle. Le **tirage de couple** révèle les causes profondes au-delà des symptômes apparents : **infidélité**, manque de **communication**, routines destructrices, projets de vie divergents, ou simplement incompatibilité devenue évidente avec le temps.\n\nLe **voyant** analyse si votre **relation** peut être sauvée et à quel prix, ou si la séparation serait plus bénéfique pour l'épanouissement de chacun. Les cartes montrent les efforts nécessaires, le potentiel de **reconstruction**, et le pronostic honnête. Parfois, une crise est un passage obligé pour accéder à une relation plus profonde. D'autres fois, elle révèle une incompatibilité fondamentale qu'on refusait de voir.\n\nL'**astrologie du couple** (synastrie) complète l'analyse en identifiant les tensions structurelles et les zones d'harmonie. Un **voyant en amour** ne vous dira pas forcément ce que vous voulez entendre, mais la vérité dont vous avez besoin pour prendre la meilleure décision."
+      },
+      
+      "sections": [
+        {
+          "h3": "🔍 Diagnostic de la Crise par le Tarot",
+          "content": "Le tirage identifie : la cause racine (au-delà des disputes superficielles), le ressenti de chaque partenaire, les non-dits et rancoeurs accumulées, les besoins non satisfaits, les schémas répétitifs toxiques. Cartes révélatrices : Le Diable (dépendance toxique), Le Cinq d'Épée (conflit permanent), Le Trois d'Épée (souffrance), Le Huit de Coupe (envie de partir). Ce diagnostic précis est la première étape vers une solution.",
+          "wordCount": "80-100"
+        },
+        {
+          "h3": "💔 Les Crises les Plus Fréquentes",
+          "content": "**Infidélité** : peut-on pardonner et reconstruire ? **Jalousie excessive** : insécurité qui étouffe. **Manque de communication** : solitude à deux. **Routine** : l'ennui qui tue l'amour. **Projets divergents** : enfants, carrière, lieu de vie. **Famille opposée** : pression externe. **Distance émotionnelle** : cohabitation sans connexion. Chaque crise a ses solutions spécifiques que le tarot révèle selon votre situation unique.",
+          "wordCount": "80-100"
+        },
+        {
+          "h3": "🛠️ Solutions et Actions Concrètes",
+          "content": "Selon le diagnostic tarot : **Communication profonde** : exprimer besoins et émotions. **Thérapie de couple** si recommandée. **Temps de recul** pour réfléchir séparément. **Renouveau** : voyage, projet commun, nouvelle routine. **Pardon authentique** après infidélité. **Rééquilibrage** : donner autant qu'on reçoit. **Acceptation** des différences ou décision de se séparer dignement. Le voyant vous guide vers la solution adaptée.",
+          "wordCount": "80-100"
+        },
+        {
+          "h3": "🔮 Votre Couple Peut-il Être Sauvé ?",
+          "content": "Le tarot répond franchement : Oui si les deux veulent vraiment, si les causes sont réparables, si l'amour existe encore sous la souffrance. Non si un ou les deux ont déjà décidé intérieurement, si l'incompatibilité est fondamentale, si la toxicité est trop installée. Peut-être si un travail profond est fait rapidement. Un voyant honnête ne vous vendra pas de faux espoirs mais vous dira la vérité.",
+          "wordCount": "85-105"
+        },
+        {
+          "h3": "⚖️ Rester ou Partir ? La Décision",
+          "content": "Le tarot éclaire cette décision déchirante. Rester si : amour profond présent, crise passagère, solutions viables, engagement mutuel au changement. Partir si : toxicité installée, absence de volonté de l'un, souffrance chronique, incompatibilité fondamentale, ou si le tarot montre clairement qu'un avenir plus heureux vous attend séparément. La voyance vous donne le courage de la bonne décision.",
+          "wordCount": "75-95"
+        }
+      ],
+      
+      "faqs": [
+        {
+          "question": "Le tarot peut-il sauver mon couple en crise ?",
+          "answer": "Le tarot ne sauve pas votre couple magiquement, mais il révèle les causes profondes et les solutions possibles. Cette clarté permet d'agir efficacement plutôt que de tourner en rond. Si les deux partenaires s'engagent dans le travail révélé par le tarot, beaucoup de couples surmontent leurs crises et en ressortent plus forts.",
+          "entities": ["tarot", "couple", "crise", "causes", "solutions", "travail"]
+        },
+        {
+          "question": "Comment savoir si ma relation peut être sauvée ?",
+          "answer": "Le tarot analyse : l'amour résiduel de chacun, la volonté de changer, la gravité des causes, le potentiel de reconstruction. Il donne un pronostic honnête : sauvable avec efforts, situation critique mais possible, ou trop endommagé. Un voyant vous dira la vérité même difficile pour vous éviter de vous accrocher inutilement.",
+          "entities": ["relation", "tarot", "amour", "sauver", "pronostic", "voyant"]
+        },
+        {
+          "question": "Peut-on se remettre d'une infidélité selon le tarot ?",
+          "answer": "Oui, si : l'infidélité était circonstancielle (pas un schéma), le partenaire infidèle a de vrais regrets, la personne trompée peut vraiment pardonner, les deux veulent reconstruire. Non si : infidélités répétées, absence de remords, impossibilité de pardonner, confiance irrémédiablement brisée. Le tarot révèle ces éléments pour guider votre décision.",
+          "entities": ["infidélité", "tarot", "pardon", "regrets", "reconstruction", "confiance"]
+        },
+        {
+          "question": "Dois-je rester ou partir ? Comment décider ?",
+          "answer": "Le tarot éclaire cette décision en pesant : amour vs souffrance, potentiel de changement vs toxicité installée, votre épanouissement dans la relation vs seul(e), engagement mutuel vs efforts unilatéraux. Il vous montre aussi votre avenir probable dans chaque scénario. Un voyant vous donne le courage de faire le bon choix pour vous.",
+          "entities": ["décision", "tarot", "rester", "partir", "avenir", "voyant"]
+        }
+      ],
+      
+      "internalLinks": [
+        { "anchor": "comprendre s'il/elle m'aime encore", "target": "do-they-love-me" },
+        { "anchor": "notre compatibilité réelle", "target": "compatibility-soulmate" },
+        { "anchor": "si je dois me préparer à une séparation", "target": "move-on" }
+      ],
+      
+      "cta": {
+        "primary": "Consultation Urgente Crise de Couple",
+        "secondary": "Diagnostic Tarot de votre Relation",
+        "tertiary": "Guidance Décision Rester/Partir"
+      }
+    },
+    
+    "compatibility-soulmate": {
+      "id": "compatibilite-ame-soeur",
+      "heading": "Voyance Amoureuse : Compatibilité et Âme Sœur",
+      "metaTitle": "Compatibilité Amoureuse : Tarot et Astrologie | Est-ce mon Âme Sœur ?",
+      "metaDescription": "Êtes-vous faits l'un pour l'autre ? Découvrez votre compatibilité amoureuse par le tarot et l'astrologie. Est-ce votre âme sœur ou votre flamme jumelle ?",
+      "emotionalTone": "insightful-balanced-educational",
+      "emotionalIntensity": "medium",
+      
+      "answerCapsule": {
+        "wordCount": "155-165",
+        "entities": 7,
+        "template": "La question de la **compatibilité amoureuse** et de l'**âme sœur** fascine depuis toujours. Le **tarot** et l'**astrologie** peuvent révéler si vous êtes vraiment faits l'un pour l'autre. L'analyse de **compatibilité** examine plusieurs niveaux : attraction physique, connexion émotionnelle, valeurs partagées, projets de vie alignés, et cette connexion spirituelle ineffable qui définit l'âme sœur.\n\nLa **synastrie astrologique** compare vos thèmes natals : Vénus avec Mars (passion), Lune avec Lune (émotions), Soleil avec Soleil (identité). Le tarot complète avec les archétypes du couple et révèle les défis à surmonter. Une **âme sœur** n'est pas forcément une relation facile - c'est quelqu'un qui vous fait évoluer, parfois à travers des défis.\n\nUn **voyant** distingue : partenaire compatible (bon quotidien mais pas destiné), âme sœur (connection profonde, relation transformante), ou **flamme jumelle** (miroir de vous-même, intensité extrême). Chaque type de relation a son but dans votre évolution."
+      },
+      
+      "sections": [
+        {
+          "h3": "💕 Analyse de Compatibilité par le Tarot",
+          "content": "Le tirage de compatibilité examine : 1) Votre énergie individuelle, 2) Son énergie individuelle, 3) Votre dynamique ensemble, 4) Forces du couple, 5) Défis à surmonter, 6) Potentiel d'avenir. Les cartes révèlent si vos énergies s'harmonisent naturellement ou créent des frictions constantes. Compatibilité forte : Deux de Coupe, Amoureux, Dix de Coupe. Incompatibilité : Tour, Cinq d'Épée, Huit d'Épée.",
+          "wordCount": "80-100"
+        },
+        {
+          "h3": "⭐ Compatibilité Astrologique (Synastrie)",
+          "content": "L'astrologie compare vos signes solaires (identité), signes lunaires (émotions), Vénus (amour), Mars (passion), Mercure (communication). Aspects harmonieux (trigone, sextile) facilitent la relation. Aspects tendus (carré, opposition) créent friction mais aussi croissance. Certains couples très compatibles s'ennuient, d'autres avec tensions se stimulent. Un astrologue analyse votre synastrie unique.",
+          "wordCount": "75-95"
+        },
+        {
+          "h3": "💫 Âme Sœur vs Partenaire Compatible vs Flamme Jumelle",
+          "content": "**Partenaire compatible** : relation confortable, bon quotidien, projets alignés. Pas d'intensité spirituelle particulière. **Âme sœur** : connexion profonde immédiate, sentiment de se connaître depuis toujours, relation transformante qui vous fait évoluer. **Flamme jumelle** : miroir de vous-même, intensité extrême, relation très difficile mais évolution spirituelle maximale. Le tarot identifie votre type de relation.",
+          "wordCount": "80-100"
+        },
+        {
+          "h3": "🎯 Vos Forces et Défis en Couple",
+          "content": "Le tarot révèle vos **forces** : compréhension mutuelle, passion, soutien, projets communs, humour, communication. Et vos **défis** : jalousie, différences de valeurs, rythmes incompatibles, objectifs divergents, familles opposées. Connaître ces éléments permet de capitaliser sur vos forces et d'anticiper les défis avant qu'ils deviennent des crises. La compatibilité se travaille.",
+          "wordCount": "75-95"
+        },
+        {
+          "h3": "🔮 Potentiel d'Avenir de votre Couple",
+          "content": "Le tarot projette votre avenir probable ensemble : relation durable et épanouissante, défis surmontables, passion qui s'estompe, incompatibilité qui se révèle avec le temps. L'astrologie identifie les périodes critiques (transits de Saturne = épreuves) et favorables (Jupiter = expansion). Cette vision à long terme vous aide à décider de l'investissement émotionnel à consentir.",
+          "wordCount": "75-95"
+        }
+      ],
+      
+      "faqs": [
+        {
+          "question": "Comment savoir si c'est mon âme sœur ?",
+          "answer": "Signes d'âme sœur : connexion immédiate et profonde, sentiment de se connaître depuis toujours, communication sans mots, synchronicités répétées, sentiment d'être chez soi avec cette personne, relation qui vous transforme positivement. Le tarot confirme cette connexion spirituelle en révélant les liens karmiques et la destinée commune.",
+          "entities": ["âme sœur", "connexion", "signes", "tarot", "karmique", "destinée"]
+        },
+        {
+          "question": "Sommes-nous vraiment compatibles astrologiquement ?",
+          "answer": "La synastrie compare vos thèmes astraux : signes solaires, lunaires, Vénus, Mars, maisons. Les aspects harmonieux (trigone, sextile) facilitent la relation. Les aspects tendus (carré, opposition) créent défis mais aussi croissance. Une compatibilité parfaite n'existe pas - l'important est que vos différences soient complémentaires plutôt que contradictoires.",
+          "entities": ["compatibilité", "astrologie", "synastrie", "thèmes", "aspects", "complémentaires"]
+        },
+        {
+          "question": "Quelle est la différence entre âme sœur et flamme jumelle ?",
+          "answer": "**Âme sœur** : connexion profonde, relation transformante mais vivable, plusieurs âmes sœurs possibles dans une vie. **Flamme jumelle** : miroir exact de vous-même, une seule par vie, intensité extrême, relation très difficile avec séparations, but = évolution spirituelle maximale. Le tarot identifie votre type de connexion.",
+          "entities": ["âme sœur", "flamme jumelle", "connexion", "miroir", "tarot", "spirituel"]
+        },
+        {
+          "question": "Peut-on améliorer la compatibilité d'un couple ?",
+          "answer": "Oui, en travaillant sur les zones révélées par le tarot : améliorer la communication, comprendre les besoins de l'autre, gérer les conflits sainement, créer des rituels communs, respecter les différences. L'astrologie identifie vos complémentarités naturelles à cultiver. La compatibilité est partie innée, partie construite ensemble.",
+          "entities": ["compatibilité", "tarot", "communication", "astrologie", "travail", "couple"]
+        }
+      ],
+      
+      "internalLinks": [
+        { "anchor": "s'il/elle m'aime vraiment", "target": "do-they-love-me" },
+        { "anchor": "notre avenir ensemble", "target": "love-future" },
+        { "anchor": "si nous traversons une crise", "target": "relationship-crisis" }
+      ],
+      
+      "cta": {
+        "primary": "Analyse Complète de Compatibilité",
+        "secondary": "Synastrie Astrologique de Couple",
+        "tertiary": "Tirage Âme Sœur"
+      }
+    },
+    
+    "love-future": {
+      "id": "avenir-amoureux-predictions",
+      "heading": "Voyance Amoureuse : Votre Avenir Amoureux et Prédictions",
+      "metaTitle": "Avenir Amoureux : Prédictions Tarot et Voyance | Que Réserve l'Amour ?",
+      "metaDescription": "Que vous réserve votre avenir amoureux ? Découvrez les prédictions du tarot pour les prochains mois : rencontres, évolution de couple, périodes favorables.",
+      "emotionalTone": "forward-looking-empowering-holistic",
+      "emotionalIntensity": "medium",
+      
+      "answerCapsule": {
+        "wordCount": "160-170",
+        "entities": 7,
+        "template": "Votre **avenir amoureux** est un voyage fait de rencontres, d'évolutions et de transformations que la **voyance** peut éclairer. Le **tarot de l'avenir** révèle les grandes lignes de votre chemin sentimental pour les 6 à 12 prochains mois : rencontres probables, évolution de votre couple actuel, périodes favorables ou difficiles, et les leçons d'amour que vous apprendrez.\n\nL'**astrologie prévisionnelle** identifie les **périodes clés** : Vénus en transit (amour, séduction), éclipses (tournants majeurs), retours planétaires (karma amoureux), nouvelle lune en maison 7 (nouveau départ). Ces configurations créent des fenêtres d'opportunité pour l'amour. Le **voyant** interprète ces énergies selon votre situation personnelle.\n\nComprendre votre **avenir sentimental** ne fixe pas votre destin - il vous montre les potentiels selon votre trajectoire actuelle. Votre **libre arbitre** et vos choix peuvent modifier cet avenir. La **prédiction amoureuse** vous prépare, vous rassure et vous guide, mais c'est vous qui créez votre réalité amoureuse."
+      },
+      
+      "sections": [
+        {
+          "h3": "🔮 Prédictions pour les 6 Prochains Mois",
+          "content": "Le tirage de l'avenir examine mois par mois : Mois 1-2 (situation actuelle et premier mouvement), Mois 3-4 (développements majeurs), Mois 5-6 (résultat et nouvelle phase). Pour les célibataires : timing de rencontre, profil de la personne. Pour les couples : évolution de la relation, défis à anticiper, moments de rapprochement. Chaque période a son énergie spécifique révélée par les cartes.",
+          "wordCount": "80-100"
+        },
+        {
+          "h3": "⭐ Périodes Astrologiques Favorables",
+          "content": "**Vénus directe** (10 mois/an) : bon pour relations nouvelles et existantes. **Vénus rétrograde** (40 jours/18 mois) : retours d'ex, réévaluation. **Nouvelle lune** : nouveaux départs amoureux. **Pleine lune** : culminations, révélations. **Éclipses** : tournants majeurs. **Jupiter en 7** : chance en amour. **Saturne en 7** : test de solidité. Un astrologue identifie vos périodes personnelles favorables.",
+          "wordCount": "80-100"
+        },
+        {
+          "h3": "💫 Votre Destinée Amoureuse",
+          "content": "Le tarot révèle votre **chemin d'âme** en amour : êtes-vous destiné à rencontrer votre âme sœur dans cette vie? Devez-vous d'abord guérir certaines blessures? Votre mission karmique inclut-elle d'aider quelqu'un à évoluer? Certains sont destinés à de multiples relations courtes, d'autres à un amour unique et long. Le tarot ne juge pas mais éclaire votre parcours unique.",
+          "wordCount": "80-100"
+        },
+        {
+          "h3": "🎯 Conseils pour Optimiser votre Avenir Amoureux",
+          "content": "Profitez des périodes favorables révélées : sortez, socialisez, soyez ouvert. Pendant les périodes difficiles : travaillez sur vous, guérissez, patience. **Libre arbitre** : les prédictions montrent un probable, pas une fatalité. Vos choix et actions modifient constamment votre avenir. Utilisez la voyance comme boussole, pas comme prison. Co-créez votre réalité amoureuse avec l'univers.",
+          "wordCount": "75-95"
+        },
+        {
+          "h3": "🌟 Ce Que l'Amour Vous Enseignera Cette Année",
+          "content": "Chaque période amoureuse apporte des leçons : apprendre l'amour de soi, développer la vulnérabilité, établir des limites saines, pardonner, lâcher le contrôle, faire confiance. Le tarot révèle quelle leçon vous attend et pourquoi. Comprendre le sens de vos expériences transforme la souffrance en croissance. Votre avenir amoureux est un chemin d'évolution spirituelle autant que de bonheur terrestre.",
+          "wordCount": "80-100"
+        }
+      ],
+      
+      "faqs": [
+        {
+          "question": "Le tarot peut-il prédire mon avenir amoureux avec précision ?",
+          "answer": "Le tarot révèle les potentiels selon votre énergie actuelle et les configurations astrologiques. Il est précis sur les grandes lignes (rencontre cette année, évolution de couple, périodes favorables) mais pas sur les détails exacts car votre libre arbitre modifie constamment votre futur. Utilisez-le comme guidance, pas comme vérité absolue.",
+          "entities": ["tarot", "avenir", "prédiction", "énergie", "astrologie", "libre arbitre"]
+        },
+        {
+          "question": "Quelles sont les périodes favorables pour l'amour cette année ?",
+          "answer": "Périodes généralement favorables : Vénus directe, nouvelle lune, Jupiter en bon aspect. Périodes de révision : Vénus rétrograde (retours d'ex). Vos périodes personnelles dépendent de votre thème astral. Un voyant analyse vos transits spécifiques pour identifier vos fenêtres d'opportunité amoureuse uniques cette année.",
+          "entities": ["périodes", "favorables", "Vénus", "Jupiter", "astrologie", "voyant"]
+        },
+        {
+          "question": "Mon avenir amoureux peut-il changer selon mes actions ?",
+          "answer": "Absolument. Le tarot montre un futur probable selon votre trajectoire actuelle. Si vous changez votre énergie, vos croyances, vos actions, votre futur change. C'est pourquoi des consultations régulières (tous les 3-6 mois) permettent d'ajuster. Vous êtes co-créateur de votre réalité amoureuse, pas victime d'un destin figé.",
+          "entities": ["avenir", "changement", "tarot", "actions", "trajectoire", "co-créateur"]
+        },
+        {
+          "question": "Quelle est ma destinée amoureuse karmique ?",
+          "answer": "Le tarot révèle votre chemin d'âme en amour : certains doivent guérir avant de rencontrer, d'autres ont une mission d'aide, d'autres expérimenteront plusieurs relations. Votre nœud nord lunaire (astrologie) indique votre direction évolutive. Un voyant combine tarot et astrologie pour révéler votre destinée amoureuse unique.",
+          "entities": ["destinée", "karmique", "tarot", "âme", "nœud nord", "voyant"]
+        }
+      ],
+      
+      "internalLinks": [
+        { "anchor": "quand je vais rencontrer quelqu'un", "target": "when-will-i-meet" },
+        { "anchor": "compatibilité avec futur partenaire", "target": "compatibility-soulmate" },
+        { "anchor": "si je suis avec quelqu'un actuellement", "target": "relationship-crisis" }
+      ],
+      
+      "cta": {
+        "primary": "Lecture Complète d'Avenir Amoureux",
+        "secondary": "Prévisions 12 Mois",
+        "tertiary": "Analyse Destinée Karmique"
+      }
+    }
+  }
+}

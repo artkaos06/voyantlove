@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install:*)",
+      "Bash(find /Users/roma/Downloads/voyantlove/app -name \"page.tsx\" -type f -exec sh -c 'echo \"\"{}: $\\(wc -l < \"\"{}\"\"\\)\"\"' ;)",
+      "Bash(grep:*)",
+      "Bash(find /Users/roma/Downloads/voyantlove/app -name \"page.tsx\" -type f -exec sh -c 'lines=$\\(wc -l < \"\"$1\"\"\\); if [ $lines -gt 10 ]; then echo \"\"$1: $lines lines\"\"; fi' _ {} ;)",
+      "Bash(find:*)",
+      "Bash(wc:*)",
+      "Bash(curl:*)",
+      "Bash(python3:*)",
+      "Bash(npm run dev:*)",
+      "Bash(npx tsx:*)",
+      "Bash(lsof:*)",
+      "Bash(xargs kill:*)",
+      "Bash(npx tsc:*)",
+      "Bash(node:*)",
+      "Bash(pkill:*)",
+      "Bash(chmod:*)",
+      "Bash(./deploy.sh:*)"
+    ]
+  }
+}

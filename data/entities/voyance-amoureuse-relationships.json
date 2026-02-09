@@ -1,0 +1,493 @@
+{
+  "meta": {
+    "version": "1.0",
+    "description": "Semantic relationships between voyance amoureuse entities for topical authority and internal linking",
+    "lastUpdated": "2025-02-08"
+  },
+  
+  "hierarchies": {
+    "primaryHierarchy": {
+      "root": "voyance-amoureuse",
+      "levels": [
+        {
+          "level": 1,
+          "name": "Core Concept",
+          "entities": ["voyance-amoureuse"]
+        },
+        {
+          "level": 2,
+          "name": "Situation Categories",
+          "entities": ["reconciliation", "rupture", "nouvelle-rencontre", "crise-couple", "engagement"]
+        },
+        {
+          "level": 3,
+          "name": "Specific Situations",
+          "entities": ["ex-retour", "ame-soeur", "infidelite", "triangle-amoureux", "amour-impossible"]
+        },
+        {
+          "level": 4,
+          "name": "Emotional States",
+          "entities": ["chagrin-amour", "doute-amoureux", "jalousie", "amour-non-partage", "espoir"]
+        },
+        {
+          "level": 5,
+          "name": "Solutions & Actions",
+          "entities": ["oublier-ex", "reconquerir", "pardon", "communication", "prendre-recul"]
+        }
+      ]
+    },
+    
+    "emotionalIntensityHierarchy": {
+      "very-high": ["rupture", "reconciliation", "infidelite", "chagrin-amour", "amour-impossible"],
+      "high": ["ex-retour", "ame-soeur", "triangle-amoureux", "doute-amoureux"],
+      "medium": ["nouvelle-rencontre", "distance", "engagement", "jalousie"]
+    }
+  },
+  
+  "relationships": [
+    {
+      "from": "voyance-amoureuse",
+      "to": "tarot-amour",
+      "type": "primary_method",
+      "strength": 1.0,
+      "description": "Le tarot est la méthode principale de voyance amoureuse"
+    },
+    {
+      "from": "rupture",
+      "to": "chagrin-amour",
+      "type": "causes",
+      "strength": 1.0,
+      "description": "Une rupture cause un chagrin d'amour"
+    },
+    {
+      "from": "rupture",
+      "to": "reconciliation",
+      "type": "can_lead_to",
+      "strength": 0.7,
+      "description": "Une rupture peut mener à une réconciliation"
+    },
+    {
+      "from": "rupture",
+      "to": "oublier-ex",
+      "type": "solution",
+      "strength": 0.9,
+      "description": "Oublier son ex est une solution après rupture"
+    },
+    {
+      "from": "reconciliation",
+      "to": "reconquerir",
+      "type": "requires",
+      "strength": 1.0,
+      "description": "La réconciliation nécessite de reconquérir son ex"
+    },
+    {
+      "from": "ex-retour",
+      "to": "reconciliation",
+      "type": "enables",
+      "strength": 0.9,
+      "description": "Le retour de l'ex permet la réconciliation"
+    },
+    {
+      "from": "ex-retour",
+      "to": "va-t-il-revenir",
+      "type": "answers_question",
+      "strength": 1.0,
+      "description": "La question 'va-t-il revenir' concerne le retour de l'ex"
+    },
+    {
+      "from": "nouvelle-rencontre",
+      "to": "ame-soeur",
+      "type": "potential_outcome",
+      "strength": 0.6,
+      "description": "Une nouvelle rencontre peut être l'âme sœur"
+    },
+    {
+      "from": "nouvelle-rencontre",
+      "to": "quand-rencontre",
+      "type": "answers_question",
+      "strength": 1.0,
+      "description": "La question 'quand vais-je rencontrer' concerne nouvelle rencontre"
+    },
+    {
+      "from": "infidelite",
+      "to": "crise-couple",
+      "type": "causes",
+      "strength": 1.0,
+      "description": "L'infidélité cause une crise de couple"
+    },
+    {
+      "from": "infidelite",
+      "to": "pardon",
+      "type": "solution",
+      "strength": 0.8,
+      "description": "Le pardon est une solution après infidélité"
+    },
+    {
+      "from": "infidelite",
+      "to": "rupture",
+      "type": "can_lead_to",
+      "strength": 0.9,
+      "description": "L'infidélité peut mener à la rupture"
+    },
+    {
+      "from": "crise-couple",
+      "to": "reconstruction",
+      "type": "solution",
+      "strength": 0.8,
+      "description": "La reconstruction est la solution après une crise"
+    },
+    {
+      "from": "crise-couple",
+      "to": "communication",
+      "type": "solution",
+      "strength": 0.9,
+      "description": "La communication aide à surmonter la crise"
+    },
+    {
+      "from": "doute-amoureux",
+      "to": "maime-t-il",
+      "type": "answers_question",
+      "strength": 1.0,
+      "description": "Le doute amène la question 'm'aime-t-il'"
+    },
+    {
+      "from": "doute-amoureux",
+      "to": "que-ressent-il",
+      "type": "answers_question",
+      "strength": 0.9,
+      "description": "Le doute amène la question 'que ressent-il'"
+    },
+    {
+      "from": "amour-non-partage",
+      "to": "chagrin-amour",
+      "type": "causes",
+      "strength": 0.8,
+      "description": "L'amour non partagé cause du chagrin"
+    },
+    {
+      "from": "amour-non-partage",
+      "to": "maime-t-il",
+      "type": "answers_question",
+      "strength": 1.0,
+      "description": "L'amour non partagé pose la question 'm'aime-t-il'"
+    },
+    {
+      "from": "distance",
+      "to": "manque",
+      "type": "causes",
+      "strength": 0.9,
+      "description": "La distance cause un manque affectif"
+    },
+    {
+      "from": "distance",
+      "to": "crise-couple",
+      "type": "can_lead_to",
+      "strength": 0.7,
+      "description": "La distance peut causer une crise"
+    },
+    {
+      "from": "triangle-amoureux",
+      "to": "doute-amoureux",
+      "type": "causes",
+      "strength": 0.8,
+      "description": "Le triangle amoureux cause des doutes"
+    },
+    {
+      "from": "triangle-amoureux",
+      "to": "jalousie",
+      "type": "causes",
+      "strength": 0.9,
+      "description": "Le triangle amoureux provoque la jalousie"
+    },
+    {
+      "from": "amour-impossible",
+      "to": "chagrin-amour",
+      "type": "causes",
+      "strength": 1.0,
+      "description": "L'amour impossible cause un profond chagrin"
+    },
+    {
+      "from": "jalousie",
+      "to": "manque-confiance",
+      "type": "symptom_of",
+      "strength": 0.9,
+      "description": "La jalousie est symptôme d'un manque de confiance"
+    },
+    {
+      "from": "jalousie",
+      "to": "crise-couple",
+      "type": "can_lead_to",
+      "strength": 0.8,
+      "description": "La jalousie peut créer une crise"
+    },
+    {
+      "from": "engagement",
+      "to": "avenir-amoureux",
+      "type": "concerns",
+      "strength": 0.9,
+      "description": "L'engagement concerne l'avenir amoureux"
+    },
+    {
+      "from": "engagement",
+      "to": "sommes-nous-faits",
+      "type": "answers_question",
+      "strength": 0.8,
+      "description": "Avant l'engagement on se demande si on est faits l'un pour l'autre"
+    },
+    {
+      "from": "ame-soeur",
+      "to": "destine",
+      "type": "related_concept",
+      "strength": 1.0,
+      "description": "L'âme sœur est liée à la destinée amoureuse"
+    },
+    {
+      "from": "ame-soeur",
+      "to": "compatibilite",
+      "type": "requires",
+      "strength": 0.9,
+      "description": "L'âme sœur implique une compatibilité parfaite"
+    },
+    {
+      "from": "tirage-amour",
+      "to": "tarot-amour",
+      "type": "uses",
+      "strength": 1.0,
+      "description": "Le tirage amoureux utilise le tarot de l'amour"
+    },
+    {
+      "from": "tirage-amour",
+      "to": "avenir-amoureux",
+      "type": "reveals",
+      "strength": 0.9,
+      "description": "Le tirage révèle l'avenir amoureux"
+    },
+    {
+      "from": "astrologie-amoureuse",
+      "to": "compatibilite",
+      "type": "determines",
+      "strength": 0.9,
+      "description": "L'astrologie détermine la compatibilité"
+    },
+    {
+      "from": "astrologie-amoureuse",
+      "to": "sommes-nous-faits",
+      "type": "answers_question",
+      "strength": 0.9,
+      "description": "L'astrologie répond à 'sommes-nous faits l'un pour l'autre'"
+    },
+    {
+      "from": "chagrin-amour",
+      "to": "oublier-ex",
+      "type": "solution",
+      "strength": 0.9,
+      "description": "Oublier son ex aide à surmonter le chagrin"
+    },
+    {
+      "from": "chagrin-amour",
+      "to": "prendre-recul",
+      "type": "solution",
+      "strength": 0.7,
+      "description": "Prendre du recul aide avec le chagrin"
+    },
+    {
+      "from": "reconquerir",
+      "to": "dois-je-attendre",
+      "type": "answers_question",
+      "strength": 0.8,
+      "description": "Reconquérir implique de décider si on doit attendre"
+    },
+    {
+      "from": "oublier-ex",
+      "to": "nouvelle-rencontre",
+      "type": "enables",
+      "strength": 0.8,
+      "description": "Oublier son ex permet de s'ouvrir aux nouvelles rencontres"
+    },
+    {
+      "from": "pardon",
+      "to": "reconstruction",
+      "type": "enables",
+      "strength": 0.9,
+      "description": "Le pardon permet la reconstruction"
+    },
+    {
+      "from": "communication",
+      "to": "vie-de-couple",
+      "type": "essential_for",
+      "strength": 1.0,
+      "description": "La communication est essentielle à la vie de couple"
+    },
+    {
+      "from": "manque-confiance",
+      "to": "crise-couple",
+      "type": "causes",
+      "strength": 0.8,
+      "description": "Le manque de confiance cause des crises"
+    },
+    {
+      "from": "signes-amour",
+      "to": "maime-t-il",
+      "type": "answers_question",
+      "strength": 0.9,
+      "description": "Les signes d'amour répondent à 'm'aime-t-il'"
+    },
+    {
+      "from": "pense-t-il-moi",
+      "to": "signes-amour",
+      "type": "looks_for",
+      "strength": 0.8,
+      "description": "Savoir s'il pense à moi cherche des signes d'amour"
+    }
+  ],
+  
+  "semanticClusters": [
+    {
+      "id": "breakup-reconciliation",
+      "name": "Rupture et Réconciliation",
+      "coreEntities": ["rupture", "reconciliation", "ex-retour", "reconquerir", "oublier-ex", "chagrin-amour"],
+      "description": "Cluster autour de la séparation et du possible retour",
+      "emotionalIntensity": "very-high",
+      "linkingStrategy": "Pages dans ce cluster doivent être fortement inter-reliées"
+    },
+    {
+      "id": "new-love",
+      "name": "Nouvelle Rencontre et Âme Sœur",
+      "coreEntities": ["nouvelle-rencontre", "ame-soeur", "quand-rencontre", "debut-relation"],
+      "description": "Cluster autour de la recherche de l'amour",
+      "emotionalIntensity": "medium",
+      "linkingStrategy": "Lier aux pages de reconstruction après rupture"
+    },
+    {
+      "id": "relationship-crisis",
+      "name": "Crises et Difficultés de Couple",
+      "coreEntities": ["crise-couple", "infidelite", "jalousie", "communication", "manque-confiance"],
+      "description": "Cluster autour des problèmes relationnels",
+      "emotionalIntensity": "high",
+      "linkingStrategy": "Lier aux solutions et reconstructions"
+    },
+    {
+      "id": "feelings-verification",
+      "name": "Vérification des Sentiments",
+      "coreEntities": ["maime-t-il", "pense-t-il-moi", "que-ressent-il", "signes-amour"],
+      "description": "Cluster autour du doute sur les sentiments de l'autre",
+      "emotionalIntensity": "medium",
+      "linkingStrategy": "Lier entre elles toutes les questions de sentiments"
+    },
+    {
+      "id": "future-prediction",
+      "name": "Avenir et Prédictions",
+      "coreEntities": ["avenir-amoureux", "quand-rencontre", "va-t-il-revenir", "destine"],
+      "description": "Cluster autour des prédictions d'avenir",
+      "emotionalIntensity": "medium",
+      "linkingStrategy": "Lier aux méthodes divinatoires"
+    },
+    {
+      "id": "divinatory-methods",
+      "name": "Méthodes de Divination Amoureuse",
+      "coreEntities": ["tarot-amour", "tirage-amour", "oracle-amour", "astrologie-amoureuse"],
+      "description": "Cluster des pratiques divinatoires",
+      "emotionalIntensity": "low",
+      "linkingStrategy": "Pages méthodes doivent lier vers situations applicables"
+    }
+  ],
+  
+  "questionToSituationMapping": {
+    "va-t-il-revenir": ["ex-retour", "reconciliation", "reconquerir"],
+    "maime-t-il": ["doute-amoureux", "amour-non-partage", "signes-amour"],
+    "quand-rencontre": ["nouvelle-rencontre", "ame-soeur", "avenir-amoureux"],
+    "pense-t-il-moi": ["doute-amoureux", "signes-amour", "ex-retour"],
+    "que-ressent-il": ["doute-amoureux", "signes-amour"],
+    "sommes-nous-faits": ["compatibilite", "ame-soeur", "avenir-amoureux"],
+    "va-t-on-se-remettre": ["reconciliation", "ex-retour", "reconstruction"],
+    "dois-je-attendre": ["ex-retour", "reconquerir", "prendre-recul"]
+  },
+  
+  "situationToMethodMapping": {
+    "reconciliation": ["tirage-amour", "tarot-amour", "oracle-amour"],
+    "nouvelle-rencontre": ["tirage-amour", "astrologie-amoureuse", "numerologie-amour"],
+    "infidelite": ["tarot-amour", "oracle-amour"],
+    "compatibilite": ["astrologie-amoureuse", "numerologie-amour"],
+    "avenir-amoureux": ["tirage-amour", "tarot-amour", "astrologie-amoureuse"]
+  },
+  
+  "situationToEmotionMapping": {
+    "rupture": ["chagrin-amour", "doute-amoureux", "manque"],
+    "reconciliation": ["espoir", "doute-amoureux"],
+    "infidelite": ["chagrin-amour", "jalousie", "manque-confiance"],
+    "amour-non-partage": ["chagrin-amour", "espoir"],
+    "nouvelle-rencontre": ["espoir"],
+    "triangle-amoureux": ["jalousie", "doute-amoureux"]
+  },
+  
+  "coOccurrencePatterns": [
+    {
+      "pattern": ["rupture", "reconquérir", "ex"],
+      "example": "après une rupture, reconquérir son ex",
+      "strength": "very-high",
+      "usage": "Titles, primary content"
+    },
+    {
+      "pattern": ["voyance", "amoureuse", "question"],
+      "example": "voyance amoureuse pour vos questions de cœur",
+      "strength": "very-high",
+      "usage": "Primary anchor pattern"
+    },
+    {
+      "pattern": ["retour", "ex", "signes"],
+      "example": "signes de retour de votre ex",
+      "strength": "high",
+      "usage": "Sub-section headings"
+    },
+    {
+      "pattern": ["nouvelle", "rencontre", "âme sœur"],
+      "example": "nouvelle rencontre avec votre âme sœur",
+      "strength": "high",
+      "usage": "Related content linking"
+    },
+    {
+      "pattern": ["avenir", "amoureux", "prédiction"],
+      "example": "prédictions sur votre avenir amoureux",
+      "strength": "high",
+      "usage": "Service descriptions"
+    }
+  ],
+  
+  "anchorTextVariations": {
+    "reconciliation_pages": [
+      "reconquérir son ex",
+      "réconciliation amoureuse",
+      "retour de l'être aimé",
+      "retrouver son ex",
+      "seconde chance en amour"
+    ],
+    "breakup_pages": [
+      "surmonter une rupture",
+      "oublier son ex",
+      "guérir d'un chagrin d'amour",
+      "après une séparation",
+      "tourner la page"
+    ],
+    "new_love_pages": [
+      "rencontrer l'âme sœur",
+      "nouvelle rencontre amoureuse",
+      "trouver le grand amour",
+      "rencontre amoureuse",
+      "quand vais-je rencontrer quelqu'un"
+    ],
+    "feelings_verification": [
+      "m'aime-t-il vraiment",
+      "ses vrais sentiments",
+      "pense-t-il à moi",
+      "signes qu'il m'aime",
+      "décrypter ses sentiments"
+    ],
+    "crisis_pages": [
+      "crise de couple",
+      "problèmes relationnels",
+      "difficultés de couple",
+      "sauver son couple",
+      "reconstruire la relation"
+    ]
+  }
+}
