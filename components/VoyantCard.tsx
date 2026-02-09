@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { Voyant, formatPrice, getAvailabilityServices, getGenderLabel, getTrustScore, getAffiliateLink } from '@/lib/voyants';
+import { trackAffiliateClick } from '@/lib/glyphex';
 
 interface VoyantCardProps {
   voyant: Voyant;
@@ -26,12 +27,17 @@ export default function VoyantCard({ voyant, source = 'content-page', compact = 
 
   const primaryService = getPrimaryService();
 
+  const handleAffiliateClick = () => {
+    trackAffiliateClick(voyant.ID, source, voyant.VOYANT);
+  };
+
   if (compact) {
     return (
       <a
         href={affiliateLink}
         target="_blank"
         rel="noopener noreferrer sponsored"
+        onClick={handleAffiliateClick}
         className="block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow p-4 border border-gray-200 hover:border-purple-400"
       >
         <div className="flex items-start justify-between gap-3">
@@ -174,6 +180,7 @@ export default function VoyantCard({ voyant, source = 'content-page', compact = 
           href={affiliateLink}
           target="_blank"
           rel="noopener noreferrer sponsored"
+          onClick={handleAffiliateClick}
           className="block w-full bg-gradient-to-r from-purple-600 to-indigo-600 text-white text-center font-semibold py-3 rounded-lg hover:from-purple-700 hover:to-indigo-700 transition-all shadow-md hover:shadow-lg"
         >
           {isOnline ? '🔮 Consulter maintenant' : '📅 Prendre rendez-vous'}

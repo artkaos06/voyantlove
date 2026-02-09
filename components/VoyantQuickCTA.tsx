@@ -1,7 +1,8 @@
 'use client';
 
 import React from 'react';
-import { Voyant, getVoyantsForTopic, getOnlineVoyants } from '@/lib/voyants';
+import { Voyant, getVoyantsForTopic, getOnlineVoyants, getAffiliateLink } from '@/lib/voyants';
+import { trackAffiliateClick } from '@/lib/glyphex';
 import voyants from '@/data/voyants.json';
 
 interface VoyantQuickCTAProps {
@@ -25,7 +26,11 @@ export default function VoyantQuickCTA({ topic, source = 'quick-cta' }: VoyantQu
   if (!selectedVoyant) return null;
 
   const isOnline = selectedVoyant.ETAT === '1';
-  const affiliateLink = `https://affiliate-network.com/voyant/${selectedVoyant.ID}?ref=voyantlove-${source}-${topic}`;
+  const affiliateLink = getAffiliateLink(selectedVoyant.ID, `${source}-${topic}`);
+
+  const handleAffiliateClick = () => {
+    trackAffiliateClick(selectedVoyant.ID, `${source}-${topic}`, selectedVoyant.VOYANT);
+  };
 
   // Couleurs par topic
   const colorSchemes = {
@@ -104,6 +109,7 @@ export default function VoyantQuickCTA({ topic, source = 'quick-cta' }: VoyantQu
             href={affiliateLink}
             target="_blank"
             rel="noopener noreferrer sponsored"
+            onClick={handleAffiliateClick}
             className={`block w-full md:w-auto text-center bg-gradient-to-r ${colors.button} text-white font-semibold px-8 py-4 rounded-lg shadow-md hover:shadow-xl transition-all`}
           >
             {isOnline ? '🔮 Consulter maintenant' : '📅 Prendre RDV'}

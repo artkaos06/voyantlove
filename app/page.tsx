@@ -1,5 +1,8 @@
+'use client';
+
 import Link from 'next/link';
 import { getOrganizationSchema, getWebSiteSchema } from '@/lib/schema';
+import { trackAffiliateClick } from '@/lib/glyphex';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
 
 export default function HomePage() {
@@ -33,6 +36,7 @@ export default function HomePage() {
               href="https://www.monsitevoyance.com/zoom_voyant.php?id=8864&partner=383&ref=homepage-hero-primary"
               target="_blank"
               rel="noopener noreferrer sponsored"
+              onClick={() => trackAffiliateClick('8864', 'homepage-hero-primary', 'Sibylle')}
               className="bg-white text-brand-purple px-8 py-4 rounded-lg font-semibold hover:shadow-lg transition"
             >
               🔮 Consultation Voyance
@@ -256,6 +260,7 @@ export default function HomePage() {
               href="https://www.monsitevoyance.com/zoom_voyant.php?id=8864&partner=383&ref=homepage-cta-primary"
               target="_blank"
               rel="noopener noreferrer sponsored"
+              onClick={() => trackAffiliateClick('8864', 'homepage-cta-primary', 'Sibylle')}
               className="bg-white text-brand-purple px-8 py-4 rounded-lg font-semibold hover:shadow-lg transition"
             >
               Consulter un Voyant Maintenant
@@ -264,6 +269,7 @@ export default function HomePage() {
               href="https://www.monsitevoyance.com/zoom_voyant.php?id=8062&partner=383&ref=homepage-cta-secondary"
               target="_blank"
               rel="noopener noreferrer sponsored"
+              onClick={() => trackAffiliateClick('8062', 'homepage-cta-secondary', 'Kalinda')}
               className="bg-transparent border-2 border-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-brand-purple transition"
             >
               Tirage Tarot Personnalisé
