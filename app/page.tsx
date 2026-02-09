@@ -4,6 +4,8 @@ import Link from 'next/link';
 import { getOrganizationSchema, getWebSiteSchema } from '@/lib/schema';
 import { trackAffiliateClick } from '@/lib/glyphex';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
+import TestimonialSection from '@/components/TestimonialSection';
+import TrustBadges from '@/components/TrustBadges';
 
 export default function HomePage() {
   const organizationSchema = getOrganizationSchema();
@@ -232,6 +234,23 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Trust Badges Section */}
+      <section className="py-16 px-4 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <TrustBadges />
+        </div>
+      </section>
+
+      {/* Client Testimonials */}
+      <section className="bg-gradient-to-br from-purple-50 to-pink-50">
+        <TestimonialSection
+          title="Ce Que Disent Nos Clients"
+          subtitle="Des milliers de personnes ont déjà trouvé leurs réponses grâce à nos voyants experts"
+          limit={6}
+          showVoyantName={true}
+        />
+      </section>
+
       {/* Featured Voyants Section */}
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
@@ -275,9 +294,9 @@ export default function HomePage() {
               Tirage Tarot Personnalisé
             </a>
           </div>
-          <p className="mt-6 text-sm opacity-80">
-            ✓ Voyants vérifiés • ✓ Paiement sécurisé • ✓ Confidentialité garantie
-          </p>
+          <div className="mt-6">
+            <TrustBadges variant="compact" />
+          </div>
         </div>
       </section>
 
