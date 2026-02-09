@@ -25,16 +25,14 @@ export default function MentionsLegalesPage() {
           <section>
             <h2 className="text-2xl font-bold mb-4 text-gray-900">1. Éditeur du Site</h2>
             <p className="text-gray-700 mb-2"><strong>Nom du site :</strong> VoyantLove.fr</p>
-            <p className="text-gray-700 mb-2"><strong>Raison sociale :</strong> [À compléter]</p>
-            <p className="text-gray-700 mb-2"><strong>SIRET :</strong> [À compléter]</p>
-            <p className="text-gray-700 mb-2"><strong>Adresse :</strong> [À compléter]</p>
+            <p className="text-gray-700 mb-2"><strong>Raison sociale :</strong> Cogitor</p>
+            <p className="text-gray-700 mb-2"><strong>Adresse :</strong> Kungla, Tallinn, 10430 Estonia</p>
             <p className="text-gray-700 mb-2"><strong>Email :</strong> contact@voyantlove.fr</p>
-            <p className="text-gray-700 mb-2"><strong>Téléphone :</strong> [À compléter]</p>
           </section>
 
           <section>
             <h2 className="text-2xl font-bold mb-4 text-gray-900">2. Directeur de Publication</h2>
-            <p className="text-gray-700">[Nom du directeur de publication - À compléter]</p>
+            <p className="text-gray-700">Cogitor</p>
           </section>
 
           <section>
@@ -119,15 +117,9 @@ export default function MentionsLegalesPage() {
             </p>
             <ul className="list-disc list-inside text-gray-700 space-y-2">
               <li>Par email : contact@voyantlove.fr</li>
-              <li>Par téléphone : [À compléter]</li>
+              <li>Par courrier : Cogitor, Kungla, Tallinn, 10430 Estonia</li>
             </ul>
           </section>
-
-          <div className="bg-yellow-50 border-l-4 border-yellow-500 p-4 mt-8">
-            <p className="text-sm text-yellow-800">
-              <strong>⚠️ Note :</strong> Certaines informations marquées [À compléter] doivent être renseignées avant la mise en ligne publique du site.
-            </p>
-          </div>
 
         </div>
 
