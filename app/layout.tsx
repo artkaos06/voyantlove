@@ -61,7 +61,7 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <head>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" type="image/png" />
         <script
           defer
           data-site-id="b2906866-3097-4875-b470-7b8e7c49b01f"
