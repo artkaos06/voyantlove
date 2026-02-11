@@ -23,19 +23,19 @@ export default function ReconquerirSonExPage() {
   const faqSchema = getFAQSchema([
     {
       question: 'Le tarot peut-il me dire avec certitude si mon ex va revenir ?',
-      answer: 'Le tarot révèle les énergies actuelles et les potentiels selon la trajectoire présente. Il indique si un retour est probable, les conditions nécessaires, et le timing favorable. Le libre arbitre reste déterminant. Le tarot vous dit si vous devez garder espoir et agir, ou tourner la page.',
+      answer: 'Le tarot révèle les énergies actuelles et les potentiels selon la trajectoire présente. Il indique si un retour est probable, les conditions nécessaires, et le timing favorable. Le libre arbitre reste déterminant : ni vous ni votre ex n\'êtes figés dans un destin immuable. Le tarot vous dit si vous devez garder espoir et agir, ou tourner la page. Un tirage de reconquête précise également les blocages émotionnels à lever et les gestes concrets à poser pour maximiser vos chances de retrouvailles.',
     },
     {
       question: 'Combien de temps attendre avant de reconquérir son ex ?',
-      answer: 'Silence radio idéal : 3-4 semaines pour ruptures courtes, 6-8 semaines pour relations longues. Le tarot affine ce timing selon votre situation et l\'évolution de votre ex. Ce temps permet au manque de s\'installer et à chacun de prendre du recul.',
+      answer: 'Le silence radio idéal dure 3-4 semaines pour les ruptures courtes et 6-8 semaines pour les relations longues. Le tarot affine ce timing selon votre situation et l\'évolution émotionnelle de votre ex. Ce temps permet au manque de s\'installer et à chacun de prendre du recul. Si la rupture amoureuse a été particulièrement douloureuse, un délai plus long peut s\'avérer nécessaire. La voyance vous aide à identifier le moment précis où votre ex sera le plus réceptif à une reprise de contact, en tenant compte des transits planétaires et de l\'énergie relationnelle en cours.',
     },
     {
       question: 'Quels signes astrologiques indiquent un retour possible ?',
-      answer: 'Vénus rétrograde ramène souvent d\'anciens amours. Les transits de Vénus sur votre Soleil ou Vénus natale favorisent les retours. La synastrie révèle si vous êtes destinés à vous retrouver. Un voyant analyse ces configurations pour identifier les périodes propices.',
+      answer: 'Vénus rétrograde ramène souvent d\'anciens amours dans notre vie, environ tous les 18 mois pendant une quarantaine de jours. Les transits de Vénus sur votre Soleil ou Vénus natale favorisent également les retours. La synastrie entre vos deux thèmes astraux révèle si vous êtes destinés à vous retrouver et sous quelles conditions. Un voyant analyse ces configurations pour identifier les périodes les plus propices à la reconquête. Les signes d\'eau (Cancer, Scorpion, Poissons) sont particulièrement sensibles à ces transits, tandis que les signes fixes mettent plus de temps à revenir mais le font avec davantage de conviction.',
     },
     {
       question: 'Comment savoir ce que mon ex ressent vraiment ?',
-      answer: 'Un voyant capte émotions et pensées via tarot, clairvoyance ou lecture énergétique. Le tirage révèle s\'il/elle éprouve encore de l\'amour, des regrets, de la colère, ou a tourné la page. Cette clarté aide à décider de votre stratégie.',
+      answer: 'Un voyant capte les émotions et pensées de votre ex via le tarot, la clairvoyance ou la lecture énergétique. Le tirage révèle s\'il ou elle éprouve encore de l\'amour, des regrets, de la colère, ou a tourné la page. Cette clarté vous aide à décider de votre stratégie avec discernement. Le tirage en croix et le tirage relationnel sont deux méthodes particulièrement efficaces pour sonder les sentiments cachés d\'une personne et anticiper ses prochaines actions.',
     },
   ]);
 
@@ -101,19 +101,19 @@ export default function ReconquerirSonExPage() {
           <div className="space-y-4">
             <div className="bg-purple-50 border-l-4 border-purple-500 p-6 rounded-lg">
               <h3 className="font-bold text-lg mb-2 text-purple-700">1. Sentiments Actuels de Votre Ex</h3>
-              <p className="text-gray-700">Le tarot capte ce que votre ex ressent vraiment maintenant : amour résiduel, regrets, colère, indifférence. Cette carte est déterminante.</p>
+              <p className="text-gray-700">Le tarot capte ce que votre ex ressent vraiment maintenant : amour résiduel, regrets, colère, indifférence. Cette carte est déterminante. Si vous vous demandez si <Link href="/sentiments/maime-t-il-elle" className="text-purple-600 hover:text-purple-800 underline font-medium">votre ex vous aime encore</Link>, cette position apporte une réponse claire. Les arcanes majeurs comme l'Amoureux ou la Lune révèlent des sentiments profonds, tandis que les arcanes mineurs précisent l'intensité émotionnelle et la direction que prennent ces émotions au fil du temps.</p>
             </div>
             <div className="bg-indigo-50 border-l-4 border-indigo-500 p-6 rounded-lg">
               <h3 className="font-bold text-lg mb-2 text-indigo-700">2. Obstacles à la Réconciliation</h3>
-              <p className="text-gray-700">Qu'est-ce qui bloque le retour ? Fierté, nouvelle relation, blessure profonde, peur de souffrir à nouveau ? Le tarot identifie les vrais obstacles.</p>
+              <p className="text-gray-700">Qu'est-ce qui bloque le retour ? Fierté, nouvelle relation, blessure profonde, peur de souffrir à nouveau ? Le tarot identifie les vrais obstacles. Comprendre ces blocages est essentiel avant toute tentative de <strong>reconquête amoureuse</strong>. Parfois, la <Link href="/rupture/rupture-amoureuse" className="text-purple-600 hover:text-purple-800 underline font-medium">douleur liée à la rupture</Link> crée des barrières émotionnelles que seul un travail intérieur peut lever. Le voyant vous guide pour contourner chaque obstacle avec intelligence et respect.</p>
             </div>
             <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-lg">
               <h3 className="font-bold text-lg mb-2 text-blue-700">3. Ce que Vous Devez Changer</h3>
-              <p className="text-gray-700">Le tarot révèle votre part de responsabilité et les évolutions personnelles nécessaires pour que la relation fonctionne cette fois.</p>
+              <p className="text-gray-700">Le tarot révèle votre part de responsabilité et les évolutions personnelles nécessaires pour que la relation fonctionne cette fois. Cette position met en lumière des schémas répétitifs : dépendance affective, manque de communication ou peur de l'engagement. Le <strong>développement personnel</strong> guidé par la voyance vous permet d'identifier précisément les comportements à transformer. C'est souvent cette évolution intérieure qui déclenche naturellement le <Link href="/reconquete/retour-de-lex" className="text-purple-600 hover:text-purple-800 underline font-medium">retour de l'ex</Link> dans votre vie.</p>
             </div>
             <div className="bg-cyan-50 border-l-4 border-cyan-500 p-6 rounded-lg">
               <h3 className="font-bold text-lg mb-2 text-cyan-700">4. Issue Probable et Timing</h3>
-              <p className="text-gray-700">La carte finale indique si la reconquête est probable et dans combien de temps. Elle guide votre stratégie d'action.</p>
+              <p className="text-gray-700">La carte finale indique si la reconquête est probable et dans combien de temps. Elle guide votre stratégie d'action. Un tirage favorable montre souvent des cartes comme le Soleil ou le Monde, signes de renouveau et d'aboutissement. À l'inverse, la Tour ou le Diable invitent à la prudence. Consultez notre guide complet sur la question « <Link href="/reconquete/va-t-il-elle-revenir" className="text-purple-600 hover:text-purple-800 underline font-medium">va-t-il ou elle revenir</Link> » pour approfondir l'interprétation de ces messages du tarot.</p>
             </div>
           </div>
         </section>
@@ -143,35 +143,35 @@ export default function ReconquerirSonExPage() {
               <div className="text-3xl font-bold text-purple-600">1</div>
               <div>
                 <h3 className="font-bold text-lg mb-2">Silence Radio Complet</h3>
-                <p className="text-gray-700">Aucun contact pendant 3-8 semaines minimum. Pas de messages, likes, ou tentatives de "rester amis". Le manque doit s'installer.</p>
+                <p className="text-gray-700">Aucun contact pendant 3-8 semaines minimum. Pas de messages, likes, ou tentatives de "rester amis". Le manque doit s'installer. Cette période est cruciale pour permettre à votre <strong>ex</strong> de ressentir votre absence et de réévaluer ses sentiments. Le <strong>tarot</strong> peut vous confirmer la durée idéale de ce silence en fonction de votre situation personnelle.</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
               <div className="text-3xl font-bold text-purple-600">2</div>
               <div>
                 <h3 className="font-bold text-lg mb-2">Travail sur Soi Authentique</h3>
-                <p className="text-gray-700">Thérapie, développement personnel, nouveaux hobbies, sport. Devenez la meilleure version de vous-même, pas pour votre ex mais pour vous.</p>
+                <p className="text-gray-700">Thérapie, développement personnel, nouveaux hobbies, sport. Devenez la meilleure version de vous-même, pas pour votre ex mais pour vous. Ce travail intérieur renforce votre <strong>énergie amoureuse</strong> et votre confiance, deux qualités que votre ex remarquera immédiatement lors de vos retrouvailles.</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
               <div className="text-3xl font-bold text-purple-600">3</div>
               <div>
                 <h3 className="font-bold text-lg mb-2">Reprise de Contact Subtile</h3>
-                <p className="text-gray-700">Message court et léger après le silence radio. Pas de déclaration, juste une connexion amicale. Testez la réceptivité.</p>
+                <p className="text-gray-700">Message court et léger après le silence radio. Pas de déclaration, juste une connexion amicale. Testez la réceptivité. Beaucoup de personnes constatent les premiers signes positifs lors d'un <Link href="/reconquete/ex-qui-revient" className="text-purple-600 hover:text-purple-800 underline font-medium">ex qui revient</Link> naturellement après cette phase de recul. L'essentiel est de rester détendu(e) et de ne pas forcer la conversation.</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
               <div className="text-3xl font-bold text-purple-600">4</div>
               <div>
                 <h3 className="font-bold text-lg mb-2">Reconstruction Progressive de la Confiance</h3>
-                <p className="text-gray-700">Discussions honnêtes sur les causes de rupture. Chacun exprime ses besoins et ses limites. Pardon mutuel authentique.</p>
+                <p className="text-gray-700">Discussions honnêtes sur les causes de rupture. Chacun exprime ses besoins et ses limites. Pardon mutuel authentique. La <strong>voyance amoureuse</strong> peut éclairer les points de friction inconscients et vous aider à aborder ces sujets délicats avec tact et empathie.</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
               <div className="text-3xl font-bold text-purple-600">5</div>
               <div>
                 <h3 className="font-bold text-lg mb-2">Nouvelle Relation, Pas Continuation</h3>
-                <p className="text-gray-700">Ne reprenez pas là où vous étiez. Recommencez avec de nouvelles bases, nouvelles règles, nouvelle dynamique plus saine.</p>
+                <p className="text-gray-700">Ne reprenez pas là où vous étiez. Recommencez avec de nouvelles bases, nouvelles règles, nouvelle dynamique plus saine. Retrouvez l'ensemble de nos conseils dans notre rubrique <Link href="/reconquete" className="text-purple-600 hover:text-purple-800 underline font-medium">reconquête amoureuse</Link> pour bâtir un couple durable et épanoui sur des fondations solides.</p>
               </div>
             </div>
           </div>
@@ -208,19 +208,19 @@ export default function ReconquerirSonExPage() {
           <div className="space-y-6">
             <div className="border-b border-gray-200 pb-6">
               <h3 className="text-xl font-bold text-gray-900 mb-3">Le tarot peut-il me dire avec certitude si mon ex va revenir ?</h3>
-              <p className="text-gray-700 leading-relaxed">Le tarot révèle les énergies actuelles et les potentiels selon la trajectoire présente. Il indique si un retour est probable, les conditions nécessaires, et le timing favorable. Le libre arbitre reste déterminant. Le tarot vous dit si vous devez garder espoir et agir, ou tourner la page.</p>
+              <p className="text-gray-700 leading-relaxed">Le <strong>tarot</strong> révèle les énergies actuelles et les potentiels selon la trajectoire présente. Il indique si un retour est probable, les conditions nécessaires, et le <strong>timing favorable</strong>. Le libre arbitre reste déterminant : ni vous ni votre ex n'êtes figés dans un destin immuable. Le tarot vous dit si vous devez garder espoir et agir, ou tourner la page. Un tirage de <strong>reconquête</strong> précise également les blocages émotionnels à lever et les gestes concrets à poser. Pour aller plus loin, découvrez notre analyse détaillée sur la question « <Link href="/reconquete/va-t-il-elle-revenir" className="text-purple-600 hover:text-purple-800 underline font-medium">va-t-il ou elle revenir</Link> » qui approfondit les signaux du tarot liés au retour d'un ancien partenaire.</p>
             </div>
             <div className="border-b border-gray-200 pb-6">
               <h3 className="text-xl font-bold text-gray-900 mb-3">Combien de temps attendre avant de reconquérir son ex ?</h3>
-              <p className="text-gray-700 leading-relaxed">Silence radio idéal : 3-4 semaines pour ruptures courtes, 6-8 semaines pour relations longues. Le tarot affine ce timing selon votre situation et l'évolution de votre ex. Ce temps permet au manque de s'installer et à chacun de prendre du recul.</p>
+              <p className="text-gray-700 leading-relaxed">Le <strong>silence radio</strong> idéal dure 3-4 semaines pour les ruptures courtes et 6-8 semaines pour les relations longues. Le <strong>tarot</strong> affine ce timing selon votre situation et l'évolution émotionnelle de votre <strong>ex</strong>. Ce temps permet au manque de s'installer et à chacun de prendre du recul. Si la <Link href="/rupture/rupture-amoureuse" className="text-purple-600 hover:text-purple-800 underline font-medium">rupture amoureuse</Link> a été particulièrement douloureuse, un délai plus long peut s'avérer nécessaire. La <strong>voyance</strong> vous aide à identifier le moment précis où votre ex sera le plus réceptif à une reprise de contact, en tenant compte des transits planétaires et de l'énergie relationnelle en cours.</p>
             </div>
             <div className="border-b border-gray-200 pb-6">
               <h3 className="text-xl font-bold text-gray-900 mb-3">Quels signes astrologiques indiquent un retour possible ?</h3>
-              <p className="text-gray-700 leading-relaxed">Vénus rétrograde ramène souvent d'anciens amours. Les transits de Vénus sur votre Soleil ou Vénus natale favorisent les retours. La synastrie révèle si vous êtes destinés à vous retrouver. Un voyant analyse ces configurations pour identifier les périodes propices.</p>
+              <p className="text-gray-700 leading-relaxed"><strong>Vénus rétrograde</strong> ramène souvent d'anciens amours dans notre vie, environ tous les 18 mois pendant une quarantaine de jours. Les <strong>transits de Vénus</strong> sur votre Soleil ou Vénus natale favorisent également les retours. La <strong>synastrie</strong> entre vos deux thèmes astraux révèle si vous êtes destinés à vous retrouver et sous quelles conditions. Un <strong>voyant</strong> analyse ces configurations pour identifier les périodes les plus propices à la <strong>reconquête</strong>. Les signes d'eau (Cancer, Scorpion, Poissons) sont particulièrement sensibles à ces transits, tandis que les signes fixes (Taureau, Lion, Verseau, Scorpion) mettent plus de temps à revenir mais le font avec davantage de conviction.</p>
             </div>
             <div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Comment savoir ce que mon ex ressent vraiment ?</h3>
-              <p className="text-gray-700 leading-relaxed">Un voyant capte émotions et pensées via tarot, clairvoyance ou lecture énergétique. Le tirage révèle s'il/elle éprouve encore de l'amour, des regrets, de la colère, ou a tourné la page. Cette clarté aide à décider de votre stratégie.</p>
+              <p className="text-gray-700 leading-relaxed">Un <strong>voyant</strong> capte les émotions et pensées de votre <strong>ex</strong> via le <strong>tarot</strong>, la <strong>clairvoyance</strong> ou la lecture énergétique. Le tirage révèle s'il ou elle éprouve encore de l'amour, des regrets, de la colère, ou a tourné la page. Cette clarté vous aide à décider de votre stratégie avec discernement. Certains consultants se tournent vers notre analyse « <Link href="/sentiments/maime-t-il-elle" className="text-purple-600 hover:text-purple-800 underline font-medium">m'aime-t-il ou m'aime-t-elle encore</Link> » pour obtenir un éclairage complémentaire. Le tirage en croix et le tirage relationnel sont deux méthodes particulièrement efficaces pour sonder les sentiments cachés d'une personne et anticiper ses prochaines actions.</p>
             </div>
           </div>
         </section>
@@ -232,6 +232,8 @@ export default function ReconquerirSonExPage() {
             <Link href="/reconquete/ex-qui-revient" className="block text-purple-600 hover:text-purple-800 font-medium">→ Mon Ex qui Revient</Link>
             <Link href="/reconquete/ex-revient-silence-radio" className="block text-purple-600 hover:text-purple-800 font-medium">→ Ex qui Revient après Silence Radio</Link>
             <Link href="/reconquete/seconde-chance-amour" className="block text-purple-600 hover:text-purple-800 font-medium">→ Seconde Chance en Amour</Link>
+            <Link href="/rupture/oublier-son-ex" className="block text-purple-600 hover:text-purple-800 font-medium">→ Comment Oublier son Ex</Link>
+            <Link href="/sentiments/maime-t-il-elle" className="block text-purple-600 hover:text-purple-800 font-medium">→ M'aime-t-il / M'aime-t-elle Encore ?</Link>
           </div>
         </div>
 
