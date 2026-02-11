@@ -39,7 +39,7 @@
     <priority>0.9</priority>
   </url>
 
-  <!-- Reconquête Content Pages -->
+  <!-- Reconquete Content Pages -->
   <url>
     <loc>https://voyantlove.fr/reconquete/reconquerir-son-ex</loc>
     <changefreq>weekly</changefreq>
@@ -70,6 +70,18 @@
     <priority>0.7</priority>
   </url>
 
+  <url>
+    <loc>https://voyantlove.fr/reconquete/se-remettre-ensemble</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://voyantlove.fr/reconquete/ex-revient-silence-radio</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
   <!-- Rupture Content Pages -->
   <url>
     <loc>https://voyantlove.fr/rupture/oublier-son-ex</loc>
@@ -96,11 +108,60 @@
     <priority>0.7</priority>
   </url>
 
+  <url>
+    <loc>https://voyantlove.fr/nouvelle-rencontre/trouver-ame-soeur</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://voyantlove.fr/nouvelle-rencontre/signes-ame-soeur</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://voyantlove.fr/nouvelle-rencontre/nouvelle-relation-amoureuse</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
   <!-- Sentiments Content Pages -->
   <url>
     <loc>https://voyantlove.fr/sentiments/maime-t-il-elle</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://voyantlove.fr/sentiments/avenir-amoureux</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://voyantlove.fr/sentiments/signes-il-elle-maime</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Crise de Couple Content Pages -->
+  <url>
+    <loc>https://voyantlove.fr/crise-couple/infidelite-couple</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://voyantlove.fr/crise-couple/jalousie-excessive</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://voyantlove.fr/crise-couple/problemes-communication-couple</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url>
 
   <!-- Legal Pages -->
