@@ -1,7 +1,8 @@
 'use client';
 
 import Link from 'next/link';
-import { getOrganizationSchema, getWebSiteSchema } from '@/lib/schema';
+import { getOrganizationSchema, getWebSiteSchema, getFAQSchema } from '@/lib/schema';
+import EEATSignal from '@/components/EEATSignal';
 import { trackAffiliateClick } from '@/lib/glyphex';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
 import TestimonialSection from '@/components/TestimonialSection';
@@ -10,6 +11,24 @@ import TrustBadges from '@/components/TrustBadges';
 export default function HomePage() {
   const organizationSchema = getOrganizationSchema();
   const websiteSchema = getWebSiteSchema();
+  const faqSchema = getFAQSchema([
+    {
+      question: 'Qu\'est-ce que la voyance amoureuse et comment fonctionne-t-elle ?',
+      answer: 'La voyance amoureuse est une forme de guidance spirituelle spécialisée dans les questions sentimentales. Le voyant utilise le tarot, la clairvoyance ou l\'astrologie pour analyser votre situation amoureuse : sentiments de l\'autre, compatibilité, timing des événements, et évolution de la relation. Contrairement aux idées reçues, la voyance ne prédit pas un futur figé mais révèle les énergies en jeu et les probabilités selon vos choix actuels. Un bon voyant vous donne des clés de compréhension pour prendre les meilleures décisions dans votre vie sentimentale.',
+    },
+    {
+      question: 'La voyance amoureuse par tarot est-elle fiable ?',
+      answer: 'La fiabilité du tarot amoureux dépend de l\'expérience et du don du voyant qui l\'interprète. Un tarologue expérimenté atteint 75-85% de précision sur les questions sentimentales, car le tarot capte les énergies émotionnelles avec une grande sensibilité. Les 22 arcanes majeurs et 56 arcanes mineurs offrent une palette nuancée pour analyser les sentiments, les blocages et les évolutions possibles. L\'important est de consulter un voyant honnête qui vous donnera une réponse sincère, même difficile à entendre, plutôt que de faux espoirs.',
+    },
+    {
+      question: 'Comment choisir un bon voyant spécialisé en amour ?',
+      answer: 'Un bon voyant amoureux se reconnaît à plusieurs critères : il pose peu de questions et capte votre situation rapidement, il donne des détails précis plutôt que des généralités, il est honnête même quand la réponse est difficile, et il ne crée jamais de dépendance. Vérifiez les avis clients, l\'expérience (minimum 5 ans), et la spécialisation en questions sentimentales. Méfiez-vous des voyants qui promettent des retours garantis ou qui proposent des rituels payants supplémentaires. Un vrai professionnel vous guide avec bienveillance et respect de votre libre arbitre.',
+    },
+    {
+      question: 'Quelles questions peut-on poser en voyance amoureuse ?',
+      answer: 'En voyance amoureuse, vous pouvez poser toutes les questions liées à votre vie sentimentale : m\'aime-t-il/elle vraiment, va-t-il/elle revenir, quand vais-je rencontrer quelqu\'un, mon couple va-t-il surmonter cette crise, est-il/elle fidèle, quels sont ses vrais sentiments. Le tarot répond aussi aux questions de timing (quand), de lieu (où rencontrer), et de compatibilité. Les questions les plus précises donnent les meilleures réponses. Évitez les questions fermées comme « oui ou non » et préférez « que ressent-il/elle pour moi » pour obtenir une analyse complète et nuancée.',
+    },
+  ]);
 
   return (
     <main className="min-h-screen">
@@ -20,6 +39,10 @@ export default function HomePage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-brand-purple to-brand-purple-dark text-white py-20 px-4">
@@ -80,6 +103,11 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* E-E-A-T Signal */}
+      <div className="max-w-6xl mx-auto px-4 pt-8">
+        <EEATSignal colorScheme="purple" method="Tarot, clairvoyance et astrologie amoureuse" />
+      </div>
 
       {/* Main Situations */}
       <section id="situations" className="py-16 px-4">
@@ -262,6 +290,31 @@ export default function HomePage() {
             showOnlineFirst={true}
             source="homepage-featured"
           />
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 px-4 bg-white">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-12">Questions Fréquentes sur la Voyance Amoureuse</h2>
+          <div className="space-y-6">
+            <div className="border-b border-gray-200 pb-6">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Qu'est-ce que la voyance amoureuse et comment fonctionne-t-elle ?</h3>
+              <p className="text-gray-700 leading-relaxed">La <strong>voyance amoureuse</strong> est une forme de guidance spirituelle spécialisée dans les questions sentimentales. Le voyant utilise le <strong>tarot</strong>, la <strong>clairvoyance</strong> ou l'<strong>astrologie</strong> pour analyser votre situation amoureuse : sentiments de l'autre, compatibilité, timing des événements, et évolution de la relation. Contrairement aux idées reçues, la voyance ne prédit pas un futur figé mais révèle les <strong>énergies en jeu</strong> et les probabilités selon vos choix actuels. Un bon voyant vous donne des clés de compréhension pour prendre les meilleures décisions dans votre <strong>vie sentimentale</strong>.</p>
+            </div>
+            <div className="border-b border-gray-200 pb-6">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">La voyance amoureuse par tarot est-elle fiable ?</h3>
+              <p className="text-gray-700 leading-relaxed">La fiabilité du <strong>tarot amoureux</strong> dépend de l'expérience et du don du voyant qui l'interprète. Un <strong>tarologue expérimenté</strong> atteint 75-85% de précision sur les questions sentimentales, car le tarot capte les <strong>énergies émotionnelles</strong> avec une grande sensibilité. Les 22 arcanes majeurs et 56 arcanes mineurs offrent une palette nuancée pour analyser les sentiments, les blocages et les évolutions possibles. L'important est de consulter un <strong>voyant honnête</strong> qui vous donnera une réponse sincère, même difficile à entendre, plutôt que de faux espoirs.</p>
+            </div>
+            <div className="border-b border-gray-200 pb-6">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Comment choisir un bon voyant spécialisé en amour ?</h3>
+              <p className="text-gray-700 leading-relaxed">Un bon <strong>voyant amoureux</strong> se reconnaît à plusieurs critères : il pose peu de questions et capte votre situation rapidement, il donne des détails précis plutôt que des généralités, il est honnête même quand la réponse est difficile, et il ne crée jamais de dépendance. Vérifiez les <strong>avis clients</strong>, l'expérience (minimum 5 ans), et la <strong>spécialisation en questions sentimentales</strong>. Méfiez-vous des voyants qui promettent des retours garantis ou qui proposent des rituels payants supplémentaires. Un vrai professionnel vous guide avec <strong>bienveillance</strong> et respect de votre libre arbitre.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Quelles questions peut-on poser en voyance amoureuse ?</h3>
+              <p className="text-gray-700 leading-relaxed">En <strong>voyance amoureuse</strong>, vous pouvez poser toutes les questions liées à votre vie sentimentale : <strong>m'aime-t-il/elle</strong> vraiment, <strong>va-t-il/elle revenir</strong>, quand vais-je <strong>rencontrer</strong> quelqu'un, mon couple va-t-il surmonter cette crise, est-il/elle fidèle, quels sont ses vrais sentiments. Le tarot répond aussi aux questions de timing (quand), de lieu (où rencontrer), et de <strong>compatibilité</strong>. Les questions les plus précises donnent les meilleures réponses. Évitez les questions fermées et préférez « que ressent-il/elle pour moi » pour obtenir une <strong>analyse complète</strong> et nuancée.</p>
+            </div>
+          </div>
         </div>
       </section>
 

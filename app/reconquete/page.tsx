@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { getWebPageSchema, getBreadcrumbSchema, getOrganizationSchema } from '@/lib/schema';
+import { getWebPageSchema, getBreadcrumbSchema, getOrganizationSchema, getFAQSchema } from '@/lib/schema';
+import EEATSignal from '@/components/EEATSignal';
 
 export const metadata: Metadata = {
   title: 'Reconquête Amoureuse : Reconquérir son Ex | Voyance et Tarot',
@@ -22,11 +23,31 @@ export default function ReconqueteHubPage() {
 
   const organizationSchema = getOrganizationSchema();
 
+  const faqSchema = getFAQSchema([
+    {
+      question: 'Quelle est la meilleure stratégie pour reconquérir son ex selon le tarot ?',
+      answer: 'La stratégie la plus efficace selon le tarot repose sur trois piliers : le silence radio initial pour créer le manque, le travail sur soi pour corriger les causes de la rupture, et le timing précis révélé par les cartes pour reprendre contact. Le tarot identifie également les blocages de votre ex et les leviers émotionnels à activer. Chaque reconquête est unique et le voyant adapte la stratégie à votre situation spécifique.',
+    },
+    {
+      question: 'Combien de temps dure une reconquête amoureuse en général ?',
+      answer: 'La durée moyenne d\'une reconquête réussie est de 3 à 6 mois selon la gravité de la rupture et les sentiments résiduels. Le tarot affine ce timing en analysant les énergies de votre ex et les transits astrologiques favorables. Les reconquêtes trop rapides (moins d\'un mois) échouent souvent car les problèmes de fond n\'ont pas été résolus. La patience et le timing juste sont les clés du succès.',
+    },
+    {
+      question: 'Le silence radio fonctionne-t-il vraiment pour reconquérir un ex ?',
+      answer: 'Le silence radio est la technique la plus recommandée par les voyants et confirmée par le tarot. Il crée un espace de manque chez votre ex, lui permet de réfléchir à la relation, et vous donne le temps de travailler sur vous-même. La durée idéale varie de 3 à 6 semaines selon le contexte. Le tarot révèle le moment précis où briser le silence pour maximiser l\'impact de votre retour.',
+    },
+    {
+      question: 'Comment savoir si la reconquête vaut la peine ou s\'il faut tourner la page ?',
+      answer: 'Le tarot répond objectivement à cette question cruciale en analysant les sentiments actuels de votre ex, le potentiel de la relation, et votre compatibilité profonde. Si les cartes montrent un amour résiduel fort et des problèmes résolubles, la reconquête vaut la peine. Si elles montrent de l\'indifférence ou une incompatibilité fondamentale, le voyant vous conseillera honnêtement de tourner la page pour votre bien.',
+    },
+  ]);
+
   return (
     <main className="min-h-screen bg-gray-50">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <header className="bg-gradient-to-r from-purple-600 via-purple-700 to-indigo-600 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <Link href="/" className="text-white/80 hover:text-white mb-4 inline-block">← Accueil</Link>
@@ -37,6 +58,8 @@ export default function ReconqueteHubPage() {
       </header>
 
       <div className="max-w-6xl mx-auto px-4 py-12">
+        <EEATSignal colorScheme="purple" method="Tarot de reconquête et guidance stratégique" />
+
         <section className="mb-16">
           <h2 className="text-3xl font-bold mb-8 text-center">🗺️ Votre Parcours de Reconquête</h2>
           <div className="grid md:grid-cols-3 gap-6">
@@ -70,6 +93,28 @@ export default function ReconqueteHubPage() {
               <h3 className="text-xl font-bold mb-2">Se Remettre Ensemble</h3>
               <p className="text-gray-600 text-sm">Reconstruction du couple</p>
             </Link>
+          </div>
+        </section>
+
+        <section className="bg-white rounded-xl p-8 mb-12">
+          <h2 className="text-3xl font-bold mb-8">Questions Fréquentes sur la Reconquête Amoureuse</h2>
+          <div className="space-y-6">
+            <div className="border-b border-gray-200 pb-6">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Quelle est la meilleure stratégie pour reconquérir son ex selon le tarot ?</h3>
+              <p className="text-gray-700 leading-relaxed">La stratégie la plus efficace selon le tarot repose sur trois piliers : le silence radio initial pour créer le manque, le travail sur soi pour corriger les causes de la rupture, et le timing précis révélé par les cartes pour reprendre contact. Le tarot identifie également les blocages de votre ex et les leviers émotionnels à activer. Chaque reconquête est unique et le voyant adapte la stratégie à votre situation spécifique.</p>
+            </div>
+            <div className="border-b border-gray-200 pb-6">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Combien de temps dure une reconquête amoureuse en général ?</h3>
+              <p className="text-gray-700 leading-relaxed">La durée moyenne d'une reconquête réussie est de 3 à 6 mois selon la gravité de la rupture et les sentiments résiduels. Le tarot affine ce timing en analysant les énergies de votre ex et les transits astrologiques favorables. Les reconquêtes trop rapides (moins d'un mois) échouent souvent car les problèmes de fond n'ont pas été résolus. La patience et le timing juste sont les clés du succès.</p>
+            </div>
+            <div className="border-b border-gray-200 pb-6">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Le silence radio fonctionne-t-il vraiment pour reconquérir un ex ?</h3>
+              <p className="text-gray-700 leading-relaxed">Le silence radio est la technique la plus recommandée par les voyants et confirmée par le tarot. Il crée un espace de manque chez votre ex, lui permet de réfléchir à la relation, et vous donne le temps de travailler sur vous-même. La durée idéale varie de 3 à 6 semaines selon le contexte. Le tarot révèle le moment précis où briser le silence pour maximiser l'impact de votre retour.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Comment savoir si la reconquête vaut la peine ou s'il faut tourner la page ?</h3>
+              <p className="text-gray-700 leading-relaxed">Le tarot répond objectivement à cette question cruciale en analysant les sentiments actuels de votre ex, le potentiel de la relation, et votre compatibilité profonde. Si les cartes montrent un amour résiduel fort et des problèmes résolubles, la reconquête vaut la peine. Si elles montrent de l'indifférence ou une incompatibilité fondamentale, le voyant vous conseillera honnêtement de tourner la page pour votre bien.</p>
+            </div>
           </div>
         </section>
 

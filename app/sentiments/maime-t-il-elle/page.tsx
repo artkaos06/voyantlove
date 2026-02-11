@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getArticleSchema, getFAQSchema, getBreadcrumbSchema } from '@/lib/schema';
+import EEATSignal from '@/components/EEATSignal';
 
 export const metadata: Metadata = {
   title: 'M\'aime-t-il/elle Vraiment ? Tarot et Voyance des Sentiments',
@@ -80,9 +81,7 @@ export default function MAimeTilEllePage() {
           <div><div className="text-3xl mb-1">🔒</div><div className="text-2xl font-bold text-red-600">100%</div><div className="text-sm text-gray-600">Confidentiel</div></div>
         </div>
 
-        <div className="bg-rose-50 border-l-4 border-rose-500 p-4 mb-8 text-sm text-gray-700">
-          <strong>Source :</strong> VoyantLove • <strong>Mis à jour :</strong> 8 février 2025 • <strong>Méthode :</strong> Tarot des sentiments et clairvoyance
-        </div>
+        <EEATSignal colorScheme="rose" method="Tarot des sentiments et clairvoyance" />
 
         <article className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-red-500">
           <div className="prose prose-lg max-w-none">

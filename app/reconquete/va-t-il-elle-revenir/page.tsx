@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getArticleSchema, getFAQSchema, getBreadcrumbSchema } from '@/lib/schema';
+import EEATSignal from '@/components/EEATSignal';
 
 export const metadata: Metadata = {
   title: 'Mon Ex Va-t-il Revenir ? Réponse du Tarot et Voyance | Prédiction',
@@ -80,9 +81,7 @@ export default function VaTilRevenirPage() {
           <div><div className="text-3xl mb-1">🔮</div><div className="text-2xl font-bold text-purple-600">87%</div><div className="text-sm text-gray-600">Précision tarot</div></div>
         </div>
 
-        <div className="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8 text-sm text-gray-700">
-          <strong>Source :</strong> VoyantLove • <strong>Mis à jour :</strong> 8 février 2025 • <strong>Méthode :</strong> Tarot prédictif et astrologie
-        </div>
+        <EEATSignal colorScheme="blue" method="Tarot prédictif et astrologie" />
 
         <article className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-purple-600">
           <div className="prose prose-lg max-w-none">

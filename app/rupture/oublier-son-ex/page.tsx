@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getArticleSchema, getFAQSchema, getBreadcrumbSchema } from '@/lib/schema';
+import EEATSignal from '@/components/EEATSignal';
 
 export const metadata: Metadata = {
   title: 'Oublier son Ex : Voyance pour Guérir et Tourner la Page | Tarot',
@@ -116,10 +117,7 @@ export default function OublierSonExPage() {
           </div>
         </div>
 
-        {/* Attribution */}
-        <div className="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8 text-sm text-gray-700">
-          <strong>Source :</strong> VoyantLove • <strong>Mis à jour :</strong> 8 février 2025 • <strong>Méthode :</strong> Tarot de guérison et astrologie
-        </div>
+        <EEATSignal colorScheme="blue" method="Tarot de guérison et astrologie" />
 
         {/* Answer Capsule */}
         <article className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-pink-500">

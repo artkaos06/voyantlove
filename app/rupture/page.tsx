@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { getWebPageSchema, getBreadcrumbSchema, getOrganizationSchema } from '@/lib/schema';
+import { getWebPageSchema, getBreadcrumbSchema, getOrganizationSchema, getFAQSchema } from '@/lib/schema';
+import EEATSignal from '@/components/EEATSignal';
 
 export const metadata: Metadata = {
   title: 'Rupture Amoureuse : Comprendre, Surmonter et Guérir | Voyance',
@@ -22,11 +23,31 @@ export default function RuptureHubPage() {
 
   const organizationSchema = getOrganizationSchema();
 
+  const faqSchema = getFAQSchema([
+    {
+      question: 'Comment surmonter une rupture amoureuse selon la voyance ?',
+      answer: 'La voyance accompagne votre guérison en éclairant les raisons profondes de la rupture, le sens spirituel de cette épreuve, et les étapes de votre reconstruction. Le tarot identifie dans quelle phase du deuil amoureux vous êtes et combien de temps durera chaque étape. Comprendre le « pourquoi » de la rupture grâce aux cartes accélère l\'acceptation et transforme la souffrance en sagesse. Les voyants vous guident avec bienveillance vers la lumière après la tempête.',
+    },
+    {
+      question: 'Combien de temps dure un chagrin d\'amour en moyenne ?',
+      answer: 'La règle empirique est d\'environ un mois de guérison par année de relation, mais le tarot personnalise ce timing. Une relation d\'un an nécessite 2-4 mois de guérison, tandis qu\'une relation de 5 ans peut demander 8-12 mois. Le travail intérieur, l\'accompagnement spirituel et le soutien de l\'entourage accélèrent considérablement le processus. Le voyant vous donne un calendrier réaliste basé sur votre énergie actuelle.',
+    },
+    {
+      question: 'Le tarot peut-il expliquer pourquoi mon couple s\'est séparé ?',
+      answer: 'Absolument. Le tarot révèle les causes profondes souvent invisibles : incompatibilité karmique, leçons de vie à intégrer, schémas relationnels répétitifs, interférences extérieures, ou timing de vie différent. Comprendre ces raisons spirituelles aide à ne pas répéter les mêmes erreurs dans vos futures relations. Le voyant vous aide à identifier vos patterns amoureux pour les transformer et construire des relations plus saines.',
+    },
+    {
+      question: 'Quand serai-je prêt(e) à aimer à nouveau après une rupture ?',
+      answer: 'Le tarot identifie le moment précis où votre cœur sera à nouveau ouvert. Les signes révélés par les cartes incluent : pensées neutres envers votre ex, retrouvailles avec votre joie de vivre, curiosité pour de nouvelles rencontres, et cessation des comparaisons. L\'astrologie complète cette analyse en identifiant les transits favorables aux nouveaux départs amoureux, souvent 6-12 mois après la rupture pour les relations durables.',
+    },
+  ]);
+
   return (
     <main className="min-h-screen bg-gray-50">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <header className="bg-gradient-to-r from-gray-700 via-gray-800 to-gray-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <Link href="/" className="text-white/80 hover:text-white mb-4 inline-block">← Accueil</Link>
@@ -37,6 +58,7 @@ export default function RuptureHubPage() {
       </header>
 
       <div className="max-w-6xl mx-auto px-4 py-12">
+        <EEATSignal colorScheme="red" method="Tarot de guérison et accompagnement post-rupture" />
         <section className="mb-16">
           <h2 className="text-3xl font-bold mb-8 text-center">🗺️ Votre Parcours de Guérison</h2>
           <div className="grid md:grid-cols-3 gap-8">
@@ -74,6 +96,28 @@ export default function RuptureHubPage() {
             <div className="bg-gray-50 p-6 rounded-lg">
               <h3 className="font-bold text-lg mb-3">⏰ Le Timing de Guérison</h3>
               <p className="text-gray-700">Combien de temps pour guérir ? Le tarot donne un timing personnalisé selon votre évolution.</p>
+            </div>
+          </div>
+        </section>
+
+        <section className="bg-white rounded-xl p-8 mb-12">
+          <h2 className="text-3xl font-bold mb-8">Questions Fréquentes sur la Rupture Amoureuse</h2>
+          <div className="space-y-6">
+            <div className="border-b border-gray-200 pb-6">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Comment surmonter une rupture amoureuse selon la voyance ?</h3>
+              <p className="text-gray-700 leading-relaxed">La voyance accompagne votre guérison en éclairant les raisons profondes de la rupture, le sens spirituel de cette épreuve, et les étapes de votre reconstruction. Le tarot identifie dans quelle phase du deuil amoureux vous êtes et combien de temps durera chaque étape. Comprendre le &laquo; pourquoi &raquo; de la rupture grâce aux cartes accélère l&apos;acceptation et transforme la souffrance en sagesse. Les voyants vous guident avec bienveillance vers la lumière après la tempête.</p>
+            </div>
+            <div className="border-b border-gray-200 pb-6">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Combien de temps dure un chagrin d&apos;amour en moyenne ?</h3>
+              <p className="text-gray-700 leading-relaxed">La règle empirique est d&apos;environ un mois de guérison par année de relation, mais le tarot personnalise ce timing. Une relation d&apos;un an nécessite 2-4 mois de guérison, tandis qu&apos;une relation de 5 ans peut demander 8-12 mois. Le travail intérieur, l&apos;accompagnement spirituel et le soutien de l&apos;entourage accélèrent considérablement le processus. Le voyant vous donne un calendrier réaliste basé sur votre énergie actuelle.</p>
+            </div>
+            <div className="border-b border-gray-200 pb-6">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Le tarot peut-il expliquer pourquoi mon couple s&apos;est séparé ?</h3>
+              <p className="text-gray-700 leading-relaxed">Absolument. Le tarot révèle les causes profondes souvent invisibles : incompatibilité karmique, leçons de vie à intégrer, schémas relationnels répétitifs, interférences extérieures, ou timing de vie différent. Comprendre ces raisons spirituelles aide à ne pas répéter les mêmes erreurs dans vos futures relations. Le voyant vous aide à identifier vos patterns amoureux pour les transformer et construire des relations plus saines.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Quand serai-je prêt(e) à aimer à nouveau après une rupture ?</h3>
+              <p className="text-gray-700 leading-relaxed">Le tarot identifie le moment précis où votre cœur sera à nouveau ouvert. Les signes révélés par les cartes incluent : pensées neutres envers votre ex, retrouvailles avec votre joie de vivre, curiosité pour de nouvelles rencontres, et cessation des comparaisons. L&apos;astrologie complète cette analyse en identifiant les transits favorables aux nouveaux départs amoureux, souvent 6-12 mois après la rupture pour les relations durables.</p>
             </div>
           </div>
         </section>
