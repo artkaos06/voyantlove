@@ -126,6 +126,12 @@
     <priority>0.7</priority>
   </url>
 
+  <url>
+    <loc>https://voyantlove.fr/nouvelle-rencontre/flamme-jumelle</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
   <!-- Sentiments Content Pages -->
   <url>
     <loc>https://voyantlove.fr/sentiments/maime-t-il-elle</loc>
@@ -145,6 +151,18 @@
     <priority>0.7</priority>
   </url>
 
+  <url>
+    <loc>https://voyantlove.fr/sentiments/compatibilite-amoureuse</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://voyantlove.fr/sentiments/pense-t-il-elle-a-moi</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
   <!-- Crise de Couple Content Pages -->
   <url>
     <loc>https://voyantlove.fr/crise-couple/infidelite-couple</loc>
@@ -160,6 +178,18 @@
 
   <url>
     <loc>https://voyantlove.fr/crise-couple/problemes-communication-couple</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://voyantlove.fr/crise-couple/sauver-son-couple</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://voyantlove.fr/crise-couple/dependance-affective</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
