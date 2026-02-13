@@ -85,6 +85,20 @@ export default function CriseCoupleHubPage() {
               <p className="text-gray-600 mb-4">Rétablir le dialogue et la compréhension mutuelle.</p>
               <span className="text-blue-600 font-semibold">Lire →</span>
             </Link>
+
+            <Link href="/crise-couple/sauver-son-couple" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-green-500">
+              <div className="text-4xl mb-4">🛟</div>
+              <h3 className="text-2xl font-bold mb-3">Sauver son Couple</h3>
+              <p className="text-gray-600 mb-4">Stratégies pour sauver votre relation avant la rupture.</p>
+              <span className="text-green-600 font-semibold">Lire →</span>
+            </Link>
+
+            <Link href="/crise-couple/dependance-affective" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-purple-500">
+              <div className="text-4xl mb-4">🔗</div>
+              <h3 className="text-2xl font-bold mb-3">Dépendance Affective</h3>
+              <p className="text-gray-600 mb-4">Se libérer de la dépendance affective selon le tarot.</p>
+              <span className="text-purple-600 font-semibold">Lire →</span>
+            </Link>
           </div>
         </section>
 
