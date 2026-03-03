@@ -200,17 +200,21 @@ export default function HomePage() {
               </div>
             </Link>
 
-            {/* Call to Action / All Situations */}
-            <div className="bg-gradient-to-br from-purple-50 to-pink-50 p-6 rounded-xl border-2 border-purple-200 flex flex-col justify-center items-center text-center">
-              <div className="text-4xl mb-3">🔮</div>
-              <h3 className="text-xl font-bold mb-2 text-gray-900">Plus de 20 Situations</h3>
-              <p className="text-gray-600 text-sm mb-4">
-                Découvrez toutes nos guidances spécialisées
-              </p>
-              <Link href="#situations" className="text-purple-600 font-semibold hover:text-purple-800">
-                Parcourir →
-              </Link>
-            </div>
+            {/* Network 6: Méthodes de Voyance */}
+            <Link href="/methodes-voyance" className="group">
+              <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition border-t-4 border-indigo-500">
+                <div className="text-4xl mb-4">🔮</div>
+                <h3 className="text-xl font-bold mb-2 group-hover:text-indigo-500 transition">
+                  Méthodes de Voyance
+                </h3>
+                <p className="text-gray-600 mb-4">
+                  Tarot, oracle, astrologie : découvrez les méthodes de voyance amoureuse et leurs spécificités.
+                </p>
+                <div className="text-indigo-500 font-semibold">
+                  Explorer →
+                </div>
+              </div>
+            </Link>
           </div>
         </div>
       </section>

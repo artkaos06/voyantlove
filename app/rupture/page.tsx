@@ -82,6 +82,20 @@ export default function RuptureHubPage() {
               <p className="text-gray-600 mb-4">Tourner la page complètement et se préparer à rencontrer un nouvel amour.</p>
               <span className="text-pink-600 font-semibold">Lire →</span>
             </Link>
+
+            <Link href="/rupture/guerir-rupture" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-teal-500">
+              <div className="text-4xl mb-4">🌿</div>
+              <h3 className="text-2xl font-bold mb-3 text-gray-900">Guérir d'une Rupture</h3>
+              <p className="text-gray-600 mb-4">Les étapes du deuil amoureux et le temps nécessaire pour se reconstruire.</p>
+              <span className="text-teal-600 font-semibold">Lire →</span>
+            </Link>
+
+            <Link href="/rupture/amour-non-partage" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-rose-500">
+              <div className="text-4xl mb-4">💜</div>
+              <h3 className="text-2xl font-bold mb-3 text-gray-900">Amour Non Partagé</h3>
+              <p className="text-gray-600 mb-4">Comprendre et surmonter un amour à sens unique selon le tarot.</p>
+              <span className="text-rose-600 font-semibold">Lire →</span>
+            </Link>
           </div>
         </section>
 
