@@ -1,9 +1,9 @@
 'use client';
 
 import React from 'react';
-import { Voyant, getVoyantsForTopic, getOnlineVoyants, getAffiliateLink } from '@/lib/voyants';
+import { getAffiliateLink } from '@/lib/voyants';
 import { trackAffiliateClick } from '@/lib/glyphex';
-import voyants from '@/data/voyants.json';
+import { useVoyants } from '@/lib/useVoyants';
 
 interface VoyantFinalCTAProps {
   topic: 'reconquete' | 'rupture' | 'nouvelle-rencontre' | 'sentiments' | 'crise-couple' | 'methodes-voyance';
@@ -18,13 +18,11 @@ export default function VoyantFinalCTA({
   headline,
   subheadline,
 }: VoyantFinalCTAProps) {
-  const typedVoyants = voyants as Voyant[];
-  const topicVoyants = getVoyantsForTopic(typedVoyants, topic, 5);
-  const onlineVoyants = getOnlineVoyants(topicVoyants);
-  const selectedVoyant = onlineVoyants[0] || topicVoyants[0];
+  const { voyants: liveVoyants, loading } = useVoyants();
 
-  if (!selectedVoyant) return null;
+  if (loading || liveVoyants.length === 0) return null;
 
+  const selectedVoyant = liveVoyants[0];
   const affiliateLink = getAffiliateLink(selectedVoyant.ID, `${source}-${topic}`);
 
   const handleAffiliateClick = () => {
@@ -107,7 +105,7 @@ export default function VoyantFinalCTA({
         🔮 Consulter un Voyant Maintenant
       </a>
       <p className="mt-4 text-sm opacity-90">
-        ✓ {selectedVoyant.EVAL}+ avis positifs • ✓ Paiement sécurisé • ✓ Confidentialité garantie
+        ✓ {liveVoyants.length} voyants en ligne • ✓ Paiement sécurisé • ✓ Confidentialité garantie
       </p>
     </div>
   );

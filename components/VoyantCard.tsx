@@ -75,7 +75,7 @@ export default function VoyantCard({ voyant, source = 'content-page', compact = 
           <div className="flex items-center gap-3">
             <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center text-3xl font-bold overflow-hidden">
               <img
-                src={`https://www.monsitevoyance.com/vignettephoto/${voyant.ID}.jpg`}
+                src={`https://www.monsitevoyance.com/vignaff/${voyant.ID}.jpg`}
                 alt={voyant.VOYANT}
                 className="w-full h-full object-cover"
                 onError={(e) => {
@@ -103,17 +103,17 @@ export default function VoyantCard({ voyant, source = 'content-page', compact = 
       {/* Body */}
       <div className="p-6">
         {/* Trust indicators */}
-        <div className="grid grid-cols-3 gap-4 mb-6 text-center">
-          <div className="bg-purple-50 rounded-lg p-3">
-            <div className="text-2xl font-bold text-purple-700">{parseFloat(voyant.STAR).toFixed(1)}</div>
+        <div className="grid grid-cols-3 gap-2 mb-6 text-center">
+          <div className="bg-purple-50 rounded-lg p-2">
+            <div className="text-lg font-bold text-purple-700 truncate">{parseFloat(voyant.STAR).toFixed(1)}</div>
             <div className="text-xs text-gray-600 mt-1">⭐ Note</div>
           </div>
-          <div className="bg-blue-50 rounded-lg p-3">
-            <div className="text-2xl font-bold text-blue-700">{voyant.EVAL}</div>
+          <div className="bg-blue-50 rounded-lg p-2">
+            <div className="text-lg font-bold text-blue-700 truncate">{voyant.EVAL}</div>
             <div className="text-xs text-gray-600 mt-1">📝 Avis</div>
           </div>
-          <div className="bg-green-50 rounded-lg p-3">
-            <div className="text-2xl font-bold text-green-700">{voyant.CONSULT}</div>
+          <div className="bg-green-50 rounded-lg p-2">
+            <div className="text-lg font-bold text-green-700 truncate">{voyant.CONSULT}</div>
             <div className="text-xs text-gray-600 mt-1">✅ Consultations</div>
           </div>
         </div>

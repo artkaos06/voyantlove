@@ -2,8 +2,7 @@
 
 import React from 'react';
 import VoyantCard from './VoyantCard';
-import { Voyant, getVoyantsForTopic, getOnlineVoyants } from '@/lib/voyants';
-import voyants from '@/data/voyants.json';
+import { useVoyants } from '@/lib/useVoyants';
 
 interface VoyantRecommendationsProps {
   topic: 'reconquete' | 'rupture' | 'nouvelle-rencontre' | 'sentiments' | 'crise-couple' | 'methodes-voyance';
@@ -19,24 +18,16 @@ export default function VoyantRecommendations({
   title,
   subtitle,
   limit = 3,
-  showOnlineFirst = true,
   source = 'recommendations',
 }: VoyantRecommendationsProps) {
-  const typedVoyants = voyants as Voyant[];
+  const { voyants: liveVoyants, loading } = useVoyants();
 
-  let recommendedVoyants = getVoyantsForTopic(typedVoyants, topic, limit * 2);
+  if (loading || liveVoyants.length === 0) return null;
 
-  // Prioritize online voyants if requested
-  if (showOnlineFirst) {
-    const online = getOnlineVoyants(recommendedVoyants);
-    const offline = recommendedVoyants.filter((v) => v.ETAT === '0');
-    recommendedVoyants = [...online, ...offline];
-  }
+  // Take first `limit` voyants from live feed (all are online)
+  const displayVoyants = liveVoyants.slice(0, limit);
 
-  // Limit to requested number
-  recommendedVoyants = recommendedVoyants.slice(0, limit);
-
-  const defaultTitles: Record<typeof topic, string> = {
+  const defaultTitles: Record<string, string> = {
     reconquete: '💕 Voyants Spécialisés en Reconquête Amoureuse',
     rupture: '💔 Voyants Experts en Rupture et Guérison',
     'nouvelle-rencontre': '✨ Voyants Spécialisés Nouvelle Rencontre',
@@ -45,7 +36,7 @@ export default function VoyantRecommendations({
     'methodes-voyance': '🔮 Voyants Experts en Tarot et Oracle Amoureux',
   };
 
-  const defaultSubtitles: Record<typeof topic, string> = {
+  const defaultSubtitles: Record<string, string> = {
     reconquete: 'Nos voyants les mieux notés pour vous guider dans la reconquête de votre ex',
     rupture: 'Accompagnement bienveillant pour traverser votre rupture et vous reconstruire',
     'nouvelle-rencontre': 'Découvrez quand et comment vous rencontrerez l\'amour',
@@ -65,16 +56,13 @@ export default function VoyantRecommendations({
         </p>
         <div className="flex items-center justify-center gap-2 mt-4">
           <span className="bg-green-100 text-green-700 text-sm font-semibold px-4 py-2 rounded-full">
-            ⚡ {getOnlineVoyants(typedVoyants).length} voyants en ligne maintenant
-          </span>
-          <span className="bg-purple-100 text-purple-700 text-sm font-semibold px-4 py-2 rounded-full">
-            ⭐ Note moyenne : 4.9/5
+            ⚡ {liveVoyants.length} voyants en ligne maintenant
           </span>
         </div>
       </div>
 
       <div className="grid md:grid-cols-3 gap-6 mb-6">
-        {recommendedVoyants.map((voyant) => (
+        {displayVoyants.map((voyant) => (
           <VoyantCard key={voyant.ID} voyant={voyant} source={`${source}-${topic}`} />
         ))}
       </div>
