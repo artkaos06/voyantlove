@@ -2,6 +2,9 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getArticleSchema, getFAQSchema, getBreadcrumbSchema } from '@/lib/schema';
 import EEATSignal from '@/components/EEATSignal';
+import VoyantQuickCTA from '@/components/VoyantQuickCTA';
+import VoyantRecommendations from '@/components/VoyantRecommendations';
+import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
 export const metadata: Metadata = {
   title: 'M\'aime-t-il/elle Vraiment ? Tarot et Voyance des Sentiments',
@@ -97,6 +100,8 @@ export default function MAimeTilEllePage() {
           </div>
         </article>
 
+        <VoyantQuickCTA topic="sentiments" source="maime-t-il-elle-early" />
+
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">💖 Les Signes d'Amour Véritable selon le Tarot</h2>
           <p className="text-gray-700 leading-relaxed mb-6">Le tarot utilise des cartes spécifiques pour révéler la nature authentique des sentiments.</p>
@@ -158,6 +163,8 @@ export default function MAimeTilEllePage() {
             <p className="text-gray-700"><strong>🔮 Le tarot ne ment pas :</strong> Même si vous aimez cette personne, si le tarot montre un attachement toxique plutôt qu'un amour sain, le voyant doit vous prévenir pour votre protection.</p>
           </div>
         </section>
+
+        <VoyantRecommendations topic="sentiments" limit={3} showOnlineFirst={true} source="maime-t-il-elle-mid" />
 
         <section id="signes" className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">🎭 Pourquoi il/elle Cache ses Sentiments</h2>
@@ -273,15 +280,7 @@ export default function MAimeTilEllePage() {
           </div>
         </div>
 
-        <div className="bg-gradient-to-r from-red-500 via-pink-500 to-rose-500 text-white rounded-xl p-8 text-center">
-          <h2 className="text-3xl font-bold mb-4">💝 Découvrez ses Vrais Sentiments</h2>
-          <p className="text-lg mb-6 opacity-95">Consultation personnalisée pour décrypter ce qu'il/elle ressent vraiment</p>
-          <div className="flex gap-4 justify-center flex-wrap">
-            <a href="#consultation" className="bg-white text-red-600 px-8 py-4 rounded-lg font-semibold hover:shadow-lg transition">Décryptage des Sentiments</a>
-            <a href="#tirage" className="border-2 border-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-red-600 transition">Tirage "M'aime-t-il/elle ?"</a>
-          </div>
-          <p className="mt-6 text-sm opacity-90">✓ Clarté totale • ✓ Réponse honnête • ✓ Guidance précise</p>
-        </div>
+        <VoyantFinalCTA topic="sentiments" source="maime-t-il-elle-final" />
       </div>
     </main>
   );

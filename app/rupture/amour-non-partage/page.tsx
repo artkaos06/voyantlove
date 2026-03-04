@@ -2,6 +2,9 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getArticleSchema, getFAQSchema, getBreadcrumbSchema } from '@/lib/schema';
 import EEATSignal from '@/components/EEATSignal';
+import VoyantQuickCTA from '@/components/VoyantQuickCTA';
+import VoyantRecommendations from '@/components/VoyantRecommendations';
+import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
 export const metadata: Metadata = {
   title: 'Amour Non Partag\u00e9 : Comprendre et Surmonter un Amour \u00e0 Sens Unique | VoyantLove',
@@ -99,6 +102,8 @@ export default function AmourNonPartagePage() {
             </p>
           </div>
         </article>
+
+        <VoyantQuickCTA topic="rupture" source="amour-non-partage-early" />
 
         {/* Section: Pourquoi l&apos;amour non partag&eacute; */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
@@ -218,6 +223,8 @@ export default function AmourNonPartagePage() {
             <p className="text-gray-700"><strong>&Agrave; d&eacute;couvrir :</strong> Pour une analyse compl&egrave;te des sentiments de l&apos;autre, consultez notre guide <Link href="/sentiments/maime-t-il-elle" className="text-rose-600 hover:text-rose-800 underline font-medium">M&apos;aime-t-il/elle vraiment ?</Link> qui d&eacute;taille chaque carte en position de <strong>sentiments</strong>.</p>
           </div>
         </section>
+
+        <VoyantRecommendations topic="rupture" limit={3} showOnlineFirst={true} source="amour-non-partage-mid" />
 
         {/* Section: Guide &eacute;tape par &eacute;tape */}
         <section className="bg-gradient-to-br from-pink-50 to-rose-50 rounded-xl p-8 mb-8 border-2 border-pink-200">
@@ -342,16 +349,7 @@ export default function AmourNonPartagePage() {
           </div>
         </div>
 
-        {/* CTA Footer */}
-        <div id="consultation" className="bg-gradient-to-r from-rose-500 to-fuchsia-500 text-white rounded-xl p-8 text-center">
-          <h2 className="text-3xl font-bold mb-4">&#x1F49C; Lib&eacute;rez-vous d&apos;un Amour Non Partag&eacute;</h2>
-          <p className="text-lg mb-6 opacity-95">Consultation de voyance sentimentale pour comprendre, gu&eacute;rir et s&apos;ouvrir &agrave; l&apos;amour v&eacute;ritable</p>
-          <div className="flex gap-4 justify-center flex-wrap">
-            <a href="#consultation" className="bg-white text-rose-600 px-8 py-4 rounded-lg font-semibold hover:shadow-lg transition">Guidance Sentimentale</a>
-            <a href="#signes" className="border-2 border-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-rose-600 transition">Analyse des Sentiments</a>
-          </div>
-          <p className="mt-6 text-sm opacity-90">&#x2713; R&eacute;v&eacute;lation des sentiments &bull; &#x2713; Guidance de lib&eacute;ration &bull; &#x2713; Chemin vers l&apos;amour r&eacute;ciproque</p>
-        </div>
+        <VoyantFinalCTA topic="rupture" source="amour-non-partage-final" />
       </div>
     </main>
   );

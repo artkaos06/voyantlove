@@ -2,6 +2,9 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getArticleSchema, getFAQSchema, getBreadcrumbSchema } from '@/lib/schema';
 import EEATSignal from '@/components/EEATSignal';
+import VoyantQuickCTA from '@/components/VoyantQuickCTA';
+import VoyantRecommendations from '@/components/VoyantRecommendations';
+import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
 export const metadata: Metadata = {
   title: 'Signes qu\'il/elle m\'aime : Décrypter l\'Amour Véritable | Tarot',
@@ -104,6 +107,8 @@ export default function SignesIlElleMaimePage() {
             Que vous soyez en phase de séduction incertaine, en début de relation questionnant la réciprocité, ou dans un couple cherchant confirmation de l'amour durable, apprendre à <strong>décrypter les signes amoureux</strong> vous permet de prendre des décisions éclairées. Pour une analyse complète de ses sentiments, découvrez notre page <Link href="/sentiments/maime-t-il-elle" className="text-rose-600 hover:text-rose-800 underline font-medium">M'aime-t-il/elle vraiment</Link> et explorez tous nos guides sur les <Link href="/sentiments" className="text-rose-600 hover:text-rose-800 underline font-medium">sentiments amoureux</Link>.
           </p>
         </article>
+
+        <VoyantQuickCTA topic="sentiments" source="signes-il-elle-maime-early" />
 
         <section id="signes" className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-rose-600">👁️ Les 20 Signes Physiques et Corporels d'Amour</h2>
@@ -390,6 +395,8 @@ export default function SignesIlElleMaimePage() {
           </div>
         </section>
 
+        <VoyantRecommendations topic="sentiments" limit={3} showOnlineFirst={true} source="signes-il-elle-maime-mid" />
+
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-rose-600">🔮 Les Signes d'Amour Selon le Tarot</h2>
           <p className="text-gray-700 mb-6">
@@ -671,15 +678,7 @@ export default function SignesIlElleMaimePage() {
           </div>
         </div>
 
-        <div className="bg-gradient-to-r from-pink-500 via-rose-500 to-red-500 text-white rounded-xl p-8 text-center">
-          <h2 className="text-3xl font-bold mb-4">💝 Décryptez Ses Vrais Sentiments</h2>
-          <p className="text-lg mb-6 opacity-95">Tirage personnalisé pour savoir s'il/elle vous aime vraiment</p>
-          <div className="flex gap-4 justify-center flex-wrap">
-            <a href="#consultation" className="bg-white text-rose-600 px-8 py-4 rounded-lg font-semibold hover:shadow-lg transition">Analyse des Sentiments</a>
-            <a href="#tirage" className="border-2 border-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-rose-600 transition">Tirage Signes d'Amour</a>
-          </div>
-          <p className="mt-6 text-sm opacity-90">✓ 92% de précision • ✓ Réponse claire • ✓ Guidance complète</p>
-        </div>
+        <VoyantFinalCTA topic="sentiments" source="signes-il-elle-maime-final" />
       </div>
     </main>
   );

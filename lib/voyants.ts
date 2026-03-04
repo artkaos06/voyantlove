@@ -52,6 +52,10 @@ export const topicToSpecialtyMapping: Record<string, VoyantMatchingCriteria> = {
     specialties: ['crise de couple', 'communication', 'jalousie', 'infidélité'],
     minRating: 4.5,
   },
+  'methodes-voyance': {
+    specialties: ['tarot', 'oracle', 'astrologie', 'voyance amoureuse'],
+    minRating: 4.5,
+  },
 };
 
 // Filter voyants based on criteria

@@ -2,6 +2,9 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getArticleSchema, getFAQSchema, getBreadcrumbSchema } from '@/lib/schema';
 import EEATSignal from '@/components/EEATSignal';
+import VoyantQuickCTA from '@/components/VoyantQuickCTA';
+import VoyantRecommendations from '@/components/VoyantRecommendations';
+import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
 export const metadata: Metadata = {
   title: 'Chagrin d\'Amour : Guérir et Surmonter selon le Tarot',
@@ -90,6 +93,8 @@ export default function ChagrinAmourPage() {
           <p className="text-lg leading-relaxed">La <strong>guérison émotionnelle</strong> n'est jamais linéaire : vous connaîtrez des hauts et des bas, des jours où tout semble aller mieux et d'autres où la douleur revient par vagues. C'est un processus parfaitement normal que le tarot vous aide à traverser jour après jour, en vous encourageant dans les moments difficiles et en célébrant vos progrès, même les plus petits. L'important est de ne pas rester seul(e) face à cette souffrance. Que ce soit à travers la voyance, le soutien de proches bienveillants ou un accompagnement thérapeutique, chaque geste vers la guérison compte et vous rapproche de la paix intérieure.</p>
         </article>
 
+        <VoyantQuickCTA topic="rupture" source="chagrin-damour-early" />
+
         <section id="etapes" className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6">💔 Étapes de Guérison</h2>
           <div className="space-y-4">
@@ -138,6 +143,8 @@ export default function ChagrinAmourPage() {
           </div>
         </section>
 
+        <VoyantRecommendations topic="rupture" limit={3} showOnlineFirst={true} source="chagrin-damour-mid" />
+
         <section className="bg-gradient-to-br from-purple-50 to-blue-50 rounded-xl p-8 mb-8 border-2 border-purple-200">
           <h2 className="text-3xl font-bold mb-6">🔬 Pourquoi le Chagrin Fait Si Mal : La Science et l'Énergie</h2>
           <p className="text-gray-700 leading-relaxed mb-4">La science moderne confirme ce que la <strong>voyance intuitive</strong> perçoit depuis des siècles : un <strong>chagrin d'amour</strong> active dans le cerveau les mêmes zones que la douleur physique. Les recherches en neurosciences montrent que la rupture d'un lien amoureux provoque une véritable réaction de <strong>sevrage biochimique</strong>, similaire à l'arrêt d'une substance addictive. Votre cerveau, habitué aux doses régulières de dopamine et d'ocytocine générées par la présence de votre partenaire, se retrouve brutalement privé de ces hormones du bonheur, ce qui explique l'intensité quasi physique de la souffrance.</p>
@@ -167,15 +174,7 @@ export default function ChagrinAmourPage() {
           </div>
         </div>
 
-        <div className="bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 text-white rounded-xl p-8 text-center">
-          <h2 className="text-3xl font-bold mb-4">💙 Guidance Bienveillante</h2>
-          <p className="text-lg mb-6 opacity-95">Accompagnement pour surmonter votre chagrin</p>
-          <div className="flex gap-4 justify-center flex-wrap">
-            <a href="#consultation" className="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:shadow-lg transition">Consultation</a>
-            <a href="#tirage" className="border-2 border-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition">Tirage</a>
-          </div>
-          <p className="mt-6 text-sm opacity-90">✓ Compassion • ✓ Timeline • ✓ Actions</p>
-        </div>
+        <VoyantFinalCTA topic="rupture" source="chagrin-damour-final" />
       </div>
     </main>
   );

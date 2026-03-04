@@ -2,6 +2,9 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getWebPageSchema, getBreadcrumbSchema, getOrganizationSchema, getFAQSchema } from '@/lib/schema';
 import EEATSignal from '@/components/EEATSignal';
+import VoyantQuickCTA from '@/components/VoyantQuickCTA';
+import VoyantRecommendations from '@/components/VoyantRecommendations';
+import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
 export const metadata: Metadata = {
   title: 'Nouvelle Rencontre Amoureuse : Trouver l\'Amour | Voyance',
@@ -60,6 +63,8 @@ export default function NouvelleRencontreHubPage() {
       <div className="max-w-6xl mx-auto px-4 py-12">
         <EEATSignal colorScheme="cyan" method="Tarot des nouvelles rencontres et prédictions" />
 
+        <VoyantQuickCTA topic="nouvelle-rencontre" source="nouvelle-rencontre-hub-early" />
+
         <section className="mb-16">
           <h2 className="text-3xl font-bold mb-8 text-center">🗺️ Votre Chemin vers l'Amour</h2>
           <div className="grid md:grid-cols-2 gap-8">
@@ -100,6 +105,8 @@ export default function NouvelleRencontreHubPage() {
           </div>
         </section>
 
+        <VoyantRecommendations topic="nouvelle-rencontre" limit={3} showOnlineFirst={true} source="nouvelle-rencontre-hub-mid" />
+
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-8">Questions Fréquentes sur les Nouvelles Rencontres</h2>
           <div className="space-y-6">
@@ -122,11 +129,7 @@ export default function NouvelleRencontreHubPage() {
           </div>
         </section>
 
-        <div className="bg-gradient-to-r from-cyan-500 to-blue-500 text-white rounded-xl p-8 text-center">
-          <h2 className="text-3xl font-bold mb-4">✨ Prédiction Rencontre</h2>
-          <p className="text-lg mb-6">Découvrez quand et comment vous allez rencontrer l'amour</p>
-          <a href="#consultation" className="bg-white text-cyan-600 px-8 py-4 rounded-lg font-semibold hover:shadow-lg transition inline-block">Consultation</a>
-        </div>
+        <VoyantFinalCTA topic="nouvelle-rencontre" source="nouvelle-rencontre-hub-final" />
       </div>
     </main>
   );

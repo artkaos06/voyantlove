@@ -2,6 +2,9 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getArticleSchema, getFAQSchema, getBreadcrumbSchema } from '@/lib/schema';
 import EEATSignal from '@/components/EEATSignal';
+import VoyantQuickCTA from '@/components/VoyantQuickCTA';
+import VoyantRecommendations from '@/components/VoyantRecommendations';
+import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
 export const metadata: Metadata = {
   title: 'Mon Ex Va-t-il Revenir ? Réponse du Tarot et Voyance | Prédiction',
@@ -97,6 +100,8 @@ export default function VaTilRevenirPage() {
           </div>
         </article>
 
+        <VoyantQuickCTA topic="reconquete" source="va-t-il-elle-revenir-early" />
+
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">🔮 Ce que le Tarot Révèle sur le Retour</h2>
           <p className="text-gray-700 leading-relaxed mb-6">Le tirage du retour de l'ex analyse 4 positions clés pour vous donner une réponse complète et honnête.</p>
@@ -145,6 +150,8 @@ export default function VaTilRevenirPage() {
             </div>
           </div>
         </section>
+
+        <VoyantRecommendations topic="reconquete" limit={3} showOnlineFirst={true} source="va-t-il-elle-revenir-mid" />
 
         <section id="signes" className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">💡 Les Signes Concrets qu'il/elle Va Revenir</h2>
@@ -273,15 +280,7 @@ export default function VaTilRevenirPage() {
           </div>
         </div>
 
-        <div className="bg-gradient-to-r from-purple-600 via-indigo-600 to-blue-600 text-white rounded-xl p-8 text-center">
-          <h2 className="text-3xl font-bold mb-4">🔮 Obtenez Votre Réponse Maintenant</h2>
-          <p className="text-lg mb-6 opacity-95">Tirage personnalisé pour savoir si votre ex va revenir et quand</p>
-          <div className="flex gap-4 justify-center flex-wrap">
-            <a href="#consultation" className="bg-white text-purple-600 px-8 py-4 rounded-lg font-semibold hover:shadow-lg transition">Tirage Retour de l'Ex</a>
-            <a href="#tirage" className="border-2 border-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-purple-600 transition">Consultation Prédiction</a>
-          </div>
-          <p className="mt-6 text-sm opacity-90">✓ Réponse honnête • ✓ Sans faux espoirs • ✓ Guidance claire</p>
-        </div>
+        <VoyantFinalCTA topic="reconquete" source="va-t-il-elle-revenir-final" />
       </div>
     </main>
   );

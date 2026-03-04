@@ -2,6 +2,9 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getArticleSchema, getFAQSchema, getBreadcrumbSchema } from '@/lib/schema';
 import EEATSignal from '@/components/EEATSignal';
+import VoyantQuickCTA from '@/components/VoyantQuickCTA';
+import VoyantRecommendations from '@/components/VoyantRecommendations';
+import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
 export const metadata: Metadata = {
   title: 'Ex qui Revient Après Silence Radio : Signes, Raisons et Que Faire',
@@ -104,6 +107,8 @@ export default function ExRevientSilenceRadioPage() {
             Ce guide complet analyse les <strong>signes précurseurs du retour</strong>, les vraies raisons psychologiques qui poussent un ex à revenir, et la stratégie exacte pour gérer cette situation délicate. Pour comprendre les mécaniques complètes de la <Link href="/reconquete" className="text-purple-600 hover:text-purple-800 underline font-medium">reconquête amoureuse</Link>, explorez toutes nos méthodes éprouvées.
           </p>
         </article>
+
+        <VoyantQuickCTA topic="reconquete" source="ex-revient-silence-radio-early" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-purple-600">🔍 Les 8 Signes Qu'un Ex Va Revenir Après Silence Radio</h2>
@@ -272,6 +277,8 @@ export default function ExRevientSilenceRadioPage() {
             </div>
           </div>
         </section>
+
+        <VoyantRecommendations topic="reconquete" limit={3} showOnlineFirst={true} source="ex-revient-silence-radio-mid" />
 
         <section id="reaction" className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-purple-600">💬 Comment Réagir Quand Votre Ex Revient : La Stratégie en 6 Étapes</h2>
@@ -498,15 +505,7 @@ export default function ExRevientSilenceRadioPage() {
           </div>
         </div>
 
-        <div className="bg-gradient-to-r from-purple-600 via-pink-500 to-rose-500 text-white rounded-xl p-8 text-center">
-          <h2 className="text-3xl font-bold mb-4">🔮 Votre Ex Va-t-il Vraiment Revenir ?</h2>
-          <p className="text-lg mb-6 opacity-95">Consultation personnalisée pour comprendre la situation et prendre les bonnes décisions</p>
-          <div className="flex gap-4 justify-center flex-wrap">
-            <a href="#consultation" className="bg-white text-purple-600 px-8 py-4 rounded-lg font-semibold hover:shadow-lg transition">Analyse de Votre Situation</a>
-            <a href="#guidance" className="border-2 border-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-purple-600 transition">Stratégie Personnalisée</a>
-          </div>
-          <p className="mt-6 text-sm opacity-90">✓ Analyse objective • ✓ Stratégie adaptée • ✓ Guidance bienveillante</p>
-        </div>
+        <VoyantFinalCTA topic="reconquete" source="ex-revient-silence-radio-final" />
       </div>
     </main>
   );

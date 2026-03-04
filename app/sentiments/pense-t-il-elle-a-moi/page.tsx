@@ -2,6 +2,9 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getArticleSchema, getFAQSchema, getBreadcrumbSchema } from '@/lib/schema';
 import EEATSignal from '@/components/EEATSignal';
+import VoyantQuickCTA from '@/components/VoyantQuickCTA';
+import VoyantRecommendations from '@/components/VoyantRecommendations';
+import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
 export const metadata: Metadata = {
   title: 'Pense-t-il/elle à Moi ? Ce que le Tarot Révèle | Voyance',
@@ -98,6 +101,8 @@ export default function PenseTilElleAMoiPage() {
             </p>
           </div>
         </article>
+
+        <VoyantQuickCTA topic="sentiments" source="pense-t-il-elle-a-moi-early" />
 
         {/* H2: Les Signes Énergétiques */}
         <section id="signes" className="bg-white rounded-xl shadow-md p-8 mb-8">
@@ -212,6 +217,8 @@ export default function PenseTilElleAMoiPage() {
           </div>
         </section>
 
+        <VoyantRecommendations topic="sentiments" limit={3} showOnlineFirst={true} source="pense-t-il-elle-a-moi-mid" />
+
         {/* H2: Penser ≠ Vouloir Revenir */}
         <section className="bg-gradient-to-r from-rose-50 to-orange-50 rounded-xl p-8 mb-8 border-2 border-rose-200">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">{'\u26A0\uFE0F'} Penser à Vous &ne; Vouloir Revenir : Les Nuances</h2>
@@ -318,15 +325,7 @@ export default function PenseTilElleAMoiPage() {
         </div>
 
         {/* CTA Footer */}
-        <div className="bg-gradient-to-r from-pink-400 via-rose-500 to-purple-500 text-white rounded-xl p-8 text-center">
-          <h2 className="text-3xl font-bold mb-4">{'\u{1F4AD}'} Découvrez ce qu&apos;il/elle Pense de Vous</h2>
-          <p className="text-lg mb-6 opacity-95">Tirage personnalisé pour savoir si cette personne pense à vous</p>
-          <div className="flex gap-4 justify-center flex-wrap">
-            <a href="#consultation" className="bg-white text-pink-600 px-8 py-4 rounded-lg font-semibold hover:shadow-lg transition">Tirage des Pensées</a>
-            <a href="#tirage" className="border-2 border-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-pink-600 transition">Connexion Télépathique</a>
-          </div>
-          <p className="mt-6 text-sm opacity-90">{'\u2713'} 87% de précision {'\u2022'} {'\u2713'} Réponse claire {'\u2022'} {'\u2713'} Guidance complète</p>
-        </div>
+        <VoyantFinalCTA topic="sentiments" source="pense-t-il-elle-a-moi-final" />
       </div>
     </main>
   );

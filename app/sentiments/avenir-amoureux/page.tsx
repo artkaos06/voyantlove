@@ -2,6 +2,9 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getArticleSchema, getFAQSchema, getBreadcrumbSchema } from '@/lib/schema';
 import EEATSignal from '@/components/EEATSignal';
+import VoyantQuickCTA from '@/components/VoyantQuickCTA';
+import VoyantRecommendations from '@/components/VoyantRecommendations';
+import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
 export const metadata: Metadata = {
   title: 'Mon Avenir Amoureux : Prédictions Tarot et Voyance | Futur Sentimental',
@@ -104,6 +107,8 @@ export default function AvenirAmoureuxPage() {
             Que vous soyez célibataire en quête de l'<strong>âme sœur</strong>, en couple en questionnement sur votre <strong>avenir à deux</strong>, ou en période de transition sentimentale, la <strong>voyance amoureuse</strong> vous offre une vision claire de votre chemin relationnel. Pour en savoir plus sur vos <Link href="/sentiments" className="text-rose-600 hover:text-rose-800 underline font-medium">sentiments amoureux</Link>, découvrez toutes nos guidances spécialisées.
           </p>
         </article>
+
+        <VoyantQuickCTA topic="sentiments" source="avenir-amoureux-early" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-rose-600">🔮 Le Tirage de l'Avenir Amoureux : 5 Positions Clés</h2>
@@ -294,6 +299,8 @@ export default function AvenirAmoureuxPage() {
           </div>
         </section>
 
+        <VoyantRecommendations topic="sentiments" limit={3} showOnlineFirst={true} source="avenir-amoureux-mid" />
+
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-rose-600">🌙 L'Astrologie de Votre Avenir Amoureux</h2>
           <p className="text-gray-700 mb-6">
@@ -436,15 +443,7 @@ export default function AvenirAmoureuxPage() {
           </div>
         </div>
 
-        <div className="bg-gradient-to-r from-pink-500 via-rose-500 to-red-500 text-white rounded-xl p-8 text-center">
-          <h2 className="text-3xl font-bold mb-4">🔮 Découvrez Votre Avenir Amoureux</h2>
-          <p className="text-lg mb-6 opacity-95">Tirage personnalisé pour connaître votre futur sentimental</p>
-          <div className="flex gap-4 justify-center flex-wrap">
-            <a href="#consultation" className="bg-white text-rose-600 px-8 py-4 rounded-lg font-semibold hover:shadow-lg transition">Consultation Avenir Amoureux</a>
-            <a href="#tirage" className="border-2 border-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-rose-600 transition">Tirage Timeline Sentimentale</a>
-          </div>
-          <p className="mt-6 text-sm opacity-90">✓ Prédictions précises • ✓ Timeline détaillée • ✓ Guidance personnalisée</p>
-        </div>
+        <VoyantFinalCTA topic="sentiments" source="avenir-amoureux-final" />
       </div>
     </main>
   );

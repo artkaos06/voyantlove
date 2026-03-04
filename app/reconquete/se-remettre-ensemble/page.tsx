@@ -2,6 +2,9 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getArticleSchema, getBreadcrumbSchema, getFAQSchema } from '@/lib/schema';
 import EEATSignal from '@/components/EEATSignal';
+import VoyantQuickCTA from '@/components/VoyantQuickCTA';
+import VoyantRecommendations from '@/components/VoyantRecommendations';
+import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
 export const metadata: Metadata = {
   title: 'Se Remettre Ensemble : Les 5 Étapes pour Réussir',
@@ -94,6 +97,8 @@ export default function SeRemettreEnsemblePage() {
           <p className="text-lg mb-4">La <strong>reconstruction d'un couple</strong> après une rupture exige bien plus qu'un simple désir de retrouvailles. Elle nécessite une analyse honnête des causes d'échec, des changements concrets de comportement, et un engagement mutuel à construire une relation meilleure que la précédente. Sans ces prérequis, vous reproduirez exactement les mêmes schémas qui ont mené à la première séparation.</p>
           <p className="text-lg">Comprendre comment <strong>se remettre ensemble après une rupture</strong> de manière saine et durable vous évite des mois de souffrance et de déceptions répétées. Ce guide complet basé sur la guidance tarot vous accompagne à travers les 5 étapes essentielles pour maximiser vos chances de <strong>retrouvailles réussies</strong>. Pour en savoir plus sur les <Link href="/reconquete" className="text-purple-600 hover:text-purple-800 underline font-medium">retrouvailles amoureuses</Link>, découvrez toutes nos guidances spécialisées.</p>
         </article>
+
+        <VoyantQuickCTA topic="reconquete" source="se-remettre-ensemble-early" />
 
         <section className="bg-white rounded-xl p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-purple-600">Les 5 Étapes Essentielles pour Se Remettre Ensemble</h2>
@@ -422,6 +427,8 @@ export default function SeRemettreEnsemblePage() {
           </div>
         </section>
 
+        <VoyantRecommendations topic="reconquete" limit={3} showOnlineFirst={true} source="se-remettre-ensemble-mid" />
+
         <section className="bg-white rounded-xl p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-purple-600">Stratégies de Communication pour Éviter la Deuxième Rupture</h2>
           <p className="text-gray-700 mb-6">Une fois remis ensemble, la qualité de votre communication détermine la durabilité de votre relation. Voici les stratégies essentielles.</p>
@@ -669,11 +676,7 @@ export default function SeRemettreEnsemblePage() {
           </div>
         </div>
 
-        <div className="bg-gradient-to-r from-purple-500 via-pink-500 to-rose-500 text-white rounded-xl p-8 text-center">
-          <h2 className="text-3xl font-bold mb-4">💑 Guidance pour Se Remettre Ensemble</h2>
-          <p className="mb-6">Découvrez si votre reprise de relation a les chances de réussir</p>
-          <a href="#consultation" className="bg-white text-purple-600 px-8 py-4 rounded-lg font-semibold hover:shadow-lg transition inline-block">Consultation Tarot</a>
-        </div>
+        <VoyantFinalCTA topic="reconquete" source="se-remettre-ensemble-final" />
       </div>
     </main>
   );

@@ -2,6 +2,9 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getArticleSchema, getFAQSchema, getBreadcrumbSchema } from '@/lib/schema';
 import EEATSignal from '@/components/EEATSignal';
+import VoyantQuickCTA from '@/components/VoyantQuickCTA';
+import VoyantRecommendations from '@/components/VoyantRecommendations';
+import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
 export const metadata: Metadata = {
   title: 'Nouvelle Relation Amoureuse : Guide des Premiers Mois | Construire les Bases',
@@ -104,6 +107,8 @@ export default function NouvelleRelationAmourseusePage() {
             Ce guide complet vous révèle les <strong>étapes naturelles d'une nouvelle relation</strong>, les erreurs fatales à éviter, comment construire des bases saines, et les signes qu'une relation a un potentiel de durabilité. Le <strong>tarot de couple</strong> peut également éclairer les énergies en jeu et l'avenir probable de votre union naissante. Pour découvrir d'autres aspects de votre <Link href="/nouvelle-rencontre" className="text-rose-600 hover:text-rose-800 underline font-medium">nouvelle rencontre amoureuse</Link>, explorez toutes nos guidances spécialisées.
           </p>
         </article>
+
+        <VoyantQuickCTA topic="nouvelle-rencontre" source="nouvelle-relation-amoureuse-early" />
 
         <section id="etapes" className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-rose-600">📅 Les 6 Étapes d'une Nouvelle Relation Amoureuse</h2>
@@ -352,6 +357,8 @@ export default function NouvelleRelationAmourseusePage() {
           </div>
         </section>
 
+        <VoyantRecommendations topic="nouvelle-rencontre" limit={3} showOnlineFirst={true} source="nouvelle-relation-amoureuse-mid" />
+
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-rose-600">✅ Les 10 Signes d'une Nouvelle Relation Saine et Prometteuse</h2>
           <p className="text-gray-700 mb-6">
@@ -545,15 +552,7 @@ export default function NouvelleRelationAmourseusePage() {
           </div>
         </div>
 
-        <div className="bg-gradient-to-r from-rose-500 via-pink-500 to-purple-500 text-white rounded-xl p-8 text-center">
-          <h2 className="text-3xl font-bold mb-4">💕 Guidance pour Votre Nouvelle Relation</h2>
-          <p className="text-lg mb-6 opacity-95">Tirage tarot personnalisé pour éclairer les premiers mois de votre couple</p>
-          <div className="flex gap-4 justify-center flex-wrap">
-            <a href="#consultation" className="bg-white text-rose-600 px-8 py-4 rounded-lg font-semibold hover:shadow-lg transition">Consultation Nouvelle Relation</a>
-            <a href="#tirage" className="border-2 border-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-rose-600 transition">Tirage Avenir du Couple</a>
-          </div>
-          <p className="mt-6 text-sm opacity-90">✓ Analyse des fondations • ✓ Potentiel de durabilité • ✓ Guidance personnalisée</p>
-        </div>
+        <VoyantFinalCTA topic="nouvelle-rencontre" source="nouvelle-relation-amoureuse-final" />
       </div>
     </main>
   );

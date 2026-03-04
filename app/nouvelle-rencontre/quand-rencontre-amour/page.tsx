@@ -2,6 +2,9 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getArticleSchema, getFAQSchema, getBreadcrumbSchema } from '@/lib/schema';
 import EEATSignal from '@/components/EEATSignal';
+import VoyantQuickCTA from '@/components/VoyantQuickCTA';
+import VoyantRecommendations from '@/components/VoyantRecommendations';
+import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
 export const metadata: Metadata = {
   title: 'Quand Vais-je Rencontrer Quelqu\'un ? Prédiction Tarot et Voyance',
@@ -90,6 +93,8 @@ export default function QuandRencontrePage() {
           <p className="text-lg leading-relaxed">La <strong>voyance</strong> ne fait pas apparaître quelqu'un magiquement, mais vous prépare énergétiquement, vous guide vers les lieux et situations propices, et vous aide à reconnaître la bonne personne quand elle arrive. Certaines personnes cherchent à <Link href="/nouvelle-rencontre/trouver-ame-soeur" className="text-cyan-600 hover:text-cyan-800 underline font-medium">trouver leur âme sœur</Link> sans avoir conscience des blocages invisibles qui les en empêchent. Pour approfondir votre compréhension des <Link href="/nouvelle-rencontre" className="text-cyan-600 hover:text-cyan-800 underline font-medium">nouvelles rencontres</Link> et découvrir toutes nos guidances spécialisées sur ce sujet, n'hésitez pas à explorer notre espace dédié.</p>
         </article>
 
+        <VoyantQuickCTA topic="nouvelle-rencontre" source="quand-rencontre-amour-early" />
+
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6">📅 Le Timing de votre Prochaine Rencontre</h2>
           <div className="space-y-4">
@@ -122,6 +127,8 @@ export default function QuandRencontrePage() {
             <div className="bg-cyan-50 p-4 rounded border-l-4 border-cyan-500"><h3 className="font-bold text-cyan-700 mb-2">🏃 Activité Sportive (Cavalier)</h3><p className="text-gray-700 text-sm">Salle de sport, cours de yoga, randonnée, club sportif, événement actif.</p></div>
           </div>
         </section>
+
+        <VoyantRecommendations topic="nouvelle-rencontre" limit={3} showOnlineFirst={true} source="quand-rencontre-amour-mid" />
 
         <section className="bg-red-50 border-2 border-red-200 rounded-xl p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6">🚧 Ce Qui Bloque Actuellement Votre Rencontre</h2>
@@ -169,15 +176,7 @@ export default function QuandRencontrePage() {
           </div>
         </div>
 
-        <div className="bg-gradient-to-r from-cyan-500 via-blue-500 to-indigo-500 text-white rounded-xl p-8 text-center">
-          <h2 className="text-3xl font-bold mb-4">✨ Découvrez Quand Vous Allez Rencontrer</h2>
-          <p className="text-lg mb-6 opacity-95">Prédiction personnalisée : timing, lieu, profil et préparation</p>
-          <div className="flex gap-4 justify-center flex-wrap">
-            <a href="#consultation" className="bg-white text-cyan-600 px-8 py-4 rounded-lg font-semibold hover:shadow-lg transition">Prédiction Timing de Rencontre</a>
-            <a href="#tirage" className="border-2 border-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-cyan-600 transition">Tirage "Quand et Comment"</a>
-          </div>
-          <p className="mt-6 text-sm opacity-90">✓ Timing précis • ✓ Profil détaillé • ✓ Lieux propices</p>
-        </div>
+        <VoyantFinalCTA topic="nouvelle-rencontre" source="quand-rencontre-amour-final" />
       </div>
     </main>
   );

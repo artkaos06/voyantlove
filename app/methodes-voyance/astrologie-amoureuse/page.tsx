@@ -2,6 +2,9 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getArticleSchema, getFAQSchema, getBreadcrumbSchema } from '@/lib/schema';
 import EEATSignal from '@/components/EEATSignal';
+import VoyantQuickCTA from '@/components/VoyantQuickCTA';
+import VoyantRecommendations from '@/components/VoyantRecommendations';
+import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
 export const metadata: Metadata = {
   title: 'Astrologie Amoureuse : Compatibilit\u00e9 Astrale et Pr\u00e9dictions | VoyantLove',
@@ -99,6 +102,8 @@ export default function AstrologieAmoureusePage() {
             </p>
           </div>
         </article>
+
+        <VoyantQuickCTA topic="methodes-voyance" source="astrologie-amoureuse-early" />
 
         {/* Section: Qu&apos;est-ce que l&apos;astrologie amoureuse */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
@@ -209,6 +214,8 @@ export default function AstrologieAmoureusePage() {
             </div>
           </div>
         </section>
+
+        <VoyantRecommendations topic="methodes-voyance" limit={3} showOnlineFirst={true} source="astrologie-amoureuse-mid" />
 
         {/* Section: V&eacute;nus et Mars */}
         <section className="bg-gradient-to-br from-purple-50 to-indigo-50 rounded-xl p-8 mb-8 border-2 border-purple-200">
@@ -340,15 +347,7 @@ export default function AstrologieAmoureusePage() {
         </div>
 
         {/* CTA Footer */}
-        <div id="consultation" className="bg-gradient-to-r from-violet-500 to-indigo-500 text-white rounded-xl p-8 text-center">
-          <h2 className="text-3xl font-bold mb-4">&#x2B50; D&eacute;couvrez Votre Astrologie Amoureuse</h2>
-          <p className="text-lg mb-6 opacity-95">Analyse de synastrie et transits sentimentaux par un astrologue expert</p>
-          <div className="flex gap-4 justify-center flex-wrap">
-            <a href="#consultation" className="bg-white text-violet-600 px-8 py-4 rounded-lg font-semibold hover:shadow-lg transition">Analyse Astrale Compl&egrave;te</a>
-            <a href="#synastrie" className="border-2 border-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-violet-600 transition">&Eacute;tude de Synastrie</a>
-          </div>
-          <p className="mt-6 text-sm opacity-90">&#x2713; Synastrie d&eacute;taill&eacute;e &bull; &#x2713; Transits amoureux &bull; &#x2713; Guidance personnalis&eacute;e</p>
-        </div>
+        <VoyantFinalCTA topic="methodes-voyance" source="astrologie-amoureuse-final" />
       </div>
     </main>
   );

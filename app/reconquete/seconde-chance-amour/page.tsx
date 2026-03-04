@@ -2,6 +2,9 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getArticleSchema, getBreadcrumbSchema, getFAQSchema } from '@/lib/schema';
 import EEATSignal from '@/components/EEATSignal';
+import VoyantQuickCTA from '@/components/VoyantQuickCTA';
+import VoyantRecommendations from '@/components/VoyantRecommendations';
+import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
 export const metadata: Metadata = {
   title: 'Seconde Chance en Amour : Donner une Nouvelle Opportunité',
@@ -93,6 +96,8 @@ export default function SecondeChancePage() {
           <p className="text-lg mb-4">Une <strong>seconde chance réussie</strong> exige bien plus que de l'amour : elle nécessite une évolution profonde des deux partenaires, un <strong>pardon</strong> authentique sans rancune cachée, et la résolution concrète des causes originales de la séparation. Le <strong>tarot de la reconstruction amoureuse</strong> éclaire ces aspects essentiels pour vous guider vers la meilleure décision.</p>
           <p className="text-lg">Comprendre la différence entre une vraie <strong>seconde chance constructive</strong> et une simple répétition de schéma toxique vous protège de nouvelles souffrances. Cette guidance complète vous aide à identifier les conditions de réussite, les signes d'alerte, et le chemin vers une <strong>reconstruction solide de votre couple</strong>. Pour en savoir plus sur les <Link href="/reconquete" className="text-green-600 hover:text-green-800 underline font-medium">retrouvailles amoureuses</Link>, découvrez toutes nos guidances spécialisées.</p>
         </article>
+
+        <VoyantQuickCTA topic="reconquete" source="seconde-chance-amour-early" />
 
         <section className="bg-white rounded-xl p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-green-600">Les 7 Conditions Essentielles pour Réussir une Seconde Chance</h2>
@@ -293,6 +298,8 @@ export default function SecondeChancePage() {
           </div>
         </section>
 
+        <VoyantRecommendations topic="reconquete" limit={3} showOnlineFirst={true} source="seconde-chance-amour-mid" />
+
         <section className="bg-white rounded-xl p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-green-600">Seconde Chance vs Répétition de Schéma : Faites la Différence</h2>
           <p className="text-gray-700 mb-6">Il est crucial de distinguer une vraie <strong>seconde chance constructive</strong> d'une simple <strong>répétition de schéma toxique</strong>. Voici comment les différencier.</p>
@@ -465,10 +472,7 @@ export default function SecondeChancePage() {
             <Link href="/reconquete/reconquerir-son-ex" className="block text-green-600 hover:text-green-800 font-medium">→ Reconquérir son Ex : Stratégies Efficaces</Link>
           </div>
         </div>
-        <div className="bg-gradient-to-r from-green-500 via-teal-500 to-cyan-500 text-white rounded-xl p-8 text-center">
-          <h2 className="text-3xl font-bold mb-4">🌱 Guidance Seconde Chance</h2>
-          <a href="#consultation" className="bg-white text-green-600 px-8 py-4 rounded-lg font-semibold hover:shadow-lg transition inline-block">Consultation</a>
-        </div>
+        <VoyantFinalCTA topic="reconquete" source="seconde-chance-amour-final" />
       </div>
     </main>
   );

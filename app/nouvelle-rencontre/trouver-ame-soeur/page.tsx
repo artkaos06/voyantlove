@@ -2,6 +2,9 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getArticleSchema, getFAQSchema, getBreadcrumbSchema } from '@/lib/schema';
 import EEATSignal from '@/components/EEATSignal';
+import VoyantQuickCTA from '@/components/VoyantQuickCTA';
+import VoyantRecommendations from '@/components/VoyantRecommendations';
+import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
 export const metadata: Metadata = {
   title: 'Trouver son Âme Sœur : Guide Complet Tarot et Voyance | Connexion Spirituelle',
@@ -104,6 +107,8 @@ export default function TrouverAmeSoeurPage() {
             Que vous soyez célibataire en quête de cette connexion profonde, ou en questionnement sur une relation actuelle (est-ce vraiment mon âme sœur ?), ce guide complet vous offre les clés pour reconnaître, attirer, et nourrir cette <strong>union d'âmes</strong> exceptionnelle. Pour découvrir quand vous rencontrerez l'amour, consultez notre page <Link href="/nouvelle-rencontre/quand-rencontre-amour" className="text-indigo-600 hover:text-indigo-800 underline font-medium">Quand vais-je rencontrer l'amour</Link> et explorez toutes nos guidances sur les <Link href="/nouvelle-rencontre" className="text-indigo-600 hover:text-indigo-800 underline font-medium">nouvelles rencontres amoureuses</Link>.
           </p>
         </article>
+
+        <VoyantQuickCTA topic="nouvelle-rencontre" source="trouver-ame-soeur-early" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-indigo-600">💎 Qu'est-ce qu'une Âme Sœur Vraiment ?</h2>
@@ -502,6 +507,8 @@ export default function TrouverAmeSoeurPage() {
           </div>
         </section>
 
+        <VoyantRecommendations topic="nouvelle-rencontre" limit={3} showOnlineFirst={true} source="trouver-ame-soeur-mid" />
+
         <section className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-xl p-8 mb-8 border-2 border-blue-200">
           <h2 className="text-3xl font-bold mb-6 text-gray-900">🌟 Où et Comment Rencontrer Son Âme Sœur</h2>
           <p className="text-gray-700 mb-6">
@@ -681,15 +688,7 @@ export default function TrouverAmeSoeurPage() {
           </div>
         </div>
 
-        <div className="bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 text-white rounded-xl p-8 text-center">
-          <h2 className="text-3xl font-bold mb-4">💫 Trouvez Votre Âme Sœur</h2>
-          <p className="text-lg mb-6 opacity-95">Tirage personnalisé pour révéler quand et comment rencontrer votre connexion d'âme</p>
-          <div className="flex gap-4 justify-center flex-wrap">
-            <a href="#consultation" className="bg-white text-indigo-600 px-8 py-4 rounded-lg font-semibold hover:shadow-lg transition">Tirage Âme Sœur</a>
-            <a href="#guidance" className="border-2 border-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-indigo-600 transition">Guidance Spirituelle</a>
-          </div>
-          <p className="mt-6 text-sm opacity-90">✓ 87% de reconnexion • ✓ Timeline précise • ✓ Préparation guidée</p>
-        </div>
+        <VoyantFinalCTA topic="nouvelle-rencontre" source="trouver-ame-soeur-final" />
       </div>
     </main>
   );

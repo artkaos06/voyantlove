@@ -2,6 +2,9 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getArticleSchema, getFAQSchema, getBreadcrumbSchema } from '@/lib/schema';
 import EEATSignal from '@/components/EEATSignal';
+import VoyantQuickCTA from '@/components/VoyantQuickCTA';
+import VoyantRecommendations from '@/components/VoyantRecommendations';
+import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
 export const metadata: Metadata = {
   title: 'Infidélité dans le Couple : Trahison, Pardon et Reconstruction | Voyance',
@@ -107,6 +110,8 @@ export default function InfideliteCouplePage() {
             Que vous soyez en train de découvrir l'infidélité, en plein processus de pardon, ou en questionnement sur rester ou partir, ce guide complet vous accompagne. Pour comprendre l'ensemble des <Link href="/crise-couple" className="text-rose-600 hover:text-rose-800 underline font-medium">crises de couple</Link>, découvrez toutes nos guidances spécialisées pour traverser les tempêtes relationnelles.
           </p>
         </article>
+
+        <VoyantQuickCTA topic="crise-couple" source="infidelite-couple-early" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-rose-600">🔍 Comprendre l'Infidélité : Types et Causes Profondes</h2>
@@ -247,6 +252,8 @@ export default function InfideliteCouplePage() {
             </p>
           </div>
         </section>
+
+        <VoyantRecommendations topic="crise-couple" limit={3} showOnlineFirst={true} source="infidelite-couple-mid" />
 
         <section id="reconstruction" className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-rose-600">❤️‍🩹 Reconstruire le Couple Après l'Infidélité : Les 7 Piliers</h2>
@@ -626,15 +633,7 @@ export default function InfideliteCouplePage() {
           </div>
         </div>
 
-        <div className="bg-gradient-to-r from-red-600 via-rose-600 to-pink-600 text-white rounded-xl p-8 text-center">
-          <h2 className="text-3xl font-bold mb-4">💔 Guidance pour l'Infidélité</h2>
-          <p className="text-lg mb-6 opacity-95">Tirage spécialisé pour révéler la vérité et éclairer votre chemin de guérison</p>
-          <div className="flex gap-4 justify-center flex-wrap">
-            <a href="#consultation" className="bg-white text-rose-600 px-8 py-4 rounded-lg font-semibold hover:shadow-lg transition">Consultation Infidélité</a>
-            <a href="#tirage" className="border-2 border-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-rose-600 transition">Tirage Vérité</a>
-          </div>
-          <p className="mt-6 text-sm opacity-90">✓ Révélation de la vérité • ✓ Guidance de guérison • ✓ Décision éclairée</p>
-        </div>
+        <VoyantFinalCTA topic="crise-couple" source="infidelite-couple-final" />
       </div>
     </main>
   );

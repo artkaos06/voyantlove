@@ -4,6 +4,7 @@ import { getArticleSchema, getBreadcrumbSchema, getFAQSchema } from '@/lib/schem
 import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
+import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
 export const metadata: Metadata = {
   title: 'Ex qui Revient : Que Faire ? Conseils Voyance',
@@ -406,48 +407,7 @@ export default function ExQuiRevientPage() {
           </div>
         </section>
 
-        {/* ZONE 3: Final CTA - Dernière opportunité de conversion */}
-        <div className="bg-gradient-to-br from-purple-600 via-pink-600 to-rose-600 text-white rounded-xl p-10 mb-8 text-center shadow-2xl">
-          <div className="mb-6">
-            <h2 className="text-4xl font-bold mb-4">🔮 Ne Restez Pas Dans le Doute</h2>
-            <p className="text-xl opacity-95 max-w-2xl mx-auto mb-2">
-              Obtenez une guidance claire et honnête sur le retour de votre ex
-            </p>
-            <p className="text-lg opacity-90 max-w-2xl mx-auto">
-              Nos voyants spécialisés révèlent les vraies motivations et vos chances réelles de réussite
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-4 max-w-3xl mx-auto mb-8 text-sm">
-            <div className="bg-white/10 backdrop-blur rounded-lg p-4">
-              <div className="text-3xl mb-2">⚡</div>
-              <div className="font-semibold">Réponse Immédiate</div>
-              <div className="opacity-90 text-xs mt-1">Voyants disponibles maintenant</div>
-            </div>
-            <div className="bg-white/10 backdrop-blur rounded-lg p-4">
-              <div className="text-3xl mb-2">🎯</div>
-              <div className="font-semibold">Guidance Précise</div>
-              <div className="opacity-90 text-xs mt-1">Adaptée à votre situation</div>
-            </div>
-            <div className="bg-white/10 backdrop-blur rounded-lg p-4">
-              <div className="text-3xl mb-2">💯</div>
-              <div className="font-semibold">Sans Jugement</div>
-              <div className="opacity-90 text-xs mt-1">Écoute bienveillante garantie</div>
-            </div>
-          </div>
-
-          <a
-            href="https://www.monsitevoyance.com/zoom_voyant.php?id=8864&partner=383&ref=ex-qui-revient-final"
-            target="_blank"
-            rel="noopener noreferrer sponsored"
-            className="inline-block bg-white text-pink-600 px-10 py-4 rounded-lg font-bold text-lg hover:shadow-2xl transition-all hover:scale-105"
-          >
-            🔮 Consulter un Voyant Maintenant
-          </a>
-          <p className="mt-4 text-sm opacity-90">
-            ✓ 2,000+ avis positifs • ✓ Paiement sécurisé • ✓ Confidentialité garantie
-          </p>
-        </div>
+        <VoyantFinalCTA topic="reconquete" source="ex-qui-revient-final" />
 
         <div className="bg-gray-100 rounded-xl p-6 mb-8">
           <h3 className="font-bold mb-4 text-xl text-gray-800">📚 Articles Connexes</h3>
@@ -462,11 +422,6 @@ export default function ExQuiRevientPage() {
           </div>
         </div>
 
-        <div className="bg-gradient-to-r from-violet-500 via-pink-500 to-rose-500 text-white rounded-xl p-8 text-center">
-          <h2 className="text-3xl font-bold mb-4">💕 Guidance Retour</h2>
-          <p className="mb-6">Découvrez que faire</p>
-          <a href="#consultation" className="bg-white text-pink-600 px-8 py-4 rounded-lg font-semibold hover:shadow-lg transition inline-block">Consultation</a>
-        </div>
       </div>
     </main>
   );

@@ -2,6 +2,9 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getArticleSchema, getFAQSchema, getBreadcrumbSchema } from '@/lib/schema';
 import EEATSignal from '@/components/EEATSignal';
+import VoyantQuickCTA from '@/components/VoyantQuickCTA';
+import VoyantRecommendations from '@/components/VoyantRecommendations';
+import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
 export const metadata: Metadata = {
   title: 'Oracle de l\u2019Amour : Guidance Sentimentale par les Cartes Oracle | VoyantLove',
@@ -99,6 +102,8 @@ export default function OracleAmourPage() {
             </p>
           </div>
         </article>
+
+        <VoyantQuickCTA topic="methodes-voyance" source="oracle-amour-early" />
 
         {/* Section: Qu&apos;est-ce que l&apos;Oracle de l&apos;Amour */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
@@ -214,6 +219,8 @@ export default function OracleAmourPage() {
             </div>
           </div>
         </section>
+
+        <VoyantRecommendations topic="methodes-voyance" limit={3} showOnlineFirst={true} source="oracle-amour-mid" />
 
         {/* Section: Oracle vs Tarot */}
         <section className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-8 mb-8 border-2 border-purple-200">
@@ -339,15 +346,7 @@ export default function OracleAmourPage() {
         </div>
 
         {/* CTA Footer */}
-        <div id="consultation" className="bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-xl p-8 text-center">
-          <h2 className="text-3xl font-bold mb-4">&#x2728; Recevez Votre Guidance Oracle Amoureuse</h2>
-          <p className="text-lg mb-6 opacity-95">Consultation personnalis&eacute;e avec les oracles les plus puissants en voyance sentimentale</p>
-          <div className="flex gap-4 justify-center flex-wrap">
-            <a href="#consultation" className="bg-white text-purple-600 px-8 py-4 rounded-lg font-semibold hover:shadow-lg transition">Consultation Oracle</a>
-            <a href="#oracles" className="border-2 border-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-purple-600 transition">D&eacute;couvrir les Oracles</a>
-          </div>
-          <p className="mt-6 text-sm opacity-90">&#x2713; Oracle Belline &bull; &#x2713; Oracle de G&eacute; &bull; &#x2713; Oracle des Anges</p>
-        </div>
+        <VoyantFinalCTA topic="methodes-voyance" source="oracle-amour-final" />
       </div>
     </main>
   );

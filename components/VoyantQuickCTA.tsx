@@ -6,7 +6,7 @@ import { trackAffiliateClick } from '@/lib/glyphex';
 import voyants from '@/data/voyants.json';
 
 interface VoyantQuickCTAProps {
-  topic: 'reconquete' | 'rupture' | 'nouvelle-rencontre' | 'sentiments' | 'crise-couple';
+  topic: 'reconquete' | 'rupture' | 'nouvelle-rencontre' | 'sentiments' | 'crise-couple' | 'methodes-voyance';
   source?: string;
 }
 
@@ -63,6 +63,12 @@ export default function VoyantQuickCTA({ topic, source = 'quick-cta' }: VoyantQu
       border: 'border-amber-500',
       text: 'text-amber-600',
       button: 'from-amber-600 to-yellow-600 hover:from-amber-700 hover:to-yellow-700',
+    },
+    'methodes-voyance': {
+      bg: 'from-indigo-100 to-violet-100',
+      border: 'border-indigo-500',
+      text: 'text-indigo-600',
+      button: 'from-indigo-600 to-violet-600 hover:from-indigo-700 hover:to-violet-700',
     },
   };
 

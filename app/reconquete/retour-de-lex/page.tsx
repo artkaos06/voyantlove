@@ -2,6 +2,9 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getArticleSchema, getFAQSchema, getBreadcrumbSchema } from '@/lib/schema';
 import EEATSignal from '@/components/EEATSignal';
+import VoyantQuickCTA from '@/components/VoyantQuickCTA';
+import VoyantRecommendations from '@/components/VoyantRecommendations';
+import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
 export const metadata: Metadata = {
   title: 'Retour de l\'Ex : Signes, Timing et Prédictions du Tarot',
@@ -90,6 +93,8 @@ export default function RetourExPage() {
           <p className="text-lg leading-relaxed mb-4">Chaque situation de rupture est unique, et c'est pourquoi un <strong>tirage personnalisé</strong> est bien plus fiable qu'une interprétation générale. Les <strong>arcanes majeurs</strong> comme Le Jugement, L'Étoile ou Le Monde révèlent les grandes tendances de votre avenir sentimental, tandis que les <strong>arcanes mineurs</strong> précisent le timing, les obstacles et les opportunités concrètes. Que la rupture soit récente ou ancienne, que les raisons soient émotionnelles ou pratiques, le tarot offre une lecture complète des dynamiques invisibles entre vous et votre ex. Avant de vous lancer dans toute démarche, il est essentiel de comprendre si le retour est véritablement dans votre intérêt ou si le destin vous oriente vers une nouvelle histoire.</p>
         </article>
 
+        <VoyantQuickCTA topic="reconquete" source="retour-de-lex-early" />
+
         <section id="signes" className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6">💫 Les 10 Signes du Retour</h2>
           <div className="space-y-3">
@@ -117,6 +122,8 @@ export default function RetourExPage() {
             <div className="bg-white p-4 rounded border-l-4 border-teal-500"><h3 className="font-bold text-teal-700 mb-2">☿ Mercure Rétrograde</h3><p className="text-gray-700 text-sm">Bien que Mercure rétrograde soit souvent redouté, cette période de 3 semaines (3 fois par an) favorise la <strong>reprise de communication</strong> avec les anciennes relations. Les malentendus passés trouvent enfin leur résolution, et les conversations inachevées reprennent naturellement. C'est un moment propice pour clarifier les non-dits qui ont contribué à la rupture.</p></div>
           </div>
         </section>
+
+        <VoyantRecommendations topic="reconquete" limit={3} showOnlineFirst={true} source="retour-de-lex-mid" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-fuchsia-500">
           <h2 className="text-3xl font-bold mb-6">🃏 Le Tirage Tarot du Retour : 5 Positions</h2>
@@ -191,15 +198,7 @@ export default function RetourExPage() {
           </div>
         </div>
 
-        <div className="bg-gradient-to-r from-violet-600 via-purple-600 to-fuchsia-600 text-white rounded-xl p-8 text-center">
-          <h2 className="text-3xl font-bold mb-4">↩️ Prédiction Retour</h2>
-          <p className="text-lg mb-6 opacity-95">Découvrez si, quand et comment</p>
-          <div className="flex gap-4 justify-center flex-wrap">
-            <a href="#consultation" className="bg-white text-violet-600 px-8 py-4 rounded-lg font-semibold hover:shadow-lg transition">Consultation</a>
-            <a href="#tirage" className="border-2 border-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-violet-600 transition">Tirage</a>
-          </div>
-          <p className="mt-6 text-sm opacity-90">✓ Timing • ✓ Signes • ✓ Stratégie</p>
-        </div>
+        <VoyantFinalCTA topic="reconquete" source="retour-de-lex-final" />
       </div>
     </main>
   );

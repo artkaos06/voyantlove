@@ -2,6 +2,9 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getArticleSchema, getFAQSchema, getBreadcrumbSchema } from '@/lib/schema';
 import EEATSignal from '@/components/EEATSignal';
+import VoyantQuickCTA from '@/components/VoyantQuickCTA';
+import VoyantRecommendations from '@/components/VoyantRecommendations';
+import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
 export const metadata: Metadata = {
   title: 'Flamme Jumelle : Reconnaître et Vivre cette Connexion Intense | Voyance',
@@ -100,6 +103,8 @@ export default function FlammeJumellePage() {
             Cette guidance complète vous révèle les <strong>signes d'une flamme jumelle</strong>, les huit étapes du parcours, le rôle du <strong>tarot</strong> dans la confirmation, et les clés pour traverser la séparation avec conscience. Pour explorer d'autres formes de connexion profonde, découvrez notre guide complet sur les <Link href="/nouvelle-rencontre/signes-ame-soeur" className="text-purple-600 hover:text-purple-800 underline font-medium">signes de l'âme s&oelig;ur</Link> et leurs différences fondamentales avec la flamme jumelle.
           </p>
         </article>
+
+        <VoyantQuickCTA topic="nouvelle-rencontre" source="flamme-jumelle-early" />
 
         {/* Flamme Jumelle vs Âme Sœur */}
         <section className="bg-gradient-to-br from-purple-50 to-indigo-50 rounded-xl p-8 mb-8 border-2 border-purple-200">
@@ -335,6 +340,8 @@ export default function FlammeJumellePage() {
           </div>
         </section>
 
+        <VoyantRecommendations topic="nouvelle-rencontre" limit={3} showOnlineFirst={true} source="flamme-jumelle-mid" />
+
         {/* Séparation et Retrouvailles */}
         <section className="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-xl p-8 mb-8 border-2 border-indigo-200">
           <h2 className="text-3xl font-bold mb-6 text-gray-900">&#x1F504; Séparation et Retrouvailles — Le Cycle Karmique</h2>
@@ -474,16 +481,7 @@ export default function FlammeJumellePage() {
           </div>
         </div>
 
-        {/* CTA Footer */}
-        <div className="bg-gradient-to-r from-violet-600 via-purple-600 to-indigo-600 text-white rounded-xl p-8 text-center">
-          <h2 className="text-3xl font-bold mb-4">&#x1F525; Confirmez votre Connexion de Flamme Jumelle</h2>
-          <p className="text-lg mb-6 opacity-95">Tirage karmique personnalisé pour identifier votre étape et guider votre parcours</p>
-          <div className="flex gap-4 justify-center flex-wrap">
-            <a href="#consultation" className="bg-white text-purple-600 px-8 py-4 rounded-lg font-semibold hover:shadow-lg transition">Consultation Flamme Jumelle</a>
-            <a href="#tirage" className="border-2 border-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-purple-600 transition">Tirage Karmique Complet</a>
-          </div>
-          <p className="mt-6 text-sm opacity-90">&#x2713; Confirmation du lien &bull; &#x2713; Identification de l'étape &bull; &#x2713; Guidance personnalisée</p>
-        </div>
+        <VoyantFinalCTA topic="nouvelle-rencontre" source="flamme-jumelle-final" />
       </div>
     </main>
   );

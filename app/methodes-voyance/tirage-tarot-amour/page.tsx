@@ -2,6 +2,9 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getArticleSchema, getFAQSchema, getBreadcrumbSchema } from '@/lib/schema';
 import EEATSignal from '@/components/EEATSignal';
+import VoyantQuickCTA from '@/components/VoyantQuickCTA';
+import VoyantRecommendations from '@/components/VoyantRecommendations';
+import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
 export const metadata: Metadata = {
   title: 'Tirage de Tarot Amoureux : Guide Complet des Tirages Sentimentaux | VoyantLove',
@@ -99,6 +102,8 @@ export default function TirageTarotAmourPage() {
             </p>
           </div>
         </article>
+
+        <VoyantQuickCTA topic="methodes-voyance" source="tirage-tarot-amour-early" />
 
         {/* Section: Types de tirages amoureux */}
         <section id="types" className="bg-white rounded-xl shadow-md p-8 mb-8">
@@ -237,6 +242,8 @@ export default function TirageTarotAmourPage() {
           </div>
         </section>
 
+        <VoyantRecommendations topic="methodes-voyance" limit={3} showOnlineFirst={true} source="tirage-tarot-amour-mid" />
+
         {/* Section: Quand faire un tirage */}
         <section className="bg-gradient-to-br from-indigo-50 to-blue-50 rounded-xl p-8 mb-8 border-2 border-indigo-200">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">&#x1F552; Quand Faire un Tirage de Tarot Amoureux</h2>
@@ -363,15 +370,7 @@ export default function TirageTarotAmourPage() {
         </div>
 
         {/* CTA Footer */}
-        <div id="consultation" className="bg-gradient-to-r from-indigo-500 to-purple-500 text-white rounded-xl p-8 text-center">
-          <h2 className="text-3xl font-bold mb-4">&#x1F0CF; Obtenez Votre Tirage de Tarot Amoureux</h2>
-          <p className="text-lg mb-6 opacity-95">Consultation personnalis&eacute;e par un tarologue expert en voyance sentimentale</p>
-          <div className="flex gap-4 justify-center flex-wrap">
-            <a href="#consultation" className="bg-white text-indigo-600 px-8 py-4 rounded-lg font-semibold hover:shadow-lg transition">Tirage Personnalis&eacute;</a>
-            <a href="#types" className="border-2 border-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-indigo-600 transition">D&eacute;couvrir les Tirages</a>
-          </div>
-          <p className="mt-6 text-sm opacity-90">&#x2713; Tirage en croix complet &bull; &#x2713; Interpr&eacute;tation d&eacute;taill&eacute;e &bull; &#x2713; Guidance personnalis&eacute;e</p>
-        </div>
+        <VoyantFinalCTA topic="methodes-voyance" source="tirage-tarot-amour-final" />
       </div>
     </main>
   );

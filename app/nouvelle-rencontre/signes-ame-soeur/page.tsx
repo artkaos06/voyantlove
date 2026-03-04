@@ -2,6 +2,9 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getArticleSchema, getFAQSchema, getBreadcrumbSchema } from '@/lib/schema';
 import EEATSignal from '@/components/EEATSignal';
+import VoyantQuickCTA from '@/components/VoyantQuickCTA';
+import VoyantRecommendations from '@/components/VoyantRecommendations';
+import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
 export const metadata: Metadata = {
   title: 'Signes de l\'Âme Sœur : Reconnaître Votre Connexion Karmique | 15 Indices',
@@ -104,6 +107,8 @@ export default function SignesAmeSoeurPage() {
             Cette guidance complète vous révèle les <strong>15 signes infaillibles</strong> pour reconnaître votre âme sœur, les différencier d'une flamme jumelle ou d'une simple compatibilité, et comprendre la dimension karmique de cette union sacrée. Pour explorer d'autres aspects de votre <Link href="/nouvelle-rencontre" className="text-purple-600 hover:text-purple-800 underline font-medium">nouvelle rencontre amoureuse</Link>, découvrez toutes nos guidances spécialisées.
           </p>
         </article>
+
+        <VoyantQuickCTA topic="nouvelle-rencontre" source="signes-ame-soeur-early" />
 
         <section id="signes" className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-purple-600">💫 Les 15 Signes Infaillibles de l'Âme Sœur</h2>
@@ -301,6 +306,8 @@ export default function SignesAmeSoeurPage() {
             </p>
           </div>
         </section>
+
+        <VoyantRecommendations topic="nouvelle-rencontre" limit={3} showOnlineFirst={true} source="signes-ame-soeur-mid" />
 
         <section id="tarot" className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-purple-600">🃏 Le Tarot Confirme : Les Cartes de l'Âme Sœur</h2>
@@ -514,15 +521,7 @@ export default function SignesAmeSoeurPage() {
           </div>
         </div>
 
-        <div className="bg-gradient-to-r from-purple-600 via-pink-500 to-rose-500 text-white rounded-xl p-8 text-center">
-          <h2 className="text-3xl font-bold mb-4">✨ Confirmez Votre Connexion d'Âme Sœur</h2>
-          <p className="text-lg mb-6 opacity-95">Tirage tarot personnalisé pour confirmer si vous avez rencontré votre âme sœur</p>
-          <div className="flex gap-4 justify-center flex-wrap">
-            <a href="#consultation" className="bg-white text-purple-600 px-8 py-4 rounded-lg font-semibold hover:shadow-lg transition">Consultation Âme Sœur</a>
-            <a href="#tirage" className="border-2 border-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-purple-600 transition">Tirage Confirmation Karmique</a>
-          </div>
-          <p className="mt-6 text-sm opacity-90">✓ Identification précise • ✓ Analyse karmique • ✓ Guidance personnalisée</p>
-        </div>
+        <VoyantFinalCTA topic="nouvelle-rencontre" source="signes-ame-soeur-final" />
       </div>
     </main>
   );

@@ -2,6 +2,9 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getArticleSchema, getFAQSchema, getBreadcrumbSchema } from '@/lib/schema';
 import EEATSignal from '@/components/EEATSignal';
+import VoyantQuickCTA from '@/components/VoyantQuickCTA';
+import VoyantRecommendations from '@/components/VoyantRecommendations';
+import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
 export const metadata: Metadata = {
   title: 'Problèmes de Communication dans le Couple : Solutions et Dialogue | Voyance',
@@ -107,6 +110,8 @@ export default function ProblemesCommunicationCouplePage() {
             Que vous traversiez une <strong>crise de communication passagère</strong> ou un <strong>silence profond</strong> qui dure depuis des mois, des solutions existent pour rétablir la connexion. Pour comprendre l'ensemble des <Link href="/crise-couple" className="text-purple-600 hover:text-purple-800 underline font-medium">crises de couple</Link>, découvrez nos guidances spécialisées qui abordent tous les aspects des difficultés relationnelles.
           </p>
         </article>
+
+        <VoyantQuickCTA topic="crise-couple" source="problemes-communication-couple-early" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-purple-600">🔍 Les 7 Principaux Problèmes de Communication dans le Couple</h2>
@@ -384,6 +389,8 @@ export default function ProblemesCommunicationCouplePage() {
           </div>
         </section>
 
+        <VoyantRecommendations topic="crise-couple" limit={3} showOnlineFirst={true} source="problemes-communication-couple-mid" />
+
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-purple-600">🔮 Le Tarot de la Communication de Couple : 5 Positions</h2>
           <p className="text-gray-700 mb-6">
@@ -596,15 +603,7 @@ export default function ProblemesCommunicationCouplePage() {
           </div>
         </div>
 
-        <div className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-white rounded-xl p-8 text-center">
-          <h2 className="text-3xl font-bold mb-4">💬 Débloquez Votre Communication de Couple</h2>
-          <p className="text-lg mb-6 opacity-95">Tirage spécialisé pour identifier et résoudre vos problèmes de dialogue</p>
-          <div className="flex gap-4 justify-center flex-wrap">
-            <a href="#consultation" className="bg-white text-purple-600 px-8 py-4 rounded-lg font-semibold hover:shadow-lg transition">Consultation Communication</a>
-            <a href="#tirage" className="border-2 border-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-purple-600 transition">Tirage de Couple</a>
-          </div>
-          <p className="mt-6 text-sm opacity-90">✓ Identification des blocages • ✓ Solutions concrètes • ✓ Guidance personnalisée</p>
-        </div>
+        <VoyantFinalCTA topic="crise-couple" source="problemes-communication-couple-final" />
       </div>
     </main>
   );

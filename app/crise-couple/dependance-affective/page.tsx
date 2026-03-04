@@ -2,6 +2,9 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getArticleSchema, getFAQSchema, getBreadcrumbSchema } from '@/lib/schema';
 import EEATSignal from '@/components/EEATSignal';
+import VoyantQuickCTA from '@/components/VoyantQuickCTA';
+import VoyantRecommendations from '@/components/VoyantRecommendations';
+import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
 export const metadata: Metadata = {
   title: 'Dépendance Affective : Se Libérer et Aimer Sainement | Voyance',
@@ -102,6 +105,8 @@ export default function DependanceAffectivePage() {
             La <strong>d&eacute;pendance affective</strong> touche environ 1 personne sur 4 dans ses <strong>relations amoureuses</strong>, cr&eacute;ant un cycle douloureux o&ugrave; l&rsquo;amour se transforme en prison &eacute;motionnelle. Derri&egrave;re cette souffrance se cachent des <strong>sch&eacute;mas r&eacute;p&eacute;titifs</strong> profond&eacute;ment ancr&eacute;s, souvent li&eacute;s &agrave; une <strong>blessure d&rsquo;abandon</strong> non gu&eacute;rie. Le <strong>tarot</strong> r&eacute;v&egrave;le avec pr&eacute;cision ces m&eacute;canismes invisibles qui vous poussent &agrave; vous accrocher d&eacute;sesp&eacute;r&eacute;ment &agrave; l&rsquo;autre, &agrave; accepter l&rsquo;inacceptable, ou &agrave; perdre votre identit&eacute; dans la relation. Le chemin de <strong>gu&eacute;rison</strong> existe, mais il demande du courage et une prise de conscience profonde. Que vous souffriez d&rsquo;un <strong>manque de confiance en soi</strong> chronique ou d&rsquo;un <strong>attachement anxieux</strong> qui sabote chaque relation, la guidance spirituelle &eacute;claire les racines karmiques de votre d&eacute;pendance et trace la voie vers un amour enfin libre et &eacute;quilibr&eacute;.
           </p>
         </article>
+
+        <VoyantQuickCTA topic="crise-couple" source="dependance-affective-early" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-teal-600">&#x1F52E; Qu&rsquo;est-ce que la D&eacute;pendance Affective selon la Voyance ?</h2>
@@ -242,6 +247,8 @@ export default function DependanceAffectivePage() {
             </p>
           </div>
         </section>
+
+        <VoyantRecommendations topic="crise-couple" limit={3} showOnlineFirst={true} source="dependance-affective-mid" />
 
         <section id="liberation" className="bg-gradient-to-br from-teal-50 to-blue-50 rounded-xl p-8 mb-8 border-2 border-teal-200">
           <h2 className="text-3xl font-bold mb-6 text-gray-900">&#x2728; Le Chemin de Lib&eacute;ration &mdash; 5 &Eacute;tapes Guid&eacute;es par le Tarot</h2>
@@ -429,15 +436,7 @@ export default function DependanceAffectivePage() {
           </div>
         </div>
 
-        <div className="bg-gradient-to-r from-teal-600 via-cyan-600 to-blue-600 text-white rounded-xl p-8 text-center">
-          <h2 className="text-3xl font-bold mb-4">&#x1F52E; Lib&eacute;rez-vous de la D&eacute;pendance Affective</h2>
-          <p className="text-lg mb-6 opacity-95">Consultation personnalis&eacute;e pour comprendre vos sch&eacute;mas et retrouver votre libert&eacute; &eacute;motionnelle</p>
-          <div className="flex gap-4 justify-center flex-wrap">
-            <a href="#consultation" className="bg-white text-teal-600 px-8 py-4 rounded-lg font-semibold hover:shadow-lg transition">Tirage de Lib&eacute;ration</a>
-            <a href="#guidance" className="border-2 border-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-teal-600 transition">Guidance Karmique</a>
-          </div>
-          <p className="mt-6 text-sm opacity-90">&#x2713; Bilan karmique complet &bull; &#x2713; Identification des sch&eacute;mas &bull; &#x2713; Chemin de gu&eacute;rison personnalis&eacute;</p>
-        </div>
+        <VoyantFinalCTA topic="crise-couple" source="dependance-affective-final" />
       </div>
     </main>
   );

@@ -2,6 +2,9 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getWebPageSchema, getBreadcrumbSchema, getOrganizationSchema, getFAQSchema } from '@/lib/schema';
 import EEATSignal from '@/components/EEATSignal';
+import VoyantQuickCTA from '@/components/VoyantQuickCTA';
+import VoyantRecommendations from '@/components/VoyantRecommendations';
+import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
 export const metadata: Metadata = {
   title: 'Rupture Amoureuse : Comprendre, Surmonter et Guérir | Voyance',
@@ -59,6 +62,7 @@ export default function RuptureHubPage() {
 
       <div className="max-w-6xl mx-auto px-4 py-12">
         <EEATSignal colorScheme="red" method="Tarot de guérison et accompagnement post-rupture" />
+        <VoyantQuickCTA topic="rupture" source="rupture-hub-early" />
         <section className="mb-16">
           <h2 className="text-3xl font-bold mb-8 text-center">🗺️ Votre Parcours de Guérison</h2>
           <div className="grid md:grid-cols-3 gap-8">
@@ -99,6 +103,8 @@ export default function RuptureHubPage() {
           </div>
         </section>
 
+        <VoyantRecommendations topic="rupture" limit={3} showOnlineFirst={true} source="rupture-hub-mid" />
+
         <section className="bg-white rounded-xl p-8 mb-12">
           <h2 className="text-3xl font-bold mb-6">🔮 Ce que la Voyance Révèle sur la Rupture</h2>
           <p className="text-lg text-gray-700 leading-relaxed mb-6">Le <strong>tarot</strong> aide à comprendre pourquoi votre relation devait se terminer, quelles leçons en tirer, et comment transformer cette épreuve en évolution personnelle. Chaque <strong>rupture amoureuse</strong> porte un sens spirituel profond.</p>
@@ -136,11 +142,7 @@ export default function RuptureHubPage() {
           </div>
         </section>
 
-        <div className="bg-gradient-to-r from-gray-700 to-gray-900 text-white rounded-xl p-8 text-center">
-          <h2 className="text-3xl font-bold mb-4">💬 Besoin de Guidance ?</h2>
-          <p className="text-lg mb-6 opacity-90">Consultez un voyant pour comprendre votre rupture et entamer votre guérison</p>
-          <a href="#consultation" className="bg-white text-gray-900 px-8 py-4 rounded-lg font-semibold hover:shadow-lg transition inline-block">Consultation Rupture</a>
-        </div>
+        <VoyantFinalCTA topic="rupture" source="rupture-hub-final" />
       </div>
     </main>
   );

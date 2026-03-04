@@ -2,6 +2,9 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getArticleSchema, getFAQSchema, getBreadcrumbSchema } from '@/lib/schema';
 import EEATSignal from '@/components/EEATSignal';
+import VoyantQuickCTA from '@/components/VoyantQuickCTA';
+import VoyantRecommendations from '@/components/VoyantRecommendations';
+import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
 export const metadata: Metadata = {
   title: 'Compatibilit\u00e9 Amoureuse : \u00cates-vous Faits l\u2019Un pour l\u2019Autre ? | Voyance',
@@ -99,6 +102,8 @@ export default function CompatibiliteAmoureusePage() {
             </p>
           </div>
         </article>
+
+        <VoyantQuickCTA topic="sentiments" source="compatibilite-amoureuse-early" />
 
         {/* Section: Analyse de Compatibilit&eacute; par le Tarot */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
@@ -234,6 +239,8 @@ export default function CompatibiliteAmoureusePage() {
           </div>
         </section>
 
+        <VoyantRecommendations topic="sentiments" limit={3} showOnlineFirst={true} source="compatibilite-amoureuse-mid" />
+
         {/* Section: Les 7 Piliers de la Compatibilit&eacute; Amoureuse */}
         <section id="piliers" className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">🏛️ Les 7 Piliers de la Compatibilit&eacute; Amoureuse</h2>
@@ -366,15 +373,7 @@ export default function CompatibiliteAmoureusePage() {
         </div>
 
         {/* CTA Footer */}
-        <div id="consultation" className="bg-gradient-to-r from-pink-500 via-rose-500 to-red-500 text-white rounded-xl p-8 text-center">
-          <h2 className="text-3xl font-bold mb-4">💕 Analysez Votre Compatibilit&eacute; Amoureuse</h2>
-          <p className="text-lg mb-6 opacity-95">Consultation personnalis&eacute;e par le tarot et la synastrie astrologique</p>
-          <div className="flex gap-4 justify-center flex-wrap">
-            <a href="#consultation" className="bg-white text-rose-600 px-8 py-4 rounded-lg font-semibold hover:shadow-lg transition">Analyse de Compatibilit&eacute;</a>
-            <a href="#piliers" className="border-2 border-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-rose-600 transition">Tirage Synastrie Compl&egrave;te</a>
-          </div>
-          <p className="mt-6 text-sm opacity-90">✓ Synastrie d&eacute;taill&eacute;e &bull; ✓ Tarot 6 positions &bull; ✓ Guidance personnalis&eacute;e</p>
-        </div>
+        <VoyantFinalCTA topic="sentiments" source="compatibilite-amoureuse-final" />
       </div>
     </main>
   );

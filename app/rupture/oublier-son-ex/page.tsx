@@ -2,6 +2,9 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getArticleSchema, getFAQSchema, getBreadcrumbSchema } from '@/lib/schema';
 import EEATSignal from '@/components/EEATSignal';
+import VoyantQuickCTA from '@/components/VoyantQuickCTA';
+import VoyantRecommendations from '@/components/VoyantRecommendations';
+import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
 export const metadata: Metadata = {
   title: 'Oublier son Ex : Voyance pour Guérir et Tourner la Page | Tarot',
@@ -136,6 +139,8 @@ export default function OublierSonExPage() {
           </div>
         </article>
 
+        <VoyantQuickCTA topic="rupture" source="oublier-son-ex-early" />
+
         {/* Section 1: Phases de deuil */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">
@@ -236,6 +241,8 @@ export default function OublierSonExPage() {
             </div>
           </div>
         </section>
+
+        <VoyantRecommendations topic="rupture" limit={3} showOnlineFirst={true} source="oublier-son-ex-mid" />
 
         {/* Section 4: Signes de guérison */}
         <section className="bg-green-50 border-2 border-green-200 rounded-xl p-8 mb-8">
@@ -397,26 +404,7 @@ export default function OublierSonExPage() {
           </div>
         </div>
 
-        {/* Footer CTA */}
-        <div className="bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 text-white rounded-xl p-8 text-center">
-          <h2 className="text-3xl font-bold mb-4">
-            🌟 Prêt(e) à Tourner la Page ?
-          </h2>
-          <p className="text-lg mb-6 opacity-95">
-            Obtenez une guidance bienveillante pour guérir de votre rupture et préparer votre avenir amoureux
-          </p>
-          <div className="flex gap-4 justify-center flex-wrap">
-            <a href="#consultation" className="bg-white text-purple-600 px-8 py-4 rounded-lg font-semibold hover:shadow-lg transition">
-              Consultation Guérison & Fermeture
-            </a>
-            <a href="#tirage" className="border-2 border-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-purple-600 transition">
-              Tirage pour Tourner la Page
-            </a>
-          </div>
-          <p className="mt-6 text-sm opacity-90">
-            ✓ Voyants bienveillants • ✓ Paiement sécurisé • ✓ Confidentialité totale
-          </p>
-        </div>
+        <VoyantFinalCTA topic="rupture" source="oublier-son-ex-final" />
 
       </div>
     </main>

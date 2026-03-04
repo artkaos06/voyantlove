@@ -2,6 +2,9 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getArticleSchema, getFAQSchema, getBreadcrumbSchema } from '@/lib/schema';
 import EEATSignal from '@/components/EEATSignal';
+import VoyantQuickCTA from '@/components/VoyantQuickCTA';
+import VoyantRecommendations from '@/components/VoyantRecommendations';
+import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
 export const metadata: Metadata = {
   title: 'Gu\u00e9rir d\u2019une Rupture Amoureuse : \u00c9tapes, Dur\u00e9e et Reconstruction | VoyantLove',
@@ -99,6 +102,8 @@ export default function GuerirRupturePage() {
             </p>
           </div>
         </article>
+
+        <VoyantQuickCTA topic="rupture" source="guerir-rupture-early" />
 
         {/* Section: Les 5 &eacute;tapes du deuil amoureux */}
         <section id="etapes" className="bg-white rounded-xl shadow-md p-8 mb-8">
@@ -211,6 +216,8 @@ export default function GuerirRupturePage() {
             </div>
           </div>
         </section>
+
+        <VoyantRecommendations topic="rupture" limit={3} showOnlineFirst={true} source="guerir-rupture-mid" />
 
         {/* Section: Tarot et gu&eacute;rison */}
         <section className="bg-gradient-to-br from-emerald-50 to-teal-50 rounded-xl p-8 mb-8 border-2 border-emerald-200">
@@ -339,16 +346,7 @@ export default function GuerirRupturePage() {
           </div>
         </div>
 
-        {/* CTA Footer */}
-        <div id="consultation" className="bg-gradient-to-r from-teal-500 to-green-500 text-white rounded-xl p-8 text-center">
-          <h2 className="text-3xl font-bold mb-4">&#x1F33F; Acc&eacute;l&eacute;rez Votre Gu&eacute;rison Amoureuse</h2>
-          <p className="text-lg mb-6 opacity-95">Consultation de guidance post-rupture avec le tarot de gu&eacute;rison</p>
-          <div className="flex gap-4 justify-center flex-wrap">
-            <a href="#consultation" className="bg-white text-teal-600 px-8 py-4 rounded-lg font-semibold hover:shadow-lg transition">Guidance de Gu&eacute;rison</a>
-            <a href="#etapes" className="border-2 border-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-teal-600 transition">O&ugrave; en Suis-je ?</a>
-          </div>
-          <p className="mt-6 text-sm opacity-90">&#x2713; Diagnostic de votre &eacute;tape &bull; &#x2713; Identification des blocages &bull; &#x2713; Chemin vers le renouveau</p>
-        </div>
+        <VoyantFinalCTA topic="rupture" source="guerir-rupture-final" />
       </div>
     </main>
   );

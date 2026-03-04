@@ -2,6 +2,9 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getWebPageSchema, getBreadcrumbSchema, getOrganizationSchema, getFAQSchema } from '@/lib/schema';
 import EEATSignal from '@/components/EEATSignal';
+import VoyantQuickCTA from '@/components/VoyantQuickCTA';
+import VoyantRecommendations from '@/components/VoyantRecommendations';
+import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
 export const metadata: Metadata = {
   title: 'Méthodes de Voyance Amoureuse : Tarot, Oracle et Astrologie | VoyantLove',
@@ -60,6 +63,8 @@ export default function MethodesVoyanceHubPage() {
       <div className="max-w-6xl mx-auto px-4 py-12">
         <EEATSignal colorScheme="purple" method="Tarot, oracle et astrologie amoureuse" />
 
+        <VoyantQuickCTA topic="methodes-voyance" source="methodes-voyance-hub-early" />
+
         <section className="mb-16">
           <h2 className="text-3xl font-bold mb-8 text-center">🗺️ Nos Méthodes de Voyance</h2>
           <div className="grid md:grid-cols-3 gap-8">
@@ -85,6 +90,8 @@ export default function MethodesVoyanceHubPage() {
             </Link>
           </div>
         </section>
+
+        <VoyantRecommendations topic="methodes-voyance" limit={3} showOnlineFirst={true} source="methodes-voyance-hub-mid" />
 
         <section className="bg-white rounded-xl p-8 mb-12">
           <h2 className="text-3xl font-bold mb-6">🔮 Choisir la Bonne Méthode de Voyance</h2>
@@ -123,11 +130,7 @@ export default function MethodesVoyanceHubPage() {
           </div>
         </section>
 
-        <div className="bg-gradient-to-r from-indigo-600 to-violet-600 text-white rounded-xl p-8 text-center">
-          <h2 className="text-3xl font-bold mb-4">🔮 Consultation Voyance Amoureuse</h2>
-          <p className="text-lg mb-6 opacity-90">Choisissez votre méthode et découvrez ce que l&apos;avenir réserve à votre vie sentimentale</p>
-          <a href="#consultation" className="bg-white text-indigo-600 px-8 py-4 rounded-lg font-semibold hover:shadow-lg transition inline-block">Consultation Voyance</a>
-        </div>
+        <VoyantFinalCTA topic="methodes-voyance" source="methodes-voyance-hub-final" />
       </div>
     </main>
   );

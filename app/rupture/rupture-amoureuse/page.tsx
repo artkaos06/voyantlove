@@ -2,6 +2,9 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getArticleSchema, getFAQSchema, getBreadcrumbSchema } from '@/lib/schema';
 import EEATSignal from '@/components/EEATSignal';
+import VoyantQuickCTA from '@/components/VoyantQuickCTA';
+import VoyantRecommendations from '@/components/VoyantRecommendations';
+import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
 export const metadata: Metadata = {
   title: 'Rupture Amoureuse : Comprendre et Surmonter selon la Voyance',
@@ -90,6 +93,8 @@ export default function RuptureAmoureusePage() {
           <p className="text-lg leading-relaxed mb-4">Ce que la <strong>voyance</strong> apporte de unique face à une rupture, c'est la capacité de voir au-delà des apparences et des émotions brutes. Là où vos proches vous disent « le temps guérit tout » ou « tu mérites mieux », le tarot vous donne des réponses concrètes et personnalisées. Il révèle si cette personne était vraiment faite pour vous, si un <Link href="/reconquete/va-t-il-elle-revenir" className="text-gray-700 hover:text-gray-900 underline font-medium">retour de l'ex</Link> est envisageable et souhaitable, ou si votre destin amoureux vous réserve une rencontre bien plus alignée avec la personne que vous êtes en train de devenir. La clé est de ne pas rester dans l'entre-deux du doute mais d'avancer avec <strong>clarté et confiance</strong> vers votre reconstruction.</p>
         </article>
 
+        <VoyantQuickCTA topic="rupture" source="rupture-amoureuse-early" />
+
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6">🔍 Les Vraies Raisons</h2>
           <div className="space-y-4">
@@ -155,6 +160,8 @@ export default function RuptureAmoureusePage() {
           </div>
         </section>
 
+        <VoyantRecommendations topic="rupture" limit={3} showOnlineFirst={true} source="rupture-amoureuse-mid" />
+
         <section className="bg-gradient-to-br from-red-50 to-orange-50 rounded-xl p-8 mb-8 border-2 border-red-200">
           <h2 className="text-3xl font-bold mb-6 text-gray-900">🚫 Les Erreurs à Éviter Après une Rupture</h2>
           <p className="text-gray-700 mb-6">
@@ -211,15 +218,7 @@ export default function RuptureAmoureusePage() {
           </div>
         </div>
 
-        <div className="bg-gradient-to-r from-gray-700 via-gray-800 to-gray-900 text-white rounded-xl p-8 text-center">
-          <h2 className="text-3xl font-bold mb-4">🌟 Comprenez Votre Rupture</h2>
-          <p className="text-lg mb-6 opacity-95">Guidance pour comprendre et guérir avec clarté</p>
-          <div className="flex gap-4 justify-center flex-wrap">
-            <a href="#consultation" className="bg-white text-gray-800 px-8 py-4 rounded-lg font-semibold hover:shadow-lg transition">Comprendre</a>
-            <a href="#tirage" className="border-2 border-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-gray-800 transition">Guérison</a>
-          </div>
-          <p className="mt-6 text-sm opacity-90">✓ Clarté • ✓ Timing • ✓ Reconstruction</p>
-        </div>
+        <VoyantFinalCTA topic="rupture" source="rupture-amoureuse-final" />
       </div>
     </main>
   );

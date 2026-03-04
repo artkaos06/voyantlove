@@ -2,6 +2,9 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getWebPageSchema, getBreadcrumbSchema, getOrganizationSchema, getFAQSchema } from '@/lib/schema';
 import EEATSignal from '@/components/EEATSignal';
+import VoyantQuickCTA from '@/components/VoyantQuickCTA';
+import VoyantRecommendations from '@/components/VoyantRecommendations';
+import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
 export const metadata: Metadata = {
   title: 'Sentiments Amoureux : Décrypter Émotions et Avenir | Voyance',
@@ -60,6 +63,8 @@ export default function SentimentsHubPage() {
       <div className="max-w-6xl mx-auto px-4 py-12">
         <EEATSignal colorScheme="rose" method="Tarot des sentiments et clairvoyance émotionnelle" />
 
+        <VoyantQuickCTA topic="sentiments" source="sentiments-hub-early" />
+
         <section className="mb-16">
           <h2 className="text-3xl font-bold mb-8 text-center">🗺️ Comprendre vos Sentiments</h2>
           <div className="grid md:grid-cols-3 gap-8">
@@ -100,6 +105,8 @@ export default function SentimentsHubPage() {
           </div>
         </section>
 
+        <VoyantRecommendations topic="sentiments" limit={3} showOnlineFirst={true} source="sentiments-hub-mid" />
+
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-8">Questions Fréquentes sur les Sentiments Amoureux</h2>
           <div className="space-y-6">
@@ -122,11 +129,7 @@ export default function SentimentsHubPage() {
           </div>
         </section>
 
-        <div className="bg-gradient-to-r from-red-500 to-pink-500 text-white rounded-xl p-8 text-center">
-          <h2 className="text-3xl font-bold mb-4">💝 Décryptage Sentiments</h2>
-          <p className="text-lg mb-6">Consultation pour comprendre les vrais sentiments et l'avenir</p>
-          <a href="#consultation" className="bg-white text-red-600 px-8 py-4 rounded-lg font-semibold hover:shadow-lg transition inline-block">Consultation</a>
-        </div>
+        <VoyantFinalCTA topic="sentiments" source="sentiments-hub-final" />
       </div>
     </main>
   );

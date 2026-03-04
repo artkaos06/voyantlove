@@ -2,6 +2,9 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getWebPageSchema, getBreadcrumbSchema, getOrganizationSchema, getFAQSchema } from '@/lib/schema';
 import EEATSignal from '@/components/EEATSignal';
+import VoyantQuickCTA from '@/components/VoyantQuickCTA';
+import VoyantRecommendations from '@/components/VoyantRecommendations';
+import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
 export const metadata: Metadata = {
   title: 'Reconquête Amoureuse : Reconquérir son Ex | Voyance et Tarot',
@@ -60,6 +63,8 @@ export default function ReconqueteHubPage() {
       <div className="max-w-6xl mx-auto px-4 py-12">
         <EEATSignal colorScheme="purple" method="Tarot de reconquête et guidance stratégique" />
 
+        <VoyantQuickCTA topic="reconquete" source="reconquete-hub-early" />
+
         <section className="mb-16">
           <h2 className="text-3xl font-bold mb-8 text-center">🗺️ Votre Parcours de Reconquête</h2>
           <div className="grid md:grid-cols-3 gap-6">
@@ -96,6 +101,8 @@ export default function ReconqueteHubPage() {
           </div>
         </section>
 
+        <VoyantRecommendations topic="reconquete" limit={3} showOnlineFirst={true} source="reconquete-hub-mid" />
+
         <section className="bg-white rounded-xl p-8 mb-12">
           <h2 className="text-3xl font-bold mb-8">Questions Fréquentes sur la Reconquête Amoureuse</h2>
           <div className="space-y-6">
@@ -118,11 +125,7 @@ export default function ReconqueteHubPage() {
           </div>
         </section>
 
-        <div className="bg-gradient-to-r from-purple-600 to-indigo-600 text-white rounded-xl p-8 text-center">
-          <h2 className="text-3xl font-bold mb-4">💜 Consultation Reconquête</h2>
-          <p className="text-lg mb-6">Guidance personnalisée pour reconquérir votre ex avec sagesse</p>
-          <a href="#consultation" className="bg-white text-purple-600 px-8 py-4 rounded-lg font-semibold hover:shadow-lg transition inline-block">Réserver</a>
-        </div>
+        <VoyantFinalCTA topic="reconquete" source="reconquete-hub-final" />
       </div>
     </main>
   );

@@ -2,6 +2,9 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getArticleSchema, getFAQSchema, getBreadcrumbSchema } from '@/lib/schema';
 import EEATSignal from '@/components/EEATSignal';
+import VoyantQuickCTA from '@/components/VoyantQuickCTA';
+import VoyantRecommendations from '@/components/VoyantRecommendations';
+import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
 export const metadata: Metadata = {
   title: 'Reconquérir son Ex : Voyance et Tarot | Guidance Retour',
@@ -93,6 +96,8 @@ export default function ReconquerirSonExPage() {
           </p>
         </article>
 
+        <VoyantQuickCTA topic="reconquete" source="reconquerir-son-ex-early" />
+
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">🔮 Ce que le Tarot Révèle sur la Reconquête</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
@@ -135,6 +140,8 @@ export default function ReconquerirSonExPage() {
             </div>
           </div>
         </section>
+
+        <VoyantRecommendations topic="reconquete" limit={3} showOnlineFirst={true} source="reconquerir-son-ex-mid" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">✅ Les 5 Étapes de la Reconquête Réussie</h2>
@@ -237,12 +244,7 @@ export default function ReconquerirSonExPage() {
           </div>
         </div>
 
-        <div className="bg-gradient-to-r from-purple-600 via-purple-700 to-indigo-600 text-white rounded-xl p-8 text-center">
-          <h2 className="text-3xl font-bold mb-4">🔮 Consultation Reconquête Personnalisée</h2>
-          <p className="text-lg mb-6 opacity-95">Obtenez guidance tarot pour reconquérir votre ex avec sagesse</p>
-          <a href="#consultation" className="bg-white text-purple-600 px-8 py-4 rounded-lg font-semibold hover:shadow-lg transition inline-block">Réserver une Consultation</a>
-          <p className="mt-6 text-sm opacity-90">✓ Analyse situation • ✓ Timing idéal • ✓ Stratégie personnalisée</p>
-        </div>
+        <VoyantFinalCTA topic="reconquete" source="reconquerir-son-ex-final" />
       </div>
     </main>
   );

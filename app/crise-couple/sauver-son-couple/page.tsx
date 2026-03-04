@@ -2,6 +2,9 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getArticleSchema, getFAQSchema, getBreadcrumbSchema } from '@/lib/schema';
 import EEATSignal from '@/components/EEATSignal';
+import VoyantQuickCTA from '@/components/VoyantQuickCTA';
+import VoyantRecommendations from '@/components/VoyantRecommendations';
+import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
 export const metadata: Metadata = {
   title: 'Sauver son Couple : Solutions et Guidance Spirituelle | Voyance',
@@ -100,6 +103,8 @@ export default function SauverSonCouplePage() {
             Que votre couple traverse une tempête passagère ou une crise profonde, ce guide complet vous accompagne pas à pas. Pour comprendre l'ensemble des dynamiques en jeu, explorez nos <Link href="/crise-couple" className="text-green-600 hover:text-green-800 underline font-medium">guidances sur les crises de couple</Link> et découvrez comment chaque situation peut devenir une opportunité de renaissance.
           </p>
         </article>
+
+        <VoyantQuickCTA topic="crise-couple" source="sauver-son-couple-early" />
 
         <section id="diagnostic" className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-green-600">🔮 Votre Couple Peut-il Être Sauvé ? Le Diagnostic Tarot</h2>
@@ -288,6 +293,8 @@ export default function SauverSonCouplePage() {
           </div>
         </section>
 
+        <VoyantRecommendations topic="crise-couple" limit={3} showOnlineFirst={true} source="sauver-son-couple-mid" />
+
         <section className="bg-gradient-to-br from-red-50 to-orange-50 rounded-xl p-8 mb-8 border-2 border-red-200">
           <h2 className="text-3xl font-bold mb-6 text-gray-900">⚠️ Quand Sauver son Couple est Impossible — Reconnaître les Limites</h2>
           <p className="text-gray-700 mb-6">
@@ -415,15 +422,7 @@ export default function SauverSonCouplePage() {
           </div>
         </div>
 
-        <div className="bg-gradient-to-r from-green-600 via-emerald-600 to-teal-600 text-white rounded-xl p-8 text-center">
-          <h2 className="text-3xl font-bold mb-4">💚 Sauvez Votre Couple avec la Guidance du Tarot</h2>
-          <p className="text-lg mb-6 opacity-95">Diagnostic complet de votre relation et guidance personnalisée pour reconstruire votre amour</p>
-          <div className="flex gap-4 justify-center flex-wrap">
-            <a href="#consultation" className="bg-white text-green-600 px-8 py-4 rounded-lg font-semibold hover:shadow-lg transition">Consultation Couple</a>
-            <a href="#diagnostic" className="border-2 border-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-green-600 transition">Diagnostic Gratuit</a>
-          </div>
-          <p className="mt-6 text-sm opacity-90">✓ Diagnostic relationnel complet • ✓ 5 étapes de reconstruction • ✓ Guidance personnalisée</p>
-        </div>
+        <VoyantFinalCTA topic="crise-couple" source="sauver-son-couple-final" />
       </div>
     </main>
   );

@@ -2,6 +2,9 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getArticleSchema, getFAQSchema, getBreadcrumbSchema } from '@/lib/schema';
 import EEATSignal from '@/components/EEATSignal';
+import VoyantQuickCTA from '@/components/VoyantQuickCTA';
+import VoyantRecommendations from '@/components/VoyantRecommendations';
+import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
 export const metadata: Metadata = {
   title: 'Jalousie Excessive dans le Couple : Causes, Signes et Solutions Efficaces',
@@ -104,6 +107,8 @@ export default function JalousieExcessivePage() {
             Ce guide complet explore les <strong>causes profondes de la jalousie</strong>, les signes qui distinguent la jalousie normale de la jalousie toxique, et surtout les <strong>solutions concrètes</strong> pour soigner cette dynamique destructrice. Que vous soyez la personne jalouse cherchant à se libérer de cette souffrance, ou le partenaire épuisé cherchant à comprendre et protéger votre santé mentale, vous trouverez ici des clés essentielles. Pour comprendre d'autres <Link href="/crise-couple" className="text-red-600 hover:text-red-800 underline font-medium">crises de couple</Link>, explorez nos autres guidances spécialisées.
           </p>
         </article>
+
+        <VoyantQuickCTA topic="crise-couple" source="jalousie-excessive-early" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-red-600">🔍 Jalousie Normale vs Jalousie Excessive : Les Différences Cruciales</h2>
@@ -283,6 +288,8 @@ export default function JalousieExcessivePage() {
             </div>
           </div>
         </section>
+
+        <VoyantRecommendations topic="crise-couple" limit={3} showOnlineFirst={true} source="jalousie-excessive-mid" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-red-600">⚠️ Les 10 Signes d'une Jalousie Devenue Toxique</h2>
@@ -554,15 +561,7 @@ export default function JalousieExcessivePage() {
           </div>
         </div>
 
-        <div className="bg-gradient-to-r from-red-500 via-orange-500 to-amber-500 text-white rounded-xl p-8 text-center">
-          <h2 className="text-3xl font-bold mb-4">🔮 Besoin d'Aide pour Votre Couple ?</h2>
-          <p className="text-lg mb-6 opacity-95">Consultation personnalisée pour comprendre et résoudre la jalousie dans votre relation</p>
-          <div className="flex gap-4 justify-center flex-wrap">
-            <a href="#consultation" className="bg-white text-red-600 px-8 py-4 rounded-lg font-semibold hover:shadow-lg transition">Analyse de Votre Situation</a>
-            <a href="#guidance" className="border-2 border-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-red-600 transition">Solutions Personnalisées</a>
-          </div>
-          <p className="mt-6 text-sm opacity-90">✓ Écoute bienveillante • ✓ Conseils professionnels • ✓ Guidance pratique</p>
-        </div>
+        <VoyantFinalCTA topic="crise-couple" source="jalousie-excessive-final" />
       </div>
     </main>
   );

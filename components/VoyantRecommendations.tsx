@@ -6,7 +6,7 @@ import { Voyant, getVoyantsForTopic, getOnlineVoyants } from '@/lib/voyants';
 import voyants from '@/data/voyants.json';
 
 interface VoyantRecommendationsProps {
-  topic: 'reconquete' | 'rupture' | 'nouvelle-rencontre' | 'sentiments' | 'crise-couple';
+  topic: 'reconquete' | 'rupture' | 'nouvelle-rencontre' | 'sentiments' | 'crise-couple' | 'methodes-voyance';
   title?: string;
   subtitle?: string;
   limit?: number;
@@ -42,6 +42,7 @@ export default function VoyantRecommendations({
     'nouvelle-rencontre': '✨ Voyants Spécialisés Nouvelle Rencontre',
     sentiments: '💖 Voyants Experts en Sentiments Amoureux',
     'crise-couple': '⚠️ Voyants Spécialisés Crise de Couple',
+    'methodes-voyance': '🔮 Voyants Experts en Tarot et Oracle Amoureux',
   };
 
   const defaultSubtitles: Record<typeof topic, string> = {
@@ -50,6 +51,7 @@ export default function VoyantRecommendations({
     'nouvelle-rencontre': 'Découvrez quand et comment vous rencontrerez l\'amour',
     sentiments: 'Clarté sur les sentiments et l\'avenir de votre relation',
     'crise-couple': 'Solutions concrètes pour surmonter les crises et sauver votre couple',
+    'methodes-voyance': 'Maîtres du tarot, oracle et astrologie pour éclairer votre vie sentimentale',
   };
 
   return (
