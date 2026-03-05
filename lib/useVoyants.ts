@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import { Voyant } from './voyants';
 
-const API_URL = 'https://www.webangelis.fr/api_msvaff.php?key=NTc1V3V6OWJhNE5ySFJKektjTTNHNVhDbmlpdlVWZUd3Y2tIeXA3WHhXY3RXQk9JekxleEJMVlcwQVBhd01NOQ==&tpe=1&nbr=8';
+const API_URL = '/api/voyants';
 
 let cachedVoyants: Voyant[] | null = null;
 let fetchPromise: Promise<Voyant[]> | null = null;
