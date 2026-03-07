@@ -88,6 +88,20 @@ export default function MethodesVoyanceHubPage() {
               <p className="text-gray-600 mb-4">Analysez votre compatibilité astrale et les transits favorables à l&apos;amour.</p>
               <span className="text-violet-600 font-semibold">Découvrir →</span>
             </Link>
+
+            <Link href="/methodes-voyance/voyance-telephone-amour" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-blue-500">
+              <div className="text-4xl mb-4">📞</div>
+              <h3 className="text-2xl font-bold mb-3">Voyance par Téléphone</h3>
+              <p className="text-gray-600 mb-4">Consultez un voyant spécialisé amour par téléphone, 24h/24 en toute confidentialité.</p>
+              <span className="text-blue-600 font-semibold">Découvrir →</span>
+            </Link>
+
+            <Link href="/methodes-voyance/pendule-amour" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-rose-500">
+              <div className="text-4xl mb-4">🔮</div>
+              <h3 className="text-2xl font-bold mb-3">Pendule Amour</h3>
+              <p className="text-gray-600 mb-4">Réponses oui/non instantanées à vos questions sentimentales par le pendule.</p>
+              <span className="text-rose-600 font-semibold">Découvrir →</span>
+            </Link>
           </div>
         </section>
 

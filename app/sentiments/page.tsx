@@ -102,6 +102,13 @@ export default function SentimentsHubPage() {
               <p className="text-gray-600 mb-4">Savoir si l'autre pense à vous grâce à la voyance.</p>
               <span className="text-violet-600 font-semibold">Découvrir →</span>
             </Link>
+
+            <Link href="/sentiments/relation-toxique" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-orange-500">
+              <div className="text-4xl mb-4">⚠️</div>
+              <h3 className="text-2xl font-bold mb-3">Relation Toxique</h3>
+              <p className="text-gray-600 mb-4">Reconnaître les signes d'une relation toxique et se libérer.</p>
+              <span className="text-orange-600 font-semibold">Découvrir →</span>
+            </Link>
           </div>
         </section>
 

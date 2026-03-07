@@ -231,6 +231,37 @@
     <priority>0.7</priority>
   </url>
 
+  <url>
+    <loc>https://voyantlove.fr/methodes-voyance/voyance-telephone-amour</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://voyantlove.fr/methodes-voyance/pendule-amour</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- New Content Pages -->
+  <url>
+    <loc>https://voyantlove.fr/rupture/deuil-amoureux</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://voyantlove.fr/sentiments/relation-toxique</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://voyantlove.fr/nouvelle-rencontre/amour-apres-40-ans</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
   <!-- Legal Pages -->
   <url>
     <loc>https://voyantlove.fr/mentions-legales</loc>
