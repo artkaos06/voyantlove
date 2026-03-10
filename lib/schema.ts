@@ -146,16 +146,18 @@ interface BreadcrumbItem {
  * Generate BreadcrumbList schema for navigation
  */
 export function getBreadcrumbSchema(items: BreadcrumbItem[]): WithContext<BreadcrumbList> {
+  const pageUrl = items[items.length - 1].url;
   return {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
+    '@id': `${pageUrl}#breadcrumb`,
     itemListElement: items.map((item, index) => ({
       '@type': 'ListItem',
       position: index + 1,
       name: item.name,
       item: item.url,
     })),
-  };
+  } as WithContext<BreadcrumbList>;
 }
 
 interface WebPageSchemaProps {
