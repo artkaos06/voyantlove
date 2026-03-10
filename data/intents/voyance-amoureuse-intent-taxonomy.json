@@ -365,6 +365,54 @@
     }
   ],
   
+    {
+      "id": "free-reading",
+      "name": "Voyance Gratuite Amour / Tirage Découverte",
+      "priority": "high",
+      "searchVolume": "very-high",
+      "emotionalIntensity": "medium",
+      "description": "L'utilisateur cherche une consultation ou un tirage gratuit pour découvrir la voyance amoureuse",
+      "userGoals": [
+        "Obtenir un premier aperçu de sa situation amoureuse gratuitement",
+        "Tester la fiabilité de la voyance avant de s'engager",
+        "Recevoir une réponse rapide à une question sentimentale",
+        "Comparer différentes méthodes (tarot, oracle, horoscope)",
+        "Découvrir la voyance par tchat ou en ligne"
+      ],
+      "queryPatterns": [
+        "voyance gratuite amour",
+        "tarot amour gratuit",
+        "tarot oui non amour gratuit",
+        "oracle gratuit amour",
+        "horoscope amour 2026",
+        "voyance tchat gratuit amour",
+        "tirage gratuit amour célibataire",
+        "tarot gratuit en ligne amour"
+      ],
+      "serpFeatures": [
+        "Featured Snippet",
+        "People Also Ask",
+        "Related searches",
+        "Video results"
+      ],
+      "contentRequirements": {
+        "wordCount": "400-600",
+        "mustInclude": [
+          "Explication des offres gratuites disponibles",
+          "Différence entre gratuit et payant en voyance",
+          "Comment préparer sa question pour un tirage gratuit",
+          "Limites du gratuit et quand passer au personnalisé",
+          "Méthodes disponibles gratuitement (tarot, oracle, horoscope)",
+          "Conseils pour identifier un voyant sérieux"
+        ],
+        "structuredData": ["Article", "FAQPage"]
+      },
+      "conversionGoal": "Discovery to paid consultation",
+      "competitorApproach": "Auto-generated tarot pulls with no human guidance",
+      "emotionalTone": "Welcoming, informative, reassuring"
+    }
+  ],
+
   "intentCombinations": [
     {
       "primary": "get-ex-back",

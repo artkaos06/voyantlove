@@ -341,6 +341,92 @@
     }
   ],
   
+    {
+      "from": "voyance-gratuite-amour",
+      "to": "voyance-amoureuse",
+      "type": "free_version_of",
+      "strength": 0.9,
+      "description": "La voyance gratuite amour est une version découverte de la voyance amoureuse"
+    },
+    {
+      "from": "voyance-gratuite-amour",
+      "to": "tarot-gratuit-amour",
+      "type": "primary_method",
+      "strength": 1.0,
+      "description": "Le tarot gratuit est la méthode principale de voyance gratuite amour"
+    },
+    {
+      "from": "voyance-gratuite-amour",
+      "to": "oracle-gratuit-amour",
+      "type": "method",
+      "strength": 0.8,
+      "description": "L'oracle gratuit est une méthode de voyance gratuite amour"
+    },
+    {
+      "from": "voyance-gratuite-amour",
+      "to": "horoscope-amour",
+      "type": "method",
+      "strength": 0.7,
+      "description": "L'horoscope amour est une méthode gratuite de voyance sentimentale"
+    },
+    {
+      "from": "voyance-gratuite-amour",
+      "to": "voyance-tchat-amour",
+      "type": "channel",
+      "strength": 0.8,
+      "description": "Le tchat est un canal de voyance gratuite amour"
+    },
+    {
+      "from": "tarot-gratuit-amour",
+      "to": "tarot-amour",
+      "type": "free_version_of",
+      "strength": 1.0,
+      "description": "Le tarot gratuit amour est la version découverte du tarot amoureux"
+    },
+    {
+      "from": "tarot-gratuit-amour",
+      "to": "tirage-amour",
+      "type": "uses",
+      "strength": 0.9,
+      "description": "Le tarot gratuit amour utilise le tirage amoureux"
+    },
+    {
+      "from": "tarot-oui-non-amour",
+      "to": "tarot-gratuit-amour",
+      "type": "variant_of",
+      "strength": 0.8,
+      "description": "Le tarot oui non est une variante simplifiée du tarot amour gratuit"
+    },
+    {
+      "from": "oracle-gratuit-amour",
+      "to": "oracle-amour",
+      "type": "free_version_of",
+      "strength": 1.0,
+      "description": "L'oracle gratuit amour est la version découverte de l'oracle de l'amour"
+    },
+    {
+      "from": "horoscope-amour",
+      "to": "astrologie-amoureuse",
+      "type": "simplified_version_of",
+      "strength": 0.8,
+      "description": "L'horoscope amour est une version simplifiée de l'astrologie amoureuse"
+    },
+    {
+      "from": "tirage-celibataire",
+      "to": "nouvelle-rencontre",
+      "type": "targets",
+      "strength": 0.9,
+      "description": "Le tirage célibataire cible les personnes en quête de nouvelle rencontre"
+    },
+    {
+      "from": "tirage-celibataire",
+      "to": "tarot-gratuit-amour",
+      "type": "variant_of",
+      "strength": 0.7,
+      "description": "Le tirage célibataire est une variante du tarot amour gratuit"
+    }
+  ],
+
   "semanticClusters": [
     {
       "id": "breakup-reconciliation",
@@ -389,6 +475,14 @@
       "description": "Cluster des pratiques divinatoires",
       "emotionalIntensity": "low",
       "linkingStrategy": "Pages méthodes doivent lier vers situations applicables"
+    },
+    {
+      "id": "free-discovery",
+      "name": "Voyance Gratuite et Découverte",
+      "coreEntities": ["voyance-gratuite-amour", "tarot-gratuit-amour", "tarot-oui-non-amour", "oracle-gratuit-amour", "horoscope-amour", "voyance-tchat-amour", "tirage-celibataire"],
+      "description": "Cluster des offres gratuites et découverte de la voyance amoureuse",
+      "emotionalIntensity": "medium",
+      "linkingStrategy": "Pages gratuites doivent lier vers les méthodes complètes et les situations applicables"
     }
   ],
   

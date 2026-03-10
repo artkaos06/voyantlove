@@ -5,7 +5,7 @@ import VoyantCard from './VoyantCard';
 import { useVoyants } from '@/lib/useVoyants';
 
 interface VoyantRecommendationsProps {
-  topic: 'reconquete' | 'rupture' | 'nouvelle-rencontre' | 'sentiments' | 'crise-couple' | 'methodes-voyance';
+  topic: 'reconquete' | 'rupture' | 'nouvelle-rencontre' | 'sentiments' | 'crise-couple' | 'methodes-voyance' | 'voyance-gratuite';
   title?: string;
   subtitle?: string;
   limit?: number;
@@ -34,6 +34,7 @@ export default function VoyantRecommendations({
     sentiments: '💖 Voyants Experts en Sentiments Amoureux',
     'crise-couple': '⚠️ Voyants Spécialisés Crise de Couple',
     'methodes-voyance': '🔮 Voyants Experts en Tarot et Oracle Amoureux',
+    'voyance-gratuite': '🌟 Voyants avec Offre Découverte Gratuite',
   };
 
   const defaultSubtitles: Record<string, string> = {
@@ -43,6 +44,7 @@ export default function VoyantRecommendations({
     sentiments: 'Clarté sur les sentiments et l\'avenir de votre relation',
     'crise-couple': 'Solutions concrètes pour surmonter les crises et sauver votre couple',
     'methodes-voyance': 'Maîtres du tarot, oracle et astrologie pour éclairer votre vie sentimentale',
+    'voyance-gratuite': 'Consultez un voyant spécialisé en amour — premières minutes offertes',
   };
 
   return (

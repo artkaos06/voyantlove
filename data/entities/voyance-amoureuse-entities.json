@@ -343,6 +343,72 @@
         "importance": "medium"
       }
     ],
+
+    "freeDiscovery": [
+      {
+        "id": "voyance-gratuite-amour",
+        "term": "voyance gratuite amour",
+        "definition": "Consultation de voyance amoureuse sans frais pour découvrir le service",
+        "synonyms": ["voyance amoureuse gratuite", "consultation amour gratuite", "voyance sentimentale gratuite"],
+        "relatedTerms": ["premières minutes offertes", "offre découverte", "essai gratuit voyance"],
+        "searchVolume": "very-high",
+        "importance": "critical"
+      },
+      {
+        "id": "tarot-gratuit-amour",
+        "term": "tarot amour gratuit",
+        "definition": "Tirage de tarot amoureux offert en introduction à la voyance",
+        "synonyms": ["tarot gratuit amour", "tirage tarot gratuit amour", "tarot sentimental gratuit"],
+        "relatedTerms": ["tirage découverte", "tarot en ligne gratuit", "arcanes amour"],
+        "searchVolume": "very-high",
+        "importance": "critical"
+      },
+      {
+        "id": "tarot-oui-non-amour",
+        "term": "tarot oui non amour",
+        "definition": "Tirage simplifié à réponse binaire pour les questions sentimentales",
+        "synonyms": ["tarot oui non gratuit amour", "voyance oui non amour", "tirage oui non sentimental"],
+        "relatedTerms": ["réponse directe", "question fermée", "tirage rapide"],
+        "searchVolume": "high",
+        "importance": "high"
+      },
+      {
+        "id": "oracle-gratuit-amour",
+        "term": "oracle gratuit amour",
+        "definition": "Tirage d'oracle dédié aux questions amoureuses sans engagement financier",
+        "synonyms": ["oracle amour gratuit", "oracle belline amour gratuit", "oracle des anges amour"],
+        "relatedTerms": ["oracle gé", "oracle belline", "guidance gratuite"],
+        "searchVolume": "high",
+        "importance": "high"
+      },
+      {
+        "id": "horoscope-amour",
+        "term": "horoscope amour",
+        "definition": "Prédictions astrologiques sentimentales par signe du zodiaque",
+        "synonyms": ["horoscope amoureux", "horoscope sentimental", "prédictions amoureuses"],
+        "relatedTerms": ["signe astrologique", "compatibilité zodiacale", "transits planétaires"],
+        "searchVolume": "very-high",
+        "importance": "high"
+      },
+      {
+        "id": "voyance-tchat-amour",
+        "term": "voyance tchat amour",
+        "definition": "Consultation sentimentale par messagerie instantanée avec un voyant",
+        "synonyms": ["voyance par tchat amour", "voyance tchat gratuit amour", "voyance chat amour"],
+        "relatedTerms": ["consultation en ligne", "voyance immédiate", "tchat voyant"],
+        "searchVolume": "high",
+        "importance": "high"
+      },
+      {
+        "id": "tirage-celibataire",
+        "term": "tirage amour célibataire",
+        "definition": "Tirage de cartes spécifique pour personnes seules cherchant l'amour",
+        "synonyms": ["tarot célibataire gratuit", "tirage gratuit célibataire", "voyance célibataire"],
+        "relatedTerms": ["rencontre future", "quand trouver l'amour", "blocage amoureux"],
+        "searchVolume": "high",
+        "importance": "high"
+      }
+    ],
     
     "specificQuestions": [
       {

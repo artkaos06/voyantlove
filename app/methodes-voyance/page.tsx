@@ -166,6 +166,10 @@ export default function MethodesVoyanceHubPage() {
               <h3 className="font-bold text-gray-900 mb-1">Nouvelle Rencontre</h3>
               <p className="text-sm text-gray-600">Prédictions et guidance pour trouver votre prochaine relation.</p>
             </Link>
+            <Link href="/voyance-gratuite-amour" className="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition">
+              <h3 className="font-bold text-gray-900 mb-1">Voyance Gratuite Amour</h3>
+              <p className="text-sm text-gray-600">Tirages gratuits et premières minutes offertes pour découvrir la voyance.</p>
+            </Link>
           </div>
         </section>
 

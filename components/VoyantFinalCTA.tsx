@@ -6,7 +6,7 @@ import { trackAffiliateClick } from '@/lib/glyphex';
 import { useVoyants } from '@/lib/useVoyants';
 
 interface VoyantFinalCTAProps {
-  topic: 'reconquete' | 'rupture' | 'nouvelle-rencontre' | 'sentiments' | 'crise-couple' | 'methodes-voyance';
+  topic: 'reconquete' | 'rupture' | 'nouvelle-rencontre' | 'sentiments' | 'crise-couple' | 'methodes-voyance' | 'voyance-gratuite';
   source?: string;
   headline?: string;
   subheadline?: string;
@@ -36,6 +36,7 @@ export default function VoyantFinalCTA({
     sentiments: 'from-pink-600 via-rose-600 to-purple-600',
     'crise-couple': 'from-amber-600 via-orange-600 to-red-600',
     'methodes-voyance': 'from-indigo-600 via-violet-600 to-purple-600',
+    'voyance-gratuite': 'from-green-600 via-emerald-600 to-teal-600',
   };
 
   const defaultHeadlines: Record<string, string> = {
@@ -45,6 +46,7 @@ export default function VoyantFinalCTA({
     sentiments: 'Clarifiez Ses Vrais Sentiments',
     'crise-couple': 'Sauvez Votre Couple Maintenant',
     'methodes-voyance': 'Consultez un Expert du Tarot',
+    'voyance-gratuite': 'Essayez une Consultation Gratuite',
   };
 
   const defaultSubheadlines: Record<string, string> = {
@@ -54,6 +56,7 @@ export default function VoyantFinalCTA({
     sentiments: 'Nos voyants lisent les sentiments cachés et révèlent la vérité',
     'crise-couple': 'Nos voyants identifient les solutions pour retrouver l\'harmonie',
     'methodes-voyance': 'Nos experts du tarot et de l\'oracle éclairent votre vie sentimentale',
+    'voyance-gratuite': 'Découvrez la voyance amoureuse sans engagement — premières minutes offertes',
   };
 
   const buttonColors: Record<string, string> = {
@@ -63,6 +66,7 @@ export default function VoyantFinalCTA({
     sentiments: 'text-rose-600',
     'crise-couple': 'text-orange-600',
     'methodes-voyance': 'text-violet-600',
+    'voyance-gratuite': 'text-emerald-600',
   };
 
   return (

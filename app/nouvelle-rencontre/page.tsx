@@ -157,6 +157,10 @@ export default function NouvelleRencontreHubPage() {
               <h3 className="font-bold text-gray-900 mb-1">Méthodes de Voyance</h3>
               <p className="text-sm text-gray-600">Tarot, oracle et astrologie pour guider votre quête amoureuse.</p>
             </Link>
+            <Link href="/voyance-gratuite-amour" className="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition">
+              <h3 className="font-bold text-gray-900 mb-1">Voyance Gratuite Amour</h3>
+              <p className="text-sm text-gray-600">Essayez un tirage amour gratuit pour éclairer votre nouvelle rencontre.</p>
+            </Link>
           </div>
         </section>
 

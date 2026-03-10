@@ -639,6 +639,84 @@
         "secondary": "Prévisions 12 Mois",
         "tertiary": "Analyse Destinée Karmique"
       }
+    },
+
+    "free-reading": {
+      "id": "voyance-gratuite-amour",
+      "heading": "Voyance Gratuite Amour : Tirages et Guidance Sentimentale",
+      "metaTitle": "Voyance Gratuite Amour : Tirages et Guidance Sentimentale",
+      "metaDescription": "Voyance amoureuse gratuite : tarot, oracle et horoscope pour éclairer votre vie sentimentale. Guidance fiable sans engagement.",
+      "emotionalTone": "welcoming-informative-reassuring",
+      "emotionalIntensity": "medium",
+
+      "answerCapsule": {
+        "wordCount": "155-165",
+        "entities": 7,
+        "template": "La **voyance gratuite amour** offre une première approche de la **guidance sentimentale** sans engagement financier. Le **tarot amour gratuit**, l'**oracle** et l'**horoscope amoureux** sont les trois méthodes les plus accessibles pour obtenir un éclairage sur votre **vie sentimentale** sans risque. Ces outils révèlent les grandes tendances de votre situation amoureuse et vous aident à formuler les bonnes questions.\n\nLes offres de **voyance amoureuse gratuite** comprennent les premières minutes de consultation offertes, les tirages en ligne automatisés et les prédictions horoscopiques personnalisées. Chaque méthode a ses forces et ses limites que vous devez connaître pour en tirer le meilleur parti.\n\nPour une **consultation sentimentale** véritablement personnalisée, le passage au **voyant spécialisé amour** permet une lecture approfondie de votre situation unique. La **voyance gratuite** est le tremplin idéal pour découvrir la **guidance amoureuse** et préparer vos questions avant une consultation complète."
+      },
+
+      "sections": [
+        {
+          "h3": "🃏 Tarot Amour Gratuit : Le Plus Populaire",
+          "content": "Le tarot gratuit est la porte d'entrée la plus populaire de la voyance amoureuse. Les tirages en ligne offrent une première lecture des arcanes majeurs et mineurs appliqués à votre situation sentimentale. L'Amoureux, le Deux de Coupe, la Roue de Fortune — chaque carte révèle un aspect de votre vie amoureuse. La clé est de bien formuler votre question avant le tirage pour obtenir une guidance pertinente.",
+          "wordCount": "80-100"
+        },
+        {
+          "h3": "✨ Oracle et Horoscope : Alternatives Accessibles",
+          "content": "L'oracle amour gratuit délivre des messages intuitifs directs, plus accessibles que le tarot pour les néophytes. L'Oracle Belline est spécialisé dans les prédictions amoureuses, l'Oracle des Anges dans la guérison sentimentale. L'horoscope amour offre des prédictions gratuites par signe du zodiaque, idéal pour un aperçu général de votre période sentimentale. Combinés, ces outils couvrent un large spectre de questions amoureuses.",
+          "wordCount": "80-100"
+        },
+        {
+          "h3": "💬 Voyance par Tchat : Gratuit et Immédiat",
+          "content": "Le tchat est le canal le plus accessible pour une première consultation gratuite. Les premières minutes offertes vous permettent de poser une question précise et d'évaluer la connexion avec le voyant. L'avantage : l'anonymat total, la possibilité de relire les réponses, et aucune pression. Le tchat est idéal pour tester la voyance amoureuse sans engagement vocal ou financier.",
+          "wordCount": "75-95"
+        },
+        {
+          "h3": "⚠️ Gratuit vs Payant : Ce Que Vous Devez Savoir",
+          "content": "Le tirage gratuit en ligne offre une lecture générale mais ne peut pas analyser votre situation unique en profondeur. La consultation personnalisée avec un voyant apporte la connexion humaine, l'interprétation contextuelle et les conseils adaptés à votre cas. Le gratuit est excellent pour découvrir, le payant pour obtenir des réponses précises et une guidance sur mesure. Le passage du gratuit au personnalisé se fait naturellement quand vos questions deviennent plus spécifiques.",
+          "wordCount": "80-100"
+        },
+        {
+          "h3": "🎯 Préparer Votre Question pour un Tirage Efficace",
+          "content": "La qualité de votre tirage gratuit dépend de la qualité de votre question. Évitez les questions fermées (oui/non) et privilégiez les questions ouvertes : 'Que dois-je comprendre de ma situation avec X ?' plutôt que 'Va-t-il revenir ?'. Concentrez-vous sur ce que VOUS pouvez influencer. Un tirage bien préparé, même gratuit, peut révéler des insights puissants sur votre chemin sentimental.",
+          "wordCount": "80-100"
+        }
+      ],
+
+      "faqs": [
+        {
+          "question": "La voyance gratuite amour est-elle fiable ?",
+          "answer": "Les tirages gratuits en ligne utilisent un algorithme aléatoire qui simule le tirage des cartes — la symbolique reste authentique et peut offrir des pistes de réflexion pertinentes. Cependant, un tirage personnalisé par un voyant expérimenté sera toujours plus précis car il intègre votre énergie, votre situation unique et une interprétation contextuelle. Le gratuit est fiable comme introduction, le personnalisé apporte la profondeur.",
+          "entities": ["voyance gratuite", "fiable", "tirage", "voyant", "énergie", "personnalisé"]
+        },
+        {
+          "question": "Combien de minutes gratuites sont offertes en consultation ?",
+          "answer": "Les offres découverte proposent généralement entre 3 et 10 minutes gratuites selon la plateforme et le voyant. Ces minutes suffisent pour poser une question ciblée et évaluer la connexion avec le praticien. Préparez votre question à l'avance pour optimiser ces premières minutes offertes. Si le voyant vous semble juste et bienveillant, vous pouvez poursuivre la consultation à votre rythme.",
+          "entities": ["minutes gratuites", "consultation", "offre découverte", "voyant", "question", "plateforme"]
+        },
+        {
+          "question": "Quel est le meilleur tirage gratuit pour l'amour ?",
+          "answer": "Le tirage en croix (5 cartes) est le plus complet pour une question amoureuse générale. Le tirage oui/non (3 cartes) répond aux questions directes comme 'M'aime-t-il ?'. L'oracle est préférable si vous cherchez un message intuitif plutôt qu'une analyse structurée. Choisissez selon votre question : le tarot pour comprendre, l'oracle pour ressentir, l'horoscope pour anticiper.",
+          "entities": ["tirage gratuit", "amour", "tarot", "oracle", "horoscope", "question"]
+        },
+        {
+          "question": "Comment passer du gratuit à une consultation personnalisée ?",
+          "answer": "Le passage se fait naturellement quand vos questions deviennent plus spécifiques ou que vous souhaitez approfondir un tirage. Choisissez un voyant dont le profil correspond à votre problématique sentimentale. Les premières minutes offertes vous permettent de tester la connexion. Une consultation personnalisée de 20 minutes suffit généralement pour obtenir des réponses claires et une guidance adaptée.",
+          "entities": ["gratuit", "consultation", "voyant", "personnalisée", "guidance", "premières minutes"]
+        }
+      ],
+
+      "internalLinks": [
+        { "anchor": "tirage de tarot amoureux", "target": "methodes-voyance/tirage-tarot-amour" },
+        { "anchor": "oracle de l'amour", "target": "methodes-voyance/oracle-amour" },
+        { "anchor": "décrypter ses sentiments", "target": "sentiments/maime-t-il-elle" }
+      ],
+
+      "cta": {
+        "primary": "Essayez une Consultation Gratuite",
+        "secondary": "Tirage Tarot Amour Gratuit",
+        "tertiary": "Oracle Amour Découverte"
+      }
     }
   }
 }

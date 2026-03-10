@@ -2,10 +2,10 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Mentions Légales | VoyantLove.fr',
+  title: 'Mentions Légales',
   description: 'Mentions légales du site VoyantLove.fr - Voyance amoureuse spécialisée.',
   robots: { index: false, follow: true },
-  alternates: { canonical: 'https://voyantlove.fr/mentions-legales' },
+  alternates: { canonical: 'https://voyantlove.fr/mentions-legales/' },
 };
 
 export default function MentionsLegalesPage() {
