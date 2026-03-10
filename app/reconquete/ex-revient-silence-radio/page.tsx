@@ -107,7 +107,7 @@ export default function ExRevientSilenceRadioPage() {
             Le <strong>silence radio</strong> est l'une des stratégies les plus efficaces en <strong>reconquête amoureuse</strong>, avec un taux de succès élevé lorsqu'il est correctement appliqué. Mais que se passe-t-il quand votre <strong>ex revient après un silence radio</strong> ? Comment interpréter ce retour, reconnaître ses véritables intentions, et surtout, comment réagir pour ne pas tout gâcher en quelques minutes d'émotion incontrôlée ?
           </p>
           <p className="text-lg leading-relaxed mb-4">
-            Après des semaines sans contact, recevoir un message de votre ex peut déclencher un tsunami émotionnel : joie, espoir, confusion, méfiance. Votre réaction dans les premières 24-48 heures déterminera l'issue de cette <strong>tentative de réconciliation</strong>. Trop d'empressement tue l'attraction retrouvée, trop de froideur peut rebuter définitivement votre ex.
+            Après des semaines sans contact, recevoir un message de votre ex peut déclencher un tsunami émotionnel : joie, espoir, confusion, méfiance. Avant de céder à la panique, posez-vous la question essentielle : <Link href="/reconquete/va-t-il-elle-revenir" className="text-purple-600 hover:text-purple-800 underline font-medium">va-t-il vraiment revenir</Link> ou s'agit-il d'un simple test ? Votre réaction dans les premières 24-48 heures déterminera l'issue de cette <strong>tentative de réconciliation</strong>. Trop d'empressement tue l'attraction retrouvée, trop de froideur peut rebuter définitivement votre ex.
           </p>
           <p className="text-lg leading-relaxed">
             Ce guide complet analyse les <strong>signes précurseurs du retour</strong>, les vraies raisons psychologiques qui poussent un ex à revenir, et la stratégie exacte pour gérer cette situation délicate. Pour comprendre les mécaniques complètes de la <Link href="/reconquete" className="text-purple-600 hover:text-purple-800 underline font-medium">reconquête amoureuse</Link>, explorez toutes nos méthodes éprouvées.
@@ -147,7 +147,7 @@ export default function ExRevientSilenceRadioPage() {
             <div className="bg-pink-50 border-l-4 border-pink-500 p-6 rounded-lg">
               <h3 className="font-bold text-lg mb-3 text-pink-700">3. Questions Indirectes via l'Entourage</h3>
               <p className="text-gray-700 mb-3">
-                Des amis communs vous rapportent que votre ex a posé des questions sur vous : "Comment va [prénom] ?", "Il/elle voit quelqu'un ?", "Il/elle parle encore de moi ?". Cette <strong>enquête sociale</strong> indique que vous occupez toujours ses pensées et qu'il/elle prépare mentalement un éventuel retour.
+                Des amis communs vous rapportent que votre ex a posé des questions sur vous : "Comment va [prénom] ?", "Il/elle voit quelqu'un ?", "Il/elle parle encore de moi ?". Cette <strong>enquête sociale</strong> indique que vous occupez toujours ses pensées et qu'il/elle prépare mentalement un éventuel retour. Si vous aussi vous vous demandez « <Link href="/sentiments/pense-t-il-elle-a-moi" className="text-purple-600 hover:text-purple-800 underline font-medium">pense-t-il à moi</Link> ? », ces questions indirectes sont une réponse éloquente.
               </p>
               <p className="text-gray-700 font-semibold">
                 Attention : Ne faites jamais passer de messages via ces intermédiaires. Toute communication doit être directe.
@@ -267,7 +267,7 @@ export default function ExRevientSilenceRadioPage() {
             <div className="bg-white rounded-lg p-5 border-l-4 border-yellow-500">
               <h3 className="font-bold mb-2 text-yellow-700 text-lg">6. La Prise de Conscience et la Maturité Émotionnelle</h3>
               <p className="text-gray-700 mb-3">
-                Le <strong>silence radio</strong> offre aussi à votre ex un temps de réflexion. Sans l'intensité émotionnelle de la rupture immédiate, il/elle peut analyser objectivement ce qui s'est passé, reconnaître ses torts, et réaliser l'importance de votre relation. Ce retour mature est le plus prometteur pour une <strong>réconciliation durable</strong>.
+                Le <strong>silence radio</strong> offre aussi à votre ex un temps de réflexion. Sans l'intensité émotionnelle de la rupture immédiate, il/elle peut analyser objectivement ce qui s'est passé, reconnaître ses torts, et réaliser l'importance de votre relation. Ce retour mature est le plus prometteur pour une <strong>réconciliation durable</strong>, et notre guide sur l'<Link href="/reconquete/ex-qui-revient" className="text-purple-600 hover:text-purple-800 underline font-medium">ex qui revient</Link> vous aide à évaluer la sincérité de cette démarche.
               </p>
               <p className="text-gray-700 font-semibold">
                 Signes positifs : Excuses sincères, analyse de ses erreurs, volonté de changer concrètement, patience dans la reconquête.

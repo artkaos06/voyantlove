@@ -101,7 +101,7 @@ export default function MAimeTilEllePage() {
               Le <strong>tirage des sentiments</strong> explore plusieurs niveaux : l'attraction physique, l'attachement émotionnel, l'amour profond, et l'engagement futur. Il révèle aussi les peurs et blocages qui empêchent l'autre d'exprimer ses sentiments ouvertement. Parfois, la personne vous aime mais ne peut ou ne veut pas s'engager pour des raisons complexes que le tarot éclaire. Pour en savoir plus sur les <Link href="/sentiments" className="text-red-600 hover:text-red-800 underline font-medium">sentiments amoureux</Link>, découvrez toutes nos guidances spécialisées.
             </p>
             <p className="text-lg leading-relaxed">
-              La différence cruciale entre <strong>amour véritable</strong> et simple attachement, entre passion et amitié, entre amour et habitude - le tarot fait cette distinction précise. Un voyant honnête vous dira si cette personne vous aime authentiquement ou si vous vous accrochez à une illusion.
+              La différence cruciale entre <strong>amour véritable</strong> et simple attachement, entre passion et amitié, entre amour et habitude - le tarot fait cette distinction précise. Un <Link href="/methodes-voyance/tirage-tarot-amour" className="text-red-600 hover:text-red-800 underline font-medium">tirage de tarot amoureux</Link> honnête vous dira si cette personne vous aime authentiquement ou si vous vous accrochez à une illusion.
             </p>
           </div>
         </article>
@@ -111,7 +111,7 @@ export default function MAimeTilEllePage() {
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">💖 Les Signes d'Amour Véritable selon le Tarot</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Les arcanes L'Amoureux, le Deux de Coupe et Le Soleil confirment un amour authentique dans le tarot. A l'inverse, Le Diable et le Sept d'Epee signalent un attachement toxique ou une manipulation emotionnelle.</p>
-          <p className="text-gray-700 leading-relaxed mb-6">Le tarot utilise des cartes spécifiques pour révéler la nature authentique des sentiments.</p>
+          <p className="text-gray-700 leading-relaxed mb-6">Le tarot utilise des cartes spécifiques pour révéler la nature authentique des sentiments. Apprenez aussi à repérer les <Link href="/sentiments/signes-il-elle-maime" className="text-red-600 hover:text-red-800 underline font-medium">signes qu'il/elle vous aime</Link> dans son comportement quotidien.</p>
           <div className="grid md:grid-cols-2 gap-6 mb-6">
             <div className="bg-green-50 border-2 border-green-300 rounded-lg p-6">
               <h3 className="font-bold text-lg mb-3 text-green-700">✅ Cartes d'Amour Authentique</h3>
@@ -205,7 +205,7 @@ export default function MAimeTilEllePage() {
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">💭 Pense-t-il/elle à Vous ?</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le Cavalier de Coupe, La Lune et L'Hermite dans le tarot indiquent que la personne pense a vous frequemment. Le tirage revele la nature de ces pensees : nostalgiques, desirantes ou conflictuelles.</p>
-          <p className="text-gray-700 leading-relaxed mb-6">Le tarot répond aussi à cette question intimement liée aux sentiments.</p>
+          <p className="text-gray-700 leading-relaxed mb-6">Le tarot répond aussi à cette question intimement liée aux sentiments. Notre guidance complète sur <Link href="/sentiments/pense-t-il-elle-a-moi" className="text-red-600 hover:text-red-800 underline font-medium">pense-t-il/elle à moi</Link> approfondit ce sujet.</p>
           <div className="bg-green-50 border-2 border-green-300 rounded-lg p-6 mb-6">
             <h3 className="font-bold text-lg mb-3 text-green-700">✅ Signes qu'il/elle Pense à Vous</h3>
             <p className="text-gray-700 mb-4">Les cartes <strong>Cavalier de Coupe</strong>, <strong>La Lune</strong>, et <strong>Le Hermite</strong> indiquent une présence mentale forte. Voici comment cela se manifeste :</p>
@@ -250,7 +250,7 @@ export default function MAimeTilEllePage() {
               <ul className="space-y-2 text-gray-700">
                 <li>✗ <strong>Acceptez cette vérité</strong> difficile mais libératrice</li>
                 <li>✗ <strong>Ne perdez pas votre temps</strong> à attendre un amour qui n'existe pas</li>
-                <li>✗ <strong>Ouvrez-vous</strong> à quelqu'un qui vous aimera vraiment</li>
+                <li>✗ <strong>Ouvrez-vous</strong> à quelqu'un qui vous aimera vraiment — si c'est un ex, découvrez d'abord si <Link href="/reconquete/va-t-il-elle-revenir" className="text-red-600 hover:text-red-800 underline font-medium">il/elle va revenir</Link></li>
                 <li>✗ <strong>Travaillez sur vous</strong> pour comprendre pourquoi vous vous êtes accroché(e)</li>
                 <li>✗ <strong>Libérez-vous</strong> de cette illusion pour avancer</li>
               </ul>

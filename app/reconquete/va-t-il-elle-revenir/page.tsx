@@ -98,7 +98,7 @@ export default function VaTilRevenirPage() {
               La question "<strong>va-t-il/elle revenir</strong>" est la plus posée en <strong>voyance amoureuse</strong>. Le <strong>tarot</strong> peut répondre en analysant les énergies actuelles, les sentiments de votre <strong>ex</strong>, et les probabilités de <strong>retour</strong> selon la configuration astrologique. La réponse n'est jamais un simple oui ou non, mais une analyse nuancée des facteurs en jeu.
             </p>
             <p className="text-lg leading-relaxed mb-4">
-              Le tirage révèle : ce que votre ex ressent maintenant, s'il/elle pense à vous, les obstacles au retour, le <strong>timing</strong> probable si retour il y a, et surtout si ce retour serait dans votre intérêt. Parfois, le tarot vous montrera qu'un retour est possible mais déconseillé pour votre évolution. D'autres fois, il confirmera un retour imminent avec des signes concrets à observer.
+              Le tirage révèle : ce que votre ex ressent maintenant, s'il/elle pense à vous, les obstacles au retour, le <strong>timing</strong> probable si retour il y a, et surtout si ce retour serait dans votre intérêt. Un <Link href="/methodes-voyance/tirage-tarot-amour" className="text-purple-600 hover:text-purple-800 underline font-medium">tirage de tarot amoureux</Link> personnalisé affine ces réponses selon votre situation. Parfois, le tarot vous montrera qu'un retour est possible mais déconseillé pour votre évolution. D'autres fois, il confirmera un retour imminent avec des signes concrets à observer.
             </p>
             <p className="text-lg leading-relaxed">
               Un <strong>voyant honnête</strong> ne vous donnera pas de faux espoirs. Si les cartes montrent que votre ex a tourné la page, il vous le dira avec bienveillance pour vous permettre d'avancer. Si un <strong>retour</strong> est probable, il vous indiquera les conditions et le timing. Pour en savoir plus sur les <Link href="/reconquete" className="text-purple-600 hover:text-purple-800 underline font-medium">retrouvailles</Link>, découvrez toutes nos guidances spécialisées.
@@ -119,7 +119,7 @@ export default function VaTilRevenirPage() {
             </div>
             <div className="bg-indigo-50 border-l-4 border-indigo-500 p-6 rounded">
               <h3 className="font-bold text-lg mb-3 text-indigo-700">2️⃣ Pensées et Regrets</h3>
-              <p className="text-gray-700 text-sm">Pense-t-il/elle à vous ? A-t-il/elle des regrets ? Cette position révèle le dialogue intérieur de votre ex et sa nostalgie éventuelle.</p>
+              <p className="text-gray-700 text-sm">Pense-t-il/elle à vous ? A-t-il/elle des regrets ? Cette position révèle le dialogue intérieur de votre ex et sa nostalgie éventuelle. Pour mieux cerner ses émotions, la question « <Link href="/sentiments/maime-t-il-elle" className="text-purple-600 hover:text-purple-800 underline font-medium">savoir s'il vous aime encore</Link> » complète utilement cette analyse.</p>
             </div>
             <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded">
               <h3 className="font-bold text-lg mb-3 text-blue-700">3️⃣ Obstacles au Retour</h3>
@@ -168,7 +168,7 @@ export default function VaTilRevenirPage() {
           <div className="space-y-3">
             <div className="flex items-start gap-3 p-4 bg-green-50 rounded-lg">
               <div className="text-2xl">✓</div>
-              <div><strong className="text-green-700">Contact repris</strong> : Votre ex reprend contact pour des raisons futiles, trouve des prétextes pour vous parler.</div>
+              <div><strong className="text-green-700">Contact repris</strong> : Votre ex reprend contact pour des raisons futiles, trouve des prétextes pour vous parler -- un comportement typique d'un <Link href="/reconquete/ex-qui-revient" className="text-purple-600 hover:text-purple-800 underline font-medium">ex qui revient</Link> progressivement.</div>
             </div>
             <div className="flex items-start gap-3 p-4 bg-green-50 rounded-lg">
               <div className="text-2xl">✓</div>
@@ -276,7 +276,7 @@ export default function VaTilRevenirPage() {
             </div>
             <div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Dois-je attendre mon ex ou tourner la page ?</h3>
-              <p className="text-gray-700 leading-relaxed">Le tarot répond clairement à cette question cruciale. S'il montre un retour probable dans un délai raisonnable (3-6 mois) et que ce retour est bénéfique, vous pouvez attendre tout en vivant votre vie. S'il montre que c'est terminé, tournez la page pour votre bien. Un voyant vous conseille honnêtement.</p>
+              <p className="text-gray-700 leading-relaxed">Le tarot répond clairement à cette question cruciale. S'il montre un retour probable dans un délai raisonnable (3-6 mois) et que ce retour est bénéfique, vous pouvez attendre tout en vivant votre vie -- et envisager une <Link href="/reconquete/seconde-chance-amour" className="text-purple-600 hover:text-purple-800 underline font-medium">seconde chance</Link> sur de bonnes bases. S'il montre que c'est terminé, tournez la page pour votre bien. Un voyant vous conseille honnêtement.</p>
             </div>
           </div>
         </section>

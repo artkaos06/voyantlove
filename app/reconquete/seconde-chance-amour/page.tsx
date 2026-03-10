@@ -99,7 +99,7 @@ export default function SecondeChancePage() {
 
         <article className="bg-white rounded-xl p-8 mb-8 border-t-4 border-green-500">
           <p className="text-lg mb-4">Donner une <strong>seconde chance en amour</strong> est l'une des décisions les plus délicates de votre vie sentimentale. La majorité des couples qui tentent une <strong>nouvelle opportunité</strong> échouent à nouveau dans les 12 mois, souvent parce que les conditions essentielles n'étaient pas réunies. Le <strong>tarot</strong> révèle si cette seconde chance mènera au bonheur durable ou à la répétition des mêmes erreurs douloureuses.</p>
-          <p className="text-lg mb-4">Une <strong>seconde chance réussie</strong> exige bien plus que de l'amour : elle nécessite une évolution profonde des deux partenaires, un <strong>pardon</strong> authentique sans rancune cachée, et la résolution concrète des causes originales de la séparation. Le <strong>tarot de la reconstruction amoureuse</strong> éclaire ces aspects essentiels pour vous guider vers la meilleure décision.</p>
+          <p className="text-lg mb-4">Une <strong>seconde chance réussie</strong> exige bien plus que de l'amour : elle nécessite une évolution profonde des deux partenaires, un <strong>pardon</strong> authentique sans rancune cachée, et la résolution concrète des causes originales de la séparation. Si votre ex a pris l'initiative du retour, notre guide pour <Link href="/reconquete/reconquerir-son-ex" className="text-green-600 hover:text-green-800 underline font-medium">reconquérir son ex</Link> détaille la stratégie complète en amont de cette décision. Le <strong>tarot de la reconstruction amoureuse</strong> éclaire ces aspects essentiels pour vous guider vers la meilleure décision.</p>
           <p className="text-lg">Comprendre la différence entre une vraie <strong>seconde chance constructive</strong> et une simple répétition de schéma toxique vous protège de nouvelles souffrances. Cette guidance complète vous aide à identifier les conditions de réussite, les signes d'alerte, et le chemin vers une <strong>reconstruction solide de votre couple</strong>. Pour en savoir plus sur les <Link href="/reconquete" className="text-green-600 hover:text-green-800 underline font-medium">retrouvailles amoureuses</Link>, découvrez toutes nos guidances spécialisées.</p>
         </article>
 
@@ -266,7 +266,7 @@ export default function SecondeChancePage() {
                 <div className="bg-cyan-600 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold text-lg mr-4 flex-shrink-0">3</div>
                 <div>
                   <h3 className="font-bold text-cyan-700 text-xl mb-2">Phase 3 : Consolidation et Nouveaux Projets (3-6 mois)</h3>
-                  <p className="text-gray-700 mb-3">Vous commencez à construire de nouveaux souvenirs positifs ensemble. Cette phase transforme la relation d'une "réparation du passé" vers "construction de l'avenir". Vous créez de nouveaux rituels, de nouvelles habitudes saines.</p>
+                  <p className="text-gray-700 mb-3">Vous commencez à construire de nouveaux souvenirs positifs ensemble. Cette phase transforme la relation d'une "réparation du passé" vers "construction de l'avenir". Vous créez de nouveaux rituels, de nouvelles habitudes saines. Notre guide complet pour <Link href="/reconquete/se-remettre-ensemble" className="text-green-600 hover:text-green-800 underline font-medium">se remettre ensemble</Link> détaille précisément ce processus de consolidation mois par mois.</p>
                   <p className="text-gray-700 mb-2"><strong>Actions recommandées :</strong></p>
                   <ul className="list-disc list-inside text-gray-700 space-y-1 ml-4">
                     <li>Créer de nouveaux rituels de couple (date nights hebdomadaires)</li>
@@ -414,7 +414,7 @@ export default function SecondeChancePage() {
               </div>
               <div className="border-l-4 border-red-500 pl-4 py-2">
                 <h4 className="font-bold text-red-600 mb-2">Huit de Coupe</h4>
-                <p className="text-gray-700">Il est temps de partir. Cette carte suggère qu'abandonner cette relation est nécessaire pour votre croissance personnelle. Vous avez fait ce que vous pouviez, mais il faut maintenant tourner la page et chercher le bonheur ailleurs.</p>
+                <p className="text-gray-700">Il est temps de partir. Cette carte suggère qu'abandonner cette relation est nécessaire pour votre croissance personnelle. Vous avez fait ce que vous pouviez, mais il faut maintenant tourner la page et ouvrir votre coeur à une <Link href="/nouvelle-rencontre/nouvelle-relation-amoureuse" className="text-green-600 hover:text-green-800 underline font-medium">nouvelle relation amoureuse</Link>.</p>
               </div>
               <div className="border-l-4 border-red-500 pl-4 py-2">
                 <h4 className="font-bold text-red-600 mb-2">La Roue de Fortune Inversée</h4>

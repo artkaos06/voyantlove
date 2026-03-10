@@ -58,7 +58,7 @@ export default function ReconqueteHubPage() {
           <Link href="/" className="text-white/80 hover:text-white mb-4 inline-block">← Accueil</Link>
           <h1 className="text-5xl font-bold mb-6">💜 Reconquête Amoureuse</h1>
           <p className="text-2xl opacity-95 mb-8">Stratégies et Guidance pour Reconquérir votre Ex</p>
-          <p className="text-lg opacity-90 max-w-2xl mx-auto">Le tarot révèle si un retour est possible, le timing idéal et les étapes pour maximiser vos chances.</p>
+          <p className="text-lg opacity-90 max-w-2xl mx-auto">En <Link href="/" className="text-white underline hover:text-white/80 font-medium">voyance amoureuse</Link>, le tarot révèle si un retour est possible, le timing idéal et les étapes pour maximiser vos chances.</p>
         </div>
       </header>
 
@@ -112,7 +112,7 @@ export default function ReconqueteHubPage() {
           <div className="space-y-6">
             <div className="border-b border-gray-200 pb-6">
               <h3 className="text-xl font-bold text-gray-900 mb-3">Comment reconquérir son ex avec le tarot ?</h3>
-              <p className="text-gray-700 leading-relaxed">La stratégie la plus efficace selon le tarot repose sur trois piliers : le silence radio initial pour créer le manque, le travail sur soi pour corriger les causes de la rupture, et le timing précis révélé par les cartes pour reprendre contact. Le tarot identifie également les blocages de votre ex et les leviers émotionnels à activer. Chaque reconquête est unique et le voyant adapte la stratégie à votre situation spécifique.</p>
+              <p className="text-gray-700 leading-relaxed">La stratégie la plus efficace selon le tarot repose sur trois piliers : le silence radio initial pour créer le manque, le travail sur soi pour corriger les causes de la rupture, et le timing précis révélé par les cartes pour reprendre contact. Notre guide complet pour <Link href="/reconquete/reconquerir-son-ex" className="text-purple-600 hover:text-purple-800 underline font-medium">reconquérir son ex</Link> détaille chacun de ces piliers avec des exemples concrets. Le tarot identifie également les blocages de votre ex et les leviers émotionnels à activer. Chaque reconquête est unique et le voyant adapte la stratégie à votre situation spécifique.</p>
             </div>
             <div className="border-b border-gray-200 pb-6">
               <h3 className="text-xl font-bold text-gray-900 mb-3">Combien de temps pour reconquérir son ex ?</h3>

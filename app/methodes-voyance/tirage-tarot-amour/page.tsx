@@ -116,7 +116,7 @@ export default function TirageTarotAmourPage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">&#x1F0CF; Types de Tirages Amoureux</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Les principaux tirages de tarot amoureux sont le tirage en croix (5 cartes), le tirage des sept cartes de l&apos;amour, le tirage de la relation (12 cartes), le tirage oui/non (3 cartes) et le tirage du chemin amoureux (10 cartes).</p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Chaque question sentimentale m&eacute;rite un <strong>tirage de tarot</strong> adapt&eacute;. Les voyants sp&eacute;cialis&eacute;s en <strong>voyance amoureuse</strong> disposent de plusieurs m&eacute;thodes de tirage, chacune con&ccedil;ue pour explorer une dimension sp&eacute;cifique de votre <strong>vie sentimentale</strong>. Voici les tirages les plus puissants et les plus r&eacute;v&eacute;lateurs utilis&eacute;s en consultation.
+            Chaque question sentimentale m&eacute;rite un <strong>tirage de tarot</strong> adapt&eacute;. Parmi les <Link href="/methodes-voyance" className="text-indigo-600 hover:text-indigo-800 underline font-medium">m&eacute;thodes de voyance</Link> amoureuse, le tarot se distingue par la vari&eacute;t&eacute; de ses tirages, chacun con&ccedil;u pour explorer une dimension sp&eacute;cifique de votre <strong>vie sentimentale</strong>. Voici les tirages les plus puissants et les plus r&eacute;v&eacute;lateurs utilis&eacute;s en consultation.
           </p>
 
           <div className="space-y-5">
@@ -155,7 +155,7 @@ export default function TirageTarotAmourPage() {
             <div className="bg-rose-50 border-l-4 border-rose-500 p-5 rounded-lg">
               <h3 className="font-bold text-lg mb-2 text-rose-700">Le Tirage du Chemin Amoureux (10 cartes)</h3>
               <p className="text-gray-700 text-sm mb-2">
-                Inspir&eacute; de la c&eacute;l&egrave;bre <strong>croix celtique</strong>, ce <strong>tirage</strong> trace le chemin de votre destin&eacute;e amoureuse sur les six prochains mois. Il int&egrave;gre les influences du pass&eacute;, les &eacute;nergies pr&eacute;sentes, les espoirs et les craintes, et les &eacute;v&eacute;nements sentimentaux &agrave; venir. Chaque carte dialogue avec les autres pour tisser un r&eacute;cit coh&eacute;rent de votre <strong>parcours sentimental</strong>.
+                Inspir&eacute; de la c&eacute;l&egrave;bre <strong>croix celtique</strong>, ce <strong>tirage</strong> trace le chemin de votre <Link href="/sentiments/avenir-amoureux" className="text-indigo-600 hover:text-indigo-800 underline font-medium">avenir amoureux</Link> sur les six prochains mois. Il int&egrave;gre les influences du pass&eacute;, les &eacute;nergies pr&eacute;sentes, les espoirs et les craintes, et les &eacute;v&eacute;nements sentimentaux &agrave; venir. Chaque carte dialogue avec les autres pour tisser un r&eacute;cit coh&eacute;rent de votre <strong>parcours sentimental</strong>.
               </p>
               <p className="text-gray-600 text-xs italic">Id&eacute;al pour : anticiper les &eacute;volutions de votre vie amoureuse &agrave; moyen terme.</p>
             </div>
@@ -286,7 +286,7 @@ export default function TirageTarotAmourPage() {
             <div className="bg-white rounded-lg p-5 border-l-4 border-blue-500">
               <h3 className="font-bold text-lg mb-2 text-blue-700">Les Cycles Lunaires et le Tarot Amoureux</h3>
               <p className="text-gray-700 text-sm">
-                La tradition de la <strong>voyance</strong> associe les phases lunaires &agrave; la qualit&eacute; des tirages. La <strong>pleine lune</strong> amplifie l&apos;intuition et les &eacute;nergies &eacute;motionnelles, rendant les tirages amoureux particuli&egrave;rement r&eacute;v&eacute;lateurs. La <strong>nouvelle lune</strong> favorise les questions sur les nouveaux d&eacute;buts sentimentaux. Le premier quartier est id&eacute;al pour les questions sur la progression d&apos;une relation, tandis que le dernier quartier &eacute;claire les fins de cycle et les <strong>cl&ocirc;tures &eacute;motionnelles</strong>.
+                La tradition de la <strong>voyance</strong>, en lien &eacute;troit avec l&apos;<Link href="/methodes-voyance/astrologie-amoureuse" className="text-indigo-600 hover:text-indigo-800 underline font-medium">astrologie amoureuse</Link>, associe les phases lunaires &agrave; la qualit&eacute; des tirages. La <strong>pleine lune</strong> amplifie l&apos;intuition et les &eacute;nergies &eacute;motionnelles, rendant les tirages amoureux particuli&egrave;rement r&eacute;v&eacute;lateurs. La <strong>nouvelle lune</strong> favorise les questions sur les nouveaux d&eacute;buts sentimentaux. Le premier quartier est id&eacute;al pour les questions sur la progression d&apos;une relation, tandis que le dernier quartier &eacute;claire les fins de cycle et les <strong>cl&ocirc;tures &eacute;motionnelles</strong>.
               </p>
             </div>
           </div>
@@ -297,7 +297,7 @@ export default function TirageTarotAmourPage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">&#x2764;&#xFE0F; Cartes Cl&eacute;s du Tarot en Amour</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Les cartes les plus importantes du tarot en amour sont les Amoureux (choix du c&oelig;ur), l&apos;Imp&eacute;ratrice (s&eacute;duction), le Soleil (bonheur amoureux), la Lune (illusions sentimentales) et Temp&eacute;rance (harmonie du couple).</p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Certains <strong>arcanes majeurs</strong> du <strong>Tarot de Marseille</strong> sont particuli&egrave;rement charg&eacute;s de signification en contexte amoureux. Conna&icirc;tre leur symbolique sentimentale vous permet de mieux comprendre les messages de votre <strong>tirage</strong> et d&apos;appr&eacute;cier la profondeur de la <strong>guidance amoureuse</strong> que le tarot propose.
+            Certains <strong>arcanes majeurs</strong> du <strong>Tarot de Marseille</strong> sont particuli&egrave;rement charg&eacute;s de signification en contexte amoureux. Conna&icirc;tre leur symbolique sentimentale vous permet de mieux comprendre les messages de votre <strong>tirage</strong> et d&apos;appr&eacute;cier la profondeur de la <strong>guidance amoureuse</strong> que le tarot propose &mdash; une approche plus analytique que celle de l&apos;<Link href="/methodes-voyance/oracle-amour" className="text-indigo-600 hover:text-indigo-800 underline font-medium">oracle de l&apos;amour</Link>, qui privil&eacute;gie l&apos;intuition directe.
           </p>
 
           <div className="space-y-4">

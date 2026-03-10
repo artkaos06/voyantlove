@@ -225,7 +225,7 @@ export default function InfideliteCouplePage() {
             <div className="bg-white rounded-lg p-5 border-l-4 border-yellow-600">
               <h3 className="font-bold mb-2 text-yellow-700 text-lg">Phase 3 : Marchandage et Questionnement (Mois 2-4)</h3>
               <p className="text-gray-700 mb-2">
-                <strong>Symptômes :</strong> "Et si j'avais été différent?", remise en question de votre valeur, recherche obsessionnelle de ce que l'autre personne a que vous n'avez pas, hyper-vigilance et contrôle du partenaire, besoin constant de réassurance.
+                <strong>Symptômes :</strong> "Et si j'avais été différent?", remise en question de votre valeur, recherche obsessionnelle de ce que l'autre personne a que vous n'avez pas, <Link href="/crise-couple/jalousie-excessive" className="text-rose-600 hover:text-rose-800 underline font-medium">jalousie excessive</Link> et contrôle du partenaire, besoin constant de réassurance.
               </p>
               <p className="text-gray-700">
                 <strong>Ce dont vous avez besoin :</strong> Comprendre que l'infidélité est le choix de votre partenaire, pas votre faute. Thérapie individuelle pour reconstruire votre estime. Décider si vous voulez tenter la reconstruction ou vous séparer.
@@ -267,7 +267,7 @@ export default function InfideliteCouplePage() {
           <h2 className="text-3xl font-bold mb-6 text-rose-600">❤️‍🩹 Reconstruire le Couple Après l'Infidélité : Les 7 Piliers</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Reconstruire après une infidélité repose sur sept piliers essentiels : transparence totale, responsabilité assumée, expression de la douleur, compréhension des causes, thérapie de couple, reconstruction de l'intimité et engagement sur la durée.</p>
           <p className="text-gray-700 mb-6">
-            Si vous décidez de donner une <strong>seconde chance</strong> à votre couple, voici les éléments absolument essentiels pour une reconstruction authentique et durable. Sans ces piliers, vous risquez de prolonger une souffrance plutôt que de guérir.
+            Si vous décidez de donner une <Link href="/reconquete/seconde-chance-amour" className="text-rose-600 hover:text-rose-800 underline font-medium">seconde chance en amour</Link>, voici les éléments absolument essentiels pour une reconstruction authentique et durable. Sans ces piliers, vous risquez de prolonger une souffrance plutôt que de guérir.
           </p>
 
           <div className="space-y-6">
@@ -289,7 +289,7 @@ export default function InfideliteCouplePage() {
                 <div>
                   <h4 className="font-semibold text-green-600 mb-2">Pourquoi c'est essentiel :</h4>
                   <p className="text-gray-700">
-                    La confiance se reconstruit par la vérification répétée. Si le partenaire infidèle refuse la transparence ou maintient un contact même minimal avec la tierce personne, la reconstruction est impossible. C'est un test de son engagement réel à sauver le couple.
+                    La confiance se reconstruit par la vérification répétée. Si le partenaire infidèle refuse la transparence ou maintient un contact même minimal avec la tierce personne, la reconstruction est impossible. C'est un test de son engagement réel à <Link href="/crise-couple/sauver-son-couple" className="text-rose-600 hover:text-rose-800 underline font-medium">sauver le couple</Link>.
                   </p>
                 </div>
               </div>
@@ -429,7 +429,7 @@ export default function InfideliteCouplePage() {
                 <div>
                   <h4 className="font-semibold text-orange-600 mb-2">Quand abandonner la reconstruction :</h4>
                   <p className="text-gray-700">
-                    Si après 12-18 mois d'efforts sincères des deux côtés, vous : ne parvenez toujours pas à faire confiance, ressentez du mépris constant, êtes plus malheureux qu'avant, vivez dans l'hyper-vigilance épuisante, alors la séparation est probablement la voie de guérison.
+                    Si après 12-18 mois d'efforts sincères des deux côtés, vous : ne parvenez toujours pas à faire confiance, ressentez du mépris constant, êtes plus malheureux qu'avant, vivez dans l'hyper-vigilance épuisante, alors la <Link href="/rupture/rupture-amoureuse" className="text-rose-600 hover:text-rose-800 underline font-medium">rupture amoureuse</Link> est probablement la voie de guérison.
                   </p>
                 </div>
               </div>

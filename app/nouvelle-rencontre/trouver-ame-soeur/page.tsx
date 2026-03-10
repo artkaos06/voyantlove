@@ -213,7 +213,7 @@ export default function TrouverAmeSoeurPage() {
           <h2 className="text-3xl font-bold mb-6 text-gray-900">✨ Les 15 Signes que Vous Avez Rencontré Votre Âme Sœur</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Les signes principaux incluent une familiarite instantanee, des synchronicites repetees, un sentiment de « rentrer a la maison » et une croissance mutuelle acceleree. Cinq signes ou plus confirment la connexion.</p>
           <p className="text-gray-700 mb-6">
-            Si vous vous demandez si une personne dans votre vie est votre <strong>âme sœur</strong>, voici les signes de reconnaissance universels. La présence de 5+ signes confirme fortement la connexion d'âmes sœurs.
+            Si vous vous demandez si une personne dans votre vie est votre <strong>âme sœur</strong>, voici les <Link href="/nouvelle-rencontre/signes-ame-soeur" className="text-indigo-600 hover:text-indigo-800 underline font-medium">signes de l'âme sœur</Link> universels. La présence de 5+ signes confirme fortement la connexion d'âmes sœurs.
           </p>
 
           <div className="space-y-4">
@@ -415,7 +415,7 @@ export default function TrouverAmeSoeurPage() {
           <h2 className="text-3xl font-bold mb-6 text-indigo-600">🔮 Le Tarot des Âmes Sœurs : Cartes Révélatrices</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Les cartes confirmant une connexion d'ame soeur sont Les Amoureux, le Deux de Coupe, l'Etoile, Temperance et le Soleil. Le Diable ou la Tour signalent au contraire un lien karmique toxique.</p>
           <p className="text-gray-700 mb-6">
-            Le <strong>tarot</strong> identifie les connexions d'âmes sœurs avec une précision remarquable. Certaines cartes sont des marqueurs directs de cette union spirituelle.
+            Le <strong>tarot</strong> identifie les connexions d'âmes sœurs avec une précision remarquable grâce au <Link href="/methodes-voyance/tirage-tarot-amour" className="text-indigo-600 hover:text-indigo-800 underline font-medium">tirage de tarot amoureux</Link>. Certaines cartes sont des marqueurs directs de cette union spirituelle.
           </p>
 
           <div className="space-y-6">

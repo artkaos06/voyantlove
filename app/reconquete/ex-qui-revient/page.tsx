@@ -100,8 +100,8 @@ export default function ExQuiRevientPage() {
 
         <article className="bg-white rounded-xl p-8 mb-8 border-t-4 border-pink-500">
           <p className="text-lg mb-4">Votre <strong>ex qui revient</strong> pose la question cruciale : <strong>que faire</strong> ? La plupart des personnes confrontées au <strong>retour de l'ex</strong> hésitent entre donner une <strong>seconde chance</strong> ou refuser définitivement. Le <strong>tarot</strong> guide votre décision en révélant les vraies motivations de ce retour et vos chances réelles de réussite. Cette situation délicate nécessite une analyse approfondie avant toute décision.</p>
-          <p className="text-lg mb-4">Le <strong>retour d'un ex</strong> peut signifier plusieurs choses : des regrets sincères accompagnés d'une véritable évolution personnelle, une simple nostalgie passagère, une peur de la solitude, ou dans les cas les plus problématiques, une tentative de manipulation. Le <strong>tarot de Marseille</strong> et les oracles amoureux permettent de distinguer ces motivations pour éviter de répéter les mêmes erreurs qui ont mené à la première rupture.</p>
-          <p className="text-lg">Comprendre pourquoi votre <strong>ex revenu</strong> frappe à votre porte est essentiel pour prendre la bonne décision. Cette guidance tarot vous aide à analyser la situation objectivement, au-delà des émotions du moment, pour construire un avenir sentimental épanouissant.</p>
+          <p className="text-lg mb-4">Le <strong>retour d'un ex</strong> peut signifier plusieurs choses : des regrets sincères accompagnés d'une véritable évolution personnelle, une simple nostalgie passagère, une peur de la solitude, ou dans les cas les plus problématiques, une tentative de manipulation. Pour mieux cerner ses intentions, repérez les <Link href="/sentiments/signes-il-elle-maime" className="text-pink-600 hover:text-pink-800 underline font-medium">signes qu'il ou elle vous aime</Link> encore avant de prendre une décision. Le <strong>tarot de Marseille</strong> et les oracles amoureux permettent de distinguer ces motivations pour éviter de répéter les mêmes erreurs qui ont mené à la première rupture.</p>
+          <p className="text-lg">Comprendre pourquoi votre <strong>ex revenu</strong> frappe à votre porte est essentiel pour prendre la bonne décision. Cette guidance tarot, au coeur de notre approche de la <Link href="/reconquete" className="text-pink-600 hover:text-pink-800 underline font-medium">reconquête amoureuse</Link>, vous aide à analyser la situation objectivement, au-delà des émotions du moment, pour construire un avenir sentimental épanouissant.</p>
         </article>
 
         {/* ZONE 1: Early CTA - Bandeau compact après introduction */}
@@ -115,7 +115,7 @@ export default function ExQuiRevientPage() {
           <div className="space-y-4">
             <div className="bg-green-50 border-l-4 border-green-500 p-5">
               <h3 className="font-bold text-green-700 mb-3 text-xl">1. Le Retour Sincère (Le Plus Rare)</h3>
-              <p className="text-gray-700 mb-3">Votre ex a réellement changé et évolué. Il ou elle reconnaît ses erreurs, a travaillé sur les causes de la rupture et revient avec des solutions concrètes. Ce type de retour se manifeste par de la patience, du respect de votre rythme, et une communication ouverte.</p>
+              <p className="text-gray-700 mb-3">Votre ex a réellement changé et évolué. Il ou elle reconnaît ses erreurs, a travaillé sur les causes de la rupture et revient avec des solutions concrètes. Ce type de retour se manifeste par de la patience, du respect de votre rythme, et une communication ouverte. Plusieurs signes concrets permettent de savoir si le <Link href="/reconquete/retour-de-lex" className="text-pink-600 hover:text-pink-800 underline font-medium">retour de l'ex</Link> est sincère ou superficiel.</p>
               <p className="text-gray-700"><strong>Signes à observer :</strong> Actions cohérentes avec les paroles, acceptation de sa responsabilité, proposition de thérapie de couple ou changements concrets, respect de vos limites. Le tarot révèle ce retour avec Les Amoureux, Le Soleil ou Le Jugement.</p>
             </div>
 
@@ -410,7 +410,7 @@ export default function ExQuiRevientPage() {
 
             <div className="border-b border-gray-200 pb-6">
               <h3 className="font-bold text-lg text-gray-800 mb-3">Combien de temps avant le retour d'un ex ?</h3>
-              <p className="text-gray-700">La durée varie selon les situations : <strong>3 à 6 mois en moyenne</strong> pour une vraie évolution. Un retour trop rapide (moins d'un mois) est souvent motivé par la nostalgie ou la solitude, pas par un changement profond. Le tarot révèle le timing idéal et si ce retour mènera à une relation durable. La patience est une vertu dans ces situations.</p>
+              <p className="text-gray-700">La durée varie selon les situations : <strong>3 à 6 mois en moyenne</strong> pour une vraie évolution. Un retour trop rapide (moins d'un mois) est souvent motivé par la nostalgie ou la solitude, pas par un changement profond. La question « <Link href="/reconquete/va-t-il-elle-revenir" className="text-pink-600 hover:text-pink-800 underline font-medium">va-t-il/elle revenir</Link> » trouve sa réponse dans le tarot, qui révèle le timing idéal et si ce retour mènera à une relation durable. La patience est une vertu dans ces situations.</p>
             </div>
 
             <div>

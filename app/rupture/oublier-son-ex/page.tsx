@@ -130,7 +130,7 @@ export default function OublierSonExPage() {
         <article className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-pink-500">
           <div className="prose prose-lg max-w-none">
             <p className="text-lg leading-relaxed mb-4">
-              Surmonter une <strong>rupture amoureuse</strong> et <strong>oublier son ex</strong> est un processus de guérison que la <strong>voyance</strong> peut accompagner avec douceur. Le <strong>tarot</strong> révèle que le <strong>chagrin d'amour</strong> suit un cycle naturel de 3 à 6 mois selon l'intensité de la relation, mais chaque personne a son propre rythme de reconstruction émotionnelle.
+              Surmonter une <strong>rupture amoureuse</strong> et <strong>oublier son ex</strong> est un processus de guérison que la <strong>voyance</strong> peut accompagner avec douceur. Le <strong>tarot</strong> révèle que le <Link href="/rupture/chagrin-damour" className="text-purple-600 hover:text-purple-800 underline font-medium">chagrin d'amour</Link> suit un cycle naturel de 3 à 6 mois selon l'intensité de la relation, mais chaque personne a son propre rythme de reconstruction émotionnelle.
             </p>
             
             <p className="text-lg leading-relaxed mb-4">
@@ -138,7 +138,7 @@ export default function OublierSonExPage() {
             </p>
             
             <p className="text-lg leading-relaxed">
-              Tourner la page ne signifie pas oublier complètement, mais transformer la douleur en sagesse. Un <strong>voyant bienveillant</strong> vous guide vers votre reconstruction intérieure et la préparation à votre <strong>prochaine rencontre</strong> amoureuse.
+              Tourner la page ne signifie pas oublier complètement, mais transformer la douleur en sagesse. Un <strong>voyant bienveillant</strong> vous guide vers votre reconstruction intérieure et la préparation à votre <Link href="/nouvelle-rencontre/quand-rencontre-amour" className="text-purple-600 hover:text-purple-800 underline font-medium">prochaine rencontre amoureuse</Link>.
             </p>
           </div>
         </article>
@@ -152,7 +152,7 @@ export default function OublierSonExPage() {
           </h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le deuil amoureux selon le tarot traverse cinq étapes : le choc (La Tour), le déni (Le Pendu), la colère (Cinq d'Épée), la tristesse profonde (Trois d'Épée) et l'acceptation (Tempérance).</p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Le tarot identifie 5 phases de guérison après une rupture. Chaque phase a sa durée propre selon votre thème astral et l'intensité de la relation vécue. Accepter ces étapes sans les forcer accélère paradoxalement la guérison.
+            Le tarot identifie 5 phases de guérison après une rupture. Chaque phase a sa durée propre selon votre thème astral et l'intensité de la relation vécue. Accepter ces étapes sans les forcer accélère paradoxalement le processus pour <Link href="/rupture/guerir-rupture" className="text-purple-600 hover:text-purple-800 underline font-medium">guérir d'une rupture</Link> en profondeur.
           </p>
           
           <div className="space-y-4">
@@ -374,7 +374,7 @@ export default function OublierSonExPage() {
                 Dois-je oublier mon ex ou espérer un retour ?
               </h3>
               <p className="text-gray-700 leading-relaxed">
-                Le tarot répond clairement à cette question cruciale. Un tirage honnête révèle si votre ex reviendra ou si vous devez tourner la page. S'accrocher à un faux espoir prolonge inutilement votre souffrance. Le voyant vous dira la vérité même si elle est difficile à entendre, pour votre bien.
+                Le tarot répond clairement à cette question cruciale. Un tirage honnête révèle si votre ex reviendra ou si vous devez tourner la page. Si le tarot indique que le lien peut être sauvé, la voie pour <Link href="/reconquete/reconquerir-son-ex" className="text-purple-600 hover:text-purple-800 underline font-medium">reconquérir son ex</Link> existe, mais s'accrocher à un faux espoir prolonge inutilement votre souffrance. Le voyant vous dira la vérité même si elle est difficile à entendre, pour votre bien.
               </p>
             </div>
             

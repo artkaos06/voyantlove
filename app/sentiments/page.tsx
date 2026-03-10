@@ -69,7 +69,7 @@ export default function SentimentsHubPage() {
 
         <section className="mb-16">
           <h2 className="text-3xl font-bold mb-8 text-center">🗺️ Comprendre vos Sentiments</h2>
-          <p className="text-lg font-semibold text-gray-800 mb-4">La voyance amoureuse analyse vos sentiments grace au tarot et a la clairvoyance. Un tirage sentimental revele la nature du lien, les emotions cachees et les intentions reelles de l'autre personne envers vous.</p>
+          <p className="text-lg font-semibold text-gray-800 mb-4">La <Link href="/" className="text-rose-600 hover:text-rose-800 underline font-medium">voyance amoureuse</Link> analyse vos sentiments grace au tarot et a la clairvoyance. Un tirage sentimental revele la nature du lien, les emotions cachees et les intentions reelles de l'autre personne envers vous. La question la plus posee reste <Link href="/sentiments/maime-t-il-elle" className="text-rose-600 hover:text-rose-800 underline font-medium">m'aime-t-il/elle vraiment</Link>, a laquelle le tarot repond avec precision.</p>
           <div className="grid md:grid-cols-3 gap-8">
             <Link href="/sentiments/maime-t-il-elle" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-red-500">
               <div className="text-4xl mb-4">💖</div>

@@ -100,7 +100,7 @@ export default function SeRemettreEnsemblePage() {
 
         <article className="bg-white rounded-xl p-8 mb-8 border-t-4 border-purple-500">
           <p className="text-lg mb-4"><strong>Se remettre ensemble avec son ex</strong> est une décision majeure qui nécessite préparation et sagesse. De nombreux couples qui tentent une <strong>reprise de relation</strong> réussissent à construire une union durable, mais uniquement lorsque les bonnes étapes sont respectées. Le <strong>tarot</strong> guide ce processus délicat en révélant le timing idéal, les obstacles à surmonter, et les chances réelles de succès.</p>
-          <p className="text-lg mb-4">La <strong>reconstruction d'un couple</strong> après une rupture exige bien plus qu'un simple désir de retrouvailles. Elle nécessite une analyse honnête des causes d'échec, des changements concrets de comportement, et un engagement mutuel à construire une relation meilleure que la précédente. Sans ces prérequis, vous reproduirez exactement les mêmes schémas qui ont mené à la première séparation.</p>
+          <p className="text-lg mb-4">La <strong>reconstruction d'un couple</strong> après une rupture exige bien plus qu'un simple désir de retrouvailles. Elle nécessite une analyse honnête des causes d'échec, des changements concrets de comportement, et un engagement mutuel à construire une relation meilleure que la précédente. La démarche rejoint celle d'accorder une <Link href="/reconquete/seconde-chance-amour" className="text-purple-600 hover:text-purple-800 underline font-medium">seconde chance en amour</Link>, mais avec un cadre encore plus structuré. Sans ces prérequis, vous reproduirez exactement les mêmes schémas qui ont mené à la première séparation.</p>
           <p className="text-lg">Comprendre comment <strong>se remettre ensemble après une rupture</strong> de manière saine et durable vous évite des mois de souffrance et de déceptions répétées. Ce guide complet basé sur la guidance tarot vous accompagne à travers les 5 étapes essentielles pour maximiser vos chances de <strong>retrouvailles réussies</strong>. Pour en savoir plus sur les <Link href="/reconquete" className="text-purple-600 hover:text-purple-800 underline font-medium">retrouvailles amoureuses</Link>, découvrez toutes nos guidances spécialisées.</p>
         </article>
 
@@ -134,7 +134,7 @@ export default function SeRemettreEnsemblePage() {
                     <p className="text-gray-700"><strong>Attention :</strong> Se remettre ensemble après seulement quelques semaines mène presque toujours à un nouvel échec. La nostalgie et l'habitude ne sont pas de l'amour. Le tarot révèle si vous êtes prêt ou si vous devez prolonger cette période de réflexion.</p>
                   </div>
 
-                  <p className="text-gray-700 mt-3"><strong>Que faire pendant cette période ?</strong> Travaillez sur vous-même, suivez éventuellement une thérapie, reprenez vos activités personnelles, reconnectez avec vos amis, et analysez objectivement votre part de responsabilité dans la rupture.</p>
+                  <p className="text-gray-700 mt-3"><strong>Que faire pendant cette période ?</strong> Travaillez sur vous-même, suivez éventuellement une thérapie, reprenez vos activités personnelles, reconnectez avec vos amis, et analysez objectivement votre part de responsabilité dans la rupture. Si pendant ce temps votre ex manifeste des signes de <Link href="/reconquete/retour-de-lex" className="text-purple-600 hover:text-purple-800 underline font-medium">retour de l'ex</Link>, ne brûlez pas les étapes pour autant.</p>
                 </div>
               </div>
             </div>
@@ -336,7 +336,7 @@ export default function SeRemettreEnsemblePage() {
           <div className="space-y-4">
             <div className="bg-purple-50 p-5 border-l-4 border-purple-600 rounded-r-lg">
               <h3 className="font-bold text-purple-700 mb-2 text-lg">1. Les Deux Partenaires Veulent Se Remettre Ensemble</h3>
-              <p className="text-gray-700">Cela semble évident, mais beaucoup tentent de convaincre un ex réticent. Si un seul partenaire pousse pour la reprise tandis que l'autre hésite ou accepte par culpabilité, la relation est déséquilibrée dès le départ. L'engagement doit être mutuel, enthousiaste et volontaire des deux côtés.</p>
+              <p className="text-gray-700">Cela semble évident, mais beaucoup tentent de convaincre un ex réticent. Si un seul partenaire pousse pour la reprise tandis que l'autre hésite ou accepte par culpabilité, la relation est déséquilibrée dès le départ. L'engagement doit être mutuel, enthousiaste et volontaire des deux côtés. Dans les cas où la relation traverse déjà une crise profonde, il est souvent judicieux de travailler à <Link href="/crise-couple/sauver-son-couple" className="text-purple-600 hover:text-purple-800 underline font-medium">sauver son couple</Link> avec un accompagnement adapté avant de formaliser la reprise.</p>
             </div>
 
             <div className="bg-purple-50 p-5 border-l-4 border-purple-600 rounded-r-lg">
@@ -346,7 +346,7 @@ export default function SeRemettreEnsemblePage() {
 
             <div className="bg-purple-50 p-5 border-l-4 border-purple-600 rounded-r-lg">
               <h3 className="font-bold text-purple-700 mb-2 text-lg">3. Les Problèmes Majeurs Sont Résolus (Pas Cachés)</h3>
-              <p className="text-gray-700">Distinction cruciale : résolu signifie que le problème n'existe plus, pas qu'on l'ignore. Si la cause était l'infidélité, le partenaire infidèle a-t-il coupé tout contact avec la tierce personne et accepté la transparence ? Si c'était un problème de communication, avez-vous appris de nouvelles compétences ? Les problèmes non résolus resurgiront, amplifiés.</p>
+              <p className="text-gray-700">Distinction cruciale : résolu signifie que le problème n'existe plus, pas qu'on l'ignore. Si la cause était l'infidélité, le partenaire infidèle a-t-il coupé tout contact avec la tierce personne et accepté la transparence ? Si c'était un problème de communication, avez-vous travaillé sur ces <Link href="/crise-couple/problemes-communication-couple" className="text-purple-600 hover:text-purple-800 underline font-medium">problèmes de communication</Link> avec de nouvelles compétences ? Les problèmes non résolus resurgiront, amplifiés.</p>
             </div>
 
             <div className="bg-purple-50 p-5 border-l-4 border-purple-600 rounded-r-lg">

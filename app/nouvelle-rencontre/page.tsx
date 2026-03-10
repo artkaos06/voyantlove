@@ -69,7 +69,7 @@ export default function NouvelleRencontreHubPage() {
 
         <section className="mb-16">
           <h2 className="text-3xl font-bold mb-8 text-center">🗺️ Votre Chemin vers l'Amour</h2>
-          <p className="text-lg font-semibold text-gray-800 mb-4">Le tarot et la voyance amoureuse guident chaque etape de votre quete sentimentale, du timing de la rencontre a la reconnaissance de votre ame soeur, en passant par la preparation interieure et spirituelle.</p>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Le tarot et la <Link href="/" className="text-cyan-600 hover:text-cyan-800 underline font-medium">voyance amoureuse</Link> guident chaque etape de votre quete sentimentale, du timing de la rencontre a la reconnaissance de votre ame soeur, en passant par la preparation interieure et spirituelle.</p>
           <div className="grid md:grid-cols-2 gap-8">
             <Link href="/nouvelle-rencontre/quand-rencontre-amour" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-cyan-500">
               <div className="text-4xl mb-4">⏰</div>
@@ -119,7 +119,7 @@ export default function NouvelleRencontreHubPage() {
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-8">Questions Fréquentes sur les Nouvelles Rencontres</h2>
-          <p className="text-lg font-semibold text-gray-800 mb-4">La voyance amoureuse repond aux interrogations les plus courantes sur le timing, le lieu et la preparation necessaire pour attirer une nouvelle rencontre sentimentale alignee avec votre destinee.</p>
+          <p className="text-lg font-semibold text-gray-800 mb-4">La voyance amoureuse repond aux interrogations les plus courantes sur le <Link href="/nouvelle-rencontre/quand-rencontre-amour" className="text-cyan-600 hover:text-cyan-800 underline font-medium">timing de la rencontre</Link>, le lieu et la preparation necessaire pour attirer une nouvelle rencontre sentimentale alignee avec votre destinee.</p>
           <div className="space-y-6">
             <div className="border-b border-gray-200 pb-6">
               <h3 className="text-xl font-bold text-gray-900 mb-3">Quand vais-je rencontrer l'amour ?</h3>

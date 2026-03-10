@@ -178,7 +178,7 @@ export default function DependanceAffectivePage() {
             <div className="bg-white border-l-4 border-teal-500 p-5 rounded-lg">
               <h3 className="font-bold text-teal-700 mb-2">5. Accepter l&rsquo;Inacceptable</h3>
               <p className="text-gray-700">
-                Par peur de perdre l&rsquo;autre, vous tol&eacute;rez des comportements que vous refuseriez normalement : manque de respect, mensonges, n&eacute;gligence &eacute;motionnelle, voire violence. Votre seuil de tol&eacute;rance est anormalement &eacute;lev&eacute; parce que la <strong>solitude</strong> vous terrifie plus que la <strong>relation toxique</strong> elle-m&ecirc;me.
+                Par peur de perdre l&rsquo;autre, vous tol&eacute;rez des comportements que vous refuseriez normalement : manque de respect, mensonges, n&eacute;gligence &eacute;motionnelle, voire violence. Votre seuil de tol&eacute;rance est anormalement &eacute;lev&eacute; parce que la <strong>solitude</strong> vous terrifie plus que la <Link href="/sentiments/relation-toxique" className="text-teal-600 hover:text-teal-800 underline font-medium">relation toxique</Link> elle-m&ecirc;me.
               </p>
             </div>
 
@@ -270,7 +270,7 @@ export default function DependanceAffectivePage() {
             <div className="bg-white p-6 rounded-lg border-2 border-red-200">
               <h3 className="font-bold text-xl mb-4 text-red-700">&Eacute;tape 1 : La Prise de Conscience &mdash; La Tour (XVI)</h3>
               <p className="text-gray-700 mb-3">
-                Tout commence par un effondrement. <strong>La Tour</strong> repr&eacute;sente le moment de v&eacute;rit&eacute; o&ugrave; les illusions s&rsquo;&eacute;croulent : une crise de couple, une rupture, ou un &eacute;v&eacute;nement qui vous force &agrave; voir la r&eacute;alit&eacute; de votre d&eacute;pendance. Ce choc, aussi douloureux soit-il, est n&eacute;cessaire. Sans lui, le d&eacute;ni se poursuit ind&eacute;finiment. La Tour d&eacute;truit les structures fausses pour permettre une <strong>reconstruction authentique</strong>.
+                Tout commence par un effondrement. <strong>La Tour</strong> repr&eacute;sente le moment de v&eacute;rit&eacute; o&ugrave; les illusions s&rsquo;&eacute;croulent : une <Link href="/crise-couple" className="text-teal-600 hover:text-teal-800 underline font-medium">crise de couple</Link>, une rupture, ou un &eacute;v&eacute;nement qui vous force &agrave; voir la r&eacute;alit&eacute; de votre d&eacute;pendance. Ce choc, aussi douloureux soit-il, est n&eacute;cessaire. Sans lui, le d&eacute;ni se poursuit ind&eacute;finiment. La Tour d&eacute;truit les structures fausses pour permettre une <strong>reconstruction authentique</strong>.
               </p>
               <div className="bg-red-50 p-4 rounded border-l-4 border-red-400">
                 <p className="text-gray-700"><strong>Guidance :</strong> Accueillez la crise comme un catalyseur de transformation. Ce qui s&rsquo;effondre n&rsquo;&eacute;tait pas solide. Ce qui reste apr&egrave;s est votre v&eacute;rit&eacute;.</p>
@@ -401,7 +401,7 @@ export default function DependanceAffectivePage() {
           </div>
 
           <p className="text-gray-700">
-            Construire un <strong>amour &eacute;quilibr&eacute;</strong> demande de la vigilance, surtout au d&eacute;but. Les anciens r&eacute;flexes de d&eacute;pendance peuvent resurgir sous stress. L&rsquo;essentiel est de rester conscient de vos sch&eacute;mas et de vous entourer de personnes qui soutiennent votre <strong>croissance personnelle</strong>. D&eacute;couvrez ce que la guidance r&eacute;v&egrave;le sur <Link href="/sentiments/avenir-amoureux" className="text-teal-600 hover:text-teal-800 underline font-medium">votre avenir amoureux lib&eacute;r&eacute;</Link> des cha&icirc;nes du pass&eacute;.
+            Construire un <strong>amour &eacute;quilibr&eacute;</strong> demande de la vigilance, surtout au d&eacute;but. Les anciens r&eacute;flexes de d&eacute;pendance peuvent resurgir sous stress, et il faut savoir <Link href="/crise-couple/sauver-son-couple" className="text-teal-600 hover:text-teal-800 underline font-medium">pr&eacute;server son couple</Link> sans retomber dans les anciens sch&eacute;mas. L&rsquo;essentiel est de rester conscient de vos sch&eacute;mas et de vous entourer de personnes qui soutiennent votre <strong>croissance personnelle</strong>. D&eacute;couvrez ce que la guidance r&eacute;v&egrave;le sur <Link href="/sentiments/avenir-amoureux" className="text-teal-600 hover:text-teal-800 underline font-medium">votre avenir amoureux lib&eacute;r&eacute;</Link> des cha&icirc;nes du pass&eacute;.
           </p>
         </section>
 

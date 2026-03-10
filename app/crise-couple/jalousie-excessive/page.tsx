@@ -238,7 +238,7 @@ export default function JalousieExcessivePage() {
             <div className="bg-white rounded-lg p-6 border-l-4 border-purple-500">
               <h3 className="font-bold text-xl mb-3 text-purple-700">2. Trahisons Passées Non Guéries</h3>
               <p className="text-gray-700 mb-3">
-                Avoir été trompé dans une relation précédente crée un <strong>traumatisme de trahison</strong>. Si ce trauma n'est pas soigné (par thérapie ou travail émotionnel profond), il se projette automatiquement sur les relations futures. La personne revit constamment l'angoisse de la découverte passée et cherche obsessionnellement les "signes" qui, la dernière fois, lui avaient échappé.
+                Avoir vécu une <Link href="/crise-couple/infidelite-couple" className="text-red-600 hover:text-red-800 underline font-medium">infidélité dans le couple</Link> crée un <strong>traumatisme de trahison</strong>. Si ce trauma n'est pas soigné (par thérapie ou travail émotionnel profond), il se projette automatiquement sur les relations futures. La personne revit constamment l'angoisse de la découverte passée et cherche obsessionnellement les "signes" qui, la dernière fois, lui avaient échappé.
               </p>
               <p className="text-gray-700 font-semibold">
                 Piège : Punir un nouveau partenaire fidèle pour les erreurs d'un ex crée une prophétie auto-réalisatrice. De nombreuses relations post-trahison se terminent à cause de cette jalousie transférée.
@@ -288,7 +288,7 @@ export default function JalousieExcessivePage() {
             <div className="bg-white rounded-lg p-6 border-l-4 border-indigo-500">
               <h3 className="font-bold text-xl mb-3 text-indigo-700">7. Dépendance Affective et Fusion Relationnelle</h3>
               <p className="text-gray-700 mb-3">
-                Quand votre partenaire devient votre <strong>unique source</strong> de bonheur, d'identité et de validation, toute menace à cette relation devient une menace à votre existence même. Cette <strong>dépendance affective</strong> crée une jalousie disproportionnée : sans vie personnelle riche, vous vivez dans la terreur permanente que votre "tout" vous soit retiré.
+                Quand votre partenaire devient votre <strong>unique source</strong> de bonheur, d'identité et de validation, toute menace à cette relation devient une menace à votre existence même. Cette <Link href="/crise-couple/dependance-affective" className="text-red-600 hover:text-red-800 underline font-medium">dépendance affective</Link> crée une jalousie disproportionnée : sans vie personnelle riche, vous vivez dans la terreur permanente que votre "tout" vous soit retiré.
               </p>
               <p className="text-gray-700 font-semibold">
                 Solution : Reconstruire une vie individuelle (amitiés, passions, accomplissements personnels) réduit drastiquement la jalousie car vous ne dépendez plus uniquement de votre partenaire pour votre bien-être.
@@ -557,7 +557,7 @@ export default function JalousieExcessivePage() {
 
             <div>
               <h3 className="text-xl font-bold mb-3 text-gray-900">Quand la jalousie devient-elle dangereuse ?</h3>
-              <p className="text-gray-700 leading-relaxed">La jalousie devient abusive quand elle inclut : isolement forcé (interdiction de voir amis/famille), violence verbale ou physique lors des crises, contrôle total (accès forcé aux emails, GPS, finances), menaces (suicide, violence si vous partez), destruction d'objets. Si vous avez <strong>peur de votre partenaire jaloux</strong>, si vous cachez des choses anodines pour éviter les crises, ou si vous vous sentez prisonnier, la relation est devenue toxique et dangereuse. Cherchez de l'aide immédiatement.</p>
+              <p className="text-gray-700 leading-relaxed">La jalousie devient abusive quand elle inclut : isolement forcé (interdiction de voir amis/famille), violence verbale ou physique lors des crises, contrôle total (accès forcé aux emails, GPS, finances), menaces (suicide, violence si vous partez), destruction d'objets. Si vous avez <strong>peur de votre partenaire jaloux</strong>, si vous cachez des choses anodines pour éviter les crises, ou si vous vous sentez prisonnier, vous vivez une <Link href="/sentiments/relation-toxique" className="text-red-600 hover:text-red-800 underline font-medium">relation toxique</Link> et dangereuse. Cherchez de l'aide immédiatement.</p>
             </div>
           </div>
         </section>

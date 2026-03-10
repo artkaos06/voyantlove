@@ -185,7 +185,7 @@ export default function ProblemesCommunicationCouplePage() {
                 <strong>Symptômes :</strong> Un ou les deux partenaires se ferment complètement, refusent de discuter des problèmes, donnent le traitement du silence, se retirent physiquement ou émotionnellement lors des conflits.
               </p>
               <p className="text-gray-700 mb-3">
-                <strong>Impact :</strong> Le silence est souvent plus destructeur que les disputes. Il crée un vide émotionnel qui se remplit d'angoisses, d'interprétations négatives, et de ressentiment. La connexion s'évapore progressivement.
+                <strong>Impact :</strong> Le silence est souvent plus destructeur que les disputes. Il crée un vide émotionnel qui se remplit d'angoisses, d'interprétations négatives, de <Link href="/crise-couple/jalousie-excessive" className="text-purple-600 hover:text-purple-800 underline font-medium">jalousie</Link> et de ressentiment. La connexion s'évapore progressivement.
               </p>
               <p className="text-gray-700">
                 <strong>Origine énergétique :</strong> Peur intense du conflit, traumatisme d'enfance lié aux disputes parentales, sentiment d'impuissance face aux émotions, ou protection ultime quand la personne ne se sent plus en sécurité dans la relation.
@@ -195,7 +195,7 @@ export default function ProblemesCommunicationCouplePage() {
             <div className="bg-indigo-50 border-l-4 border-indigo-500 p-6 rounded-lg">
               <h3 className="font-bold text-lg mb-3 text-indigo-700">6. Les Différences de Langage Amoureux</h3>
               <p className="text-gray-700 mb-3">
-                <strong>Symptômes :</strong> Vous exprimez votre amour d'une manière que votre partenaire ne reconnaît pas, vous ne vous sentez pas aimé malgré les efforts de l'autre, vos besoins émotionnels semblent fondamentalement incompatibles.
+                <strong>Symptômes :</strong> Vous exprimez votre amour d'une manière que votre partenaire ne reconnaît pas, vous ne vous sentez pas aimé malgré les efforts de l'autre, vos besoins émotionnels semblent fondamentalement incompatibles. <Link href="/sentiments/maime-t-il-elle" className="text-purple-600 hover:text-purple-800 underline font-medium">Comprendre les sentiments réels</Link> de votre partenaire devient alors essentiel.
               </p>
               <p className="text-gray-700 mb-3">
                 <strong>Impact :</strong> Sentiment douloureux de ne pas être aimé alors que votre partenaire pense faire des efforts. Frustration mutuelle où chacun donne mais personne ne reçoit. Questionnement sur la compatibilité fondamentale.
@@ -547,7 +547,7 @@ export default function ProblemesCommunicationCouplePage() {
               <div className="text-2xl text-blue-600">💔</div>
               <div>
                 <h3 className="font-bold text-gray-800 mb-1">Envisage sérieusement la séparation</h3>
-                <p className="text-gray-700">Si l'un de vous pense régulièrement à se séparer, une thérapie de couple peut soit sauver la relation, soit vous aider à vous séparer de manière saine si c'est la meilleure option.</p>
+                <p className="text-gray-700">Si l'un de vous pense régulièrement à se séparer, une thérapie de couple peut soit <Link href="/crise-couple/sauver-son-couple" className="text-purple-600 hover:text-purple-800 underline font-medium">sauver votre couple</Link>, soit vous aider à vous séparer de manière saine si c'est la meilleure option.</p>
               </div>
             </div>
 

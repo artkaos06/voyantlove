@@ -561,7 +561,7 @@ export default function SignesIlElleMaimePage() {
               <div>
                 <h3 className="font-bold text-gray-800 mb-2">Utilisez le Tarot pour Confirmer</h3>
                 <p className="text-gray-700">
-                  Si vous doutez malgré les signes comportementaux, le <strong>tarot offre confirmation énergétique</strong>. Il révèle les sentiments cachés que la personne ne montre pas encore ou ne comprend pas elle-même. Le tirage des sentiments croise observation et intuition pour une réponse complète.
+                  Si vous doutez malgré les signes comportementaux, le <strong>tarot offre confirmation énergétique</strong>. Il révèle les sentiments cachés que la personne ne montre pas encore ou ne comprend pas elle-même. Un <Link href="/methodes-voyance/tirage-tarot-amour" className="text-rose-600 hover:text-rose-800 underline font-medium">tirage de tarot amoureux</Link> croise observation et intuition pour une réponse complète.
                 </p>
               </div>
             </div>
@@ -582,7 +582,7 @@ export default function SignesIlElleMaimePage() {
           <h2 className="text-3xl font-bold mb-6 text-rose-600">💔 Signes qu'il/elle NE vous aime PAS (Signaux d'Alerte)</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Un contact visuel fuyant, l'absence d'efforts pour vous voir, le manque d'inclusion dans ses projets et l'indifference a vos emotions sont des signaux clairs que les sentiments ne sont pas reciproques.</p>
           <p className="text-gray-700 mb-6">
-            Aussi important que reconnaître l'amour : identifier l'<strong>absence d'amour</strong> pour ne pas perdre de temps ni d'énergie émotionnelle sur quelqu'un qui ne ressent pas de sentiments réciproques.
+            Aussi important que reconnaître l'amour : identifier l'<strong>absence d'amour</strong> pour ne pas perdre de temps ni d'énergie émotionnelle sur quelqu'un qui ne ressent pas de sentiments réciproques. Une analyse de <Link href="/sentiments/compatibilite-amoureuse" className="text-rose-600 hover:text-rose-800 underline font-medium">compatibilité amoureuse</Link> peut aussi éclairer la nature profonde de votre lien.
           </p>
 
           <div className="space-y-4">

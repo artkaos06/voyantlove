@@ -113,7 +113,7 @@ export default function MethodesVoyanceHubPage() {
         <section className="bg-white rounded-xl p-8 mb-12">
           <h2 className="text-3xl font-bold mb-6">🔮 Choisir la Bonne Méthode de Voyance</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le choix de la méthode de voyance dépend de votre question sentimentale : le tarot pour une analyse approfondie des dynamiques, l&apos;oracle pour des messages intuitifs directs, et l&apos;astrologie pour une compatibilité à long terme.</p>
-          <p className="text-lg text-gray-700 leading-relaxed mb-6">Chaque <strong>méthode de voyance amoureuse</strong> possède ses propres forces et sa sensibilité unique. Le choix de l&apos;outil divinatoire dépend de votre question sentimentale, de la profondeur d&apos;analyse souhaitée et de votre affinité personnelle avec chaque <strong>pratique de voyance</strong>.</p>
+          <p className="text-lg text-gray-700 leading-relaxed mb-6">Chaque m&eacute;thode de <Link href="/" className="text-purple-600 hover:text-purple-800 underline font-medium">voyance amoureuse</Link> poss&egrave;de ses propres forces et sa sensibilit&eacute; unique. Le choix de l&apos;outil divinatoire d&eacute;pend de votre question sentimentale, de la profondeur d&apos;analyse souhait&eacute;e et de votre affinit&eacute; personnelle &mdash; le <Link href="/methodes-voyance/tirage-tarot-amour" className="text-purple-600 hover:text-purple-800 underline font-medium">tirage de tarot amoureux</Link> restant la m&eacute;thode la plus demand&eacute;e en consultation.</p>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-gray-50 p-6 rounded-lg">
               <h3 className="font-bold text-lg mb-3">🃏 Tarot vs Oracle</h3>

@@ -71,7 +71,7 @@ export default function CriseCoupleHubPage() {
 
         <section className="mb-16">
           <h2 className="text-3xl font-bold mb-8 text-center">🗺️ Résoudre les Crises</h2>
-          <p className="text-lg font-semibold text-gray-800 mb-4">Résoudre une crise de couple passe par l'identification du problème central -- infidélité, jalousie, communication ou dépendance -- puis par un travail ciblé avec des outils comme le tarot relationnel pour éclairer les blocages et guider la reconstruction.</p>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Résoudre une crise de couple passe par l'identification du problème central -- infidélité, jalousie, communication ou dépendance -- puis par un travail ciblé. La <Link href="/" className="text-orange-600 hover:text-orange-800 underline font-medium">voyance amoureuse</Link> et le tarot relationnel éclairent les blocages et guident la reconstruction.</p>
           <div className="grid md:grid-cols-3 gap-8">
             <Link href="/crise-couple/infidelite-couple" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-red-500">
               <div className="text-4xl mb-4">💔</div>
@@ -122,7 +122,7 @@ export default function CriseCoupleHubPage() {
             </div>
             <div className="border-b border-gray-200 pb-6">
               <h3 className="text-xl font-bold text-gray-900 mb-3">La voyance peut-elle sauver un couple ?</h3>
-              <p className="text-gray-700 leading-relaxed">La <strong>voyance relationnelle</strong> offre un éclairage unique sur les <strong>dynamiques invisibles</strong> qui régissent le couple. Grâce au <strong>tirage de tarot</strong>, le voyant identifie les <strong>schémas répétitifs</strong>, les blessures non exprimées et les <strong>attentes insatisfaites</strong> de chaque partenaire. Cette guidance ne remplace pas une <strong>thérapie de couple</strong>, mais elle la complète en révélant les <strong>causes profondes</strong> des conflits. La consultation aide à comprendre le <strong>timing émotionnel</strong> de la relation : certaines périodes favorisent la réconciliation tandis que d&apos;autres appellent à la patience. Les arcanes du tarot éclairent le chemin vers une <strong>communication restaurée</strong> et un équilibre affectif durable.</p>
+              <p className="text-gray-700 leading-relaxed">La <strong>voyance relationnelle</strong> offre un éclairage unique sur les <strong>dynamiques invisibles</strong> qui régissent le couple. Grâce au <strong>tirage de tarot</strong>, le voyant identifie les <strong>schémas répétitifs</strong>, les blessures non exprimées et les <strong>attentes insatisfaites</strong> de chaque partenaire. Cette guidance ne remplace pas une <strong>thérapie de couple</strong>, mais elle la complète en révélant les <strong>causes profondes</strong> des conflits. La consultation aide à comprendre le <strong>timing émotionnel</strong> de la relation : certaines périodes favorisent la réconciliation tandis que d&apos;autres appellent à la patience. Les arcanes du tarot éclairent le chemin vers une <Link href="/crise-couple/problemes-communication-couple" className="text-orange-600 hover:text-orange-800 underline font-medium">communication restaurée</Link> et un équilibre affectif durable.</p>
             </div>
             <div className="border-b border-gray-200 pb-6">
               <h3 className="text-xl font-bold text-gray-900 mb-3">Quels signes montrent qu&apos;un couple peut surmonter une crise ?</h3>

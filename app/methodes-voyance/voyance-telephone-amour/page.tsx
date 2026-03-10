@@ -130,7 +130,7 @@ export default function VoyanceTelephoneAmourPage() {
             <div className="bg-violet-50 border-l-4 border-violet-500 p-5 rounded-lg">
               <h3 className="font-bold text-lg mb-2 text-violet-700">&Eacute;tape 2 &mdash; L&apos;Exploration &Eacute;nerg&eacute;tique</h3>
               <p className="text-gray-700 text-sm">
-                Le <strong>voyant</strong> utilise ensuite ses outils de pr&eacute;dilection &mdash; <strong>tarot</strong>, <strong>oracle</strong>, pendule ou clairvoyance pure &mdash; pour explorer votre situation sentimentale. Il capte les &eacute;nergies qui circulent autour de vous, identifie les pr&eacute;sences &eacute;motionnelles li&eacute;es &agrave; votre question et d&eacute;code les messages qui &eacute;mergent. La distance physique n&apos;alt&egrave;re en rien la qualit&eacute; de cette lecture &eacute;nerg&eacute;tique.
+                Le <strong>voyant</strong> utilise ensuite ses outils de pr&eacute;dilection &mdash; <Link href="/methodes-voyance/tirage-tarot-amour" className="text-indigo-600 hover:text-indigo-800 underline font-medium">tarot</Link>, <strong>oracle</strong>, <Link href="/methodes-voyance/pendule-amour" className="text-indigo-600 hover:text-indigo-800 underline font-medium">pendule</Link> ou clairvoyance pure &mdash; pour explorer votre situation sentimentale. Il capte les &eacute;nergies qui circulent autour de vous, identifie les pr&eacute;sences &eacute;motionnelles li&eacute;es &agrave; votre question et d&eacute;code les messages qui &eacute;mergent. La distance physique n&apos;alt&egrave;re en rien la qualit&eacute; de cette lecture &eacute;nerg&eacute;tique.
               </p>
             </div>
 
@@ -215,7 +215,7 @@ export default function VoyanceTelephoneAmourPage() {
             <div className="bg-orange-50 border-l-4 border-orange-500 p-5 rounded-lg">
               <h3 className="font-bold text-lg mb-2 text-orange-700">Questions en P&eacute;riode de Crise de Couple</h3>
               <p className="text-gray-700 text-sm">
-                Lorsque votre couple traverse une zone de turbulences, la <strong>consultation t&eacute;l&eacute;phonique</strong> offre un refuge pour comprendre les dynamiques en jeu. &laquo;&nbsp;Notre couple peut-il surmonter cette &eacute;preuve&nbsp;?&nbsp;&raquo;, &laquo;&nbsp;Quelle est la source profonde de nos conflits&nbsp;?&nbsp;&raquo;, &laquo;&nbsp;Devons-nous prendre du recul ou nous rapprocher&nbsp;?&nbsp;&raquo;. Le <strong>voyant amour</strong> identifie les blocages &eacute;nerg&eacute;tiques qui parasitent la communication et propose des pistes de r&eacute;conciliation.
+                Lorsque votre couple traverse une zone de turbulences, la <strong>consultation t&eacute;l&eacute;phonique</strong> offre un refuge pour comprendre les dynamiques en jeu. &laquo;&nbsp;Notre couple peut-il surmonter cette &eacute;preuve&nbsp;?&nbsp;&raquo;, &laquo;&nbsp;Quelle est la source profonde de nos conflits&nbsp;?&nbsp;&raquo;, &laquo;&nbsp;Devons-nous prendre du recul ou nous rapprocher&nbsp;?&nbsp;&raquo;. Le <strong>voyant amour</strong> identifie les blocages &eacute;nerg&eacute;tiques qui parasitent la communication et propose des pistes concr&egrave;tes pour <Link href="/crise-couple/sauver-son-couple" className="text-indigo-600 hover:text-indigo-800 underline font-medium">sauver son couple</Link>.
               </p>
             </div>
           </div>
@@ -228,7 +228,7 @@ export default function VoyanceTelephoneAmourPage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">&#x1F52E; Les Diff&eacute;rentes M&eacute;thodes Utilis&eacute;es par T&eacute;l&eacute;phone</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Les m&eacute;thodes de voyance par t&eacute;l&eacute;phone incluent le tirage de tarot amoureux, l&apos;oracle de l&apos;amour, le pendule pour les questions oui/non, la clairvoyance pure et l&apos;astrologie amoureuse. Chaque m&eacute;thode s&apos;adapte parfaitement &agrave; la consultation &agrave; distance.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Les <strong>voyants sp&eacute;cialis&eacute;s en amour</strong> ma&icirc;trisent plusieurs m&eacute;thodes de divination qui s&apos;adaptent parfaitement &agrave; la <strong>consultation t&eacute;l&eacute;phonique</strong>. Chaque m&eacute;thode apporte un &eacute;clairage diff&eacute;rent sur votre <strong>situation sentimentale</strong> et peut &ecirc;tre utilis&eacute;e seule ou en compl&eacute;ment d&apos;autres approches pour une <strong>guidance amoureuse</strong> compl&egrave;te.
+            Les <strong>voyants sp&eacute;cialis&eacute;s en amour</strong> ma&icirc;trisent plusieurs <Link href="/methodes-voyance" className="text-indigo-600 hover:text-indigo-800 underline font-medium">m&eacute;thodes de voyance</Link> qui s&apos;adaptent parfaitement &agrave; la <strong>consultation t&eacute;l&eacute;phonique</strong>. Chaque m&eacute;thode apporte un &eacute;clairage diff&eacute;rent sur votre <strong>situation sentimentale</strong> et peut &ecirc;tre utilis&eacute;e seule ou en compl&eacute;ment d&apos;autres approches pour une <strong>guidance amoureuse</strong> compl&egrave;te.
           </p>
 
           <div className="space-y-5">

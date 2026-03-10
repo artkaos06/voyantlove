@@ -103,7 +103,7 @@ export default function AmourApres40AnsPage() {
             L&rsquo;<strong>amour apr&egrave;s 40 ans</strong> n&rsquo;est pas un compromis &mdash; c&rsquo;est souvent la plus belle des histoires sentimentales. Contrairement aux id&eacute;es re&ccedil;ues, cette p&eacute;riode de la vie offre un terrain id&eacute;al pour construire des connexions profondes et authentiques. La <strong>rencontre tardive</strong> porte en elle une richesse que la jeunesse ne peut offrir : la <strong>maturit&eacute; sentimentale</strong>, la connaissance de soi et la clart&eacute; de ses d&eacute;sirs.
           </p>
           <p className="text-lg leading-relaxed mb-4">
-            La <strong>voyance amoureuse</strong> r&eacute;v&egrave;le que de nombreuses <strong>&acirc;me s&oelig;ur</strong> se retrouvent pr&eacute;cis&eacute;ment &agrave; cette &eacute;tape de leur parcours, une fois les le&ccedil;ons karmiques int&eacute;gr&eacute;es et les blessures du pass&eacute; apais&eacute;es. Le <strong>tarot</strong> permet d&rsquo;identifier les p&eacute;riodes propices &agrave; cette rencontre et les blocages &eacute;nerg&eacute;tiques &agrave; lib&eacute;rer. Gr&acirc;ce &agrave; la <strong>guidance sentimentale</strong>, vous pouvez aborder cette nouvelle &eacute;tape avec confiance et s&eacute;r&eacute;nit&eacute;, en sachant que l&rsquo;univers pr&eacute;pare votre chemin vers un amour durable et &eacute;panouissant.
+            La <strong>voyance amoureuse</strong> r&eacute;v&egrave;le que de nombreuses <strong>&acirc;me s&oelig;ur</strong> se retrouvent pr&eacute;cis&eacute;ment &agrave; cette &eacute;tape de leur parcours, une fois les le&ccedil;ons karmiques int&eacute;gr&eacute;es et les blessures du pass&eacute; apais&eacute;es. Le <strong>tarot</strong> et l&rsquo;<Link href="/methodes-voyance/astrologie-amoureuse" className="text-amber-600 hover:text-amber-800 underline font-medium">astrologie amoureuse</Link> permettent d&rsquo;identifier les p&eacute;riodes propices &agrave; cette rencontre et les blocages &eacute;nerg&eacute;tiques &agrave; lib&eacute;rer. Gr&acirc;ce &agrave; la <strong>guidance sentimentale</strong>, vous pouvez aborder cette nouvelle &eacute;tape avec confiance et s&eacute;r&eacute;nit&eacute;, en sachant que l&rsquo;univers pr&eacute;pare votre chemin vers un amour durable et &eacute;panouissant.
           </p>
         </article>
 
@@ -113,7 +113,7 @@ export default function AmourApres40AnsPage() {
           <h2 className="text-3xl font-bold mb-6 text-amber-600">&#127775; Pourquoi l&rsquo;Amour apr&egrave;s 40 ans Est le Plus Beau</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Apr&egrave;s 40 ans, la maturit&eacute; &eacute;motionnelle, la connaissance de soi et la clart&eacute; de vos d&eacute;sirs cr&eacute;ent les conditions id&eacute;ales pour une rencontre authentique et une relation nettement plus durable.</p>
           <p className="text-gray-700 mb-6">
-            Apr&egrave;s 40 ans, vous n&rsquo;&ecirc;tes plus le m&ecirc;me amoureux qu&rsquo;&agrave; 20 ou 30 ans. Et c&rsquo;est pr&eacute;cis&eacute;ment ce qui rend cette p&eacute;riode si exceptionnelle pour la <strong>rencontre amoureuse</strong>. La maturit&eacute; &eacute;motionnelle transform&eacute;e en force d&rsquo;attraction cr&eacute;e des liens d&rsquo;une qualit&eacute; incomparable.
+            Apr&egrave;s 40 ans, vous n&rsquo;&ecirc;tes plus le m&ecirc;me amoureux qu&rsquo;&agrave; 20 ou 30 ans. Et c&rsquo;est pr&eacute;cis&eacute;ment ce qui rend cette p&eacute;riode si exceptionnelle pour la <strong><Link href="/nouvelle-rencontre" className="text-amber-600 hover:text-amber-800 underline font-medium">rencontre amoureuse</Link></strong>. La maturit&eacute; &eacute;motionnelle transform&eacute;e en force d&rsquo;attraction cr&eacute;e des liens d&rsquo;une qualit&eacute; incomparable.
           </p>
 
           <div className="space-y-4">
@@ -191,7 +191,7 @@ export default function AmourApres40AnsPage() {
           <h2 className="text-3xl font-bold mb-6 text-amber-600">&#127183; Le Tarot R&eacute;v&egrave;le Votre Timing Amoureux</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">L&rsquo;Imp&eacute;ratrice, Le Monde, l&rsquo;&Eacute;toile et Temp&eacute;rance sont les cartes cl&eacute;s qui r&eacute;v&egrave;lent le timing et les conditions de votre prochaine rencontre amoureuse apr&egrave;s 40 ans.</p>
           <p className="text-gray-700 mb-6">
-            Le <strong>tarot amoureux</strong> est un outil pr&eacute;cieux pour les personnes de plus de 40 ans en qu&ecirc;te d&rsquo;amour. Il r&eacute;v&egrave;le non seulement le <strong>timing de votre prochaine rencontre</strong>, mais aussi les &eacute;nergies &agrave; aligner pour l&rsquo;attirer.
+            Le <strong>tarot amoureux</strong> est un outil pr&eacute;cieux pour les personnes de plus de 40 ans en qu&ecirc;te d&rsquo;amour. Il r&eacute;v&egrave;le <Link href="/nouvelle-rencontre/quand-rencontre-amour" className="text-amber-600 hover:text-amber-800 underline font-medium">quand vous allez rencontrer l&rsquo;amour</Link>, mais aussi les &eacute;nergies &agrave; aligner pour l&rsquo;attirer.
           </p>
 
           <div className="space-y-4">
@@ -286,7 +286,7 @@ export default function AmourApres40AnsPage() {
           <h2 className="text-3xl font-bold mb-6 text-gray-900">&#128142; Construire une Relation Durable apr&egrave;s 40 ans</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Les piliers d&rsquo;une relation durable apr&egrave;s 40 ans sont la communication authentique, les limites saines, la gestion harmonieuse des familles recompos&eacute;es et la conscience des le&ccedil;ons du pass&eacute;.</p>
           <p className="text-gray-700 mb-6">
-            Une fois l&rsquo;amour trouv&eacute;, le d&eacute;fi est de <strong>construire une relation solide</strong> qui tienne compte des r&eacute;alit&eacute;s de la vie apr&egrave;s 40 ans. Voici les piliers essentiels.
+            Une fois l&rsquo;amour trouv&eacute;, le d&eacute;fi de cette <Link href="/nouvelle-rencontre/nouvelle-relation-amoureuse" className="text-amber-600 hover:text-amber-800 underline font-medium">nouvelle relation amoureuse</Link> est de <strong>construire des bases solides</strong> qui tiennent compte des r&eacute;alit&eacute;s de la vie apr&egrave;s 40 ans. Voici les piliers essentiels.
           </p>
 
           <div className="space-y-4">

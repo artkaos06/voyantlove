@@ -110,7 +110,7 @@ export default function NouvelleRelationAmourseusePage() {
             Cette période se caractérise par un cocktail hormonal puissant (dopamine, ocytocine, sérotonine) qui vous fait voir la vie en rose. C'est la fameuse <strong>phase de lune de miel</strong> où tout semble parfait. Mais attention : ces hormones peuvent masquer des incompatibilités ou des red flags. D'où l'importance de rester conscient tout en profitant de cette magie.
           </p>
           <p className="text-lg leading-relaxed">
-            Ce guide complet vous révèle les <strong>étapes naturelles d'une nouvelle relation</strong>, les erreurs fatales à éviter, comment construire des bases saines, et les signes qu'une relation a un potentiel de durabilité. Le <strong>tarot de couple</strong> peut également éclairer les énergies en jeu et l'avenir probable de votre union naissante. Pour découvrir d'autres aspects de votre <Link href="/nouvelle-rencontre" className="text-rose-600 hover:text-rose-800 underline font-medium">nouvelle rencontre amoureuse</Link>, explorez toutes nos guidances spécialisées.
+            Ce guide complet vous révèle les <strong>étapes naturelles d'une nouvelle relation</strong>, les erreurs fatales à éviter, comment construire des bases saines, et les signes qu'une relation a un potentiel de durabilité. Que vous ayez longtemps cherché <Link href="/nouvelle-rencontre/quand-rencontre-amour" className="text-rose-600 hover:text-rose-800 underline font-medium">quand rencontrer l'amour</Link> ou que le destin vous ait surpris, le <strong>tarot de couple</strong> peut éclairer les énergies en jeu et l'avenir probable de votre union naissante. Pour découvrir d'autres aspects de votre <Link href="/nouvelle-rencontre" className="text-rose-600 hover:text-rose-800 underline font-medium">nouvelle rencontre amoureuse</Link>, explorez toutes nos guidances spécialisées.
           </p>
         </article>
 
@@ -324,7 +324,7 @@ export default function NouvelleRelationAmourseusePage() {
                 <strong>Symptômes :</strong> "Mon ex faisait ça mieux", "dans mon imagination mon partenaire idéal serait...", mention constante d'anciens partenaires, nostalgie du passé, critiques basées sur des comparaisons.
               </p>
               <p className="text-gray-700">
-                <strong>Pourquoi c'est fatal :</strong> Votre nouveau partenaire sent qu'il ne sera jamais à la hauteur. Vous n'êtes pas vraiment disponible car mentalement et émotionnellement bloqué dans le passé. Vous sabotez quelque chose de potentiellement bon par incapacité à être présent. Signal que vous n'avez pas fait le deuil de l'ex.
+                <strong>Pourquoi c'est fatal :</strong> Votre nouveau partenaire sent qu'il ne sera jamais à la hauteur. Vous n'êtes pas vraiment disponible car mentalement et émotionnellement bloqué dans le passé. Vous sabotez quelque chose de potentiellement bon par incapacité à être présent. Toute <Link href="/reconquete/seconde-chance-amour" className="text-rose-600 hover:text-rose-800 underline font-medium">seconde chance en amour</Link> exige d'avoir fait le deuil de l'ex.
               </p>
             </div>
 
@@ -513,7 +513,7 @@ export default function NouvelleRelationAmourseusePage() {
           <div className="bg-yellow-50 border-l-4 border-yellow-500 p-5 rounded-lg mt-6">
             <h4 className="font-bold text-yellow-800 mb-2">⚠️ Note Importante</h4>
             <p className="text-gray-700">
-              Ces timelines sont des <strong>moyennes</strong>, pas des règles absolues. Certains couples vont plus vite, d'autres plus lentement. L'important est que VOUS vous sentiez confortable avec le rythme et que les deux partenaires soient alignés. Méfiez-vous cependant des extrêmes : trop rapide (risque de fusion) ou trop lent après 6+ mois (peur d'engagement ?).
+              Ces timelines sont des <strong>moyennes</strong>, pas des règles absolues. Certains couples vont plus vite, d'autres plus lentement -- notamment ceux qui vivent l'<Link href="/nouvelle-rencontre/amour-apres-40-ans" className="text-rose-600 hover:text-rose-800 underline font-medium">amour après 40 ans</Link>, où la maturité émotionnelle accélère souvent la connexion. L'important est que VOUS vous sentiez confortable avec le rythme et que les deux partenaires soient alignés. Méfiez-vous cependant des extrêmes : trop rapide (risque de fusion) ou trop lent après 6+ mois (peur d'engagement ?).
             </p>
           </div>
         </section>
