@@ -225,6 +225,22 @@ export default function HomePage() {
                 </div>
               </div>
             </Link>
+
+            {/* Network 7: Voyance Gratuite Amour */}
+            <Link href="/voyance-gratuite-amour" className="group">
+              <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition border-t-4 border-green-500">
+                <div className="text-4xl mb-4">🌟</div>
+                <h3 className="text-xl font-bold mb-2 group-hover:text-green-500 transition">
+                  Voyance Gratuite Amour
+                </h3>
+                <p className="text-gray-600 mb-4">
+                  Tarot gratuit, oracle et horoscope amour : tirages et guidance sentimentale sans engagement.
+                </p>
+                <div className="text-green-500 font-semibold">
+                  Découvrir →
+                </div>
+              </div>
+            </Link>
           </div>
         </div>
       </section>
