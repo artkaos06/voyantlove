@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { getArticleSchema, getFAQSchema, getBreadcrumbSchema } from '@/lib/schema';
+import { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getAuthorSchema } from '@/lib/schema';
 import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: 'Découvrez ses vrais sentiments grâce au tarot et à la voyance. M\'aime-t-il/elle vraiment ? Pense-t-il/elle à moi ? Que ressent-il/elle ?',
   keywords: ['m\'aime-t-il', 'ses sentiments', 'vrais sentiments tarot', 'pense-t-il à moi', 'décrypter sentiments'],
   alternates: {
-    canonical: 'https://voyantlove.fr/sentiments/maime-t-il-elle',
+    canonical: 'https://voyantlove.fr/sentiments/maime-t-il-elle/',
   },
 };
 
@@ -19,7 +19,7 @@ export default function MAimeTilEllePage() {
   const articleSchema = getArticleSchema({
     title: 'M\'aime-t-il/elle Vraiment ? Tarot et Voyance des Sentiments',
     description: 'Découvrez ses vrais sentiments grâce au tarot et à la voyance. M\'aime-t-il/elle vraiment ? Pense-t-il/elle à moi ? Que ressent-il/elle ?',
-    url: 'https://voyantlove.fr/sentiments/maime-t-il-elle',
+    url: 'https://voyantlove.fr/sentiments/maime-t-il-elle/',
     datePublished: '2026-01-10',
     dateModified: new Date().toISOString().split('T')[0],
     keywords: ['m\'aime-t-il', 'ses sentiments', 'vrais sentiments tarot', 'pense-t-il à moi', 'décrypter sentiments'],
@@ -27,15 +27,15 @@ export default function MAimeTilEllePage() {
 
   const faqSchema = getFAQSchema([
     {
-      question: 'Comment la voyance peut-elle savoir ce que quelqu\'un ressent ?',
+      question: 'Comment la voyance detecte les sentiments de l\'autre ?',
       answer: 'Un voyant utilise le tarot, la clairvoyance ou la lecture énergétique pour capter les émotions réelles. Le tarot reflète l\'inconscient et révèle ce que les mots et comportements masquent. La clairvoyance permet de ressentir directement l\'état émotionnel de la personne concernée.',
     },
     {
-      question: 'Quelle est la différence entre amour et attachement ?',
+      question: 'Amour ou attachement : comment faire la difference ?',
       answer: 'L\'amour authentique veut le bonheur de l\'autre même sans réciprocité, respecte sa liberté, apporte joie et croissance. L\'attachement est possessif, crée de la souffrance, dépend de la présence de l\'autre. Le tarot distingue ces deux liens qui se ressemblent en surface mais sont fondamentalement différents.',
     },
     {
-      question: 'Pourquoi quelqu\'un cache-t-il ses sentiments alors qu\'il m\'aime ?',
+      question: 'Pourquoi cache-t-il ses sentiments s\'il m\'aime ?',
       answer: 'Peur de souffrir après blessure passée, peur d\'engagement, situation compliquée, blocage culturel ou familial, fierté. Le tarot révèle ces blocages invisibles et vous aide à comprendre si vous devez être patient(e), l\'aider à s\'ouvrir, ou accepter que malgré l\'amour la relation n\'avancera pas.',
     },
     {
@@ -46,9 +46,11 @@ export default function MAimeTilEllePage() {
 
   const breadcrumbSchema = getBreadcrumbSchema([
     { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'Sentiments', url: 'https://voyantlove.fr/sentiments' },
-    { name: 'M\'aime-t-il/elle', url: 'https://voyantlove.fr/sentiments/maime-t-il-elle' },
+    { name: 'Sentiments', url: 'https://voyantlove.fr/sentiments/' },
+    { name: 'M\'aime-t-il/elle', url: 'https://voyantlove.fr/sentiments/maime-t-il-elle/' },
   ]);
+
+  const authorSchema = getAuthorSchema();
 
   return (
     <main className="min-h-screen bg-gray-50">
@@ -64,9 +66,13 @@ export default function MAimeTilEllePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(authorSchema) }}
+      />
       <header className="bg-gradient-to-r from-red-500 via-pink-500 to-rose-500 text-white py-16 px-4">
         <div className="max-w-4xl mx-auto">
-          <Link href="/" className="text-white/80 hover:text-white mb-4 inline-block">← Retour</Link>
+          <Link href="/sentiments" className="text-white/80 hover:text-white mb-4 inline-block">← Retour aux Sentiments</Link>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">💖 M'aime-t-il/elle Vraiment ?</h1>
           <p className="text-xl opacity-95 mb-6">Décryptez ses vrais sentiments grâce au tarot et à la voyance</p>
           <div className="flex gap-4 flex-wrap">
@@ -79,8 +85,8 @@ export default function MAimeTilEllePage() {
       <div className="max-w-4xl mx-auto px-4 py-8">
         <div className="bg-white rounded-xl shadow-md p-6 mb-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
           <div><div className="text-3xl mb-1">⭐</div><div className="text-2xl font-bold text-red-600">4.8/5</div><div className="text-sm text-gray-600">287 avis</div></div>
-          <div><div className="text-3xl mb-1">💝</div><div className="text-2xl font-bold text-red-600">89%</div><div className="text-sm text-gray-600">Clarté obtenue</div></div>
-          <div><div className="text-3xl mb-1">🎯</div><div className="text-2xl font-bold text-red-600">91%</div><div className="text-sm text-gray-600">Précision</div></div>
+          <div><div className="text-3xl mb-1">💝</div><div className="text-2xl font-bold text-red-600">Grande</div><div className="text-sm text-gray-600">Clarté obtenue</div></div>
+          <div><div className="text-3xl mb-1">🎯</div><div className="text-2xl font-bold text-red-600">Reconnue</div><div className="text-sm text-gray-600">Expertise</div></div>
           <div><div className="text-3xl mb-1">🔒</div><div className="text-2xl font-bold text-red-600">100%</div><div className="text-sm text-gray-600">Confidentiel</div></div>
         </div>
 
@@ -104,6 +110,7 @@ export default function MAimeTilEllePage() {
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">💖 Les Signes d'Amour Véritable selon le Tarot</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Les arcanes L'Amoureux, le Deux de Coupe et Le Soleil confirment un amour authentique dans le tarot. A l'inverse, Le Diable et le Sept d'Epee signalent un attachement toxique ou une manipulation emotionnelle.</p>
           <p className="text-gray-700 leading-relaxed mb-6">Le tarot utilise des cartes spécifiques pour révéler la nature authentique des sentiments.</p>
           <div className="grid md:grid-cols-2 gap-6 mb-6">
             <div className="bg-green-50 border-2 border-green-300 rounded-lg p-6">
@@ -134,6 +141,7 @@ export default function MAimeTilEllePage() {
 
         <section className="bg-gradient-to-br from-rose-50 to-pink-50 rounded-xl p-8 mb-8 border-2 border-rose-200">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">🧠 Différence entre Amour et Attachement</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">L'amour veritable respecte la liberte de l'autre et apporte de la joie. L'attachement toxique repose sur la dependance, la peur de la solitude et le besoin de controle. Le tarot distingue ces deux dynamiques.</p>
           <p className="text-gray-700 leading-relaxed mb-6">Le tarot révèle la vraie nature du lien - c'est crucial pour votre bonheur.</p>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-white rounded-lg p-6 border-l-4 border-green-500">
@@ -168,6 +176,7 @@ export default function MAimeTilEllePage() {
 
         <section id="signes" className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">🎭 Pourquoi il/elle Cache ses Sentiments</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Une personne cache ses sentiments par peur de souffrir, crainte de l'engagement, blocage familial, situation compliquee ou simple fierte. Le tarot identifie ces blocages invisibles avec precision.</p>
           <p className="text-gray-700 leading-relaxed mb-6">Le tarot révèle les blocages invisibles qui empêchent l'expression des sentiments.</p>
           <div className="space-y-4">
             <div className="bg-purple-50 border-l-4 border-purple-500 p-4 rounded">
@@ -195,6 +204,7 @@ export default function MAimeTilEllePage() {
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">💭 Pense-t-il/elle à Vous ?</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Le Cavalier de Coupe, La Lune et L'Hermite dans le tarot indiquent que la personne pense a vous frequemment. Le tirage revele la nature de ces pensees : nostalgiques, desirantes ou conflictuelles.</p>
           <p className="text-gray-700 leading-relaxed mb-6">Le tarot répond aussi à cette question intimement liée aux sentiments.</p>
           <div className="bg-green-50 border-2 border-green-300 rounded-lg p-6 mb-6">
             <h3 className="font-bold text-lg mb-3 text-green-700">✅ Signes qu'il/elle Pense à Vous</h3>
@@ -213,6 +223,7 @@ export default function MAimeTilEllePage() {
 
         <section className="bg-gradient-to-r from-rose-50 to-purple-50 rounded-xl p-8 mb-8 border-2 border-rose-200">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">🚦 Que Faire selon la Réponse ?</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Si le tarot confirme qu'il/elle vous aime, communiquez ouvertement. En cas d'attachement sans amour, protegez-vous. Si l'amour n'est pas reciproque, acceptez la verite pour avancer.</p>
           <div className="space-y-6">
             <div className="bg-white rounded-lg p-6 border-l-4 border-green-500">
               <h3 className="font-bold text-lg mb-3 text-green-700">💚 S'il/elle vous AIME vraiment</h3>
@@ -249,17 +260,18 @@ export default function MAimeTilEllePage() {
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-8">❓ Questions Fréquentes</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Retrouvez les reponses aux questions les plus posees sur les sentiments amoureux, la voyance et le decryptage des emotions cachees par le tarot.</p>
           <div className="space-y-6">
             <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Comment la voyance peut-elle savoir ce que quelqu'un ressent ?</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Comment la voyance detecte les sentiments de l'autre ?</h3>
               <p className="text-gray-700 leading-relaxed">Un voyant utilise le tarot, la clairvoyance ou la lecture énergétique pour capter les émotions réelles. Le tarot reflète l'inconscient et révèle ce que les mots et comportements masquent. La clairvoyance permet de ressentir directement l'état émotionnel de la personne concernée.</p>
             </div>
             <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Quelle est la différence entre amour et attachement ?</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Amour ou attachement : comment faire la difference ?</h3>
               <p className="text-gray-700 leading-relaxed">L'amour authentique veut le bonheur de l'autre même sans réciprocité, respecte sa liberté, apporte joie et croissance. L'attachement est possessif, crée de la souffrance, dépend de la présence de l'autre. Le tarot distingue ces deux liens qui se ressemblent en surface mais sont fondamentalement différents.</p>
             </div>
             <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Pourquoi quelqu'un cache-t-il ses sentiments alors qu'il m'aime ?</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Pourquoi cache-t-il ses sentiments s'il m'aime ?</h3>
               <p className="text-gray-700 leading-relaxed">Peur de souffrir après blessure passée, peur d'engagement, situation compliquée, blocage culturel ou familial, fierté. Le tarot révèle ces blocages invisibles et vous aide à comprendre si vous devez être patient(e), l'aider à s'ouvrir, ou accepter que malgré l'amour la relation n'avancera pas.</p>
             </div>
             <div>

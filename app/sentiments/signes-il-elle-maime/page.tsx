@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { getArticleSchema, getFAQSchema, getBreadcrumbSchema } from '@/lib/schema';
+import { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getAuthorSchema } from '@/lib/schema';
 import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
@@ -10,14 +10,14 @@ export const metadata: Metadata = {
   title: 'Signes qu\'il/elle m\'aime : Décrypter l\'Amour Véritable | Tarot',
   description: 'Découvrez les signes qu\'il ou elle vous aime vraiment. Langage corporel, comportements révélateurs, signes du tarot et preuves d\'amour authentique.',
   keywords: ['signes il elle maime', 'signes amour', 'langage corporel amoureux', 'comportement amoureux', 'tarot signes amour'],
-  alternates: { canonical: 'https://voyantlove.fr/sentiments/signes-il-elle-maime' },
+  alternates: { canonical: 'https://voyantlove.fr/sentiments/signes-il-elle-maime/' },
 };
 
 export default function SignesIlElleMaimePage() {
   const articleSchema = getArticleSchema({
     title: 'Signes qu\'il/elle m\'aime : Décrypter l\'Amour Véritable | Tarot',
     description: 'Découvrez les signes qu\'il ou elle vous aime vraiment. Langage corporel, comportements révélateurs, signes du tarot et preuves d\'amour authentique.',
-    url: 'https://voyantlove.fr/sentiments/signes-il-elle-maime',
+    url: 'https://voyantlove.fr/sentiments/signes-il-elle-maime/',
     datePublished: '2026-01-19',
     dateModified: new Date().toISOString().split('T')[0],
     keywords: ['signes il elle maime', 'signes amour', 'langage corporel amoureux', 'comportement amoureux', 'tarot signes amour'],
@@ -25,33 +25,35 @@ export default function SignesIlElleMaimePage() {
 
   const breadcrumbSchema = getBreadcrumbSchema([
     { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'Sentiments', url: 'https://voyantlove.fr/sentiments' },
-    { name: 'Signes qu\'il/elle m\'aime', url: 'https://voyantlove.fr/sentiments/signes-il-elle-maime' },
+    { name: 'Sentiments', url: 'https://voyantlove.fr/sentiments/' },
+    { name: 'Signes qu\'il/elle m\'aime', url: 'https://voyantlove.fr/sentiments/signes-il-elle-maime/' },
   ]);
+
+  const authorSchema = getAuthorSchema();
 
   const faqSchema = getFAQSchema([
     {
-      question: 'Quels sont les signes physiques qu\'il/elle m\'aime ?',
-      answer: 'Les signes physiques d\'amour incluent : contact visuel prolongé (3-5 secondes), pupilles dilatées en votre présence, sourires authentiques (yeux plissés), orientation corporelle vers vous, touches légères et fréquentes, proximité physique réduite (moins de 45 cm), mimétisme de vos gestes, rougissements. Le langage corporel révèle 55% des sentiments réels, bien plus que les mots. Un corps amoureux trahit toujours les émotions profondes.',
+      question: 'Quels signes physiques montrent qu\'il m\'aime ?',
+      answer: 'Les signes physiques d\'amour incluent : contact visuel prolongé (3-5 secondes), pupilles dilatées en votre présence, sourires authentiques (yeux plissés), orientation corporelle vers vous, touches légères et fréquentes, proximité physique réduite (moins de 45 cm), mimétisme de vos gestes, rougissements. Le langage corporel révèle une part majeure des sentiments réels, bien plus que les mots. Un corps amoureux trahit toujours les émotions profondes.',
     },
     {
-      question: 'Comment savoir si ses sentiments sont authentiques ou superficiels ?',
+      question: 'Sentiments authentiques ou superficiels : comment savoir ?',
       answer: 'L\'amour authentique se reconnaît à : la constance des comportements (pas seulement en début de relation), actions alignées avec les paroles, présence dans les moments difficiles, investissement dans votre bien-être sans attendre de retour immédiat, inclusion dans sa vie (amis, famille, projets), respect de vos limites, communication honnête sur les émotions. L\'amour superficiel est inconstant, centré sur le physique, absent en cas de difficulté. Le tarot distingue Deux de Coupe (amour vrai) de Sept de Coupe (illusion).',
     },
     {
-      question: 'Quels sont les signes comportementaux d\'amour véritable ?',
+      question: 'Quels comportements prouvent un amour veritable ?',
       answer: 'Les comportements révélateurs d\'amour incluent : se souvenir de détails vous concernant, faire des efforts pour vous voir malgré les contraintes, vous présenter à son cercle proche, inclure "nous" dans ses projets futurs, vous soutenir activement dans vos objectifs, communiquer régulièrement et spontanément, montrer de la vulnérabilité émotionnelle, chercher votre avis sur décisions importantes. Ces comportements indiquent un investissement émotionnel profond et une vision d\'avenir ensemble.',
     },
     {
-      question: 'Le tarot peut-il révéler si quelqu\'un m\'aime vraiment ?',
-      answer: 'Oui, le tarot identifie les sentiments cachés avec 78-84% de précision. Les cartes révélatrices : Deux de Coupe (amour mutuel), Amoureux (connexion profonde), As de Coupe (nouveaux sentiments sincères), Dix de Coupe (amour durable), Cavalier de Coupe (déclaration imminente). Les cartes négatives : Sept de Coupe (illusion), Cinq de Coupe (déception), Diable (attachement toxique). Le tarot accède aux énergies émotionnelles invisibles et révèle la vérité au-delà des apparences.',
+      question: 'Le tarot peut-il reveler s\'il m\'aime ?',
+      answer: 'Oui, le tarot identifie les sentiments cachés avec une grande précision. Les cartes révélatrices : Deux de Coupe (amour mutuel), Amoureux (connexion profonde), As de Coupe (nouveaux sentiments sincères), Dix de Coupe (amour durable), Cavalier de Coupe (déclaration imminente). Les cartes négatives : Sept de Coupe (illusion), Cinq de Coupe (déception), Diable (attachement toxique). Le tarot accède aux énergies émotionnelles invisibles et révèle la vérité au-delà des apparences.',
     },
     {
-      question: 'Comment différencier l\'intérêt romantique de l\'amitié ?',
+      question: 'Interet romantique ou amitie : comment savoir ?',
       answer: 'L\'intérêt romantique se manifeste par : tension électrique en votre présence, jalousie légère face à vos autres fréquentations, compliments sur apparence physique et personnalité, flirt subtil (taquineries, sous-entendus), recherche d\'exclusivité (temps seul à seul), contact physique dépassant la norme amicale, nervosité particulière avec vous. L\'amitié est confortable, sans tension sexuelle ni jalousie. Le langage corporel amoureux diffère fondamentalement de l\'amitié : proximité, touches, regard.',
     },
     {
-      question: 'Que faire si je vois des signes contradictoires ?',
+      question: 'Que faire face a des signaux contradictoires ?',
       answer: 'Les signaux mixtes indiquent souvent : peur de l\'engagement (sentiments réels mais blocages), situation compliquée (relation actuelle, contexte professionnel), ambivalence émotionnelle (attirance mais doutes sur compatibilité), immaturité relationnelle. Face aux contradictions : observez les actions plus que les paroles, communiquez directement vos observations, consultez le tarot pour clarifier énergies sous-jacentes, donnez un délai raisonnable (1-3 mois) puis prenez décision. Ne restez pas dans l\'incertitude indéfiniment.',
     },
   ]);
@@ -70,10 +72,14 @@ export default function SignesIlElleMaimePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(authorSchema) }}
+      />
 
       <header className="bg-gradient-to-r from-pink-500 via-rose-500 to-red-500 text-white py-16 px-4">
         <div className="max-w-4xl mx-auto">
-          <Link href="/" className="text-white/80 hover:text-white mb-4 inline-block">← Retour</Link>
+          <Link href="/sentiments" className="text-white/80 hover:text-white mb-4 inline-block">← Retour aux Sentiments</Link>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">💝 Signes qu'il/elle m'aime</h1>
           <p className="text-xl opacity-95 mb-6">Décryptez les preuves d'amour véritable selon le comportement et le tarot</p>
           <div className="flex gap-4 flex-wrap">
@@ -85,8 +91,8 @@ export default function SignesIlElleMaimePage() {
 
       <div className="max-w-4xl mx-auto px-4 py-8">
         <div className="bg-white rounded-xl shadow-md p-6 mb-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-          <div><div className="text-3xl mb-1">💖</div><div className="text-2xl font-bold text-rose-600">92%</div><div className="text-sm text-gray-600">Précision</div></div>
-          <div><div className="text-3xl mb-1">👁️</div><div className="text-2xl font-bold text-rose-600">55%</div><div className="text-sm text-gray-600">Langage corporel</div></div>
+          <div><div className="text-3xl mb-1">💖</div><div className="text-2xl font-bold text-rose-600">Reconnue</div><div className="text-sm text-gray-600">Expertise</div></div>
+          <div><div className="text-3xl mb-1">👁️</div><div className="text-2xl font-bold text-rose-600">Clé</div><div className="text-sm text-gray-600">Langage corporel</div></div>
           <div><div className="text-3xl mb-1">🔮</div><div className="text-2xl font-bold text-rose-600">3,800+</div><div className="text-sm text-gray-600">Analyses</div></div>
           <div><div className="text-3xl mb-1">⭐</div><div className="text-2xl font-bold text-rose-600">4.9/5</div><div className="text-sm text-gray-600">342 avis</div></div>
         </div>
@@ -112,6 +118,7 @@ export default function SignesIlElleMaimePage() {
 
         <section id="signes" className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-rose-600">👁️ Les 20 Signes Physiques et Corporels d'Amour</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Le contact visuel prolonge, les pupilles dilatees, le mimetisme gestuel et la proximite physique reduite sont les signes corporels les plus fiables d'un amour veritable que le corps ne peut pas dissimuler.</p>
           <p className="text-gray-700 mb-6">
             Le <strong>langage corporel amoureux</strong> est le révélateur le plus fiable des sentiments réels. Le corps ne ment pas : il trahit l'attirance et l'attachement avant que la personne ne l'admette consciemment ou verbalement.
           </p>
@@ -291,6 +298,7 @@ export default function SignesIlElleMaimePage() {
 
         <section className="bg-gradient-to-br from-rose-50 to-pink-50 rounded-xl p-8 mb-8 border-2 border-rose-200">
           <h2 className="text-3xl font-bold mb-6 text-gray-900">💬 Les Signes Comportementaux d'Amour Authentique</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Se souvenir de details vous concernant, vous presenter a ses proches, inclure "nous" dans ses projets et vous soutenir dans les moments difficiles sont des preuves concretes d'amour veritable.</p>
           <p className="text-gray-700 mb-6">
             Au-delà du langage corporel, les <strong>comportements quotidiens</strong> révèlent l'investissement émotionnel et la place que vous occupez dans sa vie.
           </p>
@@ -399,6 +407,7 @@ export default function SignesIlElleMaimePage() {
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-rose-600">🔮 Les Signes d'Amour Selon le Tarot</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Le Deux de Coupe, L'Amoureux et Le Soleil confirment un amour sincere dans le tarot. Le Sept de Coupe et Le Diable alertent sur une illusion sentimentale ou un attachement toxique.</p>
           <p className="text-gray-700 mb-6">
             Le <strong>tarot des sentiments</strong> révèle la vérité énergétique au-delà des comportements visibles. Certaines cartes sont des indicateurs directs d'amour véritable ou d'illusion sentimentale.
           </p>
@@ -504,6 +513,7 @@ export default function SignesIlElleMaimePage() {
 
         <section className="bg-gradient-to-br from-yellow-50 to-orange-50 rounded-xl p-8 mb-8 border-2 border-orange-200">
           <h2 className="text-3xl font-bold mb-6 text-gray-900">🎯 Comment Interpréter Correctement les Signes</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Cherchez la coherence des comportements dans le temps plutot que des signes isoles. Observez les actions plus que les paroles et comparez avec votre propre intuition validee par le tarot.</p>
 
           <div className="space-y-4">
             <div className="flex items-start gap-3 bg-white p-5 rounded-lg border-l-4 border-green-500">
@@ -570,6 +580,7 @@ export default function SignesIlElleMaimePage() {
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-rose-600">💔 Signes qu'il/elle NE vous aime PAS (Signaux d'Alerte)</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Un contact visuel fuyant, l'absence d'efforts pour vous voir, le manque d'inclusion dans ses projets et l'indifference a vos emotions sont des signaux clairs que les sentiments ne sont pas reciproques.</p>
           <p className="text-gray-700 mb-6">
             Aussi important que reconnaître l'amour : identifier l'<strong>absence d'amour</strong> pour ne pas perdre de temps ni d'énergie émotionnelle sur quelqu'un qui ne ressent pas de sentiments réciproques.
           </p>
@@ -635,34 +646,35 @@ export default function SignesIlElleMaimePage() {
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold mb-8 text-rose-600">❓ Questions Fréquentes sur les Signes d'Amour</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Les reponses aux questions les plus recherchees sur les signes d'amour, le langage corporel amoureux et l'interpretation des comportements grace au tarot des sentiments.</p>
           <div className="space-y-6">
             <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Quels sont les signes physiques qu'il/elle m'aime ?</h3>
-              <p className="text-gray-700 leading-relaxed">Les <strong>signes physiques d'amour</strong> incluent : contact visuel prolongé (3-5 secondes), pupilles dilatées en votre présence, sourires authentiques (yeux plissés), orientation corporelle vers vous, touches légères et fréquentes, proximité physique réduite (moins de 45 cm), mimétisme de vos gestes, rougissements. Le langage corporel révèle 55% des sentiments réels, bien plus que les mots. Un corps amoureux trahit toujours les émotions profondes.</p>
+              <h3 className="text-xl font-bold mb-3 text-gray-900">Quels signes physiques montrent qu'il m'aime ?</h3>
+              <p className="text-gray-700 leading-relaxed">Les <strong>signes physiques d'amour</strong> incluent : contact visuel prolongé (3-5 secondes), pupilles dilatées en votre présence, sourires authentiques (yeux plissés), orientation corporelle vers vous, touches légères et fréquentes, proximité physique réduite (moins de 45 cm), mimétisme de vos gestes, rougissements. Le langage corporel révèle une part majeure des sentiments réels, bien plus que les mots. Un corps amoureux trahit toujours les émotions profondes.</p>
             </div>
 
             <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Comment savoir si ses sentiments sont authentiques ou superficiels ?</h3>
+              <h3 className="text-xl font-bold mb-3 text-gray-900">Sentiments authentiques ou superficiels : comment savoir ?</h3>
               <p className="text-gray-700 leading-relaxed">L'<strong>amour authentique</strong> se reconnaît à : la constance des comportements (pas seulement en début de relation), actions alignées avec les paroles, présence dans les moments difficiles, investissement dans votre bien-être sans attendre de retour immédiat, inclusion dans sa vie (amis, famille, projets), respect de vos limites, communication honnête sur les émotions. L'amour superficiel est inconstant, centré sur le physique, absent en cas de difficulté. Le tarot distingue Deux de Coupe (amour vrai) de Sept de Coupe (illusion).</p>
             </div>
 
             <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Quels sont les signes comportementaux d'amour véritable ?</h3>
+              <h3 className="text-xl font-bold mb-3 text-gray-900">Quels comportements prouvent un amour veritable ?</h3>
               <p className="text-gray-700 leading-relaxed">Les <strong>comportements révélateurs d'amour</strong> incluent : se souvenir de détails vous concernant, faire des efforts pour vous voir malgré les contraintes, vous présenter à son cercle proche, inclure "nous" dans ses projets futurs, vous soutenir activement dans vos objectifs, communiquer régulièrement et spontanément, montrer de la vulnérabilité émotionnelle, chercher votre avis sur décisions importantes. Ces comportements indiquent un investissement émotionnel profond et une vision d'avenir ensemble.</p>
             </div>
 
             <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Le tarot peut-il révéler si quelqu'un m'aime vraiment ?</h3>
-              <p className="text-gray-700 leading-relaxed">Oui, le <strong>tarot identifie les sentiments cachés</strong> avec 78-84% de précision. Les cartes révélatrices : Deux de Coupe (amour mutuel), Amoureux (connexion profonde), As de Coupe (nouveaux sentiments sincères), Dix de Coupe (amour durable), Cavalier de Coupe (déclaration imminente). Les cartes négatives : Sept de Coupe (illusion), Cinq de Coupe (déception), Diable (attachement toxique). Le tarot accède aux énergies émotionnelles invisibles et révèle la vérité au-delà des apparences.</p>
+              <h3 className="text-xl font-bold mb-3 text-gray-900">Le tarot peut-il reveler s'il m'aime ?</h3>
+              <p className="text-gray-700 leading-relaxed">Oui, le <strong>tarot identifie les sentiments cachés</strong> avec une grande précision. Les cartes révélatrices : Deux de Coupe (amour mutuel), Amoureux (connexion profonde), As de Coupe (nouveaux sentiments sincères), Dix de Coupe (amour durable), Cavalier de Coupe (déclaration imminente). Les cartes négatives : Sept de Coupe (illusion), Cinq de Coupe (déception), Diable (attachement toxique). Le tarot accède aux énergies émotionnelles invisibles et révèle la vérité au-delà des apparences.</p>
             </div>
 
             <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Comment différencier l'intérêt romantique de l'amitié ?</h3>
+              <h3 className="text-xl font-bold mb-3 text-gray-900">Interet romantique ou amitie : comment savoir ?</h3>
               <p className="text-gray-700 leading-relaxed">L'<strong>intérêt romantique</strong> se manifeste par : tension électrique en votre présence, jalousie légère face à vos autres fréquentations, compliments sur apparence physique et personnalité, flirt subtil (taquineries, sous-entendus), recherche d'exclusivité (temps seul à seul), contact physique dépassant la norme amicale, nervosité particulière avec vous. L'amitié est confortable, sans tension sexuelle ni jalousie. Le langage corporel amoureux diffère fondamentalement de l'amitié : proximité, touches, regard.</p>
             </div>
 
             <div>
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Que faire si je vois des signes contradictoires ?</h3>
+              <h3 className="text-xl font-bold mb-3 text-gray-900">Que faire face a des signaux contradictoires ?</h3>
               <p className="text-gray-700 leading-relaxed">Les <strong>signaux mixtes</strong> indiquent souvent : peur de l'engagement (sentiments réels mais blocages), situation compliquée (relation actuelle, contexte professionnel), ambivalence émotionnelle (attirance mais doutes sur compatibilité), immaturité relationnelle. Face aux contradictions : observez les actions plus que les paroles, communiquez directement vos observations, consultez le tarot pour clarifier énergies sous-jacentes, donnez un délai raisonnable (1-3 mois) puis prenez décision. Ne restez pas dans l'incertitude indéfiniment.</p>
             </div>
           </div>

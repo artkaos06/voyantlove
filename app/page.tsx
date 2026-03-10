@@ -1,16 +1,23 @@
-'use client';
-
+import type { Metadata } from 'next';
 import Link from 'next/link';
-import { getOrganizationSchema, getWebSiteSchema, getFAQSchema } from '@/lib/schema';
+import { getOrganizationSchema, getWebSiteSchema, getFAQSchema, getAuthorSchema } from '@/lib/schema';
 import EEATSignal from '@/components/EEATSignal';
-import { trackAffiliateClick } from '@/lib/glyphex';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
 import TestimonialSection from '@/components/TestimonialSection';
 import TrustBadges from '@/components/TrustBadges';
 
+export const metadata: Metadata = {
+  title: {
+    absolute: 'VoyantLove — Voyance Amoureuse Spécialisée | Tarot de l\'Amour',
+  },
+  description: 'Voyance amoureuse spécialisée : reconquérir son ex, rencontrer l\'amour, décrypter les sentiments, surmonter une rupture. Tarot, clairvoyance et guidance personnalisée.',
+  alternates: { canonical: 'https://voyantlove.fr/' },
+};
+
 export default function HomePage() {
   const organizationSchema = getOrganizationSchema();
   const websiteSchema = getWebSiteSchema();
+  const authorSchema = getAuthorSchema();
   const faqSchema = getFAQSchema([
     {
       question: 'Qu\'est-ce que la voyance amoureuse et comment fonctionne-t-elle ?',
@@ -18,7 +25,7 @@ export default function HomePage() {
     },
     {
       question: 'La voyance amoureuse par tarot est-elle fiable ?',
-      answer: 'La fiabilité du tarot amoureux dépend de l\'expérience et du don du voyant qui l\'interprète. Un tarologue expérimenté atteint 75-85% de précision sur les questions sentimentales, car le tarot capte les énergies émotionnelles avec une grande sensibilité. Les 22 arcanes majeurs et 56 arcanes mineurs offrent une palette nuancée pour analyser les sentiments, les blocages et les évolutions possibles. L\'important est de consulter un voyant honnête qui vous donnera une réponse sincère, même difficile à entendre, plutôt que de faux espoirs.',
+      answer: 'La fiabilité du tarot amoureux dépend de l\'expérience et du don du voyant qui l\'interprète. Un tarologue expérimenté capte les énergies émotionnelles avec une grande sensibilité grâce à sa maîtrise des arcanes. Les 22 arcanes majeurs et 56 arcanes mineurs offrent une palette nuancée pour analyser les sentiments, les blocages et les évolutions possibles. L\'important est de consulter un voyant honnête qui vous donnera une réponse sincère, même difficile à entendre, plutôt que de faux espoirs.',
     },
     {
       question: 'Comment choisir un bon voyant spécialisé en amour ?',
@@ -44,6 +51,10 @@ export default function HomePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(authorSchema) }}
+      />
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-brand-purple to-brand-purple-dark text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
@@ -61,7 +72,6 @@ export default function HomePage() {
               href="https://www.monsitevoyance.com/zoom_voyant.php?id=8864&partner=383&ref=homepage-hero-primary"
               target="_blank"
               rel="noopener noreferrer sponsored"
-              onClick={() => trackAffiliateClick('8864', 'homepage-hero-primary', 'Sibylle')}
               className="bg-white text-brand-purple px-8 py-4 rounded-lg font-semibold hover:shadow-lg transition"
             >
               🔮 Consultation Voyance
@@ -82,23 +92,23 @@ export default function HomePage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             <div>
               <div className="text-4xl mb-2">⭐</div>
-              <div className="text-2xl font-bold text-brand-purple">4.8/5</div>
-              <div className="text-sm text-gray-600">287 avis clients</div>
+              <div className="text-2xl font-bold text-brand-purple">Voyants Certifiés</div>
+              <div className="text-sm text-gray-600">Sélectionnés pour leur expertise</div>
             </div>
             <div>
-              <div className="text-4xl mb-2">✓</div>
-              <div className="text-2xl font-bold text-brand-purple">65%</div>
-              <div className="text-sm text-gray-600">Taux de retour</div>
+              <div className="text-4xl mb-2">💜</div>
+              <div className="text-2xl font-bold text-brand-purple">Spécialistes Amour</div>
+              <div className="text-sm text-gray-600">Dédiés aux questions sentimentales</div>
             </div>
             <div>
               <div className="text-4xl mb-2">🔮</div>
-              <div className="text-2xl font-bold text-brand-purple">15 ans</div>
-              <div className="text-sm text-gray-600">D'expérience</div>
+              <div className="text-2xl font-bold text-brand-purple">Expérimentés</div>
+              <div className="text-sm text-gray-600">Des années de pratique</div>
             </div>
             <div>
               <div className="text-4xl mb-2">🔒</div>
-              <div className="text-2xl font-bold text-brand-purple">100%</div>
-              <div className="text-sm text-gray-600">Confidentialité</div>
+              <div className="text-2xl font-bold text-brand-purple">Confidentiel</div>
+              <div className="text-sm text-gray-600">Consultations 100% privées</div>
             </div>
           </div>
         </div>
@@ -308,7 +318,7 @@ export default function HomePage() {
             </div>
             <div className="border-b border-gray-200 pb-6">
               <h3 className="text-xl font-bold text-gray-900 mb-3">La voyance amoureuse par tarot est-elle fiable ?</h3>
-              <p className="text-gray-700 leading-relaxed">La fiabilité du <strong>tarot amoureux</strong> dépend de l'expérience et du don du voyant qui l'interprète. Un <strong>tarologue expérimenté</strong> atteint 75-85% de précision sur les questions sentimentales, car le tarot capte les <strong>énergies émotionnelles</strong> avec une grande sensibilité. Les 22 arcanes majeurs et 56 arcanes mineurs offrent une palette nuancée pour analyser les sentiments, les blocages et les évolutions possibles. L'important est de consulter un <strong>voyant honnête</strong> qui vous donnera une réponse sincère, même difficile à entendre, plutôt que de faux espoirs.</p>
+              <p className="text-gray-700 leading-relaxed">La fiabilité du <strong>tarot amoureux</strong> dépend de l'expérience et du don du voyant qui l'interprète. Un <strong>tarologue expérimenté</strong> capte les <strong>énergies émotionnelles</strong> avec une grande sensibilité grâce à sa maîtrise des arcanes. Les 22 arcanes majeurs et 56 arcanes mineurs offrent une palette nuancée pour analyser les sentiments, les blocages et les évolutions possibles. L'important est de consulter un <strong>voyant honnête</strong> qui vous donnera une réponse sincère, même difficile à entendre, plutôt que de faux espoirs.</p>
             </div>
             <div className="border-b border-gray-200 pb-6">
               <h3 className="text-xl font-bold text-gray-900 mb-3">Comment choisir un bon voyant spécialisé en amour ?</h3>
@@ -336,7 +346,6 @@ export default function HomePage() {
               href="https://www.monsitevoyance.com/zoom_voyant.php?id=8864&partner=383&ref=homepage-cta-primary"
               target="_blank"
               rel="noopener noreferrer sponsored"
-              onClick={() => trackAffiliateClick('8864', 'homepage-cta-primary', 'Sibylle')}
               className="bg-white text-brand-purple px-8 py-4 rounded-lg font-semibold hover:shadow-lg transition"
             >
               Consulter un Voyant Maintenant
@@ -345,7 +354,6 @@ export default function HomePage() {
               href="https://www.monsitevoyance.com/zoom_voyant.php?id=8062&partner=383&ref=homepage-cta-secondary"
               target="_blank"
               rel="noopener noreferrer sponsored"
-              onClick={() => trackAffiliateClick('8062', 'homepage-cta-secondary', 'Kalinda')}
               className="bg-transparent border-2 border-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-brand-purple transition"
             >
               Tirage Tarot Personnalisé

@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { getArticleSchema, getFAQSchema, getBreadcrumbSchema } from '@/lib/schema';
+import { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getAuthorSchema } from '@/lib/schema';
 import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
@@ -10,14 +10,14 @@ export const metadata: Metadata = {
   title: 'Trouver son Âme Sœur : Guide Complet Tarot et Voyance | Connexion Spirituelle',
   description: 'Comment trouver votre âme sœur selon le tarot et la destinée. Signes de reconnaissance, timing, préparation intérieure et guidance spirituelle complète.',
   keywords: ['trouver âme sœur', 'âme sœur tarot', 'connexion âme', 'flamme jumelle', 'destin amoureux'],
-  alternates: { canonical: 'https://voyantlove.fr/nouvelle-rencontre/trouver-ame-soeur' },
+  alternates: { canonical: 'https://voyantlove.fr/nouvelle-rencontre/trouver-ame-soeur/' },
 };
 
 export default function TrouverAmeSoeurPage() {
   const articleSchema = getArticleSchema({
     title: 'Trouver son Âme Sœur : Guide Complet Tarot et Voyance | Connexion Spirituelle',
     description: 'Comment trouver votre âme sœur selon le tarot et la destinée. Signes de reconnaissance, timing, préparation intérieure et guidance spirituelle complète.',
-    url: 'https://voyantlove.fr/nouvelle-rencontre/trouver-ame-soeur',
+    url: 'https://voyantlove.fr/nouvelle-rencontre/trouver-ame-soeur/',
     datePublished: '2026-01-19',
     dateModified: new Date().toISOString().split('T')[0],
     keywords: ['trouver âme sœur', 'âme sœur tarot', 'connexion âme', 'flamme jumelle', 'destin amoureux'],
@@ -25,34 +25,36 @@ export default function TrouverAmeSoeurPage() {
 
   const breadcrumbSchema = getBreadcrumbSchema([
     { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'Nouvelle Rencontre', url: 'https://voyantlove.fr/nouvelle-rencontre' },
-    { name: 'Trouver son Âme Sœur', url: 'https://voyantlove.fr/nouvelle-rencontre/trouver-ame-soeur' },
+    { name: 'Nouvelle Rencontre', url: 'https://voyantlove.fr/nouvelle-rencontre/' },
+    { name: 'Trouver son Âme Sœur', url: 'https://voyantlove.fr/nouvelle-rencontre/trouver-ame-soeur/' },
   ]);
+
+  const authorSchema = getAuthorSchema();
 
   const faqSchema = getFAQSchema([
     {
-      question: 'Comment savoir si j\'ai déjà rencontré mon âme sœur ?',
+      question: 'Comment savoir si c\'est mon âme sœur ?',
       answer: 'Votre âme sœur se reconnaît à plusieurs signes distinctifs : sentiment de familiarité instantanée ("on se connaît déjà"), connexion émotionnelle profonde dès les premiers échanges, synchronicités répétées (mêmes pensées, même timing), sentiment d\'être "chez soi" en sa présence, communication intuitive (comprendre sans mots), croissance mutuelle accélérée, acceptation totale de qui vous êtes. Si vous éprouvez 5+ de ces signes avec quelqu\'un : c\'est probablement votre âme sœur. Le tarot confirme avec Les Amoureux, Deux de Coupe, ou L\'Étoile.',
     },
     {
-      question: 'Combien de temps faut-il pour rencontrer son âme sœur ?',
-      answer: 'Le timing dépend de trois facteurs : votre préparation intérieure (guérison des blessures passées), les cycles astrologiques (transits de Vénus, Jupiter en maison 7), et le karma à résoudre. En moyenne, 67% des personnes rencontrent leur âme sœur dans les 18 mois suivant un travail spirituel sérieux. Le tarot révèle votre timeline personnelle : quelques mois si vous êtes prêt, 1-3 ans si un travail intérieur est nécessaire. Forcer le timing retarde la rencontre. La patience consciente accélère paradoxalement le processus.',
+      question: 'Combien de temps pour trouver son âme sœur ?',
+      answer: 'Le timing dépend de trois facteurs : votre préparation intérieure (guérison des blessures passées), les cycles astrologiques (transits de Vénus, Jupiter en maison 7), et le karma à résoudre. La majorité des personnes rencontrent leur âme sœur dans les 18 mois suivant un travail spirituel sérieux. Le tarot révèle votre timeline personnelle : quelques mois si vous êtes prêt, 1-3 ans si un travail intérieur est nécessaire. Forcer le timing retarde la rencontre. La patience consciente accélère paradoxalement le processus.',
     },
     {
-      question: 'Peut-on avoir plusieurs âmes sœurs dans une vie ?',
+      question: 'A-t-on plusieurs âmes sœurs dans une vie ?',
       answer: 'Oui. Il existe différents types d\'âmes sœurs : âme sœur romantique (partenaire de vie), âmes sœurs platoniques (amis profonds), âmes sœurs karmiques (enseignants spirituels, parfois difficiles), flamme jumelle (miroir ultime, rare). On peut avoir 3-5 âmes sœurs majeures par vie, chacune avec un rôle spécifique dans notre évolution. L\'âme sœur romantique est celle avec qui construire une vie. Les autres nous préparent ou accompagnent notre chemin. Le tarot distingue chaque type selon les cartes qui apparaissent.',
     },
     {
-      question: 'Le tarot peut-il me dire où et quand je rencontrerai mon âme sœur ?',
-      answer: 'Oui, le tarot révèle le timing (saison, année), le contexte (travail, voyage, amis, activité spécifique), et les signes de reconnaissance. Précision : 72-85% pour le timing à 6-12 mois. Le tarot montre aussi les obstacles à lever avant la rencontre. Cartes de lieu : Cavaliers (contexte en mouvement), Monde (voyage), Huit de Bâton (rapidité), Quatre de Bâton (célébration/événement). La voyance affine ces informations pour une guidance ultra-précise. La rencontre arrive quand vous êtes vibratoire prêt.',
+      question: 'Le tarot peut-il prédire ma rencontre d\'âme sœur ?',
+      answer: 'Oui, le tarot révèle le timing (saison, année), le contexte (travail, voyage, amis, activité spécifique), et les signes de reconnaissance. La précision est remarquable pour le timing à 6-12 mois. Le tarot montre aussi les obstacles à lever avant la rencontre. Cartes de lieu : Cavaliers (contexte en mouvement), Monde (voyage), Huit de Bâton (rapidité), Quatre de Bâton (célébration/événement). La voyance affine ces informations pour une guidance ultra-précise. La rencontre arrive quand vous êtes vibratoire prêt.',
     },
     {
-      question: 'Faut-il chercher activement son âme sœur ou attendre passivement ?',
-      answer: 'Approche équilibrée : préparation active intérieure + ouverture passive extérieure. Actif : travail sur soi, guérison émotionnelle, sortir socialement, être disponible. Passif : lâcher-prise sur le contrôle, faire confiance au timing divin, ne pas forcer. 78% des âmes sœurs se rencontrent "par hasard" quand la personne a cessé de chercher désespérément mais reste ouverte. Le désespoir bloque, la sérénité attire. Le tarot guide votre action juste : quand agir, quand attendre.',
+      question: 'Faut-il chercher son âme sœur ou attendre ?',
+      answer: 'Approche équilibrée : préparation active intérieure + ouverture passive extérieure. Actif : travail sur soi, guérison émotionnelle, sortir socialement, être disponible. Passif : lâcher-prise sur le contrôle, faire confiance au timing divin, ne pas forcer. La plupart des âmes sœurs se rencontrent "par hasard" quand la personne a cessé de chercher désespérément mais reste ouverte. Le désespoir bloque, la sérénité attire. Le tarot guide votre action juste : quand agir, quand attendre.',
     },
     {
-      question: 'Quelle est la différence entre âme sœur et flamme jumelle ?',
-      answer: 'Âme sœur : connexion harmonieuse, relation stable et nourrissante, croissance douce, amour paisible, partenariat équilibré. Objectif : construire une vie ensemble, bonheur durable. Flamme jumelle : miroir intense, relation tumultueuse souvent, croissance explosive, amour passionnel, séparations-retrouvailles fréquentes. Objectif : éveil spirituel accéléré, pas nécessairement vie commune. L\'âme sœur est votre complément, la flamme jumelle votre reflet. 95% des gens cherchent l\'âme sœur (vie heureuse), pas la flamme jumelle (transformation intense).',
+      question: 'Quelle différence entre âme sœur et flamme jumelle ?',
+      answer: 'Âme sœur : connexion harmonieuse, relation stable et nourrissante, croissance douce, amour paisible, partenariat équilibré. Objectif : construire une vie ensemble, bonheur durable. Flamme jumelle : miroir intense, relation tumultueuse souvent, croissance explosive, amour passionnel, séparations-retrouvailles fréquentes. Objectif : éveil spirituel accéléré, pas nécessairement vie commune. L\'âme sœur est votre complément, la flamme jumelle votre reflet. La grande majorité des gens cherchent l\'âme sœur (vie heureuse), pas la flamme jumelle (transformation intense).',
     },
   ]);
 
@@ -70,10 +72,14 @@ export default function TrouverAmeSoeurPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(authorSchema) }}
+      />
 
       <header className="bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 text-white py-16 px-4">
         <div className="max-w-4xl mx-auto">
-          <Link href="/" className="text-white/80 hover:text-white mb-4 inline-block">← Retour</Link>
+          <Link href="/nouvelle-rencontre" className="text-white/80 hover:text-white mb-4 inline-block">← Retour aux Nouvelles Rencontres</Link>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">💫 Trouver son Âme Sœur</h1>
           <p className="text-xl opacity-95 mb-6">Guide complet pour reconnaître et attirer votre connexion spirituelle</p>
           <div className="flex gap-4 flex-wrap">
@@ -85,7 +91,7 @@ export default function TrouverAmeSoeurPage() {
 
       <div className="max-w-4xl mx-auto px-4 py-8">
         <div className="bg-white rounded-xl shadow-md p-6 mb-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-          <div><div className="text-3xl mb-1">💫</div><div className="text-2xl font-bold text-indigo-600">87%</div><div className="text-sm text-gray-600">Reconnexion</div></div>
+          <div><div className="text-3xl mb-1">💫</div><div className="text-2xl font-bold text-indigo-600">Élevée</div><div className="text-sm text-gray-600">Reconnexion</div></div>
           <div><div className="text-3xl mb-1">🔮</div><div className="text-2xl font-bold text-indigo-600">18 mois</div><div className="text-sm text-gray-600">Délai moyen</div></div>
           <div><div className="text-3xl mb-1">✨</div><div className="text-2xl font-bold text-indigo-600">4,200+</div><div className="text-sm text-gray-600">Unions guidées</div></div>
           <div><div className="text-3xl mb-1">⭐</div><div className="text-2xl font-bold text-indigo-600">4.8/5</div><div className="text-sm text-gray-600">398 avis</div></div>
@@ -112,6 +118,7 @@ export default function TrouverAmeSoeurPage() {
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-indigo-600">💎 Qu'est-ce qu'une Âme Sœur Vraiment ?</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">L'ame soeur est une personne avec qui vous partagez un lien spirituel preexistant, forge dans des vies anterieures. Vos ames se reconnaissent et cheminent ensemble pour evoluer mutuellement.</p>
           <p className="text-gray-700 mb-6">
             Avant de chercher votre <strong>âme sœur</strong>, il est essentiel de comprendre ce concept au-delà des clichés romantiques et des illusions hollywoodiennes.
           </p>
@@ -151,7 +158,7 @@ export default function TrouverAmeSoeurPage() {
                 <div>
                   <h4 className="font-semibold text-green-600 mb-1">1. Âme Sœur Romantique (Partenaire de Vie)</h4>
                   <p className="text-gray-700">
-                    C'est THE personne avec qui construire une vie, fonder une famille, vieillir ensemble. <strong>Connexion profonde + compatibilité pratique</strong>. Objectif : bonheur durable, partenariat équilibré, croissance mutuelle douce. C'est ce que 95% des gens cherchent vraiment.
+                    C'est THE personne avec qui construire une vie, fonder une famille, vieillir ensemble. <strong>Connexion profonde + compatibilité pratique</strong>. Objectif : bonheur durable, partenariat équilibré, croissance mutuelle douce. C'est ce que la grande majorité des gens cherchent vraiment.
                   </p>
                 </div>
                 <div>
@@ -204,6 +211,7 @@ export default function TrouverAmeSoeurPage() {
 
         <section id="signes" className="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-xl p-8 mb-8 border-2 border-indigo-200">
           <h2 className="text-3xl font-bold mb-6 text-gray-900">✨ Les 15 Signes que Vous Avez Rencontré Votre Âme Sœur</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Les signes principaux incluent une familiarite instantanee, des synchronicites repetees, un sentiment de « rentrer a la maison » et une croissance mutuelle acceleree. Cinq signes ou plus confirment la connexion.</p>
           <p className="text-gray-700 mb-6">
             Si vous vous demandez si une personne dans votre vie est votre <strong>âme sœur</strong>, voici les signes de reconnaissance universels. La présence de 5+ signes confirme fortement la connexion d'âmes sœurs.
           </p>
@@ -328,6 +336,7 @@ export default function TrouverAmeSoeurPage() {
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-indigo-600">🧘 Comment Se Préparer à Rencontrer Son Âme Sœur</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">La preparation passe par sept etapes : guerir les blessures passees, clarifier vos attentes, elever votre vibration, lacher prise sur le controle et agir dans le monde physique. Comptez 12 a 18 mois de travail interieur.</p>
           <p className="text-gray-700 mb-6">
             Attirer votre <strong>âme sœur</strong> nécessite une préparation intérieure. Vous n'attirez pas qui vous voulez, mais qui vous êtes. Élevez votre vibration pour attirer une âme élevée.
           </p>
@@ -404,6 +413,7 @@ export default function TrouverAmeSoeurPage() {
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-indigo-600">🔮 Le Tarot des Âmes Sœurs : Cartes Révélatrices</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Les cartes confirmant une connexion d'ame soeur sont Les Amoureux, le Deux de Coupe, l'Etoile, Temperance et le Soleil. Le Diable ou la Tour signalent au contraire un lien karmique toxique.</p>
           <p className="text-gray-700 mb-6">
             Le <strong>tarot</strong> identifie les connexions d'âmes sœurs avec une précision remarquable. Certaines cartes sont des marqueurs directs de cette union spirituelle.
           </p>
@@ -511,55 +521,56 @@ export default function TrouverAmeSoeurPage() {
 
         <section className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-xl p-8 mb-8 border-2 border-blue-200">
           <h2 className="text-3xl font-bold mb-6 text-gray-900">🌟 Où et Comment Rencontrer Son Âme Sœur</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Les ames soeurs se rencontrent principalement lors d'activites alignees avec leurs passions, par le cercle social ou dans des lieux spirituels. Multiplier les contextes augmente les chances.</p>
           <p className="text-gray-700 mb-6">
             Les <strong>âmes sœurs</strong> se rencontrent rarement par hasard total. L'univers crée des opportunités dans des contextes spécifiques. Voici les lieux et situations les plus fréquents.
           </p>
 
           <div className="space-y-4">
             <div className="bg-white rounded-lg p-5 border-l-4 border-blue-500">
-              <h3 className="font-bold mb-2 text-blue-700 text-lg">1. Activités Alignées avec Vos Passions (38%)</h3>
+              <h3 className="font-bold mb-2 text-blue-700 text-lg">1. Activités Alignées avec Vos Passions</h3>
               <p className="text-gray-700">
                 <strong>Cours, ateliers, événements</strong> liés à vos centres d'intérêt authentiques : spiritualité, yoga, art, musique, littérature, nature. Vous rencontrez quelqu'un partageant déjà valeurs et passions communes. Contexte idéal pour connexion profonde immédiate. Ne faites pas activité juste pour rencontrer, mais faites ce qui vous passionne vraiment.
               </p>
             </div>
 
             <div className="bg-white rounded-lg p-5 border-l-4 border-green-500">
-              <h3 className="font-bold mb-2 text-green-700 text-lg">2. À Travers le Cercle Social (27%)</h3>
+              <h3 className="font-bold mb-2 text-green-700 text-lg">2. À Travers le Cercle Social</h3>
               <p className="text-gray-700">
                 <strong>Ami d'ami, famille élargie, réseau professionnel</strong>. Quelqu'un dans votre orbite sociale vous présente votre âme sœur. Mentionnez que vous êtes disponible : l'univers utilise vos connexions humaines comme canal. Soirées, mariages, réunions familiales sont occasions fréquentes. Les gens qui vous connaissent peuvent identifier compatibilités.
               </p>
             </div>
 
             <div className="bg-white rounded-lg p-5 border-l-4 border-purple-500">
-              <h3 className="font-bold mb-2 text-purple-700 text-lg">3. Lieux Spirituels ou Sacrés (18%)</h3>
+              <h3 className="font-bold mb-2 text-purple-700 text-lg">3. Lieux Spirituels ou Sacrés</h3>
               <p className="text-gray-700">
                 <strong>Retraites spirituelles, centres de méditation, lieux de pèlerinage</strong>, nature sacrée (montagne, océan). Les âmes élevées se rencontrent dans lieux élevés. Si votre âme sœur est spirituelle, elle fréquente ces espaces. Énergie de ces lieux facilite reconnaissance instantanée. Beaucoup d'unions d'âmes sœurs débutent en contexte spirituel.
               </p>
             </div>
 
             <div className="bg-white rounded-lg p-5 border-l-4 border-pink-500">
-              <h3 className="font-bold mb-2 text-pink-700 text-lg">4. Situations Quotidiennes "Banales" (15%)</h3>
+              <h3 className="font-bold mb-2 text-pink-700 text-lg">4. Situations Quotidiennes "Banales"</h3>
               <p className="text-gray-700">
                 <strong>Café, librairie, transports, parc avec chien</strong>. L'univers crée rencontres qui semblent "hasard" : vous prenez café inhabituel un matin et voilà. Ces rencontres ordinaires sont en réalité orchestrations divines. D'où importance d'être présent, ouvert, et de ne pas rejeter opportunités sous prétexte que le contexte n'est pas "romantique".
               </p>
             </div>
 
             <div className="bg-white rounded-lg p-5 border-l-4 border-yellow-500">
-              <h3 className="font-bold mb-2 text-yellow-700 text-lg">5. En Ligne / Applications (12%)</h3>
+              <h3 className="font-bold mb-2 text-yellow-700 text-lg">5. En Ligne / Applications</h3>
               <p className="text-gray-700">
                 Oui, même via <strong>applications de rencontre ou réseaux sociaux</strong>. Si vous êtes aligné vibratoire, l'univers utilise TOUS les canaux disponibles, y compris digitaux. Mais approche consciente : pas swipe compulsif, mais intention claire et discernement. Beaucoup d'âmes sœurs modernes se rencontrent en ligne puis reconnaissent connexion IRL.
               </p>
             </div>
 
             <div className="bg-white rounded-lg p-5 border-l-4 border-red-500">
-              <h3 className="font-bold mb-2 text-red-700 text-lg">6. Durant Voyages ou Déplacements (8%)</h3>
+              <h3 className="font-bold mb-2 text-red-700 text-lg">6. Durant Voyages ou Déplacements</h3>
               <p className="text-gray-700">
                 <strong>Voyage, expatriation, conférence professionnelle</strong> dans autre ville/pays. Le mouvement géographique crée opportunités de rencontres improbables autrement. Si votre âme sœur n'est pas dans votre ville actuelle, l'univers vous fera voyager ou la fera venir. Restez ouvert lors de déplacements.
               </p>
             </div>
 
             <div className="bg-white rounded-lg p-5 border-l-4 border-indigo-500">
-              <h3 className="font-bold mb-2 text-indigo-700 text-lg">7. Retrouvailles d'Ancienne Connaissance (7%)</h3>
+              <h3 className="font-bold mb-2 text-indigo-700 text-lg">7. Retrouvailles d'Ancienne Connaissance</h3>
               <p className="text-gray-700">
                 Quelqu'un que vous <strong>connaissiez déjà</strong> (école, ancien collègue, voisin d'enfance) réapparaît dans votre vie. Cette fois, vous êtes tous deux prêts et vous reconnaissez mutuellement comme âmes sœurs. Le timing avant n'était pas juste. Maintenant oui. Ces "retrouvailles destinées" sont particulièrement puissantes.
               </p>
@@ -576,6 +587,7 @@ export default function TrouverAmeSoeurPage() {
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-indigo-600">⚠️ Erreurs Fréquentes Qui Retardent la Rencontre</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Les erreurs qui retardent la rencontre sont : chercher pour combler un vide, rester attache a un ex, avoir des criteres superficiels, etre impatient et negliger le travail interieur.</p>
           <p className="text-gray-700 mb-6">
             Ces blocages inconscients empêchent l'âme sœur d'entrer dans votre vie, même si vous pensez être "prêt".
           </p>
@@ -645,35 +657,36 @@ export default function TrouverAmeSoeurPage() {
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold mb-8 text-indigo-600">❓ Questions Fréquentes sur l'Âme Sœur</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Decouvrez les reponses aux questions les plus posees sur la reconnaissance, le timing et la recherche de votre ame soeur selon le tarot et la voyance.</p>
           <div className="space-y-6">
             <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Comment savoir si j'ai déjà rencontré mon âme sœur ?</h3>
+              <h3 className="text-xl font-bold mb-3 text-gray-900">Comment savoir si c'est mon âme sœur ?</h3>
               <p className="text-gray-700 leading-relaxed">Votre <strong>âme sœur</strong> se reconnaît à plusieurs signes distinctifs : sentiment de familiarité instantanée ("on se connaît déjà"), connexion émotionnelle profonde dès les premiers échanges, synchronicités répétées (mêmes pensées, même timing), sentiment d'être "chez soi" en sa présence, communication intuitive (comprendre sans mots), croissance mutuelle accélérée, acceptation totale de qui vous êtes. Si vous éprouvez 5+ de ces signes avec quelqu'un : c'est probablement votre âme sœur. Le tarot confirme avec Les Amoureux, Deux de Coupe, ou L'Étoile.</p>
             </div>
 
             <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Combien de temps faut-il pour rencontrer son âme sœur ?</h3>
-              <p className="text-gray-700 leading-relaxed">Le <strong>timing</strong> dépend de trois facteurs : votre préparation intérieure (guérison des blessures passées), les cycles astrologiques (transits de Vénus, Jupiter en maison 7), et le karma à résoudre. En moyenne, 67% des personnes rencontrent leur âme sœur dans les 18 mois suivant un travail spirituel sérieux. Le tarot révèle votre timeline personnelle : quelques mois si vous êtes prêt, 1-3 ans si un travail intérieur est nécessaire. Forcer le timing retarde la rencontre. La patience consciente accélère paradoxalement le processus.</p>
+              <h3 className="text-xl font-bold mb-3 text-gray-900">Combien de temps pour trouver son âme sœur ?</h3>
+              <p className="text-gray-700 leading-relaxed">Le <strong>timing</strong> dépend de trois facteurs : votre préparation intérieure (guérison des blessures passées), les cycles astrologiques (transits de Vénus, Jupiter en maison 7), et le karma à résoudre. La majorité des personnes rencontrent leur âme sœur dans les 18 mois suivant un travail spirituel sérieux. Le tarot révèle votre timeline personnelle : quelques mois si vous êtes prêt, 1-3 ans si un travail intérieur est nécessaire. Forcer le timing retarde la rencontre. La patience consciente accélère paradoxalement le processus.</p>
             </div>
 
             <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Peut-on avoir plusieurs âmes sœurs dans une vie ?</h3>
+              <h3 className="text-xl font-bold mb-3 text-gray-900">A-t-on plusieurs âmes sœurs dans une vie ?</h3>
               <p className="text-gray-700 leading-relaxed">Oui. Il existe <strong>différents types d'âmes sœurs</strong> : âme sœur romantique (partenaire de vie), âmes sœurs platoniques (amis profonds), âmes sœurs karmiques (enseignants spirituels, parfois difficiles), flamme jumelle (miroir ultime, rare). On peut avoir 3-5 âmes sœurs majeures par vie, chacune avec un rôle spécifique dans notre évolution. L'âme sœur romantique est celle avec qui construire une vie. Les autres nous préparent ou accompagnent notre chemin. Le tarot distingue chaque type selon les cartes qui apparaissent.</p>
             </div>
 
             <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Le tarot peut-il me dire où et quand je rencontrerai mon âme sœur ?</h3>
-              <p className="text-gray-700 leading-relaxed">Oui, le <strong>tarot révèle le timing</strong> (saison, année), le contexte (travail, voyage, amis, activité spécifique), et les signes de reconnaissance. Précision : 72-85% pour le timing à 6-12 mois. Le tarot montre aussi les obstacles à lever avant la rencontre. Cartes de lieu : Cavaliers (contexte en mouvement), Monde (voyage), Huit de Bâton (rapidité), Quatre de Bâton (célébration/événement). La voyance affine ces informations pour une guidance ultra-précise. La rencontre arrive quand vous êtes vibratoire prêt.</p>
+              <h3 className="text-xl font-bold mb-3 text-gray-900">Le tarot peut-il prédire ma rencontre d'âme sœur ?</h3>
+              <p className="text-gray-700 leading-relaxed">Oui, le <strong>tarot révèle le timing</strong> (saison, année), le contexte (travail, voyage, amis, activité spécifique), et les signes de reconnaissance. La précision est remarquable pour le timing à 6-12 mois. Le tarot montre aussi les obstacles à lever avant la rencontre. Cartes de lieu : Cavaliers (contexte en mouvement), Monde (voyage), Huit de Bâton (rapidité), Quatre de Bâton (célébration/événement). La voyance affine ces informations pour une guidance ultra-précise. La rencontre arrive quand vous êtes vibratoire prêt.</p>
             </div>
 
             <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Faut-il chercher activement son âme sœur ou attendre passivement ?</h3>
-              <p className="text-gray-700 leading-relaxed"><strong>Approche équilibrée</strong> : préparation active intérieure + ouverture passive extérieure. Actif : travail sur soi, guérison émotionnelle, sortir socialement, être disponible. Passif : lâcher-prise sur le contrôle, faire confiance au timing divin, ne pas forcer. 78% des âmes sœurs se rencontrent "par hasard" quand la personne a cessé de chercher désespérément mais reste ouverte. Le désespoir bloque, la sérénité attire. Le tarot guide votre action juste : quand agir, quand attendre.</p>
+              <h3 className="text-xl font-bold mb-3 text-gray-900">Faut-il chercher son âme sœur ou attendre ?</h3>
+              <p className="text-gray-700 leading-relaxed"><strong>Approche équilibrée</strong> : préparation active intérieure + ouverture passive extérieure. Actif : travail sur soi, guérison émotionnelle, sortir socialement, être disponible. Passif : lâcher-prise sur le contrôle, faire confiance au timing divin, ne pas forcer. La plupart des âmes sœurs se rencontrent "par hasard" quand la personne a cessé de chercher désespérément mais reste ouverte. Le désespoir bloque, la sérénité attire. Le tarot guide votre action juste : quand agir, quand attendre.</p>
             </div>
 
             <div>
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Quelle est la différence entre âme sœur et flamme jumelle ?</h3>
-              <p className="text-gray-700 leading-relaxed"><strong>Âme sœur</strong> : connexion harmonieuse, relation stable et nourrissante, croissance douce, amour paisible, partenariat équilibré. Objectif : construire une vie ensemble, bonheur durable. <strong>Flamme jumelle</strong> : miroir intense, relation tumultueuse souvent, croissance explosive, amour passionnel, séparations-retrouvailles fréquentes. Objectif : éveil spirituel accéléré, pas nécessairement vie commune. L'âme sœur est votre complément, la flamme jumelle votre reflet. 95% des gens cherchent l'âme sœur (vie heureuse), pas la flamme jumelle (transformation intense).</p>
+              <h3 className="text-xl font-bold mb-3 text-gray-900">Quelle différence entre âme sœur et flamme jumelle ?</h3>
+              <p className="text-gray-700 leading-relaxed"><strong>Âme sœur</strong> : connexion harmonieuse, relation stable et nourrissante, croissance douce, amour paisible, partenariat équilibré. Objectif : construire une vie ensemble, bonheur durable. <strong>Flamme jumelle</strong> : miroir intense, relation tumultueuse souvent, croissance explosive, amour passionnel, séparations-retrouvailles fréquentes. Objectif : éveil spirituel accéléré, pas nécessairement vie commune. L'âme sœur est votre complément, la flamme jumelle votre reflet. La grande majorité des gens cherchent l'âme sœur (vie heureuse), pas la flamme jumelle (transformation intense).</p>
             </div>
           </div>
         </section>

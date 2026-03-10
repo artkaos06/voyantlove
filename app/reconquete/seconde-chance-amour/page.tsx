@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { getArticleSchema, getBreadcrumbSchema, getFAQSchema } from '@/lib/schema';
+import { getArticleSchema, getBreadcrumbSchema, getFAQSchema, getAuthorSchema } from '@/lib/schema';
 import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
@@ -10,14 +10,14 @@ export const metadata: Metadata = {
   title: 'Seconde Chance en Amour : Donner une Nouvelle Opportunité',
   description: 'Faut-il donner une seconde chance en amour ? Le tarot guide votre décision pour reconstruire ou tourner la page.',
   keywords: ['seconde chance', 'nouvelle opportunité', 'pardon', 'reconstruction'],
-  alternates: { canonical: 'https://voyantlove.fr/reconquete/seconde-chance-amour' },
+  alternates: { canonical: 'https://voyantlove.fr/reconquete/seconde-chance-amour/' },
 };
 
 export default function SecondeChancePage() {
   const articleSchema = getArticleSchema({
     title: 'Seconde Chance en Amour : Donner une Nouvelle Opportunité',
     description: 'Faut-il donner une seconde chance en amour ? Le tarot guide votre décision pour reconstruire ou tourner la page.',
-    url: 'https://voyantlove.fr/reconquete/seconde-chance-amour',
+    url: 'https://voyantlove.fr/reconquete/seconde-chance-amour/',
     datePublished: '2026-01-18',
     dateModified: new Date().toISOString().split('T')[0],
     keywords: ['seconde chance', 'nouvelle opportunité', 'pardon', 'reconstruction'],
@@ -25,33 +25,35 @@ export default function SecondeChancePage() {
 
   const breadcrumbSchema = getBreadcrumbSchema([
     { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'Reconquête', url: 'https://voyantlove.fr/reconquete' },
-    { name: 'Seconde Chance en Amour', url: 'https://voyantlove.fr/reconquete/seconde-chance-amour' },
+    { name: 'Reconquête', url: 'https://voyantlove.fr/reconquete/' },
+    { name: 'Seconde Chance en Amour', url: 'https://voyantlove.fr/reconquete/seconde-chance-amour/' },
   ]);
+
+  const authorSchema = getAuthorSchema();
 
   const faqSchema = getFAQSchema([
     {
       question: 'Faut-il donner une seconde chance après une infidélité ?',
-      answer: 'La seconde chance après infidélité nécessite des conditions strictes : remords authentique, coupure totale avec la tierce personne, thérapie de couple, transparence complète, temps de reconstruction (minimum 6 mois). Le tarot révèle si le partenaire a vraiment changé. Selon les statistiques, 35% des couples surmontent l\'infidélité avec succès quand ces conditions sont réunies.',
+      answer: 'La seconde chance après infidélité nécessite des conditions strictes : remords authentique, coupure totale avec la tierce personne, thérapie de couple, transparence complète, temps de reconstruction (minimum 6 mois). Le tarot révèle si le partenaire a vraiment changé. Certains couples parviennent à surmonter l\'infidélité avec succès quand ces conditions sont strictement réunies.',
     },
     {
-      question: 'Combien de secondes chances peut-on donner en amour ?',
+      question: 'Combien de secondes chances donner en amour ?',
       answer: 'Une seule véritable seconde chance devrait suffire. Si les mêmes problèmes se répètent après cette opportunité, c\'est le signe que la relation n\'est pas viable. Multiplier les chances crée un schéma toxique où votre partenaire ne prend pas vos limites au sérieux. Le tarot aide à identifier quand arrêter ce cycle.',
     },
     {
-      question: 'Quelles sont les conditions pour réussir une seconde chance ?',
-      answer: 'Sept conditions essentielles : identification claire des causes d\'échec, changements concrets de comportement, pardon authentique sans rancune, communication ouverte établie, engagement mutuel équilibré, soutien extérieur si nécessaire, patience dans la reconstruction. Sans ces éléments, le taux d\'échec atteint 85%.',
+      question: 'Quelles conditions pour réussir une seconde chance ?',
+      answer: 'Sept conditions essentielles : identification claire des causes d\'échec, changements concrets de comportement, pardon authentique sans rancune, communication ouverte établie, engagement mutuel équilibré, soutien extérieur si nécessaire, patience dans la reconstruction. Sans ces éléments, l\'échec est quasi certain.',
     },
     {
-      question: 'Comment savoir si on doit donner une seconde chance ?',
+      question: 'Donner une seconde chance : comment décider ?',
       answer: 'Posez-vous ces questions : Les problèmes originaux sont-ils résolus ? Mon partenaire a-t-il vraiment changé ? Ai-je pardonné sincèrement ? Cette relation me rend-elle heureux ? Mes proches soutiennent-ils ce choix ? Le tarot avec Le Jugement ou Les Amoureux confirme une seconde chance constructive.',
     },
     {
-      question: 'Quelle est la différence entre seconde chance et répétition de schéma ?',
+      question: 'Seconde chance ou répétition de schéma toxique ?',
       answer: 'Une vraie seconde chance implique évolution, apprentissage et changements concrets des deux côtés. La répétition de schéma montre : mêmes comportements, mêmes conflits, promesses non tenues, absence de croissance. Le tarot avec La Roue de Fortune inversée ou Le Huit de Coupe alerte sur la répétition toxique.',
     },
     {
-      question: 'Combien de temps faut-il pour reconstruire après une seconde chance ?',
+      question: 'Combien de temps pour reconstruire son couple ?',
       answer: 'La reconstruction authentique demande 4 à 8 mois minimum. Les premières semaines testent la sincérité, les mois suivants reconstruisent la confiance progressivement. Précipiter ce processus garantit l\'échec. Le tarot révèle le timing idéal et les étapes à franchir pour une réconciliation durable.',
     },
   ]);
@@ -70,9 +72,13 @@ export default function SecondeChancePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(authorSchema) }}
+      />
       <header className="bg-gradient-to-r from-green-500 via-teal-500 to-cyan-500 text-white py-16 px-4">
         <div className="max-w-4xl mx-auto">
-          <Link href="/" className="text-white/80 hover:text-white mb-4 inline-block">← Retour</Link>
+          <Link href="/reconquete" className="text-white/80 hover:text-white mb-4 inline-block">← Retour à la Reconquête</Link>
           <h1 className="text-4xl font-bold mb-4">🌱 Seconde Chance en Amour</h1>
           <p className="text-xl opacity-95 mb-6">Donner une nouvelle opportunité selon le tarot</p>
           <a href="#consultation" className="bg-white text-green-600 px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition inline-block">Consultation</a>
@@ -81,9 +87,9 @@ export default function SecondeChancePage() {
       <div className="max-w-4xl mx-auto px-4 py-8">
         <div className="bg-white rounded-xl p-6 mb-8 grid grid-cols-4 gap-4 text-center">
           <div><div className="text-3xl">⭐</div><div className="text-2xl font-bold text-green-600">4.8/5</div></div>
-          <div><div className="text-3xl">🌱</div><div className="text-2xl font-bold text-green-600">68%</div></div>
+          <div><div className="text-3xl">🌱</div><div className="text-2xl font-bold text-green-600">Variable</div></div>
           <div><div className="text-3xl">⏰</div><div className="text-2xl font-bold text-green-600">4-8m</div></div>
-          <div><div className="text-3xl">💚</div><div className="text-2xl font-bold text-green-600">85%</div></div>
+          <div><div className="text-3xl">💚</div><div className="text-2xl font-bold text-green-600">Élevée</div></div>
         </div>
 
         <EEATSignal
@@ -92,7 +98,7 @@ export default function SecondeChancePage() {
         />
 
         <article className="bg-white rounded-xl p-8 mb-8 border-t-4 border-green-500">
-          <p className="text-lg mb-4">Donner une <strong>seconde chance en amour</strong> est l'une des décisions les plus délicates de votre vie sentimentale. Selon les études, 68% des couples qui tentent une <strong>nouvelle opportunité</strong> échouent à nouveau dans les 12 mois, souvent parce que les conditions essentielles n'étaient pas réunies. Le <strong>tarot</strong> révèle si cette seconde chance mènera au bonheur durable ou à la répétition des mêmes erreurs douloureuses.</p>
+          <p className="text-lg mb-4">Donner une <strong>seconde chance en amour</strong> est l'une des décisions les plus délicates de votre vie sentimentale. La majorité des couples qui tentent une <strong>nouvelle opportunité</strong> échouent à nouveau dans les 12 mois, souvent parce que les conditions essentielles n'étaient pas réunies. Le <strong>tarot</strong> révèle si cette seconde chance mènera au bonheur durable ou à la répétition des mêmes erreurs douloureuses.</p>
           <p className="text-lg mb-4">Une <strong>seconde chance réussie</strong> exige bien plus que de l'amour : elle nécessite une évolution profonde des deux partenaires, un <strong>pardon</strong> authentique sans rancune cachée, et la résolution concrète des causes originales de la séparation. Le <strong>tarot de la reconstruction amoureuse</strong> éclaire ces aspects essentiels pour vous guider vers la meilleure décision.</p>
           <p className="text-lg">Comprendre la différence entre une vraie <strong>seconde chance constructive</strong> et une simple répétition de schéma toxique vous protège de nouvelles souffrances. Cette guidance complète vous aide à identifier les conditions de réussite, les signes d'alerte, et le chemin vers une <strong>reconstruction solide de votre couple</strong>. Pour en savoir plus sur les <Link href="/reconquete" className="text-green-600 hover:text-green-800 underline font-medium">retrouvailles amoureuses</Link>, découvrez toutes nos guidances spécialisées.</p>
         </article>
@@ -101,6 +107,7 @@ export default function SecondeChancePage() {
 
         <section className="bg-white rounded-xl p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-green-600">Les 7 Conditions Essentielles pour Réussir une Seconde Chance</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Les sept conditions d'une seconde chance réussie sont : identifier les causes d'échec, montrer des changements concrets, pardonner sans rancune, communiquer ouvertement, s'engager mutuellement, prendre le temps et aligner vos objectifs.</p>
           <p className="text-gray-700 mb-6">Une <strong>seconde chance en amour</strong> ne réussit que si ces sept conditions sont réunies. L'absence d'une seule d'entre elles multiplie les risques d'échec.</p>
 
           <div className="space-y-5">
@@ -164,6 +171,7 @@ export default function SecondeChancePage() {
 
         <section className="bg-white rounded-xl p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-red-600">Quand NE PAS Donner de Seconde Chance : Les Signes d'Alerte</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Ne donnez jamais de seconde chance en cas de violence, d'infidélités multiples, d'absence de changement, de ruptures-réconciliations répétées, de refus d'assumer ses torts, de rancune persistante ou de dépendance affective.</p>
           <p className="text-gray-700 mb-6">Certaines situations ne méritent pas de <strong>seconde chance</strong>. Reconnaître ces signaux protège votre santé émotionnelle et vous évite des années de souffrance.</p>
 
           <div className="space-y-4">
@@ -174,7 +182,7 @@ export default function SecondeChancePage() {
 
             <div className="bg-red-50 p-5 border-l-4 border-red-600 rounded-r-lg">
               <h3 className="font-bold text-red-700 mb-2 text-lg">Infidélités Multiples Sans Remords Réel</h3>
-              <p className="text-gray-700">Une infidélité peut, dans de rares cas, être surmontée si le partenaire montre des remords authentiques et coupe tout contact avec la tierce personne. Mais des infidélités répétées révèlent un schéma de comportement profond. Si votre partenaire minimise, justifie ou rejette la responsabilité sur vous, il n'a pas la maturité pour changer. Taux d'échec : 92%.</p>
+              <p className="text-gray-700">Une infidélité peut, dans de rares cas, être surmontée si le partenaire montre des remords authentiques et coupe tout contact avec la tierce personne. Mais des infidélités répétées révèlent un schéma de comportement profond. Si votre partenaire minimise, justifie ou rejette la responsabilité sur vous, il n'a pas la maturité pour changer. L'échec est alors quasi certain.</p>
             </div>
 
             <div className="bg-red-50 p-5 border-l-4 border-red-600 rounded-r-lg">
@@ -212,6 +220,7 @@ export default function SecondeChancePage() {
 
         <section className="bg-white rounded-xl p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-green-600">Les 4 Phases de Reconstruction d'un Couple</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">La reconstruction d'un couple après une seconde chance suit quatre phases : prise de contact prudente pendant 2 à 4 semaines, reconstruction de la confiance sur 2 à 3 mois, consolidation avec nouveaux projets, puis stabilisation et engagement renouvelé.</p>
           <p className="text-gray-700 mb-6">La <strong>reconstruction d'une relation</strong> après une <strong>seconde chance</strong> suit un processus prévisible en quatre phases. Chacune est essentielle et ne peut être précipitée.</p>
 
           <div className="space-y-6">
@@ -302,6 +311,7 @@ export default function SecondeChancePage() {
 
         <section className="bg-white rounded-xl p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-green-600">Seconde Chance vs Répétition de Schéma : Faites la Différence</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Une vraie seconde chance se distingue d'une répétition de schéma par sept critères : le timing de réflexion, les changements visibles, la qualité de communication, la prise de responsabilité, l'équilibre de l'engagement, les émotions ressenties et l'historique du couple.</p>
           <p className="text-gray-700 mb-6">Il est crucial de distinguer une vraie <strong>seconde chance constructive</strong> d'une simple <strong>répétition de schéma toxique</strong>. Voici comment les différencier.</p>
 
           <div className="overflow-x-auto">
@@ -366,6 +376,7 @@ export default function SecondeChancePage() {
 
         <section className="bg-gradient-to-br from-green-50 to-teal-50 rounded-xl p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-teal-700">🔮 Guidance Tarot pour la Seconde Chance</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Le tarot guide votre décision de seconde chance : Le Jugement, Les Amoureux, La Tempérance et L'Etoile sont des feux verts, tandis que Le Diable, La Tour, le Huit de Coupe et La Roue inversée signalent un refus nécessaire.</p>
           <p className="text-gray-700 mb-6">Le <strong>tarot</strong> révèle si cette <strong>seconde chance en amour</strong> est guidée par les énergies constructives ou destructrices. Voici les cartes clés pour votre décision.</p>
 
           <div className="bg-white p-6 rounded-lg mb-6">
@@ -427,35 +438,36 @@ export default function SecondeChancePage() {
 
         <section className="bg-white rounded-xl p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-green-600">Questions Fréquentes sur la Seconde Chance en Amour</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Retrouvez les réponses aux questions clés sur la seconde chance : après une infidélité, nombre de chances à donner, conditions de réussite, comment décider, différence avec un schéma répétitif et durée de reconstruction.</p>
 
           <div className="space-y-6">
             <div className="border-b border-gray-200 pb-6">
               <h3 className="font-bold text-lg text-gray-800 mb-3">Faut-il donner une seconde chance après une infidélité ?</h3>
-              <p className="text-gray-700">La <strong>seconde chance après infidélité</strong> nécessite des conditions strictes : remords authentique, coupure totale avec la tierce personne, thérapie de couple, transparence complète, temps de reconstruction (minimum 6 mois). Le tarot révèle si le partenaire a vraiment changé. Selon les statistiques, 35% des couples surmontent l'infidélité avec succès quand ces conditions sont réunies. Sans elles, le taux d'échec atteint 91%.</p>
+              <p className="text-gray-700">La <strong>seconde chance après infidélité</strong> nécessite des conditions strictes : remords authentique, coupure totale avec la tierce personne, thérapie de couple, transparence complète, temps de reconstruction (minimum 6 mois). Le tarot révèle si le partenaire a vraiment changé. Certains couples parviennent à surmonter l'infidélité avec succès quand ces conditions sont strictement réunies. Sans elles, l'échec est quasi certain.</p>
             </div>
 
             <div className="border-b border-gray-200 pb-6">
-              <h3 className="font-bold text-lg text-gray-800 mb-3">Combien de secondes chances peut-on donner en amour ?</h3>
+              <h3 className="font-bold text-lg text-gray-800 mb-3">Combien de secondes chances donner en amour ?</h3>
               <p className="text-gray-700">Une seule véritable <strong>seconde chance</strong> devrait suffire. Si les mêmes problèmes se répètent après cette opportunité, c'est le signe que la relation n'est pas viable. Multiplier les chances crée un schéma toxique où votre partenaire ne prend pas vos limites au sérieux. Le tarot aide à identifier quand arrêter ce cycle et protéger votre bien-être émotionnel.</p>
             </div>
 
             <div className="border-b border-gray-200 pb-6">
-              <h3 className="font-bold text-lg text-gray-800 mb-3">Quelles sont les conditions pour réussir une seconde chance ?</h3>
-              <p className="text-gray-700">Sept conditions essentielles : identification claire des causes d'échec, changements concrets de comportement, pardon authentique sans rancune, communication ouverte établie, engagement mutuel équilibré, soutien extérieur si nécessaire, patience dans la <strong>reconstruction</strong>. Sans ces éléments, le taux d'échec atteint 85%. Le tarot avec La Tempérance et Le Pape confirme la présence de ces conditions.</p>
+              <h3 className="font-bold text-lg text-gray-800 mb-3">Quelles conditions pour réussir une seconde chance ?</h3>
+              <p className="text-gray-700">Sept conditions essentielles : identification claire des causes d'échec, changements concrets de comportement, pardon authentique sans rancune, communication ouverte établie, engagement mutuel équilibré, soutien extérieur si nécessaire, patience dans la <strong>reconstruction</strong>. Sans ces éléments, l'échec est quasi certain. Le tarot avec La Tempérance et Le Pape confirme la présence de ces conditions.</p>
             </div>
 
             <div className="border-b border-gray-200 pb-6">
-              <h3 className="font-bold text-lg text-gray-800 mb-3">Comment savoir si on doit donner une seconde chance ?</h3>
+              <h3 className="font-bold text-lg text-gray-800 mb-3">Donner une seconde chance : comment décider ?</h3>
               <p className="text-gray-700">Posez-vous ces questions cruciales : Les problèmes originaux sont-ils résolus ? Mon partenaire a-t-il vraiment changé (preuves concrètes) ? Ai-je pardonné sincèrement ? Cette relation me rend-elle heureux ou anxieux ? Mes proches soutiennent-ils ce choix ? Le <strong>tarot</strong> avec Le Jugement ou Les Amoureux confirme une seconde chance constructive. Si vous répondez "non" à plus de deux questions, refusez.</p>
             </div>
 
             <div className="border-b border-gray-200 pb-6">
-              <h3 className="font-bold text-lg text-gray-800 mb-3">Quelle est la différence entre seconde chance et répétition de schéma ?</h3>
+              <h3 className="font-bold text-lg text-gray-800 mb-3">Seconde chance ou répétition de schéma toxique ?</h3>
               <p className="text-gray-700">Une vraie <strong>seconde chance</strong> implique évolution, apprentissage et changements concrets des deux côtés. La <strong>répétition de schéma</strong> montre : mêmes comportements, mêmes conflits, promesses non tenues, absence de croissance. Le tarot avec La Roue de Fortune inversée ou Le Huit de Coupe alerte sur la répétition toxique où vous tournez en rond sans progresser.</p>
             </div>
 
             <div>
-              <h3 className="font-bold text-lg text-gray-800 mb-3">Combien de temps faut-il pour reconstruire après une seconde chance ?</h3>
+              <h3 className="font-bold text-lg text-gray-800 mb-3">Combien de temps pour reconstruire son couple ?</h3>
               <p className="text-gray-700">La <strong>reconstruction authentique</strong> demande 4 à 8 mois minimum. Les premières semaines testent la sincérité, les mois suivants reconstruisent la confiance progressivement. Précipiter ce processus garantit l'échec. Le tarot révèle le timing idéal et les étapes à franchir pour une réconciliation durable. Patience et cohérence sont les clés du succès.</p>
             </div>
           </div>

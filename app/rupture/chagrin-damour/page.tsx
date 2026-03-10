@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { getArticleSchema, getFAQSchema, getBreadcrumbSchema } from '@/lib/schema';
+import { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getAuthorSchema } from '@/lib/schema';
 import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
@@ -10,14 +10,14 @@ export const metadata: Metadata = {
   title: 'Chagrin d\'Amour : Guérir et Surmonter selon le Tarot',
   description: 'Comment surmonter un chagrin d\'amour avec la voyance ? Processus de guérison, timing de reconstruction et retrouver la joie de vivre.',
   keywords: ['chagrin d\'amour', 'peine de cœur', 'cœur brisé', 'guérir chagrin', 'surmonter peine'],
-  alternates: { canonical: 'https://voyantlove.fr/rupture/chagrin-damour' },
+  alternates: { canonical: 'https://voyantlove.fr/rupture/chagrin-damour/' },
 };
 
 export default function ChagrinAmourPage() {
   const articleSchema = getArticleSchema({
     title: 'Chagrin d\'Amour : Guérir et Surmonter selon le Tarot',
     description: 'Comment surmonter un chagrin d\'amour avec la voyance ? Processus de guérison, timing de reconstruction et retrouver la joie de vivre.',
-    url: 'https://voyantlove.fr/rupture/chagrin-damour',
+    url: 'https://voyantlove.fr/rupture/chagrin-damour/',
     datePublished: '2026-01-13',
     dateModified: new Date().toISOString().split('T')[0],
     keywords: ['chagrin d\'amour', 'peine de cœur', 'cœur brisé', 'guérir chagrin', 'surmonter peine'],
@@ -25,7 +25,7 @@ export default function ChagrinAmourPage() {
 
   const faqSchema = getFAQSchema([
     {
-      question: 'Combien de temps dure un chagrin ?',
+      question: 'Combien de temps dure un chagrin d\'amour ?',
       answer: 'La durée d\'un chagrin d\'amour varie considérablement d\'une personne à l\'autre, mais la moyenne se situe entre 3 et 6 mois pour une relation significative. Plusieurs facteurs influencent cette durée : la longueur de la relation, l\'intensité de l\'attachement émotionnel, les circonstances de la séparation et votre propre capacité de résilience. Le tarot peut révéler votre timeline personnelle de guérison en identifiant les blocages énergétiques qui ralentissent le processus. L\'important n\'est pas la vitesse de guérison, mais sa profondeur. Une guérison trop rapide en surface cache souvent des blessures non traitées qui resurgiront dans vos futures relations.',
     },
     {
@@ -33,20 +33,22 @@ export default function ChagrinAmourPage() {
       answer: 'Plusieurs signes concrets indiquent que votre guérison émotionnelle est complète. Vous pensez rarement à votre ex, et lorsque cela arrive, les souvenirs ne provoquent plus de douleur vive mais une nostalgie douce et détachée. Vous ressentez de la curiosité pour de nouvelles rencontres, vous avez retrouvé votre joie de vivre indépendamment de toute relation, et vous pouvez sincèrement souhaiter du bonheur à votre ex sans amertume. Le tarot confirme cette ouverture émotionnelle avec l\'apparition de cartes comme L\'Étoile ou l\'As de Coupe dans vos tirages. La guérison complète signifie aussi ne plus comparer chaque nouvelle personne à votre ancien partenaire.',
     },
     {
-      question: 'Normal d\'avoir mal après mois ?',
+      question: 'Normal d\'avoir mal des mois après une rupture ?',
       answer: 'Oui, il est tout à fait normal de ressentir encore de la douleur plusieurs mois après une rupture, surtout lorsqu\'il s\'agissait d\'une relation longue ou particulièrement intense. Le processus de deuil amoureux n\'est pas linéaire et comporte souvent des rechutes temporaires, même après des périodes d\'amélioration. Certaines dates anniversaires, certains lieux ou certaines chansons peuvent raviver momentanément la souffrance. Si après 12 mois la douleur reste aussi vive qu\'au premier jour et empêche votre fonctionnement quotidien, il est recommandé de consulter un thérapeute professionnel en complément d\'un accompagnement par le tarot. L\'un n\'exclut pas l\'autre : la voyance éclaire le chemin spirituel tandis que la thérapie traite les mécanismes émotionnels profonds.',
     },
     {
-      question: 'Voyance accélère guérison ?',
+      question: 'La voyance accélère-t-elle la guérison ?',
       answer: 'La voyance peut effectivement accélérer le processus de guérison émotionnelle de plusieurs façons complémentaires. Elle apporte d\'abord la clarté sur le « pourquoi » de la rupture, ce qui facilite l\'acceptation intellectuelle et émotionnelle. Ensuite, elle offre une rassurance sur le « quand », en identifiant les périodes propices à la reconstruction. Enfin, elle fournit une guidance concrète sur les actions à entreprendre pour avancer. La compréhension spirituelle de votre situation, notamment à travers les arcanes du tarot et les transits astrologiques, permet de donner un sens à la souffrance et de la transformer en croissance personnelle. Beaucoup de consultants témoignent d\'un soulagement significatif dès la première consultation.',
     },
   ]);
 
   const breadcrumbSchema = getBreadcrumbSchema([
     { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'Rupture', url: 'https://voyantlove.fr/rupture' },
-    { name: 'Chagrin d\'Amour', url: 'https://voyantlove.fr/rupture/chagrin-damour' },
+    { name: 'Rupture', url: 'https://voyantlove.fr/rupture/' },
+    { name: 'Chagrin d\'Amour', url: 'https://voyantlove.fr/rupture/chagrin-damour/' },
   ]);
+
+  const authorSchema = getAuthorSchema();
 
   return (
     <main className="min-h-screen bg-gray-50">
@@ -62,9 +64,13 @@ export default function ChagrinAmourPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(authorSchema) }}
+      />
       <header className="bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 text-white py-16 px-4">
         <div className="max-w-4xl mx-auto">
-          <Link href="/" className="text-white/80 hover:text-white mb-4 inline-block">← Retour</Link>
+          <Link href="/rupture" className="text-white/80 hover:text-white mb-4 inline-block">← Retour aux Ruptures Amoureuses</Link>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">💙 Chagrin d'Amour</h1>
           <p className="text-xl opacity-95 mb-6">Guérir et retrouver l'espoir</p>
           <div className="flex gap-4 flex-wrap">
@@ -77,9 +83,9 @@ export default function ChagrinAmourPage() {
       <div className="max-w-4xl mx-auto px-4 py-8">
         <div className="bg-white rounded-xl shadow-md p-6 mb-8 grid grid-cols-4 gap-4 text-center">
           <div><div className="text-3xl mb-1">⭐</div><div className="text-2xl font-bold text-blue-600">4.8/5</div><div className="text-sm text-gray-600">287 avis</div></div>
-          <div><div className="text-3xl mb-1">💙</div><div className="text-2xl font-bold text-blue-600">91%</div><div className="text-sm text-gray-600">Se sentent mieux</div></div>
+          <div><div className="text-3xl mb-1">💙</div><div className="text-2xl font-bold text-blue-600">Nette</div><div className="text-sm text-gray-600">Amélioration ressentie</div></div>
           <div><div className="text-3xl mb-1">⏰</div><div className="text-2xl font-bold text-blue-600">3-6 mois</div><div className="text-sm text-gray-600">Guérison</div></div>
-          <div><div className="text-3xl mb-1">🌈</div><div className="text-2xl font-bold text-blue-600">87%</div><div className="text-sm text-gray-600">Retrouvent joie</div></div>
+          <div><div className="text-3xl mb-1">🌈</div><div className="text-2xl font-bold text-blue-600">Grande</div><div className="text-sm text-gray-600">Majorité retrouve joie</div></div>
         </div>
 
         <EEATSignal
@@ -97,6 +103,7 @@ export default function ChagrinAmourPage() {
 
         <section id="etapes" className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6">💔 Étapes de Guérison</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">La guérison d'un chagrin d'amour suit cinq étapes : le choc initial (1-2 semaines), le déni (3-6 semaines), la tristesse profonde (2-3 mois), l'émergence (4-6 mois) et la guérison complète (6 mois et plus).</p>
           <div className="space-y-4">
             <div className="bg-red-50 p-4 rounded border-l-4 border-red-500"><h3 className="font-bold text-red-700 mb-2">Semaines 1-2: Choc</h3><p className="text-gray-700 text-sm">La douleur aiguë envahit tout votre être : <strong>pleurs fréquents</strong>, difficulté à manger, à dormir et à fonctionner normalement dans votre quotidien. Votre cerveau refuse encore d'accepter la réalité de la séparation, ce qui crée un état de <strong>sidération émotionnelle</strong> comparable à un traumatisme. C'est une réaction tout à fait NORMALE de votre organisme face à la perte d'un lien d'attachement profond. Soyez doux avec vous-même durant cette phase, ne vous forcez à rien et autorisez-vous à ressentir pleinement cette douleur sans la juger. Le tarot associe cette étape à l'arcane de la <strong>Tour foudroyée</strong>, symbole d'effondrement nécessaire avant la reconstruction.</p></div>
             <div className="bg-orange-50 p-4 rounded border-l-4 border-orange-500"><h3 className="font-bold text-orange-700 mb-2">Semaines 3-6: Déni</h3><p className="text-gray-700 text-sm">Vous oscillez entre des bouffées d'<strong>espoir irrationnel</strong> et des moments de lucidité douloureux. Les pensées tournent en boucle autour de votre ex : vous analysez chaque message, chaque souvenir, en cherchant des signes d'un possible retour. Cette phase est épuisante mentalement car votre esprit refuse de lâcher prise. Le déni peut aussi prendre la forme d'un engourdissement émotionnel, comme si vous observiez votre propre vie de l'extérieur. C'est le moment où beaucoup de personnes cherchent à <Link href="/rupture/oublier-son-ex" className="text-blue-600 hover:text-blue-800 underline font-medium">oublier son ex</Link> par tous les moyens, mais la patience reste votre meilleure alliée.</p></div>
@@ -108,6 +115,7 @@ export default function ChagrinAmourPage() {
 
         <section className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6">🌟 Actions pour Guérir</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Pour guérir d'un chagrin d'amour, quatre actions sont essentielles : autoriser la souffrance sans la refouler, couper le contact avec son ex, prendre soin de son corps et de son esprit, et recréer son identité individuelle.</p>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-white p-6 rounded border-l-4 border-blue-500"><h3 className="font-bold mb-3 text-blue-700">Autorisez la Souffrance</h3><p className="text-gray-700 text-sm mb-3">Refouler vos émotions ne fait que retarder la guérison. Accordez-vous le droit de souffrir pleinement, c'est la première étape vers la libération émotionnelle.</p><ul className="text-gray-700 text-sm space-y-1"><li>• Pleurez autant que nécessaire, sans honte ni retenue</li><li>• N'enfouissez pas vos émotions derrière un masque de force</li><li>• Parlez ouvertement à des amis bienveillants et de confiance</li><li>• Écrivez ce que vous ressentez dans un journal intime</li></ul></div>
             <div className="bg-white p-6 rounded border-l-4 border-purple-500"><h3 className="font-bold mb-3 text-purple-700">Coupez le Contact</h3><p className="text-gray-700 text-sm mb-3">Le contact prolongé avec votre ex empêche votre cerveau de commencer le processus de détachement. La distance, même temporaire, est un acte d'amour envers vous-même.</p><ul className="text-gray-700 text-sm space-y-1"><li>• Résistez à la tentation de surveiller ses réseaux sociaux</li><li>• Bloquez temporairement si nécessaire pour votre bien-être</li><li>• Évitez les lieux que vous fréquentiez ensemble</li><li>• Rangez les photos et souvenirs dans un carton hors de vue</li></ul></div>
@@ -118,6 +126,7 @@ export default function ChagrinAmourPage() {
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-indigo-500">
           <h2 className="text-3xl font-bold mb-6">🃏 Le Tirage Tarot du Chagrin : 5 Positions</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Le tirage tarot du chagrin en cinq positions éclaire la racine de votre douleur, ce que vous devez lâcher, votre force cachée, l'action clé à entreprendre et la lumière qui vous attend au bout du tunnel.</p>
           <p className="text-gray-700 leading-relaxed mb-6">Ce <strong>tirage en 5 cartes</strong> est spécialement conçu pour accompagner les personnes traversant un <strong>chagrin d'amour</strong>. Chaque position éclaire un aspect différent de votre processus de guérison, depuis l'origine de la douleur jusqu'à la lumière qui vous attend au bout du tunnel. Le voyant interprète les arcanes en tenant compte de votre histoire personnelle, de votre énergie actuelle et des influences astrologiques du moment.</p>
           <div className="space-y-4">
             <div className="bg-indigo-50 p-5 rounded-lg border-l-4 border-indigo-400">
@@ -147,6 +156,7 @@ export default function ChagrinAmourPage() {
 
         <section className="bg-gradient-to-br from-purple-50 to-blue-50 rounded-xl p-8 mb-8 border-2 border-purple-200">
           <h2 className="text-3xl font-bold mb-6">🔬 Pourquoi le Chagrin Fait Si Mal : La Science et l'Énergie</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Le chagrin d'amour fait si mal parce qu'il active les mêmes zones cérébrales que la douleur physique et provoque un sevrage hormonal comparable à l'arrêt d'une substance addictive. Les liens énergétiques persistent après la séparation.</p>
           <p className="text-gray-700 leading-relaxed mb-4">La science moderne confirme ce que la <strong>voyance intuitive</strong> perçoit depuis des siècles : un <strong>chagrin d'amour</strong> active dans le cerveau les mêmes zones que la douleur physique. Les recherches en neurosciences montrent que la rupture d'un lien amoureux provoque une véritable réaction de <strong>sevrage biochimique</strong>, similaire à l'arrêt d'une substance addictive. Votre cerveau, habitué aux doses régulières de dopamine et d'ocytocine générées par la présence de votre partenaire, se retrouve brutalement privé de ces hormones du bonheur, ce qui explique l'intensité quasi physique de la souffrance.</p>
           <p className="text-gray-700 leading-relaxed mb-4">Sur le plan <strong>énergétique et spirituel</strong>, la tradition du tarot enseigne que chaque relation amoureuse crée des liens éthériques entre les deux partenaires, notamment au niveau du <strong>chakra du cœur</strong>. Lorsqu'une séparation survient, ces cordons d'énergie ne se dissolvent pas instantanément. Ils tirent, ils appellent, ils créent ce sentiment de manque et de vide intérieur que vous ressentez au creux de la poitrine. C'est pourquoi la <strong>coupure énergétique</strong>, accompagnée par un voyant, peut considérablement accélérer le processus de détachement et réduire la douleur émotionnelle. Pour mieux décrypter les <Link href="/sentiments/maime-t-il-elle" className="text-blue-600 hover:text-blue-800 underline font-medium">sentiments de l'autre</Link>, le tarot révèle aussi les liens invisibles qui persistent entre vous.</p>
           <p className="text-gray-700 leading-relaxed">Comprendre que votre souffrance a des racines à la fois <strong>biologiques</strong> et <strong>énergétiques</strong> est profondément libérateur. Vous ne souffrez pas par faiblesse ou par excès de sensibilité : votre corps et votre âme traversent un processus naturel de réajustement. En combinant une approche rationnelle (prendre soin de votre santé, maintenir des routines) avec une approche spirituelle (tirage de guidance, méditation, coupure des liens éthériques), vous donnez à votre guérison les meilleures chances de se dérouler complètement et durablement.</p>
@@ -154,10 +164,11 @@ export default function ChagrinAmourPage() {
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold mb-8">❓ Questions Fréquentes</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Voici les réponses aux questions les plus posées sur le chagrin d'amour : durée moyenne, signes de guérison, normalité de la douleur persistante et rôle de la voyance dans la reconstruction émotionnelle.</p>
           <div className="space-y-6">
-            <div className="border-b pb-6"><h3 className="text-xl font-bold mb-3">Combien de temps dure un chagrin ?</h3><p className="text-gray-700">La durée d'un <strong>chagrin d'amour</strong> varie considérablement d'une personne à l'autre, mais la moyenne se situe entre <strong>3 et 6 mois</strong> pour une relation significative. Plusieurs facteurs influencent cette durée : la longueur de la relation, l'intensité de l'attachement émotionnel, les circonstances de la séparation et votre propre capacité de résilience. Le tarot peut révéler votre timeline personnelle de guérison en identifiant les <strong>blocages énergétiques</strong> qui ralentissent le processus. L'important n'est pas la vitesse de guérison, mais sa profondeur. Une guérison trop rapide en surface cache souvent des blessures non traitées qui resurgiront dans vos futures relations.</p></div>
+            <div className="border-b pb-6"><h3 className="text-xl font-bold mb-3">Combien de temps dure un chagrin d&apos;amour ?</h3><p className="text-gray-700">La durée d'un <strong>chagrin d'amour</strong> varie considérablement d'une personne à l'autre, mais la moyenne se situe entre <strong>3 et 6 mois</strong> pour une relation significative. Plusieurs facteurs influencent cette durée : la longueur de la relation, l'intensité de l'attachement émotionnel, les circonstances de la séparation et votre propre capacité de résilience. Le tarot peut révéler votre timeline personnelle de guérison en identifiant les <strong>blocages énergétiques</strong> qui ralentissent le processus. L'important n'est pas la vitesse de guérison, mais sa profondeur. Une guérison trop rapide en surface cache souvent des blessures non traitées qui resurgiront dans vos futures relations.</p></div>
             <div className="border-b pb-6"><h3 className="text-xl font-bold mb-3">Comment savoir si je suis guéri(e) ?</h3><p className="text-gray-700">Plusieurs signes concrets indiquent que votre <strong>guérison émotionnelle</strong> est complète. Vous pensez rarement à votre ex, et lorsque cela arrive, les souvenirs ne provoquent plus de douleur vive mais une nostalgie douce et détachée. Vous ressentez de la <strong>curiosité pour de nouvelles rencontres</strong>, vous avez retrouvé votre joie de vivre indépendamment de toute relation, et vous pouvez sincèrement souhaiter du bonheur à votre ex sans amertume. Le tarot confirme cette ouverture émotionnelle avec l'apparition de cartes comme <strong>L'Étoile</strong> ou l'<strong>As de Coupe</strong> dans vos tirages. La guérison complète signifie aussi ne plus comparer chaque nouvelle personne à votre ancien partenaire.</p></div>
-            <div className="border-b pb-6"><h3 className="text-xl font-bold mb-3">Normal d'avoir mal après des mois ?</h3><p className="text-gray-700">Oui, il est tout à fait normal de ressentir encore de la douleur plusieurs mois après une rupture, surtout lorsqu'il s'agissait d'une <strong>relation longue</strong> ou particulièrement intense. Le processus de deuil amoureux n'est pas linéaire et comporte souvent des rechutes temporaires, même après des périodes d'amélioration. Certaines dates anniversaires, certains lieux ou certaines chansons peuvent raviver momentanément la souffrance. Si après <strong>12 mois</strong> la douleur reste aussi vive qu'au premier jour et empêche votre fonctionnement quotidien, il est recommandé de consulter un thérapeute professionnel en complément d'un accompagnement par le tarot. Pour mieux <Link href="/rupture/oublier-son-ex" className="text-blue-600 hover:text-blue-800 underline font-medium">tourner la page</Link>, le tarot peut aussi révéler les blocages spécifiques qui ralentissent votre processus.</p></div>
+            <div className="border-b pb-6"><h3 className="text-xl font-bold mb-3">Normal d&apos;avoir mal des mois après une rupture ?</h3><p className="text-gray-700">Oui, il est tout à fait normal de ressentir encore de la douleur plusieurs mois après une rupture, surtout lorsqu'il s'agissait d'une <strong>relation longue</strong> ou particulièrement intense. Le processus de deuil amoureux n'est pas linéaire et comporte souvent des rechutes temporaires, même après des périodes d'amélioration. Certaines dates anniversaires, certains lieux ou certaines chansons peuvent raviver momentanément la souffrance. Si après <strong>12 mois</strong> la douleur reste aussi vive qu'au premier jour et empêche votre fonctionnement quotidien, il est recommandé de consulter un thérapeute professionnel en complément d'un accompagnement par le tarot. Pour mieux <Link href="/rupture/oublier-son-ex" className="text-blue-600 hover:text-blue-800 underline font-medium">tourner la page</Link>, le tarot peut aussi révéler les blocages spécifiques qui ralentissent votre processus.</p></div>
             <div><h3 className="text-xl font-bold mb-3">La voyance accélère-t-elle la guérison ?</h3><p className="text-gray-700">La <strong>voyance</strong> peut effectivement accélérer le processus de guérison émotionnelle de plusieurs façons complémentaires. Elle apporte d'abord la clarté sur le « pourquoi » de la rupture, ce qui facilite l'<strong>acceptation intellectuelle et émotionnelle</strong>. Ensuite, elle offre une rassurance sur le « quand », en identifiant les périodes propices à la reconstruction. Enfin, elle fournit une guidance concrète sur les actions à entreprendre pour avancer. La compréhension spirituelle de votre situation, notamment à travers les <strong>arcanes du tarot</strong> et les transits astrologiques, permet de donner un sens à la souffrance et de la transformer en croissance personnelle. Beaucoup de consultants témoignent d'un soulagement significatif dès la première consultation de voyance.</p></div>
           </div>
         </section>

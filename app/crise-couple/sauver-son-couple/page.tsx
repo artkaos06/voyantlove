@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { getArticleSchema, getFAQSchema, getBreadcrumbSchema } from '@/lib/schema';
+import { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getAuthorSchema } from '@/lib/schema';
 import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
@@ -10,14 +10,14 @@ export const metadata: Metadata = {
   title: 'Sauver son Couple : Solutions et Guidance Spirituelle | Voyance',
   description: 'Comment sauver votre couple en crise ? Le tarot révèle les solutions, les étapes de reconstruction et si votre relation peut être sauvée.',
   keywords: ['sauver son couple', 'sauver couple en crise', 'reconstruire couple voyance', 'comment sauver mon couple', 'sauver relation amoureuse'],
-  alternates: { canonical: 'https://voyantlove.fr/crise-couple/sauver-son-couple' },
+  alternates: { canonical: 'https://voyantlove.fr/crise-couple/sauver-son-couple/' },
 };
 
 export default function SauverSonCouplePage() {
   const articleSchema = getArticleSchema({
     title: 'Sauver son Couple : Solutions et Guidance Spirituelle | Voyance',
     description: 'Comment sauver votre couple en crise ? Le tarot révèle les solutions, les étapes de reconstruction et si votre relation peut être sauvée.',
-    url: 'https://voyantlove.fr/crise-couple/sauver-son-couple',
+    url: 'https://voyantlove.fr/crise-couple/sauver-son-couple/',
     datePublished: '2026-02-09',
     dateModified: new Date().toISOString().split('T')[0],
     keywords: ['sauver son couple', 'sauver couple en crise', 'reconstruire couple voyance', 'comment sauver mon couple', 'sauver relation amoureuse'],
@@ -25,29 +25,31 @@ export default function SauverSonCouplePage() {
 
   const breadcrumbSchema = getBreadcrumbSchema([
     { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'Crise de Couple', url: 'https://voyantlove.fr/crise-couple' },
-    { name: 'Sauver son Couple', url: 'https://voyantlove.fr/crise-couple/sauver-son-couple' },
+    { name: 'Crise de Couple', url: 'https://voyantlove.fr/crise-couple/' },
+    { name: 'Sauver son Couple', url: 'https://voyantlove.fr/crise-couple/sauver-son-couple/' },
   ]);
+
+  const authorSchema = getAuthorSchema();
 
   const faqSchema = getFAQSchema([
     {
-      question: 'Comment savoir si mon couple peut être sauvé ?',
+      question: 'Mon couple peut-il être sauvé ?',
       answer: 'Plusieurs indicateurs permettent d\'évaluer si votre couple peut être sauvé. La volonté mutuelle de reconstruction est le facteur déterminant : les deux partenaires doivent vouloir sauver la relation. Le tarot de diagnostic relationnel révèle avec précision l\'état énergétique du lien amoureux, la profondeur des sentiments restants, et le potentiel de renaissance. Si la communication reste possible, si l\'amour persiste malgré la crise, et si les deux parties acceptent de travailler sur elles-mêmes, le pronostic est favorable. En revanche, le mépris mutuel, la violence ou l\'indifférence totale sont des signes que la relation a atteint un point de non-retour.',
     },
     {
-      question: 'Le tarot peut-il sauver un couple en crise ?',
-      answer: 'Le tarot ne sauve pas directement un couple, mais il constitue un outil de guidance puissant pour éclairer le chemin de reconstruction. Le tirage relationnel révèle les blocages invisibles, les besoins non exprimés de chaque partenaire, et les solutions concrètes adaptées à votre situation. La voyance identifie les schémas karmiques répétitifs qui sabotent votre relation et propose des clés de transformation. 78% des consultants rapportent que la guidance du tarot leur a permis de prendre des décisions plus éclairées pour leur couple. Le tarot agit comme un miroir qui révèle les vérités que l\'ego refuse de voir.',
+      question: 'Le tarot peut-il sauver un couple ?',
+      answer: 'Le tarot ne sauve pas directement un couple, mais il constitue un outil de guidance puissant pour éclairer le chemin de reconstruction. Le tirage relationnel révèle les blocages invisibles, les besoins non exprimés de chaque partenaire, et les solutions concrètes adaptées à votre situation. La voyance identifie les schémas karmiques répétitifs qui sabotent votre relation et propose des clés de transformation. La grande majorité des consultants rapportent que la guidance du tarot leur a permis de prendre des décisions plus éclairées pour leur couple. Le tarot agit comme un miroir qui révèle les vérités que l\'ego refuse de voir.',
     },
     {
-      question: 'Combien de temps faut-il pour sauver un couple ?',
+      question: 'Combien de temps pour sauver son couple ?',
       answer: 'La reconstruction d\'un couple en crise demande en moyenne 6 à 18 mois de travail actif et régulier. La durée dépend de la profondeur de la crise, de l\'engagement des deux partenaires, et de la nature des blessures. Une crise de communication se résout en 3-6 mois. Une crise liée à l\'infidélité nécessite 12-36 mois. Le tarot permet d\'accélérer le processus en identifiant rapidement les causes profondes et en proposant des solutions ciblées. La patience et la constance sont essentielles : les rechutes font partie du parcours de guérison et ne signifient pas l\'échec.',
     },
     {
-      question: 'Quels sont les signes qu\'un couple est en train de guérir ?',
+      question: 'Quels sont les signes de guérison d\'un couple ?',
       answer: 'Les signes de guérison d\'un couple incluent : le retour progressif de la communication authentique, la diminution des disputes destructrices, le plaisir retrouvé à passer du temps ensemble, la capacité à parler de la crise sans hostilité, et la renaissance de la tendresse physique. Le tarot confirme ces progrès en montrant des cartes positives comme le Deux de Coupe (union renouvelée), l\'Étoile (espoir et guérison), ou Tempérance (équilibre retrouvé). La guérison se manifeste aussi par une meilleure gestion des désaccords et un sentiment de sécurité émotionnelle croissant.',
     },
     {
-      question: 'Sauver son couple ou se séparer : comment décider ?',
+      question: 'Sauver son couple ou se séparer ?',
       answer: 'Cette décision cruciale nécessite une évaluation honnête de plusieurs facteurs. Posez-vous ces questions : l\'amour est-il encore présent ? Les deux partenaires veulent-ils vraiment reconstruire ? La crise est-elle réparable ou s\'agit-il de problèmes structurels incompatibles ? Le tarot apporte une perspective spirituelle précieuse en révélant l\'avenir probable de chaque scénario. La voyance éclaire ce que votre coeur sait mais que votre mental refuse d\'admettre. Si vous restez par peur de la solitude plutôt que par amour, la séparation pourrait être la voie de libération. Consultez un tirage de guidance pour clarifier votre chemin.',
     },
   ]);
@@ -66,6 +68,10 @@ export default function SauverSonCouplePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(authorSchema) }}
+      />
 
       <header className="bg-gradient-to-r from-green-600 via-emerald-600 to-teal-600 text-white py-16 px-4">
         <div className="max-w-4xl mx-auto">
@@ -81,10 +87,10 @@ export default function SauverSonCouplePage() {
 
       <div className="max-w-4xl mx-auto px-4 py-8">
         <div className="bg-white rounded-xl shadow-md p-6 mb-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-          <div><div className="text-3xl mb-1">💚</div><div className="text-2xl font-bold text-green-600">72%</div><div className="text-sm text-gray-600">Taux de réussite</div></div>
-          <div><div className="text-3xl mb-1">🔮</div><div className="text-2xl font-bold text-green-600">3,200+</div><div className="text-sm text-gray-600">Couples aidés</div></div>
-          <div><div className="text-3xl mb-1">⭐</div><div className="text-2xl font-bold text-green-600">4.8/5</div><div className="text-sm text-gray-600">Satisfaction</div></div>
-          <div><div className="text-3xl mb-1">🎯</div><div className="text-2xl font-bold text-green-600">86%</div><div className="text-sm text-gray-600">Précision</div></div>
+          <div><div className="text-3xl mb-1">💚</div><div className="text-2xl font-bold text-green-600">Forte</div><div className="text-sm text-gray-600">Réussite</div></div>
+          <div><div className="text-3xl mb-1">🔮</div><div className="text-2xl font-bold text-green-600">Vaste</div><div className="text-sm text-gray-600">Expérience</div></div>
+          <div><div className="text-3xl mb-1">⭐</div><div className="text-2xl font-bold text-green-600">Élevée</div><div className="text-sm text-gray-600">Satisfaction</div></div>
+          <div><div className="text-3xl mb-1">🎯</div><div className="text-2xl font-bold text-green-600">Reconnue</div><div className="text-sm text-gray-600">Expertise</div></div>
         </div>
 
         <EEATSignal
@@ -94,7 +100,7 @@ export default function SauverSonCouplePage() {
 
         <article className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-green-600">
           <p className="text-lg leading-relaxed mb-4">
-            <strong>Sauver son couple</strong> est possible quand les deux partenaires partagent une <strong>volonté de reconstruction</strong> authentique et sincère. Traverser une <strong>crise de couple</strong> ne signifie pas la fin de votre histoire : c'est souvent le signal d'une transformation nécessaire. Le <strong>tarot relationnel</strong> offre une guidance unique pour identifier les causes profondes de la crise, révéler les <strong>blocages énergétiques</strong> qui empêchent la <strong>communication</strong> et proposer des solutions concrètes de <strong>reconstruction</strong>. Selon notre expérience, 72% des couples qui entreprennent un travail actif de reconstruction parviennent à sauver leur relation et à la rendre plus forte qu'avant la crise. La <strong>voyance amoureuse</strong> ne remplace pas le dialogue, mais elle éclaire les zones d'ombre que le mental refuse de voir, offrant ainsi une perspective spirituelle inestimable pour guider vos pas vers la réconciliation.
+            <strong>Sauver son couple</strong> est possible quand les deux partenaires partagent une <strong>volonté de reconstruction</strong> authentique et sincère. Traverser une <strong>crise de couple</strong> ne signifie pas la fin de votre histoire : c'est souvent le signal d'une transformation nécessaire. Le <strong>tarot relationnel</strong> offre une guidance unique pour identifier les causes profondes de la crise, révéler les <strong>blocages énergétiques</strong> qui empêchent la <strong>communication</strong> et proposer des solutions concrètes de <strong>reconstruction</strong>. Selon notre expérience, la majorité des couples qui entreprennent un travail actif de reconstruction parviennent à sauver leur relation et à la rendre plus forte qu'avant la crise. La <strong>voyance amoureuse</strong> ne remplace pas le dialogue, mais elle éclaire les zones d'ombre que le mental refuse de voir, offrant ainsi une perspective spirituelle inestimable pour guider vos pas vers la réconciliation.
           </p>
           <p className="text-lg leading-relaxed mb-4">
             La décision de <strong>sauver une relation amoureuse</strong> exige du courage, de la patience et un <strong>engagement profond</strong> de chaque partenaire. Les crises de couple surgissent pour des raisons multiples : érosion de la communication, perte de connexion émotionnelle, routine qui étouffe la passion, ou événements extérieurs déstabilisants. Le <strong>tirage de reconstruction</strong> permet de diagnostiquer avec précision l'état réel de votre relation et de tracer un chemin vers la guérison.
@@ -108,6 +114,7 @@ export default function SauverSonCouplePage() {
 
         <section id="diagnostic" className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-green-600">🔮 Votre Couple Peut-il Être Sauvé ? Le Diagnostic Tarot</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Le diagnostic tarot en 5 cartes évalue l'état du lien amoureux, les blocages à surmonter, la volonté réelle du partenaire, le potentiel de transformation et le verdict final. Il révèle si votre couple peut renaître ou si le lâcher-prise est la voie de libération.</p>
           <p className="text-gray-700 mb-6">
             Le <strong>diagnostic tarot de couple</strong> utilise un tirage en 5 cartes spécialement conçu pour évaluer le potentiel de <strong>reconstruction de votre relation</strong>. Chaque position révèle un aspect essentiel de votre situation actuelle et de l'avenir possible de votre union.
           </p>
@@ -185,6 +192,7 @@ export default function SauverSonCouplePage() {
 
         <section id="etapes" className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl p-8 mb-8 border-2 border-green-200">
           <h2 className="text-3xl font-bold mb-6 text-gray-900">🔄 Les 5 Étapes de Reconstruction Révélées par les Cartes</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Les cinq étapes pour sauver un couple sont le dialogue authentique, la compréhension des causes profondes, le pardon et le lâcher-prise, l'établissement d'un nouveau contrat de couple, et la renaissance de l'intimité. Ce processus prend 6 à 18 mois.</p>
           <p className="text-gray-700 mb-6">
             Le <strong>tarot de reconstruction</strong> dessine un chemin en cinq étapes essentielles pour <strong>sauver votre couple</strong>. Chaque étape correspond à une carte majeure qui guide la transformation.
           </p>
@@ -244,6 +252,7 @@ export default function SauverSonCouplePage() {
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-green-600">💎 Les Piliers d'un Couple Sauvé selon la Voyance</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Un couple sauvé repose sur six piliers essentiels : la confiance retrouvée, la communication équilibrée, l'intimité renouvelée, les projets communs, le respect mutuel et l'indépendance dans l'interdépendance. Chacun correspond à un arcane majeur du tarot.</p>
           <p className="text-gray-700 mb-6">
             La <strong>guidance spirituelle</strong> révèle six piliers fondamentaux sur lesquels repose un couple qui a réussi à surmonter sa crise. Chaque pilier est associé à une carte du <strong>tarot</strong> qui en symbolise l'essence.
           </p>
@@ -297,6 +306,7 @@ export default function SauverSonCouplePage() {
 
         <section className="bg-gradient-to-br from-red-50 to-orange-50 rounded-xl p-8 mb-8 border-2 border-red-200">
           <h2 className="text-3xl font-bold mb-6 text-gray-900">⚠️ Quand Sauver son Couple est Impossible — Reconnaître les Limites</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Sauver un couple est impossible en cas de violence physique ou psychologique, de mépris chronique, d'infidélités répétées, de manipulation ou de refus total de changement. Dans ces situations, la séparation est l'acte d'amour le plus courageux envers soi-même.</p>
           <p className="text-gray-700 mb-6">
             La <strong>voyance responsable</strong> implique aussi de reconnaître honnêtement quand une relation ne peut pas être sauvée. Persister dans une <strong>relation toxique</strong> par peur de la solitude ou par espoir illusoire prolonge la souffrance des deux partenaires. Voici les situations où le lâcher-prise devient l'acte d'amour le plus courageux.
           </p>
@@ -334,6 +344,7 @@ export default function SauverSonCouplePage() {
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-green-600">🧘 Exercices de Couple Inspirés par la Guidance Spirituelle</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Trois exercices pratiques renforcent la reconstruction : le rituel de dialogue hebdomadaire pour restaurer la parole, le journal de gratitude à deux pour se recentrer sur le positif, et le vision board de couple pour créer une vision d'avenir commune.</p>
           <p className="text-gray-700 mb-6">
             Ces <strong>exercices pratiques</strong> s'inspirent de la sagesse du tarot et de la <strong>guidance spirituelle</strong> pour renforcer votre lien au quotidien. Pratiquez-les régulièrement pour ancrer la reconstruction dans des gestes concrets.
           </p>
@@ -348,7 +359,7 @@ export default function SauverSonCouplePage() {
                 <strong>Déroulement :</strong> Chaque partenaire dispose de 15 minutes pour parler librement de ses ressentis, ses besoins et ses gratitudes de la semaine. L'autre écoute en silence, sans interrompre ni préparer sa réponse. Ensuite, résumez ce que vous avez entendu pour montrer votre <strong>écoute active</strong>.
               </p>
               <p className="text-gray-700">
-                <strong>Fréquence :</strong> Une fois par semaine minimum. Ce rituel transforme la communication de votre couple en 4-6 semaines de pratique régulière. Les couples qui maintiennent ce dialogue réduisent de 60% les <strong>conflits destructeurs</strong>.
+                <strong>Fréquence :</strong> Une fois par semaine minimum. Ce rituel transforme la communication de votre couple en 4-6 semaines de pratique régulière. Les couples qui maintiennent ce dialogue réduisent considérablement les <strong>conflits destructeurs</strong>.
               </p>
             </div>
 
@@ -382,29 +393,30 @@ export default function SauverSonCouplePage() {
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold mb-8 text-green-600">❓ Questions Fréquentes sur Sauver son Couple</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">La majorité des couples qui entreprennent un travail actif de reconstruction parviennent à sauver leur relation. Le processus demande 6 à 18 mois et repose sur la volonté mutuelle, la compréhension des causes profondes et un engagement sincère dans le changement.</p>
           <div className="space-y-6">
             <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Comment savoir si mon couple peut être sauvé ?</h3>
+              <h3 className="text-xl font-bold mb-3 text-gray-900">Mon couple peut-il être sauvé ?</h3>
               <p className="text-gray-700 leading-relaxed">Plusieurs indicateurs permettent d'évaluer si votre couple peut être sauvé. La <strong>volonté mutuelle de reconstruction</strong> est le facteur déterminant : les deux partenaires doivent vouloir sauver la relation. Le <strong>tarot de diagnostic relationnel</strong> révèle avec précision l'état énergétique du lien amoureux, la profondeur des sentiments restants, et le potentiel de renaissance. Si la communication reste possible, si l'amour persiste malgré la crise, et si les deux parties acceptent de travailler sur elles-mêmes, le pronostic est favorable. En revanche, le <strong>mépris mutuel</strong>, la violence ou l'indifférence totale sont des signes que la relation a atteint un point de non-retour.</p>
             </div>
 
             <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Le tarot peut-il sauver un couple en crise ?</h3>
-              <p className="text-gray-700 leading-relaxed">Le <strong>tarot</strong> ne sauve pas directement un couple, mais il constitue un outil de <strong>guidance puissant</strong> pour éclairer le chemin de reconstruction. Le tirage relationnel révèle les blocages invisibles, les besoins non exprimés de chaque partenaire, et les solutions concrètes adaptées à votre situation. La <strong>voyance</strong> identifie les schémas karmiques répétitifs qui sabotent votre relation et propose des clés de transformation. 78% des consultants rapportent que la guidance du tarot leur a permis de prendre des décisions plus éclairées pour leur couple. Le tarot agit comme un miroir qui révèle les vérités que l'ego refuse de voir.</p>
+              <h3 className="text-xl font-bold mb-3 text-gray-900">Le tarot peut-il sauver un couple ?</h3>
+              <p className="text-gray-700 leading-relaxed">Le <strong>tarot</strong> ne sauve pas directement un couple, mais il constitue un outil de <strong>guidance puissant</strong> pour éclairer le chemin de reconstruction. Le tirage relationnel révèle les blocages invisibles, les besoins non exprimés de chaque partenaire, et les solutions concrètes adaptées à votre situation. La <strong>voyance</strong> identifie les schémas karmiques répétitifs qui sabotent votre relation et propose des clés de transformation. La grande majorité des consultants rapportent que la guidance du tarot leur a permis de prendre des décisions plus éclairées pour leur couple. Le tarot agit comme un miroir qui révèle les vérités que l'ego refuse de voir.</p>
             </div>
 
             <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Combien de temps faut-il pour sauver un couple ?</h3>
+              <h3 className="text-xl font-bold mb-3 text-gray-900">Combien de temps pour sauver son couple ?</h3>
               <p className="text-gray-700 leading-relaxed">La <strong>reconstruction d'un couple</strong> en crise demande en moyenne 6 à 18 mois de travail actif et régulier. La durée dépend de la profondeur de la crise, de l'engagement des deux partenaires, et de la nature des blessures. Une <strong>crise de communication</strong> se résout en 3-6 mois. Une crise liée à l'infidélité nécessite 12-36 mois. Le tarot permet d'accélérer le processus en identifiant rapidement les <strong>causes profondes</strong> et en proposant des solutions ciblées. La patience et la constance sont essentielles : les rechutes font partie du parcours de guérison.</p>
             </div>
 
             <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Quels sont les signes qu'un couple est en train de guérir ?</h3>
+              <h3 className="text-xl font-bold mb-3 text-gray-900">Quels sont les signes de guérison d'un couple ?</h3>
               <p className="text-gray-700 leading-relaxed">Les <strong>signes de guérison</strong> d'un couple incluent : le retour progressif de la communication authentique, la diminution des disputes destructrices, le plaisir retrouvé à passer du temps ensemble, la capacité à parler de la crise sans hostilité, et la renaissance de la <strong>tendresse physique</strong>. Le tarot confirme ces progrès en montrant des cartes positives comme le Deux de Coupe (union renouvelée), l'Étoile (espoir et guérison), ou <strong>Tempérance</strong> (équilibre retrouvé). La guérison se manifeste aussi par une meilleure gestion des désaccords et un sentiment de <strong>sécurité émotionnelle</strong> croissant.</p>
             </div>
 
             <div>
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Sauver son couple ou se séparer : comment décider ?</h3>
+              <h3 className="text-xl font-bold mb-3 text-gray-900">Sauver son couple ou se séparer ?</h3>
               <p className="text-gray-700 leading-relaxed">Cette décision cruciale nécessite une évaluation honnête de plusieurs facteurs. Posez-vous ces questions : l'amour est-il encore présent ? Les deux partenaires veulent-ils vraiment reconstruire ? La crise est-elle réparable ou s'agit-il de <strong>problèmes structurels</strong> incompatibles ? Le tarot apporte une perspective spirituelle précieuse en révélant l'avenir probable de chaque scénario. La <strong>voyance</strong> éclaire ce que votre coeur sait mais que votre mental refuse d'admettre. Si vous restez par peur de la solitude plutôt que par amour, la <strong>séparation</strong> pourrait être la voie de libération. Pour mieux comprendre les sentiments en jeu, vous pouvez <Link href="/sentiments/maime-t-il-elle" className="text-green-600 hover:text-green-800 underline font-medium">vérifier ses sentiments</Link> grâce au tarot.</p>
             </div>
           </div>

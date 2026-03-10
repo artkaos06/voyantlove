@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { getArticleSchema, getFAQSchema, getBreadcrumbSchema } from '@/lib/schema';
+import { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getAuthorSchema } from '@/lib/schema';
 import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
@@ -10,14 +10,14 @@ export const metadata: Metadata = {
   title: 'Flamme Jumelle : Reconnaître et Vivre cette Connexion Intense | Voyance',
   description: 'Découvrez les signes de la flamme jumelle selon le tarot et la spiritualité. Différence avec l\'âme sœur, étapes de la relation, séparation et retrouvailles karmiques.',
   keywords: ['flamme jumelle', 'flamme jumelle signes', 'reconnaître flamme jumelle', 'flamme jumelle voyance', 'différence âme sœur flamme jumelle'],
-  alternates: { canonical: 'https://voyantlove.fr/nouvelle-rencontre/flamme-jumelle' },
+  alternates: { canonical: 'https://voyantlove.fr/nouvelle-rencontre/flamme-jumelle/' },
 };
 
 export default function FlammeJumellePage() {
   const articleSchema = getArticleSchema({
     title: 'Flamme Jumelle : Reconnaître et Vivre cette Connexion Intense | Voyance',
     description: 'Découvrez les signes de la flamme jumelle selon le tarot et la spiritualité. Différence avec l\'âme sœur, étapes de la relation, séparation et retrouvailles karmiques.',
-    url: 'https://voyantlove.fr/nouvelle-rencontre/flamme-jumelle',
+    url: 'https://voyantlove.fr/nouvelle-rencontre/flamme-jumelle/',
     datePublished: '2026-02-09',
     dateModified: new Date().toISOString().split('T')[0],
     keywords: ['flamme jumelle', 'flamme jumelle signes', 'reconnaître flamme jumelle', 'flamme jumelle voyance', 'différence âme sœur flamme jumelle'],
@@ -25,25 +25,27 @@ export default function FlammeJumellePage() {
 
   const breadcrumbSchema = getBreadcrumbSchema([
     { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'Nouvelle Rencontre', url: 'https://voyantlove.fr/nouvelle-rencontre' },
-    { name: 'Flamme Jumelle', url: 'https://voyantlove.fr/nouvelle-rencontre/flamme-jumelle' },
+    { name: 'Nouvelle Rencontre', url: 'https://voyantlove.fr/nouvelle-rencontre/' },
+    { name: 'Flamme Jumelle', url: 'https://voyantlove.fr/nouvelle-rencontre/flamme-jumelle/' },
   ]);
+
+  const authorSchema = getAuthorSchema();
 
   const faqSchema = getFAQSchema([
     {
-      question: 'Comment savoir si c\'est ma flamme jumelle ou une relation toxique ?',
+      question: 'Flamme jumelle ou relation toxique, comment savoir ?',
       answer: 'La flamme jumelle provoque une transformation profonde et positive, même à travers la douleur. Contrairement à une relation toxique, la connexion de flamme jumelle vous pousse vers votre meilleure version et l\'éveil spirituel. La relation toxique vous diminue, vous isole et détruit votre estime. Avec votre flamme jumelle, la souffrance mène à la croissance personnelle, jamais à la destruction. Le tarot karmique distingue clairement ces deux dynamiques grâce aux arcanes de transformation comme la Maison Dieu ou Tempérance.',
     },
     {
-      question: 'Combien de temps dure la séparation avec sa flamme jumelle ?',
+      question: 'Combien de temps dure la séparation flamme jumelle ?',
       answer: 'La séparation de flamme jumelle varie considérablement selon le karma et l\'évolution spirituelle de chacun. Elle peut durer de quelques mois à plusieurs années, parfois même une vie entière si les leçons karmiques ne sont pas intégrées. En moyenne, la phase de séparation dure entre 1 et 3 ans. Les signes de retrouvailles imminentes incluent des synchronicités amplifiées, des rêves récurrents, et un sentiment de paix intérieure retrouvée. La voyance et le tirage de tarot karmique permettent d\'estimer la durée restante.',
     },
     {
-      question: 'Tout le monde a-t-il une flamme jumelle ?',
-      answer: 'Selon la tradition spirituelle, chaque âme possède théoriquement une flamme jumelle, mais toutes ne choisissent pas de s\'incarner simultanément sur Terre. Certaines flammes jumelles restent dans les plans subtils pour guider leur moitié incarnée. Seule une minorité de personnes — environ 10 à 15% — rencontrent effectivement leur flamme jumelle dans cette vie. Cette rencontre n\'est pas nécessaire à l\'épanouissement spirituel : une relation d\'âme sœur harmonieuse est tout aussi précieuse et transformative.',
+      question: 'A-t-on tous une flamme jumelle ?',
+      answer: 'Selon la tradition spirituelle, chaque âme possède théoriquement une flamme jumelle, mais toutes ne choisissent pas de s\'incarner simultanément sur Terre. Certaines flammes jumelles restent dans les plans subtils pour guider leur moitié incarnée. Seule une minorité de personnes — environ une personne sur dix — rencontrent effectivement leur flamme jumelle dans cette vie. Cette rencontre n\'est pas nécessaire à l\'épanouissement spirituel : une relation d\'âme sœur harmonieuse est tout aussi précieuse et transformative.',
     },
     {
-      question: 'La flamme jumelle est-elle toujours un partenaire amoureux ?',
+      question: 'La flamme jumelle est-elle toujours amoureuse ?',
       answer: 'Non, la flamme jumelle n\'est pas systématiquement un partenaire romantique. Bien que la connexion soit extrêmement intense et souvent ressentie comme amoureuse, certaines flammes jumelles se manifestent sous forme d\'amitié profonde, de lien familial, ou de partenariat créatif et spirituel. L\'essentiel de la relation flamme jumelle réside dans la mission d\'éveil mutuel et la transformation spirituelle, pas nécessairement dans l\'union romantique. Le tarot clarifie la nature exacte du lien karmique entre deux flammes jumelles.',
     },
   ]);
@@ -61,6 +63,10 @@ export default function FlammeJumellePage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(authorSchema) }}
       />
 
       {/* Header */}
@@ -81,7 +87,7 @@ export default function FlammeJumellePage() {
         <div className="bg-white rounded-xl shadow-md p-6 mb-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
           <div><div className="text-3xl mb-1">&#x1F525;</div><div className="text-2xl font-bold text-purple-600">11 Signes</div><div className="text-sm text-gray-600">Identifier la flamme jumelle</div></div>
           <div><div className="text-3xl mb-1">&#x1F52E;</div><div className="text-2xl font-bold text-purple-600">8 Étapes</div><div className="text-sm text-gray-600">Parcours karmique complet</div></div>
-          <div><div className="text-3xl mb-1">&#x2728;</div><div className="text-2xl font-bold text-purple-600">87%</div><div className="text-sm text-gray-600">Précision tirage flamme</div></div>
+          <div><div className="text-3xl mb-1">&#x2728;</div><div className="text-2xl font-bold text-purple-600">Reconnue</div><div className="text-sm text-gray-600">Expertise tirage flamme</div></div>
           <div><div className="text-3xl mb-1">&#x1F49C;</div><div className="text-2xl font-bold text-purple-600">2,800+</div><div className="text-sm text-gray-600">Guidances réalisées</div></div>
         </div>
 
@@ -109,6 +115,7 @@ export default function FlammeJumellePage() {
         {/* Flamme Jumelle vs Âme Sœur */}
         <section className="bg-gradient-to-br from-purple-50 to-indigo-50 rounded-xl p-8 mb-8 border-2 border-purple-200">
           <h2 className="text-3xl font-bold mb-6 text-gray-900">&#x1F525; Flamme Jumelle vs Âme S&oelig;ur — La Différence Cruciale</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">L'ame soeur offre une connexion harmonieuse et stable pour construire une vie ensemble. La flamme jumelle est votre miroir parfait, une relation intense et turbulente destinee a l'eveil spirituel.</p>
           <p className="text-gray-700 mb-6">
             La confusion entre <strong>flamme jumelle</strong> et <strong>âme s&oelig;ur</strong> est l'erreur la plus fréquente en voyance amoureuse. Ces deux types de connexion spirituelle répondent à des missions karmiques distinctes et se vivent de manière radicalement différente. Voici les critères essentiels pour les distinguer clairement.
           </p>
@@ -182,6 +189,7 @@ export default function FlammeJumellePage() {
         {/* Les 11 Signes */}
         <section id="signes" className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-purple-600">&#x1F52E; Les 11 Signes d'une Flamme Jumelle selon la Voyance</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Les signes principaux sont la reconnaissance instantanee, l'effet miroir puissant, l'intensite extreme, la telepathie a distance, les synchronicites constantes et une transformation personnelle acceleree.</p>
           <p className="text-gray-700 mb-6">
             Reconnaître votre <strong>flamme jumelle</strong> demande une conscience aiguë des signaux spirituels et énergétiques. Voici les 11 signes les plus fiables identifiés par la <strong>voyance karmique</strong> et confirmés par des milliers de consultations.
           </p>
@@ -269,6 +277,7 @@ export default function FlammeJumellePage() {
         {/* Les 8 Étapes */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-purple-600">&#x1F31F; Les 8 Étapes de la Relation Flamme Jumelle</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Le parcours flamme jumelle suit huit etapes karmiques : reconnaissance, fusion, crise, course-poursuite, lacher-prise, eveil, illumination et union harmonieuse finale.</p>
           <p className="text-gray-700 mb-6">
             Le parcours de la <strong>flamme jumelle</strong> suit un schéma karmique précis en huit étapes. Chaque phase sert l'<strong>évolution spirituelle</strong> des deux âmes et prépare l'union finale. Comprendre ces étapes permet de traverser les moments difficiles avec conscience et patience.
           </p>
@@ -345,6 +354,7 @@ export default function FlammeJumellePage() {
         {/* Séparation et Retrouvailles */}
         <section className="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-xl p-8 mb-8 border-2 border-indigo-200">
           <h2 className="text-3xl font-bold mb-6 text-gray-900">&#x1F504; Séparation et Retrouvailles — Le Cycle Karmique</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">La separation de flamme jumelle dure en moyenne 1 a 3 ans. Elle permet a chaque ame de guerir individuellement avant l'union harmonieuse. Les synchronicites amplifient quand les retrouvailles approchent.</p>
           <p className="text-gray-700 mb-6">
             La <strong>séparation de flamme jumelle</strong> est l'épreuve la plus redoutée et la plus incomprise du parcours. Pourtant, elle constitue un passage obligé vers l'<strong>union harmonieuse</strong> et sert des objectifs spirituels précis.
           </p>
@@ -382,6 +392,7 @@ export default function FlammeJumellePage() {
         {/* Le Tarot et la Flamme Jumelle */}
         <section id="tarot" className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-purple-600">&#x1F0CF; Le Tarot Peut-il Confirmer une Flamme Jumelle ?</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Oui, les cartes Les Amoureux, le Deux de Coupe, la Maison Dieu et Temperance apparaissent systematiquement dans les tirages confirmant une connexion authentique de flamme jumelle.</p>
           <p className="text-gray-700 mb-6">
             Le <strong>tarot karmique</strong> est l'un des outils les plus puissants pour confirmer, clarifier et guider une connexion de <strong>flamme jumelle</strong>. Certaines cartes apparaissent systématiquement dans les tirages liés à cette dynamique spirituelle unique. Votre <Link href="/sentiments/compatibilite-amoureuse" className="text-purple-600 hover:text-purple-800 underline font-medium">compatibilité spirituelle</Link> se révèle à travers des arcanes spécifiques.
           </p>
@@ -397,7 +408,7 @@ export default function FlammeJumellePage() {
             <div className="bg-purple-50 p-5 rounded-lg border-l-4 border-purple-500">
               <h3 className="font-bold text-purple-700 mb-2 text-lg">&#x1F3B4; Le Deux de Coupe</h3>
               <p className="text-gray-700">
-                Carte de l'<strong>union des âmes</strong> et de la réciprocité parfaite, le Deux de Coupe dans un tirage de flamme jumelle confirme la nature miroir de votre connexion. Il révèle un <strong>échange énergétique</strong> équilibré entre les deux flammes et annonce souvent une phase de rapprochement. Cette carte apparaît dans 72% des tirages confirmant une authentique connexion de flamme jumelle.
+                Carte de l'<strong>union des âmes</strong> et de la réciprocité parfaite, le Deux de Coupe dans un tirage de flamme jumelle confirme la nature miroir de votre connexion. Il révèle un <strong>échange énergétique</strong> équilibré entre les deux flammes et annonce souvent une phase de rapprochement. Cette carte apparaît très fréquemment dans les tirages confirmant une authentique connexion de flamme jumelle.
               </p>
             </div>
 
@@ -438,30 +449,31 @@ export default function FlammeJumellePage() {
         {/* FAQ Section */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold mb-8 text-purple-600">&#x2753; Questions Fréquentes sur la Flamme Jumelle</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Retrouvez les reponses aux questions les plus posees sur la reconnaissance de la flamme jumelle, la duree de la separation, la difference avec une relation toxique et la nature du lien.</p>
           <div className="space-y-6">
             <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Comment savoir si c'est ma flamme jumelle ou une relation toxique ?</h3>
+              <h3 className="text-xl font-bold mb-3 text-gray-900">Flamme jumelle ou relation toxique, comment savoir ?</h3>
               <p className="text-gray-700 leading-relaxed">
                 La <strong>flamme jumelle</strong> provoque une transformation profonde et positive, même à travers la douleur. Contrairement à une <strong>relation toxique</strong>, la connexion de flamme jumelle vous pousse vers votre meilleure version et l'<strong>éveil spirituel</strong>. La relation toxique vous diminue, vous isole et détruit votre estime. Avec votre flamme jumelle, la souffrance mène à la <strong>croissance personnelle</strong>, jamais à la destruction. Le <strong>tarot karmique</strong> distingue clairement ces deux dynamiques grâce aux arcanes de transformation comme la Maison Dieu ou Tempérance.
               </p>
             </div>
 
             <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Combien de temps dure la séparation avec sa flamme jumelle ?</h3>
+              <h3 className="text-xl font-bold mb-3 text-gray-900">Combien de temps dure la séparation flamme jumelle ?</h3>
               <p className="text-gray-700 leading-relaxed">
                 La <strong>séparation de flamme jumelle</strong> varie considérablement selon le karma et l'<strong>évolution spirituelle</strong> de chacun. Elle peut durer de quelques mois à plusieurs années, parfois même une vie entière si les leçons karmiques ne sont pas intégrées. En moyenne, la phase de séparation dure entre 1 et 3 ans. Les signes de <strong>retrouvailles imminentes</strong> incluent des synchronicités amplifiées, des rêves récurrents, et un sentiment de paix intérieure retrouvée. La <strong>voyance</strong> et le tirage de tarot karmique permettent d'estimer la durée restante.
               </p>
             </div>
 
             <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Tout le monde a-t-il une flamme jumelle ?</h3>
+              <h3 className="text-xl font-bold mb-3 text-gray-900">A-t-on tous une flamme jumelle ?</h3>
               <p className="text-gray-700 leading-relaxed">
-                Selon la <strong>tradition spirituelle</strong>, chaque âme possède théoriquement une flamme jumelle, mais toutes ne choisissent pas de s'incarner simultanément sur Terre. Certaines <strong>flammes jumelles</strong> restent dans les plans subtils pour guider leur moitié incarnée. Seule une minorité de personnes — environ 10 à 15% — rencontrent effectivement leur flamme jumelle dans cette vie. Cette rencontre n'est pas nécessaire à l'<strong>épanouissement spirituel</strong> : une relation d'<strong>âme s&oelig;ur</strong> harmonieuse est tout aussi précieuse et transformative.
+                Selon la <strong>tradition spirituelle</strong>, chaque âme possède théoriquement une flamme jumelle, mais toutes ne choisissent pas de s'incarner simultanément sur Terre. Certaines <strong>flammes jumelles</strong> restent dans les plans subtils pour guider leur moitié incarnée. Seule une minorité de personnes — environ une personne sur dix — rencontrent effectivement leur flamme jumelle dans cette vie. Cette rencontre n'est pas nécessaire à l'<strong>épanouissement spirituel</strong> : une relation d'<strong>âme s&oelig;ur</strong> harmonieuse est tout aussi précieuse et transformative.
               </p>
             </div>
 
             <div>
-              <h3 className="text-xl font-bold mb-3 text-gray-900">La flamme jumelle est-elle toujours un partenaire amoureux ?</h3>
+              <h3 className="text-xl font-bold mb-3 text-gray-900">La flamme jumelle est-elle toujours amoureuse ?</h3>
               <p className="text-gray-700 leading-relaxed">
                 Non, la <strong>flamme jumelle</strong> n'est pas systématiquement un partenaire romantique. Bien que la connexion soit extrêmement intense et souvent ressentie comme amoureuse, certaines flammes jumelles se manifestent sous forme d'amitié profonde, de <strong>lien familial</strong>, ou de partenariat créatif et spirituel. L'essentiel de la relation flamme jumelle réside dans la <strong>mission d'éveil mutuel</strong> et la transformation spirituelle, pas nécessairement dans l'union romantique. Le <strong>tarot</strong> clarifie la nature exacte du lien karmique entre deux flammes jumelles.
               </p>

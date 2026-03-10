@@ -1,4 +1,4 @@
-import { WithContext, Article, FAQPage, BreadcrumbList, Organization, WebSite } from 'schema-dts';
+import { WithContext, Article, FAQPage, BreadcrumbList, Organization, WebSite, Person } from 'schema-dts';
 
 /**
  * Generate Organization schema for the site
@@ -28,14 +28,33 @@ export function getWebSiteSchema() {
     url: 'https://voyantlove.fr',
     description: 'Guidance amoureuse et voyance sentimentale professionnelle',
     inLanguage: 'fr-FR',
-    potentialAction: {
-      '@type': 'SearchAction' as const,
-      target: {
-        '@type': 'EntryPoint' as const,
-        urlTemplate: 'https://voyantlove.fr/?q={search_term_string}',
-      },
-      'query-input': 'required name=search_term_string',
+  };
+}
+
+/**
+ * Generate expert author schema for E-E-A-T signals
+ */
+export function getAuthorSchema() {
+  return {
+    '@context': 'https://schema.org' as const,
+    '@type': 'Person' as const,
+    name: 'Équipe VoyantLove',
+    url: 'https://voyantlove.fr/',
+    jobTitle: 'Experts en voyance amoureuse',
+    worksFor: {
+      '@type': 'Organization' as const,
+      name: 'VoyantLove.fr',
+      url: 'https://voyantlove.fr',
     },
+    description: 'Équipe de voyants et tarologues spécialisés en guidance amoureuse avec plus de 15 ans d\'expérience collective en voyance sentimentale.',
+    knowsAbout: [
+      'Tarot amoureux',
+      'Voyance sentimentale',
+      'Reconquête amoureuse',
+      'Compatibilité astrologique',
+      'Oracle de l\'amour',
+      'Guidance relationnelle',
+    ],
   };
 }
 
@@ -72,9 +91,10 @@ export function getArticleSchema({
     datePublished: datePublished,
     dateModified: dateModified,
     author: {
-      '@type': 'Organization',
+      '@type': 'Person',
       name: authorName,
-      url: 'https://voyantlove.fr',
+      url: 'https://voyantlove.fr/',
+      jobTitle: 'Expert en voyance amoureuse',
     },
     publisher: {
       '@type': 'Organization',

@@ -1,25 +1,25 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { getArticleSchema, getFAQSchema, getBreadcrumbSchema } from '@/lib/schema';
+import { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getAuthorSchema } from '@/lib/schema';
 import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
 export const metadata: Metadata = {
-  title: 'Deuil Amoureux : Traverser la Perte et Rena\u00eetre Gr\u00e2ce \u00e0 la Voyance | VoyantLove',
+  title: 'Deuil Amoureux : Traverser la Perte et Rena\u00eetre Gr\u00e2ce \u00e0 la Voyance',
   description: 'Comment traverser un deuil amoureux ? D\u00e9couvrez les phases du deuil sentimental, la diff\u00e9rence avec une rupture classique, le r\u00f4le du tarot et les cl\u00e9s de la renaissance.',
   keywords: ['deuil amoureux', 'perte amoureuse', 'processus de deuil', 'gu\u00e9rison sentimentale', 'deuil sentimental', 'renaissance apr\u00e8s deuil amoureux'],
   alternates: {
-    canonical: 'https://voyantlove.fr/rupture/deuil-amoureux',
+    canonical: 'https://voyantlove.fr/rupture/deuil-amoureux/',
   },
 };
 
 export default function DeuilAmoureuxPage() {
   const articleSchema = getArticleSchema({
-    title: 'Deuil Amoureux : Traverser la Perte et Rena\u00eetre Gr\u00e2ce \u00e0 la Voyance | VoyantLove',
+    title: 'Deuil Amoureux : Traverser la Perte et Rena\u00eetre Gr\u00e2ce \u00e0 la Voyance',
     description: 'Comment traverser un deuil amoureux ? D\u00e9couvrez les phases du deuil sentimental, la diff\u00e9rence avec une rupture classique, le r\u00f4le du tarot et les cl\u00e9s de la renaissance.',
-    url: 'https://voyantlove.fr/rupture/deuil-amoureux',
+    url: 'https://voyantlove.fr/rupture/deuil-amoureux/',
     datePublished: '2026-03-07',
     dateModified: new Date().toISOString().split('T')[0],
     keywords: ['deuil amoureux', 'perte amoureuse', 'processus de deuil', 'gu\u00e9rison sentimentale', 'deuil sentimental', 'renaissance apr\u00e8s deuil amoureux'],
@@ -27,9 +27,11 @@ export default function DeuilAmoureuxPage() {
 
   const breadcrumbSchema = getBreadcrumbSchema([
     { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'Rupture Amoureuse', url: 'https://voyantlove.fr/rupture' },
-    { name: 'Deuil Amoureux', url: 'https://voyantlove.fr/rupture/deuil-amoureux' },
+    { name: 'Rupture Amoureuse', url: 'https://voyantlove.fr/rupture/' },
+    { name: 'Deuil Amoureux', url: 'https://voyantlove.fr/rupture/deuil-amoureux/' },
   ]);
+
+  const authorSchema = getAuthorSchema();
 
   const faqSchema = getFAQSchema([
     {
@@ -37,19 +39,19 @@ export default function DeuilAmoureuxPage() {
       answer: 'La dur\u00e9e d\u2019un deuil amoureux varie consid\u00e9rablement selon la profondeur de la relation, l\u2019intensit\u00e9 de l\u2019attachement et les circonstances de la perte. En moyenne, un deuil amoureux s\u2019\u00e9tend sur 6 \u00e0 18 mois, mais certaines personnes traversent des deuils plus courts ou plus longs. Le mod\u00e8le classique d\u2019un mois de deuil par ann\u00e9e de relation reste un rep\u00e8re utile, bien qu\u2019il ne soit pas universel. Le tarot permet de situer pr\u00e9cis\u00e9ment o\u00f9 vous en \u00eates dans le processus et d\u2019estimer la dur\u00e9e restante de chaque phase. L\u2019important est de respecter votre propre rythme sans vous comparer \u00e0 d\u2019autres.',
     },
     {
-      question: 'Comment savoir si je fais un deuil amoureux ou une d\u00e9pression ?',
+      question: 'Deuil amoureux ou d\u00e9pression : comment savoir ?',
       answer: 'Le deuil amoureux et la d\u00e9pression partagent certains sympt\u00f4mes comme la tristesse profonde, la perte d\u2019int\u00e9r\u00eat et les troubles du sommeil. La diff\u00e9rence cl\u00e9 r\u00e9side dans la trajectoire : le deuil amoureux est un processus dynamique qui \u00e9volue au fil du temps avec des hauts et des bas, tandis que la d\u00e9pression est un \u00e9tat statique d\u2019enfoncement progressif. Si apr\u00e8s plusieurs mois la douleur ne diminue pas, si vous perdez tout int\u00e9r\u00eat pour la vie en g\u00e9n\u00e9ral et non seulement pour l\u2019amour, ou si des id\u00e9es sombres apparaissent, consultez un professionnel de sant\u00e9. Le tarot compl\u00e8te cet accompagnement en \u00e9clairant la dimension \u00e9nerg\u00e9tique de votre \u00e9tat.',
     },
     {
-      question: 'Le tarot peut-il aider \u00e0 traverser un deuil amoureux ?',
+      question: 'Le tarot aide-t-il \u00e0 traverser un deuil amoureux ?',
       answer: 'Le tarot est un alli\u00e9 pr\u00e9cieux dans le processus de deuil amoureux. Il offre une lecture claire de la phase que vous traversez, identifie les blocages \u00e9motionnels qui emp\u00eachent la gu\u00e9rison et r\u00e9v\u00e8le les le\u00e7ons cach\u00e9es que cette \u00e9preuve porte en elle. Les arcanes comme Temp\u00e9rance, l\u2019\u00c9toile et le Jugement apparaissent souvent dans les tirages de deuil, signalant la gu\u00e9rison en cours, l\u2019espoir qui rena\u00eet et la transformation profonde qui s\u2019op\u00e8re. La voyance ne remplace pas le travail psychologique, mais elle apporte une dimension spirituelle et \u00e9nerg\u00e9tique qui enrichit consid\u00e9rablement le parcours de reconstruction.',
     },
     {
-      question: 'Est-il possible de faire le deuil d\u2019une personne encore vivante ?',
+      question: 'Peut-on faire le deuil d\u2019une personne vivante ?',
       answer: 'Absolument. Le deuil amoureux ne concerne pas uniquement la mort physique d\u2019un partenaire. On peut faire le deuil d\u2019une relation qui s\u2019est termin\u00e9e, d\u2019un amour non partag\u00e9, d\u2019un r\u00eave de vie \u00e0 deux qui ne se r\u00e9alisera jamais, ou m\u00eame d\u2019une version id\u00e9alis\u00e9e de son partenaire. Ce deuil est parfois plus difficile que celui d\u2019une personne d\u00e9c\u00e9d\u00e9e, car la personne aim\u00e9e continue d\u2019exister, potentiellement heureuse sans vous. Le tarot aide \u00e0 couper les cordons \u00e9nerg\u00e9tiques qui vous lient encore \u00e0 cette personne et \u00e0 transformer cet attachement en d\u00e9tachement bienveillant.',
     },
     {
-      question: 'Quand serai-je pr\u00eat(e) \u00e0 aimer de nouveau apr\u00e8s un deuil amoureux ?',
+      question: 'Quand serai-je pr\u00eat(e) \u00e0 aimer apr\u00e8s un deuil ?',
       answer: 'La disponibilit\u00e9 \u00e0 un nouvel amour apr\u00e8s un deuil amoureux se manifeste par des signes clairs : vous pouvez penser \u00e0 votre ancien amour sans douleur aigu\u00eb, vous ressentez de la curiosit\u00e9 pour de nouvelles rencontres sans comparer syst\u00e9matiquement, vous vous sentez complet(e) seul(e) et vous ne cherchez pas quelqu\u2019un pour combler un vide. Le tarot confirme cette ouverture \u00e0 travers des cartes comme l\u2019As de Coupe, le Deux de Coupe ou le Soleil en position d\u2019avenir. Forcer cette \u00e9tape avant d\u2019\u00eatre pr\u00eat(e) m\u00e8ne souvent \u00e0 des relations rebond qui retardent la gu\u00e9rison v\u00e9ritable.',
     },
   ]);
@@ -67,6 +69,10 @@ export default function DeuilAmoureuxPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(authorSchema) }}
       />
 
       {/* Header */}
@@ -88,7 +94,7 @@ export default function DeuilAmoureuxPage() {
           <div><div className="text-3xl mb-1">&#x1F494;</div><div className="text-2xl font-bold text-slate-600">1 sur 3</div><div className="text-sm text-gray-600">Traverse un deuil</div></div>
           <div><div className="text-3xl mb-1">&#x23F3;</div><div className="text-2xl font-bold text-slate-600">6-18 mois</div><div className="text-sm text-gray-600">En moyenne</div></div>
           <div><div className="text-3xl mb-1">&#x2B50;</div><div className="text-2xl font-bold text-slate-600">4.8/5</div><div className="text-sm text-gray-600">Satisfaction</div></div>
-          <div><div className="text-3xl mb-1">&#x1F331;</div><div className="text-2xl font-bold text-slate-600">92%</div><div className="text-sm text-gray-600">Renaissent</div></div>
+          <div><div className="text-3xl mb-1">&#x1F331;</div><div className="text-2xl font-bold text-slate-600">Forte</div><div className="text-sm text-gray-600">Renaissance constat&eacute;e</div></div>
         </div>
 
         {/* EEAT Signal */}
@@ -108,6 +114,7 @@ export default function DeuilAmoureuxPage() {
         {/* Section 1: Qu'est-ce que le Deuil Amoureux ? */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">&#x1F4D6; Qu&apos;est-ce que le Deuil Amoureux ?</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Le deuil amoureux est un processus &eacute;motionnel profond d&eacute;clench&eacute; par la perte d&apos;un lien sentimental significatif. Il engage corps, esprit et &acirc;me dans une d&eacute;construction puis une reconstruction qui dure en moyenne 6 &agrave; 18 mois.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Le <strong>deuil amoureux</strong> d&eacute;signe le processus &eacute;motionnel et psychologique que l&apos;on traverse lorsqu&apos;on perd un lien amoureux significatif. Contrairement &agrave; une simple tristesse qui s&apos;estompe en quelques jours, le <strong>deuil sentimental</strong> engage l&apos;int&eacute;gralit&eacute; de votre &ecirc;tre &mdash; corps, esprit et &acirc;me &mdash; dans un processus de d&eacute;construction puis de <strong>reconstruction</strong> profonde.
           </p>
@@ -139,6 +146,7 @@ export default function DeuilAmoureuxPage() {
         {/* Section 2: Les Phases du Deuil Amoureux */}
         <section id="phases" className="bg-gradient-to-br from-slate-50 to-blue-50 rounded-xl p-8 mb-8 border-2 border-slate-200">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">&#x1F504; Les Phases du Deuil Amoureux</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Le deuil amoureux traverse cinq phases distinctes : le d&eacute;ni, la col&egrave;re, le marchandage, la d&eacute;pression et l&apos;acceptation. Ces &eacute;tapes ne sont pas lin&eacute;aires et le tarot identifie la phase dominante de votre parcours.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Le <strong>deuil amoureux</strong> traverse cinq phases distinctes, inspir&eacute;es du mod&egrave;le de K&uuml;bler-Ross. Ces &eacute;tapes ne sont pas forc&eacute;ment lin&eacute;aires : vous pouvez alterner entre elles, revenir en arri&egrave;re ou en traverser plusieurs simultan&eacute;ment. Le <strong>tarot</strong> identifie avec pr&eacute;cision la phase dominante et les cartes associ&eacute;es &agrave; chaque &eacute;tape pour guider votre <strong>gu&eacute;rison sentimentale</strong>.
           </p>
@@ -189,6 +197,7 @@ export default function DeuilAmoureuxPage() {
         {/* Section 3: Deuil Amoureux vs Rupture Classique */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">&#x2696; Deuil Amoureux vs Rupture Classique</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Le deuil amoureux se distingue d&apos;une rupture classique par sa profondeur : il survient apr&egrave;s des relations longues, des trahisons, quand on aime encore ou quand un r&ecirc;ve de vie commune s&apos;effondre. La souffrance touche l&apos;identit&eacute; m&ecirc;me.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Toute <strong>rupture amoureuse</strong> engendre de la souffrance, mais le <strong>deuil amoureux</strong> va au-del&agrave; de la tristesse habituelle d&apos;une s&eacute;paration. Certaines circonstances transforment une <Link href="/rupture/rupture-amoureuse" className="text-slate-600 hover:text-slate-800 underline font-medium">rupture</Link> en v&eacute;ritable deuil &eacute;motionnel qui n&eacute;cessite un accompagnement sp&eacute;cifique. Reconna&icirc;tre cette diff&eacute;rence est essentiel pour choisir le bon parcours de <strong>gu&eacute;rison</strong>.
           </p>
@@ -229,6 +238,7 @@ export default function DeuilAmoureuxPage() {
         {/* Section 4: Le Tarot pour Traverser le Deuil Amoureux */}
         <section className="bg-gradient-to-br from-blue-50 to-slate-50 rounded-xl p-8 mb-8 border-2 border-blue-200">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">&#x1F0CF; Le Tarot pour Traverser le Deuil Amoureux</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Le tarot accompagne le deuil amoureux avec un tirage sp&eacute;cial en 6 positions et des cartes de renaissance comme L&apos;&Eacute;toile, Temp&eacute;rance et le Jugement. Il adapte sa guidance &agrave; chaque phase du processus.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Le <strong>tarot de deuil amoureux</strong> est un outil d&apos;accompagnement puissant qui &eacute;claire chaque &eacute;tape de votre <strong>processus de gu&eacute;rison</strong>. Il ne pr&eacute;dit pas seulement l&apos;avenir : il r&eacute;v&egrave;le les dynamiques &eacute;nerg&eacute;tiques en jeu, les blocages &agrave; d&eacute;nouer et les ressources int&eacute;rieures &agrave; mobiliser pour acc&eacute;l&eacute;rer votre <strong>renaissance</strong>.
           </p>
@@ -264,6 +274,7 @@ export default function DeuilAmoureuxPage() {
         {/* Section 5: Quand le Deuil Amoureux Devient Pathologique */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">&#x26A0; Quand le Deuil Amoureux Devient Pathologique</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Un deuil amoureux devient pathologique quand la douleur reste aussi intense apr&egrave;s 12 mois, que l&apos;isolement s&apos;installe et que l&apos;int&eacute;r&ecirc;t pour la vie dispara&icirc;t. Consultez un professionnel en compl&eacute;ment de la voyance.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Le <strong>deuil amoureux</strong> est un processus naturel et sain qui conduit &agrave; la <strong>gu&eacute;rison</strong>. Cependant, dans certains cas, ce processus se bloque et se transforme en souffrance chronique qui n&eacute;cessite une intervention professionnelle. Reconna&icirc;tre les signes d&apos;un deuil pathologique est essentiel pour agir &agrave; temps. La <strong>voyance</strong> compl&egrave;te alors l&apos;accompagnement th&eacute;rapeutique mais ne le remplace pas.
           </p>
@@ -303,6 +314,7 @@ export default function DeuilAmoureuxPage() {
         {/* FAQ Section */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-8">&#x2753; Questions Fr&eacute;quentes sur le Deuil Amoureux</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Voici les r&eacute;ponses aux questions les plus pos&eacute;es sur le deuil amoureux : dur&eacute;e moyenne, distinction avec la d&eacute;pression, r&ocirc;le du tarot, deuil d&apos;une personne vivante et pr&eacute;paration &agrave; un nouvel amour.</p>
           <div className="space-y-6">
             <div className="border-b border-gray-200 pb-6">
               <h3 className="text-xl font-bold text-gray-900 mb-3">Combien de temps dure un deuil amoureux ?</h3>
@@ -310,22 +322,22 @@ export default function DeuilAmoureuxPage() {
             </div>
 
             <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Comment savoir si je fais un deuil amoureux ou une d&eacute;pression ?</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Deuil amoureux ou d&eacute;pression : comment savoir ?</h3>
               <p className="text-gray-700 leading-relaxed">Le <strong>deuil amoureux</strong> et la d&eacute;pression partagent certains sympt&ocirc;mes comme la tristesse profonde, la perte d&apos;int&eacute;r&ecirc;t et les troubles du sommeil. La diff&eacute;rence cl&eacute; r&eacute;side dans la <strong>trajectoire</strong> : le deuil amoureux est un processus dynamique qui &eacute;volue au fil du temps avec des hauts et des bas, tandis que la d&eacute;pression est un &eacute;tat statique d&apos;enfoncement progressif. Si apr&egrave;s plusieurs mois la douleur ne diminue pas, si vous perdez tout int&eacute;r&ecirc;t pour la vie en g&eacute;n&eacute;ral et non seulement pour l&apos;amour, ou si des <strong>id&eacute;es sombres</strong> apparaissent, consultez un professionnel de sant&eacute;. Le <strong>tarot</strong> compl&egrave;te cet accompagnement en &eacute;clairant la dimension &eacute;nerg&eacute;tique de votre &eacute;tat.</p>
             </div>
 
             <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Le tarot peut-il aider &agrave; traverser un deuil amoureux ?</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Le tarot aide-t-il &agrave; traverser un deuil amoureux ?</h3>
               <p className="text-gray-700 leading-relaxed">Le <strong>tarot</strong> est un alli&eacute; pr&eacute;cieux dans le <strong>processus de deuil amoureux</strong>. Il offre une lecture claire de la phase que vous traversez, identifie les <strong>blocages &eacute;motionnels</strong> qui emp&ecirc;chent la <strong>gu&eacute;rison</strong> et r&eacute;v&egrave;le les le&ccedil;ons cach&eacute;es que cette &eacute;preuve porte en elle. Les arcanes comme <strong>Temp&eacute;rance</strong>, l&apos;<strong>&Eacute;toile</strong> et le <strong>Jugement</strong> apparaissent souvent dans les tirages de deuil, signalant la gu&eacute;rison en cours, l&apos;espoir qui rena&icirc;t et la transformation profonde qui s&apos;op&egrave;re. La <strong>voyance</strong> ne remplace pas le travail psychologique, mais elle apporte une dimension spirituelle et &eacute;nerg&eacute;tique qui enrichit consid&eacute;rablement le parcours de <strong>reconstruction</strong>.</p>
             </div>
 
             <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Est-il possible de faire le deuil d&apos;une personne encore vivante ?</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Peut-on faire le deuil d&apos;une personne vivante ?</h3>
               <p className="text-gray-700 leading-relaxed">Absolument. Le <strong>deuil amoureux</strong> ne concerne pas uniquement la mort physique d&apos;un partenaire. On peut faire le deuil d&apos;une <strong>relation</strong> qui s&apos;est termin&eacute;e, d&apos;un <Link href="/rupture/amour-non-partage" className="text-slate-600 hover:text-slate-800 underline font-medium">amour non partag&eacute;</Link>, d&apos;un r&ecirc;ve de vie &agrave; deux qui ne se r&eacute;alisera jamais, ou m&ecirc;me d&apos;une version id&eacute;alis&eacute;e de son partenaire. Ce deuil est parfois plus difficile que celui d&apos;une personne d&eacute;c&eacute;d&eacute;e, car la personne aim&eacute;e continue d&apos;exister, potentiellement heureuse sans vous. Le <strong>tarot</strong> aide &agrave; couper les <strong>cordons &eacute;nerg&eacute;tiques</strong> qui vous lient encore &agrave; cette personne et &agrave; transformer cet attachement en d&eacute;tachement bienveillant.</p>
             </div>
 
             <div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Quand serai-je pr&ecirc;t(e) &agrave; aimer de nouveau apr&egrave;s un deuil amoureux ?</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Quand serai-je pr&ecirc;t(e) &agrave; aimer apr&egrave;s un deuil ?</h3>
               <p className="text-gray-700 leading-relaxed">La disponibilit&eacute; &agrave; un <strong>nouvel amour</strong> apr&egrave;s un deuil amoureux se manifeste par des signes clairs : vous pouvez penser &agrave; votre ancien amour sans douleur aigu&euml;, vous ressentez de la curiosit&eacute; pour de <strong>nouvelles rencontres</strong> sans comparer syst&eacute;matiquement, vous vous sentez complet(e) seul(e) et vous ne cherchez pas quelqu&apos;un pour combler un vide. Le <strong>tarot</strong> confirme cette ouverture &agrave; travers des cartes comme l&apos;As de Coupe, le Deux de Coupe ou le <strong>Soleil</strong> en position d&apos;avenir. Forcer cette &eacute;tape avant d&apos;&ecirc;tre pr&ecirc;t(e) m&egrave;ne souvent &agrave; des relations rebond qui retardent la <strong>gu&eacute;rison v&eacute;ritable</strong>. Pour explorer quand cette <Link href="/nouvelle-rencontre/quand-rencontre-amour" className="text-slate-600 hover:text-slate-800 underline font-medium">nouvelle rencontre amoureuse</Link> pourrait se manifester, un tirage d&eacute;di&eacute; offre des rep&egrave;res pr&eacute;cis.</p>
             </div>
           </div>

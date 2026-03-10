@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { getArticleSchema, getFAQSchema, getBreadcrumbSchema } from '@/lib/schema';
+import { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getAuthorSchema } from '@/lib/schema';
 import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
@@ -10,14 +10,14 @@ export const metadata: Metadata = {
   title: 'Retour de l\'Ex : Signes, Timing et Prédictions du Tarot',
   description: 'Votre ex reviendra-t-il ? Découvrez les signes du retour, le timing astrologique et comment préparer les retrouvailles selon le tarot.',
   keywords: ['retour ex', 'ex qui revient', 'signes retour', 'retour être aimé', 'retrouvailles'],
-  alternates: { canonical: 'https://voyantlove.fr/reconquete/retour-de-lex' },
+  alternates: { canonical: 'https://voyantlove.fr/reconquete/retour-de-lex/' },
 };
 
 export default function RetourExPage() {
   const articleSchema = getArticleSchema({
     title: 'Retour de l\'Ex : Signes, Timing et Prédictions du Tarot',
     description: 'Votre ex reviendra-t-il ? Découvrez les signes du retour, le timing astrologique et comment préparer les retrouvailles selon le tarot.',
-    url: 'https://voyantlove.fr/reconquete/retour-de-lex',
+    url: 'https://voyantlove.fr/reconquete/retour-de-lex/',
     datePublished: '2026-01-16',
     dateModified: new Date().toISOString().split('T')[0],
     keywords: ['retour ex', 'ex qui revient', 'signes retour', 'retour être aimé', 'retrouvailles'],
@@ -26,7 +26,7 @@ export default function RetourExPage() {
   const faqSchema = getFAQSchema([
     {
       question: 'Mon ex reviendra-t-il ?',
-      answer: 'Le tarot de la reconquête amoureuse offre une lecture nuancée des énergies entre vous et votre ex. Statistiquement, environ 38 % des ex reviennent dans les 6 premiers mois suivant la rupture, et 15 % supplémentaires au-delà d\'un an. Cependant, le retour n\'est pas toujours souhaitable ni bénéfique. Le tirage révèle si cette personne porte encore des sentiments sincères ou si elle agit par solitude passagère. Les cartes comme Le Jugement ou L\'Étoile indiquent un retour probable et constructif, tandis que La Lune ou Le Diable suggèrent des motivations ambiguës. Consultez un tirage complet pour connaître la probabilité réelle adaptée à votre situation personnelle.',
+      answer: 'Le tarot de la reconquête amoureuse offre une lecture nuancée des énergies entre vous et votre ex. De nombreux ex reviennent dans les mois suivant la rupture, et certains au-delà d\'un an. Cependant, le retour n\'est pas toujours souhaitable ni bénéfique. Le tirage révèle si cette personne porte encore des sentiments sincères ou si elle agit par solitude passagère. Les cartes comme Le Jugement ou L\'Étoile indiquent un retour probable et constructif, tandis que La Lune ou Le Diable suggèrent des motivations ambiguës. Consultez un tirage complet pour connaître la probabilité réelle adaptée à votre situation personnelle.',
     },
     {
       question: 'Combien de temps avant retour ?',
@@ -38,15 +38,17 @@ export default function RetourExPage() {
     },
     {
       question: 'Un retour dure-t-il ?',
-      answer: 'La durabilité du retour dépend entièrement de l\'évolution accomplie par les deux partenaires pendant la séparation. Les statistiques montrent que 75 % des couples qui se remettent ensemble après un vrai travail sur eux-mêmes construisent une relation plus solide qu\'avant. En revanche, si le retour est motivé uniquement par la nostalgie ou la peur de la solitude sans changement profond, une nouvelle rupture survient généralement en moins de 6 mois. Le tarot identifie précisément votre scénario : les arcanes comme Le Monde ou Le Soleil annoncent une union renforcée, tandis que La Tour ou le Cinq de Coupes signalent un risque de rechute si les fondations ne sont pas consolidées.',
+      answer: 'La durabilité du retour dépend entièrement de l\'évolution accomplie par les deux partenaires pendant la séparation. La grande majorité des couples qui se remettent ensemble après un vrai travail sur eux-mêmes construisent une relation plus solide qu\'avant. En revanche, si le retour est motivé uniquement par la nostalgie ou la peur de la solitude sans changement profond, une nouvelle rupture survient généralement en moins de 6 mois. Le tarot identifie précisément votre scénario : les arcanes comme Le Monde ou Le Soleil annoncent une union renforcée, tandis que La Tour ou le Cinq de Coupes signalent un risque de rechute si les fondations ne sont pas consolidées.',
     },
   ]);
 
   const breadcrumbSchema = getBreadcrumbSchema([
     { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'Reconquête', url: 'https://voyantlove.fr/reconquete' },
-    { name: 'Retour de l\'Ex', url: 'https://voyantlove.fr/reconquete/retour-de-lex' },
+    { name: 'Reconquête', url: 'https://voyantlove.fr/reconquete/' },
+    { name: 'Retour de l\'Ex', url: 'https://voyantlove.fr/reconquete/retour-de-lex/' },
   ]);
+
+  const authorSchema = getAuthorSchema();
 
   return (
     <main className="min-h-screen bg-gray-50">
@@ -62,9 +64,13 @@ export default function RetourExPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(authorSchema) }}
+      />
       <header className="bg-gradient-to-r from-violet-600 via-purple-600 to-fuchsia-600 text-white py-16 px-4">
         <div className="max-w-4xl mx-auto">
-          <Link href="/" className="text-white/80 hover:text-white mb-4 inline-block">← Retour</Link>
+          <Link href="/reconquete" className="text-white/80 hover:text-white mb-4 inline-block">← Retour à la Reconquête</Link>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">↩️ Retour de l'Ex</h1>
           <p className="text-xl opacity-95 mb-6">Signes, timing et prédictions du tarot</p>
           <div className="flex gap-4 flex-wrap">
@@ -77,9 +83,9 @@ export default function RetourExPage() {
       <div className="max-w-4xl mx-auto px-4 py-8">
         <div className="bg-white rounded-xl shadow-md p-6 mb-8 grid grid-cols-4 gap-4 text-center">
           <div><div className="text-3xl mb-1">⭐</div><div className="text-2xl font-bold text-violet-600">4.8/5</div><div className="text-sm text-gray-600">287 avis</div></div>
-          <div><div className="text-3xl mb-1">↩️</div><div className="text-2xl font-bold text-violet-600">38%</div><div className="text-sm text-gray-600">Retours effectifs</div></div>
+          <div><div className="text-3xl mb-1">↩️</div><div className="text-2xl font-bold text-violet-600">Fréquent</div><div className="text-sm text-gray-600">Retours observés</div></div>
           <div><div className="text-3xl mb-1">⏰</div><div className="text-2xl font-bold text-violet-600">2-6 mois</div><div className="text-sm text-gray-600">Délai</div></div>
-          <div><div className="text-3xl mb-1">🔮</div><div className="text-2xl font-bold text-violet-600">89%</div><div className="text-sm text-gray-600">Précision</div></div>
+          <div><div className="text-3xl mb-1">🔮</div><div className="text-2xl font-bold text-violet-600">Reconnue</div><div className="text-sm text-gray-600">Expertise</div></div>
         </div>
 
         <EEATSignal
@@ -97,6 +103,7 @@ export default function RetourExPage() {
 
         <section id="signes" className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6">💫 Les 10 Signes du Retour</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Les dix signes annonciateurs du retour d'un ex sont : la reprise de contact, la nostalgie, la jalousie, les questions sur vous, la présence en ligne, les croisements fortuits, les prétextes pour se voir, un changement visible, des regrets exprimés et l'initiative de se revoir.</p>
           <div className="space-y-3">
             <div className="flex items-start gap-3 p-3 bg-green-50 rounded"><div className="text-2xl">1️⃣</div><p className="text-gray-700"><strong>Contact repris</strong> : Votre ex vous recontacte après une période de silence, souvent avec un prétexte anodin comme récupérer un objet ou poser une question pratique. Ce premier message est rarement innocent : il teste votre réceptivité et jauge votre réaction émotionnelle avant d'aller plus loin.</p></div>
             <div className="flex items-start gap-3 p-3 bg-green-50 rounded"><div className="text-2xl">2️⃣</div><p className="text-gray-700"><strong>Nostalgie</strong> : Votre ex évoque le passé avec émotion, rappelle vos souvenirs communs et les moments heureux que vous avez partagés. Cette idéalisation du passé est un signe fort que le manque s'installe et que la réalité de la séparation pèse de plus en plus lourd dans son quotidien.</p></div>
@@ -113,6 +120,7 @@ export default function RetourExPage() {
 
         <section className="bg-gradient-to-br from-violet-50 to-purple-50 rounded-xl p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6">📅 Timing Astrologique</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Les cinq configurations astrologiques les plus propices au retour d'un ex sont Vénus rétrograde, les éclipses, la Pleine Lune en signes d'eau, le transit de Jupiter en Maison VII et Mercure rétrograde.</p>
           <p className="text-gray-700 mb-6">L'astrologie joue un rôle déterminant dans les <strong>retours d'ex</strong>. Certaines configurations planétaires créent des fenêtres énergétiques propices aux retrouvailles, en réveillant les souvenirs émotionnels et en adoucissant les rancœurs accumulées. Comprendre ces cycles permet d'anticiper les moments où votre ex sera le plus réceptif à un rapprochement. Si vous hésitez encore sur la direction à prendre, découvrir les clés pour <Link href="/reconquete/reconquerir-son-ex" className="text-violet-600 hover:text-violet-800 font-medium">reconquérir son ex</Link> en phase avec le timing cosmique multiplie vos chances de succès.</p>
           <div className="space-y-4">
             <div className="bg-white p-4 rounded border-l-4 border-pink-500"><h3 className="font-bold text-pink-700 mb-2">💕 Vénus Rétrograde</h3><p className="text-gray-700 text-sm">Cette phase survient tous les 18 mois et dure environ 40 jours. C'est la <strong>période la plus puissante</strong> pour les retours d'ex, car Vénus rétrograde pousse chacun à revisiter ses anciennes relations, à réévaluer ses choix amoureux et à ressentir une nostalgie intense pour les amours passées. Les souvenirs refont surface avec une force émotionnelle décuplée, rendant le contact quasi inévitable.</p></div>
@@ -127,6 +135,7 @@ export default function RetourExPage() {
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-fuchsia-500">
           <h2 className="text-3xl font-bold mb-6">🃏 Le Tirage Tarot du Retour : 5 Positions</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Le tirage tarot du retour en 5 positions analyse les sentiments de votre ex, les obstacles au retour, le timing probable, la meilleure stratégie à adopter et l'issue finale de la situation.</p>
           <p className="text-gray-700 mb-6">Ce <strong>tirage spécifique en 5 positions</strong> est conçu pour répondre à toutes vos questions sur le retour potentiel de votre ex. Chaque position explore une dimension essentielle de la dynamique entre vous, offrant une vision complète de la situation. Si la question « <Link href="/reconquete/va-t-il-elle-revenir" className="text-violet-600 hover:text-violet-800 font-medium">va-t-il/elle revenir</Link> » vous obsède, ce tirage apporte des réponses structurées et nuancées.</p>
           <div className="space-y-4">
             <div className="bg-fuchsia-50 p-4 rounded-lg">
@@ -154,6 +163,7 @@ export default function RetourExPage() {
 
         <section className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6">🛤️ Comment Préparer le Retour</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Préparer le retour de son ex passe par quatre étapes : le silence radio pour créer le manque, le travail sur soi pour évoluer sincèrement, la reprise de contact au bon moment et la reconstruction progressive du lien.</p>
           <p className="text-gray-700 mb-6">Le retour d'un ex ne s'improvise pas. Il se prépare méthodiquement, en combinant <strong>travail intérieur</strong> et <strong>stratégie relationnelle</strong>. Voici les étapes essentielles validées par l'expérience de nos consultants en voyance amoureuse et par les témoignages de centaines de couples réunis.</p>
           <div className="space-y-4">
             <div className="bg-white p-5 rounded-lg shadow-sm">
@@ -177,11 +187,12 @@ export default function RetourExPage() {
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold mb-8">❓ Questions Fréquentes</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Retrouvez les réponses aux questions essentielles sur le retour d'un ex : probabilité de retour, délai moyen, stratégies pour favoriser les retrouvailles et durabilité de la réconciliation.</p>
           <div className="space-y-6">
-            <div className="border-b pb-6"><h3 className="text-xl font-bold mb-3">Mon ex reviendra-t-il ?</h3><p className="text-gray-700">Le <strong>tarot de la reconquête amoureuse</strong> offre une lecture nuancée des énergies entre vous et votre ex. Statistiquement, environ <strong>38 % des ex reviennent</strong> dans les 6 premiers mois suivant la rupture, et 15 % supplémentaires au-delà d'un an. Cependant, le retour n'est pas toujours souhaitable ni bénéfique pour votre épanouissement. Le tirage révèle si cette personne porte encore des <strong>sentiments sincères</strong> ou si elle agit par solitude passagère. Les cartes comme Le Jugement ou L'Étoile indiquent un retour probable et constructif, tandis que La Lune ou Le Diable suggèrent des motivations ambiguës. Consultez un tirage complet pour connaître la probabilité réelle adaptée à votre situation personnelle.</p></div>
+            <div className="border-b pb-6"><h3 className="text-xl font-bold mb-3">Mon ex reviendra-t-il ?</h3><p className="text-gray-700">Le <strong>tarot de la reconquête amoureuse</strong> offre une lecture nuancée des énergies entre vous et votre ex. De <strong>nombreux ex reviennent</strong> dans les mois suivant la rupture, et certains au-delà d'un an. Cependant, le retour n'est pas toujours souhaitable ni bénéfique pour votre épanouissement. Le tirage révèle si cette personne porte encore des <strong>sentiments sincères</strong> ou si elle agit par solitude passagère. Les cartes comme Le Jugement ou L'Étoile indiquent un retour probable et constructif, tandis que La Lune ou Le Diable suggèrent des motivations ambiguës. Consultez un tirage complet pour connaître la probabilité réelle adaptée à votre situation personnelle.</p></div>
             <div className="border-b pb-6"><h3 className="text-xl font-bold mb-3">Combien de temps avant retour ?</h3><p className="text-gray-700">Le <strong>délai moyen</strong> observé se situe entre 2 et 6 mois après la séparation, mais le tarot permet d'affiner considérablement cette estimation. Si la rupture est d'ordre émotionnel — un coup de tête, une dispute intense — le retour peut survenir en <strong>quelques semaines</strong> seulement. Lorsque les causes sont plus profondes, comme une incompatibilité de vie ou une trahison, le processus demande <strong>plusieurs mois</strong> de réflexion et de transformation. Enfin, si une évolution personnelle majeure est nécessaire des deux côtés, il faut parfois compter plus d'un an. Le <strong>timing astrologique</strong>, notamment les périodes de Vénus rétrograde, accélère souvent le processus en réactivant les souvenirs affectifs.</p></div>
             <div className="border-b pb-6"><h3 className="text-xl font-bold mb-3">Comment favoriser le retour ?</h3><p className="text-gray-700">La stratégie la plus efficace repose sur plusieurs <strong>piliers fondamentaux</strong>. Le silence radio, d'abord, crée un manque nécessaire : cessez tout contact pendant au moins 30 jours. Le <strong>travail sur soi</strong> est essentiel — évoluez sincèrement sur les points qui ont causé la rupture. Ne suppliez jamais, car cela renforce la décision de votre ex et détruit votre valeur perçue. Laissez votre ex revenir de lui-même en montrant subtilement votre évolution via les réseaux sociaux ou des amis communs. Le tarot vous guide sur le <strong>timing idéal</strong> pour reprendre contact et l'approche émotionnelle la plus adaptée au profil psychologique de votre ex-partenaire.</p></div>
-            <div><h3 className="text-xl font-bold mb-3">Un retour dure-t-il ?</h3><p className="text-gray-700">La durabilité du retour dépend entièrement de l'<strong>évolution accomplie</strong> par les deux partenaires pendant la séparation. Les statistiques montrent que <strong>75 % des couples</strong> qui se remettent ensemble après un vrai travail sur eux-mêmes construisent une relation plus solide qu'avant. En revanche, si le retour est motivé uniquement par la nostalgie ou la peur de la solitude sans changement profond, une <strong>nouvelle rupture</strong> survient généralement en moins de 6 mois. Le tarot identifie précisément votre scénario : les arcanes comme Le Monde ou Le Soleil annoncent une union renforcée, tandis que La Tour ou le Cinq de Coupes signalent un risque de rechute si les fondations ne sont pas consolidées.</p></div>
+            <div><h3 className="text-xl font-bold mb-3">Un retour dure-t-il ?</h3><p className="text-gray-700">La durabilité du retour dépend entièrement de l'<strong>évolution accomplie</strong> par les deux partenaires pendant la séparation. La <strong>grande majorité des couples</strong> qui se remettent ensemble après un vrai travail sur eux-mêmes construisent une relation plus solide qu'avant. En revanche, si le retour est motivé uniquement par la nostalgie ou la peur de la solitude sans changement profond, une <strong>nouvelle rupture</strong> survient généralement en moins de 6 mois. Le tarot identifie précisément votre scénario : les arcanes comme Le Monde ou Le Soleil annoncent une union renforcée, tandis que La Tour ou le Cinq de Coupes signalent un risque de rechute si les fondations ne sont pas consolidées.</p></div>
           </div>
         </section>
 

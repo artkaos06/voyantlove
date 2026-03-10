@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { getArticleSchema, getBreadcrumbSchema, getFAQSchema } from '@/lib/schema';
+import { getArticleSchema, getBreadcrumbSchema, getFAQSchema, getAuthorSchema } from '@/lib/schema';
 import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
@@ -10,14 +10,14 @@ export const metadata: Metadata = {
   title: 'Se Remettre Ensemble : Les 5 Étapes pour Réussir',
   description: 'Comment se remettre ensemble avec son ex ? Découvrez les étapes essentielles et la guidance tarot pour une réunion réussie.',
   keywords: ['se remettre ensemble', 'reprise relation', 'reconstruction couple', 'retrouvailles'],
-  alternates: { canonical: 'https://voyantlove.fr/reconquete/se-remettre-ensemble' },
+  alternates: { canonical: 'https://voyantlove.fr/reconquete/se-remettre-ensemble/' },
 };
 
 export default function SeRemettreEnsemblePage() {
   const articleSchema = getArticleSchema({
     title: 'Se Remettre Ensemble : Les 5 Étapes pour Réussir',
     description: 'Comment se remettre ensemble avec son ex ? Découvrez les étapes essentielles et la guidance tarot pour une réunion réussie.',
-    url: 'https://voyantlove.fr/reconquete/se-remettre-ensemble',
+    url: 'https://voyantlove.fr/reconquete/se-remettre-ensemble/',
     datePublished: '2026-01-19',
     dateModified: new Date().toISOString().split('T')[0],
     keywords: ['se remettre ensemble', 'reprise relation', 'reconstruction couple', 'retrouvailles'],
@@ -25,22 +25,24 @@ export default function SeRemettreEnsemblePage() {
 
   const breadcrumbSchema = getBreadcrumbSchema([
     { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'Reconquête', url: 'https://voyantlove.fr/reconquete' },
-    { name: 'Se Remettre Ensemble', url: 'https://voyantlove.fr/reconquete/se-remettre-ensemble' },
+    { name: 'Reconquête', url: 'https://voyantlove.fr/reconquete/' },
+    { name: 'Se Remettre Ensemble', url: 'https://voyantlove.fr/reconquete/se-remettre-ensemble/' },
   ]);
+
+  const authorSchema = getAuthorSchema();
 
   const faqSchema = getFAQSchema([
     {
       question: 'Comment se remettre ensemble après une rupture ?',
-      answer: 'Se remettre ensemble après une rupture nécessite 5 étapes : période de réflexion (minimum 3 mois), identification des causes d\'échec, changements concrets des deux côtés, communication honnête rétablie, et reconstruction progressive de la confiance. Le tarot guide le timing idéal et révèle si les conditions de réussite sont réunies. Précipiter le processus garantit un nouvel échec.',
+      answer: 'Se remettre ensemble après une rupture nécessite 5 étapes : période de réflexion (minimum 3 mois), identification des causes d\'échec, changements concrets des deux côtés, communication honnête rétablie, et reconstruction progressive de la confiance. Le tarot guide le timing idéal et révèle si les conditions de réussite sont réunies. Précipiter le processus mène presque toujours à un nouvel échec.',
     },
     {
-      question: 'Quelles sont les chances de réussite de se remettre ensemble ?',
-      answer: 'Les statistiques montrent que 45% des couples qui se remettent ensemble réussissent à long terme quand les bonnes conditions sont réunies. Ce taux chute à 15% si les partenaires se remettent ensemble par nostalgie ou solitude sans changements réels. Le tarot révèle votre pourcentage de réussite spécifique selon votre situation.',
+      question: 'Quelles chances de réussite en se remettant ensemble ?',
+      answer: 'Les chances de réussite dépendent fortement des conditions de la remise en couple. De nombreux couples qui se remettent ensemble réussissent à long terme quand les bonnes conditions sont réunies. En revanche, les chances chutent considérablement si les partenaires se remettent ensemble par nostalgie ou solitude sans changements réels. Le tarot révèle vos chances de réussite spécifiques selon votre situation.',
     },
     {
-      question: 'Combien de temps attendre avant de se remettre ensemble ?',
-      answer: 'Minimum 3 mois de séparation sont nécessaires pour une vraie évolution. Cette période permet à chaque partenaire de comprendre ses erreurs, travailler sur soi, et s\'assurer que le désir de reprise n\'est pas juste de la nostalgie. Se remettre ensemble trop vite (moins d\'un mois) a 85% de chances d\'échec car aucun changement profond n\'est possible en si peu de temps.',
+      question: 'Combien de temps avant de se remettre ensemble ?',
+      answer: 'Minimum 3 mois de séparation sont nécessaires pour une vraie évolution. Cette période permet à chaque partenaire de comprendre ses erreurs, travailler sur soi, et s\'assurer que le désir de reprise n\'est pas juste de la nostalgie. Se remettre ensemble trop vite (moins d\'un mois) échoue dans la grande majorité des cas car aucun changement profond n\'est possible en si peu de temps.',
     },
     {
       question: 'Quels sont les signes qu\'il faut se remettre ensemble ?',
@@ -51,7 +53,7 @@ export default function SeRemettreEnsemblePage() {
       answer: 'Pour éviter une deuxième rupture : établissez de nouvelles règles de communication, maintenez des check-ins réguliers sur l\'état de la relation, suivez une thérapie de couple si nécessaire, respectez vos engagements mutuels, gérez les conflits constructivement. Le tarot révèle les pièges à éviter et guide la consolidation de votre relation reconstruite.',
     },
     {
-      question: 'Faut-il en parler à son entourage quand on se remet ensemble ?',
+      question: 'Faut-il prévenir son entourage quand on se remet ensemble ?',
       answer: 'Oui, l\'entourage peut offrir un regard objectif précieux. Leurs inquiétudes éventuelles méritent d\'être écoutées car ils ont une vision moins émotionnelle de la situation. Cependant, la décision finale vous appartient. Le tarot aide à équilibrer les conseils extérieurs avec votre intuition personnelle pour prendre la meilleure décision.',
     },
   ]);
@@ -70,9 +72,13 @@ export default function SeRemettreEnsemblePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(authorSchema) }}
+      />
       <header className="bg-gradient-to-r from-purple-500 via-pink-500 to-rose-500 text-white py-16 px-4">
         <div className="max-w-4xl mx-auto">
-          <Link href="/" className="text-white/80 hover:text-white mb-4 inline-block">← Retour</Link>
+          <Link href="/reconquete" className="text-white/80 hover:text-white mb-4 inline-block">← Retour à la Reconquête</Link>
           <h1 className="text-4xl font-bold mb-4">💑 Se Remettre Ensemble</h1>
           <p className="text-xl opacity-95 mb-6">Les 5 étapes pour réussir vos retrouvailles selon le tarot</p>
           <a href="#consultation" className="bg-white text-purple-600 px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition inline-block">Consultation</a>
@@ -82,9 +88,9 @@ export default function SeRemettreEnsemblePage() {
       <div className="max-w-4xl mx-auto px-4 py-8">
         <div className="bg-white rounded-xl p-6 mb-8 grid grid-cols-4 gap-4 text-center">
           <div><div className="text-3xl">⭐</div><div className="text-2xl font-bold text-purple-600">4.7/5</div></div>
-          <div><div className="text-3xl">💑</div><div className="text-2xl font-bold text-purple-600">45%</div></div>
+          <div><div className="text-3xl">💑</div><div className="text-2xl font-bold text-purple-600">Variable</div></div>
           <div><div className="text-3xl">⏰</div><div className="text-2xl font-bold text-purple-600">3-6m</div></div>
-          <div><div className="text-3xl">🔮</div><div className="text-2xl font-bold text-purple-600">82%</div></div>
+          <div><div className="text-3xl">🔮</div><div className="text-2xl font-bold text-purple-600">Reconnue</div></div>
         </div>
 
         <EEATSignal
@@ -93,7 +99,7 @@ export default function SeRemettreEnsemblePage() {
         />
 
         <article className="bg-white rounded-xl p-8 mb-8 border-t-4 border-purple-500">
-          <p className="text-lg mb-4"><strong>Se remettre ensemble avec son ex</strong> est une décision majeure qui nécessite préparation et sagesse. Les statistiques révèlent que 45% des couples qui tentent une <strong>reprise de relation</strong> réussissent à construire une union durable, mais uniquement lorsque les bonnes étapes sont respectées. Le <strong>tarot</strong> guide ce processus délicat en révélant le timing idéal, les obstacles à surmonter, et les chances réelles de succès.</p>
+          <p className="text-lg mb-4"><strong>Se remettre ensemble avec son ex</strong> est une décision majeure qui nécessite préparation et sagesse. De nombreux couples qui tentent une <strong>reprise de relation</strong> réussissent à construire une union durable, mais uniquement lorsque les bonnes étapes sont respectées. Le <strong>tarot</strong> guide ce processus délicat en révélant le timing idéal, les obstacles à surmonter, et les chances réelles de succès.</p>
           <p className="text-lg mb-4">La <strong>reconstruction d'un couple</strong> après une rupture exige bien plus qu'un simple désir de retrouvailles. Elle nécessite une analyse honnête des causes d'échec, des changements concrets de comportement, et un engagement mutuel à construire une relation meilleure que la précédente. Sans ces prérequis, vous reproduirez exactement les mêmes schémas qui ont mené à la première séparation.</p>
           <p className="text-lg">Comprendre comment <strong>se remettre ensemble après une rupture</strong> de manière saine et durable vous évite des mois de souffrance et de déceptions répétées. Ce guide complet basé sur la guidance tarot vous accompagne à travers les 5 étapes essentielles pour maximiser vos chances de <strong>retrouvailles réussies</strong>. Pour en savoir plus sur les <Link href="/reconquete" className="text-purple-600 hover:text-purple-800 underline font-medium">retrouvailles amoureuses</Link>, découvrez toutes nos guidances spécialisées.</p>
         </article>
@@ -102,7 +108,8 @@ export default function SeRemettreEnsemblePage() {
 
         <section className="bg-white rounded-xl p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-purple-600">Les 5 Étapes Essentielles pour Se Remettre Ensemble</h2>
-          <p className="text-gray-700 mb-6">Suivre ces étapes dans l'ordre augmente vos chances de réussite de 65%. Sauter une étape ou précipiter le processus vous condamne à l'échec.</p>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Se remettre ensemble réussit en cinq étapes : minimum 3 mois de séparation, identification des causes d'échec, changements concrets vérifiables, communication honnête avec nouvelles règles, et reconstruction progressive sur 3 à 6 mois.</p>
+          <p className="text-gray-700 mb-6">Suivre ces étapes dans l'ordre augmente considérablement vos chances de réussite. Sauter une étape ou précipiter le processus vous condamne à l'échec.</p>
 
           <div className="space-y-6">
             <div className="bg-gradient-to-r from-purple-50 to-pink-50 p-6 rounded-lg border-l-4 border-purple-600">
@@ -124,7 +131,7 @@ export default function SeRemettreEnsemblePage() {
                   </div>
 
                   <div className="bg-yellow-50 p-4 rounded-lg border-l-4 border-yellow-500">
-                    <p className="text-gray-700"><strong>Attention :</strong> Se remettre ensemble après seulement quelques semaines garantit un échec à 85%. La nostalgie et l'habitude ne sont pas de l'amour. Le tarot révèle si vous êtes prêt ou si vous devez prolonger cette période de réflexion.</p>
+                    <p className="text-gray-700"><strong>Attention :</strong> Se remettre ensemble après seulement quelques semaines mène presque toujours à un nouvel échec. La nostalgie et l'habitude ne sont pas de l'amour. Le tarot révèle si vous êtes prêt ou si vous devez prolonger cette période de réflexion.</p>
                   </div>
 
                   <p className="text-gray-700 mt-3"><strong>Que faire pendant cette période ?</strong> Travaillez sur vous-même, suivez éventuellement une thérapie, reprenez vos activités personnelles, reconnectez avec vos amis, et analysez objectivement votre part de responsabilité dans la rupture.</p>
@@ -313,7 +320,7 @@ export default function SeRemettreEnsemblePage() {
                   </div>
 
                   <div className="bg-red-50 p-4 rounded-lg border-l-4 border-red-500">
-                    <p className="text-gray-700"><strong>Attention :</strong> Précipiter cette phase (emménager ensemble après 1 mois, fiançailles rapides) augmente le risque d'échec de 70%. Le tarot avec La Tempérance guide cette progression équilibrée.</p>
+                    <p className="text-gray-700"><strong>Attention :</strong> Précipiter cette phase (emménager ensemble après 1 mois, fiançailles rapides) augmente considérablement le risque d'échec. Le tarot avec La Tempérance guide cette progression équilibrée.</p>
                   </div>
                 </div>
               </div>
@@ -323,6 +330,7 @@ export default function SeRemettreEnsemblePage() {
 
         <section className="bg-white rounded-xl p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-purple-600">Prérequis Indispensables Avant de Se Remettre Ensemble</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Six prérequis doivent être remplis avant de se remettre ensemble : volonté mutuelle, deuil de l'ancienne relation, résolution des problèmes majeurs, motivation par amour authentique, soutien de l'entourage et acceptation de construire du neuf.</p>
           <p className="text-gray-700 mb-6">Certaines conditions doivent être absolument remplies avant toute tentative de <strong>reprise de relation</strong>. Sans elles, l'échec est garanti.</p>
 
           <div className="space-y-4">
@@ -366,7 +374,8 @@ export default function SeRemettreEnsemblePage() {
 
         <section className="bg-white rounded-xl p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-red-600">Erreurs Courantes Qui Mènent à une Deuxième Rupture</h2>
-          <p className="text-gray-700 mb-6">68% des couples qui se remettent ensemble se séparent à nouveau dans les 18 mois. Voici les erreurs fatales à éviter absolument.</p>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Les huit erreurs qui causent une deuxième rupture sont : reprise trop rapide, ignorer les red flags, éviter les vraies causes, croire aux promesses sans actes, reprendre par peur, attendre que l'autre change seul, garder de la rancune et précipiter l'engagement.</p>
+          <p className="text-gray-700 mb-6">La majorité des couples qui se remettent ensemble se séparent à nouveau dans les 18 mois. Voici les erreurs fatales à éviter absolument.</p>
 
           <div className="grid md:grid-cols-2 gap-4">
             <div className="bg-red-50 p-5 rounded-lg border-2 border-red-200">
@@ -431,6 +440,7 @@ export default function SeRemettreEnsemblePage() {
 
         <section className="bg-white rounded-xl p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-purple-600">Stratégies de Communication pour Éviter la Deuxième Rupture</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Quatre stratégies de communication protègent votre couple reconstruit : les check-ins hebdomadaires, la règle des messages en "je" sans accusation, le time-out constructif lors des disputes, et l'écoute active avec validation des émotions.</p>
           <p className="text-gray-700 mb-6">Une fois remis ensemble, la qualité de votre communication détermine la durabilité de votre relation. Voici les stratégies essentielles.</p>
 
           <div className="space-y-5">
@@ -494,6 +504,7 @@ export default function SeRemettreEnsemblePage() {
 
         <section className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-purple-700">🔮 Guidance Tarot pour Se Remettre Ensemble</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Le tarot guide votre remise en couple : Les Amoureux, Le Jugement, Le Soleil et le Deux de Coupe sont favorables. La Tempérance invite à la patience. Le Diable, La Tour et le Huit de Coupe déconseillent la reprise.</p>
           <p className="text-gray-700 mb-6">Le <strong>tarot</strong> révèle le timing idéal, les chances de succès et les obstacles à surmonter pour votre <strong>reprise de relation</strong>.</p>
 
           <div className="bg-white p-6 rounded-lg mb-6">
@@ -568,27 +579,28 @@ export default function SeRemettreEnsemblePage() {
         </section>
 
         <section className="bg-white rounded-xl p-8 mb-8">
-          <h2 className="text-3xl font-bold mb-6 text-purple-600">Statistiques et Taux de Réussite</h2>
-          <p className="text-gray-700 mb-6">Comprendre les statistiques vous aide à avoir des attentes réalistes sur votre <strong>reprise de relation</strong>.</p>
+          <h2 className="text-3xl font-bold mb-6 text-purple-600">Facteurs de Réussite et d'Échec</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Les chances de réussite augmentent fortement quand les cinq étapes sont suivies, et davantage encore avec une thérapie de couple. En revanche, une reprise trop rapide ou sans changement concret mène presque toujours à l'échec.</p>
+          <p className="text-gray-700 mb-6">Comprendre ces facteurs vous aide à avoir des attentes réalistes sur votre <strong>reprise de relation</strong>.</p>
 
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-green-50 p-6 rounded-lg border-2 border-green-200">
               <h3 className="font-bold text-green-700 mb-3 text-lg">Facteurs de Réussite</h3>
               <div className="space-y-3">
                 <div className="flex items-start">
-                  <span className="text-green-600 font-bold mr-2">65%</span>
+                  <span className="text-green-600 font-bold mr-2">Élevé</span>
                   <p className="text-sm text-gray-700">Taux de réussite quand les 5 étapes sont suivies correctement</p>
                 </div>
                 <div className="flex items-start">
-                  <span className="text-green-600 font-bold mr-2">78%</span>
+                  <span className="text-green-600 font-bold mr-2">Très élevé</span>
                   <p className="text-sm text-gray-700">Réussite si thérapie de couple suivie pendant la reconstruction</p>
                 </div>
                 <div className="flex items-start">
-                  <span className="text-green-600 font-bold mr-2">70%</span>
+                  <span className="text-green-600 font-bold mr-2">Fort</span>
                   <p className="text-sm text-gray-700">Réussite quand les deux partenaires ont évolué visiblement</p>
                 </div>
                 <div className="flex items-start">
-                  <span className="text-green-600 font-bold mr-2">60%</span>
+                  <span className="text-green-600 font-bold mr-2">Notable</span>
                   <p className="text-sm text-gray-700">Réussite si période de séparation supérieure à 3 mois</p>
                 </div>
               </div>
@@ -598,19 +610,19 @@ export default function SeRemettreEnsemblePage() {
               <h3 className="font-bold text-red-700 mb-3 text-lg">Facteurs d'Échec</h3>
               <div className="space-y-3">
                 <div className="flex items-start">
-                  <span className="text-red-600 font-bold mr-2">85%</span>
-                  <p className="text-sm text-gray-700">Taux d'échec si reprise moins d'un mois après rupture</p>
+                  <span className="text-red-600 font-bold mr-2">Quasi certain</span>
+                  <p className="text-sm text-gray-700">Échec si reprise moins d'un mois après rupture</p>
                 </div>
                 <div className="flex items-start">
-                  <span className="text-red-600 font-bold mr-2">91%</span>
+                  <span className="text-red-600 font-bold mr-2">Très élevé</span>
                   <p className="text-sm text-gray-700">Échec si aucun changement concret n'est visible</p>
                 </div>
                 <div className="flex items-start">
-                  <span className="text-red-600 font-bold mr-2">88%</span>
+                  <span className="text-red-600 font-bold mr-2">Très élevé</span>
                   <p className="text-sm text-gray-700">Échec après 3+ ruptures-réconciliations précédentes</p>
                 </div>
                 <div className="flex items-start">
-                  <span className="text-red-600 font-bold mr-2">76%</span>
+                  <span className="text-red-600 font-bold mr-2">Élevé</span>
                   <p className="text-sm text-gray-700">Échec si reprise motivée par solitude plutôt qu'amour</p>
                 </div>
               </div>
@@ -629,35 +641,36 @@ export default function SeRemettreEnsemblePage() {
 
         <section className="bg-white rounded-xl p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-purple-600">Questions Fréquentes sur Se Remettre Ensemble</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Voici les réponses aux questions les plus posées sur la remise en couple : étapes à suivre, chances de réussite, temps d'attente, signes favorables, prévention d'une deuxième rupture et rôle de l'entourage.</p>
 
           <div className="space-y-6">
             <div className="border-b border-gray-200 pb-6">
               <h3 className="font-bold text-lg text-gray-800 mb-3">Comment se remettre ensemble après une rupture ?</h3>
-              <p className="text-gray-700"><strong>Se remettre ensemble après une rupture</strong> nécessite 5 étapes : période de réflexion (minimum 3 mois), identification des causes d'échec, changements concrets des deux côtés, communication honnête rétablie, et reconstruction progressive de la confiance. Le tarot guide le timing idéal et révèle si les conditions de réussite sont réunies. Précipiter le processus garantit un nouvel échec dans 85% des cas.</p>
+              <p className="text-gray-700"><strong>Se remettre ensemble après une rupture</strong> nécessite 5 étapes : période de réflexion (minimum 3 mois), identification des causes d'échec, changements concrets des deux côtés, communication honnête rétablie, et reconstruction progressive de la confiance. Le tarot guide le timing idéal et révèle si les conditions de réussite sont réunies. Précipiter le processus mène presque toujours à un nouvel échec.</p>
             </div>
 
             <div className="border-b border-gray-200 pb-6">
-              <h3 className="font-bold text-lg text-gray-800 mb-3">Quelles sont les chances de réussite de se remettre ensemble ?</h3>
-              <p className="text-gray-700">Les statistiques montrent que 45% des couples qui <strong>se remettent ensemble</strong> réussissent à long terme quand les bonnes conditions sont réunies. Ce taux chute à 15% si les partenaires se remettent ensemble par nostalgie ou solitude sans changements réels. Le tarot révèle votre pourcentage de réussite spécifique selon votre situation unique et les énergies en présence.</p>
+              <h3 className="font-bold text-lg text-gray-800 mb-3">Quelles chances de réussite en se remettant ensemble ?</h3>
+              <p className="text-gray-700">De nombreux couples qui <strong>se remettent ensemble</strong> réussissent à long terme quand les bonnes conditions sont réunies. En revanche, les chances chutent considérablement si les partenaires se remettent ensemble par nostalgie ou solitude sans changements réels. Le tarot révèle vos chances de réussite spécifiques selon votre situation unique et les énergies en présence.</p>
             </div>
 
             <div className="border-b border-gray-200 pb-6">
-              <h3 className="font-bold text-lg text-gray-800 mb-3">Combien de temps attendre avant de se remettre ensemble ?</h3>
-              <p className="text-gray-700">Minimum 3 mois de séparation sont nécessaires pour une vraie évolution. Cette période permet à chaque partenaire de comprendre ses erreurs, travailler sur soi, et s'assurer que le désir de reprise n'est pas juste de la nostalgie. Se remettre ensemble trop vite (moins d'un mois) a 85% de chances d'échec car aucun changement profond n'est possible en si peu de temps.</p>
+              <h3 className="font-bold text-lg text-gray-800 mb-3">Combien de temps avant de se remettre ensemble ?</h3>
+              <p className="text-gray-700">Minimum 3 mois de séparation sont nécessaires pour une vraie évolution. Cette période permet à chaque partenaire de comprendre ses erreurs, travailler sur soi, et s'assurer que le désir de reprise n'est pas juste de la nostalgie. Se remettre ensemble trop vite (moins d'un mois) échoue dans la grande majorité des cas car aucun changement profond n'est possible en si peu de temps.</p>
             </div>
 
             <div className="border-b border-gray-200 pb-6">
-              <h3 className="font-bold text-lg text-gray-800 mb-3">Quels sont les signes qu'il faut se remettre ensemble ?</h3>
+              <h3 className="font-bold text-lg text-gray-800 mb-3">Quels signes montrent qu'il faut se remettre ensemble ?</h3>
               <p className="text-gray-700">Les <strong>signes positifs</strong> incluent : résolution des causes originales de rupture, changements concrets visibles, communication ouverte rétablie, pardon mutuel authentique, vision d'avenir partagée, soutien de vos proches. Le tarot avec Les Amoureux, Le Jugement ou Le Soleil confirme une <strong>remise en couple</strong> constructive avec de fortes chances de succès durable.</p>
             </div>
 
             <div className="border-b border-gray-200 pb-6">
-              <h3 className="font-bold text-lg text-gray-800 mb-3">Comment éviter une deuxième rupture après s'être remis ensemble ?</h3>
+              <h3 className="font-bold text-lg text-gray-800 mb-3">Comment éviter une deuxième rupture ?</h3>
               <p className="text-gray-700">Pour éviter une deuxième rupture : établissez de nouvelles règles de communication, maintenez des check-ins réguliers sur l'état de la relation, suivez une thérapie de couple si nécessaire, respectez vos engagements mutuels, gérez les conflits constructivement. Le tarot révèle les pièges à éviter et guide la consolidation de votre <strong>relation reconstruite</strong>.</p>
             </div>
 
             <div>
-              <h3 className="font-bold text-lg text-gray-800 mb-3">Faut-il en parler à son entourage quand on se remet ensemble ?</h3>
+              <h3 className="font-bold text-lg text-gray-800 mb-3">Faut-il prévenir son entourage quand on se remet ensemble ?</h3>
               <p className="text-gray-700">Oui, l'entourage peut offrir un regard objectif précieux. Leurs inquiétudes éventuelles méritent d'être écoutées car ils ont une vision moins émotionnelle de la situation. Cependant, la décision finale vous appartient. Le tarot aide à équilibrer les conseils extérieurs avec votre intuition personnelle pour prendre la meilleure décision pour votre bonheur.</p>
             </div>
           </div>

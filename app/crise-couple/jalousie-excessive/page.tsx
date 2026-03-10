@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { getArticleSchema, getFAQSchema, getBreadcrumbSchema } from '@/lib/schema';
+import { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getAuthorSchema } from '@/lib/schema';
 import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
@@ -10,14 +10,14 @@ export const metadata: Metadata = {
   title: 'Jalousie Excessive dans le Couple : Causes, Signes et Solutions Efficaces',
   description: 'La jalousie détruit votre couple ? Découvrez les causes profondes, les signes de jalousie maladive et les solutions concrètes pour retrouver la confiance.',
   keywords: ['jalousie excessive couple', 'jalousie maladive', 'crise de jalousie', 'surmonter jalousie', 'confiance couple'],
-  alternates: { canonical: 'https://voyantlove.fr/crise-couple/jalousie-excessive' },
+  alternates: { canonical: 'https://voyantlove.fr/crise-couple/jalousie-excessive/' },
 };
 
 export default function JalousieExcessivePage() {
   const articleSchema = getArticleSchema({
     title: 'Jalousie Excessive dans le Couple : Causes, Signes et Solutions Efficaces',
     description: 'La jalousie détruit votre couple ? Découvrez les causes profondes, les signes de jalousie maladive et les solutions concrètes pour retrouver la confiance.',
-    url: 'https://voyantlove.fr/crise-couple/jalousie-excessive',
+    url: 'https://voyantlove.fr/crise-couple/jalousie-excessive/',
     datePublished: '2026-02-09',
     dateModified: new Date().toISOString().split('T')[0],
     keywords: ['jalousie excessive couple', 'jalousie maladive', 'crise de jalousie', 'surmonter jalousie', 'confiance couple'],
@@ -25,33 +25,35 @@ export default function JalousieExcessivePage() {
 
   const breadcrumbSchema = getBreadcrumbSchema([
     { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'Crise de Couple', url: 'https://voyantlove.fr/crise-couple' },
-    { name: 'Jalousie Excessive', url: 'https://voyantlove.fr/crise-couple/jalousie-excessive' },
+    { name: 'Crise de Couple', url: 'https://voyantlove.fr/crise-couple/' },
+    { name: 'Jalousie Excessive', url: 'https://voyantlove.fr/crise-couple/jalousie-excessive/' },
   ]);
+
+  const authorSchema = getAuthorSchema();
 
   const faqSchema = getFAQSchema([
     {
-      question: 'Comment savoir si ma jalousie est normale ou excessive ?',
+      question: 'Ma jalousie est-elle normale ou excessive ?',
       answer: 'La jalousie normale est ponctuelle, basée sur des situations réelles, et ne perturbe pas le quotidien. La jalousie excessive est constante, basée sur des scénarios imaginaires, contrôle le comportement de l\'autre (vérification téléphone, interdiction sorties), crée des crises régulières, et persiste malgré les preuves de fidélité. Si votre jalousie occupe vos pensées plus de 2-3 heures par jour ou crée des conflits hebdomadaires, elle est probablement excessive.',
     },
     {
-      question: 'Quelles sont les vraies causes de la jalousie excessive ?',
-      answer: 'Les causes profondes incluent : blessures d\'abandon infantile (parent absent, divorce), trahisons passées non guéries (ex qui a trompé), faible estime de soi ("Je ne mérite pas d\'être aimé"), anxiété généralisée et besoin de contrôle, projection (on est tenté par d\'autres donc on suppose que notre partenaire l\'est aussi). 78% des jaloux excessifs ont vécu une trahison importante (parent ou ex) qui a créé une peur pathologique de l\'abandon.',
+      question: 'D\'où vient la jalousie excessive ?',
+      answer: 'Les causes profondes incluent : blessures d\'abandon infantile (parent absent, divorce), trahisons passées non guéries (ex qui a trompé), faible estime de soi ("Je ne mérite pas d\'être aimé"), anxiété généralisée et besoin de contrôle, projection (on est tenté par d\'autres donc on suppose que notre partenaire l\'est aussi). La grande majorité des jaloux excessifs ont vécu une trahison importante (parent ou ex) qui a créé une peur pathologique de l\'abandon.',
     },
     {
-      question: 'La jalousie peut-elle détruire un couple même solide ?',
-      answer: 'Absolument. 43% des ruptures sont causées directement ou indirectement par la jalousie excessive. Même dans un couple aimant, la jalousie crée une dynamique toxique : la personne jalouse contrôle et accuse, l\'autre se sent étouffé et perd confiance en la relation. Après 12-18 mois de jalousie intense non traitée, 67% des partenaires non-jaloux envisagent sérieusement la séparation car l\'épuisement émotionnel devient insupportable.',
+      question: 'La jalousie peut-elle détruire un couple ?',
+      answer: 'Absolument. Une proportion très importante des ruptures sont causées directement ou indirectement par la jalousie excessive. Même dans un couple aimant, la jalousie crée une dynamique toxique : la personne jalouse contrôle et accuse, l\'autre se sent étouffé et perd confiance en la relation. Après 12-18 mois de jalousie intense non traitée, la majorité des partenaires non-jaloux envisagent sérieusement la séparation car l\'épuisement émotionnel devient insupportable.',
     },
     {
-      question: 'Comment gérer la jalousie de mon partenaire sans me perdre ?',
+      question: 'Comment gérer la jalousie de mon partenaire ?',
       answer: 'Établissez des limites claires : acceptez la réassurance raisonnable (un message pour dire que vous êtes bien rentrés) mais refusez le contrôle (partage de localisation 24/7, justification de chaque sortie). Encouragez votre partenaire à consulter un thérapeute. Ne renoncez PAS à votre vie sociale pour calmer sa jalousie, car cela renforce le pattern. Si aucune amélioration après 6 mois d\'efforts, considérez la séparation pour votre santé mentale.',
     },
     {
-      question: 'Peut-on guérir de la jalousie maladive ?',
-      answer: 'Oui, avec un travail psychologique sérieux. La thérapie cognitivo-comportementale (TCC) est très efficace : elle identifie les pensées irrationnelles et apprend à les remplacer par des pensées réalistes. La thérapie d\'attachement soigne les blessures d\'abandon. Les résultats apparaissent après 3-6 mois de thérapie régulière. 64% des personnes qui suivent une thérapie voient leur jalousie diminuer significativement. Le changement exige volonté, humilité et persévérance.',
+      question: 'La jalousie maladive se soigne-t-elle ?',
+      answer: 'Oui, avec un travail psychologique sérieux. La thérapie cognitivo-comportementale (TCC) est très efficace : elle identifie les pensées irrationnelles et apprend à les remplacer par des pensées réalistes. La thérapie d\'attachement soigne les blessures d\'abandon. Les résultats apparaissent après 3-6 mois de thérapie régulière. La majorité des personnes qui suivent une thérapie voient leur jalousie diminuer significativement. Le changement exige volonté, humilité et persévérance.',
     },
     {
-      question: 'Quand la jalousie devient-elle dangereuse ou abusive ?',
+      question: 'Quand la jalousie devient-elle dangereuse ?',
       answer: 'La jalousie devient abusive quand elle inclut : isolement forcé (interdiction de voir amis/famille), violence verbale ou physique lors des crises, contrôle total (accès forcé aux emails, GPS, finances), menaces (suicide, violence si vous partez), destruction d\'objets. Si vous avez peur de votre partenaire jaloux, si vous cachez des choses anodines pour éviter les crises, ou si vous vous sentez prisonnier, la relation est devenue toxique et dangereuse. Cherchez de l\'aide immédiatement.',
     },
   ]);
@@ -70,10 +72,14 @@ export default function JalousieExcessivePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(authorSchema) }}
+      />
 
       <header className="bg-gradient-to-r from-red-500 via-orange-500 to-amber-500 text-white py-16 px-4">
         <div className="max-w-4xl mx-auto">
-          <Link href="/" className="text-white/80 hover:text-white mb-4 inline-block">← Retour</Link>
+          <Link href="/crise-couple" className="text-white/80 hover:text-white mb-4 inline-block">← Retour aux Crises de Couple</Link>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Jalousie Excessive dans le Couple</h1>
           <p className="text-xl opacity-95 mb-6">Comprendre les causes, reconnaître les signes et trouver des solutions durables</p>
           <div className="flex gap-4 flex-wrap">
@@ -85,10 +91,10 @@ export default function JalousieExcessivePage() {
 
       <div className="max-w-4xl mx-auto px-4 py-8">
         <div className="bg-white rounded-xl shadow-md p-6 mb-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-          <div><div className="text-3xl mb-1">📊</div><div className="text-2xl font-bold text-red-600">43%</div><div className="text-sm text-gray-600">Ruptures causées</div></div>
-          <div><div className="text-3xl mb-1">🧠</div><div className="text-2xl font-bold text-red-600">78%</div><div className="text-sm text-gray-600">Origine traumatique</div></div>
-          <div><div className="text-3xl mb-1">💚</div><div className="text-2xl font-bold text-red-600">64%</div><div className="text-sm text-gray-600">Guérison possible</div></div>
-          <div><div className="text-3xl mb-1">⚠️</div><div className="text-2xl font-bold text-red-600">4,100+</div><div className="text-sm text-gray-600">Cas analysés</div></div>
+          <div><div className="text-3xl mb-1">📊</div><div className="text-2xl font-bold text-red-600">Majeure</div><div className="text-sm text-gray-600">Cause de rupture</div></div>
+          <div><div className="text-3xl mb-1">🧠</div><div className="text-2xl font-bold text-red-600">Fréquente</div><div className="text-sm text-gray-600">Origine traumatique</div></div>
+          <div><div className="text-3xl mb-1">💚</div><div className="text-2xl font-bold text-red-600">Réelle</div><div className="text-sm text-gray-600">Guérison possible</div></div>
+          <div><div className="text-3xl mb-1">⚠️</div><div className="text-2xl font-bold text-red-600">Vaste</div><div className="text-sm text-gray-600">Expérience</div></div>
         </div>
 
         <EEATSignal
@@ -101,7 +107,7 @@ export default function JalousieExcessivePage() {
             La <strong>jalousie excessive</strong> est l'un des fléaux les plus destructeurs en amour. Ce qui commence comme une simple inquiétude peut rapidement dégénérer en contrôle obsessionnel, accusations incessantes, et crises émotionnelles qui empoisonnent la <strong>vie de couple</strong>. Contrairement à la jalousie normale et ponctuelle, la <strong>jalousie maladive</strong> est une prison pour les deux partenaires : celui qui en souffre vit un enfer de doutes et d'anxiété, celui qui la subit se sent étouffé et prisonnier.
           </p>
           <p className="text-lg leading-relaxed mb-4">
-            Les chiffres sont éloquents : 43% des ruptures sont causées directement ou indirectement par la jalousie, et 67% des personnes qui vivent avec un partenaire jaloux excessif rapportent un épuisement émotionnel chronique. La <strong>jalousie pathologique</strong> n'est pas un signe d'amour intense, mais un symptôme de blessures non guéries, d'insécurité profonde, ou de troubles anxieux qui nécessitent un travail psychologique sérieux.
+            Les faits sont éloquents : une proportion très importante des ruptures sont causées directement ou indirectement par la jalousie, et la majorité des personnes qui vivent avec un partenaire jaloux excessif rapportent un épuisement émotionnel chronique. La <strong>jalousie pathologique</strong> n'est pas un signe d'amour intense, mais un symptôme de blessures non guéries, d'insécurité profonde, ou de troubles anxieux qui nécessitent un travail psychologique sérieux.
           </p>
           <p className="text-lg leading-relaxed">
             Ce guide complet explore les <strong>causes profondes de la jalousie</strong>, les signes qui distinguent la jalousie normale de la jalousie toxique, et surtout les <strong>solutions concrètes</strong> pour soigner cette dynamique destructrice. Que vous soyez la personne jalouse cherchant à se libérer de cette souffrance, ou le partenaire épuisé cherchant à comprendre et protéger votre santé mentale, vous trouverez ici des clés essentielles. Pour comprendre d'autres <Link href="/crise-couple" className="text-red-600 hover:text-red-800 underline font-medium">crises de couple</Link>, explorez nos autres guidances spécialisées.
@@ -112,6 +118,7 @@ export default function JalousieExcessivePage() {
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-red-600">🔍 Jalousie Normale vs Jalousie Excessive : Les Différences Cruciales</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">La jalousie normale est ponctuelle, proportionnée et basée sur des faits réels. La jalousie excessive est permanente, disproportionnée et fondée sur des scénarios imaginaires. Si elle occupe vos pensées plus de 2-3 heures par jour, elle est probablement pathologique.</p>
           <p className="text-gray-700 mb-6">
             Toute jalousie n'est pas pathologique. Comprendre la frontière entre <strong>jalousie saine</strong> et <strong>jalousie toxique</strong> est essentiel pour évaluer votre situation.
           </p>
@@ -212,6 +219,7 @@ export default function JalousieExcessivePage() {
 
         <section id="causes" className="bg-gradient-to-br from-orange-50 to-red-50 rounded-xl p-8 mb-8 border-2 border-orange-200">
           <h2 className="text-3xl font-bold mb-6 text-gray-900">🧠 Les 7 Causes Profondes de la Jalousie Excessive</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">La jalousie excessive provient de blessures d'abandon infantile, de trahisons passées non guéries, d'une faible estime de soi, d'anxiété généralisée, de projection de ses propres tentations, de modèles familiaux dysfonctionnels ou de dépendance affective.</p>
           <p className="text-gray-700 mb-6">
             La jalousie maladive n'apparaît jamais sans raison. Elle est toujours le symptôme de <strong>blessures émotionnelles</strong> ou de <strong>schémas psychologiques</strong> non résolus.
           </p>
@@ -223,7 +231,7 @@ export default function JalousieExcessivePage() {
                 Les personnes qui ont vécu l'<strong>abandon</strong> dans l'enfance (parent absent, divorce traumatisant, négligence émotionnelle) développent souvent un <strong>attachement anxieux</strong>. Leur système nerveux a enregistré : "Les personnes que j'aime partent". Adultes, elles vivent dans la terreur permanente que leur partenaire les quitte, interprétant chaque signe neutre comme une menace d'abandon imminent.
               </p>
               <p className="text-gray-700 font-semibold">
-                Prévalence : 62% des personnes jalouses excessives ont un style d'attachement anxieux lié à des blessures infantiles.
+                Prévalence : la majorité des personnes jalouses excessives ont un style d'attachement anxieux lié à des blessures infantiles.
               </p>
             </div>
 
@@ -233,7 +241,7 @@ export default function JalousieExcessivePage() {
                 Avoir été trompé dans une relation précédente crée un <strong>traumatisme de trahison</strong>. Si ce trauma n'est pas soigné (par thérapie ou travail émotionnel profond), il se projette automatiquement sur les relations futures. La personne revit constamment l'angoisse de la découverte passée et cherche obsessionnellement les "signes" qui, la dernière fois, lui avaient échappé.
               </p>
               <p className="text-gray-700 font-semibold">
-                Piège : Punir un nouveau partenaire fidèle pour les erreurs d'un ex crée une prophétie auto-réalisatrice. 38% des relations post-trahison se terminent à cause de cette jalousie transférée.
+                Piège : Punir un nouveau partenaire fidèle pour les erreurs d'un ex crée une prophétie auto-réalisatrice. De nombreuses relations post-trahison se terminent à cause de cette jalousie transférée.
               </p>
             </div>
 
@@ -253,7 +261,7 @@ export default function JalousieExcessivePage() {
                 Les personnes anxieuses ont un besoin pathologique de <strong>contrôler leur environnement</strong> pour se sentir en sécurité. Or l'amour implique la vulnérabilité et l'incertitude : on ne peut jamais contrôler totalement les sentiments et comportements d'autrui. Cette impossibilité de contrôle crée une angoisse insupportable qui se manifeste par la jalousie et les comportements de surveillance.
               </p>
               <p className="text-gray-700 font-semibold">
-                Lien neurologique : 54% des personnes jalouses excessives souffrent aussi de troubles anxieux diagnostiqués (TAG, TOC). Traiter l'anxiété de base réduit souvent la jalousie.
+                Lien neurologique : une part importante des personnes jalouses excessives souffrent aussi de troubles anxieux diagnostiqués (TAG, TOC). Traiter l'anxiété de base réduit souvent la jalousie.
               </p>
             </div>
 
@@ -263,7 +271,7 @@ export default function JalousieExcessivePage() {
                 Mécanisme psychologique moins conscient : certaines personnes jalouses sont elles-mêmes <strong>tentées par d'autres</strong> (fantasmes, flirts, voire infidélité). Incapables d'assumer cette réalité, elles la projettent sur leur partenaire : "Si moi je suis tenté, alors lui/elle doit l'être aussi". Cette projection crée une jalousie intense qui est en fait un miroir de leurs propres luttes internes.
               </p>
               <p className="text-gray-700 font-semibold">
-                Paradoxe : 22% des personnes jalouses excessives admettent, en thérapie, avoir elles-mêmes été infidèles ou très tentées. La jalousie masque leur propre culpabilité.
+                Paradoxe : certaines personnes jalouses excessives admettent, en thérapie, avoir elles-mêmes été infidèles ou très tentées. La jalousie masque leur propre culpabilité.
               </p>
             </div>
 
@@ -273,7 +281,7 @@ export default function JalousieExcessivePage() {
                 Si vous avez grandi en voyant un parent jaloux contrôler l'autre, ou dans une famille où l'amour était conditionnel et instable, vous avez <strong>intériorisé ces schémas</strong>. Pour vous, la jalousie et le contrôle sont des manifestations normales de l'amour. Vous reproduisez inconsciemment ce que vous avez observé, même si vous en avez souffert enfant.
               </p>
               <p className="text-gray-700 font-semibold">
-                Transmission générationnelle : 71% des personnes jalouses excessives ont eu au moins un parent jaloux. Briser ce cycle nécessite une prise de conscience et un travail actif.
+                Transmission générationnelle : la majorité des personnes jalouses excessives ont eu au moins un parent jaloux. Briser ce cycle nécessite une prise de conscience et un travail actif.
               </p>
             </div>
 
@@ -293,6 +301,7 @@ export default function JalousieExcessivePage() {
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-red-600">⚠️ Les 10 Signes d'une Jalousie Devenue Toxique</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Les signes d'une jalousie toxique sont la surveillance du téléphone, le contrôle des sorties, les accusations sans fondement, les crises disproportionnées, l'isolement social imposé et les menaces. Si votre partenaire modifie sa vie pour éviter vos crises, la jalousie est devenue abusive.</p>
           <p className="text-gray-700 mb-6">
             Voici les <strong>comportements concrets</strong> qui indiquent que la jalousie a franchi la ligne rouge et détruit activement la relation.
           </p>
@@ -372,6 +381,7 @@ export default function JalousieExcessivePage() {
 
         <section id="solutions" className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl p-8 mb-8 border-2 border-green-200">
           <h2 className="text-3xl font-bold mb-6 text-gray-900">💚 Solutions : Comment Soigner la Jalousie Excessive</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Soigner la jalousie excessive passe par la thérapie cognitivo-comportementale, le travail sur les traumatismes d'attachement, la reconstruction de l'estime de soi et l'acceptation de l'incertitude en amour. Les résultats apparaissent après 3 à 6 mois de thérapie régulière.</p>
           <p className="text-gray-700 mb-6">
             La jalousie maladive peut se soigner, mais cela exige un <strong>travail psychologique profond</strong>, de l'humilité, et de la persévérance. Voici les approches les plus efficaces.
           </p>
@@ -384,7 +394,7 @@ export default function JalousieExcessivePage() {
               </p>
               <div className="bg-blue-50 p-4 rounded border-l-4 border-blue-400">
                 <p className="font-semibold text-blue-700 mb-2">Résultats attendus :</p>
-                <p className="text-gray-700">Après 12-16 séances hebdomadaires, 64% des personnes voient leur jalousie diminuer significativement. Après 6 mois, 52% la gèrent de façon saine. Le travail est long mais transformateur.</p>
+                <p className="text-gray-700">Après 12-16 séances hebdomadaires, la majorité des personnes voient leur jalousie diminuer significativement. Après 6 mois, nombre d'entre elles la gèrent de façon saine. Le travail est long mais transformateur.</p>
               </div>
             </div>
 
@@ -402,11 +412,11 @@ export default function JalousieExcessivePage() {
             <div className="bg-white p-6 rounded-lg border-2 border-pink-200">
               <h3 className="font-bold text-xl mb-4 text-pink-700">3. Journal des Pensées et Auto-Observation</h3>
               <p className="text-gray-700 mb-3">
-                Tenez un <strong>journal de jalousie</strong> : notez chaque crise (déclencheur, pensées, intensité émotionnelle 1-10, réaction). Après quelques semaines, des patterns émergent. Vous réalisez que 90% de vos craintes ne se sont jamais réalisées. Cette prise de conscience progressive affaiblit le pouvoir des pensées irrationnelles.
+                Tenez un <strong>journal de jalousie</strong> : notez chaque crise (déclencheur, pensées, intensité émotionnelle 1-10, réaction). Après quelques semaines, des patterns émergent. Vous réalisez que la grande majorité de vos craintes ne se sont jamais réalisées. Cette prise de conscience progressive affaiblit le pouvoir des pensées irrationnelles.
               </p>
               <div className="bg-pink-50 p-4 rounded border-l-4 border-pink-400">
                 <p className="font-semibold text-pink-700 mb-2">Technique du "Délai de 24h" :</p>
-                <p className="text-gray-700">Quand une pensée jalouse surgit, notez-la mais attendez 24h avant d'agir dessus. Dans 82% des cas, l'intensité émotionnelle diminue drastiquement et vous réalisez que réagir aurait été disproportionné.</p>
+                <p className="text-gray-700">Quand une pensée jalouse surgit, notez-la mais attendez 24h avant d'agir dessus. Dans la très grande majorité des cas, l'intensité émotionnelle diminue drastiquement et vous réalisez que réagir aurait été disproportionné.</p>
               </div>
             </div>
 
@@ -458,6 +468,7 @@ export default function JalousieExcessivePage() {
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-red-600">🛡️ Pour le Partenaire Non-Jaloux : Comment Se Protéger</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Protégez-vous en posant des limites fermes, en refusant de sacrifier votre vie sociale et en exigeant que votre partenaire consulte un thérapeute. Ne cédez jamais sur vos libertés fondamentales pour calmer la jalousie, car chaque concession renforce le schéma.</p>
           <p className="text-gray-700 mb-6">
             Si vous êtes la personne qui subit la jalousie excessive de votre partenaire, voici comment <strong>protéger votre santé mentale</strong> sans abandonner immédiatement la relation.
           </p>
@@ -517,34 +528,35 @@ export default function JalousieExcessivePage() {
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold mb-8 text-red-600">❓ Questions Fréquentes sur la Jalousie Excessive</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">La jalousie excessive est une cause majeure de ruptures et touche la grande majorité des personnes ayant vécu un abandon ou une trahison passée. Elle se soigne par la thérapie, avec de bons résultats après un traitement régulier de 3 à 6 mois.</p>
           <div className="space-y-6">
             <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Comment savoir si ma jalousie est normale ou excessive ?</h3>
+              <h3 className="text-xl font-bold mb-3 text-gray-900">Ma jalousie est-elle normale ou excessive ?</h3>
               <p className="text-gray-700 leading-relaxed">La jalousie normale est ponctuelle, basée sur des situations réelles, et ne perturbe pas le quotidien. La <strong>jalousie excessive</strong> est constante, basée sur des scénarios imaginaires, contrôle le comportement de l'autre (vérification téléphone, interdiction sorties), crée des crises régulières, et persiste malgré les preuves de fidélité. Si votre jalousie occupe vos pensées plus de 2-3 heures par jour ou crée des conflits hebdomadaires, elle est probablement excessive.</p>
             </div>
 
             <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Quelles sont les vraies causes de la jalousie excessive ?</h3>
-              <p className="text-gray-700 leading-relaxed">Les causes profondes incluent : blessures d'abandon infantile (parent absent, divorce), trahisons passées non guéries (ex qui a trompé), faible estime de soi ("Je ne mérite pas d'être aimé"), anxiété généralisée et besoin de contrôle, projection (on est tenté par d'autres donc on suppose que notre partenaire l'est aussi). 78% des jaloux excessifs ont vécu une <strong>trahison importante</strong> (parent ou ex) qui a créé une peur pathologique de l'abandon.</p>
+              <h3 className="text-xl font-bold mb-3 text-gray-900">D'où vient la jalousie excessive ?</h3>
+              <p className="text-gray-700 leading-relaxed">Les causes profondes incluent : blessures d'abandon infantile (parent absent, divorce), trahisons passées non guéries (ex qui a trompé), faible estime de soi ("Je ne mérite pas d'être aimé"), anxiété généralisée et besoin de contrôle, projection (on est tenté par d'autres donc on suppose que notre partenaire l'est aussi). La grande majorité des jaloux excessifs ont vécu une <strong>trahison importante</strong> (parent ou ex) qui a créé une peur pathologique de l'abandon.</p>
             </div>
 
             <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold mb-3 text-gray-900">La jalousie peut-elle détruire un couple même solide ?</h3>
-              <p className="text-gray-700 leading-relaxed">Absolument. 43% des ruptures sont causées directement ou indirectement par la jalousie excessive. Même dans un couple aimant, la jalousie crée une dynamique toxique : la personne jalouse contrôle et accuse, l'autre se sent étouffé et perd confiance en la relation. Après 12-18 mois de <strong>jalousie intense</strong> non traitée, 67% des partenaires non-jaloux envisagent sérieusement la séparation car l'épuisement émotionnel devient insupportable.</p>
+              <h3 className="text-xl font-bold mb-3 text-gray-900">La jalousie peut-elle détruire un couple ?</h3>
+              <p className="text-gray-700 leading-relaxed">Absolument. Une proportion très importante des ruptures sont causées directement ou indirectement par la jalousie excessive. Même dans un couple aimant, la jalousie crée une dynamique toxique : la personne jalouse contrôle et accuse, l'autre se sent étouffé et perd confiance en la relation. Après 12-18 mois de <strong>jalousie intense</strong> non traitée, la majorité des partenaires non-jaloux envisagent sérieusement la séparation car l'épuisement émotionnel devient insupportable.</p>
             </div>
 
             <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Comment gérer la jalousie de mon partenaire sans me perdre ?</h3>
+              <h3 className="text-xl font-bold mb-3 text-gray-900">Comment gérer la jalousie de mon partenaire ?</h3>
               <p className="text-gray-700 leading-relaxed">Établissez des <strong>limites claires</strong> : acceptez la réassurance raisonnable (un message pour dire que vous êtes bien rentrés) mais refusez le contrôle (partage de localisation 24/7, justification de chaque sortie). Encouragez votre partenaire à consulter un thérapeute. Ne renoncez PAS à votre vie sociale pour calmer sa jalousie, car cela renforce le pattern. Si aucune amélioration après 6 mois d'efforts, considérez la séparation pour votre santé mentale.</p>
             </div>
 
             <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Peut-on guérir de la jalousie maladive ?</h3>
-              <p className="text-gray-700 leading-relaxed">Oui, avec un travail psychologique sérieux. La <strong>thérapie cognitivo-comportementale (TCC)</strong> est très efficace : elle identifie les pensées irrationnelles et apprend à les remplacer par des pensées réalistes. La thérapie d'attachement soigne les blessures d'abandon. Les résultats apparaissent après 3-6 mois de thérapie régulière. 64% des personnes qui suivent une thérapie voient leur jalousie diminuer significativement. Le changement exige volonté, humilité et persévérance.</p>
+              <h3 className="text-xl font-bold mb-3 text-gray-900">La jalousie maladive se soigne-t-elle ?</h3>
+              <p className="text-gray-700 leading-relaxed">Oui, avec un travail psychologique sérieux. La <strong>thérapie cognitivo-comportementale (TCC)</strong> est très efficace : elle identifie les pensées irrationnelles et apprend à les remplacer par des pensées réalistes. La thérapie d'attachement soigne les blessures d'abandon. Les résultats apparaissent après 3-6 mois de thérapie régulière. La majorité des personnes qui suivent une thérapie voient leur jalousie diminuer significativement. Le changement exige volonté, humilité et persévérance.</p>
             </div>
 
             <div>
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Quand la jalousie devient-elle dangereuse ou abusive ?</h3>
+              <h3 className="text-xl font-bold mb-3 text-gray-900">Quand la jalousie devient-elle dangereuse ?</h3>
               <p className="text-gray-700 leading-relaxed">La jalousie devient abusive quand elle inclut : isolement forcé (interdiction de voir amis/famille), violence verbale ou physique lors des crises, contrôle total (accès forcé aux emails, GPS, finances), menaces (suicide, violence si vous partez), destruction d'objets. Si vous avez <strong>peur de votre partenaire jaloux</strong>, si vous cachez des choses anodines pour éviter les crises, ou si vous vous sentez prisonnier, la relation est devenue toxique et dangereuse. Cherchez de l'aide immédiatement.</p>
             </div>
           </div>

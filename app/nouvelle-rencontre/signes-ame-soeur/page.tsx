@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { getArticleSchema, getFAQSchema, getBreadcrumbSchema } from '@/lib/schema';
+import { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getAuthorSchema } from '@/lib/schema';
 import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
@@ -10,14 +10,14 @@ export const metadata: Metadata = {
   title: 'Signes de l\'Âme Sœur : Reconnaître Votre Connexion Karmique | 15 Indices',
   description: 'Découvrez les 15 signes infaillibles de l\'âme sœur selon le tarot et la spiritualité. Connexion instantanée, synchronicités, reconnaissance karmique et union des flammes jumelles.',
   keywords: ['âme sœur signes', 'reconnaître âme sœur', 'connexion karmique', 'flammes jumelles', 'signes amour véritable'],
-  alternates: { canonical: 'https://voyantlove.fr/nouvelle-rencontre/signes-ame-soeur' },
+  alternates: { canonical: 'https://voyantlove.fr/nouvelle-rencontre/signes-ame-soeur/' },
 };
 
 export default function SignesAmeSoeurPage() {
   const articleSchema = getArticleSchema({
     title: 'Signes de l\'Âme Sœur : Reconnaître Votre Connexion Karmique | 15 Indices',
     description: 'Découvrez les 15 signes infaillibles de l\'âme sœur selon le tarot et la spiritualité. Connexion instantanée, synchronicités, reconnaissance karmique et union des flammes jumelles.',
-    url: 'https://voyantlove.fr/nouvelle-rencontre/signes-ame-soeur',
+    url: 'https://voyantlove.fr/nouvelle-rencontre/signes-ame-soeur/',
     datePublished: '2026-02-09',
     dateModified: new Date().toISOString().split('T')[0],
     keywords: ['âme sœur signes', 'reconnaître âme sœur', 'connexion karmique', 'flammes jumelles', 'signes amour véritable'],
@@ -25,34 +25,36 @@ export default function SignesAmeSoeurPage() {
 
   const breadcrumbSchema = getBreadcrumbSchema([
     { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'Nouvelle Rencontre', url: 'https://voyantlove.fr/nouvelle-rencontre' },
-    { name: 'Signes de l\'Âme Sœur', url: 'https://voyantlove.fr/nouvelle-rencontre/signes-ame-soeur' },
+    { name: 'Nouvelle Rencontre', url: 'https://voyantlove.fr/nouvelle-rencontre/' },
+    { name: 'Signes de l\'Âme Sœur', url: 'https://voyantlove.fr/nouvelle-rencontre/signes-ame-soeur/' },
   ]);
+
+  const authorSchema = getAuthorSchema();
 
   const faqSchema = getFAQSchema([
     {
       question: 'Comment reconnaître son âme sœur avec certitude ?',
-      answer: 'Votre âme sœur se reconnaît par une combinaison de signes : connexion instantanée et intense, sentiment de vous connaître depuis toujours, communication fluide et naturelle, valeurs et visions alignées, croissance mutuelle, synchronicités répétées. Le tarot confirme via les Amoureux, le Deux de Coupe, ou l\'Étoile. 73% des personnes ayant rencontré leur âme sœur rapportent au moins 8 de ces 15 signes simultanément.',
+      answer: 'Votre âme sœur se reconnaît par une combinaison de signes : connexion instantanée et intense, sentiment de vous connaître depuis toujours, communication fluide et naturelle, valeurs et visions alignées, croissance mutuelle, synchronicités répétées. Le tarot confirme via les Amoureux, le Deux de Coupe, ou l\'Étoile. La plupart des personnes ayant rencontré leur âme sœur rapportent au moins 8 de ces 15 signes simultanément.',
     },
     {
       question: 'Quelle différence entre âme sœur et flamme jumelle ?',
-      answer: 'L\'âme sœur est une personne avec qui vous partagez une connexion profonde, harmonieuse et évolutive. Vous pouvez avoir plusieurs âmes sœurs dans une vie. La flamme jumelle est votre miroir parfait, une seule âme divisée en deux corps. La relation flamme jumelle est plus intense, turbulente, transformative, avec phases de séparation et retrouvailles. 89% des rencontres sont des âmes sœurs, seulement 11% des flammes jumelles.',
+      answer: 'L\'âme sœur est une personne avec qui vous partagez une connexion profonde, harmonieuse et évolutive. Vous pouvez avoir plusieurs âmes sœurs dans une vie. La flamme jumelle est votre miroir parfait, une seule âme divisée en deux corps. La relation flamme jumelle est plus intense, turbulente, transformative, avec phases de séparation et retrouvailles. La grande majorité des rencontres sont des âmes sœurs, seule une minorité sont des flammes jumelles.',
     },
     {
-      question: 'Peut-on rater son âme sœur si on ne reconnaît pas les signes ?',
-      answer: 'Théoriquement oui, mais l\'univers multiplie les opportunités. Si vous ratez une première rencontre par manque de conscience, d\'autres situations créeront de nouvelles occasions. Les âmes sœurs se retrouvent toujours, parfois après des années de séparation. L\'important est de rester ouvert, conscient des signes, et disponible émotionnellement. 62% des couples âmes sœurs se sont "ratés" une première fois avant de se retrouver définitivement.',
+      question: 'Peut-on rater la rencontre avec son âme sœur ?',
+      answer: 'Théoriquement oui, mais l\'univers multiplie les opportunités. Si vous ratez une première rencontre par manque de conscience, d\'autres situations créeront de nouvelles occasions. Les âmes sœurs se retrouvent toujours, parfois après des années de séparation. L\'important est de rester ouvert, conscient des signes, et disponible émotionnellement. De nombreux couples âmes sœurs se sont "ratés" une première fois avant de se retrouver définitivement.',
     },
     {
-      question: 'Les synchronicités prouvent-elles qu\'on a rencontré son âme sœur ?',
+      question: 'Les synchronicités confirment-elles l\'âme sœur ?',
       answer: 'Les synchronicités fréquentes et significatives (chiffres répétés, coïncidences impossibles, pensées simultanées) sont un indicateur fort de connexion d\'âme sœur. Elles révèlent que l\'univers orchestre votre rencontre. Toutefois, elles doivent s\'accompagner d\'autres signes : compatibilité réelle, respect mutuel, vision commune. Les synchronicités seules ne suffisent pas, mais leur présence massive (3-5 par semaine) confirme généralement une connexion karmique.',
     },
     {
-      question: 'Combien de temps faut-il pour reconnaître son âme sœur ?',
-      answer: 'Pour 58% des personnes, la reconnaissance est immédiate ou survient dans les premières heures. Pour 31%, elle se confirme dans les 2-6 premières semaines. Pour 11%, elle devient évidente après 2-3 mois de fréquentation. Certains signes (connexion instantanée, facilité) apparaissent tout de suite. D\'autres (croissance mutuelle, dépassement des épreuves) nécessitent du temps pour se révéler pleinement.',
+      question: 'Combien de temps pour reconnaître son âme sœur ?',
+      answer: 'Pour la majorité des personnes, la reconnaissance est immédiate ou survient dans les premières heures. Pour d\'autres, elle se confirme dans les 2-6 premières semaines. Pour une minorité, elle devient évidente après 2-3 mois de fréquentation. Certains signes (connexion instantanée, facilité) apparaissent tout de suite. D\'autres (croissance mutuelle, dépassement des épreuves) nécessitent du temps pour se révéler pleinement.',
     },
     {
-      question: 'Que faire si on pense avoir rencontré son âme sœur mais elle est en couple ?',
-      answer: 'Respectez d\'abord la relation existante. Si c\'est vraiment votre âme sœur, l\'univers créera les conditions de votre union au timing juste. Travaillez sur vous, restez ouvert mais sans attente obsessionnelle. 34% des unions d\'âmes sœurs se font après que l\'un ou les deux aient quitté des relations qui n\'étaient pas alignées. Ne forcez jamais, l\'amour véritable se manifeste naturellement quand les deux âmes sont prêtes.',
+      question: 'Mon âme sœur est en couple, que faire ?',
+      answer: 'Respectez d\'abord la relation existante. Si c\'est vraiment votre âme sœur, l\'univers créera les conditions de votre union au timing juste. Travaillez sur vous, restez ouvert mais sans attente obsessionnelle. De nombreuses unions d\'âmes sœurs se font après que l\'un ou les deux aient quitté des relations qui n\'étaient pas alignées. Ne forcez jamais, l\'amour véritable se manifeste naturellement quand les deux âmes sont prêtes.',
     },
   ]);
 
@@ -70,6 +72,10 @@ export default function SignesAmeSoeurPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(authorSchema) }}
+      />
 
       <header className="bg-gradient-to-r from-purple-600 via-pink-500 to-rose-500 text-white py-16 px-4">
         <div className="max-w-4xl mx-auto">
@@ -86,7 +92,7 @@ export default function SignesAmeSoeurPage() {
       <div className="max-w-4xl mx-auto px-4 py-8">
         <div className="bg-white rounded-xl shadow-md p-6 mb-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
           <div><div className="text-3xl mb-1">💫</div><div className="text-2xl font-bold text-purple-600">15 Signes</div><div className="text-sm text-gray-600">Reconnaître l'âme sœur</div></div>
-          <div><div className="text-3xl mb-1">🔮</div><div className="text-2xl font-bold text-purple-600">73%</div><div className="text-sm text-gray-600">Reconnus immédiatement</div></div>
+          <div><div className="text-3xl mb-1">🔮</div><div className="text-2xl font-bold text-purple-600">Majoritaire</div><div className="text-sm text-gray-600">Reconnaissance immédiate</div></div>
           <div><div className="text-3xl mb-1">✨</div><div className="text-2xl font-bold text-purple-600">8/15</div><div className="text-sm text-gray-600">Signes minimum</div></div>
           <div><div className="text-3xl mb-1">💖</div><div className="text-2xl font-bold text-purple-600">3,200+</div><div className="text-sm text-gray-600">Confirmations</div></div>
         </div>
@@ -112,6 +118,7 @@ export default function SignesAmeSoeurPage() {
 
         <section id="signes" className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-purple-600">💫 Les 15 Signes Infaillibles de l'Âme Sœur</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Les signes de l'ame soeur incluent la connexion instantanee, les synchronicites repetees, le sentiment de « rentrer chez soi » et la croissance mutuelle. Au moins 8 signes sur 15 confirment la connexion.</p>
           <p className="text-gray-700 mb-6">
             Votre <strong>âme sœur</strong> se révèle à travers une constellation de signes qui, ensemble, forment une signature énergétique unique. Voici les 15 indicateurs les plus fiables selon la tradition spirituelle et confirmés par 15 ans d'expérience en voyance amoureuse.
           </p>
@@ -120,7 +127,7 @@ export default function SignesAmeSoeurPage() {
             <div className="bg-pink-50 border-l-4 border-pink-500 p-6 rounded-lg">
               <h3 className="font-bold text-lg mb-3 text-pink-700">1. Connexion Instantanée et Intense</h3>
               <p className="text-gray-700 mb-2">
-                Dès la première rencontre, vous ressentez une <strong>attraction magnétique</strong> qui dépasse le physique. C'est une reconnaissance d'âme à âme, un sentiment troublant de familiarité, comme si vous vous connaissiez depuis toujours. 78% des personnes ayant rencontré leur âme sœur rapportent cette connexion immédiate.
+                Dès la première rencontre, vous ressentez une <strong>attraction magnétique</strong> qui dépasse le physique. C'est une reconnaissance d'âme à âme, un sentiment troublant de familiarité, comme si vous vous connaissiez depuis toujours. La plupart des personnes ayant rencontré leur âme sœur rapportent cette connexion immédiate.
               </p>
               <p className="text-gray-700 text-sm italic">
                 "J'ai senti un choc électrique quand nos yeux se sont croisés. J'ai su instantanément que cette personne allait changer ma vie." - Témoignage type
@@ -144,7 +151,7 @@ export default function SignesAmeSoeurPage() {
             <div className="bg-green-50 border-l-4 border-green-500 p-6 rounded-lg">
               <h3 className="font-bold text-lg mb-3 text-green-700">4. Valeurs et Vision de Vie Alignées</h3>
               <p className="text-gray-700">
-                Au-delà de l'attraction, vous partagez les <strong>mêmes valeurs fondamentales</strong> : vision de la famille, spiritualité, objectifs de vie, principes éthiques. Vous voulez aller dans la même direction, même si les chemins diffèrent. Cette alignement profond distingue l'âme sœur de la simple compatibilité amoureuse. 82% des couples âmes sœurs rapportent cette cohérence de valeurs dès le début.
+                Au-delà de l'attraction, vous partagez les <strong>mêmes valeurs fondamentales</strong> : vision de la famille, spiritualité, objectifs de vie, principes éthiques. Vous voulez aller dans la même direction, même si les chemins diffèrent. Cette alignement profond distingue l'âme sœur de la simple compatibilité amoureuse. La grande majorité des couples âmes sœurs rapportent cette cohérence de valeurs dès le début.
               </p>
             </div>
 
@@ -179,7 +186,7 @@ export default function SignesAmeSoeurPage() {
             <div className="bg-orange-50 border-l-4 border-orange-500 p-6 rounded-lg">
               <h3 className="font-bold text-lg mb-3 text-orange-700">9. Intuition et Connexion Télépathique</h3>
               <p className="text-gray-700">
-                Vous <strong>sentez ce qu'ils ressentent</strong> même à distance. Vous savez quand quelque chose ne va pas avant qu'ils ne le disent. Vous terminez leurs phrases. Vous rêvez d'eux avant des événements importants. Cette connexion télépathique révèle que vos champs énergétiques sont entrelacés au niveau de l'âme. 67% des couples âmes sœurs développent cette capacité dans les 6 premiers mois.
+                Vous <strong>sentez ce qu'ils ressentent</strong> même à distance. Vous savez quand quelque chose ne va pas avant qu'ils ne le disent. Vous terminez leurs phrases. Vous rêvez d'eux avant des événements importants. Cette connexion télépathique révèle que vos champs énergétiques sont entrelacés au niveau de l'âme. De nombreux couples âmes sœurs développent cette capacité dans les 6 premiers mois.
               </p>
             </div>
 
@@ -229,6 +236,7 @@ export default function SignesAmeSoeurPage() {
 
         <section className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-8 mb-8 border-2 border-purple-200">
           <h2 className="text-3xl font-bold mb-6 text-gray-900">🔮 Âme Sœur vs Flamme Jumelle : Comprendre la Différence</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">L'ame soeur offre une connexion harmonieuse et stable. La flamme jumelle est un miroir intense, souvent turbulent, qui declenche une transformation spirituelle profonde. La grande majorite des rencontres sont des ames soeurs.</p>
           <p className="text-gray-700 mb-6">
             Beaucoup confondent <strong>âme sœur</strong> et <strong>flamme jumelle</strong>, alors que ces concepts représentent deux types de connexions spirituelles distinctes. Voici comment les différencier.
           </p>
@@ -261,7 +269,7 @@ export default function SignesAmeSoeurPage() {
                 </div>
                 <div className="flex items-start gap-2">
                   <span className="text-green-500 font-bold">✓</span>
-                  <p><strong>89% des rencontres :</strong> La majorité des connexions profondes sont des âmes sœurs</p>
+                  <p><strong>Très fréquentes :</strong> La majorité des connexions profondes sont des âmes sœurs</p>
                 </div>
               </div>
             </div>
@@ -293,7 +301,7 @@ export default function SignesAmeSoeurPage() {
                 </div>
                 <div className="flex items-start gap-2">
                   <span className="text-orange-500 font-bold">!</span>
-                  <p><strong>11% des rencontres :</strong> Connexion rare et destinée à une mission spirituelle</p>
+                  <p><strong>Rares :</strong> Connexion exceptionnelle destinée à une mission spirituelle</p>
                 </div>
               </div>
             </div>
@@ -311,6 +319,7 @@ export default function SignesAmeSoeurPage() {
 
         <section id="tarot" className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-purple-600">🃏 Le Tarot Confirme : Les Cartes de l'Âme Sœur</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Les Amoureux, le Deux de Coupe, le Soleil, l'Etoile et Temperance sont les cartes qui confirment une connexion d'ame soeur lors d'un tirage de tarot amoureux.</p>
           <p className="text-gray-700 mb-6">
             Le <strong>tarot</strong> offre une confirmation spirituelle de votre rencontre d'âme sœur à travers des cartes spécifiques qui révèlent la nature karmique et sacrée de votre connexion.
           </p>
@@ -319,7 +328,7 @@ export default function SignesAmeSoeurPage() {
             <div className="bg-pink-50 p-5 rounded-lg border-l-4 border-pink-500">
               <h3 className="font-bold text-pink-700 mb-2 text-lg">🎴 Les Amoureux (Arcane VI)</h3>
               <p className="text-gray-700">
-                LA carte de l'âme sœur par excellence. Représente le <strong>choix conscient de l'amour</strong>, l'union divinely guided, la décision du cœur alignée avec l'âme. Quand cette carte apparaît dans un tirage relationnel, elle confirme que cette personne est une âme sœur avec qui vous partagez une mission commune. Fréquence d'apparition : 67% des tirages confirmant une âme sœur.
+                LA carte de l'âme sœur par excellence. Représente le <strong>choix conscient de l'amour</strong>, l'union divinely guided, la décision du cœur alignée avec l'âme. Quand cette carte apparaît dans un tirage relationnel, elle confirme que cette personne est une âme sœur avec qui vous partagez une mission commune. Cette carte apparaît très fréquemment dans les tirages confirmant une âme sœur.
               </p>
             </div>
 
@@ -379,13 +388,14 @@ export default function SignesAmeSoeurPage() {
               <li><strong>Potentiel d'union :</strong> Avenir de cette connexion (temporaire, durable, éternelle)</li>
             </ol>
             <p className="text-gray-700 mt-4 text-sm italic">
-              Précision de ce tirage spécifique : 84% pour identifier la vraie nature d'une connexion d'âme sœur vs simple compatibilité amoureuse.
+              Ce tirage spécifique est reconnu pour identifier avec fiabilité la vraie nature d'une connexion d'âme sœur vs simple compatibilité amoureuse.
             </p>
           </div>
         </section>
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-purple-600">🌙 La Dimension Karmique de l'Âme Sœur</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Votre ame soeur est une rencontre karmique planifiee avant l'incarnation. Des contrats d'ames definissent le type de relation, les lecons a apprendre et la duree prevue de l'union.</p>
           <p className="text-gray-700 mb-6">
             Votre <strong>âme sœur</strong> n'est pas un accident cosmique. C'est une <strong>rencontre karmique planifiée</strong> avant votre incarnation, une union qui sert votre évolution spirituelle et celle de votre partenaire.
           </p>
@@ -432,6 +442,7 @@ export default function SignesAmeSoeurPage() {
 
         <section className="bg-gradient-to-br from-yellow-50 to-orange-50 rounded-xl p-8 mb-8 border-2 border-orange-200">
           <h2 className="text-3xl font-bold mb-6 text-gray-900">⚠️ Les Pièges à Éviter dans la Quête de l'Âme Sœur</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Les pieges principaux sont idealiser le concept au point d'ignorer les red flags, attendre passivement, forcer une connexion et negliger la compatibilite pratique au quotidien.</p>
 
           <div className="space-y-4">
             <div className="flex items-start gap-3 bg-white p-4 rounded-lg">
@@ -478,35 +489,36 @@ export default function SignesAmeSoeurPage() {
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold mb-8 text-purple-600">❓ Questions Fréquentes sur les Signes de l'Âme Sœur</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Retrouvez les reponses aux questions les plus frequentes sur la reconnaissance de l'ame soeur, les synchronicites, la difference avec la flamme jumelle et le timing de la rencontre.</p>
           <div className="space-y-6">
             <div className="border-b border-gray-200 pb-6">
               <h3 className="text-xl font-bold mb-3 text-gray-900">Comment reconnaître son âme sœur avec certitude ?</h3>
-              <p className="text-gray-700 leading-relaxed">Votre <strong>âme sœur</strong> se reconnaît par une combinaison de signes : connexion instantanée et intense, sentiment de vous connaître depuis toujours, communication fluide et naturelle, valeurs et visions alignées, croissance mutuelle, synchronicités répétées. Le tarot confirme via les Amoureux, le Deux de Coupe, ou l'Étoile. 73% des personnes ayant rencontré leur âme sœur rapportent au moins 8 de ces 15 signes simultanément.</p>
+              <p className="text-gray-700 leading-relaxed">Votre <strong>âme sœur</strong> se reconnaît par une combinaison de signes : connexion instantanée et intense, sentiment de vous connaître depuis toujours, communication fluide et naturelle, valeurs et visions alignées, croissance mutuelle, synchronicités répétées. Le tarot confirme via les Amoureux, le Deux de Coupe, ou l'Étoile. La plupart des personnes ayant rencontré leur âme sœur rapportent au moins 8 de ces 15 signes simultanément.</p>
             </div>
 
             <div className="border-b border-gray-200 pb-6">
               <h3 className="text-xl font-bold mb-3 text-gray-900">Quelle différence entre âme sœur et flamme jumelle ?</h3>
-              <p className="text-gray-700 leading-relaxed">L'<strong>âme sœur</strong> est une personne avec qui vous partagez une connexion profonde, harmonieuse et évolutive. Vous pouvez avoir plusieurs âmes sœurs dans une vie. La <strong>flamme jumelle</strong> est votre miroir parfait, une seule âme divisée en deux corps. La relation flamme jumelle est plus intense, turbulente, transformative, avec phases de séparation et retrouvailles. 89% des rencontres sont des âmes sœurs, seulement 11% des flammes jumelles.</p>
+              <p className="text-gray-700 leading-relaxed">L'<strong>âme sœur</strong> est une personne avec qui vous partagez une connexion profonde, harmonieuse et évolutive. Vous pouvez avoir plusieurs âmes sœurs dans une vie. La <strong>flamme jumelle</strong> est votre miroir parfait, une seule âme divisée en deux corps. La relation flamme jumelle est plus intense, turbulente, transformative, avec phases de séparation et retrouvailles. La grande majorité des rencontres sont des âmes sœurs, seule une minorité sont des flammes jumelles.</p>
             </div>
 
             <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Peut-on rater son âme sœur si on ne reconnaît pas les signes ?</h3>
-              <p className="text-gray-700 leading-relaxed">Théoriquement oui, mais l'univers multiplie les opportunités. Si vous ratez une première rencontre par manque de conscience, d'autres situations créeront de nouvelles occasions. Les <strong>âmes sœurs se retrouvent toujours</strong>, parfois après des années de séparation. L'important est de rester ouvert, conscient des signes, et disponible émotionnellement. 62% des couples âmes sœurs se sont "ratés" une première fois avant de se retrouver définitivement.</p>
+              <h3 className="text-xl font-bold mb-3 text-gray-900">Peut-on rater la rencontre avec son âme sœur ?</h3>
+              <p className="text-gray-700 leading-relaxed">Théoriquement oui, mais l'univers multiplie les opportunités. Si vous ratez une première rencontre par manque de conscience, d'autres situations créeront de nouvelles occasions. Les <strong>âmes sœurs se retrouvent toujours</strong>, parfois après des années de séparation. L'important est de rester ouvert, conscient des signes, et disponible émotionnellement. De nombreux couples âmes sœurs se sont "ratés" une première fois avant de se retrouver définitivement.</p>
             </div>
 
             <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Les synchronicités prouvent-elles qu'on a rencontré son âme sœur ?</h3>
+              <h3 className="text-xl font-bold mb-3 text-gray-900">Les synchronicités confirment-elles l'âme sœur ?</h3>
               <p className="text-gray-700 leading-relaxed">Les <strong>synchronicités</strong> fréquentes et significatives (chiffres répétés, coïncidences impossibles, pensées simultanées) sont un indicateur fort de connexion d'âme sœur. Elles révèlent que l'univers orchestre votre rencontre. Toutefois, elles doivent s'accompagner d'autres signes : compatibilité réelle, respect mutuel, vision commune. Les synchronicités seules ne suffisent pas, mais leur présence massive (3-5 par semaine) confirme généralement une connexion karmique.</p>
             </div>
 
             <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Combien de temps faut-il pour reconnaître son âme sœur ?</h3>
-              <p className="text-gray-700 leading-relaxed">Pour 58% des personnes, la reconnaissance est immédiate ou survient dans les premières heures. Pour 31%, elle se confirme dans les 2-6 premières semaines. Pour 11%, elle devient évidente après 2-3 mois de fréquentation. Certains signes (connexion instantanée, facilité) apparaissent tout de suite. D'autres (croissance mutuelle, dépassement des épreuves) nécessitent du temps pour se révéler pleinement.</p>
+              <h3 className="text-xl font-bold mb-3 text-gray-900">Combien de temps pour reconnaître son âme sœur ?</h3>
+              <p className="text-gray-700 leading-relaxed">Pour la majorité des personnes, la reconnaissance est immédiate ou survient dans les premières heures. Pour d'autres, elle se confirme dans les 2-6 premières semaines. Pour une minorité, elle devient évidente après 2-3 mois de fréquentation. Certains signes (connexion instantanée, facilité) apparaissent tout de suite. D'autres (croissance mutuelle, dépassement des épreuves) nécessitent du temps pour se révéler pleinement.</p>
             </div>
 
             <div>
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Que faire si on pense avoir rencontré son âme sœur mais elle est en couple ?</h3>
-              <p className="text-gray-700 leading-relaxed">Respectez d'abord la relation existante. Si c'est vraiment votre <strong>âme sœur</strong>, l'univers créera les conditions de votre union au timing juste. Travaillez sur vous, restez ouvert mais sans attente obsessionnelle. 34% des unions d'âmes sœurs se font après que l'un ou les deux aient quitté des relations qui n'étaient pas alignées. Ne forcez jamais, l'amour véritable se manifeste naturellement quand les deux âmes sont prêtes.</p>
+              <h3 className="text-xl font-bold mb-3 text-gray-900">Mon âme sœur est en couple, que faire ?</h3>
+              <p className="text-gray-700 leading-relaxed">Respectez d'abord la relation existante. Si c'est vraiment votre <strong>âme sœur</strong>, l'univers créera les conditions de votre union au timing juste. Travaillez sur vous, restez ouvert mais sans attente obsessionnelle. De nombreuses unions d'âmes sœurs se font après que l'un ou les deux aient quitté des relations qui n'étaient pas alignées. Ne forcez jamais, l'amour véritable se manifeste naturellement quand les deux âmes sont prêtes.</p>
             </div>
           </div>
         </section>

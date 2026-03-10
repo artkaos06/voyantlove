@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { getArticleSchema, getFAQSchema, getBreadcrumbSchema } from '@/lib/schema';
+import { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getAuthorSchema } from '@/lib/schema';
 import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
@@ -10,14 +10,14 @@ export const metadata: Metadata = {
   title: 'Ex qui Revient Après Silence Radio : Signes, Raisons et Que Faire',
   description: 'Votre ex revient après un silence radio ? Découvrez les signes, les vraies raisons de son retour et comment réagir intelligemment pour ne pas répéter les erreurs.',
   keywords: ['ex revient silence radio', 'silence radio efficace', 'ex qui revient après no contact', 'reconquête amoureuse', 'retour ex'],
-  alternates: { canonical: 'https://voyantlove.fr/reconquete/ex-revient-silence-radio' },
+  alternates: { canonical: 'https://voyantlove.fr/reconquete/ex-revient-silence-radio/' },
 };
 
 export default function ExRevientSilenceRadioPage() {
   const articleSchema = getArticleSchema({
     title: 'Ex qui Revient Après Silence Radio : Signes, Raisons et Que Faire',
     description: 'Votre ex revient après un silence radio ? Découvrez les signes, les vraies raisons de son retour et comment réagir intelligemment pour ne pas répéter les erreurs.',
-    url: 'https://voyantlove.fr/reconquete/ex-revient-silence-radio',
+    url: 'https://voyantlove.fr/reconquete/ex-revient-silence-radio/',
     datePublished: '2026-02-09',
     dateModified: new Date().toISOString().split('T')[0],
     keywords: ['ex revient silence radio', 'silence radio efficace', 'ex qui revient après no contact', 'reconquête amoureuse', 'retour ex'],
@@ -25,21 +25,23 @@ export default function ExRevientSilenceRadioPage() {
 
   const breadcrumbSchema = getBreadcrumbSchema([
     { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'Reconquête Amoureuse', url: 'https://voyantlove.fr/reconquete' },
-    { name: 'Ex qui Revient Après Silence Radio', url: 'https://voyantlove.fr/reconquete/ex-revient-silence-radio' },
+    { name: 'Reconquête Amoureuse', url: 'https://voyantlove.fr/reconquete/' },
+    { name: 'Ex qui Revient Après Silence Radio', url: 'https://voyantlove.fr/reconquete/ex-revient-silence-radio/' },
   ]);
+
+  const authorSchema = getAuthorSchema();
 
   const faqSchema = getFAQSchema([
     {
       question: 'Combien de temps avant qu\'un ex revienne après le silence radio ?',
-      answer: 'La durée varie selon les situations : 30% des ex reviennent dans les 3-6 semaines, 45% entre 2-4 mois, et 15% après 6 mois ou plus. Le timing dépend de qui a quitté, de l\'intensité de la relation, et de votre comportement pendant le silence radio. Plus vous respectez le no contact total sans stalker ou supplier, plus le retour est probable. Le silence radio doit durer minimum 30 jours pour être efficace.',
+      answer: 'La durée varie selon les situations : certains ex reviennent dans les 3-6 semaines, la plupart entre 2-4 mois, et d\'autres après 6 mois ou plus. Le timing dépend de qui a quitté, de l\'intensité de la relation, et de votre comportement pendant le silence radio. Plus vous respectez le no contact total sans stalker ou supplier, plus le retour est probable. Le silence radio doit durer minimum 30 jours pour être efficace.',
     },
     {
       question: 'Quels sont les signes qu\'un ex va revenir après silence radio ?',
       answer: 'Les signes classiques incluent : votre ex regarde vos stories systématiquement, like d\'anciennes photos, vous envoie un message neutre (prétexte pour parler), passe "par hasard" aux endroits où vous êtes, demande de vos nouvelles à des amis communs, vous débloque sur les réseaux, ou poste du contenu nostalgique. Ces signaux indiquent que vous lui manquez et qu\'il teste votre disponibilité émotionnelle.',
     },
     {
-      question: 'Que répondre quand mon ex me recontacte après silence radio ?',
+      question: 'Comment répondre quand mon ex me recontacte ?',
       answer: 'Ne répondez PAS immédiatement. Attendez 4-8 heures minimum pour montrer que vous avez une vie. Restez neutre, amical mais détaché : pas d\'effusions émotionnelles. Répondez brièvement sans relancer la conversation. Si votre ex demande de vous voir, acceptez uniquement si minimum 6-8 semaines de silence radio se sont écoulées. Trop de disponibilité tue l\'attraction retrouvée.',
     },
     {
@@ -47,12 +49,12 @@ export default function ExRevientSilenceRadioPage() {
       answer: 'Distinguez les deux par ces signes : retour par culpabilité = messages vagues à 2h du matin, veut vous voir rapidement sans explication, parle surtout de lui/elle. Retour par amour = reconnaît ses erreurs clairement, veut comprendre ce qui n\'a pas marché, accepte d\'aller lentement, propose des actions concrètes pour reconstruire. Donnez-vous 2-3 semaines d\'observation avant de décider.',
     },
     {
-      question: 'Peut-on refuser le retour de son ex après silence radio ?',
-      answer: 'Absolument, et c\'est parfois la décision la plus sage. Si pendant le silence radio vous avez réalisé que la relation était toxique, que vous avez évolué, ou que vous ne ressentez plus d\'amour, vous avez le droit de refuser. 32% des personnes refusent le retour de leur ex après avoir pris du recul. Le silence radio sert aussi à clarifier vos vrais sentiments, pas seulement à récupérer votre ex.',
+      question: 'Peut-on refuser le retour de son ex ?',
+      answer: 'Absolument, et c\'est parfois la décision la plus sage. Si pendant le silence radio vous avez réalisé que la relation était toxique, que vous avez évolué, ou que vous ne ressentez plus d\'amour, vous avez le droit de refuser. De nombreuses personnes refusent le retour de leur ex après avoir pris du recul. Le silence radio sert aussi à clarifier vos vrais sentiments, pas seulement à récupérer votre ex.',
     },
     {
       question: 'Comment ne pas reproduire les mêmes erreurs après le retour de l\'ex ?',
-      answer: 'Avant toute réconciliation, établissez une conversation honnête sur ce qui n\'a pas fonctionné. Identifiez les patterns toxiques (communication défaillante, jalousie, manque de respect). Fixez des nouvelles règles relationnelles. Considérez une thérapie de couple. Prenez le temps de reconstruire lentement (minimum 3 mois) avant de redevenir officiellement ensemble. 68% des couples qui se reforment sans travail conscient se séparent à nouveau dans l\'année.',
+      answer: 'Avant toute réconciliation, établissez une conversation honnête sur ce qui n\'a pas fonctionné. Identifiez les patterns toxiques (communication défaillante, jalousie, manque de respect). Fixez des nouvelles règles relationnelles. Considérez une thérapie de couple. Prenez le temps de reconstruire lentement (minimum 3 mois) avant de redevenir officiellement ensemble. la majorité des couples qui se reforment sans travail conscient se séparent à nouveau dans l\'année.',
     },
   ]);
 
@@ -70,10 +72,14 @@ export default function ExRevientSilenceRadioPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(authorSchema) }}
+      />
 
       <header className="bg-gradient-to-r from-purple-600 via-pink-500 to-rose-500 text-white py-16 px-4">
         <div className="max-w-4xl mx-auto">
-          <Link href="/" className="text-white/80 hover:text-white mb-4 inline-block">← Retour</Link>
+          <Link href="/reconquete" className="text-white/80 hover:text-white mb-4 inline-block">← Retour à la Reconquête</Link>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Ex qui Revient Après Silence Radio</h1>
           <p className="text-xl opacity-95 mb-6">Comprendre les signes, les raisons et comment réagir intelligemment</p>
           <div className="flex gap-4 flex-wrap">
@@ -85,10 +91,10 @@ export default function ExRevientSilenceRadioPage() {
 
       <div className="max-w-4xl mx-auto px-4 py-8">
         <div className="bg-white rounded-xl shadow-md p-6 mb-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-          <div><div className="text-3xl mb-1">📊</div><div className="text-2xl font-bold text-purple-600">67%</div><div className="text-sm text-gray-600">Taux de retour</div></div>
+          <div><div className="text-3xl mb-1">📊</div><div className="text-2xl font-bold text-purple-600">Élevé</div><div className="text-sm text-gray-600">Potentiel retour</div></div>
           <div><div className="text-3xl mb-1">⏱️</div><div className="text-2xl font-bold text-purple-600">2-4 mois</div><div className="text-sm text-gray-600">Délai moyen</div></div>
-          <div><div className="text-3xl mb-1">✅</div><div className="text-2xl font-bold text-purple-600">82%</div><div className="text-sm text-gray-600">Efficacité SR</div></div>
-          <div><div className="text-3xl mb-1">💔</div><div className="text-2xl font-bold text-purple-600">3,200+</div><div className="text-sm text-gray-600">Cas étudiés</div></div>
+          <div><div className="text-3xl mb-1">✅</div><div className="text-2xl font-bold text-purple-600">Forte</div><div className="text-sm text-gray-600">Efficacité SR</div></div>
+          <div><div className="text-3xl mb-1">💔</div><div className="text-2xl font-bold text-purple-600">15 ans</div><div className="text-sm text-gray-600">Expérience</div></div>
         </div>
 
         <EEATSignal
@@ -98,7 +104,7 @@ export default function ExRevientSilenceRadioPage() {
 
         <article className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-purple-500">
           <p className="text-lg leading-relaxed mb-4">
-            Le <strong>silence radio</strong> est l'une des stratégies les plus efficaces en <strong>reconquête amoureuse</strong>, avec un taux de succès de 67% lorsqu'il est correctement appliqué. Mais que se passe-t-il quand votre <strong>ex revient après un silence radio</strong> ? Comment interpréter ce retour, reconnaître ses véritables intentions, et surtout, comment réagir pour ne pas tout gâcher en quelques minutes d'émotion incontrôlée ?
+            Le <strong>silence radio</strong> est l'une des stratégies les plus efficaces en <strong>reconquête amoureuse</strong>, avec un taux de succès élevé lorsqu'il est correctement appliqué. Mais que se passe-t-il quand votre <strong>ex revient après un silence radio</strong> ? Comment interpréter ce retour, reconnaître ses véritables intentions, et surtout, comment réagir pour ne pas tout gâcher en quelques minutes d'émotion incontrôlée ?
           </p>
           <p className="text-lg leading-relaxed mb-4">
             Après des semaines sans contact, recevoir un message de votre ex peut déclencher un tsunami émotionnel : joie, espoir, confusion, méfiance. Votre réaction dans les premières 24-48 heures déterminera l'issue de cette <strong>tentative de réconciliation</strong>. Trop d'empressement tue l'attraction retrouvée, trop de froideur peut rebuter définitivement votre ex.
@@ -112,6 +118,7 @@ export default function ExRevientSilenceRadioPage() {
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-purple-600">🔍 Les 8 Signes Qu'un Ex Va Revenir Après Silence Radio</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Les huit signes précurseurs du retour après silence radio sont : surveillance de vos réseaux sociaux, présence accidentelle répétée, questions via l'entourage, message prétexte neutre, déblocage sur les réseaux, publications nostalgiques, mentions positives du passé et jalousie visible.</p>
           <p className="text-gray-700 mb-6">
             Avant même le premier message, votre ex envoie des <strong>signaux subtils</strong> qui trahissent son intérêt retrouvé. Voici les indicateurs les plus fiables.
           </p>
@@ -123,7 +130,7 @@ export default function ExRevientSilenceRadioPage() {
                 Votre ex regarde TOUTES vos stories Instagram dans les premières heures, like des publications anciennes (parfois de plusieurs mois), ou réagit à du contenu neutre. Ce comportement révèle une <strong>curiosité obsessionnelle</strong> : il/elle veut savoir si vous allez bien, si vous êtes avec quelqu'un, si vous semblez heureux sans lui/elle.
               </p>
               <p className="text-gray-700 font-semibold">
-                Taux de retour après ce signe : 78% dans les 4-8 semaines suivantes.
+                Ce signe annonce très souvent un retour dans les 4-8 semaines suivantes.
               </p>
             </div>
 
@@ -163,7 +170,7 @@ export default function ExRevientSilenceRadioPage() {
                 Si votre ex vous avait bloqué ou supprimé, le <strong>déblocage</strong> est un signal puissant. Il signifie que la colère émotionnelle initiale est retombée et qu'il/elle est prêt à considérer une forme de reconnexion. Souvent suivi d'une reprise de contact dans les 2-3 semaines.
               </p>
               <p className="text-gray-700 font-semibold">
-                Probabilité de retour : 71% dans les 30 jours suivant le déblocage.
+                Le retour suit très souvent dans les 30 jours suivant le déblocage.
               </p>
             </div>
 
@@ -201,6 +208,7 @@ export default function ExRevientSilenceRadioPage() {
 
         <section className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-8 mb-8 border-2 border-purple-200">
           <h2 className="text-3xl font-bold mb-6 text-gray-900">🧠 Pourquoi un Ex Revient Après Silence Radio : 7 Raisons Psychologiques</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Les sept raisons psychologiques du retour après silence radio sont : l'effet de manque, la peur de vous perdre définitivement, l'échec d'une relation rebond, votre transformation visible, la solitude, la prise de conscience mature et le besoin de valider son pouvoir de séduction.</p>
           <p className="text-gray-700 mb-6">
             Comprendre les <strong>motivations réelles</strong> de votre ex est crucial pour évaluer si ce retour mérite votre attention ou s'il s'agit d'un piège émotionnel.
           </p>
@@ -212,7 +220,7 @@ export default function ExRevientSilenceRadioPage() {
                 Pendant la relation, votre présence était acquise. Après la rupture et le <strong>silence radio</strong>, votre ex réalise brutalement votre absence. Les moments partagés, votre soutien, votre affection : tout disparaît. Cette privation crée un manque physique et émotionnel intense qui peut devenir insupportable après 4-8 semaines.
               </p>
               <p className="text-gray-700 font-semibold">
-                Taux d'occurrence : 68% des retours sont motivés en partie par ce manque. C'est la raison la plus fréquente.
+                La majorité des retours sont motivés en partie par ce manque. C'est la raison la plus fréquente.
               </p>
             </div>
 
@@ -229,7 +237,7 @@ export default function ExRevientSilenceRadioPage() {
             <div className="bg-white rounded-lg p-5 border-l-4 border-pink-500">
               <h3 className="font-bold mb-2 text-pink-700 text-lg">3. L'Échec de la Relation Suivante (Rebond)</h3>
               <p className="text-gray-700 mb-3">
-                45% des ex qui reviennent le font après l'échec d'une <strong>relation rebond</strong>. Votre ex a cru trouver mieux, s'est lancé rapidement avec quelqu'un d'autre pour combler le vide, puis réalise que cette nouvelle personne ne vous arrive pas à la cheville. La comparaison vous favorise, déclenchant nostalgie et regrets.
+                De nombreux ex qui reviennent le font après l'échec d'une <strong>relation rebond</strong>. Votre ex a cru trouver mieux, s'est lancé rapidement avec quelqu'un d'autre pour combler le vide, puis réalise que cette nouvelle personne ne vous arrive pas à la cheville. La comparaison vous favorise, déclenchant nostalgie et regrets.
               </p>
               <p className="text-gray-700 font-semibold">
                 Attention : Ce retour n'est pas toujours sain. Assurez-vous que votre ex revient PAR choix, pas par dépit.
@@ -282,6 +290,7 @@ export default function ExRevientSilenceRadioPage() {
 
         <section id="reaction" className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-purple-600">💬 Comment Réagir Quand Votre Ex Revient : La Stratégie en 6 Étapes</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Quand votre ex revient après un silence radio, suivez six étapes : ne répondez pas immédiatement, restez neutre et amical, laissez votre ex mener la conversation, observez ses intentions pendant 2 à 3 semaines, exigez une conversation honnête, puis reconstruisez lentement ou refusez.</p>
           <p className="text-gray-700 mb-6">
             Votre <strong>première réaction</strong> détermine toute la suite. Voici le protocole exact pour maximiser vos chances de réconciliation saine.
           </p>
@@ -354,6 +363,7 @@ export default function ExRevientSilenceRadioPage() {
 
         <section className="bg-gradient-to-br from-rose-50 to-pink-50 rounded-xl p-8 mb-8 border-2 border-rose-200">
           <h2 className="text-3xl font-bold mb-6 text-gray-900">🚨 Red Flags : Quand Refuser le Retour de Votre Ex</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Refusez le retour de votre ex si : il vous contacte uniquement la nuit, refuse de parler des problèmes passés, revient juste après une autre rupture, n'a pas changé de comportement, vous manipule, reproduit un cycle de ruptures, ou si vous sentez que vous méritez mieux.</p>
           <p className="text-gray-700 mb-6">
             Tous les retours ne méritent pas d'être acceptés. Voici les <strong>signaux d'alarme</strong> qui doivent vous faire refuser catégoriquement.
           </p>
@@ -419,10 +429,11 @@ export default function ExRevientSilenceRadioPage() {
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-purple-600">📊 Statistiques : Que Deviennent les Couples Après un Retour Post-Silence Radio ?</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Après un retour post-silence radio, une partie des couples restent ensemble durablement, beaucoup se séparent à nouveau dans les 6 à 18 mois, certains renoncent après quelques rendez-vous, et quelques-uns transforment la relation en amitié.</p>
 
           <div className="space-y-5">
             <div className="bg-green-50 p-5 rounded-lg border-l-4 border-green-500">
-              <h3 className="font-bold text-green-700 mb-3 text-lg">Réconciliations Durables (28%)</h3>
+              <h3 className="font-bold text-green-700 mb-3 text-lg">Réconciliations Durables (une partie)</h3>
               <p className="text-gray-700 mb-2">
                 Ces couples se reforment et restent ensemble au moins 2 ans. Caractéristiques communes : les deux partenaires ont fait un travail personnel pendant la séparation, une conversation honnête a eu lieu sur les problèmes, des changements concrets sont mis en place, la réconciliation est progressive (pas de retour immédiat à l'intensité d'avant).
               </p>
@@ -432,17 +443,17 @@ export default function ExRevientSilenceRadioPage() {
             </div>
 
             <div className="bg-yellow-50 p-5 rounded-lg border-l-4 border-yellow-500">
-              <h3 className="font-bold text-yellow-700 mb-3 text-lg">Réconciliations Temporaires (44%)</h3>
+              <h3 className="font-bold text-yellow-700 mb-3 text-lg">Réconciliations Temporaires (le cas le plus fréquent)</h3>
               <p className="text-gray-700 mb-2">
                 Le couple se reforme mais se sépare à nouveau dans les 6-18 mois. Causes principales : les mêmes problèmes non résolus réapparaissent, la nostalgie a masqué les incompatibilités réelles, l'un des deux (ou les deux) n'avait pas vraiment fait le deuil de la relation, retour motivé par la solitude plutôt que l'amour.
               </p>
               <p className="text-gray-700 font-semibold">
-                Leçon : Une réconciliation rapide (moins de 4 semaines) a 73% de chances d'échouer à nouveau.
+                Leçon : Une réconciliation rapide (moins de 4 semaines) a de très fortes chances d'échouer à nouveau.
               </p>
             </div>
 
             <div className="bg-blue-50 p-5 rounded-lg border-l-4 border-blue-500">
-              <h3 className="font-bold text-blue-700 mb-3 text-lg">Tentatives Avortées (21%)</h3>
+              <h3 className="font-bold text-blue-700 mb-3 text-lg">Tentatives Avortées (une minorité)</h3>
               <p className="text-gray-700 mb-2">
                 Après quelques échanges ou rendez-vous, l'un des deux (souvent celui qui n'avait pas quitté initialement) réalise que finalement, la séparation était la bonne décision. Le silence radio leur a permis de prendre du recul et de voir la relation objectivement. Ils déclinent la réconciliation.
               </p>
@@ -452,7 +463,7 @@ export default function ExRevientSilenceRadioPage() {
             </div>
 
             <div className="bg-purple-50 p-5 rounded-lg border-l-4 border-purple-500">
-              <h3 className="font-bold text-purple-700 mb-3 text-lg">Amitiés Post-Rupture (7%)</h3>
+              <h3 className="font-bold text-purple-700 mb-3 text-lg">Amitiés Post-Rupture (rare)</h3>
               <p className="text-gray-700">
                 Un petit pourcentage parvient à transformer la relation amoureuse en amitié authentique après le retour de contact. Cela nécessite que les deux aient totalement accepté la fin de la dimension romantique et qu'aucune blessure majeure n'existe. Rare mais possible, surtout pour les couples qui étaient d'abord amis avant de devenir amoureux.
               </p>
@@ -462,19 +473,20 @@ export default function ExRevientSilenceRadioPage() {
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold mb-8 text-purple-600">❓ Questions Fréquentes sur le Retour d'un Ex Après Silence Radio</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Retrouvez les réponses aux six questions les plus posées sur le retour après silence radio : délai moyen, signes précurseurs, réponse idéale, distinction culpabilité versus amour, droit de refuser et prévention des mêmes erreurs.</p>
           <div className="space-y-6">
             <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Combien de temps avant qu'un ex revienne après le silence radio ?</h3>
-              <p className="text-gray-700 leading-relaxed">La durée varie selon les situations : 30% des ex reviennent dans les 3-6 semaines, 45% entre 2-4 mois, et 15% après 6 mois ou plus. Le timing dépend de qui a quitté, de l'intensité de la relation, et de votre comportement pendant le <strong>silence radio</strong>. Plus vous respectez le no contact total sans stalker ou supplier, plus le retour est probable. Le silence radio doit durer minimum 30 jours pour être efficace.</p>
+              <h3 className="text-xl font-bold mb-3 text-gray-900">Quand un ex revient-il après le silence radio ?</h3>
+              <p className="text-gray-700 leading-relaxed">La durée varie selon les situations : certains ex reviennent dans les 3-6 semaines, la plupart entre 2-4 mois, et d'autres après 6 mois ou plus. Le timing dépend de qui a quitté, de l'intensité de la relation, et de votre comportement pendant le <strong>silence radio</strong>. Plus vous respectez le no contact total sans stalker ou supplier, plus le retour est probable. Le silence radio doit durer minimum 30 jours pour être efficace.</p>
             </div>
 
             <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Quels sont les signes qu'un ex va revenir après silence radio ?</h3>
+              <h3 className="text-xl font-bold mb-3 text-gray-900">Quels signes annoncent le retour après silence radio ?</h3>
               <p className="text-gray-700 leading-relaxed">Les signes classiques incluent : votre ex regarde vos stories systématiquement, like d'anciennes photos, vous envoie un message neutre (prétexte pour parler), passe "par hasard" aux endroits où vous êtes, demande de vos nouvelles à des amis communs, vous débloque sur les réseaux, ou poste du contenu nostalgique. Ces <strong>signaux</strong> indiquent que vous lui manquez et qu'il teste votre disponibilité émotionnelle.</p>
             </div>
 
             <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Que répondre quand mon ex me recontacte après silence radio ?</h3>
+              <h3 className="text-xl font-bold mb-3 text-gray-900">Comment répondre quand mon ex me recontacte ?</h3>
               <p className="text-gray-700 leading-relaxed">Ne répondez PAS immédiatement. Attendez 4-8 heures minimum pour montrer que vous avez une vie. Restez neutre, amical mais détaché : pas d'effusions émotionnelles. Répondez brièvement sans relancer la conversation. Si votre ex demande de vous voir, acceptez uniquement si minimum 6-8 semaines de silence radio se sont écoulées. Trop de <strong>disponibilité</strong> tue l'attraction retrouvée.</p>
             </div>
 
@@ -484,13 +496,13 @@ export default function ExRevientSilenceRadioPage() {
             </div>
 
             <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Peut-on refuser le retour de son ex après silence radio ?</h3>
-              <p className="text-gray-700 leading-relaxed">Absolument, et c'est parfois la décision la plus sage. Si pendant le silence radio vous avez réalisé que la relation était toxique, que vous avez évolué, ou que vous ne ressentez plus d'amour, vous avez le droit de refuser. 32% des personnes refusent le retour de leur ex après avoir pris du recul. Le <strong>silence radio</strong> sert aussi à clarifier vos vrais sentiments, pas seulement à récupérer votre ex.</p>
+              <h3 className="text-xl font-bold mb-3 text-gray-900">Peut-on refuser le retour de son ex ?</h3>
+              <p className="text-gray-700 leading-relaxed">Absolument, et c'est parfois la décision la plus sage. Si pendant le silence radio vous avez réalisé que la relation était toxique, que vous avez évolué, ou que vous ne ressentez plus d'amour, vous avez le droit de refuser. De nombreuses personnes refusent le retour de leur ex après avoir pris du recul. Le <strong>silence radio</strong> sert aussi à clarifier vos vrais sentiments, pas seulement à récupérer votre ex.</p>
             </div>
 
             <div>
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Comment ne pas reproduire les mêmes erreurs après le retour de l'ex ?</h3>
-              <p className="text-gray-700 leading-relaxed">Avant toute réconciliation, établissez une <strong>conversation honnête</strong> sur ce qui n'a pas fonctionné. Identifiez les patterns toxiques (communication défaillante, jalousie, manque de respect). Fixez des nouvelles règles relationnelles. Considérez une thérapie de couple. Prenez le temps de reconstruire lentement (minimum 3 mois) avant de redevenir officiellement ensemble. 68% des couples qui se reforment sans travail conscient se séparent à nouveau dans l'année.</p>
+              <h3 className="text-xl font-bold mb-3 text-gray-900">Comment éviter de refaire les mêmes erreurs ?</h3>
+              <p className="text-gray-700 leading-relaxed">Avant toute réconciliation, établissez une <strong>conversation honnête</strong> sur ce qui n'a pas fonctionné. Identifiez les patterns toxiques (communication défaillante, jalousie, manque de respect). Fixez des nouvelles règles relationnelles. Considérez une thérapie de couple. Prenez le temps de reconstruire lentement (minimum 3 mois) avant de redevenir officiellement ensemble. La majorité des couples qui se reforment sans travail conscient se séparent à nouveau dans l'année.</p>
             </div>
           </div>
         </section>

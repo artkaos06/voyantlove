@@ -1,55 +1,57 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { getArticleSchema, getFAQSchema, getBreadcrumbSchema } from '@/lib/schema';
+import { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getAuthorSchema } from '@/lib/schema';
 import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
 export const metadata: Metadata = {
-  title: 'Tirage de Tarot Amoureux : Guide Complet des Tirages Sentimentaux | VoyantLove',
+  title: 'Tirage de Tarot Amoureux : Guide Complet des Tirages Sentimentaux',
   description: 'D\u00e9couvrez le tirage de tarot amoureux : tirage en croix, tirage sentimental, interpr\u00e9tation des arcanes majeurs pour l\u2019amour. Guide complet pour comprendre vos sentiments.',
   keywords: ['tirage tarot amour', 'tarot amoureux', 'tirage sentimental', 'lecture tarot couple', 'tarot des sentiments'],
   alternates: {
-    canonical: 'https://voyantlove.fr/methodes-voyance/tirage-tarot-amour',
+    canonical: 'https://voyantlove.fr/methodes-voyance/tirage-tarot-amour/',
   },
 };
 
 export default function TirageTarotAmourPage() {
   const articleSchema = getArticleSchema({
-    title: 'Tirage de Tarot Amoureux : Guide Complet des Tirages Sentimentaux | VoyantLove',
+    title: 'Tirage de Tarot Amoureux : Guide Complet des Tirages Sentimentaux',
     description: 'D\u00e9couvrez le tirage de tarot amoureux : tirage en croix, tirage sentimental, interpr\u00e9tation des arcanes majeurs pour l\u2019amour. Guide complet pour comprendre vos sentiments.',
-    url: 'https://voyantlove.fr/methodes-voyance/tirage-tarot-amour',
+    url: 'https://voyantlove.fr/methodes-voyance/tirage-tarot-amour/',
     datePublished: '2026-03-03',
     dateModified: new Date().toISOString().split('T')[0],
     keywords: ['tirage tarot amour', 'tarot amoureux', 'tirage sentimental', 'lecture tarot couple', 'tarot des sentiments'],
   });
 
+  const authorSchema = getAuthorSchema();
+
   const breadcrumbSchema = getBreadcrumbSchema([
     { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'M\u00e9thodes de Voyance', url: 'https://voyantlove.fr/methodes-voyance' },
-    { name: 'Tirage Tarot Amour', url: 'https://voyantlove.fr/methodes-voyance/tirage-tarot-amour' },
+    { name: 'M\u00e9thodes de Voyance', url: 'https://voyantlove.fr/methodes-voyance/' },
+    { name: 'Tirage Tarot Amour', url: 'https://voyantlove.fr/methodes-voyance/tirage-tarot-amour/' },
   ]);
 
   const faqSchema = getFAQSchema([
     {
-      question: 'Quel est le meilleur tirage de tarot pour l\u2019amour ?',
+      question: 'Meilleur tirage de tarot pour l\u2019amour ?',
       answer: 'Le tirage en croix sentimental est consid\u00e9r\u00e9 comme le plus complet pour les questions amoureuses. Il analyse en cinq positions la situation actuelle, les obstacles, les influences cach\u00e9es, les conseils du tarot et l\u2019\u00e9volution probable de votre relation. Le tirage des sept cartes de l\u2019amour est \u00e9galement tr\u00e8s appr\u00e9ci\u00e9 pour une lecture plus d\u00e9taill\u00e9e des sentiments mutuels, du potentiel du couple et des \u00e9nergies \u00e0 venir. Un voyant exp\u00e9riment\u00e9 adapte le tirage \u00e0 votre question sp\u00e9cifique pour une pr\u00e9cision maximale.',
     },
     {
-      question: 'Peut-on faire un tirage de tarot amoureux pour quelqu\u2019un d\u2019autre ?',
+      question: 'Peut-on tirer le tarot amour pour quelqu\u2019un d\u2019autre ?',
       answer: 'Oui, il est possible de r\u00e9aliser un tirage de tarot amoureux concernant une tierce personne, mais avec des limites \u00e9thiques. Le tarot r\u00e9v\u00e8le les \u00e9nergies qui circulent entre vous et l\u2019autre personne, les sentiments qu\u2019elle projette et les intentions per\u00e7ues. Toutefois, un voyant responsable ne cherchera jamais \u00e0 manipuler la volont\u00e9 d\u2019autrui. Le tirage sert \u00e0 comprendre la dynamique relationnelle, pas \u00e0 forcer un destin. La cl\u00e9 est de formuler votre question avec respect et ouverture.',
     },
     {
-      question: 'Combien de fois peut-on faire un tirage amoureux ?',
+      question: 'Combien de fois tirer les cartes amour ?',
       answer: 'Il est recommand\u00e9 d\u2019espacer vos tirages de tarot amoureux d\u2019au moins deux \u00e0 trois semaines. Tirer les cartes trop fr\u00e9quemment sur la m\u00eame question brouille les \u00e9nergies et g\u00e9n\u00e8re des r\u00e9ponses contradictoires. Le tarot n\u00e9cessite du temps pour que les \u00e9nergies \u00e9voluent. Si votre situation change radicalement entre-temps, un nouveau tirage se justifie. La patience est une vertu essentielle dans l\u2019interpr\u00e9tation du tarot amoureux.',
     },
     {
-      question: 'Le Tarot de Marseille est-il plus fiable pour l\u2019amour ?',
+      question: 'Tarot de Marseille : fiable pour l\u2019amour ?',
       answer: 'Le Tarot de Marseille est le jeu de r\u00e9f\u00e9rence en voyance amoureuse fran\u00e7aise gr\u00e2ce \u00e0 sa symbolique riche et ses 22 arcanes majeurs charg\u00e9s de sens. Sa structure permet une lecture profonde des \u00e9motions, des blocages et des potentiels amoureux. Le Rider-Waite offre des images plus explicites, facilitant l\u2019interpr\u00e9tation pour les d\u00e9butants. L\u2019essentiel n\u2019est pas le jeu choisi mais la connexion du voyant avec ses cartes et sa ma\u00eetrise de la symbolique amoureuse.',
     },
     {
-      question: 'Que signifie la carte des Amoureux dans un tirage sentimental ?',
+      question: 'Signification des Amoureux dans un tirage ?',
       answer: 'La carte des Amoureux (Arcane VI) est la carte la plus significative du tarot en mati\u00e8re sentimentale. Elle repr\u00e9sente un choix amoureux d\u00e9cisif, une union sincere, une alchimie authentique entre deux \u00eatres. En position positive, elle confirme une relation harmonieuse et un amour r\u00e9ciproque. En position renvers\u00e9e ou entour\u00e9e de cartes difficiles, elle signale une h\u00e9sitation entre deux partenaires ou un d\u00e9s\u00e9quilibre sentimental. Le contexte des cartes voisines affine toujours l\u2019interpr\u00e9tation.',
     },
   ]);
@@ -68,6 +70,10 @@ export default function TirageTarotAmourPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(authorSchema) }}
+      />
 
       {/* Header */}
       <header className="bg-gradient-to-r from-indigo-500 via-blue-500 to-purple-500 text-white py-16 px-4">
@@ -85,9 +91,9 @@ export default function TirageTarotAmourPage() {
       <div className="max-w-4xl mx-auto px-4 py-8">
         {/* Stats bar */}
         <div className="bg-white rounded-xl shadow-md p-6 mb-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-          <div><div className="text-3xl mb-1">&#x1F3AF;</div><div className="text-2xl font-bold text-indigo-600">85%</div><div className="text-sm text-gray-600">Pr&eacute;cision</div></div>
-          <div><div className="text-3xl mb-1">&#x1F0CF;</div><div className="text-2xl font-bold text-indigo-600">12 000+</div><div className="text-sm text-gray-600">Tirages r&eacute;alis&eacute;s</div></div>
-          <div><div className="text-3xl mb-1">&#x2B50;</div><div className="text-2xl font-bold text-indigo-600">4.9/5</div><div className="text-sm text-gray-600">Satisfaction</div></div>
+          <div><div className="text-3xl mb-1">&#x1F3AF;</div><div className="text-2xl font-bold text-indigo-600">Pr&eacute;cis</div><div className="text-sm text-gray-600">Tirages cibl&eacute;s</div></div>
+          <div><div className="text-3xl mb-1">&#x1F0CF;</div><div className="text-2xl font-bold text-indigo-600">5 tirages</div><div className="text-sm text-gray-600">M&eacute;thodes propos&eacute;es</div></div>
+          <div><div className="text-3xl mb-1">&#x2B50;</div><div className="text-2xl font-bold text-indigo-600">Appr&eacute;ci&eacute;</div><div className="text-sm text-gray-600">Par les consultants</div></div>
           <div><div className="text-3xl mb-1">&#x1F52E;</div><div className="text-2xl font-bold text-indigo-600">22 arcanes</div><div className="text-sm text-gray-600">Majeurs analys&eacute;s</div></div>
         </div>
 
@@ -108,6 +114,7 @@ export default function TirageTarotAmourPage() {
         {/* Section: Types de tirages amoureux */}
         <section id="types" className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">&#x1F0CF; Types de Tirages Amoureux</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Les principaux tirages de tarot amoureux sont le tirage en croix (5 cartes), le tirage des sept cartes de l&apos;amour, le tirage de la relation (12 cartes), le tirage oui/non (3 cartes) et le tirage du chemin amoureux (10 cartes).</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Chaque question sentimentale m&eacute;rite un <strong>tirage de tarot</strong> adapt&eacute;. Les voyants sp&eacute;cialis&eacute;s en <strong>voyance amoureuse</strong> disposent de plusieurs m&eacute;thodes de tirage, chacune con&ccedil;ue pour explorer une dimension sp&eacute;cifique de votre <strong>vie sentimentale</strong>. Voici les tirages les plus puissants et les plus r&eacute;v&eacute;lateurs utilis&eacute;s en consultation.
           </p>
@@ -158,6 +165,7 @@ export default function TirageTarotAmourPage() {
         {/* Section: Interpr&eacute;ter un tirage sentimental */}
         <section className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-8 mb-8 border-2 border-blue-200">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">&#x1F4D6; Interpr&eacute;ter un Tirage Sentimental</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Interpr&eacute;ter un tirage sentimental consiste &agrave; analyser la position de chaque carte, les combinaisons entre arcanes et les &eacute;nergies subtiles du tirage. L&apos;intuition du voyant compl&egrave;te la symbolique pour une lecture personnalis&eacute;e.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             L&apos;interpr&eacute;tation d&apos;un <strong>tirage de tarot amoureux</strong> requiert bien plus que la simple connaissance des significations individuelles des cartes. C&apos;est l&apos;art de lire les <strong>combinaisons</strong>, de percevoir les <strong>&eacute;nergies subtiles</strong> et de tisser un r&eacute;cit coh&eacute;rent &agrave; partir de symboles millionaires. Le <strong>tarologue</strong> exp&eacute;riment&eacute; en <strong>voyance amoureuse</strong> consid&egrave;re chaque carte dans son contexte, sa position et ses interactions avec les cartes voisines.
           </p>
@@ -196,6 +204,7 @@ export default function TirageTarotAmourPage() {
         {/* Section: Tirage en croix pour l&apos;amour */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">&#x271A; Le Tirage en Croix pour l&apos;Amour &mdash; M&eacute;thode D&eacute;taill&eacute;e</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Le tirage en croix amoureux utilise 5 cartes dispos&eacute;es en croix pour r&eacute;v&eacute;ler la situation actuelle, l&apos;obstacle, les influences cach&eacute;es, le conseil du tarot et l&apos;&eacute;volution probable de votre relation sentimentale.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Le <strong>tirage en croix</strong> est le fondement de la <strong>cartomancie amoureuse</strong>. Sa structure simple mais puissante en cinq positions permet de r&eacute;pondre &agrave; toutes les questions sentimentales avec une pr&eacute;cision remarquable. Voici comment chaque position &eacute;claire votre <strong>situation amoureuse</strong>.
           </p>
@@ -247,6 +256,7 @@ export default function TirageTarotAmourPage() {
         {/* Section: Quand faire un tirage */}
         <section className="bg-gradient-to-br from-indigo-50 to-blue-50 rounded-xl p-8 mb-8 border-2 border-indigo-200">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">&#x1F552; Quand Faire un Tirage de Tarot Amoureux</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Le meilleur moment pour un tirage de tarot amoureux est lors d&apos;un doute sentimental, au d&eacute;but d&apos;une relation, avant une d&eacute;cision importante ou apr&egrave;s une crise de couple. &Eacute;vitez de tirer les cartes en pleine crise &eacute;motionnelle.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Le timing d&apos;un <strong>tirage de tarot amoureux</strong> influence consid&eacute;rablement la qualit&eacute; et la pertinence des r&eacute;ponses obtenues. Certains moments sont particuli&egrave;rement propices &agrave; la <strong>consultation de voyance sentimentale</strong>, tandis que d&apos;autres n&eacute;cessitent de la prudence. Savoir quand consulter le <strong>tarot</strong> optimise votre exp&eacute;rience et la pr&eacute;cision des r&eacute;v&eacute;lations.
           </p>
@@ -285,6 +295,7 @@ export default function TirageTarotAmourPage() {
         {/* Section: Cartes cl&eacute;s du tarot en amour */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">&#x2764;&#xFE0F; Cartes Cl&eacute;s du Tarot en Amour</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Les cartes les plus importantes du tarot en amour sont les Amoureux (choix du c&oelig;ur), l&apos;Imp&eacute;ratrice (s&eacute;duction), le Soleil (bonheur amoureux), la Lune (illusions sentimentales) et Temp&eacute;rance (harmonie du couple).</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Certains <strong>arcanes majeurs</strong> du <strong>Tarot de Marseille</strong> sont particuli&egrave;rement charg&eacute;s de signification en contexte amoureux. Conna&icirc;tre leur symbolique sentimentale vous permet de mieux comprendre les messages de votre <strong>tirage</strong> et d&apos;appr&eacute;cier la profondeur de la <strong>guidance amoureuse</strong> que le tarot propose.
           </p>
@@ -329,29 +340,30 @@ export default function TirageTarotAmourPage() {
         {/* FAQ Section */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-8">&#x2753; Questions Fr&eacute;quentes sur le Tirage de Tarot Amoureux</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Les questions les plus pos&eacute;es concernent le meilleur type de tirage, la possibilit&eacute; de tirer pour quelqu&apos;un d&apos;autre, la fr&eacute;quence id&eacute;ale entre deux tirages et la signification des Amoureux dans un tirage sentimental.</p>
           <div className="space-y-6">
             <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Quel est le meilleur tirage de tarot pour l&apos;amour ?</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Meilleur tirage de tarot pour l&apos;amour ?</h3>
               <p className="text-gray-700 leading-relaxed">Le <strong>tirage en croix sentimental</strong> est consid&eacute;r&eacute; comme le plus complet pour les questions amoureuses. Il analyse en cinq positions la situation actuelle, les obstacles, les influences cach&eacute;es, les conseils du <strong>tarot</strong> et l&apos;&eacute;volution probable de votre <strong>relation</strong>. Le tirage des sept cartes de l&apos;amour est &eacute;galement tr&egrave;s appr&eacute;ci&eacute; pour une lecture plus d&eacute;taill&eacute;e des <strong>sentiments</strong> mutuels, du potentiel du couple et des &eacute;nergies &agrave; venir. Un <strong>voyant</strong> exp&eacute;riment&eacute; adapte le tirage &agrave; votre question sp&eacute;cifique pour une pr&eacute;cision maximale.</p>
             </div>
 
             <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Peut-on faire un tirage de tarot amoureux pour quelqu&apos;un d&apos;autre ?</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Peut-on tirer le tarot amour pour quelqu&apos;un d&apos;autre ?</h3>
               <p className="text-gray-700 leading-relaxed">Oui, il est possible de r&eacute;aliser un <strong>tirage de tarot amoureux</strong> concernant une tierce personne, mais avec des limites &eacute;thiques. Le <strong>tarot</strong> r&eacute;v&egrave;le les &eacute;nergies qui circulent entre vous et l&apos;autre personne, les <strong>sentiments</strong> qu&apos;elle projette et les intentions per&ccedil;ues. Toutefois, un <strong>voyant</strong> responsable ne cherchera jamais &agrave; manipuler la volont&eacute; d&apos;autrui. Le <strong>tirage sentimental</strong> sert &agrave; comprendre la dynamique relationnelle, pas &agrave; forcer un destin. La cl&eacute; est de formuler votre question avec respect et ouverture.</p>
             </div>
 
             <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Combien de fois peut-on faire un tirage amoureux ?</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Combien de fois tirer les cartes amour ?</h3>
               <p className="text-gray-700 leading-relaxed">Il est recommand&eacute; d&apos;espacer vos <strong>tirages de tarot amoureux</strong> d&apos;au moins deux &agrave; trois semaines. Tirer les cartes trop fr&eacute;quemment sur la m&ecirc;me question brouille les &eacute;nergies et g&eacute;n&egrave;re des r&eacute;ponses contradictoires. Le <strong>tarot</strong> n&eacute;cessite du temps pour que les <strong>&eacute;nergies sentimentales</strong> &eacute;voluent. Si votre situation change radicalement entre-temps, un nouveau tirage se justifie. La patience est une vertu essentielle dans l&apos;interpr&eacute;tation du <strong>tarot amoureux</strong>.</p>
             </div>
 
             <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Le Tarot de Marseille est-il plus fiable pour l&apos;amour ?</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Tarot de Marseille : fiable pour l&apos;amour ?</h3>
               <p className="text-gray-700 leading-relaxed">Le <strong>Tarot de Marseille</strong> est le jeu de r&eacute;f&eacute;rence en <strong>voyance amoureuse</strong> fran&ccedil;aise gr&acirc;ce &agrave; sa symbolique riche et ses 22 <strong>arcanes majeurs</strong> charg&eacute;s de sens. Sa structure permet une <strong>lecture profonde</strong> des &eacute;motions, des blocages et des potentiels amoureux. Le Rider-Waite offre des images plus explicites, facilitant l&apos;interpr&eacute;tation pour les d&eacute;butants. L&apos;essentiel n&apos;est pas le jeu choisi mais la connexion du <strong>voyant</strong> avec ses cartes et sa ma&icirc;trise de la symbolique amoureuse.</p>
             </div>
 
             <div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Que signifie la carte des Amoureux dans un tirage sentimental ?</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Signification des Amoureux dans un tirage ?</h3>
               <p className="text-gray-700 leading-relaxed">La carte des <strong>Amoureux</strong> (Arcane VI) est la carte la plus significative du <strong>tarot</strong> en mati&egrave;re sentimentale. Elle repr&eacute;sente un choix amoureux d&eacute;cisif, une <strong>union sinc&egrave;re</strong>, une alchimie authentique entre deux &ecirc;tres. En position positive, elle confirme une <strong>relation harmonieuse</strong> et un amour r&eacute;ciproque. En position renvers&eacute;e ou entour&eacute;e de cartes difficiles, elle signale une h&eacute;sitation entre deux partenaires ou un d&eacute;s&eacute;quilibre sentimental. Le contexte des cartes voisines affine toujours l&apos;interpr&eacute;tation.</p>
             </div>
           </div>

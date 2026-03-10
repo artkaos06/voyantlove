@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { getArticleSchema, getFAQSchema, getBreadcrumbSchema } from '@/lib/schema';
+import { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getAuthorSchema } from '@/lib/schema';
 import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
@@ -10,14 +10,14 @@ export const metadata: Metadata = {
   title: 'Nouvelle Relation Amoureuse : Guide des Premiers Mois | Construire les Bases',
   description: 'Tout savoir sur les premiers mois d\'une nouvelle relation amoureuse. Étapes clés, erreurs à éviter, construire des fondations solides et signes d\'une relation saine.',
   keywords: ['nouvelle relation amoureuse', 'début relation', 'premiers mois couple', 'construire relation', 'nouvelle histoire amour'],
-  alternates: { canonical: 'https://voyantlove.fr/nouvelle-rencontre/nouvelle-relation-amoureuse' },
+  alternates: { canonical: 'https://voyantlove.fr/nouvelle-rencontre/nouvelle-relation-amoureuse/' },
 };
 
 export default function NouvelleRelationAmourseusePage() {
   const articleSchema = getArticleSchema({
     title: 'Nouvelle Relation Amoureuse : Guide des Premiers Mois | Construire les Bases',
     description: 'Tout savoir sur les premiers mois d\'une nouvelle relation amoureuse. Étapes clés, erreurs à éviter, construire des fondations solides et signes d\'une relation saine.',
-    url: 'https://voyantlove.fr/nouvelle-rencontre/nouvelle-relation-amoureuse',
+    url: 'https://voyantlove.fr/nouvelle-rencontre/nouvelle-relation-amoureuse/',
     datePublished: '2026-02-09',
     dateModified: new Date().toISOString().split('T')[0],
     keywords: ['nouvelle relation amoureuse', 'début relation', 'premiers mois couple', 'construire relation', 'nouvelle histoire amour'],
@@ -25,33 +25,35 @@ export default function NouvelleRelationAmourseusePage() {
 
   const breadcrumbSchema = getBreadcrumbSchema([
     { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'Nouvelle Rencontre', url: 'https://voyantlove.fr/nouvelle-rencontre' },
-    { name: 'Nouvelle Relation Amoureuse', url: 'https://voyantlove.fr/nouvelle-rencontre/nouvelle-relation-amoureuse' },
+    { name: 'Nouvelle Rencontre', url: 'https://voyantlove.fr/nouvelle-rencontre/' },
+    { name: 'Nouvelle Relation Amoureuse', url: 'https://voyantlove.fr/nouvelle-rencontre/nouvelle-relation-amoureuse/' },
   ]);
+
+  const authorSchema = getAuthorSchema();
 
   const faqSchema = getFAQSchema([
     {
-      question: 'Combien de temps durent les premiers mois d\'une nouvelle relation ?',
+      question: 'Combien de temps dure la phase de nouvelle relation ?',
       answer: 'La phase de nouvelle relation dure généralement 3 à 6 mois, parfois jusqu\'à 12 mois. Cette période correspond à la phase de passion et de découverte où les hormones (dopamine, ocytocine) sont à leur pic. Après 6-12 mois, le cerveau s\'adapte et la relation entre dans une phase plus stable et profonde. Les tarologues considèrent les 3 premiers mois comme cruciaux pour établir des bases saines.',
     },
     {
-      question: 'Quelle est la fréquence normale de se voir en début de relation ?',
-      answer: 'En début de relation saine, se voir 2-3 fois par semaine est idéal pour les 2-3 premiers mois. Cela permet de créer des liens tout en maintenant son individualité. Après 3 mois, 3-4 fois par semaine devient naturel. Se voir tous les jours dès le début peut créer une fusion rapide malsaine et empêcher de conserver son indépendance. 67% des couples durables ont maintenu cet équilibre dans les premiers mois.',
+      question: 'Combien de fois se voir par semaine en début de relation ?',
+      answer: 'En début de relation saine, se voir 2-3 fois par semaine est idéal pour les 2-3 premiers mois. Cela permet de créer des liens tout en maintenant son individualité. Après 3 mois, 3-4 fois par semaine devient naturel. Se voir tous les jours dès le début peut créer une fusion rapide malsaine et empêcher de conserver son indépendance. La majorité des couples durables ont maintenu cet équilibre dans les premiers mois.',
     },
     {
-      question: 'Quand dire "je t\'aime" dans une nouvelle relation ?',
+      question: 'Quand dire je t\'aime dans un nouveau couple ?',
       answer: 'Il n\'y a pas de timing parfait universel, mais généralement après 2-4 mois de relation, quand le sentiment est profond et réciproque. Dire "je t\'aime" trop tôt (moins d\'un mois) peut effrayer ou sembler superficiel. Trop tard (plus de 6 mois) peut créer de l\'insécurité. L\'important est l\'authenticité : dites-le quand vous le ressentez vraiment, pas par obligation sociale. Le tarot peut révéler si vos sentiments sont alignés.',
     },
     {
-      question: 'Quels sont les red flags dans une nouvelle relation ?',
+      question: 'Quels sont les red flags en debut de relation ?',
       answer: 'Les signaux d\'alarme incluent : love bombing (attention excessive puis retrait), jalousie possessive, critique constante, incohérence entre paroles et actes, refus de définir la relation après 3 mois, évitement des discussions profondes, manque de respect des limites, isolation de vos proches, comportements contrôlants. Si 3+ red flags apparaissent dans les premiers mois, reconsidérez la relation. Une relation saine se construit sur le respect, la communication et la cohérence.',
     },
     {
-      question: 'Comment gérer les ex dans une nouvelle relation ?',
-      answer: 'Communication transparente est clé : informez votre nouveau partenaire de tout contact avec un ex. Les limites saines incluent : pas de conversations intimes, pas de rencontres seul à seul sans raison valable, pas de secrets. Si votre partenaire reste obsédé par son ex ou les compare constamment à vous, c\'est un red flag. 73% des nouvelles relations échouent quand un partenaire n\'a pas fait le deuil de l\'ex.',
+      question: 'Comment gérer son ex dans une nouvelle relation ?',
+      answer: 'Communication transparente est clé : informez votre nouveau partenaire de tout contact avec un ex. Les limites saines incluent : pas de conversations intimes, pas de rencontres seul à seul sans raison valable, pas de secrets. Si votre partenaire reste obsédé par son ex ou les compare constamment à vous, c\'est un red flag. La plupart des nouvelles relations échouent quand un partenaire n\'a pas fait le deuil de l\'ex.',
     },
     {
-      question: 'Quand introduire son nouveau partenaire à sa famille et amis ?',
+      question: 'Quand présenter son nouveau partenaire à sa famille ?',
       answer: 'Attendez minimum 2-3 mois pour être sûr que la relation a un potentiel durable. Présentez d\'abord aux amis proches (plus flexible), puis à la famille (plus officiel) après 4-6 mois si tout va bien. Trop tôt crée une pression sociale et des attentes. Les présentations officielles signalent que vous voyez un avenir ensemble. Le tarot peut confirmer le timing idéal selon l\'évolution énergétique de votre couple.',
     },
   ]);
@@ -70,6 +72,10 @@ export default function NouvelleRelationAmourseusePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(authorSchema) }}
+      />
 
       <header className="bg-gradient-to-r from-rose-500 via-pink-500 to-purple-500 text-white py-16 px-4">
         <div className="max-w-4xl mx-auto">
@@ -86,7 +92,7 @@ export default function NouvelleRelationAmourseusePage() {
       <div className="max-w-4xl mx-auto px-4 py-8">
         <div className="bg-white rounded-xl shadow-md p-6 mb-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
           <div><div className="text-3xl mb-1">💖</div><div className="text-2xl font-bold text-rose-600">3-6 Mois</div><div className="text-sm text-gray-600">Phase cruciale</div></div>
-          <div><div className="text-3xl mb-1">📊</div><div className="text-2xl font-bold text-rose-600">67%</div><div className="text-sm text-gray-600">Réussissent</div></div>
+          <div><div className="text-3xl mb-1">📊</div><div className="text-2xl font-bold text-rose-600">Forte</div><div className="text-sm text-gray-600">Réussite</div></div>
           <div><div className="text-3xl mb-1">⚠️</div><div className="text-2xl font-bold text-rose-600">8 Erreurs</div><div className="text-sm text-gray-600">À éviter</div></div>
           <div><div className="text-3xl mb-1">✨</div><div className="text-2xl font-bold text-rose-600">4,100+</div><div className="text-sm text-gray-600">Couples guidés</div></div>
         </div>
@@ -112,6 +118,7 @@ export default function NouvelleRelationAmourseusePage() {
 
         <section id="etapes" className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-rose-600">📅 Les 6 Étapes d'une Nouvelle Relation Amoureuse</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Une nouvelle relation traverse six phases naturelles : attraction initiale, decouverte, construction de l'intimite, premier plateau, decision d'engagement et transition vers le couple etabli.</p>
           <p className="text-gray-700 mb-6">
             Toute <strong>nouvelle relation</strong> traverse des phases naturelles et prévisibles. Comprendre ces étapes vous aide à naviguer sereinement et à reconnaître si votre relation évolue sainement.
           </p>
@@ -139,7 +146,7 @@ export default function NouvelleRelationAmourseusePage() {
                 <strong>Ce qui est normal :</strong> Premiers désaccords mineurs, découverte de traits moins séduisants, besoin occasionnel d'espace personnel, questionnements légers ("sommes-nous vraiment compatibles ?"), définition progressive de la relation.
               </p>
               <p className="text-gray-700">
-                <strong>À faire :</strong> Communiquez ouvertement sur vos attentes, vos limites, vos besoins. Observez comment vous gérez les conflits ensemble. Définissez votre relation : êtes-vous exclusifs ? Où va cette histoire ? 78% des couples durables ont cette conversation entre le 2e et 3e mois.
+                <strong>À faire :</strong> Communiquez ouvertement sur vos attentes, vos limites, vos besoins. Observez comment vous gérez les conflits ensemble. Définissez votre relation : êtes-vous exclusifs ? Où va cette histoire ? La plupart des couples durables ont cette conversation entre le 2e et 3e mois.
               </p>
             </div>
 
@@ -196,6 +203,7 @@ export default function NouvelleRelationAmourseusePage() {
 
         <section className="bg-gradient-to-br from-rose-50 to-pink-50 rounded-xl p-8 mb-8 border-2 border-rose-200">
           <h2 className="text-3xl font-bold mb-6 text-gray-900">🏗️ Construire des Fondations Solides : Les 7 Piliers</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Les sept piliers d'une relation durable sont : communication honnete, respect des limites, gestion saine des conflits, alignement des valeurs, intimite equilibree, confiance et investissement reciproque.</p>
           <p className="text-gray-700 mb-6">
             Une <strong>relation durable</strong> ne se construit pas sur la passion seule, mais sur des fondations conscientes et solides établies dès les premiers mois.
           </p>
@@ -225,7 +233,7 @@ export default function NouvelleRelationAmourseusePage() {
             <div className="bg-white rounded-lg p-5 border-l-4 border-green-500">
               <h3 className="font-bold text-green-700 mb-2 text-lg">4. Alignement des Valeurs et Vision de Vie</h3>
               <p className="text-gray-700">
-                Discutez tôt des <strong>sujets fondamentaux</strong> : désir d'enfants, vision du mariage, carrière vs famille, finances, spiritualité, localisation géographique. Vous n'avez pas besoin d'être identiques, mais vos visions doivent être compatibles. 62% des ruptures après 1 an sont dues à des incompatibilités de valeurs non adressées dès le début.
+                Discutez tôt des <strong>sujets fondamentaux</strong> : désir d'enfants, vision du mariage, carrière vs famille, finances, spiritualité, localisation géographique. Vous n'avez pas besoin d'être identiques, mais vos visions doivent être compatibles. La majorité des ruptures après 1 an sont dues à des incompatibilités de valeurs non adressées dès le début.
               </p>
             </div>
 
@@ -246,7 +254,7 @@ export default function NouvelleRelationAmourseusePage() {
             <div className="bg-white rounded-lg p-5 border-l-4 border-red-500">
               <h3 className="font-bold text-red-700 mb-2 text-lg">7. Investissement Réciproque et Équilibré</h3>
               <p className="text-gray-700">
-                Une relation saine est <strong>équilibrée</strong> : les deux investissent temps, énergie, attention. Si l'un donne 80% et l'autre 20%, ça ne durera pas. Évaluez dès les premiers mois : l'autre fait-il des efforts ? Initie-t-il des plans ? S'intéresse-t-il vraiment à vous ? L'amour se montre par les actes, pas juste les mots.
+                Une relation saine est <strong>équilibrée</strong> : les deux investissent temps, énergie, attention. Si l'un donne beaucoup et l'autre très peu, ça ne durera pas. Évaluez dès les premiers mois : l'autre fait-il des efforts ? Initie-t-il des plans ? S'intéresse-t-il vraiment à vous ? L'amour se montre par les actes, pas juste les mots.
               </p>
             </div>
           </div>
@@ -254,6 +262,7 @@ export default function NouvelleRelationAmourseusePage() {
 
         <section id="erreurs" className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-rose-600">⚠️ Les 8 Erreurs Fatales des Premiers Mois</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Les erreurs les plus frequentes sont aller trop vite, ignorer les red flags, se perdre dans la relation, eviter les conversations difficiles et comparer constamment avec un ex.</p>
           <p className="text-gray-700 mb-6">
             Certaines erreurs classiques peuvent compromettre une <strong>nouvelle relation prometteuse</strong>. Voici les pièges les plus fréquents à éviter absolument.
           </p>
@@ -267,7 +276,7 @@ export default function NouvelleRelationAmourseusePage() {
                 <strong>Symptômes :</strong> Dire "je t'aime" après 2 semaines, emménager après 2 mois, se voir tous les jours dès le début, couper tous vos amis et activités pour être avec l'autre 24/7, parler mariage après un mois.
               </p>
               <p className="text-gray-700">
-                <strong>Pourquoi c'est fatal :</strong> Vous sautez les étapes naturelles de construction d'une relation. Vous créez une fusion basée sur l'intensité, pas sur la connaissance réelle. Quand les hormones retombent (inévitable), vous réalisez que vous ne vous connaissez pas vraiment. 73% des relations qui vont trop vite se terminent avant 1 an.
+                <strong>Pourquoi c'est fatal :</strong> Vous sautez les étapes naturelles de construction d'une relation. Vous créez une fusion basée sur l'intensité, pas sur la connaissance réelle. Quand les hormones retombent (inévitable), vous réalisez que vous ne vous connaissez pas vraiment. La plupart des relations qui vont trop vite se terminent avant 1 an.
               </p>
             </div>
 
@@ -361,6 +370,7 @@ export default function NouvelleRelationAmourseusePage() {
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-rose-600">✅ Les 10 Signes d'une Nouvelle Relation Saine et Prometteuse</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Une relation saine se reconnait par une communication facile, la coherence entre paroles et actes, le respect mutuel, l'equilibre donner-recevoir et un sentiment de securite emotionnelle.</p>
           <p className="text-gray-700 mb-6">
             Comment savoir si votre <strong>nouvelle relation</strong> a un potentiel de durabilité ? Voici les indicateurs fiables d'une relation partie sur de bonnes bases.
           </p>
@@ -449,6 +459,7 @@ export default function NouvelleRelationAmourseusePage() {
 
         <section className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-8 mb-8 border-2 border-purple-200">
           <h2 className="text-3xl font-bold mb-6 text-gray-900">🗓️ Timeline Pratique : Que Faire et Quand ?</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Le premier mois est dedie a la decouverte, les mois 2-3 a la definition de la relation, les mois 4-6 au premier « je t'aime » et les mois 7-12 a la presentation a la famille et la decision d'engagement.</p>
           <p className="text-gray-700 mb-6">
             Un guide pratique des <strong>milestones naturels</strong> d'une nouvelle relation saine. Ces timings ne sont pas rigides mais représentent des moyennes statistiques.
           </p>
@@ -509,34 +520,35 @@ export default function NouvelleRelationAmourseusePage() {
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold mb-8 text-rose-600">❓ Questions Fréquentes sur les Nouvelles Relations Amoureuses</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Retrouvez les reponses aux questions les plus posees sur le rythme, les etapes cles et les pieges a eviter dans les premiers mois d'une nouvelle relation amoureuse.</p>
           <div className="space-y-6">
             <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Combien de temps durent les premiers mois d'une nouvelle relation ?</h3>
+              <h3 className="text-xl font-bold mb-3 text-gray-900">Combien de temps dure la phase de nouvelle relation ?</h3>
               <p className="text-gray-700 leading-relaxed">La phase de <strong>nouvelle relation</strong> dure généralement 3 à 6 mois, parfois jusqu'à 12 mois. Cette période correspond à la phase de passion et de découverte où les hormones (dopamine, ocytocine) sont à leur pic. Après 6-12 mois, le cerveau s'adapte et la relation entre dans une phase plus stable et profonde. Les tarologues considèrent les 3 premiers mois comme cruciaux pour établir des bases saines.</p>
             </div>
 
             <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Quelle est la fréquence normale de se voir en début de relation ?</h3>
-              <p className="text-gray-700 leading-relaxed">En début de relation saine, se voir 2-3 fois par semaine est idéal pour les 2-3 premiers mois. Cela permet de créer des liens tout en maintenant son individualité. Après 3 mois, 3-4 fois par semaine devient naturel. Se voir tous les jours dès le début peut créer une fusion rapide malsaine et empêcher de conserver son indépendance. 67% des couples durables ont maintenu cet équilibre dans les premiers mois.</p>
+              <h3 className="text-xl font-bold mb-3 text-gray-900">Combien de fois se voir par semaine en début de relation ?</h3>
+              <p className="text-gray-700 leading-relaxed">En début de relation saine, se voir 2-3 fois par semaine est idéal pour les 2-3 premiers mois. Cela permet de créer des liens tout en maintenant son individualité. Après 3 mois, 3-4 fois par semaine devient naturel. Se voir tous les jours dès le début peut créer une fusion rapide malsaine et empêcher de conserver son indépendance. La majorité des couples durables ont maintenu cet équilibre dans les premiers mois.</p>
             </div>
 
             <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Quand dire "je t'aime" dans une nouvelle relation ?</h3>
+              <h3 className="text-xl font-bold mb-3 text-gray-900">Quand dire je t'aime dans un nouveau couple ?</h3>
               <p className="text-gray-700 leading-relaxed">Il n'y a pas de timing parfait universel, mais généralement après 2-4 mois de relation, quand le sentiment est profond et réciproque. Dire "je t'aime" trop tôt (moins d'un mois) peut effrayer ou sembler superficiel. Trop tard (plus de 6 mois) peut créer de l'insécurité. L'important est l'authenticité : dites-le quand vous le ressentez vraiment, pas par obligation sociale. Le tarot peut révéler si vos sentiments sont alignés.</p>
             </div>
 
             <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Quels sont les red flags dans une nouvelle relation ?</h3>
+              <h3 className="text-xl font-bold mb-3 text-gray-900">Quels sont les red flags en debut de relation ?</h3>
               <p className="text-gray-700 leading-relaxed">Les signaux d'alarme incluent : <strong>love bombing</strong> (attention excessive puis retrait), jalousie possessive, critique constante, incohérence entre paroles et actes, refus de définir la relation après 3 mois, évitement des discussions profondes, manque de respect des limites, isolation de vos proches, comportements contrôlants. Si 3+ red flags apparaissent dans les premiers mois, reconsidérez la relation. Une relation saine se construit sur le respect, la communication et la cohérence.</p>
             </div>
 
             <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Comment gérer les ex dans une nouvelle relation ?</h3>
-              <p className="text-gray-700 leading-relaxed">Communication transparente est clé : informez votre nouveau partenaire de tout contact avec un ex. Les limites saines incluent : pas de conversations intimes, pas de rencontres seul à seul sans raison valable, pas de secrets. Si votre partenaire reste obsédé par son ex ou les compare constamment à vous, c'est un red flag. 73% des nouvelles relations échouent quand un partenaire n'a pas fait le deuil de l'ex.</p>
+              <h3 className="text-xl font-bold mb-3 text-gray-900">Comment gérer son ex dans une nouvelle relation ?</h3>
+              <p className="text-gray-700 leading-relaxed">Communication transparente est clé : informez votre nouveau partenaire de tout contact avec un ex. Les limites saines incluent : pas de conversations intimes, pas de rencontres seul à seul sans raison valable, pas de secrets. Si votre partenaire reste obsédé par son ex ou les compare constamment à vous, c'est un red flag. La plupart des nouvelles relations échouent quand un partenaire n'a pas fait le deuil de l'ex.</p>
             </div>
 
             <div>
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Quand introduire son nouveau partenaire à sa famille et amis ?</h3>
+              <h3 className="text-xl font-bold mb-3 text-gray-900">Quand présenter son nouveau partenaire à sa famille ?</h3>
               <p className="text-gray-700 leading-relaxed">Attendez minimum 2-3 mois pour être sûr que la relation a un potentiel durable. Présentez d'abord aux amis proches (plus flexible), puis à la famille (plus officiel) après 4-6 mois si tout va bien. Trop tôt crée une pression sociale et des attentes. Les présentations officielles signalent que vous voyez un avenir ensemble. Le tarot peut confirmer le timing idéal selon l'évolution énergétique de votre couple.</p>
             </div>
           </div>

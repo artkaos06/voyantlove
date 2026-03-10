@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { getArticleSchema, getFAQSchema, getBreadcrumbSchema } from '@/lib/schema';
+import { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getAuthorSchema } from '@/lib/schema';
 import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: 'Votre ex va-t-il/elle revenir ? Le tarot répond à cette question cruciale. Découvrez les signes de retour, le timing probable et ce qu\'il/elle ressent vraiment.',
   keywords: ['va-t-il revenir', 'mon ex va revenir', 'retour ex tarot', 'prédiction retour', 'signes retour ex'],
   alternates: {
-    canonical: 'https://voyantlove.fr/reconquete/va-t-il-elle-revenir',
+    canonical: 'https://voyantlove.fr/reconquete/va-t-il-elle-revenir/',
   },
 };
 
@@ -19,7 +19,7 @@ export default function VaTilRevenirPage() {
   const articleSchema = getArticleSchema({
     title: 'Mon Ex Va-t-il Revenir ? Réponse du Tarot et Voyance | Prédiction',
     description: 'Votre ex va-t-il/elle revenir ? Le tarot répond à cette question cruciale. Découvrez les signes de retour, le timing probable et ce qu\'il/elle ressent vraiment.',
-    url: 'https://voyantlove.fr/reconquete/va-t-il-elle-revenir',
+    url: 'https://voyantlove.fr/reconquete/va-t-il-elle-revenir/',
     datePublished: '2026-01-14',
     dateModified: new Date().toISOString().split('T')[0],
     keywords: ['va-t-il revenir', 'mon ex va revenir', 'retour ex tarot', 'prédiction retour', 'signes retour ex'],
@@ -27,7 +27,7 @@ export default function VaTilRevenirPage() {
 
   const faqSchema = getFAQSchema([
     {
-      question: 'Le tarot peut-il me dire avec certitude si mon ex reviendra ?',
+      question: 'Le tarot peut-il prédire le retour de mon ex ?',
       answer: 'Le tarot indique les probabilités selon les énergies actuelles et les choix de libre arbitre de chacun. Il révèle si un retour est très probable, possible, improbable ou impossible. Un bon voyant vous donnera un pourcentage honnête basé sur les cartes et ne vous promettra jamais un retour à 100% car le futur reste mouvant.',
     },
     {
@@ -46,9 +46,11 @@ export default function VaTilRevenirPage() {
 
   const breadcrumbSchema = getBreadcrumbSchema([
     { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'Reconquête', url: 'https://voyantlove.fr/reconquete' },
-    { name: 'Va-t-il/elle Revenir', url: 'https://voyantlove.fr/reconquete/va-t-il-elle-revenir' },
+    { name: 'Reconquête', url: 'https://voyantlove.fr/reconquete/' },
+    { name: 'Va-t-il/elle Revenir', url: 'https://voyantlove.fr/reconquete/va-t-il-elle-revenir/' },
   ]);
+
+  const authorSchema = getAuthorSchema();
 
   return (
     <main className="min-h-screen bg-gray-50">
@@ -64,9 +66,13 @@ export default function VaTilRevenirPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(authorSchema) }}
+      />
       <header className="bg-gradient-to-r from-purple-600 via-indigo-600 to-blue-600 text-white py-16 px-4">
         <div className="max-w-4xl mx-auto">
-          <Link href="/" className="text-white/80 hover:text-white mb-4 inline-block">← Retour</Link>
+          <Link href="/reconquete" className="text-white/80 hover:text-white mb-4 inline-block">← Retour à la Reconquête</Link>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">❓ Va-t-il/elle Revenir ?</h1>
           <p className="text-xl opacity-95 mb-6">La réponse honnête du tarot à votre question la plus importante</p>
           <div className="flex gap-4 flex-wrap">
@@ -79,9 +85,9 @@ export default function VaTilRevenirPage() {
       <div className="max-w-4xl mx-auto px-4 py-8">
         <div className="bg-white rounded-xl shadow-md p-6 mb-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
           <div><div className="text-3xl mb-1">⭐</div><div className="text-2xl font-bold text-purple-600">4.8/5</div><div className="text-sm text-gray-600">287 avis</div></div>
-          <div><div className="text-3xl mb-1">↩️</div><div className="text-2xl font-bold text-purple-600">42%</div><div className="text-sm text-gray-600">Retours effectifs</div></div>
+          <div><div className="text-3xl mb-1">↩️</div><div className="text-2xl font-bold text-purple-600">Fréquent</div><div className="text-sm text-gray-600">Retours observés</div></div>
           <div><div className="text-3xl mb-1">⏰</div><div className="text-2xl font-bold text-purple-600">3-6 mois</div><div className="text-sm text-gray-600">Délai moyen</div></div>
-          <div><div className="text-3xl mb-1">🔮</div><div className="text-2xl font-bold text-purple-600">87%</div><div className="text-sm text-gray-600">Précision tarot</div></div>
+          <div><div className="text-3xl mb-1">🔮</div><div className="text-2xl font-bold text-purple-600">Reconnue</div><div className="text-sm text-gray-600">Expertise</div></div>
         </div>
 
         <EEATSignal colorScheme="blue" method="Tarot prédictif et astrologie" />
@@ -104,6 +110,7 @@ export default function VaTilRevenirPage() {
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">🔮 Ce que le Tarot Révèle sur le Retour</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Le tarot analyse le retour de votre ex en quatre positions : ses sentiments actuels, ses pensées et regrets, les obstacles au retour, et la probabilité avec le timing prévu.</p>
           <p className="text-gray-700 leading-relaxed mb-6">Le tirage du retour de l'ex analyse 4 positions clés pour vous donner une réponse complète et honnête.</p>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-purple-50 border-l-4 border-purple-500 p-6 rounded">
@@ -130,6 +137,7 @@ export default function VaTilRevenirPage() {
 
         <section className="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-xl p-8 mb-8 border-2 border-indigo-200">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">📅 Timing du Retour selon l'Astrologie</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">L'astrologie identifie quatre fenêtres propices au retour d'un ex : Vénus rétrograde, les éclipses lunaires, les Pleines Lunes en signes d'eau et certains transits planétaires ciblés.</p>
           <p className="text-gray-700 leading-relaxed mb-6">Si le tarot indique un retour possible, l'astrologie affine le timing pour savoir quand cela pourrait se produire.</p>
           <div className="space-y-4">
             <div className="bg-white rounded-lg p-4 border-l-4 border-pink-500">
@@ -155,6 +163,7 @@ export default function VaTilRevenirPage() {
 
         <section id="signes" className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">💡 Les Signes Concrets qu'il/elle Va Revenir</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Les signes qu'un ex va revenir incluent la reprise de contact, les questions indirectes via des amis, les réactions sur les réseaux sociaux, les croisements répétés et le refus de rendre vos affaires.</p>
           <p className="text-gray-700 leading-relaxed mb-6">Observez ces indices dans votre vie quotidienne - ils confirment ce que le tarot a révélé.</p>
           <div className="space-y-3">
             <div className="flex items-start gap-3 p-4 bg-green-50 rounded-lg">
@@ -189,6 +198,7 @@ export default function VaTilRevenirPage() {
 
         <section className="bg-red-50 border-2 border-red-200 rounded-xl p-8 mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">❌ Les Signes qu'il/elle Ne Reviendra PAS</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Les signes d'un non-retour définitif sont : une nouvelle relation officielle, un blocage total sur tous les canaux, un silence absolu prolongé, un discours ferme et la récupération complète de vos affaires.</p>
           <p className="text-gray-700 leading-relaxed mb-6">Il est aussi important de reconnaître les signaux de fin définitive pour ne pas s'accrocher à un faux espoir.</p>
           <div className="space-y-3">
             <div className="flex items-start gap-3">
@@ -223,6 +233,7 @@ export default function VaTilRevenirPage() {
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">🤔 Que Faire en Attendant ?</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">En attendant la réponse du tarot, deux stratégies s'offrent à vous : si le retour est probable, maintenez le silence radio et travaillez sur vous ; si c'est terminé, entamez le deuil et ouvrez-vous à l'avenir.</p>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-green-50 border-2 border-green-300 rounded-lg p-6">
               <h3 className="font-bold text-lg mb-3 text-green-700">✅ Si le Tarot Dit OUI (retour probable)</h3>
@@ -249,9 +260,10 @@ export default function VaTilRevenirPage() {
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-8">❓ Questions Fréquentes</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Voici les réponses aux questions les plus fréquentes sur le retour d'un ex : certitude du tarot, délai d'attente, signes astrologiques et décision d'attendre ou de tourner la page.</p>
           <div className="space-y-6">
             <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Le tarot peut-il me dire avec certitude si mon ex reviendra ?</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Le tarot peut-il prédire le retour de mon ex ?</h3>
               <p className="text-gray-700 leading-relaxed">Le tarot indique les probabilités selon les énergies actuelles et les choix de libre arbitre de chacun. Il révèle si un retour est très probable, possible, improbable ou impossible. Un bon voyant vous donnera un pourcentage honnête basé sur les cartes et ne vous promettra jamais un retour à 100% car le futur reste mouvant.</p>
             </div>
             <div className="border-b border-gray-200 pb-6">
