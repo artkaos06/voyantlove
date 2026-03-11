@@ -8,8 +8,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "validate": "node scripts/validate-semantic-quality.js",
-    "serp-monitor": "npx tsx scripts/serp-monitor.ts"
+    "validate": "node scripts/validate-semantic-quality.js"
   },
   "dependencies": {
     "next": "^15.1.0",
@@ -22,10 +21,8 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "autoprefixer": "^10.4.20",
-    "googleapis": "^171.4.0",
     "postcss": "^8.4.49",
     "tailwindcss": "^3.4.17",
-    "tsx": "^4.21.0",
     "typescript": "^5"
   },
   "engines": {
