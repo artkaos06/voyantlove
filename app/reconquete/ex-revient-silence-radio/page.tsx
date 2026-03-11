@@ -7,16 +7,16 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
 export const metadata: Metadata = {
-  title: 'Ex qui Revient Après Silence Radio : Signes, Raisons et Que Faire',
-  description: 'Votre ex revient après un silence radio ? Découvrez les signes, les vraies raisons de son retour et comment réagir intelligemment pour ne pas répéter les erreurs.',
-  keywords: ['ex revient silence radio', 'silence radio efficace', 'ex qui revient après no contact', 'reconquête amoureuse', 'retour ex'],
+  title: 'Ex qui Recontacte Après un Silence : Signes et Comment Réagir',
+  description: 'Votre ex vous recontacte après un silence ? Découvrez les signes, les vraies raisons de son retour et comment réagir intelligemment pour ne pas répéter les erreurs.',
+  keywords: ['ex recontacte après silence', 'silence radio efficace', 'ex qui revient après no contact', 'reconquête amoureuse', 'retour ex'],
   alternates: { canonical: 'https://voyantlove.fr/reconquete/ex-revient-silence-radio/' },
 };
 
 export default function ExRevientSilenceRadioPage() {
   const articleSchema = getArticleSchema({
-    title: 'Ex qui Revient Après Silence Radio : Signes, Raisons et Que Faire',
-    description: 'Votre ex revient après un silence radio ? Découvrez les signes, les vraies raisons de son retour et comment réagir intelligemment pour ne pas répéter les erreurs.',
+    title: 'Ex qui Recontacte Après un Silence : Signes et Comment Réagir',
+    description: 'Votre ex vous recontacte après un silence ? Découvrez les signes, les vraies raisons de son retour et comment réagir intelligemment pour ne pas répéter les erreurs.',
     url: 'https://voyantlove.fr/reconquete/ex-revient-silence-radio/',
     datePublished: '2026-02-09',
     dateModified: new Date().toISOString().split('T')[0],
@@ -26,7 +26,7 @@ export default function ExRevientSilenceRadioPage() {
   const breadcrumbSchema = getBreadcrumbSchema([
     { name: 'Accueil', url: 'https://voyantlove.fr' },
     { name: 'Reconquête Amoureuse', url: 'https://voyantlove.fr/reconquete/' },
-    { name: 'Ex qui Revient Après Silence Radio', url: 'https://voyantlove.fr/reconquete/ex-revient-silence-radio/' },
+    { name: 'Ex qui Recontacte Après un Silence', url: 'https://voyantlove.fr/reconquete/ex-revient-silence-radio/' },
   ]);
 
   const authorSchema = getAuthorSchema();
@@ -80,7 +80,7 @@ export default function ExRevientSilenceRadioPage() {
       <header className="bg-gradient-to-r from-purple-600 via-pink-500 to-rose-500 text-white py-16 px-4">
         <div className="max-w-4xl mx-auto">
           <Link href="/reconquete" className="text-white/80 hover:text-white mb-4 inline-block">← Retour à la Reconquête</Link>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Ex qui Revient Après Silence Radio</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">Ex qui Recontacte Après un Silence</h1>
           <p className="text-xl opacity-95 mb-6">Comprendre les signes, les raisons et comment réagir intelligemment</p>
           <div className="flex gap-4 flex-wrap">
             <a href="#signes" className="bg-white text-purple-600 px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition">Reconnaître les Signes</a>

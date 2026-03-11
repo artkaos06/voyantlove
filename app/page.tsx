@@ -8,7 +8,7 @@ import TrustBadges from '@/components/TrustBadges';
 
 export const metadata: Metadata = {
   title: {
-    absolute: 'VoyantLove — Voyance Amoureuse Spécialisée | Tarot de l\'Amour',
+    absolute: 'VoyantLove — Voyant Amour & Voyance Amoureuse Spécialisée',
   },
   description: 'Voyance amoureuse spécialisée : reconquérir son ex, rencontrer l\'amour, décrypter les sentiments, surmonter une rupture. Tarot, clairvoyance et guidance personnalisée.',
   alternates: { canonical: 'https://voyantlove.fr/' },
