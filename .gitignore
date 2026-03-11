@@ -19,6 +19,9 @@ yarn-error.log*
 .env*.local
 .env
 
+# reports (generated, not committed)
+/reports/
+
 # vercel
 .vercel
 
