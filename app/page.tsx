@@ -5,6 +5,7 @@ import EEATSignal from '@/components/EEATSignal';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
 import TestimonialSection from '@/components/TestimonialSection';
 import TrustBadges from '@/components/TrustBadges';
+import DynamicCTAButton from '@/components/DynamicCTAButton';
 
 export const metadata: Metadata = {
   title: {
@@ -76,14 +77,11 @@ export default function HomePage() {
             Guidance et Tarot pour toutes vos questions sentimentales : reconquête, rencontre, compatibilité, avenir amoureux
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
-            <a
-              href="https://www.monsitevoyance.com/zoom_voyant.php?id=8864&partner=383&ref=homepage-hero-primary"
-              target="_blank"
-              rel="noopener noreferrer sponsored"
+            <DynamicCTAButton
+              label="🔮 Consultation Voyance"
+              source="homepage-hero-primary"
               className="bg-white text-brand-purple px-8 py-4 rounded-lg font-semibold hover:shadow-lg transition"
-            >
-              🔮 Consultation Voyance
-            </a>
+            />
             <Link
               href="#situations"
               className="bg-transparent border-2 border-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-brand-purple transition"
@@ -338,6 +336,20 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Featured Voyants Section */}
+      <section className="py-16 px-4 bg-gray-50">
+        <div className="max-w-6xl mx-auto">
+          <VoyantRecommendations
+            topic="sentiments"
+            title="🔮 Nos Voyants Experts en Amour"
+            subtitle="Voyants spécialisés en guidance amoureuse avec des milliers de consultations réussies. Disponibles maintenant pour vous accompagner."
+            limit={3}
+            showOnlineFirst={true}
+            source="homepage-featured"
+          />
+        </div>
+      </section>
+
       {/* Trust Badges Section */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
@@ -353,20 +365,6 @@ export default function HomePage() {
           limit={6}
           showVoyantName={true}
         />
-      </section>
-
-      {/* Featured Voyants Section */}
-      <section className="py-16 px-4 bg-gray-50">
-        <div className="max-w-6xl mx-auto">
-          <VoyantRecommendations
-            topic="sentiments"
-            title="🔮 Nos Voyants Experts en Amour"
-            subtitle="Voyants spécialisés en guidance amoureuse avec des milliers de consultations réussies. Disponibles maintenant pour vous accompagner."
-            limit={3}
-            showOnlineFirst={true}
-            source="homepage-featured"
-          />
-        </div>
       </section>
 
       {/* FAQ Section */}
@@ -412,22 +410,18 @@ export default function HomePage() {
             Consultez un voyant spécialisé en amour pour une analyse 100% adaptée à votre situation unique
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
-            <a
-              href="https://www.monsitevoyance.com/zoom_voyant.php?id=8864&partner=383&ref=homepage-cta-primary"
-              target="_blank"
-              rel="noopener noreferrer sponsored"
+            <DynamicCTAButton
+              label="Consulter un Voyant Maintenant"
+              source="homepage-cta-primary"
               className="bg-white text-brand-purple px-8 py-4 rounded-lg font-semibold hover:shadow-lg transition"
-            >
-              Consulter un Voyant Maintenant
-            </a>
-            <a
-              href="https://www.monsitevoyance.com/zoom_voyant.php?id=8062&partner=383&ref=homepage-cta-secondary"
-              target="_blank"
-              rel="noopener noreferrer sponsored"
+              voyantIndex={0}
+            />
+            <DynamicCTAButton
+              label="Tirage Tarot Personnalisé"
+              source="homepage-cta-secondary"
               className="bg-transparent border-2 border-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-brand-purple transition"
-            >
-              Tirage Tarot Personnalisé
-            </a>
+              voyantIndex={1}
+            />
           </div>
           <div className="mt-6">
             <TrustBadges variant="compact" />
