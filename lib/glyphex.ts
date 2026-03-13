@@ -3,10 +3,10 @@
  * Custom event tracking for affiliate clicks and conversions
  */
 
-// Extend window type to include glyphex
+// Extend window type to include Glyphex analytics
 declare global {
   interface Window {
-    glyphex?: {
+    analytics?: {
       track: (eventName: string, properties?: Record<string, any>) => void;
     };
   }
@@ -23,8 +23,8 @@ export function trackAffiliateClick(
   source: string,
   voyantName?: string
 ) {
-  if (typeof window !== 'undefined' && window.glyphex) {
-    window.glyphex.track('affiliate_click', {
+  if (typeof window !== 'undefined' && window.analytics) {
+    window.analytics.track('affiliate_click', {
       voyant_id: voyantId,
       source: source,
       voyant_name: voyantName || 'unknown',
@@ -49,8 +49,8 @@ export function trackAffiliateClick(
  * Use this for custom page view tracking if needed
  */
 export function trackPageView(pageName: string, properties?: Record<string, any>) {
-  if (typeof window !== 'undefined' && window.glyphex) {
-    window.glyphex.track('page_view', {
+  if (typeof window !== 'undefined' && window.analytics) {
+    window.analytics.track('page_view', {
       page_name: pageName,
       page_url: window.location.href,
       page_path: window.location.pathname,
@@ -65,8 +65,8 @@ export function trackPageView(pageName: string, properties?: Record<string, any>
  * @param properties - Event properties
  */
 export function trackEvent(eventName: string, properties?: Record<string, any>) {
-  if (typeof window !== 'undefined' && window.glyphex) {
-    window.glyphex.track(eventName, {
+  if (typeof window !== 'undefined' && window.analytics) {
+    window.analytics.track(eventName, {
       page_url: window.location.href,
       page_path: window.location.pathname,
       ...properties,
