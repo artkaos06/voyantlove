@@ -105,6 +105,13 @@ export default function MethodesVoyanceHubPage() {
               <p className="text-gray-600 mb-4">Réponses oui/non instantanées à vos questions sentimentales par le pendule.</p>
               <span className="text-rose-600 font-semibold">Découvrir →</span>
             </Link>
+
+            <Link href="/methodes-voyance/voyance-sentimentale" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-pink-500">
+              <div className="text-4xl mb-4">💜</div>
+              <h3 className="text-2xl font-bold mb-3">Voyance Sentimentale</h3>
+              <p className="text-gray-600 mb-4">Guidance amoureuse complète : sentiments, compatibilité, reconquête et avenir du cœur.</p>
+              <span className="text-pink-600 font-semibold">Découvrir →</span>
+            </Link>
           </div>
         </section>
 

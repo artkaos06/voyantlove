@@ -7,20 +7,20 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
 export const metadata: Metadata = {
-  title: 'Problèmes de Communication dans le Couple : Solutions et Dialogue | Voyance',
-  description: 'Découvrez comment résoudre les problèmes de communication dans le couple. Techniques de dialogue, incompréhensions, et guidance pour reconstruire la communication.',
-  keywords: ['problèmes communication couple', 'dialogue couple', 'communication relation', 'incompréhension couple', 'améliorer communication'],
+  title: 'Problème de Communication Couple : Solutions pour un Dialogue Difficile',
+  description: 'Résolvez les problèmes de communication dans le couple : dialogue difficile, silence, disputes répétitives. Techniques concrètes et guidance voyance pour reconstruire la connexion.',
+  keywords: ['problème de communication couple', 'communication couple difficile', 'problème de communication dans le couple', 'dialogue couple', 'incompréhension couple', 'améliorer communication couple'],
   alternates: { canonical: 'https://voyantlove.fr/crise-couple/problemes-communication-couple/' },
 };
 
 export default function ProblemesCommunicationCouplePage() {
   const articleSchema = getArticleSchema({
-    title: 'Problèmes de Communication dans le Couple : Solutions et Dialogue | Voyance',
-    description: 'Découvrez comment résoudre les problèmes de communication dans le couple. Techniques de dialogue, incompréhensions, et guidance pour reconstruire la communication.',
+    title: 'Problème de Communication Couple : Solutions pour un Dialogue Difficile',
+    description: 'Résolvez les problèmes de communication dans le couple : dialogue difficile, silence, disputes répétitives. Techniques concrètes et guidance voyance pour reconstruire la connexion.',
     url: 'https://voyantlove.fr/crise-couple/problemes-communication-couple/',
     datePublished: '2026-02-09',
     dateModified: new Date().toISOString().split('T')[0],
-    keywords: ['problèmes communication couple', 'dialogue couple', 'communication relation', 'incompréhension couple', 'améliorer communication'],
+    keywords: ['problème de communication couple', 'communication couple difficile', 'problème de communication dans le couple', 'dialogue couple', 'incompréhension couple'],
   });
 
   const breadcrumbSchema = getBreadcrumbSchema([
@@ -80,8 +80,8 @@ export default function ProblemesCommunicationCouplePage() {
       <header className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-white py-16 px-4">
         <div className="max-w-4xl mx-auto">
           <Link href="/crise-couple" className="text-white/80 hover:text-white mb-4 inline-block">← Retour aux Crises de Couple</Link>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">💬 Problèmes de Communication dans le Couple</h1>
-          <p className="text-xl opacity-95 mb-6">Solutions pour reconstruire le dialogue et retrouver la compréhension mutuelle</p>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">Problème de Communication Couple : Solutions Concrètes</h1>
+          <p className="text-xl opacity-95 mb-6">Communication couple difficile ? Techniques pour reconstruire le dialogue et retrouver la compr&eacute;hension mutuelle</p>
           <div className="flex gap-4 flex-wrap">
             <a href="#solutions" className="bg-white text-purple-600 px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition">Solutions Concrètes</a>
             <a href="#tirage" className="border-2 border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-purple-600 transition">Tirage Communication</a>

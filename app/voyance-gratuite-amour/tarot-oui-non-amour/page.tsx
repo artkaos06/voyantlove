@@ -7,9 +7,9 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
 export const metadata: Metadata = {
-  title: 'Tarot Oui Non Amour : Réponses à Vos Questions Sentimentales',
-  description: 'Tarot oui non amour gratuit : obtenez des réponses claires à vos questions sentimentales. Guide d\'interprétation des cartes.',
-  keywords: ['tarot oui non amour', 'tarot oui non gratuit amour', 'voyance oui non amour'],
+  title: 'Tarot Oui Non Amour : Ni Oui Ni Non, Réponses Sentimentales',
+  description: 'Tarot oui non amour gratuit : obtenez des réponses claires (oui, non ou ni oui ni non) à vos questions sentimentales. Guide d\'interprétation des arcanes majeurs.',
+  keywords: ['tarot oui non amour', 'tarot ni oui ni non', 'tarot oui non gratuit amour', 'voyance oui non amour', 'tarot amour oui non'],
   alternates: {
     canonical: 'https://voyantlove.fr/voyance-gratuite-amour/tarot-oui-non-amour/',
   },
@@ -17,12 +17,12 @@ export const metadata: Metadata = {
 
 export default function TarotOuiNonAmourPage() {
   const articleSchema = getArticleSchema({
-    title: 'Tarot Oui Non Amour : Réponses à Vos Questions Sentimentales',
-    description: 'Tarot oui non amour gratuit : obtenez des réponses claires à vos questions sentimentales. Guide d\'interprétation des cartes.',
+    title: 'Tarot Oui Non Amour : Ni Oui Ni Non, Réponses Sentimentales',
+    description: 'Tarot oui non amour gratuit : obtenez des réponses claires (oui, non ou ni oui ni non) à vos questions sentimentales. Guide d\'interprétation des arcanes majeurs.',
     url: 'https://voyantlove.fr/voyance-gratuite-amour/tarot-oui-non-amour/',
     datePublished: '2026-03-10',
     dateModified: new Date().toISOString().split('T')[0],
-    keywords: ['tarot oui non amour', 'tarot oui non gratuit amour', 'voyance oui non amour'],
+    keywords: ['tarot oui non amour', 'tarot ni oui ni non', 'tarot oui non gratuit amour', 'voyance oui non amour', 'tarot amour oui non'],
   });
 
   const authorSchema = getAuthorSchema();
@@ -50,6 +50,10 @@ export default function TarotOuiNonAmourPage() {
       question: 'Quand passer du tirage oui/non à un tirage complet ?',
       answer: 'Passez à un tirage complet lorsque le tarot oui non amour ne suffit plus à apaiser vos questionnements sentimentaux. Si vous posez la même question plusieurs fois, si la réponse vous frustre ou si votre situation amoureuse implique plusieurs personnes ou décisions, un tirage en croix ou un tirage sentimental à sept cartes apportera les nuances nécessaires. Un voyant spécialisé évalue le meilleur tirage selon la complexité de votre question.',
     },
+    {
+      question: 'Que signifie une réponse ni oui ni non au tarot amour ?',
+      answer: 'Une réponse ni oui ni non au tarot amour signifie que la situation sentimentale est en transition ou que plusieurs énergies contradictoires coexistent. Les cartes conditionnelles comme la Lune, le Jugement ou la Roue de Fortune indiquent que la réponse dépend de vos actions futures ou d\'un facteur extérieur encore en mouvement. Le tarot ni oui ni non n\'est pas un échec du tirage : c\'est un message nuancé qui vous invite à la patience ou à reformuler votre question. Un voyant spécialisé peut décrypter ces nuances et transformer cette réponse ambiguë en guidance concrète pour votre avenir amoureux.',
+    },
   ]);
 
   return (
@@ -75,8 +79,8 @@ export default function TarotOuiNonAmourPage() {
       <header className="bg-gradient-to-r from-emerald-500 via-green-500 to-teal-500 text-white py-16 px-4">
         <div className="max-w-4xl mx-auto">
           <Link href="/voyance-gratuite-amour" className="text-white/80 hover:text-white mb-4 inline-block">&larr; Retour &agrave; Voyance Gratuite Amour</Link>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">&#x2753; Tarot Oui Non Amour</h1>
-          <p className="text-xl opacity-95 mb-6">R&eacute;ponses claires &agrave; vos questions sentimentales par le tirage oui/non</p>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">&#x2753; Tarot Oui Non Amour : Ni Oui Ni Non</h1>
+          <p className="text-xl opacity-95 mb-6">R&eacute;ponses claires &agrave; vos questions sentimentales : oui, non ou ni oui ni non</p>
           <div className="flex gap-4 flex-wrap">
             <a href="#consultation" className="bg-white text-emerald-600 px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition">Consulter un Voyant</a>
             <a href="#questions" className="border-2 border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-emerald-600 transition">Les 10 Questions</a>
@@ -341,9 +345,13 @@ export default function TarotOuiNonAmourPage() {
               <p className="text-gray-700 leading-relaxed">Une r&eacute;ponse ambigu&euml; du <strong>tarot oui non</strong> signale souvent que votre question est trop large ou que la <strong>situation sentimentale</strong> est en transition. Reformulez en pr&eacute;cisant le contexte temporel ou &eacute;motionnel. Transformez &laquo;&nbsp;va-t-il revenir&nbsp;?&nbsp;&raquo; en &laquo;&nbsp;les &eacute;nergies sont-elles favorables &agrave; un rapprochement dans les prochaines semaines&nbsp;?&nbsp;&raquo;. Si l&apos;ambigu&iuml;t&eacute; persiste, le <strong>voyant</strong> recommande un <strong>tirage en croix</strong> plus complet pour explorer les nuances que le oui/non ne peut capter.</p>
             </div>
 
-            <div>
+            <div className="border-b border-gray-200 pb-6">
               <h3 className="text-xl font-bold text-gray-900 mb-3">Quand passer du tirage oui/non &agrave; un tirage complet ?</h3>
               <p className="text-gray-700 leading-relaxed">Passez &agrave; un <strong>tirage complet</strong> lorsque le <strong>tarot oui non amour</strong> ne suffit plus &agrave; apaiser vos questionnements <strong>sentimentaux</strong>. Si vous posez la m&ecirc;me question plusieurs fois, si la r&eacute;ponse vous frustre ou si votre <strong>situation amoureuse</strong> implique plusieurs personnes ou d&eacute;cisions, un <strong>tirage en croix</strong> ou un tirage sentimental &agrave; sept cartes apportera les nuances n&eacute;cessaires. Un <strong>voyant sp&eacute;cialis&eacute;</strong> &eacute;value le meilleur tirage selon la complexit&eacute; de votre question.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Que signifie une r&eacute;ponse ni oui ni non au tarot amour ?</h3>
+              <p className="text-gray-700 leading-relaxed">Une r&eacute;ponse <strong>ni oui ni non</strong> au <strong>tarot amour</strong> signifie que la <strong>situation sentimentale</strong> est en transition ou que plusieurs &eacute;nergies contradictoires coexistent. Les cartes conditionnelles comme la Lune, le Jugement ou la Roue de Fortune indiquent que la r&eacute;ponse d&eacute;pend de vos actions futures ou d&apos;un facteur ext&eacute;rieur encore en mouvement. Le <strong>tarot ni oui ni non</strong> n&apos;est pas un &eacute;chec du <strong>tirage</strong> : c&apos;est un message nuanc&eacute; qui vous invite &agrave; la patience ou &agrave; reformuler votre question. Un <strong>voyant sp&eacute;cialis&eacute;</strong> peut d&eacute;crypter ces nuances et transformer cette r&eacute;ponse ambigu&euml; en <strong>guidance</strong> concr&egrave;te pour votre <strong>avenir amoureux</strong>.</p>
             </div>
           </div>
         </section>
