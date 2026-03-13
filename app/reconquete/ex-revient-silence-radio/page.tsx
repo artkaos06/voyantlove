@@ -513,7 +513,7 @@ export default function ExRevientSilenceRadioPage() {
 
           <div className="space-y-5">
             <div className="bg-blue-50 rounded-lg p-5 border-l-4 border-blue-500">
-              <h3 className="font-bold text-lg mb-2 text-blue-700">Il me recontacte après 1 semaine de silence</h3>
+              <h3 className="font-bold text-lg mb-2 text-blue-700">Que signifie un retour après 1 semaine de silence ?</h3>
               <p className="text-gray-700 mb-2">
                 Un retour aussi rapide traduit un <strong>manque immédiat</strong> plutôt qu'une vraie remise en question. Votre ex n'a pas encore eu le temps de réfléchir à ses erreurs. Il agit sous le coup de l'émotion et du vide soudain. Ce type de retour est souvent temporaire : la panique de la séparation provoque un <strong>sursaut émotionnel</strong>, mais les problèmes de fond restent intacts.
               </p>
@@ -521,7 +521,7 @@ export default function ExRevientSilenceRadioPage() {
             </div>
 
             <div className="bg-indigo-50 rounded-lg p-5 border-l-4 border-indigo-500">
-              <h3 className="font-bold text-lg mb-2 text-indigo-700">Il me recontacte après 2 semaines de silence</h3>
+              <h3 className="font-bold text-lg mb-2 text-indigo-700">Il me recontacte après 2 semaines de silence : bon signe ?</h3>
               <p className="text-gray-700 mb-2">
                 Deux semaines est le délai où le <strong>manque quotidien</strong> devient difficile à gérer. Votre ex a probablement essayé de s'occuper, de sortir, de penser à autre chose, mais les habitudes partagées reviennent en boucle. Le retour après 2 semaines est le plus fréquent chez les ex qui n'avaient pas de raison profonde de rompre (dispute impulsive, pression extérieure). La sincérité du retour dépend de qui a initié la <strong>rupture</strong>.
               </p>
@@ -529,7 +529,7 @@ export default function ExRevientSilenceRadioPage() {
             </div>
 
             <div className="bg-purple-50 rounded-lg p-5 border-l-4 border-purple-500">
-              <h3 className="font-bold text-lg mb-2 text-purple-700">Ex qui revient après 1 mois de silence radio</h3>
+              <h3 className="font-bold text-lg mb-2 text-purple-700">Pourquoi un ex revient-il après 1 mois de silence radio ?</h3>
               <p className="text-gray-700 mb-2">
                 Un mois est le premier seuil significatif. Votre ex a traversé les phases de soulagement initial, puis de doute, puis de <strong>manque profond</strong>. Un retour à ce stade montre une réflexion plus aboutie. Souvent, votre ex a comparé sa vie sans vous à sa vie avec vous et réalise ce qu'il/elle a perdu. La <strong>reconquête amoureuse</strong> après 30 jours de silence a les meilleures chances de succès si votre ex reconnaît ses erreurs.
               </p>
@@ -537,7 +537,7 @@ export default function ExRevientSilenceRadioPage() {
             </div>
 
             <div className="bg-pink-50 rounded-lg p-5 border-l-4 border-pink-500">
-              <h3 className="font-bold text-lg mb-2 text-pink-700">Retour de l'ex après 2 à 3 mois de silence</h3>
+              <h3 className="font-bold text-lg mb-2 text-pink-700">Que signifie un retour après 2 à 3 mois de silence ?</h3>
               <p className="text-gray-700 mb-2">
                 C'est le <strong>délai moyen de retour</strong> des ex qui reviennent sérieusement. Après 2-3 mois, votre ex a eu le temps de vivre sans vous, parfois de tester une relation rebond qui n'a pas fonctionné, et de <strong>prendre du recul</strong> sur votre histoire. Ce retour est souvent le plus mûr et le plus prometteur. Votre ex a traversé le deuil de la relation et revient par choix conscient, pas par panique.
               </p>
@@ -545,7 +545,7 @@ export default function ExRevientSilenceRadioPage() {
             </div>
 
             <div className="bg-rose-50 rounded-lg p-5 border-l-4 border-rose-500">
-              <h3 className="font-bold text-lg mb-2 text-rose-700">Ex qui revient après 6 mois ou plus</h3>
+              <h3 className="font-bold text-lg mb-2 text-rose-700">Un ex peut-il revenir après 6 mois ou plus de silence ?</h3>
               <p className="text-gray-700 mb-2">
                 Un retour après 6 mois ou plus est rare mais existe. Il survient souvent lors d'un événement déclencheur : votre anniversaire, une date symbolique, la fin d'une autre relation, ou un moment de vulnérabilité. À ce stade, votre ex a eu le temps de véritablement changer. Mais vous aussi avez évolué. La question n'est plus « va-t-il revenir » mais « ai-je encore envie de cette relation ». Consultez notre guide sur le <Link href="/reconquete/retour-de-lex" className="text-purple-600 hover:text-purple-800 underline font-medium">retour de l'ex</Link> pour évaluer si cette réconciliation tardive est viable.
               </p>

@@ -119,7 +119,7 @@ export default function VoyanceSentimentalePage() {
 
         {/* Section 1: Les domaines de la voyance sentimentale */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">Les Domaines de la Voyance Sentimentale</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Quels sont les domaines de la voyance sentimentale ?</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">La voyance sentimentale couvre six grands domaines : les sentiments et &eacute;motions, la reconqu&ecirc;te amoureuse, la rupture et le deuil amoureux, la nouvelle rencontre, la crise de couple et la compatibilit&eacute; amoureuse.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Chaque <strong>consultation de voyance sentimentale</strong> s&apos;adapte &agrave; votre probl&eacute;matique sp&eacute;cifique. Le <strong>voyant amour</strong> identifie le domaine concern&eacute; et choisit les outils divinatoires les plus pertinents pour y r&eacute;pondre avec pr&eacute;cision.
@@ -172,10 +172,10 @@ export default function VoyanceSentimentalePage() {
 
         {/* Section 2: Les méthodes */}
         <section id="methodes" className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-8 mb-8 border-2 border-purple-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">Les M&eacute;thodes Utilis&eacute;es en Voyance Sentimentale</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Quelles m&eacute;thodes sont utilis&eacute;es en voyance sentimentale ?</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">La voyance sentimentale s&apos;appuie sur quatre m&eacute;thodes principales : le tarot amoureux, la clairvoyance pure, l&apos;astrologie amoureuse et l&apos;oracle de l&apos;amour. Chaque support apporte un &eacute;clairage compl&eacute;mentaire.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Un <strong>voyant sentimentaliste</strong> exp&eacute;riment&eacute; ma&icirc;trise plusieurs <strong>m&eacute;thodes de voyance</strong> et choisit la plus adapt&eacute;e &agrave; votre question. Certaines situations n&eacute;cessitent la pr&eacute;cision du <strong>tarot</strong>, d&apos;autres l&apos;immm&eacute;diatet&eacute; de la <strong>clairvoyance</strong>. La combinaison de plusieurs supports offre la <strong>guidance sentimentale</strong> la plus compl&egrave;te.
+            Un <strong>voyant sentimentaliste</strong> exp&eacute;riment&eacute; ma&icirc;trise plusieurs <strong>m&eacute;thodes de voyance</strong> et choisit la plus adapt&eacute;e &agrave; votre question. Certaines situations n&eacute;cessitent la pr&eacute;cision du <strong>tarot</strong>, d&apos;autres l&apos;imm&eacute;diatet&eacute; de la <strong>clairvoyance</strong>. La combinaison de plusieurs supports offre la <strong>guidance sentimentale</strong> la plus compl&egrave;te.
           </p>
 
           <div className="space-y-5">
@@ -217,7 +217,7 @@ export default function VoyanceSentimentalePage() {
 
         {/* Section 3: Comment se déroule une consultation */}
         <section id="consultation" className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">Comment Se D&eacute;roule une Consultation de Voyance Sentimentale ?</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Comment se d&eacute;roule une consultation de voyance sentimentale ?</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Une consultation de voyance sentimentale suit quatre &eacute;tapes : l&apos;&eacute;coute de votre situation, le choix de la m&eacute;thode, la lecture et l&apos;interpr&eacute;tation, puis la guidance personnalis&eacute;e avec des conseils concrets.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Comprendre le d&eacute;roulement d&apos;une <strong>consultation sentimentale</strong> vous permet de vous y pr&eacute;parer et d&apos;en tirer le maximum de b&eacute;n&eacute;fices. Voici les quatre phases d&apos;une s&eacute;ance avec un <strong>voyant sp&eacute;cialis&eacute; amour</strong>.
@@ -256,7 +256,7 @@ export default function VoyanceSentimentalePage() {
 
         {/* Section 4: Voyance sentimentale gratuite */}
         <section className="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-xl p-8 mb-8 border-2 border-indigo-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">Voyance Sentimentale Gratuite : Premiers Pas</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">La voyance sentimentale gratuite est-elle fiable ?</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">La voyance sentimentale gratuite offre un premier &eacute;clairage accessible &agrave; tous : tirages de tarot en ligne, consultations d&eacute;couverte et oracles gratuits permettent de tester la guidance amoureuse avant d&apos;approfondir.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Vous n&apos;&ecirc;tes pas oblig&eacute; de vous engager d&egrave;s la premi&egrave;re <strong>consultation</strong>. La <strong>voyance sentimentale gratuite</strong> vous permet de d&eacute;couvrir cette approche et d&apos;obtenir un premier &eacute;clairage sur votre <strong>situation amoureuse</strong>. Voici les options gratuites disponibles.
@@ -288,7 +288,7 @@ export default function VoyanceSentimentalePage() {
 
         {/* Section 5: Quand consulter */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">Quand Consulter un Voyant Sentimentaliste ?</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Quand faut-il consulter un voyant sentimentaliste ?</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Consultez un voyant sp&eacute;cialis&eacute; en voyance sentimentale lorsque le doute, la souffrance ou l&apos;ind&eacute;cision affectent votre &eacute;quilibre &eacute;motionnel et que vous avez besoin de clart&eacute; pour avancer.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             La <strong>voyance sentimentale</strong> n&apos;est pas r&eacute;serv&eacute;e aux moments de crise. Elle accompagne chaque &eacute;tape de votre vie affective, du questionnement l&eacute;ger &agrave; la souffrance profonde. Voici les situations o&ugrave; une <strong>consultation sentimentale</strong> apporte le plus de valeur.

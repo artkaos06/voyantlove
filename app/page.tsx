@@ -257,15 +257,12 @@ export default function HomePage() {
           <h2 className="text-4xl font-bold text-center mb-8">
             Qu'est-ce qu'un Voyant Amour ?
           </h2>
+          <p className="text-lg font-semibold text-gray-800 mb-6 text-center max-w-3xl mx-auto">
+            Un <strong>voyant amour</strong> est un praticien de la <strong>voyance sentimentale</strong> qui décrypte, interprète et éclaire les dynamiques invisibles de votre vie amoureuse grâce au tarot, à la clairvoyance et à l'astrologie.
+          </p>
           <div className="bg-purple-50 border-l-4 border-purple-500 p-6 rounded-lg mb-8">
-            <p className="text-lg leading-relaxed mb-4">
-              Un <strong>voyant amour</strong> est un praticien de la <strong>voyance amoureuse</strong> spécialisé dans les questions sentimentales et relationnelles. Contrairement à un voyant généraliste, le <strong>voyant spécialisé amour</strong> consacre sa pratique exclusivement aux problématiques du cœur : <strong>sentiments</strong>, <strong>compatibilité</strong>, <strong>reconquête</strong>, <strong>rupture</strong>, <strong>rencontre amoureuse</strong> et <strong>avenir sentimental</strong>. Sa maîtrise des <strong>tirages sentimentaux</strong> et sa sensibilité aux <strong>énergies émotionnelles</strong> lui permettent de capter avec précision les dynamiques invisibles de votre relation.
-            </p>
-            <p className="text-lg leading-relaxed mb-4">
-              La <strong>voyance sentimentale</strong> — également appelée <strong>voyance amoureuse</strong> ou <strong>voyance du cœur</strong> — utilise plusieurs supports divinatoires pour éclairer votre situation : le <strong>tarot amoureux</strong> avec ses 78 arcanes, l'<strong>oracle de l'amour</strong>, l'<strong>astrologie amoureuse</strong> par l'étude des synastries, ou encore la <strong>clairvoyance pure</strong> par ressenti énergétique. Chaque <strong>voyante amour</strong> développe une affinité particulière avec un ou plusieurs de ces outils selon son don et son expérience.
-            </p>
             <p className="text-lg leading-relaxed">
-              Consulter un <strong>voyant amour</strong> permet d'obtenir des réponses concrètes aux questions qui vous tourmentent : <Link href="/sentiments/maime-t-il-elle" className="text-purple-600 hover:text-purple-800 underline font-medium">m'aime-t-il vraiment</Link>, <Link href="/reconquete/va-t-il-elle-revenir" className="text-purple-600 hover:text-purple-800 underline font-medium">va-t-il revenir</Link>, <Link href="/nouvelle-rencontre/quand-rencontre-amour" className="text-purple-600 hover:text-purple-800 underline font-medium">quand vais-je rencontrer l'amour</Link>, ou encore comment <Link href="/crise-couple/sauver-son-couple" className="text-purple-600 hover:text-purple-800 underline font-medium">sauver mon couple</Link>. Une <strong>consultation voyance amour</strong> de qualité vous apporte clarté, apaisement et direction pour prendre les meilleures décisions dans votre vie sentimentale.
+              Contrairement à un voyant généraliste, le <strong>voyant spécialisé amour</strong> — ou <strong>voyante amour</strong> — consacre sa pratique exclusivement aux problématiques du cœur : sentiments, compatibilité, reconquête, rupture et rencontre. Il guide, accompagne et analyse votre situation pour vous aider à <Link href="/sentiments/maime-t-il-elle" className="text-purple-600 hover:text-purple-800 underline font-medium">décrypter les sentiments de l'autre</Link> ou à <Link href="/reconquete/va-t-il-elle-revenir" className="text-purple-600 hover:text-purple-800 underline font-medium">anticiper un retour</Link>. Chaque <strong>consultation voyance amour</strong> apporte clarté, apaisement et direction concrète.
             </p>
           </div>
 
