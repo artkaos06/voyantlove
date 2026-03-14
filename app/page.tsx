@@ -262,7 +262,7 @@ export default function HomePage() {
           </p>
           <div className="bg-purple-50 border-l-4 border-purple-500 p-6 rounded-lg mb-8">
             <p className="text-lg leading-relaxed">
-              Contrairement à un voyant généraliste, le <strong>voyant spécialisé amour</strong> — ou <strong>voyante amour</strong> — consacre sa pratique exclusivement aux problématiques du cœur : sentiments, compatibilité, reconquête, rupture et rencontre. Il guide, accompagne et analyse votre situation pour vous aider à <Link href="/sentiments/maime-t-il-elle" className="text-purple-600 hover:text-purple-800 underline font-medium">décrypter les sentiments de l'autre</Link> ou à <Link href="/reconquete/va-t-il-elle-revenir" className="text-purple-600 hover:text-purple-800 underline font-medium">anticiper un retour</Link>. Chaque <strong>consultation voyance amour</strong> apporte clarté, apaisement et direction concrète.
+              Là où un <strong>voyant généraliste</strong> survole les questions de cœur parmi cent autres sujets, le <strong>voyant spécialisé amour</strong> — ou <strong>voyante amour</strong> — consacre sa pratique exclusivement aux dynamiques sentimentales. Il <strong>accompagne</strong> ceux qui souffrent, <strong>guide</strong> ceux qui doutent et <strong>éclaire</strong> ceux qui espèrent. Son rôle : <Link href="/sentiments/maime-t-il-elle" className="text-purple-600 hover:text-purple-800 underline font-medium">interpréter les sentiments de l'autre</Link> et <Link href="/reconquete/va-t-il-elle-revenir" className="text-purple-600 hover:text-purple-800 underline font-medium">décrypter les signes d'un retour</Link>. Chaque <strong>consultation voyance amour</strong> apporte clarté, apaisement et direction concrète.
             </p>
           </div>
 
@@ -270,17 +270,17 @@ export default function HomePage() {
             <div className="bg-gray-50 rounded-xl p-6 text-center">
               <div className="text-3xl mb-3">🔮</div>
               <h3 className="font-bold text-lg mb-2">Voyance Sentimentale</h3>
-              <p className="text-gray-600 text-sm">Le <strong>voyant amour</strong> analyse les énergies de votre relation par <strong>tarot</strong>, <strong>clairvoyance</strong> ou <strong>astrologie</strong> pour révéler les sentiments cachés.</p>
+              <p className="text-gray-600 text-sm">Le <strong>voyant amour</strong> <strong>décrypte</strong> les énergies de votre relation par <strong>tarot</strong>, <strong>clairvoyance</strong> ou <strong>astrologie</strong> pour <strong>interpréter</strong> les sentiments cachés.</p>
             </div>
             <div className="bg-gray-50 rounded-xl p-6 text-center">
               <div className="text-3xl mb-3">💜</div>
               <h3 className="font-bold text-lg mb-2">Guidance Personnalisée</h3>
-              <p className="text-gray-600 text-sm">Chaque <strong>consultation voyance amour</strong> est unique : le voyant adapte sa lecture à votre situation sentimentale spécifique et vos questions.</p>
+              <p className="text-gray-600 text-sm">Chaque <strong>consultation voyance amour</strong> est unique : le voyant <strong>accompagne</strong> et <strong>guide</strong> votre réflexion en adaptant sa lecture à votre situation sentimentale.</p>
             </div>
             <div className="bg-gray-50 rounded-xl p-6 text-center">
               <div className="text-3xl mb-3">⭐</div>
               <h3 className="font-bold text-lg mb-2">Expertise Reconnue</h3>
-              <p className="text-gray-600 text-sm">Nos <strong>voyants spécialisés amour</strong> comptent des années d'expérience en <strong>voyance amoureuse</strong> avec des milliers de consultations réussies.</p>
+              <p className="text-gray-600 text-sm">Nos <strong>voyants spécialisés amour</strong> <strong>éclairent</strong> des milliers de consultants chaque année grâce à leur expertise en <strong>voyance amoureuse</strong>.</p>
             </div>
           </div>
         </div>
@@ -325,7 +325,7 @@ export default function HomePage() {
               <div>
                 <h3 className="text-xl font-bold mb-2">Consultez un voyant si besoin</h3>
                 <p className="text-gray-600">
-                  Pour une guidance 100% personnalisée, réservez une consultation privée avec nos voyants spécialisés en amour.
+                  Pour une guidance 100% personnalisée, un voyant spécialisé amour vous accompagne, interprète votre situation et vous éclaire sur les choix à venir.
                 </p>
               </div>
             </div>
