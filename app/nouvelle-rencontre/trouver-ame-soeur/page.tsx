@@ -107,7 +107,7 @@ export default function TrouverAmeSoeurPage() {
             Trouver son <strong>âme sœur</strong> est l'une des quêtes les plus profondes de l'existence humaine. Au-delà de la simple rencontre amoureuse, l'âme sœur représente cette <strong>connexion spirituelle unique</strong> où deux êtres se reconnaissent instantanément, comme s'ils s'étaient toujours connus. Cette union transcende le temps et l'espace, réunissant des âmes destinées à cheminer ensemble.
           </p>
           <p className="text-lg leading-relaxed mb-4">
-            Le <strong>tarot</strong> et la <strong>voyance</strong> révèlent non seulement quand et où vous rencontrerez votre âme sœur, mais aussi comment vous préparer intérieurement à cette rencontre sacrée. Car contrairement aux croyances populaires, attirer son âme sœur n'est pas une question de chance, mais de <strong>préparation vibratoire</strong> et d'alignement spirituel. Vous devez devenir la personne que votre âme sœur cherche également.
+            Le <strong>tarot</strong> et la <strong>voyance</strong> permettent d'interpréter les signes qui annoncent quand et où vous rencontrerez votre âme sœur, mais aussi comment vous préparer intérieurement à cette rencontre sacrée. Car contrairement aux croyances populaires, attirer son âme sœur n'est pas une question de chance, mais de <strong>préparation vibratoire</strong> et d'alignement spirituel. Vous devez devenir la personne que votre âme sœur cherche également.
           </p>
           <p className="text-lg leading-relaxed">
             Que vous soyez célibataire en quête de cette connexion profonde, ou en questionnement sur une relation actuelle (est-ce vraiment mon âme sœur ?), ce guide complet vous offre les clés pour reconnaître, attirer, et nourrir cette <strong>union d'âmes</strong> exceptionnelle. Pour découvrir quand vous rencontrerez l'amour, consultez notre page <Link href="/nouvelle-rencontre/quand-rencontre-amour" className="text-indigo-600 hover:text-indigo-800 underline font-medium">Quand vais-je rencontrer l'amour</Link> et explorez toutes nos guidances sur les <Link href="/nouvelle-rencontre" className="text-indigo-600 hover:text-indigo-800 underline font-medium">nouvelles rencontres amoureuses</Link>.
@@ -415,7 +415,7 @@ export default function TrouverAmeSoeurPage() {
           <h2 className="text-3xl font-bold mb-6 text-indigo-600">🔮 Le Tarot des Âmes Sœurs : Cartes Révélatrices</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Les cartes confirmant une connexion d'ame soeur sont Les Amoureux, le Deux de Coupe, l'Etoile, Temperance et le Soleil. Le Diable ou la Tour signalent au contraire un lien karmique toxique.</p>
           <p className="text-gray-700 mb-6">
-            Le <strong>tarot</strong> identifie les connexions d'âmes sœurs avec une précision remarquable grâce au <Link href="/methodes-voyance/tirage-tarot-amour" className="text-indigo-600 hover:text-indigo-800 underline font-medium">tirage de tarot amoureux</Link>. Certaines cartes sont des marqueurs directs de cette union spirituelle.
+            Le <strong>tarot</strong> permet de décrypter les connexions d'âmes sœurs avec une précision remarquable grâce au <Link href="/methodes-voyance/tirage-tarot-amour" className="text-indigo-600 hover:text-indigo-800 underline font-medium">tirage de tarot amoureux</Link>. Certaines cartes sont des marqueurs directs de cette union spirituelle.
           </p>
 
           <div className="space-y-6">

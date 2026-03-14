@@ -300,7 +300,7 @@ export default function SignesIlElleMaimePage() {
           <h2 className="text-3xl font-bold mb-6 text-gray-900">💬 Les Signes Comportementaux d'Amour Authentique</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Se souvenir de details vous concernant, vous presenter a ses proches, inclure "nous" dans ses projets et vous soutenir dans les moments difficiles sont des preuves concretes d'amour veritable.</p>
           <p className="text-gray-700 mb-6">
-            Au-delà du langage corporel, les <strong>comportements quotidiens</strong> révèlent l'investissement émotionnel et la place que vous occupez dans sa vie.
+            Au-delà du langage corporel, les <strong>comportements quotidiens</strong> permettent d'interpréter l'investissement émotionnel et la place que vous occupez dans sa vie.
           </p>
 
           <div className="space-y-4">
@@ -409,7 +409,7 @@ export default function SignesIlElleMaimePage() {
           <h2 className="text-3xl font-bold mb-6 text-rose-600">🔮 Les Signes d'Amour Selon le Tarot</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le Deux de Coupe, L'Amoureux et Le Soleil confirment un amour sincere dans le tarot. Le Sept de Coupe et Le Diable alertent sur une illusion sentimentale ou un attachement toxique.</p>
           <p className="text-gray-700 mb-6">
-            Le <strong>tarot des sentiments</strong> révèle la vérité énergétique au-delà des comportements visibles. Certaines cartes sont des indicateurs directs d'amour véritable ou d'illusion sentimentale.
+            Le <strong>tarot des sentiments</strong> permet de décrypter la vérité énergétique au-delà des comportements visibles. Certaines cartes sont des indicateurs directs d'amour véritable ou d'illusion sentimentale.
           </p>
 
           <div className="space-y-6">

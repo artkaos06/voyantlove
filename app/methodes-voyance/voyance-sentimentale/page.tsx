@@ -241,7 +241,7 @@ export default function VoyanceSentimentalePage() {
             <div className="bg-blue-50 p-5 rounded-lg border-l-4 border-blue-500">
               <h3 className="font-bold text-lg mb-2 text-blue-700">&Eacute;tape 3 : Lecture et Interpr&eacute;tation</h3>
               <p className="text-gray-700 text-sm">
-                Le c&oelig;ur de la <strong>consultation de voyance sentimentale</strong>. Le voyant interpr&egrave;te les symboles, les combinaisons de cartes et les messages re&ccedil;us en lien direct avec votre <strong>situation amoureuse</strong>. Il d&eacute;crypte les <strong>sentiments</strong> de l&apos;autre personne, identifie les blocages, r&eacute;v&egrave;le les &eacute;nergies en jeu et anticipe les &eacute;volutions probables. Cette phase dure 10 &agrave; 20 minutes et constitue la partie la plus riche de la s&eacute;ance.
+                Le c&oelig;ur de la <strong>consultation de voyance sentimentale</strong>. Le voyant interpr&egrave;te les symboles, les combinaisons de cartes et les messages re&ccedil;us pour d&eacute;crypter votre <strong>situation amoureuse</strong>. Il d&eacute;crypte les <strong>sentiments</strong> de l&apos;autre personne, identifie les blocages, r&eacute;v&egrave;le les &eacute;nergies en jeu et anticipe les &eacute;volutions probables. Cette phase dure 10 &agrave; 20 minutes et constitue la partie la plus riche de la s&eacute;ance.
               </p>
             </div>
 

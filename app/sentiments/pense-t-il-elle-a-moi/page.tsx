@@ -115,7 +115,7 @@ export default function PenseTilElleAMoiPage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">{'\u2728'} Les Signes Énergétiques qu&apos;il/elle Pense à Vous</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Pensees soudaines inexplicables, reves recurrents, bourdonnement dans l&apos;oreille et synchronicites troublantes sont les signes energetiques les plus courants qu&apos;une personne pense intensement a vous.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Lorsqu&apos;une personne pense intensément à vous, cette <strong>énergie mentale</strong> se manifeste à travers des <Link href="/sentiments/signes-il-elle-maime" className="text-pink-600 hover:text-pink-800 underline font-medium">signes d&apos;amour</Link> physiques et spirituels que la <strong>voyance</strong> reconnaît depuis des siècles. Voici les manifestations les plus courantes d&apos;une connexion télépathique active.
+            Lorsqu&apos;une personne pense intensément à vous, cette <strong>énergie mentale</strong> se manifeste à travers des <Link href="/sentiments/signes-il-elle-maime" className="text-pink-600 hover:text-pink-800 underline font-medium">signes d&apos;amour</Link> physiques et spirituels que la <strong>voyance</strong> sait interpréter depuis des siècles. Voici les manifestations les plus courantes d&apos;une connexion télépathique active.
           </p>
           <div className="grid md:grid-cols-2 gap-6 mb-6">
             <div className="bg-pink-50 border-2 border-pink-300 rounded-lg p-6">
@@ -307,7 +307,7 @@ export default function PenseTilElleAMoiPage() {
           <div className="space-y-6">
             <div className="border-b border-gray-200 pb-6">
               <h3 className="text-xl font-bold text-gray-900 mb-3">Comment savoir s&apos;il pense a moi avec le tarot ?</h3>
-              <p className="text-gray-700 leading-relaxed">Le <strong>tarot des pensées</strong> utilise un tirage spécifique en quatre positions pour capter l&apos;énergie mentale dirigée vers vous. Le <strong>Cavalier de Coupe</strong>, La Lune et L&apos;Hermite sont des cartes révélatrices d&apos;une présence mentale forte. Le voyant interprète la fréquence, la nature et l&apos;intensité des pensées de l&apos;autre personne. Ce tirage distingue les pensées nostalgiques des pensées désirantes ou conflictuelles, vous offrant une lecture précise de ce qui se passe dans l&apos;esprit de cette personne grâce à la <strong>clairvoyance</strong>.</p>
+              <p className="text-gray-700 leading-relaxed">Le <strong>tarot des pensées</strong> utilise un tirage spécifique en quatre positions pour capter l&apos;énergie mentale dirigée vers vous. Le <strong>Cavalier de Coupe</strong>, La Lune et L&apos;Hermite sont des cartes révélatrices d&apos;une présence mentale forte. Le voyant interprète la fréquence, la nature et l&apos;intensité des pensées de l&apos;autre personne. Ce tirage permet de décrypter les pensées nostalgiques des pensées désirantes ou conflictuelles, vous offrant une lecture précise de ce qui se passe dans l&apos;esprit de cette personne grâce à la <strong>clairvoyance</strong>.</p>
             </div>
             <div className="border-b border-gray-200 pb-6">
               <h3 className="text-xl font-bold text-gray-900 mb-3">Quels signes montrent qu&apos;il pense a moi ?</h3>

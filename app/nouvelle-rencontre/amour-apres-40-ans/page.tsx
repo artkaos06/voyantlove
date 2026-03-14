@@ -113,7 +113,7 @@ export default function AmourApres40AnsPage() {
           <h2 className="text-3xl font-bold mb-6 text-amber-600">&#127775; Pourquoi l&rsquo;Amour apr&egrave;s 40 ans Est le Plus Beau</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Apr&egrave;s 40 ans, la maturit&eacute; &eacute;motionnelle, la connaissance de soi et la clart&eacute; de vos d&eacute;sirs cr&eacute;ent les conditions id&eacute;ales pour une rencontre authentique et une relation nettement plus durable.</p>
           <p className="text-gray-700 mb-6">
-            Apr&egrave;s 40 ans, vous n&rsquo;&ecirc;tes plus le m&ecirc;me amoureux qu&rsquo;&agrave; 20 ou 30 ans. Et c&rsquo;est pr&eacute;cis&eacute;ment ce qui rend cette p&eacute;riode si exceptionnelle pour la <strong><Link href="/nouvelle-rencontre" className="text-amber-600 hover:text-amber-800 underline font-medium">rencontre amoureuse</Link></strong>. La maturit&eacute; &eacute;motionnelle transform&eacute;e en force d&rsquo;attraction cr&eacute;e des liens d&rsquo;une qualit&eacute; incomparable.
+            Apr&egrave;s 40 ans, vous n&rsquo;&ecirc;tes plus le m&ecirc;me amoureux qu&rsquo;&agrave; 20 ou 30 ans. L&agrave; o&ugrave; l&rsquo;amour &agrave; 20 ans est impulsif et guid&eacute; par l&rsquo;id&eacute;alisation, l&rsquo;amour apr&egrave;s 40 ans est lucide, ancr&eacute; et profond&eacute;ment choisi. Et c&rsquo;est pr&eacute;cis&eacute;ment ce qui rend cette p&eacute;riode si exceptionnelle pour la <strong><Link href="/nouvelle-rencontre" className="text-amber-600 hover:text-amber-800 underline font-medium">rencontre amoureuse</Link></strong>. La maturit&eacute; &eacute;motionnelle transform&eacute;e en force d&rsquo;attraction cr&eacute;e des liens d&rsquo;une qualit&eacute; incomparable.
           </p>
 
           <div className="space-y-4">
@@ -172,7 +172,7 @@ export default function AmourApres40AnsPage() {
             <div className="bg-purple-50 p-6 rounded-lg border-2 border-purple-200">
               <h3 className="font-bold text-xl mb-3 text-purple-700">Les Croyances Limitantes</h3>
               <p className="text-gray-700">
-                &laquo;&nbsp;Les bons sont d&eacute;j&agrave; pris&nbsp;&raquo;, &laquo;&nbsp;je suis trop vieux/vieille&nbsp;&raquo;, &laquo;&nbsp;l&rsquo;amour c&rsquo;est pour les jeunes&nbsp;&raquo;&hellip; Ces <strong>croyances limitantes</strong> fonctionnent comme des proph&eacute;ties auto-r&eacute;alisatrices. Elles cr&eacute;ent une &eacute;nergie de fermeture que les partenaires potentiels per&ccedil;oivent inconsciemment. Le tarot r&eacute;v&egrave;le ces programmations n&eacute;gatives et la guidance permet de les remplacer par des affirmations d&rsquo;ouverture et d&rsquo;abondance.
+                &laquo;&nbsp;Les bons sont d&eacute;j&agrave; pris&nbsp;&raquo;, &laquo;&nbsp;je suis trop vieux/vieille&nbsp;&raquo;, &laquo;&nbsp;l&rsquo;amour c&rsquo;est pour les jeunes&nbsp;&raquo;&hellip; Ces <strong>croyances limitantes</strong> fonctionnent comme des proph&eacute;ties auto-r&eacute;alisatrices. Elles cr&eacute;ent une &eacute;nergie de fermeture que les partenaires potentiels per&ccedil;oivent inconsciemment. Le tarot permet d&rsquo;interpr&eacute;ter ces programmations n&eacute;gatives et la guidance permet de les remplacer par des affirmations d&rsquo;ouverture et d&rsquo;abondance.
               </p>
             </div>
 
@@ -269,7 +269,7 @@ export default function AmourApres40AnsPage() {
             <div className="bg-purple-50 p-6 rounded-lg border-2 border-purple-200">
               <h3 className="font-bold text-xl mb-3 text-purple-700">Les Signes de l&rsquo;Univers</h3>
               <p className="text-gray-700">
-                L&rsquo;univers envoie des <strong>synchronicit&eacute;s et des signes</strong> pour guider votre chemin amoureux. Chiffres r&eacute;p&eacute;t&eacute;s (11:11, 22:22), r&ecirc;ves pr&eacute;monitoires, rencontres &laquo;&nbsp;par hasard&nbsp;&raquo; r&eacute;p&eacute;t&eacute;es avec la m&ecirc;me personne, intuitions soudaines&hellip; Apprenez &agrave; reconna&icirc;tre ces <Link href="/nouvelle-rencontre/signes-ame-soeur" className="text-amber-600 hover:text-amber-800 underline font-medium">signes de l&rsquo;&acirc;me s&oelig;ur</Link> qui jalonnent votre parcours vers l&rsquo;amour. Le tarot aide &agrave; d&eacute;coder ces messages subtils.
+                L&rsquo;univers envoie des <strong>synchronicit&eacute;s et des signes</strong> pour guider votre chemin amoureux. Chiffres r&eacute;p&eacute;t&eacute;s (11:11, 22:22), r&ecirc;ves pr&eacute;monitoires, rencontres &laquo;&nbsp;par hasard&nbsp;&raquo; r&eacute;p&eacute;t&eacute;es avec la m&ecirc;me personne, intuitions soudaines&hellip; Apprenez &agrave; reconna&icirc;tre ces <Link href="/nouvelle-rencontre/signes-ame-soeur" className="text-amber-600 hover:text-amber-800 underline font-medium">signes de l&rsquo;&acirc;me s&oelig;ur</Link> qui jalonnent votre parcours vers l&rsquo;amour. Le tarot aide &agrave; d&eacute;crypter ces messages subtils.
               </p>
             </div>
 

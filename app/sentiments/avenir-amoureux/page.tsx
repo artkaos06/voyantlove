@@ -127,7 +127,7 @@ export default function AvenirAmoureuxPage() {
             <div className="bg-pink-50 border-l-4 border-pink-500 p-6 rounded-lg">
               <h3 className="font-bold text-lg mb-3 text-pink-700">1. Votre Situation Actuelle (Présent)</h3>
               <p className="text-gray-700">
-                Cette première carte révèle votre état émotionnel actuel, votre disponibilité affective, et les énergies qui vous entourent en ce moment. Elle identifie si vous êtes prêt pour l'amour ou si des blocages vous empêchent d'accueillir une relation. Un cœur fermé attire rarement l'amour véritable.
+                Là où l'incertitude paralyse, cette première carte décrypte votre état émotionnel actuel, votre disponibilité affective, et les énergies qui vous entourent en ce moment. Elle identifie si vous êtes prêt pour l'amour ou si des blocages vous empêchent d'accueillir une relation. Un cœur fermé attire rarement l'amour véritable.
               </p>
             </div>
 
@@ -165,7 +165,7 @@ export default function AvenirAmoureuxPage() {
           <h2 className="text-3xl font-bold mb-6 text-gray-900">📅 Timeline de l'Avenir Amoureux : Que Révèle Chaque Période</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le tarot decompose votre avenir amoureux en periodes de 1-3 mois, 3-6 mois, 6-12 mois et au-dela. Chaque periode porte des energies et des opportunites sentimentales distinctes a anticiper.</p>
           <p className="text-gray-700 mb-6">
-            Le tarot décompose votre <strong>futur sentimental</strong> en périodes distinctes, chacune porteuse d'énergies et d'opportunités spécifiques.
+            Le tarot interprète votre <strong>futur sentimental</strong> en périodes distinctes, chacune porteuse d'énergies et d'opportunités spécifiques.
           </p>
 
           <div className="space-y-4">

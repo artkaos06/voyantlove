@@ -106,7 +106,7 @@ export default function OracleGratuitAmourPage() {
               L&apos;<strong>Oracle de G&eacute;</strong>, avec ses 61 cartes illustr&eacute;es de sc&egrave;nes quotidiennes, offre une clart&eacute; imm&eacute;diate sur les <strong>situations sentimentales</strong> complexes. L&apos;<strong>Oracle des Anges</strong>, quant &agrave; lui, apporte r&eacute;confort et <strong>gu&eacute;rison &eacute;motionnelle</strong> aux c&oelig;urs bless&eacute;s par une rupture ou un chagrin d&apos;amour.
             </p>
             <p className="text-lg leading-relaxed">
-              Que vous cherchiez &agrave; comprendre les <strong>sentiments</strong> de votre partenaire, &agrave; anticiper l&apos;&eacute;volution d&apos;une <strong>relation amoureuse</strong> ou &agrave; trouver la paix apr&egrave;s une s&eacute;paration, l&apos;<strong>oracle amour gratuit</strong> r&eacute;pond avec douceur et justesse &agrave; vos interrogations les plus intimes.
+              Que vous cherchiez &agrave; d&eacute;crypter les <strong>sentiments</strong> de votre partenaire, &agrave; anticiper l&apos;&eacute;volution d&apos;une <strong>relation amoureuse</strong> ou &agrave; trouver la paix apr&egrave;s une s&eacute;paration, l&apos;<strong>oracle amour gratuit</strong> r&eacute;pond avec douceur et justesse &agrave; vos interrogations les plus intimes.
             </p>
           </div>
         </article>
@@ -139,7 +139,7 @@ export default function OracleGratuitAmourPage() {
             <div className="bg-green-50 border-l-4 border-green-500 p-5 rounded-lg">
               <h3 className="font-bold text-lg mb-2 text-green-700">Niveau d&apos;Interpr&eacute;tation</h3>
               <p className="text-gray-700 text-sm">
-                Le <strong>tarot amoureux</strong> demande une expertise approfondie pour interpr&eacute;ter les combinaisons entre cartes, les positions et les &eacute;nergies crois&eacute;es. L&apos;<strong>oracle</strong> est g&eacute;n&eacute;ralement plus accessible : ses cartes portent des significations explicites qui facilitent la compr&eacute;hension, m&ecirc;me pour un d&eacute;butant en <strong>voyance sentimentale</strong>. L&apos;<Link href="/methodes-voyance/oracle-amour" className="text-teal-600 hover:text-teal-800 underline font-medium">oracle de l&apos;amour</Link> offre ainsi une porte d&apos;entr&eacute;e douce vers la <strong>guidance amoureuse</strong>.
+                Le <strong>tarot amoureux</strong> demande une expertise approfondie pour interpr&eacute;ter les combinaisons et les &eacute;nergies entre cartes, les positions et les &eacute;nergies crois&eacute;es. L&apos;<strong>oracle</strong> est g&eacute;n&eacute;ralement plus accessible : ses cartes portent des significations explicites qui facilitent la compr&eacute;hension, m&ecirc;me pour un d&eacute;butant en <strong>voyance sentimentale</strong>. L&apos;<Link href="/methodes-voyance/oracle-amour" className="text-teal-600 hover:text-teal-800 underline font-medium">oracle de l&apos;amour</Link> offre ainsi une porte d&apos;entr&eacute;e douce vers la <strong>guidance amoureuse</strong>.
               </p>
             </div>
 
@@ -164,7 +164,7 @@ export default function OracleGratuitAmourPage() {
             <div className="bg-white rounded-lg p-5 border-l-4 border-teal-500">
               <h3 className="font-bold text-lg mb-2 text-teal-700">Les Cartes Sentimentales du Belline</h3>
               <p className="text-gray-700 text-sm">
-                Plusieurs cartes du <strong>Belline</strong> sont particuli&egrave;rement parlantes en <strong>voyance amoureuse</strong>. La carte &laquo;&nbsp;Passion&nbsp;&raquo; r&eacute;v&egrave;le un amour intense et d&eacute;vorant. &laquo;&nbsp;Union&nbsp;&raquo; annonce un engagement s&eacute;rieux ou un mariage. &laquo;&nbsp;Trahison&nbsp;&raquo; avertit d&apos;une infid&eacute;lit&eacute; ou d&apos;une d&eacute;ception sentimentale. &laquo;&nbsp;Cl&eacute;&nbsp;&raquo; signale la r&eacute;solution imminente d&apos;un probl&egrave;me de c&oelig;ur. La richesse du vocabulaire du Belline permet une <strong>lecture pr&eacute;cise</strong> des dynamiques amoureuses.
+                Plusieurs cartes du <strong>Belline</strong> sont particuli&egrave;rement parlantes en <strong>voyance amoureuse</strong>. La carte &laquo;&nbsp;Passion&nbsp;&raquo; r&eacute;v&egrave;le un amour intense et d&eacute;vorant. &laquo;&nbsp;Union&nbsp;&raquo; annonce un engagement s&eacute;rieux ou un mariage. &laquo;&nbsp;Trahison&nbsp;&raquo; avertit d&apos;une infid&eacute;lit&eacute; ou d&apos;une d&eacute;ception sentimentale. &laquo;&nbsp;Cl&eacute;&nbsp;&raquo; signale la r&eacute;solution imminente d&apos;un probl&egrave;me de c&oelig;ur. La richesse du vocabulaire du Belline permet d&apos;interpr&eacute;ter avec finesse les dynamiques amoureuses.
               </p>
             </div>
 

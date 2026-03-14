@@ -130,7 +130,7 @@ export default function VoyanceTelephoneAmourPage() {
             <div className="bg-violet-50 border-l-4 border-violet-500 p-5 rounded-lg">
               <h3 className="font-bold text-lg mb-2 text-violet-700">&Eacute;tape 2 &mdash; L&apos;Exploration &Eacute;nerg&eacute;tique</h3>
               <p className="text-gray-700 text-sm">
-                Le <strong>voyant</strong> utilise ensuite ses outils de pr&eacute;dilection &mdash; <Link href="/methodes-voyance/tirage-tarot-amour" className="text-indigo-600 hover:text-indigo-800 underline font-medium">tarot</Link>, <strong>oracle</strong>, <Link href="/methodes-voyance/pendule-amour" className="text-indigo-600 hover:text-indigo-800 underline font-medium">pendule</Link> ou clairvoyance pure &mdash; pour explorer votre situation sentimentale. Il capte les &eacute;nergies qui circulent autour de vous, identifie les pr&eacute;sences &eacute;motionnelles li&eacute;es &agrave; votre question et d&eacute;code les messages qui &eacute;mergent. La distance physique n&apos;alt&egrave;re en rien la qualit&eacute; de cette lecture &eacute;nerg&eacute;tique.
+                Le <strong>voyant</strong> utilise ensuite ses outils de pr&eacute;dilection &mdash; <Link href="/methodes-voyance/tirage-tarot-amour" className="text-indigo-600 hover:text-indigo-800 underline font-medium">tarot</Link>, <strong>oracle</strong>, <Link href="/methodes-voyance/pendule-amour" className="text-indigo-600 hover:text-indigo-800 underline font-medium">pendule</Link> ou clairvoyance pure &mdash; pour explorer votre situation sentimentale. Il capte les &eacute;nergies qui circulent autour de vous, identifie les pr&eacute;sences &eacute;motionnelles li&eacute;es &agrave; votre question et d&eacute;crypte les messages qui &eacute;mergent. La distance physique n&apos;alt&egrave;re en rien la qualit&eacute; de cette lecture &eacute;nerg&eacute;tique.
               </p>
             </div>
 
@@ -169,7 +169,7 @@ export default function VoyanceTelephoneAmourPage() {
             <div className="bg-white rounded-lg p-5 border-l-4 border-violet-500">
               <h3 className="font-bold text-lg mb-2 text-violet-700">La Puissance de la Connexion Vocale</h3>
               <p className="text-gray-700 text-sm">
-                La voix est un vecteur &eacute;nerg&eacute;tique extr&ecirc;mement puissant. Elle porte les &eacute;motions, les vibrations et les non-dits bien au-del&agrave; des mots prononc&eacute;s. Un <strong>voyant</strong> exp&eacute;riment&eacute; capte dans vos intonations des informations que m&ecirc;me le langage corporel ne r&eacute;v&egrave;le pas toujours. La <strong>voyance par t&eacute;l&eacute;phone</strong> exploite cette richesse vibratoire pour offrir une lecture &eacute;nerg&eacute;tique d&apos;une pr&eacute;cision remarquable sur vos <strong>sentiments</strong> et ceux de l&apos;autre personne.
+                L&agrave; o&ugrave; le tchat limite l&apos;&eacute;change aux mots &eacute;crits, le t&eacute;l&eacute;phone permet de capter la vibration vivante de votre voix. La voix est un vecteur &eacute;nerg&eacute;tique extr&ecirc;mement puissant. Elle porte les &eacute;motions, les vibrations et les non-dits bien au-del&agrave; des mots prononc&eacute;s. Un <strong>voyant</strong> exp&eacute;riment&eacute; capte dans vos intonations des informations que m&ecirc;me le langage corporel ne r&eacute;v&egrave;le pas toujours. La <strong>voyance par t&eacute;l&eacute;phone</strong> exploite cette richesse vibratoire pour offrir une lecture &eacute;nerg&eacute;tique d&apos;une pr&eacute;cision remarquable sur vos <strong>sentiments</strong> et ceux de l&apos;autre personne.
               </p>
             </div>
 
@@ -208,7 +208,7 @@ export default function VoyanceTelephoneAmourPage() {
             <div className="bg-red-50 border-l-4 border-red-500 p-5 rounded-lg">
               <h3 className="font-bold text-lg mb-2 text-red-700">Questions sur les Sentiments de l&apos;Autre</h3>
               <p className="text-gray-700 text-sm">
-                Le doute sur la r&eacute;ciprocit&eacute; des sentiments est l&apos;une des <strong>questions amoureuses</strong> les plus fr&eacute;quentes en <strong>voyance par t&eacute;l&eacute;phone</strong>. &laquo;&nbsp;M&apos;aime-t-il vraiment&nbsp;?&nbsp;&raquo;, &laquo;&nbsp;Ses actions refl&egrave;tent-elles ses sentiments&nbsp;?&nbsp;&raquo;, &laquo;&nbsp;Pourquoi se montre-t-il distant&nbsp;?&nbsp;&raquo;. Le <strong>voyant</strong> d&eacute;code les &eacute;nergies &eacute;motionnelles de l&apos;autre personne pour vous r&eacute;v&eacute;ler ce qu&apos;elle ressent r&eacute;ellement au-del&agrave; des apparences.
+                Le doute sur la r&eacute;ciprocit&eacute; des sentiments est l&apos;une des <strong>questions amoureuses</strong> les plus fr&eacute;quentes en <strong>voyance par t&eacute;l&eacute;phone</strong>. &laquo;&nbsp;M&apos;aime-t-il vraiment&nbsp;?&nbsp;&raquo;, &laquo;&nbsp;Ses actions refl&egrave;tent-elles ses sentiments&nbsp;?&nbsp;&raquo;, &laquo;&nbsp;Pourquoi se montre-t-il distant&nbsp;?&nbsp;&raquo;. Le <strong>voyant</strong> interpr&egrave;te les &eacute;nergies &eacute;motionnelles de l&apos;autre personne pour vous r&eacute;v&eacute;ler ce qu&apos;elle ressent r&eacute;ellement au-del&agrave; des apparences.
               </p>
             </div>
 

@@ -95,7 +95,7 @@ export default function MAimeTilEllePage() {
         <article className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-red-500">
           <div className="prose prose-lg max-w-none">
             <p className="text-lg leading-relaxed mb-4">
-              La question "<strong>m'aime-t-il/elle vraiment</strong>" révèle votre <strong>doute amoureux</strong> légitime. Le <strong>tarot</strong> et la <strong>clairvoyance</strong> peuvent percer le voile des apparences pour révéler les <strong>vrais sentiments</strong> de l'autre personne. Un <strong>voyant</strong> capte les émotions réelles au-delà des mots et comportements parfois contradictoires.
+              La question "<strong>m'aime-t-il/elle vraiment</strong>" révèle votre <strong>doute amoureux</strong> légitime. Là où les mots peuvent mentir, le <strong>tarot</strong> et la <strong>clairvoyance</strong> percent le voile des apparences pour décrypter les <strong>vrais sentiments</strong> de l'autre personne. Un <strong>voyant</strong> capte les émotions réelles au-delà des mots et comportements parfois contradictoires.
             </p>
             <p className="text-lg leading-relaxed mb-4">
               Le <strong>tirage des sentiments</strong> explore plusieurs niveaux : l'attraction physique, l'attachement émotionnel, l'amour profond, et l'engagement futur. Il révèle aussi les peurs et blocages qui empêchent l'autre d'exprimer ses sentiments ouvertement. Parfois, la personne vous aime mais ne peut ou ne veut pas s'engager pour des raisons complexes que le tarot éclaire. Pour en savoir plus sur les <Link href="/sentiments" className="text-red-600 hover:text-red-800 underline font-medium">sentiments amoureux</Link>, découvrez toutes nos guidances spécialisées.
@@ -111,7 +111,7 @@ export default function MAimeTilEllePage() {
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">💖 Les Signes d'Amour Véritable selon le Tarot</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Les arcanes L'Amoureux, le Deux de Coupe et Le Soleil confirment un amour authentique dans le tarot. A l'inverse, Le Diable et le Sept d'Epee signalent un attachement toxique ou une manipulation emotionnelle.</p>
-          <p className="text-gray-700 leading-relaxed mb-6">Le tarot utilise des cartes spécifiques pour révéler la nature authentique des sentiments. Apprenez aussi à repérer les <Link href="/sentiments/signes-il-elle-maime" className="text-red-600 hover:text-red-800 underline font-medium">signes qu'il/elle vous aime</Link> dans son comportement quotidien.</p>
+          <p className="text-gray-700 leading-relaxed mb-6">Le tarot utilise des cartes spécifiques pour interpréter la nature authentique des sentiments. Apprenez aussi à repérer les <Link href="/sentiments/signes-il-elle-maime" className="text-red-600 hover:text-red-800 underline font-medium">signes qu'il/elle vous aime</Link> dans son comportement quotidien.</p>
           <div className="grid md:grid-cols-2 gap-6 mb-6">
             <div className="bg-green-50 border-2 border-green-300 rounded-lg p-6">
               <h3 className="font-bold text-lg mb-3 text-green-700">✅ Cartes d'Amour Authentique</h3>

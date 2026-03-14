@@ -114,7 +114,7 @@ export default function SecondeChancePage() {
             <div className="bg-green-50 p-6 border-l-4 border-green-500 rounded-r-lg">
               <h3 className="font-bold text-green-700 mb-3 text-xl">1. Identification Claire des Causes d'Échec</h3>
               <p className="text-gray-700 mb-3">Avant toute <strong>seconde chance</strong>, les deux partenaires doivent identifier précisément ce qui a causé la rupture. Était-ce un manque de communication ? Des différences de valeurs ? De l'infidélité ? Un déséquilibre dans l'engagement ?</p>
-              <p className="text-gray-700">Sans cette analyse honnête, vous reproduirez exactement les mêmes erreurs. Le <strong>tarot</strong> révèle les véritables causes, souvent cachées sous des symptômes superficiels. Par exemple, des disputes fréquentes sont rarement le vrai problème, mais plutôt le symptôme d'un besoin non satisfait.</p>
+              <p className="text-gray-700">Sans cette analyse honnête, vous reproduirez exactement les mêmes erreurs. Le <strong>tarot</strong> aide à interpréter les véritables causes, souvent cachées sous des symptômes superficiels. Par exemple, des disputes fréquentes sont rarement le vrai problème, mais plutôt le symptôme d'un besoin non satisfait.</p>
             </div>
 
             <div className="bg-teal-50 p-6 border-l-4 border-teal-500 rounded-r-lg">
@@ -377,7 +377,7 @@ export default function SecondeChancePage() {
         <section className="bg-gradient-to-br from-green-50 to-teal-50 rounded-xl p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-teal-700">🔮 Guidance Tarot pour la Seconde Chance</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le tarot guide votre décision de seconde chance : Le Jugement, Les Amoureux, La Tempérance et L'Etoile sont des feux verts, tandis que Le Diable, La Tour, le Huit de Coupe et La Roue inversée signalent un refus nécessaire.</p>
-          <p className="text-gray-700 mb-6">Le <strong>tarot</strong> révèle si cette <strong>seconde chance en amour</strong> est guidée par les énergies constructives ou destructrices. Voici les cartes clés pour votre décision.</p>
+          <p className="text-gray-700 mb-6">Le <strong>tarot</strong> permet de décrypter si cette <strong>seconde chance en amour</strong> est guidée par les énergies constructives ou destructrices. Voici les cartes clés pour votre décision.</p>
 
           <div className="bg-white p-6 rounded-lg mb-6">
             <h3 className="font-bold text-green-700 mb-4 text-xl">Cartes Favorables : Feu Vert pour la Seconde Chance</h3>

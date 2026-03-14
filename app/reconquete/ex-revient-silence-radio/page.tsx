@@ -210,7 +210,7 @@ export default function ExRevientSilenceRadioPage() {
           <h2 className="text-3xl font-bold mb-6 text-gray-900">🧠 Pourquoi un Ex Revient Après Silence Radio : 7 Raisons Psychologiques</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Les sept raisons psychologiques du retour après silence radio sont : l'effet de manque, la peur de vous perdre définitivement, l'échec d'une relation rebond, votre transformation visible, la solitude, la prise de conscience mature et le besoin de valider son pouvoir de séduction.</p>
           <p className="text-gray-700 mb-6">
-            Comprendre les <strong>motivations réelles</strong> de votre ex est crucial pour évaluer si ce retour mérite votre attention ou s'il s'agit d'un piège émotionnel.
+            Décrypter les <strong>motivations réelles</strong> de votre ex est crucial pour évaluer si ce retour mérite votre attention ou s'il s'agit d'un piège émotionnel.
           </p>
 
           <div className="space-y-5">

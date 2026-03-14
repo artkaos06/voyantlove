@@ -107,7 +107,7 @@ export default function SignesAmeSoeurPage() {
             Reconnaître les <strong>signes de l'âme sœur</strong> est une quête universelle qui traverse toutes les cultures et traditions spirituelles. L'<strong>âme sœur</strong> n'est pas un mythe romantique, mais une réalité énergétique et karmique : une personne avec qui vous partagez une <strong>connexion d'âme profonde</strong>, une vibration alignée, et un chemin d'évolution commune.
           </p>
           <p className="text-lg leading-relaxed mb-4">
-            Contrairement aux relations ordinaires qui se construisent progressivement, la <strong>rencontre d'âme sœur</strong> se caractérise par une reconnaissance instantanée, une facilité naturelle, et des synchronicités troublantes. Votre âme sait avant votre mental conscient. Le <strong>tarot</strong>, la <strong>numérologie</strong>, et l'<strong>astrologie</strong> confirment ce que votre intuition ressent déjà.
+            Contrairement aux relations ordinaires qui se construisent progressivement, la <strong>rencontre d'âme sœur</strong> se caractérise par une reconnaissance instantanée, une facilité naturelle, et des synchronicités troublantes. Votre âme sait avant votre mental conscient. Le <strong>tarot</strong>, la <strong>numérologie</strong>, et l'<strong>astrologie</strong> permettent de décrypter ce que votre intuition ressent déjà.
           </p>
           <p className="text-lg leading-relaxed">
             Cette guidance complète vous révèle les <strong>15 signes infaillibles</strong> pour reconnaître votre âme sœur, les différencier d'une flamme jumelle ou d'une simple compatibilité, et comprendre la dimension karmique de cette union sacrée. Pour explorer d'autres aspects de votre <Link href="/nouvelle-rencontre" className="text-purple-600 hover:text-purple-800 underline font-medium">nouvelle rencontre amoureuse</Link>, découvrez toutes nos guidances spécialisées.
@@ -321,7 +321,7 @@ export default function SignesAmeSoeurPage() {
           <h2 className="text-3xl font-bold mb-6 text-purple-600">🃏 Le Tarot Confirme : Les Cartes de l'Âme Sœur</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Les Amoureux, le Deux de Coupe, le Soleil, l'Etoile et Temperance sont les cartes qui confirment une connexion d'ame soeur lors d'un tirage de tarot amoureux.</p>
           <p className="text-gray-700 mb-6">
-            Le <strong>tarot</strong> offre une confirmation spirituelle de votre rencontre d'âme sœur à travers des cartes spécifiques qui révèlent la nature karmique et sacrée de votre connexion.
+            Le <strong>tarot</strong> offre une confirmation spirituelle de votre rencontre d'âme sœur à travers des cartes spécifiques qui permettent d'interpréter la nature karmique et sacrée de votre connexion.
           </p>
 
           <div className="space-y-4">

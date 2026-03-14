@@ -95,7 +95,7 @@ export default function ReconquerirSonExPage() {
             <strong>Reconquérir son ex</strong> après une <strong>rupture amoureuse</strong> est possible selon la <strong>voyance</strong> et le <strong>tarot</strong>. Les cartes révèlent que la majorité des couples se remettent ensemble après avoir travaillé sur les causes de la séparation. Le <strong>tarot amoureux</strong> peut vous guider sur le moment idéal pour agir et les étapes à suivre pour maximiser vos chances de succès.
           </p>
           <p className="text-lg leading-relaxed mb-4">
-            La <strong>reconquête</strong> ne signifie pas supplier ou harceler votre <strong>ex</strong>. Il s'agit d'une démarche stratégique et spirituelle basée sur l'évolution personnelle, le bon timing astrologique, et la compréhension profonde des énergies en jeu. Le <strong>tarot</strong> révèle si un retour est dans votre intérêt ou si vous devez tourner la page.
+            La <strong>reconquête</strong> ne signifie pas supplier ou harceler votre <strong>ex</strong>. Il s'agit d'une démarche stratégique et spirituelle basée sur l'évolution personnelle, le bon timing astrologique, et le décryptage des énergies en jeu. Le <strong>tarot</strong> révèle si un retour est dans votre intérêt ou si vous devez tourner la page.
           </p>
           <p className="text-lg leading-relaxed">
             La <strong>reconquête</strong> réussit quand elle part d'un lieu d'amour authentique, pas de désespoir ou de peur de la solitude. La <strong>voyance</strong> vous aide à discerner vos vraies motivations et à agir avec sagesse. Découvrez toutes nos guidances sur <Link href="/" className="text-purple-600 hover:text-purple-800 underline font-medium">VoyantLove</Link> pour une vision complète de la voyance amoureuse.
@@ -106,7 +106,7 @@ export default function ReconquerirSonExPage() {
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">🔮 Ce que le Tarot Révèle sur la Reconquête</h2>
-          <p className="text-lg font-semibold text-gray-800 mb-4">Le tarot de reconquête analyse quatre positions clés : les sentiments actuels de votre ex, les obstacles à la réconciliation, ce que vous devez changer en vous, et l'issue probable avec son timing.</p>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Le tarot de reconquête permet d'interpréter quatre positions clés : les sentiments actuels de votre ex, les obstacles à la réconciliation, ce que vous devez changer en vous, et l'issue probable avec son timing.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Le tirage spécifique de reconquête analyse quatre positions clés pour éclairer votre situation et vos chances de succès.
           </p>

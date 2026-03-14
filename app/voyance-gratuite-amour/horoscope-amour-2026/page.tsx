@@ -110,7 +110,7 @@ export default function HoroscopeAmour2026Page() {
               Cette ann&eacute;e, l&apos;<strong>astrologie amoureuse</strong> met en lumi&egrave;re des p&eacute;riodes particuli&egrave;rement favorables aux <strong>rencontres</strong>, aux r&eacute;conciliations et aux engagements. Chaque signe b&eacute;n&eacute;ficie de fen&ecirc;tres d&apos;opportunit&eacute;s sp&eacute;cifiques pour &eacute;panouir sa <strong>vie sentimentale</strong>.
             </p>
             <p className="text-lg leading-relaxed">
-              Des signes de Feu passionn&eacute;s aux signes d&apos;Eau intuitifs, en passant par les signes de Terre stables et les signes d&apos;Air communicatifs, d&eacute;couvrez les <strong>pr&eacute;dictions amoureuses 2026</strong> compl&egrave;tes pour comprendre les &eacute;nergies qui gouverneront votre <strong>destin amoureux</strong> et la <strong>compatibilit&eacute; amoureuse</strong> de chaque signe cette ann&eacute;e.
+              Des signes de Feu passionn&eacute;s aux signes d&apos;Eau intuitifs, en passant par les signes de Terre stables et les signes d&apos;Air communicatifs, d&eacute;couvrez les <strong>pr&eacute;dictions amoureuses 2026</strong> compl&egrave;tes pour interpr&eacute;ter les &eacute;nergies qui gouverneront votre <strong>destin amoureux</strong> et la <strong>compatibilit&eacute; amoureuse</strong> de chaque signe cette ann&eacute;e.
             </p>
           </div>
         </article>
@@ -143,7 +143,7 @@ export default function HoroscopeAmour2026Page() {
             <div className="bg-emerald-50 border-l-4 border-emerald-500 p-5 rounded-lg">
               <h3 className="font-bold text-lg mb-2 text-emerald-700">V&eacute;nus R&eacute;trograde : R&eacute;visions Sentimentales</h3>
               <p className="text-gray-700 text-sm">
-                Les p&eacute;riodes de <strong>V&eacute;nus r&eacute;trograde</strong> en 2026 sont des moments cl&eacute;s pour revisiter vos <strong>relations pass&eacute;es</strong> et r&eacute;soudre les affaires de c&oelig;ur inachev&eacute;es. Ces phases invitent &agrave; la r&eacute;flexion plut&ocirc;t qu&apos;&agrave; l&apos;action : &eacute;vitez de d&eacute;marrer une nouvelle relation pendant ces p&eacute;riodes, mais profitez-en pour comprendre vos sch&eacute;mas amoureux r&eacute;p&eacute;titifs. La <strong>voyance sentimentale</strong> est particuli&egrave;rement pertinente durant ces r&eacute;trogradations pour d&eacute;coder les messages du cosmos.
+                Les p&eacute;riodes de <strong>V&eacute;nus r&eacute;trograde</strong> en 2026 sont des moments cl&eacute;s pour revisiter vos <strong>relations pass&eacute;es</strong> et r&eacute;soudre les affaires de c&oelig;ur inachev&eacute;es. Ces phases invitent &agrave; la r&eacute;flexion plut&ocirc;t qu&apos;&agrave; l&apos;action : &eacute;vitez de d&eacute;marrer une nouvelle relation pendant ces p&eacute;riodes, mais profitez-en pour comprendre vos sch&eacute;mas amoureux r&eacute;p&eacute;titifs. La <strong>voyance sentimentale</strong> est particuli&egrave;rement pertinente durant ces r&eacute;trogradations pour d&eacute;crypter les messages du cosmos.
               </p>
             </div>
 

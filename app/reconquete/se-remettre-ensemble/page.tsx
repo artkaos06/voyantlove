@@ -99,7 +99,7 @@ export default function SeRemettreEnsemblePage() {
         />
 
         <article className="bg-white rounded-xl p-8 mb-8 border-t-4 border-purple-500">
-          <p className="text-lg mb-4"><strong>Se remettre ensemble avec son ex</strong> est une décision majeure qui nécessite préparation et sagesse. De nombreux couples qui tentent une <strong>reprise de relation</strong> réussissent à construire une union durable, mais uniquement lorsque les bonnes étapes sont respectées. Le <strong>tarot</strong> guide ce processus délicat en révélant le timing idéal, les obstacles à surmonter, et les chances réelles de succès.</p>
+          <p className="text-lg mb-4"><strong>Se remettre ensemble avec son ex</strong> est une décision majeure qui nécessite préparation et sagesse. De nombreux couples qui tentent une <strong>reprise de relation</strong> réussissent à construire une union durable, mais uniquement lorsque les bonnes étapes sont respectées. Le <strong>tarot</strong> guide ce processus délicat en permettant d'interpréter les signaux du couple, le timing idéal, les obstacles à surmonter, et les chances réelles de succès.</p>
           <p className="text-lg mb-4">La <strong>reconstruction d'un couple</strong> après une rupture exige bien plus qu'un simple désir de retrouvailles. Elle nécessite une analyse honnête des causes d'échec, des changements concrets de comportement, et un engagement mutuel à construire une relation meilleure que la précédente. La démarche rejoint celle d'accorder une <Link href="/reconquete/seconde-chance-amour" className="text-purple-600 hover:text-purple-800 underline font-medium">seconde chance en amour</Link>, mais avec un cadre encore plus structuré. Sans ces prérequis, vous reproduirez exactement les mêmes schémas qui ont mené à la première séparation.</p>
           <p className="text-lg">Comprendre comment <strong>se remettre ensemble après une rupture</strong> de manière saine et durable vous évite des mois de souffrance et de déceptions répétées. Ce guide complet basé sur la guidance tarot vous accompagne à travers les 5 étapes essentielles pour maximiser vos chances de <strong>retrouvailles réussies</strong>. Pour en savoir plus sur les <Link href="/reconquete" className="text-purple-600 hover:text-purple-800 underline font-medium">retrouvailles amoureuses</Link>, découvrez toutes nos guidances spécialisées.</p>
         </article>
@@ -173,7 +173,7 @@ export default function SeRemettreEnsemblePage() {
                   </div>
 
                   <div className="bg-red-50 p-4 rounded-lg border-l-4 border-red-500">
-                    <p className="text-gray-700"><strong>Règle d'or :</strong> Si la cause profonde n'est pas résolue concrètement, NE vous remettez PAS ensemble. Vous reproduirez exactement le même schéma d'échec. Le tarot révèle si les problèmes sont vraiment résolus ou simplement cachés sous le tapis.</p>
+                    <p className="text-gray-700"><strong>Règle d'or :</strong> Si la cause profonde n'est pas résolue concrètement, NE vous remettez PAS ensemble. Vous reproduirez exactement le même schéma d'échec. Le tarot permet de décrypter si les problèmes sont vraiment résolus ou simplement cachés sous le tapis.</p>
                   </div>
                 </div>
               </div>
