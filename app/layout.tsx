@@ -63,6 +63,26 @@ export default function RootLayout({
     <html lang="fr">
       <head>
         <link rel="icon" href="/favicon.png" type="image/png" />
+        <Script id="axeptio" strategy="beforeInteractive">{`
+          window.axeptioSettings = {
+            clientId: "69b8828888b6372bfa4a1444",
+            cookiesVersion: "e6b84849-0d28-4428-9825-14b5a10ed689",
+            googleConsentMode: {
+              default: {
+                analytics_storage: "denied",
+                ad_storage: "denied",
+                ad_user_data: "denied",
+                ad_personalization: "denied",
+                wait_for_update: 500
+              }
+            }
+          };
+          (function(d, s) {
+            var t = d.getElementsByTagName(s)[0], e = d.createElement(s);
+            e.async = true; e.src = "//static.axept.io/sdk.js";
+            t.parentNode.insertBefore(e, t);
+          })(document, "script");
+        `}</Script>
         <Script id="gtm" strategy="afterInteractive">{`
           (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
           new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
