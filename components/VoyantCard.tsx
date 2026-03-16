@@ -29,6 +29,7 @@ export default function VoyantCard({ voyant, source = 'content-page', compact = 
 
   const handleAffiliateClick = () => {
     trackAffiliateClick(voyant.ID, source, voyant.VOYANT);
+    window.dataLayer?.push({ event: 'cta_click', cta_label: `voyant-${voyant.VOYANT}` });
   };
 
   if (compact) {

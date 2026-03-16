@@ -28,6 +28,7 @@ export default function DynamicCTAButton({
 
   const handleClick = () => {
     trackAffiliateClick(selectedVoyant.ID, source, selectedVoyant.VOYANT);
+    window.dataLayer?.push({ event: 'cta_click', cta_label: label });
   };
 
   return (

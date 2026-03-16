@@ -27,6 +27,7 @@ export default function VoyantFinalCTA({
 
   const handleAffiliateClick = () => {
     trackAffiliateClick(selectedVoyant.ID, `${source}-${topic}`, selectedVoyant.VOYANT);
+    window.dataLayer?.push({ event: 'cta_click', cta_label: `final-cta-${topic}` });
   };
 
   const gradients: Record<string, string> = {

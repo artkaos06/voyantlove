@@ -22,6 +22,7 @@ export default function VoyantQuickCTA({ topic, source = 'quick-cta' }: VoyantQu
 
   const handleAffiliateClick = () => {
     trackAffiliateClick(selectedVoyant.ID, `${source}-${topic}`, selectedVoyant.VOYANT);
+    window.dataLayer?.push({ event: 'cta_click', cta_label: `quick-cta-${topic}` });
   };
 
   const colorSchemes = {

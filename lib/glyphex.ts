@@ -9,6 +9,7 @@ declare global {
     analytics?: {
       track: (eventName: string, properties?: Record<string, any>) => void;
     };
+    dataLayer?: Record<string, any>[];
   }
 }
 
