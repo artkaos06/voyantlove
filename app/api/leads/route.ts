@@ -1,4 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { getPrediction, type SituationType, type ZodiacSign } from '@/data/tarot-predictions';
+import { buildPredictionEmailHTML } from '@/lib/prediction-email';
 
 const BREVO_API_KEY = process.env.BREVO_API_KEY;
 const BREVO_LIST_ID = parseInt(process.env.BREVO_LIST_ID || '0');
@@ -16,8 +18,8 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: 'Server configuration error' }, { status: 500 });
     }
 
-    // Create or update contact in Brevo
-    const response = await fetch('https://api.brevo.com/v3/contacts', {
+    // 1. Create or update contact in Brevo
+    const contactResponse = await fetch('https://api.brevo.com/v3/contacts', {
       method: 'POST',
       headers: {
         'accept': 'application/json',
@@ -37,14 +39,39 @@ export async function POST(request: NextRequest) {
       }),
     });
 
-    if (!response.ok) {
-      const error = await response.json();
-      // Contact already exists is not a real error
-      if (error.code === 'duplicate_parameter') {
-        return NextResponse.json({ success: true, existing: true });
+    if (!contactResponse.ok) {
+      const error = await contactResponse.json();
+      if (error.code !== 'duplicate_parameter') {
+        console.error('Brevo contact API error:', error);
       }
-      console.error('Brevo API error:', error);
-      return NextResponse.json({ error: 'Failed to save contact' }, { status: 500 });
+    }
+
+    // 2. Send prediction email
+    const prediction = getPrediction(
+      situation as SituationType,
+      zodiac as ZodiacSign,
+      name,
+    );
+    const emailHTML = buildPredictionEmailHTML(name, zodiac, situation, prediction);
+
+    const emailResponse = await fetch('https://api.brevo.com/v3/smtp/email', {
+      method: 'POST',
+      headers: {
+        'accept': 'application/json',
+        'content-type': 'application/json',
+        'api-key': BREVO_API_KEY,
+      },
+      body: JSON.stringify({
+        sender: { name: 'VoyantLove', email: 'bonjour@voyantlove.fr' },
+        to: [{ email, name }],
+        subject: `${name}, votre tirage tarot amour est prêt 🔮`,
+        htmlContent: emailHTML,
+      }),
+    });
+
+    if (!emailResponse.ok) {
+      const error = await emailResponse.json();
+      console.error('Brevo email API error:', error);
     }
 
     return NextResponse.json({ success: true });
