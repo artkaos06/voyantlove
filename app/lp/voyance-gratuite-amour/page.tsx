@@ -1,10 +1,9 @@
 import type { Metadata } from 'next';
-import DynamicCTAButton from '@/components/DynamicCTAButton';
-import VoyantRecommendations from '@/components/VoyantRecommendations';
+import LeadCaptureForm from '@/components/LeadCaptureForm';
 
 export const metadata: Metadata = {
-  title: 'Voyance Gratuite Amour — Premières Minutes Offertes',
-  description: 'Voyance amoureuse gratuite : profitez de premières minutes offertes avec un voyant spécialisé amour. Réponses immédiates sur votre vie sentimentale.',
+  title: 'Voyance Gratuite Amour — Tirage Tarot Personnalisé Offert',
+  description: 'Voyance amoureuse gratuite : recevez votre tirage tarot amour personnalisé. Analyse de votre situation sentimentale sans engagement.',
   robots: { index: false, follow: false },
 };
 
@@ -15,20 +14,17 @@ export default function LPVoyanceGratuiteAmour() {
       <section className="bg-gradient-to-br from-green-600 via-emerald-600 to-teal-700 text-white py-16 px-4">
         <div className="max-w-3xl mx-auto text-center">
           <div className="inline-block bg-white/20 backdrop-blur rounded-full px-4 py-1 text-sm font-semibold mb-6">
-            Offre Découverte — Premières minutes offertes
+            100% Gratuit — Sans Engagement
           </div>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-            Voyance Amour Gratuite : Testez Sans Engagement
+            Votre Tirage Tarot Amour Gratuit
           </h1>
           <p className="text-xl opacity-95 mb-8 max-w-2xl mx-auto">
-            Profitez de premières minutes offertes avec un voyant spécialisé en amour. Réponses immédiates sur votre situation sentimentale.
+            Découvrez ce que les cartes révèlent sur votre avenir amoureux. Tirage personnalisé selon votre signe et votre situation — offert.
           </p>
-          <DynamicCTAButton
-            label="Profiter de l'Offre Gratuite"
-            source="lp-voyance-gratuite-hero"
-            className="inline-block bg-white text-emerald-700 px-10 py-4 rounded-lg font-bold text-lg hover:shadow-2xl transition-all hover:scale-105"
-          />
-          <p className="mt-4 text-sm opacity-80">Sans engagement — Sans carte bancaire au départ — 100% confidentiel</p>
+          <a href="#tirage" className="inline-block bg-white text-emerald-700 px-8 py-4 rounded-lg font-bold text-lg hover:shadow-xl transition-all">
+            Recevoir Mon Tirage Gratuit ↓
+          </a>
         </div>
       </section>
 
@@ -36,23 +32,23 @@ export default function LPVoyanceGratuiteAmour() {
       <section className="py-12 px-4">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-2xl font-bold text-center mb-8 text-gray-900">
-            Ce que vous obtenez gratuitement
+            Ce que contient votre tirage gratuit
           </h2>
           <div className="grid md:grid-cols-3 gap-6 text-center">
             <div className="bg-white p-6 rounded-xl shadow-sm">
-              <div className="text-4xl mb-3">🎁</div>
-              <h3 className="font-bold mb-2">Premières Minutes Offertes</h3>
-              <p className="text-gray-600 text-sm">Testez la voyance amoureuse sans aucun engagement financier.</p>
+              <div className="text-4xl mb-3">🃏</div>
+              <h3 className="font-bold mb-2">Votre Carte Tarot</h3>
+              <p className="text-gray-600 text-sm">Une carte tirée spécifiquement pour votre situation amoureuse.</p>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-sm">
-              <div className="text-4xl mb-3">🔮</div>
-              <h3 className="font-bold mb-2">Voyant Spécialisé Amour</h3>
-              <p className="text-gray-600 text-sm">Un expert en questions sentimentales, pas un généraliste.</p>
+              <div className="text-4xl mb-3">⭐</div>
+              <h3 className="font-bold mb-2">Analyse Astrologique</h3>
+              <p className="text-gray-600 text-sm">Prédiction adaptée à votre signe et aux influences planétaires actuelles.</p>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-sm">
-              <div className="text-4xl mb-3">⚡</div>
-              <h3 className="font-bold mb-2">Réponse Immédiate</h3>
-              <p className="text-gray-600 text-sm">Voyants disponibles maintenant par téléphone ou chat.</p>
+              <div className="text-4xl mb-3">💡</div>
+              <h3 className="font-bold mb-2">Conseils Personnalisés</h3>
+              <p className="text-gray-600 text-sm">Guidance concrète et timing pour votre situation sentimentale.</p>
             </div>
           </div>
         </div>
@@ -62,7 +58,7 @@ export default function LPVoyanceGratuiteAmour() {
       <section className="py-12 px-4 bg-white">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-2xl font-bold text-center mb-8 text-gray-900">
-            Posez vos questions d'amour gratuitement
+            Les cartes répondent à vos questions d'amour
           </h2>
           <div className="space-y-3 mb-8">
             {[
@@ -78,45 +74,13 @@ export default function LPVoyanceGratuiteAmour() {
               </div>
             ))}
           </div>
-          <div className="text-center">
-            <DynamicCTAButton
-              label="Poser Ma Question Gratuitement"
-              source="lp-voyance-gratuite-mid"
-              className="inline-block bg-gradient-to-r from-emerald-600 to-teal-600 text-white px-10 py-4 rounded-lg font-bold text-lg hover:shadow-xl transition-all hover:scale-105"
-            />
-          </div>
         </div>
       </section>
 
-      {/* How it works */}
-      <section className="py-12 px-4">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-2xl font-bold text-center mb-10 text-gray-900">
-            Comment profiter de l'offre gratuite ?
-          </h2>
-          <div className="space-y-6">
-            <div className="flex gap-5 items-start">
-              <div className="w-12 h-12 bg-emerald-100 text-emerald-700 rounded-full flex items-center justify-center font-bold text-xl flex-shrink-0">1</div>
-              <div>
-                <h3 className="font-bold text-lg mb-1">Choisissez votre voyant</h3>
-                <p className="text-gray-600">Sélectionnez un voyant spécialisé amour parmi ceux disponibles en ligne.</p>
-              </div>
-            </div>
-            <div className="flex gap-5 items-start">
-              <div className="w-12 h-12 bg-emerald-100 text-emerald-700 rounded-full flex items-center justify-center font-bold text-xl flex-shrink-0">2</div>
-              <div>
-                <h3 className="font-bold text-lg mb-1">Créez votre compte</h3>
-                <p className="text-gray-600">Inscription rapide pour débloquer vos premières minutes gratuites.</p>
-              </div>
-            </div>
-            <div className="flex gap-5 items-start">
-              <div className="w-12 h-12 bg-emerald-100 text-emerald-700 rounded-full flex items-center justify-center font-bold text-xl flex-shrink-0">3</div>
-              <div>
-                <h3 className="font-bold text-lg mb-1">Posez votre question</h3>
-                <p className="text-gray-600">Consultez immédiatement par téléphone ou chat — premières minutes offertes.</p>
-              </div>
-            </div>
-          </div>
+      {/* Lead capture form */}
+      <section id="tirage" className="py-12 px-4">
+        <div className="max-w-4xl mx-auto">
+          <LeadCaptureForm source="lp-voyance-gratuite-amour" colorScheme="emerald" />
         </div>
       </section>
 
@@ -124,53 +88,21 @@ export default function LPVoyanceGratuiteAmour() {
       <section className="py-12 px-4 bg-white">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-2xl font-bold text-center mb-8 text-gray-900">
-            Elles ont testé gratuitement
+            Elles ont recu leur tirage gratuit
           </h2>
           <div className="grid md:grid-cols-2 gap-6">
             {[
-              { text: 'J\'ai testé par curiosité avec l\'offre gratuite. Le voyant a tout capté sur ma situation. Je suis revenue pour une consultation complète.', name: 'Camille P.', stars: 5 },
-              { text: 'Premières minutes suffisantes pour avoir une première réponse sur mon ex. Très impressionnée par la précision.', name: 'Laura M.', stars: 5 },
-              { text: 'Je ne croyais pas à la voyance. L\'offre gratuite m\'a convaincue. La voyante a décrit mon partenaire sans que je dise rien.', name: 'Julie K.', stars: 5 },
-              { text: 'Rapide, précis et gratuit pour commencer. Parfait pour tester sans risque.', name: 'Amélie V.', stars: 4 },
+              { text: 'J\'ai testé par curiosité. Le tirage gratuit était précis, j\'ai ensuite fait une consultation complète.', name: 'Camille P.', stars: 5 },
+              { text: 'Le tirage a mis le doigt sur exactement ce que je ressentais. Impressionnant pour un service gratuit.', name: 'Laura M.', stars: 5 },
+              { text: 'Je ne croyais pas à la voyance. Le tirage gratuit m\'a fait changer d\'avis sur la qualité des prédictions.', name: 'Julie K.', stars: 5 },
+              { text: 'Rapide, personnalisé et gratuit. Le tirage m\'a rassurée sur ma situation avec mon ex.', name: 'Amélie V.', stars: 4 },
             ].map((t, i) => (
               <div key={i} className="bg-emerald-50 p-5 rounded-lg">
                 <div className="mb-2">{'⭐'.repeat(t.stars)}</div>
-                <p className="text-gray-700 italic mb-3">"{t.text}"</p>
+                <p className="text-gray-700 italic mb-3">&quot;{t.text}&quot;</p>
                 <p className="text-sm font-semibold text-gray-500">— {t.name}</p>
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Voyants */}
-      <section className="py-12 px-4">
-        <div className="max-w-4xl mx-auto">
-          <VoyantRecommendations
-            topic="voyance-gratuite"
-            title="Voyants Disponibles — Offre Gratuite"
-            subtitle="Premières minutes offertes avec ces voyants spécialisés amour"
-            limit={3}
-            showOnlineFirst={true}
-            source="lp-voyance-gratuite"
-          />
-        </div>
-      </section>
-
-      {/* Final CTA */}
-      <section className="bg-gradient-to-br from-green-600 via-emerald-600 to-teal-700 text-white py-16 px-4">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-4">Essayez Gratuitement, Maintenant</h2>
-          <p className="text-lg opacity-95 mb-8">Premières minutes offertes — sans engagement, sans risque.</p>
-          <DynamicCTAButton
-            label="Profiter de l'Offre Gratuite"
-            source="lp-voyance-gratuite-final"
-            className="inline-block bg-white text-emerald-700 px-10 py-4 rounded-lg font-bold text-lg hover:shadow-2xl transition-all hover:scale-105"
-          />
-          <div className="flex justify-center gap-8 mt-6 text-sm opacity-80">
-            <span>Sans engagement</span>
-            <span>Confidentiel</span>
-            <span>Disponible 7j/7</span>
           </div>
         </div>
       </section>
