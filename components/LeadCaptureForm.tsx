@@ -41,11 +41,18 @@ export default function LeadCaptureForm({ source, colorScheme }: LeadCaptureForm
     e.preventDefault();
     if (!name || !email || !zodiac || !situation) return;
 
-    // Store lead in localStorage
-    const lead = { name, email, zodiac, situation, source, timestamp: new Date().toISOString() };
-    const existing = JSON.parse(localStorage.getItem('voyantlove_leads') || '[]');
-    existing.push(lead);
-    localStorage.setItem('voyantlove_leads', JSON.stringify(existing));
+    // Send lead to Brevo via API (non-blocking)
+    fetch('/api/leads', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ name, email, zodiac, situation, source }),
+    }).catch(() => {
+      // Fallback: store in localStorage if API fails
+      const lead = { name, email, zodiac, situation, source, timestamp: new Date().toISOString() };
+      const stored = JSON.parse(localStorage.getItem('voyantlove_leads') || '[]');
+      stored.push(lead);
+      localStorage.setItem('voyantlove_leads', JSON.stringify(stored));
+    });
 
     // Track event
     window.dataLayer?.push({
