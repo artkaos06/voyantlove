@@ -147,8 +147,8 @@ export function getAvailabilityServices(voyant: Voyant): string[] {
 // Generate affiliate link for MonSiteVoyance
 export function getAffiliateLink(voyantId: string, source: string = 'voyantlove'): string {
   // MonSiteVoyance affiliate URL with partner ID 383
-  // Format: https://www.monsitevoyance.com/zoom_voyant.php?id=<ID>&partner=383&ref=<source>
-  return `https://www.monsitevoyance.com/zoom_voyant.php?id=${voyantId}&partner=383&ref=${source}`;
+  // Format: https://www.monsitevoyance.com/zoom_voyant.php?id=<ID>&partner=936&ref=<source>
+  return `https://www.monsitevoyance.com/zoom_voyant.php?id=${voyantId}&partner=936&ref=${source}`;
 }
 
 // Get gender label
