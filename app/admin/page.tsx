@@ -37,6 +37,8 @@ const EXTERNAL_LINKS = {
   ga4Realtime: 'https://analytics.google.com/analytics/web/#/realtime',
   ga4Events: 'https://analytics.google.com/analytics/web/#/reports/explorer',
   ga4Acquisition: 'https://analytics.google.com/analytics/web/#/reports/acquisition',
+  bingAds: 'https://ui.ads.microsoft.com/campaign/Campaigns',
+  bingUET: 'https://ui.ads.microsoft.com/campaign/uet',
   gtm: 'https://tagmanager.google.com/#/container/accounts/6344588242/containers/246482590/workspaces',
   brevo: 'https://app.brevo.com/contacts',
   brevoAutomation: 'https://app.brevo.com/automation',
@@ -155,6 +157,17 @@ export default function AdminDashboard() {
               </a>
               <a href={EXTERNAL_LINKS.ga4Acquisition} target="_blank" rel="noopener" className="block text-blue-400 hover:text-blue-300 text-sm">
                 Traffic Acquisition →
+              </a>
+            </div>
+          </div>
+          <div className="bg-gray-800 rounded-xl p-5">
+            <h2 className="font-bold text-lg mb-3">Bing Ads</h2>
+            <div className="space-y-2">
+              <a href={EXTERNAL_LINKS.bingAds} target="_blank" rel="noopener" className="block text-cyan-400 hover:text-cyan-300 text-sm">
+                Campaigns Overview →
+              </a>
+              <a href={EXTERNAL_LINKS.bingUET} target="_blank" rel="noopener" className="block text-cyan-400 hover:text-cyan-300 text-sm">
+                UET Tag Status →
               </a>
             </div>
           </div>
