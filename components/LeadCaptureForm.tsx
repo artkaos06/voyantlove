@@ -2,8 +2,6 @@
 
 import React, { useState, useRef } from 'react';
 import { ZODIAC_SIGNS, SITUATION_TYPES, getPrediction, type SituationType, type ZodiacSign, type TarotPrediction } from '@/data/tarot-predictions';
-import DynamicCTAButton from '@/components/DynamicCTAButton';
-import VoyantRecommendations from '@/components/VoyantRecommendations';
 
 interface LeadCaptureFormProps {
   source: string;
@@ -109,25 +107,16 @@ export default function LeadCaptureForm({ source, colorScheme }: LeadCaptureForm
             Pour aller plus loin...
           </h3>
           <p className="text-gray-600 mb-6 max-w-xl mx-auto">
-            Ce tirage gratuit donne un aperçu général. Pour une analyse <strong>personnalisée et approfondie</strong> de votre situation avec des dates et détails précis, consultez un voyant spécialisé.
+            Ce tirage gratuit donne un aperçu général. Pour une analyse <strong>personnalisée et approfondie</strong> de votre situation avec des dates et détails précis, choisissez un voyant spécialisé.
           </p>
-          <DynamicCTAButton
-            label="Consultation Personnalisée Maintenant"
-            source={`${source}-post-prediction`}
+          <a
+            href={`/consulter?ref=${source}-post-prediction`}
             className={`inline-block ${btnClass} text-white px-10 py-4 rounded-lg font-bold text-lg transition-all hover:scale-105 hover:shadow-xl`}
-          />
+          >
+            Choisir Mon Voyant Maintenant
+          </a>
           <p className="text-xs text-gray-500 mt-3">Paiement sécurisé — Confidentiel — Voyants disponibles 7j/7</p>
         </div>
-
-        {/* Voyant recommendations */}
-        <VoyantRecommendations
-          topic={topicMap[situation as SituationType]}
-          title="Voyants Recommandés pour Votre Situation"
-          subtitle="Ces voyants sont spécialisés dans votre problématique"
-          limit={3}
-          showOnlineFirst={true}
-          source={`${source}-post-prediction`}
-        />
       </div>
     );
   }
