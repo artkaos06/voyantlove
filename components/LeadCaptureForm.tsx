@@ -116,7 +116,7 @@ export default function LeadCaptureForm({ source, colorScheme }: LeadCaptureForm
           >
             📞 01 75 75 45 82
           </a>
-          <p className="text-green-700 font-semibold mt-3">15 minutes gratuites pour votre 1re consultation</p>
+          <p className="text-green-700 font-semibold mt-3">10 minutes gratuites pour votre 1re consultation</p>
           <p className="text-xs text-gray-500 mt-1">Voyants disponibles maintenant — Appel confidentiel</p>
         </div>
 
