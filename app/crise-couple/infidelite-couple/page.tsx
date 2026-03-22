@@ -110,7 +110,7 @@ export default function InfideliteCouplePage() {
             La découverte d'une <strong>infidélité</strong> provoque un <strong>traumatisme émotionnel</strong> profond : choc, colère, douleur intense, perte de confiance en soi, et questionnement existentiel sur la réalité de votre relation. Les personnes trahies parlent souvent de "mort symbolique" de la relation qu'elles croyaient avoir. Le chemin de <strong>guérison après l'infidélité</strong> est long et complexe, mais il est possible.
           </p>
           <p className="text-lg leading-relaxed mb-4">
-            Le <strong>tarot de l'infidélité</strong> offre une perspective unique sur cette crise : il permet de décrypter non seulement la vérité sur la trahison, mais aussi les <strong>causes profondes karmiques et énergétiques</strong>, les leçons à apprendre, et surtout, si votre couple peut réellement se reconstruire ou si la séparation est la voie de libération. La voyance ne juge pas, elle éclaire pour que vous puissiez prendre la décision la plus alignée avec votre bien-être.
+            Le <strong>tarot de l'infidélité</strong> offre une perspective unique sur cette crise : il révèle non seulement la vérité sur la trahison, mais aussi les <strong>causes profondes karmiques et énergétiques</strong>, les leçons à apprendre, et surtout, si votre couple peut réellement se reconstruire ou si la séparation est la voie de libération. La voyance ne juge pas, elle éclaire pour que vous puissiez prendre la décision la plus alignée avec votre bien-être.
           </p>
           <p className="text-lg leading-relaxed">
             Que vous soyez en train de découvrir l'infidélité, en plein processus de pardon, ou en questionnement sur rester ou partir, ce guide complet vous accompagne. Pour comprendre l'ensemble des <Link href="/crise-couple" className="text-rose-600 hover:text-rose-800 underline font-medium">crises de couple</Link>, découvrez toutes nos guidances spécialisées pour traverser les tempêtes relationnelles.
@@ -352,7 +352,7 @@ export default function InfideliteCouplePage() {
                   <ul className="list-disc list-inside text-gray-700 space-y-1 ml-4">
                     <li>Quels besoins n'étaient pas comblés dans notre couple ? (pas une excuse, mais une compréhension)</li>
                     <li>Quelles blessures personnelles du partenaire infidèle ont favorisé ce choix ?</li>
-                    <li>Comment interpréter les signaux d'alarme ignorés dans notre relation ?</li>
+                    <li>Y avait-il des signaux d'alarme ignorés dans notre relation ?</li>
                     <li>Comment notre communication a-t-elle failli ?</li>
                     <li>Quels patterns familiaux ou de relation passée se répètent ?</li>
                   </ul>

@@ -95,13 +95,13 @@ export default function VaTilRevenirPage() {
         <article className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-purple-600">
           <div className="prose prose-lg max-w-none">
             <p className="text-lg leading-relaxed mb-4">
-              La question "<strong>va-t-il/elle revenir</strong>" est la plus posée en <strong>voyance amoureuse</strong>. Le <strong>tarot</strong> peut répondre en analysant les énergies actuelles, les sentiments de votre <strong>ex</strong>, et les probabilités de <strong>retour</strong> selon la configuration astrologique. La réponse n'est jamais un simple oui ou non, mais une interprétation nuancée des facteurs en jeu.
+              La question "<strong>va-t-il/elle revenir</strong>" est la plus posée en <strong>voyance amoureuse</strong>. Le <strong>tarot</strong> peut répondre en analysant les énergies actuelles, les sentiments de votre <strong>ex</strong>, et les probabilités de <strong>retour</strong> selon la configuration astrologique. La réponse n'est jamais un simple oui ou non, mais une analyse nuancée des facteurs en jeu.
             </p>
             <p className="text-lg leading-relaxed mb-4">
               Le tirage révèle : ce que votre ex ressent maintenant, s'il/elle pense à vous, les obstacles au retour, le <strong>timing</strong> probable si retour il y a, et surtout si ce retour serait dans votre intérêt. Un <Link href="/methodes-voyance/tirage-tarot-amour" className="text-purple-600 hover:text-purple-800 underline font-medium">tirage de tarot amoureux</Link> personnalisé affine ces réponses selon votre situation. Parfois, le tarot vous montrera qu'un retour est possible mais déconseillé pour votre évolution. D'autres fois, il confirmera un retour imminent avec des signes concrets à observer.
             </p>
             <p className="text-lg leading-relaxed">
-              Là où l'impatience pousse à forcer le contact, la voyance vous aide à respecter le bon timing. Un <strong>voyant honnête</strong> ne vous donnera pas de faux espoirs. Si les cartes montrent que votre ex a tourné la page, il vous le dira avec bienveillance pour vous permettre d'avancer. Si un <strong>retour</strong> est probable, il vous indiquera les conditions et le timing. Pour en savoir plus sur les <Link href="/reconquete" className="text-purple-600 hover:text-purple-800 underline font-medium">retrouvailles</Link>, découvrez toutes nos guidances spécialisées.
+              Un <strong>voyant honnête</strong> ne vous donnera pas de faux espoirs. Si les cartes montrent que votre ex a tourné la page, il vous le dira avec bienveillance pour vous permettre d'avancer. Si un <strong>retour</strong> est probable, il vous indiquera les conditions et le timing. Pour en savoir plus sur les <Link href="/reconquete" className="text-purple-600 hover:text-purple-800 underline font-medium">retrouvailles</Link>, découvrez toutes nos guidances spécialisées.
             </p>
           </div>
         </article>
@@ -164,7 +164,7 @@ export default function VaTilRevenirPage() {
         <section id="signes" className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">💡 Les Signes Concrets qu'il/elle Va Revenir</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Les signes qu'un ex va revenir incluent la reprise de contact, les questions indirectes via des amis, les réactions sur les réseaux sociaux, les croisements répétés et le refus de rendre vos affaires.</p>
-          <p className="text-gray-700 leading-relaxed mb-6">Apprenez à décrypter ces indices dans votre vie quotidienne -- ils confirment ce que le tarot a révélé.</p>
+          <p className="text-gray-700 leading-relaxed mb-6">Observez ces indices dans votre vie quotidienne - ils confirment ce que le tarot a révélé.</p>
           <div className="space-y-3">
             <div className="flex items-start gap-3 p-4 bg-green-50 rounded-lg">
               <div className="text-2xl">✓</div>

@@ -134,11 +134,11 @@ export default function OublierSonExPage() {
             </p>
             
             <p className="text-lg leading-relaxed mb-4">
-              Le <strong>tirage de l'oubli</strong> vous aide à interpréter pourquoi cette relation devait se terminer, les leçons à en tirer, et quand vous serez prêt(e) à accueillir un <strong>nouvel amour</strong>. La voyance n'efface pas la douleur magiquement, mais elle éclaire le chemin de guérison et vous rassure sur votre capacité à aimer à nouveau. L'astrologie identifie les périodes propices à la fermeture émotionnelle et à l'ouverture vers l'avenir. Pour en savoir plus sur le <Link href="/rupture" className="text-purple-600 hover:text-purple-800 underline font-medium">chagrin d'amour</Link>, découvrez toutes nos guidances spécialisées sur la guérison émotionnelle.
+              Le <strong>tirage de l'oubli</strong> vous aide à comprendre pourquoi cette relation devait se terminer, les leçons à en tirer, et quand vous serez prêt(e) à accueillir un <strong>nouvel amour</strong>. La voyance n'efface pas la douleur magiquement, mais elle éclaire le chemin de guérison et vous rassure sur votre capacité à aimer à nouveau. L'astrologie identifie les périodes propices à la fermeture émotionnelle et à l'ouverture vers l'avenir. Pour en savoir plus sur le <Link href="/rupture" className="text-purple-600 hover:text-purple-800 underline font-medium">chagrin d'amour</Link>, découvrez toutes nos guidances spécialisées sur la guérison émotionnelle.
             </p>
             
             <p className="text-lg leading-relaxed">
-              Là où la nostalgie vous ramène en arrière, le tarot éclaire le chemin vers l'avant. Tourner la page ne signifie pas oublier complètement, mais transformer la douleur en sagesse. Un <strong>voyant bienveillant</strong> vous guide vers votre reconstruction intérieure et la préparation à votre <Link href="/nouvelle-rencontre/quand-rencontre-amour" className="text-purple-600 hover:text-purple-800 underline font-medium">prochaine rencontre amoureuse</Link>.
+              Tourner la page ne signifie pas oublier complètement, mais transformer la douleur en sagesse. Un <strong>voyant bienveillant</strong> vous guide vers votre reconstruction intérieure et la préparation à votre <Link href="/nouvelle-rencontre/quand-rencontre-amour" className="text-purple-600 hover:text-purple-800 underline font-medium">prochaine rencontre amoureuse</Link>.
             </p>
           </div>
         </article>
@@ -258,7 +258,7 @@ export default function OublierSonExPage() {
           </h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Vous êtes prêt(e) à aimer à nouveau quand vous pensez rarement à votre ex, que les souvenirs ne font plus mal, que la joie de vivre revient et que vous ne comparez plus chaque nouvelle personne à votre ancien partenaire.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Le tarot permet de décrypter cette ouverture émotionnelle avec des cartes comme <strong>Le Soleil</strong>, <strong>L'Étoile</strong>, ou l'<strong>As de Coupe</strong>. Voici les signes concrets que votre cœur est à nouveau disponible :
+            Le tarot confirme cette ouverture émotionnelle avec des cartes comme <strong>Le Soleil</strong>, <strong>L'Étoile</strong>, ou l'<strong>As de Coupe</strong>. Voici les signes concrets que votre cœur est à nouveau disponible :
           </p>
           
           <div className="space-y-3">

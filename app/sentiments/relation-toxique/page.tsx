@@ -122,7 +122,7 @@ export default function RelationToxiquePage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">&#x1F6A8; Les 10 Signes d&rsquo;une Relation Toxique</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Controle permanent, jalousie excessive, manipulation emotionnelle, isolement social, gaslighting, cycles rupture-reconciliation, devalorisation, chantage, epuisement et perte d'identite sont les 10 signes cles d'une relation toxique.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Reconna&icirc;tre les <strong>signes d&rsquo;une relation toxique</strong> est la premi&egrave;re &eacute;tape vers la lib&eacute;ration. Ces comportements, souvent insidieux, s&rsquo;installent progressivement et finissent par para&icirc;tre &laquo; normaux &raquo;. Le <strong>tarot</strong> d&eacute;crypte ces dynamiques destructrices avec une pr&eacute;cision saisissante.
+            Reconna&icirc;tre les <strong>signes d&rsquo;une relation toxique</strong> est la premi&egrave;re &eacute;tape vers la lib&eacute;ration. Ces comportements, souvent insidieux, s&rsquo;installent progressivement et finissent par para&icirc;tre &laquo; normaux &raquo;. Le <strong>tarot</strong> met en lumi&egrave;re ces dynamiques destructrices avec une pr&eacute;cision saisissante.
           </p>
 
           <div className="space-y-4">
@@ -402,7 +402,7 @@ export default function RelationToxiquePage() {
 
             <div className="border-b border-gray-200 pb-6">
               <h3 className="text-xl font-bold text-gray-900 mb-3">Pourquoi est-ce si dur de quitter un toxique ?</h3>
-              <p className="text-gray-700 leading-relaxed">Quitter une relation toxique est extr&ecirc;mement difficile en raison de m&eacute;canismes psychologiques puissants. Le <strong>trauma bonding</strong> cr&eacute;e un attachement paradoxal o&ugrave; les moments de douceur apr&egrave;s la violence renforcent le lien. La <strong>d&eacute;pendance affective</strong> vous fait croire que vous ne pouvez pas survivre sans l&rsquo;autre. Le <strong>gaslighting</strong> a &eacute;rod&eacute; votre confiance en votre propre jugement. L&rsquo;isolement social vous prive de soutien ext&eacute;rieur. Le tarot interpr&egrave;te ces pi&egrave;ges invisibles &agrave; travers Le Diable (cha&icirc;nes volontaires), La Lune (illusions et confusion) et le <strong>Huit de Coupe invers&eacute;</strong> (incapacit&eacute; &agrave; partir malgr&eacute; la souffrance).</p>
+              <p className="text-gray-700 leading-relaxed">Quitter une relation toxique est extr&ecirc;mement difficile en raison de m&eacute;canismes psychologiques puissants. Le <strong>trauma bonding</strong> cr&eacute;e un attachement paradoxal o&ugrave; les moments de douceur apr&egrave;s la violence renforcent le lien. La <strong>d&eacute;pendance affective</strong> vous fait croire que vous ne pouvez pas survivre sans l&rsquo;autre. Le <strong>gaslighting</strong> a &eacute;rod&eacute; votre confiance en votre propre jugement. L&rsquo;isolement social vous prive de soutien ext&eacute;rieur. Le tarot &eacute;claire ces pi&egrave;ges invisibles &agrave; travers Le Diable (cha&icirc;nes volontaires), La Lune (illusions et confusion) et le <strong>Huit de Coupe invers&eacute;</strong> (incapacit&eacute; &agrave; partir malgr&eacute; la souffrance).</p>
             </div>
 
             <div>

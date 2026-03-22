@@ -110,7 +110,7 @@ export default function NouvelleRelationAmourseusePage() {
             Cette période se caractérise par un cocktail hormonal puissant (dopamine, ocytocine, sérotonine) qui vous fait voir la vie en rose. C'est la fameuse <strong>phase de lune de miel</strong> où tout semble parfait. Mais attention : ces hormones peuvent masquer des incompatibilités ou des red flags. D'où l'importance de rester conscient tout en profitant de cette magie.
           </p>
           <p className="text-lg leading-relaxed">
-            Ce guide complet vous révèle les <strong>étapes naturelles d'une nouvelle relation</strong>, les erreurs fatales à éviter, comment construire des bases saines, et les signes qu'une relation a un potentiel de durabilité. Que vous ayez longtemps cherché <Link href="/nouvelle-rencontre/quand-rencontre-amour" className="text-rose-600 hover:text-rose-800 underline font-medium">quand rencontrer l'amour</Link> ou que le destin vous ait surpris, le <strong>tarot de couple</strong> peut décrypter les énergies en jeu et l'avenir probable de votre union naissante. Pour découvrir d'autres aspects de votre <Link href="/nouvelle-rencontre" className="text-rose-600 hover:text-rose-800 underline font-medium">nouvelle rencontre amoureuse</Link>, explorez toutes nos guidances spécialisées.
+            Ce guide complet vous révèle les <strong>étapes naturelles d'une nouvelle relation</strong>, les erreurs fatales à éviter, comment construire des bases saines, et les signes qu'une relation a un potentiel de durabilité. Que vous ayez longtemps cherché <Link href="/nouvelle-rencontre/quand-rencontre-amour" className="text-rose-600 hover:text-rose-800 underline font-medium">quand rencontrer l'amour</Link> ou que le destin vous ait surpris, le <strong>tarot de couple</strong> peut éclairer les énergies en jeu et l'avenir probable de votre union naissante. Pour découvrir d'autres aspects de votre <Link href="/nouvelle-rencontre" className="text-rose-600 hover:text-rose-800 underline font-medium">nouvelle rencontre amoureuse</Link>, explorez toutes nos guidances spécialisées.
           </p>
         </article>
 
@@ -226,7 +226,7 @@ export default function NouvelleRelationAmourseusePage() {
             <div className="bg-white rounded-lg p-5 border-l-4 border-blue-500">
               <h3 className="font-bold text-blue-700 mb-2 text-lg">3. Gestion Saine des Conflits</h3>
               <p className="text-gray-700">
-                Les désaccords sont inévitables et sains. Ce qui compte : <strong>comment vous les gérez</strong>. Évitez les 4 cavaliers de l'apocalypse relationnelle selon Gottman : critique, mépris, défensivité, retrait. Privilégiez : écoute, validation des émotions, recherche de solutions gagnant-gagnant, réparation après conflit. Les premiers conflits révèlent beaucoup sur la dynamique du couple et il est essentiel d'interpréter ces signaux dès le départ.
+                Les désaccords sont inévitables et sains. Ce qui compte : <strong>comment vous les gérez</strong>. Évitez les 4 cavaliers de l'apocalypse relationnelle selon Gottman : critique, mépris, défensivité, retrait. Privilégiez : écoute, validation des émotions, recherche de solutions gagnant-gagnant, réparation après conflit. Les premiers conflits révèlent beaucoup.
               </p>
             </div>
 
