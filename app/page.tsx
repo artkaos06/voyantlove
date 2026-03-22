@@ -266,7 +266,7 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-3 gap-6 mb-12">
             <div className="bg-gray-50 rounded-xl p-6 text-center">
               <div className="text-3xl mb-3">🔮</div>
               <h3 className="font-bold text-lg mb-2">Voyance Sentimentale</h3>
@@ -282,6 +282,111 @@ export default function HomePage() {
               <h3 className="font-bold text-lg mb-2">Expertise Reconnue</h3>
               <p className="text-gray-600 text-sm">Nos <strong>voyants spécialisés amour</strong> comptent des années d'expérience en <strong>voyance amoureuse</strong> avec des milliers de consultations réussies.</p>
             </div>
+          </div>
+
+          {/* Session walkthrough */}
+          <h3 className="text-2xl font-bold text-gray-900 mb-4">Comment se Déroule une Séance avec un Voyant Amour ?</h3>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            Une consultation avec un <strong>voyant amour</strong> commence par un échange sur votre situation sentimentale. Vous n'avez pas besoin de tout raconter — un voyant expérimenté capte les énergies dès les premières secondes. Il ou elle pose peu de questions et commence rapidement à vous transmettre ce qu'il perçoit : les émotions de l'autre personne, les blocages dans la relation, et les événements à venir.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-8">
+            Le voyant utilise ensuite un support divinatoire — <strong>tarot de Marseille</strong>, oracle ou clairvoyance pure — pour approfondir l'analyse. Chaque carte tirée apporte une information spécifique : les sentiments réels, le timing d'un événement, ou les obstacles à lever. La séance dure en moyenne 20 à 40 minutes et se termine par des <strong>conseils concrets</strong> adaptés à votre situation. Pas de généralités : des réponses personnalisées à vos questions précises.
+          </p>
+
+          {/* Singles vs couples */}
+          <h3 className="text-2xl font-bold text-gray-900 mb-4">Voyant Amour pour Célibataires</h3>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            Si vous êtes célibataire, un <strong>voyant spécialisé amour</strong> peut vous aider sur plusieurs plans : <Link href="/nouvelle-rencontre/quand-rencontre-amour" className="text-purple-600 hover:text-purple-800 underline font-medium">quand allez-vous rencontrer quelqu'un</Link>, quel profil correspond à votre chemin de vie, et quels blocages émotionnels (peur de l'abandon, schémas répétitifs, blessures non guéries) retardent inconsciemment cette rencontre. Le tarot révèle aussi le contexte probable — en ligne, par des amis, au travail — pour que vous soyez au bon endroit au bon moment.
+          </p>
+
+          <h3 className="text-2xl font-bold text-gray-900 mb-4">Voyant Amour pour Couples</h3>
+          <p className="text-gray-700 leading-relaxed mb-8">
+            En couple, les questions sont différentes : <Link href="/sentiments/maime-t-il-elle" className="text-purple-600 hover:text-purple-800 underline font-medium">m'aime-t-il/elle encore ?</Link>, y a-t-il quelqu'un d'autre ?, <Link href="/crise-couple" className="text-purple-600 hover:text-purple-800 underline font-medium">comment surmonter cette crise ?</Link>, notre couple a-t-il un avenir ? Un voyant amour capte les dynamiques entre les deux partenaires et identifie les non-dits, les frustrations accumulées et les chemins de réconciliation possibles. Il ne juge pas — il éclaire ce que chacun ressent vraiment.
+          </p>
+
+          {/* What questions to ask */}
+          <h3 className="text-2xl font-bold text-gray-900 mb-4">Quelles Questions Poser à un Voyant Amour ?</h3>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            Les meilleures consultations commencent par des questions précises. Voici les questions les plus fréquentes que nos consultants posent à un <strong>voyant amour</strong> :
+          </p>
+          <div className="grid md:grid-cols-2 gap-3 mb-8">
+            <div className="bg-purple-50 rounded-lg p-3">
+              <p className="text-gray-800 text-sm">Que ressent-il/elle vraiment pour moi ?</p>
+            </div>
+            <div className="bg-purple-50 rounded-lg p-3">
+              <p className="text-gray-800 text-sm"><Link href="/reconquete/va-t-il-elle-revenir" className="text-purple-600 hover:text-purple-800 underline">Mon ex va-t-il/elle revenir ?</Link></p>
+            </div>
+            <div className="bg-purple-50 rounded-lg p-3">
+              <p className="text-gray-800 text-sm"><Link href="/nouvelle-rencontre/quand-rencontre-amour" className="text-purple-600 hover:text-purple-800 underline">Quand vais-je rencontrer l'amour ?</Link></p>
+            </div>
+            <div className="bg-purple-50 rounded-lg p-3">
+              <p className="text-gray-800 text-sm">Est-il/elle fidèle ?</p>
+            </div>
+            <div className="bg-purple-50 rounded-lg p-3">
+              <p className="text-gray-800 text-sm">Notre couple a-t-il un avenir ?</p>
+            </div>
+            <div className="bg-purple-50 rounded-lg p-3">
+              <p className="text-gray-800 text-sm">Sommes-nous compatibles ?</p>
+            </div>
+            <div className="bg-purple-50 rounded-lg p-3">
+              <p className="text-gray-800 text-sm">Pourquoi est-il/elle distant(e) ?</p>
+            </div>
+            <div className="bg-purple-50 rounded-lg p-3">
+              <p className="text-gray-800 text-sm"><Link href="/reconquete/reconquerir-son-ex" className="text-purple-600 hover:text-purple-800 underline">Comment reconquérir mon ex ?</Link></p>
+            </div>
+          </div>
+
+          {/* Divination methods */}
+          <h3 className="text-2xl font-bold text-gray-900 mb-4">Les Méthodes de Voyance Amoureuse</h3>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            Un <strong>voyant amour</strong> utilise différents supports selon votre question et sa sensibilité. Chaque méthode apporte un éclairage complémentaire :
+          </p>
+          <div className="space-y-4 mb-8">
+            <div className="bg-gray-50 rounded-lg p-4">
+              <p className="font-semibold text-gray-900 mb-1">Tarot de Marseille</p>
+              <p className="text-gray-700 text-sm">Le support le plus utilisé en voyance amour. Les 22 arcanes majeurs — en particulier <strong>L'Amoureux</strong>, <strong>Le Soleil</strong> et <strong>L'Étoile</strong> — révèlent les dynamiques sentimentales, les obstacles et l'évolution probable de votre relation. L'Amoureux indique un choix sentimental imminent, Le Soleil annonce une période de bonheur et d'harmonie, L'Étoile symbolise l'espoir et le renouveau après une épreuve.</p>
+            </div>
+            <div className="bg-gray-50 rounded-lg p-4">
+              <p className="font-semibold text-gray-900 mb-1">Clairvoyance Pure</p>
+              <p className="text-gray-700 text-sm">Certains voyants n'utilisent aucun support — ils captent directement les émotions et les images liées à votre situation. Cette méthode est particulièrement efficace pour ressentir ce que l'autre personne éprouve en ce moment.</p>
+            </div>
+            <div className="bg-gray-50 rounded-lg p-4">
+              <p className="font-semibold text-gray-900 mb-1">Astrologie Amoureuse</p>
+              <p className="text-gray-700 text-sm">L'analyse des <strong>transits de Vénus et Jupiter</strong> dans vos maisons relationnelles permet de déterminer les périodes les plus favorables aux rencontres et à l'épanouissement amoureux. La <Link href="/nouvelle-rencontre" className="text-purple-600 hover:text-purple-800 underline font-medium">compatibilité astrologique</Link> entre deux personnes révèle les forces et les zones de tension de la relation.</p>
+            </div>
+            <div className="bg-gray-50 rounded-lg p-4">
+              <p className="font-semibold text-gray-900 mb-1">Numérologie Sentimentale</p>
+              <p className="text-gray-700 text-sm">Votre chemin de vie et celui de votre partenaire (ou futur partenaire) révèlent la compatibilité profonde et les cycles amoureux que vous traversez. La numérologie identifie les années personnelles favorables à l'amour.</p>
+            </div>
+          </div>
+
+          {/* When to consult */}
+          <h3 className="text-2xl font-bold text-gray-900 mb-4">Dans Quel Cas Consulter un Voyant Amour ?</h3>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            Une consultation avec un <strong>voyant amour</strong> est particulièrement utile dans ces situations :
+          </p>
+          <div className="grid md:grid-cols-2 gap-4 mb-4">
+            <div className="bg-purple-50 rounded-lg p-4">
+              <p className="font-semibold text-gray-900 mb-1">Doute sur les sentiments</p>
+              <p className="text-gray-700 text-sm">Vous ne savez pas ce que l'autre ressent et l'incertitude vous empêche d'avancer.</p>
+            </div>
+            <div className="bg-purple-50 rounded-lg p-4">
+              <p className="font-semibold text-gray-900 mb-1">Après une rupture</p>
+              <p className="text-gray-700 text-sm">Vous voulez savoir si un <Link href="/reconquete" className="text-purple-600 hover:text-purple-800 underline">retour est possible</Link> ou comment tourner la page.</p>
+            </div>
+            <div className="bg-purple-50 rounded-lg p-4">
+              <p className="font-semibold text-gray-900 mb-1">Envie de rencontrer quelqu'un</p>
+              <p className="text-gray-700 text-sm">Célibataire depuis longtemps, vous cherchez à savoir <Link href="/nouvelle-rencontre" className="text-purple-600 hover:text-purple-800 underline">quand et comment</Link> l'amour arrivera.</p>
+            </div>
+            <div className="bg-purple-50 rounded-lg p-4">
+              <p className="font-semibold text-gray-900 mb-1">Crise de couple</p>
+              <p className="text-gray-700 text-sm">Disputes, distance, infidélité suspectée — vous avez besoin de comprendre ce qui se passe vraiment.</p>
+            </div>
+          </div>
+          <div className="bg-amber-50 border-l-4 border-amber-500 p-6 rounded-lg mb-8">
+            <p className="text-gray-800 leading-relaxed">
+              <strong>Conseil important :</strong> une bonne consultation suffit à éclairer votre situation. Évitez de multiplier les voyants ou de consulter trop souvent — cela crée de la confusion plutôt que de la clarté. Choisissez un <strong>voyant amour</strong> de confiance et suivez ses conseils dans la durée.
+            </p>
           </div>
         </div>
       </section>
