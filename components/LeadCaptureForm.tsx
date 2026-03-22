@@ -98,26 +98,26 @@ export default function LeadCaptureForm({ source, colorScheme }: LeadCaptureForm
               <h4 className="font-bold text-gray-900 mb-1">Votre timing</h4>
               <p className="text-gray-700">{prediction.timeframe}</p>
             </div>
-          </div>
-        </div>
 
-        {/* Phone CTA - Direct conversion */}
-        <div className="bg-white rounded-xl shadow-lg p-8 mb-6 text-center border-2 border-green-400">
-          <h3 className="text-2xl font-bold text-gray-900 mb-3">
-            Parlez à un Voyant Maintenant
-          </h3>
-          <p className="text-gray-600 mb-4 max-w-xl mx-auto">
-            Pour une analyse <strong>personnalisée et approfondie</strong> de votre situation, appelez directement un voyant spécialisé amour.
-          </p>
-          <a
-            href="tel:0175754582"
-            onClick={() => window.dataLayer?.push({ event: 'phone_click', cta_label: `phone-${source}` })}
-            className="inline-block bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 text-white px-10 py-4 rounded-lg font-bold text-xl transition-all hover:scale-105 hover:shadow-xl"
-          >
-            📞 01 75 75 45 82
-          </a>
-          <p className="text-green-700 font-semibold mt-3">10 minutes gratuites pour votre 1re consultation</p>
-          <p className="text-xs text-gray-500 mt-1">Voyants disponibles maintenant — Appel confidentiel</p>
+            {/* Phone CTA - Inside prediction card */}
+            <div className="bg-white rounded-xl p-6 text-center border-2 border-green-400 shadow-md mt-2">
+              <h4 className="text-xl font-bold text-gray-900 mb-2">
+                Allez plus loin — Parlez à un Voyant
+              </h4>
+              <p className="text-gray-600 text-sm mb-4">
+                Obtenez des réponses précises et personnalisées sur votre situation
+              </p>
+              <a
+                href="tel:0175754582"
+                onClick={() => window.dataLayer?.push({ event: 'phone_click', cta_label: `phone-${source}` })}
+                className="inline-block bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 text-white px-8 py-4 rounded-lg font-bold text-xl transition-all hover:scale-105 hover:shadow-xl"
+              >
+                📞 01 75 75 45 82
+              </a>
+              <p className="text-green-700 font-semibold mt-3 text-sm">10 minutes gratuites — 1re consultation offerte</p>
+              <p className="text-xs text-gray-500 mt-1">Voyants disponibles maintenant — Appel confidentiel</p>
+            </div>
+          </div>
         </div>
 
         {/* Online consultation CTA */}
