@@ -101,21 +101,39 @@ export default function LeadCaptureForm({ source, colorScheme }: LeadCaptureForm
           </div>
         </div>
 
-        {/* Upsell to paid consultation */}
-        <div className="bg-white rounded-xl shadow-lg p-8 mb-8 text-center">
+        {/* Phone CTA - Direct conversion */}
+        <div className="bg-white rounded-xl shadow-lg p-8 mb-6 text-center border-2 border-green-400">
           <h3 className="text-2xl font-bold text-gray-900 mb-3">
-            Pour aller plus loin...
+            Parlez à un Voyant Maintenant
           </h3>
-          <p className="text-gray-600 mb-6 max-w-xl mx-auto">
-            Ce tirage gratuit donne un aperçu général. Pour une analyse <strong>personnalisée et approfondie</strong> de votre situation avec des dates et détails précis, choisissez un voyant spécialisé.
+          <p className="text-gray-600 mb-4 max-w-xl mx-auto">
+            Pour une analyse <strong>personnalisée et approfondie</strong> de votre situation, appelez directement un voyant spécialisé amour.
+          </p>
+          <a
+            href="tel:0175754582"
+            onClick={() => window.dataLayer?.push({ event: 'phone_click', cta_label: `phone-${source}` })}
+            className="inline-block bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 text-white px-10 py-4 rounded-lg font-bold text-xl transition-all hover:scale-105 hover:shadow-xl"
+          >
+            📞 01 75 75 45 82
+          </a>
+          <p className="text-green-700 font-semibold mt-3">15 minutes gratuites pour votre 1re consultation</p>
+          <p className="text-xs text-gray-500 mt-1">Voyants disponibles maintenant — Appel confidentiel</p>
+        </div>
+
+        {/* Online consultation CTA */}
+        <div className="bg-white rounded-xl shadow-lg p-8 mb-8 text-center">
+          <h3 className="text-xl font-bold text-gray-900 mb-3">
+            Ou consultez en ligne
+          </h3>
+          <p className="text-gray-600 mb-4 max-w-xl mx-auto">
+            Choisissez un voyant pour une consultation par chat ou email.
           </p>
           <a
             href={`/consulter?ref=${source}-post-prediction`}
-            className={`inline-block ${btnClass} text-white px-10 py-4 rounded-lg font-bold text-lg transition-all hover:scale-105 hover:shadow-xl`}
+            className={`inline-block ${btnClass} text-white px-8 py-3 rounded-lg font-bold transition-all hover:scale-105 hover:shadow-xl`}
           >
-            Choisir Mon Voyant Maintenant
+            Choisir Mon Voyant en Ligne
           </a>
-          <p className="text-xs text-gray-500 mt-3">Paiement sécurisé — Confidentiel — Voyants disponibles 7j/7</p>
         </div>
       </div>
     );
