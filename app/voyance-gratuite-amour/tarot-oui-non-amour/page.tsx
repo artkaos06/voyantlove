@@ -5,11 +5,12 @@ import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
+import TarotOuiNon from '@/components/TarotOuiNon';
 
 export const metadata: Metadata = {
-  title: 'Tarot Oui Non Amour : Ni Oui Ni Non, Réponses Sentimentales',
-  description: 'Tarot oui non amour gratuit : obtenez des réponses claires (oui, non ou ni oui ni non) à vos questions sentimentales. Guide d\'interprétation des arcanes majeurs.',
-  keywords: ['tarot oui non amour', 'tarot ni oui ni non', 'tarot oui non gratuit amour', 'voyance oui non amour', 'tarot amour oui non'],
+  title: 'Tarot Oui Non Amour Gratuit — Tirage Immédiat en Ligne | VoyantLove',
+  description: 'Tirage tarot oui non amour gratuit et sérieux. Posez votre question sentimentale et obtenez une réponse immédiate : oui, non ou peut-être. Tirage en ligne.',
+  keywords: ['tarot oui non amour', 'tarot oui non amour gratuit', 'tarot oui non sérieux', 'tirage oui non amour', 'tarot amour oui non gratuit'],
   alternates: {
     canonical: 'https://voyantlove.fr/voyance-gratuite-amour/tarot-oui-non-amour/',
   },
@@ -17,8 +18,8 @@ export const metadata: Metadata = {
 
 export default function TarotOuiNonAmourPage() {
   const articleSchema = getArticleSchema({
-    title: 'Tarot Oui Non Amour : Ni Oui Ni Non, Réponses Sentimentales',
-    description: 'Tarot oui non amour gratuit : obtenez des réponses claires (oui, non ou ni oui ni non) à vos questions sentimentales. Guide d\'interprétation des arcanes majeurs.',
+    title: 'Tarot Oui Non Amour Gratuit — Tirage Immédiat en Ligne | VoyantLove',
+    description: 'Tirage tarot oui non amour gratuit et sérieux. Posez votre question sentimentale et obtenez une réponse immédiate : oui, non ou peut-être. Tirage en ligne.',
     url: 'https://voyantlove.fr/voyance-gratuite-amour/tarot-oui-non-amour/',
     datePublished: '2026-03-10',
     dateModified: new Date().toISOString().split('T')[0],
@@ -79,14 +80,19 @@ export default function TarotOuiNonAmourPage() {
       <header className="bg-gradient-to-r from-emerald-500 via-green-500 to-teal-500 text-white py-16 px-4">
         <div className="max-w-4xl mx-auto">
           <Link href="/voyance-gratuite-amour" className="text-white/80 hover:text-white mb-4 inline-block">&larr; Retour &agrave; Voyance Gratuite Amour</Link>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">&#x2753; Tarot Oui Non Amour : Ni Oui Ni Non</h1>
-          <p className="text-xl opacity-95 mb-6">R&eacute;ponses claires &agrave; vos questions sentimentales : oui, non ou ni oui ni non</p>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">🔮 Tarot Oui Non Amour Gratuit</h1>
+          <p className="text-xl opacity-95 mb-6">Tirage gratuit et sérieux — posez votre question et tirez une carte pour votre réponse</p>
           <div className="flex gap-4 flex-wrap">
-            <a href="#consultation" className="bg-white text-emerald-600 px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition">Consulter un Voyant</a>
+            <a href="#tirage" className="bg-white text-emerald-600 px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition">Tirer une Carte ↓</a>
             <a href="#questions" className="border-2 border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-emerald-600 transition">Les 10 Questions</a>
           </div>
         </div>
       </header>
+
+      {/* Interactive Tarot Tool */}
+      <section id="tirage" className="max-w-4xl mx-auto px-4 py-8">
+        <TarotOuiNon />
+      </section>
 
       <div className="max-w-4xl mx-auto px-4 py-8">
         {/* Stats bar */}
