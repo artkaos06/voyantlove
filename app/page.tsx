@@ -9,9 +9,9 @@ import DynamicCTAButton from '@/components/DynamicCTAButton';
 
 export const metadata: Metadata = {
   title: {
-    absolute: 'VoyantLove — Voyant Amour & Voyance Amoureuse Spécialisée',
+    absolute: 'Voyant Spécialisé Amour — Voyance Amoureuse en Ligne | VoyantLove',
   },
-  description: 'Voyance amoureuse spécialisée : reconquérir son ex, rencontrer l\'amour, décrypter les sentiments, surmonter une rupture. Tarot, clairvoyance et guidance personnalisée.',
+  description: 'Consultez un voyant spécialisé amour : reconquête, sentiments, rencontre, rupture. Prédictions tarot et clairvoyance. 10 min offertes — réponses immédiates.',
   alternates: { canonical: 'https://voyantlove.fr/' },
 };
 
