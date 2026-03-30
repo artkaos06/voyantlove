@@ -176,6 +176,27 @@ export default function VoyanceGratuiteAmourHubPage() {
           </div>
         </section>
 
+        {/* Cross-hub navigation */}
+        <section className="py-10 px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">Sujets Connexes</h2>
+            <div className="grid md:grid-cols-3 gap-4">
+              <Link href="/methodes-voyance/" className="block bg-white p-5 rounded-xl shadow-sm hover:shadow-md transition border border-gray-100">
+                <h3 className="font-bold text-purple-700 mb-1">M&eacute;thodes de Voyance</h3>
+                <p className="text-sm text-gray-600">Tarot, astrologie, num&eacute;rologie, pendule, oracle</p>
+              </Link>
+              <Link href="/sentiments/" className="block bg-white p-5 rounded-xl shadow-sm hover:shadow-md transition border border-gray-100">
+                <h3 className="font-bold text-purple-700 mb-1">Sentiments & Avenir</h3>
+                <p className="text-sm text-gray-600">M&apos;aime-t-il, compatibilit&eacute;, avenir amoureux</p>
+              </Link>
+              <Link href="/nouvelle-rencontre/" className="block bg-white p-5 rounded-xl shadow-sm hover:shadow-md transition border border-gray-100">
+                <h3 className="font-bold text-purple-700 mb-1">Nouvelle Rencontre</h3>
+                <p className="text-sm text-gray-600">Trouver l&apos;amour, &acirc;me s&oelig;ur, rencontre amoureuse</p>
+              </Link>
+            </div>
+          </div>
+        </section>
+
         <VoyantFinalCTA topic="voyance-gratuite" source="voyance-gratuite-hub-final" />
       </div>
     </main>

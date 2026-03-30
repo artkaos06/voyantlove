@@ -7,9 +7,9 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
 export const metadata: Metadata = {
-  title: 'Voyance Sentimentale : Guidance Amoureuse par un Voyant Spécialisé',
-  description: 'La voyance sentimentale éclaire vos questions de cœur : sentiments, avenir amoureux, compatibilité et reconquête. Consultez un voyant spécialisé en amour.',
-  keywords: ['voyance sentimentale', 'voyance sentimentale gratuite', 'voyance amoureuse', 'voyance du coeur', 'consultation sentimentale', 'voyant amour'],
+  title: 'Consultation Voyance Sentimentale : Guidance Amour par Voyant Expert',
+  description: 'Consultation de voyance sentimentale avec un voyant spécialisé amour. Questions de cœur, sentiments, avenir amoureux et reconquête. Réponses précises.',
+  keywords: ['consultation voyance sentimentale', 'voyance sentimentale', 'consultation voyance amour', 'voyance amoureuse', 'voyance du coeur', 'voyant amour'],
   alternates: {
     canonical: 'https://voyantlove.fr/methodes-voyance/voyance-sentimentale/',
   },
@@ -17,8 +17,8 @@ export const metadata: Metadata = {
 
 export default function VoyanceSentimentalePage() {
   const articleSchema = getArticleSchema({
-    title: 'Voyance Sentimentale : Guidance Amoureuse par un Voyant Spécialisé',
-    description: 'La voyance sentimentale éclaire vos questions de cœur : sentiments, avenir amoureux, compatibilité et reconquête. Consultez un voyant spécialisé en amour.',
+    title: 'Consultation Voyance Sentimentale : Guidance Amour par Voyant Expert',
+    description: 'Consultation de voyance sentimentale avec un voyant spécialisé amour. Questions de cœur, sentiments, avenir amoureux et reconquête. Réponses précises.',
     url: 'https://voyantlove.fr/methodes-voyance/voyance-sentimentale/',
     datePublished: '2026-03-13',
     dateModified: new Date().toISOString().split('T')[0],

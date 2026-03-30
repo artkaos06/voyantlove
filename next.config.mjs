@@ -34,6 +34,16 @@ const nextConfig = {
         destination: '/',
         permanent: true,
       },
+      {
+        source: '/methodes-voyance/tarot-oui-non-amour/',
+        destination: '/voyance-gratuite-amour/tarot-oui-non-amour/',
+        permanent: true,
+      },
+      {
+        source: '/methodes-voyance/tarot-oui-non-amour',
+        destination: '/voyance-gratuite-amour/tarot-oui-non-amour/',
+        permanent: true,
+      },
     ]
   },
 }

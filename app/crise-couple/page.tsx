@@ -155,6 +155,27 @@ export default function CriseCoupleHubPage() {
           </div>
         </section>
 
+        {/* Cross-hub navigation */}
+        <section className="py-10 px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">Sujets Connexes</h2>
+            <div className="grid md:grid-cols-3 gap-4">
+              <Link href="/sentiments/" className="block bg-white p-5 rounded-xl shadow-sm hover:shadow-md transition border border-gray-100">
+                <h3 className="font-bold text-purple-700 mb-1">Sentiments & Avenir</h3>
+                <p className="text-sm text-gray-600">M&apos;aime-t-il, compatibilit&eacute;, avenir amoureux</p>
+              </Link>
+              <Link href="/rupture/" className="block bg-white p-5 rounded-xl shadow-sm hover:shadow-md transition border border-gray-100">
+                <h3 className="font-bold text-purple-700 mb-1">Rupture & Gu&eacute;rison</h3>
+                <p className="text-sm text-gray-600">Surmonter la rupture, oublier son ex, se reconstruire</p>
+              </Link>
+              <Link href="/reconquete/" className="block bg-white p-5 rounded-xl shadow-sm hover:shadow-md transition border border-gray-100">
+                <h3 className="font-bold text-purple-700 mb-1">Reconqu&ecirc;te Amoureuse</h3>
+                <p className="text-sm text-gray-600">Retrouver son ex, silence radio, strat&eacute;gies de retour</p>
+              </Link>
+            </div>
+          </div>
+        </section>
+
         <VoyantFinalCTA topic="crise-couple" source="crise-couple-hub-final" />
       </div>
     </main>

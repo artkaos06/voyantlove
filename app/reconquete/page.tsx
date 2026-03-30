@@ -101,6 +101,16 @@ export default function ReconqueteHubPage() {
               <h3 className="text-xl font-bold mb-2">Se Remettre Ensemble</h3>
               <p className="text-gray-600 text-sm">Reconstruction du couple</p>
             </Link>
+            <Link href="/reconquete/lettre-a-son-ex" className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition border-t-4 border-purple-500">
+              <div className="text-3xl mb-3">✉️</div>
+              <h3 className="text-xl font-bold mb-2">Lettre à son Ex</h3>
+              <p className="text-gray-600 text-sm">Comment écrire une lettre de reconquête authentique et touchante.</p>
+            </Link>
+            <Link href="/reconquete/silence-radio-reconquete" className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition border-t-4 border-pink-500">
+              <div className="text-3xl mb-3">🤫</div>
+              <h3 className="text-xl font-bold mb-2">Silence Radio</h3>
+              <p className="text-gray-600 text-sm">La stratégie du silence radio pour déclencher le manque et le retour.</p>
+            </Link>
           </div>
         </section>
 
@@ -146,6 +156,27 @@ export default function ReconqueteHubPage() {
               <h3 className="font-bold text-gray-900 mb-1">Méthodes de Voyance</h3>
               <p className="text-sm text-gray-600">Tarot, oracle et astrologie pour guider votre stratégie de reconquête.</p>
             </Link>
+          </div>
+        </section>
+
+        {/* Cross-hub navigation */}
+        <section className="py-10 px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">Sujets Connexes</h2>
+            <div className="grid md:grid-cols-3 gap-4">
+              <Link href="/sentiments/" className="block bg-white p-5 rounded-xl shadow-sm hover:shadow-md transition border border-gray-100">
+                <h3 className="font-bold text-purple-700 mb-1">Sentiments & Avenir</h3>
+                <p className="text-sm text-gray-600">M&apos;aime-t-il, compatibilit&eacute;, avenir amoureux</p>
+              </Link>
+              <Link href="/rupture/" className="block bg-white p-5 rounded-xl shadow-sm hover:shadow-md transition border border-gray-100">
+                <h3 className="font-bold text-purple-700 mb-1">Rupture & Gu&eacute;rison</h3>
+                <p className="text-sm text-gray-600">Surmonter la rupture, oublier son ex, se reconstruire</p>
+              </Link>
+              <Link href="/nouvelle-rencontre/" className="block bg-white p-5 rounded-xl shadow-sm hover:shadow-md transition border border-gray-100">
+                <h3 className="font-bold text-purple-700 mb-1">Nouvelle Rencontre</h3>
+                <p className="text-sm text-gray-600">Trouver l&apos;amour, &acirc;me s&oelig;ur, rencontre amoureuse</p>
+              </Link>
+            </div>
           </div>
         </section>
 

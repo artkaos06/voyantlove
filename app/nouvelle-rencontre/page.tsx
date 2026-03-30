@@ -7,15 +7,15 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
 export const metadata: Metadata = {
-  title: 'Voyance Rencontre Amoureuse : Quand Trouver l\'Amour ? | VoyantLove',
-  description: 'Voyance rencontre : quand et comment rencontrer l\'amour ? Prédictions tarot, timing astrologique et guidance personnalisée pour votre nouvel amour.',
+  title: 'Voyance Nouvel Amour & Rencontre : Quand Trouver l\'Amour ? | VoyantLove',
+  description: 'Voyance nouvel amour et rencontre : quand et comment trouver l\'amour ? Prédictions tarot, timing astrologique et guidance pour votre nouvelle histoire.',
   alternates: { canonical: 'https://voyantlove.fr/nouvelle-rencontre/' },
 };
 
 export default function NouvelleRencontreHubPage() {
   const webPageSchema = getWebPageSchema({
-    title: 'Voyance Rencontre Amoureuse : Quand Trouver l\'Amour ? | VoyantLove',
-    description: 'Voyance rencontre : quand et comment rencontrer l\'amour ? Prédictions tarot, timing astrologique et guidance personnalisée pour votre nouvel amour.',
+    title: 'Voyance Nouvel Amour & Rencontre : Quand Trouver l\'Amour ? | VoyantLove',
+    description: 'Voyance nouvel amour et rencontre : quand et comment trouver l\'amour ? Prédictions tarot, timing astrologique et guidance pour votre nouvelle histoire.',
     url: 'https://voyantlove.fr/nouvelle-rencontre/',
   });
 
@@ -267,6 +267,27 @@ export default function NouvelleRencontreHubPage() {
               <h3 className="font-bold text-gray-900 mb-1">Voyance Gratuite Amour</h3>
               <p className="text-sm text-gray-600">Essayez un tirage amour gratuit pour éclairer votre nouvelle rencontre.</p>
             </Link>
+          </div>
+        </section>
+
+        {/* Cross-hub navigation */}
+        <section className="py-10 px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">Sujets Connexes</h2>
+            <div className="grid md:grid-cols-3 gap-4">
+              <Link href="/sentiments/" className="block bg-white p-5 rounded-xl shadow-sm hover:shadow-md transition border border-gray-100">
+                <h3 className="font-bold text-purple-700 mb-1">Sentiments & Avenir</h3>
+                <p className="text-sm text-gray-600">M&apos;aime-t-il, compatibilit&eacute;, avenir amoureux</p>
+              </Link>
+              <Link href="/methodes-voyance/" className="block bg-white p-5 rounded-xl shadow-sm hover:shadow-md transition border border-gray-100">
+                <h3 className="font-bold text-purple-700 mb-1">M&eacute;thodes de Voyance</h3>
+                <p className="text-sm text-gray-600">Tarot, astrologie, num&eacute;rologie, pendule, oracle</p>
+              </Link>
+              <Link href="/voyance-gratuite-amour/" className="block bg-white p-5 rounded-xl shadow-sm hover:shadow-md transition border border-gray-100">
+                <h3 className="font-bold text-purple-700 mb-1">Voyance Gratuite</h3>
+                <p className="text-sm text-gray-600">Tirages gratuits, tarot oui non, horoscope amour</p>
+              </Link>
+            </div>
           </div>
         </section>
 
