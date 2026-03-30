@@ -10,23 +10,23 @@ export const metadata: Metadata = {
   title: 'Voyance par Mail Amour : Consultation Écrite Personnalisée | VoyantLove',
   description: 'Recevez votre consultation de voyance amoureuse par mail. Posez vos questions sur votre vie sentimentale et obtenez des réponses écrites détaillées par un voyant spécialisé.',
   keywords: ['voyance par mail amour', 'voyance gratuite par mail', 'consultation voyance par mail', 'voyant par email', 'voyance par écrit'],
-  alternates: { canonical: 'https://voyantlove.fr/methodes-voyance/voyance-par-mail-amour/' },
+  alternates: { canonical: 'https://www.voyantlove.fr/methodes-voyance/voyance-par-mail-amour/' },
 };
 
 export default function VoyanceParMailAmourPage() {
   const articleSchema = getArticleSchema({
     title: 'Voyance par Mail Amour : Consultation Écrite Personnalisée | VoyantLove',
     description: 'Recevez votre consultation de voyance amoureuse par mail. Posez vos questions sur votre vie sentimentale et obtenez des réponses écrites détaillées par un voyant spécialisé.',
-    url: 'https://voyantlove.fr/methodes-voyance/voyance-par-mail-amour/',
+    url: 'https://www.voyantlove.fr/methodes-voyance/voyance-par-mail-amour/',
     datePublished: '2026-03-27',
     dateModified: new Date().toISOString().split('T')[0],
     keywords: ['voyance par mail amour', 'voyance gratuite par mail', 'consultation voyance par mail', 'voyant par email', 'voyance par écrit'],
   });
 
   const breadcrumbSchema = getBreadcrumbSchema([
-    { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'Méthodes de Voyance', url: 'https://voyantlove.fr/methodes-voyance/' },
-    { name: 'Voyance par Mail Amour', url: 'https://voyantlove.fr/methodes-voyance/voyance-par-mail-amour/' },
+    { name: 'Accueil', url: 'https://www.voyantlove.fr' },
+    { name: 'Méthodes de Voyance', url: 'https://www.voyantlove.fr/methodes-voyance/' },
+    { name: 'Voyance par Mail Amour', url: 'https://www.voyantlove.fr/methodes-voyance/voyance-par-mail-amour/' },
   ]);
 
   const authorSchema = getAuthorSchema();

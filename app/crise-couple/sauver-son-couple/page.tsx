@@ -10,23 +10,23 @@ export const metadata: Metadata = {
   title: 'Sauver son Couple : Solutions et Guidance Spirituelle | Voyance',
   description: 'Comment sauver votre couple en crise ? Le tarot révèle les solutions, les étapes de reconstruction et si votre relation peut être sauvée.',
   keywords: ['sauver son couple', 'sauver couple en crise', 'reconstruire couple voyance', 'comment sauver mon couple', 'sauver relation amoureuse'],
-  alternates: { canonical: 'https://voyantlove.fr/crise-couple/sauver-son-couple/' },
+  alternates: { canonical: 'https://www.voyantlove.fr/crise-couple/sauver-son-couple/' },
 };
 
 export default function SauverSonCouplePage() {
   const articleSchema = getArticleSchema({
     title: 'Sauver son Couple : Solutions et Guidance Spirituelle | Voyance',
     description: 'Comment sauver votre couple en crise ? Le tarot révèle les solutions, les étapes de reconstruction et si votre relation peut être sauvée.',
-    url: 'https://voyantlove.fr/crise-couple/sauver-son-couple/',
+    url: 'https://www.voyantlove.fr/crise-couple/sauver-son-couple/',
     datePublished: '2026-02-09',
     dateModified: new Date().toISOString().split('T')[0],
     keywords: ['sauver son couple', 'sauver couple en crise', 'reconstruire couple voyance', 'comment sauver mon couple', 'sauver relation amoureuse'],
   });
 
   const breadcrumbSchema = getBreadcrumbSchema([
-    { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'Crise de Couple', url: 'https://voyantlove.fr/crise-couple/' },
-    { name: 'Sauver son Couple', url: 'https://voyantlove.fr/crise-couple/sauver-son-couple/' },
+    { name: 'Accueil', url: 'https://www.voyantlove.fr' },
+    { name: 'Crise de Couple', url: 'https://www.voyantlove.fr/crise-couple/' },
+    { name: 'Sauver son Couple', url: 'https://www.voyantlove.fr/crise-couple/sauver-son-couple/' },
   ]);
 
   const authorSchema = getAuthorSchema();

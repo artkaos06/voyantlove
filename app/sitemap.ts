@@ -1,7 +1,7 @@
 import type { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://voyantlove.fr'
+  const baseUrl = 'https://www.voyantlove.fr'
   const now = new Date().toISOString()
 
   // Hub pages (high priority)

@@ -10,23 +10,23 @@ export const metadata: Metadata = {
   title: 'Synastrie Amoureuse : Compatibilité Astrale de Couple | VoyantLove',
   description: 'La synastrie amoureuse analyse la compatibilité de deux thèmes astraux. Découvrez ce que les planètes révèlent sur votre couple : tensions, harmonies, forces et défis.',
   keywords: ['synastrie amoureuse', 'thème astral couple', 'compatibilité astrologique couple', 'synastrie couple', 'Vénus Mars synastrie'],
-  alternates: { canonical: 'https://voyantlove.fr/methodes-voyance/synastrie-amoureuse/' },
+  alternates: { canonical: 'https://www.voyantlove.fr/methodes-voyance/synastrie-amoureuse/' },
 };
 
 export default function SynastrieAmoureusePage() {
   const articleSchema = getArticleSchema({
     title: 'Synastrie Amoureuse : Compatibilité Astrale de Couple | VoyantLove',
     description: 'La synastrie amoureuse analyse la compatibilité de deux thèmes astraux. Découvrez ce que les planètes révèlent sur votre couple : tensions, harmonies, forces et défis.',
-    url: 'https://voyantlove.fr/methodes-voyance/synastrie-amoureuse/',
+    url: 'https://www.voyantlove.fr/methodes-voyance/synastrie-amoureuse/',
     datePublished: '2026-03-27',
     dateModified: new Date().toISOString().split('T')[0],
     keywords: ['synastrie amoureuse', 'thème astral couple', 'compatibilité astrologique couple', 'synastrie couple', 'Vénus Mars synastrie'],
   });
 
   const breadcrumbSchema = getBreadcrumbSchema([
-    { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'Méthodes de Voyance', url: 'https://voyantlove.fr/methodes-voyance/' },
-    { name: 'Synastrie Amoureuse', url: 'https://voyantlove.fr/methodes-voyance/synastrie-amoureuse/' },
+    { name: 'Accueil', url: 'https://www.voyantlove.fr' },
+    { name: 'Méthodes de Voyance', url: 'https://www.voyantlove.fr/methodes-voyance/' },
+    { name: 'Synastrie Amoureuse', url: 'https://www.voyantlove.fr/methodes-voyance/synastrie-amoureuse/' },
   ]);
 
   const authorSchema = getAuthorSchema();

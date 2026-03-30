@@ -9,19 +9,19 @@ import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 export const metadata: Metadata = {
   title: 'Rupture Amoureuse : Comprendre, Surmonter et Guérir | Voyance',
   description: 'Guide complet sur la rupture amoureuse : comprendre les causes, surmonter le chagrin et guérir selon le tarot et la voyance.',
-  alternates: { canonical: 'https://voyantlove.fr/rupture/' },
+  alternates: { canonical: 'https://www.voyantlove.fr/rupture/' },
 };
 
 export default function RuptureHubPage() {
   const webPageSchema = getWebPageSchema({
     title: 'Rupture Amoureuse : Comprendre, Surmonter et Guérir | Voyance',
     description: 'Guide complet sur la rupture amoureuse : comprendre les causes, surmonter le chagrin et guérir selon le tarot et la voyance.',
-    url: 'https://voyantlove.fr/rupture/',
+    url: 'https://www.voyantlove.fr/rupture/',
   });
 
   const breadcrumbSchema = getBreadcrumbSchema([
-    { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'Rupture Amoureuse', url: 'https://voyantlove.fr/rupture/' },
+    { name: 'Accueil', url: 'https://www.voyantlove.fr' },
+    { name: 'Rupture Amoureuse', url: 'https://www.voyantlove.fr/rupture/' },
   ]);
 
   const organizationSchema = getOrganizationSchema();

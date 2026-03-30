@@ -10,23 +10,23 @@ export const metadata: Metadata = {
   title: 'Ex qui Revient : Que Faire ? Conseils Voyance',
   description: 'Votre ex est revenu ? Découvrez que faire selon le tarot. Faut-il donner une seconde chance ?',
   keywords: ['ex qui revient', 'seconde chance', 'retrouvailles'],
-  alternates: { canonical: 'https://voyantlove.fr/reconquete/ex-qui-revient/' },
+  alternates: { canonical: 'https://www.voyantlove.fr/reconquete/ex-qui-revient/' },
 };
 
 export default function ExQuiRevientPage() {
   const articleSchema = getArticleSchema({
     title: 'Ex qui Revient : Que Faire ? Conseils Voyance',
     description: 'Votre ex est revenu ? Découvrez que faire selon le tarot. Faut-il donner une seconde chance ?',
-    url: 'https://voyantlove.fr/reconquete/ex-qui-revient/',
+    url: 'https://www.voyantlove.fr/reconquete/ex-qui-revient/',
     datePublished: '2026-01-17',
     dateModified: new Date().toISOString().split('T')[0],
     keywords: ['ex qui revient', 'seconde chance', 'retrouvailles'],
   });
 
   const breadcrumbSchema = getBreadcrumbSchema([
-    { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'Reconquête', url: 'https://voyantlove.fr/reconquete/' },
-    { name: 'Ex qui Revient', url: 'https://voyantlove.fr/reconquete/ex-qui-revient/' },
+    { name: 'Accueil', url: 'https://www.voyantlove.fr' },
+    { name: 'Reconquête', url: 'https://www.voyantlove.fr/reconquete/' },
+    { name: 'Ex qui Revient', url: 'https://www.voyantlove.fr/reconquete/ex-qui-revient/' },
   ]);
 
   const authorSchema = getAuthorSchema();

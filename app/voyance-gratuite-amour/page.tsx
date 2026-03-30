@@ -9,19 +9,19 @@ import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 export const metadata: Metadata = {
   title: 'Voyance Gratuite Amour : Tirages et Guidance Sentimentale',
   description: 'Voyance amoureuse gratuite : tarot, oracle et horoscope pour éclairer votre vie sentimentale. Guidance fiable sans engagement.',
-  alternates: { canonical: 'https://voyantlove.fr/voyance-gratuite-amour/' },
+  alternates: { canonical: 'https://www.voyantlove.fr/voyance-gratuite-amour/' },
 };
 
 export default function VoyanceGratuiteAmourHubPage() {
   const webPageSchema = getWebPageSchema({
     title: 'Voyance Gratuite Amour : Tirages et Guidance Sentimentale',
     description: 'Voyance amoureuse gratuite : tarot, oracle et horoscope pour éclairer votre vie sentimentale. Guidance fiable sans engagement.',
-    url: 'https://voyantlove.fr/voyance-gratuite-amour/',
+    url: 'https://www.voyantlove.fr/voyance-gratuite-amour/',
   });
 
   const breadcrumbSchema = getBreadcrumbSchema([
-    { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'Voyance Gratuite Amour', url: 'https://voyantlove.fr/voyance-gratuite-amour/' },
+    { name: 'Accueil', url: 'https://www.voyantlove.fr' },
+    { name: 'Voyance Gratuite Amour', url: 'https://www.voyantlove.fr/voyance-gratuite-amour/' },
   ]);
 
   const organizationSchema = getOrganizationSchema();

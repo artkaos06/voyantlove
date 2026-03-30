@@ -10,23 +10,23 @@ export const metadata: Metadata = {
   title: 'Nouvelle Relation Amoureuse : Guide des Premiers Mois | Construire les Bases',
   description: 'Tout savoir sur les premiers mois d\'une nouvelle relation amoureuse. Étapes clés, erreurs à éviter, construire des fondations solides et signes d\'une relation saine.',
   keywords: ['nouvelle relation amoureuse', 'début relation', 'premiers mois couple', 'construire relation', 'nouvelle histoire amour'],
-  alternates: { canonical: 'https://voyantlove.fr/nouvelle-rencontre/nouvelle-relation-amoureuse/' },
+  alternates: { canonical: 'https://www.voyantlove.fr/nouvelle-rencontre/nouvelle-relation-amoureuse/' },
 };
 
 export default function NouvelleRelationAmourseusePage() {
   const articleSchema = getArticleSchema({
     title: 'Nouvelle Relation Amoureuse : Guide des Premiers Mois | Construire les Bases',
     description: 'Tout savoir sur les premiers mois d\'une nouvelle relation amoureuse. Étapes clés, erreurs à éviter, construire des fondations solides et signes d\'une relation saine.',
-    url: 'https://voyantlove.fr/nouvelle-rencontre/nouvelle-relation-amoureuse/',
+    url: 'https://www.voyantlove.fr/nouvelle-rencontre/nouvelle-relation-amoureuse/',
     datePublished: '2026-02-09',
     dateModified: new Date().toISOString().split('T')[0],
     keywords: ['nouvelle relation amoureuse', 'début relation', 'premiers mois couple', 'construire relation', 'nouvelle histoire amour'],
   });
 
   const breadcrumbSchema = getBreadcrumbSchema([
-    { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'Nouvelle Rencontre', url: 'https://voyantlove.fr/nouvelle-rencontre/' },
-    { name: 'Nouvelle Relation Amoureuse', url: 'https://voyantlove.fr/nouvelle-rencontre/nouvelle-relation-amoureuse/' },
+    { name: 'Accueil', url: 'https://www.voyantlove.fr' },
+    { name: 'Nouvelle Rencontre', url: 'https://www.voyantlove.fr/nouvelle-rencontre/' },
+    { name: 'Nouvelle Relation Amoureuse', url: 'https://www.voyantlove.fr/nouvelle-rencontre/nouvelle-relation-amoureuse/' },
   ]);
 
   const authorSchema = getAuthorSchema();

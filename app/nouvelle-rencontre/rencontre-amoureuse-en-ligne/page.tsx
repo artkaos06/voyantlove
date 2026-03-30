@@ -10,14 +10,14 @@ export const metadata: Metadata = {
   title: 'Rencontre Amoureuse en Ligne : Guidance Voyance',
   description: 'Comment trouver l\'amour en ligne avec la guidance de la voyance ? Découvrez les conseils du tarot pour réussir vos rencontres sur internet et applications.',
   keywords: ['rencontre en ligne', 'amour internet', 'Tinder voyance', 'rencontre amoureuse en ligne', 'dating voyance'],
-  alternates: { canonical: 'https://voyantlove.fr/nouvelle-rencontre/rencontre-amoureuse-en-ligne/' },
+  alternates: { canonical: 'https://www.voyantlove.fr/nouvelle-rencontre/rencontre-amoureuse-en-ligne/' },
 };
 
 export default function RencontreAmoureuseEnLignePage() {
   const articleSchema = getArticleSchema({
     title: 'Rencontre Amoureuse en Ligne : Guidance Voyance',
     description: 'Comment trouver l\'amour en ligne avec la guidance de la voyance ? Découvrez les conseils du tarot pour réussir vos rencontres sur internet et applications.',
-    url: 'https://voyantlove.fr/nouvelle-rencontre/rencontre-amoureuse-en-ligne/',
+    url: 'https://www.voyantlove.fr/nouvelle-rencontre/rencontre-amoureuse-en-ligne/',
     datePublished: '2026-03-22',
     dateModified: new Date().toISOString().split('T')[0],
     keywords: ['rencontre en ligne', 'amour internet', 'Tinder voyance', 'rencontre amoureuse en ligne', 'dating voyance'],
@@ -43,9 +43,9 @@ export default function RencontreAmoureuseEnLignePage() {
   ]);
 
   const breadcrumbSchema = getBreadcrumbSchema([
-    { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'Nouvelle Rencontre', url: 'https://voyantlove.fr/nouvelle-rencontre/' },
-    { name: 'Rencontre en Ligne', url: 'https://voyantlove.fr/nouvelle-rencontre/rencontre-amoureuse-en-ligne/' },
+    { name: 'Accueil', url: 'https://www.voyantlove.fr' },
+    { name: 'Nouvelle Rencontre', url: 'https://www.voyantlove.fr/nouvelle-rencontre/' },
+    { name: 'Rencontre en Ligne', url: 'https://www.voyantlove.fr/nouvelle-rencontre/rencontre-amoureuse-en-ligne/' },
   ]);
 
   const authorSchema = getAuthorSchema();

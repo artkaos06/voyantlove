@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     absolute: 'Voyant Spécialisé Amour — Voyance Amoureuse en Ligne | VoyantLove',
   },
   description: 'Consultez un voyant spécialisé amour : reconquête, sentiments, rencontre, rupture. Prédictions tarot et clairvoyance. 10 min offertes — réponses immédiates.',
-  alternates: { canonical: 'https://voyantlove.fr/' },
+  alternates: { canonical: 'https://www.voyantlove.fr/' },
 };
 
 export default function HomePage() {

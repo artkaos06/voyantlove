@@ -10,23 +10,23 @@ export const metadata: Metadata = {
   title: 'Trouver son Âme Sœur : Guide Complet Tarot et Voyance | Connexion Spirituelle',
   description: 'Comment trouver votre âme sœur selon le tarot et la destinée. Signes de reconnaissance, timing, préparation intérieure et guidance spirituelle complète.',
   keywords: ['trouver âme sœur', 'âme sœur tarot', 'connexion âme', 'flamme jumelle', 'destin amoureux'],
-  alternates: { canonical: 'https://voyantlove.fr/nouvelle-rencontre/trouver-ame-soeur/' },
+  alternates: { canonical: 'https://www.voyantlove.fr/nouvelle-rencontre/trouver-ame-soeur/' },
 };
 
 export default function TrouverAmeSoeurPage() {
   const articleSchema = getArticleSchema({
     title: 'Trouver son Âme Sœur : Guide Complet Tarot et Voyance | Connexion Spirituelle',
     description: 'Comment trouver votre âme sœur selon le tarot et la destinée. Signes de reconnaissance, timing, préparation intérieure et guidance spirituelle complète.',
-    url: 'https://voyantlove.fr/nouvelle-rencontre/trouver-ame-soeur/',
+    url: 'https://www.voyantlove.fr/nouvelle-rencontre/trouver-ame-soeur/',
     datePublished: '2026-01-19',
     dateModified: new Date().toISOString().split('T')[0],
     keywords: ['trouver âme sœur', 'âme sœur tarot', 'connexion âme', 'flamme jumelle', 'destin amoureux'],
   });
 
   const breadcrumbSchema = getBreadcrumbSchema([
-    { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'Nouvelle Rencontre', url: 'https://voyantlove.fr/nouvelle-rencontre/' },
-    { name: 'Trouver son Âme Sœur', url: 'https://voyantlove.fr/nouvelle-rencontre/trouver-ame-soeur/' },
+    { name: 'Accueil', url: 'https://www.voyantlove.fr' },
+    { name: 'Nouvelle Rencontre', url: 'https://www.voyantlove.fr/nouvelle-rencontre/' },
+    { name: 'Trouver son Âme Sœur', url: 'https://www.voyantlove.fr/nouvelle-rencontre/trouver-ame-soeur/' },
   ]);
 
   const authorSchema = getAuthorSchema();

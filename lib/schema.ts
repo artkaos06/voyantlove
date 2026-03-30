@@ -8,8 +8,8 @@ export function getOrganizationSchema(): WithContext<Organization> {
     '@context': 'https://schema.org',
     '@type': 'Organization',
     name: 'VoyantLove.fr',
-    url: 'https://voyantlove.fr',
-    logo: 'https://voyantlove.fr/logo.png',
+    url: 'https://www.voyantlove.fr',
+    logo: 'https://www.voyantlove.fr/logo.png',
     description: 'Guidance amoureuse et voyance sentimentale professionnelle',
     sameAs: [
       // Add social media profiles when available
@@ -25,7 +25,7 @@ export function getWebSiteSchema() {
     '@context': 'https://schema.org' as const,
     '@type': 'WebSite' as const,
     name: 'VoyantLove.fr',
-    url: 'https://voyantlove.fr',
+    url: 'https://www.voyantlove.fr',
     description: 'Guidance amoureuse et voyance sentimentale professionnelle',
     inLanguage: 'fr-FR',
   };
@@ -39,12 +39,12 @@ export function getAuthorSchema() {
     '@context': 'https://schema.org' as const,
     '@type': 'Person' as const,
     name: 'Équipe VoyantLove',
-    url: 'https://voyantlove.fr/',
+    url: 'https://www.voyantlove.fr/',
     jobTitle: 'Experts en voyance amoureuse',
     worksFor: {
       '@type': 'Organization' as const,
       name: 'VoyantLove.fr',
-      url: 'https://voyantlove.fr',
+      url: 'https://www.voyantlove.fr',
     },
     description: 'Équipe de voyants et tarologues spécialisés en guidance amoureuse avec plus de 15 ans d\'expérience collective en voyance sentimentale.',
     knowsAbout: [
@@ -78,7 +78,7 @@ export function getArticleSchema({
   url,
   datePublished,
   dateModified,
-  imageUrl = 'https://voyantlove.fr/og-image.png',
+  imageUrl = 'https://www.voyantlove.fr/og-image.png',
   authorName = 'VoyantLove.fr',
   keywords = [],
 }: ArticleSchemaProps): WithContext<Article> {
@@ -93,16 +93,16 @@ export function getArticleSchema({
     author: {
       '@type': 'Person',
       name: authorName,
-      url: 'https://voyantlove.fr/',
+      url: 'https://www.voyantlove.fr/',
       jobTitle: 'Expert en voyance amoureuse',
     },
     publisher: {
       '@type': 'Organization',
       name: 'VoyantLove.fr',
-      url: 'https://voyantlove.fr',
+      url: 'https://www.voyantlove.fr',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://voyantlove.fr/logo.png',
+        url: 'https://www.voyantlove.fr/logo.png',
       },
     },
     mainEntityOfPage: {
@@ -174,7 +174,7 @@ export function getWebPageSchema({
   title,
   description,
   url,
-  imageUrl = 'https://voyantlove.fr/og-image.png',
+  imageUrl = 'https://www.voyantlove.fr/og-image.png',
 }: WebPageSchemaProps) {
   return {
     '@context': 'https://schema.org',
@@ -187,7 +187,7 @@ export function getWebPageSchema({
     isPartOf: {
       '@type': 'WebSite',
       name: 'VoyantLove.fr',
-      url: 'https://voyantlove.fr',
+      url: 'https://www.voyantlove.fr',
     },
     breadcrumb: {
       '@type': 'BreadcrumbList',

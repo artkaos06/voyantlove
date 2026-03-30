@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: 'Voyance gratuite par tchat amour : guide pour une consultation sentimentale fiable. Préparez vos questions, évitez les pièges.',
   keywords: ['voyance tchat gratuit amour', 'voyance gratuite par tchat amour', 'voyance gratuite immediate amour'],
   alternates: {
-    canonical: 'https://voyantlove.fr/voyance-gratuite-amour/voyance-tchat-gratuit-amour/',
+    canonical: 'https://www.voyantlove.fr/voyance-gratuite-amour/voyance-tchat-gratuit-amour/',
   },
 };
 
@@ -19,7 +19,7 @@ export default function VoyanceTchatGratuitAmourPage() {
   const articleSchema = getArticleSchema({
     title: 'Voyance Tchat Gratuit Amour : Consultation Sentimentale',
     description: 'Voyance gratuite par tchat amour : guide pour une consultation sentimentale fiable. Préparez vos questions, évitez les pièges.',
-    url: 'https://voyantlove.fr/voyance-gratuite-amour/voyance-tchat-gratuit-amour/',
+    url: 'https://www.voyantlove.fr/voyance-gratuite-amour/voyance-tchat-gratuit-amour/',
     datePublished: '2026-03-10',
     dateModified: new Date().toISOString().split('T')[0],
     keywords: ['voyance tchat gratuit amour', 'voyance gratuite par tchat amour', 'voyance gratuite immediate amour'],
@@ -28,9 +28,9 @@ export default function VoyanceTchatGratuitAmourPage() {
   const authorSchema = getAuthorSchema();
 
   const breadcrumbSchema = getBreadcrumbSchema([
-    { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'Voyance Gratuite Amour', url: 'https://voyantlove.fr/voyance-gratuite-amour/' },
-    { name: 'Voyance Tchat Gratuit Amour', url: 'https://voyantlove.fr/voyance-gratuite-amour/voyance-tchat-gratuit-amour/' },
+    { name: 'Accueil', url: 'https://www.voyantlove.fr' },
+    { name: 'Voyance Gratuite Amour', url: 'https://www.voyantlove.fr/voyance-gratuite-amour/' },
+    { name: 'Voyance Tchat Gratuit Amour', url: 'https://www.voyantlove.fr/voyance-gratuite-amour/voyance-tchat-gratuit-amour/' },
   ]);
 
   const faqSchema = getFAQSchema([

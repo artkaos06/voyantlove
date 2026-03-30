@@ -11,12 +11,12 @@ export const metadata: Metadata = {
   description: 'Comment surmonter une rupture et oublier son ex selon la voyance ? Découvrez le processus de guérison, le timing de reconstruction et quand vous rencontrerez à nouveau.',
   keywords: ['oublier son ex', 'surmonter rupture', 'chagrin d\'amour', 'guérir rupture', 'tourner la page', 'voyance rupture'],
   alternates: {
-    canonical: 'https://voyantlove.fr/rupture/oublier-son-ex/',
+    canonical: 'https://www.voyantlove.fr/rupture/oublier-son-ex/',
   },
   openGraph: {
     title: 'Oublier son Ex : Voyance pour Guérir et Tourner la Page',
     description: 'Processus de guérison après rupture selon le tarot. Timing, étapes et préparation à l\'amour.',
-    url: 'https://voyantlove.fr/rupture/oublier-son-ex/',
+    url: 'https://www.voyantlove.fr/rupture/oublier-son-ex/',
     type: 'article',
   },
 };
@@ -25,7 +25,7 @@ export default function OublierSonExPage() {
   const articleSchema = getArticleSchema({
     title: 'Oublier son Ex : Voyance pour Guérir et Tourner la Page | Tarot',
     description: 'Comment surmonter une rupture et oublier son ex selon la voyance ? Découvrez le processus de guérison, le timing de reconstruction et quand vous rencontrerez à nouveau.',
-    url: 'https://voyantlove.fr/rupture/oublier-son-ex/',
+    url: 'https://www.voyantlove.fr/rupture/oublier-son-ex/',
     datePublished: '2026-01-12',
     dateModified: new Date().toISOString().split('T')[0],
     keywords: ['oublier son ex', 'surmonter rupture', 'chagrin d\'amour', 'guérir rupture', 'tourner la page', 'voyance rupture'],
@@ -51,9 +51,9 @@ export default function OublierSonExPage() {
   ]);
 
   const breadcrumbSchema = getBreadcrumbSchema([
-    { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'Rupture', url: 'https://voyantlove.fr/rupture/' },
-    { name: 'Oublier son Ex', url: 'https://voyantlove.fr/rupture/oublier-son-ex/' },
+    { name: 'Accueil', url: 'https://www.voyantlove.fr' },
+    { name: 'Rupture', url: 'https://www.voyantlove.fr/rupture/' },
+    { name: 'Oublier son Ex', url: 'https://www.voyantlove.fr/rupture/oublier-son-ex/' },
   ]);
 
   const authorSchema = getAuthorSchema();

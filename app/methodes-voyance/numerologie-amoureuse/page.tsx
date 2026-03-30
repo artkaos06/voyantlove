@@ -10,23 +10,23 @@ export const metadata: Metadata = {
   title: 'Numérologie Amoureuse : Compatibilité par Date de Naissance | VoyantLove',
   description: 'Découvrez la numérologie amoureuse : calculez votre chemin de vie, votre compatibilité numérique et ce que vos chiffres révèlent sur votre vie sentimentale.',
   keywords: ['numérologie amoureuse', 'numérologie couple', 'chemin de vie amour', 'compatibilité numérologie', 'calcul date de naissance amour'],
-  alternates: { canonical: 'https://voyantlove.fr/methodes-voyance/numerologie-amoureuse/' },
+  alternates: { canonical: 'https://www.voyantlove.fr/methodes-voyance/numerologie-amoureuse/' },
 };
 
 export default function NumerologieAmourPage() {
   const articleSchema = getArticleSchema({
     title: 'Numérologie Amoureuse : Compatibilité par Date de Naissance | VoyantLove',
     description: 'Découvrez la numérologie amoureuse : calculez votre chemin de vie, votre compatibilité numérique et ce que vos chiffres révèlent sur votre vie sentimentale.',
-    url: 'https://voyantlove.fr/methodes-voyance/numerologie-amoureuse/',
+    url: 'https://www.voyantlove.fr/methodes-voyance/numerologie-amoureuse/',
     datePublished: '2026-03-27',
     dateModified: new Date().toISOString().split('T')[0],
     keywords: ['numérologie amoureuse', 'numérologie couple', 'chemin de vie amour', 'compatibilité numérologie', 'calcul date de naissance amour'],
   });
 
   const breadcrumbSchema = getBreadcrumbSchema([
-    { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'Méthodes de Voyance', url: 'https://voyantlove.fr/methodes-voyance/' },
-    { name: 'Numérologie Amoureuse', url: 'https://voyantlove.fr/methodes-voyance/numerologie-amoureuse/' },
+    { name: 'Accueil', url: 'https://www.voyantlove.fr' },
+    { name: 'Méthodes de Voyance', url: 'https://www.voyantlove.fr/methodes-voyance/' },
+    { name: 'Numérologie Amoureuse', url: 'https://www.voyantlove.fr/methodes-voyance/numerologie-amoureuse/' },
   ]);
 
   const authorSchema = getAuthorSchema();

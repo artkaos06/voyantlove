@@ -10,14 +10,14 @@ export const metadata: Metadata = {
   title: 'Rupture Amoureuse : Comprendre et Surmonter selon la Voyance',
   description: 'Comprendre les raisons d\'une rupture amoureuse et guérir selon le tarot. Processus de deuil, timing et reconstruction après séparation.',
   keywords: ['rupture amoureuse', 'séparation', 'fin relation', 'deuil amoureux', 'surmonter rupture'],
-  alternates: { canonical: 'https://voyantlove.fr/rupture/rupture-amoureuse/' },
+  alternates: { canonical: 'https://www.voyantlove.fr/rupture/rupture-amoureuse/' },
 };
 
 export default function RuptureAmoureusePage() {
   const articleSchema = getArticleSchema({
     title: 'Rupture Amoureuse : Comprendre et Surmonter selon la Voyance',
     description: 'Comprendre les raisons d\'une rupture amoureuse et guérir selon le tarot. Processus de deuil, timing et reconstruction après séparation.',
-    url: 'https://voyantlove.fr/rupture/rupture-amoureuse/',
+    url: 'https://www.voyantlove.fr/rupture/rupture-amoureuse/',
     datePublished: '2026-01-11',
     dateModified: new Date().toISOString().split('T')[0],
     keywords: ['rupture amoureuse', 'séparation', 'fin relation', 'deuil amoureux', 'surmonter rupture'],
@@ -43,9 +43,9 @@ export default function RuptureAmoureusePage() {
   ]);
 
   const breadcrumbSchema = getBreadcrumbSchema([
-    { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'Rupture', url: 'https://voyantlove.fr/rupture/' },
-    { name: 'Rupture Amoureuse', url: 'https://voyantlove.fr/rupture/rupture-amoureuse/' },
+    { name: 'Accueil', url: 'https://www.voyantlove.fr' },
+    { name: 'Rupture', url: 'https://www.voyantlove.fr/rupture/' },
+    { name: 'Rupture Amoureuse', url: 'https://www.voyantlove.fr/rupture/rupture-amoureuse/' },
   ]);
 
   const authorSchema = getAuthorSchema();

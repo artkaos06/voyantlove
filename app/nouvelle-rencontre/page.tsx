@@ -9,19 +9,19 @@ import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 export const metadata: Metadata = {
   title: 'Voyance Nouvel Amour & Rencontre : Quand Trouver l\'Amour ? | VoyantLove',
   description: 'Voyance nouvel amour et rencontre : quand et comment trouver l\'amour ? Prédictions tarot, timing astrologique et guidance pour votre nouvelle histoire.',
-  alternates: { canonical: 'https://voyantlove.fr/nouvelle-rencontre/' },
+  alternates: { canonical: 'https://www.voyantlove.fr/nouvelle-rencontre/' },
 };
 
 export default function NouvelleRencontreHubPage() {
   const webPageSchema = getWebPageSchema({
     title: 'Voyance Nouvel Amour & Rencontre : Quand Trouver l\'Amour ? | VoyantLove',
     description: 'Voyance nouvel amour et rencontre : quand et comment trouver l\'amour ? Prédictions tarot, timing astrologique et guidance pour votre nouvelle histoire.',
-    url: 'https://voyantlove.fr/nouvelle-rencontre/',
+    url: 'https://www.voyantlove.fr/nouvelle-rencontre/',
   });
 
   const breadcrumbSchema = getBreadcrumbSchema([
-    { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'Nouvelle Rencontre Amoureuse', url: 'https://voyantlove.fr/nouvelle-rencontre/' },
+    { name: 'Accueil', url: 'https://www.voyantlove.fr' },
+    { name: 'Nouvelle Rencontre Amoureuse', url: 'https://www.voyantlove.fr/nouvelle-rencontre/' },
   ]);
 
   const organizationSchema = getOrganizationSchema();

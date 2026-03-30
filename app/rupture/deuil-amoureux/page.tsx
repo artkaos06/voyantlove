@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: 'Comment traverser un deuil amoureux ? D\u00e9couvrez les phases du deuil sentimental, la diff\u00e9rence avec une rupture classique, le r\u00f4le du tarot et les cl\u00e9s de la renaissance.',
   keywords: ['deuil amoureux', 'perte amoureuse', 'processus de deuil', 'gu\u00e9rison sentimentale', 'deuil sentimental', 'renaissance apr\u00e8s deuil amoureux'],
   alternates: {
-    canonical: 'https://voyantlove.fr/rupture/deuil-amoureux/',
+    canonical: 'https://www.voyantlove.fr/rupture/deuil-amoureux/',
   },
 };
 
@@ -19,16 +19,16 @@ export default function DeuilAmoureuxPage() {
   const articleSchema = getArticleSchema({
     title: 'Deuil Amoureux : Traverser la Perte et Rena\u00eetre Gr\u00e2ce \u00e0 la Voyance',
     description: 'Comment traverser un deuil amoureux ? D\u00e9couvrez les phases du deuil sentimental, la diff\u00e9rence avec une rupture classique, le r\u00f4le du tarot et les cl\u00e9s de la renaissance.',
-    url: 'https://voyantlove.fr/rupture/deuil-amoureux/',
+    url: 'https://www.voyantlove.fr/rupture/deuil-amoureux/',
     datePublished: '2026-03-07',
     dateModified: new Date().toISOString().split('T')[0],
     keywords: ['deuil amoureux', 'perte amoureuse', 'processus de deuil', 'gu\u00e9rison sentimentale', 'deuil sentimental', 'renaissance apr\u00e8s deuil amoureux'],
   });
 
   const breadcrumbSchema = getBreadcrumbSchema([
-    { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'Rupture Amoureuse', url: 'https://voyantlove.fr/rupture/' },
-    { name: 'Deuil Amoureux', url: 'https://voyantlove.fr/rupture/deuil-amoureux/' },
+    { name: 'Accueil', url: 'https://www.voyantlove.fr' },
+    { name: 'Rupture Amoureuse', url: 'https://www.voyantlove.fr/rupture/' },
+    { name: 'Deuil Amoureux', url: 'https://www.voyantlove.fr/rupture/deuil-amoureux/' },
   ]);
 
   const authorSchema = getAuthorSchema();

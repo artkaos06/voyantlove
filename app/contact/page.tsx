@@ -4,7 +4,7 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'Contact',
   description: 'Contactez VoyantLove.fr pour toute question sur nos services de voyance amoureuse.',
-  alternates: { canonical: 'https://voyantlove.fr/contact/' },
+  alternates: { canonical: 'https://www.voyantlove.fr/contact/' },
 };
 
 export default function ContactPage() {

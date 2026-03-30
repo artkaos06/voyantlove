@@ -10,23 +10,23 @@ export const metadata: Metadata = {
   title: 'Runes Amour : Tirage et Signification pour Votre Vie Sentimentale | VoyantLove',
   description: 'Découvrez le tirage de runes pour l\'amour. Signification des runes en amour, comment les lire pour votre vie sentimentale, et ce qu\'elles révèlent sur votre relation.',
   keywords: ['runes amour', 'tirage runes amour', 'runes signification amour', 'runes couple', 'voyance runes sentimentale'],
-  alternates: { canonical: 'https://voyantlove.fr/methodes-voyance/runes-amour/' },
+  alternates: { canonical: 'https://www.voyantlove.fr/methodes-voyance/runes-amour/' },
 };
 
 export default function RunesAmourPage() {
   const articleSchema = getArticleSchema({
     title: 'Runes Amour : Tirage et Signification pour Votre Vie Sentimentale | VoyantLove',
     description: 'Découvrez le tirage de runes pour l\'amour. Signification des runes en amour, comment les lire pour votre vie sentimentale, et ce qu\'elles révèlent sur votre relation.',
-    url: 'https://voyantlove.fr/methodes-voyance/runes-amour/',
+    url: 'https://www.voyantlove.fr/methodes-voyance/runes-amour/',
     datePublished: '2026-03-27',
     dateModified: new Date().toISOString().split('T')[0],
     keywords: ['runes amour', 'tirage runes amour', 'runes signification amour', 'runes couple', 'voyance runes sentimentale'],
   });
 
   const breadcrumbSchema = getBreadcrumbSchema([
-    { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'Méthodes de Voyance', url: 'https://voyantlove.fr/methodes-voyance/' },
-    { name: 'Runes Amour', url: 'https://voyantlove.fr/methodes-voyance/runes-amour/' },
+    { name: 'Accueil', url: 'https://www.voyantlove.fr' },
+    { name: 'Méthodes de Voyance', url: 'https://www.voyantlove.fr/methodes-voyance/' },
+    { name: 'Runes Amour', url: 'https://www.voyantlove.fr/methodes-voyance/runes-amour/' },
   ]);
 
   const authorSchema = getAuthorSchema();

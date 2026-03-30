@@ -10,14 +10,14 @@ export const metadata: Metadata = {
   title: 'Reconquérir son Ex : Voyance et Tarot | Guidance Retour',
   description: 'Comment reconquérir votre ex selon la voyance et le tarot ? Découvrez le timing idéal, les étapes de reconquête et ce que votre ex ressent vraiment.',
   keywords: ['reconquérir son ex', 'reconquête amoureuse', 'retour ex', 'tarot ex', 'voyance retour'],
-  alternates: { canonical: 'https://voyantlove.fr/reconquete/reconquerir-son-ex/' },
+  alternates: { canonical: 'https://www.voyantlove.fr/reconquete/reconquerir-son-ex/' },
 };
 
 export default function ReconquerirSonExPage() {
   const articleSchema = getArticleSchema({
     title: 'Reconquérir son Ex : Voyance et Tarot | Guidance Retour',
     description: 'Comment reconquérir votre ex selon la voyance et le tarot ? Découvrez le timing idéal, les étapes de reconquête et ce que votre ex ressent vraiment.',
-    url: 'https://voyantlove.fr/reconquete/reconquerir-son-ex/',
+    url: 'https://www.voyantlove.fr/reconquete/reconquerir-son-ex/',
     datePublished: '2026-01-15',
     dateModified: new Date().toISOString().split('T')[0],
     keywords: ['reconquérir son ex', 'reconquête amoureuse', 'retour ex', 'tarot ex', 'voyance retour'],
@@ -43,9 +43,9 @@ export default function ReconquerirSonExPage() {
   ]);
 
   const breadcrumbSchema = getBreadcrumbSchema([
-    { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'Reconquête', url: 'https://voyantlove.fr/reconquete/' },
-    { name: 'Reconquérir son Ex', url: 'https://voyantlove.fr/reconquete/reconquerir-son-ex/' },
+    { name: 'Accueil', url: 'https://www.voyantlove.fr' },
+    { name: 'Reconquête', url: 'https://www.voyantlove.fr/reconquete/' },
+    { name: 'Reconquérir son Ex', url: 'https://www.voyantlove.fr/reconquete/reconquerir-son-ex/' },
   ]);
 
   const authorSchema = getAuthorSchema();

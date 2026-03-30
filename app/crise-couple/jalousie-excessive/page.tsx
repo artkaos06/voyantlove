@@ -10,23 +10,23 @@ export const metadata: Metadata = {
   title: 'Jalousie Excessive dans le Couple : Causes, Signes et Solutions Efficaces',
   description: 'La jalousie détruit votre couple ? Découvrez les causes profondes, les signes de jalousie maladive et les solutions concrètes pour retrouver la confiance.',
   keywords: ['jalousie excessive couple', 'jalousie maladive', 'crise de jalousie', 'surmonter jalousie', 'confiance couple'],
-  alternates: { canonical: 'https://voyantlove.fr/crise-couple/jalousie-excessive/' },
+  alternates: { canonical: 'https://www.voyantlove.fr/crise-couple/jalousie-excessive/' },
 };
 
 export default function JalousieExcessivePage() {
   const articleSchema = getArticleSchema({
     title: 'Jalousie Excessive dans le Couple : Causes, Signes et Solutions Efficaces',
     description: 'La jalousie détruit votre couple ? Découvrez les causes profondes, les signes de jalousie maladive et les solutions concrètes pour retrouver la confiance.',
-    url: 'https://voyantlove.fr/crise-couple/jalousie-excessive/',
+    url: 'https://www.voyantlove.fr/crise-couple/jalousie-excessive/',
     datePublished: '2026-02-09',
     dateModified: new Date().toISOString().split('T')[0],
     keywords: ['jalousie excessive couple', 'jalousie maladive', 'crise de jalousie', 'surmonter jalousie', 'confiance couple'],
   });
 
   const breadcrumbSchema = getBreadcrumbSchema([
-    { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'Crise de Couple', url: 'https://voyantlove.fr/crise-couple/' },
-    { name: 'Jalousie Excessive', url: 'https://voyantlove.fr/crise-couple/jalousie-excessive/' },
+    { name: 'Accueil', url: 'https://www.voyantlove.fr' },
+    { name: 'Crise de Couple', url: 'https://www.voyantlove.fr/crise-couple/' },
+    { name: 'Jalousie Excessive', url: 'https://www.voyantlove.fr/crise-couple/jalousie-excessive/' },
   ]);
 
   const authorSchema = getAuthorSchema();

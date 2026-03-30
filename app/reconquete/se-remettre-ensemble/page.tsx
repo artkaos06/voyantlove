@@ -10,23 +10,23 @@ export const metadata: Metadata = {
   title: 'Se Remettre Ensemble : Les 5 Étapes pour Réussir',
   description: 'Comment se remettre ensemble avec son ex ? Découvrez les étapes essentielles et la guidance tarot pour une réunion réussie.',
   keywords: ['se remettre ensemble', 'reprise relation', 'reconstruction couple', 'retrouvailles'],
-  alternates: { canonical: 'https://voyantlove.fr/reconquete/se-remettre-ensemble/' },
+  alternates: { canonical: 'https://www.voyantlove.fr/reconquete/se-remettre-ensemble/' },
 };
 
 export default function SeRemettreEnsemblePage() {
   const articleSchema = getArticleSchema({
     title: 'Se Remettre Ensemble : Les 5 Étapes pour Réussir',
     description: 'Comment se remettre ensemble avec son ex ? Découvrez les étapes essentielles et la guidance tarot pour une réunion réussie.',
-    url: 'https://voyantlove.fr/reconquete/se-remettre-ensemble/',
+    url: 'https://www.voyantlove.fr/reconquete/se-remettre-ensemble/',
     datePublished: '2026-01-19',
     dateModified: new Date().toISOString().split('T')[0],
     keywords: ['se remettre ensemble', 'reprise relation', 'reconstruction couple', 'retrouvailles'],
   });
 
   const breadcrumbSchema = getBreadcrumbSchema([
-    { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'Reconquête', url: 'https://voyantlove.fr/reconquete/' },
-    { name: 'Se Remettre Ensemble', url: 'https://voyantlove.fr/reconquete/se-remettre-ensemble/' },
+    { name: 'Accueil', url: 'https://www.voyantlove.fr' },
+    { name: 'Reconquête', url: 'https://www.voyantlove.fr/reconquete/' },
+    { name: 'Se Remettre Ensemble', url: 'https://www.voyantlove.fr/reconquete/se-remettre-ensemble/' },
   ]);
 
   const authorSchema = getAuthorSchema();

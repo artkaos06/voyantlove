@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: 'Horoscope amour 2026 gratuit : prédictions sentimentales pour chaque signe. Périodes favorables, compatibilités et guidance.',
   keywords: ['horoscope amour 2026', 'horoscope amour gratuit', 'prédictions amoureuses 2026'],
   alternates: {
-    canonical: 'https://voyantlove.fr/voyance-gratuite-amour/horoscope-amour-2026/',
+    canonical: 'https://www.voyantlove.fr/voyance-gratuite-amour/horoscope-amour-2026/',
   },
 };
 
@@ -19,7 +19,7 @@ export default function HoroscopeAmour2026Page() {
   const articleSchema = getArticleSchema({
     title: 'Horoscope Amour 2026 : Prédictions Sentimentales par Signe',
     description: 'Horoscope amour 2026 gratuit : prédictions sentimentales pour chaque signe. Périodes favorables, compatibilités et guidance.',
-    url: 'https://voyantlove.fr/voyance-gratuite-amour/horoscope-amour-2026/',
+    url: 'https://www.voyantlove.fr/voyance-gratuite-amour/horoscope-amour-2026/',
     datePublished: '2026-03-10',
     dateModified: new Date().toISOString().split('T')[0],
     keywords: ['horoscope amour 2026', 'horoscope amour gratuit', 'prédictions amoureuses 2026'],
@@ -28,9 +28,9 @@ export default function HoroscopeAmour2026Page() {
   const authorSchema = getAuthorSchema();
 
   const breadcrumbSchema = getBreadcrumbSchema([
-    { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'Voyance Gratuite Amour', url: 'https://voyantlove.fr/voyance-gratuite-amour/' },
-    { name: 'Horoscope Amour 2026', url: 'https://voyantlove.fr/voyance-gratuite-amour/horoscope-amour-2026/' },
+    { name: 'Accueil', url: 'https://www.voyantlove.fr' },
+    { name: 'Voyance Gratuite Amour', url: 'https://www.voyantlove.fr/voyance-gratuite-amour/' },
+    { name: 'Horoscope Amour 2026', url: 'https://www.voyantlove.fr/voyance-gratuite-amour/horoscope-amour-2026/' },
   ]);
 
   const faqSchema = getFAQSchema([

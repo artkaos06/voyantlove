@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: 'Analyse de compatibilit\u00e9 amoureuse par le tarot et l\u2019astrologie. Synastrie, \u00e2me s\u0153ur, flamme jumelle : d\u00e9couvrez si vous \u00eates vraiment compatibles.',
   keywords: ['compatibilit\u00e9 amoureuse', 'compatibilit\u00e9 couple voyance', 'synastrie amoureuse', 'sommes-nous faits l\'un pour l\'autre', 'compatibilit\u00e9 astrale'],
   alternates: {
-    canonical: 'https://voyantlove.fr/sentiments/compatibilite-amoureuse/',
+    canonical: 'https://www.voyantlove.fr/sentiments/compatibilite-amoureuse/',
   },
 };
 
@@ -19,16 +19,16 @@ export default function CompatibiliteAmoureusePage() {
   const articleSchema = getArticleSchema({
     title: 'Compatibilit\u00e9 Amoureuse : \u00cates-vous Faits l\u2019Un pour l\u2019Autre ? | Voyance',
     description: 'Analyse de compatibilit\u00e9 amoureuse par le tarot et l\u2019astrologie. Synastrie, \u00e2me s\u0153ur, flamme jumelle : d\u00e9couvrez si vous \u00eates vraiment compatibles.',
-    url: 'https://voyantlove.fr/sentiments/compatibilite-amoureuse/',
+    url: 'https://www.voyantlove.fr/sentiments/compatibilite-amoureuse/',
     datePublished: '2026-02-09',
     dateModified: new Date().toISOString().split('T')[0],
     keywords: ['compatibilit\u00e9 amoureuse', 'compatibilit\u00e9 couple voyance', 'synastrie amoureuse', 'sommes-nous faits l\'un pour l\'autre', 'compatibilit\u00e9 astrale'],
   });
 
   const breadcrumbSchema = getBreadcrumbSchema([
-    { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'Sentiments', url: 'https://voyantlove.fr/sentiments/' },
-    { name: 'Compatibilit\u00e9 Amoureuse', url: 'https://voyantlove.fr/sentiments/compatibilite-amoureuse/' },
+    { name: 'Accueil', url: 'https://www.voyantlove.fr' },
+    { name: 'Sentiments', url: 'https://www.voyantlove.fr/sentiments/' },
+    { name: 'Compatibilit\u00e9 Amoureuse', url: 'https://www.voyantlove.fr/sentiments/compatibilite-amoureuse/' },
   ]);
 
   const authorSchema = getAuthorSchema();

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: 'Consultation de voyance sentimentale avec un voyant spécialisé amour. Questions de cœur, sentiments, avenir amoureux et reconquête. Réponses précises.',
   keywords: ['consultation voyance sentimentale', 'voyance sentimentale', 'consultation voyance amour', 'voyance amoureuse', 'voyance du coeur', 'voyant amour'],
   alternates: {
-    canonical: 'https://voyantlove.fr/methodes-voyance/voyance-sentimentale/',
+    canonical: 'https://www.voyantlove.fr/methodes-voyance/voyance-sentimentale/',
   },
 };
 
@@ -19,7 +19,7 @@ export default function VoyanceSentimentalePage() {
   const articleSchema = getArticleSchema({
     title: 'Consultation Voyance Sentimentale : Guidance Amour par Voyant Expert',
     description: 'Consultation de voyance sentimentale avec un voyant spécialisé amour. Questions de cœur, sentiments, avenir amoureux et reconquête. Réponses précises.',
-    url: 'https://voyantlove.fr/methodes-voyance/voyance-sentimentale/',
+    url: 'https://www.voyantlove.fr/methodes-voyance/voyance-sentimentale/',
     datePublished: '2026-03-13',
     dateModified: new Date().toISOString().split('T')[0],
     keywords: ['voyance sentimentale', 'voyance sentimentale gratuite', 'voyance amoureuse', 'voyance du coeur', 'consultation sentimentale', 'voyant amour'],
@@ -28,9 +28,9 @@ export default function VoyanceSentimentalePage() {
   const authorSchema = getAuthorSchema();
 
   const breadcrumbSchema = getBreadcrumbSchema([
-    { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'Méthodes de Voyance', url: 'https://voyantlove.fr/methodes-voyance/' },
-    { name: 'Voyance Sentimentale', url: 'https://voyantlove.fr/methodes-voyance/voyance-sentimentale/' },
+    { name: 'Accueil', url: 'https://www.voyantlove.fr' },
+    { name: 'Méthodes de Voyance', url: 'https://www.voyantlove.fr/methodes-voyance/' },
+    { name: 'Voyance Sentimentale', url: 'https://www.voyantlove.fr/methodes-voyance/voyance-sentimentale/' },
   ]);
 
   const faqSchema = getFAQSchema([

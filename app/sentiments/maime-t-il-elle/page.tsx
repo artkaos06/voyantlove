@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: 'Découvrez ses vrais sentiments grâce au tarot et à la voyance. M\'aime-t-il/elle vraiment ? Pense-t-il/elle à moi ? Que ressent-il/elle ?',
   keywords: ['m\'aime-t-il', 'ses sentiments', 'vrais sentiments tarot', 'pense-t-il à moi', 'décrypter sentiments'],
   alternates: {
-    canonical: 'https://voyantlove.fr/sentiments/maime-t-il-elle/',
+    canonical: 'https://www.voyantlove.fr/sentiments/maime-t-il-elle/',
   },
 };
 
@@ -19,7 +19,7 @@ export default function MAimeTilEllePage() {
   const articleSchema = getArticleSchema({
     title: 'M\'aime-t-il/elle Vraiment ? Tarot et Voyance des Sentiments',
     description: 'Découvrez ses vrais sentiments grâce au tarot et à la voyance. M\'aime-t-il/elle vraiment ? Pense-t-il/elle à moi ? Que ressent-il/elle ?',
-    url: 'https://voyantlove.fr/sentiments/maime-t-il-elle/',
+    url: 'https://www.voyantlove.fr/sentiments/maime-t-il-elle/',
     datePublished: '2026-01-10',
     dateModified: new Date().toISOString().split('T')[0],
     keywords: ['m\'aime-t-il', 'ses sentiments', 'vrais sentiments tarot', 'pense-t-il à moi', 'décrypter sentiments'],
@@ -49,9 +49,9 @@ export default function MAimeTilEllePage() {
   ]);
 
   const breadcrumbSchema = getBreadcrumbSchema([
-    { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'Sentiments', url: 'https://voyantlove.fr/sentiments/' },
-    { name: 'M\'aime-t-il/elle', url: 'https://voyantlove.fr/sentiments/maime-t-il-elle/' },
+    { name: 'Accueil', url: 'https://www.voyantlove.fr' },
+    { name: 'Sentiments', url: 'https://www.voyantlove.fr/sentiments/' },
+    { name: 'M\'aime-t-il/elle', url: 'https://www.voyantlove.fr/sentiments/maime-t-il-elle/' },
   ]);
 
   const authorSchema = getAuthorSchema();

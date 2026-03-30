@@ -3,7 +3,7 @@ import Script from "next/script";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://voyantlove.fr'),
+  metadataBase: new URL('https://www.voyantlove.fr'),
   title: {
     default: 'VoyantLove - Voyance Amoureuse Spécialisée | Tarot de l\'Amour',
     template: '%s | VoyantLove'
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'fr_FR',
-    url: 'https://voyantlove.fr',
+    url: 'https://www.voyantlove.fr',
     siteName: 'VoyantLove',
     title: 'VoyantLove - Voyance Amoureuse Spécialisée',
     description: 'Voyance amoureuse : reconquérir son ex, rencontrer l\'amour, compatibilité. Tarot et guidance sentimentale.',
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     images: ['/og-image.png'],
   },
   alternates: {
-    canonical: 'https://voyantlove.fr',
+    canonical: 'https://www.voyantlove.fr',
   },
   verification: {
     google: 'your-google-verification-code',

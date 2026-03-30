@@ -11,12 +11,12 @@ export const metadata: Metadata = {
   description: 'Identifiez les 10 signes d\u2019une relation toxique et lib\u00e9rez-vous gr\u00e2ce \u00e0 la voyance amoureuse. Tarot de lib\u00e9ration, manipulation \u00e9motionnelle, reconstruction apr\u00e8s toxicit\u00e9.',
   keywords: ['relation toxique', 'signes relation toxique', 'manipulation \u00e9motionnelle', 'd\u00e9pendance affective', 'lib\u00e9ration relation toxique', 'voyance amoureuse', 'tarot lib\u00e9ration'],
   alternates: {
-    canonical: 'https://voyantlove.fr/sentiments/relation-toxique/',
+    canonical: 'https://www.voyantlove.fr/sentiments/relation-toxique/',
   },
   openGraph: {
     title: 'Relation Toxique : Signes, Lib\u00e9ration et Guidance par la Voyance',
     description: 'Identifiez les 10 signes d\u2019une relation toxique et lib\u00e9rez-vous gr\u00e2ce \u00e0 la voyance amoureuse. Tarot de lib\u00e9ration, manipulation \u00e9motionnelle, reconstruction apr\u00e8s toxicit\u00e9.',
-    url: 'https://voyantlove.fr/sentiments/relation-toxique/',
+    url: 'https://www.voyantlove.fr/sentiments/relation-toxique/',
     type: 'article',
   },
 };
@@ -25,16 +25,16 @@ export default function RelationToxiquePage() {
   const articleSchema = getArticleSchema({
     title: 'Relation Toxique : Signes, Lib\u00e9ration et Guidance par la Voyance',
     description: 'Identifiez les 10 signes d\u2019une relation toxique et lib\u00e9rez-vous gr\u00e2ce \u00e0 la voyance amoureuse. Tarot de lib\u00e9ration, manipulation \u00e9motionnelle, reconstruction apr\u00e8s toxicit\u00e9.',
-    url: 'https://voyantlove.fr/sentiments/relation-toxique/',
+    url: 'https://www.voyantlove.fr/sentiments/relation-toxique/',
     datePublished: '2026-03-07',
     dateModified: new Date().toISOString().split('T')[0],
     keywords: ['relation toxique', 'signes relation toxique', 'manipulation \u00e9motionnelle', 'd\u00e9pendance affective', 'lib\u00e9ration relation toxique', 'voyance amoureuse', 'tarot lib\u00e9ration'],
   });
 
   const breadcrumbSchema = getBreadcrumbSchema([
-    { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'Sentiments & Avenir', url: 'https://voyantlove.fr/sentiments/' },
-    { name: 'Relation Toxique', url: 'https://voyantlove.fr/sentiments/relation-toxique/' },
+    { name: 'Accueil', url: 'https://www.voyantlove.fr' },
+    { name: 'Sentiments & Avenir', url: 'https://www.voyantlove.fr/sentiments/' },
+    { name: 'Relation Toxique', url: 'https://www.voyantlove.fr/sentiments/relation-toxique/' },
   ]);
 
   const authorSchema = getAuthorSchema();

@@ -10,23 +10,23 @@ export const metadata: Metadata = {
   title: 'Voyance Grossesse : Vais-Je Avoir un Enfant ? Prédictions | VoyantLove',
   description: 'Vous vous demandez si vous allez avoir un enfant ? La voyance grossesse révèle les perspectives de maternité, les périodes favorables et les signes spirituels d\'une naissance.',
   keywords: ['voyance grossesse', 'vais-je avoir un enfant', 'voyance bébé', 'voyance maternité', 'prédiction grossesse'],
-  alternates: { canonical: 'https://voyantlove.fr/sentiments/voyance-grossesse-bebe/' },
+  alternates: { canonical: 'https://www.voyantlove.fr/sentiments/voyance-grossesse-bebe/' },
 };
 
 export default function VoyanceGrossessePage() {
   const articleSchema = getArticleSchema({
     title: 'Voyance Grossesse : Vais-Je Avoir un Enfant ? Prédictions | VoyantLove',
     description: 'Vous vous demandez si vous allez avoir un enfant ? La voyance grossesse révèle les perspectives de maternité, les périodes favorables et les signes spirituels d\'une naissance.',
-    url: 'https://voyantlove.fr/sentiments/voyance-grossesse-bebe/',
+    url: 'https://www.voyantlove.fr/sentiments/voyance-grossesse-bebe/',
     datePublished: '2026-03-27',
     dateModified: new Date().toISOString().split('T')[0],
     keywords: ['voyance grossesse', 'vais-je avoir un enfant', 'voyance bébé', 'voyance maternité', 'prédiction grossesse'],
   });
 
   const breadcrumbSchema = getBreadcrumbSchema([
-    { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'Sentiments & Avenir', url: 'https://voyantlove.fr/sentiments/' },
-    { name: 'Voyance Grossesse', url: 'https://voyantlove.fr/sentiments/voyance-grossesse-bebe/' },
+    { name: 'Accueil', url: 'https://www.voyantlove.fr' },
+    { name: 'Sentiments & Avenir', url: 'https://www.voyantlove.fr/sentiments/' },
+    { name: 'Voyance Grossesse', url: 'https://www.voyantlove.fr/sentiments/voyance-grossesse-bebe/' },
   ]);
 
   const authorSchema = getAuthorSchema();

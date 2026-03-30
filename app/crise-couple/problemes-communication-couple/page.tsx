@@ -10,23 +10,23 @@ export const metadata: Metadata = {
   title: 'Problème de Communication Couple : Solutions pour un Dialogue Difficile',
   description: 'Résolvez les problèmes de communication dans le couple : dialogue difficile, silence, disputes répétitives. Techniques concrètes et guidance voyance pour reconstruire la connexion.',
   keywords: ['problème de communication couple', 'communication couple difficile', 'problème de communication dans le couple', 'dialogue couple', 'incompréhension couple', 'améliorer communication couple'],
-  alternates: { canonical: 'https://voyantlove.fr/crise-couple/problemes-communication-couple/' },
+  alternates: { canonical: 'https://www.voyantlove.fr/crise-couple/problemes-communication-couple/' },
 };
 
 export default function ProblemesCommunicationCouplePage() {
   const articleSchema = getArticleSchema({
     title: 'Problème de Communication Couple : Solutions pour un Dialogue Difficile',
     description: 'Résolvez les problèmes de communication dans le couple : dialogue difficile, silence, disputes répétitives. Techniques concrètes et guidance voyance pour reconstruire la connexion.',
-    url: 'https://voyantlove.fr/crise-couple/problemes-communication-couple/',
+    url: 'https://www.voyantlove.fr/crise-couple/problemes-communication-couple/',
     datePublished: '2026-02-09',
     dateModified: new Date().toISOString().split('T')[0],
     keywords: ['problème de communication couple', 'communication couple difficile', 'problème de communication dans le couple', 'dialogue couple', 'incompréhension couple'],
   });
 
   const breadcrumbSchema = getBreadcrumbSchema([
-    { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'Crise de Couple', url: 'https://voyantlove.fr/crise-couple/' },
-    { name: 'Problèmes de Communication', url: 'https://voyantlove.fr/crise-couple/problemes-communication-couple/' },
+    { name: 'Accueil', url: 'https://www.voyantlove.fr' },
+    { name: 'Crise de Couple', url: 'https://www.voyantlove.fr/crise-couple/' },
+    { name: 'Problèmes de Communication', url: 'https://www.voyantlove.fr/crise-couple/problemes-communication-couple/' },
   ]);
 
   const authorSchema = getAuthorSchema();

@@ -10,23 +10,23 @@ export const metadata: Metadata = {
   title: "Voyance Célibat : Quand Vais-Je Trouver l'Amour ? | VoyantLove",
   description: "Vous êtes célibataire et cherchez à savoir quand l'amour va arriver. Voyance célibat : découvrez les signes, les blocages et les prédictions pour trouver l'amour.",
   keywords: ['voyance célibat', 'quand vais-je trouver l amour', 'voyance trouver l amour', 'célibataire voyance', 'blocage amoureux voyance'],
-  alternates: { canonical: 'https://voyantlove.fr/nouvelle-rencontre/voyance-celibat-trouver-lamour/' },
+  alternates: { canonical: 'https://www.voyantlove.fr/nouvelle-rencontre/voyance-celibat-trouver-lamour/' },
 };
 
 export default function VoyanceCelibatPage() {
   const articleSchema = getArticleSchema({
     title: "Voyance Célibat : Quand Vais-Je Trouver l'Amour ? | VoyantLove",
     description: "Vous êtes célibataire et cherchez à savoir quand l'amour va arriver. Voyance célibat : découvrez les signes, les blocages et les prédictions pour trouver l'amour.",
-    url: 'https://voyantlove.fr/nouvelle-rencontre/voyance-celibat-trouver-lamour/',
+    url: 'https://www.voyantlove.fr/nouvelle-rencontre/voyance-celibat-trouver-lamour/',
     datePublished: '2026-03-27',
     dateModified: new Date().toISOString().split('T')[0],
     keywords: ['voyance célibat', 'quand vais-je trouver l amour', 'voyance trouver l amour', 'célibataire voyance', 'blocage amoureux voyance'],
   });
 
   const breadcrumbSchema = getBreadcrumbSchema([
-    { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'Nouvelle Rencontre', url: 'https://voyantlove.fr/nouvelle-rencontre/' },
-    { name: 'Voyance Célibat', url: 'https://voyantlove.fr/nouvelle-rencontre/voyance-celibat-trouver-lamour/' },
+    { name: 'Accueil', url: 'https://www.voyantlove.fr' },
+    { name: 'Nouvelle Rencontre', url: 'https://www.voyantlove.fr/nouvelle-rencontre/' },
+    { name: 'Voyance Célibat', url: 'https://www.voyantlove.fr/nouvelle-rencontre/voyance-celibat-trouver-lamour/' },
   ]);
 
   const authorSchema = getAuthorSchema();

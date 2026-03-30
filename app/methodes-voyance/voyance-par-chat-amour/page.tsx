@@ -10,14 +10,14 @@ export const metadata: Metadata = {
   title: 'Voyance par Chat Amour : Consultation en Ligne',
   description: 'Voyance par chat amour : consultez un voyant en ligne par messagerie pour vos questions sentimentales. Discret, rapide et accessible 24h/24.',
   keywords: ['voyance chat amour', 'voyance en ligne', 'consultation chat voyance', 'voyance par messagerie', 'chat voyant amour'],
-  alternates: { canonical: 'https://voyantlove.fr/methodes-voyance/voyance-par-chat-amour/' },
+  alternates: { canonical: 'https://www.voyantlove.fr/methodes-voyance/voyance-par-chat-amour/' },
 };
 
 export default function VoyanceParChatAmourPage() {
   const articleSchema = getArticleSchema({
     title: 'Voyance par Chat Amour : Consultation en Ligne',
     description: 'Voyance par chat amour : consultez un voyant en ligne par messagerie pour vos questions sentimentales. Discret, rapide et accessible 24h/24.',
-    url: 'https://voyantlove.fr/methodes-voyance/voyance-par-chat-amour/',
+    url: 'https://www.voyantlove.fr/methodes-voyance/voyance-par-chat-amour/',
     datePublished: '2026-03-22',
     dateModified: new Date().toISOString().split('T')[0],
     keywords: ['voyance chat amour', 'voyance en ligne', 'consultation chat voyance', 'voyance par messagerie', 'chat voyant amour'],
@@ -43,9 +43,9 @@ export default function VoyanceParChatAmourPage() {
   ]);
 
   const breadcrumbSchema = getBreadcrumbSchema([
-    { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'Méthodes de Voyance', url: 'https://voyantlove.fr/methodes-voyance/' },
-    { name: 'Voyance par Chat Amour', url: 'https://voyantlove.fr/methodes-voyance/voyance-par-chat-amour/' },
+    { name: 'Accueil', url: 'https://www.voyantlove.fr' },
+    { name: 'Méthodes de Voyance', url: 'https://www.voyantlove.fr/methodes-voyance/' },
+    { name: 'Voyance par Chat Amour', url: 'https://www.voyantlove.fr/methodes-voyance/voyance-par-chat-amour/' },
   ]);
 
   const authorSchema = getAuthorSchema();

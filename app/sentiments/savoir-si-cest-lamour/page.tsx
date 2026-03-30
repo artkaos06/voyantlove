@@ -10,14 +10,14 @@ export const metadata: Metadata = {
   title: 'Comment Savoir si C\'est le Vrai Amour | Voyance',
   description: 'Découvrez les signes du vrai amour grâce à la voyance et au tarot. Apprenez à distinguer l\'amour authentique de l\'attachement ou de la passion éphémère.',
   keywords: ['savoir si c\'est l\'amour', 'vrai amour signes', 'est-ce de l\'amour', 'reconnaître le vrai amour', 'voyance amour'],
-  alternates: { canonical: 'https://voyantlove.fr/sentiments/savoir-si-cest-lamour/' },
+  alternates: { canonical: 'https://www.voyantlove.fr/sentiments/savoir-si-cest-lamour/' },
 };
 
 export default function SavoirSiCestLamourPage() {
   const articleSchema = getArticleSchema({
     title: 'Comment Savoir si C\'est le Vrai Amour',
     description: 'Découvrez les signes du vrai amour grâce à la voyance et au tarot. Apprenez à distinguer l\'amour authentique de l\'attachement ou de la passion éphémère.',
-    url: 'https://voyantlove.fr/sentiments/savoir-si-cest-lamour/',
+    url: 'https://www.voyantlove.fr/sentiments/savoir-si-cest-lamour/',
     datePublished: '2026-03-22',
     dateModified: new Date().toISOString().split('T')[0],
     keywords: ['savoir si c\'est l\'amour', 'vrai amour signes', 'est-ce de l\'amour', 'reconnaître le vrai amour', 'voyance amour'],
@@ -43,9 +43,9 @@ export default function SavoirSiCestLamourPage() {
   ]);
 
   const breadcrumbSchema = getBreadcrumbSchema([
-    { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'Sentiments', url: 'https://voyantlove.fr/sentiments/' },
-    { name: 'Savoir si C\'est l\'Amour', url: 'https://voyantlove.fr/sentiments/savoir-si-cest-lamour/' },
+    { name: 'Accueil', url: 'https://www.voyantlove.fr' },
+    { name: 'Sentiments', url: 'https://www.voyantlove.fr/sentiments/' },
+    { name: 'Savoir si C\'est l\'Amour', url: 'https://www.voyantlove.fr/sentiments/savoir-si-cest-lamour/' },
   ]);
 
   const authorSchema = getAuthorSchema();

@@ -10,14 +10,14 @@ export const metadata: Metadata = {
   title: 'Comment Tourner la Page après une Rupture | Voyance',
   description: 'Comment tourner la page après une rupture amoureuse ? La voyance et le tarot vous guident pour lâcher prise, avancer et retrouver la paix intérieure.',
   keywords: ['tourner la page', 'avancer après rupture', 'oublier et avancer', 'lâcher prise amour', 'après rupture voyance'],
-  alternates: { canonical: 'https://voyantlove.fr/rupture/comment-tourner-la-page/' },
+  alternates: { canonical: 'https://www.voyantlove.fr/rupture/comment-tourner-la-page/' },
 };
 
 export default function CommentTournerLaPagePage() {
   const articleSchema = getArticleSchema({
     title: 'Comment Tourner la Page après une Rupture',
     description: 'Comment tourner la page après une rupture amoureuse ? La voyance et le tarot vous guident pour lâcher prise, avancer et retrouver la paix intérieure.',
-    url: 'https://voyantlove.fr/rupture/comment-tourner-la-page/',
+    url: 'https://www.voyantlove.fr/rupture/comment-tourner-la-page/',
     datePublished: '2026-03-22',
     dateModified: new Date().toISOString().split('T')[0],
     keywords: ['tourner la page', 'avancer après rupture', 'oublier et avancer', 'lâcher prise amour', 'après rupture voyance'],
@@ -43,9 +43,9 @@ export default function CommentTournerLaPagePage() {
   ]);
 
   const breadcrumbSchema = getBreadcrumbSchema([
-    { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'Rupture', url: 'https://voyantlove.fr/rupture/' },
-    { name: 'Comment Tourner la Page', url: 'https://voyantlove.fr/rupture/comment-tourner-la-page/' },
+    { name: 'Accueil', url: 'https://www.voyantlove.fr' },
+    { name: 'Rupture', url: 'https://www.voyantlove.fr/rupture/' },
+    { name: 'Comment Tourner la Page', url: 'https://www.voyantlove.fr/rupture/comment-tourner-la-page/' },
   ]);
 
   const authorSchema = getAuthorSchema();

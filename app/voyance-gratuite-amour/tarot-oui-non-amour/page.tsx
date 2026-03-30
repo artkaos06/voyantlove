@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   description: 'Tirage tarot oui non amour gratuit et sérieux. Posez votre question sentimentale et obtenez une réponse immédiate : oui, non ou peut-être. Tirage en ligne.',
   keywords: ['tarot oui non amour', 'tarot oui non amour gratuit', 'tarot oui non sérieux', 'tirage oui non amour', 'tarot amour oui non gratuit'],
   alternates: {
-    canonical: 'https://voyantlove.fr/voyance-gratuite-amour/tarot-oui-non-amour/',
+    canonical: 'https://www.voyantlove.fr/voyance-gratuite-amour/tarot-oui-non-amour/',
   },
 };
 
@@ -20,7 +20,7 @@ export default function TarotOuiNonAmourPage() {
   const articleSchema = getArticleSchema({
     title: 'Tarot Oui Non Amour Gratuit — Tirage Immédiat en Ligne | VoyantLove',
     description: 'Tirage tarot oui non amour gratuit et sérieux. Posez votre question sentimentale et obtenez une réponse immédiate : oui, non ou peut-être. Tirage en ligne.',
-    url: 'https://voyantlove.fr/voyance-gratuite-amour/tarot-oui-non-amour/',
+    url: 'https://www.voyantlove.fr/voyance-gratuite-amour/tarot-oui-non-amour/',
     datePublished: '2026-03-10',
     dateModified: new Date().toISOString().split('T')[0],
     keywords: ['tarot oui non amour', 'tarot ni oui ni non', 'tarot oui non gratuit amour', 'voyance oui non amour', 'tarot amour oui non'],
@@ -29,9 +29,9 @@ export default function TarotOuiNonAmourPage() {
   const authorSchema = getAuthorSchema();
 
   const breadcrumbSchema = getBreadcrumbSchema([
-    { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'Voyance Gratuite Amour', url: 'https://voyantlove.fr/voyance-gratuite-amour/' },
-    { name: 'Tarot Oui Non Amour', url: 'https://voyantlove.fr/voyance-gratuite-amour/tarot-oui-non-amour/' },
+    { name: 'Accueil', url: 'https://www.voyantlove.fr' },
+    { name: 'Voyance Gratuite Amour', url: 'https://www.voyantlove.fr/voyance-gratuite-amour/' },
+    { name: 'Tarot Oui Non Amour', url: 'https://www.voyantlove.fr/voyance-gratuite-amour/tarot-oui-non-amour/' },
   ]);
 
   const faqSchema = getFAQSchema([

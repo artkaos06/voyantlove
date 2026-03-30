@@ -10,23 +10,23 @@ export const metadata: Metadata = {
   title: 'Signes de l\'Âme Sœur : Reconnaître Votre Connexion Karmique | 15 Indices',
   description: 'Découvrez les 15 signes infaillibles de l\'âme sœur selon le tarot et la spiritualité. Connexion instantanée, synchronicités, reconnaissance karmique et union des flammes jumelles.',
   keywords: ['âme sœur signes', 'reconnaître âme sœur', 'connexion karmique', 'flammes jumelles', 'signes amour véritable'],
-  alternates: { canonical: 'https://voyantlove.fr/nouvelle-rencontre/signes-ame-soeur/' },
+  alternates: { canonical: 'https://www.voyantlove.fr/nouvelle-rencontre/signes-ame-soeur/' },
 };
 
 export default function SignesAmeSoeurPage() {
   const articleSchema = getArticleSchema({
     title: 'Signes de l\'Âme Sœur : Reconnaître Votre Connexion Karmique | 15 Indices',
     description: 'Découvrez les 15 signes infaillibles de l\'âme sœur selon le tarot et la spiritualité. Connexion instantanée, synchronicités, reconnaissance karmique et union des flammes jumelles.',
-    url: 'https://voyantlove.fr/nouvelle-rencontre/signes-ame-soeur/',
+    url: 'https://www.voyantlove.fr/nouvelle-rencontre/signes-ame-soeur/',
     datePublished: '2026-02-09',
     dateModified: new Date().toISOString().split('T')[0],
     keywords: ['âme sœur signes', 'reconnaître âme sœur', 'connexion karmique', 'flammes jumelles', 'signes amour véritable'],
   });
 
   const breadcrumbSchema = getBreadcrumbSchema([
-    { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'Nouvelle Rencontre', url: 'https://voyantlove.fr/nouvelle-rencontre/' },
-    { name: 'Signes de l\'Âme Sœur', url: 'https://voyantlove.fr/nouvelle-rencontre/signes-ame-soeur/' },
+    { name: 'Accueil', url: 'https://www.voyantlove.fr' },
+    { name: 'Nouvelle Rencontre', url: 'https://www.voyantlove.fr/nouvelle-rencontre/' },
+    { name: 'Signes de l\'Âme Sœur', url: 'https://www.voyantlove.fr/nouvelle-rencontre/signes-ame-soeur/' },
   ]);
 
   const authorSchema = getAuthorSchema();

@@ -10,23 +10,23 @@ export const metadata: Metadata = {
   title: 'Voyance Mariage : Vais-Je Me Marier ? Avec Qui ? | VoyantLove',
   description: 'Vous vous demandez si et quand vous allez vous marier ? La voyance mariage révèle les prédictions sur votre union, la demande en mariage et votre futur conjoint.',
   keywords: ['voyance mariage', 'vais-je me marier', 'quand vais-je me marier', 'prédiction mariage', 'voyance union'],
-  alternates: { canonical: 'https://voyantlove.fr/sentiments/voyance-mariage/' },
+  alternates: { canonical: 'https://www.voyantlove.fr/sentiments/voyance-mariage/' },
 };
 
 export default function VoyanceMariagePage() {
   const articleSchema = getArticleSchema({
     title: 'Voyance Mariage : Vais-Je Me Marier ? Avec Qui ? | VoyantLove',
     description: 'Vous vous demandez si et quand vous allez vous marier ? La voyance mariage révèle les prédictions sur votre union, la demande en mariage et votre futur conjoint.',
-    url: 'https://voyantlove.fr/sentiments/voyance-mariage/',
+    url: 'https://www.voyantlove.fr/sentiments/voyance-mariage/',
     datePublished: '2026-03-27',
     dateModified: new Date().toISOString().split('T')[0],
     keywords: ['voyance mariage', 'vais-je me marier', 'quand vais-je me marier', 'prédiction mariage', 'voyance union'],
   });
 
   const breadcrumbSchema = getBreadcrumbSchema([
-    { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'Sentiments & Avenir', url: 'https://voyantlove.fr/sentiments/' },
-    { name: 'Voyance Mariage', url: 'https://voyantlove.fr/sentiments/voyance-mariage/' },
+    { name: 'Accueil', url: 'https://www.voyantlove.fr' },
+    { name: 'Sentiments & Avenir', url: 'https://www.voyantlove.fr/sentiments/' },
+    { name: 'Voyance Mariage', url: 'https://www.voyantlove.fr/sentiments/voyance-mariage/' },
   ]);
 
   const authorSchema = getAuthorSchema();

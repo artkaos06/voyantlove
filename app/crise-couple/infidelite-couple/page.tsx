@@ -10,23 +10,23 @@ export const metadata: Metadata = {
   title: 'Infidélité dans le Couple : Trahison, Pardon et Reconstruction | Voyance',
   description: 'Comprendre et surmonter l\'infidélité dans le couple. Guidance sur la trahison, le pardon, la reconstruction de la confiance et la seconde chance.',
   keywords: ['infidélité couple', 'trahison amoureuse', 'pardon infidélité', 'surmonter tromperie', 'seconde chance couple'],
-  alternates: { canonical: 'https://voyantlove.fr/crise-couple/infidelite-couple/' },
+  alternates: { canonical: 'https://www.voyantlove.fr/crise-couple/infidelite-couple/' },
 };
 
 export default function InfideliteCouplePage() {
   const articleSchema = getArticleSchema({
     title: 'Infidélité dans le Couple : Trahison, Pardon et Reconstruction | Voyance',
     description: 'Comprendre et surmonter l\'infidélité dans le couple. Guidance sur la trahison, le pardon, la reconstruction de la confiance et la seconde chance.',
-    url: 'https://voyantlove.fr/crise-couple/infidelite-couple/',
+    url: 'https://www.voyantlove.fr/crise-couple/infidelite-couple/',
     datePublished: '2026-02-09',
     dateModified: new Date().toISOString().split('T')[0],
     keywords: ['infidélité couple', 'trahison amoureuse', 'pardon infidélité', 'surmonter tromperie', 'seconde chance couple'],
   });
 
   const breadcrumbSchema = getBreadcrumbSchema([
-    { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'Crise de Couple', url: 'https://voyantlove.fr/crise-couple/' },
-    { name: 'Infidélité dans le Couple', url: 'https://voyantlove.fr/crise-couple/infidelite-couple/' },
+    { name: 'Accueil', url: 'https://www.voyantlove.fr' },
+    { name: 'Crise de Couple', url: 'https://www.voyantlove.fr/crise-couple/' },
+    { name: 'Infidélité dans le Couple', url: 'https://www.voyantlove.fr/crise-couple/infidelite-couple/' },
   ]);
 
   const authorSchema = getAuthorSchema();

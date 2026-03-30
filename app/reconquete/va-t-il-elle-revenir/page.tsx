@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: 'Votre ex va-t-il/elle revenir ? Le tarot répond à cette question cruciale. Découvrez les signes de retour, le timing probable et ce qu\'il/elle ressent vraiment.',
   keywords: ['va-t-il revenir', 'mon ex va revenir', 'retour ex tarot', 'prédiction retour', 'signes retour ex'],
   alternates: {
-    canonical: 'https://voyantlove.fr/reconquete/va-t-il-elle-revenir/',
+    canonical: 'https://www.voyantlove.fr/reconquete/va-t-il-elle-revenir/',
   },
 };
 
@@ -19,7 +19,7 @@ export default function VaTilRevenirPage() {
   const articleSchema = getArticleSchema({
     title: 'Mon Ex Va-t-il Revenir ? Réponse du Tarot et Voyance | Prédiction',
     description: 'Votre ex va-t-il/elle revenir ? Le tarot répond à cette question cruciale. Découvrez les signes de retour, le timing probable et ce qu\'il/elle ressent vraiment.',
-    url: 'https://voyantlove.fr/reconquete/va-t-il-elle-revenir/',
+    url: 'https://www.voyantlove.fr/reconquete/va-t-il-elle-revenir/',
     datePublished: '2026-01-14',
     dateModified: new Date().toISOString().split('T')[0],
     keywords: ['va-t-il revenir', 'mon ex va revenir', 'retour ex tarot', 'prédiction retour', 'signes retour ex'],
@@ -45,9 +45,9 @@ export default function VaTilRevenirPage() {
   ]);
 
   const breadcrumbSchema = getBreadcrumbSchema([
-    { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'Reconquête', url: 'https://voyantlove.fr/reconquete/' },
-    { name: 'Va-t-il/elle Revenir', url: 'https://voyantlove.fr/reconquete/va-t-il-elle-revenir/' },
+    { name: 'Accueil', url: 'https://www.voyantlove.fr' },
+    { name: 'Reconquête', url: 'https://www.voyantlove.fr/reconquete/' },
+    { name: 'Va-t-il/elle Revenir', url: 'https://www.voyantlove.fr/reconquete/va-t-il-elle-revenir/' },
   ]);
 
   const authorSchema = getAuthorSchema();

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: 'D\u00e9couvrez le tirage de tarot amoureux : tirage en croix, tirage sentimental, interpr\u00e9tation des arcanes majeurs pour l\u2019amour. Guide complet pour comprendre vos sentiments.',
   keywords: ['tirage tarot amour', 'tarot amoureux', 'tirage sentimental', 'lecture tarot couple', 'tarot des sentiments'],
   alternates: {
-    canonical: 'https://voyantlove.fr/methodes-voyance/tirage-tarot-amour/',
+    canonical: 'https://www.voyantlove.fr/methodes-voyance/tirage-tarot-amour/',
   },
 };
 
@@ -19,7 +19,7 @@ export default function TirageTarotAmourPage() {
   const articleSchema = getArticleSchema({
     title: 'Tirage de Tarot Amoureux : Guide Complet des Tirages Sentimentaux',
     description: 'D\u00e9couvrez le tirage de tarot amoureux : tirage en croix, tirage sentimental, interpr\u00e9tation des arcanes majeurs pour l\u2019amour. Guide complet pour comprendre vos sentiments.',
-    url: 'https://voyantlove.fr/methodes-voyance/tirage-tarot-amour/',
+    url: 'https://www.voyantlove.fr/methodes-voyance/tirage-tarot-amour/',
     datePublished: '2026-03-03',
     dateModified: new Date().toISOString().split('T')[0],
     keywords: ['tirage tarot amour', 'tarot amoureux', 'tirage sentimental', 'lecture tarot couple', 'tarot des sentiments'],
@@ -28,9 +28,9 @@ export default function TirageTarotAmourPage() {
   const authorSchema = getAuthorSchema();
 
   const breadcrumbSchema = getBreadcrumbSchema([
-    { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'M\u00e9thodes de Voyance', url: 'https://voyantlove.fr/methodes-voyance/' },
-    { name: 'Tirage Tarot Amour', url: 'https://voyantlove.fr/methodes-voyance/tirage-tarot-amour/' },
+    { name: 'Accueil', url: 'https://www.voyantlove.fr' },
+    { name: 'M\u00e9thodes de Voyance', url: 'https://www.voyantlove.fr/methodes-voyance/' },
+    { name: 'Tirage Tarot Amour', url: 'https://www.voyantlove.fr/methodes-voyance/tirage-tarot-amour/' },
   ]);
 
   const faqSchema = getFAQSchema([
@@ -53,6 +53,18 @@ export default function TirageTarotAmourPage() {
     {
       question: 'Signification des Amoureux dans un tirage ?',
       answer: 'La carte des Amoureux (Arcane VI) est la carte la plus significative du tarot en mati\u00e8re sentimentale. Elle repr\u00e9sente un choix amoureux d\u00e9cisif, une union sincere, une alchimie authentique entre deux \u00eatres. En position positive, elle confirme une relation harmonieuse et un amour r\u00e9ciproque. En position renvers\u00e9e ou entour\u00e9e de cartes difficiles, elle signale une h\u00e9sitation entre deux partenaires ou un d\u00e9s\u00e9quilibre sentimental. Le contexte des cartes voisines affine toujours l\u2019interpr\u00e9tation.',
+    },
+    {
+      question: 'Comment tirer les cartes en amour ?',
+      answer: 'Pour tirer les cartes en amour, commencez par formuler une question pr\u00e9cise et ouverte sur votre vie sentimentale, par exemple \u00ab Quelle est l\u2019\u00e9volution de ma relation ? \u00bb plut\u00f4t qu\u2019un simple oui/non. Choisissez un tirage adapt\u00e9 : la croix celtique pour une analyse profonde, un tirage 3 cartes (pass\u00e9/pr\u00e9sent/futur) pour une vue rapide, ou un tirage oui/non pour une question directe. L\u2019\u00e9tat d\u2019esprit est essentiel \u2014 restez calme et concentr\u00e9, \u00e9loignez les distractions. Les arcanes majeurs comme L\u2019Amoureux, L\u2019Imp\u00e9ratrice et Le Soleil sont particuli\u00e8rement r\u00e9v\u00e9lateurs en mati\u00e8re sentimentale. Pour une interpr\u00e9tation fiable et nuanc\u00e9e, consulter un tarologue professionnel reste pr\u00e9f\u00e9rable \u00e0 l\u2019auto-tirage, car les subtilit\u00e9s des combinaisons de cartes n\u00e9cessitent une expertise approfondie.',
+    },
+    {
+      question: 'Quel tirage pour une question d\u2019amour ?',
+      answer: 'Le choix du tirage d\u00e9pend de la nature de votre question sentimentale. Le tirage en croix celtique (10 cartes) offre l\u2019analyse la plus compl\u00e8te de votre relation : pass\u00e9, pr\u00e9sent, obstacles et \u00e9volution. Le tirage du couple (4 cartes) explore sp\u00e9cifiquement quatre dimensions : vous, l\u2019autre personne, la dynamique de la relation et son avenir. Pour une question directe comme \u00ab M\u2019aime-t-il ? \u00bb, le tirage oui/non en 3 cartes donne une r\u00e9ponse claire et imm\u00e9diate. Le tirage des sentiments (5 cartes) r\u00e9v\u00e8le ce que chacun ressent v\u00e9ritablement. Quelle que soit la m\u00e9thode, nous recommandons de consulter un voyant pour l\u2019interpr\u00e9tation, car les nuances entre les cartes et leurs positions sont essentielles pour une lecture pr\u00e9cise.',
+    },
+    {
+      question: 'Quel tarot est le plus fiable pour l\u2019amour ?',
+      answer: 'Le Tarot de Marseille est consid\u00e9r\u00e9 comme le plus fiable pour les questions amoureuses : c\u2019est le plus ancien jeu de tarot encore utilis\u00e9, avec 78 cartes dont la symbolique riche et pr\u00e9cise a \u00e9t\u00e9 \u00e9prouv\u00e9e par des si\u00e8cles de pratique. L\u2019Oracle de Belline est \u00e9galement tr\u00e8s r\u00e9put\u00e9 pour les questions sentimentales gr\u00e2ce \u00e0 ses cartes sp\u00e9cifiquement orient\u00e9es vers l\u2019amour et les relations. L\u2019Oracle G\u00e9, avec son langage clair et moderne, s\u00e9duit ceux qui recherchent des r\u00e9ponses accessibles. Cependant, la fiabilit\u00e9 d\u2019un tirage d\u00e9pend autant du voyant que du support utilis\u00e9 \u2014 l\u2019exp\u00e9rience, l\u2019intuition et la connexion \u00e9nerg\u00e9tique du praticien sont d\u00e9terminantes. Nos voyants utilisent des supports vari\u00e9s selon la question pos\u00e9e pour vous offrir la guidance la plus juste.',
     },
   ]);
 
@@ -362,9 +374,24 @@ export default function TirageTarotAmourPage() {
               <p className="text-gray-700 leading-relaxed">Le <strong>Tarot de Marseille</strong> est le jeu de r&eacute;f&eacute;rence en <strong>voyance amoureuse</strong> fran&ccedil;aise gr&acirc;ce &agrave; sa symbolique riche et ses 22 <strong>arcanes majeurs</strong> charg&eacute;s de sens. Sa structure permet une <strong>lecture profonde</strong> des &eacute;motions, des blocages et des potentiels amoureux. Le Rider-Waite offre des images plus explicites, facilitant l&apos;interpr&eacute;tation pour les d&eacute;butants. L&apos;essentiel n&apos;est pas le jeu choisi mais la connexion du <strong>voyant</strong> avec ses cartes et sa ma&icirc;trise de la symbolique amoureuse.</p>
             </div>
 
-            <div>
+            <div className="border-b border-gray-200 pb-6">
               <h3 className="text-xl font-bold text-gray-900 mb-3">Signification des Amoureux dans un tirage ?</h3>
               <p className="text-gray-700 leading-relaxed">La carte des <strong>Amoureux</strong> (Arcane VI) est la carte la plus significative du <strong>tarot</strong> en mati&egrave;re sentimentale. Elle repr&eacute;sente un choix amoureux d&eacute;cisif, une <strong>union sinc&egrave;re</strong>, une alchimie authentique entre deux &ecirc;tres. En position positive, elle confirme une <strong>relation harmonieuse</strong> et un amour r&eacute;ciproque. En position renvers&eacute;e ou entour&eacute;e de cartes difficiles, elle signale une h&eacute;sitation entre deux partenaires ou un d&eacute;s&eacute;quilibre sentimental. Le contexte des cartes voisines affine toujours l&apos;interpr&eacute;tation.</p>
+            </div>
+
+            <div className="border-b border-gray-200 pb-6">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Comment tirer les cartes en amour ?</h3>
+              <p className="text-gray-700 leading-relaxed">Pour <strong>tirer les cartes en amour</strong>, commencez par formuler une <strong>question pr&eacute;cise et ouverte</strong> sur votre vie sentimentale, par exemple &laquo;&nbsp;Quelle est l&apos;&eacute;volution de ma relation&nbsp;?&nbsp;&raquo; plut&ocirc;t qu&apos;un simple oui/non. Choisissez un <strong>tirage adapt&eacute;</strong> : la <strong>croix celtique</strong> pour une analyse profonde, un tirage 3 cartes (pass&eacute;/pr&eacute;sent/futur) pour une vue rapide, ou un tirage oui/non pour une question directe. L&apos;&eacute;tat d&apos;esprit est essentiel &mdash; restez calme et concentr&eacute;, &eacute;loignez les distractions. Les <strong>arcanes majeurs</strong> comme <strong>L&apos;Amoureux</strong>, <strong>L&apos;Imp&eacute;ratrice</strong> et <strong>Le Soleil</strong> sont particuli&egrave;rement r&eacute;v&eacute;lateurs en mati&egrave;re sentimentale. Pour une interpr&eacute;tation fiable et nuanc&eacute;e, consulter un <strong>tarologue professionnel</strong> reste pr&eacute;f&eacute;rable &agrave; l&apos;auto-tirage, car les subtilit&eacute;s des combinaisons de cartes n&eacute;cessitent une expertise approfondie.</p>
+            </div>
+
+            <div className="border-b border-gray-200 pb-6">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Quel tirage pour une question d&apos;amour ?</h3>
+              <p className="text-gray-700 leading-relaxed">Le choix du <strong>tirage</strong> d&eacute;pend de la nature de votre <strong>question sentimentale</strong>. Le <strong>tirage en croix celtique</strong> (10 cartes) offre l&apos;analyse la plus compl&egrave;te de votre relation : pass&eacute;, pr&eacute;sent, obstacles et &eacute;volution. Le <strong>tirage du couple</strong> (4 cartes) explore sp&eacute;cifiquement quatre dimensions : vous, l&apos;autre personne, la dynamique de la relation et son avenir. Pour une question directe comme &laquo;&nbsp;M&apos;aime-t-il&nbsp;?&nbsp;&raquo;, le <strong>tirage oui/non</strong> en 3 cartes donne une r&eacute;ponse claire et imm&eacute;diate. Le <strong>tirage des sentiments</strong> (5 cartes) r&eacute;v&egrave;le ce que chacun ressent v&eacute;ritablement. Quelle que soit la m&eacute;thode, nous recommandons de consulter un <strong>voyant</strong> pour l&apos;interpr&eacute;tation, car les nuances entre les cartes et leurs positions sont essentielles pour une <strong>lecture pr&eacute;cise</strong>.</p>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Quel tarot est le plus fiable pour l&apos;amour ?</h3>
+              <p className="text-gray-700 leading-relaxed">Le <strong>Tarot de Marseille</strong> est consid&eacute;r&eacute; comme le plus fiable pour les questions amoureuses : c&apos;est le plus ancien jeu de tarot encore utilis&eacute;, avec <strong>78 cartes</strong> dont la symbolique riche et pr&eacute;cise a &eacute;t&eacute; &eacute;prouv&eacute;e par des si&egrave;cles de pratique. L&apos;<strong>Oracle de Belline</strong> est &eacute;galement tr&egrave;s r&eacute;put&eacute; pour les questions sentimentales gr&acirc;ce &agrave; ses cartes sp&eacute;cifiquement orient&eacute;es vers l&apos;amour et les relations. L&apos;<strong>Oracle G&eacute;</strong>, avec son langage clair et moderne, s&eacute;duit ceux qui recherchent des r&eacute;ponses accessibles. Cependant, la <strong>fiabilit&eacute;</strong> d&apos;un tirage d&eacute;pend autant du <strong>voyant</strong> que du support utilis&eacute; &mdash; l&apos;exp&eacute;rience, l&apos;intuition et la connexion &eacute;nerg&eacute;tique du praticien sont d&eacute;terminantes. Nos voyants utilisent des supports vari&eacute;s selon la question pos&eacute;e pour vous offrir la <strong>guidance la plus juste</strong>.</p>
             </div>
           </div>
         </section>

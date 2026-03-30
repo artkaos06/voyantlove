@@ -11,12 +11,12 @@ export const metadata: Metadata = {
   description: 'Comprendre et surmonter la dépendance affective. Le tarot révèle vos schémas répétitifs, blocages karmiques et le chemin vers des relations saines.',
   keywords: ['dépendance affective', 'dépendance émotionnelle couple', 'se libérer dépendance affective', 'relation toxique voyance', 'attachement anxieux'],
   alternates: {
-    canonical: 'https://voyantlove.fr/crise-couple/dependance-affective/',
+    canonical: 'https://www.voyantlove.fr/crise-couple/dependance-affective/',
   },
   openGraph: {
     title: 'Dépendance Affective : Se Libérer et Aimer Sainement',
     description: 'Comprendre et surmonter la dépendance affective. Le tarot révèle vos schémas répétitifs, blocages karmiques et le chemin vers des relations saines.',
-    url: 'https://voyantlove.fr/crise-couple/dependance-affective/',
+    url: 'https://www.voyantlove.fr/crise-couple/dependance-affective/',
     type: 'article',
   },
 };
@@ -25,16 +25,16 @@ export default function DependanceAffectivePage() {
   const articleSchema = getArticleSchema({
     title: 'Dépendance Affective : Se Libérer et Aimer Sainement | Voyance',
     description: 'Comprendre et surmonter la dépendance affective. Le tarot révèle vos schémas répétitifs, blocages karmiques et le chemin vers des relations saines.',
-    url: 'https://voyantlove.fr/crise-couple/dependance-affective/',
+    url: 'https://www.voyantlove.fr/crise-couple/dependance-affective/',
     datePublished: '2026-02-09',
     dateModified: new Date().toISOString().split('T')[0],
     keywords: ['dépendance affective', 'dépendance émotionnelle couple', 'se libérer dépendance affective', 'relation toxique voyance', 'attachement anxieux'],
   });
 
   const breadcrumbSchema = getBreadcrumbSchema([
-    { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'Crise de Couple', url: 'https://voyantlove.fr/crise-couple/' },
-    { name: 'Dépendance Affective', url: 'https://voyantlove.fr/crise-couple/dependance-affective/' },
+    { name: 'Accueil', url: 'https://www.voyantlove.fr' },
+    { name: 'Crise de Couple', url: 'https://www.voyantlove.fr/crise-couple/' },
+    { name: 'Dépendance Affective', url: 'https://www.voyantlove.fr/crise-couple/dependance-affective/' },
   ]);
 
   const authorSchema = getAuthorSchema();

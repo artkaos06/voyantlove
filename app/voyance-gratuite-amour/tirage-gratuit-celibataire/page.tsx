@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: 'Tirage gratuit amour pour célibataires : découvrez quand et comment vous rencontrerez l\'amour selon le tarot et l\'oracle.',
   keywords: ['tirage gratuit amour celibataire', 'tarot celibataire gratuit', 'voyance gratuite celibataire'],
   alternates: {
-    canonical: 'https://voyantlove.fr/voyance-gratuite-amour/tirage-gratuit-celibataire/',
+    canonical: 'https://www.voyantlove.fr/voyance-gratuite-amour/tirage-gratuit-celibataire/',
   },
 };
 
@@ -19,7 +19,7 @@ export default function TirageGratuitCelibatairePage() {
   const articleSchema = getArticleSchema({
     title: 'Tirage Gratuit Amour Célibataire : Votre Avenir Sentimental',
     description: 'Tirage gratuit amour pour célibataires : découvrez quand et comment vous rencontrerez l\'amour selon le tarot et l\'oracle.',
-    url: 'https://voyantlove.fr/voyance-gratuite-amour/tirage-gratuit-celibataire/',
+    url: 'https://www.voyantlove.fr/voyance-gratuite-amour/tirage-gratuit-celibataire/',
     datePublished: '2026-03-10',
     dateModified: new Date().toISOString().split('T')[0],
     keywords: ['tirage gratuit amour celibataire', 'tarot celibataire gratuit', 'voyance gratuite celibataire'],
@@ -28,9 +28,9 @@ export default function TirageGratuitCelibatairePage() {
   const authorSchema = getAuthorSchema();
 
   const breadcrumbSchema = getBreadcrumbSchema([
-    { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'Voyance Gratuite Amour', url: 'https://voyantlove.fr/voyance-gratuite-amour/' },
-    { name: 'Tirage Gratuit Célibataire', url: 'https://voyantlove.fr/voyance-gratuite-amour/tirage-gratuit-celibataire/' },
+    { name: 'Accueil', url: 'https://www.voyantlove.fr' },
+    { name: 'Voyance Gratuite Amour', url: 'https://www.voyantlove.fr/voyance-gratuite-amour/' },
+    { name: 'Tirage Gratuit Célibataire', url: 'https://www.voyantlove.fr/voyance-gratuite-amour/tirage-gratuit-celibataire/' },
   ]);
 
   const faqSchema = getFAQSchema([

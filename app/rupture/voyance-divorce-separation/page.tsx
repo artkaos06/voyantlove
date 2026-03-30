@@ -10,23 +10,23 @@ export const metadata: Metadata = {
   title: 'Voyance Divorce : Traverser la Séparation et Retrouver l\'Amour | VoyantLove',
   description: 'Vous traversez un divorce ou une séparation difficile ? La voyance vous aide à voir l\'avenir après la rupture conjugale, à comprendre les causes et à vous reconstruire.',
   keywords: ['voyance divorce', 'voyance séparation couple', 'divorce avenir amoureux', 'après divorce rencontre', 'voyant divorce'],
-  alternates: { canonical: 'https://voyantlove.fr/rupture/voyance-divorce-separation/' },
+  alternates: { canonical: 'https://www.voyantlove.fr/rupture/voyance-divorce-separation/' },
 };
 
 export default function VoyanceDivorceSeparationPage() {
   const articleSchema = getArticleSchema({
     title: 'Voyance Divorce : Traverser la Séparation et Retrouver l\'Amour | VoyantLove',
     description: 'Vous traversez un divorce ou une séparation difficile ? La voyance vous aide à voir l\'avenir après la rupture conjugale, à comprendre les causes et à vous reconstruire.',
-    url: 'https://voyantlove.fr/rupture/voyance-divorce-separation/',
+    url: 'https://www.voyantlove.fr/rupture/voyance-divorce-separation/',
     datePublished: '2026-03-27',
     dateModified: new Date().toISOString().split('T')[0],
     keywords: ['voyance divorce', 'voyance séparation couple', 'divorce avenir amoureux', 'après divorce rencontre', 'voyant divorce'],
   });
 
   const breadcrumbSchema = getBreadcrumbSchema([
-    { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'Rupture Amoureuse', url: 'https://voyantlove.fr/rupture/' },
-    { name: 'Voyance Divorce & Séparation', url: 'https://voyantlove.fr/rupture/voyance-divorce-separation/' },
+    { name: 'Accueil', url: 'https://www.voyantlove.fr' },
+    { name: 'Rupture Amoureuse', url: 'https://www.voyantlove.fr/rupture/' },
+    { name: 'Voyance Divorce & Séparation', url: 'https://www.voyantlove.fr/rupture/voyance-divorce-separation/' },
   ]);
 
   const authorSchema = getAuthorSchema();

@@ -10,14 +10,14 @@ export const metadata: Metadata = {
   title: 'Pardonner en Amour : Le Chemin vers la Guérison',
   description: 'Comment pardonner en amour et reconstruire la confiance dans votre couple. Guidance voyance et tarot pour le pardon authentique et la guérison.',
   keywords: ['pardonner en amour', 'pardon couple', 'reconstruire confiance', 'pardon trahison', 'voyance pardon'],
-  alternates: { canonical: 'https://voyantlove.fr/crise-couple/pardonner-en-amour/' },
+  alternates: { canonical: 'https://www.voyantlove.fr/crise-couple/pardonner-en-amour/' },
 };
 
 export default function PardonnerEnAmourPage() {
   const articleSchema = getArticleSchema({
     title: 'Pardonner en Amour : Le Chemin vers la Guérison',
     description: 'Comment pardonner en amour et reconstruire la confiance dans votre couple. Guidance voyance et tarot pour le pardon authentique et la guérison.',
-    url: 'https://voyantlove.fr/crise-couple/pardonner-en-amour/',
+    url: 'https://www.voyantlove.fr/crise-couple/pardonner-en-amour/',
     datePublished: '2026-03-22',
     dateModified: new Date().toISOString().split('T')[0],
     keywords: ['pardonner en amour', 'pardon couple', 'reconstruire confiance', 'pardon trahison', 'voyance pardon'],
@@ -43,9 +43,9 @@ export default function PardonnerEnAmourPage() {
   ]);
 
   const breadcrumbSchema = getBreadcrumbSchema([
-    { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'Crise de Couple', url: 'https://voyantlove.fr/crise-couple/' },
-    { name: 'Pardonner en Amour', url: 'https://voyantlove.fr/crise-couple/pardonner-en-amour/' },
+    { name: 'Accueil', url: 'https://www.voyantlove.fr' },
+    { name: 'Crise de Couple', url: 'https://www.voyantlove.fr/crise-couple/' },
+    { name: 'Pardonner en Amour', url: 'https://www.voyantlove.fr/crise-couple/pardonner-en-amour/' },
   ]);
 
   const authorSchema = getAuthorSchema();

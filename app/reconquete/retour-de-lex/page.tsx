@@ -10,14 +10,14 @@ export const metadata: Metadata = {
   title: 'Retour de l\'Ex : Signes, Timing et Prédictions du Tarot',
   description: 'Votre ex reviendra-t-il ? Découvrez les signes du retour, le timing astrologique et comment préparer les retrouvailles selon le tarot.',
   keywords: ['retour ex', 'ex qui revient', 'signes retour', 'retour être aimé', 'retrouvailles'],
-  alternates: { canonical: 'https://voyantlove.fr/reconquete/retour-de-lex/' },
+  alternates: { canonical: 'https://www.voyantlove.fr/reconquete/retour-de-lex/' },
 };
 
 export default function RetourExPage() {
   const articleSchema = getArticleSchema({
     title: 'Retour de l\'Ex : Signes, Timing et Prédictions du Tarot',
     description: 'Votre ex reviendra-t-il ? Découvrez les signes du retour, le timing astrologique et comment préparer les retrouvailles selon le tarot.',
-    url: 'https://voyantlove.fr/reconquete/retour-de-lex/',
+    url: 'https://www.voyantlove.fr/reconquete/retour-de-lex/',
     datePublished: '2026-01-16',
     dateModified: new Date().toISOString().split('T')[0],
     keywords: ['retour ex', 'ex qui revient', 'signes retour', 'retour être aimé', 'retrouvailles'],
@@ -43,9 +43,9 @@ export default function RetourExPage() {
   ]);
 
   const breadcrumbSchema = getBreadcrumbSchema([
-    { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'Reconquête', url: 'https://voyantlove.fr/reconquete/' },
-    { name: 'Retour de l\'Ex', url: 'https://voyantlove.fr/reconquete/retour-de-lex/' },
+    { name: 'Accueil', url: 'https://www.voyantlove.fr' },
+    { name: 'Reconquête', url: 'https://www.voyantlove.fr/reconquete/' },
+    { name: 'Retour de l\'Ex', url: 'https://www.voyantlove.fr/reconquete/retour-de-lex/' },
   ]);
 
   const authorSchema = getAuthorSchema();

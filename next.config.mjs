@@ -8,7 +8,7 @@ const nextConfig = {
   // Metadata for the site
   env: {
     SITE_NAME: 'VoyantLove',
-    SITE_URL: 'https://voyantlove.fr',
+    SITE_URL: 'https://www.voyantlove.fr',
     SITE_DESCRIPTION: 'Voyance amoureuse spécialisée : reconquérir son ex, rencontrer l\'amour, compatibilité de couple. Tarot et guidance pour vos questions sentimentales.',
   },
 

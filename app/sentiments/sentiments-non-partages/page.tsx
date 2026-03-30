@@ -10,14 +10,14 @@ export const metadata: Metadata = {
   title: 'Sentiments Non Partagés : Comment Avancer | Voyance',
   description: 'Amour non partagé : comment gérer des sentiments non réciproques. Découvrez les guidances de la voyance pour avancer et retrouver votre équilibre.',
   keywords: ['amour non partagé', 'sentiments non réciproques', 'aimer sans retour', 'amour à sens unique', 'voyance sentiments'],
-  alternates: { canonical: 'https://voyantlove.fr/sentiments/sentiments-non-partages/' },
+  alternates: { canonical: 'https://www.voyantlove.fr/sentiments/sentiments-non-partages/' },
 };
 
 export default function SentimentsNonPartagesPage() {
   const articleSchema = getArticleSchema({
     title: 'Sentiments Non Partagés : Comment Avancer',
     description: 'Amour non partagé : comment gérer des sentiments non réciproques. Découvrez les guidances de la voyance pour avancer et retrouver votre équilibre.',
-    url: 'https://voyantlove.fr/sentiments/sentiments-non-partages/',
+    url: 'https://www.voyantlove.fr/sentiments/sentiments-non-partages/',
     datePublished: '2026-03-22',
     dateModified: new Date().toISOString().split('T')[0],
     keywords: ['amour non partagé', 'sentiments non réciproques', 'aimer sans retour', 'amour à sens unique', 'voyance sentiments'],
@@ -43,9 +43,9 @@ export default function SentimentsNonPartagesPage() {
   ]);
 
   const breadcrumbSchema = getBreadcrumbSchema([
-    { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'Sentiments', url: 'https://voyantlove.fr/sentiments/' },
-    { name: 'Sentiments Non Partagés', url: 'https://voyantlove.fr/sentiments/sentiments-non-partages/' },
+    { name: 'Accueil', url: 'https://www.voyantlove.fr' },
+    { name: 'Sentiments', url: 'https://www.voyantlove.fr/sentiments/' },
+    { name: 'Sentiments Non Partagés', url: 'https://www.voyantlove.fr/sentiments/sentiments-non-partages/' },
   ]);
 
   const authorSchema = getAuthorSchema();

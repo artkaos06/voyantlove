@@ -9,19 +9,19 @@ import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 export const metadata: Metadata = {
   title: 'Sentiments Amoureux : Décrypter Émotions et Avenir | Voyance',
   description: 'Analyse des sentiments amoureux : M\'aime-t-il/elle ? Décrypter émotions et prédire votre avenir amoureux selon le tarot.',
-  alternates: { canonical: 'https://voyantlove.fr/sentiments/' },
+  alternates: { canonical: 'https://www.voyantlove.fr/sentiments/' },
 };
 
 export default function SentimentsHubPage() {
   const webPageSchema = getWebPageSchema({
     title: 'Sentiments Amoureux : Décrypter Émotions et Avenir | Voyance',
     description: 'Analyse des sentiments amoureux : M\'aime-t-il/elle ? Décrypter émotions et prédire votre avenir amoureux selon le tarot.',
-    url: 'https://voyantlove.fr/sentiments/',
+    url: 'https://www.voyantlove.fr/sentiments/',
   });
 
   const breadcrumbSchema = getBreadcrumbSchema([
-    { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'Sentiments Amoureux', url: 'https://voyantlove.fr/sentiments/' },
+    { name: 'Accueil', url: 'https://www.voyantlove.fr' },
+    { name: 'Sentiments Amoureux', url: 'https://www.voyantlove.fr/sentiments/' },
   ]);
 
   const organizationSchema = getOrganizationSchema();

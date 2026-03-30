@@ -9,19 +9,19 @@ import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 export const metadata: Metadata = {
   title: 'Crise de Couple : Solutions et Guidance | Voyance',
   description: 'Surmonter les crises de couple : infidélité, jalousie, communication. Solutions selon le tarot et la voyance.',
-  alternates: { canonical: 'https://voyantlove.fr/crise-couple/' },
+  alternates: { canonical: 'https://www.voyantlove.fr/crise-couple/' },
 };
 
 export default function CriseCoupleHubPage() {
   const webPageSchema = getWebPageSchema({
     title: 'Crise de Couple : Solutions et Guidance | Voyance',
     description: 'Surmonter les crises de couple : infidélité, jalousie, communication. Solutions selon le tarot et la voyance.',
-    url: 'https://voyantlove.fr/crise-couple/',
+    url: 'https://www.voyantlove.fr/crise-couple/',
   });
 
   const breadcrumbSchema = getBreadcrumbSchema([
-    { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'Crise de Couple', url: 'https://voyantlove.fr/crise-couple/' },
+    { name: 'Accueil', url: 'https://www.voyantlove.fr' },
+    { name: 'Crise de Couple', url: 'https://www.voyantlove.fr/crise-couple/' },
   ]);
 
   const organizationSchema = getOrganizationSchema();

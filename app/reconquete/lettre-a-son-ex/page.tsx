@@ -10,14 +10,14 @@ export const metadata: Metadata = {
   title: 'Écrire une Lettre à son Ex : Guide Voyance Reconquête',
   description: 'Comment écrire une lettre à son ex pour reconquérir son amour ? Découvrez les conseils de la voyance pour rédiger un message sincère et toucher son cœur.',
   keywords: ['lettre à son ex', 'message reconquête', 'écrire à son ex', 'lettre reconquête amoureuse', 'message ex'],
-  alternates: { canonical: 'https://voyantlove.fr/reconquete/lettre-a-son-ex/' },
+  alternates: { canonical: 'https://www.voyantlove.fr/reconquete/lettre-a-son-ex/' },
 };
 
 export default function LettreASonExPage() {
   const articleSchema = getArticleSchema({
     title: 'Écrire une Lettre à son Ex : Guide Voyance Reconquête',
     description: 'Comment écrire une lettre à son ex pour reconquérir son amour ? Découvrez les conseils de la voyance pour rédiger un message sincère et toucher son cœur.',
-    url: 'https://voyantlove.fr/reconquete/lettre-a-son-ex/',
+    url: 'https://www.voyantlove.fr/reconquete/lettre-a-son-ex/',
     datePublished: '2026-03-22',
     dateModified: new Date().toISOString().split('T')[0],
     keywords: ['lettre à son ex', 'message reconquête', 'écrire à son ex', 'lettre reconquête amoureuse', 'message ex'],
@@ -43,9 +43,9 @@ export default function LettreASonExPage() {
   ]);
 
   const breadcrumbSchema = getBreadcrumbSchema([
-    { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'Reconquête', url: 'https://voyantlove.fr/reconquete/' },
-    { name: 'Lettre à son Ex', url: 'https://voyantlove.fr/reconquete/lettre-a-son-ex/' },
+    { name: 'Accueil', url: 'https://www.voyantlove.fr' },
+    { name: 'Reconquête', url: 'https://www.voyantlove.fr/reconquete/' },
+    { name: 'Lettre à son Ex', url: 'https://www.voyantlove.fr/reconquete/lettre-a-son-ex/' },
   ]);
 
   const authorSchema = getAuthorSchema();

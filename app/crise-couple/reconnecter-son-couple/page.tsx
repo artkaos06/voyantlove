@@ -10,14 +10,14 @@ export const metadata: Metadata = {
   title: 'Reconnecter son Couple : Retrouver la Complicité',
   description: 'Comment reconnecter votre couple et raviver la flamme. Voyance et tarot pour retrouver la complicité perdue et reconstruire une relation épanouissante.',
   keywords: ['reconnecter couple', 'retrouver complicité', 'raviver flamme', 'couple en crise', 'voyance couple'],
-  alternates: { canonical: 'https://voyantlove.fr/crise-couple/reconnecter-son-couple/' },
+  alternates: { canonical: 'https://www.voyantlove.fr/crise-couple/reconnecter-son-couple/' },
 };
 
 export default function ReconnecterSonCouplePage() {
   const articleSchema = getArticleSchema({
     title: 'Reconnecter son Couple : Retrouver la Complicité',
     description: 'Comment reconnecter votre couple et raviver la flamme. Voyance et tarot pour retrouver la complicité perdue et reconstruire une relation épanouissante.',
-    url: 'https://voyantlove.fr/crise-couple/reconnecter-son-couple/',
+    url: 'https://www.voyantlove.fr/crise-couple/reconnecter-son-couple/',
     datePublished: '2026-03-22',
     dateModified: new Date().toISOString().split('T')[0],
     keywords: ['reconnecter couple', 'retrouver complicité', 'raviver flamme', 'couple en crise', 'voyance couple'],
@@ -43,9 +43,9 @@ export default function ReconnecterSonCouplePage() {
   ]);
 
   const breadcrumbSchema = getBreadcrumbSchema([
-    { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'Crise de Couple', url: 'https://voyantlove.fr/crise-couple/' },
-    { name: 'Reconnecter son Couple', url: 'https://voyantlove.fr/crise-couple/reconnecter-son-couple/' },
+    { name: 'Accueil', url: 'https://www.voyantlove.fr' },
+    { name: 'Crise de Couple', url: 'https://www.voyantlove.fr/crise-couple/' },
+    { name: 'Reconnecter son Couple', url: 'https://www.voyantlove.fr/crise-couple/reconnecter-son-couple/' },
   ]);
 
   const authorSchema = getAuthorSchema();

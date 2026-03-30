@@ -10,14 +10,14 @@ export const metadata: Metadata = {
   title: 'Chagrin d\'Amour : Guérir et Surmonter selon le Tarot',
   description: 'Comment surmonter un chagrin d\'amour avec la voyance ? Processus de guérison, timing de reconstruction et retrouver la joie de vivre.',
   keywords: ['chagrin d\'amour', 'peine de cœur', 'cœur brisé', 'guérir chagrin', 'surmonter peine'],
-  alternates: { canonical: 'https://voyantlove.fr/rupture/chagrin-damour/' },
+  alternates: { canonical: 'https://www.voyantlove.fr/rupture/chagrin-damour/' },
 };
 
 export default function ChagrinAmourPage() {
   const articleSchema = getArticleSchema({
     title: 'Chagrin d\'Amour : Guérir et Surmonter selon le Tarot',
     description: 'Comment surmonter un chagrin d\'amour avec la voyance ? Processus de guérison, timing de reconstruction et retrouver la joie de vivre.',
-    url: 'https://voyantlove.fr/rupture/chagrin-damour/',
+    url: 'https://www.voyantlove.fr/rupture/chagrin-damour/',
     datePublished: '2026-01-13',
     dateModified: new Date().toISOString().split('T')[0],
     keywords: ['chagrin d\'amour', 'peine de cœur', 'cœur brisé', 'guérir chagrin', 'surmonter peine'],
@@ -43,9 +43,9 @@ export default function ChagrinAmourPage() {
   ]);
 
   const breadcrumbSchema = getBreadcrumbSchema([
-    { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'Rupture', url: 'https://voyantlove.fr/rupture/' },
-    { name: 'Chagrin d\'Amour', url: 'https://voyantlove.fr/rupture/chagrin-damour/' },
+    { name: 'Accueil', url: 'https://www.voyantlove.fr' },
+    { name: 'Rupture', url: 'https://www.voyantlove.fr/rupture/' },
+    { name: 'Chagrin d\'Amour', url: 'https://www.voyantlove.fr/rupture/chagrin-damour/' },
   ]);
 
   const authorSchema = getAuthorSchema();

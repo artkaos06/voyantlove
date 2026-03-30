@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: 'Tirage de tarot amour gratuit : comprendre les arcanes, interpréter votre situation sentimentale et préparer une consultation.',
   keywords: ['tarot amour gratuit', 'tarot gratuit amour', 'tirage tarot gratuit amour'],
   alternates: {
-    canonical: 'https://voyantlove.fr/voyance-gratuite-amour/tarot-amour-gratuit/',
+    canonical: 'https://www.voyantlove.fr/voyance-gratuite-amour/tarot-amour-gratuit/',
   },
 };
 
@@ -19,7 +19,7 @@ export default function TarotAmourGratuitPage() {
   const articleSchema = getArticleSchema({
     title: 'Tarot Amour Gratuit : Tirage et Interprétation Sentimentale',
     description: 'Tirage de tarot amour gratuit : comprendre les arcanes, interpréter votre situation sentimentale et préparer une consultation.',
-    url: 'https://voyantlove.fr/voyance-gratuite-amour/tarot-amour-gratuit/',
+    url: 'https://www.voyantlove.fr/voyance-gratuite-amour/tarot-amour-gratuit/',
     datePublished: '2026-03-10',
     dateModified: new Date().toISOString().split('T')[0],
     keywords: ['tarot amour gratuit', 'tarot gratuit amour', 'tirage tarot gratuit amour'],
@@ -28,9 +28,9 @@ export default function TarotAmourGratuitPage() {
   const authorSchema = getAuthorSchema();
 
   const breadcrumbSchema = getBreadcrumbSchema([
-    { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'Voyance Gratuite Amour', url: 'https://voyantlove.fr/voyance-gratuite-amour/' },
-    { name: 'Tarot Amour Gratuit', url: 'https://voyantlove.fr/voyance-gratuite-amour/tarot-amour-gratuit/' },
+    { name: 'Accueil', url: 'https://www.voyantlove.fr' },
+    { name: 'Voyance Gratuite Amour', url: 'https://www.voyantlove.fr/voyance-gratuite-amour/' },
+    { name: 'Tarot Amour Gratuit', url: 'https://www.voyantlove.fr/voyance-gratuite-amour/tarot-amour-gratuit/' },
   ]);
 
   const faqSchema = getFAQSchema([

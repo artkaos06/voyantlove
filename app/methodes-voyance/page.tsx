@@ -9,19 +9,19 @@ import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 export const metadata: Metadata = {
   title: 'Méthodes de Voyance Amoureuse : Tarot, Oracle et Astrologie',
   description: 'Découvrez les méthodes de voyance amoureuse : tarot, oracle et astrologie pour éclairer votre vie sentimentale et prédire votre avenir amoureux.',
-  alternates: { canonical: 'https://voyantlove.fr/methodes-voyance/' },
+  alternates: { canonical: 'https://www.voyantlove.fr/methodes-voyance/' },
 };
 
 export default function MethodesVoyanceHubPage() {
   const webPageSchema = getWebPageSchema({
     title: 'Méthodes de Voyance Amoureuse : Tarot, Oracle et Astrologie',
     description: 'Découvrez les méthodes de voyance amoureuse : tarot, oracle et astrologie pour éclairer votre vie sentimentale et prédire votre avenir amoureux.',
-    url: 'https://voyantlove.fr/methodes-voyance/',
+    url: 'https://www.voyantlove.fr/methodes-voyance/',
   });
 
   const breadcrumbSchema = getBreadcrumbSchema([
-    { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'Méthodes de Voyance', url: 'https://voyantlove.fr/methodes-voyance/' },
+    { name: 'Accueil', url: 'https://www.voyantlove.fr' },
+    { name: 'Méthodes de Voyance', url: 'https://www.voyantlove.fr/methodes-voyance/' },
   ]);
 
   const organizationSchema = getOrganizationSchema();

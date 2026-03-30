@@ -9,19 +9,19 @@ import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 export const metadata: Metadata = {
   title: 'Reconquête Amoureuse : Reconquérir son Ex | Voyance et Tarot',
   description: 'Guide complet pour reconquérir votre ex : stratégies, timing idéal, signes de retour selon le tarot et la voyance.',
-  alternates: { canonical: 'https://voyantlove.fr/reconquete/' },
+  alternates: { canonical: 'https://www.voyantlove.fr/reconquete/' },
 };
 
 export default function ReconqueteHubPage() {
   const webPageSchema = getWebPageSchema({
     title: 'Reconquête Amoureuse : Reconquérir son Ex | Voyance et Tarot',
     description: 'Guide complet pour reconquérir votre ex : stratégies, timing idéal, signes de retour selon le tarot et la voyance.',
-    url: 'https://voyantlove.fr/reconquete/',
+    url: 'https://www.voyantlove.fr/reconquete/',
   });
 
   const breadcrumbSchema = getBreadcrumbSchema([
-    { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'Reconquête Amoureuse', url: 'https://voyantlove.fr/reconquete/' },
+    { name: 'Accueil', url: 'https://www.voyantlove.fr' },
+    { name: 'Reconquête Amoureuse', url: 'https://www.voyantlove.fr/reconquete/' },
   ]);
 
   const organizationSchema = getOrganizationSchema();

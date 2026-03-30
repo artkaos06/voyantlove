@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: 'D\u00e9couvrez la voyance par t\u00e9l\u00e9phone pour l\u2019amour : consultation sentimentale imm\u00e9diate, guidance amoureuse \u00e0 distance, voyant sp\u00e9cialis\u00e9 en questions de c\u0153ur. Disponible 24h/24.',
   keywords: ['voyance par t\u00e9l\u00e9phone amour', 'consultation sentimentale t\u00e9l\u00e9phone', 'voyant amour t\u00e9l\u00e9phone', 'voyance amoureuse \u00e0 distance', 'guidance amoureuse t\u00e9l\u00e9phonique'],
   alternates: {
-    canonical: 'https://voyantlove.fr/methodes-voyance/voyance-telephone-amour/',
+    canonical: 'https://www.voyantlove.fr/methodes-voyance/voyance-telephone-amour/',
   },
 };
 
@@ -19,7 +19,7 @@ export default function VoyanceTelephoneAmourPage() {
   const articleSchema = getArticleSchema({
     title: 'Voyance par T\u00e9l\u00e9phone Amour : Consultation Sentimentale \u00e0 Distance',
     description: 'D\u00e9couvrez la voyance par t\u00e9l\u00e9phone pour l\u2019amour : consultation sentimentale imm\u00e9diate, guidance amoureuse \u00e0 distance, voyant sp\u00e9cialis\u00e9 en questions de c\u0153ur. Disponible 24h/24.',
-    url: 'https://voyantlove.fr/methodes-voyance/voyance-telephone-amour/',
+    url: 'https://www.voyantlove.fr/methodes-voyance/voyance-telephone-amour/',
     datePublished: '2026-03-07',
     dateModified: new Date().toISOString().split('T')[0],
     keywords: ['voyance par t\u00e9l\u00e9phone amour', 'consultation sentimentale t\u00e9l\u00e9phone', 'voyant amour t\u00e9l\u00e9phone', 'voyance amoureuse \u00e0 distance', 'guidance amoureuse t\u00e9l\u00e9phonique'],
@@ -28,9 +28,9 @@ export default function VoyanceTelephoneAmourPage() {
   const authorSchema = getAuthorSchema();
 
   const breadcrumbSchema = getBreadcrumbSchema([
-    { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'M\u00e9thodes de Voyance', url: 'https://voyantlove.fr/methodes-voyance/' },
-    { name: 'Voyance par T\u00e9l\u00e9phone Amour', url: 'https://voyantlove.fr/methodes-voyance/voyance-telephone-amour/' },
+    { name: 'Accueil', url: 'https://www.voyantlove.fr' },
+    { name: 'M\u00e9thodes de Voyance', url: 'https://www.voyantlove.fr/methodes-voyance/' },
+    { name: 'Voyance par T\u00e9l\u00e9phone Amour', url: 'https://www.voyantlove.fr/methodes-voyance/voyance-telephone-amour/' },
   ]);
 
   const faqSchema = getFAQSchema([

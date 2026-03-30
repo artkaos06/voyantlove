@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: 'D\u00e9couvrez le pendule amour : r\u00e9ponses oui/non instantan\u00e9es, radi\u00e9sth\u00e9sie amoureuse et guidance sentimentale. Guide complet du pendule divinatoire pour les questions d\u2019amour.',
   keywords: ['pendule amour', 'radi\u00e9sth\u00e9sie amoureuse', 'pendule divinatoire', 'voyance pendule', 'pendule oui non amour'],
   alternates: {
-    canonical: 'https://voyantlove.fr/methodes-voyance/pendule-amour/',
+    canonical: 'https://www.voyantlove.fr/methodes-voyance/pendule-amour/',
   },
 };
 
@@ -19,7 +19,7 @@ export default function PenduleAmourPage() {
   const articleSchema = getArticleSchema({
     title: 'Pendule Amour : R\u00e9ponses Oui/Non et Guidance Sentimentale',
     description: 'D\u00e9couvrez le pendule amour : r\u00e9ponses oui/non instantan\u00e9es, radi\u00e9sth\u00e9sie amoureuse et guidance sentimentale. Guide complet du pendule divinatoire pour les questions d\u2019amour.',
-    url: 'https://voyantlove.fr/methodes-voyance/pendule-amour/',
+    url: 'https://www.voyantlove.fr/methodes-voyance/pendule-amour/',
     datePublished: '2026-03-07',
     dateModified: new Date().toISOString().split('T')[0],
     keywords: ['pendule amour', 'radi\u00e9sth\u00e9sie amoureuse', 'pendule divinatoire', 'voyance pendule', 'pendule oui non amour'],
@@ -28,9 +28,9 @@ export default function PenduleAmourPage() {
   const authorSchema = getAuthorSchema();
 
   const breadcrumbSchema = getBreadcrumbSchema([
-    { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'M\u00e9thodes de Voyance', url: 'https://voyantlove.fr/methodes-voyance/' },
-    { name: 'Pendule Amour', url: 'https://voyantlove.fr/methodes-voyance/pendule-amour/' },
+    { name: 'Accueil', url: 'https://www.voyantlove.fr' },
+    { name: 'M\u00e9thodes de Voyance', url: 'https://www.voyantlove.fr/methodes-voyance/' },
+    { name: 'Pendule Amour', url: 'https://www.voyantlove.fr/methodes-voyance/pendule-amour/' },
   ]);
 
   const faqSchema = getFAQSchema([

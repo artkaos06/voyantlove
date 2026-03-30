@@ -10,14 +10,14 @@ export const metadata: Metadata = {
   title: "Peur d'Aimer à Nouveau : Surmonter les Blocages",
   description: "Comment surmonter la peur d'aimer à nouveau après une rupture ? Guidance voyance et tarot pour lever les blocages amoureux et ouvrir son cœur au bonheur.",
   keywords: ["peur d'aimer", 'blocage amoureux', 'peur nouvelle relation', 'peur engagement', 'ouvrir son cœur voyance'],
-  alternates: { canonical: 'https://voyantlove.fr/nouvelle-rencontre/peur-de-aimer-a-nouveau/' },
+  alternates: { canonical: 'https://www.voyantlove.fr/nouvelle-rencontre/peur-de-aimer-a-nouveau/' },
 };
 
 export default function PeurDeAimerANouveauPage() {
   const articleSchema = getArticleSchema({
     title: "Peur d'Aimer à Nouveau : Surmonter les Blocages",
     description: "Comment surmonter la peur d'aimer à nouveau après une rupture ? Guidance voyance et tarot pour lever les blocages amoureux et ouvrir son cœur au bonheur.",
-    url: 'https://voyantlove.fr/nouvelle-rencontre/peur-de-aimer-a-nouveau/',
+    url: 'https://www.voyantlove.fr/nouvelle-rencontre/peur-de-aimer-a-nouveau/',
     datePublished: '2026-03-22',
     dateModified: new Date().toISOString().split('T')[0],
     keywords: ["peur d'aimer", 'blocage amoureux', 'peur nouvelle relation', 'peur engagement', 'ouvrir son cœur voyance'],
@@ -43,9 +43,9 @@ export default function PeurDeAimerANouveauPage() {
   ]);
 
   const breadcrumbSchema = getBreadcrumbSchema([
-    { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'Nouvelle Rencontre', url: 'https://voyantlove.fr/nouvelle-rencontre/' },
-    { name: "Peur d'Aimer à Nouveau", url: 'https://voyantlove.fr/nouvelle-rencontre/peur-de-aimer-a-nouveau/' },
+    { name: 'Accueil', url: 'https://www.voyantlove.fr' },
+    { name: 'Nouvelle Rencontre', url: 'https://www.voyantlove.fr/nouvelle-rencontre/' },
+    { name: "Peur d'Aimer à Nouveau", url: 'https://www.voyantlove.fr/nouvelle-rencontre/peur-de-aimer-a-nouveau/' },
   ]);
 
   const authorSchema = getAuthorSchema();

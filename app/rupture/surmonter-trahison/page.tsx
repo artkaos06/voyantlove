@@ -10,14 +10,14 @@ export const metadata: Metadata = {
   title: 'Surmonter une Trahison Amoureuse : Guidance Voyance',
   description: 'Comment surmonter une trahison et une infidélité ? Découvrez la guidance de la voyance et du tarot pour guérir, comprendre et reconstruire après la tromperie.',
   keywords: ['surmonter trahison', 'tromperie couple', 'infidélité guérison', 'trahison amoureuse', 'voyance infidélité'],
-  alternates: { canonical: 'https://voyantlove.fr/rupture/surmonter-trahison/' },
+  alternates: { canonical: 'https://www.voyantlove.fr/rupture/surmonter-trahison/' },
 };
 
 export default function SurmonterTrahisonPage() {
   const articleSchema = getArticleSchema({
     title: 'Surmonter une Trahison Amoureuse',
     description: 'Comment surmonter une trahison et une infidélité ? Découvrez la guidance de la voyance et du tarot pour guérir, comprendre et reconstruire après la tromperie.',
-    url: 'https://voyantlove.fr/rupture/surmonter-trahison/',
+    url: 'https://www.voyantlove.fr/rupture/surmonter-trahison/',
     datePublished: '2026-03-22',
     dateModified: new Date().toISOString().split('T')[0],
     keywords: ['surmonter trahison', 'tromperie couple', 'infidélité guérison', 'trahison amoureuse', 'voyance infidélité'],
@@ -43,9 +43,9 @@ export default function SurmonterTrahisonPage() {
   ]);
 
   const breadcrumbSchema = getBreadcrumbSchema([
-    { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'Rupture', url: 'https://voyantlove.fr/rupture/' },
-    { name: 'Surmonter une Trahison', url: 'https://voyantlove.fr/rupture/surmonter-trahison/' },
+    { name: 'Accueil', url: 'https://www.voyantlove.fr' },
+    { name: 'Rupture', url: 'https://www.voyantlove.fr/rupture/' },
+    { name: 'Surmonter une Trahison', url: 'https://www.voyantlove.fr/rupture/surmonter-trahison/' },
   ]);
 
   const authorSchema = getAuthorSchema();

@@ -10,14 +10,14 @@ export const metadata: Metadata = {
   title: 'Quand Vais-je Rencontrer Quelqu\'un ? Prédiction Tarot et Voyance',
   description: 'Quand allez-vous rencontrer l\'amour ou votre âme sœur ? Le tarot prédit le timing, le lieu, et le profil de votre prochaine rencontre amoureuse.',
   keywords: ['quand rencontre', 'rencontrer quelqu\'un', 'âme sœur timing', 'nouvelle rencontre tarot', 'prédiction rencontre'],
-  alternates: { canonical: 'https://voyantlove.fr/nouvelle-rencontre/quand-rencontre-amour/' },
+  alternates: { canonical: 'https://www.voyantlove.fr/nouvelle-rencontre/quand-rencontre-amour/' },
 };
 
 export default function QuandRencontrePage() {
   const articleSchema = getArticleSchema({
     title: 'Quand Vais-je Rencontrer Quelqu\'un ? Prédiction Tarot et Voyance',
     description: 'Quand allez-vous rencontrer l\'amour ou votre âme sœur ? Le tarot prédit le timing, le lieu, et le profil de votre prochaine rencontre amoureuse.',
-    url: 'https://voyantlove.fr/nouvelle-rencontre/quand-rencontre-amour/',
+    url: 'https://www.voyantlove.fr/nouvelle-rencontre/quand-rencontre-amour/',
     datePublished: '2026-01-20',
     dateModified: new Date().toISOString().split('T')[0],
     keywords: ['quand rencontre', 'rencontrer quelqu\'un', 'âme sœur timing', 'nouvelle rencontre tarot', 'prédiction rencontre'],
@@ -43,9 +43,9 @@ export default function QuandRencontrePage() {
   ]);
 
   const breadcrumbSchema = getBreadcrumbSchema([
-    { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'Nouvelle Rencontre', url: 'https://voyantlove.fr/nouvelle-rencontre/' },
-    { name: 'Quand Rencontrer l\'Amour', url: 'https://voyantlove.fr/nouvelle-rencontre/quand-rencontre-amour/' },
+    { name: 'Accueil', url: 'https://www.voyantlove.fr' },
+    { name: 'Nouvelle Rencontre', url: 'https://www.voyantlove.fr/nouvelle-rencontre/' },
+    { name: 'Quand Rencontrer l\'Amour', url: 'https://www.voyantlove.fr/nouvelle-rencontre/quand-rencontre-amour/' },
   ]);
 
   const authorSchema = getAuthorSchema();

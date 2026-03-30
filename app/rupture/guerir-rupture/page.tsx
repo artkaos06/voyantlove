@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: 'Comment gu\u00e9rir d\u2019une rupture amoureuse ? D\u00e9couvrez les 5 \u00e9tapes du deuil amoureux, le temps de gu\u00e9rison, les signes de reconstruction et le r\u00f4le du tarot.',
   keywords: ['gu\u00e9rir rupture', 'temps gu\u00e9rison rupture', 'reconstruction apr\u00e8s rupture', 'surmonter s\u00e9paration', 'cicatrisation amoureuse'],
   alternates: {
-    canonical: 'https://voyantlove.fr/rupture/guerir-rupture/',
+    canonical: 'https://www.voyantlove.fr/rupture/guerir-rupture/',
   },
 };
 
@@ -19,16 +19,16 @@ export default function GuerirRupturePage() {
   const articleSchema = getArticleSchema({
     title: 'Gu\u00e9rir d\u2019une Rupture Amoureuse : \u00c9tapes, Dur\u00e9e et Reconstruction',
     description: 'Comment gu\u00e9rir d\u2019une rupture amoureuse ? D\u00e9couvrez les 5 \u00e9tapes du deuil amoureux, le temps de gu\u00e9rison, les signes de reconstruction et le r\u00f4le du tarot.',
-    url: 'https://voyantlove.fr/rupture/guerir-rupture/',
+    url: 'https://www.voyantlove.fr/rupture/guerir-rupture/',
     datePublished: '2026-03-03',
     dateModified: new Date().toISOString().split('T')[0],
     keywords: ['gu\u00e9rir rupture', 'temps gu\u00e9rison rupture', 'reconstruction apr\u00e8s rupture', 'surmonter s\u00e9paration', 'cicatrisation amoureuse'],
   });
 
   const breadcrumbSchema = getBreadcrumbSchema([
-    { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'Rupture Amoureuse', url: 'https://voyantlove.fr/rupture/' },
-    { name: 'Gu\u00e9rir d\u2019une Rupture', url: 'https://voyantlove.fr/rupture/guerir-rupture/' },
+    { name: 'Accueil', url: 'https://www.voyantlove.fr' },
+    { name: 'Rupture Amoureuse', url: 'https://www.voyantlove.fr/rupture/' },
+    { name: 'Gu\u00e9rir d\u2019une Rupture', url: 'https://www.voyantlove.fr/rupture/guerir-rupture/' },
   ]);
 
   const authorSchema = getAuthorSchema();

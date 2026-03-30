@@ -10,23 +10,23 @@ export const metadata: Metadata = {
   title: 'Seconde Chance en Amour : Donner une Nouvelle Opportunité',
   description: 'Faut-il donner une seconde chance en amour ? Le tarot guide votre décision pour reconstruire ou tourner la page.',
   keywords: ['seconde chance', 'nouvelle opportunité', 'pardon', 'reconstruction'],
-  alternates: { canonical: 'https://voyantlove.fr/reconquete/seconde-chance-amour/' },
+  alternates: { canonical: 'https://www.voyantlove.fr/reconquete/seconde-chance-amour/' },
 };
 
 export default function SecondeChancePage() {
   const articleSchema = getArticleSchema({
     title: 'Seconde Chance en Amour : Donner une Nouvelle Opportunité',
     description: 'Faut-il donner une seconde chance en amour ? Le tarot guide votre décision pour reconstruire ou tourner la page.',
-    url: 'https://voyantlove.fr/reconquete/seconde-chance-amour/',
+    url: 'https://www.voyantlove.fr/reconquete/seconde-chance-amour/',
     datePublished: '2026-01-18',
     dateModified: new Date().toISOString().split('T')[0],
     keywords: ['seconde chance', 'nouvelle opportunité', 'pardon', 'reconstruction'],
   });
 
   const breadcrumbSchema = getBreadcrumbSchema([
-    { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'Reconquête', url: 'https://voyantlove.fr/reconquete/' },
-    { name: 'Seconde Chance en Amour', url: 'https://voyantlove.fr/reconquete/seconde-chance-amour/' },
+    { name: 'Accueil', url: 'https://www.voyantlove.fr' },
+    { name: 'Reconquête', url: 'https://www.voyantlove.fr/reconquete/' },
+    { name: 'Seconde Chance en Amour', url: 'https://www.voyantlove.fr/reconquete/seconde-chance-amour/' },
   ]);
 
   const authorSchema = getAuthorSchema();

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: 'D\u00e9couvrez l\u2019Oracle de l\u2019Amour : Oracle Belline, Oracle de G\u00e9, Oracle des Anges. Guidance sentimentale compl\u00e8te pour \u00e9clairer votre vie amoureuse.',
   keywords: ['oracle amour', 'oracle sentimental', 'guidance amoureuse', 'cartes oracle', 'oracle des anges amour'],
   alternates: {
-    canonical: 'https://voyantlove.fr/methodes-voyance/oracle-amour/',
+    canonical: 'https://www.voyantlove.fr/methodes-voyance/oracle-amour/',
   },
 };
 
@@ -19,7 +19,7 @@ export default function OracleAmourPage() {
   const articleSchema = getArticleSchema({
     title: 'Oracle de l\u2019Amour : Guidance Sentimentale par les Cartes Oracle',
     description: 'D\u00e9couvrez l\u2019Oracle de l\u2019Amour : Oracle Belline, Oracle de G\u00e9, Oracle des Anges. Guidance sentimentale compl\u00e8te pour \u00e9clairer votre vie amoureuse.',
-    url: 'https://voyantlove.fr/methodes-voyance/oracle-amour/',
+    url: 'https://www.voyantlove.fr/methodes-voyance/oracle-amour/',
     datePublished: '2026-03-03',
     dateModified: new Date().toISOString().split('T')[0],
     keywords: ['oracle amour', 'oracle sentimental', 'guidance amoureuse', 'cartes oracle', 'oracle des anges amour'],
@@ -28,9 +28,9 @@ export default function OracleAmourPage() {
   const authorSchema = getAuthorSchema();
 
   const breadcrumbSchema = getBreadcrumbSchema([
-    { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'M\u00e9thodes de Voyance', url: 'https://voyantlove.fr/methodes-voyance/' },
-    { name: 'Oracle de l\u2019Amour', url: 'https://voyantlove.fr/methodes-voyance/oracle-amour/' },
+    { name: 'Accueil', url: 'https://www.voyantlove.fr' },
+    { name: 'M\u00e9thodes de Voyance', url: 'https://www.voyantlove.fr/methodes-voyance/' },
+    { name: 'Oracle de l\u2019Amour', url: 'https://www.voyantlove.fr/methodes-voyance/oracle-amour/' },
   ]);
 
   const faqSchema = getFAQSchema([

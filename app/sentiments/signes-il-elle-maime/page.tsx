@@ -10,23 +10,23 @@ export const metadata: Metadata = {
   title: 'Signes qu\'il/elle m\'aime : Décrypter l\'Amour Véritable | Tarot',
   description: 'Découvrez les signes qu\'il ou elle vous aime vraiment. Langage corporel, comportements révélateurs, signes du tarot et preuves d\'amour authentique.',
   keywords: ['signes il elle maime', 'signes amour', 'langage corporel amoureux', 'comportement amoureux', 'tarot signes amour'],
-  alternates: { canonical: 'https://voyantlove.fr/sentiments/signes-il-elle-maime/' },
+  alternates: { canonical: 'https://www.voyantlove.fr/sentiments/signes-il-elle-maime/' },
 };
 
 export default function SignesIlElleMaimePage() {
   const articleSchema = getArticleSchema({
     title: 'Signes qu\'il/elle m\'aime : Décrypter l\'Amour Véritable | Tarot',
     description: 'Découvrez les signes qu\'il ou elle vous aime vraiment. Langage corporel, comportements révélateurs, signes du tarot et preuves d\'amour authentique.',
-    url: 'https://voyantlove.fr/sentiments/signes-il-elle-maime/',
+    url: 'https://www.voyantlove.fr/sentiments/signes-il-elle-maime/',
     datePublished: '2026-01-19',
     dateModified: new Date().toISOString().split('T')[0],
     keywords: ['signes il elle maime', 'signes amour', 'langage corporel amoureux', 'comportement amoureux', 'tarot signes amour'],
   });
 
   const breadcrumbSchema = getBreadcrumbSchema([
-    { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'Sentiments', url: 'https://voyantlove.fr/sentiments/' },
-    { name: 'Signes qu\'il/elle m\'aime', url: 'https://voyantlove.fr/sentiments/signes-il-elle-maime/' },
+    { name: 'Accueil', url: 'https://www.voyantlove.fr' },
+    { name: 'Sentiments', url: 'https://www.voyantlove.fr/sentiments/' },
+    { name: 'Signes qu\'il/elle m\'aime', url: 'https://www.voyantlove.fr/sentiments/signes-il-elle-maime/' },
   ]);
 
   const authorSchema = getAuthorSchema();

@@ -10,23 +10,23 @@ export const metadata: Metadata = {
   title: 'Emprise Amoureuse : Reconnaître et Se Libérer d\'un Manipulateur | VoyantLove',
   description: 'Vous êtes sous emprise amoureuse ou avec un manipulateur ? Découvrez les signes d\'une relation toxique, comment s\'en sortir et ce que la voyance révèle sur votre situation.',
   keywords: ['emprise amoureuse', 'relation toxique voyance', 'manipulateur amour', 'pervers narcissique voyance', 'se libérer emprise amoureuse'],
-  alternates: { canonical: 'https://voyantlove.fr/crise-couple/emprise-amoureuse-voyance/' },
+  alternates: { canonical: 'https://www.voyantlove.fr/crise-couple/emprise-amoureuse-voyance/' },
 };
 
 export default function EmpriseAmoureusePage() {
   const articleSchema = getArticleSchema({
     title: 'Emprise Amoureuse : Reconnaître et Se Libérer d\'un Manipulateur | VoyantLove',
     description: 'Vous êtes sous emprise amoureuse ou avec un manipulateur ? Découvrez les signes d\'une relation toxique, comment s\'en sortir et ce que la voyance révèle sur votre situation.',
-    url: 'https://voyantlove.fr/crise-couple/emprise-amoureuse-voyance/',
+    url: 'https://www.voyantlove.fr/crise-couple/emprise-amoureuse-voyance/',
     datePublished: '2026-03-27',
     dateModified: new Date().toISOString().split('T')[0],
     keywords: ['emprise amoureuse', 'relation toxique voyance', 'manipulateur amour', 'pervers narcissique voyance', 'se libérer emprise amoureuse'],
   });
 
   const breadcrumbSchema = getBreadcrumbSchema([
-    { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'Crise de Couple', url: 'https://voyantlove.fr/crise-couple/' },
-    { name: 'Emprise Amoureuse', url: 'https://voyantlove.fr/crise-couple/emprise-amoureuse-voyance/' },
+    { name: 'Accueil', url: 'https://www.voyantlove.fr' },
+    { name: 'Crise de Couple', url: 'https://www.voyantlove.fr/crise-couple/' },
+    { name: 'Emprise Amoureuse', url: 'https://www.voyantlove.fr/crise-couple/emprise-amoureuse-voyance/' },
   ]);
 
   const authorSchema = getAuthorSchema();

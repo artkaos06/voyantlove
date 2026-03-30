@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: 'Découvrez si cette personne pense à vous grâce au tarot et à la voyance. Signes énergétiques, télépathie amoureuse, tirage spécifique.',
   keywords: ['pense-t-il à moi voyance', 'est-ce qu\'il pense à moi tarot', 'pense-t-elle à moi', 'signes qu\'il pense à moi', 'voyance pensées'],
   alternates: {
-    canonical: 'https://voyantlove.fr/sentiments/pense-t-il-elle-a-moi/',
+    canonical: 'https://www.voyantlove.fr/sentiments/pense-t-il-elle-a-moi/',
   },
 };
 
@@ -19,7 +19,7 @@ export default function PenseTilElleAMoiPage() {
   const articleSchema = getArticleSchema({
     title: 'Pense-t-il/elle à Moi ? Ce que le Tarot Révèle | Voyance',
     description: 'Découvrez si cette personne pense à vous grâce au tarot et à la voyance. Signes énergétiques, télépathie amoureuse, tirage spécifique.',
-    url: 'https://voyantlove.fr/sentiments/pense-t-il-elle-a-moi/',
+    url: 'https://www.voyantlove.fr/sentiments/pense-t-il-elle-a-moi/',
     datePublished: '2026-02-09',
     dateModified: new Date().toISOString().split('T')[0],
     keywords: ['pense-t-il à moi voyance', 'est-ce qu\'il pense à moi tarot', 'pense-t-elle à moi', 'signes qu\'il pense à moi', 'voyance pensées'],
@@ -49,9 +49,9 @@ export default function PenseTilElleAMoiPage() {
   ]);
 
   const breadcrumbSchema = getBreadcrumbSchema([
-    { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'Sentiments', url: 'https://voyantlove.fr/sentiments/' },
-    { name: 'Pense-t-il/elle à Moi ?', url: 'https://voyantlove.fr/sentiments/pense-t-il-elle-a-moi/' },
+    { name: 'Accueil', url: 'https://www.voyantlove.fr' },
+    { name: 'Sentiments', url: 'https://www.voyantlove.fr/sentiments/' },
+    { name: 'Pense-t-il/elle à Moi ?', url: 'https://www.voyantlove.fr/sentiments/pense-t-il-elle-a-moi/' },
   ]);
 
   const authorSchema = getAuthorSchema();

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: 'L\u2019astrologie amoureuse r\u00e9v\u00e8le votre compatibilit\u00e9 astrale, votre synastrie de couple et vos transits favorables. V\u00e9nus, Mars et les signes compatibles en amour.',
   keywords: ['astrologie amoureuse', 'compatibilit\u00e9 astrale', 'synastrie couple', 'Venus astrologie', 'signes compatibles amour'],
   alternates: {
-    canonical: 'https://voyantlove.fr/methodes-voyance/astrologie-amoureuse/',
+    canonical: 'https://www.voyantlove.fr/methodes-voyance/astrologie-amoureuse/',
   },
 };
 
@@ -19,7 +19,7 @@ export default function AstrologieAmoureusePage() {
   const articleSchema = getArticleSchema({
     title: 'Astrologie Amoureuse : Compatibilit\u00e9 Astrale et Pr\u00e9dictions',
     description: 'L\u2019astrologie amoureuse r\u00e9v\u00e8le votre compatibilit\u00e9 astrale, votre synastrie de couple et vos transits favorables. V\u00e9nus, Mars et les signes compatibles en amour.',
-    url: 'https://voyantlove.fr/methodes-voyance/astrologie-amoureuse/',
+    url: 'https://www.voyantlove.fr/methodes-voyance/astrologie-amoureuse/',
     datePublished: '2026-03-03',
     dateModified: new Date().toISOString().split('T')[0],
     keywords: ['astrologie amoureuse', 'compatibilit\u00e9 astrale', 'synastrie couple', 'Venus astrologie', 'signes compatibles amour'],
@@ -28,9 +28,9 @@ export default function AstrologieAmoureusePage() {
   const authorSchema = getAuthorSchema();
 
   const breadcrumbSchema = getBreadcrumbSchema([
-    { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'M\u00e9thodes de Voyance', url: 'https://voyantlove.fr/methodes-voyance/' },
-    { name: 'Astrologie Amoureuse', url: 'https://voyantlove.fr/methodes-voyance/astrologie-amoureuse/' },
+    { name: 'Accueil', url: 'https://www.voyantlove.fr' },
+    { name: 'M\u00e9thodes de Voyance', url: 'https://www.voyantlove.fr/methodes-voyance/' },
+    { name: 'Astrologie Amoureuse', url: 'https://www.voyantlove.fr/methodes-voyance/astrologie-amoureuse/' },
   ]);
 
   const faqSchema = getFAQSchema([

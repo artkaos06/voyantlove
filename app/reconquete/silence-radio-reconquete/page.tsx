@@ -10,14 +10,14 @@ export const metadata: Metadata = {
   title: 'Silence Radio Reconquête : Stratégie et Voyance',
   description: 'Le silence radio est-il la clé pour reconquérir son ex ? Découvrez la durée idéale, les étapes et ce que la voyance révèle sur cette stratégie puissante.',
   keywords: ['silence radio', 'reconquête silence', 'ne plus donner de nouvelles', 'silence radio ex', 'reconquête amoureuse'],
-  alternates: { canonical: 'https://voyantlove.fr/reconquete/silence-radio-reconquete/' },
+  alternates: { canonical: 'https://www.voyantlove.fr/reconquete/silence-radio-reconquete/' },
 };
 
 export default function SilenceRadioReconquetePage() {
   const articleSchema = getArticleSchema({
     title: 'Silence Radio : La Clé de la Reconquête Amoureuse',
     description: 'Le silence radio est-il la clé pour reconquérir son ex ? Découvrez la durée idéale, les étapes et ce que la voyance révèle sur cette stratégie puissante.',
-    url: 'https://voyantlove.fr/reconquete/silence-radio-reconquete/',
+    url: 'https://www.voyantlove.fr/reconquete/silence-radio-reconquete/',
     datePublished: '2026-03-22',
     dateModified: new Date().toISOString().split('T')[0],
     keywords: ['silence radio', 'reconquête silence', 'ne plus donner de nouvelles', 'silence radio ex', 'reconquête amoureuse'],
@@ -43,9 +43,9 @@ export default function SilenceRadioReconquetePage() {
   ]);
 
   const breadcrumbSchema = getBreadcrumbSchema([
-    { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'Reconquête', url: 'https://voyantlove.fr/reconquete/' },
-    { name: 'Silence Radio Reconquête', url: 'https://voyantlove.fr/reconquete/silence-radio-reconquete/' },
+    { name: 'Accueil', url: 'https://www.voyantlove.fr' },
+    { name: 'Reconquête', url: 'https://www.voyantlove.fr/reconquete/' },
+    { name: 'Silence Radio Reconquête', url: 'https://www.voyantlove.fr/reconquete/silence-radio-reconquete/' },
   ]);
 
   const authorSchema = getAuthorSchema();

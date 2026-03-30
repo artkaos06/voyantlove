@@ -10,23 +10,23 @@ export const metadata: Metadata = {
   title: 'Flamme Jumelle : Reconnaître et Vivre cette Connexion Intense | Voyance',
   description: 'Découvrez les signes de la flamme jumelle selon le tarot et la spiritualité. Différence avec l\'âme sœur, étapes de la relation, séparation et retrouvailles karmiques.',
   keywords: ['flamme jumelle', 'flamme jumelle signes', 'reconnaître flamme jumelle', 'flamme jumelle voyance', 'différence âme sœur flamme jumelle'],
-  alternates: { canonical: 'https://voyantlove.fr/nouvelle-rencontre/flamme-jumelle/' },
+  alternates: { canonical: 'https://www.voyantlove.fr/nouvelle-rencontre/flamme-jumelle/' },
 };
 
 export default function FlammeJumellePage() {
   const articleSchema = getArticleSchema({
     title: 'Flamme Jumelle : Reconnaître et Vivre cette Connexion Intense | Voyance',
     description: 'Découvrez les signes de la flamme jumelle selon le tarot et la spiritualité. Différence avec l\'âme sœur, étapes de la relation, séparation et retrouvailles karmiques.',
-    url: 'https://voyantlove.fr/nouvelle-rencontre/flamme-jumelle/',
+    url: 'https://www.voyantlove.fr/nouvelle-rencontre/flamme-jumelle/',
     datePublished: '2026-02-09',
     dateModified: new Date().toISOString().split('T')[0],
     keywords: ['flamme jumelle', 'flamme jumelle signes', 'reconnaître flamme jumelle', 'flamme jumelle voyance', 'différence âme sœur flamme jumelle'],
   });
 
   const breadcrumbSchema = getBreadcrumbSchema([
-    { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'Nouvelle Rencontre', url: 'https://voyantlove.fr/nouvelle-rencontre/' },
-    { name: 'Flamme Jumelle', url: 'https://voyantlove.fr/nouvelle-rencontre/flamme-jumelle/' },
+    { name: 'Accueil', url: 'https://www.voyantlove.fr' },
+    { name: 'Nouvelle Rencontre', url: 'https://www.voyantlove.fr/nouvelle-rencontre/' },
+    { name: 'Flamme Jumelle', url: 'https://www.voyantlove.fr/nouvelle-rencontre/flamme-jumelle/' },
   ]);
 
   const authorSchema = getAuthorSchema();

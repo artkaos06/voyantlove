@@ -123,7 +123,7 @@ export function buildPredictionEmailHTML(
                     <p style="font-size:15px;color:#4b5563;margin:0 0 20px;line-height:1.6;">
                       Ce tirage donne un aperçu général. Pour une analyse <strong>personnalisée et approfondie</strong> avec des dates et détails précis, consultez un voyant spécialisé.
                     </p>
-                    <a href="https://voyantlove.fr/go?ref=email-prediction" style="display:inline-block;background:linear-gradient(135deg,#7c3aed,#4f46e5);color:#ffffff;font-weight:bold;font-size:16px;padding:14px 32px;border-radius:8px;text-decoration:none;">
+                    <a href="https://www.voyantlove.fr/go?ref=email-prediction" style="display:inline-block;background:linear-gradient(135deg,#7c3aed,#4f46e5);color:#ffffff;font-weight:bold;font-size:16px;padding:14px 32px;border-radius:8px;text-decoration:none;">
                       🔮 Consulter un Voyant Maintenant
                     </a>
                     <p style="font-size:12px;color:#9ca3af;margin:12px 0 0;">Paiement sécurisé — Confidentiel — Disponible 7j/7</p>

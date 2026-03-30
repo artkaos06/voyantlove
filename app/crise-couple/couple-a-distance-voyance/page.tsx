@@ -10,23 +10,23 @@ export const metadata: Metadata = {
   title: 'Couple à Distance : Voyance et Conseils pour Durer | VoyantLove',
   description: 'Votre couple est séparé géographiquement ? La voyance couple à distance révèle si votre relation peut durer, quand vous retrouverez et comment maintenir le lien à distance.',
   keywords: ['couple à distance voyance', 'relation longue distance amour', 'amour à distance voyant', 'voyance séparation géographique', 'couple distance durer'],
-  alternates: { canonical: 'https://voyantlove.fr/crise-couple/couple-a-distance-voyance/' },
+  alternates: { canonical: 'https://www.voyantlove.fr/crise-couple/couple-a-distance-voyance/' },
 };
 
 export default function CoupleADistancePage() {
   const articleSchema = getArticleSchema({
     title: 'Couple à Distance : Voyance et Conseils pour Durer | VoyantLove',
     description: 'Votre couple est séparé géographiquement ? La voyance couple à distance révèle si votre relation peut durer, quand vous retrouverez et comment maintenir le lien à distance.',
-    url: 'https://voyantlove.fr/crise-couple/couple-a-distance-voyance/',
+    url: 'https://www.voyantlove.fr/crise-couple/couple-a-distance-voyance/',
     datePublished: '2026-03-27',
     dateModified: new Date().toISOString().split('T')[0],
     keywords: ['couple à distance voyance', 'relation longue distance amour', 'amour à distance voyant', 'voyance séparation géographique', 'couple distance durer'],
   });
 
   const breadcrumbSchema = getBreadcrumbSchema([
-    { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'Crise de Couple', url: 'https://voyantlove.fr/crise-couple/' },
-    { name: 'Couple à Distance Voyance', url: 'https://voyantlove.fr/crise-couple/couple-a-distance-voyance/' },
+    { name: 'Accueil', url: 'https://www.voyantlove.fr' },
+    { name: 'Crise de Couple', url: 'https://www.voyantlove.fr/crise-couple/' },
+    { name: 'Couple à Distance Voyance', url: 'https://www.voyantlove.fr/crise-couple/couple-a-distance-voyance/' },
   ]);
 
   const authorSchema = getAuthorSchema();

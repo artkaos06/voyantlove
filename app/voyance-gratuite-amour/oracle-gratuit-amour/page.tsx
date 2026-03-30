@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: 'Oracle amour gratuit : guidance sentimentale par Oracle Belline, Gé et des Anges. Quel oracle pour votre question amoureuse ?',
   keywords: ['oracle gratuit amour', 'oracle amour gratuit', 'oracle belline amour gratuit'],
   alternates: {
-    canonical: 'https://voyantlove.fr/voyance-gratuite-amour/oracle-gratuit-amour/',
+    canonical: 'https://www.voyantlove.fr/voyance-gratuite-amour/oracle-gratuit-amour/',
   },
 };
 
@@ -19,7 +19,7 @@ export default function OracleGratuitAmourPage() {
   const articleSchema = getArticleSchema({
     title: 'Oracle Gratuit Amour : Belline, Gé et Guidance Sentimentale',
     description: 'Oracle amour gratuit : guidance sentimentale par Oracle Belline, Gé et des Anges. Quel oracle pour votre question amoureuse ?',
-    url: 'https://voyantlove.fr/voyance-gratuite-amour/oracle-gratuit-amour/',
+    url: 'https://www.voyantlove.fr/voyance-gratuite-amour/oracle-gratuit-amour/',
     datePublished: '2026-03-10',
     dateModified: new Date().toISOString().split('T')[0],
     keywords: ['oracle gratuit amour', 'oracle amour gratuit', 'oracle belline amour gratuit'],
@@ -28,9 +28,9 @@ export default function OracleGratuitAmourPage() {
   const authorSchema = getAuthorSchema();
 
   const breadcrumbSchema = getBreadcrumbSchema([
-    { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'Voyance Gratuite Amour', url: 'https://voyantlove.fr/voyance-gratuite-amour/' },
-    { name: 'Oracle Gratuit Amour', url: 'https://voyantlove.fr/voyance-gratuite-amour/oracle-gratuit-amour/' },
+    { name: 'Accueil', url: 'https://www.voyantlove.fr' },
+    { name: 'Voyance Gratuite Amour', url: 'https://www.voyantlove.fr/voyance-gratuite-amour/' },
+    { name: 'Oracle Gratuit Amour', url: 'https://www.voyantlove.fr/voyance-gratuite-amour/oracle-gratuit-amour/' },
   ]);
 
   const faqSchema = getFAQSchema([

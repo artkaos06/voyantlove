@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: 'Comment surmonter un amour non partag\u00e9 ? D\u00e9couvrez les causes, les signes d\u2019un amour non r\u00e9ciproque, le r\u00f4le du tarot et les \u00e9tapes pour s\u2019ouvrir \u00e0 un amour v\u00e9ritable.',
   keywords: ['amour non partag\u00e9', 'amour \u00e0 sens unique', 'amour non r\u00e9ciproque', 'surmonter rejet amoureux', 'voyance sentiments'],
   alternates: {
-    canonical: 'https://voyantlove.fr/rupture/amour-non-partage/',
+    canonical: 'https://www.voyantlove.fr/rupture/amour-non-partage/',
   },
 };
 
@@ -19,16 +19,16 @@ export default function AmourNonPartagePage() {
   const articleSchema = getArticleSchema({
     title: 'Amour Non Partag\u00e9 : Comprendre et Surmonter un Amour \u00e0 Sens Unique',
     description: 'Comment surmonter un amour non partag\u00e9 ? D\u00e9couvrez les causes, les signes d\u2019un amour non r\u00e9ciproque, le r\u00f4le du tarot et les \u00e9tapes pour s\u2019ouvrir \u00e0 un amour v\u00e9ritable.',
-    url: 'https://voyantlove.fr/rupture/amour-non-partage/',
+    url: 'https://www.voyantlove.fr/rupture/amour-non-partage/',
     datePublished: '2026-03-03',
     dateModified: new Date().toISOString().split('T')[0],
     keywords: ['amour non partag\u00e9', 'amour \u00e0 sens unique', 'amour non r\u00e9ciproque', 'surmonter rejet amoureux', 'voyance sentiments'],
   });
 
   const breadcrumbSchema = getBreadcrumbSchema([
-    { name: 'Accueil', url: 'https://voyantlove.fr' },
-    { name: 'Rupture Amoureuse', url: 'https://voyantlove.fr/rupture/' },
-    { name: 'Amour Non Partag\u00e9', url: 'https://voyantlove.fr/rupture/amour-non-partage/' },
+    { name: 'Accueil', url: 'https://www.voyantlove.fr' },
+    { name: 'Rupture Amoureuse', url: 'https://www.voyantlove.fr/rupture/' },
+    { name: 'Amour Non Partag\u00e9', url: 'https://www.voyantlove.fr/rupture/amour-non-partage/' },
   ]);
 
   const authorSchema = getAuthorSchema();
