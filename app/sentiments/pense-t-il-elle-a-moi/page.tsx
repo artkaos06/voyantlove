@@ -42,6 +42,10 @@ export default function PenseTilElleAMoiPage() {
       question: 'Si je pense a lui, pense-t-il aussi a moi ?',
       answer: 'Pas systématiquement, mais une connexion énergétique bidirectionnelle existe souvent entre deux personnes liées émotionnellement. La voyance distingue les pensées unilatérales (projection de votre désir) des connexions réciproques (échange télépathique réel). Le tarot permet de vérifier si vos pensées obsédantes reflètent un lien mutuel ou simplement votre propre attachement. Un voyant expérimenté capte la direction et la réciprocité du flux énergétique entre vous.',
     },
+    {
+      question: 'Comment savoir si quelqu\'un pense à moi ?',
+      answer: 'Plusieurs signes subtils peuvent indiquer qu\'une personne pense à vous : synchronicités répétées (voir son prénom, entendre "sa" chanson), intuitions soudaines, rêves vivaces où cette personne apparaît, ou encore une sensation de présence inexplicable. La voyance va plus loin en captant directement l\'énergie et les pensées de l\'autre grâce à des outils divinatoires précis. Le tirage tarot des pensées utilise des cartes révélatrices comme La Lune (pensées inconscientes) et Le Bateleur (intentions actives) pour décoder ce que l\'autre ressent. La télépathie émotionnelle entre deux personnes liées est un phénomène reconnu en voyance. Un voyant expérimenté peut confirmer ou infirmer vos ressentis et vous dire avec précision la nature des pensées dirigées vers vous.',
+    },
   ]);
 
   const breadcrumbSchema = getBreadcrumbSchema([
@@ -317,9 +321,13 @@ export default function PenseTilElleAMoiPage() {
               <h3 className="text-xl font-bold text-gray-900 mb-3">La telepathie amoureuse existe-t-elle ?</h3>
               <p className="text-gray-700 leading-relaxed">La <strong>télépathie amoureuse</strong> désigne la capacité de ressentir les émotions et pensées d&apos;une personne avec laquelle on partage un lien affectif profond. Ce phénomène s&apos;explique par la <strong>connexion énergétique</strong> entre deux êtres ayant partagé une intimité émotionnelle intense. Les flammes jumelles et les âmes soeurs développent souvent cette capacité naturellement. Le <strong>tarot</strong> et la voyance permettent de confirmer et de mesurer l&apos;intensité de cette connexion spirituelle invisible mais réelle.</p>
             </div>
-            <div>
+            <div className="border-b border-gray-200 pb-6">
               <h3 className="text-xl font-bold text-gray-900 mb-3">Si je pense a lui, pense-t-il aussi a moi ?</h3>
               <p className="text-gray-700 leading-relaxed">Pas systématiquement, mais une <strong>connexion énergétique bidirectionnelle</strong> existe souvent entre deux personnes liées émotionnellement. La voyance distingue les pensées unilatérales (projection de votre désir) des connexions réciproques (échange <strong>télépathique</strong> réel). Le tarot permet de vérifier si vos pensées obsédantes reflètent un lien mutuel ou simplement votre propre attachement. Un <strong>voyant expérimenté</strong> capte la direction et la réciprocité du flux énergétique entre vous.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Comment savoir si quelqu&apos;un pense à moi ?</h3>
+              <p className="text-gray-700 leading-relaxed">Plusieurs <strong>signes subtils</strong> peuvent indiquer qu&apos;une personne pense à vous : synchronicités répétées (voir son prénom, entendre &laquo;sa&raquo; chanson), intuitions soudaines, rêves vivaces où cette personne apparaît, ou encore une sensation de présence inexplicable. La <strong>voyance</strong> va plus loin en captant directement l&apos;énergie et les pensées de l&apos;autre grâce à des outils divinatoires précis. Le <strong>tirage tarot des pensées</strong> utilise des cartes révélatrices comme La Lune (pensées inconscientes) et Le Bateleur (intentions actives) pour décoder ce que l&apos;autre ressent. La <strong>télépathie émotionnelle</strong> entre deux personnes liées est un phénomène reconnu en voyance. Un voyant expérimenté peut confirmer ou infirmer vos ressentis et vous dire avec précision la nature des pensées dirigées vers vous.</p>
             </div>
           </div>
         </section>

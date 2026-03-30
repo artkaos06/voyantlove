@@ -48,6 +48,10 @@ export default function NouvelleRencontreHubPage() {
       question: 'Vais-je rencontrer l\'amour prochainement ?',
       answer: 'La voyance permet d\'identifier les périodes les plus favorables à une rencontre imminente. Un voyant spécialisé analyse vos transits planétaires actuels, notamment la position de Vénus et de Jupiter dans vos maisons relationnelles, pour déterminer si une fenêtre de rencontre s\'ouvre prochainement. Les signes d\'une rencontre proche incluent les synchronicités répétées, les rêves récurrents et un sentiment intérieur de renouveau. Si ces signes sont présents, une consultation peut confirmer le timing et vous préparer à reconnaître cette personne quand elle se présentera.',
     },
+    {
+      question: 'Comment attirer l\'amour dans sa vie ?',
+      answer: 'Attirer l\'amour dans sa vie passe d\'abord par un travail spirituel et énergétique profond. La voyance révèle souvent des blocages karmiques hérités de vies antérieures ou de blessures passées qui empêchent inconsciemment l\'amour d\'entrer. L\'ouverture du chakra du coeur, par la méditation quotidienne et la visualisation, élève votre vibration amoureuse et attire des énergies compatibles. La loi de l\'attraction joue un rôle clé : en cultivant des pensées positives sur l\'amour, vous créez un champ magnétique favorable aux rencontres. L\'astrologie identifie les périodes propices grâce aux transits de Vénus et à Jupiter en maison 7, maison des relations. Des exercices concrets comme le rituel de nouvelle lune — écrire ses intentions amoureuses et les confier à l\'univers — amplifient cette dynamique. Consulter un voyant aide à identifier précisément les blocages inconscients qui freinent l\'arrivée de l\'amour.',
+    },
   ]);
 
   return (
@@ -239,9 +243,13 @@ export default function NouvelleRencontreHubPage() {
               <h3 className="text-xl font-bold text-gray-900 mb-3">Comment se préparer à une nouvelle rencontre ?</h3>
               <p className="text-gray-700 leading-relaxed">La <strong>préparation spirituelle</strong> est essentielle pour attirer une <strong>rencontre amoureuse</strong> alignée avec votre destinée. Le tarot recommande d'abord un <strong>travail de guérison émotionnelle</strong> pour libérer les blessures des relations passées et les <strong>schémas répétitifs</strong>. La <strong>méditation quotidienne</strong> et les rituels d'ouverture du <strong>chakra du cœur</strong> élèvent votre vibration amoureuse. Un voyant peut prescrire des exercices de <strong>visualisation créative</strong> et des <strong>affirmations positives</strong> ciblées. Le <strong>nettoyage énergétique</strong> de votre espace de vie et l'utilisation de cristaux comme le <strong>quartz rose</strong> favorisent l'accueil de l'amour nouveau dans votre existence.</p>
             </div>
-            <div className="pb-6">
+            <div className="border-b border-gray-200 pb-6">
               <h3 className="text-xl font-bold text-gray-900 mb-3">Vais-je rencontrer l'amour prochainement ?</h3>
               <p className="text-gray-700 leading-relaxed">La <strong>voyance</strong> permet d'identifier les <strong>périodes les plus favorables</strong> à une rencontre imminente. Un voyant spécialisé analyse vos <strong>transits planétaires</strong> actuels, notamment la position de <strong>Vénus</strong> et de <strong>Jupiter</strong> dans vos maisons relationnelles, pour déterminer si une fenêtre de rencontre s'ouvre prochainement. Les <strong>signes d'une rencontre proche</strong> incluent les synchronicités répétées, les rêves récurrents et un sentiment intérieur de renouveau. Si ces signes sont présents, une consultation peut confirmer le timing et vous préparer à <strong>reconnaître cette personne</strong> quand elle se présentera.</p>
+            </div>
+            <div className="pb-6">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Comment attirer l'amour dans sa vie ?</h3>
+              <p className="text-gray-700 leading-relaxed">Attirer l'amour dans sa vie passe d'abord par un <strong>travail spirituel et énergétique</strong> profond. La voyance révèle souvent des <strong>blocages karmiques</strong> hérités de vies antérieures ou de blessures passées qui empêchent inconsciemment l'amour d'entrer. L'ouverture du <strong>chakra du coeur</strong>, par la méditation quotidienne et la visualisation, élève votre <strong>vibration amoureuse</strong> et attire des énergies compatibles. La <strong>loi de l'attraction</strong> joue un rôle clé : en cultivant des pensées positives sur l'amour, vous créez un champ magnétique favorable aux rencontres. L'<strong>astrologie</strong> identifie les périodes propices grâce aux <strong>transits de Vénus</strong> et à <strong>Jupiter en maison 7</strong>, maison des relations. Des exercices concrets comme le <strong>rituel de nouvelle lune</strong> — écrire ses intentions amoureuses et les confier à l'univers — amplifient cette dynamique. Consulter un <strong>voyant</strong> aide à identifier précisément les blocages inconscients qui freinent l'arrivée de l'amour.</p>
             </div>
           </div>
         </section>

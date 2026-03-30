@@ -56,6 +56,14 @@ export default function AvenirAmoureuxPage() {
       question: 'A quelle frequence consulter un voyant ?',
       answer: 'Pour un avenir amoureux général : tous les 6-12 mois suffisent. En période de questionnement (début de relation, crise) : tous les 3 mois. Évitez de consulter trop souvent (chaque semaine) car l\'avenir a besoin de temps pour se déployer. Les meilleures consultations se font lors de transits majeurs (éclipses, Vénus rétrograde, votre anniversaire) pour obtenir les insights les plus pertinents.',
     },
+    {
+      question: 'Comment connaître son avenir amoureux ?',
+      answer: 'Plusieurs approches divinatoires permettent de connaître son avenir amoureux. La cartomancie et le tirage tarot amour restent les méthodes les plus précises : les arcanes majeurs comme Le Monde, L\'Étoile et La Roue de Fortune révèlent les grandes étapes sentimentales à venir. Une consultation avec un voyant spécialisé en amour offre une lecture personnalisée de votre trajectoire. Chez voyantlove.fr, nos voyants distinguent la prédiction figée de la guidance évolutive : le tarot ne dicte pas un destin immuable, il trace une feuille de route sentimentale qui éclaire vos choix tout en respectant votre libre arbitre. C\'est cette nuance qui rend la voyance sentimentale véritablement utile.',
+    },
+    {
+      question: 'Est-ce que le destin existe en amour ?',
+      answer: 'La voyance aborde cette question à travers le prisme du libre arbitre et du karma amoureux. Certaines rencontres semblent prédestinées, guidées par des contrats d\'âme noués dans d\'autres vies : ces connexions karmiques expliquent l\'intensité immédiate que vous ressentez avec certaines personnes. Cependant, le tarot montre que le destin trace les grandes lignes tandis que vos choix quotidiens en dessinent les détails. Les arcanes révèlent un potentiel, jamais un futur figé. Un voyant expérimenté vous aide à comprendre vos schémas karmiques amoureux pour mieux naviguer vos relations, tout en vous rappelant que vous restez maître de vos décisions. Le destin propose, votre libre arbitre dispose.',
+    },
   ]);
 
   return (
@@ -437,9 +445,19 @@ export default function AvenirAmoureuxPage() {
               <p className="text-gray-700 leading-relaxed">Absolument. Le tarot montre le futur le plus probable selon vos choix actuels, pas un destin figé. Si le tarot prédit des difficultés, vous pouvez modifier votre comportement, faire un travail thérapeutique, ou changer d'approche relationnelle. Si il annonce une belle rencontre mais vous restez fermé, elle ne se manifestera pas. L'<strong>avenir se co-crée</strong> entre les tendances révélées et vos actions conscientes.</p>
             </div>
 
-            <div>
+            <div className="border-b border-gray-200 pb-6">
               <h3 className="text-xl font-bold mb-3 text-gray-900">A quelle frequence consulter un voyant ?</h3>
               <p className="text-gray-700 leading-relaxed">Pour un avenir amoureux général : tous les 6-12 mois suffisent. En période de questionnement (début de relation, crise) : tous les 3 mois. Évitez de consulter trop souvent (chaque semaine) car l'avenir a besoin de temps pour se déployer. Les meilleures consultations se font lors de transits majeurs (éclipses, Vénus rétrograde, votre anniversaire) pour obtenir les insights les plus pertinents.</p>
+            </div>
+
+            <div className="border-b border-gray-200 pb-6">
+              <h3 className="text-xl font-bold mb-3 text-gray-900">Comment connaître son avenir amoureux ?</h3>
+              <p className="text-gray-700 leading-relaxed">Plusieurs approches divinatoires permettent de connaître son <strong>avenir amoureux</strong>. La <strong>cartomancie</strong> et le <strong>tirage tarot amour</strong> restent les méthodes les plus précises : les arcanes majeurs comme Le Monde, L'Étoile et La Roue de Fortune révèlent les grandes étapes sentimentales à venir. Une consultation avec un <strong>voyant spécialisé</strong> en amour offre une lecture personnalisée de votre trajectoire. Chez voyantlove.fr, nos voyants distinguent la prédiction figée de la <strong>guidance évolutive</strong> : le tarot ne dicte pas un destin immuable, il trace une feuille de route sentimentale qui éclaire vos choix tout en respectant votre libre arbitre. C'est cette nuance qui rend la <strong>voyance sentimentale</strong> véritablement utile.</p>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-bold mb-3 text-gray-900">Est-ce que le destin existe en amour ?</h3>
+              <p className="text-gray-700 leading-relaxed">La voyance aborde cette question à travers le prisme du <strong>libre arbitre</strong> et du <strong>karma amoureux</strong>. Certaines rencontres semblent prédestinées, guidées par des <strong>contrats d'âme</strong> noués dans d'autres vies : ces connexions karmiques expliquent l'intensité immédiate que vous ressentez avec certaines personnes. Cependant, le tarot montre que le destin trace les grandes lignes tandis que vos choix quotidiens en dessinent les détails. Les arcanes révèlent un <strong>potentiel</strong>, jamais un futur figé. Un voyant expérimenté vous aide à comprendre vos schémas karmiques amoureux pour mieux naviguer vos relations, tout en vous rappelant que vous restez maître de vos décisions. Le destin propose, votre libre arbitre dispose.</p>
             </div>
           </div>
         </section>

@@ -42,6 +42,10 @@ export default function MAimeTilEllePage() {
       question: 'Pense-t-il/elle souvent à moi ?',
       answer: 'Le tarot répond à cette question en révélant la fréquence et la nature de ses pensées vous concernant. Le Cavalier de Coupe et La Lune indiquent qu\'il/elle pense souvent à vous. Le type de pensées (nostalgiques, désirantes, conflictuelles) est aussi révélé et vous guide sur ce que vous devez faire.',
     },
+    {
+      question: 'Comment savoir si je lui plais ?',
+      answer: 'Au-delà des signes physiques et comportementaux classiques (regard prolongé, recherche de proximité, nervosité), la voyance révèle ce que les apparences ne montrent pas. Le tirage des sentiments, notamment les cartes de Coupe (As, Deux et Cavalier de Coupe), dévoile les émotions profondes que cette personne éprouve réellement pour vous. L\'analyse des énergies entre deux personnes par un voyant permet de capter l\'attirance cachée, même chez quelqu\'un qui dissimule ses sentiments. Le tirage en croix pour les sentiments est particulièrement révélateur : il explore l\'attraction, les blocages, les intentions et le potentiel du lien. Consulter un voyant est plus fiable que l\'interprétation personnelle des signaux, car nos émotions biaisent notre lecture des situations amoureuses.',
+    },
   ]);
 
   const breadcrumbSchema = getBreadcrumbSchema([
@@ -274,9 +278,13 @@ export default function MAimeTilEllePage() {
               <h3 className="text-xl font-bold text-gray-900 mb-3">Pourquoi cache-t-il ses sentiments s'il m'aime ?</h3>
               <p className="text-gray-700 leading-relaxed">Peur de souffrir après blessure passée, peur d'engagement, situation compliquée, blocage culturel ou familial, fierté. Le tarot révèle ces blocages invisibles et vous aide à comprendre si vous devez être patient(e), l'aider à s'ouvrir, ou accepter que malgré l'amour la relation n'avancera pas.</p>
             </div>
-            <div>
+            <div className="border-b border-gray-200 pb-6">
               <h3 className="text-xl font-bold text-gray-900 mb-3">Pense-t-il/elle souvent à moi ?</h3>
               <p className="text-gray-700 leading-relaxed">Le tarot répond à cette question en révélant la fréquence et la nature de ses pensées vous concernant. Le Cavalier de Coupe et La Lune indiquent qu'il/elle pense souvent à vous. Le type de pensées (nostalgiques, désirantes, conflictuelles) est aussi révélé et vous guide sur ce que vous devez faire.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Comment savoir si je lui plais ?</h3>
+              <p className="text-gray-700 leading-relaxed">Au-delà des signes physiques et comportementaux classiques (regard prolongé, recherche de proximité, nervosité), la <strong>voyance</strong> révèle ce que les apparences ne montrent pas. Le <strong>tirage des sentiments</strong>, notamment les cartes de Coupe (As, Deux et Cavalier de Coupe), dévoile les émotions profondes que cette personne éprouve réellement pour vous. L'analyse des <strong>énergies entre deux personnes</strong> par un voyant permet de capter l'attirance cachée, même chez quelqu'un qui dissimule ses sentiments. Le <strong>tirage en croix pour les sentiments</strong> est particulièrement révélateur : il explore l'attraction, les blocages, les intentions et le potentiel du lien. Consulter un voyant est plus fiable que l'interprétation personnelle des signaux, car nos émotions biaisent notre lecture des situations amoureuses.</p>
             </div>
           </div>
         </section>
