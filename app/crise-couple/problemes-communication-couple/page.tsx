@@ -7,16 +7,16 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
 export const metadata: Metadata = {
-  title: 'Problème de Communication Couple : Solutions pour un Dialogue Difficile',
-  description: 'Résolvez les problèmes de communication dans le couple : dialogue difficile, silence, disputes répétitives. Techniques concrètes et guidance voyance pour reconstruire la connexion.',
-  keywords: ['problème de communication couple', 'communication couple difficile', 'problème de communication dans le couple', 'dialogue couple', 'incompréhension couple', 'améliorer communication couple'],
+  title: 'Problème de Communication dans le Couple : Causes, Solutions et Voyance',
+  description: 'Problème de communication dans le couple ? Causes du manque de dialogue, solutions concrètes et guidance voyance pour reconstruire la connexion et éviter la rupture.',
+  keywords: ['problème de communication couple', 'communication couple difficile', 'problème de communication dans le couple', 'dialogue couple', 'incompréhension couple', 'améliorer communication couple', 'manque de communication'],
   alternates: { canonical: 'https://www.voyantlove.fr/crise-couple/problemes-communication-couple/' },
 };
 
 export default function ProblemesCommunicationCouplePage() {
   const articleSchema = getArticleSchema({
-    title: 'Problème de Communication Couple : Solutions pour un Dialogue Difficile',
-    description: 'Résolvez les problèmes de communication dans le couple : dialogue difficile, silence, disputes répétitives. Techniques concrètes et guidance voyance pour reconstruire la connexion.',
+    title: 'Problème de Communication dans le Couple : Causes, Solutions et Voyance',
+    description: 'Problème de communication dans le couple ? Causes du manque de dialogue, solutions concrètes et guidance voyance pour reconstruire la connexion et éviter la rupture.',
     url: 'https://www.voyantlove.fr/crise-couple/problemes-communication-couple/',
     datePublished: '2026-02-09',
     dateModified: new Date().toISOString().split('T')[0],
@@ -55,6 +55,14 @@ export default function ProblemesCommunicationCouplePage() {
     {
       question: 'Combien de temps pour rétablir la communication ?',
       answer: 'Pour des problèmes légers : 2-4 mois d\'efforts conscients suffisent. Pour des blocages profonds ou des années de non-communication : 6-12 mois de travail régulier. Le changement commence rapidement si les deux partenaires s\'engagent sincèrement. Vous verrez des améliorations dès 3-4 semaines de pratique d\'écoute active et d\'expression honnête. La patience et la constance sont essentielles, les rechutes font partie du processus.',
+    },
+    {
+      question: 'Quels sont les signes d\'un manque de communication dans le couple ?',
+      answer: 'Les signaux d\'alerte d\'un manque de communication dans le couple sont nombreux et souvent insidieux. Les silences prolongés s\'installent là où il y avait autrefois des échanges spontanés. Les conversations deviennent purement superficielles, limitées à la logistique quotidienne : courses, enfants, factures. Vous évitez systématiquement les sujets importants (avenir, sentiments, frustrations) par peur du conflit. La communication se réduit à du fonctionnel sans plus aucun "Comment tu vas ?" sincère. La différence entre un silence temporaire sain — après une dispute par exemple, pour laisser retomber les émotions — et un manque chronique de communication réside dans la durée et l\'intention : le silence sain est choisi et limité dans le temps, tandis que le manque chronique s\'installe sans que personne ne décide consciemment de ne plus parler. En consultation de tarot, les blocages de communication apparaissent souvent à travers des cartes comme l\'Ermite (repli sur soi), le 4 d\'Épée (stagnation mentale) ou la Lune (malentendus et non-dits). Le voyant identifie alors la source énergétique du blocage et guide le couple vers une ouverture progressive du dialogue.',
+    },
+    {
+      question: 'Comment améliorer la communication non verbale dans le couple ?',
+      answer: 'La communication non verbale représente une part considérable de nos échanges et constitue souvent le premier levier pour reconstruire la connexion dans un couple en difficulté. Le langage corporel est essentiel : le contact visuel prolongé pendant les conversations montre que vous êtes vraiment présent, le toucher affectif quotidien (main sur l\'épaule, caresse dans les cheveux, étreinte spontanée) maintient le lien physique et émotionnel, et une posture ouverte (bras décroisés, corps tourné vers le partenaire) signale la réceptivité. Les micro-gestes qui reconstruisent la connexion incluent sourire en voyant l\'autre rentrer, poser son téléphone quand il/elle parle, hocher la tête pendant l\'écoute, ou simplement s\'asseoir plus près sur le canapé. La synchronisation des rythmes — respirer ensemble, marcher au même pas, manger en même temps — crée une harmonie inconsciente qui renforce le sentiment d\'unité. L\'énergie non verbale est précisément ce que les voyants perçoivent lors des consultations de couple : avant même que les mots ne soient prononcés, un voyant sensible capte les tensions, les blocages et les flux d\'amour entre deux partenaires à travers leur aura et leur champ énergétique, offrant ainsi un diagnostic que les mots seuls ne pourraient révéler.',
     },
   ]);
 
@@ -597,9 +605,19 @@ export default function ProblemesCommunicationCouplePage() {
               <p className="text-gray-700 leading-relaxed">Un partenaire qui se ferme souffre souvent de <strong>peur du conflit</strong>, de honte, ou d'un traumatisme passé. Forcer la communication crée plus de fermeture. Créez d'abord un espace sécurisé : promettez de l'écouter sans jugement, proposez d'écrire plutôt que parler si c'est plus facile pour lui/elle, consultez ensemble un thérapeute. Si le refus persiste 6+ mois, questionnez-vous : est-ce de l'incapacité temporaire ou un refus de s'investir ?</p>
             </div>
 
-            <div>
+            <div className="border-b border-gray-200 pb-6">
               <h3 className="text-xl font-bold mb-3 text-gray-900">Combien de temps pour rétablir la communication ?</h3>
               <p className="text-gray-700 leading-relaxed">Pour des problèmes légers : 2-4 mois d'efforts conscients suffisent. Pour des blocages profonds ou des années de non-communication : 6-12 mois de travail régulier. Le changement commence rapidement si les deux partenaires s'engagent sincèrement. Vous verrez des <strong>améliorations dès 3-4 semaines</strong> de pratique d'écoute active et d'expression honnête. La patience et la constance sont essentielles, les rechutes font partie du processus.</p>
+            </div>
+
+            <div className="border-b border-gray-200 pb-6">
+              <h3 className="text-xl font-bold mb-3 text-gray-900">Quels sont les signes d'un manque de communication dans le couple ?</h3>
+              <p className="text-gray-700 leading-relaxed">Les signaux d'alerte d'un <strong>manque de communication</strong> dans le couple sont nombreux et souvent insidieux. Les <strong>silences prolongés</strong> s'installent là où il y avait autrefois des échanges spontanés. Les conversations deviennent purement superficielles, limitées à la logistique quotidienne : courses, enfants, factures. Vous évitez systématiquement les sujets importants (avenir, sentiments, frustrations) par peur du conflit. La communication se réduit à du fonctionnel sans plus aucun "Comment tu vas ?" sincère. La différence entre un silence temporaire sain — après une dispute par exemple, pour laisser retomber les émotions — et un <strong>manque chronique</strong> de communication réside dans la durée et l'intention : le silence sain est choisi et limité dans le temps, tandis que le manque chronique s'installe sans que personne ne décide consciemment de ne plus parler. En consultation de <strong>tarot</strong>, les blocages de communication apparaissent souvent à travers des cartes comme l'Ermite (repli sur soi), le 4 d'Épée (stagnation mentale) ou la Lune (malentendus et non-dits). Le voyant identifie alors la source énergétique du blocage et guide le couple vers une ouverture progressive du dialogue.</p>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-bold mb-3 text-gray-900">Comment améliorer la communication non verbale dans le couple ?</h3>
+              <p className="text-gray-700 leading-relaxed">La <strong>communication non verbale</strong> représente une part considérable de nos échanges et constitue souvent le premier levier pour reconstruire la connexion dans un couple en difficulté. Le <strong>langage corporel</strong> est essentiel : le contact visuel prolongé pendant les conversations montre que vous êtes vraiment présent, le toucher affectif quotidien (main sur l'épaule, caresse dans les cheveux, étreinte spontanée) maintient le lien physique et émotionnel, et une posture ouverte (bras décroisés, corps tourné vers le partenaire) signale la réceptivité. Les <strong>micro-gestes</strong> qui reconstruisent la connexion incluent sourire en voyant l'autre rentrer, poser son téléphone quand il/elle parle, hocher la tête pendant l'écoute, ou simplement s'asseoir plus près sur le canapé. La <strong>synchronisation des rythmes</strong> — respirer ensemble, marcher au même pas, manger en même temps — crée une harmonie inconsciente qui renforce le sentiment d'unité. L'énergie non verbale est précisément ce que les <strong>voyants</strong> perçoivent lors des consultations de couple : avant même que les mots ne soient prononcés, un voyant sensible capte les tensions, les blocages et les flux d'amour entre deux partenaires à travers leur aura et leur champ énergétique, offrant ainsi un diagnostic que les mots seuls ne pourraient révéler.</p>
             </div>
           </div>
         </section>
