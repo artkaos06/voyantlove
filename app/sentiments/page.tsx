@@ -7,15 +7,15 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
 export const metadata: Metadata = {
-  title: 'Sentiments Amoureux : Décrypter Émotions et Avenir | Voyance',
-  description: 'Analyse des sentiments amoureux : M\'aime-t-il/elle ? Décrypter émotions et prédire votre avenir amoureux selon le tarot.',
+  title: 'Voyance Amour : Sentiments, Avenir et Prédictions | VoyantLove',
+  description: 'Voyance amour et sentiments : M\'aime-t-il ? Quel est mon avenir amoureux ? Prédictions tarot et guidance voyance pour vos questions de cœur.',
   alternates: { canonical: 'https://www.voyantlove.fr/sentiments/' },
 };
 
 export default function SentimentsHubPage() {
   const webPageSchema = getWebPageSchema({
-    title: 'Sentiments Amoureux : Décrypter Émotions et Avenir | Voyance',
-    description: 'Analyse des sentiments amoureux : M\'aime-t-il/elle ? Décrypter émotions et prédire votre avenir amoureux selon le tarot.',
+    title: 'Voyance Amour : Sentiments, Avenir et Prédictions | VoyantLove',
+    description: 'Voyance amour et sentiments : M\'aime-t-il ? Quel est mon avenir amoureux ? Prédictions tarot et guidance voyance pour vos questions de cœur.',
     url: 'https://www.voyantlove.fr/sentiments/',
   });
 

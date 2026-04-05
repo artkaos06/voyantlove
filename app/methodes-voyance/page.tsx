@@ -7,15 +7,15 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
 export const metadata: Metadata = {
-  title: 'Méthodes de Voyance Amoureuse : Tarot, Oracle et Astrologie',
-  description: 'Découvrez les méthodes de voyance amoureuse : tarot, oracle et astrologie pour éclairer votre vie sentimentale et prédire votre avenir amoureux.',
+  title: 'Voyance Sentimentale : Tarot, Pendule, Oracle et Astrologie | VoyantLove',
+  description: 'Voyance sentimentale et amoureuse : toutes les méthodes (tarot, pendule, oracle, astrologie, numérologie) pour éclairer votre vie de couple et prédire votre avenir.',
   alternates: { canonical: 'https://www.voyantlove.fr/methodes-voyance/' },
 };
 
 export default function MethodesVoyanceHubPage() {
   const webPageSchema = getWebPageSchema({
-    title: 'Méthodes de Voyance Amoureuse : Tarot, Oracle et Astrologie',
-    description: 'Découvrez les méthodes de voyance amoureuse : tarot, oracle et astrologie pour éclairer votre vie sentimentale et prédire votre avenir amoureux.',
+    title: 'Voyance Sentimentale : Tarot, Pendule, Oracle et Astrologie | VoyantLove',
+    description: 'Voyance sentimentale et amoureuse : toutes les méthodes (tarot, pendule, oracle, astrologie, numérologie) pour éclairer votre vie de couple et prédire votre avenir.',
     url: 'https://www.voyantlove.fr/methodes-voyance/',
   });
 

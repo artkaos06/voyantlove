@@ -7,15 +7,15 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
 export const metadata: Metadata = {
-  title: 'Rupture Amoureuse : Comprendre, Surmonter et Guérir | Voyance',
-  description: 'Guide complet sur la rupture amoureuse : comprendre les causes, surmonter le chagrin et guérir selon le tarot et la voyance.',
+  title: 'Voyance Rupture Amoureuse : Comprendre, Surmonter et Guérir | VoyantLove',
+  description: 'Voyance rupture amoureuse : comprenez les causes, surmontez le chagrin et découvrez votre avenir sentimental selon le tarot. Guidance personnalisée.',
   alternates: { canonical: 'https://www.voyantlove.fr/rupture/' },
 };
 
 export default function RuptureHubPage() {
   const webPageSchema = getWebPageSchema({
-    title: 'Rupture Amoureuse : Comprendre, Surmonter et Guérir | Voyance',
-    description: 'Guide complet sur la rupture amoureuse : comprendre les causes, surmonter le chagrin et guérir selon le tarot et la voyance.',
+    title: 'Voyance Rupture Amoureuse : Comprendre, Surmonter et Guérir | VoyantLove',
+    description: 'Voyance rupture amoureuse : comprenez les causes, surmontez le chagrin et découvrez votre avenir sentimental selon le tarot. Guidance personnalisée.',
     url: 'https://www.voyantlove.fr/rupture/',
   });
 

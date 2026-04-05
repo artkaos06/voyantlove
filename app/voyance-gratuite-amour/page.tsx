@@ -7,15 +7,15 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
 export const metadata: Metadata = {
-  title: 'Voyance Gratuite Amour : Tirages et Guidance Sentimentale',
-  description: 'Voyance amoureuse gratuite : tarot, oracle et horoscope pour éclairer votre vie sentimentale. Guidance fiable sans engagement.',
+  title: 'Voyance Gratuite Amour en Ligne : Tirage Tarot et Oracle | VoyantLove',
+  description: 'Voyance amour gratuite en ligne : tirage tarot, oracle et horoscope amoureux. Réponses immédiates sur votre vie sentimentale, sans engagement.',
   alternates: { canonical: 'https://www.voyantlove.fr/voyance-gratuite-amour/' },
 };
 
 export default function VoyanceGratuiteAmourHubPage() {
   const webPageSchema = getWebPageSchema({
-    title: 'Voyance Gratuite Amour : Tirages et Guidance Sentimentale',
-    description: 'Voyance amoureuse gratuite : tarot, oracle et horoscope pour éclairer votre vie sentimentale. Guidance fiable sans engagement.',
+    title: 'Voyance Gratuite Amour en Ligne : Tirage Tarot et Oracle | VoyantLove',
+    description: 'Voyance amour gratuite en ligne : tirage tarot, oracle et horoscope amoureux. Réponses immédiates sur votre vie sentimentale, sans engagement.',
     url: 'https://www.voyantlove.fr/voyance-gratuite-amour/',
   });
 
