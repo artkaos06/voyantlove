@@ -9,9 +9,9 @@ import DynamicCTAButton from '@/components/DynamicCTAButton';
 
 export const metadata: Metadata = {
   title: {
-    absolute: 'VoyantLove — Voyance Amoureuse Spécialisée',
+    absolute: 'VoyantLove — Consultez un Voyant Spécialisé Amour',
   },
-  description: 'VoyantLove : votre guide en voyance amoureuse. Reconquête, sentiments, rencontre, rupture — consultez un voyant spécialisé amour. 10 min offertes.',
+  description: 'VoyantLove : consultez un voyant spécialisé en amour. Reconquête, sentiments, rencontre, rupture — guidance personnalisée par tarot et clairvoyance. 10 min offertes.',
   alternates: { canonical: 'https://www.voyantlove.fr/' },
 };
 
@@ -21,28 +21,28 @@ export default function HomePage() {
   const authorSchema = getAuthorSchema();
   const faqSchema = getFAQSchema([
     {
-      question: 'Qu\'est-ce que la voyance amoureuse et comment fonctionne-t-elle ?',
-      answer: 'Oubliez l\'image de la boule de cristal. La voyance amoureuse moderne, c\'est un voyant qui utilise le tarot, la clairvoyance ou l\'astrologie pour décrypter les énergies de votre situation sentimentale. Ce qu\'il capte : les sentiments réels de l\'autre personne, les blocages invisibles dans votre relation, les fenêtres de timing favorables. La voyance ne prédit pas un futur gravé dans le marbre. Elle éclaire les probabilités en fonction de vos choix actuels et vous donne les clés pour décider en conscience.',
+      question: 'Comment fonctionne VoyantLove ?',
+      answer: 'VoyantLove est une plateforme de consultation avec des voyants spécialisés en questions sentimentales. Vous choisissez votre situation (reconquête, sentiments, rupture, rencontre, crise de couple), explorez nos guidances gratuites, puis réservez une consultation privée avec un voyant expert si vous souhaitez une analyse personnalisée. Chaque voyant utilise le tarot, la clairvoyance ou l\'astrologie selon votre question.',
     },
     {
-      question: 'La voyance amoureuse par tarot est-elle fiable ?',
-      answer: 'Tout dépend de qui tient les cartes. Un jeu de tarot entre les mains d\'un débutant, c\'est comme un stéthoscope entre les mains d\'un non-médecin — l\'outil est bon, mais sans expertise il ne sert à rien. Les 78 arcanes (22 majeurs, 56 mineurs) offrent une palette incroyablement nuancée pour lire les sentiments, les tensions et les évolutions possibles. Le critère essentiel : un tarologue honnête qui vous dit ce qu\'il voit, même quand c\'est difficile à entendre, plutôt que ce que vous espérez.',
+      question: 'Comment sont sélectionnés les voyants VoyantLove ?',
+      answer: 'Chaque voyant de notre équipe passe un processus de sélection rigoureux. Nous vérifions un minimum de 5 ans d\'expérience en guidance sentimentale, la qualité des avis clients, et l\'engagement à respecter notre charte éthique : pas de promesses irréalistes, pas de vente de rituels, et une posture bienveillante qui rend le consultant autonome plutôt que dépendant.',
     },
     {
-      question: 'Comment choisir un bon voyant spécialisé en amour ?',
-      answer: 'Quatre signes qui ne trompent pas : il pose peu de questions et capte votre situation rapidement. Il donne des détails précis, pas des généralités. Il est franc même quand la vérité dérange. Et surtout, il ne crée jamais de dépendance. Vérifiez les avis clients et l\'expérience (minimum 5 ans de pratique). Fuyez ceux qui promettent des retours garantis ou qui vendent des rituels payants en supplément. Un vrai professionnel vous guide et vous rend autonome — il ne cherche pas à vous faire revenir chaque semaine.',
+      question: 'Combien coûte une consultation sur VoyantLove ?',
+      answer: 'Les tarifs varient selon le voyant choisi et la durée de la consultation. Nous offrons 10 minutes gratuites pour découvrir le service. Nos guidances en ligne (reconquête, sentiments, rupture, etc.) sont entièrement gratuites et accessibles sans inscription.',
     },
     {
-      question: 'Quelles questions peut-on poser en voyance amoureuse ?',
-      answer: 'Toutes celles qui vous empêchent de dormir. M\'aime-t-il vraiment ? Va-t-elle revenir ? Quand vais-je rencontrer quelqu\'un ? Mon couple survivra-t-il à cette crise ? Est-il fidèle ? Le tarot répond aussi aux questions de timing et de compatibilité. Une astuce : plus votre question est précise, meilleure sera la réponse. "Que ressent-il pour moi en ce moment ?" donnera une lecture bien plus riche que "Est-ce que ça va marcher entre nous ?" qui reste trop vague pour une analyse fine.',
+      question: 'Mes consultations sont-elles confidentielles ?',
+      answer: 'Oui, totalement. Vos consultations restent strictement privées. Aucune donnée personnelle n\'est partagée avec des tiers, et votre historique de consultation n\'est accessible qu\'à vous. Nous respectons le RGPD et les normes européennes de protection des données.',
     },
     {
-      question: 'Quelle est la différence entre un voyant amour et une voyante amour ?',
-      answer: 'Aucune différence de compétence. Le don de voyance n\'a rien à voir avec le genre du praticien. Ce qui compte : la spécialisation en questions sentimentales, l\'expérience en guidance amoureuse, et la maîtrise des supports divinatoires. Certaines personnes se sentent plus à l\'aise pour aborder des sujets intimes avec une femme, d\'autres avec un homme. C\'est purement une question de confort personnel. Choisissez selon votre ressenti et les retours d\'autres consultants.',
+      question: 'Quelle différence entre les guidances gratuites et une consultation privée ?',
+      answer: 'Nos guidances gratuites sont des analyses générales par situation (reconquête, rupture, sentiments...) qui vous donnent des repères et des conseils basés sur le tarot. Une consultation privée est un échange individuel avec un voyant qui analyse VOTRE situation spécifique : les sentiments en jeu, les blocages, le timing. C\'est la différence entre lire un guide et avoir un GPS personnalisé.',
     },
     {
-      question: 'Comment se déroule une consultation voyance amour ?',
-      answer: 'Vous n\'avez pas besoin de tout raconter. Un bon voyant capte les énergies dès les premières secondes. Concrètement : vous exposez brièvement votre situation, le voyant choisit le support adapté (tarot pour l\'analyse détaillée, clairvoyance pour les ressentis directs, astrologie pour le long terme), puis il vous transmet ce qu\'il perçoit. La séance dure 20 à 40 minutes en moyenne. Vous repartez avec des réponses claires et des pistes d\'action concrètes. Si un voyant reste flou après 15 minutes, changez de praticien.',
+      question: 'Peut-on consulter un voyant VoyantLove par téléphone ou par chat ?',
+      answer: 'Oui, nos voyants sont disponibles par téléphone et par chat en ligne. Choisissez le mode qui vous met le plus à l\'aise. La qualité de la lecture est identique quel que soit le canal — ce qui compte, c\'est la connexion énergétique entre vous et le voyant, pas le support technique.',
     },
   ]);
 
@@ -71,10 +71,10 @@ export default function HomePage() {
             💜 VoyantLove
           </h1>
           <p className="text-2xl mb-3 opacity-95 font-semibold">
-            Voyance Amoureuse Spécialisée
+            Vos Voyants Spécialisés en Amour
           </p>
           <p className="text-lg mb-8 max-w-2xl mx-auto opacity-90">
-            Reconquête, sentiments, rencontre, rupture — nos voyants spécialisés en amour vous guident avec le tarot, l&apos;astrologie et la clairvoyance.
+            Reconquête, sentiments, rencontre, rupture — consultez un voyant expert qui se consacre exclusivement aux questions du cœur.
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
             <DynamicCTAButton
@@ -251,142 +251,44 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Voyant Amour - Anchor content section for primary keyword */}
+      {/* Why VoyantLove - Brand differentiation section */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-8">
-            Qu'est-ce qu'un Voyant Amour ?
+            Pourquoi Choisir VoyantLove ?
           </h2>
-          <p className="text-lg font-semibold text-gray-800 mb-6 text-center max-w-3xl mx-auto">
-            Un <strong>voyant amour</strong> est un praticien de la <strong>voyance sentimentale</strong> qui décrypte, interprète et éclaire les dynamiques invisibles de votre vie amoureuse grâce au tarot, à la clairvoyance et à l'astrologie.
-          </p>
-          <div className="bg-purple-50 border-l-4 border-purple-500 p-6 rounded-lg mb-8">
-            <p className="text-lg leading-relaxed">
-              Contrairement à un voyant généraliste, le <strong>voyant spécialisé amour</strong> — ou <strong>voyante amour</strong> — consacre sa pratique exclusivement aux problématiques du cœur : sentiments, compatibilité, reconquête, rupture et rencontre. Il guide, accompagne et analyse votre situation pour vous aider à <Link href="/sentiments/maime-t-il-elle" className="text-purple-600 hover:text-purple-800 underline font-medium">décrypter les sentiments de l'autre</Link> ou à <Link href="/reconquete/va-t-il-elle-revenir" className="text-purple-600 hover:text-purple-800 underline font-medium">anticiper un retour</Link>. Chaque <strong>consultation voyance amour</strong> apporte clarté, apaisement et direction concrète.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-6 mb-12">
-            <div className="bg-gray-50 rounded-xl p-6 text-center">
-              <div className="text-3xl mb-3">🔮</div>
-              <h3 className="font-bold text-lg mb-2">Voyance Sentimentale</h3>
-              <p className="text-gray-600 text-sm">Le <strong>voyant amour</strong> analyse les énergies de votre relation par <strong>tarot</strong>, <strong>clairvoyance</strong> ou <strong>astrologie</strong> pour révéler les sentiments cachés.</p>
-            </div>
-            <div className="bg-gray-50 rounded-xl p-6 text-center">
-              <div className="text-3xl mb-3">💜</div>
-              <h3 className="font-bold text-lg mb-2">Guidance Personnalisée</h3>
-              <p className="text-gray-600 text-sm">Chaque <strong>consultation voyance amour</strong> est unique : le voyant adapte sa lecture à votre situation sentimentale spécifique et vos questions.</p>
-            </div>
-            <div className="bg-gray-50 rounded-xl p-6 text-center">
-              <div className="text-3xl mb-3">⭐</div>
-              <h3 className="font-bold text-lg mb-2">Expertise Reconnue</h3>
-              <p className="text-gray-600 text-sm">Nos <strong>voyants spécialisés amour</strong> comptent des années d'expérience en <strong>voyance amoureuse</strong> avec des milliers de consultations réussies.</p>
-            </div>
-          </div>
-
-          {/* Session walkthrough */}
-          <h3 className="text-2xl font-bold text-gray-900 mb-4">Comment se Déroule une Séance avec un Voyant Amour ?</h3>
-          <p className="text-gray-700 leading-relaxed mb-4">
-            Une consultation avec un <strong>voyant amour</strong> commence par un échange sur votre situation sentimentale. Vous n'avez pas besoin de tout raconter — un voyant expérimenté capte les énergies dès les premières secondes. Il ou elle pose peu de questions et commence rapidement à vous transmettre ce qu'il perçoit : les émotions de l'autre personne, les blocages dans la relation, et les événements à venir.
-          </p>
-          <p className="text-gray-700 leading-relaxed mb-8">
-            Le voyant utilise ensuite un support divinatoire — <strong>tarot de Marseille</strong>, oracle ou clairvoyance pure — pour approfondir l'analyse. Chaque carte tirée apporte une information spécifique : les sentiments réels, le timing d'un événement, ou les obstacles à lever. La séance dure en moyenne 20 à 40 minutes et se termine par des <strong>conseils concrets</strong> adaptés à votre situation. Pas de généralités : des réponses personnalisées à vos questions précises.
+          <p className="text-lg text-gray-800 mb-10 text-center max-w-3xl mx-auto">
+            VoyantLove n&apos;est pas une plateforme de voyance généraliste. Chaque voyant de notre équipe est spécialisé en questions sentimentales — c&apos;est notre seul métier.
           </p>
 
-          {/* Singles vs couples */}
-          <h3 className="text-2xl font-bold text-gray-900 mb-4">Voyant Amour pour Célibataires</h3>
-          <p className="text-gray-700 leading-relaxed mb-4">
-            Si vous êtes célibataire, un <strong>voyant spécialisé amour</strong> peut vous aider sur plusieurs plans : <Link href="/nouvelle-rencontre/quand-rencontre-amour" className="text-purple-600 hover:text-purple-800 underline font-medium">quand allez-vous rencontrer quelqu'un</Link>, quel profil correspond à votre chemin de vie, et quels blocages émotionnels (peur de l'abandon, schémas répétitifs, blessures non guéries) retardent inconsciemment cette rencontre. Le tarot révèle aussi le contexte probable — en ligne, par des amis, au travail — pour que vous soyez au bon endroit au bon moment.
-          </p>
-
-          <h3 className="text-2xl font-bold text-gray-900 mb-4">Voyant Amour pour Couples</h3>
-          <p className="text-gray-700 leading-relaxed mb-8">
-            En couple, les questions sont différentes : <Link href="/sentiments/maime-t-il-elle" className="text-purple-600 hover:text-purple-800 underline font-medium">m'aime-t-il/elle encore ?</Link>, y a-t-il quelqu'un d'autre ?, <Link href="/crise-couple" className="text-purple-600 hover:text-purple-800 underline font-medium">comment surmonter cette crise ?</Link>, notre couple a-t-il un avenir ? Un voyant amour capte les dynamiques entre les deux partenaires et identifie les non-dits, les frustrations accumulées et les chemins de réconciliation possibles. Il ne juge pas — il éclaire ce que chacun ressent vraiment.
-          </p>
-
-          {/* What questions to ask */}
-          <h3 className="text-2xl font-bold text-gray-900 mb-4">Quelles Questions Poser à un Voyant Amour ?</h3>
-          <p className="text-gray-700 leading-relaxed mb-4">
-            Les meilleures consultations commencent par des questions précises. Voici les questions les plus fréquentes que nos consultants posent à un <strong>voyant amour</strong> :
-          </p>
-          <div className="grid md:grid-cols-2 gap-3 mb-8">
-            <div className="bg-purple-50 rounded-lg p-3">
-              <p className="text-gray-800 text-sm">Que ressent-il/elle vraiment pour moi ?</p>
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
+            <div className="bg-purple-50 rounded-xl p-6">
+              <div className="text-3xl mb-3">🎯</div>
+              <h3 className="font-bold text-lg mb-2">100% Spécialisés Amour</h3>
+              <p className="text-gray-600 text-sm">Pas de voyance généraliste ici. Nos praticiens ne traitent que les problématiques du cœur : reconquête, sentiments, rupture, rencontre, crise de couple.</p>
             </div>
-            <div className="bg-purple-50 rounded-lg p-3">
-              <p className="text-gray-800 text-sm"><Link href="/reconquete/va-t-il-elle-revenir" className="text-purple-600 hover:text-purple-800 underline">Mon ex va-t-il/elle revenir ?</Link></p>
+            <div className="bg-purple-50 rounded-xl p-6">
+              <div className="text-3xl mb-3">✅</div>
+              <h3 className="font-bold text-lg mb-2">Voyants Sélectionnés</h3>
+              <p className="text-gray-600 text-sm">Chaque voyant passe un processus de vérification rigoureux : minimum 5 ans d&apos;expérience, avis clients authentiques et engagement éthique.</p>
             </div>
-            <div className="bg-purple-50 rounded-lg p-3">
-              <p className="text-gray-800 text-sm"><Link href="/nouvelle-rencontre/quand-rencontre-amour" className="text-purple-600 hover:text-purple-800 underline">Quand vais-je rencontrer l'amour ?</Link></p>
+            <div className="bg-purple-50 rounded-xl p-6">
+              <div className="text-3xl mb-3">💬</div>
+              <h3 className="font-bold text-lg mb-2">Réponses Franches</h3>
+              <p className="text-gray-600 text-sm">Nos voyants vous disent ce qu&apos;ils voient, même quand c&apos;est difficile à entendre. Zéro promesses irréalistes, zéro vente de rituels.</p>
             </div>
-            <div className="bg-purple-50 rounded-lg p-3">
-              <p className="text-gray-800 text-sm">Est-il/elle fidèle ?</p>
-            </div>
-            <div className="bg-purple-50 rounded-lg p-3">
-              <p className="text-gray-800 text-sm">Notre couple a-t-il un avenir ?</p>
-            </div>
-            <div className="bg-purple-50 rounded-lg p-3">
-              <p className="text-gray-800 text-sm">Sommes-nous compatibles ?</p>
-            </div>
-            <div className="bg-purple-50 rounded-lg p-3">
-              <p className="text-gray-800 text-sm">Pourquoi est-il/elle distant(e) ?</p>
-            </div>
-            <div className="bg-purple-50 rounded-lg p-3">
-              <p className="text-gray-800 text-sm"><Link href="/reconquete/reconquerir-son-ex" className="text-purple-600 hover:text-purple-800 underline">Comment reconquérir mon ex ?</Link></p>
+            <div className="bg-purple-50 rounded-xl p-6">
+              <div className="text-3xl mb-3">🔒</div>
+              <h3 className="font-bold text-lg mb-2">Confidentialité Totale</h3>
+              <p className="text-gray-600 text-sm">Vos consultations restent strictement privées. Aucune donnée partagée, aucun historique accessible à des tiers.</p>
             </div>
           </div>
 
-          {/* Divination methods */}
-          <h3 className="text-2xl font-bold text-gray-900 mb-4">Les Méthodes de Voyance Amoureuse</h3>
-          <p className="text-gray-700 leading-relaxed mb-4">
-            Un <strong>voyant amour</strong> utilise différents supports selon votre question et sa sensibilité. Chaque méthode apporte un éclairage complémentaire :
-          </p>
-          <div className="space-y-4 mb-8">
-            <div className="bg-gray-50 rounded-lg p-4">
-              <p className="font-semibold text-gray-900 mb-1">Tarot de Marseille</p>
-              <p className="text-gray-700 text-sm">Le support le plus utilisé en voyance amour. Les 22 arcanes majeurs — en particulier <strong>L'Amoureux</strong>, <strong>Le Soleil</strong> et <strong>L'Étoile</strong> — révèlent les dynamiques sentimentales, les obstacles et l'évolution probable de votre relation. L'Amoureux indique un choix sentimental imminent, Le Soleil annonce une période de bonheur et d'harmonie, L'Étoile symbolise l'espoir et le renouveau après une épreuve.</p>
-            </div>
-            <div className="bg-gray-50 rounded-lg p-4">
-              <p className="font-semibold text-gray-900 mb-1">Clairvoyance Pure</p>
-              <p className="text-gray-700 text-sm">Certains voyants n'utilisent aucun support — ils captent directement les émotions et les images liées à votre situation. Cette méthode est particulièrement efficace pour ressentir ce que l'autre personne éprouve en ce moment.</p>
-            </div>
-            <div className="bg-gray-50 rounded-lg p-4">
-              <p className="font-semibold text-gray-900 mb-1">Astrologie Amoureuse</p>
-              <p className="text-gray-700 text-sm">L'analyse des <strong>transits de Vénus et Jupiter</strong> dans vos maisons relationnelles permet de déterminer les périodes les plus favorables aux rencontres et à l'épanouissement amoureux. La <Link href="/nouvelle-rencontre" className="text-purple-600 hover:text-purple-800 underline font-medium">compatibilité astrologique</Link> entre deux personnes révèle les forces et les zones de tension de la relation.</p>
-            </div>
-            <div className="bg-gray-50 rounded-lg p-4">
-              <p className="font-semibold text-gray-900 mb-1">Numérologie Sentimentale</p>
-              <p className="text-gray-700 text-sm">Votre chemin de vie et celui de votre partenaire (ou futur partenaire) révèlent la compatibilité profonde et les cycles amoureux que vous traversez. La numérologie identifie les années personnelles favorables à l'amour.</p>
-            </div>
-          </div>
-
-          {/* When to consult */}
-          <h3 className="text-2xl font-bold text-gray-900 mb-4">Dans Quel Cas Consulter un Voyant Amour ?</h3>
-          <p className="text-gray-700 leading-relaxed mb-4">
-            Une consultation avec un <strong>voyant amour</strong> est particulièrement utile dans ces situations :
-          </p>
-          <div className="grid md:grid-cols-2 gap-4 mb-4">
-            <div className="bg-purple-50 rounded-lg p-4">
-              <p className="font-semibold text-gray-900 mb-1">Doute sur les sentiments</p>
-              <p className="text-gray-700 text-sm">Vous ne savez pas ce que l'autre ressent et l'incertitude vous empêche d'avancer.</p>
-            </div>
-            <div className="bg-purple-50 rounded-lg p-4">
-              <p className="font-semibold text-gray-900 mb-1">Après une rupture</p>
-              <p className="text-gray-700 text-sm">Vous voulez savoir si un <Link href="/reconquete" className="text-purple-600 hover:text-purple-800 underline">retour est possible</Link> ou comment tourner la page.</p>
-            </div>
-            <div className="bg-purple-50 rounded-lg p-4">
-              <p className="font-semibold text-gray-900 mb-1">Envie de rencontrer quelqu'un</p>
-              <p className="text-gray-700 text-sm">Célibataire depuis longtemps, vous cherchez à savoir <Link href="/nouvelle-rencontre" className="text-purple-600 hover:text-purple-800 underline">quand et comment</Link> l'amour arrivera.</p>
-            </div>
-            <div className="bg-purple-50 rounded-lg p-4">
-              <p className="font-semibold text-gray-900 mb-1">Crise de couple</p>
-              <p className="text-gray-700 text-sm">Disputes, distance, infidélité suspectée — vous avez besoin de comprendre ce qui se passe vraiment.</p>
-            </div>
-          </div>
-          <div className="bg-amber-50 border-l-4 border-amber-500 p-6 rounded-lg mb-8">
-            <p className="text-gray-800 leading-relaxed">
-              <strong>Conseil important :</strong> une bonne consultation suffit à éclairer votre situation. Évitez de multiplier les voyants ou de consulter trop souvent — cela crée de la confusion plutôt que de la clarté. Choisissez un <strong>voyant amour</strong> de confiance et suivez ses conseils dans la durée.
-            </p>
+          <div className="text-center">
+            <p className="text-gray-600 mb-4">Vous voulez en savoir plus sur nos méthodes et notre approche ?</p>
+            <Link href="/voyance-amour" className="text-purple-600 hover:text-purple-800 underline font-semibold">
+              Découvrir notre approche de la voyance amoureuse →
+            </Link>
           </div>
         </div>
       </section>
@@ -472,31 +374,31 @@ export default function HomePage() {
       {/* FAQ Section */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-12">Questions Fréquentes sur la Voyance Amoureuse</h2>
+          <h2 className="text-4xl font-bold text-center mb-12">Questions Fréquentes sur VoyantLove</h2>
           <div className="space-y-6">
             <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Qu'est-ce que la voyance amoureuse et comment fonctionne-t-elle ?</h3>
-              <p className="text-gray-700 leading-relaxed">Oubliez l'image de la boule de cristal. La <strong>voyance amoureuse</strong> moderne, c'est un voyant qui utilise le <strong>tarot</strong>, la <strong>clairvoyance</strong> ou l'<strong>astrologie</strong> pour décrypter les énergies de votre situation sentimentale. Ce qu'il capte : les sentiments réels de l'autre personne, les blocages invisibles dans votre relation, les fenêtres de timing favorables. La voyance ne prédit pas un futur gravé dans le marbre. Elle éclaire les probabilités en fonction de vos choix actuels et vous donne les clés pour décider en conscience.</p>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Comment fonctionne VoyantLove ?</h3>
+              <p className="text-gray-700 leading-relaxed">VoyantLove est une plateforme de consultation avec des voyants spécialisés en questions sentimentales. Vous choisissez votre situation (reconquête, sentiments, rupture, rencontre, crise de couple), explorez nos guidances gratuites, puis réservez une consultation privée avec un voyant expert si vous souhaitez une analyse personnalisée.</p>
             </div>
             <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">La voyance amoureuse par tarot est-elle fiable ?</h3>
-              <p className="text-gray-700 leading-relaxed">Tout dépend de qui tient les cartes. Un jeu de <strong>tarot</strong> entre les mains d'un débutant, c'est comme un stéthoscope entre les mains d'un non-médecin — l'outil est bon, mais sans expertise il ne sert à rien. Les 78 arcanes (22 majeurs, 56 mineurs) offrent une palette incroyablement nuancée pour lire les sentiments, les tensions et les évolutions possibles. Le critère essentiel : un <strong>tarologue honnête</strong> qui vous dit ce qu'il voit, même quand c'est difficile à entendre, plutôt que ce que vous espérez.</p>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Comment sont sélectionnés les voyants VoyantLove ?</h3>
+              <p className="text-gray-700 leading-relaxed">Chaque voyant passe un processus de sélection rigoureux. Nous vérifions un minimum de <strong>5 ans d&apos;expérience</strong> en guidance sentimentale, la qualité des <strong>avis clients</strong>, et l&apos;engagement à respecter notre charte éthique : pas de promesses irréalistes, pas de vente de rituels, et une posture bienveillante.</p>
             </div>
             <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Comment choisir un bon voyant spécialisé en amour ?</h3>
-              <p className="text-gray-700 leading-relaxed">Quatre signes qui ne trompent pas : il pose peu de questions et capte votre situation rapidement. Il donne des détails précis, pas des généralités. Il est franc même quand la vérité dérange. Et surtout, il ne crée jamais de dépendance. Vérifiez les <strong>avis clients</strong> et l'expérience (minimum 5 ans de pratique). Fuyez ceux qui promettent des retours garantis ou qui vendent des rituels payants en supplément. Un vrai professionnel vous guide et vous rend autonome — il ne cherche pas à vous faire revenir chaque semaine.</p>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Combien coûte une consultation sur VoyantLove ?</h3>
+              <p className="text-gray-700 leading-relaxed">Les tarifs varient selon le voyant choisi et la durée de la consultation. Nous offrons <strong>10 minutes gratuites</strong> pour découvrir le service. Nos guidances en ligne (reconquête, sentiments, rupture, etc.) sont entièrement gratuites et accessibles sans inscription.</p>
             </div>
             <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Quelles questions peut-on poser en voyance amoureuse ?</h3>
-              <p className="text-gray-700 leading-relaxed">Toutes celles qui vous empêchent de dormir. <strong>M'aime-t-il</strong> vraiment ? <strong>Va-t-elle revenir</strong> ? Quand vais-je <strong>rencontrer</strong> quelqu'un ? Mon couple survivra-t-il à cette crise ? Est-il fidèle ? Le tarot répond aussi aux questions de timing et de <strong>compatibilité</strong>. Une astuce : plus votre question est précise, meilleure sera la réponse. "Que ressent-il pour moi en ce moment ?" donnera une lecture bien plus riche que "Est-ce que ça va marcher entre nous ?" qui reste trop vague pour une <strong>analyse</strong> fine.</p>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Mes consultations sont-elles confidentielles ?</h3>
+              <p className="text-gray-700 leading-relaxed">Oui, totalement. Vos consultations restent strictement privées. Aucune donnée personnelle n&apos;est partagée avec des tiers, et votre historique de consultation n&apos;est accessible qu&apos;à vous. Nous respectons le <strong>RGPD</strong> et les normes européennes de protection des données.</p>
             </div>
             <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Quelle est la différence entre un voyant amour et une voyante amour ?</h3>
-              <p className="text-gray-700 leading-relaxed">Aucune différence de compétence. Le don de voyance n'a rien à voir avec le genre du praticien. Ce qui compte : la spécialisation en <strong>questions amoureuses</strong>, l'expérience en <strong>guidance sentimentale</strong>, et la maîtrise des supports divinatoires. Certaines personnes se sentent plus à l'aise pour aborder des sujets intimes avec une femme, d'autres avec un homme. C'est purement une question de confort personnel. Choisissez selon votre ressenti et les retours d'autres consultants.</p>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Quelle différence entre les guidances gratuites et une consultation privée ?</h3>
+              <p className="text-gray-700 leading-relaxed">Nos guidances gratuites sont des analyses générales par situation qui vous donnent des repères et des conseils. Une <strong>consultation privée</strong> est un échange individuel avec un voyant qui analyse votre situation spécifique : les sentiments en jeu, les blocages, le timing. C&apos;est la différence entre lire un guide et avoir un GPS personnalisé.</p>
             </div>
             <div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Comment se déroule une consultation voyance amour ?</h3>
-              <p className="text-gray-700 leading-relaxed">Vous n'avez pas besoin de tout raconter. Un bon <strong>voyant</strong> capte les énergies dès les premières secondes. Concrètement : vous exposez brièvement votre situation, le voyant choisit le support adapté (<strong>tarot</strong> pour l'analyse détaillée, <strong>clairvoyance</strong> pour les ressentis directs, <strong>astrologie</strong> pour le long terme), puis il vous transmet ce qu'il perçoit. La séance dure 20 à 40 minutes en moyenne. Vous repartez avec des réponses claires et des pistes d'action concrètes. Si un voyant reste flou après 15 minutes, changez de praticien.</p>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Peut-on consulter par téléphone ou par chat ?</h3>
+              <p className="text-gray-700 leading-relaxed">Oui, nos voyants sont disponibles par <strong>téléphone</strong> et par <strong>chat en ligne</strong>. Choisissez le mode qui vous met le plus à l&apos;aise. La qualité de la lecture est identique quel que soit le canal — ce qui compte, c&apos;est la connexion entre vous et le voyant.</p>
             </div>
           </div>
         </div>
@@ -534,8 +436,9 @@ export default function HomePage() {
       {/* Footer */}
       <footer className="bg-gray-800 text-white py-8 px-4">
         <div className="max-w-6xl mx-auto text-center">
-          <p className="mb-4">© 2026 VoyantLove.fr - Voyance Amoureuse Spécialisée</p>
+          <p className="mb-4">© 2026 VoyantLove.fr — Vos Voyants Spécialisés en Amour</p>
           <div className="flex gap-6 justify-center text-sm text-gray-400">
+            <Link href="/a-propos" className="hover:text-white">À propos</Link>
             <Link href="/mentions-legales" className="hover:text-white">Mentions légales</Link>
             <Link href="/confidentialite" className="hover:text-white">Confidentialité</Link>
             <Link href="/contact" className="hover:text-white">Contact</Link>
