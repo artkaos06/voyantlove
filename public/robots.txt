@@ -39,11 +39,12 @@ User-agent: GoogleOther-Video
 Allow: /
 
 # Block admin/system paths
-Disallow: /_next/
 Disallow: /api/
+Disallow: /admin/
+Disallow: /lp/
 
 # Sitemap location
-Sitemap: https://voyantlove.fr/sitemap.xml
+Sitemap: https://www.voyantlove.fr/sitemap.xml
 
 # Host preference
-Host: https://voyantlove.fr
+Host: https://www.voyantlove.fr
