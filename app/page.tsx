@@ -120,6 +120,67 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* How it works */}
+      <section id="about" className="bg-gray-50 py-16 px-4">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-12">
+            Comment fonctionne VoyantLove ?
+          </h2>
+
+          <div className="space-y-8">
+            <div className="flex gap-6 items-start">
+              <div className="flex-shrink-0 w-12 h-12 bg-brand-purple text-white rounded-full flex items-center justify-center font-bold text-xl">
+                1
+              </div>
+              <div>
+                <h3 className="text-xl font-bold mb-2">Choisissez votre situation</h3>
+                <p className="text-gray-600">
+                  Sélectionnez la problématique amoureuse qui correspond à votre vécu : reconquête, rencontre, doute, crise...
+                </p>
+              </div>
+            </div>
+
+            <div className="flex gap-6 items-start">
+              <div className="flex-shrink-0 w-12 h-12 bg-brand-purple text-white rounded-full flex items-center justify-center font-bold text-xl">
+                2
+              </div>
+              <div>
+                <h3 className="text-xl font-bold mb-2">Découvrez la guidance tarot</h3>
+                <p className="text-gray-600">
+                  Chaque page contient une analyse complète : timing idéal, étapes à suivre, erreurs à éviter, selon les cartes.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex gap-6 items-start">
+              <div className="flex-shrink-0 w-12 h-12 bg-brand-purple text-white rounded-full flex items-center justify-center font-bold text-xl">
+                3
+              </div>
+              <div>
+                <h3 className="text-xl font-bold mb-2">Consultez un voyant si besoin</h3>
+                <p className="text-gray-600">
+                  Pour une guidance 100% personnalisée, réservez une consultation privée avec nos voyants spécialisés en amour.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Featured Voyants Section */}
+      <section className="py-16 px-4 bg-gray-50">
+        <div className="max-w-6xl mx-auto">
+          <VoyantRecommendations
+            topic="sentiments"
+            title="🔮 Nos Voyants Experts en Amour"
+            subtitle="Voyants spécialisés en guidance amoureuse avec des milliers de consultations réussies. Disponibles maintenant pour vous accompagner."
+            limit={3}
+            showOnlineFirst={true}
+            source="homepage-featured"
+          />
+        </div>
+      </section>
+
       {/* E-E-A-T Signal */}
       <div className="max-w-6xl mx-auto px-4 pt-8">
         <EEATSignal colorScheme="purple" method="Tarot, clairvoyance et astrologie amoureuse" />
@@ -290,67 +351,6 @@ export default function HomePage() {
               Découvrir notre approche de la voyance amoureuse →
             </Link>
           </div>
-        </div>
-      </section>
-
-      {/* How it works */}
-      <section id="about" className="bg-gray-50 py-16 px-4">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-12">
-            Comment fonctionne VoyantLove ?
-          </h2>
-
-          <div className="space-y-8">
-            <div className="flex gap-6 items-start">
-              <div className="flex-shrink-0 w-12 h-12 bg-brand-purple text-white rounded-full flex items-center justify-center font-bold text-xl">
-                1
-              </div>
-              <div>
-                <h3 className="text-xl font-bold mb-2">Choisissez votre situation</h3>
-                <p className="text-gray-600">
-                  Sélectionnez la problématique amoureuse qui correspond à votre vécu : reconquête, rencontre, doute, crise...
-                </p>
-              </div>
-            </div>
-
-            <div className="flex gap-6 items-start">
-              <div className="flex-shrink-0 w-12 h-12 bg-brand-purple text-white rounded-full flex items-center justify-center font-bold text-xl">
-                2
-              </div>
-              <div>
-                <h3 className="text-xl font-bold mb-2">Découvrez la guidance tarot</h3>
-                <p className="text-gray-600">
-                  Chaque page contient une analyse complète : timing idéal, étapes à suivre, erreurs à éviter, selon les cartes.
-                </p>
-              </div>
-            </div>
-
-            <div className="flex gap-6 items-start">
-              <div className="flex-shrink-0 w-12 h-12 bg-brand-purple text-white rounded-full flex items-center justify-center font-bold text-xl">
-                3
-              </div>
-              <div>
-                <h3 className="text-xl font-bold mb-2">Consultez un voyant si besoin</h3>
-                <p className="text-gray-600">
-                  Pour une guidance 100% personnalisée, réservez une consultation privée avec nos voyants spécialisés en amour.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Featured Voyants Section */}
-      <section className="py-16 px-4 bg-gray-50">
-        <div className="max-w-6xl mx-auto">
-          <VoyantRecommendations
-            topic="sentiments"
-            title="🔮 Nos Voyants Experts en Amour"
-            subtitle="Voyants spécialisés en guidance amoureuse avec des milliers de consultations réussies. Disponibles maintenant pour vous accompagner."
-            limit={3}
-            showOnlineFirst={true}
-            source="homepage-featured"
-          />
         </div>
       </section>
 
