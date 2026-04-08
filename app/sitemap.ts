@@ -93,6 +93,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // Legal pages (low priority)
   const legalPages = [
+    '/a-propos',
     '/mentions-legales',
     '/confidentialite',
     '/contact',
