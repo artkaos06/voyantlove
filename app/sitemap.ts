@@ -7,6 +7,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Hub pages (high priority)
   const hubs = [
     { slug: '', priority: 1.0 },
+    { slug: '/voyance-amour', priority: 0.95 },
     { slug: '/reconquete', priority: 0.9 },
     { slug: '/rupture', priority: 0.9 },
     { slug: '/nouvelle-rencontre', priority: 0.9 },

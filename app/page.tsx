@@ -9,9 +9,9 @@ import DynamicCTAButton from '@/components/DynamicCTAButton';
 
 export const metadata: Metadata = {
   title: {
-    absolute: 'Voyant Spécialisé Amour — Voyance Amoureuse en Ligne | VoyantLove',
+    absolute: 'VoyantLove — Voyance Amoureuse Spécialisée',
   },
-  description: 'Consultez un voyant spécialisé amour : reconquête, sentiments, rencontre, rupture. Prédictions tarot et clairvoyance. 10 min offertes — réponses immédiates.',
+  description: 'VoyantLove : votre guide en voyance amoureuse. Reconquête, sentiments, rencontre, rupture — consultez un voyant spécialisé amour. 10 min offertes.',
   alternates: { canonical: 'https://www.voyantlove.fr/' },
 };
 
@@ -67,12 +67,14 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-brand-purple to-brand-purple-dark text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="text-lg font-semibold opacity-80 mb-3">💜 VoyantLove</div>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Voyant Amour : Voyance Amoureuse Spécialisée
+          <h1 className="text-5xl md:text-6xl font-bold mb-4">
+            💜 VoyantLove
           </h1>
+          <p className="text-2xl mb-3 opacity-95 font-semibold">
+            Voyance Amoureuse Spécialisée
+          </p>
           <p className="text-lg mb-8 max-w-2xl mx-auto opacity-90">
-            Guidance et Tarot pour toutes vos questions sentimentales : reconquête, rencontre, compatibilité, avenir amoureux
+            Reconquête, sentiments, rencontre, rupture — nos voyants spécialisés en amour vous guident avec le tarot, l&apos;astrologie et la clairvoyance.
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
             <DynamicCTAButton
