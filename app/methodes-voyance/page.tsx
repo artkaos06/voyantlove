@@ -69,7 +69,7 @@ export default function MethodesVoyanceHubPage() {
 
         <section className="mb-16">
           <h2 className="text-3xl font-bold mb-8 text-center">🗺️ Nos Méthodes de Voyance</h2>
-          <p className="text-lg font-semibold text-gray-800 mb-4">Les principales méthodes de voyance amoureuse sont le tarot, l&apos;oracle, l&apos;astrologie, le pendule et la consultation par téléphone. Chaque outil offre un éclairage unique sur votre vie sentimentale selon la profondeur d&apos;analyse recherchée.</p>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Les principales méthodes de <Link href="/voyance-amour" className="text-indigo-600 hover:text-indigo-800 underline font-medium">voyance amoureuse</Link> sont le tarot, l&apos;oracle, l&apos;astrologie, le pendule et la consultation par téléphone. Chaque outil offre un éclairage unique sur votre vie sentimentale selon la profondeur d&apos;analyse recherchée.</p>
           <div className="grid md:grid-cols-3 gap-8">
             <Link href="/methodes-voyance/tirage-tarot-amour" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-indigo-500">
               <div className="text-4xl mb-4">🃏</div>

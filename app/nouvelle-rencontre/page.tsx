@@ -93,7 +93,7 @@ export default function NouvelleRencontreHubPage() {
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">Voyance Rencontre : Comment la Voyance Prédit Votre Prochaine Rencontre Amoureuse</h2>
           <p className="text-lg text-gray-700 leading-relaxed mb-4">
-            La <strong>voyance rencontre</strong> est une branche spécialisée de la <Link href="/" className="text-cyan-600 hover:text-cyan-800 underline font-medium">voyance amoureuse</Link> qui se concentre sur une question fondamentale : <strong>quand, où et comment allez-vous rencontrer l'amour ?</strong> Que vous soyez célibataire depuis longtemps, que vous sortiez d'une <Link href="/rupture" className="text-cyan-600 hover:text-cyan-800 underline font-medium">rupture douloureuse</Link>, ou que vous ayez simplement le sentiment que quelque chose approche, un voyant spécialisé en rencontres analyse les énergies qui entourent votre vie sentimentale pour vous donner des réponses concrètes.
+            La <strong>voyance rencontre</strong> est une branche spécialisée de la <Link href="/voyance-amour" className="text-cyan-600 hover:text-cyan-800 underline font-medium">voyance amoureuse</Link> qui se concentre sur une question fondamentale : <strong>quand, où et comment allez-vous rencontrer l'amour ?</strong> Que vous soyez célibataire depuis longtemps, que vous sortiez d'une <Link href="/rupture" className="text-cyan-600 hover:text-cyan-800 underline font-medium">rupture douloureuse</Link>, ou que vous ayez simplement le sentiment que quelque chose approche, un voyant spécialisé en rencontres analyse les énergies qui entourent votre vie sentimentale pour vous donner des réponses concrètes.
           </p>
           <p className="text-gray-700 leading-relaxed mb-4">
             Contrairement à la voyance généraliste, la <strong>voyance sentimentale</strong> dédiée aux rencontres utilise des outils spécifiques : le <strong>tarot des nouvelles rencontres</strong>, l'analyse de vos transits planétaires en maisons relationnelles, et la lecture des blocages émotionnels qui peuvent inconsciemment repousser l'amour. Le voyant ne se contente pas de dire "vous allez rencontrer quelqu'un" — il précise le contexte, le profil de la personne, et les conditions favorables.
@@ -191,7 +191,7 @@ export default function NouvelleRencontreHubPage() {
 
         <section className="mb-16">
           <h2 className="text-3xl font-bold mb-8 text-center">🗺️ Votre Chemin vers l'Amour</h2>
-          <p className="text-lg font-semibold text-gray-800 mb-4">Le tarot et la <Link href="/" className="text-cyan-600 hover:text-cyan-800 underline font-medium">voyance amoureuse</Link> guident chaque étape de votre quête sentimentale, du timing de la rencontre à la reconnaissance de votre âme sœur, en passant par la préparation intérieure et spirituelle.</p>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Le tarot et la <Link href="/voyance-amour" className="text-cyan-600 hover:text-cyan-800 underline font-medium">voyance amoureuse</Link> guident chaque étape de votre quête sentimentale, du timing de la rencontre à la reconnaissance de votre âme sœur, en passant par la préparation intérieure et spirituelle.</p>
           <div className="grid md:grid-cols-2 gap-8">
             <Link href="/nouvelle-rencontre/quand-rencontre-amour" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-cyan-500">
               <div className="text-4xl mb-4">⏰</div>

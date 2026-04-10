@@ -71,7 +71,7 @@ export default function CriseCoupleHubPage() {
 
         <section className="mb-16">
           <h2 className="text-3xl font-bold mb-8 text-center">🗺️ Résoudre les Crises</h2>
-          <p className="text-lg font-semibold text-gray-800 mb-4">Résoudre une crise de couple passe par l'identification du problème central -- infidélité, jalousie, communication ou dépendance -- puis par un travail ciblé. La <Link href="/" className="text-orange-600 hover:text-orange-800 underline font-medium">voyance amoureuse</Link> et le tarot relationnel éclairent les blocages et guident la reconstruction.</p>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Résoudre une crise de couple passe par l'identification du problème central -- infidélité, jalousie, communication ou dépendance -- puis par un travail ciblé. La <Link href="/voyance-amour" className="text-orange-600 hover:text-orange-800 underline font-medium">voyance amoureuse</Link> et le tarot relationnel éclairent les blocages et guident la reconstruction.</p>
           <div className="grid md:grid-cols-3 gap-8">
             <Link href="/crise-couple/infidelite-couple" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-red-500">
               <div className="text-4xl mb-4">💔</div>

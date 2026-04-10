@@ -58,7 +58,7 @@ export default function VoyanceGratuiteAmourHubPage() {
           <Link href="/" className="text-white/80 hover:text-white mb-4 inline-block">&larr; Accueil</Link>
           <h1 className="text-5xl font-bold mb-6">🌟 Voyance Gratuite Amour</h1>
           <p className="text-2xl opacity-95 mb-8">Tirages et Guidance Sentimentale Sans Engagement</p>
-          <p className="text-lg opacity-90 max-w-2xl mx-auto">Découvrez la <strong>voyance amoureuse gratuite</strong> : tarot, oracle et horoscope pour éclairer votre <strong>vie sentimentale</strong> en toute confiance.</p>
+          <p className="text-lg opacity-90 max-w-2xl mx-auto">Découvrez la <Link href="/voyance-amour" className="text-white underline hover:text-white/80 font-medium">voyance amoureuse</Link> gratuite : tarot, oracle et horoscope pour éclairer votre <strong>vie sentimentale</strong> en toute confiance.</p>
         </div>
       </header>
 

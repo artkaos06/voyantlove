@@ -58,7 +58,7 @@ export default function ReconqueteHubPage() {
           <Link href="/" className="text-white/80 hover:text-white mb-4 inline-block">← Accueil</Link>
           <h1 className="text-5xl font-bold mb-6">💜 Reconquête Amoureuse</h1>
           <p className="text-2xl opacity-95 mb-8">Stratégies et Guidance pour Reconquérir votre Ex</p>
-          <p className="text-lg opacity-90 max-w-2xl mx-auto">En <Link href="/" className="text-white underline hover:text-white/80 font-medium">voyance amoureuse</Link>, le tarot révèle si un retour est possible, le timing idéal et les étapes pour maximiser vos chances.</p>
+          <p className="text-lg opacity-90 max-w-2xl mx-auto">En <Link href="/voyance-amour" className="text-white underline hover:text-white/80 font-medium">voyance amoureuse</Link>, le tarot révèle si un retour est possible, le timing idéal et les étapes pour maximiser vos chances.</p>
         </div>
       </header>
 
