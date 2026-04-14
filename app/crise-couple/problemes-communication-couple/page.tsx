@@ -7,16 +7,16 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
 export const metadata: Metadata = {
-  title: 'Problème de Communication dans le Couple : Causes, Solutions et Voyance',
-  description: 'Problème de communication dans le couple ? Causes du manque de dialogue, solutions concrètes et guidance voyance pour reconstruire la connexion et éviter la rupture.',
-  keywords: ['problème de communication couple', 'communication couple difficile', 'problème de communication dans le couple', 'dialogue couple', 'incompréhension couple', 'améliorer communication couple', 'manque de communication'],
+  title: 'Communication Couple Difficile : Causes, Solutions et Guidance Voyance',
+  description: 'Communication couple difficile ? Problème de communication dans le couple, dialogue impossible, incompréhension : causes profondes, solutions concrètes et guidance voyance.',
+  keywords: ['communication couple difficile', 'problème de communication couple', 'problème de communication dans le couple', 'dialogue couple', 'quand le dialogue devient impossible', 'améliorer communication couple'],
   alternates: { canonical: 'https://www.voyantlove.fr/crise-couple/problemes-communication-couple/' },
 };
 
 export default function ProblemesCommunicationCouplePage() {
   const articleSchema = getArticleSchema({
-    title: 'Problème de Communication dans le Couple : Causes, Solutions et Voyance',
-    description: 'Problème de communication dans le couple ? Causes du manque de dialogue, solutions concrètes et guidance voyance pour reconstruire la connexion et éviter la rupture.',
+    title: 'Communication Couple Difficile : Causes, Solutions et Guidance Voyance',
+    description: 'Communication couple difficile ? Problème de communication dans le couple, dialogue impossible, incompréhension : causes profondes, solutions concrètes et guidance voyance.',
     url: 'https://www.voyantlove.fr/crise-couple/problemes-communication-couple/',
     datePublished: '2026-02-09',
     dateModified: new Date().toISOString().split('T')[0],

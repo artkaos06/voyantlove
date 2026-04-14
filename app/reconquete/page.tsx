@@ -111,6 +111,11 @@ export default function ReconqueteHubPage() {
               <h3 className="text-xl font-bold mb-2">Silence Radio</h3>
               <p className="text-gray-600 text-sm">La stratégie du silence radio pour déclencher le manque et le retour.</p>
             </Link>
+            <Link href="/reconquete/ex-revient-silence-radio" className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition border-t-4 border-rose-500">
+              <div className="text-3xl mb-3">📱</div>
+              <h3 className="text-xl font-bold mb-2">Ex qui Recontacte</h3>
+              <p className="text-gray-600 text-sm">Il/elle revient après le silence radio : signes, réactions et premier message.</p>
+            </Link>
           </div>
         </section>
 

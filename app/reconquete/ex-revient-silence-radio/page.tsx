@@ -7,26 +7,26 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
 export const metadata: Metadata = {
-  title: 'Ex qui Revient Après Silence Radio : Signes, Réactions et Messages',
-  description: 'Votre ex revient après le silence radio ? Signes de son retour, comment réagir et quel premier message envoyer. Conseils voyance pour ne pas tout gâcher.',
-  keywords: ['ex recontacte après silence', 'silence radio efficace', 'ex qui revient après no contact', 'reconquête amoureuse', 'retour ex'],
+  title: 'Il/Elle Me Recontacte Après le Silence Radio : Signes et Réactions',
+  description: 'Il ou elle vous recontacte après le silence radio ? Signes qu\'un ex revient, comment réagir, quel message envoyer. Guide complet pour ne pas tout gâcher.',
+  keywords: ['il me recontacte après silence radio', 'elle me recontacte après silence radio', 'ex qui revient après silence radio', 'homme qui revient après silence', 'silence radio reconquête'],
   alternates: { canonical: 'https://www.voyantlove.fr/reconquete/ex-revient-silence-radio/' },
 };
 
 export default function ExRevientSilenceRadioPage() {
   const articleSchema = getArticleSchema({
-    title: 'Ex qui Revient Après Silence Radio : Signes, Réactions et Messages',
-    description: 'Votre ex revient après le silence radio ? Signes de son retour, comment réagir et quel premier message envoyer. Conseils voyance pour ne pas tout gâcher.',
+    title: 'Il/Elle Me Recontacte Après le Silence Radio : Signes et Réactions',
+    description: 'Il ou elle vous recontacte après le silence radio ? Signes qu\'un ex revient, comment réagir, quel message envoyer. Guide complet pour ne pas tout gâcher.',
     url: 'https://www.voyantlove.fr/reconquete/ex-revient-silence-radio/',
     datePublished: '2026-02-09',
     dateModified: new Date().toISOString().split('T')[0],
-    keywords: ['ex revient silence radio', 'silence radio efficace', 'ex qui revient après no contact', 'reconquête amoureuse', 'retour ex'],
+    keywords: ['il me recontacte après silence radio', 'elle me recontacte après silence radio', 'ex qui revient après silence radio', 'homme qui revient après silence', 'silence radio reconquête'],
   });
 
   const breadcrumbSchema = getBreadcrumbSchema([
     { name: 'Accueil', url: 'https://www.voyantlove.fr' },
     { name: 'Reconquête Amoureuse', url: 'https://www.voyantlove.fr/reconquete/' },
-    { name: 'Ex qui Recontacte Après un Silence', url: 'https://www.voyantlove.fr/reconquete/ex-revient-silence-radio/' },
+    { name: 'Il/Elle Me Recontacte Après Silence Radio', url: 'https://www.voyantlove.fr/reconquete/ex-revient-silence-radio/' },
   ]);
 
   const authorSchema = getAuthorSchema();
@@ -92,8 +92,8 @@ export default function ExRevientSilenceRadioPage() {
       <header className="bg-gradient-to-r from-purple-600 via-pink-500 to-rose-500 text-white py-16 px-4">
         <div className="max-w-4xl mx-auto">
           <Link href="/reconquete" className="text-white/80 hover:text-white mb-4 inline-block">← Retour à la Reconquête</Link>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Ex qui Recontacte Après un Silence</h1>
-          <p className="text-xl opacity-95 mb-6">Comprendre les signes, les raisons et comment réagir intelligemment</p>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">Il/Elle Me Recontacte Après le Silence Radio</h1>
+          <p className="text-xl opacity-95 mb-6">Signes qu&apos;un ex revient, comment réagir et quel premier message envoyer</p>
           <div className="flex gap-4 flex-wrap">
             <a href="#signes" className="bg-white text-purple-600 px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition">Reconnaître les Signes</a>
             <a href="#reaction" className="border-2 border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-purple-600 transition">Comment Réagir</a>

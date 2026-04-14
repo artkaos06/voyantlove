@@ -7,15 +7,15 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
 export const metadata: Metadata = {
-  title: 'Voyance Nouvel Amour & Rencontre : Quand Trouver l\'Amour ? | VoyantLove',
-  description: 'Voyance nouvel amour et rencontre : quand et comment trouver l\'amour ? Prédictions tarot, timing astrologique et guidance pour votre nouvelle histoire.',
+  title: 'Voyance Rencontre Amoureuse : Quand Allez-Vous Trouver l\'Amour ? | VoyantLove',
+  description: 'Voyance rencontre : quand et comment allez-vous rencontrer l\'amour ? Prédictions tarot, timing astrologique et guidance voyance pour votre nouvelle rencontre.',
   alternates: { canonical: 'https://www.voyantlove.fr/nouvelle-rencontre/' },
 };
 
 export default function NouvelleRencontreHubPage() {
   const webPageSchema = getWebPageSchema({
-    title: 'Voyance Nouvel Amour & Rencontre : Quand Trouver l\'Amour ? | VoyantLove',
-    description: 'Voyance nouvel amour et rencontre : quand et comment trouver l\'amour ? Prédictions tarot, timing astrologique et guidance pour votre nouvelle histoire.',
+    title: 'Voyance Rencontre Amoureuse : Quand Allez-Vous Trouver l\'Amour ? | VoyantLove',
+    description: 'Voyance rencontre : quand et comment allez-vous rencontrer l\'amour ? Prédictions tarot, timing astrologique et guidance voyance pour votre nouvelle rencontre.',
     url: 'https://www.voyantlove.fr/nouvelle-rencontre/',
   });
 
