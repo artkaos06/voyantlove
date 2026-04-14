@@ -161,6 +161,10 @@ export default function ReconqueteHubPage() {
               <h3 className="font-bold text-gray-900 mb-1">Méthodes de Voyance</h3>
               <p className="text-sm text-gray-600">Tarot, oracle et astrologie pour guider votre stratégie de reconquête.</p>
             </Link>
+            <Link href="/consulter" className="bg-purple-50 rounded-lg p-4 hover:bg-purple-100 transition border border-purple-200">
+              <h3 className="font-bold text-purple-900 mb-1">Consulter un Voyant</h3>
+              <p className="text-sm text-purple-700">Tous nos voyants disponibles maintenant pour une guidance personnalisée.</p>
+            </Link>
           </div>
         </section>
 

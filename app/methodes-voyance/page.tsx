@@ -112,6 +112,41 @@ export default function MethodesVoyanceHubPage() {
               <p className="text-gray-600 mb-4">Guidance amoureuse complète : sentiments, compatibilité, reconquête et avenir du cœur.</p>
               <span className="text-pink-600 font-semibold">Découvrir →</span>
             </Link>
+
+            <Link href="/methodes-voyance/voyance-par-mail-amour" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-amber-500">
+              <div className="text-4xl mb-4">📧</div>
+              <h3 className="text-2xl font-bold mb-3">Voyance par Mail</h3>
+              <p className="text-gray-600 mb-4">Consultation voyance amour par email : posez vos questions et recevez une analyse détaillée.</p>
+              <span className="text-amber-600 font-semibold">Découvrir →</span>
+            </Link>
+
+            <Link href="/methodes-voyance/numerologie-amoureuse" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-teal-500">
+              <div className="text-4xl mb-4">🔢</div>
+              <h3 className="text-2xl font-bold mb-3">Numérologie Amoureuse</h3>
+              <p className="text-gray-600 mb-4">Compatibilité et cycles amoureux révélés par les nombres.</p>
+              <span className="text-teal-600 font-semibold">Découvrir →</span>
+            </Link>
+
+            <Link href="/methodes-voyance/voyance-par-chat-amour" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-green-500">
+              <div className="text-4xl mb-4">💬</div>
+              <h3 className="text-2xl font-bold mb-3">Voyance par Chat</h3>
+              <p className="text-gray-600 mb-4">Consultation voyance amour par chat en ligne, immédiate et confidentielle.</p>
+              <span className="text-green-600 font-semibold">Découvrir →</span>
+            </Link>
+
+            <Link href="/methodes-voyance/runes-amour" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-slate-500">
+              <div className="text-4xl mb-4">ᚱ</div>
+              <h3 className="text-2xl font-bold mb-3">Runes Amour</h3>
+              <p className="text-gray-600 mb-4">Les runes nordiques appliquées aux questions sentimentales et amoureuses.</p>
+              <span className="text-slate-600 font-semibold">Découvrir →</span>
+            </Link>
+
+            <Link href="/methodes-voyance/synastrie-amoureuse" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-cyan-500">
+              <div className="text-4xl mb-4">♾️</div>
+              <h3 className="text-2xl font-bold mb-3">Synastrie Amoureuse</h3>
+              <p className="text-gray-600 mb-4">Analyse astrologique de la compatibilité entre deux thèmes natals.</p>
+              <span className="text-cyan-600 font-semibold">Découvrir →</span>
+            </Link>
           </div>
         </section>
 
@@ -176,6 +211,10 @@ export default function MethodesVoyanceHubPage() {
             <Link href="/voyance-gratuite-amour" className="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition">
               <h3 className="font-bold text-gray-900 mb-1">Voyance Gratuite Amour</h3>
               <p className="text-sm text-gray-600">Tirages gratuits et premières minutes offertes pour découvrir la voyance.</p>
+            </Link>
+            <Link href="/consulter" className="bg-purple-50 rounded-lg p-4 hover:bg-purple-100 transition border border-purple-200">
+              <h3 className="font-bold text-purple-900 mb-1">Consulter un Voyant</h3>
+              <p className="text-sm text-purple-700">Tous nos voyants disponibles maintenant pour une guidance personnalisée.</p>
             </Link>
           </div>
         </section>

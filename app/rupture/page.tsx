@@ -110,6 +110,27 @@ export default function RuptureHubPage() {
               <p className="text-gray-600 mb-4">Traverser la perte amoureuse et renaître grâce à la voyance.</p>
               <span className="text-slate-600 font-semibold">Lire →</span>
             </Link>
+
+            <Link href="/rupture/surmonter-trahison" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-amber-500">
+              <div className="text-4xl mb-4">🗡️</div>
+              <h3 className="text-2xl font-bold mb-3 text-gray-900">Surmonter une Trahison</h3>
+              <p className="text-gray-600 mb-4">Guérir après une trahison amoureuse et retrouver confiance.</p>
+              <span className="text-amber-600 font-semibold">Lire →</span>
+            </Link>
+
+            <Link href="/rupture/comment-tourner-la-page" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-emerald-500">
+              <div className="text-4xl mb-4">📖</div>
+              <h3 className="text-2xl font-bold mb-3 text-gray-900">Tourner la Page</h3>
+              <p className="text-gray-600 mb-4">Comment tourner la page définitivement et avancer sereinement.</p>
+              <span className="text-emerald-600 font-semibold">Lire →</span>
+            </Link>
+
+            <Link href="/rupture/voyance-divorce-separation" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-gray-500">
+              <div className="text-4xl mb-4">⚖️</div>
+              <h3 className="text-2xl font-bold mb-3 text-gray-900">Divorce & Séparation</h3>
+              <p className="text-gray-600 mb-4">Guidance voyance pour traverser un divorce ou une séparation difficile.</p>
+              <span className="text-gray-600 font-semibold">Lire →</span>
+            </Link>
           </div>
         </section>
 
@@ -170,6 +191,10 @@ export default function RuptureHubPage() {
             <Link href="/crise-couple" className="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition">
               <h3 className="font-bold text-gray-900 mb-1">Crise de Couple</h3>
               <p className="text-sm text-gray-600">Comprendre les crises pour éviter qu'elles ne mènent à la rupture.</p>
+            </Link>
+            <Link href="/consulter" className="bg-purple-50 rounded-lg p-4 hover:bg-purple-100 transition border border-purple-200">
+              <h3 className="font-bold text-purple-900 mb-1">Consulter un Voyant</h3>
+              <p className="text-sm text-purple-700">Tous nos voyants disponibles maintenant pour une guidance personnalisée.</p>
             </Link>
           </div>
         </section>

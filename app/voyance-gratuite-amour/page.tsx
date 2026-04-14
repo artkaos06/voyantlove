@@ -173,6 +173,10 @@ export default function VoyanceGratuiteAmourHubPage() {
               <h3 className="font-bold text-gray-900 mb-1">Nouvelle Rencontre</h3>
               <p className="text-sm text-gray-600">Prédictions et guidance pour trouver votre prochaine relation.</p>
             </Link>
+            <Link href="/consulter" className="bg-purple-50 rounded-lg p-4 hover:bg-purple-100 transition border border-purple-200">
+              <h3 className="font-bold text-purple-900 mb-1">Consulter un Voyant</h3>
+              <p className="text-sm text-purple-700">Tous nos voyants disponibles maintenant pour une guidance personnalisée.</p>
+            </Link>
           </div>
         </section>
 

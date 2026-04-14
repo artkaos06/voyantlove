@@ -83,10 +83,10 @@ export default function HomePage() {
               className="bg-white text-brand-purple px-8 py-4 rounded-lg font-semibold hover:shadow-lg transition"
             />
             <Link
-              href="#situations"
+              href="/consulter"
               className="bg-transparent border-2 border-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-brand-purple transition"
             >
-              Découvrir nos Guidances
+              Voir nos Voyants Disponibles
             </Link>
           </div>
         </div>

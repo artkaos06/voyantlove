@@ -112,6 +112,34 @@ export default function SentimentsHubPage() {
               <p className="text-gray-600 mb-4">Reconnaître les signes d'une relation toxique et se libérer.</p>
               <span className="text-orange-600 font-semibold">Découvrir →</span>
             </Link>
+
+            <Link href="/sentiments/savoir-si-cest-lamour" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-amber-500">
+              <div className="text-4xl mb-4">💫</div>
+              <h3 className="text-2xl font-bold mb-3">Est-ce l&apos;Amour ?</h3>
+              <p className="text-gray-600 mb-4">Savoir si c&apos;est le vrai amour ou une simple attirance passagère.</p>
+              <span className="text-amber-600 font-semibold">Découvrir →</span>
+            </Link>
+
+            <Link href="/sentiments/sentiments-non-partages" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-slate-500">
+              <div className="text-4xl mb-4">💔</div>
+              <h3 className="text-2xl font-bold mb-3">Sentiments Non Partagés</h3>
+              <p className="text-gray-600 mb-4">Comprendre et surmonter un amour non réciproque.</p>
+              <span className="text-slate-600 font-semibold">Découvrir →</span>
+            </Link>
+
+            <Link href="/sentiments/voyance-mariage" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-teal-500">
+              <div className="text-4xl mb-4">💍</div>
+              <h3 className="text-2xl font-bold mb-3">Voyance Mariage</h3>
+              <p className="text-gray-600 mb-4">Prédictions sur votre mariage : timing, compatibilité et avenir.</p>
+              <span className="text-teal-600 font-semibold">Découvrir →</span>
+            </Link>
+
+            <Link href="/sentiments/voyance-grossesse-bebe" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-green-500">
+              <div className="text-4xl mb-4">👶</div>
+              <h3 className="text-2xl font-bold mb-3">Voyance Grossesse</h3>
+              <p className="text-gray-600 mb-4">Prédictions bébé et grossesse : quand et comment selon la voyance.</p>
+              <span className="text-green-600 font-semibold">Découvrir →</span>
+            </Link>
           </div>
         </section>
 
@@ -160,6 +188,10 @@ export default function SentimentsHubPage() {
             <Link href="/voyance-gratuite-amour" className="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition">
               <h3 className="font-bold text-gray-900 mb-1">Voyance Gratuite Amour</h3>
               <p className="text-sm text-gray-600">Découvrez la voyance sentimentale gratuitement avec nos tirages en ligne.</p>
+            </Link>
+            <Link href="/consulter" className="bg-purple-50 rounded-lg p-4 hover:bg-purple-100 transition border border-purple-200">
+              <h3 className="font-bold text-purple-900 mb-1">Consulter un Voyant</h3>
+              <p className="text-sm text-purple-700">Tous nos voyants disponibles maintenant pour une guidance personnalisée.</p>
             </Link>
           </div>
         </section>

@@ -234,6 +234,27 @@ export default function NouvelleRencontreHubPage() {
               <p className="text-gray-600 mb-4">Trouver l'amour après 40 ans : guidance et prédictions sentimentales.</p>
               <span className="text-amber-600 font-semibold">Découvrir →</span>
             </Link>
+
+            <Link href="/nouvelle-rencontre/peur-de-aimer-a-nouveau" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-rose-500">
+              <div className="text-4xl mb-4">🛡️</div>
+              <h3 className="text-2xl font-bold mb-3">Peur d&apos;Aimer</h3>
+              <p className="text-gray-600 mb-4">Surmonter la peur d&apos;aimer à nouveau après une blessure sentimentale.</p>
+              <span className="text-rose-600 font-semibold">Découvrir →</span>
+            </Link>
+
+            <Link href="/nouvelle-rencontre/voyance-celibat-trouver-lamour" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-violet-500">
+              <div className="text-4xl mb-4">💜</div>
+              <h3 className="text-2xl font-bold mb-3">Célibat & Voyance</h3>
+              <p className="text-gray-600 mb-4">Voyance pour célibataires : quand et comment trouver l&apos;amour.</p>
+              <span className="text-violet-600 font-semibold">Découvrir →</span>
+            </Link>
+
+            <Link href="/nouvelle-rencontre/rencontre-amoureuse-en-ligne" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-blue-500">
+              <div className="text-4xl mb-4">💻</div>
+              <h3 className="text-2xl font-bold mb-3">Rencontre en Ligne</h3>
+              <p className="text-gray-600 mb-4">Guidance voyance pour les rencontres amoureuses en ligne.</p>
+              <span className="text-blue-600 font-semibold">Découvrir →</span>
+            </Link>
           </div>
         </section>
 
@@ -306,6 +327,10 @@ export default function NouvelleRencontreHubPage() {
             <Link href="/voyance-gratuite-amour" className="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition">
               <h3 className="font-bold text-gray-900 mb-1">Voyance Gratuite Amour</h3>
               <p className="text-sm text-gray-600">Essayez un tirage amour gratuit pour éclairer votre nouvelle rencontre.</p>
+            </Link>
+            <Link href="/consulter" className="bg-purple-50 rounded-lg p-4 hover:bg-purple-100 transition border border-purple-200">
+              <h3 className="font-bold text-purple-900 mb-1">Consulter un Voyant</h3>
+              <p className="text-sm text-purple-700">Tous nos voyants disponibles maintenant pour une guidance personnalisée.</p>
             </Link>
           </div>
         </section>

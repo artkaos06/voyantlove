@@ -107,6 +107,34 @@ export default function CriseCoupleHubPage() {
               <p className="text-gray-600 mb-4">Se libérer de la dépendance affective selon le tarot.</p>
               <span className="text-purple-600 font-semibold">Lire →</span>
             </Link>
+
+            <Link href="/crise-couple/pardonner-en-amour" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-teal-500">
+              <div className="text-4xl mb-4">🕊️</div>
+              <h3 className="text-2xl font-bold mb-3">Pardonner en Amour</h3>
+              <p className="text-gray-600 mb-4">Comment pardonner une erreur et reconstruire la confiance.</p>
+              <span className="text-teal-600 font-semibold">Lire →</span>
+            </Link>
+
+            <Link href="/crise-couple/couple-a-distance-voyance" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-cyan-500">
+              <div className="text-4xl mb-4">🌍</div>
+              <h3 className="text-2xl font-bold mb-3">Couple à Distance</h3>
+              <p className="text-gray-600 mb-4">Guidance voyance pour les couples à distance et la séparation géographique.</p>
+              <span className="text-cyan-600 font-semibold">Lire →</span>
+            </Link>
+
+            <Link href="/crise-couple/emprise-amoureuse-voyance" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-rose-500">
+              <div className="text-4xl mb-4">⛓️</div>
+              <h3 className="text-2xl font-bold mb-3">Emprise Amoureuse</h3>
+              <p className="text-gray-600 mb-4">Reconnaître et se libérer d&apos;une emprise amoureuse.</p>
+              <span className="text-rose-600 font-semibold">Lire →</span>
+            </Link>
+
+            <Link href="/crise-couple/reconnecter-son-couple" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-indigo-500">
+              <div className="text-4xl mb-4">💞</div>
+              <h3 className="text-2xl font-bold mb-3">Reconnecter son Couple</h3>
+              <p className="text-gray-600 mb-4">Retrouver l&apos;intimité et la complicité perdues dans votre relation.</p>
+              <span className="text-indigo-600 font-semibold">Lire →</span>
+            </Link>
           </div>
         </section>
 
@@ -151,6 +179,10 @@ export default function CriseCoupleHubPage() {
             <Link href="/sentiments" className="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition">
               <h3 className="font-bold text-gray-900 mb-1">Sentiments Amoureux</h3>
               <p className="text-sm text-gray-600">Décrypter les vrais sentiments de votre partenaire pendant la crise.</p>
+            </Link>
+            <Link href="/consulter" className="bg-purple-50 rounded-lg p-4 hover:bg-purple-100 transition border border-purple-200">
+              <h3 className="font-bold text-purple-900 mb-1">Consulter un Voyant</h3>
+              <p className="text-sm text-purple-700">Tous nos voyants disponibles maintenant pour une guidance personnalisée.</p>
             </Link>
           </div>
         </section>
