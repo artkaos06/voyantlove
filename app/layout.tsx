@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Script from "next/script";
+import CookieConsent from "@/components/CookieConsent";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -63,25 +64,16 @@ export default function RootLayout({
     <html lang="fr">
       <head>
         <link rel="icon" href="/favicon.png" type="image/png" />
-        <Script id="axeptio" strategy="beforeInteractive">{`
-          window.axeptioSettings = {
-            clientId: "69b8828888b6372bfa4a1444",
-            cookiesVersion: "e6b84849-0d28-4428-9825-14b5a10ed689",
-            googleConsentMode: {
-              default: {
-                analytics_storage: "denied",
-                ad_storage: "denied",
-                ad_user_data: "denied",
-                ad_personalization: "denied",
-                wait_for_update: 500
-              }
-            }
-          };
-          (function(d, s) {
-            var t = d.getElementsByTagName(s)[0], e = d.createElement(s);
-            e.async = true; e.src = "//static.axept.io/sdk.js";
-            t.parentNode.insertBefore(e, t);
-          })(document, "script");
+        <Script id="consent-default" strategy="beforeInteractive">{`
+          window.dataLayer = window.dataLayer || [];
+          window.gtag = window.gtag || function(){window.dataLayer.push(arguments);};
+          window.gtag('consent', 'default', {
+            ad_storage: 'denied',
+            ad_user_data: 'denied',
+            ad_personalization: 'denied',
+            analytics_storage: 'denied',
+            wait_for_update: 500
+          });
         `}</Script>
         <Script id="gtm" strategy="afterInteractive">{`
           (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -105,6 +97,7 @@ export default function RootLayout({
             style={{ display: 'none', visibility: 'hidden' }}
           />
         </noscript>
+        <CookieConsent />
         {children}
       </body>
     </html>

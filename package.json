@@ -14,7 +14,8 @@
     "next": "^15.1.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "schema-dts": "^1.1.5"
+    "schema-dts": "^1.1.5",
+    "vanilla-cookieconsent": "^3.1.0"
   },
   "devDependencies": {
     "@types/node": "^20",
