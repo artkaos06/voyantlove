@@ -63,7 +63,7 @@ export default function LPVoyantDirect() {
           {/* Primary CTA */}
           <div className="mb-5">
             <a
-              href="tel:0175754582"
+              href="tel:+33175754582"
               className="inline-block bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-400 hover:to-emerald-400 text-white px-10 py-5 rounded-xl font-bold text-2xl transition-all hover:scale-105 hover:shadow-2xl shadow-xl"
             >
               📞 01 75 75 45 82
@@ -122,7 +122,7 @@ export default function LPVoyantDirect() {
           </div>
           <div className="text-center">
             <a
-              href="tel:0175754582"
+              href="tel:+33175754582"
               className="inline-block bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 text-white px-8 py-4 rounded-lg font-bold text-xl transition-all hover:scale-105 hover:shadow-xl"
             >
               📞 Obtenir mes réponses maintenant
@@ -201,7 +201,7 @@ export default function LPVoyantDirect() {
             10 premières minutes offertes. Satisfait ou remboursé. Voyant disponible maintenant.
           </p>
           <a
-            href="tel:0175754582"
+            href="tel:+33175754582"
             className="inline-block bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-400 hover:to-emerald-400 text-white px-10 py-5 rounded-xl font-bold text-2xl transition-all hover:scale-105 hover:shadow-2xl mb-4"
           >
             📞 01 75 75 45 82

@@ -104,7 +104,7 @@ export default function LeadCaptureForm({ source, colorScheme, mode = 'full' }: 
             {/* Phone CTA — primary */}
             <div className="text-center mb-4">
               <a
-                href="tel:0175754582"
+                href="tel:+33175754582"
                 onClick={() => window.dataLayer?.push({ event: 'phone_click', cta_label: `phone-teaser-${source}` })}
                 className="inline-block w-full bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 text-white px-8 py-4 rounded-lg font-bold text-xl transition-all hover:scale-105 hover:shadow-xl text-center"
               >
@@ -169,7 +169,7 @@ export default function LeadCaptureForm({ source, colorScheme, mode = 'full' }: 
                 Obtenez des réponses précises et personnalisées sur votre situation
               </p>
               <a
-                href="tel:0175754582"
+                href="tel:+33175754582"
                 onClick={() => window.dataLayer?.push({ event: 'phone_click', cta_label: `phone-${source}` })}
                 className="inline-block bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 text-white px-8 py-4 rounded-lg font-bold text-xl transition-all hover:scale-105 hover:shadow-xl"
               >

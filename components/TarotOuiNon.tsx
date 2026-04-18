@@ -211,7 +211,7 @@ export default function TarotOuiNon() {
               Pour une interprétation approfondie de votre situation, consultez un voyant spécialisé en amour :
             </p>
             <a
-              href="tel:0175754582"
+              href="tel:+33175754582"
               onClick={() => {
                 if (typeof window !== 'undefined') {
                   window.dataLayer?.push({ event: 'phone_click', cta_label: 'tarot-oui-non-result' });
