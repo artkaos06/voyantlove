@@ -4,7 +4,6 @@ import { useEffect } from 'react';
 
 declare global {
   interface Window {
-    dataLayer?: unknown[];
     gtag?: (...args: unknown[]) => void;
   }
 }
@@ -15,6 +14,7 @@ export default function CookieConsent() {
 
     (async () => {
       const CC = await import('vanilla-cookieconsent');
+      // @ts-expect-error - CSS side-effect import has no type declarations
       await import('vanilla-cookieconsent/dist/cookieconsent.css');
       if (cancelled) return;
 
