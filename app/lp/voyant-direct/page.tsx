@@ -18,13 +18,19 @@ const TESTIMONIALS = [
 export default function LPVoyantDirect() {
   return (
     <main className="min-h-screen bg-gray-50">
-      {/* Google Ads Call Conversion — registers the phone_conversion_number
-          for the specific conversion action so Google's tag knows which
-          displayed number to swap. gtag/js is already loaded globally by
-          the Google Tag (AW-18020982081) via GTM; we just push the config. */}
+      {/* Google Ads Call Conversion — direct snippet (not GTM).
+          Loads its own gtag/js instance because GTM's internal gtag/js
+          doesn't expose google_tag_data.pageload for phone swap detection.
+          Scoped to this ad landing page only. */}
+      <Script
+        id="google-ads-call-conversion-loader"
+        strategy="afterInteractive"
+        src="https://www.googletagmanager.com/gtag/js?id=AW-18020982081"
+      />
       <Script id="google-ads-call-conversion-config" strategy="afterInteractive">{`
         window.dataLayer = window.dataLayer || [];
         window.gtag = window.gtag || function(){window.dataLayer.push(arguments);};
+        window.gtag('js', new Date());
         window.gtag('config', 'AW-18020982081/Y2TzCKq-oJ4cEMG6iZFD', {
           'phone_conversion_number': '01 75 75 45 82'
         });
