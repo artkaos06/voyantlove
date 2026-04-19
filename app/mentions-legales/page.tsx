@@ -26,7 +26,7 @@ export default function MentionsLegalesPage() {
             <h2 className="text-2xl font-bold mb-4 text-gray-900">1. Éditeur du Site</h2>
             <p className="text-gray-700 mb-2"><strong>Nom du site :</strong> VoyantLove.fr</p>
             <p className="text-gray-700 mb-2"><strong>Raison sociale :</strong> Cogitor</p>
-            <p className="text-gray-700 mb-2"><strong>Adresse :</strong> Kungla, Tallinn, 10430 Estonia</p>
+            <p className="text-gray-700 mb-2"><strong>Adresse :</strong> Tornimäe 4-5, 10411 Tallinn, Estonia</p>
             <p className="text-gray-700 mb-2"><strong>Email :</strong> contact@voyantlove.fr</p>
           </section>
 
@@ -117,7 +117,7 @@ export default function MentionsLegalesPage() {
             </p>
             <ul className="list-disc list-inside text-gray-700 space-y-2">
               <li>Par email : contact@voyantlove.fr</li>
-              <li>Par courrier : Cogitor, Kungla, Tallinn, 10430 Estonia</li>
+              <li>Par courrier : Cogitor, Tornimäe 4-5, 10411 Tallinn, Estonia</li>
             </ul>
           </section>
 

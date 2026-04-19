@@ -33,7 +33,7 @@ export default function ConfidentialitePage() {
             <p className="text-gray-700 mb-2"><strong>Responsable :</strong> Cogitor</p>
             <p className="text-gray-700 mb-2"><strong>Site web :</strong> VoyantLove.fr</p>
             <p className="text-gray-700 mb-2"><strong>Email :</strong> contact@voyantlove.fr</p>
-            <p className="text-gray-700 mb-4"><strong>Adresse :</strong> Kungla, Tallinn, 10430 Estonia</p>
+            <p className="text-gray-700 mb-4"><strong>Adresse :</strong> Tornimäe 4-5, 10411 Tallinn, Estonia</p>
             <p className="text-gray-700">
               Cogitor s'engage à protéger la confidentialité de vos données personnelles conformément au Règlement Général
               sur la Protection des Données (RGPD) et à la loi Informatique et Libertés.
@@ -222,7 +222,7 @@ export default function ConfidentialitePage() {
             <p className="text-gray-700 mb-4">Pour toute question concernant la protection de vos données personnelles :</p>
             <ul className="list-disc list-inside text-gray-700 space-y-2">
               <li><strong>Email :</strong> <a href="mailto:contact@voyantlove.fr" className="text-purple-600 hover:underline">contact@voyantlove.fr</a></li>
-              <li><strong>Courrier :</strong> Cogitor, Kungla, Tallinn, 10430 Estonia</li>
+              <li><strong>Courrier :</strong> Cogitor, Tornimäe 4-5, 10411 Tallinn, Estonia</li>
             </ul>
           </section>
 
