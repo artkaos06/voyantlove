@@ -313,7 +313,7 @@ export default function LPVoyantDirect() {
             <div className="bg-white p-5 rounded-lg border border-gray-200">
               <p className="text-gray-500 uppercase tracking-wide text-xs mb-2 font-semibold">Éditeur</p>
               <p className="text-gray-900 font-semibold mb-1">Cogitor</p>
-              <p className="text-gray-600">Kungla, Tallinn<br />10430 Estonia</p>
+              <p className="text-gray-600">Pour plus d&apos;informations, consultez les <Link href="/mentions-legales" className="text-purple-600 hover:text-purple-800 underline">mentions légales</Link>.</p>
             </div>
             <div className="bg-white p-5 rounded-lg border border-gray-200">
               <p className="text-gray-500 uppercase tracking-wide text-xs mb-2 font-semibold">Contact service client</p>

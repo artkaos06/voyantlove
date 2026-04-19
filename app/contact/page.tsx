@@ -45,18 +45,10 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <p className="font-semibold text-gray-900 mb-1">Téléphone</p>
-                  <p className="text-gray-700">[Numéro à compléter]</p>
-                  <p className="text-sm text-gray-600 mt-1">Lundi - Vendredi : 9h - 19h</p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4">
-                <div className="flex-shrink-0 w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center">
-                  <span className="text-2xl">🏢</span>
-                </div>
-                <div>
-                  <p className="font-semibold text-gray-900 mb-1">Adresse</p>
-                  <p className="text-gray-700">[Adresse à compléter]</p>
+                  <a href="tel:0175754582" className="text-purple-600 hover:underline">
+                    01 75 75 45 82
+                  </a>
+                  <p className="text-sm text-gray-600 mt-1">Service 7j/7 — consultation voyance</p>
                 </div>
               </div>
             </div>
