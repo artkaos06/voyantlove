@@ -160,27 +160,28 @@ function VoyantGrid() {
 
   return (
     <div>
-      {/* Free voyants section */}
-      {freeVoyants.length > 0 && (
+      {/* Regular voyants section — shown first (highest-rated experts) */}
+      {voyants.length > 0 && (
         <div className="mb-10">
+          <div className="text-center mb-6">
+            <h2 className="text-2xl font-bold text-gray-900 mb-2">🔮 Nos Voyants Experts</h2>
+            <p className="text-gray-600">Les mieux notés par nos consultants — disponibles maintenant</p>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {voyants.map((v) => renderVoyantCard(v, false))}
+          </div>
+        </div>
+      )}
+
+      {/* Free voyants section — shown after (promotional offer) */}
+      {freeVoyants.length > 0 && (
+        <div>
           <div className="text-center mb-6">
             <h2 className="text-2xl font-bold text-gray-900 mb-2">🎁 Voyants avec 15 Minutes Gratuites</h2>
             <p className="text-gray-600">Première consultation offerte — testez sans engagement</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {freeVoyants.map((v) => renderVoyantCard(v, true))}
-          </div>
-        </div>
-      )}
-
-      {/* Regular voyants section */}
-      {voyants.length > 0 && (
-        <div>
-          <div className="text-center mb-6">
-            <h2 className="text-2xl font-bold text-gray-900 mb-2">Autres Voyants Disponibles</h2>
-          </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {voyants.map((v) => renderVoyantCard(v, false))}
           </div>
         </div>
       )}
