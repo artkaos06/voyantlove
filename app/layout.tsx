@@ -82,6 +82,19 @@ export default function RootLayout({
           'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
           })(window,document,'script','dataLayer','GTM-MTSWKGGQ');
         `}</Script>
+        <Script id="phone-click-tracker" strategy="afterInteractive">{`
+          document.addEventListener('click', function(e) {
+            var link = e.target && e.target.closest && e.target.closest('a[href^="tel:"]');
+            if (link) {
+              window.dataLayer = window.dataLayer || [];
+              window.dataLayer.push({
+                event: 'phone_click',
+                phone_number: (link.getAttribute('href') || '').replace('tel:', ''),
+                page_path: window.location.pathname
+              });
+            }
+          }, true);
+        `}</Script>
         <script
           defer
           data-site-id="b2906866-3097-4875-b470-7b8e7c49b01f"

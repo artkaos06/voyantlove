@@ -212,11 +212,6 @@ export default function TarotOuiNon() {
             </p>
             <a
               href="tel:0175754582"
-              onClick={() => {
-                if (typeof window !== 'undefined') {
-                  window.dataLayer?.push({ event: 'phone_click', cta_label: 'tarot-oui-non-result' });
-                }
-              }}
               className="inline-block bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-400 hover:to-emerald-400 text-white px-8 py-4 rounded-xl font-bold text-xl transition-all hover:scale-105 hover:shadow-xl mb-3"
             >
               📞 01 75 75 45 82
