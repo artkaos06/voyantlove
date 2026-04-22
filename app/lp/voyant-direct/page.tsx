@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Script from 'next/script';
+import SocialProofTicker from '@/components/SocialProofTicker';
 
 export const metadata: Metadata = {
   title: 'Consultation Voyance Amoureuse par Téléphone — VoyantLove',
@@ -82,43 +83,53 @@ export default function LPVoyantDirect() {
       />
 
       {/* Hero */}
-      <section className="bg-gradient-to-br from-purple-900 via-purple-800 to-indigo-800 text-white pt-10 pb-14 px-4">
+      <section className="bg-gradient-to-b from-purple-50 via-white to-white pt-10 pb-14 px-4">
         <div className="max-w-3xl mx-auto text-center">
 
-          <div className="inline-flex items-center gap-2 bg-green-500 rounded-full px-4 py-1.5 text-sm font-bold mb-6 shadow-lg">
+          <div className="inline-flex items-center gap-2 bg-green-500 text-white rounded-full px-4 py-1.5 text-sm font-bold mb-6 shadow-lg">
             <span className="w-2 h-2 bg-white rounded-full animate-pulse"></span>
             Voyants disponibles maintenant
           </div>
 
-          <h1 className="text-4xl md:text-5xl font-bold mb-3 leading-tight">
+          <h1 className="text-4xl md:text-5xl font-bold mb-3 leading-tight text-gray-900">
             Consultation de Voyance Amoureuse par Téléphone
           </h1>
 
-          <p className="text-2xl md:text-3xl font-bold text-yellow-300 mb-4 leading-tight">
-            10 minutes gratuites sur votre 1ère consultation
+          <p className="text-2xl md:text-3xl font-bold mb-2 leading-tight text-gray-900">
+            <span className="bg-yellow-200 px-2 rounded">10 minutes gratuites</span> sur votre 1ère consultation
+          </p>
+          <p className="text-sm text-gray-500 mb-5">
+            (Valeur 15 € — entièrement offerte)
           </p>
 
-          <p className="text-lg opacity-90 mb-6 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-700 mb-6 max-w-2xl mx-auto">
             Parlez à un voyant spécialisé en questions sentimentales. Guidance par tarot, astrologie ou clairvoyance, en toute confidentialité.
           </p>
 
-          <div className="mb-5">
+          <div className="mb-4">
             <a
               href="tel:0175754582"
               className="inline-block bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-400 hover:to-emerald-400 text-white px-10 py-5 rounded-xl font-bold text-2xl transition-all hover:scale-105 hover:shadow-2xl shadow-xl"
             >
               📞 01 75 75 45 82
             </a>
-            <p className="mt-3 text-purple-100 text-sm">
+            <p className="mt-3 text-gray-600 text-xs font-medium">
+              Appel non surtaxé — prix d&apos;un appel local
+            </p>
+            <p className="mt-2 text-gray-700 text-sm">
               ✓ 10 min gratuites • ✓ 7j/7 de 9h à 21h • ✓ Sans engagement
             </p>
           </div>
 
+          <div className="mb-6">
+            <SocialProofTicker />
+          </div>
+
           <div>
-            <p className="text-sm opacity-60 mb-2">Vous préférez consulter par écrit ?</p>
+            <p className="text-sm text-gray-500 mb-2">Vous préférez consulter par écrit ?</p>
             <Link
               href="/consulter?ref=lp-voyant-direct"
-              className="inline-block border-2 border-white/50 hover:border-white text-white px-7 py-3 rounded-lg font-semibold transition-all hover:bg-white/10 text-sm"
+              className="inline-block border-2 border-purple-400 hover:border-purple-600 text-purple-700 hover:bg-purple-50 px-7 py-3 rounded-lg font-semibold transition-all text-sm"
             >
               Choisir mon voyant en ligne →
             </Link>
