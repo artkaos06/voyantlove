@@ -4,7 +4,7 @@ import Script from 'next/script';
 
 export const metadata: Metadata = {
   title: 'Consultation Voyance Amoureuse par Téléphone — VoyantLove',
-  description: 'Consultez un voyant spécialisé en questions sentimentales par téléphone. Service de guidance et tarot. Tarifs transparents à partir de 1,30 €/min.',
+  description: '10 minutes gratuites sur votre 1ère consultation téléphonique. Voyant spécialisé en questions sentimentales, guidance par tarot et clairvoyance. 7j/7.',
   robots: { index: false, follow: false },
 };
 
@@ -90,11 +90,15 @@ export default function LPVoyantDirect() {
             Voyants disponibles maintenant
           </div>
 
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight">
+          <h1 className="text-4xl md:text-5xl font-bold mb-3 leading-tight">
             Consultation de Voyance Amoureuse par Téléphone
           </h1>
 
-          <p className="text-xl opacity-90 mb-6 max-w-2xl mx-auto">
+          <p className="text-2xl md:text-3xl font-bold text-yellow-300 mb-4 leading-tight">
+            10 minutes gratuites sur votre 1ère consultation
+          </p>
+
+          <p className="text-lg opacity-90 mb-6 max-w-2xl mx-auto">
             Parlez à un voyant spécialisé en questions sentimentales. Guidance par tarot, astrologie ou clairvoyance, en toute confidentialité.
           </p>
 
@@ -106,7 +110,7 @@ export default function LPVoyantDirect() {
               📞 01 75 75 45 82
             </a>
             <p className="mt-3 text-purple-100 text-sm">
-              Ouvert 7j/7 • Consultation à partir de 1,30 €/min • Sans engagement
+              ✓ 10 min gratuites • ✓ 7j/7 de 9h à 21h • ✓ Sans engagement
             </p>
           </div>
 
