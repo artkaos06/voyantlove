@@ -2,10 +2,11 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import Script from 'next/script';
 import SocialProofTicker from '@/components/SocialProofTicker';
+import VoyantTrustGrid from '@/components/VoyantTrustGrid';
 
 export const metadata: Metadata = {
   title: 'Consultation Voyance Amoureuse par Téléphone — VoyantLove',
-  description: '10 minutes gratuites sur votre 1ère consultation téléphonique. Voyant spécialisé en questions sentimentales, guidance par tarot et clairvoyance. 7j/7.',
+  description: '10 minutes offertes pour votre 1er appel. Voyant spécialisé en questions sentimentales, guidance par tarot et clairvoyance. 7j/7.',
   robots: { index: false, follow: false },
 };
 
@@ -96,7 +97,7 @@ export default function LPVoyantDirect() {
           </h1>
 
           <p className="text-2xl md:text-3xl font-bold mb-2 leading-tight text-gray-900">
-            <span className="bg-yellow-200 px-2 rounded">10 minutes gratuites</span> sur votre 1ère consultation
+            <span className="bg-yellow-200 px-2 rounded">10 minutes offertes</span> pour votre 1er appel
           </p>
           <p className="text-sm text-gray-500 mb-5">
             (Valeur 15 € — entièrement offerte)
@@ -117,7 +118,7 @@ export default function LPVoyantDirect() {
               Appel non surtaxé — prix d&apos;un appel local
             </p>
             <p className="mt-2 text-gray-700 text-sm">
-              ✓ 10 min gratuites • ✓ 7j/7 de 9h à 21h • ✓ Sans engagement
+              ✓ 10 min offertes • ✓ 7j/7 de 9h à 21h • ✓ Sans engagement
             </p>
           </div>
 
@@ -148,6 +149,9 @@ export default function LPVoyantDirect() {
           </div>
         </div>
       </section>
+
+      {/* Voyant trust grid — display-only, real photos from partner network */}
+      <VoyantTrustGrid />
 
       {/* About the service - ORIGINAL CONTENT */}
       <section className="py-14 px-4 bg-white">
@@ -251,7 +255,7 @@ export default function LPVoyantDirect() {
             >
               📞 01 75 75 45 82
             </a>
-            <p className="text-sm text-gray-500 mt-3">Service en français — consultation à partir de 1,30 €/min</p>
+            <p className="text-sm text-gray-500 mt-3">10 minutes offertes pour votre 1er appel — service en français 7j/7</p>
           </div>
         </div>
       </section>
@@ -357,7 +361,7 @@ export default function LPVoyantDirect() {
           >
             📞 01 75 75 45 82
           </a>
-          <p className="text-purple-100 text-sm mb-6">À partir de 1,30 €/min • 7j/7 • Service en français</p>
+          <p className="text-purple-100 text-sm mb-6">10 min offertes pour votre 1er appel • 7j/7 • Service en français</p>
           <Link
             href="/consulter?ref=lp-voyant-direct-bottom"
             className="text-white/70 hover:text-white text-sm underline underline-offset-2"
