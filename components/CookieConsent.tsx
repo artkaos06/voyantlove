@@ -5,6 +5,7 @@ import { useEffect } from 'react';
 declare global {
   interface Window {
     gtag?: (...args: unknown[]) => void;
+    clarity?: (...args: unknown[]) => void;
   }
 }
 
@@ -108,7 +109,8 @@ export default function CookieConsent() {
 }
 
 function applyConsent(categories: string[]) {
-  const analytics = categories.includes('analytics') ? 'granted' : 'denied';
+  const analyticsGranted = categories.includes('analytics');
+  const analytics = analyticsGranted ? 'granted' : 'denied';
   const marketing = categories.includes('marketing') ? 'granted' : 'denied';
 
   window.gtag?.('consent', 'update', {
@@ -117,4 +119,23 @@ function applyConsent(categories: string[]) {
     ad_personalization: marketing,
     analytics_storage: analytics,
   });
+
+  if (analyticsGranted) loadClarity();
+}
+
+function loadClarity() {
+  const projectId = process.env.NEXT_PUBLIC_CLARITY_PROJECT_ID;
+  if (!projectId) return;
+  if (typeof window === 'undefined') return;
+  if (window.clarity) return;
+
+  (function (c: Window, l: Document, a: string, r: string, i: string) {
+    // @ts-expect-error - Clarity bootstrap shim writes to window.clarity
+    c[a] = c[a] || function (...args: unknown[]) { (c[a].q = c[a].q || []).push(args); };
+    const t = l.createElement(r) as HTMLScriptElement;
+    t.async = true;
+    t.src = 'https://www.clarity.ms/tag/' + i;
+    const y = l.getElementsByTagName(r)[0];
+    y.parentNode?.insertBefore(t, y);
+  })(window, document, 'clarity', 'script', projectId);
 }
