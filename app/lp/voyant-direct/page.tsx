@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Script from 'next/script';
 import SocialProofTicker from '@/components/SocialProofTicker';
 import VoyantTrustGrid from '@/components/VoyantTrustGrid';
+import CallbackForm from '@/components/CallbackForm';
 
 export const metadata: Metadata = {
   title: 'Consultation Voyance Amoureuse par Téléphone — VoyantLove',
@@ -120,6 +121,7 @@ export default function LPVoyantDirect() {
             <p className="mt-2 text-gray-700 text-sm">
               ✓ 10 min offertes • ✓ 7j/7 de 9h à 21h • ✓ Sans engagement
             </p>
+            <CallbackForm source="lp-voyant-direct" />
           </div>
 
           <div className="mb-6">
