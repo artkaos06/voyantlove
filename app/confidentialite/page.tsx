@@ -50,6 +50,11 @@ export default function ConfidentialitePage() {
               <li>Pages visitées</li>
               <li>Durée de visite</li>
               <li>Données de géolocalisation approximative (pays, ville)</li>
+              <li>
+                Enregistrements de session (clics, mouvements de souris, défilements et saisies dans des champs non sensibles)
+                collectés uniquement avec votre consentement, via Microsoft Clarity. Les champs sensibles (mots de passe, numéros
+                de téléphone, emails, contenu de formulaires) sont automatiquement masqués.
+              </li>
             </ul>
 
             <h3 className="text-xl font-semibold mb-3 text-gray-800">2.2 Données de Contact (si formulaire)</h3>
@@ -108,7 +113,7 @@ export default function ConfidentialitePage() {
             <p className="text-gray-700 mb-4">Vos données personnelles sont accessibles uniquement par :</p>
             <ul className="list-disc list-inside text-gray-700 space-y-2">
               <li><strong>Personnel autorisé :</strong> Voyants et personnel administratif habilité (accès strictement limité)</li>
-              <li><strong>Prestataires techniques :</strong> Hébergeur (Vercel), processeur de paiement (si applicable)</li>
+              <li><strong>Prestataires techniques :</strong> Hébergeur (Vercel, États-Unis), outil d'analyse de session Microsoft Clarity (Microsoft Corporation, États-Unis), processeur de paiement (si applicable)</li>
               <li><strong>Autorités légales :</strong> Sur demande légale uniquement (réquisition judiciaire)</li>
             </ul>
             <p className="text-gray-700 mt-4">
@@ -193,11 +198,19 @@ export default function ConfidentialitePage() {
               </div>
               <div className="bg-blue-50 p-4 rounded-lg border-l-4 border-blue-500">
                 <p className="font-semibold text-gray-900 mb-1">Cookies analytiques (optionnels)</p>
-                <p className="text-gray-700 text-sm">Analyse anonyme du trafic. Nécessitent votre consentement.</p>
+                <p className="text-gray-700 text-sm">
+                  Analyse anonyme du trafic (Google Analytics) et enregistrement de sessions utilisateurs (Microsoft Clarity) pour
+                  comprendre comment les visiteurs utilisent le site et améliorer l'expérience. Nécessitent votre consentement explicite.
+                </p>
+              </div>
+              <div className="bg-orange-50 p-4 rounded-lg border-l-4 border-orange-500">
+                <p className="font-semibold text-gray-900 mb-1">Cookies marketing (optionnels)</p>
+                <p className="text-gray-700 text-sm">Mesure de l'efficacité publicitaire (Google Ads). Nécessitent votre consentement explicite.</p>
               </div>
             </div>
             <p className="text-gray-700 mt-4">
-              Vous pouvez refuser les cookies analytiques via les paramètres de votre navigateur ou notre bandeau cookies.
+              Vous pouvez accepter, refuser ou personnaliser ces cookies à tout moment via notre bandeau de consentement. Aucun cookie
+              analytique ou marketing n'est déposé avant votre consentement.
             </p>
           </section>
 
