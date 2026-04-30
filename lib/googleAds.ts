@@ -20,7 +20,7 @@ const GOOGLE_ADS_API_BASE = 'https://googleads.googleapis.com';
 // API version is bumped by Google ~3x/year; override via env if a version
 // gets deprecated before we update the code.
 const GOOGLE_ADS_API_VERSION =
-  process.env.GOOGLE_ADS_API_VERSION || 'v18';
+  process.env.GOOGLE_ADS_API_VERSION || 'v21';
 
 interface TokenCache {
   token: string;
