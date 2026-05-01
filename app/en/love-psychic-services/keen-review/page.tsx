@@ -107,8 +107,8 @@ export default function KeenReviewPage() {
             <strong className="text-gray-900">Pricing:</strong> $1.99–$50/min
           </span>
           <span>
-            <strong className="text-gray-900">First-time offer:</strong>{' '}
-            3 free minutes
+            <strong className="text-gray-900">Intro offer:</strong>{' '}
+            5 minutes for $1*
           </span>
         </div>
 
@@ -119,8 +119,9 @@ export default function KeenReviewPage() {
       <div className="max-w-3xl mx-auto px-4 py-8 prose prose-purple prose-lg max-w-none">
         {/* Hero screenshot — Keen homepage / brand context */}
         <Screenshot
-          alt="Keen.com homepage — main browse interface"
-          caption="Keen.com — the platform homepage. Categories surface immediately: Love & Relationships sits at the top of the menu."
+          src="/images/keen/homepage.png"
+          alt="Keen.com homepage — &ldquo;Real answers from trusted psychics&rdquo;"
+          caption="Keen.com homepage. The interface leads with a question prompt — type what you're dealing with and the platform matches you to relevant advisors."
         />
 
         {/* TL;DR */}
@@ -133,8 +134,9 @@ export default function KeenReviewPage() {
             depth of advisor specialization (clairvoyants, empaths, tarot
             readers, dream interpreters) is one of the strongest on the
             market. Pay-per-minute pricing is the main downside; budget caps
-            are essential. Three free minutes with each new advisor make it
-            low-risk to test fit before committing.
+            are essential. New-user introductory pricing — currently{' '}
+            <strong>5 minutes for $1</strong> with each new advisor — keeps
+            the cost of testing fit low.
           </p>
         </section>
 
@@ -162,11 +164,23 @@ export default function KeenReviewPage() {
         <h2>How Keen works</h2>
         <p>
           Sign-up is free. Once you have an account you can browse the advisor
-          directory, filtered by category (Love &amp; Relationships, Tarot,
-          Dreams, Career, Astrology, etc.), sort by rating or price, and read
-          each advisor&apos;s self-written bio. Most have written reviews from
-          past clients; some include sample audio so you can get a sense of
-          their tone before paying for time.
+          directory, filtered by category (Love &amp; Relationships, Destiny
+          and Life Path, Family and Friends, Money and Prosperity, Career and
+          Work) plus subspecialties like Psychic Mediums, Otherworld
+          Connections, Dream Interpretation, and Pet Psychics. Each advisor
+          card shows rating, total readings since they joined the platform,
+          and current availability — and importantly, Keen surfaces one{' '}
+          <em>Highlighted Review</em> per advisor algorithmically, which
+          functions as a quick credibility check before you commit any time.
+        </p>
+        <p>
+          One detail worth flagging that&apos;s easy to miss: regular
+          advisors keep continuity across sessions. The first author of a
+          5-star review on a profile we tested put it well: &ldquo;She
+          remembers details from our previous conversations which makes the
+          experience feel personal and thoughtful.&rdquo; If you find an
+          advisor whose readings work for you, the relationship deepens with
+          re-use rather than restarting cold each time.
         </p>
         <p>
           Sessions happen in three formats:
@@ -188,16 +202,21 @@ export default function KeenReviewPage() {
           </li>
         </ul>
         <p>
-          You pay per minute at the advisor&apos;s posted rate. The first
-          three minutes with any new advisor are free — a deliberately
-          generous trial window that lets you confirm the rapport feels right
-          before any real money changes hands. If the energy doesn&apos;t
-          click, end the call. There&apos;s no penalty.
+          You pay per minute at the advisor&apos;s posted rate. New users
+          get an introductory promotion — at the time of writing,{' '}
+          <strong>5 minutes for $1</strong> with each new advisor. The
+          promotion shows up as a discounted rate badge on each advisor card
+          (their original per-minute price crossed out, replaced by the
+          intro deal). It&apos;s a deliberately generous trial window that
+          lets you confirm rapport before any real money changes hands. If
+          the energy doesn&apos;t click in those first few minutes, end the
+          session. There&apos;s no penalty.
         </p>
 
         <Screenshot
-          alt="Keen advisor browse page — Love & Relationships category"
-          caption="The Love & Relationships category on Keen. Filters: rating, price, specialty, and live-now status."
+          src="/images/keen/advisor-browse.png"
+          alt="Keen advisor browse — Love & Relationships category showing 6 advisor cards"
+          caption="The advisor grid. Each card surfaces rating, total readings since joining (e.g. 79,688 readings since 2005 for Gina Marie), the introductory '5 minutes for $1' badge, and live availability."
         />
 
         {/* Mid-CTA */}
@@ -206,8 +225,8 @@ export default function KeenReviewPage() {
             Want to see for yourself?
           </p>
           <p className="text-sm text-gray-700 mb-4">
-            Browse the love &amp; relationship advisors on Keen — first three
-            minutes are on the platform.
+            Browse the love &amp; relationship advisors on Keen — new users
+            get 5 minutes for $1 with each new advisor.
           </p>
           <AffiliateCTA
             offer="keen"
@@ -222,9 +241,11 @@ export default function KeenReviewPage() {
         <p>
           Posted rates range from $1.99/min on the low end (often newer
           advisors building reviews) to $50/min for top-tier specialists with
-          long waitlists. Most love advisors fall in the $4.99 to $15.99 per
-          minute band. A 15-minute session at $7.99/min, accounting for the
-          three free intro minutes, costs roughly $96.
+          long waitlists. Most love advisors fall in the $2.99 to $7.99 per
+          minute band based on a sample of currently-available advisors —
+          rates that look like &ldquo;$6.99/min&rdquo; or &ldquo;$2.99/min&rdquo;
+          on each card. A 15-minute session at $6.99/min, after the intro
+          deal&apos;s first 5 minutes for $1, costs roughly $71.
         </p>
         <p>
           Compared to in-person psychic readings, which typically run
@@ -244,9 +265,9 @@ export default function KeenReviewPage() {
         </p>
 
         <Screenshot
-          alt="Keen advisor profile — pricing display, rating, specialties"
-          caption="A typical Keen advisor profile. Pricing, rating, specialties, and recent reviews all visible before you start a session."
-          aspectRatio="portrait"
+          src="/images/keen/advisor-profile.png"
+          alt="Keen advisor profile page — Briaz, 4.85 rating, 439 reviews"
+          caption="A typical advisor profile. Rating breakdown, total ratings, total readings, current availability, and the intro &lsquo;5 minutes for $1&rsquo; badge are all visible above the fold — alongside a Highlighted Review pulled from past clients as a quick credibility check."
         />
 
         <h2>Best for</h2>
@@ -327,7 +348,7 @@ export default function KeenReviewPage() {
           actual perception.
         </p>
         <p>
-          Use the three free minutes deliberately. State your topic, give
+          Use the introductory minutes deliberately. State your topic, give
           minimal context, and listen to whether the advisor&apos;s
           response has texture and specificity or feels generic. If it
           feels generic, end the call without paying. If it feels specific
@@ -380,8 +401,9 @@ export default function KeenReviewPage() {
         </ol>
 
         <Screenshot
-          alt="Keen filter and sort controls in the advisor browse"
-          caption="Filter controls let you narrow by specialty, price band, and rating. The 'live now' filter is useful when you want a session immediately."
+          src="/images/keen/categories.png"
+          alt="Keen Explore by Topics categories and Psychic Readings subspecialties"
+          caption="Keen organizes browsing by both top-level topics (Love & Relationships, Destiny and Life Path, Family and Friends, Money and Prosperity, Career and Work) and reading subspecialties — Psychic Mediums, Otherworld Connections, Dream Interpretation, Pet Psychics, and more. The depth lets you find a specialist whose framework matches your question."
         />
 
         <h2>Pros and cons</h2>
@@ -425,7 +447,8 @@ export default function KeenReviewPage() {
         <p>
           Our honest recommendation for a first-time user: pick a love
           advisor rated 4.5 or higher in the $5–$10 per minute range, set a
-          $50 cap on your first call, and use the three free minutes to test
+          $50 cap on your first call, and use the intro &lsquo;5 minutes for
+          $1&rsquo; window to test
           fit before committing. If the rapport works, twenty minutes is
           usually enough for one focused question. If it doesn&apos;t, end
           the call without payment and try a different advisor next time.
