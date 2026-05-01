@@ -33,11 +33,10 @@ export async function GET(
   }
 
   const sp = request.nextUrl.searchParams;
-  const target = buildClickUrl(offer, {
-    gclid: sp.get('gclid'),
-    gbraid: sp.get('gbraid'),
-    wbraid: sp.get('wbraid'),
-  });
+  const gclid = sp.get('gclid');
+  const gbraid = sp.get('gbraid');
+  const wbraid = sp.get('wbraid');
+  const target = buildClickUrl(offer, { gclid, gbraid, wbraid });
 
   if (!target) {
     // Offer base URL not configured — fail loud rather than redirect to a
@@ -48,6 +47,27 @@ export async function GET(
       { status: 503 }
     );
   }
+
+  // Diagnostic log — searchable in Vercel logs by offer or attribution_type.
+  // Lets us trace each click-out and confirm gclid/gbraid/wbraid are arriving
+  // at our handler from the lander as expected.
+  const attributionType = gclid
+    ? 'gclid'
+    : gbraid
+      ? 'gbraid'
+      : wbraid
+        ? 'wbraid'
+        : 'none';
+  console.log('[go] click_out', {
+    offer,
+    attribution_type: attributionType,
+    has_gclid: !!gclid,
+    has_gbraid: !!gbraid,
+    has_wbraid: !!wbraid,
+    referer: request.headers.get('referer') || null,
+    user_agent: (request.headers.get('user-agent') || '').slice(0, 120),
+    received_at: new Date().toISOString(),
+  });
 
   return NextResponse.redirect(target, 302);
 }
