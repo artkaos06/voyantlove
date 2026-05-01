@@ -11,6 +11,8 @@
 //     &goal_name={goal_name}
 //     &payout={payout}
 //     &gclid={aff_sub2}
+//     &gbraid={aff_sub3}
+//     &wbraid={aff_sub4}
 //     &country={country_code}
 //     &status={status}
 //     &dt={datetime}
@@ -19,6 +21,12 @@
 // `secret` are required. Status changes (pending → approved → rejected) fire
 // repeated postbacks; Google Ads dedupes via orderId = transaction_id, so
 // duplicate uploads are silently rejected by Google rather than counted twice.
+//
+// Attribution identifier routing:
+//   gclid  : standard web clicks (most users)
+//   gbraid : iOS users with restricted ad tracking (Apple ATT denied)
+//   wbraid : web clicks where gclid couldn't be set due to browser privacy
+// Exactly one is present per click. We forward whichever to Google Ads OCI.
 //
 // Security: shared-secret query param is the v1 auth model. v2: also pin the
 // inbound IP to BargesTech's outbound range once we have it from the AM.
@@ -71,6 +79,8 @@ async function handle(request: NextRequest) {
     revenue: event.revenue,
     status: event.status,
     gclid: event.gclid,
+    gbraid: event.gbraid,
+    wbraid: event.wbraid,
     country: event.country_code,
     datetime: event.datetime,
     received_at: new Date().toISOString(),
@@ -78,7 +88,7 @@ async function handle(request: NextRequest) {
 
   // Forward to Google Ads OCI when:
   //   - Google Ads creds are configured (graceful no-op if not)
-  //   - We have a gclid to attribute against
+  //   - We have at least one of gclid / gbraid / wbraid to attribute against
   //   - Status is not "rejected" (avoid uploading conversions we know are bad)
   //
   // Dedup is enforced by Google Ads on `orderId = transaction_id`. If a later
@@ -86,14 +96,24 @@ async function handle(request: NextRequest) {
   // the duplicate as a partial failure, which we log but don't surface as an
   // error to BargesTech.
   const statusLower = event.status?.toLowerCase();
-  const skipOci = statusLower === 'rejected' || !event.gclid;
+  const hasAttribution = Boolean(event.gclid || event.gbraid || event.wbraid);
+  const skipOci = statusLower === 'rejected' || !hasAttribution;
+  const attributionType = event.gclid
+    ? 'gclid'
+    : event.gbraid
+      ? 'gbraid'
+      : event.wbraid
+        ? 'wbraid'
+        : 'none';
 
   if (!skipOci && isGoogleAdsConfigured()) {
     try {
       const value = event.payout ? Number(event.payout) : undefined;
       const result = await uploadClickConversions([
         {
-          gclid: event.gclid!,
+          gclid: event.gclid,
+          gbraid: event.gbraid,
+          wbraid: event.wbraid,
           conversionDateTime: formatGoogleAdsDateTime(
             event.datetime || new Date()
           ),
@@ -105,12 +125,13 @@ async function handle(request: NextRequest) {
       if (result.success) {
         console.log('[postback] google_ads_oci ok', {
           txid: event.transaction_id,
-          gclid: event.gclid,
+          attribution_type: attributionType,
           partial_failures: result.partialFailures || null,
         });
       } else {
         console.error('[postback] google_ads_oci failed', {
           txid: event.transaction_id,
+          attribution_type: attributionType,
           message: result.message,
         });
       }
@@ -126,7 +147,7 @@ async function handle(request: NextRequest) {
   } else if (skipOci) {
     console.log('[postback] google_ads_oci skipped', {
       txid: event.transaction_id,
-      reason: statusLower === 'rejected' ? 'rejected_status' : 'no_gclid',
+      reason: statusLower === 'rejected' ? 'rejected_status' : 'no_attribution',
     });
   } else {
     // Google Ads not configured yet — expected during initial rollout, not

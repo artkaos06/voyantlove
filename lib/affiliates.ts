@@ -5,16 +5,39 @@
 // Offers: Keen, Kasamba
 //
 // The base tracking URL for each offer is copied verbatim from the BargesTech
-// backoffice (per offer, per affiliate ID) and stored in env. At click time we
-// stamp the Google Ads gclid into `aff_sub2` so it round-trips through TUNE
-// and comes back to us in the postback.
+// backoffice (per offer, per affiliate ID) and stored in env.
+//
+// At click time we stamp Google's attribution identifiers into TUNE sub-IDs
+// so they round-trip through TUNE and come back via the postback:
+//
+//   aff_sub2 = gclid   (standard web clicks — desktop, Android, most iOS)
+//   aff_sub3 = gbraid  (iOS users with restricted ad tracking — ATT denied)
+//   aff_sub4 = wbraid  (web clicks where gclid couldn't be set due to privacy)
+//
+// Exactly one of these three is set on any given click. The OCI uploader
+// (lib/googleAds.ts) accepts whichever is present and routes the conversion
+// to Google Ads using the matching parameter. Without gbraid/wbraid support,
+// roughly 10-20% of US iOS traffic would be unattributed.
 //
 // TUNE postback macro convention (curly braces) is documented at
 //   https://help.tune.com/hasoffers/implementing-server-postback-tracking/
 // We rely on: {transaction_id}, {event_id}, {offer_id}, {goal_id}, {payout},
-// {aff_sub2}, {country_code}, {status}, {datetime}.
+// {aff_sub2}, {aff_sub3}, {aff_sub4}, {country_code}, {status}, {datetime}.
 
 export type OfferKey = 'keen' | 'kasamba';
+
+/**
+ * Google Ads attribution identifiers. At most one is set on any given
+ * click — Google chooses which based on the user's privacy state at click time.
+ */
+export interface AttributionIds {
+  /** Standard Google click ID. Most common. */
+  gclid?: string | null;
+  /** iOS / Apple Tracking Transparency-restricted equivalent. */
+  gbraid?: string | null;
+  /** Web equivalent when gclid couldn't be set due to browser privacy. */
+  wbraid?: string | null;
+}
 
 interface OfferConfig {
   key: OfferKey;
@@ -36,13 +59,20 @@ export function getOfferName(offer: OfferKey): string {
 }
 
 /**
- * Build the BargesTech/TUNE tracking URL for the given offer, stamping the
- * Google Ads gclid into `aff_sub2` for round-trip attribution. Returns null
- * if the offer is unknown or its base URL is not configured.
+ * Build the BargesTech/TUNE tracking URL for the given offer, stamping
+ * Google attribution identifiers into TUNE sub-IDs for round-trip
+ * attribution. Returns null if the offer is unknown or its base URL is
+ * not configured.
+ *
+ * Sub-ID mapping:
+ *   aff_sub2 = gclid   aff_sub3 = gbraid   aff_sub4 = wbraid
+ *
+ * aff_sub (sub1) is intentionally left untouched in case the network
+ * later wants to use it for its own tagging.
  */
 export function buildClickUrl(
   offer: OfferKey,
-  gclid?: string | null
+  attribution?: AttributionIds | null
 ): string | null {
   const config = OFFERS[offer];
   if (!config) return null;
@@ -51,11 +81,9 @@ export function buildClickUrl(
 
   try {
     const url = new URL(base);
-    if (gclid) {
-      // aff_sub2 is the convention; aff_sub (sub1) stays untouched in case the
-      // network later wants to use it for its own tagging.
-      url.searchParams.set('aff_sub2', gclid);
-    }
+    if (attribution?.gclid) url.searchParams.set('aff_sub2', attribution.gclid);
+    if (attribution?.gbraid) url.searchParams.set('aff_sub3', attribution.gbraid);
+    if (attribution?.wbraid) url.searchParams.set('aff_sub4', attribution.wbraid);
     return url.toString();
   } catch {
     return null;
@@ -88,7 +116,12 @@ export interface PostbackEvent {
   payout?: string;
   revenue?: string;
   status?: string;
-  gclid?: string; // arrives as aff_sub2
+  /** Google click ID (standard web). Arrives as aff_sub2. */
+  gclid?: string;
+  /** iOS restricted-tracking equivalent of gclid. Arrives as aff_sub3. */
+  gbraid?: string;
+  /** Web restricted-tracking equivalent of gclid. Arrives as aff_sub4. */
+  wbraid?: string;
   aff_sub?: string;
   country_code?: string;
   datetime?: string;
@@ -123,6 +156,8 @@ export function parsePostback(params: URLSearchParams): PostbackEvent | null {
     revenue: params.get('revenue') || undefined,
     status: params.get('status') || undefined,
     gclid: params.get('gclid') || params.get('aff_sub2') || undefined,
+    gbraid: params.get('gbraid') || params.get('aff_sub3') || undefined,
+    wbraid: params.get('wbraid') || params.get('aff_sub4') || undefined,
     aff_sub: params.get('aff_sub') || undefined,
     country_code:
       params.get('country') || params.get('country_code') || undefined,

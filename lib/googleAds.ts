@@ -95,7 +95,18 @@ async function getToken(): Promise<string> {
 }
 
 export interface ClickConversion {
-  gclid: string;
+  /**
+   * Exactly one of `gclid`, `gbraid`, or `wbraid` should be set per
+   * conversion. Google's `uploadClickConversions` enforces this at the
+   * API layer — multiple set on the same conversion will partial-fail.
+   *
+   *   gclid  : standard Google Click ID (most desktop, Android, web iOS)
+   *   gbraid : iOS users with restricted ad tracking (ATT denied)
+   *   wbraid : web clicks where gclid couldn't be set due to browser privacy
+   */
+  gclid?: string;
+  gbraid?: string;
+  wbraid?: string;
   /** Format: "yyyy-MM-dd HH:mm:ss+HH:MM" — use formatGoogleAdsDateTime() */
   conversionDateTime: string;
   conversionValue?: number;
@@ -163,7 +174,12 @@ export async function uploadClickConversions(
 
   const body = {
     conversions: conversions.map((c) => ({
-      gclid: c.gclid,
+      // Exactly one of gclid / gbraid / wbraid per conversion. Spread only
+      // the one that's set — Google rejects requests where more than one
+      // identifier is present on the same conversion.
+      ...(c.gclid ? { gclid: c.gclid } : {}),
+      ...(c.gbraid ? { gbraid: c.gbraid } : {}),
+      ...(c.wbraid ? { wbraid: c.wbraid } : {}),
       conversionAction: `customers/${customerId}/conversionActions/${conversionActionId}`,
       conversionDateTime: c.conversionDateTime,
       ...(c.conversionValue !== undefined && Number.isFinite(c.conversionValue)
