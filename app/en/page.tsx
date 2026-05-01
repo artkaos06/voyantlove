@@ -137,6 +137,40 @@ export default function HomePage() {
                 Read the guide →
               </p>
             </Link>
+
+            <Link
+              href="/twin-flame-signs"
+              className="block bg-white p-6 rounded-xl border border-gray-200 hover:border-purple-300 hover:shadow-md transition"
+            >
+              <h3 className="font-bold text-lg mb-2 text-gray-900">
+                Twin flame signs
+              </h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Honest assessment of what twin flame signs actually mean,
+                the patterns that suggest a real connection vs. confirmation
+                bias, and how to get clarity.
+              </p>
+              <p className="text-purple-600 text-sm font-semibold mt-3">
+                Read the guide →
+              </p>
+            </Link>
+
+            <Link
+              href="/dream-about-ex-meaning"
+              className="block bg-white p-6 rounded-xl border border-gray-200 hover:border-purple-300 hover:shadow-md transition"
+            >
+              <h3 className="font-bold text-lg mb-2 text-gray-900">
+                Dream about ex meaning
+              </h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                The five common dream types about exes, what each one
+                actually means, and what to do with the feeling the morning
+                after.
+              </p>
+              <p className="text-purple-600 text-sm font-semibold mt-3">
+                Read the guide →
+              </p>
+            </Link>
           </div>
         </div>
       </section>

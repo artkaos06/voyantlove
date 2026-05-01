@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import AffiliateCTA from '@/components/en/AffiliateCTA';
 import AffiliateDisclosure from '@/components/en/AffiliateDisclosure';
+import Screenshot from '@/components/en/Screenshot';
 
 // Keen review — Tier 2 review page, primary launch target for paid traffic.
 //
@@ -116,6 +117,12 @@ export default function KeenReviewPage() {
 
       {/* Body */}
       <div className="max-w-3xl mx-auto px-4 py-8 prose prose-purple prose-lg max-w-none">
+        {/* Hero screenshot — Keen homepage / brand context */}
+        <Screenshot
+          alt="Keen.com homepage — main browse interface"
+          caption="Keen.com — the platform homepage. Categories surface immediately: Love & Relationships sits at the top of the menu."
+        />
+
         {/* TL;DR */}
         <section className="bg-purple-50 border-l-4 border-purple-400 p-5 rounded-r-md not-prose mb-10">
           <p className="font-bold text-purple-900 mb-2">In short</p>
@@ -188,6 +195,11 @@ export default function KeenReviewPage() {
           click, end the call. There&apos;s no penalty.
         </p>
 
+        <Screenshot
+          alt="Keen advisor browse page — Love & Relationships category"
+          caption="The Love & Relationships category on Keen. Filters: rating, price, specialty, and live-now status."
+        />
+
         {/* Mid-CTA */}
         <div className="not-prose my-10 p-6 bg-gradient-to-r from-purple-50 to-pink-50 border border-purple-200 rounded-xl">
           <p className="font-semibold text-gray-900 mb-2">
@@ -230,6 +242,12 @@ export default function KeenReviewPage() {
           $50 or $75 cap on your first session forces you to focus and
           protects against the bill creeping past what you intended to spend.
         </p>
+
+        <Screenshot
+          alt="Keen advisor profile — pricing display, rating, specialties"
+          caption="A typical Keen advisor profile. Pricing, rating, specialties, and recent reviews all visible before you start a session."
+          aspectRatio="portrait"
+        />
 
         <h2>Best for</h2>
         <ul>
@@ -360,6 +378,11 @@ export default function KeenReviewPage() {
             their bio.
           </li>
         </ol>
+
+        <Screenshot
+          alt="Keen filter and sort controls in the advisor browse"
+          caption="Filter controls let you narrow by specialty, price band, and rating. The 'live now' filter is useful when you want a session immediately."
+        />
 
         <h2>Pros and cons</h2>
         <div className="not-prose grid md:grid-cols-2 gap-6 my-8">
