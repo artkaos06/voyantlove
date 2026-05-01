@@ -11,9 +11,11 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
+  // Wrapper div (not <main>) — the parent app/en/layout.tsx provides the
+  // <main> landmark for the EN site, so a nested <main> would be invalid HTML.
   return (
-    <main className="min-h-screen bg-gradient-to-b from-purple-50 via-white to-pink-50">
+    <div className="min-h-screen bg-gradient-to-b from-purple-50 via-white to-pink-50">
       <LoveReadingClient />
-    </main>
+    </div>
   );
 }
