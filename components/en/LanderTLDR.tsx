@@ -7,11 +7,13 @@
 // Renders:
 //   - Reading-time indicator ("9 min read")
 //   - 3-bullet summary of the article's answer
-//   - Inline CTA button to the recommended service review
-//
-// Use at the top of each Tier 1 topic page (will-he-come-back, etc.).
+//   - Custom CTA passed in via `cta` prop (allows topic pages to choose
+//     between an internal Link to the review page or a direct AffiliateCTA
+//     to the offer URL — important for conversion engineering on cold
+//     paid traffic).
 
 import Link from 'next/link';
+import type { ReactNode } from 'react';
 
 interface LanderTLDRProps {
   /** Estimated reading time, e.g. "9 min read". */
@@ -20,18 +22,31 @@ interface LanderTLDRProps {
   subtitle?: string;
   /** 3 bullets summarizing the article's answer. */
   summary: string[];
-  /** Override the CTA destination (defaults to Keen review). */
+  /** Optional headline above the CTA, defaults to a generic prompt. */
+  ctaPrompt?: string;
+  /**
+   * Optional custom CTA element. When provided, replaces the default
+   * internal-Link CTA. Use this to pass an <AffiliateCTA /> for direct
+   * offer-led conversion paths, or to customize the destination.
+   */
+  cta?: ReactNode;
+  /** Override the default CTA destination (only used if `cta` not provided). */
   ctaHref?: string;
-  /** Override the CTA label. */
+  /** Override the default CTA label (only used if `cta` not provided). */
   ctaLabel?: string;
+  /** Optional small print below the CTA, e.g. price/disclaimer. */
+  ctaFootnote?: string;
 }
 
 export default function LanderTLDR({
   readingTime,
   subtitle = 'Honest editorial',
   summary,
+  ctaPrompt = 'Want personalized clarity from a real love psychic?',
+  cta,
   ctaHref = '/love-psychic-services/keen-review',
   ctaLabel = 'See our Keen review →',
+  ctaFootnote,
 }: LanderTLDRProps) {
   return (
     <aside className="not-prose my-8 rounded-2xl border border-purple-200 bg-gradient-to-br from-purple-50 via-white to-pink-50 p-6 md:p-7 shadow-sm">
@@ -62,15 +77,20 @@ export default function LanderTLDR({
       </ul>
 
       <div className="pt-4 border-t border-purple-100">
-        <p className="text-xs text-gray-600 mb-2.5">
-          Want personalized clarity from a real love psychic?
-        </p>
-        <Link
-          href={ctaHref}
-          className="inline-flex items-center gap-2 bg-purple-600 hover:bg-purple-700 text-white text-sm font-semibold px-4 py-2.5 rounded-lg transition-colors"
-        >
-          {ctaLabel}
-        </Link>
+        <p className="text-xs text-gray-600 mb-2.5">{ctaPrompt}</p>
+        {cta ? (
+          cta
+        ) : (
+          <Link
+            href={ctaHref}
+            className="inline-flex items-center gap-2 bg-purple-600 hover:bg-purple-700 text-white text-sm font-semibold px-4 py-2.5 rounded-lg transition-colors"
+          >
+            {ctaLabel}
+          </Link>
+        )}
+        {ctaFootnote && (
+          <p className="text-xs text-gray-500 mt-2">{ctaFootnote}</p>
+        )}
       </div>
     </aside>
   );
