@@ -38,6 +38,7 @@ import {
   isGoogleAdsConfigured,
   uploadClickConversions,
 } from '@/lib/googleAds';
+import { Color, notifyDiscord } from '@/lib/discord';
 
 export const dynamic = 'force-dynamic';
 
@@ -86,6 +87,46 @@ async function handle(request: NextRequest) {
     received_at: new Date().toISOString(),
   });
 
+  // Real-time Discord notification on every inbound postback. Conversions
+  // are the headline event of the entire system — getting them in chat
+  // immediately matters more than for click-outs.
+  const earlyAttributionType = event.gclid
+    ? 'gclid'
+    : event.gbraid
+      ? 'gbraid'
+      : event.wbraid
+        ? 'wbraid'
+        : 'none';
+  notifyDiscord({
+    title: '🎯 Postback received · CONVERSION',
+    color: Color.GREEN,
+    fields: [
+      { name: 'Transaction ID', value: event.transaction_id, inline: true },
+      ...(event.payout
+        ? [{ name: 'Payout', value: `$${event.payout}`, inline: true }]
+        : []),
+      ...(event.status
+        ? [{ name: 'Status', value: event.status, inline: true }]
+        : []),
+      { name: 'Attribution', value: earlyAttributionType, inline: true },
+      ...(event.gclid
+        ? [{ name: 'gclid', value: event.gclid, inline: false }]
+        : []),
+      ...(event.gbraid
+        ? [{ name: 'gbraid', value: event.gbraid, inline: false }]
+        : []),
+      ...(event.wbraid
+        ? [{ name: 'wbraid', value: event.wbraid, inline: false }]
+        : []),
+      ...(event.country_code
+        ? [{ name: 'Country', value: event.country_code, inline: true }]
+        : []),
+      ...(event.goal_name
+        ? [{ name: 'Goal', value: event.goal_name, inline: true }]
+        : []),
+    ],
+  });
+
   // Forward to Google Ads OCI when:
   //   - Google Ads creds are configured (graceful no-op if not)
   //   - We have at least one of gclid / gbraid / wbraid to attribute against
@@ -128,11 +169,38 @@ async function handle(request: NextRequest) {
           attribution_type: attributionType,
           partial_failures: result.partialFailures || null,
         });
+        notifyDiscord({
+          title: '✅ Google Ads OCI · upload OK',
+          description:
+            'Conversion successfully attributed in Google Ads. Smart Bidding will use this signal for future auctions.',
+          color: Color.GREEN,
+          fields: [
+            { name: 'Transaction ID', value: event.transaction_id, inline: true },
+            { name: 'Attribution', value: attributionType, inline: true },
+            ...(result.partialFailures
+              ? [
+                  {
+                    name: 'Partial failures',
+                    value: JSON.stringify(result.partialFailures).slice(0, 900),
+                  },
+                ]
+              : []),
+          ],
+        });
       } else {
         console.error('[postback] google_ads_oci failed', {
           txid: event.transaction_id,
           attribution_type: attributionType,
           message: result.message,
+        });
+        notifyDiscord({
+          title: '🔴 Google Ads OCI · upload FAILED',
+          description: result.message?.slice(0, 1500) || 'No details available.',
+          color: Color.RED,
+          fields: [
+            { name: 'Transaction ID', value: event.transaction_id, inline: true },
+            { name: 'Attribution', value: attributionType, inline: true },
+          ],
         });
       }
     } catch (err) {
@@ -142,6 +210,15 @@ async function handle(request: NextRequest) {
       console.error('[postback] google_ads_oci threw', {
         txid: event.transaction_id,
         error: err instanceof Error ? err.message : String(err),
+      });
+      notifyDiscord({
+        title: '🔴 Google Ads OCI · transport error',
+        description:
+          err instanceof Error ? err.message.slice(0, 1500) : String(err),
+        color: Color.RED,
+        fields: [
+          { name: 'Transaction ID', value: event.transaction_id, inline: true },
+        ],
       });
     }
   } else if (skipOci) {

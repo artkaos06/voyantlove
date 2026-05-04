@@ -16,6 +16,7 @@
 
 import { NextRequest, NextResponse } from 'next/server';
 import { buildClickUrl, isValidOfferKey } from '@/lib/affiliates';
+import { Color, notifyDiscord } from '@/lib/discord';
 
 export const dynamic = 'force-dynamic';
 
@@ -58,15 +59,46 @@ export async function GET(
       : wbraid
         ? 'wbraid'
         : 'none';
+  const referer = request.headers.get('referer') || null;
+  const userAgent = (request.headers.get('user-agent') || '').slice(0, 200);
   console.log('[go] click_out', {
     offer,
     attribution_type: attributionType,
     has_gclid: !!gclid,
     has_gbraid: !!gbraid,
     has_wbraid: !!wbraid,
-    referer: request.headers.get('referer') || null,
-    user_agent: (request.headers.get('user-agent') || '').slice(0, 120),
+    referer,
+    user_agent: userAgent.slice(0, 120),
     received_at: new Date().toISOString(),
+  });
+
+  // Best-effort Discord notification — fire-and-forget so we never block
+  // the redirect on webhook latency or failure.
+  notifyDiscord({
+    title: `🔗 Click-out · ${offer}`,
+    color:
+      attributionType === 'gclid' || attributionType === 'gbraid' ||
+      attributionType === 'wbraid'
+        ? Color.PURPLE
+        : Color.YELLOW,
+    fields: [
+      {
+        name: 'Attribution',
+        value: attributionType,
+        inline: true,
+      },
+      ...(gclid ? [{ name: 'gclid', value: gclid, inline: true }] : []),
+      ...(gbraid ? [{ name: 'gbraid', value: gbraid, inline: true }] : []),
+      ...(wbraid ? [{ name: 'wbraid', value: wbraid, inline: true }] : []),
+      {
+        name: 'Referer',
+        value: referer || '(none — likely bot or direct URL hit)',
+      },
+      {
+        name: 'User Agent',
+        value: userAgent || '(empty)',
+      },
+    ],
   });
 
   return NextResponse.redirect(target, 302);
