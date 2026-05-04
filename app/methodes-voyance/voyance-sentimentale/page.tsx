@@ -7,8 +7,8 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
 export const metadata: Metadata = {
-  title: 'Consultation Voyance Sentimentale : Guidance Amour par Voyant Expert',
-  description: 'Consultation de voyance sentimentale avec un voyant spécialisé amour. Questions de cœur, sentiments, avenir amoureux et reconquête. Réponses précises.',
+  title: 'Voyance Sentimentale : Consultation Gratuite ou avec Voyant Expert',
+  description: 'Voyance sentimentale : consultation gratuite ou avec voyant spécialisé amour. Sentiments, couple, reconquête, rencontre — guidance par tarot, oracle et clairvoyance.',
   keywords: ['consultation voyance sentimentale', 'voyance sentimentale', 'consultation voyance amour', 'voyance amoureuse', 'voyance du coeur', 'voyant amour'],
   alternates: {
     canonical: 'https://www.voyantlove.fr/methodes-voyance/voyance-sentimentale/',
@@ -17,8 +17,8 @@ export const metadata: Metadata = {
 
 export default function VoyanceSentimentalePage() {
   const articleSchema = getArticleSchema({
-    title: 'Consultation Voyance Sentimentale : Guidance Amour par Voyant Expert',
-    description: 'Consultation de voyance sentimentale avec un voyant spécialisé amour. Questions de cœur, sentiments, avenir amoureux et reconquête. Réponses précises.',
+    title: 'Voyance Sentimentale : Consultation Gratuite ou avec Voyant Expert',
+    description: 'Voyance sentimentale : consultation gratuite ou avec voyant spécialisé amour. Sentiments, couple, reconquête, rencontre — guidance par tarot, oracle et clairvoyance.',
     url: 'https://www.voyantlove.fr/methodes-voyance/voyance-sentimentale/',
     datePublished: '2026-03-13',
     dateModified: new Date().toISOString().split('T')[0],

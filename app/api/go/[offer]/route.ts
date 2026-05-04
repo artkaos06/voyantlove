@@ -16,7 +16,9 @@
 
 import { NextRequest, NextResponse } from 'next/server';
 import { buildClickUrl, isValidOfferKey } from '@/lib/affiliates';
+import { checkClickAnomaly } from '@/lib/clickAnomaly';
 import { Color, notifyDiscord } from '@/lib/discord';
+import { recordClickOut } from '@/lib/digestState';
 
 export const dynamic = 'force-dynamic';
 
@@ -61,6 +63,11 @@ export async function GET(
         : 'none';
   const referer = request.headers.get('referer') || null;
   const userAgent = (request.headers.get('user-agent') || '').slice(0, 200);
+  const ip =
+    request.headers.get('x-forwarded-for')?.split(',')[0]?.trim() ||
+    request.headers.get('x-real-ip') ||
+    null;
+
   console.log('[go] click_out', {
     offer,
     attribution_type: attributionType,
@@ -71,6 +78,28 @@ export async function GET(
     user_agent: userAgent.slice(0, 120),
     received_at: new Date().toISOString(),
   });
+
+  // Daily-digest counter.
+  recordClickOut({ attributionType, ip });
+
+  // Click-rate anomaly detection — alerts on bursts of clicks from the
+  // same IP that may indicate bot activity or click-fraud against our
+  // /api/go endpoint.
+  const anomaly = checkClickAnomaly(ip);
+  if (anomaly.shouldAlert) {
+    notifyDiscord({
+      title: '🚨 Click anomaly · possible bot activity',
+      description: `Single IP fired ${anomaly.count} click-outs in the last 60 seconds. Threshold = 10/min. Cooldown 5 min before re-alerting.`,
+      color: Color.RED,
+      fields: [
+        { name: 'IP', value: ip || '(unknown)', inline: true },
+        { name: 'Offer', value: offer, inline: true },
+        { name: 'Clicks/min', value: String(anomaly.count), inline: true },
+        { name: 'User Agent', value: userAgent || '(empty)' },
+        { name: 'Referer', value: referer || '(none)' },
+      ],
+    });
+  }
 
   // Best-effort Discord notification — fire-and-forget so we never block
   // the redirect on webhook latency or failure.

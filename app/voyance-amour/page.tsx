@@ -6,16 +6,16 @@ import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
 export const metadata: Metadata = {
-  title: 'Voyance Amour : Consultation Voyant Amour en Ligne | VoyantLove',
-  description: 'Voyance amour : consultez un voyant sp\u00e9cialis\u00e9 en amour pour vos questions sentimentales. Reconqu\u00eate, sentiments, rupture, rencontre \u2014 guidance tarot et astrologie.',
-  keywords: ['voyance amour', 'voyant amour', 'voyante amour', 'voyance amoureuse', 'voyance en amour', 'consultation voyance amour', 'voyance amour couple', 'voyance relation amoureuse'],
+  title: 'Voyance Amour : Consultation Voyant & Voyante Amour Sp\u00e9cialis\u00e9 | VoyantLove',
+  description: 'Voyance amour : consultation avec un voyant ou une voyante sp\u00e9cialis\u00e9 en questions sentimentales. Couple, reconqu\u00eate, rupture, rencontre \u2014 guidance tarot, astrologie et clairvoyance.',
+  keywords: ['voyance amour', 'voyant amour', 'voyante amour', 'voyance amoureuse', 'voyance en amour', 'consultation voyance amour', 'voyance amour couple', 'voyance relation amoureuse', 'voyance amour avis'],
   alternates: { canonical: 'https://www.voyantlove.fr/voyance-amour/' },
 };
 
 export default function VoyanceAmourPage() {
   const webPageSchema = getWebPageSchema({
-    title: 'Voyance Amour : Consultation Voyant Amour en Ligne | VoyantLove',
-    description: 'Voyance amour : consultez un voyant sp\u00e9cialis\u00e9 en amour pour vos questions sentimentales. Reconqu\u00eate, sentiments, rupture, rencontre \u2014 guidance tarot et astrologie.',
+    title: 'Voyance Amour : Consultation Voyant & Voyante Amour Sp\u00e9cialis\u00e9 | VoyantLove',
+    description: 'Voyance amour : consultation avec un voyant ou une voyante sp\u00e9cialis\u00e9 en questions sentimentales. Couple, reconqu\u00eate, rupture, rencontre \u2014 guidance tarot, astrologie et clairvoyance.',
     url: 'https://www.voyantlove.fr/voyance-amour/',
   });
 
@@ -51,6 +51,18 @@ export default function VoyanceAmourPage() {
     {
       question: 'Quelles questions poser lors d\u2019une voyance en amour\u00a0?',
       answer: 'Les questions les plus efficaces sont ouvertes et centr\u00e9es sur vous. Plut\u00f4t que \u00ab\u00a0Est-ce qu\u2019il m\u2019aime\u00a0?\u00a0\u00bb (r\u00e9ponse oui/non), demandez \u00ab\u00a0Quelles sont les \u00e9nergies actuelles entre nous\u00a0?\u00a0\u00bb ou \u00ab\u00a0Que puis-je faire pour am\u00e9liorer ma situation amoureuse\u00a0?\u00a0\u00bb. Parmi les meilleures questions\u00a0: \u00ab\u00a0Quels blocages freinent ma rencontre\u00a0?\u00a0\u00bb, \u00ab\u00a0Mon couple \u00e9volue dans quelle direction\u00a0?\u00a0\u00bb, \u00ab\u00a0Quelle le\u00e7on tirer de cette rupture\u00a0?\u00a0\u00bb. Plus votre question donne de mati\u00e8re au voyant, plus la r\u00e9ponse sera riche et actionnable. \u00c9vitez les questions portant sur le libre arbitre d\u2019une tierce personne.',
+    },
+    {
+      question: 'Combien co\u00fbte une consultation de voyance amour\u00a0?',
+      answer: 'Le tarif d\u2019une consultation de voyance amour varie selon le mode et le voyant choisi. Par t\u00e9l\u00e9phone, comptez g\u00e9n\u00e9ralement entre 1,30\u00a0\u20ac et 2,50\u00a0\u20ac la minute, soit 25 \u00e0 75\u00a0\u20ac pour une consultation de 20 \u00e0 30 minutes. Le chat en ligne est souvent l\u00e9g\u00e8rement moins cher, autour de 2\u00a0\u20ac la minute. Une consultation par e-mail d\u00e9taill\u00e9e co\u00fbte habituellement entre 10 et 25\u00a0\u20ac par question. Beaucoup de plateformes proposent les premi\u00e8res minutes gratuites pour d\u00e9couvrir un voyant amour avant de s\u2019engager. Le tarif vous est toujours communiqu\u00e9 avant la consultation, et vous gardez le contr\u00f4le de la dur\u00e9e.',
+    },
+    {
+      question: 'Quelle diff\u00e9rence entre la voyance amour et la voyance g\u00e9n\u00e9rale\u00a0?',
+      answer: 'Un voyant g\u00e9n\u00e9raliste traite toutes les questions de vie\u00a0: carri\u00e8re, finances, sant\u00e9, famille, amour. Un voyant sp\u00e9cialis\u00e9 en voyance amour consacre l\u2019essentiel de sa pratique aux questions sentimentales \u2014 couple, reconqu\u00eate, rupture, sentiments, rencontre. Cette sp\u00e9cialisation affine son intuition sur les dynamiques relationnelles\u00a0: il identifie plus rapidement les blocages affectifs, comprend mieux les sch\u00e9mas r\u00e9p\u00e9titifs et capte les nuances \u00e9motionnelles que d\u2019autres pourraient manquer. Pour une question d\u2019amour profonde, privil\u00e9giez toujours un voyant ou une voyante amour sp\u00e9cialis\u00e9 plut\u00f4t qu\u2019un g\u00e9n\u00e9raliste.',
+    },
+    {
+      question: 'Comment choisir entre voyance amour par t\u00e9l\u00e9phone, chat ou e-mail\u00a0?',
+      answer: 'Le t\u00e9l\u00e9phone est le format le plus complet\u00a0: la voix permet au voyant de capter votre \u00e9nergie, de poser des questions de clarification et d\u2019adapter la lecture en temps r\u00e9el. Id\u00e9al pour les situations complexes ou \u00e9motionnellement charg\u00e9es. Le chat est parfait pour les personnes timides ou souhaitant une trace \u00e9crite\u00a0; il permet aussi de consulter discr\u00e8tement depuis n\u2019importe o\u00f9. L\u2019e-mail convient pour les questions pr\u00e9cises o\u00f9 vous souhaitez une analyse pos\u00e9e et structur\u00e9e, sans pression du temps. Pour la voyance amour couple ou la reconqu\u00eate, le t\u00e9l\u00e9phone reste recommand\u00e9 pour sa richesse \u00e9motionnelle.',
     },
   ]);
 
@@ -265,6 +277,53 @@ export default function VoyanceAmourPage() {
           </div>
         </section>
 
+        {/* Section: Voyance Amour pour Couple */}
+        <section className="bg-white rounded-xl shadow-md p-8 mb-12">
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Voyance Amour pour Couple&nbsp;: &Eacute;clairer votre Relation</h2>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            La <strong>voyance amour couple</strong> s&rsquo;adresse aux personnes en relation qui souhaitent comprendre la dynamique &eacute;motionnelle de leur partenaire ou anticiper l&rsquo;&eacute;volution de leur histoire. Contrairement &agrave; la voyance pour c&eacute;libataires (centr&eacute;e sur la rencontre), la voyance amour pour couple analyse la <strong>relation amoureuse existante</strong>&nbsp;: niveau d&rsquo;engagement r&eacute;el, blocages communs, projets compatibles et compatibilit&eacute; profonde &agrave; long terme.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            Un <strong>voyant sp&eacute;cialis&eacute; en voyance relation amoureuse</strong> aborde des questions sp&eacute;cifiques&nbsp;: votre partenaire est-il sinc&egrave;rement engag&eacute;&nbsp;? La crise actuelle est-elle passag&egrave;re ou annonciatrice d&rsquo;une rupture&nbsp;? Y a-t-il une troisi&egrave;me personne dans le tableau&nbsp;? Comment retrouver l&rsquo;&eacute;quilibre apr&egrave;s une infid&eacute;lit&eacute;&nbsp;? Le tarot relationnel et la <Link href="/methodes-voyance/synastrie-amoureuse" className="text-purple-600 hover:text-purple-800 underline">synastrie astrologique</Link> sont les outils les plus utilis&eacute;s pour ce type de lecture.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Si votre couple traverse une p&eacute;riode difficile, notre hub <Link href="/crise-couple/" className="text-purple-600 hover:text-purple-800 underline">crise de couple</Link> propose des guidances cibl&eacute;es&nbsp;: <Link href="/crise-couple/infidelite-couple" className="text-purple-600 hover:text-purple-800 underline">infid&eacute;lit&eacute;</Link>, <Link href="/crise-couple/jalousie-excessive" className="text-purple-600 hover:text-purple-800 underline">jalousie</Link>, <Link href="/crise-couple/problemes-communication-couple" className="text-purple-600 hover:text-purple-800 underline">probl&egrave;mes de communication</Link>, <Link href="/crise-couple/sauver-son-couple" className="text-purple-600 hover:text-purple-800 underline">sauver son couple</Link>.
+          </p>
+          <div className="grid md:grid-cols-3 gap-4 text-sm">
+            <div className="bg-purple-50 rounded-lg p-4 border border-purple-100">
+              <p className="font-bold text-purple-800 mb-1">M&rsquo;aime-t-il vraiment&nbsp;?</p>
+              <p className="text-gray-700">Sentiments r&eacute;els et profondeur de l&rsquo;engagement.</p>
+            </div>
+            <div className="bg-purple-50 rounded-lg p-4 border border-purple-100">
+              <p className="font-bold text-purple-800 mb-1">Couple en crise&nbsp;?</p>
+              <p className="text-gray-700">Identifier ce qui se joue pour d&eacute;cider en conscience.</p>
+            </div>
+            <div className="bg-purple-50 rounded-lg p-4 border border-purple-100">
+              <p className="font-bold text-purple-800 mb-1">Avenir &agrave; deux</p>
+              <p className="text-gray-700">Compatibilit&eacute; profonde, mariage, projets communs.</p>
+            </div>
+          </div>
+        </section>
+
+        {/* Section: Avis sur la Voyance Amour */}
+        <section className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-xl p-8 mb-12 border border-amber-200">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">Avis sur la Voyance Amour&nbsp;: Que Disent les Consultants&nbsp;?</h2>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Les <strong>avis sur la voyance amour</strong> sont aussi vari&eacute;s que les consultants eux-m&ecirc;mes. Sur les principales plateformes fran&ccedil;aises, environ <strong>70&nbsp;% des personnes</strong> ayant consult&eacute; un voyant amour estiment avoir re&ccedil;u une guidance utile, et 4 sur 10 reviennent r&eacute;guli&egrave;rement. Les retours les plus positifs concernent la <strong>clart&eacute; apport&eacute;e dans une situation complexe</strong>, la pr&eacute;cision de certains d&eacute;tails que le voyant ne pouvait conna&icirc;tre, et l&rsquo;aide &agrave; prendre une d&eacute;cision difficile.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Les avis n&eacute;gatifs concernent principalement deux situations&nbsp;: les voyants peu sc&eacute;rieux qui font des promesses irr&eacute;alistes (&laquo;&nbsp;votre ex revient dans 7 jours&nbsp;&raquo;) et les consultants qui attendaient une r&eacute;ponse pr&eacute;cise mais ont re&ccedil;u une lecture g&eacute;n&eacute;rale. Pour &eacute;viter ces deux &eacute;cueils, deux conseils&nbsp;: lisez attentivement les avis d&eacute;taill&eacute;s avant de choisir un voyant, et formulez une question pr&eacute;cise plut&ocirc;t qu&rsquo;une demande vague.
+          </p>
+          <div className="bg-white rounded-lg p-5 border border-amber-200">
+            <p className="text-sm text-gray-500 uppercase tracking-wide font-semibold mb-2">3 questions &agrave; vous poser apr&egrave;s une consultation</p>
+            <ul className="text-gray-700 space-y-2 text-sm">
+              <li>&bull; Le voyant a-t-il pos&eacute; peu de questions et capt&eacute; rapidement ma situation&nbsp;?</li>
+              <li>&bull; A-t-il donn&eacute; des d&eacute;tails pr&eacute;cis ou seulement des g&eacute;n&eacute;ralit&eacute;s&nbsp;?</li>
+              <li>&bull; M&rsquo;a-t-il pouss&eacute; &agrave; rappeler rapidement ou m&rsquo;a-t-il rendu autonome&nbsp;?</li>
+            </ul>
+          </div>
+        </section>
+
         {/* Section 5: Voyance Amour Gratuite */}
         <section className="bg-gradient-to-r from-emerald-50 to-teal-50 rounded-xl p-8 mb-12 border border-emerald-200">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">&#x1F381; Voyance Amour Gratuite</h2>
@@ -352,9 +411,24 @@ export default function VoyanceAmourPage() {
               <p className="text-gray-700 leading-relaxed">Oui, il existe plusieurs options de <strong>voyance amour gratuite</strong>, mais il faut en conna&icirc;tre les limites. Les tirages en ligne automatis&eacute;s &mdash; comme le <Link href="/voyance-gratuite-amour/tarot-oui-non-amour/" className="text-purple-600 hover:text-purple-800 underline">tarot oui/non amour</Link> &mdash; offrent une premi&egrave;re r&eacute;ponse rapide sur une question simple. Certaines plateformes proposent aussi quelques minutes gratuites pour d&eacute;couvrir un voyant avant de s&rsquo;engager. En revanche, une consultation approfondie avec analyse compl&egrave;te de votre situation sentimentale n&eacute;cessite du temps et une expertise qui justifient une r&eacute;mun&eacute;ration. Consid&eacute;rez la voyance gratuite comme un premier pas, non comme un remplacement de la guidance personnalis&eacute;e.</p>
             </div>
 
-            <div>
+            <div className="border-b border-gray-200 pb-6">
               <h3 className="text-xl font-bold text-gray-900 mb-3">Quelles questions poser lors d&rsquo;une voyance en amour&nbsp;?</h3>
               <p className="text-gray-700 leading-relaxed">Les questions les plus efficaces sont ouvertes et centr&eacute;es sur vous. Plut&ocirc;t que &laquo;&nbsp;Est-ce qu&rsquo;il m&rsquo;aime&nbsp;?&nbsp;&raquo; (r&eacute;ponse oui/non), demandez &laquo;&nbsp;Quelles sont les &eacute;nergies actuelles entre nous&nbsp;?&nbsp;&raquo; ou &laquo;&nbsp;Que puis-je faire pour am&eacute;liorer ma situation amoureuse&nbsp;?&nbsp;&raquo;. Parmi les meilleures questions&nbsp;: &laquo;&nbsp;Quels blocages freinent ma <Link href="/nouvelle-rencontre/" className="text-purple-600 hover:text-purple-800 underline">rencontre</Link>&nbsp;?&nbsp;&raquo;, &laquo;&nbsp;Mon <Link href="/crise-couple/" className="text-purple-600 hover:text-purple-800 underline">couple</Link> &eacute;volue dans quelle direction&nbsp;?&nbsp;&raquo;, &laquo;&nbsp;Quelle le&ccedil;on tirer de cette <Link href="/rupture/" className="text-purple-600 hover:text-purple-800 underline">rupture</Link>&nbsp;?&nbsp;&raquo;. Plus votre question donne de mati&egrave;re au voyant, plus la r&eacute;ponse sera riche et actionnable.</p>
+            </div>
+
+            <div className="border-b border-gray-200 pb-6">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Combien co&ucirc;te une consultation de voyance amour&nbsp;?</h3>
+              <p className="text-gray-700 leading-relaxed">Le tarif d&rsquo;une <strong>consultation voyance amour</strong> varie selon le mode et le voyant choisi. Par t&eacute;l&eacute;phone, comptez g&eacute;n&eacute;ralement entre <strong>1,30 &euro; et 2,50 &euro;</strong> la minute, soit 25 &agrave; 75 &euro; pour une consultation de 20 &agrave; 30 minutes. Le chat en ligne est souvent l&eacute;g&egrave;rement moins cher, autour de <strong>2 &euro;</strong> la minute. Une consultation par e-mail d&eacute;taill&eacute;e co&ucirc;te habituellement entre <strong>10 et 25 &euro;</strong> par question. Beaucoup de plateformes proposent les premi&egrave;res minutes gratuites pour d&eacute;couvrir un voyant amour avant de s&rsquo;engager. Le tarif vous est toujours communiqu&eacute; avant la consultation, et vous gardez le contr&ocirc;le de la dur&eacute;e.</p>
+            </div>
+
+            <div className="border-b border-gray-200 pb-6">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Quelle diff&eacute;rence entre la voyance amour et la voyance g&eacute;n&eacute;rale&nbsp;?</h3>
+              <p className="text-gray-700 leading-relaxed">Un voyant g&eacute;n&eacute;raliste traite toutes les questions de vie&nbsp;: carri&egrave;re, finances, sant&eacute;, famille, amour. Un voyant sp&eacute;cialis&eacute; en <strong>voyance amour</strong> consacre l&rsquo;essentiel de sa pratique aux questions sentimentales &mdash; <strong>couple</strong>, reconqu&ecirc;te, rupture, sentiments, rencontre. Cette sp&eacute;cialisation affine son intuition sur les <strong>dynamiques relationnelles</strong>&nbsp;: il identifie plus rapidement les blocages affectifs, comprend mieux les sch&eacute;mas r&eacute;p&eacute;titifs et capte les nuances &eacute;motionnelles que d&rsquo;autres pourraient manquer. Pour une question d&rsquo;amour profonde, privil&eacute;giez toujours un voyant ou une <strong>voyante amour</strong> sp&eacute;cialis&eacute; plut&ocirc;t qu&rsquo;un g&eacute;n&eacute;raliste.</p>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Comment choisir entre voyance amour par t&eacute;l&eacute;phone, chat ou e-mail&nbsp;?</h3>
+              <p className="text-gray-700 leading-relaxed">Le <strong>t&eacute;l&eacute;phone</strong> est le format le plus complet&nbsp;: la voix permet au voyant de capter votre &eacute;nergie, de poser des questions de clarification et d&rsquo;adapter la lecture en temps r&eacute;el. Id&eacute;al pour les situations complexes ou &eacute;motionnellement charg&eacute;es. Le <strong>chat</strong> est parfait pour les personnes timides ou souhaitant une trace &eacute;crite&nbsp;; il permet aussi de consulter discr&egrave;tement depuis n&rsquo;importe o&ugrave;. L&rsquo;<strong>e-mail</strong> convient pour les questions pr&eacute;cises o&ugrave; vous souhaitez une analyse pos&eacute;e et structur&eacute;e, sans pression du temps. Pour la <strong>voyance amour couple</strong> ou la reconqu&ecirc;te, le t&eacute;l&eacute;phone reste recommand&eacute; pour sa richesse &eacute;motionnelle.</p>
             </div>
           </div>
         </section>

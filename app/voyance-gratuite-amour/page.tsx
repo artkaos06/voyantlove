@@ -7,15 +7,16 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
 export const metadata: Metadata = {
-  title: 'Voyance Gratuite Amour en Ligne : Tirage Tarot et Oracle | VoyantLove',
-  description: 'Voyance amour gratuite en ligne : tirage tarot, oracle et horoscope amoureux. Réponses immédiates sur votre vie sentimentale, sans engagement.',
+  title: 'Voyance Gratuite Amour : Tirage Tarot, Oracle & Horoscope Amoureux | VoyantLove',
+  description: 'Voyance gratuite amour en ligne : tirage tarot amour gratuit, oracle, tarot oui/non et horoscope amoureux. Voyance amoureuse gratuite immédiate, sans engagement.',
+  keywords: ['voyance gratuite amour', 'voyance amour gratuite', 'voyance amoureuse gratuite', 'voyance amour gratuite en ligne', 'voyance gratuite amour en ligne', 'tarot amour gratuit', 'voyance amour gratuite immediate'],
   alternates: { canonical: 'https://www.voyantlove.fr/voyance-gratuite-amour/' },
 };
 
 export default function VoyanceGratuiteAmourHubPage() {
   const webPageSchema = getWebPageSchema({
-    title: 'Voyance Gratuite Amour en Ligne : Tirage Tarot et Oracle | VoyantLove',
-    description: 'Voyance amour gratuite en ligne : tirage tarot, oracle et horoscope amoureux. Réponses immédiates sur votre vie sentimentale, sans engagement.',
+    title: 'Voyance Gratuite Amour : Tirage Tarot, Oracle & Horoscope Amoureux | VoyantLove',
+    description: 'Voyance gratuite amour en ligne : tirage tarot amour gratuit, oracle, tarot oui/non et horoscope amoureux. Voyance amoureuse gratuite immédiate, sans engagement.',
     url: 'https://www.voyantlove.fr/voyance-gratuite-amour/',
   });
 
@@ -43,6 +44,18 @@ export default function VoyanceGratuiteAmourHubPage() {
     {
       question: 'Comment passer du gratuit à une consultation personnalisée ?',
       answer: 'Le passage se fait naturellement quand vos questions deviennent plus spécifiques ou que vous souhaitez approfondir un tirage. Choisissez un voyant dont le profil correspond à votre problématique sentimentale. Les premières minutes offertes vous permettent de tester la connexion. Une consultation personnalisée de 20 minutes suffit généralement pour obtenir des réponses claires et une guidance adaptée.',
+    },
+    {
+      question: 'Voyance amour gratuite immédiate : comment ça marche ?',
+      answer: 'La voyance amour gratuite immédiate fonctionne en deux modes principaux. Premièrement, les tirages automatiques sur notre site : vous tirez les cartes en ligne et recevez instantanément une interprétation des arcanes selon leur position. Deuxièmement, les premières minutes offertes par téléphone ou chat avec un voyant en direct : vous êtes mis en relation immédiatement avec un praticien disponible, qui répond à votre question pendant la durée de l\'offre découverte (généralement 3 à 10 minutes). Aucune carte bancaire n\'est demandée pour les tirages automatiques. Pour la voyance en direct, le tarif applicable après les minutes gratuites vous est communiqué avant tout engagement.',
+    },
+    {
+      question: 'Quelle différence entre voyance amour gratuite et payante ?',
+      answer: 'La voyance amour gratuite repose sur des tirages automatisés ou des minutes offertes : elle convient pour une exploration rapide ou une question simple. Les algorithmes appliquent les règles classiques d\'interprétation du tarot mais ne peuvent pas adapter la lecture à votre énergie spécifique. La voyance amour payante implique un échange direct avec un voyant qui capte votre situation unique, pose des questions de clarification et ajuste son interprétation en temps réel. Pour une question existentielle ou émotionnellement chargée, la voyance payante apporte une profondeur d\'analyse que le gratuit ne peut atteindre. Notre conseil : utilisez le gratuit pour découvrir, le payant pour approfondir.',
+    },
+    {
+      question: 'La voyance amoureuse gratuite par email existe-t-elle ?',
+      answer: 'Oui, certaines plateformes proposent une voyance amoureuse gratuite par email pour une première question, généralement sous forme de réponse standardisée ou semi-automatisée. C\'est une bonne option si vous préférez l\'écrit ou si vous avez besoin de temps pour formuler votre question. Les réponses arrivent en 24 à 72 heures. Pour une analyse vraiment personnalisée par email, comptez entre 10 et 25 € par question — le voyant rédige alors une réponse détaillée incluant le tirage, l\'interprétation et des conseils pratiques. La qualité de la voyance par email dépend principalement du temps que le voyant consacre à votre situation.',
     },
   ]);
 
@@ -133,6 +146,33 @@ export default function VoyanceGratuiteAmourHubPage() {
           </div>
         </section>
 
+        <section className="bg-gradient-to-br from-emerald-50 to-teal-50 rounded-xl p-8 mb-12 border border-emerald-200">
+          <h2 className="text-3xl font-bold mb-6">💞 Voyance Sentimentale Gratuite&nbsp;: Une Branche Spécialisée</h2>
+          <p className="text-lg text-gray-700 leading-relaxed mb-4">
+            La <strong>voyance sentimentale gratuite</strong> est une sous-catégorie de la voyance amour gratuite, centrée exclusivement sur les <strong>questions de couple, de sentiments et de relations</strong>. Elle se distingue de la voyance générale par sa spécialisation&nbsp;: les tirages, les méthodes et l&apos;interprétation sont calibrés pour décrypter les <strong>dynamiques émotionnelles</strong> entre deux personnes.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            Concrètement, la <strong>voyance sentimentale gratuite en ligne</strong> prend trois formes principales&nbsp;: les <strong>tirages oui/non</strong> pour des questions sentimentales binaires (&laquo;&nbsp;m&apos;aime-t-il&nbsp;?&nbsp;&raquo;, &laquo;&nbsp;reviendra-t-il&nbsp;?&nbsp;&raquo;), les <strong>tirages multi-cartes</strong> qui analysent les blocages et l&apos;évolution probable d&apos;une relation, et les <strong>premières minutes gratuites</strong> avec un voyant sentimental en téléphone ou chat. Chaque format apporte un éclairage différent selon votre besoin du moment.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Pour approfondir, notre page dédiée à la <Link href="/methodes-voyance/voyance-sentimentale" className="text-emerald-700 hover:text-emerald-900 underline font-semibold">voyance sentimentale</Link> détaille les outils utilisés (tarot, oracle, clairvoyance émotionnelle) et comment choisir un <strong>voyant sentimentaliste</strong> sérieux. Si vous cherchez une consultation gratuite avec un voyant en direct, profitez des minutes offertes par notre plateforme partenaire pour découvrir un praticien sans engagement.
+          </p>
+          <div className="grid md:grid-cols-3 gap-4 text-sm">
+            <Link href="/voyance-gratuite-amour/tarot-oui-non-amour" className="bg-white rounded-lg p-4 border border-emerald-100 hover:border-emerald-300 transition">
+              <p className="font-bold text-emerald-800 mb-1">Tarot Oui/Non Sentimental</p>
+              <p className="text-gray-700">Réponse rapide à une question de cœur précise.</p>
+            </Link>
+            <Link href="/voyance-gratuite-amour/tarot-amour-gratuit" className="bg-white rounded-lg p-4 border border-emerald-100 hover:border-emerald-300 transition">
+              <p className="font-bold text-emerald-800 mb-1">Tarot Amour Gratuit</p>
+              <p className="text-gray-700">Tirage en croix pour analyser une relation.</p>
+            </Link>
+            <Link href="/methodes-voyance/voyance-sentimentale" className="bg-white rounded-lg p-4 border border-emerald-100 hover:border-emerald-300 transition">
+              <p className="font-bold text-emerald-800 mb-1">Voyance Sentimentale</p>
+              <p className="text-gray-700">Guide complet sur cette spécialité.</p>
+            </Link>
+          </div>
+        </section>
+
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-8">Questions Fréquentes sur la Voyance Gratuite Amour</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Les questions les plus fréquentes portent sur la fiabilité des <strong>tirages gratuits</strong>, la durée des <strong>minutes offertes</strong>, le choix du meilleur tirage et la transition vers une <strong>consultation personnalisée</strong>.</p>
@@ -149,9 +189,21 @@ export default function VoyanceGratuiteAmourHubPage() {
               <h3 className="text-xl font-bold text-gray-900 mb-3">Quel est le meilleur tirage gratuit pour l&apos;amour ?</h3>
               <p className="text-gray-700 leading-relaxed">Le <strong>tirage en croix</strong> (5 cartes) est le plus complet pour une question amoureuse générale. Le <strong>tirage oui/non</strong> (3 cartes) répond aux questions directes comme &laquo;&nbsp;M&apos;aime-t-il&nbsp;?&nbsp;&raquo;. L&apos;<strong>oracle</strong> est préférable si vous cherchez un message intuitif plutôt qu&apos;une analyse structurée. Choisissez selon votre question : le <strong>tarot</strong> pour comprendre, l&apos;<strong>oracle</strong> pour ressentir, l&apos;<strong>horoscope</strong> pour anticiper.</p>
             </div>
-            <div>
+            <div className="border-b border-gray-200 pb-6">
               <h3 className="text-xl font-bold text-gray-900 mb-3">Comment passer du gratuit à une consultation personnalisée ?</h3>
               <p className="text-gray-700 leading-relaxed">Le passage se fait naturellement quand vos questions deviennent plus spécifiques ou que vous souhaitez approfondir un tirage. Choisissez un <strong>voyant</strong> dont le profil correspond à votre <strong>problématique sentimentale</strong>. Les <strong>premières minutes offertes</strong> vous permettent de tester la connexion. Une <strong>consultation personnalisée</strong> de 20 minutes suffit généralement pour obtenir des réponses claires et une <strong>guidance adaptée</strong>.</p>
+            </div>
+            <div className="border-b border-gray-200 pb-6">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Voyance amour gratuite immédiate&nbsp;: comment &ccedil;a marche&nbsp;?</h3>
+              <p className="text-gray-700 leading-relaxed">La <strong>voyance amour gratuite immédiate</strong> fonctionne en deux modes principaux. Premi&egrave;rement, les <strong>tirages automatiques</strong> sur notre site&nbsp;: vous tirez les cartes en ligne et recevez instantan&eacute;ment une interpr&eacute;tation des arcanes selon leur position. Deuxi&egrave;mement, les <strong>premi&egrave;res minutes offertes</strong> par t&eacute;l&eacute;phone ou chat avec un voyant en direct&nbsp;: vous &ecirc;tes mis en relation imm&eacute;diatement avec un praticien disponible, qui r&eacute;pond &agrave; votre question pendant la dur&eacute;e de l&apos;offre d&eacute;couverte (g&eacute;n&eacute;ralement 3 &agrave; 10 minutes). Aucune carte bancaire n&apos;est demand&eacute;e pour les tirages automatiques. Pour la voyance en direct, le tarif applicable apr&egrave;s les minutes gratuites vous est communiqu&eacute; avant tout engagement.</p>
+            </div>
+            <div className="border-b border-gray-200 pb-6">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Quelle diff&eacute;rence entre voyance amour gratuite et payante&nbsp;?</h3>
+              <p className="text-gray-700 leading-relaxed">La <strong>voyance amour gratuite</strong> repose sur des tirages automatis&eacute;s ou des minutes offertes&nbsp;: elle convient pour une exploration rapide ou une question simple. Les algorithmes appliquent les r&egrave;gles classiques d&apos;interpr&eacute;tation du tarot mais ne peuvent pas adapter la lecture &agrave; votre &eacute;nergie sp&eacute;cifique. La voyance amour payante implique un &eacute;change direct avec un voyant qui capte votre situation unique, pose des questions de clarification et ajuste son interpr&eacute;tation en temps r&eacute;el. Pour une question existentielle ou &eacute;motionnellement charg&eacute;e, la voyance payante apporte une profondeur d&apos;analyse que le gratuit ne peut atteindre. Notre conseil&nbsp;: utilisez le gratuit pour d&eacute;couvrir, le payant pour approfondir.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">La voyance amoureuse gratuite par email existe-t-elle&nbsp;?</h3>
+              <p className="text-gray-700 leading-relaxed">Oui, certaines plateformes proposent une <strong>voyance amoureuse gratuite par email</strong> pour une premi&egrave;re question, g&eacute;n&eacute;ralement sous forme de r&eacute;ponse standardis&eacute;e ou semi-automatis&eacute;e. C&apos;est une bonne option si vous pr&eacute;f&eacute;rez l&apos;&eacute;crit ou si vous avez besoin de temps pour formuler votre question. Les r&eacute;ponses arrivent en 24 &agrave; 72 heures. Pour une analyse vraiment personnalis&eacute;e par email, comptez entre 10 et 25 &euro; par question &mdash; le voyant r&eacute;dige alors une r&eacute;ponse d&eacute;taill&eacute;e incluant le tirage, l&apos;interpr&eacute;tation et des conseils pratiques. La qualit&eacute; de la voyance par email d&eacute;pend principalement du temps que le voyant consacre &agrave; votre situation.</p>
             </div>
           </div>
         </section>

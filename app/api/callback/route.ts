@@ -1,5 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { normalizeFrenchPhone, sendCallbackRequest } from '@/lib/goracash';
+import { Color, notifyDiscord } from '@/lib/discord';
+import { recordGoracashLead } from '@/lib/digestState';
 
 interface Body {
   phone?: string;
@@ -7,6 +9,19 @@ interface Body {
   gender?: 'MONSIEUR' | 'MADAME';
   gclid?: string;
   source?: string;
+}
+
+/**
+ * Mask a phone number for display in chat (keep country code and last 2
+ * digits, mask the middle). Goracash numbers in our database are French,
+ * stored in 0033... format. Avoids leaking lead identity to anyone with
+ * Discord access who shouldn't have it.
+ */
+function maskPhone(phone: string): string {
+  if (phone.length < 6) return phone;
+  const head = phone.slice(0, 4);
+  const tail = phone.slice(-2);
+  return `${head}${'*'.repeat(phone.length - 6)}${tail}`;
 }
 
 export async function POST(request: NextRequest) {
@@ -55,11 +70,50 @@ export async function POST(request: NextRequest) {
 
     if (result.status !== 'ok') {
       console.error('Goracash callback error:', result);
+      notifyDiscord({
+        title: '🔴 Goracash callback · provider error',
+        description: result.message?.slice(0, 1500) || 'No details.',
+        color: Color.RED,
+        fields: [
+          { name: 'Phone (masked)', value: maskPhone(normalized), inline: true },
+          ...(body.source
+            ? [{ name: 'Source', value: body.source, inline: true }]
+            : []),
+        ],
+      });
       return NextResponse.json(
         { ok: false, error: 'provider_error', message: result.message },
         { status: 502 }
       );
     }
+
+    // Daily-digest counter + real-time Discord ping. Phone-callback leads
+    // are the FR site's primary conversion event — equivalent to first-
+    // purchase on the EN side.
+    recordGoracashLead();
+    notifyDiscord({
+      title: '📞 Goracash callback · NEW LEAD',
+      description: 'A French visitor requested a phone callback.',
+      color: Color.GREEN,
+      fields: [
+        { name: 'Phone (masked)', value: maskPhone(normalized), inline: true },
+        ...(firstname
+          ? [{ name: 'First name', value: firstname, inline: true }]
+          : []),
+        ...(gender ? [{ name: 'Gender', value: gender, inline: true }] : []),
+        ...(body.source
+          ? [{ name: 'Source', value: body.source, inline: true }]
+          : []),
+        ...(body.gclid
+          ? [{ name: 'gclid', value: String(body.gclid).slice(0, 200) }]
+          : []),
+        {
+          name: 'Provider status',
+          value: result.callback_status ?? 'ok',
+          inline: true,
+        },
+      ],
+    });
 
     return NextResponse.json({
       ok: true,

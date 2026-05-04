@@ -39,6 +39,12 @@ import {
   uploadClickConversions,
 } from '@/lib/googleAds';
 import { Color, notifyDiscord } from '@/lib/discord';
+import {
+  recordConversion,
+  recordOciFailed,
+  recordOciOk,
+  recordUnauthorizedPostback,
+} from '@/lib/digestState';
 
 export const dynamic = 'force-dynamic';
 
@@ -48,12 +54,32 @@ async function handle(request: NextRequest) {
 
   if (!validatePostbackSecret(secret)) {
     // Don't leak the configured secret in logs even on auth failure.
+    const ip =
+      request.headers.get('x-forwarded-for') ||
+      request.headers.get('x-real-ip') ||
+      '(unknown)';
+    const ua = request.headers.get('user-agent') || '(empty)';
     console.warn('[postback] unauthorized', {
-      ip:
-        request.headers.get('x-forwarded-for') ||
-        request.headers.get('x-real-ip'),
-      ua: request.headers.get('user-agent'),
+      ip,
+      ua,
       path: url.pathname,
+    });
+    recordUnauthorizedPostback();
+    notifyDiscord({
+      title: '🛡️ Postback · UNAUTHORIZED ATTEMPT',
+      description:
+        'Someone hit /api/postback with a missing or invalid secret. Could be a misconfigured BargesTech URL, a probe, or a brute-force scan.',
+      color: Color.RED,
+      fields: [
+        { name: 'IP', value: ip, inline: true },
+        { name: 'Path', value: url.pathname, inline: true },
+        { name: 'User Agent', value: ua.slice(0, 500) },
+        {
+          name: 'Querystring keys',
+          value:
+            Array.from(url.searchParams.keys()).join(', ') || '(no keys)',
+        },
+      ],
     });
     return NextResponse.json(
       { ok: false, error: 'unauthorized' },
@@ -86,6 +112,12 @@ async function handle(request: NextRequest) {
     datetime: event.datetime,
     received_at: new Date().toISOString(),
   });
+
+  // Daily-digest counter (parsed payout, used by cron).
+  const payoutNumeric = event.payout ? Number(event.payout) : undefined;
+  recordConversion(
+    payoutNumeric && Number.isFinite(payoutNumeric) ? payoutNumeric : undefined
+  );
 
   // Real-time Discord notification on every inbound postback. Conversions
   // are the headline event of the entire system — getting them in chat
@@ -164,6 +196,7 @@ async function handle(request: NextRequest) {
         },
       ]);
       if (result.success) {
+        recordOciOk();
         console.log('[postback] google_ads_oci ok', {
           txid: event.transaction_id,
           attribution_type: attributionType,
@@ -188,6 +221,7 @@ async function handle(request: NextRequest) {
           ],
         });
       } else {
+        recordOciFailed();
         console.error('[postback] google_ads_oci failed', {
           txid: event.transaction_id,
           attribution_type: attributionType,
@@ -207,6 +241,7 @@ async function handle(request: NextRequest) {
       // Never let an OCI failure 5xx the postback — BargesTech would retry,
       // and a flapping Google Ads endpoint shouldn't block our affiliate
       // tracking. The log is the source of truth for missed uploads.
+      recordOciFailed();
       console.error('[postback] google_ads_oci threw', {
         txid: event.transaction_id,
         error: err instanceof Error ? err.message : String(err),

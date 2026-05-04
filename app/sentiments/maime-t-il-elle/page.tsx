@@ -46,6 +46,14 @@ export default function MAimeTilEllePage() {
       question: 'Comment savoir si je lui plais ?',
       answer: 'Au-delà des signes physiques et comportementaux classiques (regard prolongé, recherche de proximité, nervosité), la voyance révèle ce que les apparences ne montrent pas. Le tirage des sentiments, notamment les cartes de Coupe (As, Deux et Cavalier de Coupe), dévoile les émotions profondes que cette personne éprouve réellement pour vous. L\'analyse des énergies entre deux personnes par un voyant permet de capter l\'attirance cachée, même chez quelqu\'un qui dissimule ses sentiments. Le tirage en croix pour les sentiments est particulièrement révélateur : il explore l\'attraction, les blocages, les intentions et le potentiel du lien. Consulter un voyant est plus fiable que l\'interprétation personnelle des signaux, car nos émotions biaisent notre lecture des situations amoureuses.',
     },
+    {
+      question: 'M\'aime-t-il : que dit le tarot exactement ?',
+      answer: 'Le tarot répond à la question "m\'aime-t-il" en analysant trois niveaux : l\'attraction immédiate, l\'attachement émotionnel et l\'engagement profond. Les arcanes majeurs Les Amoureux et Le Soleil sont les signes les plus clairs d\'un amour authentique et réciproque. La Lune signale des sentiments réels mais cachés ou ambigus. Le Diable révèle un attachement basé sur le désir plus que sur l\'amour véritable. Pour une lecture complète, le tarologue tire généralement entre 3 et 7 cartes — un tirage plus court répond rapidement, un tirage long approfondit les nuances. Le tarot est particulièrement précis sur cette question car il accède à l\'inconscient de la personne aimée, là où les vrais sentiments résident souvent.',
+    },
+    {
+      question: 'Est-ce qu\'il m\'aime ? Quel tirage de tarot choisir ?',
+      answer: 'Pour la question "est-ce qu\'il m\'aime", le tirage le plus efficace est la Croix Sentimentale en 5 cartes : (1) ses sentiments actuels pour vous, (2) ce qui le bloque, (3) ses intentions cachées, (4) l\'évolution probable de ses sentiments, (5) la meilleure attitude à adopter. Une alternative plus rapide est le Tirage Oui/Non Amour en 3 cartes : si la majorité sont à l\'endroit, la réponse penche vers "oui" ; à l\'envers, vers "non". Pour un résultat fiable, formulez clairement la question avant le tirage et concentrez-vous sur la personne précise concernée. Évitez de refaire le même tirage en cas de réponse qui déplaît : le tarot a déjà donné sa lecture.',
+    },
   ]);
 
   const breadcrumbSchema = getBreadcrumbSchema([
@@ -282,9 +290,17 @@ export default function MAimeTilEllePage() {
               <h3 className="text-xl font-bold text-gray-900 mb-3">Pense-t-il/elle souvent à moi ?</h3>
               <p className="text-gray-700 leading-relaxed">Le tarot répond à cette question en révélant la fréquence et la nature de ses pensées vous concernant. Le Cavalier de Coupe et La Lune indiquent qu'il/elle pense souvent à vous. Le type de pensées (nostalgiques, désirantes, conflictuelles) est aussi révélé et vous guide sur ce que vous devez faire.</p>
             </div>
-            <div>
+            <div className="border-b border-gray-200 pb-6">
               <h3 className="text-xl font-bold text-gray-900 mb-3">Comment savoir si je lui plais ?</h3>
               <p className="text-gray-700 leading-relaxed">Au-delà des signes physiques et comportementaux classiques (regard prolongé, recherche de proximité, nervosité), la <strong>voyance</strong> révèle ce que les apparences ne montrent pas. Le <strong>tirage des sentiments</strong>, notamment les cartes de Coupe (As, Deux et Cavalier de Coupe), dévoile les émotions profondes que cette personne éprouve réellement pour vous. L'analyse des <strong>énergies entre deux personnes</strong> par un voyant permet de capter l'attirance cachée, même chez quelqu'un qui dissimule ses sentiments. Le <strong>tirage en croix pour les sentiments</strong> est particulièrement révélateur : il explore l'attraction, les blocages, les intentions et le potentiel du lien. Consulter un voyant est plus fiable que l'interprétation personnelle des signaux, car nos émotions biaisent notre lecture des situations amoureuses.</p>
+            </div>
+            <div className="border-b border-gray-200 pb-6">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">M&apos;aime-t-il : que dit le tarot exactement ?</h3>
+              <p className="text-gray-700 leading-relaxed">Le <strong>tarot</strong> répond à la question &laquo;&nbsp;<strong>m&apos;aime-t-il</strong>&nbsp;&raquo; en analysant trois niveaux : l&apos;attraction immédiate, l&apos;attachement émotionnel et l&apos;engagement profond. Les arcanes majeurs <strong>Les Amoureux</strong> et <strong>Le Soleil</strong> sont les signes les plus clairs d&apos;un amour authentique et réciproque. <strong>La Lune</strong> signale des sentiments réels mais cachés ou ambigus. <strong>Le Diable</strong> révèle un attachement basé sur le désir plus que sur l&apos;amour véritable. Pour une lecture complète, le tarologue tire généralement entre 3 et 7 cartes — un tirage plus court répond rapidement, un tirage long approfondit les nuances. Le tarot est particulièrement précis sur cette question car il accède à l&apos;inconscient de la personne aimée, là où les vrais sentiments résident souvent.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Est-ce qu&apos;il m&apos;aime ? Quel tirage de tarot choisir ?</h3>
+              <p className="text-gray-700 leading-relaxed">Pour la question &laquo;&nbsp;<strong>est-ce qu&apos;il m&apos;aime</strong>&nbsp;&raquo;, le tirage le plus efficace est la <strong>Croix Sentimentale en 5 cartes</strong> : (1) ses sentiments actuels pour vous, (2) ce qui le bloque, (3) ses intentions cachées, (4) l&apos;évolution probable de ses sentiments, (5) la meilleure attitude à adopter. Une alternative plus rapide est le <Link href="/voyance-gratuite-amour/tarot-oui-non-amour" className="text-red-600 hover:text-red-800 underline font-medium">Tirage Oui/Non Amour</Link> en 3 cartes : si la majorité sont à l&apos;endroit, la réponse penche vers &laquo;&nbsp;oui&nbsp;&raquo; ; à l&apos;envers, vers &laquo;&nbsp;non&nbsp;&raquo;. Pour un résultat fiable, formulez clairement la question avant le tirage et concentrez-vous sur la personne précise concernée. Évitez de refaire le même tirage en cas de réponse qui déplaît : le tarot a déjà donné sa lecture.</p>
             </div>
           </div>
         </section>
