@@ -125,6 +125,13 @@ export default function VoyanceGratuiteAmourHubPage() {
               <p className="text-gray-600 mb-4">Découvrez quand et comment vous rencontrerez l&apos;amour selon les cartes.</p>
               <span className="text-rose-600 font-semibold">Découvrir &rarr;</span>
             </Link>
+
+            <Link href="/voyance-gratuite-amour/voyance-amour-immediate" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-emerald-500">
+              <div className="text-4xl mb-4">⚡</div>
+              <h3 className="text-2xl font-bold mb-3">Voyance Amour Immédiate</h3>
+              <p className="text-gray-600 mb-4">Tirage instantané et consultation en direct sans attente, 24h/24.</p>
+              <span className="text-emerald-600 font-semibold">Découvrir &rarr;</span>
+            </Link>
           </div>
         </section>
 
