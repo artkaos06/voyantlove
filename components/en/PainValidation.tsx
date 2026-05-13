@@ -22,10 +22,10 @@ export default function PainValidation() {
     >
       <div className="max-w-3xl mx-auto bg-white border-l-4 border-purple-400 rounded-r-2xl p-6 md:p-8 shadow-sm">
         <p className="text-sm font-semibold uppercase tracking-wide text-purple-600 mb-3">
-          You&apos;re not the only one asking
+          Wondering if he&apos;s still thinking about you?
         </p>
         <p className="text-lg md:text-xl font-bold text-gray-900 leading-snug mb-4">
-          You&apos;ve already searched it three times this week.
+          You&apos;ve already googled it more than once this week.
         </p>
         <ul className="space-y-2 text-[15px] md:text-base text-gray-700 leading-relaxed">
           <li className="flex gap-3">
@@ -54,7 +54,7 @@ export default function PainValidation() {
           </li>
         </ul>
         <p className="mt-5 text-base md:text-lg font-semibold text-gray-900 leading-snug">
-          Talk to someone who can actually read his energy. 5 minutes for $1.
+          Talk to a real love psychic. 5 minutes for $1.
         </p>
       </div>
     </section>
