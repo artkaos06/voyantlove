@@ -41,6 +41,17 @@ export interface KeenAdvisor {
   specialties?: string[];
   /** Is the intro promo "5 min for $1" active for new users? */
   introOffer?: boolean;
+  /**
+   * Outcome-led hook copy for the card. Should describe what this
+   * advisor specifically helps with, in language that connects to the
+   * commercial-intent visitor's actual question. Short — 1 sentence.
+   */
+  hook: string;
+  /**
+   * Outcome-led CTA label specific to this advisor (overrides default
+   * "Try Briaz →" generic label).
+   */
+  ctaLabel: string;
 }
 
 /**
@@ -60,6 +71,8 @@ export const KEEN_ADVISORS: KeenAdvisor[] = [
     photoSrc: null,
     specialties: ['Love', 'Reconciliation', 'Truth reading'],
     introOffer: true,
+    hook: 'Specializes in reading exes who have gone silent. Tells you what they\'re not saying.',
+    ctaLabel: 'Ask Lollie about him → $1',
   },
   {
     name: 'Gina Marie',
@@ -72,6 +85,8 @@ export const KEEN_ADVISORS: KeenAdvisor[] = [
     photoSrc: null,
     specialties: ['Love', 'Future predictions', 'Empath'],
     introOffer: true,
+    hook: 'Empath who reads emotional state — useful when you want to know what he\'s actually feeling.',
+    ctaLabel: 'Read his feelings → $1',
   },
   {
     name: 'Ms Angel',
@@ -84,6 +99,8 @@ export const KEEN_ADVISORS: KeenAdvisor[] = [
     photoSrc: null,
     specialties: ['Love', 'Spiritual guidance'],
     introOffer: true,
+    hook: 'Honest spiritual guidance for women trying to decide whether to stay or leave.',
+    ctaLabel: 'Get clarity → $1',
   },
   {
     name: 'Heeratheintuitive',
@@ -96,6 +113,8 @@ export const KEEN_ADVISORS: KeenAdvisor[] = [
     photoSrc: null,
     specialties: ['Love', 'Clairvoyant', 'Twin flame'],
     introOffer: true,
+    hook: 'Clairvoyant who reads twin-flame connections and karmic relationship patterns.',
+    ctaLabel: 'Ask about your connection → $1',
   },
   {
     name: 'Briaz',
@@ -108,6 +127,8 @@ export const KEEN_ADVISORS: KeenAdvisor[] = [
     photoSrc: '/images/keen/advisor-profile.png',
     specialties: ['Love', 'Truth reading'],
     introOffer: true,
+    hook: 'Reads truth without softening it. For people who want a direct answer, not gentle hope.',
+    ctaLabel: 'Get the honest answer → $1',
   },
   {
     name: 'Mysticseer',
@@ -120,6 +141,8 @@ export const KEEN_ADVISORS: KeenAdvisor[] = [
     photoSrc: null,
     specialties: ['Love', 'Fourth-generation psychic'],
     introOffer: true,
+    hook: 'Fourth-generation psychic. Reads relationships with a focus on long-term outcome.',
+    ctaLabel: 'See where this is going → $1',
   },
 ];
 
