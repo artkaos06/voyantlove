@@ -22,7 +22,7 @@ export default function PainValidation() {
     >
       <div className="max-w-3xl mx-auto bg-white border-l-4 border-purple-400 rounded-r-2xl p-6 md:p-8 shadow-sm">
         <p className="text-sm font-semibold uppercase tracking-wide text-purple-600 mb-3">
-          Wondering if he&apos;s still thinking about you?
+          Wondering if they&apos;re still thinking about you?
         </p>
         <p className="text-lg md:text-xl font-bold text-gray-900 leading-snug mb-4">
           You&apos;ve already googled it more than once this week.
@@ -38,13 +38,13 @@ export default function PainValidation() {
             <span aria-hidden="true" className="text-purple-400 mt-0.5">
               ✓
             </span>
-            You&apos;ve re-read every text he sent. Twice.
+            You&apos;ve re-read every text they sent. Twice.
           </li>
           <li className="flex gap-3">
             <span aria-hidden="true" className="text-purple-400 mt-0.5">
               ✓
             </span>
-            You&apos;ve checked his social media. It told you nothing useful.
+            You&apos;ve checked their social media. It told you nothing useful.
           </li>
           <li className="flex gap-3">
             <span aria-hidden="true" className="text-purple-400 mt-0.5">

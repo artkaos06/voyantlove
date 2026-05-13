@@ -71,8 +71,8 @@ export const KEEN_ADVISORS: KeenAdvisor[] = [
     photoSrc: null,
     specialties: ['Love', 'Reconciliation', 'Truth reading'],
     introOffer: true,
-    hook: 'Specializes in reading exes who have gone silent. Tells you what they\'re not saying.',
-    ctaLabel: 'Ask Lollie about him → $1',
+    hook: 'Specializes in reading partners who have gone silent. Tells you what they\'re not saying.',
+    ctaLabel: 'Ask Lollie about your situation → $1',
   },
   {
     name: 'Gina Marie',
@@ -85,8 +85,8 @@ export const KEEN_ADVISORS: KeenAdvisor[] = [
     photoSrc: null,
     specialties: ['Love', 'Future predictions', 'Empath'],
     introOffer: true,
-    hook: 'Empath who reads emotional state — useful when you want to know what he\'s actually feeling.',
-    ctaLabel: 'Read his feelings → $1',
+    hook: 'Empath who reads emotional state — useful when you want to know what they\'re actually feeling.',
+    ctaLabel: 'Read their feelings → $1',
   },
   {
     name: 'Ms Angel',
@@ -99,7 +99,7 @@ export const KEEN_ADVISORS: KeenAdvisor[] = [
     photoSrc: null,
     specialties: ['Love', 'Spiritual guidance'],
     introOffer: true,
-    hook: 'Honest spiritual guidance for women trying to decide whether to stay or leave.',
+    hook: 'Honest spiritual guidance when you\'re trying to decide whether to stay or leave.',
     ctaLabel: 'Get clarity → $1',
   },
   {

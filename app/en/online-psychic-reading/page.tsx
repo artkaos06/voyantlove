@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   title:
     'Online Love Psychic Reading — 5 Min for $1 with Top-Rated Advisors',
   description:
-    'Stop wondering. Get a real read on what he\'s thinking from a top-rated love psychic. New users: 5 minutes for $1. Trusted since 1999.',
+    'Stop wondering. Get a real read on what they\'re thinking from a top-rated love psychic. New users: 5 minutes for $1. Trusted since 1999.',
   alternates: {
     canonical: 'https://www.lovepsychicguide.com/online-psychic-reading',
   },
@@ -62,15 +62,15 @@ export default function OnlinePsychicReadingPage() {
               Love advisors available right now
             </p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight mb-5">
-              Is he still thinking about you?{' '}
+              Are they still thinking about you?{' '}
               <span className="bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent block md:inline">
                 Get a real answer in 5 minutes.
               </span>
             </h1>
             <p className="text-lg md:text-xl text-gray-700 leading-relaxed max-w-2xl mx-auto mb-6">
-              A real love psychic can read his energy and tell you what he&apos;s
-              actually feeling — not what your friends guess. New users on
-              Keen pay <strong>just $1 for the first 5 minutes.</strong>
+              A real love psychic can read their energy and tell you what
+              they&apos;re actually feeling — not what your friends guess. New
+              users on Keen pay <strong>just $1 for the first 5 minutes.</strong>
             </p>
 
             {/* Big primary CTA */}
@@ -79,7 +79,7 @@ export default function OnlinePsychicReadingPage() {
               placement="commercial_hero_cta"
               className="inline-flex items-center gap-2 bg-purple-600 hover:bg-purple-700 text-white text-lg font-bold px-8 py-4 rounded-xl shadow-lg shadow-purple-200 transition-colors"
             >
-              Find out what he&apos;s thinking → $1
+              Find out what they&apos;re thinking → $1
             </AffiliateCTA>
 
             <p className="text-xs text-gray-600 mt-3">
@@ -162,7 +162,7 @@ export default function OnlinePsychicReadingPage() {
               placement="commercial_mid_cta"
               className="inline-block bg-white text-purple-700 hover:bg-gray-50 font-bold px-8 py-4 rounded-xl text-lg shadow-lg transition-colors"
             >
-              Find out what he&apos;s thinking → $1
+              Find out what they&apos;re thinking → $1
             </AffiliateCTA>
             <p className="text-xs text-purple-100 mt-4 opacity-90">
               $1 trial · cancel any time · no subscription · 18+
@@ -230,14 +230,14 @@ export default function OnlinePsychicReadingPage() {
           </p>
           <p>
             Most first-time users come with one of three questions:{' '}
-            <em>will he come back, is he still thinking about me, or is this
-            person actually the one</em>. Experienced advisors have done
+            <em>will they come back, are they still thinking about me, or is
+            this person actually the one</em>. Experienced advisors have done
             thousands of these readings; they recognize the patterns and ask
             the questions you haven&apos;t thought to ask yourself.
           </p>
           <p>
             Be ready with one specific question rather than three vague ones.
-            Open phrasing — &ldquo;what do you sense about his current state
+            Open phrasing — &ldquo;what do you sense about their current state
             of mind&rdquo; — gets better readings than closed yes/no
             questions. Take notes during the session; you&apos;ll forget
             specifics within 24 hours.
@@ -278,7 +278,7 @@ export default function OnlinePsychicReadingPage() {
               placement="commercial_final_cta"
               className="inline-block bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-400 hover:to-pink-400 text-white font-bold px-8 py-4 rounded-xl text-lg shadow-lg transition-all hover:scale-[1.02]"
             >
-              Find out what he&apos;s thinking → $1
+              Find out what they&apos;re thinking → $1
             </AffiliateCTA>
             <p className="text-xs text-purple-200 mt-4 opacity-90">
               The $1 intro applies once per new user · 18+ · entertainment
@@ -295,7 +295,7 @@ export default function OnlinePsychicReadingPage() {
 
       <MobileStickyCTA
         affiliateOffer="keen"
-        label="Find out what he's thinking"
+        label="Find out what they're thinking"
         subLabel="5 min reading · $1 for new users · no subscription"
         placement="commercial_mobile_sticky"
       />
