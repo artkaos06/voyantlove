@@ -85,9 +85,15 @@ export async function GET(
   // Click-rate anomaly detection — alerts on bursts of clicks from the
   // same IP that may indicate bot activity or click-fraud against our
   // /api/go endpoint.
+  // Discord notifications — MUST be awaited. Vercel serverless terminates
+  // the function instance once the response is returned; fire-and-forget
+  // async work after the return is killed before it completes. We accept
+  // the small latency cost (Discord fetch has a 2s timeout cap) to get
+  // reliable delivery. The user only sees this latency on the new-tab
+  // affiliate redirect, which is acceptable.
   const anomaly = checkClickAnomaly(ip);
   if (anomaly.shouldAlert) {
-    notifyDiscord({
+    await notifyDiscord({
       title: '🚨 Click anomaly · possible bot activity',
       description: `Single IP fired ${anomaly.count} click-outs in the last 60 seconds. Threshold = 10/min. Cooldown 5 min before re-alerting.`,
       color: Color.RED,
@@ -101,9 +107,7 @@ export async function GET(
     });
   }
 
-  // Best-effort Discord notification — fire-and-forget so we never block
-  // the redirect on webhook latency or failure.
-  notifyDiscord({
+  await notifyDiscord({
     title: `🔗 Click-out · ${offer}`,
     color:
       attributionType === 'gclid' || attributionType === 'gbraid' ||

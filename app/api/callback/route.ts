@@ -70,7 +70,9 @@ export async function POST(request: NextRequest) {
 
     if (result.status !== 'ok') {
       console.error('Goracash callback error:', result);
-      notifyDiscord({
+      // Awaited — Vercel serverless terminates the function after the
+      // response, killing any fire-and-forget Discord call.
+      await notifyDiscord({
         title: '🔴 Goracash callback · provider error',
         description: result.message?.slice(0, 1500) || 'No details.',
         color: Color.RED,
@@ -91,7 +93,7 @@ export async function POST(request: NextRequest) {
     // are the FR site's primary conversion event — equivalent to first-
     // purchase on the EN side.
     recordGoracashLead();
-    notifyDiscord({
+    await notifyDiscord({
       title: '📞 Goracash callback · NEW LEAD',
       description: 'A French visitor requested a phone callback.',
       color: Color.GREEN,

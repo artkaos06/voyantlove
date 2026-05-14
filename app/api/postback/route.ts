@@ -65,7 +65,9 @@ async function handle(request: NextRequest) {
       path: url.pathname,
     });
     recordUnauthorizedPostback();
-    notifyDiscord({
+    // Awaited — Vercel serverless terminates the function after the
+    // response, killing any fire-and-forget Discord call.
+    await notifyDiscord({
       title: '🛡️ Postback · UNAUTHORIZED ATTEMPT',
       description:
         'Someone hit /api/postback with a missing or invalid secret. Could be a misconfigured BargesTech URL, a probe, or a brute-force scan.',
@@ -129,7 +131,7 @@ async function handle(request: NextRequest) {
       : event.wbraid
         ? 'wbraid'
         : 'none';
-  notifyDiscord({
+  await notifyDiscord({
     title: '🎯 Postback received · CONVERSION',
     color: Color.GREEN,
     fields: [
@@ -202,7 +204,7 @@ async function handle(request: NextRequest) {
           attribution_type: attributionType,
           partial_failures: result.partialFailures || null,
         });
-        notifyDiscord({
+        await notifyDiscord({
           title: '✅ Google Ads OCI · upload OK',
           description:
             'Conversion successfully attributed in Google Ads. Smart Bidding will use this signal for future auctions.',
@@ -227,7 +229,7 @@ async function handle(request: NextRequest) {
           attribution_type: attributionType,
           message: result.message,
         });
-        notifyDiscord({
+        await notifyDiscord({
           title: '🔴 Google Ads OCI · upload FAILED',
           description: result.message?.slice(0, 1500) || 'No details available.',
           color: Color.RED,
@@ -246,7 +248,7 @@ async function handle(request: NextRequest) {
         txid: event.transaction_id,
         error: err instanceof Error ? err.message : String(err),
       });
-      notifyDiscord({
+      await notifyDiscord({
         title: '🔴 Google Ads OCI · transport error',
         description:
           err instanceof Error ? err.message.slice(0, 1500) : String(err),
