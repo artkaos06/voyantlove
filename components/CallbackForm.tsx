@@ -6,7 +6,16 @@ type SubmitState =
   | { kind: 'idle' }
   | { kind: 'submitting' }
   | { kind: 'success'; message: string }
-  | { kind: 'error'; message: string };
+  /** Recoverable error — show inline message, user can edit and retry. */
+  | { kind: 'error'; message: string }
+  /**
+   * Provider/API unavailable — show a graceful fallback panel with a
+   * prominent tappable tel: link, since the visitor's intent is clear
+   * (they wanted a callback) and the call path still works regardless
+   * of Goracash API status. Treats failure as a soft redirect, not an
+   * apology.
+   */
+  | { kind: 'provider_down' };
 
 // Maps Goracash callback_status to French UI copy.
 function successMessage(status: string): string {
@@ -78,15 +87,15 @@ export default function CallbackForm({ source = 'lp-voyant-direct' }: CallbackFo
 
       if (!res.ok || !data.ok) {
         if (data.error === 'invalid_phone') {
+          // Recoverable — user can correct the number and try again
           setState({
             kind: 'error',
-            message: 'Numéro invalide. Vérifiez votre saisie (numéros français non surtaxés uniquement).',
+            message:
+              'Numéro invalide. Vérifiez votre saisie (numéros français non surtaxés uniquement).',
           });
         } else if (data.error === 'provider_error') {
-          setState({
-            kind: 'error',
-            message: 'Le service est momentanément indisponible. Merci d\'appeler le 01 75 75 45 82.',
-          });
+          // Provider/API down — pivot to the tappable phone fallback panel
+          setState({ kind: 'provider_down' });
         } else {
           setState({
             kind: 'error',
@@ -143,6 +152,37 @@ export default function CallbackForm({ source = 'lp-voyant-direct' }: CallbackFo
         <p className="text-green-700 bg-green-50 border border-green-200 rounded-lg p-3 text-sm">
           ✓ {state.message}
         </p>
+      ) : state.kind === 'provider_down' ? (
+        <div className="text-center">
+          <p className="text-gray-800 text-sm leading-relaxed mb-4">
+            <strong className="text-gray-900">
+              Le rappel automatique est momentanément indisponible
+            </strong>
+            <br />
+            Nos voyants sont toujours disponibles — appelez gratuitement
+            maintenant et profitez de vos 10 minutes offertes.
+          </p>
+          <a
+            href="tel:0175754582"
+            className="inline-flex items-center justify-center gap-2 w-full bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-400 hover:to-emerald-400 text-white px-6 py-4 rounded-xl font-bold text-lg shadow-lg transition-all hover:scale-[1.02]"
+            data-analytics="callback-fallback-tel"
+          >
+            📞 01 75 75 45 82
+          </a>
+          <p className="text-[11px] text-gray-500 mt-3 leading-snug">
+            Appel non surtaxé · 10 minutes offertes · 7j/7 de 9h à 21h
+          </p>
+          <button
+            type="button"
+            onClick={() => {
+              setState({ kind: 'idle' });
+              setPhone('');
+            }}
+            className="text-xs text-gray-500 hover:text-gray-700 underline underline-offset-2 mt-3"
+          >
+            Réessayer le formulaire
+          </button>
+        </div>
       ) : (
         <form onSubmit={onSubmit} className="space-y-3">
           <div className="flex gap-2">
