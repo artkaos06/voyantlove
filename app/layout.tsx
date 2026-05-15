@@ -85,13 +85,61 @@ export default function RootLayout({
         <Script id="phone-click-tracker" strategy="afterInteractive">{`
           document.addEventListener('click', function(e) {
             var link = e.target && e.target.closest && e.target.closest('a[href^="tel:"]');
-            if (link) {
-              window.dataLayer = window.dataLayer || [];
-              window.dataLayer.push({
-                event: 'phone_click',
-                phone_number: (link.getAttribute('href') || '').replace('tel:', ''),
-                page_path: window.location.pathname
+            if (!link) return;
+
+            var phone = (link.getAttribute('href') || '').replace('tel:', '');
+            var page = window.location.pathname;
+
+            // 1) Existing GTM dataLayer push (kept as-is for analytics)
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+              event: 'phone_click',
+              phone_number: phone,
+              page_path: page
+            });
+
+            // 2) Beacon to our /api/track/tel-click endpoint so we get
+            //    real-time Discord visibility on call-intent (tel: clicks
+            //    otherwise bypass our server completely).
+            try {
+              var attribution = { gclid: null, gbraid: null, wbraid: null };
+              try {
+                var params = new URLSearchParams(window.location.search);
+                ['gclid', 'gbraid', 'wbraid'].forEach(function (k) {
+                  var v = params.get(k) ||
+                          (window.sessionStorage && sessionStorage.getItem(k));
+                  if (v) attribution[k] = v;
+                });
+              } catch (_) {}
+
+              var payload = JSON.stringify({
+                phone: phone,
+                page: page,
+                ua: navigator.userAgent || '',
+                referrer: document.referrer || '',
+                gclid: attribution.gclid,
+                gbraid: attribution.gbraid,
+                wbraid: attribution.wbraid
               });
+
+              // sendBeacon survives the navigation to the dialer.
+              // Regular fetch() would be killed mid-flight by the iOS
+              // dialer hand-off; sendBeacon is queued by the browser to
+              // be delivered in the background.
+              if (navigator.sendBeacon) {
+                var blob = new Blob([payload], { type: 'application/json' });
+                navigator.sendBeacon('/api/track/tel-click', blob);
+              } else {
+                // Fallback for very old browsers (negligible % of FR/EN traffic).
+                fetch('/api/track/tel-click', {
+                  method: 'POST',
+                  headers: { 'Content-Type': 'application/json' },
+                  body: payload,
+                  keepalive: true
+                }).catch(function () {});
+              }
+            } catch (_) {
+              // Tracking is best-effort; never break the actual phone tap.
             }
           }, true);
         `}</Script>
