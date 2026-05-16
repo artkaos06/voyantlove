@@ -10,8 +10,42 @@ function VoyantGrid() {
   const [voyants, setVoyants] = useState<Voyant[]>([]);
   const [freeVoyants, setFreeVoyants] = useState<Voyant[]>([]);
   const [loading, setLoading] = useState(true);
+  const [attribution, setAttribution] = useState<{
+    gclid: string | null;
+    gbraid: string | null;
+    wbraid: string | null;
+  }>({ gclid: null, gbraid: null, wbraid: null });
   const searchParams = useSearchParams();
   const source = searchParams.get('ref') || 'consulter';
+
+  // Capture Google click attribution from URL on mount, persisting to
+  // sessionStorage so it survives in-session navigation (e.g. visitor lands
+  // on /lp/voyant-direct?gclid=ABC, browses to /consulter, then clicks an
+  // affiliate CTA — we still know the gclid). Mirrors the pattern used by
+  // CallbackForm + the tel-click tracker in layout.tsx.
+  useEffect(() => {
+    try {
+      const captured = { gclid: null, gbraid: null, wbraid: null } as {
+        gclid: string | null;
+        gbraid: string | null;
+        wbraid: string | null;
+      };
+      const params = new URLSearchParams(window.location.search);
+      (['gclid', 'gbraid', 'wbraid'] as const).forEach((k) => {
+        const fromUrl = params.get(k);
+        if (fromUrl) {
+          sessionStorage.setItem(k, fromUrl);
+          captured[k] = fromUrl;
+        } else {
+          const stored = sessionStorage.getItem(k);
+          if (stored) captured[k] = stored;
+        }
+      });
+      setAttribution(captured);
+    } catch {
+      // sessionStorage unavailable (SSR / privacy mode) — fine, skip
+    }
+  }, []);
 
   useEffect(() => {
     Promise.all([
@@ -51,7 +85,7 @@ function VoyantGrid() {
 
   const renderVoyantCard = (voyant: Voyant, isFree: boolean) => {
     const isOnline = voyant.ETAT === '1';
-    const affiliateLink = getAffiliateLink(voyant.ID, source);
+    const affiliateLink = getAffiliateLink(voyant.ID, source, attribution);
 
     return (
       <a

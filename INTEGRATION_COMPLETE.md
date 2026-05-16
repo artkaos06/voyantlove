@@ -68,7 +68,7 @@
 ```tsx
 <div className="bg-gradient-to-br from-purple-600 via-pink-600 to-rose-600...">
   {/* CTA fort avec arguments de conversion */}
-  <a href="https://www.monsitevoyance.com/zoom_voyant.php?id=8864&partner=383&ref=ex-qui-revient-final">
+  <a href="https://www.monsitevoyance.com/zoom_voyant.php?id=8864&partner=936&ref=ex-qui-revient-final">
     🔮 Consulter un Voyant Maintenant
   </a>
 </div>
@@ -93,26 +93,26 @@
 
 ### Format MonSiteVoyance
 ```
-https://www.monsitevoyance.com/zoom_voyant.php?id={VOYANT_ID}&partner=383&ref={SOURCE}
+https://www.monsitevoyance.com/zoom_voyant.php?id={VOYANT_ID}&partner=936&ref={SOURCE}
 ```
 
 ### Exemples sur cette page
 
 **Zone 1 (Early)**:
 ```
-https://www.monsitevoyance.com/zoom_voyant.php?id=11185&partner=383&ref=ex-qui-revient-early
+https://www.monsitevoyance.com/zoom_voyant.php?id=11185&partner=936&ref=ex-qui-revient-early
 ```
 
 **Zone 2 (Mid)** - 3 voyants:
 ```
-https://www.monsitevoyance.com/zoom_voyant.php?id=11185&partner=383&ref=ex-qui-revient-mid
-https://www.monsitevoyance.com/zoom_voyant.php?id=11135&partner=383&ref=ex-qui-revient-mid
-https://www.monsitevoyance.com/zoom_voyant.php?id=8062&partner=383&ref=ex-qui-revient-mid
+https://www.monsitevoyance.com/zoom_voyant.php?id=11185&partner=936&ref=ex-qui-revient-mid
+https://www.monsitevoyance.com/zoom_voyant.php?id=11135&partner=936&ref=ex-qui-revient-mid
+https://www.monsitevoyance.com/zoom_voyant.php?id=8062&partner=936&ref=ex-qui-revient-mid
 ```
 
 **Zone 3 (Final)**:
 ```
-https://www.monsitevoyance.com/zoom_voyant.php?id=8864&partner=383&ref=ex-qui-revient-final
+https://www.monsitevoyance.com/zoom_voyant.php?id=8864&partner=936&ref=ex-qui-revient-final
 ```
 
 ---
@@ -178,7 +178,7 @@ http://localhost:3002/reconquete/ex-qui-revient
 
 Cliquer sur n'importe quel CTA devrait ouvrir:
 ```
-https://www.monsitevoyance.com/zoom_voyant.php?id=XXXX&partner=383&ref=ex-qui-revient-XXX
+https://www.monsitevoyance.com/zoom_voyant.php?id=XXXX&partner=936&ref=ex-qui-revient-XXX
 ```
 
 ---

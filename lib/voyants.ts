@@ -144,11 +144,42 @@ export function getAvailabilityServices(voyant: Voyant): string[] {
   return services;
 }
 
-// Generate affiliate link for MonSiteVoyance
-export function getAffiliateLink(voyantId: string, source: string = 'voyantlove'): string {
-  // MonSiteVoyance affiliate URL with partner ID 383
-  // Format: https://www.monsitevoyance.com/zoom_voyant.php?id=<ID>&partner=936&ref=<source>
-  return `https://www.monsitevoyance.com/zoom_voyant.php?id=${voyantId}&partner=936&ref=${source}`;
+/**
+ * Optional click attribution params, threaded through the interstitial so
+ * Discord pings + Vercel logs can correlate a click-out with the Google Ads
+ * click that drove the visitor.
+ */
+export interface AffiliateAttribution {
+  gclid?: string | null;
+  gbraid?: string | null;
+  wbraid?: string | null;
+}
+
+/**
+ * Generate the click-out URL for a voyant.
+ *
+ * Returns a path to our own /api/go/voyant interstitial — NOT a direct
+ * MonSiteVoyance URL — so every click gets a Discord ping, digest counter,
+ * and structured Vercel log entry before the 302 redirect.
+ *
+ * Backward-compatible: existing 2-arg callers keep working. Callers that
+ * have access to click attribution (e.g. /consulter reading gclid from
+ * sessionStorage) should pass it as the third arg so it flows through to
+ * the server log.
+ */
+export function getAffiliateLink(
+  voyantId: string,
+  source: string = 'voyantlove',
+  attribution?: AffiliateAttribution
+): string {
+  const params = new URLSearchParams({
+    id: voyantId,
+    source,
+  });
+  if (attribution?.gclid) params.set('gclid', attribution.gclid);
+  if (attribution?.gbraid) params.set('gbraid', attribution.gbraid);
+  if (attribution?.wbraid) params.set('wbraid', attribution.wbraid);
+  return `/api/go/voyant?${params.toString()}`;
 }
 
 // Get gender label

@@ -257,7 +257,7 @@ Visitez:
 
 Cliquez sur plusieurs CTAs pour vérifier:
 - ✅ Liens vers MonSiteVoyance fonctionnent
-- ✅ Paramètre `partner=383` présent
+- ✅ Paramètre `partner=936` présent
 - ✅ Photos voyants s'affichent
 
 ### 6.3 Google Search Console

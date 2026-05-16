@@ -28,11 +28,11 @@ testCases.forEach(({ voyant, source }) => {
 });
 
 console.log('\n✅ Format des liens:');
-console.log('https://www.monsitevoyance.com/zoom_voyant.php?id={VOYANT_ID}&partner=383&ref={SOURCE}');
+console.log('https://www.monsitevoyance.com/zoom_voyant.php?id={VOYANT_ID}&partner=936&ref={SOURCE}');
 
 console.log('\n📊 Paramètres de tracking:');
 console.log('- id: Identifiant du voyant');
-console.log('- partner: 383 (votre ID partenaire)');
+console.log('- partner: 936 (votre ID partenaire)');
 console.log('- ref: Source de tracking (hub-page-position)');
 
 console.log('\n🎯 Exemples de sources pour tracking:');
