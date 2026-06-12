@@ -15,6 +15,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { Color, notifyDiscord } from '@/lib/discord';
 import { snapshotAndReset } from '@/lib/digestState';
+import { getPhoneCBStats, type PhoneCBStatsBucket } from '@/lib/goracash';
 
 export const dynamic = 'force-dynamic';
 
@@ -34,6 +35,39 @@ function pct(numerator: number, denominator: number): string {
   return `${((numerator / denominator) * 100).toFixed(1)}%`;
 }
 
+/**
+ * Yesterday's date in Europe/Paris (Goracash operates on French time).
+ * fr-CA locale formats as YYYY-MM-DD.
+ */
+function yesterdayParis(): string {
+  return new Intl.DateTimeFormat('fr-CA', { timeZone: 'Europe/Paris' }).format(
+    new Date(Date.now() - 24 * 60 * 60 * 1000)
+  );
+}
+
+/**
+ * Pull yesterday's authoritative funnel numbers from the Goracash API.
+ * Unlike digestState this survives cold starts — it's the platform's own
+ * ledger. Returns null on failure (creds missing, API error) so a Goracash
+ * outage never blocks the rest of the digest.
+ */
+async function fetchGoracashYesterday(): Promise<{
+  date: string;
+  bucket: PhoneCBStatsBucket;
+} | null> {
+  const date = yesterdayParis();
+  try {
+    const stats = await getPhoneCBStats(`${date} 00:00:00`, `${date} 23:59:59`);
+    return { date, bucket: stats.global };
+  } catch (err) {
+    console.error('[daily-digest] goracash stats failed', {
+      date,
+      error: err instanceof Error ? err.message : String(err),
+    });
+    return null;
+  }
+}
+
 async function handle(request: NextRequest): Promise<NextResponse> {
   if (!isAuthorized(request)) {
     return NextResponse.json(
@@ -43,13 +77,14 @@ async function handle(request: NextRequest): Promise<NextResponse> {
   }
 
   const snap = snapshotAndReset();
+  const goracash = await fetchGoracashYesterday();
 
   // Determine color: green if conversions happened, yellow if traffic but
   // no conversions, gray if no activity at all.
   const color =
-    snap.conversionsReceived > 0
+    snap.conversionsReceived > 0 || (goracash?.bucket.transaction ?? 0) > 0
       ? Color.GREEN
-      : snap.clicksTotal > 0
+      : snap.clicksTotal > 0 || (goracash?.bucket.total ?? 0) > 0
         ? Color.YELLOW
         : Color.GRAY;
 
@@ -93,6 +128,19 @@ async function handle(request: NextRequest): Promise<NextResponse> {
       value: `${attributionRate} of click-outs had attribution`,
       inline: true,
     },
+    // Authoritative Goracash funnel for yesterday (Paris time) — straight
+    // from /v1/phone/cbStats, immune to in-memory counter resets.
+    goracash
+      ? {
+          name: `💶 Goracash API · ${goracash.date}`,
+          value: `${goracash.bucket.total} appels · ${goracash.bucket.treated} traités · ${goracash.bucket.subscription} inscriptions · **${goracash.bucket.transaction} payants** · **${goracash.bucket.amount.toFixed(2)} €**`,
+          inline: false,
+        }
+      : {
+          name: '💶 Goracash API',
+          value: 'Stats indisponibles (API error — voir logs).',
+          inline: false,
+        },
   ];
 
   // Add a "no activity" hint if everything is zero (saves user from

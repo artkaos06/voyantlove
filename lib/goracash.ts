@@ -136,6 +136,125 @@ export function normalizeFrenchPhone(raw: string): string | null {
   return null;
 }
 
+// ---------------------------------------------------------------------------
+// Phone CB stats — the conversion/revenue reporting API.
+//
+// Endpoint (docs: WebServices - URLs > Téléphonie):
+//   [POST|GET] /v1/phone/cbStats
+//     date_lbound / date_ubound : 'YYYY-MM-DD HH:II:SS'
+//
+// Returns the full conversion funnel per period and per day:
+//   total        = calls received        (dashboard "Appels")
+//   treated      = calls handled         (dashboard "Appels traités")
+//   subscription = registrations         (dashboard "Inscriptions")
+//   transaction  = PAID events           (dashboard "Appels payants") ← money
+//   callback     = callback requests     (dashboard "Demandes de rappel")
+//   amount       = € actually owed to us (dashboard "Reversements")
+//
+// Limitation: aggregated by number/date only — no tracker dimension. Good
+// for daily P&L automation; per-click attribution still requires the web
+// offer's tracker reporting.
+// ---------------------------------------------------------------------------
+
+const CB_STATS_PATH = '/v1/phone/cbStats';
+
+export interface PhoneCBStatsBucket {
+  total: number;
+  treated: number;
+  subscription: number;
+  transaction: number;
+  callback: number;
+  amount: number;
+}
+
+export interface PhoneCBStats {
+  global: PhoneCBStatsBucket;
+  /** Per-day buckets keyed by date string as returned by Goracash. */
+  dates: Record<string, PhoneCBStatsBucket>;
+}
+
+function toBucket(raw: Record<string, unknown> | undefined): PhoneCBStatsBucket {
+  const n = (v: unknown) => {
+    const x = Number(v);
+    return Number.isFinite(x) ? x : 0;
+  };
+  return {
+    total: n(raw?.total),
+    treated: n(raw?.treated),
+    subscription: n(raw?.subscription),
+    transaction: n(raw?.transaction),
+    callback: n(raw?.callback),
+    amount: n(raw?.amount),
+  };
+}
+
+/**
+ * Fetch CB (free-number / card-payment) phone stats for a datetime range.
+ * Bounds use Goracash's expected format 'YYYY-MM-DD HH:II:SS' (their
+ * backoffice operates on French time).
+ */
+export async function getPhoneCBStats(
+  dateLbound: string,
+  dateUbound: string
+): Promise<PhoneCBStats> {
+  const clientId = env('GORACASH_CLIENT_ID');
+  const accessToken = await getToken();
+
+  const buildBody = (token: string) =>
+    new URLSearchParams({
+      client_id: clientId,
+      access_token: token,
+      date_lbound: dateLbound,
+      date_ubound: dateUbound,
+    });
+
+  const call = async (token: string) => {
+    const res = await fetch(`${BASE_URL}${CB_STATS_PATH}`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: buildBody(token).toString(),
+    });
+    const text = await res.text();
+    try {
+      return JSON.parse(text) as {
+        status: string;
+        message?: string;
+        stats?: {
+          global?: Record<string, unknown>;
+          dates?: Record<string, Record<string, unknown>>;
+        };
+      };
+    } catch {
+      throw new Error(
+        `Goracash cbStats: unparseable response (${res.status}): ${text.slice(0, 300)}`
+      );
+    }
+  };
+
+  let parsed = await call(accessToken);
+
+  // Token rejected → flush cache, retry once (same pattern as callbacks).
+  if (
+    parsed.status === 'error' &&
+    typeof parsed.message === 'string' &&
+    /token/i.test(parsed.message)
+  ) {
+    cachedToken = null;
+    parsed = await call(await fetchAccessToken());
+  }
+
+  if (parsed.status !== 'ok') {
+    throw new Error(`Goracash cbStats error: ${parsed.message || 'unknown'}`);
+  }
+
+  const dates: Record<string, PhoneCBStatsBucket> = {};
+  for (const [date, bucket] of Object.entries(parsed.stats?.dates || {})) {
+    dates[date] = toBucket(bucket);
+  }
+
+  return { global: toBucket(parsed.stats?.global), dates };
+}
+
 export async function sendCallbackRequest(
   req: CallbackRequest
 ): Promise<CallbackResult> {
