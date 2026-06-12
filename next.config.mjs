@@ -4,6 +4,12 @@ const nextConfig = {
     unoptimized: true
   },
   trailingSlash: true, // Better for SEO
+  // Disable Next's automatic 308 slash-redirect: it also fired on /api/*
+  // route handlers, adding a pointless hop on the click-out money path in
+  // prod and 404-ing API routes entirely in dev (dev/prod mismatch). The
+  // page-only canonicalization redirect now lives in middleware.ts, where
+  // /api/* is explicitly excluded.
+  skipTrailingSlashRedirect: true,
 
   // Metadata for the site
   env: {

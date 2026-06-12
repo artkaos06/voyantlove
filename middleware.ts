@@ -54,6 +54,21 @@ export function middleware(request: NextRequest) {
     return NextResponse.next();
   }
 
+  // Trailing-slash canonicalization — PAGE paths only.
+  // next.config sets skipTrailingSlashRedirect: true because Next's blanket
+  // 308 also hit /api/* route handlers (extra hop on every click-out and
+  // beacon in prod; total 404 in dev). Pages still need the canonical
+  // slashed form for SEO, so the redirect lives here, after the /api/
+  // pass-through above. The matcher already excludes file-extension paths.
+  if (!pathname.endsWith('/')) {
+    // Plain URL, not request.nextUrl.clone(): NextURL re-normalizes the
+    // pathname on serialization and strips the trailing slash we just
+    // added, turning this redirect into an infinite loop.
+    const canonical = new URL(request.url);
+    canonical.pathname = `${pathname}/`;
+    return NextResponse.redirect(canonical, 308);
+  }
+
   const isEnDomain = EN_HOSTS.has(hostname);
 
   if (isEnDomain) {
