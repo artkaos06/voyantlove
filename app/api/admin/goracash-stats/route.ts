@@ -16,6 +16,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import {
   getPhoneCBStats,
+  getWebCBStatsRaw,
   type PhoneCBStats,
   type PhoneCBStatsBucket,
 } from '@/lib/goracash';
@@ -99,6 +100,28 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
       { ok: false, error: 'from/to required as YYYY-MM-DD' },
       { status: 400 }
     );
+  }
+
+  // service=web → probe the undocumented /v1/web/cbStats endpoint and return
+  // its raw shape (optionally filtered to ?trackers=cid1,cid2). Used to learn
+  // the response structure before building the typed web-offer OCI poller.
+  if (sp.get('service') === 'web') {
+    const trackers = (sp.get('trackers') || '')
+      .split(',')
+      .map((t) => t.trim())
+      .filter(Boolean);
+    try {
+      const raw = await getWebCBStatsRaw(
+        `${from} 00:00:00`,
+        `${to} 23:59:59`,
+        trackers.length ? trackers : undefined
+      );
+      return NextResponse.json({ ok: true, service: 'web', from, to, trackers, raw });
+    } catch (err) {
+      const msg = err instanceof Error ? err.message : String(err);
+      console.error('[admin/goracash-stats] web probe failed', { from, to, error: msg });
+      return NextResponse.json({ ok: false, service: 'web', error: msg }, { status: 502 });
+    }
   }
 
   try {

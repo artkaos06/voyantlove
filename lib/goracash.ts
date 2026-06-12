@@ -255,6 +255,87 @@ export async function getPhoneCBStats(
   return { global: toBucket(parsed.stats?.global), dates };
 }
 
+// ---------------------------------------------------------------------------
+// WEB offer CB stats — the self-serve web funnel's reporting API.
+//
+// UNDOCUMENTED in the backoffice (the "Guides > Web" doc page is empty), but
+// present in Goracash's public PHP client (Goracash\Service\Web):
+//   endpoint:  POST /v1/web/cbStats
+//   params:    date_lbound, date_ubound ('YYYY-MM-DD HH:II:SS', max 1 month)
+//              tracker  (single) / trackers[] (array)  ← per-cid filter
+//              market/markets, thematic/thematics       (optional)
+//
+// Crucially this accepts a `tracker` filter — the same value we send as
+// `datas` on the news-voyance landing. That makes per-click attribution
+// possible for the web offer (phone cbStats has no tracker dimension).
+//
+// Return shape is not documented; getWebCBStatsRaw returns the `stats`
+// object verbatim so we can inspect it against a live account before
+// building typed accessors + the OCI poller on top.
+// ---------------------------------------------------------------------------
+
+const WEB_CB_STATS_PATH = '/v1/web/cbStats';
+
+/**
+ * Raw web CB stats for a period, optionally filtered to specific trackers.
+ * Returns the parsed `stats` object untouched (shape TBD from live probe).
+ */
+export async function getWebCBStatsRaw(
+  dateLbound: string,
+  dateUbound: string,
+  trackers?: string[]
+): Promise<unknown> {
+  const clientId = env('GORACASH_CLIENT_ID');
+  const accessToken = await getToken();
+
+  const buildBody = (token: string) => {
+    const body = new URLSearchParams({
+      client_id: clientId,
+      access_token: token,
+      date_lbound: dateLbound,
+      date_ubound: dateUbound,
+    });
+    // PHP-style array params: trackers[]=a&trackers[]=b
+    (trackers || []).forEach((t) => body.append('trackers[]', t));
+    return body;
+  };
+
+  const call = async (token: string) => {
+    const res = await fetch(`${BASE_URL}${WEB_CB_STATS_PATH}`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: buildBody(token).toString(),
+    });
+    const text = await res.text();
+    try {
+      return JSON.parse(text) as {
+        status: string;
+        message?: string;
+        stats?: unknown;
+      };
+    } catch {
+      throw new Error(
+        `Goracash web/cbStats: unparseable response (${res.status}): ${text.slice(0, 300)}`
+      );
+    }
+  };
+
+  let parsed = await call(accessToken);
+  if (
+    parsed.status === 'error' &&
+    typeof parsed.message === 'string' &&
+    /token/i.test(parsed.message)
+  ) {
+    cachedToken = null;
+    parsed = await call(await fetchAccessToken());
+  }
+
+  if (parsed.status !== 'ok') {
+    throw new Error(`Goracash web/cbStats error: ${parsed.message || 'unknown'}`);
+  }
+  return parsed.stats ?? null;
+}
+
 export async function sendCallbackRequest(
   req: CallbackRequest
 ): Promise<CallbackResult> {
