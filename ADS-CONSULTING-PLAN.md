@@ -32,15 +32,36 @@ Every campaign decision reduces to this. The May campaign bought €2.86 clicks 
 
 | Offer | Payout | Trigger | Attribution | Verdict |
 |---|---|---|---|---|
-| **Goracash WEB (= Wengo)** | **€80** | Client exceeds €1/10-min welcome offer and pays | Postback possible (AM) | **Primary.** Self-serve conversion, biggest FR platform |
-| Goracash PHONE | €67 | Same, via call | None (no click ID through a phone call) | Retired. Agent-gated + attribution-blind |
-| monsitevoyance (p. 936) | unknown | unknown | `ref` only today; sub-id TBD | **Clarify terms this week** — already integrated |
-| Cosmospace group (affiliation.voyance.fr) | RevShare on gross | client spend | platform-side | Backup / later hybrid negotiation |
-| EN: Mysticsense / Oranum | $75 / up to $175 | first deposit | standard | Phase 3 (EN native) |
+| **Goracash WEB (= Wengo)** | **€80** CPA | Client exceeds €1/10-min welcome offer and pays | `datas` tracker → dashboard ✅; **API per-click blocked** (see below) | **Primary / validation engine.** Self-serve conversion, biggest FR platform |
+| Goracash PHONE | €67 CPA | Same, via call | None (no click ID through a phone call) | Retired. Agent-gated + attribution-blind. May data: 2 inscr → **0 transactions** (API-confirmed) |
+| **Télémaque** (affiliation.voyance.fr / Cosmospace group) | **35–45% RevShare, recurring** + 5% sub-affiliate · biweekly payout | Share of all client spend, for the client's lifetime | platform-side (durability TBD) | **Scale engine, Phase 3.** Higher total return, but back-loaded cash + months to model |
+| monsitevoyance (p. 936) | unknown | unknown | `ref` only today; sub-id TBD | Clarify terms — already integrated |
+| EN: Mysticsense / Oranum | $75 / up to $175 CPA | first deposit | standard | Phase 3 (EN native) |
 
-⚠️ **Open discrepancy to resolve with the AM**: Goracash's public page says €67/€80 CPA; an older Wengo listing says €20 per new customer. Get the actual insertion-order terms for partner accounts **in writing** before modeling is final.
+⚠️ **Goracash payout discrepancy** to resolve with the AM: public page says €67/€80 CPA; an older Wengo listing says €20/new customer. Get insertion-order terms **in writing** before modeling is final.
 
-**CPA vs RevShare**: psychic customers are repeat buyers (platforms monetize €200–400+ LTV — that's *why* they can pay €80 CPA). RevShare could capture more lifetime value but pays slowly and adds platform-retention risk. **Decision: CPA now** (cash flow + learning speed), revisit hybrid once we deliver volume and have leverage.
+🔴 **Goracash web API blocker (found 2026-06-12)**: `/v1/web/cbStats` (the per-tracker attribution endpoint, confirmed in their PHP client) returns **HTTP 500 "Erreur interne du serveur"** for our account — all ranges, with/without `thematic`. Phone `cbStats` works; web does not → web stats service almost certainly **not provisioned on our account**. AM action required. Until resolved, web-offer attribution runs on the **v0 dashboard model** (cid in `datas` → conversion shows tracker in dashboard); the automated per-click → OCI poller is deferred.
+
+### 1.2.1 CPA vs RevShare — the sequencing decision
+
+Two genuinely different economic models, not interchangeable offers:
+
+| | Goracash CPA (€80) | Télémaque RevShare (40%) |
+|---|---|---|
+| Cash timing | once, ~net-30 | dribbled over client lifetime, biweekly |
+| Captures LTV | ❌ | ✅ ("highest basket", recurring) |
+| Modelable now | ✅ `CPC < €80 × P(conv)` | ❌ needs months of LTV data |
+| Working capital | low | **high — you front CAC, revenue lags months** |
+
+**Total-return crossover**: 40% × LTV > €80 ⟺ **LTV > €200**. Given "highest basket in market" + recurring, Télémaque likely wins on *total* return. **But for a capital-constrained solo operator, cash velocity beats total return**: €80 recycled monthly compounds faster than €120 collected over 6 months, and RevShare-first would put us €1.5–2k underwater on an *unvalidated* funnel.
+
+**Decision (confirmed): CPA-first, RevShare-at-scale.** Validate + build a cash buffer on Goracash web €80 (clean math, fast feedback). Keep Télémaque warm in parallel (apply now, gather data — zero spend). Phase-3 trigger: converting funnel + cash buffer → flip a traffic slice to Télémaque, compare 90-day RevShare-per-click vs €80 CPA, shift weight to the winner. Running both also kills single-offer dependency (which bit us when Goracash phone showed "program closed"); the `/api/go/[offer]` spine is offer-agnostic.
+
+**Télémaque pre-commitment questions (RevShare value lives/dies on these):**
+1. **Attribution durability** — client tied to us for life, or a cookie window? (Lifetime/account-based is what justifies the cash-flow pain; a 30-day cookie guts it.)
+2. **Average client LTV / ARPU** — the single number that sets the crossover.
+3. **Tracking tech** — postback/API + subid (our cid), or dashboard-only?
+4. **Traffic rules** — Google search + native (Taboola/MGID/Outbrain) allowed? (We can't use Meta/Bing.)
 
 ## 1.3 Funnel models — pessimistic / base / optimistic
 
