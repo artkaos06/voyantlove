@@ -110,16 +110,26 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
       .split(',')
       .map((t) => t.trim())
       .filter(Boolean);
+    const thematic = sp.get('thematic') || undefined;
+    const market = sp.get('market') || undefined;
     try {
-      const raw = await getWebCBStatsRaw(
-        `${from} 00:00:00`,
-        `${to} 23:59:59`,
-        trackers.length ? trackers : undefined
-      );
-      return NextResponse.json({ ok: true, service: 'web', from, to, trackers, raw });
+      const probe = await getWebCBStatsRaw(`${from} 00:00:00`, `${to} 23:59:59`, {
+        trackers: trackers.length ? trackers : undefined,
+        thematic,
+        market,
+      });
+      // Always 200 — this is a diagnostic probe; the `ok` field + raw body
+      // tell the full story (including Goracash-side errors verbatim).
+      return NextResponse.json({
+        service: 'web',
+        from,
+        to,
+        sent: { trackers, thematic, market },
+        ...probe,
+      });
     } catch (err) {
       const msg = err instanceof Error ? err.message : String(err);
-      console.error('[admin/goracash-stats] web probe failed', { from, to, error: msg });
+      console.error('[admin/goracash-stats] web probe threw', { from, to, error: msg });
       return NextResponse.json({ ok: false, service: 'web', error: msg }, { status: 502 });
     }
   }

@@ -280,11 +280,17 @@ const WEB_CB_STATS_PATH = '/v1/web/cbStats';
  * Raw web CB stats for a period, optionally filtered to specific trackers.
  * Returns the parsed `stats` object untouched (shape TBD from live probe).
  */
+export interface WebCBStatsOptions {
+  trackers?: string[];
+  thematic?: string;
+  market?: string;
+}
+
 export async function getWebCBStatsRaw(
   dateLbound: string,
   dateUbound: string,
-  trackers?: string[]
-): Promise<unknown> {
+  opts: WebCBStatsOptions = {}
+): Promise<{ ok: boolean; httpStatus: number; raw: unknown }> {
   const clientId = env('GORACASH_CLIENT_ID');
   const accessToken = await getToken();
 
@@ -295,8 +301,10 @@ export async function getWebCBStatsRaw(
       date_lbound: dateLbound,
       date_ubound: dateUbound,
     });
+    if (opts.thematic) body.set('thematic', opts.thematic);
+    if (opts.market) body.set('market', opts.market);
     // PHP-style array params: trackers[]=a&trackers[]=b
-    (trackers || []).forEach((t) => body.append('trackers[]', t));
+    (opts.trackers || []).forEach((t) => body.append('trackers[]', t));
     return body;
   };
 
@@ -307,33 +315,31 @@ export async function getWebCBStatsRaw(
       body: buildBody(token).toString(),
     });
     const text = await res.text();
+    let json: unknown = null;
     try {
-      return JSON.parse(text) as {
-        status: string;
-        message?: string;
-        stats?: unknown;
-      };
+      json = JSON.parse(text);
     } catch {
-      throw new Error(
-        `Goracash web/cbStats: unparseable response (${res.status}): ${text.slice(0, 300)}`
-      );
+      // leave json null; raw text returned for inspection
     }
+    return { httpStatus: res.status, text, json };
   };
 
-  let parsed = await call(accessToken);
-  if (
-    parsed.status === 'error' &&
-    typeof parsed.message === 'string' &&
-    /token/i.test(parsed.message)
-  ) {
+  let resp = await call(accessToken);
+  const status = (resp.json as { status?: string } | null)?.status;
+  const message = (resp.json as { message?: string } | null)?.message;
+  if (status === 'error' && typeof message === 'string' && /token/i.test(message)) {
     cachedToken = null;
-    parsed = await call(await fetchAccessToken());
+    resp = await call(await fetchAccessToken());
   }
 
-  if (parsed.status !== 'ok') {
-    throw new Error(`Goracash web/cbStats error: ${parsed.message || 'unknown'}`);
-  }
-  return parsed.stats ?? null;
+  // Return the full picture (no throw) — this is a probe; the caller decides
+  // what to do with errors. raw is the parsed JSON when available, else the
+  // first 500 chars of the body so we can see exactly what Goracash said.
+  return {
+    ok: (resp.json as { status?: string } | null)?.status === 'ok',
+    httpStatus: resp.httpStatus,
+    raw: resp.json ?? resp.text.slice(0, 500),
+  };
 }
 
 export async function sendCallbackRequest(
