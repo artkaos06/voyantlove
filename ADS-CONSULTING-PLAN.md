@@ -53,13 +53,23 @@ Two genuinely different economic models, not interchangeable offers:
 | Modelable now | ✅ `CPC < €80 × P(conv)` | ❌ needs months of LTV data |
 | Working capital | low | **high — you front CAC, revenue lags months** |
 
-**Total-return crossover**: 40% × LTV > €80 ⟺ **LTV > €200**. Given "highest basket in market" + recurring, Télémaque likely wins on *total* return. **But for a capital-constrained solo operator, cash velocity beats total return**: €80 recycled monthly compounds faster than €120 collected over 6 months, and RevShare-first would put us €1.5–2k underwater on an *unvalidated* funnel.
+**Total-return crossover, with Télémaque's real number** (their tiers page: average basket = **€130**; tiers Silver 35% / Gold 40% [≥€3k/mo] / Platinium 45% [≥€6k/mo]):
+
+| Tier | RevShare €/client (× €130) | vs €80 CPA | Beats €80 CPA only if lifetime CA/client > |
+|---|---|---|---|
+| Silver 35% (entry) | **€45.50** | −€34.50 | €228 |
+| Gold 40% | €52.00 | −€28.00 | €200 |
+| Platinium 45% | €58.50 | −€21.50 | €178 |
+
+By Télémaque's **own advertised basket (€130)**, CPA €80 beats RevShare at every tier. RevShare only wins if true *lifetime* CA/client (repeat consumption) clears ~€200 — **the one unknown that decides it is the repeat rate**, i.e. whether €130 is per-consultation (recurring stacks → can exceed €228) or per-lifetime (RevShare structurally loses). Also note the tier ladder is chicken-and-egg: Gold needs ~66 clients/mo *at the Silver rate first*, so you're at 35% (€45.50) for a long ramp. Their example also assumes **0.1% visitor→client** conversion — a sobering floor benchmark.
+
+**But for a capital-constrained solo operator, cash velocity beats total return anyway**: €80 recycled monthly compounds faster than a back-loaded RevShare stream, and RevShare-first would put us €1.5–2k underwater on an *unvalidated* funnel. The €130 figure removes the earlier "RevShare likely wins on total return" assumption — at entry tier it does **not**.
 
 **Decision (confirmed): CPA-first, RevShare-at-scale.** Validate + build a cash buffer on Goracash web €80 (clean math, fast feedback). Keep Télémaque warm in parallel (apply now, gather data — zero spend). Phase-3 trigger: converting funnel + cash buffer → flip a traffic slice to Télémaque, compare 90-day RevShare-per-click vs €80 CPA, shift weight to the winner. Running both also kills single-offer dependency (which bit us when Goracash phone showed "program closed"); the `/api/go/[offer]` spine is offer-agnostic.
 
 **Télémaque pre-commitment questions (RevShare value lives/dies on these):**
-1. **Attribution durability** — client tied to us for life, or a cookie window? (Lifetime/account-based is what justifies the cash-flow pain; a 30-day cookie guts it.)
-2. **Average client LTV / ARPU** — the single number that sets the crossover.
+1. **€130 — per consultation or per client lifetime?** THE decision-flipping question. Per-consultation + repeat → can beat €80 CPA; per-lifetime → RevShare structurally loses to CPA. Get the **average consultations per client / true lifetime CA**.
+2. **Attribution durability** — client tied to us for life, or a cookie window? (Lifetime/account-based is what justifies the cash-flow pain; a 30-day cookie guts it.)
 3. **Tracking tech** — postback/API + subid (our cid), or dashboard-only?
 4. **Traffic rules** — Google search + native (Taboola/MGID/Outbrain) allowed? (We can't use Meta/Bing.)
 
