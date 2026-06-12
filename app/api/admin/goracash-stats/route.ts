@@ -14,12 +14,69 @@
 // as a fallback so the endpoint stays usable if ADMIN_KEY was never set.
 
 import { NextRequest, NextResponse } from 'next/server';
-import { getPhoneCBStats } from '@/lib/goracash';
+import {
+  getPhoneCBStats,
+  type PhoneCBStats,
+  type PhoneCBStatsBucket,
+} from '@/lib/goracash';
 import { Color, notifyDiscord } from '@/lib/discord';
 
 export const dynamic = 'force-dynamic';
 
 const DATE_RE = /^\d{4}-\d{2}-\d{2}$/;
+
+// Goracash's cbStats rejects ranges over ~2 weeks ("Period is too large").
+// We chunk into windows comfortably under that and aggregate, so callers
+// can request arbitrary spans (a full month, a whole campaign quarter).
+const MAX_WINDOW_DAYS = 10;
+
+const fmt = (d: Date) => d.toISOString().slice(0, 10);
+
+/** Inclusive [from, to] split into ≤ maxDays sub-ranges (UTC date math). */
+function chunkRanges(
+  from: string,
+  to: string,
+  maxDays: number
+): Array<[string, string]> {
+  const out: Array<[string, string]> = [];
+  const end = new Date(`${to}T00:00:00Z`);
+  let cur = new Date(`${from}T00:00:00Z`);
+  while (cur <= end) {
+    const winEnd = new Date(cur);
+    winEnd.setUTCDate(winEnd.getUTCDate() + maxDays - 1);
+    const e = winEnd > end ? end : winEnd;
+    out.push([fmt(cur), fmt(e)]);
+    cur = new Date(e);
+    cur.setUTCDate(cur.getUTCDate() + 1);
+  }
+  return out;
+}
+
+/** Fetch a span of any length by chunking + summing the windows. */
+async function getPhoneCBStatsRange(
+  from: string,
+  to: string
+): Promise<PhoneCBStats> {
+  const windows = chunkRanges(from, to, MAX_WINDOW_DAYS);
+  const empty: PhoneCBStatsBucket = {
+    total: 0,
+    treated: 0,
+    subscription: 0,
+    transaction: 0,
+    callback: 0,
+    amount: 0,
+  };
+  const merged: PhoneCBStats = { global: { ...empty }, dates: {} };
+
+  for (const [a, b] of windows) {
+    const part = await getPhoneCBStats(`${a} 00:00:00`, `${b} 23:59:59`);
+    (Object.keys(empty) as Array<keyof PhoneCBStatsBucket>).forEach((k) => {
+      merged.global[k] += part.global[k];
+    });
+    Object.assign(merged.dates, part.dates);
+  }
+  return merged;
+}
 
 function isAuthorized(key: string | null): boolean {
   if (!key) return false;
@@ -45,7 +102,7 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
   }
 
   try {
-    const stats = await getPhoneCBStats(`${from} 00:00:00`, `${to} 23:59:59`);
+    const stats = await getPhoneCBStatsRange(from, to);
 
     if (sp.get('discord') === '1') {
       const g = stats.global;
