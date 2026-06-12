@@ -14,6 +14,10 @@ _Period: ~April–May 2026 · Two markets (EN/Keen, FR/Goracash) · Author: camp
 
 Zero revenue across both. The money bought information, not income. This document is about extracting maximum value from that information.
 
+> **Confirmed via Goracash API (2026-06-12, `/v1/phone/cbStats`, range 2026-05-14→05-23):**
+> `total: 2 · treated: 2 · subscription: 2 · transaction: 0 · amount: 0 €`.
+> The two May inscriptions never converted to a paying transaction — checked weeks later, not a dashboard-lag artifact. The phone funnel's dead step is empirically `inscription → transaction` (the agent-controlled close), which is exactly the dependency the web-offer pivot removes.
+
 ---
 
 ## The single sentence that explains everything
