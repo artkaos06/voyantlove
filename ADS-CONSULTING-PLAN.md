@@ -35,6 +35,7 @@ Every campaign decision reduces to this. The May campaign bought €2.86 clicks 
 | **Goracash WEB (= Wengo)** | **€80** CPA | Client exceeds €1/10-min welcome offer and pays | `datas` tracker → dashboard ✅; **API per-click blocked** (see below) | **Primary / validation engine.** Self-serve conversion, biggest FR platform |
 | Goracash PHONE | €67 CPA | Same, via call | None (no click ID through a phone call) | Retired. Agent-gated + attribution-blind. May data: 2 inscr → **0 transactions** (API-confirmed) |
 | **Télémaque** (affiliation.voyance.fr / Cosmospace group) | **35–45% RevShare, recurring** + 5% sub-affiliate · biweekly payout | Share of all client spend, for the client's lifetime | platform-side (durability TBD) | **Scale engine, Phase 3.** Higher total return, but back-loaded cash + months to model |
+| **CPL — ra11.me personas** (NOYA/ROSY/JADE) | **€2.20 CPL** | Form submit (SOI, 5 fields, love-compat) | ✅ full `request_id` S2S postback — **LIVE** (`/api/go/cpl`, `/api/postback/cpl`) | **Fastest path to first revenue.** Native-only, responsive AM, pays on the reliable lead event. Funnel D |
 | monsitevoyance (p. 936) | unknown | unknown | `ref` only today; sub-id TBD | Clarify terms — already integrated |
 | EN: Mysticsense / Oranum | $75 / up to $175 CPA | first deposit | standard | Phase 3 (EN native) |
 
@@ -104,6 +105,27 @@ Chain: native click → advertorial read-through → CTA click → signup → pa
 ### Funnel C — EN native → advertorial/quiz → Oranum ($175) / Mysticsense ($75)
 
 2–5× FR payouts, 5–10× inventory, $0.30–0.60 CPCs, more competition. Phase 3 (month 2–3), only after the FR native playbook is validated — same architecture, same lander system, different language/offer.
+
+### Funnel D — FR native → ra11.me CPL persona landing (€2.20/lead) ⭐ fastest path to first revenue
+
+Chain: native ad → `/api/go/cpl` (mints cid) → network's hosted persona landing (NOYA/ROSY/JADE) → 5-field love-compat form → **billable lead (SOI)**. No lander to build; network landing is hosted. Confirmed terms (network replied <24h — responsive, unlike Goracash): **€2.20 CPL, SOI** (prénom, prénom du partenaire, email, date de naissance, pays), geo FR→francophone (BE/CH/CA/LU), **all traffic allowed except health/death angles**, and a **full `request_id` S2S postback** (per-click attribution — better instrumented than Goracash web).
+
+`EV/click = €2.20 × P(lead | click)`. Break-even at €0.25 native CPC needs **>11.4% click→lead (>15% with margin)**:
+
+| Form-fill (lead/click) | EV/click | vs €0.25 native CPC |
+|---|---|---|
+| 15% | €0.33 | +32% |
+| **20%** | **€0.44** | **+76%** |
+| 30% | €0.66 | +164% |
+
+**Reading**: the 5 SOI fields *are* the product (couple-astrology reading), so on a "compatibilité amoureuse" curiosity angle they read as value, not friction — astro-compat SOI funnels realistically pull 15–30% form-fill. **Dead on Google Search** (max CPC ≤€0.66 at 40% fill vs €2.50+ auctions) — native only. Strategic value: **pays on the lead — the step that worked in May — not the payment step that produced 0.** Use it both as the cheapest way to learn native mechanics *and* as an A/B against Goracash CPA on the same traffic (some campaigns → CPL €2.20, some → CPA €80; measure real EV/click; CPA wins if the back-end pays, CPL wins if it doesn't).
+
+**Build status: LIVE** (commit 34fae12). `/api/go/cpl?persona=&source=&v=&click_id={macro}` + `/api/postback/cpl?secret=&cid=[request_id]&campaign=[campaign_id]`. We do NOT ingest the network's `[email]` placeholder (GDPR — cid suffices). Deferred to v1 (needs KV click store): relaying conversions back to MGID/Taboola S2S so the native algorithm self-optimizes.
+
+**Setup checklist:**
+1. Set `CPL_POSTBACK_SECRET` in Vercel (before sharing the postback URL — blocks spoofed leads).
+2. Give the network: `https://www.voyantlove.fr/api/postback/cpl?secret=<SECRET>&cid=[request_id]&campaign=[campaign_id]`
+3. Native ad destination: `https://www.voyantlove.fr/api/go/cpl?persona=noya&source=mgid&v=A&click_id={click_id}` (native macro: MGID/Taboola `{click_id}`, Outbrain `{ob_click_id}`).
 
 ## 1.4 Portfolio & budget allocation
 
