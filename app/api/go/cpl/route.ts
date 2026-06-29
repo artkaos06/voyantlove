@@ -136,25 +136,12 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
     });
   }
 
-  await notifyDiscord({
-    title: `🃏 Click-out · CPL ${persona}`,
-    description:
-      'Visitor sent to the ra11.me persona landing. A billable lead will postback to /api/postback/cpl with this cid as request_id.',
-    color:
-      attributionType === 'none' ? Color.YELLOW : Color.PURPLE,
-    fields: [
-      { name: 'cid (request_id)', value: cid, inline: true },
-      { name: 'Persona', value: persona, inline: true },
-      { name: 'Source', value: source, inline: true },
-      ...(variant ? [{ name: 'Variant', value: variant, inline: true }] : []),
-      { name: 'Attribution', value: attributionType, inline: true },
-      ...(nativeClickId
-        ? [{ name: 'Native click_id', value: nativeClickId, inline: false }]
-        : []),
-      ...(gclid ? [{ name: 'gclid', value: gclid, inline: false }] : []),
-      { name: 'Referer', value: referer || '(none — direct/test)' },
-    ],
-  });
+  // NO per-click Discord ping. At native volume this fires hundreds of
+  // times a day and floods the channel. Click-outs are still captured in
+  // the structured log above and aggregated into the daily digest via
+  // recordClickOut. Discord is reserved for the events that matter in
+  // real time: billable LEADS (/api/postback/cpl) and click anomalies
+  // (above). To debug a single click, search Vercel logs by cid.
 
   return NextResponse.redirect(target, 302);
 }
