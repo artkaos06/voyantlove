@@ -23,8 +23,6 @@
 // 302 so the network registers a fresh GET.
 
 import { NextRequest, NextResponse } from 'next/server';
-import { checkClickAnomaly } from '@/lib/clickAnomaly';
-import { Color, notifyDiscord } from '@/lib/discord';
 import { recordClickOut } from '@/lib/digestState';
 
 export const dynamic = 'force-dynamic';
@@ -121,27 +119,14 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
 
   recordClickOut({ attributionType: digestAttr, ip });
 
-  const anomaly = checkClickAnomaly(ip);
-  if (anomaly.shouldAlert) {
-    await notifyDiscord({
-      title: '🚨 Click anomaly · possible bot activity (cpl)',
-      description: `Single IP fired ${anomaly.count} click-outs in the last 60 seconds. Threshold = 10/min. Cooldown 5 min.`,
-      color: Color.RED,
-      fields: [
-        { name: 'IP', value: ip || '(unknown)', inline: true },
-        { name: 'Persona', value: persona, inline: true },
-        { name: 'cid', value: cid, inline: true },
-        { name: 'User Agent', value: userAgent || '(empty)' },
-      ],
-    });
-  }
-
-  // NO per-click Discord ping. At native volume this fires hundreds of
-  // times a day and floods the channel. Click-outs are still captured in
-  // the structured log above and aggregated into the daily digest via
-  // recordClickOut. Discord is reserved for the events that matter in
-  // real time: billable LEADS (/api/postback/cpl) and click anomalies
-  // (above). To debug a single click, search Vercel logs by cid.
+  // /api/go/cpl is fully Discord-SILENT by design. At native volume the
+  // redirect is hit hundreds of times a day (plus bot/scraper traffic), so
+  // ANY per-click Discord call — click-out OR anomaly alert — floods the
+  // channel (serverless can't reliably throttle the anomaly cooldown across
+  // instances). Click-outs are still captured in the structured log above
+  // and aggregated into the daily digest via recordClickOut. Discord is
+  // reserved for genuinely rare, valuable events: billable LEADS, which
+  // ping from /api/postback/cpl. Debug a single click via Vercel logs (cid).
 
   return NextResponse.redirect(target, 302);
 }
