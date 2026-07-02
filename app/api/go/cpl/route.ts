@@ -40,6 +40,12 @@ const PERSONAS: Record<string, string> = {
   jade:
     process.env.CPL_PERSONA_JADE ||
     'ed89b668c36ea5bcb5105f2f7ac5300f08147e19-447c3412363-e69c8ffb698-03407feb1c2',
+  // New AM-recommended offer — lower friction, better conversion (replaces
+  // noya as the primary after noya direct-linked at 0% on 705 clicks).
+  // Same network/postback mechanism, so no other change is needed.
+  v2:
+    process.env.CPL_PERSONA_V2 ||
+    '777dc568ac92d69713419ff4bb545dd8fba4aa87-04ed4ad90b5-bf11a8ed709-128c5d90bf0',
 };
 
 const CPL_BASE = 'https://www.ra11.me/track/lce';
