@@ -31,3 +31,8 @@ next-env.d.ts
 .idea/
 *.swp
 /tmp
+
+# Claude Code ephemeral (worktrees, session data, local launch config)
+.claude/worktrees/
+.claude/projects/
+.claude/launch.json
