@@ -32,7 +32,7 @@ import { recordCplLead } from '@/lib/cplStats';
 export const dynamic = 'force-dynamic';
 
 // Payout per billable lead, in EUR. Overridable via env if the rate changes.
-const CPL_PAYOUT_EUR = Number(process.env.CPL_PAYOUT_EUR || '2.20');
+const CPL_PAYOUT_EUR = Number(process.env.CPL_PAYOUT_EUR || '2.30');
 
 function isAuthorized(secret: string | null): boolean {
   const expected = process.env.CPL_POSTBACK_SECRET;
@@ -99,7 +99,7 @@ async function handle(request: NextRequest): Promise<NextResponse> {
 
   await notifyDiscord({
     category: 'lead',
-    title: '🎯 CPL · NEW LEAD (€2.20)',
+    title: '🎯 CPL · NEW LEAD (€2.30)',
     description:
       'A billable lead postbacked from the ra11.me CPL network. Match the cid against the /api/go/cpl click-out for full ad/keyword context.',
     color: Color.GREEN,

@@ -19,7 +19,7 @@ import { getPhoneCBStats, type PhoneCBStatsBucket } from '@/lib/goracash';
 import { getCplLeadCount } from '@/lib/cplStats';
 
 // Payout per CPL lead (EUR) — mirror of the postback route's constant.
-const CPL_PAYOUT_EUR = Number(process.env.CPL_PAYOUT_EUR || '2.20');
+const CPL_PAYOUT_EUR = Number(process.env.CPL_PAYOUT_EUR || '2.30');
 
 export const dynamic = 'force-dynamic';
 
