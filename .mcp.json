@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "gsc": {
+      "command": "node",
+      "args": ["/Users/roma/Projects/Suganthans-GSC-MCP/dist/index.js"],
+      "env": {
+        "GSC_AUTH_MODE": "oauth",
+        "GSC_OAUTH_SECRETS_FILE": "/Users/roma/.config/gsc-mcp/client_secrets.json",
+        "GSC_SITE_URL": "https://winz.io/"
+      }
+    }
+  }
+}

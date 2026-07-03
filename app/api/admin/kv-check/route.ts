@@ -9,6 +9,7 @@
 // Usage: /api/admin/kv-check?key=<ADMIN_KEY or CRON_SECRET>
 
 import { NextRequest, NextResponse } from 'next/server';
+import { getCplLeadCount, parisDate } from '@/lib/cplStats';
 
 export const dynamic = 'force-dynamic';
 
@@ -40,12 +41,18 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
 
   const anyPresent = Object.values(env).some(Boolean);
 
+  // Live read from KV — proves the client can actually connect + read, not
+  // just that env vars exist. Shows today's (Paris) CPL lead count.
+  const today = parisDate();
+  const cplLeadsToday = await getCplLeadCount(today);
+
   return NextResponse.json({
     ok: true,
     kv_connected: anyPresent,
     env_present: env,
+    cpl_leads_today: { date: today, count: cplLeadsToday },
     hint: anyPresent
-      ? 'KV env vars detected — ready to wire the durable CPL counter.'
+      ? 'KV env vars detected — durable CPL counter active.'
       : 'No KV env vars in this deployment. Either the store is not connected to this project, or a redeploy is needed after connecting it.',
   });
 }

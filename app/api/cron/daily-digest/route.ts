@@ -16,6 +16,10 @@ import { NextRequest, NextResponse } from 'next/server';
 import { Color, notifyDiscord } from '@/lib/discord';
 import { snapshotAndReset } from '@/lib/digestState';
 import { getPhoneCBStats, type PhoneCBStatsBucket } from '@/lib/goracash';
+import { getCplLeadCount } from '@/lib/cplStats';
+
+// Payout per CPL lead (EUR) — mirror of the postback route's constant.
+const CPL_PAYOUT_EUR = Number(process.env.CPL_PAYOUT_EUR || '2.20');
 
 export const dynamic = 'force-dynamic';
 
@@ -78,11 +82,17 @@ async function handle(request: NextRequest): Promise<NextResponse> {
 
   const snap = snapshotAndReset();
   const goracash = await fetchGoracashYesterday();
+  // Durable CPL lead count for yesterday (Paris) — from KV, not the
+  // in-memory snapshot, so it's accurate across serverless instances.
+  const cplDate = yesterdayParis();
+  const cplLeads = await getCplLeadCount(cplDate);
 
   // Determine color: green if conversions happened, yellow if traffic but
   // no conversions, gray if no activity at all.
   const color =
-    snap.conversionsReceived > 0 || (goracash?.bucket.transaction ?? 0) > 0
+    cplLeads > 0 ||
+    snap.conversionsReceived > 0 ||
+    (goracash?.bucket.transaction ?? 0) > 0
       ? Color.GREEN
       : snap.clicksTotal > 0 || (goracash?.bucket.total ?? 0) > 0
         ? Color.YELLOW
@@ -93,6 +103,11 @@ async function handle(request: NextRequest): Promise<NextResponse> {
   const attributionRate = pct(attributedClicks, snap.clicksTotal);
 
   const fields = [
+    {
+      name: `🃏 CPL leads · ${cplDate}`,
+      value: `**${cplLeads}** leads · **€${(cplLeads * CPL_PAYOUT_EUR).toFixed(2)}**`,
+      inline: false,
+    },
     {
       name: '🔗 Click-outs',
       value: `**${snap.clicksTotal}** total\n${snap.clicksWithGclid} gclid · ${snap.clicksWithGbraid} gbraid · ${snap.clicksWithWbraid} wbraid · ${snap.clicksNoAttribution} no-attr`,

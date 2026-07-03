@@ -27,6 +27,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { Color, notifyDiscord } from '@/lib/discord';
 import { recordConversion, recordUnauthorizedPostback } from '@/lib/digestState';
+import { recordCplLead } from '@/lib/cplStats';
 
 export const dynamic = 'force-dynamic';
 
@@ -92,6 +93,9 @@ async function handle(request: NextRequest): Promise<NextResponse> {
   });
 
   recordConversion(CPL_PAYOUT_EUR);
+  // Durable per-day counter (survives serverless cold starts, unlike the
+  // in-memory digest counters) so the daily report tallies CPL leads.
+  await recordCplLead();
 
   await notifyDiscord({
     category: 'lead',

@@ -22,7 +22,26 @@
       "Bash(dig:*)",
       "Bash(git add:*)",
       "Bash(git commit:*)",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "Bash(npm run build)",
+      "WebFetch(domain:www.voyantlove.fr)",
+      "Bash(ls /Users/roma/Projects/voyantlove/*.md)",
+      "Bash(npx next build)",
+      "Bash(git remote:*)",
+      "Bash(git revert:*)",
+      "WebSearch",
+      "WebFetch(domain:www.voyant-amour.com)",
+      "WebFetch(domain:www.kang.fr)",
+      "WebFetch(domain:www.monsitevoyance.com)",
+      "WebFetch(domain:www.spiriteo.com)",
+      "WebFetch(domain:votrevoyanceserieuse.fr)",
+      "WebFetch(domain:www.tirage.net)",
+      "WebFetch(domain:divinitel.com)",
+      "WebFetch(domain:www.solaire-voyance.com)",
+      "Bash(npx next:*)",
+      "Bash(while read:*)",
+      "Bash(do sed:*)",
+      "Bash(done)"
     ]
   }
 }
