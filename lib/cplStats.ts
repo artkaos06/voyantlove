@@ -48,3 +48,71 @@ export async function getCplLeadCount(date: string): Promise<number> {
     return 0;
   }
 }
+
+// ---------------------------------------------------------------------------
+// Per-widget (MGID source/placement) lead attribution.
+//
+// MGID's own report can't show leads-per-widget (we run "Macros only", so it
+// has no conversion data). But ra11.me round-trips our cid on the lead, so we
+// can join it ourselves: store cid → widget at click-out, look it up on the
+// lead postback, and tally leads per widget. That turns blind viewability-
+// proxy blacklisting into "this source spent €X and produced 0 leads → cut".
+//
+// Keys:
+//   cpl:click:<cid>       → { widget, wname, teaser }   (3-day TTL — leads
+//                            on this SOI offer land within minutes/hours)
+//   cpl:widgets:<date>    → Redis hash { <widget label>: leadCount }
+// ---------------------------------------------------------------------------
+
+const CLICK_TTL_SECONDS = 60 * 60 * 24 * 3; // 3 days
+
+export interface ClickContext {
+  widget?: string;
+  wname?: string;
+  teaser?: string;
+}
+
+/** Store the click's widget/creative context under its cid. Best-effort. */
+export async function storeClickContext(
+  cid: string,
+  ctx: ClickContext
+): Promise<void> {
+  if (!ctx.widget && !ctx.wname) return; // nothing worth storing
+  try {
+    await kv.set(`cpl:click:${cid}`, ctx, { ex: CLICK_TTL_SECONDS });
+  } catch {
+    // best-effort
+  }
+}
+
+/**
+ * On a lead, resolve its cid back to the widget that produced it and
+ * increment that widget's daily lead counter. Returns a human label for
+ * the widget (name preferred, else id) so the postback can show it in the
+ * Discord ping, or null if the click context wasn't found.
+ */
+export async function attributeLeadToWidget(cid: string): Promise<string | null> {
+  try {
+    const ctx = await kv.get<ClickContext>(`cpl:click:${cid}`);
+    const label = ctx?.wname || ctx?.widget;
+    if (!label) return null;
+    const k = `cpl:widgets:${parisDate()}`;
+    await kv.hincrby(k, label, 1);
+    await kv.expire(k, TTL_SECONDS);
+    return label;
+  } catch {
+    return null;
+  }
+}
+
+/** Leads-per-widget for a Paris date, as { widgetLabel: count }. */
+export async function getWidgetLeadCounts(
+  date: string
+): Promise<Record<string, number>> {
+  try {
+    const h = await kv.hgetall<Record<string, number>>(`cpl:widgets:${date}`);
+    return h || {};
+  } catch {
+    return {};
+  }
+}

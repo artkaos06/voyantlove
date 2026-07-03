@@ -27,7 +27,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { Color, notifyDiscord } from '@/lib/discord';
 import { recordConversion, recordUnauthorizedPostback } from '@/lib/digestState';
-import { recordCplLead } from '@/lib/cplStats';
+import { recordCplLead, attributeLeadToWidget } from '@/lib/cplStats';
 
 export const dynamic = 'force-dynamic';
 
@@ -96,6 +96,10 @@ async function handle(request: NextRequest): Promise<NextResponse> {
   // Durable per-day counter (survives serverless cold starts, unlike the
   // in-memory digest counters) so the daily report tallies CPL leads.
   await recordCplLead();
+  // Resolve the cid back to the MGID widget that produced it + increment
+  // that widget's daily lead tally — the data that turns viewability-proxy
+  // blacklisting into precise "this source spent €X, produced 0 leads → cut".
+  const widget = cid ? await attributeLeadToWidget(cid) : null;
 
   await notifyDiscord({
     category: 'lead',
@@ -107,6 +111,9 @@ async function handle(request: NextRequest): Promise<NextResponse> {
       { name: 'cid (request_id)', value: cid || '(missing!)', inline: true },
       { name: 'Payout', value: `€${CPL_PAYOUT_EUR.toFixed(2)}`, inline: true },
       ...(campaign ? [{ name: 'Campaign', value: campaign, inline: true }] : []),
+      ...(widget
+        ? [{ name: 'Source (widget)', value: widget, inline: true }]
+        : []),
     ],
   });
 

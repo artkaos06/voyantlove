@@ -24,6 +24,7 @@
 
 import { NextRequest, NextResponse } from 'next/server';
 import { recordClickOut } from '@/lib/digestState';
+import { storeClickContext } from '@/lib/cplStats';
 
 export const dynamic = 'force-dynamic';
 
@@ -71,6 +72,11 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
 
   const source = (sp.get('source') || 'native').slice(0, 60);
   const variant = sp.get('v')?.slice(0, 20) || null;
+  // MGID placement: `widget` = {widget_id}, `wname` = {widget_name} (if the
+  // account exposes it). Stored under the cid so the lead postback can
+  // attribute the conversion back to the exact source for blacklisting.
+  const widget = sp.get('widget')?.slice(0, 60) || null;
+  const wname = sp.get('wname')?.slice(0, 120) || null;
   // Upstream click IDs — logged for reconciliation. Native platforms (MGID,
   // Taboola, Outbrain) pass their own click_id macro; capture it generically.
   const nativeClickId = sp.get('click_id')?.slice(0, 200) || null;
@@ -124,6 +130,15 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
   });
 
   recordClickOut({ attributionType: digestAttr, ip });
+
+  // Persist cid → MGID widget so the lead postback can attribute the
+  // conversion to the exact source (for precise per-placement blacklisting).
+  // Best-effort; a KV hiccup never blocks the redirect.
+  await storeClickContext(cid, {
+    widget: widget || undefined,
+    wname: wname || undefined,
+    teaser: variant || undefined,
+  });
 
   // /api/go/cpl is fully Discord-SILENT by design. At native volume the
   // redirect is hit hundreds of times a day (plus bot/scraper traffic), so
