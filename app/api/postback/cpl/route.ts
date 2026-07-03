@@ -94,6 +94,7 @@ async function handle(request: NextRequest): Promise<NextResponse> {
   recordConversion(CPL_PAYOUT_EUR);
 
   await notifyDiscord({
+    category: 'lead',
     title: '🎯 CPL · NEW LEAD (€2.20)',
     description:
       'A billable lead postbacked from the ra11.me CPL network. Match the cid against the /api/go/cpl click-out for full ad/keyword context.',

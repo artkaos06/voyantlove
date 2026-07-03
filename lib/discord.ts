@@ -39,6 +39,15 @@ interface EmbedField {
   inline?: boolean;
 }
 
+/**
+ * Notification category — controls what reaches Discord in real time.
+ * With DISCORD_LEADS_ONLY on (the default), only 'lead' and 'digest' fire;
+ * everything else (click-outs, anomalies, OCI, tel-taps, unauthorized) is
+ * suppressed to keep the channel a clean money-signal feed. Set
+ * DISCORD_LEADS_ONLY=0 in env to restore all pings.
+ */
+type NotifyCategory = 'lead' | 'digest' | 'other';
+
 interface NotifyPayload {
   title: string;
   description?: string;
@@ -46,7 +55,11 @@ interface NotifyPayload {
   fields?: EmbedField[];
   /** Optional username override for the webhook message. */
   username?: string;
+  /** Defaults to 'other' (suppressed while leads-only mode is on). */
+  category?: NotifyCategory;
 }
+
+const LEADS_ONLY_CATEGORIES = new Set<NotifyCategory>(['lead', 'digest']);
 
 /**
  * Truncate a string to a max length, adding an ellipsis if truncated.
@@ -64,6 +77,14 @@ function truncate(s: string, max: number): string {
 export async function notifyDiscord(payload: NotifyPayload): Promise<void> {
   const url = process.env.DISCORD_WEBHOOK_URL;
   if (!url) return;
+
+  // Leads-only mode (default ON): suppress everything except CPL leads and
+  // the daily digest, so the channel isn't flooded by click-outs, anomalies,
+  // tel-taps, OCI, etc. Set DISCORD_LEADS_ONLY=0 to restore all pings.
+  const leadsOnly = process.env.DISCORD_LEADS_ONLY !== '0';
+  if (leadsOnly && !LEADS_ONLY_CATEGORIES.has(payload.category ?? 'other')) {
+    return;
+  }
 
   // Build the embed object Discord expects.
   const embed = {

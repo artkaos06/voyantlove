@@ -159,6 +159,7 @@ async function handle(request: NextRequest): Promise<NextResponse> {
   }
 
   await notifyDiscord({
+    category: 'digest',
     title: `📊 Daily Digest · ${snap.date}`,
     description:
       'Summary of tracked events for the past UTC day. Counters are in-memory and may undercount; cross-reference Google Ads + BargesTech for billing.',
