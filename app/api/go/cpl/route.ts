@@ -24,7 +24,7 @@
 
 import { NextRequest, NextResponse } from 'next/server';
 import { recordClickOut } from '@/lib/digestState';
-import { storeClickContext } from '@/lib/cplStats';
+import { storeClickContext, recordClickSpend } from '@/lib/cplStats';
 
 export const dynamic = 'force-dynamic';
 
@@ -139,6 +139,12 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
     wname: wname || undefined,
     teaser: variant || undefined,
   });
+
+  // Accumulate this click's price per source + creative → cost-per-lead in
+  // the readout without touching the MGID CSV. Label matches the lead
+  // attribution (wname preferred, else widget id).
+  const clickPrice = Number(sp.get('click_price'));
+  await recordClickSpend(wname || widget, variant, clickPrice);
 
   // /api/go/cpl is fully Discord-SILENT by design. At native volume the
   // redirect is hit hundreds of times a day (plus bot/scraper traffic), so

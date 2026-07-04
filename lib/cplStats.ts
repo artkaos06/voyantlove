@@ -140,6 +140,66 @@ export async function getTeaserLeadCounts(
   }
 }
 
+// ---------------------------------------------------------------------------
+// Per-source & per-creative SPEND accumulation (from MGID's {click_price}).
+//
+// Every click carries its price; we sum it per source and per teaser so the
+// readout can show cost-per-lead per source/ad directly — no manual CSV
+// cross-referencing. Raw click_price is stored as-is; the readout divides by
+// CPL_CLICK_PRICE_DIVISOR to convert to euros (calibrated against MGID's
+// reported spend — 100 if {click_price} is in cents, 1 if already euros).
+//
+// Keys: cpl:spend:<date> (by source) · cpl:teaserspend:<date> (by teaser)
+// ---------------------------------------------------------------------------
+
+/** Add a click's price to its source and creative running totals. */
+export async function recordClickSpend(
+  source: string | null,
+  teaser: string | null,
+  price: number
+): Promise<void> {
+  if (!Number.isFinite(price) || price <= 0) return;
+  const date = parisDate();
+  try {
+    if (source) {
+      const k = `cpl:spend:${date}`;
+      await kv.hincrbyfloat(k, source, price);
+      await kv.expire(k, TTL_SECONDS);
+    }
+    if (teaser) {
+      const k = `cpl:teaserspend:${date}`;
+      await kv.hincrbyfloat(k, teaser, price);
+      await kv.expire(k, TTL_SECONDS);
+    }
+  } catch {
+    // best-effort
+  }
+}
+
+/** Raw spend sum per source for a date (pre-divisor). */
+export async function getSourceSpend(
+  date: string
+): Promise<Record<string, number>> {
+  try {
+    return (await kv.hgetall<Record<string, number>>(`cpl:spend:${date}`)) || {};
+  } catch {
+    return {};
+  }
+}
+
+/** Raw spend sum per creative (teaser) for a date (pre-divisor). */
+export async function getTeaserSpend(
+  date: string
+): Promise<Record<string, number>> {
+  try {
+    return (
+      (await kv.hgetall<Record<string, number>>(`cpl:teaserspend:${date}`)) || {}
+    );
+  } catch {
+    return {};
+  }
+}
+
 /**
  * Remove test-created entries (any widget/teaser field containing "test",
  * case-insensitive) for a date, then re-sync the daily lead count to the sum
