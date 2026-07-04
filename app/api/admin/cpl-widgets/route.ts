@@ -10,7 +10,11 @@
 //   date defaults to today (Europe/Paris).
 
 import { NextRequest, NextResponse } from 'next/server';
-import { getWidgetLeadCounts, parisDate } from '@/lib/cplStats';
+import {
+  getWidgetLeadCounts,
+  getTeaserLeadCounts,
+  parisDate,
+} from '@/lib/cplStats';
 
 export const dynamic = 'force-dynamic';
 
@@ -38,10 +42,17 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
   }
   const date = dateParam || parisDate();
 
-  const counts = await getWidgetLeadCounts(date);
-  // Sort widgets by lead count descending — the converters first.
-  const widgets = Object.entries(counts)
+  const [widgetCounts, teaserCounts] = await Promise.all([
+    getWidgetLeadCounts(date),
+    getTeaserLeadCounts(date),
+  ]);
+
+  // Sort each by lead count descending — the converters first.
+  const widgets = Object.entries(widgetCounts)
     .map(([widget, leads]) => ({ widget, leads: Number(leads) || 0 }))
+    .sort((a, b) => b.leads - a.leads);
+  const creatives = Object.entries(teaserCounts)
+    .map(([teaser, leads]) => ({ teaser, leads: Number(leads) || 0 }))
     .sort((a, b) => b.leads - a.leads);
   const totalLeads = widgets.reduce((s, w) => s + w.leads, 0);
 
@@ -50,7 +61,8 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
     date,
     total_leads: totalLeads,
     widgets,
+    creatives,
     note:
-      'Leads by MGID source. Cross-reference with the sources CSV: a source with real spend and 0 leads here is a blacklist candidate. Sources with leads = keep/scale.',
+      'Leads by MGID source (widgets) and ad (creatives, by teaser_id). A source/ad with real spend and 0 leads here is a cut candidate; ones with leads = keep/scale.',
   });
 }

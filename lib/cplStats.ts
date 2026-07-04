@@ -86,31 +86,54 @@ export async function storeClickContext(
 }
 
 /**
- * On a lead, resolve its cid back to the widget that produced it and
- * increment that widget's daily lead counter. Returns a human label for
- * the widget (name preferred, else id) so the postback can show it in the
- * Discord ping, or null if the click context wasn't found.
+ * On a lead, resolve its cid back to the click's context and increment both
+ * the daily widget (source) counter AND the daily teaser (creative) counter.
+ * Returns human labels for each so the postback can show them in the Discord
+ * ping. One KV read serves both tallies.
  */
-export async function attributeLeadToWidget(cid: string): Promise<string | null> {
+export async function attributeLead(
+  cid: string
+): Promise<{ widget: string | null; teaser: string | null }> {
   try {
     const ctx = await kv.get<ClickContext>(`cpl:click:${cid}`);
-    const label = ctx?.wname || ctx?.widget;
-    if (!label) return null;
-    const k = `cpl:widgets:${parisDate()}`;
-    await kv.hincrby(k, label, 1);
-    await kv.expire(k, TTL_SECONDS);
-    return label;
+    if (!ctx) return { widget: null, teaser: null };
+    const date = parisDate();
+    const widget = ctx.wname || ctx.widget || null;
+    const teaser = ctx.teaser || null;
+    if (widget) {
+      const k = `cpl:widgets:${date}`;
+      await kv.hincrby(k, widget, 1);
+      await kv.expire(k, TTL_SECONDS);
+    }
+    if (teaser) {
+      const k = `cpl:teasers:${date}`;
+      await kv.hincrby(k, teaser, 1);
+      await kv.expire(k, TTL_SECONDS);
+    }
+    return { widget, teaser };
   } catch {
-    return null;
+    return { widget: null, teaser: null };
   }
 }
 
-/** Leads-per-widget for a Paris date, as { widgetLabel: count }. */
+/** Leads-per-widget (MGID source) for a Paris date, as { label: count }. */
 export async function getWidgetLeadCounts(
   date: string
 ): Promise<Record<string, number>> {
   try {
     const h = await kv.hgetall<Record<string, number>>(`cpl:widgets:${date}`);
+    return h || {};
+  } catch {
+    return {};
+  }
+}
+
+/** Leads-per-creative (teaser_id) for a Paris date, as { teaser: count }. */
+export async function getTeaserLeadCounts(
+  date: string
+): Promise<Record<string, number>> {
+  try {
+    const h = await kv.hgetall<Record<string, number>>(`cpl:teasers:${date}`);
     return h || {};
   } catch {
     return {};
