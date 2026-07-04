@@ -229,6 +229,13 @@ export async function cleanupTestEntries(date: string): Promise<{
         removedTeasers.push(field);
       }
     }
+    // Also scrub the matching spend hashes so cost figures stay clean.
+    for (const hashKey of [`cpl:spend:${date}`, `cpl:teaserspend:${date}`]) {
+      const h = (await kv.hgetall<Record<string, number>>(hashKey)) || {};
+      for (const field of Object.keys(h)) {
+        if (/test/i.test(field)) await kv.hdel(hashKey, field);
+      }
+    }
     const remaining = (await kv.hgetall<Record<string, number>>(wk)) || {};
     const realLeadCount = Object.values(remaining).reduce(
       (s, v) => s + (Number(v) || 0),
