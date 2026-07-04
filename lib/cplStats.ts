@@ -139,3 +139,44 @@ export async function getTeaserLeadCounts(
     return {};
   }
 }
+
+/**
+ * Remove test-created entries (any widget/teaser field containing "test",
+ * case-insensitive) for a date, then re-sync the daily lead count to the sum
+ * of the remaining real widget leads. Used to scrub verification pollution.
+ */
+export async function cleanupTestEntries(date: string): Promise<{
+  removedWidgets: string[];
+  removedTeasers: string[];
+  realLeadCount: number;
+}> {
+  const removedWidgets: string[] = [];
+  const removedTeasers: string[] = [];
+  try {
+    const wk = `cpl:widgets:${date}`;
+    const widgets = (await kv.hgetall<Record<string, number>>(wk)) || {};
+    for (const field of Object.keys(widgets)) {
+      if (/test/i.test(field)) {
+        await kv.hdel(wk, field);
+        removedWidgets.push(field);
+      }
+    }
+    const tk = `cpl:teasers:${date}`;
+    const teasers = (await kv.hgetall<Record<string, number>>(tk)) || {};
+    for (const field of Object.keys(teasers)) {
+      if (/test/i.test(field)) {
+        await kv.hdel(tk, field);
+        removedTeasers.push(field);
+      }
+    }
+    const remaining = (await kv.hgetall<Record<string, number>>(wk)) || {};
+    const realLeadCount = Object.values(remaining).reduce(
+      (s, v) => s + (Number(v) || 0),
+      0
+    );
+    await kv.set(key(date), realLeadCount, { ex: TTL_SECONDS });
+    return { removedWidgets, removedTeasers, realLeadCount };
+  } catch {
+    return { removedWidgets, removedTeasers, realLeadCount: 0 };
+  }
+}
