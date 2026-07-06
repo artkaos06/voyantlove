@@ -14,15 +14,24 @@
 
 import { useEffect, useMemo, useRef, useState } from 'react';
 
-// --- Offer handoff (swap here when the offer changes) --------------------
-// Télémaque RevShare affiliate number (phone). For a web offer, set
-// mode:'web' and href to a tracked /api/go/<offer> route instead.
-const OFFER = {
-  mode: 'phone' as 'phone' | 'web',
-  href: 'tel:0175111171',
-  ctaLabel: 'Parler à un voyant maintenant',
-  reassurance: 'Voyants vérifiés · 7j/7 · Consultation confidentielle · 18+',
+// --- Offer handoff: Télémaque dedicated numbers --------------------------
+// Three dedicated numbers = three attribution buckets. Assign one per
+// campaign / angle / creative via the ?num= param (e.g. …&num=2). Télémaque
+// reports reversement per number, so you learn which bucket drives paying
+// calls despite phone conversion being otherwise attribution-blind. Default 1.
+const PHONE_NUMBERS: Record<string, string> = {
+  '1': '0423090950',
+  '2': '0484200203',
+  '3': '0175111171',
 };
+const DEFAULT_NUM = '1';
+const CTA_LABEL = 'Parler à un voyant maintenant';
+const REASSURANCE = 'Voyants vérifiés · 7j/7 · Consultation confidentielle · 18+';
+
+// 0423090950 → 04 23 09 09 50
+function formatPhone(n: string): string {
+  return n.replace(/(\d{2})(?=\d)/g, '$1 ').trim();
+}
 
 interface Question {
   id: string;
@@ -77,13 +86,14 @@ const QUESTIONS: Question[] = [
   },
 ];
 
-const TRACK_KEYS = ['source', 'click_id', 'widget', 'wname', 'v', 'gclid'] as const;
+const TRACK_KEYS = ['source', 'click_id', 'widget', 'wname', 'v', 'gclid', 'num'] as const;
 
 export default function LectureAmourQuiz() {
   // step 0 = intro, 1..N = questions, N+1 = loading, N+2 = result
   const N = QUESTIONS.length;
   const [step, setStep] = useState(0);
   const [answers, setAnswers] = useState<Record<string, string>>({});
+  const [phoneNumber, setPhoneNumber] = useState(PHONE_NUMBERS[DEFAULT_NUM]);
   const tracking = useRef<Record<string, string>>({});
 
   useEffect(() => {
@@ -95,6 +105,9 @@ export default function LectureAmourQuiz() {
         if (v) captured[k] = v;
       });
       tracking.current = captured;
+      const num =
+        captured.num && PHONE_NUMBERS[captured.num] ? captured.num : DEFAULT_NUM;
+      setPhoneNumber(PHONE_NUMBERS[num]);
       beacon('start', captured, {});
     } catch {
       /* no-op */
@@ -115,15 +128,8 @@ export default function LectureAmourQuiz() {
   }
 
   function onCta() {
-    beacon('cta', tracking.current, answers);
-    const t = tracking.current;
-    if (OFFER.mode === 'web') {
-      const url = new URL(OFFER.href, window.location.origin);
-      Object.entries(t).forEach(([k, v]) => url.searchParams.set(k, v));
-      window.location.href = url.toString();
-    } else {
-      window.location.href = OFFER.href; // tel: — beacon above records intent
-    }
+    beacon('cta', { ...tracking.current, dialed: phoneNumber }, answers);
+    window.location.href = `tel:${phoneNumber}`;
   }
 
   const progress =
@@ -162,7 +168,7 @@ export default function LectureAmourQuiz() {
           {step === N + 1 && <Loading />}
 
           {step === N + 2 && (
-            <Result teaser={teaser} onCta={onCta} />
+            <Result teaser={teaser} phoneNumber={phoneNumber} onCta={onCta} />
           )}
         </div>
       </div>
@@ -250,7 +256,15 @@ function Loading() {
   );
 }
 
-function Result({ teaser, onCta }: { teaser: string; onCta: () => void }) {
+function Result({
+  teaser,
+  phoneNumber,
+  onCta,
+}: {
+  teaser: string;
+  phoneNumber: string;
+  onCta: () => void;
+}) {
   return (
     <div className="text-center">
       <div className="text-4xl mb-3">🔮</div>
@@ -261,9 +275,12 @@ function Result({ teaser, onCta }: { teaser: string; onCta: () => void }) {
         className="w-full py-4 rounded-xl font-bold text-lg text-white transition-transform active:scale-95 shadow-lg"
         style={{ background: 'linear-gradient(90deg,#ff6b9d,#ff8f6b)' }}
       >
-        📞 {OFFER.ctaLabel}
+        📞 {CTA_LABEL}
       </button>
-      <p className="mt-4 text-xs text-white/55 leading-snug">{OFFER.reassurance}</p>
+      <p className="mt-2 text-lg font-bold" style={{ color: '#f4d98a' }}>
+        {formatPhone(phoneNumber)}
+      </p>
+      <p className="mt-2 text-xs text-white/55 leading-snug">{REASSURANCE}</p>
     </div>
   );
 }
