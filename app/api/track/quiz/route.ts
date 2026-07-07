@@ -87,5 +87,27 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
   return handle(request);
 }
 export async function GET(request: NextRequest): Promise<NextResponse> {
+  // Diagnostic: ?debug=<ADMIN_KEY> reports Discord config; add &ping=1 to fire a
+  // real test ping so we can confirm end-to-end delivery.
+  const sp = request.nextUrl.searchParams;
+  const debug = sp.get('debug');
+  if (debug && process.env.ADMIN_KEY && debug === process.env.ADMIN_KEY) {
+    let pinged = false;
+    if (sp.get('ping') === '1') {
+      await notifyDiscord({
+        category: 'lead',
+        color: Color.GREEN,
+        title: '🧪 Test · ping de vérification',
+        description: 'Si vous voyez ceci, le webhook Discord fonctionne.',
+      });
+      pinged = true;
+    }
+    return NextResponse.json({
+      ok: true,
+      has_webhook: !!process.env.DISCORD_WEBHOOK_URL,
+      leads_only: process.env.DISCORD_LEADS_ONLY !== '0',
+      test_ping_sent: pinged,
+    });
+  }
   return handle(request);
 }
