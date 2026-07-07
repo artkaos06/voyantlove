@@ -65,6 +65,8 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
   // Add to Brevo. Uses the attributes the account already defines (PRENOM,
   // SIGNE_ASTRO, SITUATION, SOURCE — same set /api/admin/stats reads).
   let brevoOk = false;
+  let brevoStatus = 0;
+  let brevoErr = '';
   if (BREVO_API_KEY) {
     try {
       const res = await fetch('https://api.brevo.com/v3/contacts', {
@@ -86,10 +88,36 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
           updateEnabled: true,
         }),
       });
+      brevoStatus = res.status;
       brevoOk = res.ok || res.status === 204;
-    } catch {
-      /* best-effort */
+      // status 400 with "Contact already exist" is effectively success on update.
+      if (!brevoOk) brevoErr = (await res.text()).slice(0, 300);
+    } catch (e) {
+      brevoErr = e instanceof Error ? e.message : 'fetch_failed';
     }
+  } else {
+    brevoErr = 'no_api_key';
+  }
+
+  if (!brevoOk) {
+    console.error('[lead/quiz] BREVO FAIL', {
+      status: brevoStatus,
+      list: BREVO_LIST_ID,
+      err: brevoErr,
+    });
+  }
+
+  // Debug: ?debug=<ADMIN_KEY> surfaces the real Brevo response instead of
+  // swallowing it, so a live test reveals the exact failure.
+  const debug = request.nextUrl.searchParams.get('debug');
+  if (debug && process.env.ADMIN_KEY && debug === process.env.ADMIN_KEY) {
+    return NextResponse.json({
+      ok: brevoOk,
+      brevo_status: brevoStatus,
+      brevo_error: brevoErr,
+      list_id: BREVO_LIST_ID,
+      has_key: !!BREVO_API_KEY,
+    });
   }
 
   // Funnel counter (start → email → cta lives in the same cpl:quiz hash).
