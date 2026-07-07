@@ -107,19 +107,6 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
     });
   }
 
-  // Debug: ?debug=<ADMIN_KEY> surfaces the real Brevo response instead of
-  // swallowing it, so a live test reveals the exact failure.
-  const debug = request.nextUrl.searchParams.get('debug');
-  if (debug && process.env.ADMIN_KEY && debug === process.env.ADMIN_KEY) {
-    return NextResponse.json({
-      ok: brevoOk,
-      brevo_status: brevoStatus,
-      brevo_error: brevoErr,
-      list_id: BREVO_LIST_ID,
-      has_key: !!BREVO_API_KEY,
-      key_suffix: BREVO_API_KEY ? BREVO_API_KEY.slice(-6) : null,
-    });
-  }
 
   // Funnel counter (start → email → cta lives in the same cpl:quiz hash).
   try {
