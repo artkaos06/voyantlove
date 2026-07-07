@@ -80,9 +80,26 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
     }
   }
 
+  // Noise = test entries, my diagnostics, or an UNSUBSTITUTED macro like
+  // "{source}" (MGID ad-review/preview and hand-loaded URLs never fill macros —
+  // those aren't real clicks). Drop them so the funnel reflects real traffic.
+  const isNoise = (s: string) =>
+    /test/i.test(s) || /diag/i.test(s) || /^\{.*\}$/.test(s);
+
+  const cleanEntries = Object.entries(bySource).filter(([k]) => !isNoise(k));
+
+  // Honest totals = sum of non-noise sources. Each start writes both the total
+  // and the per-source field, so these reconcile. emailCtas has no source key.
+  const cleanTotal: Funnel = { starts: 0, emails: 0, ctas: 0, emailCtas: total.emailCtas };
+  for (const [, f] of cleanEntries) {
+    cleanTotal.starts += f.starts;
+    cleanTotal.emails += f.emails;
+    cleanTotal.ctas += f.ctas;
+  }
+  const excludedLoads = total.starts - cleanTotal.starts;
+
   const sources = Object.fromEntries(
-    Object.entries(bySource)
-      .filter(([k]) => !/test/i.test(k))
+    cleanEntries
       .sort((a, b) => b[1].starts - a[1].starts)
       .map(([k, f]) => [k, rates(f)])
   );
@@ -98,7 +115,8 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
   return NextResponse.json({
     ok: true,
     date_range: { from: dates[dates.length - 1], to: dates[0], days },
-    total: rates(total),
+    total: rates(cleanTotal),
+    excluded_noise_loads: excludedLoads,
     by_source: sources,
     by_num: numbers,
     note:
