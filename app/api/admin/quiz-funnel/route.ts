@@ -26,6 +26,7 @@ interface Funnel {
   starts: number;
   emails: number;
   ctas: number;
+  emailCtas: number; // calls from the relance emails (via /appel)
 }
 
 function rates(f: Funnel) {
@@ -49,7 +50,7 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
     parisDate(new Date(Date.now() - i * 86_400_000))
   );
 
-  const total: Funnel = { starts: 0, emails: 0, ctas: 0 };
+  const total: Funnel = { starts: 0, emails: 0, ctas: 0, emailCtas: 0 };
   const bySource: Record<string, Funnel> = {};
   const byNum: Record<string, Funnel> = {};
   const num2phone: Record<string, string> = {
@@ -59,7 +60,7 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
   };
 
   const bucket = (map: Record<string, Funnel>, key: string): Funnel =>
-    (map[key] ??= { starts: 0, emails: 0, ctas: 0 });
+    (map[key] ??= { starts: 0, emails: 0, ctas: 0, emailCtas: 0 });
 
   for (const d of dates) {
     const h = (await kv.hgetall<Record<string, string>>(`cpl:quiz:${d}`)) || {};
@@ -68,6 +69,8 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
       if (field === 'starts') total.starts += v;
       else if (field === 'emails') total.emails += v;
       else if (field === 'ctas') total.ctas += v;
+      else if (field === 'emailctas') total.emailCtas += v;
+      else if (field.startsWith('emailcta:num:')) bucket(byNum, field.slice(13)).emailCtas += v;
       else if (field.startsWith('start:num:')) bucket(byNum, field.slice(10)).starts += v;
       else if (field.startsWith('email:num:')) bucket(byNum, field.slice(10)).emails += v;
       else if (field.startsWith('cta:num:')) bucket(byNum, field.slice(8)).ctas += v;

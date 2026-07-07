@@ -13,28 +13,13 @@
 // Compliance: no health/death, no guaranteed outcomes, 18+.
 
 import { useEffect, useMemo, useRef, useState, type FormEvent } from 'react';
+import { PHONE_NUMBERS, DEFAULT_NUM, formatPhone } from '@/lib/phoneNumbers';
 
-// --- Offer handoff: Télémaque dedicated numbers --------------------------
-// Three dedicated numbers = three attribution buckets. Assign one per
-// campaign / angle / creative via the ?num= param (e.g. …&num=2). Télémaque
-// reports reversement per number, so you learn which bucket drives paying
-// calls despite phone conversion being otherwise attribution-blind. Default 1.
-const PHONE_NUMBERS: Record<string, string> = {
-  '1': '0423090950',
-  '2': '0484200203',
-  '3': '0175111171',
-};
-const DEFAULT_NUM = '1';
 const CTA_LABEL = 'Parler à un voyant en privé';
 // Télémaque product = private phone consultation with expert voyants. No price
 // claims on the lander: tariff mentions carry legal obligations Télémaque
 // handles on its own pages, and it advises affiliates against tariff claims.
 const REASSURANCE = 'Consultation privée par téléphone · Voyants experts · 7j/7 · Confidentiel · 18+';
-
-// 0423090950 → 04 23 09 09 50
-function formatPhone(n: string): string {
-  return n.replace(/(\d{2})(?=\d)/g, '$1 ').trim();
-}
 
 interface Question {
   id: string;

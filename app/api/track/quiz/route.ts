@@ -17,7 +17,7 @@ export const dynamic = 'force-dynamic';
 const TTL = 60 * 60 * 24 * 40;
 
 interface Body {
-  event?: 'start' | 'cta';
+  event?: 'start' | 'cta' | 'emailcall';
   tracking?: Record<string, string>;
   answers?: Record<string, string>;
 }
@@ -35,7 +35,8 @@ async function handle(request: NextRequest): Promise<NextResponse> {
     }
   }
 
-  const event = body.event === 'cta' ? 'cta' : 'start';
+  const event =
+    body.event === 'cta' ? 'cta' : body.event === 'emailcall' ? 'emailcall' : 'start';
   const source = (body.tracking?.source || 'direct').slice(0, 60);
   const num = (body.tracking?.num || '').slice(0, 8);
 
@@ -50,9 +51,15 @@ async function handle(request: NextRequest): Promise<NextResponse> {
   try {
     const date = parisDate();
     const k = `cpl:quiz:${date}`;
-    await kv.hincrby(k, event === 'cta' ? 'ctas' : 'starts', 1);
-    await kv.hincrby(k, `${event}:${source}`, 1);
-    if (num) await kv.hincrby(k, `${event}:num:${num}`, 1);
+    if (event === 'emailcall') {
+      // Email-driven calls tracked separately (they don't go through the quiz).
+      await kv.hincrby(k, 'emailctas', 1);
+      if (num) await kv.hincrby(k, `emailcta:num:${num}`, 1);
+    } else {
+      await kv.hincrby(k, event === 'cta' ? 'ctas' : 'starts', 1);
+      await kv.hincrby(k, `${event}:${source}`, 1);
+      if (num) await kv.hincrby(k, `${event}:num:${num}`, 1);
+    }
     await kv.expire(k, TTL);
   } catch {
     /* best-effort */
@@ -76,6 +83,21 @@ async function handle(request: NextRequest): Promise<NextResponse> {
         { name: 'Situation', value: ans.situation || '—', inline: true },
         { name: 'Question', value: ans.question || '—', inline: true },
         { name: 'Signe', value: ans.signe || '—', inline: true },
+      ],
+    });
+  }
+
+  // Email-nurture call: someone tapped the call button in a relance email.
+  if (event === 'emailcall') {
+    const tr = body.tracking || {};
+    await notifyDiscord({
+      category: 'lead',
+      color: Color.PURPLE,
+      title: '📧 Email → appel lancé',
+      description: `Numéro composé : **${tr.dialed || '—'}**`,
+      fields: [
+        { name: 'Canal', value: tr.source || 'email', inline: true },
+        { name: 'Numéro', value: `num=${num || '—'}`, inline: true },
       ],
     });
   }
