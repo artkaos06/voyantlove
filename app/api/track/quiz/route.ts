@@ -10,6 +10,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { kv } from '@vercel/kv';
 import { parisDate } from '@/lib/cplStats';
+import { notifyDiscord, Color } from '@/lib/discord';
 
 export const dynamic = 'force-dynamic';
 
@@ -55,6 +56,28 @@ async function handle(request: NextRequest): Promise<NextResponse> {
     await kv.expire(k, TTL);
   } catch {
     /* best-effort */
+  }
+
+  // Real-time money signal: the CTA tap = a fully-converted lead. Email is
+  // gated before the result, so reaching the call button means email captured
+  // + call intent. One clean ping per conversion — the RevShare equivalent of
+  // the old CPL lead ping. category:'lead' passes the leads-only gate.
+  if (event === 'cta') {
+    const tr = body.tracking || {};
+    const ans = body.answers || {};
+    await notifyDiscord({
+      category: 'lead',
+      color: Color.GREEN,
+      title: '📞 Quiz · appel lancé (lead converti)',
+      description: `Numéro composé : **${tr.dialed || '—'}**`,
+      fields: [
+        { name: 'Angle', value: `num=${num || '—'}`, inline: true },
+        { name: 'Source', value: tr.wname || tr.source || source, inline: true },
+        { name: 'Situation', value: ans.situation || '—', inline: true },
+        { name: 'Question', value: ans.question || '—', inline: true },
+        { name: 'Signe', value: ans.signe || '—', inline: true },
+      ],
+    });
   }
 
   return new NextResponse(null, { status: 204 });
