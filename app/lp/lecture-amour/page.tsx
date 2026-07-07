@@ -12,7 +12,7 @@
 //
 // Compliance: no health/death, no guaranteed outcomes, 18+.
 
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef, useState, type FormEvent } from 'react';
 
 // --- Offer handoff: Télémaque dedicated numbers --------------------------
 // Three dedicated numbers = three attribution buckets. Assign one per
@@ -25,8 +25,11 @@ const PHONE_NUMBERS: Record<string, string> = {
   '3': '0175111171',
 };
 const DEFAULT_NUM = '1';
-const CTA_LABEL = 'Parler à un voyant maintenant';
-const REASSURANCE = 'Voyants vérifiés · 7j/7 · Consultation confidentielle · 18+';
+const CTA_LABEL = 'Parler à un voyant en privé';
+// Télémaque product = private phone consultation with expert voyants. No price
+// claims on the lander: tariff mentions carry legal obligations Télémaque
+// handles on its own pages, and it advises affiliates against tariff claims.
+const REASSURANCE = 'Consultation privée par téléphone · Voyants experts · 7j/7 · Confidentiel · 18+';
 
 // 0423090950 → 04 23 09 09 50
 function formatPhone(n: string): string {
@@ -89,7 +92,11 @@ const QUESTIONS: Question[] = [
 const TRACK_KEYS = ['source', 'click_id', 'widget', 'wname', 'v', 'gclid', 'num'] as const;
 
 export default function LectureAmourQuiz() {
-  // step 0 = intro, 1..N = questions, N+1 = loading, N+2 = result
+  // step 0 = intro, 1..N = questions, N+1 = email capture, N+2 = loading,
+  // N+3 = result. Email is gated between the last question and the payoff:
+  // the visitor wants their reading, so capture is high; the phone CTA that
+  // follows still catches immediate callers, and the Brevo list nurtures the
+  // rest to a consultation over the following weeks.
   const N = QUESTIONS.length;
   const [step, setStep] = useState(0);
   const [answers, setAnswers] = useState<Record<string, string>>({});
@@ -117,8 +124,8 @@ export default function LectureAmourQuiz() {
 
   // Auto-advance from the loading screen to the result.
   useEffect(() => {
-    if (step !== N + 1) return;
-    const t = setTimeout(() => setStep(N + 2), 2600);
+    if (step !== N + 2) return;
+    const t = setTimeout(() => setStep(N + 3), 2600);
     return () => clearTimeout(t);
   }, [step, N]);
 
@@ -127,13 +134,36 @@ export default function LectureAmourQuiz() {
     setStep((s) => s + 1);
   }
 
+  // Email capture → Brevo list (fire-and-forget so the UI advances instantly),
+  // then on to the loading/result payoff.
+  function onEmailSubmit(prenom: string, email: string, consent: boolean) {
+    try {
+      fetch('/api/lead/quiz', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        keepalive: true,
+        body: JSON.stringify({
+          prenom,
+          email,
+          consent,
+          answers,
+          tracking: tracking.current,
+        }),
+      }).catch(() => {});
+    } catch {
+      /* no-op */
+    }
+    setStep((s) => s + 1);
+  }
+
   function onCta() {
     beacon('cta', { ...tracking.current, dialed: phoneNumber }, answers);
     window.location.href = `tel:${phoneNumber}`;
   }
 
+  // Progress spans the N questions + the email step (N+1 input steps).
   const progress =
-    step === 0 ? 0 : step <= N ? Math.round((step / (N + 1)) * 100) : 100;
+    step === 0 ? 0 : step <= N + 1 ? Math.round((step / (N + 1)) * 100) : 100;
 
   const teaser = useMemo(() => buildTeaser(answers), [answers]);
 
@@ -143,7 +173,7 @@ export default function LectureAmourQuiz() {
       style={{ background: 'linear-gradient(160deg,#241657 0%,#3a1d6e 55%,#4a1f5e 100%)' }}
     >
       {/* Progress bar */}
-      {step > 0 && step <= N && (
+      {step > 0 && step <= N + 1 && (
         <div className="w-full h-1.5 bg-white/10">
           <div
             className="h-full transition-all duration-300"
@@ -165,9 +195,11 @@ export default function LectureAmourQuiz() {
             />
           )}
 
-          {step === N + 1 && <Loading />}
+          {step === N + 1 && <EmailCapture onSubmit={onEmailSubmit} />}
 
-          {step === N + 2 && (
+          {step === N + 2 && <Loading />}
+
+          {step === N + 3 && (
             <Result teaser={teaser} phoneNumber={phoneNumber} onCta={onCta} />
           )}
         </div>
@@ -241,6 +273,84 @@ function QuestionCard({
   );
 }
 
+const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+function EmailCapture({
+  onSubmit,
+}: {
+  onSubmit: (prenom: string, email: string, consent: boolean) => void;
+}) {
+  const [prenom, setPrenom] = useState('');
+  const [email, setEmail] = useState('');
+  const [consent, setConsent] = useState(false);
+  const [err, setErr] = useState('');
+
+  function submit(e: FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    if (!prenom.trim()) return setErr('Entrez votre prénom.');
+    if (!EMAIL_RE.test(email.trim())) return setErr('Entrez un email valide.');
+    if (!consent) return setErr('Merci de cocher la case pour recevoir votre lecture.');
+    onSubmit(prenom.trim(), email.trim(), consent);
+  }
+
+  const field =
+    'w-full px-4 py-3.5 rounded-xl bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:border-[#f4d98a]';
+
+  return (
+    <div>
+      <div className="text-center mb-6">
+        <div className="text-4xl mb-2">✨</div>
+        <h2 className="text-2xl font-bold mb-2">Votre lecture est presque prête</h2>
+        <p className="text-white/75 leading-relaxed">
+          Indiquez votre prénom et votre email pour recevoir votre lecture
+          personnalisée.
+        </p>
+      </div>
+      <form onSubmit={submit} className="space-y-3">
+        <input
+          value={prenom}
+          onChange={(e) => setPrenom(e.target.value)}
+          placeholder="Votre prénom"
+          autoComplete="given-name"
+          className={field}
+        />
+        <input
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          type="email"
+          inputMode="email"
+          placeholder="Votre email"
+          autoComplete="email"
+          className={field}
+        />
+        <label className="flex items-start gap-2 text-xs text-white/70 leading-snug py-1">
+          <input
+            type="checkbox"
+            checked={consent}
+            onChange={(e) => setConsent(e.target.checked)}
+            className="mt-0.5 accent-[#f4d98a]"
+          />
+          <span>
+            J’accepte de recevoir ma lecture et des conseils de voyance par email.
+            Désinscription possible à tout moment.
+          </span>
+        </label>
+        {err && <p className="text-sm text-[#ff9ec0]">{err}</p>}
+        <button
+          type="submit"
+          className="w-full py-4 rounded-xl font-bold text-lg text-[#3a1d6e] transition-transform active:scale-95"
+          style={{ background: 'linear-gradient(90deg,#f4d98a,#ffcf8a)' }}
+        >
+          Recevoir ma lecture →
+        </button>
+      </form>
+      <p className="mt-3 text-center text-[11px] text-white/45">
+        🔒 Vos informations restent confidentielles.
+      </p>
+    </div>
+  );
+}
+
 function Loading() {
   return (
     <div className="text-center py-10">
@@ -294,7 +404,7 @@ function buildTeaser(a: Record<string, string>): string {
     `${signe}, dans une période « ${sit} », entre en forte résonance avec votre ` +
     `question sur ${q}. Nos voyants perçoivent souvent un tournant important pour ` +
     `les profils comme le vôtre — mais chaque situation est unique. Une consultation ` +
-    `en direct peut vous apporter des réponses claires, maintenant.`
+    `privée avec un voyant peut vous apporter des réponses claires, maintenant.`
   );
 }
 

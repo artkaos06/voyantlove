@@ -36,6 +36,7 @@ async function handle(request: NextRequest): Promise<NextResponse> {
 
   const event = body.event === 'cta' ? 'cta' : 'start';
   const source = (body.tracking?.source || 'direct').slice(0, 60);
+  const num = (body.tracking?.num || '').slice(0, 8);
 
   console.log('[track/quiz]', {
     event,
@@ -50,6 +51,7 @@ async function handle(request: NextRequest): Promise<NextResponse> {
     const k = `cpl:quiz:${date}`;
     await kv.hincrby(k, event === 'cta' ? 'ctas' : 'starts', 1);
     await kv.hincrby(k, `${event}:${source}`, 1);
+    if (num) await kv.hincrby(k, `${event}:num:${num}`, 1);
     await kv.expire(k, TTL);
   } catch {
     /* best-effort */
