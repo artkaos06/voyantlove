@@ -117,6 +117,7 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
       brevo_error: brevoErr,
       list_id: BREVO_LIST_ID,
       has_key: !!BREVO_API_KEY,
+      key_suffix: BREVO_API_KEY ? BREVO_API_KEY.slice(-6) : null,
     });
   }
 
