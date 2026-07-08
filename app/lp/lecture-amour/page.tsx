@@ -74,7 +74,12 @@ const QUESTIONS: Question[] = [
   },
 ];
 
-const TRACK_KEYS = ['source', 'click_id', 'widget', 'wname', 'v', 'gclid', 'num'] as const;
+// 'sid' = MGID {source_id}: the ID its blocklist actually keys on. {source} gives
+// the human-readable name (good for our readouts, useless for MGID's importer),
+// so we carry both and map name → id.
+const TRACK_KEYS = [
+  'source', 'sid', 'click_id', 'widget', 'wname', 'v', 'gclid', 'num',
+] as const;
 
 export default function LectureAmourQuiz() {
   // step 0 = intro, 1..N = questions, N+1 = email capture, N+2 = loading,

@@ -70,6 +70,15 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
     }
   }
 
+  // MGID's blocklist importer keys on source_id, not the readable {source} name.
+  // Resolve names → ids from the map the tracker maintains.
+  const [sourceIds, widgetIds] = await Promise.all([
+    kv.hgetall<Record<string, string>>('cpl:sourceids'),
+    kv.hgetall<Record<string, string>>('cpl:widgetids'),
+  ]);
+  const sidOf = (name: string) => (sourceIds || {})[name] || null;
+  const widOf = (name: string) => (widgetIds || {})[name] || null;
+
   const rows = Object.values(agg).filter((r) => !isNoise(r.source));
 
   // Clear waste: enough traffic to judge, zero email leads.
@@ -83,8 +92,17 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
     .map((r) => ({ ...r, email_rate_pct: Number(((r.emails / r.starts) * 100).toFixed(2)) }))
     .sort((a, b) => b.starts - a.starts);
 
+  const withIds = kill.map((r) => ({
+    ...r,
+    source_id: sidOf(r.source),
+    widget_id: widOf(r.source),
+  }));
+  const unresolved = withIds.filter((r) => !r.source_id).map((r) => r.source);
+
   if (sp.get('format') === 'csv') {
-    const csv = ['source', ...kill.map((r) => r.source)].join('\n');
+    // IDs only — that's what MGID's importer accepts. Names are unfindable there.
+    const ids = withIds.map((r) => r.source_id).filter(Boolean) as string[];
+    const csv = ['source_id', ...ids].join('\n');
     return new NextResponse(csv, {
       status: 200,
       headers: {
@@ -99,9 +117,10 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
     date_range: { from: dates[dates.length - 1], to: dates[0], days },
     min_starts: minStarts,
     kill_count: kill.length,
-    kill_candidates_zero_lead: kill,
-    weak_converters: weak,
+    kill_candidates_zero_lead: withIds,
+    weak_converters: weak.map((r) => ({ ...r, source_id: sidOf(r.source) })),
+    unresolved_ids: unresolved,
     note:
-      'kill_candidates_zero_lead = ≥ min_starts quiz loads with 0 email leads (clear waste — safe to block). weak_converters = converts but under 1% email rate (judgment call). starts proxy for spend. Append &format=csv to download the kill-list for MGID import.',
+      'kill_candidates_zero_lead = ≥ min_starts quiz loads with 0 email leads (clear waste — safe to block). CSV exports source_id (what MGID imports); names are for your review only. unresolved_ids = sources seen before the {source_id} macro was live — they need one fresh click to resolve.',
   });
 }

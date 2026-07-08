@@ -61,6 +61,16 @@ async function handle(request: NextRequest): Promise<NextResponse> {
       if (num) await kv.hincrby(k, `${event}:num:${num}`, 1);
     }
     await kv.expire(k, TTL);
+
+    // Name → ID map, so the blocklist can export what MGID's importer actually
+    // keys on (source_id). {source} gives a readable name; MGID's Sources tab
+    // shows only IDs. Stable per widget, so a plain (undated) hash is fine.
+    const sid = (body.tracking?.sid || '').slice(0, 32);
+    const widget = (body.tracking?.widget || '').slice(0, 32);
+    if (source && source !== 'direct') {
+      if (sid) await kv.hset('cpl:sourceids', { [source]: sid });
+      if (widget) await kv.hset('cpl:widgetids', { [source]: widget });
+    }
   } catch {
     /* best-effort */
   }
