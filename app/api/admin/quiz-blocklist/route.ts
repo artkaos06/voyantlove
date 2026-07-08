@@ -43,9 +43,12 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
   }
 
   const days = Math.min(Math.max(Number(sp.get('days') || '3'), 1), 30);
-  // A fair test: how many quiz loads a widget must deliver before 0 leads counts
-  // as a verdict (not just bad luck). Default 15.
+  // Hard floor on traffic, but the real gate is min_expected below.
   const minStarts = Math.max(Number(sp.get('min_starts') || '15'), 1);
+  // How many emails a source must have been *expected* to produce (at the site's
+  // base rate) before "0 emails" is a verdict rather than noise. 3 ≈ a source
+  // that should have converted 3 times and converted 0.
+  const minExpected = Math.max(Number(sp.get('min_expected') || '3'), 1);
 
   const dates = Array.from({ length: days }, (_, i) =>
     parisDate(new Date(Date.now() - i * 86_400_000))
@@ -81,19 +84,42 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
 
   const rows = Object.values(agg).filter((r) => !isNoise(r.source));
 
-  // Clear waste: enough traffic to judge, zero email leads.
+  // Statistical gate. At a ~1% base conversion rate, a source with 22 loads is
+  // *expected* to produce 0.2 emails — so "0 emails" there proves nothing, and
+  // blocking on it is coin-flip logic that kills good sources. A zero only means
+  // something once the source has had enough traffic to expect several emails.
+  const totalStarts = rows.reduce((n, r) => n + r.starts, 0);
+  const totalEmails = rows.reduce((n, r) => n + r.emails, 0);
+  const baseRate = totalStarts > 0 ? totalEmails / totalStarts : 0;
+  const expectedOf = (r: Row) => r.starts * baseRate;
+
+  const decorate = (r: Row) => ({
+    ...r,
+    email_rate_pct: r.starts ? Number(((r.emails / r.starts) * 100).toFixed(2)) : 0,
+    expected_emails: Number(expectedOf(r).toFixed(2)),
+  });
+
+  // Clear waste: should have produced ≥ min_expected emails, produced zero.
   const kill = rows
-    .filter((r) => r.starts >= minStarts && r.emails === 0)
+    .filter((r) => r.emails === 0 && r.starts >= minStarts && expectedOf(r) >= minExpected)
     .sort((a, b) => b.starts - a.starts);
 
-  // Converts, but weakly (< 1%). Judgment call — surfaced, not auto-killed.
+  // Converts, but at under half the site's base rate — and on enough data to say so.
   const weak = rows
-    .filter((r) => r.emails > 0 && r.starts >= minStarts && r.emails / r.starts < 0.01)
-    .map((r) => ({ ...r, email_rate_pct: Number(((r.emails / r.starts) * 100).toFixed(2)) }))
+    .filter(
+      (r) => r.emails > 0 && expectedOf(r) >= minExpected && r.emails / r.starts < baseRate * 0.5
+    )
+    .map(decorate)
+    .sort((a, b) => b.starts - a.starts);
+
+  // Zero emails, but too little traffic to conclude anything. Do NOT block these.
+  const insufficient = rows
+    .filter((r) => r.emails === 0 && expectedOf(r) < minExpected)
+    .map(decorate)
     .sort((a, b) => b.starts - a.starts);
 
   const withIds = kill.map((r) => ({
-    ...r,
+    ...decorate(r),
     source_id: sidOf(r.source),
     widget_id: widOf(r.source),
   }));
@@ -116,11 +142,14 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
     ok: true,
     date_range: { from: dates[dates.length - 1], to: dates[0], days },
     min_starts: minStarts,
+    min_expected: minExpected,
+    base_email_rate_pct: Number((baseRate * 100).toFixed(2)),
     kill_count: kill.length,
     kill_candidates_zero_lead: withIds,
     weak_converters: weak.map((r) => ({ ...r, source_id: sidOf(r.source) })),
+    insufficient_data_do_not_block: insufficient,
     unresolved_ids: unresolved,
     note:
-      'kill_candidates_zero_lead = ≥ min_starts quiz loads with 0 email leads (clear waste — safe to block). CSV exports source_id (what MGID imports); names are for your review only. unresolved_ids = sources seen before the {source_id} macro was live — they need one fresh click to resolve.',
+      'kill_candidates_zero_lead = 0 emails on enough traffic that ≥ min_expected were expected at the site base rate (a real verdict, not noise). insufficient_data_do_not_block = 0 emails but too little traffic to conclude — blocking these is coin-flip logic and will kill good sources. weak_converters = converts at under half the base rate, on enough data to say so. CSV exports source_id (what MGID imports). unresolved_ids = sources seen before the {source_id} macro was live — one fresh click resolves them.',
   });
 }
