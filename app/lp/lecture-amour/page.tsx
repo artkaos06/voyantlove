@@ -119,6 +119,21 @@ export default function LectureAmourQuiz() {
     return () => clearTimeout(t);
   }, [step, N]);
 
+  // Per-step drop-off. Without this we only see load → email → CTA and are blind
+  // to which of the 5 questions, or the email wall, loses people. Fired once per
+  // step (a re-render or StrictMode double-effect can't double-count). Step 0 is
+  // already covered by the 'start' beacon.
+  const firedSteps = useRef<Set<string>>(new Set());
+  useEffect(() => {
+    let name: string | null = null;
+    if (step >= 1 && step <= N) name = `q${step}`;
+    else if (step === N + 1) name = 'email_view';
+    else if (step === N + 3) name = 'result_view';
+    if (!name || firedSteps.current.has(name)) return;
+    firedSteps.current.add(name);
+    beacon('step', { ...tracking.current, step: name }, {});
+  }, [step, N]);
+
   function answer(qid: string, value: string) {
     setAnswers((a) => ({ ...a, [qid]: value }));
     setStep((s) => s + 1);
@@ -400,7 +415,7 @@ function buildTeaser(a: Record<string, string>): string {
 
 // Best-effort funnel beacon — never blocks the UI.
 function beacon(
-  event: 'start' | 'cta',
+  event: 'start' | 'cta' | 'step',
   tracking: Record<string, string>,
   answers: Record<string, string>
 ) {

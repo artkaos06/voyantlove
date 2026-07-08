@@ -17,10 +17,15 @@ export const dynamic = 'force-dynamic';
 const TTL = 60 * 60 * 24 * 40;
 
 interface Body {
-  event?: 'start' | 'cta' | 'emailcall';
+  event?: 'start' | 'cta' | 'emailcall' | 'step';
   tracking?: Record<string, string>;
   answers?: Record<string, string>;
 }
+
+// Whitelisted so a spoofed beacon can't blow up the hash's key cardinality.
+const STEP_NAMES = new Set([
+  'q1', 'q2', 'q3', 'q4', 'q5', 'email_view', 'result_view',
+]);
 
 async function handle(request: NextRequest): Promise<NextResponse> {
   let body: Body = {};
@@ -36,7 +41,13 @@ async function handle(request: NextRequest): Promise<NextResponse> {
   }
 
   const event =
-    body.event === 'cta' ? 'cta' : body.event === 'emailcall' ? 'emailcall' : 'start';
+    body.event === 'cta'
+      ? 'cta'
+      : body.event === 'emailcall'
+        ? 'emailcall'
+        : body.event === 'step'
+          ? 'step'
+          : 'start';
   const source = (body.tracking?.source || 'direct').slice(0, 60);
   const num = (body.tracking?.num || '').slice(0, 8);
 
@@ -55,6 +66,10 @@ async function handle(request: NextRequest): Promise<NextResponse> {
       // Email-driven calls tracked separately (they don't go through the quiz).
       await kv.hincrby(k, 'emailctas', 1);
       if (num) await kv.hincrby(k, `emailcta:num:${num}`, 1);
+    } else if (event === 'step') {
+      // Drop-off only — must not touch starts/ctas or the funnel maths shifts.
+      const stepName = (body.tracking?.step || '').slice(0, 20);
+      if (STEP_NAMES.has(stepName)) await kv.hincrby(k, `step:${stepName}`, 1);
     } else {
       await kv.hincrby(k, event === 'cta' ? 'ctas' : 'starts', 1);
       await kv.hincrby(k, `${event}:${source}`, 1);
@@ -67,7 +82,7 @@ async function handle(request: NextRequest): Promise<NextResponse> {
     // shows only IDs. Stable per widget, so a plain (undated) hash is fine.
     const sid = (body.tracking?.sid || '').slice(0, 32);
     const widget = (body.tracking?.widget || '').slice(0, 32);
-    if (source && source !== 'direct') {
+    if (event === 'start' && source && source !== 'direct') {
       if (sid) await kv.hset('cpl:sourceids', { [source]: sid });
       if (widget) await kv.hset('cpl:widgetids', { [source]: widget });
     }
