@@ -22,8 +22,10 @@ export default function CookieConsent() {
       CC.run({
         guiOptions: {
           consentModal: {
-            layout: 'box inline',
-            position: 'bottom left',
+            // Slim bottom bar, not a big box — the 'box' layout covered the
+            // quiz answers on mobile and tanked engagement.
+            layout: 'bar inline',
+            position: 'bottom',
             equalWeightButtons: true,
           },
           preferencesModal: {
@@ -44,9 +46,9 @@ export default function CookieConsent() {
           translations: {
             fr: {
               consentModal: {
-                title: 'Nous utilisons des cookies',
+                title: '🍪 Cookies',
                 description:
-                  "Nous utilisons des cookies pour améliorer votre expérience, mesurer l'audience et personnaliser les publicités.",
+                  "Nous utilisons des cookies pour mesurer l'audience et personnaliser les publicités.",
                 acceptAllBtn: 'Tout accepter',
                 acceptNecessaryBtn: 'Tout refuser',
                 showPreferencesBtn: 'Personnaliser',
@@ -105,7 +107,31 @@ export default function CookieConsent() {
     };
   }, []);
 
-  return null;
+  // Compact overrides so the consent bar stays slim on mobile and never buries
+  // the quiz answers. vanilla-cookieconsent v3 class names (.cm*).
+  return (
+    <style>{`
+      #cc-main .cm--bar { padding: .55rem .8rem; }
+      #cc-main .cm__title { font-size: .85rem; margin-bottom: .1rem; }
+      #cc-main .cm__desc { font-size: .74rem; line-height: 1.3; }
+      /* Flatten the two button groups into one flex row: accept + refuse sit
+         side-by-side; "Personnaliser" drops to its own line as a small link.
+         !important because the library's CSS loads after this style at equal
+         specificity and otherwise forces flex-direction: column. */
+      #cc-main .cm__btns { display: flex !important; flex-flow: row wrap !important; align-items: center; gap: .4rem; margin-top: .5rem; }
+      #cc-main .cm__btn-group { display: contents !important; }
+      #cc-main .cm__btn { flex: 1 1 auto !important; width: auto !important; padding: .5rem .7rem; font-size: .8rem; margin: 0; }
+      #cc-main .cm__btn--secondary {
+        flex: 0 0 100% !important; background: transparent !important; border: 0 !important;
+        text-decoration: underline; padding: .2rem; font-size: .72rem; opacity: .8;
+      }
+      @media (max-width: 640px) {
+        #cc-main .cm--bar { padding: .5rem .7rem; }
+        #cc-main .cm__desc { font-size: .7rem; }
+        #cc-main .cm__btn { padding: .45rem .5rem; font-size: .77rem; }
+      }
+    `}</style>
+  );
 }
 
 function applyConsent(categories: string[]) {
