@@ -82,13 +82,13 @@ const TRACK_KEYS = [
 ] as const;
 
 export default function LectureAmourQuiz() {
-  // step 0 = intro, 1..N = questions, N+1 = email capture, N+2 = loading,
-  // N+3 = result. Email is gated between the last question and the payoff:
-  // the visitor wants their reading, so capture is high; the phone CTA that
-  // follows still catches immediate callers, and the Brevo list nurtures the
-  // rest to a consultation over the following weeks.
+  // step 1..N = questions, N+1 = email capture, N+2 = loading, N+3 = result.
+  // We land the visitor DIRECTLY on question 1 (no intro gate) — the old intro
+  // screen bled 94% of loads before anyone answered. Email is gated between the
+  // last question and the payoff; the phone CTA that follows catches immediate
+  // callers, and the Brevo list nurtures the rest over the following weeks.
   const N = QUESTIONS.length;
-  const [step, setStep] = useState(0);
+  const [step, setStep] = useState(1);
   const [answers, setAnswers] = useState<Record<string, string>>({});
   const [phoneNumber, setPhoneNumber] = useState(PHONE_NUMBERS[DEFAULT_NUM]);
   const tracking = useRef<Record<string, string>>({});
@@ -189,15 +189,28 @@ export default function LectureAmourQuiz() {
 
       <div className="flex-1 flex items-center justify-center px-5 py-8">
         <div className="w-full max-w-md">
-          {step === 0 && <Intro onStart={() => setStep(1)} />}
-
-          {step > 0 && step <= N && (
-            <QuestionCard
-              q={QUESTIONS[step - 1]}
-              index={step}
-              total={N}
-              onAnswer={(v) => answer(QUESTIONS[step - 1].id, v)}
-            />
+          {step >= 1 && step <= N && (
+            <div>
+              {/* Slim trust header on the landing question — context + urgency
+                  without an intro gate. */}
+              {step === 1 && (
+                <div className="text-center mb-6">
+                  <div className="inline-flex items-center gap-2 bg-white/10 rounded-full px-3 py-1 text-xs font-medium mb-3">
+                    <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
+                    Voyants disponibles maintenant
+                  </div>
+                  <h1 className="text-xl font-bold leading-snug">
+                    Votre lecture amoureuse personnalisée
+                  </h1>
+                </div>
+              )}
+              <QuestionCard
+                q={QUESTIONS[step - 1]}
+                index={step}
+                total={N}
+                onAnswer={(v) => answer(QUESTIONS[step - 1].id, v)}
+              />
+            </div>
           )}
 
           {step === N + 1 && <EmailCapture onSubmit={onEmailSubmit} />}
@@ -215,34 +228,6 @@ export default function LectureAmourQuiz() {
         guidance personnelle — ne remplace aucun avis médical, juridique ou financier.
       </footer>
     </main>
-  );
-}
-
-function Intro({ onStart }: { onStart: () => void }) {
-  return (
-    <div className="text-center">
-      <div className="inline-flex items-center gap-2 bg-white/10 rounded-full px-3 py-1 text-xs font-medium mb-6">
-        <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
-        Voyants disponibles maintenant
-      </div>
-      <h1 className="text-3xl font-bold leading-tight mb-3">
-        Que révèlent les astres sur votre vie amoureuse ?
-      </h1>
-      <p className="text-white/75 mb-8 leading-relaxed">
-        Répondez à 5 questions et recevez une lecture personnalisée de votre
-        situation sentimentale. Gratuit, rapide et confidentiel.
-      </p>
-      <button
-        onClick={onStart}
-        className="w-full py-4 rounded-xl font-bold text-lg text-[#3a1d6e] transition-transform active:scale-95"
-        style={{ background: 'linear-gradient(90deg,#f4d98a,#ffcf8a)' }}
-      >
-        Commencer ma lecture →
-      </button>
-      <p className="mt-4 text-xs text-white/50">
-        ⭐ 4,8/5 · plus de 2 400 consultations · 7j/7
-      </p>
-    </div>
   );
 }
 
