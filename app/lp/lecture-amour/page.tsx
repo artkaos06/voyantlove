@@ -366,10 +366,21 @@ function Result({
   onCta: () => void;
 }) {
   return (
-    <div className="text-center">
+    // The CTA button sits right after the title, ABOVE the teaser copy —
+    // not a styling choice, a fix. The cookie-consent bar renders
+    // position:fixed/bottom:0 at max z-index and does NOT reflow page
+    // content, so it sits on top of whatever is at the bottom of the
+    // viewport. Padding-bottom on this block doesn't help (it only adds
+    // space after the button, it never moves the button itself — normal
+    // block flow, not a centered/clamped container). The only viewport-
+    // height-independent fix is keeping the button close to the top of
+    // this block so it clears the bar regardless of screen height. This
+    // exact bug (bar covering the CTA) killed every call tap for 4 days
+    // (2026-07-09 to 07-12) after the bar was slimmed down but never
+    // re-verified against this screen.
+    <div className="text-center pb-16">
       <div className="text-4xl mb-3">🔮</div>
-      <h2 className="text-2xl font-bold mb-4">Votre lecture est prête</h2>
-      <p className="text-white/80 leading-relaxed mb-7">{teaser}</p>
+      <h2 className="text-2xl font-bold mb-5">Votre lecture est prête</h2>
       <button
         onClick={onCta}
         className="w-full py-4 rounded-xl font-bold text-lg text-white transition-transform active:scale-95 shadow-lg"
@@ -380,7 +391,8 @@ function Result({
       <p className="mt-2 text-lg font-bold" style={{ color: '#f4d98a' }}>
         {formatPhone(phoneNumber)}
       </p>
-      <p className="mt-2 text-xs text-white/55 leading-snug">{REASSURANCE}</p>
+      <p className="mt-4 text-white/80 leading-relaxed">{teaser}</p>
+      <p className="mt-4 text-xs text-white/55 leading-snug">{REASSURANCE}</p>
     </div>
   );
 }
