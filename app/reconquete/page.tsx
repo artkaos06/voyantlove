@@ -121,6 +121,12 @@ export default function ReconqueteHubPage() {
               <h3 className="text-xl font-bold mb-2">Pendule Retour Amour</h3>
               <p className="text-gray-600 text-sm">Comment le pendule peut révéler l&apos;énergie de retour de votre ex.</p>
             </Link>
+
+            <Link href="/reconquete/dois-je-attendre-son-retour" className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition border-t-4 border-violet-500">
+              <div className="text-3xl mb-3">⏳</div>
+              <h3 className="text-xl font-bold mb-2">Dois-je l&apos;Attendre ?</h3>
+              <p className="text-gray-600 text-sm">Faut-il patienter pour un retour, et combien de temps.</p>
+            </Link>
           </div>
         </section>
 

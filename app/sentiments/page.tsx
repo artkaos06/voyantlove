@@ -134,6 +134,13 @@ export default function SentimentsHubPage() {
               <span className="text-teal-600 font-semibold">Découvrir →</span>
             </Link>
 
+            <Link href="/sentiments/que-ressent-il-elle-pour-moi" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-fuchsia-500">
+              <div className="text-4xl mb-4">💞</div>
+              <h3 className="text-2xl font-bold mb-3">Que Ressent-il/elle pour Moi ?</h3>
+              <p className="text-gray-600 mb-4">La nature exacte de ses sentiments : amour, attachement ou désir.</p>
+              <span className="text-fuchsia-600 font-semibold">Lire →</span>
+            </Link>
+
             <Link href="/sentiments/voyance-grossesse-bebe" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-green-500">
               <div className="text-4xl mb-4">👶</div>
               <h3 className="text-2xl font-bold mb-3">Voyance Grossesse</h3>

@@ -135,6 +135,20 @@ export default function CriseCoupleHubPage() {
               <p className="text-gray-600 mb-4">Retrouver l&apos;intimité et la complicité perdues dans votre relation.</p>
               <span className="text-indigo-600 font-semibold">Lire →</span>
             </Link>
+
+            <Link href="/crise-couple/opposition-familiale-couple" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-amber-500">
+              <div className="text-4xl mb-4">👪</div>
+              <h3 className="text-2xl font-bold mb-3">Opposition Familiale</h3>
+              <p className="text-gray-600 mb-4">Gérer une famille qui s&apos;oppose à votre relation.</p>
+              <span className="text-amber-600 font-semibold">Lire →</span>
+            </Link>
+
+            <Link href="/crise-couple/difference-age-couple" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-cyan-500">
+              <div className="text-4xl mb-4">⏳</div>
+              <h3 className="text-2xl font-bold mb-3">Différence d&apos;Âge</h3>
+              <p className="text-gray-600 mb-4">Ce qui compte vraiment dans un couple avec un grand écart d&apos;âge.</p>
+              <span className="text-cyan-600 font-semibold">Lire →</span>
+            </Link>
           </div>
         </section>
 

@@ -29,6 +29,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/reconquete/ex-revient-silence-radio',
     '/reconquete/lettre-a-son-ex',
     '/reconquete/silence-radio-reconquete',
+    '/reconquete/pendule-retour-amour',
+    '/reconquete/dois-je-attendre-son-retour',
     // Rupture
     '/rupture/oublier-son-ex',
     '/rupture/chagrin-damour',
@@ -60,6 +62,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/sentiments/sentiments-non-partages',
     '/sentiments/voyance-grossesse-bebe',
     '/sentiments/voyance-mariage',
+    '/sentiments/que-ressent-il-elle-pour-moi',
     // Crise de couple
     '/crise-couple/infidelite-couple',
     '/crise-couple/jalousie-excessive',
@@ -70,6 +73,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/crise-couple/pardonner-en-amour',
     '/crise-couple/emprise-amoureuse-voyance',
     '/crise-couple/couple-a-distance-voyance',
+    '/crise-couple/opposition-familiale-couple',
+    '/crise-couple/difference-age-couple',
     // Méthodes voyance
     '/methodes-voyance/tirage-tarot-amour',
     '/methodes-voyance/oracle-amour',
@@ -77,7 +82,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/methodes-voyance/voyance-telephone-amour',
     '/methodes-voyance/pendule-amour',
     '/methodes-voyance/voyance-sentimentale',
-    '/methodes-voyance/tarot-oui-non-amour',
+    '/methodes-voyance/tarologie-amoureuse',
     '/methodes-voyance/voyance-par-chat-amour',
     '/methodes-voyance/numerologie-amoureuse',
     '/methodes-voyance/synastrie-amoureuse',
@@ -90,6 +95,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/voyance-gratuite-amour/horoscope-amour-2026',
     '/voyance-gratuite-amour/voyance-tchat-gratuit-amour',
     '/voyance-gratuite-amour/tirage-gratuit-celibataire',
+    '/voyance-gratuite-amour/voyance-amour-immediate',
   ]
 
   // Legal pages (low priority)
