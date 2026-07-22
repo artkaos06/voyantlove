@@ -93,6 +93,11 @@ export default function NumerologieAmourPage() {
       </header>
 
       <div className="max-w-4xl mx-auto px-4 py-8">
+        {/* Interactive Calculator — first thing visible, answers the "calculate my number" intent immediately */}
+        <section id="calculateur" className="mb-8">
+          <NumerologyCalculator />
+        </section>
+
         {/* Stats Bar */}
         <div className="bg-white rounded-xl shadow-md p-6 mb-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
           <div><div className="text-3xl mb-1">&#x1F522;</div><div className="text-2xl font-bold text-orange-600">15 ans</div><div className="text-sm text-gray-600">Expertise numérologie</div></div>
@@ -122,11 +127,6 @@ export default function NumerologieAmourPage() {
         </article>
 
         <VoyantQuickCTA topic="methodes-voyance" source="numerologie-amoureuse-early" />
-
-        {/* Interactive Calculator */}
-        <section id="calculateur" className="mb-8">
-          <NumerologyCalculator />
-        </section>
 
         {/* Section 1: Qu'est-ce que la numérologie amoureuse */}
         <section className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-xl p-8 mb-8 border-2 border-amber-200">
