@@ -7,7 +7,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
 export const metadata: Metadata = {
-  title: 'Trouver son Âme Sœur : Guide Complet Tarot et Voyance | Connexion Spirituelle',
+  title: 'Trouver son Âme Sœur : Guide Tarot et Voyance',
   description: 'Comment trouver votre âme sœur selon le tarot et la destinée. Signes de reconnaissance, timing, préparation intérieure et guidance spirituelle complète.',
   keywords: ['trouver âme sœur', 'âme sœur tarot', 'connexion âme', 'flamme jumelle', 'destin amoureux'],
   alternates: { canonical: 'https://www.voyantlove.fr/nouvelle-rencontre/trouver-ame-soeur/' },
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 
 export default function TrouverAmeSoeurPage() {
   const articleSchema = getArticleSchema({
-    title: 'Trouver son Âme Sœur : Guide Complet Tarot et Voyance | Connexion Spirituelle',
+    title: 'Trouver son Âme Sœur : Guide Tarot et Voyance',
     description: 'Comment trouver votre âme sœur selon le tarot et la destinée. Signes de reconnaissance, timing, préparation intérieure et guidance spirituelle complète.',
     url: 'https://www.voyantlove.fr/nouvelle-rencontre/trouver-ame-soeur/',
     datePublished: '2026-01-19',

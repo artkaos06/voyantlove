@@ -7,20 +7,20 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
 export const metadata: Metadata = {
-  title: 'Numérologie Amoureuse : Compatibilité par Date de Naissance | VoyantLove',
-  description: 'Découvrez la numérologie amoureuse : calculez votre chemin de vie, votre compatibilité numérique et ce que vos chiffres révèlent sur votre vie sentimentale.',
-  keywords: ['numérologie amoureuse', 'numérologie couple', 'chemin de vie amour', 'compatibilité numérologie', 'calcul date de naissance amour'],
+  title: 'Numérologie Amoureuse : Compatibilité',
+  description: 'Numérologie amoureuse : chemin de vie, nombre d\'expression, nombre intime et compatibilité de couple. Calculez vos chiffres et leur sens en amour.',
+  keywords: ['numérologie amoureuse', 'numérologie couple', 'chemin de vie amour', 'compatibilité numérologie', 'nombre d\'expression amour', 'nombre intime numérologie'],
   alternates: { canonical: 'https://www.voyantlove.fr/methodes-voyance/numerologie-amoureuse/' },
 };
 
 export default function NumerologieAmourPage() {
   const articleSchema = getArticleSchema({
-    title: 'Numérologie Amoureuse : Compatibilité par Date de Naissance | VoyantLove',
-    description: 'Découvrez la numérologie amoureuse : calculez votre chemin de vie, votre compatibilité numérique et ce que vos chiffres révèlent sur votre vie sentimentale.',
+    title: 'Numérologie Amoureuse : Compatibilité',
+    description: 'Numérologie amoureuse : chemin de vie, nombre d\'expression, nombre intime et compatibilité de couple. Calculez vos chiffres et leur sens en amour.',
     url: 'https://www.voyantlove.fr/methodes-voyance/numerologie-amoureuse/',
     datePublished: '2026-03-27',
     dateModified: new Date().toISOString().split('T')[0],
-    keywords: ['numérologie amoureuse', 'numérologie couple', 'chemin de vie amour', 'compatibilité numérologie', 'calcul date de naissance amour'],
+    keywords: ['numérologie amoureuse', 'numérologie couple', 'chemin de vie amour', 'compatibilité numérologie', 'nombre d\'expression amour', 'nombre intime numérologie'],
   });
 
   const breadcrumbSchema = getBreadcrumbSchema([
@@ -35,6 +35,14 @@ export default function NumerologieAmourPage() {
     {
       question: 'Comment calculer son chemin de vie en numérologie ?',
       answer: 'Le chemin de vie se calcule en additionnant tous les chiffres de votre date de naissance jusqu\'à obtenir un chiffre unique (sauf 11, 22 et 33, les nombres maîtres). Exemple : pour le 15/07/1988, additionnez 1+5+0+7+1+9+8+8 = 39, puis 3+9 = 12, puis 1+2 = 3. Votre chemin de vie est donc le 3. Ce chiffre révèle votre mission de vie, vos forces naturelles et vos défis karmiques en amour comme dans tous les domaines. Il est le fondement de toute analyse numérologique personnalisée.',
+    },
+    {
+      question: 'Comment calculer son nombre d\'expression en numérologie amoureuse ?',
+      answer: 'Le nombre d\'expression se calcule en convertissant chaque lettre de votre nom et prénom complets en chiffre (méthode pythagoricienne : A/J/S=1, B/K/T=2, C/L/U=3...), puis en additionnant le tout jusqu\'à un chiffre unique. Exemple : pour "Marie Dupont", la somme des lettres donne 55, puis 5+5=10, puis 1+0=1. Contrairement au chemin de vie qui révèle votre mission, le nombre d\'expression montre comment vous vous comportez concrètement en amour : votre façon d\'exprimer vos sentiments et d\'agir dans la relation.',
+    },
+    {
+      question: 'Qu\'est-ce que le nombre intime en numérologie amoureuse ?',
+      answer: 'Le nombre intime, aussi appelé nombre de l\'âme, se calcule en ne retenant que les voyelles de votre nom et prénom complets, converties puis réduites à un chiffre unique. Il révèle vos besoins émotionnels les plus profonds en amour — ceux que vous ne montrez pas toujours, même à votre partenaire, comme le besoin de sécurité, de liberté ou de reconnaissance. Une analyse numérologique amoureuse complète croise systématiquement le chemin de vie, le nombre d\'expression et le nombre intime pour une lecture fidèle de votre profil sentimental.',
     },
     {
       question: 'Quels chemins de vie sont les plus compatibles en amour ?',
@@ -174,6 +182,102 @@ export default function NumerologieAmourPage() {
                 </div>
               ))}
             </div>
+          </div>
+        </section>
+
+        {/* Section 2bis: Nombre d'Expression et Nombre Intime */}
+        <section id="prenom" className="bg-white rounded-xl shadow-md p-8 mb-8">
+          <h2 className="text-3xl font-bold mb-6 text-orange-600">&#x1F4DB; Nombre d&rsquo;Expression et Nombre Intime : l&rsquo;Analyse par le Prénom</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Au-delà du chemin de vie (date de naissance), deux autres nombres calculés à partir de votre nom complet affinent votre profil amoureux : le nombre d&rsquo;expression et le nombre intime.</p>
+          <p className="text-gray-700 mb-6">
+            Le chemin de vie révèle votre mission de vie, mais il ne raconte qu&rsquo;une partie de l&rsquo;histoire. Le <strong>nombre d&rsquo;expression</strong> (calculé à partir de toutes les lettres de votre nom complet) montre comment vous vous présentez et agissez en amour. Le <strong>nombre intime</strong>, ou nombre de l&rsquo;âme (calculé à partir des seules voyelles), révèle vos besoins émotionnels les plus profonds — ceux que vous ne montrez pas toujours, même à votre partenaire. Une analyse complète en <strong>numérologie amoureuse</strong> croise systématiquement ces trois nombres : chemin de vie, expression, et nombre intime.
+          </p>
+
+          <div className="bg-orange-50 border-2 border-orange-300 rounded-lg p-6 mb-6">
+            <h3 className="font-bold text-orange-800 text-lg mb-4">&#x1F524; Table de Conversion Lettre &rarr; Chiffre</h3>
+            <p className="text-gray-700 mb-3">Chaque lettre de l&rsquo;alphabet correspond à un chiffre de 1 à 9, selon la méthode pythagoricienne :</p>
+            <div className="bg-white rounded p-4 font-mono text-sm grid grid-cols-3 md:grid-cols-9 gap-2 text-center">
+              <div><strong>1</strong><br />A J S</div>
+              <div><strong>2</strong><br />B K T</div>
+              <div><strong>3</strong><br />C L U</div>
+              <div><strong>4</strong><br />D M V</div>
+              <div><strong>5</strong><br />E N W</div>
+              <div><strong>6</strong><br />F O X</div>
+              <div><strong>7</strong><br />G P Y</div>
+              <div><strong>8</strong><br />H Q Z</div>
+              <div><strong>9</strong><br />I R</div>
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-6 mb-6">
+            <div className="bg-white border-2 border-orange-200 rounded-lg p-6">
+              <h3 className="font-bold text-orange-700 text-lg mb-3">&#x1F5E3;&#xFE0F; Calculer son Nombre d&rsquo;Expression</h3>
+              <p className="text-gray-700 text-sm mb-3">Convertissez chaque lettre de votre <strong>nom et prénom complets</strong> en chiffre, additionnez le tout, puis réduisez à un seul chiffre (sauf nombres maîtres).</p>
+              <div className="bg-orange-50 rounded p-3 font-mono text-xs">
+                <p><strong>Exemple :</strong> Marie Dupont</p>
+                <p>M4 A1 R9 I9 E5 D4 U3 P7 O6 N5 T2</p>
+                <p>Total = <strong>55</strong> &rarr; 5+5 = <strong>10</strong> &rarr; 1+0 = <strong>1</strong></p>
+                <p>Nombre d&rsquo;expression : <strong>1</strong></p>
+              </div>
+            </div>
+            <div className="bg-white border-2 border-amber-200 rounded-lg p-6">
+              <h3 className="font-bold text-amber-700 text-lg mb-3">&#x1F49B; Calculer son Nombre Intime</h3>
+              <p className="text-gray-700 text-sm mb-3">Ne retenez que les <strong>voyelles</strong> (A, E, I, O, U, et parfois Y) de votre nom complet, convertissez-les et réduisez à un seul chiffre.</p>
+              <div className="bg-amber-50 rounded p-3 font-mono text-xs">
+                <p><strong>Exemple :</strong> Marie Dupont</p>
+                <p>A1 I9 E5 U3 O6</p>
+                <p>Total = <strong>24</strong> &rarr; 2+4 = <strong>6</strong></p>
+                <p>Nombre intime : <strong>6</strong></p>
+              </div>
+            </div>
+          </div>
+
+          <div className="space-y-4">
+            <h3 className="font-bold text-gray-900 text-xl">Le Nombre d&rsquo;Expression en Amour : Comment Vous Agissez</h3>
+            <div className="grid md:grid-cols-3 gap-4">
+              {[
+                { num: '1', desc: 'Affirme ses sentiments sans détour, cherche un partenaire qui admire son indépendance affective.' },
+                { num: '2', desc: 'Exprime l\'amour par l\'écoute et la présence, doué pour la diplomatie relationnelle.' },
+                { num: '3', desc: 'Communique ses sentiments avec humour et légèreté, séduit par sa joie de vivre.' },
+                { num: '4', desc: 'Montre son amour par des actes concrets et la fiabilité plutôt que par les mots.' },
+                { num: '5', desc: 'Exprime son attachement à travers le mouvement et la nouveauté partagée.' },
+                { num: '6', desc: 'Se dévoue entièrement à l\'être aimé, exprime l\'amour par le soin et la protection.' },
+                { num: '7', desc: 'Réservé dans l\'expression de ses sentiments, préfère la profondeur au grand discours.' },
+                { num: '8', desc: 'Manifeste son amour par l\'ambition partagée et la réussite construite à deux.' },
+                { num: '9', desc: 'Aime avec générosité universelle, s\'exprime par la compassion et le don de soi.' },
+              ].map(({ num, desc }) => (
+                <div key={num} className="bg-orange-50 rounded-lg p-3 border border-orange-100">
+                  <div className="text-xl font-bold text-orange-600 mb-1">Expression {num}</div>
+                  <p className="text-gray-600 text-sm">{desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="space-y-4 mt-6">
+            <h3 className="font-bold text-gray-900 text-xl">Le Nombre Intime en Amour : Ce Dont Vous Avez Vraiment Besoin</h3>
+            <div className="grid md:grid-cols-3 gap-4">
+              {[
+                { num: '1', desc: 'Besoin profond d\'être admiré et de se sentir unique dans le cœur de l\'autre.' },
+                { num: '2', desc: 'Besoin profond d\'harmonie, de tendresse constante et de ne jamais se sentir seul.' },
+                { num: '3', desc: 'Besoin profond d\'être stimulé, diverti et de partager sa créativité.' },
+                { num: '4', desc: 'Besoin profond de sécurité affective et de stabilité dans la durée.' },
+                { num: '5', desc: 'Besoin profond de liberté et de ne jamais se sentir enfermé dans la relation.' },
+                { num: '6', desc: 'Besoin profond de fonder un foyer et de prendre soin d\'un être cher.' },
+                { num: '7', desc: 'Besoin profond de connexion intellectuelle et spirituelle rare.' },
+                { num: '8', desc: 'Besoin profond de bâtir quelque chose de grand et reconnu avec son partenaire.' },
+                { num: '9', desc: 'Besoin profond d\'aimer sans limites et de vivre une mission commune.' },
+              ].map(({ num, desc }) => (
+                <div key={num} className="bg-amber-50 rounded-lg p-3 border border-amber-100">
+                  <div className="text-xl font-bold text-amber-700 mb-1">Intime {num}</div>
+                  <p className="text-gray-600 text-sm">{desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="mt-6 bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded">
+            <p className="text-gray-700"><strong>&#x1F4A1; Pourquoi croiser les trois nombres :</strong> Un chemin de vie 6 (nourricier) avec un nombre intime 5 (besoin de liberté) révèle une tension intérieure entre le désir de foyer et le besoin d&rsquo;indépendance — une nuance invisible si l&rsquo;on ne regarde que la date de naissance. C&rsquo;est cette lecture combinée qui distingue une <strong>analyse numérologique complète</strong> d&rsquo;un simple calcul de chemin de vie.</p>
           </div>
         </section>
 
@@ -325,6 +429,18 @@ export default function NumerologieAmourPage() {
               <h3 className="font-bold text-lg text-orange-700 mb-3">Comment calculer son chemin de vie en numérologie ?</h3>
               <p className="text-gray-700 leading-relaxed">
                 Le <strong>chemin de vie</strong> se calcule en additionnant tous les chiffres de votre date de naissance jusqu&rsquo;à obtenir un chiffre unique (sauf 11, 22 et 33, les nombres maîtres). Exemple : pour le 15/07/1988, additionnez 1+5+0+7+1+9+8+8 = 39, puis 3+9 = 12, puis 1+2 = 3. Votre chemin de vie est donc le 3. Ce chiffre révèle votre mission de vie, vos forces naturelles et vos défis karmiques en amour comme dans tous les domaines. Il est le fondement de toute analyse numérologique personnalisée.
+              </p>
+            </div>
+            <div className="border-b pb-6">
+              <h3 className="font-bold text-lg text-orange-700 mb-3">Comment calculer son nombre d&rsquo;expression en numérologie amoureuse ?</h3>
+              <p className="text-gray-700 leading-relaxed">
+                Le <strong>nombre d&rsquo;expression</strong> se calcule en convertissant chaque lettre de votre nom et prénom complets en chiffre (méthode pythagoricienne : A/J/S=1, B/K/T=2, C/L/U=3...), puis en additionnant le tout jusqu&rsquo;à un chiffre unique. Exemple : pour &laquo;&nbsp;Marie Dupont&nbsp;&raquo;, la somme des lettres donne 55, puis 5+5=10, puis 1+0=1. Contrairement au chemin de vie qui révèle votre mission, le nombre d&rsquo;expression montre comment vous vous comportez concrètement en amour&nbsp;: votre façon d&rsquo;exprimer vos sentiments et d&rsquo;agir dans la relation.
+              </p>
+            </div>
+            <div className="border-b pb-6">
+              <h3 className="font-bold text-lg text-orange-700 mb-3">Qu&rsquo;est-ce que le nombre intime en numérologie amoureuse ?</h3>
+              <p className="text-gray-700 leading-relaxed">
+                Le <strong>nombre intime</strong>, aussi appelé nombre de l&rsquo;âme, se calcule en ne retenant que les voyelles de votre nom et prénom complets, converties puis réduites à un chiffre unique. Il révèle vos <strong>besoins émotionnels les plus profonds</strong> en amour — ceux que vous ne montrez pas toujours, même à votre partenaire, comme le besoin de sécurité, de liberté ou de reconnaissance. Une analyse numérologique amoureuse complète croise systématiquement le chemin de vie, le nombre d&rsquo;expression et le nombre intime.
               </p>
             </div>
             <div className="border-b pb-6">

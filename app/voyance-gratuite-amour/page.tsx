@@ -7,16 +7,16 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
 export const metadata: Metadata = {
-  title: 'Voyance Gratuite Amour : Tirage Tarot, Oracle & Horoscope Amoureux | VoyantLove',
-  description: 'Voyance gratuite amour en ligne : tirage tarot amour gratuit, oracle, tarot oui/non et horoscope amoureux. Voyance amoureuse gratuite immédiate, sans engagement.',
+  title: 'Voyance Gratuite Amour : Tirage Tarot',
+  description: 'Voyance gratuite amour en ligne : tirage tarot, oracle, tarot oui/non et horoscope amoureux. Immédiate, sans engagement, sans carte bancaire.',
   keywords: ['voyance gratuite amour', 'voyance amour gratuite', 'voyance amoureuse gratuite', 'voyance amour gratuite en ligne', 'voyance gratuite amour en ligne', 'tarot amour gratuit', 'voyance amour gratuite immediate'],
   alternates: { canonical: 'https://www.voyantlove.fr/voyance-gratuite-amour/' },
 };
 
 export default function VoyanceGratuiteAmourHubPage() {
   const webPageSchema = getWebPageSchema({
-    title: 'Voyance Gratuite Amour : Tirage Tarot, Oracle & Horoscope Amoureux | VoyantLove',
-    description: 'Voyance gratuite amour en ligne : tirage tarot amour gratuit, oracle, tarot oui/non et horoscope amoureux. Voyance amoureuse gratuite immédiate, sans engagement.',
+    title: 'Voyance Gratuite Amour : Tirage Tarot',
+    description: 'Voyance gratuite amour en ligne : tirage tarot, oracle, tarot oui/non et horoscope amoureux. Immédiate, sans engagement, sans carte bancaire.',
     url: 'https://www.voyantlove.fr/voyance-gratuite-amour/',
   });
 
@@ -177,6 +177,40 @@ export default function VoyanceGratuiteAmourHubPage() {
               <p className="font-bold text-emerald-800 mb-1">Voyance Sentimentale</p>
               <p className="text-gray-700">Guide complet sur cette spécialité.</p>
             </Link>
+          </div>
+        </section>
+
+        <section className="bg-white rounded-xl shadow-md p-8 mb-8">
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">📞 Consultation Immédiate&nbsp;: Trois Canaux Sans Rendez-vous</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Une fois les tirages gratuits explorés, trois canaux permettent de consulter un voyant immédiatement, sans inscription&nbsp;: la consultation privée avec minutes offertes, l&apos;audiotel et le tchat SMS.</p>
+          <p className="text-gray-700 leading-relaxed mb-6">
+            Chaque canal a un fonctionnement et un tarif différents. Voici les trois options telles qu&apos;elles existent réellement, pour choisir en connaissance de cause.
+          </p>
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="bg-emerald-50 border-2 border-emerald-300 rounded-lg p-6">
+              <h3 className="font-bold text-lg mb-2 text-emerald-800">💬 Consultation Privée</h3>
+              <p className="text-2xl font-bold text-emerald-700 mb-1">10 min offertes</p>
+              <p className="text-gray-700 text-sm mb-3">Puis tarif à la consultation selon le voyant choisi. Numéro non surtaxé, sans inscription obligatoire pour le rappel.</p>
+              <a href="tel:0175754582" className="block text-center bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 rounded-lg transition mb-2">📞 01 75 75 45 82</a>
+              <p className="text-gray-500 text-xs">7j/7 de 9h à 21h · téléphone, chat ou email</p>
+            </div>
+            <div className="bg-teal-50 border-2 border-teal-300 rounded-lg p-6">
+              <h3 className="font-bold text-lg mb-2 text-teal-800">☎️ Audiotel</h3>
+              <p className="text-2xl font-bold text-teal-700 mb-1">0,80&nbsp;€/min</p>
+              <p className="text-gray-700 text-sm mb-3">Accès direct sans inscription. Composez le numéro et indiquez le code voyant pour être mis en relation immédiatement.</p>
+              <a href="tel:0892686882" className="block text-center bg-teal-600 hover:bg-teal-700 text-white font-semibold py-2 rounded-lg transition mb-2">☎️ 0892 68 68 82</a>
+              <p className="text-gray-500 text-xs">Code 1711 · réponse immédiate, 24h/24</p>
+            </div>
+            <div className="bg-cyan-50 border-2 border-cyan-300 rounded-lg p-6">
+              <h3 className="font-bold text-lg mb-2 text-cyan-800">💬 Tchat SMS</h3>
+              <p className="text-2xl font-bold text-cyan-700 mb-1">0,99&nbsp;€/SMS</p>
+              <p className="text-gray-700 text-sm mb-3">+ prix d&apos;un SMS selon votre opérateur. Pratique si vous préférez l&apos;écrit ou si vous n&apos;êtes pas disponible pour un appel.</p>
+              <div className="text-center bg-cyan-600 text-white font-semibold py-2 rounded-lg mb-2">VOY1711 au 71700</div>
+              <p className="text-gray-500 text-xs">Envoyez le code, la réponse arrive par SMS</p>
+            </div>
+          </div>
+          <div className="mt-6 bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded">
+            <p className="text-gray-700"><strong>💡 Comment choisir :</strong> la <strong>consultation privée</strong> reste la plus économique une fois les 10 minutes offertes dépassées, l&apos;<strong>audiotel</strong> convient pour une question rapide sans inscription, et le <strong>SMS</strong> pour une réponse écrite que vous pouvez consulter à votre rythme.</p>
           </div>
         </section>
 

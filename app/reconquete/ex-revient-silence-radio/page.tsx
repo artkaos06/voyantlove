@@ -7,7 +7,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
 export const metadata: Metadata = {
-  title: 'Il/Elle Me Recontacte Après le Silence Radio : Signes et Réactions',
+  title: 'Il/Elle Me Recontacte Après le Silence Radio',
   description: 'Il ou elle vous recontacte après le silence radio ? Signes qu\'un ex revient, comment réagir, quel message envoyer. Guide complet pour ne pas tout gâcher.',
   keywords: ['il me recontacte après silence radio', 'elle me recontacte après silence radio', 'ex qui revient après silence radio', 'homme qui revient après silence', 'silence radio reconquête'],
   alternates: { canonical: 'https://www.voyantlove.fr/reconquete/ex-revient-silence-radio/' },
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 
 export default function ExRevientSilenceRadioPage() {
   const articleSchema = getArticleSchema({
-    title: 'Il/Elle Me Recontacte Après le Silence Radio : Signes et Réactions',
+    title: 'Il/Elle Me Recontacte Après le Silence Radio',
     description: 'Il ou elle vous recontacte après le silence radio ? Signes qu\'un ex revient, comment réagir, quel message envoyer. Guide complet pour ne pas tout gâcher.',
     url: 'https://www.voyantlove.fr/reconquete/ex-revient-silence-radio/',
     datePublished: '2026-02-09',
@@ -368,6 +368,33 @@ export default function ExRevientSilenceRadioPage() {
               </p>
               <p className="text-gray-700 mt-3">
                 Si les signaux sont mitigés ou négatifs, vous avez le droit (et parfois le devoir envers vous-même) de <strong>refuser ce retour</strong>. "J'ai apprécié qu'on se reparle, mais je ne pense pas que ce soit une bonne idée de revenir ensemble. Je te souhaite le meilleur."
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section className="bg-white rounded-xl shadow-md p-8 mb-8">
+          <h2 className="text-3xl font-bold mb-6 text-purple-600">🎯 Deux Situations Particulières à Anticiper</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Que faire si votre ex propose directement un rendez-vous, et comment réagir s'il/elle vous recontacte alors que vous fréquentez déjà quelqu'un d'autre : deux scénarios fréquents qui demandent une approche spécifique.</p>
+
+          <div className="space-y-6">
+            <div className="bg-indigo-50 p-6 rounded-lg border-2 border-indigo-200">
+              <h3 className="font-bold text-xl mb-4 text-indigo-700">Votre Ex Propose Directement un Rendez-vous : Ne Prenez Pas SA Date</h3>
+              <p className="text-gray-700 mb-3">
+                Si votre ex propose une date et une heure précises ("On se voit vendredi soir ?"), <strong>n&apos;acceptez pas telles quelles</strong>. Répondez que vendredi ne vous convient pas, sans vous justifier, et proposez vous-même un autre moment quelques jours plus tard. Ce simple renversement change la dynamique : c&apos;est vous qui fixez le cadre, pas votre ex.
+              </p>
+              <p className="text-gray-700">
+                Ce levier a un double effet : il confirme que vous avez une vie qui ne s&apos;organise pas autour de sa disponibilité, et il teste sa motivation réelle. Un ex peu investi laisse tomber face à ce contretemps. Un ex sincèrement motivé s&apos;adapte à votre proposition sans rechigner — c&apos;est justement cette réaction qui vous renseigne.
+              </p>
+            </div>
+
+            <div className="bg-teal-50 p-6 rounded-lg border-2 border-teal-200">
+              <h3 className="font-bold text-xl mb-4 text-teal-700">Votre Ex Recontacte Pendant que Vous Fréquentez Déjà Quelqu&apos;un d&apos;Autre</h3>
+              <p className="text-gray-700 mb-3">
+                Situation fréquente et délicate : votre ex réapparaît alors que vous avez commencé à voir quelqu&apos;un de nouveau. Ne coupez pas cette nouvelle relation sur un coup de tête pour renouer avec l&apos;ex — le retour de l&apos;ex déclenche souvent un regain d&apos;intérêt précisément <em>parce que</em> vous semblez indisponible, pas parce que quelque chose a fondamentalement changé chez lui/elle.
+              </p>
+              <p className="text-gray-700">
+                Prenez le temps d&apos;évaluer les deux situations séparément plutôt que de réagir dans l&apos;urgence. Si la nouvelle relation est encore récente et peu engagée, autorisez-vous à explorer ce que veut réellement votre ex — mais avec la même prudence que d&apos;habitude : observation sur plusieurs semaines, conversation honnête, aucune décision précipitée. Si la nouvelle relation compte déjà pour vous, il est généralement plus sain de rester transparent : informez votre ex que vous n&apos;êtes plus disponible, sans devoir vous justifier davantage.
               </p>
             </div>
           </div>

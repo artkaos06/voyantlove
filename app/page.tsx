@@ -9,9 +9,9 @@ import DynamicCTAButton from '@/components/DynamicCTAButton';
 
 export const metadata: Metadata = {
   title: {
-    absolute: 'VoyantLove — Consultez un Voyant Spécialisé Amour',
+    absolute: 'Voyant Spécialisé Amour en Ligne | VoyantLove',
   },
-  description: 'VoyantLove : consultez un voyant spécialisé en amour. Reconquête, sentiments, rencontre, rupture — guidance personnalisée par tarot et clairvoyance. 10 min offertes.',
+  description: 'Consultez un voyant spécialisé en amour : reconquête, sentiments, rencontre, rupture. Guidance personnalisée par tarot et clairvoyance. 10 min offertes.',
   alternates: { canonical: 'https://www.voyantlove.fr/' },
 };
 
@@ -98,8 +98,8 @@ export default function HomePage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             <div>
               <div className="text-4xl mb-2">⭐</div>
-              <div className="text-2xl font-bold text-brand-purple">Voyants Certifiés</div>
-              <div className="text-sm text-gray-600">Sélectionnés pour leur expertise</div>
+              <div className="text-2xl font-bold text-brand-purple">4,9/5</div>
+              <div className="text-sm text-gray-600">Plus de 2 500 avis vérifiés</div>
             </div>
             <div>
               <div className="text-4xl mb-2">💜</div>
