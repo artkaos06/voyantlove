@@ -57,6 +57,10 @@ export default function VoyanceGratuiteAmourHubPage() {
       question: 'La voyance amoureuse gratuite par email existe-t-elle ?',
       answer: 'Oui, certaines plateformes proposent une voyance amoureuse gratuite par email pour une première question, généralement sous forme de réponse standardisée ou semi-automatisée. C\'est une bonne option si vous préférez l\'écrit ou si vous avez besoin de temps pour formuler votre question. Les réponses arrivent en 24 à 72 heures. Pour une analyse vraiment personnalisée par email, comptez entre 10 et 25 € par question — le voyant rédige alors une réponse détaillée incluant le tirage, l\'interprétation et des conseils pratiques. La qualité de la voyance par email dépend principalement du temps que le voyant consacre à votre situation.',
     },
+    {
+      question: 'La voyance gratuite peut-elle aider à récupérer un amour perdu ?',
+      answer: 'Oui, la voyance gratuite est souvent le premier réflexe après une séparation pour savoir si un amour perdu peut revenir. Un tirage tarot gratuit éclaire l\'état émotionnel de votre ex et le potentiel de réconciliation : des cartes comme le Deux de Coupe ou L\'Étoile signalent un lien encore vivant, tandis que le Huit de Coupe indique un chapitre qui se ferme. Pour aller au-delà du tirage automatique, nos guidances dédiées à la reconquête amoureuse détaillent les signes qu\'un ex va revenir et la stratégie à adopter. Un voyant spécialisé en retour affectif affine ensuite cette lecture selon votre histoire précise.',
+    },
   ]);
 
   return (
@@ -242,9 +246,13 @@ export default function VoyanceGratuiteAmourHubPage() {
               <h3 className="text-xl font-bold text-gray-900 mb-3">Quelle diff&eacute;rence entre voyance amour gratuite et payante&nbsp;?</h3>
               <p className="text-gray-700 leading-relaxed">La <strong>voyance amour gratuite</strong> repose sur des tirages automatis&eacute;s ou des minutes offertes&nbsp;: elle convient pour une exploration rapide ou une question simple. Les algorithmes appliquent les r&egrave;gles classiques d&apos;interpr&eacute;tation du tarot mais ne peuvent pas adapter la lecture &agrave; votre &eacute;nergie sp&eacute;cifique. La voyance amour payante implique un &eacute;change direct avec un voyant qui capte votre situation unique, pose des questions de clarification et ajuste son interpr&eacute;tation en temps r&eacute;el. Pour une question existentielle ou &eacute;motionnellement charg&eacute;e, la voyance payante apporte une profondeur d&apos;analyse que le gratuit ne peut atteindre. Notre conseil&nbsp;: utilisez le gratuit pour d&eacute;couvrir, le payant pour approfondir.</p>
             </div>
-            <div>
+            <div className="border-b border-gray-200 pb-6">
               <h3 className="text-xl font-bold text-gray-900 mb-3">La voyance amoureuse gratuite par email existe-t-elle&nbsp;?</h3>
               <p className="text-gray-700 leading-relaxed">Oui, certaines plateformes proposent une <strong>voyance amoureuse gratuite par email</strong> pour une premi&egrave;re question, g&eacute;n&eacute;ralement sous forme de r&eacute;ponse standardis&eacute;e ou semi-automatis&eacute;e. C&apos;est une bonne option si vous pr&eacute;f&eacute;rez l&apos;&eacute;crit ou si vous avez besoin de temps pour formuler votre question. Les r&eacute;ponses arrivent en 24 &agrave; 72 heures. Pour une analyse vraiment personnalis&eacute;e par email, comptez entre 10 et 25 &euro; par question &mdash; le voyant r&eacute;dige alors une r&eacute;ponse d&eacute;taill&eacute;e incluant le tirage, l&apos;interpr&eacute;tation et des conseils pratiques. La qualit&eacute; de la voyance par email d&eacute;pend principalement du temps que le voyant consacre &agrave; votre situation.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">La voyance gratuite peut-elle aider &agrave; r&eacute;cup&eacute;rer un amour perdu&nbsp;?</h3>
+              <p className="text-gray-700 leading-relaxed">Oui, la voyance gratuite est souvent le premier r&eacute;flexe apr&egrave;s une s&eacute;paration pour savoir si un <strong>amour perdu</strong> peut revenir. Un tirage tarot gratuit &eacute;claire l&apos;&eacute;tat &eacute;motionnel de votre ex et le potentiel de r&eacute;conciliation&nbsp;: des cartes comme le <strong>Deux de Coupe</strong> ou L&apos;&Eacute;toile signalent un lien encore vivant, tandis que le Huit de Coupe indique un chapitre qui se ferme. Pour aller au-del&agrave; du tirage automatique, nos guidances d&eacute;di&eacute;es &agrave; la <Link href="/reconquete" className="text-emerald-600 hover:text-emerald-800 underline font-medium">reconqu&ecirc;te amoureuse</Link> d&eacute;taillent les <Link href="/reconquete/va-t-il-elle-revenir" className="text-emerald-600 hover:text-emerald-800 underline font-medium">signes qu&apos;un ex va revenir</Link> et la strat&eacute;gie &agrave; adopter. Un <strong>voyant sp&eacute;cialis&eacute; en retour affectif</strong> affine ensuite cette lecture selon votre histoire pr&eacute;cise.</p>
             </div>
           </div>
         </section>
