@@ -5,6 +5,7 @@ import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
+import OracleDraw from '@/components/OracleDraw';
 
 export const metadata: Metadata = {
   title: 'Oracle Gratuit Amour : Belline, Gé et Guidance Sentimentale',
@@ -83,6 +84,11 @@ export default function OracleGratuitAmourPage() {
           </div>
         </div>
       </header>
+
+      {/* Interactive Oracle Tool */}
+      <section id="tirage" className="max-w-4xl mx-auto px-4 py-8">
+        <OracleDraw />
+      </section>
 
       <div className="max-w-4xl mx-auto px-4 py-8">
         {/* Stats bar */}

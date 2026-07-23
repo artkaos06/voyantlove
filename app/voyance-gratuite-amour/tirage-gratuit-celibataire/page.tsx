@@ -5,6 +5,7 @@ import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
+import TarotSpread from '@/components/TarotSpread';
 
 export const metadata: Metadata = {
   title: 'Tirage Gratuit Amour Célibataire : Votre Avenir Sentimental',
@@ -83,6 +84,16 @@ export default function TirageGratuitCelibatairePage() {
           </div>
         </div>
       </header>
+
+      {/* Interactive Tarot Tool */}
+      <section id="tirage" className="max-w-4xl mx-auto px-4 py-8">
+        <TarotSpread
+          title="🔮 Tirage Spécial Célibataire"
+          subtitle="Où, quand et comment : trois cartes pour éclairer votre prochaine rencontre"
+          positions={['Où', 'Quand', 'Comment']}
+          ctaSource="tirage-gratuit-celibataire"
+        />
+      </section>
 
       <div className="max-w-4xl mx-auto px-4 py-8">
         {/* Stats bar */}

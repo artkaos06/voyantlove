@@ -5,6 +5,7 @@ import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
+import TarotSpread from '@/components/TarotSpread';
 
 export const metadata: Metadata = {
   title: 'Tarot Amour Gratuit : Tirage et Interprétation Sentimentale',
@@ -87,6 +88,16 @@ export default function TarotAmourGratuitPage() {
           </div>
         </div>
       </header>
+
+      {/* Interactive Tarot Tool */}
+      <section id="tirage" className="max-w-4xl mx-auto px-4 py-8">
+        <TarotSpread
+          title="🔮 Tirage en Croix — 5 Cartes"
+          subtitle="Le tirage le plus complet pour une vision d'ensemble de votre situation sentimentale"
+          positions={['Vous', "L'autre", 'Le Défi', 'Le Conseil', "L'Issue"]}
+          ctaSource="tarot-amour-gratuit"
+        />
+      </section>
 
       <div className="max-w-4xl mx-auto px-4 py-8">
         {/* Stats bar */}

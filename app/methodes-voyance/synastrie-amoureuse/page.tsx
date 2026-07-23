@@ -5,9 +5,10 @@ import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
+import SynastryCalculator from '@/components/SynastryCalculator';
 
 export const metadata: Metadata = {
-  title: 'Synastrie Amoureuse : Compatibilité Astrale de Couple | VoyantLove',
+  title: 'Synastrie Amoureuse : Compatibilité de Couple',
   description: 'La synastrie amoureuse analyse la compatibilité de deux thèmes astraux. Découvrez ce que les planètes révèlent sur votre couple : tensions, harmonies, forces et défis.',
   keywords: ['synastrie amoureuse', 'thème astral couple', 'compatibilité astrologique couple', 'synastrie couple', 'Vénus Mars synastrie'],
   alternates: { canonical: 'https://www.voyantlove.fr/methodes-voyance/synastrie-amoureuse/' },
@@ -15,7 +16,7 @@ export const metadata: Metadata = {
 
 export default function SynastrieAmoureusePage() {
   const articleSchema = getArticleSchema({
-    title: 'Synastrie Amoureuse : Compatibilité Astrale de Couple | VoyantLove',
+    title: 'Synastrie Amoureuse : Compatibilité de Couple',
     description: 'La synastrie amoureuse analyse la compatibilité de deux thèmes astraux. Découvrez ce que les planètes révèlent sur votre couple : tensions, harmonies, forces et défis.',
     url: 'https://www.voyantlove.fr/methodes-voyance/synastrie-amoureuse/',
     datePublished: '2026-03-27',
@@ -76,13 +77,18 @@ export default function SynastrieAmoureusePage() {
           <h1 className="text-4xl md:text-5xl font-bold mb-4">&#x2B50; Synastrie Amoureuse</h1>
           <p className="text-xl opacity-95 mb-6">La Compatibilité Astrale de Votre Couple</p>
           <div className="flex gap-4 flex-wrap">
-            <a href="#planetes" className="bg-white text-indigo-700 px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition">Les Planètes Clés</a>
-            <a href="#maisons" className="border-2 border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-indigo-700 transition">Maisons de l'Amour</a>
+            <a href="#calculateur" className="bg-white text-indigo-700 px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition">Tester Notre Compatibilité</a>
+            <a href="#planetes" className="border-2 border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-indigo-700 transition">Les Planètes Clés</a>
           </div>
         </div>
       </header>
 
       <div className="max-w-4xl mx-auto px-4 py-8">
+        {/* Interactive Calculator — first thing visible, answers the "are we compatible" intent immediately */}
+        <section id="calculateur" className="mb-8">
+          <SynastryCalculator />
+        </section>
+
         {/* Stats Bar */}
         <div className="bg-white rounded-xl shadow-md p-6 mb-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
           <div><div className="text-3xl mb-1">&#x2B50;</div><div className="text-2xl font-bold text-indigo-700">2 Thèmes</div><div className="text-sm text-gray-600">Superposition astrologique</div></div>

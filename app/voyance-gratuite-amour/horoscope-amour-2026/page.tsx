@@ -5,6 +5,7 @@ import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
+import HoroscopeSelector from '@/components/HoroscopeSelector';
 
 export const metadata: Metadata = {
   title: 'Horoscope Amour 2026 : Prédictions Sentimentales par Signe',
@@ -83,10 +84,15 @@ export default function HoroscopeAmour2026Page() {
           <p className="text-xl opacity-95 mb-6">Pr&eacute;dictions sentimentales par signe pour une ann&eacute;e pleine de promesses</p>
           <div className="flex gap-4 flex-wrap">
             <a href="#consultation" className="bg-white text-cyan-600 px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition">Consultation Personnalis&eacute;e</a>
-            <a href="#feu" className="border-2 border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-cyan-600 transition">Mon Signe</a>
+            <a href="#mon-signe" className="border-2 border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-cyan-600 transition">Mon Signe</a>
           </div>
         </div>
       </header>
+
+      {/* Interactive Sign Selector */}
+      <section id="mon-signe" className="max-w-4xl mx-auto px-4 py-8">
+        <HoroscopeSelector />
+      </section>
 
       <div className="max-w-4xl mx-auto px-4 py-8">
         {/* Stats bar */}
