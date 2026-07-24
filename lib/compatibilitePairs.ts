@@ -932,4 +932,352 @@ export const COMPATIBILITY_PAIRS: PairRecord[] = [
       },
     ],
   },
+  {
+    slug: 'belier-belier',
+    signA: 'Bélier',
+    signB: 'Bélier',
+    score: 3,
+    titre: 'Deux flammes, un seul briquet',
+    dynamique:
+      'Deux Béliers ensemble, c’est un feu d’artifice permanent. Même énergie, même impatience, même besoin de gagner : ils se reconnaissent instantanément et l’attirance est électrique. La conquête est fulgurante, la passion physique intense, l’ennui strictement impossible. Mais le zodiaque n’a pas prévu deux chefs pour un seul feu : chacun veut décider, initier, avoir raison le premier. Leur histoire est une course où personne ne veut ralentir — exaltante tant qu’ils courent dans la même direction, explosive dès qu’ils divergent. Le miroir leur renvoie leurs qualités éclatantes… et leurs défauts en double.',
+    forces:
+      'Une compréhension immédiate des besoins de l’autre — même carburant, même rythme —, une passion qui ne retombe pas, une franchise totale sans jeux ni manipulation, et un goût partagé de l’action qui fait de leur couple une équipe redoutable face au monde extérieur.',
+    defis:
+      'La compétition permanente : deux ego qui refusent de céder transforment les broutilles en batailles rangées. Les colères simultanées ne laissent personne pour apaiser, et l’impulsivité doublée mène aux décisions catastrophiques prises à chaud, des ruptures sur un coup de sang aux réconciliations aussi précipitées.',
+    conseil:
+      'Attribuez-vous des territoires exclusifs de décision pour cesser de rivaliser sur tout. Et instaurez la règle d’or des couples de Feu : aucune décision importante, aucune rupture prononcée dans la première heure d’une dispute. Votre colère retombe aussi vite qu’elle monte.',
+    faq: [
+      {
+        q: 'Deux Béliers peuvent-ils vivre une relation durable ?',
+        a: 'Oui, à condition de canaliser leur rivalité naturelle vers l’extérieur plutôt que l’un contre l’autre. Les couples de deux Béliers qui durent partagent des projets ambitieux, du sport, des défis communs qui absorbent leur besoin de gagner. Sans cet exutoire, ils transforment leur salon en arène. La passion, elle, ne pose jamais problème : c’est leur meilleur terrain d’entente.',
+      },
+      {
+        q: 'Pourquoi deux Béliers se disputent-ils autant ?',
+        a: 'Parce qu’aucun des deux ne possède le frein qui manque à l’autre. Dans un couple équilibré, un partenaire tempère les emballements ; ici, deux impulsifs s’enflamment ensemble et personne ne calme le jeu. Chaque désaccord peut monter en quelques secondes. La bonne nouvelle : ils oublient aussi vite qu’ils explosent, et rares sont les rancunes durables entre deux Béliers.',
+      },
+      {
+        q: 'Qui commande dans un couple de deux Béliers ?',
+        a: 'Personne en permanence, et c’est le nœud du problème. Deux signes nés pour mener se disputent chaque décision, du choix du restaurant au projet de vie. Les couples qui fonctionnent ont renoncé au commandement unique au profit d’un partage clair : à l’un tel domaine, à l’autre tel autre. Reconnaître le leadership de l’autre sur son terrain est leur plus grand acte d’amour.',
+      },
+    ],
+  },
+  {
+    slug: 'taureau-taureau',
+    signA: 'Taureau',
+    signB: 'Taureau',
+    score: 4,
+    titre: 'Le cocon de velours, à double tour',
+    dynamique:
+      'Deux Taureaux construisent le couple le plus confortable du zodiaque. Même amour du concret, de la bonne chère, du corps et de la sécurité : ils se comprennent sans un mot et bâtissent lentement un nid douillet où rien ne manque. La sensualité partagée est profonde et gourmande, la fidélité va de soi, la stabilité est totale. C’est un amour qui se prouve en gestes — un repas mijoté, une maison qui embellit, une épargne qui grossit — plutôt qu’en déclarations. Le seul ennemi de ce paradis terrien s’appelle l’immobilisme : deux signes qui détestent le changement peuvent s’endormir dans un confort qui finit par ressembler à de la torpeur.',
+    forces:
+      'Une sécurité affective et matérielle exceptionnelle, une sensualité complète et durable, des valeurs parfaitement alignées — foyer, patrimoine, fidélité — et une absence quasi totale de jeux de pouvoir. Ce couple traverse les crises extérieures sans jamais se lâcher la main.',
+    defis:
+      'L’entêtement croisé : quand deux Taureaux se braquent, aucun ne bouge et le conflit se fossilise pendant des semaines. Et surtout la routine : deux signes qui aiment leurs habitudes peuvent laisser mourir le désir sous le poids du confort, sans même s’en apercevoir avant qu’il soit tard.',
+    conseil:
+      'Programmez délibérément l’imprévu : un voyage inhabituel, un restaurant hors zone de confort, un projet neuf chaque saison. Votre stabilité est un trésor tant qu’elle reste choisie et non subie. Et quand vous vous braquez tous les deux, désignez un « premier pas » à l’avance.',
+    faq: [
+      {
+        q: 'Deux Taureaux forment-ils un couple stable ?',
+        a: 'Parmi les plus stables du zodiaque. Deux signes de Terre partageant les mêmes besoins de sécurité, de fidélité et de confort construisent une relation d’une solidité rare, à l’abri des tempêtes qui emportent d’autres couples. Leur défi n’est jamais la rupture mais l’endormissement : le confort peut anesthésier la passion s’ils ne l’entretiennent pas consciemment.',
+      },
+      {
+        q: 'La routine menace-t-elle un couple de deux Taureaux ?',
+        a: 'C’est leur unique vrai danger. Aucun des deux ne provoque spontanément le changement : ils s’installent avec délice dans des habitudes qui rassurent mais peuvent éteindre le désir. Le couple reste alors solide comme un roc… et tiède comme une pièce trop chauffée. La parade tient à leur nature sensorielle : cuisine, week-ends, plaisirs du corps réinventés régulièrement les tiennent vivants.',
+      },
+      {
+        q: 'Comment deux Taureaux gèrent-ils leurs disputes ?',
+        a: 'Rarement, mais durablement. Deux entêtements légendaires face à face, cela donne des sièges silencieux où chacun attend que l’autre capitule — ce qui n’arrive jamais spontanément. Les couples rodés conviennent à l’avance d’un signal de réconciliation, souvent sensoriel : un plat préféré, un geste tendre, une sortie. Ce rituel permet de déposer les armes sans que personne perde la face.',
+      },
+    ],
+  },
+  {
+    slug: 'gemeaux-gemeaux',
+    signA: 'Gémeaux',
+    signB: 'Gémeaux',
+    score: 3,
+    titre: 'Quatre personnes dans un couple',
+    dynamique:
+      'Deux Gémeaux, c’est un feu d’artifice intellectuel — et un peu une foule. Le signe du double réuni au signe du double : la conversation est infinie, l’humour permanent, la curiosité contagieuse. Ils se stimulent, se font rire, changent de sujet et de projet à la vitesse de l’éclair, et ne connaissent jamais l’ennui. Chacun comprend le besoin d’air et de mouvement de l’autre sans le vivre comme un rejet — une liberté rare et précieuse. Mais deux êtres versatiles peinent à ancrer quoi que ce soit : les décisions flottent, les émotions profondes restent en surface, et le couple peut ressembler à une brillante amitié qui aurait oublié de devenir un amour incarné.',
+    forces:
+      'Une complicité intellectuelle immédiate, un rire partagé qui traverse tout, une liberté mutuelle sans jalousie, et une adaptabilité qui leur permet de rebondir sur n’importe quelle situation. Le couple le moins ennuyeux du zodiaque, socialement rayonnant.',
+    defis:
+      'L’ancrage : personne pour poser le couple, gérer le concret, trancher les grands choix qui restent en suspens des années. Et la profondeur émotionnelle — deux mentaux qui analysent les sentiments au lieu de les vivre risquent une relation tout en surface, où la tendresse physique et les vrais aveux se raréfient.',
+    conseil:
+      'Nommez un pilote du concret à tour de rôle et fixez des dates limites aux décisions qui traînent. Surtout, forcez-vous à l’incarnation : du contact physique quotidien, des mots d’amour même maladroits. Votre lien mental est exceptionnel — offrez-lui un corps pour qu’il devienne un couple.',
+    faq: [
+      {
+        q: 'Deux Gémeaux s’entendent-ils bien en couple ?',
+        a: 'Intellectuellement, à merveille : même vivacité, même humour, même soif de nouveauté. Ils forment le couple le plus stimulant et le plus complice du zodiaque au quotidien. Le hic est ailleurs : deux signes également fuyants peinent à ancrer la relation dans le concret et l’émotionnel. L’entente est brillante ; c’est la profondeur et la constance qui demandent un vrai effort conscient.',
+      },
+      {
+        q: 'Ce couple manque-t-il de stabilité ?',
+        a: 'C’est son point faible structurel. Aucun des deux n’apporte l’ancrage qu’un Gémeaux trouve normalement chez un partenaire de Terre ou d’Eau. Résultat : les décisions importantes — engagement, logement, enfants — peuvent flotter indéfiniment, chacun attendant que l’autre pose le cadre. Les couples qui durent s’imposent des rituels et des échéances, contre leur nature, pour compenser cette légèreté partagée.',
+      },
+      {
+        q: 'Comment deux Gémeaux entretiennent-ils la passion ?',
+        a: 'En résistant à leur pente naturelle vers l’amitié cérébrale. Deux Gémeaux peuvent glisser vers une relation de complices brillants où le corps et les sentiments passent au second plan. La parade est volontaire : cultiver le contact physique, s’autoriser la vulnérabilité, dire les choses tendres qui font peur. Leur imagination, bien orientée, en fait aussi les partenaires les plus ludiques du zodiaque.',
+      },
+    ],
+  },
+  {
+    slug: 'cancer-cancer',
+    signA: 'Cancer',
+    signB: 'Cancer',
+    score: 4,
+    titre: 'Deux cœurs, une seule carapace',
+    dynamique:
+      'Deux Cancers créent le foyer le plus tendre du zodiaque. Même sensibilité à fleur de peau, même besoin de sécurité affective, même culte de la maison et de la famille : ils se devinent, se consolent, s’enveloppent d’une douceur que peu de couples connaissent. L’intimité émotionnelle est immédiate et profonde — enfin quelqu’un qui ne juge pas les larmes ni les besoins. Leur nid devient un sanctuaire. Mais deux hypersensibles, c’est aussi deux susceptibilités qui se blessent en silence, deux mémoires qui archivent les vexations, et deux humeurs lunaires qui peuvent monter ensemble sans personne pour tenir la barre.',
+    forces:
+      'Une empathie mutuelle totale, une tendresse quotidienne rare, une loyauté indéfectible et un même rêve de foyer chaleureux. Chacun se sent enfin compris sans avoir à s’expliquer — le repos affectif après des amours qui ne les comprenaient pas.',
+    defis:
+      'La double susceptibilité : les blessures non dites s’accumulent, car aucun n’ose froisser l’autre, et ressortent en marées disproportionnées. Quand les deux humeurs lunaires basculent en même temps, le couple se retrouve sans phare — deux bateaux dans la même tempête, personne au gouvernail.',
+    conseil:
+      'Instaurez un rituel de parole vraie, régulier et non négociable, où chacun dit l’inconfort avant qu’il fermente. Votre sensibilité commune est une force à condition de la verbaliser au lieu de la deviner — et gardez des ancrages extérieurs pour ne pas vous noyer l’un dans l’autre.',
+    faq: [
+      {
+        q: 'Deux Cancers sont-ils faits l’un pour l’autre ?',
+        a: 'Sur le plan émotionnel, profondément : ils partagent le même besoin de tendresse, de sécurité et de foyer, et se comprennent à demi-mot. C’est l’un des couples les plus doux du zodiaque. Le revers de cette sensibilité commune est la vulnérabilité : sans hygiène émotionnelle, deux Cancers accumulent les non-dits et les rancunes silencieuses qui finissent par peser lourd.',
+      },
+      {
+        q: 'Que se passe-t-il quand deux Cancers sont de mauvaise humeur en même temps ?',
+        a: 'C’est leur situation la plus délicate. Le Cancer traverse des marées d’humeur ; quand celles des deux partenaires montent ensemble, il n’y a plus personne pour rassurer et stabiliser. Le couple peut alors sombrer dans une spirale de bouderies croisées. Les couples avertis apprennent à repérer ces phases et à s’accorder un espace de retrait bienveillant plutôt que d’exiger l’un de l’autre un réconfort momentanément indisponible.',
+      },
+      {
+        q: 'Ce couple est-il fait pour fonder une famille ?',
+        a: 'Idéalement : le foyer et la famille sont au cœur de l’identité cancérienne, et deux Cancers construisent des maisons chaleureuses où les enfants se sentent enveloppés. Le point de vigilance est la fusion : ce couple peut se replier sur son nid au point de couper les ponts avec l’extérieur. Cultiver des liens sociaux et des espaces personnels protège la vitalité de la relation autant que celle de la famille.',
+      },
+    ],
+  },
+  {
+    slug: 'lion-lion',
+    signA: 'Lion',
+    signB: 'Lion',
+    score: 3,
+    titre: 'Deux soleils, un seul ciel',
+    dynamique:
+      'Deux Lions, c’est un couple royal — et un ciel où deux soleils se disputent la lumière. L’attirance est immédiate et flamboyante : chacun reconnaît chez l’autre le panache, la générosité, la présence qu’il chérit en lui-même. Ensemble, ils forment un couple spectaculaire, socialement magnétique, adoré et envié. La générosité est double, la loyauté farouche, la passion théâtrale. Mais deux ego qui ont besoin d’être le centre du monde ne peuvent pas régner sur le même trône : la question « qui brille le plus ? » plane sur chaque dîner, chaque fête, chaque décision. L’admiration mutuelle est leur ciment ; la rivalité de rayonnement, leur poison.',
+    forces:
+      'Une générosité mutuelle sans calcul, une loyauté totale, une vie sociale éclatante et une passion qui ne faiblit pas. Deux Lions qui s’admirent sincèrement forment le couple le plus glamour du zodiaque, une véritable dynastie à deux.',
+    defis:
+      'La compétition d’ego : deux besoins d’adoration exclusive qui s’entrechoquent, chacun jaloux de la lumière que l’autre capte. L’orgueil croisé rend les excuses impossibles et les disputes théâtrales. Sans oublier les dépenses fastueuses doublées, qui peuvent mettre le train de vie en péril.',
+    conseil:
+      'Faites-vous mutuellement roi et reine plutôt que rivaux : célébrez publiquement les succès de l’autre au lieu de les comparer aux vôtres. L’admiration donnée vous revient toujours. Et confiez votre budget à un garde-fou automatique, car aucun de vous ne freinera l’autre.',
+    faq: [
+      {
+        q: 'Deux Lions peuvent-ils former un couple heureux ?',
+        a: 'Oui, quand ils choisissent l’admiration mutuelle plutôt que la rivalité. Deux Lions qui se mettent en valeur l’un l’autre forment un couple rayonnant, généreux et d’une loyauté à toute épreuve. Le danger permanent est la guerre de rayonnement : si chacun exige d’être le seul soleil, le ciel devient invivable. La maturité de chacun fait toute la différence.',
+      },
+      {
+        q: 'Comment gérer deux ego dans un couple de Lions ?',
+        a: 'En partageant la scène au lieu de se la disputer. Chaque Lion a un besoin vital de reconnaissance ; le secret est que chacun devienne le premier admirateur de l’autre. Un Lion qui valorise publiquement son partenaire ne perd rien de sa superbe — il gagne un allié loyal. Les couples qui échouent sont ceux où chacun garde toute la lumière pour soi, transformant l’amour en concours permanent.',
+      },
+      {
+        q: 'L’argent est-il un problème pour deux Lions ?',
+        a: 'Souvent, car aucun ne tempère l’autre. Le Lion dépense pour briller, offrir et vivre grand ; deux Lions ensemble additionnent leurs générosités et leurs fastes sans frein naturel. Les couples stables mettent en place un garde-fou externe — épargne prélevée automatiquement, budget plaisir cadré — qui protège leur train de vie de leur commune magnificence sans brider leur besoin de panache.',
+      },
+    ],
+  },
+  {
+    slug: 'vierge-vierge',
+    signA: 'Vierge',
+    signB: 'Vierge',
+    score: 4,
+    titre: 'La perfection à quatre mains',
+    dynamique:
+      'Deux Vierges construisent le couple le plus fonctionnel du zodiaque. Même exigence, même sens du détail, même besoin d’un quotidien bien ordonné : ils se reconnaissent avec soulagement — enfin quelqu’un qui comprend qu’un tiroir rangé est une forme d’amour. L’estime précède la tendresse, puis les deux se mêlent en une complicité discrète et profonde. Leur maison tourne comme une horloge, leur santé est choyée, leurs projets aboutissent. Mais deux perfectionnistes, c’est aussi deux critiques et deux anxieux : quand chacun veut améliorer l’autre, l’amour peut se dissoudre dans une liste de remarques, et l’angoisse de l’un nourrir celle de l’autre en boucle.',
+    forces:
+      'Une entente parfaite sur le quotidien, un respect mutuel du sérieux et de l’effort, une santé et une organisation soignées à deux, et un humour pince-sans-rire complice. Deux Vierges se sentent enfin comprises dans leur exigence au lieu d’être jugées « trop ».',
+    defis:
+      'La critique croisée : deux signes qui améliorent tout, y compris leur partenaire, peuvent transformer l’amour en audit permanent. Et l’anxiété doublée — deux mentaux qui ruminent — risque de fabriquer des soucis là où il n’y en a pas, chacun amplifiant les inquiétudes de l’autre.',
+    conseil:
+      'Remplacez une critique sur deux par une gratitude explicite : vous vous corrigez par amour, jamais par reproche. Et créez une zone sans exigence — un espace, un moment — où l’imperfection est autorisée. Votre couple a besoin de respirer hors de la quête permanente du mieux.',
+    faq: [
+      {
+        q: 'Deux Vierges sont-elles compatibles en amour ?',
+        a: 'Très bien, sur la base d’une estime mutuelle et de valeurs identiques : sérieux, fiabilité, soin du détail. Chacune se sent enfin comprise dans une exigence que d’autres partenaires jugeaient excessive. Le couple est fonctionnel et loyal. Son seul vrai risque : que la critique constructive, doublée, se transforme en climat de reproche permanent qui étouffe la tendresse.',
+      },
+      {
+        q: 'La critique est-elle un problème entre deux Vierges ?',
+        a: 'C’est leur talon d’Achille. Chaque Vierge voit ce qui pourrait être mieux et le dit pour aider ; mais recevoir cet éclairage en continu, de part et d’autre, use l’estime de soi et refroidit l’amour. Les couples qui durent instaurent une règle simple : valoriser explicitement ce qui va avant de suggérer ce qui pourrait aller mieux, et s’accorder des zones où rien n’est à corriger.',
+      },
+      {
+        q: 'Ce couple sait-il lâcher prise ?',
+        a: 'C’est son grand apprentissage. Deux Vierges peuvent transformer leur vie commune en quête d’optimisation permanente — maison, santé, budget, projets — jusqu’à oublier de simplement profiter. L’anxiété de l’une nourrit celle de l’autre. Les couples épanouis se ménagent des rituels de relâchement délibéré : un désordre toléré, une journée sans planning, un plaisir sans utilité. C’est là, souvent, que renaît leur tendresse.',
+      },
+    ],
+  },
+  {
+    slug: 'balance-balance',
+    signA: 'Balance',
+    signB: 'Balance',
+    score: 4,
+    titre: 'L’harmonie, jusqu’à l’indécision',
+    dynamique:
+      'Deux Balances forment le couple le plus élégant et le plus courtois du zodiaque. Même quête d’harmonie, même horreur du conflit, même amour du beau et du raffinement : leur relation est douce, esthétique, pleine d’égards mutuels. Ils s’écoutent, se ménagent, transforment leur vie commune en un art de vivre gracieux où l’on ne hausse jamais le ton. Vénus règne en double. Mais deux signes qui fuient le conflit ne règlent jamais rien : les désaccords glissent sous le tapis avec élégance jusqu’à former une bosse. Et deux indécis face au moindre choix — un restaurant, un canapé, un projet de vie — peuvent rester paralysés, chacun renvoyant poliment la décision à l’autre.',
+    forces:
+      'Une courtoisie et une douceur constantes, un art de vivre partagé — beauté, culture, sorties —, une vie sociale harmonieuse et une capacité rare à se ménager mutuellement. Le couple où l’on ne crie jamais, où chacun se sent respecté et choyé.',
+    defis:
+      'L’évitement du conflit : les vrais sujets ne sont jamais posés, et les frustrations s’accumulent en silence sous des sourires. Et l’indécision doublée — deux Balances peuvent laisser flotter les grands choix des années, chacune attendant que l’autre tranche pour préserver l’harmonie.',
+    conseil:
+      'Instituez des conversations vraies, régulières, où l’on aborde ce qui fâche avec la même élégance que le reste — l’harmonie durable se construit sur des fondations, pas seulement des ornements. Et désignez, choix par choix, qui décide : votre couple a besoin d’un tranchant pour ne pas s’enliser dans la courtoisie.',
+    faq: [
+      {
+        q: 'Deux Balances forment-elles un bon couple ?',
+        a: 'Un couple remarquablement doux et harmonieux : même goût du beau, de la paix et des égards mutuels, quasi aucun conflit ouvert. Sa fragilité est le miroir de sa force : à force de préserver l’harmonie, deux Balances évitent les sujets difficiles et repoussent les décisions. La relation est élégante mais peut manquer de colonne vertébrale. Apprendre à trancher est leur grand chantier.',
+      },
+      {
+        q: 'Comment deux Balances prennent-elles des décisions ?',
+        a: 'Difficilement, c’est leur point faible. Chacune pèse indéfiniment le pour et le contre et, par courtoisie, renvoie volontiers le choix à l’autre — qui fait de même. Résultat : des décisions importantes qui flottent des mois. Les couples qui fonctionnent adoptent une règle claire : une date limite par choix, et l’attribution explicite du dernier mot à l’une ou l’autre selon le domaine.',
+      },
+      {
+        q: 'L’évitement du conflit menace-t-il ce couple ?',
+        a: 'C’est son danger le plus insidieux. Deux Balances peuvent maintenir une paix de surface pendant des années en taisant chacune ses frustrations, jusqu’à une rupture qui semble surgir de nulle part — mais qui couvait sous les sourires. La prévention tient à une discipline contre-nature pour elles : oser le désaccord tôt, poliment mais réellement, avant que le non-dit ne devienne une distance irréparable.',
+      },
+    ],
+  },
+  {
+    slug: 'scorpion-scorpion',
+    signA: 'Scorpion',
+    signB: 'Scorpion',
+    score: 3,
+    titre: 'Les abysses, en double',
+    dynamique:
+      'Deux Scorpions vivent l’amour comme une plongée en apnée dans les abysses. Même intensité, même profondeur, même refus du superficiel : la reconnaissance est immédiate et magnétique — enfin quelqu’un qui n’a pas peur de tout donner et tout exiger. La passion est totale, la loyauté viscérale, l’intimité d’une richesse que peu de couples atteignent. Mais deux êtres de contrôle, de secret et de méfiance réunis, c’est aussi deux stratèges qui se testent, deux jaloux qui s’épient, deux mémoires qui archivent chaque blessure. Leur amour peut devenir une forteresse imprenable — ou un huis clos sans oxygène où chacun sonde l’autre sans jamais désarmer.',
+    forces:
+      'Une intimité émotionnelle et physique d’une profondeur exceptionnelle, une loyauté farouche, une compréhension mutuelle des zones d’ombre que personne d’autre n’accepte, et une résilience de couple à toute épreuve face au monde extérieur.',
+    defis:
+      'Les luttes de pouvoir : deux stratèges qui refusent de céder transforment l’amour en partie d’échecs. La jalousie doublée et le besoin de contrôle croisé peuvent asphyxier la relation, et deux rancuniers gravent chaque offense au lieu de pardonner — les vengeances silencieuses se répondent en écho.',
+    conseil:
+      'Choisissez la transparence radicale plutôt que les tests permanents : ce que vous cherchez en sondant l’autre, offrez-le d’abord. Et bannissez la vengeance de votre langage de couple — deux Scorpions qui se punissent mutuellement creusent un gouffre. La confiance donnée est votre seule voie de survie.',
+    faq: [
+      {
+        q: 'Deux Scorpions peuvent-ils s’aimer sans se détruire ?',
+        a: 'Oui, mais c’est l’une des combinaisons les plus exigeantes du zodiaque. Deux Scorpions partagent une profondeur et une loyauté rares, et une intimité que peu de couples connaissent. Le risque est proportionnel : jalousie, contrôle et rancune, doublés, peuvent transformer la passion en guerre souterraine. La réussite dépend entièrement de leur capacité à choisir la confiance plutôt que la méfiance.',
+      },
+      {
+        q: 'La jalousie est-elle un problème entre deux Scorpions ?',
+        a: 'C’est leur principal champ de mines. Chaque Scorpion est possessif et enclin à la méfiance ; réunis, ils peuvent s’épier, se tester et interpréter le moindre signe comme une trahison. Paradoxalement, cette intensité peut aussi les rassurer — chacun comprend le besoin d’exclusivité de l’autre. La ligne entre passion protectrice et contrôle asphyxiant doit rester consciente, sous peine d’étouffer le couple.',
+      },
+      {
+        q: 'Comment ce couple traverse-t-il les conflits ?',
+        a: 'Intensément, et dangereusement s’ils cèdent à leur pente vengeresse. Deux Scorpions blessés ripostent en silence, chacun archivant l’offense pour la ressortir au moment stratégique — une escalade sans fin. Les couples qui survivent renoncent explicitement à la vengeance et pratiquent un pardon réel, dit à voix haute. Leur mémoire émotionnelle, si elle sert l’amour plutôt que les comptes, devient au contraire une force de fidélité inébranlable.',
+      },
+    ],
+  },
+  {
+    slug: 'sagittaire-sagittaire',
+    signA: 'Sagittaire',
+    signB: 'Sagittaire',
+    score: 4,
+    titre: 'Deux flèches vers le même horizon',
+    dynamique:
+      'Deux Sagittaires forment le couple le plus libre et le plus aventureux du zodiaque. Même soif de découverte, même optimisme, même horreur de l’enfermement : ils se reconnaissent comme deux explorateurs qui décident de faire route ensemble sans jamais s’attacher à un piquet. La relation ressemble à une amitié passionnée doublée d’une agence de voyages — projets, départs, philosophie, éclats de rire. Aucun ne fait peser sur l’autre le poids de la possession, ce qui rend le lien étonnamment léger et vivant. Mais deux êtres allergiques à l’engagement et au concret peuvent repousser indéfiniment tout ce qui ancre : factures, promesses, projets de long terme flottent, et la franchise brute de deux Sagittaires fait parfois des étincelles.',
+    forces:
+      'Une liberté mutuelle totale sans jalousie, un optimisme partagé qui transforme les épreuves en aventures, une franchise sans jeux, et une soif de découverte qui interdit l’ennui. Le couple qui vit large, voyage loin et rit fort.',
+    defis:
+      'La fuite de l’engagement : deux signes qui préfèrent l’horizon à l’ancrage peuvent ne jamais poser les fondations concrètes du couple. Le quotidien matériel est le parent pauvre, et la franchise sans filtre, doublée, blesse quand les vérités se croisent sans tact.',
+    conseil:
+      'Transformez votre besoin commun d’horizon en projets d’ancrage : construire ensemble, c’est encore une aventure. Nommez un responsable du concret à tour de rôle, et rappelez-vous que la franchise sans tendresse n’est que de la brutalité — même entre deux amoureux de la vérité.',
+    faq: [
+      {
+        q: 'Deux Sagittaires sont-ils faits pour vivre ensemble ?',
+        a: 'S’ils acceptent une forme de couple non conventionnelle, oui, et heureuse. Deux Sagittaires partagent la liberté, l’optimisme et l’aventure ; leur relation est vivante, légère et sans jalousie. Leur défi n’est pas de s’aimer mais de s’ancrer : deux signes qui fuient l’engagement et le concret doivent construire consciemment ce que d’autres couples posent naturellement — sinon la belle aventure reste sans fondations.',
+      },
+      {
+        q: 'L’engagement fait-il peur à un couple de deux Sagittaires ?',
+        a: 'Les formes classiques de l’engagement, oui — mais leur loyauté réelle peut être forte. Ils restent ensemble par choix renouvelé et par plaisir partagé, pas par contrat. Le couple fonctionne quand chacun accepte cette liberté comme un cadre, non comme une menace. Le vrai risque n’est pas l’infidélité mais l’inachèvement : des projets, une vie, un couple qu’on ne finit jamais de construire.',
+      },
+      {
+        q: 'Qui gère le quotidien dans ce couple d’aventuriers ?',
+        a: 'Personne spontanément, et c’est leur angle mort. Deux Sagittaires préfèrent le grand horizon aux petites tâches ; factures, ménage et démarches administratives peuvent s’accumuler dangereusement pendant qu’ils rêvent au prochain voyage. Les couples qui durent instaurent un partage explicite du concret — même à contrecœur — ou délèguent ce qu’ils peuvent, pour préserver l’énergie et la joie qui font leur lien.',
+      },
+    ],
+  },
+  {
+    slug: 'capricorne-capricorne',
+    signA: 'Capricorne',
+    signB: 'Capricorne',
+    score: 4,
+    titre: 'Deux bâtisseurs, un empire',
+    dynamique:
+      'Deux Capricornes construisent le couple le plus solide et le plus ambitieux du zodiaque. Même sérieux, même endurance, même vision du temps long : ils se reconnaissent dans l’effort et la loyauté, et bâtissent méthodiquement une vie dont les fondations défient les décennies. L’amour naît de l’estime — admiration pour la compétence, l’éthique, la fiabilité de l’autre — et grandit lentement en une tendresse profonde à l’abri des regards. Rien n’est laissé au hasard, tout est mérité. Mais deux bourreaux de travail réunis peuvent transformer leur couple en entreprise : la carrière dévore l’intimité, la pudeur émotionnelle double s’atrophie, et chacun peut finir par se demander, en silence, s’il est encore aimé sous le respect.',
+    forces:
+      'Une fiabilité mutuelle absolue, des ambitions parfaitement alignées, une loyauté sans faille et une efficacité de couple redoutable : ce que deux Capricornes décident se réalise. L’humour sec partagé et une sensualité insoupçonnée sont leur jardin secret.',
+    defis:
+      'Le travail qui dévore tout : deux workaholics peuvent se croiser des semaines sans vraie rencontre. Et l’expression des sentiments, pudique des deux côtés, peut s’assécher jusqu’à ce que la tendresse disparaisse sous le devoir — chacun aimant en silence et doutant d’être aimé en retour.',
+    conseil:
+      'Traitez votre couple comme votre projet le plus important : rendez-vous non annulables, bilans réguliers, objectifs de tendresse assumés. C’est contre-romantique en apparence, c’est exactement votre langage — et ça sauve les couples qui, sans cela, réussissent tout sauf leur intimité.',
+    faq: [
+      {
+        q: 'Deux Capricornes forment-ils un couple durable ?',
+        a: 'Parmi les plus durables du zodiaque. Même système de valeurs — effort, loyauté, parole tenue, ambition — et même horizon de long terme : deux Capricornes construisent une vie d’une solidité rare. La passion est discrète mais le lien, indéfectible. Leur seul vrai risque n’est pas la rupture mais l’assèchement : laisser le devoir et le travail éclipser l’intimité au point de vider le couple de sa chaleur.',
+      },
+      {
+        q: 'Le travail menace-t-il un couple de deux Capricornes ?',
+        a: 'C’est leur ennemi intérieur numéro un. Deux ambitieux également investis dans leur carrière peuvent transformer la vie commune en cohabitation efficace de deux professionnels épuisés. Sans vigilance, l’intimité devient un poste secondaire, toujours reporté. Les couples qui s’épanouissent sanctuarisent du temps à deux avec la même rigueur qu’un rendez-vous d’affaires — la seule discipline que respecte vraiment un Capricorne.',
+      },
+      {
+        q: 'Ce couple manque-t-il de romantisme ?',
+        a: 'De romantisme démonstratif, pas d’amour. Deux Capricornes s’aiment en actes : sécuriser l’avenir, tenir parole, être présent dans l’adversité valent pour eux toutes les déclarations. Le risque est que cette pudeur croisée finisse par ressembler à de la froideur, chacun n’osant pas le premier geste tendre. Ritualiser quelques marques d’affection explicites, contre leur nature réservée, protège la chaleur du couple sur la durée.',
+      },
+    ],
+  },
+  {
+    slug: 'verseau-verseau',
+    signA: 'Verseau',
+    signB: 'Verseau',
+    score: 4,
+    titre: 'Deux électrons libres, même orbite',
+    dynamique:
+      'Deux Verseaux forment le couple le plus original et le plus libre du zodiaque. Même indépendance farouche, même vision tournée vers l’avenir, même refus des conventions : ils se reconnaissent comme deux esprits rares qui n’ont enfin plus à s’excuser d’être différents. La complicité est d’abord une amitié intellectuelle profonde, puis un amour qui invente ses propres règles — chacun garde ses projets, ses amis, sa liberté, et c’est précisément ce respect mutuel de l’espace qui les soude. Mais deux cérébraux détachés, c’est aussi deux êtres qui analysent les émotions au lieu de les vivre : la tendresse physique et les mots d’amour peuvent se raréfier jusqu’à ce que le couple ressemble à une brillante colocation d’idées.',
+    forces:
+      'Une liberté mutuelle totale sans possessivité, une stimulation intellectuelle permanente, une amitié profonde sous l’amour, et une créativité commune qui invente un modèle de couple sur mesure. Deux Verseaux ne s’ennuient jamais et ne s’enferment jamais.',
+    defis:
+      'Le désert émotionnel : deux esprits qui intellectualisent les sentiments risquent une relation tout en tête, où l’incarnation et la vulnérabilité manquent cruellement. Et un détachement doublé peut faire que personne n’ose le premier geste tendre, chacun craignant de paraître dépendant.',
+    conseil:
+      'Osez la vulnérabilité en premier plutôt que d’attendre que l’autre craque : entre deux Verseaux, le silence des cœurs vient d’une fierté d’indépendance, pas d’un manque d’amour. Décidez ensemble que montrer son attachement n’est pas une défaite. C’est le seul verrou à faire sauter pour que votre amitié géniale devienne une histoire d’amour assumée.',
+    faq: [
+      {
+        q: 'Deux Verseaux sont-ils compatibles en amour ?',
+        a: 'Sur l’indépendance et les idées, l’accord est immédiat : même refus des conventions, même besoin d’espace, même curiosité pour l’avenir. Ils forment un couple sans possessivité qui écrit ses propres règles. La difficulté vient de leur ressemblance sur un autre point : le détachement émotionnel. Quand ni l’un ni l’autre ne prend le risque d’exprimer son attachement, la relation reste géniale mais bizarrement suspendue, comme en attente d’un aveu que personne n’ose faire.',
+      },
+      {
+        q: 'Pourquoi ce couple peine-t-il à exprimer ses sentiments ?',
+        a: 'Parce que le Verseau associe la dépendance affective à une perte de liberté, et se protège en gardant ses émotions à distance. Avec un partenaire d’un autre signe, ce mur finit par céder sous la chaleur de l’autre ; entre deux Verseaux, personne n’apporte cette chaleur — chacun attend un signal que l’autre retient par la même fierté. Le couple avance sur un malentendu confortable jusqu’à ce que l’un ose enfin nommer ce qu’il ressent.',
+      },
+      {
+        q: 'L’indépendance de chacun menace-t-elle le couple ?',
+        a: 'Au contraire, c’est son ciment — tant qu’elle ne se change pas en distance affective. Deux Verseaux respectent d’instinct l’espace de l’autre, évitant l’étouffement fatal à tant de couples. Le vrai danger est inverse : deux autonomies si complètes que la relation s’étiole faute de moments de proximité réelle. Des rituels de retrouvailles réguliers, choisis et non subis, rappellent que la liberté partagée forme quand même un couple.',
+      },
+    ],
+  },
+  {
+    slug: 'poissons-poissons',
+    signA: 'Poissons',
+    signB: 'Poissons',
+    score: 3,
+    titre: 'Deux rêveurs sans rivage',
+    dynamique:
+      'Deux Poissons vivent l’amour le plus romantique et le plus fusionnel du zodiaque. Même sensibilité infinie, même imaginaire débordant, même compassion sans limites : ils se devinent, se comprennent d’un regard et créent un monde à deux d’une douceur presque irréelle. La connexion émotionnelle et spirituelle est immédiate — beaucoup parlent d’âmes sœurs dès la rencontre. Leur amour ressemble à un rêve partagé, tendre et magique. Mais deux rêveurs sans ancre, c’est un bateau sans quille : personne pour gérer le concret, poser les limites, ramener à la réalité. Les émotions non exprimées se diluent dans le flou, l’un et l’autre fuient les conflits, et le couple peut dériver, adorable et perdu, loin de toute rive.',
+    forces:
+      'Une compréhension intuitive totale, une tendresse et une créativité partagées d’une richesse rare, une compassion mutuelle sans jugement, et une connexion spirituelle profonde. Deux Poissons s’offrent le refuge affectif dont chacun rêvait sans oser y croire.',
+    defis:
+      'L’absence d’ancrage : aucun des deux ne gère le concret, et la vie matérielle — argent, démarches, décisions — peut sombrer dans le flou. Deux hypersensibles qui fuient le conflit laissent les non-dits fermenter, et l’escapisme partagé (rêve, addictions, évitement) peut éloigner le couple du réel.',
+    conseil:
+      'Ancrez délibérément votre rêve : un cadre matériel minimal, des responsabilités réparties, des repères concrets qui protègent votre part de magie au lieu de la menacer. Et nommez vos émotions au lieu de les diluer — même entre intuitifs, le non-dit finit par créer une distance brumeuse.',
+    faq: [
+      {
+        q: 'Deux Poissons peuvent-ils construire un couple solide ?',
+        a: 'Émotionnellement et spirituellement, leur connexion est parmi les plus profondes du zodiaque — beaucoup évoquent l’âme sœur. Mais « solide » est le mot juste du défi : deux rêveurs sans ancrage peinent à poser les fondations concrètes d’une vie commune. Le couple est d’une tendresse rare ; sa longévité dépend de leur capacité à gérer, ensemble ou en déléguant, le réel qu’aucun des deux n’aime affronter.',
+      },
+      {
+        q: 'Qui gère le concret dans un couple de deux Poissons ?',
+        a: 'C’est précisément le problème : souvent personne. Argent, administratif, décisions pratiques peuvent s’accumuler pendant que le couple vit dans son monde intérieur. Les couples qui durent trouvent une solution — l’un endosse à contrecœur le rôle d’intendant, ou ils délèguent à un tiers de confiance, ou automatisent tout ce qui peut l’être. Reconnaître ce point faible commun, sans se le reprocher, est le premier pas vital.',
+      },
+      {
+        q: 'Le flou émotionnel menace-t-il ce couple ?',
+        a: 'Oui, paradoxalement pour deux êtres si sensibles. Par peur de blesser et par tendance à l’évitement, deux Poissons taisent leurs frustrations qui se diluent puis ressurgissent en vagues confuses. S’ajoute le risque d’escapisme partagé — se réfugier ensemble dans le rêve ou les paradis artificiels plutôt que d’affronter les difficultés. Nommer les émotions et rester ancrés dans le réel protège la beauté fragile de leur lien.',
+      },
+    ],
+  },
 ];
