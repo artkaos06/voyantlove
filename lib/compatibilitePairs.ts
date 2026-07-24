@@ -1280,4 +1280,410 @@ export const COMPATIBILITY_PAIRS: PairRecord[] = [
       },
     ],
   },
+  {
+    slug: 'belier-taureau',
+    signA: 'Bélier',
+    signB: 'Taureau',
+    score: 3,
+    titre: 'Le sprinteur et le roc, apprivoisement mutuel',
+    dynamique:
+      'Bélier et Taureau sont deux voisins du zodiaque que tout oppose dans le rythme : le Feu qui jaillit et la Terre qui dure. Le Bélier vit dans l’instant, décide en une seconde, se lasse vite ; le Taureau savoure, temporise, s’attache pour toujours. L’attirance initiale est celle des contraires touchants — le Bélier est apaisé par cette solidité rassurante, le Taureau électrisé par cette fougue qui le sort de sa torpeur. Mais la vie commune confronte l’impatience à la lenteur : le Bélier trépigne quand le Taureau réfléchit, le Taureau se braque quand le Bélier bouscule. C’est un couple d’apprivoisement, où chacun doit apprendre le tempo de l’autre au lieu de vouloir l’imposer.',
+    forces:
+      'Une complémentarité réelle une fois les rythmes accordés : le Bélier apporte l’élan qui sort le Taureau de l’inertie, le Taureau offre l’ancrage qui empêche le Bélier de se disperser. La sensualité, terrain commun, réconcilie souvent ce que les tempéraments opposent.',
+    defis:
+      'Le rythme, encore le rythme : l’impatience du Bélier contre l’entêtement du Taureau produit des blocages où l’un fonce et l’autre plante ses sabots. Le Bélier trouve le Taureau exaspérant de lenteur ; le Taureau trouve le Bélier épuisant de brusquerie et d’imprévoyance.',
+    conseil:
+      'Bélier : la patience n’est pas une perte de temps avec un Taureau, c’est la seule clé qui l’ouvre — la pression le verrouille définitivement. Taureau : acceptez que la spontanéité de votre Bélier n’est pas de l’inconséquence mais sa façon de vivre. Négociez un tempo médian, ni sprint ni sieste.',
+    faq: [
+      {
+        q: 'Bélier et Taureau sont-ils compatibles en amour ?',
+        a: 'C’est une compatibilité de travail plus que d’évidence. Voisins du zodiaque, Bélier et Taureau ne partagent ni élément ni rythme : le Feu impatient rencontre la Terre patiente. L’attirance des contraires est réelle et la sensualité les rapproche, mais la relation exige que chacun apprenne le tempo de l’autre. Les couples qui réussissent sont ceux où le Bélier a gagné en patience et le Taureau en souplesse.',
+      },
+      {
+        q: 'Pourquoi le Bélier s’impatiente-t-il avec le Taureau ?',
+        a: 'Parce que le Taureau vit à un rythme que le Bélier perçoit comme de l’immobilisme. Là où le Bélier décide et agit dans la seconde, le Taureau pèse, savoure et avance à pas mesurés — non par indécision mais par nature terrienne. Le Bélier doit comprendre que cette lenteur est le prix de la fiabilité qu’il apprécie : on ne peut pas vouloir la solidité du roc et lui reprocher de ne pas courir.',
+      },
+      {
+        q: 'Comment ce couple accorde-t-il ses rythmes opposés ?',
+        a: 'En transformant la différence en répartition plutôt qu’en conflit : au Bélier les décisions rapides et les impulsions à saisir, au Taureau les choix lourds qui engagent l’avenir. La sensualité partagée est leur meilleur terrain de réconciliation — c’est là qu’un Bélier apprend à ralentir et qu’un Taureau apprend à s’enflammer. Beaucoup de ces couples se disputent le jour et se retrouvent la nuit.',
+      },
+    ],
+  },
+  {
+    slug: 'belier-gemeaux',
+    signA: 'Bélier',
+    signB: 'Gémeaux',
+    score: 4,
+    titre: 'L’étincelle et le vent, duo pétillant',
+    dynamique:
+      'Bélier et Gémeaux forment l’un des couples les plus pétillants du zodiaque. Le sextile Feu-Air fait circuler une énergie de jeu, d’idées et de mouvement : le Bélier allume, le Gémeaux attise et fait circuler. Ils se comprennent vite, rient beaucoup, enchaînent projets et sorties sans jamais s’ennuyer. Le Bélier adore la vivacité mentale du Gémeaux, qui met des mots sur ses élans ; le Gémeaux est stimulé par l’audace du Bélier, qui transforme ses idées en actes. C’est une relation de complices espiègles — deux enfants terribles qui découvrent le monde ensemble. Leur seule ombre : deux êtres qui vivent vite et en surface peuvent négliger la profondeur émotionnelle et l’ancrage du couple.',
+    forces:
+      'Une complicité immédiate, un humour partagé, une énergie commune qui interdit l’ennui, et une liberté mutuelle : le Bélier ne s’attarde pas à surveiller, le Gémeaux ne supporte pas d’être surveillé. Ils forment un duo social brillant et inventif.',
+    defis:
+      'La superficialité : deux signes qui privilégient l’action et l’idée peuvent esquiver les vrais sujets émotionnels. Le Bélier direct se heurte parfois à l’esquive et à l’ambiguïté du Gémeaux ; l’impatience de l’un rencontre la versatilité de l’autre, et les décisions de fond peuvent flotter.',
+    conseil:
+      'Osez descendre sous la surface : votre complicité brillante mérite une vraie intimité émotionnelle, pas seulement des fous rires et des projets. Bélier, exigez de la clarté sans brusquer ; Gémeaux, offrez de la franchise sans esquiver. C’est là que votre étincelle devient un vrai feu.',
+    faq: [
+      {
+        q: 'Bélier et Gémeaux : une bonne compatibilité amoureuse ?',
+        a: 'Oui, l’une des plus vivantes et des plus faciles. Le sextile Feu-Air crée une complicité naturelle : même goût du mouvement, de l’humour et de la nouveauté, sans les jeux de pouvoir des couples plus intenses. La relation pétille et ne s’ennuie jamais. Son seul chantier est la profondeur : deux signes légers doivent apprendre à aborder l’émotionnel qu’ils préfèrent contourner.',
+      },
+      {
+        q: 'Ce couple risque-t-il de rester en surface ?',
+        a: 'C’est son point faible naturel. Le Bélier vit dans l’action, le Gémeaux dans les idées : ni l’un ni l’autre n’est spontanément porté vers l’introspection ou les grandes conversations sur les sentiments. Le couple peut alors ressembler à une amitié survitaminée qui esquive l’intimité profonde. Les partenaires qui durent s’imposent des moments de vraie parole, où l’on parle de « nous » et pas seulement du prochain projet.',
+      },
+      {
+        q: 'La franchise du Bélier convient-elle au Gémeaux ?',
+        a: 'Plutôt bien, à un détail près : le Bélier dit tout de front, le Gémeaux préfère nuancer, contourner, jouer avec les mots. Le Bélier peut vivre cette agilité comme de l’ambiguïté, voire de la fuite. Le Gémeaux, lui, encaisse la franchise brute mieux que d’autres signes car il ne s’en formalise pas longtemps. L’équilibre : un Bélier qui adoucit à peine, un Gémeaux qui tranche un peu plus.',
+      },
+    ],
+  },
+  {
+    slug: 'belier-poissons',
+    signA: 'Bélier',
+    signB: 'Poissons',
+    score: 3,
+    titre: 'Le guerrier et le rêveur, les deux bouts du zodiaque',
+    dynamique:
+      'Bélier et Poissons se touchent aux deux extrémités du zodiaque : le tout premier signe et le tout dernier, l’aube et le crépuscule. Le Bélier incarne l’élan brut, l’action, le « moi » qui fonce ; les Poissons incarnent la dissolution, le rêve, le « tout » qui s’abandonne. L’attirance est celle d’un mystère réciproque : le Bélier est fasciné par cette douceur insaisissable qui ne se conquiert pas, les Poissons par cette force claire qui les protège et les guide. Le Bélier peut devenir le chevalier des Poissons, celui qui affronte le monde à leur place ; les Poissons offrent au guerrier un havre de tendresse et d’imaginaire. Mais la brusquerie de l’un blesse facilement la sensibilité de l’autre.',
+    forces:
+      'Une complémentarité archétypale — la force et la douceur, l’action et le rêve —, une protection réelle du Bélier envers les Poissons, et une inspiration mutuelle : les Poissons adoucissent le guerrier, le Bélier concrétise les rêves du poète. La tendresse peut y être immense.',
+    defis:
+      'La sensibilité : la franchise brute du Bélier meurtrit des Poissons qui encaissent en silence puis se dérobent dans le flou. Le Bélier s’exaspère de cette fuite qu’il ne sait pas atteindre ; les Poissons se sentent bousculés par une énergie trop directe pour leur monde intérieur.',
+    conseil:
+      'Bélier : votre force protège les Poissons à condition de brider votre brusquerie — un mot dur les blesse plus qu’un coup. Poissons : ne fuyez pas dans le brouillard, dites simplement ce qui vous touche ; votre Bélier ne décode pas le silence, mais il désarme devant la vulnérabilité assumée.',
+    faq: [
+      {
+        q: 'Bélier et Poissons peuvent-ils s’aimer malgré leurs différences ?',
+        a: 'Oui, et l’attirance des deux bouts du zodiaque est souvent puissante. Le Bélier apporte la force et la direction qui manquent aux Poissons, les Poissons la douceur et l’imaginaire qui manquent au Bélier. La relation peut être d’une belle complémentarité — le chevalier et le rêveur. Sa fragilité tient à la différence de peau émotionnelle : le Bélier doit apprendre une délicatesse que sa nature ignore.',
+      },
+      {
+        q: 'Pourquoi le Bélier blesse-t-il facilement les Poissons ?',
+        a: 'Parce que sa communication est frontale et rapide, sans emballage — et que les Poissons ressentent tout à une intensité démultipliée. Une remarque banale pour le Bélier peut être vécue comme un rejet par les Poissons, qui n’ont pas la carapace pour la relativiser. Le Bélier n’est pas méchant, il est direct ; mais avec les Poissons, la manière compte autant que le fond. La tendresse dans le ton change tout.',
+      },
+      {
+        q: 'Comment les Poissons doivent-ils communiquer avec le Bélier ?',
+        a: 'En clair et sans se réfugier dans le flou. La tendance naturelle des Poissons blessés est de se dérober, de sous-entendre, de bouder dans le brouillard — exactement ce qu’un Bélier ne sait pas lire. Or le Bélier répond magnifiquement à la franchise vulnérable : dire « ça m’a fait mal » le désarme instantanément, là où le silence l’agace. La sincérité directe est le langage qui relie ces deux extrêmes.',
+      },
+    ],
+  },
+  {
+    slug: 'taureau-gemeaux',
+    signA: 'Taureau',
+    signB: 'Gémeaux',
+    score: 3,
+    titre: 'Le roc et le papillon, voisins étrangers',
+    dynamique:
+      'Taureau et Gémeaux sont voisins sur le zodiaque mais habitent deux univers : la Terre qui se pose et l’Air qui volette. Le Taureau cherche la stabilité, la sécurité, la routine rassurante ; le Gémeaux cherche la variété, le mouvement, la nouveauté permanente. Le Taureau est d’abord séduit par la vivacité brillante du Gémeaux, qui l’amuse et l’ouvre ; le Gémeaux est intrigué par cette solidité tranquille qui le change de son agitation. Mais le quotidien révèle le fossé : le Taureau veut construire un nid, le Gémeaux veut garder les fenêtres ouvertes. L’un vit la légèreté de l’autre comme de l’inconstance, l’autre vit la stabilité comme de l’ennui. C’est un couple d’effort où chacun doit s’étirer vers l’univers de l’autre.',
+    forces:
+      'Une complémentarité possible : le Gémeaux apporte l’air frais et la surprise qui empêchent le Taureau de s’encroûter, le Taureau offre l’ancrage et la sécurité dont le Gémeaux manque cruellement. Ensemble, ils peuvent équilibrer routine et nouveauté.',
+    defis:
+      'Le fossé des besoins : sécurité contre liberté, profondeur contre mobilité. Le Taureau, possessif, s’inquiète du papillonnage social du Gémeaux ; le Gémeaux étouffe dans la routine et les habitudes que le Taureau chérit. Le rythme de la parole et de la décision les oppose aussi.',
+    conseil:
+      'Taureau : lâchez du lest sur la liberté sociale du Gémeaux, votre possessivité le fait fuir plus sûrement que tout. Gémeaux : offrez à votre Taureau quelques repères stables non négociables, cette base sécurisante achète toute la légèreté que vous réclamez. Rencontrez-vous au milieu.',
+    faq: [
+      {
+        q: 'Taureau et Gémeaux forment-ils un couple viable ?',
+        a: 'Viable mais exigeant. Voisins du zodiaque sans élément commun, le Taureau de Terre et le Gémeaux d’Air ont des besoins presque opposés : sécurité contre liberté, profondeur contre mouvement. L’attirance initiale — la solidité fascine le papillon, la vivacité amuse le roc — doit se transformer en apprentissage mutuel. Les couples qui durent ont chacun fait un vrai pas vers l’univers de l’autre.',
+      },
+      {
+        q: 'Pourquoi le Taureau s’inquiète-t-il avec le Gémeaux ?',
+        a: 'Parce que la sociabilité papillonnante du Gémeaux heurte de plein fouet le besoin de sécurité et l’instinct possessif du Taureau. Voir son partenaire séduire, butiner les contacts et chérir sa liberté active toutes les alarmes du Taureau, qui associe l’amour à l’exclusivité et à la constance. Le malentendu est réel : le Gémeaux est léger par nature, pas infidèle. Le Taureau doit apprendre à distinguer les deux.',
+      },
+      {
+        q: 'Comment ce couple évite-t-il l’ennui et l’étouffement ?',
+        a: 'En trouvant un point d’équilibre entre leurs deux besoins vitaux. Le Taureau doit accepter que le Gémeaux ait besoin d’air — sorties, amis, variété — sans y voir une menace ; le Gémeaux doit accepter quelques ancrages fixes qui rassurent le Taureau. C’est un dosage permanent : trop de routine et le Gémeaux suffoque, trop de liberté et le Taureau s’angoisse. Le couple vit dans cette négociation continue.',
+      },
+    ],
+  },
+  {
+    slug: 'gemeaux-lion',
+    signA: 'Gémeaux',
+    signB: 'Lion',
+    score: 4,
+    titre: 'L’esprit et la scène, duo brillant',
+    dynamique:
+      'Gémeaux et Lion forment un couple lumineux et sociable. Le sextile Air-Feu fait circuler une énergie de jeu, de séduction et de spectacle : le Lion brille sur scène, le Gémeaux fait l’esprit dans la salle. Le Lion adore l’esprit vif du Gémeaux, qui le divertit et le met en valeur ; le Gémeaux est fasciné par la chaleur et le charisme du Lion, qui donnent du poids à sa légèreté. Ensemble, ils forment un duo brillant que l’on remarque, plein d’humour et de mouvement. Le Lion apporte la constance et la générosité, le Gémeaux la fraîcheur et la surprise. Une seule ombre : le Lion a besoin d’une admiration exclusive que le Gémeaux, dispersé et taquin, ne donne pas toujours de façon assez appuyée.',
+    forces:
+      'Une complicité sociale éclatante, un humour partagé, une stimulation mutuelle constante, et une complémentarité de tempéraments : la constance chaleureuse du Lion ancre la versatilité du Gémeaux, qui en retour empêche le Lion de se prendre trop au sérieux.',
+    defis:
+      'Le besoin d’admiration du Lion se heurte à la légèreté taquine du Gémeaux, qui blague au lieu de flatter. Le Lion peut se vexer de ne pas être assez adoré ; le Gémeaux peut trouver le Lion susceptible et gourmand en compliments. La profondeur émotionnelle n’est le fort d’aucun des deux.',
+    conseil:
+      'Gémeaux : nourrissez l’ego de votre Lion par des marques d’admiration sincères — c’est sa faim vitale, et cela ne coûte que quelques mots que vous maniez si bien. Lion : ne prenez pas les taquineries du Gémeaux pour un manque de respect, c’est sa façon d’aimer. Riez ensemble plutôt que de compter les points.',
+    faq: [
+      {
+        q: 'Gémeaux et Lion : une bonne compatibilité ?',
+        a: 'Oui, très bonne. Le sextile Air-Feu crée un couple sociable, drôle et stimulant, où l’esprit du Gémeaux rencontre le rayonnement du Lion. La relation est vivante et brillante en société. Le seul ajustement porte sur l’ego du Lion : il a besoin d’une admiration régulière que le Gémeaux, taquin et dispersé, doit apprendre à exprimer plus clairement pour que le Lion se sente pleinement aimé.',
+      },
+      {
+        q: 'Pourquoi le Lion se vexe-t-il parfois avec le Gémeaux ?',
+        a: 'Parce que le Gémeaux exprime son affection par la taquinerie et l’humour, quand le Lion l’attend sous forme d’admiration appuyée. Une blague affectueuse du Gémeaux peut être reçue par le Lion comme une moquerie qui écorne sa fierté. Le malentendu est réel : le Gémeaux ne se moque pas, il joue. Le Lion doit apprendre à lire ce jeu comme une preuve de complicité, pas comme un manque d’égards.',
+      },
+      {
+        q: 'Ce couple a-t-il de la profondeur émotionnelle ?',
+        a: 'C’est son chantier. Ni le Gémeaux cérébral ni le Lion tourné vers l’image ne plongent spontanément dans l’intimité émotionnelle profonde. Le couple brille en surface — humour, sorties, complicité — mais peut négliger les vraies conversations du cœur. Les partenaires qui construisent du durable s’imposent des moments de sincérité désarmée, où le Lion baisse la garde et le Gémeaux arrête de plaisanter.',
+      },
+    ],
+  },
+  {
+    slug: 'gemeaux-vierge',
+    signA: 'Gémeaux',
+    signB: 'Vierge',
+    score: 3,
+    titre: 'Deux enfants de Mercure, même planète, mondes opposés',
+    dynamique:
+      'Gémeaux et Vierge partagent la même planète maîtresse, Mercure — l’intelligence, le langage, l’analyse — mais l’expriment de façons radicalement opposées. Le Gémeaux est le Mercure aérien : dispersé, curieux, papillonnant d’une idée à l’autre ; la Vierge est le Mercure terrien : concentré, méthodique, perfectionniste. Ils se reconnaissent d’abord sur le terrain de l’esprit — conversation vive, humour intelligent, curiosité partagée — puis découvrent qu’ils ne rangent pas le monde de la même manière. Le Gémeaux vit dans le mouvement et le désordre créatif, la Vierge dans l’ordre et la maîtrise. L’un trouve l’autre rigide, l’autre trouve l’un brouillon. Leur lien mental est réel, mais leur rapport au concret les sépare.',
+    forces:
+      'Une entente intellectuelle immédiate — mêmes armes mentales, même goût des mots —, une complémentarité possible : la Vierge structure les idées foisonnantes du Gémeaux, le Gémeaux allège le perfectionnisme anxieux de la Vierge. Ensemble, ils forment un duo cérébral efficace.',
+    defis:
+      'Le rapport au concret et à l’ordre : le désordre joyeux du Gémeaux angoisse la Vierge méthodique, dont la critique perfectionniste blesse le Gémeaux sensible sous ses airs légers. L’un veut la liberté, l’autre la maîtrise ; l’un survole, l’autre approfondit. Le nerveux mental des deux peut s’emballer.',
+    conseil:
+      'Vierge : votre Gémeaux ne supporte ni la critique ni le contrôle — suggérez sans corriger, sa légèreté n’est pas de la négligence. Gémeaux : reconnaissez le besoin d’ordre de votre Vierge au lieu d’en rire, cet ordre est sa sécurité. Utilisez votre planète commune pour parler au lieu de vous juger.',
+    faq: [
+      {
+        q: 'Gémeaux et Vierge : leur planète commune les rapproche-t-elle ?',
+        a: 'Elle crée une vraie connexion mentale — même vivacité d’esprit, même amour du langage et des idées — mais ne suffit pas à les accorder. Gémeaux et Vierge sont deux visages de Mercure : l’un aérien et dispersé, l’autre terrien et méthodique. Ils se comprennent intellectuellement et se heurtent sur le concret. L’attrait est réel, l’harmonie demande que chacun respecte le mode de fonctionnement opposé de l’autre.',
+      },
+      {
+        q: 'Pourquoi la Vierge critique-t-elle le Gémeaux ?',
+        a: 'Parce que le fonctionnement du Gémeaux — désordre créatif, projets abandonnés en chemin, légèreté — heurte tout ce que la Vierge valorise : la rigueur, l’achèvement, la maîtrise. Sa critique part d’une intention d’aider, mais le Gémeaux, plus sensible qu’il n’y paraît, la vit comme un rejet. La Vierge doit apprendre que suggérer vaut mieux que corriger, surtout avec un partenaire dont la spontanéité est la nature même.',
+      },
+      {
+        q: 'Ce couple peut-il équilibrer liberté et ordre ?',
+        a: 'C’est tout son enjeu. Le Gémeaux a besoin d’air, de mouvement et de désordre pour respirer ; la Vierge a besoin de structure et de maîtrise pour se sentir en sécurité. Le couple fonctionne quand chacun offre à l’autre un espace pour son mode : des zones où le Gémeaux crée librement, des cadres où la Vierge organise en paix. Leur intelligence commune, bien orientée, en fait une équipe redoutable plutôt que deux critiques.',
+      },
+    ],
+  },
+  {
+    slug: 'cancer-vierge',
+    signA: 'Cancer',
+    signB: 'Vierge',
+    score: 4,
+    titre: 'Le soin sous deux formes, tendresse et dévouement',
+    dynamique:
+      'Cancer et Vierge partagent une même vocation : prendre soin. Le sextile Eau-Terre unit deux signes serviables qui expriment l’amour en se rendant utiles — le Cancer par la tendresse et le réconfort, la Vierge par l’attention concrète et les mille gestes du quotidien. Ils se reconnaissent avec soulagement : enfin quelqu’un qui remarque, qui anticipe, qui protège. Le Cancer apporte la chaleur émotionnelle qui adoucit l’anxiété de la Vierge ; la Vierge apporte la fiabilité pratique qui rassure les inquiétudes du Cancer. C’est un couple discret et dévoué, qui construit un foyer soigné où chacun se sent pris en charge. Leur risque commun : l’inquiétude, qui peut tourner en boucle entre deux anxieux.',
+    forces:
+      'Un dévouement mutuel rare — chacun veille sur l’autre sans compter —, une tendresse doublée d’efficacité, un foyer soigné et sécurisant, et une loyauté tranquille. Deux signes qui ne trahissent pas et construisent dans la durée, gestes après gestes.',
+    defis:
+      'L’anxiété partagée : deux inquiets peuvent nourrir leurs soucis en écho jusqu’à la spirale. La critique perfectionniste de la Vierge blesse la susceptibilité du Cancer ; les marées d’humeur du Cancer déroutent la Vierge, qui voudrait tout résoudre logiquement là où le Cancer veut juste être consolé.',
+    conseil:
+      'Vierge : votre Cancer ne cherche pas de solution mais une présence — écoutez au lieu de corriger. Cancer : ne prenez pas les remarques pratiques de votre Vierge pour un rejet, c’est sa façon d’aimer. Et interrompez ensemble les spirales d’inquiétude : quand l’un s’emballe, l’autre ancre.',
+    faq: [
+      {
+        q: 'Cancer et Vierge sont-ils compatibles en amour ?',
+        a: 'Oui, c’est une compatibilité douce et solide. Le sextile Eau-Terre unit deux signes qui aiment en prenant soin : le Cancer par la tendresse, la Vierge par l’attention concrète. Ils se complètent naturellement et construisent un foyer dévoué. Leur seul point de vigilance est l’anxiété commune, qui peut tourner en boucle, et la différence entre le besoin de réconfort du Cancer et le réflexe de solution de la Vierge.',
+      },
+      {
+        q: 'Pourquoi le Cancer se sent-il parfois critiqué par la Vierge ?',
+        a: 'Parce que la Vierge, face à une difficulté, analyse et suggère des améliorations — un réflexe pratique que le Cancer, hypersensible, reçoit comme un jugement sur sa personne. Quand le Cancer partage une peine, il attend de la chaleur, pas un plan d’action. La Vierge doit apprendre à consoler avant de conseiller ; sa bienveillance est réelle, mais sa forme doit s’adoucir pour atteindre le cœur du Cancer.',
+      },
+      {
+        q: 'Comment ce couple gère-t-il l’inquiétude commune ?',
+        a: 'C’est leur principal apprentissage. Le Cancer s’inquiète des émotions et des liens, la Vierge des détails et de ce qui pourrait mal tourner : réunis, ils peuvent alimenter mutuellement leurs angoisses jusqu’à la spirale. Les couples équilibrés instaurent un rôle d’ancrage tournant : quand l’un s’emballe, l’autre reste calme et rassure. Leur soin mutuel, bien orienté, devient alors un refuge au lieu d’une chambre d’écho anxieuse.',
+      },
+    ],
+  },
+  {
+    slug: 'cancer-sagittaire',
+    signA: 'Cancer',
+    signB: 'Sagittaire',
+    score: 2,
+    titre: 'Le nid et l’horizon, quinconce délicat',
+    dynamique:
+      'Cancer et Sagittaire forment un quinconce — cet angle qui n’offre aucun terrain commun naturel et demande tout à l’ajustement. Le Cancer cherche le nid, la sécurité, la proximité émotionnelle ; le Sagittaire cherche l’horizon, la liberté, l’aventure. Le Cancer est d’abord charmé par l’optimisme chaleureux du Sagittaire, qui illumine ses ciels intérieurs ; le Sagittaire est touché par la tendresse du Cancer, qui lui offre un refuge après ses voyages. Mais le quotidien confronte deux besoins presque inconciliables : le Cancer veut la présence, le Sagittaire l’évasion ; le Cancer se replie, le Sagittaire s’élance. La franchise sans tact du Sagittaire blesse la susceptibilité du Cancer, dont les marées émotionnelles pèsent sur le besoin de légèreté du Sagittaire.',
+    forces:
+      'Une complémentarité possible pour qui la travaille : le Sagittaire sort le Cancer de sa coquille et l’ouvre au monde, le Cancer offre au Sagittaire le foyer chaleureux vers lequel revenir. Leur affection mutuelle, quand elle passe les malentendus, est sincère et tendre.',
+    defis:
+      'Le fossé sécurité/liberté, au maximum : le Cancer vit les départs du Sagittaire comme des abandons, le Sagittaire vit les besoins du Cancer comme une entrave. La franchise brute du Sagittaire meurtrit le Cancer, dont les bouderies émotionnelles agacent le Sagittaire allergique à la lourdeur.',
+    conseil:
+      'Sagittaire : mesurez vos mots et vos absences, le Cancer a besoin de réassurance là où vous avez besoin d’air — un simple message pendant vos escapades change tout. Cancer : n’enfermez pas votre Sagittaire, sa liberté n’est pas un désamour ; il revient d’autant plus volontiers qu’on ne le retient pas.',
+    faq: [
+      {
+        q: 'Cancer et Sagittaire sont-ils vraiment incompatibles ?',
+        a: 'C’est l’une des combinaisons les plus délicates du zodiaque, en quinconce — un angle sans harmonie naturelle. Le besoin de nid du Cancer et le besoin d’horizon du Sagittaire s’opposent frontalement. Difficile ne veut pas dire impossible : certains couples y parviennent par un ajustement constant et une vraie tendresse. Mais c’est une relation qui demande beaucoup d’efforts conscients des deux côtés pour tenir.',
+      },
+      {
+        q: 'Pourquoi le Cancer souffre-t-il de la liberté du Sagittaire ?',
+        a: 'Parce qu’il lit les départs et l’indépendance du Sagittaire comme des abandons. Le Cancer a besoin de présence et de proximité pour se sentir aimé ; le Sagittaire a besoin d’évasion pour se sentir vivant. Quand le Sagittaire s’élance vers l’aventure, le Cancer se sent délaissé et se replie dans sa coquille, ce qui éloigne encore le Sagittaire. Le cercle vicieux ne se brise que par la réassurance active.',
+      },
+      {
+        q: 'Comment ce couple peut-il tenir malgré tout ?',
+        a: 'Par un ajustement mutuel permanent, seule voie pour un quinconce. Le Sagittaire doit apprendre à rassurer — un mot, un geste, un retour fiable — sans renoncer à sa liberté ; le Cancer doit apprendre à lâcher du lest sans se sentir abandonné. Quand chacun fait ce pas contre-nature, la complémentarité opère : le foyer du Cancer devient la base heureuse d’où le Sagittaire rayonne et vers laquelle il revient.',
+      },
+    ],
+  },
+  {
+    slug: 'lion-vierge',
+    signA: 'Lion',
+    signB: 'Vierge',
+    score: 3,
+    titre: 'Le roi et la conseillère, panache et précision',
+    dynamique:
+      'Lion et Vierge sont voisins du zodiaque et pourtant à l’opposé dans le style : le faste et la discrétion, le geste large et le détail précis. Le Lion règne, rayonne, voit grand ; la Vierge observe, ajuste, perfectionne dans l’ombre. Le Lion est d’abord séduit par l’intelligence attentive de la Vierge, qui le comprend et le sert avec finesse ; la Vierge est fascinée par la chaleur et l’assurance du Lion, qui la sortent de sa réserve. Un couple peut naître d’une belle complémentarité — le Lion sur scène, la Vierge à la régie — à condition que le Lion ne prenne pas la Vierge pour une servante et que la Vierge n’écorne pas l’ego du Lion par ses critiques. Entre le besoin de gloire et le besoin de perfection, l’équilibre est subtil.',
+    forces:
+      'Une complémentarité efficace : la Vierge structure et soutient les grandes visions du Lion, qui offre en retour à la Vierge chaleur, reconnaissance et confiance. La loyauté est forte des deux côtés, et l’admiration réciproque, quand elle s’installe, très solide.',
+    defis:
+      'La critique de la Vierge est le poison de l’ego du Lion, qui a besoin d’admiration là où la Vierge voit ce qui peut être amélioré. Le Lion, dépensier et démonstratif, peut heurter la Vierge économe et pudique. L’un veut briller, l’autre veut que tout soit juste — deux quêtes qui se contredisent.',
+    conseil:
+      'Vierge : gardez vos critiques pour l’essentiel et valorisez d’abord — un Lion nourri d’admiration vous offre tout, un Lion rabaissé se ferme définitivement. Lion : reconnaissez le travail de l’ombre de votre Vierge, elle donne sans réclamer la scène ; un merci sincère la comble plus qu’un cadeau.',
+    faq: [
+      {
+        q: 'Lion et Vierge peuvent-ils former un bon couple ?',
+        a: 'Oui, sur la base d’une complémentarité bien gérée : le panache du Lion et la précision de la Vierge peuvent former une équipe efficace, l’un sur scène, l’autre en régie. Voisins du zodiaque sans élément commun, ils diffèrent profondément de style. La réussite dépend d’un équilibre délicat : que le Lion respecte le travail discret de la Vierge et que la Vierge ménage l’ego du Lion.',
+      },
+      {
+        q: 'Pourquoi la critique de la Vierge blesse-t-elle tant le Lion ?',
+        a: 'Parce que le Lion a un besoin vital d’admiration, et que la critique — même bienveillante et constructive — touche directement son point le plus sensible : sa fierté. Là où la Vierge croit aider en pointant ce qui pourrait être mieux, le Lion entend qu’il n’est pas à la hauteur. Avec ce signe royal plus qu’avec tout autre, la Vierge doit apprendre à envelopper ses remarques d’une reconnaissance sincère.',
+      },
+      {
+        q: 'La Vierge risque-t-elle de s’effacer derrière le Lion ?',
+        a: 'C’est un risque réel. La Vierge donne volontiers dans l’ombre, sans réclamer la lumière que le Lion accapare naturellement. Le danger : qu’elle s’épuise à servir un partenaire qui prend sans remarquer, jusqu’à une lassitude silencieuse. La prévention tient à la reconnaissance : un Lion qui honore explicitement le rôle de sa Vierge, en privé comme en public, transforme le déséquilibre en partenariat où chacun trouve sa place.',
+      },
+    ],
+  },
+  {
+    slug: 'lion-capricorne',
+    signA: 'Lion',
+    signB: 'Capricorne',
+    score: 3,
+    titre: 'Deux ambitieux, la gloire et le pouvoir',
+    dynamique:
+      'Lion et Capricorne sont deux signes de pouvoir qui visent le sommet par des chemins opposés : le Lion par la gloire et le rayonnement, le Capricorne par la stratégie et l’endurance. L’attirance naît d’une reconnaissance mutuelle — chacun sent chez l’autre une puissance et une ambition à sa hauteur. Le Lion admire la solidité imperturbable du Capricorne, qui finit toujours par arriver ; le Capricorne est fasciné par le charisme du Lion, qui obtient par la présence ce que lui obtient par l’effort. En couple, ils peuvent former une dynastie redoutable — l’image et la structure, la façade et les fondations. Mais le Lion a besoin de chaleur et d’admiration démonstratives que le Capricorne, réservé et pragmatique, peine à offrir.',
+    forces:
+      'Une ambition partagée qui force le respect mutuel, une loyauté solide, et une complémentarité de pouvoir : le charisme du Lion ouvre les portes que la persévérance du Capricorne franchit. Ensemble, ils construisent un statut et un patrimoine qui durent.',
+    defis:
+      'La chaleur : le Lion vit d’admiration et de démonstrations que le Capricorne, pudique et austère, distribue au compte-gouttes. Le Lion peut se sentir mal aimé face à cette réserve ; le Capricorne peut trouver le Lion trop gourmand en reconnaissance et trop dépensier pour son goût de l’épargne.',
+    conseil:
+      'Capricorne : votre Lion a besoin de mots et de gestes chaleureux que votre pudeur retient — faites l’effort, ils comptent plus pour lui que toute la sécurité que vous bâtissez. Lion : reconnaissez que l’amour du Capricorne se prouve dans les actes et l’engagement, pas dans les grandes déclarations.',
+    faq: [
+      {
+        q: 'Lion et Capricorne : l’ambition les unit-elle ?',
+        a: 'Elle est leur meilleur terrain d’entente. Deux signes de pouvoir qui visent le sommet — le Lion par la gloire, le Capricorne par la stratégie — se reconnaissent et se respectent profondément. Ensemble, ils forment un couple ambitieux qui construit statut et patrimoine. Le fossé se creuse dans l’intimité : le Lion a besoin d’une chaleur démonstrative que le Capricorne, réservé, exprime rarement. C’est là que le couple se joue.',
+      },
+      {
+        q: 'Pourquoi le Lion se sent-il mal aimé par le Capricorne ?',
+        a: 'Parce que le Capricorne aime en silence et en actes, quand le Lion a besoin de le voir et de l’entendre. Le Capricorne sécurise l’avenir, tient ses engagements, reste fidèle — et considère cela comme une déclaration permanente. Le Lion, lui, attend des compliments, des gestes, une admiration exprimée. Sans traduction, le Lion se sent froid dans une relation pourtant solide, et le Capricorne se sent incompris malgré son dévouement réel.',
+      },
+      {
+        q: 'Ce couple peut-il bâtir sur le long terme ?',
+        a: 'Oui, et souvent avec panache. Leur ambition commune et leur loyauté en font des bâtisseurs efficaces — le Lion ouvre les portes par son charisme, le Capricorne les franchit par sa constance. Le patrimoine et le statut suivent. La longévité du couple dépend d’un seul facteur : que le Capricorne apprenne à réchauffer sa réserve et que le Lion reconnaisse la valeur des preuves d’amour discrètes. Le reste, ils le construisent naturellement.',
+      },
+    ],
+  },
+  {
+    slug: 'scorpion-sagittaire',
+    signA: 'Scorpion',
+    signB: 'Sagittaire',
+    score: 3,
+    titre: 'La profondeur et l’envol, voisins contrastés',
+    dynamique:
+      'Scorpion et Sagittaire sont voisins du zodiaque mais respirent à des altitudes opposées : les abysses et le grand ciel. Le Scorpion plonge dans l’intensité, le secret, la fusion ; le Sagittaire s’élance vers la liberté, la lumière, l’aventure. L’attirance mêle fascination et défi : le Scorpion est intrigué par cet optimisme insaisissable qui ne se laisse pas posséder, le Sagittaire par cette profondeur magnétique qui le retient. Le Scorpion apporte l’intensité qui donne du poids à la légèreté du Sagittaire ; le Sagittaire apporte l’air et l’espoir qui aèrent les profondeurs du Scorpion. Mais le besoin de contrôle et d’exclusivité du Scorpion se heurte frontalement au besoin de liberté du Sagittaire — et la franchise brute de l’un rencontre la susceptibilité secrète de l’autre.',
+    forces:
+      'Une fascination mutuelle qui interdit l’ennui, une complémentarité réelle — l’un approfondit, l’autre élargit —, et une honnêteté partagée : le Sagittaire dit tout franchement, ce qui rassure paradoxalement le Scorpion méfiant qui déteste les cachotteries.',
+    defis:
+      'Liberté contre contrôle : la jalousie possessive du Scorpion étouffe le Sagittaire, dont l’indépendance active la méfiance du Scorpion — cercle vicieux classique. La franchise sans filtre du Sagittaire heurte l’orgueil secret du Scorpion, qui n’oublie pas les blessures que l’autre a déjà oubliées.',
+    conseil:
+      'Scorpion : lâchez le contrôle, votre Sagittaire ne se retient pas, il se donne à qui ne l’enferme pas — votre confiance est la seule chaîne qui le garde. Sagittaire : mesurez votre franchise avec ce signe qui grave tout ; une vérité lancée sans tact peut laisser une cicatrice durable.',
+    faq: [
+      {
+        q: 'Scorpion et Sagittaire peuvent-ils s’accorder ?',
+        a: 'C’est une combinaison contrastée mais fascinante. Voisins du zodiaque, le Scorpion des profondeurs et le Sagittaire des grands espaces s’attirent par leur différence même. La complémentarité est réelle — l’un donne du poids, l’autre de l’air — mais le choc entre le besoin de contrôle du Scorpion et le besoin de liberté du Sagittaire est le nœud de la relation. Elle tient quand le Scorpion fait confiance et le Sagittaire fait attention.',
+      },
+      {
+        q: 'La jalousie du Scorpion pose-t-elle problème au Sagittaire ?',
+        a: 'C’est le principal point de friction. Le Sagittaire a un besoin viscéral de liberté et d’espace ; la jalousie possessive du Scorpion la vit comme une menace permanente et cherche à contrôler. Mais plus le Scorpion enferme, plus le Sagittaire s’échappe, ce qui aggrave la méfiance. Le Scorpion doit comprendre que la liberté donnée est ce qui garde le Sagittaire, quand la surveillance est ce qui le fait fuir.',
+      },
+      {
+        q: 'La franchise du Sagittaire blesse-t-elle le Scorpion ?',
+        a: 'Souvent, et durablement. Le Sagittaire dit les vérités sans emballage ni calcul, avec une bonne foi désarmante — mais le Scorpion, orgueilleux et à la mémoire longue, grave les mots qui touchent. Là où le Sagittaire aura oublié sa remarque en une heure, le Scorpion la remâchera des semaines. Le Sagittaire gagne à mesurer sa franchise avec ce partenaire ; sa sincérité, appréciée sur le fond, doit soigner la forme.',
+      },
+    ],
+  },
+  {
+    slug: 'sagittaire-capricorne',
+    signA: 'Sagittaire',
+    signB: 'Capricorne',
+    score: 3,
+    titre: 'L’explorateur et le bâtisseur, voisins opposés',
+    dynamique:
+      'Sagittaire et Capricorne sont voisins du zodiaque et incarnent deux rapports opposés à la vie : l’envol et l’enracinement, le pari et le plan. Le Sagittaire vise l’horizon, prend des risques, croit en la chance ; le Capricorne bâtit pierre à pierre, calcule, se méfie du hasard. Le Sagittaire est d’abord séduit par la solidité et l’ambition du Capricorne, qui donne un cadre à ses rêves ; le Capricorne est attiré par l’optimisme et l’audace du Sagittaire, qui allègent son sérieux. En couple, ils peuvent se compléter admirablement — la vision et la méthode, l’élan et l’endurance — ou se bloquer : le Capricorne freine ce que le Sagittaire veut lancer, le Sagittaire déstabilise ce que le Capricorne veut sécuriser. Entre prudence et audace, le dialogue est un apprentissage.',
+    forces:
+      'Une complémentarité stratégique : la vision aventureuse du Sagittaire ouvre des horizons que la méthode du Capricorne concrétise. Le Capricorne ancre le Sagittaire, le Sagittaire allège le Capricorne. Ensemble, ils peuvent réaliser de grandes choses que ni l’un ni l’autre n’oserait seul.',
+    defis:
+      'Prudence contre audace : le Capricorne vit le Sagittaire comme un risque permanent, le Sagittaire vit le Capricorne comme un frein rabat-joie. L’un veut sécuriser, l’autre veut oser. Le besoin de liberté du Sagittaire se heurte au besoin de contrôle et de structure du Capricorne.',
+    conseil:
+      'Faites de vos différences une division du travail : au Sagittaire d’ouvrir les horizons et de repérer les opportunités, au Capricorne de bâtir et de sécuriser. Capricorne : ne bridez pas tous les élans, certains paris de votre Sagittaire sont justes. Sagittaire : respectez la prudence de votre Capricorne, elle protège vos rêves.',
+    faq: [
+      {
+        q: 'Sagittaire et Capricorne sont-ils compatibles ?',
+        a: 'Ils forment un couple d’opposition constructive. Voisins du zodiaque, l’explorateur Sagittaire et le bâtisseur Capricorne s’attirent par ce qui leur manque : l’un rêve d’ancrage, l’autre d’évasion. Bien géré, ce contraste devient une complémentarité puissante — vision plus méthode. Mal géré, il tourne au bras de fer entre l’audace et la prudence. Tout dépend de leur capacité à voir la différence comme une richesse, pas un obstacle.',
+      },
+      {
+        q: 'Le Capricorne freine-t-il trop le Sagittaire ?',
+        a: 'C’est le risque central du couple. Le Capricorne, prudent et méthodique, veut sécuriser avant d’agir, ce que le Sagittaire, impatient d’explorer, vit comme un frein permanent et décourageant. Mais cette prudence protège aussi le Sagittaire de ses paris hasardeux. L’équilibre : que le Capricorne laisse passer les élans justes et que le Sagittaire reconnaisse quand la prudence du Capricorne lui évite une chute.',
+      },
+      {
+        q: 'Que peuvent construire ensemble ces deux signes ?',
+        a: 'Beaucoup, s’ils conjuguent leurs forces au lieu de les opposer. Le Sagittaire apporte la vision, l’audace, le flair des opportunités ; le Capricorne apporte la stratégie, la discipline et l’endurance qui transforment un rêve en réalité durable. Séparément, l’un se disperse et l’autre s’enferme ; ensemble, ils peuvent accomplir des projets ambitieux — voyages, entreprise, patrimoine — que ni l’explorateur ni le bâtisseur n’aurait menés seul.',
+      },
+    ],
+  },
+  {
+    slug: 'capricorne-verseau',
+    signA: 'Capricorne',
+    signB: 'Verseau',
+    score: 3,
+    titre: 'La tradition et l’avenir, voisins de Saturne',
+    dynamique:
+      'Capricorne et Verseau sont voisins du zodiaque et partagent une maîtrise saturnienne dans la tradition astrologique — mais l’un regarde vers le passé et la structure, l’autre vers le futur et la rupture. Le Capricorne bâtit sur les fondations éprouvées, respecte les règles, gravit l’échelle ; le Verseau invente, transgresse, refuse les hiérarchies. Le Capricorne est intrigué par l’originalité brillante du Verseau, qui le sort de son conformisme ; le Verseau respecte la solidité du Capricorne, qui donne corps à ses idées. En couple, ils peuvent former une équipe fascinante — la structure au service de l’innovation — ou se heurter : le Capricorne veut la sécurité et l’engagement classique, le Verseau la liberté et les fonctionnements atypiques. Deux réserves émotionnelles se font aussi face, chacun peinant à réchauffer l’autre.',
+    forces:
+      'Un respect intellectuel mutuel, une complémentarité rare — la méthode du Capricorne concrétise les visions d’avant-garde du Verseau —, et une loyauté sérieuse des deux côtés. Ni l’un ni l’autre ne joue avec les sentiments : quand ils s’engagent, c’est solidement.',
+    defis:
+      'Tradition contre rupture : le Capricorne veut construire selon les règles, le Verseau veut les réinventer. L’engagement classique rassure l’un et effraie l’autre. Et deux réserves émotionnelles réunies produisent une relation d’estime où la chaleur et l’expression des sentiments peuvent cruellement manquer.',
+    conseil:
+      'Capricorne : lâchez du lest sur les conventions, votre Verseau a besoin d’inventer sa propre forme d’engagement — atypique ne veut pas dire moins solide. Verseau : rassurez votre Capricorne sur la durabilité du lien, sa sécurité affective passe par des repères stables. Et forcez-vous tous deux à la tendresse explicite.',
+    faq: [
+      {
+        q: 'Capricorne et Verseau peuvent-ils s’entendre ?',
+        a: 'Oui, sur la base d’un respect intellectuel mutuel et d’une complémentarité originale. Voisins du zodiaque, liés par Saturne dans la tradition, ils regardent pourtant dans des directions opposées : le Capricorne vers la structure éprouvée, le Verseau vers l’innovation. Bien conjugués, la méthode de l’un sert la vision de l’autre. Le défi tient à l’engagement — classique pour le Capricorne, réinventé pour le Verseau — et à la réserve émotionnelle commune.',
+      },
+      {
+        q: 'L’engagement est-il un problème pour ce couple ?',
+        a: 'C’est un terrain de négociation clé. Le Capricorne aspire à un engagement classique, structuré et sécurisant ; le Verseau fuit les formes conventionnelles et veut inventer ses propres règles. Le malentendu : le Capricorne peut prendre l’originalité du Verseau pour un manque de sérieux, alors que la loyauté du Verseau est réelle, simplement exprimée autrement. Le couple tient quand il construit un engagement sur mesure, solide mais non conformiste.',
+      },
+      {
+        q: 'Ce couple manque-t-il de chaleur ?',
+        a: 'C’est son risque principal. Le Capricorne est pudique par sérieux, le Verseau distant par principe d’indépendance : réunis, ils peuvent former une relation d’estime et de complicité intellectuelle où la tendresse et l’expression des sentiments s’atrophient. Aucun des deux ne fait spontanément le premier geste chaleureux. Les couples qui s’épanouissent instaurent délibérément des rituels d’affection, contre leur double réserve, pour que l’estime devienne un amour incarné.',
+      },
+    ],
+  },
+  {
+    slug: 'verseau-poissons',
+    signA: 'Verseau',
+    signB: 'Poissons',
+    score: 3,
+    titre: 'L’idéaliste et le mystique, les derniers du zodiaque',
+    dynamique:
+      'Verseau et Poissons ferment le zodiaque, voisins des confins où l’individu se dissout dans le grand tout — mais l’un par l’esprit, l’autre par le cœur. Le Verseau rêve d’un monde meilleur avec sa tête, ses idées, ses causes ; les Poissons rêvent le monde avec leur âme, leur compassion, leur imaginaire. Les deux sont des idéalistes profondément humains, tournés vers plus grand qu’eux — un terrain de rencontre rare et touchant. Le Verseau est intrigué par la profondeur émotionnelle et intuitive des Poissons, qui atteint ce que sa raison ne saisit pas ; les Poissons sont fascinés par la vision et la liberté du Verseau. Mais le détachement cérébral de l’un peine à combler le besoin de fusion émotionnelle de l’autre : le Verseau raisonne quand les Poissons ressentent.',
+    forces:
+      'Un idéalisme partagé, une ouverture et une tolérance mutuelles rares, une créativité commune tournée vers plus grand qu’eux, et une absence totale de mesquinerie. Deux signes qui aiment l’humanité et se retrouvent dans cet élan désintéressé.',
+    defis:
+      'Tête contre cœur : le Verseau intellectualise les émotions que les Poissons vivent à fleur de peau, et son détachement peut laisser les Poissons affamés de fusion et de tendresse. Deux signes peu ancrés dans le concret, aucun ne gère solidement le quotidien — la vie matérielle peut dériver.',
+    conseil:
+      'Verseau : votre Poissons a besoin de fusion émotionnelle et de présence sensible, pas seulement de complicité d’idées — descendez de la tête au cœur. Poissons : n’attendez pas de votre Verseau la démonstration qu’il ne sait pas donner, apprenez à lire sa loyauté discrète. Et ancrez ensemble le concret, votre angle mort commun.',
+    faq: [
+      {
+        q: 'Verseau et Poissons sont-ils compatibles ?',
+        a: 'Ils partagent un bel idéalisme et une ouverture rare, ce qui crée une connexion sincère et tolérante. Voisins des confins du zodiaque, tous deux tournés vers plus grand qu’eux, ils se rejoignent dans l’élan vers l’humanité. Le défi est le registre : le Verseau vit dans les idées, les Poissons dans les émotions. Le couple tient quand le Verseau apprend la tendresse sensible et les Poissons acceptent la loyauté discrète du Verseau.',
+      },
+      {
+        q: 'Le détachement du Verseau blesse-t-il les Poissons ?',
+        a: 'C’est le point sensible du couple. Les Poissons ont besoin de fusion, de tendresse démonstrative et de présence émotionnelle ; le Verseau exprime son amour par la complicité intellectuelle et la loyauté, rarement par les gestes fusionnels. Les Poissons peuvent alors se sentir seuls dans une relation pourtant sincère. Le Verseau doit faire l’effort conscient de descendre de la tête au cœur pour combler la soif d’intimité émotionnelle de son partenaire.',
+      },
+      {
+        q: 'Qui gère le concret dans ce couple d’idéalistes ?',
+        a: 'C’est leur angle mort commun. Ni le Verseau, tourné vers les idées et le futur, ni les Poissons, tournés vers le rêve et l’émotion, ne sont naturellement doués pour l’intendance — factures, décisions pratiques, organisation. La vie matérielle peut dériver faute de pilote. Les couples qui durent en prennent conscience tôt et s’organisent : partage explicite des tâches, automatisation, ou délégation, pour que leur bel idéalisme ne se fracasse pas sur le réel.',
+      },
+    ],
+  },
 ];
