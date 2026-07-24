@@ -1,4 +1,5 @@
 import type { MetadataRoute } from 'next'
+import { COMPATIBILITY_PAIRS, validatePairRecord } from '@/lib/compatibilitePairs'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://www.voyantlove.fr'
@@ -124,6 +125,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: now,
       changeFrequency: 'yearly' as const,
       priority: 0.3,
+    })),
+    // Programmatic pages — generated from the data layer, gated on validation,
+    // so the sitemap can never drift from what actually builds.
+    {
+      url: `${baseUrl}/compatibilite-amoureuse`,
+      lastModified: now,
+      changeFrequency: 'weekly' as const,
+      priority: 0.9,
+    },
+    ...COMPATIBILITY_PAIRS.filter((p) => validatePairRecord(p).length === 0).map((p) => ({
+      url: `${baseUrl}/compatibilite-amoureuse/${p.slug}`,
+      lastModified: now,
+      changeFrequency: 'weekly' as const,
+      priority: 0.7,
     })),
   ]
 }

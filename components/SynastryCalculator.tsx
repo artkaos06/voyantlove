@@ -3,6 +3,7 @@
 import { useState, FormEvent } from 'react';
 import Link from 'next/link';
 import { zodiacSign, elementCompatibility, type ZodiacSign, type CompatibilityRead } from '@/lib/zodiac';
+import { pairSlug, findPair } from '@/lib/compatibilitePairs';
 
 interface Result {
   signA: ZodiacSign;
@@ -99,6 +100,14 @@ export default function SynastryCalculator() {
           </div>
           <div className="font-bold text-lg text-indigo-800 mb-2">{result.read.headline}</div>
           <p className="text-gray-700 text-sm">{result.read.desc}</p>
+          {findPair(pairSlug(result.signA.name, result.signB.name)) && (
+            <Link
+              href={`/compatibilite-amoureuse/${pairSlug(result.signA.name, result.signB.name)}`}
+              className="inline-block mt-4 bg-indigo-700 hover:bg-indigo-800 text-white text-sm font-semibold px-5 py-2.5 rounded-lg transition"
+            >
+              Lire l&rsquo;analyse complète {result.signA.name} et {result.signB.name} →
+            </Link>
+          )}
         </div>
       )}
     </div>
