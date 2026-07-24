@@ -526,4 +526,410 @@ export const COMPATIBILITY_PAIRS: PairRecord[] = [
       },
     ],
   },
+  {
+    slug: 'cancer-scorpion',
+    signA: 'Cancer',
+    signB: 'Scorpion',
+    score: 5,
+    titre: 'L’intensité émotionnelle absolue',
+    dynamique:
+      'Cancer et Scorpion vivent l’amour au même niveau de profondeur — celui où la plupart des autres signes ne descendent jamais. Deux signes d’Eau en trigone : la connexion est instinctive, presque animale. Le Cancer offre la tendresse enveloppante et la loyauté du foyer ; le Scorpion offre la passion totale et une protection farouche de ce qu’il aime. Chacun sent que l’autre ne joue pas : ici, on aime entièrement ou pas du tout. Le couple se construit vite, dans une intimité fusionnelle que l’extérieur perçoit comme un clan impénétrable.',
+    forces:
+      'Une fidélité viscérale des deux côtés, une intuition mutuelle qui devine les non-dits, une sensualité profonde et un même instinct de protection du couple face au monde. Les épreuves extérieures les soudent au lieu de les séparer.',
+    defis:
+      'Deux émotifs rancuniers : les blessures se gravent et ressortent des années plus tard. Les crises croisées — bouderie lunaire du Cancer contre silence vengeur du Scorpion — peuvent durer des semaines. La possessivité mutuelle frôle parfois l’asphyxie.',
+    conseil:
+      'Instituez le pardon explicite : dire « c’est réglé » et le penser vraiment. Votre mémoire émotionnelle est une force pour l’amour, un poison pour les comptes — choisissez ce que vous archivez.',
+    faq: [
+      {
+        q: 'Cancer et Scorpion : est-ce l’une des meilleures compatibilités ?',
+        a: 'Oui, le trigone d’Eau entre Cancer et Scorpion est régulièrement cité parmi les unions les plus profondes du zodiaque. Les deux recherchent la même chose : un amour total, exclusif et durable. La connexion émotionnelle est immédiate et le couple résiste remarquablement aux épreuves. Sa seule zone rouge : la gestion des rancunes accumulées.',
+      },
+      {
+        q: 'Qui aime le plus fort entre le Cancer et le Scorpion ?',
+        a: 'Les deux aiment intensément mais différemment : le Cancer aime en enveloppant — soins, présence, rituels tendres — quand le Scorpion aime en fusionnant — passion, exclusivité, profondeur. Aucun ne domine affectivement l’autre, ce qui est rare pour le Scorpion. C’est souvent la première relation où chacun se sent aimé à sa juste mesure.',
+      },
+      {
+        q: 'Quel est le principal piège de ce couple fusionnel ?',
+        a: 'L’isolement à deux. Le clan Cancer-Scorpion peut se couper du monde — amis, familles, projets individuels s’étiolent — jusqu’à ce que le couple devienne l’unique horizon de chacun. Cette dépendance mutuelle fragilise paradoxalement le lien : la moindre crise devient existentielle. Garder des ancrages extérieurs est leur meilleure assurance longévité.',
+      },
+    ],
+  },
+  {
+    slug: 'belier-scorpion',
+    signA: 'Bélier',
+    signB: 'Scorpion',
+    score: 3,
+    titre: 'Les deux enfants de Mars, passion et combat',
+    dynamique:
+      'Bélier et Scorpion partagent le même maître ancestral : Mars, planète du désir et du combat. Leur rencontre est un choc de puissances — attraction physique immédiate, tension électrique permanente. Le Bélier attaque de front, le Scorpion enveloppe et attend son heure : deux stratégies de conquête opposées pour une même intensité. Ce couple vit fort, aime fort, se dispute fort. Rien n’y est tiède, et c’est précisément ce qui les accroche l’un à l’autre : chacun a enfin trouvé un adversaire — et un amant — à sa hauteur.',
+    forces:
+      'Une alchimie physique explosive, un courage partagé face à l’adversité, une franchise brutale mais saine côté Bélier qui rassure le Scorpion méfiant, et une loyauté de guerriers : on peut se battre entre soi, jamais laisser l’autre se faire attaquer.',
+    defis:
+      'La transparence impulsive du Bélier heurte la stratégie secrète du Scorpion, qui teste au lieu de demander. Le Bélier oublie la dispute en une heure, le Scorpion la grave à vie : ce décalage de mémoire émotionnelle crée des malentendus profonds.',
+    conseil:
+      'Bélier : prenez au sérieux les blessures que vous infligez sans y penser — le Scorpion n’oublie rien. Scorpion : dites les choses en direct, votre Bélier ne décode ni les tests ni les sous-entendus.',
+    faq: [
+      {
+        q: 'Pourquoi l’attirance entre Bélier et Scorpion est-elle si forte ?',
+        a: 'Ils partagent la même planète maîtresse traditionnelle, Mars — celle du désir, de l’instinct et du combat. Cette parenté martienne crée une reconnaissance immédiate : même intensité, même courage, même refus de la tiédeur. L’attraction physique est parmi les plus fortes du zodiaque, souvent décrite comme magnétique dès la première rencontre.',
+      },
+      {
+        q: 'Ce couple passionnel peut-il durer ?',
+        a: 'Oui, mais à une condition non négociable : que la passion ne se transforme pas en guerre d’usure. Les couples Bélier-Scorpion durables ont appris à canaliser leur intensité vers des combats communs — projets, sport, ambitions — plutôt que l’un contre l’autre. Sans cet exutoire, la relation brûle vite et fort, puis explose.',
+      },
+      {
+        q: 'Bélier-Scorpion : qui gagne les conflits ?',
+        a: 'Personne, et c’est le problème. Le Bélier gagne l’affrontement immédiat par la force frontale ; le Scorpion gagne la guerre longue par la stratégie et la mémoire. Résultat : des cycles de représailles où chacun croit répondre à l’autre. La sortie n’est pas la victoire mais le désarmement mutuel — le premier qui dépose les armes sauve le couple.',
+      },
+    ],
+  },
+  {
+    slug: 'gemeaux-scorpion',
+    signA: 'Gémeaux',
+    signB: 'Scorpion',
+    score: 2,
+    titre: 'La légèreté face à l’abîme, le duo improbable',
+    dynamique:
+      'Gémeaux et Scorpion forment l’un des couples les plus déroutants du zodiaque : l’Air le plus léger rencontre l’Eau la plus profonde. Le Scorpion est fasciné par cette insaisissabilité qui échappe à son radar habituel ; le Gémeaux est intrigué par cette intensité qu’il ne sait pas produire. La séduction est un jeu d’échecs délicieux — mais la vie commune confronte deux fonctionnements presque incompatibles : le Gémeaux vit en surface et en mouvement, le Scorpion vit en profondeur et en fusion. Chacun demande à l’autre exactement ce qu’il ne sait pas donner.',
+    forces:
+      'Une fascination mutuelle durable — on ne s’ennuie jamais —, une complémentarité intellectuelle réelle : le mental agile du Gémeaux et la perspicacité psychologique du Scorpion forment un duo redoutable face au monde extérieur.',
+    defis:
+      'Le Scorpion exige une fusion et une transparence que le Gémeaux vit comme un interrogatoire permanent ; la sociabilité papillonnante du Gémeaux déclenche la jalousie du Scorpion. La confiance, vitale pour l’un, optionnelle pour l’autre, devient le champ de bataille central.',
+    conseil:
+      'Ce couple ne tient que par contrat clair : le Scorpion renonce à sonder et contrôler, le Gémeaux offre volontairement la transparence qu’on ne lui arrache pas. L’un et l’autre doivent y gagner une version d’eux-mêmes plus mature.',
+    faq: [
+      {
+        q: 'Gémeaux et Scorpion sont-ils vraiment incompatibles ?',
+        a: 'C’est l’une des combinaisons les plus difficiles du zodiaque, mais « difficile » ne signifie pas impossible. L’aspect quinconce entre eux n’offre aucun terrain commun naturel : tout doit se construire consciemment. Les couples qui réussissent sont généralement matures, souvent après des échecs qui ont assoupli le contrôle du Scorpion et ancré le Gémeaux.',
+      },
+      {
+        q: 'Pourquoi le Scorpion est-il attiré par le Gémeaux ?',
+        a: 'Parce que le Gémeaux est la seule proie que son radar ne fixe pas. Le Scorpion lit les gens en profondeur — mais le Gémeaux change avant d’être cerné, et cette insaisissabilité rend le Scorpion obsessionnel. S’y ajoute la légèreté : le Gémeaux fait rire ce signe grave, et ce souffle d’air dans ses profondeurs est une drogue douce.',
+      },
+      {
+        q: 'Sur quoi ce couple se brise-t-il le plus souvent ?',
+        a: 'Sur la jalousie et le sentiment d’être incompris. Le Scorpion finit par vivre la légèreté sociale du Gémeaux comme une trahison permanente ; le Gémeaux finit par vivre l’intensité du Scorpion comme une prison émotionnelle. Chacun part convaincu que l’autre était incapable d’aimer — alors qu’ils aimaient simplement dans deux langues étrangères.',
+      },
+    ],
+  },
+  {
+    slug: 'lion-sagittaire',
+    signA: 'Lion',
+    signB: 'Sagittaire',
+    score: 5,
+    titre: 'La fête permanente des signes de Feu',
+    dynamique:
+      'Lion et Sagittaire forment le couple le plus solaire du zodiaque. Deux signes de Feu en trigone : générosité, optimisme et goût du grand spectacle de la vie. Le Lion apporte le panache, la constance et l’art de célébrer ; le Sagittaire apporte l’aventure, la philosophie et un enthousiasme que rien ne décourage. Leur vie commune ressemble à un voyage festif — projets, fêtes, départs impromptus — portée par une admiration mutuelle sincère. Le Sagittaire est l’un des rares signes dont la franchise ne blesse pas l’orgueil du Lion : sa bonne foi désarme.',
+    forces:
+      'Un optimisme partagé qui traverse les crises, une générosité mutuelle sans calcul, une vie sociale rayonnante et une passion physique joyeuse. Aucun des deux ne boude : les conflits éclatent et se règlent dans la journée.',
+    defis:
+      'Le Sagittaire a besoin d’une liberté que le Lion, plus possessif qu’il ne l’admet, peut vivre comme un manque d’égards. Les dépenses fastueuses des deux mettent le budget en danger. La franchise brute du Sagittaire égratigne parfois la fierté léonine.',
+    conseil:
+      'Lion : n’exigez pas la présence, inspirez-la — votre Sagittaire revient toujours vers ce qu’il admire librement. Sagittaire : offrez les égards publics dont votre Lion a besoin, ils ne coûtent rien et valent tout.',
+    faq: [
+      {
+        q: 'Lion et Sagittaire : le couple le plus heureux du zodiaque ?',
+        a: 'C’est l’un des plus régulièrement décrits ainsi. Le trigone de Feu aligne leur énergie et leur vision positive de la vie ; ni jeux de pouvoir ni rancunes durables. Là où Bélier-Lion rivalisent parfois, Lion-Sagittaire coopèrent naturellement : le Sagittaire ne conteste pas le trône du Lion, il l’entraîne simplement en voyage hors du royaume.',
+      },
+      {
+        q: 'La liberté du Sagittaire menace-t-elle le Lion ?',
+        a: 'Seulement si le Lion la confond avec du désamour. Le Sagittaire a besoin d’explorer — seul parfois — mais sa loyauté de cœur est réelle : il revient toujours, enrichi et enthousiaste. Les Lions épanouis dans ce couple ont compris que cette liberté n’enlève rien à leur règne ; ceux qui l’entravent transforment un compagnon solaire en fugitif.',
+      },
+      {
+        q: 'Quel projet de vie pour un couple Lion-Sagittaire ?',
+        a: 'Un projet à leur démesure : grands voyages, entreprise commune, maison ouverte où l’on reçoit beaucoup. Ce couple a besoin d’un horizon ambitieux pour canaliser son énergie — la routine modeste l’éteint. Les enfants y trouvent des parents enthousiastes et inspirants, à condition que le calendrier des aventures leur fasse une place.',
+      },
+    ],
+  },
+  {
+    slug: 'lion-balance',
+    signA: 'Lion',
+    signB: 'Balance',
+    score: 4,
+    titre: 'Le couple glamour, soleil et élégance',
+    dynamique:
+      'Lion et Balance forment le couple le plus esthétique du zodiaque. Le sextile Feu-Air fait circuler une énergie de séduction permanente : le Lion rayonne, la Balance sublime. Elle est l’écrin dont ce roi rêvait — élégante, sociable, flatteuse avec sincérité ; il est la force tranquille qui tranche enfin les hésitations de ce signe d’air. Ensemble ils forment un couple social par excellence : reçu partout, admiré, photogénique. Derrière la vitrine, une vraie tendresse : la Balance sait aimer l’ego du Lion sans servilité, le Lion sait protéger sans dominer.',
+    forces:
+      'Un art de vivre partagé — beauté, sorties, raffinement —, une complémentarité décisionnelle : le Lion tranche ce que la Balance pèse. La diplomatie de la Balance désamorce les colères léonines mieux que quiconque.',
+    defis:
+      'Deux dépensiers pour qui l’image compte : le paraître peut ruiner le couple et masquer les vrais sujets. La Balance, conflictophobe, laisse le Lion décider de tout puis accumule une rancune polie qui explose tard et froidement.',
+    conseil:
+      'Balance : exprimez vos désaccords à chaud, votre Lion préfère mille fois un débat franc à une froideur différée. Lion : sollicitez l’avis de votre Balance avant de trancher — être consultée est sa façon d’être aimée.',
+    faq: [
+      {
+        q: 'Lion et Balance : pourquoi ce couple séduit-il autant ?',
+        a: 'Parce qu’il incarne le glamour astrologique : le signe du rayonnement uni au signe de l’harmonie, tous deux gouvernés par des astres de l’amour et de l’éclat — le Soleil et Vénus. Le sextile entre eux rend la relation fluide : admiration réciproque, vie sociale brillante, esthétique commune. C’est le couple que l’entourage cite en exemple.',
+      },
+      {
+        q: 'La Balance est-elle trop soumise face au Lion ?',
+        a: 'C’est le risque principal, mais un malentendu : la Balance ne cède pas par faiblesse, elle cède pour préserver l’harmonie — son bien le plus précieux. Le danger est l’accumulation : des années de concessions non dites peuvent finir en départ que le Lion, sûr de son couple, n’a pas vu venir. La Balance doit apprendre à négocier en continu.',
+      },
+      {
+        q: 'Comment ce couple gère-t-il l’argent ?',
+        a: 'Mal, avec panache. Le Lion dépense pour briller et offrir, la Balance pour la beauté et l’élégance : aucun des deux ne freine l’autre. Les couples Lion-Balance stables ont presque toujours un garde-fou externe — budget automatisé, épargne prélevée à la source — qui protège le train de vie des tentations conjointes.',
+      },
+    ],
+  },
+  {
+    slug: 'taureau-vierge',
+    signA: 'Taureau',
+    signB: 'Vierge',
+    score: 5,
+    titre: 'L’harmonie tranquille des signes de Terre',
+    dynamique:
+      'Taureau et Vierge se reconnaissent au premier regard : même rapport concret au monde, même méfiance envers les grandes déclarations, même amour des choses bien faites. Le trigone de Terre installe une relation sans vertige mais sans mauvaise surprise — et c’est exactement ce que les deux cherchent. Le Taureau apaise l’anxiété perfectionniste de la Vierge par sa stabilité placide ; la Vierge apporte au Taureau une attention fine et des soins quotidiens qui sont sa vraie langue amoureuse. L’amour se prouve ici en gestes : un repas préparé, un problème réglé, une présence fiable.',
+    forces:
+      'Une confiance mutuelle rapide et durable, un quotidien fluide — deux organisés qui aiment les mêmes rythmes —, une sensualité discrète mais profonde, et une gestion patrimoniale exemplaire. Le couple qui construit sans bruit.',
+    defis:
+      'La critique : la Vierge améliore tout, y compris son Taureau, qui vit ces remarques comme une remise en cause de ce qu’il est. Le risque routine est réel — deux signes qui aiment leurs habitudes peuvent cesser de se surprendre entièrement.',
+    conseil:
+      'Vierge : dosez vos suggestions, votre Taureau change lentement mais change par amour — jamais sous pression. Taureau : acceptez qu’être améliorable n’est pas être insuffisant. Et offrez-vous de l’imprévu chaque mois.',
+    faq: [
+      {
+        q: 'Taureau et Vierge : une compatibilité sous-estimée ?',
+        a: 'Souvent, car elle manque de spectaculaire. Pas de passion tumultueuse ni de retrouvailles dramatiques : juste une entente profonde qui s’installe vite et ne se dément pas. Le trigone de Terre aligne leurs valeurs — sécurité, travail, fidélité, concret. Les astrologues la classent parmi les unions les plus durables, précisément parce qu’elle ne brûle pas ses réserves.',
+      },
+      {
+        q: 'Comment la Vierge doit-elle formuler ses critiques au Taureau ?',
+        a: 'En remplaçant le reproche par la demande : « j’aimerais que » fonctionne, « tu ne fais jamais » braque définitivement. Le Taureau est le signe le plus têtu du zodiaque face à la pression, et le plus généreux face à la douceur. Une Vierge habile obtient tout de son Taureau en valorisant ce qu’il fait déjà avant de suggérer la suite.',
+      },
+      {
+        q: 'Ce couple sait-il encore se séduire après des années ?',
+        a: 'C’est son chantier permanent. La sécurité mutuelle est si confortable que la séduction semble superflue — jusqu’au jour où l’un des deux réalise qu’il est devenu un colocataire aimant. La parade est dans leur nature même : le corps. Cuisine, massages, week-ends sensoriels : ce couple se reconquiert par les sens, pas par les mots.',
+      },
+    ],
+  },
+  {
+    slug: 'vierge-capricorne',
+    signA: 'Vierge',
+    signB: 'Capricorne',
+    score: 5,
+    titre: 'L’alliance des perfectionnistes',
+    dynamique:
+      'Vierge et Capricorne forment le couple le plus fiable du zodiaque. Deux signes de Terre en trigone, deux exigeants qui se reconnaissent enfin : elle, l’analyste du détail ; lui, le stratège du long terme. Leur amour naît souvent de l’estime — admiration pour le sérieux, la compétence, l’éthique de l’autre — avant de devenir tendresse profonde. Ni drames ni jeux : ce couple avance, construit, se prouve son attachement par une loyauté sans faille et des projets menés à bien. Derrière deux façades réservées, une intimité étonnamment douce se déploie à l’abri des regards.',
+    forces:
+      'Un respect mutuel indéfectible, des ambitions alignées, zéro jalousie — la confiance est totale —, et une efficacité de couple redoutable : ce que Vierge-Capricorne décide se réalise. L’humour pince-sans-rire partagé est leur jardin secret.',
+    defis:
+      'Le travail dévore tout : deux bourreaux de travail peuvent se croiser des semaines sans vraie rencontre. L’expression des sentiments, pudique des deux côtés, peut s’atrophier jusqu’à ce que l’un doute d’être encore aimé — en silence, évidemment.',
+    conseil:
+      'Traitez votre couple comme votre meilleur projet : des rendez-vous non annulables, des bilans réguliers, des objectifs de tendresse. C’est contre-romantique en apparence — c’est exactement votre langage, et ça fonctionne.',
+    faq: [
+      {
+        q: 'Vierge et Capricorne : pourquoi se comprennent-ils si bien ?',
+        a: 'Parce qu’ils partagent le même système de valeurs : le sérieux, l’effort, la parole tenue. Chacun a souvent souffert d’être « trop exigeant » pour ses partenaires précédents — ensemble, l’exigence devient la norme commune et non plus un reproche. Le trigone de Terre transforme deux solitudes laborieuses en équipe imbattable.',
+      },
+      {
+        q: 'Ce couple manque-t-il de romantisme ?',
+        a: 'Il manque de romantisme démonstratif, pas d’amour. Le Capricorne dit « je t’aime » en sécurisant l’avenir, la Vierge le dit en prenant soin des détails du quotidien. Ces preuves concrètes valent des poèmes — encore faut-il les lire comme telles. Le couple gagne à ritualiser quelques gestes tendres explicites, pour les jours de doute.',
+      },
+      {
+        q: 'Quel est le principal danger pour Vierge et Capricorne ?',
+        a: 'L’assèchement par le devoir. Carrières, obligations, perfectionnisme domestique : ce couple peut transformer sa vie en liste de tâches parfaitement exécutées où l’amour devient un poste parmi d’autres. La crise arrive vers la quarantaine, quand l’un des deux demande soudain « et nous, dans tout ça ? ». Les couples avertis n’attendent pas la question.',
+      },
+    ],
+  },
+  {
+    slug: 'taureau-poissons',
+    signA: 'Taureau',
+    signB: 'Poissons',
+    score: 4,
+    titre: 'La terre ferme et l’océan, tendresse infinie',
+    dynamique:
+      'Taureau et Poissons composent l’un des duos les plus tendres du zodiaque. Le sextile Terre-Eau marie deux douceurs différentes : celle, charnelle et stable, du Taureau ; celle, rêveuse et infinie, des Poissons. Les Poissons trouvent enfin un rivage — quelqu’un qui les ancre sans les brusquer ; le Taureau découvre une dimension magique que son réalisme ignorait. Leur amour a une qualité rare : il ne s’use pas en conflits, car les Poissons contournent ce que le Taureau n’impose pas. La sensualité, terrain commun majeur, unit le toucher terrien à l’imaginaire océanique.',
+    forces:
+      'Une tendresse quotidienne exceptionnelle, une créativité nourrie — le Taureau concrétise les visions des Poissons —, très peu de rapports de force, et une sensualité complète où chacun élargit le registre de l’autre.',
+    defis:
+      'Le rapport au réel : factures, horaires, engagements flous des Poissons exaspèrent le Taureau qui aime le carré. Le Taureau possessif peut angoisser des Poissons insaisissables par nature — non par infidélité, mais par besoin de flou vital.',
+    conseil:
+      'Taureau : n’essayez pas d’endiguer l’océan, canalisez-le — des cadres souples plutôt que des murs. Poissons : honorez les quelques rituels sacrés de votre Taureau, cette fiabilité minimale achète votre liberté de rêver.',
+    faq: [
+      {
+        q: 'Taureau et Poissons : pourquoi cette tendresse si particulière ?',
+        a: 'Parce que ni l’un ni l’autre n’aime le conflit ni le rapport de force — rare dans les combinaisons du zodiaque. Le sextile Terre-Eau fait circuler une bienveillance naturelle : le Taureau protège sans dominer, les Poissons adoucissent sans manipuler. Beaucoup décrivent cette relation comme « reposante », un compliment immense après des amours agitées.',
+      },
+      {
+        q: 'Le Taureau peut-il vivre avec le flou des Poissons ?',
+        a: 'S’il distingue le flou vital du flou problématique. Les Poissons ont besoin d’imprécision — horaires souples, rêveries, projets ouverts — pour respirer ; c’est leur écologie mentale, pas de la négligence. Le Taureau doit sanctuariser l’essentiel (fidélité, finances, parole donnée) et lâcher tout le reste. Les couples heureux ont trouvé cette frontière.',
+      },
+      {
+        q: 'Qui gère le quotidien dans ce couple ?',
+        a: 'Le Taureau, massivement — et il faut que ce soit reconnu. Courses, comptes, organisation : la terre ferme porte l’intendance pendant que l’océan inspire, console et embellit. Cette répartition fonctionne tant qu’elle est nommée et remerciée ; elle explose si le Taureau se sent devenu le parent d’un enfant-poète. La gratitude est le loyer des Poissons.',
+      },
+    ],
+  },
+  {
+    slug: 'belier-cancer',
+    signA: 'Bélier',
+    signB: 'Cancer',
+    score: 3,
+    titre: 'Le guerrier et le nid, carré cardinal',
+    dynamique:
+      'Bélier et Cancer forment un carré cardinal : deux forces d’initiative qui tirent dans des directions opposées — le dehors conquérant contre le dedans protecteur. Le Bélier fonce vers le monde, le Cancer construit un refuge contre lui. L’attirance initiale est celle des contraires touchants : le Bélier est ému par cette tendresse qui l’attend, le Cancer est fasciné par ce courage qui le défend. Mais le quotidien confronte l’impatience à la susceptibilité : les brusqueries du Bélier meurtrissent la carapace du Cancer, dont les marées émotionnelles déroutent le guerrier.',
+    forces:
+      'Une complémentarité archétypale — la force et la tendresse —, une protection mutuelle réelle : le Bélier défend son Cancer contre le monde, le Cancer offre au Bélier le seul lieu où déposer les armes. Les enfants renforcent souvent ce couple.',
+    defis:
+      'Le Bélier dit tout, vite et fort ; le Cancer encaisse en silence et ressort les blessures en bouderies que le Bélier ne décode pas. Lui a besoin d’action et de sorties, elle ou lui de cocon et de rituels : le calendrier même devient un conflit.',
+    conseil:
+      'Bélier : la douceur n’est pas une perte de temps, c’est la clé de tout ce que vous voulez de votre Cancer. Cancer : dites vos blessures en mots simples et immédiats — la bouderie est illisible pour un Bélier, la franchise le désarme.',
+    faq: [
+      {
+        q: 'Bélier et Cancer peuvent-ils former un couple durable ?',
+        a: 'Oui, c’est même un carré qui vieillit bien quand il passe le cap des premières années. Les deux sont des cardinaux : ils veulent construire, agir, fonder. Une fois les codes de l’autre appris — douceur pour l’un, franchise pour l’autre — le couple combine force extérieure et richesse intérieure comme peu d’autres. Beaucoup deviennent des familles solides.',
+      },
+      {
+        q: 'Pourquoi le Cancer se sent-il brusqué par le Bélier ?',
+        a: 'Parce que le Bélier communique en mode direct : il dit ce qu’il pense à la seconde où il le pense, sans emballage. Pour le Cancer, qui pèse chaque nuance affective, cette franchise brute ressemble à de la dureté, voire du rejet. Le malentendu est total : le Bélier croit être honnête, le Cancer reçoit des coups. La traduction mutuelle s’apprend.',
+      },
+      {
+        q: 'Ce couple fonctionne-t-il mieux avec des enfants ?',
+        a: 'Souvent, oui — c’est l’axe parental en action : le Bélier incarne l’élan, le jeu, la protection extérieure ; le Cancer le soin, l’écoute, la sécurité affective. Les enfants reçoivent un équilibre complet et donnent au couple un projet qui aligne enfin ses deux énergies cardinales. Le risque : ne plus être que parents. Les rendez-vous d’amoureux restent vitaux.',
+      },
+    ],
+  },
+  {
+    slug: 'belier-capricorne',
+    signA: 'Bélier',
+    signB: 'Capricorne',
+    score: 3,
+    titre: 'Le sprint face au marathon, carré d’ambition',
+    dynamique:
+      'Bélier et Capricorne se heurtent et se respectent : carré cardinal entre le feu de l’élan et la terre de l’endurance. Les deux sont des conquérants — mais le Bélier veut la victoire aujourd’hui quand le Capricorne bâtit celle de dans dix ans. L’attirance naît de l’admiration : le Capricorne est impressionné par cette audace qui ose tout, le Bélier par cette puissance froide qui finit toujours par gagner. En couple, ils s’affûtent mutuellement — ou s’épuisent : l’impatience de l’un contre la prudence de l’autre, la spontanéité contre le plan quinquennal.',
+    forces:
+      'Une ambition partagée qui force le respect mutuel, une loyauté carrée — aucun des deux ne trahit —, et une complémentarité stratégique redoutable quand elle coopère : l’audace du Bélier ouvre les portes que la persévérance du Capricorne franchit.',
+    defis:
+      'Le rythme, encore le rythme : le Bélier vit le Capricorne comme un frein permanent, le Capricorne vit le Bélier comme un risque ambulant. L’expression affective aggrave tout — impulsive et exigeante d’un côté, différée et pudique de l’autre.',
+    conseil:
+      'Faites de vos tempos une division du travail : au Bélier les lancements, au Capricorne les consolidations. Et instituez un langage amoureux minimal commun — un rituel quotidien bref que même un Capricorne pudique et un Bélier pressé peuvent tenir.',
+    faq: [
+      {
+        q: 'Bélier et Capricorne : l’ambition suffit-elle à les unir ?',
+        a: 'Elle est leur meilleur terrain commun, mais pas suffisant seule. Ces deux cardinaux se comprennent dans l’effort et le projet ; c’est dans l’intimité que le fossé apparaît — chaleur immédiate contre réserve calculée. Les couples qui durent ont construit un espace affectif à mi-chemin : plus posé que le Bélier ne voudrait, plus expressif que le Capricorne n’oserait.',
+      },
+      {
+        q: 'Le Capricorne trouve-t-il le Bélier immature ?',
+        a: 'Au début, souvent — et il a partiellement tort. L’impulsivité du Bélier n’est pas de l’immaturité mais un mode de connaissance : il apprend en fonçant, là où le Capricorne apprend en planifiant. Les Capricornes qui respectent cette différence gagnent un éclaireur audacieux ; ceux qui la méprisent transforment leur partenaire en adolescent rebelle permanent.',
+      },
+      {
+        q: 'Comment éviter la guerre froide dans ce couple ?',
+        a: 'En interdisant le mépris, dans les deux sens. Le carré Bélier-Capricorne ne se dispute pas bruyamment longtemps : il glisse vers le mépris silencieux — « tête brûlée » contre « rabat-joie » — qui tue plus sûrement que les éclats. La règle de survie : critiquer les décisions, jamais le tempérament. Le tempérament de l’autre est précisément ce qu’on est venu chercher.',
+      },
+    ],
+  },
+  {
+    slug: 'taureau-lion',
+    signA: 'Taureau',
+    signB: 'Lion',
+    score: 3,
+    titre: 'Deux trônes pour un royaume, carré fixe',
+    dynamique:
+      'Taureau et Lion partagent le goût du beau, du confort et de la loyauté — et une inflexibilité légendaire. Carré entre deux signes fixes : quand ces deux-là s’aiment, c’est pour toujours ; quand ils s’opposent, c’est mur contre mur. Le Lion veut briller, le Taureau veut posséder : deux formes de royauté qui peuvent se compléter — il règne en façade, il ou elle gouverne l’intendance — ou s’affronter sur chaque décision. La sensualité est leur langage de réconciliation : deux épicuriens qui savent transformer une dispute en festin.',
+    forces:
+      'Une fidélité massive des deux côtés, un art de vivre partagé — table, confort, plaisirs —, une stabilité que rien n’ébranle de l’extérieur, et une admiration réciproque : le Taureau est fier de son Lion, le Lion se repose sur son Taureau.',
+    defis:
+      'L’entêtement au carré : aucun ne cède jamais le premier, et les conflits gèlent en sièges interminables. Le Lion dépense pour paraître, le Taureau épargne pour sécuriser — l’argent devient le champ de bataille récurrent.',
+    conseil:
+      'Créez le rôle d’arbitre tournant : chaque mois, l’un des deux a le droit de trancher les blocages — l’autre s’incline sans revanche. Votre fixité est votre force d’engagement ; ne la laissez pas devenir votre prison de couple.',
+    faq: [
+      {
+        q: 'Taureau et Lion : que partagent-ils vraiment ?',
+        a: 'L’essentiel : la loyauté, le goût du plaisir et l’horreur du provisoire. Ces deux signes fixes s’engagent totalement et construisent des couples remarquablement stables vus de l’extérieur. Leur carré ne porte pas sur les valeurs — largement communes — mais sur la manière : qui décide, qui dépense, qui cède. Du solide, avec des frictions de gouvernance.',
+      },
+      {
+        q: 'Pourquoi leurs disputes durent-elles si longtemps ?',
+        a: 'Parce qu’aucun mécanisme naturel de dégel n’existe entre deux fixes : le Bélier oublie, la Balance négocie, les Poissons contournent — Taureau et Lion, eux, campent. Chacun attend des excuses que l’autre attend aussi. Les couples rodés instaurent des rituels de sortie de crise : un geste convenu — un plat, une place de concert — qui dit « on arrête » sans perdre la face.',
+      },
+      {
+        q: 'L’argent est-il vraiment leur principal problème ?',
+        a: 'C’est le plus récurrent, car il cristallise leurs deux sécurités : le Taureau se sent en sécurité en accumulant, le Lion en rayonnant — et rayonner coûte cher. La solution éprouvée : trois comptes. Un commun pour la vie partagée, deux personnels sans droit de regard. Le Taureau garde sa réserve rassurante, le Lion sa liberté de panache, la paix est achetée.',
+      },
+    ],
+  },
+  {
+    slug: 'gemeaux-cancer',
+    signA: 'Gémeaux',
+    signB: 'Cancer',
+    score: 3,
+    titre: 'L’esprit et le cœur, voisins étrangers',
+    dynamique:
+      'Gémeaux et Cancer se suivent sur le zodiaque mais habitent deux mondes : celui des mots et celui des émotions. Le Gémeaux séduit le Cancer par sa légèreté qui dédramatise tout ; le Cancer touche le Gémeaux par une profondeur affective qu’aucune conversation ne remplace. Leur relation est une traduction permanente — il faut convertir les sentiments en phrases pour l’un, les phrases en sentiments pour l’autre. Quand la traduction fonctionne, le couple est étonnamment complet : intelligence et tendresse, humour et refuge. Quand elle échoue, chacun se sent étranger dans sa propre histoire.',
+    forces:
+      'Une curiosité mutuelle durable, l’humour comme langue commune — le Gémeaux fait rire ce grand sensible et c’est un cadeau royal —, et une complémentarité réelle : le Cancer donne un foyer au nomade mental, le Gémeaux ouvre les fenêtres du cocon.',
+    defis:
+      'Le Cancer a besoin de présence émotionnelle constante, le Gémeaux de stimulation et de sorties : l’un se sent délaissé, l’autre étouffé. L’humeur lunaire du Cancer déroute le Gémeaux qui la fuit dans la légèreté — pire réponse possible.',
+    conseil:
+      'Gémeaux : quinze minutes de présence totale — sans écran, sans esquive — valent mieux pour votre Cancer que trois heures distraites. Cancer : formulez vos besoins en clair, votre Gémeaux répond merveilleusement aux demandes et terriblement aux reproches muets.',
+    faq: [
+      {
+        q: 'Gémeaux et Cancer : que peut donner ce couple si différent ?',
+        a: 'Un couple complet, si chacun apprend la langue de l’autre. Le Gémeaux apporte l’air — humour, ouverture, mouvement — dans l’univers émotionnel du Cancer qui, sans cela, tourne en huis clos ; le Cancer apporte la profondeur et l’ancrage qui manquent au papillonnage mental. Leurs voisinages zodiacaux produisent souvent ces couples : différents mais étrangement complémentaires.',
+      },
+      {
+        q: 'Pourquoi le Cancer souffre-t-il de la légèreté du Gémeaux ?',
+        a: 'Parce qu’il la lit comme de l’indifférence. Quand le Cancer partage une émotion et que le Gémeaux répond par une pirouette ou change de sujet, le Cancer entend « tes sentiments m’ennuient ». En réalité, le Gémeaux est souvent démuni face à l’émotionnel pur et fuit son impuissance, pas son partenaire. Nommer ce mécanisme désamorce des années de malentendus.',
+      },
+      {
+        q: 'Ce couple peut-il durer sans s’épuiser ?',
+        a: 'Oui, avec une architecture claire : des plages de vie sociale où le Gémeaux respire sans culpabilité, des plages de cocon où le Cancer reçoit une présence pleine. Le couple meurt quand chaque besoin devient une négociation ; il prospère quand les deux régimes sont institués et respectés. Beaucoup y ajoutent un projet créatif commun — leurs talents combinés y font merveille.',
+      },
+    ],
+  },
+  {
+    slug: 'cancer-lion',
+    signA: 'Cancer',
+    signB: 'Lion',
+    score: 4,
+    titre: 'La lune et le soleil, tendresse et panache',
+    dynamique:
+      'Cancer et Lion incarnent les deux luminaires du zodiaque : la Lune et le Soleil en couple. Le Cancer offre au Lion ce que la cour du roi ne donne jamais — une tendresse vraie, sans calcul, qui aime l’homme ou la femme derrière la couronne ; le Lion offre au Cancer la protection éclatante et la loyauté d’un roc solaire. Leur complémentarité est archétypale : il rayonne dehors, l’autre veille dedans. La relation prend des allures de conte — le protecteur et le sensible — avec un vrai risque : que le Lion prenne toute la lumière et que le Cancer s’efface en coulisses.',
+    forces:
+      'Une loyauté absolue des deux côtés, des rôles naturellement harmonieux — représentation et foyer —, une générosité mutuelle : le Lion donne avec faste, le Cancer avec soin. La famille devient souvent leur royaume commun.',
+    defis:
+      'Le Lion a besoin d’un public que le Cancer, jaloux de l’intimité, supporte mal ; le Cancer a des marées d’humeur que le Lion, allergique à la plainte, écoute distraitement. Le déséquilibre lumière/ombre peut devenir rancune silencieuse.',
+    conseil:
+      'Lion : partagez la scène — valorisez publiquement votre Cancer, c’est votre plus beau cadeau de roi. Cancer : dites vos besoins avant la marée haute, votre Lion répond magnifiquement aux demandes claires et mal aux reproches noyés.',
+    faq: [
+      {
+        q: 'Cancer et Lion : les luminaires font-ils bon ménage ?',
+        a: 'Étonnamment bien. La Lune et le Soleil ne se disputent pas le même ciel : le Lion règne sur le jour social, le Cancer sur la nuit intime, et chacun est soulagé que l’autre tienne son domaine. Beaucoup de ces couples affichent une répartition assumée — l’un brille, l’autre veille — qui scandalise les modernes et les rend profondément heureux.',
+      },
+      {
+        q: 'Le Cancer ne risque-t-il pas de s’effacer derrière le Lion ?',
+        a: 'C’est le scénario d’échec classique : des années à servir le rayonnement de l’autre, puis une explosion de rancune que le Lion, sincèrement aveugle, n’a pas vue venir. La prévention tient en une pratique : la reconnaissance publique régulière. Un Lion qui honore son Cancer devant témoins transforme l’ombre en écrin — et le Cancer y fleurit au lieu de s’y faner.',
+      },
+      {
+        q: 'Quel terrain commun pour ce couple si différent ?',
+        a: 'La famille et l’hospitalité. Le Cancer rêve d’un foyer chaleureux, le Lion d’une maison dont on parle : ensemble ils créent ces maisons pleines — enfants, amis, fêtes — où le faste léonin et le soin cancérien fusionnent. Recevoir est leur art conjugal : lui met la lumière et la table, l’autre l’âme et les petits plats. Leurs tablées sont légendaires.',
+      },
+    ],
+  },
+  {
+    slug: 'vierge-scorpion',
+    signA: 'Vierge',
+    signB: 'Scorpion',
+    score: 4,
+    titre: 'L’analyste et l’enquêteur, complicité des profondeurs',
+    dynamique:
+      'Vierge et Scorpion partagent un talent rare : voir ce que les autres ne voient pas. Elle analyse, il sonde ; le sextile Terre-Eau unit deux intelligences perçantes qui se reconnaissent avec soulagement — enfin quelqu’un qui ne vit pas à la surface. Leur amour se construit dans les conversations profondes et la confiance progressive : deux méfiants qui se livrent par couches. Le Scorpion apporte l’intensité qui déride la prudence de la Vierge ; la Vierge apporte la stabilité qui apaise les tempêtes du Scorpion. Discret dehors, ce couple est d’une richesse intérieure insoupçonnée.',
+    forces:
+      'Une loyauté farouche partagée, une intimité intellectuelle et psychologique rare, l’art de se dire les vraies choses — la Vierge est l’un des rares signes dont le Scorpion accepte les critiques, car elles sont justes et sans malveillance.',
+    defis:
+      'Deux anxieux qui ruminent : les silences de l’un nourrissent les scénarios de l’autre. La Vierge critique quand elle stresse, le Scorpion pique quand il doute — les mauvaises passes peuvent devenir des spirales d’acidité mutuelle.',
+    conseil:
+      'Videz les contentieux chaque semaine : un rituel court où chacun dit une inquiétude et une gratitude. Vos deux mentaux puissants ont besoin d’un déversoir organisé — sans lui, ils fabriquent des procès imaginaires.',
+    faq: [
+      {
+        q: 'Vierge et Scorpion : pourquoi cette entente inattendue ?',
+        a: 'Parce que sous des dehors opposés — la réserve sage et l’intensité magnétique — ils fonctionnent pareil : observation aiguë, méfiance initiale, engagement total une fois la confiance donnée. Le sextile entre eux fait le reste. Beaucoup de ces couples racontent la même chose : « c’est la première personne qui me comprend sans que j’explique ».',
+      },
+      {
+        q: 'La critique de la Vierge ne blesse-t-elle pas le Scorpion ?',
+        a: 'Moins qu’on ne le croit, car elle vise juste et sans intention de nuire — deux qualités que le Scorpion, expert en détection des motifs cachés, reconnaît immédiatement. Il supporte mal les attaques d’ego, pas les vérités utiles. En retour, la Vierge est l’un des rares signes à ne pas être déstabilisé par les sondages permanents du Scorpion : elle n’a rien à cacher.',
+      },
+      {
+        q: 'Quelle est la vie intime de ce couple discret ?',
+        a: 'Beaucoup plus riche que leur façade ne le suggère. Le Scorpion libère la sensualité que la Vierge contient sous son contrôle, et la Vierge offre au Scorpion une confiance dans laquelle son intensité peut se déployer sans effrayer. La pudeur publique des deux protège un jardin secret dense — c’est le couple dont l’entourage ne sait jamais rien, par choix.',
+      },
+    ],
+  },
 ];
