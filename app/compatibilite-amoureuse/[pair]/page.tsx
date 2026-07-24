@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getAuthorSchema } from '@/lib/schema';
 import { COMPATIBILITY_PAIRS, findPair, validatePairRecord } from '@/lib/compatibilitePairs';
 import { ZODIAC_SIGNS } from '@/lib/zodiac';
+import { renderWithEntities } from '@/lib/entityBold';
 import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
@@ -86,27 +87,35 @@ export default async function PairPage({ params }: Props) {
       <div className="max-w-4xl mx-auto px-4 py-8">
         <EEATSignal colorScheme="purple" method="Analyse astrologique des signes et des éléments" />
 
+        {/* Answer capsule — extractive snippet target for "sont-ils compatibles" */}
+        {rec.answerCapsule && (
+          <section className="bg-purple-50 border-l-4 border-purple-500 rounded-r-xl p-6 md:p-8 mb-8">
+            <h2 className="text-xl font-bold text-gray-900 mb-3">{rec.signA} et {rec.signB} sont-ils compatibles en amour&nbsp;?</h2>
+            <p className="text-lg leading-relaxed text-gray-800">{renderWithEntities(rec.answerCapsule)}</p>
+          </section>
+        )}
+
         <article className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-indigo-500">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">La dynamique {rec.signA}-{rec.signB} en amour</h2>
-          <p className="text-lg leading-relaxed text-gray-700">{rec.dynamique}</p>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Comment s&apos;entend le couple {rec.signA}-{rec.signB} au quotidien&nbsp;?</h2>
+          <p className="text-lg leading-relaxed text-gray-700">{renderWithEntities(rec.dynamique)}</p>
         </article>
 
         <VoyantQuickCTA topic="sentiments" source={`compat-${rec.slug}-early`} />
 
         <div className="grid md:grid-cols-2 gap-6 mb-8">
           <section className="bg-white rounded-xl shadow-md p-6 border-l-4 border-green-500">
-            <h2 className="text-xl font-bold text-green-700 mb-3">✅ Les forces de ce couple</h2>
-            <p className="text-gray-700">{rec.forces}</p>
+            <h2 className="text-xl font-bold text-green-700 mb-3">Quels sont les points forts du couple {rec.signA} et {rec.signB}&nbsp;?</h2>
+            <p className="text-gray-700">{renderWithEntities(rec.forces)}</p>
           </section>
           <section className="bg-white rounded-xl shadow-md p-6 border-l-4 border-orange-500">
-            <h2 className="text-xl font-bold text-orange-700 mb-3">⚠️ Les défis à surmonter</h2>
-            <p className="text-gray-700">{rec.defis}</p>
+            <h2 className="text-xl font-bold text-orange-700 mb-3">Quels sont les défis entre {rec.signA} et {rec.signB}&nbsp;?</h2>
+            <p className="text-gray-700">{renderWithEntities(rec.defis)}</p>
           </section>
         </div>
 
         <section className="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-xl p-6 mb-8 border-2 border-indigo-200">
-          <h2 className="text-xl font-bold text-indigo-800 mb-3">🔮 Le conseil pour {rec.signA} et {rec.signB}</h2>
-          <p className="text-gray-700">{rec.conseil}</p>
+          <h2 className="text-xl font-bold text-indigo-800 mb-3">Quel conseil pour un couple {rec.signA}-{rec.signB}&nbsp;?</h2>
+          <p className="text-gray-700">{renderWithEntities(rec.conseil)}</p>
         </section>
 
         <section className="mb-8">
@@ -120,7 +129,7 @@ export default async function PairPage({ params }: Props) {
             {rec.faq.map((f, i) => (
               <div key={i} className={i < rec.faq.length - 1 ? 'border-b border-gray-200 pb-6' : ''}>
                 <h3 className="text-lg font-bold text-gray-900 mb-2">{f.q}</h3>
-                <p className="text-gray-700 leading-relaxed">{f.a}</p>
+                <p className="text-gray-700 leading-relaxed">{renderWithEntities(f.a)}</p>
               </div>
             ))}
           </div>

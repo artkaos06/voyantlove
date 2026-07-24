@@ -20,6 +20,8 @@ export interface PairRecord {
   /** compatibility score out of 5 — editorial, shown as hearts */
   score: number;
   titre: string;
+  /** 150-170 word answer capsule (extractive snippet target); added per Gübür framework retrofit */
+  answerCapsule?: string;
   dynamique: string;
   forces: string;
   defis: string;
@@ -68,6 +70,8 @@ export const COMPATIBILITY_PAIRS: PairRecord[] = [
     signB: 'Scorpion',
     score: 3,
     titre: 'Passion magnétique, lutte de pouvoir',
+    answerCapsule:
+      'La compatibilité amoureuse entre le Lion et le Scorpion est l’une des plus intenses du zodiaque. Ces deux signes fixes, unis par un carré, s’attirent avec une force magnétique : le Lion règne dans la lumière, le Scorpion dans l’ombre, et chacun reconnaît chez l’autre une puissance égale. La passion et la loyauté y sont exceptionnelles, mais la lutte de pouvoir permanente en fait un couple noté 3 sur 5. Le charme social du Lion heurte l’exclusivité jalouse du Scorpion, et deux orgueils inflexibles transforment la moindre dispute en bras de fer. Pour durer, ce couple doit convertir sa rivalité en alliance : transparence du Lion, expression des peurs du Scorpion. Une consultation de voyance amoureuse éclaire les blocages précis de votre relation Lion-Scorpion et le chemin vers un équilibre durable.',
     dynamique:
       'Le Lion et le Scorpion forment l’un des couples les plus intenses du zodiaque. Deux signes fixes, deux volontés de fer : le Lion règne dans la lumière, le Scorpion gouverne depuis l’ombre. L’attraction est immédiate et presque magnétique — chacun reconnaît chez l’autre une puissance égale à la sienne. Mais cette admiration mutuelle cohabite avec une lutte de pouvoir permanente : le Lion veut être adoré publiquement, le Scorpion veut posséder exclusivement. Leur histoire oscille entre fusion passionnelle et bras de fer silencieux.',
     forces:
@@ -97,6 +101,8 @@ export const COMPATIBILITY_PAIRS: PairRecord[] = [
     signB: 'Lion',
     score: 5,
     titre: 'Le couple de feu par excellence',
+    answerCapsule:
+      'La compatibilité amoureuse entre le Bélier et le Lion est l’une des plus fortes du zodiaque, notée 5 sur 5. Ces deux signes de Feu, reliés par un trigone harmonieux, partagent la même énergie, la même franchise et le même goût de l’aventure. L’attirance est immédiate et la passion physique durable, car chacun nourrit la flamme de l’autre au lieu de l’éteindre. Le Bélier apporte l’élan et l’audace, le Lion la constance et le panache : ensemble, ils forment un couple solaire et enviable. Le seul vrai défi est la gestion de deux ego puissants — la question du leadership revient sans cesse. En répartissant les territoires de décision et en célébrant les victoires de l’autre, ce couple devient indestructible. Une guidance personnalisée précise comment canaliser votre énergie commune vers une relation aussi durable qu’intense.',
     dynamique:
       'Bélier et Lion forment l’une des alliances les plus naturelles du zodiaque. Deux signes de Feu en trigone : l’énergie circule sans effort, l’admiration est réciproque et immédiate. Le Bélier apporte l’élan, l’audace, l’étincelle du premier pas ; le Lion apporte la constance du feu qui dure, la générosité et le sens de la fête. Ensemble, ils vivent vite, fort et sans détour — un couple visible, solaire, que l’entourage remarque et envie. La passion ne retombe pas facilement, car chacun stimule l’autre au lieu de l’éteindre.',
     forces:
@@ -126,6 +132,8 @@ export const COMPATIBILITY_PAIRS: PairRecord[] = [
     signB: 'Balance',
     score: 4,
     titre: 'L’axe des opposés qui s’attirent',
+    answerCapsule:
+      'La compatibilité amoureuse entre le Bélier et la Balance repose sur l’attirance des opposés : ils occupent les deux extrémités du même axe zodiacal, celui du « moi » face au « nous ». Le Bélier fonce et tranche, la Balance pèse et harmonise — chacun possède exactement ce qui manque à l’autre. Cette opposition crée une polarité magnétique et une relation notée 4 sur 5, où le Bélier apprend la nuance et la Balance l’affirmation de soi. Le principal point de friction est le rythme de décision : le Bélier déteste attendre, la Balance a besoin de peser. Les couples qui durent utilisent leurs forces en alternance au lieu de s’opposer. Une consultation révèle si votre axe Bélier-Balance penche vers la croissance mutuelle ou l’incompréhension chronique, et comment transformer cette différence en complémentarité.',
     dynamique:
       'Bélier et Balance occupent les deux extrémités du même axe zodiacal — l’opposition par excellence, celle du « moi » face au « nous ». Le Bélier fonce, tranche, affirme ; la Balance pèse, harmonise, séduit. Cette polarité crée une attraction quasi irrésistible : chacun possède exactement ce qui manque à l’autre. Le Bélier est fasciné par l’élégance et la diplomatie de la Balance ; la Balance est électrisée par la décision et le courage du Bélier. Leur relation est un apprentissage permanent de l’équilibre entre indépendance et vie à deux.',
     forces:
@@ -155,6 +163,8 @@ export const COMPATIBILITY_PAIRS: PairRecord[] = [
     signB: 'Scorpion',
     score: 4,
     titre: 'Sensualité et profondeur, l’axe du désir',
+    answerCapsule:
+      'La compatibilité amoureuse entre le Taureau et le Scorpion forme l’axe le plus sensuel du zodiaque. Ces deux signes fixes en opposition combinent la sensualité terrestre du Taureau et l’intensité émotionnelle du Scorpion, produisant une alchimie physique rare, notée 4 sur 5. Tous deux s’engagent lentement mais totalement : quand ce couple se forme, il vise le définitif, et la possessivité partagée y devient un langage d’amour commun. Le défi tient à deux entêtements légendaires — quand ils se braquent, personne ne cède — et au besoin de transformation du Scorpion qui bouscule la stabilité du Taureau. Pour durer, chacun respecte le tempo de l’autre : le Scorpion annonce ses tempêtes, le Taureau accepte qu’une crise traversée ensemble renforce le lien. Une guidance de voyance amoureuse éclaire les dynamiques profondes de votre couple Taureau-Scorpion.',
     dynamique:
       'Taureau et Scorpion se font face sur l’axe zodiacal de la possession et du désir — l’opposition la plus sensuelle du zodiaque. Le Taureau incarne la sensualité terrestre, concrète, rassurante ; le Scorpion incarne l’intensité émotionnelle, le magnétisme, la fusion. Leur rencontre produit une alchimie physique immédiate et durable, rarement égalée par d’autres combinaisons. Tous deux signes fixes, ils s’engagent lentement mais totalement : quand ce couple se forme, il vise le définitif. La possessivité, présente des deux côtés, est ici paradoxalement un langage d’amour commun.',
     forces:
@@ -184,6 +194,8 @@ export const COMPATIBILITY_PAIRS: PairRecord[] = [
     signB: 'Poissons',
     score: 5,
     titre: 'La fusion des âmes d’eau',
+    answerCapsule:
+      'La compatibilité amoureuse entre le Cancer et les Poissons est l’une des plus harmonieuses du zodiaque, notée 5 sur 5. Ces deux signes d’Eau, unis par un trigone, se comprennent sans parler et vivent l’amour comme une évidence émotionnelle. Le Cancer apporte le foyer, la tendresse protectrice et la mémoire du couple ; les Poissons apportent le rêve, la douceur et une capacité d’adaptation qui désamorce les tensions. Leur relation ressemble à une bulle tendre, un monde à deux d’une rare qualité. Le seul risque vient de leur sensibilité commune : les blessures silencieuses s’accumulent, car aucun n’ose froisser l’autre, et la fusion peut devenir étouffante. Verbaliser les besoins au lieu de les deviner et garder chacun un jardin personnel suffit à protéger ce lien précieux. Une consultation vous aide à transformer votre intuition partagée en force durable.',
     dynamique:
       'Cancer et Poissons forment le couple le plus intuitif du zodiaque. Deux signes d’Eau en trigone : ils se comprennent sans parler, se devinent à distance, vivent l’amour comme une évidence émotionnelle. Le Cancer apporte le nid, la tendresse protectrice, la mémoire du couple ; les Poissons apportent le rêve, la douceur infinie et une capacité d’adaptation qui désamorce les tensions avant qu’elles n’existent. Leur relation ressemble souvent à une bulle — un monde à deux, fait de rituels tendres, où l’extérieur n’entre qu’invité.',
     forces:
@@ -213,6 +225,8 @@ export const COMPATIBILITY_PAIRS: PairRecord[] = [
     signB: 'Cancer',
     score: 5,
     titre: 'Le foyer idéal, tendresse et sécurité',
+    answerCapsule:
+      'La compatibilité amoureuse entre le Taureau et le Cancer est l’une des plus stables du zodiaque, notée 5 sur 5. Reliés par un sextile Terre-Eau, ils partagent le même projet sans même en parler : construire un cocon. Le Taureau offre la stabilité matérielle et une présence rassurante, le Cancer la tendresse et l’art de faire d’une maison un refuge. Fidélité, foyer et famille sont leurs valeurs communes, et les sujets de conflit structurels sont rares. Le principal danger est la routine confortable qui endort le désir : deux signes attachés à leurs habitudes peuvent cesser de se surprendre. Programmer l’imprévu et rester attentif aux humeurs lunaires du Cancer entretient la flamme. Une guidance amoureuse précise comment garder votre stabilité vivante plutôt qu’endormie, pour un couple aussi passionné que sécurisant.',
     dynamique:
       'Taureau et Cancer partagent le même projet de vie sans même avoir à en parler : construire un cocon. Le sextile Terre-Eau nourrit une complicité paisible où chacun donne exactement ce que l’autre recherche — le Taureau offre la stabilité matérielle et une présence rassurante, le Cancer offre la tendresse, l’attention et l’art de faire d’une maison un refuge. C’est le couple des dîners à la maison préférés aux soirées mondaines, des projets patrimoniaux et de la famille. La passion y est douce plutôt que spectaculaire, mais d’une constance remarquable.',
     forces:
@@ -242,6 +256,8 @@ export const COMPATIBILITY_PAIRS: PairRecord[] = [
     signB: 'Sagittaire',
     score: 4,
     titre: 'L’axe du mouvement et de la liberté',
+    answerCapsule:
+      'La compatibilité amoureuse entre le Gémeaux et le Sagittaire forme l’axe le plus joyeux du zodiaque, celui de la connaissance et du mouvement. Ces deux signes mutables en opposition sont curieux et allergiques à l’enfermement : leur couple ressemble à une conversation sans fin entrecoupée de voyages, notée 4 sur 5. Le Gémeaux butine les idées, le Sagittaire leur donne une direction et un horizon. Aucun ne cherche à posséder l’autre, ce qui rend la relation étonnamment légère et libre. Le défi est le concret — factures, engagement, projets de long terme — que deux signes du mouvement repoussent volontiers. Nommer un responsable de l’intendance à tour de rôle et transformer les différences de fond en jeu suffit à ancrer ce couple. Une consultation révèle comment votre liberté partagée peut devenir un engagement durable sans perdre sa vitalité.',
     dynamique:
       'Gémeaux et Sagittaire se font face sur l’axe de la connaissance : l’information d’un côté, le sens de l’autre. Cette opposition est l’une des plus joyeuses du zodiaque — deux signes mutables, curieux, allergiques à l’ennui et à l’enfermement. Leur couple ressemble à une conversation sans fin entrecoupée de voyages : le Gémeaux butine les idées, le Sagittaire leur donne une direction et un horizon. Ni l’un ni l’autre ne cherche à posséder l’autre, ce qui rend la relation étonnamment légère là où d’autres couples s’étouffent.',
     forces:
@@ -271,6 +287,8 @@ export const COMPATIBILITY_PAIRS: PairRecord[] = [
     signB: 'Capricorne',
     score: 4,
     titre: 'L’axe du foyer et de l’ambition',
+    answerCapsule:
+      'La compatibilité amoureuse entre le Cancer et le Capricorne forme l’axe parental du zodiaque : le foyer face à la carrière, le dedans face au dehors. Cette opposition attire puissamment, car chacun reconnaît chez l’autre la moitié de l’équation familiale qu’il porte. Le Cancer offre la chaleur émotionnelle dont le Capricorne austère a soif ; le Capricorne offre la structure et la sécurité dont le Cancer anxieux a besoin. Couple bâtisseur noté 4 sur 5, souvent tourné vers la famille et le long terme. Le défi tient au langage affectif : le Capricorne aime en actes, le Cancer attend des mots et de la présence, et chacun peut se sentir mal aimé. Apprendre la langue de l’autre et sanctuariser du temps de couple hors travail change tout. Une guidance amoureuse éclaire comment conjuguer vos deux rôles complémentaires sans vous y réduire.',
     dynamique:
       'Cancer et Capricorne forment l’axe parental du zodiaque : la mère symbolique face au père symbolique, le foyer face à la carrière, le dedans face au dehors. Cette opposition attire puissamment car chacun reconnaît chez l’autre la moitié de l’équation familiale qu’il porte en lui. Le Cancer offre la chaleur émotionnelle dont le Capricorne austère a secrètement soif ; le Capricorne offre la structure et la sécurité dont le Cancer anxieux a besoin pour se poser. C’est un couple bâtisseur, souvent tourné vers la famille, le patrimoine et le long terme dès les premiers mois.',
     forces:
@@ -300,6 +318,8 @@ export const COMPATIBILITY_PAIRS: PairRecord[] = [
     signB: 'Verseau',
     score: 3,
     titre: 'Le cœur face à la tête, l’axe du rayonnement',
+    answerCapsule:
+      'La compatibilité amoureuse entre le Lion et le Verseau oppose le cœur et la tête sur l’axe du rayonnement. Le Lion rayonne pour être aimé, le Verseau se détache pour rester libre : deux signes fixes que tout oppose et qui pourtant se fascinent. Le Lion est intrigué par cet être qui ne tombe pas sous son charme, le Verseau par cette chaleur qu’il s’interdit. Relation notée 3 sur 5 : brillante et originale quand l’équilibre est trouvé, épuisante sinon. Le Lion a besoin d’adoration exclusive, le Verseau la refuse par principe. Pour durer, le Verseau offre des marques d’admiration sincères et le Lion cesse d’exiger — la liberté donnée est le seul chemin vers la loyauté du Verseau. Une consultation précise si votre paradoxe Lion-Verseau mène à un couple rayonnant ou à des malentendus affectifs répétés.',
     dynamique:
       'Lion et Verseau s’opposent sur l’axe de l’individu face au collectif : le Lion rayonne pour être aimé, le Verseau se détache pour rester libre. L’attraction est intellectuelle autant que physique — le Lion est intrigué par cet être qui ne tombe pas sous son charme comme les autres, le Verseau est fasciné par cette chaleur qu’il s’interdit. Leur relation est un paradoxe vivant : le signe le plus personnel du zodiaque aime le plus impersonnel. Quand l’équilibre est trouvé, le couple est brillant, original et socialement magnétique.',
     forces:
@@ -329,6 +349,8 @@ export const COMPATIBILITY_PAIRS: PairRecord[] = [
     signB: 'Poissons',
     score: 4,
     titre: 'Le réel et le rêve, l’axe du service',
+    answerCapsule:
+      'La compatibilité amoureuse entre la Vierge et les Poissons forme l’axe du dévouement : deux signes qui aiment en se rendant utiles, l’un par l’ordre, l’autre par l’abandon. La Vierge organise et soigne, les Poissons ressentent et pardonnent — cette opposition fonctionne comme deux mains d’un même geste, notée 4 sur 5. La Vierge donne un corps aux rêves des Poissons, les Poissons donnent une âme à la précision de la Vierge. Chacun trouve chez l’autre ce qu’il ne sait pas faire. Le défi : la Vierge critique pour aider, les Poissons l’entendent comme un rejet et fuient dans le flou. Remplacer une critique par un remerciement et offrir des repères concrets aux Poissons désamorce la spirale. Une guidance amoureuse montre comment votre complémentarité Vierge-Poissons devient une force au lieu d’un épuisement mutuel.',
     dynamique:
       'Vierge et Poissons forment l’axe du dévouement : deux signes qui aiment en se rendant utiles, l’un par l’ordre, l’autre par l’abandon. La Vierge organise, soigne, améliore ; les Poissons ressentent, consolent, pardonnent. Cette opposition fonctionne comme deux mains d’un même geste : la Vierge donne un corps aux rêves des Poissons, les Poissons donnent une âme à la précision de la Vierge. L’attraction naît souvent d’un sentiment de complétude immédiate — chacun trouve chez l’autre exactement ce qu’il ne sait pas faire.',
     forces:
@@ -358,6 +380,8 @@ export const COMPATIBILITY_PAIRS: PairRecord[] = [
     signB: 'Balance',
     score: 5,
     titre: 'La complicité des esprits d’Air',
+    answerCapsule:
+      'La compatibilité amoureuse entre le Gémeaux et la Balance est l’une des plus fluides du zodiaque, notée 5 sur 5. Ces deux signes d’Air, unis par un trigone, se connectent d’abord par l’esprit — l’humour, la répartie, le plaisir d’échanger — avant que le lien ne descende au cœur. La Balance apporte l’harmonie et le raffinement, le Gémeaux la légèreté et la curiosité : leur vie de couple est sociale, élégante et étonnamment paisible. Ils préfèrent séduire que se disputer. Le seul point de vigilance est que deux signes qui fuient le conflit laissent les vrais sujets sous le tapis, et que l’indécision fait flotter les grands choix. Institutionnaliser de vraies conversations et fixer des échéances aux décisions donne des fondations à cette belle harmonie. Une consultation vous aide à ancrer votre complicité dans la durée.',
     dynamique:
       'Gémeaux et Balance forment le couple de la conversation amoureuse. Deux signes d’Air en trigone : la connexion est d’abord mentale — l’humour, la répartie, le plaisir d’échanger — puis elle descend au cœur. La Balance apporte l’harmonie, le raffinement et l’art de la relation ; le Gémeaux apporte la légèreté, la curiosité et un mouvement perpétuel qui empêche la relation de se figer. Leur vie de couple est sociale, élégante et étonnamment paisible : ces deux-là préfèrent séduire que se disputer, comprendre que juger.',
     forces:
@@ -387,6 +411,8 @@ export const COMPATIBILITY_PAIRS: PairRecord[] = [
     signB: 'Capricorne',
     score: 5,
     titre: 'Les bâtisseurs, l’alliance de Terre',
+    answerCapsule:
+      'La compatibilité amoureuse entre le Taureau et le Capricorne est l’une des plus solides du zodiaque, notée 5 sur 5. Ces deux signes de Terre, reliés par un trigone, parlent le même langage : celui des actes, du temps long et des fondations. Le Capricorne apporte l’ambition et la stratégie, le Taureau la sensualité et l’art de savourer ce qui a été construit. Leur amour grandit lentement mais atteint une profondeur que les couples spectaculaires connaissent rarement, avec une fiabilité mutuelle absolue. Le seul ennemi intérieur est la routine : deux signes de Terre s’installent volontiers dans un confort qui peut anesthésier le désir. Bâtir toujours un projet nouveau et ritualiser l’expression des sentiments maintient le couple vivant. Une guidance amoureuse précise comment savourer votre réussite à deux au lieu de la subir.',
     dynamique:
       'Taureau et Capricorne forment le couple le plus solide du zodiaque au sens littéral : deux signes de Terre en trigone, deux constructeurs qui parlent le même langage — celui des actes, du temps long et des fondations. Le Capricorne apporte l’ambition, la stratégie et une loyauté à toute épreuve ; le Taureau apporte la sensualité, la douceur du quotidien et l’art de profiter de ce qui a été construit. Leur amour grandit lentement, sans coup d’éclat, mais atteint une profondeur que les couples spectaculaires connaissent rarement.',
     forces:
@@ -416,6 +442,8 @@ export const COMPATIBILITY_PAIRS: PairRecord[] = [
     signB: 'Poissons',
     score: 5,
     titre: 'La fusion mystique des profondeurs',
+    answerCapsule:
+      'La compatibilité amoureuse entre le Scorpion et les Poissons est l’une des plus profondes du zodiaque, notée 5 sur 5. Ces deux signes d’Eau, unis par un trigone, vivent une connexion immédiate, intuitive, presque télépathique — beaucoup parlent d’âme sœur dès la rencontre. Le Scorpion, intense et entier, trouve chez les Poissons une âme qui n’a pas peur de ses profondeurs ; les Poissons trouvent chez le Scorpion une passion qui les ancre et les protège. Leur intimité atteint des intensités rares. Le risque est la fusion qui devient engloutissement : le Scorpion possessif et les Poissons influençables peuvent s’enfermer dans un huis clos sans oxygène. Garder des ancrages extérieurs et cultiver la confiance protège ce lien exceptionnel. Une consultation éclaire comment votre fusion Scorpion-Poissons reste une force au lieu de devenir un vertige.',
     dynamique:
       'Scorpion et Poissons vivent l’amour comme une expérience totale. Deux signes d’Eau en trigone : la connexion est immédiate, intuitive, presque télépathique. Le Scorpion, intense et entier, trouve chez les Poissons une âme qui n’a pas peur de ses profondeurs ; les Poissons, souvent incompris, trouvent chez le Scorpion une passion qui les ancre et les protège. Leur intimité — émotionnelle et physique — atteint des intensités que peu de combinaisons connaissent. C’est le couple fusionnel par excellence, pour le meilleur et parfois pour le vertige.',
     forces:
@@ -445,6 +473,8 @@ export const COMPATIBILITY_PAIRS: PairRecord[] = [
     signB: 'Sagittaire',
     score: 5,
     titre: 'L’aventure amoureuse permanente',
+    answerCapsule:
+      'La compatibilité amoureuse entre le Bélier et le Sagittaire est l’une des plus dynamiques du zodiaque, notée 5 sur 5. Ces deux signes de Feu, reliés par un trigone, partagent l’énergie, la liberté et l’enthousiasme : le Bélier allume les projets, le Sagittaire leur donne un horizon. Leur amour ressemble à une amitié passionnée — on rit beaucoup, on bouge tout le temps, on se dit tout sans détour, sans jalousie ni jeux de pouvoir. Le seul vrai danger est l’impulsivité doublée : décisions hâtives, achats ou ruptures sur un coup de tête. La règle des 24 heures avant toute décision importante ou dispute sérieuse protège ce couple d’aventuriers. Une guidance amoureuse montre comment transformer votre spontanéité commune en une relation aussi durable qu’intense.',
     dynamique:
       'Bélier et Sagittaire forment le couple le plus dynamique du zodiaque. Deux signes de Feu en trigone : l’énergie est commune, la liberté sacrée, l’enthousiasme contagieux. Le Bélier allume les projets, le Sagittaire leur donne un horizon — souvent au sens propre, tant ce couple voyage. Leur amour ressemble à une amitié passionnée : on rit beaucoup, on bouge tout le temps, on se dit tout sans détour. Ni jalousie maladive ni jeux de pouvoir : deux indépendants qui choisissent chaque jour de faire route ensemble.',
     forces:
