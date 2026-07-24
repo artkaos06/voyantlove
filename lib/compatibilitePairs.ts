@@ -1716,4 +1716,345 @@ export const COMPATIBILITY_PAIRS: PairRecord[] = [
       },
     ],
   },
+  {
+    slug: 'belier-vierge',
+    signA: 'Bélier',
+    signB: 'Vierge',
+    score: 2,
+    titre: 'Le fonceur et la perfectionniste, quinconce exigeant',
+    answerCapsule:
+      'La compatibilité amoureuse entre le Bélier et la Vierge est l’une des plus délicates du zodiaque, en quinconce — un angle sans harmonie naturelle. Le Bélier de Feu fonce, tranche et déteste attendre ; la Vierge de Terre analyse, corrige et redoute l’erreur. L’attirance existe — le Bélier admire la fiabilité de la Vierge, la Vierge la vitalité du Bélier — mais le quotidien confronte l’impulsivité à la méthode, d’où une note de 2 sur 5. Le Bélier vit les remarques de la Vierge comme des freins, la Vierge vit la précipitation du Bélier comme de l’imprudence. Pour tenir, le Bélier doit gagner en patience et la Vierge lâcher du contrôle, chacun voyant la différence comme un complément. Une consultation de voyance amoureuse peut révéler si votre couple Bélier-Vierge a le potentiel d’un vrai équilibre.',
+    dynamique:
+      'Bélier et Vierge forment un quinconce, cet angle qui n’offre aucun terrain commun naturel et demande tout à l’ajustement. Le Bélier vit dans l’élan, l’instinct, l’action immédiate ; la Vierge dans l’analyse, la prudence, le détail maîtrisé. L’un décide en une seconde, l’autre pèse chaque option. Le Bélier est d’abord rassuré par la fiabilité tranquille de la Vierge, qui structure son chaos ; la Vierge est stimulée par l’audace du Bélier, qui la sort de ses inquiétudes. Mais la vie commune révèle un fossé de rythme et de tempérament : la Vierge freine ce que le Bélier veut lancer, le Bélier bouscule ce que la Vierge veut peaufiner. C’est une relation d’apprentissage mutuel où rien n’est spontanément fluide.',
+    forces:
+      'Une complémentarité possible : la Vierge apporte la méthode et la finition qui manquent au Bélier, le Bélier apporte l’élan et le courage qui débloquent la Vierge. Ensemble, ils peuvent transformer une idée en réalisation aboutie — l’impulsion et la précision réunies.',
+    defis:
+      'Le rythme et la critique : l’impatience du Bélier se heurte à la minutie de la Vierge, dont les remarques perfectionnistes blessent l’ego du Bélier. L’un trouve l’autre imprudent, l’autre le trouve tatillon. Deux façons de fonctionner presque opposées à réconcilier consciemment.',
+    conseil:
+      'Bélier : les remarques de votre Vierge visent à aider, pas à rabaisser — écoutez avant de vous braquer. Vierge : votre Bélier a besoin d’encouragement, pas de corrections permanentes ; valorisez son élan et gardez vos suggestions pour l’essentiel.',
+    faq: [
+      {
+        q: 'Bélier et Vierge sont-ils vraiment incompatibles ?',
+        a: 'C’est l’une des combinaisons les plus exigeantes du zodiaque, en quinconce — un angle qui n’offre aucun point d’accord spontané. Le Feu impulsif du Bélier et la Terre méthodique de la Vierge fonctionnent à des rythmes opposés. Difficile ne veut pas dire impossible : les couples qui réussissent transforment cette différence en complémentarité, le Bélier gagnant en patience et la Vierge en souplesse. Mais cela demande un effort conscient et permanent des deux côtés.',
+      },
+      {
+        q: 'Pourquoi la Vierge agace-t-elle le Bélier ?',
+        a: 'Parce que la Vierge analyse, nuance et suggère des améliorations, là où le Bélier veut agir tout de suite et être approuvé. Ce que la Vierge vit comme une aide précieuse, le Bélier le reçoit comme un frein permanent et une critique de son jugement. Son ego, sensible, supporte mal d’être corrigé. La Vierge doit apprendre à encourager avant de suggérer, et à réserver ses remarques aux enjeux qui comptent vraiment.',
+      },
+      {
+        q: 'Comment ce couple peut-il fonctionner malgré tout ?',
+        a: 'En répartissant les rôles selon leurs forces : au Bélier l’initiative, le démarrage, l’audace ; à la Vierge la finition, l’organisation, la fiabilité. Le Bélier doit accepter que la prudence de la Vierge lui évite des erreurs, la Vierge que l’élan du Bélier la sort de la paralysie. Quand chacun cesse de vouloir convertir l’autre à son rythme, le quinconce devient une équipe où l’impulsion et la précision se complètent.',
+      },
+    ],
+  },
+  {
+    slug: 'taureau-balance',
+    signA: 'Taureau',
+    signB: 'Balance',
+    score: 3,
+    titre: 'Les deux enfants de Vénus, même déesse, deux amours',
+    answerCapsule:
+      'La compatibilité amoureuse entre le Taureau et la Balance réunit les deux signes gouvernés par Vénus, la planète de l’amour et de la beauté. Le Taureau vit Vénus dans la Terre — sensualité, confort, possession ; la Balance la vit dans l’Air — esthétique, harmonie, relation. Ils partagent le goût du beau et du raffinement, mais un quinconce les sépare sur le tempo et les besoins, d’où une note de 3 sur 5. Le Taureau cherche la sécurité et l’exclusivité, la Balance la légèreté sociale et le dialogue. Le Taureau possessif s’inquiète de la sociabilité de la Balance, qui étouffe sous la routine casanière du Taureau. Pour durer, chacun offre à l’autre un peu de son monde : de l’ancrage pour la Balance, de la vie sociale pour le Taureau. Une consultation éclaire votre couple Taureau-Balance et ses affinités vénusiennes.',
+    dynamique:
+      'Taureau et Balance partagent la même planète maîtresse, Vénus, mais l’expriment de façons opposées : l’un dans la Terre, l’autre dans l’Air. Le Taureau aime avec ses sens — le toucher, le confort, la possession tranquille ; la Balance aime avec son esprit — la conversation, l’élégance, l’harmonie relationnelle. Ils se reconnaissent sur le terrain du beau : tous deux apprécient l’art, le raffinement, une belle table. Mais le quinconce entre eux crée un décalage de rythme et de besoins. Le Taureau veut construire un nid stable et exclusif ; la Balance veut une vie sociale ouverte et un dialogue permanent. Leur amour vénusien est réel, mais il navigue entre le besoin de sécurité de l’un et le besoin de légèreté de l’autre.',
+    forces:
+      'Un amour commun du beau, du raffinement et du plaisir esthétique, une douceur mutuelle — ni l’un ni l’autre n’aime le conflit brutal —, et une sensualité que le Taureau approfondit et que la Balance sublime. Deux Vénus qui savent créer un cadre de vie agréable.',
+    defis:
+      'Sécurité contre sociabilité : le Taureau possessif supporte mal le besoin de vie sociale et de séduction de la Balance, qui étouffe sous la routine casanière du Taureau. L’indécision de la Balance agace le Taureau qui, une fois décidé, ne comprend pas qu’on hésite encore.',
+    conseil:
+      'Taureau : lâchez du lest sur la vie sociale de votre Balance, sa sociabilité n’est pas une menace mais son oxygène. Balance : offrez à votre Taureau des repères stables et de l’exclusivité affective, cette sécurité lui permet de vous laisser respirer.',
+    faq: [
+      {
+        q: 'Taureau et Balance, tous deux gouvernés par Vénus, sont-ils compatibles ?',
+        a: 'Leur planète commune, Vénus, leur donne un vrai terrain d’entente — l’amour du beau, du raffinement et de la douceur — mais ne suffit pas à les accorder. Le Taureau vit Vénus dans la Terre (sensualité, sécurité), la Balance dans l’Air (esthétique, relation). Le quinconce entre eux crée un décalage de tempo et de besoins. L’attrait esthétique est réel ; l’harmonie durable demande que chacun respecte le mode d’amour opposé de l’autre.',
+      },
+      {
+        q: 'Pourquoi le Taureau est-il jaloux de la Balance ?',
+        a: 'Parce que la Balance est sociable, charmeuse et a besoin d’un large cercle relationnel pour s’épanouir — exactement ce qui active la possessivité du Taureau. Le Taureau associe l’amour à l’exclusivité et à la sécurité ; voir sa Balance séduire et multiplier les contacts l’inquiète. Le malentendu est réel : la Balance a besoin de plaire socialement sans que cela menace le couple. Le Taureau doit apprendre à distinguer la sociabilité de l’infidélité.',
+      },
+      {
+        q: 'Comment ce couple vénusien trouve-t-il son équilibre ?',
+        a: 'En échangeant un peu de leurs mondes. La Balance offre au Taureau l’exclusivité affective et les repères stables qui apaisent sa possessivité ; le Taureau accorde à la Balance la liberté sociale et le dialogue dont elle a besoin. Leur amour commun du beau — sorties culturelles, belle maison, plaisirs partagés — est le ciment naturel. Quand chacun cesse d’imposer son rythme, leur double héritage vénusien crée un couple raffiné et sensuel.',
+      },
+    ],
+  },
+  {
+    slug: 'gemeaux-poissons',
+    signA: 'Gémeaux',
+    signB: 'Poissons',
+    score: 2,
+    titre: 'L’esprit et le rêve, deux signes doubles en quinconce',
+    answerCapsule:
+      'La compatibilité amoureuse entre le Gémeaux et les Poissons unit les deux signes « doubles » du zodiaque — les Gémeaux et leurs deux visages, les Poissons et leurs deux poissons — mais en quinconce, sans harmonie naturelle. Le Gémeaux vit dans le mental, l’Air, les mots ; les Poissons dans l’émotion, l’Eau, l’intuition. L’attirance est celle d’une fascination mutuelle : le Gémeaux est intrigué par la profondeur insaisissable des Poissons, les Poissons par la vivacité brillante du Gémeaux. Mais leurs langages diffèrent trop, d’où une note de 2 sur 5. Le Gémeaux analyse ce que les Poissons ressentent ; sa légèreté peut blesser leur hypersensibilité. Pour tenir, le Gémeaux doit descendre vers l’émotion et les Poissons accepter la nature cérébrale du Gémeaux. Une guidance de voyance amoureuse peut clarifier ce que votre couple Gémeaux-Poissons peut réellement construire.',
+    dynamique:
+      'Gémeaux et Poissons sont les deux signes doubles du zodiaque, et pourtant tout les sépare : l’Air mental contre l’Eau émotionnelle, en quinconce sans terrain commun. Le Gémeaux vit dans les idées, la parole, le mouvement ; les Poissons dans le ressenti, le rêve, l’intuition. Le Gémeaux est fasciné par cette profondeur insaisissable qu’il ne sait pas produire ; les Poissons sont charmés par cette vivacité qui les amuse et les distrait de leur mélancolie. Leur rencontre a quelque chose de magique et de flou à la fois. Mais le quotidien confronte deux fonctionnements presque étrangers : le Gémeaux met des mots et de la distance là où les Poissons veulent de la fusion et du silence habité. Chacun demande à l’autre ce qu’il ne sait pas donner.',
+    forces:
+      'Une imagination commune et une adaptabilité rare — deux signes mutables qui épousent les circonstances —, une fascination mutuelle qui interdit l’ennui, et une créativité partagée : le mental du Gémeaux et l’imaginaire des Poissons peuvent produire de belles choses ensemble.',
+    defis:
+      'Le fossé tête-cœur : le Gémeaux intellectualise et prend de la distance quand les Poissons ont besoin de fusion émotionnelle ; sa légèreté et son ironie blessent leur hypersensibilité. Deux signes fuyants, aucun n’ancre le couple ni ne gère solidement le concret.',
+    conseil:
+      'Gémeaux : vos Poissons ne cherchent pas un débat mais une présence sensible — posez le mental et offrez de l’émotion vraie. Poissons : ne prenez pas la légèreté du Gémeaux pour de l’indifférence, c’est sa nature ; dites clairement vos besoins au lieu de vous replier dans le flou.',
+    faq: [
+      {
+        q: 'Gémeaux et Poissons peuvent-ils s’accorder ?',
+        a: 'C’est une combinaison difficile, en quinconce, entre deux signes doubles qui fonctionnent pourtant à l’opposé : le mental du Gémeaux et l’émotion des Poissons. La fascination mutuelle est réelle et l’imagination partagée crée un lien, mais leurs langages diffèrent profondément. Les couples qui réussissent sont ceux où le Gémeaux apprend à ressentir et les Poissons à accepter la nature cérébrale de leur partenaire. Sans cet effort, chacun se sent incompris.',
+      },
+      {
+        q: 'Pourquoi la légèreté du Gémeaux blesse-t-elle les Poissons ?',
+        a: 'Parce que les Poissons ressentent tout à une intensité extrême, et que l’humour, l’ironie et le détachement du Gémeaux leur semblent minimiser leurs émotions. Quand les Poissons partagent une peine et que le Gémeaux répond par une pirouette ou une analyse, ils entendent « tes sentiments ne comptent pas ». Le Gémeaux ne méprise pas, il est démuni face à l’émotion pure et fuit dans le mental. Nommer ce mécanisme évite bien des malentendus.',
+      },
+      {
+        q: 'Qui ancre le couple entre le Gémeaux et les Poissons ?',
+        a: 'C’est leur difficulté majeure : personne spontanément. Le Gémeaux vit dans les idées, les Poissons dans le rêve — ni l’un ni l’autre n’est doué pour le concret, l’organisation ou les décisions fermes. La vie matérielle peut vite dériver. Les couples qui durent en prennent conscience et s’organisent délibérément : partage des tâches, repères fixes, ou aide extérieure, pour que leur bel imaginaire commun ne se dissolve pas dans le désordre du quotidien.',
+      },
+    ],
+  },
+  {
+    slug: 'cancer-balance',
+    signA: 'Cancer',
+    signB: 'Balance',
+    score: 2,
+    titre: 'Le foyer et le salon, carré cardinal',
+    answerCapsule:
+      'La compatibilité amoureuse entre le Cancer et la Balance oppose deux besoins d’harmonie qui ne se rejoignent pas. Ces deux signes cardinaux forment un carré, angle de tension : le Cancer d’Eau cherche l’intimité du foyer et la sécurité émotionnelle, la Balance d’Air cherche la vie sociale et l’équilibre relationnel. Tous deux détestent le conflit, ce qui crée une douceur de surface, mais aussi une note de 2 sur 5, car les non-dits s’accumulent. Le Cancer veut rester à deux dans le cocon, la Balance veut sortir et recevoir ; le Cancer vit les besoins sociaux de la Balance comme un abandon, la Balance vit le repli du Cancer comme une contrainte. Pour durer, chacun doit nommer ses besoins au lieu de bouder poliment. Une consultation peut éclairer si votre carré Cancer-Balance mène à un équilibre ou à une distance silencieuse.',
+    dynamique:
+      'Cancer et Balance sont deux signes cardinaux en carré, unis par une même horreur du conflit mais séparés par des besoins opposés. Le Cancer, signe d’Eau gouverné par la Lune, cherche le foyer, l’intimité, la sécurité affective — l’amour comme un refuge. La Balance, signe d’Air gouverné par Vénus, cherche l’harmonie sociale, le dialogue, la beauté des relations — l’amour comme un art de vivre à plusieurs. Le Cancer est d’abord séduit par la grâce et la douceur de la Balance ; la Balance par la tendresse enveloppante du Cancer. Mais le quotidien révèle la tension du carré : le Cancer veut rester blotti à deux, la Balance veut ouvrir les portes et recevoir. Deux façons d’aimer qui se frôlent sans se rencontrer vraiment.',
+    forces:
+      'Une même douceur et un même refus de la brutalité, un souci sincère du bien-être de l’autre, et une esthétique de vie partagée : tous deux aiment un foyer beau et accueillant. Quand ils s’accordent, ils créent une maison chaleureuse et élégante.',
+    defis:
+      'Le carré des besoins : intimité contre sociabilité, cocon contre salon. Deux signes qui fuient le conflit taisent leurs frustrations jusqu’à la distance. Le Cancer boude quand la Balance sort, la Balance se sent enfermée quand le Cancer se replie — et personne n’ose le dire.',
+    conseil:
+      'Cancer : les besoins sociaux de votre Balance ne sont pas un rejet de vous — accompagnez-la parfois au lieu de bouder. Balance : rassurez votre Cancer par des moments d’intimité exclusive avant de vous tourner vers le monde. Et osez tous deux nommer ce qui fâche.',
+    faq: [
+      {
+        q: 'Cancer et Balance forment-ils un bon couple ?',
+        a: 'C’est un couple délicat, en carré cardinal. Le Cancer et la Balance partagent la douceur et l’horreur du conflit, mais leurs besoins s’opposent : intimité du foyer contre vie sociale, sécurité émotionnelle contre harmonie relationnelle. La note de 2 sur 5 reflète cette tension. La relation peut fonctionner si chacun accueille le besoin de l’autre au lieu de le vivre comme une menace — mais leur commune fuite du conflit rend le dialogue franc particulièrement difficile.',
+      },
+      {
+        q: 'Pourquoi le Cancer se sent-il délaissé par la Balance ?',
+        a: 'Parce que la Balance a besoin de vie sociale, de sorties et d’un large cercle relationnel pour respirer, quand le Cancer rêve d’un cocon à deux. Chaque fois que la Balance se tourne vers le monde extérieur, le Cancer, hypersensible, le vit comme un abandon affectif et se replie dans sa coquille. La Balance ne délaisse pas le Cancer — elle a simplement une autre écologie affective. La réassurance régulière apaise cette blessure.',
+      },
+      {
+        q: 'Comment ce couple gère-t-il les non-dits ?',
+        a: 'Mal, par nature : deux signes qui fuient le conflit préfèrent taire leurs frustrations plutôt que de risquer une dispute. Le Cancer boude en silence, la Balance sourit poliment, et les rancunes s’accumulent sous une paix de façade jusqu’à une distance froide. La seule prévention est contre-nature pour eux : oser nommer tôt ce qui dérange, avec douceur mais franchise, avant que le non-dit ne creuse un fossé irréparable.',
+      },
+    ],
+  },
+  {
+    slug: 'lion-poissons',
+    signA: 'Lion',
+    signB: 'Poissons',
+    score: 3,
+    titre: 'Le soleil et l’océan, quinconce fascinant',
+    answerCapsule:
+      'La compatibilité amoureuse entre le Lion et les Poissons unit deux mondes que rien ne prépare à se rencontrer : le Feu solaire et l’Eau océanique, en quinconce. Le Lion rayonne, s’affirme, veut être admiré ; les Poissons se dissolvent, s’adaptent, veulent fusionner. L’attirance est celle d’un mystère réciproque — le Lion est touché par la douceur dévouée des Poissons, les Poissons éblouis par la chaleur généreuse du Lion, d’où une note de 3 sur 5. Les Poissons offrent au Lion une admiration sans réserve et un refuge tendre ; le Lion offre aux Poissons une protection éclatante. Mais le Lion peut prendre toute la lumière, laissant les Poissons s’effacer, et sa fierté heurte leur sensibilité. Pour durer, le Lion partage la scène et les Poissons s’affirment. Une consultation peut éclairer le potentiel réel de votre couple Lion-Poissons.',
+    dynamique:
+      'Lion et Poissons forment un quinconce, l’angle de l’ajustement permanent, entre le Feu qui brille et l’Eau qui se répand. Le Lion, signe fixe gouverné par le Soleil, veut rayonner, mener, être adoré ; les Poissons, signe mutable gouverné par Neptune, veulent rêver, s’adapter, se fondre dans l’autre. Le Lion est ému par la tendresse dévouée des Poissons, qui l’admirent sans calcul et lui offrent un havre ; les Poissons sont éblouis par la générosité chaleureuse du Lion, qui les protège et les guide. La relation a des airs de conte — le roi et la sirène. Mais leurs natures créent un déséquilibre : le Lion accapare volontiers la lumière, les Poissons s’effacent volontiers dans l’ombre, et ce glissement peut vider le couple de sa réciprocité.',
+    forces:
+      'Une tendresse et une admiration mutuelles réelles, une complémentarité archétypale — la force protectrice et la douceur inspirante —, et une générosité partagée : le Lion donne avec panache, les Poissons avec compassion. Les Poissons savent aimer l’ego du Lion sans se sentir diminués, s’ils gardent leur voix.',
+    defis:
+      'Le déséquilibre lumière/ombre : le Lion prend la scène, les Poissons s’effacent, jusqu’à ce que la réciprocité disparaisse. La fierté et le besoin d’admiration du Lion heurtent l’hypersensibilité des Poissons, qui se blessent en silence et fuient dans le flou plutôt que d’affronter.',
+    conseil:
+      'Lion : partagez la lumière et valorisez vos Poissons, leur effacement n’est pas de l’humilité mais un risque pour le couple. Poissons : ne disparaissez pas derrière votre Lion, affirmez vos besoins ; il respecte bien plus une âme qui a sa propre voix qu’un miroir docile.',
+    faq: [
+      {
+        q: 'Lion et Poissons sont-ils compatibles en amour ?',
+        a: 'C’est une combinaison fascinante mais délicate, en quinconce, entre le Feu du Lion et l’Eau des Poissons. L’attirance des contraires est forte : les Poissons offrent au Lion l’admiration tendre qu’il recherche, le Lion offre aux Poissons la protection dont ils rêvent. La note de 3 sur 5 reflète le potentiel réel mais aussi le risque de déséquilibre. La relation tient si le Lion partage la lumière et si les Poissons osent exister à côté de son éclat.',
+      },
+      {
+        q: 'Les Poissons risquent-ils de s’effacer derrière le Lion ?',
+        a: 'C’est le principal danger du couple. Les Poissons, adaptables et dévoués, se fondent volontiers dans le monde de leur partenaire ; le Lion, naturellement rayonnant, occupe toute la place sans même s’en rendre compte. Le risque : des Poissons qui disparaissent peu à peu, jusqu’à une lassitude ou une tristesse silencieuse. La prévention passe par un Lion qui valorise activement ses Poissons et des Poissons qui cultivent leur propre voix et leurs propres passions.',
+      },
+      {
+        q: 'Comment le Lion doit-il traiter la sensibilité des Poissons ?',
+        a: 'Avec une délicatesse qui ne lui est pas naturelle. Le Lion est franc, démonstratif et parfois brusque dans sa fierté ; les Poissons, ultrasensibles, sont blessés par un ton dur ou une remarque désinvolte, et se réfugient alors dans le silence ou le flou. Le Lion gagne à adoucir sa manière, à rassurer souvent, et à comprendre que la vulnérabilité des Poissons n’est pas une faiblesse mais leur façon d’aimer profondément.',
+      },
+    ],
+  },
+  {
+    slug: 'vierge-sagittaire',
+    signA: 'Vierge',
+    signB: 'Sagittaire',
+    score: 2,
+    titre: 'La loupe et la longue-vue, carré mutable',
+    answerCapsule:
+      'La compatibilité amoureuse entre la Vierge et le Sagittaire oppose deux façons de regarder le monde : la loupe et la longue-vue. Ces deux signes mutables forment un carré, angle de friction stimulante : la Vierge de Terre observe le détail, planifie, perfectionne ; le Sagittaire de Feu vise l’horizon, improvise, agrandit. L’attirance mêle admiration et exaspération, d’où une note de 2 sur 5. La Vierge est séduite par l’optimisme large du Sagittaire, qui la libère de ses angoisses ; le Sagittaire par la fiabilité de la Vierge, qui structure ses élans. Mais la Vierge trouve le Sagittaire imprécis et imprudent, le Sagittaire trouve la Vierge tatillonne et anxieuse. Pour durer, chacun doit valoriser le regard opposé de l’autre. Une consultation peut révéler si votre couple Vierge-Sagittaire transforme sa tension en complémentarité.',
+    dynamique:
+      'Vierge et Sagittaire, tous deux signes mutables, forment un carré qui oppose le détail au grand ensemble. La Vierge, gouvernée par Mercure, vit dans la précision, l’analyse, l’amélioration du concret ; le Sagittaire, gouverné par Jupiter, vit dans l’expansion, la vision, la quête de sens et d’horizon. La Vierge est d’abord séduite par la générosité optimiste du Sagittaire, qui allège ses inquiétudes ; le Sagittaire est attiré par la compétence tranquille de la Vierge, qui donne corps à ses rêves. Mais leur regard sur la vie diverge profondément : la Vierge veut maîtriser les détails, le Sagittaire veut embrasser l’ensemble, et chacun juge la focale de l’autre. La franchise sans filtre du Sagittaire heurte la sensibilité de la Vierge, qui répond par la critique.',
+    forces:
+      'Une complémentarité de focales : la Vierge concrétise et affine les grandes visions du Sagittaire, le Sagittaire élargit et dédramatise le perfectionnisme de la Vierge. Ensemble, ils peuvent unir l’ambition et la méthode, le sens et l’exécution.',
+    defis:
+      'Détail contre horizon : la Vierge trouve le Sagittaire imprécis et imprudent, le Sagittaire trouve la Vierge anxieuse et tatillonne. La franchise brute du Sagittaire blesse la Vierge, dont les critiques perfectionnistes agacent le Sagittaire épris de liberté.',
+    conseil:
+      'Vierge : votre Sagittaire a besoin d’espace et d’encouragement, pas de corrections — lâchez le contrôle sur ses élans. Sagittaire : mesurez votre franchise, la Vierge est plus sensible qu’elle n’en a l’air, et reconnaissez que sa minutie protège vos projets au lieu de les brider.',
+    faq: [
+      {
+        q: 'Vierge et Sagittaire peuvent-ils s’entendre ?',
+        a: 'C’est une combinaison exigeante, en carré mutable, qui oppose le sens du détail de la Vierge à la vision d’ensemble du Sagittaire. La tension est réelle — chacun juge la façon de fonctionner de l’autre — d’où une note de 2 sur 5. Mais le carré est stimulant : bien géré, il devient une complémentarité où la méthode sert la vision. Les couples qui réussissent valorisent le regard opposé de l’autre au lieu de vouloir le corriger.',
+      },
+      {
+        q: 'Pourquoi la Vierge critique-t-elle le Sagittaire ?',
+        a: 'Parce que le Sagittaire, dans son enthousiasme, néglige les détails, prend des risques et improvise — tout ce que la Vierge, soucieuse de maîtrise et de fiabilité, redoute. Sa critique part d’une inquiétude sincère, mais le Sagittaire, épris de liberté, la vit comme un frein rabat-joie. La Vierge doit apprendre que l’optimisme du Sagittaire est une force, pas une imprudence à corriger, et réserver ses remarques aux vrais enjeux.',
+      },
+      {
+        q: 'La franchise du Sagittaire blesse-t-elle la Vierge ?',
+        a: 'Souvent. Le Sagittaire dit les choses sans filtre, avec une bonne foi qui ignore l’effet de ses mots ; la Vierge, plus sensible qu’elle ne le montre sous sa réserve, encaisse ces vérités brutes comme des jugements. Là où le Sagittaire pense être simplement honnête, la Vierge se sent visée dans sa personne. Le Sagittaire gagne à adoucir sa franchise avec ce partenaire, sans renoncer à sa sincérité appréciée sur le fond.',
+      },
+    ],
+  },
+  {
+    slug: 'balance-scorpion',
+    signA: 'Balance',
+    signB: 'Scorpion',
+    score: 3,
+    titre: 'La légèreté et l’abîme, voisins contrastés',
+    answerCapsule:
+      'La compatibilité amoureuse entre la Balance et le Scorpion réunit deux voisins du zodiaque que tout oppose en intensité : l’Air léger et l’Eau profonde. La Balance charme, harmonise, reste en surface par élégance ; le Scorpion sonde, fusionne, plonge dans l’abîme émotionnel. L’attirance est celle d’une fascination — le Scorpion est intrigué par la grâce insaisissable de la Balance, la Balance par le magnétisme intense du Scorpion, d’où une note de 3 sur 5. La Balance apporte la douceur qui apaise les tempêtes du Scorpion ; le Scorpion apporte la profondeur qui donne du poids à la légèreté de la Balance. Mais la jalousie possessive du Scorpion étouffe la Balance sociable, dont l’évitement du conflit frustre le Scorpion qui veut tout affronter. Une consultation peut éclairer ce que votre couple Balance-Scorpion peut construire.',
+    dynamique:
+      'Balance et Scorpion sont voisins sur le zodiaque mais respirent à des profondeurs opposées. La Balance, signe d’Air gouverné par Vénus, vit dans la légèreté, la diplomatie, l’harmonie sociale ; le Scorpion, signe d’Eau, vit dans l’intensité, le secret, la fusion émotionnelle. La Balance est d’abord fascinée par le magnétisme et la profondeur du Scorpion, qui la sortent de sa surface policée ; le Scorpion est intrigué par la grâce et l’équilibre de la Balance, qui l’apaisent. Mais leur rapport à l’émotion diverge radicalement : la Balance veut désamorcer les tensions et garder l’harmonie, le Scorpion veut plonger dans le conflit pour atteindre la vérité. L’une fuit ce que l’autre recherche, et cette différence de température affective est le cœur de leur défi.',
+    forces:
+      'Une fascination mutuelle qui interdit l’ennui, une complémentarité réelle — la Balance apaise, le Scorpion approfondit —, et une intensité que la Balance découvre et que le Scorpion tempère au contact de la douceur de sa partenaire.',
+    defis:
+      'Jalousie contre sociabilité, profondeur contre légèreté : la possessivité du Scorpion étouffe la Balance qui a besoin de vie sociale, et l’évitement du conflit de la Balance frustre le Scorpion qui veut tout affronter en face. Deux températures affectives opposées.',
+    conseil:
+      'Scorpion : la sociabilité de votre Balance n’est pas une trahison, lâchez le contrôle — votre confiance la garde bien mieux que votre surveillance. Balance : n’esquivez pas les conflits que le Scorpion a besoin de traverser ; sa profondeur attend votre franchise, pas votre diplomatie.',
+    faq: [
+      {
+        q: 'Balance et Scorpion sont-ils compatibles ?',
+        a: 'C’est une combinaison contrastée mais magnétique, entre deux voisins du zodiaque que sépare l’intensité : l’Air léger de la Balance et l’Eau profonde du Scorpion. La fascination mutuelle est forte, d’où une note de 3 sur 5, mais leurs rapports à l’émotion et au conflit s’opposent. La relation tient quand le Scorpion apprend à faire confiance sans contrôler et quand la Balance accepte d’affronter les sujets qu’elle préfère esquiver.',
+      },
+      {
+        q: 'La jalousie du Scorpion pose-t-elle problème à la Balance ?',
+        a: 'Beaucoup. La Balance est sociable, charmeuse et a besoin d’un large cercle relationnel ; la possessivité intense du Scorpion vit cette sociabilité comme une menace permanente et cherche à contrôler. Or plus le Scorpion surveille, plus la Balance étouffe et se ferme. Le Scorpion doit comprendre que la confiance donnée est ce qui retient la Balance, et que son besoin de plaire socialement n’enlève rien à son attachement.',
+      },
+      {
+        q: 'Pourquoi le Scorpion est-il frustré par la Balance ?',
+        a: 'Parce que la Balance fuit le conflit qu’il a, lui, besoin d’affronter. Quand une tension surgit, la Balance désamorce, sourit, temporise pour préserver l’harmonie ; le Scorpion veut plonger dans le problème pour atteindre la vérité et purger l’émotion. L’évitement de la Balance lui donne l’impression de ne jamais toucher le fond des choses. Pour ce couple, la Balance doit oser la franchise directe que le Scorpion attend.',
+      },
+    ],
+  },
+  {
+    slug: 'scorpion-capricorne',
+    signA: 'Scorpion',
+    signB: 'Capricorne',
+    score: 4,
+    titre: 'Le stratège et le bâtisseur, alliance de pouvoir',
+    answerCapsule:
+      'La compatibilité amoureuse entre le Scorpion et le Capricorne forme l’une des alliances les plus puissantes du zodiaque. Le sextile Eau-Terre unit l’intensité stratégique du Scorpion et l’ambition méthodique du Capricorne : deux volontés de fer qui se reconnaissent et se respectent, d’où une note de 4 sur 5. Le Scorpion apporte la passion, la profondeur et une loyauté farouche ; le Capricorne apporte la stabilité, la patience et une fiabilité à toute épreuve. Ensemble, ils forment un couple discret mais redoutable, uni par la confiance et l’ambition partagée. Le défi tient à leur double réserve émotionnelle et à deux caractères qui ne cèdent jamais : les luttes de pouvoir couvent. En choisissant la transparence et en exprimant une tendresse qu’ils retiennent, ce couple devient inébranlable. Une consultation peut éclairer la force réelle de votre lien Scorpion-Capricorne.',
+    dynamique:
+      'Scorpion et Capricorne s’attirent par une reconnaissance mutuelle de puissance. Le sextile Eau-Terre unit deux volontés intenses : le Scorpion, gouverné par Pluton, agit par la stratégie, le magnétisme et la profondeur émotionnelle ; le Capricorne, gouverné par Saturne, avance par la méthode, l’endurance et l’ambition patiente. Chacun sent chez l’autre un égal — quelqu’un qui ne joue pas, qui s’engage sérieusement et qui vise loin. Le Scorpion admire la solidité imperturbable du Capricorne, le Capricorne la force de caractère du Scorpion. Leur amour naît souvent de l’estime avant de devenir une passion profonde, à l’abri des regards. Discret en public, ce couple est d’une intensité et d’une loyauté rares en privé — une alliance qui construit dans la durée et résiste à toutes les tempêtes extérieures.',
+    forces:
+      'Une loyauté farouche des deux côtés, une ambition et des valeurs alignées, une confiance mutuelle rare — deux signes qui ne trahissent pas —, et une résilience de couple à toute épreuve. Ensemble, ils bâtissent un pouvoir, un patrimoine et une intimité solides.',
+    defis:
+      'La double réserve émotionnelle : deux pudiques peuvent laisser la tendresse s’atrophier sous le sérieux. Et deux volontés inflexibles qui ne cèdent jamais : les luttes de pouvoir silencieuses couvent, chacun campant sur ses positions sans un mot.',
+    conseil:
+      'Osez tous deux la vulnérabilité : votre force commune n’a de sens que si elle protège une vraie tendresse — dites et montrez ce que votre pudeur retient. Et désarmez les luttes de pouvoir par la transparence : entre deux stratèges, la confiance ouverte vaut mille manœuvres.',
+    faq: [
+      {
+        q: 'Scorpion et Capricorne forment-ils un couple solide ?',
+        a: 'Oui, c’est l’une des alliances les plus puissantes du zodiaque. Le sextile Eau-Terre unit l’intensité du Scorpion et l’ambition du Capricorne dans une relation d’estime, de loyauté et de construction, d’où une note de 4 sur 5. Deux volontés de fer qui se respectent bâtissent un couple d’une solidité rare. Leur seul vrai risque n’est pas la rupture mais l’assèchement émotionnel : deux réserves pudiques qui oublient d’exprimer la tendresse.',
+      },
+      {
+        q: 'Pourquoi dit-on que c’est un couple de pouvoir ?',
+        a: 'Parce que le Scorpion et le Capricorne partagent une ambition profonde et une volonté inflexible, et qu’ensemble ils conjuguent la stratégie magnétique de l’un et l’endurance méthodique de l’autre. Ce qu’ils décident, ils le réalisent : statut, patrimoine, projets d’envergure. Leur loyauté mutuelle et leur discrétion en font une équipe redoutable face au monde. C’est le couple qui construit silencieusement une forteresse là où d’autres font du bruit.',
+      },
+      {
+        q: 'Les luttes de pouvoir menacent-elles ce couple ?',
+        a: 'C’est leur risque interne principal. Deux caractères qui ne cèdent jamais, face à face, peuvent transformer chaque désaccord en bras de fer silencieux où chacun attend que l’autre plie. Le Scorpion teste et manœuvre, le Capricorne s’arc-boute et endure. La sortie n’est pas la victoire mais le désarmement : la transparence radicale, où chacun expose ses besoins au lieu de manœuvrer, est la seule voie pour que deux stratèges construisent au lieu de s’affronter.',
+      },
+    ],
+  },
+  {
+    slug: 'sagittaire-poissons',
+    signA: 'Sagittaire',
+    signB: 'Poissons',
+    score: 3,
+    titre: 'Deux idéalistes de Jupiter, carré mutable',
+    answerCapsule:
+      'La compatibilité amoureuse entre le Sagittaire et les Poissons unit deux signes que la tradition rattache à Jupiter — la planète de la foi, du sens et de l’expansion. Ces deux mutables forment un carré, mais partagent un idéalisme profond et une générosité rare, d’où une note de 3 sur 5. Le Sagittaire de Feu cherche la vérité par l’aventure et la philosophie ; les Poissons d’Eau la cherchent par le rêve et la compassion. Chacun reconnaît chez l’autre une âme tournée vers plus grand que soi. Le Sagittaire apporte l’élan et l’optimisme, les Poissons la douceur et la profondeur émotionnelle. Mais la franchise brute du Sagittaire blesse l’hypersensibilité des Poissons, et leur besoin de fusion se heurte au besoin de liberté du Sagittaire. Une consultation peut éclairer ce que votre couple Sagittaire-Poissons peut vraiment vivre.',
+    dynamique:
+      'Sagittaire et Poissons forment un carré entre deux signes mutables, mais que la tradition astrologique relie par Jupiter — d’où une parenté idéaliste rare. Le Sagittaire, signe de Feu, cherche le sens par le mouvement, l’aventure, la connaissance ; les Poissons, signe d’Eau, cherchent le sens par l’intuition, le rêve, la compassion. Les deux sont profondément humains, tournés vers plus grand qu’eux, ce qui crée une reconnaissance immédiate et touchante. Le Sagittaire est ému par la profondeur émotionnelle des Poissons ; les Poissons sont inspirés par la foi et la liberté du Sagittaire. Mais le carré crée une tension : le Sagittaire fonce et parle sans filtre, les Poissons ressentent et se dérobent. Leur idéalisme partagé les rapproche autant que leurs tempéraments les éloignent.',
+    forces:
+      'Un idéalisme et une générosité partagés, une ouverture d’esprit et une tolérance mutuelles, une créativité et une spiritualité communes, et une absence de mesquinerie : deux âmes tournées vers l’ailleurs qui se comprennent sur l’essentiel.',
+    defis:
+      'La franchise du Sagittaire blesse l’hypersensibilité des Poissons, qui fuient dans le silence ou le flou ; le besoin de fusion des Poissons se heurte au besoin de liberté du Sagittaire. Deux signes peu ancrés, aucun ne gère solidement le concret du quotidien.',
+    conseil:
+      'Sagittaire : mesurez vos mots avec les Poissons, leur sensibilité amplifie tout — la tendresse dans le ton compte autant que la vérité. Poissons : n’enfermez pas votre Sagittaire, sa liberté n’est pas un désamour ; il revient toujours vers ce qui ne l’entrave pas.',
+    faq: [
+      {
+        q: 'Sagittaire et Poissons sont-ils compatibles ?',
+        a: 'C’est un carré exigeant, mais adouci par un idéalisme profondément partagé — la tradition relie les deux signes à Jupiter, planète de la foi et du sens. La note de 3 sur 5 reflète ce mélange : des tempéraments qui se heurtent (Feu franc contre Eau sensible) mais des âmes qui se rejoignent sur l’essentiel. La relation tient quand le Sagittaire adoucit sa franchise et les Poissons respectent son besoin de liberté.',
+      },
+      {
+        q: 'Qu’est-ce qui rapproche vraiment ces deux signes ?',
+        a: 'Leur idéalisme et leur générosité. Le Sagittaire et les Poissons sont deux des signes les plus tournés vers plus grand qu’eux — la quête de sens, la compassion, l’ouverture au monde. Là où d’autres couples se lient par la sécurité ou la passion, ceux-ci se reconnaissent dans une même soif d’absolu et une même absence de mesquinerie. Cette parenté d’âme est le vrai ciment qui leur permet de dépasser les frictions de tempérament.',
+      },
+      {
+        q: 'Pourquoi la franchise du Sagittaire blesse-t-elle les Poissons ?',
+        a: 'Parce que le Sagittaire dit les vérités sans emballage, avec une bonne foi qui ignore leur impact, et que les Poissons ressentent tout à une intensité extrême. Une remarque banale pour le Sagittaire peut être vécue comme un rejet par les Poissons, qui se réfugient alors dans le silence ou la fuite. Le Sagittaire n’est pas dur, il est direct ; mais avec les Poissons, la manière compte autant que le fond, et la tendresse désamorce ce que la franchise seule briserait.',
+      },
+    ],
+  },
+  {
+    slug: 'capricorne-poissons',
+    signA: 'Capricorne',
+    signB: 'Poissons',
+    score: 4,
+    titre: 'Le roc et le rêve, sextile qui ancre',
+    answerCapsule:
+      'La compatibilité amoureuse entre le Capricorne et les Poissons unit le roc et le rêve dans une belle harmonie. Le sextile Terre-Eau marie la solidité structurante du Capricorne et la douceur imaginative des Poissons : chacun offre à l’autre ce qui lui manque, d’où une note de 4 sur 5. Le Capricorne apporte l’ancrage, la sécurité et la fiabilité dont les Poissons ont désespérément besoin ; les Poissons apportent la tendresse, la sensibilité et la magie qui adoucissent l’austérité du Capricorne. Le réaliste protège le rêveur, le rêveur réchauffe le réaliste. Le défi tient à leur expression affective — pudique et concrète chez l’un, fusionnelle et floue chez l’autre — et au rapport au réel qui les sépare. Une consultation peut éclairer comment votre couple Capricorne-Poissons transforme sa différence en complémentarité durable.',
+    dynamique:
+      'Capricorne et Poissons composent l’un des sextiles les plus complémentaires du zodiaque. Le Capricorne, signe de Terre gouverné par Saturne, vit dans la structure, l’ambition, la maîtrise du réel ; les Poissons, signe d’Eau gouverné par Neptune, vivent dans le rêve, l’émotion, l’abandon. Les Poissons trouvent chez le Capricorne un rivage solide — quelqu’un qui les ancre, les protège et gère ce qui les dépasse ; le Capricorne découvre chez les Poissons une tendresse et une magie que son réalisme ignorait, et qui réchauffent son austérité. Le roc et l’océan se rencontrent sans se combattre : les Poissons contournent ce que le Capricorne n’impose pas, le Capricorne s’attendrit devant une douceur qui ne le juge jamais. Leur amour a une qualité rare de refuge mutuel.',
+    forces:
+      'Une complémentarité profonde — l’ancrage pour les Poissons, la tendresse pour le Capricorne —, une loyauté sérieuse des deux côtés, et un refuge mutuel : le Capricorne protège, les Poissons consolent. Chacun donne exactement ce qui manque à l’autre.',
+    defis:
+      'Le rapport au réel et à l’émotion : le flou des Poissons face au concret exaspère parfois le Capricorne rigoureux, dont la pudeur et la froideur apparente laissent les Poissons affamés de tendresse démonstrative. Deux langages affectifs à traduire.',
+    conseil:
+      'Capricorne : vos Poissons ont besoin de tendresse exprimée, pas seulement de sécurité assurée — descendez de la structure au cœur. Poissons : honorez les repères concrets de votre Capricorne, cette fiabilité minimale est ce qui vous permet de rêver en sécurité.',
+    faq: [
+      {
+        q: 'Capricorne et Poissons sont-ils compatibles en amour ?',
+        a: 'Oui, c’est l’une des complémentarités les plus harmonieuses du zodiaque, en sextile Terre-Eau. Le Capricorne apporte l’ancrage et la sécurité dont les Poissons manquent, les Poissons la tendresse et la magie qui adoucissent le Capricorne : chacun comble le vide de l’autre, d’où une note de 4 sur 5. Le roc protège le rêve, le rêve réchauffe le roc. La relation demande surtout de traduire deux langages affectifs opposés.',
+      },
+      {
+        q: 'Le Capricorne peut-il vivre avec le flou des Poissons ?',
+        a: 'Oui, s’il distingue le flou vital du flou problématique. Les Poissons ont besoin d’imprécision et de rêverie pour respirer ; c’est leur écologie mentale, pas de la négligence. Le Capricorne, rigoureux, doit sanctuariser l’essentiel — engagements, finances, fiabilité — et lâcher le reste. En échange, il gagne une douceur et une inspiration que son monde structuré ne connaissait pas. Beaucoup de ces couples trouvent un équilibre étonnamment durable.',
+      },
+      {
+        q: 'Pourquoi les Poissons se sentent-ils parfois mal aimés par le Capricorne ?',
+        a: 'Parce que le Capricorne aime en actes et en silence — sécuriser, protéger, tenir parole — quand les Poissons ont besoin de tendresse exprimée, de mots doux et de fusion émotionnelle. La pudeur du Capricorne peut ressembler à de la froideur pour un signe aussi sensible. Le Capricorne ne manque pas d’amour, il manque de démonstration ; faire l’effort conscient de dire et montrer sa tendresse comble ce que les Poissons attendent réellement.',
+      },
+    ],
+  },
+  {
+    slug: 'taureau-sagittaire',
+    signA: 'Taureau',
+    signB: 'Sagittaire',
+    score: 2,
+    titre: 'Le sédentaire et le nomade, quinconce délicat',
+    answerCapsule:
+      'La compatibilité amoureuse entre le Taureau et le Sagittaire oppose le sédentaire et le nomade, en quinconce sans terrain commun naturel. Le Taureau de Terre veut la sécurité, le confort, la routine rassurante ; le Sagittaire de Feu veut l’aventure, la liberté, l’horizon toujours plus loin. L’attirance des contraires existe — le Taureau est fasciné par l’optimisme du Sagittaire, le Sagittaire par la solidité du Taureau — mais le quotidien confronte deux besoins presque inconciliables, d’où une note de 2 sur 5. Le Taureau vit les départs du Sagittaire comme de l’instabilité, le Sagittaire vit l’attachement du Taureau comme une entrave. Pour tenir, le Taureau doit accepter le besoin d’air du Sagittaire et le Sagittaire offrir au Taureau des ancrages fiables. Une consultation peut éclairer le potentiel réel de votre couple Taureau-Sagittaire.',
+    dynamique:
+      'Taureau et Sagittaire forment un quinconce, l’angle de l’ajustement permanent, entre la Terre qui s’enracine et le Feu qui s’élance. Le Taureau, gouverné par Vénus, cherche la sécurité, la sensualité, le confort d’un nid stable ; le Sagittaire, gouverné par Jupiter, cherche la liberté, l’aventure, l’expansion vers de nouveaux horizons. Le Taureau est d’abord séduit par la joie de vivre et l’optimisme contagieux du Sagittaire, qui l’ouvre au monde ; le Sagittaire est rassuré par la solidité tranquille du Taureau, qui lui offre une base. Mais leurs besoins fondamentaux s’opposent : le Taureau veut poser ses valises pour toujours, le Sagittaire veut les garder prêtes. L’un vit le mouvement comme une menace, l’autre la routine comme une prison.',
+    forces:
+      'Une complémentarité possible : le Sagittaire apporte l’air frais et l’aventure qui empêchent le Taureau de s’encroûter, le Taureau offre l’ancrage et la fidélité qui manquent au Sagittaire. Ensemble, ils peuvent équilibrer racines et voyages.',
+    defis:
+      'Sécurité contre liberté, au maximum : le Taureau possessif s’inquiète des envolées du Sagittaire, qui étouffe sous les habitudes du Taureau. L’un veut rester, l’autre veut partir ; leurs rythmes et leurs valeurs de vie divergent profondément.',
+    conseil:
+      'Taureau : la liberté de votre Sagittaire n’est pas de l’infidélité, c’est son oxygène — le retenir le fait fuir. Sagittaire : offrez à votre Taureau des repères stables et de la présence fiable ; cette base rassurante est ce qui lui permet de vous laisser voyager.',
+    faq: [
+      {
+        q: 'Taureau et Sagittaire peuvent-ils former un couple ?',
+        a: 'C’est une combinaison délicate, en quinconce, qui oppose le besoin de sécurité du Taureau au besoin de liberté du Sagittaire. Leurs valeurs de vie divergent profondément — s’enraciner contre explorer — d’où une note de 2 sur 5. L’attirance des contraires est réelle mais doit se transformer en ajustement constant. Les couples qui réussissent trouvent un équilibre où le Taureau accorde de l’air au Sagittaire et le Sagittaire offre de l’ancrage au Taureau.',
+      },
+      {
+        q: 'Pourquoi le Taureau s’inquiète-t-il avec le Sagittaire ?',
+        a: 'Parce que le Sagittaire a un besoin viscéral de liberté, de mouvement et d’aventure, ce qui active toutes les alarmes du Taureau, attaché à la sécurité et à l’exclusivité. Les départs, les projets de voyage et l’indépendance du Sagittaire sont vécus par le Taureau comme de l’instabilité, voire une menace pour le couple. Le malentendu est réel : le Sagittaire est fidèle à sa manière, simplement allergique à l’enfermement. Le Taureau doit apprendre à distinguer liberté et abandon.',
+      },
+      {
+        q: 'Comment ce couple concilie-t-il des besoins si opposés ?',
+        a: 'En inventant un mode de vie qui honore les deux : une base solide d’où l’on part et vers laquelle on revient. Le Taureau tient le foyer, les finances et les repères ; le Sagittaire y ramène les aventures, les voyages et l’oxygène. Beaucoup de ces couples fonctionnent sur ce modèle du camp de base — l’un garde le feu allumé, l’autre explore le monde, et chacun a besoin de l’autre pour que le voyage ait un port et que le nid ait une âme.',
+      },
+    ],
+  },
 ];
