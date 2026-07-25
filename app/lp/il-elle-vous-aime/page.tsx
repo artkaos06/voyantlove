@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from 'next';
 import { recordLanderLoad } from '@/lib/lpTrack';
+import { availabilityNow, type Availability } from '@/lib/availability';
 
 // MGID test — Angle 2 "Relationship Clarity" (emotional hook).
 // Ad headline: "Il/Elle vous aime vraiment ? La révélation en 2 min"
@@ -89,7 +90,7 @@ const STYLE = `
 .vq-footer{text-align:center;font-size:11px;color:rgba(255,255,255,0.45);margin-top:28px}
 `;
 
-function Result({ spec }: { spec: string }) {
+function Result({ spec, av }: { spec: string; av: Availability }) {
   return (
     <div className="vq-result-inner">
       <div className="vq-seal">🔮</div>
@@ -99,7 +100,7 @@ function Result({ spec }: { spec: string }) {
 
       <a href={`tel:${PHONE}`} className="vq-cta">
         <span className="vq-cta-num">📞 {PHONE_DISPLAY}</span>
-        <span className="vq-cta-sub">Appeler maintenant — 10 min offertes</span>
+        <span className="vq-cta-sub">{av.ctaSub}</span>
       </a>
 
       <div className="vq-pricing">
@@ -108,8 +109,8 @@ function Result({ spec }: { spec: string }) {
       </div>
 
       <div className="vq-urgency">
-        <div>⏱️ <strong>Seulement 3 consultations</strong> disponibles ce soir</div>
-        <div>👥 <strong>247 appels</strong> aujourd&apos;hui</div>
+        <div>{av.scarcity}</div>
+        <div>{av.callsToday}</div>
         <div>⭐ <strong>4,7/5</strong> satisfaction clients</div>
       </div>
 
@@ -127,12 +128,15 @@ export default async function LPIlElleVousAime({
 }) {
   await recordLanderLoad('il-elle-vous-aime', await searchParams);
 
+  // Copy adapts to the real request time — see lib/availability.ts.
+  const av = availabilityNow();
+
   return (
     <div className="vq-body">
       <style dangerouslySetInnerHTML={{ __html: STYLE }} />
 
       <div className="vq-container">
-        <div className="vq-badge"><span className="vq-pulse" /> Voyants disponibles maintenant</div>
+        <div className="vq-badge"><span className="vq-pulse" /> {av.badge}</div>
         <h1 className="vq-h1">Il/Elle vous aime vraiment&nbsp;?</h1>
         <p className="vq-intro">Une question, et votre réponse immédiate.</p>
 
@@ -151,7 +155,7 @@ export default async function LPIlElleVousAime({
 
           {OPTIONS.map((o) => (
             <div key={o.id} className={`vq-step vq-r-${o.id}`}>
-              <Result spec={o.spec} />
+              <Result spec={o.spec} av={av} />
             </div>
           ))}
         </div>

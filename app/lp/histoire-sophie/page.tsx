@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from 'next';
 import { recordLanderLoad } from '@/lib/lpTrack';
+import { availabilityNow } from '@/lib/availability';
 
 // MGID test — Angle 3 "Testimonial" (social proof).
 // Ad headline: "'J'ai appelé et il est revenu 3 jours après' — Sophie, 29 ans"
@@ -78,12 +79,12 @@ const STYLE = `
      color:#fff;font-weight:800;text-decoration:none;font-size:17px}
 `;
 
-function CallBlock() {
+function CallBlock({ ctaSub }: { ctaSub: string }) {
   return (
     <>
       <a href={`tel:${PHONE}`} className="vs-cta">
         <span className="vs-cta-num">📞 {PHONE_DISPLAY}</span>
-        <span className="vs-cta-sub">Parler à un voyant — 10 min offertes</span>
+        <span className="vs-cta-sub">{ctaSub}</span>
       </a>
       <div className="vs-pricing">
         <div className="vs-pricing-free">🎁 10 premières minutes OFFERTES</div>
@@ -100,12 +101,15 @@ export default async function LPHistoireSophie({
 }) {
   await recordLanderLoad('histoire-sophie', await searchParams);
 
+  // Copy adapts to the real request time — see lib/availability.ts.
+  const av = availabilityNow();
+
   return (
     <div className="vs-body">
       <style dangerouslySetInnerHTML={{ __html: STYLE }} />
 
       <div className="vs-container">
-        <div className="vs-badge"><span className="vs-pulse" /> Voyants disponibles maintenant</div>
+        <div className="vs-badge"><span className="vs-pulse" /> {av.badge}</div>
 
         <h1 className="vs-h1">« J&apos;ai appelé, et tout a changé en quelques jours »</h1>
         <p className="vs-by">Le témoignage de Sophie, 29 ans — Toulouse</p>
@@ -141,7 +145,7 @@ export default async function LPHistoireSophie({
           empiraient les choses. »
         </p>
 
-        <CallBlock />
+        <CallBlock ctaSub={av.ctaSub} />
 
         <p className="vs-p">
           Sophie arrête d&apos;écrire. <strong>Trois jours plus tard, c&apos;est lui qui
@@ -155,8 +159,8 @@ export default async function LPHistoireSophie({
         </p>
 
         <div className="vs-urgency">
-          <div>⏱️ <strong>Seulement 3 consultations</strong> disponibles ce soir</div>
-          <div>👥 <strong>247 appels</strong> aujourd&apos;hui</div>
+          <div>{av.scarcity}</div>
+          <div>{av.callsToday}</div>
           <div>⭐ <strong>4,7/5</strong> satisfaction clients</div>
         </div>
 

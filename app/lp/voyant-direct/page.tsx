@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from 'next';
 import { recordLanderLoad } from '@/lib/lpTrack';
+import { availabilityNow } from '@/lib/availability';
 
 // Zero-JS lander: no 'use client', no client components, no per-page
 // <Script>. MGID's top FR sources are Xiaomi in-app newsfeed browsers,
@@ -99,19 +100,22 @@ export default async function LPVoyantDirect({
   // Reading searchParams opts this page into dynamic rendering.
   await recordLanderLoad('voyant-direct', await searchParams);
 
+  // Copy adapts to the real request time — see lib/availability.ts.
+  const av = availabilityNow();
+
   return (
     <div className="vd-body">
       <style dangerouslySetInnerHTML={{ __html: STYLE }} />
 
       <div className="vd-container">
-        <div className="vd-badge"><span className="vd-pulse" /> Voyants disponibles maintenant</div>
+        <div className="vd-badge"><span className="vd-pulse" /> {av.badge}</div>
 
         <h1 className="vd-h1">Votre voyant disponible maintenant — appel privé</h1>
         <p className="vd-sub">Consultation téléphonique confidentielle. Réponses claires sur l&apos;amour, le couple, l&apos;avenir.</p>
 
         <a href={`tel:${PHONE}`} className="vd-cta-btn">
           <div className="vd-phone">📞 {PHONE_DISPLAY}</div>
-          <div className="vd-phone-sub">Appeler maintenant — 10 min offertes</div>
+          <div className="vd-phone-sub">{av.ctaSub}</div>
         </a>
 
         <div className="vd-pricing">
@@ -125,9 +129,9 @@ export default async function LPVoyantDirect({
         </div>
 
         <div className="vd-urgency">
-          <div className="vd-urgency-row">⏱️ <strong>Seulement 3 places</strong> ce soir après 21h</div>
-          <div className="vd-urgency-row">👥 <strong>247 consultations</strong> réalisées aujourd&apos;hui</div>
-          <div className="vd-urgency-row">⭐ <strong>4.7/5</strong> satisfaction clients</div>
+          <div className="vd-urgency-row">{av.scarcity}</div>
+          <div className="vd-urgency-row">{av.callsToday}</div>
+          <div className="vd-urgency-row">⭐ 4,7/5 satisfaction clients</div>
         </div>
 
         <div className="vd-features">
@@ -149,7 +153,7 @@ export default async function LPVoyantDirect({
       </div>
 
       <div className="vd-sticky-cta">
-        <div className="vd-sticky-info">3 voyants<br />disponibles</div>
+        <div className="vd-sticky-info" style={{ whiteSpace: 'pre-line' }}>{av.stickyInfo}</div>
         <a href={`tel:${PHONE}`}>📞 Appeler</a>
       </div>
     </div>
