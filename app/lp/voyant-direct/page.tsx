@@ -1,17 +1,19 @@
 import type { Metadata, Viewport } from 'next';
 import { recordLanderLoad } from '@/lib/lpTrack';
 import { availabilityNow } from '@/lib/availability';
+import { OFFER } from '@/lib/offer';
+import { PHONE_NUMBERS, formatPhone } from '@/lib/phoneNumbers';
 
 // Zero-JS lander: no 'use client', no client components, no per-page
 // <Script>. MGID's top FR sources are Xiaomi in-app newsfeed browsers,
 // which have historically choked on Next.js hydration — plain
 // server-rendered HTML + CSS renders and is tappable even if JS never
-// runs. Phone = 0175754582, the GORACASH call offer (confirmed 2026-07-25).
-// Do NOT use 0423090950 here — that is Télémaque (bucket 1 in
-// lib/phoneNumbers.ts, used by the quiz funnel). The two offers pay
-// differently and mixing them misattributes revenue. Pricing (10 min free,
-// then 3€/min CB) is Goracash's; Télémaque separately advises affiliates
-// against stating tariffs, so this copy is not portable to a Télémaque page.
+// runs. OFFER: Télémaque (switched from Goracash 2026-07-25). Each angle gets
+// its OWN dedicated Télémaque number so Télémaque's per-number reversement
+// reporting attributes revenue back to the angle — the only way to learn
+// which angle earns, since a phone call carries no click ID. This lander =
+// bucket 1. Never point two landers at the same bucket or that breaks.
+// Pricing terms live in lib/offer.ts.
 //
 // No custom tracking beacon here on purpose: /api/track/quiz writes to the
 // SAME cpl:quiz:<date> KV bucket the quiz funnel dashboard reads, with no
@@ -34,7 +36,7 @@ import { availabilityNow } from '@/lib/availability';
 
 export const metadata: Metadata = {
   title: 'Consultation Voyance Privée — Disponible Maintenant',
-  description: 'Parlez à un voyant expert maintenant. 1er appel gratuit, consultation privée et confidentielle, 7j/7.',
+  description: 'Parlez à un voyant expert maintenant. 15€ les 10 premières minutes, consultation privée et confidentielle, 7j/7.',
   robots: { index: false, follow: false },
 };
 
@@ -45,8 +47,9 @@ export const viewport: Viewport = {
   userScalable: false,
 };
 
-const PHONE = '0175754582';
-const PHONE_DISPLAY = '01 75 75 45 82';
+// Télémaque attribution bucket 1 (angle 1 "Immediate Help").
+const PHONE = PHONE_NUMBERS['1'];
+const PHONE_DISPLAY = formatPhone(PHONE);
 
 const STYLE = `
 .vd-body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
@@ -119,8 +122,9 @@ export default async function LPVoyantDirect({
         </a>
 
         <div className="vd-pricing">
-          <div className="vd-pricing-free">🎁 10 premières minutes OFFERTES</div>
-          <div className="vd-pricing-then">Puis <strong>seulement 3€/minute</strong> — paiement CB sécurisé</div>
+          <div className="vd-pricing-free">💳 {OFFER.intro}</div>
+          <div className="vd-pricing-then"><strong>{OFFER.introPerMin}</strong></div>
+          <div className="vd-pricing-then">{OFFER.after} · {OFFER.payment}</div>
         </div>
 
         <div className="vd-social-proof">

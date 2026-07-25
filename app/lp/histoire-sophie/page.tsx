@@ -1,6 +1,8 @@
 import type { Metadata, Viewport } from 'next';
 import { recordLanderLoad } from '@/lib/lpTrack';
 import { availabilityNow } from '@/lib/availability';
+import { OFFER } from '@/lib/offer';
+import { PHONE_NUMBERS, formatPhone } from '@/lib/phoneNumbers';
 
 // MGID test — Angle 3 "Testimonial" (social proof).
 // Ad headline: "'J'ai appelé et il est revenu 3 jours après' — Sophie, 29 ans"
@@ -33,11 +35,11 @@ export const viewport: Viewport = {
   userScalable: false,
 };
 
-// Goracash call offer. NOT 0423090950 — that is Télémaque (bucket 1 in
-// lib/phoneNumbers.ts, used by the quiz funnel); the two offers pay
-// differently and mixing them misattributes revenue.
-const PHONE = '0175754582';
-const PHONE_DISPLAY = '01 75 75 45 82';
+// Télémaque attribution bucket 3 (angle 3 "Testimonial"). One bucket per
+// angle is what makes per-angle revenue readable in Télémaque's reversement
+// reporting — never share a bucket with another lander.
+const PHONE = PHONE_NUMBERS['3'];
+const PHONE_DISPLAY = formatPhone(PHONE);
 
 const STYLE = `
 .vs-body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
@@ -87,8 +89,9 @@ function CallBlock({ ctaSub }: { ctaSub: string }) {
         <span className="vs-cta-sub">{ctaSub}</span>
       </a>
       <div className="vs-pricing">
-        <div className="vs-pricing-free">🎁 10 premières minutes OFFERTES</div>
-        <div className="vs-pricing-then">Puis <strong>seulement 3€/minute</strong> — paiement CB sécurisé</div>
+        <div className="vs-pricing-free">💳 {OFFER.intro}</div>
+        <div className="vs-pricing-then"><strong>{OFFER.introPerMin}</strong></div>
+        <div className="vs-pricing-then">{OFFER.after} · {OFFER.payment}</div>
       </div>
     </>
   );

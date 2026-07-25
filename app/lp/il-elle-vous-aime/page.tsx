@@ -1,6 +1,8 @@
 import type { Metadata, Viewport } from 'next';
 import { recordLanderLoad } from '@/lib/lpTrack';
 import { availabilityNow, type Availability } from '@/lib/availability';
+import { OFFER } from '@/lib/offer';
+import { PHONE_NUMBERS, formatPhone } from '@/lib/phoneNumbers';
 
 // MGID test — Angle 2 "Relationship Clarity" (emotional hook).
 // Ad headline: "Il/Elle vous aime vraiment ? La révélation en 2 min"
@@ -31,11 +33,11 @@ export const viewport: Viewport = {
   userScalable: false,
 };
 
-// Goracash call offer. NOT 0423090950 — that is Télémaque (bucket 1 in
-// lib/phoneNumbers.ts, used by the quiz funnel); the two offers pay
-// differently and mixing them misattributes revenue.
-const PHONE = '0175754582';
-const PHONE_DISPLAY = '01 75 75 45 82';
+// Télémaque attribution bucket 2 (angle 2 "Relationship Clarity"). One bucket
+// per angle is what makes per-angle revenue readable in Télémaque's
+// reversement reporting — never share a bucket with another lander.
+const PHONE = PHONE_NUMBERS['2'];
+const PHONE_DISPLAY = formatPhone(PHONE);
 
 // One option → one result. `spec` fills "Un voyant spécialisé en …".
 const OPTIONS = [
@@ -104,8 +106,9 @@ function Result({ spec, av }: { spec: string; av: Availability }) {
       </a>
 
       <div className="vq-pricing">
-        <div className="vq-pricing-free">🎁 10 premières minutes OFFERTES</div>
-        <div className="vq-pricing-then">Puis <strong>seulement 3€/minute</strong> — paiement CB sécurisé</div>
+        <div className="vq-pricing-free">💳 {OFFER.intro}</div>
+        <div className="vq-pricing-then"><strong>{OFFER.introPerMin}</strong></div>
+        <div className="vq-pricing-then">{OFFER.after} · {OFFER.payment}</div>
       </div>
 
       <div className="vq-urgency">
