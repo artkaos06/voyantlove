@@ -66,11 +66,11 @@ const STYLE = `
      box-shadow:0 8px 32px rgba(255,107,157,0.4);margin:24px 0 10px}
 .vs-cta-num{font-size:26px;font-weight:800;letter-spacing:1px;display:block}
 .vs-cta-sub{font-size:13px;opacity:.92;display:block;margin-top:3px}
-.vs-pricing{background:rgba(74,222,128,0.1);border:1px solid rgba(74,222,128,0.35);
-     border-radius:12px;padding:14px;margin:16px 0;text-align:center}
-.vs-pricing-free{font-size:16px;font-weight:800;color:#4ade80;margin-bottom:3px}
-.vs-pricing-then{font-size:13px;color:rgba(255,255,255,0.85)}
-.vs-pricing-then strong{color:#f4d98a;font-size:15px}
+/* Quiet by design — see the note on .vd-pricing in voyant-direct. */
+.vs-pricing{margin:12px 0 16px;text-align:center}
+.vs-pricing-lead{font-size:12.5px;font-weight:700;color:rgba(255,255,255,0.72);
+     margin-bottom:2px;line-height:1.4}
+.vs-pricing-then{font-size:11.5px;color:rgba(255,255,255,0.5);line-height:1.45}
 .vs-urgency{background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.1);
      border-radius:12px;padding:14px;margin:16px 0;font-size:13.5px}
 .vs-urgency div{margin:6px 0}
@@ -96,8 +96,7 @@ function CallBlock({ ctaSub }: { ctaSub: string }) {
         <span className="vs-cta-sub">{ctaSub}</span>
       </a>
       <div className="vs-pricing">
-        <div className="vs-pricing-free">💳 {OFFER.intro}</div>
-        <div className="vs-pricing-then"><strong>{OFFER.introPerMin}</strong></div>
+        <div className="vs-pricing-lead">💳 {OFFER.intro} — {OFFER.introPerMin}</div>
         <div className="vs-pricing-then">{OFFER.after} · {OFFER.payment}</div>
       </div>
     </>

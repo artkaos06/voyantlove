@@ -20,8 +20,10 @@
 export const OFFER = {
   /** Headline price for the entry consultation. */
   intro: '15€ les 10 premières minutes',
-  /** Per-minute reframing — the intro is genuinely the cheapest rate on offer. */
-  introPerMin: 'soit seulement 1,50€ la minute',
+  /** Per-minute reframing — the intro is genuinely the cheapest rate on offer.
+   *  Kept terse ("soit 1,50€/min", not "soit seulement 1,50€ la minute") so the
+   *  slim price line fits on one row on a 375px screen. */
+  introPerMin: 'soit 1,50€/min',
   /** Honest disclosure of what happens after the intro block. */
   after: 'Puis de 4,50€ à 9,50€/min selon le voyant choisi',
   /** Payment reassurance. CB is the dominant method; others exist. */

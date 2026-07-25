@@ -76,11 +76,14 @@ const STYLE = `
 .vd-urgency-row{display:flex;align-items:center;gap:10px;margin:8px 0;font-size:14px}
 .vd-social-proof{background:rgba(244,217,138,0.12);border-left:3px solid #f4d98a;
               padding:14px 16px;border-radius:0 12px 12px 0;margin:20px 0;font-size:14px}
-.vd-pricing{background:rgba(74,222,128,0.1);border:1px solid rgba(74,222,128,0.35);
-         border-radius:12px;padding:16px;margin:0 0 20px;text-align:center}
-.vd-pricing-free{font-size:17px;font-weight:800;color:#4ade80;margin-bottom:4px}
-.vd-pricing-then{font-size:14px;color:rgba(255,255,255,0.85)}
-.vd-pricing-then strong{color:#f4d98a;font-size:16px}
+/* Deliberately quiet: no box, no border, no green. The price stays directly
+   under the CTA so it pre-qualifies on cost (RevShare only pays when the
+   caller pays, so a tap from someone who balks at 15€ is worthless), but it
+   no longer competes visually with the emotional copy. */
+.vd-pricing{margin:0 0 18px;text-align:center}
+.vd-pricing-lead{font-size:12.5px;font-weight:700;color:rgba(255,255,255,0.72);
+         margin-bottom:2px;line-height:1.4}
+.vd-pricing-then{font-size:11.5px;color:rgba(255,255,255,0.5);line-height:1.45}
 .vd-features{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:20px 0}
 .vd-feature{background:rgba(255,255,255,0.06);padding:12px;border-radius:10px;font-size:12px;
          text-align:center}
@@ -125,8 +128,7 @@ export default async function LPVoyantDirect({
         </a>
 
         <div className="vd-pricing">
-          <div className="vd-pricing-free">💳 {OFFER.intro}</div>
-          <div className="vd-pricing-then"><strong>{OFFER.introPerMin}</strong></div>
+          <div className="vd-pricing-lead">💳 {OFFER.intro} — {OFFER.introPerMin}</div>
           <div className="vd-pricing-then">{OFFER.after} · {OFFER.payment}</div>
         </div>
 
