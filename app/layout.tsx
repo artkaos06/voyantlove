@@ -188,6 +188,11 @@ export default function RootLayout({
                   var v = params.get(k);
                   if (v) mgid[k] = v;
                 });
+                // MGID's link builder emits adclid={click_id}: the param on
+                // the wire is 'adclid' even though the macro is {click_id}.
+                if (!mgid.click_id) {
+                  mgid.click_id = params.get('adclid') || '';
+                }
               } catch (_) {}
 
               var payload = JSON.stringify({

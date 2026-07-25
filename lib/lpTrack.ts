@@ -61,7 +61,11 @@ export function readTracking(sp: SP): LpTracking {
   return {
     source: normaliseSource(one(sp, 'source')),
     sid: one(sp, 'sid', 32),
-    clickId: one(sp, 'click_id', 64),
+    // MGID's tracking-link builder emits `adclid={click_id}` by default, so
+    // the param on the wire is `adclid` even though the macro is named
+    // {click_id}. Accept either: a mismatch here is invisible — attribution
+    // and the conversion relay would just silently stay empty.
+    clickId: one(sp, 'click_id', 64) || one(sp, 'adclid', 64),
     creativeId: one(sp, 'creative_id', 32),
   };
 }
