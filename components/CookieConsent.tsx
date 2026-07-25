@@ -147,6 +147,39 @@ function applyConsent(categories: string[]) {
   });
 
   if (analyticsGranted) loadClarity();
+  if (marketing === 'granted') loadMgidSensor();
+}
+
+/**
+ * MGID Sensor (base conversion pixel, cid 982296).
+ *
+ * Gated on MARKETING consent, not loaded eagerly: it is an advertising
+ * tracker on a French site, and CNIL does not exempt ad trackers from prior
+ * consent. Same treatment as the Google ad_storage signals above.
+ *
+ * TRADE-OFF, worth knowing before reading the numbers: visitors who ignore
+ * or refuse the banner never fire this pixel, so MGID's reported conversion
+ * count will be LOWER than the true tap count in /api/admin/lp-funnel. Those
+ * two numbers are supposed to disagree — lp-funnel counts every tap
+ * server-side, MGID only counts consented ones. Do not treat the gap as a
+ * tracking bug.
+ */
+function loadMgidSensor() {
+  if (typeof window === 'undefined') return;
+  const w = window as Window & { MgSensorData?: unknown[]; __mgidSensorLoaded?: boolean };
+  if (w.__mgidSensorLoaded) return; // onConsent + onChange can both fire
+  w.__mgidSensorLoaded = true;
+
+  w.MgSensorData = w.MgSensorData || [];
+  w.MgSensorData.push({ cid: 982296, project: 'a.mgid.com' });
+
+  const d = document;
+  const n = d.getElementsByTagName('script')[0];
+  const s = d.createElement('script');
+  s.type = 'text/javascript';
+  s.async = true;
+  s.src = 'https://a.mgid.com/mgsensor.js?d=' + Date.now();
+  n.parentNode?.insertBefore(s, n);
 }
 
 function loadClarity() {
