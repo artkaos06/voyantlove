@@ -3,6 +3,7 @@ import { recordLanderLoad } from '@/lib/lpTrack';
 import { availabilityNow } from '@/lib/availability';
 import { OFFER } from '@/lib/offer';
 import { PHONE_NUMBERS, formatPhone } from '@/lib/phoneNumbers';
+import VoyantStrip from '@/components/VoyantStrip';
 
 // MGID test — Angle 3 "Testimonial" (social proof).
 // Ad headline: "'J'ai appelé et il est revenu 3 jours après' — Sophie, 29 ans"
@@ -44,12 +45,13 @@ const PHONE_DISPLAY = formatPhone(PHONE);
 const STYLE = `
 .vs-body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
      background:linear-gradient(160deg,#241657 0%,#3a1d6e 55%,#4a1f5e 100%);
-     color:#fff;min-height:100vh;padding:24px 20px 40px;line-height:1.6}
+     color:#fff;min-height:100vh;min-height:100dvh;padding:24px 20px 40px;line-height:1.6}
 .vs-container{max-width:420px;margin:0 auto;padding-bottom:90px}
 .vs-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,0.12);
        border-radius:20px;padding:6px 14px;font-size:12px;margin-bottom:14px}
 .vs-pulse{width:8px;height:8px;background:#4ade80;border-radius:50%;animation:vs-pulse 2s infinite}
 @keyframes vs-pulse{0%,100%{opacity:1}50%{opacity:.4}}
+@media (prefers-reduced-motion: reduce){.vs-pulse{animation:none}}
 .vs-h1{font-size:24px;font-weight:800;margin-bottom:6px;line-height:1.3}
 .vs-by{font-size:13px;color:#f4d98a;font-weight:700;margin-bottom:20px}
 .vs-quote{background:rgba(244,217,138,0.12);border-left:3px solid #f4d98a;
@@ -57,7 +59,7 @@ const STYLE = `
      font-weight:700;font-style:italic}
 .vs-p{font-size:15.5px;color:rgba(255,255,255,0.88);margin-bottom:16px}
 .vs-p strong{color:#fff}
-.vs-cta{display:block;width:100%;padding:18px;border-radius:16px;
+.vs-cta{display:block;touch-action:manipulation;width:100%;padding:18px;border-radius:16px;
      background:linear-gradient(90deg,#ff6b9d,#ff8f6b);color:#fff;
      font-weight:800;text-align:center;text-decoration:none;min-height:60px;
      box-shadow:0 8px 32px rgba(255,107,157,0.4);margin:24px 0 10px}
@@ -84,6 +86,10 @@ const STYLE = `
 function CallBlock({ ctaSub }: { ctaSub: string }) {
   return (
     <>
+      {/* Portraits of the real partner network. Deliberately NOT a photo of
+          "Sophie" — inventing a face for a testimonial would present a
+          fabricated person as a real customer. */}
+      <VoyantStrip limit={4} label="Voyants partenaires en ligne" />
       <a href={`tel:${PHONE}`} className="vs-cta">
         <span className="vs-cta-num">📞 {PHONE_DISPLAY}</span>
         <span className="vs-cta-sub">{ctaSub}</span>

@@ -3,6 +3,7 @@ import { recordLanderLoad } from '@/lib/lpTrack';
 import { availabilityNow, type Availability } from '@/lib/availability';
 import { OFFER } from '@/lib/offer';
 import { PHONE_NUMBERS, formatPhone } from '@/lib/phoneNumbers';
+import VoyantStrip from '@/components/VoyantStrip';
 
 // MGID test — Angle 2 "Relationship Clarity" (emotional hook).
 // Ad headline: "Il/Elle vous aime vraiment ? La révélation en 2 min"
@@ -50,17 +51,18 @@ const OPTIONS = [
 const STYLE = `
 .vq-body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
      background:linear-gradient(160deg,#241657 0%,#3a1d6e 55%,#4a1f5e 100%);
-     color:#fff;min-height:100vh;padding:24px 20px 40px;line-height:1.5}
+     color:#fff;min-height:100vh;min-height:100dvh;padding:24px 20px 40px;line-height:1.5}
 .vq-container{max-width:420px;margin:0 auto}
 .vq-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,0.12);
        border-radius:20px;padding:6px 14px;font-size:12px;margin-bottom:14px}
 .vq-pulse{width:8px;height:8px;background:#4ade80;border-radius:50%;animation:vq-pulse 2s infinite}
 @keyframes vq-pulse{0%,100%{opacity:1}50%{opacity:.4}}
+@media (prefers-reduced-motion: reduce){.vq-pulse{animation:none}}
 .vq-h1{font-size:25px;font-weight:800;margin-bottom:8px;line-height:1.25}
 .vq-intro{font-size:15px;color:rgba(255,255,255,0.75);margin-bottom:24px}
 .vq-radio{position:absolute;opacity:0;width:0;height:0;pointer-events:none}
 .vq-q{font-size:21px;font-weight:800;margin-bottom:18px;line-height:1.3}
-.vq-opt{width:100%;padding:16px;margin-bottom:11px;border-radius:12px;
+.vq-opt{width:100%;touch-action:manipulation;padding:16px;margin-bottom:11px;border-radius:12px;
      background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.16);
      font-weight:600;font-size:16px;cursor:pointer;min-height:58px;
      display:flex;align-items:center}
@@ -71,10 +73,21 @@ const STYLE = `
 .vq-flow input#opt-celib:checked ~ .vq-r-celib{display:block}
 .vq-flow input#opt-complique:checked ~ .vq-r-complique{display:block}
 .vq-flow input#opt-rupture:checked ~ .vq-r-rupture{display:block}
-.vq-result-inner{text-align:center}
+.vq-result-inner{text-align:center;padding-bottom:86px}
+/* Sticky CTA is gated on an answer. Showing the phone number on the question
+   screen would let visitors skip the one question, which is the entire
+   mechanic of this angle — so it rides the same :checked selector. */
+.vq-sticky{display:none;position:fixed;bottom:0;left:0;right:0;
+     background:rgba(36,22,87,0.97);padding:12px 20px;
+     border-top:1px solid rgba(255,255,255,0.12);z-index:100}
+.vq-flow input:checked ~ .vq-sticky{display:block}
+.vq-sticky a{display:flex;align-items:center;justify-content:center;width:100%;
+     min-height:60px;border-radius:12px;touch-action:manipulation;
+     background:linear-gradient(90deg,#ff6b9d,#ff8f6b);color:#fff;font-weight:800;
+     text-decoration:none;font-size:17px}
 .vq-seal{font-size:40px;margin-bottom:10px}
 .vq-rh{font-size:22px;font-weight:800;margin-bottom:18px;line-height:1.35}
-.vq-cta{display:block;width:100%;padding:18px;border-radius:16px;
+.vq-cta{display:block;touch-action:manipulation;width:100%;padding:18px;border-radius:16px;
      background:linear-gradient(90deg,#ff6b9d,#ff8f6b);color:#fff;
      font-weight:800;text-align:center;text-decoration:none;min-height:60px;
      box-shadow:0 8px 32px rgba(255,107,157,0.4);margin-bottom:10px}
@@ -99,6 +112,10 @@ function Result({ spec, av }: { spec: string; av: Availability }) {
       <div className="vq-rh">
         Un voyant spécialisé en {spec} est disponible maintenant.
       </div>
+
+      {/* Faces at the moment of decision — the result screen IS the CTA screen
+          on this angle, so the trust signal belongs here, not on the question. */}
+      <VoyantStrip limit={4} label="Voyants partenaires en ligne" />
 
       <a href={`tel:${PHONE}`} className="vq-cta">
         <span className="vq-cta-num">📞 {PHONE_DISPLAY}</span>
@@ -161,6 +178,12 @@ export default async function LPIlElleVousAime({
               <Result spec={o.spec} av={av} />
             </div>
           ))}
+
+          {/* Must stay INSIDE .vq-flow: the `input:checked ~` sibling selector
+              can only reach elements that share the inputs' parent. */}
+          <div className="vq-sticky">
+            <a href={`tel:${PHONE}`}>📞 Appeler — {PHONE_DISPLAY}</a>
+          </div>
         </div>
 
         <footer className="vq-footer">

@@ -3,6 +3,7 @@ import { recordLanderLoad } from '@/lib/lpTrack';
 import { availabilityNow } from '@/lib/availability';
 import { OFFER } from '@/lib/offer';
 import { PHONE_NUMBERS, formatPhone } from '@/lib/phoneNumbers';
+import VoyantStrip from '@/components/VoyantStrip';
 
 // Zero-JS lander: no 'use client', no client components, no per-page
 // <Script>. MGID's top FR sources are Xiaomi in-app newsfeed browsers,
@@ -54,15 +55,16 @@ const PHONE_DISPLAY = formatPhone(PHONE);
 const STYLE = `
 .vd-body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
      background:linear-gradient(160deg,#241657 0%,#3a1d6e 55%,#4a1f5e 100%);
-     color:#fff;min-height:100vh;padding:20px;line-height:1.5}
+     color:#fff;min-height:100vh;min-height:100dvh;padding:20px;line-height:1.5}
 .vd-container{max-width:420px;margin:0 auto}
 .vd-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,0.12);
        border-radius:20px;padding:6px 14px;font-size:12px;margin-bottom:16px}
 .vd-pulse{width:8px;height:8px;background:#4ade80;border-radius:50%;animation:vd-pulse 2s infinite}
 @keyframes vd-pulse{0%,100%{opacity:1}50%{opacity:.4}}
+@media (prefers-reduced-motion: reduce){.vd-pulse{animation:none}}
 .vd-h1{font-size:26px;font-weight:800;margin-bottom:12px;line-height:1.2}
 .vd-sub{font-size:16px;color:rgba(255,255,255,0.8);margin-bottom:24px}
-.vd-cta-btn{display:block;width:100%;padding:20px;border-radius:16px;border:none;
+.vd-cta-btn{display:block;touch-action:manipulation;width:100%;padding:20px;border-radius:16px;border:none;
          background:linear-gradient(90deg,#ff6b9d,#ff8f6b);color:#fff;font-size:20px;
          font-weight:800;text-align:center;text-decoration:none;margin-bottom:12px;
          box-shadow:0 8px 32px rgba(255,107,157,0.4);cursor:pointer;min-height:60px}
@@ -126,6 +128,8 @@ export default async function LPVoyantDirect({
           <div className="vd-pricing-then"><strong>{OFFER.introPerMin}</strong></div>
           <div className="vd-pricing-then">{OFFER.after} · {OFFER.payment}</div>
         </div>
+
+        <VoyantStrip label="Voyants partenaires en ligne" />
 
         <div className="vd-social-proof">
           <strong>&laquo;&nbsp;J&apos;hésitais à appeler, mais en 10 minutes tout s&apos;est éclairci.&nbsp;&raquo;</strong><br />
