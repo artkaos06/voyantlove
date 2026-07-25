@@ -103,12 +103,20 @@ export default function RootLayout({
             //    otherwise bypass our server completely).
             try {
               var attribution = { gclid: null, gbraid: null, wbraid: null };
+              // MGID attribution for the angle landers — without these the
+              // tap is recorded but we can't tell which source/creative
+              // produced it, which is the whole point of the angle test.
+              var mgid = { source: '', sid: '', click_id: '', creative_id: '' };
               try {
                 var params = new URLSearchParams(window.location.search);
                 ['gclid', 'gbraid', 'wbraid'].forEach(function (k) {
                   var v = params.get(k) ||
                           (window.sessionStorage && sessionStorage.getItem(k));
                   if (v) attribution[k] = v;
+                });
+                ['source', 'sid', 'click_id', 'creative_id'].forEach(function (k) {
+                  var v = params.get(k);
+                  if (v) mgid[k] = v;
                 });
               } catch (_) {}
 
@@ -119,7 +127,11 @@ export default function RootLayout({
                 referrer: document.referrer || '',
                 gclid: attribution.gclid,
                 gbraid: attribution.gbraid,
-                wbraid: attribution.wbraid
+                wbraid: attribution.wbraid,
+                source: mgid.source,
+                sid: mgid.sid,
+                click_id: mgid.click_id,
+                creative_id: mgid.creative_id
               });
 
               // sendBeacon survives the navigation to the dialer.

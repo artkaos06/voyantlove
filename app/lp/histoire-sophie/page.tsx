@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from 'next';
+import { recordLanderLoad } from '@/lib/lpTrack';
 
 // MGID test — Angle 3 "Testimonial" (social proof).
 // Ad headline: "'J'ai appelé et il est revenu 3 jours après' — Sophie, 29 ans"
@@ -89,7 +90,13 @@ function CallBlock() {
   );
 }
 
-export default function LPHistoireSophie() {
+export default async function LPHistoireSophie({
+  searchParams,
+}: {
+  searchParams: Promise<Record<string, string | string[] | undefined>>;
+}) {
+  await recordLanderLoad('histoire-sophie', await searchParams);
+
   return (
     <div className="vs-body">
       <style dangerouslySetInnerHTML={{ __html: STYLE }} />

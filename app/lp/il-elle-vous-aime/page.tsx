@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from 'next';
+import { recordLanderLoad } from '@/lib/lpTrack';
 
 // MGID test — Angle 2 "Relationship Clarity" (emotional hook).
 // Ad headline: "Il/Elle vous aime vraiment ? La révélation en 2 min"
@@ -116,7 +117,13 @@ function Result({ spec }: { spec: string }) {
   );
 }
 
-export default function LPIlElleVousAime() {
+export default async function LPIlElleVousAime({
+  searchParams,
+}: {
+  searchParams: Promise<Record<string, string | string[] | undefined>>;
+}) {
+  await recordLanderLoad('il-elle-vous-aime', await searchParams);
+
   return (
     <div className="vq-body">
       <style dangerouslySetInnerHTML={{ __html: STYLE }} />

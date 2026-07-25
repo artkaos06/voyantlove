@@ -23,6 +23,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { Color, notifyDiscord } from '@/lib/discord';
 import { recordClickOut } from '@/lib/digestState';
+import { LANDERS, normaliseSource, recordLpEvent } from '@/lib/lpTrack';
 
 export const dynamic = 'force-dynamic';
 
@@ -34,6 +35,17 @@ interface TelClickPayload {
   gbraid?: string;
   wbraid?: string;
   referrer?: string;
+  // MGID attribution, forwarded by the sitewide beacon in app/layout.tsx.
+  source?: string;
+  sid?: string;
+  click_id?: string;
+  creative_id?: string;
+}
+
+/** '/lp/histoire-sophie/' → 'histoire-sophie', else '' (not an angle lander). */
+function landerFromPath(page: string): string {
+  const slug = page.replace(/^\/lp\//, '').replace(/\/$/, '');
+  return LANDERS.has(slug) ? slug : '';
 }
 
 async function handle(request: NextRequest): Promise<NextResponse> {
@@ -58,6 +70,15 @@ async function handle(request: NextRequest): Promise<NextResponse> {
   const wbraid = body.wbraid ? body.wbraid.slice(0, 200) : null;
   const referrer = body.referrer ? body.referrer.slice(0, 200) : null;
 
+  // MGID attribution. `lander` is derived from the path rather than trusted
+  // from the payload, so a stray beacon can't attribute a tap to the wrong
+  // angle. Empty for non-lander pages (site-wide tel: links still ping).
+  const lander = landerFromPath(page);
+  const source = normaliseSource(body.source || '');
+  const sid = (body.sid || '').slice(0, 32);
+  const clickId = (body.click_id || '').slice(0, 64);
+  const creativeId = (body.creative_id || '').slice(0, 32);
+
   const ip =
     request.headers.get('x-forwarded-for')?.split(',')[0]?.trim() ||
     request.headers.get('x-real-ip') ||
@@ -74,6 +95,9 @@ async function handle(request: NextRequest): Promise<NextResponse> {
   console.log('[track] tel_click', {
     phone,
     page,
+    lander,
+    source,
+    creative_id: creativeId,
     attribution_type: attributionType,
     has_gclid: !!gclid,
     has_gbraid: !!gbraid,
@@ -89,22 +113,37 @@ async function handle(request: NextRequest): Promise<NextResponse> {
   // straight to the dialer.
   recordClickOut({ attributionType, ip });
 
-  // Discord notification — awaited so Vercel doesn't kill the call before
-  // it completes (same pattern as /api/go/keen and /api/postback).
+  // Per-source counters for the angle landers, so /api/admin/lp-funnel can
+  // report tap rate by MGID source. No-ops for non-lander pages.
+  if (lander) {
+    await recordLpEvent('tel', lander, {
+      source,
+      sid,
+      clickId,
+      creativeId,
+    });
+  }
+
+  // category:'lead' is REQUIRED, not decoration. notifyDiscord runs in
+  // leads-only mode by default (DISCORD_LEADS_ONLY unset → on), which drops
+  // anything not tagged 'lead' or 'digest'. This call previously passed no
+  // category, so it defaulted to 'other' and every phone tap was silently
+  // discarded before reaching the webhook — the tap is the money signal on a
+  // call offer, so it belongs in the leads feed.
   await notifyDiscord({
-    title: '📞 Tel button tapped on lander',
-    description:
-      'A visitor tapped a tel: link on the lander. Call is being placed to Goracash.',
-    color:
-      attributionType === 'gclid' ||
-      attributionType === 'gbraid' ||
-      attributionType === 'wbraid'
-        ? Color.PURPLE
-        : Color.YELLOW,
+    category: 'lead',
+    title: '📞 Appel lancé depuis un lander',
+    description: `Numéro composé : **${phone || '—'}**`,
+    color: Color.GREEN,
     fields: [
-      { name: 'Page', value: page || '(unknown)', inline: false },
-      { name: 'Phone', value: phone || '(unknown)', inline: true },
-      { name: 'Attribution', value: attributionType, inline: true },
+      { name: 'Angle', value: lander || page || '(hors lander)', inline: true },
+      { name: 'Source MGID', value: source || '—', inline: true },
+      ...(creativeId ? [{ name: 'Créa', value: creativeId, inline: true }] : []),
+      ...(sid ? [{ name: 'source_id', value: sid, inline: true }] : []),
+      ...(clickId ? [{ name: 'click_id', value: clickId, inline: false }] : []),
+      ...(attributionType !== 'none'
+        ? [{ name: 'Attribution', value: attributionType, inline: true }]
+        : []),
       ...(gclid ? [{ name: 'gclid', value: gclid, inline: false }] : []),
       ...(gbraid ? [{ name: 'gbraid', value: gbraid, inline: false }] : []),
       ...(wbraid ? [{ name: 'wbraid', value: wbraid, inline: false }] : []),

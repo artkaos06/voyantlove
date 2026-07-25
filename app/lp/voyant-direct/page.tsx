@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from 'next';
+import { recordLanderLoad } from '@/lib/lpTrack';
 
 // Zero-JS lander: no 'use client', no client components, no per-page
 // <Script>. MGID's top FR sources are Xiaomi in-app newsfeed browsers,
@@ -87,7 +88,16 @@ const STYLE = `
 .vd-sticky-info{font-size:11px;color:rgba(255,255,255,0.7);margin-right:12px}
 `;
 
-export default function LPVoyantDirect() {
+export default async function LPVoyantDirect({
+  searchParams,
+}: {
+  searchParams: Promise<Record<string, string | string[] | undefined>>;
+}) {
+  // Server-side load counting — accurate even when JS never runs, which is
+  // the case on a chunk of MGID's Xiaomi/Huawei in-app browser traffic.
+  // Reading searchParams opts this page into dynamic rendering.
+  await recordLanderLoad('voyant-direct', await searchParams);
+
   return (
     <div className="vd-body">
       <style dangerouslySetInnerHTML={{ __html: STYLE }} />
