@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from 'next';
-import { recordLanderLoad } from '@/lib/lpTrack';
+import { recordLanderLoad, readTracking, one } from '@/lib/lpTrack';
+import { LanderFaq, LanderEmailForm } from '@/components/LanderExtras';
 import { availabilityNow } from '@/lib/availability';
 import { OFFER } from '@/lib/offer';
 import { PHONE_NUMBERS, formatPhone } from '@/lib/phoneNumbers';
@@ -108,10 +109,16 @@ export default async function LPHistoireSophie({
 }: {
   searchParams: Promise<Record<string, string | string[] | undefined>>;
 }) {
-  await recordLanderLoad('histoire-sophie', await searchParams);
+  const sp = await searchParams;
+  await recordLanderLoad('histoire-sophie', sp);
 
   // Copy adapts to the real request time — see lib/availability.ts.
   const av = availabilityNow();
+
+  // Email form state round-trips through the URL (native POST/Redirect/GET).
+  const t = readTracking(sp);
+  const merci = one(sp, 'merci', 8);
+  const done = merci === '1' ? 'ok' : merci === 'err' ? 'err' : undefined;
 
   return (
     <div className="vs-body">
@@ -172,6 +179,15 @@ export default async function LPHistoireSophie({
           <div>{av.callsToday}</div>
           <div>⭐ <strong>4,7/5</strong> satisfaction clients</div>
         </div>
+
+        <LanderFaq />
+
+        <LanderEmailForm
+          lander="histoire-sophie"
+          source={t.source}
+          sid={t.sid}
+          done={done}
+        />
 
         <p className="vs-disclaimer">
           Témoignage individuel recueilli auprès d&apos;une consultante. Chaque

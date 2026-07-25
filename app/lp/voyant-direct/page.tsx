@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from 'next';
-import { recordLanderLoad } from '@/lib/lpTrack';
+import { recordLanderLoad, readTracking, one } from '@/lib/lpTrack';
+import { LanderFaq, LanderEmailForm } from '@/components/LanderExtras';
 import { availabilityNow } from '@/lib/availability';
 import { OFFER } from '@/lib/offer';
 import { PHONE_NUMBERS, formatPhone } from '@/lib/phoneNumbers';
@@ -107,10 +108,17 @@ export default async function LPVoyantDirect({
   // Server-side load counting — accurate even when JS never runs, which is
   // the case on a chunk of MGID's Xiaomi/Huawei in-app browser traffic.
   // Reading searchParams opts this page into dynamic rendering.
-  await recordLanderLoad('voyant-direct', await searchParams);
+  const sp = await searchParams;
+  await recordLanderLoad('voyant-direct', sp);
 
   // Copy adapts to the real request time — see lib/availability.ts.
   const av = availabilityNow();
+
+  // Email form state comes back through the URL (?merci=1) because the form
+  // is a native POST/Redirect/GET — no JS to hold state.
+  const t = readTracking(sp);
+  const merci = one(sp, 'merci', 8);
+  const done = merci === '1' ? 'ok' : merci === 'err' ? 'err' : undefined;
 
   return (
     <div className="vd-body">
@@ -156,6 +164,15 @@ export default async function LPVoyantDirect({
           Nos voyants utilisent la cartomancie, l&apos;astrologie et leur intuition pour vous guider.
           Ce service est un divertissement et ne remplace aucun avis médical ou juridique.
         </p>
+
+        <LanderFaq />
+
+        <LanderEmailForm
+          lander="voyant-direct"
+          source={t.source}
+          sid={t.sid}
+          done={done}
+        />
 
         <footer className="vd-footer">
           Service réservé aux personnes majeures (18+).<br />

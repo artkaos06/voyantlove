@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from 'next';
-import { recordLanderLoad } from '@/lib/lpTrack';
+import { recordLanderLoad, readTracking, one } from '@/lib/lpTrack';
+import { LanderFaq, LanderEmailForm } from '@/components/LanderExtras';
 import { availabilityNow, type Availability } from '@/lib/availability';
 import { OFFER } from '@/lib/offer';
 import { PHONE_NUMBERS, formatPhone } from '@/lib/phoneNumbers';
@@ -106,7 +107,12 @@ const STYLE = `
 .vq-footer{text-align:center;font-size:11px;color:rgba(255,255,255,0.45);margin-top:28px}
 `;
 
-function Result({ spec, av }: { spec: string; av: Availability }) {
+function Result({
+  spec, av, source, sid, done,
+}: {
+  spec: string; av: Availability; source: string; sid: string;
+  done?: 'ok' | 'err';
+}) {
   return (
     <div className="vq-result-inner">
       <div className="vq-seal">🔮</div>
@@ -137,6 +143,20 @@ function Result({ spec, av }: { spec: string; av: Availability }) {
       <p className="vq-reassure">
         ✓ Privé et confidentiel · ✓ Voyants experts · ✓ 7j/7 de 8h à 2h · ✓ +18 ans
       </p>
+
+      <div style={{ textAlign: 'left' }}>
+        <LanderFaq />
+        {/* Only for fresh visitors. Post-submit the page reloads with ?merci=,
+            which resets the CSS :checked state — so the confirmation is
+            rendered above the quiz instead, where it is actually visible. */}
+        {!done && (
+          <LanderEmailForm
+            lander="il-elle-vous-aime"
+            source={source}
+            sid={sid}
+          />
+        )}
+      </div>
     </div>
   );
 }
@@ -146,10 +166,16 @@ export default async function LPIlElleVousAime({
 }: {
   searchParams: Promise<Record<string, string | string[] | undefined>>;
 }) {
-  await recordLanderLoad('il-elle-vous-aime', await searchParams);
+  const sp = await searchParams;
+  await recordLanderLoad('il-elle-vous-aime', sp);
 
   // Copy adapts to the real request time — see lib/availability.ts.
   const av = availabilityNow();
+
+  // Email form state round-trips through the URL (native POST/Redirect/GET).
+  const t = readTracking(sp);
+  const merci = one(sp, 'merci', 8);
+  const done = merci === '1' ? 'ok' : merci === 'err' ? 'err' : undefined;
 
   return (
     <div className="vq-body">
@@ -159,6 +185,18 @@ export default async function LPIlElleVousAime({
         <div className="vq-badge"><span className="vq-pulse" /> {av.badge}</div>
         <h1 className="vq-h1">Il/Elle vous aime vraiment&nbsp;?</h1>
         <p className="vq-intro">Une question, et votre réponse immédiate.</p>
+
+        {/* The native form POST redirects here with ?merci=. The quiz has no
+            persisted state (it is pure CSS), so the outcome is shown here,
+            outside .vq-flow, rather than inside a display:none result. */}
+        {done && (
+          <LanderEmailForm
+            lander="il-elle-vous-aime"
+            source={t.source}
+            sid={t.sid}
+            done={done}
+          />
+        )}
 
         <div className="vq-flow">
           {/* Hidden state — must precede the steps for the ~ selectors to work */}
@@ -175,7 +213,7 @@ export default async function LPIlElleVousAime({
 
           {OPTIONS.map((o) => (
             <div key={o.id} className={`vq-step vq-r-${o.id}`}>
-              <Result spec={o.spec} av={av} />
+              <Result spec={o.spec} av={av} source={t.source} sid={t.sid} done={done} />
             </div>
           ))}
 

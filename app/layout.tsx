@@ -93,6 +93,65 @@ export default function RootLayout({
           'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
           })(window,document,'script','dataLayer','GTM-MTSWKGGQ');
         `}</Script>
+        {/* Microsoft Clarity — session recordings + heatmaps. Restores the
+            behavioural visibility this project has been missing: 4,857 loads
+            with 4 taps and no way to see where people actually got stuck.
+            Async and non-blocking — unlike React hydration (the thing that
+            broke Xiaomi/Huawei in-app browsers), a deferred third-party tag
+            cannot stop the page rendering or the tel: link working.
+            Renders only when NEXT_PUBLIC_CLARITY_ID is set, so no guessed
+            project id can leak visitor data to someone else's account. */}
+        {process.env.NEXT_PUBLIC_CLARITY_ID && (
+          <Script id="ms-clarity" strategy="afterInteractive">{`
+            (function(c,l,a,r,i,t,y){
+              c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+              t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+              y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+            })(window, document, "clarity", "script", "${process.env.NEXT_PUBLIC_CLARITY_ID}");
+          `}</Script>
+        )}
+        {/* Client-error beacon. The 91.6% Q1->Q2 collapse was invisible for
+            weeks because nothing reported it. Errors now reach Discord via
+            /api/track/error. sendBeacon so a crash during unload still
+            reports; wrapped so the reporter can never itself throw. */}
+        <Script id="client-error-beacon" strategy="afterInteractive">{`
+          (function () {
+            var sent = 0;
+            function report(payload) {
+              if (sent >= 5) return; // cap per pageview
+              sent++;
+              try {
+                var body = JSON.stringify(payload);
+                if (navigator.sendBeacon) {
+                  navigator.sendBeacon('/api/track/error',
+                    new Blob([body], { type: 'application/json' }));
+                } else {
+                  fetch('/api/track/error', {
+                    method: 'POST', body: body, keepalive: true
+                  }).catch(function () {});
+                }
+              } catch (_) {}
+            }
+            window.addEventListener('error', function (e) {
+              report({
+                message: (e && e.message) || 'unknown error',
+                source: e && e.filename, line: e && e.lineno, col: e && e.colno,
+                stack: e && e.error && e.error.stack,
+                page: window.location.pathname,
+                ua: navigator.userAgent || ''
+              });
+            });
+            window.addEventListener('unhandledrejection', function (e) {
+              var r = e && e.reason;
+              report({
+                message: 'Unhandled promise: ' + (r && r.message ? r.message : String(r)),
+                stack: r && r.stack,
+                page: window.location.pathname,
+                ua: navigator.userAgent || ''
+              });
+            });
+          })();
+        `}</Script>
         <Script id="phone-click-tracker" strategy="afterInteractive">{`
           document.addEventListener('click', function(e) {
             var link = e.target && e.target.closest && e.target.closest('a[href^="tel:"]');
