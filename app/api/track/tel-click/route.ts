@@ -24,6 +24,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { Color, notifyDiscord } from '@/lib/discord';
 import { recordClickOut } from '@/lib/digestState';
 import { LANDERS, normaliseSource, recordLpEvent } from '@/lib/lpTrack';
+import { sendMgidConversion } from '@/lib/mgidConversion';
 
 export const dynamic = 'force-dynamic';
 
@@ -122,6 +123,21 @@ async function handle(request: NextRequest): Promise<NextResponse> {
       clickId,
       creativeId,
     });
+  }
+
+  // Feed the tap back to MGID so its algorithm optimises toward tappers.
+  // Awaited because Vercel may freeze the function the moment the response
+  // is returned, which would kill an unawaited request. No-op until
+  // MGID_CONVERSION_URL is set — see lib/mgidConversion.ts for why the URL
+  // is not hardcoded.
+  const mgidResult = await sendMgidConversion({
+    clickId,
+    source,
+    creativeId,
+    lander,
+  });
+  if (mgidResult === 'failed') {
+    console.error('[track] mgid conversion failed for click_id', clickId);
   }
 
   // category:'lead' is REQUIRED, not decoration. notifyDiscord runs in
