@@ -43,6 +43,7 @@ const PHONE = PHONE_NUMBERS['3'];
 const PHONE_DISPLAY = formatPhone(PHONE);
 
 const STYLE = `
+.vs-body,.vs-body *{-webkit-tap-highlight-color:transparent}
 .vs-body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
      background:linear-gradient(160deg,#241657 0%,#3a1d6e 55%,#4a1f5e 100%);
      color:#fff;min-height:100vh;min-height:100dvh;padding:24px 20px 40px;line-height:1.6}

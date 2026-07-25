@@ -16,8 +16,6 @@
 const OPEN_HOUR = 8;
 const CLOSE_HOUR = 2; // exclusive, next day
 
-import { OFFER } from '@/lib/offer';
-
 export interface Availability {
   open: boolean;
   /** Pill at the top of the page. */
@@ -55,7 +53,7 @@ export function availabilityNow(now: Date = new Date()): Availability {
       badge: 'Ligne ouverte à partir de 8h',
       scarcity: `⏱️ Nos voyants reprennent les appels à ${OPEN_HOUR}h`,
       callsToday: '👥 Plus de 200 appels chaque jour',
-      ctaSub: `Appelez dès 8h — ${OFFER.ctaShort}`,
+      ctaSub: 'Appelez dès 8h',
       stickyInfo: 'Ligne ouverte\ndès 8h',
     };
   }
@@ -83,7 +81,7 @@ export function availabilityNow(now: Date = new Date()): Availability {
     badge: 'Voyants disponibles maintenant',
     scarcity: `⏱️ Seulement ${slots} consultations disponibles ${partOfDay}`,
     callsToday: `👥 ${calls} appels aujourd'hui`,
-    ctaSub: `Appeler maintenant — ${OFFER.ctaShort}`,
+    ctaSub: 'Appeler maintenant',
     stickyInfo: `${slots} voyants\ndisponibles`,
   };
 }

@@ -49,6 +49,7 @@ const OPTIONS = [
 ];
 
 const STYLE = `
+.vq-body,.vq-body *{-webkit-tap-highlight-color:transparent}
 .vq-body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
      background:linear-gradient(160deg,#241657 0%,#3a1d6e 55%,#4a1f5e 100%);
      color:#fff;min-height:100vh;min-height:100dvh;padding:24px 20px 40px;line-height:1.5}

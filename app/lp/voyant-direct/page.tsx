@@ -53,6 +53,7 @@ const PHONE = PHONE_NUMBERS['1'];
 const PHONE_DISPLAY = formatPhone(PHONE);
 
 const STYLE = `
+.vd-body,.vd-body *{-webkit-tap-highlight-color:transparent}
 .vd-body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
      background:linear-gradient(160deg,#241657 0%,#3a1d6e 55%,#4a1f5e 100%);
      color:#fff;min-height:100vh;min-height:100dvh;padding:20px;line-height:1.5}
@@ -86,7 +87,7 @@ const STYLE = `
 .vd-footer{text-align:center;font-size:11px;color:rgba(255,255,255,0.45);margin-top:30px;
        padding-bottom:80px}
 .vd-sticky-cta{position:fixed;bottom:0;left:0;right:0;background:rgba(36,22,87,0.95);
-            backdrop-filter:blur(10px);padding:12px 20px;border-top:1px solid rgba(255,255,255,0.1);
+            -webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);padding:12px 20px;border-top:1px solid rgba(255,255,255,0.1);
             display:flex;align-items:center;justify-content:space-between;z-index:100}
 .vd-sticky-cta a{flex:1;text-align:center;padding:14px;border-radius:12px;min-height:60px;
               display:flex;align-items:center;justify-content:center;

@@ -26,6 +26,10 @@ export const OFFER = {
   after: 'Puis de 4,50€ à 9,50€/min selon le voyant choisi',
   /** Payment reassurance. CB is the dominant method; others exist. */
   payment: 'Paiement sécurisé par CB',
-  /** Compact form for buttons and sub-labels. */
-  ctaShort: '10 min pour 15€',
 } as const;
+
+// There is deliberately no short "10 min pour 15€" string for the CTA button
+// any more. Price on the button triggers the cost objection at the exact
+// moment the visitor is deciding to tap; it now sits in the pricing block
+// immediately below, which keeps the price upfront without loading the tap
+// target with it.

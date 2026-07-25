@@ -64,6 +64,17 @@ export default function RootLayout({
     <html lang="fr">
       <head>
         <link rel="icon" href="/favicon.png" type="image/png" />
+        {/* Warm up the TCP+TLS handshake for third-party origins so it happens
+            in parallel with HTML parsing instead of after it. monsitevoyance
+            serves the voyant portraits on the MGID angle landers — those are
+            the trust signal next to the phone CTA, so they matter most on the
+            slow mobile connections that traffic arrives on. */}
+        <link rel="preconnect" href="https://www.monsitevoyance.com" />
+        <link rel="dns-prefetch" href="https://www.monsitevoyance.com" />
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+        <link rel="preconnect" href="https://glyphex.io" />
+        <link rel="dns-prefetch" href="https://glyphex.io" />
         <Script id="consent-default" strategy="beforeInteractive">{`
           window.dataLayer = window.dataLayer || [];
           window.gtag = window.gtag || function(){window.dataLayer.push(arguments);};
