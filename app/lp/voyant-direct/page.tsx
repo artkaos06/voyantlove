@@ -5,11 +5,12 @@ import { recordLanderLoad } from '@/lib/lpTrack';
 // <Script>. MGID's top FR sources are Xiaomi in-app newsfeed browsers,
 // which have historically choked on Next.js hydration — plain
 // server-rendered HTML + CSS renders and is tappable even if JS never
-// runs. Phone = Goracash's call offer, confirmed 2026-07 — NOT Télémaque
-// despite lib/phoneNumbers.ts labeling this same number (bucket 1) as a
-// "Télémaque dedicated number." That label is wrong for this number; fix
-// pending. Pricing (10 min free, then 3€/min CB) is safe to state here —
-// unlike Télémaque, Goracash has no on-record "no tariff claims" rule.
+// runs. Phone = 0175754582, the GORACASH call offer (confirmed 2026-07-25).
+// Do NOT use 0423090950 here — that is Télémaque (bucket 1 in
+// lib/phoneNumbers.ts, used by the quiz funnel). The two offers pay
+// differently and mixing them misattributes revenue. Pricing (10 min free,
+// then 3€/min CB) is Goracash's; Télémaque separately advises affiliates
+// against stating tariffs, so this copy is not portable to a Télémaque page.
 //
 // No custom tracking beacon here on purpose: /api/track/quiz writes to the
 // SAME cpl:quiz:<date> KV bucket the quiz funnel dashboard reads, with no
@@ -43,8 +44,8 @@ export const viewport: Viewport = {
   userScalable: false,
 };
 
-const PHONE = '0423090950';
-const PHONE_DISPLAY = '04 23 09 09 50';
+const PHONE = '0175754582';
+const PHONE_DISPLAY = '01 75 75 45 82';
 
 const STYLE = `
 .vd-body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;

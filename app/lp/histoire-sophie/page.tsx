@@ -32,8 +32,11 @@ export const viewport: Viewport = {
   userScalable: false,
 };
 
-const PHONE = '0423090950';
-const PHONE_DISPLAY = '04 23 09 09 50';
+// Goracash call offer. NOT 0423090950 — that is Télémaque (bucket 1 in
+// lib/phoneNumbers.ts, used by the quiz funnel); the two offers pay
+// differently and mixing them misattributes revenue.
+const PHONE = '0175754582';
+const PHONE_DISPLAY = '01 75 75 45 82';
 
 const STYLE = `
 .vs-body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
