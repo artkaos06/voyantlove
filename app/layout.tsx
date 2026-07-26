@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Script from "next/script";
 import CookieConsent from "@/components/CookieConsent";
+import SiteHeader from "@/components/SiteHeader";
+import SiteFooter from "@/components/SiteFooter";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -283,7 +285,9 @@ export default function RootLayout({
           />
         </noscript>
         <CookieConsent />
+        <SiteHeader />
         {children}
+        <SiteFooter />
       </body>
     </html>
   );
