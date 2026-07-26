@@ -14,6 +14,14 @@ const ENTITY_TERMS = [
   'Vénus', 'Mars', 'Lune', 'Soleil', 'Jupiter', 'Saturne', 'Pluton',
   'Mercure', 'Uranus', 'Neptune',
   'Feu', 'Terre', 'Air', 'Eau',
+  // Tarot entities (longest forms first so multi-word names win the match)
+  'La Roue de Fortune', 'L’Amoureux', 'L’Impératrice', 'L’Empereur',
+  'L’Étoile', 'L’Ermite', 'La Papesse', 'La Tempérance', 'La Justice',
+  'La Force', 'La Tour', 'La Mort', 'La Lune', 'Le Soleil', 'Le Diable',
+  'Le Pendu', 'Le Jugement', 'Le Bateleur', 'Le Chariot', 'Le Monde',
+  'Le Pape', 'Le Mat',
+  'Tarot de Marseille', 'arcane majeur', 'arcane mineur',
+  'Coupe', 'Bâton', 'Épée', 'Denier',
 ];
 
 const SORTED = [...ENTITY_TERMS].sort((a, b) => b.length - a.length);
