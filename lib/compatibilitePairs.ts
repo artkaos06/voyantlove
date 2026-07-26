@@ -2057,4 +2057,345 @@ export const COMPATIBILITY_PAIRS: PairRecord[] = [
       },
     ],
   },
+  {
+    slug: 'belier-verseau',
+    signA: 'Bélier',
+    signB: 'Verseau',
+    score: 3,
+    titre: 'Deux électrons libres, sextile stimulant',
+    answerCapsule:
+      'La compatibilité amoureuse entre le Bélier et le Verseau unit deux esprits indépendants dans une relation vive et libre. Le sextile Feu-Air fait circuler une énergie stimulante : le Bélier fonce, le Verseau innove, et aucun ne cherche à posséder l’autre. Cette liberté mutuelle, rare et précieuse, vaut à ce couple une note de 3 sur 5. Le Bélier admire l’originalité du Verseau, le Verseau la vitalité audacieuse du Bélier. Ensemble, ils forment un duo dynamique, sans jalousie ni routine. Le défi tient à l’émotion : le Bélier impulsif veut de la chaleur immédiate, le Verseau détaché la tempère par principe. Pour durer, le Bélier accepte la pudeur du Verseau et le Verseau offre plus de présence. Une consultation de voyance amoureuse éclaire le potentiel de votre couple Bélier-Verseau.',
+    dynamique:
+      'Bélier et Verseau s’attirent par un même amour de la liberté. Le sextile Feu-Air crée une complicité énergique : le Bélier, gouverné par Mars, agit dans l’instant, fonce, ose ; le Verseau, gouverné par Uranus, invente, surprend, refuse les conventions. Aucun des deux ne supporte l’enfermement ni la possessivité, ce qui rend leur relation étonnamment fluide — chacun laisse à l’autre son espace sans le vivre comme un abandon. Le Bélier est stimulé par l’esprit visionnaire du Verseau ; le Verseau est séduit par l’audace directe du Bélier. Ils forment un couple d’électrons libres qui avancent côte à côte plutôt que fusionnés. Leur seule ombre : deux êtres peu portés sur l’émotionnel qui peuvent négliger la tendresse au profit de l’action et des idées.',
+    forces:
+      'Une liberté mutuelle sans jalousie, une stimulation intellectuelle et physique constante, un goût partagé de la nouveauté et de l’indépendance. Deux esprits qui se respectent et ne s’étouffent jamais, portés par une énergie commune et un refus de la routine.',
+    defis:
+      'Le déficit émotionnel : le Bélier veut de la chaleur immédiate, le Verseau reste distant par principe. L’impulsivité du Bélier peut heurter le besoin de recul du Verseau, et deux têtes fortes peuvent se disputer le contrôle des grandes décisions sans céder.',
+    conseil:
+      'Bélier : le détachement du Verseau n’est pas de la froideur, c’est sa nature — offrez-lui de l’espace, il reviendra vers votre énergie. Verseau : votre Bélier a besoin de chaleur exprimée, pas seulement de complicité d’idées ; descendez parfois de la tête au cœur.',
+    faq: [
+      {
+        q: 'Bélier et Verseau sont-ils compatibles en amour ?',
+        a: 'Oui, plutôt bien : le sextile Feu-Air unit deux indépendants qui se stimulent sans s’étouffer. Le Bélier apporte l’audace et l’action, le Verseau l’originalité et la vision, et aucun ne cherche à posséder l’autre — une liberté mutuelle rare, d’où une note de 3 sur 5. La relation est vive, sans jalousie ni routine. Son seul chantier est l’émotionnel : deux signes peu démonstratifs doivent cultiver consciemment la tendresse.',
+      },
+      {
+        q: 'Pourquoi ce couple manque-t-il de chaleur ?',
+        a: 'Parce que ni le Bélier ni le Verseau n’est spontanément porté vers l’expression émotionnelle. Le Bélier vit dans l’action et l’instant, le Verseau dans les idées et le détachement : leur lien se nourrit d’énergie et de complicité mentale plus que de fusion tendre. Le risque est une relation dynamique mais un peu sèche affectivement. Les couples qui durent s’imposent des gestes de tendresse et des moments de vraie présence pour réchauffer leur complicité.',
+      },
+      {
+        q: 'La liberté est-elle la force de ce couple ?',
+        a: 'Absolument, c’est son ciment. Bélier et Verseau partagent une horreur de la possessivité et un besoin vital d’indépendance : chacun respecte d’instinct l’espace de l’autre, ce qui évite l’étouffement fatal à bien d’autres couples. Le Bélier garde ses élans, le Verseau ses causes et ses amis, et cette autonomie renforce paradoxalement le lien. Tant qu’ils cultivent aussi des moments de proximité réelle, leur liberté partagée fait leur solidité.',
+      },
+    ],
+  },
+  {
+    slug: 'taureau-verseau',
+    signA: 'Taureau',
+    signB: 'Verseau',
+    score: 2,
+    titre: 'Tradition contre révolution, carré fixe',
+    answerCapsule:
+      'La compatibilité amoureuse entre le Taureau et le Verseau est l’une des plus difficiles du zodiaque. Ces deux signes fixes forment un carré, et tout les oppose : le Taureau de Terre chérit la tradition, la sécurité et la sensualité ; le Verseau d’Air vénère la liberté, l’innovation et l’indépendance. Deux entêtements inflexibles face à face, d’où une note de 2 sur 5. Le Taureau veut construire un nid stable, le Verseau refuse toute cage ; le Taureau possessif s’angoisse de la distance du Verseau, qui étouffe sous les habitudes du Taureau. L’attirance des contraires existe mais la vie commune est un bras de fer permanent. Pour tenir, chacun doit lâcher du terrain sur ce qui lui est le plus cher. Une consultation peut éclairer si votre couple Taureau-Verseau peut dépasser ce fossé.',
+    dynamique:
+      'Taureau et Verseau forment un carré entre deux signes fixes, l’un des affrontements les plus tenaces du zodiaque. Le Taureau, gouverné par Vénus, vit dans le concret, le confort, la fidélité aux habitudes ; le Verseau, gouverné par Uranus, vit dans les idées, la rupture, le refus des conventions. Le Taureau cherche à posséder et sécuriser, le Verseau à s’affranchir et surprendre. L’attirance initiale tient à la fascination des contraires : le Taureau est intrigué par l’originalité du Verseau, le Verseau par la stabilité sensuelle du Taureau. Mais deux volontés fixes qui ne cèdent jamais transforment chaque désaccord en siège. Là où le Taureau veut planter des racines, le Verseau veut garder ses ailes — et aucun ne comprend spontanément le besoin de l’autre.',
+    forces:
+      'Une fascination mutuelle réelle, et une complémentarité possible si elle est travaillée : le Verseau sort le Taureau de sa routine, le Taureau ancre les envolées du Verseau. Chacun peut apprendre de l’univers opposé de l’autre, à condition d’y consentir.',
+    defis:
+      'Sécurité contre liberté, tradition contre rupture, au maximum. Deux entêtements fixes qui ne cèdent jamais et fossilisent les conflits. Le Taureau possessif étouffe le Verseau épris d’indépendance, dont la distance émotionnelle blesse le Taureau en quête de chaleur et de présence.',
+    conseil:
+      'Taureau : la liberté du Verseau n’est pas une menace, cesser de le retenir est la seule façon de le garder. Verseau : votre Taureau a besoin de sécurité et de présence concrètes ; offrez-lui quelques repères stables sans y voir une perte de liberté.',
+    faq: [
+      {
+        q: 'Taureau et Verseau sont-ils compatibles ?',
+        a: 'C’est l’une des combinaisons les plus difficiles du zodiaque, un carré entre deux signes fixes aux valeurs opposées : sécurité et tradition pour le Taureau, liberté et innovation pour le Verseau. La note de 2 sur 5 reflète ce fossé. L’attirance des contraires existe, mais deux entêtements inflexibles transforment la vie commune en bras de fer. La relation ne tient que si chacun accepte de lâcher du terrain sur ce qui lui est le plus cher.',
+      },
+      {
+        q: 'Pourquoi ce couple se dispute-t-il autant ?',
+        a: 'Parce que ce sont deux signes fixes, c’est-à-dire deux volontés qui ne plient pas. Quand le besoin de sécurité du Taureau se heurte au besoin de liberté du Verseau, aucun ne cède, et le désaccord se fige en siège interminable. S’ajoute un fossé de valeurs profond : le Taureau chérit ce que le Verseau veut réinventer. Sans compromis conscient et répété, leurs affrontements deviennent chroniques et épuisants pour les deux.',
+      },
+      {
+        q: 'Ce couple peut-il durer malgré tout ?',
+        a: 'Oui, mais c’est un vrai travail. Les couples Taureau-Verseau qui durent sont ceux où chacun a fait un pas majeur vers l’autre : le Taureau a accepté d’offrir de la liberté et de la nouveauté, le Verseau de fournir de la présence et des repères stables. Leur fascination mutuelle et leur complémentarité potentielle — l’ancrage et l’innovation — peuvent alors devenir une force. Mais sans ce compromis, le carré fixe les use.',
+      },
+    ],
+  },
+  {
+    slug: 'gemeaux-capricorne',
+    signA: 'Gémeaux',
+    signB: 'Capricorne',
+    score: 2,
+    titre: 'La légèreté et la gravité, quinconce',
+    answerCapsule:
+      'La compatibilité amoureuse entre le Gémeaux et le Capricorne oppose la légèreté à la gravité, en quinconce sans terrain commun. Le Gémeaux d’Air papillonne, s’amuse, change ; le Capricorne de Terre planifie, endure, construit. L’attirance mêle admiration et incompréhension, d’où une note de 2 sur 5. Le Capricorne est séduit par la vivacité rafraîchissante du Gémeaux, le Gémeaux par la solidité rassurante du Capricorne. Mais le Capricorne trouve le Gémeaux inconstant et superficiel, le Gémeaux trouve le Capricorne rigide et austère. L’un veut jouer, l’autre veut bâtir ; l’un vit dans l’instant, l’autre dans le long terme. Pour durer, chacun doit valoriser ce que l’autre lui apporte de complémentaire. Une consultation peut éclairer si votre couple Gémeaux-Capricorne trouve son équilibre.',
+    dynamique:
+      'Gémeaux et Capricorne forment un quinconce, l’angle de l’ajustement, entre l’Air joueur et la Terre sérieuse. Le Gémeaux, gouverné par Mercure, vit dans la curiosité, le mouvement, la légèreté ; le Capricorne, gouverné par Saturne, vit dans l’ambition, la discipline, la construction patiente. Le Capricorne est d’abord charmé par l’esprit vif et l’humour du Gémeaux, qui allègent son sérieux ; le Gémeaux est rassuré par la maturité et la fiabilité du Capricorne, qui structurent son chaos. Mais leurs rythmes et leurs valeurs divergent profondément : le Gémeaux change d’avis quand le Capricorne s’engage pour durer, le Gémeaux improvise quand le Capricorne planifie. L’un trouve l’autre inconstant, l’autre le trouve rigide — deux mondes qui se frôlent sans se comprendre.',
+    forces:
+      'Une complémentarité possible : le Gémeaux apporte la légèreté et la fraîcheur qui dérident le Capricorne, le Capricorne offre la stabilité et le cadre qui manquent au Gémeaux. Ensemble, ils peuvent équilibrer jeu et sérieux, spontanéité et construction.',
+    defis:
+      'Légèreté contre gravité : le Capricorne trouve le Gémeaux superficiel et inconstant, le Gémeaux trouve le Capricorne austère et rigide. Le besoin de liberté et de variété du Gémeaux se heurte au besoin de stabilité et d’engagement du Capricorne.',
+    conseil:
+      'Capricorne : la légèreté du Gémeaux n’est pas de la superficialité, c’est son oxygène — ne l’enfermez pas dans votre sérieux. Gémeaux : reconnaissez la valeur de l’engagement du Capricorne au lieu d’en rire ; sa constance est ce qui peut vous ancrer.',
+    faq: [
+      {
+        q: 'Gémeaux et Capricorne peuvent-ils s’entendre ?',
+        a: 'C’est une combinaison exigeante, en quinconce, qui oppose la légèreté joueuse du Gémeaux à la gravité ambitieuse du Capricorne. Leurs rythmes et leurs valeurs divergent profondément — improviser contre planifier, jouer contre bâtir — d’où une note de 2 sur 5. L’attirance des contraires est réelle mais demande un ajustement constant. Les couples qui réussissent valorisent la complémentarité : la fraîcheur de l’un, la solidité de l’autre.',
+      },
+      {
+        q: 'Pourquoi le Capricorne trouve-t-il le Gémeaux superficiel ?',
+        a: 'Parce que le Gémeaux change d’avis, papillonne d’un sujet à l’autre et privilégie le jeu et la variété, là où le Capricorne valorise la profondeur, la constance et l’engagement. Ce que le Gémeaux vit comme une curiosité joyeuse, le Capricorne le perçoit comme de l’inconstance ou du manque de sérieux. Le malentendu est réel : la légèreté du Gémeaux n’exclut pas la profondeur, elle l’exprime autrement. Le Capricorne doit apprendre à ne pas confondre les deux.',
+      },
+      {
+        q: 'Comment ce couple trouve-t-il son équilibre ?',
+        a: 'En transformant leurs différences en complémentarité plutôt qu’en jugement. Le Gémeaux apporte au Capricorne la légèreté et le rire qui l’empêchent de se scléroser ; le Capricorne offre au Gémeaux l’ancrage et la structure qui canalisent sa dispersion. Chacun doit respecter le mode de l’autre : le Capricorne laisse au Gémeaux son espace de liberté, le Gémeaux reconnaît le besoin de sérieux du Capricorne. C’est un dosage délicat mais fertile.',
+      },
+    ],
+  },
+  {
+    slug: 'cancer-verseau',
+    signA: 'Cancer',
+    signB: 'Verseau',
+    score: 2,
+    titre: 'Le cœur et la tête, quinconce délicat',
+    answerCapsule:
+      'La compatibilité amoureuse entre le Cancer et le Verseau confronte le cœur à la tête, en quinconce sans harmonie naturelle. Le Cancer d’Eau vit d’émotion, de foyer et de proximité ; le Verseau d’Air vit d’idées, de liberté et de distance. L’attirance existe — le Cancer est fasciné par l’originalité du Verseau, le Verseau touché par la tendresse du Cancer — mais leurs besoins s’opposent frontalement, d’où une note de 2 sur 5. Le Cancer réclame de la présence et de la chaleur que le Verseau, détaché par principe, peine à donner ; le Verseau étouffe sous le besoin de fusion du Cancer. L’un se sent délaissé, l’autre enfermé. Pour tenir, le Verseau doit réchauffer sa réserve et le Cancer accepter l’indépendance de l’autre. Une consultation peut éclairer ce couple Cancer-Verseau si contrasté.',
+    dynamique:
+      'Cancer et Verseau forment un quinconce entre l’Eau émotionnelle et l’Air cérébral, l’un des écarts les plus délicats du zodiaque. Le Cancer, gouverné par la Lune, cherche le foyer, la sécurité affective, la proximité tendre ; le Verseau, gouverné par Uranus, cherche la liberté, les idées, une certaine distance émotionnelle. Le Cancer est d’abord intrigué par l’esprit visionnaire et l’indépendance du Verseau ; le Verseau est ému par la chaleur et le dévouement du Cancer. Mais le quotidien révèle un fossé presque insurmontable : le Cancer a besoin de fusion et de réassurance permanente, le Verseau a besoin d’espace et vit l’attachement fusionnel comme une entrave. L’un aime avec le cœur, l’autre avec la tête, et chacun reste étranger au langage de l’autre.',
+    forces:
+      'Une complémentarité possible : le Verseau ouvre le Cancer au monde et à la nouveauté, le Cancer réchauffe l’univers cérébral du Verseau. Chacun peut apprendre de l’autre un registre qui lui manque — l’émotion pour l’un, le recul pour l’autre.',
+    defis:
+      'Fusion contre distance : le Cancer réclame présence et chaleur, le Verseau reste détaché par principe. Le Cancer se sent délaissé, le Verseau se sent envahi. Les marées émotionnelles du Cancer déroutent le Verseau rationnel, dont la froideur apparente blesse le Cancer.',
+    conseil:
+      'Verseau : votre Cancer a besoin de réassurance émotionnelle régulière ; un mot tendre, une présence, valent plus que toutes vos idées. Cancer : l’indépendance du Verseau n’est pas un rejet ; laissez-lui de l’espace au lieu de réclamer une fusion qui le fait fuir.',
+    faq: [
+      {
+        q: 'Cancer et Verseau sont-ils compatibles ?',
+        a: 'C’est l’une des combinaisons les plus délicates du zodiaque, en quinconce, qui oppose le cœur du Cancer à la tête du Verseau. Le Cancer a besoin de fusion et de chaleur, le Verseau de liberté et de distance : deux besoins presque inconciliables, d’où une note de 2 sur 5. L’attirance des contraires est réelle mais l’écart émotionnel est le nœud de la relation. Elle ne tient que si le Verseau se réchauffe et le Cancer lâche du lest.',
+      },
+      {
+        q: 'Pourquoi le Cancer se sent-il délaissé par le Verseau ?',
+        a: 'Parce que le Verseau exprime peu ses émotions et tient à sa distance, quand le Cancer a besoin de présence, de réassurance et de proximité pour se sentir aimé. Le détachement du Verseau, qui est chez lui une nature et non un désamour, est vécu par le Cancer hypersensible comme une froideur, voire un abandon. Le Verseau doit faire l’effort conscient de rassurer et de manifester sa tendresse, contre sa réserve naturelle, pour combler le Cancer.',
+      },
+      {
+        q: 'Ce couple peut-il fonctionner malgré leurs différences ?',
+        a: 'Difficilement, mais pas impossible. Le quinconce Cancer-Verseau demande un ajustement mutuel permanent : le Verseau doit apprendre la chaleur et la présence, le Cancer l’indépendance et le lâcher-prise. Quand chacun fait ce pas contre-nature, la complémentarité peut opérer — le Verseau ouvre le Cancer au monde, le Cancer réchauffe le Verseau. Mais l’écart émotionnel est tel que ce couple reste l’un des plus exigeants du zodiaque.',
+      },
+    ],
+  },
+  {
+    slug: 'vierge-balance',
+    signA: 'Vierge',
+    signB: 'Balance',
+    score: 3,
+    titre: 'La perfectionniste et l’esthète, voisines raffinées',
+    answerCapsule:
+      'La compatibilité amoureuse entre la Vierge et la Balance unit deux signes raffinés et attentifs, mais de tempéraments distincts. Voisines du zodiaque, la Vierge de Terre analyse et perfectionne, la Balance d’Air harmonise et séduit. Elles partagent le goût de l’élégance et du soin porté à l’autre, d’où une note de 3 sur 5. La Vierge apporte la fiabilité et le sens pratique, la Balance la douceur et l’art de la relation. Mais la critique perfectionniste de la Vierge heurte le besoin d’harmonie de la Balance, et l’indécision de la Balance agace la Vierge méthodique. L’une veut corriger, l’autre veut plaire ; l’une tranche, l’autre hésite. Pour durer, la Vierge adoucit ses remarques et la Balance ose décider. Une consultation peut éclairer votre couple Vierge-Balance et ses affinités.',
+    dynamique:
+      'Vierge et Balance sont voisines sur le zodiaque et partagent un même raffinement, mais fonctionnent différemment. La Vierge, gouvernée par Mercure, vit dans l’analyse, le détail, l’amélioration du concret ; la Balance, gouvernée par Vénus, vit dans l’harmonie, la beauté, l’équilibre des relations. Toutes deux sont attentives à l’autre et soignent leur vie commune — la Vierge par des gestes concrets, la Balance par la douceur et le charme. La Vierge est rassurée par la grâce apaisante de la Balance ; la Balance est touchée par le dévouement discret de la Vierge. Mais leurs tempéraments s’accrochent : la Vierge critique pour aider, la Balance fuit le conflit et déteste être jugée. L’une cherche la perfection, l’autre l’harmonie — deux quêtes proches qui ne coïncident pas tout à fait.',
+    forces:
+      'Un raffinement et une attention mutuelle partagés, une douceur commune — ni l’une ni l’autre n’aime la brutalité —, et une complémentarité : la Vierge structure et fiabilise, la Balance apaise et embellit. Ensemble, elles créent une vie de couple soignée et harmonieuse.',
+    defis:
+      'La critique contre l’harmonie : les remarques perfectionnistes de la Vierge blessent la Balance, qui fuit le conflit et se ferme. L’indécision de la Balance exaspère la Vierge méthodique, qui, une fois analysée, veut trancher là où la Balance hésite encore.',
+    conseil:
+      'Vierge : votre Balance a horreur d’être jugée ; enveloppez vos remarques de douceur, valorisez avant de suggérer. Balance : osez trancher et exprimer vos désaccords ; votre Vierge préfère une position claire à une hésitation permanente qui la laisse dans le flou.',
+    faq: [
+      {
+        q: 'Vierge et Balance sont-elles compatibles ?',
+        a: 'Oui, plutôt bien : voisines du zodiaque, elles partagent le raffinement, la douceur et le soin porté à l’autre, d’où une note de 3 sur 5. La Vierge apporte la fiabilité et le sens pratique, la Balance l’harmonie et le charme. La relation est élégante et attentive. Son point de friction est le tempérament : la critique de la Vierge se heurte au besoin d’harmonie de la Balance, et l’indécision de la Balance agace la Vierge.',
+      },
+      {
+        q: 'Pourquoi la critique de la Vierge blesse-t-elle la Balance ?',
+        a: 'Parce que la Balance, gouvernée par Vénus, vit d’harmonie et supporte mal d’être jugée ou remise en cause : le conflit et la critique la déstabilisent profondément. La Vierge, elle, pointe ce qui pourrait être amélioré par souci d’aider, sans intention de blesser. Mais la Balance reçoit ces remarques comme une atteinte à la paix qu’elle chérit. La Vierge doit apprendre à envelopper ses suggestions de douceur pour ne pas fermer sa Balance.',
+      },
+      {
+        q: 'L’indécision de la Balance pose-t-elle problème ?',
+        a: 'Oui, c’est le principal reproche de la Vierge. La Balance pèse indéfiniment le pour et le contre avant de trancher, par peur de se tromper ou de rompre l’harmonie ; la Vierge, qui analyse vite et veut agir, s’impatiente de cette hésitation permanente. Le couple gagne à ce que la Balance s’impose des échéances de décision et que la Vierge laisse à la Balance le temps de peser sans la presser. L’équilibre se trouve dans le respect des deux rythmes.',
+      },
+    ],
+  },
+  {
+    slug: 'vierge-verseau',
+    signA: 'Vierge',
+    signB: 'Verseau',
+    score: 2,
+    titre: 'L’ordre et la disruption, quinconce cérébral',
+    answerCapsule:
+      'La compatibilité amoureuse entre la Vierge et le Verseau oppose l’ordre à la disruption, en quinconce sans terrain commun. La Vierge de Terre veut la méthode, le détail maîtrisé, la fiabilité ; le Verseau d’Air veut l’innovation, la liberté, la rupture des règles. Deux esprits vifs mais aux systèmes opposés, d’où une note de 2 sur 5. La Vierge est intriguée par l’originalité du Verseau, le Verseau par l’intelligence précise de la Vierge. Mais la Vierge trouve le Verseau imprévisible et désordonné, le Verseau trouve la Vierge rigide et tatillonne. L’une veut perfectionner l’existant, l’autre veut tout réinventer. Pour durer, chacun doit voir dans la différence un complément plutôt qu’un défaut. Une consultation peut éclairer votre couple Vierge-Verseau et son potentiel intellectuel.',
+    dynamique:
+      'Vierge et Verseau forment un quinconce entre la Terre méthodique et l’Air novateur, uni par un point commun — l’intelligence — mais séparé par tout le reste. La Vierge, gouvernée par Mercure, vit dans l’analyse, l’ordre, l’amélioration patiente du concret ; le Verseau, gouverné par Uranus, vit dans les idées, la disruption, le refus des cadres. Ils se reconnaissent d’abord sur le terrain mental : deux esprits vifs qui aiment réfléchir. Mais leurs systèmes s’opposent : la Vierge perfectionne les règles, le Verseau les casse ; la Vierge maîtrise le détail, le Verseau embrasse l’utopie. L’une a besoin d’ordre et de prévisibilité, l’autre de liberté et de surprise. Leur connexion intellectuelle est réelle, mais leur rapport au quotidien et à l’émotion les sépare.',
+    forces:
+      'Une connexion intellectuelle réelle — deux esprits vifs et curieux —, et une complémentarité possible : la Vierge concrétise les idées visionnaires du Verseau, le Verseau élargit l’horizon parfois étroit de la Vierge. Ensemble, ils peuvent unir innovation et rigueur.',
+    defis:
+      'Ordre contre disruption : la Vierge trouve le Verseau imprévisible et brouillon, le Verseau trouve la Vierge rigide et anxieuse. Deux réserves émotionnelles se font aussi face — l’analyse de l’une, le détachement de l’autre — laissant la tendresse au second plan.',
+    conseil:
+      'Vierge : le désordre créatif du Verseau n’est pas de la négligence, c’est sa façon d’innover ; lâchez le contrôle. Verseau : le besoin d’ordre de la Vierge est sa sécurité, pas une manie ; respectez ses repères au lieu de les bousculer.',
+    faq: [
+      {
+        q: 'Vierge et Verseau peuvent-ils s’accorder ?',
+        a: 'C’est une combinaison difficile, en quinconce, qui oppose l’ordre méthodique de la Vierge à la disruption du Verseau. Leur point commun est l’intelligence — deux esprits vifs qui se comprennent mentalement — mais tout le reste diverge, d’où une note de 2 sur 5. La connexion intellectuelle peut fonder une belle complicité, mais leurs rapports opposés au quotidien, à l’ordre et à l’émotion demandent un ajustement constant pour tenir.',
+      },
+      {
+        q: 'Pourquoi la Vierge et le Verseau se comprennent-ils mal au quotidien ?',
+        a: 'Parce que la Vierge a besoin d’ordre, de méthode et de prévisibilité pour se sentir en sécurité, quand le Verseau vit dans l’imprévu, l’improvisation et le refus des routines. Ce que la Vierge perçoit comme du désordre, le Verseau le vit comme de la liberté créative ; ce que le Verseau perçoit comme de la rigidité, la Vierge le vit comme un cadre rassurant. Leurs deux systèmes de vie, également légitimes, s’entrechoquent sur le terrain concret.',
+      },
+      {
+        q: 'Ce couple a-t-il une vraie connexion ?',
+        a: 'Oui, sur le plan intellectuel, qui est leur meilleur terrain. Vierge et Verseau sont deux esprits curieux et analytiques qui aiment échanger et réfléchir ensemble — une complicité mentale réelle. Le défi est d’incarner cette connexion : deux signes peu démonstratifs, ils peuvent négliger la tendresse et rester dans les idées. Les couples qui durent cultivent l’expression émotionnelle et respectent leurs différences de fonctionnement au lieu de vouloir se convertir.',
+      },
+    ],
+  },
+  {
+    slug: 'balance-sagittaire',
+    signA: 'Balance',
+    signB: 'Sagittaire',
+    score: 4,
+    titre: 'La charmeuse et l’aventurier, sextile joyeux',
+    answerCapsule:
+      'La compatibilité amoureuse entre la Balance et le Sagittaire est l’une des plus agréables du zodiaque. Le sextile Air-Feu fait circuler une énergie légère et joyeuse : la Balance charme et harmonise, le Sagittaire explore et enthousiasme. Ils partagent le goût des rencontres, des voyages et de la vie sociale, d’où une note de 4 sur 5. La Balance apporte la douceur et le raffinement, le Sagittaire l’aventure et l’optimisme. Ensemble, ils forment un couple sociable et cultivé qui ne s’ennuie jamais. Le défi tient à leurs besoins : la Balance veut de la présence et du romantisme, le Sagittaire de la liberté et de l’espace ; la franchise brute du Sagittaire heurte parfois la sensibilité diplomate de la Balance. Une consultation peut éclairer votre couple Balance-Sagittaire et son bel élan.',
+    dynamique:
+      'Balance et Sagittaire s’accordent avec une facilité rare. Le sextile Air-Feu crée une complicité vive et chaleureuse : la Balance, gouvernée par Vénus, vit dans la relation, l’harmonie, la beauté ; le Sagittaire, gouverné par Jupiter, vit dans l’aventure, la découverte, la quête de sens. La Balance est séduite par l’optimisme et l’ouverture du Sagittaire, qui élargit son horizon ; le Sagittaire est charmé par la grâce et la sociabilité de la Balance, qui adoucit sa fougue. Ensemble, ils aiment sortir, voyager, rencontrer, débattre — un couple tourné vers le monde et vers les autres. Leur relation est légère sans être superficielle, portée par une vraie estime mutuelle. La seule ombre tient à leurs besoins d’espace et de présence, qui ne coïncident pas toujours.',
+    forces:
+      'Une complicité sociale et intellectuelle éclatante, un goût partagé de l’aventure, de la culture et des rencontres, un optimisme commun et peu de conflits frontaux. Un couple ouvert sur le monde, cultivé et joyeux, où l’on ne s’ennuie jamais.',
+    defis:
+      'Présence contre liberté : la Balance a besoin de romantisme et d’attention, le Sagittaire de liberté et d’espace. La franchise sans filtre du Sagittaire heurte la sensibilité diplomate de la Balance, qui préfère la nuance et redoute la brusquerie.',
+    conseil:
+      'Balance : offrez au Sagittaire la liberté dont il a besoin sans y voir un désamour ; il revient toujours vers ce qui ne l’entrave pas. Sagittaire : adoucissez votre franchise avec la Balance, plus sensible qu’elle n’y paraît, et offrez-lui les attentions romantiques qu’elle attend.',
+    faq: [
+      {
+        q: 'Balance et Sagittaire sont-ils compatibles ?',
+        a: 'Oui, très bien : le sextile Air-Feu crée un couple sociable, joyeux et cultivé, où la grâce de la Balance rencontre l’aventure du Sagittaire, d’où une note de 4 sur 5. Ils partagent le goût des voyages, des rencontres et des échanges, sans jeux de pouvoir ni conflits lourds. Leur seul ajustement porte sur les besoins d’espace du Sagittaire et de romantisme de la Balance, à concilier.',
+      },
+      {
+        q: 'Qu’est-ce qui unit ce couple ?',
+        a: 'Leur ouverture au monde et leur optimisme partagé. Balance et Sagittaire aiment tous deux la vie sociale, la culture, les découvertes et les échanges d’idées : leur couple est tourné vers l’extérieur, curieux et joyeux. La Balance apporte le raffinement et la diplomatie, le Sagittaire l’enthousiasme et l’aventure — une complémentarité qui les stimule sans les opposer. Cette légèreté cultivée, faite d’estime mutuelle, est le vrai ciment de leur relation.',
+      },
+      {
+        q: 'La liberté du Sagittaire pose-t-elle problème à la Balance ?',
+        a: 'Un peu : la Balance a besoin de présence, d’attentions et de romantisme, quand le Sagittaire chérit son indépendance et son espace. La Balance peut se sentir négligée quand le Sagittaire s’élance vers ses aventures. Mais contrairement à des couples plus tendus, l’harmonie de base est telle que ce décalage se négocie facilement : le Sagittaire offre de l’attention, la Balance accorde de la liberté, et leur estime mutuelle absorbe le reste.',
+      },
+    ],
+  },
+  {
+    slug: 'balance-capricorne',
+    signA: 'Balance',
+    signB: 'Capricorne',
+    score: 3,
+    titre: 'La relation et l’ambition, carré cardinal',
+    answerCapsule:
+      'La compatibilité amoureuse entre la Balance et le Capricorne unit deux signes cardinaux ambitieux, mais aux priorités opposées, dans un carré exigeant. La Balance d’Air place la relation et l’harmonie au centre ; le Capricorne de Terre place la carrière et la réussite. Tous deux apprécient le statut et l’élégance, d’où une note de 3 sur 5. La Balance apporte le charme et la diplomatie, le Capricorne la solidité et l’ambition. Mais la Balance a besoin de romantisme et de vie sociale que le Capricorne, absorbé par le travail et pudique, néglige ; le Capricorne trouve la Balance indécise et trop mondaine. L’une veut plaire, l’autre veut réussir. Pour durer, chacun doit faire de la place à la priorité de l’autre. Une consultation peut éclairer votre couple Balance-Capricorne.',
+    dynamique:
+      'Balance et Capricorne forment un carré entre deux signes cardinaux, l’un tourné vers la relation, l’autre vers l’accomplissement. La Balance, gouvernée par Vénus, met l’harmonie, le couple et la vie sociale au cœur de son existence ; le Capricorne, gouverné par Saturne, met l’ambition, le travail et la construction du statut. Ils se reconnaissent sur le terrain de l’élégance et de la réussite sociale : tous deux aiment un certain standing. La Balance est rassurée par la solidité du Capricorne, le Capricorne charmé par la grâce de la Balance. Mais leurs priorités s’affrontent : la Balance veut du temps à deux, du romantisme, de la vie mondaine ; le Capricorne se donne d’abord à sa carrière et exprime peu ses sentiments. L’une se sent négligée, l’autre trouve l’autre trop dépendante de la relation.',
+    forces:
+      'Un goût commun du statut, de l’élégance et de la réussite, une complémentarité — la Balance adoucit le Capricorne, le Capricorne structure la Balance —, et une ambition partagée de construire une vie respectable et durable ensemble.',
+    defis:
+      'Relation contre carrière : la Balance réclame présence, romantisme et vie sociale, le Capricorne se donne au travail et reste pudique. La Balance se sent négligée, le Capricorne trouve la Balance indécise et trop mondaine. Deux priorités qui se disputent le temps du couple.',
+    conseil:
+      'Capricorne : votre Balance a besoin de temps à deux et de marques d’affection, pas seulement de sécurité ; sortez du travail pour elle. Balance : reconnaissez que l’ambition du Capricorne est sa façon de construire votre avenir, et rassurez-le par votre constance.',
+    faq: [
+      {
+        q: 'Balance et Capricorne sont-ils compatibles ?',
+        a: 'C’est un couple de carré cardinal, exigeant mais constructible. Balance et Capricorne partagent le goût du statut, de l’élégance et de la réussite, d’où une note de 3 sur 5, mais leurs priorités s’opposent : la relation pour la Balance, la carrière pour le Capricorne. La complémentarité — charme et solidité — est réelle. La réussite dépend de leur capacité à faire de la place à la priorité de l’autre plutôt qu’à la lui reprocher.',
+      },
+      {
+        q: 'Pourquoi la Balance se sent-elle négligée par le Capricorne ?',
+        a: 'Parce que le Capricorne se consacre d’abord à son travail et à ses ambitions, et exprime peu ses sentiments par pudeur. La Balance, gouvernée par Vénus, a besoin de temps à deux, de romantisme et de vie sociale pour se sentir aimée ; elle vit l’investissement professionnel du Capricorne comme un abandon. Le Capricorne, lui, considère qu’il construit leur avenir. Le couple gagne à ce que le Capricorne sanctuarise du temps de couple et exprime son attachement.',
+      },
+      {
+        q: 'Qu’est-ce qui rapproche ces deux signes ?',
+        a: 'Leur goût commun de la réussite et de l’élégance. Balance et Capricorne apprécient tous deux un certain standing, une belle vie sociale, un statut respectable — ils forment souvent un couple soigné et ambitieux. La Balance apporte le charme, la diplomatie et le raffinement ; le Capricorne la solidité, la stratégie et l’endurance. Cette complémentarité, quand elle coopère au lieu de s’opposer sur les priorités, en fait un couple qui construit une vie durable et enviée.',
+      },
+    ],
+  },
+  {
+    slug: 'balance-poissons',
+    signA: 'Balance',
+    signB: 'Poissons',
+    score: 3,
+    titre: 'Deux romantiques rêveurs, quinconce tendre',
+    answerCapsule:
+      'La compatibilité amoureuse entre la Balance et les Poissons unit deux romantiques rêveurs, mais de registres différents, en quinconce. La Balance d’Air aime avec grâce et harmonie, les Poissons d’Eau avec fusion et compassion. Tous deux fuient le conflit et idéalisent l’amour, d’où une note de 3 sur 5. La Balance apporte l’élégance et l’équilibre, les Poissons la tendresse et la profondeur émotionnelle. Mais la Balance vit dans le mental et la relation sociale, les Poissons dans l’émotion et le monde intérieur ; la Balance peut sembler trop détachée pour les Poissons avides de fusion, les Poissons trop flous et lunatiques pour la Balance. Deux évitants du conflit qui laissent les non-dits s’accumuler. Pour durer, chacun ancre l’autre. Une consultation peut éclairer votre couple Balance-Poissons si tendre.',
+    dynamique:
+      'Balance et Poissons forment un quinconce entre l’Air relationnel et l’Eau émotionnelle, unis par un même romantisme mais séparés par le registre. La Balance, gouvernée par Vénus, aime l’harmonie, la beauté, l’équilibre des relations ; les Poissons, gouvernés par Neptune, aiment la fusion, le rêve, la compassion infinie. Tous deux sont doux, tendres, allergiques au conflit et épris d’un idéal amoureux — ce qui crée une reconnaissance immédiate et une atmosphère de couple délicate. La Balance est charmée par la sensibilité des Poissons, les Poissons par la grâce apaisante de la Balance. Mais leurs mondes diffèrent : la Balance raisonne et socialise, les Poissons ressentent et se replient. La Balance peut paraître trop mentale pour les Poissons en quête de fusion, les Poissons trop insaisissables pour la Balance.',
+    forces:
+      'Un romantisme et une douceur partagés, une même horreur du conflit et de la brutalité, une sensibilité esthétique et émotionnelle commune. Deux âmes tendres qui créent une atmosphère de couple délicate, empreinte de gentillesse mutuelle.',
+    defis:
+      'Mental contre émotion : la Balance socialise et raisonne, les Poissons ressentent et se replient ; la Balance semble détachée aux Poissons, les Poissons flous à la Balance. Deux évitants du conflit laissent les non-dits fermenter, et aucun n’ancre solidement le concret.',
+    conseil:
+      'Balance : offrez aux Poissons la fusion émotionnelle et la profondeur qu’ils recherchent, au-delà de la seule harmonie de surface. Poissons : donnez à la Balance des repères clairs et de la présence ; et osez tous deux nommer ce qui fâche avant que le non-dit ne creuse une distance.',
+    faq: [
+      {
+        q: 'Balance et Poissons sont-ils compatibles ?',
+        a: 'Oui, avec tendresse : ces deux romantiques partagent la douceur, l’idéalisme amoureux et l’horreur du conflit, d’où une note de 3 sur 5. La Balance apporte l’élégance et l’équilibre, les Poissons la profondeur émotionnelle et la compassion. La relation est délicate et gentille. Son défi tient au registre — le mental relationnel de la Balance face à l’émotion fusionnelle des Poissons — et à leur commune tendance à éviter les vrais sujets.',
+      },
+      {
+        q: 'Pourquoi la Balance semble-t-elle détachée aux Poissons ?',
+        a: 'Parce que la Balance vit l’amour d’abord dans le mental et la relation sociale — la conversation, l’harmonie, la vie à deux et à plusieurs — quand les Poissons cherchent une fusion émotionnelle totale et une intimité profonde. Ce que la Balance offre comme équilibre et légèreté, les Poissons le vivent parfois comme un manque de profondeur ou de fusion. La Balance doit descendre du mental vers l’émotion pour combler la soif d’absolu des Poissons.',
+      },
+      {
+        q: 'Ce couple gère-t-il bien les conflits ?',
+        a: 'C’est justement leur faiblesse commune : Balance et Poissons fuient tous deux le conflit, l’une par amour de l’harmonie, l’autre par hypersensibilité. Résultat, les frustrations se taisent et les non-dits s’accumulent sous une paix de surface, jusqu’à créer une distance floue. La prévention est contre-nature pour eux : oser aborder tôt et avec douceur ce qui dérange, avant que l’évitement ne mine une relation par ailleurs très tendre.',
+      },
+    ],
+  },
+  {
+    slug: 'scorpion-verseau',
+    signA: 'Scorpion',
+    signB: 'Verseau',
+    score: 2,
+    titre: 'La fusion contre la liberté, carré fixe électrique',
+    answerCapsule:
+      'La compatibilité amoureuse entre le Scorpion et le Verseau oppose la fusion à la liberté, dans un carré entre deux signes fixes. Le Scorpion d’Eau veut l’intensité, l’exclusivité, la profondeur ; le Verseau d’Air veut l’indépendance, la distance, la liberté. Deux volontés inflexibles aux besoins opposés, d’où une note de 2 sur 5. L’attirance est magnétique — le Scorpion fasciné par l’insaisissable Verseau, le Verseau intrigué par l’intensité du Scorpion — mais la jalousie possessive du Scorpion se heurte de plein fouet au besoin de liberté du Verseau. Le Scorpion veut tout fusionner, le Verseau tout préserver ; aucun ne cède. Pour tenir, le Scorpion doit lâcher le contrôle et le Verseau offrir de l’engagement. Une consultation peut éclairer ce couple Scorpion-Verseau si électrique.',
+    dynamique:
+      'Scorpion et Verseau forment un carré entre deux signes fixes, l’un des affrontements les plus électriques du zodiaque. Le Scorpion, gouverné par Pluton, vit dans l’intensité émotionnelle, la fusion, l’exclusivité et le contrôle ; le Verseau, gouverné par Uranus, vit dans le détachement, la liberté, l’indépendance et le collectif. L’attirance est puissante et magnétique : le Scorpion est fasciné par ce Verseau insaisissable qui échappe à son emprise, le Verseau intrigué par la profondeur intense du Scorpion. Mais leurs besoins sont diamétralement opposés : le Scorpion veut posséder et fusionner, le Verseau veut respirer et rester libre. Deux volontés fixes qui ne plient jamais transforment cette différence en lutte de pouvoir. Le Scorpion resserre l’étreinte, le Verseau s’échappe davantage — un cercle vicieux difficile à briser.',
+    forces:
+      'Une attraction magnétique et une fascination mutuelle, une intensité qui interdit l’indifférence, et une complémentarité possible : le Verseau apprend au Scorpion le lâcher-prise, le Scorpion apprend au Verseau la profondeur émotionnelle. Deux personnalités fortes qui se respectent.',
+    defis:
+      'Fusion contre liberté, possessivité contre indépendance : la jalousie du Scorpion étouffe le Verseau, dont le détachement rend le Scorpion méfiant. Deux signes fixes qui ne cèdent jamais figent le conflit en lutte de pouvoir sur le contrôle et la distance.',
+    conseil:
+      'Scorpion : votre Verseau ne se retient pas, il se donne à qui ne l’enferme pas ; lâchez le contrôle, c’est votre seule chance de le garder. Verseau : l’intensité du Scorpion est un besoin d’engagement, pas une menace ; offrez-lui de la loyauté et de la présence rassurante.',
+    faq: [
+      {
+        q: 'Scorpion et Verseau sont-ils compatibles ?',
+        a: 'C’est l’une des combinaisons les plus difficiles du zodiaque, un carré entre deux signes fixes aux besoins opposés : fusion et exclusivité pour le Scorpion, liberté et distance pour le Verseau. L’attirance magnétique est forte, mais la note de 2 sur 5 reflète le choc frontal de leurs natures. Deux volontés qui ne cèdent jamais transforment leurs différences en lutte de pouvoir. La relation ne tient que si le Scorpion lâche le contrôle et le Verseau offre de l’engagement.',
+      },
+      {
+        q: 'Pourquoi la jalousie du Scorpion pose-t-elle problème au Verseau ?',
+        a: 'Parce que le Verseau a un besoin viscéral d’indépendance et de liberté, exactement ce que la possessivité intense du Scorpion cherche à contrôler. Plus le Scorpion, jaloux et fusionnel, resserre son étreinte, plus le Verseau se sent enfermé et s’échappe — ce qui aggrave la méfiance du Scorpion. C’est un cercle vicieux typique de ce couple. Le Scorpion doit comprendre que la confiance et la liberté données sont ce qui retient un Verseau, jamais la surveillance.',
+      },
+      {
+        q: 'Qu’est-ce qui attire ces deux signes malgré tout ?',
+        a: 'Leur fascination réciproque. Le Scorpion, habitué à percer les gens, se heurte à un Verseau insaisissable qui échappe à son radar — et cette énigme le rend obsessionnel. Le Verseau, détaché de la plupart des émotions, est intrigué par l’intensité brute et la profondeur du Scorpion, si étrangère à son univers cérébral. Cette attraction des opposés est magnétique, presque hypnotique. Mais l’attirance ne suffit pas : sans travail sur le contrôle et la liberté, elle se consume en conflits.',
+      },
+    ],
+  },
+  {
+    slug: 'sagittaire-verseau',
+    signA: 'Sagittaire',
+    signB: 'Verseau',
+    score: 4,
+    titre: 'Deux esprits libres, sextile visionnaire',
+    answerCapsule:
+      'La compatibilité amoureuse entre le Sagittaire et le Verseau est l’une des plus libres et complices du zodiaque. Le sextile Feu-Air unit deux amoureux de l’indépendance, des idées et de l’aventure : le Sagittaire explore le monde, le Verseau réinvente l’avenir. Aucun ne cherche à posséder l’autre, d’où une note de 4 sur 5. Le Sagittaire est stimulé par la vision originale du Verseau, le Verseau par l’optimisme aventureux du Sagittaire. Leur amour ressemble à une amitié passionnée entre esprits libres, sans jalousie ni routine. Le défi tient à l’émotionnel : deux signes cérébraux et indépendants peuvent négliger la tendresse et l’engagement concret. Pour durer, ils incarnent leur complicité au lieu de rester dans les idées. Une consultation peut éclairer votre couple Sagittaire-Verseau si stimulant.',
+    dynamique:
+      'Sagittaire et Verseau s’accordent avec une aisance rare. Le sextile Feu-Air unit deux esprits épris de liberté : le Sagittaire, gouverné par Jupiter, cherche l’aventure, le sens, l’expansion vers de nouveaux horizons ; le Verseau, gouverné par Uranus, cherche l’innovation, les idées, un avenir meilleur. Ils partagent un même refus de l’enfermement, une même curiosité insatiable et un même idéalisme tourné vers plus grand qu’eux. Le Sagittaire est enthousiasmé par la vision d’avant-garde du Verseau, le Verseau par l’optimisme et l’ouverture du Sagittaire. Leur couple ressemble à une amitié amoureuse d’explorateurs — voyages, débats, projets, causes communes — porté par un respect total de l’indépendance de chacun. Ni jalousie ni possessivité : deux électrons libres qui choisissent de faire route ensemble.',
+    forces:
+      'Une liberté mutuelle totale sans jalousie, une stimulation intellectuelle permanente, un idéalisme et une curiosité partagés, et une amitié profonde sous l’amour. Deux esprits libres qui ne s’ennuient ni ne s’étouffent jamais, tournés ensemble vers l’aventure et les idées.',
+    defis:
+      'Le déficit émotionnel : deux cérébraux indépendants peuvent intellectualiser les sentiments et négliger la tendresse. Leur commun refus de l’engagement classique et du concret peut laisser la relation flotter, sans ancrage ni vie matérielle solide.',
+    conseil:
+      'Cultivez délibérément la tendresse et la présence physique : votre complicité mentale est exceptionnelle, mais elle a besoin d’un corps et d’un cœur pour devenir un amour complet. Et ancrez ensemble le concret, votre angle mort commun, pour que l’aventure ait des fondations.',
+    faq: [
+      {
+        q: 'Sagittaire et Verseau sont-ils compatibles ?',
+        a: 'Oui, remarquablement : le sextile Feu-Air unit deux amoureux de la liberté, des idées et de l’aventure, sans jalousie ni possessivité, d’où une note de 4 sur 5. Le Sagittaire explore, le Verseau innove, et chacun respecte totalement l’indépendance de l’autre. Leur couple ressemble à une amitié passionnée entre esprits libres. Son seul chantier est l’émotionnel : deux signes cérébraux doivent cultiver consciemment la tendresse et l’engagement concret.',
+      },
+      {
+        q: 'Qu’est-ce qui rend ce couple si complice ?',
+        a: 'Leur amour partagé de la liberté et des idées. Sagittaire et Verseau détestent tous deux l’enfermement, adorent apprendre, débattre et explorer, et portent un même idéalisme tourné vers le monde. Chacun stimule l’autre au lieu de le brider : le Sagittaire élargit les horizons du Verseau, le Verseau donne une vision d’avenir aux aventures du Sagittaire. Cette complicité intellectuelle, doublée d’un respect total de l’indépendance, fait d’eux l’un des couples les plus fluides du zodiaque.',
+      },
+      {
+        q: 'Ce couple manque-t-il de tendresse ?',
+        a: 'C’est son risque principal. Deux signes cérébraux et indépendants comme le Sagittaire et le Verseau peuvent privilégier les idées, l’aventure et la complicité mentale au détriment de l’expression émotionnelle et de la fusion tendre. La relation, brillante et libre, peut alors ressembler à une amitié survitaminée. Les couples qui durent cultivent volontairement le contact physique, la vulnérabilité et les gestes d’affection, pour que leur belle entente d’esprits devienne un amour incarné.',
+      },
+    ],
+  },
 ];
