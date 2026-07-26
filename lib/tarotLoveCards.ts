@@ -358,4 +358,277 @@ export const TAROT_LOVE_CARDS: TarotLoveCard[] = [
       },
     ],
   },
+  {
+    slug: 'le-bateleur',
+    name: 'Le Bateleur',
+    emoji: '🪄',
+    arcane: 'Arcane majeur I',
+    ouiNon: 'Oui',
+    answerCapsule:
+      'Le Bateleur est la carte des commencements dans le tarot amour. Premier arcane majeur du Tarot de Marseille, il représente le potentiel, l’initiative et le début d’une nouvelle histoire. Tiré en amour, Le Bateleur est un oui plein de promesses : il annonce une rencontre naissante, un nouveau départ sentimental ou le moment idéal pour oser une déclaration. À l’endroit, il incarne la confiance, le charme et la maîtrise de ses atouts pour séduire ; renversé, il signale l’hésitation, la manipulation ou un potentiel qui reste en friche. Pour un célibataire, il ouvre un cycle amoureux prometteur ; pour un couple, un renouveau ou un projet à lancer. Le Bateleur invite à prendre l’initiative : tout est possible, à vous de jouer. Une consultation de voyance amoureuse peut préciser ce que ce nouveau départ vous réserve.',
+    signification:
+      'En amour, Le Bateleur symbolise le commencement, le potentiel et le pouvoir d’agir. Il représente ce moment magique où tout est encore possible, où une histoire peut naître si l’on ose la saisir. Le premier arcane majeur incarne aussi l’habileté, le charme et la capacité à réunir tous ses atouts pour séduire ou construire. C’est une carte d’initiative : elle rappelle que l’amour ne tombe pas du ciel mais se provoque, se tente, se joue. Quand Le Bateleur apparaît dans un tirage sentimental, il annonce un nouveau départ et invite le consultant à prendre les choses en main plutôt qu’à attendre passivement.',
+    endroit:
+      'À l’endroit, Le Bateleur est un signe favorable de commencement en amour. Il annonce une rencontre naissante, un nouveau cycle sentimental ou le moment idéal pour oser une initiative — une déclaration, un premier pas, un projet. La carte parle de confiance, de charme et de maîtrise de ses atouts. Elle encourage à agir : le potentiel est là, il ne demande qu’à être saisi pour qu’une belle histoire commence.',
+    renverse:
+      'Renversé, Le Bateleur révèle l’hésitation, le manque de confiance ou un potentiel qui reste inexploité. Vous n’osez pas faire le premier pas, ou vous doutez de vos atouts au point de laisser passer une opportunité. Cette position peut aussi signaler de la manipulation, un jeu de séduction malhonnête ou de fausses promesses. Le Bateleur inversé invite à clarifier vos intentions et à reprendre confiance : le potentiel existe, mais il faut le mettre en action sincèrement.',
+    celibataire:
+      'Pour un célibataire, Le Bateleur ouvre un cycle amoureux prometteur : une rencontre se profile, ou l’occasion d’oser aborder quelqu’un qui vous attire. La carte vous invite à prendre l’initiative et à miser sur votre charme naturel. C’est le moment idéal pour vous lancer : tout commence, et l’avenir sentimental dépend de votre audace à saisir ce qui se présente.',
+    couple:
+      'Pour un couple, Le Bateleur annonce un renouveau ou un nouveau projet à deux. Vous entrez dans un cycle neuf : emménagement, projet commun, ou simplement l’envie de raviver la relation et de repartir sur de nouvelles bases. La carte invite à l’initiative et à la créativité : votre couple a tout pour écrire un nouveau chapitre stimulant, à condition d’oser le lancer ensemble.',
+    ex:
+      'Concernant un ex, Le Bateleur suggère la possibilité d’un nouveau départ, sur des bases neuves plutôt qu’en reprenant l’ancienne histoire à l’identique. Si la carte apparaît, elle indique qu’un nouveau cycle peut s’ouvrir si vous prenez l’initiative de recontacter cette personne avec des intentions claires. Renversé, elle avertit contre les fausses promesses ou un jeu de séduction sans lendemain.',
+    faq: [
+      {
+        q: 'Que signifie Le Bateleur en amour ?',
+        a: 'Le Bateleur signifie en amour le commencement, le potentiel et l’initiative. Premier arcane majeur du Tarot de Marseille, il annonce une rencontre naissante, un nouveau départ sentimental ou le moment idéal pour oser une déclaration. C’est une carte de confiance et de charme, qui rappelle que l’amour se provoque plutôt qu’il ne s’attend. Quand Le Bateleur apparaît, tout est encore possible : il invite à prendre les choses en main pour qu’une belle histoire commence.',
+      },
+      {
+        q: 'Le Bateleur annonce-t-il une nouvelle rencontre ?',
+        a: 'Oui, pour un célibataire, Le Bateleur est un bon présage de nouvelle rencontre ou de nouveau cycle amoureux. Il marque le début d’une histoire potentielle et invite à saisir l’opportunité en osant le premier pas. Ce n’est pas une promesse passive : la carte souligne que le potentiel doit être mis en action. En misant sur votre charme et votre audace, vous transformez ce commencement annoncé en histoire réelle.',
+      },
+      {
+        q: 'Le Bateleur est-il un oui en amour ?',
+        a: 'Le Bateleur est un oui porteur de potentiel en amour. À l’endroit, il répond favorablement aux questions sur les débuts, les nouvelles rencontres et les initiatives à prendre : le moment est propice, tout peut commencer. Renversé, la réponse devient un « pas encore » : l’hésitation ou le manque de confiance freine le potentiel. Dans l’ensemble, c’est une carte encourageante qui invite à passer à l’action pour concrétiser ses chances.',
+      },
+      {
+        q: 'Que veut dire Le Bateleur renversé en amour ?',
+        a: 'Renversé, Le Bateleur révèle l’hésitation, le manque de confiance ou un potentiel inexploité. Vous n’osez pas faire le premier pas, ou vous laissez passer une opportunité par doute. Cette position peut aussi signaler de la manipulation ou de fausses promesses dans un jeu de séduction. Le Bateleur inversé invite à clarifier vos intentions et à reprendre confiance : le potentiel existe, mais il ne se réalise que si vous le mettez sincèrement en action.',
+      },
+    ],
+  },
+  {
+    slug: 'l-imperatrice',
+    name: 'L’Impératrice',
+    emoji: '👑',
+    arcane: 'Arcane majeur III',
+    ouiNon: 'Oui',
+    answerCapsule:
+      'L’Impératrice est la carte de l’amour épanoui et fécond dans le tarot amour. Troisième arcane majeur du Tarot de Marseille, elle incarne la féminité, la sensualité, l’abondance et la fertilité. Tirée en amour, L’Impératrice est un oui chaleureux : elle annonce une relation nourrissante, un amour sensuel et généreux, parfois une grossesse ou un foyer qui s’agrandit. À l’endroit, elle rayonne de douceur, de plaisir et d’épanouissement affectif ; renversée, elle signale un blocage, une dépendance affective ou un manque d’amour de soi. Pour un célibataire, elle attire une relation tendre et sensuelle ; pour un couple, une phase d’abondance et de complicité charnelle. L’Impératrice invite à s’ouvrir au plaisir et à la générosité du cœur. Une consultation de voyance amoureuse peut préciser l’épanouissement qu’elle annonce.',
+    signification:
+      'En amour, L’Impératrice symbolise l’épanouissement affectif, la sensualité et l’abondance du cœur. Elle représente l’amour dans sa dimension nourricière et généreuse : le plaisir des sens, la douceur du foyer, la fécondité au sens propre comme au figuré. Le troisième arcane majeur est associé à la féminité créatrice, à la séduction naturelle et à la capacité de donner et recevoir de l’amour sans retenue. Quand L’Impératrice apparaît dans un tirage sentimental, elle annonce une relation épanouie et charnelle, ou l’arrivée d’une abondance affective. C’est l’une des cartes les plus douces et fertiles du tarot amour.',
+    endroit:
+      'À l’endroit, L’Impératrice est un présage chaleureux en amour. Elle annonce une relation épanouie, sensuelle et généreuse, où le plaisir et la tendresse abondent. Cette position peut aussi indiquer une grossesse, un projet de famille ou un foyer qui s’épanouit. La carte invite à savourer l’amour dans toute sa richesse, à s’ouvrir aux plaisirs des sens et à la générosité du cœur. L’épanouissement affectif est à portée de main.',
+    renverse:
+      'Renversée, L’Impératrice signale un blocage dans l’épanouissement affectif. Vous manquez de confiance en votre pouvoir de séduction, vous vous coupez de vos plaisirs, ou vous glissez vers la dépendance affective et le besoin excessif de l’autre. Cette position peut aussi révéler une difficulté à donner ou recevoir de l’amour. L’Impératrice inversée invite à retrouver l’amour de soi avant de pouvoir rayonner à nouveau.',
+    celibataire:
+      'Pour un célibataire, L’Impératrice attire une relation tendre, sensuelle et nourrissante. Votre charme naturel et votre ouverture au plaisir séduisent : une belle histoire, chaleureuse et généreuse, se prépare. La carte invite à cultiver l’amour de vous-même et à rayonner sans retenue — c’est cette abondance intérieure qui appelle une rencontre épanouissante.',
+    couple:
+      'Pour un couple, L’Impératrice annonce une phase d’abondance, de complicité charnelle et d’épanouissement. La tendresse et le plaisir sont au rendez-vous, et la relation peut s’ouvrir à un projet fécond : emménagement, mariage ou enfant. La carte invite à savourer cette période généreuse et à nourrir le lien avec douceur et sensualité.',
+    ex:
+      'Concernant un ex, L’Impératrice évoque un lien encore chargé de tendresse et de sensualité. Elle suggère qu’une réconciliation chaleureuse, fondée sur l’affection et le plaisir retrouvé, est possible. Si la carte apparaît, elle indique que des sentiments doux persistent. Renversée, elle invite d’abord à retrouver l’amour de soi avant d’envisager de renouer, pour ne pas retomber dans la dépendance.',
+    faq: [
+      {
+        q: 'Que signifie L’Impératrice en amour ?',
+        a: 'L’Impératrice signifie en amour l’épanouissement, la sensualité et l’abondance du cœur. Troisième arcane majeur du Tarot de Marseille, elle incarne l’amour nourricier et généreux : le plaisir des sens, la douceur du foyer, la fécondité. Elle annonce une relation épanouie et charnelle, parfois une grossesse ou un foyer qui s’agrandit. C’est l’une des cartes les plus douces du tarot amour, qui invite à s’ouvrir au plaisir et à la générosité affective.',
+      },
+      {
+        q: 'L’Impératrice annonce-t-elle une grossesse ?',
+        a: 'L’Impératrice peut annoncer une grossesse, car elle symbolise la fertilité et l’abondance, mais ce n’est pas systématique. Dans un tirage sur l’avenir d’un couple, elle est l’un des meilleurs signes d’une fécondité au sens propre — un enfant — comme au figuré : un projet qui grandit, un foyer qui s’épanouit. Entourée de cartes comme Le Soleil, cette promesse de famille se renforce nettement.',
+      },
+      {
+        q: 'L’Impératrice est-elle une bonne carte en amour ?',
+        a: 'Oui, L’Impératrice est l’une des cartes les plus favorables du tarot amour. Elle annonce l’épanouissement affectif, la sensualité, l’abondance et la générosité du cœur. À l’endroit, elle promet une relation nourrissante et chaleureuse. Renversée, elle reste un appel positif : retrouver l’amour de soi pour rayonner à nouveau. Dans l’ensemble, c’est une carte de douceur, de plaisir et de fécondité amoureuse.',
+      },
+      {
+        q: 'Que veut dire L’Impératrice renversée en amour ?',
+        a: 'Renversée, L’Impératrice signale un blocage dans l’épanouissement affectif. Vous manquez de confiance en votre séduction, vous vous coupez de vos plaisirs, ou vous glissez vers la dépendance affective. Cette position peut révéler une difficulté à donner ou recevoir de l’amour. L’Impératrice inversée invite à retrouver l’amour de soi et la confiance en sa propre valeur avant de pouvoir à nouveau rayonner et attirer une relation épanouie.',
+      },
+    ],
+  },
+  {
+    slug: 'l-empereur',
+    name: 'L’Empereur',
+    emoji: '🛡️',
+    arcane: 'Arcane majeur IV',
+    ouiNon: 'Oui',
+    answerCapsule:
+      'L’Empereur est la carte de la stabilité et de l’engagement dans le tarot amour. Quatrième arcane majeur du Tarot de Marseille, il incarne la solidité, la protection, l’autorité et la construction durable. Tiré en amour, L’Empereur est un oui rassurant : il annonce une relation stable et sérieuse, un partenaire fiable et protecteur, ou un engagement qui s’officialise. À l’endroit, il représente la sécurité, la loyauté et la capacité à bâtir un couple solide ; renversé, il signale la rigidité, l’autoritarisme ou un besoin de contrôle excessif. Pour un célibataire, il attire un partenaire mature et stable ; pour un couple, une consolidation ou un projet structurant. L’Empereur invite à construire l’amour sur des bases solides. Une consultation de voyance amoureuse peut préciser la stabilité qu’il annonce.',
+    signification:
+      'En amour, L’Empereur symbolise la stabilité, l’engagement et la construction durable. Il représente le partenaire fiable, protecteur et loyal, celui sur qui l’on peut s’appuyer et avec qui l’on bâtit un avenir. Le quatrième arcane majeur incarne l’autorité bienveillante, la structure et le sens des responsabilités en amour. Il annonce souvent une relation sérieuse et engagée, loin des passions éphémères. Quand L’Empereur apparaît dans un tirage sentimental, il rassure : le couple repose sur des fondations solides, ou une belle stabilité affective est à venir. C’est une carte de sécurité et de fiabilité.',
+    endroit:
+      'À l’endroit, L’Empereur est un signe rassurant en amour. Il annonce une relation stable, sérieuse et protectrice, avec un partenaire fiable et loyal. Cette position peut indiquer un engagement qui s’officialise, une union solide ou la consolidation d’un couple. La carte invite à construire l’amour sur des bases durables et à valoriser la sécurité affective. La stabilité et la fiabilité sont au rendez-vous.',
+    renverse:
+      'Renversé, L’Empereur révèle la rigidité, l’autoritarisme ou un besoin de contrôle excessif. Un partenaire peut se montrer dominateur, inflexible ou trop centré sur le pouvoir dans la relation. Cette position peut aussi signaler une peur de l’engagement déguisée en froideur, ou une structure qui étouffe au lieu de protéger. L’Empereur inversé invite à assouplir les rapports de force et à équilibrer autorité et tendresse dans le couple.',
+    celibataire:
+      'Pour un célibataire, L’Empereur attire un partenaire mature, stable et protecteur — quelqu’un sur qui l’on peut compter. La carte annonce une relation sérieuse plutôt qu’une aventure, avec une personne fiable et engagée. Elle invite à rechercher la sécurité affective et à valoriser la solidité plutôt que le seul frisson passager.',
+    couple:
+      'Pour un couple, L’Empereur annonce une consolidation ou un engagement structurant. La relation gagne en stabilité, et un projet sérieux peut se concrétiser : mariage, achat commun, fondation d’un foyer. La carte invite à bâtir ensemble sur des bases solides, tout en veillant à ce que l’autorité ne bascule pas en rigidité ou en contrôle.',
+    ex:
+      'Concernant un ex, L’Empereur évoque une relation qui reposait sur la stabilité, ou un ex au tempérament structurant, parfois dominateur. Il peut suggérer un retour sur des bases sérieuses et engagées si les deux le souhaitent vraiment. Renversé, il avertit contre un lien marqué par le contrôle ou la rigidité, qu’il vaut mieux ne pas reconstruire à l’identique.',
+    faq: [
+      {
+        q: 'Que signifie L’Empereur en amour ?',
+        a: 'L’Empereur signifie en amour la stabilité, l’engagement et la protection. Quatrième arcane majeur du Tarot de Marseille, il incarne un partenaire fiable et loyal, et une relation sérieuse bâtie sur des bases solides. Il annonce souvent un engagement qui s’officialise ou une belle sécurité affective, loin des passions éphémères. Quand L’Empereur apparaît, il rassure : le couple repose sur des fondations durables, ou une stabilité amoureuse est à venir.',
+      },
+      {
+        q: 'L’Empereur annonce-t-il un engagement sérieux ?',
+        a: 'Oui, L’Empereur est l’une des cartes de l’engagement sérieux en amour. À l’endroit, il annonce une relation stable et durable, un partenaire fiable et responsable, souvent une union qui s’officialise : mariage, vie commune, projet structurant. Il privilégie la sécurité et la loyauté au frisson passager. C’est un excellent présage pour qui cherche une relation solide et engagée plutôt qu’une simple aventure.',
+      },
+      {
+        q: 'L’Empereur est-il un oui en amour ?',
+        a: 'L’Empereur est un oui rassurant en amour, orienté vers la stabilité. À l’endroit, il répond favorablement aux questions sur l’engagement, la fiabilité du partenaire et la solidité du couple : les fondations sont bonnes. Renversé, la réponse se nuance : rigidité, contrôle ou peur de l’engagement viennent brouiller la sécurité. Dans l’ensemble, c’est une carte positive pour construire une relation durable.',
+      },
+      {
+        q: 'Que veut dire L’Empereur renversé en amour ?',
+        a: 'Renversé, L’Empereur révèle la rigidité, l’autoritarisme ou un besoin de contrôle excessif dans la relation. Un partenaire peut se montrer dominateur ou inflexible, ou bien la peur de l’engagement se cache derrière une froideur. La structure qui devait protéger étouffe alors. L’Empereur inversé invite à rééquilibrer les rapports de force et à conjuguer l’autorité avec la tendresse, pour que la sécurité ne devienne pas une prison.',
+      },
+    ],
+  },
+  {
+    slug: 'le-pape',
+    name: 'Le Pape',
+    emoji: '📿',
+    arcane: 'Arcane majeur V',
+    ouiNon: 'Oui',
+    answerCapsule:
+      'Le Pape est la carte du mariage et de l’union sacrée dans le tarot amour. Cinquième arcane majeur du Tarot de Marseille, il incarne l’engagement officiel, la tradition, la bénédiction et les valeurs partagées. Tiré en amour, Le Pape est un oui empreint de sérieux : il annonce un mariage, une union durable, ou une relation fondée sur des valeurs et un respect profonds. À l’endroit, il représente l’engagement sincère, la fidélité et l’approbation de l’entourage ; renversé, il signale un conformisme pesant, une union par convention ou un décalage de valeurs. Pour un célibataire, il annonce une relation sérieuse et officielle ; pour un couple, une étape d’engagement. Le Pape invite à unir les cœurs sur des bases solides et partagées. Une consultation de voyance amoureuse peut préciser l’union qu’il annonce.',
+    signification:
+      'En amour, Le Pape symbolise l’engagement officiel, l’union sacrée et les valeurs partagées. Il représente le mariage, la relation reconnue et bénie, celle qui s’inscrit dans la durée et le respect mutuel. Le cinquième arcane majeur incarne aussi la fidélité, la spiritualité du lien et l’importance de partager les mêmes principes. Quand Le Pape apparaît dans un tirage sentimental, il annonce souvent une union sérieuse ou un engagement qui se formalise. C’est une carte de couple traditionnel et solide, fondé sur la confiance, le respect et des valeurs communes plutôt que sur la seule passion.',
+    endroit:
+      'À l’endroit, Le Pape est un signe favorable d’union sérieuse en amour. Il annonce un mariage, un engagement officiel ou une relation durable fondée sur des valeurs partagées. Cette position parle de fidélité, de respect mutuel et souvent de l’approbation de l’entourage familial. La carte invite à unir les cœurs de façon sincère et durable : le lien s’inscrit dans la stabilité et la reconnaissance.',
+    renverse:
+      'Renversé, Le Pape révèle un conformisme pesant ou une union par convention plutôt que par amour. Vous restez peut-être dans une relation pour respecter les apparences, la tradition ou la pression familiale. Cette position peut aussi signaler un décalage de valeurs, une infidélité ou un rejet des cadres établis. Le Pape inversé invite à s’interroger sur la sincérité de l’engagement : est-il choisi par amour ou subi par convention ?',
+    celibataire:
+      'Pour un célibataire, Le Pape annonce une relation sérieuse et officielle plutôt qu’une aventure. Vous pourriez rencontrer une personne partageant vos valeurs, avec qui construire une union durable et reconnue. La carte invite à privilégier la profondeur et le respect mutuel : ce qui se prépare n’est pas un flirt mais un lien fondé pour durer.',
+    couple:
+      'Pour un couple, Le Pape annonce une étape d’engagement : fiançailles, mariage ou officialisation de l’union. La relation gagne en sérieux et en reconnaissance, souvent avec la bénédiction de l’entourage. La carte invite à sceller le lien sur des bases de respect, de fidélité et de valeurs partagées — les fondations d’un couple traditionnel et solide.',
+    ex:
+      'Concernant un ex, Le Pape évoque une relation qui reposait sur des valeurs sérieuses, voire un projet d’union. Il peut suggérer une réconciliation sur des bases engagées et respectueuses. Si la carte apparaît, elle indique un lien fondé sur le sérieux plutôt que sur la seule passion. Renversé, elle interroge : cette relation valait-elle par amour, ou seulement par convention et habitude ?',
+    faq: [
+      {
+        q: 'Que signifie Le Pape en amour ?',
+        a: 'Le Pape signifie en amour l’engagement officiel, l’union sacrée et les valeurs partagées. Cinquième arcane majeur du Tarot de Marseille, il incarne le mariage, la relation durable et reconnue, fondée sur le respect et la fidélité. Il annonce souvent une union sérieuse ou un engagement qui se formalise. C’est une carte de couple traditionnel et solide, bâti sur la confiance et des principes communs plutôt que sur la seule passion éphémère.',
+      },
+      {
+        q: 'Le Pape annonce-t-il un mariage ?',
+        a: 'Oui, Le Pape est l’une des principales cartes du mariage dans le tarot amour. À l’endroit, il annonce une union officielle, un engagement sérieux et durable, souvent béni par l’entourage familial. Il symbolise la relation reconnue et fondée sur des valeurs partagées. Entouré de cartes favorables comme Les Amoureux ou Le Soleil, cette promesse d’union se renforce nettement. C’est un excellent présage pour un projet de mariage.',
+      },
+      {
+        q: 'Le Pape est-il un oui en amour ?',
+        a: 'Le Pape est un oui sérieux en amour, tourné vers l’engagement durable. À l’endroit, il répond favorablement aux questions sur le mariage, l’union officielle et la solidité du couple : le lien est fondé pour durer. Renversé, la réponse se nuance : conformisme, union par convention ou décalage de valeurs viennent brouiller la sincérité. Dans l’ensemble, c’est une carte positive pour un couple qui s’engage sur des bases solides.',
+      },
+      {
+        q: 'Que veut dire Le Pape renversé en amour ?',
+        a: 'Renversé, Le Pape révèle un conformisme pesant ou une union par convention plutôt que par amour. On reste parfois dans une relation pour les apparences, la tradition ou la pression familiale. Cette position peut aussi signaler un décalage de valeurs ou une infidélité. Le Pape inversé invite à s’interroger sur la sincérité de l’engagement : est-il choisi librement par amour, ou subi par habitude et convention sociale ?',
+      },
+    ],
+  },
+  {
+    slug: 'le-chariot',
+    name: 'Le Chariot',
+    emoji: '🏇',
+    arcane: 'Arcane majeur VII',
+    ouiNon: 'Oui',
+    answerCapsule:
+      'Le Chariot est la carte de l’avancée et de la victoire dans le tarot amour. Septième arcane majeur du Tarot de Marseille, il incarne le mouvement, la détermination et le progrès vers un objectif. Tiré en amour, Le Chariot est un oui dynamique : il annonce une relation qui progresse, un obstacle surmonté ou une conquête amoureuse réussie par la volonté. À l’endroit, il représente l’élan, la maîtrise et l’avancée triomphante du couple ; renversé, il signale une perte de contrôle, une stagnation ou des efforts dispersés. Pour un célibataire, il annonce une conquête et de belles avancées ; pour un couple, une progression vers un but commun. Le Chariot invite à avancer avec détermination vers ce que l’on désire. Une consultation de voyance amoureuse peut préciser la direction qu’il indique.',
+    signification:
+      'En amour, Le Chariot symbolise l’avancée, la détermination et la victoire par la volonté. Il représente le mouvement en avant : une relation qui progresse, un obstacle que l’on franchit, une conquête que l’on mène à bien par sa maîtrise et son élan. Le septième arcane majeur incarne aussi l’affirmation de soi et la capacité à diriger sa vie sentimentale plutôt que de la subir. Quand Le Chariot apparaît dans un tirage amoureux, il annonce le succès d’une démarche, une avancée décisive ou la conquête d’un cœur. C’est une carte d’action et de progrès triomphant.',
+    endroit:
+      'À l’endroit, Le Chariot est un signe favorable d’avancée en amour. Il annonce une relation qui progresse, un obstacle surmonté ou une conquête réussie grâce à la détermination. Cette position parle d’élan, de maîtrise et de victoire par la volonté. La carte invite à avancer avec confiance vers ce que l’on désire : les efforts portent leurs fruits et le couple ou la conquête avance dans la bonne direction.',
+    renverse:
+      'Renversé, Le Chariot révèle une perte de contrôle, une stagnation ou des efforts dispersés. Vous tirez peut-être dans des directions opposées, ou l’avancée amoureuse patine faute d’unité et de détermination. Cette position peut aussi signaler de la précipitation, un excès de volonté qui brusque l’autre, ou un projet qui s’enlise. Le Chariot inversé invite à retrouver une direction claire et à avancer de façon coordonnée plutôt que dispersée.',
+    celibataire:
+      'Pour un célibataire, Le Chariot annonce une conquête réussie et de belles avancées. Votre détermination et votre assurance séduisent : si vous voulez conquérir un cœur, le moment est propice pour agir avec élan. La carte invite à prendre les rênes de votre vie amoureuse et à avancer vers ce que vous désirez sans hésiter.',
+    couple:
+      'Pour un couple, Le Chariot annonce une progression vers un but commun. La relation avance, un projet se concrétise, un obstacle est franchi ensemble. La carte invite à unir vos volontés et à avancer dans la même direction : c’est cette coordination qui mène le couple à la victoire. Veillez toutefois à ne pas foncer au point d’oublier la douceur.',
+    ex:
+      'Concernant un ex, Le Chariot suggère qu’une reconquête est possible par la détermination, mais qu’elle demande une action maîtrisée plutôt qu’une course effrénée. Si la carte apparaît, elle indique que l’avancée vers cette personne peut réussir si vous gardez le cap avec assurance. Renversé, elle avertit contre la précipitation ou un acharnement qui risque de brusquer et de faire fuir.',
+    faq: [
+      {
+        q: 'Que signifie Le Chariot en amour ?',
+        a: 'Le Chariot signifie en amour l’avancée, la détermination et la victoire par la volonté. Septième arcane majeur du Tarot de Marseille, il annonce une relation qui progresse, un obstacle surmonté ou une conquête réussie grâce à l’élan et à la maîtrise de soi. Il incarne le mouvement en avant et l’affirmation de sa direction sentimentale. Quand Le Chariot apparaît, il annonce le succès d’une démarche amoureuse menée avec assurance et détermination.',
+      },
+      {
+        q: 'Le Chariot annonce-t-il une avancée dans la relation ?',
+        a: 'Oui, Le Chariot est par excellence la carte de l’avancée en amour. À l’endroit, il annonce une relation qui progresse, un projet qui se concrétise ou un obstacle franchi grâce à la volonté commune. Il indique le mouvement, l’élan et la victoire de la détermination. Pour un couple qui avance vers un but partagé, c’est un excellent signe : les efforts coordonnés mènent au succès et la relation progresse dans la bonne direction.',
+      },
+      {
+        q: 'Le Chariot est-il un oui en amour ?',
+        a: 'Le Chariot est un oui dynamique en amour, porté par l’action. À l’endroit, il répond favorablement aux questions sur la conquête, la progression du couple et le succès d’une démarche : la victoire est à portée grâce à la détermination. Renversé, la réponse se nuance : perte de contrôle, dispersion ou précipitation freinent l’avancée. Dans l’ensemble, c’est une carte encourageante qui récompense la volonté et la maîtrise.',
+      },
+      {
+        q: 'Que veut dire Le Chariot renversé en amour ?',
+        a: 'Renversé, Le Chariot révèle une perte de contrôle, une stagnation ou des efforts dispersés en amour. Les partenaires tirent parfois dans des directions opposées, ou la relation patine faute d’unité. Cette position peut aussi signaler de la précipitation ou un excès de volonté qui brusque l’autre. Le Chariot inversé invite à retrouver une direction claire et à avancer de façon coordonnée et patiente plutôt que dispersée ou forcée.',
+      },
+    ],
+  },
+  {
+    slug: 'la-justice',
+    name: 'La Justice',
+    emoji: '⚖️',
+    arcane: 'Arcane majeur VIII',
+    ouiNon: 'Nuancé',
+    answerCapsule:
+      'La Justice est la carte de l’équilibre et de la vérité dans le tarot amour. Huitième arcane majeur du Tarot de Marseille, elle incarne l’équité, la responsabilité, la loyauté et le juste retour des choses. Tirée en amour, La Justice n’est ni un oui ni un non simple : elle invite à la lucidité et à l’honnêteté, et récompense ou sanctionne selon les actes. À l’endroit, elle annonce une relation équilibrée, un engagement formalisé ou une situation qui se clarifie avec justice ; renversée, elle signale un déséquilibre, une injustice ou un manque d’honnêteté. Pour un célibataire, elle appelle une relation équitable ; pour un couple, un rééquilibrage nécessaire. La Justice rappelle que l’on récolte en amour ce que l’on sème. Une consultation de voyance amoureuse peut éclairer l’équilibre de votre situation.',
+    signification:
+      'En amour, La Justice symbolise l’équilibre, la vérité et la responsabilité. Elle rappelle que toute relation repose sur un juste échange, et que nos actes ont des conséquences : on récolte ce que l’on a semé. Le huitième arcane majeur incarne aussi l’engagement formel — contrat, mariage, décision assumée — et l’importance de l’honnêteté et de l’équité entre partenaires. Quand La Justice apparaît dans un tirage sentimental, elle invite à la lucidité : elle éclaire les déséquilibres, appelle à la sincérité et annonce souvent une clarification ou une décision juste. C’est une carte de vérité et de responsabilité affective.',
+    endroit:
+      'À l’endroit, La Justice annonce une relation équilibrée et honnête, ou une situation qui se clarifie avec équité. Elle peut indiquer un engagement formalisé — union, décision assumée — pris en toute lucidité. La carte parle de loyauté, de responsabilité et de juste échange entre partenaires. Elle invite à la sincérité et récompense les relations fondées sur l’équité : ce qui est juste et équilibré trouve sa reconnaissance.',
+    renverse:
+      'Renversée, La Justice révèle un déséquilibre, une injustice ou un manque d’honnêteté dans la relation. L’un donne plus que l’autre, une décision est biaisée, ou des non-dits faussent le lien. Cette position peut aussi signaler les conséquences d’actes passés qui se rattrapent. La Justice inversée invite à rétablir l’équité et la vérité : tant que le déséquilibre ou le mensonge persiste, la relation ne peut trouver son harmonie.',
+    celibataire:
+      'Pour un célibataire, La Justice appelle une relation équitable et sincère, fondée sur le respect mutuel et l’honnêteté. Elle invite à clarifier ce que vous attendez vraiment et à ne pas accepter de déséquilibre. La carte peut aussi rappeler que votre vie amoureuse reflète vos actes : en semant l’équité et la sincérité, vous attirez une rencontre juste et loyale.',
+    couple:
+      'Pour un couple, La Justice annonce un rééquilibrage nécessaire ou une clarification. Il peut être temps d’ajuster ce qui est injuste — répartition, engagement, vérité — pour retrouver l’harmonie. La carte peut aussi annoncer une décision formelle prise ensemble. Elle invite à l’honnêteté et à l’équité : un couple juste et équilibré est un couple qui dure.',
+    ex:
+      'Concernant un ex, La Justice invite à un regard lucide et honnête sur ce qui s’est passé. Elle peut annoncer une clarification, une mise à plat des responsabilités ou un juste retour des choses. Si la carte apparaît, elle rappelle que la vérité et l’équité doivent primer sur les émotions. Renversée, elle signale un déséquilibre ou une injustice non résolue qu’il faudra affronter avant d’envisager quoi que ce soit.',
+    faq: [
+      {
+        q: 'Que signifie La Justice en amour ?',
+        a: 'La Justice signifie en amour l’équilibre, la vérité et la responsabilité. Huitième arcane majeur du Tarot de Marseille, elle rappelle que toute relation repose sur un juste échange et que nos actes ont des conséquences : on récolte ce que l’on sème. Elle incarne aussi l’engagement formel et l’importance de l’honnêteté entre partenaires. Quand La Justice apparaît, elle invite à la lucidité et annonce souvent une clarification ou une décision juste.',
+      },
+      {
+        q: 'La Justice est-elle une carte positive en amour ?',
+        a: 'La Justice est une carte nuancée : elle n’est ni bonne ni mauvaise en soi, elle rend selon les actes. À l’endroit, elle est favorable aux relations équilibrées et sincères, qu’elle récompense, et peut annoncer un engagement formalisé. Renversée, elle révèle un déséquilibre ou une injustice à corriger. Elle invite avant tout à l’honnêteté : dans une relation juste et loyale, La Justice est un excellent présage ; dans un lien faussé, elle appelle à la vérité.',
+      },
+      {
+        q: 'La Justice annonce-t-elle un engagement ou un mariage ?',
+        a: 'La Justice peut annoncer un engagement formel, car elle symbolise le contrat, la décision assumée et l’équilibre officialisé — ce qui inclut le mariage ou une union légale. À l’endroit, dans un contexte favorable, elle indique une relation équilibrée prête à se formaliser en toute lucidité. Ce n’est pas systématique : elle parle d’abord d’équité et de vérité. Mais associée à des cartes d’union, elle soutient l’idée d’un engagement juste et réfléchi.',
+      },
+      {
+        q: 'Que veut dire La Justice renversée en amour ?',
+        a: 'Renversée, La Justice révèle un déséquilibre, une injustice ou un manque d’honnêteté dans la relation. L’un donne plus que l’autre, une décision est biaisée, ou des non-dits faussent le lien. Elle peut aussi signaler les conséquences d’actes passés qui se rattrapent. La Justice inversée invite à rétablir l’équité et la vérité : tant que le déséquilibre ou le mensonge persiste, la relation ne peut trouver son harmonie.',
+      },
+    ],
+  },
+  {
+    slug: 'le-pendu',
+    name: 'Le Pendu',
+    emoji: '🙃',
+    arcane: 'Arcane majeur XII',
+    ouiNon: 'Nuancé',
+    answerCapsule:
+      'Le Pendu est la carte de l’attente et du lâcher-prise dans le tarot amour. Douzième arcane majeur du Tarot de Marseille, il incarne la suspension, le sacrifice, le changement de perspective et la patience imposée. Tiré en amour, Le Pendu n’est ni un oui ni un non : il annonce une situation en suspens, une relation qui n’avance pas encore, un temps d’attente nécessaire. À l’endroit, il invite au lâcher-prise et à voir les choses autrement pour débloquer la situation ; renversé, il signale une stagnation stérile, un sacrifice inutile ou un refus de lâcher prise. Pour un célibataire, il appelle une pause avant de rencontrer ; pour un couple, un temps de recul salutaire. Le Pendu rappelle que forcer ne sert à rien : parfois, il faut attendre et changer de regard. Une consultation de voyance amoureuse peut éclairer cette pause.',
+    signification:
+      'En amour, Le Pendu symbolise la suspension, l’attente et le lâcher-prise. Il représente ces moments où la situation sentimentale est comme figée, où rien n’avance malgré les efforts, et où la seule issue est d’accepter la pause et de changer de point de vue. Le douzième arcane majeur parle aussi de sacrifice consenti et de la nécessité de renoncer à vouloir tout contrôler. Quand Le Pendu apparaît dans un tirage amoureux, il invite à la patience et à voir la situation sous un autre angle : c’est souvent en lâchant prise, et non en forçant, que le blocage finit par se dénouer.',
+    endroit:
+      'À l’endroit, Le Pendu invite au lâcher-prise et au changement de perspective en amour. La situation est en suspens, mais cette pause a un sens : en cessant de forcer et en voyant les choses autrement, vous préparez le déblocage. La carte parle d’acceptation, de patience et parfois d’un sacrifice consenti pour un bien plus grand. Elle rappelle que tout ne se résout pas par l’action : parfois, il faut savoir attendre et changer de regard.',
+    renverse:
+      'Renversé, Le Pendu révèle une stagnation stérile ou un refus de lâcher prise. Vous vous accrochez à une situation figée, vous vous sacrifiez inutilement, ou vous refusez de voir les choses autrement, prolongeant un blocage sans issue. Cette position peut aussi signaler l’impatience ou le sentiment d’être victime. Le Pendu inversé invite à sortir de l’immobilisme : soit en agissant enfin, soit en acceptant vraiment de lâcher ce qui vous retient.',
+    celibataire:
+      'Pour un célibataire, Le Pendu appelle une pause avant la rencontre. Ce n’est pas le moment de forcer ou de courir après l’amour, mais de prendre du recul, de vous recentrer et de changer votre regard sur vos attentes. La carte invite à la patience : c’est souvent en lâchant prise et en cessant de chercher que la bonne rencontre finit par se présenter.',
+    couple:
+      'Pour un couple, Le Pendu annonce un temps de recul salutaire ou une situation en suspens. La relation semble figée, mais cette pause peut permettre de prendre du recul et de voir les choses autrement. La carte invite à la patience et parfois à un sacrifice ou un compromis pour débloquer la situation. Évitez de forcer : c’est en changeant de perspective que le couple retrouvera son mouvement.',
+    ex:
+      'Concernant un ex, Le Pendu évoque une situation en suspens, ni vraiment terminée ni relancée. Il invite à la patience et au lâcher-prise plutôt qu’à l’action : ce n’est pas le moment de forcer un retour. La carte suggère de prendre du recul et de voir la relation passée sous un autre angle. Renversé, elle avertit contre un attachement stérile à une situation figée qu’il vaudrait mieux accepter de lâcher.',
+    faq: [
+      {
+        q: 'Que signifie Le Pendu en amour ?',
+        a: 'Le Pendu signifie en amour la suspension, l’attente et le lâcher-prise. Douzième arcane majeur du Tarot de Marseille, il annonce une situation sentimentale en suspens, une relation qui n’avance pas encore, un temps de patience nécessaire. Il invite à cesser de forcer et à changer de perspective pour débloquer les choses. Quand Le Pendu apparaît, il rappelle que tout ne se résout pas par l’action : parfois, c’est en acceptant la pause que le blocage finit par se dénouer.',
+      },
+      {
+        q: 'Le Pendu annonce-t-il une attente en amour ?',
+        a: 'Oui, Le Pendu est par excellence la carte de l’attente et du suspens en amour. Il indique que la situation est temporairement figée et que rien n’avancera par la force. La carte invite à la patience et au lâcher-prise : ce temps d’attente n’est pas vide, il prépare un changement. En acceptant de voir les choses autrement plutôt qu’en s’acharnant, on favorise le déblocage. C’est une invitation à faire confiance au bon moment.',
+      },
+      {
+        q: 'Le Pendu est-il un oui ou un non en amour ?',
+        a: 'Le Pendu n’est ni un oui ni un non : c’est une carte de suspens qui répond « pas maintenant ». Elle indique que la situation est en attente et qu’il faut lâcher prise plutôt que forcer une réponse. À l’endroit, cette pause est constructive et prépare un déblocage par le changement de perspective. Renversée, elle signale une stagnation stérile à dépasser. Dans tous les cas, Le Pendu invite à la patience avant qu’une réponse claire n’émerge.',
+      },
+      {
+        q: 'Que veut dire Le Pendu renversé en amour ?',
+        a: 'Renversé, Le Pendu révèle une stagnation stérile ou un refus de lâcher prise. On s’accroche à une situation figée, on se sacrifie inutilement, ou on refuse de voir les choses autrement, prolongeant un blocage sans issue. Cette position peut aussi traduire l’impatience ou un sentiment de victime. Le Pendu inversé invite à sortir de l’immobilisme : soit en agissant enfin, soit en acceptant réellement de lâcher ce qui retient et empêche d’avancer.',
+      },
+    ],
+  },
 ];
