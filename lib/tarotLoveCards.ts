@@ -631,4 +631,277 @@ export const TAROT_LOVE_CARDS: TarotLoveCard[] = [
       },
     ],
   },
+  {
+    slug: 'le-mat',
+    name: 'Le Mat',
+    emoji: '🚶',
+    arcane: 'Arcane sans numéro',
+    ouiNon: 'Nuancé',
+    answerCapsule:
+      'Le Mat est la carte de la liberté et du nouveau départ dans le tarot amour. Arcane sans numéro du Tarot de Marseille, il incarne la spontanéité, l’aventure et le saut vers l’inconnu. Tiré en amour, Le Mat n’est ni un oui ni un non : il annonce une aventure sentimentale imprévue, un besoin de liberté ou un nouveau chemin à emprunter sans garantie. À l’endroit, il invite à suivre son cœur avec audace et à s’ouvrir à l’inattendu ; renversé, il signale l’instabilité, la fuite ou la peur de l’engagement. Pour un célibataire, il annonce une rencontre spontanée et libre ; pour un couple, un besoin de renouveau ou d’air. Le Mat rappelle que l’amour est parfois un saut de foi. Une consultation de voyance amoureuse peut éclairer où ce nouveau chemin vous mène.',
+    signification:
+      'En amour, Le Mat symbolise la liberté, la spontanéité et le saut vers l’inconnu. Il représente ces moments où l’on suit son cœur sans plan ni garantie, où une aventure sentimentale imprévue s’offre à nous. Cet arcane sans numéro, à la fois premier et dernier du Tarot de Marseille, incarne l’insouciance, le voyage et le refus des cadres. Il parle de fraîcheur amoureuse mais aussi d’instabilité et de peur de se poser. Quand Le Mat apparaît dans un tirage sentimental, il invite à l’audace et à l’ouverture, tout en rappelant qu’un amour libre demande aussi, un jour, de choisir de rester.',
+    endroit:
+      'À l’endroit, Le Mat invite à suivre son cœur avec audace et spontanéité. Il annonce une aventure sentimentale imprévue, une rencontre libre ou un nouveau chemin à emprunter sans trop réfléchir. La carte parle de fraîcheur, d’ouverture à l’inattendu et de foi en la vie. Elle encourage à oser l’inconnu en amour : parfois, c’est en lâchant le contrôle et en sautant le pas que naissent les plus belles histoires.',
+    renverse:
+      'Renversé, Le Mat révèle l’instabilité, la fuite ou la peur de l’engagement. Vous papillonnez sans vous poser, vous fuyez les responsabilités affectives, ou vous prenez des risques inconsidérés en amour. Cette position peut aussi signaler une immaturité sentimentale ou un refus de choisir. Le Mat inversé invite à distinguer la liberté saine de la fuite : à un moment, aimer demande de s’ancrer plutôt que de toujours repartir.',
+    celibataire:
+      'Pour un célibataire, Le Mat annonce une rencontre spontanée et libre, souvent là où on ne l’attendait pas. Une histoire légère et pleine de fraîcheur peut naître si vous osez sortir de vos habitudes. La carte invite à l’ouverture et à l’audace : suivez votre élan sans trop calculer, car cette aventure imprévue peut vous surprendre agréablement.',
+    couple:
+      'Pour un couple, Le Mat annonce un besoin de renouveau, de liberté ou d’air frais. La relation gagnerait à sortir de la routine par une aventure, un voyage ou un projet spontané. La carte invite à raviver la fraîcheur du lien, tout en veillant à ce que le besoin de liberté de l’un ne devienne pas une fuite de l’engagement.',
+    ex:
+      'Concernant un ex, Le Mat évoque un lien marqué par la liberté ou l’imprévu, parfois une histoire jamais vraiment posée. Il peut suggérer un nouveau départ spontané, sans reprendre le passé à l’identique. Si la carte apparaît, elle invite à l’ouverture sans attentes rigides. Renversée, elle avertit contre une relation instable ou une personne fuyante, incapable de s’engager durablement.',
+    faq: [
+      {
+        q: 'Que signifie Le Mat en amour ?',
+        a: 'Le Mat signifie en amour la liberté, la spontanéité et le saut vers l’inconnu. Arcane sans numéro du Tarot de Marseille, il annonce une aventure sentimentale imprévue, un besoin de liberté ou un nouveau chemin à emprunter sans garantie. Il invite à suivre son cœur avec audace, tout en rappelant les risques d’instabilité. Quand Le Mat apparaît, l’amour se vit comme un saut de foi : une belle histoire est possible si l’on ose l’inattendu.',
+      },
+      {
+        q: 'Le Mat annonce-t-il une aventure amoureuse ?',
+        a: 'Oui, Le Mat est souvent la carte de l’aventure sentimentale imprévue et de la rencontre spontanée. Il annonce une histoire libre, fraîche et inattendue, qui naît quand on lâche le contrôle. Pour un célibataire audacieux, c’est un signe d’ouverture. La carte rappelle toutefois que cette liberté peut manquer d’ancrage : l’aventure est belle, mais elle demandera un jour de choisir si l’on veut la transformer en histoire durable.',
+      },
+      {
+        q: 'Le Mat est-il un oui ou un non en amour ?',
+        a: 'Le Mat est une carte nuancée, ni oui ni non franc. Il répond « suivez votre cœur sans garantie » : l’issue dépend de votre audace et des circonstances. À l’endroit, il encourage à oser une aventure et à s’ouvrir à l’inattendu, ce qui est plutôt positif. Renversé, il signale instabilité et fuite de l’engagement. Le Mat invite à sauter le pas en conscience, en sachant qu’un amour libre demande aussi, tôt ou tard, de se poser.',
+      },
+      {
+        q: 'Que veut dire Le Mat renversé en amour ?',
+        a: 'Renversé, Le Mat révèle l’instabilité, la fuite ou la peur de l’engagement. On papillonne sans se poser, on fuit les responsabilités affectives, ou on prend des risques inconsidérés. Cette position peut aussi traduire une immaturité sentimentale ou un refus de choisir. Le Mat inversé invite à distinguer la liberté saine de la fuite : à un moment, aimer vraiment demande de s’ancrer plutôt que de toujours repartir vers un ailleurs.',
+      },
+    ],
+  },
+  {
+    slug: 'la-papesse',
+    name: 'La Papesse',
+    emoji: '📜',
+    arcane: 'Arcane majeur II',
+    ouiNon: 'Nuancé',
+    answerCapsule:
+      'La Papesse est la carte du mystère et de l’intuition dans le tarot amour. Deuxième arcane majeur du Tarot de Marseille, elle incarne le secret, la patience, la connaissance intérieure et les sentiments non exprimés. Tirée en amour, La Papesse n’est ni un oui ni un non : elle invite à attendre, à écouter son intuition et à laisser mûrir ce qui n’est pas encore dit. À l’endroit, elle révèle des sentiments cachés, une relation secrète ou platonique, ou une vérité qui n’est pas prête à éclore ; renversée, elle signale le refoulement, la froideur ou des secrets qui pèsent. Pour un célibataire, elle conseille la patience ; pour un couple, d’écouter le non-dit. La Papesse rappelle que certaines choses se dévoilent en leur temps. Une consultation de voyance amoureuse peut lever le voile sur votre situation.',
+    signification:
+      'En amour, La Papesse symbolise le mystère, l’intuition et les sentiments encore secrets. Elle représente ce qui n’est pas dit, ce qui mûrit dans l’ombre, ce que l’on ressent sans oser l’exprimer. Le deuxième arcane majeur incarne la patience, la sagesse intérieure et la connaissance qui se dévoile lentement. Elle apparaît souvent quand une relation est secrète, platonique, ou quand des sentiments profonds restent tus. La Papesse invite à écouter son intuition plutôt qu’à forcer les choses, et à respecter le temps nécessaire. C’est une carte de réserve et de profondeur, qui préfère le silence habité à la précipitation.',
+    endroit:
+      'À l’endroit, La Papesse révèle des sentiments cachés ou une relation qui se vit dans la discrétion. Elle peut indiquer un amour secret, platonique, ou des émotions profondes que l’on n’exprime pas encore. La carte invite à la patience et à l’écoute de son intuition : ce qui doit se révéler le fera en son temps. Elle rappelle que certaines vérités amoureuses mûrissent dans le silence avant d’éclore.',
+    renverse:
+      'Renversée, La Papesse révèle le refoulement, la froideur ou des secrets qui pèsent. Des sentiments restent bloqués, une vérité est dissimulée, ou l’on se coupe de son intuition et de ses émotions. Cette position peut aussi signaler une relation cachée qui devient un fardeau, ou une distance émotionnelle glaçante. La Papesse inversée invite à libérer ce qui est tu : le silence, quand il devient mensonge ou déni, finit par étouffer l’amour.',
+    celibataire:
+      'Pour un célibataire, La Papesse conseille la patience et l’écoute intérieure. Ce n’est pas le moment de forcer une rencontre, mais de laisser mûrir ce qui se prépare en coulisses. Un sentiment peut naître discrètement, ou une personne vous observe sans se dévoiler. La carte invite à faire confiance à votre intuition : l’amour se révélera en son temps, sans qu’il soit besoin de le brusquer.',
+    couple:
+      'Pour un couple, La Papesse invite à écouter le non-dit et l’intuition. Des sentiments ou des besoins profonds ne sont peut-être pas exprimés, de part et d’autre. La carte encourage à créer un espace de confidence et de silence habité pour laisser émerger ce qui reste tu. Elle rappelle que la profondeur d’un couple se nourrit aussi de ce qui se ressent sans toujours se dire.',
+    ex:
+      'Concernant un ex, La Papesse évoque des sentiments qui subsistent en secret, non exprimés de part et d’autre. Elle invite à la patience et à l’écoute de votre intuition plutôt qu’à l’action précipitée. Si la carte apparaît, elle suggère que quelque chose mûrit dans le silence et se révélera en son temps. Renversée, elle signale des non-dits ou des secrets qui pèsent et qu’il faudra éclaircir avant tout rapprochement.',
+    faq: [
+      {
+        q: 'Que signifie La Papesse en amour ?',
+        a: 'La Papesse signifie en amour le mystère, l’intuition et les sentiments encore secrets. Deuxième arcane majeur du Tarot de Marseille, elle représente ce qui n’est pas dit, ce qui mûrit dans l’ombre, les émotions profondes que l’on n’ose exprimer. Elle apparaît souvent pour une relation secrète ou platonique. La Papesse invite à la patience et à écouter son intuition : certaines vérités amoureuses se dévoilent lentement, en leur temps, sans qu’on puisse les forcer.',
+      },
+      {
+        q: 'La Papesse annonce-t-elle un amour secret ?',
+        a: 'Oui, La Papesse est l’une des cartes de l’amour secret ou non exprimé dans le tarot. Elle peut révéler une relation cachée, un amour platonique, ou des sentiments profonds que l’on garde pour soi. Elle indique que quelque chose se vit ou mûrit dans la discrétion. La carte invite à écouter son intuition pour percevoir ces sentiments tus, tout en respectant le temps nécessaire avant qu’ils ne se dévoilent au grand jour.',
+      },
+      {
+        q: 'La Papesse est-elle un oui ou un non en amour ?',
+        a: 'La Papesse est une carte nuancée, qui répond « patience, écoutez votre intuition ». Elle n’affirme ni oui ni non : elle indique que la situation n’est pas encore prête à se dévoiler et qu’il faut laisser mûrir. À l’endroit, elle est plutôt positive — des sentiments profonds existent, cachés. Renversée, elle signale refoulement ou secrets pesants. Dans tous les cas, La Papesse invite à faire confiance au temps plutôt qu’à forcer une réponse.',
+      },
+      {
+        q: 'Que veut dire La Papesse renversée en amour ?',
+        a: 'Renversée, La Papesse révèle le refoulement, la froideur ou des secrets qui pèsent. Des sentiments restent bloqués, une vérité est dissimulée, ou l’on se coupe de son intuition et de ses émotions. Cette position peut signaler une relation cachée devenue un fardeau, ou une distance émotionnelle glaçante. La Papesse inversée invite à libérer ce qui est tu : le silence, quand il devient déni ou mensonge, finit par étouffer l’amour au lieu de le protéger.',
+      },
+    ],
+  },
+  {
+    slug: 'l-ermite',
+    name: 'L’Ermite',
+    emoji: '🕯️',
+    arcane: 'Arcane majeur IX',
+    ouiNon: 'Nuancé',
+    answerCapsule:
+      'L’Ermite est la carte de l’introspection et de la solitude dans le tarot amour. Neuvième arcane majeur du Tarot de Marseille, il incarne le recul, la sagesse intérieure, la patience et le besoin de solitude. Tiré en amour, L’Ermite n’est pas un oui : il annonce un temps de retrait, une introspection nécessaire ou une distance dans la relation. À l’endroit, il invite à se recentrer, à réfléchir à ses vrais besoins avant d’avancer ; renversé, il signale un isolement excessif, une solitude subie ou une peur de s’engager. Pour un célibataire, il appelle un temps pour soi avant la rencontre ; pour un couple, un besoin d’espace ou de recul. L’Ermite rappelle que se connaître soi-même précède un amour juste. Une consultation de voyance amoureuse peut éclairer ce temps de retrait.',
+    signification:
+      'En amour, L’Ermite symbolise l’introspection, la solitude et la sagesse intérieure. Il représente ces périodes où l’on a besoin de se retirer, de réfléchir à ses vrais désirs et de faire le point loin du bruit des relations. Le neuvième arcane majeur incarne la patience, la maturité et la quête de vérité personnelle avant de s’engager. Il apparaît souvent quand une distance s’installe, quand l’on cherche à se comprendre, ou quand la solitude devient nécessaire. L’Ermite invite à écouter sa lumière intérieure : c’est en se connaissant soi-même que l’on prépare un amour juste, plutôt qu’en fuyant dans une relation.',
+    endroit:
+      'À l’endroit, L’Ermite invite au recul et à l’introspection en amour. Il annonce un temps de retrait nécessaire pour réfléchir à ses vrais besoins, faire le point ou guérir avant d’avancer. La carte parle de sagesse, de patience et de connaissance de soi. Elle rappelle qu’un temps de solitude choisie n’est pas un échec mais une étape : c’est en se comprenant soi-même que l’on se prépare à aimer justement.',
+    renverse:
+      'Renversé, L’Ermite révèle un isolement excessif ou une solitude subie. Vous vous coupez des autres par peur d’être blessé, vous vous enfermez dans le retrait, ou vous fuyez l’engagement sous couvert d’indépendance. Cette position peut aussi signaler une solitude douloureuse dont on n’arrive pas à sortir. L’Ermite inversé invite à distinguer le recul sain de l’enfermement : à un moment, il faut rouvrir sa porte et laisser entrer l’autre.',
+    celibataire:
+      'Pour un célibataire, L’Ermite appelle un temps pour soi avant la rencontre. Ce n’est pas le moment de chercher activement l’amour, mais de vous recentrer, de guérir vos blessures et de clarifier ce que vous voulez vraiment. La carte invite à la patience : ce travail intérieur prépare une rencontre plus juste. En vous connaissant mieux, vous attirerez un amour plus aligné avec qui vous êtes.',
+    couple:
+      'Pour un couple, L’Ermite annonce un besoin d’espace ou de recul. L’un des partenaires, ou les deux, a besoin de solitude pour réfléchir, respirer ou se retrouver. Ce retrait n’est pas un rejet mais une étape de maturation. La carte invite à respecter ce besoin d’introspection sans le vivre comme un abandon : un couple sain fait aussi place à l’espace individuel de chacun.',
+    ex:
+      'Concernant un ex, L’Ermite conseille le recul et l’introspection plutôt que l’action. Ce n’est pas le moment de recontacter, mais de comprendre ce qui s’est passé et ce que vous voulez vraiment. La carte invite à un temps de solitude pour y voir clair. Renversé, elle avertit contre un isolement douloureux ou un repli sur le passé : à un moment, il faudra sortir de la solitude pour avancer, avec ou sans cette personne.',
+    faq: [
+      {
+        q: 'Que signifie L’Ermite en amour ?',
+        a: 'L’Ermite signifie en amour l’introspection, la solitude et la sagesse intérieure. Neuvième arcane majeur du Tarot de Marseille, il annonce un temps de retrait, une réflexion sur ses vrais besoins ou une distance dans la relation. Il invite à se recentrer et à se connaître avant d’avancer. Ce n’est pas une carte négative, mais une étape : L’Ermite rappelle qu’un amour juste se prépare en se comprenant soi-même, plutôt qu’en fuyant dans une relation.',
+      },
+      {
+        q: 'L’Ermite annonce-t-il une rupture ou une solitude ?',
+        a: 'L’Ermite annonce un temps de solitude ou de recul, mais pas nécessairement une rupture. Il indique un besoin d’introspection, un éloignement temporaire ou une pause pour réfléchir. Pour un couple, c’est souvent un besoin d’espace plutôt qu’une fin. Renversé, il peut signaler un isolement subi ou une solitude douloureuse. À l’endroit, cette solitude est choisie et constructive : une étape de maturation, non un échec sentimental définitif.',
+      },
+      {
+        q: 'L’Ermite est-il un oui en amour ?',
+        a: 'L’Ermite n’est pas un oui : il répond « prends du recul avant de décider ». C’est une carte de retrait et d’introspection qui invite à la patience plutôt qu’à l’action immédiate. À l’endroit, ce temps de solitude est sage et prépare un amour plus juste. Renversé, il signale un isolement excessif à dépasser. Pour une question sur un rapprochement immédiat, L’Ermite conseille d’attendre et de se connaître d’abord.',
+      },
+      {
+        q: 'Que veut dire L’Ermite renversé en amour ?',
+        a: 'Renversé, L’Ermite révèle un isolement excessif ou une solitude subie. On se coupe des autres par peur d’être blessé, on s’enferme dans le retrait, ou on fuit l’engagement sous couvert d’indépendance. Cette position peut aussi traduire une solitude douloureuse dont on ne parvient pas à sortir. L’Ermite inversé invite à distinguer le recul sain de l’enfermement : à un moment, il faut rouvrir sa porte et laisser à nouveau entrer l’autre.',
+      },
+    ],
+  },
+  {
+    slug: 'la-force',
+    name: 'La Force',
+    emoji: '🦁',
+    arcane: 'Arcane majeur XI',
+    ouiNon: 'Oui',
+    answerCapsule:
+      'La Force est la carte du courage doux et de la maîtrise dans le tarot amour. Onzième arcane majeur du Tarot de Marseille, elle incarne la patience, la douceur qui dompte, la persévérance et le contrôle bienveillant des passions. Tirée en amour, La Force est un oui empreint de maîtrise : elle annonce une relation solide qui triomphe des obstacles par la patience et la tendresse, ou la capacité à apaiser les tensions avec douceur. À l’endroit, elle représente le courage tranquille, la confiance et la maîtrise de soi ; renversée, elle signale le doute, l’emportement ou un manque de maîtrise émotionnelle. Pour un célibataire, elle appelle à la confiance et à la patience ; pour un couple, à surmonter les épreuves avec douceur. La Force rappelle que la vraie puissance en amour est celle du cœur. Une consultation de voyance amoureuse peut préciser ce qu’elle annonce.',
+    signification:
+      'En amour, La Force symbolise le courage doux, la patience et la maîtrise bienveillante. Elle représente cette puissance intérieure qui dompte non par la brutalité mais par la tendresse — la capacité d’apaiser les conflits, de surmonter les épreuves et de tenir bon avec calme et confiance. Le onzième arcane majeur incarne aussi la maîtrise de ses propres passions et la persévérance dans la relation. Quand La Force apparaît dans un tirage sentimental, elle rassure : le couple a la force de traverser les difficultés, ou vous avez en vous le courage tranquille d’aimer sans crainte. C’est une carte de solidité douce et de confiance.',
+    endroit:
+      'À l’endroit, La Force est un signe favorable en amour. Elle annonce une relation qui surmonte les obstacles par la patience et la tendresse, ou la capacité à apaiser les tensions avec douceur. La carte parle de courage tranquille, de confiance en soi et de maîtrise bienveillante des passions. Elle rappelle que la vraie puissance amoureuse n’est pas dans la domination mais dans la douceur ferme : c’est ainsi que l’on dompte les difficultés et que l’on construit un lien solide.',
+    renverse:
+      'Renversée, La Force révèle le doute, l’emportement ou un manque de maîtrise émotionnelle. Vous vous laissez submerger par la jalousie, la colère ou la peur, ou vous manquez de confiance pour affronter les épreuves du couple. Cette position peut aussi signaler une force qui bascule en domination ou en contrôle. La Force inversée invite à retrouver le calme intérieur et la douceur : la maîtrise de soi, et non la brutalité, est la clé pour surmonter les tensions amoureuses.',
+    celibataire:
+      'Pour un célibataire, La Force appelle à la confiance et à la patience. Vous avez en vous le courage tranquille d’aimer et d’attirer une belle relation, sans forcer ni vous précipiter. La carte invite à croire en votre valeur et à aborder l’amour avec douceur et assurance. Cette force intérieure, faite de calme et de confiance, est précisément ce qui séduit et prépare une rencontre solide.',
+    couple:
+      'Pour un couple, La Force annonce la capacité à surmonter les épreuves avec douceur et patience. Les difficultés se traversent grâce à la maîtrise de soi, à la tendresse et à la persévérance plutôt qu’aux éclats. La carte invite à apaiser les tensions avec calme et à tenir bon ensemble : c’est cette force douce qui rend le lien indestructible face aux obstacles.',
+    ex:
+      'Concernant un ex, La Force suggère qu’une reconquête est possible par la patience, la douceur et la maîtrise de soi plutôt que par la pression. Si la carte apparaît, elle indique que vous avez la force intérieure d’apaiser les tensions et de reconstruire un lien avec calme. Renversée, elle avertit contre l’emportement ou le contrôle : c’est la douceur, non l’insistance, qui peut rouvrir un cœur.',
+    faq: [
+      {
+        q: 'Que signifie La Force en amour ?',
+        a: 'La Force signifie en amour le courage doux, la patience et la maîtrise bienveillante. Onzième arcane majeur du Tarot de Marseille, elle incarne la puissance qui dompte non par la brutalité mais par la tendresse : la capacité d’apaiser les conflits et de surmonter les épreuves avec calme. Elle annonce une relation solide qui triomphe des obstacles par la patience. Quand La Force apparaît, elle rassure : vous avez en vous le courage tranquille d’aimer et de tenir bon.',
+      },
+      {
+        q: 'La Force est-elle une bonne carte en amour ?',
+        a: 'Oui, La Force est une carte favorable en amour. À l’endroit, elle annonce la capacité à surmonter les épreuves par la douceur, la patience et la maîtrise de soi, ainsi qu’une relation solide et confiante. Elle rappelle que la vraie puissance amoureuse est celle du cœur, pas de la domination. Renversée, elle signale un manque de maîtrise émotionnelle à corriger. Dans l’ensemble, c’est une carte de courage tranquille et de solidité douce.',
+      },
+      {
+        q: 'La Force annonce-t-elle de surmonter une épreuve ?',
+        a: 'Oui, La Force est par excellence la carte qui annonce de surmonter les épreuves en amour. Elle indique que le couple, ou la personne, a la force intérieure de traverser les difficultés — non par la brutalité, mais par la patience, la douceur et la maîtrise de soi. Face à un obstacle sentimental, c’est un excellent signe : la tendresse ferme et le courage tranquille permettent d’apaiser les tensions et de bâtir un lien qui résiste durablement.',
+      },
+      {
+        q: 'Que veut dire La Force renversée en amour ?',
+        a: 'Renversée, La Force révèle le doute, l’emportement ou un manque de maîtrise émotionnelle. On se laisse submerger par la jalousie, la colère ou la peur, ou l’on manque de confiance pour affronter les épreuves du couple. Cette position peut aussi signaler une force qui bascule en domination ou en contrôle. La Force inversée invite à retrouver le calme et la douceur : c’est la maîtrise de soi, jamais la brutalité, qui dénoue les tensions amoureuses.',
+      },
+    ],
+  },
+  {
+    slug: 'la-temperance',
+    name: 'La Tempérance',
+    emoji: '🕊️',
+    arcane: 'Arcane majeur XIV',
+    ouiNon: 'Oui',
+    answerCapsule:
+      'La Tempérance est la carte de l’harmonie et de l’équilibre dans le tarot amour. Quatorzième arcane majeur du Tarot de Marseille, elle incarne la modération, la patience, la guérison et la juste alliance des énergies. Tirée en amour, La Tempérance est un oui apaisant : elle annonce une relation harmonieuse, un équilibre retrouvé ou la réconciliation en douceur de deux êtres. À l’endroit, elle représente la paix, la fluidité et la complémentarité réussie ; renversée, elle signale un déséquilibre, de l’impatience ou des excès qui perturbent l’harmonie. Pour un célibataire, elle annonce une rencontre équilibrée ; pour un couple, une phase de paix et de complicité. La Tempérance rappelle que le bel amour se construit dans la patience et la juste mesure. Une consultation de voyance amoureuse peut préciser l’harmonie qu’elle annonce.',
+    signification:
+      'En amour, La Tempérance symbolise l’harmonie, l’équilibre et la guérison. Elle représente la juste alliance de deux énergies, la capacité à mêler les différences en une union fluide et paisible. Le quatorzième arcane majeur incarne la modération, la patience et l’art de trouver le bon dosage — ni trop, ni trop peu. Elle apparaît souvent après une épreuve, pour annoncer l’apaisement et la réconciliation, ou pour confirmer une relation équilibrée et sereine. Quand La Tempérance apparaît dans un tirage sentimental, elle rassure : l’harmonie s’installe, les tensions se dissolvent, et l’amour trouve son juste équilibre dans la douceur et la patience.',
+    endroit:
+      'À l’endroit, La Tempérance est un signe d’harmonie et d’apaisement en amour. Elle annonce une relation équilibrée et sereine, un équilibre retrouvé après une tension, ou une réconciliation en douceur. La carte parle de fluidité, de complémentarité réussie et de patience. Elle rappelle que le bel amour se construit dans la juste mesure et la modération : ni excès ni carence, mais un dosage harmonieux où chacun trouve sa place.',
+    renverse:
+      'Renversée, La Tempérance révèle un déséquilibre, de l’impatience ou des excès qui perturbent l’harmonie. La relation manque de mesure : trop de fusion ou trop de distance, précipitation, tensions mal gérées. Cette position peut aussi signaler une difficulté à concilier les différences ou à trouver le bon rythme. La Tempérance inversée invite à retrouver l’équilibre et la patience : c’est en dosant justement les énergies que l’harmonie amoureuse se rétablit.',
+    celibataire:
+      'Pour un célibataire, La Tempérance annonce une rencontre équilibrée et sereine, avec une personne complémentaire et apaisante. Loin des passions tumultueuses, cette histoire se construit dans la douceur et la juste mesure. La carte invite à la patience et à l’équilibre intérieur : c’est en étant vous-même harmonieux que vous attirez une relation paisible et durable.',
+    couple:
+      'Pour un couple, La Tempérance annonce une phase de paix, de complicité et d’équilibre. Les tensions s’apaisent, les différences se conjuguent avec fluidité, et la relation trouve son juste rythme. La carte invite à cultiver la patience, la modération et le dialogue serein : c’est cet équilibre harmonieux qui rend le couple durable et nourrissant pour les deux partenaires.',
+    ex:
+      'Concernant un ex, La Tempérance est encourageante : elle suggère une réconciliation en douceur, fondée sur l’apaisement et le retour à l’équilibre. Si la carte apparaît, elle indique que les tensions passées peuvent se dissoudre et qu’un lien plus serein est possible. Elle invite toutefois à la patience : cette harmonie se reconstruit progressivement, dans la juste mesure, sans précipitation ni excès.',
+    faq: [
+      {
+        q: 'Que signifie La Tempérance en amour ?',
+        a: 'La Tempérance signifie en amour l’harmonie, l’équilibre et la guérison. Quatorzième arcane majeur du Tarot de Marseille, elle incarne la juste alliance de deux énergies, la modération et la patience. Elle annonce une relation harmonieuse, un équilibre retrouvé ou une réconciliation en douceur. Quand La Tempérance apparaît, elle rassure : l’harmonie s’installe, les tensions se dissolvent, et l’amour trouve son juste équilibre dans la sérénité et la patience.',
+      },
+      {
+        q: 'La Tempérance annonce-t-elle une réconciliation ?',
+        a: 'Oui, La Tempérance est l’une des cartes favorables à une réconciliation en amour. Elle annonce l’apaisement des tensions, le retour à l’équilibre et la fusion harmonieuse de deux énergies. Concernant un ex, elle suggère qu’un lien plus serein est possible, fondé sur la douceur plutôt que sur les conflits passés. Elle invite toutefois à la patience : cette réconciliation se construit progressivement, dans la juste mesure, sans forcer ni brusquer.',
+      },
+      {
+        q: 'La Tempérance est-elle un oui en amour ?',
+        a: 'Oui, La Tempérance est un oui apaisant en amour. À l’endroit, elle répond favorablement aux questions sur l’harmonie, l’équilibre du couple et la sérénité de la relation : la paix et la complémentarité sont au rendez-vous. Renversée, la réponse se nuance : déséquilibre, impatience ou excès à corriger. Dans l’ensemble, c’est une carte positive qui promet une relation équilibrée, à condition de cultiver la patience et la juste mesure.',
+      },
+      {
+        q: 'Que veut dire La Tempérance renversée en amour ?',
+        a: 'Renversée, La Tempérance révèle un déséquilibre, de l’impatience ou des excès qui perturbent l’harmonie. La relation manque de mesure : trop de fusion ou trop de distance, précipitation, tensions mal gérées. Cette position peut aussi signaler une difficulté à concilier les différences ou à trouver le bon rythme. La Tempérance inversée invite à retrouver l’équilibre et la patience : c’est en dosant justement les énergies que l’harmonie amoureuse se rétablit.',
+      },
+    ],
+  },
+  {
+    slug: 'le-jugement',
+    name: 'Le Jugement',
+    emoji: '🎺',
+    arcane: 'Arcane majeur XX',
+    ouiNon: 'Oui',
+    answerCapsule:
+      'Le Jugement est la carte du renouveau et de la seconde chance dans le tarot amour. Vingtième arcane majeur du Tarot de Marseille, il incarne la renaissance, l’éveil, le pardon et le nouveau départ après une épreuve. Tiré en amour, Le Jugement est un oui porteur d’espoir : il annonce une réconciliation, une relation qui renaît, ou une prise de conscience qui change tout. À l’endroit, il représente le pardon, le renouveau et l’appel du cœur auquel on répond ; renversé, il signale le refus de pardonner, un blocage dans le passé ou une seconde chance manquée. Pour un célibataire, il annonce un renouveau sentimental ; pour un couple, une renaissance ou une réconciliation. Le Jugement rappelle qu’il est toujours possible de repartir sur de nouvelles bases. Une consultation de voyance amoureuse peut préciser ce renouveau.',
+    signification:
+      'En amour, Le Jugement symbolise le renouveau, la renaissance et la seconde chance. Il représente ces moments de bascule où l’on prend conscience de ses vrais sentiments, où l’on pardonne, où une relation renaît de ses cendres. Le vingtième arcane majeur incarne l’éveil, l’appel du destin et la libération du passé. Il apparaît souvent pour annoncer une réconciliation, un retour, ou une décision qui répare et fait repartir. Quand Le Jugement apparaît dans un tirage sentimental, il porte un message d’espoir : le passé peut être dépassé, les erreurs pardonnées, et une nouvelle histoire — ou la même, renouvelée — peut commencer.',
+    endroit:
+      'À l’endroit, Le Jugement est un signe d’espoir et de renouveau en amour. Il annonce une réconciliation, une relation qui renaît, ou une prise de conscience qui libère du passé. La carte parle de pardon, d’éveil et d’appel du cœur auquel on répond enfin. Elle rappelle qu’il est possible de tourner la page des erreurs et de repartir sur de nouvelles bases : une seconde chance s’offre, à saisir avec le cœur ouvert.',
+    renverse:
+      'Renversé, Le Jugement révèle le refus de pardonner ou un blocage dans le passé. Vous ressassez d’anciennes blessures, vous n’arrivez pas à tourner la page, ou vous laissez passer une seconde chance par rancune ou par peur. Cette position peut aussi signaler un déni de ses vrais sentiments. Le Jugement inversé invite à lâcher le passé et à écouter l’appel du cœur : tant que l’on reste prisonnier de ses rancunes, le renouveau amoureux reste impossible.',
+    celibataire:
+      'Pour un célibataire, Le Jugement annonce un renouveau sentimental et une seconde chance. Après une période difficile, votre cœur s’éveille et se libère du passé : une nouvelle histoire devient possible. La carte peut aussi annoncer le retour d’une personne du passé sous un jour nouveau. Elle invite à pardonner, à vous libérer de vos anciennes blessures et à accueillir ce renouveau avec le cœur ouvert.',
+    couple:
+      'Pour un couple, Le Jugement annonce une renaissance ou une réconciliation. Après une crise ou une distance, la relation peut renaître grâce à une prise de conscience, un pardon mutuel ou une décision qui répare. La carte invite à dépasser les erreurs passées et à repartir sur de nouvelles bases. C’est un signe très favorable pour un couple qui traverse une épreuve : le renouveau est à portée de cœur.',
+    ex:
+      'Concernant un ex, Le Jugement est l’une des cartes les plus favorables à un retour. Il annonce une seconde chance, une réconciliation ou une relation qui renaît après une prise de conscience et un pardon. Si la carte apparaît, elle indique qu’un renouveau est possible sur de nouvelles bases, en tirant les leçons du passé. Renversée, elle signale une rancune ou un blocage qui empêche encore ce renouveau : le pardon est la clé.',
+    faq: [
+      {
+        q: 'Que signifie Le Jugement en amour ?',
+        a: 'Le Jugement signifie en amour le renouveau, la renaissance et la seconde chance. Vingtième arcane majeur du Tarot de Marseille, il annonce une réconciliation, une relation qui renaît, ou une prise de conscience qui libère du passé. Il incarne le pardon, l’éveil et l’appel du cœur. Quand Le Jugement apparaît, il porte un message d’espoir : le passé peut être dépassé, les erreurs pardonnées, et une nouvelle histoire — ou la même, renouvelée — peut commencer.',
+      },
+      {
+        q: 'Le Jugement annonce-t-il un retour de l’ex ?',
+        a: 'Oui, Le Jugement est l’une des cartes les plus favorables au retour d’un ex. Il symbolise la seconde chance, la réconciliation et la relation qui renaît après une prise de conscience et un pardon. Si vous vous interrogez sur un retour, c’est un excellent signe : un renouveau est possible sur de nouvelles bases, en tirant les leçons du passé. La carte invite toutefois à pardonner réellement, car c’est le pardon qui rend ce renouveau possible.',
+      },
+      {
+        q: 'Le Jugement est-il un oui en amour ?',
+        a: 'Oui, Le Jugement est un oui porteur d’espoir et de renouveau en amour. À l’endroit, il répond favorablement aux questions sur la réconciliation, la seconde chance et la renaissance d’une relation : le passé peut être dépassé et une nouvelle page s’écrire. Renversé, la réponse se nuance : rancune ou blocage dans le passé freinent le renouveau. Dans l’ensemble, c’est une carte très positive pour repartir sur de nouvelles bases.',
+      },
+      {
+        q: 'Que veut dire Le Jugement renversé en amour ?',
+        a: 'Renversé, Le Jugement révèle le refus de pardonner ou un blocage dans le passé. On ressasse d’anciennes blessures, on n’arrive pas à tourner la page, ou l’on laisse passer une seconde chance par rancune ou par peur. Cette position peut aussi traduire un déni de ses vrais sentiments. Le Jugement inversé invite à lâcher le passé et à écouter l’appel du cœur : tant que l’on reste prisonnier de ses rancunes, le renouveau amoureux reste impossible.',
+      },
+    ],
+  },
+  {
+    slug: 'le-monde',
+    name: 'Le Monde',
+    emoji: '🌍',
+    arcane: 'Arcane majeur XXI',
+    ouiNon: 'Oui',
+    answerCapsule:
+      'Le Monde est la carte de l’accomplissement et de la plénitude dans le tarot amour. Vingt-et-unième et dernier arcane majeur du Tarot de Marseille, il incarne la réussite, la complétude, l’union parfaite et l’épanouissement total. Tiré en amour, Le Monde est le oui le plus abouti du tarot : il annonce une relation accomplie, un rêve amoureux qui se réalise, ou l’aboutissement heureux d’un long chemin. À l’endroit, il représente la plénitude, l’union épanouie et la réalisation d’un projet de couple ; renversé, il signale un accomplissement retardé ou un cycle qui peine à se boucler. Pour un célibataire, il annonce une rencontre qui comble ; pour un couple, la concrétisation d’un rêve commun. Le Monde couronne le parcours amoureux d’une réussite entière. Une consultation de voyance amoureuse peut préciser cette plénitude.',
+    signification:
+      'En amour, Le Monde symbolise l’accomplissement, la plénitude et l’union parfaite. Dernier arcane majeur, il couronne le voyage : il représente la réussite d’un parcours, la réalisation d’un rêve, l’harmonie totale d’une relation épanouie. Le vingt-et-unième arcane majeur incarne aussi les voyages, l’ouverture au monde et la célébration d’un cycle abouti. Il apparaît souvent pour annoncer un mariage, une union qui se concrétise, ou l’aboutissement heureux d’une longue attente. Quand Le Monde apparaît dans un tirage sentimental, il est le meilleur des présages : l’amour atteint sa plénitude, un rêve se réalise et un cycle se boucle dans la joie.',
+    endroit:
+      'À l’endroit, Le Monde est le meilleur présage du tarot amour. Il annonce une relation accomplie et épanouie, la réalisation d’un rêve amoureux, ou l’aboutissement heureux d’un long chemin. Cette position parle de plénitude, d’union parfaite et de célébration d’un cycle réussi — mariage, projet commun réalisé, harmonie totale. La carte couronne le parcours sentimental d’une réussite entière : tout converge vers l’épanouissement et la joie partagée.',
+    renverse:
+      'Renversé, Le Monde révèle un accomplissement retardé ou un cycle qui peine à se boucler. Vous êtes proche du but mais quelque chose bloque la réalisation finale : une dernière étape à franchir, un projet qui traîne, un sentiment d’inachevé. Cette position n’annonce pas un échec mais un délai. Le Monde inversé invite à la patience et à la persévérance : l’accomplissement est là, tout proche, mais demande encore un effort ou un peu de temps pour se concrétiser pleinement.',
+    celibataire:
+      'Pour un célibataire, Le Monde annonce une rencontre qui comble, l’aboutissement d’une quête amoureuse. Après un parcours, l’amour épanoui se présente enfin : une relation qui vous correspond pleinement et vous apporte la plénitude. La carte invite à accueillir cette réussite avec gratitude : le cycle se boucle et un amour accompli couronne votre chemin.',
+    couple:
+      'Pour un couple, Le Monde annonce la concrétisation d’un rêve commun et une plénitude partagée. La relation atteint son accomplissement : mariage, projet de vie réalisé, harmonie totale. C’est l’un des meilleurs signes pour un couple, celui de la réussite entière et de la joie durable. La carte invite à célébrer ce cycle abouti et à savourer une union épanouie qui a trouvé sa plénitude.',
+    ex:
+      'Concernant un ex, Le Monde suggère l’aboutissement heureux d’une histoire, mais son sens dépend du contexte : il peut annoncer des retrouvailles qui couronnent enfin la relation, ou au contraire la clôture sereine et accomplie d’un cycle. Si la carte apparaît avec des cartes d’union, un retour épanoui est possible. Renversée, elle signale un cycle inachevé qui demande encore du temps pour trouver sa résolution.',
+    faq: [
+      {
+        q: 'Que signifie Le Monde en amour ?',
+        a: 'Le Monde signifie en amour l’accomplissement, la plénitude et l’union parfaite. Dernier arcane majeur du Tarot de Marseille, il annonce une relation accomplie, un rêve amoureux qui se réalise, ou l’aboutissement heureux d’un long chemin. C’est le meilleur présage du tarot amour : mariage, harmonie totale, cycle réussi. Quand Le Monde apparaît, l’amour atteint sa plénitude et un rêve se concrétise dans la joie et l’épanouissement partagé.',
+      },
+      {
+        q: 'Le Monde annonce-t-il un mariage ?',
+        a: 'Oui, Le Monde est l’une des plus belles cartes annonçant un mariage ou une union accomplie. Dernier arcane majeur, il couronne un parcours par la réalisation d’un rêve : union parfaite, projet de vie concrétisé, harmonie totale. Entouré de cartes comme Le Pape, Les Amoureux ou Le Soleil, la promesse de mariage se confirme nettement. C’est un présage exceptionnel pour un couple qui envisage de sceller son union et de célébrer un cycle abouti.',
+      },
+      {
+        q: 'Le Monde est-il un oui en amour ?',
+        a: 'Oui, Le Monde est le oui le plus abouti du tarot amour. À l’endroit, il répond très favorablement à toutes les questions de cœur : accomplissement, union parfaite, réalisation d’un rêve, plénitude partagée. C’est le meilleur présage possible. Renversé, la réponse reste positive mais retardée : l’accomplissement approche mais demande encore un peu de temps ou d’effort. Dans l’ensemble, Le Monde couronne le parcours amoureux d’une réussite entière.',
+      },
+      {
+        q: 'Que veut dire Le Monde renversé en amour ?',
+        a: 'Renversé, Le Monde révèle un accomplissement retardé ou un cycle qui peine à se boucler. On est proche du but mais quelque chose bloque la réalisation finale : une dernière étape, un projet qui traîne, un sentiment d’inachevé. Ce n’est pas un échec mais un délai. Le Monde inversé invite à la patience et à la persévérance : l’accomplissement est tout proche, mais demande encore un effort ou un peu de temps pour se concrétiser pleinement.',
+      },
+    ],
+  },
 ];
