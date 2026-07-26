@@ -33,9 +33,22 @@ function maskEmail(e: string): string {
   return e.replace(/(.{2}).*(@.*)/, '$1***$2');
 }
 
-function backTo(request: NextRequest, lander: string, state: string): NextResponse {
+function backTo(
+  request: NextRequest,
+  lander: string,
+  state: string,
+  keep?: { source?: string; sid?: string; clickId?: string }
+): NextResponse {
   const url = new URL(`/lp/${lander}`, request.nextUrl.origin);
   url.searchParams.set('merci', state);
+  // Carry attribution across the redirect. Without this the confirmation page
+  // is a bare URL, which broke two things: MGID's email_lead conversion fired
+  // with an empty clid (unattributable to the originating click), and the
+  // re-render logged a phantom load with source 'direct' — inflating loads
+  // and deflating the tap rate for the real source.
+  if (keep?.source && keep.source !== 'direct') url.searchParams.set('source', keep.source);
+  if (keep?.sid) url.searchParams.set('sid', keep.sid);
+  if (keep?.clickId) url.searchParams.set('adclid', keep.clickId);
   // 303 forces the follow-up to be a GET, so a refresh cannot repost.
   return NextResponse.redirect(url, 303);
 }
@@ -64,9 +77,11 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
   const consent = !!form.get('consent');
   const source = normaliseSource(str('source', 60));
   const sid = str('sid', 32);
+  const clickId = str('click_id', 64) || str('adclid', 64);
+  const keep = { source, sid, clickId };
 
   if (!EMAIL_RE.test(email) || !consent) {
-    return backTo(request, lander, 'err');
+    return backTo(request, lander, 'err', keep);
   }
 
   try {
@@ -123,5 +138,5 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
     ],
   });
 
-  return backTo(request, lander, '1');
+  return backTo(request, lander, '1', keep);
 }

@@ -109,7 +109,11 @@ export default async function LPVoyantDirect({
   // the case on a chunk of MGID's Xiaomi/Huawei in-app browser traffic.
   // Reading searchParams opts this page into dynamic rendering.
   const sp = await searchParams;
-  await recordLanderLoad('voyant-direct', sp);
+  // Skip on the ?merci= redirect: that is the SAME visitor bouncing back
+  // from the email POST, not a new arrival. Counting it logged a phantom
+  // load and deflated the tap rate.
+  const merciParam = one(sp, 'merci', 8);
+  if (!merciParam) await recordLanderLoad('voyant-direct', sp);
 
   // Copy adapts to the real request time — see lib/availability.ts.
   const av = availabilityNow();
@@ -117,7 +121,7 @@ export default async function LPVoyantDirect({
   // Email form state comes back through the URL (?merci=1) because the form
   // is a native POST/Redirect/GET — no JS to hold state.
   const t = readTracking(sp);
-  const merci = one(sp, 'merci', 8);
+  const merci = merciParam;
   const done = merci === '1' ? 'ok' : merci === 'err' ? 'err' : undefined;
 
   return (
@@ -171,6 +175,7 @@ export default async function LPVoyantDirect({
           lander="voyant-direct"
           source={t.source}
           sid={t.sid}
+          clickId={t.clickId}
           done={done}
         />
 

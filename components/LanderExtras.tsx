@@ -112,11 +112,13 @@ export function LanderEmailForm({
   lander,
   source,
   sid,
+  clickId,
   done,
 }: {
   lander: string;
   source: string;
   sid: string;
+  clickId?: string;
   done?: 'ok' | 'err';
 }) {
   if (done === 'ok') {
@@ -178,6 +180,8 @@ export function LanderEmailForm({
         <input type="hidden" name="lander" value={lander} />
         <input type="hidden" name="source" value={source} />
         <input type="hidden" name="sid" value={sid} />
+        {/* Round-trips so the redirect can restore attribution — see backTo() */}
+        <input type="hidden" name="click_id" value={clickId || ''} />
         {/* Honeypot — hidden from humans, irresistible to bots. */}
         <input
           type="text"

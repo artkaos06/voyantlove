@@ -108,9 +108,9 @@ const STYLE = `
 `;
 
 function Result({
-  spec, av, source, sid, done,
+  spec, av, source, sid, clickId, done,
 }: {
-  spec: string; av: Availability; source: string; sid: string;
+  spec: string; av: Availability; source: string; sid: string; clickId: string;
   done?: 'ok' | 'err';
 }) {
   return (
@@ -154,6 +154,7 @@ function Result({
             lander="il-elle-vous-aime"
             source={source}
             sid={sid}
+            clickId={clickId}
           />
         )}
       </div>
@@ -167,14 +168,18 @@ export default async function LPIlElleVousAime({
   searchParams: Promise<Record<string, string | string[] | undefined>>;
 }) {
   const sp = await searchParams;
-  await recordLanderLoad('il-elle-vous-aime', sp);
+  // Skip on the ?merci= redirect: that is the SAME visitor bouncing back
+  // from the email POST, not a new arrival. Counting it logged a phantom
+  // load and deflated the tap rate.
+  const merciParam = one(sp, 'merci', 8);
+  if (!merciParam) await recordLanderLoad('il-elle-vous-aime', sp);
 
   // Copy adapts to the real request time — see lib/availability.ts.
   const av = availabilityNow();
 
   // Email form state round-trips through the URL (native POST/Redirect/GET).
   const t = readTracking(sp);
-  const merci = one(sp, 'merci', 8);
+  const merci = merciParam;
   const done = merci === '1' ? 'ok' : merci === 'err' ? 'err' : undefined;
 
   return (
@@ -194,6 +199,7 @@ export default async function LPIlElleVousAime({
             lander="il-elle-vous-aime"
             source={t.source}
             sid={t.sid}
+            clickId={t.clickId}
             done={done}
           />
         )}
@@ -213,7 +219,7 @@ export default async function LPIlElleVousAime({
 
           {OPTIONS.map((o) => (
             <div key={o.id} className={`vq-step vq-r-${o.id}`}>
-              <Result spec={o.spec} av={av} source={t.source} sid={t.sid} done={done} />
+              <Result spec={o.spec} av={av} source={t.source} sid={t.sid} clickId={t.clickId} done={done} />
             </div>
           ))}
 

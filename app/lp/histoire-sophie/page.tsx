@@ -110,14 +110,18 @@ export default async function LPHistoireSophie({
   searchParams: Promise<Record<string, string | string[] | undefined>>;
 }) {
   const sp = await searchParams;
-  await recordLanderLoad('histoire-sophie', sp);
+  // Skip on the ?merci= redirect: that is the SAME visitor bouncing back
+  // from the email POST, not a new arrival. Counting it logged a phantom
+  // load and deflated the tap rate.
+  const merciParam = one(sp, 'merci', 8);
+  if (!merciParam) await recordLanderLoad('histoire-sophie', sp);
 
   // Copy adapts to the real request time — see lib/availability.ts.
   const av = availabilityNow();
 
   // Email form state round-trips through the URL (native POST/Redirect/GET).
   const t = readTracking(sp);
-  const merci = one(sp, 'merci', 8);
+  const merci = merciParam;
   const done = merci === '1' ? 'ok' : merci === 'err' ? 'err' : undefined;
 
   return (
@@ -186,6 +190,7 @@ export default async function LPHistoireSophie({
           lander="histoire-sophie"
           source={t.source}
           sid={t.sid}
+          clickId={t.clickId}
           done={done}
         />
 

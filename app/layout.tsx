@@ -140,6 +140,30 @@ export default function RootLayout({
             });
           })();
         `}</Script>
+        {/* MGID conversion goal "email_lead".
+            This is a URL-based (page load) conversion, not a click one: the
+            lander email form is a native POST that 303-redirects back to
+            /lp/<lander>?merci=1, so by the time the visitor sees the
+            confirmation the submit event is long gone. The redirect target IS
+            the conversion signal — which is exactly MGID's "page load snippet
+            captures URL-based conversions" case.
+            Deduped in sessionStorage because ?merci=1 is a plain GET: a
+            refresh or a back/forward would otherwise re-fire the goal and
+            inflate the count. */}
+        <Script id="mgid-email-lead" strategy="afterInteractive">{`
+          (function () {
+            try {
+              var page = window.location.pathname;
+              if (!/^\\/lp\\/(voyant-direct|il-elle-vous-aime|histoire-sophie)\\/?$/.test(page)) return;
+              var p = new URLSearchParams(window.location.search);
+              if (p.get('merci') !== '1') return;
+              var k = 'mg_email_lead:' + page;
+              try { if (sessionStorage.getItem(k)) return; sessionStorage.setItem(k, '1'); } catch (_) {}
+              window._mgq = window._mgq || [];
+              window._mgq.push(['MgSensorInvoke', 'email_lead']);
+            } catch (_) {}
+          })();
+        `}</Script>
         <Script id="phone-click-tracker" strategy="afterInteractive">{`
           document.addEventListener('click', function(e) {
             var link = e.target && e.target.closest && e.target.closest('a[href^="tel:"]');
