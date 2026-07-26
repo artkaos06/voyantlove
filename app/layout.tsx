@@ -156,6 +156,31 @@ export default function RootLayout({
               page_path: page
             });
 
+            // 1b) MGID conversion goal "cta_call".
+            //
+            // Fired from this delegated listener rather than the inline
+            // onclick MGID suggests: the landers are server components, and
+            // an onclick attribute would force them client-side and bring
+            // back the hydration that broke Xiaomi/Huawei in-app browsers.
+            // Delegation catches the same clicks with no page-level JS.
+            //
+            // Restricted to the three paid landers so MGID's conversion
+            // definition matches lp-funnel's tap definition. Firing on
+            // organic pages would let an old MGID cookie attribute an
+            // unrelated organic call to a paid campaign, inflating MGID's
+            // numbers and skewing its bidding toward itself.
+            //
+            // _mgq is a queue, so pushing before mgsensor.js loads is safe:
+            // it drains on load, which only happens after marketing consent.
+            // If consent is refused the event simply never sends — the gate
+            // stays intact without extra logic here.
+            try {
+              if (/^\\/lp\\/(voyant-direct|il-elle-vous-aime|histoire-sophie)\\/?$/.test(page)) {
+                window._mgq = window._mgq || [];
+                window._mgq.push(['MgSensorInvoke', 'cta_call']);
+              }
+            } catch (_) {}
+
             // 2) Beacon to our /api/track/tel-click endpoint so we get
             //    real-time Discord visibility on call-intent (tel: clicks
             //    otherwise bypass our server completely).
