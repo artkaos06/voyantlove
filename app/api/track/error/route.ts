@@ -43,6 +43,23 @@ function fingerprint(msg: string): string {
     .slice(0, 120);
 }
 
+/** Crawlers walk every page and would otherwise emit one alert per URL. */
+function isBot(ua: string): boolean {
+  return /bot|crawl|spider|slurp|bingbot|googlebot|adbeat|ahrefs|semrush|headless|phantom|python-requests|curl\//i.test(
+    ua
+  );
+}
+
+/** Paid landers — the only pages where a JS error costs money in real time. */
+const ALERTING_PAGES = /^\/lp\/(voyant-direct|il-elle-vous-aime|histoire-sophie)\/?$/;
+
+/**
+ * Generic rejections with no actionable detail. `[object Event]` is what a
+ * failed <script>/<img> load serialises to — almost always an ad blocker or a
+ * flaky third-party (GTM, glyphex), never our code. Counted, never alerted.
+ */
+const NOISE = /^Unhandled promise:\s*\[object (Event|Object)\]$/i;
+
 async function handle(request: NextRequest): Promise<NextResponse> {
   let body: Body = {};
   try {
@@ -69,21 +86,30 @@ async function handle(request: NextRequest): Promise<NextResponse> {
   let count = 0;
   try {
     const k = `cpl:err:${parisDate()}`;
-    count = await kv.hincrby(k, `${page}|${fp}`, 1);
+    // Keyed on the fingerprint ALONE. It was `${page}|${fp}`, which gave every
+    // URL its own alert budget — one crawler walking ~25 pages produced ~75
+    // Discord alerts and buried the real conversion pings.
+    count = await kv.hincrby(k, fp, 1);
+    await kv.hincrby(k, `page:${page}`, 1);
     await kv.hincrby(k, 'total', 1);
     await kv.expire(k, TTL);
   } catch {
     /* best-effort */
   }
 
-  // category:'lead' is the only tier that survives DISCORD_LEADS_ONLY (on by
-  // default). A lander throwing errors during paid traffic is exactly as
-  // urgent as a lead, so it belongs in that feed — but rate-limited hard.
-  if (count > 0 && count <= ALERT_LIMIT) {
+  // Alert only when it could actually be costing money right now: a real
+  // browser, on a paid lander, with something more specific than a generic
+  // rejection. Everything else is still counted in KV and readable there —
+  // it just doesn't page the operator. The channel has to stay a money-signal
+  // feed; drowning it in crawler noise is worse than not reporting at all.
+  const alertWorthy =
+    !isBot(ua) && ALERTING_PAGES.test(page) && !NOISE.test(message);
+
+  if (alertWorthy && count > 0 && count <= ALERT_LIMIT) {
     await notifyDiscord({
       category: 'lead',
       color: Color.RED,
-      title: '🐛 Erreur JS sur un lander',
+      title: `🐛 Erreur JS · ${page}`,
       description: message,
       fields: [
         { name: 'Page', value: page || '(inconnue)', inline: true },
