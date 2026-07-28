@@ -131,6 +131,20 @@ export default function RuptureHubPage() {
               <p className="text-gray-600 mb-4">Guidance voyance pour traverser un divorce ou une séparation difficile.</p>
               <span className="text-gray-600 font-semibold">Lire →</span>
             </Link>
+
+            <Link href="/rupture/confiance-en-soi-apres-divorce" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-teal-500">
+              <div className="text-4xl mb-4">🌱</div>
+              <h3 className="text-2xl font-bold mb-3 text-gray-900">Confiance en Soi Après Divorce</h3>
+              <p className="text-gray-600 mb-4">Un parcours de reconstruction, étape par étape, pour retrouver l&apos;estime de soi.</p>
+              <span className="text-teal-600 font-semibold">Lire →</span>
+            </Link>
+
+            <Link href="/rupture/signes-reseaux-sociaux-apres-rupture" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-indigo-500">
+              <div className="text-4xl mb-4">📱</div>
+              <h3 className="text-2xl font-bold mb-3 text-gray-900">Réseaux Sociaux Après une Rupture</h3>
+              <p className="text-gray-600 mb-4">Photos supprimées, stories, blocages : ce que ces signaux prouvent (ou pas).</p>
+              <span className="text-indigo-600 font-semibold">Lire →</span>
+            </Link>
           </div>
         </section>
 

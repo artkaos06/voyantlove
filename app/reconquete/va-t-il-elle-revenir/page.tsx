@@ -289,6 +289,7 @@ export default function VaTilRevenirPage() {
             <Link href="/reconquete/ex-qui-revient" className="block text-purple-600 hover:text-purple-800 font-medium">→ Quand l'Ex Revient : Que Faire ?</Link>
             <Link href="/rupture/oublier-son-ex" className="block text-purple-600 hover:text-purple-800 font-medium">→ Tourner la Page si la Réponse est Non</Link>
             <Link href="/sentiments/maime-t-il-elle" className="block text-purple-600 hover:text-purple-800 font-medium">→ Ce qu'il/elle Ressent Vraiment</Link>
+            <Link href="/reconquete/quitte-pour-quelquun-dautre-va-t-il-revenir" className="block text-purple-600 hover:text-purple-800 font-medium">→ Quitté pour Quelqu'un d'Autre : Va-t-il Revenir ?</Link>
           </div>
         </div>
 

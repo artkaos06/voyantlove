@@ -432,6 +432,7 @@ export default function ExQuiRevientPage() {
             <Link href="/reconquete/retour-de-lex" className="block text-pink-600 hover:text-pink-800 font-medium">→ Retour de l'Ex : Signes et Timing</Link>
             <Link href="/reconquete/va-t-il-elle-revenir" className="block text-pink-600 hover:text-pink-800 font-medium">→ Va-t-il/elle Revenir ? Prédiction Tarot</Link>
             <Link href="/reconquete/reconquerir-son-ex" className="block text-pink-600 hover:text-pink-800 font-medium">→ Reconquérir son Ex : Stratégies Efficaces</Link>
+            <Link href="/reconquete/ex-chaud-et-froid-apres-separation" className="block text-pink-600 hover:text-pink-800 font-medium">→ Mon Ex est Chaud et Froid : Décoder les Signaux</Link>
           </div>
         </div>
 

@@ -127,6 +127,24 @@ export default function ReconqueteHubPage() {
               <h3 className="text-xl font-bold mb-2">Dois-je l&apos;Attendre ?</h3>
               <p className="text-gray-600 text-sm">Faut-il patienter pour un retour, et combien de temps.</p>
             </Link>
+
+            <Link href="/reconquete/veut-se-remettre-ensemble-mais-ne-fait-rien" className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition border-t-4 border-purple-500">
+              <div className="text-3xl mb-3">💬</div>
+              <h3 className="text-xl font-bold mb-2">Il Veut mais ne Fait Rien</h3>
+              <p className="text-gray-600 text-sm">Distinguer une vraie volonté de reconstruire d&apos;un simple lien entretenu.</p>
+            </Link>
+
+            <Link href="/reconquete/ex-chaud-et-froid-apres-separation" className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition border-t-4 border-pink-500">
+              <div className="text-3xl mb-3">🌡️</div>
+              <h3 className="text-xl font-bold mb-2">Ex Chaud et Froid</h3>
+              <p className="text-gray-600 text-sm">Décoder les signaux contradictoires après une séparation.</p>
+            </Link>
+
+            <Link href="/reconquete/quitte-pour-quelquun-dautre-va-t-il-revenir" className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition border-t-4 border-fuchsia-500">
+              <div className="text-3xl mb-3">💔</div>
+              <h3 className="text-xl font-bold mb-2">Quitté pour un Autre</h3>
+              <p className="text-gray-600 text-sm">Va-t-il revenir après vous avoir quitté pour quelqu&apos;un d&apos;autre ?</p>
+            </Link>
           </div>
         </section>
 

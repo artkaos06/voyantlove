@@ -247,6 +247,7 @@ export default function DoisJeAttendreSonRetourPage() {
             <Link href="/reconquete/ex-revient-silence-radio" className="block text-violet-600 hover:text-violet-800 font-medium">&rarr; Silence Radio : Ex qui Recontacte</Link>
             <Link href="/crise-couple/dependance-affective" className="block text-violet-600 hover:text-violet-800 font-medium">&rarr; Dépendance Affective</Link>
             <Link href="/reconquete/se-remettre-ensemble" className="block text-violet-600 hover:text-violet-800 font-medium">&rarr; Se Remettre Ensemble</Link>
+            <Link href="/reconquete/veut-se-remettre-ensemble-mais-ne-fait-rien" className="block text-violet-600 hover:text-violet-800 font-medium">&rarr; Il Veut se Remettre Ensemble mais ne Fait Rien</Link>
           </div>
         </div>
 

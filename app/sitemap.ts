@@ -33,6 +33,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/reconquete/silence-radio-reconquete',
     '/reconquete/pendule-retour-amour',
     '/reconquete/dois-je-attendre-son-retour',
+    '/reconquete/veut-se-remettre-ensemble-mais-ne-fait-rien',
+    '/reconquete/ex-chaud-et-froid-apres-separation',
+    '/reconquete/quitte-pour-quelquun-dautre-va-t-il-revenir',
     // Rupture
     '/rupture/oublier-son-ex',
     '/rupture/chagrin-damour',
@@ -43,6 +46,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/rupture/comment-tourner-la-page',
     '/rupture/surmonter-trahison',
     '/rupture/voyance-divorce-separation',
+    '/rupture/confiance-en-soi-apres-divorce',
+    '/rupture/signes-reseaux-sociaux-apres-rupture',
     // Nouvelle rencontre
     '/nouvelle-rencontre/quand-rencontre-amour',
     '/nouvelle-rencontre/trouver-ame-soeur',

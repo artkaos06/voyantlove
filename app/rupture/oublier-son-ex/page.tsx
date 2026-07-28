@@ -411,6 +411,9 @@ export default function OublierSonExPage() {
             <Link href="/reconquete/reconquerir-son-ex" className="block text-purple-600 hover:text-purple-800 font-medium">
               → Reconquérir mon Ex si Finalement je Veux Essayer
             </Link>
+            <Link href="/rupture/signes-reseaux-sociaux-apres-rupture" className="block text-purple-600 hover:text-purple-800 font-medium">
+              → Réseaux Sociaux Après une Rupture : Décoder les Signes
+            </Link>
           </div>
         </div>
 
