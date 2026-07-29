@@ -25,6 +25,7 @@ const COLUMNS: { title: string; links: { href: string; label: string }[] }[] = [
     title: 'Outils',
     links: [
       { href: '/compatibilite-amoureuse', label: 'Compatibilité des signes' },
+      { href: '/astrologie-amour', label: 'Signes en amour' },
       { href: '/methodes-voyance/numerologie-amoureuse', label: 'Numérologie amoureuse' },
       { href: '/methodes-voyance/synastrie-amoureuse', label: 'Synastrie' },
       { href: '/voyance-gratuite-amour/horoscope-amour-2026', label: 'Horoscope amour 2026' },

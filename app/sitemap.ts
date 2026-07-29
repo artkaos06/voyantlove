@@ -2,6 +2,7 @@ import type { MetadataRoute } from 'next'
 import { COMPATIBILITY_PAIRS, validatePairRecord } from '@/lib/compatibilitePairs'
 import { TAROT_LOVE_CARDS, validateCardRecord } from '@/lib/tarotLoveCards'
 import { REVES_AMOUR, validateDreamRecord } from '@/lib/revesAmour'
+import { SIGNES_AMOUR, validateSignRecord } from '@/lib/signesAmour'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://www.voyantlove.fr'
@@ -174,6 +175,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: now,
       changeFrequency: 'weekly' as const,
       priority: 0.7,
+    })),
+    {
+      url: `${baseUrl}/astrologie-amour`,
+      lastModified: now,
+      changeFrequency: 'weekly' as const,
+      priority: 0.9,
+    },
+    ...SIGNES_AMOUR.filter((s) => validateSignRecord(s).length === 0).map((s) => ({
+      url: `${baseUrl}/astrologie-amour/${s.slug}`,
+      lastModified: now,
+      changeFrequency: 'weekly' as const,
+      priority: 0.8,
     })),
   ]
 }

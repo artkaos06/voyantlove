@@ -388,6 +388,7 @@ export default function SynastrieAmoureusePage() {
           <div className="space-y-2">
             <Link href="/methodes-voyance" className="block text-indigo-600 hover:text-indigo-800 font-medium">&rarr; Méthodes de Voyance : Toutes nos Approches</Link>
             <Link href="/methodes-voyance/astrologie-amoureuse" className="block text-indigo-600 hover:text-indigo-800 font-medium">&rarr; Astrologie Amoureuse : Comprendre Votre Ciel Sentimental</Link>
+            <Link href="/astrologie-amour" className="block text-indigo-600 hover:text-indigo-800 font-medium">&rarr; Les Signes Astrologiques en Amour : Profil de Chaque Signe</Link>
             <Link href="/sentiments/compatibilite-amoureuse" className="block text-indigo-600 hover:text-indigo-800 font-medium">&rarr; Compatibilité Amoureuse : Tous les Indicateurs</Link>
             <Link href="/sentiments/avenir-amoureux" className="block text-indigo-600 hover:text-indigo-800 font-medium">&rarr; L'Avenir de Votre Couple : Guidance Complète</Link>
           </div>

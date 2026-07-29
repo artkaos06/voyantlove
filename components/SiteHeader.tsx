@@ -29,6 +29,7 @@ const NAV: NavGroup[] = [
       { href: '/methodes-voyance', label: 'Méthodes de voyance' },
       { href: '/tarot-amour', label: 'Tarot amour' },
       { href: '/reves-amour', label: 'Rêves amoureux' },
+      { href: '/astrologie-amour', label: 'Signes en amour' },
       { href: '/compatibilite-amoureuse', label: 'Compatibilité des signes' },
       { href: '/methodes-voyance/numerologie-amoureuse', label: 'Numérologie amoureuse' },
       { href: '/methodes-voyance/synastrie-amoureuse', label: 'Synastrie' },

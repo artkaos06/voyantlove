@@ -78,6 +78,10 @@ export default function CompatibiliteHubPage() {
         <section className="mb-12">
           <h2 className="text-2xl font-bold mb-6 text-gray-900">Aller plus loin</h2>
           <div className="grid md:grid-cols-3 gap-4">
+            <Link href="/astrologie-amour" className="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition">
+              <h3 className="font-bold text-gray-900 mb-1">Les Signes en Amour</h3>
+              <p className="text-sm text-gray-600">Le profil amoureux de chaque signe : caractère, séduction, défauts.</p>
+            </Link>
             <Link href="/methodes-voyance/synastrie-amoureuse" className="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition">
               <h3 className="font-bold text-gray-900 mb-1">Synastrie Amoureuse</h3>
               <p className="text-sm text-gray-600">L'analyse complète des deux thèmes astraux, planète par planète.</p>
