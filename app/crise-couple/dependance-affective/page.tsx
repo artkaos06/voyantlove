@@ -445,6 +445,7 @@ export default function DependanceAffectivePage() {
             <Link href="/rupture/oublier-son-ex" className="block text-teal-600 hover:text-teal-800 font-medium">&rarr; Oublier son Ex et Tourner la Page</Link>
             <Link href="/sentiments/maime-t-il-elle" className="block text-teal-600 hover:text-teal-800 font-medium">&rarr; M&rsquo;aime-t-il/elle Vraiment ?</Link>
             <Link href="/sentiments/avenir-amoureux" className="block text-teal-600 hover:text-teal-800 font-medium">&rarr; Votre Avenir Amoureux</Link>
+            <Link href="/crise-couple/vivre-meme-toit-apres-separation" className="block text-teal-600 hover:text-teal-800 font-medium">&rarr; Vivre sous le Même Toit Après une Séparation</Link>
           </div>
         </div>
 

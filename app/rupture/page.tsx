@@ -159,6 +159,13 @@ export default function RuptureHubPage() {
               <p className="text-gray-600 mb-4">Ce que ça prouve (ou pas), et comment retrouver votre équilibre.</p>
               <span className="text-teal-600 font-semibold">Lire →</span>
             </Link>
+
+            <Link href="/rupture/rupture-soudaine-sans-explication" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-blue-700">
+              <div className="text-4xl mb-4">⚡</div>
+              <h3 className="text-2xl font-bold mb-3 text-gray-900">Rupture Soudaine sans Explication</h3>
+              <p className="text-gray-600 mb-4">Comprendre une séparation qui semble arriver du jour au lendemain.</p>
+              <span className="text-blue-700 font-semibold">Lire →</span>
+            </Link>
           </div>
         </section>
 

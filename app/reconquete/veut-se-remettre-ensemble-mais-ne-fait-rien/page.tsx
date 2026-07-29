@@ -284,6 +284,7 @@ export default function VeutSeRemettreEnsembleMaisNeFaitRienPage() {
             <Link href="/reconquete/se-remettre-ensemble" className="block text-violet-600 hover:text-violet-800 font-medium">&rarr; Se Remettre Ensemble : Les 5 Étapes</Link>
             <Link href="/reconquete/va-t-il-elle-revenir" className="block text-violet-600 hover:text-violet-800 font-medium">&rarr; Va-t-il/elle Revenir ?</Link>
             <Link href="/crise-couple/dependance-affective" className="block text-violet-600 hover:text-violet-800 font-medium">&rarr; Reconnaître la Dépendance Affective</Link>
+            <Link href="/reconquete/sentiments-peuvent-ils-revenir-couple" className="block text-violet-600 hover:text-violet-800 font-medium">&rarr; Les Sentiments Peuvent-ils Revenir ?</Link>
           </div>
         </div>
 

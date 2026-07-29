@@ -239,6 +239,7 @@ export default function SentimentsNonPartagesPage() {
             <Link href="/sentiments/maime-t-il-elle" className="block text-pink-600 hover:text-pink-800 font-medium">&rarr; M&apos;aime-t-il / M&apos;aime-t-elle Encore ?</Link>
             <Link href="/sentiments/pense-t-il-elle-a-moi" className="block text-pink-600 hover:text-pink-800 font-medium">&rarr; Pense-t-il/elle à Moi ?</Link>
             <Link href="/rupture/chagrin-damour" className="block text-pink-600 hover:text-pink-800 font-medium">&rarr; Surmonter un Chagrin d&apos;Amour</Link>
+            <Link href="/reconquete/sentiments-peuvent-ils-revenir-couple" className="block text-pink-600 hover:text-pink-800 font-medium">&rarr; Les Sentiments Peuvent-ils Revenir dans un Couple ?</Link>
           </div>
         </div>
 

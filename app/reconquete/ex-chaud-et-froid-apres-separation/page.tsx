@@ -262,6 +262,7 @@ export default function ExChaudEtFroidApresSeparationPage() {
             <Link href="/reconquete/ex-qui-revient" className="block text-purple-600 hover:text-purple-800 font-medium">&rarr; Ex qui Revient : Que Faire ?</Link>
             <Link href="/sentiments/pense-t-il-elle-a-moi" className="block text-purple-600 hover:text-purple-800 font-medium">&rarr; Pense-t-il/elle à Moi ?</Link>
             <Link href="/reconquete/silence-radio-reconquete" className="block text-purple-600 hover:text-purple-800 font-medium">&rarr; Le Silence Radio en Reconquête</Link>
+            <Link href="/reconquete/separation-temporaire-ou-definitive" className="block text-purple-600 hover:text-purple-800 font-medium">&rarr; Séparation Temporaire ou Définitive ?</Link>
           </div>
         </div>
 

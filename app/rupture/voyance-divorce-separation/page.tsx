@@ -372,6 +372,7 @@ export default function VoyanceDivorceSeparationPage() {
             <Link href="/rupture/deuil-amoureux" className="block text-slate-700 hover:text-slate-900 font-medium">&rarr; Traverser le Deuil Amoureux : Guide Complet</Link>
             <Link href="/nouvelle-rencontre/nouvelle-relation-amoureuse" className="block text-slate-700 hover:text-slate-900 font-medium">&rarr; Commencer une Nouvelle Relation Amoureuse</Link>
             <Link href="/rupture/confiance-en-soi-apres-divorce" className="block text-slate-700 hover:text-slate-900 font-medium">&rarr; Retrouver Confiance en Soi Après un Divorce</Link>
+            <Link href="/rupture/rupture-soudaine-sans-explication" className="block text-slate-700 hover:text-slate-900 font-medium">&rarr; Rupture Soudaine sans Explication</Link>
           </div>
         </div>
 

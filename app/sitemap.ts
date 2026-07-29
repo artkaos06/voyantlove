@@ -40,6 +40,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/reconquete/quitte-pour-quelquun-dautre-va-t-il-revenir',
     '/reconquete/repondre-a-son-ex',
     '/reconquete/revoir-son-ex',
+    '/reconquete/separation-temporaire-ou-definitive',
+    '/reconquete/sentiments-peuvent-ils-revenir-couple',
     // Rupture
     '/rupture/oublier-son-ex',
     '/rupture/chagrin-damour',
@@ -54,6 +56,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/rupture/signes-reseaux-sociaux-apres-rupture',
     '/rupture/rever-de-son-ex',
     '/rupture/ex-refait-sa-vie',
+    '/rupture/rupture-soudaine-sans-explication',
     // Nouvelle rencontre
     '/nouvelle-rencontre/quand-rencontre-amour',
     '/nouvelle-rencontre/trouver-ame-soeur',
@@ -88,6 +91,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/crise-couple/couple-a-distance-voyance',
     '/crise-couple/opposition-familiale-couple',
     '/crise-couple/difference-age-couple',
+    '/crise-couple/vivre-meme-toit-apres-separation',
     // Méthodes voyance
     '/methodes-voyance/tirage-tarot-amour',
     '/methodes-voyance/oracle-amour',

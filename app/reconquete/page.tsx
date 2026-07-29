@@ -157,6 +157,18 @@ export default function ReconqueteHubPage() {
               <h3 className="text-xl font-bold mb-2">Revoir son Ex</h3>
               <p className="text-gray-600 text-sm">Se préparer et se comporter en revoyant son ex après la rupture.</p>
             </Link>
+
+            <Link href="/reconquete/separation-temporaire-ou-definitive" className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition border-t-4 border-cyan-500">
+              <div className="text-3xl mb-3">⚖️</div>
+              <h3 className="text-xl font-bold mb-2">Séparation Temporaire ou Définitive ?</h3>
+              <p className="text-gray-600 text-sm">Les signes à observer pour savoir où en est réellement la relation.</p>
+            </Link>
+
+            <Link href="/reconquete/sentiments-peuvent-ils-revenir-couple" className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition border-t-4 border-rose-500">
+              <div className="text-3xl mb-3">💞</div>
+              <h3 className="text-xl font-bold mb-2">Les Sentiments Peuvent-ils Revenir ?</h3>
+              <p className="text-gray-600 text-sm">Conditions réelles de reconnexion après une perte de sentiments.</p>
+            </Link>
           </div>
         </section>
 
