@@ -36,6 +36,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/reconquete/veut-se-remettre-ensemble-mais-ne-fait-rien',
     '/reconquete/ex-chaud-et-froid-apres-separation',
     '/reconquete/quitte-pour-quelquun-dautre-va-t-il-revenir',
+    '/reconquete/repondre-a-son-ex',
+    '/reconquete/revoir-son-ex',
     // Rupture
     '/rupture/oublier-son-ex',
     '/rupture/chagrin-damour',
@@ -48,6 +50,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/rupture/voyance-divorce-separation',
     '/rupture/confiance-en-soi-apres-divorce',
     '/rupture/signes-reseaux-sociaux-apres-rupture',
+    '/rupture/rever-de-son-ex',
+    '/rupture/ex-refait-sa-vie',
     // Nouvelle rencontre
     '/nouvelle-rencontre/quand-rencontre-amour',
     '/nouvelle-rencontre/trouver-ame-soeur',

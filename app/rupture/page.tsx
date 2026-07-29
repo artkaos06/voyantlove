@@ -145,6 +145,20 @@ export default function RuptureHubPage() {
               <p className="text-gray-600 mb-4">Photos supprimées, stories, blocages : ce que ces signaux prouvent (ou pas).</p>
               <span className="text-indigo-600 font-semibold">Lire →</span>
             </Link>
+
+            <Link href="/rupture/rever-de-son-ex" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-purple-500">
+              <div className="text-4xl mb-4">🌙</div>
+              <h3 className="text-2xl font-bold mb-3 text-gray-900">Rêver de son Ex</h3>
+              <p className="text-gray-600 mb-4">Ce que ces rêves révèlent sur vous — et ce qu&apos;ils ne prédisent pas.</p>
+              <span className="text-purple-600 font-semibold">Lire →</span>
+            </Link>
+
+            <Link href="/rupture/ex-refait-sa-vie" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-teal-500">
+              <div className="text-4xl mb-4">🍃</div>
+              <h3 className="text-2xl font-bold mb-3 text-gray-900">Mon Ex Refait sa Vie</h3>
+              <p className="text-gray-600 mb-4">Ce que ça prouve (ou pas), et comment retrouver votre équilibre.</p>
+              <span className="text-teal-600 font-semibold">Lire →</span>
+            </Link>
           </div>
         </section>
 

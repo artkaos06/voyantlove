@@ -686,6 +686,7 @@ export default function SeRemettreEnsemblePage() {
             <Link href="/reconquete/retour-de-lex" className="block text-purple-600 hover:text-purple-800 font-medium">→ Retour de l'Ex : Signes et Timing</Link>
             <Link href="/reconquete/va-t-il-elle-revenir" className="block text-purple-600 hover:text-purple-800 font-medium">→ Va-t-il/elle Revenir ? Prédiction Tarot</Link>
             <Link href="/reconquete/reconquerir-son-ex" className="block text-purple-600 hover:text-purple-800 font-medium">→ Reconquérir son Ex : Stratégies Efficaces</Link>
+            <Link href="/reconquete/revoir-son-ex" className="block text-purple-600 hover:text-purple-800 font-medium">→ Revoir son Ex Après une Rupture</Link>
           </div>
         </div>
 

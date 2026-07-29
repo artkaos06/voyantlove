@@ -255,6 +255,7 @@ export default function QuittePourQuelquunDautreVaTIlRevenirPage() {
             <Link href="/rupture/surmonter-trahison" className="block text-violet-600 hover:text-violet-800 font-medium">&rarr; Surmonter une Trahison Amoureuse</Link>
             <Link href="/reconquete/seconde-chance-amour" className="block text-violet-600 hover:text-violet-800 font-medium">&rarr; La Seconde Chance en Amour</Link>
             <Link href="/rupture/guerir-rupture" className="block text-violet-600 hover:text-violet-800 font-medium">&rarr; Guérir d&apos;une Rupture</Link>
+            <Link href="/rupture/ex-refait-sa-vie" className="block text-violet-600 hover:text-violet-800 font-medium">&rarr; Mon Ex Refait sa Vie : Comment le Vivre</Link>
           </div>
         </div>
 

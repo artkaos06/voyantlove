@@ -414,6 +414,9 @@ export default function OublierSonExPage() {
             <Link href="/rupture/signes-reseaux-sociaux-apres-rupture" className="block text-purple-600 hover:text-purple-800 font-medium">
               → Réseaux Sociaux Après une Rupture : Décoder les Signes
             </Link>
+            <Link href="/rupture/rever-de-son-ex" className="block text-purple-600 hover:text-purple-800 font-medium">
+              → Rêver de son Ex : Signification
+            </Link>
           </div>
         </div>
 

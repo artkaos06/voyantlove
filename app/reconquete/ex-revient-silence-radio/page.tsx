@@ -615,6 +615,7 @@ export default function ExRevientSilenceRadioPage() {
             <Link href="/reconquete" className="block text-purple-600 hover:text-purple-800 font-medium">→ Reconquête Amoureuse : Toutes nos Stratégies</Link>
             <Link href="/reconquete/va-t-il-elle-revenir" className="block text-purple-600 hover:text-purple-800 font-medium">→ Mon Ex Va-t-il Revenir ? Signes et Prédictions</Link>
             <Link href="/reconquete/reconquerir-son-ex" className="block text-purple-600 hover:text-purple-800 font-medium">→ Comment Reconquérir son Ex : Guide Complet</Link>
+            <Link href="/reconquete/repondre-a-son-ex" className="block text-purple-600 hover:text-purple-800 font-medium">→ Faut-il Répondre à son Ex Quand il Recontacte ?</Link>
             <Link href="/sentiments" className="block text-purple-600 hover:text-purple-800 font-medium">→ Comprendre les Sentiments Amoureux</Link>
           </div>
         </div>
