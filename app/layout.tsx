@@ -174,6 +174,13 @@ export default function RootLayout({
             var phone = (link.getAttribute('href') || '').replace('tel:', '');
             var page = window.location.pathname;
 
+            // The alternative CPA68 offer has a dedicated provider-isolated
+            // tracker. Returning here prevents one physical tap from entering
+            // Télémaque's shared KV dashboard, Discord lead feed and MGID
+            // postback path. We do not stop propagation: the dedicated
+            // listener still observes the same click.
+            if (/^\\/lp\\/consultation-10-minutes-offertes\\/?$/.test(page)) return;
+
             // 1) Existing GTM dataLayer push (kept as-is for analytics)
             window.dataLayer = window.dataLayer || [];
             window.dataLayer.push({
@@ -190,7 +197,7 @@ export default function RootLayout({
             // back the hydration that broke Xiaomi/Huawei in-app browsers.
             // Delegation catches the same clicks with no page-level JS.
             //
-            // Restricted to the three paid landers so MGID's conversion
+            // Restricted to paid call landers so MGID's conversion
             // definition matches lp-funnel's tap definition. Firing on
             // organic pages would let an old MGID cookie attribute an
             // unrelated organic call to a paid campaign, inflating MGID's
