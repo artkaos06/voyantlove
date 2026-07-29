@@ -17,6 +17,7 @@ const COLUMNS: { title: string; links: { href: string; label: string }[] }[] = [
       { href: '/voyance-amour', label: 'Voyance amour' },
       { href: '/methodes-voyance', label: 'Méthodes de voyance' },
       { href: '/tarot-amour', label: 'Tarot amour' },
+      { href: '/reves-amour', label: 'Rêves amoureux' },
       { href: '/voyance-gratuite-amour', label: 'Voyance gratuite' },
     ],
   },

@@ -239,6 +239,7 @@ export default function ReverDeSonExPage() {
             <Link href="/rupture/comment-tourner-la-page" className="block text-indigo-600 hover:text-indigo-800 font-medium">&rarr; Comment Tourner la Page</Link>
             <Link href="/sentiments/pense-t-il-elle-a-moi" className="block text-indigo-600 hover:text-indigo-800 font-medium">&rarr; Pense-t-il/elle à Moi ?</Link>
             <Link href="/rupture/deuil-amoureux" className="block text-indigo-600 hover:text-indigo-800 font-medium">&rarr; Traverser le Deuil Amoureux</Link>
+            <Link href="/reves-amour" className="block text-indigo-600 hover:text-indigo-800 font-medium">&rarr; Interprétation des Rêves Amoureux : Tous les Rêves</Link>
           </div>
         </div>
 
