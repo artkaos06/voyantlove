@@ -9,6 +9,7 @@ import {
 } from '../lib/alternativeCpa68';
 import {
   ALTERNATIVE_TRACKING_PAGE,
+  buildAlternativeDiscordNotification,
   buildAlternativeTrackingPayload,
   extractAlternativeAttribution,
   mergeAlternativeAttribution,
@@ -130,6 +131,34 @@ test('parser accepts a well-formed landing_view and call_button_click request', 
   if (click.ok) {
     assert.equal(click.value.cta_placement, 'hero');
     assert.equal(click.value.proxy_value_eur, 5);
+  }
+});
+
+test('CPA68 clicks create a dedicated LovePsychic lead notification but views do not', () => {
+  const click = parseAlternativeTrackingRequest(validClick({
+    click_id: 'mgid-click-123',
+    source: 'mgid',
+    creative_id: 'creative-7',
+  }));
+  assert.equal(click.ok, true);
+  if (!click.ok) return;
+
+  const notification = buildAlternativeDiscordNotification(click.value);
+  assert.ok(notification);
+  assert.equal(notification.category, 'lead');
+  assert.match(notification.title, /CPA68/);
+  assert.match(notification.description, /01 75 75 45 82/);
+
+  const fields = Object.fromEntries(notification.fields.map((field) => [field.name, field.value]));
+  assert.equal(fields.Placement, 'hero');
+  assert.equal(fields.Source, 'mgid');
+  assert.equal(fields.click_id, 'mgid-click-123');
+  assert.equal(fields.Créa, 'creative-7');
+
+  const view = parseAlternativeTrackingRequest(validView());
+  assert.equal(view.ok, true);
+  if (view.ok) {
+    assert.equal(buildAlternativeDiscordNotification(view.value), null);
   }
 });
 

@@ -1,5 +1,9 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { parseAlternativeTrackingRequest } from '@/lib/alternativeCpa68Tracking';
+import {
+  buildAlternativeDiscordNotification,
+  parseAlternativeTrackingRequest,
+} from '@/lib/alternativeCpa68Tracking';
+import { Color, notifyDiscord } from '@/lib/discord';
 
 export const dynamic = 'force-dynamic';
 
@@ -42,6 +46,14 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
     ...parsed.value,
     received_at: new Date().toISOString(),
   });
+
+  const notification = buildAlternativeDiscordNotification(parsed.value);
+  if (notification) {
+    await notifyDiscord({
+      ...notification,
+      color: Color.GREEN,
+    });
+  }
 
   return new NextResponse(null, { status: 204 });
 }

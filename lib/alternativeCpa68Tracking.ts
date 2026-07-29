@@ -1,6 +1,7 @@
 import {
   ALTERNATIVE_LANDING_VARIANT,
   ALTERNATIVE_PROVIDER_ID,
+  getAlternativeOfferConfig,
 } from './alternativeCpa68';
 
 export const ALTERNATIVE_ATTRIBUTION_STORAGE_KEY = 'vl:cpa68:attribution';
@@ -84,6 +85,45 @@ export interface AlternativeTrackingPayload extends AlternativeAttribution {
 export interface AlternativeTrackingRequest extends AlternativeTrackingPayload {
   page: typeof ALTERNATIVE_TRACKING_PAGE;
   referrer?: string;
+}
+
+export interface AlternativeDiscordNotification {
+  category: 'lead';
+  title: string;
+  description: string;
+  fields: Array<{ name: string; value: string; inline?: boolean }>;
+}
+
+/**
+ * Build the LovePsychic alert for real call intent only. Landing views remain
+ * silent, and the message explicitly labels €5 as a proxy rather than revenue.
+ */
+export function buildAlternativeDiscordNotification(
+  event: AlternativeTrackingRequest,
+): AlternativeDiscordNotification | null {
+  if (event.event !== 'call_button_click') return null;
+
+  const offer = getAlternativeOfferConfig();
+  const source = event.source || event.utm_source || '—';
+  return {
+    category: 'lead',
+    title: '📞 CPA68 — appel lancé',
+    description: `Numéro composé : **${offer.displayPhone}**\nClic téléphone valorisé **5 € proxy** — aucun CPA de 68 € n’est encore validé.`,
+    fields: [
+      { name: 'Provider', value: event.provider_id, inline: true },
+      { name: 'Placement', value: event.cta_placement || '—', inline: true },
+      { name: 'Source', value: source, inline: true },
+      ...(event.creative_id
+        ? [{ name: 'Créa', value: event.creative_id, inline: true }]
+        : []),
+      ...(event.sid ? [{ name: 'source_id', value: event.sid, inline: true }] : []),
+      ...(event.click_id ? [{ name: 'click_id', value: event.click_id }] : []),
+      ...(event.utm_campaign
+        ? [{ name: 'Campagne', value: event.utm_campaign }]
+        : []),
+      ...(event.referrer ? [{ name: 'Referrer', value: event.referrer }] : []),
+    ],
+  };
 }
 
 /** Front-end events can express intent only; provider-approved CPA is absent. */
