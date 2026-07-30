@@ -13,6 +13,7 @@ import {
   buildAlternativeTrackingPayload,
   extractAlternativeAttribution,
   mergeAlternativeAttribution,
+  notifyMgidCtaCall,
   parseAlternativeTrackingRequest,
 } from '../lib/alternativeCpa68Tracking';
 import { LANDERS } from '../lib/lpTrack';
@@ -244,6 +245,25 @@ test('parser bounds and rejects oversized attribution fields', () => {
     validView({ utm_source: 'x'.repeat(101) }),
   );
   assert.equal(result.ok, false);
+});
+
+test('a CPA68 call tap notifies MGID\'s existing cta_call goal via the consent-gated Sensor queue', () => {
+  const fakeWindow: { _mgq?: unknown[] } = {};
+
+  notifyMgidCtaCall(fakeWindow);
+
+  assert.deepEqual(fakeWindow._mgq, [['MgSensorInvoke', 'cta_call']]);
+});
+
+test('notifyMgidCtaCall appends to an existing _mgq queue instead of replacing it', () => {
+  const fakeWindow: { _mgq?: unknown[] } = { _mgq: [['MgSensorInvoke', 'email_lead']] };
+
+  notifyMgidCtaCall(fakeWindow);
+
+  assert.deepEqual(fakeWindow._mgq, [
+    ['MgSensorInvoke', 'email_lead'],
+    ['MgSensorInvoke', 'cta_call'],
+  ]);
 });
 
 test('CPA68 is excluded from Télémaque\'s shared lp-funnel LANDERS set', () => {

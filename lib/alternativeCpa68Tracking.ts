@@ -87,6 +87,29 @@ export interface AlternativeTrackingRequest extends AlternativeTrackingPayload {
   referrer?: string;
 }
 
+/**
+ * MGID's existing "cta_call" conversion goal, fed through the same
+ * consent-gated Sensor queue the angle landers use (app/layout.tsx's
+ * phone-click-tracker, and CookieConsent.tsx's loadMgidSensor). CPA68 is
+ * excluded from that sitewide listener so it never touches Télémaque's
+ * shared KV/attribution/Discord — this pushes the identical goal from the
+ * dedicated CPA68 tracker instead, so MGID still sees the call-intent
+ * conversion.
+ *
+ * window._mgq is a plain queue: pushing before mgsensor.js loads is safe,
+ * it drains on load, which only happens after marketing consent is granted.
+ * If consent is refused the push just sits unread — no separate gate to
+ * maintain here.
+ */
+export interface MgidSensorWindow {
+  _mgq?: unknown[];
+}
+
+export function notifyMgidCtaCall(target: MgidSensorWindow): void {
+  target._mgq = target._mgq || [];
+  target._mgq.push(['MgSensorInvoke', 'cta_call']);
+}
+
 export interface AlternativeDiscordNotification {
   category: 'lead';
   title: string;

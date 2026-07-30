@@ -8,6 +8,7 @@ import {
   buildAlternativeTrackingPayload,
   extractAlternativeAttribution,
   mergeAlternativeAttribution,
+  notifyMgidCtaCall,
 } from '@/lib/alternativeCpa68Tracking';
 
 const ENDPOINT = '/api/track/alternative-cpa68';
@@ -65,6 +66,15 @@ export default function AlternativeCpa68Tracker() {
       if (!link) return;
       const placement = link.dataset.cpa68Placement as AlternativeCtaPlacement;
       send(buildAlternativeTrackingPayload('call_button_click', attribution, placement));
+
+      // Feed MGID's existing cta_call goal directly from this dedicated
+      // tracker — CPA68 is excluded from app/layout.tsx's sitewide listener
+      // (Télémaque isolation), so that shared listener never fires it here.
+      try {
+        notifyMgidCtaCall(window as unknown as { _mgq?: unknown[] });
+      } catch {
+        // Best-effort: never block the tel: navigation.
+      }
     };
 
     document.addEventListener('click', onClick, true);
