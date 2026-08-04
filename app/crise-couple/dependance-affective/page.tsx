@@ -27,7 +27,7 @@ export default function DependanceAffectivePage() {
     description: 'Comprendre et surmonter la dépendance affective. Le tarot révèle vos schémas répétitifs, blocages karmiques et le chemin vers des relations saines.',
     url: 'https://www.voyantlove.fr/crise-couple/dependance-affective/',
     datePublished: '2026-02-09',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-02-09',
     keywords: ['dépendance affective', 'dépendance émotionnelle couple', 'se libérer dépendance affective', 'relation toxique voyance', 'attachement anxieux'],
   });
 

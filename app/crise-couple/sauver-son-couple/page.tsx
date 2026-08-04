@@ -19,7 +19,7 @@ export default function SauverSonCouplePage() {
     description: 'Comment sauver votre couple en crise ? Le tarot révèle les solutions, les étapes de reconstruction et si votre relation peut être sauvée.',
     url: 'https://www.voyantlove.fr/crise-couple/sauver-son-couple/',
     datePublished: '2026-02-09',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-02-09',
     keywords: ['sauver son couple', 'sauver couple en crise', 'reconstruire couple voyance', 'comment sauver mon couple', 'sauver relation amoureuse'],
   });
 

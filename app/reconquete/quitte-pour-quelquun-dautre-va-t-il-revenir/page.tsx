@@ -21,7 +21,7 @@ export default function QuittePourQuelquunDautreVaTIlRevenirPage() {
     description: 'Votre conjoint vous a quitté pour une autre personne ? Ce qui est possible, ce qui reste imprévisible, les signes concrets d\'un retour et comment ne pas mettre votre vie en pause.',
     url: 'https://www.voyantlove.fr/reconquete/quitte-pour-quelquun-dautre-va-t-il-revenir/',
     datePublished: '2026-07-28',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-07-28',
     keywords: ['il m\'a quittée pour une autre va-t-il revenir', 'quitté pour quelqu\'un d\'autre', 'combien de temps avant qu\'un ex regrette', 'relation pansement', 'comment réagir quand on est quitté pour une autre personne'],
   });
 

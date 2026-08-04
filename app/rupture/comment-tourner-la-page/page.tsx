@@ -19,7 +19,7 @@ export default function CommentTournerLaPagePage() {
     description: 'Comment tourner la page après une rupture amoureuse ? La voyance et le tarot vous guident pour lâcher prise, avancer et retrouver la paix intérieure.',
     url: 'https://www.voyantlove.fr/rupture/comment-tourner-la-page/',
     datePublished: '2026-03-22',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-03-22',
     keywords: ['tourner la page', 'avancer après rupture', 'oublier et avancer', 'lâcher prise amour', 'après rupture voyance'],
   });
 

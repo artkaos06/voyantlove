@@ -21,7 +21,7 @@ export default function QueRessentIlEllePourMoiPage() {
     description: 'Découvrez la nature exacte de ses sentiments grâce au tarot : amour, attachement, désir ou indifférence. Tirage spécifique et signes révélateurs.',
     url: 'https://www.voyantlove.fr/sentiments/que-ressent-il-elle-pour-moi/',
     datePublished: '2026-07-22',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-07-22',
     keywords: ['que ressent-il pour moi', 'que ressent-elle pour moi voyance', 'ses sentiments pour moi tarot', 'nature de ses sentiments', 'voyance émotions'],
   });
 

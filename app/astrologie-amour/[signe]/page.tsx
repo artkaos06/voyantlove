@@ -56,7 +56,7 @@ export default async function SignPage({ params }: Props) {
     description: `Le ${s.name} en amour : caractère amoureux, séduction, en couple, défauts et compatibilités.`,
     url,
     datePublished: '2026-07-29',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-07-29',
     keywords: [`${s.name.toLowerCase()} amour`, `${s.name.toLowerCase()} en amour`, `homme ${s.name.toLowerCase()} amour`, `femme ${s.name.toLowerCase()} amour`, `comment séduire un ${s.name.toLowerCase()}`, `compatibilité ${s.name.toLowerCase()}`],
   });
   const faqSchema = getFAQSchema(s.faq.map((f) => ({ question: f.q, answer: f.a })));

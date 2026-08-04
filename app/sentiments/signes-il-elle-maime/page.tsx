@@ -19,7 +19,7 @@ export default function SignesIlElleMaimePage() {
     description: 'Découvrez les signes qu\'il ou elle vous aime vraiment. Langage corporel, comportements révélateurs, signes du tarot et preuves d\'amour authentique.',
     url: 'https://www.voyantlove.fr/sentiments/signes-il-elle-maime/',
     datePublished: '2026-01-19',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-01-19',
     keywords: ['signes il elle maime', 'signes amour', 'langage corporel amoureux', 'comportement amoureux', 'tarot signes amour'],
   });
 

@@ -19,7 +19,7 @@ export default function PardonnerEnAmourPage() {
     description: 'Comment pardonner en amour et reconstruire la confiance dans votre couple. Guidance voyance et tarot pour le pardon authentique et la guérison.',
     url: 'https://www.voyantlove.fr/crise-couple/pardonner-en-amour/',
     datePublished: '2026-03-22',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-03-22',
     keywords: ['pardonner en amour', 'pardon couple', 'reconstruire confiance', 'pardon trahison', 'voyance pardon'],
   });
 

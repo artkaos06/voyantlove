@@ -19,7 +19,7 @@ export default function SurmonterTrahisonPage() {
     description: 'Comment surmonter une trahison et une infidélité ? Découvrez la guidance de la voyance et du tarot pour guérir, comprendre et reconstruire après la tromperie.',
     url: 'https://www.voyantlove.fr/rupture/surmonter-trahison/',
     datePublished: '2026-03-22',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-03-22',
     keywords: ['surmonter trahison', 'tromperie couple', 'infidélité guérison', 'trahison amoureuse', 'voyance infidélité'],
   });
 

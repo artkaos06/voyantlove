@@ -19,7 +19,7 @@ export default function RencontreAmoureuseEnLignePage() {
     description: 'Comment trouver l\'amour en ligne avec la guidance de la voyance ? Découvrez les conseils du tarot pour réussir vos rencontres sur internet et applications.',
     url: 'https://www.voyantlove.fr/nouvelle-rencontre/rencontre-amoureuse-en-ligne/',
     datePublished: '2026-03-22',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-03-22',
     keywords: ['rencontre en ligne', 'amour internet', 'Tinder voyance', 'rencontre amoureuse en ligne', 'dating voyance'],
   });
 

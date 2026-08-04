@@ -21,7 +21,7 @@ export default function SeparationTemporaireOuDefinitivePage() {
     description: 'Pause de couple, séparation d\'essai ou rupture réelle ? Un cadre pour évaluer les actes, pas les mots, et sortir du flou sur l\'avenir de votre relation.',
     url: 'https://www.voyantlove.fr/reconquete/separation-temporaire-ou-definitive/',
     datePublished: '2026-07-29',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-07-29',
     keywords: ['séparation temporaire ou définitive', 'séparation d\'essai signes', 'elle demande une pause est-ce fini', 'signes qu\'il reviendra après une séparation', 'nous sommes séparés mais toujours ensemble'],
   });
 

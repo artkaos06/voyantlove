@@ -21,7 +21,7 @@ export default function VoyanceSentimentalePage() {
     description: 'Voyance sentimentale : consultation gratuite ou avec voyant spécialisé amour. Sentiments, couple, reconquête, rencontre — guidance par tarot, oracle et clairvoyance.',
     url: 'https://www.voyantlove.fr/methodes-voyance/voyance-sentimentale/',
     datePublished: '2026-03-13',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-03-13',
     keywords: ['voyance sentimentale', 'voyance sentimentale gratuite', 'voyance amoureuse', 'voyance du coeur', 'consultation sentimentale', 'voyant amour'],
   });
 

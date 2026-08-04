@@ -19,7 +19,7 @@ export default function SilenceRadioReconquetePage() {
     description: 'Le silence radio est-il la clé pour reconquérir son ex ? Découvrez la durée idéale, les étapes et ce que la voyance révèle sur cette stratégie puissante.',
     url: 'https://www.voyantlove.fr/reconquete/silence-radio-reconquete/',
     datePublished: '2026-03-22',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-03-22',
     keywords: ['silence radio', 'reconquête silence', 'ne plus donner de nouvelles', 'silence radio ex', 'reconquête amoureuse'],
   });
 

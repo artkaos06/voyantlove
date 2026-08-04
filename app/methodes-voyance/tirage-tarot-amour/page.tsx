@@ -21,7 +21,7 @@ export default function TirageTarotAmourPage() {
     description: 'D\u00e9couvrez le tirage de tarot amoureux : tirage en croix, tirage sentimental, interpr\u00e9tation des arcanes majeurs pour l\u2019amour. Guide complet pour comprendre vos sentiments.',
     url: 'https://www.voyantlove.fr/methodes-voyance/tirage-tarot-amour/',
     datePublished: '2026-03-03',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-03-03',
     keywords: ['tirage tarot amour', 'tarot amoureux', 'tirage sentimental', 'lecture tarot couple', 'tarot des sentiments'],
   });
 

@@ -19,7 +19,7 @@ export default function SeRemettreEnsemblePage() {
     description: 'Comment se remettre ensemble avec son ex ? Découvrez les étapes essentielles et la guidance tarot pour une réunion réussie.',
     url: 'https://www.voyantlove.fr/reconquete/se-remettre-ensemble/',
     datePublished: '2026-01-19',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-01-19',
     keywords: ['se remettre ensemble', 'reprise relation', 'reconstruction couple', 'retrouvailles'],
   });
 

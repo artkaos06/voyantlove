@@ -19,7 +19,7 @@ export default function ReconquerirSonExPage() {
     description: 'Comment reconquérir votre ex selon la voyance et le tarot ? Découvrez le timing idéal, les étapes de reconquête et ce que votre ex ressent vraiment.',
     url: 'https://www.voyantlove.fr/reconquete/reconquerir-son-ex/',
     datePublished: '2026-01-15',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-01-15',
     keywords: ['reconquérir son ex', 'reconquête amoureuse', 'retour ex', 'tarot ex', 'voyance retour'],
   });
 

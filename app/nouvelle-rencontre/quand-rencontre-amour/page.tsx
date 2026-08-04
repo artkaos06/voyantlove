@@ -19,7 +19,7 @@ export default function QuandRencontrePage() {
     description: 'Quand allez-vous rencontrer l\'amour ou votre âme sœur ? Le tarot prédit le timing, le lieu, et le profil de votre prochaine rencontre amoureuse.',
     url: 'https://www.voyantlove.fr/nouvelle-rencontre/quand-rencontre-amour/',
     datePublished: '2026-01-20',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-01-20',
     keywords: ['quand rencontre', 'rencontrer quelqu\'un', 'âme sœur timing', 'nouvelle rencontre tarot', 'prédiction rencontre'],
   });
 

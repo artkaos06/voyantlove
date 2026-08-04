@@ -21,7 +21,7 @@ export default function ConfianceEnSoiApresDivorcePage() {
     description: 'Reconstruire l\'estime de soi après un divorce, étape par étape : renouer avec son identité, dépasser la culpabilité de recommencer et se rouvrir à l\'amour à son rythme.',
     url: 'https://www.voyantlove.fr/rupture/confiance-en-soi-apres-divorce/',
     datePublished: '2026-07-28',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-07-28',
     keywords: ['retrouver confiance en soi après un divorce', 'peur de refaire sa vie après divorce', 'retrouver son estime de soi après séparation', 'se sentir coupable de rencontrer quelqu\'un après divorce', 'quand refaire sa vie après une séparation'],
   });
 

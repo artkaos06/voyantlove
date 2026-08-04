@@ -19,7 +19,7 @@ export default function PeurDeAimerANouveauPage() {
     description: "Comment surmonter la peur d'aimer à nouveau après une rupture ? Guidance voyance et tarot pour lever les blocages amoureux et ouvrir son cœur au bonheur.",
     url: 'https://www.voyantlove.fr/nouvelle-rencontre/peur-de-aimer-a-nouveau/',
     datePublished: '2026-03-22',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-03-22',
     keywords: ["peur d'aimer", 'blocage amoureux', 'peur nouvelle relation', 'peur engagement', 'ouvrir son cœur voyance'],
   });
 

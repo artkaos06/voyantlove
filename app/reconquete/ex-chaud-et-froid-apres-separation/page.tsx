@@ -21,7 +21,7 @@ export default function ExChaudEtFroidApresSeparationPage() {
     description: 'Votre ex souffle le chaud et le froid après la rupture ? Comprenez les dynamiques derrière les signaux contradictoires et décidez comment répondre sans décoder chaque message.',
     url: 'https://www.voyantlove.fr/reconquete/ex-chaud-et-froid-apres-separation/',
     datePublished: '2026-07-28',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-07-28',
     keywords: ['mon ex est chaud et froid', 'mon ex revient puis repart', 'mon ex envoie des signes contradictoires', 'pourquoi mon ex entretient-il le contact', 'comportement ambigu après séparation'],
   });
 

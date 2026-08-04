@@ -19,7 +19,7 @@ export default function SentimentsNonPartagesPage() {
     description: 'Amour non partagé : comment gérer des sentiments non réciproques. Découvrez les guidances de la voyance pour avancer et retrouver votre équilibre.',
     url: 'https://www.voyantlove.fr/sentiments/sentiments-non-partages/',
     datePublished: '2026-03-22',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-03-22',
     keywords: ['amour non partagé', 'sentiments non réciproques', 'aimer sans retour', 'amour à sens unique', 'voyance sentiments'],
   });
 

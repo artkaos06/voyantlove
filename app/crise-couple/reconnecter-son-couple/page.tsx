@@ -19,7 +19,7 @@ export default function ReconnecterSonCouplePage() {
     description: 'Comment reconnecter votre couple et raviver la flamme. Voyance et tarot pour retrouver la complicité perdue et reconstruire une relation épanouissante.',
     url: 'https://www.voyantlove.fr/crise-couple/reconnecter-son-couple/',
     datePublished: '2026-03-22',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-03-22',
     keywords: ['reconnecter couple', 'retrouver complicité', 'raviver flamme', 'couple en crise', 'voyance couple'],
   });
 

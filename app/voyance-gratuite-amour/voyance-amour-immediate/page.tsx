@@ -7,7 +7,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
 export const metadata: Metadata = {
-  title: 'Voyance Amour Gratuite Immédiate : Tirage Instantané en Ligne | VoyantLove',
+  title: 'Voyance Amour Gratuite Immédiate : Tirage Instantané en Ligne',
   description: 'Voyance amour gratuite immédiate : tirage instantané en ligne, oracle et tarot oui/non amour. Réponse en quelques secondes à votre question sentimentale, sans inscription.',
   keywords: ['voyance amour gratuite immediate', 'voyance gratuite immediate amour', 'voyance amoureuse gratuite immediate', 'voyance amour gratuit immediat', 'voyance gratuite amour en ligne immediate', 'tirage amour immediat'],
   alternates: {
@@ -21,7 +21,7 @@ export default function VoyanceAmourImmediatePage() {
     description: 'Voyance amour gratuite immédiate : tirage instantané en ligne, oracle et tarot oui/non amour. Réponse en quelques secondes à votre question sentimentale, sans inscription.',
     url: 'https://www.voyantlove.fr/voyance-gratuite-amour/voyance-amour-immediate/',
     datePublished: '2026-05-12',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-05-12',
     keywords: ['voyance amour gratuite immediate', 'voyance amoureuse gratuite immediate', 'tirage amour immediat', 'voyance amour gratuit immediat'],
   });
 

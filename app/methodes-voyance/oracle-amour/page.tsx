@@ -21,7 +21,7 @@ export default function OracleAmourPage() {
     description: 'D\u00e9couvrez l\u2019Oracle de l\u2019Amour : Oracle Belline, Oracle de G\u00e9, Oracle des Anges. Guidance sentimentale compl\u00e8te pour \u00e9clairer votre vie amoureuse.',
     url: 'https://www.voyantlove.fr/methodes-voyance/oracle-amour/',
     datePublished: '2026-03-03',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-03-03',
     keywords: ['oracle amour', 'oracle sentimental', 'guidance amoureuse', 'cartes oracle', 'oracle des anges amour'],
   });
 

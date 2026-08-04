@@ -22,7 +22,7 @@ export default function TirageGratuitCelibatairePage() {
     description: 'Tirage gratuit amour pour célibataires : découvrez quand et comment vous rencontrerez l\'amour selon le tarot et l\'oracle.',
     url: 'https://www.voyantlove.fr/voyance-gratuite-amour/tirage-gratuit-celibataire/',
     datePublished: '2026-03-10',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-03-10',
     keywords: ['tirage gratuit amour celibataire', 'tarot celibataire gratuit', 'voyance gratuite celibataire'],
   });
 

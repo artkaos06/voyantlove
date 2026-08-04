@@ -51,7 +51,7 @@ export default async function CardPage({ params }: Props) {
     description: `${c.name} en amour : signification, endroit et renversée, célibataire, couple et ex.`,
     url,
     datePublished: '2026-07-24',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-07-24',
     keywords: [`${c.name.toLowerCase()} amour`, `${c.name.toLowerCase()} tarot amour`, `${c.name.toLowerCase()} signification amour`, 'tarot amour'],
   });
   const faqSchema = getFAQSchema(c.faq.map((f) => ({ question: f.q, answer: f.a })));

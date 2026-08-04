@@ -20,7 +20,7 @@ export default function SynastrieAmoureusePage() {
     description: 'La synastrie amoureuse analyse la compatibilité de deux thèmes astraux. Découvrez ce que les planètes révèlent sur votre couple : tensions, harmonies, forces et défis.',
     url: 'https://www.voyantlove.fr/methodes-voyance/synastrie-amoureuse/',
     datePublished: '2026-03-27',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-03-27',
     keywords: ['synastrie amoureuse', 'thème astral couple', 'compatibilité astrologique couple', 'synastrie couple', 'Vénus Mars synastrie'],
   });
 

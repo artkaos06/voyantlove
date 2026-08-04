@@ -19,7 +19,7 @@ export default function RetourExPage() {
     description: 'Votre ex reviendra-t-il ? Découvrez les signes du retour, le timing astrologique et comment préparer les retrouvailles selon le tarot.',
     url: 'https://www.voyantlove.fr/reconquete/retour-de-lex/',
     datePublished: '2026-01-16',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-01-16',
     keywords: ['retour ex', 'ex qui revient', 'signes retour', 'retour être aimé', 'retrouvailles'],
   });
 

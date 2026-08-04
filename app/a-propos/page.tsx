@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { getWebPageSchema, getBreadcrumbSchema, getOrganizationSchema, getAuthorSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
-  title: 'À Propos de VoyantLove — Notre Mission et Notre Équipe | VoyantLove',
+  title: 'À Propos de VoyantLove — Notre Mission et Notre Équipe',
   description: 'Découvrez l\'équipe VoyantLove : notre mission, nos valeurs, notre processus de sélection des voyants et notre engagement pour une voyance amoureuse éthique et fiable.',
   alternates: { canonical: 'https://www.voyantlove.fr/a-propos/' },
 };

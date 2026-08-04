@@ -57,7 +57,7 @@ export default async function PairPage({ params }: Props) {
     description: `${rec.signA} et ${rec.signB} en amour : forces, défis et conseils.`,
     url,
     datePublished: '2026-07-24',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-07-24',
     keywords: [`compatibilité amoureuse ${rec.signA.toLowerCase()} ${rec.signB.toLowerCase()}`, `${rec.signA.toLowerCase()} ${rec.signB.toLowerCase()} amour`, 'compatibilité signes astrologiques'],
   });
   const faqSchema = getFAQSchema(rec.faq.map((f) => ({ question: f.q, answer: f.a })));

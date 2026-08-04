@@ -19,7 +19,7 @@ export default function SavoirSiCestLamourPage() {
     description: 'Découvrez les signes du vrai amour grâce à la voyance et au tarot. Apprenez à distinguer l\'amour authentique de l\'attachement ou de la passion éphémère.',
     url: 'https://www.voyantlove.fr/sentiments/savoir-si-cest-lamour/',
     datePublished: '2026-03-22',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-03-22',
     keywords: ['savoir si c\'est l\'amour', 'vrai amour signes', 'est-ce de l\'amour', 'reconnaître le vrai amour', 'voyance amour'],
   });
 

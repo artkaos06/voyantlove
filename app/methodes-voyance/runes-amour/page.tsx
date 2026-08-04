@@ -7,7 +7,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
 export const metadata: Metadata = {
-  title: 'Runes Amour : Tirage et Signification pour Votre Vie Sentimentale | VoyantLove',
+  title: 'Runes Amour : Tirage et Signification pour Votre Vie Sentimentale',
   description: 'Découvrez le tirage de runes pour l\'amour. Signification des runes en amour, comment les lire pour votre vie sentimentale, et ce qu\'elles révèlent sur votre relation.',
   keywords: ['runes amour', 'tirage runes amour', 'runes signification amour', 'runes couple', 'voyance runes sentimentale'],
   alternates: { canonical: 'https://www.voyantlove.fr/methodes-voyance/runes-amour/' },
@@ -19,7 +19,7 @@ export default function RunesAmourPage() {
     description: 'Découvrez le tirage de runes pour l\'amour. Signification des runes en amour, comment les lire pour votre vie sentimentale, et ce qu\'elles révèlent sur votre relation.',
     url: 'https://www.voyantlove.fr/methodes-voyance/runes-amour/',
     datePublished: '2026-03-27',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-03-27',
     keywords: ['runes amour', 'tirage runes amour', 'runes signification amour', 'runes couple', 'voyance runes sentimentale'],
   });
 

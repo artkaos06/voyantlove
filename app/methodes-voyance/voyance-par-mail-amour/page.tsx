@@ -7,7 +7,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
 export const metadata: Metadata = {
-  title: 'Voyance par Mail Amour : Consultation Écrite Personnalisée | VoyantLove',
+  title: 'Voyance par Mail Amour : Consultation Écrite Personnalisée',
   description: 'Recevez votre consultation de voyance amoureuse par mail. Posez vos questions sur votre vie sentimentale et obtenez des réponses écrites détaillées par un voyant spécialisé.',
   keywords: ['voyance par mail amour', 'voyance gratuite par mail', 'consultation voyance par mail', 'voyant par email', 'voyance par écrit'],
   alternates: { canonical: 'https://www.voyantlove.fr/methodes-voyance/voyance-par-mail-amour/' },
@@ -19,7 +19,7 @@ export default function VoyanceParMailAmourPage() {
     description: 'Recevez votre consultation de voyance amoureuse par mail. Posez vos questions sur votre vie sentimentale et obtenez des réponses écrites détaillées par un voyant spécialisé.',
     url: 'https://www.voyantlove.fr/methodes-voyance/voyance-par-mail-amour/',
     datePublished: '2026-03-27',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-03-27',
     keywords: ['voyance par mail amour', 'voyance gratuite par mail', 'consultation voyance par mail', 'voyant par email', 'voyance par écrit'],
   });
 

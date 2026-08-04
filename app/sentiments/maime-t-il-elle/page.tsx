@@ -21,7 +21,7 @@ export default function MAimeTilEllePage() {
     description: 'Découvrez ses vrais sentiments grâce au tarot et à la voyance. M\'aime-t-il/elle vraiment ? Pense-t-il/elle à moi ? Que ressent-il/elle ?',
     url: 'https://www.voyantlove.fr/sentiments/maime-t-il-elle/',
     datePublished: '2026-01-10',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-01-10',
     keywords: ['m\'aime-t-il', 'ses sentiments', 'vrais sentiments tarot', 'pense-t-il à moi', 'décrypter sentiments'],
   });
 

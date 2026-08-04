@@ -21,7 +21,7 @@ export default function AstrologieAmoureusePage() {
     description: 'L\u2019astrologie amoureuse r\u00e9v\u00e8le votre compatibilit\u00e9 astrale, votre synastrie de couple et vos transits favorables. V\u00e9nus, Mars et les signes compatibles en amour.',
     url: 'https://www.voyantlove.fr/methodes-voyance/astrologie-amoureuse/',
     datePublished: '2026-03-03',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-03-03',
     keywords: ['astrologie amoureuse', 'compatibilit\u00e9 astrale', 'synastrie couple', 'Venus astrologie', 'signes compatibles amour'],
   });
 

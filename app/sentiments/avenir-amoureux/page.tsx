@@ -7,7 +7,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
 export const metadata: Metadata = {
-  title: 'Prédiction Amour Voyance : Votre Avenir Amoureux Révélé | VoyantLove',
+  title: 'Prédiction Amour Voyance : Votre Avenir Amoureux Révélé',
   description: 'Prédiction amour et voyance : découvrez votre avenir amoureux selon le tarot. Rencontres, évolution de couple et timeline sentimentale personnalisée.',
   keywords: ['amour prediction voyance', 'prédiction amour', 'avenir amoureux', 'futur sentimental', 'tarot avenir', 'voyance future amour'],
   alternates: { canonical: 'https://www.voyantlove.fr/sentiments/avenir-amoureux/' },
@@ -19,7 +19,7 @@ export default function AvenirAmoureuxPage() {
     description: 'Prédiction amour et voyance : découvrez votre avenir amoureux selon le tarot. Rencontres, évolution de couple et timeline sentimentale personnalisée.',
     url: 'https://www.voyantlove.fr/sentiments/avenir-amoureux/',
     datePublished: '2026-01-19',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-01-19',
     keywords: ['avenir amoureux', 'futur sentimental', 'prédiction amour', 'tarot avenir', 'voyance future amour'],
   });
 

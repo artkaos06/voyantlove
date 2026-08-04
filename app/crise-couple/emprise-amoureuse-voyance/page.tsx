@@ -7,7 +7,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
 export const metadata: Metadata = {
-  title: 'Emprise Amoureuse : Reconnaître et Se Libérer d\'un Manipulateur | VoyantLove',
+  title: 'Emprise Amoureuse : Reconnaître et Se Libérer d\'un Manipulateur',
   description: 'Vous êtes sous emprise amoureuse ou avec un manipulateur ? Découvrez les signes d\'une relation toxique, comment s\'en sortir et ce que la voyance révèle sur votre situation.',
   keywords: ['emprise amoureuse', 'relation toxique voyance', 'manipulateur amour', 'pervers narcissique voyance', 'se libérer emprise amoureuse'],
   alternates: { canonical: 'https://www.voyantlove.fr/crise-couple/emprise-amoureuse-voyance/' },
@@ -19,7 +19,7 @@ export default function EmpriseAmoureusePage() {
     description: 'Vous êtes sous emprise amoureuse ou avec un manipulateur ? Découvrez les signes d\'une relation toxique, comment s\'en sortir et ce que la voyance révèle sur votre situation.',
     url: 'https://www.voyantlove.fr/crise-couple/emprise-amoureuse-voyance/',
     datePublished: '2026-03-27',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-03-27',
     keywords: ['emprise amoureuse', 'relation toxique voyance', 'manipulateur amour', 'pervers narcissique voyance', 'se libérer emprise amoureuse'],
   });
 

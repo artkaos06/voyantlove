@@ -19,7 +19,7 @@ export default function InfideliteCouplePage() {
     description: 'Comprendre et surmonter l\'infidélité dans le couple. Guidance sur la trahison, le pardon, la reconstruction de la confiance et la seconde chance.',
     url: 'https://www.voyantlove.fr/crise-couple/infidelite-couple/',
     datePublished: '2026-02-09',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-02-09',
     keywords: ['infidélité couple', 'trahison amoureuse', 'pardon infidélité', 'surmonter tromperie', 'seconde chance couple'],
   });
 

@@ -7,7 +7,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
 export const metadata: Metadata = {
-  title: 'M\'aime-t-il ? Décrypter les Sentiments Amoureux | VoyantLove',
+  title: 'M\'aime-t-il ? Décrypter les Sentiments Amoureux',
   description: 'M\'aime-t-il vraiment ? Décryptez les sentiments amoureux, prédictions d\'avenir et compatibilité grâce au tarot et à la voyance sentimentale.',
   alternates: { canonical: 'https://www.voyantlove.fr/sentiments/' },
 };

@@ -27,7 +27,7 @@ export default function OublierSonExPage() {
     description: 'Comment surmonter une rupture et oublier son ex selon la voyance ? Découvrez le processus de guérison, le timing de reconstruction et quand vous rencontrerez à nouveau.',
     url: 'https://www.voyantlove.fr/rupture/oublier-son-ex/',
     datePublished: '2026-01-12',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-01-12',
     keywords: ['oublier son ex', 'surmonter rupture', 'chagrin d\'amour', 'guérir rupture', 'tourner la page', 'voyance rupture'],
   });
 

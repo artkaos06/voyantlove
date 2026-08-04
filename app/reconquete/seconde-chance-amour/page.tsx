@@ -19,7 +19,7 @@ export default function SecondeChancePage() {
     description: 'Faut-il donner une seconde chance en amour ? Le tarot guide votre décision pour reconstruire ou tourner la page.',
     url: 'https://www.voyantlove.fr/reconquete/seconde-chance-amour/',
     datePublished: '2026-01-18',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-01-18',
     keywords: ['seconde chance', 'nouvelle opportunité', 'pardon', 'reconstruction'],
   });
 

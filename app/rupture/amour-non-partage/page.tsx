@@ -21,7 +21,7 @@ export default function AmourNonPartagePage() {
     description: 'Comment surmonter un amour non partag\u00e9 ? D\u00e9couvrez les causes, les signes d\u2019un amour non r\u00e9ciproque, le r\u00f4le du tarot et les \u00e9tapes pour s\u2019ouvrir \u00e0 un amour v\u00e9ritable.',
     url: 'https://www.voyantlove.fr/rupture/amour-non-partage/',
     datePublished: '2026-03-03',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-03-03',
     keywords: ['amour non partag\u00e9', 'amour \u00e0 sens unique', 'amour non r\u00e9ciproque', 'surmonter rejet amoureux', 'voyance sentiments'],
   });
 

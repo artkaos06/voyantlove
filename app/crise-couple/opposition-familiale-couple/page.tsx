@@ -21,7 +21,7 @@ export default function OppositionFamilialeCouplePage() {
     description: 'Votre famille s\'oppose à votre relation ? Le tarot éclaire les causes de cette opposition et les stratégies pour préserver votre couple.',
     url: 'https://www.voyantlove.fr/crise-couple/opposition-familiale-couple/',
     datePublished: '2026-07-22',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-07-22',
     keywords: ['opposition familiale couple', 'famille contre ma relation', 'parents opposés relation voyance', 'famille désapprouve couple', 'tarot opposition familiale'],
   });
 

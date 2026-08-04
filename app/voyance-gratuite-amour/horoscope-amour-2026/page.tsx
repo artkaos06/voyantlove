@@ -22,7 +22,7 @@ export default function HoroscopeAmour2026Page() {
     description: 'Horoscope amour 2026 gratuit : prédictions sentimentales pour chaque signe. Périodes favorables, compatibilités et guidance.',
     url: 'https://www.voyantlove.fr/voyance-gratuite-amour/horoscope-amour-2026/',
     datePublished: '2026-03-10',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-03-10',
     keywords: ['horoscope amour 2026', 'horoscope amour gratuit', 'prédictions amoureuses 2026'],
   });
 

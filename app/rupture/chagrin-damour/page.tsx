@@ -19,7 +19,7 @@ export default function ChagrinAmourPage() {
     description: 'Comment surmonter un chagrin d\'amour avec la voyance ? Processus de guérison, timing de reconstruction et retrouver la joie de vivre.',
     url: 'https://www.voyantlove.fr/rupture/chagrin-damour/',
     datePublished: '2026-01-13',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-01-13',
     keywords: ['chagrin d\'amour', 'peine de cœur', 'cœur brisé', 'guérir chagrin', 'surmonter peine'],
   });
 

@@ -21,7 +21,7 @@ export default function SentimentsPeuventIlsRevenirCouplePage() {
     description: 'Perte de sentiments annoncée : peuvent-ils revenir ? Conditions réelles de reconnexion, faux signes à éviter et comportements qui éloignent davantage.',
     url: 'https://www.voyantlove.fr/reconquete/sentiments-peuvent-ils-revenir-couple/',
     datePublished: '2026-07-29',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-07-29',
     keywords: ['les sentiments peuvent-ils revenir dans un couple', 'ma femme dit ne plus avoir de sentiments', 'est-ce que l\'amour peut renaître dans un couple', 'perte de sentiments reconnexion', 'attachement familial ou amour'],
   });
 

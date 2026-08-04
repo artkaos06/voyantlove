@@ -21,7 +21,7 @@ export default function VivreMemeToitApresSeparationPage() {
     description: 'Contraint(e) de cohabiter avec votre ex après la rupture ? Limites affectives, communication et organisation concrète pour sortir de l\'ambiguïté au quotidien.',
     url: 'https://www.voyantlove.fr/crise-couple/vivre-meme-toit-apres-separation/',
     datePublished: '2026-07-29',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-07-29',
     keywords: ['vivre sous le même toit après une séparation', 'rester amis après rupture et cohabiter', 'séparation sans pouvoir déménager', 'cohabiter avec son ex', 'limites affectives cohabitation'],
   });
 

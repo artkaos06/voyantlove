@@ -21,7 +21,7 @@ export default function RevoirSonExPage() {
     description: 'Vous allez revoir votre ex après la rupture ? Comment clarifier votre intention, gérer l\'émotion, vous comporter le jour J et interpréter ce que vous ressentez ensuite.',
     url: 'https://www.voyantlove.fr/reconquete/revoir-son-ex/',
     datePublished: '2026-07-29',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-07-29',
     keywords: ['revoir son ex après une rupture', 'comment se comporter en revoyant son ex', 'revoir son ex fait mal', 'faut-il revoir son ex', 'premier rendez-vous avec son ex'],
   });
 

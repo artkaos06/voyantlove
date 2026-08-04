@@ -19,7 +19,7 @@ export default function ExQuiRevientPage() {
     description: 'Votre ex est revenu ? Découvrez que faire selon le tarot. Faut-il donner une seconde chance ?',
     url: 'https://www.voyantlove.fr/reconquete/ex-qui-revient/',
     datePublished: '2026-01-17',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-01-17',
     keywords: ['ex qui revient', 'seconde chance', 'retrouvailles'],
   });
 

@@ -6,7 +6,7 @@ import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
 export const metadata: Metadata = {
-  title: 'Voyance Amour : Consultation Voyant & Voyante Amour Sp\u00e9cialis\u00e9 | VoyantLove',
+  title: 'Voyance Amour : Consultation Voyant & Voyante Amour Sp\u00e9cialis\u00e9',
   description: 'Voyance amour : consultation avec un voyant ou une voyante sp\u00e9cialis\u00e9 en questions sentimentales. Couple, reconqu\u00eate, rupture, rencontre \u2014 guidance tarot, astrologie et clairvoyance.',
   keywords: ['voyance amour', 'voyant amour', 'voyante amour', 'voyance amoureuse', 'voyance en amour', 'consultation voyance amour', 'voyance amour couple', 'voyance relation amoureuse', 'voyance amour avis'],
   alternates: { canonical: 'https://www.voyantlove.fr/voyance-amour/' },

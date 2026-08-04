@@ -19,7 +19,7 @@ export default function RuptureAmoureusePage() {
     description: 'Comprendre les raisons d\'une rupture amoureuse et guérir selon le tarot. Processus de deuil, timing et reconstruction après séparation.',
     url: 'https://www.voyantlove.fr/rupture/rupture-amoureuse/',
     datePublished: '2026-01-11',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-01-11',
     keywords: ['rupture amoureuse', 'séparation', 'fin relation', 'deuil amoureux', 'surmonter rupture'],
   });
 

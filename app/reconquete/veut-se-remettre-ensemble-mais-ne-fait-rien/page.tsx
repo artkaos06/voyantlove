@@ -21,7 +21,7 @@ export default function VeutSeRemettreEnsembleMaisNeFaitRienPage() {
     description: 'Il/elle dit vouloir se remettre ensemble mais ne fait aucun effort ? Distinguez une vraie volonté de reconstruire d\'un simple lien entretenu, grâce à un cadre paroles contre actes.',
     url: 'https://www.voyantlove.fr/reconquete/veut-se-remettre-ensemble-mais-ne-fait-rien/',
     datePublished: '2026-07-28',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-07-28',
     keywords: ['il veut se remettre ensemble mais ne fait rien', 'il veut revenir mais ne fait aucun effort', 'mon ex parle de réconciliation mais ne revient pas', 'séparation sans décision depuis des mois', 'comment savoir s\'il veut vraiment reconstruire notre couple'],
   });
 

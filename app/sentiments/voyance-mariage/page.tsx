@@ -7,7 +7,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
 export const metadata: Metadata = {
-  title: 'Voyance Mariage : Vais-Je Me Marier ? Avec Qui ? | VoyantLove',
+  title: 'Voyance Mariage : Vais-Je Me Marier ? Avec Qui ?',
   description: 'Vous vous demandez si et quand vous allez vous marier ? La voyance mariage révèle les prédictions sur votre union, la demande en mariage et votre futur conjoint.',
   keywords: ['voyance mariage', 'vais-je me marier', 'quand vais-je me marier', 'prédiction mariage', 'voyance union'],
   alternates: { canonical: 'https://www.voyantlove.fr/sentiments/voyance-mariage/' },
@@ -19,7 +19,7 @@ export default function VoyanceMariagePage() {
     description: 'Vous vous demandez si et quand vous allez vous marier ? La voyance mariage révèle les prédictions sur votre union, la demande en mariage et votre futur conjoint.',
     url: 'https://www.voyantlove.fr/sentiments/voyance-mariage/',
     datePublished: '2026-03-27',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-03-27',
     keywords: ['voyance mariage', 'vais-je me marier', 'quand vais-je me marier', 'prédiction mariage', 'voyance union'],
   });
 

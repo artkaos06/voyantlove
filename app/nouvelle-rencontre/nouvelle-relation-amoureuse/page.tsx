@@ -19,7 +19,7 @@ export default function NouvelleRelationAmourseusePage() {
     description: 'Tout savoir sur les premiers mois d\'une nouvelle relation amoureuse. Étapes clés, erreurs à éviter, construire des fondations solides et signes d\'une relation saine.',
     url: 'https://www.voyantlove.fr/nouvelle-rencontre/nouvelle-relation-amoureuse/',
     datePublished: '2026-02-09',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-02-09',
     keywords: ['nouvelle relation amoureuse', 'début relation', 'premiers mois couple', 'construire relation', 'nouvelle histoire amour'],
   });
 

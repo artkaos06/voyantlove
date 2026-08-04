@@ -19,7 +19,7 @@ export default function VoyanceParChatAmourPage() {
     description: 'Voyance par chat amour : consultez un voyant en ligne par messagerie pour vos questions sentimentales. Discret, rapide et accessible 24h/24.',
     url: 'https://www.voyantlove.fr/methodes-voyance/voyance-par-chat-amour/',
     datePublished: '2026-03-22',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-03-22',
     keywords: ['voyance chat amour', 'voyance en ligne', 'consultation chat voyance', 'voyance par messagerie', 'chat voyant amour'],
   });
 

@@ -21,7 +21,7 @@ export default function ExRefaitSaViePage() {
     description: 'Votre ex est déjà avec quelqu\'un ou semble passé à autre chose ? Ce que cela prouve (ou pas), pourquoi ça fait si mal, et comment retrouver votre équilibre sans mettre votre vie en pause.',
     url: 'https://www.voyantlove.fr/rupture/ex-refait-sa-vie/',
     datePublished: '2026-07-29',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-07-29',
     keywords: ['mon ex refait sa vie', 'mon ex est déjà avec quelqu\'un', 'mon ex est passé à autre chose', 'accepter que mon ex refasse sa vie', 'mon ex a quelqu\'un d\'autre'],
   });
 

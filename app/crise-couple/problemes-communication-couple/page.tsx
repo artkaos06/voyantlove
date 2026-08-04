@@ -19,7 +19,7 @@ export default function ProblemesCommunicationCouplePage() {
     description: 'Communication couple difficile ? Problème de communication dans le couple, dialogue impossible, incompréhension : causes profondes, solutions concrètes et guidance voyance.',
     url: 'https://www.voyantlove.fr/crise-couple/problemes-communication-couple/',
     datePublished: '2026-02-09',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-02-09',
     keywords: ['problème de communication couple', 'communication couple difficile', 'problème de communication dans le couple', 'dialogue couple', 'incompréhension couple'],
   });
 

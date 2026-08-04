@@ -21,7 +21,7 @@ export default function GuerirRupturePage() {
     description: 'Comment gu\u00e9rir d\u2019une rupture amoureuse ? D\u00e9couvrez les 5 \u00e9tapes du deuil amoureux, le temps de gu\u00e9rison, les signes de reconstruction et le r\u00f4le du tarot.',
     url: 'https://www.voyantlove.fr/rupture/guerir-rupture/',
     datePublished: '2026-03-03',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-03-03',
     keywords: ['gu\u00e9rir rupture', 'temps gu\u00e9rison rupture', 'reconstruction apr\u00e8s rupture', 'surmonter s\u00e9paration', 'cicatrisation amoureuse'],
   });
 

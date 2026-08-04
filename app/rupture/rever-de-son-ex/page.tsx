@@ -21,7 +21,7 @@ export default function ReverDeSonExPage() {
     description: 'Rêver de son ex qui revient, qui vous ignore, qui vous embrasse : ce que ces rêves peuvent révéler sur votre monde intérieur — et ce qu\'ils ne prédisent pas.',
     url: 'https://www.voyantlove.fr/rupture/rever-de-son-ex/',
     datePublished: '2026-07-29',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-07-29',
     keywords: ['rêver de son ex', 'rêver de son ex signification', 'rêver de son ex qui revient', 'rêver de son ex qui nous ignore', 'rêver de son ex qui nous embrasse'],
   });
 

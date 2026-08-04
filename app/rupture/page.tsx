@@ -7,7 +7,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
 export const metadata: Metadata = {
-  title: 'Voyance Rupture Amoureuse : Comprendre, Surmonter et Guérir | VoyantLove',
+  title: 'Voyance Rupture Amoureuse : Comprendre, Surmonter et Guérir',
   description: 'Voyance rupture amoureuse : comprenez les causes, surmontez le chagrin et découvrez votre avenir sentimental selon le tarot. Guidance personnalisée.',
   alternates: { canonical: 'https://www.voyantlove.fr/rupture/' },
 };

@@ -7,7 +7,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
 export const metadata: Metadata = {
-  title: "Voyance Célibat : Quand Vais-Je Trouver l'Amour ? | VoyantLove",
+  title: "Voyance Célibat : Quand Vais-Je Trouver l'Amour ?",
   description: "Vous êtes célibataire et cherchez à savoir quand l'amour va arriver. Voyance célibat : découvrez les signes, les blocages et les prédictions pour trouver l'amour.",
   keywords: ['voyance célibat', 'quand vais-je trouver l amour', 'voyance trouver l amour', 'célibataire voyance', 'blocage amoureux voyance'],
   alternates: { canonical: 'https://www.voyantlove.fr/nouvelle-rencontre/voyance-celibat-trouver-lamour/' },
@@ -19,7 +19,7 @@ export default function VoyanceCelibatPage() {
     description: "Vous êtes célibataire et cherchez à savoir quand l'amour va arriver. Voyance célibat : découvrez les signes, les blocages et les prédictions pour trouver l'amour.",
     url: 'https://www.voyantlove.fr/nouvelle-rencontre/voyance-celibat-trouver-lamour/',
     datePublished: '2026-03-27',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-03-27',
     keywords: ['voyance célibat', 'quand vais-je trouver l amour', 'voyance trouver l amour', 'célibataire voyance', 'blocage amoureux voyance'],
   });
 

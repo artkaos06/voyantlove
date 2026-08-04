@@ -21,7 +21,7 @@ export default function PenduleAmourPage() {
     description: 'D\u00e9couvrez le pendule amour : r\u00e9ponses oui/non instantan\u00e9es, radi\u00e9sth\u00e9sie amoureuse et guidance sentimentale. Guide complet du pendule divinatoire pour les questions d\u2019amour.',
     url: 'https://www.voyantlove.fr/methodes-voyance/pendule-amour/',
     datePublished: '2026-03-07',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-03-07',
     keywords: ['pendule amour', 'radi\u00e9sth\u00e9sie amoureuse', 'pendule divinatoire', 'voyance pendule', 'pendule oui non amour'],
   });
 
@@ -210,7 +210,7 @@ export default function PenduleAmourPage() {
 
             <div className="bg-pink-50 rounded-lg p-4 border-l-4 border-pink-400">
               <h3 className="font-bold text-pink-700 mb-1">2. &laquo;&nbsp;Va-t-il/elle revenir ?&nbsp;&raquo;</h3>
-              <p className="text-gray-700 text-sm">Apr&egrave;s une <strong>rupture</strong>, cette question hante les c&oelig;urs bris&eacute;s. Le <strong>pendule</strong> capte les &eacute;nergies de retour et le potentiel de <strong>reconqu&ecirc;te</strong>. Consultez &eacute;galement <Link href="/reconquete/va-t-il-elle-revenir" className="text-rose-600 hover:text-rose-800 underline font-medium">Va-t-il/elle revenir ?</Link></p>
+              <p className="text-gray-700 text-sm">Apr&egrave;s une <strong>rupture</strong>, cette question hante les c&oelig;urs bris&eacute;s. Le <strong>pendule</strong> capte les &eacute;nergies de retour et le potentiel de <strong>reconqu&ecirc;te</strong>. Consultez &eacute;galement <Link href="/reconquete/va-t-il-elle-revenir" className="text-rose-600 hover:text-rose-800 underline font-medium">Va-t-il/elle revenir ?</Link> Si votre question porte sp&eacute;cifiquement sur la reconqu&ecirc;te et le retour d&apos;un ex, notre guide d&eacute;di&eacute; au <Link href="/reconquete/pendule-retour-amour" className="text-rose-600 hover:text-rose-800 underline font-medium">pendule pour faire revenir une personne</Link> d&eacute;taille la m&eacute;thode et ses limites.</p>
             </div>
 
             <div className="bg-fuchsia-50 rounded-lg p-4 border-l-4 border-fuchsia-400">

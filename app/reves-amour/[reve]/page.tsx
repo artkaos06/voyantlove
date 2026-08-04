@@ -45,7 +45,7 @@ export default async function DreamPage({ params }: Props) {
     description: `${d.primaryQuery} : interprétation symbolique, ce que ce rêve reflète et ce qu'il ne prédit pas.`,
     url,
     datePublished: '2026-07-29',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-07-29',
     keywords: [d.primaryQuery.toLowerCase(), `${d.titre.toLowerCase()} signification`, 'interprétation des rêves amour', 'signification rêve amour'],
   });
   const faqSchema = getFAQSchema(d.faq.map((f) => ({ question: f.q, answer: f.a })));

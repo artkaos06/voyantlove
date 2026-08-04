@@ -21,7 +21,7 @@ export default function VoyanceTchatGratuitAmourPage() {
     description: 'Voyance gratuite par tchat amour : guide pour une consultation sentimentale fiable. Préparez vos questions, évitez les pièges.',
     url: 'https://www.voyantlove.fr/voyance-gratuite-amour/voyance-tchat-gratuit-amour/',
     datePublished: '2026-03-10',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-03-10',
     keywords: ['voyance tchat gratuit amour', 'voyance gratuite par tchat amour', 'voyance gratuite immediate amour'],
   });
 

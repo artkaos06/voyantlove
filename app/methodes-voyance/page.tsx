@@ -7,15 +7,15 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
 export const metadata: Metadata = {
-  title: 'Voyance Sentimentale : Tarot, Pendule, Oracle et Astrologie | VoyantLove',
-  description: 'Voyance sentimentale et amoureuse : toutes les méthodes (tarot, pendule, oracle, astrologie, numérologie) pour éclairer votre vie de couple et prédire votre avenir.',
+  title: 'Méthodes de Voyance Amoureuse : Tarot, Pendule, Oracle et Astrologie',
+  description: 'Toutes les méthodes de voyance amoureuse expliquées : tarot, pendule, oracle, astrologie, numérologie. Comparez les approches pour choisir celle qui correspond à votre question sentimentale.',
   alternates: { canonical: 'https://www.voyantlove.fr/methodes-voyance/' },
 };
 
 export default function MethodesVoyanceHubPage() {
   const webPageSchema = getWebPageSchema({
-    title: 'Voyance Sentimentale : Tarot, Pendule, Oracle et Astrologie | VoyantLove',
-    description: 'Voyance sentimentale et amoureuse : toutes les méthodes (tarot, pendule, oracle, astrologie, numérologie) pour éclairer votre vie de couple et prédire votre avenir.',
+    title: 'Méthodes de Voyance Amoureuse : Tarot, Pendule, Oracle et Astrologie | VoyantLove',
+    description: 'Toutes les méthodes de voyance amoureuse expliquées : tarot, pendule, oracle, astrologie, numérologie. Comparez les approches pour choisir celle qui correspond à votre question sentimentale.',
     url: 'https://www.voyantlove.fr/methodes-voyance/',
   });
 
@@ -64,6 +64,15 @@ export default function MethodesVoyanceHubPage() {
 
       <div className="max-w-6xl mx-auto px-4 py-12">
         <EEATSignal colorScheme="purple" method="Tarot, oracle et astrologie amoureuse" />
+
+        <div className="bg-pink-50 border-l-4 border-pink-500 rounded-lg p-6 mb-8">
+          <p className="text-gray-800 leading-relaxed">
+            <strong>Vous cherchez spécifiquement une voyance sentimentale ?</strong> Cette page présente l&apos;ensemble des méthodes de voyance amoureuse (tarot, oracle, astrologie, pendule...). Pour une guidance centrée uniquement sur vos sentiments, votre couple et votre avenir amoureux, consultez notre page dédiée{' '}
+            <Link href="/methodes-voyance/voyance-sentimentale" className="text-pink-700 hover:text-pink-900 underline font-semibold">
+              Voyance Sentimentale
+            </Link>.
+          </p>
+        </div>
 
         <VoyantQuickCTA topic="methodes-voyance" source="methodes-voyance-hub-early" />
 

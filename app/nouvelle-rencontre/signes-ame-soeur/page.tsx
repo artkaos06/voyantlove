@@ -19,7 +19,7 @@ export default function SignesAmeSoeurPage() {
     description: 'Découvrez les 15 signes infaillibles de l\'âme sœur selon le tarot et la spiritualité. Connexion instantanée, synchronicités, reconnaissance karmique et union des flammes jumelles.',
     url: 'https://www.voyantlove.fr/nouvelle-rencontre/signes-ame-soeur/',
     datePublished: '2026-02-09',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-02-09',
     keywords: ['âme sœur signes', 'reconnaître âme sœur', 'connexion karmique', 'flammes jumelles', 'signes amour véritable'],
   });
 

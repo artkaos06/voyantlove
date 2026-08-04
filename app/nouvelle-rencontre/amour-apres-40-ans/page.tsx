@@ -19,7 +19,7 @@ export default function AmourApres40AnsPage() {
     description: 'D&eacute;couvrez comment trouver l\'amour apr&egrave;s 40 ans gr&acirc;ce &agrave; la voyance amoureuse, le tarot et la guidance sentimentale. Maturit&eacute;, timing, opportunit&eacute;s et conseils pour une rencontre tardive &eacute;panouissante.',
     url: 'https://www.voyantlove.fr/nouvelle-rencontre/amour-apres-40-ans/',
     datePublished: '2026-03-07',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-03-07',
     keywords: ['amour apr&egrave;s 40 ans', 'rencontre tardive', 'voyance amoureuse 40 ans', 'trouver amour maturit&eacute;', 'guidance sentimentale', 'tarot amoureux', '&acirc;me s&oelig;ur apr&egrave;s 40 ans'],
   });
 

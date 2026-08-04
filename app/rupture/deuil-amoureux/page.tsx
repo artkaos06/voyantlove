@@ -21,7 +21,7 @@ export default function DeuilAmoureuxPage() {
     description: 'Comment traverser un deuil amoureux ? D\u00e9couvrez les phases du deuil sentimental, la diff\u00e9rence avec une rupture classique, le r\u00f4le du tarot et les cl\u00e9s de la renaissance.',
     url: 'https://www.voyantlove.fr/rupture/deuil-amoureux/',
     datePublished: '2026-03-07',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-03-07',
     keywords: ['deuil amoureux', 'perte amoureuse', 'processus de deuil', 'gu\u00e9rison sentimentale', 'deuil sentimental', 'renaissance apr\u00e8s deuil amoureux'],
   });
 

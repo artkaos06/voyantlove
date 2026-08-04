@@ -19,7 +19,7 @@ export default function LettreASonExPage() {
     description: 'Comment écrire une lettre à son ex pour reconquérir son amour ? Découvrez les conseils de la voyance pour rédiger un message sincère et toucher son cœur.',
     url: 'https://www.voyantlove.fr/reconquete/lettre-a-son-ex/',
     datePublished: '2026-03-22',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-03-22',
     keywords: ['lettre à son ex', 'message reconquête', 'écrire à son ex', 'lettre reconquête amoureuse', 'message ex'],
   });
 

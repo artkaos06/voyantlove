@@ -19,7 +19,7 @@ export default function FlammeJumellePage() {
     description: 'Découvrez les signes de la flamme jumelle selon le tarot et la spiritualité. Différence avec l\'âme sœur, étapes de la relation, séparation et retrouvailles karmiques.',
     url: 'https://www.voyantlove.fr/nouvelle-rencontre/flamme-jumelle/',
     datePublished: '2026-02-09',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-02-09',
     keywords: ['flamme jumelle', 'flamme jumelle signes', 'reconnaître flamme jumelle', 'flamme jumelle voyance', 'différence âme sœur flamme jumelle'],
   });
 

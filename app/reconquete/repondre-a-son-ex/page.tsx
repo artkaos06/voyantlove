@@ -21,7 +21,7 @@ export default function RepondreASonExPage() {
     description: 'Votre ex vous recontacte : faut-il répondre, comment, et quand se taire ? Un cadre pour décider selon vos objectifs, sans vous précipiter ni décoder chaque message.',
     url: 'https://www.voyantlove.fr/reconquete/repondre-a-son-ex/',
     datePublished: '2026-07-29',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-07-29',
     keywords: ['faut-il répondre à son ex', 'mon ex me recontacte que faire', 'comment répondre à son ex', 'mon ex m\'envoie un message', 'répondre ou ignorer son ex'],
   });
 

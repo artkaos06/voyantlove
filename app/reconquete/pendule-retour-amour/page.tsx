@@ -7,7 +7,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
 export const metadata: Metadata = {
-  title: 'Pendule pour Faire Revenir une Personne : Guide et Limites | VoyantLove',
+  title: 'Pendule pour Faire Revenir une Personne : Guide et Limites',
   description: 'Pendule pour faire revenir une personne : comment ça marche vraiment, formulation des questions, signaux à observer. Guide honnête sur l\'usage du pendule en reconquête.',
   keywords: ['pendule pour faire revenir une personne', 'pendule retour ex', 'pendule reconquête', 'pendule pour ex', 'pendule amour retour', 'pendule retour amour'],
   alternates: {
@@ -21,7 +21,7 @@ export default function PenduleRetourAmourPage() {
     description: 'Pendule pour faire revenir une personne : comment ça marche vraiment, formulation des questions, signaux à observer. Guide honnête sur l\'usage du pendule en reconquête.',
     url: 'https://www.voyantlove.fr/reconquete/pendule-retour-amour/',
     datePublished: '2026-05-12',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-05-12',
     keywords: ['pendule pour faire revenir une personne', 'pendule retour ex', 'pendule reconquête', 'pendule amour retour'],
   });
 

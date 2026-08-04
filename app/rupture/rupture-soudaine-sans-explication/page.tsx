@@ -21,7 +21,7 @@ export default function RuptureSoudaineSansExplicationPage() {
     description: 'Rupture ou demande de divorce soudaine, sans explication claire ? Une grille de lecture pour distinguer les faits, les hypothèses et les questions à poser.',
     url: 'https://www.voyantlove.fr/rupture/rupture-soudaine-sans-explication/',
     datePublished: '2026-07-29',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-07-29',
     keywords: ['rupture soudaine sans explication', 'pourquoi il me quitte du jour au lendemain', 'mon mari veut divorcer sans explication', 'séparation brutale après une longue relation', 'il ne veut pas expliquer notre rupture'],
   });
 

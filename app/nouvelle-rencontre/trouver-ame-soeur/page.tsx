@@ -19,7 +19,7 @@ export default function TrouverAmeSoeurPage() {
     description: 'Comment trouver votre âme sœur selon le tarot et la destinée. Signes de reconnaissance, timing, préparation intérieure et guidance spirituelle complète.',
     url: 'https://www.voyantlove.fr/nouvelle-rencontre/trouver-ame-soeur/',
     datePublished: '2026-01-19',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-01-19',
     keywords: ['trouver âme sœur', 'âme sœur tarot', 'connexion âme', 'flamme jumelle', 'destin amoureux'],
   });
 

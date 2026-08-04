@@ -22,7 +22,7 @@ export default function OracleGratuitAmourPage() {
     description: 'Oracle amour gratuit : guidance sentimentale par Oracle Belline, Gé et des Anges. Quel oracle pour votre question amoureuse ?',
     url: 'https://www.voyantlove.fr/voyance-gratuite-amour/oracle-gratuit-amour/',
     datePublished: '2026-03-10',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-03-10',
     keywords: ['oracle gratuit amour', 'oracle amour gratuit', 'oracle belline amour gratuit'],
   });
 

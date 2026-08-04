@@ -21,7 +21,7 @@ export default function SignesReseauxSociauxApresRupturePage() {
     description: 'Photos supprimées, nom modifié, désabonnement, stories regardées : une matrice d\'interprétation des signaux numériques après une rupture — ce qu\'ils peuvent dire et ce qu\'ils ne prouvent pas.',
     url: 'https://www.voyantlove.fr/rupture/signes-reseaux-sociaux-apres-rupture/',
     datePublished: '2026-07-28',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-07-28',
     keywords: ['signes réseaux sociaux après rupture', 'mon ex a supprimé nos photos', 'mon ex regarde toutes mes stories', 'mon ex ne me suit plus sur Instagram', 'interpréter le silence de son ex'],
   });
 

@@ -7,7 +7,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
 export const metadata: Metadata = {
-  title: 'Voyance Divorce : Traverser la Séparation et Retrouver l\'Amour | VoyantLove',
+  title: 'Voyance Divorce : Traverser la Séparation et Retrouver l\'Amour',
   description: 'Vous traversez un divorce ou une séparation difficile ? La voyance vous aide à voir l\'avenir après la rupture conjugale, à comprendre les causes et à vous reconstruire.',
   keywords: ['voyance divorce', 'voyance séparation couple', 'divorce avenir amoureux', 'après divorce rencontre', 'voyant divorce'],
   alternates: { canonical: 'https://www.voyantlove.fr/rupture/voyance-divorce-separation/' },
@@ -19,7 +19,7 @@ export default function VoyanceDivorceSeparationPage() {
     description: 'Vous traversez un divorce ou une séparation difficile ? La voyance vous aide à voir l\'avenir après la rupture conjugale, à comprendre les causes et à vous reconstruire.',
     url: 'https://www.voyantlove.fr/rupture/voyance-divorce-separation/',
     datePublished: '2026-03-27',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-03-27',
     keywords: ['voyance divorce', 'voyance séparation couple', 'divorce avenir amoureux', 'après divorce rencontre', 'voyant divorce'],
   });
 

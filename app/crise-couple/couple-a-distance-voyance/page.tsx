@@ -7,7 +7,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
 export const metadata: Metadata = {
-  title: 'Couple à Distance : Voyance et Conseils pour Durer | VoyantLove',
+  title: 'Couple à Distance : Voyance et Conseils pour Durer',
   description: 'Votre couple est séparé géographiquement ? La voyance couple à distance révèle si votre relation peut durer, quand vous retrouverez et comment maintenir le lien à distance.',
   keywords: ['couple à distance voyance', 'relation longue distance amour', 'amour à distance voyant', 'voyance séparation géographique', 'couple distance durer'],
   alternates: { canonical: 'https://www.voyantlove.fr/crise-couple/couple-a-distance-voyance/' },
@@ -19,7 +19,7 @@ export default function CoupleADistancePage() {
     description: 'Votre couple est séparé géographiquement ? La voyance couple à distance révèle si votre relation peut durer, quand vous retrouverez et comment maintenir le lien à distance.',
     url: 'https://www.voyantlove.fr/crise-couple/couple-a-distance-voyance/',
     datePublished: '2026-03-27',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-03-27',
     keywords: ['couple à distance voyance', 'relation longue distance amour', 'amour à distance voyant', 'voyance séparation géographique', 'couple distance durer'],
   });
 

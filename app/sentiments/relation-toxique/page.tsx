@@ -27,7 +27,7 @@ export default function RelationToxiquePage() {
     description: 'Identifiez les 10 signes d\u2019une relation toxique et lib\u00e9rez-vous gr\u00e2ce \u00e0 la voyance amoureuse. Tarot de lib\u00e9ration, manipulation \u00e9motionnelle, reconstruction apr\u00e8s toxicit\u00e9.',
     url: 'https://www.voyantlove.fr/sentiments/relation-toxique/',
     datePublished: '2026-03-07',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-03-07',
     keywords: ['relation toxique', 'signes relation toxique', 'manipulation \u00e9motionnelle', 'd\u00e9pendance affective', 'lib\u00e9ration relation toxique', 'voyance amoureuse', 'tarot lib\u00e9ration'],
   });
 

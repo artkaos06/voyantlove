@@ -21,7 +21,7 @@ export default function DoisJeAttendreSonRetourPage() {
     description: 'Faut-il attendre le retour de votre ex ? Le tarot révèle les signes qui indiquent si l\'attente en vaut la peine, et combien de temps patienter.',
     url: 'https://www.voyantlove.fr/reconquete/dois-je-attendre-son-retour/',
     datePublished: '2026-07-22',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-07-22',
     keywords: ['dois-je attendre mon ex', 'faut-il attendre son retour', 'attendre le retour voyance', 'combien de temps attendre ex', 'tarot attente reconquête'],
   });
 

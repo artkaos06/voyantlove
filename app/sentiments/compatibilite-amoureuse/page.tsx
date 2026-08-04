@@ -21,7 +21,7 @@ export default function CompatibiliteAmoureusePage() {
     description: 'Analyse de compatibilit\u00e9 amoureuse par le tarot et l\u2019astrologie. Synastrie, \u00e2me s\u0153ur, flamme jumelle : d\u00e9couvrez si vous \u00eates vraiment compatibles.',
     url: 'https://www.voyantlove.fr/sentiments/compatibilite-amoureuse/',
     datePublished: '2026-02-09',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-02-09',
     keywords: ['compatibilit\u00e9 amoureuse', 'compatibilit\u00e9 couple voyance', 'synastrie amoureuse', 'sommes-nous faits l\'un pour l\'autre', 'compatibilit\u00e9 astrale'],
   });
 

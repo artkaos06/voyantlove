@@ -21,7 +21,7 @@ export default function DifferenceAgeCouplePage() {
     description: 'Une grande différence d\'âge dans votre couple ? Le tarot éclaire les défis réels et le potentiel de compatibilité durable de votre relation.',
     url: 'https://www.voyantlove.fr/crise-couple/difference-age-couple/',
     datePublished: '2026-07-22',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-07-22',
     keywords: ['différence d\'âge couple voyance', 'grand écart âge relation', 'compatibilité âge tarot', 'couple différence âge importante', 'relation écart âge'],
   });
 

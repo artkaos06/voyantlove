@@ -21,7 +21,7 @@ export default function VoyanceTelephoneAmourPage() {
     description: 'D\u00e9couvrez la voyance par t\u00e9l\u00e9phone pour l\u2019amour : consultation sentimentale imm\u00e9diate, guidance amoureuse \u00e0 distance, voyant sp\u00e9cialis\u00e9 en questions de c\u0153ur. Disponible 24h/24.',
     url: 'https://www.voyantlove.fr/methodes-voyance/voyance-telephone-amour/',
     datePublished: '2026-03-07',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-03-07',
     keywords: ['voyance par t\u00e9l\u00e9phone amour', 'consultation sentimentale t\u00e9l\u00e9phone', 'voyant amour t\u00e9l\u00e9phone', 'voyance amoureuse \u00e0 distance', 'guidance amoureuse t\u00e9l\u00e9phonique'],
   });
 

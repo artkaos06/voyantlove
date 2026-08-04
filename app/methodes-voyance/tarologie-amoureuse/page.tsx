@@ -7,7 +7,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
 export const metadata: Metadata = {
-  title: 'Tarologie Amoureuse : L\'Art de Lire les Cartes de l\'Amour | VoyantLove',
+  title: 'Tarologie Amoureuse : L\'Art de Lire les Cartes de l\'Amour',
   description: 'Tarologie amoureuse : l\'art de lire le tarot pour les questions sentimentales. Découvrez les tirages, les arcanes clés et comment choisir un tarologue spécialisé en amour.',
   keywords: ['tarologie amoureuse', 'tarologie amour', 'tarologue amour', 'tarologie sentimentale', 'lecture tarot amour', 'tarologue spécialisé amour'],
   alternates: {
@@ -21,7 +21,7 @@ export default function TarologieAmoureusePage() {
     description: 'Tarologie amoureuse : l\'art de lire le tarot pour les questions sentimentales. Découvrez les tirages, les arcanes clés et comment choisir un tarologue spécialisé en amour.',
     url: 'https://www.voyantlove.fr/methodes-voyance/tarologie-amoureuse/',
     datePublished: '2026-05-12',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-05-12',
     keywords: ['tarologie amoureuse', 'tarologie amour', 'tarologue amour', 'tarologie sentimentale'],
   });
 

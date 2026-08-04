@@ -22,7 +22,7 @@ export default function TarotAmourGratuitPage() {
     description: 'Tirage de tarot amour gratuit : comprendre les arcanes, interpréter votre situation sentimentale et préparer une consultation.',
     url: 'https://www.voyantlove.fr/voyance-gratuite-amour/tarot-amour-gratuit/',
     datePublished: '2026-03-10',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-03-10',
     keywords: ['tarot amour gratuit', 'tarot gratuit amour', 'tirage tarot gratuit amour'],
   });
 

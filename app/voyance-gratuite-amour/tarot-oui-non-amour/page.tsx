@@ -8,7 +8,7 @@ import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 import TarotOuiNon from '@/components/TarotOuiNon';
 
 export const metadata: Metadata = {
-  title: 'Tarot Oui Non Amour Gratuit — Tirage Immédiat en Ligne | VoyantLove',
+  title: 'Tarot Oui Non Amour Gratuit — Tirage Immédiat en Ligne',
   description: 'Tirage tarot oui non amour gratuit et sérieux. Posez votre question sentimentale et obtenez une réponse immédiate : oui, non ou peut-être. Tirage en ligne.',
   keywords: ['tarot oui non amour', 'tarot oui non amour gratuit', 'tarot oui non sérieux', 'tirage oui non amour', 'tarot amour oui non gratuit'],
   alternates: {
@@ -22,7 +22,7 @@ export default function TarotOuiNonAmourPage() {
     description: 'Tirage tarot oui non amour gratuit et sérieux. Posez votre question sentimentale et obtenez une réponse immédiate : oui, non ou peut-être. Tirage en ligne.',
     url: 'https://www.voyantlove.fr/voyance-gratuite-amour/tarot-oui-non-amour/',
     datePublished: '2026-03-10',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-03-10',
     keywords: ['tarot oui non amour', 'tarot ni oui ni non', 'tarot oui non gratuit amour', 'voyance oui non amour', 'tarot amour oui non'],
   });
 

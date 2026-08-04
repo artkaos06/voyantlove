@@ -19,7 +19,7 @@ export default function ExRevientSilenceRadioPage() {
     description: 'Il ou elle vous recontacte après le silence radio ? Signes qu\'un ex revient, comment réagir, quel message envoyer. Guide complet pour ne pas tout gâcher.',
     url: 'https://www.voyantlove.fr/reconquete/ex-revient-silence-radio/',
     datePublished: '2026-02-09',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-02-09',
     keywords: ['il me recontacte après silence radio', 'elle me recontacte après silence radio', 'ex qui revient après silence radio', 'homme qui revient après silence', 'silence radio reconquête'],
   });
 

@@ -21,7 +21,7 @@ export default function VaTilRevenirPage() {
     description: 'Votre ex va-t-il/elle revenir ? Le tarot répond à cette question cruciale. Découvrez les signes de retour, le timing probable et ce qu\'il/elle ressent vraiment.',
     url: 'https://www.voyantlove.fr/reconquete/va-t-il-elle-revenir/',
     datePublished: '2026-01-14',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-01-14',
     keywords: ['va-t-il revenir', 'mon ex va revenir', 'retour ex tarot', 'prédiction retour', 'signes retour ex'],
   });
 

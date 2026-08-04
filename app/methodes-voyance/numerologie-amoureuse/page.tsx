@@ -21,7 +21,7 @@ export default function NumerologieAmourPage() {
     description: 'Numérologie amoureuse : chemin de vie, nombre d\'expression, nombre intime et compatibilité de couple. Calculez vos chiffres et leur sens en amour.',
     url: 'https://www.voyantlove.fr/methodes-voyance/numerologie-amoureuse/',
     datePublished: '2026-03-27',
-    dateModified: new Date().toISOString().split('T')[0],
+    dateModified: '2026-03-27',
     keywords: ['numérologie amoureuse', 'numérologie couple', 'chemin de vie amour', 'compatibilité numérologie', 'nombre d\'expression amour', 'nombre intime numérologie'],
   });
 
