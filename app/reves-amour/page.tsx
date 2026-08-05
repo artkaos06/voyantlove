@@ -1,11 +1,11 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getWebPageSchema, getBreadcrumbSchema, getAuthorSchema } from '@/lib/schema';
-import { REVES_AMOUR, validateDreamRecord } from '@/lib/revesAmour';
+import { getDreamHubCards } from '@/lib/revesAmour';
 import EEATSignal from '@/components/EEATSignal';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
-const LIVE_DREAMS = REVES_AMOUR.filter((d) => validateDreamRecord(d).length === 0);
+const DREAM_HUB_CARDS = getDreamHubCards();
 
 export const metadata: Metadata = {
   title: 'Interprétation des Rêves Amoureux : Signification',
@@ -57,10 +57,10 @@ export default function RevesAmourHub() {
             Découvrez la <strong>signification</strong> des rêves amoureux les plus fréquents. D&apos;autres rêves s&apos;ajoutent progressivement à ce dictionnaire.
           </p>
           <div className="grid md:grid-cols-2 gap-6">
-            {LIVE_DREAMS.map((d) => (
+            {DREAM_HUB_CARDS.map((d) => (
               <Link
                 key={d.slug}
-                href={`/reves-amour/${d.slug}`}
+                href={d.href}
                 className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition border-t-4 border-indigo-500"
               >
                 <div className="text-3xl mb-2">{d.emoji}</div>
