@@ -9,7 +9,7 @@
     "start": "next start",
     "lint": "next lint",
     "test:cpa68": "node --import tsx --test tests/alternativeCpa68.test.ts",
-    "validate": "node scripts/validate-semantic-quality.js"
+    "validate": "node --import tsx scripts/validate-pseo.ts"
   },
   "dependencies": {
     "@vercel/kv": "^3.0.0",

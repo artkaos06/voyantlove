@@ -3,6 +3,7 @@ import { COMPATIBILITY_PAIRS, validatePairRecord } from '@/lib/compatibilitePair
 import { TAROT_LOVE_CARDS, validateCardRecord } from '@/lib/tarotLoveCards'
 import { REVES_AMOUR, validateDreamRecord } from '@/lib/revesAmour'
 import { SIGNES_AMOUR, validateSignRecord } from '@/lib/signesAmour'
+import { GLOSSARY_TERMS, validateTermRecord } from '@/lib/glossaire'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://www.voyantlove.fr'
@@ -105,6 +106,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/methodes-voyance/synastrie-amoureuse',
     '/methodes-voyance/voyance-par-mail-amour',
     '/methodes-voyance/runes-amour',
+    '/methodes-voyance/cartomancie-amour',
+    '/methodes-voyance/lignes-de-la-main-amour',
+    '/methodes-voyance/boule-de-cristal-amour',
+    '/methodes-voyance/medium-amour',
+    '/methodes-voyance/marc-de-cafe-amour',
     // Voyance gratuite amour
     '/voyance-gratuite-amour/tarot-amour-gratuit',
     '/voyance-gratuite-amour/tarot-oui-non-amour',
@@ -191,6 +197,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: now,
       changeFrequency: 'weekly' as const,
       priority: 0.8,
+    })),
+    {
+      url: `${baseUrl}/glossaire`,
+      lastModified: now,
+      changeFrequency: 'weekly' as const,
+      priority: 0.9,
+    },
+    ...GLOSSARY_TERMS.filter((t) => validateTermRecord(t).length === 0).map((t) => ({
+      url: `${baseUrl}/glossaire/${t.slug}`,
+      lastModified: now,
+      changeFrequency: 'weekly' as const,
+      priority: 0.6,
     })),
   ]
 }

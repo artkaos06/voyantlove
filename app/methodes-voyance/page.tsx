@@ -163,6 +163,41 @@ export default function MethodesVoyanceHubPage() {
               <p className="text-gray-600 mb-4">L&apos;art de lire les 78 cartes du tarot pour les questions sentimentales.</p>
               <span className="text-indigo-600 font-semibold">Découvrir →</span>
             </Link>
+
+            <Link href="/methodes-voyance/cartomancie-amour" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-teal-500">
+              <div className="text-4xl mb-4">🎴</div>
+              <h3 className="text-2xl font-bold mb-3">Cartomancie Amour</h3>
+              <p className="text-gray-600 mb-4">Le Petit Lenormand et le jeu de 32 cartes au service de vos questions de cœur.</p>
+              <span className="text-teal-600 font-semibold">Découvrir →</span>
+            </Link>
+
+            <Link href="/methodes-voyance/lignes-de-la-main-amour" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-red-500">
+              <div className="text-4xl mb-4">✋</div>
+              <h3 className="text-2xl font-bold mb-3">Lignes de la Main Amour</h3>
+              <p className="text-gray-600 mb-4">Ce que la chiromancie et la ligne de cœur révèlent sur votre vie sentimentale.</p>
+              <span className="text-red-600 font-semibold">Découvrir →</span>
+            </Link>
+
+            <Link href="/methodes-voyance/boule-de-cristal-amour" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-indigo-500">
+              <div className="text-4xl mb-4">🔮</div>
+              <h3 className="text-2xl font-bold mb-3">Boule de Cristal Amour</h3>
+              <p className="text-gray-600 mb-4">La cristallomancie pour éclairer vos questions sentimentales.</p>
+              <span className="text-indigo-600 font-semibold">Découvrir →</span>
+            </Link>
+
+            <Link href="/methodes-voyance/medium-amour" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-purple-500">
+              <div className="text-4xl mb-4">🕊️</div>
+              <h3 className="text-2xl font-bold mb-3">Médium Amour</h3>
+              <p className="text-gray-600 mb-4">La médiumnité — clairvoyance, clairaudience, clairsentience — au service de votre guidance sentimentale.</p>
+              <span className="text-purple-600 font-semibold">Découvrir →</span>
+            </Link>
+
+            <Link href="/methodes-voyance/marc-de-cafe-amour" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-amber-700">
+              <div className="text-4xl mb-4">☕</div>
+              <h3 className="text-2xl font-bold mb-3">Marc de Café Amour</h3>
+              <p className="text-gray-600 mb-4">La tasséographie : les symboles du marc de café appliqués à vos questions de cœur.</p>
+              <span className="text-amber-700 font-semibold">Découvrir →</span>
+            </Link>
           </div>
         </section>
 
