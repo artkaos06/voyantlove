@@ -114,3 +114,55 @@ export const MASTER_MEANINGS: NumberMeaning[] = [
 export function findMeaning(list: NumberMeaning[], num: number): NumberMeaning | undefined {
   return list.find((m) => m.num === num);
 }
+
+export interface CompatibilityPair {
+  pair: [number, number];
+  label: string;
+  desc: string;
+}
+
+// A small set of illustrative pair archetypes, shared with the static section.
+// It is intentionally not presented as an exhaustive or authoritative matrix.
+export const COMPATIBILITY_PAIRS: CompatibilityPair[] = [
+  { pair: [2, 6], label: 'Affinité de foyer', desc: 'le 2 apporte l\'empathie émotionnelle, le 6 la stabilité du foyer. Cette combinaison peut soutenir un projet familial partagé.' },
+  { pair: [1, 5], label: 'Feu et liberté', desc: 'deux indépendants qui peuvent se stimuler mutuellement si chacun respecte l\'espace de l\'autre.' },
+  { pair: [3, 9], label: 'Créativité et idéalisme', desc: 'le 3 apporte la joie, le 9 la profondeur. Couple épanoui dans un projet créatif ou humaniste commun.' },
+  { pair: [4, 8], label: 'Construction commune', desc: 'les deux bâtisseurs par excellence. Union solide, orientée vers les objectifs matériels et la sécurité durable.' },
+  { pair: [1, 1], label: 'Guerre des égos', desc: 'deux leaders qui peinent à céder le contrôle. Peut fonctionner si chacun a son domaine d\'excellence clairement défini.' },
+  { pair: [5, 4], label: 'Liberté vs sécurité', desc: 'le 5 veut s\'envoler, le 4 veut s\'enraciner. Tension chronique mais complémentarité possible avec maturité.' },
+  { pair: [7, 2], label: 'Distance vs fusion', desc: 'le 7 a besoin de solitude, le 2 de communion. Le 2 peut vivre le retrait du 7 comme un rejet douloureux.' },
+  { pair: [8, 6], label: 'Ambition vs foyer', desc: 'le 8 priorise la carrière, le 6 la famille. Risque d\'incompréhension si les priorités ne sont pas alignées dès le départ.' },
+];
+
+/** Order-independent lookup: [2,6] matches both (2,6) and (6,2). */
+export function findCompatibility(a: number, b: number): CompatibilityPair | undefined {
+  return COMPATIBILITY_PAIRS.find(
+    ({ pair: [x, y] }) => (x === a && y === b) || (x === b && y === a)
+  );
+}
+
+/** Resolve both ordinary paths and master numbers from the existing meanings. */
+export function findLifePathMeaning(num: number): NumberMeaning | undefined {
+  return findMeaning([...LIFE_PATH_MEANINGS, ...MASTER_MEANINGS], num);
+}
+
+export interface CompatibilityReading {
+  title: string;
+  description: string;
+  guidance: string;
+}
+
+/** Build a transparent reading without scores, statistics or an exhaustive pair matrix. */
+export function composeCompatibilityReading(a: number, b: number): CompatibilityReading | undefined {
+  const meaningA = findLifePathMeaning(a);
+  const meaningB = findLifePathMeaning(b);
+  if (!meaningA || !meaningB) return undefined;
+
+  return {
+    title: `${a} + ${b} — ${meaningA.title} et ${meaningB.title}`,
+    description: `Le chemin ${a} apporte à la relation cette dynamique : ${meaningA.desc} Le chemin ${b} apporte de son côté : ${meaningB.desc}`,
+    guidance: a === b
+      ? 'Votre force commune facilite la compréhension mutuelle, mais peut aussi amplifier le même défi. Nommez clairement vos besoins et répartissez les rôles pour garder de la souplesse.'
+      : 'Cette combinaison se lit comme une rencontre de deux besoins différents. Appuyez-vous sur leurs complémentarités, puis parlez ouvertement des écarts de rythme, de liberté, de sécurité ou d’engagement qui apparaissent réellement dans votre couple.',
+  };
+}

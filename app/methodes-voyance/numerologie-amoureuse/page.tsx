@@ -7,11 +7,12 @@ import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 import NumerologyCalculator from '@/components/NumerologyCalculator';
+import NumerologyCompatibilityCalculator from '@/components/NumerologyCompatibilityCalculator';
 
 export const metadata: Metadata = {
   title: 'Numérologie Amoureuse : Compatibilité',
   description: 'Numérologie amoureuse : chemin de vie, nombre d\'expression, nombre intime et compatibilité de couple. Calculez vos chiffres et leur sens en amour.',
-  keywords: ['numérologie amoureuse', 'numérologie couple', 'chemin de vie amour', 'compatibilité numérologie', 'nombre d\'expression amour', 'nombre intime numérologie'],
+  keywords: ['numérologie amoureuse', 'numérologie couple', 'chemin de vie amour', 'compatibilité numérologie', 'nombre d\'expression amour', 'nombre intime numérologie', 'compatibilité par date de naissance'],
   alternates: { canonical: 'https://www.voyantlove.fr/methodes-voyance/numerologie-amoureuse/' },
 };
 
@@ -21,7 +22,7 @@ export default function NumerologieAmourPage() {
     description: 'Numérologie amoureuse : chemin de vie, nombre d\'expression, nombre intime et compatibilité de couple. Calculez vos chiffres et leur sens en amour.',
     url: 'https://www.voyantlove.fr/methodes-voyance/numerologie-amoureuse/',
     datePublished: '2026-03-27',
-    dateModified: '2026-03-27',
+    dateModified: '2026-08-07',
     keywords: ['numérologie amoureuse', 'numérologie couple', 'chemin de vie amour', 'compatibilité numérologie', 'nombre d\'expression amour', 'nombre intime numérologie'],
   });
 
@@ -48,7 +49,7 @@ export default function NumerologieAmourPage() {
     },
     {
       question: 'Quels chemins de vie sont les plus compatibles en amour ?',
-      answer: 'Les associations les plus harmonieuses en numérologie amoureuse sont : les chemins 2 et 6 (tous deux orientés vers l\'amour et la famille), les chemins 1 et 5 (dynamisme et liberté partagés), les chemins 3 et 9 (créativité et idéalisme), et les chemins 4 et 8 (construction matérielle commune). Les chemins maîtres 11 et 22 sont compatibles entre eux mais demandent une grande maturité émotionnelle. La compatibilité numérique est un indicateur précieux, mais l\'analyse complète intègre aussi le prénom et la date de naissance du partenaire.',
+      answer: 'La numérologie ne classe pas une association comme garantie de réussite. Elle croise les besoins symboliques de chaque chemin : par exemple, le 2 et le 6 partagent une orientation vers le lien et le foyer, tandis que le 1 et le 5 valorisent davantage l\'initiative et la liberté. Le calculateur présente les deux profils côte à côte, y compris les nombres maîtres 11, 22 et 33, afin de faire ressortir les complémentarités et les écarts à discuter dans le couple.',
     },
     {
       question: 'La numérologie peut-elle prédire une rencontre amoureuse ?',
@@ -57,6 +58,10 @@ export default function NumerologieAmourPage() {
     {
       question: 'Que signifie le nombre 11 en amour selon la numérologie ?',
       answer: 'Le nombre 11, premier des nombres maîtres, est le chiffre de l\'intuition supérieure et de la connexion spirituelle en amour. Les personnes avec un chemin de vie 11 vivent l\'amour avec une intensité et une sensibilité hors du commun. Elles cherchent une union qui transcende le matériel pour toucher l\'âme. Leur plus grand défi est de ne pas idéaliser leur partenaire au point d\'en être déçu. En amour, le 11 attire des âmes évoluées et des connexions profondes, parfois des flammes jumelles ou des liens karmiques forts qui transforment profondément les deux partenaires.',
+    },
+    {
+      question: 'Comment calculer la compatibilité amoureuse par date de naissance ?',
+      answer: 'La compatibilité par date de naissance en numérologie se calcule en réduisant la date complète de chaque partenaire à un chemin de vie, puis en croisant les deux profils symboliques obtenus. Le calculateur décrit ce que chacun apporte à la relation et propose un repère de dialogue sans score ni verdict automatique. Cette lecture reste un premier niveau d\'analyse : elle s\'affine avec le nombre d\'expression et le nombre intime de chaque partenaire, calculés à partir du nom complet.',
     },
   ]);
 
@@ -110,6 +115,7 @@ export default function NumerologieAmourPage() {
         <EEATSignal
           colorScheme="orange"
           method="Numérologie &amp; Amour — Chemin de vie, compatibilité et timing par les chiffres"
+          lastUpdated="7 août 2026"
         />
 
         {/* Answer Capsule */}
@@ -266,17 +272,27 @@ export default function NumerologieAmourPage() {
             La <strong>compatibilité numérique</strong> ne prédit pas le succès ou l&rsquo;échec d&rsquo;une relation — elle révèle les dynamiques naturelles qui s&rsquo;installeront entre deux personnes. Certains couples numériquement &ldquo;difficiles&rdquo; bâtissent des relations extraordinaires grâce à la conscience de leurs différences. Pour approfondir votre analyse, consultez notre guide sur la <Link href="/sentiments/compatibilite-amoureuse" className="text-orange-600 hover:text-orange-800 underline font-medium">compatibilité amoureuse</Link>.
           </p>
 
+          <div className="mb-6">
+            <NumerologyCompatibilityCalculator />
+          </div>
+
+          <h3 className="font-bold text-gray-900 text-xl mb-4">Compatibilité par Date de Naissance : Comment Ça Marche</h3>
+          <p className="text-gray-700 mb-6">
+            La <strong>compatibilité par date de naissance</strong> part d&rsquo;un principe simple : chaque date de naissance se réduit à un <strong>chemin de vie</strong> unique (voir la méthode de calcul plus haut sur cette page), et c&rsquo;est la résonance entre les deux chemins de vie qui indique la nature de la dynamique amoureuse — complémentaire, stimulante ou exigeante en conscience. Cette approche se distingue de la <Link href="/sentiments/compatibilite-amoureuse" className="text-orange-600 hover:text-orange-800 underline font-medium">compatibilité par signe astrologique</Link>, qui se base sur la position du Soleil plutôt que sur un calcul numérique dérivé de la date complète.
+          </p>
+
+          <p className="text-sm text-gray-600 mb-4">Les associations ci-dessous sont des exemples de lecture, pas une matrice exhaustive ni une garantie sur l&rsquo;avenir du couple.</p>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-white rounded-lg p-6">
-              <h3 className="font-bold text-green-700 text-lg mb-4">&#x2705; Chemins Naturellement Complémentaires</h3>
+              <h3 className="font-bold text-green-700 text-lg mb-4">&#x2705; Exemples de Complémentarités</h3>
               <div className="space-y-3 text-gray-700">
                 <div className="flex items-start gap-3 p-3 bg-green-50 rounded-lg">
                   <span className="text-green-500 font-bold text-xl">2+6</span>
-                  <p><strong>Alliance parfaite :</strong> le 2 apporte l&rsquo;empathie émotionnelle, le 6 la stabilité du foyer. Union idéale pour fonder une famille.</p>
+                  <p><strong>Affinité de foyer :</strong> le 2 apporte l&rsquo;empathie émotionnelle, le 6 la stabilité du foyer. Cette combinaison peut soutenir un projet familial partagé.</p>
                 </div>
                 <div className="flex items-start gap-3 p-3 bg-green-50 rounded-lg">
                   <span className="text-green-500 font-bold text-xl">1+5</span>
-                  <p><strong>Feu et liberté :</strong> deux indépendants qui se stimulent mutuellement sans s&rsquo;étouffer. Passion durable si chacun respecte l&rsquo;espace de l&rsquo;autre.</p>
+                  <p><strong>Feu et liberté :</strong> deux indépendants qui peuvent se stimuler mutuellement si chacun respecte l&rsquo;espace de l&rsquo;autre.</p>
                 </div>
                 <div className="flex items-start gap-3 p-3 bg-green-50 rounded-lg">
                   <span className="text-green-500 font-bold text-xl">3+9</span>
@@ -290,7 +306,7 @@ export default function NumerologieAmourPage() {
             </div>
 
             <div className="bg-white rounded-lg p-6">
-              <h3 className="font-bold text-red-700 text-lg mb-4">&#x26A0;&#xFE0F; Associations Nécessitant de la Conscience</h3>
+              <h3 className="font-bold text-red-700 text-lg mb-4">&#x26A0;&#xFE0F; Exemples de Points de Friction</h3>
               <div className="space-y-3 text-gray-700">
                 <div className="flex items-start gap-3 p-3 bg-red-50 rounded-lg">
                   <span className="text-red-500 font-bold text-xl">1+1</span>
@@ -423,7 +439,7 @@ export default function NumerologieAmourPage() {
             <div className="border-b pb-6">
               <h3 className="font-bold text-lg text-orange-700 mb-3">Quels chemins de vie sont les plus compatibles en amour ?</h3>
               <p className="text-gray-700 leading-relaxed">
-                Les associations les plus harmonieuses sont : les chemins <strong>2 et 6</strong> (tous deux orientés vers l&rsquo;amour et la famille), les chemins <strong>1 et 5</strong> (dynamisme et liberté partagés), les chemins <strong>3 et 9</strong> (créativité et idéalisme), et les chemins <strong>4 et 8</strong> (construction matérielle commune). Les chemins maîtres 11 et 22 sont compatibles entre eux mais demandent une grande maturité émotionnelle. La <strong>compatibilité numérique</strong> est un indicateur précieux, mais l&rsquo;analyse complète intègre aussi le prénom et la date de naissance complète du partenaire.
+                La numérologie ne classe pas une association comme garantie de réussite. Elle croise les besoins symboliques de chaque chemin&nbsp;: le <strong>2 et le 6</strong> partagent une orientation vers le lien et le foyer, tandis que le <strong>1 et le 5</strong> valorisent davantage l&rsquo;initiative et la liberté. Le calculateur présente les deux profils côte à côte, y compris les nombres maîtres 11, 22 et 33, afin de faire ressortir les complémentarités et les écarts à discuter dans le couple.
               </p>
             </div>
             <div className="border-b pb-6">
@@ -432,10 +448,16 @@ export default function NumerologieAmourPage() {
                 Oui, via le calcul des <strong>années personnelles</strong>. Une année personnelle 2 (cycle d&rsquo;amour et de partenariat) ou 6 (cycle des engagements et de la famille) sont les plus favorables aux rencontres amoureuses significatives. L&rsquo;année personnelle se calcule en additionnant votre jour et mois de naissance à l&rsquo;année civile en cours. Par exemple, pour une personne née le 15 juillet : 1+5+0+7+2+0+2+6 = 23, puis 2+3 = 5. Cette personne est en <strong>année personnelle 5</strong> en 2026, favorable aux changements et nouvelles aventures amoureuses.
               </p>
             </div>
-            <div>
+            <div className="border-b pb-6">
               <h3 className="font-bold text-lg text-orange-700 mb-3">Que signifie le nombre 11 en amour selon la numérologie ?</h3>
               <p className="text-gray-700 leading-relaxed">
                 Le <strong>nombre 11</strong>, premier des nombres maîtres, est le chiffre de l&rsquo;intuition supérieure et de la connexion spirituelle en amour. Les personnes avec un chemin de vie 11 vivent l&rsquo;amour avec une intensité et une sensibilité hors du commun. Elles cherchent une union qui transcende le matériel pour toucher l&rsquo;âme. Leur plus grand défi est de ne pas idéaliser leur partenaire au point d&rsquo;en être déçu. En amour, le 11 attire des âmes évoluées et des connexions profondes, parfois des flammes jumelles ou des liens karmiques forts qui transforment profondément les deux partenaires.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-bold text-lg text-orange-700 mb-3">Comment calculer la compatibilité amoureuse par date de naissance ?</h3>
+              <p className="text-gray-700 leading-relaxed">
+                La <strong>compatibilité par date de naissance</strong> se calcule en réduisant la date complète de chaque partenaire à un <strong>chemin de vie</strong>, puis en croisant les deux profils symboliques obtenus. Le calculateur décrit ce que chacun apporte à la relation et propose un repère de dialogue sans score ni verdict automatique. Cette lecture reste un premier niveau d&rsquo;analyse&nbsp;: elle s&rsquo;affine avec le <strong>nombre d&rsquo;expression</strong> et le <strong>nombre intime</strong> de chaque partenaire, calculés à partir du nom complet.
               </p>
             </div>
           </div>

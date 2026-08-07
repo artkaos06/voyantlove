@@ -988,6 +988,7 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     ],
     termesLies: ['theme-composite', 'signe-lunaire', 'aspect-astrologique'],
     liensSite: [
+      { label: 'Ascendant en amour', href: '/methodes-voyance/ascendant-amour' },
       { label: 'Synastrie amoureuse', href: '/methodes-voyance/synastrie-amoureuse' },
       { label: 'Astrologie amoureuse', href: '/methodes-voyance/astrologie-amoureuse' },
     ],

@@ -86,7 +86,7 @@ export default function VoyanceGratuiteAmourHubPage() {
 
         <section className="mb-16">
           <h2 className="text-3xl font-bold mb-8 text-center">🗺️ Nos Guidances Gratuites</h2>
-          <p className="text-lg font-semibold text-gray-800 mb-4">Les principales méthodes de <strong>voyance gratuite amour</strong> sont le <strong>tarot amour gratuit</strong>, le <strong>tarot oui/non</strong>, l&apos;<strong>oracle</strong>, l&apos;<strong>horoscope amoureux</strong>, la <strong>voyance par tchat</strong> et les <strong>tirages pour célibataires</strong>. Chaque outil offre un éclairage unique sur votre situation sentimentale.</p>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Les principales méthodes de <strong>voyance gratuite en ligne</strong> pour l&apos;amour sont le <strong>tarot amour gratuit</strong>, le <strong>tarot du jour</strong>, le <strong>tarot oui/non</strong>, le <strong>tarot futur proche</strong>, l&apos;<strong>oracle</strong>, l&apos;<strong>horoscope amoureux</strong>, la <strong>voyance par tchat</strong> et les <strong>tirages pour célibataires</strong>. Chaque outil offre un éclairage unique sur votre situation sentimentale, disponible directement en ligne et sans inscription.</p>
           <div className="grid md:grid-cols-3 gap-8">
             <Link href="/voyance-gratuite-amour/tarot-amour-gratuit" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-green-500">
               <div className="text-4xl mb-4">🃏</div>
@@ -135,6 +135,20 @@ export default function VoyanceGratuiteAmourHubPage() {
               <h3 className="text-2xl font-bold mb-3">Voyance Amour Immédiate</h3>
               <p className="text-gray-600 mb-4">Tirage instantané et consultation en direct sans attente, 24h/24.</p>
               <span className="text-emerald-600 font-semibold">Découvrir &rarr;</span>
+            </Link>
+
+            <Link href="/voyance-gratuite-amour/tarot-du-jour-amour" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-green-500">
+              <div className="text-4xl mb-4">🌞</div>
+              <h3 className="text-2xl font-bold mb-3">Tarot du Jour Amour</h3>
+              <p className="text-gray-600 mb-4">Une carte pour éclairer l&apos;énergie sentimentale de votre journée.</p>
+              <span className="text-green-600 font-semibold">Découvrir &rarr;</span>
+            </Link>
+
+            <Link href="/voyance-gratuite-amour/tarot-futur-proche-amour" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-teal-500">
+              <div className="text-4xl mb-4">🔭</div>
+              <h3 className="text-2xl font-bold mb-3">Tarot Futur Proche</h3>
+              <p className="text-gray-600 mb-4">Un tirage à trois cartes pour éclairer les prochaines semaines de votre vie sentimentale.</p>
+              <span className="text-teal-600 font-semibold">Découvrir &rarr;</span>
             </Link>
           </div>
         </section>

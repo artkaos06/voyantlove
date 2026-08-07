@@ -12,31 +12,29 @@ interface TarotCard {
 }
 
 const TAROT_CARDS: TarotCard[] = [
-  // OUI cards
-  { name: 'Le Soleil', emoji: '☀️', result: 'oui', message: 'Le Soleil illumine votre question d\'une lumière éclatante. La réponse est un oui radieux — bonheur, épanouissement et clarté dans votre vie amoureuse.' },
-  { name: 'L\'Étoile', emoji: '⭐', result: 'oui', message: 'L\'Étoile brille en votre faveur. Espoir, sérénité et renouveau sentimental sont en chemin. La réponse est oui, avec douceur.' },
-  { name: 'L\'Impératrice', emoji: '👑', result: 'oui', message: 'L\'Impératrice vous enveloppe de son énergie féminine et créatrice. Oui, l\'amour grandit — tendresse, fertilité émotionnelle et abondance sentimentale.' },
-  { name: 'Le Monde', emoji: '🌍', result: 'oui', message: 'Le Monde annonce l\'accomplissement. Oui, un cycle amoureux se complète avec succès. Vous êtes aligné(e) avec votre destinée sentimentale.' },
-  { name: 'L\'Amoureux', emoji: '💕', result: 'oui', message: 'L\'Amoureux confirme un oui passionné. Les sentiments sont réciproques, la connexion est authentique. L\'amour est présent.' },
-  { name: 'As de Coupe', emoji: '🏆', result: 'oui', message: 'L\'As de Coupe déborde d\'émotion pure. Oui — un nouveau départ amoureux, un sentiment sincère et profond se manifeste.' },
-  { name: 'Dix de Coupe', emoji: '🌈', result: 'oui', message: 'Le Dix de Coupe représente le bonheur familial et amoureux. Oui, l\'harmonie et la joie partagée sont votre avenir.' },
-  { name: 'Quatre de Bâton', emoji: '🎉', result: 'oui', message: 'Le Quatre de Bâton célèbre l\'union et la stabilité. Oui — engagement, célébration et fondations solides pour votre amour.' },
-
-  // NON cards
-  { name: 'La Tour', emoji: '⚡', result: 'non', message: 'La Tour annonce un bouleversement. La réponse est non pour l\'instant — une structure doit s\'effondrer avant qu\'un renouveau soit possible.' },
-  { name: 'Le Diable', emoji: '😈', result: 'non', message: 'Le Diable révèle une illusion ou une dépendance. Non — cette situation cache des chaînes invisibles. Prenez du recul avant d\'avancer.' },
-  { name: 'Cinq d\'Épée', emoji: '⚔️', result: 'non', message: 'Le Cinq d\'Épée signale un conflit non résolu. Non — les tensions actuelles empêchent l\'évolution souhaitée. La guérison doit venir d\'abord.' },
-  { name: 'Trois d\'Épée', emoji: '💔', result: 'non', message: 'Le Trois d\'Épée porte une blessure émotionnelle. Non, pas dans ces conditions — un travail de guérison intérieure est nécessaire avant tout.' },
-  { name: 'Huit de Coupe', emoji: '🚶', result: 'non', message: 'Le Huit de Coupe invite au lâcher-prise. Non — il est temps de tourner la page et de chercher un chemin plus authentique pour votre cœur.' },
-  { name: 'Dix d\'Épée', emoji: '🗡️', result: 'non', message: 'Le Dix d\'Épée marque une fin. Non — ce chapitre se clôt. Mais rappelez-vous : après chaque fin vient un nouveau commencement.' },
-
-  // PEUT-ÊTRE cards
-  { name: 'La Lune', emoji: '🌙', result: 'peut-etre', message: 'La Lune voile la réponse dans le mystère. Peut-être — des éléments cachés influencent la situation. Fiez-vous à votre intuition profonde.' },
-  { name: 'La Roue de Fortune', emoji: '🎡', result: 'peut-etre', message: 'La Roue de Fortune tourne sans cesse. Peut-être — tout dépend du timing et de vos choix prochains. Le destin n\'est pas encore fixé.' },
-  { name: 'Le Pendu', emoji: '🙃', result: 'peut-etre', message: 'Le Pendu invite à la patience. Peut-être — mais pas maintenant. Un changement de perspective est nécessaire avant d\'obtenir une réponse claire.' },
-  { name: 'Tempérance', emoji: '⚖️', result: 'peut-etre', message: 'Tempérance demande l\'équilibre. Peut-être — si vous trouvez l\'harmonie intérieure, la réponse penchera en votre faveur. Patience et douceur.' },
-  { name: 'La Justice', emoji: '⚖️', result: 'peut-etre', message: 'La Justice pèse votre situation. Peut-être — le résultat dépend de l\'honnêteté et de l\'équité dans votre relation. Soyez sincère avec vous-même.' },
-  { name: 'Deux de Coupe', emoji: '🤝', result: 'peut-etre', message: 'Le Deux de Coupe montre un potentiel de connexion. Peut-être — les bases sont là, mais les deux parties doivent s\'engager pleinement.' },
+  // The complete 22 major arcana, each with one stable interpretation.
+  { name: 'Le Mat', emoji: '🎒', result: 'peut-etre', message: 'Le Mat ouvre un chemin imprévisible. La réponse reste nuancée : avancez avec curiosité, sans tenir l’issue pour acquise.' },
+  { name: 'Le Bateleur', emoji: '✨', result: 'oui', message: 'Le Bateleur favorise l’initiative et le commencement. Oui, à condition de faire un premier pas concret.' },
+  { name: 'La Papesse', emoji: '📖', result: 'peut-etre', message: 'La Papesse garde encore une information sous silence. La réponse est nuancée : observez et laissez la vérité se révéler.' },
+  { name: 'L\'Impératrice', emoji: '👑', result: 'oui', message: 'L’Impératrice favorise l’expression des sentiments. Oui : une dynamique chaleureuse et créative peut grandir.' },
+  { name: 'L\'Empereur', emoji: '🛡️', result: 'oui', message: 'L’Empereur apporte structure et stabilité. Oui, si la relation s’appuie sur des actes constants et un engagement clair.' },
+  { name: 'Le Pape', emoji: '🗝️', result: 'peut-etre', message: 'Le Pape invite à clarifier les valeurs et l’engagement. La réponse dépend d’un accord sincère entre les deux personnes.' },
+  { name: 'L\'Amoureux', emoji: '💕', result: 'oui', message: 'L’Amoureux confirme un oui, tout en rappelant qu’un choix sincère doit être assumé.' },
+  { name: 'Le Chariot', emoji: '🏇', result: 'oui', message: 'Le Chariot annonce une avancée. Oui : prenez une direction claire et évitez les signaux contradictoires.' },
+  { name: 'La Justice', emoji: '⚖️', result: 'peut-etre', message: 'La Justice pèse votre situation. La réponse dépend de l’honnêteté, de l’équilibre et des choix de chacun.' },
+  { name: 'L\'Ermite', emoji: '🏮', result: 'non', message: 'L’Ermite indique retrait et lenteur. Non pour le moment : accordez du temps à la réflexion avant de relancer la situation.' },
+  { name: 'La Roue de Fortune', emoji: '🎡', result: 'peut-etre', message: 'La Roue de Fortune annonce un changement. La réponse reste nuancée car le timing et vos prochains choix peuvent encore la faire évoluer.' },
+  { name: 'La Force', emoji: '🦁', result: 'oui', message: 'La Force soutient une progression patiente et maîtrisée. Oui, si vous privilégiez la confiance plutôt que le rapport de force.' },
+  { name: 'Le Pendu', emoji: '🙃', result: 'non', message: 'Le Pendu signale un blocage. Non pour le moment : changez de perspective et ne forcez pas le rythme.' },
+  { name: 'L\'Arcane sans nom', emoji: '🍂', result: 'non', message: 'L’Arcane sans nom clôt une forme ancienne de la situation. Non dans les conditions actuelles : une transformation est nécessaire.' },
+  { name: 'Tempérance', emoji: '🕊️', result: 'oui', message: 'Tempérance favorise l’apaisement et le dialogue. Oui, avec patience, mesure et ajustements réciproques.' },
+  { name: 'Le Diable', emoji: '😈', result: 'non', message: 'Le Diable révèle une illusion ou une dépendance. Non dans les conditions actuelles : prenez du recul avant d’avancer.' },
+  { name: 'La Maison Dieu', emoji: '⚡', result: 'non', message: 'La Maison Dieu annonce un bouleversement. Non pour l’instant : les bases doivent être revues avant de reconstruire.' },
+  { name: 'L\'Étoile', emoji: '⭐', result: 'oui', message: 'L’Étoile brille en votre faveur. Oui, avec douceur : espoir, sérénité et renouveau sentimental sont encouragés.' },
+  { name: 'La Lune', emoji: '🌙', result: 'peut-etre', message: 'La Lune voile la réponse. La réponse est nuancée : des éléments cachés influencent encore la situation.' },
+  { name: 'Le Soleil', emoji: '☀️', result: 'oui', message: 'Le Soleil éclaire votre question. Oui : la dynamique favorise la clarté, le partage et l’épanouissement.' },
+  { name: 'Le Jugement', emoji: '📯', result: 'peut-etre', message: 'Le Jugement ouvre une possibilité de réveil ou de retour. La réponse dépend d’une prise de conscience suivie d’une action concrète.' },
+  { name: 'Le Monde', emoji: '🌍', result: 'oui', message: 'Le Monde annonce l’accomplissement. Oui : un cycle peut aboutir de manière cohérente et constructive.' },
 ];
 
 const SAMPLE_QUESTIONS = [

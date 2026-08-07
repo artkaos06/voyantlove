@@ -111,6 +111,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/methodes-voyance/boule-de-cristal-amour',
     '/methodes-voyance/medium-amour',
     '/methodes-voyance/marc-de-cafe-amour',
+    '/methodes-voyance/suis-je-medium-comment-savoir',
+
+    '/methodes-voyance/ascendant-amour',
     // Voyance gratuite amour
     '/voyance-gratuite-amour/tarot-amour-gratuit',
     '/voyance-gratuite-amour/tarot-oui-non-amour',
@@ -119,6 +122,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/voyance-gratuite-amour/voyance-tchat-gratuit-amour',
     '/voyance-gratuite-amour/tirage-gratuit-celibataire',
     '/voyance-gratuite-amour/voyance-amour-immediate',
+    '/voyance-gratuite-amour/tarot-du-jour-amour',
+    '/voyance-gratuite-amour/tarot-futur-proche-amour',
   ]
 
   // Legal pages (low priority)

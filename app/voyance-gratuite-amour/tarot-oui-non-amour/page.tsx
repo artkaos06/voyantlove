@@ -22,7 +22,7 @@ export default function TarotOuiNonAmourPage() {
     description: 'Tirage tarot oui non amour gratuit et sérieux. Posez votre question sentimentale et obtenez une réponse immédiate : oui, non ou peut-être. Tirage en ligne.',
     url: 'https://www.voyantlove.fr/voyance-gratuite-amour/tarot-oui-non-amour/',
     datePublished: '2026-03-10',
-    dateModified: '2026-03-10',
+    dateModified: '2026-08-07',
     keywords: ['tarot oui non amour', 'tarot ni oui ni non', 'tarot oui non gratuit amour', 'voyance oui non amour', 'tarot amour oui non'],
   });
 
@@ -98,22 +98,22 @@ export default function TarotOuiNonAmourPage() {
         {/* Stats bar */}
         <div className="bg-white rounded-xl shadow-md p-6 mb-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
           <div><div className="text-3xl mb-1">&#x2705;</div><div className="text-2xl font-bold text-emerald-600">Direct</div><div className="text-sm text-gray-600">R&eacute;ponses claires</div></div>
-          <div><div className="text-3xl mb-1">&#x1F0CF;</div><div className="text-2xl font-bold text-emerald-600">3 cartes</div><div className="text-sm text-gray-600">Tirage rapide</div></div>
+          <div><div className="text-3xl mb-1">&#x1F0CF;</div><div className="text-2xl font-bold text-emerald-600">1 carte</div><div className="text-sm text-gray-600">Parmi 22 arcanes</div></div>
           <div><div className="text-3xl mb-1">&#x2B50;</div><div className="text-2xl font-bold text-emerald-600">Populaire</div><div className="text-sm text-gray-600">Tirage le plus demand&eacute;</div></div>
           <div><div className="text-3xl mb-1">&#x1F52E;</div><div className="text-2xl font-bold text-emerald-600">Accessible</div><div className="text-sm text-gray-600">Pour tous les niveaux</div></div>
         </div>
 
         {/* EEAT Signal */}
-        <EEATSignal colorScheme="green" method="Tarot oui/non et tirages sentimentaux rapides" />
+        <EEATSignal colorScheme="green" method="Tarot oui/non et tirages sentimentaux rapides" lastUpdated="7 août 2026" />
 
         {/* Answer Capsule */}
         <article className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-emerald-600">
           <div className="bg-green-50 border-l-4 border-green-500 p-6 rounded-lg">
             <p className="text-lg leading-relaxed mb-4">
-              Le <strong>tarot oui non amour</strong> est la m&eacute;thode de <strong>voyance sentimentale</strong> la plus directe pour obtenir une r&eacute;ponse claire &agrave; une question du c&oelig;ur. Bas&eacute; sur le tirage de trois <strong>arcanes majeurs</strong> du <strong>Tarot de Marseille</strong>, ce tirage r&eacute;v&egrave;le l&apos;&eacute;nergie dominante qui entoure votre <strong>question amoureuse</strong> et tranche entre une r&eacute;ponse positive ou n&eacute;gative.
+              Le <strong>tarot oui non amour</strong> est une m&eacute;thode directe pour &eacute;clairer une question du c&oelig;ur. Le module tire <strong>une carte parmi les 22 arcanes majeurs</strong> du Tarot de Marseille. Chaque arcane poss&egrave;de ici une interpr&eacute;tation pr&eacute;assign&eacute;e&nbsp;: oui, non ou r&eacute;ponse nuanc&eacute;e.
             </p>
             <p className="text-lg leading-relaxed mb-4">
-              Que vous vous demandiez si une personne &eacute;prouve des sentiments, si votre <strong>relation</strong> a un avenir ou si un ancien partenaire reviendra, le <strong>tirage oui/non</strong> offre une r&eacute;ponse synth&eacute;tique et imm&eacute;diate. Deux cartes positives sur trois confirment le oui, tandis que la carte centrale r&eacute;v&egrave;le la condition ou la nuance associ&eacute;e.
+              Que vous vous demandiez si une personne &eacute;prouve des sentiments, si votre <strong>relation</strong> a un avenir ou si un ancien partenaire reviendra, le <strong>tirage oui/non</strong> offre une r&eacute;ponse synth&eacute;tique et imm&eacute;diate. La carte choisie d&eacute;termine directement le r&eacute;sultat et son texte explique la condition ou la nuance associ&eacute;e.
             </p>
             <p className="text-lg leading-relaxed">
               Ce <strong>tarot oui non gratuit amour</strong> constitue un premier pas accessible vers la <strong>guidance sentimentale</strong>, id&eacute;al pour les questions pr&eacute;cises qui appellent une r&eacute;ponse binaire. Pour les situations complexes, un <strong>voyant sp&eacute;cialis&eacute;</strong> compl&egrave;te cette approche par un <strong>tirage sentimental</strong> plus d&eacute;taill&eacute; qui explore toutes les facettes de votre situation amoureuse.
@@ -126,15 +126,15 @@ export default function TarotOuiNonAmourPage() {
         {/* Section 1: Principe du Tirage Oui/Non en Amour */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">&#x1F3AF; Principe du Tirage Oui/Non en Amour</h2>
-          <p className="text-lg font-semibold text-gray-800 mb-4">Le tirage oui/non amoureux repose sur trois cartes tir&eacute;es parmi les 22 arcanes majeurs du Tarot de Marseille. Chaque carte porte une polarit&eacute; positive ou n&eacute;gative qui oriente la r&eacute;ponse sentimentale.</p>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Le tirage propos&eacute; ici repose sur une carte tir&eacute;e parmi les 22 arcanes majeurs du Tarot de Marseille. Chaque carte porte une interpr&eacute;tation oui, non ou nuanc&eacute;e.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Le <strong>tarot oui non amour</strong> est la forme de <strong>voyance sentimentale</strong> la plus ancienne et la plus universelle. Son principe est d&apos;une simplicit&eacute; &eacute;l&eacute;gante : chaque <strong>arcane majeur</strong> du <strong>Tarot de Marseille</strong> poss&egrave;de une polarit&eacute; naturelle &mdash; positive, n&eacute;gative ou neutre &mdash; qui, combin&eacute;e aux deux autres cartes du tirage, oriente la r&eacute;ponse globale. Cette m&eacute;thode fait partie des approches de <Link href="/voyance-gratuite-amour" className="text-emerald-600 hover:text-emerald-800 underline font-medium">voyance gratuite amour</Link> les plus demand&eacute;es.
+            Le principe du module est simple&nbsp;: chaque <strong>arcane majeur</strong> du <strong>Tarot de Marseille</strong> re&ccedil;oit une interpr&eacute;tation stable &mdash; oui, non ou nuanc&eacute;e &mdash; adapt&eacute;e &agrave; une question sentimentale. Une seule carte est choisie et son interpr&eacute;tation oriente la r&eacute;ponse. Cette m&eacute;thode fait partie des approches de <Link href="/voyance-gratuite-amour" className="text-emerald-600 hover:text-emerald-800 underline font-medium">voyance gratuite amour</Link> les plus demand&eacute;es.
           </p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Le processus est structur&eacute; en trois &eacute;tapes. Vous formulez une <strong>question sentimentale</strong> claire et binaire. Trois cartes sont tir&eacute;es parmi les 22 <strong>arcanes majeurs</strong>. Chaque carte est class&eacute;e selon sa polarit&eacute; : le Soleil, les Amoureux, l&apos;&Eacute;toile et Temp&eacute;rance sont des cartes &laquo;&nbsp;oui&nbsp;&raquo;, tandis que la Tour, le Diable et la Mort sont des cartes &laquo;&nbsp;non&nbsp;&raquo;. La majorit&eacute; d&eacute;termine la r&eacute;ponse dominante.
+            Le processus est structur&eacute; en trois &eacute;tapes. Vous formulez une <strong>question sentimentale</strong> claire et binaire, le jeu complet des 22 <strong>arcanes majeurs</strong> est m&eacute;lang&eacute;, puis vous choisissez une carte. Le Soleil, les Amoureux, l&apos;&Eacute;toile et Temp&eacute;rance donnent ici un &laquo;&nbsp;oui&nbsp;&raquo;&nbsp;; la Maison Dieu, le Diable et l&apos;Arcane sans nom donnent un &laquo;&nbsp;non&nbsp;&raquo;&nbsp;; la Lune, le Jugement ou la Roue de Fortune apportent une r&eacute;ponse nuanc&eacute;e.
           </p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            La carte centrale du tirage joue un r&ocirc;le particulier : elle r&eacute;v&egrave;le la condition, le d&eacute;lai ou la nuance associ&eacute;e &agrave; la r&eacute;ponse. M&ecirc;me dans un <strong>tirage oui/non</strong>, le <strong>tarot</strong> ne donne jamais une r&eacute;ponse purement binaire. Le <strong>voyant</strong> comp&eacute;tent d&eacute;chiffre ces subtilt&eacute;s pour vous offrir une <strong>lecture</strong> compl&egrave;te qui d&eacute;passe le simple oui ou non et &eacute;claire le contexte &eacute;nerg&eacute;tique de votre <strong>situation amoureuse</strong>.
+            Le message associ&eacute; &agrave; l&apos;unique carte tir&eacute;e pr&eacute;cise la condition ou la nuance de la r&eacute;ponse. Les cartes nuanc&eacute;es ne sont donc pas compt&eacute;es dans une majorit&eacute;&nbsp;: elles affichent directement &laquo;&nbsp;peut-&ecirc;tre&nbsp;&raquo; et invitent &agrave; observer ce qui reste en mouvement. Une lecture plus compl&egrave;te avec un <strong>voyant</strong> peut ensuite replacer ce symbole dans le contexte de votre <strong>situation amoureuse</strong>.
           </p>
           <p className="text-gray-700 leading-relaxed">
             Cette m&eacute;thode est particuli&egrave;rement appr&eacute;ci&eacute;e pour sa rapidit&eacute; et son accessibilit&eacute;. Elle convient aux personnes qui d&eacute;couvrent la <strong>voyance amoureuse</strong> comme &agrave; celles qui cherchent une confirmation rapide avant d&apos;approfondir avec un <strong>tirage sentimental</strong> plus complet. Le <strong>tarot oui non gratuit</strong> d&eacute;mocratise l&apos;acc&egrave;s &agrave; la guidance du c&oelig;ur.
@@ -205,26 +205,27 @@ export default function TarotOuiNonAmourPage() {
             <div className="bg-green-50 border-2 border-green-300 rounded-xl p-5">
               <h3 className="font-bold text-lg mb-3 text-green-700 text-center">&#x2705; Cartes OUI en Amour</h3>
               <ul className="text-gray-700 text-sm space-y-2">
-                <li>&bull; <strong>Les Amoureux (VI)</strong> &mdash; Union, choix du c&oelig;ur, r&eacute;ciprocit&eacute;</li>
-                <li>&bull; <strong>Le Soleil (XIX)</strong> &mdash; Bonheur amoureux, sinc&eacute;rit&eacute;</li>
-                <li>&bull; <strong>L&apos;&Eacute;toile (XVII)</strong> &mdash; Espoir, renouveau sentimental</li>
+                <li>&bull; <strong>Le Bateleur (I)</strong> &mdash; Initiative, premier pas, nouvelle relation</li>
                 <li>&bull; <strong>L&apos;Imp&eacute;ratrice (III)</strong> &mdash; S&eacute;duction, f&eacute;condit&eacute;</li>
-                <li>&bull; <strong>Temp&eacute;rance (XIV)</strong> &mdash; Harmonie, patience r&eacute;compens&eacute;e</li>
-                <li>&bull; <strong>Le Monde (XXI)</strong> &mdash; Accomplissement amoureux</li>
-                <li>&bull; <strong>La Force (XI)</strong> &mdash; Ma&icirc;trise, passion contr&ocirc;l&eacute;e</li>
+                <li>&bull; <strong>L&apos;Empereur (IV)</strong> &mdash; Stabilit&eacute;, engagement structur&eacute;</li>
                 <li>&bull; <strong>Le Chariot (VII)</strong> &mdash; Avanc&eacute;e, conqu&ecirc;te sentimentale</li>
+                <li>&bull; <strong>La Force (XI)</strong> &mdash; Ma&icirc;trise, passion contr&ocirc;l&eacute;e</li>
+                <li>&bull; <strong>Les Amoureux (VI)</strong> &mdash; Union, choix du c&oelig;ur, r&eacute;ciprocit&eacute;</li>
+                <li>&bull; <strong>Temp&eacute;rance (XIV)</strong> &mdash; Harmonie, patience r&eacute;compens&eacute;e</li>
+                <li>&bull; <strong>L&apos;&Eacute;toile (XVII)</strong> &mdash; Espoir, renouveau sentimental</li>
+                <li>&bull; <strong>Le Soleil (XIX)</strong> &mdash; Bonheur amoureux, sinc&eacute;rit&eacute;</li>
+                <li>&bull; <strong>Le Monde (XXI)</strong> &mdash; Accomplissement amoureux</li>
               </ul>
             </div>
 
             <div className="bg-red-50 border-2 border-red-300 rounded-xl p-5">
               <h3 className="font-bold text-lg mb-3 text-red-700 text-center">&#x274C; Cartes NON en Amour</h3>
               <ul className="text-gray-700 text-sm space-y-2">
-                <li>&bull; <strong>La Tour (XVI)</strong> &mdash; Rupture, bouleversement</li>
-                <li>&bull; <strong>Le Diable (XV)</strong> &mdash; D&eacute;pendance, manipulation</li>
-                <li>&bull; <strong>La Mort (XIII)</strong> &mdash; Fin de cycle, transformation</li>
                 <li>&bull; <strong>L&apos;Ermite (IX)</strong> &mdash; Solitude, retrait</li>
                 <li>&bull; <strong>Le Pendu (XII)</strong> &mdash; Blocage, sacrifice</li>
-                <li>&bull; <strong>La Maison Dieu (XVI)</strong> &mdash; D&eacute;struction n&eacute;cessaire</li>
+                <li>&bull; <strong>La Mort (XIII)</strong> &mdash; Fin de cycle, transformation</li>
+                <li>&bull; <strong>Le Diable (XV)</strong> &mdash; D&eacute;pendance, manipulation</li>
+                <li>&bull; <strong>La Maison Dieu (XVI)</strong> &mdash; Rupture, bouleversement soudain</li>
               </ul>
             </div>
           </div>
@@ -235,10 +236,13 @@ export default function TarotOuiNonAmourPage() {
               Certains <strong>arcanes</strong> ne sont ni clairement oui ni clairement non. Leur signification d&eacute;pend enti&egrave;rement du contexte de votre <strong>question amoureuse</strong> et des cartes qui les accompagnent dans le <strong>tirage</strong>.
             </p>
             <ul className="text-gray-700 text-sm space-y-1">
+              <li>&bull; <strong>Le Fou (0)</strong> &mdash; Facteur impr&eacute;visible, saut dans l&apos;inconnu : la r&eacute;ponse d&eacute;pend de votre audace</li>
+              <li>&bull; <strong>La Papesse (II)</strong> &mdash; Sentiments tus, patience n&eacute;cessaire : la v&eacute;rit&eacute; n&apos;est pas encore r&eacute;v&eacute;l&eacute;e</li>
+              <li>&bull; <strong>Le Pape (V)</strong> &mdash; Engagement possible si engagement mutuel</li>
+              <li>&bull; <strong>La Justice (VIII)</strong> &mdash; R&eacute;ponse &eacute;quitable qui d&eacute;pend de la sinc&eacute;rit&eacute; de chacun</li>
+              <li>&bull; <strong>La Roue de Fortune (X)</strong> &mdash; Changement imminent, le destin d&eacute;cide</li>
               <li>&bull; <strong>La Lune (XVIII)</strong> &mdash; Illusions, confusion : la r&eacute;ponse est floue, attendez</li>
               <li>&bull; <strong>Le Jugement (XX)</strong> &mdash; Renaissance possible si action, lien karmique</li>
-              <li>&bull; <strong>La Roue de Fortune (X)</strong> &mdash; Changement imminent, le destin d&eacute;cide</li>
-              <li>&bull; <strong>Le Pape (V)</strong> &mdash; Engagement possible si engagement mutuel</li>
             </ul>
           </div>
 
@@ -368,6 +372,8 @@ export default function TarotOuiNonAmourPage() {
           <div className="space-y-2">
             <Link href="/voyance-gratuite-amour" className="block text-emerald-600 hover:text-emerald-800 font-medium">&rarr; Voyance Gratuite Amour : Guide Complet</Link>
             <Link href="/voyance-gratuite-amour/tarot-amour-gratuit" className="block text-emerald-600 hover:text-emerald-800 font-medium">&rarr; Tarot Amour Gratuit : Tirage et Interpr&eacute;tation</Link>
+            <Link href="/voyance-gratuite-amour/tarot-du-jour-amour" className="block text-emerald-600 hover:text-emerald-800 font-medium">&rarr; Tarot du Jour Amour Gratuit</Link>
+            <Link href="/voyance-gratuite-amour/tarot-futur-proche-amour" className="block text-emerald-600 hover:text-emerald-800 font-medium">&rarr; Tarot Futur Proche Amour Gratuit</Link>
             <Link href="/reconquete/va-t-il-elle-revenir" className="block text-emerald-600 hover:text-emerald-800 font-medium">&rarr; Va-t-il/elle Revenir ? Pr&eacute;dictions</Link>
             <Link href="/sentiments/pense-t-il-elle-a-moi" className="block text-emerald-600 hover:text-emerald-800 font-medium">&rarr; Pense-t-il/elle &agrave; Moi ?</Link>
             <Link href="/reconquete/ex-qui-revient" className="block text-emerald-600 hover:text-emerald-800 font-medium">&rarr; Signes qu&apos;un Ex Revient</Link>

@@ -21,7 +21,7 @@ export default function MediumAmourPage() {
     description: 'Découvrez ce qu\'est un médium en amour : dons médiumniques, déroulement d\'une consultation, ce qu\'un médium peut révéler sur votre vie sentimentale. Guide complet de la médiumnité amoureuse.',
     url: 'https://www.voyantlove.fr/methodes-voyance/medium-amour/',
     datePublished: '2026-08-06',
-    dateModified: '2026-08-06',
+    dateModified: '2026-08-07',
     keywords: ['médium amour', 'médium amoureux', 'médiumnité amour', 'consultation médium sentimental'],
   });
 
@@ -49,6 +49,10 @@ export default function MediumAmourPage() {
     {
       question: 'Quels sont les différents dons médiumniques utilisés en amour ?',
       answer: 'Les praticiens distinguent principalement la clairvoyance (perception d\'images), la clairaudience (perception de mots ou de sons) et la clairsentience (perception d\'émotions et de sensations physiques). Un médium peut posséder un ou plusieurs de ces dons, qu\'il mobilise selon la nature de votre question amoureuse.',
+    },
+    {
+      question: 'Qu’est-ce qu’un médium sans support en amour ?',
+      answer: 'Un médium sans support affirme recevoir ses perceptions directement, sans tirer de cartes ni utiliser de pendule ou de boule de cristal. Il peut demander quelques informations de contexte pour cadrer la question, puis décrire les images, mots ou ressentis qui lui viennent. « Sans support » décrit donc sa méthode de perception, pas une absence de dialogue avec la personne qui consulte.',
     },
   ]);
 
@@ -81,7 +85,7 @@ export default function MediumAmourPage() {
           <div><div className="text-3xl mb-1">💜</div><div className="text-2xl font-bold text-purple-700">Guidance</div><div className="text-sm text-gray-600">Pas une prédiction figée</div></div>
         </div>
 
-        <EEATSignal colorScheme="purple" method="Médiumnité et guidance sentimentale par channeling" />
+        <EEATSignal colorScheme="purple" method="Médiumnité et guidance sentimentale par channeling" lastUpdated="7 août 2026" />
 
         {/* Answer capsule */}
         <article className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-purple-700">
@@ -119,6 +123,23 @@ export default function MediumAmourPage() {
           <div className="bg-purple-100 border-l-4 border-purple-600 p-5 rounded-lg mt-6">
             <p className="text-gray-700"><strong>Bon à savoir :</strong> la plupart des médiums combinent plusieurs de ces dons au cours d&apos;une même séance, et certains pratiquent également le <strong>channeling</strong> — la réception de messages venant de guides spirituels — pour enrichir leur lecture de votre situation sentimentale.</p>
           </div>
+        </section>
+
+        <section id="sans-support" className="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-xl p-8 mb-8 border-2 border-indigo-200">
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">🕊️ Médium Sans Support en Amour : une Perception Sans Outil</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Un médium dit « sans support » ne tire ni tarot ni oracle et n’utilise pas de pendule : il s’appuie sur ses perceptions directes pour éclairer la question sentimentale.</p>
+          <p className="text-gray-700 leading-relaxed mb-5">Dans une consultation amoureuse, cette approche commence généralement par une question claire et quelques éléments de contexte. Le praticien se concentre ensuite sur les images, mots, sensations ou impressions qu’il affirme recevoir. Il les restitue au fil de l’échange, puis la personne qui consulte peut demander des précisions. L’absence de cartes ne signifie donc pas une séance muette ni une réponse instantanée sans contexte.</p>
+          <div className="grid md:grid-cols-2 gap-5 mb-5">
+            <div className="bg-white rounded-lg p-5 border-l-4 border-indigo-500">
+              <h3 className="font-bold text-indigo-800 mb-2">Ce qui distingue cette pratique</h3>
+              <p className="text-gray-700 text-sm">Le tarot construit une lecture à partir d’une symbolique visible et structurée. Le médium sans support présente sa lecture comme une perception spontanée, souvent par clairvoyance, clairaudience ou clairsentience. Certains praticiens proposent toutefois un support en complément si la question demande une structure plus précise.</p>
+            </div>
+            <div className="bg-white rounded-lg p-5 border-l-4 border-purple-500">
+              <h3 className="font-bold text-purple-800 mb-2">Questions adaptées en amour</h3>
+              <p className="text-gray-700 text-sm">Cette méthode convient surtout à une demande ouverte sur l’ambiance d’une relation, les ressentis dominants, un blocage ou une direction possible. Pour comparer plusieurs scénarios ou construire une chronologie détaillée, un tirage de cartes structuré peut être plus lisible.</p>
+            </div>
+          </div>
+          <p className="text-gray-700 leading-relaxed">Avant de consulter, demandez au praticien s’il travaille entièrement sans outil ou s’il combine médiumnité et tarot. Vous saurez ainsi quel type de dialogue et de restitution attendre pendant la séance.</p>
         </section>
 
         {/* Section 2: Ce qu'un médium peut apporter */}
@@ -231,6 +252,10 @@ export default function MediumAmourPage() {
               <h3 className="text-xl font-bold text-gray-900 mb-3">Quels sont les différents dons médiumniques utilisés en amour ?</h3>
               <p className="text-gray-700 leading-relaxed">Les praticiens distinguent principalement la clairvoyance (perception d&apos;images), la clairaudience (perception de mots ou de sons) et la clairsentience (perception d&apos;émotions et de sensations physiques). Un médium peut posséder un ou plusieurs de ces dons.</p>
             </div>
+            <div className="border-t border-gray-200 pt-6">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Qu’est-ce qu’un médium sans support en amour ?</h3>
+              <p className="text-gray-700 leading-relaxed">Un médium sans support affirme recevoir ses perceptions directement, sans tirer de cartes ni utiliser de pendule ou de boule de cristal. Il peut demander quelques informations de contexte pour cadrer la question, puis décrit les images, mots ou ressentis qui lui viennent. « Sans support » décrit sa méthode de perception, pas une absence de dialogue.</p>
+            </div>
           </div>
         </section>
 
@@ -239,6 +264,8 @@ export default function MediumAmourPage() {
           <h3 className="font-bold text-lg mb-4 text-gray-900">📚 Méthodes de Voyance Complémentaires</h3>
           <div className="grid md:grid-cols-2 gap-3">
             <Link href="/methodes-voyance" className="block text-purple-700 hover:text-purple-900 font-medium">&rarr; Toutes les Méthodes de Voyance Amoureuse</Link>
+            <Link href="/methodes-voyance/suis-je-medium-comment-savoir" className="block text-purple-700 hover:text-purple-900 font-medium">&rarr; Suis-je Médium ? Comment le Savoir</Link>
+
             <Link href="/methodes-voyance/voyance-sentimentale" className="block text-purple-700 hover:text-purple-900 font-medium">&rarr; Voyance Sentimentale</Link>
             <Link href="/methodes-voyance/boule-de-cristal-amour" className="block text-purple-700 hover:text-purple-900 font-medium">&rarr; Boule de Cristal Amour</Link>
             <Link href="/methodes-voyance/voyance-telephone-amour" className="block text-purple-700 hover:text-purple-900 font-medium">&rarr; Voyance par Téléphone</Link>

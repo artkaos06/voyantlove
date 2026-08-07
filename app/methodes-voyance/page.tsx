@@ -125,7 +125,7 @@ export default function MethodesVoyanceHubPage() {
             <Link href="/methodes-voyance/voyance-par-mail-amour" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-amber-500">
               <div className="text-4xl mb-4">📧</div>
               <h3 className="text-2xl font-bold mb-3">Voyance par Mail</h3>
-              <p className="text-gray-600 mb-4">Consultation voyance amour par email : posez vos questions et recevez une analyse détaillée.</p>
+              <p className="text-gray-600 mb-4">Guide pratique du fonctionnement d’une consultation écrite par email et alternative immédiate en direct.</p>
               <span className="text-amber-600 font-semibold">Découvrir →</span>
             </Link>
 
@@ -198,6 +198,22 @@ export default function MethodesVoyanceHubPage() {
               <p className="text-gray-600 mb-4">La tasséographie : les symboles du marc de café appliqués à vos questions de cœur.</p>
               <span className="text-amber-700 font-semibold">Découvrir →</span>
             </Link>
+
+            <Link href="/methodes-voyance/ascendant-amour" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-violet-500">
+              <div className="text-4xl mb-4">🌅</div>
+              <h3 className="text-2xl font-bold mb-3">Ascendant en Amour</h3>
+              <p className="text-gray-600 mb-4">Ce que votre signe ascendant révèle sur votre style de séduction et la première attraction.</p>
+              <span className="text-violet-600 font-semibold">Découvrir →</span>
+            </Link>
+
+            <Link href="/methodes-voyance/suis-je-medium-comment-savoir" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-fuchsia-500">
+              <div className="text-4xl mb-4">🌙</div>
+              <h3 className="text-2xl font-bold mb-3">Suis-je Médium ?</h3>
+              <p className="text-gray-600 mb-4">Les signes d&apos;une sensibilité médiumnique dans votre vie sentimentale : comment savoir.</p>
+              <span className="text-fuchsia-600 font-semibold">Découvrir →</span>
+            </Link>
+
+
           </div>
         </section>
 
