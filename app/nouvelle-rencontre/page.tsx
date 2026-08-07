@@ -7,15 +7,15 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
 export const metadata: Metadata = {
-  title: 'Voyance Rencontre Amoureuse : Quand Allez-Vous Trouver l\'Amour ?',
-  description: 'Voyance rencontre : quand et comment allez-vous rencontrer l\'amour ? Prédictions tarot, timing astrologique et guidance voyance pour votre nouvelle rencontre.',
+  title: 'Voyance Rencontre : Quand Trouver l\'Amour ?',
+  description: 'Voyance rencontre : quand et comment allez-vous rencontrer l\'amour ? Prédictions tarot et timing astrologique pour votre prochaine rencontre amoureuse.',
   alternates: { canonical: 'https://www.voyantlove.fr/nouvelle-rencontre/' },
 };
 
 export default function NouvelleRencontreHubPage() {
   const webPageSchema = getWebPageSchema({
-    title: 'Voyance Rencontre Amoureuse : Quand Allez-Vous Trouver l\'Amour ? | VoyantLove',
-    description: 'Voyance rencontre : quand et comment allez-vous rencontrer l\'amour ? Prédictions tarot, timing astrologique et guidance voyance pour votre nouvelle rencontre.',
+    title: 'Voyance Rencontre : Quand Trouver l\'Amour ? | VoyantLove',
+    description: 'Voyance rencontre : quand et comment allez-vous rencontrer l\'amour ? Prédictions tarot et timing astrologique pour votre prochaine rencontre amoureuse.',
     url: 'https://www.voyantlove.fr/nouvelle-rencontre/',
   });
 

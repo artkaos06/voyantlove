@@ -9,9 +9,9 @@ import DynamicCTAButton from '@/components/DynamicCTAButton';
 
 export const metadata: Metadata = {
   title: {
-    absolute: 'Voyant Spécialisé Amour en Ligne | VoyantLove',
+    absolute: 'Voyant ou Voyante Amour en Ligne | VoyantLove',
   },
-  description: 'Consultez un voyant spécialisé en amour : reconquête, sentiments, rencontre, rupture. Guidance personnalisée par tarot et clairvoyance. 10 min offertes.',
+  description: 'Consultez un voyant ou une voyante spécialisé en amour : reconquête, sentiments, rencontre, rupture. Tarot et clairvoyance, 10 min offertes.',
   alternates: { canonical: 'https://www.voyantlove.fr/' },
 };
 
@@ -71,7 +71,7 @@ export default function HomePage() {
             💜 VoyantLove
           </h1>
           <p className="text-2xl mb-3 opacity-95 font-semibold">
-            Vos Voyants Spécialisés en Amour
+            Vos Voyants et Voyantes Spécialisés en Amour
           </p>
           <p className="text-lg mb-8 max-w-2xl mx-auto opacity-90">
             Reconquête, sentiments, rencontre, rupture — consultez un voyant expert qui se consacre exclusivement aux questions du cœur.

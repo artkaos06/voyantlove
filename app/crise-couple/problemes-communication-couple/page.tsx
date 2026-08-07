@@ -88,7 +88,7 @@ export default function ProblemesCommunicationCouplePage() {
       <header className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-white py-16 px-4">
         <div className="max-w-4xl mx-auto">
           <Link href="/crise-couple" className="text-white/80 hover:text-white mb-4 inline-block">← Retour aux Crises de Couple</Link>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Problème de Communication Couple : Solutions Concrètes</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">Communication Couple Difficile : Solutions Concrètes</h1>
           <p className="text-xl opacity-95 mb-6">Communication couple difficile ? Techniques pour reconstruire le dialogue et retrouver la compr&eacute;hension mutuelle</p>
           <div className="flex gap-4 flex-wrap">
             <a href="#solutions" className="bg-white text-purple-600 px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition">Solutions Concrètes</a>

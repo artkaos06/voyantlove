@@ -7,16 +7,16 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
 export const metadata: Metadata = {
-  title: 'Voyance Gratuite Amour : Tirage Tarot',
-  description: 'Voyance gratuite amour en ligne : tirage tarot, oracle, tarot oui/non et horoscope amoureux. Immédiate, sans engagement, sans carte bancaire.',
-  keywords: ['voyance gratuite amour', 'voyance amour gratuite', 'voyance amoureuse gratuite', 'voyance amour gratuite en ligne', 'voyance gratuite amour en ligne', 'tarot amour gratuit', 'voyance amour gratuite immediate'],
+  title: 'Voyance Gratuite Amour en Ligne : Tirage Tarot',
+  description: 'Voyance gratuite amour en ligne : tirage tarot, oracle, tarot oui/non et horoscope amoureux. Voyance amoureuse immédiate, sans engagement ni carte bancaire.',
+  keywords: ['voyance gratuite amour', 'voyance amour gratuite', 'voyance amoureuse gratuite', 'voyance amour gratuite en ligne', 'voyance gratuite amour en ligne', 'tarot amour gratuit', 'voyance amour gratuite immediate', 'voyance amoureuse', 'voyance en amour'],
   alternates: { canonical: 'https://www.voyantlove.fr/voyance-gratuite-amour/' },
 };
 
 export default function VoyanceGratuiteAmourHubPage() {
   const webPageSchema = getWebPageSchema({
-    title: 'Voyance Gratuite Amour : Tirage Tarot',
-    description: 'Voyance gratuite amour en ligne : tirage tarot, oracle, tarot oui/non et horoscope amoureux. Immédiate, sans engagement, sans carte bancaire.',
+    title: 'Voyance Gratuite Amour en Ligne : Tirage Tarot',
+    description: 'Voyance gratuite amour en ligne : tirage tarot, oracle, tarot oui/non et horoscope amoureux. Voyance amoureuse immédiate, sans engagement ni carte bancaire.',
     url: 'https://www.voyantlove.fr/voyance-gratuite-amour/',
   });
 
@@ -75,7 +75,7 @@ export default function VoyanceGratuiteAmourHubPage() {
           <Link href="/" className="text-white/80 hover:text-white mb-4 inline-block">&larr; Accueil</Link>
           <h1 className="text-5xl font-bold mb-6">🌟 Voyance Gratuite Amour</h1>
           <p className="text-2xl opacity-95 mb-8">Tirages et Guidance Sentimentale Sans Engagement</p>
-          <p className="text-lg opacity-90 max-w-2xl mx-auto">Découvrez la <Link href="/voyance-amour" className="text-white underline hover:text-white/80 font-medium">voyance amoureuse</Link> gratuite : tarot, oracle et horoscope pour éclairer votre <strong>vie sentimentale</strong> en toute confiance.</p>
+          <p className="text-lg opacity-90 max-w-2xl mx-auto">La <strong>voyance gratuite amour</strong> vous ouvre les portes de la <Link href="/voyance-amour" className="text-white underline hover:text-white/80 font-medium">voyance amoureuse</Link> : tarot, oracle et horoscope pour éclairer votre <strong>vie sentimentale</strong> en toute confiance.</p>
         </div>
       </header>
 
