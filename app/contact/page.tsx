@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import { getWebPageSchema, getBreadcrumbSchema, getOrganizationSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
   title: 'Contact',
@@ -8,8 +9,33 @@ export const metadata: Metadata = {
 };
 
 export default function ContactPage() {
+  const webPageSchema = getWebPageSchema({
+    title: 'Contact — VoyantLove.fr',
+    description: 'Contactez VoyantLove.fr pour toute question sur nos services de voyance amoureuse.',
+    url: 'https://www.voyantlove.fr/contact/',
+  });
+
+  const breadcrumbSchema = getBreadcrumbSchema([
+    { name: 'Accueil', url: 'https://www.voyantlove.fr' },
+    { name: 'Contact', url: 'https://www.voyantlove.fr/contact/' },
+  ]);
+
+  const organizationSchema = getOrganizationSchema();
+
   return (
     <main className="min-h-screen bg-gray-50">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+      />
       <header className="bg-gradient-to-r from-purple-600 to-purple-800 text-white py-12 px-4">
         <div className="max-w-4xl mx-auto">
           <Link href="/" className="text-white/80 hover:text-white mb-4 inline-block">← Retour à l'accueil</Link>
