@@ -138,7 +138,7 @@ export default function OracleGratuitAmourPage() {
             <div className="bg-emerald-50 border-l-4 border-emerald-500 p-5 rounded-lg">
               <h3 className="font-bold text-lg mb-2 text-emerald-700">Approche de la Question Sentimentale</h3>
               <p className="text-gray-700 text-sm">
-                Le <strong>tarot</strong> excelle dans l&apos;analyse d&eacute;taill&eacute;e des situations complexes gr&acirc;ce &agrave; ses tirages structur&eacute;s en positions pr&eacute;cises. Il d&eacute;compose la situation amoureuse en facettes multiples : pass&eacute;, pr&eacute;sent, avenir, obstacles et conseils. L&apos;<strong>oracle gratuit amour</strong>, lui, privil&eacute;gie une r&eacute;ponse plus directe et intuitive. Chaque carte d&eacute;livre un message clair, souvent accompagn&eacute; d&apos;un mot-cl&eacute; ou d&apos;une phrase qui &eacute;claire imm&eacute;diatement votre <strong>question sentimentale</strong>.
+                Le <strong>tarot</strong> excelle dans l&apos;analyse d&eacute;taill&eacute;e des situations complexes gr&acirc;ce &agrave; ses tirages structur&eacute;s en positions pr&eacute;cises. Il d&eacute;compose la situation amoureuse en facettes multiples : pass&eacute;, pr&eacute;sent, avenir, obstacles et conseils. L&apos;<strong>oracle gratuit amour</strong>, lui, privil&eacute;gie une r&eacute;ponse plus directe et intuitive. Chaque carte d&eacute;livre un message clair, souvent accompagn&eacute; d&apos;un mot-cl&eacute; ou d&apos;une phrase qui &eacute;claire imm&eacute;diatement votre <strong>question sentimentale</strong>. Si vous pr&eacute;f&eacute;rez rester c&ocirc;t&eacute; cartomancie tout en gardant cette imm&eacute;diatet&eacute;, le <Link href="/voyance-gratuite-amour/tarot-oui-non-amour" className="text-teal-600 hover:text-teal-800 underline font-medium">tarot oui/non amour</Link> offre la m&ecirc;me r&eacute;ponse directe, sous forme binaire.
               </p>
             </div>
 
@@ -334,6 +334,7 @@ export default function OracleGratuitAmourPage() {
             <Link href="/rupture/chagrin-damour" className="block text-teal-600 hover:text-teal-800 font-medium">&rarr; Chagrin d&apos;Amour : Surmonter la Douleur</Link>
             <Link href="/rupture/guerir-rupture" className="block text-teal-600 hover:text-teal-800 font-medium">&rarr; Gu&eacute;rir d&apos;une Rupture Amoureuse</Link>
             <Link href="/voyance-gratuite-amour/tarot-amour-gratuit" className="block text-teal-600 hover:text-teal-800 font-medium">&rarr; Tarot Amour Gratuit : Tirage Sentimental</Link>
+            <Link href="/voyance-gratuite-amour/tarot-oui-non-amour" className="block text-teal-600 hover:text-teal-800 font-medium">&rarr; Tarot Oui Non Amour : R&eacute;ponse Imm&eacute;diate</Link>
           </div>
         </div>
 
