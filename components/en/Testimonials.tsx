@@ -1,4 +1,4 @@
-// Testimonials section — 3 paraphrased real reviews from Keen's public
+// Testimonials section, 3 paraphrased real reviews from Keen's public
 // review pages.
 //
 // Sourcing model:
@@ -25,9 +25,9 @@ interface Testimonial {
   name: string;
   /** Optional age + location for grounded specificity. */
   meta: string;
-  /** The quote itself — paraphrased from a real Keen review. */
+  /** The quote itself, paraphrased from a real Keen review. */
   quote: string;
-  /** Outcome line in italic below quote — what they reported happened. */
+  /** Outcome line in italic below quote, what they reported happened. */
   outcome: string;
   /** Source attribution. */
   source: string;
@@ -40,7 +40,7 @@ const TESTIMONIALS: Testimonial[] = [
     name: 'Erin',
     meta: '31 · East Coast',
     quote:
-      'She remembered things from our previous calls and made the reading feel personal — not scripted. She told me my ex was struggling and would reach out.',
+      'She remembered things from our previous calls and made the reading feel personal, not scripted. She told me my ex was struggling and would reach out.',
     outcome: 'They texted me 9 days later.',
     source: 'Paraphrased from a recent 5-star review on Briaz’s Keen profile',
     initialBgClass: 'from-rose-400 to-pink-500',
@@ -49,7 +49,7 @@ const TESTIMONIALS: Testimonial[] = [
     name: 'David',
     meta: '34 · Pacific Northwest',
     quote:
-      'I was completely skeptical going in. She described things about my partner she couldn’t have known. The 5-minute trial sold me — I stayed on for another 20.',
+      'I was completely skeptical going in. She described things about my partner she couldn’t have known. The 5-minute trial sold me, I stayed on for another 20.',
     outcome: 'I’ve been a regular ever since.',
     source: 'Paraphrased from a recent review on Keen’s Love & Relationships category',
     initialBgClass: 'from-indigo-400 to-blue-500',
@@ -58,7 +58,7 @@ const TESTIMONIALS: Testimonial[] = [
     name: 'Jenna',
     meta: '35 · Midwest',
     quote:
-      'She told me my person was confused, not over me. The advisor was honest about what she saw and what she didn’t — no false promises, just clarity.',
+      'She told me my person was confused, not over me. The advisor was honest about what she saw and what she didn’t, no false promises, just clarity.',
     outcome: 'Three weeks later they asked to meet.',
     source: 'Paraphrased from a recent 5-star review on Lollie’s Keen profile',
     initialBgClass: 'from-amber-400 to-orange-500',
@@ -73,7 +73,7 @@ export default function Testimonials() {
           Real outcomes from recent users
         </p>
         <h2 className="text-2xl md:text-3xl font-extrabold text-gray-900">
-          People who couldn&apos;t stop wondering — until they got a real
+          People who couldn&apos;t stop wondering, until they got a real
           read.
         </h2>
       </div>
@@ -121,7 +121,7 @@ export default function Testimonials() {
 
       <p className="text-center text-xs text-gray-500 italic mt-6 max-w-2xl mx-auto">
         Paraphrased from publicly-visible Keen reviews. User experiences
-        vary — psychic readings are for entertainment and personal
+        vary, psychic readings are for entertainment and personal
         reflection, not guaranteed predictions.
       </p>
     </section>

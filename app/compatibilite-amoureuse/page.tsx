@@ -38,12 +38,12 @@ export default function CompatibiliteHubPage() {
           <Link href="/" className="text-white/80 hover:text-white mb-4 inline-block">← Accueil</Link>
           <h1 className="text-5xl font-bold mb-6">💞 Compatibilité Amoureuse des Signes</h1>
           <p className="text-2xl opacity-95 mb-4">Chaque duo du zodiaque a sa propre alchimie</p>
-          <p className="text-lg opacity-90 max-w-2xl mx-auto">Dynamique, forces, défis et conseils — signe par signe, couple par couple.</p>
+          <p className="text-lg opacity-90 max-w-2xl mx-auto">Dynamique, forces, défis et conseils, signe par signe, couple par couple.</p>
         </div>
       </header>
 
       <div className="max-w-4xl mx-auto px-4 py-8">
-        {/* Calculator first — answers the "are we compatible" intent immediately */}
+        {/* Calculator first, answers the "are we compatible" intent immediately */}
         <section id="calculateur" className="mb-8">
           <SynastryCalculator />
         </section>
@@ -53,7 +53,7 @@ export default function CompatibiliteHubPage() {
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-4 text-gray-900">Les compatibilités analysées</h2>
           <p className="text-lg text-gray-700 mb-8">
-            Chaque analyse détaille la dynamique du couple, ses forces naturelles, ses défis récurrents et le conseil clé pour durer. Les autres duos du zodiaque arrivent progressivement — testez le vôtre avec le calculateur en attendant.
+            Chaque analyse détaille la dynamique du couple, ses forces naturelles, ses défis récurrents et le conseil clé pour durer. Les autres duos du zodiaque arrivent progressivement, testez le vôtre avec le calculateur en attendant.
           </p>
           <div className="grid md:grid-cols-2 gap-6">
             {LIVE_PAIRS.map((p) => {

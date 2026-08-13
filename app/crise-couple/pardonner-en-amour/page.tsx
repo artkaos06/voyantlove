@@ -1,94 +1,69 @@
-import type { Metadata } from 'next';
 import Link from 'next/link';
-import { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getAuthorSchema } from '@/lib/schema';
-import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
-import VoyantFinalCTA from '@/components/VoyantFinalCTA';
+import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
-export const metadata: Metadata = {
+const config: ContentPageConfig = {
   title: 'Pardonner en Amour : Le Chemin vers la Guérison',
   description: 'Comment pardonner en amour et reconstruire la confiance dans votre couple. Guidance voyance et tarot pour le pardon authentique et la guérison.',
+  url: 'https://www.voyantlove.fr/crise-couple/pardonner-en-amour/',
   keywords: ['pardonner en amour', 'pardon couple', 'reconstruire confiance', 'pardon trahison', 'voyance pardon'],
-  alternates: { canonical: 'https://www.voyantlove.fr/crise-couple/pardonner-en-amour/' },
-};
-
-export default function PardonnerEnAmourPage() {
-  const articleSchema = getArticleSchema({
-    title: 'Pardonner en Amour : Le Chemin vers la Guérison',
-    description: 'Comment pardonner en amour et reconstruire la confiance dans votre couple. Guidance voyance et tarot pour le pardon authentique et la guérison.',
-    url: 'https://www.voyantlove.fr/crise-couple/pardonner-en-amour/',
-    datePublished: '2026-03-22',
-    dateModified: '2026-03-22',
-    keywords: ['pardonner en amour', 'pardon couple', 'reconstruire confiance', 'pardon trahison', 'voyance pardon'],
-  });
-
-  const faqSchema = getFAQSchema([
-    {
-      question: 'Le tarot peut-il aider à savoir si je dois pardonner ?',
-      answer: 'Le tarot ne décide pas à votre place, mais il éclaire les dimensions invisibles de la situation. Un tirage spécifique analyse la sincérité du repentir de l\'autre, les risques de récidive, votre capacité émotionnelle à pardonner authentiquement, et les conséquences probables du pardon ou du refus de pardonner. Les cartes comme le Jugement indiquent un renouveau possible après le pardon, tandis que le Diable en position d\'obstacle met en garde contre un schéma de répétition. La voyance complète cette lecture en captant les intentions profondes de chaque partenaire au-delà des mots prononcés.',
-    },
-    {
-      question: 'Combien de temps faut-il pour pardonner une trahison amoureuse ?',
-      answer: 'Le pardon authentique après une trahison amoureuse prend en moyenne 6 à 18 mois, selon la gravité de la blessure et l\'engagement des deux partenaires dans la reconstruction. La voyance observe que le processus traverse plusieurs phases : le choc, la colère, la négociation, la tristesse profonde, puis l\'acceptation et enfin le pardon véritable. Le tarot peut identifier à quelle phase vous vous trouvez et combien de temps chaque étape durera. Les transits de Pluton et de Chiron marquent souvent les tournants décisifs dans ce parcours de guérison.',
-    },
-    {
-      question: 'Pardonner signifie-t-il oublier ce qui s\'est passé ?',
-      answer: 'Non. Pardonner n\'est jamais oublier. Le pardon authentique reconnaît pleinement la blessure tout en choisissant de ne plus laisser la rancune gouverner votre vie et votre relation. La voyance fait une distinction claire entre le pardon qui libère et le déni qui étouffe. En tarot, la carte de la Tempérance symbolise cet équilibre délicat : intégrer la douleur sans la nier, avancer sans effacer. Oublier serait dangereux car cela reviendrait à ignorer les leçons de l\'expérience et à risquer de revivre la même situation.',
-    },
-    {
-      question: 'Comment la voyance aide-t-elle à reconstruire la confiance ?',
-      answer: 'La voyance accompagne la reconstruction de la confiance en éclairant trois aspects essentiels. Premièrement, elle vérifie la sincérité du repentir et des intentions de changement de l\'autre. Deuxièmement, elle identifie les étapes concrètes pour rebâtir progressivement un sentiment de sécurité. Troisièmement, elle révèle les moments astrologiques favorables aux avancées relationnelles. Le tarot fonctionne comme un radar émotionnel qui capte les progrès réels, les rechutes et les zones encore fragiles de votre couple en reconstruction.',
-    },
-  ]);
-
-  const breadcrumbSchema = getBreadcrumbSchema([
+  datePublished: '2026-03-22',
+  dateModified: '2026-03-22',
+  breadcrumb: [
     { name: 'Accueil', url: 'https://www.voyantlove.fr' },
     { name: 'Crise de Couple', url: 'https://www.voyantlove.fr/crise-couple/' },
     { name: 'Pardonner en Amour', url: 'https://www.voyantlove.fr/crise-couple/pardonner-en-amour/' },
-  ]);
+  ],
+  header: {
+    emoji: '🕊️',
+    h1: 'Pardonner en Amour : Le Chemin vers la Guérison',
+    subtitle: 'Guidance voyance et tarot pour le pardon authentique et la reconstruction',
+    gradient: 'from-amber-500 via-orange-500 to-amber-600',
+    backLink: { href: '/crise-couple', label: 'Crise de Couple' },
+    anchors: [
+      { href: '#consultation', label: 'Consultation Pardon', primary: true },
+    ],
+  },
+  accentText: 'text-amber-600',
+  stats: [
+    { icon: '⭐', value: '4.8/5', label: '264 avis' },
+    { icon: '🕊️', value: '84%', label: 'Ont pardonné' },
+    { icon: '⏰', value: '30 min', label: 'Consultation' },
+    { icon: '🔮', value: '15 ans', label: 'Expérience' },
+  ],
+  eeat: { colorScheme: 'orange', method: 'Tarot du pardon et guidance de guérison' },
+  cta: { topic: 'crise-couple', slug: 'pardonner-en-amour' },
+  faq: [
+    {
+      q: 'Le tarot peut-il aider à savoir si je dois pardonner ?',
+      a: 'Le tarot ne décide pas à votre place, mais il éclaire les dimensions invisibles de la situation. Un tirage spécifique analyse la sincérité du repentir de l\'autre, les risques de récidive, votre capacité émotionnelle à pardonner authentiquement, et les conséquences probables du pardon ou du refus de pardonner. Les cartes comme le Jugement indiquent un renouveau possible après le pardon, tandis que le Diable en position d\'obstacle met en garde contre un schéma de répétition. La voyance complète cette lecture en captant les intentions profondes de chaque partenaire au-delà des mots prononcés.',
+    },
+    {
+      q: 'Combien de temps faut-il pour pardonner une trahison amoureuse ?',
+      a: 'Le pardon authentique après une trahison amoureuse prend en moyenne 6 à 18 mois, selon la gravité de la blessure et l\'engagement des deux partenaires dans la reconstruction. La voyance observe que le processus traverse plusieurs phases : le choc, la colère, la négociation, la tristesse profonde, puis l\'acceptation et enfin le pardon véritable. Le tarot peut identifier à quelle phase vous vous trouvez et combien de temps chaque étape durera. Les transits de Pluton et de Chiron marquent souvent les tournants décisifs dans ce parcours de guérison.',
+    },
+    {
+      q: 'Pardonner signifie-t-il oublier ce qui s\'est passé ?',
+      a: 'Non. Pardonner n\'est jamais oublier. Le pardon authentique reconnaît pleinement la blessure tout en choisissant de ne plus laisser la rancune gouverner votre vie et votre relation. La voyance fait une distinction claire entre le pardon qui libère et le déni qui étouffe. En tarot, la carte de la Tempérance symbolise cet équilibre délicat : intégrer la douleur sans la nier, avancer sans effacer. Oublier serait dangereux car cela reviendrait à ignorer les leçons de l\'expérience et à risquer de revivre la même situation.',
+    },
+    {
+      q: 'Comment la voyance aide-t-elle à reconstruire la confiance ?',
+      a: 'La voyance accompagne la reconstruction de la confiance en éclairant trois aspects essentiels. Premièrement, elle vérifie la sincérité du repentir et des intentions de changement de l\'autre. Deuxièmement, elle identifie les étapes concrètes pour rebâtir progressivement un sentiment de sécurité. Troisièmement, elle révèle les moments astrologiques favorables aux avancées relationnelles. Le tarot fonctionne comme un radar émotionnel qui capte les progrès réels, les rechutes et les zones encore fragiles de votre couple en reconstruction.',
+    },
+  ],
+  related: [
+    { href: '/crise-couple/infidelite-couple', label: 'Infidélité dans le Couple' },
+    { href: '/crise-couple/sauver-son-couple', label: 'Sauver son Couple' },
+    { href: '/crise-couple/reconnecter-son-couple', label: 'Reconnecter son Couple' },
+  ],
+};
 
-  const authorSchema = getAuthorSchema();
+export const metadata = contentMeta(config);
 
+export default function PardonnerEnAmourPage() {
   return (
-    <main className="min-h-screen bg-gray-50">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(authorSchema) }}
-      />
-      <header className="bg-gradient-to-r from-amber-500 via-orange-500 to-amber-600 text-white py-16 px-4">
-        <div className="max-w-4xl mx-auto">
-          <Link href="/crise-couple" className="text-white/80 hover:text-white mb-4 inline-block">&larr; Crise de Couple</Link>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">🕊️ Pardonner en Amour : Le Chemin vers la Guérison</h1>
-          <p className="text-xl opacity-95 mb-6">Guidance voyance et tarot pour le pardon authentique et la reconstruction</p>
-          <a href="#consultation" className="bg-white text-amber-600 px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition inline-block">Consultation Pardon</a>
-        </div>
-      </header>
-
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <div className="bg-white rounded-xl shadow-md p-6 mb-8 grid grid-cols-4 gap-4 text-center">
-          <div><div className="text-3xl mb-1">⭐</div><div className="text-2xl font-bold text-amber-600">4.8/5</div><div className="text-sm text-gray-600">264 avis</div></div>
-          <div><div className="text-3xl mb-1">🕊️</div><div className="text-2xl font-bold text-amber-600">84%</div><div className="text-sm text-gray-600">Ont pardonné</div></div>
-          <div><div className="text-3xl mb-1">⏰</div><div className="text-2xl font-bold text-amber-600">30 min</div><div className="text-sm text-gray-600">Consultation</div></div>
-          <div><div className="text-3xl mb-1">🔮</div><div className="text-2xl font-bold text-amber-600">15 ans</div><div className="text-sm text-gray-600">Expérience</div></div>
-        </div>
-
-        <EEATSignal
-          colorScheme="orange"
-          method="Tarot du pardon et guidance de guérison"
-        />
+    <ContentPage config={config}>
 
         <article className="bg-amber-50 border-l-4 border-amber-500 rounded-xl shadow-md p-8 mb-8">
           <p className="text-lg leading-relaxed mb-4">
@@ -223,40 +198,6 @@ export default function PardonnerEnAmourPage() {
           </p>
         </section>
 
-        <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">❓ Questions Fréquentes</h2>
-          <p className="text-lg font-semibold text-gray-800 mb-4">Les réponses aux questions les plus posées sur le pardon en amour, la voyance et la reconstruction de la confiance dans le couple.</p>
-          <div className="space-y-6">
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Le tarot peut-il aider à savoir si je dois pardonner ?</h3>
-              <p className="text-gray-700 leading-relaxed">Le <strong>tarot</strong> ne décide pas à votre place, mais il éclaire les dimensions invisibles. Un tirage spécifique analyse la sincérité du <strong>repentir</strong> de l&apos;autre, les risques de récidive, votre capacité émotionnelle à <strong>pardonner</strong> authentiquement, et les conséquences probables du pardon ou du refus de pardonner. Les cartes comme le Jugement indiquent un renouveau possible, tandis que le Diable met en garde contre un <strong>schéma de répétition</strong>.</p>
-            </div>
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Combien de temps faut-il pour pardonner une trahison amoureuse ?</h3>
-              <p className="text-gray-700 leading-relaxed">Le <strong>pardon</strong> authentique après une <strong>trahison</strong> prend en moyenne 6 à 18 mois, selon la gravité de la blessure. La <strong>voyance</strong> observe que le processus traverse plusieurs phases : choc, colère, négociation, tristesse, acceptation et enfin <strong>pardon</strong> véritable. Le <strong>tarot</strong> identifie à quelle phase vous vous trouvez. Les transits de <strong>Pluton</strong> et de <strong>Chiron</strong> marquent souvent les tournants décisifs dans ce parcours de <strong>guérison</strong>.</p>
-            </div>
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Pardonner signifie-t-il oublier ce qui s&apos;est passé ?</h3>
-              <p className="text-gray-700 leading-relaxed">Non. <strong>Pardonner</strong> n&apos;est jamais oublier. Le <strong>pardon</strong> authentique reconnaît pleinement la blessure tout en choisissant de ne plus laisser la rancune gouverner votre vie. La <strong>voyance</strong> fait une distinction claire entre le pardon qui libère et le déni qui étouffe. En <strong>tarot</strong>, la carte de la Tempérance symbolise cet équilibre : intégrer la douleur sans la nier, avancer sans effacer les leçons apprises.</p>
-            </div>
-            <div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Comment la voyance aide-t-elle à reconstruire la confiance ?</h3>
-              <p className="text-gray-700 leading-relaxed">La <strong>voyance</strong> accompagne la <strong>reconstruction de la confiance</strong> en éclairant trois aspects essentiels. Elle vérifie la sincérité du repentir et des intentions de changement. Elle identifie les étapes concrètes pour rebâtir la <strong>sécurité émotionnelle</strong>. Et elle révèle les moments astrologiques favorables. Le <strong>tarot</strong> fonctionne comme un radar émotionnel qui capte les progrès réels et les zones encore fragiles de votre <Link href="/crise-couple/reconnecter-son-couple" className="text-amber-600 hover:text-amber-800 underline font-medium">couple en reconstruction</Link>.</p>
-            </div>
-          </div>
-        </section>
-
-        <div className="bg-gray-100 rounded-xl p-6 mb-8">
-          <h3 className="font-bold text-lg mb-4 text-gray-900">📚 Articles Connexes</h3>
-          <div className="space-y-2">
-            <Link href="/crise-couple/infidelite-couple" className="block text-amber-600 hover:text-amber-800 font-medium">&rarr; Infidélité dans le Couple</Link>
-            <Link href="/crise-couple/sauver-son-couple" className="block text-amber-600 hover:text-amber-800 font-medium">&rarr; Sauver son Couple</Link>
-            <Link href="/crise-couple/reconnecter-son-couple" className="block text-amber-600 hover:text-amber-800 font-medium">&rarr; Reconnecter son Couple</Link>
-          </div>
-        </div>
-
-        <VoyantFinalCTA topic="crise-couple" source="pardonner-en-amour-final" />
-      </div>
-    </main>
+    </ContentPage>
   );
 }

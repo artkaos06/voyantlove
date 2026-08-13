@@ -1,94 +1,81 @@
-import type { Metadata } from 'next';
 import Link from 'next/link';
-import { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getAuthorSchema } from '@/lib/schema';
-import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
-import VoyantFinalCTA from '@/components/VoyantFinalCTA';
+import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
-export const metadata: Metadata = {
+const config: ContentPageConfig = {
   title: 'Tarologie Amoureuse : L\'Art de Lire les Cartes de l\'Amour',
   description: 'Tarologie amoureuse : l\'art de lire le tarot pour les questions sentimentales. Découvrez les tirages, les arcanes clés et comment choisir un tarologue spécialisé en amour.',
+  url: 'https://www.voyantlove.fr/methodes-voyance/tarologie-amoureuse/',
   keywords: ['tarologie amoureuse', 'tarologie amour', 'tarologue amour', 'tarologie sentimentale', 'lecture tarot amour', 'tarologue spécialisé amour'],
-  alternates: {
-    canonical: 'https://www.voyantlove.fr/methodes-voyance/tarologie-amoureuse/',
-  },
-};
-
-export default function TarologieAmoureusePage() {
-  const articleSchema = getArticleSchema({
-    title: 'Tarologie Amoureuse : L\'Art de Lire les Cartes de l\'Amour | VoyantLove',
-    description: 'Tarologie amoureuse : l\'art de lire le tarot pour les questions sentimentales. Découvrez les tirages, les arcanes clés et comment choisir un tarologue spécialisé en amour.',
-    url: 'https://www.voyantlove.fr/methodes-voyance/tarologie-amoureuse/',
-    datePublished: '2026-05-12',
-    dateModified: '2026-05-12',
-    keywords: ['tarologie amoureuse', 'tarologie amour', 'tarologue amour', 'tarologie sentimentale'],
-  });
-
-  const authorSchema = getAuthorSchema();
-
-  const breadcrumbSchema = getBreadcrumbSchema([
+  datePublished: '2026-05-12',
+  dateModified: '2026-05-12',
+  breadcrumb: [
     { name: 'Accueil', url: 'https://www.voyantlove.fr' },
     { name: 'Méthodes de Voyance', url: 'https://www.voyantlove.fr/methodes-voyance/' },
     { name: 'Tarologie Amoureuse', url: 'https://www.voyantlove.fr/methodes-voyance/tarologie-amoureuse/' },
-  ]);
+  ],
+  header: {
+    emoji: '🃏',
+    h1: 'Tarologie Amoureuse',
+    subtitle: 'L\'art de lire les cartes du tarot pour décrypter votre vie sentimentale',
+    gradient: 'from-indigo-600 via-purple-600 to-violet-600',
+    backLink: { href: '/methodes-voyance', label: 'Méthodes de Voyance' },
+    anchors: [
+      { href: '#consultation', label: 'Consulter un Tarologue', primary: true },
+      { href: '#arcanes', label: 'Les Arcanes Clés' },
+    ],
+  },
+  accentText: 'text-indigo-600',
+  stats: [
+    { icon: '🃏', value: '78 arcanes', label: 'Symbolique riche' },
+    { icon: '💖', value: 'Spécialisé', label: 'Questions amour' },
+    { icon: '📖', value: 'Narratif', label: 'Lecture détaillée' },
+    { icon: '⭐', value: 'Précis', label: 'Analyse fine' },
+  ],
+  eeat: { colorScheme: 'purple', method: 'Tarologie amoureuse : lecture du tarot appliquée aux questions sentimentales' },
+  cta: { topic: 'methodes-voyance', slug: 'tarologie-amoureuse' },
+  faq: [
+    {
+      q: 'Quelle différence entre tarologie et voyance amoureuse ?',
+      a: 'La tarologie amoureuse est une spécialité au sein de la voyance sentimentale. Le tarologue se concentre exclusivement sur l\'interprétation des 78 cartes du tarot, Marseille, Rider-Waite ou Thoth, appliquée aux questions de cœur. Un voyant amour peut utiliser plusieurs outils (clairvoyance pure, astrologie, oracle, pendule), tandis que le tarologue maîtrise un seul support mais avec une profondeur d\'analyse symbolique remarquable. Pour une question complexe nécessitant une lecture narrative et nuancée, la tarologie offre la meilleure résolution. Pour des réponses binaires rapides, d\'autres méthodes comme le pendule sont plus directes.',
+    },
+    {
+      q: 'Comment se déroule une consultation de tarologie amoureuse ?',
+      a: 'Une consultation classique commence par un échange sur votre situation : le tarologue cerne le contexte sans que vous ayez à tout détailler. Vous formulez ensuite votre question, précise, ouverte, centrée sur vous. Le tarologue mélange les cartes en se concentrant sur votre énergie, puis dispose les arcanes selon le tirage choisi (croix, fer à cheval, tirage en V…). L\'interprétation se fait carte par carte puis dans la dynamique globale du tirage. Une consultation de tarologie amoureuse complète dure 25 à 45 minutes.',
+    },
+    {
+      q: 'Quels sont les arcanes clés en tarologie amoureuse ?',
+      a: 'Six arcanes majeurs dominent les lectures amoureuses. Les Amoureux (VI) : choix sentimental, union vraie. Le Soleil (XIX) : bonheur, réussite, amour partagé. L\'Étoile (XVII) : espoir, renouveau après une épreuve. La Lune (XVIII) : illusions, sentiments cachés, ambiguïté. Le Diable (XV) : attachement passionnel, parfois toxique. La Tour (XVI) : rupture brutale ou révélation. Côté arcanes mineurs, les Coupes représentent les émotions : le Deux de Coupe symbolise l\'union, l\'As de Coupe le début d\'un amour, le Trois de Coupe la fête à deux. Le tarologue spécialisé maîtrise ces symboles et leurs nuances selon la position dans le tirage.',
+    },
+    {
+      q: 'Comment choisir un tarologue spécialisé en amour ?',
+      a: 'Trois critères essentiels. Premièrement, la spécialisation : un tarologue qui ne traite que les questions sentimentales développe une intuition affinée sur les dynamiques relationnelles, supérieure à celle d\'un généraliste. Deuxièmement, l\'expérience : minimum 5 ans de pratique avec des centaines de consultations à son actif. Troisièmement, les avis clients : privilégiez les retours détaillés mentionnant des situations concrètes plutôt que de simples notes. Méfiez-vous d\'un tarologue qui promet un résultat garanti ou qui vend des rituels payants en complément, ce sont des signaux d\'arnaque.',
+    },
+    {
+      q: 'La tarologie amoureuse fonctionne-t-elle vraiment ?',
+      a: 'La tarologie ne « prédit » pas un avenir figé, elle révèle des tendances, des énergies dominantes et des fenêtres de possibilité. Sa pertinence dépend avant tout du tarologue. Un praticien expérimenté capte des informations subtiles que vous ne voyez pas vous-même : sentiments cachés de l\'autre, blocages inconscients dans la relation, timing favorable pour une action. Plusieurs études de satisfaction sur les plateformes françaises montrent que 70% des consultants estiment avoir reçu une guidance utile après une consultation de tarologie amoureuse. La clé : poser des questions précises et garder un esprit ouvert mais critique.',
+    },
+    {
+      q: 'Quel tirage de tarologie pour quelle question d\'amour ?',
+      a: 'Le tirage en croix (5 cartes) est le plus polyvalent pour une question amoureuse générale : il explore la situation présente, les obstacles, les influences extérieures, l\'évolution probable et le conseil. Le tirage en V (3 cartes : passé/présent/futur) convient aux questions de retour de l\'ex ou de réconciliation. Le tirage du fer à cheval (7 cartes) approfondit les questions de compatibilité de couple. Le tirage Oui/Non (3 cartes) répond aux questions binaires précises. Le tarologue choisit le tirage adapté à votre question, n\'imposez pas un format spécifique sans en discuter avec lui.',
+    },
+  ],
+  related: [
+    { href: '/methodes-voyance/tirage-tarot-amour', label: 'Tirage Tarot Amour : Guide Complet' },
+    { href: '/methodes-voyance/oracle-amour', label: 'Oracle de l\'Amour' },
+    { href: '/methodes-voyance/pendule-amour', label: 'Pendule Amour' },
+    { href: '/methodes-voyance/voyance-sentimentale', label: 'Voyance Sentimentale' },
+    { href: '/voyance-gratuite-amour/tarot-oui-non-amour', label: 'Tarot Oui/Non Amour Gratuit' },
+    { href: '/voyance-amour', label: 'Voyance Amour : Tout Savoir' },
+  ],
+};
 
-  const faqSchema = getFAQSchema([
-    {
-      question: 'Quelle différence entre tarologie et voyance amoureuse ?',
-      answer: 'La tarologie amoureuse est une spécialité au sein de la voyance sentimentale. Le tarologue se concentre exclusivement sur l\'interprétation des 78 cartes du tarot — Marseille, Rider-Waite ou Thoth — appliquée aux questions de cœur. Un voyant amour peut utiliser plusieurs outils (clairvoyance pure, astrologie, oracle, pendule), tandis que le tarologue maîtrise un seul support mais avec une profondeur d\'analyse symbolique remarquable. Pour une question complexe nécessitant une lecture narrative et nuancée, la tarologie offre la meilleure résolution. Pour des réponses binaires rapides, d\'autres méthodes comme le pendule sont plus directes.',
-    },
-    {
-      question: 'Comment se déroule une consultation de tarologie amoureuse ?',
-      answer: 'Une consultation classique commence par un échange sur votre situation : le tarologue cerne le contexte sans que vous ayez à tout détailler. Vous formulez ensuite votre question — précise, ouverte, centrée sur vous. Le tarologue mélange les cartes en se concentrant sur votre énergie, puis dispose les arcanes selon le tirage choisi (croix, fer à cheval, tirage en V…). L\'interprétation se fait carte par carte puis dans la dynamique globale du tirage. Une consultation de tarologie amoureuse complète dure 25 à 45 minutes.',
-    },
-    {
-      question: 'Quels sont les arcanes clés en tarologie amoureuse ?',
-      answer: 'Six arcanes majeurs dominent les lectures amoureuses. Les Amoureux (VI) : choix sentimental, union vraie. Le Soleil (XIX) : bonheur, réussite, amour partagé. L\'Étoile (XVII) : espoir, renouveau après une épreuve. La Lune (XVIII) : illusions, sentiments cachés, ambiguïté. Le Diable (XV) : attachement passionnel, parfois toxique. La Tour (XVI) : rupture brutale ou révélation. Côté arcanes mineurs, les Coupes représentent les émotions : le Deux de Coupe symbolise l\'union, l\'As de Coupe le début d\'un amour, le Trois de Coupe la fête à deux. Le tarologue spécialisé maîtrise ces symboles et leurs nuances selon la position dans le tirage.',
-    },
-    {
-      question: 'Comment choisir un tarologue spécialisé en amour ?',
-      answer: 'Trois critères essentiels. Premièrement, la spécialisation : un tarologue qui ne traite que les questions sentimentales développe une intuition affinée sur les dynamiques relationnelles, supérieure à celle d\'un généraliste. Deuxièmement, l\'expérience : minimum 5 ans de pratique avec des centaines de consultations à son actif. Troisièmement, les avis clients : privilégiez les retours détaillés mentionnant des situations concrètes plutôt que de simples notes. Méfiez-vous d\'un tarologue qui promet un résultat garanti ou qui vend des rituels payants en complément — ce sont des signaux d\'arnaque.',
-    },
-    {
-      question: 'La tarologie amoureuse fonctionne-t-elle vraiment ?',
-      answer: 'La tarologie ne « prédit » pas un avenir figé — elle révèle des tendances, des énergies dominantes et des fenêtres de possibilité. Sa pertinence dépend avant tout du tarologue. Un praticien expérimenté capte des informations subtiles que vous ne voyez pas vous-même : sentiments cachés de l\'autre, blocages inconscients dans la relation, timing favorable pour une action. Plusieurs études de satisfaction sur les plateformes françaises montrent que 70% des consultants estiment avoir reçu une guidance utile après une consultation de tarologie amoureuse. La clé : poser des questions précises et garder un esprit ouvert mais critique.',
-    },
-    {
-      question: 'Quel tirage de tarologie pour quelle question d\'amour ?',
-      answer: 'Le tirage en croix (5 cartes) est le plus polyvalent pour une question amoureuse générale : il explore la situation présente, les obstacles, les influences extérieures, l\'évolution probable et le conseil. Le tirage en V (3 cartes : passé/présent/futur) convient aux questions de retour de l\'ex ou de réconciliation. Le tirage du fer à cheval (7 cartes) approfondit les questions de compatibilité de couple. Le tirage Oui/Non (3 cartes) répond aux questions binaires précises. Le tarologue choisit le tirage adapté à votre question — n\'imposez pas un format spécifique sans en discuter avec lui.',
-    },
-  ]);
+export const metadata = contentMeta(config);
 
+export default function TarologieAmoureusePage() {
   return (
-    <main className="min-h-screen bg-gray-50">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(authorSchema) }} />
-
-      <header className="bg-gradient-to-r from-indigo-600 via-purple-600 to-violet-600 text-white py-16 px-4">
-        <div className="max-w-4xl mx-auto">
-          <Link href="/methodes-voyance" className="text-white/80 hover:text-white mb-4 inline-block">&larr; Méthodes de Voyance</Link>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">🃏 Tarologie Amoureuse</h1>
-          <p className="text-xl opacity-95 mb-6">L&apos;art de lire les cartes du tarot pour décrypter votre vie sentimentale</p>
-          <div className="flex gap-4 flex-wrap">
-            <a href="#consultation" className="bg-white text-indigo-600 px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition">Consulter un Tarologue</a>
-            <a href="#arcanes" className="border-2 border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-indigo-600 transition">Les Arcanes Clés</a>
-          </div>
-        </div>
-      </header>
-
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <div className="bg-white rounded-xl shadow-md p-6 mb-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-          <div><div className="text-3xl mb-1">🃏</div><div className="text-2xl font-bold text-indigo-600">78 arcanes</div><div className="text-sm text-gray-600">Symbolique riche</div></div>
-          <div><div className="text-3xl mb-1">💖</div><div className="text-2xl font-bold text-indigo-600">Spécialisé</div><div className="text-sm text-gray-600">Questions amour</div></div>
-          <div><div className="text-3xl mb-1">📖</div><div className="text-2xl font-bold text-indigo-600">Narratif</div><div className="text-sm text-gray-600">Lecture détaillée</div></div>
-          <div><div className="text-3xl mb-1">⭐</div><div className="text-2xl font-bold text-indigo-600">Précis</div><div className="text-sm text-gray-600">Analyse fine</div></div>
-        </div>
-
-        <EEATSignal colorScheme="purple" method="Tarologie amoureuse : lecture du tarot appliquée aux questions sentimentales" />
-
+    <ContentPage config={config}>
         <article className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-indigo-600">
           <div className="bg-indigo-50 border-l-4 border-indigo-500 p-6 rounded-lg">
             <p className="text-lg leading-relaxed">
@@ -112,7 +99,7 @@ export default function TarologieAmoureusePage() {
             </div>
             <div className="bg-purple-50 border-l-4 border-purple-500 p-5 rounded-lg">
               <h3 className="font-bold text-lg mb-2 text-purple-700">Les Différents Tarots Utilisés</h3>
-              <p className="text-gray-700 text-sm">Le <strong>Tarot de Marseille</strong> reste la référence en France : ses 78 cartes traditionnelles offrent une symbolique épurée idéale pour les lectures sentimentales. Le <strong>Tarot Rider-Waite</strong> (anglo-saxon) propose des illustrations plus narratives sur chaque carte, accessible aux débutants. Le <strong>Tarot Thoth</strong> (créé par Aleister Crowley) explore une symbolique ésotérique plus complexe. Pour la tarologie amoureuse, le Marseille et le Rider-Waite sont les plus utilisés — leur clarté symbolique convient parfaitement aux questions de cœur.</p>
+              <p className="text-gray-700 text-sm">Le <strong>Tarot de Marseille</strong> reste la référence en France : ses 78 cartes traditionnelles offrent une symbolique épurée idéale pour les lectures sentimentales. Le <strong>Tarot Rider-Waite</strong> (anglo-saxon) propose des illustrations plus narratives sur chaque carte, accessible aux débutants. Le <strong>Tarot Thoth</strong> (créé par Aleister Crowley) explore une symbolique ésotérique plus complexe. Pour la tarologie amoureuse, le Marseille et le Rider-Waite sont les plus utilisés, leur clarté symbolique convient parfaitement aux questions de cœur.</p>
             </div>
             <div className="bg-violet-50 border-l-4 border-violet-500 p-5 rounded-lg">
               <h3 className="font-bold text-lg mb-2 text-violet-700">L&apos;Intuition du Tarologue</h3>
@@ -126,27 +113,27 @@ export default function TarologieAmoureusePage() {
           <p className="text-lg font-semibold text-gray-800 mb-6">Six arcanes majeurs dominent les tirages sentimentaux : Les Amoureux, Le Soleil, L&apos;Étoile (positifs) ; La Lune, Le Diable, La Tour (à nuancer). Leur apparition oriente toute la lecture.</p>
           <div className="grid md:grid-cols-2 gap-5">
             <div className="bg-white rounded-lg p-5 border-l-4 border-green-500">
-              <h3 className="font-bold text-lg mb-2 text-green-700">VI — Les Amoureux</h3>
+              <h3 className="font-bold text-lg mb-2 text-green-700">VI, Les Amoureux</h3>
               <p className="text-gray-700 text-sm">L&apos;arcane par excellence de la <strong>tarologie amoureuse</strong>. Annonce un choix sentimental imminent, une union vraie, une rencontre marquante ou la confirmation des sentiments d&apos;une personne aimée. En position centrale du tirage, il oriente toute la lecture vers une dimension amoureuse positive.</p>
             </div>
             <div className="bg-white rounded-lg p-5 border-l-4 border-yellow-500">
-              <h3 className="font-bold text-lg mb-2 text-yellow-700">XIX — Le Soleil</h3>
+              <h3 className="font-bold text-lg mb-2 text-yellow-700">XIX, Le Soleil</h3>
               <p className="text-gray-700 text-sm">Bonheur, réussite, amour partagé sans ambiguïté. Le Soleil signe une période de plénitude sentimentale, une relation épanouie, un retour d&apos;ex sincère ou une rencontre qui apportera de la joie. Carte de très bon augure dans tout tirage amoureux.</p>
             </div>
             <div className="bg-white rounded-lg p-5 border-l-4 border-blue-500">
-              <h3 className="font-bold text-lg mb-2 text-blue-700">XVII — L&apos;Étoile</h3>
+              <h3 className="font-bold text-lg mb-2 text-blue-700">XVII, L&apos;Étoile</h3>
               <p className="text-gray-700 text-sm">Espoir, renouveau, guérison après une épreuve sentimentale. L&apos;Étoile annonce qu&apos;une période difficile touche à sa fin et qu&apos;un nouvel élan amoureux se prépare. Souvent vue dans les tirages post-rupture pour signaler la reconstruction.</p>
             </div>
             <div className="bg-white rounded-lg p-5 border-l-4 border-indigo-500">
-              <h3 className="font-bold text-lg mb-2 text-indigo-700">XVIII — La Lune</h3>
+              <h3 className="font-bold text-lg mb-2 text-indigo-700">XVIII, La Lune</h3>
               <p className="text-gray-700 text-sm">Sentiments cachés, illusions, ambiguïté. La Lune ne dit ni oui ni non : elle révèle des émotions tues, des intentions floues ou des doutes. À nuancer selon les cartes voisines. En tarologie amoureuse, elle invite à attendre que la situation se clarifie avant d&apos;agir.</p>
             </div>
             <div className="bg-white rounded-lg p-5 border-l-4 border-red-600">
-              <h3 className="font-bold text-lg mb-2 text-red-700">XV — Le Diable</h3>
-              <p className="text-gray-700 text-sm">Attachement passionnel, attirance physique, parfois dépendance toxique. Le Diable signale une connexion intense — mais pas nécessairement saine. Le tarologue distingue selon le contexte si c&apos;est un amour fusionnel ou un lien à dénouer pour votre bien.</p>
+              <h3 className="font-bold text-lg mb-2 text-red-700">XV, Le Diable</h3>
+              <p className="text-gray-700 text-sm">Attachement passionnel, attirance physique, parfois dépendance toxique. Le Diable signale une connexion intense, mais pas nécessairement saine. Le tarologue distingue selon le contexte si c&apos;est un amour fusionnel ou un lien à dénouer pour votre bien.</p>
             </div>
             <div className="bg-white rounded-lg p-5 border-l-4 border-orange-600">
-              <h3 className="font-bold text-lg mb-2 text-orange-700">XVI — La Tour</h3>
+              <h3 className="font-bold text-lg mb-2 text-orange-700">XVI, La Tour</h3>
               <p className="text-gray-700 text-sm">Rupture brutale, révélation qui chamboule tout, fin d&apos;une illusion. La Tour peut effrayer mais elle libère : elle annonce souvent la fin d&apos;une situation amoureuse stagnante pour permettre une reconstruction sur des bases saines.</p>
             </div>
           </div>
@@ -184,7 +171,7 @@ export default function TarologieAmoureusePage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">🔮 Consulter un Tarologue Spécialisé en Amour</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Choisissez un tarologue avec au moins 5 ans d&apos;expérience exclusive en questions sentimentales, des avis clients détaillés et une éthique claire (pas de promesses de résultats, pas de vente de rituels).</p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            La qualité d&apos;une consultation de <strong>tarologie amoureuse</strong> dépend avant tout du tarologue. Un praticien expérimenté tire la même lecture qu&apos;un débutant des mêmes cartes — mais l&apos;interprétation sera radicalement plus juste et nuancée. Voici comment reconnaître un bon <strong>tarologue spécialisé en amour</strong>.
+            La qualité d&apos;une consultation de <strong>tarologie amoureuse</strong> dépend avant tout du tarologue. Un praticien expérimenté tire la même lecture qu&apos;un débutant des mêmes cartes, mais l&apos;interprétation sera radicalement plus juste et nuancée. Voici comment reconnaître un bon <strong>tarologue spécialisé en amour</strong>.
           </p>
           <div className="grid md:grid-cols-2 gap-5 mb-6">
             <div className="bg-white rounded-lg p-5 border border-purple-200">
@@ -212,51 +199,6 @@ export default function TarologieAmoureusePage() {
             <Link href="/consulter?ref=tarologie-amoureuse" className="inline-block bg-indigo-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-indigo-700 transition">Consulter un Tarologue Vérifié →</Link>
           </div>
         </section>
-
-        <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">❓ Questions Fréquentes sur la Tarologie Amoureuse</h2>
-          <div className="space-y-6">
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Quelle différence entre tarologie et voyance amoureuse ?</h3>
-              <p className="text-gray-700 leading-relaxed">La <strong>tarologie amoureuse</strong> est une spécialité au sein de la <Link href="/voyance-amour" className="text-indigo-600 hover:text-indigo-800 underline font-medium">voyance sentimentale</Link>. Le tarologue se concentre exclusivement sur l&apos;interprétation des 78 cartes du tarot — Marseille, Rider-Waite ou Thoth — appliquée aux questions de cœur. Un voyant amour peut utiliser plusieurs outils (clairvoyance pure, astrologie, oracle, pendule), tandis que le tarologue maîtrise un seul support mais avec une profondeur d&apos;analyse symbolique remarquable. Pour une question complexe nécessitant une lecture narrative et nuancée, la tarologie offre la meilleure résolution. Pour des réponses binaires rapides, d&apos;autres méthodes comme le <Link href="/methodes-voyance/pendule-amour" className="text-indigo-600 hover:text-indigo-800 underline font-medium">pendule</Link> sont plus directes.</p>
-            </div>
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Comment se déroule une consultation de tarologie amoureuse ?</h3>
-              <p className="text-gray-700 leading-relaxed">Une consultation classique commence par un échange sur votre situation : le tarologue cerne le contexte sans que vous ayez à tout détailler. Vous formulez ensuite votre question — précise, ouverte, centrée sur vous. Le tarologue mélange les cartes en se concentrant sur votre énergie, puis dispose les arcanes selon le tirage choisi (croix, fer à cheval, tirage en V…). L&apos;interprétation se fait carte par carte puis dans la dynamique globale du tirage. Une consultation de <strong>tarologie amoureuse</strong> complète dure 25 à 45 minutes.</p>
-            </div>
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Quels sont les arcanes clés en tarologie amoureuse ?</h3>
-              <p className="text-gray-700 leading-relaxed">Six arcanes majeurs dominent les lectures amoureuses. <strong>Les Amoureux</strong> (VI) : choix sentimental, union vraie. <strong>Le Soleil</strong> (XIX) : bonheur, réussite, amour partagé. <strong>L&apos;Étoile</strong> (XVII) : espoir, renouveau après une épreuve. <strong>La Lune</strong> (XVIII) : illusions, sentiments cachés, ambiguïté. <strong>Le Diable</strong> (XV) : attachement passionnel, parfois toxique. <strong>La Tour</strong> (XVI) : rupture brutale ou révélation. Côté arcanes mineurs, les <strong>Coupes</strong> représentent les émotions : le Deux de Coupe symbolise l&apos;union, l&apos;As de Coupe le début d&apos;un amour, le Trois de Coupe la fête à deux.</p>
-            </div>
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Comment choisir un tarologue spécialisé en amour ?</h3>
-              <p className="text-gray-700 leading-relaxed">Trois critères essentiels. <strong>Premièrement, la spécialisation</strong> : un tarologue qui ne traite que les questions sentimentales développe une intuition affinée sur les dynamiques relationnelles, supérieure à celle d&apos;un généraliste. <strong>Deuxièmement, l&apos;expérience</strong> : minimum 5 ans de pratique avec des centaines de consultations à son actif. <strong>Troisièmement, les avis clients</strong> : privilégiez les retours détaillés mentionnant des situations concrètes plutôt que de simples notes. Méfiez-vous d&apos;un tarologue qui promet un résultat garanti ou qui vend des rituels payants en complément.</p>
-            </div>
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">La tarologie amoureuse fonctionne-t-elle vraiment ?</h3>
-              <p className="text-gray-700 leading-relaxed">La <strong>tarologie</strong> ne &laquo;&nbsp;prédit&nbsp;&raquo; pas un avenir figé — elle révèle des tendances, des énergies dominantes et des fenêtres de possibilité. Sa pertinence dépend avant tout du tarologue. Un praticien expérimenté capte des informations subtiles que vous ne voyez pas vous-même : sentiments cachés de l&apos;autre, blocages inconscients dans la relation, timing favorable pour une action. Plusieurs études de satisfaction sur les plateformes françaises montrent que 70&nbsp;% des consultants estiment avoir reçu une guidance utile après une consultation de tarologie amoureuse.</p>
-            </div>
-            <div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Quel tirage de tarologie pour quelle question d&apos;amour ?</h3>
-              <p className="text-gray-700 leading-relaxed">Le <strong>tirage en croix</strong> (5 cartes) est le plus polyvalent pour une question amoureuse générale : il explore la situation présente, les obstacles, les influences extérieures, l&apos;évolution probable et le conseil. Le <strong>tirage en V</strong> (3 cartes : passé/présent/futur) convient aux questions de retour de l&apos;ex ou de réconciliation. Le <strong>tirage du fer à cheval</strong> (7 cartes) approfondit les questions de compatibilité de couple. Le <strong>tirage Oui/Non</strong> (3 cartes) répond aux questions binaires précises. Le tarologue choisit le tirage adapté à votre question — n&apos;imposez pas un format spécifique sans en discuter avec lui.</p>
-            </div>
-          </div>
-        </section>
-
-        <VoyantFinalCTA topic="methodes-voyance" source="tarologie-amoureuse-bottom" />
-
-        <section className="bg-gray-100 rounded-xl p-6 mb-8">
-          <h3 className="font-bold text-lg mb-4 text-gray-900">📚 Articles Connexes</h3>
-          <div className="grid md:grid-cols-2 gap-3">
-            <Link href="/methodes-voyance/tirage-tarot-amour" className="block text-indigo-700 hover:text-indigo-900 font-medium">→ Tirage Tarot Amour : Guide Complet</Link>
-            <Link href="/methodes-voyance/oracle-amour" className="block text-indigo-700 hover:text-indigo-900 font-medium">→ Oracle de l&apos;Amour</Link>
-            <Link href="/methodes-voyance/pendule-amour" className="block text-indigo-700 hover:text-indigo-900 font-medium">→ Pendule Amour</Link>
-            <Link href="/methodes-voyance/voyance-sentimentale" className="block text-indigo-700 hover:text-indigo-900 font-medium">→ Voyance Sentimentale</Link>
-            <Link href="/voyance-gratuite-amour/tarot-oui-non-amour" className="block text-indigo-700 hover:text-indigo-900 font-medium">→ Tarot Oui/Non Amour Gratuit</Link>
-            <Link href="/voyance-amour" className="block text-indigo-700 hover:text-indigo-900 font-medium">→ Voyance Amour : Tout Savoir</Link>
-          </div>
-        </section>
-      </div>
-    </main>
+    </ContentPage>
   );
 }

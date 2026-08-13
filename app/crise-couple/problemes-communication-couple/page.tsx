@@ -1,114 +1,87 @@
-import type { Metadata } from 'next';
 import Link from 'next/link';
-import { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getAuthorSchema } from '@/lib/schema';
-import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
-import VoyantFinalCTA from '@/components/VoyantFinalCTA';
+import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
-export const metadata: Metadata = {
+const config: ContentPageConfig = {
   title: 'Communication Couple Difficile : Causes, Solutions et Guidance Voyance',
   description: 'Communication couple difficile ? Problème de communication dans le couple, dialogue impossible, incompréhension : causes profondes, solutions concrètes et guidance voyance.',
+  url: 'https://www.voyantlove.fr/crise-couple/problemes-communication-couple/',
   keywords: ['communication couple difficile', 'problème de communication couple', 'problème de communication dans le couple', 'dialogue couple', 'quand le dialogue devient impossible', 'améliorer communication couple'],
-  alternates: { canonical: 'https://www.voyantlove.fr/crise-couple/problemes-communication-couple/' },
-};
-
-export default function ProblemesCommunicationCouplePage() {
-  const articleSchema = getArticleSchema({
-    title: 'Communication Couple Difficile : Causes, Solutions et Guidance Voyance',
-    description: 'Communication couple difficile ? Problème de communication dans le couple, dialogue impossible, incompréhension : causes profondes, solutions concrètes et guidance voyance.',
-    url: 'https://www.voyantlove.fr/crise-couple/problemes-communication-couple/',
-    datePublished: '2026-02-09',
-    dateModified: '2026-02-09',
-    keywords: ['problème de communication couple', 'communication couple difficile', 'problème de communication dans le couple', 'dialogue couple', 'incompréhension couple'],
-  });
-
-  const breadcrumbSchema = getBreadcrumbSchema([
+  datePublished: '2026-02-09',
+  dateModified: '2026-02-09',
+  breadcrumb: [
     { name: 'Accueil', url: 'https://www.voyantlove.fr' },
     { name: 'Crise de Couple', url: 'https://www.voyantlove.fr/crise-couple/' },
     { name: 'Problèmes de Communication', url: 'https://www.voyantlove.fr/crise-couple/problemes-communication-couple/' },
-  ]);
+  ],
+  header: {
+    emoji: '',
+    h1: 'Communication Couple Difficile : Solutions Concrètes',
+    subtitle: 'Communication couple difficile ? Techniques pour reconstruire le dialogue et retrouver la compréhension mutuelle',
+    gradient: 'from-indigo-600 via-purple-600 to-pink-600',
+    backLink: { href: '/crise-couple', label: 'Retour aux Crises de Couple' },
+    anchors: [
+      { href: '#solutions', label: 'Solutions Concrètes', primary: true },
+      { href: '#tirage', label: 'Tirage Communication' },
+    ],
+  },
+  stats: [
+    { icon: '💬', value: 'Nettes', label: 'Améliorations' },
+    { icon: '🔮', value: 'Élevée', label: 'Satisfaction' },
+    { icon: '💡', value: 'Vaste', label: 'Expérience' },
+    { icon: '❤️', value: 'Reconnue', label: 'Expertise' },
+  ],
+  eeat: { colorScheme: 'purple', method: 'Tarot relationnel et communication consciente' },
+  cta: { topic: 'crise-couple', slug: 'problemes-communication-couple' },
+  faq: [
+    {
+      q: 'Pourquoi mon couple ne se comprend plus ?',
+      a: 'Dans notre expérience, la cause numéro un est la différence de langages amoureux. L\'un exprime son amour par des gestes, l\'autre attend des mots. Résultat : chacun donne mais personne ne reçoit. Ajoutez à cela les non-dits accumulés sur des mois, les interprétations hâtives ("il ne m\'a pas répondu donc il s\'en fiche") et les blessures passées qui déforment tout ce qu\'on entend. La bonne nouvelle : identifier votre langage amoureux et celui de votre partenaire suffit souvent à débloquer des années de frustration.',
+    },
+    {
+      q: 'Comment briser le silence dans un couple ?',
+      a: 'Pas en forçant une grande discussion un dimanche soir. Commencez petit. Proposez une activité à deux, une promenade, un restaurant, pour recréer de la complicité sans la pression du face-à-face. Quand vous parlez, utilisez "je ressens" au lieu de "tu fais toujours". Choisissez un moment neutre, pas après une dispute. Si le mur de silence tient depuis plus de 3 mois malgré vos efforts, une thérapie de couple peut révéler les peurs enfouies qui alimentent le blocage. Certains couples trouvent aussi des réponses dans un tirage de tarot relationnel qui met en lumière ce que chacun n\'ose pas formuler.',
+    },
+    {
+      q: 'Disputes constantes : notre couple est-il condamné ?',
+      a: 'Contrairement à ce qu\'on pourrait croire, se disputer est plutôt bon signe. Cela prouve que vous tenez encore assez l\'un à l\'autre pour vous exprimer. Le vrai danger ? L\'indifférence. Le jour où vous ne ressentez même plus l\'envie de vous battre pour votre couple, c\'est là que ça devient préoccupant. En revanche, si vos disputes tournent à l\'insulte, au mépris ou à la violence verbale, c\'est un signal d\'alarme sérieux. La plupart des couples en conflit chronique découvrent qu\'ils se disputent sur des symptômes, la vaisselle, les horaires, alors que le vrai problème est ailleurs.',
+    },
+    {
+      q: 'Le tarot peut-il améliorer la communication de couple ?',
+      a: 'Le tarot ne remplace pas une thérapie. Mais il fait quelque chose qu\'aucun thérapeute ne peut faire exactement de la même manière : il révèle ce qui se cache derrière les mots. Les blessures d\'enfance, les besoins non formulés, les peurs secrètes, tout ce qui sabote votre dialogue sans que vous en ayez conscience. Un tirage de couple met en évidence le point exact où la communication se rompt. Beaucoup de consultants nous disent avoir enfin compris le comportement de leur partenaire après une seule séance.',
+    },
+    {
+      q: 'Que faire si mon partenaire refuse de communiquer ?',
+      a: 'Ne forcez pas. Plus vous insistez, plus l\'autre se referme, c\'est mécanique. Votre partenaire qui se mure dans le silence souffre probablement de peur du conflit ou d\'un traumatisme ancien. Créez un espace sûr : promettez d\'écouter sans juger, proposez d\'échanger par écrit si la parole est trop difficile. La patience est essentielle. Toutefois, si ce refus dure depuis plus de 6 mois sans la moindre ouverture, posez-vous honnêtement la question : est-ce une incapacité temporaire ou un refus délibéré de s\'investir dans la relation ?',
+    },
+    {
+      q: 'Combien de temps pour rétablir la communication ?',
+      a: 'Problèmes légers : comptez 2 à 4 mois d\'efforts réguliers. Blocages profonds après des années de silence : 6 à 12 mois de travail assidu. Mais les premiers résultats arrivent vite si les deux s\'y mettent. Dès 3 semaines d\'écoute active quotidienne, les couples constatent un changement d\'atmosphère. L\'important est d\'accepter les rechutes comme partie intégrante du processus. Deux pas en avant, un pas en arrière, c\'est normal. L\'astrologie de couple peut aussi éclairer les périodes plus favorables au dialogue selon vos thèmes natals respectifs.',
+    },
+    {
+      q: 'Quels sont les signes d\'un manque de communication dans le couple ?',
+      a: 'Vous ne parlez plus que de logistique : courses, factures, qui emmène les enfants. Les "Comment tu vas ?" sincères ont disparu. Vous évitez les sujets importants, avenir, sentiments, frustrations, par peur que ça dégénère. Il y a une différence fondamentale entre un silence choisi après une dispute, le temps de se calmer, et un silence chronique qui s\'installe sans que personne ne l\'ait décidé. Le premier est sain et temporaire. Le second est un symptôme qui nécessite une action rapide avant que l\'indifférence ne prenne le relais.',
+    },
+    {
+      q: 'Comment améliorer la communication non verbale dans le couple ?',
+      a: 'Les mots comptent moins qu\'on ne le croit. Ce qui reconstruit vraiment la connexion, ce sont les gestes du quotidien. Regarder l\'autre dans les yeux quand il parle au lieu de fixer son téléphone. Une main posée sur l\'épaule en passant. Sourire en le/la voyant rentrer. S\'asseoir un peu plus près sur le canapé. Marcher au même rythme. Ces micro-gestes paraissent anodins mais ils envoient un message puissant : "Je suis là, je te vois, tu comptes." Commencez par un seul changement cette semaine. Les effets vous surprendront.',
+    },
+  ],
+  related: [
+    { href: '/crise-couple', label: 'Crises de Couple : Guide Complet' },
+    { href: '/crise-couple/infidelite-couple', label: 'Infidélité dans le Couple' },
+    { href: '/crise-couple/jalousie-excessive', label: 'Jalousie Excessive dans le Couple' },
+    { href: '/sentiments/maime-t-il-elle', label: 'M\'aime-t-il/elle Vraiment ?' },
+    { href: '/reconquete/se-remettre-ensemble', label: 'Se Remettre Ensemble avec son Ex' },
+  ],
+};
 
-  const authorSchema = getAuthorSchema();
+export const metadata = contentMeta(config);
 
-  const faqSchema = getFAQSchema([
-    {
-      question: 'Pourquoi mon couple ne se comprend plus ?',
-      answer: 'Dans notre expérience, la cause numéro un est la différence de langages amoureux. L\'un exprime son amour par des gestes, l\'autre attend des mots. Résultat : chacun donne mais personne ne reçoit. Ajoutez à cela les non-dits accumulés sur des mois, les interprétations hâtives ("il ne m\'a pas répondu donc il s\'en fiche") et les blessures passées qui déforment tout ce qu\'on entend. La bonne nouvelle : identifier votre langage amoureux et celui de votre partenaire suffit souvent à débloquer des années de frustration.',
-    },
-    {
-      question: 'Comment briser le silence dans un couple ?',
-      answer: 'Pas en forçant une grande discussion un dimanche soir. Commencez petit. Proposez une activité à deux — une promenade, un restaurant — pour recréer de la complicité sans la pression du face-à-face. Quand vous parlez, utilisez "je ressens" au lieu de "tu fais toujours". Choisissez un moment neutre, pas après une dispute. Si le mur de silence tient depuis plus de 3 mois malgré vos efforts, une thérapie de couple peut révéler les peurs enfouies qui alimentent le blocage. Certains couples trouvent aussi des réponses dans un tirage de tarot relationnel qui met en lumière ce que chacun n\'ose pas formuler.',
-    },
-    {
-      question: 'Disputes constantes : notre couple est-il condamné ?',
-      answer: 'Contrairement à ce qu\'on pourrait croire, se disputer est plutôt bon signe. Cela prouve que vous tenez encore assez l\'un à l\'autre pour vous exprimer. Le vrai danger ? L\'indifférence. Le jour où vous ne ressentez même plus l\'envie de vous battre pour votre couple, c\'est là que ça devient préoccupant. En revanche, si vos disputes tournent à l\'insulte, au mépris ou à la violence verbale, c\'est un signal d\'alarme sérieux. La plupart des couples en conflit chronique découvrent qu\'ils se disputent sur des symptômes — la vaisselle, les horaires — alors que le vrai problème est ailleurs.',
-    },
-    {
-      question: 'Le tarot peut-il améliorer la communication de couple ?',
-      answer: 'Le tarot ne remplace pas une thérapie. Mais il fait quelque chose qu\'aucun thérapeute ne peut faire exactement de la même manière : il révèle ce qui se cache derrière les mots. Les blessures d\'enfance, les besoins non formulés, les peurs secrètes — tout ce qui sabote votre dialogue sans que vous en ayez conscience. Un tirage de couple met en évidence le point exact où la communication se rompt. Beaucoup de consultants nous disent avoir enfin compris le comportement de leur partenaire après une seule séance.',
-    },
-    {
-      question: 'Que faire si mon partenaire refuse de communiquer ?',
-      answer: 'Ne forcez pas. Plus vous insistez, plus l\'autre se referme — c\'est mécanique. Votre partenaire qui se mure dans le silence souffre probablement de peur du conflit ou d\'un traumatisme ancien. Créez un espace sûr : promettez d\'écouter sans juger, proposez d\'échanger par écrit si la parole est trop difficile. La patience est essentielle. Toutefois, si ce refus dure depuis plus de 6 mois sans la moindre ouverture, posez-vous honnêtement la question : est-ce une incapacité temporaire ou un refus délibéré de s\'investir dans la relation ?',
-    },
-    {
-      question: 'Combien de temps pour rétablir la communication ?',
-      answer: 'Problèmes légers : comptez 2 à 4 mois d\'efforts réguliers. Blocages profonds après des années de silence : 6 à 12 mois de travail assidu. Mais les premiers résultats arrivent vite si les deux s\'y mettent. Dès 3 semaines d\'écoute active quotidienne, les couples constatent un changement d\'atmosphère. L\'important est d\'accepter les rechutes comme partie intégrante du processus. Deux pas en avant, un pas en arrière — c\'est normal. L\'astrologie de couple peut aussi éclairer les périodes plus favorables au dialogue selon vos thèmes natals respectifs.',
-    },
-    {
-      question: 'Quels sont les signes d\'un manque de communication dans le couple ?',
-      answer: 'Vous ne parlez plus que de logistique : courses, factures, qui emmène les enfants. Les "Comment tu vas ?" sincères ont disparu. Vous évitez les sujets importants — avenir, sentiments, frustrations — par peur que ça dégénère. Il y a une différence fondamentale entre un silence choisi après une dispute, le temps de se calmer, et un silence chronique qui s\'installe sans que personne ne l\'ait décidé. Le premier est sain et temporaire. Le second est un symptôme qui nécessite une action rapide avant que l\'indifférence ne prenne le relais.',
-    },
-    {
-      question: 'Comment améliorer la communication non verbale dans le couple ?',
-      answer: 'Les mots comptent moins qu\'on ne le croit. Ce qui reconstruit vraiment la connexion, ce sont les gestes du quotidien. Regarder l\'autre dans les yeux quand il parle au lieu de fixer son téléphone. Une main posée sur l\'épaule en passant. Sourire en le/la voyant rentrer. S\'asseoir un peu plus près sur le canapé. Marcher au même rythme. Ces micro-gestes paraissent anodins mais ils envoient un message puissant : "Je suis là, je te vois, tu comptes." Commencez par un seul changement cette semaine. Les effets vous surprendront.',
-    },
-  ]);
-
+export default function ProblemesCommunicationCouplePage() {
   return (
-    <main className="min-h-screen bg-gray-50">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(authorSchema) }}
-      />
-
-      <header className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-white py-16 px-4">
-        <div className="max-w-4xl mx-auto">
-          <Link href="/crise-couple" className="text-white/80 hover:text-white mb-4 inline-block">← Retour aux Crises de Couple</Link>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Communication Couple Difficile : Solutions Concrètes</h1>
-          <p className="text-xl opacity-95 mb-6">Communication couple difficile ? Techniques pour reconstruire le dialogue et retrouver la compr&eacute;hension mutuelle</p>
-          <div className="flex gap-4 flex-wrap">
-            <a href="#solutions" className="bg-white text-purple-600 px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition">Solutions Concrètes</a>
-            <a href="#tirage" className="border-2 border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-purple-600 transition">Tirage Communication</a>
-          </div>
-        </div>
-      </header>
-
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <div className="bg-white rounded-xl shadow-md p-6 mb-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-          <div><div className="text-3xl mb-1">💬</div><div className="text-2xl font-bold text-purple-600">Nettes</div><div className="text-sm text-gray-600">Améliorations</div></div>
-          <div><div className="text-3xl mb-1">🔮</div><div className="text-2xl font-bold text-purple-600">Élevée</div><div className="text-sm text-gray-600">Satisfaction</div></div>
-          <div><div className="text-3xl mb-1">💡</div><div className="text-2xl font-bold text-purple-600">Vaste</div><div className="text-sm text-gray-600">Expérience</div></div>
-          <div><div className="text-3xl mb-1">❤️</div><div className="text-2xl font-bold text-purple-600">Reconnue</div><div className="text-sm text-gray-600">Expertise</div></div>
-        </div>
-
-        <EEATSignal
-          colorScheme="purple"
-          method="Tarot relationnel et communication consciente"
-        />
+    <ContentPage config={config}>
 
         <article className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-purple-600">
           <p className="text-lg leading-relaxed mb-4">
@@ -576,65 +549,6 @@ export default function ProblemesCommunicationCouplePage() {
           </div>
         </section>
 
-        <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold mb-8 text-purple-600">❓ Questions Fréquentes sur les Problèmes de Communication</h2>
-          <p className="text-lg font-semibold text-gray-800 mb-4">La majorité des couples citent la mauvaise communication comme cause principale de leurs conflits. Avec un travail conscient sur l'écoute active et la CNV, les améliorations apparaissent en 3 à 4 semaines. Les blocages profonds nécessitent 6 à 12 mois de thérapie.</p>
-          <div className="space-y-6">
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Pourquoi mon couple ne se comprend plus ?</h3>
-              <p className="text-gray-700 leading-relaxed">Dans notre expérience, la cause numéro un est la différence de <strong>langages amoureux</strong>. L'un exprime son amour par des gestes, l'autre attend des mots. Résultat : chacun donne mais personne ne reçoit. Ajoutez à cela les non-dits accumulés sur des mois, les interprétations hâtives ("il ne m'a pas répondu donc il s'en fiche") et les blessures passées qui déforment tout ce qu'on entend. La bonne nouvelle : identifier votre langage amoureux et celui de votre partenaire suffit souvent à débloquer des années de frustration.</p>
-            </div>
-
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Comment briser le silence dans un couple ?</h3>
-              <p className="text-gray-700 leading-relaxed">Pas en forçant une grande discussion un dimanche soir. Commencez petit. Proposez une activité à deux — une promenade, un restaurant — pour recréer de la complicité sans la pression du face-à-face. Quand vous parlez, utilisez "je ressens" au lieu de "tu fais toujours". Choisissez un moment neutre, pas après une dispute. Si le <strong>mur du silence</strong> tient depuis plus de 3 mois malgré vos efforts, une <strong>thérapie de couple</strong> peut révéler les peurs enfouies qui alimentent le blocage. Certains couples trouvent aussi des réponses dans un tirage de <strong>tarot relationnel</strong> qui met en lumière ce que chacun n'ose pas formuler.</p>
-            </div>
-
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Disputes constantes : notre couple est-il condamné ?</h3>
-              <p className="text-gray-700 leading-relaxed">Contrairement à ce qu'on pourrait croire, se disputer est plutôt bon signe. Cela prouve que vous tenez encore assez l'un à l'autre pour vous exprimer. Le vrai danger ? L'indifférence. Le jour où vous ne ressentez même plus l'envie de vous battre pour votre couple, c'est là que ça devient préoccupant. En revanche, si vos <strong>disputes</strong> tournent à l'insulte, au mépris ou à la violence verbale, c'est un signal d'alarme sérieux. La plupart des couples en conflit chronique découvrent qu'ils se disputent sur des symptômes — la vaisselle, les horaires — alors que le vrai problème est ailleurs.</p>
-            </div>
-
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Le tarot peut-il améliorer la communication de couple ?</h3>
-              <p className="text-gray-700 leading-relaxed">Le <strong>tarot</strong> ne remplace pas une thérapie. Mais il fait quelque chose qu'aucun thérapeute ne peut faire exactement de la même manière : il révèle ce qui se cache derrière les mots. Les blessures d'enfance, les besoins non formulés, les peurs secrètes — tout ce qui sabote votre dialogue sans que vous en ayez conscience. Un <strong>tirage de couple</strong> met en évidence le point exact où la communication se rompt. Beaucoup de consultants nous disent avoir enfin compris le comportement de leur partenaire après une seule séance.</p>
-            </div>
-
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Que faire si mon partenaire refuse de communiquer ?</h3>
-              <p className="text-gray-700 leading-relaxed">Ne forcez pas. Plus vous insistez, plus l'autre se referme — c'est mécanique. Votre partenaire qui se mure dans le silence souffre probablement de <strong>peur du conflit</strong> ou d'un traumatisme ancien. Créez un espace sûr : promettez d'écouter sans juger, proposez d'échanger par écrit si la parole est trop difficile. La patience est essentielle. Toutefois, si ce refus dure depuis plus de 6 mois sans la moindre ouverture, posez-vous honnêtement la question : est-ce une incapacité temporaire ou un refus délibéré de s'investir dans la relation ?</p>
-            </div>
-
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Combien de temps pour rétablir la communication ?</h3>
-              <p className="text-gray-700 leading-relaxed">Problèmes légers : comptez 2 à 4 mois d'efforts réguliers. Blocages profonds après des années de silence : 6 à 12 mois de travail assidu. Mais les premiers résultats arrivent vite si les deux s'y mettent. <strong>Dès 3 semaines</strong> d'écoute active quotidienne, les couples constatent un changement d'atmosphère. L'important est d'accepter les rechutes comme partie intégrante du processus. Deux pas en avant, un pas en arrière — c'est normal. L'<strong>astrologie de couple</strong> peut aussi éclairer les périodes plus favorables au dialogue selon vos thèmes natals respectifs.</p>
-            </div>
-
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Quels sont les signes d'un manque de communication dans le couple ?</h3>
-              <p className="text-gray-700 leading-relaxed">Vous ne parlez plus que de logistique : courses, factures, qui emmène les enfants. Les "Comment tu vas ?" sincères ont disparu. Vous évitez les sujets importants — avenir, sentiments, frustrations — par peur que ça dégénère. Il y a une différence fondamentale entre un silence choisi après une dispute, le temps de se calmer, et un <strong>silence chronique</strong> qui s'installe sans que personne ne l'ait décidé. Le premier est sain et temporaire. Le second est un symptôme qui nécessite une action rapide avant que l'indifférence ne prenne le relais.</p>
-            </div>
-
-            <div>
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Comment améliorer la communication non verbale dans le couple ?</h3>
-              <p className="text-gray-700 leading-relaxed">Les mots comptent moins qu'on ne le croit. Ce qui reconstruit vraiment la connexion, ce sont les gestes du quotidien. Regarder l'autre dans les yeux quand il parle au lieu de fixer son téléphone. Une main posée sur l'épaule en passant. Sourire en le/la voyant rentrer. S'asseoir un peu plus près sur le canapé. Marcher au même rythme. Ces <strong>micro-gestes</strong> paraissent anodins mais ils envoient un message puissant : "Je suis là, je te vois, tu comptes." Commencez par un seul changement cette semaine. Les effets vous surprendront.</p>
-            </div>
-          </div>
-        </section>
-
-        <div className="bg-gray-100 rounded-xl p-6 mb-8">
-          <h3 className="font-bold text-lg mb-4 text-gray-900">Articles Connexes</h3>
-          <div className="space-y-2">
-            <Link href="/crise-couple" className="block text-purple-600 hover:text-purple-800 font-medium">→ Crises de Couple : Guide Complet</Link>
-            <Link href="/crise-couple/infidelite-couple" className="block text-purple-600 hover:text-purple-800 font-medium">→ Infidélité dans le Couple</Link>
-            <Link href="/crise-couple/jalousie-excessive" className="block text-purple-600 hover:text-purple-800 font-medium">→ Jalousie Excessive dans le Couple</Link>
-            <Link href="/sentiments/maime-t-il-elle" className="block text-purple-600 hover:text-purple-800 font-medium">→ M'aime-t-il/elle Vraiment ?</Link>
-            <Link href="/reconquete/se-remettre-ensemble" className="block text-purple-600 hover:text-purple-800 font-medium">→ Se Remettre Ensemble avec son Ex</Link>
-          </div>
-        </div>
-
-        <VoyantFinalCTA topic="crise-couple" source="problemes-communication-couple-final" />
-      </div>
-    </main>
+    </ContentPage>
   );
 }

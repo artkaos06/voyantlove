@@ -17,7 +17,7 @@
 //     &status={status}
 //     &dt={datetime}
 //
-// The receiver is tolerant of missing fields — only `transaction_id` and
+// The receiver is tolerant of missing fields, only `transaction_id` and
 // `secret` are required. Status changes (pending → approved → rejected) fire
 // repeated postbacks; Google Ads dedupes via orderId = transaction_id, so
 // duplicate uploads are silently rejected by Google rather than counted twice.
@@ -65,7 +65,7 @@ async function handle(request: NextRequest) {
       path: url.pathname,
     });
     recordUnauthorizedPostback();
-    // Awaited — Vercel serverless terminates the function after the
+    // Awaited, Vercel serverless terminates the function after the
     // response, killing any fire-and-forget Discord call.
     await notifyDiscord({
       title: '🛡️ Postback · UNAUTHORIZED ATTEMPT',
@@ -97,7 +97,7 @@ async function handle(request: NextRequest) {
     );
   }
 
-  // Structured log — searchable in Vercel logs by transaction_id.
+  // Structured log, searchable in Vercel logs by transaction_id.
   console.log('[postback] conversion', {
     transaction_id: event.transaction_id,
     event_id: event.event_id,
@@ -122,7 +122,7 @@ async function handle(request: NextRequest) {
   );
 
   // Real-time Discord notification on every inbound postback. Conversions
-  // are the headline event of the entire system — getting them in chat
+  // are the headline event of the entire system, getting them in chat
   // immediately matters more than for click-outs.
   const earlyAttributionType = event.gclid
     ? 'gclid'
@@ -240,7 +240,7 @@ async function handle(request: NextRequest) {
         });
       }
     } catch (err) {
-      // Never let an OCI failure 5xx the postback — BargesTech would retry,
+      // Never let an OCI failure 5xx the postback, BargesTech would retry,
       // and a flapping Google Ads endpoint shouldn't block our affiliate
       // tracking. The log is the source of truth for missed uploads.
       recordOciFailed();
@@ -264,7 +264,7 @@ async function handle(request: NextRequest) {
       reason: statusLower === 'rejected' ? 'rejected_status' : 'no_attribution',
     });
   } else {
-    // Google Ads not configured yet — expected during initial rollout, not
+    // Google Ads not configured yet, expected during initial rollout, not
     // an error.
     console.log('[postback] google_ads_oci unconfigured', {
       txid: event.transaction_id,

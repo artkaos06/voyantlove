@@ -9,13 +9,13 @@ import Testimonials from '@/components/en/Testimonials';
 import CommercialFAQ from '@/components/en/CommercialFAQ';
 import MobileStickyCTA from '@/components/en/MobileStickyCTA';
 
-// Commercial-intent lander v2 — rebuilt for cold paid traffic after v1
+// Commercial-intent lander v2, rebuilt for cold paid traffic after v1
 // converted at 0% CTA-CTR.
 //
 // v1 problem (diagnosed): editorial/corporate tone, abstract trust signals,
 // generic CTAs ("see top-rated psychics"), no emotional hook for the 2 AM
 // search state visitors are actually in. Page read as a review site for
-// rational comparison shoppers — but commercial-intent psychic searchers
+// rational comparison shoppers, but commercial-intent psychic searchers
 // are emotionally activated, not comparison shopping.
 //
 // v2 fix:
@@ -40,11 +40,11 @@ import MobileStickyCTA from '@/components/en/MobileStickyCTA';
 
 export const metadata: Metadata = {
   title:
-    'Online Love Psychic Reading — 5 Min for $1 with Top-Rated Advisors',
+    'Online Love Psychic Reading, 5 Min for $1 with Top-Rated Advisors',
   description:
     'Stop wondering. Get a real read on what they\'re thinking from a top-rated love psychic. New users: 5 minutes for $1. Trusted since 1999.',
   alternates: {
-    canonical: 'https://www.lovepsychicguide.com/online-psychic-reading',
+    canonical: 'https://www.lovepsychicguide.com/online-psychic-reading/',
   },
 };
 
@@ -69,7 +69,7 @@ export default function OnlinePsychicReadingPage() {
             </h1>
             <p className="text-lg md:text-xl text-gray-700 leading-relaxed max-w-2xl mx-auto mb-6">
               A real love psychic can read their energy and tell you what
-              they&apos;re actually feeling — not what your friends guess. New
+              they&apos;re actually feeling, not what your friends guess. New
               users on Keen pay <strong>just $1 for the first 5 minutes.</strong>
             </p>
 
@@ -90,7 +90,7 @@ export default function OnlinePsychicReadingPage() {
             <div className="inline-flex items-center gap-2 mt-5 px-4 py-2 bg-amber-50 border border-amber-200 rounded-full">
               <span aria-hidden="true">⏳</span>
               <p className="text-xs text-amber-900 font-medium">
-                The $1 trial applies once per new user — you won&apos;t see this
+                The $1 trial applies once per new user, you won&apos;t see this
                 price again after sign-up.
               </p>
             </div>
@@ -225,7 +225,7 @@ export default function OnlinePsychicReadingPage() {
           <p>
             A psychic reading isn&apos;t about crystal-ball predictions.
             It&apos;s about getting an outside perspective from someone trained
-            to read emotional and energetic patterns — with no friendship to
+            to read emotional and energetic patterns, with no friendship to
             manage and no stake in your situation.
           </p>
           <p>
@@ -237,8 +237,8 @@ export default function OnlinePsychicReadingPage() {
           </p>
           <p>
             Be ready with one specific question rather than three vague ones.
-            Open phrasing — &ldquo;what do you sense about their current state
-            of mind&rdquo; — gets better readings than closed yes/no
+            Open phrasing, &ldquo;what do you sense about their current state
+            of mind&rdquo;, gets better readings than closed yes/no
             questions. Take notes during the session; you&apos;ll forget
             specifics within 24 hours.
           </p>

@@ -1,110 +1,78 @@
-import type { Metadata } from 'next';
 import Link from 'next/link';
-import { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getAuthorSchema } from '@/lib/schema';
-import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
-import VoyantFinalCTA from '@/components/VoyantFinalCTA';
+import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
-export const metadata: Metadata = {
+const config: ContentPageConfig = {
   title: 'Dépendance Affective : Se Libérer et Aimer Sainement | Voyance',
   description: 'Comprendre et surmonter la dépendance affective. Le tarot révèle vos schémas répétitifs, blocages karmiques et le chemin vers des relations saines.',
+  url: 'https://www.voyantlove.fr/crise-couple/dependance-affective/',
   keywords: ['dépendance affective', 'dépendance émotionnelle couple', 'se libérer dépendance affective', 'relation toxique voyance', 'attachement anxieux'],
-  alternates: {
-    canonical: 'https://www.voyantlove.fr/crise-couple/dependance-affective/',
-  },
-  openGraph: {
-    title: 'Dépendance Affective : Se Libérer et Aimer Sainement',
-    description: 'Comprendre et surmonter la dépendance affective. Le tarot révèle vos schémas répétitifs, blocages karmiques et le chemin vers des relations saines.',
-    url: 'https://www.voyantlove.fr/crise-couple/dependance-affective/',
-    type: 'article',
-  },
-};
-
-export default function DependanceAffectivePage() {
-  const articleSchema = getArticleSchema({
-    title: 'Dépendance Affective : Se Libérer et Aimer Sainement | Voyance',
-    description: 'Comprendre et surmonter la dépendance affective. Le tarot révèle vos schémas répétitifs, blocages karmiques et le chemin vers des relations saines.',
-    url: 'https://www.voyantlove.fr/crise-couple/dependance-affective/',
-    datePublished: '2026-02-09',
-    dateModified: '2026-02-09',
-    keywords: ['dépendance affective', 'dépendance émotionnelle couple', 'se libérer dépendance affective', 'relation toxique voyance', 'attachement anxieux'],
-  });
-
-  const breadcrumbSchema = getBreadcrumbSchema([
+  datePublished: '2026-02-09',
+  dateModified: '2026-02-09',
+  breadcrumb: [
     { name: 'Accueil', url: 'https://www.voyantlove.fr' },
     { name: 'Crise de Couple', url: 'https://www.voyantlove.fr/crise-couple/' },
     { name: 'Dépendance Affective', url: 'https://www.voyantlove.fr/crise-couple/dependance-affective/' },
-  ]);
+  ],
+  header: {
+    emoji: '🔗',
+    h1: 'Dépendance Affective',
+    subtitle: 'Se Libérer et Aimer Sainement',
+    gradient: 'from-teal-600 via-cyan-600 to-blue-600',
+    backLink: { href: '/crise-couple', label: 'Retour aux Crises de Couple' },
+    anchors: [
+      { href: '#liberation', label: 'Chemin de Libération', primary: true },
+      { href: '#signes', label: 'Reconnaître les Signes' },
+    ],
+  },
+  accentText: 'text-teal-600',
+  stats: [
+    { icon: '📊', value: '1 sur 4', label: 'Personnes touchées' },
+    { icon: '🔍', value: 'Profonde', label: 'Origine karmique' },
+    { icon: '💚', value: 'Réelle', label: 'Guérison possible' },
+    { icon: '✨', value: 'Vaste', label: 'Expérience' },
+  ],
+  eeat: { colorScheme: 'teal', method: 'Tarot de libération et guidance karmique' },
+  cta: { topic: 'crise-couple', slug: 'dependance-affective' },
+  faq: [
+    {
+      q: 'Suis-je en dépendance affective ?',
+      a: 'Plusieurs signes révèlent une dépendance affective : vous ressentez une angoisse intense dès que votre partenaire s\'éloigne, vous sacrifiez systématiquement vos besoins pour maintenir la relation, vous êtes incapable de prendre des décisions sans validation extérieure, et votre humeur dépend entièrement de l\'attitude de l\'autre. Le tarot met en lumière ces schémas à travers des arcanes comme Le Diable (chaînes émotionnelles) et La Lune (illusions affectives). Si vous vous reconnaissez dans plus de 5 signes décrits ci-dessus, un travail de libération est nécessaire.',
+    },
+    {
+      q: 'La voyance aide-t-elle à guérir la dépendance affective ?',
+      a: 'La voyance offre un éclairage unique sur la dépendance affective en révélant les origines karmiques et les blessures d\'âme qui alimentent ce schéma. Le tirage de tarot identifie précisément vos blocages énergétiques, les vies antérieures qui influencent vos comportements actuels et le chemin de guérison personnalisé. Combinée à un travail thérapeutique, la guidance spirituelle accélère la prise de conscience et ouvre des portes de compréhension inaccessibles par la seule analyse rationnelle. C\'est un outil complémentaire puissant.',
+    },
+    {
+      q: 'Amour ou dépendance affective : quelle différence ?',
+      a: 'L\'amour sain est un choix libre fondé sur le respect mutuel, l\'autonomie et le désir d\'épanouissement de l\'autre. La dépendance affective est un besoin compulsif de l\'autre pour combler un vide intérieur. Dans l\'amour vrai, l\'absence du partenaire est supportable ; dans la dépendance, elle provoque une angoisse existentielle. L\'amour enrichit votre identité, la dépendance la dissout. Le tarot distingue clairement ces deux énergies : L\'Étoile symbolise l\'amour authentique tandis que Le Diable représente les liens de dépendance.',
+    },
+    {
+      q: 'Combien de temps pour guérir la dépendance affective ?',
+      a: 'Le processus de libération varie selon la profondeur des blessures et l\'engagement dans le travail intérieur. En général, les premières prises de conscience surviennent en 1 à 3 mois, la transformation des schémas profonds demande 6 à 12 mois, et l\'ancrage d\'un nouveau mode relationnel se consolide sur 1 à 2 ans. Le tarot révèle votre timeline personnelle et les étapes clés de votre parcours. L\'essentiel est la régularité du travail sur soi, pas la vitesse de la guérison.',
+    },
+    {
+      q: 'Relation saine après une dépendance affective, c\'est possible ?',
+      a: 'Absolument, et c\'est même souvent le cas. Les personnes qui traversent consciemment leur dépendance affective développent une connaissance profonde de leurs mécanismes émotionnels. Cette lucidité les rend capables de construire des relations plus authentiques que la moyenne. Le tarot montre régulièrement L\'Étoile comme issue du parcours de guérison, symbolisant un amour renouvelé et lumineux. La clé est d\'avoir guéri vos blessures avant de vous engager à nouveau dans une relation amoureuse.',
+    },
+  ],
+  related: [
+    { href: '/crise-couple', label: 'Crise de Couple : Toutes nos Guidances' },
+    { href: '/crise-couple/jalousie-excessive', label: 'Jalousie Excessive dans le Couple' },
+    { href: '/crise-couple/problemes-communication-couple', label: 'Problèmes de Communication dans le Couple' },
+    { href: '/rupture/oublier-son-ex', label: 'Oublier son Ex et Tourner la Page' },
+    { href: '/sentiments/maime-t-il-elle', label: 'M’aime-t-il/elle Vraiment ?' },
+    { href: '/sentiments/avenir-amoureux', label: 'Votre Avenir Amoureux' },
+    { href: '/crise-couple/vivre-meme-toit-apres-separation', label: 'Vivre sous le Même Toit Après une Séparation' },
+  ],
+};
 
-  const authorSchema = getAuthorSchema();
+export const metadata = contentMeta(config);
 
-  const faqSchema = getFAQSchema([
-    {
-      question: 'Suis-je en dépendance affective ?',
-      answer: 'Plusieurs signes révèlent une dépendance affective : vous ressentez une angoisse intense dès que votre partenaire s\'éloigne, vous sacrifiez systématiquement vos besoins pour maintenir la relation, vous êtes incapable de prendre des décisions sans validation extérieure, et votre humeur dépend entièrement de l\'attitude de l\'autre. Le tarot met en lumière ces schémas à travers des arcanes comme Le Diable (chaînes émotionnelles) et La Lune (illusions affectives). Si vous vous reconnaissez dans plus de 5 signes décrits ci-dessus, un travail de libération est nécessaire.',
-    },
-    {
-      question: 'La voyance aide-t-elle à guérir la dépendance affective ?',
-      answer: 'La voyance offre un éclairage unique sur la dépendance affective en révélant les origines karmiques et les blessures d\'âme qui alimentent ce schéma. Le tirage de tarot identifie précisément vos blocages énergétiques, les vies antérieures qui influencent vos comportements actuels et le chemin de guérison personnalisé. Combinée à un travail thérapeutique, la guidance spirituelle accélère la prise de conscience et ouvre des portes de compréhension inaccessibles par la seule analyse rationnelle. C\'est un outil complémentaire puissant.',
-    },
-    {
-      question: 'Amour ou dépendance affective : quelle différence ?',
-      answer: 'L\'amour sain est un choix libre fondé sur le respect mutuel, l\'autonomie et le désir d\'épanouissement de l\'autre. La dépendance affective est un besoin compulsif de l\'autre pour combler un vide intérieur. Dans l\'amour vrai, l\'absence du partenaire est supportable ; dans la dépendance, elle provoque une angoisse existentielle. L\'amour enrichit votre identité, la dépendance la dissout. Le tarot distingue clairement ces deux énergies : L\'Étoile symbolise l\'amour authentique tandis que Le Diable représente les liens de dépendance.',
-    },
-    {
-      question: 'Combien de temps pour guérir la dépendance affective ?',
-      answer: 'Le processus de libération varie selon la profondeur des blessures et l\'engagement dans le travail intérieur. En général, les premières prises de conscience surviennent en 1 à 3 mois, la transformation des schémas profonds demande 6 à 12 mois, et l\'ancrage d\'un nouveau mode relationnel se consolide sur 1 à 2 ans. Le tarot révèle votre timeline personnelle et les étapes clés de votre parcours. L\'essentiel est la régularité du travail sur soi, pas la vitesse de la guérison.',
-    },
-    {
-      question: 'Relation saine après une dépendance affective, c\'est possible ?',
-      answer: 'Absolument, et c\'est même souvent le cas. Les personnes qui traversent consciemment leur dépendance affective développent une connaissance profonde de leurs mécanismes émotionnels. Cette lucidité les rend capables de construire des relations plus authentiques que la moyenne. Le tarot montre régulièrement L\'Étoile comme issue du parcours de guérison, symbolisant un amour renouvelé et lumineux. La clé est d\'avoir guéri vos blessures avant de vous engager à nouveau dans une relation amoureuse.',
-    },
-  ]);
-
+export default function DependanceAffectivePage() {
   return (
-    <main className="min-h-screen bg-gray-50">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(authorSchema) }}
-      />
-
-      <header className="bg-gradient-to-r from-teal-600 via-cyan-600 to-blue-600 text-white py-16 px-4">
-        <div className="max-w-4xl mx-auto">
-          <Link href="/crise-couple" className="text-white/80 hover:text-white mb-4 inline-block">&larr; Retour aux Crises de Couple</Link>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">&#x1F517; D&eacute;pendance Affective</h1>
-          <p className="text-xl opacity-95 mb-6">Se Lib&eacute;rer et Aimer Sainement</p>
-          <div className="flex gap-4 flex-wrap">
-            <a href="#liberation" className="bg-white text-teal-600 px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition">Chemin de Lib&eacute;ration</a>
-            <a href="#signes" className="border-2 border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-teal-600 transition">Reconna&icirc;tre les Signes</a>
-          </div>
-        </div>
-      </header>
-
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <div className="bg-white rounded-xl shadow-md p-6 mb-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-          <div><div className="text-3xl mb-1">&#x1F4CA;</div><div className="text-2xl font-bold text-teal-600">1 sur 4</div><div className="text-sm text-gray-600">Personnes touch&eacute;es</div></div>
-          <div><div className="text-3xl mb-1">&#x1F50D;</div><div className="text-2xl font-bold text-teal-600">Profonde</div><div className="text-sm text-gray-600">Origine karmique</div></div>
-          <div><div className="text-3xl mb-1">&#x1F49A;</div><div className="text-2xl font-bold text-teal-600">R&eacute;elle</div><div className="text-sm text-gray-600">Gu&eacute;rison possible</div></div>
-          <div><div className="text-3xl mb-1">&#x2728;</div><div className="text-2xl font-bold text-teal-600">Vaste</div><div className="text-sm text-gray-600">Exp&eacute;rience</div></div>
-        </div>
-
-        <EEATSignal
-          colorScheme="teal"
-          method="Tarot de libération et guidance karmique"
-        />
+    <ContentPage config={config}>
 
         <article className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-teal-500">
           <p className="text-lg leading-relaxed mb-4">
@@ -405,52 +373,6 @@ export default function DependanceAffectivePage() {
           </p>
         </section>
 
-        <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold mb-8 text-teal-600">&#x2753; Questions Fr&eacute;quentes sur la D&eacute;pendance Affective</h2>
-          <p className="text-lg font-semibold text-gray-800 mb-4">La d&eacute;pendance affective touche 1 personne sur 4. La gu&eacute;rison prend 6 mois &agrave; 2 ans selon la profondeur des blessures. Le tarot acc&eacute;l&egrave;re la prise de conscience en r&eacute;v&eacute;lant les origines karmiques et le chemin personnalis&eacute; de lib&eacute;ration.</p>
-          <div className="space-y-6">
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Suis-je en d&eacute;pendance affective ?</h3>
-              <p className="text-gray-700 leading-relaxed">Plusieurs signes r&eacute;v&egrave;lent une <strong>d&eacute;pendance affective</strong> : vous ressentez une angoisse intense d&egrave;s que votre partenaire s&rsquo;&eacute;loigne, vous sacrifiez syst&eacute;matiquement vos besoins pour maintenir la relation, vous &ecirc;tes incapable de prendre des d&eacute;cisions sans <strong>validation ext&eacute;rieure</strong>, et votre humeur d&eacute;pend enti&egrave;rement de l&rsquo;attitude de l&rsquo;autre. Le tarot met en lumi&egrave;re ces sch&eacute;mas &agrave; travers des arcanes comme Le Diable (cha&icirc;nes &eacute;motionnelles) et La Lune (<strong>illusions affectives</strong>). Si vous vous reconnaissez dans plus de 5 signes d&eacute;crits ci-dessus, un travail de lib&eacute;ration est n&eacute;cessaire.</p>
-            </div>
-
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold mb-3 text-gray-900">La voyance aide-t-elle &agrave; gu&eacute;rir la d&eacute;pendance affective ?</h3>
-              <p className="text-gray-700 leading-relaxed">La voyance offre un &eacute;clairage unique sur la d&eacute;pendance affective en r&eacute;v&eacute;lant les <strong>origines karmiques</strong> et les blessures d&rsquo;&acirc;me qui alimentent ce sch&eacute;ma. Le tirage de tarot identifie pr&eacute;cis&eacute;ment vos <strong>blocages &eacute;nerg&eacute;tiques</strong>, les vies ant&eacute;rieures qui influencent vos comportements actuels et le chemin de gu&eacute;rison personnalis&eacute;. Combin&eacute;e &agrave; un travail th&eacute;rapeutique, la guidance spirituelle acc&eacute;l&egrave;re la prise de conscience et ouvre des portes de compr&eacute;hension inaccessibles par la seule analyse rationnelle. C&rsquo;est un outil <strong>compl&eacute;mentaire</strong> puissant.</p>
-            </div>
-
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Amour ou d&eacute;pendance affective : quelle diff&eacute;rence ?</h3>
-              <p className="text-gray-700 leading-relaxed">L&rsquo;<strong>amour sain</strong> est un choix libre fond&eacute; sur le respect mutuel, l&rsquo;autonomie et le d&eacute;sir d&rsquo;&eacute;panouissement de l&rsquo;autre. La d&eacute;pendance affective est un besoin compulsif de l&rsquo;autre pour combler un vide int&eacute;rieur. Dans l&rsquo;amour vrai, l&rsquo;absence du partenaire est supportable ; dans la d&eacute;pendance, elle provoque une <strong>angoisse existentielle</strong>. L&rsquo;amour enrichit votre identit&eacute;, la d&eacute;pendance la dissout. Le tarot distingue ces deux &eacute;nergies : L&rsquo;&Eacute;toile symbolise l&rsquo;amour authentique tandis que Le Diable repr&eacute;sente les <strong>liens de d&eacute;pendance</strong>.</p>
-            </div>
-
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Combien de temps pour gu&eacute;rir la d&eacute;pendance affective ?</h3>
-              <p className="text-gray-700 leading-relaxed">Le processus de lib&eacute;ration varie selon la profondeur des blessures et l&rsquo;engagement dans le <strong>travail int&eacute;rieur</strong>. En g&eacute;n&eacute;ral, les premi&egrave;res prises de conscience surviennent en 1 &agrave; 3 mois, la transformation des sch&eacute;mas profonds demande 6 &agrave; 12 mois, et l&rsquo;ancrage d&rsquo;un nouveau mode relationnel se consolide sur 1 &agrave; 2 ans. Le tarot r&eacute;v&egrave;le votre <strong>timeline personnelle</strong> et les &eacute;tapes cl&eacute;s de votre parcours. L&rsquo;essentiel est la r&eacute;gularit&eacute; du travail sur soi, pas la vitesse de la <strong>gu&eacute;rison</strong>.</p>
-            </div>
-
-            <div>
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Relation saine apr&egrave;s une d&eacute;pendance affective, c&rsquo;est possible ?</h3>
-              <p className="text-gray-700 leading-relaxed">Absolument, et c&rsquo;est m&ecirc;me souvent le cas. Les personnes qui traversent consciemment leur d&eacute;pendance affective d&eacute;veloppent une connaissance profonde de leurs <strong>m&eacute;canismes &eacute;motionnels</strong>. Cette lucidit&eacute; les rend capables de construire des <strong>relations plus authentiques</strong> que la moyenne. Le tarot montre r&eacute;guli&egrave;rement L&rsquo;&Eacute;toile comme issue du parcours de gu&eacute;rison, symbolisant un amour renouvel&eacute; et lumineux. La cl&eacute; est d&rsquo;avoir gu&eacute;ri vos blessures avant de vous engager &agrave; nouveau dans une <strong>relation amoureuse</strong>.</p>
-            </div>
-          </div>
-        </section>
-
-        <div className="bg-gray-100 rounded-xl p-6 mb-8">
-          <h3 className="font-bold text-lg mb-4 text-gray-900">&#x1F4DA; Articles Connexes</h3>
-          <div className="space-y-2">
-            <Link href="/crise-couple" className="block text-teal-600 hover:text-teal-800 font-medium">&rarr; Crise de Couple : Toutes nos Guidances</Link>
-            <Link href="/crise-couple/jalousie-excessive" className="block text-teal-600 hover:text-teal-800 font-medium">&rarr; Jalousie Excessive dans le Couple</Link>
-            <Link href="/crise-couple/problemes-communication-couple" className="block text-teal-600 hover:text-teal-800 font-medium">&rarr; Probl&egrave;mes de Communication dans le Couple</Link>
-            <Link href="/rupture/oublier-son-ex" className="block text-teal-600 hover:text-teal-800 font-medium">&rarr; Oublier son Ex et Tourner la Page</Link>
-            <Link href="/sentiments/maime-t-il-elle" className="block text-teal-600 hover:text-teal-800 font-medium">&rarr; M&rsquo;aime-t-il/elle Vraiment ?</Link>
-            <Link href="/sentiments/avenir-amoureux" className="block text-teal-600 hover:text-teal-800 font-medium">&rarr; Votre Avenir Amoureux</Link>
-            <Link href="/crise-couple/vivre-meme-toit-apres-separation" className="block text-teal-600 hover:text-teal-800 font-medium">&rarr; Vivre sous le Même Toit Après une Séparation</Link>
-          </div>
-        </div>
-
-        <VoyantFinalCTA topic="crise-couple" source="dependance-affective-final" />
-      </div>
-    </main>
+    </ContentPage>
   );
 }

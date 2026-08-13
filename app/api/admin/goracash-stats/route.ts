@@ -1,4 +1,4 @@
-// On-demand Goracash CB stats — backfill / audit endpoint.
+// On-demand Goracash CB stats, backfill / audit endpoint.
 //
 // Usage (browser or curl):
 //   /api/admin/goracash-stats?key=<ADMIN_KEY>&from=2026-05-01&to=2026-05-20
@@ -6,7 +6,7 @@
 //
 // Returns the full conversion funnel (calls → treated → inscriptions →
 // transactions → € reversé) for the range, globally and per day, straight
-// from the Goracash API — no dashboard login needed. With discord=1 the
+// from the Goracash API, no dashboard login needed. With discord=1 the
 // summary is also posted to the Discord channel so it lands in the
 // permanent ledger.
 //
@@ -118,7 +118,7 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
         thematic,
         market,
       });
-      // Always 200 — this is a diagnostic probe; the `ok` field + raw body
+      // Always 200, this is a diagnostic probe; the `ok` field + raw body
       // tell the full story (including Goracash-side errors verbatim).
       return NextResponse.json({
         service: 'web',
@@ -139,7 +139,7 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
 
     if (sp.get('discord') === '1') {
       const g = stats.global;
-      // Only days with activity — keeps the embed readable on long ranges.
+      // Only days with activity, keeps the embed readable on long ranges.
       const activeDays = Object.entries(stats.dates)
         .filter(([, b]) => b.total || b.subscription || b.transaction || b.amount)
         .map(

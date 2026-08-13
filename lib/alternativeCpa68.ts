@@ -1,7 +1,7 @@
 // Centralized, single-source-of-truth config for the alternative CPA68 paid
 // lander (/lp/consultation-10-minutes-offertes). Business terms confirmed by
 // SAIICO on 2026-07-29: the public phone number and the commercial offer
-// text below are the authoritative values — do not read them from env vars
+// text below are the authoritative values, do not read them from env vars
 // and do not gate rendering on any missing external input.
 export const ALTERNATIVE_PROVIDER_ID = 'alternative_cpa_68' as const;
 export const ALTERNATIVE_LANDING_VARIANT = 'consultation_10_minutes_offertes_v1' as const;

@@ -1,12 +1,11 @@
-// Pain validation block — sits between the hero and the advisor cards.
+// Pain validation block, sits between the hero and the advisor cards.
 //
 // Cold commercial-intent traffic in this niche is emotionally activated.
-// They came here because of someone specific — an ex, a partner, a crush —
-// and the question keeps looping. Before pitching the solution, we have to
+// They came here because of someone specific, an ex, a partner, a crush, // and the question keeps looping. Before pitching the solution, we have to
 // signal: "we see what's actually happening for you right now."
 //
 // This is classic Problem-Agitate-Solution applied gently. The bullets
-// describe the visitor's recent behavior, not their feelings — feelings-
+// describe the visitor's recent behavior, not their feelings, feelings-
 // based pitching reads as manipulative; behavior-based mirroring reads as
 // understanding.
 //

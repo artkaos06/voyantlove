@@ -1,93 +1,77 @@
-import type { Metadata } from 'next';
 import Link from 'next/link';
-import { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getAuthorSchema } from '@/lib/schema';
-import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
-import VoyantFinalCTA from '@/components/VoyantFinalCTA';
+import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
-export const metadata: Metadata = {
+const config: ContentPageConfig = {
   title: 'Marc de Café Amour : Tasséographie et Signes Sentimentaux',
   description: 'Découvrez la lecture du marc de café appliquée à l\'amour : symboles du cœur, de l\'anneau, de l\'oiseau, méthode de tirage et guide pratique. La tasséographie au service de vos questions de cœur.',
+  url: 'https://www.voyantlove.fr/methodes-voyance/marc-de-cafe-amour/',
   keywords: ['marc de café amour', 'tasséographie amour', 'lecture marc de café sentimental', 'symboles marc de café amour'],
-  alternates: {
-    canonical: 'https://www.voyantlove.fr/methodes-voyance/marc-de-cafe-amour/',
-  },
-};
-
-export default function MarcDeCafeAmourPage() {
-  const articleSchema = getArticleSchema({
-    title: 'Marc de Café Amour : Tasséographie et Signes Sentimentaux',
-    description: 'Découvrez la lecture du marc de café appliquée à l\'amour : symboles du cœur, de l\'anneau, de l\'oiseau, méthode de tirage et guide pratique. La tasséographie au service de vos questions de cœur.',
-    url: 'https://www.voyantlove.fr/methodes-voyance/marc-de-cafe-amour/',
-    datePublished: '2026-08-06',
-    dateModified: '2026-08-06',
-    keywords: ['marc de café amour', 'tasséographie amour', 'lecture marc de café sentimental'],
-  });
-
-  const authorSchema = getAuthorSchema();
-
-  const breadcrumbSchema = getBreadcrumbSchema([
+  datePublished: '2026-08-06',
+  dateModified: '2026-08-06',
+  breadcrumb: [
     { name: 'Accueil', url: 'https://www.voyantlove.fr' },
     { name: 'Méthodes de Voyance', url: 'https://www.voyantlove.fr/methodes-voyance/' },
     { name: 'Marc de Café Amour', url: 'https://www.voyantlove.fr/methodes-voyance/marc-de-cafe-amour/' },
-  ]);
+  ],
+  header: {
+    emoji: '☕',
+    h1: 'Marc de Café Amour',
+    subtitle: 'La tasséographie au service de vos questions sentimentales',
+    gradient: 'from-amber-900 via-orange-800 to-stone-800',
+    backLink: { href: '/methodes-voyance', label: 'Retour aux Méthodes de Voyance' },
+    anchors: [
+      { href: '#symboles', label: 'Les Symboles Amoureux', primary: true },
+      { href: '#pratique', label: 'Faire sa Propre Lecture' },
+    ],
+  },
+  accentText: 'text-amber-800',
+  stats: [
+    { icon: '☕', value: 'Tasséographie', label: 'Nom de l\'art' },
+    { icon: '🌍', value: 'Turc & Grec', label: 'Traditions vivantes' },
+    { icon: '💞', value: 'Conviviale', label: 'Pratique partagée' },
+    { icon: '🔍', value: 'Symbolique', label: 'Formes à interpréter' },
+  ],
+  eeat: { colorScheme: 'orange', method: 'Tasséographie amoureuse, lecture du marc de café' },
+  cta: { topic: 'methodes-voyance', slug: 'marc-de-cafe-amour' },
+  faq: [
+    {
+      q: 'Quels symboles du marc de café sont favorables en amour ?',
+      a: 'Le cœur bien dessiné est le symbole le plus recherché, annonçant un amour sincère ou une déclaration à venir. L\'anneau évoque un engagement ou des fiançailles proches. L\'oiseau symbolise de bonnes nouvelles sentimentales. Une étoile nette indique généralement la chance et l\'épanouissement en amour. Ces significations s\'interprètent toujours dans le contexte global de la tasse, pas isolément.',
+    },
+    {
+      q: 'Comment se déroule une lecture de marc de café pour une question d\'amour ?',
+      a: 'Vous buvez un café non filtré en pensant à votre question sentimentale, puis retournez la tasse sur sa soucoupe et la faites tourner trois fois. Le praticien observe ensuite les formes dessinées par le marc, en tenant compte de leur position dans la tasse, le bord représentant le futur proche, le fond des événements plus lointains, pour construire une lecture d\'ensemble de votre situation.',
+    },
+    {
+      q: 'Peut-on pratiquer la lecture du marc de café soi-même ?',
+      a: 'C\'est une pratique traditionnellement transmise en famille ou entre amis, mais reconnaître et interpréter finement les formes demande de l\'entraînement : les premières lectures autodidactes distinguent souvent difficilement les figures pertinentes du hasard des résidus. Un praticien expérimenté apporte une lecture plus nuancée pour les questions amoureuses importantes.',
+    },
+    {
+      q: 'Faut-il du café turc spécifiquement pour la tasséographie amoureuse ?',
+      a: 'Le café turc, non filtré et laissant une quantité généreuse de marc au fond de la tasse, est traditionnellement privilégié car il produit des figures plus nettes et plus faciles à interpréter. Un café classique très infusé peut également convenir, à condition de laisser suffisamment de résidus visibles au fond de la tasse.',
+    },
+  ],
+  related: [
+    { href: '/methodes-voyance', label: 'Toutes les Méthodes de Voyance Amoureuse' },
+    { href: '/methodes-voyance/cartomancie-amour', label: 'Cartomancie Amour' },
+    { href: '/methodes-voyance/voyance-sentimentale', label: 'Voyance Sentimentale' },
+    { href: '/methodes-voyance/oracle-amour', label: 'Oracle de l\'Amour' },
+    { href: '/glossaire/tasseographie', label: 'Glossaire : Tasséographie' },
+    { href: '/glossaire/signe-du-destin', label: 'Glossaire : Signe du Destin' },
+  ],
+};
 
-  const faqSchema = getFAQSchema([
-    {
-      question: 'Quels symboles du marc de café sont favorables en amour ?',
-      answer: 'Le cœur bien dessiné est le symbole le plus recherché, annonçant un amour sincère ou une déclaration à venir. L\'anneau évoque un engagement ou des fiançailles proches. L\'oiseau symbolise de bonnes nouvelles sentimentales. Une étoile nette indique généralement la chance et l\'épanouissement en amour. Ces significations s\'interprètent toujours dans le contexte global de la tasse, pas isolément.',
-    },
-    {
-      question: 'Comment se déroule une lecture de marc de café pour une question d\'amour ?',
-      answer: 'Vous buvez un café non filtré en pensant à votre question sentimentale, puis retournez la tasse sur sa soucoupe et la faites tourner trois fois. Le praticien observe ensuite les formes dessinées par le marc, en tenant compte de leur position dans la tasse — le bord représentant le futur proche, le fond des événements plus lointains — pour construire une lecture d\'ensemble de votre situation.',
-    },
-    {
-      question: 'Peut-on pratiquer la lecture du marc de café soi-même ?',
-      answer: 'C\'est une pratique traditionnellement transmise en famille ou entre amis, mais reconnaître et interpréter finement les formes demande de l\'entraînement : les premières lectures autodidactes distinguent souvent difficilement les figures pertinentes du hasard des résidus. Un praticien expérimenté apporte une lecture plus nuancée pour les questions amoureuses importantes.',
-    },
-    {
-      question: 'Faut-il du café turc spécifiquement pour la tasséographie amoureuse ?',
-      answer: 'Le café turc, non filtré et laissant une quantité généreuse de marc au fond de la tasse, est traditionnellement privilégié car il produit des figures plus nettes et plus faciles à interpréter. Un café classique très infusé peut également convenir, à condition de laisser suffisamment de résidus visibles au fond de la tasse.',
-    },
-  ]);
+export const metadata = contentMeta(config);
 
+export default function MarcDeCafeAmourPage() {
   return (
-    <main className="min-h-screen bg-gray-50">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(authorSchema) }} />
-
-      {/* Header */}
-      <header className="bg-gradient-to-r from-amber-900 via-orange-800 to-stone-800 text-white py-16 px-4">
-        <div className="max-w-4xl mx-auto">
-          <Link href="/methodes-voyance" className="text-white/80 hover:text-white mb-4 inline-block">&larr; Retour aux Méthodes de Voyance</Link>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">☕ Marc de Café Amour</h1>
-          <p className="text-xl opacity-95 mb-6">La tasséographie au service de vos questions sentimentales</p>
-          <div className="flex gap-4 flex-wrap">
-            <a href="#symboles" className="bg-white text-amber-900 px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition">Les Symboles Amoureux</a>
-            <a href="#pratique" className="border-2 border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-amber-900 transition">Faire sa Propre Lecture</a>
-          </div>
-        </div>
-      </header>
-
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        {/* Stats bar */}
-        <div className="bg-white rounded-xl shadow-md p-6 mb-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-          <div><div className="text-3xl mb-1">☕</div><div className="text-2xl font-bold text-amber-800">Tasséographie</div><div className="text-sm text-gray-600">Nom de l&apos;art</div></div>
-          <div><div className="text-3xl mb-1">🌍</div><div className="text-2xl font-bold text-amber-800">Turc & Grec</div><div className="text-sm text-gray-600">Traditions vivantes</div></div>
-          <div><div className="text-3xl mb-1">💞</div><div className="text-2xl font-bold text-amber-800">Conviviale</div><div className="text-sm text-gray-600">Pratique partagée</div></div>
-          <div><div className="text-3xl mb-1">🔍</div><div className="text-2xl font-bold text-amber-800">Symbolique</div><div className="text-sm text-gray-600">Formes à interpréter</div></div>
-        </div>
-
-        <EEATSignal colorScheme="orange" method="Tasséographie amoureuse — lecture du marc de café" />
-
-        {/* Answer capsule */}
+    <ContentPage config={config}>
         <article className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-amber-800">
           <div className="bg-amber-50 border-l-4 border-amber-600 p-6 rounded-lg">
             <p className="text-lg leading-relaxed">
-              Le <strong>marc de café amour</strong> désigne l&apos;art de lire les formes laissées par le café au fond d&apos;une tasse, une pratique appelée <strong>tasséographie</strong> (ou caféomancie), pour éclairer vos questions sentimentales. Contrairement au <Link href="/methodes-voyance/tirage-tarot-amour" className="text-amber-800 hover:text-amber-900 underline font-medium">tarot</Link> ou à l&apos;<Link href="/methodes-voyance/oracle-amour" className="text-amber-800 hover:text-amber-900 underline font-medium">oracle</Link>, cette méthode se pratique traditionnellement entre proches, autour d&apos;un café partagé, ce qui lui donne une dimension chaleureuse et accessible. Chaque forme perçue — un cœur, un anneau, un oiseau — porte une signification symbolique précise, interprétée selon sa position dans la tasse. Cette guidance complète explore les symboles amoureux les plus fréquents, la méthode de lecture, et comment vous initier vous-même à cette pratique ancestrale.
+              Le <strong>marc de café amour</strong> désigne l&apos;art de lire les formes laissées par le café au fond d&apos;une tasse, une pratique appelée <strong>tasséographie</strong> (ou caféomancie), pour éclairer vos questions sentimentales. Contrairement au <Link href="/methodes-voyance/tirage-tarot-amour" className="text-amber-800 hover:text-amber-900 underline font-medium">tarot</Link> ou à l&apos;<Link href="/methodes-voyance/oracle-amour" className="text-amber-800 hover:text-amber-900 underline font-medium">oracle</Link>, cette méthode se pratique traditionnellement entre proches, autour d&apos;un café partagé, ce qui lui donne une dimension chaleureuse et accessible. Chaque forme perçue, un cœur, un anneau, un oiseau, porte une signification symbolique précise, interprétée selon sa position dans la tasse. Cette guidance complète explore les symboles amoureux les plus fréquents, la méthode de lecture, et comment vous initier vous-même à cette pratique ancestrale.
             </p>
           </div>
         </article>
@@ -108,7 +92,7 @@ export default function MarcDeCafeAmourPage() {
             </div>
             <div className="bg-orange-50 border-l-4 border-orange-500 p-5 rounded-lg">
               <h3 className="font-bold text-lg mb-2 text-orange-800">Une Lecture par Position</h3>
-              <p className="text-gray-700 text-sm">La forme d&apos;ensemble compte autant que les symboles isolés. La disposition dans la tasse — proche du bord ou du fond, proche de l&apos;anse ou à l&apos;opposé — module la signification et la <strong>temporalité</strong> de chaque symbole perçu : le bord représente le futur proche, le fond des événements plus lointains.</p>
+              <p className="text-gray-700 text-sm">La forme d&apos;ensemble compte autant que les symboles isolés. La disposition dans la tasse, proche du bord ou du fond, proche de l&apos;anse ou à l&apos;opposé, module la signification et la <strong>temporalité</strong> de chaque symbole perçu : le bord représente le futur proche, le fond des événements plus lointains.</p>
             </div>
           </div>
         </section>
@@ -128,7 +112,7 @@ export default function MarcDeCafeAmourPage() {
             </div>
             <div className="bg-white rounded-lg p-5 border-l-4 border-sky-500">
               <h3 className="font-bold text-lg mb-2 text-sky-700">🕊️ L&apos;Oiseau</h3>
-              <p className="text-gray-700 text-sm">Symbolise de bonnes nouvelles sentimentales ou l&apos;arrivée d&apos;un message important — une déclaration attendue, des nouvelles d&apos;une personne qui compte.</p>
+              <p className="text-gray-700 text-sm">Symbolise de bonnes nouvelles sentimentales ou l&apos;arrivée d&apos;un message important, une déclaration attendue, des nouvelles d&apos;une personne qui compte.</p>
             </div>
             <div className="bg-white rounded-lg p-5 border-l-4 border-yellow-500">
               <h3 className="font-bold text-lg mb-2 text-yellow-700">⭐ L&apos;Étoile</h3>
@@ -224,45 +208,6 @@ export default function MarcDeCafeAmourPage() {
             <Link href="/consulter?ref=marc-de-cafe-amour" className="inline-block bg-amber-800 text-white px-8 py-3 rounded-lg font-semibold hover:bg-amber-900 transition">Consulter un Praticien Vérifié →</Link>
           </div>
         </section>
-
-        {/* FAQ Section */}
-        <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">❓ Questions Fréquentes sur le Marc de Café en Amour</h2>
-          <div className="space-y-6">
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Quels symboles du marc de café sont favorables en amour ?</h3>
-              <p className="text-gray-700 leading-relaxed">Le <strong>cœur</strong> bien dessiné est le symbole le plus recherché, annonçant un amour sincère ou une déclaration à venir. L&apos;<strong>anneau</strong> évoque un engagement ou des fiançailles proches. L&apos;<strong>oiseau</strong> symbolise de bonnes nouvelles sentimentales. Une <strong>étoile</strong> nette indique généralement la chance et l&apos;épanouissement en amour.</p>
-            </div>
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Comment se déroule une lecture de marc de café pour une question d&apos;amour ?</h3>
-              <p className="text-gray-700 leading-relaxed">Vous buvez un café non filtré en pensant à votre question sentimentale, puis retournez la tasse sur sa soucoupe et la faites tourner trois fois. Le praticien observe ensuite les formes dessinées par le marc, en tenant compte de leur position dans la tasse.</p>
-            </div>
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Peut-on pratiquer la lecture du marc de café soi-même ?</h3>
-              <p className="text-gray-700 leading-relaxed">C&apos;est une pratique traditionnellement transmise en famille ou entre amis, mais reconnaître et interpréter finement les formes demande de l&apos;entraînement : les premières lectures autodidactes distinguent souvent difficilement les figures pertinentes du hasard des résidus.</p>
-            </div>
-            <div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Faut-il du café turc spécifiquement pour la tasséographie amoureuse ?</h3>
-              <p className="text-gray-700 leading-relaxed">Le café turc, non filtré, est traditionnellement privilégié car il produit des figures plus nettes et plus faciles à interpréter. Un café classique très infusé peut également convenir, à condition de laisser suffisamment de résidus visibles au fond de la tasse.</p>
-            </div>
-          </div>
-        </section>
-
-        {/* Articles Connexes */}
-        <div className="bg-gray-100 rounded-xl p-6 mb-8">
-          <h3 className="font-bold text-lg mb-4 text-gray-900">📚 Méthodes de Voyance Complémentaires</h3>
-          <div className="grid md:grid-cols-2 gap-3">
-            <Link href="/methodes-voyance" className="block text-amber-800 hover:text-amber-900 font-medium">&rarr; Toutes les Méthodes de Voyance Amoureuse</Link>
-            <Link href="/methodes-voyance/cartomancie-amour" className="block text-amber-800 hover:text-amber-900 font-medium">&rarr; Cartomancie Amour</Link>
-            <Link href="/methodes-voyance/voyance-sentimentale" className="block text-amber-800 hover:text-amber-900 font-medium">&rarr; Voyance Sentimentale</Link>
-            <Link href="/methodes-voyance/oracle-amour" className="block text-amber-800 hover:text-amber-900 font-medium">&rarr; Oracle de l&apos;Amour</Link>
-            <Link href="/glossaire/tasseographie" className="block text-amber-800 hover:text-amber-900 font-medium">&rarr; Glossaire : Tasséographie</Link>
-            <Link href="/glossaire/signe-du-destin" className="block text-amber-800 hover:text-amber-900 font-medium">&rarr; Glossaire : Signe du Destin</Link>
-          </div>
-        </div>
-
-        <VoyantFinalCTA topic="methodes-voyance" source="marc-de-cafe-amour-final" />
-      </div>
-    </main>
+    </ContentPage>
   );
 }

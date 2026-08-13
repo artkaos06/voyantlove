@@ -1,4 +1,4 @@
-// 2026 love-horoscope predictions per sign — extracted verbatim from the
+// 2026 love-horoscope predictions per sign, extracted verbatim from the
 // existing static content on app/voyance-gratuite-amour/horoscope-amour-2026,
 // reused here (not reinvented) so the selector tool and the article never
 // contradict each other.

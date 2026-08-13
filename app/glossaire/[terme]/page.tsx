@@ -7,8 +7,20 @@ import { renderWithEntities } from '@/lib/entityBold';
 import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
+import AskAI from '@/components/AskAI';
 
 const LIVE_TERMS = GLOSSARY_TERMS.filter((t) => validateTermRecord(t).length === 0);
+
+// Each glossary term funnels authority to the priority page for its category,
+// so anchors/targets vary by category rather than repeating one sitewide link.
+const FUNNEL_FALLBACK = { href: '/methodes-voyance', anchor: 'les méthodes de voyance amoureuse', lead: 'Ce terme s’inscrit dans' };
+const CATEGORY_FUNNEL: Record<string, { href: string; anchor: string; lead: string }> = {
+  astrologie: { href: '/astrologie-amour', anchor: 'l’astrologie amoureuse', lead: 'Ce terme s’éclaire à la lumière de' },
+  numerologie: { href: '/methodes-voyance/numerologie-amoureuse', anchor: 'la numérologie amoureuse', lead: 'Pour aller plus loin, découvrez' },
+  'pratiques-divinatoires': { href: '/tarot-amour', anchor: 'le tarot de l’amour', lead: 'On retrouve souvent ce concept dans' },
+  'psychologie-amoureuse': { href: '/sentiments', anchor: 'les sentiments amoureux', lead: 'Ce mécanisme touche au cœur des' },
+  spiritualite: { href: '/nouvelle-rencontre/flamme-jumelle', anchor: 'la flamme jumelle', lead: 'Cette notion est proche de l’univers de' },
+};
 
 export function generateStaticParams() {
   return LIVE_TERMS.map((t) => ({ terme: t.slug }));
@@ -38,6 +50,7 @@ export default async function GlossaryTermPage({ params }: Props) {
 
   const url = `https://www.voyantlove.fr/glossaire/${t.slug}/`;
   const title = `${t.terme} : Définition et Signification en Amour`;
+  const funnel = CATEGORY_FUNNEL[t.categorie] ?? FUNNEL_FALLBACK;
   const related = getRelatedTerms(t, 4);
   const siblings = LIVE_TERMS.filter((x) => x.categorie === t.categorie && x.slug !== t.slug).slice(0, 4);
 
@@ -77,12 +90,15 @@ export default async function GlossaryTermPage({ params }: Props) {
       </header>
 
       <div className="max-w-4xl mx-auto px-4 py-8">
-        <EEATSignal colorScheme="purple" method="Glossaire de la voyance amoureuse — définitions et guidance sentimentale" />
+        <EEATSignal colorScheme="purple" method="Glossaire de la voyance amoureuse, définitions et guidance sentimentale" />
 
-        {/* Answer capsule — extractive snippet target */}
+        {/* Answer capsule, extractive snippet target */}
         <section className="bg-purple-50 border-l-4 border-purple-500 rounded-r-xl p-6 md:p-8 mb-8">
           <h2 className="text-xl font-bold text-gray-900 mb-3">Que signifie « {t.terme} »&nbsp;?</h2>
           <p className="text-lg leading-relaxed text-gray-800">{renderWithEntities(t.answerCapsule)}</p>
+          <div className="mt-5">
+            <AskAI title={title} url={url} context={t.answerCapsule} />
+          </div>
         </section>
 
         <article className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-violet-500">
@@ -95,6 +111,10 @@ export default async function GlossaryTermPage({ params }: Props) {
         <section className="bg-gradient-to-br from-violet-50 to-purple-50 rounded-xl p-6 md:p-8 mb-8 border-2 border-violet-200">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">{t.terme} en amour</h2>
           <p className="text-gray-800 leading-relaxed">{renderWithEntities(t.enAmour)}</p>
+          <p className="text-gray-700 leading-relaxed mt-4">
+            {funnel.lead}{' '}
+            <Link href={funnel.href} className="text-violet-700 hover:text-violet-900 underline font-medium">{funnel.anchor}</Link>.
+          </p>
         </section>
 
         {/* Key points */}

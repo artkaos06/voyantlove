@@ -1,107 +1,75 @@
-import type { Metadata } from 'next';
 import Link from 'next/link';
-import { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getAuthorSchema } from '@/lib/schema';
-import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
-import VoyantFinalCTA from '@/components/VoyantFinalCTA';
+import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
-export const metadata: Metadata = {
+const config: ContentPageConfig = {
   title: 'Voyance par Mail Amour : Guide de la Consultation Écrite',
   description: 'Guide de la voyance amoureuse par mail : fonctionnement, formulation des questions et délais habituels. Pour une réponse immédiate, découvrez la consultation en direct.',
+  url: 'https://www.voyantlove.fr/methodes-voyance/voyance-par-mail-amour/',
   keywords: ['voyance par mail amour', 'voyance gratuite par mail', 'consultation voyance par mail', 'voyant par email', 'voyance par écrit'],
-  alternates: { canonical: 'https://www.voyantlove.fr/methodes-voyance/voyance-par-mail-amour/' },
-};
-
-export default function VoyanceParMailAmourPage() {
-  const articleSchema = getArticleSchema({
-    title: 'Voyance par Mail Amour : Guide de la Consultation Écrite | VoyantLove',
-    description: 'Guide de la voyance amoureuse par mail : fonctionnement, formulation des questions et délais habituels, avec la consultation en direct comme alternative immédiate disponible sur VoyantLove.',
-    url: 'https://www.voyantlove.fr/methodes-voyance/voyance-par-mail-amour/',
-    datePublished: '2026-03-27',
-    dateModified: '2026-08-07',
-    keywords: ['voyance par mail amour', 'voyance gratuite par mail', 'consultation voyance par mail', 'voyant par email', 'voyance par écrit'],
-  });
-
-  const breadcrumbSchema = getBreadcrumbSchema([
+  datePublished: '2026-03-27',
+  dateModified: '2026-08-07',
+  breadcrumb: [
     { name: 'Accueil', url: 'https://www.voyantlove.fr' },
     { name: 'Méthodes de Voyance', url: 'https://www.voyantlove.fr/methodes-voyance/' },
     { name: 'Voyance par Mail Amour', url: 'https://www.voyantlove.fr/methodes-voyance/voyance-par-mail-amour/' },
-  ]);
+  ],
+  header: {
+    emoji: '✉️',
+    h1: 'Voyance par Mail Amour',
+    subtitle: 'Guide du Format Écrit et Alternative Immédiate en Direct',
+    gradient: 'from-teal-600 via-cyan-600 to-blue-600',
+    backLink: { href: '/methodes-voyance', label: 'Retour aux Méthodes de Voyance' },
+    anchors: [
+      { href: '#formuler', label: 'Comment Formuler sa Question', primary: true },
+      { href: '#choisir', label: 'Choisir son Voyant' },
+    ],
+  },
+  accentText: 'text-teal-600',
+  stats: [
+    { icon: '✉️', value: '24-72h', label: 'Délai de réponse moyen' },
+    { icon: '📝', value: 'Écrite', label: 'Réponse détaillée à relire' },
+    { icon: '🔒', value: 'Discrète', label: 'Anonymat préservé' },
+    { icon: '📞', value: 'En direct', label: 'Alternative disponible' },
+  ],
+  eeat: { colorScheme: 'teal', method: 'Tarot et voyance professionnelle' },
+  cta: { topic: 'methodes-voyance', slug: 'voyance-par-mail' },
+  faq: [
+    {
+      q: 'Combien de temps faut-il attendre une réponse de voyance par mail ?',
+      a: 'Le délai de réponse pour une consultation de voyance par mail varie selon le voyant et sa charge de travail. En règle générale, comptez entre 24 et 72 heures pour recevoir votre réponse écrite personnalisée. Les voyants sérieux précisent toujours leur délai de réponse sur leur page de présentation. Évitez les services promettant une réponse instantanée : une consultation de qualité nécessite du temps pour réaliser le tirage, l\'interpréter et rédiger une analyse approfondie. Si votre situation est urgente, la voyance par téléphone ou par chat sera plus adaptée à vos besoins immédiats.',
+    },
+    {
+      q: 'La voyance par mail est-elle aussi précise que par téléphone ?',
+      a: 'La voyance par mail peut être tout aussi précise que par téléphone, mais elle fonctionne différemment. Par mail, le voyant travaille uniquement à partir de votre question écrite et de son ressenti énergétique, sans être influencé par votre voix ou vos émotions en temps réel. Cela peut être un avantage : la lecture est parfois plus pure et moins conditionnée. En revanche, sans échange en direct, le voyant ne peut pas approfondir certains points ou vous demander des précisions immédiates. La qualité dépend surtout du soin apporté à la formulation de votre question et du sérieux du voyant consulté.',
+    },
+    {
+      q: 'Combien de questions puis-je poser dans un mail à un voyant ?',
+      a: 'Il est recommandé de vous concentrer sur une seule question principale par consultation de voyance par mail, ou au maximum deux questions étroitement liées. Multiplier les questions dans un même mail dilue l\'énergie de la consultation et réduit la profondeur de chaque réponse. Un voyant sérieux préférera se concentrer pleinement sur une problématique centrale pour vous offrir une analyse détaillée et pertinente. Si vous avez plusieurs sujets à aborder, par exemple vos sentiments actuels et votre avenir amoureux, optez pour deux consultations distinctes afin d\'obtenir le maximum de clarté sur chaque thème.',
+    },
+    {
+      q: 'Comment savoir si un voyant par mail est sérieux ?',
+      a: 'Un voyant par mail sérieux présente plusieurs signes distinctifs : il décrit clairement sa méthode de travail (tarot, numérologie, médiumnité), indique un délai de réponse réaliste, propose une tarification transparente et ne promet jamais de résultats garantis. Méfiez-vous des offres de voyance par mail totalement gratuite sans contrepartie, qui cachent souvent des relances commerciales agressives. Un bon voyant par mail vous fournit une réponse personnalisée et détaillée, jamais un texte générique. Les avis clients vérifiables, la cohérence de sa présentation et la qualité de la première réponse sont les meilleurs indicateurs de sérieux.',
+    },
+    {
+      q: 'Que faire après avoir reçu sa réponse de voyance par mail ?',
+      a: 'Prenez le temps de relire votre réponse à tête reposée avant de réagir à chaud, surtout si le contenu vous bouscule émotionnellement. Notez les éléments qui résonnent concrètement avec votre situation et ceux qui vous semblent plus génériques. Si un point mérite une clarification, la plupart des voyants par mail sérieux acceptent une question de suivi courte et ciblée, parfois incluse dans le tarif initial, parfois facturée en complément selon leur politique, renseignez-vous avant la consultation. Évitez de solliciter plusieurs relectures de la même situation à quelques jours d\'intervalle : laissez le temps aux événements de se dérouler avant de reconsulter.',
+    },
+  ],
+  related: [
+    { href: '/methodes-voyance', label: 'Méthodes de Voyance : Toutes nos Approches' },
+    { href: '/methodes-voyance/voyance-par-chat-amour', label: 'Voyance par Chat Amour : Consultation Instantanée' },
+    { href: '/methodes-voyance/voyance-telephone-amour', label: 'Voyance par Téléphone : Échange Direct et Immédiat' },
+    { href: '/methodes-voyance/tirage-tarot-amour', label: 'Tirage Tarot Amour : Lire les Cartes de l\'Amour' },
+  ],
+};
 
-  const authorSchema = getAuthorSchema();
+export const metadata = contentMeta(config);
 
-  const faqSchema = getFAQSchema([
-    {
-      question: 'Combien de temps faut-il attendre une réponse de voyance par mail ?',
-      answer: 'Le délai de réponse pour une consultation de voyance par mail varie selon le voyant et sa charge de travail. En règle générale, comptez entre 24 et 72 heures pour recevoir votre réponse écrite personnalisée. Les voyants sérieux précisent toujours leur délai de réponse sur leur page de présentation. Évitez les services promettant une réponse instantanée : une consultation de qualité nécessite du temps pour réaliser le tirage, l\'interpréter et rédiger une analyse approfondie. Si votre situation est urgente, la voyance par téléphone ou par chat sera plus adaptée à vos besoins immédiats.',
-    },
-    {
-      question: 'La voyance par mail est-elle aussi précise que par téléphone ?',
-      answer: 'La voyance par mail peut être tout aussi précise que par téléphone, mais elle fonctionne différemment. Par mail, le voyant travaille uniquement à partir de votre question écrite et de son ressenti énergétique, sans être influencé par votre voix ou vos émotions en temps réel. Cela peut être un avantage : la lecture est parfois plus pure et moins conditionnée. En revanche, sans échange en direct, le voyant ne peut pas approfondir certains points ou vous demander des précisions immédiates. La qualité dépend surtout du soin apporté à la formulation de votre question et du sérieux du voyant consulté.',
-    },
-    {
-      question: 'Combien de questions puis-je poser dans un mail à un voyant ?',
-      answer: 'Il est recommandé de vous concentrer sur une seule question principale par consultation de voyance par mail, ou au maximum deux questions étroitement liées. Multiplier les questions dans un même mail dilue l\'énergie de la consultation et réduit la profondeur de chaque réponse. Un voyant sérieux préférera se concentrer pleinement sur une problématique centrale pour vous offrir une analyse détaillée et pertinente. Si vous avez plusieurs sujets à aborder — par exemple vos sentiments actuels et votre avenir amoureux — optez pour deux consultations distinctes afin d\'obtenir le maximum de clarté sur chaque thème.',
-    },
-    {
-      question: 'Comment savoir si un voyant par mail est sérieux ?',
-      answer: 'Un voyant par mail sérieux présente plusieurs signes distinctifs : il décrit clairement sa méthode de travail (tarot, numérologie, médiumnité), indique un délai de réponse réaliste, propose une tarification transparente et ne promet jamais de résultats garantis. Méfiez-vous des offres de voyance par mail totalement gratuite sans contrepartie, qui cachent souvent des relances commerciales agressives. Un bon voyant par mail vous fournit une réponse personnalisée et détaillée, jamais un texte générique. Les avis clients vérifiables, la cohérence de sa présentation et la qualité de la première réponse sont les meilleurs indicateurs de sérieux.',
-    },
-    {
-      question: 'Que faire après avoir reçu sa réponse de voyance par mail ?',
-      answer: 'Prenez le temps de relire votre réponse à tête reposée avant de réagir à chaud, surtout si le contenu vous bouscule émotionnellement. Notez les éléments qui résonnent concrètement avec votre situation et ceux qui vous semblent plus génériques. Si un point mérite une clarification, la plupart des voyants par mail sérieux acceptent une question de suivi courte et ciblée, parfois incluse dans le tarif initial, parfois facturée en complément selon leur politique — renseignez-vous avant la consultation. Évitez de solliciter plusieurs relectures de la même situation à quelques jours d\'intervalle : laissez le temps aux événements de se dérouler avant de reconsulter.',
-    },
-  ]);
-
+export default function VoyanceParMailAmourPage() {
   return (
-    <main className="min-h-screen bg-gray-50">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(authorSchema) }}
-      />
-
-      {/* Header */}
-      <header className="bg-gradient-to-r from-teal-600 via-cyan-600 to-blue-600 text-white py-16 px-4">
-        <div className="max-w-4xl mx-auto">
-          <Link href="/methodes-voyance" className="text-white/80 hover:text-white mb-4 inline-block">&larr; Retour aux Méthodes de Voyance</Link>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">&#x2709;&#xFE0F; Voyance par Mail Amour</h1>
-          <p className="text-xl opacity-95 mb-6">Guide du Format Écrit et Alternative Immédiate en Direct</p>
-          <div className="flex gap-4 flex-wrap">
-            <a href="#formuler" className="bg-white text-teal-600 px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition">Comment Formuler sa Question</a>
-            <a href="#choisir" className="border-2 border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-teal-600 transition">Choisir son Voyant</a>
-          </div>
-        </div>
-      </header>
-
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        {/* Stats Bar */}
-        <div className="bg-white rounded-xl shadow-md p-6 mb-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-          <div><div className="text-3xl mb-1">&#x2709;&#xFE0F;</div><div className="text-2xl font-bold text-teal-600">24-72h</div><div className="text-sm text-gray-600">Délai de réponse moyen</div></div>
-          <div><div className="text-3xl mb-1">&#x1F4DD;</div><div className="text-2xl font-bold text-teal-600">Écrite</div><div className="text-sm text-gray-600">Réponse détaillée à relire</div></div>
-          <div><div className="text-3xl mb-1">&#x1F512;</div><div className="text-2xl font-bold text-teal-600">Discrète</div><div className="text-sm text-gray-600">Anonymat préservé</div></div>
-          <div><div className="text-3xl mb-1">&#x1F4DE;</div><div className="text-2xl font-bold text-teal-600">En direct</div><div className="text-sm text-gray-600">Alternative disponible</div></div>
-        </div>
-
-        {/* E-E-A-T Signal */}
-        <EEATSignal
-          colorScheme="teal"
-          lastUpdated="7 août 2026"
-        />
-
-        {/* Answer Capsule */}
+    <ContentPage config={config}>
         <article className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-teal-500">
           <p className="text-lg leading-relaxed mb-4">
             Ce guide explique le fonctionnement habituel d’une <strong>consultation écrite</strong> de voyance amoureuse par mail&nbsp;: formulation d’une <strong>question précise</strong>, méthodes utilisées et délai annoncé par le praticien. <strong>VoyantLove ne propose pas actuellement de commande ni de livraison de consultation par email sur cette page.</strong>
@@ -121,7 +89,7 @@ export default function VoyanceParMailAmourPage() {
           <h2 className="text-3xl font-bold mb-6 text-gray-900">&#x2709;&#xFE0F; Qu'est-ce que la Voyance par Mail ?</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">La voyance par mail est une consultation écrite envoyée par email. Le voyant réalise un tirage ou une lecture énergétique puis vous retourne une analyse détaillée dans un délai de 24 à 72 heures.</p>
           <p className="text-gray-700 mb-6">
-            La <strong>voyance par mail</strong> est l'une des formes de consultation les plus anciennes dans le monde du numérique divinatoire. Elle transpose la tradition de la lettre consultative — autrefois envoyée à un voyant de province — dans l'ère digitale. Le principe reste identique : vous exposez votre situation amoureuse et posez votre question, le voyant entre en contact avec votre énergie à travers votre écrit et réalise sa lecture.
+            La <strong>voyance par mail</strong> est l'une des formes de consultation les plus anciennes dans le monde du numérique divinatoire. Elle transpose la tradition de la lettre consultative, autrefois envoyée à un voyant de province, dans l'ère digitale. Le principe reste identique : vous exposez votre situation amoureuse et posez votre question, le voyant entre en contact avec votre énergie à travers votre écrit et réalise sa lecture.
           </p>
 
           <div className="grid md:grid-cols-2 gap-6 mb-6">
@@ -204,10 +172,10 @@ export default function VoyanceParMailAmourPage() {
             <div className="bg-red-50 border-l-4 border-red-500 p-5 rounded-lg">
               <h3 className="font-bold text-lg mb-3 text-red-700">&#x274C; Questions à Éviter</h3>
               <ul className="space-y-2 text-gray-700">
-                <li className="flex items-start gap-2"><span className="text-red-500">&#x2717;</span> "Parlez-moi de ma vie amoureuse" — trop vague, impossible à explorer en profondeur</li>
-                <li className="flex items-start gap-2"><span className="text-red-500">&#x2717;</span> "Est-ce que je serai heureuse en amour ?" — trop général, sans ancrage temporel</li>
-                <li className="flex items-start gap-2"><span className="text-red-500">&#x2717;</span> "Dites-moi tout sur mon futur amoureux" — surcharge thématique qui dilue la lecture</li>
-                <li className="flex items-start gap-2"><span className="text-red-500">&#x2717;</span> "Pourquoi mes relations échouent toujours ?" — question psychologique, pas divinatoire</li>
+                <li className="flex items-start gap-2"><span className="text-red-500">&#x2717;</span> "Parlez-moi de ma vie amoureuse", trop vague, impossible à explorer en profondeur</li>
+                <li className="flex items-start gap-2"><span className="text-red-500">&#x2717;</span> "Est-ce que je serai heureuse en amour ?", trop général, sans ancrage temporel</li>
+                <li className="flex items-start gap-2"><span className="text-red-500">&#x2717;</span> "Dites-moi tout sur mon futur amoureux", surcharge thématique qui dilue la lecture</li>
+                <li className="flex items-start gap-2"><span className="text-red-500">&#x2717;</span> "Pourquoi mes relations échouent toujours ?", question psychologique, pas divinatoire</li>
               </ul>
             </div>
 
@@ -229,7 +197,7 @@ export default function VoyanceParMailAmourPage() {
           <h2 className="text-3xl font-bold mb-6 text-gray-900">&#x1F52E; Ce que la Voyance par Mail peut Révéler sur Votre Amour</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">La voyance par mail explore les sentiments cachés, les perspectives de votre relation, les blocages énergétiques et les évolutions probables dans votre vie amoureuse selon les tirages réalisés.</p>
           <p className="text-gray-700 mb-6">
-            Une <strong>consultation écrite</strong> de qualité peut aller bien plus loin qu'une simple prédiction. Selon la méthode utilisée par le voyant — <strong>tirage tarot de l'amour</strong>, lecture des cartes oracles, analyse numérologique ou médiumnité — la réponse peut couvrir plusieurs dimensions de votre situation sentimentale.
+            Une <strong>consultation écrite</strong> de qualité peut aller bien plus loin qu'une simple prédiction. Selon la méthode utilisée par le voyant, <strong>tirage tarot de l'amour</strong>, lecture des cartes oracles, analyse numérologique ou médiumnité, la réponse peut couvrir plusieurs dimensions de votre situation sentimentale.
           </p>
 
           <div className="grid md:grid-cols-2 gap-6">
@@ -372,7 +340,7 @@ export default function VoyanceParMailAmourPage() {
             <div className="bg-red-50 border-l-4 border-red-500 p-5 rounded-lg">
               <h3 className="font-bold text-lg mb-3 text-red-700">&#x1F6A8; Red Flags à Éviter Absolument</h3>
               <ul className="space-y-2 text-gray-700">
-                <li className="flex items-start gap-2"><span className="text-red-500">&#x2717;</span> "Je ressens que vous êtes sous l'emprise d'un sort" — manipulation classique pour vendre des rituels coûteux</li>
+                <li className="flex items-start gap-2"><span className="text-red-500">&#x2717;</span> "Je ressens que vous êtes sous l'emprise d'un sort", manipulation classique pour vendre des rituels coûteux</li>
                 <li className="flex items-start gap-2"><span className="text-red-500">&#x2717;</span> Demandes d'argent répétées après la première consultation</li>
                 <li className="flex items-start gap-2"><span className="text-red-500">&#x2717;</span> Réponses génériques qui pourraient s'appliquer à n'importe qui</li>
                 <li className="flex items-start gap-2"><span className="text-red-500">&#x2717;</span> Refus de préciser les méthodes utilisées pour la consultation</li>
@@ -381,61 +349,6 @@ export default function VoyanceParMailAmourPage() {
             </div>
           </div>
         </section>
-
-        {/* FAQ Section */}
-        <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold mb-8 text-teal-600">&#x2753; Questions Fréquentes sur la Voyance par Mail Amour</h2>
-          <p className="text-lg font-semibold text-gray-800 mb-4">Retrouvez les réponses aux questions les plus posées sur les délais de réponse, la précision de la voyance par mail, le nombre de questions à poser et comment reconnaître un voyant sérieux.</p>
-          <div className="space-y-6">
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Combien de temps faut-il attendre une réponse de voyance par mail ?</h3>
-              <p className="text-gray-700 leading-relaxed">
-                Le <strong>délai de réponse</strong> pour une consultation de voyance par mail varie selon le voyant et sa charge de travail. En règle générale, comptez entre 24 et 72 heures pour recevoir votre <strong>réponse écrite personnalisée</strong>. Les voyants sérieux précisent toujours leur délai de réponse sur leur page de présentation. Évitez les services promettant une réponse instantanée : une <strong>consultation de qualité</strong> nécessite du temps pour réaliser le tirage, l'interpréter et rédiger une analyse approfondie. Si votre situation est urgente, la voyance par téléphone ou par <strong>chat</strong> sera plus adaptée à vos besoins immédiats.
-              </p>
-            </div>
-
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold mb-3 text-gray-900">La voyance par mail est-elle aussi précise que par téléphone ?</h3>
-              <p className="text-gray-700 leading-relaxed">
-                La <strong>voyance par mail</strong> peut être tout aussi précise que par téléphone, mais elle fonctionne différemment. Par mail, le voyant travaille uniquement à partir de votre <strong>question écrite</strong> et de son ressenti énergétique, sans être influencé par votre voix ou vos émotions en temps réel. Cela peut être un avantage : la lecture est parfois plus pure et moins conditionnée. En revanche, sans <strong>échange en direct</strong>, le voyant ne peut pas approfondir certains points ou vous demander des précisions immédiates. La qualité dépend surtout du soin apporté à la formulation de votre question et du sérieux du <strong>voyant par mail</strong> consulté.
-              </p>
-            </div>
-
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Combien de questions puis-je poser dans un mail à un voyant ?</h3>
-              <p className="text-gray-700 leading-relaxed">
-                Il est recommandé de vous concentrer sur une seule <strong>question principale</strong> par consultation de voyance par mail, ou au maximum deux questions étroitement liées. Multiplier les questions dans un même mail dilue l'énergie de la <strong>consultation écrite</strong> et réduit la profondeur de chaque réponse. Un voyant sérieux préférera se concentrer pleinement sur une <strong>problématique centrale</strong> pour vous offrir une analyse détaillée et pertinente. Si vous avez plusieurs sujets à aborder, optez pour deux consultations distinctes afin d'obtenir le maximum de clarté sur chaque <strong>thème amoureux</strong>.
-              </p>
-            </div>
-
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Comment savoir si un voyant par mail est sérieux ?</h3>
-              <p className="text-gray-700 leading-relaxed">
-                Un <strong>voyant par mail</strong> sérieux présente plusieurs signes distinctifs : il décrit clairement sa méthode de travail (<strong>tirage écrit</strong>, numérologie, médiumnité), indique un délai de réponse réaliste, propose une tarification transparente et ne promet jamais de résultats garantis. Méfiez-vous des offres de <strong>voyance gratuite par mail</strong> sans contrepartie, qui cachent souvent des relances commerciales agressives. Un bon voyant vous fournit une <strong>réponse personnalisée</strong> et détaillée, jamais un texte générique. Les avis clients vérifiables et la cohérence de sa présentation sont les meilleurs indicateurs de sérieux.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Que faire après avoir reçu sa réponse de voyance par mail ?</h3>
-              <p className="text-gray-700 leading-relaxed">
-                Prenez le temps de relire votre <strong>réponse écrite</strong> à tête reposée avant de réagir à chaud, surtout si le contenu vous bouscule émotionnellement. Notez les éléments qui résonnent concrètement avec votre situation et ceux qui vous semblent plus génériques. Si un point mérite une clarification, la plupart des voyants par mail sérieux acceptent une <strong>question de suivi</strong> courte et ciblée, parfois incluse dans le tarif initial, parfois facturée en complément — renseignez-vous avant la consultation. Évitez de solliciter plusieurs relectures de la même situation à quelques jours d&apos;intervalle&nbsp;: laissez le temps aux événements de se dérouler avant de reconsulter.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        {/* Articles Connexes */}
-        <div className="bg-gray-100 rounded-xl p-6 mb-8">
-          <h3 className="font-bold text-lg mb-4 text-gray-900">&#x1F4DA; Articles Connexes</h3>
-          <div className="space-y-2">
-            <Link href="/methodes-voyance" className="block text-teal-600 hover:text-teal-800 font-medium">&rarr; Méthodes de Voyance : Toutes nos Approches</Link>
-            <Link href="/methodes-voyance/voyance-par-chat-amour" className="block text-teal-600 hover:text-teal-800 font-medium">&rarr; Voyance par Chat Amour : Consultation Instantanée</Link>
-            <Link href="/methodes-voyance/voyance-telephone-amour" className="block text-teal-600 hover:text-teal-800 font-medium">&rarr; Voyance par Téléphone : Échange Direct et Immédiat</Link>
-            <Link href="/methodes-voyance/tirage-tarot-amour" className="block text-teal-600 hover:text-teal-800 font-medium">&rarr; Tirage Tarot Amour : Lire les Cartes de l'Amour</Link>
-          </div>
-        </div>
-
-        <VoyantFinalCTA topic="methodes-voyance" source="voyance-par-mail-final" />
-      </div>
-    </main>
+    </ContentPage>
   );
 }

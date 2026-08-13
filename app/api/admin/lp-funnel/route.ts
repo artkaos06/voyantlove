@@ -1,10 +1,10 @@
-// Angle-lander readout — loads → tel taps, by angle, by MGID source, by
+// Angle-lander readout, loads → tel taps, by angle, by MGID source, by
 // creative. This is the scoreboard for the 3-angle MGID test.
 //
 // Separate from /api/admin/quiz-funnel on purpose: that reads `cpl:quiz:*`
 // (the retired quiz funnel, whose conversion event was an email submit).
 // This reads `cpl:lp:*`, whose conversion event is a phone tap. Comparing
-// numbers across the two is meaningless — different funnels, different events.
+// numbers across the two is meaningless, different funnels, different events.
 //
 // Usage: /api/admin/lp-funnel?key=<ADMIN_KEY|CRON_SECRET>[&days=7]
 
@@ -117,6 +117,6 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
     by_creative: sortByLoads(byCreative),
     kill_candidates: { min_loads: MIN_LOADS, sources: zeroTapSources },
     note:
-      'Conversion event = phone tap (tel: link), NOT an email submit — do not compare against /api/admin/quiz-funnel. loads are server-side (exact); taps come from a JS beacon so they are a FLOOR and can undercount on JS-hostile in-app browsers. by_creative requires &creative_id={creative_id} on the MGID destination URL.',
+      'Conversion event = phone tap (tel: link), NOT an email submit, do not compare against /api/admin/quiz-funnel. loads are server-side (exact); taps come from a JS beacon so they are a FLOOR and can undercount on JS-hostile in-app browsers. by_creative requires &creative_id={creative_id} on the MGID destination URL.',
   });
 }

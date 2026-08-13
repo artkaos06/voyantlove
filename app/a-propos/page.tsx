@@ -3,14 +3,14 @@ import Link from 'next/link';
 import { getWebPageSchema, getBreadcrumbSchema, getOrganizationSchema, getAuthorSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
-  title: 'À Propos de VoyantLove — Notre Mission et Notre Équipe',
+  title: 'À Propos de VoyantLove, Notre Mission et Notre Équipe',
   description: 'Découvrez l\'équipe VoyantLove : notre mission, nos valeurs, notre processus de sélection des voyants et notre engagement pour une voyance amoureuse éthique et fiable.',
   alternates: { canonical: 'https://www.voyantlove.fr/a-propos/' },
 };
 
 export default function AProposPage() {
   const webPageSchema = getWebPageSchema({
-    title: 'À Propos de VoyantLove — Notre Mission et Notre Équipe',
+    title: 'À Propos de VoyantLove, Notre Mission et Notre Équipe',
     description: 'Découvrez l\'équipe VoyantLove : notre mission, nos valeurs, notre processus de sélection des voyants et notre engagement pour une voyance amoureuse éthique et fiable.',
     url: 'https://www.voyantlove.fr/a-propos/',
   });
@@ -61,7 +61,7 @@ export default function AProposPage() {
               VoyantLove est né d&apos;un constat simple : <strong>les questions de c&oelig;ur sont les plus universelles et les plus douloureuses</strong>. Chaque jour, des milliers de personnes en France traversent une rupture, doutent des sentiments de leur partenaire ou se demandent quand l&apos;amour va enfin frapper à leur porte.
             </p>
             <p>
-              Notre objectif est d&apos;offrir un espace de <strong>guidance amoureuse sérieuse</strong>, loin des clichés et des fausses promesses. Nous ne prétendons pas connaître l&apos;avenir avec certitude — personne ne le peut. En revanche, nous croyons profondément que la <strong>voyance sentimentale</strong>, pratiquée avec honnêteté et bienveillance, peut apporter une <strong>clarté émotionnelle</strong> précieuse dans les moments de doute.
+              Notre objectif est d&apos;offrir un espace de <strong>guidance amoureuse sérieuse</strong>, loin des clichés et des fausses promesses. Nous ne prétendons pas connaître l&apos;avenir avec certitude, personne ne le peut. En revanche, nous croyons profondément que la <strong>voyance sentimentale</strong>, pratiquée avec honnêteté et bienveillance, peut apporter une <strong>clarté émotionnelle</strong> précieuse dans les moments de doute.
             </p>
             <p>
               Que vous cherchiez à comprendre ce que ressent votre ex, à savoir si votre couple peut surmonter une crise, ou à identifier le bon moment pour une nouvelle rencontre, VoyantLove vous guide avec des outils éprouvés : <strong>tarot de Marseille</strong>, <strong>astrologie</strong>, <strong>pendule</strong> et <strong>clairvoyance</strong>.
@@ -83,7 +83,7 @@ export default function AProposPage() {
                 </div>
               </div>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Tarologue depuis 2009, Sibylle s&apos;est spécialisée dans le <strong>tarot de Marseille appliqué aux questions sentimentales</strong>. Ancienne psychologue clinicienne reconvertie, elle apporte une double lecture — symbolique et psychologique — à chaque situation amoureuse. Elle supervise l&apos;ensemble du contenu éditorial de VoyantLove et veille à ce que chaque article reflète une approche <strong>nuancée et respectueuse du libre arbitre</strong>.
+                Tarologue depuis 2009, Sibylle s&apos;est spécialisée dans le <strong>tarot de Marseille appliqué aux questions sentimentales</strong>. Ancienne psychologue clinicienne reconvertie, elle apporte une double lecture, symbolique et psychologique, à chaque situation amoureuse. Elle supervise l&apos;ensemble du contenu éditorial de VoyantLove et veille à ce que chaque article reflète une approche <strong>nuancée et respectueuse du libre arbitre</strong>.
               </p>
               <p className="text-gray-500 text-xs mt-3">Plus de 4 500 consultations de tarot amour réalisées</p>
             </div>
@@ -97,7 +97,7 @@ export default function AProposPage() {
                 </div>
               </div>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Formée à l&apos;astrologie traditionnelle et karmique auprès de la Fédération Des Astrologues Francophones, Kalinda pratique depuis 2012. Sa spécialité : la <strong>synastrie de couple</strong> et les <strong>transits amoureux</strong>. Elle analyse les thèmes astraux pour révéler les dynamiques profondes entre partenaires — attractions magnétiques, défis karmiques et fenêtres d&apos;opportunité sentimentale.
+                Formée à l&apos;astrologie traditionnelle et karmique auprès de la Fédération Des Astrologues Francophones, Kalinda pratique depuis 2012. Sa spécialité : la <strong>synastrie de couple</strong> et les <strong>transits amoureux</strong>. Elle analyse les thèmes astraux pour révéler les dynamiques profondes entre partenaires, attractions magnétiques, défis karmiques et fenêtres d&apos;opportunité sentimentale.
               </p>
               <p className="text-gray-500 text-xs mt-3">Plus de 3 200 thèmes astraux de couple interprétés</p>
             </div>
@@ -111,7 +111,7 @@ export default function AProposPage() {
                 </div>
               </div>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Ella est <strong>médium clairsentiente</strong> — elle ressent les émotions et les intentions des personnes impliquées dans une situation amoureuse. Active dans le domaine depuis 2014, elle a accompagné des centaines de consultants dans des processus de <strong>reconquête amoureuse</strong> et de <strong>deuil sentimental</strong>. Son approche : honnêteté radicale. Elle ne promet jamais un retour de l&apos;ex si les énergies ne le confirment pas.
+                Ella est <strong>médium clairsentiente</strong>, elle ressent les émotions et les intentions des personnes impliquées dans une situation amoureuse. Active dans le domaine depuis 2014, elle a accompagné des centaines de consultants dans des processus de <strong>reconquête amoureuse</strong> et de <strong>deuil sentimental</strong>. Son approche : honnêteté radicale. Elle ne promet jamais un retour de l&apos;ex si les énergies ne le confirment pas.
               </p>
               <p className="text-gray-500 text-xs mt-3">Spécialisée silence radio et retour de l&apos;ex depuis 2017</p>
             </div>
@@ -144,7 +144,7 @@ export default function AProposPage() {
                 <div className="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center text-lg flex-shrink-0">✓</div>
                 <div>
                   <h3 className="font-bold text-gray-900 mb-1">Spécialisation sentimentale</h3>
-                  <p className="text-gray-600 text-sm">Le voyant doit être spécialisé dans les questions d&apos;amour et de couple — pas un généraliste qui traite aussi le travail et la santé.</p>
+                  <p className="text-gray-600 text-sm">Le voyant doit être spécialisé dans les questions d&apos;amour et de couple, pas un généraliste qui traite aussi le travail et la santé.</p>
                 </div>
               </div>
               <div className="flex gap-4">
@@ -199,7 +199,7 @@ export default function AProposPage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">Notre Approche Éditoriale</h2>
           <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
             <p>
-              Chaque article publié sur VoyantLove suit un processus éditorial rigoureux. Nos rédacteurs sont eux-mêmes praticiens — tarologues, astrologues, numérologues — et écrivent à partir de leur <strong>expérience directe de consultation</strong>, pas à partir de recherches Google.
+              Chaque article publié sur VoyantLove suit un processus éditorial rigoureux. Nos rédacteurs sont eux-mêmes praticiens, tarologues, astrologues, numérologues, et écrivent à partir de leur <strong>expérience directe de consultation</strong>, pas à partir de recherches Google.
             </p>
             <p>
               Les cas évoqués dans nos articles sont inspirés de <strong>situations réelles rencontrées en consultation</strong> (anonymisées). Quand nous décrivons ce que le Cinq d&apos;Épée signifie dans un tirage de reconquête, c&apos;est parce que nous l&apos;avons interprété des centaines de fois pour des consultants traversant cette situation exacte.

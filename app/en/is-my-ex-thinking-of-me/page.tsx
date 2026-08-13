@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   description:
     'A short-read on the real signs your ex is thinking about you, what they actually mean, and how to get a personalized reading about your specific ex for $1.',
   alternates: {
-    canonical: 'https://www.lovepsychicguide.com/is-my-ex-thinking-of-me',
+    canonical: 'https://www.lovepsychicguide.com/is-my-ex-thinking-of-me/',
   },
 };
 
@@ -38,14 +38,14 @@ export default function IsMyExThinkingOfMePage() {
             Honest read · 4 min
           </p>
           <h1 className="text-3xl md:text-4xl font-extrabold text-gray-900 leading-tight mb-5">
-            Is my ex thinking of me? Real signs — and how to know what
+            Is my ex thinking of me? Real signs, and how to know what
             they&apos;re actually thinking.
           </h1>
           <p className="text-lg text-gray-700 leading-relaxed">
             You&apos;re looking for evidence that lets you stop asking
             the question. Generic articles can give you signs to read.
-            But the actual answer — what <em>they</em> specifically are
-            feeling about <em>you</em> right now — needs more than a
+            But the actual answer, what <em>they</em> specifically are
+            feeling about <em>you</em> right now, needs more than a
             checklist.
           </p>
         </header>
@@ -57,7 +57,7 @@ export default function IsMyExThinkingOfMePage() {
             summary={[
               'Yes, most exes do think about each other post-breakup. Severed attachments are open loops, and theirs is open too.',
               'But "thinking about you" ≠ "wanting you back." Guilt, comparison, and curiosity all generate frequent thoughts that aren\'t romantic. The signs below help distinguish.',
-              'For a real answer about what your ex specifically is feeling — not generic signals — a 5-minute reading with a love psychic gets you what no article can.',
+              'For a real answer about what your ex specifically is feeling, not generic signals, a 5-minute reading with a love psychic gets you what no article can.',
             ]}
             ctaPrompt="Want to know what your ex specifically is thinking?"
             cta={
@@ -66,7 +66,7 @@ export default function IsMyExThinkingOfMePage() {
                 placement="topic_ex_thinking_tldr"
                 className="inline-flex items-center gap-2 bg-purple-600 hover:bg-purple-700 text-white text-sm font-semibold px-4 py-2.5 rounded-lg transition-colors"
               >
-                Find out — 5 min for $1 →
+                Find out, 5 min for $1 →
               </AffiliateCTA>
             }
             ctaFootnote="New users: 5 minutes for $1 with any new advisor on Keen · 18+"
@@ -81,7 +81,7 @@ export default function IsMyExThinkingOfMePage() {
             consistent explanation: when an attachment bond is severed,
             the brain treats it as an open loop. Open loops cost
             cognitive energy, and the brain keeps trying to close them
-            — by replaying memories, looking for new information, and
+, by replaying memories, looking for new information, and
             checking whether the other person is still &ldquo;there&rdquo;
             in some sense.
           </p>
@@ -95,7 +95,7 @@ export default function IsMyExThinkingOfMePage() {
 
           <KeyTakeaway title="You're not weak for asking">
             Your brain is doing standard post-loss processing. The work
-            isn&apos;t to shame yourself for the question — it&apos;s
+            isn&apos;t to shame yourself for the question, it&apos;s
             to give your brain enough closure-quality information that
             it can stop checking.
           </KeyTakeaway>
@@ -109,7 +109,7 @@ export default function IsMyExThinkingOfMePage() {
               </strong>{' '}
               They haven&apos;t blocked, haven&apos;t unfollowed, still
               view your stories occasionally. Inertia like this
-              isn&apos;t accidental at the 3-month mark — it&apos;s a
+              isn&apos;t accidental at the 3-month mark, it&apos;s a
               choice to keep the door cracked.
             </li>
             <li>
@@ -118,7 +118,7 @@ export default function IsMyExThinkingOfMePage() {
               </strong>{' '}
               A text six months later about &ldquo;a sweater you
               left&rdquo; is rarely a wardrobe emergency. The sweater
-              hasn&apos;t become time-sensitive — their feelings have.
+              hasn&apos;t become time-sensitive, their feelings have.
             </li>
             <li>
               <strong>Asking mutual friends about you specifically.</strong>{' '}
@@ -191,7 +191,7 @@ export default function IsMyExThinkingOfMePage() {
             <li>
               <strong>Unresolved guilt.</strong> If they ended things
               badly, they may think about you frequently as guilt
-              processing — not desire to reconcile.
+              processing, not desire to reconcile.
             </li>
             <li>
               <strong>Curiosity without intent.</strong> Idle &ldquo;I
@@ -209,7 +209,7 @@ export default function IsMyExThinkingOfMePage() {
           <KeyTakeaway title="What's actually relevant" variant="caution">
             The question isn&apos;t whether you&apos;re in their
             thoughts. It&apos;s whether they&apos;re acting on those
-            thoughts in any way — and what kind of thoughts they are.
+            thoughts in any way, and what kind of thoughts they are.
             That&apos;s the question a real reading can answer.
           </KeyTakeaway>
 
@@ -225,7 +225,7 @@ export default function IsMyExThinkingOfMePage() {
           <p>
             Experienced love advisors do thousands of post-breakup
             readings. They can read energy patterns most people
-            can&apos;t — including the specific texture of what&apos;s
+            can&apos;t, including the specific texture of what&apos;s
             going on for your ex right now. It&apos;s the difference
             between &ldquo;the population reaches out 40% of the
             time&rdquo; and &ldquo;here&apos;s what&apos;s on his mind

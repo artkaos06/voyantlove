@@ -1,7 +1,7 @@
 // Tel-click tracking endpoint.
 //
 // Why this exists: when a visitor taps a `<a href="tel:...">` link on the
-// lander, the click never reaches our server — the browser hands the URL
+// lander, the click never reaches our server, the browser hands the URL
 // directly to the dialer. That means our funnel observability has a blind
 // spot exactly at the most important conversion moment for FR (Goracash
 // call funnel) and EN (any future call-based offer).
@@ -9,7 +9,7 @@
 // The fix: a tiny client-side beacon fires on tel: tap and POSTs to this
 // endpoint with the relevant context. The endpoint logs, increments digest
 // counters, and pings Discord so the operator can see real-time call-
-// intent signal — the same way `/api/go/keen` does for affiliate redirects.
+// intent signal, the same way `/api/go/keen` does for affiliate redirects.
 //
 // Reliability: the client uses navigator.sendBeacon() which queues the
 // request to survive the navigation to the dialer. This is critical
@@ -54,12 +54,12 @@ async function handle(request: NextRequest): Promise<NextResponse> {
   try {
     body = (await request.json()) as TelClickPayload;
   } catch {
-    // sendBeacon sends as Blob — try parsing as text
+    // sendBeacon sends as Blob, try parsing as text
     try {
       const text = await request.text();
       if (text) body = JSON.parse(text) as TelClickPayload;
     } catch {
-      /* malformed body — fall through with empty payload */
+      /* malformed body, fall through with empty payload */
     }
   }
 
@@ -128,7 +128,7 @@ async function handle(request: NextRequest): Promise<NextResponse> {
   // Feed the tap back to MGID so its algorithm optimises toward tappers.
   // Awaited because Vercel may freeze the function the moment the response
   // is returned, which would kill an unawaited request. No-op until
-  // MGID_CONVERSION_URL is set — see lib/mgidConversion.ts for why the URL
+  // MGID_CONVERSION_URL is set, see lib/mgidConversion.ts for why the URL
   // is not hardcoded.
   const mgidResult = await sendMgidConversion({
     clickId,
@@ -144,16 +144,16 @@ async function handle(request: NextRequest): Promise<NextResponse> {
   // leads-only mode by default (DISCORD_LEADS_ONLY unset → on), which drops
   // anything not tagged 'lead' or 'digest'. This call previously passed no
   // category, so it defaulted to 'other' and every phone tap was silently
-  // discarded before reaching the webhook — the tap is the money signal on a
+  // discarded before reaching the webhook, the tap is the money signal on a
   // call offer, so it belongs in the leads feed.
   await notifyDiscord({
     category: 'lead',
     title: '📞 Appel lancé depuis un lander',
-    description: `Numéro composé : **${phone || '—'}**`,
+    description: `Numéro composé : **${phone || ', '}**`,
     color: Color.GREEN,
     fields: [
       { name: 'Angle', value: lander || page || '(hors lander)', inline: true },
-      { name: 'Source MGID', value: source || '—', inline: true },
+      { name: 'Source MGID', value: source || ', ', inline: true },
       ...(creativeId ? [{ name: 'Créa', value: creativeId, inline: true }] : []),
       ...(sid ? [{ name: 'source_id', value: sid, inline: true }] : []),
       ...(clickId ? [{ name: 'click_id', value: clickId, inline: false }] : []),
@@ -170,7 +170,7 @@ async function handle(request: NextRequest): Promise<NextResponse> {
     ],
   });
 
-  // 204 No Content is the canonical sendBeacon response — minimal payload
+  // 204 No Content is the canonical sendBeacon response, minimal payload
   // so the beacon completes fast even on slow networks.
   return new NextResponse(null, { status: 204 });
 }

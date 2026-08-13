@@ -1,5 +1,5 @@
 // Big-number stat box for data-heavy sections. Use when an article cites
-// research or statistics — surfaces the number visually rather than burying
+// research or statistics, surfaces the number visually rather than burying
 // it in prose.
 //
 // Renders a card with a large hero number and a one-line description.

@@ -1,89 +1,77 @@
-import type { Metadata } from 'next';
 import Link from 'next/link';
-import { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getAuthorSchema } from '@/lib/schema';
-import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
-import VoyantFinalCTA from '@/components/VoyantFinalCTA';
+import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
-export const metadata: Metadata = {
+const config: ContentPageConfig = {
   title: 'Il Veut se Remettre Ensemble mais ne Fait Rien : Que Comprendre ?',
   description: 'Il/elle dit vouloir se remettre ensemble mais ne fait aucun effort ? Distinguez une vraie volonté de reconstruire d\'un simple lien entretenu, grâce à un cadre paroles contre actes.',
+  url: 'https://www.voyantlove.fr/reconquete/veut-se-remettre-ensemble-mais-ne-fait-rien/',
   keywords: ['il veut se remettre ensemble mais ne fait rien', 'il veut revenir mais ne fait aucun effort', 'mon ex parle de réconciliation mais ne revient pas', 'il dit qu\'il m\'aime mais ne veut pas se remettre avec moi', 'séparation sans décision depuis des mois'],
-  alternates: {
-    canonical: 'https://www.voyantlove.fr/reconquete/veut-se-remettre-ensemble-mais-ne-fait-rien/',
-  },
-};
-
-export default function VeutSeRemettreEnsembleMaisNeFaitRienPage() {
-  const articleSchema = getArticleSchema({
-    title: 'Il Veut se Remettre Ensemble mais ne Fait Rien : Que Comprendre ?',
-    description: 'Il/elle dit vouloir se remettre ensemble mais ne fait aucun effort ? Distinguez une vraie volonté de reconstruire d\'un simple lien entretenu, grâce à un cadre paroles contre actes.',
-    url: 'https://www.voyantlove.fr/reconquete/veut-se-remettre-ensemble-mais-ne-fait-rien/',
-    datePublished: '2026-07-28',
-    dateModified: '2026-07-28',
-    keywords: ['il veut se remettre ensemble mais ne fait rien', 'il veut revenir mais ne fait aucun effort', 'mon ex parle de réconciliation mais ne revient pas', 'séparation sans décision depuis des mois', 'comment savoir s\'il veut vraiment reconstruire notre couple'],
-  });
-
-  const faqSchema = getFAQSchema([
-    {
-      question: 'Pourquoi dit-il vouloir se remettre ensemble sans jamais agir ?',
-      answer: 'Plusieurs dynamiques peuvent l\'expliquer sans qu\'il soit possible de trancher à distance : une hésitation sincère qui n\'ose pas se déclarer, la peur de reprendre un engagement qui avait échoué, le confort d\'un lien maintenu sans décision, ou le besoin de garder une porte ouverte par sécurité affective. Les paroles de réconciliation coûtent peu ; ce sont les actes répétés et cohérents dans le temps qui révèlent une intention réelle. Observer l\'écart entre ce qui est dit et ce qui est fait, sur plusieurs semaines, est plus fiable que d\'interpréter une seule phrase.',
-    },
-    {
-      question: 'Quels actes montrent une vraie volonté de reconstruire le couple ?',
-      answer: 'Une volonté sincère se traduit par des gestes concrets et répétés : proposer des moments à deux avec une date précise, aborder ouvertement ce qui a causé la rupture, présenter des changements observables plutôt que des promesses, prendre l\'initiative du contact sans qu\'on ait à le solliciter, et parler d\'un avenir commun en termes tangibles. Un seul de ces signes ne suffit pas ; c\'est leur constance sur la durée qui distingue une reconstruction réelle d\'une intention purement verbale.',
-    },
-    {
-      question: 'Comment savoir s\'il veut surtout me garder sous le coude ?',
-      answer: 'Le lien entretenu sans projet se reconnaît à un schéma : des marques d\'affection qui réapparaissent chaque fois que vous prenez de la distance, des paroles chaleureuses jamais suivies d\'actes, une disponibilité intermittente et confortable pour lui, et l\'absence de toute étape concrète malgré le temps qui passe. Ce comportement ne prouve pas une mauvaise intention consciente, mais il maintient une ambiguïté qui sert son besoin de sécurité plus que votre besoin de clarté.',
-    },
-    {
-      question: 'Combien de temps attendre avant de demander une décision claire ?',
-      answer: 'Il n\'existe pas de délai universel, mais lorsque plusieurs mois passent sans qu\'aucun acte ne vienne appuyer les paroles, il devient légitime de demander une clarification. Demander une décision n\'est pas poser un ultimatum : c\'est exprimer un besoin de lisibilité et donner à l\'autre l\'occasion de se positionner. Fixez-vous d\'abord à vous-même une limite intérieure de temps, afin de ne pas rester suspendu(e) à une situation qui n\'évolue pas.',
-    },
-    {
-      question: 'Comment poser une limite sans provoquer une rupture définitive ?',
-      answer: 'Une limite saine parle de vous, pas de l\'autre : elle formule ce dont vous avez besoin pour avancer, sans menace ni chantage. Plutôt que « décide maintenant ou je pars », préférez « j\'ai besoin de savoir où nous allons, et je ne peux pas rester dans l\'incertitude indéfiniment ». Cette formulation respecte votre équilibre tout en laissant à l\'autre un espace pour répondre par des actes. Une consultation de voyance sentimentale peut vous aider à clarifier vos propres attentes avant cette conversation.',
-    },
-  ]);
-
-  const breadcrumbSchema = getBreadcrumbSchema([
+  datePublished: '2026-07-28',
+  dateModified: '2026-07-28',
+  breadcrumb: [
     { name: 'Accueil', url: 'https://www.voyantlove.fr' },
     { name: 'Reconquête', url: 'https://www.voyantlove.fr/reconquete/' },
     { name: 'Il Veut se Remettre Ensemble mais ne Fait Rien', url: 'https://www.voyantlove.fr/reconquete/veut-se-remettre-ensemble-mais-ne-fait-rien/' },
-  ]);
+  ],
+  header: {
+    emoji: '💬',
+    h1: 'Il Dit Vouloir se Remettre Ensemble, mais ne Fait Rien',
+    subtitle: 'Comment interpréter l\'écart entre ses paroles et ses actes',
+    gradient: 'from-violet-600 via-purple-600 to-indigo-600',
+    backLink: { href: '/reconquete', label: 'Retour à la Reconquête' },
+    anchors: [
+      { href: '#diagnostic', label: 'Le Cadre Paroles / Actes', primary: true },
+      { href: '#decision', label: 'Demander une Décision' },
+    ],
+  },
+  accentText: 'text-violet-600',
+  stats: [
+    { icon: '🔮', value: 'Reconnue', label: 'Expertise' },
+    { icon: '💬', value: '3,400+', label: 'Consultations' },
+    { icon: '⭐', value: '4.7/5', label: '264 avis' },
+    { icon: '🔒', value: '100%', label: 'Confidentiel' },
+  ],
+  eeat: { colorScheme: 'purple', method: 'Guidance de reconquête et lecture des dynamiques relationnelles' },
+  cta: { topic: 'reconquete', slug: 'veut-se-remettre' },
+  faq: [
+    {
+      q: 'Pourquoi dit-il vouloir se remettre ensemble sans jamais agir ?',
+      a: 'Plusieurs dynamiques peuvent l\'expliquer sans qu\'il soit possible de trancher à distance : une hésitation sincère qui n\'ose pas se déclarer, la peur de reprendre un engagement qui avait échoué, le confort d\'un lien maintenu sans décision, ou le besoin de garder une porte ouverte par sécurité affective. Les paroles de réconciliation coûtent peu ; ce sont les actes répétés et cohérents dans le temps qui révèlent une intention réelle. Observer l\'écart entre ce qui est dit et ce qui est fait, sur plusieurs semaines, est plus fiable que d\'interpréter une seule phrase.',
+    },
+    {
+      q: 'Quels actes montrent une vraie volonté de reconstruire le couple ?',
+      a: 'Une volonté sincère se traduit par des gestes concrets et répétés : proposer des moments à deux avec une date précise, aborder ouvertement ce qui a causé la rupture, présenter des changements observables plutôt que des promesses, prendre l\'initiative du contact sans qu\'on ait à le solliciter, et parler d\'un avenir commun en termes tangibles. Un seul de ces signes ne suffit pas ; c\'est leur constance sur la durée qui distingue une reconstruction réelle d\'une intention purement verbale.',
+    },
+    {
+      q: 'Comment savoir s\'il veut surtout me garder sous le coude ?',
+      a: 'Le lien entretenu sans projet se reconnaît à un schéma : des marques d\'affection qui réapparaissent chaque fois que vous prenez de la distance, des paroles chaleureuses jamais suivies d\'actes, une disponibilité intermittente et confortable pour lui, et l\'absence de toute étape concrète malgré le temps qui passe. Ce comportement ne prouve pas une mauvaise intention consciente, mais il maintient une ambiguïté qui sert son besoin de sécurité plus que votre besoin de clarté.',
+    },
+    {
+      q: 'Combien de temps attendre avant de demander une décision claire ?',
+      a: 'Il n\'existe pas de délai universel, mais lorsque plusieurs mois passent sans qu\'aucun acte ne vienne appuyer les paroles, il devient légitime de demander une clarification. Demander une décision n\'est pas poser un ultimatum : c\'est exprimer un besoin de lisibilité et donner à l\'autre l\'occasion de se positionner. Fixez-vous d\'abord à vous-même une limite intérieure de temps, afin de ne pas rester suspendu(e) à une situation qui n\'évolue pas.',
+    },
+    {
+      q: 'Comment poser une limite sans provoquer une rupture définitive ?',
+      a: 'Une limite saine parle de vous, pas de l\'autre : elle formule ce dont vous avez besoin pour avancer, sans menace ni chantage. Plutôt que « décide maintenant ou je pars », préférez « j\'ai besoin de savoir où nous allons, et je ne peux pas rester dans l\'incertitude indéfiniment ». Cette formulation respecte votre équilibre tout en laissant à l\'autre un espace pour répondre par des actes. Une consultation de voyance sentimentale peut vous aider à clarifier vos propres attentes avant cette conversation.',
+    },
+  ],
+  related: [
+    { href: '/reconquete', label: 'Reconquête Amoureuse : Toutes nos Guidances' },
+    { href: '/reconquete/dois-je-attendre-son-retour', label: 'Dois-je l\'Attendre ?' },
+    { href: '/reconquete/se-remettre-ensemble', label: 'Se Remettre Ensemble : Les 5 Étapes' },
+    { href: '/reconquete/va-t-il-elle-revenir', label: 'Va-t-il/elle Revenir ?' },
+    { href: '/crise-couple/dependance-affective', label: 'Reconnaître la Dépendance Affective' },
+    { href: '/reconquete/sentiments-peuvent-ils-revenir-couple', label: 'Les Sentiments Peuvent-ils Revenir ?' },
+  ],
+};
 
-  const authorSchema = getAuthorSchema();
+export const metadata = contentMeta(config);
 
+export default function VeutSeRemettreEnsembleMaisNeFaitRienPage() {
   return (
-    <main className="min-h-screen bg-gray-50">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(authorSchema) }} />
-
-      <header className="bg-gradient-to-r from-violet-600 via-purple-600 to-indigo-600 text-white py-16 px-4">
-        <div className="max-w-4xl mx-auto">
-          <Link href="/reconquete" className="text-white/80 hover:text-white mb-4 inline-block">&larr; Retour à la Reconquête</Link>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">{'\u{1F4AC}'} Il Dit Vouloir se Remettre Ensemble, mais ne Fait Rien</h1>
-          <p className="text-xl opacity-95 mb-6">Comment interpréter l&apos;écart entre ses paroles et ses actes</p>
-          <div className="flex gap-4 flex-wrap">
-            <a href="#diagnostic" className="bg-white text-violet-600 px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition">Le Cadre Paroles / Actes</a>
-            <a href="#decision" className="border-2 border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-violet-600 transition">Demander une Décision</a>
-          </div>
-        </div>
-      </header>
-
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <div className="bg-white rounded-xl shadow-md p-6 mb-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-          <div><div className="text-3xl mb-1">{'\u{1F52E}'}</div><div className="text-2xl font-bold text-violet-600">Reconnue</div><div className="text-sm text-gray-600">Expertise</div></div>
-          <div><div className="text-3xl mb-1">{'\u{1F4AC}'}</div><div className="text-2xl font-bold text-violet-600">3,400+</div><div className="text-sm text-gray-600">Consultations</div></div>
-          <div><div className="text-3xl mb-1">{'⭐'}</div><div className="text-2xl font-bold text-violet-600">4.7/5</div><div className="text-sm text-gray-600">264 avis</div></div>
-          <div><div className="text-3xl mb-1">{'\u{1F512}'}</div><div className="text-2xl font-bold text-violet-600">100%</div><div className="text-sm text-gray-600">Confidentiel</div></div>
-        </div>
-
-        <EEATSignal colorScheme="purple" method="Guidance de reconquête et lecture des dynamiques relationnelles" />
+    <ContentPage config={config}>
 
         {/* Answer Capsule */}
         <article className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-violet-500">
@@ -139,7 +127,7 @@ export default function VeutSeRemettreEnsembleMaisNeFaitRienPage() {
             </div>
             <div className="bg-green-50 border-2 border-green-300 rounded-lg p-6">
               <h3 className="font-bold text-lg mb-3 text-green-700">{'\u{1F5FA}️'} Un Avenir Évoqué en Termes Tangibles</h3>
-              <p className="text-gray-700 text-sm">Parler d&apos;un <strong>projet commun</strong> avec des éléments concrets — un rythme, des étapes, une organisation — traduit une projection réelle, à distinguer des &laquo;un jour peut-être&raquo; qui restent flous.</p>
+              <p className="text-gray-700 text-sm">Parler d&apos;un <strong>projet commun</strong> avec des éléments concrets, un rythme, des étapes, une organisation, traduit une projection réelle, à distinguer des &laquo;un jour peut-être&raquo; qui restent flous.</p>
             </div>
           </div>
         </section>
@@ -154,7 +142,7 @@ export default function VeutSeRemettreEnsembleMaisNeFaitRienPage() {
           <div className="space-y-4">
             <div className="bg-orange-50 border-l-4 border-orange-500 p-5 rounded">
               <h3 className="font-bold mb-2 text-orange-700">{'\u{1F504}'} Le Retour à Chaque Prise de Distance</h3>
-              <p className="text-gray-700 text-sm">Chaque fois que vous vous éloignez, un message tendre réapparaît — puis plus rien dès que le lien est rétabli. Ce rythme relance l&apos;espoir sans jamais faire avancer la situation.</p>
+              <p className="text-gray-700 text-sm">Chaque fois que vous vous éloignez, un message tendre réapparaît, puis plus rien dès que le lien est rétabli. Ce rythme relance l&apos;espoir sans jamais faire avancer la situation.</p>
             </div>
             <div className="bg-orange-50 border-l-4 border-orange-500 p-5 rounded">
               <h3 className="font-bold mb-2 text-orange-700">{'\u{1F4AC}'} Des Mots Chaleureux, Aucun Geste</h3>
@@ -211,7 +199,7 @@ export default function VeutSeRemettreEnsembleMaisNeFaitRienPage() {
             Avant même de parler à l&apos;autre, fixez-vous une <strong>limite intérieure de temps</strong>, révisable mais réelle. Cette limite n&apos;a pas à être annoncée : elle existe pour vous, pour éviter que l&apos;espoir ne se transforme en une <strong>attente indéfinie</strong> qui met votre vie en pause. Si un jour la réconciliation se concrétise, notre guide sur <Link href="/reconquete/se-remettre-ensemble" className="text-violet-600 hover:text-violet-800 underline font-medium">se remettre ensemble</Link> détaille les étapes pour repartir sur des bases saines.
           </p>
           <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded">
-            <p className="text-gray-700"><strong>{'✨'} Repère utile :</strong> une bonne question à se poser régulièrement est simple — &laquo;depuis un mois, qu&apos;est-ce qui a concrètement changé ?&raquo;. Si la réponse reste &laquo;rien&raquo; mois après mois, l&apos;information est là, même sans confrontation.</p>
+            <p className="text-gray-700"><strong>{'✨'} Repère utile :</strong> une bonne question à se poser régulièrement est simple, &laquo;depuis un mois, qu&apos;est-ce qui a concrètement changé ?&raquo;. Si la réponse reste &laquo;rien&raquo; mois après mois, l&apos;information est là, même sans confrontation.</p>
           </div>
         </section>
 
@@ -247,49 +235,6 @@ export default function VeutSeRemettreEnsembleMaisNeFaitRienPage() {
           </div>
         </section>
 
-        {/* FAQ Section */}
-        <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">{'❓'} Questions Fréquentes</h2>
-          <p className="text-lg font-semibold text-gray-800 mb-4">Les reponses aux questions les plus posees quand une personne dit vouloir se remettre ensemble sans jamais passer a l&apos;acte.</p>
-          <div className="space-y-6">
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Pourquoi dit-il vouloir se remettre ensemble sans jamais agir ?</h3>
-              <p className="text-gray-700 leading-relaxed">Plusieurs dynamiques peuvent l&apos;expliquer sans qu&apos;il soit possible de trancher à distance : une <strong>hésitation sincère</strong>, la peur de reprendre un engagement qui avait échoué, le confort d&apos;un lien maintenu, ou le besoin de garder une porte ouverte. Les paroles coûtent peu ; ce sont les <strong>actes répétés et cohérents</strong> qui révèlent une intention réelle. Observer l&apos;écart entre ce qui est dit et ce qui est fait, sur plusieurs semaines, est plus fiable qu&apos;interpréter une seule phrase.</p>
-            </div>
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Quels actes montrent une vraie volonté de reconstruire le couple ?</h3>
-              <p className="text-gray-700 leading-relaxed">Une volonté sincère se traduit par des gestes concrets et répétés : proposer des moments à deux avec une <strong>date précise</strong>, aborder ouvertement les causes de la rupture, présenter des <strong>changements observables</strong> plutôt que des promesses, prendre l&apos;initiative du contact, et parler d&apos;un avenir commun en termes tangibles. Un seul de ces signes ne suffit pas ; c&apos;est leur constance sur la durée qui compte.</p>
-            </div>
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Comment savoir s&apos;il veut surtout me garder sous le coude ?</h3>
-              <p className="text-gray-700 leading-relaxed">Le <strong>lien entretenu</strong> sans projet se reconnaît à un schéma : des marques d&apos;affection qui réapparaissent chaque fois que vous prenez de la distance, des paroles jamais suivies d&apos;actes, une disponibilité intermittente confortable pour l&apos;autre, et l&apos;absence de toute étape concrète malgré le temps. Ce comportement ne prouve pas une mauvaise intention consciente, mais il maintient une <strong>ambiguïté</strong> qui sert sa sécurité plus que votre besoin de clarté.</p>
-            </div>
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Combien de temps attendre avant de demander une décision claire ?</h3>
-              <p className="text-gray-700 leading-relaxed">Il n&apos;existe pas de délai universel, mais lorsque plusieurs mois passent sans qu&apos;aucun acte n&apos;appuie les paroles, il devient légitime de demander une clarification. Demander une décision n&apos;est pas poser un <strong>ultimatum</strong> : c&apos;est exprimer un besoin de lisibilité. Fixez-vous d&apos;abord une <strong>limite intérieure de temps</strong>, afin de ne pas rester suspendu(e) à une situation qui n&apos;évolue pas.</p>
-            </div>
-            <div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Comment poser une limite sans provoquer une rupture définitive ?</h3>
-              <p className="text-gray-700 leading-relaxed">Une <strong>limite saine</strong> parle de vous, pas de l&apos;autre : elle formule ce dont vous avez besoin pour avancer, sans menace. Plutôt que &laquo;décide maintenant ou je pars&raquo;, préférez &laquo;j&apos;ai besoin de savoir où nous allons&raquo;. Cette formulation respecte votre équilibre tout en laissant à l&apos;autre un espace pour répondre par des <strong>actes</strong>. Une consultation de voyance sentimentale peut vous aider à clarifier vos attentes avant cette conversation.</p>
-            </div>
-          </div>
-        </section>
-
-        {/* Articles Connexes */}
-        <div className="bg-gray-100 rounded-xl p-6 mb-8">
-          <h3 className="font-bold text-lg mb-4 text-gray-900">{'\u{1F4DA}'} Articles Connexes</h3>
-          <div className="space-y-2">
-            <Link href="/reconquete" className="block text-violet-600 hover:text-violet-800 font-medium">&rarr; Reconquête Amoureuse : Toutes nos Guidances</Link>
-            <Link href="/reconquete/dois-je-attendre-son-retour" className="block text-violet-600 hover:text-violet-800 font-medium">&rarr; Dois-je l&apos;Attendre ?</Link>
-            <Link href="/reconquete/se-remettre-ensemble" className="block text-violet-600 hover:text-violet-800 font-medium">&rarr; Se Remettre Ensemble : Les 5 Étapes</Link>
-            <Link href="/reconquete/va-t-il-elle-revenir" className="block text-violet-600 hover:text-violet-800 font-medium">&rarr; Va-t-il/elle Revenir ?</Link>
-            <Link href="/crise-couple/dependance-affective" className="block text-violet-600 hover:text-violet-800 font-medium">&rarr; Reconnaître la Dépendance Affective</Link>
-            <Link href="/reconquete/sentiments-peuvent-ils-revenir-couple" className="block text-violet-600 hover:text-violet-800 font-medium">&rarr; Les Sentiments Peuvent-ils Revenir ?</Link>
-          </div>
-        </div>
-
-        <VoyantFinalCTA topic="reconquete" source="veut-se-remettre-final" />
-      </div>
-    </main>
+      </ContentPage>
   );
 }

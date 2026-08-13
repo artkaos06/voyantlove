@@ -1,89 +1,77 @@
-import type { Metadata } from 'next';
 import Link from 'next/link';
-import { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getAuthorSchema } from '@/lib/schema';
-import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
-import VoyantFinalCTA from '@/components/VoyantFinalCTA';
+import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
-export const metadata: Metadata = {
+const config: ContentPageConfig = {
   title: 'Dois-je l\'Attendre ? Voyance Retour de Mon Ex',
   description: 'Faut-il attendre le retour de votre ex ? Le tarot révèle les signes qui indiquent si l\'attente en vaut la peine, et combien de temps patienter.',
+  url: 'https://www.voyantlove.fr/reconquete/dois-je-attendre-son-retour/',
   keywords: ['dois-je attendre mon ex', 'faut-il attendre son retour', 'attendre le retour voyance', 'combien de temps attendre ex', 'tarot attente reconquête'],
-  alternates: {
-    canonical: 'https://www.voyantlove.fr/reconquete/dois-je-attendre-son-retour/',
-  },
-};
-
-export default function DoisJeAttendreSonRetourPage() {
-  const articleSchema = getArticleSchema({
-    title: 'Dois-je l\'Attendre ? Voyance Retour de Mon Ex',
-    description: 'Faut-il attendre le retour de votre ex ? Le tarot révèle les signes qui indiquent si l\'attente en vaut la peine, et combien de temps patienter.',
-    url: 'https://www.voyantlove.fr/reconquete/dois-je-attendre-son-retour/',
-    datePublished: '2026-07-22',
-    dateModified: '2026-07-22',
-    keywords: ['dois-je attendre mon ex', 'faut-il attendre son retour', 'attendre le retour voyance', 'combien de temps attendre ex', 'tarot attente reconquête'],
-  });
-
-  const faqSchema = getFAQSchema([
-    {
-      question: 'Comment savoir si je dois attendre le retour de mon ex ?',
-      answer: 'Le tarot de l\'attente analyse trois éléments clés : la probabilité réelle d\'un retour, le temps nécessaire pour que la situation évolue, et le coût émotionnel de cette attente pour vous. Des cartes comme L\'Étoile ou le Deux de Coupe confirment un potentiel de réconciliation qui justifie la patience, tandis que Le Huit d\'Épée ou La Lune signalent une attente qui risque de vous épuiser sans issue favorable.',
-    },
-    {
-      question: 'Combien de temps faut-il attendre le retour d\'un ex ?',
-      answer: 'Il n\'existe pas de délai universel, mais au-delà de trois à six mois sans évolution tangible du silence radio ou du contact, l\'attente devient généralement contre-productive. Le tarot précise un timing personnalisé selon l\'énergie de votre situation spécifique, en tenant compte du profil émotionnel de votre ex et des circonstances de la rupture.',
-    },
-    {
-      question: 'Est-ce une erreur d\'attendre son ex ?',
-      answer: 'Attendre n\'est une erreur que si cela vous empêche de vivre, de guérir ou d\'avancer. Une attente active, accompagnée d\'un travail sur soi et sans mise en pause totale de votre vie, peut être bénéfique. En revanche, une attente passive et obsessionnelle qui vous isole est généralement néfaste, quelle que soit l\'issue finale de la situation.',
-    },
-    {
-      question: 'Quels signes montrent qu\'il ne faut plus attendre ?',
-      answer: 'Un silence prolongé sans aucune évolution, une nouvelle relation confirmée chez votre ex, ou une sensation d\'épuisement émotionnel croissant sont des signaux clairs qu\'il est temps de tourner la page. Le tarot identifie ces énergies de stagnation à travers des cartes comme Le Huit d\'Épée ou le Cinq de Coupe inversé, qui indiquent qu\'aucune évolution positive n\'est en cours.',
-    },
-    {
-      question: 'Peut-on attendre sans se faire du mal ?',
-      answer: 'Oui, à condition de fixer une limite de temps claire, de continuer à vivre pleinement sa vie sociale et personnelle, et de travailler sur ses propres blessures pendant cette période. L\'attente saine se distingue de l\'attente toxique par la présence d\'un équilibre émotionnel maintenu, sans dépendance affective envers un retour hypothétique.',
-    },
-  ]);
-
-  const breadcrumbSchema = getBreadcrumbSchema([
+  datePublished: '2026-07-22',
+  dateModified: '2026-07-22',
+  breadcrumb: [
     { name: 'Accueil', url: 'https://www.voyantlove.fr' },
     { name: 'Reconquête', url: 'https://www.voyantlove.fr/reconquete/' },
     { name: 'Dois-je l\'Attendre ?', url: 'https://www.voyantlove.fr/reconquete/dois-je-attendre-son-retour/' },
-  ]);
+  ],
+  header: {
+    emoji: '⏳',
+    h1: 'Dois-je l\'Attendre ?',
+    subtitle: 'Le tarot révèle si l\'attente de son retour en vaut vraiment la peine',
+    gradient: 'from-violet-600 via-purple-600 to-indigo-600',
+    backLink: { href: '/reconquete', label: 'Retour à la Reconquête' },
+    anchors: [
+      { href: '#signes', label: 'Signes à Observer', primary: true },
+      { href: '#tirage', label: 'Tirage de l\'Attente' },
+    ],
+  },
+  accentText: 'text-violet-600',
+  stats: [
+    { icon: '🔮', value: 'Reconnue', label: 'Expertise' },
+    { icon: '⏳', value: '3,600+', label: 'Tirages réalisés' },
+    { icon: '⭐', value: '4.7/5', label: '271 avis' },
+    { icon: '🔒', value: '100%', label: 'Confidentiel' },
+  ],
+  eeat: { colorScheme: 'purple', method: 'Tarot de l\'attente et guidance de reconquête' },
+  cta: { topic: 'reconquete', slug: 'dois-je-attendre' },
+  faq: [
+    {
+      q: 'Comment savoir si je dois attendre le retour de mon ex ?',
+      a: 'Le tarot de l\'attente analyse trois éléments clés : la probabilité réelle d\'un retour, le temps nécessaire pour que la situation évolue, et le coût émotionnel de cette attente pour vous. Des cartes comme L\'Étoile ou le Deux de Coupe confirment un potentiel de réconciliation qui justifie la patience, tandis que Le Huit d\'Épée ou La Lune signalent une attente qui risque de vous épuiser sans issue favorable.',
+    },
+    {
+      q: 'Combien de temps faut-il attendre le retour d\'un ex ?',
+      a: 'Il n\'existe pas de délai universel, mais au-delà de trois à six mois sans évolution tangible du silence radio ou du contact, l\'attente devient généralement contre-productive. Le tarot précise un timing personnalisé selon l\'énergie de votre situation spécifique, en tenant compte du profil émotionnel de votre ex et des circonstances de la rupture.',
+    },
+    {
+      q: 'Est-ce une erreur d\'attendre son ex ?',
+      a: 'Attendre n\'est une erreur que si cela vous empêche de vivre, de guérir ou d\'avancer. Une attente active, accompagnée d\'un travail sur soi et sans mise en pause totale de votre vie, peut être bénéfique. En revanche, une attente passive et obsessionnelle qui vous isole est généralement néfaste, quelle que soit l\'issue finale de la situation.',
+    },
+    {
+      q: 'Quels signes montrent qu\'il ne faut plus attendre ?',
+      a: 'Un silence prolongé sans aucune évolution, une nouvelle relation confirmée chez votre ex, ou une sensation d\'épuisement émotionnel croissant sont des signaux clairs qu\'il est temps de tourner la page. Le tarot identifie ces énergies de stagnation à travers des cartes comme Le Huit d\'Épée ou le Cinq de Coupe inversé, qui indiquent qu\'aucune évolution positive n\'est en cours.',
+    },
+    {
+      q: 'Peut-on attendre sans se faire du mal ?',
+      a: 'Oui, à condition de fixer une limite de temps claire, de continuer à vivre pleinement sa vie sociale et personnelle, et de travailler sur ses propres blessures pendant cette période. L\'attente saine se distingue de l\'attente toxique par la présence d\'un équilibre émotionnel maintenu, sans dépendance affective envers un retour hypothétique.',
+    },
+  ],
+  related: [
+    { href: '/reconquete', label: 'Reconquête Amoureuse : Toutes nos Guidances' },
+    { href: '/reconquete/va-t-il-elle-revenir', label: 'Va-t-il/elle Revenir ?' },
+    { href: '/reconquete/ex-revient-silence-radio', label: 'Silence Radio : Ex qui Recontacte' },
+    { href: '/crise-couple/dependance-affective', label: 'Dépendance Affective' },
+    { href: '/reconquete/se-remettre-ensemble', label: 'Se Remettre Ensemble' },
+    { href: '/reconquete/veut-se-remettre-ensemble-mais-ne-fait-rien', label: 'Il Veut se Remettre Ensemble mais ne Fait Rien' },
+  ],
+};
 
-  const authorSchema = getAuthorSchema();
+export const metadata = contentMeta(config);
 
+export default function DoisJeAttendreSonRetourPage() {
   return (
-    <main className="min-h-screen bg-gray-50">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(authorSchema) }} />
-
-      <header className="bg-gradient-to-r from-violet-600 via-purple-600 to-indigo-600 text-white py-16 px-4">
-        <div className="max-w-4xl mx-auto">
-          <Link href="/reconquete" className="text-white/80 hover:text-white mb-4 inline-block">&larr; Retour à la Reconquête</Link>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">{'⏳'} Dois-je l&apos;Attendre ?</h1>
-          <p className="text-xl opacity-95 mb-6">Le tarot révèle si l&apos;attente de son retour en vaut vraiment la peine</p>
-          <div className="flex gap-4 flex-wrap">
-            <a href="#signes" className="bg-white text-violet-600 px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition">Signes à Observer</a>
-            <a href="#tirage" className="border-2 border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-violet-600 transition">Tirage de l&apos;Attente</a>
-          </div>
-        </div>
-      </header>
-
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <div className="bg-white rounded-xl shadow-md p-6 mb-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-          <div><div className="text-3xl mb-1">{'\u{1F52E}'}</div><div className="text-2xl font-bold text-violet-600">Reconnue</div><div className="text-sm text-gray-600">Expertise</div></div>
-          <div><div className="text-3xl mb-1">{'⏳'}</div><div className="text-2xl font-bold text-violet-600">3,600+</div><div className="text-sm text-gray-600">Tirages réalisés</div></div>
-          <div><div className="text-3xl mb-1">{'⭐'}</div><div className="text-2xl font-bold text-violet-600">4.7/5</div><div className="text-sm text-gray-600">271 avis</div></div>
-          <div><div className="text-3xl mb-1">{'\u{1F512}'}</div><div className="text-2xl font-bold text-violet-600">100%</div><div className="text-sm text-gray-600">Confidentiel</div></div>
-        </div>
-
-        <EEATSignal colorScheme="purple" method="Tarot de l'attente et guidance de reconquête" />
+    <ContentPage config={config}>
 
         {/* Answer Capsule */}
         <article className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-violet-500">
@@ -210,49 +198,6 @@ export default function DoisJeAttendreSonRetourPage() {
           </div>
         </section>
 
-        {/* FAQ Section */}
-        <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">{'❓'} Questions Fréquentes</h2>
-          <p className="text-lg font-semibold text-gray-800 mb-4">Les reponses aux questions les plus posees sur l&apos;attente d&apos;un retour, la duree raisonnable et le tirage tarot dedie a cette decision.</p>
-          <div className="space-y-6">
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Comment savoir si je dois attendre le retour de mon ex ?</h3>
-              <p className="text-gray-700 leading-relaxed">Le <strong>tarot de l&apos;attente</strong> analyse trois éléments clés : la probabilité réelle d&apos;un retour, le temps nécessaire pour que la situation évolue, et le coût émotionnel de cette attente pour vous. Des cartes comme <strong>L&apos;Étoile</strong> ou le Deux de Coupe confirment un potentiel de réconciliation, tandis que Le Huit d&apos;Épée ou La Lune signalent une attente épuisante sans issue favorable.</p>
-            </div>
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Combien de temps faut-il attendre le retour d&apos;un ex ?</h3>
-              <p className="text-gray-700 leading-relaxed">Il n&apos;existe pas de délai universel, mais au-delà de <strong>trois à six mois</strong> sans évolution tangible du <strong>silence radio</strong> ou du contact, l&apos;attente devient généralement contre-productive. Le tarot précise un timing personnalisé selon l&apos;énergie de votre situation spécifique.</p>
-            </div>
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Est-ce une erreur d&apos;attendre son ex ?</h3>
-              <p className="text-gray-700 leading-relaxed">Attendre n&apos;est une erreur que si cela vous empêche de vivre, de guérir ou d&apos;avancer. Une <strong>attente active</strong>, accompagnée d&apos;un travail sur soi, peut être bénéfique. En revanche, une <strong>attente passive et obsessionnelle</strong> qui vous isole est généralement néfaste, quelle que soit l&apos;issue finale.</p>
-            </div>
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Quels signes montrent qu&apos;il ne faut plus attendre ?</h3>
-              <p className="text-gray-700 leading-relaxed">Un <strong>silence prolongé</strong> sans évolution, une nouvelle relation confirmée chez votre ex, ou un <strong>épuisement émotionnel</strong> croissant sont des signaux clairs qu&apos;il est temps de tourner la page. Le tarot identifie ces énergies de stagnation à travers des cartes comme Le Huit d&apos;Épée.</p>
-            </div>
-            <div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Peut-on attendre sans se faire du mal ?</h3>
-              <p className="text-gray-700 leading-relaxed">Oui, à condition de fixer une <strong>limite de temps claire</strong>, de continuer à vivre pleinement sa vie sociale, et de travailler sur ses propres blessures pendant cette période. L&apos;<strong>attente saine</strong> se distingue de l&apos;attente toxique par l&apos;équilibre émotionnel maintenu.</p>
-            </div>
-          </div>
-        </section>
-
-        {/* Articles Connexes */}
-        <div className="bg-gray-100 rounded-xl p-6 mb-8">
-          <h3 className="font-bold text-lg mb-4 text-gray-900">{'\u{1F4DA}'} Articles Connexes</h3>
-          <div className="space-y-2">
-            <Link href="/reconquete" className="block text-violet-600 hover:text-violet-800 font-medium">&rarr; Reconquête Amoureuse : Toutes nos Guidances</Link>
-            <Link href="/reconquete/va-t-il-elle-revenir" className="block text-violet-600 hover:text-violet-800 font-medium">&rarr; Va-t-il/elle Revenir ?</Link>
-            <Link href="/reconquete/ex-revient-silence-radio" className="block text-violet-600 hover:text-violet-800 font-medium">&rarr; Silence Radio : Ex qui Recontacte</Link>
-            <Link href="/crise-couple/dependance-affective" className="block text-violet-600 hover:text-violet-800 font-medium">&rarr; Dépendance Affective</Link>
-            <Link href="/reconquete/se-remettre-ensemble" className="block text-violet-600 hover:text-violet-800 font-medium">&rarr; Se Remettre Ensemble</Link>
-            <Link href="/reconquete/veut-se-remettre-ensemble-mais-ne-fait-rien" className="block text-violet-600 hover:text-violet-800 font-medium">&rarr; Il Veut se Remettre Ensemble mais ne Fait Rien</Link>
-          </div>
-        </div>
-
-        <VoyantFinalCTA topic="reconquete" source="dois-je-attendre-final" />
-      </div>
-    </main>
+      </ContentPage>
   );
 }

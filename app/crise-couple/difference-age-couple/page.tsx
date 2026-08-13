@@ -1,89 +1,76 @@
-import type { Metadata } from 'next';
 import Link from 'next/link';
-import { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getAuthorSchema } from '@/lib/schema';
-import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
-import VoyantFinalCTA from '@/components/VoyantFinalCTA';
+import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
-export const metadata: Metadata = {
+const config: ContentPageConfig = {
   title: 'Différence d\'Âge en Couple : Voyance et Compatibilité',
   description: 'Une grande différence d\'âge dans votre couple ? Le tarot éclaire les défis réels et le potentiel de compatibilité durable de votre relation.',
+  url: 'https://www.voyantlove.fr/crise-couple/difference-age-couple/',
   keywords: ['différence d\'âge couple voyance', 'grand écart âge relation', 'compatibilité âge tarot', 'couple différence âge importante', 'relation écart âge'],
-  alternates: {
-    canonical: 'https://www.voyantlove.fr/crise-couple/difference-age-couple/',
-  },
-};
-
-export default function DifferenceAgeCouplePage() {
-  const articleSchema = getArticleSchema({
-    title: 'Différence d\'Âge en Couple : Voyance et Compatibilité',
-    description: 'Une grande différence d\'âge dans votre couple ? Le tarot éclaire les défis réels et le potentiel de compatibilité durable de votre relation.',
-    url: 'https://www.voyantlove.fr/crise-couple/difference-age-couple/',
-    datePublished: '2026-07-22',
-    dateModified: '2026-07-22',
-    keywords: ['différence d\'âge couple voyance', 'grand écart âge relation', 'compatibilité âge tarot', 'couple différence âge importante', 'relation écart âge'],
-  });
-
-  const faqSchema = getFAQSchema([
-    {
-      question: 'Une grande différence d\'âge peut-elle fonctionner en couple ?',
-      answer: 'Oui, de nombreux couples avec un écart d\'âge important construisent des relations durables et épanouies. Le succès dépend moins du nombre d\'années d\'écart que de la maturité émotionnelle partagée, des valeurs communes et de la capacité à traverser ensemble les étapes de vie différentes. Le tarot évalue la solidité énergétique du lien au-delà de la simple donnée chronologique.',
-    },
-    {
-      question: 'Quel écart d\'âge pose vraiment problème en couple ?',
-      answer: 'Il n\'existe pas de seuil universel : un écart de quinze ans peut être harmonieux si la maturité et les projets de vie s\'alignent, tandis qu\'un écart de cinq ans peut poser problème si les priorités diffèrent radicalement. Ce qui compte davantage que le chiffre est l\'écart de maturité émotionnelle réelle et la compatibilité des étapes de vie envisagées par chaque partenaire.',
-    },
-    {
-      question: 'Comment gérer le jugement de l\'entourage sur notre différence d\'âge ?',
-      answer: 'Le jugement extérieur reflète souvent des préjugés sociaux plus que la réalité de votre relation. Se concentrer sur la solidité interne du couple plutôt que sur l\'approbation externe, et choisir ses cercles de confiance, aide à préserver la relation de ces pressions. Le tarot indique généralement que les couples résilients face au jugement extérieur en ressortent renforcés.',
-    },
-    {
-      question: 'La différence d\'âge affecte-t-elle les projets d\'avenir du couple ?',
-      answer: 'Elle peut créer des désalignements sur des sujets comme la parentalité, la retraite ou le rythme de vie souhaité, qu\'il est essentiel d\'aborder ouvertement et tôt dans la relation. Une différence d\'âge bien gérée implique une communication claire sur ces attentes de vie, plutôt qu\'un évitement du sujet qui génère des tensions futures.',
-    },
-    {
-      question: 'Le tarot peut-il confirmer la compatibilité malgré l\'écart d\'âge ?',
-      answer: 'Le tarot évalue la compatibilité énergétique réelle entre deux personnes, indépendamment de leur âge chronologique. Des cartes comme Les Amoureux ou le Deux de Coupe confirment une harmonie profonde malgré l\'écart, tandis que d\'autres configurations révèlent des désalignements à travailler consciemment pour construire une relation équilibrée et durable.',
-    },
-  ]);
-
-  const breadcrumbSchema = getBreadcrumbSchema([
+  datePublished: '2026-07-22',
+  dateModified: '2026-07-22',
+  breadcrumb: [
     { name: 'Accueil', url: 'https://www.voyantlove.fr' },
     { name: 'Crise de Couple', url: 'https://www.voyantlove.fr/crise-couple/' },
     { name: 'Différence d\'Âge', url: 'https://www.voyantlove.fr/crise-couple/difference-age-couple/' },
-  ]);
+  ],
+  header: {
+    emoji: '⏳',
+    h1: 'Différence d\'Âge en Couple',
+    subtitle: 'Ce que le tarot révèle sur la compatibilité au-delà des années',
+    gradient: 'from-cyan-600 via-sky-600 to-blue-600',
+    backLink: { href: '/crise-couple', label: 'Retour aux Crises de Couple' },
+    anchors: [
+      { href: '#defis', label: 'Défis Spécifiques', primary: true },
+      { href: '#regard', label: 'Le Regard des Autres' },
+    ],
+  },
+  accentText: 'text-cyan-700',
+  stats: [
+    { icon: '🔮', value: 'Reconnue', label: 'Expertise' },
+    { icon: '⏳', value: '2,500+', label: 'Tirages réalisés' },
+    { icon: '⭐', value: '4.6/5', label: '187 avis' },
+    { icon: '🔒', value: '100%', label: 'Confidentiel' },
+  ],
+  eeat: { colorScheme: 'cyan', method: 'Tarot de compatibilité et guidance de couple' },
+  cta: { topic: 'crise-couple', slug: 'difference-age' },
+  faq: [
+    {
+      q: 'Une grande différence d\'âge peut-elle fonctionner en couple ?',
+      a: 'Oui, de nombreux couples avec un écart d\'âge important construisent des relations durables et épanouies. Le succès dépend moins du nombre d\'années d\'écart que de la maturité émotionnelle partagée, des valeurs communes et de la capacité à traverser ensemble les étapes de vie différentes. Le tarot évalue la solidité énergétique du lien au-delà de la simple donnée chronologique.',
+    },
+    {
+      q: 'Quel écart d\'âge pose vraiment problème en couple ?',
+      a: 'Il n\'existe pas de seuil universel : un écart de quinze ans peut être harmonieux si la maturité et les projets de vie s\'alignent, tandis qu\'un écart de cinq ans peut poser problème si les priorités diffèrent radicalement. Ce qui compte davantage que le chiffre est l\'écart de maturité émotionnelle réelle et la compatibilité des étapes de vie envisagées par chaque partenaire.',
+    },
+    {
+      q: 'Comment gérer le jugement de l\'entourage sur notre différence d\'âge ?',
+      a: 'Le jugement extérieur reflète souvent des préjugés sociaux plus que la réalité de votre relation. Se concentrer sur la solidité interne du couple plutôt que sur l\'approbation externe, et choisir ses cercles de confiance, aide à préserver la relation de ces pressions. Le tarot indique généralement que les couples résilients face au jugement extérieur en ressortent renforcés.',
+    },
+    {
+      q: 'La différence d\'âge affecte-t-elle les projets d\'avenir du couple ?',
+      a: 'Elle peut créer des désalignements sur des sujets comme la parentalité, la retraite ou le rythme de vie souhaité, qu\'il est essentiel d\'aborder ouvertement et tôt dans la relation. Une différence d\'âge bien gérée implique une communication claire sur ces attentes de vie, plutôt qu\'un évitement du sujet qui génère des tensions futures.',
+    },
+    {
+      q: 'Le tarot peut-il confirmer la compatibilité malgré l\'écart d\'âge ?',
+      a: 'Le tarot évalue la compatibilité énergétique réelle entre deux personnes, indépendamment de leur âge chronologique. Des cartes comme Les Amoureux ou le Deux de Coupe confirment une harmonie profonde malgré l\'écart, tandis que d\'autres configurations révèlent des désalignements à travailler consciemment pour construire une relation équilibrée et durable.',
+    },
+  ],
+  related: [
+    { href: '/crise-couple', label: 'Crise de Couple : Toutes nos Guidances' },
+    { href: '/sentiments/compatibilite-amoureuse', label: 'Compatibilité Amoureuse' },
+    { href: '/crise-couple/opposition-familiale-couple', label: 'Opposition Familiale au Couple' },
+    { href: '/nouvelle-rencontre/amour-apres-40-ans', label: 'Trouver l\'Amour Après 40 Ans' },
+    { href: '/sentiments/savoir-si-cest-lamour', label: 'Savoir si C\'est l\'Amour' },
+  ],
+};
 
-  const authorSchema = getAuthorSchema();
+export const metadata = contentMeta(config);
 
+export default function DifferenceAgeCouplePage() {
   return (
-    <main className="min-h-screen bg-gray-50">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(authorSchema) }} />
-
-      <header className="bg-gradient-to-r from-cyan-600 via-sky-600 to-blue-600 text-white py-16 px-4">
-        <div className="max-w-4xl mx-auto">
-          <Link href="/crise-couple" className="text-white/80 hover:text-white mb-4 inline-block">&larr; Retour aux Crises de Couple</Link>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">{'⏳'} Différence d&apos;Âge en Couple</h1>
-          <p className="text-xl opacity-95 mb-6">Ce que le tarot révèle sur la compatibilité au-delà des années</p>
-          <div className="flex gap-4 flex-wrap">
-            <a href="#defis" className="bg-white text-cyan-700 px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition">Défis Spécifiques</a>
-            <a href="#regard" className="border-2 border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-cyan-700 transition">Le Regard des Autres</a>
-          </div>
-        </div>
-      </header>
-
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <div className="bg-white rounded-xl shadow-md p-6 mb-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-          <div><div className="text-3xl mb-1">{'\u{1F52E}'}</div><div className="text-2xl font-bold text-cyan-700">Reconnue</div><div className="text-sm text-gray-600">Expertise</div></div>
-          <div><div className="text-3xl mb-1">{'⏳'}</div><div className="text-2xl font-bold text-cyan-700">2,500+</div><div className="text-sm text-gray-600">Tirages réalisés</div></div>
-          <div><div className="text-3xl mb-1">{'⭐'}</div><div className="text-2xl font-bold text-cyan-700">4.6/5</div><div className="text-sm text-gray-600">187 avis</div></div>
-          <div><div className="text-3xl mb-1">{'\u{1F512}'}</div><div className="text-2xl font-bold text-cyan-700">100%</div><div className="text-sm text-gray-600">Confidentiel</div></div>
-        </div>
-
-        <EEATSignal colorScheme="cyan" method="Tarot de compatibilité et guidance de couple" />
+    <ContentPage config={config}>
 
         {/* Answer Capsule */}
         <article className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-cyan-600">
@@ -192,48 +179,6 @@ export default function DifferenceAgeCouplePage() {
           </div>
         </section>
 
-        {/* FAQ Section */}
-        <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">{'❓'} Questions Fréquentes</h2>
-          <p className="text-lg font-semibold text-gray-800 mb-4">Les reponses aux questions les plus posees sur la difference d&apos;age en couple, la compatibilite et la gestion du jugement exterieur.</p>
-          <div className="space-y-6">
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Une grande différence d&apos;âge peut-elle fonctionner en couple ?</h3>
-              <p className="text-gray-700 leading-relaxed">Oui, de nombreux couples avec un <strong>écart d&apos;âge important</strong> construisent des relations durables et épanouies. Le succès dépend moins du nombre d&apos;années d&apos;écart que de la <strong>maturité émotionnelle partagée</strong>, des valeurs communes et de la capacité à traverser ensemble les étapes de vie différentes.</p>
-            </div>
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Quel écart d&apos;âge pose vraiment problème en couple ?</h3>
-              <p className="text-gray-700 leading-relaxed">Il n&apos;existe pas de seuil universel : un écart de quinze ans peut être harmonieux si la <strong>maturité et les projets de vie</strong> s&apos;alignent, tandis qu&apos;un écart de cinq ans peut poser problème si les priorités diffèrent radicalement.</p>
-            </div>
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Comment gérer le jugement de l&apos;entourage sur notre différence d&apos;âge ?</h3>
-              <p className="text-gray-700 leading-relaxed">Le <strong>jugement extérieur</strong> reflète souvent des préjugés sociaux plus que la réalité de votre relation. Se concentrer sur la <strong>solidité interne du couple</strong> plutôt que sur l&apos;approbation externe aide à préserver la relation de ces pressions.</p>
-            </div>
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">La différence d&apos;âge affecte-t-elle les projets d&apos;avenir du couple ?</h3>
-              <p className="text-gray-700 leading-relaxed">Elle peut créer des <strong>désalignements</strong> sur des sujets comme la parentalité, la retraite ou le rythme de vie souhaité, qu&apos;il est essentiel d&apos;aborder ouvertement et tôt dans la relation.</p>
-            </div>
-            <div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Le tarot peut-il confirmer la compatibilité malgré l&apos;écart d&apos;âge ?</h3>
-              <p className="text-gray-700 leading-relaxed">Le tarot évalue la <strong>compatibilité énergétique</strong> réelle entre deux personnes, indépendamment de leur âge chronologique. Des cartes comme Les Amoureux ou le Deux de Coupe confirment une <strong>harmonie profonde</strong> malgré l&apos;écart.</p>
-            </div>
-          </div>
-        </section>
-
-        {/* Articles Connexes */}
-        <div className="bg-gray-100 rounded-xl p-6 mb-8">
-          <h3 className="font-bold text-lg mb-4 text-gray-900">{'\u{1F4DA}'} Articles Connexes</h3>
-          <div className="space-y-2">
-            <Link href="/crise-couple" className="block text-cyan-700 hover:text-cyan-900 font-medium">&rarr; Crise de Couple : Toutes nos Guidances</Link>
-            <Link href="/sentiments/compatibilite-amoureuse" className="block text-cyan-700 hover:text-cyan-900 font-medium">&rarr; Compatibilité Amoureuse</Link>
-            <Link href="/crise-couple/opposition-familiale-couple" className="block text-cyan-700 hover:text-cyan-900 font-medium">&rarr; Opposition Familiale au Couple</Link>
-            <Link href="/nouvelle-rencontre/amour-apres-40-ans" className="block text-cyan-700 hover:text-cyan-900 font-medium">&rarr; Trouver l&apos;Amour Après 40 Ans</Link>
-            <Link href="/sentiments/savoir-si-cest-lamour" className="block text-cyan-700 hover:text-cyan-900 font-medium">&rarr; Savoir si C&apos;est l&apos;Amour</Link>
-          </div>
-        </div>
-
-        <VoyantFinalCTA topic="crise-couple" source="difference-age-final" />
-      </div>
-    </main>
+    </ContentPage>
   );
 }

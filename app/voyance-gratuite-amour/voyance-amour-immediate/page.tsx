@@ -1,94 +1,82 @@
-import type { Metadata } from 'next';
 import Link from 'next/link';
-import { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getAuthorSchema } from '@/lib/schema';
-import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
-import VoyantFinalCTA from '@/components/VoyantFinalCTA';
+import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
-export const metadata: Metadata = {
+const config: ContentPageConfig = {
   title: 'Voyance Amour Gratuite Immédiate : Tirage Instantané en Ligne',
   description: 'Voyance amour gratuite immédiate : tirage instantané en ligne, oracle et tarot oui/non amour. Réponse en quelques secondes à votre question sentimentale, sans inscription.',
+  url: 'https://www.voyantlove.fr/voyance-gratuite-amour/voyance-amour-immediate/',
   keywords: ['voyance amour gratuite immediate', 'voyance gratuite immediate amour', 'voyance amoureuse gratuite immediate', 'voyance amour gratuit immediat', 'voyance gratuite amour en ligne immediate', 'tirage amour immediat'],
-  alternates: {
-    canonical: 'https://www.voyantlove.fr/voyance-gratuite-amour/voyance-amour-immediate/',
-  },
-};
-
-export default function VoyanceAmourImmediatePage() {
-  const articleSchema = getArticleSchema({
-    title: 'Voyance Amour Gratuite Immédiate : Tirage Instantané en Ligne | VoyantLove',
-    description: 'Voyance amour gratuite immédiate : tirage instantané en ligne, oracle et tarot oui/non amour. Réponse en quelques secondes à votre question sentimentale, sans inscription.',
-    url: 'https://www.voyantlove.fr/voyance-gratuite-amour/voyance-amour-immediate/',
-    datePublished: '2026-05-12',
-    dateModified: '2026-05-12',
-    keywords: ['voyance amour gratuite immediate', 'voyance amoureuse gratuite immediate', 'tirage amour immediat', 'voyance amour gratuit immediat'],
-  });
-
-  const authorSchema = getAuthorSchema();
-
-  const breadcrumbSchema = getBreadcrumbSchema([
+  datePublished: '2026-05-12',
+  dateModified: '2026-05-12',
+  breadcrumb: [
     { name: 'Accueil', url: 'https://www.voyantlove.fr' },
     { name: 'Voyance Gratuite Amour', url: 'https://www.voyantlove.fr/voyance-gratuite-amour/' },
     { name: 'Voyance Amour Gratuite Immédiate', url: 'https://www.voyantlove.fr/voyance-gratuite-amour/voyance-amour-immediate/' },
-  ]);
+  ],
+  header: {
+    emoji: '⚡',
+    h1: 'Voyance Amour Gratuite Immédiate',
+    subtitle: 'Tirage instantané en ligne et consultation en direct sans attente',
+    gradient: 'from-emerald-500 via-teal-500 to-green-500',
+    backLink: { href: '/voyance-gratuite-amour', label: 'Voyance Gratuite Amour' },
+    anchors: [
+      { href: '/voyance-gratuite-amour/tarot-oui-non-amour', label: 'Tirage Immédiat', primary: true },
+      { href: '#consultation', label: 'Voyant en Direct' },
+    ],
+  },
+  accentText: 'text-emerald-600',
+  stats: [
+    { icon: '⚡', value: 'Instantané', label: 'Réponse en secondes' },
+    { icon: '🎁', value: 'Gratuit', label: 'Sans inscription' },
+    { icon: '🕐', value: '24h/24', label: 'Disponible' },
+    { icon: '🔒', value: 'Privé', label: 'Confidentiel' },
+  ],
+  eeat: { colorScheme: 'green', method: 'Voyance amour immédiate : tirages automatiques et consultations en direct' },
+  cta: { topic: 'voyance-gratuite', slug: 'voyance-amour-immediate' },
+  faq: [
+    {
+      q: 'Comment fonctionne la voyance amour gratuite immédiate ?',
+      a: 'La voyance amour gratuite immédiate combine deux mécaniques. Premièrement, les tirages automatiques en ligne : vous tirez les cartes virtuellement, l\'algorithme applique les règles classiques d\'interprétation du tarot et affiche le résultat en quelques secondes. Aucune inscription ni carte bancaire ne sont demandées. Deuxièmement, les premières minutes offertes par téléphone ou chat : vous êtes mis en relation immédiatement avec un voyant disponible qui répond pendant la durée gratuite (généralement 3 à 10 minutes selon l\'offre). Les deux formats vous donnent une première réponse sans attente.',
+    },
+    {
+      q: 'La voyance amour gratuite immédiate est-elle fiable ?',
+      a: 'Les tirages automatiques utilisent la symbolique authentique des arcanes, la fiabilité est correcte pour une question simple et précise. En revanche, ils ne peuvent pas adapter la lecture à votre énergie spécifique comme le ferait un voyant en direct. Pour une question complexe ou émotionnellement chargée, privilégiez une consultation immédiate avec un praticien : la voix permet d\'ajuster la lecture en temps réel. Notre conseil : commencez par le tirage automatique pour explorer, puis approfondissez avec un voyant si la question vous tient à cœur.',
+    },
+    {
+      q: 'Quelle question poser en voyance amour immédiate ?',
+      a: 'Les questions binaires sont les plus adaptées à un tirage immédiat : « M\'aime-t-il en ce moment ? », « Va-t-elle me recontacter ? », « Cette personne est-elle sincère ? ». Évitez les questions trop ouvertes ou portant sur des dates précises, qui demandent une analyse approfondie. Formulez votre question au présent, sans négation, et concentrez-vous sur UNE personne précise. Plus votre intention est claire au moment du tirage, plus la réponse sera juste.',
+    },
+    {
+      q: 'Combien de temps dure une voyance amour gratuite immédiate ?',
+      a: 'Un tirage automatique en ligne prend entre 30 secondes et 2 minutes selon la complexité (oui/non, tirage en croix, oracle…). Une consultation immédiate avec un voyant lors de l\'offre découverte dure entre 3 et 10 minutes, durée suffisante pour poser une question ciblée et obtenir une première réponse. Au-delà, vous pouvez prolonger la consultation au tarif applicable, qui vous est toujours communiqué avant tout engagement financier.',
+    },
+    {
+      q: 'Puis-je obtenir une voyance amour immédiate à toute heure ?',
+      a: 'Oui pour les tirages automatiques en ligne : ils sont disponibles 24h/24, 7j/7, sans aucune restriction. Pour les consultations en direct avec un voyant, la disponibilité dépend des praticiens connectés. Nous indiquons en temps réel quels voyants sont disponibles maintenant sur notre page de consultation. En général, les heures de plus forte disponibilité sont en soirée (18h-23h) et le week-end.',
+    },
+  ],
+  related: [
+    { href: '/voyance-gratuite-amour', label: 'Toutes nos guidances gratuites' },
+    { href: '/voyance-gratuite-amour/tarot-oui-non-amour', label: 'Tarot Oui/Non Amour' },
+    { href: '/voyance-gratuite-amour/tarot-amour-gratuit', label: 'Tarot Amour Gratuit Complet' },
+    { href: '/voyance-gratuite-amour/voyance-tchat-gratuit-amour', label: 'Voyance par Chat Gratuit' },
+    { href: '/voyance-amour', label: 'Tout sur la Voyance Amour' },
+    { href: '/consulter', label: 'Consulter un Voyant en Direct' },
+  ],
+};
 
-  const faqSchema = getFAQSchema([
-    {
-      question: 'Comment fonctionne la voyance amour gratuite immédiate ?',
-      answer: 'La voyance amour gratuite immédiate combine deux mécaniques. Premièrement, les tirages automatiques en ligne : vous tirez les cartes virtuellement, l\'algorithme applique les règles classiques d\'interprétation du tarot et affiche le résultat en quelques secondes. Aucune inscription ni carte bancaire ne sont demandées. Deuxièmement, les premières minutes offertes par téléphone ou chat : vous êtes mis en relation immédiatement avec un voyant disponible qui répond pendant la durée gratuite (généralement 3 à 10 minutes selon l\'offre). Les deux formats vous donnent une première réponse sans attente.',
-    },
-    {
-      question: 'La voyance amour gratuite immédiate est-elle fiable ?',
-      answer: 'Les tirages automatiques utilisent la symbolique authentique des arcanes — la fiabilité est correcte pour une question simple et précise. En revanche, ils ne peuvent pas adapter la lecture à votre énergie spécifique comme le ferait un voyant en direct. Pour une question complexe ou émotionnellement chargée, privilégiez une consultation immédiate avec un praticien : la voix permet d\'ajuster la lecture en temps réel. Notre conseil : commencez par le tirage automatique pour explorer, puis approfondissez avec un voyant si la question vous tient à cœur.',
-    },
-    {
-      question: 'Quelle question poser en voyance amour immédiate ?',
-      answer: 'Les questions binaires sont les plus adaptées à un tirage immédiat : « M\'aime-t-il en ce moment ? », « Va-t-elle me recontacter ? », « Cette personne est-elle sincère ? ». Évitez les questions trop ouvertes ou portant sur des dates précises, qui demandent une analyse approfondie. Formulez votre question au présent, sans négation, et concentrez-vous sur UNE personne précise. Plus votre intention est claire au moment du tirage, plus la réponse sera juste.',
-    },
-    {
-      question: 'Combien de temps dure une voyance amour gratuite immédiate ?',
-      answer: 'Un tirage automatique en ligne prend entre 30 secondes et 2 minutes selon la complexité (oui/non, tirage en croix, oracle…). Une consultation immédiate avec un voyant lors de l\'offre découverte dure entre 3 et 10 minutes — durée suffisante pour poser une question ciblée et obtenir une première réponse. Au-delà, vous pouvez prolonger la consultation au tarif applicable, qui vous est toujours communiqué avant tout engagement financier.',
-    },
-    {
-      question: 'Puis-je obtenir une voyance amour immédiate à toute heure ?',
-      answer: 'Oui pour les tirages automatiques en ligne : ils sont disponibles 24h/24, 7j/7, sans aucune restriction. Pour les consultations en direct avec un voyant, la disponibilité dépend des praticiens connectés. Nous indiquons en temps réel quels voyants sont disponibles maintenant sur notre page de consultation. En général, les heures de plus forte disponibilité sont en soirée (18h-23h) et le week-end.',
-    },
-  ]);
+export const metadata = contentMeta(config);
 
+export default function VoyanceAmourImmediatePage() {
   return (
-    <main className="min-h-screen bg-gray-50">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(authorSchema) }} />
-
-      <header className="bg-gradient-to-r from-emerald-500 via-teal-500 to-green-500 text-white py-16 px-4">
-        <div className="max-w-4xl mx-auto">
-          <Link href="/voyance-gratuite-amour" className="text-white/80 hover:text-white mb-4 inline-block">&larr; Voyance Gratuite Amour</Link>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">⚡ Voyance Amour Gratuite Immédiate</h1>
-          <p className="text-xl opacity-95 mb-6">Tirage instantané en ligne et consultation en direct sans attente</p>
-          <div className="flex gap-4 flex-wrap">
-            <Link href="/voyance-gratuite-amour/tarot-oui-non-amour" className="bg-white text-emerald-600 px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition">Tirage Immédiat</Link>
-            <a href="#consultation" className="border-2 border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-emerald-600 transition">Voyant en Direct</a>
-          </div>
-        </div>
-      </header>
-
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <div className="bg-white rounded-xl shadow-md p-6 mb-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-          <div><div className="text-3xl mb-1">⚡</div><div className="text-2xl font-bold text-emerald-600">Instantané</div><div className="text-sm text-gray-600">Réponse en secondes</div></div>
-          <div><div className="text-3xl mb-1">🎁</div><div className="text-2xl font-bold text-emerald-600">Gratuit</div><div className="text-sm text-gray-600">Sans inscription</div></div>
-          <div><div className="text-3xl mb-1">🕐</div><div className="text-2xl font-bold text-emerald-600">24h/24</div><div className="text-sm text-gray-600">Disponible</div></div>
-          <div><div className="text-3xl mb-1">🔒</div><div className="text-2xl font-bold text-emerald-600">Privé</div><div className="text-sm text-gray-600">Confidentiel</div></div>
-        </div>
-
-        <EEATSignal colorScheme="green" method="Voyance amour immédiate : tirages automatiques et consultations en direct" />
+    <ContentPage config={config}>
 
         <article className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-emerald-600">
           <div className="bg-emerald-50 border-l-4 border-emerald-500 p-6 rounded-lg">
             <p className="text-lg leading-relaxed">
-              La <strong>voyance amour gratuite immédiate</strong> répond à un besoin précis : accéder rapidement à une <strong>première orientation sur une question sentimentale</strong>, sans rendez-vous, sans inscription et sans engagement. Deux formats complémentaires composent cette <strong>voyance amour direct</strong> accessible en ligne. Les <strong>tirages automatiques en ligne</strong> — tarot oui/non, oracle, horoscope amoureux — sont disponibles 24h/24 et génèrent instantanément une lecture symbolique de votre question. Lorsqu&apos;un praticien est disponible, les <strong>consultations immédiates avec un voyant</strong>, accessibles via les premières minutes offertes, permettent un échange direct avec un spécialiste. Cette page rassemble les options, explique comment choisir et précise les limites de chaque format pour que vous trouviez l&apos;outil adapté à votre situation du moment.
+              La <strong>voyance amour gratuite immédiate</strong> répond à un besoin précis : accéder rapidement à une <strong>première orientation sur une question sentimentale</strong>, sans rendez-vous, sans inscription et sans engagement. Deux formats complémentaires composent cette <strong>voyance amour direct</strong> accessible en ligne. Les <strong>tirages automatiques en ligne</strong>, tarot oui/non, oracle, horoscope amoureux, sont disponibles 24h/24 et génèrent instantanément une lecture symbolique de votre question. Lorsqu&apos;un praticien est disponible, les <strong>consultations immédiates avec un voyant</strong>, accessibles via les premières minutes offertes, permettent un échange direct avec un spécialiste. Cette page rassemble les options, explique comment choisir et précise les limites de chaque format pour que vous trouviez l&apos;outil adapté à votre situation du moment.
             </p>
           </div>
         </article>
@@ -116,7 +104,7 @@ export default function VoyanceAmourImmediatePage() {
             </Link>
           </div>
           <div className="bg-amber-50 border-l-4 border-amber-500 p-5 rounded-lg">
-            <p className="text-gray-700 text-sm"><strong>Bonnes pratiques :</strong> formulez votre question mentalement avant de cliquer, concentrez-vous sur une seule personne précise, et ne refaites pas le tirage si la réponse vous déplaît — le tarot a déjà donné sa lecture pour ce moment.</p>
+            <p className="text-gray-700 text-sm"><strong>Bonnes pratiques :</strong> formulez votre question mentalement avant de cliquer, concentrez-vous sur une seule personne précise, et ne refaites pas le tirage si la réponse vous déplaît, le tarot a déjà donné sa lecture pour ce moment.</p>
           </div>
         </section>
 
@@ -124,7 +112,7 @@ export default function VoyanceAmourImmediatePage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">📞 Voyance Amour Immédiate avec un Voyant en Direct</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Les consultations en direct avec un voyant spécialisé amour offrent une lecture personnalisée immédiate. Les premières minutes sont offertes pour découvrir le praticien sans engagement.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Quand votre question dépasse le binaire oui/non — sentiments complexes, situation triangulaire, doute existentiel — la <strong>consultation immédiate avec un voyant</strong> apporte une profondeur que le tirage automatique ne peut atteindre. Le praticien capte votre énergie à travers la voix, pose des questions de clarification et ajuste sa lecture en temps réel. C&apos;est l&apos;équivalent immédiat d&apos;une vraie consultation en cabinet.
+            Quand votre question dépasse le binaire oui/non, sentiments complexes, situation triangulaire, doute existentiel, la <strong>consultation immédiate avec un voyant</strong> apporte une profondeur que le tirage automatique ne peut atteindre. Le praticien capte votre énergie à travers la voix, pose des questions de clarification et ajuste sa lecture en temps réel. C&apos;est l&apos;équivalent immédiat d&apos;une vraie consultation en cabinet.
           </p>
           <div className="space-y-5 mb-6">
             <div className="bg-white rounded-lg p-5 border-l-4 border-emerald-500">
@@ -133,11 +121,11 @@ export default function VoyanceAmourImmediatePage() {
             </div>
             <div className="bg-white rounded-lg p-5 border-l-4 border-teal-500">
               <h3 className="font-bold text-lg mb-2 text-teal-700">Comment se Passe la Mise en Relation</h3>
-              <p className="text-gray-700 text-sm">Vous choisissez un voyant disponible parmi notre liste en temps réel — son profil, ses spécialités et ses avis clients sont visibles. La connexion s&apos;établit en moins de 2 minutes, par téléphone ou chat selon votre préférence. Le tarif applicable après les minutes offertes vous est communiqué avant la mise en relation. Vous gardez le contrôle total de la durée et du budget.</p>
+              <p className="text-gray-700 text-sm">Vous choisissez un voyant disponible parmi notre liste en temps réel, son profil, ses spécialités et ses avis clients sont visibles. La connexion s&apos;établit en moins de 2 minutes, par téléphone ou chat selon votre préférence. Le tarif applicable après les minutes offertes vous est communiqué avant la mise en relation. Vous gardez le contrôle total de la durée et du budget.</p>
             </div>
             <div className="bg-white rounded-lg p-5 border-l-4 border-green-500">
               <h3 className="font-bold text-lg mb-2 text-green-700">Préparer une Consultation Immédiate Efficace</h3>
-              <p className="text-gray-700 text-sm">Pour tirer le meilleur des minutes offertes : <strong>écrivez votre question</strong> avant l&apos;appel pour la formuler clairement, <strong>concentrez-vous sur UNE seule problématique</strong> précise, et <strong>évitez de tout raconter</strong> — un bon voyant capte les énergies dès les premières secondes. La précision de votre intention détermine la précision de la réponse.</p>
+              <p className="text-gray-700 text-sm">Pour tirer le meilleur des minutes offertes : <strong>écrivez votre question</strong> avant l&apos;appel pour la formuler clairement, <strong>concentrez-vous sur UNE seule problématique</strong> précise, et <strong>évitez de tout raconter</strong>, un bon voyant capte les énergies dès les premières secondes. La précision de votre intention détermine la précision de la réponse.</p>
             </div>
           </div>
           <div className="text-center">
@@ -179,46 +167,6 @@ export default function VoyanceAmourImmediatePage() {
 
         <VoyantRecommendations topic="voyance-gratuite" limit={3} showOnlineFirst={true} source="voyance-amour-immediate-mid" />
 
-        <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">❓ Questions Fréquentes</h2>
-          <div className="space-y-6">
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Comment fonctionne la voyance amour gratuite immédiate ?</h3>
-              <p className="text-gray-700 leading-relaxed">La <strong>voyance amour gratuite immédiate</strong> combine deux mécaniques. Premièrement, les <strong>tirages automatiques en ligne</strong> : vous tirez les cartes virtuellement, l&apos;algorithme applique les règles classiques d&apos;interprétation du tarot et affiche le résultat en quelques secondes. Aucune inscription ni carte bancaire ne sont demandées. Deuxièmement, les <strong>premières minutes offertes</strong> par téléphone ou chat : vous êtes mis en relation immédiatement avec un voyant disponible qui répond pendant la durée gratuite (généralement 3 à 10 minutes selon l&apos;offre). Les deux formats vous donnent une première réponse sans attente.</p>
-            </div>
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">La voyance amour gratuite immédiate est-elle fiable ?</h3>
-              <p className="text-gray-700 leading-relaxed">Les <strong>tirages automatiques</strong> utilisent la symbolique authentique des arcanes — la fiabilité est correcte pour une question simple et précise. En revanche, ils ne peuvent pas adapter la lecture à votre énergie spécifique comme le ferait un voyant en direct. Pour une question complexe ou émotionnellement chargée, privilégiez une <strong>consultation immédiate avec un praticien</strong> : la voix permet d&apos;ajuster la lecture en temps réel. Notre conseil : commencez par le tirage automatique pour explorer, puis approfondissez avec un voyant si la question vous tient à cœur.</p>
-            </div>
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Quelle question poser en voyance amour immédiate ?</h3>
-              <p className="text-gray-700 leading-relaxed">Les questions binaires sont les plus adaptées à un tirage immédiat : &laquo;&nbsp;M&apos;aime-t-il en ce moment ?&nbsp;&raquo;, &laquo;&nbsp;Va-t-elle me recontacter ?&nbsp;&raquo;, &laquo;&nbsp;Cette personne est-elle sincère ?&nbsp;&raquo;. Évitez les questions trop ouvertes ou portant sur des dates précises, qui demandent une analyse approfondie. Formulez votre question au présent, sans négation, et concentrez-vous sur UNE personne précise. Plus votre intention est claire au moment du tirage, plus la réponse sera juste.</p>
-            </div>
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Combien de temps dure une voyance amour gratuite immédiate ?</h3>
-              <p className="text-gray-700 leading-relaxed">Un <strong>tirage automatique</strong> en ligne prend entre 30 secondes et 2 minutes selon la complexité (oui/non, tirage en croix, oracle…). Une <strong>consultation immédiate avec un voyant</strong> lors de l&apos;offre découverte dure entre 3 et 10 minutes — durée suffisante pour poser une question ciblée et obtenir une première réponse. Au-delà, vous pouvez prolonger la consultation au tarif applicable, qui vous est toujours communiqué avant tout engagement financier.</p>
-            </div>
-            <div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Puis-je obtenir une voyance amour immédiate à toute heure ?</h3>
-              <p className="text-gray-700 leading-relaxed">Oui pour les <strong>tirages automatiques en ligne</strong> : ils sont disponibles 24h/24, 7j/7, sans aucune restriction. Pour les <strong>consultations en direct</strong> avec un voyant, la disponibilité dépend des praticiens connectés. Nous indiquons en temps réel quels voyants sont disponibles maintenant sur notre page de consultation. En général, les heures de plus forte disponibilité sont en soirée (18h-23h) et le week-end.</p>
-            </div>
-          </div>
-        </section>
-
-        <VoyantFinalCTA topic="voyance-gratuite" source="voyance-amour-immediate-bottom" />
-
-        <section className="bg-gray-100 rounded-xl p-6 mb-8">
-          <h3 className="font-bold text-lg mb-4 text-gray-900">📚 Articles Connexes</h3>
-          <div className="grid md:grid-cols-2 gap-3">
-            <Link href="/voyance-gratuite-amour" className="block text-emerald-700 hover:text-emerald-900 font-medium">→ Toutes nos guidances gratuites</Link>
-            <Link href="/voyance-gratuite-amour/tarot-oui-non-amour" className="block text-emerald-700 hover:text-emerald-900 font-medium">→ Tarot Oui/Non Amour</Link>
-            <Link href="/voyance-gratuite-amour/tarot-amour-gratuit" className="block text-emerald-700 hover:text-emerald-900 font-medium">→ Tarot Amour Gratuit Complet</Link>
-            <Link href="/voyance-gratuite-amour/voyance-tchat-gratuit-amour" className="block text-emerald-700 hover:text-emerald-900 font-medium">→ Voyance par Chat Gratuit</Link>
-            <Link href="/voyance-amour" className="block text-emerald-700 hover:text-emerald-900 font-medium">→ Tout sur la Voyance Amour</Link>
-            <Link href="/consulter" className="block text-emerald-700 hover:text-emerald-900 font-medium">→ Consulter un Voyant en Direct</Link>
-          </div>
-        </section>
-      </div>
-    </main>
+    </ContentPage>
   );
 }

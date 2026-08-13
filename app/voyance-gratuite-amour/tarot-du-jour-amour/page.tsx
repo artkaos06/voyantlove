@@ -49,7 +49,7 @@ export default function TarotDuJourAmourPage() {
     },
     {
       question: 'Que faire si la carte du jour est négative ?',
-      answer: 'Une carte perçue comme "négative" (la Tour, le Diable, l\'Ermite...) n\'est pas une fatalité mais une invitation à la vigilance ou à l\'introspection sur un point précis de votre vie sentimentale. Elle signale souvent un ajustement à faire — ralentir, clarifier une situation, éviter une réaction impulsive — plutôt qu\'un événement malheureux à venir. Si le message vous préoccupe, un voyant spécialisé peut replacer cette carte dans le contexte plus large de votre situation.',
+      answer: 'Une carte perçue comme "négative" (la Tour, le Diable, l\'Ermite...) n\'est pas une fatalité mais une invitation à la vigilance ou à l\'introspection sur un point précis de votre vie sentimentale. Elle signale souvent un ajustement à faire, ralentir, clarifier une situation, éviter une réaction impulsive, plutôt qu\'un événement malheureux à venir. Si le message vous préoccupe, un voyant spécialisé peut replacer cette carte dans le contexte plus large de votre situation.',
     },
   ]);
 

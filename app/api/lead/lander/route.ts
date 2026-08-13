@@ -1,7 +1,7 @@
 // Email capture for the MGID angle landers → Brevo.
 //
 // Accepts a NATIVE form POST (application/x-www-form-urlencoded), not JSON,
-// so the form works with JavaScript disabled or broken — the same constraint
+// so the form works with JavaScript disabled or broken, the same constraint
 // that shaped the landers themselves. On success it 303-redirects back to the
 // lander with ?merci=1, which the page renders as a confirmation. That's the
 // classic POST/Redirect/GET pattern: no JS, and a refresh can't resubmit.
@@ -44,7 +44,7 @@ function backTo(
   // Carry attribution across the redirect. Without this the confirmation page
   // is a bare URL, which broke two things: MGID's email_lead conversion fired
   // with an empty clid (unattributable to the originating click), and the
-  // re-render logged a phantom load with source 'direct' — inflating loads
+  // re-render logged a phantom load with source 'direct', inflating loads
   // and deflating the tap rate for the real source.
   if (keep?.source && keep.source !== 'direct') url.searchParams.set('source', keep.source);
   if (keep?.sid) url.searchParams.set('sid', keep.sid);
@@ -124,7 +124,7 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
       console.error('[lead/lander] brevo threw', e);
     }
   } else {
-    console.error('[lead/lander] BREVO_API_KEY missing — contact not stored');
+    console.error('[lead/lander] BREVO_API_KEY missing, contact not stored');
   }
 
   await notifyDiscord({
@@ -134,7 +134,7 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
     description: `${maskEmail(email)}${prenom ? ` · ${prenom}` : ''}`,
     fields: [
       { name: 'Angle', value: lander, inline: true },
-      { name: 'Source', value: source || '—', inline: true },
+      { name: 'Source', value: source || ', ', inline: true },
     ],
   });
 

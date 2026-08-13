@@ -7,7 +7,7 @@
 // Pattern: editorial paragraph above sets up a curiosity gap or emotional
 // pain point, this component delivers the offer at the moment of peak need.
 //
-// Captures gclid/gbraid/wbraid the same way AffiliateCTA does — so direct
+// Captures gclid/gbraid/wbraid the same way AffiliateCTA does, so direct
 // CTA inside this box works as a primary conversion path, not just a link
 // to the review page.
 
@@ -41,7 +41,7 @@ export default function OfferBridge({
   eyebrow = 'Personalized for your situation',
   headline,
   subtext,
-  ctaLabel = 'Talk to a love psychic — 5 min for $1',
+  ctaLabel = 'Talk to a love psychic, 5 min for $1',
   footnote = '5 minutes for $1 with a new advisor · over by tomorrow if not for you · 18+',
   variant = 'gradient',
   placement,

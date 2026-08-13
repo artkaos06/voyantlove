@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   const webPageSchema = getWebPageSchema({
-    title: 'Contact — VoyantLove.fr',
+    title: 'Contact, VoyantLove.fr',
     description: 'Contactez VoyantLove.fr pour toute question sur nos services de voyance amoureuse.',
     url: 'https://www.voyantlove.fr/contact/',
   });
@@ -74,7 +74,7 @@ export default function ContactPage() {
                   <a href="tel:0175754582" className="text-purple-600 hover:underline">
                     01 75 75 45 82
                   </a>
-                  <p className="text-sm text-gray-600 mt-1">Service 7j/7 — consultation voyance</p>
+                  <p className="text-sm text-gray-600 mt-1">Service 7j/7, consultation voyance</p>
                 </div>
               </div>
             </div>

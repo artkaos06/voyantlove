@@ -1,94 +1,72 @@
-import type { Metadata } from 'next';
 import Link from 'next/link';
-import { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getAuthorSchema } from '@/lib/schema';
-import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
-import VoyantFinalCTA from '@/components/VoyantFinalCTA';
+import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
-export const metadata: Metadata = {
+const config: ContentPageConfig = {
   title: 'Écrire une Lettre à son Ex : Guide Voyance Reconquête',
   description: 'Comment écrire une lettre à son ex pour reconquérir son amour ? Découvrez les conseils de la voyance pour rédiger un message sincère et toucher son cœur.',
+  url: 'https://www.voyantlove.fr/reconquete/lettre-a-son-ex/',
   keywords: ['lettre à son ex', 'message reconquête', 'écrire à son ex', 'lettre reconquête amoureuse', 'message ex'],
-  alternates: { canonical: 'https://www.voyantlove.fr/reconquete/lettre-a-son-ex/' },
-};
-
-export default function LettreASonExPage() {
-  const articleSchema = getArticleSchema({
-    title: 'Écrire une Lettre à son Ex : Guide Voyance Reconquête',
-    description: 'Comment écrire une lettre à son ex pour reconquérir son amour ? Découvrez les conseils de la voyance pour rédiger un message sincère et toucher son cœur.',
-    url: 'https://www.voyantlove.fr/reconquete/lettre-a-son-ex/',
-    datePublished: '2026-03-22',
-    dateModified: '2026-03-22',
-    keywords: ['lettre à son ex', 'message reconquête', 'écrire à son ex', 'lettre reconquête amoureuse', 'message ex'],
-  });
-
-  const faqSchema = getFAQSchema([
-    {
-      question: 'Quand est-ce le bon moment pour envoyer une lettre à son ex ?',
-      answer: 'Le timing est essentiel dans toute démarche de reconquête. La voyance recommande d\'attendre la fin du silence radio, soit 3 à 8 semaines après la rupture, avant d\'envoyer une lettre. Le tarot peut affiner ce timing en analysant l\'état émotionnel de votre ex et sa réceptivité actuelle. Envoyer une lettre trop tôt, sous le coup de l\'émotion, risque de produire l\'effet inverse. Les transits de Vénus et la position de Mercure dans votre thème natal peuvent également indiquer les périodes les plus favorables à la communication écrite.',
-    },
-    {
-      question: 'Faut-il écrire une lettre manuscrite ou un message numérique ?',
-      answer: 'La lettre manuscrite possède une énergie vibratoire bien supérieure à un simple SMS ou email. En voyance, on considère que l\'écriture à la main transmet une partie de votre aura et de vos émotions authentiques. Votre ex ressentira la sincérité à travers votre écriture, les ratures, les hésitations. Cependant, si votre ex ne lit plus ses courriers ou si la distance rend l\'envoi postal compliqué, un long message réfléchi peut aussi fonctionner. L\'essentiel est que chaque mot soit pesé avec le cœur.',
-    },
-    {
-      question: 'Que faut-il éviter d\'écrire dans une lettre à son ex ?',
-      answer: 'Les pièges à éviter sont nombreux dans une lettre de reconquête. Ne suppliez jamais, ne faites pas de chantage émotionnel, n\'accusez pas votre ex et ne mentionnez pas de nouvelle relation. Le tarot révèle que les lettres qui fonctionnent sont celles qui expriment une évolution personnelle sincère, pas celles qui tentent de culpabiliser. Évitez aussi les promesses irréalistes comme « je changerai tout pour toi ». Un voyant peut vous guider sur le ton juste à adopter selon la personnalité astrologique de votre ex.',
-    },
-    {
-      question: 'La voyance peut-elle m\'aider à trouver les bons mots pour mon ex ?',
-      answer: 'Absolument. Un voyant utilise le tarot et la clairvoyance pour capter les émotions profondes de votre ex et identifier les mots qui résonneront avec ses sentiments actuels. En analysant votre synastrie amoureuse, le voyant comprend les dynamiques relationnelles en jeu et vous guide vers un discours authentique et percutant. La consultation révèle aussi les sujets à aborder et ceux à éviter selon les blessures émotionnelles encore vives. Cette guidance personnalisée augmente considérablement l\'impact de votre lettre.',
-    },
-  ]);
-
-  const breadcrumbSchema = getBreadcrumbSchema([
+  datePublished: '2026-03-22',
+  dateModified: '2026-03-22',
+  breadcrumb: [
     { name: 'Accueil', url: 'https://www.voyantlove.fr' },
     { name: 'Reconquête', url: 'https://www.voyantlove.fr/reconquete/' },
     { name: 'Lettre à son Ex', url: 'https://www.voyantlove.fr/reconquete/lettre-a-son-ex/' },
-  ]);
+  ],
+  header: {
+    emoji: '💜',
+    h1: 'Écrire une Lettre à son Ex : Guide Voyance',
+    subtitle: 'Les mots justes pour toucher le cœur de votre ex selon la voyance',
+    gradient: 'from-purple-600 via-purple-700 to-indigo-600',
+    backLink: { href: '/reconquete', label: 'Reconquête' },
+    anchors: [
+      { href: '#consultation', label: 'Consultation Reconquête', primary: true },
+    ],
+  },
+  accentText: 'text-purple-600',
+  stats: [
+    { icon: '⭐', value: '4.9/5', label: '312 avis' },
+    { icon: '✉️', value: '78%', label: 'Taux de réponse' },
+    { icon: '⏰', value: '4-6 sem', label: 'Délai idéal' },
+    { icon: '🔮', value: '15 ans', label: 'Expérience' },
+  ],
+  eeat: { colorScheme: 'purple', method: 'Guidance voyance pour la rédaction de lettre de reconquête' },
+  cta: { topic: 'reconquete', slug: 'lettre-a-son-ex' },
+  faq: [
+    {
+      q: 'Quand est-ce le bon moment pour envoyer une lettre à son ex ?',
+      a: 'Le timing est essentiel dans toute démarche de reconquête. La voyance recommande d\'attendre la fin du silence radio, soit 3 à 8 semaines après la rupture, avant d\'envoyer une lettre. Le tarot peut affiner ce timing en analysant l\'état émotionnel de votre ex et sa réceptivité actuelle. Envoyer une lettre trop tôt, sous le coup de l\'émotion, risque de produire l\'effet inverse. Les transits de Vénus et la position de Mercure dans votre thème natal peuvent également indiquer les périodes les plus favorables à la communication écrite.',
+    },
+    {
+      q: 'Faut-il écrire une lettre manuscrite ou un message numérique ?',
+      a: 'La lettre manuscrite possède une énergie vibratoire bien supérieure à un simple SMS ou email. En voyance, on considère que l\'écriture à la main transmet une partie de votre aura et de vos émotions authentiques. Votre ex ressentira la sincérité à travers votre écriture, les ratures, les hésitations. Cependant, si votre ex ne lit plus ses courriers ou si la distance rend l\'envoi postal compliqué, un long message réfléchi peut aussi fonctionner. L\'essentiel est que chaque mot soit pesé avec le cœur.',
+    },
+    {
+      q: 'Que faut-il éviter d\'écrire dans une lettre à son ex ?',
+      a: 'Les pièges à éviter sont nombreux dans une lettre de reconquête. Ne suppliez jamais, ne faites pas de chantage émotionnel, n\'accusez pas votre ex et ne mentionnez pas de nouvelle relation. Le tarot révèle que les lettres qui fonctionnent sont celles qui expriment une évolution personnelle sincère, pas celles qui tentent de culpabiliser. Évitez aussi les promesses irréalistes comme « je changerai tout pour toi ». Un voyant peut vous guider sur le ton juste à adopter selon la personnalité astrologique de votre ex.',
+    },
+    {
+      q: 'La voyance peut-elle m\'aider à trouver les bons mots pour mon ex ?',
+      a: 'Absolument. Un voyant utilise le tarot et la clairvoyance pour capter les émotions profondes de votre ex et identifier les mots qui résonneront avec ses sentiments actuels. En analysant votre synastrie amoureuse, le voyant comprend les dynamiques relationnelles en jeu et vous guide vers un discours authentique et percutant. La consultation révèle aussi les sujets à aborder et ceux à éviter selon les blessures émotionnelles encore vives. Cette guidance personnalisée augmente considérablement l\'impact de votre lettre.',
+    },
+  ],
+  related: [
+    { href: '/reconquete/reconquerir-son-ex', label: 'Reconquérir son Ex : Guide Complet' },
+    { href: '/reconquete/silence-radio-reconquete', label: 'Silence Radio : La Clé de la Reconquête' },
+    { href: '/reconquete/va-t-il-elle-revenir', label: 'Va-t-il/elle Revenir ?' },
+    { href: '/reconquete/ex-qui-revient', label: 'Mon Ex qui Revient' },
+    { href: '/rupture/oublier-son-ex', label: 'Comment Oublier son Ex' },
+    { href: '/sentiments/maime-t-il-elle', label: 'M\'aime-t-il / M\'aime-t-elle Encore ?' },
+  ],
+};
 
-  const authorSchema = getAuthorSchema();
+export const metadata = contentMeta(config);
 
+export default function LettreASonExPage() {
   return (
-    <main className="min-h-screen bg-gray-50">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(authorSchema) }}
-      />
-      <header className="bg-gradient-to-r from-purple-600 via-purple-700 to-indigo-600 text-white py-16 px-4">
-        <div className="max-w-4xl mx-auto">
-          <Link href="/reconquete" className="text-white/80 hover:text-white mb-4 inline-block">← Reconquête</Link>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">💜 Écrire une Lettre à son Ex : Guide Voyance</h1>
-          <p className="text-xl opacity-95 mb-6">Les mots justes pour toucher le cœur de votre ex selon la voyance</p>
-          <a href="#consultation" className="bg-white text-purple-600 px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition inline-block">Consultation Reconquête</a>
-        </div>
-      </header>
-
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <div className="bg-white rounded-xl shadow-md p-6 mb-8 grid grid-cols-4 gap-4 text-center">
-          <div><div className="text-3xl mb-1">⭐</div><div className="text-2xl font-bold text-purple-600">4.9/5</div><div className="text-sm text-gray-600">312 avis</div></div>
-          <div><div className="text-3xl mb-1">✉️</div><div className="text-2xl font-bold text-purple-600">78%</div><div className="text-sm text-gray-600">Taux de réponse</div></div>
-          <div><div className="text-3xl mb-1">⏰</div><div className="text-2xl font-bold text-purple-600">4-6 sem</div><div className="text-sm text-gray-600">Délai idéal</div></div>
-          <div><div className="text-3xl mb-1">🔮</div><div className="text-2xl font-bold text-purple-600">15 ans</div><div className="text-sm text-gray-600">Expérience</div></div>
-        </div>
-
-        <EEATSignal
-          colorScheme="purple"
-          method="Guidance voyance pour la rédaction de lettre de reconquête"
-        />
+    <ContentPage config={config}>
 
         <article className="bg-purple-50 border-l-4 border-purple-500 rounded-xl shadow-md p-8 mb-8">
           <p className="text-lg leading-relaxed mb-4">
@@ -219,43 +197,6 @@ export default function LettreASonExPage() {
           </div>
         </section>
 
-        <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">❓ Questions Fréquentes</h2>
-          <p className="text-lg font-semibold text-gray-800 mb-4">Retrouvez les réponses aux questions les plus posées sur la lettre à son ex : timing idéal, format, erreurs à éviter et guidance voyance.</p>
-          <div className="space-y-6">
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Quand est-ce le bon moment pour envoyer une lettre à son ex ?</h3>
-              <p className="text-gray-700 leading-relaxed">Le timing est essentiel dans toute démarche de <strong>reconquête</strong>. La <strong>voyance</strong> recommande d'attendre la fin du <strong>silence radio</strong>, soit 3 à 8 semaines après la rupture, avant d'envoyer une lettre. Le <strong>tarot</strong> peut affiner ce timing en analysant l'état émotionnel de votre ex et sa réceptivité actuelle. Envoyer une lettre trop tôt, sous le coup de l'émotion, risque de produire l'effet inverse. Les <strong>transits de Vénus</strong> et la position de <strong>Mercure</strong> dans votre thème natal peuvent également indiquer les périodes les plus favorables à la communication écrite.</p>
-            </div>
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Faut-il écrire une lettre manuscrite ou un message numérique ?</h3>
-              <p className="text-gray-700 leading-relaxed">La <strong>lettre manuscrite</strong> possède une énergie vibratoire bien supérieure à un simple SMS ou email. En <strong>voyance</strong>, on considère que l'écriture à la main transmet une partie de votre <strong>aura</strong> et de vos émotions authentiques. Votre <strong>ex</strong> ressentira la sincérité à travers votre écriture, les ratures, les hésitations. Cependant, si votre ex ne lit plus ses courriers ou si la distance rend l'envoi postal compliqué, un long message réfléchi peut aussi fonctionner. L'essentiel est que chaque mot soit pesé avec le cœur et reflète une <strong>intention sincère</strong> de reconnexion.</p>
-            </div>
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Que faut-il éviter d'écrire dans une lettre à son ex ?</h3>
-              <p className="text-gray-700 leading-relaxed">Les pièges à éviter sont nombreux dans une <strong>lettre de reconquête</strong>. Ne suppliez jamais, ne faites pas de chantage émotionnel, n'accusez pas votre <strong>ex</strong> et ne mentionnez pas de nouvelle relation. Le <strong>tarot</strong> révèle que les lettres qui fonctionnent sont celles qui expriment une <strong>évolution personnelle</strong> sincère, pas celles qui tentent de culpabiliser. Évitez aussi les promesses irréalistes. Un <strong>voyant</strong> peut vous guider sur le ton juste à adopter selon la personnalité astrologique de votre ex, pour que chaque ligne serve votre <strong>reconquête amoureuse</strong>.</p>
-            </div>
-            <div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">La voyance peut-elle m'aider à trouver les bons mots pour mon ex ?</h3>
-              <p className="text-gray-700 leading-relaxed">Absolument. Un <strong>voyant</strong> utilise le <strong>tarot</strong> et la <strong>clairvoyance</strong> pour capter les émotions profondes de votre ex et identifier les mots qui résonneront avec ses <strong>sentiments</strong> actuels. En analysant votre <strong>synastrie amoureuse</strong>, le voyant comprend les dynamiques relationnelles en jeu et vous guide vers un discours authentique et percutant. Découvrez aussi comment <Link href="/reconquete/va-t-il-elle-revenir" className="text-purple-600 hover:text-purple-800 underline font-medium">savoir si votre ex va revenir</Link> pour compléter cette approche par une vision globale de votre avenir amoureux.</p>
-            </div>
-          </div>
-        </section>
-
-        <div className="bg-gray-100 rounded-xl p-6 mb-8">
-          <h3 className="font-bold text-lg mb-4 text-gray-900">📚 Articles Connexes</h3>
-          <div className="space-y-2">
-            <Link href="/reconquete/reconquerir-son-ex" className="block text-purple-600 hover:text-purple-800 font-medium">→ Reconquérir son Ex : Guide Complet</Link>
-            <Link href="/reconquete/silence-radio-reconquete" className="block text-purple-600 hover:text-purple-800 font-medium">→ Silence Radio : La Clé de la Reconquête</Link>
-            <Link href="/reconquete/va-t-il-elle-revenir" className="block text-purple-600 hover:text-purple-800 font-medium">→ Va-t-il/elle Revenir ?</Link>
-            <Link href="/reconquete/ex-qui-revient" className="block text-purple-600 hover:text-purple-800 font-medium">→ Mon Ex qui Revient</Link>
-            <Link href="/rupture/oublier-son-ex" className="block text-purple-600 hover:text-purple-800 font-medium">→ Comment Oublier son Ex</Link>
-            <Link href="/sentiments/maime-t-il-elle" className="block text-purple-600 hover:text-purple-800 font-medium">→ M'aime-t-il / M'aime-t-elle Encore ?</Link>
-          </div>
-        </div>
-
-        <VoyantFinalCTA topic="reconquete" source="lettre-a-son-ex-final" />
-      </div>
-    </main>
+      </ContentPage>
   );
 }

@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   description:
     'A grounded look at what twin flame signs actually mean, plus how to get a personalized reading about your specific connection for $1.',
   alternates: {
-    canonical: 'https://www.lovepsychicguide.com/twin-flame-signs',
+    canonical: 'https://www.lovepsychicguide.com/twin-flame-signs/',
   },
 };
 
@@ -38,7 +38,7 @@ export default function TwinFlameSignsPage() {
             Honest read · 5 min
           </p>
           <h1 className="text-3xl md:text-4xl font-extrabold text-gray-900 leading-tight mb-5">
-            Twin flame signs — and how to know if it&apos;s real or
+            Twin flame signs, and how to know if it&apos;s real or
             wishful thinking.
           </h1>
           <p className="text-lg text-gray-700 leading-relaxed">
@@ -57,7 +57,7 @@ export default function TwinFlameSignsPage() {
             summary={[
               'Real twin flame dynamics share specific markers: disorienting recognition, runner-chaser pattern, intensity that outruns either person\'s readiness.',
               'Several look-alikes get misread as twin flame: anxious attachment activation, trauma bonding, limerent crushes you haven\'t actually acted on. The distinction matters.',
-              'The signs in any article are population-level. The actual answer about YOUR specific connection requires a real intuitive read — which a love psychic can do in 5 minutes.',
+              'The signs in any article are population-level. The actual answer about YOUR specific connection requires a real intuitive read, which a love psychic can do in 5 minutes.',
             ]}
             ctaPrompt="Want clarity about your specific connection?"
             cta={
@@ -66,7 +66,7 @@ export default function TwinFlameSignsPage() {
                 placement="topic_twin_flame_tldr"
                 className="inline-flex items-center gap-2 bg-purple-600 hover:bg-purple-700 text-white text-sm font-semibold px-4 py-2.5 rounded-lg transition-colors"
               >
-                Ask a real psychic — 5 min for $1 →
+                Ask a real psychic, 5 min for $1 →
               </AffiliateCTA>
             }
             ctaFootnote="New users: 5 minutes for $1 with any new advisor on Keen · 18+"
@@ -88,7 +88,7 @@ export default function TwinFlameSignsPage() {
             The metaphysical claims are unprovable in the strict sense.
             What is observable is that some people have experiences
             with another person that don&apos;t map onto the standard
-            models of attraction, attachment, or compatibility — and
+            models of attraction, attachment, or compatibility, and
             those experiences are consistent enough across reports that
             they&apos;re worth taking seriously.
           </p>
@@ -108,7 +108,7 @@ export default function TwinFlameSignsPage() {
               person becomes overwhelmed and pulls away. The other
               pursues. After separation, the dynamic reverses. This
               pattern, when present, is one of the more distinctive
-              markers — it doesn&apos;t describe most relationships.
+              markers, it doesn&apos;t describe most relationships.
             </li>
             <li>
               <strong>
@@ -126,7 +126,7 @@ export default function TwinFlameSignsPage() {
           <ul>
             <li>
               <strong>Anxious-avoidant attachment activation.</strong>{' '}
-              The relationship feels intense and unresolvable — exactly
+              The relationship feels intense and unresolvable, exactly
               what twin flame is supposed to feel like. The difference:
               standard attachment dynamics soften with secure-attachment
               work; twin flame dynamics don&apos;t.
@@ -141,8 +141,7 @@ export default function TwinFlameSignsPage() {
             <li>
               <strong>A limerent crush you haven&apos;t acted on.</strong>{' '}
               Someone you don&apos;t actually know well, who lives
-              mostly in your head, will check most twin flame boxes —
-              because you&apos;re writing both halves of the dynamic.
+              mostly in your head, will check most twin flame boxes,               because you&apos;re writing both halves of the dynamic.
             </li>
           </ul>
 
@@ -165,7 +164,7 @@ export default function TwinFlameSignsPage() {
               <>
                 Twin flame specialists on Keen do thousands of these
                 readings. They can read the energy of your specific
-                connection in a way no checklist can — including
+                connection in a way no checklist can, including
                 whether the runner-chaser dynamic you&apos;re feeling
                 is the real thing. New users get 5 minutes for $1.
               </>
@@ -192,7 +191,7 @@ export default function TwinFlameSignsPage() {
               <strong>Don&apos;t take spiritual literalism too far.</strong>{' '}
               The internet&apos;s twin flame discourse includes a lot
               of elaborate predictions. Treat those frameworks gently
-              — use what helps, drop what doesn&apos;t.
+, use what helps, drop what doesn&apos;t.
             </li>
           </ul>
 

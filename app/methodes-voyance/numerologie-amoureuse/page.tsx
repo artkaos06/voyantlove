@@ -1,124 +1,84 @@
-import type { Metadata } from 'next';
 import Link from 'next/link';
-import { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getAuthorSchema } from '@/lib/schema';
-import { LIFE_PATH_MEANINGS, EXPRESSION_MEANINGS, INTIMATE_MEANINGS } from '@/lib/numerology';
-import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
-import VoyantFinalCTA from '@/components/VoyantFinalCTA';
+import { LIFE_PATH_MEANINGS, EXPRESSION_MEANINGS, INTIMATE_MEANINGS } from '@/lib/numerology';
 import NumerologyCalculator from '@/components/NumerologyCalculator';
 import NumerologyCompatibilityCalculator from '@/components/NumerologyCompatibilityCalculator';
+import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
-export const metadata: Metadata = {
+const config: ContentPageConfig = {
   title: 'Numérologie Amoureuse : Compatibilité',
   description: 'Numérologie amoureuse : chemin de vie, nombre d\'expression, nombre intime et compatibilité de couple. Calculez vos chiffres et leur sens en amour.',
+  url: 'https://www.voyantlove.fr/methodes-voyance/numerologie-amoureuse/',
   keywords: ['numérologie amoureuse', 'numérologie couple', 'chemin de vie amour', 'compatibilité numérologie', 'nombre d\'expression amour', 'nombre intime numérologie', 'compatibilité par date de naissance'],
-  alternates: { canonical: 'https://www.voyantlove.fr/methodes-voyance/numerologie-amoureuse/' },
-};
-
-export default function NumerologieAmourPage() {
-  const articleSchema = getArticleSchema({
-    title: 'Numérologie Amoureuse : Compatibilité',
-    description: 'Numérologie amoureuse : chemin de vie, nombre d\'expression, nombre intime et compatibilité de couple. Calculez vos chiffres et leur sens en amour.',
-    url: 'https://www.voyantlove.fr/methodes-voyance/numerologie-amoureuse/',
-    datePublished: '2026-03-27',
-    dateModified: '2026-08-07',
-    keywords: ['numérologie amoureuse', 'numérologie couple', 'chemin de vie amour', 'compatibilité numérologie', 'nombre d\'expression amour', 'nombre intime numérologie'],
-  });
-
-  const breadcrumbSchema = getBreadcrumbSchema([
+  datePublished: '2026-03-27',
+  dateModified: '2026-08-07',
+  breadcrumb: [
     { name: 'Accueil', url: 'https://www.voyantlove.fr' },
     { name: 'Méthodes de Voyance', url: 'https://www.voyantlove.fr/methodes-voyance/' },
     { name: 'Numérologie Amoureuse', url: 'https://www.voyantlove.fr/methodes-voyance/numerologie-amoureuse/' },
-  ]);
+  ],
+  header: {
+    emoji: '🔢',
+    h1: 'Numérologie Amoureuse',
+    subtitle: 'Compatibilité et Destin par les Chiffres',
+    gradient: 'from-amber-600 via-orange-600 to-red-600',
+    backLink: { href: '/methodes-voyance', label: 'Retour aux Méthodes de Voyance' },
+    anchors: [
+      { href: '#calculateur', label: 'Calculer mes Nombres', primary: true },
+      { href: '#compatibilite', label: 'Compatibilité Numérique' },
+    ],
+  },
+  accentText: 'text-orange-600',
+  stats: [
+    { icon: '🔢', value: '15 ans', label: 'Expertise numérologie' },
+    { icon: '💛', value: '2 800+', label: 'Consultations réalisées' },
+    { icon: '✨', value: '9 Chemins', label: 'Profils amoureux' },
+    { icon: '⭐', value: '4.8/5', label: 'Satisfaction clients' },
+  ],
+  eeat: { colorScheme: 'orange', method: 'Numérologie & Amour, Chemin de vie, compatibilité et timing par les chiffres' },
+  cta: { topic: 'methodes-voyance', slug: 'numerologie-amoureuse' },
+  faq: [
+    {
+      q: 'Comment calculer son chemin de vie en numérologie ?',
+      a: 'Le chemin de vie se calcule en additionnant tous les chiffres de votre date de naissance jusqu\'à obtenir un chiffre unique (sauf 11, 22 et 33, les nombres maîtres). Exemple : pour le 15/07/1988, additionnez 1+5+0+7+1+9+8+8 = 39, puis 3+9 = 12, puis 1+2 = 3. Votre chemin de vie est donc le 3. Ce chiffre révèle votre mission de vie, vos forces naturelles et vos défis karmiques en amour comme dans tous les domaines. Il est le fondement de toute analyse numérologique personnalisée.',
+    },
+    {
+      q: 'Comment calculer son nombre d\'expression en numérologie amoureuse ?',
+      a: 'Le nombre d\'expression se calcule en convertissant chaque lettre de votre nom et prénom complets en chiffre (méthode pythagoricienne : A/J/S=1, B/K/T=2, C/L/U=3...), puis en additionnant le tout jusqu\'à un chiffre unique. Exemple : pour "Marie Dupont", la somme des lettres donne 55, puis 5+5=10, puis 1+0=1. Contrairement au chemin de vie qui révèle votre mission, le nombre d\'expression montre comment vous vous comportez concrètement en amour : votre façon d\'exprimer vos sentiments et d\'agir dans la relation.',
+    },
+    {
+      q: 'Qu\'est-ce que le nombre intime en numérologie amoureuse ?',
+      a: 'Le nombre intime, aussi appelé nombre de l\'âme, se calcule en ne retenant que les voyelles de votre nom et prénom complets, converties puis réduites à un chiffre unique. Il révèle vos besoins émotionnels les plus profonds en amour, ceux que vous ne montrez pas toujours, même à votre partenaire, comme le besoin de sécurité, de liberté ou de reconnaissance. Une analyse numérologique amoureuse complète croise systématiquement le chemin de vie, le nombre d\'expression et le nombre intime pour une lecture fidèle de votre profil sentimental.',
+    },
+    {
+      q: 'Quels chemins de vie sont les plus compatibles en amour ?',
+      a: 'La numérologie ne classe pas une association comme garantie de réussite. Elle croise les besoins symboliques de chaque chemin : par exemple, le 2 et le 6 partagent une orientation vers le lien et le foyer, tandis que le 1 et le 5 valorisent davantage l\'initiative et la liberté. Le calculateur présente les deux profils côte à côte, y compris les nombres maîtres 11, 22 et 33, afin de faire ressortir les complémentarités et les écarts à discuter dans le couple.',
+    },
+    {
+      q: 'La numérologie peut-elle prédire une rencontre amoureuse ?',
+      a: 'Oui, via le calcul des années personnelles. Une année personnelle 2 (cycle d\'amour et de partenariat) ou 6 (cycle des engagements et de la famille) sont les plus favorables aux rencontres amoureuses significatives. L\'année personnelle se calcule en additionnant votre jour et mois de naissance à l\'année civile en cours. Par exemple, pour une personne née le 15 juillet : 1+5+0+7+2+0+2+6 = 23, puis 2+3 = 5. Cette personne est en année personnelle 5 en 2026, favorable aux changements et nouvelles aventures.',
+    },
+    {
+      q: 'Que signifie le nombre 11 en amour selon la numérologie ?',
+      a: 'Le nombre 11, premier des nombres maîtres, est le chiffre de l\'intuition supérieure et de la connexion spirituelle en amour. Les personnes avec un chemin de vie 11 vivent l\'amour avec une intensité et une sensibilité hors du commun. Elles cherchent une union qui transcende le matériel pour toucher l\'âme. Leur plus grand défi est de ne pas idéaliser leur partenaire au point d\'en être déçu. En amour, le 11 attire des âmes évoluées et des connexions profondes, parfois des flammes jumelles ou des liens karmiques forts qui transforment profondément les deux partenaires.',
+    },
+    {
+      q: 'Comment calculer la compatibilité amoureuse par date de naissance ?',
+      a: 'La compatibilité par date de naissance en numérologie se calcule en réduisant la date complète de chaque partenaire à un chemin de vie, puis en croisant les deux profils symboliques obtenus. Le calculateur décrit ce que chacun apporte à la relation et propose un repère de dialogue sans score ni verdict automatique. Cette lecture reste un premier niveau d\'analyse : elle s\'affine avec le nombre d\'expression et le nombre intime de chaque partenaire, calculés à partir du nom complet.',
+    },
+  ],
+};
 
-  const authorSchema = getAuthorSchema();
+export const metadata = contentMeta(config);
 
-  const faqSchema = getFAQSchema([
-    {
-      question: 'Comment calculer son chemin de vie en numérologie ?',
-      answer: 'Le chemin de vie se calcule en additionnant tous les chiffres de votre date de naissance jusqu\'à obtenir un chiffre unique (sauf 11, 22 et 33, les nombres maîtres). Exemple : pour le 15/07/1988, additionnez 1+5+0+7+1+9+8+8 = 39, puis 3+9 = 12, puis 1+2 = 3. Votre chemin de vie est donc le 3. Ce chiffre révèle votre mission de vie, vos forces naturelles et vos défis karmiques en amour comme dans tous les domaines. Il est le fondement de toute analyse numérologique personnalisée.',
-    },
-    {
-      question: 'Comment calculer son nombre d\'expression en numérologie amoureuse ?',
-      answer: 'Le nombre d\'expression se calcule en convertissant chaque lettre de votre nom et prénom complets en chiffre (méthode pythagoricienne : A/J/S=1, B/K/T=2, C/L/U=3...), puis en additionnant le tout jusqu\'à un chiffre unique. Exemple : pour "Marie Dupont", la somme des lettres donne 55, puis 5+5=10, puis 1+0=1. Contrairement au chemin de vie qui révèle votre mission, le nombre d\'expression montre comment vous vous comportez concrètement en amour : votre façon d\'exprimer vos sentiments et d\'agir dans la relation.',
-    },
-    {
-      question: 'Qu\'est-ce que le nombre intime en numérologie amoureuse ?',
-      answer: 'Le nombre intime, aussi appelé nombre de l\'âme, se calcule en ne retenant que les voyelles de votre nom et prénom complets, converties puis réduites à un chiffre unique. Il révèle vos besoins émotionnels les plus profonds en amour — ceux que vous ne montrez pas toujours, même à votre partenaire, comme le besoin de sécurité, de liberté ou de reconnaissance. Une analyse numérologique amoureuse complète croise systématiquement le chemin de vie, le nombre d\'expression et le nombre intime pour une lecture fidèle de votre profil sentimental.',
-    },
-    {
-      question: 'Quels chemins de vie sont les plus compatibles en amour ?',
-      answer: 'La numérologie ne classe pas une association comme garantie de réussite. Elle croise les besoins symboliques de chaque chemin : par exemple, le 2 et le 6 partagent une orientation vers le lien et le foyer, tandis que le 1 et le 5 valorisent davantage l\'initiative et la liberté. Le calculateur présente les deux profils côte à côte, y compris les nombres maîtres 11, 22 et 33, afin de faire ressortir les complémentarités et les écarts à discuter dans le couple.',
-    },
-    {
-      question: 'La numérologie peut-elle prédire une rencontre amoureuse ?',
-      answer: 'Oui, via le calcul des années personnelles. Une année personnelle 2 (cycle d\'amour et de partenariat) ou 6 (cycle des engagements et de la famille) sont les plus favorables aux rencontres amoureuses significatives. L\'année personnelle se calcule en additionnant votre jour et mois de naissance à l\'année civile en cours. Par exemple, pour une personne née le 15 juillet : 1+5+0+7+2+0+2+6 = 23, puis 2+3 = 5. Cette personne est en année personnelle 5 en 2026, favorable aux changements et nouvelles aventures.',
-    },
-    {
-      question: 'Que signifie le nombre 11 en amour selon la numérologie ?',
-      answer: 'Le nombre 11, premier des nombres maîtres, est le chiffre de l\'intuition supérieure et de la connexion spirituelle en amour. Les personnes avec un chemin de vie 11 vivent l\'amour avec une intensité et une sensibilité hors du commun. Elles cherchent une union qui transcende le matériel pour toucher l\'âme. Leur plus grand défi est de ne pas idéaliser leur partenaire au point d\'en être déçu. En amour, le 11 attire des âmes évoluées et des connexions profondes, parfois des flammes jumelles ou des liens karmiques forts qui transforment profondément les deux partenaires.',
-    },
-    {
-      question: 'Comment calculer la compatibilité amoureuse par date de naissance ?',
-      answer: 'La compatibilité par date de naissance en numérologie se calcule en réduisant la date complète de chaque partenaire à un chemin de vie, puis en croisant les deux profils symboliques obtenus. Le calculateur décrit ce que chacun apporte à la relation et propose un repère de dialogue sans score ni verdict automatique. Cette lecture reste un premier niveau d\'analyse : elle s\'affine avec le nombre d\'expression et le nombre intime de chaque partenaire, calculés à partir du nom complet.',
-    },
-  ]);
-
+export default function NumerologieAmourPage() {
   return (
-    <main className="min-h-screen bg-gray-50">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(authorSchema) }}
-      />
-
-      {/* Header */}
-      <header className="bg-gradient-to-r from-amber-600 via-orange-600 to-red-600 text-white py-16 px-4">
-        <div className="max-w-4xl mx-auto">
-          <Link href="/methodes-voyance" className="text-white/80 hover:text-white mb-4 inline-block">&larr; Retour aux Méthodes de Voyance</Link>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">&#x1F522; Numérologie Amoureuse</h1>
-          <p className="text-xl opacity-95 mb-6">Compatibilité et Destin par les Chiffres</p>
-          <div className="flex gap-4 flex-wrap">
-            <a href="#calculateur" className="bg-white text-orange-600 px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition">Calculer mes Nombres</a>
-            <a href="#compatibilite" className="border-2 border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-orange-600 transition">Compatibilité Numérique</a>
-          </div>
-        </div>
-      </header>
-
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        {/* Interactive Calculator — first thing visible, answers the "calculate my number" intent immediately */}
+    <ContentPage config={config}>
         <section id="calculateur" className="mb-8">
           <NumerologyCalculator />
         </section>
 
-        {/* Stats Bar */}
-        <div className="bg-white rounded-xl shadow-md p-6 mb-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-          <div><div className="text-3xl mb-1">&#x1F522;</div><div className="text-2xl font-bold text-orange-600">15 ans</div><div className="text-sm text-gray-600">Expertise numérologie</div></div>
-          <div><div className="text-3xl mb-1">&#x1F49B;</div><div className="text-2xl font-bold text-orange-600">2&nbsp;800+</div><div className="text-sm text-gray-600">Consultations réalisées</div></div>
-          <div><div className="text-3xl mb-1">&#x2728;</div><div className="text-2xl font-bold text-orange-600">9 Chemins</div><div className="text-sm text-gray-600">Profils amoureux</div></div>
-          <div><div className="text-3xl mb-1">&#x2B50;</div><div className="text-2xl font-bold text-orange-600">4.8/5</div><div className="text-sm text-gray-600">Satisfaction clients</div></div>
-        </div>
-
-        {/* E-E-A-T Signal */}
-        <EEATSignal
-          colorScheme="orange"
-          method="Numérologie &amp; Amour — Chemin de vie, compatibilité et timing par les chiffres"
-          lastUpdated="7 août 2026"
-        />
-
-        {/* Answer Capsule */}
         <article className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-orange-500">
           <h2 className="text-xl font-bold text-gray-900 mb-4">Ce que la numérologie révèle sur votre vie amoureuse</h2>
           <p className="text-lg leading-relaxed mb-4">
@@ -152,7 +112,7 @@ export default function NumerologieAmourPage() {
             <div className="bg-white rounded-lg p-5">
               <h3 className="font-bold text-orange-700 text-lg mb-3">&#x1F4C5; Pourquoi la Date de Naissance ?</h3>
               <p className="text-gray-700">
-                Votre <strong>date de naissance</strong> est l&rsquo;empreinte numérique de votre âme : elle encode le chemin que vous avez choisi de parcourir avant de vous incarner. Ce n&rsquo;est pas un hasard si vous êtes né(e) ce jour précis. La numérologie décode cette empreinte pour révéler votre mission de vie, vos forces, vos faiblesses, et — en amour — le type de relation qui vous permettra de vous épanouir pleinement et d&rsquo;accomplir votre destinée.
+                Votre <strong>date de naissance</strong> est l&rsquo;empreinte numérique de votre âme : elle encode le chemin que vous avez choisi de parcourir avant de vous incarner. Ce n&rsquo;est pas un hasard si vous êtes né(e) ce jour précis. La numérologie décode cette empreinte pour révéler votre mission de vie, vos forces, vos faiblesses, et, en amour, le type de relation qui vous permettra de vous épanouir pleinement et d&rsquo;accomplir votre destinée.
               </p>
             </div>
           </div>
@@ -193,7 +153,7 @@ export default function NumerologieAmourPage() {
           <h2 className="text-3xl font-bold mb-6 text-orange-600">&#x1F4DB; Nombre d&rsquo;Expression et Nombre Intime : l&rsquo;Analyse par le Prénom</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Au-delà du chemin de vie (date de naissance), deux autres nombres calculés à partir de votre nom complet affinent votre profil amoureux : le nombre d&rsquo;expression et le nombre intime.</p>
           <p className="text-gray-700 mb-6">
-            Le chemin de vie révèle votre mission de vie, mais il ne raconte qu&rsquo;une partie de l&rsquo;histoire. Le <strong>nombre d&rsquo;expression</strong> (calculé à partir de toutes les lettres de votre nom complet) montre comment vous vous présentez et agissez en amour. Le <strong>nombre intime</strong>, ou nombre de l&rsquo;âme (calculé à partir des seules voyelles), révèle vos besoins émotionnels les plus profonds — ceux que vous ne montrez pas toujours, même à votre partenaire. Une analyse complète en <strong>numérologie amoureuse</strong> croise systématiquement ces trois nombres : chemin de vie, expression, et nombre intime.
+            Le chemin de vie révèle votre mission de vie, mais il ne raconte qu&rsquo;une partie de l&rsquo;histoire. Le <strong>nombre d&rsquo;expression</strong> (calculé à partir de toutes les lettres de votre nom complet) montre comment vous vous présentez et agissez en amour. Le <strong>nombre intime</strong>, ou nombre de l&rsquo;âme (calculé à partir des seules voyelles), révèle vos besoins émotionnels les plus profonds, ceux que vous ne montrez pas toujours, même à votre partenaire. Une analyse complète en <strong>numérologie amoureuse</strong> croise systématiquement ces trois nombres : chemin de vie, expression, et nombre intime.
           </p>
 
           <div className="bg-orange-50 border-2 border-orange-300 rounded-lg p-6 mb-6">
@@ -260,7 +220,7 @@ export default function NumerologieAmourPage() {
           </div>
 
           <div className="mt-6 bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded">
-            <p className="text-gray-700"><strong>&#x1F4A1; Pourquoi croiser les trois nombres :</strong> Un chemin de vie 6 (nourricier) avec un nombre intime 5 (besoin de liberté) révèle une tension intérieure entre le désir de foyer et le besoin d&rsquo;indépendance — une nuance invisible si l&rsquo;on ne regarde que la date de naissance. C&rsquo;est cette lecture combinée qui distingue une <strong>analyse numérologique complète</strong> d&rsquo;un simple calcul de chemin de vie.</p>
+            <p className="text-gray-700"><strong>&#x1F4A1; Pourquoi croiser les trois nombres :</strong> Un chemin de vie 6 (nourricier) avec un nombre intime 5 (besoin de liberté) révèle une tension intérieure entre le désir de foyer et le besoin d&rsquo;indépendance, une nuance invisible si l&rsquo;on ne regarde que la date de naissance. C&rsquo;est cette lecture combinée qui distingue une <strong>analyse numérologique complète</strong> d&rsquo;un simple calcul de chemin de vie.</p>
           </div>
         </section>
 
@@ -269,7 +229,7 @@ export default function NumerologieAmourPage() {
           <h2 className="text-3xl font-bold mb-6 text-gray-900">&#x2764;&#xFE0F; Compatibilité Numérologique entre Partenaires</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">La compatibilité numérique analyse la résonance entre deux chemins de vie pour identifier les affinités naturelles et les zones de friction potentielles dans la relation amoureuse.</p>
           <p className="text-gray-700 mb-6">
-            La <strong>compatibilité numérique</strong> ne prédit pas le succès ou l&rsquo;échec d&rsquo;une relation — elle révèle les dynamiques naturelles qui s&rsquo;installeront entre deux personnes. Certains couples numériquement &ldquo;difficiles&rdquo; bâtissent des relations extraordinaires grâce à la conscience de leurs différences. Pour approfondir votre analyse, consultez notre guide sur la <Link href="/sentiments/compatibilite-amoureuse" className="text-orange-600 hover:text-orange-800 underline font-medium">compatibilité amoureuse</Link>.
+            La <strong>compatibilité numérique</strong> ne prédit pas le succès ou l&rsquo;échec d&rsquo;une relation, elle révèle les dynamiques naturelles qui s&rsquo;installeront entre deux personnes. Certains couples numériquement &ldquo;difficiles&rdquo; bâtissent des relations extraordinaires grâce à la conscience de leurs différences. Pour approfondir votre analyse, consultez notre guide sur la <Link href="/sentiments/compatibilite-amoureuse" className="text-orange-600 hover:text-orange-800 underline font-medium">compatibilité amoureuse</Link>.
           </p>
 
           <div className="mb-6">
@@ -278,7 +238,7 @@ export default function NumerologieAmourPage() {
 
           <h3 className="font-bold text-gray-900 text-xl mb-4">Compatibilité par Date de Naissance : Comment Ça Marche</h3>
           <p className="text-gray-700 mb-6">
-            La <strong>compatibilité par date de naissance</strong> part d&rsquo;un principe simple : chaque date de naissance se réduit à un <strong>chemin de vie</strong> unique (voir la méthode de calcul plus haut sur cette page), et c&rsquo;est la résonance entre les deux chemins de vie qui indique la nature de la dynamique amoureuse — complémentaire, stimulante ou exigeante en conscience. Cette approche se distingue de la <Link href="/sentiments/compatibilite-amoureuse" className="text-orange-600 hover:text-orange-800 underline font-medium">compatibilité par signe astrologique</Link>, qui se base sur la position du Soleil plutôt que sur un calcul numérique dérivé de la date complète.
+            La <strong>compatibilité par date de naissance</strong> part d&rsquo;un principe simple : chaque date de naissance se réduit à un <strong>chemin de vie</strong> unique (voir la méthode de calcul plus haut sur cette page), et c&rsquo;est la résonance entre les deux chemins de vie qui indique la nature de la dynamique amoureuse, complémentaire, stimulante ou exigeante en conscience. Cette approche se distingue de la <Link href="/sentiments/compatibilite-amoureuse" className="text-orange-600 hover:text-orange-800 underline font-medium">compatibilité par signe astrologique</Link>, qui se base sur la position du Soleil plutôt que sur un calcul numérique dérivé de la date complète.
           </p>
 
           <p className="text-sm text-gray-600 mb-4">Les associations ci-dessous sont des exemples de lecture, pas une matrice exhaustive ni une garantie sur l&rsquo;avenir du couple.</p>
@@ -339,7 +299,7 @@ export default function NumerologieAmourPage() {
 
           <div className="space-y-5">
             <div className="bg-indigo-50 border-l-4 border-indigo-500 p-6 rounded-lg">
-              <h3 className="font-bold text-xl text-indigo-700 mb-3">&#x1F52E; Le 11 — L&rsquo;Amour Intuitif et Spirituel</h3>
+              <h3 className="font-bold text-xl text-indigo-700 mb-3">&#x1F52E; Le 11, L&rsquo;Amour Intuitif et Spirituel</h3>
               <p className="text-gray-700 mb-2">
                 Le <strong>chemin de vie 11</strong> est celui de l&rsquo;intuition supérieure et de la sensibilité extrême. En amour, ces natifs ressentent les émotions à une profondeur que la plupart des gens n&rsquo;imaginent pas. Ils cherchent une âme complémentaire capables de les comprendre sans mots, une connexion qui touche l&rsquo;âme et pas seulement le corps. Leur plus grand défi : la tendance à idéaliser le partenaire au point d&rsquo;en être cruellement déçu quand la réalité reprend ses droits.
               </p>
@@ -349,7 +309,7 @@ export default function NumerologieAmourPage() {
             </div>
 
             <div className="bg-amber-50 border-l-4 border-amber-500 p-6 rounded-lg">
-              <h3 className="font-bold text-xl text-amber-700 mb-3">&#x1F3D7;&#xFE0F; Le 22 — L&rsquo;Amour Bâtisseur</h3>
+              <h3 className="font-bold text-xl text-amber-700 mb-3">&#x1F3D7;&#xFE0F; Le 22, L&rsquo;Amour Bâtisseur</h3>
               <p className="text-gray-700 mb-2">
                 Le <strong>chemin de vie 22</strong> est celui du maître bâtisseur. En amour, ces personnes veulent construire quelque chose de grand et durable avec leur partenaire : une famille, une entreprise, une mission commune. Ils cherchent un complice de vie autant qu&rsquo;un amoureux. Leur relation doit avoir un sens qui dépasse leur couple pour toucher le collectif ou laisser une trace dans le monde.
               </p>
@@ -359,7 +319,7 @@ export default function NumerologieAmourPage() {
             </div>
 
             <div className="bg-rose-50 border-l-4 border-rose-500 p-6 rounded-lg">
-              <h3 className="font-bold text-xl text-rose-700 mb-3">&#x1F496; Le 33 — L&rsquo;Amour Universel</h3>
+              <h3 className="font-bold text-xl text-rose-700 mb-3">&#x1F496; Le 33, L&rsquo;Amour Universel</h3>
               <p className="text-gray-700 mb-2">
                 Le <strong>chemin de vie 33</strong>, le plus rare, est celui du maître enseignant et de l&rsquo;amour universel. Ces personnes aiment avec une générosité et une compassion qui dépassent souvent le cadre du couple pour embrasser tous les êtres. Leur défi en amour est d&rsquo;apprendre à recevoir autant qu&rsquo;ils donnent, et à établir des limites saines sans perdre leur générosité naturelle.
               </p>
@@ -413,58 +373,6 @@ export default function NumerologieAmourPage() {
             </p>
           </div>
         </section>
-
-        {/* FAQ */}
-        <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold mb-8 text-gray-900">&#x2753; Questions Fréquentes sur la Numérologie Amoureuse</h2>
-          <div className="space-y-6">
-            <div className="border-b pb-6">
-              <h3 className="font-bold text-lg text-orange-700 mb-3">Comment calculer son chemin de vie en numérologie ?</h3>
-              <p className="text-gray-700 leading-relaxed">
-                Le <strong>chemin de vie</strong> se calcule en additionnant tous les chiffres de votre date de naissance jusqu&rsquo;à obtenir un chiffre unique (sauf 11, 22 et 33, les nombres maîtres). Exemple : pour le 15/07/1988, additionnez 1+5+0+7+1+9+8+8 = 39, puis 3+9 = 12, puis 1+2 = 3. Votre chemin de vie est donc le 3. Ce chiffre révèle votre mission de vie, vos forces naturelles et vos défis karmiques en amour comme dans tous les domaines. Il est le fondement de toute analyse numérologique personnalisée.
-              </p>
-            </div>
-            <div className="border-b pb-6">
-              <h3 className="font-bold text-lg text-orange-700 mb-3">Comment calculer son nombre d&rsquo;expression en numérologie amoureuse ?</h3>
-              <p className="text-gray-700 leading-relaxed">
-                Le <strong>nombre d&rsquo;expression</strong> se calcule en convertissant chaque lettre de votre nom et prénom complets en chiffre (méthode pythagoricienne : A/J/S=1, B/K/T=2, C/L/U=3...), puis en additionnant le tout jusqu&rsquo;à un chiffre unique. Exemple : pour &laquo;&nbsp;Marie Dupont&nbsp;&raquo;, la somme des lettres donne 55, puis 5+5=10, puis 1+0=1. Contrairement au chemin de vie qui révèle votre mission, le nombre d&rsquo;expression montre comment vous vous comportez concrètement en amour&nbsp;: votre façon d&rsquo;exprimer vos sentiments et d&rsquo;agir dans la relation.
-              </p>
-            </div>
-            <div className="border-b pb-6">
-              <h3 className="font-bold text-lg text-orange-700 mb-3">Qu&rsquo;est-ce que le nombre intime en numérologie amoureuse ?</h3>
-              <p className="text-gray-700 leading-relaxed">
-                Le <strong>nombre intime</strong>, aussi appelé nombre de l&rsquo;âme, se calcule en ne retenant que les voyelles de votre nom et prénom complets, converties puis réduites à un chiffre unique. Il révèle vos <strong>besoins émotionnels les plus profonds</strong> en amour — ceux que vous ne montrez pas toujours, même à votre partenaire, comme le besoin de sécurité, de liberté ou de reconnaissance. Une analyse numérologique amoureuse complète croise systématiquement le chemin de vie, le nombre d&rsquo;expression et le nombre intime.
-              </p>
-            </div>
-            <div className="border-b pb-6">
-              <h3 className="font-bold text-lg text-orange-700 mb-3">Quels chemins de vie sont les plus compatibles en amour ?</h3>
-              <p className="text-gray-700 leading-relaxed">
-                La numérologie ne classe pas une association comme garantie de réussite. Elle croise les besoins symboliques de chaque chemin&nbsp;: le <strong>2 et le 6</strong> partagent une orientation vers le lien et le foyer, tandis que le <strong>1 et le 5</strong> valorisent davantage l&rsquo;initiative et la liberté. Le calculateur présente les deux profils côte à côte, y compris les nombres maîtres 11, 22 et 33, afin de faire ressortir les complémentarités et les écarts à discuter dans le couple.
-              </p>
-            </div>
-            <div className="border-b pb-6">
-              <h3 className="font-bold text-lg text-orange-700 mb-3">La numérologie peut-elle prédire une rencontre amoureuse ?</h3>
-              <p className="text-gray-700 leading-relaxed">
-                Oui, via le calcul des <strong>années personnelles</strong>. Une année personnelle 2 (cycle d&rsquo;amour et de partenariat) ou 6 (cycle des engagements et de la famille) sont les plus favorables aux rencontres amoureuses significatives. L&rsquo;année personnelle se calcule en additionnant votre jour et mois de naissance à l&rsquo;année civile en cours. Par exemple, pour une personne née le 15 juillet : 1+5+0+7+2+0+2+6 = 23, puis 2+3 = 5. Cette personne est en <strong>année personnelle 5</strong> en 2026, favorable aux changements et nouvelles aventures amoureuses.
-              </p>
-            </div>
-            <div className="border-b pb-6">
-              <h3 className="font-bold text-lg text-orange-700 mb-3">Que signifie le nombre 11 en amour selon la numérologie ?</h3>
-              <p className="text-gray-700 leading-relaxed">
-                Le <strong>nombre 11</strong>, premier des nombres maîtres, est le chiffre de l&rsquo;intuition supérieure et de la connexion spirituelle en amour. Les personnes avec un chemin de vie 11 vivent l&rsquo;amour avec une intensité et une sensibilité hors du commun. Elles cherchent une union qui transcende le matériel pour toucher l&rsquo;âme. Leur plus grand défi est de ne pas idéaliser leur partenaire au point d&rsquo;en être déçu. En amour, le 11 attire des âmes évoluées et des connexions profondes, parfois des flammes jumelles ou des liens karmiques forts qui transforment profondément les deux partenaires.
-              </p>
-            </div>
-            <div>
-              <h3 className="font-bold text-lg text-orange-700 mb-3">Comment calculer la compatibilité amoureuse par date de naissance ?</h3>
-              <p className="text-gray-700 leading-relaxed">
-                La <strong>compatibilité par date de naissance</strong> se calcule en réduisant la date complète de chaque partenaire à un <strong>chemin de vie</strong>, puis en croisant les deux profils symboliques obtenus. Le calculateur décrit ce que chacun apporte à la relation et propose un repère de dialogue sans score ni verdict automatique. Cette lecture reste un premier niveau d&rsquo;analyse&nbsp;: elle s&rsquo;affine avec le <strong>nombre d&rsquo;expression</strong> et le <strong>nombre intime</strong> de chaque partenaire, calculés à partir du nom complet.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <VoyantFinalCTA topic="methodes-voyance" source="numerologie-amoureuse-final" />
-      </div>
-    </main>
+    </ContentPage>
   );
 }

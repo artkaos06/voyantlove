@@ -31,7 +31,7 @@ export default function VoyanceGratuiteAmourHubPage() {
   const faqSchema = getFAQSchema([
     {
       question: 'La voyance gratuite amour est-elle fiable ?',
-      answer: 'Les tirages gratuits en ligne utilisent un algorithme aléatoire qui simule le tirage des cartes — la symbolique reste authentique et peut offrir des pistes de réflexion pertinentes. Cependant, un tirage personnalisé par un voyant expérimenté sera toujours plus précis car il intègre votre énergie, votre situation unique et une interprétation contextuelle. Le gratuit est fiable comme introduction, le personnalisé apporte la profondeur.',
+      answer: 'Les tirages gratuits en ligne utilisent un algorithme aléatoire qui simule le tirage des cartes, la symbolique reste authentique et peut offrir des pistes de réflexion pertinentes. Cependant, un tirage personnalisé par un voyant expérimenté sera toujours plus précis car il intègre votre énergie, votre situation unique et une interprétation contextuelle. Le gratuit est fiable comme introduction, le personnalisé apporte la profondeur.',
     },
     {
       question: 'Combien de minutes gratuites sont offertes en consultation ?',
@@ -55,7 +55,7 @@ export default function VoyanceGratuiteAmourHubPage() {
     },
     {
       question: 'La voyance amoureuse gratuite par email existe-t-elle ?',
-      answer: 'Oui, certaines plateformes proposent une voyance amoureuse gratuite par email pour une première question, généralement sous forme de réponse standardisée ou semi-automatisée. C\'est une bonne option si vous préférez l\'écrit ou si vous avez besoin de temps pour formuler votre question. Les réponses arrivent en 24 à 72 heures. Pour une analyse vraiment personnalisée par email, comptez entre 10 et 25 € par question — le voyant rédige alors une réponse détaillée incluant le tirage, l\'interprétation et des conseils pratiques. La qualité de la voyance par email dépend principalement du temps que le voyant consacre à votre situation.',
+      answer: 'Oui, certaines plateformes proposent une voyance amoureuse gratuite par email pour une première question, généralement sous forme de réponse standardisée ou semi-automatisée. C\'est une bonne option si vous préférez l\'écrit ou si vous avez besoin de temps pour formuler votre question. Les réponses arrivent en 24 à 72 heures. Pour une analyse vraiment personnalisée par email, comptez entre 10 et 25 € par question, le voyant rédige alors une réponse détaillée incluant le tirage, l\'interprétation et des conseils pratiques. La qualité de la voyance par email dépend principalement du temps que le voyant consacre à votre situation.',
     },
     {
       question: 'La voyance gratuite peut-elle aider à récupérer un amour perdu ?',

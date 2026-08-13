@@ -1,4 +1,4 @@
-// Love-dream interpretation records — data layer for /reves-amour/[reve]/.
+// Love-dream interpretation records, data layer for /reves-amour/[reve]/.
 //
 // A dream-dictionary network (oniromancie amoureuse), built to the same
 // semantic-SEO standard as the tarot and compatibility networks: answer
@@ -59,7 +59,7 @@ export function getDreamHubCards() {
   }));
 }
 
-/** Quality gate — a record below these thresholds must not produce a page. */
+/** Quality gate, a record below these thresholds must not produce a page. */
 export function validateDreamRecord(d: DreamEntry): string[] {
   const issues: string[] = [];
   const answerWords = d.answerCapsule.trim().split(/\s+/u).filter(Boolean).length;
@@ -87,7 +87,7 @@ export const REVES_AMOUR: DreamEntry[] = [
     emoji: '💔',
     primaryQuery: 'Rêver que son partenaire nous trompe',
     answerCapsule:
-      'Rêver de tromperie, que ce soit d’être trompé ou de tromper, est l’un des rêves amoureux les plus troublants — et l’un des moins prédictifs. Dans l’immense majorité des cas, ce rêve ne dit rien d’une infidélité réelle : il met en scène une émotion intérieure, le plus souvent une peur de l’abandon, une insécurité dans le couple ou un manque de confiance en soi. Rêver que son partenaire nous trompe traduit souvent une crainte de ne pas être assez, ou une distance ressentie ces derniers temps. Rêver que l’on trompe l’autre renvoie fréquemment à une culpabilité, à un besoin non comblé ou à une part de soi négligée. La signification dépend du ressenti au réveil, jamais d’une grille figée. Une consultation de voyance amoureuse peut éclairer l’émotion que ce rêve met en lumière, sans jamais prétendre annoncer une trahison à venir. Elle invite surtout à nommer votre besoin de sécurité.',
+      'Rêver de tromperie, que ce soit d’être trompé ou de tromper, est l’un des rêves amoureux les plus troublants, et l’un des moins prédictifs. Dans l’immense majorité des cas, ce rêve ne dit rien d’une infidélité réelle : il met en scène une émotion intérieure, le plus souvent une peur de l’abandon, une insécurité dans le couple ou un manque de confiance en soi. Rêver que son partenaire nous trompe traduit souvent une crainte de ne pas être assez, ou une distance ressentie ces derniers temps. Rêver que l’on trompe l’autre renvoie fréquemment à une culpabilité, à un besoin non comblé ou à une part de soi négligée. La signification dépend du ressenti au réveil, jamais d’une grille figée. Une consultation de voyance amoureuse peut éclairer l’émotion que ce rêve met en lumière, sans jamais prétendre annoncer une trahison à venir. Elle invite surtout à nommer votre besoin de sécurité.',
     pourquoi:
       'Le rêve de tromperie surgit surtout dans les périodes de doute, de fatigue relationnelle ou d’insécurité personnelle. Le sommeil amplifie des micro-tensions que la vie éveillée minimise : une distance installée, un manque de réassurance, une jalousie latente ou une blessure de confiance ancienne. Le cerveau met en images la peur de perdre l’autre, non un fait constaté. C’est un signal émotionnel à écouter, pas une preuve à instruire.',
     interpretations: [
@@ -119,11 +119,11 @@ export const REVES_AMOUR: DreamEntry[] = [
       },
       {
         q: 'Pourquoi je rêve que je trompe mon partenaire alors que je ne le voudrais pas ?',
-        a: 'Rêver que l’on trompe l’autre renvoie rarement à un désir réel d’infidélité. Ce rêve exprime plus souvent une culpabilité, un besoin non comblé dans la relation, ou une part de vous — liberté, désir, projet personnel — laissée de côté. Il invite à regarder ce qui vous manque ou ce que vous négligez en vous, pas à douter de votre fidélité.',
+        a: 'Rêver que l’on trompe l’autre renvoie rarement à un désir réel d’infidélité. Ce rêve exprime plus souvent une culpabilité, un besoin non comblé dans la relation, ou une part de vous, liberté, désir, projet personnel, laissée de côté. Il invite à regarder ce qui vous manque ou ce que vous négligez en vous, pas à douter de votre fidélité.',
       },
       {
         q: 'Que faire après un rêve de tromperie qui me hante ?',
-        a: 'Commencez par ne pas le traiter comme une information sur l’autre. Observez le ressenti dominant au réveil — peur, culpabilité, colère — car c’est lui qui porte le message. Interrogez votre propre sécurité affective du moment et, si besoin, ouvrez un dialogue apaisé sur ce dont vous avez besoin. Un rêve récurrent signale une émotion insistante qu’il peut être utile d’éclairer en consultation.',
+        a: 'Commencez par ne pas le traiter comme une information sur l’autre. Observez le ressenti dominant au réveil, peur, culpabilité, colère, car c’est lui qui porte le message. Interrogez votre propre sécurité affective du moment et, si besoin, ouvrez un dialogue apaisé sur ce dont vous avez besoin. Un rêve récurrent signale une émotion insistante qu’il peut être utile d’éclairer en consultation.',
       },
     ],
   },
@@ -133,9 +133,9 @@ export const REVES_AMOUR: DreamEntry[] = [
     emoji: '💘',
     primaryQuery: 'Rêver de son crush ou de la personne qu’on aime en secret',
     answerCapsule:
-      'Rêver de son crush, cette personne qui nous attire sans que rien ne soit encore déclaré, est un rêve fréquent et intense. Contrairement à une croyance répandue, il ne signifie pas que l’autre pense à vous ou rêve de vous en retour : un rêve parle de votre monde intérieur, pas de celui d’une autre personne. Rêver de son crush traduit surtout l’intensité de votre désir, de votre attente ou de votre idéalisation. Le rêve donne un espace à une histoire qui n’existe pas encore, ou explore ce que cette personne représente pour vous — souvent une qualité ou un manque que vous projetez. Selon le scénario, il peut refléter de l’espoir, une peur du rejet ou un besoin de réponse. La signification dépend du ressenti au réveil. Une consultation de voyance amoureuse peut éclairer ce que cette attirance révèle de vos attentes, sans prétendre lire les pensées de votre crush.',
+      'Rêver de son crush, cette personne qui nous attire sans que rien ne soit encore déclaré, est un rêve fréquent et intense. Contrairement à une croyance répandue, il ne signifie pas que l’autre pense à vous ou rêve de vous en retour : un rêve parle de votre monde intérieur, pas de celui d’une autre personne. Rêver de son crush traduit surtout l’intensité de votre désir, de votre attente ou de votre idéalisation. Le rêve donne un espace à une histoire qui n’existe pas encore, ou explore ce que cette personne représente pour vous, souvent une qualité ou un manque que vous projetez. Selon le scénario, il peut refléter de l’espoir, une peur du rejet ou un besoin de réponse. La signification dépend du ressenti au réveil. Une consultation de voyance amoureuse peut éclairer ce que cette attirance révèle de vos attentes, sans prétendre lire les pensées de votre crush.',
     pourquoi:
-      'On rêve de son crush quand cette personne occupe une place importante dans nos pensées éveillées : l’esprit prolonge la nuit ce qui l’habite le jour. L’absence de relation réelle laisse un vide que le rêve comble en imaginant des scénarios. Plus l’attente et l’idéalisation sont fortes, plus le crush s’invite dans les rêves — non parce qu’il pense à vous, mais parce que vous pensez beaucoup à lui.',
+      'On rêve de son crush quand cette personne occupe une place importante dans nos pensées éveillées : l’esprit prolonge la nuit ce qui l’habite le jour. L’absence de relation réelle laisse un vide que le rêve comble en imaginant des scénarios. Plus l’attente et l’idéalisation sont fortes, plus le crush s’invite dans les rêves, non parce qu’il pense à vous, mais parce que vous pensez beaucoup à lui.',
     interpretations: [
       {
         variante: 'Rêver que son crush nous aime en retour',
@@ -165,7 +165,7 @@ export const REVES_AMOUR: DreamEntry[] = [
       },
       {
         q: 'Pourquoi je rêve souvent de mon crush ?',
-        a: 'Un crush récurrent en rêve signale simplement qu’il occupe une grande place dans vos pensées éveillées : l’esprit prolonge la nuit ce qui l’habite le jour. L’absence de relation concrète laisse un espace que le rêve comble par des scénarios. Plus l’attente et l’idéalisation sont fortes, plus la personne réapparaît — c’est le signe d’un désir à écouter, pas d’un destin.',
+        a: 'Un crush récurrent en rêve signale simplement qu’il occupe une grande place dans vos pensées éveillées : l’esprit prolonge la nuit ce qui l’habite le jour. L’absence de relation concrète laisse un espace que le rêve comble par des scénarios. Plus l’attente et l’idéalisation sont fortes, plus la personne réapparaît, c’est le signe d’un désir à écouter, pas d’un destin.',
       },
       {
         q: 'Rêver que mon crush me rejette est-il un mauvais signe ?',
@@ -179,7 +179,7 @@ export const REVES_AMOUR: DreamEntry[] = [
     emoji: '💍',
     primaryQuery: 'Rêver de mariage ou de se marier',
     answerCapsule:
-      'Rêver de mariage est l’un des rêves symboliques les plus riches, et il ne prédit presque jamais un mariage réel. Le mariage y est avant tout un symbole d’union, d’engagement, de transformation et de passage vers une nouvelle étape — dans le couple, mais aussi dans la vie en général. Rêver de se marier peut traduire un désir d’engagement, une peur de celui-ci, ou un besoin d’unir deux parts de soi. Rêver du mariage de quelqu’un d’autre, ou d’un mariage avec un inconnu, renvoie souvent à une évolution intérieure plutôt qu’à un événement à venir. Le ressenti au réveil — joie, angoisse, fuite — oriente la lecture bien plus que le scénario. Ce rêve parle de votre rapport à l’engagement et au changement. Une consultation de voyance amoureuse peut éclairer ce que cette symbolique révèle de votre moment de vie, sans annoncer une date ni un événement. Il invite donc au discernement intérieur.',
+      'Rêver de mariage est l’un des rêves symboliques les plus riches, et il ne prédit presque jamais un mariage réel. Le mariage y est avant tout un symbole d’union, d’engagement, de transformation et de passage vers une nouvelle étape, dans le couple, mais aussi dans la vie en général. Rêver de se marier peut traduire un désir d’engagement, une peur de celui-ci, ou un besoin d’unir deux parts de soi. Rêver du mariage de quelqu’un d’autre, ou d’un mariage avec un inconnu, renvoie souvent à une évolution intérieure plutôt qu’à un événement à venir. Le ressenti au réveil, joie, angoisse, fuite, oriente la lecture bien plus que le scénario. Ce rêve parle de votre rapport à l’engagement et au changement. Une consultation de voyance amoureuse peut éclairer ce que cette symbolique révèle de votre moment de vie, sans annoncer une date ni un événement. Il invite donc au discernement intérieur.',
     pourquoi:
       'Le rêve de mariage apparaît souvent aux moments de transition : début ou approfondissement d’une relation, questionnement sur l’engagement, changement de vie important. Le mariage étant le symbole culturel du grand passage, l’inconscient l’emploie pour mettre en scène toute forme d’union ou de bascule, y compris intérieure. Il traduit un mouvement d’engagement ou une peur de celui-ci, rarement une prédiction d’événement.',
     interpretations: [
@@ -215,7 +215,7 @@ export const REVES_AMOUR: DreamEntry[] = [
       },
       {
         q: 'Rêver de fuir son mariage est-il mauvais signe pour mon couple ?',
-        a: 'Pas nécessairement. Ce rêve exprime généralement une peur de l’engagement, un besoin de liberté ou le sentiment d’être poussé vers une décision non mûrie — des émotions à écouter, pas un verdict sur votre relation. Il invite à clarifier ce dont vous avez besoin avant de vous engager davantage. C’est une alerte intérieure utile, pas une prédiction de rupture.',
+        a: 'Pas nécessairement. Ce rêve exprime généralement une peur de l’engagement, un besoin de liberté ou le sentiment d’être poussé vers une décision non mûrie, des émotions à écouter, pas un verdict sur votre relation. Il invite à clarifier ce dont vous avez besoin avant de vous engager davantage. C’est une alerte intérieure utile, pas une prédiction de rupture.',
       },
     ],
   },
@@ -225,9 +225,9 @@ export const REVES_AMOUR: DreamEntry[] = [
     emoji: '🔥',
     primaryQuery: 'Rêver de faire l’amour avec son ex',
     answerCapsule:
-      'Rêver de faire l’amour avec son ex est un rêve fréquent, souvent gênant au réveil, et rarement lié à un désir réel de retour. En langage des rêves, l’intimité physique symbolise une reconnexion, une fusion ou l’intégration de quelque chose — pas nécessairement une envie sexuelle littérale. Ce rêve traduit le plus souvent un besoin de clôture, la nostalgie d’une intimité perdue, ou une part de la relation restée inachevée. Il peut aussi surgir quand une émotion liée à l’ex remonte : manque, colère non soldée, ou attachement encore actif que le sommeil met en scène. Cela ne signifie pas qu’il faut renouer, ni que l’autre pense à vous. Le ressenti au réveil — apaisement, trouble, tristesse — oriente la lecture. Une consultation de voyance amoureuse peut éclairer l’émotion que ce rêve réveille, sans jamais prescrire un retour ni prédire les intentions de votre ex. Cette nuance protège des décisions affectives impulsives.',
+      'Rêver de faire l’amour avec son ex est un rêve fréquent, souvent gênant au réveil, et rarement lié à un désir réel de retour. En langage des rêves, l’intimité physique symbolise une reconnexion, une fusion ou l’intégration de quelque chose, pas nécessairement une envie sexuelle littérale. Ce rêve traduit le plus souvent un besoin de clôture, la nostalgie d’une intimité perdue, ou une part de la relation restée inachevée. Il peut aussi surgir quand une émotion liée à l’ex remonte : manque, colère non soldée, ou attachement encore actif que le sommeil met en scène. Cela ne signifie pas qu’il faut renouer, ni que l’autre pense à vous. Le ressenti au réveil, apaisement, trouble, tristesse, oriente la lecture. Une consultation de voyance amoureuse peut éclairer l’émotion que ce rêve réveille, sans jamais prescrire un retour ni prédire les intentions de votre ex. Cette nuance protège des décisions affectives impulsives ou prÃ©maturÃ©es.',
     pourquoi:
-      'Ce rêve apparaît souvent quand le deuil de la relation n’est pas totalement achevé, ou lors de transitions — nouvelle relation, anniversaire, période de solitude. L’intimité onirique met en scène un lien encore chargé d’émotion, un besoin de clôture ou une nostalgie de la fusion passée. Le corps du rêve parle d’un attachement à digérer, pas d’un désir à assouvir ni d’une décision à prendre.',
+      'Ce rêve apparaît souvent quand le deuil de la relation n’est pas totalement achevé, ou lors de transitions, nouvelle relation, anniversaire, période de solitude. L’intimité onirique met en scène un lien encore chargé d’émotion, un besoin de clôture ou une nostalgie de la fusion passée. Le corps du rêve parle d’un attachement à digérer, pas d’un désir à assouvir ni d’une décision à prendre.',
     interpretations: [
       {
         variante: 'Rêver de faire l’amour avec son ex et se sentir bien',
@@ -271,9 +271,9 @@ export const REVES_AMOUR: DreamEntry[] = [
     emoji: '💔',
     primaryQuery: 'Rêver de son ex avec quelqu’un d’autre',
     answerCapsule:
-      'Rêver de son ex avec quelqu’un d’autre est un rêve douloureux, mais il est presque toujours le signe d’un travail intérieur, pas une prémonition ni une information sur la vie réelle de l’ex. Le plus souvent, ce rêve accompagne le processus d’acceptation : une part de vous intègre que la relation est terminée et que l’autre peut avancer. Il peut aussi refléter une peur d’être remplacé, une insécurité, ou une jalousie résiduelle que le sommeil met en scène pour l’apprivoiser. Paradoxalement, ce rêve douloureux marque souvent une étape de guérison — le moment où l’inconscient regarde en face la page qui se tourne. Le ressenti au réveil, de la détresse au soulagement, en dit long sur où vous en êtes. Une consultation de voyance amoureuse peut éclairer cette étape, sans jamais prétendre savoir si votre ex est réellement avec quelqu’un. Cette lecture protège votre guérison des conclusions hâtives sur sa vie.',
+      'Rêver de son ex avec quelqu’un d’autre est un rêve douloureux, mais il est presque toujours le signe d’un travail intérieur, pas une prémonition ni une information sur la vie réelle de l’ex. Le plus souvent, ce rêve accompagne le processus d’acceptation : une part de vous intègre que la relation est terminée et que l’autre peut avancer. Il peut aussi refléter une peur d’être remplacé, une insécurité, ou une jalousie résiduelle que le sommeil met en scène pour l’apprivoiser. Paradoxalement, ce rêve douloureux marque souvent une étape de guérison, le moment où l’inconscient regarde en face la page qui se tourne. Le ressenti au réveil, de la détresse au soulagement, en dit long sur où vous en êtes. Une consultation de voyance amoureuse peut éclairer cette étape, sans jamais prétendre savoir si votre ex est réellement avec quelqu’un. Cette lecture protège votre guérison des conclusions hâtives sur sa vie.',
     pourquoi:
-      'Ce rêve survient souvent quand le deuil avance : l’inconscient met en images l’idée, encore difficile, que l’ex peut appartenir à une autre histoire. Il apparaît aussi lors de pics d’insécurité — solitude, comparaison, réseaux sociaux consultés. La peur d’être remplacé ou la jalousie résiduelle s’exprime la nuit pour être digérée. C’est un signe de page qui se tourne, pas une fenêtre sur la réalité de l’autre.',
+      'Ce rêve survient souvent quand le deuil avance : l’inconscient met en images l’idée, encore difficile, que l’ex peut appartenir à une autre histoire. Il apparaît aussi lors de pics d’insécurité, solitude, comparaison, réseaux sociaux consultés. La peur d’être remplacé ou la jalousie résiduelle s’exprime la nuit pour être digérée. C’est un signe de page qui se tourne, pas une fenêtre sur la réalité de l’autre.',
     interpretations: [
       {
         variante: 'Rêver de son ex heureux avec quelqu’un d’autre',
@@ -285,7 +285,7 @@ export const REVES_AMOUR: DreamEntry[] = [
       },
       {
         variante: 'Rêver de sa jalousie ou de sa colère dans ce rêve',
-        sens: 'Reflète une émotion encore active — jalousie résiduelle, sentiment d’injustice — que le deuil n’a pas fini de traiter. Le rêve donne une issue à ce qui n’a pas été exprimé.',
+        sens: 'Reflète une émotion encore active, jalousie résiduelle, sentiment d’injustice, que le deuil n’a pas fini de traiter. Le rêve donne une issue à ce qui n’a pas été exprimé.',
       },
       {
         variante: 'Rêver de cela et se réveiller soulagé',
@@ -303,7 +303,7 @@ export const REVES_AMOUR: DreamEntry[] = [
       },
       {
         q: 'Pourquoi ce rêve fait-il si mal si c’est bon signe ?',
-        a: 'Parce que la guérison passe souvent par des étapes douloureuses. Ce rêve met en face l’idée que la relation est finie et que l’autre peut appartenir à une autre histoire — une réalité difficile mais nécessaire à intégrer. La douleur ressentie est le prix de l’acceptation en cours. Se réveiller soulagé, à l’inverse, indique que le détachement est déjà bien avancé.',
+        a: 'Parce que la guérison passe souvent par des étapes douloureuses. Ce rêve met en face l’idée que la relation est finie et que l’autre peut appartenir à une autre histoire, une réalité difficile mais nécessaire à intégrer. La douleur ressentie est le prix de l’acceptation en cours. Se réveiller soulagé, à l’inverse, indique que le détachement est déjà bien avancé.',
       },
       {
         q: 'Comment arrêter de faire ce rêve à répétition ?',
@@ -317,7 +317,7 @@ export const REVES_AMOUR: DreamEntry[] = [
     emoji: '🥀',
     primaryQuery: 'Rêver de rupture ou de se séparer',
     answerCapsule:
-      'Rêver de rupture, alors même que le couple va bien, est un rêve angoissant mais rarement prémonitoire. La séparation, en langage des rêves, symbolise souvent une peur de perdre l’autre, un besoin de changement, ou une part de soi qui cherche plus d’autonomie — pas une rupture réelle à venir. Rêver que son partenaire nous quitte traduit fréquemment une insécurité affective ou un manque de réassurance. Rêver de quitter l’autre peut refléter un besoin d’espace, une frustration non exprimée, ou une part de vous qui étouffe. Le rêve met en scène une tension intérieure pour la rendre visible, non pour l’annoncer. Le ressenti au réveil oriente la lecture bien plus que le scénario. Une consultation de voyance amoureuse peut éclairer le besoin que ce rêve met en lumière, sans jamais prédire une séparation ni la provoquer. Cette lecture aide à distinguer une inquiétude passagère d’une décision réellement mûrie dans la vie éveillée.',
+      'Rêver de rupture, alors même que le couple va bien, est un rêve angoissant mais rarement prémonitoire. La séparation, en langage des rêves, symbolise souvent une peur de perdre l’autre, un besoin de changement, ou une part de soi qui cherche plus d’autonomie, pas une rupture réelle à venir. Rêver que son partenaire nous quitte traduit fréquemment une insécurité affective ou un manque de réassurance. Rêver de quitter l’autre peut refléter un besoin d’espace, une frustration non exprimée, ou une part de vous qui étouffe. Le rêve met en scène une tension intérieure pour la rendre visible, non pour l’annoncer. Le ressenti au réveil oriente la lecture bien plus que le scénario. Une consultation de voyance amoureuse peut éclairer le besoin que ce rêve met en lumière, sans jamais prédire une séparation ni la provoquer. Cette lecture aide à distinguer une inquiétude passagère d’une décision réellement mûrie dans la vie éveillée.',
     pourquoi:
       'Le rêve de rupture apparaît souvent dans les phases d’insécurité, de transition ou de tension non dite. Le sommeil dramatise une peur de perdre l’autre, un besoin d’autonomie, ou une frustration que la vie éveillée tait. Plus l’attachement est fort, plus la peur de le perdre peut se mettre en scène la nuit. C’est un signal émotionnel à décoder, pas un avertissement sur l’avenir du couple.',
     interpretations: [
@@ -353,7 +353,7 @@ export const REVES_AMOUR: DreamEntry[] = [
       },
       {
         q: 'Que faire quand ce rêve me laisse anxieux au réveil ?',
-        a: 'Commencez par ne pas le lire comme une information sur votre couple. Observez l’émotion dominante — peur de l’abandon, besoin d’espace, frustration — car c’est elle qui porte le message. Souvent, un besoin cherche à être formulé. En parler avec douceur à votre partenaire apaise l’anxiété et renforce le lien, alors qu’interroger l’autre sur le rêve lui-même ne mène à rien.',
+        a: 'Commencez par ne pas le lire comme une information sur votre couple. Observez l’émotion dominante, peur de l’abandon, besoin d’espace, frustration, car c’est elle qui porte le message. Souvent, un besoin cherche à être formulé. En parler avec douceur à votre partenaire apaise l’anxiété et renforce le lien, alors qu’interroger l’autre sur le rêve lui-même ne mène à rien.',
       },
     ],
   },
@@ -441,7 +441,7 @@ export const REVES_AMOUR: DreamEntry[] = [
       },
       {
         q: 'Pourquoi je rêve de disputes violentes alors que je ne me dispute jamais avec mon partenaire dans la vraie vie ?',
-        a: 'Le rêve emprunte souvent l’intensité d’une émotion plus large — colère, fatigue, charge mentale — pour la mettre en scène, indépendamment de la gravité réelle d’un désaccord. Éviter les conflits dans la vie éveillée n’empêche pas la tension d’exister ailleurs ; le sommeil lui offre alors un espace d’expression que le quotidien refuse.',
+        a: 'Le rêve emprunte souvent l’intensité d’une émotion plus large, colère, fatigue, charge mentale, pour la mettre en scène, indépendamment de la gravité réelle d’un désaccord. Éviter les conflits dans la vie éveillée n’empêche pas la tension d’exister ailleurs ; le sommeil lui offre alors un espace d’expression que le quotidien refuse.',
       },
       {
         q: 'Dois-je parler de ce rêve à mon partenaire ?',
@@ -455,7 +455,7 @@ export const REVES_AMOUR: DreamEntry[] = [
     emoji: '💌',
     primaryQuery: 'Rêver que quelqu’un nous déclare son amour',
     answerCapsule:
-      'Rêver que quelqu’un vous déclare son amour met les mots, la reconnaissance et la confirmation au centre du scénario. Ce rêve ne révèle pas les sentiments secrets de la personne entendue et n’annonce aucune déclaration réelle. Il reflète souvent votre besoin de savoir où vous comptez, d’être choisi ou de recevoir une parole claire dans une relation ambiguë. Si la déclaration vient d’un inconnu, le personnage peut représenter une validation que vous cherchez d’abord en vous-même, plutôt qu’un futur partenaire. Si elle vient de votre partenaire, le rêve peut souligner un besoin de réassurance ou de mots tendres, même lorsque l’affection existe dans les gestes. Une déclaration refusée ou gênante peut, elle, montrer une difficulté à recevoir l’attention ou la crainte qu’un engagement devienne trop pressant. L’émotion au réveil — soulagement, joie, doute ou inconfort — précise le besoin concerné. Une consultation de voyance amoureuse peut aider à distinguer attente de reconnaissance et réalité du lien, sans lire les pensées d’autrui ni promettre un aveu prochain.',
+      'Rêver que quelqu’un vous déclare son amour met les mots, la reconnaissance et la confirmation au centre du scénario. Ce rêve ne révèle pas les sentiments secrets de la personne entendue et n’annonce aucune déclaration réelle. Il reflète souvent votre besoin de savoir où vous comptez, d’être choisi ou de recevoir une parole claire dans une relation ambiguë. Si la déclaration vient d’un inconnu, le personnage peut représenter une validation que vous cherchez d’abord en vous-même, plutôt qu’un futur partenaire. Si elle vient de votre partenaire, le rêve peut souligner un besoin de réassurance ou de mots tendres, même lorsque l’affection existe dans les gestes. Une déclaration refusée ou gênante peut, elle, montrer une difficulté à recevoir l’attention ou la crainte qu’un engagement devienne trop pressant. L’émotion au réveil, soulagement, joie, doute ou inconfort, précise le besoin concerné. Une consultation de voyance amoureuse peut aider à distinguer attente de reconnaissance et réalité du lien, sans lire les pensées d’autrui ni promettre un aveu prochain.',
     pourquoi:
       'Ce rêve apparaît souvent lorsqu’une relation manque de clarté, que les marques d’affection restent implicites ou que votre confiance a besoin d’être consolidée. Le sommeil fabrique alors la phrase nette que la vie éveillée ne fournit pas. Il peut aussi survenir après une période de solitude ou de doute personnel : être déclaré digne d’amour répare symboliquement un sentiment de mise à l’écart. La parole rêvée répond à un besoin de reconnaissance ; elle ne transmet pas la pensée réelle de celui ou celle qui parle.',
     interpretations: [
@@ -593,7 +593,7 @@ export const REVES_AMOUR: DreamEntry[] = [
     emoji: '💫',
     primaryQuery: 'Rêver de recevoir une demande en mariage',
     answerCapsule:
-      'Rêver de recevoir une demande en mariage, genou à terre ou mots solennels, laisse souvent une émotion intense au réveil — sans annoncer pour autant qu’une vraie demande approche. Ce rêve met en scène votre rapport à l’engagement autant que celui de la personne qui vous le propose dans le songe. Rêver d’être demandée en mariage par son partenaire actuel peut traduire un désir sincère de franchir une étape, ou l’espoir d’une reconnaissance publique de votre lien. Rêver de cette scène avec un inconnu renvoie souvent à un besoin plus large d’être choisie et validée, indépendamment d’une personne précise. Rêver de refuser la demande peut signaler une peur de l’engagement ou un besoin de préserver votre liberté. Rêver d’hésiter avant de répondre traduit fréquemment une ambivalence réelle face à la relation actuelle. L’émotion ressentie au réveil — joie, panique, soulagement — oriente la lecture. Une consultation de voyance amoureuse peut aider à nommer ce que ce désir d’engagement révèle, sans jamais promettre une demande réelle ni en fixer la date.',
+      'Rêver de recevoir une demande en mariage, genou à terre ou mots solennels, laisse souvent une émotion intense au réveil, sans annoncer pour autant qu’une vraie demande approche. Ce rêve met en scène votre rapport à l’engagement autant que celui de la personne qui vous le propose dans le songe. Rêver d’être demandée en mariage par son partenaire actuel peut traduire un désir sincère de franchir une étape, ou l’espoir d’une reconnaissance publique de votre lien. Rêver de cette scène avec un inconnu renvoie souvent à un besoin plus large d’être choisie et validée, indépendamment d’une personne précise. Rêver de refuser la demande peut signaler une peur de l’engagement ou un besoin de préserver votre liberté. Rêver d’hésiter avant de répondre traduit fréquemment une ambivalence réelle face à la relation actuelle. L’émotion ressentie au réveil, joie, panique, soulagement, oriente la lecture. Une consultation de voyance amoureuse peut aider à nommer ce que ce désir d’engagement révèle, sans jamais promettre une demande réelle ni en fixer la date.',
     pourquoi:
       'Ce rêve survient souvent lorsque la question de l’engagement occupe l’esprit, consciemment ou non : envie d’avancer, comparaison avec l’entourage, ou au contraire crainte que la relation stagne. Le sommeil met en scène le moment symbolique où l’on formalise un choix. Il peut aussi apparaître après avoir assisté à une demande réelle, l’esprit rejouant alors une émotion collective plutôt qu’un désir personnel précis.',
     interpretations: [
@@ -685,7 +685,7 @@ export const REVES_AMOUR: DreamEntry[] = [
     emoji: '😢',
     primaryQuery: 'Rêver de perdre ou de voir mourir son partenaire',
     answerCapsule:
-      'Rêver de perdre son partenaire, que ce soit par une mort onirique ou une disparition brutale, compte parmi les rêves amoureux les plus angoissants — et il n’annonce presque jamais un événement réel. Ce type de rêve met en scène la peur de perdre ce qui compte, une manière pour l’inconscient de mesurer l’attachement en l’exposant à sa perte symbolique. Rêver de la mort de son partenaire traduit souvent une peur profonde de l’abandon ou un attachement très fort, rarement un présage funeste. Rêver de le chercher sans le retrouver peut signaler une distance ressentie récemment, une impression de perdre le contact malgré la proximité physique. Rêver de vivre son deuil dans le songe peut aussi accompagner un changement en cours dans la relation, une transformation vécue comme une petite perte. Le ressenti au réveil, terreur ou tristesse profonde, indique l’intensité de l’attachement en jeu. Une consultation de voyance amoureuse peut aider à nommer cette peur sans jamais y voir une annonce funeste ou un présage à redouter.',
+      'Rêver de perdre son partenaire, que ce soit par une mort onirique ou une disparition brutale, compte parmi les rêves amoureux les plus angoissants, et il n’annonce presque jamais un événement réel. Ce type de rêve met en scène la peur de perdre ce qui compte, une manière pour l’inconscient de mesurer l’attachement en l’exposant à sa perte symbolique. Rêver de la mort de son partenaire traduit souvent une peur profonde de l’abandon ou un attachement très fort, rarement un présage funeste. Rêver de le chercher sans le retrouver peut signaler une distance ressentie récemment, une impression de perdre le contact malgré la proximité physique. Rêver de vivre son deuil dans le songe peut aussi accompagner un changement en cours dans la relation, une transformation vécue comme une petite perte. Le ressenti au réveil, terreur ou tristesse profonde, indique l’intensité de l’attachement en jeu. Une consultation de voyance amoureuse peut aider à nommer cette peur sans jamais y voir une annonce funeste ou un présage à redouter.',
     pourquoi:
       'Ce rêve apparaît souvent lorsque l’attachement à l’autre est fort et que l’esprit, la nuit, explore ce qu’il redoute le plus pour en mesurer l’importance. Une période de stress, d’éloignement temporaire ou de changement dans le couple peut aussi nourrir cette angoisse. Le cerveau met en scène une perte symbolique pour traiter une inquiétude diffuse, sans qu’aucun événement réel ne soit annoncé.',
     interpretations: [
@@ -721,7 +721,7 @@ export const REVES_AMOUR: DreamEntry[] = [
       },
       {
         q: 'Comment apaiser l’angoisse laissée par ce rêve ?',
-        a: 'Rappelez-vous d’abord que ce songe ne prédit rien de réel. Identifiez ensuite ce qui a pu fragiliser votre sécurité affective récemment — distance, changement, fatigue — et cherchez à renouer un temps de proximité avec votre partenaire. Si l’angoisse persiste ou revient souvent, une consultation peut aider à mettre des mots sur cette peur de perte.',
+        a: 'Rappelez-vous d’abord que ce songe ne prédit rien de réel. Identifiez ensuite ce qui a pu fragiliser votre sécurité affective récemment, distance, changement, fatigue, et cherchez à renouer un temps de proximité avec votre partenaire. Si l’angoisse persiste ou revient souvent, une consultation peut aider à mettre des mots sur cette peur de perte.',
       },
     ],
   },
@@ -733,7 +733,7 @@ export const REVES_AMOUR: DreamEntry[] = [
     answerCapsule:
       'Rêver que son partenaire disparaît soudainement, sans explication ni au revoir, laisse souvent une angoisse marquée au réveil. Ce scénario ne prédit pas un départ réel ni une rupture imminente : il met en scène une peur de l’abandon ou une insécurité affective que le sommeil rend visible. Rêver que son partenaire s’évapore dans une foule traduit souvent la peur de perdre le contact émotionnel, même quand la relation reste physiquement présente. Rêver qu’il disparaît puis réapparaît différent peut signaler une impression de ne plus reconnaître l’autre, ou une évolution du couple qui déstabilise. Rêver de le chercher désespérément met en avant l’intensité de l’attachement plutôt qu’un danger réel. Rêver de rester calme face à cette disparition peut au contraire indiquer une confiance solide malgré l’absence momentanée. L’émotion dominante au réveil oriente la lecture bien plus que le scénario. Une consultation de voyance amoureuse peut aider à nommer cette peur, sans jamais y voir l’annonce d’un abandon réel.',
     pourquoi:
-      'Ce rêve survient souvent dans des périodes d’insécurité affective, de changement de rythme dans le couple, ou d’éloignement temporaire réel — voyage, désaccord non résolu, période chargée. L’esprit matérialise la peur de perdre l’autre en la rendant visuelle et absolue. Il peut aussi apparaître après un silence inhabituel de la part du partenaire, le rêve amplifiant une inquiétude déjà présente à l’état de veille.',
+      'Ce rêve survient souvent dans des périodes d’insécurité affective, de changement de rythme dans le couple, ou d’éloignement temporaire réel, voyage, désaccord non résolu, période chargée. L’esprit matérialise la peur de perdre l’autre en la rendant visuelle et absolue. Il peut aussi apparaître après un silence inhabituel de la part du partenaire, le rêve amplifiant une inquiétude déjà présente à l’état de veille.',
     interpretations: [
       {
         variante: 'Rêver que son partenaire s’évapore dans une foule',
@@ -767,7 +767,7 @@ export const REVES_AMOUR: DreamEntry[] = [
       },
       {
         q: 'Que faire si ce rêve revient régulièrement ?',
-        a: 'Un rêve récurrent signale une insécurité affective qui cherche à être entendue. Plutôt que de la garder pour vous, identifiez précisément ce qui l’alimente — silence, distance, changement — et partagez ce besoin de réassurance avec votre partenaire, sans mentionner le rêve lui-même pour éviter tout malentendu.',
+        a: 'Un rêve récurrent signale une insécurité affective qui cherche à être entendue. Plutôt que de la garder pour vous, identifiez précisément ce qui l’alimente, silence, distance, changement, et partagez ce besoin de réassurance avec votre partenaire, sans mentionner le rêve lui-même pour éviter tout malentendu.',
       },
     ],
   },
@@ -777,7 +777,7 @@ export const REVES_AMOUR: DreamEntry[] = [
     emoji: '🕰️',
     primaryQuery: 'Rêver de retrouver un amour de jeunesse ou un premier amour',
     answerCapsule:
-      'Rêver de retrouver un amour de jeunesse, ce premier grand attachement resté loin dans le temps, réveille souvent une nostalgie douce ou troublante. Ce rêve ne signifie presque jamais qu’il faut renouer avec cette personne réelle : il convoque une période et une version de vous-même, plus qu’un individu précis à retrouver. Rêver de cet amour de jeunesse avec tendresse traduit souvent la nostalgie d’une légèreté ou d’une intensité que le temps a émoussée, un rappel à cultiver dans votre vie actuelle. Rêver d’une scène inachevée avec cette personne peut signaler une part de votre histoire qui reste symboliquement ouverte, sans lien avec un désir réel de contact. Rêver de le ou la retrouver changé·e met en scène votre propre évolution depuis cette époque. Le contexte de vie actuel — une remise en question, une transition — influence souvent l’apparition de ce rêve. Une consultation de voyance amoureuse peut éclairer ce que cette nostalgie révèle de vos besoins présents, sans jamais suggérer de reprendre contact avec cette personne du passé.',
+      'Rêver de retrouver un amour de jeunesse, ce premier grand attachement resté loin dans le temps, réveille souvent une nostalgie douce ou troublante. Ce rêve ne signifie presque jamais qu’il faut renouer avec cette personne réelle : il convoque une période et une version de vous-même, plus qu’un individu précis à retrouver. Rêver de cet amour de jeunesse avec tendresse traduit souvent la nostalgie d’une légèreté ou d’une intensité que le temps a émoussée, un rappel à cultiver dans votre vie actuelle. Rêver d’une scène inachevée avec cette personne peut signaler une part de votre histoire qui reste symboliquement ouverte, sans lien avec un désir réel de contact. Rêver de le ou la retrouver changé·e met en scène votre propre évolution depuis cette époque. Le contexte de vie actuel, une remise en question, une transition, influence souvent l’apparition de ce rêve. Une consultation de voyance amoureuse peut éclairer ce que cette nostalgie révèle de vos besoins présents, sans jamais suggérer de reprendre contact avec cette personne du passé.',
     pourquoi:
       'Ce rêve apparaît souvent lors de périodes de transition ou de remise en question personnelle, quand l’esprit cherche des repères dans un temps où tout semblait plus simple. L’amour de jeunesse incarne fréquemment une insouciance ou une intensité émotionnelle associée à cette période de la vie, pas nécessairement la personne elle-même. Une chanson, un lieu ou un souvenir récent peut aussi raviver cette figure dans le sommeil.',
     interpretations: [
@@ -801,15 +801,15 @@ export const REVES_AMOUR: DreamEntry[] = [
     neProuvePas:
       'Ce rêve ne prouve pas qu’il faille reprendre contact avec cette personne, ni que des sentiments réels subsistent envers elle aujourd’hui. Ce n’est pas un signe du destin. En faire une invitation à renouer risque de rouvrir une histoire refermée pour de bonnes raisons, sur la base d’une nostalgie qui parle surtout d’une époque révolue.',
     conseil:
-      'Accueillez la nostalgie sans la transformer en projet. Demandez-vous ce que cette période représentait vraiment pour vous — liberté, insouciance, intensité — et cherchez comment réintroduire cette qualité dans votre vie actuelle, plutôt que de chercher cette personne précise. Le rêve parle d’un temps révolu, pas d’un futur à raviver.',
+      'Accueillez la nostalgie sans la transformer en projet. Demandez-vous ce que cette période représentait vraiment pour vous, liberté, insouciance, intensité, et cherchez comment réintroduire cette qualité dans votre vie actuelle, plutôt que de chercher cette personne précise. Le rêve parle d’un temps révolu, pas d’un futur à raviver.',
     faq: [
       {
         q: 'Dois-je reprendre contact avec mon amour de jeunesse après ce rêve ?',
-        a: 'Rien ne l’indique. Ce rêve convoque le plus souvent une période et une version de vous-même associée à cette relation, plus que la personne réelle aujourd’hui. Ce n’est pas un signe du destin invitant à renouer. Mieux vaut chercher à retrouver dans votre vie actuelle la qualité — légèreté, intensité — que ce souvenir évoque, sans rouvrir une histoire close.',
+        a: 'Rien ne l’indique. Ce rêve convoque le plus souvent une période et une version de vous-même associée à cette relation, plus que la personne réelle aujourd’hui. Ce n’est pas un signe du destin invitant à renouer. Mieux vaut chercher à retrouver dans votre vie actuelle la qualité, légèreté, intensité, que ce souvenir évoque, sans rouvrir une histoire close.',
       },
       {
         q: 'Pourquoi je rêve de mon premier amour alors que je suis heureux·se en couple ?',
-        a: 'Ce rêve renvoie rarement à un désir réel de retour vers cette personne. Il pointe plus souvent une qualité de cette relation passée — insouciance, intensité, simplicité — qui vous manque dans le présent. Plutôt qu’un signal d’alarme, il peut être lu comme une invitation à raviver cette qualité dans votre couple actuel.',
+        a: 'Ce rêve renvoie rarement à un désir réel de retour vers cette personne. Il pointe plus souvent une qualité de cette relation passée, insouciance, intensité, simplicité, qui vous manque dans le présent. Plutôt qu’un signal d’alarme, il peut être lu comme une invitation à raviver cette qualité dans votre couple actuel.',
       },
       {
         q: 'Que signifie retrouver cette personne très changée dans mon rêve ?',
@@ -859,7 +859,7 @@ export const REVES_AMOUR: DreamEntry[] = [
       },
       {
         q: 'Le visage flou dans mon rêve a-t-il une signification particulière ?',
-        a: 'Un visage flou met l’accent sur le sentiment ressenti — certitude, évidence, connexion — plus que sur une identité précise à rechercher. Ce n’est pas un indice à décoder pour reconnaître une future rencontre. Le rêve parle avant tout de votre aspiration intérieure à une relation profonde, indépendamment de qui pourrait, un jour, l’incarner.',
+        a: 'Un visage flou met l’accent sur le sentiment ressenti, certitude, évidence, connexion, plus que sur une identité précise à rechercher. Ce n’est pas un indice à décoder pour reconnaître une future rencontre. Le rêve parle avant tout de votre aspiration intérieure à une relation profonde, indépendamment de qui pourrait, un jour, l’incarner.',
       },
     ],
   },
@@ -1029,7 +1029,7 @@ export const REVES_AMOUR: DreamEntry[] = [
       },
     ],
     neProuvePas:
-      'Ce rêve ne prouve pas qu’un geste précis — bouquet, surprise, attention — est prévu par votre partenaire ou par une autre personne. Ce n’est pas une annonce. En attendre la réalisation littérale mène souvent à une déception, alors que le rêve parle avant tout d’un besoin intérieur de reconnaissance à exprimer ou à combler autrement.',
+      'Ce rêve ne prouve pas qu’un geste précis, bouquet, surprise, attention, est prévu par votre partenaire ou par une autre personne. Ce n’est pas une annonce. En attendre la réalisation littérale mène souvent à une déception, alors que le rêve parle avant tout d’un besoin intérieur de reconnaissance à exprimer ou à combler autrement.',
     conseil:
       'Ne guettez pas un bouquet réel après ce rêve. Identifiez plutôt le besoin qu’il exprime : reconnaissance, tendresse, attention. Si ce besoin concerne votre partenaire, formulez-le simplement plutôt que d’attendre qu’il devine. Ce rêve est une invitation à nourrir votre vie affective de gestes concrets, pas une prédiction de surprise.',
     faq: [
@@ -1053,9 +1053,9 @@ export const REVES_AMOUR: DreamEntry[] = [
     emoji: '🎭',
     primaryQuery: 'Rêver que le visage de son partenaire change ou devient celui d’un autre',
     answerCapsule:
-      'Rêver que le visage de son partenaire se transforme, devient flou ou se change en celui d’une autre personne, est un rêve déstabilisant mais fréquent, qui ne prédit ni infidélité ni changement d’identité réel. En langage des rêves, le visage qui se métamorphose symbolise souvent une évolution perçue chez l’autre, ou une difficulté à cerner pleinement qui est votre partenaire à un moment donné de la relation. Rêver que son visage devient celui d’un inconnu peut signaler une impression de redécouvrir l’autre après un changement récent. Rêver qu’il prend les traits d’un ex renvoie fréquemment à une comparaison inconsciente ou à une peur de répéter un schéma passé. Rêver d’un visage qui reste flou traduit souvent une difficulté à se sentir pleinement en confiance ou en clarté dans la relation. Le ressenti — trouble, curiosité, peur — précise le sens. Une consultation de voyance amoureuse peut éclairer cette impression, sans jamais y voir un présage de tromperie ou de rupture.',
+      'Rêver que le visage de son partenaire se transforme, devient flou ou se change en celui d’une autre personne, est un rêve déstabilisant mais fréquent, qui ne prédit ni infidélité ni changement d’identité réel. En langage des rêves, le visage qui se métamorphose symbolise souvent une évolution perçue chez l’autre, ou une difficulté à cerner pleinement qui est votre partenaire à un moment donné de la relation. Rêver que son visage devient celui d’un inconnu peut signaler une impression de redécouvrir l’autre après un changement récent. Rêver qu’il prend les traits d’un ex renvoie fréquemment à une comparaison inconsciente ou à une peur de répéter un schéma passé. Rêver d’un visage qui reste flou traduit souvent une difficulté à se sentir pleinement en confiance ou en clarté dans la relation. Le ressenti, trouble, curiosité, peur, précise le sens. Une consultation de voyance amoureuse peut éclairer cette impression, sans jamais y voir un présage de tromperie ou de rupture.',
     pourquoi:
-      'Ce rêve survient souvent après un changement réel chez le partenaire — nouvelle étape de vie, évolution personnelle, période de stress — que l’inconscient traduit par une transformation visuelle. Il peut aussi apparaître lorsque la relation entre dans une phase où l’on redécouvre l’autre différemment. Le visage, symbole fort de l’identité, devient alors le lieu onirique où se joue cette impression de changement ou d’incertitude.',
+      'Ce rêve survient souvent après un changement réel chez le partenaire, nouvelle étape de vie, évolution personnelle, période de stress, que l’inconscient traduit par une transformation visuelle. Il peut aussi apparaître lorsque la relation entre dans une phase où l’on redécouvre l’autre différemment. Le visage, symbole fort de l’identité, devient alors le lieu onirique où se joue cette impression de changement ou d’incertitude.',
     interpretations: [
       {
         variante: 'Rêver que son visage devient celui d’un inconnu',
@@ -1123,7 +1123,7 @@ export const REVES_AMOUR: DreamEntry[] = [
     neProuvePas:
       'Ce rêve ne prouve pas qu’une rupture se prépare ni que votre partenaire envisage de partir. Ce n’est pas un présage. Le prendre pour une alerte concrète pousse à une vigilance anxieuse qui peut fragiliser une relation par ailleurs saine et stable, sans aucun fondement réel derrière cette peur nocturne.',
     conseil:
-      'Accueillez ce rêve comme la mesure de votre attachement, pas comme un avertissement. Identifiez ce qui, récemment, a pu fragiliser votre sentiment de sécurité — fatigue, distance, manque de mots — et exprimez ce besoin calmement à votre partenaire plutôt que de garder cette angoisse pour vous.',
+      'Accueillez ce rêve comme la mesure de votre attachement, pas comme un avertissement. Identifiez ce qui, récemment, a pu fragiliser votre sentiment de sécurité, fatigue, distance, manque de mots, et exprimez ce besoin calmement à votre partenaire plutôt que de garder cette angoisse pour vous.',
     faq: [
       {
         q: 'Rêver de me faire larguer signifie-t-il que ma relation va mal ?',
@@ -1135,7 +1135,7 @@ export const REVES_AMOUR: DreamEntry[] = [
       },
       {
         q: 'Que faire si ce rêve revient souvent ?',
-        a: 'Un rêve récurrent de rupture signale une insécurité qui cherche à être entendue. Identifiez ce qui l’alimente concrètement dans votre quotidien — fatigue, distance, manque de gestes tendres — et partagez ce besoin avec votre partenaire, sans lui raconter le rêve lui-même pour éviter tout malentendu inutile.',
+        a: 'Un rêve récurrent de rupture signale une insécurité qui cherche à être entendue. Identifiez ce qui l’alimente concrètement dans votre quotidien, fatigue, distance, manque de gestes tendres, et partagez ce besoin avec votre partenaire, sans lui raconter le rêve lui-même pour éviter tout malentendu inutile.',
       },
     ],
   },
@@ -1307,7 +1307,7 @@ export const REVES_AMOUR: DreamEntry[] = [
     neProuvePas:
       'Ce rêve ne prouve pas que votre ex a besoin de vous dans la réalité, ni qu’une réconciliation est souhaitable. Ce n’est pas une invitation à reprendre contact. Y voir un signe pousse à des gestes prématurés fondés sur une tendresse nocturne plutôt que sur une évaluation lucide de la relation actuelle.',
     conseil:
-      'Accueillez cette tendresse comme un souvenir apaisé, sans qu’elle ne devienne un projet. Si un besoin de prendre soin de quelqu’un ressort de ce rêve, cherchez comment le nourrir dans votre vie actuelle — amis, famille, nouvelle relation — plutôt que de le rediriger vers une histoire refermée.',
+      'Accueillez cette tendresse comme un souvenir apaisé, sans qu’elle ne devienne un projet. Si un besoin de prendre soin de quelqu’un ressort de ce rêve, cherchez comment le nourrir dans votre vie actuelle, amis, famille, nouvelle relation, plutôt que de le rediriger vers une histoire refermée.',
     faq: [
       {
         q: 'Rêver de consoler mon ex veut-il dire que je devrais reprendre contact ?',
@@ -1399,7 +1399,7 @@ export const REVES_AMOUR: DreamEntry[] = [
     neProuvePas:
       'Ce rêve ne prédit pas l’évolution réelle de votre relation ni un événement précis à venir. La qualité de la danse rêvée ne garantit rien sur l’avenir du couple. En faire un présage détourne de l’essentiel : observer sincèrement, dans la vie éveillée, comment vous vous accordez réellement avec votre partenaire.',
     conseil:
-      'Utilisez cette image pour évaluer honnêtement votre entente actuelle. Si le rêve était fluide, savourez cette complicité. S’il était maladroit, identifiez ce qui, concrètement, demande à être mieux synchronisé entre vous — communication, rythme de vie, attentes — et abordez-le calmement.',
+      'Utilisez cette image pour évaluer honnêtement votre entente actuelle. Si le rêve était fluide, savourez cette complicité. S’il était maladroit, identifiez ce qui, concrètement, demande à être mieux synchronisé entre vous, communication, rythme de vie, attentes, et abordez-le calmement.',
     faq: [
       {
         q: 'Rêver de bien danser avec mon partenaire est-il bon signe ?',
@@ -1561,7 +1561,7 @@ export const REVES_AMOUR: DreamEntry[] = [
     answerCapsule:
       'Rêver que son partenaire nous trompe avec un ami proche ajoute à l’angoisse habituelle de la tromperie une double trahison ressentie, mais ce scénario ne prouve ni infidélité ni malveillance réelle de la part de l’un ou de l’autre. Ce rêve met plutôt en scène une peur amplifiée de perdre à la fois un lien amoureux et une amitié, deux piliers de votre vie affective. Rêver de cette trahison avec un ami de longue date traduit souvent une peur profonde que rien ni personne ne soit totalement sûr autour de vous. Rêver de découvrir cette trahison progressivement peut signaler une méfiance générale en cours d’installation, à examiner honnêtement. Rêver de rester digne face à cette double perte montre une force intérieure réelle. Rêver de confronter les deux personnes dans le songe exprime un besoin de vérité et de clarté. Une consultation de voyance amoureuse peut éclairer cette peur amplifiée, sans jamais y voir une accusation fondée envers votre partenaire ou votre ami.',
     pourquoi:
-      'Ce rêve apparaît souvent lors de périodes où la confiance générale, envers les proches comme envers le partenaire, traverse une fragilité plus large. L’esprit combine alors deux peurs distinctes — perdre l’amour, perdre l’amitié — en un seul scénario. Une fatigue relationnelle globale ou un sentiment d’isolement peut nourrir cette angoisse combinée sans lien avec un fait réel.',
+      'Ce rêve apparaît souvent lors de périodes où la confiance générale, envers les proches comme envers le partenaire, traverse une fragilité plus large. L’esprit combine alors deux peurs distinctes, perdre l’amour, perdre l’amitié, en un seul scénario. Une fatigue relationnelle globale ou un sentiment d’isolement peut nourrir cette angoisse combinée sans lien avec un fait réel.',
     interpretations: [
       {
         variante: 'Rêver de cette trahison avec un ami de longue date',
@@ -1587,7 +1587,7 @@ export const REVES_AMOUR: DreamEntry[] = [
     faq: [
       {
         q: 'Rêver que mon partenaire me trompe avec mon ami signifie-t-il que c’est vrai ?',
-        a: 'Non. Ce rêve ne constitue aucune preuve d’infidélité réelle. Il combine généralement deux peurs distinctes — perdre l’amour et perdre l’amitié — en un seul scénario angoissant, sans lien avec un fait objectif. Fonder une accusation sur ce seul songe risquerait d’abîmer deux relations précieuses sans aucune justification réelle.',
+        a: 'Non. Ce rêve ne constitue aucune preuve d’infidélité réelle. Il combine généralement deux peurs distinctes, perdre l’amour et perdre l’amitié, en un seul scénario angoissant, sans lien avec un fait objectif. Fonder une accusation sur ce seul songe risquerait d’abîmer deux relations précieuses sans aucune justification réelle.',
       },
       {
         q: 'Pourquoi ce rêve est-il plus douloureux qu’un rêve de tromperie classique ?',
@@ -1607,7 +1607,7 @@ export const REVES_AMOUR: DreamEntry[] = [
     answerCapsule:
       'Rêver de voir son partenaire particulièrement complice avec son meilleur ami ou sa meilleure amie déclenche souvent une jalousie immédiate au réveil, sans que ce scénario ne révèle une réalité extérieure. Ce rêve met en scène une comparaison inconsciente entre vous et cette personne proche, souvent perçue comme ayant des qualités que vous admirez ou enviez. Rêver de cette complicité avec inquiétude traduit fréquemment une insécurité personnelle plus qu’une menace réelle pour le couple. Rêver de rester spectateur sans réagir peut signaler un sentiment d’impuissance face à la comparaison sociale. Rêver de rejoindre la conversation avec aisance montre une confiance en vous qui relativise la scène. Rêver que votre partenaire vous rassure dans le songe peut refléter un besoin réel de réassurance dans la vie éveillée. Une consultation de voyance amoureuse peut éclairer cette comparaison intérieure, sans jamais y voir un signe de rapprochement réel entre votre partenaire et cette personne.',
     pourquoi:
-      'Ce rêve apparaît souvent lorsqu’une comparaison, consciente ou non, s’installe entre vous et une personne proche de votre partenaire. Cette figure peut incarner une qualité — humour, charisme, confiance — que vous pensez ne pas posséder autant. Le sommeil met en scène cette comparaison pour la rendre visible, sans qu’elle ne traduise un rapprochement réel entre les deux personnes concernées.',
+      'Ce rêve apparaît souvent lorsqu’une comparaison, consciente ou non, s’installe entre vous et une personne proche de votre partenaire. Cette figure peut incarner une qualité, humour, charisme, confiance, que vous pensez ne pas posséder autant. Le sommeil met en scène cette comparaison pour la rendre visible, sans qu’elle ne traduise un rapprochement réel entre les deux personnes concernées.',
     interpretations: [
       {
         variante: 'Rêver de cette complicité avec inquiétude',
@@ -1997,7 +1997,7 @@ export const REVES_AMOUR: DreamEntry[] = [
     neProuvePas:
       'Ce rêve n’annonce pas une vraie rencontre précise ni la réaction réelle de la famille de votre partenaire. Ce n’est pas une prémonition. Il traduit votre rapport symbolique à l’acceptation et à l’intégration dans son cercle proche, à observer sans en attendre une confirmation exacte dans la réalité.',
     conseil:
-      'Accueillez ce rêve comme un indicateur de votre confiance actuelle dans la légitimité de votre couple. Si la peur du jugement domine, interrogez d’où elle vient réellement — expérience passée, insécurité personnelle — plutôt que de l’associer automatiquement à la famille réelle de votre partenaire.',
+      'Accueillez ce rêve comme un indicateur de votre confiance actuelle dans la légitimité de votre couple. Si la peur du jugement domine, interrogez d’où elle vient réellement, expérience passée, insécurité personnelle, plutôt que de l’associer automatiquement à la famille réelle de votre partenaire.',
     faq: [
       {
         q: 'Rêver de rencontrer la famille de mon partenaire prédit-il comment ça va se passer réellement ?',
@@ -2157,7 +2157,7 @@ export const REVES_AMOUR: DreamEntry[] = [
     emoji: '💞',
     primaryQuery: 'Rêver de tomber amoureux ou amoureuse de son meilleur ami',
     answerCapsule:
-      'Rêver de tomber amoureux de son meilleur ami ou de sa meilleure amie trouble souvent profondément, sans que ce rêve ne révèle un désir réel de transformer cette amitié en relation amoureuse. Ce songe met en scène les qualités que vous admirez chez cette personne — confiance, complicité, sécurité — plus qu’une attirance romantique littérale. Rêver de cette scène avec plaisir traduit souvent le désir de retrouver, dans votre vie amoureuse actuelle, la complicité sans jugement que vous partagez avec cet ami. Rêver de cette relation avec malaise peut signaler une peur de perdre cette amitié précieuse si les choses changeaient. Rêver que cet ami repousse vos sentiments renvoie souvent à une peur générale du rejet, projetée sur une relation sûre. Rêver de vivre cette histoire avec évidence peut indiquer un besoin de sécurité affective que cette amitié incarne déjà pour vous. Une consultation de voyance amoureuse peut éclairer ce besoin, sans jamais y voir un vrai désir romantique envers cet ami.',
+      'Rêver de tomber amoureux de son meilleur ami ou de sa meilleure amie trouble souvent profondément, sans que ce rêve ne révèle un désir réel de transformer cette amitié en relation amoureuse. Ce songe met en scène les qualités que vous admirez chez cette personne, confiance, complicité, sécurité, plus qu’une attirance romantique littérale. Rêver de cette scène avec plaisir traduit souvent le désir de retrouver, dans votre vie amoureuse actuelle, la complicité sans jugement que vous partagez avec cet ami. Rêver de cette relation avec malaise peut signaler une peur de perdre cette amitié précieuse si les choses changeaient. Rêver que cet ami repousse vos sentiments renvoie souvent à une peur générale du rejet, projetée sur une relation sûre. Rêver de vivre cette histoire avec évidence peut indiquer un besoin de sécurité affective que cette amitié incarne déjà pour vous. Une consultation de voyance amoureuse peut éclairer ce besoin, sans jamais y voir un vrai désir romantique envers cet ami.',
     pourquoi:
       'Ce rêve apparaît souvent parce que l’amitié profonde partage de nombreux ingrédients avec l’amour : confiance, complicité, sentiment de sécurité. L’inconscient emprunte alors ce lien sûr et déjà établi pour explorer votre rapport à l’amour idéal, sans qu’il s’agisse d’un désir réel de transformer cette amitié en histoire romantique.',
     interpretations: [
@@ -2185,7 +2185,7 @@ export const REVES_AMOUR: DreamEntry[] = [
     faq: [
       {
         q: 'Rêver d’être amoureux de mon meilleur ami signifie-t-il que je le suis vraiment ?',
-        a: 'Rarement. Ce rêve met généralement en scène les qualités que vous admirez chez cette personne — confiance, complicité, sécurité — plus qu’une attirance romantique réelle. Il reflète votre idéal de relation amoureuse, incarné par un lien déjà sûr et établi, plutôt qu’un désir sincère de transformer cette amitié en histoire d’amour.',
+        a: 'Rarement. Ce rêve met généralement en scène les qualités que vous admirez chez cette personne, confiance, complicité, sécurité, plus qu’une attirance romantique réelle. Il reflète votre idéal de relation amoureuse, incarné par un lien déjà sûr et établi, plutôt qu’un désir sincère de transformer cette amitié en histoire d’amour.',
       },
       {
         q: 'Dois-je avoir peur que ce rêve abîme mon amitié ?',
@@ -2331,7 +2331,7 @@ export const REVES_AMOUR: DreamEntry[] = [
       },
       {
         q: 'Que faire si ce rêve d’indifférence revient souvent ?',
-        a: 'Un rêve récurrent signale un besoin d’attention qui mérite d’être exprimé clairement, plutôt que ressenti en silence. Identifiez ce qui, concrètement, a pu réduire l’attention de votre partenaire récemment — fatigue, stress, période chargée — et proposez un moment de qualité ensemble pour restaurer cette connexion.',
+        a: 'Un rêve récurrent signale un besoin d’attention qui mérite d’être exprimé clairement, plutôt que ressenti en silence. Identifiez ce qui, concrètement, a pu réduire l’attention de votre partenaire récemment, fatigue, stress, période chargée, et proposez un moment de qualité ensemble pour restaurer cette connexion.',
       },
     ],
   },
@@ -2501,13 +2501,13 @@ export const REVES_AMOUR: DreamEntry[] = [
       },
     ],
     neProuvePas:
-      'Ce rêve ne prédit pas un vrai abandon le jour de votre mariage ni un doute réel de votre futur partenaire. Ce n’est pas un présage. Il combine simplement deux peurs classiques et normales — l’abandon et le jugement public — qui n’indiquent en rien la solidité réelle de votre engagement ou de votre couple.',
+      'Ce rêve ne prédit pas un vrai abandon le jour de votre mariage ni un doute réel de votre futur partenaire. Ce n’est pas un présage. Il combine simplement deux peurs classiques et normales, l’abandon et le jugement public, qui n’indiquent en rien la solidité réelle de votre engagement ou de votre couple.',
     conseil:
       'Ne paniquez pas face à ce rêve intense et fréquent avant un engagement important. Distinguez la peur normale, universelle face à l’exposition publique, d’un doute réel sur votre partenaire. Si une inquiétude précise ressort du rêve, elle mérite d’être clarifiée calmement avant la date prévue, sans dramatiser inutilement.',
     faq: [
       {
         q: 'Rêver d’être abandonné le jour de mon mariage annonce-t-il que ça va vraiment arriver ?',
-        a: 'Non, ce rêve n’est pas une prémonition. Il combine généralement deux peurs classiques et universelles — l’abandon et le jugement public — face à un engagement majeur et exposé. Ce type de rêve est fréquent chez les personnes qui se préparent sincèrement à un mariage, et ne prédit en rien un abandon réel de votre futur partenaire.',
+        a: 'Non, ce rêve n’est pas une prémonition. Il combine généralement deux peurs classiques et universelles, l’abandon et le jugement public, face à un engagement majeur et exposé. Ce type de rêve est fréquent chez les personnes qui se préparent sincèrement à un mariage, et ne prédit en rien un abandon réel de votre futur partenaire.',
       },
       {
         q: 'Pourquoi ce rêve inclut-il toujours des témoins ou des invités ?',
@@ -2741,7 +2741,7 @@ export const REVES_AMOUR: DreamEntry[] = [
       },
       {
         q: 'Pourquoi je rêve que quelqu’un d’autre déchire notre photo de couple ?',
-        a: 'Cela peut signaler une peur que des influences extérieures — famille, entourage, opinions d’autrui — menacent votre couple. Ce n’est pas nécessairement fondé sur un fait réel, mais une invitation à examiner si vous vous sentez suffisamment protégés, en tant que couple, du jugement ou de l’influence de votre entourage proche.',
+        a: 'Cela peut signaler une peur que des influences extérieures, famille, entourage, opinions d’autrui, menacent votre couple. Ce n’est pas nécessairement fondé sur un fait réel, mais une invitation à examiner si vous vous sentez suffisamment protégés, en tant que couple, du jugement ou de l’influence de votre entourage proche.',
       },
       {
         q: 'Est-ce bon signe de rêver de recoller une photo déchirée ?',
@@ -2779,7 +2779,7 @@ export const REVES_AMOUR: DreamEntry[] = [
     neProuvePas:
       'Ce rêve n’annonce pas une vraie séparation géographique à venir. Ce n’est pas une prémonition. Il traduit une distance émotionnelle ressentie, à distinguer d’un déménagement ou d’un éloignement physique réel qui dépendrait de circonstances totalement différentes de ce scénario symbolique nocturne.',
     conseil:
-      'Identifiez ce qui, concrètement, a pu créer une distance émotionnelle récemment : charge de travail, préoccupations personnelles, manque de temps partagé de qualité. Un rapprochement actif — conversation sincère, moment dédié au couple — répond généralement bien mieux à ce rêve qu’une inquiétude silencieuse.',
+      'Identifiez ce qui, concrètement, a pu créer une distance émotionnelle récemment : charge de travail, préoccupations personnelles, manque de temps partagé de qualité. Un rapprochement actif, conversation sincère, moment dédié au couple, répond généralement bien mieux à ce rêve qu’une inquiétude silencieuse.',
     faq: [
       {
         q: 'Rêver d’être séparé de mon partenaire par une distance annonce-t-il un vrai éloignement ?',
@@ -2803,7 +2803,7 @@ export const REVES_AMOUR: DreamEntry[] = [
     answerCapsule:
       'Rêver que son partenaire part vivre à l’étranger, sans vous ou en vous laissant derrière, met en scène une peur d’être délaissé au profit d’un projet ou d’une opportunité extérieure, plus qu’un vrai départ à anticiper. Ce rêve traduit souvent une inquiétude sur votre place dans les priorités de votre partenaire. Rêver de ce départ avec tristesse profonde reflète une peur sincère de perdre une place importante dans sa vie. Rêver de partir avec lui dans ce nouveau pays peut indiquer une confiance réelle dans l’avenir commun du couple, même face au changement. Rêver de rester seul pendant qu’il s’installe ailleurs renvoie souvent à un sentiment d’être secondaire par rapport à ses ambitions personnelles. Rêver qu’il revient finalement vers vous exprime un espoir que votre relation résistera aux épreuves et aux changements de vie. Une consultation de voyance amoureuse peut éclairer cette peur d’être délaissé, sans jamais annoncer un vrai départ à venir.',
     pourquoi:
-      'Ce rêve apparaît souvent lorsqu’une inquiétude sur votre place dans les priorités de votre partenaire traverse votre esprit, en particulier face à un projet ambitieux — professionnel, personnel — qui pourrait sembler prendre le pas sur la relation. L’esprit dramatise ce projet en un départ géographique définitif pour rendre visible cette peur d’être relégué au second plan.',
+      'Ce rêve apparaît souvent lorsqu’une inquiétude sur votre place dans les priorités de votre partenaire traverse votre esprit, en particulier face à un projet ambitieux, professionnel, personnel, qui pourrait sembler prendre le pas sur la relation. L’esprit dramatise ce projet en un départ géographique définitif pour rendre visible cette peur d’être relégué au second plan.',
     interpretations: [
       {
         variante: 'Rêver de ce départ avec tristesse profonde',
@@ -2825,7 +2825,7 @@ export const REVES_AMOUR: DreamEntry[] = [
     neProuvePas:
       'Ce rêve n’annonce pas un vrai départ à l’étranger de votre partenaire. Ce n’est pas une prémonition. Il traduit une peur symbolique d’être délaissé au profit d’un projet extérieur, à distinguer d’une information réelle sur les intentions ou les projets concrets de votre partenaire actuel.',
     conseil:
-      'Si un projet réel — professionnel ou personnel — occupe actuellement votre partenaire, exprimez calmement votre besoin d’être inclus dans ses réflexions et ses priorités. Ce rêve invite à un dialogue sur votre place dans ses projets futurs, plutôt qu’à une angoisse silencieuse sur un départ purement imaginaire.',
+      'Si un projet réel, professionnel ou personnel, occupe actuellement votre partenaire, exprimez calmement votre besoin d’être inclus dans ses réflexions et ses priorités. Ce rêve invite à un dialogue sur votre place dans ses projets futurs, plutôt qu’à une angoisse silencieuse sur un départ purement imaginaire.',
     faq: [
       {
         q: 'Rêver que mon partenaire part à l’étranger signifie-t-il qu’il va vraiment partir ?',

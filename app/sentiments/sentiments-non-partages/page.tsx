@@ -1,94 +1,71 @@
-import type { Metadata } from 'next';
 import Link from 'next/link';
-import { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getAuthorSchema } from '@/lib/schema';
-import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
-import VoyantFinalCTA from '@/components/VoyantFinalCTA';
+import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
-export const metadata: Metadata = {
+const config: ContentPageConfig = {
   title: 'Sentiments Non Partagés : Comment Avancer | Voyance',
   description: 'Amour non partagé : comment gérer des sentiments non réciproques. Découvrez les guidances de la voyance pour avancer et retrouver votre équilibre.',
+  url: 'https://www.voyantlove.fr/sentiments/sentiments-non-partages/',
   keywords: ['amour non partagé', 'sentiments non réciproques', 'aimer sans retour', 'amour à sens unique', 'voyance sentiments'],
-  alternates: { canonical: 'https://www.voyantlove.fr/sentiments/sentiments-non-partages/' },
-};
-
-export default function SentimentsNonPartagesPage() {
-  const articleSchema = getArticleSchema({
-    title: 'Sentiments Non Partagés : Comment Avancer',
-    description: 'Amour non partagé : comment gérer des sentiments non réciproques. Découvrez les guidances de la voyance pour avancer et retrouver votre équilibre.',
-    url: 'https://www.voyantlove.fr/sentiments/sentiments-non-partages/',
-    datePublished: '2026-03-22',
-    dateModified: '2026-03-22',
-    keywords: ['amour non partagé', 'sentiments non réciproques', 'aimer sans retour', 'amour à sens unique', 'voyance sentiments'],
-  });
-
-  const faqSchema = getFAQSchema([
-    {
-      question: 'Le tarot peut-il révéler si mes sentiments seront un jour partagés ?',
-      answer: 'Le tarot éclaire les potentiels et les probabilités, pas les certitudes absolues. Un tirage relationnel analyse les sentiments actuels de l\'autre personne, les obstacles qui empêchent la réciprocité, et les évolutions possibles dans les semaines ou mois à venir. Les cartes comme l\'Amoureux ou le Deux de Coupes peuvent indiquer un potentiel de réciprocité, tandis que le Cinq de Coupes ou l\'Ermite suggèrent un chemin solitaire à honorer. La voyance capte aussi les énergies en mouvement, car les sentiments ne sont jamais figés dans le temps.',
-    },
-    {
-      question: 'Comment la voyance aide-t-elle à surmonter un amour non partagé ?',
-      answer: 'La voyance apporte trois choses essentielles face à un amour non réciproque. D\'abord la clarté, en révélant les véritables sentiments de l\'autre personne sans filtre ni illusion. Ensuite la compréhension karmique, en expliquant pourquoi cette situation se présente dans votre parcours d\'âme. Enfin la guidance, en éclairant le chemin vers la guérison et vers un amour qui vous correspond pleinement. Un voyant expérimenté ne se contente pas de constater la non-réciprocité : il vous aide à en comprendre le sens profond et à transformer cette épreuve en opportunité de croissance.',
-    },
-    {
-      question: 'Faut-il avouer ses sentiments quand on aime sans retour ?',
-      answer: 'La réponse dépend de chaque situation. Le tarot peut vous guider sur le timing et l\'opportunité d\'une déclaration. Parfois, exprimer ses sentiments libère de leur poids même si la réponse n\'est pas celle espérée. D\'autres fois, la sagesse commande de garder le silence pour préserver une amitié précieuse ou votre propre dignité. La voyance analyse l\'énergie relationnelle entre vous deux pour déterminer si une déclaration pourrait ouvrir une porte ou en fermer une définitivement. L\'essentiel est d\'agir en alignement avec vos valeurs profondes.',
-    },
-    {
-      question: 'Combien de temps faut-il pour guérir d\'un amour non partagé ?',
-      answer: 'Il n\'existe pas de durée universelle pour guérir d\'un amour à sens unique. La voyance observe que le processus dure généralement de trois à douze mois, selon la profondeur de l\'attachement et votre capacité à vous tourner vers l\'avenir. Les transits de Saturne et de Pluton marquent souvent les périodes de transformation profonde où le détachement devient possible. Le tarot peut identifier où vous en êtes dans ce cycle de guérison et les étapes restantes. La clé est de ne pas forcer le processus mais de l\'accompagner avec patience et bienveillance envers vous-même.',
-    },
-  ]);
-
-  const breadcrumbSchema = getBreadcrumbSchema([
+  datePublished: '2026-03-22',
+  dateModified: '2026-03-22',
+  breadcrumb: [
     { name: 'Accueil', url: 'https://www.voyantlove.fr' },
     { name: 'Sentiments', url: 'https://www.voyantlove.fr/sentiments/' },
     { name: 'Sentiments Non Partagés', url: 'https://www.voyantlove.fr/sentiments/sentiments-non-partages/' },
-  ]);
+  ],
+  header: {
+    emoji: '💔',
+    h1: 'Sentiments Non Partagés : Comment Avancer',
+    subtitle: 'Guidance voyance pour traverser l\'amour non réciproque et retrouver la paix',
+    gradient: 'from-pink-500 via-rose-600 to-pink-700',
+    backLink: { href: '/sentiments', label: 'Sentiments' },
+    anchors: [
+      { href: '#consultation', label: 'Consultation Sentiments', primary: true },
+    ],
+  },
+  accentText: 'text-pink-600',
+  stats: [
+    { icon: '⭐', value: '4.8/5', label: '298 avis' },
+    { icon: '💪', value: '91%', label: 'Ont avancé' },
+    { icon: '🔮', value: '25 min', label: 'Consultation' },
+    { icon: '✨', value: '15 ans', label: 'Expérience' },
+  ],
+  eeat: { colorScheme: 'pink', method: 'Tarot des sentiments et guidance émotionnelle' },
+  cta: { topic: 'sentiments', slug: 'sentiments-non-partages' },
+  faq: [
+    {
+      q: 'Le tarot peut-il révéler si mes sentiments seront un jour partagés ?',
+      a: 'Le tarot éclaire les potentiels et les probabilités, pas les certitudes absolues. Un tirage relationnel analyse les sentiments actuels de l\'autre personne, les obstacles qui empêchent la réciprocité, et les évolutions possibles dans les semaines ou mois à venir. Les cartes comme l\'Amoureux ou le Deux de Coupes peuvent indiquer un potentiel de réciprocité, tandis que le Cinq de Coupes ou l\'Ermite suggèrent un chemin solitaire à honorer. La voyance capte aussi les énergies en mouvement, car les sentiments ne sont jamais figés dans le temps.',
+    },
+    {
+      q: 'Comment la voyance aide-t-elle à surmonter un amour non partagé ?',
+      a: 'La voyance apporte trois choses essentielles face à un amour non réciproque. D\'abord la clarté, en révélant les véritables sentiments de l\'autre personne sans filtre ni illusion. Ensuite la compréhension karmique, en expliquant pourquoi cette situation se présente dans votre parcours d\'âme. Enfin la guidance, en éclairant le chemin vers la guérison et vers un amour qui vous correspond pleinement. Un voyant expérimenté ne se contente pas de constater la non-réciprocité : il vous aide à en comprendre le sens profond et à transformer cette épreuve en opportunité de croissance.',
+    },
+    {
+      q: 'Faut-il avouer ses sentiments quand on aime sans retour ?',
+      a: 'La réponse dépend de chaque situation. Le tarot peut vous guider sur le timing et l\'opportunité d\'une déclaration. Parfois, exprimer ses sentiments libère de leur poids même si la réponse n\'est pas celle espérée. D\'autres fois, la sagesse commande de garder le silence pour préserver une amitié précieuse ou votre propre dignité. La voyance analyse l\'énergie relationnelle entre vous deux pour déterminer si une déclaration pourrait ouvrir une porte ou en fermer une définitivement. L\'essentiel est d\'agir en alignement avec vos valeurs profondes.',
+    },
+    {
+      q: 'Combien de temps faut-il pour guérir d\'un amour non partagé ?',
+      a: 'Il n\'existe pas de durée universelle pour guérir d\'un amour à sens unique. La voyance observe que le processus dure généralement de trois à douze mois, selon la profondeur de l\'attachement et votre capacité à vous tourner vers l\'avenir. Les transits de Saturne et de Pluton marquent souvent les périodes de transformation profonde où le détachement devient possible. Le tarot peut identifier où vous en êtes dans ce cycle de guérison et les étapes restantes. La clé est de ne pas forcer le processus mais de l\'accompagner avec patience et bienveillance envers vous-même.',
+    },
+  ],
+  related: [
+    { href: '/sentiments/maime-t-il-elle', label: 'M\'aime-t-il / M\'aime-t-elle Encore ?' },
+    { href: '/sentiments/pense-t-il-elle-a-moi', label: 'Pense-t-il/elle à Moi ?' },
+    { href: '/rupture/chagrin-damour', label: 'Surmonter un Chagrin d\'Amour' },
+    { href: '/reconquete/sentiments-peuvent-ils-revenir-couple', label: 'Les Sentiments Peuvent-ils Revenir dans un Couple ?' },
+  ],
+};
 
-  const authorSchema = getAuthorSchema();
+export const metadata = contentMeta(config);
+
+export default function SentimentsNonPartagesPage() {
 
   return (
-    <main className="min-h-screen bg-gray-50">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(authorSchema) }}
-      />
-      <header className="bg-gradient-to-r from-pink-500 via-rose-600 to-pink-700 text-white py-16 px-4">
-        <div className="max-w-4xl mx-auto">
-          <Link href="/sentiments" className="text-white/80 hover:text-white mb-4 inline-block">&larr; Sentiments</Link>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">💔 Sentiments Non Partagés : Comment Avancer</h1>
-          <p className="text-xl opacity-95 mb-6">Guidance voyance pour traverser l&apos;amour non réciproque et retrouver la paix</p>
-          <a href="#consultation" className="bg-white text-pink-600 px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition inline-block">Consultation Sentiments</a>
-        </div>
-      </header>
-
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <div className="bg-white rounded-xl shadow-md p-6 mb-8 grid grid-cols-4 gap-4 text-center">
-          <div><div className="text-3xl mb-1">⭐</div><div className="text-2xl font-bold text-pink-600">4.8/5</div><div className="text-sm text-gray-600">298 avis</div></div>
-          <div><div className="text-3xl mb-1">💪</div><div className="text-2xl font-bold text-pink-600">91%</div><div className="text-sm text-gray-600">Ont avancé</div></div>
-          <div><div className="text-3xl mb-1">🔮</div><div className="text-2xl font-bold text-pink-600">25 min</div><div className="text-sm text-gray-600">Consultation</div></div>
-          <div><div className="text-3xl mb-1">✨</div><div className="text-2xl font-bold text-pink-600">15 ans</div><div className="text-sm text-gray-600">Expérience</div></div>
-        </div>
-
-        <EEATSignal
-          colorScheme="pink"
-          method="Tarot des sentiments et guidance émotionnelle"
-        />
+    <ContentPage config={config}>
 
         <article className="bg-pink-50 border-l-4 border-pink-500 rounded-xl shadow-md p-8 mb-8">
           <p className="text-lg leading-relaxed mb-4">
@@ -210,41 +187,6 @@ export default function SentimentsNonPartagesPage() {
           </p>
         </section>
 
-        <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">❓ Questions Fréquentes</h2>
-          <p className="text-lg font-semibold text-gray-800 mb-4">Les réponses aux questions les plus posées sur les sentiments non partagés, la voyance et le chemin vers la guérison émotionnelle.</p>
-          <div className="space-y-6">
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Le tarot peut-il révéler si mes sentiments seront un jour partagés ?</h3>
-              <p className="text-gray-700 leading-relaxed">Le <strong>tarot</strong> éclaire les potentiels et les probabilités, pas les certitudes absolues. Un tirage relationnel analyse les <strong>sentiments</strong> actuels de l&apos;autre personne, les obstacles qui empêchent la réciprocité, et les évolutions possibles. Les cartes comme l&apos;Amoureux ou le Deux de Coupes peuvent indiquer un potentiel de réciprocité, tandis que le Cinq de Coupes ou l&apos;Ermite suggèrent un chemin solitaire à honorer. La <strong>voyance</strong> capte aussi les <strong>énergies</strong> en mouvement, car les sentiments ne sont jamais figés dans le temps.</p>
-            </div>
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Comment la voyance aide-t-elle à surmonter un amour non partagé ?</h3>
-              <p className="text-gray-700 leading-relaxed">La <strong>voyance</strong> apporte trois choses essentielles face à un <strong>amour non réciproque</strong>. D&apos;abord la clarté, en révélant les véritables <strong>sentiments</strong> de l&apos;autre personne sans filtre ni illusion. Ensuite la compréhension <strong>karmique</strong>, en expliquant pourquoi cette situation se présente dans votre parcours d&apos;âme. Enfin la guidance, en éclairant le chemin vers la <strong>guérison</strong> et vers un <strong>amour</strong> qui vous correspond pleinement.</p>
-            </div>
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Faut-il avouer ses sentiments quand on aime sans retour ?</h3>
-              <p className="text-gray-700 leading-relaxed">La réponse dépend de chaque situation. Le <strong>tarot</strong> peut vous guider sur le timing et l&apos;opportunité d&apos;une déclaration. Parfois, exprimer ses <strong>sentiments</strong> libère de leur poids même si la réponse n&apos;est pas celle espérée. D&apos;autres fois, la sagesse commande le silence pour préserver une amitié précieuse. La <strong>voyance</strong> analyse l&apos;<strong>énergie relationnelle</strong> entre vous deux pour déterminer si une déclaration pourrait ouvrir une porte ou en fermer une définitivement.</p>
-            </div>
-            <div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Combien de temps faut-il pour guérir d&apos;un amour non partagé ?</h3>
-              <p className="text-gray-700 leading-relaxed">Il n&apos;existe pas de durée universelle. La <strong>voyance</strong> observe que le processus dure généralement de trois à douze mois, selon la profondeur de l&apos;attachement et votre capacité à vous tourner vers l&apos;avenir. Les transits de <strong>Saturne</strong> et de <strong>Pluton</strong> marquent souvent les périodes de transformation profonde où le détachement devient possible. Le <strong>tarot</strong> identifie où vous en êtes dans ce cycle de <strong>guérison</strong> et les étapes restantes à franchir.</p>
-            </div>
-          </div>
-        </section>
-
-        <div className="bg-gray-100 rounded-xl p-6 mb-8">
-          <h3 className="font-bold text-lg mb-4 text-gray-900">📚 Articles Connexes</h3>
-          <div className="space-y-2">
-            <Link href="/sentiments/maime-t-il-elle" className="block text-pink-600 hover:text-pink-800 font-medium">&rarr; M&apos;aime-t-il / M&apos;aime-t-elle Encore ?</Link>
-            <Link href="/sentiments/pense-t-il-elle-a-moi" className="block text-pink-600 hover:text-pink-800 font-medium">&rarr; Pense-t-il/elle à Moi ?</Link>
-            <Link href="/rupture/chagrin-damour" className="block text-pink-600 hover:text-pink-800 font-medium">&rarr; Surmonter un Chagrin d&apos;Amour</Link>
-            <Link href="/reconquete/sentiments-peuvent-ils-revenir-couple" className="block text-pink-600 hover:text-pink-800 font-medium">&rarr; Les Sentiments Peuvent-ils Revenir dans un Couple ?</Link>
-          </div>
-        </div>
-
-        <VoyantFinalCTA topic="sentiments" source="sentiments-non-partages-final" />
-      </div>
-    </main>
+      </ContentPage>
   );
 }

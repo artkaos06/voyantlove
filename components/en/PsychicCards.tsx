@@ -6,7 +6,7 @@
 // lib/keenAdvisors.ts) with rating, price, specialty chips, and a direct
 // affiliate CTA. The cards are designed to look enough like Keen's actual
 // browse UI that visitors immediately understand what they'll get on the
-// other side of the click — which is the message-match win that converts
+// other side of the click, which is the message-match win that converts
 // commercial-intent traffic.
 //
 // CTA behavior: every card's button forwards gclid/gbraid/wbraid through
@@ -107,7 +107,7 @@ export default function PsychicCards({
 /**
  * Pseudo-random "last reading" timestamp for an advisor card.
  * Deterministic per-name so SSR + client agree. Values cluster between
- * 1-30 minutes ago — believable for a busy platform.
+ * 1-30 minutes ago, believable for a busy platform.
  */
 function lastReadingMinutesAgo(name: string): number {
   // Simple hash from name to a number 1-30.
@@ -163,7 +163,7 @@ function AdvisorCard({
         </div>
       </div>
 
-      {/* Hook — outcome-led copy */}
+      {/* Hook, outcome-led copy */}
       <div className="px-4 pb-3">
         <p className="text-sm text-gray-800 leading-relaxed font-medium">
           {advisor.hook}
@@ -232,7 +232,7 @@ function Avatar({ advisor }: { advisor: KeenAdvisor }) {
       <div className="relative h-14 w-14 flex-shrink-0 rounded-full overflow-hidden ring-2 ring-purple-200">
         <Image
           src={advisor.photoSrc}
-          alt={`${advisor.name} — psychic advisor on Keen`}
+          alt={`${advisor.name}, psychic advisor on Keen`}
           fill
           sizes="56px"
           className="object-cover"

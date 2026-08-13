@@ -1,106 +1,76 @@
-import type { Metadata } from 'next';
 import Link from 'next/link';
-import { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getAuthorSchema } from '@/lib/schema';
-import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
-import VoyantFinalCTA from '@/components/VoyantFinalCTA';
+import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
-export const metadata: Metadata = {
+const config: ContentPageConfig = {
   title: 'Voyance par T\u00e9l\u00e9phone Amour : Consultation Sentimentale \u00e0 Distance',
   description: 'D\u00e9couvrez la voyance par t\u00e9l\u00e9phone pour l\u2019amour : consultation sentimentale imm\u00e9diate, guidance amoureuse \u00e0 distance, voyant sp\u00e9cialis\u00e9 en questions de c\u0153ur. Disponible 24h/24.',
+  url: 'https://www.voyantlove.fr/methodes-voyance/voyance-telephone-amour/',
   keywords: ['voyance par t\u00e9l\u00e9phone amour', 'consultation sentimentale t\u00e9l\u00e9phone', 'voyant amour t\u00e9l\u00e9phone', 'voyance amoureuse \u00e0 distance', 'guidance amoureuse t\u00e9l\u00e9phonique'],
-  alternates: {
-    canonical: 'https://www.voyantlove.fr/methodes-voyance/voyance-telephone-amour/',
-  },
-};
-
-export default function VoyanceTelephoneAmourPage() {
-  const articleSchema = getArticleSchema({
-    title: 'Voyance par T\u00e9l\u00e9phone Amour : Consultation Sentimentale \u00e0 Distance',
-    description: 'D\u00e9couvrez la voyance par t\u00e9l\u00e9phone pour l\u2019amour : consultation sentimentale imm\u00e9diate, guidance amoureuse \u00e0 distance, voyant sp\u00e9cialis\u00e9 en questions de c\u0153ur. Disponible 24h/24.',
-    url: 'https://www.voyantlove.fr/methodes-voyance/voyance-telephone-amour/',
-    datePublished: '2026-03-07',
-    dateModified: '2026-03-07',
-    keywords: ['voyance par t\u00e9l\u00e9phone amour', 'consultation sentimentale t\u00e9l\u00e9phone', 'voyant amour t\u00e9l\u00e9phone', 'voyance amoureuse \u00e0 distance', 'guidance amoureuse t\u00e9l\u00e9phonique'],
-  });
-
-  const authorSchema = getAuthorSchema();
-
-  const breadcrumbSchema = getBreadcrumbSchema([
+  datePublished: '2026-03-07',
+  dateModified: '2026-03-07',
+  breadcrumb: [
     { name: 'Accueil', url: 'https://www.voyantlove.fr' },
     { name: 'M\u00e9thodes de Voyance', url: 'https://www.voyantlove.fr/methodes-voyance/' },
     { name: 'Voyance par T\u00e9l\u00e9phone Amour', url: 'https://www.voyantlove.fr/methodes-voyance/voyance-telephone-amour/' },
-  ]);
+  ],
+  header: {
+    emoji: '📞',
+    h1: 'Voyance par Téléphone Amour',
+    subtitle: 'Consultation sentimentale à distance pour éclairer votre vie amoureuse, disponible 24h/24',
+    gradient: 'from-indigo-500 via-violet-500 to-purple-500',
+    backLink: { href: '/methodes-voyance', label: 'Retour aux Méthodes de Voyance' },
+    anchors: [
+      { href: '#consultation', label: 'Consulter Maintenant', primary: true },
+      { href: '#avantages', label: 'Les Avantages' },
+    ],
+  },
+  accentText: 'text-indigo-600',
+  stats: [
+    { icon: '📞', value: '24h/24', label: 'Disponibilité' },
+    { icon: '🔮', value: 'Immédiat', label: 'Accès rapide' },
+    { icon: '⭐', value: 'Élevée', label: 'Satisfaction' },
+    { icon: '🔒', value: '100%', label: 'Confidentiel' },
+  ],
+  eeat: { colorScheme: 'purple', method: 'Voyance par téléphone et guidance sentimentale' },
+  cta: { topic: 'methodes-voyance', slug: 'voyance-telephone-amour' },
+  faq: [
+    {
+      q: 'Prix d\u2019une voyance par t\u00e9l\u00e9phone amour ?',
+      a: 'Le tarif d\u2019une voyance par t\u00e9l\u00e9phone pour l\u2019amour varie g\u00e9n\u00e9ralement entre 2 et 5 euros la minute selon l\u2019exp\u00e9rience du voyant et la plateforme choisie. Certains cabinets proposent des forfaits de 20 \u00e0 30 minutes \u00e0 prix r\u00e9duit, id\u00e9aux pour une premi\u00e8re consultation sentimentale. Les premi\u00e8res minutes sont souvent offertes pour \u00e9tablir la connexion avec le voyant. Un budget moyen de 30 \u00e0 50 euros permet une consultation compl\u00e8te et approfondie sur votre situation amoureuse. Comparez toujours les offres et v\u00e9rifiez les avis clients avant de choisir votre voyant sp\u00e9cialis\u00e9 en amour.',
+    },
+    {
+      q: 'Dur\u00e9e d\u2019une consultation voyance amour par t\u00e9l\u00e9phone ?',
+      a: 'Une consultation t\u00e9l\u00e9phonique de voyance amoureuse dure en moyenne 20 \u00e0 40 minutes. Les dix premi\u00e8res minutes permettent au voyant de capter vos \u00e9nergies sentimentales et d\u2019\u00e9tablir la connexion. Le c\u0153ur de la consultation, entre 10 et 20 minutes, est consacr\u00e9 \u00e0 l\u2019exploration de vos questions amoureuses et \u00e0 la guidance personnalis\u00e9e. Les derni\u00e8res minutes servent \u00e0 synth\u00e9tiser les messages re\u00e7us et \u00e0 formuler des conseils concrets. Pour une premi\u00e8re consultation, pr\u00e9voyez 30 minutes afin de laisser le temps au voyant de bien cerner votre situation sentimentale.',
+    },
+    {
+      q: 'Voyance par t\u00e9l\u00e9phone : aussi fiable qu\u2019en cabinet ?',
+      a: 'Oui, la voyance par t\u00e9l\u00e9phone est tout aussi fiable qu\u2019une consultation en cabinet. Les voyants authentiques travaillent avec les \u00e9nergies et la vibration de la voix, qui se transmettent parfaitement par t\u00e9l\u00e9phone. La distance physique n\u2019affecte pas la clairvoyance ni la connexion intuitive du praticien. De nombreux voyants affirment m\u00eame que le t\u00e9l\u00e9phone favorise une meilleure concentration, sans distractions visuelles. L\u2019essentiel est de choisir un voyant exp\u00e9riment\u00e9 et reconnu dans le domaine de la voyance amoureuse pour garantir la qualit\u00e9 de la guidance re\u00e7ue.',
+    },
+    {
+      q: 'Peut-on appeler un voyant \u00e0 toute heure ?',
+      a: 'La plupart des plateformes de voyance par t\u00e9l\u00e9phone proposent un service disponible 24 heures sur 24, 7 jours sur 7. Les urgences sentimentales ne respectent pas les horaires de bureau, et les meilleurs cabinets l\u2019ont compris. En soir\u00e9e et la nuit, les appels sont souvent moins nombreux, ce qui permet des consultations plus longues et plus approfondies. Les week-ends sont \u00e9galement propices aux consultations amoureuses car vous \u00eates plus d\u00e9tendu. V\u00e9rifiez toutefois la disponibilit\u00e9 de votre voyant pr\u00e9f\u00e9r\u00e9, car certains praticiens ont des horaires d\u00e9finis.',
+    },
+    {
+      q: 'Comment choisir un bon voyant par t\u00e9l\u00e9phone ?',
+      a: 'Pour choisir le bon voyant par t\u00e9l\u00e9phone, privil\u00e9giez les praticiens sp\u00e9cialis\u00e9s en voyance amoureuse avec au moins cinq ans d\u2019exp\u00e9rience. Consultez les avis et t\u00e9moignages d\u2019autres consultants pour \u00e9valuer la pr\u00e9cision de leurs pr\u00e9dictions sentimentales. Un bon voyant ne pose pas de questions pi\u00e8ges et ne cherche pas \u00e0 prolonger inutilement la consultation. V\u00e9rifiez qu\u2019il ma\u00eetrise plusieurs m\u00e9thodes de voyance comme le tarot, l\u2019oracle ou la clairvoyance pure. Enfin, faites confiance \u00e0 votre ressenti lors des premi\u00e8res minutes : la connexion \u00e9nerg\u00e9tique doit \u00eatre naturelle et fluide.',
+    },
+  ],
+  related: [
+    { href: '/methodes-voyance/tirage-tarot-amour', label: 'Tirage de Tarot Amoureux : Guide Complet' },
+    { href: '/methodes-voyance/oracle-amour', label: 'Oracle de l\'Amour : Guidance Sentimentale par les Cartes' },
+    { href: '/methodes-voyance/pendule-amour', label: 'Pendule Amour : Réponses Précises à Vos Questions Sentimentales' },
+    { href: '/methodes-voyance/astrologie-amoureuse', label: 'Astrologie Amoureuse : Compatibilité Astrale' },
+    { href: '/sentiments/avenir-amoureux', label: 'Mon Avenir Amoureux : Prédictions Sentimentales' },
+  ],
+};
 
-  const faqSchema = getFAQSchema([
-    {
-      question: 'Prix d\u2019une voyance par t\u00e9l\u00e9phone amour ?',
-      answer: 'Le tarif d\u2019une voyance par t\u00e9l\u00e9phone pour l\u2019amour varie g\u00e9n\u00e9ralement entre 2 et 5 euros la minute selon l\u2019exp\u00e9rience du voyant et la plateforme choisie. Certains cabinets proposent des forfaits de 20 \u00e0 30 minutes \u00e0 prix r\u00e9duit, id\u00e9aux pour une premi\u00e8re consultation sentimentale. Les premi\u00e8res minutes sont souvent offertes pour \u00e9tablir la connexion avec le voyant. Un budget moyen de 30 \u00e0 50 euros permet une consultation compl\u00e8te et approfondie sur votre situation amoureuse. Comparez toujours les offres et v\u00e9rifiez les avis clients avant de choisir votre voyant sp\u00e9cialis\u00e9 en amour.',
-    },
-    {
-      question: 'Dur\u00e9e d\u2019une consultation voyance amour par t\u00e9l\u00e9phone ?',
-      answer: 'Une consultation t\u00e9l\u00e9phonique de voyance amoureuse dure en moyenne 20 \u00e0 40 minutes. Les dix premi\u00e8res minutes permettent au voyant de capter vos \u00e9nergies sentimentales et d\u2019\u00e9tablir la connexion. Le c\u0153ur de la consultation, entre 10 et 20 minutes, est consacr\u00e9 \u00e0 l\u2019exploration de vos questions amoureuses et \u00e0 la guidance personnalis\u00e9e. Les derni\u00e8res minutes servent \u00e0 synth\u00e9tiser les messages re\u00e7us et \u00e0 formuler des conseils concrets. Pour une premi\u00e8re consultation, pr\u00e9voyez 30 minutes afin de laisser le temps au voyant de bien cerner votre situation sentimentale.',
-    },
-    {
-      question: 'Voyance par t\u00e9l\u00e9phone : aussi fiable qu\u2019en cabinet ?',
-      answer: 'Oui, la voyance par t\u00e9l\u00e9phone est tout aussi fiable qu\u2019une consultation en cabinet. Les voyants authentiques travaillent avec les \u00e9nergies et la vibration de la voix, qui se transmettent parfaitement par t\u00e9l\u00e9phone. La distance physique n\u2019affecte pas la clairvoyance ni la connexion intuitive du praticien. De nombreux voyants affirment m\u00eame que le t\u00e9l\u00e9phone favorise une meilleure concentration, sans distractions visuelles. L\u2019essentiel est de choisir un voyant exp\u00e9riment\u00e9 et reconnu dans le domaine de la voyance amoureuse pour garantir la qualit\u00e9 de la guidance re\u00e7ue.',
-    },
-    {
-      question: 'Peut-on appeler un voyant \u00e0 toute heure ?',
-      answer: 'La plupart des plateformes de voyance par t\u00e9l\u00e9phone proposent un service disponible 24 heures sur 24, 7 jours sur 7. Les urgences sentimentales ne respectent pas les horaires de bureau, et les meilleurs cabinets l\u2019ont compris. En soir\u00e9e et la nuit, les appels sont souvent moins nombreux, ce qui permet des consultations plus longues et plus approfondies. Les week-ends sont \u00e9galement propices aux consultations amoureuses car vous \u00eates plus d\u00e9tendu. V\u00e9rifiez toutefois la disponibilit\u00e9 de votre voyant pr\u00e9f\u00e9r\u00e9, car certains praticiens ont des horaires d\u00e9finis.',
-    },
-    {
-      question: 'Comment choisir un bon voyant par t\u00e9l\u00e9phone ?',
-      answer: 'Pour choisir le bon voyant par t\u00e9l\u00e9phone, privil\u00e9giez les praticiens sp\u00e9cialis\u00e9s en voyance amoureuse avec au moins cinq ans d\u2019exp\u00e9rience. Consultez les avis et t\u00e9moignages d\u2019autres consultants pour \u00e9valuer la pr\u00e9cision de leurs pr\u00e9dictions sentimentales. Un bon voyant ne pose pas de questions pi\u00e8ges et ne cherche pas \u00e0 prolonger inutilement la consultation. V\u00e9rifiez qu\u2019il ma\u00eetrise plusieurs m\u00e9thodes de voyance comme le tarot, l\u2019oracle ou la clairvoyance pure. Enfin, faites confiance \u00e0 votre ressenti lors des premi\u00e8res minutes : la connexion \u00e9nerg\u00e9tique doit \u00eatre naturelle et fluide.',
-    },
-  ]);
+export const metadata = contentMeta(config);
 
+export default function VoyanceTelephoneAmourPage() {
   return (
-    <main className="min-h-screen bg-gray-50">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(authorSchema) }}
-      />
-
-      {/* Header */}
-      <header className="bg-gradient-to-r from-indigo-500 via-violet-500 to-purple-500 text-white py-16 px-4">
-        <div className="max-w-4xl mx-auto">
-          <Link href="/methodes-voyance" className="text-white/80 hover:text-white mb-4 inline-block">&larr; Retour aux M&eacute;thodes de Voyance</Link>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">&#x1F4DE; Voyance par T&eacute;l&eacute;phone Amour</h1>
-          <p className="text-xl opacity-95 mb-6">Consultation sentimentale &agrave; distance pour &eacute;clairer votre vie amoureuse, disponible 24h/24</p>
-          <div className="flex gap-4 flex-wrap">
-            <a href="#consultation" className="bg-white text-indigo-600 px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition">Consulter Maintenant</a>
-            <a href="#avantages" className="border-2 border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-indigo-600 transition">Les Avantages</a>
-          </div>
-        </div>
-      </header>
-
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        {/* Stats bar */}
-        <div className="bg-white rounded-xl shadow-md p-6 mb-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-          <div><div className="text-3xl mb-1">&#x1F4DE;</div><div className="text-2xl font-bold text-indigo-600">24h/24</div><div className="text-sm text-gray-600">Disponibilit&eacute;</div></div>
-          <div><div className="text-3xl mb-1">&#x1F52E;</div><div className="text-2xl font-bold text-indigo-600">Imm&eacute;diat</div><div className="text-sm text-gray-600">Acc&egrave;s rapide</div></div>
-          <div><div className="text-3xl mb-1">&#x2B50;</div><div className="text-2xl font-bold text-indigo-600">&Eacute;lev&eacute;e</div><div className="text-sm text-gray-600">Satisfaction</div></div>
-          <div><div className="text-3xl mb-1">&#x1F512;</div><div className="text-2xl font-bold text-indigo-600">100%</div><div className="text-sm text-gray-600">Confidentiel</div></div>
-        </div>
-
-        {/* EEAT Signal */}
-        <EEATSignal colorScheme="purple" method="Voyance par t&eacute;l&eacute;phone et guidance sentimentale" />
-
-        {/* Answer Capsule */}
+    <ContentPage config={config}>
         <article className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-indigo-600">
           <div className="bg-violet-50 border-l-4 border-violet-500 p-6 rounded-lg">
             <p className="text-lg leading-relaxed">
@@ -300,54 +270,6 @@ export default function VoyanceTelephoneAmourPage() {
             </div>
           </div>
         </section>
-
-        {/* FAQ Section */}
-        <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">&#x2753; Questions Fr&eacute;quentes sur la Voyance par T&eacute;l&eacute;phone Amour</h2>
-          <p className="text-lg font-semibold text-gray-800 mb-4">Les questions les plus pos&eacute;es concernent le co&ucirc;t d&apos;une consultation (2 &agrave; 5 euros/minute), la dur&eacute;e moyenne (20 &agrave; 40 minutes), la fiabilit&eacute; par rapport au cabinet et la disponibilit&eacute; 24h/24.</p>
-          <div className="space-y-6">
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Prix d&apos;une voyance par t&eacute;l&eacute;phone amour ?</h3>
-              <p className="text-gray-700 leading-relaxed">Le tarif d&apos;une <strong>voyance par t&eacute;l&eacute;phone</strong> pour l&apos;amour varie g&eacute;n&eacute;ralement entre 2 et 5 euros la minute selon l&apos;exp&eacute;rience du <strong>voyant</strong> et la plateforme choisie. Certains cabinets proposent des forfaits de 20 &agrave; 30 minutes &agrave; prix r&eacute;duit, id&eacute;aux pour une premi&egrave;re <strong>consultation sentimentale</strong>. Les premi&egrave;res minutes sont souvent offertes pour &eacute;tablir la connexion avec le voyant. Un budget moyen de 30 &agrave; 50 euros permet une consultation compl&egrave;te et approfondie sur votre <strong>situation amoureuse</strong>. Comparez toujours les offres et v&eacute;rifiez les avis clients avant de choisir votre <strong>voyant</strong> sp&eacute;cialis&eacute; en amour.</p>
-            </div>
-
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Dur&eacute;e d&apos;une consultation voyance amour par t&eacute;l&eacute;phone ?</h3>
-              <p className="text-gray-700 leading-relaxed">Une <strong>consultation t&eacute;l&eacute;phonique</strong> de <strong>voyance amoureuse</strong> dure en moyenne 20 &agrave; 40 minutes. Les dix premi&egrave;res minutes permettent au <strong>voyant</strong> de capter vos &eacute;nergies sentimentales et d&apos;&eacute;tablir la connexion. Le c&oelig;ur de la consultation, entre 10 et 20 minutes, est consacr&eacute; &agrave; l&apos;exploration de vos <strong>questions amoureuses</strong> et &agrave; la <strong>guidance</strong> personnalis&eacute;e. Les derni&egrave;res minutes servent &agrave; synth&eacute;tiser les messages re&ccedil;us et &agrave; formuler des conseils concrets. Pour une premi&egrave;re consultation, pr&eacute;voyez 30 minutes afin de laisser le temps au voyant de bien cerner votre <strong>situation sentimentale</strong>.</p>
-            </div>
-
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Voyance par t&eacute;l&eacute;phone : aussi fiable qu&apos;en cabinet ?</h3>
-              <p className="text-gray-700 leading-relaxed">Oui, la <strong>voyance par t&eacute;l&eacute;phone</strong> est tout aussi fiable qu&apos;une consultation en cabinet. Les <strong>voyants</strong> authentiques travaillent avec les &eacute;nergies et la vibration de la voix, qui se transmettent parfaitement par t&eacute;l&eacute;phone. La distance physique n&apos;affecte pas la <strong>clairvoyance</strong> ni la connexion intuitive du praticien. De nombreux voyants affirment m&ecirc;me que le t&eacute;l&eacute;phone favorise une meilleure concentration, sans distractions visuelles. L&apos;essentiel est de choisir un <strong>voyant</strong> exp&eacute;riment&eacute; et reconnu dans le domaine de la <strong>voyance amoureuse</strong> pour garantir la qualit&eacute; de la <strong>guidance sentimentale</strong> re&ccedil;ue.</p>
-            </div>
-
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Peut-on appeler un voyant &agrave; toute heure ?</h3>
-              <p className="text-gray-700 leading-relaxed">La plupart des plateformes de <strong>voyance par t&eacute;l&eacute;phone</strong> proposent un service disponible 24 heures sur 24, 7 jours sur 7. Les urgences sentimentales ne respectent pas les horaires de bureau, et les meilleurs cabinets l&apos;ont compris. En soir&eacute;e et la nuit, les appels sont souvent moins nombreux, ce qui permet des <strong>consultations</strong> plus longues et plus approfondies. Les week-ends sont &eacute;galement propices aux <strong>consultations amoureuses</strong> car vous &ecirc;tes plus d&eacute;tendu. V&eacute;rifiez toutefois la disponibilit&eacute; de votre <strong>voyant</strong> pr&eacute;f&eacute;r&eacute;, car certains praticiens ont des horaires d&eacute;finis.</p>
-            </div>
-
-            <div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Comment choisir un bon voyant par t&eacute;l&eacute;phone ?</h3>
-              <p className="text-gray-700 leading-relaxed">Pour choisir le bon <strong>voyant</strong> par t&eacute;l&eacute;phone, privil&eacute;giez les praticiens sp&eacute;cialis&eacute;s en <strong>voyance amoureuse</strong> avec au moins cinq ans d&apos;exp&eacute;rience. Consultez les avis et t&eacute;moignages d&apos;autres consultants pour &eacute;valuer la pr&eacute;cision de leurs pr&eacute;dictions sentimentales. Un bon <strong>voyant amour</strong> ne pose pas de questions pi&egrave;ges et ne cherche pas &agrave; prolonger inutilement la <strong>consultation</strong>. V&eacute;rifiez qu&apos;il ma&icirc;trise plusieurs m&eacute;thodes de voyance comme le <strong>tarot</strong>, l&apos;oracle ou la <strong>clairvoyance</strong> pure. Enfin, faites confiance &agrave; votre ressenti lors des premi&egrave;res minutes : la connexion &eacute;nerg&eacute;tique doit &ecirc;tre naturelle et fluide.</p>
-            </div>
-          </div>
-        </section>
-
-        {/* Articles Connexes */}
-        <div className="bg-gray-100 rounded-xl p-6 mb-8">
-          <h3 className="font-bold text-lg mb-4 text-gray-900">&#x1F4DA; Articles Connexes</h3>
-          <div className="space-y-2">
-            <Link href="/methodes-voyance/tirage-tarot-amour" className="block text-indigo-600 hover:text-indigo-800 font-medium">&rarr; Tirage de Tarot Amoureux : Guide Complet</Link>
-            <Link href="/methodes-voyance/oracle-amour" className="block text-indigo-600 hover:text-indigo-800 font-medium">&rarr; Oracle de l&apos;Amour : Guidance Sentimentale par les Cartes</Link>
-            <Link href="/methodes-voyance/pendule-amour" className="block text-indigo-600 hover:text-indigo-800 font-medium">&rarr; Pendule Amour : R&eacute;ponses Pr&eacute;cises &agrave; Vos Questions Sentimentales</Link>
-            <Link href="/methodes-voyance/astrologie-amoureuse" className="block text-indigo-600 hover:text-indigo-800 font-medium">&rarr; Astrologie Amoureuse : Compatibilit&eacute; Astrale</Link>
-            <Link href="/sentiments/avenir-amoureux" className="block text-indigo-600 hover:text-indigo-800 font-medium">&rarr; Mon Avenir Amoureux : Pr&eacute;dictions Sentimentales</Link>
-          </div>
-        </div>
-
-        {/* CTA Footer */}
-        <VoyantFinalCTA topic="methodes-voyance" source="voyance-telephone-amour-final" />
-      </div>
-    </main>
+    </ContentPage>
   );
 }

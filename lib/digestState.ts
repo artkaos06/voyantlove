@@ -1,4 +1,4 @@
-// In-memory daily digest state — server-only.
+// In-memory daily digest state, server-only.
 //
 // Tracks event counts for the current UTC day so the daily Discord digest
 // can post real numbers. Resets automatically at UTC midnight (or whenever

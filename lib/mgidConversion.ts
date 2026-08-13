@@ -1,12 +1,11 @@
-// MGID conversion feedback — relays a phone-CTA tap back to MGID so its
+// MGID conversion feedback, relays a phone-CTA tap back to MGID so its
 // algorithm can optimise toward people who actually tap, instead of toward
 // cheap clicks. This was flagged as deferred work in ADS-CONSULTING-PLAN.md
 // ("relaying conversions back to MGID/Taboola S2S so the native algorithm
 // self-optimises"); this is the plumbing for it.
 //
-// FIRED SERVER-SIDE, on purpose. The obvious client-side version —
-//   var img = new Image(); img.src = 'https://.../track?c=' + clickId;
-// — is unreliable here: it runs at the instant the browser navigates to the
+// FIRED SERVER-SIDE, on purpose. The obvious client-side version, //   var img = new Image(); img.src = 'https://.../track?c=' + clickId;
+//, is unreliable here: it runs at the instant the browser navigates to the
 // tel: URL, and in-flight subresource requests are cancelled on navigation.
 // That is the same reason the tel-click beacon uses navigator.sendBeacon.
 // By the time this runs we already hold click_id server-side, so there is no
@@ -16,7 +15,7 @@
 // (https://www.mgid.com/conversion/track?c=…) was proposed, but verified
 // 2026-07-25 to be a catch-all: it returns MGID's 225,948-byte marketing
 // homepage, byte-identical to a deliberately invalid path. It answers 200 to
-// anything, so a wrong URL fails SILENTLY — the worst failure mode, because
+// anything, so a wrong URL fails SILENTLY, the worst failure mode, because
 // the campaign looks instrumented while MGID receives nothing.
 //
 // Get the real postback/pixel URL from the MGID dashboard (Conversions
@@ -37,7 +36,7 @@ export interface MgidConversionInput {
 
 /**
  * Best-effort: never throws, never blocks the caller for long. Returns what
- * happened so the caller can log it — silence is the failure mode we are
+ * happened so the caller can log it, silence is the failure mode we are
  * specifically guarding against here.
  */
 export async function sendMgidConversion(
@@ -46,7 +45,7 @@ export async function sendMgidConversion(
   const template = process.env.MGID_CONVERSION_URL;
   if (!template) return 'skipped_no_url';
   // No click_id means the visitor did not arrive through an MGID placement
-  // (direct, ad preview, organic) — there is nothing to attribute.
+  // (direct, ad preview, organic), there is nothing to attribute.
   if (!i.clickId) return 'skipped_no_click_id';
 
   const url = template

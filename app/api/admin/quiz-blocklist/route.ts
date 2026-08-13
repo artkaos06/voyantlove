@@ -1,8 +1,8 @@
-// Quiz blocklist — turns per-source email-lead attribution into an MGID-ready
+// Quiz blocklist, turns per-source email-lead attribution into an MGID-ready
 // kill-list, no spend feed required.
 //
 // Every quiz email is attributed to its MGID {source} (widget). A widget that
-// pulled real traffic but produced ZERO email leads is clear waste — starts are
+// pulled real traffic but produced ZERO email leads is clear waste, starts are
 // a fair proxy for spend at similar CPCs. This aggregates per-source over `days`
 // and flags widgets with starts ≥ min_starts and 0 emails; &format=csv exports
 // the source names for MGID's blocklist import.
@@ -85,7 +85,7 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
   const rows = Object.values(agg).filter((r) => !isNoise(r.source));
 
   // Statistical gate. At a ~1% base conversion rate, a source with 22 loads is
-  // *expected* to produce 0.2 emails — so "0 emails" there proves nothing, and
+  // *expected* to produce 0.2 emails, so "0 emails" there proves nothing, and
   // blocking on it is coin-flip logic that kills good sources. A zero only means
   // something once the source has had enough traffic to expect several emails.
   const totalStarts = rows.reduce((n, r) => n + r.starts, 0);
@@ -104,7 +104,7 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
     .filter((r) => r.emails === 0 && r.starts >= minStarts && expectedOf(r) >= minExpected)
     .sort((a, b) => b.starts - a.starts);
 
-  // Converts, but at under half the site's base rate — and on enough data to say so.
+  // Converts, but at under half the site's base rate, and on enough data to say so.
   const weak = rows
     .filter(
       (r) => r.emails > 0 && expectedOf(r) >= minExpected && r.emails / r.starts < baseRate * 0.5
@@ -126,7 +126,7 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
   const unresolved = withIds.filter((r) => !r.source_id).map((r) => r.source);
 
   if (sp.get('format') === 'csv') {
-    // IDs only — that's what MGID's importer accepts. Names are unfindable there.
+    // IDs only, that's what MGID's importer accepts. Names are unfindable there.
     const ids = withIds.map((r) => r.source_id).filter(Boolean) as string[];
     const csv = ['source_id', ...ids].join('\n');
     return new NextResponse(csv, {
@@ -150,6 +150,6 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
     insufficient_data_do_not_block: insufficient,
     unresolved_ids: unresolved,
     note:
-      'kill_candidates_zero_lead = 0 emails on enough traffic that ≥ min_expected were expected at the site base rate (a real verdict, not noise). insufficient_data_do_not_block = 0 emails but too little traffic to conclude — blocking these is coin-flip logic and will kill good sources. weak_converters = converts at under half the base rate, on enough data to say so. CSV exports source_id (what MGID imports). unresolved_ids = sources seen before the {source_id} macro was live — one fresh click resolves them.',
+      'kill_candidates_zero_lead = 0 emails on enough traffic that ≥ min_expected were expected at the site base rate (a real verdict, not noise). insufficient_data_do_not_block = 0 emails but too little traffic to conclude, blocking these is coin-flip logic and will kill good sources. weak_converters = converts at under half the base rate, on enough data to say so. CSV exports source_id (what MGID imports). unresolved_ids = sources seen before the {source_id} macro was live, one fresh click resolves them.',
   });
 }

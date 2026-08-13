@@ -9,7 +9,7 @@ const DREAM_HUB_CARDS = getDreamHubCards();
 
 export const metadata: Metadata = {
   title: 'Interprétation des Rêves Amoureux : Signification',
-  description: 'Rêver de son ex, de tromperie, de mariage, de son crush : la signification des rêves d\'amour. Ce que chaque rêve révèle sur votre monde intérieur — et ce qu\'il ne prédit pas.',
+  description: 'Rêver de son ex, de tromperie, de mariage, de son crush : la signification des rêves d\'amour. Ce que chaque rêve révèle sur votre monde intérieur, et ce qu\'il ne prédit pas.',
   alternates: { canonical: 'https://www.voyantlove.fr/reves-amour/' },
 };
 
@@ -47,7 +47,7 @@ export default function RevesAmourHub() {
         <section className="bg-purple-50 border-l-4 border-purple-500 rounded-r-xl p-6 md:p-8 mb-10">
           <h2 className="text-xl font-bold text-gray-900 mb-3">Comment lire un rêve amoureux&nbsp;?</h2>
           <p className="text-lg leading-relaxed text-gray-800">
-            En amour comme ailleurs, un <strong>rêve</strong> parle de votre <strong>monde intérieur</strong>, pas de celui d&apos;une autre personne. Il met en scène des émotions non digérées — désir, peur, manque, attachement — bien plus qu&apos;il n&apos;annonce l&apos;avenir. Un rêve n&apos;est ni une <strong>prémonition</strong>, ni un message que quelqu&apos;un vous envoie, ni une preuve des sentiments de l&apos;autre. La clé d&apos;interprétation la plus fiable reste le <strong>ressenti au réveil</strong>, jamais une grille figée. Chaque fiche ci-dessous décode un rêve d&apos;amour selon cet esprit&nbsp;: ce qu&apos;il peut refléter, et ce qu&apos;il ne prouve pas.
+            En amour comme ailleurs, un <strong>rêve</strong> parle de votre <strong>monde intérieur</strong>, pas de celui d&apos;une autre personne. Il met en scène des émotions non digérées, désir, peur, manque, attachement, bien plus qu&apos;il n&apos;annonce l&apos;avenir. Un rêve n&apos;est ni une <strong>prémonition</strong>, ni un message que quelqu&apos;un vous envoie, ni une preuve des sentiments de l&apos;autre. La clé d&apos;interprétation la plus fiable reste le <strong>ressenti au réveil</strong>, jamais une grille figée. Chaque fiche ci-dessous décode un rêve d&apos;amour selon cet esprit&nbsp;: ce qu&apos;il peut refléter, et ce qu&apos;il ne prouve pas.
           </p>
         </section>
 

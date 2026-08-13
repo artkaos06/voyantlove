@@ -1,4 +1,4 @@
-// CPL click-out interstitial (ra11.me persona offers) — the cid spine for
+// CPL click-out interstitial (ra11.me persona offers), the cid spine for
 // the native lead-gen funnel.
 //
 // Funnel position:
@@ -7,13 +7,13 @@
 // The CPL network (ra11.me) supports a `request_id` round-trip: we append
 // our click ID to the offer link, they store it at click time, and fire it
 // back to our postback (/api/postback/cpl) on each billable lead. That makes
-// per-click attribution fully automated — request_id IS our cid.
+// per-click attribution fully automated, request_id IS our cid.
 //
 //   out:  https://www.ra11.me/track/lce?data=<persona hash>&request_id=<cid>
 //   in :  /api/postback/cpl?secret=...&cid=[request_id]&campaign=[campaign_id]
 //
 // Inputs (querystring):
-//   persona : noya | rosy | jade   (which offer/landing)  — required
+//   persona : noya | rosy | jade   (which offer/landing), required
 //   source  : campaign/ad-set label echoed into the cid log (default "native")
 //   v       : creative/advertorial variant label (optional)
 //   click_id / gclid / gbraid / wbraid : upstream click IDs, logged for
@@ -41,7 +41,7 @@ const PERSONAS: Record<string, string> = {
   jade:
     process.env.CPL_PERSONA_JADE ||
     'ed89b668c36ea5bcb5105f2f7ac5300f08147e19-447c3412363-e69c8ffb698-03407feb1c2',
-  // New AM-recommended offer — lower friction, better conversion (replaces
+  // New AM-recommended offer, lower friction, better conversion (replaces
   // noya as the primary after noya direct-linked at 0% on 705 clicks).
   // Same network/postback mechanism, so no other change is needed.
   v2:
@@ -77,7 +77,7 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
   // attribute the conversion back to the exact source for blacklisting.
   const widget = sp.get('widget')?.slice(0, 60) || null;
   const wname = sp.get('wname')?.slice(0, 120) || null;
-  // Upstream click IDs — logged for reconciliation. Native platforms (MGID,
+  // Upstream click IDs, logged for reconciliation. Native platforms (MGID,
   // Taboola, Outbrain) pass their own click_id macro; capture it generically.
   const nativeClickId = sp.get('click_id')?.slice(0, 200) || null;
   const gclid = sp.get('gclid')?.slice(0, 200) || null;
@@ -96,7 +96,7 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
     request.headers.get('x-real-ip') ||
     null;
 
-  // Display label for Discord (richer — includes native click IDs).
+  // Display label for Discord (richer, includes native click IDs).
   const attributionType = nativeClickId
     ? 'native_click_id'
     : gclid
@@ -148,7 +148,7 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
 
   // /api/go/cpl is fully Discord-SILENT by design. At native volume the
   // redirect is hit hundreds of times a day (plus bot/scraper traffic), so
-  // ANY per-click Discord call — click-out OR anomaly alert — floods the
+  // ANY per-click Discord call, click-out OR anomaly alert, floods the
   // channel (serverless can't reliably throttle the anomaly cooldown across
   // instances). Click-outs are still captured in the structured log above
   // and aggregated into the daily digest via recordClickOut. Discord is

@@ -101,7 +101,7 @@ export default function LeadCaptureForm({ source, colorScheme, mode = 'full' }: 
               </div>
             </div>
 
-            {/* Phone CTA — primary */}
+            {/* Phone CTA, primary */}
             <div className="text-center mb-4">
               <a
                 href="tel:0175754582"
@@ -162,7 +162,7 @@ export default function LeadCaptureForm({ source, colorScheme, mode = 'full' }: 
 
             <div className="bg-white rounded-xl p-6 text-center border-2 border-green-400 shadow-md mt-2">
               <h4 className="text-xl font-bold text-gray-900 mb-2">
-                Allez plus loin — Parlez à un Voyant
+                Allez plus loin, Parlez à un Voyant
               </h4>
               <p className="text-gray-600 text-sm mb-4">
                 Obtenez des réponses précises et personnalisées sur votre situation
@@ -173,8 +173,8 @@ export default function LeadCaptureForm({ source, colorScheme, mode = 'full' }: 
               >
                 📞 01 75 75 45 82
               </a>
-              <p className="text-green-700 font-semibold mt-3 text-sm">10 minutes gratuites — 1re consultation offerte</p>
-              <p className="text-xs text-gray-500 mt-1">Voyants disponibles maintenant — Appel confidentiel</p>
+              <p className="text-green-700 font-semibold mt-3 text-sm">10 minutes gratuites, 1re consultation offerte</p>
+              <p className="text-xs text-gray-500 mt-1">Voyants disponibles maintenant, Appel confidentiel</p>
             </div>
           </div>
         </div>

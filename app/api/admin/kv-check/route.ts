@@ -1,7 +1,7 @@
 // KV connectivity diagnostic.
 //
 // Reports which KV/Upstash env vars are present in the running deployment
-// (booleans only — never the values). Lets us confirm a newly-created
+// (booleans only, never the values). Lets us confirm a newly-created
 // Vercel KV / Upstash store is actually wired to the project and live in
 // this deployment, and tells us which client + env names to use for the
 // durable CPL counter.
@@ -28,12 +28,12 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
   const has = (name: string) => Boolean(process.env[name]);
 
   const env = {
-    // Vercel KV (native) — used by @vercel/kv
+    // Vercel KV (native), used by @vercel/kv
     KV_URL: has('KV_URL'),
     KV_REST_API_URL: has('KV_REST_API_URL'),
     KV_REST_API_TOKEN: has('KV_REST_API_TOKEN'),
     KV_REST_API_READ_ONLY_TOKEN: has('KV_REST_API_READ_ONLY_TOKEN'),
-    // Upstash marketplace integration — used by @upstash/redis
+    // Upstash marketplace integration, used by @upstash/redis
     UPSTASH_REDIS_REST_URL: has('UPSTASH_REDIS_REST_URL'),
     UPSTASH_REDIS_REST_TOKEN: has('UPSTASH_REDIS_REST_TOKEN'),
     REDIS_URL: has('REDIS_URL'),
@@ -41,7 +41,7 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
 
   const anyPresent = Object.values(env).some(Boolean);
 
-  // Live read from KV — proves the client can actually connect + read, not
+  // Live read from KV, proves the client can actually connect + read, not
   // just that env vars exist. Shows today's (Paris) CPL lead count.
   const today = parisDate();
   const cplLeadsToday = await getCplLeadCount(today);
@@ -52,7 +52,7 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
     env_present: env,
     cpl_leads_today: { date: today, count: cplLeadsToday },
     hint: anyPresent
-      ? 'KV env vars detected — durable CPL counter active.'
+      ? 'KV env vars detected, durable CPL counter active.'
       : 'No KV env vars in this deployment. Either the store is not connected to this project, or a redeploy is needed after connecting it.',
   });
 }

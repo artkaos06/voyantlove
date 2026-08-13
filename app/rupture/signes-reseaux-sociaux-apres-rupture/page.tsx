@@ -1,98 +1,83 @@
-import type { Metadata } from 'next';
 import Link from 'next/link';
-import { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getAuthorSchema } from '@/lib/schema';
-import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
-import VoyantFinalCTA from '@/components/VoyantFinalCTA';
+import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
-export const metadata: Metadata = {
+const config: ContentPageConfig = {
   title: 'Réseaux Sociaux Après une Rupture : Que Signifient ses Changements ?',
-  description: 'Photos supprimées, nom modifié, désabonnement, stories regardées : une matrice d\'interprétation des signaux numériques après une rupture — ce qu\'ils peuvent dire et ce qu\'ils ne prouvent pas.',
+  description: 'Photos supprimées, nom modifié, désabonnement, stories regardées : une matrice d\'interprétation des signaux numériques après une rupture, ce qu\'ils peuvent dire et ce qu\'ils ne prouvent pas.',
+  url: 'https://www.voyantlove.fr/rupture/signes-reseaux-sociaux-apres-rupture/',
   keywords: ['signes réseaux sociaux après rupture', 'mon ex a supprimé nos photos', 'mon ex regarde toutes mes stories', 'mon ex ne me suit plus sur Instagram', 'pourquoi mon ex me bloque puis me débloque'],
-  alternates: {
-    canonical: 'https://www.voyantlove.fr/rupture/signes-reseaux-sociaux-apres-rupture/',
-  },
-};
-
-export default function SignesReseauxSociauxApresRupturePage() {
-  const articleSchema = getArticleSchema({
-    title: 'Réseaux Sociaux Après une Rupture : Que Signifient ses Changements ?',
-    description: 'Photos supprimées, nom modifié, désabonnement, stories regardées : une matrice d\'interprétation des signaux numériques après une rupture — ce qu\'ils peuvent dire et ce qu\'ils ne prouvent pas.',
-    url: 'https://www.voyantlove.fr/rupture/signes-reseaux-sociaux-apres-rupture/',
-    datePublished: '2026-07-28',
-    dateModified: '2026-07-28',
-    keywords: ['signes réseaux sociaux après rupture', 'mon ex a supprimé nos photos', 'mon ex regarde toutes mes stories', 'mon ex ne me suit plus sur Instagram', 'interpréter le silence de son ex'],
-  });
-
-  const faqSchema = getFAQSchema([
-    {
-      question: 'Que signifie le fait que mon ex ait supprimé nos photos de couple ?',
-      answer: 'La suppression des photos de couple peut avoir plusieurs significations qui s\'excluent rarement : un besoin de tourner la page et d\'avancer, une réaction émotionnelle à chaud, le souhait de préserver sa vie privée, ou une mise en cohérence de son image publique. Ce geste ne prouve ni un rejet définitif, ni un manque de sentiments, ni au contraire un désir de retour. Il traduit surtout un besoin de gérer sa propre image après la séparation, et se lit mieux dans l\'ensemble de son comportement que comme un signal isolé.',
-    },
-    {
-      question: 'Si mon ex regarde toutes mes stories, pense-t-il encore à moi ?',
-      answer: 'Regarder vos stories indique une curiosité, mais ne prouve pas un désir de réconciliation. Une personne peut consulter votre profil par habitude, par nostalgie, par ennui ou pour vérifier comment vous allez, sans aucune intention de revenir. C\'est l\'un des signaux les moins fiables, car il demande très peu d\'engagement. Interpréter chaque vue comme un message caché entretient surtout l\'attente et l\'anxiété. Seuls des gestes concrets et répétés, en dehors de l\'écran, permettraient de parler d\'une intention réelle.',
-    },
-    {
-      question: 'Pourquoi mon ex me bloque puis me débloque ?',
-      answer: 'Le cycle blocage-déblocage traduit le plus souvent une ambivalence émotionnelle : la personne oscille entre le besoin de se protéger et l\'attachement qui persiste. Bloquer soulage une émotion douloureuse sur le moment ; débloquer répond à la curiosité ou au manque. Ce comportement en dents de scie ressemble beaucoup aux signaux chaud et froid : il révèle un conflit intérieur non résolu bien plus qu\'une stratégie ou un message qui vous serait adressé. Le prendre pour un code à déchiffrer amplifie inutilement la souffrance.',
-    },
-    {
-      question: 'Faut-il continuer à surveiller les réseaux sociaux de son ex ?',
-      answer: 'La surveillance régulière des profils entretient la rupture au lieu d\'aider à la dépasser. Chaque vérification relance l\'analyse, ravive l\'émotion et retarde la guérison, sans jamais livrer la certitude recherchée. Se couper temporairement de ce fil — en masquant, en se désabonnant ou en s\'imposant des limites — est souvent le geste le plus protecteur. Retrouver de la clarté passe davantage par le retour à sa propre vie que par l\'observation de traces numériques, par nature ambiguës.',
-    },
-    {
-      question: 'Les changements sur les réseaux sociaux prouvent-ils les sentiments de mon ex ?',
-      answer: 'Non. Un profil est une image publique, filtrée et partielle, qui ne reflète pas fidèlement la vie intérieure d\'une personne. Un changement de nom, de photo ou de statut peut être un symbole, une décision pratique ou une réaction passagère, mais il ne constitue jamais une preuve des sentiments réels. Chercher la vérité d\'une relation dans ces indices conduit presque toujours à des conclusions erronées. Pour y voir plus clair, une guidance centrée sur votre ressenti est plus fiable que le décryptage d\'un écran.',
-    },
-  ]);
-
-  const breadcrumbSchema = getBreadcrumbSchema([
+  datePublished: '2026-07-28',
+  dateModified: '2026-07-28',
+  breadcrumb: [
     { name: 'Accueil', url: 'https://www.voyantlove.fr' },
     { name: 'Rupture', url: 'https://www.voyantlove.fr/rupture/' },
     { name: 'Réseaux Sociaux Après une Rupture', url: 'https://www.voyantlove.fr/rupture/signes-reseaux-sociaux-apres-rupture/' },
-  ]);
+  ],
+  header: {
+    emoji: '📱',
+    h1: 'Photos Supprimées, Nom Modifié, Silence : Interpréter les Réseaux Sociaux Après une Rupture',
+    subtitle: 'Ce que les signaux numériques peuvent dire, et surtout ce qu\'ils ne prouvent pas',
+    gradient: 'from-slate-600 via-indigo-600 to-purple-600',
+    backLink: { href: '/rupture', label: 'Retour à Rupture & Guérison' },
+    anchors: [
+      { href: '#matrice', label: 'La Matrice des Signaux', primary: true },
+      { href: '#surveillance', label: 'Quand la Veille Fait Mal' },
+    ],
+  },
+  accentText: 'text-indigo-600',
+  stats: [
+    { icon: '🔮', value: 'Reconnue', label: 'Expertise' },
+    { icon: '📱', value: '3,200+', label: 'Consultations' },
+    { icon: '⭐', value: '4.7/5', label: '254 avis' },
+    { icon: '🔒', value: '100%', label: 'Confidentiel' },
+  ],
+  eeat: { colorScheme: 'blue', method: 'Guidance émotionnelle et lecture des comportements post-rupture' },
+  cta: { topic: 'rupture', slug: 'signes-reseaux' },
+  faq: [
+    {
+      q: 'Que signifie le fait que mon ex ait supprimé nos photos de couple ?',
+      a: 'La suppression des photos de couple peut avoir plusieurs significations qui s\'excluent rarement : un besoin de tourner la page et d\'avancer, une réaction émotionnelle à chaud, le souhait de préserver sa vie privée, ou une mise en cohérence de son image publique. Ce geste ne prouve ni un rejet définitif, ni un manque de sentiments, ni au contraire un désir de retour. Il traduit surtout un besoin de gérer sa propre image après la séparation, et se lit mieux dans l\'ensemble de son comportement que comme un signal isolé.',
+    },
+    {
+      q: 'Si mon ex regarde toutes mes stories, pense-t-il encore à moi ?',
+      a: 'Regarder vos stories indique une curiosité, mais ne prouve pas un désir de réconciliation. Une personne peut consulter votre profil par habitude, par nostalgie, par ennui ou pour vérifier comment vous allez, sans aucune intention de revenir. C\'est l\'un des signaux les moins fiables, car il demande très peu d\'engagement. Interpréter chaque vue comme un message caché entretient surtout l\'attente et l\'anxiété. Seuls des gestes concrets et répétés, en dehors de l\'écran, permettraient de parler d\'une intention réelle.',
+    },
+    {
+      q: 'Pourquoi mon ex me bloque puis me débloque ?',
+      a: 'Le cycle blocage-déblocage traduit le plus souvent une ambivalence émotionnelle : la personne oscille entre le besoin de se protéger et l\'attachement qui persiste. Bloquer soulage une émotion douloureuse sur le moment ; débloquer répond à la curiosité ou au manque. Ce comportement en dents de scie ressemble beaucoup aux signaux chaud et froid : il révèle un conflit intérieur non résolu bien plus qu\'une stratégie ou un message qui vous serait adressé. Le prendre pour un code à déchiffrer amplifie inutilement la souffrance.',
+    },
+    {
+      q: 'Faut-il continuer à surveiller les réseaux sociaux de son ex ?',
+      a: 'La surveillance régulière des profils entretient la rupture au lieu d\'aider à la dépasser. Chaque vérification relance l\'analyse, ravive l\'émotion et retarde la guérison, sans jamais livrer la certitude recherchée. Se couper temporairement de ce fil, en masquant, en se désabonnant ou en s\'imposant des limites, est souvent le geste le plus protecteur. Retrouver de la clarté passe davantage par le retour à sa propre vie que par l\'observation de traces numériques, par nature ambiguës.',
+    },
+    {
+      q: 'Les changements sur les réseaux sociaux prouvent-ils les sentiments de mon ex ?',
+      a: 'Non. Un profil est une image publique, filtrée et partielle, qui ne reflète pas fidèlement la vie intérieure d\'une personne. Un changement de nom, de photo ou de statut peut être un symbole, une décision pratique ou une réaction passagère, mais il ne constitue jamais une preuve des sentiments réels. Chercher la vérité d\'une relation dans ces indices conduit presque toujours à des conclusions erronées. Pour y voir plus clair, une guidance centrée sur votre ressenti est plus fiable que le décryptage d\'un écran.',
+    },
+  ],
+  related: [
+    { href: '/rupture', label: 'Rupture & Guérison : Toutes nos Guidances' },
+    { href: '/rupture/oublier-son-ex', label: 'Oublier son Ex' },
+    { href: '/rupture/comment-tourner-la-page', label: 'Comment Tourner la Page' },
+    { href: '/reconquete/ex-chaud-et-froid-apres-separation', label: 'Mon Ex est Chaud et Froid' },
+    { href: '/sentiments/pense-t-il-elle-a-moi', label: 'Pense-t-il/elle à Moi ?' },
+  ],
+};
 
-  const authorSchema = getAuthorSchema();
+export const metadata = contentMeta(config);
 
+export default function SignesReseauxSociauxApresRupturePage() {
   return (
-    <main className="min-h-screen bg-gray-50">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(authorSchema) }} />
-
-      <header className="bg-gradient-to-r from-slate-600 via-indigo-600 to-purple-600 text-white py-16 px-4">
-        <div className="max-w-4xl mx-auto">
-          <Link href="/rupture" className="text-white/80 hover:text-white mb-4 inline-block">&larr; Retour à Rupture &amp; Guérison</Link>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">{'\u{1F4F1}'} Photos Supprimées, Nom Modifié, Silence : Interpréter les Réseaux Sociaux Après une Rupture</h1>
-          <p className="text-xl opacity-95 mb-6">Ce que les signaux numériques peuvent dire, et surtout ce qu&apos;ils ne prouvent pas</p>
-          <div className="flex gap-4 flex-wrap">
-            <a href="#matrice" className="bg-white text-indigo-600 px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition">La Matrice des Signaux</a>
-            <a href="#surveillance" className="border-2 border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-indigo-600 transition">Quand la Veille Fait Mal</a>
-          </div>
-        </div>
-      </header>
-
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <div className="bg-white rounded-xl shadow-md p-6 mb-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-          <div><div className="text-3xl mb-1">{'\u{1F52E}'}</div><div className="text-2xl font-bold text-indigo-600">Reconnue</div><div className="text-sm text-gray-600">Expertise</div></div>
-          <div><div className="text-3xl mb-1">{'\u{1F4F1}'}</div><div className="text-2xl font-bold text-indigo-600">3,200+</div><div className="text-sm text-gray-600">Consultations</div></div>
-          <div><div className="text-3xl mb-1">{'⭐'}</div><div className="text-2xl font-bold text-indigo-600">4.7/5</div><div className="text-sm text-gray-600">254 avis</div></div>
-          <div><div className="text-3xl mb-1">{'\u{1F512}'}</div><div className="text-2xl font-bold text-indigo-600">100%</div><div className="text-sm text-gray-600">Confidentiel</div></div>
-        </div>
-
-        <EEATSignal colorScheme="blue" method="Guidance émotionnelle et lecture des comportements post-rupture" />
-
-        {/* Answer Capsule */}
+    <ContentPage config={config}>
         <article className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-indigo-500">
           <div className="prose prose-lg max-w-none">
             <p className="text-lg leading-relaxed mb-4">
               Après une rupture, chaque changement sur le profil de l&apos;autre prend une importance démesurée : <strong>photos supprimées</strong>, <strong>nom modifié</strong>, <strong>désabonnement</strong>, <strong>stories regardées</strong>, blocage puis déblocage. On y cherche des indices d&apos;un détachement ou, au contraire, d&apos;un possible retour. La vérité est plus sobre : un profil est une <strong>image publique</strong>, partielle et filtrée, qui ne reflète pas fidèlement la vie intérieure d&apos;une personne.
             </p>
             <p className="text-lg leading-relaxed mb-4">
-              Cette page propose une <strong>matrice d&apos;interprétation</strong> pratique : pour chaque signal numérique courant, ce qu&apos;il peut signifier, ce qu&apos;il ne prouve pas, et son degré de fiabilité. L&apos;objectif n&apos;est pas de transformer un like ou une vue de story en certitude — ce serait vous tromper — mais de vous rendre du recul face à des <strong>traces ambiguës</strong> par nature.
+              Cette page propose une <strong>matrice d&apos;interprétation</strong> pratique : pour chaque signal numérique courant, ce qu&apos;il peut signifier, ce qu&apos;il ne prouve pas, et son degré de fiabilité. L&apos;objectif n&apos;est pas de transformer un like ou une vue de story en certitude, ce serait vous tromper, mais de vous rendre du recul face à des <strong>traces ambiguës</strong> par nature.
             </p>
             <p className="text-lg leading-relaxed">
               Nous verrons aussi le moment où cette veille devient un piège qui entretient la souffrance, et comment retrouver de la clarté ailleurs que sur un écran. Cette approche rejoint notre guidance pour <Link href="/rupture/oublier-son-ex" className="text-indigo-600 hover:text-indigo-800 underline font-medium">oublier son ex</Link>. Une <strong>consultation de voyance</strong> peut éclairer votre ressenti et vos décisions, sans jamais établir avec certitude les intentions de l&apos;autre à partir de son profil.
@@ -110,7 +95,7 @@ export default function SignesReseauxSociauxApresRupturePage() {
             Quand le dialogue s&apos;interrompt, le <strong>profil</strong> de l&apos;autre reste souvent le seul point de contact accessible. L&apos;esprit, privé d&apos;informations directes, se rabat sur ces <strong>indices numériques</strong> et cherche à y lire les émotions qu&apos;il ne peut plus observer autrement. Ce réflexe est humain, mais il repose sur un matériau trompeur : ce qui est publié est une mise en scène, pas un journal intime.
           </p>
           <p className="text-gray-700 leading-relaxed">
-            Comprendre ce biais désamorce une grande partie de la souffrance. Un réseau social montre ce qu&apos;une personne <strong>choisit</strong> de montrer — jamais l&apos;intégralité de ce qu&apos;elle ressent. Bâtir des conclusions sur ce reflet partiel mène presque toujours à des interprétations fausses.
+            Comprendre ce biais désamorce une grande partie de la souffrance. Un réseau social montre ce qu&apos;une personne <strong>choisit</strong> de montrer, jamais l&apos;intégralité de ce qu&apos;elle ressent. Bâtir des conclusions sur ce reflet partiel mène presque toujours à des interprétations fausses.
           </p>
         </section>
 
@@ -135,7 +120,7 @@ export default function SignesReseauxSociauxApresRupturePage() {
             <div className="bg-white rounded-lg p-6 border-l-4 border-slate-500">
               <h3 className="font-bold text-lg mb-2 text-slate-700">{'\u{1F6AB}'} Désabonnement, Blocage, Silence</h3>
               <p className="text-gray-700 text-sm mb-2"><strong>Peut signifier :</strong> un besoin de se protéger, de ne plus voir l&apos;autre pour avancer, une réaction défensive.</p>
-              <p className="text-gray-600 text-sm"><strong>Ne prouve pas :</strong> de la haine, ni paradoxalement une absence de sentiments — on se coupe souvent de ce qui touche encore. <span className="italic">Fiabilité : modérée sur l&apos;émotion, nulle sur l&apos;intention.</span></p>
+              <p className="text-gray-600 text-sm"><strong>Ne prouve pas :</strong> de la haine, ni paradoxalement une absence de sentiments, on se coupe souvent de ce qui touche encore. <span className="italic">Fiabilité : modérée sur l&apos;émotion, nulle sur l&apos;intention.</span></p>
             </div>
             <div className="bg-white rounded-lg p-6 border-l-4 border-fuchsia-500">
               <h3 className="font-bold text-lg mb-2 text-fuchsia-700">{'\u{1F440}'} Stories Regardées, Publications Aimées</h3>
@@ -205,49 +190,6 @@ export default function SignesReseauxSociauxApresRupturePage() {
             <p className="text-gray-700"><strong>{'\u{1F4A1}'} À retenir :</strong> retrouver de la clarté passe par le retour à soi, pas par le décryptage d&apos;un profil. Si tourner la page vous semble hors de portée, notre guide <Link href="/rupture/comment-tourner-la-page" className="text-indigo-600 hover:text-indigo-800 underline font-medium">comment tourner la page</Link> propose des repères concrets. Une <strong>consultation de voyance</strong> peut éclairer votre ressenti, sans jamais transformer un profil en preuve.</p>
           </div>
         </section>
-
-        {/* FAQ Section */}
-        <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">{'❓'} Questions Fréquentes</h2>
-          <p className="text-lg font-semibold text-gray-800 mb-4">Les reponses aux questions les plus posees sur l&apos;interpretation des reseaux sociaux d&apos;un ex apres une rupture.</p>
-          <div className="space-y-6">
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Que signifie le fait que mon ex ait supprimé nos photos de couple ?</h3>
-              <p className="text-gray-700 leading-relaxed">La <strong>suppression des photos</strong> peut avoir plusieurs significations : un besoin de tourner la page, une réaction émotionnelle à chaud, le souhait de préserver sa vie privée, ou une mise en cohérence de son image publique. Ce geste ne prouve ni un rejet définitif, ni un manque de sentiments, ni un désir de retour. Il traduit surtout un besoin de gérer sa propre image, et se lit mieux dans l&apos;ensemble du comportement que comme un <strong>signal isolé</strong>.</p>
-            </div>
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Si mon ex regarde toutes mes stories, pense-t-il encore à moi ?</h3>
-              <p className="text-gray-700 leading-relaxed">Regarder vos stories indique une <strong>curiosité</strong>, mais ne prouve pas un désir de réconciliation. Une personne peut consulter votre profil par habitude, nostalgie ou ennui, sans intention de revenir. C&apos;est l&apos;un des signaux les moins fiables, car il demande très peu d&apos;engagement. Interpréter chaque vue comme un message caché entretient surtout l&apos;attente. Seuls des <strong>gestes concrets et répétés</strong>, hors de l&apos;écran, permettraient de parler d&apos;une intention réelle.</p>
-            </div>
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Pourquoi mon ex me bloque puis me débloque ?</h3>
-              <p className="text-gray-700 leading-relaxed">Le cycle <strong>blocage-déblocage</strong> traduit le plus souvent une ambivalence émotionnelle : la personne oscille entre le besoin de se protéger et l&apos;attachement qui persiste. Bloquer soulage une émotion sur le moment ; débloquer répond à la curiosité ou au manque. Ce comportement en dents de scie ressemble aux <strong>signaux chaud et froid</strong> : il révèle un conflit intérieur non résolu bien plus qu&apos;une stratégie qui vous serait adressée.</p>
-            </div>
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Faut-il continuer à surveiller les réseaux sociaux de son ex ?</h3>
-              <p className="text-gray-700 leading-relaxed">La <strong>surveillance régulière</strong> des profils entretient la rupture au lieu d&apos;aider à la dépasser. Chaque vérification relance l&apos;analyse, ravive l&apos;émotion et retarde la guérison, sans jamais livrer la certitude recherchée. Se couper temporairement de ce fil est souvent le geste le plus protecteur. Retrouver de la clarté passe davantage par le <strong>retour à sa propre vie</strong> que par l&apos;observation de traces numériques ambiguës.</p>
-            </div>
-            <div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Les changements sur les réseaux sociaux prouvent-ils les sentiments de mon ex ?</h3>
-              <p className="text-gray-700 leading-relaxed">Non. Un profil est une <strong>image publique</strong>, filtrée et partielle, qui ne reflète pas fidèlement la vie intérieure d&apos;une personne. Un changement de nom, de photo ou de statut peut être un symbole, une décision pratique ou une réaction passagère, mais il ne constitue jamais une <strong>preuve des sentiments réels</strong>. Chercher la vérité d&apos;une relation dans ces indices conduit presque toujours à des conclusions erronées.</p>
-            </div>
-          </div>
-        </section>
-
-        {/* Articles Connexes */}
-        <div className="bg-gray-100 rounded-xl p-6 mb-8">
-          <h3 className="font-bold text-lg mb-4 text-gray-900">{'\u{1F4DA}'} Articles Connexes</h3>
-          <div className="space-y-2">
-            <Link href="/rupture" className="block text-indigo-600 hover:text-indigo-800 font-medium">&rarr; Rupture &amp; Guérison : Toutes nos Guidances</Link>
-            <Link href="/rupture/oublier-son-ex" className="block text-indigo-600 hover:text-indigo-800 font-medium">&rarr; Oublier son Ex</Link>
-            <Link href="/rupture/comment-tourner-la-page" className="block text-indigo-600 hover:text-indigo-800 font-medium">&rarr; Comment Tourner la Page</Link>
-            <Link href="/reconquete/ex-chaud-et-froid-apres-separation" className="block text-indigo-600 hover:text-indigo-800 font-medium">&rarr; Mon Ex est Chaud et Froid</Link>
-            <Link href="/sentiments/pense-t-il-elle-a-moi" className="block text-indigo-600 hover:text-indigo-800 font-medium">&rarr; Pense-t-il/elle à Moi ?</Link>
-          </div>
-        </div>
-
-        <VoyantFinalCTA topic="rupture" source="signes-reseaux-final" />
-      </div>
-    </main>
+    </ContentPage>
   );
 }

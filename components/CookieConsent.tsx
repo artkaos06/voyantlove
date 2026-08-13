@@ -22,7 +22,7 @@ export default function CookieConsent() {
       CC.run({
         guiOptions: {
           consentModal: {
-            // Slim bottom bar, not a big box — the 'box' layout covered the
+            // Slim bottom bar, not a big box, the 'box' layout covered the
             // quiz answers on mobile and tanked engagement.
             layout: 'bar inline',
             position: 'bottom',
@@ -160,7 +160,7 @@ function applyConsent(categories: string[]) {
  * TRADE-OFF, worth knowing before reading the numbers: visitors who ignore
  * or refuse the banner never fire this pixel, so MGID's reported conversion
  * count will be LOWER than the true tap count in /api/admin/lp-funnel. Those
- * two numbers are supposed to disagree — lp-funnel counts every tap
+ * two numbers are supposed to disagree, lp-funnel counts every tap
  * server-side, MGID only counts consented ones. Do not treat the gap as a
  * tracking bug.
  */

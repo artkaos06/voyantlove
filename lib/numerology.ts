@@ -1,4 +1,4 @@
-// Pythagorean numerology — pure calculation + interpretation data.
+// Pythagorean numerology, pure calculation + interpretation data.
 // Shared between the static page content and the interactive calculator
 // so both read from the same source of truth.
 
@@ -159,7 +159,7 @@ export function composeCompatibilityReading(a: number, b: number): Compatibility
   if (!meaningA || !meaningB) return undefined;
 
   return {
-    title: `${a} + ${b} — ${meaningA.title} et ${meaningB.title}`,
+    title: `${a} + ${b}, ${meaningA.title} et ${meaningB.title}`,
     description: `Le chemin ${a} apporte à la relation cette dynamique : ${meaningA.desc} Le chemin ${b} apporte de son côté : ${meaningB.desc}`,
     guidance: a === b
       ? 'Votre force commune facilite la compréhension mutuelle, mais peut aussi amplifier le même défi. Nommez clairement vos besoins et répartissez les rôles pour garder de la souplesse.'

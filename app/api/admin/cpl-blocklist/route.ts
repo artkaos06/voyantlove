@@ -1,4 +1,4 @@
-// Blocklist export — turns the CPL cost tracker into an MGID-importable list
+// Blocklist export, turns the CPL cost tracker into an MGID-importable list
 // of money-losing sources.
 //
 // A source is a block candidate when, aggregated over the last `days`, it has
@@ -115,6 +115,6 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
     block_candidates_zero_lead: zeroLead,
     converting_but_unprofitable: unprofitable,
     note:
-      'block_candidates_zero_lead = spent ≥ min_spend with 0 leads (clear waste — safe to block). converting_but_unprofitable = converts but above the payout (judgment call; add with include_unprofitable=1). Append &format=csv to download the block list for MGID import. Requires the {source} + {click_price} macros to be live + a day of data.',
+      'block_candidates_zero_lead = spent ≥ min_spend with 0 leads (clear waste, safe to block). converting_but_unprofitable = converts but above the payout (judgment call; add with include_unprofitable=1). Append &format=csv to download the block list for MGID import. Requires the {source} + {click_price} macros to be live + a day of data.',
   });
 }

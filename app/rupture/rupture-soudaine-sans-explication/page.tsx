@@ -1,98 +1,83 @@
-import type { Metadata } from 'next';
 import Link from 'next/link';
-import { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getAuthorSchema } from '@/lib/schema';
-import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
-import VoyantFinalCTA from '@/components/VoyantFinalCTA';
+import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
-export const metadata: Metadata = {
+const config: ContentPageConfig = {
   title: 'Rupture Soudaine sans Explication : Comprendre et Réagir',
   description: 'Rupture ou demande de divorce soudaine, sans explication claire ? Une grille de lecture pour distinguer les faits, les hypothèses et les questions à poser.',
+  url: 'https://www.voyantlove.fr/rupture/rupture-soudaine-sans-explication/',
   keywords: ['rupture soudaine sans explication', 'pourquoi il me quitte du jour au lendemain', 'mon mari veut divorcer sans explication', 'ma femme me quitte soudainement', 'rupture inattendue que faire'],
-  alternates: {
-    canonical: 'https://www.voyantlove.fr/rupture/rupture-soudaine-sans-explication/',
-  },
-};
-
-export default function RuptureSoudaineSansExplicationPage() {
-  const articleSchema = getArticleSchema({
-    title: 'Rupture Soudaine sans Explication : Comprendre et Réagir',
-    description: 'Rupture ou demande de divorce soudaine, sans explication claire ? Une grille de lecture pour distinguer les faits, les hypothèses et les questions à poser.',
-    url: 'https://www.voyantlove.fr/rupture/rupture-soudaine-sans-explication/',
-    datePublished: '2026-07-29',
-    dateModified: '2026-07-29',
-    keywords: ['rupture soudaine sans explication', 'pourquoi il me quitte du jour au lendemain', 'mon mari veut divorcer sans explication', 'séparation brutale après une longue relation', 'il ne veut pas expliquer notre rupture'],
-  });
-
-  const faqSchema = getFAQSchema([
-    {
-      question: 'Pourquoi il ou elle me quitte du jour au lendemain sans explication ?',
-      answer: 'Une rupture qui semble soudaine est rarement soudaine pour la personne qui la décide : elle a souvent mûri en silence pendant des semaines ou des mois, sans que les signes n\'aient été visibles ou compris de l\'extérieur. Le décalage entre votre surprise et sa décision apparemment tranchée s\'explique le plus souvent par un cheminement intérieur que l\'autre n\'a pas partagé, par peur du conflit, par culpabilité ou par difficulté à mettre des mots sur son désengagement progressif. Ce n\'est ni une preuve de manipulation ni une preuve d\'un motif caché : c\'est un défaut de communication qu\'il est utile de nommer sans le sur-interpréter.',
-    },
-    {
-      question: 'Mon mari ou ma femme veut divorcer sans explication, que faire ?',
-      answer: 'Demandez une explication une seule fois, clairement et calmement, plutôt que de répéter la question sous des formes différentes en espérant une réponse plus satisfaisante. Si votre partenaire refuse de développer, insister davantage ferme souvent le dialogue au lieu de l\'ouvrir. Il est plus utile de vous concentrer sur les décisions concrètes à prendre (logement, enfants, démarches) tout en vous laissant le temps de comprendre émotionnellement ce qui s\'est passé, éventuellement avec un accompagnement extérieur plutôt qu\'en poursuivant seul(e) une explication qui ne vient pas.',
-    },
-    {
-      question: 'Comment demander une explication sans supplier ni harceler ?',
-      answer: 'Formulez une seule demande claire, à un moment calme, en exprimant un besoin plutôt qu\'un reproche : « j\'ai besoin de comprendre ce qui s\'est passé pour moi-même, pas pour te faire changer d\'avis ». Fixez-vous d\'avance le nombre de fois où vous poserez la question — une seule tentative sérieuse vaut mieux que dix messages répétés qui épuisent les deux parties et associent votre image à l\'insistance plutôt qu\'à la dignité.',
-    },
-    {
-      question: 'Que faire si mon ex refuse absolument d\'en parler ?',
-      answer: 'Un refus de discussion ne doit pas être interprété automatiquement comme un aveu de faute grave : il peut aussi traduire un évitement du conflit, un épuisement émotionnel ou la conviction que rien ne changera la décision. Dans ce cas, il devient plus sain de cesser d\'attendre une réponse que l\'autre ne donnera peut-être jamais, et de rediriger votre énergie vers votre propre reconstruction, en vous appuyant si besoin sur votre entourage ou un accompagnement professionnel.',
-    },
-    {
-      question: 'Peut-on avancer sans jamais connaître la vraie raison de la rupture ?',
-      answer: 'Oui, même si cela demande un travail de deuil supplémentaire. Avancer sans réponse définitive suppose d\'accepter que certaines explications resteront incomplètes, et de construire malgré tout une compréhension suffisante à partir des faits observables plutôt que d\'une vérité totale et inaccessible. Une consultation de voyance sentimentale peut aider à explorer les dynamiques relationnelles en jeu et à formuler les bonnes questions, sans jamais garantir de révéler une cause cachée avec certitude.',
-    },
-  ]);
-
-  const breadcrumbSchema = getBreadcrumbSchema([
+  datePublished: '2026-07-29',
+  dateModified: '2026-07-29',
+  breadcrumb: [
     { name: 'Accueil', url: 'https://www.voyantlove.fr' },
     { name: 'Rupture Amoureuse', url: 'https://www.voyantlove.fr/rupture/' },
     { name: 'Rupture Soudaine sans Explication', url: 'https://www.voyantlove.fr/rupture/rupture-soudaine-sans-explication/' },
-  ]);
+  ],
+  header: {
+    emoji: '⚡',
+    h1: 'Comment Comprendre une Rupture Soudaine sans Explication ?',
+    subtitle: 'Sortir de la sidération et retrouver des repères sans s\'enfermer dans les suppositions',
+    gradient: 'from-slate-700 via-blue-800 to-indigo-900',
+    backLink: { href: '/rupture', label: 'Retour à la Rupture Amoureuse' },
+    anchors: [
+      { href: '#grille', label: 'La Grille de Lecture', primary: true },
+      { href: '#demander', label: 'Demander une Explication' },
+    ],
+  },
+  accentText: 'text-blue-700',
+  stats: [
+    { icon: '🔮', value: 'Reconnue', label: 'Expertise' },
+    { icon: '⚡', value: '3,200+', label: 'Consultations' },
+    { icon: '⭐', value: '4.7/5', label: '254 avis' },
+    { icon: '🔒', value: '100%', label: 'Confidentiel' },
+  ],
+  eeat: { colorScheme: 'blue', method: 'Grille de lecture post-rupture et guidance sentimentale' },
+  cta: { topic: 'rupture', slug: 'rupture-soudaine' },
+  faq: [
+    {
+      q: 'Pourquoi il ou elle me quitte du jour au lendemain sans explication ?',
+      a: 'Une rupture qui semble soudaine est rarement soudaine pour la personne qui la décide : elle a souvent mûri en silence pendant des semaines ou des mois, sans que les signes n\'aient été visibles ou compris de l\'extérieur. Le décalage entre votre surprise et sa décision apparemment tranchée s\'explique le plus souvent par un cheminement intérieur que l\'autre n\'a pas partagé, par peur du conflit, par culpabilité ou par difficulté à mettre des mots sur son désengagement progressif. Ce n\'est ni une preuve de manipulation ni une preuve d\'un motif caché : c\'est un défaut de communication qu\'il est utile de nommer sans le sur-interpréter.',
+    },
+    {
+      q: 'Mon mari ou ma femme veut divorcer sans explication, que faire ?',
+      a: 'Demandez une explication une seule fois, clairement et calmement, plutôt que de répéter la question sous des formes différentes en espérant une réponse plus satisfaisante. Si votre partenaire refuse de développer, insister davantage ferme souvent le dialogue au lieu de l\'ouvrir. Il est plus utile de vous concentrer sur les décisions concrètes à prendre (logement, enfants, démarches) tout en vous laissant le temps de comprendre émotionnellement ce qui s\'est passé, éventuellement avec un accompagnement extérieur plutôt qu\'en poursuivant seul(e) une explication qui ne vient pas.',
+    },
+    {
+      q: 'Comment demander une explication sans supplier ni harceler ?',
+      a: 'Formulez une seule demande claire, à un moment calme, en exprimant un besoin plutôt qu\'un reproche : « j\'ai besoin de comprendre ce qui s\'est passé pour moi-même, pas pour te faire changer d\'avis ». Fixez-vous d\'avance le nombre de fois où vous poserez la question, une seule tentative sérieuse vaut mieux que dix messages répétés qui épuisent les deux parties et associent votre image à l\'insistance plutôt qu\'à la dignité.',
+    },
+    {
+      q: 'Que faire si mon ex refuse absolument d\'en parler ?',
+      a: 'Un refus de discussion ne doit pas être interprété automatiquement comme un aveu de faute grave : il peut aussi traduire un évitement du conflit, un épuisement émotionnel ou la conviction que rien ne changera la décision. Dans ce cas, il devient plus sain de cesser d\'attendre une réponse que l\'autre ne donnera peut-être jamais, et de rediriger votre énergie vers votre propre reconstruction, en vous appuyant si besoin sur votre entourage ou un accompagnement professionnel.',
+    },
+    {
+      q: 'Peut-on avancer sans jamais connaître la vraie raison de la rupture ?',
+      a: 'Oui, même si cela demande un travail de deuil supplémentaire. Avancer sans réponse définitive suppose d\'accepter que certaines explications resteront incomplètes, et de construire malgré tout une compréhension suffisante à partir des faits observables plutôt que d\'une vérité totale et inaccessible. Une consultation de voyance sentimentale peut aider à explorer les dynamiques relationnelles en jeu et à formuler les bonnes questions, sans jamais garantir de révéler une cause cachée avec certitude.',
+    },
+  ],
+  related: [
+    { href: '/rupture', label: 'Rupture Amoureuse : Toutes nos Guidances' },
+    { href: '/rupture/voyance-divorce-separation', label: 'Voyance Divorce et Séparation' },
+    { href: '/reconquete/separation-temporaire-ou-definitive', label: 'Séparation Temporaire ou Définitive ?' },
+    { href: '/reconquete/ex-chaud-et-froid-apres-separation', label: 'Mon Ex est Chaud et Froid' },
+    { href: '/rupture/deuil-amoureux', label: 'Deuil Amoureux' },
+  ],
+};
 
-  const authorSchema = getAuthorSchema();
+export const metadata = contentMeta(config);
 
+export default function RuptureSoudaineSansExplicationPage() {
   return (
-    <main className="min-h-screen bg-gray-50">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(authorSchema) }} />
-
-      <header className="bg-gradient-to-r from-slate-700 via-blue-800 to-indigo-900 text-white py-16 px-4">
-        <div className="max-w-4xl mx-auto">
-          <Link href="/rupture" className="text-white/80 hover:text-white mb-4 inline-block">&larr; Retour à la Rupture Amoureuse</Link>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">{'\u{26A1}'} Comment Comprendre une Rupture Soudaine sans Explication ?</h1>
-          <p className="text-xl opacity-95 mb-6">Sortir de la sidération et retrouver des repères sans s&apos;enfermer dans les suppositions</p>
-          <div className="flex gap-4 flex-wrap">
-            <a href="#grille" className="bg-white text-blue-700 px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition">La Grille de Lecture</a>
-            <a href="#demander" className="border-2 border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-700 transition">Demander une Explication</a>
-          </div>
-        </div>
-      </header>
-
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <div className="bg-white rounded-xl shadow-md p-6 mb-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-          <div><div className="text-3xl mb-1">{'\u{1F52E}'}</div><div className="text-2xl font-bold text-blue-700">Reconnue</div><div className="text-sm text-gray-600">Expertise</div></div>
-          <div><div className="text-3xl mb-1">{'\u{26A1}'}</div><div className="text-2xl font-bold text-blue-700">3,200+</div><div className="text-sm text-gray-600">Consultations</div></div>
-          <div><div className="text-3xl mb-1">{'⭐'}</div><div className="text-2xl font-bold text-blue-700">4.7/5</div><div className="text-sm text-gray-600">254 avis</div></div>
-          <div><div className="text-3xl mb-1">{'\u{1F512}'}</div><div className="text-2xl font-bold text-blue-700">100%</div><div className="text-sm text-gray-600">Confidentiel</div></div>
-        </div>
-
-        <EEATSignal colorScheme="blue" method="Grille de lecture post-rupture et guidance sentimentale" />
-
-        {/* Answer Capsule */}
+    <ContentPage config={config}>
         <article className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-blue-700">
           <div className="prose prose-lg max-w-none">
             <p className="text-lg leading-relaxed mb-4">
-              Une <strong>rupture soudaine</strong> ou une demande de <strong>divorce sans explication</strong> laisse souvent dans un état de <strong>sidération</strong> : rien, la veille, ne semblait annoncer une décision aussi tranchée. Ce décalage ne signifie pas que la rupture était réellement improvisée — il signifie le plus souvent que la réflexion de l&apos;autre s&apos;est déroulée en silence, sans que vous en ayez eu connaissance. Comprendre cette mécanique est la première étape pour sortir de la sidération.
+              Une <strong>rupture soudaine</strong> ou une demande de <strong>divorce sans explication</strong> laisse souvent dans un état de <strong>sidération</strong> : rien, la veille, ne semblait annoncer une décision aussi tranchée. Ce décalage ne signifie pas que la rupture était réellement improvisée, il signifie le plus souvent que la réflexion de l&apos;autre s&apos;est déroulée en silence, sans que vous en ayez eu connaissance. Comprendre cette mécanique est la première étape pour sortir de la sidération.
             </p>
             <p className="text-lg leading-relaxed mb-4">
-              Cette page propose une <strong>grille de lecture</strong> en trois niveaux : ce que l&apos;on sait avec certitude, les <strong>hypothèses possibles</strong> à considérer sans les figer en vérités, et les questions légitimes que vous pouvez poser. Elle ne cherche pas à deviner à votre place la cause exacte de la rupture — aucune lecture extérieure ne peut prétendre lire les pensées de l&apos;autre avec certitude.
+              Cette page propose une <strong>grille de lecture</strong> en trois niveaux : ce que l&apos;on sait avec certitude, les <strong>hypothèses possibles</strong> à considérer sans les figer en vérités, et les questions légitimes que vous pouvez poser. Elle ne cherche pas à deviner à votre place la cause exacte de la rupture, aucune lecture extérieure ne peut prétendre lire les pensées de l&apos;autre avec certitude.
             </p>
             <p className="text-lg leading-relaxed">
               L&apos;objectif est de vous aider à demander des réponses sans supplier, à reconnaître quand insister devient contre-productif, et à avancer même si certaines explications ne viennent jamais. Une <strong>consultation de voyance sentimentale</strong> peut ensuite éclairer les dynamiques relationnelles en jeu, en complément d&apos;une réflexion personnelle, jamais comme un substitut à un dialogue réel.
@@ -107,7 +92,7 @@ export default function RuptureSoudaineSansExplicationPage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">{'\u{1F914}'} Pourquoi une Rupture Peut-elle Sembler Arriver &laquo;Du Jour au Lendemain&raquo;</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Une decision de rupture murit generalement pendant des semaines ou des mois avant d&apos;etre annoncee, mais ce cheminement reste souvent invisible pour l&apos;autre partenaire, ce qui cree une impression trompeuse de soudainete.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Ce qui est vécu comme un <strong>événement brutal</strong> résulte presque toujours d&apos;un processus plus long. La personne qui part a souvent traversé un doute, puis une hésitation, puis une décision, sans jamais partager ces étapes à voix haute — par peur du conflit, par culpabilité, ou parce qu&apos;elle n&apos;a elle-même pris conscience de son désengagement que progressivement.
+            Ce qui est vécu comme un <strong>événement brutal</strong> résulte presque toujours d&apos;un processus plus long. La personne qui part a souvent traversé un doute, puis une hésitation, puis une décision, sans jamais partager ces étapes à voix haute, par peur du conflit, par culpabilité, ou parce qu&apos;elle n&apos;a elle-même pris conscience de son désengagement que progressivement.
           </p>
           <div className="bg-blue-50 border-l-4 border-blue-600 p-6 rounded">
             <p className="text-gray-700"><strong>{'\u{1F4A1}'} À retenir :</strong> la soudaineté ressentie dit surtout que vous n&apos;avez pas eu accès à ce cheminement intérieur, pas que la décision a réellement été prise sur un coup de tête. Cette nuance change la façon dont vous pouvez chercher à comprendre la situation.</p>
@@ -223,55 +208,12 @@ export default function RuptureSoudaineSansExplicationPage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">{'\u{1F9ED}'} Retrouver une Direction Même sans Obtenir Toutes les Réponses</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Avancer apres une rupture sans explication complete suppose d&apos;accepter qu&apos;une comprehension suffisante, batie a partir des faits disponibles, peut remplacer une verite totale qui restera peut-etre toujours hors de portee.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            La grille de lecture proposée ici — <strong>faits</strong>, <strong>hypothèses</strong>, <strong>questions à poser</strong> — n&apos;a pas pour but de produire une certitude absolue, mais une compréhension suffisante pour reprendre pied. Si le <Link href="/rupture/deuil-amoureux" className="text-blue-700 hover:text-blue-900 underline font-medium">deuil amoureux</Link> qui suit vous semble particulièrement lourd à porter seul(e), un accompagnement structuré peut faire une réelle différence dans le rythme de votre reconstruction.
+            La grille de lecture proposée ici, <strong>faits</strong>, <strong>hypothèses</strong>, <strong>questions à poser</strong>, n&apos;a pas pour but de produire une certitude absolue, mais une compréhension suffisante pour reprendre pied. Si le <Link href="/rupture/deuil-amoureux" className="text-blue-700 hover:text-blue-900 underline font-medium">deuil amoureux</Link> qui suit vous semble particulièrement lourd à porter seul(e), un accompagnement structuré peut faire une réelle différence dans le rythme de votre reconstruction.
           </p>
           <div className="bg-white p-6 rounded-lg border-2 border-blue-200">
-            <p className="text-gray-700"><strong>{'\u{1F52E}'} À considérer :</strong> une <strong>consultation de voyance sentimentale</strong> peut vous aider à clarifier les dynamiques relationnelles en jeu et à formuler les bonnes questions pour vous-même — jamais à révéler avec certitude ce qui s&apos;est passé dans la tête de l&apos;autre, ni à garantir un retour.</p>
+            <p className="text-gray-700"><strong>{'\u{1F52E}'} À considérer :</strong> une <strong>consultation de voyance sentimentale</strong> peut vous aider à clarifier les dynamiques relationnelles en jeu et à formuler les bonnes questions pour vous-même, jamais à révéler avec certitude ce qui s&apos;est passé dans la tête de l&apos;autre, ni à garantir un retour.</p>
           </div>
         </section>
-
-        {/* FAQ Section */}
-        <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">{'❓'} Questions Fréquentes</h2>
-          <p className="text-lg font-semibold text-gray-800 mb-4">Les reponses aux questions les plus posees sur une rupture ou un divorce soudain, sans explication claire.</p>
-          <div className="space-y-6">
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Pourquoi il ou elle me quitte du jour au lendemain sans explication ?</h3>
-              <p className="text-gray-700 leading-relaxed">Une rupture qui semble soudaine est rarement soudaine pour la personne qui la décide : elle a souvent <strong>mûri en silence</strong> pendant des semaines ou des mois, sans que les signes n&apos;aient été visibles de l&apos;extérieur. Le décalage entre votre surprise et sa décision s&apos;explique le plus souvent par un cheminement intérieur non partagé, par peur du conflit ou par culpabilité, jamais forcément par une preuve de manipulation.</p>
-            </div>
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Mon mari ou ma femme veut divorcer sans explication, que faire ?</h3>
-              <p className="text-gray-700 leading-relaxed">Demandez une explication <strong>une seule fois</strong>, clairement et calmement, plutôt que de répéter la question sous des formes différentes. Si votre partenaire refuse de développer, insister ferme souvent le dialogue. Concentrez-vous sur les <strong>décisions concrètes</strong> à prendre, en vous laissant le temps de comprendre émotionnellement, éventuellement avec un accompagnement extérieur.</p>
-            </div>
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Comment demander une explication sans supplier ni harceler ?</h3>
-              <p className="text-gray-700 leading-relaxed">Formulez une <strong>seule demande claire</strong>, à un moment calme, en exprimant un besoin plutôt qu&apos;un reproche. Fixez-vous d&apos;avance le nombre de tentatives — une seule démarche sérieuse vaut mieux que des messages répétés qui épuisent les deux parties et associent votre image à l&apos;<strong>insistance</strong> plutôt qu&apos;à la dignité.</p>
-            </div>
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Que faire si mon ex refuse absolument d&apos;en parler ?</h3>
-              <p className="text-gray-700 leading-relaxed">Un refus de discussion ne doit pas être interprété comme un aveu de faute grave : il peut traduire un <strong>évitement du conflit</strong> ou un épuisement émotionnel. Il devient alors plus sain de cesser d&apos;attendre une réponse qui ne viendra peut-être jamais, et de rediriger votre énergie vers votre propre <strong>reconstruction</strong>.</p>
-            </div>
-            <div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Peut-on avancer sans jamais connaître la vraie raison de la rupture ?</h3>
-              <p className="text-gray-700 leading-relaxed">Oui, même si cela demande un travail de deuil supplémentaire. Cela suppose d&apos;accepter que certaines explications resteront incomplètes, et de construire une <strong>compréhension suffisante</strong> à partir des faits observables. Une consultation de voyance sentimentale peut aider à formuler les bonnes questions, sans jamais garantir de révéler une cause cachée.</p>
-            </div>
-          </div>
-        </section>
-
-        {/* Articles Connexes */}
-        <div className="bg-gray-100 rounded-xl p-6 mb-8">
-          <h3 className="font-bold text-lg mb-4 text-gray-900">{'\u{1F4DA}'} Articles Connexes</h3>
-          <div className="space-y-2">
-            <Link href="/rupture" className="block text-blue-700 hover:text-blue-900 font-medium">&rarr; Rupture Amoureuse : Toutes nos Guidances</Link>
-            <Link href="/rupture/voyance-divorce-separation" className="block text-blue-700 hover:text-blue-900 font-medium">&rarr; Voyance Divorce et Séparation</Link>
-            <Link href="/reconquete/separation-temporaire-ou-definitive" className="block text-blue-700 hover:text-blue-900 font-medium">&rarr; Séparation Temporaire ou Définitive ?</Link>
-            <Link href="/reconquete/ex-chaud-et-froid-apres-separation" className="block text-blue-700 hover:text-blue-900 font-medium">&rarr; Mon Ex est Chaud et Froid</Link>
-            <Link href="/rupture/deuil-amoureux" className="block text-blue-700 hover:text-blue-900 font-medium">&rarr; Deuil Amoureux</Link>
-          </div>
-        </div>
-
-        <VoyantFinalCTA topic="rupture" source="rupture-soudaine-final" />
-      </div>
-    </main>
+    </ContentPage>
   );
 }

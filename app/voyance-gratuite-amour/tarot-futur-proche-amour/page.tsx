@@ -45,7 +45,7 @@ export default function TarotFuturProcheAmourPage() {
     },
     {
       question: 'Quelle différence entre tarot futur proche et tirage en croix ?',
-      answer: 'Le tirage en croix (5 cartes) analyse une question sentimentale sous plusieurs angles simultanés — situation actuelle, obstacles, influences cachées, conseil et évolution — sans dimension temporelle marquée. Le tarot futur proche, lui, organise ses cartes explicitement dans le temps : chaque position correspond à une échéance différente. Le premier répond à "pourquoi", le second répond davantage à "quand".',
+      answer: 'Le tirage en croix (5 cartes) analyse une question sentimentale sous plusieurs angles simultanés, situation actuelle, obstacles, influences cachées, conseil et évolution, sans dimension temporelle marquée. Le tarot futur proche, lui, organise ses cartes explicitement dans le temps : chaque position correspond à une échéance différente. Le premier répond à "pourquoi", le second répond davantage à "quand".',
     },
     {
       question: 'Comment poser sa question pour un tarot futur proche amour ?',

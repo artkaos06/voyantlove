@@ -158,8 +158,8 @@ export interface AffiliateAttribution {
 /**
  * Generate the click-out URL for a voyant.
  *
- * Returns a path to our own /api/go/voyant interstitial — NOT a direct
- * MonSiteVoyance URL — so every click gets a Discord ping, digest counter,
+ * Returns a path to our own /api/go/voyant interstitial, NOT a direct
+ * MonSiteVoyance URL, so every click gets a Discord ping, digest counter,
  * and structured Vercel log entry before the 302 redirect.
  *
  * Backward-compatible: existing 2-arg callers keep working. Callers that

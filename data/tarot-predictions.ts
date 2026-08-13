@@ -41,13 +41,13 @@ const basePredictions: Record<SituationType, BasePrediction> = {
   reconquete: {
     card: 'Le Jugement',
     cardEmoji: '🔄',
-    insight: 'Les cartes révèlent un cycle de renaissance dans votre relation. L\'énergie entre vous et votre ex n\'est pas éteinte — elle est en transformation. Des sentiments enfouis remontent à la surface, et un événement inattendu pourrait rouvrir le dialogue. La carte du Jugement indique que le passé n\'est pas terminé : une prise de conscience mutuelle est en cours.',
+    insight: 'Les cartes révèlent un cycle de renaissance dans votre relation. L\'énergie entre vous et votre ex n\'est pas éteinte, elle est en transformation. Des sentiments enfouis remontent à la surface, et un événement inattendu pourrait rouvrir le dialogue. La carte du Jugement indique que le passé n\'est pas terminé : une prise de conscience mutuelle est en cours.',
     advice: 'Le timing est essentiel dans votre situation. Les cartes conseillent de ne pas forcer le contact, mais de vous préparer à une ouverture. Travaillez sur vous-même et montrez votre évolution. Un voyant spécialisé peut vous révéler le moment exact où agir pour maximiser vos chances de reconquête.',
   },
   rupture: {
     card: 'L\'Étoile',
     cardEmoji: '⭐',
-    insight: 'La carte de l\'Étoile apparaît dans votre tirage — c\'est un signe puissant de guérison et d\'espoir. Même si la douleur est encore présente, les énergies indiquent que cette rupture porte en elle les graines d\'un renouveau. Vous êtes plus fort(e) que vous ne le pensez, et cette épreuve vous mène vers quelque chose de meilleur.',
+    insight: 'La carte de l\'Étoile apparaît dans votre tirage, c\'est un signe puissant de guérison et d\'espoir. Même si la douleur est encore présente, les énergies indiquent que cette rupture porte en elle les graines d\'un renouveau. Vous êtes plus fort(e) que vous ne le pensez, et cette épreuve vous mène vers quelque chose de meilleur.',
     advice: 'Les cartes vous invitent à lâcher prise sur ce qui ne vous sert plus. La guérison n\'est pas linéaire, mais elle est déjà en marche. Un éclairage approfondi par un voyant spécialisé peut vous aider à identifier les blocages émotionnels restants et accélérer votre reconstruction.',
   },
   'nouvelle-rencontre': {
@@ -65,7 +65,7 @@ const basePredictions: Record<SituationType, BasePrediction> = {
   'crise-couple': {
     card: 'La Tempérance',
     cardEmoji: '⚖️',
-    insight: 'La carte de la Tempérance apparaît dans votre tirage — elle indique que l\'équilibre peut être restauré. La crise que vous traversez n\'est pas une fin mais un point de transformation. Les cartes montrent que les deux partenaires ont besoin d\'être entendus. Des blessures non exprimées alimentent le conflit, mais la volonté de reconstruire existe des deux côtés.',
+    insight: 'La carte de la Tempérance apparaît dans votre tirage, elle indique que l\'équilibre peut être restauré. La crise que vous traversez n\'est pas une fin mais un point de transformation. Les cartes montrent que les deux partenaires ont besoin d\'être entendus. Des blessures non exprimées alimentent le conflit, mais la volonté de reconstruire existe des deux côtés.',
     advice: 'Les cartes suggèrent que la communication est la clé. Mais attention : ce n\'est pas n\'importe quelle conversation qui résoudra la crise. Il faut comprendre les dynamiques profondes en jeu. Un voyant spécialisé en couple peut identifier les vrais points de tension et vous guider vers les mots et actions qui restaureront l\'harmonie.',
   },
 };

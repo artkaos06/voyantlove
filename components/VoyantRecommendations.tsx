@@ -44,7 +44,7 @@ export default function VoyantRecommendations({
     sentiments: 'Clarté sur les sentiments et l\'avenir de votre relation',
     'crise-couple': 'Solutions concrètes pour surmonter les crises et sauver votre couple',
     'methodes-voyance': 'Maîtres du tarot, oracle et astrologie pour éclairer votre vie sentimentale',
-    'voyance-gratuite': 'Consultez un voyant spécialisé en amour — premières minutes offertes',
+    'voyance-gratuite': 'Consultez un voyant spécialisé en amour, premières minutes offertes',
   };
 
   return (

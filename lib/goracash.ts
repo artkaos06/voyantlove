@@ -1,4 +1,4 @@
-// Goracash API client — server-only.
+// Goracash API client, server-only.
 // Never import from a 'use client' module.
 //
 // Docs: https://account.goracash.com/docs/webservice.installation.md
@@ -137,7 +137,7 @@ export function normalizeFrenchPhone(raw: string): string | null {
 }
 
 // ---------------------------------------------------------------------------
-// Phone CB stats — the conversion/revenue reporting API.
+// Phone CB stats, the conversion/revenue reporting API.
 //
 // Endpoint (docs: WebServices - URLs > Téléphonie):
 //   [POST|GET] /v1/phone/cbStats
@@ -151,7 +151,7 @@ export function normalizeFrenchPhone(raw: string): string | null {
 //   callback     = callback requests     (dashboard "Demandes de rappel")
 //   amount       = € actually owed to us (dashboard "Reversements")
 //
-// Limitation: aggregated by number/date only — no tracker dimension. Good
+// Limitation: aggregated by number/date only, no tracker dimension. Good
 // for daily P&L automation; per-click attribution still requires the web
 // offer's tracker reporting.
 // ---------------------------------------------------------------------------
@@ -256,7 +256,7 @@ export async function getPhoneCBStats(
 }
 
 // ---------------------------------------------------------------------------
-// WEB offer CB stats — the self-serve web funnel's reporting API.
+// WEB offer CB stats, the self-serve web funnel's reporting API.
 //
 // UNDOCUMENTED in the backoffice (the "Guides > Web" doc page is empty), but
 // present in Goracash's public PHP client (Goracash\Service\Web):
@@ -265,7 +265,7 @@ export async function getPhoneCBStats(
 //              tracker  (single) / trackers[] (array)  ← per-cid filter
 //              market/markets, thematic/thematics       (optional)
 //
-// Crucially this accepts a `tracker` filter — the same value we send as
+// Crucially this accepts a `tracker` filter, the same value we send as
 // `datas` on the news-voyance landing. That makes per-click attribution
 // possible for the web offer (phone cbStats has no tracker dimension).
 //
@@ -332,7 +332,7 @@ export async function getWebCBStatsRaw(
     resp = await call(await fetchAccessToken());
   }
 
-  // Return the full picture (no throw) — this is a probe; the caller decides
+  // Return the full picture (no throw), this is a probe; the caller decides
   // what to do with errors. raw is the parsed JSON when available, else the
   // first 500 chars of the body so we can see exactly what Goracash said.
   return {

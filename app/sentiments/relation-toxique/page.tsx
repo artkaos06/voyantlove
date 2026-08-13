@@ -1,110 +1,77 @@
-import type { Metadata } from 'next';
 import Link from 'next/link';
-import { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getAuthorSchema } from '@/lib/schema';
-import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
-import VoyantFinalCTA from '@/components/VoyantFinalCTA';
+import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
-export const metadata: Metadata = {
+const config: ContentPageConfig = {
   title: 'Relation Toxique : Signes, Lib\u00e9ration et Guidance par la Voyance',
   description: 'Identifiez les 10 signes d\u2019une relation toxique et lib\u00e9rez-vous gr\u00e2ce \u00e0 la voyance amoureuse. Tarot de lib\u00e9ration, manipulation \u00e9motionnelle, reconstruction apr\u00e8s toxicit\u00e9.',
+  url: 'https://www.voyantlove.fr/sentiments/relation-toxique/',
   keywords: ['relation toxique', 'signes relation toxique', 'manipulation \u00e9motionnelle', 'd\u00e9pendance affective', 'lib\u00e9ration relation toxique', 'voyance amoureuse', 'tarot lib\u00e9ration'],
-  alternates: {
-    canonical: 'https://www.voyantlove.fr/sentiments/relation-toxique/',
-  },
-  openGraph: {
-    title: 'Relation Toxique : Signes, Lib\u00e9ration et Guidance par la Voyance',
-    description: 'Identifiez les 10 signes d\u2019une relation toxique et lib\u00e9rez-vous gr\u00e2ce \u00e0 la voyance amoureuse. Tarot de lib\u00e9ration, manipulation \u00e9motionnelle, reconstruction apr\u00e8s toxicit\u00e9.',
-    url: 'https://www.voyantlove.fr/sentiments/relation-toxique/',
-    type: 'article',
-  },
-};
-
-export default function RelationToxiquePage() {
-  const articleSchema = getArticleSchema({
-    title: 'Relation Toxique : Signes, Lib\u00e9ration et Guidance par la Voyance',
-    description: 'Identifiez les 10 signes d\u2019une relation toxique et lib\u00e9rez-vous gr\u00e2ce \u00e0 la voyance amoureuse. Tarot de lib\u00e9ration, manipulation \u00e9motionnelle, reconstruction apr\u00e8s toxicit\u00e9.',
-    url: 'https://www.voyantlove.fr/sentiments/relation-toxique/',
-    datePublished: '2026-03-07',
-    dateModified: '2026-03-07',
-    keywords: ['relation toxique', 'signes relation toxique', 'manipulation \u00e9motionnelle', 'd\u00e9pendance affective', 'lib\u00e9ration relation toxique', 'voyance amoureuse', 'tarot lib\u00e9ration'],
-  });
-
-  const breadcrumbSchema = getBreadcrumbSchema([
+  datePublished: '2026-03-07',
+  dateModified: '2026-03-07',
+  breadcrumb: [
     { name: 'Accueil', url: 'https://www.voyantlove.fr' },
     { name: 'Sentiments & Avenir', url: 'https://www.voyantlove.fr/sentiments/' },
     { name: 'Relation Toxique', url: 'https://www.voyantlove.fr/sentiments/relation-toxique/' },
-  ]);
+  ],
+  header: {
+    emoji: '\u26a0\ufe0f',
+    h1: 'Relation Toxique : Signes, Lib\u00e9ration et Guidance',
+    subtitle: 'Reconnaissez les signes de toxicit\u00e9 et lib\u00e9rez-vous gr\u00e2ce \u00e0 la voyance amoureuse',
+    gradient: 'from-red-500 via-orange-500 to-amber-500',
+    backLink: { href: '/sentiments', label: 'Retour aux Sentiments & Avenir' },
+    anchors: [
+      { href: '#liberation', label: 'Se Lib\u00e9rer Maintenant', primary: true },
+      { href: '#signes', label: 'Les 10 Signes Cl\u00e9s' },
+    ],
+  },
+  accentText: 'text-red-600',
+  stats: [
+    { icon: '\u26a0\ufe0f', value: '1 sur 3', label: 'Couples concern\u00e9s' },
+    { icon: '\ud83d\udd0d', value: '10 signes', label: 'Cl\u00e9s \u00e0 reconna\u00eetre' },
+    { icon: '\u2b50', value: '4.9/5', label: 'Satisfaction' },
+    { icon: '\ud83d\udcaa', value: 'Forte', label: 'Lib\u00e9ration' },
+  ],
+  eeat: { colorScheme: 'orange', method: 'Tarot de lib\u00e9ration et guidance sentimentale' },
+  cta: { topic: 'sentiments', slug: 'relation-toxique' },
+  faq: [
+    {
+      q: 'Ma relation est-elle toxique ?',
+      a: 'Une relation toxique se reconna\u00eet \u00e0 plusieurs signes r\u00e9v\u00e9lateurs : vous marchez sur des \u0153ufs en permanence, votre partenaire vous isole de vos proches, vous doutez constamment de votre propre perception (gaslighting), et vous ressentez plus de souffrance que de bonheur. Le tarot identifie cette toxicit\u00e9 \u00e0 travers des arcanes comme Le Diable (emp\u00eachement, cha\u00eenes) et La Lune (illusions, manipulation). Si votre estime de soi s\u2019est d\u00e9t\u00e9rior\u00e9e depuis le d\u00e9but de la relation, si vous avez peur de la r\u00e9action de l\u2019autre quand vous exprimez vos besoins, ce sont des signaux d\u2019alarme majeurs que la voyance peut confirmer avec clart\u00e9.',
+    },
+    {
+      q: 'La voyance aide-t-elle \u00e0 quitter une relation toxique ?',
+      a: 'La voyance joue un r\u00f4le d\u00e9terminant pour quitter une relation toxique en apportant la clart\u00e9 qui vous manque. Le tarot r\u00e9v\u00e8le la v\u00e9ritable nature de votre lien, au-del\u00e0 des illusions que le manipulateur a construites. Un tirage de lib\u00e9ration identifie pr\u00e9cis\u00e9ment les cha\u00eenes \u00e9motionnelles qui vous retiennent, les peurs qui vous paralysent et le chemin concret vers la sortie. La guidance spirituelle vous donne \u00e9galement la force int\u00e9rieure n\u00e9cessaire en vous reconnectant \u00e0 votre propre valeur. C\u2019est souvent le d\u00e9clencheur de la prise de conscience finale.',
+    },
+    {
+      q: 'Peut-on sauver une relation toxique ?',
+      a: 'La r\u00e9ponse d\u00e9pend de la nature de la toxicit\u00e9 et de la volont\u00e9 r\u00e9elle des deux partenaires. Si la toxicit\u00e9 provient de sch\u00e9mas inconscients r\u00e9p\u00e9titifs que les deux personnes souhaitent transformer, le tarot peut guider cette \u00e9volution. Cependant, si la dynamique repose sur une manipulation d\u00e9lib\u00e9r\u00e9e, un contr\u00f4le syst\u00e9matique ou de la violence, la relation ne peut pas \u00eatre sauv\u00e9e sans mettre votre s\u00e9curit\u00e9 en danger. Le tarot distingue clairement ces deux situations : Temp\u00e9rance sugg\u00e8re un r\u00e9\u00e9quilibrage possible, tandis que La Tour indique qu\u2019il faut partir pour se prot\u00e9ger.',
+    },
+    {
+      q: 'Pourquoi est-ce si dur de quitter un toxique ?',
+      a: 'Quitter une relation toxique est extr\u00eamement difficile en raison de m\u00e9canismes psychologiques puissants. Le trauma bonding cr\u00e9e un attachement paradoxal o\u00f9 les moments de douceur apr\u00e8s la violence renforcent le lien. La d\u00e9pendance affective vous fait croire que vous ne pouvez pas survivre sans l\u2019autre. Le gaslighting a \u00e9rod\u00e9 votre confiance en votre propre jugement. L\u2019isolement social vous prive de soutien ext\u00e9rieur. Le tarot \u00e9claire ces pi\u00e8ges invisibles \u00e0 travers Le Diable (cha\u00eenes volontaires), La Lune (illusions et confusion) et le Huit de Coupe invers\u00e9 (incapacit\u00e9 \u00e0 partir malgr\u00e9 la souffrance).',
+    },
+    {
+      q: 'Comment eviter de retomber dans une relation toxique ?',
+      a: 'Pour ne pas retomber dans une relation toxique, le travail de fond est essentiel. Le tarot identifie vos vuln\u00e9rabilit\u00e9s sp\u00e9cifiques et les sch\u00e9mas karmiques qui vous attirent vers des partenaires toxiques. Reconstruire votre estime de soi est la premi\u00e8re \u00e9tape : une personne qui conna\u00eet sa valeur reconna\u00eet plus vite les signaux d\u2019alarme. Apprenez \u00e0 \u00e9couter votre intuition, que la voyance d\u00e9veloppe naturellement. \u00c9tablissez des limites claires d\u00e8s le d\u00e9but d\u2019une nouvelle relation. Gardez votre r\u00e9seau social actif. Un suivi r\u00e9gulier par la guidance spirituelle vous aide \u00e0 rep\u00e9rer les premiers signes de toxicit\u00e9 avant de vous y enliser.',
+    },
+  ],
+  related: [
+    { href: '/crise-couple/dependance-affective', label: 'D\u00e9pendance Affective : Se Lib\u00e9rer et Aimer Sainement' },
+    { href: '/crise-couple/jalousie-excessive', label: 'Jalousie Excessive dans le Couple' },
+    { href: '/rupture/rupture-amoureuse', label: 'Rupture Amoureuse : Comprendre et Surmonter' },
+    { href: '/rupture/guerir-rupture', label: 'Gu\u00e9rir Apr\u00e8s une Rupture Douloureuse' },
+    { href: '/sentiments/maime-t-il-elle', label: 'M\u2019aime-t-il/elle Vraiment ?' },
+  ],
+};
 
-  const authorSchema = getAuthorSchema();
+export const metadata = contentMeta(config);
 
-  const faqSchema = getFAQSchema([
-    {
-      question: 'Ma relation est-elle toxique ?',
-      answer: 'Une relation toxique se reconna\u00eet \u00e0 plusieurs signes r\u00e9v\u00e9lateurs : vous marchez sur des \u0153ufs en permanence, votre partenaire vous isole de vos proches, vous doutez constamment de votre propre perception (gaslighting), et vous ressentez plus de souffrance que de bonheur. Le tarot identifie cette toxicit\u00e9 \u00e0 travers des arcanes comme Le Diable (emp\u00eachement, cha\u00eenes) et La Lune (illusions, manipulation). Si votre estime de soi s\u2019est d\u00e9t\u00e9rior\u00e9e depuis le d\u00e9but de la relation, si vous avez peur de la r\u00e9action de l\u2019autre quand vous exprimez vos besoins, ce sont des signaux d\u2019alarme majeurs que la voyance peut confirmer avec clart\u00e9.',
-    },
-    {
-      question: 'La voyance aide-t-elle \u00e0 quitter une relation toxique ?',
-      answer: 'La voyance joue un r\u00f4le d\u00e9terminant pour quitter une relation toxique en apportant la clart\u00e9 qui vous manque. Le tarot r\u00e9v\u00e8le la v\u00e9ritable nature de votre lien, au-del\u00e0 des illusions que le manipulateur a construites. Un tirage de lib\u00e9ration identifie pr\u00e9cis\u00e9ment les cha\u00eenes \u00e9motionnelles qui vous retiennent, les peurs qui vous paralysent et le chemin concret vers la sortie. La guidance spirituelle vous donne \u00e9galement la force int\u00e9rieure n\u00e9cessaire en vous reconnectant \u00e0 votre propre valeur. C\u2019est souvent le d\u00e9clencheur de la prise de conscience finale.',
-    },
-    {
-      question: 'Peut-on sauver une relation toxique ?',
-      answer: 'La r\u00e9ponse d\u00e9pend de la nature de la toxicit\u00e9 et de la volont\u00e9 r\u00e9elle des deux partenaires. Si la toxicit\u00e9 provient de sch\u00e9mas inconscients r\u00e9p\u00e9titifs que les deux personnes souhaitent transformer, le tarot peut guider cette \u00e9volution. Cependant, si la dynamique repose sur une manipulation d\u00e9lib\u00e9r\u00e9e, un contr\u00f4le syst\u00e9matique ou de la violence, la relation ne peut pas \u00eatre sauv\u00e9e sans mettre votre s\u00e9curit\u00e9 en danger. Le tarot distingue clairement ces deux situations : Temp\u00e9rance sugg\u00e8re un r\u00e9\u00e9quilibrage possible, tandis que La Tour indique qu\u2019il faut partir pour se prot\u00e9ger.',
-    },
-    {
-      question: 'Pourquoi est-ce si dur de quitter un toxique ?',
-      answer: 'Quitter une relation toxique est extr\u00eamement difficile en raison de m\u00e9canismes psychologiques puissants. Le trauma bonding cr\u00e9e un attachement paradoxal o\u00f9 les moments de douceur apr\u00e8s la violence renforcent le lien. La d\u00e9pendance affective vous fait croire que vous ne pouvez pas survivre sans l\u2019autre. Le gaslighting a \u00e9rod\u00e9 votre confiance en votre propre jugement. L\u2019isolement social vous prive de soutien ext\u00e9rieur. Le tarot \u00e9claire ces pi\u00e8ges invisibles \u00e0 travers Le Diable (cha\u00eenes volontaires), La Lune (illusions et confusion) et le Huit de Coupe invers\u00e9 (incapacit\u00e9 \u00e0 partir malgr\u00e9 la souffrance).',
-    },
-    {
-      question: 'Comment eviter de retomber dans une relation toxique ?',
-      answer: 'Pour ne pas retomber dans une relation toxique, le travail de fond est essentiel. Le tarot identifie vos vuln\u00e9rabilit\u00e9s sp\u00e9cifiques et les sch\u00e9mas karmiques qui vous attirent vers des partenaires toxiques. Reconstruire votre estime de soi est la premi\u00e8re \u00e9tape : une personne qui conna\u00eet sa valeur reconna\u00eet plus vite les signaux d\u2019alarme. Apprenez \u00e0 \u00e9couter votre intuition, que la voyance d\u00e9veloppe naturellement. \u00c9tablissez des limites claires d\u00e8s le d\u00e9but d\u2019une nouvelle relation. Gardez votre r\u00e9seau social actif. Un suivi r\u00e9gulier par la guidance spirituelle vous aide \u00e0 rep\u00e9rer les premiers signes de toxicit\u00e9 avant de vous y enliser.',
-    },
-  ]);
+export default function RelationToxiquePage() {
 
   return (
-    <main className="min-h-screen bg-gray-50">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(authorSchema) }}
-      />
-
-      {/* Header */}
-      <header className="bg-gradient-to-r from-red-500 via-orange-500 to-amber-500 text-white py-16 px-4">
-        <div className="max-w-4xl mx-auto">
-          <Link href="/sentiments" className="text-white/80 hover:text-white mb-4 inline-block">&larr; Retour aux Sentiments &amp; Avenir</Link>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">&#x26A0;&#xFE0F; Relation Toxique : Signes, Lib&eacute;ration et Guidance</h1>
-          <p className="text-xl opacity-95 mb-6">Reconnaissez les signes de toxicit&eacute; et lib&eacute;rez-vous gr&acirc;ce &agrave; la voyance amoureuse</p>
-          <div className="flex gap-4 flex-wrap">
-            <a href="#liberation" className="bg-white text-red-600 px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition">Se Lib&eacute;rer Maintenant</a>
-            <a href="#signes" className="border-2 border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-red-600 transition">Les 10 Signes Cl&eacute;s</a>
-          </div>
-        </div>
-      </header>
-
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        {/* Stats bar */}
-        <div className="bg-white rounded-xl shadow-md p-6 mb-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-          <div><div className="text-3xl mb-1">&#x26A0;&#xFE0F;</div><div className="text-2xl font-bold text-red-600">1 sur 3</div><div className="text-sm text-gray-600">Couples concern&eacute;s</div></div>
-          <div><div className="text-3xl mb-1">&#x1F50D;</div><div className="text-2xl font-bold text-red-600">10 signes</div><div className="text-sm text-gray-600">Cl&eacute;s &agrave; reconna&icirc;tre</div></div>
-          <div><div className="text-3xl mb-1">&#x2B50;</div><div className="text-2xl font-bold text-red-600">4.9/5</div><div className="text-sm text-gray-600">Satisfaction</div></div>
-          <div><div className="text-3xl mb-1">&#x1F4AA;</div><div className="text-2xl font-bold text-red-600">Forte</div><div className="text-sm text-gray-600">Lib&eacute;ration</div></div>
-        </div>
-
-        {/* EEAT Signal */}
-        <EEATSignal colorScheme="orange" method="Tarot de lib&eacute;ration et guidance sentimentale" />
+    <ContentPage config={config}>
 
         {/* Answer Capsule */}
         <article className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-red-600">
@@ -380,53 +347,6 @@ export default function RelationToxiquePage() {
           </div>
         </section>
 
-        {/* FAQ Section */}
-        <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">&#x2753; Questions Fr&eacute;quentes sur les Relations Toxiques</h2>
-          <p className="text-lg font-semibold text-gray-800 mb-4">Les reponses aux questions les plus posees sur les relations toxiques, la manipulation emotionnelle, la liberation et la reconstruction apres une emprise.</p>
-          <div className="space-y-6">
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Ma relation est-elle toxique ?</h3>
-              <p className="text-gray-700 leading-relaxed">Une <strong>relation toxique</strong> se reconna&icirc;t &agrave; plusieurs signes r&eacute;v&eacute;lateurs : vous marchez sur des &oelig;ufs en permanence, votre partenaire vous isole de vos proches, vous doutez constamment de votre propre perception (<strong>gaslighting</strong>), et vous ressentez plus de souffrance que de bonheur. Le tarot identifie cette toxicit&eacute; &agrave; travers des arcanes comme Le Diable (emp&ecirc;chement, cha&icirc;nes) et La Lune (illusions, <strong>manipulation</strong>). Si votre <strong>estime de soi</strong> s&rsquo;est d&eacute;t&eacute;rior&eacute;e depuis le d&eacute;but de la relation, si vous avez peur de la r&eacute;action de l&rsquo;autre quand vous exprimez vos besoins, ce sont des signaux d&rsquo;alarme majeurs que la <strong>voyance</strong> peut confirmer avec clart&eacute;.</p>
-            </div>
-
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">La voyance aide-t-elle &agrave; quitter une relation toxique ?</h3>
-              <p className="text-gray-700 leading-relaxed">La <strong>voyance</strong> joue un r&ocirc;le d&eacute;terminant pour quitter une relation toxique en apportant la clart&eacute; qui vous manque. Le <strong>tarot</strong> r&eacute;v&egrave;le la v&eacute;ritable nature de votre lien, au-del&agrave; des illusions que le manipulateur a construites. Un tirage de <strong>lib&eacute;ration</strong> identifie pr&eacute;cis&eacute;ment les cha&icirc;nes &eacute;motionnelles qui vous retiennent, les peurs qui vous paralysent et le chemin concret vers la sortie. La guidance spirituelle vous donne &eacute;galement la force int&eacute;rieure n&eacute;cessaire en vous reconnectant &agrave; votre propre valeur. C&rsquo;est souvent le d&eacute;clencheur de la <strong>prise de conscience</strong> finale.</p>
-            </div>
-
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Peut-on sauver une relation toxique ?</h3>
-              <p className="text-gray-700 leading-relaxed">La r&eacute;ponse d&eacute;pend de la nature de la <strong>toxicit&eacute;</strong> et de la volont&eacute; r&eacute;elle des deux partenaires. Si la toxicit&eacute; provient de sch&eacute;mas inconscients r&eacute;p&eacute;titifs que les deux personnes souhaitent transformer, le <strong>tarot</strong> peut guider cette &eacute;volution. Cependant, si la dynamique repose sur une <strong>manipulation d&eacute;lib&eacute;r&eacute;e</strong>, un contr&ocirc;le syst&eacute;matique ou de la violence, la relation ne peut pas &ecirc;tre sauv&eacute;e sans mettre votre s&eacute;curit&eacute; en danger. Le tarot distingue clairement ces deux situations : Temp&eacute;rance sugg&egrave;re un r&eacute;&eacute;quilibrage possible, tandis que <strong>La Tour</strong> indique qu&rsquo;il faut partir pour se prot&eacute;ger.</p>
-            </div>
-
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Pourquoi est-ce si dur de quitter un toxique ?</h3>
-              <p className="text-gray-700 leading-relaxed">Quitter une relation toxique est extr&ecirc;mement difficile en raison de m&eacute;canismes psychologiques puissants. Le <strong>trauma bonding</strong> cr&eacute;e un attachement paradoxal o&ugrave; les moments de douceur apr&egrave;s la violence renforcent le lien. La <strong>d&eacute;pendance affective</strong> vous fait croire que vous ne pouvez pas survivre sans l&rsquo;autre. Le <strong>gaslighting</strong> a &eacute;rod&eacute; votre confiance en votre propre jugement. L&rsquo;isolement social vous prive de soutien ext&eacute;rieur. Le tarot &eacute;claire ces pi&egrave;ges invisibles &agrave; travers Le Diable (cha&icirc;nes volontaires), La Lune (illusions et confusion) et le <strong>Huit de Coupe invers&eacute;</strong> (incapacit&eacute; &agrave; partir malgr&eacute; la souffrance).</p>
-            </div>
-
-            <div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Comment eviter de retomber dans une relation toxique ?</h3>
-              <p className="text-gray-700 leading-relaxed">Pour ne pas retomber dans une <strong>relation toxique</strong>, le travail de fond est essentiel. Le tarot identifie vos <strong>vuln&eacute;rabilit&eacute;s</strong> sp&eacute;cifiques et les sch&eacute;mas karmiques qui vous attirent vers des partenaires toxiques. Reconstruire votre <strong>estime de soi</strong> est la premi&egrave;re &eacute;tape : une personne qui conna&icirc;t sa valeur reconna&icirc;t plus vite les signaux d&rsquo;alarme. Apprenez &agrave; &eacute;couter votre intuition, que la <strong>voyance</strong> d&eacute;veloppe naturellement. &Eacute;tablissez des limites claires d&egrave;s le d&eacute;but d&rsquo;une nouvelle relation. Gardez votre r&eacute;seau social actif. Un suivi r&eacute;gulier par la <strong>guidance spirituelle</strong> vous aide &agrave; rep&eacute;rer les premiers signes de toxicit&eacute; avant de vous y enliser.</p>
-            </div>
-          </div>
-        </section>
-
-        {/* Articles Connexes */}
-        <div className="bg-gray-100 rounded-xl p-6 mb-8">
-          <h3 className="font-bold text-lg mb-4 text-gray-900">&#x1F4DA; Articles Connexes</h3>
-          <div className="space-y-2">
-            <Link href="/crise-couple/dependance-affective" className="block text-red-600 hover:text-red-800 font-medium">&rarr; D&eacute;pendance Affective : Se Lib&eacute;rer et Aimer Sainement</Link>
-            <Link href="/crise-couple/jalousie-excessive" className="block text-red-600 hover:text-red-800 font-medium">&rarr; Jalousie Excessive dans le Couple</Link>
-            <Link href="/rupture/rupture-amoureuse" className="block text-red-600 hover:text-red-800 font-medium">&rarr; Rupture Amoureuse : Comprendre et Surmonter</Link>
-            <Link href="/rupture/guerir-rupture" className="block text-red-600 hover:text-red-800 font-medium">&rarr; Gu&eacute;rir Apr&egrave;s une Rupture Douloureuse</Link>
-            <Link href="/sentiments/maime-t-il-elle" className="block text-red-600 hover:text-red-800 font-medium">&rarr; M&rsquo;aime-t-il/elle Vraiment ?</Link>
-          </div>
-        </div>
-
-        {/* CTA Footer */}
-        <VoyantFinalCTA topic="sentiments" source="relation-toxique-final" />
-      </div>
-    </main>
+      </ContentPage>
   );
 }

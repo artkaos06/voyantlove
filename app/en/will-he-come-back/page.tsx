@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   description:
     'A short-read on whether your ex is likely to come back, the signs to watch for, and how to get a personalized reading about your specific situation for $1.',
   alternates: {
-    canonical: 'https://www.lovepsychicguide.com/will-he-come-back',
+    canonical: 'https://www.lovepsychicguide.com/will-he-come-back/',
   },
 };
 
@@ -42,13 +42,13 @@ export default function WillHeComeBackPage() {
             Honest read · 5 min
           </p>
           <h1 className="text-3xl md:text-4xl font-extrabold text-gray-900 leading-tight mb-5">
-            Will he come back to me? Honest signs — and how to get a real
+            Will he come back to me? Honest signs, and how to get a real
             answer about your specific situation.
           </h1>
           <p className="text-lg text-gray-700 leading-relaxed">
             If you&apos;re reading this at 2 a.m. with your phone in your
             hand: take a breath. There ARE signs you can read. But the
-            signs in any generic article — including this one — can only
+            signs in any generic article, including this one, can only
             tell you so much, because they don&apos;t know <em>him</em>.
           </p>
         </header>
@@ -59,17 +59,17 @@ export default function WillHeComeBackPage() {
             subtitle="Honest editorial"
             summary={[
               '40-50% of exes reach out within a year, but only 15-20% of those reconciliations become stable. Statistics give you the baseline, not the answer about him.',
-              'There are specific signs to read (in their behavior, your shared history, the type of breakup) — we cover the high-signal ones below.',
+              'There are specific signs to read (in their behavior, your shared history, the type of breakup), we cover the high-signal ones below.',
               'Generic checklists can\'t see your specific situation. For a real read on him, an experienced love psychic can do in 5 minutes what a 2,000-word article can\'t.',
             ]}
-            ctaPrompt="Want a real answer about him — not just generic signs?"
+            ctaPrompt="Want a real answer about him, not just generic signs?"
             cta={
               <AffiliateCTA
                 offer="keen"
                 placement="topic_will_he_come_back_tldr"
                 className="inline-flex items-center gap-2 bg-purple-600 hover:bg-purple-700 text-white text-sm font-semibold px-4 py-2.5 rounded-lg transition-colors"
               >
-                Talk to a love psychic — 5 min for $1 →
+                Talk to a love psychic, 5 min for $1 →
               </AffiliateCTA>
             }
             ctaFootnote="New users: 5 minutes for $1 with any new advisor on Keen · 18+"
@@ -88,25 +88,25 @@ export default function WillHeComeBackPage() {
 
           <StatCallout
             number="40-50%"
-            label="of exes reach out within a year — but only 15-20% of those reconciliations become stable second relationships."
+            label="of exes reach out within a year, but only 15-20% of those reconciliations become stable second relationships."
             source="Aggregate of post-breakup behavioral studies"
           />
 
           <p>
             So the answer to &ldquo;will he reach out at all&rdquo; is,
-            statistically, probably yes — eventually. The harder
+            statistically, probably yes, eventually. The harder
             question, the one that&apos;s actually keeping you up at
-            night, is whether <em>he</em> specifically — given how the
+            night, is whether <em>he</em> specifically, given how the
             breakup happened, what his attachment pattern looks like,
-            who&apos;s currently in his life — will reach out and
+            who&apos;s currently in his life, will reach out and
             whether it&apos;ll lead to anything real.
           </p>
 
           <KeyTakeaway title="Why generic stats can't answer your question">
             Statistics describe a population. Your situation is a sample
-            of one. The variables that actually matter — his current
+            of one. The variables that actually matter, his current
             state of mind, his guilt level, his relationship history,
-            the specific dynamic between the two of you — are not in any
+            the specific dynamic between the two of you, are not in any
             dataset.
           </KeyTakeaway>
 
@@ -126,7 +126,7 @@ export default function WillHeComeBackPage() {
             </li>
             <li>
               <strong>The breakup was situational, not chemistry-based.</strong>{' '}
-              Long distance, a job move, family pressure — these
+              Long distance, a job move, family pressure, these
               breakups have a much higher reconciliation rate than
               breakups over fundamental incompatibility.
             </li>
@@ -137,7 +137,7 @@ export default function WillHeComeBackPage() {
           <ul>
             <li>
               <strong>A clean digital cut.</strong> Blocked, unfollowed,
-              photos removed — this isn&apos;t a temporary cooling-off
+              photos removed, this isn&apos;t a temporary cooling-off
               measure. People who block tend to have decided.
             </li>
             <li>
@@ -154,7 +154,7 @@ export default function WillHeComeBackPage() {
           </ul>
 
           <PullQuote>
-            Generic signs are useful — but the only person who can
+            Generic signs are useful, but the only person who can
             actually read <em>him</em> is someone tuned to his energy.
           </PullQuote>
 
@@ -170,8 +170,8 @@ export default function WillHeComeBackPage() {
             subtext={
               <>
                 Generic signs are noise. The specifics of your situation
-                — his state of mind, what&apos;s shifting on his side
-                right now — need a real psychic who can read his energy,
+, his state of mind, what&apos;s shifting on his side
+                right now, need a real psychic who can read his energy,
                 not a checklist. New users on Keen get 5 minutes for $1
                 with any new advisor.
               </>
@@ -185,7 +185,7 @@ export default function WillHeComeBackPage() {
             The single highest-leverage action in the first two months
             after a breakup is simply <em>not reaching out</em>. Most
             regretted texts happen between week 2 and week 8. If
-            you&apos;re tempted, distract until the urge passes — it
+            you&apos;re tempted, distract until the urge passes, it
             usually does within an hour.
           </p>
 
@@ -197,8 +197,8 @@ export default function WillHeComeBackPage() {
           </p>
 
           <KeyTakeaway title="If you can't help reaching out" variant="caution">
-            That impulse — the one keeping your hand on the phone at 4
-            a.m. — is exactly the moment a real reading helps. Five
+            That impulse, the one keeping your hand on the phone at 4
+            a.m., is exactly the moment a real reading helps. Five
             minutes with a love specialist often resolves the loop
             faster than three nights of refreshing his Instagram.
           </KeyTakeaway>
@@ -215,7 +215,7 @@ export default function WillHeComeBackPage() {
           <p>
             The advisors who specialize in love and relationships have
             done thousands of post-breakup readings. They can read
-            energy patterns most people can&apos;t — including, often,
+            energy patterns most people can&apos;t, including, often,
             what&apos;s going on for him right now. Whether you accept
             the metaphysics or not, the structured outside-perspective
             is genuinely useful when self-reflection has run out of
@@ -226,7 +226,7 @@ export default function WillHeComeBackPage() {
             Most importantly: it&apos;s a low-friction first step. New
             users on Keen get 5 minutes for $1 with any new advisor.
             That&apos;s less than a coffee, and it&apos;s about your
-            specific situation — not generic checklists.
+            specific situation, not generic checklists.
           </p>
 
           {/* Final affiliate CTA */}

@@ -92,7 +92,7 @@ export default function TarotAmourGratuitPage() {
       {/* Interactive Tarot Tool */}
       <section id="tirage" className="max-w-4xl mx-auto px-4 py-8">
         <TarotSpread
-          title="🔮 Tirage en Croix — 5 Cartes"
+          title="🔮 Tirage en Croix, 5 Cartes"
           subtitle="Le tirage le plus complet pour une vision d'ensemble de votre situation sentimentale"
           positions={['Vous', "L'autre", 'Le Défi', 'Le Conseil', "L'Issue"]}
           ctaSource="tarot-amour-gratuit"

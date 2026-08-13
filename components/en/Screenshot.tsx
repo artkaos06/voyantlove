@@ -2,7 +2,7 @@
 //
 // Use case: review pages need real screenshots from the platform being
 // reviewed (Keen homepage, advisor list, pricing display, etc.) to look
-// credible. But we don't always have them on day-one — and we want the
+// credible. But we don't always have them on day-one, and we want the
 // page to look polished even before the screenshots are added.
 //
 // This component renders a styled "screenshot mockup" placeholder when
@@ -11,7 +11,7 @@
 // file into /public/images/<path> and add `src="/images/<path>"` to the
 // component.
 //
-// Captions are required (not optional) — they reinforce the editorial
+// Captions are required (not optional), they reinforce the editorial
 // framing and serve as the alt text fallback for accessibility.
 
 import Image from 'next/image';

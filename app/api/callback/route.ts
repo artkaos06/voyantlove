@@ -70,7 +70,7 @@ export async function POST(request: NextRequest) {
 
     if (result.status !== 'ok') {
       console.error('Goracash callback error:', result);
-      // Awaited — Vercel serverless terminates the function after the
+      // Awaited, Vercel serverless terminates the function after the
       // response, killing any fire-and-forget Discord call.
       await notifyDiscord({
         title: '🔴 Goracash callback · provider error',
@@ -90,7 +90,7 @@ export async function POST(request: NextRequest) {
     }
 
     // Daily-digest counter + real-time Discord ping. Phone-callback leads
-    // are the FR site's primary conversion event — equivalent to first-
+    // are the FR site's primary conversion event, equivalent to first-
     // purchase on the EN side.
     recordGoracashLead();
     await notifyDiscord({

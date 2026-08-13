@@ -1,7 +1,7 @@
 // Stylized pull quote for surfacing the most resonant line in a section.
 // Gives the eye an anchor in long-form articles, breaks up text density.
 //
-// Use sparingly — 1-2 per article max. Overuse defeats the purpose.
+// Use sparingly, 1-2 per article max. Overuse defeats the purpose.
 
 import type { ReactNode } from 'react';
 
@@ -26,7 +26,7 @@ export default function PullQuote({ children, attribution }: PullQuoteProps) {
       </blockquote>
       {attribution && (
         <figcaption className="mt-3 ml-6 md:ml-8 text-sm text-gray-500">
-          — {attribution}
+, {attribution}
         </figcaption>
       )}
     </figure>

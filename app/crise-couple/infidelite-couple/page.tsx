@@ -1,106 +1,81 @@
-import type { Metadata } from 'next';
 import Link from 'next/link';
-import { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getAuthorSchema } from '@/lib/schema';
-import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
-import VoyantFinalCTA from '@/components/VoyantFinalCTA';
+import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
-export const metadata: Metadata = {
+const config: ContentPageConfig = {
   title: 'Infidélité dans le Couple : Trahison, Pardon et Reconstruction | Voyance',
   description: 'Comprendre et surmonter l\'infidélité dans le couple. Guidance sur la trahison, le pardon, la reconstruction de la confiance et la seconde chance.',
+  url: 'https://www.voyantlove.fr/crise-couple/infidelite-couple/',
   keywords: ['infidélité couple', 'trahison amoureuse', 'pardon infidélité', 'surmonter tromperie', 'seconde chance couple'],
-  alternates: { canonical: 'https://www.voyantlove.fr/crise-couple/infidelite-couple/' },
-};
-
-export default function InfideliteCouplePage() {
-  const articleSchema = getArticleSchema({
-    title: 'Infidélité dans le Couple : Trahison, Pardon et Reconstruction | Voyance',
-    description: 'Comprendre et surmonter l\'infidélité dans le couple. Guidance sur la trahison, le pardon, la reconstruction de la confiance et la seconde chance.',
-    url: 'https://www.voyantlove.fr/crise-couple/infidelite-couple/',
-    datePublished: '2026-02-09',
-    dateModified: '2026-02-09',
-    keywords: ['infidélité couple', 'trahison amoureuse', 'pardon infidélité', 'surmonter tromperie', 'seconde chance couple'],
-  });
-
-  const breadcrumbSchema = getBreadcrumbSchema([
+  datePublished: '2026-02-09',
+  dateModified: '2026-02-09',
+  breadcrumb: [
     { name: 'Accueil', url: 'https://www.voyantlove.fr' },
     { name: 'Crise de Couple', url: 'https://www.voyantlove.fr/crise-couple/' },
     { name: 'Infidélité dans le Couple', url: 'https://www.voyantlove.fr/crise-couple/infidelite-couple/' },
-  ]);
+  ],
+  header: {
+    emoji: '💔',
+    h1: 'Infidélité dans le Couple',
+    subtitle: 'Comprendre la trahison, cheminer vers le pardon, et reconstruire la confiance',
+    gradient: 'from-red-600 via-rose-600 to-pink-600',
+    backLink: { href: '/crise-couple', label: 'Retour aux Crises de Couple' },
+    anchors: [
+      { href: '#reconstruction', label: 'Reconstruire', primary: true },
+      { href: '#tirage', label: 'Tirage Infidélité' },
+    ],
+  },
+  accentText: 'text-rose-600',
+  stats: [
+    { icon: '💔', value: 'Réelle', label: 'Guérison possible' },
+    { icon: '🔮', value: 'Reconnue', label: 'Expertise' },
+    { icon: '❤️‍🩹', value: 'Vaste', label: 'Expérience' },
+    { icon: '⭐', value: 'Élevée', label: 'Satisfaction' },
+  ],
+  eeat: { colorScheme: 'purple', method: 'Tarot relationnel et guidance de reconstruction' },
+  cta: { topic: 'crise-couple', slug: 'infidelite-couple' },
+  faq: [
+    {
+      q: 'Mon partenaire est-il infidèle ?',
+      a: 'Les signes d\'infidélité incluent : changements soudains de comportement, protection excessive du téléphone, diminution de l\'intimité, absences inexpliquées, soins accrus de l\'apparence, distances émotionnelles, et mensonges fréquents. Cependant, ces signes ne sont pas des preuves absolues. Le tarot révèle avec une grande précision si votre partenaire est fidèle, identifie une infidélité cachée, ou montre si vos soupçons sont infondés.',
+    },
+    {
+      q: 'Peut-on pardonner une infidélité ?',
+      a: 'Oui, de nombreux couples qui travaillent activement après une infidélité parviennent à reconstruire une relation plus forte. Le pardon est un processus qui prend 1-3 ans, nécessitant : transparence totale du partenaire infidèle, travail sur les causes profondes, thérapie de couple, et engagement des deux parties. Certaines infidélités détruisent irrémédiablement la confiance, d\'autres deviennent des catalyseurs de transformation profonde.',
+    },
+    {
+      q: 'Pourquoi est-on infidèle dans un couple ?',
+      a: 'Les causes profondes d\'infidélité : insatisfaction émotionnelle ou sexuelle dans le couple, besoin de validation externe, peur de l\'intimité ou sabotage inconscient, opportunité et tentation, ou problèmes personnels non résolus. L\'insatisfaction dans le couple reste la cause la plus fréquente. L\'infidélité est rarement sur l\'amour manquant, mais sur des besoins non comblés, des blessures non guéries, ou des patterns répétitifs. Le tarot révèle les causes karmiques et énergétiques.',
+    },
+    {
+      q: 'Rester ou partir après une infidélité ?',
+      a: 'Cette décision dépend de plusieurs facteurs : l\'infidélité était-elle une erreur isolée ou un pattern répétitif ? Votre partenaire assume-t-il sa responsabilité et fait-il tout pour regagner votre confiance ? Pouvez-vous imaginer lui faire confiance à nouveau ? L\'amour entre vous est-il encore vivant ? Le tarot éclaire cette décision cruciale en révélant si votre couple a un avenir de guérison ou si la séparation est la voie de libération.',
+    },
+    {
+      q: 'Comment reconstruire la confiance après une tromperie ?',
+      a: 'Reconstruction de la confiance : 1) Transparence totale du partenaire infidèle (accès téléphone, comptes, déplacements), 2) Rupture complète avec la personne impliquée, 3) Expression complète de la douleur par le partenaire trahi, 4) Compréhension des causes profondes, 5) Thérapie de couple, 6) Temps (12-36 mois minimum), 7) Reconstruction de l\'intimité progressive. La confiance revient par étapes, pas d\'un coup.',
+    },
+    {
+      q: 'Le tarot peut-il détecter une infidélité ?',
+      a: 'Oui. Le tirage d\'infidélité révèle avec précision : si votre partenaire est fidèle, s\'il y a une trahison actuelle ou passée cachée, l\'identité énergétique de la tierce personne, et les circonstances. Le tarot accède aux vérités que les mots cachent. La grande majorité des consultants confirment la précision des révélations du tarot sur l\'infidélité après vérification. C\'est un outil puissant pour sortir du doute toxique.',
+    },
+  ],
+  related: [
+    { href: '/crise-couple', label: 'Crises de Couple : Guide Complet' },
+    { href: '/crise-couple/problemes-communication-couple', label: 'Problèmes de Communication dans le Couple' },
+    { href: '/crise-couple/jalousie-excessive', label: 'Jalousie Excessive : Causes et Solutions' },
+    { href: '/reconquete/se-remettre-ensemble', label: 'Se Remettre Ensemble avec son Ex' },
+    { href: '/sentiments/maime-t-il-elle', label: 'M\'aime-t-il/elle Vraiment ?' },
+    { href: '/sentiments/avenir-amoureux', label: 'Mon Avenir Amoureux' },
+  ],
+};
 
-  const authorSchema = getAuthorSchema();
+export const metadata = contentMeta(config);
 
-  const faqSchema = getFAQSchema([
-    {
-      question: 'Mon partenaire est-il infidèle ?',
-      answer: 'Les signes d\'infidélité incluent : changements soudains de comportement, protection excessive du téléphone, diminution de l\'intimité, absences inexpliquées, soins accrus de l\'apparence, distances émotionnelles, et mensonges fréquents. Cependant, ces signes ne sont pas des preuves absolues. Le tarot révèle avec une grande précision si votre partenaire est fidèle, identifie une infidélité cachée, ou montre si vos soupçons sont infondés.',
-    },
-    {
-      question: 'Peut-on pardonner une infidélité ?',
-      answer: 'Oui, de nombreux couples qui travaillent activement après une infidélité parviennent à reconstruire une relation plus forte. Le pardon est un processus qui prend 1-3 ans, nécessitant : transparence totale du partenaire infidèle, travail sur les causes profondes, thérapie de couple, et engagement des deux parties. Certaines infidélités détruisent irrémédiablement la confiance, d\'autres deviennent des catalyseurs de transformation profonde.',
-    },
-    {
-      question: 'Pourquoi est-on infidèle dans un couple ?',
-      answer: 'Les causes profondes d\'infidélité : insatisfaction émotionnelle ou sexuelle dans le couple, besoin de validation externe, peur de l\'intimité ou sabotage inconscient, opportunité et tentation, ou problèmes personnels non résolus. L\'insatisfaction dans le couple reste la cause la plus fréquente. L\'infidélité est rarement sur l\'amour manquant, mais sur des besoins non comblés, des blessures non guéries, ou des patterns répétitifs. Le tarot révèle les causes karmiques et énergétiques.',
-    },
-    {
-      question: 'Rester ou partir après une infidélité ?',
-      answer: 'Cette décision dépend de plusieurs facteurs : l\'infidélité était-elle une erreur isolée ou un pattern répétitif ? Votre partenaire assume-t-il sa responsabilité et fait-il tout pour regagner votre confiance ? Pouvez-vous imaginer lui faire confiance à nouveau ? L\'amour entre vous est-il encore vivant ? Le tarot éclaire cette décision cruciale en révélant si votre couple a un avenir de guérison ou si la séparation est la voie de libération.',
-    },
-    {
-      question: 'Comment reconstruire la confiance après une tromperie ?',
-      answer: 'Reconstruction de la confiance : 1) Transparence totale du partenaire infidèle (accès téléphone, comptes, déplacements), 2) Rupture complète avec la personne impliquée, 3) Expression complète de la douleur par le partenaire trahi, 4) Compréhension des causes profondes, 5) Thérapie de couple, 6) Temps (12-36 mois minimum), 7) Reconstruction de l\'intimité progressive. La confiance revient par étapes, pas d\'un coup.',
-    },
-    {
-      question: 'Le tarot peut-il détecter une infidélité ?',
-      answer: 'Oui. Le tirage d\'infidélité révèle avec précision : si votre partenaire est fidèle, s\'il y a une trahison actuelle ou passée cachée, l\'identité énergétique de la tierce personne, et les circonstances. Le tarot accède aux vérités que les mots cachent. La grande majorité des consultants confirment la précision des révélations du tarot sur l\'infidélité après vérification. C\'est un outil puissant pour sortir du doute toxique.',
-    },
-  ]);
-
+export default function InfideliteCouplePage() {
   return (
-    <main className="min-h-screen bg-gray-50">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(authorSchema) }}
-      />
-
-      <header className="bg-gradient-to-r from-red-600 via-rose-600 to-pink-600 text-white py-16 px-4">
-        <div className="max-w-4xl mx-auto">
-          <Link href="/crise-couple" className="text-white/80 hover:text-white mb-4 inline-block">← Retour aux Crises de Couple</Link>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">💔 Infidélité dans le Couple</h1>
-          <p className="text-xl opacity-95 mb-6">Comprendre la trahison, cheminer vers le pardon, et reconstruire la confiance</p>
-          <div className="flex gap-4 flex-wrap">
-            <a href="#reconstruction" className="bg-white text-rose-600 px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition">Reconstruire</a>
-            <a href="#tirage" className="border-2 border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-rose-600 transition">Tirage Infidélité</a>
-          </div>
-        </div>
-      </header>
-
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <div className="bg-white rounded-xl shadow-md p-6 mb-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-          <div><div className="text-3xl mb-1">💔</div><div className="text-2xl font-bold text-rose-600">Réelle</div><div className="text-sm text-gray-600">Guérison possible</div></div>
-          <div><div className="text-3xl mb-1">🔮</div><div className="text-2xl font-bold text-rose-600">Reconnue</div><div className="text-sm text-gray-600">Expertise</div></div>
-          <div><div className="text-3xl mb-1">❤️‍🩹</div><div className="text-2xl font-bold text-rose-600">Vaste</div><div className="text-sm text-gray-600">Expérience</div></div>
-          <div><div className="text-3xl mb-1">⭐</div><div className="text-2xl font-bold text-rose-600">Élevée</div><div className="text-sm text-gray-600">Satisfaction</div></div>
-        </div>
-
-        <EEATSignal
-          colorScheme="purple"
-          method="Tarot relationnel et guidance de reconstruction"
-        />
+    <ContentPage config={config}>
 
         <article className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-rose-600">
           <p className="text-lg leading-relaxed mb-4">
@@ -598,56 +573,6 @@ export default function InfideliteCouplePage() {
           </div>
         </section>
 
-        <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold mb-8 text-rose-600">❓ Questions Fréquentes sur l'Infidélité</h2>
-          <p className="text-lg font-semibold text-gray-800 mb-4">L'infidélité touche de nombreux couples. Parmi ceux qui travaillent activement à la reconstruction, une part significative réussit à surmonter la trahison. Le processus prend 1 à 3 ans et nécessite transparence, thérapie et engagement mutuel.</p>
-          <div className="space-y-6">
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Mon partenaire est-il infidèle ?</h3>
-              <p className="text-gray-700 leading-relaxed">Les <strong>signes d'infidélité</strong> incluent : changements soudains de comportement, protection excessive du téléphone, diminution de l'intimité, absences inexpliquées, soins accrus de l'apparence, distances émotionnelles, et mensonges fréquents. Cependant, ces signes ne sont pas des preuves absolues. Le <strong>tarot</strong> révèle avec une grande précision si votre partenaire est fidèle, identifie une infidélité cachée, ou montre si vos soupçons sont infondés.</p>
-            </div>
-
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Peut-on pardonner une infidélité ?</h3>
-              <p className="text-gray-700 leading-relaxed">Oui, de nombreux couples qui travaillent activement après une <strong>infidélité</strong> parviennent à reconstruire une relation plus forte. Le <strong>pardon</strong> est un processus qui prend 1-3 ans, nécessitant : transparence totale du partenaire infidèle, travail sur les causes profondes, thérapie de couple, et engagement des deux parties. Certaines infidélités détruisent irrémédiablement la confiance, d'autres deviennent des catalyseurs de transformation profonde.</p>
-            </div>
-
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Pourquoi est-on infidèle dans un couple ?</h3>
-              <p className="text-gray-700 leading-relaxed">Les <strong>causes profondes d'infidélité</strong> : insatisfaction émotionnelle ou sexuelle dans le couple, besoin de validation externe, peur de l'intimité ou sabotage inconscient, opportunité et tentation, ou problèmes personnels non résolus. L'insatisfaction dans le couple reste la cause la plus fréquente. L'infidélité est rarement sur l'amour manquant, mais sur des <strong>besoins non comblés</strong>, des blessures non guéries, ou des patterns répétitifs. Le tarot révèle les causes karmiques et énergétiques.</p>
-            </div>
-
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Rester ou partir après une infidélité ?</h3>
-              <p className="text-gray-700 leading-relaxed">Cette décision dépend de plusieurs facteurs : l'infidélité était-elle une erreur isolée ou un pattern répétitif ? Votre partenaire assume-t-il sa responsabilité et fait-il tout pour regagner votre confiance ? Pouvez-vous imaginer lui faire confiance à nouveau ? L'amour entre vous est-il encore vivant ? Le <strong>tarot</strong> éclaire cette décision cruciale en révélant si votre couple a un avenir de guérison ou si la séparation est la voie de libération.</p>
-            </div>
-
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Comment reconstruire la confiance après une tromperie ?</h3>
-              <p className="text-gray-700 leading-relaxed"><strong>Reconstruction de la confiance</strong> : 1) Transparence totale du partenaire infidèle (accès téléphone, comptes, déplacements), 2) Rupture complète avec la personne impliquée, 3) Expression complète de la douleur par le partenaire trahi, 4) Compréhension des causes profondes, 5) Thérapie de couple, 6) Temps (12-36 mois minimum), 7) Reconstruction de l'intimité progressive. La confiance revient par étapes, pas d'un coup.</p>
-            </div>
-
-            <div>
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Le tarot peut-il détecter une infidélité ?</h3>
-              <p className="text-gray-700 leading-relaxed">Oui. Le <strong>tirage d'infidélité</strong> révèle avec précision : si votre partenaire est fidèle, s'il y a une trahison actuelle ou passée cachée, l'identité énergétique de la tierce personne, et les circonstances. Le tarot accède aux vérités que les mots cachent. La grande majorité des consultants confirment la précision des révélations du tarot sur l'infidélité après vérification. C'est un outil puissant pour sortir du <strong>doute toxique</strong>.</p>
-            </div>
-          </div>
-        </section>
-
-        <div className="bg-gray-100 rounded-xl p-6 mb-8">
-          <h3 className="font-bold text-lg mb-4 text-gray-900">Articles Connexes</h3>
-          <div className="space-y-2">
-            <Link href="/crise-couple" className="block text-rose-600 hover:text-rose-800 font-medium">→ Crises de Couple : Guide Complet</Link>
-            <Link href="/crise-couple/problemes-communication-couple" className="block text-rose-600 hover:text-rose-800 font-medium">→ Problèmes de Communication dans le Couple</Link>
-            <Link href="/crise-couple/jalousie-excessive" className="block text-rose-600 hover:text-rose-800 font-medium">→ Jalousie Excessive : Causes et Solutions</Link>
-            <Link href="/reconquete/se-remettre-ensemble" className="block text-rose-600 hover:text-rose-800 font-medium">→ Se Remettre Ensemble avec son Ex</Link>
-            <Link href="/sentiments/maime-t-il-elle" className="block text-rose-600 hover:text-rose-800 font-medium">→ M'aime-t-il/elle Vraiment ?</Link>
-            <Link href="/sentiments/avenir-amoureux" className="block text-rose-600 hover:text-rose-800 font-medium">→ Mon Avenir Amoureux</Link>
-          </div>
-        </div>
-
-        <VoyantFinalCTA topic="crise-couple" source="infidelite-couple-final" />
-      </div>
-    </main>
+    </ContentPage>
   );
 }

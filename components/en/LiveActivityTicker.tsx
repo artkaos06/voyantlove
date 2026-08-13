@@ -9,7 +9,7 @@
 //
 // Honesty model:
 //   - Numbers fluctuate within a plausible range for Keen's actual scale
-//     (Keen averages thousands of daily readings — "247 right now" is
+//     (Keen averages thousands of daily readings, "247 right now" is
 //     genuinely a low-end estimate, not an inflation).
 //   - The ticker uses a date-seeded pseudo-random walk (not real-time).
 //     We don't claim it's a real feed.
@@ -33,7 +33,7 @@ interface LiveActivityTickerProps {
 
 function seedFromToday(): number {
   // Use today's date as seed so all visitors see roughly the same count
-  // at any given moment — stable, not chaotic.
+  // at any given moment, stable, not chaotic.
   const d = new Date();
   return d.getUTCFullYear() * 366 + d.getUTCMonth() * 31 + d.getUTCDate();
 }
@@ -41,7 +41,7 @@ function seedFromToday(): number {
 function plausibleStartCount(): number {
   // Daily-seeded pseudo-random base: 220-280 range.
   // Keen handles thousands of daily readings; this is a conservative lower
-  // bound on "active right now" — believable for the platform's actual scale.
+  // bound on "active right now", believable for the platform's actual scale.
   const seed = seedFromToday();
   const variation = seed % 60; // 0-59
   return 220 + variation;

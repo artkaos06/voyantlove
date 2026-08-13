@@ -1,94 +1,70 @@
-import type { Metadata } from 'next';
 import Link from 'next/link';
-import { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getAuthorSchema } from '@/lib/schema';
-import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
-import VoyantFinalCTA from '@/components/VoyantFinalCTA';
+import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
-export const metadata: Metadata = {
+const config: ContentPageConfig = {
   title: 'Comment Savoir si C\'est le Vrai Amour | Voyance',
   description: 'Découvrez les signes du vrai amour grâce à la voyance et au tarot. Apprenez à distinguer l\'amour authentique de l\'attachement ou de la passion éphémère.',
+  url: 'https://www.voyantlove.fr/sentiments/savoir-si-cest-lamour/',
   keywords: ['savoir si c\'est l\'amour', 'vrai amour signes', 'est-ce de l\'amour', 'reconnaître le vrai amour', 'voyance amour'],
-  alternates: { canonical: 'https://www.voyantlove.fr/sentiments/savoir-si-cest-lamour/' },
-};
-
-export default function SavoirSiCestLamourPage() {
-  const articleSchema = getArticleSchema({
-    title: 'Comment Savoir si C\'est le Vrai Amour',
-    description: 'Découvrez les signes du vrai amour grâce à la voyance et au tarot. Apprenez à distinguer l\'amour authentique de l\'attachement ou de la passion éphémère.',
-    url: 'https://www.voyantlove.fr/sentiments/savoir-si-cest-lamour/',
-    datePublished: '2026-03-22',
-    dateModified: '2026-03-22',
-    keywords: ['savoir si c\'est l\'amour', 'vrai amour signes', 'est-ce de l\'amour', 'reconnaître le vrai amour', 'voyance amour'],
-  });
-
-  const faqSchema = getFAQSchema([
-    {
-      question: 'Comment le tarot peut-il révéler si c\'est le vrai amour ?',
-      answer: 'Le tarot amoureux analyse les énergies profondes de votre relation à travers des arcanes spécifiques. L\'Amoureux, la carte par excellence du choix du coeur, révèle la sincérité des sentiments. L\'Impératrice indique un amour nourricier et fertile, tandis que le Soleil confirme un bonheur authentique et durable. Un tirage relationnel en croix examine les sentiments de chaque partenaire, les dynamiques inconscientes et le potentiel à long terme. La voyance complète cette lecture en captant les énergies subtiles que les cartes seules ne suffisent pas toujours à exprimer. C\'est la combinaison des deux qui offre la vision la plus juste.',
-    },
-    {
-      question: 'Quelle est la différence entre le vrai amour et la dépendance affective ?',
-      answer: 'Le vrai amour se caractérise par la liberté : vous aimez l\'autre sans chercher à le posséder ni à combler un vide intérieur. La dépendance affective, en revanche, crée une angoisse constante de perdre l\'autre, une jalousie excessive et un besoin permanent de réassurance. En voyance, ces deux énergies apparaissent très différemment dans le tarot. L\'amour authentique se manifeste par des cartes lumineuses comme l\'Étoile ou le Monde, tandis que la dépendance se traduit par le Diable ou la Lune inversée. Un voyant expérimenté distingue immédiatement ces signatures énergétiques lors d\'une consultation.',
-    },
-    {
-      question: 'Peut-on tomber amoureux plusieurs fois dans sa vie ?',
-      answer: 'Absolument. L\'astrologie et la voyance confirment que chaque être humain traverse plusieurs cycles amoureux au cours de sa vie, chacun correspondant à une étape de son évolution spirituelle. Les transits de Vénus et de Jupiter marquent ces périodes de renouveau sentimental. Le vrai amour n\'est pas limité à une seule personne : il se manifeste sous différentes formes selon votre maturité émotionnelle. Certaines âmes se retrouvent d\'une vie à l\'autre, créant des connexions karmiques particulièrement intenses que la voyance permet d\'identifier et de comprendre.',
-    },
-    {
-      question: 'Quels sont les signes astrologiques les plus compatibles pour le vrai amour ?',
-      answer: 'La compatibilité amoureuse ne se limite pas au signe solaire. La synastrie complète examine la position de Vénus, Mars, la Lune et l\'ascendant dans les deux thèmes natals. Les aspects harmonieux entre Vénus et Mars créent une attraction puissante, tandis que les connexions Lune-Lune assurent la compréhension émotionnelle profonde. Les signes d\'eau avec les signes de terre forment souvent des unions stables et nourrissantes. Les signes de feu et d\'air partagent une énergie dynamique et stimulante. Un voyant astrologue analyse l\'ensemble de ces configurations pour évaluer le potentiel réel d\'une relation.',
-    },
-  ]);
-
-  const breadcrumbSchema = getBreadcrumbSchema([
+  datePublished: '2026-03-22',
+  dateModified: '2026-03-22',
+  breadcrumb: [
     { name: 'Accueil', url: 'https://www.voyantlove.fr' },
     { name: 'Sentiments', url: 'https://www.voyantlove.fr/sentiments/' },
     { name: 'Savoir si C\'est l\'Amour', url: 'https://www.voyantlove.fr/sentiments/savoir-si-cest-lamour/' },
-  ]);
+  ],
+  header: {
+    emoji: '💗',
+    h1: 'Comment Savoir si C\'est le Vrai Amour',
+    subtitle: 'Les signes qui ne trompent pas, éclairés par la voyance et le tarot',
+    gradient: 'from-pink-500 via-pink-600 to-rose-600',
+    backLink: { href: '/sentiments', label: 'Sentiments' },
+    anchors: [
+      { href: '#consultation', label: 'Consultation Sentiments', primary: true },
+    ],
+  },
+  accentText: 'text-pink-600',
+  stats: [
+    { icon: '⭐', value: '4.9/5', label: '312 avis' },
+    { icon: '💕', value: '89%', label: 'Clarté obtenue' },
+    { icon: '🔮', value: '20 min', label: 'Consultation' },
+    { icon: '✨', value: '15 ans', label: 'Expérience' },
+  ],
+  eeat: { colorScheme: 'pink', method: 'Tarot des sentiments amoureux' },
+  cta: { topic: 'sentiments', slug: 'savoir-si-cest-lamour' },
+  faq: [
+    {
+      q: 'Comment le tarot peut-il révéler si c\'est le vrai amour ?',
+      a: 'Le tarot amoureux analyse les énergies profondes de votre relation à travers des arcanes spécifiques. L\'Amoureux, la carte par excellence du choix du coeur, révèle la sincérité des sentiments. L\'Impératrice indique un amour nourricier et fertile, tandis que le Soleil confirme un bonheur authentique et durable. Un tirage relationnel en croix examine les sentiments de chaque partenaire, les dynamiques inconscientes et le potentiel à long terme. La voyance complète cette lecture en captant les énergies subtiles que les cartes seules ne suffisent pas toujours à exprimer. C\'est la combinaison des deux qui offre la vision la plus juste.',
+    },
+    {
+      q: 'Quelle est la différence entre le vrai amour et la dépendance affective ?',
+      a: 'Le vrai amour se caractérise par la liberté : vous aimez l\'autre sans chercher à le posséder ni à combler un vide intérieur. La dépendance affective, en revanche, crée une angoisse constante de perdre l\'autre, une jalousie excessive et un besoin permanent de réassurance. En voyance, ces deux énergies apparaissent très différemment dans le tarot. L\'amour authentique se manifeste par des cartes lumineuses comme l\'Étoile ou le Monde, tandis que la dépendance se traduit par le Diable ou la Lune inversée. Un voyant expérimenté distingue immédiatement ces signatures énergétiques lors d\'une consultation.',
+    },
+    {
+      q: 'Peut-on tomber amoureux plusieurs fois dans sa vie ?',
+      a: 'Absolument. L\'astrologie et la voyance confirment que chaque être humain traverse plusieurs cycles amoureux au cours de sa vie, chacun correspondant à une étape de son évolution spirituelle. Les transits de Vénus et de Jupiter marquent ces périodes de renouveau sentimental. Le vrai amour n\'est pas limité à une seule personne : il se manifeste sous différentes formes selon votre maturité émotionnelle. Certaines âmes se retrouvent d\'une vie à l\'autre, créant des connexions karmiques particulièrement intenses que la voyance permet d\'identifier et de comprendre.',
+    },
+    {
+      q: 'Quels sont les signes astrologiques les plus compatibles pour le vrai amour ?',
+      a: 'La compatibilité amoureuse ne se limite pas au signe solaire. La synastrie complète examine la position de Vénus, Mars, la Lune et l\'ascendant dans les deux thèmes natals. Les aspects harmonieux entre Vénus et Mars créent une attraction puissante, tandis que les connexions Lune-Lune assurent la compréhension émotionnelle profonde. Les signes d\'eau avec les signes de terre forment souvent des unions stables et nourrissantes. Les signes de feu et d\'air partagent une énergie dynamique et stimulante. Un voyant astrologue analyse l\'ensemble de ces configurations pour évaluer le potentiel réel d\'une relation.',
+    },
+  ],
+  related: [
+    { href: '/sentiments/maime-t-il-elle', label: 'M\'aime-t-il / M\'aime-t-elle Encore ?' },
+    { href: '/sentiments/compatibilite-amoureuse', label: 'Compatibilité Amoureuse' },
+    { href: '/sentiments/signes-il-elle-maime', label: 'Les Signes qu\'Il/Elle M\'Aime' },
+  ],
+};
 
-  const authorSchema = getAuthorSchema();
+export const metadata = contentMeta(config);
+
+export default function SavoirSiCestLamourPage() {
 
   return (
-    <main className="min-h-screen bg-gray-50">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(authorSchema) }}
-      />
-      <header className="bg-gradient-to-r from-pink-500 via-pink-600 to-rose-600 text-white py-16 px-4">
-        <div className="max-w-4xl mx-auto">
-          <Link href="/sentiments" className="text-white/80 hover:text-white mb-4 inline-block">&larr; Sentiments</Link>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">💗 Comment Savoir si C&apos;est le Vrai Amour</h1>
-          <p className="text-xl opacity-95 mb-6">Les signes qui ne trompent pas, éclairés par la voyance et le tarot</p>
-          <a href="#consultation" className="bg-white text-pink-600 px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition inline-block">Consultation Sentiments</a>
-        </div>
-      </header>
-
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <div className="bg-white rounded-xl shadow-md p-6 mb-8 grid grid-cols-4 gap-4 text-center">
-          <div><div className="text-3xl mb-1">⭐</div><div className="text-2xl font-bold text-pink-600">4.9/5</div><div className="text-sm text-gray-600">312 avis</div></div>
-          <div><div className="text-3xl mb-1">💕</div><div className="text-2xl font-bold text-pink-600">89%</div><div className="text-sm text-gray-600">Clarté obtenue</div></div>
-          <div><div className="text-3xl mb-1">🔮</div><div className="text-2xl font-bold text-pink-600">20 min</div><div className="text-sm text-gray-600">Consultation</div></div>
-          <div><div className="text-3xl mb-1">✨</div><div className="text-2xl font-bold text-pink-600">15 ans</div><div className="text-sm text-gray-600">Expérience</div></div>
-        </div>
-
-        <EEATSignal
-          colorScheme="pink"
-          method="Tarot des sentiments amoureux"
-        />
+    <ContentPage config={config}>
 
         <article className="bg-pink-50 border-l-4 border-pink-500 rounded-xl shadow-md p-8 mb-8">
           <p className="text-lg leading-relaxed mb-4">
@@ -249,40 +225,6 @@ export default function SavoirSiCestLamourPage() {
           </p>
         </section>
 
-        <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">❓ Questions Fréquentes</h2>
-          <p className="text-lg font-semibold text-gray-800 mb-4">Retrouvez les réponses aux questions les plus posées sur le vrai amour, le tarot des sentiments et la voyance amoureuse.</p>
-          <div className="space-y-6">
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Comment le tarot peut-il révéler si c&apos;est le vrai amour ?</h3>
-              <p className="text-gray-700 leading-relaxed">Le <strong>tarot amoureux</strong> analyse les énergies profondes de votre relation à travers des arcanes spécifiques. L&apos;Amoureux, la carte par excellence du choix du coeur, révèle la sincérité des <strong>sentiments</strong>. L&apos;Impératrice indique un <strong>amour</strong> nourricier et fertile, tandis que le Soleil confirme un bonheur authentique et durable. Un tirage relationnel en croix examine les sentiments de chaque partenaire, les dynamiques inconscientes et le potentiel à long terme. La <strong>voyance</strong> complète cette lecture en captant les énergies subtiles que les cartes seules ne suffisent pas toujours à exprimer.</p>
-            </div>
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Quelle est la différence entre le vrai amour et la dépendance affective ?</h3>
-              <p className="text-gray-700 leading-relaxed">Le <strong>vrai amour</strong> se caractérise par la liberté : vous aimez l&apos;autre sans chercher à le posséder ni à combler un vide intérieur. La <strong>dépendance affective</strong>, en revanche, crée une angoisse constante de perdre l&apos;autre, une <strong>jalousie excessive</strong> et un besoin permanent de réassurance. En <strong>voyance</strong>, ces deux énergies apparaissent très différemment dans le <strong>tarot</strong>. L&apos;<strong>amour</strong> authentique se manifeste par des cartes lumineuses comme l&apos;Étoile ou le Monde, tandis que la dépendance se traduit par le Diable ou la Lune inversée.</p>
-            </div>
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Peut-on tomber amoureux plusieurs fois dans sa vie ?</h3>
-              <p className="text-gray-700 leading-relaxed">Absolument. L&apos;<strong>astrologie</strong> et la <strong>voyance</strong> confirment que chaque être humain traverse plusieurs cycles amoureux au cours de sa vie, chacun correspondant à une étape de son <strong>évolution spirituelle</strong>. Les transits de Vénus et de Jupiter marquent ces périodes de renouveau sentimental. Le <strong>vrai amour</strong> n&apos;est pas limité à une seule personne : il se manifeste sous différentes formes selon votre maturité émotionnelle et votre chemin de vie.</p>
-            </div>
-            <div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Quels sont les signes astrologiques les plus compatibles pour le vrai amour ?</h3>
-              <p className="text-gray-700 leading-relaxed">La <strong>compatibilité amoureuse</strong> ne se limite pas au signe solaire. La <strong>synastrie</strong> complète examine la position de Vénus, Mars, la Lune et l&apos;ascendant dans les deux thèmes natals. Les aspects harmonieux entre Vénus et Mars créent une attraction puissante, tandis que les connexions Lune-Lune assurent la compréhension émotionnelle profonde. Un <Link href="/methodes-voyance/astrologie-amoureuse" className="text-pink-600 hover:text-pink-800 underline font-medium">voyant astrologue</Link> analyse l&apos;ensemble de ces configurations pour évaluer le potentiel réel d&apos;une relation.</p>
-            </div>
-          </div>
-        </section>
-
-        <div className="bg-gray-100 rounded-xl p-6 mb-8">
-          <h3 className="font-bold text-lg mb-4 text-gray-900">📚 Articles Connexes</h3>
-          <div className="space-y-2">
-            <Link href="/sentiments/maime-t-il-elle" className="block text-pink-600 hover:text-pink-800 font-medium">&rarr; M&apos;aime-t-il / M&apos;aime-t-elle Encore ?</Link>
-            <Link href="/sentiments/compatibilite-amoureuse" className="block text-pink-600 hover:text-pink-800 font-medium">&rarr; Compatibilité Amoureuse</Link>
-            <Link href="/sentiments/signes-il-elle-maime" className="block text-pink-600 hover:text-pink-800 font-medium">&rarr; Les Signes qu&apos;Il/Elle M&apos;Aime</Link>
-          </div>
-        </div>
-
-        <VoyantFinalCTA topic="sentiments" source="savoir-si-cest-lamour-final" />
-      </div>
-    </main>
+      </ContentPage>
   );
 }

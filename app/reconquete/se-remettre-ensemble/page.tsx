@@ -1,102 +1,82 @@
-import type { Metadata } from 'next';
 import Link from 'next/link';
-import { getArticleSchema, getBreadcrumbSchema, getFAQSchema, getAuthorSchema } from '@/lib/schema';
-import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
-import VoyantFinalCTA from '@/components/VoyantFinalCTA';
+import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
-export const metadata: Metadata = {
+const config: ContentPageConfig = {
   title: 'Se Remettre Ensemble : Les 5 Étapes pour Réussir',
   description: 'Comment se remettre ensemble avec son ex ? Découvrez les étapes essentielles et la guidance tarot pour une réunion réussie.',
+  url: 'https://www.voyantlove.fr/reconquete/se-remettre-ensemble/',
   keywords: ['se remettre ensemble', 'reprise relation', 'reconstruction couple', 'retrouvailles'],
-  alternates: { canonical: 'https://www.voyantlove.fr/reconquete/se-remettre-ensemble/' },
-};
-
-export default function SeRemettreEnsemblePage() {
-  const articleSchema = getArticleSchema({
-    title: 'Se Remettre Ensemble : Les 5 Étapes pour Réussir',
-    description: 'Comment se remettre ensemble avec son ex ? Découvrez les étapes essentielles et la guidance tarot pour une réunion réussie.',
-    url: 'https://www.voyantlove.fr/reconquete/se-remettre-ensemble/',
-    datePublished: '2026-01-19',
-    dateModified: '2026-01-19',
-    keywords: ['se remettre ensemble', 'reprise relation', 'reconstruction couple', 'retrouvailles'],
-  });
-
-  const breadcrumbSchema = getBreadcrumbSchema([
+  datePublished: '2026-01-19',
+  dateModified: '2026-01-19',
+  breadcrumb: [
     { name: 'Accueil', url: 'https://www.voyantlove.fr' },
     { name: 'Reconquête', url: 'https://www.voyantlove.fr/reconquete/' },
     { name: 'Se Remettre Ensemble', url: 'https://www.voyantlove.fr/reconquete/se-remettre-ensemble/' },
-  ]);
+  ],
+  header: {
+    emoji: '💑',
+    h1: 'Se Remettre Ensemble',
+    subtitle: 'Les 5 étapes pour réussir vos retrouvailles selon le tarot',
+    gradient: 'from-purple-500 via-pink-500 to-rose-500',
+    backLink: { href: '/reconquete', label: 'Retour à la Reconquête' },
+    anchors: [
+      { href: '#consultation', label: 'Consultation', primary: true },
+    ],
+  },
+  accentText: 'text-purple-600',
+  stats: [
+    { icon: '⭐', value: '4.7/5', label: '' },
+    { icon: '💑', value: 'Variable', label: '' },
+    { icon: '⏰', value: '3-6m', label: '' },
+    { icon: '🔮', value: 'Reconnue', label: '' },
+  ],
+  eeat: { colorScheme: 'purple', method: 'Tarot de la reconquête amoureuse' },
+  cta: { topic: 'reconquete', slug: 'se-remettre-ensemble' },
+  faq: [
+    {
+      q: 'Comment se remettre ensemble après une rupture ?',
+      a: 'Se remettre ensemble après une rupture nécessite 5 étapes : période de réflexion (minimum 3 mois), identification des causes d\'échec, changements concrets des deux côtés, communication honnête rétablie, et reconstruction progressive de la confiance. Le tarot guide le timing idéal et révèle si les conditions de réussite sont réunies. Précipiter le processus mène presque toujours à un nouvel échec.',
+    },
+    {
+      q: 'Quelles chances de réussite en se remettant ensemble ?',
+      a: 'Les chances de réussite dépendent fortement des conditions de la remise en couple. De nombreux couples qui se remettent ensemble réussissent à long terme quand les bonnes conditions sont réunies. En revanche, les chances chutent considérablement si les partenaires se remettent ensemble par nostalgie ou solitude sans changements réels. Le tarot révèle vos chances de réussite spécifiques selon votre situation.',
+    },
+    {
+      q: 'Combien de temps avant de se remettre ensemble ?',
+      a: 'Minimum 3 mois de séparation sont nécessaires pour une vraie évolution. Cette période permet à chaque partenaire de comprendre ses erreurs, travailler sur soi, et s\'assurer que le désir de reprise n\'est pas juste de la nostalgie. Se remettre ensemble trop vite (moins d\'un mois) échoue dans la grande majorité des cas car aucun changement profond n\'est possible en si peu de temps.',
+    },
+    {
+      q: 'Quels sont les signes qu\'il faut se remettre ensemble ?',
+      a: 'Les signes positifs incluent : résolution des causes originales de rupture, changements concrets visibles, communication ouverte rétablie, pardon mutuel authentique, vision d\'avenir partagée, soutien de vos proches. Le tarot avec Les Amoureux, Le Jugement ou Le Soleil confirme une remise en couple constructive avec de fortes chances de succès.',
+    },
+    {
+      q: 'Comment éviter une deuxième rupture après s\'être remis ensemble ?',
+      a: 'Pour éviter une deuxième rupture : établissez de nouvelles règles de communication, maintenez des check-ins réguliers sur l\'état de la relation, suivez une thérapie de couple si nécessaire, respectez vos engagements mutuels, gérez les conflits constructivement. Le tarot révèle les pièges à éviter et guide la consolidation de votre relation reconstruite.',
+    },
+    {
+      q: 'Faut-il prévenir son entourage quand on se remet ensemble ?',
+      a: 'Oui, l\'entourage peut offrir un regard objectif précieux. Leurs inquiétudes éventuelles méritent d\'être écoutées car ils ont une vision moins émotionnelle de la situation. Cependant, la décision finale vous appartient. Le tarot aide à équilibrer les conseils extérieurs avec votre intuition personnelle pour prendre la meilleure décision.',
+    },
+  ],
+  related: [
+    { href: '/reconquete', label: 'Reconquête Amoureuse : Toutes nos Guidances' },
+    { href: '/reconquete/ex-qui-revient', label: 'Ex qui Revient : Identifier les Vraies Motivations' },
+    { href: '/reconquete/seconde-chance-amour', label: 'Seconde Chance en Amour : Conditions de Réussite' },
+    { href: '/reconquete/ex-revient-silence-radio', label: 'Ex qui Revient après Silence Radio' },
+    { href: '/reconquete/retour-de-lex', label: 'Retour de l\'Ex : Signes et Timing' },
+    { href: '/reconquete/va-t-il-elle-revenir', label: 'Va-t-il/elle Revenir ? Prédiction Tarot' },
+    { href: '/reconquete/reconquerir-son-ex', label: 'Reconquérir son Ex : Stratégies Efficaces' },
+    { href: '/reconquete/revoir-son-ex', label: 'Revoir son Ex Après une Rupture' },
+  ],
+};
 
-  const authorSchema = getAuthorSchema();
+export const metadata = contentMeta(config);
 
-  const faqSchema = getFAQSchema([
-    {
-      question: 'Comment se remettre ensemble après une rupture ?',
-      answer: 'Se remettre ensemble après une rupture nécessite 5 étapes : période de réflexion (minimum 3 mois), identification des causes d\'échec, changements concrets des deux côtés, communication honnête rétablie, et reconstruction progressive de la confiance. Le tarot guide le timing idéal et révèle si les conditions de réussite sont réunies. Précipiter le processus mène presque toujours à un nouvel échec.',
-    },
-    {
-      question: 'Quelles chances de réussite en se remettant ensemble ?',
-      answer: 'Les chances de réussite dépendent fortement des conditions de la remise en couple. De nombreux couples qui se remettent ensemble réussissent à long terme quand les bonnes conditions sont réunies. En revanche, les chances chutent considérablement si les partenaires se remettent ensemble par nostalgie ou solitude sans changements réels. Le tarot révèle vos chances de réussite spécifiques selon votre situation.',
-    },
-    {
-      question: 'Combien de temps avant de se remettre ensemble ?',
-      answer: 'Minimum 3 mois de séparation sont nécessaires pour une vraie évolution. Cette période permet à chaque partenaire de comprendre ses erreurs, travailler sur soi, et s\'assurer que le désir de reprise n\'est pas juste de la nostalgie. Se remettre ensemble trop vite (moins d\'un mois) échoue dans la grande majorité des cas car aucun changement profond n\'est possible en si peu de temps.',
-    },
-    {
-      question: 'Quels sont les signes qu\'il faut se remettre ensemble ?',
-      answer: 'Les signes positifs incluent : résolution des causes originales de rupture, changements concrets visibles, communication ouverte rétablie, pardon mutuel authentique, vision d\'avenir partagée, soutien de vos proches. Le tarot avec Les Amoureux, Le Jugement ou Le Soleil confirme une remise en couple constructive avec de fortes chances de succès.',
-    },
-    {
-      question: 'Comment éviter une deuxième rupture après s\'être remis ensemble ?',
-      answer: 'Pour éviter une deuxième rupture : établissez de nouvelles règles de communication, maintenez des check-ins réguliers sur l\'état de la relation, suivez une thérapie de couple si nécessaire, respectez vos engagements mutuels, gérez les conflits constructivement. Le tarot révèle les pièges à éviter et guide la consolidation de votre relation reconstruite.',
-    },
-    {
-      question: 'Faut-il prévenir son entourage quand on se remet ensemble ?',
-      answer: 'Oui, l\'entourage peut offrir un regard objectif précieux. Leurs inquiétudes éventuelles méritent d\'être écoutées car ils ont une vision moins émotionnelle de la situation. Cependant, la décision finale vous appartient. Le tarot aide à équilibrer les conseils extérieurs avec votre intuition personnelle pour prendre la meilleure décision.',
-    },
-  ]);
-
+export default function SeRemettreEnsemblePage() {
   return (
-    <main className="min-h-screen bg-gray-50">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(authorSchema) }}
-      />
-      <header className="bg-gradient-to-r from-purple-500 via-pink-500 to-rose-500 text-white py-16 px-4">
-        <div className="max-w-4xl mx-auto">
-          <Link href="/reconquete" className="text-white/80 hover:text-white mb-4 inline-block">← Retour à la Reconquête</Link>
-          <h1 className="text-4xl font-bold mb-4">💑 Se Remettre Ensemble</h1>
-          <p className="text-xl opacity-95 mb-6">Les 5 étapes pour réussir vos retrouvailles selon le tarot</p>
-          <a href="#consultation" className="bg-white text-purple-600 px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition inline-block">Consultation</a>
-        </div>
-      </header>
-
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <div className="bg-white rounded-xl p-6 mb-8 grid grid-cols-4 gap-4 text-center">
-          <div><div className="text-3xl">⭐</div><div className="text-2xl font-bold text-purple-600">4.7/5</div></div>
-          <div><div className="text-3xl">💑</div><div className="text-2xl font-bold text-purple-600">Variable</div></div>
-          <div><div className="text-3xl">⏰</div><div className="text-2xl font-bold text-purple-600">3-6m</div></div>
-          <div><div className="text-3xl">🔮</div><div className="text-2xl font-bold text-purple-600">Reconnue</div></div>
-        </div>
-
-        <EEATSignal
-          colorScheme="purple"
-          method="Tarot de la reconquête amoureuse"
-        />
+    <ContentPage config={config}>
 
         <article className="bg-white rounded-xl p-8 mb-8 border-t-4 border-purple-500">
           <p className="text-lg mb-4"><strong>Se remettre ensemble avec son ex</strong> est une décision majeure qui nécessite préparation et sagesse. De nombreux couples qui tentent une <strong>reprise de relation</strong> réussissent à construire une union durable, mais uniquement lorsque les bonnes étapes sont respectées. Le <strong>tarot</strong> guide ce processus délicat en révélant le timing idéal, les obstacles à surmonter, et les chances réelles de succès.</p>
@@ -639,59 +619,6 @@ export default function SeRemettreEnsemblePage() {
           </div>
         </section>
 
-        <section className="bg-white rounded-xl p-8 mb-8">
-          <h2 className="text-3xl font-bold mb-6 text-purple-600">Questions Fréquentes sur Se Remettre Ensemble</h2>
-          <p className="text-lg font-semibold text-gray-800 mb-4">Voici les réponses aux questions les plus posées sur la remise en couple : étapes à suivre, chances de réussite, temps d'attente, signes favorables, prévention d'une deuxième rupture et rôle de l'entourage.</p>
-
-          <div className="space-y-6">
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="font-bold text-lg text-gray-800 mb-3">Comment se remettre ensemble après une rupture ?</h3>
-              <p className="text-gray-700"><strong>Se remettre ensemble après une rupture</strong> nécessite 5 étapes : période de réflexion (minimum 3 mois), identification des causes d'échec, changements concrets des deux côtés, communication honnête rétablie, et reconstruction progressive de la confiance. Le tarot guide le timing idéal et révèle si les conditions de réussite sont réunies. Précipiter le processus mène presque toujours à un nouvel échec.</p>
-            </div>
-
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="font-bold text-lg text-gray-800 mb-3">Quelles chances de réussite en se remettant ensemble ?</h3>
-              <p className="text-gray-700">De nombreux couples qui <strong>se remettent ensemble</strong> réussissent à long terme quand les bonnes conditions sont réunies. En revanche, les chances chutent considérablement si les partenaires se remettent ensemble par nostalgie ou solitude sans changements réels. Le tarot révèle vos chances de réussite spécifiques selon votre situation unique et les énergies en présence.</p>
-            </div>
-
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="font-bold text-lg text-gray-800 mb-3">Combien de temps avant de se remettre ensemble ?</h3>
-              <p className="text-gray-700">Minimum 3 mois de séparation sont nécessaires pour une vraie évolution. Cette période permet à chaque partenaire de comprendre ses erreurs, travailler sur soi, et s'assurer que le désir de reprise n'est pas juste de la nostalgie. Se remettre ensemble trop vite (moins d'un mois) échoue dans la grande majorité des cas car aucun changement profond n'est possible en si peu de temps.</p>
-            </div>
-
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="font-bold text-lg text-gray-800 mb-3">Quels signes montrent qu'il faut se remettre ensemble ?</h3>
-              <p className="text-gray-700">Les <strong>signes positifs</strong> incluent : résolution des causes originales de rupture, changements concrets visibles, communication ouverte rétablie, pardon mutuel authentique, vision d'avenir partagée, soutien de vos proches. Le tarot avec Les Amoureux, Le Jugement ou Le Soleil confirme une <strong>remise en couple</strong> constructive avec de fortes chances de succès durable.</p>
-            </div>
-
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="font-bold text-lg text-gray-800 mb-3">Comment éviter une deuxième rupture ?</h3>
-              <p className="text-gray-700">Pour éviter une deuxième rupture : établissez de nouvelles règles de communication, maintenez des check-ins réguliers sur l'état de la relation, suivez une thérapie de couple si nécessaire, respectez vos engagements mutuels, gérez les conflits constructivement. Le tarot révèle les pièges à éviter et guide la consolidation de votre <strong>relation reconstruite</strong>.</p>
-            </div>
-
-            <div>
-              <h3 className="font-bold text-lg text-gray-800 mb-3">Faut-il prévenir son entourage quand on se remet ensemble ?</h3>
-              <p className="text-gray-700">Oui, l'entourage peut offrir un regard objectif précieux. Leurs inquiétudes éventuelles méritent d'être écoutées car ils ont une vision moins émotionnelle de la situation. Cependant, la décision finale vous appartient. Le tarot aide à équilibrer les conseils extérieurs avec votre intuition personnelle pour prendre la meilleure décision pour votre bonheur.</p>
-            </div>
-          </div>
-        </section>
-
-        <div className="bg-gray-100 rounded-xl p-6 mb-8">
-          <h3 className="font-bold mb-4 text-xl text-gray-800">📚 Articles Connexes</h3>
-          <div className="space-y-3">
-            <Link href="/reconquete" className="block text-purple-600 hover:text-purple-800 font-medium">→ Reconquête Amoureuse : Toutes nos Guidances</Link>
-            <Link href="/reconquete/ex-qui-revient" className="block text-purple-600 hover:text-purple-800 font-medium">→ Ex qui Revient : Identifier les Vraies Motivations</Link>
-            <Link href="/reconquete/seconde-chance-amour" className="block text-purple-600 hover:text-purple-800 font-medium">→ Seconde Chance en Amour : Conditions de Réussite</Link>
-            <Link href="/reconquete/ex-revient-silence-radio" className="block text-purple-600 hover:text-purple-800 font-medium">→ Ex qui Revient après Silence Radio</Link>
-            <Link href="/reconquete/retour-de-lex" className="block text-purple-600 hover:text-purple-800 font-medium">→ Retour de l'Ex : Signes et Timing</Link>
-            <Link href="/reconquete/va-t-il-elle-revenir" className="block text-purple-600 hover:text-purple-800 font-medium">→ Va-t-il/elle Revenir ? Prédiction Tarot</Link>
-            <Link href="/reconquete/reconquerir-son-ex" className="block text-purple-600 hover:text-purple-800 font-medium">→ Reconquérir son Ex : Stratégies Efficaces</Link>
-            <Link href="/reconquete/revoir-son-ex" className="block text-purple-600 hover:text-purple-800 font-medium">→ Revoir son Ex Après une Rupture</Link>
-          </div>
-        </div>
-
-        <VoyantFinalCTA topic="reconquete" source="se-remettre-ensemble-final" />
-      </div>
-    </main>
+      </ContentPage>
   );
 }

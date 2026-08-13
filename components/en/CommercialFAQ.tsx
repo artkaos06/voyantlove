@@ -20,7 +20,7 @@ const FAQS: FAQItem[] = [
     question: 'Is this actually $1? What\'s the catch?',
     answer: (
       <>
-        Yes — Keen offers new users 5 minutes for $1 with any new advisor.
+        Yes, Keen offers new users 5 minutes for $1 with any new advisor.
         The catch is honest: the offer only applies to your first session
         with each advisor. After 5 minutes, the advisor&apos;s posted rate
         kicks in (most love advisors are $4.99–$15.99 per minute). You
@@ -30,13 +30,13 @@ const FAQS: FAQItem[] = [
       </>
     ),
     answerPlain:
-      'Yes — Keen offers new users 5 minutes for $1 with any new advisor. After 5 minutes the advisor\'s posted rate applies. You control the meter and can set a session budget cap.',
+      'Yes, Keen offers new users 5 minutes for $1 with any new advisor. After 5 minutes the advisor\'s posted rate applies. You control the meter and can set a session budget cap.',
   },
   {
     question: 'What if I don\'t click with my advisor?',
     answer: (
       <>
-        End the call. Then try a different advisor — the $1 intro applies
+        End the call. Then try a different advisor, the $1 intro applies
         to <em>each</em> new advisor, so testing two or three is genuinely
         cheap. Keen also has a satisfaction policy: if your first paid
         reading goes badly, customer support can refund up to $25 of it.
@@ -50,7 +50,7 @@ const FAQS: FAQItem[] = [
     answer: (
       <>
         Keen vets advisors before they can list. Beyond that, the rating
-        and review system filters out the rest — most advisors who stay
+        and review system filters out the rest, most advisors who stay
         on Keen long-term have 4.5+ ratings across thousands of readings.
         Whether psychic readings work the way the advisors say is a
         question for personal belief; but the platform itself is real, the
@@ -81,16 +81,16 @@ const FAQS: FAQItem[] = [
       <>
         Yes. Keen routes phone calls through their platform, so neither
         you nor the advisor sees the other&apos;s number. Live chat is
-        in-app only — no email exchange, no SMS, no traceable contact info.
+        in-app only, no email exchange, no SMS, no traceable contact info.
         Your name on Keen is a username of your choosing; advisors only
         see what you choose to share during the session.
       </>
     ),
     answerPlain:
-      'Phone calls route through Keen — no caller-ID exposure. Live chat is in-app. Your username on Keen is whatever you choose; advisors only see what you share.',
+      'Phone calls route through Keen, no caller-ID exposure. Live chat is in-app. Your username on Keen is whatever you choose; advisors only see what you share.',
   },
   {
-    question: 'Phone or chat — which is better?',
+    question: 'Phone or chat, which is better?',
     answer: (
       <>
         Chat is usually better for first-time users: you can scroll back
@@ -109,7 +109,7 @@ const FAQS: FAQItem[] = [
     answer: (
       <>
         Username is your choice (most users pick a handle, not their
-        legal name). Payment is required to start a session — Keen
+        legal name). Payment is required to start a session, Keen
         accepts major credit cards and PayPal. The intro charge is $1,
         and the platform stores your payment for any sessions you choose
         to continue afterward. You can remove the payment method from
@@ -117,13 +117,13 @@ const FAQS: FAQItem[] = [
       </>
     ),
     answerPlain:
-      'Username is your choice. Payment is required — credit cards and PayPal accepted. Intro is $1. Payment method can be removed any time.',
+      'Username is your choice. Payment is required, credit cards and PayPal accepted. Intro is $1. Payment method can be removed any time.',
   },
   {
     question: 'When can I get a reading?',
     answer: (
       <>
-        Right now. Keen has advisors live 24/7 — thousands across all
+        Right now. Keen has advisors live 24/7, thousands across all
         specialties. Even at 3 a.m. local time, there are typically
         dozens of love &amp; relationship advisors available for
         immediate live chat or phone reading. No appointments, no

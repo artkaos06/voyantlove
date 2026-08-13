@@ -37,11 +37,11 @@ export default function GlossaireHubPage() {
   const faqSchema = getFAQSchema([
     {
       question: 'À quoi sert ce glossaire de la voyance amoureuse ?',
-      answer: 'Ce glossaire définit, de façon claire et sourcée, les termes de spiritualité, d\'astrologie, de numérologie, de pratiques divinatoires et de psychologie amoureuse que vous croisez dans nos guides et en consultation. Chaque fiche répond à une question précise — « qu\'est-ce que X ? » — et explique le terme dans son contexte général avant de préciser ce qu\'il signifie concrètement pour votre vie amoureuse.',
+      answer: 'Ce glossaire définit, de façon claire et sourcée, les termes de spiritualité, d\'astrologie, de numérologie, de pratiques divinatoires et de psychologie amoureuse que vous croisez dans nos guides et en consultation. Chaque fiche répond à une question précise, « qu\'est-ce que X ? », et explique le terme dans son contexte général avant de préciser ce qu\'il signifie concrètement pour votre vie amoureuse.',
     },
     {
       question: 'Comment les termes du glossaire sont-ils choisis ?',
-      answer: 'Nous documentons le vocabulaire qui revient dans nos guides de voyance amoureuse — méthodes, astrologie, numérologie — sans jamais dupliquer une page déjà dédiée au sujet : l\'âme sœur, la synastrie ou le tarot ont leurs propres guides complets ailleurs sur le site. Le glossaire complète ces guides avec les notions plus précises qu\'ils utilisent sans toujours les définir en détail.',
+      answer: 'Nous documentons le vocabulaire qui revient dans nos guides de voyance amoureuse, méthodes, astrologie, numérologie, sans jamais dupliquer une page déjà dédiée au sujet : l\'âme sœur, la synastrie ou le tarot ont leurs propres guides complets ailleurs sur le site. Le glossaire complète ces guides avec les notions plus précises qu\'ils utilisent sans toujours les définir en détail.',
     },
     {
       question: 'Le glossaire remplace-t-il une consultation de voyance ?',
@@ -67,12 +67,12 @@ export default function GlossaireHubPage() {
       </header>
 
       <div className="max-w-6xl mx-auto px-4 py-8">
-        <EEATSignal colorScheme="purple" method="Glossaire de la voyance amoureuse — définitions et guidance sentimentale" />
+        <EEATSignal colorScheme="purple" method="Glossaire de la voyance amoureuse, définitions et guidance sentimentale" />
 
         <section className="bg-purple-50 border-l-4 border-purple-500 rounded-r-xl p-6 md:p-8 mb-10 max-w-4xl mx-auto">
           <h2 className="text-xl font-bold text-gray-900 mb-3">Un dictionnaire au service de vos guidances</h2>
           <p className="text-lg leading-relaxed text-gray-800">
-            Nos guides de <strong>voyance amoureuse</strong>, d&apos;<strong>astrologie</strong> ou de <strong>numérologie</strong> emploient un vocabulaire précis — <strong>corde karmique</strong>, <strong>thème composite</strong>, <strong>arcane majeur</strong>, <strong>attachement anxieux</strong> — que ce glossaire définit un par un, sans jamais refaire ce que nos guides complets font déjà mieux. Chaque fiche explique un terme dans son contexte général, puis précise ce qu&apos;il signifie concrètement pour votre vie amoureuse, avec des liens vers les guides qui l&apos;appliquent en profondeur.
+            Nos guides de <strong>voyance amoureuse</strong>, d&apos;<strong>astrologie</strong> ou de <strong>numérologie</strong> emploient un vocabulaire précis, <strong>corde karmique</strong>, <strong>thème composite</strong>, <strong>arcane majeur</strong>, <strong>attachement anxieux</strong>, que ce glossaire définit un par un, sans jamais refaire ce que nos guides complets font déjà mieux. Chaque fiche explique un terme dans son contexte général, puis précise ce qu&apos;il signifie concrètement pour votre vie amoureuse, avec des liens vers les guides qui l&apos;appliquent en profondeur.
           </p>
         </section>
 
@@ -120,11 +120,11 @@ export default function GlossaireHubPage() {
           <div className="space-y-6">
             <div className="border-b border-gray-200 pb-6">
               <h3 className="text-lg font-bold text-gray-900 mb-2">À quoi sert ce glossaire de la voyance amoureuse ?</h3>
-              <p className="text-gray-700 leading-relaxed">Ce glossaire définit, de façon claire et sourcée, les termes de spiritualité, d&apos;astrologie, de numérologie, de pratiques divinatoires et de psychologie amoureuse que vous croisez dans nos guides et en consultation. Chaque fiche répond à une question précise — « qu&apos;est-ce que X ? » — et explique le terme dans son contexte général avant de préciser ce qu&apos;il signifie concrètement pour votre vie amoureuse.</p>
+              <p className="text-gray-700 leading-relaxed">Ce glossaire définit, de façon claire et sourcée, les termes de spiritualité, d&apos;astrologie, de numérologie, de pratiques divinatoires et de psychologie amoureuse que vous croisez dans nos guides et en consultation. Chaque fiche répond à une question précise, « qu&apos;est-ce que X ? », et explique le terme dans son contexte général avant de préciser ce qu&apos;il signifie concrètement pour votre vie amoureuse.</p>
             </div>
             <div className="border-b border-gray-200 pb-6">
               <h3 className="text-lg font-bold text-gray-900 mb-2">Comment les termes du glossaire sont-ils choisis ?</h3>
-              <p className="text-gray-700 leading-relaxed">Nous documentons le vocabulaire qui revient dans nos guides de voyance amoureuse — méthodes, astrologie, numérologie — sans jamais dupliquer une page déjà dédiée au sujet : l&apos;âme sœur, la synastrie ou le tarot ont leurs propres guides complets ailleurs sur le site. Le glossaire complète ces guides avec les notions plus précises qu&apos;ils utilisent sans toujours les définir en détail.</p>
+              <p className="text-gray-700 leading-relaxed">Nous documentons le vocabulaire qui revient dans nos guides de voyance amoureuse, méthodes, astrologie, numérologie, sans jamais dupliquer une page déjà dédiée au sujet : l&apos;âme sœur, la synastrie ou le tarot ont leurs propres guides complets ailleurs sur le site. Le glossaire complète ces guides avec les notions plus précises qu&apos;ils utilisent sans toujours les définir en détail.</p>
             </div>
             <div>
               <h3 className="text-lg font-bold text-gray-900 mb-2">Le glossaire remplace-t-il une consultation de voyance ?</h3>

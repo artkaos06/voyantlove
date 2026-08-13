@@ -1,114 +1,89 @@
-import type { Metadata } from 'next';
 import Link from 'next/link';
-import { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getAuthorSchema } from '@/lib/schema';
-import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
-import VoyantFinalCTA from '@/components/VoyantFinalCTA';
+import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
-export const metadata: Metadata = {
+const config: ContentPageConfig = {
   title: 'Prédiction Amour Voyance : Votre Avenir Amoureux Révélé',
   description: 'Prédiction amour et voyance : découvrez votre avenir amoureux selon le tarot. Rencontres, évolution de couple et timeline sentimentale personnalisée.',
+  url: 'https://www.voyantlove.fr/sentiments/avenir-amoureux/',
   keywords: ['amour prediction voyance', 'prédiction amour', 'avenir amoureux', 'futur sentimental', 'tarot avenir', 'voyance future amour'],
-  alternates: { canonical: 'https://www.voyantlove.fr/sentiments/avenir-amoureux/' },
-};
-
-export default function AvenirAmoureuxPage() {
-  const articleSchema = getArticleSchema({
-    title: 'Prédiction Amour Voyance : Votre Avenir Amoureux Révélé | VoyantLove',
-    description: 'Prédiction amour et voyance : découvrez votre avenir amoureux selon le tarot. Rencontres, évolution de couple et timeline sentimentale personnalisée.',
-    url: 'https://www.voyantlove.fr/sentiments/avenir-amoureux/',
-    datePublished: '2026-01-19',
-    dateModified: '2026-01-19',
-    keywords: ['avenir amoureux', 'futur sentimental', 'prédiction amour', 'tarot avenir', 'voyance future amour'],
-  });
-
-  const breadcrumbSchema = getBreadcrumbSchema([
+  datePublished: '2026-01-19',
+  dateModified: '2026-01-19',
+  breadcrumb: [
     { name: 'Accueil', url: 'https://www.voyantlove.fr' },
     { name: 'Sentiments', url: 'https://www.voyantlove.fr/sentiments/' },
     { name: 'Avenir Amoureux', url: 'https://www.voyantlove.fr/sentiments/avenir-amoureux/' },
-  ]);
+  ],
+  header: {
+    emoji: '🔮',
+    h1: 'Mon Avenir Amoureux',
+    subtitle: 'Prédictions tarot et voyance pour votre futur sentimental',
+    gradient: 'from-pink-500 via-rose-500 to-red-500',
+    backLink: { href: '/sentiments', label: 'Retour aux Sentiments' },
+    anchors: [
+      { href: '#consultation', label: 'Tirage Avenir Amoureux', primary: true },
+      { href: '#timeline', label: 'Ma Timeline Sentimentale' },
+    ],
+  },
+  accentText: 'text-rose-600',
+  stats: [
+    { icon: '⭐', value: '4.8/5', label: '287 avis' },
+    { icon: '🔮', value: 'Reconnue', label: 'Expertise' },
+    { icon: '💫', value: '15 ans', label: 'Expérience' },
+    { icon: '💖', value: '5,400+', label: 'Prédictions' },
+  ],
+  eeat: { colorScheme: 'purple', method: 'Tarot prédictif et astrologie amoureuse' },
+  cta: { topic: 'sentiments', slug: 'avenir-amoureux' },
+  faq: [
+    {
+      q: 'Le tarot predit-il l\'avenir amoureux avec precision ?',
+      a: 'Le tarot révèle les tendances et probabilités de votre avenir amoureux selon les énergies actuelles et vos choix. Il indique les périodes favorables aux rencontres, l\'évolution probable de votre relation actuelle, et les opportunités sentimentales à venir. La précision est reconnue comme élevée pour les prédictions à 6-12 mois. Le libre arbitre influence toujours l\'avenir, le tarot montre le chemin le plus probable selon votre trajectoire présente.',
+    },
+    {
+      q: 'Quand vais-je rencontrer l\'amour ?',
+      a: 'La voyance identifie les périodes astrologiques favorables : transits de Vénus, nouvelles lunes en maison 7, Jupiter en aspect harmonieux. Le tarot affine le timing : quelques mois, cette année, après un travail intérieur spécifique. Pour les célibataires disponibles émotionnellement, la majorité rencontrent quelqu\'un dans les 12 mois suivant une consultation si le tarot l\'indique. La préparation personnelle accélère la manifestation.',
+    },
+    {
+      q: 'Mon couple a-t-il un avenir ?',
+      a: 'Le tirage de l\'avenir du couple analyse quatre aspects : compatibilité profonde, évolution des sentiments, obstacles futurs, et potentiel de durabilité. Les cartes révèlent si votre relation mènera au mariage, à une séparation, ou stagnera. Un voyant honnête vous dira la vérité, même difficile. De nombreux couples consultent pour savoir s\'ils doivent continuer ou se séparer, le tarot éclaire cette décision cruciale.',
+    },
+    {
+      q: 'L\'astrologie influence-t-elle l\'avenir amoureux ?',
+      a: 'Votre thème natal révèle vos schémas amoureux, vos besoins relationnels, et les périodes clés de votre vie sentimentale. Les transits planétaires (Vénus, Mars, Jupiter) créent des cycles favorables ou difficiles. Saturne en maison 7 peut retarder le mariage mais le rendre plus durable. Pluton transforme profondément vos relations. Un astrologue combine ces éléments pour prédire votre timeline amoureuse avec précision.',
+    },
+    {
+      q: 'Peut-on changer son avenir amoureux ?',
+      a: 'Absolument. Le tarot montre le futur le plus probable selon vos choix actuels, pas un destin figé. Si le tarot prédit des difficultés, vous pouvez modifier votre comportement, faire un travail thérapeutique, ou changer d\'approche relationnelle. Si il annonce une belle rencontre mais vous restez fermé, elle ne se manifestera pas. L\'avenir se co-crée entre les tendances révélées et vos actions conscientes.',
+    },
+    {
+      q: 'A quelle frequence consulter un voyant ?',
+      a: 'Pour un avenir amoureux général : tous les 6-12 mois suffisent. En période de questionnement (début de relation, crise) : tous les 3 mois. Évitez de consulter trop souvent (chaque semaine) car l\'avenir a besoin de temps pour se déployer. Les meilleures consultations se font lors de transits majeurs (éclipses, Vénus rétrograde, votre anniversaire) pour obtenir les insights les plus pertinents.',
+    },
+    {
+      q: 'Comment connaître son avenir amoureux ?',
+      a: 'Plusieurs approches divinatoires permettent de connaître son avenir amoureux. La cartomancie et le tirage tarot amour restent les méthodes les plus précises : les arcanes majeurs comme Le Monde, L\'Étoile et La Roue de Fortune révèlent les grandes étapes sentimentales à venir. Une consultation avec un voyant spécialisé en amour offre une lecture personnalisée de votre trajectoire. Chez voyantlove.fr, nos voyants distinguent la prédiction figée de la guidance évolutive : le tarot ne dicte pas un destin immuable, il trace une feuille de route sentimentale qui éclaire vos choix tout en respectant votre libre arbitre. C\'est cette nuance qui rend la voyance sentimentale véritablement utile.',
+    },
+    {
+      q: 'Est-ce que le destin existe en amour ?',
+      a: 'La voyance aborde cette question à travers le prisme du libre arbitre et du karma amoureux. Certaines rencontres semblent prédestinées, guidées par des contrats d\'âme noués dans d\'autres vies : ces connexions karmiques expliquent l\'intensité immédiate que vous ressentez avec certaines personnes. Cependant, le tarot montre que le destin trace les grandes lignes tandis que vos choix quotidiens en dessinent les détails. Les arcanes révèlent un potentiel, jamais un futur figé. Un voyant expérimenté vous aide à comprendre vos schémas karmiques amoureux pour mieux naviguer vos relations, tout en vous rappelant que vous restez maître de vos décisions. Le destin propose, votre libre arbitre dispose.',
+    },
+  ],
+  related: [
+    { href: '/sentiments', label: 'Sentiments Amoureux : Toutes nos Guidances' },
+    { href: '/sentiments/maime-t-il-elle', label: 'M\'aime-t-il/elle Vraiment ?' },
+    { href: '/sentiments/signes-il-elle-maime', label: 'Les Signes qu\'il/elle M\'aime' },
+    { href: '/nouvelle-rencontre/quand-rencontre-amour', label: 'Quand Vais-je Rencontrer l\'Amour ?' },
+    { href: '/reconquete/va-t-il-elle-revenir', label: 'Mon Ex Va-t-il Revenir ?' },
+  ],
+};
 
-  const authorSchema = getAuthorSchema();
+export const metadata = contentMeta(config);
 
-  const faqSchema = getFAQSchema([
-    {
-      question: 'Le tarot predit-il l\'avenir amoureux avec precision ?',
-      answer: 'Le tarot révèle les tendances et probabilités de votre avenir amoureux selon les énergies actuelles et vos choix. Il indique les périodes favorables aux rencontres, l\'évolution probable de votre relation actuelle, et les opportunités sentimentales à venir. La précision est reconnue comme élevée pour les prédictions à 6-12 mois. Le libre arbitre influence toujours l\'avenir, le tarot montre le chemin le plus probable selon votre trajectoire présente.',
-    },
-    {
-      question: 'Quand vais-je rencontrer l\'amour ?',
-      answer: 'La voyance identifie les périodes astrologiques favorables : transits de Vénus, nouvelles lunes en maison 7, Jupiter en aspect harmonieux. Le tarot affine le timing : quelques mois, cette année, après un travail intérieur spécifique. Pour les célibataires disponibles émotionnellement, la majorité rencontrent quelqu\'un dans les 12 mois suivant une consultation si le tarot l\'indique. La préparation personnelle accélère la manifestation.',
-    },
-    {
-      question: 'Mon couple a-t-il un avenir ?',
-      answer: 'Le tirage de l\'avenir du couple analyse quatre aspects : compatibilité profonde, évolution des sentiments, obstacles futurs, et potentiel de durabilité. Les cartes révèlent si votre relation mènera au mariage, à une séparation, ou stagnera. Un voyant honnête vous dira la vérité, même difficile. De nombreux couples consultent pour savoir s\'ils doivent continuer ou se séparer, le tarot éclaire cette décision cruciale.',
-    },
-    {
-      question: 'L\'astrologie influence-t-elle l\'avenir amoureux ?',
-      answer: 'Votre thème natal révèle vos schémas amoureux, vos besoins relationnels, et les périodes clés de votre vie sentimentale. Les transits planétaires (Vénus, Mars, Jupiter) créent des cycles favorables ou difficiles. Saturne en maison 7 peut retarder le mariage mais le rendre plus durable. Pluton transforme profondément vos relations. Un astrologue combine ces éléments pour prédire votre timeline amoureuse avec précision.',
-    },
-    {
-      question: 'Peut-on changer son avenir amoureux ?',
-      answer: 'Absolument. Le tarot montre le futur le plus probable selon vos choix actuels, pas un destin figé. Si le tarot prédit des difficultés, vous pouvez modifier votre comportement, faire un travail thérapeutique, ou changer d\'approche relationnelle. Si il annonce une belle rencontre mais vous restez fermé, elle ne se manifestera pas. L\'avenir se co-crée entre les tendances révélées et vos actions conscientes.',
-    },
-    {
-      question: 'A quelle frequence consulter un voyant ?',
-      answer: 'Pour un avenir amoureux général : tous les 6-12 mois suffisent. En période de questionnement (début de relation, crise) : tous les 3 mois. Évitez de consulter trop souvent (chaque semaine) car l\'avenir a besoin de temps pour se déployer. Les meilleures consultations se font lors de transits majeurs (éclipses, Vénus rétrograde, votre anniversaire) pour obtenir les insights les plus pertinents.',
-    },
-    {
-      question: 'Comment connaître son avenir amoureux ?',
-      answer: 'Plusieurs approches divinatoires permettent de connaître son avenir amoureux. La cartomancie et le tirage tarot amour restent les méthodes les plus précises : les arcanes majeurs comme Le Monde, L\'Étoile et La Roue de Fortune révèlent les grandes étapes sentimentales à venir. Une consultation avec un voyant spécialisé en amour offre une lecture personnalisée de votre trajectoire. Chez voyantlove.fr, nos voyants distinguent la prédiction figée de la guidance évolutive : le tarot ne dicte pas un destin immuable, il trace une feuille de route sentimentale qui éclaire vos choix tout en respectant votre libre arbitre. C\'est cette nuance qui rend la voyance sentimentale véritablement utile.',
-    },
-    {
-      question: 'Est-ce que le destin existe en amour ?',
-      answer: 'La voyance aborde cette question à travers le prisme du libre arbitre et du karma amoureux. Certaines rencontres semblent prédestinées, guidées par des contrats d\'âme noués dans d\'autres vies : ces connexions karmiques expliquent l\'intensité immédiate que vous ressentez avec certaines personnes. Cependant, le tarot montre que le destin trace les grandes lignes tandis que vos choix quotidiens en dessinent les détails. Les arcanes révèlent un potentiel, jamais un futur figé. Un voyant expérimenté vous aide à comprendre vos schémas karmiques amoureux pour mieux naviguer vos relations, tout en vous rappelant que vous restez maître de vos décisions. Le destin propose, votre libre arbitre dispose.',
-    },
-  ]);
+export default function AvenirAmoureuxPage() {
 
   return (
-    <main className="min-h-screen bg-gray-50">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(authorSchema) }}
-      />
-
-      <header className="bg-gradient-to-r from-pink-500 via-rose-500 to-red-500 text-white py-16 px-4">
-        <div className="max-w-4xl mx-auto">
-          <Link href="/sentiments" className="text-white/80 hover:text-white mb-4 inline-block">← Retour aux Sentiments</Link>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">🔮 Mon Avenir Amoureux</h1>
-          <p className="text-xl opacity-95 mb-6">Prédictions tarot et voyance pour votre futur sentimental</p>
-          <div className="flex gap-4 flex-wrap">
-            <a href="#consultation" className="bg-white text-rose-600 px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition">Tirage Avenir Amoureux</a>
-            <a href="#timeline" className="border-2 border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-rose-600 transition">Ma Timeline Sentimentale</a>
-          </div>
-        </div>
-      </header>
-
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <div className="bg-white rounded-xl shadow-md p-6 mb-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-          <div><div className="text-3xl mb-1">⭐</div><div className="text-2xl font-bold text-rose-600">4.8/5</div><div className="text-sm text-gray-600">287 avis</div></div>
-          <div><div className="text-3xl mb-1">🔮</div><div className="text-2xl font-bold text-rose-600">Reconnue</div><div className="text-sm text-gray-600">Expertise</div></div>
-          <div><div className="text-3xl mb-1">💫</div><div className="text-2xl font-bold text-rose-600">15 ans</div><div className="text-sm text-gray-600">Expérience</div></div>
-          <div><div className="text-3xl mb-1">💖</div><div className="text-2xl font-bold text-rose-600">5,400+</div><div className="text-sm text-gray-600">Prédictions</div></div>
-        </div>
-
-        <EEATSignal
-          colorScheme="purple"
-          method="Tarot prédictif et astrologie amoureuse"
-        />
+    <ContentPage config={config}>
 
         <article className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-rose-500">
           <p className="text-lg leading-relaxed mb-4">
@@ -416,65 +391,6 @@ export default function AvenirAmoureuxPage() {
           </div>
         </section>
 
-        <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold mb-8 text-rose-600">❓ Questions Fréquentes sur l'Avenir Amoureux</h2>
-          <p className="text-lg font-semibold text-gray-800 mb-4">Les reponses aux questions les plus posees sur les predictions amoureuses, le timing des rencontres et l'evolution de votre couple selon le tarot et l'astrologie.</p>
-          <div className="space-y-6">
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Le tarot predit-il l'avenir amoureux avec precision ?</h3>
-              <p className="text-gray-700 leading-relaxed">Le tarot révèle les tendances et probabilités de votre <strong>avenir amoureux</strong> selon les énergies actuelles et vos choix. Il indique les périodes favorables aux rencontres, l'évolution probable de votre relation actuelle, et les opportunités sentimentales à venir. La précision est reconnue comme élevée pour les prédictions à 6-12 mois. Le libre arbitre influence toujours l'avenir, le tarot montre le chemin le plus probable selon votre trajectoire présente.</p>
-            </div>
-
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Quand vais-je rencontrer l'amour ?</h3>
-              <p className="text-gray-700 leading-relaxed">La <strong>voyance</strong> identifie les périodes astrologiques favorables : transits de Vénus, nouvelles lunes en maison 7, Jupiter en aspect harmonieux. Le tarot affine le timing : quelques mois, cette année, après un travail intérieur spécifique. Pour les célibataires disponibles émotionnellement, la majorité rencontrent quelqu'un dans les 12 mois suivant une consultation si le tarot l'indique. La préparation personnelle accélère la manifestation.</p>
-            </div>
-
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Mon couple a-t-il un avenir ?</h3>
-              <p className="text-gray-700 leading-relaxed">Le tirage de l'<strong>avenir du couple</strong> analyse quatre aspects : <Link href="/sentiments/compatibilite-amoureuse" className="text-rose-600 hover:text-rose-800 underline font-medium">compatibilité amoureuse</Link> profonde, évolution des sentiments, obstacles futurs, et potentiel de durabilité. Les cartes révèlent si votre relation mènera au mariage, à une séparation, ou stagnera. Un voyant honnête vous dira la vérité, même difficile. De nombreux couples consultent pour savoir s'ils doivent continuer ou se séparer, le tarot éclaire cette décision cruciale.</p>
-            </div>
-
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold mb-3 text-gray-900">L'astrologie influence-t-elle l'avenir amoureux ?</h3>
-              <p className="text-gray-700 leading-relaxed">Votre thème natal révèle vos schémas amoureux, vos besoins relationnels, et les périodes clés de votre vie sentimentale. Les transits planétaires (Vénus, Mars, Jupiter) créent des cycles favorables ou difficiles. Saturne en maison 7 peut retarder le mariage mais le rendre plus durable. Pluton transforme profondément vos relations. Un astrologue combine ces éléments pour prédire votre timeline amoureuse avec précision.</p>
-            </div>
-
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Peut-on changer son avenir amoureux ?</h3>
-              <p className="text-gray-700 leading-relaxed">Absolument. Le tarot montre le futur le plus probable selon vos choix actuels, pas un destin figé. Si le tarot prédit des difficultés, vous pouvez modifier votre comportement, faire un travail thérapeutique, ou changer d'approche relationnelle. Si il annonce une belle rencontre mais vous restez fermé, elle ne se manifestera pas. L'<strong>avenir se co-crée</strong> entre les tendances révélées et vos actions conscientes.</p>
-            </div>
-
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold mb-3 text-gray-900">A quelle frequence consulter un voyant ?</h3>
-              <p className="text-gray-700 leading-relaxed">Pour un avenir amoureux général : tous les 6-12 mois suffisent. En période de questionnement (début de relation, crise) : tous les 3 mois. Évitez de consulter trop souvent (chaque semaine) car l'avenir a besoin de temps pour se déployer. Les meilleures consultations se font lors de transits majeurs (éclipses, Vénus rétrograde, votre anniversaire) pour obtenir les insights les plus pertinents.</p>
-            </div>
-
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Comment connaître son avenir amoureux ?</h3>
-              <p className="text-gray-700 leading-relaxed">Plusieurs approches divinatoires permettent de connaître son <strong>avenir amoureux</strong>. La <strong>cartomancie</strong> et le <strong>tirage tarot amour</strong> restent les méthodes les plus précises : les arcanes majeurs comme Le Monde, L'Étoile et La Roue de Fortune révèlent les grandes étapes sentimentales à venir. Une consultation avec un <strong>voyant spécialisé</strong> en amour offre une lecture personnalisée de votre trajectoire. Chez voyantlove.fr, nos voyants distinguent la prédiction figée de la <strong>guidance évolutive</strong> : le tarot ne dicte pas un destin immuable, il trace une feuille de route sentimentale qui éclaire vos choix tout en respectant votre libre arbitre. C'est cette nuance qui rend la <strong>voyance sentimentale</strong> véritablement utile.</p>
-            </div>
-
-            <div>
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Est-ce que le destin existe en amour ?</h3>
-              <p className="text-gray-700 leading-relaxed">La voyance aborde cette question à travers le prisme du <strong>libre arbitre</strong> et du <strong>karma amoureux</strong>. Certaines rencontres semblent prédestinées, guidées par des <strong>contrats d'âme</strong> noués dans d'autres vies : ces connexions karmiques expliquent l'intensité immédiate que vous ressentez avec certaines personnes. Cependant, le tarot montre que le destin trace les grandes lignes tandis que vos choix quotidiens en dessinent les détails. Les arcanes révèlent un <strong>potentiel</strong>, jamais un futur figé. Un voyant expérimenté vous aide à comprendre vos schémas karmiques amoureux pour mieux naviguer vos relations, tout en vous rappelant que vous restez maître de vos décisions. Le destin propose, votre libre arbitre dispose.</p>
-            </div>
-          </div>
-        </section>
-
-        <div className="bg-gray-100 rounded-xl p-6 mb-8">
-          <h3 className="font-bold text-lg mb-4 text-gray-900">📚 Articles Connexes</h3>
-          <div className="space-y-2">
-            <Link href="/sentiments" className="block text-rose-600 hover:text-rose-800 font-medium">→ Sentiments Amoureux : Toutes nos Guidances</Link>
-            <Link href="/sentiments/maime-t-il-elle" className="block text-rose-600 hover:text-rose-800 font-medium">→ M'aime-t-il/elle Vraiment ?</Link>
-            <Link href="/sentiments/signes-il-elle-maime" className="block text-rose-600 hover:text-rose-800 font-medium">→ Les Signes qu'il/elle M'aime</Link>
-            <Link href="/nouvelle-rencontre/quand-rencontre-amour" className="block text-rose-600 hover:text-rose-800 font-medium">→ Quand Vais-je Rencontrer l'Amour ?</Link>
-            <Link href="/reconquete/va-t-il-elle-revenir" className="block text-rose-600 hover:text-rose-800 font-medium">→ Mon Ex Va-t-il Revenir ?</Link>
-          </div>
-        </div>
-
-        <VoyantFinalCTA topic="sentiments" source="avenir-amoureux-final" />
-      </div>
-    </main>
+      </ContentPage>
   );
 }

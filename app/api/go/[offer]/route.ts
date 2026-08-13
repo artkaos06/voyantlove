@@ -42,7 +42,7 @@ export async function GET(
   const target = buildClickUrl(offer, { gclid, gbraid, wbraid });
 
   if (!target) {
-    // Offer base URL not configured — fail loud rather than redirect to a
+    // Offer base URL not configured, fail loud rather than redirect to a
     // broken target. Logging in Vercel surfaces the misconfig fast.
     console.error('[go] offer_not_configured', { offer });
     return NextResponse.json(
@@ -51,7 +51,7 @@ export async function GET(
     );
   }
 
-  // Diagnostic log — searchable in Vercel logs by offer or attribution_type.
+  // Diagnostic log, searchable in Vercel logs by offer or attribution_type.
   // Lets us trace each click-out and confirm gclid/gbraid/wbraid are arriving
   // at our handler from the lander as expected.
   const attributionType = gclid
@@ -82,10 +82,10 @@ export async function GET(
   // Daily-digest counter.
   recordClickOut({ attributionType, ip });
 
-  // Click-rate anomaly detection — alerts on bursts of clicks from the
+  // Click-rate anomaly detection, alerts on bursts of clicks from the
   // same IP that may indicate bot activity or click-fraud against our
   // /api/go endpoint.
-  // Discord notifications — MUST be awaited. Vercel serverless terminates
+  // Discord notifications, MUST be awaited. Vercel serverless terminates
   // the function instance once the response is returned; fire-and-forget
   // async work after the return is killed before it completes. We accept
   // the small latency cost (Discord fetch has a 2s timeout cap) to get
@@ -125,7 +125,7 @@ export async function GET(
       ...(wbraid ? [{ name: 'wbraid', value: wbraid, inline: true }] : []),
       {
         name: 'Referer',
-        value: referer || '(none — likely bot or direct URL hit)',
+        value: referer || '(none, likely bot or direct URL hit)',
       },
       {
         name: 'User Agent',

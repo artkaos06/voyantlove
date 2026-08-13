@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import LeadCaptureForm from '@/components/LeadCaptureForm';
 
 export const metadata: Metadata = {
-  title: 'Tirage Tarot Amour — Révélation Immédiate',
+  title: 'Tirage Tarot Amour, Révélation Immédiate',
   description: 'Tirage tarot amour personnalisé. Découvrez ce que les cartes disent sur votre situation sentimentale en moins de 2 minutes.',
   robots: { index: false, follow: false },
 };
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function LPTirageAmour() {
   return (
     <main className="min-h-screen bg-gray-50">
-      {/* Hero — urgency focused */}
+      {/* Hero, urgency focused */}
       <section className="bg-gradient-to-br from-indigo-800 via-purple-700 to-pink-700 text-white py-14 px-4">
         <div className="max-w-3xl mx-auto text-center">
           <div className="inline-block bg-white/20 rounded-full px-4 py-1 text-sm font-semibold mb-5">
@@ -20,7 +20,7 @@ export default function LPTirageAmour() {
             Votre Tirage Tarot Révèle la Vérité sur Votre Amour
           </h1>
           <p className="text-xl opacity-95 mb-8 max-w-2xl mx-auto">
-            En 2 minutes, découvrez ce que les cartes disent sur votre situation — puis parlez à un voyant pour aller plus loin.
+            En 2 minutes, découvrez ce que les cartes disent sur votre situation, puis parlez à un voyant pour aller plus loin.
           </p>
           <div className="flex flex-wrap justify-center gap-4 text-sm font-semibold">
             <span className="bg-white/20 rounded-full px-4 py-2">✓ Tirage personnalisé</span>
@@ -32,10 +32,10 @@ export default function LPTirageAmour() {
 
       {/* Urgency bar */}
       <div className="bg-amber-400 text-amber-900 text-center py-2 px-4 text-sm font-semibold">
-        ⚡ 3 voyants disponibles en ce moment — Disponibilité limitée
+        ⚡ 3 voyants disponibles en ce moment, Disponibilité limitée
       </div>
 
-      {/* Form — teaser mode */}
+      {/* Form, teaser mode */}
       <section id="tirage" className="py-12 px-4">
         <div className="max-w-4xl mx-auto">
           <LeadCaptureForm source="lp-tirage-amour" colorScheme="purple" mode="teaser" />
@@ -72,7 +72,7 @@ export default function LPTirageAmour() {
               <div key={i} className="bg-white p-5 rounded-lg shadow-sm">
                 <div className="mb-2">{'⭐'.repeat(t.stars)}</div>
                 <p className="text-gray-700 italic mb-3">&quot;{t.text}&quot;</p>
-                <p className="text-sm font-semibold text-gray-500">— {t.name}</p>
+                <p className="text-sm font-semibold text-gray-500">, {t.name}</p>
               </div>
             ))}
           </div>

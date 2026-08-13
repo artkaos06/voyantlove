@@ -2,7 +2,7 @@
 //
 // Why this exists: this project's defining failure was silent. The React
 // quiz lost 91.6% of users between Q1 and Q2 on Xiaomi/Huawei in-app
-// browsers and nothing surfaced it — no error, no alert, just a funnel step
+// browsers and nothing surfaced it, no error, no alert, just a funnel step
 // that emptied. We only found it weeks later by reading drop-off numbers.
 //
 // The landers are zero-JS now, but the ROOT LAYOUT still ships GTM, the
@@ -50,12 +50,12 @@ function isBot(ua: string): boolean {
   );
 }
 
-/** Paid landers — the only pages where a JS error costs money in real time. */
+/** Paid landers, the only pages where a JS error costs money in real time. */
 const ALERTING_PAGES = /^\/lp\/(voyant-direct|il-elle-vous-aime|histoire-sophie)\/?$/;
 
 /**
  * Generic rejections with no actionable detail. `[object Event]` is what a
- * failed <script>/<img> load serialises to — almost always an ad blocker or a
+ * failed <script>/<img> load serialises to, almost always an ad blocker or a
  * flaky third-party (GTM, glyphex), never our code. Counted, never alerted.
  */
 const NOISE = /^Unhandled promise:\s*\[object (Event|Object)\]$/i;
@@ -69,7 +69,7 @@ async function handle(request: NextRequest): Promise<NextResponse> {
       const t = await request.text();
       if (t) body = JSON.parse(t) as Body;
     } catch {
-      /* malformed — nothing to record */
+      /* malformed, nothing to record */
     }
   }
 
@@ -87,7 +87,7 @@ async function handle(request: NextRequest): Promise<NextResponse> {
   try {
     const k = `cpl:err:${parisDate()}`;
     // Keyed on the fingerprint ALONE. It was `${page}|${fp}`, which gave every
-    // URL its own alert budget — one crawler walking ~25 pages produced ~75
+    // URL its own alert budget, one crawler walking ~25 pages produced ~75
     // Discord alerts and buried the real conversion pings.
     count = await kv.hincrby(k, fp, 1);
     await kv.hincrby(k, `page:${page}`, 1);
@@ -99,8 +99,7 @@ async function handle(request: NextRequest): Promise<NextResponse> {
 
   // Alert only when it could actually be costing money right now: a real
   // browser, on a paid lander, with something more specific than a generic
-  // rejection. Everything else is still counted in KV and readable there —
-  // it just doesn't page the operator. The channel has to stay a money-signal
+  // rejection. Everything else is still counted in KV and readable there,   // it just doesn't page the operator. The channel has to stay a money-signal
   // feed; drowning it in crawler noise is worse than not reporting at all.
   const alertWorthy =
     !isBot(ua) && ALERTING_PAGES.test(page) && !NOISE.test(message);

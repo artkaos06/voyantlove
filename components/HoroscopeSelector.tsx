@@ -34,7 +34,7 @@ export default function HoroscopeSelector() {
 
       {horoscope && (
         <div className="max-w-lg mx-auto bg-white/10 rounded-xl p-6 border border-white/10">
-          <div className="text-xs font-bold uppercase tracking-wider text-teal-300 mb-1">{selected} — 2026</div>
+          <div className="text-xs font-bold uppercase tracking-wider text-teal-300 mb-1">{selected}, 2026</div>
           <h3 className="text-xl font-bold mb-3">{horoscope.headline}</h3>
           <p className="text-teal-50 text-sm leading-relaxed mb-4">{horoscope.prediction}</p>
           <div className="text-xs text-teal-200 border-t border-white/10 pt-3">

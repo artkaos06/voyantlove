@@ -4,14 +4,22 @@ import { notFound } from 'next/navigation';
 import { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getAuthorSchema } from '@/lib/schema';
 import { COMPATIBILITY_PAIRS, findPair, validatePairRecord } from '@/lib/compatibilitePairs';
 import { ZODIAC_SIGNS } from '@/lib/zodiac';
+import { SIGNES_AMOUR, validateSignRecord } from '@/lib/signesAmour';
 import { renderWithEntities } from '@/lib/entityBold';
 import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 import SynastryCalculator from '@/components/SynastryCalculator';
+import AskAI from '@/components/AskAI';
 
 // Publication gate: only records passing validation get a page.
 const LIVE_PAIRS = COMPATIBILITY_PAIRS.filter((p) => validatePairRecord(p).length === 0);
+
+// Sign name -> live astrologie-amour slug, so each pair funnels authority to
+// both signs' love-profile pages (and builds the astro cluster bidirectionally).
+const LIVE_SIGN_SLUG: Record<string, string> = Object.fromEntries(
+  SIGNES_AMOUR.filter((s) => validateSignRecord(s).length === 0).map((s) => [s.name, s.slug]),
+);
 
 export function generateStaticParams() {
   return LIVE_PAIRS.map((p) => ({ pair: p.slug }));
@@ -87,13 +95,31 @@ export default async function PairPage({ params }: Props) {
       <div className="max-w-4xl mx-auto px-4 py-8">
         <EEATSignal colorScheme="purple" method="Analyse astrologique des signes et des éléments" />
 
-        {/* Answer capsule — extractive snippet target for "sont-ils compatibles" */}
+        {/* Answer capsule, extractive snippet target for "sont-ils compatibles" */}
         {rec.answerCapsule && (
           <section className="bg-purple-50 border-l-4 border-purple-500 rounded-r-xl p-6 md:p-8 mb-8">
             <h2 className="text-xl font-bold text-gray-900 mb-3">{rec.signA} et {rec.signB} sont-ils compatibles en amour&nbsp;?</h2>
             <p className="text-lg leading-relaxed text-gray-800">{renderWithEntities(rec.answerCapsule)}</p>
+            <div className="mt-5">
+              <AskAI title={title} url={url} context={rec.answerCapsule} />
+            </div>
           </section>
         )}
+
+        {/* Funnel to each sign's love-profile page (astro cluster) */}
+        <p className="text-gray-600 mb-8">
+          Explorez aussi les profils amoureux :{' '}
+          {LIVE_SIGN_SLUG[rec.signA] ? (
+            <Link href={`/astrologie-amour/${LIVE_SIGN_SLUG[rec.signA]}`} className="text-indigo-600 hover:text-indigo-800 underline font-medium">{rec.signA} en amour</Link>
+          ) : (
+            <>{rec.signA} en amour</>
+          )}{' '}et{' '}
+          {LIVE_SIGN_SLUG[rec.signB] ? (
+            <Link href={`/astrologie-amour/${LIVE_SIGN_SLUG[rec.signB]}`} className="text-indigo-600 hover:text-indigo-800 underline font-medium">{rec.signB} en amour</Link>
+          ) : (
+            <>{rec.signB} en amour</>
+          )}.
+        </p>
 
         <article className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-indigo-500">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Comment s&apos;entend le couple {rec.signA}-{rec.signB} au quotidien&nbsp;?</h2>

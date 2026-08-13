@@ -92,13 +92,13 @@ export interface AlternativeTrackingRequest extends AlternativeTrackingPayload {
  * consent-gated Sensor queue the angle landers use (app/layout.tsx's
  * phone-click-tracker, and CookieConsent.tsx's loadMgidSensor). CPA68 is
  * excluded from that sitewide listener so it never touches Télémaque's
- * shared KV/attribution/Discord — this pushes the identical goal from the
+ * shared KV/attribution/Discord, this pushes the identical goal from the
  * dedicated CPA68 tracker instead, so MGID still sees the call-intent
  * conversion.
  *
  * window._mgq is a plain queue: pushing before mgsensor.js loads is safe,
  * it drains on load, which only happens after marketing consent is granted.
- * If consent is refused the push just sits unread — no separate gate to
+ * If consent is refused the push just sits unread, no separate gate to
  * maintain here.
  */
 export interface MgidSensorWindow {
@@ -127,14 +127,14 @@ export function buildAlternativeDiscordNotification(
   if (event.event !== 'call_button_click') return null;
 
   const offer = getAlternativeOfferConfig();
-  const source = event.source || event.utm_source || '—';
+  const source = event.source || event.utm_source || ', ';
   return {
     category: 'lead',
-    title: '📞 CPA68 — appel lancé',
-    description: `Numéro composé : **${offer.displayPhone}**\nClic téléphone valorisé **5 € proxy** — aucun CPA de 68 € n’est encore validé.`,
+    title: '📞 CPA68, appel lancé',
+    description: `Numéro composé : **${offer.displayPhone}**\nClic téléphone valorisé **5 € proxy**, aucun CPA de 68 € n’est encore validé.`,
     fields: [
       { name: 'Provider', value: event.provider_id, inline: true },
-      { name: 'Placement', value: event.cta_placement || '—', inline: true },
+      { name: 'Placement', value: event.cta_placement || ', ', inline: true },
       { name: 'Source', value: source, inline: true },
       ...(event.creative_id
         ? [{ name: 'Créa', value: event.creative_id, inline: true }]

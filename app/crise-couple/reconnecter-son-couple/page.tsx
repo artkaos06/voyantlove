@@ -1,94 +1,69 @@
-import type { Metadata } from 'next';
 import Link from 'next/link';
-import { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getAuthorSchema } from '@/lib/schema';
-import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
-import VoyantFinalCTA from '@/components/VoyantFinalCTA';
+import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
-export const metadata: Metadata = {
+const config: ContentPageConfig = {
   title: 'Reconnecter son Couple : Retrouver la Complicité',
   description: 'Comment reconnecter votre couple et raviver la flamme. Voyance et tarot pour retrouver la complicité perdue et reconstruire une relation épanouissante.',
+  url: 'https://www.voyantlove.fr/crise-couple/reconnecter-son-couple/',
   keywords: ['reconnecter couple', 'retrouver complicité', 'raviver flamme', 'couple en crise', 'voyance couple'],
-  alternates: { canonical: 'https://www.voyantlove.fr/crise-couple/reconnecter-son-couple/' },
-};
-
-export default function ReconnecterSonCouplePage() {
-  const articleSchema = getArticleSchema({
-    title: 'Reconnecter son Couple : Retrouver la Complicité',
-    description: 'Comment reconnecter votre couple et raviver la flamme. Voyance et tarot pour retrouver la complicité perdue et reconstruire une relation épanouissante.',
-    url: 'https://www.voyantlove.fr/crise-couple/reconnecter-son-couple/',
-    datePublished: '2026-03-22',
-    dateModified: '2026-03-22',
-    keywords: ['reconnecter couple', 'retrouver complicité', 'raviver flamme', 'couple en crise', 'voyance couple'],
-  });
-
-  const faqSchema = getFAQSchema([
-    {
-      question: 'Comment savoir si mon couple peut encore être sauvé ?',
-      answer: 'Le tarot relationnel analyse l\'état énergétique de votre couple à travers plusieurs positions clés : les sentiments résiduels de chaque partenaire, la volonté mutuelle de reconstruire, les obstacles actuels et le potentiel de renouveau. Si les deux partenaires conservent un noyau d\'amour et une envie sincère de se retrouver, le couple peut être sauvé. La voyance identifie également les périodes astrologiques favorables à la réconciliation et les gestes concrets à poser pour raviver la flamme. L\'essentiel est d\'agir avant que l\'indifférence ne remplace définitivement la douleur.',
-    },
-    {
-      question: 'Combien de temps faut-il pour reconnecter un couple éloigné ?',
-      answer: 'La reconnexion d\'un couple dépend de la durée et de la profondeur de l\'éloignement. Pour un couple éloigné depuis quelques mois, comptez 4 à 8 semaines de travail conscient. Pour un éloignement de plusieurs années, le processus peut prendre 3 à 6 mois. La voyance affine ce timing en analysant les transits planétaires et l\'énergie relationnelle actuelle. Le tarot révèle aussi les étapes clés du processus et les moments charnières où votre couple franchira des paliers de reconnexion significatifs.',
-    },
-    {
-      question: 'La voyance peut-elle aider à résoudre les problèmes de communication ?',
-      answer: 'La voyance excelle dans l\'identification des blocages de communication invisibles. Le tarot révèle les non-dits, les malentendus accumulés et les blessures silencieuses qui parasitent vos échanges. Un voyant perçoit les dynamiques inconscientes entre les partenaires : qui n\'ose pas parler, qui n\'écoute pas vraiment, quelles peurs alimentent le silence. Cette compréhension profonde transforme radicalement la qualité du dialogue. Les couples qui consultent témoignent souvent d\'un déclic majeur dans leur communication après une seule séance.',
-    },
-    {
-      question: 'Quels rituels de voyance renforcent la connexion de couple ?',
-      answer: 'Plusieurs pratiques de voyance renforcent le lien de couple. Le tirage de couple mensuel permet de faire le point sur l\'énergie relationnelle et d\'anticiper les défis à venir. La méditation guidée à deux, basée sur la visualisation de votre connexion énergétique, ravive l\'intimité émotionnelle. L\'analyse de synastrie révèle vos forces naturelles de couple et les domaines à cultiver. Le rituel de la nouvelle lune en couple, où chacun exprime ses intentions pour la relation, crée un espace sacré de reconnexion régulière.',
-    },
-  ]);
-
-  const breadcrumbSchema = getBreadcrumbSchema([
+  datePublished: '2026-03-22',
+  dateModified: '2026-03-22',
+  breadcrumb: [
     { name: 'Accueil', url: 'https://www.voyantlove.fr' },
     { name: 'Crise de Couple', url: 'https://www.voyantlove.fr/crise-couple/' },
     { name: 'Reconnecter son Couple', url: 'https://www.voyantlove.fr/crise-couple/reconnecter-son-couple/' },
-  ]);
+  ],
+  header: {
+    emoji: '🔥',
+    h1: 'Reconnecter son Couple : Retrouver la Complicité',
+    subtitle: 'Guidance voyance et tarot pour raviver la flamme et reconstruire votre lien',
+    gradient: 'from-amber-500 via-amber-600 to-orange-600',
+    backLink: { href: '/crise-couple', label: 'Crise de Couple' },
+    anchors: [
+      { href: '#consultation', label: 'Consultation Couple', primary: true },
+    ],
+  },
+  accentText: 'text-amber-600',
+  stats: [
+    { icon: '⭐', value: '4.9/5', label: '276 avis' },
+    { icon: '💑', value: '87%', label: 'Couples reconnectés' },
+    { icon: '⏰', value: '4-8 sem', label: 'Résultats visibles' },
+    { icon: '🔮', value: '15 ans', label: 'Expérience' },
+  ],
+  eeat: { colorScheme: 'orange', method: 'Tarot relationnel et guidance de couple' },
+  cta: { topic: 'crise-couple', slug: 'reconnecter-son-couple' },
+  faq: [
+    {
+      q: 'Comment savoir si mon couple peut encore être sauvé ?',
+      a: 'Le tarot relationnel analyse l\'état énergétique de votre couple à travers plusieurs positions clés : les sentiments résiduels de chaque partenaire, la volonté mutuelle de reconstruire, les obstacles actuels et le potentiel de renouveau. Si les deux partenaires conservent un noyau d\'amour et une envie sincère de se retrouver, le couple peut être sauvé. La voyance identifie également les périodes astrologiques favorables à la réconciliation et les gestes concrets à poser pour raviver la flamme. L\'essentiel est d\'agir avant que l\'indifférence ne remplace définitivement la douleur.',
+    },
+    {
+      q: 'Combien de temps faut-il pour reconnecter un couple éloigné ?',
+      a: 'La reconnexion d\'un couple dépend de la durée et de la profondeur de l\'éloignement. Pour un couple éloigné depuis quelques mois, comptez 4 à 8 semaines de travail conscient. Pour un éloignement de plusieurs années, le processus peut prendre 3 à 6 mois. La voyance affine ce timing en analysant les transits planétaires et l\'énergie relationnelle actuelle. Le tarot révèle aussi les étapes clés du processus et les moments charnières où votre couple franchira des paliers de reconnexion significatifs.',
+    },
+    {
+      q: 'La voyance peut-elle aider à résoudre les problèmes de communication ?',
+      a: 'La voyance excelle dans l\'identification des blocages de communication invisibles. Le tarot révèle les non-dits, les malentendus accumulés et les blessures silencieuses qui parasitent vos échanges. Un voyant perçoit les dynamiques inconscientes entre les partenaires : qui n\'ose pas parler, qui n\'écoute pas vraiment, quelles peurs alimentent le silence. Cette compréhension profonde transforme radicalement la qualité du dialogue. Les couples qui consultent témoignent souvent d\'un déclic majeur dans leur communication après une seule séance.',
+    },
+    {
+      q: 'Quels rituels de voyance renforcent la connexion de couple ?',
+      a: 'Plusieurs pratiques de voyance renforcent le lien de couple. Le tirage de couple mensuel permet de faire le point sur l\'énergie relationnelle et d\'anticiper les défis à venir. La méditation guidée à deux, basée sur la visualisation de votre connexion énergétique, ravive l\'intimité émotionnelle. L\'analyse de synastrie révèle vos forces naturelles de couple et les domaines à cultiver. Le rituel de la nouvelle lune en couple, où chacun exprime ses intentions pour la relation, crée un espace sacré de reconnexion régulière.',
+    },
+  ],
+  related: [
+    { href: '/crise-couple/sauver-son-couple', label: 'Sauver son Couple' },
+    { href: '/crise-couple/problemes-communication-couple', label: 'Problèmes de Communication dans le Couple' },
+    { href: '/crise-couple/pardonner-en-amour', label: 'Pardonner en Amour' },
+  ],
+};
 
-  const authorSchema = getAuthorSchema();
+export const metadata = contentMeta(config);
 
+export default function ReconnecterSonCouplePage() {
   return (
-    <main className="min-h-screen bg-gray-50">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(authorSchema) }}
-      />
-      <header className="bg-gradient-to-r from-amber-500 via-amber-600 to-orange-600 text-white py-16 px-4">
-        <div className="max-w-4xl mx-auto">
-          <Link href="/crise-couple" className="text-white/80 hover:text-white mb-4 inline-block">&larr; Crise de Couple</Link>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">🔥 Reconnecter son Couple : Retrouver la Complicité</h1>
-          <p className="text-xl opacity-95 mb-6">Guidance voyance et tarot pour raviver la flamme et reconstruire votre lien</p>
-          <a href="#consultation" className="bg-white text-amber-600 px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition inline-block">Consultation Couple</a>
-        </div>
-      </header>
-
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <div className="bg-white rounded-xl shadow-md p-6 mb-8 grid grid-cols-4 gap-4 text-center">
-          <div><div className="text-3xl mb-1">⭐</div><div className="text-2xl font-bold text-amber-600">4.9/5</div><div className="text-sm text-gray-600">276 avis</div></div>
-          <div><div className="text-3xl mb-1">💑</div><div className="text-2xl font-bold text-amber-600">87%</div><div className="text-sm text-gray-600">Couples reconnectés</div></div>
-          <div><div className="text-3xl mb-1">⏰</div><div className="text-2xl font-bold text-amber-600">4-8 sem</div><div className="text-sm text-gray-600">Résultats visibles</div></div>
-          <div><div className="text-3xl mb-1">🔮</div><div className="text-2xl font-bold text-amber-600">15 ans</div><div className="text-sm text-gray-600">Expérience</div></div>
-        </div>
-
-        <EEATSignal
-          colorScheme="orange"
-          method="Tarot relationnel et guidance de couple"
-        />
+    <ContentPage config={config}>
 
         <article className="bg-amber-50 border-l-4 border-amber-500 rounded-xl shadow-md p-8 mb-8">
           <p className="text-lg leading-relaxed mb-4">
@@ -218,40 +193,6 @@ export default function ReconnecterSonCouplePage() {
           </p>
         </section>
 
-        <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">❓ Questions Fréquentes</h2>
-          <p className="text-lg font-semibold text-gray-800 mb-4">Les réponses aux questions les plus posées sur la reconnexion de couple, la voyance relationnelle et les chances de retrouver la complicité perdue.</p>
-          <div className="space-y-6">
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Comment savoir si mon couple peut encore être sauvé ?</h3>
-              <p className="text-gray-700 leading-relaxed">Le <strong>tarot relationnel</strong> analyse l&apos;état énergétique de votre <strong>couple</strong> à travers plusieurs positions clés : les <strong>sentiments résiduels</strong> de chaque partenaire, la volonté mutuelle de reconstruire, les obstacles actuels et le potentiel de renouveau. Si les deux partenaires conservent un noyau d&apos;<strong>amour</strong> et une envie sincère de se retrouver, le couple peut être sauvé. La <strong>voyance</strong> identifie également les périodes favorables à la réconciliation.</p>
-            </div>
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Combien de temps faut-il pour reconnecter un couple éloigné ?</h3>
-              <p className="text-gray-700 leading-relaxed">La <strong>reconnexion</strong> d&apos;un couple dépend de la durée et de la profondeur de l&apos;éloignement. Pour un couple éloigné depuis quelques mois, comptez 4 à 8 semaines de travail conscient. Pour un éloignement de plusieurs années, le processus peut prendre 3 à 6 mois. La <strong>voyance</strong> affine ce timing en analysant les <strong>transits planétaires</strong> et l&apos;énergie relationnelle actuelle. Le <strong>tarot</strong> révèle aussi les étapes clés du processus.</p>
-            </div>
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">La voyance peut-elle aider à résoudre les problèmes de communication ?</h3>
-              <p className="text-gray-700 leading-relaxed">La <strong>voyance</strong> excelle dans l&apos;identification des <strong>blocages de communication</strong> invisibles. Le <strong>tarot</strong> révèle les non-dits, les malentendus accumulés et les blessures silencieuses qui parasitent vos échanges. Un <strong>voyant</strong> perçoit les dynamiques inconscientes entre les partenaires et propose des clés concrètes pour transformer la qualité du dialogue. Consultez aussi notre guide sur les <Link href="/crise-couple/problemes-communication-couple" className="text-amber-600 hover:text-amber-800 underline font-medium">problèmes de communication</Link>.</p>
-            </div>
-            <div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Quels rituels de voyance renforcent la connexion de couple ?</h3>
-              <p className="text-gray-700 leading-relaxed">Plusieurs pratiques renforcent le lien. Le <strong>tirage de couple mensuel</strong> fait le point sur l&apos;énergie relationnelle. La méditation guidée à deux ravive l&apos;<strong>intimité émotionnelle</strong>. L&apos;analyse de <strong>synastrie</strong> révèle vos forces naturelles de couple. Le rituel de la <strong>nouvelle lune</strong> en couple, où chacun exprime ses intentions, crée un espace sacré de <strong>reconnexion</strong> régulière qui nourrit le lien sur le long terme.</p>
-            </div>
-          </div>
-        </section>
-
-        <div className="bg-gray-100 rounded-xl p-6 mb-8">
-          <h3 className="font-bold text-lg mb-4 text-gray-900">📚 Articles Connexes</h3>
-          <div className="space-y-2">
-            <Link href="/crise-couple/sauver-son-couple" className="block text-amber-600 hover:text-amber-800 font-medium">&rarr; Sauver son Couple</Link>
-            <Link href="/crise-couple/problemes-communication-couple" className="block text-amber-600 hover:text-amber-800 font-medium">&rarr; Problèmes de Communication dans le Couple</Link>
-            <Link href="/crise-couple/pardonner-en-amour" className="block text-amber-600 hover:text-amber-800 font-medium">&rarr; Pardonner en Amour</Link>
-          </div>
-        </div>
-
-        <VoyantFinalCTA topic="crise-couple" source="reconnecter-son-couple-final" />
-      </div>
-    </main>
+    </ContentPage>
   );
 }

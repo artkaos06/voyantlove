@@ -6,10 +6,10 @@ type SubmitState =
   | { kind: 'idle' }
   | { kind: 'submitting' }
   | { kind: 'success'; message: string }
-  /** Recoverable error — show inline message, user can edit and retry. */
+  /** Recoverable error, show inline message, user can edit and retry. */
   | { kind: 'error'; message: string }
   /**
-   * Provider/API unavailable — show a graceful fallback panel with a
+   * Provider/API unavailable, show a graceful fallback panel with a
    * prominent tappable tel: link, since the visitor's intent is clear
    * (they wanted a callback) and the call path still works regardless
    * of Goracash API status. Treats failure as a soft redirect, not an
@@ -23,9 +23,9 @@ function successMessage(status: string): string {
     case 'ok':
       return 'Demande enregistrée. Nous vous rappelons dans quelques instants.';
     case 'already_exist':
-      return 'Votre demande est déjà enregistrée — nous vous rappelons sous peu.';
+      return 'Votre demande est déjà enregistrée, nous vous rappelons sous peu.';
     case 'outside_the_schedule':
-      return 'Demande enregistrée. Notre service rouvre à 9h — nous vous rappelons dès la réouverture.';
+      return 'Demande enregistrée. Notre service rouvre à 9h, nous vous rappelons dès la réouverture.';
     case 'we_try_later':
       return 'Demande enregistrée. Nous essayons à nouveau dans quelques instants.';
     case 'refused_by_provider':
@@ -61,7 +61,7 @@ export default function CallbackForm({ source = 'lp-voyant-direct' }: CallbackFo
         if (stored) setGclid(stored);
       }
     } catch {
-      // sessionStorage unavailable (SSR / privacy mode) — fine, just skip
+      // sessionStorage unavailable (SSR / privacy mode), fine, just skip
     }
   }, []);
 
@@ -87,14 +87,14 @@ export default function CallbackForm({ source = 'lp-voyant-direct' }: CallbackFo
 
       if (!res.ok || !data.ok) {
         if (data.error === 'invalid_phone') {
-          // Recoverable — user can correct the number and try again
+          // Recoverable, user can correct the number and try again
           setState({
             kind: 'error',
             message:
               'Numéro invalide. Vérifiez votre saisie (numéros français non surtaxés uniquement).',
           });
         } else if (data.error === 'provider_error') {
-          // Provider/API down — pivot to the tappable phone fallback panel
+          // Provider/API down, pivot to the tappable phone fallback panel
           setState({ kind: 'provider_down' });
         } else {
           setState({
@@ -159,7 +159,7 @@ export default function CallbackForm({ source = 'lp-voyant-direct' }: CallbackFo
               Le rappel automatique est momentanément indisponible
             </strong>
             <br />
-            Nos voyants sont toujours disponibles — appelez gratuitement
+            Nos voyants sont toujours disponibles, appelez gratuitement
             maintenant et profitez de vos 10 minutes offertes.
           </p>
           <a
@@ -243,7 +243,7 @@ export default function CallbackForm({ source = 'lp-voyant-direct' }: CallbackFo
           )}
 
           <p className="text-[11px] text-gray-500 leading-snug">
-            Service 7j/7 de 9h à 21h — hors horaires, nous vous rappelons dès la
+            Service 7j/7 de 9h à 21h, hors horaires, nous vous rappelons dès la
             réouverture. Numéros français non surtaxés uniquement.
           </p>
         </form>

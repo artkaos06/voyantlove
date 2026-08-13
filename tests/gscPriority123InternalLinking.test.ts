@@ -44,10 +44,14 @@ test('priority 1: voyance-amour-immediate opening answer covers immediacy, direc
   assert.match(page, /disponibles 24h\/24/, 'opening answer must scope the 24\/7 claim to the automated draws only (not the live consultations)');
   assert.match(page, /Lorsqu&?apos;un praticien est disponible/, 'live access must remain explicitly availability-dependent');
 
+  // After the ContentPage refactor the canonical is single-sourced from
+  // config.url (contentMeta wraps it into alternates.canonical). Assert the
+  // config URL rather than the old inline `alternates` literal — the rendered
+  // canonical is unchanged.
   assert.match(
     page,
-    /alternates: \{\s*canonical: 'https:\/\/www\.voyantlove\.fr\/voyance-gratuite-amour\/voyance-amour-immediate\/',\s*\}/,
-    'canonical must remain exactly the existing immediate-page URL'
+    /url: 'https:\/\/www\.voyantlove\.fr\/voyance-gratuite-amour\/voyance-amour-immediate\/',/,
+    'canonical (via config.url) must remain exactly the existing immediate-page URL'
   );
 });
 

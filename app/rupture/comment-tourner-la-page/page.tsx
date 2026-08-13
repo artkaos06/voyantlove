@@ -1,95 +1,72 @@
-import type { Metadata } from 'next';
 import Link from 'next/link';
-import { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getAuthorSchema } from '@/lib/schema';
-import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
-import VoyantFinalCTA from '@/components/VoyantFinalCTA';
+import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
-export const metadata: Metadata = {
+const config: ContentPageConfig = {
   title: 'Comment Tourner la Page après une Rupture | Voyance',
   description: 'Comment tourner la page après une rupture amoureuse ? La voyance et le tarot vous guident pour lâcher prise, avancer et retrouver la paix intérieure.',
+  url: 'https://www.voyantlove.fr/rupture/comment-tourner-la-page/',
   keywords: ['tourner la page', 'avancer après rupture', 'oublier et avancer', 'lâcher prise amour', 'après rupture voyance'],
-  alternates: { canonical: 'https://www.voyantlove.fr/rupture/comment-tourner-la-page/' },
-};
-
-export default function CommentTournerLaPagePage() {
-  const articleSchema = getArticleSchema({
-    title: 'Comment Tourner la Page après une Rupture',
-    description: 'Comment tourner la page après une rupture amoureuse ? La voyance et le tarot vous guident pour lâcher prise, avancer et retrouver la paix intérieure.',
-    url: 'https://www.voyantlove.fr/rupture/comment-tourner-la-page/',
-    datePublished: '2026-03-22',
-    dateModified: '2026-03-22',
-    keywords: ['tourner la page', 'avancer après rupture', 'oublier et avancer', 'lâcher prise amour', 'après rupture voyance'],
-  });
-
-  const faqSchema = getFAQSchema([
-    {
-      question: 'Combien de temps faut-il pour tourner la page après une rupture ?',
-      answer: 'Le temps de guérison varie selon la durée de la relation, la profondeur de l\'attachement et les circonstances de la rupture. En moyenne, la voyance observe un cycle de 6 à 18 mois pour retrouver un équilibre émotionnel stable. Le tarot montre que la guérison n\'est jamais linéaire : des phases de progrès alternent avec des rechutes temporaires. Les consultations régulières permettent de suivre votre évolution et d\'anticiper les moments difficiles. L\'astrologie apporte aussi un éclairage précieux, car certains transits planétaires accélèrent le processus de détachement et de renouveau intérieur.',
-    },
-    {
-      question: 'Le tarot peut-il m\'aider à savoir quand je serai prêt(e) pour une nouvelle relation ?',
-      answer: 'Le tarot est un outil remarquable pour évaluer votre état de préparation émotionnelle à un nouvel amour. Des cartes comme l\'As de Coupes (nouveau départ affectif) ou l\'Impératrice (épanouissement féminin) indiquent que votre cœur est prêt à s\'ouvrir. À l\'inverse, le Quatre de Coupes (repli sur soi) ou le Cinq de Coupes (deuil inachevé) signalent qu\'un travail intérieur reste nécessaire. La voyance affine ce diagnostic en captant votre énergie globale et en identifiant les blocages inconscients qui pourraient saboter une future relation.',
-    },
-    {
-      question: 'Comment arrêter de penser à son ex selon la voyance ?',
-      answer: 'Les pensées obsessionnelles envers un ex sont un signe d\'attachement énergétique encore actif. La voyance identifie ces liens invisibles et propose des rituels de détachement adaptés : méditation de coupure des liens, visualisation de libération, travail sur les chakras du cœur et du plexus solaire. Le tarot révèle pourquoi votre esprit reste accroché : peur de la solitude, idéalisation du passé, ou leçon karmique non intégrée. En traitant la cause profonde plutôt que le symptôme, les pensées intrusives diminuent naturellement. Un voyant vous guide dans ce processus de libération avec bienveillance.',
-    },
-    {
-      question: 'Quels signes astrologiques ont le plus de mal à tourner la page ?',
-      answer: 'Les signes d\'eau — Cancer, Scorpion et Poissons — sont naturellement les plus attachés émotionnellement et ont le processus de deuil le plus long. Le Cancer s\'accroche aux souvenirs et au foyer partagé. Le Scorpion vit la rupture comme une mort symbolique et peine à lâcher le contrôle. Les Poissons idéalisent la relation perdue et fuient dans la nostalgie. Les signes fixes comme le Taureau et le Lion résistent aussi au changement par habitude et fierté. La voyance adapte ses conseils au profil astrologique de chaque consultant pour un accompagnement personnalisé et efficace.',
-    },
-  ]);
-
-  const breadcrumbSchema = getBreadcrumbSchema([
+  datePublished: '2026-03-22',
+  dateModified: '2026-03-22',
+  breadcrumb: [
     { name: 'Accueil', url: 'https://www.voyantlove.fr' },
     { name: 'Rupture', url: 'https://www.voyantlove.fr/rupture/' },
     { name: 'Comment Tourner la Page', url: 'https://www.voyantlove.fr/rupture/comment-tourner-la-page/' },
-  ]);
+  ],
+  header: {
+    emoji: '🖤',
+    h1: 'Comment Tourner la Page après une Rupture',
+    subtitle: 'Lâcher prise et avancer avec la guidance de la voyance',
+    gradient: 'from-gray-700 via-gray-800 to-gray-900',
+    backLink: { href: '/rupture', label: 'Rupture' },
+    anchors: [
+      { href: '#consultation', label: 'Consultation Guidance', primary: true },
+    ],
+  },
+  accentText: 'text-gray-700',
+  stats: [
+    { icon: '⭐', value: '4.8/5', label: '328 avis' },
+    { icon: '🕊️', value: '6-18', label: 'Mois de guérison' },
+    { icon: '💫', value: '89%', label: 'Retrouvent le sourire' },
+    { icon: '🔮', value: '15 ans', label: 'Expérience' },
+  ],
+  eeat: { colorScheme: 'rose', method: 'Guidance voyance pour tourner la page et avancer après une rupture' },
+  cta: { topic: 'rupture', slug: 'comment-tourner-la-page' },
+  faq: [
+    {
+      q: 'Combien de temps faut-il pour tourner la page après une rupture ?',
+      a: 'Le temps de guérison varie selon la durée de la relation, la profondeur de l\'attachement et les circonstances de la rupture. En moyenne, la voyance observe un cycle de 6 à 18 mois pour retrouver un équilibre émotionnel stable. Le tarot montre que la guérison n\'est jamais linéaire : des phases de progrès alternent avec des rechutes temporaires. Les consultations régulières permettent de suivre votre évolution et d\'anticiper les moments difficiles. L\'astrologie apporte aussi un éclairage précieux, car certains transits planétaires accélèrent le processus de détachement et de renouveau intérieur.',
+    },
+    {
+      q: 'Le tarot peut-il m\'aider à savoir quand je serai prêt(e) pour une nouvelle relation ?',
+      a: 'Le tarot est un outil remarquable pour évaluer votre état de préparation émotionnelle à un nouvel amour. Des cartes comme l\'As de Coupes (nouveau départ affectif) ou l\'Impératrice (épanouissement féminin) indiquent que votre cœur est prêt à s\'ouvrir. À l\'inverse, le Quatre de Coupes (repli sur soi) ou le Cinq de Coupes (deuil inachevé) signalent qu\'un travail intérieur reste nécessaire. La voyance affine ce diagnostic en captant votre énergie globale et en identifiant les blocages inconscients qui pourraient saboter une future relation.',
+    },
+    {
+      q: 'Comment arrêter de penser à son ex selon la voyance ?',
+      a: 'Les pensées obsessionnelles envers un ex sont un signe d\'attachement énergétique encore actif. La voyance identifie ces liens invisibles et propose des rituels de détachement adaptés : méditation de coupure des liens, visualisation de libération, travail sur les chakras du cœur et du plexus solaire. Le tarot révèle pourquoi votre esprit reste accroché : peur de la solitude, idéalisation du passé, ou leçon karmique non intégrée. En traitant la cause profonde plutôt que le symptôme, les pensées intrusives diminuent naturellement. Un voyant vous guide dans ce processus de libération avec bienveillance.',
+    },
+    {
+      q: 'Quels signes astrologiques ont le plus de mal à tourner la page ?',
+      a: 'Les signes d\'eau, Cancer, Scorpion et Poissons, sont naturellement les plus attachés émotionnellement et ont le processus de deuil le plus long. Le Cancer s\'accroche aux souvenirs et au foyer partagé. Le Scorpion vit la rupture comme une mort symbolique et peine à lâcher le contrôle. Les Poissons idéalisent la relation perdue et fuient dans la nostalgie. Les signes fixes comme le Taureau et le Lion résistent aussi au changement par habitude et fierté. La voyance adapte ses conseils au profil astrologique de chaque consultant pour un accompagnement personnalisé et efficace.',
+    },
+  ],
+  related: [
+    { href: '/rupture/rupture-amoureuse', label: 'Surmonter une Rupture Amoureuse' },
+    { href: '/rupture/oublier-son-ex', label: 'Comment Oublier son Ex' },
+    { href: '/rupture/surmonter-trahison', label: 'Surmonter une Trahison Amoureuse' },
+    { href: '/rupture/chagrin-damour', label: 'Guérir d\'un Chagrin d\'Amour' },
+    { href: '/nouvelle-rencontre/quand-rencontre-amour', label: 'Quand Vais-je Rencontrer l\'Amour ?' },
+    { href: '/sentiments/maime-t-il-elle', label: 'M\'aime-t-il / M\'aime-t-elle Encore ?' },
+  ],
+};
 
-  const authorSchema = getAuthorSchema();
+export const metadata = contentMeta(config);
 
+export default function CommentTournerLaPagePage() {
   return (
-    <main className="min-h-screen bg-gray-50">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(authorSchema) }}
-      />
-      <header className="bg-gradient-to-r from-gray-700 via-gray-800 to-gray-900 text-white py-16 px-4">
-        <div className="max-w-4xl mx-auto">
-          <Link href="/rupture" className="text-white/80 hover:text-white mb-4 inline-block">← Rupture</Link>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">🖤 Comment Tourner la Page après une Rupture</h1>
-          <p className="text-xl opacity-95 mb-6">Lâcher prise et avancer avec la guidance de la voyance</p>
-          <a href="#consultation" className="bg-white text-gray-800 px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition inline-block">Consultation Guidance</a>
-        </div>
-      </header>
-
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <div className="bg-white rounded-xl shadow-md p-6 mb-8 grid grid-cols-4 gap-4 text-center">
-          <div><div className="text-3xl mb-1">⭐</div><div className="text-2xl font-bold text-gray-700">4.8/5</div><div className="text-sm text-gray-600">328 avis</div></div>
-          <div><div className="text-3xl mb-1">🕊️</div><div className="text-2xl font-bold text-gray-700">6-18</div><div className="text-sm text-gray-600">Mois de guérison</div></div>
-          <div><div className="text-3xl mb-1">💫</div><div className="text-2xl font-bold text-gray-700">89%</div><div className="text-sm text-gray-600">Retrouvent le sourire</div></div>
-          <div><div className="text-3xl mb-1">🔮</div><div className="text-2xl font-bold text-gray-700">15 ans</div><div className="text-sm text-gray-600">Expérience</div></div>
-        </div>
-
-        <EEATSignal
-          colorScheme="rose"
-          method="Guidance voyance pour tourner la page et avancer après une rupture"
-        />
-
+    <ContentPage config={config}>
         <article className="bg-gray-50 border-l-4 border-gray-500 rounded-xl shadow-md p-8 mb-8">
           <p className="text-lg leading-relaxed mb-4">
             <strong>Tourner la page</strong> après une <strong>rupture amoureuse</strong> est l'un des défis émotionnels les plus intenses d'une vie. Ce n'est pas seulement quitter quelqu'un : c'est abandonner un futur imaginé, des habitudes partagées, une part de votre identité construite à deux. La <strong>voyance</strong> et le <strong>tarot</strong> accompagnent cette transition en éclairant le chemin qui mène de la douleur à la renaissance, un pas à la fois.
@@ -113,7 +90,7 @@ export default function CommentTournerLaPagePage() {
           <div className="space-y-4">
             <div className="bg-gray-50 border-l-4 border-gray-500 p-6 rounded-lg">
               <h3 className="font-bold text-lg mb-2 text-gray-700">Pourquoi Vous Restez Accroché(e)</h3>
-              <p className="text-gray-700">Le <strong>tarot</strong> révèle les raisons profondes de votre incapacité à <strong>tourner la page</strong>. Ce n'est pas toujours de l'amour : parfois, c'est la peur de la <strong>solitude</strong>, l'attachement au confort de l'habitude, une blessure d'abandon réactivée, ou l'ego blessé qui refuse d'accepter l'échec. Le Cinq de Coupes est la carte emblématique de cette phase : trois coupes renversées captent toute votre attention tandis que deux coupes pleines attendent derrière vous, invisibles. La <strong>clairvoyance</strong> vous aide à voir ces deux coupes pleines — les opportunités et les joies qui vous attendent déjà, si seulement vous consentiez à vous retourner.</p>
+              <p className="text-gray-700">Le <strong>tarot</strong> révèle les raisons profondes de votre incapacité à <strong>tourner la page</strong>. Ce n'est pas toujours de l'amour : parfois, c'est la peur de la <strong>solitude</strong>, l'attachement au confort de l'habitude, une blessure d'abandon réactivée, ou l'ego blessé qui refuse d'accepter l'échec. Le Cinq de Coupes est la carte emblématique de cette phase : trois coupes renversées captent toute votre attention tandis que deux coupes pleines attendent derrière vous, invisibles. La <strong>clairvoyance</strong> vous aide à voir ces deux coupes pleines, les opportunités et les joies qui vous attendent déjà, si seulement vous consentiez à vous retourner.</p>
             </div>
             <div className="bg-gray-100 border-l-4 border-gray-600 p-6 rounded-lg">
               <h3 className="font-bold text-lg mb-2 text-gray-800">Les Liens Énergétiques à Couper</h3>
@@ -134,7 +111,7 @@ export default function CommentTournerLaPagePage() {
               <div className="text-3xl font-bold text-gray-600">1</div>
               <div>
                 <h3 className="font-bold text-lg mb-2">Accepter la Réalité Telle qu'Elle Est</h3>
-                <p className="text-gray-700">La première clé est la plus difficile : accepter que c'est fini. Pas intellectuellement — cela, votre esprit le sait déjà — mais émotionnellement, au plus profond de votre être. Le <strong>tarot</strong> vous aide à lâcher les « et si » qui vous torturent. Et si j'avais dit ceci ? Et si j'avais fait cela ? Ces scénarios alternatifs sont des prisons mentales. La <strong>voyance</strong> révèle que la <strong>rupture</strong> avait ses raisons profondes, souvent karmiques, et que l'accepter vous libère d'un poids immense. Le Dix d'Épées, aussi brutal soit-il, marque toujours la fin d'un cycle et l'aube d'un nouveau départ.</p>
+                <p className="text-gray-700">La première clé est la plus difficile : accepter que c'est fini. Pas intellectuellement, cela, votre esprit le sait déjà, mais émotionnellement, au plus profond de votre être. Le <strong>tarot</strong> vous aide à lâcher les « et si » qui vous torturent. Et si j'avais dit ceci ? Et si j'avais fait cela ? Ces scénarios alternatifs sont des prisons mentales. La <strong>voyance</strong> révèle que la <strong>rupture</strong> avait ses raisons profondes, souvent karmiques, et que l'accepter vous libère d'un poids immense. Le Dix d'Épées, aussi brutal soit-il, marque toujours la fin d'un cycle et l'aube d'un nouveau départ.</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
@@ -191,44 +168,6 @@ export default function CommentTournerLaPagePage() {
             </div>
           </div>
         </section>
-
-        <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">❓ Questions Fréquentes</h2>
-          <p className="text-lg font-semibold text-gray-800 mb-4">Retrouvez les réponses aux questions les plus posées sur comment tourner la page : durée de guérison, préparation à un nouvel amour, pensées obsessionnelles et profil astrologique.</p>
-          <div className="space-y-6">
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Combien de temps faut-il pour tourner la page après une rupture ?</h3>
-              <p className="text-gray-700 leading-relaxed">Le temps de <strong>guérison</strong> varie selon la durée de la <strong>relation</strong>, la profondeur de l'attachement et les circonstances de la <strong>rupture</strong>. En moyenne, la <strong>voyance</strong> observe un cycle de 6 à 18 mois pour retrouver un équilibre émotionnel stable. Le <strong>tarot</strong> montre que la guérison n'est jamais linéaire : des phases de progrès alternent avec des rechutes temporaires. Les consultations régulières permettent de suivre votre évolution et d'anticiper les moments difficiles. L'<strong>astrologie</strong> apporte aussi un éclairage précieux, car certains <strong>transits planétaires</strong> accélèrent le processus de détachement.</p>
-            </div>
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Le tarot peut-il m'aider à savoir quand je serai prêt(e) pour une nouvelle relation ?</h3>
-              <p className="text-gray-700 leading-relaxed">Le <strong>tarot</strong> est un outil remarquable pour évaluer votre état de préparation émotionnelle à un nouvel <strong>amour</strong>. Des cartes comme l'<strong>As de Coupes</strong> (nouveau départ affectif) ou l'<strong>Impératrice</strong> (épanouissement) indiquent que votre cœur est prêt à s'ouvrir. À l'inverse, le <strong>Quatre de Coupes</strong> (repli sur soi) ou le <strong>Cinq de Coupes</strong> (deuil inachevé) signalent qu'un travail intérieur reste nécessaire. Pour explorer les perspectives d'une <Link href="/nouvelle-rencontre/quand-rencontre-amour" className="text-gray-600 hover:text-gray-800 underline font-medium">nouvelle rencontre amoureuse</Link>, la voyance éclaire le moment optimal.</p>
-            </div>
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Comment arrêter de penser à son ex selon la voyance ?</h3>
-              <p className="text-gray-700 leading-relaxed">Les pensées obsessionnelles envers un <strong>ex</strong> sont un signe d'<strong>attachement énergétique</strong> encore actif. La <strong>voyance</strong> identifie ces liens invisibles et propose des rituels de détachement adaptés : méditation de coupure des liens, visualisation de libération, travail sur les <strong>chakras</strong> du cœur et du plexus solaire. Le <strong>tarot</strong> révèle pourquoi votre esprit reste accroché : peur de la <strong>solitude</strong>, idéalisation du passé, ou leçon karmique non intégrée. En traitant la cause profonde plutôt que le symptôme, les pensées intrusives diminuent naturellement.</p>
-            </div>
-            <div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Quels signes astrologiques ont le plus de mal à tourner la page ?</h3>
-              <p className="text-gray-700 leading-relaxed">Les <strong>signes d'eau</strong> — <strong>Cancer</strong>, <strong>Scorpion</strong> et <strong>Poissons</strong> — sont naturellement les plus attachés émotionnellement et ont le processus de <strong>deuil</strong> le plus long. Le Cancer s'accroche aux souvenirs et au foyer partagé. Le Scorpion vit la <strong>rupture</strong> comme une mort symbolique. Les Poissons idéalisent la relation perdue. Les signes fixes comme le <strong>Taureau</strong> et le <strong>Lion</strong> résistent aussi au changement par habitude et fierté. La <strong>voyance</strong> adapte ses conseils au profil astrologique de chaque consultant pour un accompagnement personnalisé et efficace.</p>
-            </div>
-          </div>
-        </section>
-
-        <div className="bg-gray-100 rounded-xl p-6 mb-8">
-          <h3 className="font-bold text-lg mb-4 text-gray-900">📚 Articles Connexes</h3>
-          <div className="space-y-2">
-            <Link href="/rupture/rupture-amoureuse" className="block text-gray-600 hover:text-gray-800 font-medium">→ Surmonter une Rupture Amoureuse</Link>
-            <Link href="/rupture/oublier-son-ex" className="block text-gray-600 hover:text-gray-800 font-medium">→ Comment Oublier son Ex</Link>
-            <Link href="/rupture/surmonter-trahison" className="block text-gray-600 hover:text-gray-800 font-medium">→ Surmonter une Trahison Amoureuse</Link>
-            <Link href="/rupture/chagrin-damour" className="block text-gray-600 hover:text-gray-800 font-medium">→ Guérir d'un Chagrin d'Amour</Link>
-            <Link href="/nouvelle-rencontre/quand-rencontre-amour" className="block text-gray-600 hover:text-gray-800 font-medium">→ Quand Vais-je Rencontrer l'Amour ?</Link>
-            <Link href="/sentiments/maime-t-il-elle" className="block text-gray-600 hover:text-gray-800 font-medium">→ M'aime-t-il / M'aime-t-elle Encore ?</Link>
-          </div>
-        </div>
-
-        <VoyantFinalCTA topic="rupture" source="comment-tourner-la-page-final" />
-      </div>
-    </main>
+    </ContentPage>
   );
 }

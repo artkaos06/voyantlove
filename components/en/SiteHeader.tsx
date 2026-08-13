@@ -1,6 +1,6 @@
 // Top navigation for the EN site (lovepsychicguide.com).
 //
-// Intentionally minimal — affiliate review sites convert better with low
+// Intentionally minimal, affiliate review sites convert better with low
 // navigation distraction. The only nav links are to the services hub and a
 // few high-traffic topic pages, plus a placeholder home link.
 
