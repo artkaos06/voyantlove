@@ -1,7 +1,7 @@
-// Affiliate offer configuration + helpers — server-only.
+// Affiliate offer configuration + helpers, server-only.
 // Never import from a 'use client' module.
 //
-// Network: BargesTech (TUNE/HasOffers) — bargestech.go2cloud.org
+// Network: BargesTech (TUNE/HasOffers), bargestech.go2cloud.org
 // Offers: Keen, Kasamba
 //
 // The base tracking URL for each offer is copied verbatim from the BargesTech
@@ -10,8 +10,8 @@
 // At click time we stamp Google's attribution identifiers into TUNE sub-IDs
 // so they round-trip through TUNE and come back via the postback:
 //
-//   aff_sub2 = gclid   (standard web clicks — desktop, Android, most iOS)
-//   aff_sub3 = gbraid  (iOS users with restricted ad tracking — ATT denied)
+//   aff_sub2 = gclid   (standard web clicks, desktop, Android, most iOS)
+//   aff_sub3 = gbraid  (iOS users with restricted ad tracking, ATT denied)
 //   aff_sub4 = wbraid  (web clicks where gclid couldn't be set due to privacy)
 //
 // Exactly one of these three is set on any given click. The OCI uploader
@@ -28,7 +28,7 @@ export type OfferKey = 'keen' | 'kasamba';
 
 /**
  * Google Ads attribution identifiers. At most one is set on any given
- * click — Google chooses which based on the user's privacy state at click time.
+ * click, Google chooses which based on the user's privacy state at click time.
  */
 export interface AttributionIds {
   /** Standard Google click ID. Most common. */
@@ -130,7 +130,7 @@ export interface PostbackEvent {
 
 /**
  * Extract postback fields from a URL search params object. Tolerant of
- * missing fields — only transaction_id is strictly required.
+ * missing fields, only transaction_id is strictly required.
  *
  * We accept both short keys (txid, event, gclid, etc.) and TUNE's native
  * macro names (transaction_id, event_id, aff_sub2) so the postback URL

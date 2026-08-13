@@ -20,7 +20,7 @@ export default function ConsulterVoyantGrid() {
   // Capture Google click attribution from URL on mount, persisting to
   // sessionStorage so it survives in-session navigation (e.g. visitor lands
   // on /lp/voyant-direct?gclid=ABC, browses to /consulter, then clicks an
-  // affiliate CTA — we still know the gclid). Mirrors the pattern used by
+  // affiliate CTA, we still know the gclid). Mirrors the pattern used by
   // CallbackForm + the tel-click tracker in layout.tsx.
   useEffect(() => {
     try {
@@ -42,7 +42,7 @@ export default function ConsulterVoyantGrid() {
       });
       setAttribution(captured);
     } catch {
-      // sessionStorage unavailable (SSR / privacy mode) — fine, skip
+      // sessionStorage unavailable (SSR / privacy mode), fine, skip
     }
   }, []);
 
@@ -98,7 +98,7 @@ export default function ConsulterVoyantGrid() {
         {/* Free badge */}
         {isFree && (
           <div className="bg-gradient-to-r from-green-500 to-emerald-500 text-white text-center py-2 text-sm font-bold">
-            🎁 15 MINUTES GRATUITES — Offre Découverte
+            🎁 15 MINUTES GRATUITES, Offre Découverte
           </div>
         )}
 
@@ -149,7 +149,7 @@ export default function ConsulterVoyantGrid() {
           {isFree && (
             <div className="bg-green-50 border border-green-200 rounded-lg p-3 mb-4 text-center">
               <p className="text-green-800 font-bold text-sm">15 minutes offertes pour votre 1re consultation</p>
-              <p className="text-green-600 text-xs mt-1">Sans engagement — testez gratuitement</p>
+              <p className="text-green-600 text-xs mt-1">Sans engagement, testez gratuitement</p>
             </div>
           )}
 
@@ -193,12 +193,12 @@ export default function ConsulterVoyantGrid() {
 
   return (
     <div>
-      {/* Regular voyants section — shown first (highest-rated experts) */}
+      {/* Regular voyants section, shown first (highest-rated experts) */}
       {voyants.length > 0 && (
         <div className="mb-10">
           <div className="text-center mb-6">
             <h2 className="text-2xl font-bold text-gray-900 mb-2">🔮 Nos Voyants Experts</h2>
-            <p className="text-gray-600">Les mieux notés par nos consultants — disponibles maintenant</p>
+            <p className="text-gray-600">Les mieux notés par nos consultants, disponibles maintenant</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {voyants.map((v) => renderVoyantCard(v, false))}
@@ -206,12 +206,12 @@ export default function ConsulterVoyantGrid() {
         </div>
       )}
 
-      {/* Free voyants section — shown after (promotional offer) */}
+      {/* Free voyants section, shown after (promotional offer) */}
       {freeVoyants.length > 0 && (
         <div>
           <div className="text-center mb-6">
             <h2 className="text-2xl font-bold text-gray-900 mb-2">🎁 Voyants avec 15 Minutes Gratuites</h2>
-            <p className="text-gray-600">Première consultation offerte — testez sans engagement</p>
+            <p className="text-gray-600">Première consultation offerte, testez sans engagement</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {freeVoyants.map((v) => renderVoyantCard(v, true))}

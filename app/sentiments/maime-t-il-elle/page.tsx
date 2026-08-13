@@ -1,108 +1,85 @@
-import type { Metadata } from 'next';
 import Link from 'next/link';
-import { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getAuthorSchema } from '@/lib/schema';
-import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
-import VoyantFinalCTA from '@/components/VoyantFinalCTA';
+import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
-export const metadata: Metadata = {
+const config: ContentPageConfig = {
   title: 'M\'aime-t-il/elle Vraiment ? Tarot et Voyance des Sentiments',
   description: 'Découvrez ses vrais sentiments grâce au tarot et à la voyance. M\'aime-t-il/elle vraiment ? Pense-t-il/elle à moi ? Que ressent-il/elle ?',
+  url: 'https://www.voyantlove.fr/sentiments/maime-t-il-elle/',
   keywords: ['m\'aime-t-il', 'ses sentiments', 'vrais sentiments tarot', 'pense-t-il à moi', 'décrypter sentiments'],
-  alternates: {
-    canonical: 'https://www.voyantlove.fr/sentiments/maime-t-il-elle/',
-  },
-};
-
-export default function MAimeTilEllePage() {
-  const articleSchema = getArticleSchema({
-    title: 'M\'aime-t-il/elle Vraiment ? Tarot et Voyance des Sentiments',
-    description: 'Découvrez ses vrais sentiments grâce au tarot et à la voyance. M\'aime-t-il/elle vraiment ? Pense-t-il/elle à moi ? Que ressent-il/elle ?',
-    url: 'https://www.voyantlove.fr/sentiments/maime-t-il-elle/',
-    datePublished: '2026-01-10',
-    dateModified: '2026-01-10',
-    keywords: ['m\'aime-t-il', 'ses sentiments', 'vrais sentiments tarot', 'pense-t-il à moi', 'décrypter sentiments'],
-  });
-
-  const faqSchema = getFAQSchema([
-    {
-      question: 'Comment la voyance detecte les sentiments de l\'autre ?',
-      answer: 'Un voyant utilise le tarot, la clairvoyance ou la lecture énergétique pour capter les émotions réelles. Le tarot reflète l\'inconscient et révèle ce que les mots et comportements masquent. La clairvoyance permet de ressentir directement l\'état émotionnel de la personne concernée.',
-    },
-    {
-      question: 'Amour ou attachement : comment faire la difference ?',
-      answer: 'L\'amour authentique veut le bonheur de l\'autre même sans réciprocité, respecte sa liberté, apporte joie et croissance. L\'attachement est possessif, crée de la souffrance, dépend de la présence de l\'autre. Le tarot distingue ces deux liens qui se ressemblent en surface mais sont fondamentalement différents.',
-    },
-    {
-      question: 'Pourquoi cache-t-il ses sentiments s\'il m\'aime ?',
-      answer: 'Peur de souffrir après blessure passée, peur d\'engagement, situation compliquée, blocage culturel ou familial, fierté. Le tarot révèle ces blocages invisibles et vous aide à comprendre si vous devez être patient(e), l\'aider à s\'ouvrir, ou accepter que malgré l\'amour la relation n\'avancera pas.',
-    },
-    {
-      question: 'Pense-t-il/elle souvent à moi ?',
-      answer: 'Le tarot répond à cette question en révélant la fréquence et la nature de ses pensées vous concernant. Le Cavalier de Coupe et La Lune indiquent qu\'il/elle pense souvent à vous. Le type de pensées (nostalgiques, désirantes, conflictuelles) est aussi révélé et vous guide sur ce que vous devez faire.',
-    },
-    {
-      question: 'Comment savoir si je lui plais ?',
-      answer: 'Au-delà des signes physiques et comportementaux classiques (regard prolongé, recherche de proximité, nervosité), la voyance révèle ce que les apparences ne montrent pas. Le tirage des sentiments, notamment les cartes de Coupe (As, Deux et Cavalier de Coupe), dévoile les émotions profondes que cette personne éprouve réellement pour vous. L\'analyse des énergies entre deux personnes par un voyant permet de capter l\'attirance cachée, même chez quelqu\'un qui dissimule ses sentiments. Le tirage en croix pour les sentiments est particulièrement révélateur : il explore l\'attraction, les blocages, les intentions et le potentiel du lien. Consulter un voyant est plus fiable que l\'interprétation personnelle des signaux, car nos émotions biaisent notre lecture des situations amoureuses.',
-    },
-    {
-      question: 'M\'aime-t-il : que dit le tarot exactement ?',
-      answer: 'Le tarot répond à la question "m\'aime-t-il" en analysant trois niveaux : l\'attraction immédiate, l\'attachement émotionnel et l\'engagement profond. Les arcanes majeurs Les Amoureux et Le Soleil sont les signes les plus clairs d\'un amour authentique et réciproque. La Lune signale des sentiments réels mais cachés ou ambigus. Le Diable révèle un attachement basé sur le désir plus que sur l\'amour véritable. Pour une lecture complète, le tarologue tire généralement entre 3 et 7 cartes — un tirage plus court répond rapidement, un tirage long approfondit les nuances. Le tarot est particulièrement précis sur cette question car il accède à l\'inconscient de la personne aimée, là où les vrais sentiments résident souvent.',
-    },
-    {
-      question: 'Est-ce qu\'il m\'aime ? Quel tirage de tarot choisir ?',
-      answer: 'Pour la question "est-ce qu\'il m\'aime", le tirage le plus efficace est la Croix Sentimentale en 5 cartes : (1) ses sentiments actuels pour vous, (2) ce qui le bloque, (3) ses intentions cachées, (4) l\'évolution probable de ses sentiments, (5) la meilleure attitude à adopter. Une alternative plus rapide est le Tirage Oui/Non Amour en 3 cartes : si la majorité sont à l\'endroit, la réponse penche vers "oui" ; à l\'envers, vers "non". Pour un résultat fiable, formulez clairement la question avant le tirage et concentrez-vous sur la personne précise concernée. Évitez de refaire le même tirage en cas de réponse qui déplaît : le tarot a déjà donné sa lecture.',
-    },
-  ]);
-
-  const breadcrumbSchema = getBreadcrumbSchema([
+  datePublished: '2026-01-10',
+  dateModified: '2026-01-10',
+  breadcrumb: [
     { name: 'Accueil', url: 'https://www.voyantlove.fr' },
     { name: 'Sentiments', url: 'https://www.voyantlove.fr/sentiments/' },
     { name: 'M\'aime-t-il/elle', url: 'https://www.voyantlove.fr/sentiments/maime-t-il-elle/' },
-  ]);
+  ],
+  header: {
+    emoji: '💖',
+    h1: 'M\'aime-t-il/elle Vraiment ?',
+    subtitle: 'Décryptez ses vrais sentiments grâce au tarot et à la voyance',
+    gradient: 'from-red-500 via-pink-500 to-rose-500',
+    backLink: { href: '/sentiments', label: 'Retour aux Sentiments' },
+    anchors: [
+      { href: '#consultation', label: 'Décryptage des Sentiments', primary: true },
+      { href: '#signes', label: 'Voir les Signes d\'Amour' },
+    ],
+  },
+  accentText: 'text-red-600',
+  stats: [
+    { icon: '⭐', value: '4.8/5', label: '287 avis' },
+    { icon: '💝', value: 'Grande', label: 'Clarté obtenue' },
+    { icon: '🎯', value: 'Reconnue', label: 'Expertise' },
+    { icon: '🔒', value: '100%', label: 'Confidentiel' },
+  ],
+  eeat: { colorScheme: 'rose', method: 'Tarot des sentiments et clairvoyance' },
+  cta: { topic: 'sentiments', slug: 'maime-t-il-elle' },
+  faq: [
+    {
+      q: 'Comment la voyance detecte les sentiments de l\'autre ?',
+      a: 'Un voyant utilise le tarot, la clairvoyance ou la lecture énergétique pour capter les émotions réelles. Le tarot reflète l\'inconscient et révèle ce que les mots et comportements masquent. La clairvoyance permet de ressentir directement l\'état émotionnel de la personne concernée.',
+    },
+    {
+      q: 'Amour ou attachement : comment faire la difference ?',
+      a: 'L\'amour authentique veut le bonheur de l\'autre même sans réciprocité, respecte sa liberté, apporte joie et croissance. L\'attachement est possessif, crée de la souffrance, dépend de la présence de l\'autre. Le tarot distingue ces deux liens qui se ressemblent en surface mais sont fondamentalement différents.',
+    },
+    {
+      q: 'Pourquoi cache-t-il ses sentiments s\'il m\'aime ?',
+      a: 'Peur de souffrir après blessure passée, peur d\'engagement, situation compliquée, blocage culturel ou familial, fierté. Le tarot révèle ces blocages invisibles et vous aide à comprendre si vous devez être patient(e), l\'aider à s\'ouvrir, ou accepter que malgré l\'amour la relation n\'avancera pas.',
+    },
+    {
+      q: 'Pense-t-il/elle souvent à moi ?',
+      a: 'Le tarot répond à cette question en révélant la fréquence et la nature de ses pensées vous concernant. Le Cavalier de Coupe et La Lune indiquent qu\'il/elle pense souvent à vous. Le type de pensées (nostalgiques, désirantes, conflictuelles) est aussi révélé et vous guide sur ce que vous devez faire.',
+    },
+    {
+      q: 'Comment savoir si je lui plais ?',
+      a: 'Au-delà des signes physiques et comportementaux classiques (regard prolongé, recherche de proximité, nervosité), la voyance révèle ce que les apparences ne montrent pas. Le tirage des sentiments, notamment les cartes de Coupe (As, Deux et Cavalier de Coupe), dévoile les émotions profondes que cette personne éprouve réellement pour vous. L\'analyse des énergies entre deux personnes par un voyant permet de capter l\'attirance cachée, même chez quelqu\'un qui dissimule ses sentiments. Le tirage en croix pour les sentiments est particulièrement révélateur : il explore l\'attraction, les blocages, les intentions et le potentiel du lien. Consulter un voyant est plus fiable que l\'interprétation personnelle des signaux, car nos émotions biaisent notre lecture des situations amoureuses.',
+    },
+    {
+      q: 'M\'aime-t-il : que dit le tarot exactement ?',
+      a: 'Le tarot répond à la question "m\'aime-t-il" en analysant trois niveaux : l\'attraction immédiate, l\'attachement émotionnel et l\'engagement profond. Les arcanes majeurs Les Amoureux et Le Soleil sont les signes les plus clairs d\'un amour authentique et réciproque. La Lune signale des sentiments réels mais cachés ou ambigus. Le Diable révèle un attachement basé sur le désir plus que sur l\'amour véritable. Pour une lecture complète, le tarologue tire généralement entre 3 et 7 cartes, un tirage plus court répond rapidement, un tirage long approfondit les nuances. Le tarot est particulièrement précis sur cette question car il accède à l\'inconscient de la personne aimée, là où les vrais sentiments résident souvent.',
+    },
+    {
+      q: 'Est-ce qu\'il m\'aime ? Quel tirage de tarot choisir ?',
+      a: 'Pour la question "est-ce qu\'il m\'aime", le tirage le plus efficace est la Croix Sentimentale en 5 cartes : (1) ses sentiments actuels pour vous, (2) ce qui le bloque, (3) ses intentions cachées, (4) l\'évolution probable de ses sentiments, (5) la meilleure attitude à adopter. Une alternative plus rapide est le Tirage Oui/Non Amour en 3 cartes : si la majorité sont à l\'endroit, la réponse penche vers "oui" ; à l\'envers, vers "non". Pour un résultat fiable, formulez clairement la question avant le tirage et concentrez-vous sur la personne précise concernée. Évitez de refaire le même tirage en cas de réponse qui déplaît : le tarot a déjà donné sa lecture.',
+    },
+  ],
+  related: [
+    { href: '/sentiments', label: 'Sentiments Amoureux : Toutes nos Guidances' },
+    { href: '/sentiments/signes-il-elle-maime', label: 'Les Signes qu\'il/elle M\'aime' },
+    { href: '/nouvelle-rencontre/signes-ame-soeur', label: 'Notre Compatibilité Amoureuse' },
+    { href: '/sentiments/avenir-amoureux', label: 'Mon Avenir avec lui/elle' },
+    { href: '/reconquete/va-t-il-elle-revenir', label: 'S\'il s\'agit d\'un Ex' },
+  ],
+};
 
-  const authorSchema = getAuthorSchema();
+export const metadata = contentMeta(config);
+
+export default function MAimeTilEllePage() {
 
   return (
-    <main className="min-h-screen bg-gray-50">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(authorSchema) }}
-      />
-      <header className="bg-gradient-to-r from-red-500 via-pink-500 to-rose-500 text-white py-16 px-4">
-        <div className="max-w-4xl mx-auto">
-          <Link href="/sentiments" className="text-white/80 hover:text-white mb-4 inline-block">← Retour aux Sentiments</Link>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">💖 M'aime-t-il/elle Vraiment ?</h1>
-          <p className="text-xl opacity-95 mb-6">Décryptez ses vrais sentiments grâce au tarot et à la voyance</p>
-          <div className="flex gap-4 flex-wrap">
-            <a href="#consultation" className="bg-white text-red-600 px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition">Décryptage des Sentiments</a>
-            <a href="#signes" className="border-2 border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-red-600 transition">Voir les Signes d'Amour</a>
-          </div>
-        </div>
-      </header>
-
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <div className="bg-white rounded-xl shadow-md p-6 mb-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-          <div><div className="text-3xl mb-1">⭐</div><div className="text-2xl font-bold text-red-600">4.8/5</div><div className="text-sm text-gray-600">287 avis</div></div>
-          <div><div className="text-3xl mb-1">💝</div><div className="text-2xl font-bold text-red-600">Grande</div><div className="text-sm text-gray-600">Clarté obtenue</div></div>
-          <div><div className="text-3xl mb-1">🎯</div><div className="text-2xl font-bold text-red-600">Reconnue</div><div className="text-sm text-gray-600">Expertise</div></div>
-          <div><div className="text-3xl mb-1">🔒</div><div className="text-2xl font-bold text-red-600">100%</div><div className="text-sm text-gray-600">Confidentiel</div></div>
-        </div>
-
-        <EEATSignal colorScheme="rose" method="Tarot des sentiments et clairvoyance" />
+    <ContentPage config={config}>
 
         <article className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-red-500">
           <div className="prose prose-lg max-w-none">
@@ -262,7 +239,7 @@ export default function MAimeTilEllePage() {
               <ul className="space-y-2 text-gray-700">
                 <li>✗ <strong>Acceptez cette vérité</strong> difficile mais libératrice</li>
                 <li>✗ <strong>Ne perdez pas votre temps</strong> à attendre un amour qui n'existe pas</li>
-                <li>✗ <strong>Ouvrez-vous</strong> à quelqu'un qui vous aimera vraiment — si c'est un ex, découvrez d'abord si <Link href="/reconquete/va-t-il-elle-revenir" className="text-red-600 hover:text-red-800 underline font-medium">il/elle va revenir</Link></li>
+                <li>✗ <strong>Ouvrez-vous</strong> à quelqu'un qui vous aimera vraiment, si c'est un ex, découvrez d'abord si <Link href="/reconquete/va-t-il-elle-revenir" className="text-red-600 hover:text-red-800 underline font-medium">il/elle va revenir</Link></li>
                 <li>✗ <strong>Travaillez sur vous</strong> pour comprendre pourquoi vous vous êtes accroché(e)</li>
                 <li>✗ <strong>Libérez-vous</strong> de cette illusion pour avancer</li>
               </ul>
@@ -270,54 +247,6 @@ export default function MAimeTilEllePage() {
           </div>
         </section>
 
-        <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">❓ Questions Fréquentes</h2>
-          <p className="text-lg font-semibold text-gray-800 mb-4">Retrouvez les reponses aux questions les plus posees sur les sentiments amoureux, la voyance et le decryptage des emotions cachees par le tarot.</p>
-          <div className="space-y-6">
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Comment la voyance detecte les sentiments de l'autre ?</h3>
-              <p className="text-gray-700 leading-relaxed">Un voyant utilise le tarot, la clairvoyance ou la lecture énergétique pour capter les émotions réelles. Le tarot reflète l'inconscient et révèle ce que les mots et comportements masquent. La clairvoyance permet de ressentir directement l'état émotionnel de la personne concernée.</p>
-            </div>
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Amour ou attachement : comment faire la difference ?</h3>
-              <p className="text-gray-700 leading-relaxed">L'amour authentique veut le bonheur de l'autre même sans réciprocité, respecte sa liberté, apporte joie et croissance. L'attachement est possessif, crée de la souffrance, dépend de la présence de l'autre. Le tarot distingue ces deux liens qui se ressemblent en surface mais sont fondamentalement différents.</p>
-            </div>
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Pourquoi cache-t-il ses sentiments s'il m'aime ?</h3>
-              <p className="text-gray-700 leading-relaxed">Peur de souffrir après blessure passée, peur d'engagement, situation compliquée, blocage culturel ou familial, fierté. Le tarot révèle ces blocages invisibles et vous aide à comprendre si vous devez être patient(e), l'aider à s'ouvrir, ou accepter que malgré l'amour la relation n'avancera pas.</p>
-            </div>
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Pense-t-il/elle souvent à moi ?</h3>
-              <p className="text-gray-700 leading-relaxed">Le tarot répond à cette question en révélant la fréquence et la nature de ses pensées vous concernant. Le Cavalier de Coupe et La Lune indiquent qu'il/elle pense souvent à vous. Le type de pensées (nostalgiques, désirantes, conflictuelles) est aussi révélé et vous guide sur ce que vous devez faire.</p>
-            </div>
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Comment savoir si je lui plais ?</h3>
-              <p className="text-gray-700 leading-relaxed">Au-delà des signes physiques et comportementaux classiques (regard prolongé, recherche de proximité, nervosité), la <strong>voyance</strong> révèle ce que les apparences ne montrent pas. Le <strong>tirage des sentiments</strong>, notamment les cartes de Coupe (As, Deux et Cavalier de Coupe), dévoile les émotions profondes que cette personne éprouve réellement pour vous. L'analyse des <strong>énergies entre deux personnes</strong> par un voyant permet de capter l'attirance cachée, même chez quelqu'un qui dissimule ses sentiments. Le <strong>tirage en croix pour les sentiments</strong> est particulièrement révélateur : il explore l'attraction, les blocages, les intentions et le potentiel du lien. Consulter un voyant est plus fiable que l'interprétation personnelle des signaux, car nos émotions biaisent notre lecture des situations amoureuses.</p>
-            </div>
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">M&apos;aime-t-il : que dit le tarot exactement ?</h3>
-              <p className="text-gray-700 leading-relaxed">Le <strong>tarot</strong> répond à la question &laquo;&nbsp;<strong>m&apos;aime-t-il</strong>&nbsp;&raquo; en analysant trois niveaux : l&apos;attraction immédiate, l&apos;attachement émotionnel et l&apos;engagement profond. Les arcanes majeurs <strong>Les Amoureux</strong> et <strong>Le Soleil</strong> sont les signes les plus clairs d&apos;un amour authentique et réciproque. <strong>La Lune</strong> signale des sentiments réels mais cachés ou ambigus. <strong>Le Diable</strong> révèle un attachement basé sur le désir plus que sur l&apos;amour véritable. Pour une lecture complète, le tarologue tire généralement entre 3 et 7 cartes — un tirage plus court répond rapidement, un tirage long approfondit les nuances. Le tarot est particulièrement précis sur cette question car il accède à l&apos;inconscient de la personne aimée, là où les vrais sentiments résident souvent.</p>
-            </div>
-            <div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Est-ce qu&apos;il m&apos;aime ? Quel tirage de tarot choisir ?</h3>
-              <p className="text-gray-700 leading-relaxed">Pour la question &laquo;&nbsp;<strong>est-ce qu&apos;il m&apos;aime</strong>&nbsp;&raquo;, le tirage le plus efficace est la <strong>Croix Sentimentale en 5 cartes</strong> : (1) ses sentiments actuels pour vous, (2) ce qui le bloque, (3) ses intentions cachées, (4) l&apos;évolution probable de ses sentiments, (5) la meilleure attitude à adopter. Une alternative plus rapide est le <Link href="/voyance-gratuite-amour/tarot-oui-non-amour" className="text-red-600 hover:text-red-800 underline font-medium">Tirage Oui/Non Amour</Link> en 3 cartes : si la majorité sont à l&apos;endroit, la réponse penche vers &laquo;&nbsp;oui&nbsp;&raquo; ; à l&apos;envers, vers &laquo;&nbsp;non&nbsp;&raquo;. Pour un résultat fiable, formulez clairement la question avant le tirage et concentrez-vous sur la personne précise concernée. Évitez de refaire le même tirage en cas de réponse qui déplaît : le tarot a déjà donné sa lecture.</p>
-            </div>
-          </div>
-        </section>
-
-        <div className="bg-gray-100 rounded-xl p-6 mb-8">
-          <h3 className="font-bold text-lg mb-4 text-gray-900">📚 Articles Connexes</h3>
-          <div className="space-y-2">
-            <Link href="/sentiments" className="block text-red-600 hover:text-red-800 font-medium">→ Sentiments Amoureux : Toutes nos Guidances</Link>
-            <Link href="/sentiments/signes-il-elle-maime" className="block text-red-600 hover:text-red-800 font-medium">→ Les Signes qu'il/elle M'aime</Link>
-            <Link href="/nouvelle-rencontre/signes-ame-soeur" className="block text-red-600 hover:text-red-800 font-medium">→ Notre Compatibilité Amoureuse</Link>
-            <Link href="/sentiments/avenir-amoureux" className="block text-red-600 hover:text-red-800 font-medium">→ Mon Avenir avec lui/elle</Link>
-            <Link href="/reconquete/va-t-il-elle-revenir" className="block text-red-600 hover:text-red-800 font-medium">→ S'il s'agit d'un Ex</Link>
-          </div>
-        </div>
-
-        <VoyantFinalCTA topic="sentiments" source="maime-t-il-elle-final" />
-      </div>
-    </main>
+      </ContentPage>
   );
 }

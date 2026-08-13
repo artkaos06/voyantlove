@@ -3,7 +3,7 @@
 // Why: the landers shipped with zero images. The repo's own competitor
 // research (ADS-CONSULTING-PLAN.md §3.1) found the recurring pattern across
 // Wengo/Cosmospace/Spiriteo is "photos, name, specialty, star rating, live
-// availability dot — the product IS the people". Faces are the trust signal
+// availability dot, the product IS the people". Faces are the trust signal
 // in this vertical and we had none.
 //
 // Photos come from monsitevoyance (https://www.monsitevoyance.com/vignaff/
@@ -15,12 +15,12 @@
 // are a PARTNER NETWORK trust signal, never a promise that a specific voyant
 // answers the phone. The landers now route to Télémaque while these portraits
 // come from monsitevoyance, so naming a person as "your" reader would be a
-// false claim — hence the collective wording and the disclaimer below.
+// false claim, hence the collective wording and the disclaimer below.
 //
 // Zero-JS by design, like its host landers: a plain <img> (not next/image,
 // which would pull in a client runtime and require remotePatterns config).
 // width/height are set to reserve space so the strip cannot shift the CTA
-// while portraits load — layout shift under a phone button costs taps.
+// while portraits load, layout shift under a phone button costs taps.
 
 import voyantsData from '@/data/voyants.json';
 
@@ -47,7 +47,7 @@ export default function VoyantStrip({
 }) {
   const all = voyantsData as VoyantRow[];
 
-  // Online first (ETAT === '1'), then by consultation count — the strongest
+  // Online first (ETAT === '1'), then by consultation count, the strongest
   // honest social-proof signal available in the data.
   const ranked = [...all].sort((a, b) => {
     const on = (b.ETAT === '1' ? 1 : 0) - (a.ETAT === '1' ? 1 : 0);
@@ -96,7 +96,7 @@ export default function VoyantStrip({
                   width={SIZE}
                   height={SIZE}
                   // NOT lazy. On /lp/il-elle-vous-aime this strip lives inside
-                  // a display:none step that CSS reveals on :checked — and a
+                  // a display:none step that CSS reveals on :checked, and a
                   // lazy image in a display:none parent never enters the
                   // viewport, so the browser never fetches it. Verified: the
                   // portraits stayed complete:false after the reveal. Eager

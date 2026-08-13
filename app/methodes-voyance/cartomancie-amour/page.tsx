@@ -1,92 +1,76 @@
-import type { Metadata } from 'next';
 import Link from 'next/link';
-import { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getAuthorSchema } from '@/lib/schema';
-import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
-import VoyantFinalCTA from '@/components/VoyantFinalCTA';
+import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
-export const metadata: Metadata = {
+const config: ContentPageConfig = {
   title: 'Cartomancie Amour : L\'Art des Cartes au Service de Votre Cœur',
   description: 'Découvrez la cartomancie amoureuse : Petit Lenormand, jeu de 32 cartes, symbolique des couleurs. Guide complet pour comprendre cet art divinatoire ancestral appliqué aux questions de cœur.',
+  url: 'https://www.voyantlove.fr/methodes-voyance/cartomancie-amour/',
   keywords: ['cartomancie amour', 'cartomancie amoureuse', 'petit lenormand amour', 'cartomancien amour', 'tirage cartomancie sentimental'],
-  alternates: {
-    canonical: 'https://www.voyantlove.fr/methodes-voyance/cartomancie-amour/',
-  },
-};
-
-export default function CartomancieAmourPage() {
-  const articleSchema = getArticleSchema({
-    title: 'Cartomancie Amour : L\'Art des Cartes au Service de Votre Cœur',
-    description: 'Découvrez la cartomancie amoureuse : Petit Lenormand, jeu de 32 cartes, symbolique des couleurs. Guide complet pour comprendre cet art divinatoire ancestral appliqué aux questions de cœur.',
-    url: 'https://www.voyantlove.fr/methodes-voyance/cartomancie-amour/',
-    datePublished: '2026-08-06',
-    dateModified: '2026-08-06',
-    keywords: ['cartomancie amour', 'cartomancie amoureuse', 'petit lenormand amour', 'cartomancien amour'],
-  });
-
-  const authorSchema = getAuthorSchema();
-
-  const breadcrumbSchema = getBreadcrumbSchema([
+  datePublished: '2026-08-06',
+  dateModified: '2026-08-06',
+  breadcrumb: [
     { name: 'Accueil', url: 'https://www.voyantlove.fr' },
     { name: 'Méthodes de Voyance', url: 'https://www.voyantlove.fr/methodes-voyance/' },
     { name: 'Cartomancie Amour', url: 'https://www.voyantlove.fr/methodes-voyance/cartomancie-amour/' },
-  ]);
+  ],
+  header: {
+    emoji: '🎴',
+    h1: 'Cartomancie Amour',
+    subtitle: 'L\'art ancestral des cartes au service de votre vie sentimentale',
+    gradient: 'from-teal-600 via-cyan-600 to-blue-700',
+    backLink: { href: '/methodes-voyance', label: 'Retour aux Méthodes de Voyance' },
+    anchors: [
+      { href: '#lenormand', label: 'Le Petit Lenormand', primary: true },
+      { href: '#consultation', label: 'Consulter un Cartomancien' },
+    ],
+  },
+  accentText: 'text-teal-700',
+  stats: [
+    { icon: '🎴', value: '36 cartes', label: 'Petit Lenormand' },
+    { icon: '📜', value: '19e siècle', label: 'Origine en France' },
+    { icon: '💞', value: 'Direct', label: 'Réponses concrètes' },
+    { icon: '🔗', value: 'Combinatoire', label: 'Lecture par association' },
+  ],
+  eeat: { colorScheme: 'teal', method: 'Cartomancie amoureuse, Petit Lenormand et cartes traditionnelles' },
+  cta: { topic: 'methodes-voyance', slug: 'cartomancie-amour' },
+  faq: [
+    {
+      q: 'Quelle est la différence entre cartomancie et tarot ?',
+      a: 'La cartomancie est le terme général qui désigne l\'art de tirer les cartes pour la divination, quel que soit le jeu utilisé : Petit Lenormand, jeu de 32 cartes ordinaires, ou même le tarot. Le tarot est donc une forme de cartomancie, mais historiquement, le terme « cartomancie » en français désigne surtout la lecture du Petit Lenormand ou des cartes à jouer classiques, aux symboles concrets et à la lecture combinatoire, par opposition aux 78 arcanes du tarot et à leur symbolique plus riche et narrative. Un cartomancien professionnel peut maîtriser plusieurs de ces supports.',
+    },
+    {
+      q: 'Qu\'est-ce que le Petit Lenormand et pourquoi est-il utilisé en amour ?',
+      a: 'Le Petit Lenormand est un jeu de 36 cartes aux symboles simples et concrets (le Cœur, l\'Anneau, le Navire, les Nuages) qui se combinent entre elles pour former une réponse précise, un peu comme des mots assemblés en phrase. En amour, il est particulièrement apprécié car il donne des réponses directes et peu ambiguës aux questions sentimentales : la carte Cœur associée à l\'Anneau évoque un engagement sincère, tandis que Cœur associée aux Nuages suggère des sentiments troublés par le doute.',
+    },
+    {
+      q: 'Comment se déroule un tirage de cartomancie amoureuse ?',
+      a: 'Le cartomancien commence généralement par un échange sur votre situation, puis vous invite à formuler votre question sentimentale de façon claire. Il mélange ensuite les cartes en se concentrant sur votre énergie avant de les disposer selon le tirage choisi : tirage en croix, grand tableau de 36 cartes, ou tirage ciblé de trois à cinq cartes. L\'interprétation se fait carte par carte, puis dans la logique combinatoire d\'ensemble propre à la cartomancie.',
+    },
+    {
+      q: 'Peut-on pratiquer la cartomancie amoureuse soi-même ?',
+      a: 'Techniquement oui, avec un jeu de 32 cartes ou un Petit Lenormand et un peu d\'apprentissage des significations de base. Mais la cartomancie repose sur une lecture combinatoire fine, où le sens naît de l\'association entre plusieurs cartes selon leur position : une pratique autodidacte manque souvent de la nuance qu\'apporte un praticien expérimenté, en particulier pour des questions amoureuses complexes ou chargées émotionnellement.',
+    },
+  ],
+  related: [
+    { href: '/methodes-voyance', label: 'Toutes les Méthodes de Voyance Amoureuse' },
+    { href: '/methodes-voyance/tirage-tarot-amour', label: 'Tirage Tarot Amour : Guide Complet' },
+    { href: '/methodes-voyance/tarologie-amoureuse', label: 'Tarologie Amoureuse' },
+    { href: '/methodes-voyance/oracle-amour', label: 'Oracle de l\'Amour' },
+    { href: '/glossaire/petit-lenormand', label: 'Glossaire : Petit Lenormand' },
+    { href: '/glossaire/carte-inversee', label: 'Glossaire : Carte Inversée' },
+  ],
+};
 
-  const faqSchema = getFAQSchema([
-    {
-      question: 'Quelle est la différence entre cartomancie et tarot ?',
-      answer: 'La cartomancie est le terme général qui désigne l\'art de tirer les cartes pour la divination, quel que soit le jeu utilisé : Petit Lenormand, jeu de 32 cartes ordinaires, ou même le tarot. Le tarot est donc une forme de cartomancie, mais historiquement, le terme « cartomancie » en français désigne surtout la lecture du Petit Lenormand ou des cartes à jouer classiques, aux symboles concrets et à la lecture combinatoire, par opposition aux 78 arcanes du tarot et à leur symbolique plus riche et narrative. Un cartomancien professionnel peut maîtriser plusieurs de ces supports.',
-    },
-    {
-      question: 'Qu\'est-ce que le Petit Lenormand et pourquoi est-il utilisé en amour ?',
-      answer: 'Le Petit Lenormand est un jeu de 36 cartes aux symboles simples et concrets (le Cœur, l\'Anneau, le Navire, les Nuages) qui se combinent entre elles pour former une réponse précise, un peu comme des mots assemblés en phrase. En amour, il est particulièrement apprécié car il donne des réponses directes et peu ambiguës aux questions sentimentales : la carte Cœur associée à l\'Anneau évoque un engagement sincère, tandis que Cœur associée aux Nuages suggère des sentiments troublés par le doute.',
-    },
-    {
-      question: 'Comment se déroule un tirage de cartomancie amoureuse ?',
-      answer: 'Le cartomancien commence généralement par un échange sur votre situation, puis vous invite à formuler votre question sentimentale de façon claire. Il mélange ensuite les cartes en se concentrant sur votre énergie avant de les disposer selon le tirage choisi : tirage en croix, grand tableau de 36 cartes, ou tirage ciblé de trois à cinq cartes. L\'interprétation se fait carte par carte, puis dans la logique combinatoire d\'ensemble propre à la cartomancie.',
-    },
-    {
-      question: 'Peut-on pratiquer la cartomancie amoureuse soi-même ?',
-      answer: 'Techniquement oui, avec un jeu de 32 cartes ou un Petit Lenormand et un peu d\'apprentissage des significations de base. Mais la cartomancie repose sur une lecture combinatoire fine, où le sens naît de l\'association entre plusieurs cartes selon leur position : une pratique autodidacte manque souvent de la nuance qu\'apporte un praticien expérimenté, en particulier pour des questions amoureuses complexes ou chargées émotionnellement.',
-    },
-  ]);
+export const metadata = contentMeta(config);
 
+export default function CartomancieAmourPage() {
   return (
-    <main className="min-h-screen bg-gray-50">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(authorSchema) }} />
-
-      {/* Header */}
-      <header className="bg-gradient-to-r from-teal-600 via-cyan-600 to-blue-700 text-white py-16 px-4">
-        <div className="max-w-4xl mx-auto">
-          <Link href="/methodes-voyance" className="text-white/80 hover:text-white mb-4 inline-block">&larr; Retour aux Méthodes de Voyance</Link>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">🎴 Cartomancie Amour</h1>
-          <p className="text-xl opacity-95 mb-6">L&apos;art ancestral des cartes au service de votre vie sentimentale</p>
-          <div className="flex gap-4 flex-wrap">
-            <a href="#lenormand" className="bg-white text-teal-700 px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition">Le Petit Lenormand</a>
-            <a href="#consultation" className="border-2 border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-teal-700 transition">Consulter un Cartomancien</a>
-          </div>
-        </div>
-      </header>
-
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        {/* Stats bar */}
-        <div className="bg-white rounded-xl shadow-md p-6 mb-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-          <div><div className="text-3xl mb-1">🎴</div><div className="text-2xl font-bold text-teal-700">36 cartes</div><div className="text-sm text-gray-600">Petit Lenormand</div></div>
-          <div><div className="text-3xl mb-1">📜</div><div className="text-2xl font-bold text-teal-700">19<sup>e</sup> siècle</div><div className="text-sm text-gray-600">Origine en France</div></div>
-          <div><div className="text-3xl mb-1">💞</div><div className="text-2xl font-bold text-teal-700">Direct</div><div className="text-sm text-gray-600">Réponses concrètes</div></div>
-          <div><div className="text-3xl mb-1">🔗</div><div className="text-2xl font-bold text-teal-700">Combinatoire</div><div className="text-sm text-gray-600">Lecture par association</div></div>
-        </div>
-
-        <EEATSignal colorScheme="teal" method="Cartomancie amoureuse — Petit Lenormand et cartes traditionnelles" />
-
-        {/* Answer capsule */}
+    <ContentPage config={config}>
         <article className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-teal-600">
           <p className="text-lg leading-relaxed mb-4">
-            La <strong>cartomancie amour</strong> est l&apos;art ancestral de lire les cartes pour éclairer votre vie sentimentale — non pas avec les 78 arcanes du <Link href="/methodes-voyance/tirage-tarot-amour" className="text-teal-700 hover:text-teal-900 underline font-medium">tarot</Link>, mais avec des jeux plus anciens et plus directs : le <strong>Petit Lenormand</strong>, ses 36 cartes aux symboles concrets, ou le traditionnel <strong>jeu de 32 cartes</strong> utilisé par les cartomanciennes depuis des générations. Là où le tarot déploie une symbolique riche à interpréter carte par carte, la cartomancie fonctionne par <strong>combinaison</strong> : deux ou trois cartes assemblées forment une phrase, une réponse nette à votre question de cœur.
+            La <strong>cartomancie amour</strong> est l&apos;art ancestral de lire les cartes pour éclairer votre vie sentimentale, non pas avec les 78 arcanes du <Link href="/methodes-voyance/tirage-tarot-amour" className="text-teal-700 hover:text-teal-900 underline font-medium">tarot</Link>, mais avec des jeux plus anciens et plus directs : le <strong>Petit Lenormand</strong>, ses 36 cartes aux symboles concrets, ou le traditionnel <strong>jeu de 32 cartes</strong> utilisé par les cartomanciennes depuis des générations. Là où le tarot déploie une symbolique riche à interpréter carte par carte, la cartomancie fonctionne par <strong>combinaison</strong> : deux ou trois cartes assemblées forment une phrase, une réponse nette à votre question de cœur.
           </p>
           <p className="text-lg leading-relaxed">
             Cette guidance complète vous explique l&apos;histoire de la cartomancie, le fonctionnement du Petit Lenormand et du jeu de 32 cartes, la symbolique des couleurs, comment se déroule une consultation, et comment choisir un cartomancien de confiance pour vos questions amoureuses.
@@ -100,7 +84,7 @@ export default function CartomancieAmourPage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">📖 Qu&apos;est-ce que la Cartomancie Amoureuse ?</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">La cartomancie est l&apos;art de lire des cartes ordinaires ou du Petit Lenormand pour révéler les dynamiques amoureuses, une pratique distincte du tarot par son approche plus concrète et combinatoire.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            La <strong>cartomancie</strong> désigne, au sens strict, la divination par les cartes en général — mais dans l&apos;usage courant français, elle renvoie surtout à la tradition du <strong>Petit Lenormand</strong> et du <strong>jeu de 32 cartes</strong>, distincte du tarot par son histoire et sa méthode de lecture. Cette pratique remonte au dix-huitième siècle, popularisée en France par des figures comme <strong>Etteilla</strong>, premier cartomancien professionnel connu, puis par la légendaire <strong>Marie-Anne Lenormand</strong>, consultée sous le Premier Empire par des personnalités de la cour impériale.
+            La <strong>cartomancie</strong> désigne, au sens strict, la divination par les cartes en général, mais dans l&apos;usage courant français, elle renvoie surtout à la tradition du <strong>Petit Lenormand</strong> et du <strong>jeu de 32 cartes</strong>, distincte du tarot par son histoire et sa méthode de lecture. Cette pratique remonte au dix-huitième siècle, popularisée en France par des figures comme <strong>Etteilla</strong>, premier cartomancien professionnel connu, puis par la légendaire <strong>Marie-Anne Lenormand</strong>, consultée sous le Premier Empire par des personnalités de la cour impériale.
           </p>
           <div className="space-y-5">
             <div className="bg-teal-50 border-l-4 border-teal-500 p-5 rounded-lg">
@@ -121,7 +105,7 @@ export default function CartomancieAmourPage() {
         {/* Section 2: Petit Lenormand */}
         <section id="lenormand" className="bg-gradient-to-br from-teal-50 to-cyan-50 rounded-xl p-8 mb-8 border-2 border-teal-200">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">🎴 Le Petit Lenormand : Le Jeu de Référence en Amour</h2>
-          <p className="text-lg font-semibold text-gray-800 mb-4">Le Petit Lenormand compte 36 cartes aux symboles concrets — Cœur, Anneau, Navire — dont la combinaison offre des réponses amoureuses précises et rarement ambiguës.</p>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Le Petit Lenormand compte 36 cartes aux symboles concrets, Cœur, Anneau, Navire, dont la combinaison offre des réponses amoureuses précises et rarement ambiguës.</p>
           <p className="text-gray-700 mb-6">
             Nommé d&apos;après Marie-Anne Lenormand bien que commercialisé après sa mort, ce jeu de <strong>36 cartes</strong> s&apos;est imposé comme la référence de la cartomancie amoureuse en France. Voici les cartes les plus scrutées lors d&apos;un tirage sentimental.
           </p>
@@ -152,14 +136,14 @@ export default function CartomancieAmourPage() {
             </div>
           </div>
           <div className="bg-teal-100 border-l-4 border-teal-600 p-5 rounded-lg mt-6">
-            <p className="text-gray-700"><strong>La logique combinatoire :</strong> une lecture du Petit Lenormand ne s&apos;arrête jamais à une seule carte. Le <strong>grand tableau</strong>, qui dispose les 36 cartes selon un schéma fixe, permet une lecture d&apos;ensemble très détaillée de votre vie amoureuse — la zone du Cœur et son voisinage direct concentrant l&apos;essentiel des réponses sentimentales.</p>
+            <p className="text-gray-700"><strong>La logique combinatoire :</strong> une lecture du Petit Lenormand ne s&apos;arrête jamais à une seule carte. Le <strong>grand tableau</strong>, qui dispose les 36 cartes selon un schéma fixe, permet une lecture d&apos;ensemble très détaillée de votre vie amoureuse, la zone du Cœur et son voisinage direct concentrant l&apos;essentiel des réponses sentimentales.</p>
           </div>
         </section>
 
         {/* Section 3: jeu de 32 cartes */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">♥️ Le Jeu de 32 Cartes et la Symbolique des Couleurs</h2>
-          <p className="text-lg font-semibold text-gray-800 mb-4">Le jeu de 32 cartes ordinaires — celui de la belote — porte lui aussi une symbolique divinatoire précise en amour, chaque couleur incarnant un domaine de vie.</p>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Le jeu de 32 cartes ordinaires, celui de la belote, porte lui aussi une symbolique divinatoire précise en amour, chaque couleur incarnant un domaine de vie.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Avant même le Petit Lenormand, les cartomanciennes françaises lisaient l&apos;avenir dans un simple <strong>jeu de 32 cartes</strong>, celui-là même utilisé pour la belote ou le piquet. Chaque couleur y porte un domaine symbolique précis, hérité d&apos;une tradition orale transmise de génération en génération.
           </p>
@@ -247,7 +231,7 @@ export default function CartomancieAmourPage() {
             </div>
             <div className="bg-cyan-50 border-l-4 border-cyan-500 p-5 rounded-lg">
               <h3 className="font-bold text-lg mb-2 text-cyan-700">2. La Formulation de la Question</h3>
-              <p className="text-gray-700 text-sm">Une question claire et centrée sur vous — « Que ressent-il/elle pour moi ? » plutôt que « Que va-t-il se passer ? » — permet un tirage plus précis et une lecture plus utile.</p>
+              <p className="text-gray-700 text-sm">Une question claire et centrée sur vous, « Que ressent-il/elle pour moi ? » plutôt que « Que va-t-il se passer ? », permet un tirage plus précis et une lecture plus utile.</p>
             </div>
             <div className="bg-blue-50 border-l-4 border-blue-500 p-5 rounded-lg">
               <h3 className="font-bold text-lg mb-2 text-blue-700">3. Le Tirage et l&apos;Interprétation</h3>
@@ -258,45 +242,6 @@ export default function CartomancieAmourPage() {
             <Link href="/consulter?ref=cartomancie-amour" className="inline-block bg-teal-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-teal-700 transition">Consulter un Cartomancien Vérifié →</Link>
           </div>
         </section>
-
-        {/* FAQ Section */}
-        <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">❓ Questions Fréquentes sur la Cartomancie Amoureuse</h2>
-          <div className="space-y-6">
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Quelle est la différence entre cartomancie et tarot ?</h3>
-              <p className="text-gray-700 leading-relaxed">La <strong>cartomancie</strong> est le terme général qui désigne l&apos;art de tirer les cartes pour la divination, quel que soit le jeu utilisé : Petit Lenormand, jeu de 32 cartes ordinaires, ou même le tarot. Le tarot est donc une forme de cartomancie, mais historiquement, le terme « cartomancie » en français désigne surtout la lecture du <strong>Petit Lenormand</strong> ou des cartes à jouer classiques, aux symboles concrets et à la lecture combinatoire, par opposition aux 78 arcanes du tarot et à leur symbolique plus riche et narrative.</p>
-            </div>
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Qu&apos;est-ce que le Petit Lenormand et pourquoi est-il utilisé en amour ?</h3>
-              <p className="text-gray-700 leading-relaxed">Le <strong>Petit Lenormand</strong> est un jeu de 36 cartes aux symboles simples et concrets (le Cœur, l&apos;Anneau, le Navire, les Nuages) qui se combinent entre elles pour former une réponse précise, un peu comme des mots assemblés en phrase. En amour, il est particulièrement apprécié car il donne des réponses directes et peu ambiguës aux questions sentimentales.</p>
-            </div>
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Comment se déroule un tirage de cartomancie amoureuse ?</h3>
-              <p className="text-gray-700 leading-relaxed">Le cartomancien commence généralement par un échange sur votre situation, puis vous invite à formuler votre question sentimentale de façon claire. Il mélange ensuite les cartes en se concentrant sur votre énergie avant de les disposer selon le tirage choisi : tirage en croix, grand tableau de 36 cartes, ou tirage ciblé de trois à cinq cartes.</p>
-            </div>
-            <div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Peut-on pratiquer la cartomancie amoureuse soi-même ?</h3>
-              <p className="text-gray-700 leading-relaxed">Techniquement oui, avec un jeu de 32 cartes ou un Petit Lenormand et un peu d&apos;apprentissage des significations de base. Mais la cartomancie repose sur une lecture combinatoire fine, où le sens naît de l&apos;association entre plusieurs cartes selon leur position : une pratique autodidacte manque souvent de la nuance qu&apos;apporte un praticien expérimenté.</p>
-            </div>
-          </div>
-        </section>
-
-        {/* Articles Connexes */}
-        <div className="bg-gray-100 rounded-xl p-6 mb-8">
-          <h3 className="font-bold text-lg mb-4 text-gray-900">📚 Méthodes de Voyance Complémentaires</h3>
-          <div className="grid md:grid-cols-2 gap-3">
-            <Link href="/methodes-voyance" className="block text-teal-700 hover:text-teal-900 font-medium">&rarr; Toutes les Méthodes de Voyance Amoureuse</Link>
-            <Link href="/methodes-voyance/tirage-tarot-amour" className="block text-teal-700 hover:text-teal-900 font-medium">&rarr; Tirage Tarot Amour : Guide Complet</Link>
-            <Link href="/methodes-voyance/tarologie-amoureuse" className="block text-teal-700 hover:text-teal-900 font-medium">&rarr; Tarologie Amoureuse</Link>
-            <Link href="/methodes-voyance/oracle-amour" className="block text-teal-700 hover:text-teal-900 font-medium">&rarr; Oracle de l&apos;Amour</Link>
-            <Link href="/glossaire/petit-lenormand" className="block text-teal-700 hover:text-teal-900 font-medium">&rarr; Glossaire : Petit Lenormand</Link>
-            <Link href="/glossaire/carte-inversee" className="block text-teal-700 hover:text-teal-900 font-medium">&rarr; Glossaire : Carte Inversée</Link>
-          </div>
-        </div>
-
-        <VoyantFinalCTA topic="methodes-voyance" source="cartomancie-amour-final" />
-      </div>
-    </main>
+    </ContentPage>
   );
 }

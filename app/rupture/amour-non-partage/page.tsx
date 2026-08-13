@@ -1,106 +1,76 @@
-import type { Metadata } from 'next';
 import Link from 'next/link';
-import { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getAuthorSchema } from '@/lib/schema';
-import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
-import VoyantFinalCTA from '@/components/VoyantFinalCTA';
+import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
-export const metadata: Metadata = {
-  title: 'Amour Non Partag\u00e9 : Comprendre et Surmonter un Amour \u00e0 Sens Unique',
-  description: 'Comment surmonter un amour non partag\u00e9 ? D\u00e9couvrez les causes, les signes d\u2019un amour non r\u00e9ciproque, le r\u00f4le du tarot et les \u00e9tapes pour s\u2019ouvrir \u00e0 un amour v\u00e9ritable.',
-  keywords: ['amour non partag\u00e9', 'amour \u00e0 sens unique', 'amour non r\u00e9ciproque', 'surmonter rejet amoureux', 'voyance sentiments'],
-  alternates: {
-    canonical: 'https://www.voyantlove.fr/rupture/amour-non-partage/',
-  },
-};
-
-export default function AmourNonPartagePage() {
-  const articleSchema = getArticleSchema({
-    title: 'Amour Non Partag\u00e9 : Comprendre et Surmonter un Amour \u00e0 Sens Unique',
-    description: 'Comment surmonter un amour non partag\u00e9 ? D\u00e9couvrez les causes, les signes d\u2019un amour non r\u00e9ciproque, le r\u00f4le du tarot et les \u00e9tapes pour s\u2019ouvrir \u00e0 un amour v\u00e9ritable.',
-    url: 'https://www.voyantlove.fr/rupture/amour-non-partage/',
-    datePublished: '2026-03-03',
-    dateModified: '2026-03-03',
-    keywords: ['amour non partag\u00e9', 'amour \u00e0 sens unique', 'amour non r\u00e9ciproque', 'surmonter rejet amoureux', 'voyance sentiments'],
-  });
-
-  const breadcrumbSchema = getBreadcrumbSchema([
+const config: ContentPageConfig = {
+  title: 'Amour Non Partagé : Comprendre et Surmonter un Amour à Sens Unique',
+  description: 'Comment surmonter un amour non partagé ? Découvrez les causes, les signes d’un amour non réciproque, le rôle du tarot et les étapes pour s’ouvrir à un amour véritable.',
+  url: 'https://www.voyantlove.fr/rupture/amour-non-partage/',
+  keywords: ['amour non partagé', 'amour à sens unique', 'amour non réciproque', 'surmonter rejet amoureux', 'voyance sentiments'],
+  datePublished: '2026-03-03',
+  dateModified: '2026-03-03',
+  breadcrumb: [
     { name: 'Accueil', url: 'https://www.voyantlove.fr' },
     { name: 'Rupture Amoureuse', url: 'https://www.voyantlove.fr/rupture/' },
-    { name: 'Amour Non Partag\u00e9', url: 'https://www.voyantlove.fr/rupture/amour-non-partage/' },
-  ]);
+    { name: 'Amour Non Partagé', url: 'https://www.voyantlove.fr/rupture/amour-non-partage/' },
+  ],
+  header: {
+    emoji: '💜',
+    h1: 'Amour Non Partagé',
+    subtitle: 'Comprendre et surmonter un amour à sens unique grâce à la voyance sentimentale',
+    gradient: 'from-rose-500 via-pink-500 to-fuchsia-500',
+    backLink: { href: '/rupture', label: 'Retour aux Ruptures Amoureuses' },
+    anchors: [
+      { href: '#consultation', label: 'Guidance Sentimentale', primary: true },
+      { href: '#signes', label: 'Les Signes Révélateurs' },
+    ],
+  },
+  accentText: 'text-rose-600',
+  stats: [
+    { icon: '💔', value: '1 sur 4', label: 'Personnes concernées' },
+    { icon: '💚', value: 'Forte', label: 'Résilience constatée' },
+    { icon: '⭐', value: '4.8/5', label: 'Satisfaction' },
+    { icon: '⏳', value: '3-6 mois', label: 'Durée moyenne' },
+  ],
+  eeat: { colorScheme: 'rose', method: 'Tarot sentimental et clairvoyance émotionnelle' },
+  cta: { topic: 'rupture', slug: 'amour-non-partage' },
+  faq: [
+    {
+      q: 'Mon amour est-il non r\u00e9ciproque ?',
+      a: 'Un amour non r\u00e9ciproque se reconna\u00eet \u00e0 plusieurs signes clairs : la personne \u00e9vite les contacts intimes, ne prend jamais l\u2019initiative des rencontres, reste \u00e9vasive sur l\u2019avenir, et maintient une distance \u00e9motionnelle malgr\u00e9 votre rapprochement. Le tarot r\u00e9v\u00e8le avec pr\u00e9cision les sentiments v\u00e9ritables de l\u2019autre personne \u00e0 travers des cartes comme le Trois d\u2019\u00c9p\u00e9e (douleur de la non-r\u00e9ciprocit\u00e9) ou le Huit de Coupe (d\u00e9sir de s\u2019\u00e9loigner). La voyance sentimentale offre la clart\u00e9 n\u00e9cessaire pour accepter la r\u00e9alit\u00e9.',
+    },
+    {
+      q: 'Un amour non partag\u00e9 peut-il devenir r\u00e9ciproque ?',
+      a: 'Dans certains cas, un amour qui semble non r\u00e9ciproque peut \u00e9voluer si les conditions changent. Parfois, la personne aim\u00e9e a besoin de temps, traverse une p\u00e9riode personnelle difficile, ou n\u2019a pas encore r\u00e9alis\u00e9 ses sentiments. Le tarot peut r\u00e9v\u00e9ler si un potentiel de r\u00e9ciprocit\u00e9 existe. Toutefois, forcer les sentiments est impossible et malsain. La voyance guide vers le discernement : savoir quand pers\u00e9v\u00e9rer et quand lâcher prise.',
+    },
+    {
+      q: 'Combien de temps pour surmonter un amour non partag\u00e9 ?',
+      a: 'La dur\u00e9e varie de 3 \u00e0 6 mois en moyenne pour un amour non r\u00e9ciproque de courte dur\u00e9e, et jusqu\u2019\u00e0 un an ou plus pour un amour platonique de longue date. Le processus est similaire au deuil amoureux mais pr\u00e9sente une difficult\u00e9 suppl\u00e9mentaire : l\u2019absence de souvenirs de couple \u00e0 relativiser. Le tarot identifie les blocages qui prolongent l\u2019attachement et acc\u00e9l\u00e8re la lib\u00e9ration \u00e9motionnelle.',
+    },
+    {
+      q: 'Pourquoi suis-je attir\u00e9(e) par des personnes indisponibles ?',
+      a: 'L\u2019attraction syst\u00e9matique vers des personnes indisponibles r\u00e9v\u00e8le souvent des sch\u00e9mas inconscients li\u00e9s \u00e0 l\u2019enfance : recherche d\u2019un amour parental conditionnel, peur de l\u2019intimit\u00e9 v\u00e9ritable, ou croyance profonde de ne pas m\u00e9riter l\u2019amour r\u00e9ciproque. Le tarot karmique peut r\u00e9v\u00e9ler ces sch\u00e9mas ancestraux et les le\u00e7ons que votre \u00e2me cherche \u00e0 int\u00e9grer \u00e0 travers ces exp\u00e9riences douloureuses.',
+    },
+    {
+      q: 'Le tarot r\u00e9v\u00e8le-t-il si quelqu\u2019un pense \u00e0 moi ?',
+      a: 'Oui, le tarot est particuli\u00e8rement efficace pour r\u00e9v\u00e9ler les pens\u00e9es et les \u00e9nergies qu\u2019une personne projette vers vous. Des cartes comme le Deux de Coupe en position de l\u2019autre signalent une connexion mutuelle. Le Chevalier de Coupe montre une personne qui pense \u00e0 vous avec tendresse. Le Huit d\u2019\u00c9p\u00e9e r\u00e9v\u00e8le que la personne vous a mentalement bloqu\u00e9(e). La voyance sentimentale apporte les r\u00e9ponses que l\u2019observation seule ne peut offrir.',
+    },
+  ],
+  related: [
+    { href: '/sentiments/maime-t-il-elle', label: 'M\'aime-t-il/elle Vraiment ?' },
+    { href: '/rupture/oublier-son-ex', label: 'Comment Oublier son Ex' },
+    { href: '/nouvelle-rencontre/trouver-ame-soeur', label: 'Trouver son Âme Sœur' },
+    { href: '/sentiments/pense-t-il-elle-a-moi', label: 'Pense-t-il/elle à Moi ?' },
+    { href: '/rupture/chagrin-damour', label: 'Surmonter un Chagrin d\'Amour' },
+  ],
+};
 
-  const authorSchema = getAuthorSchema();
+export const metadata = contentMeta(config);
 
-  const faqSchema = getFAQSchema([
-    {
-      question: 'Mon amour est-il non r\u00e9ciproque ?',
-      answer: 'Un amour non r\u00e9ciproque se reconna\u00eet \u00e0 plusieurs signes clairs : la personne \u00e9vite les contacts intimes, ne prend jamais l\u2019initiative des rencontres, reste \u00e9vasive sur l\u2019avenir, et maintient une distance \u00e9motionnelle malgr\u00e9 votre rapprochement. Le tarot r\u00e9v\u00e8le avec pr\u00e9cision les sentiments v\u00e9ritables de l\u2019autre personne \u00e0 travers des cartes comme le Trois d\u2019\u00c9p\u00e9e (douleur de la non-r\u00e9ciprocit\u00e9) ou le Huit de Coupe (d\u00e9sir de s\u2019\u00e9loigner). La voyance sentimentale offre la clart\u00e9 n\u00e9cessaire pour accepter la r\u00e9alit\u00e9.',
-    },
-    {
-      question: 'Un amour non partag\u00e9 peut-il devenir r\u00e9ciproque ?',
-      answer: 'Dans certains cas, un amour qui semble non r\u00e9ciproque peut \u00e9voluer si les conditions changent. Parfois, la personne aim\u00e9e a besoin de temps, traverse une p\u00e9riode personnelle difficile, ou n\u2019a pas encore r\u00e9alis\u00e9 ses sentiments. Le tarot peut r\u00e9v\u00e9ler si un potentiel de r\u00e9ciprocit\u00e9 existe. Toutefois, forcer les sentiments est impossible et malsain. La voyance guide vers le discernement : savoir quand pers\u00e9v\u00e9rer et quand lâcher prise.',
-    },
-    {
-      question: 'Combien de temps pour surmonter un amour non partag\u00e9 ?',
-      answer: 'La dur\u00e9e varie de 3 \u00e0 6 mois en moyenne pour un amour non r\u00e9ciproque de courte dur\u00e9e, et jusqu\u2019\u00e0 un an ou plus pour un amour platonique de longue date. Le processus est similaire au deuil amoureux mais pr\u00e9sente une difficult\u00e9 suppl\u00e9mentaire : l\u2019absence de souvenirs de couple \u00e0 relativiser. Le tarot identifie les blocages qui prolongent l\u2019attachement et acc\u00e9l\u00e8re la lib\u00e9ration \u00e9motionnelle.',
-    },
-    {
-      question: 'Pourquoi suis-je attir\u00e9(e) par des personnes indisponibles ?',
-      answer: 'L\u2019attraction syst\u00e9matique vers des personnes indisponibles r\u00e9v\u00e8le souvent des sch\u00e9mas inconscients li\u00e9s \u00e0 l\u2019enfance : recherche d\u2019un amour parental conditionnel, peur de l\u2019intimit\u00e9 v\u00e9ritable, ou croyance profonde de ne pas m\u00e9riter l\u2019amour r\u00e9ciproque. Le tarot karmique peut r\u00e9v\u00e9ler ces sch\u00e9mas ancestraux et les le\u00e7ons que votre \u00e2me cherche \u00e0 int\u00e9grer \u00e0 travers ces exp\u00e9riences douloureuses.',
-    },
-    {
-      question: 'Le tarot r\u00e9v\u00e8le-t-il si quelqu\u2019un pense \u00e0 moi ?',
-      answer: 'Oui, le tarot est particuli\u00e8rement efficace pour r\u00e9v\u00e9ler les pens\u00e9es et les \u00e9nergies qu\u2019une personne projette vers vous. Des cartes comme le Deux de Coupe en position de l\u2019autre signalent une connexion mutuelle. Le Chevalier de Coupe montre une personne qui pense \u00e0 vous avec tendresse. Le Huit d\u2019\u00c9p\u00e9e r\u00e9v\u00e8le que la personne vous a mentalement bloqu\u00e9(e). La voyance sentimentale apporte les r\u00e9ponses que l\u2019observation seule ne peut offrir.',
-    },
-  ]);
-
+export default function AmourNonPartagePage() {
   return (
-    <main className="min-h-screen bg-gray-50">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(authorSchema) }}
-      />
-
-      {/* Header */}
-      <header className="bg-gradient-to-r from-rose-500 via-pink-500 to-fuchsia-500 text-white py-16 px-4">
-        <div className="max-w-4xl mx-auto">
-          <Link href="/rupture" className="text-white/80 hover:text-white mb-4 inline-block">&larr; Retour aux Ruptures Amoureuses</Link>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">&#x1F49C; Amour Non Partag&eacute;</h1>
-          <p className="text-xl opacity-95 mb-6">Comprendre et surmonter un amour &agrave; sens unique gr&acirc;ce &agrave; la voyance sentimentale</p>
-          <div className="flex gap-4 flex-wrap">
-            <a href="#consultation" className="bg-white text-rose-600 px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition">Guidance Sentimentale</a>
-            <a href="#signes" className="border-2 border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-rose-600 transition">Les Signes R&eacute;v&eacute;lateurs</a>
-          </div>
-        </div>
-      </header>
-
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        {/* Stats bar */}
-        <div className="bg-white rounded-xl shadow-md p-6 mb-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-          <div><div className="text-3xl mb-1">&#x1F494;</div><div className="text-2xl font-bold text-rose-600">1 sur 4</div><div className="text-sm text-gray-600">Personnes concern&eacute;es</div></div>
-          <div><div className="text-3xl mb-1">&#x1F49A;</div><div className="text-2xl font-bold text-rose-600">Forte</div><div className="text-sm text-gray-600">R&eacute;silience constat&eacute;e</div></div>
-          <div><div className="text-3xl mb-1">&#x2B50;</div><div className="text-2xl font-bold text-rose-600">4.8/5</div><div className="text-sm text-gray-600">Satisfaction</div></div>
-          <div><div className="text-3xl mb-1">&#x23F3;</div><div className="text-2xl font-bold text-rose-600">3-6 mois</div><div className="text-sm text-gray-600">Dur&eacute;e moyenne</div></div>
-        </div>
-
-        {/* EEAT Signal */}
-        <EEATSignal colorScheme="rose" method="Tarot sentimental et clairvoyance &eacute;motionnelle" />
-
-        {/* Answer Capsule */}
+    <ContentPage config={config}>
         <article className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-rose-600">
           <div className="bg-rose-50 border-l-4 border-rose-500 p-6 rounded-lg">
             <p className="text-lg leading-relaxed">
@@ -316,53 +286,6 @@ export default function AmourNonPartagePage() {
             <p className="text-gray-700"><strong>Compl&eacute;ment :</strong> Si vous traversez un <strong>chagrin d&apos;amour</strong> li&eacute; &agrave; cette situation, notre guide d&eacute;di&eacute; au <Link href="/rupture/chagrin-damour" className="text-rose-600 hover:text-rose-800 underline font-medium">chagrin d&apos;amour</Link> vous propose des techniques concr&egrave;tes de soulagement imm&eacute;diat.</p>
           </div>
         </section>
-
-        {/* FAQ Section */}
-        <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">&#x2753; Questions Fr&eacute;quentes sur l&apos;Amour Non Partag&eacute;</h2>
-          <p className="text-lg font-semibold text-gray-800 mb-4">Voici les r&eacute;ponses aux questions les plus pos&eacute;es sur l&apos;amour non partag&eacute; : reconna&icirc;tre la non-r&eacute;ciprocit&eacute;, possibilit&eacute; de transformation, dur&eacute;e de gu&eacute;rison, sch&eacute;mas r&eacute;p&eacute;titifs et r&eacute;v&eacute;lations du tarot.</p>
-          <div className="space-y-6">
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Mon amour est-il non r&eacute;ciproque ?</h3>
-              <p className="text-gray-700 leading-relaxed">Un <strong>amour non r&eacute;ciproque</strong> se reconna&icirc;t &agrave; plusieurs signes clairs : la personne &eacute;vite les contacts intimes, ne prend jamais l&apos;initiative des rencontres, reste &eacute;vasive sur l&apos;avenir, et maintient une distance &eacute;motionnelle malgr&eacute; votre rapprochement. Le <strong>tarot</strong> r&eacute;v&egrave;le avec pr&eacute;cision les <strong>sentiments</strong> v&eacute;ritables de l&apos;autre personne &agrave; travers des cartes comme le Trois d&apos;&Eacute;p&eacute;e ou le Huit de Coupe. La <strong>voyance sentimentale</strong> offre la clart&eacute; n&eacute;cessaire pour accepter la r&eacute;alit&eacute;.</p>
-            </div>
-
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Un amour non partag&eacute; peut-il devenir r&eacute;ciproque ?</h3>
-              <p className="text-gray-700 leading-relaxed">Dans certains cas, un <strong>amour</strong> qui semble <strong>non r&eacute;ciproque</strong> peut &eacute;voluer si les conditions changent. Parfois, la personne aim&eacute;e a besoin de temps, traverse une p&eacute;riode personnelle difficile, ou n&apos;a pas encore r&eacute;alis&eacute; ses <strong>sentiments</strong>. Le <strong>tarot</strong> peut r&eacute;v&eacute;ler si un potentiel de r&eacute;ciprocit&eacute; existe. Toutefois, forcer les sentiments est impossible et malsain. La <strong>voyance</strong> guide vers le discernement : savoir quand pers&eacute;v&eacute;rer et quand lâcher prise.</p>
-            </div>
-
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Combien de temps pour surmonter un amour non partag&eacute; ?</h3>
-              <p className="text-gray-700 leading-relaxed">La dur&eacute;e varie de 3 &agrave; 6 mois en moyenne pour un <strong>amour non r&eacute;ciproque</strong> de courte dur&eacute;e, et jusqu&apos;&agrave; un an ou plus pour un <strong>amour platonique</strong> de longue date. Le processus est similaire au <strong>deuil amoureux</strong> mais pr&eacute;sente une difficult&eacute; suppl&eacute;mentaire : l&apos;absence de souvenirs de couple &agrave; relativiser. Le <strong>tarot</strong> identifie les <strong>blocages</strong> qui prolongent l&apos;attachement et acc&eacute;l&egrave;re la <strong>lib&eacute;ration &eacute;motionnelle</strong>.</p>
-            </div>
-
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Pourquoi suis-je attir&eacute;(e) par des personnes indisponibles ?</h3>
-              <p className="text-gray-700 leading-relaxed">L&apos;attraction syst&eacute;matique vers des personnes indisponibles r&eacute;v&egrave;le souvent des <strong>sch&eacute;mas inconscients</strong> li&eacute;s &agrave; l&apos;enfance : recherche d&apos;un amour parental conditionnel, peur de l&apos;intimit&eacute; v&eacute;ritable, ou croyance profonde de ne pas m&eacute;riter l&apos;<strong>amour r&eacute;ciproque</strong>. Le <strong>tarot karmique</strong> peut r&eacute;v&eacute;ler ces sch&eacute;mas ancestraux et les le&ccedil;ons que votre &acirc;me cherche &agrave; int&eacute;grer &agrave; travers ces exp&eacute;riences douloureuses.</p>
-            </div>
-
-            <div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Le tarot r&eacute;v&egrave;le-t-il si quelqu&apos;un pense &agrave; moi ?</h3>
-              <p className="text-gray-700 leading-relaxed">Oui, le <strong>tarot</strong> est particuli&egrave;rement efficace pour r&eacute;v&eacute;ler les pens&eacute;es et les &eacute;nergies qu&apos;une personne projette vers vous. Des cartes comme le <strong>Deux de Coupe</strong> en position de l&apos;autre signalent une connexion mutuelle. Le <strong>Chevalier de Coupe</strong> montre une personne qui pense &agrave; vous avec tendresse. Le <strong>Huit d&apos;&Eacute;p&eacute;e</strong> r&eacute;v&egrave;le que la personne vous a mentalement bloqu&eacute;(e). La <strong>voyance sentimentale</strong> apporte les r&eacute;ponses que l&apos;observation seule ne peut offrir.</p>
-            </div>
-          </div>
-        </section>
-
-        {/* Articles Connexes */}
-        <div className="bg-gray-100 rounded-xl p-6 mb-8">
-          <h3 className="font-bold text-lg mb-4 text-gray-900">&#x1F4DA; Articles Connexes</h3>
-          <div className="space-y-2">
-            <Link href="/sentiments/maime-t-il-elle" className="block text-rose-600 hover:text-rose-800 font-medium">&rarr; M&apos;aime-t-il/elle Vraiment ?</Link>
-            <Link href="/rupture/oublier-son-ex" className="block text-rose-600 hover:text-rose-800 font-medium">&rarr; Comment Oublier son Ex</Link>
-            <Link href="/nouvelle-rencontre/trouver-ame-soeur" className="block text-rose-600 hover:text-rose-800 font-medium">&rarr; Trouver son &Acirc;me S&oelig;ur</Link>
-            <Link href="/sentiments/pense-t-il-elle-a-moi" className="block text-rose-600 hover:text-rose-800 font-medium">&rarr; Pense-t-il/elle &agrave; Moi ?</Link>
-            <Link href="/rupture/chagrin-damour" className="block text-rose-600 hover:text-rose-800 font-medium">&rarr; Surmonter un Chagrin d&apos;Amour</Link>
-          </div>
-        </div>
-
-        <VoyantFinalCTA topic="rupture" source="amour-non-partage-final" />
-      </div>
-    </main>
+    </ContentPage>
   );
 }

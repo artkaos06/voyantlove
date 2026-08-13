@@ -1,4 +1,4 @@
-// Télémaque dedicated numbers — three attribution buckets, one per campaign /
+// Télémaque dedicated numbers, three attribution buckets, one per campaign /
 // angle, selected via the ?num= param. Télémaque reports reversement per number,
 // so you learn which bucket drives paying calls despite phone conversion being
 // otherwise attribution-blind. Shared by the quiz (/lp/lecture-amour) and the

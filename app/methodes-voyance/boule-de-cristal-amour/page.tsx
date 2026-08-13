@@ -1,89 +1,73 @@
-import type { Metadata } from 'next';
 import Link from 'next/link';
-import { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getAuthorSchema } from '@/lib/schema';
-import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
-import VoyantFinalCTA from '@/components/VoyantFinalCTA';
+import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
-export const metadata: Metadata = {
+const config: ContentPageConfig = {
   title: 'Boule de Cristal Amour : Voyance et Cristallomancie Sentimentale',
   description: 'Découvrez la boule de cristal appliquée à l\'amour : fonctionnement, symboles perçus, déroulement d\'une séance. Guide complet de la cristallomancie pour vos questions de cœur.',
+  url: 'https://www.voyantlove.fr/methodes-voyance/boule-de-cristal-amour/',
   keywords: ['boule de cristal amour', 'cristallomancie amour', 'voyance boule de cristal', 'voyant boule de cristal amoureux'],
-  alternates: {
-    canonical: 'https://www.voyantlove.fr/methodes-voyance/boule-de-cristal-amour/',
-  },
-};
-
-export default function BouleDeCristalAmourPage() {
-  const articleSchema = getArticleSchema({
-    title: 'Boule de Cristal Amour : Voyance et Cristallomancie Sentimentale',
-    description: 'Découvrez la boule de cristal appliquée à l\'amour : fonctionnement, symboles perçus, déroulement d\'une séance. Guide complet de la cristallomancie pour vos questions de cœur.',
-    url: 'https://www.voyantlove.fr/methodes-voyance/boule-de-cristal-amour/',
-    datePublished: '2026-08-06',
-    dateModified: '2026-08-06',
-    keywords: ['boule de cristal amour', 'cristallomancie amour', 'voyance boule de cristal'],
-  });
-
-  const authorSchema = getAuthorSchema();
-
-  const breadcrumbSchema = getBreadcrumbSchema([
+  datePublished: '2026-08-06',
+  dateModified: '2026-08-06',
+  breadcrumb: [
     { name: 'Accueil', url: 'https://www.voyantlove.fr' },
     { name: 'Méthodes de Voyance', url: 'https://www.voyantlove.fr/methodes-voyance/' },
     { name: 'Boule de Cristal Amour', url: 'https://www.voyantlove.fr/methodes-voyance/boule-de-cristal-amour/' },
-  ]);
+  ],
+  header: {
+    emoji: '🔮',
+    h1: 'Boule de Cristal Amour',
+    subtitle: 'La cristallomancie au service de vos questions sentimentales',
+    gradient: 'from-blue-800 via-indigo-800 to-violet-900',
+    backLink: { href: '/methodes-voyance', label: 'Retour aux Méthodes de Voyance' },
+    anchors: [
+      { href: '#fonctionnement', label: 'Comment ça Marche', primary: true },
+      { href: '#consultation', label: 'La Consultation' },
+    ],
+  },
+  accentText: 'text-indigo-800',
+  stats: [
+    { icon: '🔮', value: 'Scrying', label: 'Nom de la technique' },
+    { icon: '🏛️', value: 'Antique', label: 'Grèce et Égypte' },
+    { icon: '💭', value: 'Symbolique', label: 'Images à interpréter' },
+    { icon: '🕯️', value: 'Concentration', label: 'État réceptif' },
+  ],
+  eeat: { colorScheme: 'blue', method: 'Cristallomancie et voyance à la boule de cristal' },
+  cta: { topic: 'methodes-voyance', slug: 'boule-cristal-amour' },
+  faq: [
+    {
+      q: 'Voit-on vraiment des scènes précises dans une boule de cristal ?',
+      a: 'Les praticiens décrivent rarement des scènes nettes façon écran de cinéma : il s\'agit plutôt d\'impressions, de formes suggérées, de couleurs ou d\'une ambiance générale qui émergent progressivement pendant la concentration, puis que le voyant interprète symboliquement en lien avec votre question amoureuse. La boule elle-même reste un objet neutre ; c\'est la perception intuitive du praticien qui produit le sens.',
+    },
+    {
+      q: 'Comment se déroule une consultation de boule de cristal pour l\'amour ?',
+      a: 'Le voyant vous écoute présenter votre situation sentimentale, puis se concentre sur la boule après un temps de calme et de recentrage. Il entre progressivement dans un état de concentration relâchée qui laisse émerger des images ou des impressions liées à votre question, qu\'il interprète et partage avec vous au fur et à mesure de la séance.',
+    },
+    {
+      q: 'La boule de cristal fonctionne-t-elle mieux pour certaines questions amoureuses ?',
+      a: 'Cette méthode convient particulièrement aux questions ouvertes et globales sur une situation sentimentale, l\'ambiance générale d\'une relation, l\'évolution probable d\'un lien naissant, plutôt qu\'aux questions fermées de type oui/non, pour lesquelles le pendule est souvent plus direct.',
+    },
+    {
+      q: 'Faut-il une vraie boule en cristal pour que la voyance fonctionne ?',
+      a: 'Non, de nombreux praticiens utilisent des boules en verre optique, tout aussi efficaces selon eux, car ce qui importe est la qualité de concentration du praticien, pas la composition minérale exacte du support. Certains voyants pratiquent même le scrying dans un simple bol d\'eau claire ou un miroir noir.',
+    },
+  ],
+  related: [
+    { href: '/methodes-voyance', label: 'Toutes les Méthodes de Voyance Amoureuse' },
+    { href: '/methodes-voyance/voyance-sentimentale', label: 'Voyance Sentimentale' },
+    { href: '/methodes-voyance/medium-amour', label: 'Médium Amour' },
+    { href: '/methodes-voyance/oracle-amour', label: 'Oracle de l\'Amour' },
+    { href: '/glossaire/cristallomancie', label: 'Glossaire : Cristallomancie' },
+    { href: '/glossaire/voyance-blanche', label: 'Glossaire : Voyance Blanche' },
+  ],
+};
 
-  const faqSchema = getFAQSchema([
-    {
-      question: 'Voit-on vraiment des scènes précises dans une boule de cristal ?',
-      answer: 'Les praticiens décrivent rarement des scènes nettes façon écran de cinéma : il s\'agit plutôt d\'impressions, de formes suggérées, de couleurs ou d\'une ambiance générale qui émergent progressivement pendant la concentration, puis que le voyant interprète symboliquement en lien avec votre question amoureuse. La boule elle-même reste un objet neutre ; c\'est la perception intuitive du praticien qui produit le sens.',
-    },
-    {
-      question: 'Comment se déroule une consultation de boule de cristal pour l\'amour ?',
-      answer: 'Le voyant vous écoute présenter votre situation sentimentale, puis se concentre sur la boule après un temps de calme et de recentrage. Il entre progressivement dans un état de concentration relâchée qui laisse émerger des images ou des impressions liées à votre question, qu\'il interprète et partage avec vous au fur et à mesure de la séance.',
-    },
-    {
-      question: 'La boule de cristal fonctionne-t-elle mieux pour certaines questions amoureuses ?',
-      answer: 'Cette méthode convient particulièrement aux questions ouvertes et globales sur une situation sentimentale — l\'ambiance générale d\'une relation, l\'évolution probable d\'un lien naissant — plutôt qu\'aux questions fermées de type oui/non, pour lesquelles le pendule est souvent plus direct.',
-    },
-    {
-      question: 'Faut-il une vraie boule en cristal pour que la voyance fonctionne ?',
-      answer: 'Non, de nombreux praticiens utilisent des boules en verre optique, tout aussi efficaces selon eux, car ce qui importe est la qualité de concentration du praticien, pas la composition minérale exacte du support. Certains voyants pratiquent même le scrying dans un simple bol d\'eau claire ou un miroir noir.',
-    },
-  ]);
+export const metadata = contentMeta(config);
 
+export default function BouleDeCristalAmourPage() {
   return (
-    <main className="min-h-screen bg-gray-50">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(authorSchema) }} />
-
-      {/* Header */}
-      <header className="bg-gradient-to-r from-blue-800 via-indigo-800 to-violet-900 text-white py-16 px-4">
-        <div className="max-w-4xl mx-auto">
-          <Link href="/methodes-voyance" className="text-white/80 hover:text-white mb-4 inline-block">&larr; Retour aux Méthodes de Voyance</Link>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">🔮 Boule de Cristal Amour</h1>
-          <p className="text-xl opacity-95 mb-6">La cristallomancie au service de vos questions sentimentales</p>
-          <div className="flex gap-4 flex-wrap">
-            <a href="#fonctionnement" className="bg-white text-indigo-800 px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition">Comment ça Marche</a>
-            <a href="#consultation" className="border-2 border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-indigo-800 transition">La Consultation</a>
-          </div>
-        </div>
-      </header>
-
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        {/* Stats bar */}
-        <div className="bg-white rounded-xl shadow-md p-6 mb-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-          <div><div className="text-3xl mb-1">🔮</div><div className="text-2xl font-bold text-indigo-800">Scrying</div><div className="text-sm text-gray-600">Nom de la technique</div></div>
-          <div><div className="text-3xl mb-1">🏛️</div><div className="text-2xl font-bold text-indigo-800">Antique</div><div className="text-sm text-gray-600">Grèce et Égypte</div></div>
-          <div><div className="text-3xl mb-1">💭</div><div className="text-2xl font-bold text-indigo-800">Symbolique</div><div className="text-sm text-gray-600">Images à interpréter</div></div>
-          <div><div className="text-3xl mb-1">🕯️</div><div className="text-2xl font-bold text-indigo-800">Concentration</div><div className="text-sm text-gray-600">État réceptif</div></div>
-        </div>
-
-        <EEATSignal colorScheme="blue" method="Cristallomancie et voyance à la boule de cristal" />
-
-        {/* Answer capsule */}
+    <ContentPage config={config}>
         <article className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-indigo-700">
           <div className="bg-indigo-50 border-l-4 border-indigo-600 p-6 rounded-lg">
             <p className="text-lg leading-relaxed">
@@ -180,7 +164,7 @@ export default function BouleDeCristalAmourPage() {
             </div>
           </div>
           <div className="bg-indigo-50 border-l-4 border-indigo-500 p-5 rounded-lg mt-6">
-            <p className="text-gray-700"><strong>Notre conseil :</strong> beaucoup de <Link href="/methodes-voyance/voyance-sentimentale" className="text-indigo-700 hover:text-indigo-900 underline font-medium">voyants sentimentaux</Link> combinent la boule de cristal avec un tirage de cartes pour affiner leur lecture — la sphère capte l&apos;énergie générale de la situation, les cartes en précisent les détails.</p>
+            <p className="text-gray-700"><strong>Notre conseil :</strong> beaucoup de <Link href="/methodes-voyance/voyance-sentimentale" className="text-indigo-700 hover:text-indigo-900 underline font-medium">voyants sentimentaux</Link> combinent la boule de cristal avec un tirage de cartes pour affiner leur lecture, la sphère capte l&apos;énergie générale de la situation, les cartes en précisent les détails.</p>
           </div>
         </section>
 
@@ -206,45 +190,6 @@ export default function BouleDeCristalAmourPage() {
             <Link href="/consulter?ref=boule-de-cristal-amour" className="inline-block bg-indigo-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-indigo-800 transition">Consulter un Voyant Spécialisé →</Link>
           </div>
         </section>
-
-        {/* FAQ Section */}
-        <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">❓ Questions Fréquentes sur la Boule de Cristal en Amour</h2>
-          <div className="space-y-6">
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Voit-on vraiment des scènes précises dans une boule de cristal ?</h3>
-              <p className="text-gray-700 leading-relaxed">Les praticiens décrivent rarement des scènes nettes façon écran de cinéma : il s&apos;agit plutôt d&apos;impressions, de formes suggérées, de couleurs ou d&apos;une ambiance générale qui émergent progressivement pendant la concentration, puis que le voyant interprète symboliquement.</p>
-            </div>
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Comment se déroule une consultation de boule de cristal pour l&apos;amour ?</h3>
-              <p className="text-gray-700 leading-relaxed">Le voyant vous écoute présenter votre situation sentimentale, puis se concentre sur la boule après un temps de calme. Il entre progressivement dans un état de concentration relâchée qui laisse émerger des images liées à votre question, qu&apos;il interprète et partage avec vous.</p>
-            </div>
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">La boule de cristal fonctionne-t-elle mieux pour certaines questions amoureuses ?</h3>
-              <p className="text-gray-700 leading-relaxed">Cette méthode convient particulièrement aux questions ouvertes et globales sur une situation sentimentale, plutôt qu&apos;aux questions fermées de type oui/non, pour lesquelles le pendule est souvent plus direct.</p>
-            </div>
-            <div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Faut-il une vraie boule en cristal pour que la voyance fonctionne ?</h3>
-              <p className="text-gray-700 leading-relaxed">Non, de nombreux praticiens utilisent des boules en verre optique, tout aussi efficaces selon eux, car ce qui importe est la qualité de concentration du praticien, pas la composition minérale exacte du support.</p>
-            </div>
-          </div>
-        </section>
-
-        {/* Articles Connexes */}
-        <div className="bg-gray-100 rounded-xl p-6 mb-8">
-          <h3 className="font-bold text-lg mb-4 text-gray-900">📚 Méthodes de Voyance Complémentaires</h3>
-          <div className="grid md:grid-cols-2 gap-3">
-            <Link href="/methodes-voyance" className="block text-indigo-700 hover:text-indigo-900 font-medium">&rarr; Toutes les Méthodes de Voyance Amoureuse</Link>
-            <Link href="/methodes-voyance/voyance-sentimentale" className="block text-indigo-700 hover:text-indigo-900 font-medium">&rarr; Voyance Sentimentale</Link>
-            <Link href="/methodes-voyance/medium-amour" className="block text-indigo-700 hover:text-indigo-900 font-medium">&rarr; Médium Amour</Link>
-            <Link href="/methodes-voyance/oracle-amour" className="block text-indigo-700 hover:text-indigo-900 font-medium">&rarr; Oracle de l&apos;Amour</Link>
-            <Link href="/glossaire/cristallomancie" className="block text-indigo-700 hover:text-indigo-900 font-medium">&rarr; Glossaire : Cristallomancie</Link>
-            <Link href="/glossaire/voyance-blanche" className="block text-indigo-700 hover:text-indigo-900 font-medium">&rarr; Glossaire : Voyance Blanche</Link>
-          </div>
-        </div>
-
-        <VoyantFinalCTA topic="methodes-voyance" source="boule-cristal-amour-final" />
-      </div>
-    </main>
+    </ContentPage>
   );
 }

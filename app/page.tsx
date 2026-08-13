@@ -42,7 +42,7 @@ export default function HomePage() {
     },
     {
       question: 'Peut-on consulter un voyant VoyantLove par téléphone ou par chat ?',
-      answer: 'Oui, nos voyants sont disponibles par téléphone et par chat en ligne. Choisissez le mode qui vous met le plus à l\'aise. La qualité de la lecture est identique quel que soit le canal — ce qui compte, c\'est la connexion énergétique entre vous et le voyant, pas le support technique.',
+      answer: 'Oui, nos voyants sont disponibles par téléphone et par chat en ligne. Choisissez le mode qui vous met le plus à l\'aise. La qualité de la lecture est identique quel que soit le canal, ce qui compte, c\'est la connexion énergétique entre vous et le voyant, pas le support technique.',
     },
   ]);
 
@@ -74,7 +74,7 @@ export default function HomePage() {
             Vos Voyants et Voyantes Spécialisés en Amour
           </p>
           <p className="text-lg mb-8 max-w-2xl mx-auto opacity-90">
-            Reconquête, sentiments, rencontre, rupture — consultez un voyant expert qui se consacre exclusivement aux questions du cœur.
+            Reconquête, sentiments, rencontre, rupture, consultez un voyant expert qui se consacre exclusivement aux questions du cœur.
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
             <DynamicCTAButton
@@ -319,7 +319,7 @@ export default function HomePage() {
             Pourquoi Choisir VoyantLove ?
           </h2>
           <p className="text-lg text-gray-800 mb-10 text-center max-w-3xl mx-auto">
-            VoyantLove n&apos;est pas une plateforme de voyance généraliste. Chaque voyant de notre équipe est spécialisé en questions sentimentales — c&apos;est notre seul métier.
+            VoyantLove n&apos;est pas une plateforme de voyance généraliste. Chaque voyant de notre équipe est spécialisé en questions sentimentales, c&apos;est notre seul métier.
           </p>
 
           <div className="grid md:grid-cols-2 gap-8 mb-12">
@@ -398,7 +398,7 @@ export default function HomePage() {
             </div>
             <div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Peut-on consulter par téléphone ou par chat ?</h3>
-              <p className="text-gray-700 leading-relaxed">Oui, nos voyants sont disponibles par <strong>téléphone</strong> et par <strong>chat en ligne</strong>. Choisissez le mode qui vous met le plus à l&apos;aise. La qualité de la lecture est identique quel que soit le canal — ce qui compte, c&apos;est la connexion entre vous et le voyant.</p>
+              <p className="text-gray-700 leading-relaxed">Oui, nos voyants sont disponibles par <strong>téléphone</strong> et par <strong>chat en ligne</strong>. Choisissez le mode qui vous met le plus à l&apos;aise. La qualité de la lecture est identique quel que soit le canal, ce qui compte, c&apos;est la connexion entre vous et le voyant.</p>
             </div>
           </div>
         </div>
@@ -436,7 +436,7 @@ export default function HomePage() {
       {/* Footer */}
       <footer className="bg-gray-800 text-white py-8 px-4">
         <div className="max-w-6xl mx-auto text-center">
-          <p className="mb-4">© 2026 VoyantLove.fr — Vos Voyants Spécialisés en Amour</p>
+          <p className="mb-4">© 2026 VoyantLove.fr, Vos Voyants Spécialisés en Amour</p>
           <div className="flex gap-6 justify-center text-sm text-gray-400">
             <Link href="/a-propos" className="hover:text-white">À propos</Link>
             <Link href="/mentions-legales" className="hover:text-white">Mentions légales</Link>

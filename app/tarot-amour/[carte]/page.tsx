@@ -7,6 +7,7 @@ import { renderWithEntities } from '@/lib/entityBold';
 import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
+import AskAI from '@/components/AskAI';
 
 const LIVE_CARDS = TAROT_LOVE_CARDS.filter((c) => validateCardRecord(c).length === 0);
 
@@ -83,10 +84,13 @@ export default async function CardPage({ params }: Props) {
       <div className="max-w-4xl mx-auto px-4 py-8">
         <EEATSignal colorScheme="purple" method="Interprétation du Tarot de Marseille en amour" />
 
-        {/* Answer capsule — extractive snippet target */}
+        {/* Answer capsule, extractive snippet target */}
         <section className="bg-purple-50 border-l-4 border-purple-500 rounded-r-xl p-6 md:p-8 mb-8">
           <h2 className="text-xl font-bold text-gray-900 mb-3">Que signifie {c.name} en amour&nbsp;?</h2>
           <p className="text-lg leading-relaxed text-gray-800">{renderWithEntities(c.answerCapsule)}</p>
+          <div className="mt-5">
+            <AskAI title={title} url={url} context={c.answerCapsule} />
+          </div>
         </section>
 
         <article className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-indigo-500">

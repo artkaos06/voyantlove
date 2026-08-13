@@ -39,7 +39,7 @@ export default function AffiliateDisclosure({
         LovePsychicGuide is reader-supported. When you sign up for a service
         through one of our links, we may earn a commission at no extra cost to
         you. This compensation does not influence our reviews, ratings, or
-        recommendations — we only feature services we have researched and would
+        recommendations, we only feature services we have researched and would
         consider using ourselves. <em>For entertainment purposes; psychic
         readings are not a substitute for licensed mental-health, medical, or
         legal advice.</em>

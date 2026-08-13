@@ -9,7 +9,7 @@
 //   - 3-bullet summary of the article's answer
 //   - Custom CTA passed in via `cta` prop (allows topic pages to choose
 //     between an internal Link to the review page or a direct AffiliateCTA
-//     to the offer URL — important for conversion engineering on cold
+//     to the offer URL, important for conversion engineering on cold
 //     paid traffic).
 
 import Link from 'next/link';

@@ -1,118 +1,88 @@
-import type { Metadata } from 'next';
 import Link from 'next/link';
-import { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getAuthorSchema } from '@/lib/schema';
-import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
-import VoyantFinalCTA from '@/components/VoyantFinalCTA';
+import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
-export const metadata: Metadata = {
+const config: ContentPageConfig = {
   title: 'Pendule Amour : Questions Sentimentales, Guide et Consultation',
   description: 'D\u00e9couvrez le pendule amour : r\u00e9ponses oui/non instantan\u00e9es, radi\u00e9sth\u00e9sie amoureuse et guidance sentimentale. Guide complet du pendule divinatoire pour les questions d\u2019amour.',
+  url: 'https://www.voyantlove.fr/methodes-voyance/pendule-amour/',
   keywords: ['pendule amour', 'radi\u00e9sth\u00e9sie amoureuse', 'pendule divinatoire', 'voyance pendule', 'pendule oui non amour'],
-  alternates: {
-    canonical: 'https://www.voyantlove.fr/methodes-voyance/pendule-amour/',
-  },
-};
-
-export default function PenduleAmourPage() {
-  const articleSchema = getArticleSchema({
-    title: 'Pendule Amour : Questions Sentimentales, Guide et Consultation',
-    description: 'D\u00e9couvrez le pendule amour : r\u00e9ponses oui/non instantan\u00e9es, radi\u00e9sth\u00e9sie amoureuse et guidance sentimentale. Guide complet du pendule divinatoire pour les questions d\u2019amour.',
-    url: 'https://www.voyantlove.fr/methodes-voyance/pendule-amour/',
-    datePublished: '2026-03-07',
-    dateModified: '2026-03-07',
-    keywords: ['pendule amour', 'radi\u00e9sth\u00e9sie amoureuse', 'pendule divinatoire', 'voyance pendule', 'pendule oui non amour'],
-  });
-
-  const authorSchema = getAuthorSchema();
-
-  const breadcrumbSchema = getBreadcrumbSchema([
+  datePublished: '2026-03-07',
+  dateModified: '2026-03-07',
+  breadcrumb: [
     { name: 'Accueil', url: 'https://www.voyantlove.fr' },
     { name: 'M\u00e9thodes de Voyance', url: 'https://www.voyantlove.fr/methodes-voyance/' },
     { name: 'Pendule Amour', url: 'https://www.voyantlove.fr/methodes-voyance/pendule-amour/' },
-  ]);
+  ],
+  header: {
+    emoji: '🔮',
+    h1: 'Pendule Amour',
+    subtitle: 'Réponses Oui/Non instantanées et guidance sentimentale par la radiésthésie amoureuse',
+    gradient: 'from-rose-500 via-fuchsia-500 to-pink-500',
+    backLink: { href: '/methodes-voyance', label: 'Retour aux Méthodes de Voyance' },
+    anchors: [
+      { href: '#consultation', label: 'Consultation Pendule', primary: true },
+      { href: '#questions', label: 'Questions Populaires' },
+    ],
+  },
+  accentText: 'text-rose-600',
+  stats: [
+    { icon: '🔮', value: 'Oui/Non', label: 'Instantané' },
+    { icon: '💕', value: 'Ancestral', label: 'Art millénaire' },
+    { icon: '⭐', value: 'Élevée', label: 'Satisfaction' },
+    { icon: '✨', value: 'Forte', label: 'Fiabilité' },
+  ],
+  eeat: { colorScheme: 'rose', method: 'Pendule divinatoire et radi\\u00e9sth\\u00e9sie amoureuse' },
+  cta: { topic: 'methodes-voyance', slug: 'pendule-amour' },
+  faq: [
+    {
+      q: 'Le pendule r\u00e9pond-il vraiment aux questions d\u2019amour ?',
+      a: 'Des si\u00e8cles de pratique disent oui. Le pendule est un instrument de radi\u00e9sth\u00e9sie qui capte les \u00e9nergies subtiles entre les \u00eatres et les traduit en mouvements physiques. Ce n\u2019est pas de la magie : le praticien canalise son intuition \u00e0 travers des micro-mouvements musculaires inconscients amplifi\u00e9s par le pendule. La cl\u00e9, c\u2019est la formulation. Une question pr\u00e9cise donne une r\u00e9ponse pr\u00e9cise. "M\u2019aime-t-il encore ?" fonctionnera mieux que "Comment va ma vie amoureuse ?". La qualit\u00e9 de la r\u00e9ponse d\u00e9pend aussi largement du radi\u00e9sth\u00e9siste qui tient le pendule.',
+    },
+    {
+      q: 'Comment fonctionne le pendule divinatoire ?',
+      a: 'Imaginez un traducteur entre le monde subtil et le monde visible. Le pendule \u2014 suspendu \u00e0 un fil ou une cha\u00eene \u2014 entre en oscillation sous l\u2019effet de micro-contractions musculaires guid\u00e9es par l\u2019intuition du praticien. Rotation dans le sens des aiguilles d\u2019une montre : g\u00e9n\u00e9ralement "oui". Sens inverse : "non". Oscillation lat\u00e9rale ou longitudinale : cela d\u00e9pend de la convention \u00e9tablie lors de la calibration. Chaque radi\u00e9sth\u00e9siste personnalise son protocole, ce qui explique pourquoi deux praticiens peuvent utiliser des conventions diff\u00e9rentes tout en obtenant des r\u00e9sultats coh\u00e9rents.',
+    },
+    {
+      q: 'Utiliser un pendule amour soi-m\u00eame ?',
+      a: 'Contrairement \u00e0 ce que vendent certains sites, pratiquer seul le pendule pour des questions sentimentales est d\u00e9licat. Le probl\u00e8me est simple : quand vous esp\u00e9rez d\u00e9sesp\u00e9r\u00e9ment un "oui", votre inconscient oriente les micro-mouvements dans ce sens. C\u2019est humain. Un professionnel maintient la neutralit\u00e9 \u00e9motionnelle que vous ne pouvez pas avoir face \u00e0 vos propres questions de c\u0153ur. Si vous voulez quand m\u00eame essayer, entra\u00eenez-vous d\u2019abord avec des questions sans enjeu \u00e9motionnel pour calibrer votre pendule et apprendre \u00e0 reconna\u00eetre vos biais.',
+    },
+    {
+      q: 'Quel pendule choisir pour l\u2019amour ?',
+      a: 'Quatre options principales, chacune avec ses atouts. Le quartz rose : le favori pour l\u2019amour, reli\u00e9 au chakra du c\u0153ur, id\u00e9al pour les questions de sentiments. L\u2019am\u00e9thyste : pierre de l\u2019intuition, excellente pour la clairvoyance sentimentale. Le cristal de roche : le polyvalent, neutre et amplificateur. Le laiton : le choix historique des professionnels pour sa stabilit\u00e9 et sa pr\u00e9cision. Au fond, le meilleur pendule est celui avec lequel vous ressentez une connexion naturelle d\u00e8s que vous le prenez en main.',
+    },
+    {
+      q: 'Le pendule pr\u00e9dit-il une rencontre amoureuse ?',
+      a: 'Il peut indiquer si les \u00e9nergies actuelles sont favorables \u00e0 une rencontre, oui. Des questions comme "Vais-je rencontrer quelqu\u2019un dans les trois prochains mois ?" ou "Mon \u00e2me s\u0153ur est-elle d\u00e9j\u00e0 dans mon entourage ?" obtiennent des r\u00e9ponses nettes. Mais le pendule excelle dans le oui/non et ne d\u00e9taille pas les circonstances. Pour savoir o\u00f9, quand et comment vous rencontrerez cette personne, l\u2019astrologie amoureuse \u2014 notamment l\u2019analyse des transits de V\u00e9nus \u2014 compl\u00e8te parfaitement ce que le pendule initie.',
+    },
+    {
+      q: 'Comment poser une question d\u2019amour au pendule ?',
+      a: 'La r\u00e8gle d\u2019or : une question ferm\u00e9e, claire, appelant un oui ou un non. "Mon partenaire est-il sinc\u00e8re ?" fonctionne. "Quand vais-je trouver l\u2019amour ?" ne fonctionne pas \u2014 le pendule n\u2019est pas con\u00e7u pour les questions ouvertes. Avant chaque s\u00e9ance, purifiez le pendule : fum\u00e9e de sauge, clair de lune ou eau claire. Et surtout, atteignez un \u00e9tat de neutralit\u00e9 \u00e9motionnelle. C\u2019est la partie la plus difficile. Vos d\u00e9sirs et vos peurs influencent directement les r\u00e9ponses. C\u2019est d\u2019ailleurs la raison principale pour laquelle un praticien exp\u00e9riment\u00e9 obtient des r\u00e9sultats plus fiables qu\u2019un d\u00e9butant.',
+    },
+    {
+      q: 'Le pendule amour est-il fiable ?',
+      a: 'Soyons honn\u00eates : le pendule a des limites. Quand vous esp\u00e9rez d\u00e9sesp\u00e9r\u00e9ment une r\u00e9ponse positive, votre inconscient peut biaiser les micro-mouvements. C\u2019est le principal facteur d\u2019erreur. Un radi\u00e9sth\u00e9siste confirm\u00e9 obtient des r\u00e9ponses bien plus coh\u00e9rentes qu\u2019un d\u00e9butant, pr\u00e9cis\u00e9ment parce qu\u2019il ma\u00eetrise le d\u00e9tachement \u00e9motionnel. Le pendule est redoutable pour les questions binaires simples : "M\u2019aime-t-il ?", "Est-il fid\u00e8le ?". Pour les situations complexes n\u00e9cessitant une analyse en profondeur, le tarot offre une lecture plus riche et narrative. Beaucoup de praticiens combinent les deux lors d\u2019une m\u00eame s\u00e9ance.',
+    },
+    {
+      q: 'Quelle planche de pendule utiliser pour les questions d\u2019amour ?',
+      a: 'Quatre types de cadrans, quatre usages diff\u00e9rents. Le cadran oui/non/peut-\u00eatre : le plus simple, parfait pour d\u00e9marrer. Le cadran des sentiments : un \u00e9ventail d\u2019\u00e9motions (amour, attachement, indiff\u00e9rence, col\u00e8re, nostalgie) qui permet au pendule de pointer l\u2019\u00e9motion dominante chez l\u2019autre. Le cadran temporel : gradu\u00e9 en jours ou semaines pour r\u00e9pondre \u00e0 "Quand va-t-il me recontacter ?". Le cadran de compatibilit\u00e9 : un pourcentage d\u2019harmonie entre deux personnes. Pour les mat\u00e9riaux, le quartz rose reste le choix privil\u00e9gi\u00e9 en mati\u00e8re sentimentale gr\u00e2ce \u00e0 sa r\u00e9sonance avec le chakra du c\u0153ur.',
+    },
+  ],
+  related: [
+    { href: '/methodes-voyance/tirage-tarot-amour', label: 'Tirage de Tarot Amoureux : Guide Complet des Tirages Sentimentaux' },
+    { href: '/methodes-voyance/oracle-amour', label: 'Oracle de l\'Amour : Guidance Sentimentale par les Cartes' },
+    { href: '/methodes-voyance/voyance-telephone-amour', label: 'Voyance Téléphone Amour : Consultation à Distance' },
+    { href: '/methodes-voyance/astrologie-amoureuse', label: 'Astrologie Amoureuse : Compatibilité Astrale et Amour' },
+    { href: '/sentiments/maime-t-il-elle', label: 'M\'aime-t-il/elle Vraiment ? Les Signes qui Ne Trompent Pas' },
+  ],
+};
 
-  const faqSchema = getFAQSchema([
-    {
-      question: 'Le pendule r\u00e9pond-il vraiment aux questions d\u2019amour ?',
-      answer: 'Des si\u00e8cles de pratique disent oui. Le pendule est un instrument de radi\u00e9sth\u00e9sie qui capte les \u00e9nergies subtiles entre les \u00eatres et les traduit en mouvements physiques. Ce n\u2019est pas de la magie : le praticien canalise son intuition \u00e0 travers des micro-mouvements musculaires inconscients amplifi\u00e9s par le pendule. La cl\u00e9, c\u2019est la formulation. Une question pr\u00e9cise donne une r\u00e9ponse pr\u00e9cise. "M\u2019aime-t-il encore ?" fonctionnera mieux que "Comment va ma vie amoureuse ?". La qualit\u00e9 de la r\u00e9ponse d\u00e9pend aussi largement du radi\u00e9sth\u00e9siste qui tient le pendule.',
-    },
-    {
-      question: 'Comment fonctionne le pendule divinatoire ?',
-      answer: 'Imaginez un traducteur entre le monde subtil et le monde visible. Le pendule \u2014 suspendu \u00e0 un fil ou une cha\u00eene \u2014 entre en oscillation sous l\u2019effet de micro-contractions musculaires guid\u00e9es par l\u2019intuition du praticien. Rotation dans le sens des aiguilles d\u2019une montre : g\u00e9n\u00e9ralement "oui". Sens inverse : "non". Oscillation lat\u00e9rale ou longitudinale : cela d\u00e9pend de la convention \u00e9tablie lors de la calibration. Chaque radi\u00e9sth\u00e9siste personnalise son protocole, ce qui explique pourquoi deux praticiens peuvent utiliser des conventions diff\u00e9rentes tout en obtenant des r\u00e9sultats coh\u00e9rents.',
-    },
-    {
-      question: 'Utiliser un pendule amour soi-m\u00eame ?',
-      answer: 'Contrairement \u00e0 ce que vendent certains sites, pratiquer seul le pendule pour des questions sentimentales est d\u00e9licat. Le probl\u00e8me est simple : quand vous esp\u00e9rez d\u00e9sesp\u00e9r\u00e9ment un "oui", votre inconscient oriente les micro-mouvements dans ce sens. C\u2019est humain. Un professionnel maintient la neutralit\u00e9 \u00e9motionnelle que vous ne pouvez pas avoir face \u00e0 vos propres questions de c\u0153ur. Si vous voulez quand m\u00eame essayer, entra\u00eenez-vous d\u2019abord avec des questions sans enjeu \u00e9motionnel pour calibrer votre pendule et apprendre \u00e0 reconna\u00eetre vos biais.',
-    },
-    {
-      question: 'Quel pendule choisir pour l\u2019amour ?',
-      answer: 'Quatre options principales, chacune avec ses atouts. Le quartz rose : le favori pour l\u2019amour, reli\u00e9 au chakra du c\u0153ur, id\u00e9al pour les questions de sentiments. L\u2019am\u00e9thyste : pierre de l\u2019intuition, excellente pour la clairvoyance sentimentale. Le cristal de roche : le polyvalent, neutre et amplificateur. Le laiton : le choix historique des professionnels pour sa stabilit\u00e9 et sa pr\u00e9cision. Au fond, le meilleur pendule est celui avec lequel vous ressentez une connexion naturelle d\u00e8s que vous le prenez en main.',
-    },
-    {
-      question: 'Le pendule pr\u00e9dit-il une rencontre amoureuse ?',
-      answer: 'Il peut indiquer si les \u00e9nergies actuelles sont favorables \u00e0 une rencontre, oui. Des questions comme "Vais-je rencontrer quelqu\u2019un dans les trois prochains mois ?" ou "Mon \u00e2me s\u0153ur est-elle d\u00e9j\u00e0 dans mon entourage ?" obtiennent des r\u00e9ponses nettes. Mais le pendule excelle dans le oui/non et ne d\u00e9taille pas les circonstances. Pour savoir o\u00f9, quand et comment vous rencontrerez cette personne, l\u2019astrologie amoureuse \u2014 notamment l\u2019analyse des transits de V\u00e9nus \u2014 compl\u00e8te parfaitement ce que le pendule initie.',
-    },
-    {
-      question: 'Comment poser une question d\u2019amour au pendule ?',
-      answer: 'La r\u00e8gle d\u2019or : une question ferm\u00e9e, claire, appelant un oui ou un non. "Mon partenaire est-il sinc\u00e8re ?" fonctionne. "Quand vais-je trouver l\u2019amour ?" ne fonctionne pas \u2014 le pendule n\u2019est pas con\u00e7u pour les questions ouvertes. Avant chaque s\u00e9ance, purifiez le pendule : fum\u00e9e de sauge, clair de lune ou eau claire. Et surtout, atteignez un \u00e9tat de neutralit\u00e9 \u00e9motionnelle. C\u2019est la partie la plus difficile. Vos d\u00e9sirs et vos peurs influencent directement les r\u00e9ponses. C\u2019est d\u2019ailleurs la raison principale pour laquelle un praticien exp\u00e9riment\u00e9 obtient des r\u00e9sultats plus fiables qu\u2019un d\u00e9butant.',
-    },
-    {
-      question: 'Le pendule amour est-il fiable ?',
-      answer: 'Soyons honn\u00eates : le pendule a des limites. Quand vous esp\u00e9rez d\u00e9sesp\u00e9r\u00e9ment une r\u00e9ponse positive, votre inconscient peut biaiser les micro-mouvements. C\u2019est le principal facteur d\u2019erreur. Un radi\u00e9sth\u00e9siste confirm\u00e9 obtient des r\u00e9ponses bien plus coh\u00e9rentes qu\u2019un d\u00e9butant, pr\u00e9cis\u00e9ment parce qu\u2019il ma\u00eetrise le d\u00e9tachement \u00e9motionnel. Le pendule est redoutable pour les questions binaires simples : "M\u2019aime-t-il ?", "Est-il fid\u00e8le ?". Pour les situations complexes n\u00e9cessitant une analyse en profondeur, le tarot offre une lecture plus riche et narrative. Beaucoup de praticiens combinent les deux lors d\u2019une m\u00eame s\u00e9ance.',
-    },
-    {
-      question: 'Quelle planche de pendule utiliser pour les questions d\u2019amour ?',
-      answer: 'Quatre types de cadrans, quatre usages diff\u00e9rents. Le cadran oui/non/peut-\u00eatre : le plus simple, parfait pour d\u00e9marrer. Le cadran des sentiments : un \u00e9ventail d\u2019\u00e9motions (amour, attachement, indiff\u00e9rence, col\u00e8re, nostalgie) qui permet au pendule de pointer l\u2019\u00e9motion dominante chez l\u2019autre. Le cadran temporel : gradu\u00e9 en jours ou semaines pour r\u00e9pondre \u00e0 "Quand va-t-il me recontacter ?". Le cadran de compatibilit\u00e9 : un pourcentage d\u2019harmonie entre deux personnes. Pour les mat\u00e9riaux, le quartz rose reste le choix privil\u00e9gi\u00e9 en mati\u00e8re sentimentale gr\u00e2ce \u00e0 sa r\u00e9sonance avec le chakra du c\u0153ur.',
-    },
-  ]);
+export const metadata = contentMeta(config);
 
+export default function PenduleAmourPage() {
   return (
-    <main className="min-h-screen bg-gray-50">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(authorSchema) }}
-      />
-
-      {/* Header */}
-      <header className="bg-gradient-to-r from-rose-500 via-fuchsia-500 to-pink-500 text-white py-16 px-4">
-        <div className="max-w-4xl mx-auto">
-          <Link href="/methodes-voyance" className="text-white/80 hover:text-white mb-4 inline-block">&larr; Retour aux M&eacute;thodes de Voyance</Link>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">&#x1F52E; Pendule Amour</h1>
-          <p className="text-xl opacity-95 mb-6">R&eacute;ponses Oui/Non instantan&eacute;es et guidance sentimentale par la radi&eacute;sth&eacute;sie amoureuse</p>
-          <div className="flex gap-4 flex-wrap">
-            <a href="#consultation" className="bg-white text-rose-600 px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition">Consultation Pendule</a>
-            <a href="#questions" className="border-2 border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-rose-600 transition">Questions Populaires</a>
-          </div>
-        </div>
-      </header>
-
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        {/* Stats bar */}
-        <div className="bg-white rounded-xl shadow-md p-6 mb-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-          <div><div className="text-3xl mb-1">&#x1F52E;</div><div className="text-2xl font-bold text-rose-600">Oui/Non</div><div className="text-sm text-gray-600">Instantan&eacute;</div></div>
-          <div><div className="text-3xl mb-1">&#x1F495;</div><div className="text-2xl font-bold text-rose-600">Ancestral</div><div className="text-sm text-gray-600">Art mill&eacute;naire</div></div>
-          <div><div className="text-3xl mb-1">&#x2B50;</div><div className="text-2xl font-bold text-rose-600">&Eacute;lev&eacute;e</div><div className="text-sm text-gray-600">Satisfaction</div></div>
-          <div><div className="text-3xl mb-1">&#x2728;</div><div className="text-2xl font-bold text-rose-600">Forte</div><div className="text-sm text-gray-600">Fiabilit&eacute;</div></div>
-        </div>
-
-        {/* EEAT Signal */}
-        <EEATSignal colorScheme="rose" method="Pendule divinatoire et radi\u00e9sth\u00e9sie amoureuse" />
-
-        {/* Answer Capsule */}
+    <ContentPage config={config}>
         <article className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-rose-600">
           <div className="bg-rose-50 border-l-4 border-rose-500 p-6 rounded-lg">
             <p className="text-lg leading-relaxed">
@@ -343,69 +313,6 @@ export default function PenduleAmourPage() {
             <p className="text-gray-700"><strong>&Agrave; retenir :</strong> Le <strong>pendule amour</strong> est un outil extraordinaire de <strong>guidance sentimentale</strong> dont la puissance est d&eacute;cupl&eacute;e entre les mains d&apos;un <strong>voyant</strong> exp&eacute;riment&eacute;. N&apos;h&eacute;sitez pas &agrave; consulter un professionnel pour des r&eacute;ponses fiables et une interpr&eacute;tation approfondie de vos <strong>questions amoureuses</strong>.</p>
           </div>
         </section>
-
-        {/* FAQ Section */}
-        <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">&#x2753; Questions Fr&eacute;quentes sur le Pendule Amour</h2>
-          <p className="text-lg font-semibold text-gray-800 mb-4">Les questions les plus fr&eacute;quentes portent sur la fiabilit&eacute; du pendule pour l&apos;amour, son fonctionnement par radi&eacute;sth&eacute;sie, la possibilit&eacute; de l&apos;utiliser soi-m&ecirc;me et le meilleur mat&eacute;riau pour les questions sentimentales.</p>
-          <div className="space-y-6">
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Le pendule r&eacute;pond-il vraiment aux questions d&apos;amour ?</h3>
-              <p className="text-gray-700 leading-relaxed">Des si&egrave;cles de pratique disent oui. Le <strong>pendule</strong> est un instrument de <strong>radi&eacute;sth&eacute;sie</strong> qui capte les &eacute;nergies subtiles entre les &ecirc;tres et les traduit en mouvements physiques. Ce n&apos;est pas de la magie : le praticien canalise son intuition &agrave; travers des micro-mouvements musculaires inconscients amplifi&eacute;s par le pendule. La cl&eacute;, c&apos;est la formulation. Une question pr&eacute;cise donne une r&eacute;ponse pr&eacute;cise. &laquo;&nbsp;M&apos;aime-t-il encore ?&nbsp;&raquo; fonctionnera mieux que &laquo;&nbsp;Comment va ma vie amoureuse ?&nbsp;&raquo;. La qualit&eacute; de la r&eacute;ponse d&eacute;pend aussi largement du <strong>radi&eacute;sth&eacute;siste</strong> qui tient le pendule.</p>
-            </div>
-
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Comment fonctionne le pendule divinatoire ?</h3>
-              <p className="text-gray-700 leading-relaxed">Imaginez un traducteur entre le monde subtil et le monde visible. Le <strong>pendule</strong> &mdash; suspendu &agrave; un fil ou une cha&icirc;ne &mdash; entre en oscillation sous l&apos;effet de micro-contractions musculaires guid&eacute;es par l&apos;intuition du praticien. Rotation dans le sens des aiguilles d&apos;une montre : g&eacute;n&eacute;ralement &laquo;&nbsp;oui&nbsp;&raquo;. Sens inverse : &laquo;&nbsp;non&nbsp;&raquo;. Oscillation lat&eacute;rale ou longitudinale : cela d&eacute;pend de la convention &eacute;tablie lors de la <strong>calibration</strong>. Chaque radi&eacute;sth&eacute;siste personnalise son protocole, ce qui explique pourquoi deux praticiens peuvent utiliser des conventions diff&eacute;rentes tout en obtenant des r&eacute;sultats coh&eacute;rents.</p>
-            </div>
-
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Utiliser un pendule amour soi-m&ecirc;me ?</h3>
-              <p className="text-gray-700 leading-relaxed">Contrairement &agrave; ce que vendent certains sites, pratiquer seul le <strong>pendule</strong> pour des <strong>questions sentimentales</strong> est d&eacute;licat. Le probl&egrave;me est simple : quand vous esp&eacute;rez d&eacute;sesp&eacute;r&eacute;ment un &laquo;&nbsp;oui&nbsp;&raquo;, votre inconscient oriente les micro-mouvements dans ce sens. C&apos;est humain. Un professionnel maintient la <strong>neutralit&eacute; &eacute;motionnelle</strong> que vous ne pouvez pas avoir face &agrave; vos propres questions de c&oelig;ur. Si vous voulez quand m&ecirc;me essayer, entra&icirc;nez-vous d&apos;abord avec des questions sans enjeu &eacute;motionnel pour calibrer votre pendule et apprendre &agrave; reconna&icirc;tre vos biais.</p>
-            </div>
-
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Quel pendule choisir pour l&apos;amour ?</h3>
-              <p className="text-gray-700 leading-relaxed">Quatre options principales, chacune avec ses atouts. Le <strong>quartz rose</strong> : le favori pour l&apos;amour, reli&eacute; au chakra du c&oelig;ur, id&eacute;al pour les questions de sentiments. L&apos;<strong>am&eacute;thyste</strong> : pierre de l&apos;intuition, excellente pour la clairvoyance sentimentale. Le <strong>cristal de roche</strong> : le polyvalent, neutre et amplificateur. Le <strong>laiton</strong> : le choix historique des professionnels pour sa stabilit&eacute; et sa pr&eacute;cision. Au fond, le meilleur pendule est celui avec lequel vous ressentez une connexion naturelle d&egrave;s que vous le prenez en main.</p>
-            </div>
-
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Le pendule pr&eacute;dit-il une rencontre amoureuse ?</h3>
-              <p className="text-gray-700 leading-relaxed">Il peut indiquer si les &eacute;nergies actuelles sont favorables &agrave; une rencontre, oui. Des questions comme &laquo;&nbsp;Vais-je rencontrer quelqu&apos;un dans les trois prochains mois ?&nbsp;&raquo; ou &laquo;&nbsp;Mon <strong>&acirc;me s&oelig;ur</strong> est-elle d&eacute;j&agrave; dans mon entourage ?&nbsp;&raquo; obtiennent des r&eacute;ponses nettes. Mais le <strong>pendule</strong> excelle dans le oui/non et ne d&eacute;taille pas les circonstances. Pour savoir o&ugrave;, quand et comment vous rencontrerez cette personne, l&apos;<strong>astrologie amoureuse</strong> &mdash; notamment l&apos;analyse des transits de V&eacute;nus &mdash; compl&egrave;te parfaitement ce que le pendule initie.</p>
-            </div>
-
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Comment poser une question d&apos;amour au pendule ?</h3>
-              <p className="text-gray-700 leading-relaxed">La r&egrave;gle d&apos;or : une question ferm&eacute;e, claire, appelant un oui ou un non. &laquo;&nbsp;Mon partenaire est-il sinc&egrave;re ?&nbsp;&raquo; fonctionne. &laquo;&nbsp;Quand vais-je trouver l&apos;amour ?&nbsp;&raquo; ne fonctionne pas &mdash; le <strong>pendule</strong> n&apos;est pas con&ccedil;u pour les questions ouvertes. Avant chaque s&eacute;ance, purifiez le pendule : fum&eacute;e de sauge, clair de lune ou eau claire. Et surtout, atteignez un &eacute;tat de <strong>neutralit&eacute; &eacute;motionnelle</strong>. C&apos;est la partie la plus difficile. Vos d&eacute;sirs et vos peurs influencent directement les r&eacute;ponses. C&apos;est d&apos;ailleurs la raison principale pour laquelle un praticien exp&eacute;riment&eacute; obtient des r&eacute;sultats plus fiables qu&apos;un d&eacute;butant.</p>
-            </div>
-
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Le pendule amour est-il fiable ?</h3>
-              <p className="text-gray-700 leading-relaxed">Soyons honn&ecirc;tes : le <strong>pendule</strong> a des limites. Quand vous esp&eacute;rez d&eacute;sesp&eacute;r&eacute;ment une r&eacute;ponse positive, votre inconscient peut biaiser les micro-mouvements. C&apos;est le principal facteur d&apos;erreur. Un <strong>radi&eacute;sth&eacute;siste</strong> confirm&eacute; obtient des r&eacute;ponses bien plus coh&eacute;rentes qu&apos;un d&eacute;butant, pr&eacute;cis&eacute;ment parce qu&apos;il ma&icirc;trise le <strong>d&eacute;tachement &eacute;motionnel</strong>. Le pendule est redoutable pour les questions binaires simples : &laquo;&nbsp;M&apos;aime-t-il ?&nbsp;&raquo;, &laquo;&nbsp;Est-il fid&egrave;le ?&nbsp;&raquo;. Pour les situations complexes n&eacute;cessitant une analyse en profondeur, le <strong>tarot</strong> offre une lecture plus riche et narrative. Beaucoup de praticiens combinent les deux lors d&apos;une m&ecirc;me s&eacute;ance.</p>
-            </div>
-
-            <div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Quelle planche de pendule utiliser pour les questions d&apos;amour ?</h3>
-              <p className="text-gray-700 leading-relaxed">Quatre types de cadrans, quatre usages diff&eacute;rents. Le <strong>cadran oui/non/peut-&ecirc;tre</strong> : le plus simple, parfait pour d&eacute;marrer. Le <strong>cadran des sentiments</strong> : un &eacute;ventail d&apos;&eacute;motions (amour, attachement, indiff&eacute;rence, col&egrave;re, nostalgie) qui permet au pendule de pointer l&apos;&eacute;motion dominante chez l&apos;autre. Le <strong>cadran temporel</strong> : gradu&eacute; en jours ou semaines pour r&eacute;pondre &agrave; &laquo;&nbsp;Quand va-t-il me recontacter ?&nbsp;&raquo;. Le <strong>cadran de compatibilit&eacute;</strong> : un pourcentage d&apos;harmonie entre deux personnes. Pour les mat&eacute;riaux, le <strong>quartz rose</strong> reste le choix privil&eacute;gi&eacute; en mati&egrave;re sentimentale gr&acirc;ce &agrave; sa r&eacute;sonance avec le chakra du c&oelig;ur.</p>
-            </div>
-          </div>
-        </section>
-
-        {/* Articles Connexes */}
-        <div className="bg-gray-100 rounded-xl p-6 mb-8">
-          <h3 className="font-bold text-lg mb-4 text-gray-900">&#x1F4DA; Articles Connexes</h3>
-          <div className="space-y-2">
-            <Link href="/methodes-voyance/tirage-tarot-amour" className="block text-rose-600 hover:text-rose-800 font-medium">&rarr; Tirage de Tarot Amoureux : Guide Complet des Tirages Sentimentaux</Link>
-            <Link href="/methodes-voyance/oracle-amour" className="block text-rose-600 hover:text-rose-800 font-medium">&rarr; Oracle de l&apos;Amour : Guidance Sentimentale par les Cartes</Link>
-            <Link href="/methodes-voyance/voyance-telephone-amour" className="block text-rose-600 hover:text-rose-800 font-medium">&rarr; Voyance T&eacute;l&eacute;phone Amour : Consultation &agrave; Distance</Link>
-            <Link href="/methodes-voyance/astrologie-amoureuse" className="block text-rose-600 hover:text-rose-800 font-medium">&rarr; Astrologie Amoureuse : Compatibilit&eacute; Astrale et Amour</Link>
-            <Link href="/sentiments/maime-t-il-elle" className="block text-rose-600 hover:text-rose-800 font-medium">&rarr; M&apos;aime-t-il/elle Vraiment ? Les Signes qui Ne Trompent Pas</Link>
-          </div>
-        </div>
-
-        {/* CTA Footer */}
-        <VoyantFinalCTA topic="methodes-voyance" source="pendule-amour-final" />
-      </div>
-    </main>
+    </ContentPage>
   );
 }

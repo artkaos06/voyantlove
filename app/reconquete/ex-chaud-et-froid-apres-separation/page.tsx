@@ -1,98 +1,86 @@
-import type { Metadata } from 'next';
 import Link from 'next/link';
-import { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getAuthorSchema } from '@/lib/schema';
-import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
-import VoyantFinalCTA from '@/components/VoyantFinalCTA';
+import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
-export const metadata: Metadata = {
+const config: ContentPageConfig = {
   title: 'Mon Ex est Chaud et Froid Après la Séparation : Pourquoi ?',
   description: 'Votre ex souffle le chaud et le froid après la rupture ? Comprenez les dynamiques derrière les signaux contradictoires et décidez comment répondre sans décoder chaque message.',
+  url: 'https://www.voyantlove.fr/reconquete/ex-chaud-et-froid-apres-separation/',
   keywords: ['mon ex est chaud et froid', 'mon ex revient puis repart', 'mon ex me parle puis m\'ignore', 'mon ex envoie des signes contradictoires', 'comportement ambigu après séparation'],
-  alternates: {
-    canonical: 'https://www.voyantlove.fr/reconquete/ex-chaud-et-froid-apres-separation/',
-  },
-};
-
-export default function ExChaudEtFroidApresSeparationPage() {
-  const articleSchema = getArticleSchema({
-    title: 'Mon Ex est Chaud et Froid Après la Séparation : Pourquoi ?',
-    description: 'Votre ex souffle le chaud et le froid après la rupture ? Comprenez les dynamiques derrière les signaux contradictoires et décidez comment répondre sans décoder chaque message.',
-    url: 'https://www.voyantlove.fr/reconquete/ex-chaud-et-froid-apres-separation/',
-    datePublished: '2026-07-28',
-    dateModified: '2026-07-28',
-    keywords: ['mon ex est chaud et froid', 'mon ex revient puis repart', 'mon ex envoie des signes contradictoires', 'pourquoi mon ex entretient-il le contact', 'comportement ambigu après séparation'],
-  });
-
-  const faqSchema = getFAQSchema([
-    {
-      question: 'Pourquoi mon ex souffle-t-il le chaud et le froid après la séparation ?',
-      answer: 'Un comportement chaud et froid traduit le plus souvent une ambivalence intérieure : la personne oscille entre l\'attachement encore présent et les raisons qui ont motivé la rupture. La culpabilité, la solitude, la peur de perdre définitivement l\'autre ou le simple confort d\'un lien maintenu peuvent alimenter ces allers-retours. Il est rarement possible de désigner une cause unique à distance, et un même geste peut avoir plusieurs significations. L\'essentiel est d\'observer la tendance sur la durée plutôt que d\'interpréter chaque message isolément.',
-    },
-    {
-      question: 'Est-ce que le fait de me recontacter signifie qu\'il veut revenir ?',
-      answer: 'Non, reprendre contact ne prouve pas à lui seul un désir de réconciliation. Un ex peut réécrire par nostalgie, par ennui, par culpabilité, pour se rassurer sur l\'attachement de l\'autre ou pour maintenir un lien confortable, sans projet de retour. Ce que le contact ne prouve pas est aussi important que ce qu\'il pourrait indiquer. Seule une intention exprimée clairement et suivie d\'actes concrets et réguliers permet de parler d\'une véritable volonté de revenir.',
-    },
-    {
-      question: 'Comment distinguer une ambivalence sincère d\'un lien simplement entretenu ?',
-      answer: 'Une ambivalence sincère cherche à avancer : la personne pose des questions sur l\'avenir, exprime ses doutes ouvertement, et les périodes chaudes tendent à se prolonger. Un lien entretenu sans projet suit au contraire un cycle stable : rapprochement dès que vous vous éloignez, retrait dès que vous vous rapprochez, sans que rien ne progresse. La différence se lit dans l\'évolution sur plusieurs semaines : l\'ambivalence sincère bouge, le lien entretenu tourne en rond.',
-    },
-    {
-      question: 'Pourquoi analyser chaque message aggrave-t-il l\'incertitude ?',
-      answer: 'Décoder chaque mot, chaque emoji ou chaque délai de réponse donne l\'illusion de comprendre, mais amplifie surtout l\'anxiété et la dépendance au prochain signal. Les signaux contradictoires sont, par définition, contradictoires : leur analyse détaillée ne produit pas de certitude, seulement une agitation mentale épuisante. Reculer d\'un cran et observer la tendance générale, plutôt que le détail de chaque échange, restaure de la clarté et vous rend votre énergie.',
-    },
-    {
-      question: 'Comment réagir face à un ex qui est chaud et froid ?',
-      answer: 'La réponse la plus protectrice consiste à cesser de calquer votre humeur sur la sienne. Restez cohérent(e) : répondez avec authenticité pendant les phases chaudes sans vous précipiter, et n\'insistez pas pendant les phases froides. Fixez-vous une limite intérieure sur ce que vous acceptez d\'incertitude, et reprenez de la distance si les allers-retours vous épuisent. Une consultation de voyance sentimentale peut éclairer la dynamique en jeu et surtout votre propre positionnement.',
-    },
-  ]);
-
-  const breadcrumbSchema = getBreadcrumbSchema([
+  datePublished: '2026-07-28',
+  dateModified: '2026-07-28',
+  breadcrumb: [
     { name: 'Accueil', url: 'https://www.voyantlove.fr' },
     { name: 'Reconquête', url: 'https://www.voyantlove.fr/reconquete/' },
     { name: 'Mon Ex est Chaud et Froid', url: 'https://www.voyantlove.fr/reconquete/ex-chaud-et-froid-apres-separation/' },
-  ]);
+  ],
+  header: {
+    emoji: '🌡️',
+    h1: 'Pourquoi Mon Ex Souffle-t-il le Chaud et le Froid ?',
+    subtitle: 'Comprendre les signaux contradictoires après une séparation',
+    gradient: 'from-rose-500 via-purple-600 to-blue-600',
+    backLink: { href: '/reconquete', label: 'Retour à la Reconquête' },
+    anchors: [
+      { href: '#decodeur', label: 'Le Décodeur des Signaux', primary: true },
+      { href: '#reagir', label: 'Comment Réagir' },
+    ],
+  },
+  accentText: 'text-purple-600',
+  stats: [
+    { icon: '🔮', value: 'Reconnue', label: 'Expertise' },
+    { icon: '🌡️', value: '3,500+', label: 'Consultations' },
+    { icon: '⭐', value: '4.7/5', label: '289 avis' },
+    { icon: '🔒', value: '100%', label: 'Confidentiel' },
+  ],
+  eeat: { colorScheme: 'purple', method: 'Guidance de reconquête et lecture des signaux relationnels' },
+  cta: { topic: 'reconquete', slug: 'ex-chaud-froid' },
+  faq: [
+    {
+      q: 'Pourquoi mon ex souffle-t-il le chaud et le froid après la séparation ?',
+      a: 'Un comportement chaud et froid traduit le plus souvent une ambivalence intérieure : la personne oscille entre l\'attachement encore présent et les raisons qui ont motivé la rupture. La culpabilité, la solitude, la peur de perdre définitivement l\'autre ou le simple confort d\'un lien maintenu peuvent alimenter ces allers-retours. Il est rarement possible de désigner une cause unique à distance, et un même geste peut avoir plusieurs significations. L\'essentiel est d\'observer la tendance sur la durée plutôt que d\'interpréter chaque message isolément.',
+    },
+    {
+      q: 'Est-ce que le fait de me recontacter signifie qu\'il veut revenir ?',
+      a: 'Non, reprendre contact ne prouve pas à lui seul un désir de réconciliation. Un ex peut réécrire par nostalgie, par ennui, par culpabilité, pour se rassurer sur l\'attachement de l\'autre ou pour maintenir un lien confortable, sans projet de retour. Ce que le contact ne prouve pas est aussi important que ce qu\'il pourrait indiquer. Seule une intention exprimée clairement et suivie d\'actes concrets et réguliers permet de parler d\'une véritable volonté de revenir.',
+    },
+    {
+      q: 'Comment distinguer une ambivalence sincère d\'un lien simplement entretenu ?',
+      a: 'Une ambivalence sincère cherche à avancer : la personne pose des questions sur l\'avenir, exprime ses doutes ouvertement, et les périodes chaudes tendent à se prolonger. Un lien entretenu sans projet suit au contraire un cycle stable : rapprochement dès que vous vous éloignez, retrait dès que vous vous rapprochez, sans que rien ne progresse. La différence se lit dans l\'évolution sur plusieurs semaines : l\'ambivalence sincère bouge, le lien entretenu tourne en rond.',
+    },
+    {
+      q: 'Pourquoi analyser chaque message aggrave-t-il l\'incertitude ?',
+      a: 'Décoder chaque mot, chaque emoji ou chaque délai de réponse donne l\'illusion de comprendre, mais amplifie surtout l\'anxiété et la dépendance au prochain signal. Les signaux contradictoires sont, par définition, contradictoires : leur analyse détaillée ne produit pas de certitude, seulement une agitation mentale épuisante. Reculer d\'un cran et observer la tendance générale, plutôt que le détail de chaque échange, restaure de la clarté et vous rend votre énergie.',
+    },
+    {
+      q: 'Comment réagir face à un ex qui est chaud et froid ?',
+      a: 'La réponse la plus protectrice consiste à cesser de calquer votre humeur sur la sienne. Restez cohérent(e) : répondez avec authenticité pendant les phases chaudes sans vous précipiter, et n\'insistez pas pendant les phases froides. Fixez-vous une limite intérieure sur ce que vous acceptez d\'incertitude, et reprenez de la distance si les allers-retours vous épuisent. Une consultation de voyance sentimentale peut éclairer la dynamique en jeu et surtout votre propre positionnement.',
+    },
+  ],
+  related: [
+    { href: '/reconquete', label: 'Reconquête Amoureuse : Toutes nos Guidances' },
+    { href: '/reconquete/veut-se-remettre-ensemble-mais-ne-fait-rien', label: 'Il Veut se Remettre Ensemble mais ne Fait Rien' },
+    { href: '/reconquete/ex-qui-revient', label: 'Ex qui Revient : Que Faire ?' },
+    { href: '/sentiments/pense-t-il-elle-a-moi', label: 'Pense-t-il/elle à Moi ?' },
+    { href: '/reconquete/silence-radio-reconquete', label: 'Le Silence Radio en Reconquête' },
+    { href: '/reconquete/separation-temporaire-ou-definitive', label: 'Séparation Temporaire ou Définitive ?' },
+  ],
+};
 
-  const authorSchema = getAuthorSchema();
+export const metadata = contentMeta(config);
 
+export default function ExChaudEtFroidApresSeparationPage() {
   return (
-    <main className="min-h-screen bg-gray-50">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(authorSchema) }} />
-
-      <header className="bg-gradient-to-r from-rose-500 via-purple-600 to-blue-600 text-white py-16 px-4">
-        <div className="max-w-4xl mx-auto">
-          <Link href="/reconquete" className="text-white/80 hover:text-white mb-4 inline-block">&larr; Retour à la Reconquête</Link>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">{'\u{1F321}️'} Pourquoi Mon Ex Souffle-t-il le Chaud et le Froid ?</h1>
-          <p className="text-xl opacity-95 mb-6">Comprendre les signaux contradictoires après une séparation</p>
-          <div className="flex gap-4 flex-wrap">
-            <a href="#decodeur" className="bg-white text-purple-600 px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition">Le Décodeur des Signaux</a>
-            <a href="#reagir" className="border-2 border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-purple-600 transition">Comment Réagir</a>
-          </div>
-        </div>
-      </header>
-
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <div className="bg-white rounded-xl shadow-md p-6 mb-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-          <div><div className="text-3xl mb-1">{'\u{1F52E}'}</div><div className="text-2xl font-bold text-purple-600">Reconnue</div><div className="text-sm text-gray-600">Expertise</div></div>
-          <div><div className="text-3xl mb-1">{'\u{1F321}️'}</div><div className="text-2xl font-bold text-purple-600">3,500+</div><div className="text-sm text-gray-600">Consultations</div></div>
-          <div><div className="text-3xl mb-1">{'⭐'}</div><div className="text-2xl font-bold text-purple-600">4.7/5</div><div className="text-sm text-gray-600">289 avis</div></div>
-          <div><div className="text-3xl mb-1">{'\u{1F512}'}</div><div className="text-2xl font-bold text-purple-600">100%</div><div className="text-sm text-gray-600">Confidentiel</div></div>
-        </div>
-
-        <EEATSignal colorScheme="purple" method="Guidance de reconquête et lecture des signaux relationnels" />
+    <ContentPage config={config}>
 
         {/* Answer Capsule */}
         <article className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-purple-500">
           <div className="prose prose-lg max-w-none">
             <p className="text-lg leading-relaxed mb-4">
-              Un ex qui vous <strong>parle puis vous ignore</strong>, se montre affectueux avant de disparaître, évoque une réconciliation sans jamais la concrétiser : ce comportement <strong>chaud et froid</strong> est l&apos;un des plus déstabilisants après une séparation. Dans la grande majorité des cas, il traduit une <strong>ambivalence</strong> intérieure — un tiraillement entre l&apos;attachement encore vivant et les raisons qui ont mené à la rupture — plutôt qu&apos;une stratégie calculée. Personne ne peut lire ses pensées avec certitude, mais on peut organiser ces signaux en <strong>schémas observables</strong>.
+              Un ex qui vous <strong>parle puis vous ignore</strong>, se montre affectueux avant de disparaître, évoque une réconciliation sans jamais la concrétiser : ce comportement <strong>chaud et froid</strong> est l&apos;un des plus déstabilisants après une séparation. Dans la grande majorité des cas, il traduit une <strong>ambivalence</strong> intérieure, un tiraillement entre l&apos;attachement encore vivant et les raisons qui ont mené à la rupture, plutôt qu&apos;une stratégie calculée. Personne ne peut lire ses pensées avec certitude, mais on peut organiser ces signaux en <strong>schémas observables</strong>.
             </p>
             <p className="text-lg leading-relaxed mb-4">
-              Plusieurs moteurs alimentent souvent ces allers-retours : la <strong>culpabilité</strong>, la <strong>solitude</strong>, la peur de perdre définitivement l&apos;autre, ou le confort d&apos;un lien maintenu sans décision. Aucun de ces ressentis n&apos;est un diagnostic, et un même geste peut avoir plusieurs sens. Recontacter, en particulier, ne prouve pas un désir de retour — un point que notre guidance sur <Link href="/sentiments/pense-t-il-elle-a-moi" className="text-purple-600 hover:text-purple-800 underline font-medium">pense-t-il/elle à moi</Link> nuance en détail.
+              Plusieurs moteurs alimentent souvent ces allers-retours : la <strong>culpabilité</strong>, la <strong>solitude</strong>, la peur de perdre définitivement l&apos;autre, ou le confort d&apos;un lien maintenu sans décision. Aucun de ces ressentis n&apos;est un diagnostic, et un même geste peut avoir plusieurs sens. Recontacter, en particulier, ne prouve pas un désir de retour, un point que notre guidance sur <Link href="/sentiments/pense-t-il-elle-a-moi" className="text-purple-600 hover:text-purple-800 underline font-medium">pense-t-il/elle à moi</Link> nuance en détail.
             </p>
             <p className="text-lg leading-relaxed">
               L&apos;objectif de cette page est de vous sortir de l&apos;analyse épuisante de chaque message pour vous rendre une <strong>lecture d&apos;ensemble</strong> : ce que chaque signal peut signifier, ce qu&apos;il ne prouve pas, et surtout comment répondre en préservant votre équilibre. Une <strong>consultation de voyance sentimentale</strong> peut ensuite éclairer la dynamique et votre propre positionnement, sans prétendre dévoiler avec certitude les intentions de l&apos;autre.
@@ -221,53 +209,10 @@ export default function ExChaudEtFroidApresSeparationPage() {
             </div>
           </div>
           <div className="mt-6 bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded">
-            <p className="text-gray-700"><strong>{'\u{1F4A1}'} À retenir :</strong> reprendre de la distance n&apos;est pas une stratégie pour le faire revenir, mais une manière de vous protéger. Si vous hésitez sur le juste positionnement, une <strong>consultation de voyance sentimentale</strong> peut éclairer la dynamique et vos propres besoins — jamais garantir la décision de l&apos;autre.</p>
+            <p className="text-gray-700"><strong>{'\u{1F4A1}'} À retenir :</strong> reprendre de la distance n&apos;est pas une stratégie pour le faire revenir, mais une manière de vous protéger. Si vous hésitez sur le juste positionnement, une <strong>consultation de voyance sentimentale</strong> peut éclairer la dynamique et vos propres besoins, jamais garantir la décision de l&apos;autre.</p>
           </div>
         </section>
 
-        {/* FAQ Section */}
-        <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">{'❓'} Questions Fréquentes</h2>
-          <p className="text-lg font-semibold text-gray-800 mb-4">Les reponses aux questions les plus posees sur un ex qui souffle le chaud et le froid apres une separation.</p>
-          <div className="space-y-6">
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Pourquoi mon ex souffle-t-il le chaud et le froid après la séparation ?</h3>
-              <p className="text-gray-700 leading-relaxed">Un comportement chaud et froid traduit le plus souvent une <strong>ambivalence</strong> intérieure : la personne oscille entre l&apos;attachement encore présent et les raisons qui ont motivé la rupture. La culpabilité, la solitude, la peur de perdre définitivement l&apos;autre ou le confort d&apos;un lien maintenu peuvent alimenter ces allers-retours. Il est rarement possible de désigner une cause unique à distance : mieux vaut observer la <strong>tendance sur la durée</strong>.</p>
-            </div>
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Est-ce que le fait de me recontacter signifie qu&apos;il veut revenir ?</h3>
-              <p className="text-gray-700 leading-relaxed">Non, reprendre contact ne prouve pas à lui seul un désir de réconciliation. Un ex peut réécrire par <strong>nostalgie</strong>, par ennui, par culpabilité ou pour maintenir un lien confortable, sans projet de retour. Ce que le contact ne prouve pas est aussi important que ce qu&apos;il pourrait indiquer. Seule une intention exprimée clairement et suivie d&apos;<strong>actes réguliers</strong> permet de parler d&apos;une véritable volonté de revenir.</p>
-            </div>
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Comment distinguer une ambivalence sincère d&apos;un lien simplement entretenu ?</h3>
-              <p className="text-gray-700 leading-relaxed">Une <strong>ambivalence sincère</strong> cherche à avancer : la personne pose des questions sur l&apos;avenir, exprime ses doutes, et les phases chaudes se prolongent. Un <strong>lien entretenu</strong> suit un cycle stable : rapprochement dès que vous vous éloignez, retrait dès que vous vous rapprochez, sans que rien ne progresse. La différence se lit dans l&apos;évolution sur plusieurs semaines : l&apos;ambivalence bouge, le lien entretenu tourne en rond.</p>
-            </div>
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Pourquoi analyser chaque message aggrave-t-il l&apos;incertitude ?</h3>
-              <p className="text-gray-700 leading-relaxed">Décoder chaque mot, emoji ou délai de réponse donne l&apos;illusion de comprendre, mais amplifie surtout l&apos;<strong>anxiété</strong> et la dépendance au prochain signal. Les signaux contradictoires ne produisent pas de certitude, seulement une agitation mentale épuisante. Reculer d&apos;un cran et observer la <strong>tendance générale</strong>, plutôt que le détail de chaque échange, restaure de la clarté.</p>
-            </div>
-            <div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Comment réagir face à un ex qui est chaud et froid ?</h3>
-              <p className="text-gray-700 leading-relaxed">La réponse la plus protectrice consiste à cesser de calquer votre humeur sur la sienne. Restez <strong>cohérent(e)</strong> : répondez avec authenticité pendant les phases chaudes sans vous précipiter, et n&apos;insistez pas pendant les phases froides. Fixez-vous une <strong>limite intérieure</strong> sur l&apos;incertitude acceptable, et reprenez de la distance si les allers-retours vous épuisent. Une consultation peut éclairer votre propre positionnement.</p>
-            </div>
-          </div>
-        </section>
-
-        {/* Articles Connexes */}
-        <div className="bg-gray-100 rounded-xl p-6 mb-8">
-          <h3 className="font-bold text-lg mb-4 text-gray-900">{'\u{1F4DA}'} Articles Connexes</h3>
-          <div className="space-y-2">
-            <Link href="/reconquete" className="block text-purple-600 hover:text-purple-800 font-medium">&rarr; Reconquête Amoureuse : Toutes nos Guidances</Link>
-            <Link href="/reconquete/veut-se-remettre-ensemble-mais-ne-fait-rien" className="block text-purple-600 hover:text-purple-800 font-medium">&rarr; Il Veut se Remettre Ensemble mais ne Fait Rien</Link>
-            <Link href="/reconquete/ex-qui-revient" className="block text-purple-600 hover:text-purple-800 font-medium">&rarr; Ex qui Revient : Que Faire ?</Link>
-            <Link href="/sentiments/pense-t-il-elle-a-moi" className="block text-purple-600 hover:text-purple-800 font-medium">&rarr; Pense-t-il/elle à Moi ?</Link>
-            <Link href="/reconquete/silence-radio-reconquete" className="block text-purple-600 hover:text-purple-800 font-medium">&rarr; Le Silence Radio en Reconquête</Link>
-            <Link href="/reconquete/separation-temporaire-ou-definitive" className="block text-purple-600 hover:text-purple-800 font-medium">&rarr; Séparation Temporaire ou Définitive ?</Link>
-          </div>
-        </div>
-
-        <VoyantFinalCTA topic="reconquete" source="ex-chaud-froid-final" />
-      </div>
-    </main>
+      </ContentPage>
   );
 }

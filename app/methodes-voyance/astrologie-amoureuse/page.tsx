@@ -1,106 +1,76 @@
-import type { Metadata } from 'next';
 import Link from 'next/link';
-import { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getAuthorSchema } from '@/lib/schema';
-import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
-import VoyantFinalCTA from '@/components/VoyantFinalCTA';
+import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
-export const metadata: Metadata = {
+const config: ContentPageConfig = {
   title: 'Astrologie Amoureuse : Compatibilit\u00e9 Astrale et Pr\u00e9dictions',
   description: 'L\u2019astrologie amoureuse r\u00e9v\u00e8le votre compatibilit\u00e9 astrale, votre synastrie de couple et vos transits favorables. V\u00e9nus, Mars et les signes compatibles en amour.',
+  url: 'https://www.voyantlove.fr/methodes-voyance/astrologie-amoureuse/',
   keywords: ['astrologie amoureuse', 'compatibilit\u00e9 astrale', 'synastrie couple', 'Venus astrologie', 'signes compatibles amour'],
-  alternates: {
-    canonical: 'https://www.voyantlove.fr/methodes-voyance/astrologie-amoureuse/',
-  },
-};
-
-export default function AstrologieAmoureusePage() {
-  const articleSchema = getArticleSchema({
-    title: 'Astrologie Amoureuse : Compatibilit\u00e9 Astrale et Pr\u00e9dictions',
-    description: 'L\u2019astrologie amoureuse r\u00e9v\u00e8le votre compatibilit\u00e9 astrale, votre synastrie de couple et vos transits favorables. V\u00e9nus, Mars et les signes compatibles en amour.',
-    url: 'https://www.voyantlove.fr/methodes-voyance/astrologie-amoureuse/',
-    datePublished: '2026-03-03',
-    dateModified: '2026-03-03',
-    keywords: ['astrologie amoureuse', 'compatibilit\u00e9 astrale', 'synastrie couple', 'Venus astrologie', 'signes compatibles amour'],
-  });
-
-  const authorSchema = getAuthorSchema();
-
-  const breadcrumbSchema = getBreadcrumbSchema([
+  datePublished: '2026-03-03',
+  dateModified: '2026-03-03',
+  breadcrumb: [
     { name: 'Accueil', url: 'https://www.voyantlove.fr' },
     { name: 'M\u00e9thodes de Voyance', url: 'https://www.voyantlove.fr/methodes-voyance/' },
     { name: 'Astrologie Amoureuse', url: 'https://www.voyantlove.fr/methodes-voyance/astrologie-amoureuse/' },
-  ]);
+  ],
+  header: {
+    emoji: '⭐',
+    h1: 'Astrologie Amoureuse',
+    subtitle: 'Compatibilité astrale, synastrie de couple et prédictions sentimentales',
+    gradient: 'from-violet-500 via-purple-500 to-indigo-500',
+    backLink: { href: '/methodes-voyance', label: 'Retour aux Méthodes de Voyance' },
+    anchors: [
+      { href: '#consultation', label: 'Analyse Astrale', primary: true },
+      { href: '#synastrie', label: 'Étude de Synastrie' },
+    ],
+  },
+  accentText: 'text-violet-600',
+  stats: [
+    { icon: '🎯', value: 'Reconnue', label: 'Expertise astrale' },
+    { icon: '♈', value: '12 signes', label: 'Zodiaque complet' },
+    { icon: '⭐', value: 'Élevée', label: 'Satisfaction' },
+    { icon: '🪐', value: '10 planètes', label: 'Analysées' },
+  ],
+  eeat: { colorScheme: 'purple', method: 'Astrologie occidentale et synastrie amoureuse' },
+  cta: { topic: 'methodes-voyance', slug: 'astrologie-amoureuse' },
+  faq: [
+    {
+      q: 'Quel signe astrologique est le plus compatible en amour ?',
+      a: 'Il n\u2019existe pas de signe universellement le plus compatible en amour, car la compatibilit\u00e9 astrale d\u00e9pend de l\u2019ensemble du th\u00e8me natal, pas uniquement du signe solaire. Toutefois, les signes du m\u00eame \u00e9l\u00e9ment (Feu-Feu, Terre-Terre, Air-Air, Eau-Eau) partagent g\u00e9n\u00e9ralement une compr\u00e9hension naturelle. Les \u00e9l\u00e9ments compl\u00e9mentaires (Feu-Air, Terre-Eau) cr\u00e9ent des dynamiques enrichissantes. La position de V\u00e9nus et Mars dans votre th\u00e8me est bien plus r\u00e9v\u00e9latrice que votre signe solaire seul.',
+    },
+    {
+      q: 'La synastrie est-elle fiable pour un couple ?',
+      a: 'La synastrie est l\u2019un des outils les plus fiables de l\u2019astrologie amoureuse. En comparant les positions plan\u00e9taires de deux th\u00e8mes nataux, elle r\u00e9v\u00e8le les zones d\u2019attraction naturelle, les tensions potentielles et le potentiel de longue dur\u00e9e. Sa fiabilit\u00e9 augmente consid\u00e9rablement lorsqu\u2019elle est r\u00e9alis\u00e9e par un astrologue exp\u00e9riment\u00e9 qui analyse l\u2019ensemble des aspects et non quelques aspects isol\u00e9s. Combin\u00e9e au tarot, elle offre une lecture exceptionnellement pr\u00e9cise.',
+    },
+    {
+      q: 'Comment trouver V\u00e9nus dans mon th\u00e8me natal ?',
+      a: 'Pour conna\u00eetre la position de V\u00e9nus dans votre th\u00e8me natal, vous avez besoin de votre date de naissance exacte, de votre heure de naissance et de votre lieu de naissance. Ces trois informations permettent de calculer pr\u00e9cis\u00e9ment la position de V\u00e9nus au moment de votre venue au monde. Un astrologue professionnel interpr\u00e8te ensuite cette position en lien avec les autres plan\u00e8tes pour r\u00e9v\u00e9ler votre style amoureux, vos besoins affectifs et votre type de partenaire id\u00e9al.',
+    },
+    {
+      q: 'Les transits pr\u00e9disent-ils une rencontre amoureuse ?',
+      a: 'Oui, certains transits plan\u00e9taires sont directement associ\u00e9s aux \u00e9v\u00e9nements sentimentaux. Jupiter transitant votre Maison VII ou en aspect harmonique \u00e0 votre V\u00e9nus natale ouvre des fen\u00eatres de rencontre amoureuse. V\u00e9nus revenant sur sa position natale active votre magn\u00e9tisme. L\u2019entr\u00e9e de Pluton en aspect \u00e0 V\u00e9nus d\u00e9clenche des passions transformatrices. Un astrologue amoureux identifie ces fen\u00eatres avec pr\u00e9cision dans votre th\u00e8me personnel.',
+    },
+    {
+      q: 'Peut-on am\u00e9liorer la compatibilit\u00e9 astrale d\u2019un couple ?',
+      a: 'La compatibilit\u00e9 astrale n\u2019est pas une fatalit\u00e9 fig\u00e9e. Comprendre les d\u00e9fis r\u00e9v\u00e9l\u00e9s par la synastrie permet de les transformer en leviers de croissance. Un carr\u00e9 V\u00e9nus-Mars g\u00e9n\u00e8re des tensions mais aussi une passion intense s\u2019il est bien g\u00e9r\u00e9. Un aspect Saturne difficile apprend la patience et la maturit\u00e9. L\u2019astrologie amoureuse \u00e9claire les zones de friction pour que chaque partenaire d\u00e9veloppe la conscience n\u00e9cessaire \u00e0 transformer les d\u00e9fis en forces.',
+    },
+  ],
+  related: [
+    { href: '/methodes-voyance/tirage-tarot-amour', label: 'Tirage de Tarot Amoureux : Guide Complet' },
+    { href: '/methodes-voyance/oracle-amour', label: 'Oracle de l\'Amour : Guidance Sentimentale' },
+    { href: '/sentiments/compatibilite-amoureuse', label: 'Compatibilité Amoureuse : Êtes-vous Faits l\'Un pour l\'Autre ?' },
+    { href: '/nouvelle-rencontre/quand-rencontre-amour', label: 'Quand Vais-je Rencontrer l\'Amour ?' },
+    { href: '/sentiments/avenir-amoureux', label: 'Mon Avenir Amoureux : Prédictions' },
+  ],
+};
 
-  const faqSchema = getFAQSchema([
-    {
-      question: 'Quel signe astrologique est le plus compatible en amour ?',
-      answer: 'Il n\u2019existe pas de signe universellement le plus compatible en amour, car la compatibilit\u00e9 astrale d\u00e9pend de l\u2019ensemble du th\u00e8me natal, pas uniquement du signe solaire. Toutefois, les signes du m\u00eame \u00e9l\u00e9ment (Feu-Feu, Terre-Terre, Air-Air, Eau-Eau) partagent g\u00e9n\u00e9ralement une compr\u00e9hension naturelle. Les \u00e9l\u00e9ments compl\u00e9mentaires (Feu-Air, Terre-Eau) cr\u00e9ent des dynamiques enrichissantes. La position de V\u00e9nus et Mars dans votre th\u00e8me est bien plus r\u00e9v\u00e9latrice que votre signe solaire seul.',
-    },
-    {
-      question: 'La synastrie est-elle fiable pour un couple ?',
-      answer: 'La synastrie est l\u2019un des outils les plus fiables de l\u2019astrologie amoureuse. En comparant les positions plan\u00e9taires de deux th\u00e8mes nataux, elle r\u00e9v\u00e8le les zones d\u2019attraction naturelle, les tensions potentielles et le potentiel de longue dur\u00e9e. Sa fiabilit\u00e9 augmente consid\u00e9rablement lorsqu\u2019elle est r\u00e9alis\u00e9e par un astrologue exp\u00e9riment\u00e9 qui analyse l\u2019ensemble des aspects et non quelques aspects isol\u00e9s. Combin\u00e9e au tarot, elle offre une lecture exceptionnellement pr\u00e9cise.',
-    },
-    {
-      question: 'Comment trouver V\u00e9nus dans mon th\u00e8me natal ?',
-      answer: 'Pour conna\u00eetre la position de V\u00e9nus dans votre th\u00e8me natal, vous avez besoin de votre date de naissance exacte, de votre heure de naissance et de votre lieu de naissance. Ces trois informations permettent de calculer pr\u00e9cis\u00e9ment la position de V\u00e9nus au moment de votre venue au monde. Un astrologue professionnel interpr\u00e8te ensuite cette position en lien avec les autres plan\u00e8tes pour r\u00e9v\u00e9ler votre style amoureux, vos besoins affectifs et votre type de partenaire id\u00e9al.',
-    },
-    {
-      question: 'Les transits pr\u00e9disent-ils une rencontre amoureuse ?',
-      answer: 'Oui, certains transits plan\u00e9taires sont directement associ\u00e9s aux \u00e9v\u00e9nements sentimentaux. Jupiter transitant votre Maison VII ou en aspect harmonique \u00e0 votre V\u00e9nus natale ouvre des fen\u00eatres de rencontre amoureuse. V\u00e9nus revenant sur sa position natale active votre magn\u00e9tisme. L\u2019entr\u00e9e de Pluton en aspect \u00e0 V\u00e9nus d\u00e9clenche des passions transformatrices. Un astrologue amoureux identifie ces fen\u00eatres avec pr\u00e9cision dans votre th\u00e8me personnel.',
-    },
-    {
-      question: 'Peut-on am\u00e9liorer la compatibilit\u00e9 astrale d\u2019un couple ?',
-      answer: 'La compatibilit\u00e9 astrale n\u2019est pas une fatalit\u00e9 fig\u00e9e. Comprendre les d\u00e9fis r\u00e9v\u00e9l\u00e9s par la synastrie permet de les transformer en leviers de croissance. Un carr\u00e9 V\u00e9nus-Mars g\u00e9n\u00e8re des tensions mais aussi une passion intense s\u2019il est bien g\u00e9r\u00e9. Un aspect Saturne difficile apprend la patience et la maturit\u00e9. L\u2019astrologie amoureuse \u00e9claire les zones de friction pour que chaque partenaire d\u00e9veloppe la conscience n\u00e9cessaire \u00e0 transformer les d\u00e9fis en forces.',
-    },
-  ]);
+export const metadata = contentMeta(config);
 
+export default function AstrologieAmoureusePage() {
   return (
-    <main className="min-h-screen bg-gray-50">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(authorSchema) }}
-      />
-
-      {/* Header */}
-      <header className="bg-gradient-to-r from-violet-500 via-purple-500 to-indigo-500 text-white py-16 px-4">
-        <div className="max-w-4xl mx-auto">
-          <Link href="/methodes-voyance" className="text-white/80 hover:text-white mb-4 inline-block">&larr; Retour aux M&eacute;thodes de Voyance</Link>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">&#x2B50; Astrologie Amoureuse</h1>
-          <p className="text-xl opacity-95 mb-6">Compatibilit&eacute; astrale, synastrie de couple et pr&eacute;dictions sentimentales</p>
-          <div className="flex gap-4 flex-wrap">
-            <a href="#consultation" className="bg-white text-violet-600 px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition">Analyse Astrale</a>
-            <a href="#synastrie" className="border-2 border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-violet-600 transition">&Eacute;tude de Synastrie</a>
-          </div>
-        </div>
-      </header>
-
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        {/* Stats bar */}
-        <div className="bg-white rounded-xl shadow-md p-6 mb-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-          <div><div className="text-3xl mb-1">&#x1F3AF;</div><div className="text-2xl font-bold text-violet-600">Reconnue</div><div className="text-sm text-gray-600">Expertise astrale</div></div>
-          <div><div className="text-3xl mb-1">&#x2648;</div><div className="text-2xl font-bold text-violet-600">12 signes</div><div className="text-sm text-gray-600">Zodiaque complet</div></div>
-          <div><div className="text-3xl mb-1">&#x2B50;</div><div className="text-2xl font-bold text-violet-600">&Eacute;lev&eacute;e</div><div className="text-sm text-gray-600">Satisfaction</div></div>
-          <div><div className="text-3xl mb-1">&#x1FA90;</div><div className="text-2xl font-bold text-violet-600">10 plan&egrave;tes</div><div className="text-sm text-gray-600">Analys&eacute;es</div></div>
-        </div>
-
-        {/* EEAT Signal */}
-        <EEATSignal colorScheme="purple" method="Astrologie occidentale et synastrie amoureuse" />
-
-        {/* Answer Capsule */}
+    <ContentPage config={config}>
         <article className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-violet-600">
           <div className="bg-purple-50 border-l-4 border-purple-500 p-6 rounded-lg">
             <p className="text-lg leading-relaxed">
@@ -314,54 +284,6 @@ export default function AstrologieAmoureusePage() {
             L&apos;<strong>astrologue-tarologue</strong> qui ma&icirc;trise les deux disciplines peut &eacute;galement confirmer les r&eacute;v&eacute;lations de l&apos;une par l&apos;autre : si la <strong>synastrie</strong> montre une <strong>attraction V&eacute;nus-Mars</strong> puissante et que le <strong>tirage</strong> r&eacute;v&egrave;le les Amoureux et l&apos;As de Coupe, la confirmation est formelle. Cette convergence renforce consid&eacute;rablement la fiabilit&eacute; de la <strong>guidance amoureuse</strong>.
           </p>
         </section>
-
-        {/* FAQ Section */}
-        <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">&#x2753; Questions Fr&eacute;quentes sur l&apos;Astrologie Amoureuse</h2>
-          <p className="text-lg font-semibold text-gray-800 mb-4">Les questions les plus fr&eacute;quentes portent sur le signe le plus compatible, la fiabilit&eacute; de la synastrie, la position de V&eacute;nus dans le th&egrave;me natal et la capacit&eacute; des transits &agrave; pr&eacute;dire une rencontre amoureuse.</p>
-          <div className="space-y-6">
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Quel signe astrologique est le plus compatible en amour ?</h3>
-              <p className="text-gray-700 leading-relaxed">Il n&apos;existe pas de signe universellement le plus compatible en <strong>amour</strong>, car la <strong>compatibilit&eacute; astrale</strong> d&eacute;pend de l&apos;ensemble du <strong>th&egrave;me natal</strong>, pas uniquement du signe solaire. Toutefois, les signes du m&ecirc;me &eacute;l&eacute;ment partagent g&eacute;n&eacute;ralement une compr&eacute;hension naturelle. Les &eacute;l&eacute;ments compl&eacute;mentaires (Feu-Air, Terre-Eau) cr&eacute;ent des dynamiques enrichissantes. La position de <strong>V&eacute;nus</strong> et <strong>Mars</strong> dans votre th&egrave;me est bien plus r&eacute;v&eacute;latrice que votre signe solaire seul.</p>
-            </div>
-
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">La synastrie est-elle fiable pour un couple ?</h3>
-              <p className="text-gray-700 leading-relaxed">La <strong>synastrie</strong> est l&apos;un des outils les plus fiables de l&apos;<strong>astrologie amoureuse</strong>. En comparant les positions plan&eacute;taires de deux <strong>th&egrave;mes nataux</strong>, elle r&eacute;v&egrave;le les zones d&apos;attraction naturelle, les tensions potentielles et le potentiel de longue dur&eacute;e. Sa fiabilit&eacute; augmente consid&eacute;rablement lorsqu&apos;elle est r&eacute;alis&eacute;e par un <strong>astrologue</strong> exp&eacute;riment&eacute; qui analyse l&apos;ensemble des aspects et non quelques aspects isol&eacute;s. Combin&eacute;e au <strong>tarot</strong>, elle offre une lecture exceptionnellement pr&eacute;cise.</p>
-            </div>
-
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Comment trouver V&eacute;nus dans mon th&egrave;me natal ?</h3>
-              <p className="text-gray-700 leading-relaxed">Pour conna&icirc;tre la position de <strong>V&eacute;nus</strong> dans votre <strong>th&egrave;me natal</strong>, vous avez besoin de votre date de naissance exacte, de votre heure de naissance et de votre lieu de naissance. Ces trois informations permettent de calculer pr&eacute;cis&eacute;ment la position de V&eacute;nus au moment de votre venue au monde. Un <strong>astrologue</strong> professionnel interpr&egrave;te ensuite cette position en lien avec les autres plan&egrave;tes pour r&eacute;v&eacute;ler votre <strong>style amoureux</strong>, vos besoins affectifs et votre type de partenaire id&eacute;al.</p>
-            </div>
-
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Les transits pr&eacute;disent-ils une rencontre amoureuse ?</h3>
-              <p className="text-gray-700 leading-relaxed">Oui, certains <strong>transits plan&eacute;taires</strong> sont directement associ&eacute;s aux &eacute;v&eacute;nements sentimentaux. <strong>Jupiter</strong> transitant votre Maison VII ou en aspect harmonique &agrave; votre <strong>V&eacute;nus</strong> natale ouvre des fen&ecirc;tres de <strong>rencontre amoureuse</strong>. V&eacute;nus revenant sur sa position natale active votre magn&eacute;tisme. L&apos;entr&eacute;e de <strong>Pluton</strong> en aspect &agrave; V&eacute;nus d&eacute;clenche des <strong>passions transformatrices</strong>. Un <strong>astrologue amoureux</strong> identifie ces fen&ecirc;tres avec pr&eacute;cision dans votre th&egrave;me personnel.</p>
-            </div>
-
-            <div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Peut-on am&eacute;liorer la compatibilit&eacute; astrale d&apos;un couple ?</h3>
-              <p className="text-gray-700 leading-relaxed">La <strong>compatibilit&eacute; astrale</strong> n&apos;est pas une fatalit&eacute; fig&eacute;e. Comprendre les d&eacute;fis r&eacute;v&eacute;l&eacute;s par la <strong>synastrie</strong> permet de les transformer en leviers de croissance. Un carr&eacute; <strong>V&eacute;nus</strong>-<strong>Mars</strong> g&eacute;n&egrave;re des tensions mais aussi une <strong>passion intense</strong> s&apos;il est bien g&eacute;r&eacute;. Un aspect <strong>Saturne</strong> difficile apprend la patience et la maturit&eacute;. L&apos;<strong>astrologie amoureuse</strong> &eacute;claire les zones de friction pour que chaque partenaire d&eacute;veloppe la conscience n&eacute;cessaire &agrave; transformer les d&eacute;fis en forces.</p>
-            </div>
-          </div>
-        </section>
-
-        {/* Articles Connexes */}
-        <div className="bg-gray-100 rounded-xl p-6 mb-8">
-          <h3 className="font-bold text-lg mb-4 text-gray-900">&#x1F4DA; Articles Connexes</h3>
-          <div className="space-y-2">
-            <Link href="/methodes-voyance/tirage-tarot-amour" className="block text-violet-600 hover:text-violet-800 font-medium">&rarr; Tirage de Tarot Amoureux : Guide Complet</Link>
-            <Link href="/methodes-voyance/oracle-amour" className="block text-violet-600 hover:text-violet-800 font-medium">&rarr; Oracle de l&apos;Amour : Guidance Sentimentale</Link>
-            <Link href="/sentiments/compatibilite-amoureuse" className="block text-violet-600 hover:text-violet-800 font-medium">&rarr; Compatibilit&eacute; Amoureuse : &Ecirc;tes-vous Faits l&apos;Un pour l&apos;Autre ?</Link>
-            <Link href="/nouvelle-rencontre/quand-rencontre-amour" className="block text-violet-600 hover:text-violet-800 font-medium">&rarr; Quand Vais-je Rencontrer l&apos;Amour ?</Link>
-            <Link href="/sentiments/avenir-amoureux" className="block text-violet-600 hover:text-violet-800 font-medium">&rarr; Mon Avenir Amoureux : Pr&eacute;dictions</Link>
-          </div>
-        </div>
-
-        {/* CTA Footer */}
-        <VoyantFinalCTA topic="methodes-voyance" source="astrologie-amoureuse-final" />
-      </div>
-    </main>
+    </ContentPage>
   );
 }

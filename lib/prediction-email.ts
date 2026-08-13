@@ -41,7 +41,7 @@ export function buildPredictionEmailHTML(
             <td style="background:linear-gradient(135deg,#7c3aed,#4f46e5);padding:40px 30px;text-align:center;">
               <div style="font-size:40px;margin-bottom:10px;">${prediction.cardEmoji}</div>
               <h1 style="color:#ffffff;font-size:24px;margin:0 0 8px 0;">Votre Tirage Tarot Amour</h1>
-              <p style="color:rgba(255,255,255,0.9);font-size:14px;margin:0;">${zodiacLabel} — ${situationLabel}</p>
+              <p style="color:rgba(255,255,255,0.9);font-size:14px;margin:0;">${zodiacLabel}, ${situationLabel}</p>
             </td>
           </tr>
 
@@ -50,7 +50,7 @@ export function buildPredictionEmailHTML(
             <td style="padding:30px 30px 10px;">
               <p style="font-size:16px;color:#1f2937;margin:0;">Bonjour <strong>${name}</strong>,</p>
               <p style="font-size:15px;color:#4b5563;margin:10px 0 0;line-height:1.6;">
-                Voici votre tirage tarot amour personnalisé. Les cartes ont parlé — voici ce qu'elles révèlent sur votre situation.
+                Voici votre tirage tarot amour personnalisé. Les cartes ont parlé, voici ce qu'elles révèlent sur votre situation.
               </p>
             </td>
           </tr>
@@ -126,7 +126,7 @@ export function buildPredictionEmailHTML(
                     <a href="https://www.voyantlove.fr/go?ref=email-prediction" style="display:inline-block;background:linear-gradient(135deg,#7c3aed,#4f46e5);color:#ffffff;font-weight:bold;font-size:16px;padding:14px 32px;border-radius:8px;text-decoration:none;">
                       🔮 Consulter un Voyant Maintenant
                     </a>
-                    <p style="font-size:12px;color:#9ca3af;margin:12px 0 0;">Paiement sécurisé — Confidentiel — Disponible 7j/7</p>
+                    <p style="font-size:12px;color:#9ca3af;margin:12px 0 0;">Paiement sécurisé, Confidentiel, Disponible 7j/7</p>
                   </td>
                 </tr>
               </table>
@@ -137,7 +137,7 @@ export function buildPredictionEmailHTML(
           <tr>
             <td style="background-color:#f9fafb;padding:20px 30px;text-align:center;border-top:1px solid #e5e7eb;">
               <p style="font-size:12px;color:#9ca3af;margin:0 0 8px;">
-                VoyantLove.fr — Voyance Amoureuse Spécialisée
+                VoyantLove.fr, Voyance Amoureuse Spécialisée
               </p>
               <p style="font-size:11px;color:#d1d5db;margin:0;">
                 Vous recevez cet email suite à votre demande de tirage gratuit.

@@ -31,17 +31,54 @@ const EN_HOSTS = new Set([
   'www.lovepsychicguide.com',
 ]);
 
-// Paths that must NEVER be rewritten regardless of domain. These are either
-// server infrastructure (API, Next internals) or top-level metadata files
-// that need to be served as-is from the root.
+// lovepsychicguide.com is served from app/en/* on its own domain, so it needs
+// its own robots + sitemap. public/robots.txt and app/sitemap.ts are
+// host-agnostic (they'd advertise the FR site on the EN domain), so the EN
+// versions are synthesized here and served host-aware from middleware().
+const EN_SITE_URL = 'https://www.lovepsychicguide.com';
+
+const EN_ROBOTS_TXT = `# Robots.txt for LovePsychicGuide.com
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+
+Sitemap: ${EN_SITE_URL}/sitemap.xml
+Host: ${EN_SITE_URL}
+`;
+
+// Hand-authored EN routes (app/en/*). Keep in sync when EN pages are added.
+const EN_SITEMAP_PATHS = [
+  '/',
+  '/will-he-come-back/',
+  '/twin-flame-signs/',
+  '/is-my-ex-thinking-of-me/',
+  '/dream-about-ex-meaning/',
+  '/online-psychic-reading/',
+  '/love-psychic-services/',
+  '/love-psychic-services/keen-review/',
+];
+
+function enSitemapXml(): string {
+  const urls = EN_SITEMAP_PATHS.map(
+    (p) => `  <url><loc>${EN_SITE_URL}${p}</loc></url>`,
+  ).join('\n');
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${urls}
+</urlset>
+`;
+}
+
+// Paths that must NEVER be rewritten regardless of domain: server
+// infrastructure (API, Next internals) and the favicon. robots.txt and
+// sitemap.xml are handled separately (host-aware) at the top of middleware().
 function isPassThroughPath(pathname: string): boolean {
   return (
     pathname.startsWith('/api/') ||
     pathname.startsWith('/_next/') ||
     pathname.startsWith('/_vercel/') ||
-    pathname === '/favicon.ico' ||
-    pathname === '/robots.txt' ||
-    pathname === '/sitemap.xml'
+    pathname === '/favicon.ico'
   );
 }
 
@@ -49,6 +86,26 @@ export function middleware(request: NextRequest) {
   const hostname = (request.headers.get('host') || '').toLowerCase();
   const url = request.nextUrl.clone();
   const { pathname } = url;
+
+  // Host-aware metadata files. These have a file extension, so they're added
+  // explicitly to the matcher below. Handle them before the trailing-slash
+  // redirect, which would otherwise 308 `/robots.txt` → `/robots.txt/`.
+  if (pathname === '/robots.txt') {
+    if (EN_HOSTS.has(hostname)) {
+      return new NextResponse(EN_ROBOTS_TXT, {
+        headers: { 'content-type': 'text/plain; charset=utf-8' },
+      });
+    }
+    return NextResponse.next(); // FR → static public/robots.txt
+  }
+  if (pathname === '/sitemap.xml') {
+    if (EN_HOSTS.has(hostname)) {
+      return new NextResponse(enSitemapXml(), {
+        headers: { 'content-type': 'application/xml; charset=utf-8' },
+      });
+    }
+    return NextResponse.next(); // FR → app/sitemap.ts
+  }
 
   if (isPassThroughPath(pathname)) {
     return NextResponse.next();
@@ -102,5 +159,9 @@ export const config = {
     //   _next/image (image optimization endpoint)
     //   any path with a file extension (.png, .css, .js, .ico, .txt, etc.)
     '/((?!_next/static|_next/image|.*\\..*).*)',
+    // Explicitly include the metadata files (excluded above by the dot rule)
+    // so middleware can serve host-specific robots.txt / sitemap.xml.
+    '/robots.txt',
+    '/sitemap.xml',
   ],
 };

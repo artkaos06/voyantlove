@@ -44,7 +44,7 @@ export interface KeenAdvisor {
   /**
    * Outcome-led hook copy for the card. Should describe what this
    * advisor specifically helps with, in language that connects to the
-   * commercial-intent visitor's actual question. Short — 1 sentence.
+   * commercial-intent visitor's actual question. Short, 1 sentence.
    */
   hook: string;
   /**
@@ -85,7 +85,7 @@ export const KEEN_ADVISORS: KeenAdvisor[] = [
     photoSrc: null,
     specialties: ['Love', 'Future predictions', 'Empath'],
     introOffer: true,
-    hook: 'Empath who reads emotional state — useful when you want to know what they\'re actually feeling.',
+    hook: 'Empath who reads emotional state, useful when you want to know what they\'re actually feeling.',
     ctaLabel: 'Read their feelings → $1',
   },
   {

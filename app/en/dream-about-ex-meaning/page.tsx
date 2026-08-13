@@ -15,11 +15,11 @@ import MobileStickyCTA from '@/components/en/MobileStickyCTA';
 
 export const metadata: Metadata = {
   title:
-    'Dream about ex meaning — and how to get a real interpretation for $1',
+    'Dream about ex meaning, and how to get a real interpretation for $1',
   description:
     'A grounded look at the 5 dream types about exes and what they mean. Plus how to get a personalized dream interpretation from a love psychic for $1.',
   alternates: {
-    canonical: 'https://www.lovepsychicguide.com/dream-about-ex-meaning',
+    canonical: 'https://www.lovepsychicguide.com/dream-about-ex-meaning/',
   },
 };
 
@@ -38,15 +38,14 @@ export default function DreamAboutExMeaningPage() {
             Honest read · 4 min
           </p>
           <h1 className="text-3xl md:text-4xl font-extrabold text-gray-900 leading-tight mb-5">
-            Dreaming about your ex — what your specific dream actually
+            Dreaming about your ex, what your specific dream actually
             means.
           </h1>
           <p className="text-lg text-gray-700 leading-relaxed">
             You woke up at 4 a.m., dream still vivid, your ex right
             there. Generic dream-meaning articles can give you the
-            categories. But what <em>your</em> specific dream means —
-            given your situation, where you are emotionally, what
-            happened with this person — needs more than a checklist.
+            categories. But what <em>your</em> specific dream means,             given your situation, where you are emotionally, what
+            happened with this person, needs more than a checklist.
           </p>
         </header>
 
@@ -55,9 +54,9 @@ export default function DreamAboutExMeaningPage() {
             readingTime="4 min read"
             subtitle="Honest editorial"
             summary={[
-              'Most dreams about exes are processing dreams — your brain working through unfinished emotional content. They\'re rarely predictions or messages.',
+              'Most dreams about exes are processing dreams, your brain working through unfinished emotional content. They\'re rarely predictions or messages.',
               'There are 5 distinct dream types (closure, anxiety, longing, fight, communication). Each tells you something different about your own emotional state.',
-              'For what your specific dream actually means — and whether yours is the rare "communication dream" type — a real psychic dream interpretation gets you what no article can.',
+              'For what your specific dream actually means, and whether yours is the rare "communication dream" type, a real psychic dream interpretation gets you what no article can.',
             ]}
             ctaPrompt="Want a real interpretation of your specific dream?"
             cta={
@@ -66,7 +65,7 @@ export default function DreamAboutExMeaningPage() {
                 placement="topic_dream_ex_tldr"
                 className="inline-flex items-center gap-2 bg-purple-600 hover:bg-purple-700 text-white text-sm font-semibold px-4 py-2.5 rounded-lg transition-colors"
               >
-                Ask a dream psychic — 5 min for $1 →
+                Ask a dream psychic, 5 min for $1 →
               </AffiliateCTA>
             }
             ctaFootnote="New users: 5 minutes for $1 with any new advisor on Keen · 18+"
@@ -77,8 +76,7 @@ export default function DreamAboutExMeaningPage() {
           <h2>Why you dream about exes at all</h2>
 
           <p>
-            The brain processes emotional content during REM sleep —
-            that&apos;s one of its primary functions. Anything
+            The brain processes emotional content during REM sleep,             that&apos;s one of its primary functions. Anything
             emotionally significant that hasn&apos;t been fully
             metabolized in waking life tends to show up.
           </p>
@@ -95,7 +93,7 @@ export default function DreamAboutExMeaningPage() {
             thinking about you, that they&apos;re about to reach out,
             or that the universe is sending you a message. They&apos;re
             signs that <em>your</em> brain is still processing
-            something. Useful information — just different from what
+            something. Useful information, just different from what
             people often hope for.
           </KeyTakeaway>
 
@@ -111,7 +109,7 @@ export default function DreamAboutExMeaningPage() {
 
           <h3>2. Anxiety dreams</h3>
           <p>
-            You&apos;re together but something is wrong — they
+            You&apos;re together but something is wrong, they
             won&apos;t look at you, the setting keeps shifting.{' '}
             <strong>Meaning:</strong> general anxiety using the ex as
             day-residue. Less about them, more about an unresolved fear
@@ -137,11 +135,10 @@ export default function DreamAboutExMeaningPage() {
           <h3>5. Communication dreams</h3>
           <p>
             Unusually vivid, you remember specifics, strong feeling
-            that the dream wasn&apos;t about you — it was about{' '}
+            that the dream wasn&apos;t about you, it was about{' '}
             <em>them</em>. <strong>Meaning:</strong> this is the rarer
             category where the metaphysics gets harder to dismiss.
-            Truly distinctive dreams ARE worth paying attention to —
-            but most aren&apos;t this type.
+            Truly distinctive dreams ARE worth paying attention to,             but most aren&apos;t this type.
           </p>
 
           <PullQuote>
@@ -161,7 +158,7 @@ export default function DreamAboutExMeaningPage() {
             }
             subtext={
               <>
-                Self-interpretation has limits — your reading is shaped
+                Self-interpretation has limits, your reading is shaped
                 by what you want it to mean. Dream-interpretation
                 specialists on Keen do thousands of these readings.
                 They can tell you which of the 5 types yours is, what
@@ -195,7 +192,7 @@ export default function DreamAboutExMeaningPage() {
 
           <KeyTakeaway title="The 4 a.m. text rule" variant="caution">
             If you woke up from a vivid dream and your hand is reaching
-            for the phone — wait. The dream isn&apos;t evidence;
+            for the phone, wait. The dream isn&apos;t evidence;
             it&apos;s your subconscious processing. By 11 a.m.
             you&apos;ll be glad you waited. If the urge is still there,
             a 5-minute reading often resolves the loop faster than

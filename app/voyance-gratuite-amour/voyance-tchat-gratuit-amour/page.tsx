@@ -1,100 +1,71 @@
-import type { Metadata } from 'next';
 import Link from 'next/link';
-import { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getAuthorSchema } from '@/lib/schema';
-import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
-import VoyantFinalCTA from '@/components/VoyantFinalCTA';
+import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
-export const metadata: Metadata = {
+const config: ContentPageConfig = {
   title: 'Voyance Tchat Gratuit Amour : Consultation Sentimentale',
   description: 'Voyance gratuite par tchat amour : guide pour une consultation sentimentale fiable. Préparez vos questions, évitez les pièges.',
+  url: 'https://www.voyantlove.fr/voyance-gratuite-amour/voyance-tchat-gratuit-amour/',
   keywords: ['voyance tchat gratuit amour', 'voyance gratuite par tchat amour', 'voyance gratuite immediate amour'],
-  alternates: {
-    canonical: 'https://www.voyantlove.fr/voyance-gratuite-amour/voyance-tchat-gratuit-amour/',
-  },
-};
-
-export default function VoyanceTchatGratuitAmourPage() {
-  const articleSchema = getArticleSchema({
-    title: 'Voyance Tchat Gratuit Amour : Consultation Sentimentale',
-    description: 'Voyance gratuite par tchat amour : guide pour une consultation sentimentale fiable. Préparez vos questions, évitez les pièges.',
-    url: 'https://www.voyantlove.fr/voyance-gratuite-amour/voyance-tchat-gratuit-amour/',
-    datePublished: '2026-03-10',
-    dateModified: '2026-03-10',
-    keywords: ['voyance tchat gratuit amour', 'voyance gratuite par tchat amour', 'voyance gratuite immediate amour'],
-  });
-
-  const authorSchema = getAuthorSchema();
-
-  const breadcrumbSchema = getBreadcrumbSchema([
+  datePublished: '2026-03-10',
+  dateModified: '2026-03-10',
+  breadcrumb: [
     { name: 'Accueil', url: 'https://www.voyantlove.fr' },
     { name: 'Voyance Gratuite Amour', url: 'https://www.voyantlove.fr/voyance-gratuite-amour/' },
     { name: 'Voyance Tchat Gratuit Amour', url: 'https://www.voyantlove.fr/voyance-gratuite-amour/voyance-tchat-gratuit-amour/' },
-  ]);
+  ],
+  header: {
+    emoji: '💬',
+    h1: 'Voyance Tchat Gratuit Amour',
+    subtitle: 'Guide complet pour une consultation sentimentale par tchat fiable et éclairante',
+    gradient: 'from-blue-500 via-cyan-500 to-teal-500',
+    backLink: { href: '/voyance-gratuite-amour', label: 'Retour à Voyance Gratuite Amour' },
+    anchors: [
+      { href: '#consultation', label: 'Consulter par Tchat', primary: true },
+      { href: '#preparer', label: 'Préparer sa Séance' },
+    ],
+  },
+  accentText: 'text-blue-600',
+  stats: [
+    { icon: '💬', value: 'Discret', label: 'Échanges écrits' },
+    { icon: '⭐', value: 'Fiable', label: 'Voyants vérifiés' },
+    { icon: '⏰', value: 'Immédiat', label: 'Accès sans attente' },
+    { icon: '🔮', value: '4 étapes', label: 'Méthode guidée' },
+  ],
+  eeat: { colorScheme: 'green', method: 'Voyance par tchat et consultation sentimentale en ligne' },
+  cta: { topic: 'voyance-gratuite', slug: 'voyance-tchat-gratuit-amour' },
+  faq: [
+    {
+      q: 'Combien de temps dure une voyance tchat gratuite amour ?',
+      a: 'Une consultation de voyance tchat gratuit amour dure généralement entre cinq et quinze minutes selon la plateforme. Ce temps suffit pour poser une question sentimentale précise et obtenir une première guidance amoureuse. Les voyants sérieux utilisent ces minutes pour établir la connexion énergétique, tirer les cartes et livrer une interprétation claire. Pour approfondir votre consultation et explorer plusieurs aspects de votre vie sentimentale, une séance personnalisée complète offre davantage de profondeur.',
+    },
+    {
+      q: 'La voyance par tchat est-elle aussi fiable que par téléphone ?',
+      a: 'La voyance par tchat amour et la voyance par téléphone offrent des niveaux de fiabilité comparables lorsque le voyant est compétent. Le tchat présente l\'avantage de la discrétion et du temps de réflexion entre chaque message. Le téléphone permet une connexion vocale plus directe et une fluidité naturelle dans l\'échange. Le choix dépend de votre sensibilité personnelle : certains consultants expriment mieux leurs émotions sentimentales à l\'écrit, d\'autres préfèrent la spontanéité de la voix pour une consultation amoureuse.',
+    },
+    {
+      q: 'Comment bien préparer ses questions avant un tchat voyance amour ?',
+      a: 'Pour optimiser votre voyance tchat gratuit amour, préparez vos questions sentimentales à l\'avance. Formulez des questions ouvertes et précises plutôt que des questions fermées. Par exemple, demandez « quelles énergies entourent ma relation ? » plutôt que « va-t-il m\'appeler ? ». Notez le prénom de la personne concernée et les dates importantes. Concentrez-vous sur une ou deux questions essentielles pour la séance gratuite afin que le voyant puisse vous offrir une guidance amoureuse approfondie.',
+    },
+    {
+      q: 'Quand faut-il passer du tchat gratuit à une consultation payante ?',
+      a: 'Le passage de la voyance gratuite par tchat à une consultation personnalisée se justifie lorsque votre situation sentimentale est complexe et nécessite une analyse approfondie. Si vous traversez une rupture amoureuse douloureuse, si vous hésitez entre deux partenaires ou si vous cherchez des réponses détaillées sur votre avenir amoureux, une séance complète offre la profondeur nécessaire. Le tchat gratuit sert de premier contact pour évaluer la connexion avec le voyant avant de vous engager.',
+    },
+  ],
+  related: [
+    { href: '/voyance-gratuite-amour', label: 'Voyance Gratuite Amour : Tirages et Guidance Sentimentale' },
+    { href: '/methodes-voyance/voyance-telephone-amour', label: 'Voyance Téléphone Amour : Consultation Directe' },
+    { href: '/crise-couple/sauver-son-couple', label: 'Sauver Son Couple : Conseils et Guidance' },
+    { href: '/sentiments/avenir-amoureux', label: 'Mon Avenir Amoureux : Prédictions' },
+  ],
+};
 
-  const faqSchema = getFAQSchema([
-    {
-      question: 'Combien de temps dure une voyance tchat gratuite amour ?',
-      answer: 'Une consultation de voyance tchat gratuit amour dure généralement entre cinq et quinze minutes selon la plateforme. Ce temps suffit pour poser une question sentimentale précise et obtenir une première guidance amoureuse. Les voyants sérieux utilisent ces minutes pour établir la connexion énergétique, tirer les cartes et livrer une interprétation claire. Pour approfondir votre consultation et explorer plusieurs aspects de votre vie sentimentale, une séance personnalisée complète offre davantage de profondeur.',
-    },
-    {
-      question: 'La voyance par tchat est-elle aussi fiable que par téléphone ?',
-      answer: 'La voyance par tchat amour et la voyance par téléphone offrent des niveaux de fiabilité comparables lorsque le voyant est compétent. Le tchat présente l\'avantage de la discrétion et du temps de réflexion entre chaque message. Le téléphone permet une connexion vocale plus directe et une fluidité naturelle dans l\'échange. Le choix dépend de votre sensibilité personnelle : certains consultants expriment mieux leurs émotions sentimentales à l\'écrit, d\'autres préfèrent la spontanéité de la voix pour une consultation amoureuse.',
-    },
-    {
-      question: 'Comment bien préparer ses questions avant un tchat voyance amour ?',
-      answer: 'Pour optimiser votre voyance tchat gratuit amour, préparez vos questions sentimentales à l\'avance. Formulez des questions ouvertes et précises plutôt que des questions fermées. Par exemple, demandez « quelles énergies entourent ma relation ? » plutôt que « va-t-il m\'appeler ? ». Notez le prénom de la personne concernée et les dates importantes. Concentrez-vous sur une ou deux questions essentielles pour la séance gratuite afin que le voyant puisse vous offrir une guidance amoureuse approfondie.',
-    },
-    {
-      question: 'Quand faut-il passer du tchat gratuit à une consultation payante ?',
-      answer: 'Le passage de la voyance gratuite par tchat à une consultation personnalisée se justifie lorsque votre situation sentimentale est complexe et nécessite une analyse approfondie. Si vous traversez une rupture amoureuse douloureuse, si vous hésitez entre deux partenaires ou si vous cherchez des réponses détaillées sur votre avenir amoureux, une séance complète offre la profondeur nécessaire. Le tchat gratuit sert de premier contact pour évaluer la connexion avec le voyant avant de vous engager.',
-    },
-  ]);
+export const metadata = contentMeta(config);
 
+export default function VoyanceTchatGratuitAmourPage() {
   return (
-    <main className="min-h-screen bg-gray-50">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(authorSchema) }}
-      />
-
-      {/* Header */}
-      <header className="bg-gradient-to-r from-blue-500 via-cyan-500 to-teal-500 text-white py-16 px-4">
-        <div className="max-w-4xl mx-auto">
-          <Link href="/voyance-gratuite-amour" className="text-white/80 hover:text-white mb-4 inline-block">&larr; Retour &agrave; Voyance Gratuite Amour</Link>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">&#x1F4AC; Voyance Tchat Gratuit Amour</h1>
-          <p className="text-xl opacity-95 mb-6">Guide complet pour une consultation sentimentale par tchat fiable et &eacute;clairante</p>
-          <div className="flex gap-4 flex-wrap">
-            <a href="#consultation" className="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition">Consulter par Tchat</a>
-            <a href="#preparer" className="border-2 border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition">Pr&eacute;parer sa S&eacute;ance</a>
-          </div>
-        </div>
-      </header>
-
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        {/* Stats bar */}
-        <div className="bg-white rounded-xl shadow-md p-6 mb-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-          <div><div className="text-3xl mb-1">&#x1F4AC;</div><div className="text-2xl font-bold text-blue-600">Discret</div><div className="text-sm text-gray-600">&Eacute;changes &eacute;crits</div></div>
-          <div><div className="text-3xl mb-1">&#x2B50;</div><div className="text-2xl font-bold text-blue-600">Fiable</div><div className="text-sm text-gray-600">Voyants v&eacute;rifi&eacute;s</div></div>
-          <div><div className="text-3xl mb-1">&#x23F0;</div><div className="text-2xl font-bold text-blue-600">Imm&eacute;diat</div><div className="text-sm text-gray-600">Acc&egrave;s sans attente</div></div>
-          <div><div className="text-3xl mb-1">&#x1F52E;</div><div className="text-2xl font-bold text-blue-600">4 &eacute;tapes</div><div className="text-sm text-gray-600">M&eacute;thode guid&eacute;e</div></div>
-        </div>
-
-        {/* EEAT Signal */}
-        <EEATSignal colorScheme="green" method="Voyance par tchat et consultation sentimentale en ligne" />
+    <ContentPage config={config}>
 
         {/* Answer Capsule */}
         <article className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-blue-600">
@@ -313,47 +284,6 @@ export default function VoyanceTchatGratuitAmourPage() {
           </div>
         </section>
 
-        {/* FAQ Section */}
-        <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">&#x2753; Questions Fr&eacute;quentes sur la Voyance Tchat Gratuit Amour</h2>
-          <p className="text-lg font-semibold text-gray-800 mb-4">Les questions les plus pos&eacute;es concernent la dur&eacute;e de la s&eacute;ance gratuite, la fiabilit&eacute; du tchat, la pr&eacute;paration des questions et le moment id&eacute;al pour passer au payant.</p>
-          <div className="space-y-6">
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Combien de temps dure une voyance tchat gratuite amour ?</h3>
-              <p className="text-gray-700 leading-relaxed">Une <strong>consultation de voyance tchat gratuit amour</strong> dure g&eacute;n&eacute;ralement entre cinq et quinze minutes selon la plateforme. Ce temps suffit pour poser une <strong>question sentimentale</strong> pr&eacute;cise et obtenir une premi&egrave;re <strong>guidance amoureuse</strong>. Les voyants s&eacute;rieux utilisent ces minutes pour &eacute;tablir la connexion &eacute;nerg&eacute;tique, tirer les cartes et livrer une interpr&eacute;tation claire. Pour approfondir votre consultation et explorer plusieurs aspects de votre <strong>vie sentimentale</strong>, une s&eacute;ance personnalis&eacute;e compl&egrave;te offre davantage de profondeur.</p>
-            </div>
-
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">La voyance par tchat est-elle aussi fiable que par t&eacute;l&eacute;phone ?</h3>
-              <p className="text-gray-700 leading-relaxed">La <strong>voyance par tchat amour</strong> et la <strong>voyance par t&eacute;l&eacute;phone</strong> offrent des niveaux de fiabilit&eacute; comparables lorsque le voyant est comp&eacute;tent. Le tchat pr&eacute;sente l&apos;avantage de la discr&eacute;tion et du temps de r&eacute;flexion entre chaque message. Le t&eacute;l&eacute;phone permet une connexion vocale plus directe et une fluidit&eacute; naturelle dans l&apos;&eacute;change. Le choix d&eacute;pend de votre sensibilit&eacute; personnelle : certains consultants expriment mieux leurs &eacute;motions <strong>sentimentales</strong> &agrave; l&apos;&eacute;crit, d&apos;autres pr&eacute;f&egrave;rent la spontan&eacute;it&eacute; de la voix pour une <strong>consultation amoureuse</strong>.</p>
-            </div>
-
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Comment bien pr&eacute;parer ses questions avant un tchat voyance amour ?</h3>
-              <p className="text-gray-700 leading-relaxed">Pour optimiser votre <strong>voyance tchat gratuit amour</strong>, pr&eacute;parez vos <strong>questions sentimentales</strong> &agrave; l&apos;avance. Formulez des questions ouvertes et pr&eacute;cises plut&ocirc;t que des questions ferm&eacute;es. Par exemple, demandez &laquo;&nbsp;quelles &eacute;nergies entourent ma <strong>relation</strong>&nbsp;?&nbsp;&raquo; plut&ocirc;t que &laquo;&nbsp;va-t-il m&apos;appeler&nbsp;?&nbsp;&raquo;. Notez le pr&eacute;nom de la personne concern&eacute;e et les dates importantes. Concentrez-vous sur une ou deux questions essentielles pour la s&eacute;ance gratuite afin que le <strong>voyant</strong> puisse vous offrir une <strong>guidance amoureuse</strong> approfondie.</p>
-            </div>
-
-            <div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Quand faut-il passer du tchat gratuit &agrave; une consultation payante ?</h3>
-              <p className="text-gray-700 leading-relaxed">Le passage de la <strong>voyance gratuite par tchat</strong> &agrave; une <strong>consultation personnalis&eacute;e</strong> se justifie lorsque votre <strong>situation sentimentale</strong> est complexe et n&eacute;cessite une analyse approfondie. Si vous traversez une <strong>rupture amoureuse</strong> douloureuse, si vous h&eacute;sitez entre deux partenaires ou si vous cherchez des r&eacute;ponses d&eacute;taill&eacute;es sur votre <strong>avenir amoureux</strong>, une s&eacute;ance compl&egrave;te offre la profondeur n&eacute;cessaire. Le tchat gratuit sert de premier contact pour &eacute;valuer la connexion avec le voyant avant de vous engager.</p>
-            </div>
-          </div>
-        </section>
-
-        {/* Articles Connexes */}
-        <div className="bg-gray-100 rounded-xl p-6 mb-8">
-          <h3 className="font-bold text-lg mb-4 text-gray-900">&#x1F4DA; Articles Connexes</h3>
-          <div className="space-y-2">
-            <Link href="/voyance-gratuite-amour" className="block text-blue-600 hover:text-blue-800 font-medium">&rarr; Voyance Gratuite Amour : Tirages et Guidance Sentimentale</Link>
-            <Link href="/methodes-voyance/voyance-telephone-amour" className="block text-blue-600 hover:text-blue-800 font-medium">&rarr; Voyance T&eacute;l&eacute;phone Amour : Consultation Directe</Link>
-            <Link href="/crise-couple/sauver-son-couple" className="block text-blue-600 hover:text-blue-800 font-medium">&rarr; Sauver Son Couple : Conseils et Guidance</Link>
-            <Link href="/sentiments/avenir-amoureux" className="block text-blue-600 hover:text-blue-800 font-medium">&rarr; Mon Avenir Amoureux : Pr&eacute;dictions</Link>
-          </div>
-        </div>
-
-        {/* CTA Footer */}
-        <VoyantFinalCTA topic="voyance-gratuite" source="voyance-tchat-gratuit-amour-final" />
-      </div>
-    </main>
+    </ContentPage>
   );
 }

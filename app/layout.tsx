@@ -68,7 +68,7 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.png" type="image/png" />
         {/* Warm up the TCP+TLS handshake for third-party origins so it happens
             in parallel with HTML parsing instead of after it. monsitevoyance
-            serves the voyant portraits on the MGID angle landers — those are
+            serves the voyant portraits on the MGID angle landers, those are
             the trust signal next to the phone CTA, so they matter most on the
             slow mobile connections that traffic arrives on. */}
         <link rel="preconnect" href="https://www.monsitevoyance.com" />
@@ -99,7 +99,7 @@ export default function RootLayout({
             .tsx already has loadClarity(), gated on ANALYTICS consent and
             keyed on NEXT_PUBLIC_CLARITY_PROJECT_ID. A second copy here would
             double-load it and bypass the consent gate. Set that env var to
-            switch Clarity on — see loadClarity() for the canonical path. */}
+            switch Clarity on, see loadClarity() for the canonical path. */}
         {/* Client-error beacon. The 91.6% Q1->Q2 collapse was invisible for
             weeks because nothing reported it. Errors now reach Discord via
             /api/track/error. sendBeacon so a crash during unload still
@@ -147,7 +147,7 @@ export default function RootLayout({
             lander email form is a native POST that 303-redirects back to
             /lp/<lander>?merci=1, so by the time the visitor sees the
             confirmation the submit event is long gone. The redirect target IS
-            the conversion signal — which is exactly MGID's "page load snippet
+            the conversion signal, which is exactly MGID's "page load snippet
             captures URL-based conversions" case.
             Deduped in sessionStorage because ?merci=1 is a plain GET: a
             refresh or a back/forward would otherwise re-fire the goal and
@@ -205,7 +205,7 @@ export default function RootLayout({
             //
             // _mgq is a queue, so pushing before mgsensor.js loads is safe:
             // it drains on load, which only happens after marketing consent.
-            // If consent is refused the event simply never sends — the gate
+            // If consent is refused the event simply never sends, the gate
             // stays intact without extra logic here.
             try {
               if (/^\\/lp\\/(voyant-direct|il-elle-vous-aime|histoire-sophie)\\/?$/.test(page)) {
@@ -219,7 +219,7 @@ export default function RootLayout({
             //    otherwise bypass our server completely).
             try {
               var attribution = { gclid: null, gbraid: null, wbraid: null };
-              // MGID attribution for the angle landers — without these the
+              // MGID attribution for the angle landers, without these the
               // tap is recorded but we can't tell which source/creative
               // produced it, which is the whole point of the angle test.
               var mgid = { source: '', sid: '', click_id: '', creative_id: '' };

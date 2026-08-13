@@ -1,5 +1,5 @@
 // Subtle inline link-style CTA for placing within paragraphs or as a low-key
-// mid-article touchpoint. Less aggressive than full CTA boxes — for readers
+// mid-article touchpoint. Less aggressive than full CTA boxes, for readers
 // who'd find a giant button jarring but might click a contextual link.
 //
 // Use 1-2 times per article in addition to the prominent CTA boxes.

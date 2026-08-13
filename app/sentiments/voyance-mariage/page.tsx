@@ -1,100 +1,71 @@
-import type { Metadata } from 'next';
 import Link from 'next/link';
-import { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getAuthorSchema } from '@/lib/schema';
-import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
-import VoyantRecommendations from '@/components/VoyantRecommendations';
-import VoyantFinalCTA from '@/components/VoyantFinalCTA';
+import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
-export const metadata: Metadata = {
+const config: ContentPageConfig = {
   title: 'Voyance Mariage : Vais-Je Me Marier ? Avec Qui ?',
   description: 'Vous vous demandez si et quand vous allez vous marier ? La voyance mariage révèle les prédictions sur votre union, la demande en mariage et votre futur conjoint.',
+  url: 'https://www.voyantlove.fr/sentiments/voyance-mariage/',
   keywords: ['voyance mariage', 'vais-je me marier', 'quand vais-je me marier', 'prédiction mariage', 'voyance union'],
-  alternates: { canonical: 'https://www.voyantlove.fr/sentiments/voyance-mariage/' },
-};
-
-export default function VoyanceMariagePage() {
-  const articleSchema = getArticleSchema({
-    title: 'Voyance Mariage : Vais-Je Me Marier ? Avec Qui ? | VoyantLove',
-    description: 'Vous vous demandez si et quand vous allez vous marier ? La voyance mariage révèle les prédictions sur votre union, la demande en mariage et votre futur conjoint.',
-    url: 'https://www.voyantlove.fr/sentiments/voyance-mariage/',
-    datePublished: '2026-03-27',
-    dateModified: '2026-03-27',
-    keywords: ['voyance mariage', 'vais-je me marier', 'quand vais-je me marier', 'prédiction mariage', 'voyance union'],
-  });
-
-  const breadcrumbSchema = getBreadcrumbSchema([
+  datePublished: '2026-03-27',
+  dateModified: '2026-03-27',
+  breadcrumb: [
     { name: 'Accueil', url: 'https://www.voyantlove.fr' },
     { name: 'Sentiments & Avenir', url: 'https://www.voyantlove.fr/sentiments/' },
     { name: 'Voyance Mariage', url: 'https://www.voyantlove.fr/sentiments/voyance-mariage/' },
-  ]);
+  ],
+  header: {
+    emoji: '💍',
+    h1: 'Voyance Mariage',
+    subtitle: 'Vais-Je Me Marier ? Avec Qui ?',
+    gradient: 'from-rose-500 via-pink-600 to-purple-600',
+    backLink: { href: '/sentiments', label: 'Retour à Sentiments & Avenir' },
+    anchors: [
+      { href: '#tarot-mariage', label: 'Les Cartes du Mariage', primary: true },
+      { href: '#quand', label: 'Timing & Numérologie' },
+    ],
+  },
+  accentText: 'text-pink-600',
+  stats: [
+    { icon: '💍', value: '5 Cartes', label: 'Tarot union & mariage' },
+    { icon: '✨', value: '16 ans', label: 'D\'expertise en voyance' },
+    { icon: '🔮', value: '3 400+', label: 'Consultations réalisées' },
+    { icon: '🌟', value: 'Timing', label: 'Cycles Jupiter & num.' },
+  ],
+  eeat: { colorScheme: 'rose', method: 'Tarot et voyance professionnelle' },
+  cta: { topic: 'sentiments', slug: 'voyance-mariage' },
+  faq: [
+    {
+      q: 'La voyance peut-elle vraiment prédire un mariage ?',
+      a: 'La voyance mariage ne prédit pas un événement gravé dans le marbre, mais elle lit les tendances énergétiques actuelles et les probabilités d\'union selon votre vibration amoureuse. Un voyant expérimenté peut identifier si votre relation actuelle porte les graines d\'un engagement durable, estimer une fenêtre temporelle favorable et repérer les blocages qui retardent la demande en mariage. Le tarot union, la numérologie et l\'astrologie conjugale donnent des indications précises, sans jamais ôter votre libre arbitre ni celui de votre partenaire.',
+    },
+    {
+      q: 'Quelles cartes du tarot annoncent un mariage ou une demande ?',
+      a: 'Plusieurs arcanes majeurs et mineurs signalent un mariage imminent. L\'Amoureux (VI) symbolise le choix conscient de l\'union officielle. Le Soleil (XIX) annonce une célébration joyeuse et une reconnaissance publique de l\'amour. Le 10 de Coupe représente l\'accomplissement familial et le bonheur conjugal durable. L\'As de Bâton indique un nouveau départ passionné qui peut mener à l\'engagement. Le 4 de Bâton est la carte la plus directement liée à la cérémonie de mariage et à la fête de l\'union. Leur combinaison dans un tirage constitue un signal fort.',
+    },
+    {
+      q: 'Je suis en couple depuis longtemps, pourquoi pas encore de demande en mariage ?',
+      a: 'Plusieurs raisons peuvent expliquer un délai dans la demande en mariage, même dans un couple solide. La voyance identifie souvent des peurs inconscientes chez votre partenaire, peur de l\'engagement, blessures passées, ou croyances limitantes sur le mariage héritées de sa famille. Des blocages pratiques comme l\'instabilité financière ou professionnelle jouent aussi un rôle. Un tirage tarot union peut révéler l\'obstacle principal, distinguer un partenaire qui n\'est pas prêt d\'un partenaire qui ne veut pas, et indiquer les conditions à réunir pour que la demande se concrétise dans votre avenir amoureux.',
+    },
+    {
+      q: 'Mon partenaire ne veut pas se marier, que faire selon la voyance ?',
+      a: 'Face à un partenaire réticent au mariage, la voyance peut d\'abord clarifier si ce refus est définitif ou temporaire, et en identifier les racines profondes. La spiritualité amoureuse distingue le partenaire qui a besoin de temps et de sécurité du partenaire dont la mission d\'âme n\'inclut pas l\'union formelle. La voyance vous aide aussi à interroger vos propres motivations : cherchez-vous le mariage comme validation de l\'amour, ou est-il une aspiration profonde et authentique ? Cette clarté permet une conversation honnête en couple et une décision alignée avec votre véritable futur conjoint idéal.',
+    },
+  ],
+  related: [
+    { href: '/sentiments', label: 'Sentiments & Avenir : Toutes nos Guidances' },
+    { href: '/sentiments/avenir-amoureux', label: 'Mon Avenir Amoureux : Guidance Complète' },
+    { href: '/sentiments/compatibilite-amoureuse', label: 'Compatibilité Amoureuse & Spirituelle' },
+    { href: '/nouvelle-rencontre/trouver-ame-soeur', label: 'Trouver son Âme Sœur : Guide Complet' },
+  ],
+};
 
-  const authorSchema = getAuthorSchema();
+export const metadata = contentMeta(config);
 
-  const faqSchema = getFAQSchema([
-    {
-      question: 'La voyance peut-elle vraiment prédire un mariage ?',
-      answer: 'La voyance mariage ne prédit pas un événement gravé dans le marbre, mais elle lit les tendances énergétiques actuelles et les probabilités d\'union selon votre vibration amoureuse. Un voyant expérimenté peut identifier si votre relation actuelle porte les graines d\'un engagement durable, estimer une fenêtre temporelle favorable et repérer les blocages qui retardent la demande en mariage. Le tarot union, la numérologie et l\'astrologie conjugale donnent des indications précises — sans jamais ôter votre libre arbitre ni celui de votre partenaire.',
-    },
-    {
-      question: 'Quelles cartes du tarot annoncent un mariage ou une demande ?',
-      answer: 'Plusieurs arcanes majeurs et mineurs signalent un mariage imminent. L\'Amoureux (VI) symbolise le choix conscient de l\'union officielle. Le Soleil (XIX) annonce une célébration joyeuse et une reconnaissance publique de l\'amour. Le 10 de Coupe représente l\'accomplissement familial et le bonheur conjugal durable. L\'As de Bâton indique un nouveau départ passionné qui peut mener à l\'engagement. Le 4 de Bâton est la carte la plus directement liée à la cérémonie de mariage et à la fête de l\'union. Leur combinaison dans un tirage constitue un signal fort.',
-    },
-    {
-      question: 'Je suis en couple depuis longtemps — pourquoi pas encore de demande en mariage ?',
-      answer: 'Plusieurs raisons peuvent expliquer un délai dans la demande en mariage, même dans un couple solide. La voyance identifie souvent des peurs inconscientes chez votre partenaire — peur de l\'engagement, blessures passées, ou croyances limitantes sur le mariage héritées de sa famille. Des blocages pratiques comme l\'instabilité financière ou professionnelle jouent aussi un rôle. Un tirage tarot union peut révéler l\'obstacle principal, distinguer un partenaire qui n\'est pas prêt d\'un partenaire qui ne veut pas, et indiquer les conditions à réunir pour que la demande se concrétise dans votre avenir amoureux.',
-    },
-    {
-      question: 'Mon partenaire ne veut pas se marier — que faire selon la voyance ?',
-      answer: 'Face à un partenaire réticent au mariage, la voyance peut d\'abord clarifier si ce refus est définitif ou temporaire, et en identifier les racines profondes. La spiritualité amoureuse distingue le partenaire qui a besoin de temps et de sécurité du partenaire dont la mission d\'âme n\'inclut pas l\'union formelle. La voyance vous aide aussi à interroger vos propres motivations : cherchez-vous le mariage comme validation de l\'amour, ou est-il une aspiration profonde et authentique ? Cette clarté permet une conversation honnête en couple et une décision alignée avec votre véritable futur conjoint idéal.',
-    },
-  ]);
+export default function VoyanceMariagePage() {
 
   return (
-    <main className="min-h-screen bg-gray-50">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(authorSchema) }}
-      />
-
-      {/* Header */}
-      <header className="bg-gradient-to-r from-rose-500 via-pink-600 to-purple-600 text-white py-16 px-4">
-        <div className="max-w-4xl mx-auto">
-          <Link href="/sentiments" className="text-white/80 hover:text-white mb-4 inline-block">&larr; Retour à Sentiments &amp; Avenir</Link>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">&#x1F48D; Voyance Mariage</h1>
-          <p className="text-xl opacity-95 mb-6">Vais-Je Me Marier ? Avec Qui ?</p>
-          <div className="flex gap-4 flex-wrap">
-            <a href="#tarot-mariage" className="bg-white text-pink-600 px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition">Les Cartes du Mariage</a>
-            <a href="#quand" className="border-2 border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-pink-600 transition">Timing &amp; Numérologie</a>
-          </div>
-        </div>
-      </header>
-
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        {/* Stats Bar */}
-        <div className="bg-white rounded-xl shadow-md p-6 mb-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-          <div><div className="text-3xl mb-1">&#x1F48D;</div><div className="text-2xl font-bold text-pink-600">5 Cartes</div><div className="text-sm text-gray-600">Tarot union &amp; mariage</div></div>
-          <div><div className="text-3xl mb-1">&#x2728;</div><div className="text-2xl font-bold text-pink-600">16 ans</div><div className="text-sm text-gray-600">D'expertise en voyance</div></div>
-          <div><div className="text-3xl mb-1">&#x1F52E;</div><div className="text-2xl font-bold text-pink-600">3 400+</div><div className="text-sm text-gray-600">Consultations réalisées</div></div>
-          <div><div className="text-3xl mb-1">&#x1F31F;</div><div className="text-2xl font-bold text-pink-600">Timing</div><div className="text-sm text-gray-600">Cycles Jupiter &amp; num.</div></div>
-        </div>
-
-        {/* E-E-A-T Signal */}
-        <EEATSignal
-          colorScheme="rose"
-        />
+    <ContentPage config={config}>
 
         {/* Answer Capsule */}
         <article className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-rose-500">
@@ -114,7 +85,7 @@ export default function VoyanceMariagePage() {
         {/* Ce que la voyance révèle sur votre mariage */}
         <section className="bg-gradient-to-br from-rose-50 to-pink-50 rounded-xl p-8 mb-8 border-2 border-rose-200">
           <h2 className="text-3xl font-bold mb-6 text-gray-900">&#x1F52E; Ce que la Voyance Révèle sur Votre Mariage</h2>
-          <p className="text-lg font-semibold text-gray-800 mb-4">La voyance mariage peut identifier les probabilités d'union, le timing favorable, les blocages énergétiques et le profil de votre futur conjoint — sans jamais ôter votre libre arbitre.</p>
+          <p className="text-lg font-semibold text-gray-800 mb-4">La voyance mariage peut identifier les probabilités d'union, le timing favorable, les blocages énergétiques et le profil de votre futur conjoint, sans jamais ôter votre libre arbitre.</p>
           <p className="text-gray-700 mb-6">
             La <strong>voyance mariage</strong> ne fonctionne pas comme un oracle infaillible qui dicte un futur figé. Elle lit les courants énergétiques présents dans votre vie amoureuse et évalue la probabilité d'une union formelle selon votre vibration actuelle, les tendances de votre relation, et les cycles cosmiques qui vous gouvernent.
           </p>
@@ -130,7 +101,7 @@ export default function VoyanceMariagePage() {
             <div className="bg-white rounded-lg p-6 border-l-4 border-pink-400">
               <h3 className="font-bold text-lg mb-2 text-pink-700">Les limites de la prédiction</h3>
               <p className="text-gray-700">
-                La voyance opère sur les probabilités, non sur les certitudes absolues. Le libre arbitre de chaque individu peut modifier le cours des événements. Une prédiction de mariage pour l'année suivante signifie que les conditions énergétiques sont favorables — pas que l'issue est garantie. La <strong>compatibilité</strong> émotionnelle et spirituelle entre les partenaires, leur degré de maturité affective et leurs choix conscients restent déterminants. La voyance est un outil d'éclairage, pas de substitution à votre propre discernement et à la communication au sein du couple.
+                La voyance opère sur les probabilités, non sur les certitudes absolues. Le libre arbitre de chaque individu peut modifier le cours des événements. Une prédiction de mariage pour l'année suivante signifie que les conditions énergétiques sont favorables, pas que l'issue est garantie. La <strong>compatibilité</strong> émotionnelle et spirituelle entre les partenaires, leur degré de maturité affective et leurs choix conscients restent déterminants. La voyance est un outil d'éclairage, pas de substitution à votre propre discernement et à la communication au sein du couple.
               </p>
             </div>
 
@@ -176,7 +147,7 @@ export default function VoyanceMariagePage() {
             <div className="bg-orange-50 p-5 rounded-lg border-l-4 border-orange-500">
               <h3 className="font-bold text-orange-700 mb-2 text-lg">&#x1F0CF; L'As de Bâton</h3>
               <p className="text-gray-700">
-                L'As de Bâton représente un nouveau départ ardent, une initiative passionnée et le lancement d'un projet amoureux majeur. Dans le contexte du mariage, il peut signaler l'émergence d'une décision d'<strong>engagement</strong> chez votre partenaire — une étincelle qui cherche à se concrétiser. Il peut aussi indiquer une proposition de mariage spontanée et enthousiaste, portée par une énergie de feu et de désir de construction commune. Sa présence est encourageante et dynamique.
+                L'As de Bâton représente un nouveau départ ardent, une initiative passionnée et le lancement d'un projet amoureux majeur. Dans le contexte du mariage, il peut signaler l'émergence d'une décision d'<strong>engagement</strong> chez votre partenaire, une étincelle qui cherche à se concrétiser. Il peut aussi indiquer une proposition de mariage spontanée et enthousiaste, portée par une énergie de feu et de désir de construction commune. Sa présence est encourageante et dynamique.
               </p>
             </div>
 
@@ -295,7 +266,7 @@ export default function VoyanceMariagePage() {
             <div className="bg-white rounded-lg p-6 shadow-sm">
               <h3 className="font-bold text-xl mb-4 text-purple-700">&#x1F522; Années Personnelles en Numérologie</h3>
               <p className="text-gray-700 mb-3">
-                En numérologie, certaines années personnelles favorisent particulièrement l'union. L'<strong>année personnelle 6</strong> est la plus associée au mariage, à la famille et à l'engagement — c'est l'année des unions officielles et des engagements durables. L'année 2 favorise les partenariats intimes et les fiançailles. L'année 9 peut marquer la fin d'un cycle et la préparation à une nouvelle union. Calculer votre année personnelle actuelle vous donne une indication précieuse sur le timing probable de votre mariage.
+                En numérologie, certaines années personnelles favorisent particulièrement l'union. L'<strong>année personnelle 6</strong> est la plus associée au mariage, à la famille et à l'engagement, c'est l'année des unions officielles et des engagements durables. L'année 2 favorise les partenariats intimes et les fiançailles. L'année 9 peut marquer la fin d'un cycle et la préparation à une nouvelle union. Calculer votre année personnelle actuelle vous donne une indication précieuse sur le timing probable de votre mariage.
               </p>
             </div>
           </div>
@@ -306,59 +277,11 @@ export default function VoyanceMariagePage() {
               Les transits de Vénus sur les points sensibles de votre thème natal (Ascendant, Vénus natale, Lune, soleil) créent des fenêtres d'opportunité romantique et d'<strong>engagement</strong>. Certaines saisons astronomiques sont traditionnellement plus propices : le printemps (sous l'influence de Vénus en Taureau) et la fin d'été (Vénus en Vierge ou Balance) concentrent historiquement le plus grand nombre de mariages et de demandes.
             </p>
             <p className="text-gray-700">
-              La combinaison d'un transit Jupiter favorable, d'une année personnelle 6 en numérologie, et d'une saison Vénus positive constitue une convergence rare et puissante — un signal fort que la <strong>voyance mariage</strong> identifie comme une période d'exception pour l'union. Ces fenêtres ne se présentent que tous les 6 à 12 ans : les repérer à l'avance est l'un des cadeaux les plus précieux d'une consultation voyance dédiée au mariage.
+              La combinaison d'un transit Jupiter favorable, d'une année personnelle 6 en numérologie, et d'une saison Vénus positive constitue une convergence rare et puissante, un signal fort que la <strong>voyance mariage</strong> identifie comme une période d'exception pour l'union. Ces fenêtres ne se présentent que tous les 6 à 12 ans : les repérer à l'avance est l'un des cadeaux les plus précieux d'une consultation voyance dédiée au mariage.
             </p>
           </div>
         </section>
 
-        {/* FAQ Section */}
-        <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold mb-8 text-rose-600">&#x2753; Questions Fréquentes sur la Voyance Mariage</h2>
-          <p className="text-lg font-semibold text-gray-800 mb-4">Retrouvez les réponses aux questions les plus posées sur la prédiction mariage, le tarot union, les blocages à l'engagement et le comportement d'un partenaire réticent.</p>
-          <div className="space-y-6">
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold mb-3 text-gray-900">La voyance peut-elle vraiment prédire un mariage ?</h3>
-              <p className="text-gray-700 leading-relaxed">
-                La <strong>voyance mariage</strong> ne prédit pas un événement gravé dans le marbre, mais elle lit les tendances énergétiques actuelles et les probabilités d'union selon votre vibration amoureuse. Un voyant expérimenté peut identifier si votre relation actuelle porte les graines d'un <strong>engagement</strong> durable, estimer une fenêtre temporelle favorable et repérer les blocages qui retardent la <strong>demande en mariage</strong>. Le <strong>tarot union</strong>, la numérologie et l'astrologie conjugale donnent des indications précises — sans jamais ôter votre libre arbitre ni celui de votre partenaire.
-              </p>
-            </div>
-
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Quelles cartes du tarot annoncent un mariage ou une demande ?</h3>
-              <p className="text-gray-700 leading-relaxed">
-                Plusieurs arcanes majeurs et mineurs signalent un mariage imminent. L'<strong>Amoureux</strong> (VI) symbolise le choix conscient de l'union officielle. Le <strong>Soleil</strong> (XIX) annonce une <strong>cérémonie</strong> joyeuse et une reconnaissance publique de l'amour. Le <strong>10 de Coupe</strong> représente l'accomplissement familial et le bonheur conjugal durable. L'<strong>As de Bâton</strong> indique un nouveau départ passionné qui peut mener à l'<strong>engagement</strong>. Le <strong>4 de Bâton</strong> est la carte la plus directement liée à la <strong>cérémonie de mariage</strong> et à la fête de l'union. Leur combinaison dans un tirage constitue un signal fort de <strong>voyance union</strong>.
-              </p>
-            </div>
-
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Je suis en couple depuis longtemps — pourquoi pas encore de demande en mariage ?</h3>
-              <p className="text-gray-700 leading-relaxed">
-                Plusieurs raisons peuvent expliquer un délai dans la <strong>demande en mariage</strong>, même dans un couple solide. La <strong>voyance mariage</strong> identifie souvent des peurs inconscientes chez votre partenaire — peur de l'<strong>engagement</strong>, blessures passées, ou croyances limitantes sur le mariage héritées de sa famille. Des blocages pratiques comme l'instabilité financière ou professionnelle jouent aussi un rôle. Un <strong>tirage tarot union</strong> peut révéler l'obstacle principal, distinguer un partenaire qui n'est pas prêt d'un partenaire qui ne veut pas, et indiquer les conditions à réunir pour que la demande se concrétise dans votre <strong>avenir amoureux</strong>.
-              </p>
-            </div>
-
-            <div>
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Mon partenaire ne veut pas se marier — que faire selon la voyance ?</h3>
-              <p className="text-gray-700 leading-relaxed">
-                Face à un partenaire réticent au mariage, la <strong>voyance</strong> peut d'abord clarifier si ce refus est définitif ou temporaire, et en identifier les racines profondes. La spiritualité amoureuse distingue le partenaire qui a besoin de temps et de sécurité du partenaire dont la mission d'âme n'inclut pas l'union formelle. La <strong>voyance mariage</strong> vous aide aussi à interroger vos propres motivations : cherchez-vous le mariage comme validation de l'amour, ou est-il une aspiration profonde et authentique ? Cette clarté permet une conversation honnête en couple et une décision alignée avec votre véritable <strong>futur conjoint</strong> idéal.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        {/* Articles Connexes */}
-        <div className="bg-gray-100 rounded-xl p-6 mb-8">
-          <h3 className="font-bold text-lg mb-4 text-gray-900">&#x1F4DA; Articles Connexes</h3>
-          <div className="space-y-2">
-            <Link href="/sentiments" className="block text-rose-600 hover:text-rose-800 font-medium">&rarr; Sentiments &amp; Avenir : Toutes nos Guidances</Link>
-            <Link href="/sentiments/avenir-amoureux" className="block text-rose-600 hover:text-rose-800 font-medium">&rarr; Mon Avenir Amoureux : Guidance Complète</Link>
-            <Link href="/sentiments/compatibilite-amoureuse" className="block text-rose-600 hover:text-rose-800 font-medium">&rarr; Compatibilité Amoureuse &amp; Spirituelle</Link>
-            <Link href="/nouvelle-rencontre/trouver-ame-soeur" className="block text-rose-600 hover:text-rose-800 font-medium">&rarr; Trouver son Âme S&oelig;ur : Guide Complet</Link>
-          </div>
-        </div>
-
-        <VoyantFinalCTA topic="sentiments" source="voyance-mariage-final" />
-      </div>
-    </main>
+      </ContentPage>
   );
 }

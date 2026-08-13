@@ -1,4 +1,4 @@
-// Google Ads Click Conversion Import (OCI) — server-only.
+// Google Ads Click Conversion Import (OCI), server-only.
 // Never import from a 'use client' module.
 //
 // Forwards conversions received via the BargesTech postback to Google Ads,
@@ -36,7 +36,7 @@ function env(name: string): string {
 
 /**
  * True only when every Google Ads env var is set. The postback handler uses
- * this to decide whether to attempt OCI upload — when false, it just logs
+ * this to decide whether to attempt OCI upload, when false, it just logs
  * and acks the postback (graceful degradation during the credential rollout).
  */
 export function isGoogleAdsConfigured(): boolean {
@@ -98,7 +98,7 @@ export interface ClickConversion {
   /**
    * Exactly one of `gclid`, `gbraid`, or `wbraid` should be set per
    * conversion. Google's `uploadClickConversions` enforces this at the
-   * API layer — multiple set on the same conversion will partial-fail.
+   * API layer, multiple set on the same conversion will partial-fail.
    *
    *   gclid  : standard Google Click ID (most desktop, Android, web iOS)
    *   gbraid : iOS users with restricted ad tracking (ATT denied)
@@ -107,7 +107,7 @@ export interface ClickConversion {
   gclid?: string;
   gbraid?: string;
   wbraid?: string;
-  /** Format: "yyyy-MM-dd HH:mm:ss+HH:MM" — use formatGoogleAdsDateTime() */
+  /** Format: "yyyy-MM-dd HH:mm:ss+HH:MM", use formatGoogleAdsDateTime() */
   conversionDateTime: string;
   conversionValue?: number;
   currencyCode?: string;
@@ -175,7 +175,7 @@ export async function uploadClickConversions(
   const body = {
     conversions: conversions.map((c) => ({
       // Exactly one of gclid / gbraid / wbraid per conversion. Spread only
-      // the one that's set — Google rejects requests where more than one
+      // the one that's set, Google rejects requests where more than one
       // identifier is present on the same conversion.
       ...(c.gclid ? { gclid: c.gclid } : {}),
       ...(c.gbraid ? { gbraid: c.gbraid } : {}),

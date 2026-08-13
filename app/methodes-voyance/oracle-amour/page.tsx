@@ -1,106 +1,76 @@
-import type { Metadata } from 'next';
 import Link from 'next/link';
-import { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getAuthorSchema } from '@/lib/schema';
-import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
-import VoyantFinalCTA from '@/components/VoyantFinalCTA';
+import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
-export const metadata: Metadata = {
+const config: ContentPageConfig = {
   title: 'Oracle de l\u2019Amour : Guidance Sentimentale par les Cartes Oracle',
   description: 'D\u00e9couvrez l\u2019Oracle de l\u2019Amour : Oracle Belline, Oracle de G\u00e9, Oracle des Anges. Guidance sentimentale compl\u00e8te pour \u00e9clairer votre vie amoureuse.',
+  url: 'https://www.voyantlove.fr/methodes-voyance/oracle-amour/',
   keywords: ['oracle amour', 'oracle sentimental', 'guidance amoureuse', 'cartes oracle', 'oracle des anges amour'],
-  alternates: {
-    canonical: 'https://www.voyantlove.fr/methodes-voyance/oracle-amour/',
-  },
-};
-
-export default function OracleAmourPage() {
-  const articleSchema = getArticleSchema({
-    title: 'Oracle de l\u2019Amour : Guidance Sentimentale par les Cartes Oracle',
-    description: 'D\u00e9couvrez l\u2019Oracle de l\u2019Amour : Oracle Belline, Oracle de G\u00e9, Oracle des Anges. Guidance sentimentale compl\u00e8te pour \u00e9clairer votre vie amoureuse.',
-    url: 'https://www.voyantlove.fr/methodes-voyance/oracle-amour/',
-    datePublished: '2026-03-03',
-    dateModified: '2026-03-03',
-    keywords: ['oracle amour', 'oracle sentimental', 'guidance amoureuse', 'cartes oracle', 'oracle des anges amour'],
-  });
-
-  const authorSchema = getAuthorSchema();
-
-  const breadcrumbSchema = getBreadcrumbSchema([
+  datePublished: '2026-03-03',
+  dateModified: '2026-03-03',
+  breadcrumb: [
     { name: 'Accueil', url: 'https://www.voyantlove.fr' },
     { name: 'M\u00e9thodes de Voyance', url: 'https://www.voyantlove.fr/methodes-voyance/' },
     { name: 'Oracle de l\u2019Amour', url: 'https://www.voyantlove.fr/methodes-voyance/oracle-amour/' },
-  ]);
+  ],
+  header: {
+    emoji: '✨',
+    h1: 'Oracle de l\'Amour',
+    subtitle: 'Guidance sentimentale par les cartes oracle pour éclairer votre cœur',
+    gradient: 'from-purple-500 via-fuchsia-500 to-pink-500',
+    backLink: { href: '/methodes-voyance', label: 'Retour aux Méthodes de Voyance' },
+    anchors: [
+      { href: '#consultation', label: 'Consultation Oracle', primary: true },
+      { href: '#oracles', label: 'Les Oracles Puissants' },
+    ],
+  },
+  accentText: 'text-purple-600',
+  stats: [
+    { icon: '🎯', value: 'Fiable', label: 'Guidance reconnue' },
+    { icon: '🔮', value: '3 oracles', label: 'Jeux référencés' },
+    { icon: '⭐', value: 'Élevée', label: 'Satisfaction' },
+    { icon: '🃏', value: '44 cartes', label: 'Oracle complet' },
+  ],
+  eeat: { colorScheme: 'pink', method: 'Oracle Belline et cartes de guidance amoureuse' },
+  cta: { topic: 'methodes-voyance', slug: 'oracle-amour' },
+  faq: [
+    {
+      q: 'Diff\u00e9rence entre oracle et tarot ?',
+      a: 'Le tarot suit une structure codifi\u00e9e avec 78 cartes r\u00e9parties en arcanes majeurs et mineurs, offrant une lecture syst\u00e9matique et d\u00e9taill\u00e9e. L\u2019oracle, en revanche, est un jeu libre dont le nombre de cartes, la symbolique et les th\u00e8mes varient selon le cr\u00e9ateur. L\u2019oracle d\u00e9livre des messages plus directs, intuitifs et accessibles, tandis que le tarot exige une ma\u00eetrise technique plus pouss\u00e9e. Pour la voyance amoureuse, l\u2019oracle excelle dans la guidance quotidienne et les r\u00e9ponses rapides, le tarot dans l\u2019analyse approfondie des dynamiques relationnelles.',
+    },
+    {
+      q: 'Quel oracle choisir pour l\u2019amour ?',
+      a: 'L\u2019Oracle Belline est le plus complet pour la voyance amoureuse gr\u00e2ce \u00e0 ses cartes d\u00e9di\u00e9es aux sentiments et aux relations. L\u2019Oracle de G\u00e9 offre des images tr\u00e8s explicites qui facilitent l\u2019interpr\u00e9tation directe des situations amoureuses. L\u2019Oracle des Anges apporte une guidance douce et spirituelle, id\u00e9ale pour les p\u00e9riodes de gu\u00e9rison \u00e9motionnelle apr\u00e8s une rupture. Le choix d\u00e9pend de votre sensibilit\u00e9 personnelle et de la nature de votre question sentimentale.',
+    },
+    {
+      q: 'L\u2019oracle pr\u00e9dit-il une rencontre amoureuse ?',
+      a: 'L\u2019oracle de l\u2019amour peut identifier les \u00e9nergies favorables \u00e0 une nouvelle rencontre sentimentale et signaler les p\u00e9riodes propices. Il r\u00e9v\u00e8le \u00e9galement les blocages int\u00e9rieurs qui emp\u00eachent l\u2019amour d\u2019entrer dans votre vie. Les cartes de l\u2019oracle ne donnent pas de date pr\u00e9cise mais indiquent des conditions et des fen\u00eatres temporelles. Pour une pr\u00e9diction de timing plus affin\u00e9e, le voyant combine souvent l\u2019oracle avec le tarot ou l\u2019astrologie amoureuse.',
+    },
+    {
+      q: 'Tirer l\u2019oracle amour soi-m\u00eame, c\u2019est possible ?',
+      a: 'Oui, tirer l\u2019oracle soi-m\u00eame est tout \u00e0 fait possible et m\u00eame recommand\u00e9 pour une guidance quotidienne. Choisissez un moment calme, formulez clairement votre question sentimentale, m\u00e9langez les cartes en vous connectant \u00e0 votre intention, et tirez une \u00e0 trois cartes. La difficult\u00e9 r\u00e9side dans l\u2019objectivit\u00e9 : nos \u00e9motions amoureuses peuvent biaiser l\u2019interpr\u00e9tation. Pour les questions cruciales, un voyant professionnel offre le recul n\u00e9cessaire \u00e0 une lecture impartiale.',
+    },
+    {
+      q: 'Combien de cartes tirer en consultation oracle amour ?',
+      a: 'Le nombre de cartes varie selon la profondeur de la question. Un tirage d\u2019une carte offre un message clair et direct pour une guidance quotidienne. Trois cartes explorent le pass\u00e9, le pr\u00e9sent et l\u2019avenir de votre situation sentimentale. Cinq cartes permettent une analyse plus d\u00e9taill\u00e9e incluant les blocages et les conseils. Pour une consultation compl\u00e8te sur une relation amoureuse, le voyant tire g\u00e9n\u00e9ralement sept \u00e0 neuf cartes oracle compl\u00e9t\u00e9es par des tirages de clarification.',
+    },
+  ],
+  related: [
+    { href: '/methodes-voyance/tirage-tarot-amour', label: 'Tirage de Tarot Amoureux : Guide Complet' },
+    { href: '/methodes-voyance/astrologie-amoureuse', label: 'Astrologie Amoureuse : Compatibilité Astrale' },
+    { href: '/sentiments/avenir-amoureux', label: 'Mon Avenir Amoureux : Prédictions Complètes' },
+    { href: '/sentiments/pense-t-il-elle-a-moi', label: 'Pense-t-il/elle à Moi ?' },
+    { href: '/nouvelle-rencontre/flamme-jumelle', label: 'Flamme Jumelle : Connexion Spirituelle Intense' },
+  ],
+};
 
-  const faqSchema = getFAQSchema([
-    {
-      question: 'Diff\u00e9rence entre oracle et tarot ?',
-      answer: 'Le tarot suit une structure codifi\u00e9e avec 78 cartes r\u00e9parties en arcanes majeurs et mineurs, offrant une lecture syst\u00e9matique et d\u00e9taill\u00e9e. L\u2019oracle, en revanche, est un jeu libre dont le nombre de cartes, la symbolique et les th\u00e8mes varient selon le cr\u00e9ateur. L\u2019oracle d\u00e9livre des messages plus directs, intuitifs et accessibles, tandis que le tarot exige une ma\u00eetrise technique plus pouss\u00e9e. Pour la voyance amoureuse, l\u2019oracle excelle dans la guidance quotidienne et les r\u00e9ponses rapides, le tarot dans l\u2019analyse approfondie des dynamiques relationnelles.',
-    },
-    {
-      question: 'Quel oracle choisir pour l\u2019amour ?',
-      answer: 'L\u2019Oracle Belline est le plus complet pour la voyance amoureuse gr\u00e2ce \u00e0 ses cartes d\u00e9di\u00e9es aux sentiments et aux relations. L\u2019Oracle de G\u00e9 offre des images tr\u00e8s explicites qui facilitent l\u2019interpr\u00e9tation directe des situations amoureuses. L\u2019Oracle des Anges apporte une guidance douce et spirituelle, id\u00e9ale pour les p\u00e9riodes de gu\u00e9rison \u00e9motionnelle apr\u00e8s une rupture. Le choix d\u00e9pend de votre sensibilit\u00e9 personnelle et de la nature de votre question sentimentale.',
-    },
-    {
-      question: 'L\u2019oracle pr\u00e9dit-il une rencontre amoureuse ?',
-      answer: 'L\u2019oracle de l\u2019amour peut identifier les \u00e9nergies favorables \u00e0 une nouvelle rencontre sentimentale et signaler les p\u00e9riodes propices. Il r\u00e9v\u00e8le \u00e9galement les blocages int\u00e9rieurs qui emp\u00eachent l\u2019amour d\u2019entrer dans votre vie. Les cartes de l\u2019oracle ne donnent pas de date pr\u00e9cise mais indiquent des conditions et des fen\u00eatres temporelles. Pour une pr\u00e9diction de timing plus affin\u00e9e, le voyant combine souvent l\u2019oracle avec le tarot ou l\u2019astrologie amoureuse.',
-    },
-    {
-      question: 'Tirer l\u2019oracle amour soi-m\u00eame, c\u2019est possible ?',
-      answer: 'Oui, tirer l\u2019oracle soi-m\u00eame est tout \u00e0 fait possible et m\u00eame recommand\u00e9 pour une guidance quotidienne. Choisissez un moment calme, formulez clairement votre question sentimentale, m\u00e9langez les cartes en vous connectant \u00e0 votre intention, et tirez une \u00e0 trois cartes. La difficult\u00e9 r\u00e9side dans l\u2019objectivit\u00e9 : nos \u00e9motions amoureuses peuvent biaiser l\u2019interpr\u00e9tation. Pour les questions cruciales, un voyant professionnel offre le recul n\u00e9cessaire \u00e0 une lecture impartiale.',
-    },
-    {
-      question: 'Combien de cartes tirer en consultation oracle amour ?',
-      answer: 'Le nombre de cartes varie selon la profondeur de la question. Un tirage d\u2019une carte offre un message clair et direct pour une guidance quotidienne. Trois cartes explorent le pass\u00e9, le pr\u00e9sent et l\u2019avenir de votre situation sentimentale. Cinq cartes permettent une analyse plus d\u00e9taill\u00e9e incluant les blocages et les conseils. Pour une consultation compl\u00e8te sur une relation amoureuse, le voyant tire g\u00e9n\u00e9ralement sept \u00e0 neuf cartes oracle compl\u00e9t\u00e9es par des tirages de clarification.',
-    },
-  ]);
+export const metadata = contentMeta(config);
 
+export default function OracleAmourPage() {
   return (
-    <main className="min-h-screen bg-gray-50">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(authorSchema) }}
-      />
-
-      {/* Header */}
-      <header className="bg-gradient-to-r from-purple-500 via-fuchsia-500 to-pink-500 text-white py-16 px-4">
-        <div className="max-w-4xl mx-auto">
-          <Link href="/methodes-voyance" className="text-white/80 hover:text-white mb-4 inline-block">&larr; Retour aux M&eacute;thodes de Voyance</Link>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">&#x2728; Oracle de l&apos;Amour</h1>
-          <p className="text-xl opacity-95 mb-6">Guidance sentimentale par les cartes oracle pour &eacute;clairer votre c&oelig;ur</p>
-          <div className="flex gap-4 flex-wrap">
-            <a href="#consultation" className="bg-white text-purple-600 px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition">Consultation Oracle</a>
-            <a href="#oracles" className="border-2 border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-purple-600 transition">Les Oracles Puissants</a>
-          </div>
-        </div>
-      </header>
-
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        {/* Stats bar */}
-        <div className="bg-white rounded-xl shadow-md p-6 mb-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-          <div><div className="text-3xl mb-1">&#x1F3AF;</div><div className="text-2xl font-bold text-purple-600">Fiable</div><div className="text-sm text-gray-600">Guidance reconnue</div></div>
-          <div><div className="text-3xl mb-1">&#x1F52E;</div><div className="text-2xl font-bold text-purple-600">3 oracles</div><div className="text-sm text-gray-600">Jeux r&eacute;f&eacute;renc&eacute;s</div></div>
-          <div><div className="text-3xl mb-1">&#x2B50;</div><div className="text-2xl font-bold text-purple-600">&Eacute;lev&eacute;e</div><div className="text-sm text-gray-600">Satisfaction</div></div>
-          <div><div className="text-3xl mb-1">&#x1F0CF;</div><div className="text-2xl font-bold text-purple-600">44 cartes</div><div className="text-sm text-gray-600">Oracle complet</div></div>
-        </div>
-
-        {/* EEAT Signal */}
-        <EEATSignal colorScheme="pink" method="Oracle Belline et cartes de guidance amoureuse" />
-
-        {/* Answer Capsule */}
+    <ContentPage config={config}>
         <article className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-purple-600">
           <div className="bg-pink-50 border-l-4 border-pink-500 p-6 rounded-lg">
             <p className="text-lg leading-relaxed">
@@ -312,54 +282,6 @@ export default function OracleAmourPage() {
             </div>
           </div>
         </section>
-
-        {/* FAQ Section */}
-        <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">&#x2753; Questions Fr&eacute;quentes sur l&apos;Oracle de l&apos;Amour</h2>
-          <p className="text-lg font-semibold text-gray-800 mb-4">Les questions les plus courantes portent sur la diff&eacute;rence entre oracle et tarot, le choix du bon oracle, la possibilit&eacute; de pr&eacute;dire une rencontre et le nombre de cartes tir&eacute;es en consultation.</p>
-          <div className="space-y-6">
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Diff&eacute;rence entre oracle et tarot ?</h3>
-              <p className="text-gray-700 leading-relaxed">Le <strong>tarot</strong> suit une structure codifi&eacute;e avec 78 cartes r&eacute;parties en <strong>arcanes majeurs</strong> et mineurs, offrant une lecture syst&eacute;matique et d&eacute;taill&eacute;e. L&apos;<strong>oracle</strong>, en revanche, est un jeu libre dont le nombre de <strong>cartes</strong>, la symbolique et les th&egrave;mes varient selon le cr&eacute;ateur. L&apos;oracle d&eacute;livre des messages plus directs, intuitifs et accessibles, tandis que le tarot exige une ma&icirc;trise technique plus pouss&eacute;e. Pour la <strong>voyance amoureuse</strong>, l&apos;oracle excelle dans la <strong>guidance</strong> quotidienne et les r&eacute;ponses rapides, le tarot dans l&apos;analyse approfondie des dynamiques relationnelles.</p>
-            </div>
-
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Quel oracle choisir pour l&apos;amour ?</h3>
-              <p className="text-gray-700 leading-relaxed">L&apos;<strong>Oracle Belline</strong> est le plus complet pour la <strong>voyance amoureuse</strong> gr&acirc;ce &agrave; ses cartes d&eacute;di&eacute;es aux <strong>sentiments</strong> et aux <strong>relations</strong>. L&apos;<strong>Oracle de G&eacute;</strong> offre des images tr&egrave;s explicites qui facilitent l&apos;interpr&eacute;tation directe des situations amoureuses. L&apos;<strong>Oracle des Anges</strong> apporte une guidance douce et spirituelle, id&eacute;ale pour les p&eacute;riodes de <strong>gu&eacute;rison &eacute;motionnelle</strong> apr&egrave;s une <strong>rupture</strong>. Le choix d&eacute;pend de votre sensibilit&eacute; personnelle et de la nature de votre question sentimentale.</p>
-            </div>
-
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">L&apos;oracle pr&eacute;dit-il une rencontre amoureuse ?</h3>
-              <p className="text-gray-700 leading-relaxed">L&apos;<strong>oracle de l&apos;amour</strong> peut identifier les &eacute;nergies favorables &agrave; une <strong>nouvelle rencontre sentimentale</strong> et signaler les p&eacute;riodes propices. Il r&eacute;v&egrave;le &eacute;galement les blocages int&eacute;rieurs qui emp&ecirc;chent l&apos;<strong>amour</strong> d&apos;entrer dans votre vie. Les <strong>cartes de l&apos;oracle</strong> ne donnent pas de date pr&eacute;cise mais indiquent des conditions et des fen&ecirc;tres temporelles. Pour une pr&eacute;diction de timing plus affin&eacute;e, le <strong>voyant</strong> combine souvent l&apos;oracle avec le <strong>tarot</strong> ou l&apos;<strong>astrologie amoureuse</strong>.</p>
-            </div>
-
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Tirer l&apos;oracle amour soi-m&ecirc;me, c&apos;est possible ?</h3>
-              <p className="text-gray-700 leading-relaxed">Oui, tirer l&apos;<strong>oracle</strong> soi-m&ecirc;me est tout &agrave; fait possible et m&ecirc;me recommand&eacute; pour une <strong>guidance</strong> quotidienne. Choisissez un moment calme, formulez clairement votre question sentimentale, m&eacute;langez les <strong>cartes</strong> en vous connectant &agrave; votre intention, et tirez une &agrave; trois cartes. La difficult&eacute; r&eacute;side dans l&apos;objectivit&eacute; : nos &eacute;motions amoureuses peuvent biaiser l&apos;interpr&eacute;tation. Pour les questions cruciales, un <strong>voyant</strong> professionnel offre le recul n&eacute;cessaire &agrave; une lecture impartiale.</p>
-            </div>
-
-            <div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Combien de cartes tirer en consultation oracle amour ?</h3>
-              <p className="text-gray-700 leading-relaxed">Le nombre de <strong>cartes</strong> varie selon la profondeur de la question. Un tirage d&apos;une carte offre un message clair et direct pour une <strong>guidance</strong> quotidienne. Trois cartes explorent le pass&eacute;, le pr&eacute;sent et l&apos;avenir de votre <strong>situation sentimentale</strong>. Cinq cartes permettent une analyse plus d&eacute;taill&eacute;e incluant les blocages et les conseils. Pour une <strong>consultation compl&egrave;te</strong> sur une <strong>relation amoureuse</strong>, le <strong>voyant</strong> tire g&eacute;n&eacute;ralement sept &agrave; neuf cartes oracle compl&eacute;t&eacute;es par des tirages de clarification.</p>
-            </div>
-          </div>
-        </section>
-
-        {/* Articles Connexes */}
-        <div className="bg-gray-100 rounded-xl p-6 mb-8">
-          <h3 className="font-bold text-lg mb-4 text-gray-900">&#x1F4DA; Articles Connexes</h3>
-          <div className="space-y-2">
-            <Link href="/methodes-voyance/tirage-tarot-amour" className="block text-purple-600 hover:text-purple-800 font-medium">&rarr; Tirage de Tarot Amoureux : Guide Complet</Link>
-            <Link href="/methodes-voyance/astrologie-amoureuse" className="block text-purple-600 hover:text-purple-800 font-medium">&rarr; Astrologie Amoureuse : Compatibilit&eacute; Astrale</Link>
-            <Link href="/sentiments/avenir-amoureux" className="block text-purple-600 hover:text-purple-800 font-medium">&rarr; Mon Avenir Amoureux : Pr&eacute;dictions Compl&egrave;tes</Link>
-            <Link href="/sentiments/pense-t-il-elle-a-moi" className="block text-purple-600 hover:text-purple-800 font-medium">&rarr; Pense-t-il/elle &agrave; Moi ?</Link>
-            <Link href="/nouvelle-rencontre/flamme-jumelle" className="block text-purple-600 hover:text-purple-800 font-medium">&rarr; Flamme Jumelle : Connexion Spirituelle Intense</Link>
-          </div>
-        </div>
-
-        {/* CTA Footer */}
-        <VoyantFinalCTA topic="methodes-voyance" source="oracle-amour-final" />
-      </div>
-    </main>
+    </ContentPage>
   );
 }

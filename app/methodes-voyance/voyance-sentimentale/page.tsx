@@ -1,118 +1,88 @@
-import type { Metadata } from 'next';
 import Link from 'next/link';
-import { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getAuthorSchema } from '@/lib/schema';
-import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
-import VoyantFinalCTA from '@/components/VoyantFinalCTA';
+import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
-export const metadata: Metadata = {
+const config: ContentPageConfig = {
   title: 'Voyance Sentimentale : Consultation Gratuite ou avec Voyant Expert',
-  description: 'Voyance sentimentale : consultation gratuite ou avec voyant spécialisé amour. Sentiments, couple, reconquête, rencontre — guidance par tarot, oracle et clairvoyance.',
+  description: 'Voyance sentimentale : consultation gratuite ou avec voyant spécialisé amour. Sentiments, couple, reconquête, rencontre, guidance par tarot, oracle et clairvoyance.',
+  url: 'https://www.voyantlove.fr/methodes-voyance/voyance-sentimentale/',
   keywords: ['consultation voyance sentimentale', 'voyance sentimentale', 'consultation voyance amour', 'voyance amoureuse', 'voyance du coeur', 'voyant amour'],
-  alternates: {
-    canonical: 'https://www.voyantlove.fr/methodes-voyance/voyance-sentimentale/',
-  },
-};
-
-export default function VoyanceSentimentalePage() {
-  const articleSchema = getArticleSchema({
-    title: 'Voyance Sentimentale : Consultation Gratuite ou avec Voyant Expert',
-    description: 'Voyance sentimentale : consultation gratuite ou avec voyant spécialisé amour. Sentiments, couple, reconquête, rencontre — guidance par tarot, oracle et clairvoyance.',
-    url: 'https://www.voyantlove.fr/methodes-voyance/voyance-sentimentale/',
-    datePublished: '2026-03-13',
-    dateModified: '2026-03-13',
-    keywords: ['voyance sentimentale', 'voyance sentimentale gratuite', 'voyance amoureuse', 'voyance du coeur', 'consultation sentimentale', 'voyant amour'],
-  });
-
-  const authorSchema = getAuthorSchema();
-
-  const breadcrumbSchema = getBreadcrumbSchema([
+  datePublished: '2026-03-13',
+  dateModified: '2026-03-13',
+  breadcrumb: [
     { name: 'Accueil', url: 'https://www.voyantlove.fr' },
     { name: 'Méthodes de Voyance', url: 'https://www.voyantlove.fr/methodes-voyance/' },
     { name: 'Voyance Sentimentale', url: 'https://www.voyantlove.fr/methodes-voyance/voyance-sentimentale/' },
-  ]);
+  ],
+  header: {
+    emoji: '',
+    h1: 'Voyance Sentimentale',
+    subtitle: 'Guidance amoureuse spécialisée pour éclairer toutes vos questions du cœur',
+    gradient: 'from-indigo-600 via-purple-600 to-pink-500',
+    backLink: { href: '/methodes-voyance', label: 'Retour aux Méthodes de Voyance' },
+    anchors: [
+      { href: '#consultation', label: 'Consulter un Voyant', primary: true },
+      { href: '#methodes', label: 'Les Méthodes' },
+    ],
+  },
+  accentText: 'text-purple-600',
+  stats: [
+    { icon: '💜', value: 'Spécialisée', label: 'Questions amoureuses' },
+    { icon: '🔮', value: 'Multi-supports', label: 'Tarot, oracle, astro' },
+    { icon: '⭐', value: 'Reconnue', label: 'Expertise sentimentale' },
+    { icon: '🔒', value: 'Confidentielle', label: 'Consultations privées' },
+  ],
+  eeat: { colorScheme: 'purple', method: 'Voyance sentimentale par tarot, clairvoyance et astrologie amoureuse' },
+  cta: { topic: 'sentiments', slug: 'voyance-sentimentale' },
+  faq: [
+    {
+      q: 'Qu\'est-ce que la voyance sentimentale exactement ?',
+      a: 'La voyance sentimentale est une branche spécialisée de la voyance consacrée exclusivement aux questions amoureuses et relationnelles. Le voyant sentimentaliste utilise le tarot, la clairvoyance, l\'astrologie ou l\'oracle pour analyser les dynamiques émotionnelles entre deux personnes, décrypter les sentiments cachés, anticiper l\'évolution d\'une relation et guider le consultant vers les meilleures décisions pour sa vie amoureuse. Contrairement à la voyance généraliste, la voyance sentimentale mobilise des tirages et des méthodes spécifiquement conçus pour les problématiques du cœur.',
+    },
+    {
+      q: 'Quelle différence entre voyance sentimentale et voyance amoureuse ?',
+      a: 'La voyance sentimentale et la voyance amoureuse désignent la même spécialisation. Ce sont des synonymes utilisés dans le milieu de la voyance pour décrire la guidance spécialisée en questions de cœur. La voyance sentimentale met l\'accent sur le décryptage des sentiments et des émotions, tandis que la voyance amoureuse souligne davantage la dimension relationnelle et le lien entre deux personnes. Dans la pratique, un voyant sentimentaliste et un voyant spécialisé amour offrent exactement les mêmes services et analyses.',
+    },
+    {
+      q: 'La voyance sentimentale gratuite est-elle fiable ?',
+      a: 'La voyance sentimentale gratuite offre un premier éclairage sur votre situation amoureuse, notamment via des tirages de tarot en ligne ou des consultations découverte de quelques minutes. Sa fiabilité dépend de la qualité du support utilisé et de l\'expérience du voyant. Les tirages gratuits sont utiles pour confirmer une intuition ou poser une question simple. Pour les situations complexes impliquant un triangle amoureux, une reconquête ou une décision engageante, une consultation approfondie avec un voyant spécialisé apporte des réponses plus précises et personnalisées.',
+    },
+    {
+      q: 'Quelles questions poser en voyance sentimentale ?',
+      a: 'En voyance sentimentale, les questions les plus fréquentes portent sur les sentiments de l\'autre (m\'aime-t-il vraiment, pense-t-il à moi), l\'avenir de la relation (va-t-il revenir, allons-nous nous marier), la compatibilité amoureuse (sommes-nous faits l\'un pour l\'autre), le timing (quand vais-je rencontrer quelqu\'un), et les blocages relationnels (pourquoi ne s\'engage-t-il pas). Les questions les plus précises et centrées sur un seul sujet obtiennent les réponses les plus éclairantes.',
+    },
+    {
+      q: 'Combien coûte une consultation de voyance sentimentale ?',
+      a: 'Le tarif d\'une consultation de voyance sentimentale varie entre 2 et 5 euros la minute selon l\'expérience du voyant et la plateforme. Une consultation complète de 20 à 40 minutes coûte en moyenne 30 à 80 euros. Certaines plateformes offrent les premières minutes gratuites pour établir la connexion. Les forfaits permettent souvent d\'obtenir un meilleur rapport qualité-prix. L\'investissement se justifie par la qualité de la guidance reçue et la clarté apportée à des situations sentimentales souvent sources de grande souffrance émotionnelle.',
+    },
+    {
+      q: 'Est-ce qu\'un voyant peut se tromper ?',
+      a: 'Oui, un voyant peut se tromper, et tout professionnel honnête le reconnaît. La voyance lit des probabilités et des énergies en mouvement, pas un avenir figé et immuable. Le libre arbitre du consultant et des personnes impliquées dans la situation peut modifier la trajectoire à tout moment. Une décision inattendue, un changement émotionnel soudain ou une intervention extérieure peuvent réorienter le cours des événements. Un bon voyant annonce ce qu\'il perçoit avec sincérité, sans garantir un résultat à 100 %. La fiabilité des prédictions dépend de l\'expérience du praticien, de son don naturel et de sa spécialisation dans le domaine concerné. Consultez de préférence un voyant qui assume cette nuance avec transparence plutôt qu\'un qui promet des certitudes absolues, c\'est paradoxalement le signe d\'un professionnel plus fiable.',
+    },
+    {
+      q: 'Comment les voyants voient-ils les choses ?',
+      a: 'Les voyants perçoivent les informations à travers différentes formes de perception extrasensorielle. La clairvoyance se manifeste par des images mentales, des scènes ou des symboles visuels qui apparaissent spontanément. La clairaudience transmet des messages sous forme de mots ou de phrases perçus intérieurement. La clairsentience permet de ressentir physiquement les émotions et les énergies du consultant et des personnes concernées. Le flash intuitif est une connaissance soudaine et immédiate, sans processus logique apparent. Les supports divinatoires, tarot, pendule, astrologie, ne créent pas l\'information mais amplifient l\'intuition du voyant en offrant un cadre structuré de lecture. Chaque voyant possède un mode de perception dominant qui constitue sa spécialité et sa force.',
+    },
+    {
+      q: 'Est-ce une bonne idée d\'aller voir une voyante ?',
+      a: 'Consulter une voyante est particulièrement bénéfique dans certaines situations : lorsque vous êtes paralysé par l\'indécision sentimentale, quand vous avez besoin de clarté sur les sentiments d\'une personne, durant une période de transition amoureuse, ou si vous traversez une phase de questionnements profonds. La voyance sentimentale éclaire votre situation sous un angle nouveau et apporte des perspectives que votre mental seul ne perçoit pas. Il est important de connaître les limites : la voyance guide mais ne décide pas à votre place, et elle ne remplace pas un accompagnement thérapeutique en cas de souffrance psychologique profonde. En revanche, les bénéfices concrets sont réels, apaisement, nouvelles perspectives, validation de votre intuition. La voyance sentimentale est d\'ailleurs la spécialité la plus demandée, et la grande majorité des consultants repartent avec un sentiment de clarté et de soulagement.',
+    },
+  ],
+  related: [
+    { href: '/methodes-voyance', label: 'Méthodes de Voyance Amoureuse : Guide Complet' },
+    { href: '/methodes-voyance/tirage-tarot-amour', label: 'Tirage Tarot Amour : Analyse Sentimentale' },
+    { href: '/methodes-voyance/voyance-telephone-amour', label: 'Voyance par Téléphone Amour' },
+    { href: '/voyance-gratuite-amour', label: 'Voyance Gratuite Amour : Tirages et Guidance' },
+    { href: '/sentiments', label: 'Sentiments & Avenir Amoureux' },
+  ],
+};
 
-  const faqSchema = getFAQSchema([
-    {
-      question: 'Qu\'est-ce que la voyance sentimentale exactement ?',
-      answer: 'La voyance sentimentale est une branche spécialisée de la voyance consacrée exclusivement aux questions amoureuses et relationnelles. Le voyant sentimentaliste utilise le tarot, la clairvoyance, l\'astrologie ou l\'oracle pour analyser les dynamiques émotionnelles entre deux personnes, décrypter les sentiments cachés, anticiper l\'évolution d\'une relation et guider le consultant vers les meilleures décisions pour sa vie amoureuse. Contrairement à la voyance généraliste, la voyance sentimentale mobilise des tirages et des méthodes spécifiquement conçus pour les problématiques du cœur.',
-    },
-    {
-      question: 'Quelle différence entre voyance sentimentale et voyance amoureuse ?',
-      answer: 'La voyance sentimentale et la voyance amoureuse désignent la même spécialisation. Ce sont des synonymes utilisés dans le milieu de la voyance pour décrire la guidance spécialisée en questions de cœur. La voyance sentimentale met l\'accent sur le décryptage des sentiments et des émotions, tandis que la voyance amoureuse souligne davantage la dimension relationnelle et le lien entre deux personnes. Dans la pratique, un voyant sentimentaliste et un voyant spécialisé amour offrent exactement les mêmes services et analyses.',
-    },
-    {
-      question: 'La voyance sentimentale gratuite est-elle fiable ?',
-      answer: 'La voyance sentimentale gratuite offre un premier éclairage sur votre situation amoureuse, notamment via des tirages de tarot en ligne ou des consultations découverte de quelques minutes. Sa fiabilité dépend de la qualité du support utilisé et de l\'expérience du voyant. Les tirages gratuits sont utiles pour confirmer une intuition ou poser une question simple. Pour les situations complexes impliquant un triangle amoureux, une reconquête ou une décision engageante, une consultation approfondie avec un voyant spécialisé apporte des réponses plus précises et personnalisées.',
-    },
-    {
-      question: 'Quelles questions poser en voyance sentimentale ?',
-      answer: 'En voyance sentimentale, les questions les plus fréquentes portent sur les sentiments de l\'autre (m\'aime-t-il vraiment, pense-t-il à moi), l\'avenir de la relation (va-t-il revenir, allons-nous nous marier), la compatibilité amoureuse (sommes-nous faits l\'un pour l\'autre), le timing (quand vais-je rencontrer quelqu\'un), et les blocages relationnels (pourquoi ne s\'engage-t-il pas). Les questions les plus précises et centrées sur un seul sujet obtiennent les réponses les plus éclairantes.',
-    },
-    {
-      question: 'Combien coûte une consultation de voyance sentimentale ?',
-      answer: 'Le tarif d\'une consultation de voyance sentimentale varie entre 2 et 5 euros la minute selon l\'expérience du voyant et la plateforme. Une consultation complète de 20 à 40 minutes coûte en moyenne 30 à 80 euros. Certaines plateformes offrent les premières minutes gratuites pour établir la connexion. Les forfaits permettent souvent d\'obtenir un meilleur rapport qualité-prix. L\'investissement se justifie par la qualité de la guidance reçue et la clarté apportée à des situations sentimentales souvent sources de grande souffrance émotionnelle.',
-    },
-    {
-      question: 'Est-ce qu\'un voyant peut se tromper ?',
-      answer: 'Oui, un voyant peut se tromper, et tout professionnel honnête le reconnaît. La voyance lit des probabilités et des énergies en mouvement, pas un avenir figé et immuable. Le libre arbitre du consultant et des personnes impliquées dans la situation peut modifier la trajectoire à tout moment. Une décision inattendue, un changement émotionnel soudain ou une intervention extérieure peuvent réorienter le cours des événements. Un bon voyant annonce ce qu\'il perçoit avec sincérité, sans garantir un résultat à 100 %. La fiabilité des prédictions dépend de l\'expérience du praticien, de son don naturel et de sa spécialisation dans le domaine concerné. Consultez de préférence un voyant qui assume cette nuance avec transparence plutôt qu\'un qui promet des certitudes absolues — c\'est paradoxalement le signe d\'un professionnel plus fiable.',
-    },
-    {
-      question: 'Comment les voyants voient-ils les choses ?',
-      answer: 'Les voyants perçoivent les informations à travers différentes formes de perception extrasensorielle. La clairvoyance se manifeste par des images mentales, des scènes ou des symboles visuels qui apparaissent spontanément. La clairaudience transmet des messages sous forme de mots ou de phrases perçus intérieurement. La clairsentience permet de ressentir physiquement les émotions et les énergies du consultant et des personnes concernées. Le flash intuitif est une connaissance soudaine et immédiate, sans processus logique apparent. Les supports divinatoires — tarot, pendule, astrologie — ne créent pas l\'information mais amplifient l\'intuition du voyant en offrant un cadre structuré de lecture. Chaque voyant possède un mode de perception dominant qui constitue sa spécialité et sa force.',
-    },
-    {
-      question: 'Est-ce une bonne idée d\'aller voir une voyante ?',
-      answer: 'Consulter une voyante est particulièrement bénéfique dans certaines situations : lorsque vous êtes paralysé par l\'indécision sentimentale, quand vous avez besoin de clarté sur les sentiments d\'une personne, durant une période de transition amoureuse, ou si vous traversez une phase de questionnements profonds. La voyance sentimentale éclaire votre situation sous un angle nouveau et apporte des perspectives que votre mental seul ne perçoit pas. Il est important de connaître les limites : la voyance guide mais ne décide pas à votre place, et elle ne remplace pas un accompagnement thérapeutique en cas de souffrance psychologique profonde. En revanche, les bénéfices concrets sont réels — apaisement, nouvelles perspectives, validation de votre intuition. La voyance sentimentale est d\'ailleurs la spécialité la plus demandée, et la grande majorité des consultants repartent avec un sentiment de clarté et de soulagement.',
-    },
-  ]);
+export const metadata = contentMeta(config);
 
+export default function VoyanceSentimentalePage() {
   return (
-    <main className="min-h-screen bg-gray-50">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(authorSchema) }}
-      />
-
-      {/* Header */}
-      <header className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 text-white py-16 px-4">
-        <div className="max-w-4xl mx-auto">
-          <Link href="/methodes-voyance" className="text-white/80 hover:text-white mb-4 inline-block">&larr; Retour aux M&eacute;thodes de Voyance</Link>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Voyance Sentimentale</h1>
-          <p className="text-xl opacity-95 mb-6">Guidance amoureuse sp&eacute;cialis&eacute;e pour &eacute;clairer toutes vos questions du c&oelig;ur</p>
-          <div className="flex gap-4 flex-wrap">
-            <a href="#consultation" className="bg-white text-purple-600 px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition">Consulter un Voyant</a>
-            <a href="#methodes" className="border-2 border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-purple-600 transition">Les M&eacute;thodes</a>
-          </div>
-        </div>
-      </header>
-
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        {/* Stats bar */}
-        <div className="bg-white rounded-xl shadow-md p-6 mb-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-          <div><div className="text-3xl mb-1">💜</div><div className="text-2xl font-bold text-purple-600">Sp&eacute;cialis&eacute;e</div><div className="text-sm text-gray-600">Questions amoureuses</div></div>
-          <div><div className="text-3xl mb-1">🔮</div><div className="text-2xl font-bold text-purple-600">Multi-supports</div><div className="text-sm text-gray-600">Tarot, oracle, astro</div></div>
-          <div><div className="text-3xl mb-1">⭐</div><div className="text-2xl font-bold text-purple-600">Reconnue</div><div className="text-sm text-gray-600">Expertise sentimentale</div></div>
-          <div><div className="text-3xl mb-1">🔒</div><div className="text-2xl font-bold text-purple-600">Confidentielle</div><div className="text-sm text-gray-600">Consultations priv&eacute;es</div></div>
-        </div>
-
-        {/* EEAT Signal */}
-        <EEATSignal colorScheme="purple" method="Voyance sentimentale par tarot, clairvoyance et astrologie amoureuse" />
-
-        {/* Answer Capsule */}
+    <ContentPage config={config}>
         <article className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-purple-600">
           <div className="bg-purple-50 border-l-4 border-purple-500 p-6 rounded-lg">
             <p className="text-lg leading-relaxed mb-4">
@@ -348,66 +318,6 @@ export default function VoyanceSentimentalePage() {
             </div>
           </div>
         </section>
-
-        {/* FAQ Section */}
-        <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">Questions Fr&eacute;quentes sur la Voyance Sentimentale</h2>
-          <p className="text-lg font-semibold text-gray-800 mb-4">Retrouvez les r&eacute;ponses aux cinq questions les plus pos&eacute;es sur la voyance sentimentale : d&eacute;finition, diff&eacute;rence avec la voyance amoureuse, fiabilit&eacute; gratuite, questions &agrave; poser et tarifs.</p>
-          <div className="space-y-6">
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Qu&apos;est-ce que la voyance sentimentale exactement ?</h3>
-              <p className="text-gray-700 leading-relaxed">La <strong>voyance sentimentale</strong> est une branche sp&eacute;cialis&eacute;e de la <strong>voyance</strong> consacr&eacute;e exclusivement aux questions amoureuses et relationnelles. Le <strong>voyant sentimentaliste</strong> utilise le <strong>tarot</strong>, la <strong>clairvoyance</strong>, l&apos;<strong>astrologie</strong> ou l&apos;<strong>oracle</strong> pour analyser les dynamiques &eacute;motionnelles entre deux personnes, d&eacute;crypter les <strong>sentiments cach&eacute;s</strong>, anticiper l&apos;&eacute;volution d&apos;une <strong>relation</strong> et guider le consultant vers les meilleures d&eacute;cisions pour sa <strong>vie amoureuse</strong>.</p>
-            </div>
-
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Quelle diff&eacute;rence entre voyance sentimentale et voyance amoureuse ?</h3>
-              <p className="text-gray-700 leading-relaxed">La <strong>voyance sentimentale</strong> et la <strong>voyance amoureuse</strong> d&eacute;signent la m&ecirc;me sp&eacute;cialisation. Ce sont des synonymes utilis&eacute;s dans le milieu de la voyance pour d&eacute;crire la <strong>guidance</strong> sp&eacute;cialis&eacute;e en questions de c&oelig;ur. La voyance sentimentale met l&apos;accent sur le d&eacute;cryptage des <strong>sentiments</strong> et des &eacute;motions, tandis que la voyance amoureuse souligne davantage la dimension relationnelle. Dans la pratique, un <strong>voyant sentimentaliste</strong> et un <strong>voyant sp&eacute;cialis&eacute; amour</strong> offrent exactement les m&ecirc;mes services.</p>
-            </div>
-
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">La voyance sentimentale gratuite est-elle fiable ?</h3>
-              <p className="text-gray-700 leading-relaxed">La <strong>voyance sentimentale gratuite</strong> offre un premier &eacute;clairage sur votre <strong>situation amoureuse</strong>, notamment via des <strong>tirages de tarot</strong> en ligne ou des consultations d&eacute;couverte. Sa fiabilit&eacute; d&eacute;pend de la qualit&eacute; du support et de l&apos;exp&eacute;rience du <strong>voyant</strong>. Les tirages gratuits sont utiles pour confirmer une intuition. Pour les situations complexes, une <strong>consultation</strong> approfondie avec un <strong>voyant sp&eacute;cialis&eacute;</strong> apporte des r&eacute;ponses plus pr&eacute;cises et personnalis&eacute;es.</p>
-            </div>
-
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Quelles questions poser en voyance sentimentale ?</h3>
-              <p className="text-gray-700 leading-relaxed">En <strong>voyance sentimentale</strong>, les questions les plus fr&eacute;quentes portent sur les <strong>sentiments</strong> de l&apos;autre (m&apos;aime-t-il vraiment), l&apos;avenir de la <strong>relation</strong> (va-t-il revenir), la <strong>compatibilit&eacute; amoureuse</strong>, le timing (quand vais-je rencontrer quelqu&apos;un) et les blocages relationnels. Les questions les plus pr&eacute;cises et centr&eacute;es sur un seul sujet obtiennent les r&eacute;ponses les plus &eacute;clairantes du <strong>voyant</strong>.</p>
-            </div>
-
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Combien co&ucirc;te une consultation de voyance sentimentale ?</h3>
-              <p className="text-gray-700 leading-relaxed">Le tarif d&apos;une <strong>consultation de voyance sentimentale</strong> varie entre 2 et 5 euros la minute selon l&apos;exp&eacute;rience du <strong>voyant</strong>. Une consultation compl&egrave;te de 20 &agrave; 40 minutes co&ucirc;te en moyenne 30 &agrave; 80 euros. Certaines plateformes offrent les premi&egrave;res minutes gratuites. L&apos;investissement se justifie par la clart&eacute; apport&eacute;e &agrave; des <strong>situations sentimentales</strong> souvent sources de grande souffrance &eacute;motionnelle.</p>
-            </div>
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Est-ce qu&apos;un voyant peut se tromper ?</h3>
-              <p className="text-gray-700 leading-relaxed">Oui, un <strong>voyant peut se tromper</strong>, et tout professionnel honn&ecirc;te le reconna&icirc;t. La voyance lit des <strong>probabilit&eacute;s</strong> et des &eacute;nergies en mouvement, pas un avenir fig&eacute; et immuable. Le <strong>libre arbitre</strong> du consultant et des personnes impliqu&eacute;es dans la situation peut modifier la trajectoire &agrave; tout moment. Une d&eacute;cision inattendue, un changement &eacute;motionnel soudain ou une intervention ext&eacute;rieure peuvent r&eacute;orienter le cours des &eacute;v&eacute;nements. Un bon voyant annonce ce qu&apos;il per&ccedil;oit avec sinc&eacute;rit&eacute;, sans garantir un r&eacute;sultat &agrave; 100 %. La <strong>fiabilit&eacute;</strong> des pr&eacute;dictions d&eacute;pend de l&apos;exp&eacute;rience du praticien, de son <strong>don naturel</strong> et de sa sp&eacute;cialisation. Consultez de pr&eacute;f&eacute;rence un voyant qui assume cette nuance avec <strong>transparence</strong> plut&ocirc;t qu&apos;un qui promet des certitudes absolues &mdash; c&apos;est paradoxalement le signe d&apos;un professionnel plus fiable.</p>
-            </div>
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Comment les voyants voient-ils les choses ?</h3>
-              <p className="text-gray-700 leading-relaxed">Les voyants per&ccedil;oivent les informations &agrave; travers diff&eacute;rentes formes de <strong>perception extrasensorielle</strong>. La <strong>clairvoyance</strong> se manifeste par des images mentales, des sc&egrave;nes ou des symboles visuels qui apparaissent spontan&eacute;ment. La <strong>clairaudience</strong> transmet des messages sous forme de mots ou de phrases per&ccedil;us int&eacute;rieurement. La <strong>clairsentience</strong> permet de ressentir physiquement les &eacute;motions et les &eacute;nergies du consultant et des personnes concern&eacute;es. Le <strong>flash intuitif</strong> est une connaissance soudaine et imm&eacute;diate, sans processus logique apparent. Les <strong>supports divinatoires</strong> &mdash; tarot, pendule, astrologie &mdash; ne cr&eacute;ent pas l&apos;information mais amplifient l&apos;intuition du voyant en offrant un cadre structur&eacute; de lecture. Chaque voyant poss&egrave;de un <strong>mode de perception dominant</strong> qui constitue sa sp&eacute;cialit&eacute; et sa force.</p>
-            </div>
-            <div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Est-ce une bonne id&eacute;e d&apos;aller voir une voyante ?</h3>
-              <p className="text-gray-700 leading-relaxed">Consulter une voyante est particuli&egrave;rement b&eacute;n&eacute;fique dans certaines situations : lorsque vous &ecirc;tes <strong>paralys&eacute; par l&apos;ind&eacute;cision sentimentale</strong>, quand vous avez besoin de clart&eacute; sur les sentiments d&apos;une personne, durant une <strong>p&eacute;riode de transition amoureuse</strong>, ou si vous traversez une phase de questionnements profonds. La <strong>voyance sentimentale</strong> &eacute;claire votre situation sous un angle nouveau et apporte des perspectives que votre mental seul ne per&ccedil;oit pas. Il est important de conna&icirc;tre les limites : la voyance guide mais <strong>ne d&eacute;cide pas &agrave; votre place</strong>, et elle ne remplace pas un accompagnement th&eacute;rapeutique en cas de souffrance psychologique profonde. En revanche, les b&eacute;n&eacute;fices concrets sont r&eacute;els &mdash; <strong>apaisement</strong>, nouvelles perspectives, <strong>validation de votre intuition</strong>. La voyance sentimentale est d&apos;ailleurs la sp&eacute;cialit&eacute; la plus demand&eacute;e, et la grande majorit&eacute; des consultants repartent avec un sentiment de <strong>clart&eacute; et de soulagement</strong>.</p>
-            </div>
-          </div>
-        </section>
-
-        {/* Articles Connexes */}
-        <div className="bg-gray-100 rounded-xl p-6 mb-8">
-          <h3 className="font-bold text-lg mb-4 text-gray-900">📚 Articles Connexes</h3>
-          <div className="space-y-2">
-            <Link href="/methodes-voyance" className="block text-purple-600 hover:text-purple-800 font-medium">&rarr; M&eacute;thodes de Voyance Amoureuse : Guide Complet</Link>
-            <Link href="/methodes-voyance/tirage-tarot-amour" className="block text-purple-600 hover:text-purple-800 font-medium">&rarr; Tirage Tarot Amour : Analyse Sentimentale</Link>
-            <Link href="/methodes-voyance/voyance-telephone-amour" className="block text-purple-600 hover:text-purple-800 font-medium">&rarr; Voyance par T&eacute;l&eacute;phone Amour</Link>
-            <Link href="/voyance-gratuite-amour" className="block text-purple-600 hover:text-purple-800 font-medium">&rarr; Voyance Gratuite Amour : Tirages et Guidance</Link>
-            <Link href="/sentiments" className="block text-purple-600 hover:text-purple-800 font-medium">&rarr; Sentiments &amp; Avenir Amoureux</Link>
-          </div>
-        </div>
-
-        {/* CTA Footer */}
-        <VoyantFinalCTA topic="sentiments" source="voyance-sentimentale-final" />
-      </div>
-    </main>
+    </ContentPage>
   );
 }

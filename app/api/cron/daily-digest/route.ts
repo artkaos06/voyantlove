@@ -1,4 +1,4 @@
-// Daily campaign digest cron — server-only.
+// Daily campaign digest cron, server-only.
 //
 // Runs once a day (configured in vercel.json), aggregates the in-memory
 // digestState counters, posts a single summary embed to Discord, then
@@ -9,8 +9,7 @@
 // the endpoint manually and triggering a digest mid-day.
 //
 // Caveats: digestState is in-memory module state, so cold starts mid-day
-// can reset counters. The digest is informational, not authoritative —
-// Google Ads + BargesTech reports are the true source of truth for billing.
+// can reset counters. The digest is informational, not authoritative, // Google Ads + BargesTech reports are the true source of truth for billing.
 
 import { NextRequest, NextResponse } from 'next/server';
 import { Color, notifyDiscord } from '@/lib/discord';
@@ -18,7 +17,7 @@ import { snapshotAndReset } from '@/lib/digestState';
 import { getPhoneCBStats, type PhoneCBStatsBucket } from '@/lib/goracash';
 import { getCplLeadCount } from '@/lib/cplStats';
 
-// Payout per CPL lead (EUR) — mirror of the postback route's constant.
+// Payout per CPL lead (EUR), mirror of the postback route's constant.
 const CPL_PAYOUT_EUR = Number(process.env.CPL_PAYOUT_EUR || '2.30');
 
 export const dynamic = 'force-dynamic';
@@ -26,7 +25,7 @@ export const dynamic = 'force-dynamic';
 function isAuthorized(request: NextRequest): boolean {
   const expected = process.env.CRON_SECRET;
   if (!expected) {
-    // No secret configured — allow (e.g. local dev). In production, secret
+    // No secret configured, allow (e.g. local dev). In production, secret
     // should always be set.
     return true;
   }
@@ -35,7 +34,7 @@ function isAuthorized(request: NextRequest): boolean {
 }
 
 function pct(numerator: number, denominator: number): string {
-  if (denominator === 0) return '—';
+  if (denominator === 0) return ', ';
   return `${((numerator / denominator) * 100).toFixed(1)}%`;
 }
 
@@ -51,7 +50,7 @@ function yesterdayParis(): string {
 
 /**
  * Pull yesterday's authoritative funnel numbers from the Goracash API.
- * Unlike digestState this survives cold starts — it's the platform's own
+ * Unlike digestState this survives cold starts, it's the platform's own
  * ledger. Returns null on failure (creds missing, API error) so a Goracash
  * outage never blocks the rest of the digest.
  */
@@ -82,7 +81,7 @@ async function handle(request: NextRequest): Promise<NextResponse> {
 
   const snap = snapshotAndReset();
   const goracash = await fetchGoracashYesterday();
-  // Durable CPL lead count for yesterday (Paris) — from KV, not the
+  // Durable CPL lead count for yesterday (Paris), from KV, not the
   // in-memory snapshot, so it's accurate across serverless instances.
   const cplDate = yesterdayParis();
   const cplLeads = await getCplLeadCount(cplDate);
@@ -143,7 +142,7 @@ async function handle(request: NextRequest): Promise<NextResponse> {
       value: `${attributionRate} of click-outs had attribution`,
       inline: true,
     },
-    // Authoritative Goracash funnel for yesterday (Paris time) — straight
+    // Authoritative Goracash funnel for yesterday (Paris time), straight
     // from /v1/phone/cbStats, immune to in-memory counter resets.
     goracash
       ? {
@@ -153,7 +152,7 @@ async function handle(request: NextRequest): Promise<NextResponse> {
         }
       : {
           name: '💶 Goracash API',
-          value: 'Stats indisponibles (API error — voir logs).',
+          value: 'Stats indisponibles (API error, voir logs).',
           inline: false,
         },
   ];

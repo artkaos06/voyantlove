@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description:
     'Independent reviews of online love psychic reading services. Our shortlist of platforms worth your time, with honest pros, cons, and pricing.',
   alternates: {
-    canonical: 'https://www.lovepsychicguide.com/love-psychic-services',
+    canonical: 'https://www.lovepsychicguide.com/love-psychic-services/',
   },
 };
 
@@ -35,7 +35,7 @@ export default function ServicesHub() {
 
         <AffiliateDisclosure variant="banner" className="mb-12" />
 
-        {/* Service card — Keen */}
+        {/* Service card, Keen */}
         <article className="border border-gray-200 rounded-xl p-6 md:p-8 mb-8 hover:shadow-md transition-shadow">
           <div className="flex items-start justify-between flex-wrap gap-4 mb-4">
             <div>
@@ -53,8 +53,7 @@ export default function ServicesHub() {
           </div>
 
           <p className="text-gray-700 leading-relaxed mb-4">
-            Keen has been online longer than most of its competitors —
-            launched in 1999 and now part of Ingenio, which also operates
+            Keen has been online longer than most of its competitors,             launched in 1999 and now part of Ingenio, which also operates
             Kasamba and Psychic Source. The platform is best understood as a
             marketplace: thousands of independent advisors set their own rates
             (commonly $4.99–$15.99 per minute for love specialists) and
@@ -94,7 +93,7 @@ export default function ServicesHub() {
           </div>
         </article>
 
-        {/* Placeholder for Kasamba — coming soon */}
+        {/* Placeholder for Kasamba, coming soon */}
         <article className="border border-dashed border-gray-300 rounded-xl p-6 md:p-8 mb-8 bg-gray-50">
           <div className="flex items-start justify-between flex-wrap gap-4 mb-2">
             <div>
@@ -111,7 +110,7 @@ export default function ServicesHub() {
             Kasamba is Keen&apos;s sister platform under the same parent
             company. We&apos;re working on a side-by-side comparison and a
             standalone Kasamba review. Check back, or read our Keen review for
-            now — many observations apply broadly to the Ingenio family of
+            now, many observations apply broadly to the Ingenio family of
             services.
           </p>
         </article>

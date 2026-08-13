@@ -1,102 +1,82 @@
-import type { Metadata } from 'next';
 import Link from 'next/link';
-import { getArticleSchema, getBreadcrumbSchema, getFAQSchema, getAuthorSchema } from '@/lib/schema';
-import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
-import VoyantFinalCTA from '@/components/VoyantFinalCTA';
+import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
-export const metadata: Metadata = {
+const config: ContentPageConfig = {
   title: 'Ex qui Revient : Que Faire ? Conseils Voyance',
   description: 'Votre ex est revenu ? Découvrez que faire selon le tarot. Faut-il donner une seconde chance ?',
+  url: 'https://www.voyantlove.fr/reconquete/ex-qui-revient/',
   keywords: ['ex qui revient', 'seconde chance', 'retrouvailles'],
-  alternates: { canonical: 'https://www.voyantlove.fr/reconquete/ex-qui-revient/' },
-};
-
-export default function ExQuiRevientPage() {
-  const articleSchema = getArticleSchema({
-    title: 'Ex qui Revient : Que Faire ? Conseils Voyance',
-    description: 'Votre ex est revenu ? Découvrez que faire selon le tarot. Faut-il donner une seconde chance ?',
-    url: 'https://www.voyantlove.fr/reconquete/ex-qui-revient/',
-    datePublished: '2026-01-17',
-    dateModified: '2026-01-17',
-    keywords: ['ex qui revient', 'seconde chance', 'retrouvailles'],
-  });
-
-  const breadcrumbSchema = getBreadcrumbSchema([
+  datePublished: '2026-01-17',
+  dateModified: '2026-01-17',
+  breadcrumb: [
     { name: 'Accueil', url: 'https://www.voyantlove.fr' },
     { name: 'Reconquête', url: 'https://www.voyantlove.fr/reconquete/' },
     { name: 'Ex qui Revient', url: 'https://www.voyantlove.fr/reconquete/ex-qui-revient/' },
-  ]);
+  ],
+  header: {
+    emoji: '💕',
+    h1: 'Ex qui Revient',
+    subtitle: 'Que faire selon le tarot ?',
+    gradient: 'from-violet-500 via-pink-500 to-rose-500',
+    backLink: { href: '/reconquete', label: 'Retour à la Reconquête' },
+    anchors: [
+      { href: '#consultation', label: 'Consultation', primary: true },
+    ],
+  },
+  accentText: 'text-pink-600',
+  stats: [
+    { icon: '⭐', value: '4.8/5', label: '' },
+    { icon: '💕', value: 'Forte', label: '' },
+    { icon: '⏰', value: '3-6m', label: '' },
+    { icon: '🔮', value: 'Reconnue', label: '' },
+  ],
+  eeat: { colorScheme: 'purple', method: 'Tarot de la reconquête amoureuse' },
+  cta: { topic: 'reconquete', slug: 'ex-qui-revient' },
+  faq: [
+    {
+      q: 'Ex qui revient après silence radio : bon signe ?',
+      a: 'Le retour après un silence radio peut être positif s\'il s\'accompagne de changements concrets. Observez si votre ex prend ses responsabilités, reconnaît ses erreurs et propose des solutions. Le tarot révèle si ce retour est sincère ou motivé par la solitude. Un vrai retour se manifeste par des actions, pas seulement des paroles.',
+    },
+    {
+      q: 'Quels sont les signes qu\'un ex revient pour de bon ?',
+      a: 'Les signes d\'un retour sincère incluent : reconnaissance des erreurs passées, changements visibles de comportement, patience et respect de votre rythme, communication ouverte sur les problèmes, engagement concret pour l\'avenir. Le tarot avec Les Amoureux et Le Jugement confirme un retour authentique basé sur une véritable évolution.',
+    },
+    {
+      q: 'Comment réagir quand mon ex revient ?',
+      a: 'Prenez du recul avant de répondre. Posez-vous les bonnes questions : pourquoi revient-il maintenant ? A-t-il changé ? Ai-je pardonné ? Demandez une discussion honnête sur les causes de la rupture. Observez ses actions sur plusieurs semaines. Le tarot guide votre décision en révélant ses vraies motivations et vos chances de réussite.',
+    },
+    {
+      q: 'Faut-il accepter le retour de son ex ?',
+      a: 'Non, refuser peut être la meilleure décision si : votre ex n\'a pas changé, les causes de rupture persistent, vous n\'avez pas pardonné, il revient par manipulation ou ego. Accepter sans conditions garantit l\'échec. Le tarot avec La Tour ou Le Diable révèle les situations toxiques où refuser protège votre bien-être.',
+    },
+    {
+      q: 'Combien de temps faut-il avant qu\'un ex revienne ?',
+      a: 'La durée varie selon les situations : 3 à 6 mois en moyenne pour une vraie évolution. Un retour trop rapide (moins d\'un mois) est souvent motivé par la nostalgie ou la solitude, pas par un changement profond. Le tarot révèle le timing idéal et si ce retour mènera à une relation durable.',
+    },
+    {
+      q: 'Comment différencier un retour sincère d\'une manipulation ?',
+      a: 'Un retour sincère montre : cohérence entre paroles et actes, reconnaissance des torts, patience, respect de vos limites. Une manipulation révèle : promesses sans actions, urgence pour revenir, culpabilisation, refus d\'assumer ses erreurs. Le tarot avec Le Bateleur inversé ou La Lune alerte sur les intentions douteuses.',
+    },
+  ],
+  related: [
+    { href: '/reconquete', label: 'Reconquête Amoureuse : Toutes nos Guidances' },
+    { href: '/reconquete/seconde-chance-amour', label: 'Seconde Chance en Amour : Conditions de Réussite' },
+    { href: '/reconquete/se-remettre-ensemble', label: 'Se Remettre Ensemble : Les 5 Étapes' },
+    { href: '/reconquete/ex-revient-silence-radio', label: 'Ex qui Revient après Silence Radio' },
+    { href: '/reconquete/retour-de-lex', label: 'Retour de l\'Ex : Signes et Timing' },
+    { href: '/reconquete/va-t-il-elle-revenir', label: 'Va-t-il/elle Revenir ? Prédiction Tarot' },
+    { href: '/reconquete/reconquerir-son-ex', label: 'Reconquérir son Ex : Stratégies Efficaces' },
+    { href: '/reconquete/ex-chaud-et-froid-apres-separation', label: 'Mon Ex est Chaud et Froid : Décoder les Signaux' },
+  ],
+};
 
-  const authorSchema = getAuthorSchema();
+export const metadata = contentMeta(config);
 
-  const faqSchema = getFAQSchema([
-    {
-      question: 'Ex qui revient après silence radio : bon signe ?',
-      answer: 'Le retour après un silence radio peut être positif s\'il s\'accompagne de changements concrets. Observez si votre ex prend ses responsabilités, reconnaît ses erreurs et propose des solutions. Le tarot révèle si ce retour est sincère ou motivé par la solitude. Un vrai retour se manifeste par des actions, pas seulement des paroles.',
-    },
-    {
-      question: 'Quels sont les signes qu\'un ex revient pour de bon ?',
-      answer: 'Les signes d\'un retour sincère incluent : reconnaissance des erreurs passées, changements visibles de comportement, patience et respect de votre rythme, communication ouverte sur les problèmes, engagement concret pour l\'avenir. Le tarot avec Les Amoureux et Le Jugement confirme un retour authentique basé sur une véritable évolution.',
-    },
-    {
-      question: 'Comment réagir quand mon ex revient ?',
-      answer: 'Prenez du recul avant de répondre. Posez-vous les bonnes questions : pourquoi revient-il maintenant ? A-t-il changé ? Ai-je pardonné ? Demandez une discussion honnête sur les causes de la rupture. Observez ses actions sur plusieurs semaines. Le tarot guide votre décision en révélant ses vraies motivations et vos chances de réussite.',
-    },
-    {
-      question: 'Faut-il accepter le retour de son ex ?',
-      answer: 'Non, refuser peut être la meilleure décision si : votre ex n\'a pas changé, les causes de rupture persistent, vous n\'avez pas pardonné, il revient par manipulation ou ego. Accepter sans conditions garantit l\'échec. Le tarot avec La Tour ou Le Diable révèle les situations toxiques où refuser protège votre bien-être.',
-    },
-    {
-      question: 'Combien de temps faut-il avant qu\'un ex revienne ?',
-      answer: 'La durée varie selon les situations : 3 à 6 mois en moyenne pour une vraie évolution. Un retour trop rapide (moins d\'un mois) est souvent motivé par la nostalgie ou la solitude, pas par un changement profond. Le tarot révèle le timing idéal et si ce retour mènera à une relation durable.',
-    },
-    {
-      question: 'Comment différencier un retour sincère d\'une manipulation ?',
-      answer: 'Un retour sincère montre : cohérence entre paroles et actes, reconnaissance des torts, patience, respect de vos limites. Une manipulation révèle : promesses sans actions, urgence pour revenir, culpabilisation, refus d\'assumer ses erreurs. Le tarot avec Le Bateleur inversé ou La Lune alerte sur les intentions douteuses.',
-    },
-  ]);
-
+export default function ExQuiRevientPage() {
   return (
-    <main className="min-h-screen bg-gray-50">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(authorSchema) }}
-      />
-      <header className="bg-gradient-to-r from-violet-500 via-pink-500 to-rose-500 text-white py-16 px-4">
-        <div className="max-w-4xl mx-auto">
-          <Link href="/reconquete" className="text-white/80 hover:text-white mb-4 inline-block">← Retour à la Reconquête</Link>
-          <h1 className="text-4xl font-bold mb-4">💕 Ex qui Revient</h1>
-          <p className="text-xl opacity-95 mb-6">Que faire selon le tarot ?</p>
-          <a href="#consultation" className="bg-white text-pink-600 px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition inline-block">Consultation</a>
-        </div>
-      </header>
-
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <div className="bg-white rounded-xl p-6 mb-8 grid grid-cols-4 gap-4 text-center">
-          <div><div className="text-3xl">⭐</div><div className="text-2xl font-bold text-pink-600">4.8/5</div></div>
-          <div><div className="text-3xl">💕</div><div className="text-2xl font-bold text-pink-600">Forte</div></div>
-          <div><div className="text-3xl">⏰</div><div className="text-2xl font-bold text-pink-600">3-6m</div></div>
-          <div><div className="text-3xl">🔮</div><div className="text-2xl font-bold text-pink-600">Reconnue</div></div>
-        </div>
-
-        <EEATSignal
-          colorScheme="purple"
-          method="Tarot de la reconquête amoureuse"
-        />
+    <ContentPage config={config}>
 
         <article className="bg-white rounded-xl p-8 mb-8 border-t-4 border-pink-500">
           <p className="text-lg mb-4">Votre <strong>ex qui revient</strong> pose la question cruciale : <strong>que faire</strong> ? La plupart des personnes confrontées au <strong>retour de l'ex</strong> hésitent entre donner une <strong>seconde chance</strong> ou refuser définitivement. Le <strong>tarot</strong> guide votre décision en révélant les vraies motivations de ce retour et vos chances réelles de réussite. Cette situation délicate nécessite une analyse approfondie avant toute décision.</p>
@@ -383,60 +363,6 @@ export default function ExQuiRevientPage() {
           </div>
         </section>
 
-        <section className="bg-white rounded-xl p-8 mb-8">
-          <h2 className="text-3xl font-bold mb-6 text-pink-600">Questions Fréquentes sur le Retour de l'Ex</h2>
-          <p className="text-lg font-semibold text-gray-800 mb-4">Retrouvez les réponses aux six questions les plus posées quand un ex revient : sincérité du retour après silence radio, signes fiables, réaction adaptée, quand accepter ou refuser, délai normal et distinction sincérité versus manipulation.</p>
-
-          <div className="space-y-6">
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="font-bold text-lg text-gray-800 mb-3">Ex qui revient après silence radio : bon signe ?</h3>
-              <p className="text-gray-700">Le retour après un <strong>silence radio</strong> peut être positif s'il s'accompagne de changements concrets. Observez si votre ex prend ses responsabilités, reconnaît ses erreurs et propose des solutions. Le tarot révèle si ce retour est sincère ou motivé par la solitude. Un vrai retour se manifeste par des actions, pas seulement des paroles. Attendez plusieurs semaines pour évaluer la cohérence entre ses dires et ses actes.</p>
-            </div>
-
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="font-bold text-lg text-gray-800 mb-3">Quels signes montrent qu'un ex revient sincèrement ?</h3>
-              <p className="text-gray-700">Les <strong>signes d'un retour sincère</strong> incluent : reconnaissance des erreurs passées, changements visibles de comportement, patience et respect de votre rythme, communication ouverte sur les problèmes, engagement concret pour l'avenir. Le tarot avec Les Amoureux et Le Jugement confirme un retour authentique basé sur une véritable évolution. Méfiez-vous des belles promesses sans preuves tangibles.</p>
-            </div>
-
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="font-bold text-lg text-gray-800 mb-3">Comment réagir quand mon ex revient ?</h3>
-              <p className="text-gray-700">Prenez du recul avant de répondre. Posez-vous les bonnes questions : pourquoi revient-il maintenant ? A-t-il changé ? Ai-je pardonné ? Demandez une discussion honnête sur les causes de la rupture. Observez ses actions sur plusieurs semaines. Le <strong>tarot</strong> guide votre décision en révélant ses vraies motivations et vos chances de réussite. Ne cédez pas à la précipitation émotionnelle.</p>
-            </div>
-
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="font-bold text-lg text-gray-800 mb-3">Faut-il accepter le retour de son ex ?</h3>
-              <p className="text-gray-700">Non, refuser peut être la meilleure décision si : votre ex n'a pas changé, les causes de rupture persistent, vous n'avez pas pardonné, il revient par manipulation ou ego. Accepter sans conditions garantit l'échec. Le tarot avec La Tour ou Le Diable révèle les situations toxiques où refuser protège votre bien-être. Votre santé émotionnelle prime sur la nostalgie.</p>
-            </div>
-
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="font-bold text-lg text-gray-800 mb-3">Combien de temps avant le retour d'un ex ?</h3>
-              <p className="text-gray-700">La durée varie selon les situations : <strong>3 à 6 mois en moyenne</strong> pour une vraie évolution. Un retour trop rapide (moins d'un mois) est souvent motivé par la nostalgie ou la solitude, pas par un changement profond. La question « <Link href="/reconquete/va-t-il-elle-revenir" className="text-pink-600 hover:text-pink-800 underline font-medium">va-t-il/elle revenir</Link> » trouve sa réponse dans le tarot, qui révèle le timing idéal et si ce retour mènera à une relation durable. La patience est une vertu dans ces situations.</p>
-            </div>
-
-            <div>
-              <h3 className="font-bold text-lg text-gray-800 mb-3">Retour sincère ou manipulation : comment savoir ?</h3>
-              <p className="text-gray-700">Un <strong>retour sincère</strong> montre : cohérence entre paroles et actes, reconnaissance des torts, patience, respect de vos limites. Une <strong>manipulation</strong> révèle : promesses sans actions, urgence pour revenir, culpabilisation, victimisation, refus d'assumer ses erreurs. Le tarot avec Le Bateleur inversé ou La Lune alerte sur les intentions douteuses. Faites confiance à votre intuition.</p>
-            </div>
-          </div>
-        </section>
-
-        <VoyantFinalCTA topic="reconquete" source="ex-qui-revient-final" />
-
-        <div className="bg-gray-100 rounded-xl p-6 mb-8">
-          <h3 className="font-bold mb-4 text-xl text-gray-800">📚 Articles Connexes</h3>
-          <div className="space-y-3">
-            <Link href="/reconquete" className="block text-pink-600 hover:text-pink-800 font-medium">→ Reconquête Amoureuse : Toutes nos Guidances</Link>
-            <Link href="/reconquete/seconde-chance-amour" className="block text-pink-600 hover:text-pink-800 font-medium">→ Seconde Chance en Amour : Conditions de Réussite</Link>
-            <Link href="/reconquete/se-remettre-ensemble" className="block text-pink-600 hover:text-pink-800 font-medium">→ Se Remettre Ensemble : Les 5 Étapes</Link>
-            <Link href="/reconquete/ex-revient-silence-radio" className="block text-pink-600 hover:text-pink-800 font-medium">→ Ex qui Revient après Silence Radio</Link>
-            <Link href="/reconquete/retour-de-lex" className="block text-pink-600 hover:text-pink-800 font-medium">→ Retour de l'Ex : Signes et Timing</Link>
-            <Link href="/reconquete/va-t-il-elle-revenir" className="block text-pink-600 hover:text-pink-800 font-medium">→ Va-t-il/elle Revenir ? Prédiction Tarot</Link>
-            <Link href="/reconquete/reconquerir-son-ex" className="block text-pink-600 hover:text-pink-800 font-medium">→ Reconquérir son Ex : Stratégies Efficaces</Link>
-            <Link href="/reconquete/ex-chaud-et-froid-apres-separation" className="block text-pink-600 hover:text-pink-800 font-medium">→ Mon Ex est Chaud et Froid : Décoder les Signaux</Link>
-          </div>
-        </div>
-
-      </div>
-    </main>
+      </ContentPage>
   );
 }

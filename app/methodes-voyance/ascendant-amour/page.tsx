@@ -1,18 +1,65 @@
-import type { Metadata } from 'next';
 import Link from 'next/link';
-import { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getAuthorSchema } from '@/lib/schema';
-import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
-import VoyantFinalCTA from '@/components/VoyantFinalCTA';
+import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
-export const metadata: Metadata = {
+const config: ContentPageConfig = {
   title: 'Ascendant en Amour : Signification et Compatibilité',
   description: 'L\'ascendant en amour : ce que votre signe ascendant révèle sur votre style de séduction et la première attraction. Calcul, signification par signe et compatibilité.',
+  url: 'https://www.voyantlove.fr/methodes-voyance/ascendant-amour/',
   keywords: ['ascendant amour', 'ascendant en amour', 'signe ascendant amoureux', 'calculer son ascendant', 'ascendant et attraction'],
-  alternates: {
-    canonical: 'https://www.voyantlove.fr/methodes-voyance/ascendant-amour/',
+  datePublished: '2026-08-07',
+  dateModified: '2026-08-07',
+  breadcrumb: [
+    { name: 'Accueil', url: 'https://www.voyantlove.fr' },
+    { name: 'Méthodes de Voyance', url: 'https://www.voyantlove.fr/methodes-voyance/' },
+    { name: 'Ascendant en Amour', url: 'https://www.voyantlove.fr/methodes-voyance/ascendant-amour/' },
+  ],
+  header: {
+    emoji: '🌅',
+    h1: 'Ascendant en Amour',
+    subtitle: 'Ce que votre signe ascendant révèle sur votre style de séduction',
+    gradient: 'from-violet-600 via-indigo-600 to-purple-600',
+    backLink: { href: '/methodes-voyance', label: 'Retour aux Méthodes de Voyance' },
+    anchors: [
+      { href: '#calcul', label: 'Calculer son Ascendant', primary: true },
+      { href: '#signes', label: 'Ascendant par Signe' },
+    ],
   },
+  accentText: 'text-indigo-700',
+  stats: [
+    { icon: '🌅', value: '12 signes', label: 'Ascendants possibles' },
+    { icon: '🕰️', value: '~2h', label: 'Change de signe' },
+    { icon: '🎭', value: 'Masque social', label: 'Première impression' },
+    { icon: '💫', value: 'Attraction', label: 'Rôle en synastrie' },
+  ],
+  eeat: { colorScheme: 'purple', method: 'Astrologie amoureuse et lecture de l\'ascendant' },
+  cta: { topic: 'methodes-voyance', slug: 'ascendant-amour' },
+  faq: [
+    {
+      q: 'Comment calculer son ascendant en amour ?',
+      a: 'Le calcul de l\'ascendant nécessite trois informations précises : votre date de naissance, votre heure exacte de naissance (à quelques minutes près idéalement) et votre lieu de naissance. Ces données permettent de déterminer quel signe du zodiaque se levait à l\'horizon Est au moment précis de votre venue au monde. Sans heure de naissance fiable, l\'ascendant ne peut pas être calculé avec certitude, contrairement au signe solaire qui ne dépend que de la date.',
+    },
+    {
+      q: 'Pourquoi l\'ascendant est-il important en amour ?',
+      a: 'L\'ascendant façonne la première impression que vous donnez et le type d\'attraction que vous suscitez avant même que votre personnalité profonde (signe solaire) ne se révèle. En amour, il influence votre style de séduction spontané, la manière dont on vous perçoit lors d\'une première rencontre, et parfois le profil de partenaire vers lequel vous êtes instinctivement attiré.',
+    },
+    {
+      q: 'Ascendant ou signe solaire : lequel compte le plus en amour ?',
+      a: 'Les deux jouent des rôles complémentaires plutôt que concurrents. Le signe solaire renseigne sur l\'identité profonde et les besoins affectifs fondamentaux, tandis que l\'ascendant informe sur la façon d\'aborder une rencontre et l\'image projetée dans les premiers instants. Une analyse de compatibilité complète en astrologie amoureuse tient compte des deux, ainsi que de la position de Vénus et de la Lune.',
+    },
+    {
+      q: 'Deux personnes avec le même ascendant sont-elles compatibles en amour ?',
+      a: 'Un ascendant partagé peut créer une reconnaissance immédiate et une facilité de contact dans les premiers échanges, mais il ne garantit pas à lui seul une compatibilité amoureuse durable. Celle-ci dépend de nombreux autres facteurs du thème natal : position de Vénus et Mars, aspects planétaires entre les deux thèmes, éléments dominants. L\'ascendant est une pièce du puzzle, pas une réponse complète.',
+    },
+  ],
+  related: [
+    { href: '/methodes-voyance/astrologie-amoureuse', label: 'Astrologie Amoureuse : Compatibilité Astrale et Prédictions' },
+    { href: '/methodes-voyance/synastrie-amoureuse', label: 'Synastrie Amoureuse : Compatibilité de Couple' },
+    { href: '/astrologie-amour', label: 'Les Signes Astrologiques en Amour' },
+    { href: '/glossaire/ascendant', label: 'Glossaire : Ascendant' },
+    { href: '/sentiments/compatibilite-amoureuse', label: 'Compatibilité Amoureuse : Tous les Indicateurs' },
+  ],
 };
 
 const ASCENDANTS = [
@@ -30,75 +77,11 @@ const ASCENDANTS = [
   { signe: 'Poissons', emoji: '♓', trait: 'Douceur rêveuse et sensibilité visible. L\'ascendant Poissons dégage un romantisme perceptible dès le premier regard.' },
 ];
 
+export const metadata = contentMeta(config);
+
 export default function AscendantAmourPage() {
-  const articleSchema = getArticleSchema({
-    title: 'Ascendant en Amour : Signification et Compatibilité | VoyantLove',
-    description: 'L\'ascendant en amour : ce que votre signe ascendant révèle sur votre style de séduction et la première attraction. Calcul, signification par signe et compatibilité.',
-    url: 'https://www.voyantlove.fr/methodes-voyance/ascendant-amour/',
-    datePublished: '2026-08-07',
-    dateModified: '2026-08-07',
-    keywords: ['ascendant amour', 'ascendant en amour', 'signe ascendant amoureux', 'calculer son ascendant'],
-  });
-
-  const authorSchema = getAuthorSchema();
-
-  const breadcrumbSchema = getBreadcrumbSchema([
-    { name: 'Accueil', url: 'https://www.voyantlove.fr' },
-    { name: 'Méthodes de Voyance', url: 'https://www.voyantlove.fr/methodes-voyance/' },
-    { name: 'Ascendant en Amour', url: 'https://www.voyantlove.fr/methodes-voyance/ascendant-amour/' },
-  ]);
-
-  const faqSchema = getFAQSchema([
-    {
-      question: 'Comment calculer son ascendant en amour ?',
-      answer: 'Le calcul de l\'ascendant nécessite trois informations précises : votre date de naissance, votre heure exacte de naissance (à quelques minutes près idéalement) et votre lieu de naissance. Ces données permettent de déterminer quel signe du zodiaque se levait à l\'horizon Est au moment précis de votre venue au monde. Sans heure de naissance fiable, l\'ascendant ne peut pas être calculé avec certitude, contrairement au signe solaire qui ne dépend que de la date.',
-    },
-    {
-      question: 'Pourquoi l\'ascendant est-il important en amour ?',
-      answer: 'L\'ascendant façonne la première impression que vous donnez et le type d\'attraction que vous suscitez avant même que votre personnalité profonde (signe solaire) ne se révèle. En amour, il influence votre style de séduction spontané, la manière dont on vous perçoit lors d\'une première rencontre, et parfois le profil de partenaire vers lequel vous êtes instinctivement attiré.',
-    },
-    {
-      question: 'Ascendant ou signe solaire : lequel compte le plus en amour ?',
-      answer: 'Les deux jouent des rôles complémentaires plutôt que concurrents. Le signe solaire renseigne sur l\'identité profonde et les besoins affectifs fondamentaux, tandis que l\'ascendant informe sur la façon d\'aborder une rencontre et l\'image projetée dans les premiers instants. Une analyse de compatibilité complète en astrologie amoureuse tient compte des deux, ainsi que de la position de Vénus et de la Lune.',
-    },
-    {
-      question: 'Deux personnes avec le même ascendant sont-elles compatibles en amour ?',
-      answer: 'Un ascendant partagé peut créer une reconnaissance immédiate et une facilité de contact dans les premiers échanges, mais il ne garantit pas à lui seul une compatibilité amoureuse durable. Celle-ci dépend de nombreux autres facteurs du thème natal : position de Vénus et Mars, aspects planétaires entre les deux thèmes, éléments dominants. L\'ascendant est une pièce du puzzle, pas une réponse complète.',
-    },
-  ]);
-
   return (
-    <main className="min-h-screen bg-gray-50">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(authorSchema) }} />
-
-      {/* Header */}
-      <header className="bg-gradient-to-r from-violet-600 via-indigo-600 to-purple-600 text-white py-16 px-4">
-        <div className="max-w-4xl mx-auto">
-          <Link href="/methodes-voyance" className="text-white/80 hover:text-white mb-4 inline-block">&larr; Retour aux Méthodes de Voyance</Link>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">🌅 Ascendant en Amour</h1>
-          <p className="text-xl opacity-95 mb-6">Ce que votre signe ascendant révèle sur votre style de séduction</p>
-          <div className="flex gap-4 flex-wrap">
-            <a href="#calcul" className="bg-white text-indigo-700 px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition">Calculer son Ascendant</a>
-            <a href="#signes" className="border-2 border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-indigo-700 transition">Ascendant par Signe</a>
-          </div>
-        </div>
-      </header>
-
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        {/* Stats bar */}
-        <div className="bg-white rounded-xl shadow-md p-6 mb-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-          <div><div className="text-3xl mb-1">🌅</div><div className="text-2xl font-bold text-indigo-700">12 signes</div><div className="text-sm text-gray-600">Ascendants possibles</div></div>
-          <div><div className="text-3xl mb-1">🕰️</div><div className="text-2xl font-bold text-indigo-700">~2h</div><div className="text-sm text-gray-600">Change de signe</div></div>
-          <div><div className="text-3xl mb-1">🎭</div><div className="text-2xl font-bold text-indigo-700">Masque social</div><div className="text-sm text-gray-600">Première impression</div></div>
-          <div><div className="text-3xl mb-1">💫</div><div className="text-2xl font-bold text-indigo-700">Attraction</div><div className="text-sm text-gray-600">Rôle en synastrie</div></div>
-        </div>
-
-        <EEATSignal colorScheme="purple" method="Astrologie amoureuse et lecture de l'ascendant" lastUpdated="7 août 2026" />
-
-        {/* Answer Capsule */}
+    <ContentPage config={config}>
         <article className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-indigo-600">
           <div className="bg-indigo-50 border-l-4 border-indigo-500 p-6 rounded-lg">
             <p className="text-lg leading-relaxed mb-4">
@@ -154,44 +137,6 @@ export default function AscendantAmourPage() {
             Pour une lecture compl&egrave;te de votre profil amoureux, l&apos;ascendant s&apos;articule avec la position de <strong>V&eacute;nus</strong> (votre fa&ccedil;on d&apos;aimer) et de <strong>Mars</strong> (votre d&eacute;sir) d&eacute;taill&eacute;es dans notre guide d&apos;<Link href="/methodes-voyance/astrologie-amoureuse" className="text-indigo-600 hover:text-indigo-800 underline font-medium">astrologie amoureuse</Link>.
           </p>
         </section>
-
-        {/* FAQ Section */}
-        <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">❓ Questions Fréquentes sur l&apos;Ascendant en Amour</h2>
-          <div className="space-y-6">
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Comment calculer son ascendant en amour ?</h3>
-              <p className="text-gray-700 leading-relaxed">Le calcul de l&apos;<strong>ascendant</strong> n&eacute;cessite trois informations pr&eacute;cises&nbsp;: votre date de naissance, votre heure exacte de naissance et votre lieu de naissance. Ces donn&eacute;es permettent de d&eacute;terminer quel signe du zodiaque se levait &agrave; l&apos;horizon Est au moment pr&eacute;cis de votre venue au monde. Sans heure de naissance fiable, l&apos;ascendant ne peut pas &ecirc;tre calcul&eacute; avec certitude, contrairement au signe solaire qui ne d&eacute;pend que de la date.</p>
-            </div>
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Pourquoi l&apos;ascendant est-il important en amour ?</h3>
-              <p className="text-gray-700 leading-relaxed">L&apos;ascendant fa&ccedil;onne la <strong>premi&egrave;re impression</strong> que vous donnez et le type d&apos;attraction que vous suscitez avant m&ecirc;me que votre personnalit&eacute; profonde (signe solaire) ne se r&eacute;v&egrave;le. En amour, il influence votre style de <strong>s&eacute;duction</strong> spontan&eacute;, la mani&egrave;re dont on vous per&ccedil;oit lors d&apos;une premi&egrave;re rencontre, et parfois le profil de partenaire vers lequel vous &ecirc;tes instinctivement attir&eacute;.</p>
-            </div>
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Ascendant ou signe solaire : lequel compte le plus en amour ?</h3>
-              <p className="text-gray-700 leading-relaxed">Les deux jouent des r&ocirc;les compl&eacute;mentaires plut&ocirc;t que concurrents. Le <strong>signe solaire</strong> renseigne sur l&apos;identit&eacute; profonde et les besoins affectifs fondamentaux, tandis que l&apos;<strong>ascendant</strong> informe sur la fa&ccedil;on d&apos;aborder une rencontre et l&apos;image projet&eacute;e dans les premiers instants. Une analyse de compatibilit&eacute; compl&egrave;te tient compte des deux, ainsi que de la position de V&eacute;nus et de la Lune.</p>
-            </div>
-            <div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Deux personnes avec le même ascendant sont-elles compatibles en amour ?</h3>
-              <p className="text-gray-700 leading-relaxed">Un ascendant partag&eacute; peut cr&eacute;er une reconnaissance imm&eacute;diate et une facilit&eacute; de contact dans les premiers &eacute;changes, mais il ne garantit pas &agrave; lui seul une <strong>compatibilit&eacute; amoureuse</strong> durable. Celle-ci d&eacute;pend de nombreux autres facteurs du th&egrave;me natal&nbsp;: position de V&eacute;nus et Mars, aspects plan&eacute;taires, &eacute;l&eacute;ments dominants. L&apos;ascendant est une pi&egrave;ce du puzzle, pas une r&eacute;ponse compl&egrave;te.</p>
-            </div>
-          </div>
-        </section>
-
-        {/* Articles Connexes */}
-        <div className="bg-gray-100 rounded-xl p-6 mb-8">
-          <h3 className="font-bold text-lg mb-4 text-gray-900">📚 Articles Connexes</h3>
-          <div className="space-y-2">
-            <Link href="/methodes-voyance/astrologie-amoureuse" className="block text-indigo-600 hover:text-indigo-800 font-medium">&rarr; Astrologie Amoureuse : Compatibilité Astrale et Prédictions</Link>
-            <Link href="/methodes-voyance/synastrie-amoureuse" className="block text-indigo-600 hover:text-indigo-800 font-medium">&rarr; Synastrie Amoureuse : Compatibilité de Couple</Link>
-            <Link href="/astrologie-amour" className="block text-indigo-600 hover:text-indigo-800 font-medium">&rarr; Les Signes Astrologiques en Amour</Link>
-            <Link href="/glossaire/ascendant" className="block text-indigo-600 hover:text-indigo-800 font-medium">&rarr; Glossaire : Ascendant</Link>
-            <Link href="/sentiments/compatibilite-amoureuse" className="block text-indigo-600 hover:text-indigo-800 font-medium">&rarr; Compatibilité Amoureuse : Tous les Indicateurs</Link>
-          </div>
-        </div>
-
-        <VoyantFinalCTA topic="methodes-voyance" source="ascendant-amour-final" />
-      </div>
-    </main>
+    </ContentPage>
   );
 }

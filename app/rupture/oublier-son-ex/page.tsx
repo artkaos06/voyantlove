@@ -1,132 +1,75 @@
-import type { Metadata } from 'next';
 import Link from 'next/link';
-import { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getAuthorSchema } from '@/lib/schema';
-import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
-import VoyantFinalCTA from '@/components/VoyantFinalCTA';
+import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
-export const metadata: Metadata = {
+const config: ContentPageConfig = {
   title: 'Oublier son Ex : Voyance pour Guérir et Tourner la Page | Tarot',
   description: 'Comment surmonter une rupture et oublier son ex selon la voyance ? Découvrez le processus de guérison, le timing de reconstruction et quand vous rencontrerez à nouveau.',
+  url: 'https://www.voyantlove.fr/rupture/oublier-son-ex/',
   keywords: ['oublier son ex', 'surmonter rupture', 'chagrin d\'amour', 'guérir rupture', 'tourner la page', 'voyance rupture'],
-  alternates: {
-    canonical: 'https://www.voyantlove.fr/rupture/oublier-son-ex/',
-  },
-  openGraph: {
-    title: 'Oublier son Ex : Voyance pour Guérir et Tourner la Page',
-    description: 'Processus de guérison après rupture selon le tarot. Timing, étapes et préparation à l\'amour.',
-    url: 'https://www.voyantlove.fr/rupture/oublier-son-ex/',
-    type: 'article',
-  },
-};
-
-export default function OublierSonExPage() {
-  const articleSchema = getArticleSchema({
-    title: 'Oublier son Ex : Voyance pour Guérir et Tourner la Page | Tarot',
-    description: 'Comment surmonter une rupture et oublier son ex selon la voyance ? Découvrez le processus de guérison, le timing de reconstruction et quand vous rencontrerez à nouveau.',
-    url: 'https://www.voyantlove.fr/rupture/oublier-son-ex/',
-    datePublished: '2026-01-12',
-    dateModified: '2026-01-12',
-    keywords: ['oublier son ex', 'surmonter rupture', 'chagrin d\'amour', 'guérir rupture', 'tourner la page', 'voyance rupture'],
-  });
-
-  const faqSchema = getFAQSchema([
-    {
-      question: 'Combien de temps faut-il pour oublier son ex ?',
-      answer: 'Il n\'y a pas de durée fixe. La règle générale est 1 mois par année de relation, mais le tarot révèle votre timeline personnelle selon votre thème astral et votre travail intérieur. Certains guérissent en 3 mois, d\'autres en plus d\'un an. L\'important n\'est pas la vitesse mais la profondeur de la guérison.',
-    },
-    {
-      question: 'La voyance accélère-t-elle l\'oubli d\'un ex ?',
-      answer: 'La voyance ne fait pas disparaître la douleur instantanément, mais elle vous donne de la clarté sur pourquoi la relation devait se terminer et vous rassure sur votre capacité à aimer à nouveau. Cette compréhension spirituelle facilite l\'acceptation et donc accélère naturellement la guérison émotionnelle.',
-    },
-    {
-      question: 'Dois-je oublier mon ex ou espérer un retour ?',
-      answer: 'Le tarot répond clairement à cette question cruciale. Un tirage honnête révèle si votre ex reviendra ou si vous devez tourner la page. S\'accrocher à un faux espoir prolonge inutilement votre souffrance. Le voyant vous dira la vérité même si elle est difficile à entendre, pour votre bien.',
-    },
-    {
-      question: 'Quand serai-je prêt(e) à rencontrer quelqu\'un ?',
-      answer: 'Le tarot identifie le moment où votre cœur sera à nouveau ouvert. Les signes : penser moins à votre ex, retrouver joie et curiosité, ne plus comparer. L\'astrologie révèle les périodes propices aux nouvelles rencontres, souvent 6-12 mois après la rupture pour les relations sérieuses.',
-    },
-  ]);
-
-  const breadcrumbSchema = getBreadcrumbSchema([
+  datePublished: '2026-01-12',
+  dateModified: '2026-01-12',
+  breadcrumb: [
     { name: 'Accueil', url: 'https://www.voyantlove.fr' },
     { name: 'Rupture', url: 'https://www.voyantlove.fr/rupture/' },
     { name: 'Oublier son Ex', url: 'https://www.voyantlove.fr/rupture/oublier-son-ex/' },
-  ]);
+  ],
+  header: {
+    emoji: '💔',
+    h1: 'Oublier son Ex et Surmonter la Rupture',
+    subtitle: 'Guérison, reconstruction et préparation à l\'amour selon le tarot',
+    gradient: 'from-pink-500 via-purple-500 to-indigo-500',
+    backLink: { href: '/rupture', label: 'Retour aux Ruptures Amoureuses' },
+    anchors: [
+      { href: '#consultation', label: 'Consultation Guérison', primary: true },
+      { href: '#tirage', label: 'Tirage pour Tourner la Page' },
+    ],
+  },
+  accentText: 'text-pink-600',
+  stats: [
+    { icon: '⭐', value: '4.8/5', label: '287 avis' },
+    { icon: '💔→💖', value: '3-6 mois', label: 'Temps guérison' },
+    { icon: '✨', value: 'Forte', label: 'Chance de renouveau' },
+    { icon: '🔒', value: '100%', label: 'Confidentiel' },
+  ],
+  eeat: { colorScheme: 'blue', method: 'Tarot de guérison et astrologie' },
+  cta: { topic: 'rupture', slug: 'oublier-son-ex' },
+  faq: [
+    {
+      q: 'Combien de temps faut-il pour oublier son ex ?',
+      a: 'Il n\'y a pas de durée fixe. La règle générale est 1 mois par année de relation, mais le tarot révèle votre timeline personnelle selon votre thème astral et votre travail intérieur. Certains guérissent en 3 mois, d\'autres en plus d\'un an. L\'important n\'est pas la vitesse mais la profondeur de la guérison.',
+    },
+    {
+      q: 'La voyance accélère-t-elle l\'oubli d\'un ex ?',
+      a: 'La voyance ne fait pas disparaître la douleur instantanément, mais elle vous donne de la clarté sur pourquoi la relation devait se terminer et vous rassure sur votre capacité à aimer à nouveau. Cette compréhension spirituelle facilite l\'acceptation et donc accélère naturellement la guérison émotionnelle.',
+    },
+    {
+      q: 'Dois-je oublier mon ex ou espérer un retour ?',
+      a: 'Le tarot répond clairement à cette question cruciale. Un tirage honnête révèle si votre ex reviendra ou si vous devez tourner la page. S\'accrocher à un faux espoir prolonge inutilement votre souffrance. Le voyant vous dira la vérité même si elle est difficile à entendre, pour votre bien.',
+    },
+    {
+      q: 'Quand serai-je prêt(e) à rencontrer quelqu\'un ?',
+      a: 'Le tarot identifie le moment où votre cœur sera à nouveau ouvert. Les signes : penser moins à votre ex, retrouver joie et curiosité, ne plus comparer. L\'astrologie révèle les périodes propices aux nouvelles rencontres, souvent 6-12 mois après la rupture pour les relations sérieuses.',
+    },
+  ],
+  related: [
+    { href: '/rupture', label: 'Rupture & Guérison : Toutes nos Guidances' },
+    { href: '/rupture/chagrin-damour', label: 'Surmonter le Chagrin d\'Amour' },
+    { href: '/rupture/rupture-amoureuse', label: 'Comprendre sa Rupture Amoureuse' },
+    { href: '/nouvelle-rencontre/quand-rencontre-amour', label: 'Quand Vais-je Rencontrer Quelqu\'un de Nouveau ?' },
+    { href: '/sentiments/avenir-amoureux', label: 'Mon Avenir Amoureux après la Rupture' },
+    { href: '/reconquete/reconquerir-son-ex', label: 'Reconquérir mon Ex si Finalement je Veux Essayer' },
+    { href: '/rupture/signes-reseaux-sociaux-apres-rupture', label: 'Réseaux Sociaux Après une Rupture : Décoder les Signes' },
+    { href: '/rupture/rever-de-son-ex', label: 'Rêver de son Ex : Signification' },
+  ],
+};
 
-  const authorSchema = getAuthorSchema();
+export const metadata = contentMeta(config);
 
+export default function OublierSonExPage() {
   return (
-    <main className="min-h-screen bg-gray-50">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(authorSchema) }}
-      />
-
-      {/* Header */}
-      <header className="bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 text-white py-16 px-4">
-        <div className="max-w-4xl mx-auto">
-          <Link href="/rupture" className="text-white/80 hover:text-white mb-4 inline-block">← Retour aux Ruptures Amoureuses</Link>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            💔 Oublier son Ex et Surmonter la Rupture
-          </h1>
-          <p className="text-xl opacity-95 mb-6">
-            Guérison, reconstruction et préparation à l'amour selon le tarot
-          </p>
-          <div className="flex gap-4 flex-wrap">
-            <a href="#consultation" className="bg-white text-pink-600 px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition">
-              Consultation Guérison
-            </a>
-            <a href="#tirage" className="border-2 border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-pink-600 transition">
-              Tirage pour Tourner la Page
-            </a>
-          </div>
-        </div>
-      </header>
-
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        
-        {/* Trust Bar */}
-        <div className="bg-white rounded-xl shadow-md p-6 mb-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-          <div>
-            <div className="text-3xl mb-1">⭐</div>
-            <div className="text-2xl font-bold text-pink-600">4.8/5</div>
-            <div className="text-sm text-gray-600">287 avis</div>
-          </div>
-          <div>
-            <div className="text-3xl mb-1">💔→💖</div>
-            <div className="text-2xl font-bold text-pink-600">3-6 mois</div>
-            <div className="text-sm text-gray-600">Temps guérison</div>
-          </div>
-          <div>
-            <div className="text-3xl mb-1">✨</div>
-            <div className="text-2xl font-bold text-pink-600">Forte</div>
-            <div className="text-sm text-gray-600">Chance de renouveau</div>
-          </div>
-          <div>
-            <div className="text-3xl mb-1">🔒</div>
-            <div className="text-2xl font-bold text-pink-600">100%</div>
-            <div className="text-sm text-gray-600">Confidentiel</div>
-          </div>
-        </div>
-
-        <EEATSignal colorScheme="blue" method="Tarot de guérison et astrologie" />
-
-        {/* Answer Capsule */}
+    <ContentPage config={config}>
         <article className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-pink-500">
           <div className="prose prose-lg max-w-none">
             <p className="text-lg leading-relaxed mb-4">
@@ -342,87 +285,6 @@ export default function OublierSonExPage() {
             </p>
           </div>
         </section>
-
-        {/* FAQ */}
-        <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">
-            ❓ Questions Fréquentes sur la Guérison Amoureuse
-          </h2>
-          <p className="text-lg font-semibold text-gray-800 mb-4">Voici les réponses aux questions les plus posées pour oublier son ex : durée du processus, rôle de la voyance, choix entre oubli et espoir de retour, et moment idéal pour une nouvelle rencontre.</p>
-
-          <div className="space-y-6">
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">
-                Combien de temps faut-il pour oublier son ex ?
-              </h3>
-              <p className="text-gray-700 leading-relaxed">
-                Il n'y a pas de durée fixe. La règle générale est 1 mois par année de relation, mais le tarot révèle votre timeline personnelle selon votre thème astral et votre travail intérieur. Certains guérissent en 3 mois, d'autres en plus d'un an. L'important n'est pas la vitesse mais la profondeur de la guérison.
-              </p>
-            </div>
-            
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">
-                La voyance accélère-t-elle l'oubli d'un ex ?
-              </h3>
-              <p className="text-gray-700 leading-relaxed">
-                La voyance ne fait pas disparaître la douleur instantanément, mais elle vous donne de la clarté sur pourquoi la relation devait se terminer et vous rassure sur votre capacité à aimer à nouveau. Cette compréhension spirituelle facilite l'acceptation et donc accélère naturellement la guérison émotionnelle.
-              </p>
-            </div>
-            
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">
-                Dois-je oublier mon ex ou espérer un retour ?
-              </h3>
-              <p className="text-gray-700 leading-relaxed">
-                Le tarot répond clairement à cette question cruciale. Un tirage honnête révèle si votre ex reviendra ou si vous devez tourner la page. Si le tarot indique que le lien peut être sauvé, la voie pour <Link href="/reconquete/reconquerir-son-ex" className="text-purple-600 hover:text-purple-800 underline font-medium">reconquérir son ex</Link> existe, mais s'accrocher à un faux espoir prolonge inutilement votre souffrance. Le voyant vous dira la vérité même si elle est difficile à entendre, pour votre bien.
-              </p>
-            </div>
-            
-            <div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">
-                Quand serai-je prêt(e) à rencontrer quelqu'un ?
-              </h3>
-              <p className="text-gray-700 leading-relaxed">
-                Le tarot identifie le moment où votre cœur sera à nouveau ouvert. Les signes : penser moins à votre ex, retrouver joie et curiosité, ne plus comparer. L'astrologie révèle les périodes propices aux nouvelles rencontres, souvent 6-12 mois après la rupture pour les relations sérieuses.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        {/* Related Links */}
-        <div className="bg-gray-100 rounded-xl p-6 mb-8">
-          <h3 className="font-bold text-lg mb-4 text-gray-900">📚 Articles Connexes</h3>
-          <div className="space-y-2">
-            <Link href="/rupture" className="block text-purple-600 hover:text-purple-800 font-medium">
-              → Rupture & Guérison : Toutes nos Guidances
-            </Link>
-            <Link href="/rupture/chagrin-damour" className="block text-purple-600 hover:text-purple-800 font-medium">
-              → Surmonter le Chagrin d'Amour
-            </Link>
-            <Link href="/rupture/rupture-amoureuse" className="block text-purple-600 hover:text-purple-800 font-medium">
-              → Comprendre sa Rupture Amoureuse
-            </Link>
-            <Link href="/nouvelle-rencontre/quand-rencontre-amour" className="block text-purple-600 hover:text-purple-800 font-medium">
-              → Quand Vais-je Rencontrer Quelqu'un de Nouveau ?
-            </Link>
-            <Link href="/sentiments/avenir-amoureux" className="block text-purple-600 hover:text-purple-800 font-medium">
-              → Mon Avenir Amoureux après la Rupture
-            </Link>
-            <Link href="/reconquete/reconquerir-son-ex" className="block text-purple-600 hover:text-purple-800 font-medium">
-              → Reconquérir mon Ex si Finalement je Veux Essayer
-            </Link>
-            <Link href="/rupture/signes-reseaux-sociaux-apres-rupture" className="block text-purple-600 hover:text-purple-800 font-medium">
-              → Réseaux Sociaux Après une Rupture : Décoder les Signes
-            </Link>
-            <Link href="/rupture/rever-de-son-ex" className="block text-purple-600 hover:text-purple-800 font-medium">
-              → Rêver de son Ex : Signification
-            </Link>
-          </div>
-        </div>
-
-        <VoyantFinalCTA topic="rupture" source="oublier-son-ex-final" />
-
-      </div>
-    </main>
+    </ContentPage>
   );
 }

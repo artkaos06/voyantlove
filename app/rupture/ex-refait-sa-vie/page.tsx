@@ -1,95 +1,80 @@
-import type { Metadata } from 'next';
 import Link from 'next/link';
-import { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getAuthorSchema } from '@/lib/schema';
-import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
-import VoyantFinalCTA from '@/components/VoyantFinalCTA';
+import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
-export const metadata: Metadata = {
+const config: ContentPageConfig = {
   title: 'Mon Ex Refait sa Vie : Comment le Vivre et Avancer',
   description: 'Votre ex est déjà avec quelqu\'un ou semble passé à autre chose ? Ce que cela prouve (ou pas), pourquoi ça fait si mal, et comment retrouver votre équilibre sans mettre votre vie en pause.',
+  url: 'https://www.voyantlove.fr/rupture/ex-refait-sa-vie/',
   keywords: ['mon ex refait sa vie', 'mon ex est déjà avec quelqu\'un', 'mon ex est passé à autre chose', 'accepter que mon ex refasse sa vie', 'mon ex a quelqu\'un d\'autre et ça fait mal'],
-  alternates: {
-    canonical: 'https://www.voyantlove.fr/rupture/ex-refait-sa-vie/',
-  },
-};
-
-export default function ExRefaitSaViePage() {
-  const articleSchema = getArticleSchema({
-    title: 'Mon Ex Refait sa Vie : Comment le Vivre et Avancer',
-    description: 'Votre ex est déjà avec quelqu\'un ou semble passé à autre chose ? Ce que cela prouve (ou pas), pourquoi ça fait si mal, et comment retrouver votre équilibre sans mettre votre vie en pause.',
-    url: 'https://www.voyantlove.fr/rupture/ex-refait-sa-vie/',
-    datePublished: '2026-07-29',
-    dateModified: '2026-07-29',
-    keywords: ['mon ex refait sa vie', 'mon ex est déjà avec quelqu\'un', 'mon ex est passé à autre chose', 'accepter que mon ex refasse sa vie', 'mon ex a quelqu\'un d\'autre'],
-  });
-
-  const faqSchema = getFAQSchema([
-    {
-      question: 'Mon ex refait sa vie : est-ce que ça veut dire que c\'est fini pour de bon ?',
-      answer: 'Voir son ex avec quelqu\'un ne prouve pas, à soi seul, que toute page est définitivement tournée, mais cela ne prouve pas non plus l\'inverse. Certaines nouvelles relations durent, d\'autres non, et personne ne peut prédire l\'issue avec certitude. Le point important n\'est pas de deviner l\'avenir de leur couple, mais de cesser de suspendre le vôtre à cette hypothèse. Se concentrer sur ce que vous pouvez observer et sur votre propre reconstruction est plus fiable et plus protecteur que d\'attendre un dénouement que vous ne maîtrisez pas.',
-    },
-    {
-      question: 'Pourquoi ça fait si mal que mon ex soit déjà avec quelqu\'un ?',
-      answer: 'La douleur vient rarement du seul fait qu\'il ou elle voit quelqu\'un : elle touche à la comparaison, au sentiment d\'avoir été remplacé, et à l\'impression que l\'autre avance plus vite que vous. Ces réactions sont normales et ne mesurent pas votre valeur. Elles disent surtout que le deuil est encore actif. Il est aussi fréquent de surestimer le bonheur affiché de l\'autre, car les débuts d\'une relation et les réseaux sociaux ne montrent qu\'une image partielle, jamais la réalité complète.',
-    },
-    {
-      question: 'Mon ex est-il vraiment passé à autre chose ou fait-il semblant ?',
-      answer: 'Il est impossible de le savoir à distance, et chercher à le déterminer entretient surtout votre souffrance. Une nouvelle relation rapide peut traduire un vrai renouveau comme un moyen de fuir un vide ; un ex qui affiche sa vie peut être apaisé comme chercher à se convaincre. Ces hypothèses ne se tranchent pas depuis l\'extérieur. Plutôt que d\'interpréter son comportement, il est plus utile de ramener votre attention sur vous : c\'est le seul terrain où vos efforts changent réellement quelque chose.',
-    },
-    {
-      question: 'Comment accepter que mon ex refasse sa vie ?',
-      answer: 'L\'acceptation n\'est pas un interrupteur mais un processus qui avance par étapes. Elle passe par se couper de la surveillance de l\'autre couple, par renouer avec une identité indépendante de la relation passée, et par autoriser la tristesse sans la laisser tout envahir. Accepter ne signifie pas être d\'accord ni ne plus rien ressentir : c\'est cesser de lutter contre une réalité que vous ne contrôlez pas, pour réinvestir l\'énergie ainsi libérée dans votre propre vie.',
-    },
-    {
-      question: 'Faut-il arrêter de suivre son ex sur les réseaux sociaux ?',
-      answer: 'Dans la grande majorité des cas, oui. Suivre les publications de son ex et de sa nouvelle relation ravive la blessure à chaque consultation et retarde la guérison, sans jamais apporter la paix recherchée. Se désabonner, masquer ou s\'imposer des limites n\'est pas de l\'évitement mais un acte de protection. Retrouver de la clarté passe par le retour à sa propre vie, pas par l\'observation de traces numériques qui, par nature, ne montrent qu\'une version filtrée de la réalité.',
-    },
-  ]);
-
-  const breadcrumbSchema = getBreadcrumbSchema([
+  datePublished: '2026-07-29',
+  dateModified: '2026-07-29',
+  breadcrumb: [
     { name: 'Accueil', url: 'https://www.voyantlove.fr' },
     { name: 'Rupture', url: 'https://www.voyantlove.fr/rupture/' },
     { name: 'Mon Ex Refait sa Vie', url: 'https://www.voyantlove.fr/rupture/ex-refait-sa-vie/' },
-  ]);
+  ],
+  header: {
+    emoji: '🍃',
+    h1: 'Mon Ex Refait sa Vie : Comment le Vivre et Avancer',
+    subtitle: 'Ce que cela prouve (ou pas), pourquoi ça fait mal, et comment retrouver votre équilibre',
+    gradient: 'from-teal-600 via-cyan-600 to-blue-600',
+    backLink: { href: '/rupture', label: 'Retour à Rupture & Guérison' },
+    anchors: [
+      { href: '#prouve', label: 'Ce que Ça Prouve (ou Pas)', primary: true },
+      { href: '#accepter', label: 'Comment Accepter' },
+    ],
+  },
+  accentText: 'text-teal-600',
+  stats: [
+    { icon: '🔮', value: 'Reconnue', label: 'Expertise' },
+    { icon: '🍃', value: '3,300+', label: 'Consultations' },
+    { icon: '⭐', value: '4.7/5', label: '283 avis' },
+    { icon: '🔒', value: '100%', label: 'Confidentiel' },
+  ],
+  eeat: { colorScheme: 'teal', method: 'Guidance de reconstruction et accompagnement après séparation' },
+  cta: { topic: 'rupture', slug: 'ex-refait-vie' },
+  faq: [
+    {
+      q: 'Mon ex refait sa vie : est-ce que ça veut dire que c\'est fini pour de bon ?',
+      a: 'Voir son ex avec quelqu\'un ne prouve pas, à soi seul, que toute page est définitivement tournée, mais cela ne prouve pas non plus l\'inverse. Certaines nouvelles relations durent, d\'autres non, et personne ne peut prédire l\'issue avec certitude. Le point important n\'est pas de deviner l\'avenir de leur couple, mais de cesser de suspendre le vôtre à cette hypothèse. Se concentrer sur ce que vous pouvez observer et sur votre propre reconstruction est plus fiable et plus protecteur que d\'attendre un dénouement que vous ne maîtrisez pas.',
+    },
+    {
+      q: 'Pourquoi ça fait si mal que mon ex soit déjà avec quelqu\'un ?',
+      a: 'La douleur vient rarement du seul fait qu\'il ou elle voit quelqu\'un : elle touche à la comparaison, au sentiment d\'avoir été remplacé, et à l\'impression que l\'autre avance plus vite que vous. Ces réactions sont normales et ne mesurent pas votre valeur. Elles disent surtout que le deuil est encore actif. Il est aussi fréquent de surestimer le bonheur affiché de l\'autre, car les débuts d\'une relation et les réseaux sociaux ne montrent qu\'une image partielle, jamais la réalité complète.',
+    },
+    {
+      q: 'Mon ex est-il vraiment passé à autre chose ou fait-il semblant ?',
+      a: 'Il est impossible de le savoir à distance, et chercher à le déterminer entretient surtout votre souffrance. Une nouvelle relation rapide peut traduire un vrai renouveau comme un moyen de fuir un vide ; un ex qui affiche sa vie peut être apaisé comme chercher à se convaincre. Ces hypothèses ne se tranchent pas depuis l\'extérieur. Plutôt que d\'interpréter son comportement, il est plus utile de ramener votre attention sur vous : c\'est le seul terrain où vos efforts changent réellement quelque chose.',
+    },
+    {
+      q: 'Comment accepter que mon ex refasse sa vie ?',
+      a: 'L\'acceptation n\'est pas un interrupteur mais un processus qui avance par étapes. Elle passe par se couper de la surveillance de l\'autre couple, par renouer avec une identité indépendante de la relation passée, et par autoriser la tristesse sans la laisser tout envahir. Accepter ne signifie pas être d\'accord ni ne plus rien ressentir : c\'est cesser de lutter contre une réalité que vous ne contrôlez pas, pour réinvestir l\'énergie ainsi libérée dans votre propre vie.',
+    },
+    {
+      q: 'Faut-il arrêter de suivre son ex sur les réseaux sociaux ?',
+      a: 'Dans la grande majorité des cas, oui. Suivre les publications de son ex et de sa nouvelle relation ravive la blessure à chaque consultation et retarde la guérison, sans jamais apporter la paix recherchée. Se désabonner, masquer ou s\'imposer des limites n\'est pas de l\'évitement mais un acte de protection. Retrouver de la clarté passe par le retour à sa propre vie, pas par l\'observation de traces numériques qui, par nature, ne montrent qu\'une version filtrée de la réalité.',
+    },
+  ],
+  related: [
+    { href: '/rupture', label: 'Rupture & Guérison : Toutes nos Guidances' },
+    { href: '/rupture/guerir-rupture', label: 'Guérir d\'une Rupture Amoureuse' },
+    { href: '/reconquete/quitte-pour-quelquun-dautre-va-t-il-revenir', label: 'Quitté pour Quelqu\'un d\'Autre : Va-t-il Revenir ?' },
+    { href: '/rupture/signes-reseaux-sociaux-apres-rupture', label: 'Réseaux Sociaux Après une Rupture' },
+    { href: '/rupture/confiance-en-soi-apres-divorce', label: 'Retrouver Confiance en Soi Après un Divorce' },
+  ],
+};
 
-  const authorSchema = getAuthorSchema();
+export const metadata = contentMeta(config);
 
+export default function ExRefaitSaViePage() {
   return (
-    <main className="min-h-screen bg-gray-50">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(authorSchema) }} />
-
-      <header className="bg-gradient-to-r from-teal-600 via-cyan-600 to-blue-600 text-white py-16 px-4">
-        <div className="max-w-4xl mx-auto">
-          <Link href="/rupture" className="text-white/80 hover:text-white mb-4 inline-block">&larr; Retour à Rupture &amp; Guérison</Link>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">{'\u{1F343}'} Mon Ex Refait sa Vie : Comment le Vivre et Avancer</h1>
-          <p className="text-xl opacity-95 mb-6">Ce que cela prouve (ou pas), pourquoi ça fait mal, et comment retrouver votre équilibre</p>
-          <div className="flex gap-4 flex-wrap">
-            <a href="#prouve" className="bg-white text-teal-600 px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition">Ce que Ça Prouve (ou Pas)</a>
-            <a href="#accepter" className="border-2 border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-teal-600 transition">Comment Accepter</a>
-          </div>
-        </div>
-      </header>
-
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <div className="bg-white rounded-xl shadow-md p-6 mb-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-          <div><div className="text-3xl mb-1">{'\u{1F52E}'}</div><div className="text-2xl font-bold text-teal-600">Reconnue</div><div className="text-sm text-gray-600">Expertise</div></div>
-          <div><div className="text-3xl mb-1">{'\u{1F343}'}</div><div className="text-2xl font-bold text-teal-600">3,300+</div><div className="text-sm text-gray-600">Consultations</div></div>
-          <div><div className="text-3xl mb-1">{'⭐'}</div><div className="text-2xl font-bold text-teal-600">4.7/5</div><div className="text-sm text-gray-600">283 avis</div></div>
-          <div><div className="text-3xl mb-1">{'\u{1F512}'}</div><div className="text-2xl font-bold text-teal-600">100%</div><div className="text-sm text-gray-600">Confidentiel</div></div>
-        </div>
-
-        <EEATSignal colorScheme="teal" method="Guidance de reconstruction et accompagnement après séparation" />
-
-        {/* Answer Capsule */}
+    <ContentPage config={config}>
         <article className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-teal-500">
           <div className="prose prose-lg max-w-none">
             <p className="text-lg leading-relaxed mb-4">
-              Apprendre que son <strong>ex refait sa vie</strong> — nouvelle relation, publications complices, impression qu&apos;il ou elle est &laquo;passé à autre chose&raquo; — ravive souvent une douleur qu&apos;on croyait apaisée. La première chose à savoir : voir son ex avec quelqu&apos;un ne <strong>prouve pas</strong>, à soi seul, que toute page est définitivement tournée — mais ne prouve pas l&apos;inverse non plus. Certaines nouvelles relations durent, d&apos;autres s&apos;éteignent, et personne ne peut prédire l&apos;issue.
+              Apprendre que son <strong>ex refait sa vie</strong>, nouvelle relation, publications complices, impression qu&apos;il ou elle est &laquo;passé à autre chose&raquo;, ravive souvent une douleur qu&apos;on croyait apaisée. La première chose à savoir : voir son ex avec quelqu&apos;un ne <strong>prouve pas</strong>, à soi seul, que toute page est définitivement tournée, mais ne prouve pas l&apos;inverse non plus. Certaines nouvelles relations durent, d&apos;autres s&apos;éteignent, et personne ne peut prédire l&apos;issue.
             </p>
             <p className="text-lg leading-relaxed mb-4">
               Si c&apos;est aussi douloureux, c&apos;est que cela touche à la <strong>comparaison</strong>, au sentiment d&apos;avoir été <strong>remplacé</strong> et à l&apos;impression que l&apos;autre avance plus vite. Ces réactions sont normales et ne mesurent pas votre valeur. On surestime d&apos;ailleurs souvent le bonheur affiché : les débuts d&apos;une relation et les <strong>réseaux sociaux</strong> ne montrent qu&apos;une image partielle. Cette distinction est détaillée dans notre guide sur les <Link href="/rupture/signes-reseaux-sociaux-apres-rupture" className="text-teal-600 hover:text-teal-800 underline font-medium">signes des réseaux sociaux après une rupture</Link>.
@@ -104,7 +89,7 @@ export default function ExRefaitSaViePage() {
 
         {/* H2: Ce que ça prouve ou pas */}
         <section id="prouve" className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">{'⚖️'} Ce que le Fait qu&apos;il Refasse sa Vie Prouve — et ne Prouve Pas</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">{'⚖️'} Ce que le Fait qu&apos;il Refasse sa Vie Prouve, et ne Prouve Pas</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Qu&apos;un ex refasse sa vie prouve qu&apos;il avance a son rythme, mais ne prouve ni que la relation ne comptait pas, ni que tout est definitivement fini, ni que sa nouvelle histoire durera : ces conclusions depassent ce qu&apos;un fait exterieur peut reveler.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Face à la douleur, l&apos;esprit tire des conclusions rapides. Séparer les <strong>faits</strong> des <strong>interprétations</strong> évite de se blesser davantage avec des certitudes qui n&apos;en sont pas.
@@ -172,7 +157,7 @@ export default function ExRefaitSaViePage() {
             </div>
             <div className="bg-white rounded-lg p-6 border-l-4 border-cyan-500">
               <h3 className="font-bold text-lg mb-2 text-cyan-700">{'\u{1F98B}'} Renouer avec son identité</h3>
-              <p className="text-gray-700 text-sm">Reprendre des goûts, des amitiés et des projets à soi restaure une <strong>identité indépendante</strong> de l&apos;ancien couple — le socle de toute reconstruction.</p>
+              <p className="text-gray-700 text-sm">Reprendre des goûts, des amitiés et des projets à soi restaure une <strong>identité indépendante</strong> de l&apos;ancien couple, le socle de toute reconstruction.</p>
             </div>
             <div className="bg-white rounded-lg p-6 border-l-4 border-blue-500">
               <h3 className="font-bold text-lg mb-2 text-blue-700">{'\u{1F327}️'} Autoriser la tristesse</h3>
@@ -184,52 +169,9 @@ export default function ExRefaitSaViePage() {
             </div>
           </div>
           <div className="mt-6 bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded">
-            <p className="text-gray-700"><strong>{'\u{1F4A1}'} À retenir :</strong> accepter que son ex refasse sa vie ne veut pas dire renoncer à être heureux — c&apos;est libérer l&apos;énergie qui vous épuisait pour la réinvestir en vous. Retrouver l&apos;estime de soi est au cœur de ce travail, notamment après une séparation longue.</p>
+            <p className="text-gray-700"><strong>{'\u{1F4A1}'} À retenir :</strong> accepter que son ex refasse sa vie ne veut pas dire renoncer à être heureux, c&apos;est libérer l&apos;énergie qui vous épuisait pour la réinvestir en vous. Retrouver l&apos;estime de soi est au cœur de ce travail, notamment après une séparation longue.</p>
           </div>
         </section>
-
-        {/* FAQ Section */}
-        <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">{'❓'} Questions Fréquentes</h2>
-          <p className="text-lg font-semibold text-gray-800 mb-4">Les reponses aux questions les plus posees lorsqu&apos;un ex refait sa vie ou semble deja passe a autre chose.</p>
-          <div className="space-y-6">
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Mon ex refait sa vie : est-ce que ça veut dire que c&apos;est fini pour de bon ?</h3>
-              <p className="text-gray-700 leading-relaxed">Voir son ex avec quelqu&apos;un ne prouve pas, à soi seul, que toute page est définitivement tournée, mais ne prouve pas non plus l&apos;inverse. Certaines nouvelles relations durent, d&apos;autres non, et personne ne peut prédire l&apos;issue avec certitude. Le point important n&apos;est pas de deviner l&apos;avenir de leur couple, mais de cesser de <strong>suspendre le vôtre</strong> à cette hypothèse et de vous concentrer sur votre reconstruction.</p>
-            </div>
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Pourquoi ça fait si mal que mon ex soit déjà avec quelqu&apos;un ?</h3>
-              <p className="text-gray-700 leading-relaxed">La douleur vient rarement du seul fait qu&apos;il ou elle voit quelqu&apos;un : elle touche à la <strong>comparaison</strong>, au sentiment d&apos;avoir été remplacé, et à l&apos;impression que l&apos;autre avance plus vite. Ces réactions sont normales et ne mesurent pas votre valeur. Il est aussi fréquent de <strong>surestimer le bonheur affiché</strong>, car les débuts d&apos;une relation et les réseaux sociaux ne montrent qu&apos;une image partielle.</p>
-            </div>
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Mon ex est-il vraiment passé à autre chose ou fait-il semblant ?</h3>
-              <p className="text-gray-700 leading-relaxed">Il est impossible de le savoir à distance, et chercher à le déterminer entretient surtout votre souffrance. Une nouvelle relation rapide peut traduire un vrai renouveau comme un moyen de <strong>fuir un vide</strong> ; ces hypothèses ne se tranchent pas depuis l&apos;extérieur. Plutôt que d&apos;interpréter son comportement, il est plus utile de ramener votre attention sur vous : c&apos;est le seul terrain où vos efforts changent réellement quelque chose.</p>
-            </div>
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Comment accepter que mon ex refasse sa vie ?</h3>
-              <p className="text-gray-700 leading-relaxed">L&apos;<strong>acceptation</strong> n&apos;est pas un interrupteur mais un processus qui avance par étapes. Elle passe par se couper de la surveillance de l&apos;autre couple, par renouer avec une identité indépendante, et par autoriser la tristesse sans la laisser tout envahir. Accepter ne signifie pas être d&apos;accord ni ne plus rien ressentir : c&apos;est cesser de lutter contre une réalité que vous ne contrôlez pas, pour réinvestir l&apos;énergie libérée dans votre vie.</p>
-            </div>
-            <div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Faut-il arrêter de suivre son ex sur les réseaux sociaux ?</h3>
-              <p className="text-gray-700 leading-relaxed">Dans la grande majorité des cas, oui. Suivre les publications de son ex et de sa nouvelle relation ravive la blessure à chaque consultation et retarde la guérison, sans jamais apporter la paix recherchée. Se désabonner, masquer ou s&apos;imposer des limites n&apos;est pas de l&apos;évitement mais un <strong>acte de protection</strong>. Retrouver de la clarté passe par le retour à sa propre vie, pas par l&apos;observation de traces numériques filtrées.</p>
-            </div>
-          </div>
-        </section>
-
-        {/* Articles Connexes */}
-        <div className="bg-gray-100 rounded-xl p-6 mb-8">
-          <h3 className="font-bold text-lg mb-4 text-gray-900">{'\u{1F4DA}'} Articles Connexes</h3>
-          <div className="space-y-2">
-            <Link href="/rupture" className="block text-teal-600 hover:text-teal-800 font-medium">&rarr; Rupture &amp; Guérison : Toutes nos Guidances</Link>
-            <Link href="/rupture/guerir-rupture" className="block text-teal-600 hover:text-teal-800 font-medium">&rarr; Guérir d&apos;une Rupture Amoureuse</Link>
-            <Link href="/reconquete/quitte-pour-quelquun-dautre-va-t-il-revenir" className="block text-teal-600 hover:text-teal-800 font-medium">&rarr; Quitté pour Quelqu&apos;un d&apos;Autre : Va-t-il Revenir ?</Link>
-            <Link href="/rupture/signes-reseaux-sociaux-apres-rupture" className="block text-teal-600 hover:text-teal-800 font-medium">&rarr; Réseaux Sociaux Après une Rupture</Link>
-            <Link href="/rupture/confiance-en-soi-apres-divorce" className="block text-teal-600 hover:text-teal-800 font-medium">&rarr; Retrouver Confiance en Soi Après un Divorce</Link>
-          </div>
-        </div>
-
-        <VoyantFinalCTA topic="rupture" source="ex-refait-vie-final" />
-      </div>
-    </main>
+    </ContentPage>
   );
 }

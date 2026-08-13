@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import AffiliateDisclosure from '@/components/AffiliateDisclosure';
 
 const COLUMNS: { title: string; links: { href: string; label: string }[] }[] = [
   {
@@ -68,9 +69,7 @@ export default function SiteFooter() {
           <Link href="/" className="flex items-center gap-1.5 font-bold text-white">
             <span>💜</span><span>VoyantLove</span>
           </Link>
-          <p className="text-xs text-gray-500 text-center md:text-right">
-            Guidance sentimentale par tarot et voyance amoureuse. Service de divertissement — ne se substitue pas à un avis professionnel.
-          </p>
+          <AffiliateDisclosure variant="inline" className="text-center md:text-right md:max-w-lg" />
         </div>
       </div>
     </footer>

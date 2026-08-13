@@ -134,7 +134,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/contact',
   ]
 
-  return [
+  const entries: MetadataRoute.Sitemap = [
     ...hubs.map(({ slug, priority }) => ({
       url: `${baseUrl}${slug}`,
       lastModified: now,
@@ -153,7 +153,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'yearly' as const,
       priority: 0.3,
     })),
-    // Programmatic pages — generated from the data layer, gated on validation,
+    // Programmatic pages, generated from the data layer, gated on validation,
     // so the sitemap can never drift from what actually builds.
     {
       url: `${baseUrl}/compatibilite-amoureuse`,
@@ -216,4 +216,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.6,
     })),
   ]
+
+  // trailingSlash: true → the canonical form of every URL has a trailing slash,
+  // and middleware 308-redirects the non-slash form. Emit the final
+  // (non-redirecting) URLs so Google indexes the canonical directly.
+  return entries.map((entry) => ({
+    ...entry,
+    url: entry.url.endsWith('/') ? entry.url : `${entry.url}/`,
+  }))
 }

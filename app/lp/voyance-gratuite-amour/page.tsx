@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import LeadCaptureForm from '@/components/LeadCaptureForm';
 
 export const metadata: Metadata = {
-  title: 'Voyance Gratuite Amour — Tirage Tarot Personnalisé Offert',
+  title: 'Voyance Gratuite Amour, Tirage Tarot Personnalisé Offert',
   description: 'Voyance amoureuse gratuite : recevez votre tirage tarot amour personnalisé. Analyse de votre situation sentimentale sans engagement.',
   robots: { index: false, follow: false },
 };
@@ -14,13 +14,13 @@ export default function LPVoyanceGratuiteAmour() {
       <section className="bg-gradient-to-br from-green-600 via-emerald-600 to-teal-700 text-white py-16 px-4">
         <div className="max-w-3xl mx-auto text-center">
           <div className="inline-block bg-white/20 backdrop-blur rounded-full px-4 py-1 text-sm font-semibold mb-6">
-            100% Gratuit — Sans Engagement
+            100% Gratuit, Sans Engagement
           </div>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
             Votre Tirage Tarot Amour Gratuit
           </h1>
           <p className="text-xl opacity-95 mb-8 max-w-2xl mx-auto">
-            Découvrez ce que les cartes révèlent sur votre avenir amoureux. Tirage personnalisé selon votre signe et votre situation — offert.
+            Découvrez ce que les cartes révèlent sur votre avenir amoureux. Tirage personnalisé selon votre signe et votre situation, offert.
           </p>
           <a href="#tirage" className="inline-block bg-white text-emerald-700 px-8 py-4 rounded-lg font-bold text-lg hover:shadow-xl transition-all">
             Recevoir Mon Tirage Gratuit ↓
@@ -100,7 +100,7 @@ export default function LPVoyanceGratuiteAmour() {
               <div key={i} className="bg-emerald-50 p-5 rounded-lg">
                 <div className="mb-2">{'⭐'.repeat(t.stars)}</div>
                 <p className="text-gray-700 italic mb-3">&quot;{t.text}&quot;</p>
-                <p className="text-sm font-semibold text-gray-500">— {t.name}</p>
+                <p className="text-sm font-semibold text-gray-500">, {t.name}</p>
               </div>
             ))}
           </div>

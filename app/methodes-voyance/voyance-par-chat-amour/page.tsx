@@ -1,95 +1,69 @@
-import type { Metadata } from 'next';
 import Link from 'next/link';
-import { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getAuthorSchema } from '@/lib/schema';
-import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
-import VoyantFinalCTA from '@/components/VoyantFinalCTA';
+import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
-export const metadata: Metadata = {
+const config: ContentPageConfig = {
   title: 'Voyance par Chat Amour : Consultation en Ligne',
   description: 'Voyance par chat amour : consultez un voyant en ligne par messagerie pour vos questions sentimentales. Discret, rapide et accessible 24h/24.',
+  url: 'https://www.voyantlove.fr/methodes-voyance/voyance-par-chat-amour/',
   keywords: ['voyance chat amour', 'voyance en ligne', 'consultation chat voyance', 'voyance par messagerie', 'chat voyant amour'],
-  alternates: { canonical: 'https://www.voyantlove.fr/methodes-voyance/voyance-par-chat-amour/' },
-};
-
-export default function VoyanceParChatAmourPage() {
-  const articleSchema = getArticleSchema({
-    title: 'Voyance par Chat Amour : Consultation en Ligne',
-    description: 'Voyance par chat amour : consultez un voyant en ligne par messagerie pour vos questions sentimentales. Discret, rapide et accessible 24h/24.',
-    url: 'https://www.voyantlove.fr/methodes-voyance/voyance-par-chat-amour/',
-    datePublished: '2026-03-22',
-    dateModified: '2026-03-22',
-    keywords: ['voyance chat amour', 'voyance en ligne', 'consultation chat voyance', 'voyance par messagerie', 'chat voyant amour'],
-  });
-
-  const faqSchema = getFAQSchema([
-    {
-      question: 'La voyance par chat est-elle aussi fiable que par téléphone ?',
-      answer: 'La voyance par chat est tout aussi fiable que par téléphone, car la connexion entre le voyant et le consultant se fait par l\'énergie, pas par la voix. De nombreux voyants expérimentés affirment même que le chat leur permet une concentration plus intense, sans être distraits par le ton de la voix ou les émotions audibles. L\'écriture possède sa propre énergie vibratoire que le voyant capte pour ses lectures. La clé de la fiabilité reste le même critère quel que soit le support : l\'expérience et la sensibilité du praticien. Certains consultants préfèrent le chat car il leur permet de relire les messages et de garder une trace écrite de la consultation.',
-    },
-    {
-      question: 'Combien coûte une consultation de voyance par chat amour ?',
-      answer: 'Le prix d\'une consultation de voyance par chat amour varie selon les plateformes et l\'expérience du voyant. En moyenne, comptez entre 1,50 et 4 euros par minute. Une consultation typique dure 15 à 30 minutes, soit un budget de 20 à 80 euros. Beaucoup de plateformes offrent quelques minutes gratuites pour un premier contact, ce qui permet de vérifier le feeling avec le voyant avant de s\'engager. Le format chat est souvent légèrement moins cher que le téléphone car le rythme d\'échange est plus lent, ce qui étire naturellement la durée de la consultation.',
-    },
-    {
-      question: 'Comment choisir un bon voyant pour une consultation par chat ?',
-      answer: 'Pour choisir un bon voyant par chat, vérifiez plusieurs critères essentiels. Consultez les avis et notes des autres utilisateurs, en privilégiant les voyants avec au moins 100 consultations et une note supérieure à 4,5 sur 5. Lisez la description du profil pour vérifier les spécialités en voyance amoureuse. Profitez des premières minutes offertes pour tester la connexion. Un bon voyant par chat répond avec des messages substantiels et personnalisés, pas des phrases génériques. Méfiez-vous des voyants qui posent trop de questions au lieu de donner des informations concrètes.',
-    },
-    {
-      question: 'À quel moment consulter un voyant par chat pour une question d\'amour ?',
-      answer: 'Le meilleur moment pour consulter un voyant par chat est lorsque vous avez une question précise et que vous êtes dans un état émotionnel relativement stable, pas en pleine crise de larmes ou de colère. L\'énergie que vous portez influence la qualité de la lecture. Les moments propices sont quand vous devez prendre une décision importante dans votre vie sentimentale, quand vous traversez une période de doute persistant, ou quand vous sentez qu\'un changement se profile sans pouvoir l\'identifier. Le format chat est particulièrement adapté aux situations où vous avez besoin de discrétion.',
-    },
-  ]);
-
-  const breadcrumbSchema = getBreadcrumbSchema([
+  datePublished: '2026-03-22',
+  dateModified: '2026-03-22',
+  breadcrumb: [
     { name: 'Accueil', url: 'https://www.voyantlove.fr' },
     { name: 'Méthodes de Voyance', url: 'https://www.voyantlove.fr/methodes-voyance/' },
     { name: 'Voyance par Chat Amour', url: 'https://www.voyantlove.fr/methodes-voyance/voyance-par-chat-amour/' },
-  ]);
+  ],
+  header: {
+    emoji: '💬',
+    h1: 'Voyance par Chat Amour : Consultation en Ligne',
+    subtitle: 'Consultez un voyant en ligne par messagerie, en toute discrétion',
+    gradient: 'from-indigo-500 via-violet-600 to-indigo-700',
+    backLink: { href: '/methodes-voyance', label: 'Méthodes de Voyance' },
+    anchors: [
+      { href: '#consultation', label: 'Démarrer un Chat', primary: true },
+    ],
+  },
+  accentText: 'text-indigo-600',
+  stats: [
+    { icon: '⭐', value: '4.8/5', label: '358 avis' },
+    { icon: '💬', value: '24/7', label: 'Disponibilité' },
+    { icon: '🔒', value: '100%', label: 'Confidentiel' },
+    { icon: '🔮', value: '15 ans', label: 'Expérience' },
+  ],
+  eeat: { colorScheme: 'purple', method: 'Voyance amoureuse par chat en ligne' },
+  cta: { topic: 'methodes-voyance', slug: 'voyance-par-chat-amour' },
+  faq: [
+    {
+      q: 'La voyance par chat est-elle aussi fiable que par téléphone ?',
+      a: 'La voyance par chat est tout aussi fiable que par téléphone, car la connexion entre le voyant et le consultant se fait par l\'énergie, pas par la voix. De nombreux voyants expérimentés affirment même que le chat leur permet une concentration plus intense, sans être distraits par le ton de la voix ou les émotions audibles. L\'écriture possède sa propre énergie vibratoire que le voyant capte pour ses lectures. La clé de la fiabilité reste le même critère quel que soit le support : l\'expérience et la sensibilité du praticien. Certains consultants préfèrent le chat car il leur permet de relire les messages et de garder une trace écrite de la consultation.',
+    },
+    {
+      q: 'Combien coûte une consultation de voyance par chat amour ?',
+      a: 'Le prix d\'une consultation de voyance par chat amour varie selon les plateformes et l\'expérience du voyant. En moyenne, comptez entre 1,50 et 4 euros par minute. Une consultation typique dure 15 à 30 minutes, soit un budget de 20 à 80 euros. Beaucoup de plateformes offrent quelques minutes gratuites pour un premier contact, ce qui permet de vérifier le feeling avec le voyant avant de s\'engager. Le format chat est souvent légèrement moins cher que le téléphone car le rythme d\'échange est plus lent, ce qui étire naturellement la durée de la consultation.',
+    },
+    {
+      q: 'Comment choisir un bon voyant pour une consultation par chat ?',
+      a: 'Pour choisir un bon voyant par chat, vérifiez plusieurs critères essentiels. Consultez les avis et notes des autres utilisateurs, en privilégiant les voyants avec au moins 100 consultations et une note supérieure à 4,5 sur 5. Lisez la description du profil pour vérifier les spécialités en voyance amoureuse. Profitez des premières minutes offertes pour tester la connexion. Un bon voyant par chat répond avec des messages substantiels et personnalisés, pas des phrases génériques. Méfiez-vous des voyants qui posent trop de questions au lieu de donner des informations concrètes.',
+    },
+    {
+      q: 'À quel moment consulter un voyant par chat pour une question d\'amour ?',
+      a: 'Le meilleur moment pour consulter un voyant par chat est lorsque vous avez une question précise et que vous êtes dans un état émotionnel relativement stable, pas en pleine crise de larmes ou de colère. L\'énergie que vous portez influence la qualité de la lecture. Les moments propices sont quand vous devez prendre une décision importante dans votre vie sentimentale, quand vous traversez une période de doute persistant, ou quand vous sentez qu\'un changement se profile sans pouvoir l\'identifier. Le format chat est particulièrement adapté aux situations où vous avez besoin de discrétion.',
+    },
+  ],
+  related: [
+    { href: '/methodes-voyance/voyance-telephone-amour', label: 'Voyance par Téléphone Amour' },
+    { href: '/methodes-voyance/voyance-sentimentale', label: 'Voyance Sentimentale' },
+    { href: '/methodes-voyance/tirage-tarot-amour', label: 'Tirage Tarot Amour' },
+  ],
+};
 
-  const authorSchema = getAuthorSchema();
+export const metadata = contentMeta(config);
 
+export default function VoyanceParChatAmourPage() {
   return (
-    <main className="min-h-screen bg-gray-50">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(authorSchema) }}
-      />
-      <header className="bg-gradient-to-r from-indigo-500 via-violet-600 to-indigo-700 text-white py-16 px-4">
-        <div className="max-w-4xl mx-auto">
-          <Link href="/methodes-voyance" className="text-white/80 hover:text-white mb-4 inline-block">&larr; Méthodes de Voyance</Link>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">💬 Voyance par Chat Amour : Consultation en Ligne</h1>
-          <p className="text-xl opacity-95 mb-6">Consultez un voyant en ligne par messagerie, en toute discrétion</p>
-          <a href="#consultation" className="bg-white text-indigo-600 px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition inline-block">Démarrer un Chat</a>
-        </div>
-      </header>
-
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <div className="bg-white rounded-xl shadow-md p-6 mb-8 grid grid-cols-4 gap-4 text-center">
-          <div><div className="text-3xl mb-1">⭐</div><div className="text-2xl font-bold text-indigo-600">4.8/5</div><div className="text-sm text-gray-600">358 avis</div></div>
-          <div><div className="text-3xl mb-1">💬</div><div className="text-2xl font-bold text-indigo-600">24/7</div><div className="text-sm text-gray-600">Disponibilité</div></div>
-          <div><div className="text-3xl mb-1">🔒</div><div className="text-2xl font-bold text-indigo-600">100%</div><div className="text-sm text-gray-600">Confidentiel</div></div>
-          <div><div className="text-3xl mb-1">🔮</div><div className="text-2xl font-bold text-indigo-600">15 ans</div><div className="text-sm text-gray-600">Expérience</div></div>
-        </div>
-
-        <EEATSignal
-          colorScheme="purple"
-          method="Voyance amoureuse par chat en ligne"
-        />
-
+    <ContentPage config={config}>
         <article className="bg-indigo-50 border-l-4 border-indigo-500 rounded-xl shadow-md p-8 mb-8">
           <p className="text-lg leading-relaxed mb-4">
             La <strong>voyance par chat amour</strong> révolutionne l&apos;accès à la <strong>guidance sentimentale</strong>. Plus besoin de prendre rendez-vous ou de parler à voix haute &mdash; depuis votre canapé, votre bureau ou même dans les transports, vous pouvez consulter un <strong>voyant en ligne</strong> par simple messagerie et obtenir des réponses éclairantes sur votre <strong>vie amoureuse</strong>.
@@ -255,41 +229,6 @@ export default function VoyanceParChatAmourPage() {
             </div>
           </div>
         </section>
-
-        <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">❓ Questions Fréquentes</h2>
-          <p className="text-lg font-semibold text-gray-800 mb-4">Les réponses aux questions les plus posées sur la voyance par chat amour, la fiabilité et le déroulement des consultations en ligne.</p>
-          <div className="space-y-6">
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">La voyance par chat est-elle aussi fiable que par téléphone ?</h3>
-              <p className="text-gray-700 leading-relaxed">La <strong>voyance par chat</strong> est tout aussi fiable, car la <strong>connexion énergétique</strong> entre le voyant et le consultant ne dépend pas du support. De nombreux <strong>voyants expérimentés</strong> affirment que le chat leur permet une concentration plus intense. L&apos;écriture possède sa propre vibration que le voyant capte pour ses lectures. Certains consultants préfèrent d&apos;ailleurs le chat car il permet de garder une trace écrite de la <strong>consultation</strong>.</p>
-            </div>
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Combien coûte une consultation de voyance par chat amour ?</h3>
-              <p className="text-gray-700 leading-relaxed">Le prix varie entre 1,50 et 4 euros par minute selon les plateformes et l&apos;expérience du <strong>voyant</strong>. Une <strong>consultation</strong> typique dure 15 à 30 minutes, soit un budget de 20 à 80 euros. Beaucoup de plateformes offrent quelques minutes gratuites pour un premier contact. Le format <strong>chat</strong> est souvent légèrement moins cher que le <Link href="/methodes-voyance/voyance-telephone-amour" className="text-indigo-600 hover:text-indigo-800 underline font-medium">téléphone</Link>.</p>
-            </div>
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Comment choisir un bon voyant pour une consultation par chat ?</h3>
-              <p className="text-gray-700 leading-relaxed">Vérifiez les avis (minimum 100 consultations, note supérieure à 4,5/5), la spécialisation en <strong>voyance amoureuse</strong>, et profitez des premières minutes offertes pour tester la connexion. Un bon <strong>voyant par chat</strong> répond avec des messages substantiels et personnalisés. Méfiez-vous de ceux qui posent trop de questions au lieu de donner des informations.</p>
-            </div>
-            <div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">À quel moment consulter un voyant par chat pour une question d&apos;amour ?</h3>
-              <p className="text-gray-700 leading-relaxed">Le meilleur moment est lorsque vous avez une question précise et un état émotionnel relativement stable. Les moments propices sont quand vous devez prendre une <strong>décision sentimentale</strong> importante, quand le doute persiste, ou quand vous sentez un changement sans pouvoir l&apos;identifier. Le format <strong>chat</strong> est particulièrement adapté aux situations nécessitant de la <strong>discrétion</strong>.</p>
-            </div>
-          </div>
-        </section>
-
-        <div className="bg-gray-100 rounded-xl p-6 mb-8">
-          <h3 className="font-bold text-lg mb-4 text-gray-900">📚 Articles Connexes</h3>
-          <div className="space-y-2">
-            <Link href="/methodes-voyance/voyance-telephone-amour" className="block text-indigo-600 hover:text-indigo-800 font-medium">&rarr; Voyance par Téléphone Amour</Link>
-            <Link href="/methodes-voyance/voyance-sentimentale" className="block text-indigo-600 hover:text-indigo-800 font-medium">&rarr; Voyance Sentimentale</Link>
-            <Link href="/methodes-voyance/tirage-tarot-amour" className="block text-indigo-600 hover:text-indigo-800 font-medium">&rarr; Tirage Tarot Amour</Link>
-          </div>
-        </div>
-
-        <VoyantFinalCTA topic="methodes-voyance" source="voyance-par-chat-amour-final" />
-      </div>
-    </main>
+    </ContentPage>
   );
 }

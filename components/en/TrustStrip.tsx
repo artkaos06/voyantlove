@@ -2,7 +2,7 @@
 //
 // Placed immediately below the hero to reduce friction for cold paid
 // traffic. Stacks four high-impact trust elements horizontally on desktop,
-// vertically on mobile. No interactive elements — pure signal.
+// vertically on mobile. No interactive elements, pure signal.
 
 interface TrustBadgeProps {
   icon: string;

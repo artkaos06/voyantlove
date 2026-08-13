@@ -1,89 +1,77 @@
-import type { Metadata } from 'next';
 import Link from 'next/link';
-import { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getAuthorSchema } from '@/lib/schema';
-import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
-import VoyantFinalCTA from '@/components/VoyantFinalCTA';
+import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
-export const metadata: Metadata = {
+const config: ContentPageConfig = {
   title: 'Il m\'a Quitté pour Quelqu\'un d\'Autre : Peut-il Revenir ?',
   description: 'Votre conjoint vous a quitté pour une autre personne ? Ce qui est possible, ce qui reste imprévisible, les signes concrets d\'un retour et comment ne pas mettre votre vie en pause.',
+  url: 'https://www.voyantlove.fr/reconquete/quitte-pour-quelquun-dautre-va-t-il-revenir/',
   keywords: ['il m\'a quittée pour une autre va-t-il revenir', 'ma femme est partie avec un autre homme', 'mon mari m\'a remplacée va-t-il regretter', 'mon ex reviendra-t-il après une relation pansement', 'quitté pour quelqu\'un d\'autre'],
-  alternates: {
-    canonical: 'https://www.voyantlove.fr/reconquete/quitte-pour-quelquun-dautre-va-t-il-revenir/',
-  },
-};
-
-export default function QuittePourQuelquunDautreVaTIlRevenirPage() {
-  const articleSchema = getArticleSchema({
-    title: 'Il m\'a Quitté pour Quelqu\'un d\'Autre : Peut-il Revenir ?',
-    description: 'Votre conjoint vous a quitté pour une autre personne ? Ce qui est possible, ce qui reste imprévisible, les signes concrets d\'un retour et comment ne pas mettre votre vie en pause.',
-    url: 'https://www.voyantlove.fr/reconquete/quitte-pour-quelquun-dautre-va-t-il-revenir/',
-    datePublished: '2026-07-28',
-    dateModified: '2026-07-28',
-    keywords: ['il m\'a quittée pour une autre va-t-il revenir', 'quitté pour quelqu\'un d\'autre', 'combien de temps avant qu\'un ex regrette', 'relation pansement', 'comment réagir quand on est quitté pour une autre personne'],
-  });
-
-  const faqSchema = getFAQSchema([
-    {
-      question: 'Mon conjoint m\'a quitté pour quelqu\'un d\'autre : peut-il revenir ?',
-      answer: 'C\'est possible, mais nul ne peut le garantir ni le prédire avec certitude. Un départ pour une autre personne ne révèle pas toute l\'histoire d\'un couple, et certaines de ces nouvelles relations durent tandis que d\'autres non. Ce qui compte n\'est pas de deviner l\'avenir, mais d\'observer des éléments concrets et de ne pas suspendre votre propre vie à une hypothèse. La réponse honnête est une fourchette de possibles, pas une prophétie : concentrez-vous sur ce que vous pouvez évaluer et sur votre reconstruction.',
-    },
-    {
-      question: 'Une relation qui commence par une infidélité est-elle forcément un feu de paille ?',
-      answer: 'Non. L\'idée que toute nouvelle relation née d\'une rupture serait une simple « relation pansement » est un raccourci rassurant mais faux. Certaines de ces histoires s\'inscrivent dans la durée, d\'autres s\'essoufflent. Se dire qu\'elle ne tiendra pas peut soulager sur le moment, mais entretient une attente passive qui vous empêche d\'avancer. Il est plus juste de reconnaître que vous ne pouvez pas savoir, et de bâtir vos décisions sur votre propre équilibre plutôt que sur un pronostic concernant leur couple.',
-    },
-    {
-      question: 'Quels signes montreraient qu\'il envisage réellement de revenir ?',
-      answer: 'Les signaux les plus fiables sont concrets et répétés : une reprise de contact sincère qui aborde le fond plutôt que la nostalgie, la reconnaissance de sa part de responsabilité, des démarches réelles pour se rapprocher, et une cohérence entre ses paroles et ses actes dans le temps. Un message isolé, un like ou une phrase émue ne prouvent rien. La régularité et l\'engagement dans les faits distinguent une véritable intention d\'un simple élan passager ou d\'un besoin de se rassurer.',
-    },
-    {
-      question: 'Faut-il attendre que sa nouvelle relation se termine ?',
-      answer: 'Attendre activement la fin d\'une autre relation est l\'une des attentes les plus coûteuses, car elle place votre vie entière sous la dépendance d\'un événement que vous ne maîtrisez pas et qui peut ne jamais survenir. Vous pouvez rester ouvert(e) à un dialogue si l\'autre revient de lui-même, sans pour autant mettre votre existence en pause. Fixez-vous une limite intérieure de temps et continuez à vous reconstruire : c\'est la seule posture qui vous protège quelle que soit l\'issue.',
-    },
-    {
-      question: 'Comment réagir quand on est quitté pour une autre personne ?',
-      answer: 'Accueillez d\'abord la blessure sans la juger : rejet, comparaison et perte de repères sont des réactions normales, non des signes de faiblesse. Évitez la surveillance de l\'autre couple et les gestes d\'interférence, qui aggravent la souffrance sans rien changer. Recentrez votre énergie sur votre reconstruction et votre identité propre. Une consultation de voyance sentimentale peut vous aider à traverser cette période et à retrouver de la clarté sur vos besoins, sans jamais promettre un retour.',
-    },
-  ]);
-
-  const breadcrumbSchema = getBreadcrumbSchema([
+  datePublished: '2026-07-28',
+  dateModified: '2026-07-28',
+  breadcrumb: [
     { name: 'Accueil', url: 'https://www.voyantlove.fr' },
     { name: 'Reconquête', url: 'https://www.voyantlove.fr/reconquete/' },
     { name: 'Quitté pour Quelqu\'un d\'Autre : Va-t-il Revenir ?', url: 'https://www.voyantlove.fr/reconquete/quitte-pour-quelquun-dautre-va-t-il-revenir/' },
-  ]);
+  ],
+  header: {
+    emoji: '💔',
+    h1: 'Mon Conjoint m\'a Quitté pour Quelqu\'un d\'Autre : Va-t-il Revenir ?',
+    subtitle: 'Ce qui est possible, ce qui reste imprévisible, et comment ne pas mettre votre vie en pause',
+    gradient: 'from-violet-600 via-purple-600 to-fuchsia-600',
+    backLink: { href: '/reconquete', label: 'Retour à la Reconquête' },
+    anchors: [
+      { href: '#possible', label: 'Possible ou Imprévisible ?', primary: true },
+      { href: '#identite', label: 'Retrouver son Identité' },
+    ],
+  },
+  accentText: 'text-violet-600',
+  stats: [
+    { icon: '🔮', value: 'Reconnue', label: 'Expertise' },
+    { icon: '💔', value: '3,700+', label: 'Consultations' },
+    { icon: '⭐', value: '4.8/5', label: '312 avis' },
+    { icon: '🔒', value: '100%', label: 'Confidentiel' },
+  ],
+  eeat: { colorScheme: 'purple', method: 'Guidance de reconquête et accompagnement après séparation' },
+  cta: { topic: 'reconquete', slug: 'quitte-pour-autre' },
+  faq: [
+    {
+      q: 'Mon conjoint m\'a quitté pour quelqu\'un d\'autre : peut-il revenir ?',
+      a: 'C\'est possible, mais nul ne peut le garantir ni le prédire avec certitude. Un départ pour une autre personne ne révèle pas toute l\'histoire d\'un couple, et certaines de ces nouvelles relations durent tandis que d\'autres non. Ce qui compte n\'est pas de deviner l\'avenir, mais d\'observer des éléments concrets et de ne pas suspendre votre propre vie à une hypothèse. La réponse honnête est une fourchette de possibles, pas une prophétie : concentrez-vous sur ce que vous pouvez évaluer et sur votre reconstruction.',
+    },
+    {
+      q: 'Une relation qui commence par une infidélité est-elle forcément un feu de paille ?',
+      a: 'Non. L\'idée que toute nouvelle relation née d\'une rupture serait une simple « relation pansement » est un raccourci rassurant mais faux. Certaines de ces histoires s\'inscrivent dans la durée, d\'autres s\'essoufflent. Se dire qu\'elle ne tiendra pas peut soulager sur le moment, mais entretient une attente passive qui vous empêche d\'avancer. Il est plus juste de reconnaître que vous ne pouvez pas savoir, et de bâtir vos décisions sur votre propre équilibre plutôt que sur un pronostic concernant leur couple.',
+    },
+    {
+      q: 'Quels signes montreraient qu\'il envisage réellement de revenir ?',
+      a: 'Les signaux les plus fiables sont concrets et répétés : une reprise de contact sincère qui aborde le fond plutôt que la nostalgie, la reconnaissance de sa part de responsabilité, des démarches réelles pour se rapprocher, et une cohérence entre ses paroles et ses actes dans le temps. Un message isolé, un like ou une phrase émue ne prouvent rien. La régularité et l\'engagement dans les faits distinguent une véritable intention d\'un simple élan passager ou d\'un besoin de se rassurer.',
+    },
+    {
+      q: 'Faut-il attendre que sa nouvelle relation se termine ?',
+      a: 'Attendre activement la fin d\'une autre relation est l\'une des attentes les plus coûteuses, car elle place votre vie entière sous la dépendance d\'un événement que vous ne maîtrisez pas et qui peut ne jamais survenir. Vous pouvez rester ouvert(e) à un dialogue si l\'autre revient de lui-même, sans pour autant mettre votre existence en pause. Fixez-vous une limite intérieure de temps et continuez à vous reconstruire : c\'est la seule posture qui vous protège quelle que soit l\'issue.',
+    },
+    {
+      q: 'Comment réagir quand on est quitté pour une autre personne ?',
+      a: 'Accueillez d\'abord la blessure sans la juger : rejet, comparaison et perte de repères sont des réactions normales, non des signes de faiblesse. Évitez la surveillance de l\'autre couple et les gestes d\'interférence, qui aggravent la souffrance sans rien changer. Recentrez votre énergie sur votre reconstruction et votre identité propre. Une consultation de voyance sentimentale peut vous aider à traverser cette période et à retrouver de la clarté sur vos besoins, sans jamais promettre un retour.',
+    },
+  ],
+  related: [
+    { href: '/reconquete', label: 'Reconquête Amoureuse : Toutes nos Guidances' },
+    { href: '/reconquete/va-t-il-elle-revenir', label: 'Va-t-il/elle Revenir ?' },
+    { href: '/rupture/surmonter-trahison', label: 'Surmonter une Trahison Amoureuse' },
+    { href: '/reconquete/seconde-chance-amour', label: 'La Seconde Chance en Amour' },
+    { href: '/rupture/guerir-rupture', label: 'Guérir d\'une Rupture' },
+    { href: '/rupture/ex-refait-sa-vie', label: 'Mon Ex Refait sa Vie : Comment le Vivre' },
+  ],
+};
 
-  const authorSchema = getAuthorSchema();
+export const metadata = contentMeta(config);
 
+export default function QuittePourQuelquunDautreVaTIlRevenirPage() {
   return (
-    <main className="min-h-screen bg-gray-50">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(authorSchema) }} />
-
-      <header className="bg-gradient-to-r from-violet-600 via-purple-600 to-fuchsia-600 text-white py-16 px-4">
-        <div className="max-w-4xl mx-auto">
-          <Link href="/reconquete" className="text-white/80 hover:text-white mb-4 inline-block">&larr; Retour à la Reconquête</Link>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">{'\u{1F494}'} Mon Conjoint m&apos;a Quitté pour Quelqu&apos;un d&apos;Autre : Va-t-il Revenir ?</h1>
-          <p className="text-xl opacity-95 mb-6">Ce qui est possible, ce qui reste imprévisible, et comment ne pas mettre votre vie en pause</p>
-          <div className="flex gap-4 flex-wrap">
-            <a href="#possible" className="bg-white text-violet-600 px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition">Possible ou Imprévisible ?</a>
-            <a href="#identite" className="border-2 border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-violet-600 transition">Retrouver son Identité</a>
-          </div>
-        </div>
-      </header>
-
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <div className="bg-white rounded-xl shadow-md p-6 mb-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-          <div><div className="text-3xl mb-1">{'\u{1F52E}'}</div><div className="text-2xl font-bold text-violet-600">Reconnue</div><div className="text-sm text-gray-600">Expertise</div></div>
-          <div><div className="text-3xl mb-1">{'\u{1F494}'}</div><div className="text-2xl font-bold text-violet-600">3,700+</div><div className="text-sm text-gray-600">Consultations</div></div>
-          <div><div className="text-3xl mb-1">{'⭐'}</div><div className="text-2xl font-bold text-violet-600">4.8/5</div><div className="text-sm text-gray-600">312 avis</div></div>
-          <div><div className="text-3xl mb-1">{'\u{1F512}'}</div><div className="text-2xl font-bold text-violet-600">100%</div><div className="text-sm text-gray-600">Confidentiel</div></div>
-        </div>
-
-        <EEATSignal colorScheme="purple" method="Guidance de reconquête et accompagnement après séparation" />
+    <ContentPage config={config}>
 
         {/* Answer Capsule */}
         <article className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-violet-500">
@@ -197,7 +185,7 @@ export default function QuittePourQuelquunDautreVaTIlRevenirPage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">{'\u{1F98B}'} Retrouver son Identité Après une Relation Longue</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Apres une relation longue, l&apos;identite s&apos;est souvent construite autour du couple : la reconstruction consiste a renouer avec ce qui vous appartient en propre, vos gouts, vos liens et vos projets, independamment de l&apos;autre.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            La perte de repères est l&apos;un des effets les plus douloureux d&apos;un départ après des années communes. Se reconstruire ne signifie pas oublier, mais <strong>redevenir soi</strong> — retrouver une identité qui ne dépend plus du regard de l&apos;autre.
+            La perte de repères est l&apos;un des effets les plus douloureux d&apos;un départ après des années communes. Se reconstruire ne signifie pas oublier, mais <strong>redevenir soi</strong>, retrouver une identité qui ne dépend plus du regard de l&apos;autre.
           </p>
           <div className="grid md:grid-cols-3 gap-6">
             <div className="bg-white rounded-lg p-6 border-l-4 border-fuchsia-500">
@@ -214,53 +202,10 @@ export default function QuittePourQuelquunDautreVaTIlRevenirPage() {
             </div>
           </div>
           <div className="mt-6 bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded">
-            <p className="text-gray-700"><strong>{'\u{1F4A1}'} À retenir :</strong> si une seconde chance devait un jour se présenter, elle ne serait saine qu&apos;à certaines conditions — reconnaissance des causes, changements réels, respect retrouvé. Notre guidance sur la <Link href="/reconquete/seconde-chance-amour" className="text-purple-600 hover:text-purple-800 underline font-medium">seconde chance en amour</Link> explore ce qu&apos;il faut vérifier avant de rouvrir cette porte.</p>
+            <p className="text-gray-700"><strong>{'\u{1F4A1}'} À retenir :</strong> si une seconde chance devait un jour se présenter, elle ne serait saine qu&apos;à certaines conditions, reconnaissance des causes, changements réels, respect retrouvé. Notre guidance sur la <Link href="/reconquete/seconde-chance-amour" className="text-purple-600 hover:text-purple-800 underline font-medium">seconde chance en amour</Link> explore ce qu&apos;il faut vérifier avant de rouvrir cette porte.</p>
           </div>
         </section>
 
-        {/* FAQ Section */}
-        <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">{'❓'} Questions Fréquentes</h2>
-          <p className="text-lg font-semibold text-gray-800 mb-4">Les reponses aux questions les plus posees lorsqu&apos;un conjoint quitte le couple pour une autre personne.</p>
-          <div className="space-y-6">
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Mon conjoint m&apos;a quitté pour quelqu&apos;un d&apos;autre : peut-il revenir ?</h3>
-              <p className="text-gray-700 leading-relaxed">C&apos;est <strong>possible</strong>, mais nul ne peut le garantir ni le prédire avec certitude. Un départ pour une autre personne ne révèle pas toute l&apos;histoire d&apos;un couple, et certaines nouvelles relations durent tandis que d&apos;autres non. Ce qui compte n&apos;est pas de deviner l&apos;avenir, mais d&apos;observer des éléments <strong>concrets</strong> et de ne pas suspendre votre vie à une hypothèse. La réponse honnête est une fourchette de possibles, pas une prophétie.</p>
-            </div>
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Une relation qui commence par une infidélité est-elle forcément un feu de paille ?</h3>
-              <p className="text-gray-700 leading-relaxed">Non. L&apos;idée que toute nouvelle relation serait une simple <strong>relation pansement</strong> est un raccourci rassurant mais faux. Certaines de ces histoires s&apos;inscrivent dans la durée, d&apos;autres s&apos;essoufflent. Se dire qu&apos;elle ne tiendra pas peut soulager, mais entretient une <strong>attente passive</strong>. Il est plus juste de reconnaître que vous ne pouvez pas savoir, et de bâtir vos décisions sur votre propre équilibre.</p>
-            </div>
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Quels signes montreraient qu&apos;il envisage réellement de revenir ?</h3>
-              <p className="text-gray-700 leading-relaxed">Les signaux les plus fiables sont concrets et répétés : une <strong>reprise de contact sincère</strong> qui aborde le fond, la reconnaissance de sa part de responsabilité, des démarches réelles pour se rapprocher, et une <strong>cohérence paroles / actes</strong> dans le temps. Un message isolé, un like ou une phrase émue ne prouvent rien. La régularité et l&apos;engagement dans les faits distinguent une véritable intention d&apos;un élan passager.</p>
-            </div>
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Faut-il attendre que sa nouvelle relation se termine ?</h3>
-              <p className="text-gray-700 leading-relaxed">Attendre activement la fin d&apos;une autre relation est l&apos;une des attentes les plus coûteuses, car elle place votre vie sous la dépendance d&apos;un événement que vous ne maîtrisez pas et qui peut ne jamais survenir. Vous pouvez rester ouvert(e) à un dialogue si l&apos;autre revient de lui-même, sans mettre votre existence en pause. Fixez-vous une <strong>limite intérieure de temps</strong> et continuez à vous reconstruire.</p>
-            </div>
-            <div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Comment réagir quand on est quitté pour une autre personne ?</h3>
-              <p className="text-gray-700 leading-relaxed">Accueillez d&apos;abord la blessure sans la juger : <strong>rejet</strong>, comparaison et perte de repères sont des réactions normales. Évitez la surveillance de l&apos;autre couple et les gestes d&apos;interférence, qui aggravent la souffrance sans rien changer. Recentrez votre énergie sur votre <strong>reconstruction</strong> et votre identité propre. Une consultation de voyance sentimentale peut vous aider à traverser cette période, sans jamais promettre un retour.</p>
-            </div>
-          </div>
-        </section>
-
-        {/* Articles Connexes */}
-        <div className="bg-gray-100 rounded-xl p-6 mb-8">
-          <h3 className="font-bold text-lg mb-4 text-gray-900">{'\u{1F4DA}'} Articles Connexes</h3>
-          <div className="space-y-2">
-            <Link href="/reconquete" className="block text-violet-600 hover:text-violet-800 font-medium">&rarr; Reconquête Amoureuse : Toutes nos Guidances</Link>
-            <Link href="/reconquete/va-t-il-elle-revenir" className="block text-violet-600 hover:text-violet-800 font-medium">&rarr; Va-t-il/elle Revenir ?</Link>
-            <Link href="/rupture/surmonter-trahison" className="block text-violet-600 hover:text-violet-800 font-medium">&rarr; Surmonter une Trahison Amoureuse</Link>
-            <Link href="/reconquete/seconde-chance-amour" className="block text-violet-600 hover:text-violet-800 font-medium">&rarr; La Seconde Chance en Amour</Link>
-            <Link href="/rupture/guerir-rupture" className="block text-violet-600 hover:text-violet-800 font-medium">&rarr; Guérir d&apos;une Rupture</Link>
-            <Link href="/rupture/ex-refait-sa-vie" className="block text-violet-600 hover:text-violet-800 font-medium">&rarr; Mon Ex Refait sa Vie : Comment le Vivre</Link>
-          </div>
-        </div>
-
-        <VoyantFinalCTA topic="reconquete" source="quitte-pour-autre-final" />
-      </div>
-    </main>
+      </ContentPage>
   );
 }

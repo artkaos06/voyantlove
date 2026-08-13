@@ -1,101 +1,78 @@
-import type { Metadata } from 'next';
 import Link from 'next/link';
-import { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getAuthorSchema } from '@/lib/schema';
-import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
-import VoyantFinalCTA from '@/components/VoyantFinalCTA';
+import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
-export const metadata: Metadata = {
+const config: ContentPageConfig = {
   title: 'Surmonter une Trahison Amoureuse : Guidance Voyance',
   description: 'Comment surmonter une trahison et une infidélité ? Découvrez la guidance de la voyance et du tarot pour guérir, comprendre et reconstruire après la tromperie.',
+  url: 'https://www.voyantlove.fr/rupture/surmonter-trahison/',
   keywords: ['surmonter trahison', 'tromperie couple', 'infidélité guérison', 'trahison amoureuse', 'voyance infidélité'],
-  alternates: { canonical: 'https://www.voyantlove.fr/rupture/surmonter-trahison/' },
-};
-
-export default function SurmonterTrahisonPage() {
-  const articleSchema = getArticleSchema({
-    title: 'Surmonter une Trahison Amoureuse',
-    description: 'Comment surmonter une trahison et une infidélité ? Découvrez la guidance de la voyance et du tarot pour guérir, comprendre et reconstruire après la tromperie.',
-    url: 'https://www.voyantlove.fr/rupture/surmonter-trahison/',
-    datePublished: '2026-03-22',
-    dateModified: '2026-03-22',
-    keywords: ['surmonter trahison', 'tromperie couple', 'infidélité guérison', 'trahison amoureuse', 'voyance infidélité'],
-  });
-
-  const faqSchema = getFAQSchema([
-    {
-      question: 'La voyance peut-elle révéler si mon partenaire me trompe ?',
-      answer: 'La voyance et le tarot captent les énergies de tromperie et de dissimulation dans un couple. Des cartes comme le Sept d\'Épées (tromperie), la Lune (secrets) ou le Diable (liaison cachée) apparaissent fréquemment dans les tirages quand une infidélité est en cours. Le voyant perçoit également les changements d\'énergie dans la relation : distance émotionnelle, mensonges, doubles vies. Cependant, la voyance ne remplace pas une communication honnête avec votre partenaire. Elle vous donne des indices pour poser les bonnes questions et écouter votre intuition avec discernement.',
-    },
-    {
-      question: 'Peut-on reconstruire un couple après une trahison ?',
-      answer: 'Le tarot montre que la reconstruction après une trahison est possible mais exige un travail profond des deux partenaires. Les cartes de renouveau comme le Jugement ou l\'Étoile indiquent un potentiel de renaissance du couple, tandis que la Tour suggère que certaines fondations doivent être détruites pour reconstruire sainement. La voyance révèle si votre partenaire éprouve des remords sincères et s\'il est prêt à faire le travail nécessaire. Environ 60% des couples qui choisissent de rester ensemble après une infidélité y parviennent avec un accompagnement adapté, thérapie de couple et guidance spirituelle.',
-    },
-    {
-      question: 'Comment savoir si je dois pardonner ou partir après une infidélité ?',
-      answer: 'Cette décision est l\'une des plus difficiles à prendre et la voyance vous aide à y voir clair. Le tarot analyse plusieurs dimensions : les sentiments réels de votre partenaire, sa propension à recommencer, votre capacité à pardonner sans rancoeur, et le potentiel futur de votre couple. Des tirages spécifiques comme le tirage de la croisée des chemins éclairent les deux options. Un voyant expérimenté ne vous dit pas quoi faire mais vous révèle les conséquences probables de chaque choix. Le libre arbitre reste le vôtre, guidé par une vision plus claire de la vérité.',
-    },
-    {
-      question: 'Combien de temps faut-il pour guérir d\'une trahison amoureuse ?',
-      answer: 'La guérison après une trahison prend généralement 12 à 24 mois selon la profondeur de la blessure et le soutien dont vous disposez. La voyance accompagne ce processus en identifiant les phases de deuil que vous traversez et en anticipant les moments de rechute émotionnelle. Le tarot montre que la guérison n\'est pas linéaire : des vagues de colère, de tristesse et de doute se succèdent avant d\'atteindre l\'acceptation. La clairvoyance vous aide à traverser chaque phase avec conscience, sans vous enliser dans l\'amertume ou le déni. L\'énergie karmique de la trahison porte aussi des leçons d\'évolution pour votre parcours de vie.',
-    },
-  ]);
-
-  const breadcrumbSchema = getBreadcrumbSchema([
+  datePublished: '2026-03-22',
+  dateModified: '2026-03-22',
+  breadcrumb: [
     { name: 'Accueil', url: 'https://www.voyantlove.fr' },
     { name: 'Rupture', url: 'https://www.voyantlove.fr/rupture/' },
     { name: 'Surmonter une Trahison', url: 'https://www.voyantlove.fr/rupture/surmonter-trahison/' },
-  ]);
+  ],
+  header: {
+    emoji: '🖤',
+    h1: 'Surmonter une Trahison Amoureuse',
+    subtitle: 'Guérir de l\'infidélité avec la guidance de la voyance et du tarot',
+    gradient: 'from-gray-700 via-gray-800 to-gray-900',
+    backLink: { href: '/rupture', label: 'Rupture' },
+    anchors: [
+      { href: '#consultation', label: 'Consultation Guidance', primary: true },
+    ],
+  },
+  accentText: 'text-gray-700',
+  stats: [
+    { icon: '⭐', value: '4.9/5', label: '341 avis' },
+    { icon: '💔', value: '12-24', label: 'Mois de guérison' },
+    { icon: '🔄', value: '60%', label: 'Couples reconstruits' },
+    { icon: '🔮', value: '15 ans', label: 'Expérience' },
+  ],
+  eeat: { colorScheme: 'rose', method: 'Guidance voyance pour surmonter la trahison amoureuse' },
+  cta: { topic: 'rupture', slug: 'surmonter-trahison' },
+  faq: [
+    {
+      q: 'La voyance peut-elle révéler si mon partenaire me trompe ?',
+      a: 'La voyance et le tarot captent les énergies de tromperie et de dissimulation dans un couple. Des cartes comme le Sept d\'Épées (tromperie), la Lune (secrets) ou le Diable (liaison cachée) apparaissent fréquemment dans les tirages quand une infidélité est en cours. Le voyant perçoit également les changements d\'énergie dans la relation : distance émotionnelle, mensonges, doubles vies. Cependant, la voyance ne remplace pas une communication honnête avec votre partenaire. Elle vous donne des indices pour poser les bonnes questions et écouter votre intuition avec discernement.',
+    },
+    {
+      q: 'Peut-on reconstruire un couple après une trahison ?',
+      a: 'Le tarot montre que la reconstruction après une trahison est possible mais exige un travail profond des deux partenaires. Les cartes de renouveau comme le Jugement ou l\'Étoile indiquent un potentiel de renaissance du couple, tandis que la Tour suggère que certaines fondations doivent être détruites pour reconstruire sainement. La voyance révèle si votre partenaire éprouve des remords sincères et s\'il est prêt à faire le travail nécessaire. Environ 60% des couples qui choisissent de rester ensemble après une infidélité y parviennent avec un accompagnement adapté, thérapie de couple et guidance spirituelle.',
+    },
+    {
+      q: 'Comment savoir si je dois pardonner ou partir après une infidélité ?',
+      a: 'Cette décision est l\'une des plus difficiles à prendre et la voyance vous aide à y voir clair. Le tarot analyse plusieurs dimensions : les sentiments réels de votre partenaire, sa propension à recommencer, votre capacité à pardonner sans rancoeur, et le potentiel futur de votre couple. Des tirages spécifiques comme le tirage de la croisée des chemins éclairent les deux options. Un voyant expérimenté ne vous dit pas quoi faire mais vous révèle les conséquences probables de chaque choix. Le libre arbitre reste le vôtre, guidé par une vision plus claire de la vérité.',
+    },
+    {
+      q: 'Combien de temps faut-il pour guérir d\'une trahison amoureuse ?',
+      a: 'La guérison après une trahison prend généralement 12 à 24 mois selon la profondeur de la blessure et le soutien dont vous disposez. La voyance accompagne ce processus en identifiant les phases de deuil que vous traversez et en anticipant les moments de rechute émotionnelle. Le tarot montre que la guérison n\'est pas linéaire : des vagues de colère, de tristesse et de doute se succèdent avant d\'atteindre l\'acceptation. La clairvoyance vous aide à traverser chaque phase avec conscience, sans vous enliser dans l\'amertume ou le déni. L\'énergie karmique de la trahison porte aussi des leçons d\'évolution pour votre parcours de vie.',
+    },
+  ],
+  related: [
+    { href: '/rupture/rupture-amoureuse', label: 'Surmonter une Rupture Amoureuse' },
+    { href: '/rupture/comment-tourner-la-page', label: 'Comment Tourner la Page' },
+    { href: '/rupture/chagrin-damour', label: 'Guérir d\'un Chagrin d\'Amour' },
+    { href: '/rupture/oublier-son-ex', label: 'Comment Oublier son Ex' },
+    { href: '/reconquete/reconquerir-son-ex', label: 'Reconquérir son Ex' },
+    { href: '/sentiments/maime-t-il-elle', label: 'M\'aime-t-il / M\'aime-t-elle Encore ?' },
+  ],
+};
 
-  const authorSchema = getAuthorSchema();
+export const metadata = contentMeta(config);
 
+export default function SurmonterTrahisonPage() {
   return (
-    <main className="min-h-screen bg-gray-50">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(authorSchema) }}
-      />
-      <header className="bg-gradient-to-r from-gray-700 via-gray-800 to-gray-900 text-white py-16 px-4">
-        <div className="max-w-4xl mx-auto">
-          <Link href="/rupture" className="text-white/80 hover:text-white mb-4 inline-block">← Rupture</Link>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">🖤 Surmonter une Trahison Amoureuse</h1>
-          <p className="text-xl opacity-95 mb-6">Guérir de l'infidélité avec la guidance de la voyance et du tarot</p>
-          <a href="#consultation" className="bg-white text-gray-800 px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition inline-block">Consultation Guidance</a>
-        </div>
-      </header>
-
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <div className="bg-white rounded-xl shadow-md p-6 mb-8 grid grid-cols-4 gap-4 text-center">
-          <div><div className="text-3xl mb-1">⭐</div><div className="text-2xl font-bold text-gray-700">4.9/5</div><div className="text-sm text-gray-600">341 avis</div></div>
-          <div><div className="text-3xl mb-1">💔</div><div className="text-2xl font-bold text-gray-700">12-24</div><div className="text-sm text-gray-600">Mois de guérison</div></div>
-          <div><div className="text-3xl mb-1">🔄</div><div className="text-2xl font-bold text-gray-700">60%</div><div className="text-sm text-gray-600">Couples reconstruits</div></div>
-          <div><div className="text-3xl mb-1">🔮</div><div className="text-2xl font-bold text-gray-700">15 ans</div><div className="text-sm text-gray-600">Expérience</div></div>
-        </div>
-
-        <EEATSignal
-          colorScheme="rose"
-          method="Guidance voyance pour surmonter la trahison amoureuse"
-        />
-
+    <ContentPage config={config}>
         <article className="bg-gray-50 border-l-4 border-gray-500 rounded-xl shadow-md p-8 mb-8">
           <p className="text-lg leading-relaxed mb-4">
             Découvrir une <strong>trahison amoureuse</strong> est l'une des douleurs les plus dévastatrices qu'un être humain puisse traverser. L'<strong>infidélité</strong> ne brise pas seulement la confiance : elle fracture votre vision du monde, votre estime personnelle et tout ce que vous pensiez savoir de votre <strong>couple</strong>. La <strong>voyance</strong> et le <strong>tarot</strong> accompagnent des milliers de personnes chaque année à travers cette épreuve, en offrant une compréhension profonde des dynamiques invisibles qui ont mené à la <strong>tromperie</strong>.
           </p>
           <p className="text-lg leading-relaxed mb-4">
-            Surmonter une <strong>trahison</strong> ne signifie pas oublier ou minimiser la souffrance. C'est un processus de <strong>guérison</strong> qui demande du courage, de l'honnêteté envers soi-même et un accompagnement bienveillant. La <strong>clairvoyance</strong> vous aide à démêler les émotions contradictoires — colère, amour résiduel, honte, incompréhension — pour avancer avec lucidité plutôt que dans la confusion.
+            Surmonter une <strong>trahison</strong> ne signifie pas oublier ou minimiser la souffrance. C'est un processus de <strong>guérison</strong> qui demande du courage, de l'honnêteté envers soi-même et un accompagnement bienveillant. La <strong>clairvoyance</strong> vous aide à démêler les émotions contradictoires, colère, amour résiduel, honte, incompréhension, pour avancer avec lucidité plutôt que dans la confusion.
           </p>
           <p className="text-lg leading-relaxed">
             Que vous choisissiez de rester ou de partir, la <strong>voyance amoureuse</strong> éclaire votre chemin vers la reconstruction. Retrouvez toutes nos guidances sur <Link href="/" className="text-gray-600 hover:text-gray-800 underline font-medium">VoyantLove</Link> pour traverser cette épreuve avec sagesse et trouver la paix intérieure.
@@ -134,7 +111,7 @@ export default function SurmonterTrahisonPage() {
               <div className="text-3xl font-bold text-gray-600">1</div>
               <div>
                 <h3 className="font-bold text-lg mb-2">Le Choc et la Colère</h3>
-                <p className="text-gray-700">La découverte de l'<strong>infidélité</strong> provoque un traumatisme émotionnel comparable à un deuil. Sidération, incrédulité, colère explosive, envie de vengeance : ces réactions sont normales et nécessaires. Le <strong>tarot</strong> montre souvent la Tour à ce stade — l'effondrement de tout ce que vous croyiez solide. La <strong>voyance</strong> vous rappelle que cette destruction est le préalable à une reconstruction plus authentique. Ne refoulez pas votre colère : exprimez-la de manière saine, à travers l'écriture, le sport, la thérapie ou la parole. Cette énergie brute, canalisée correctement, deviendra votre force de <strong>guérison</strong>.</p>
+                <p className="text-gray-700">La découverte de l'<strong>infidélité</strong> provoque un traumatisme émotionnel comparable à un deuil. Sidération, incrédulité, colère explosive, envie de vengeance : ces réactions sont normales et nécessaires. Le <strong>tarot</strong> montre souvent la Tour à ce stade, l'effondrement de tout ce que vous croyiez solide. La <strong>voyance</strong> vous rappelle que cette destruction est le préalable à une reconstruction plus authentique. Ne refoulez pas votre colère : exprimez-la de manière saine, à travers l'écriture, le sport, la thérapie ou la parole. Cette énergie brute, canalisée correctement, deviendra votre force de <strong>guérison</strong>.</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
@@ -223,44 +200,6 @@ export default function SurmonterTrahisonPage() {
             </div>
           </div>
         </section>
-
-        <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">❓ Questions Fréquentes</h2>
-          <p className="text-lg font-semibold text-gray-800 mb-4">Retrouvez les réponses aux questions les plus posées sur la trahison amoureuse : voyance et infidélité, reconstruction du couple, pardon et durée de guérison.</p>
-          <div className="space-y-6">
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">La voyance peut-elle révéler si mon partenaire me trompe ?</h3>
-              <p className="text-gray-700 leading-relaxed">La <strong>voyance</strong> et le <strong>tarot</strong> captent les énergies de tromperie et de dissimulation dans un <strong>couple</strong>. Des cartes comme le <strong>Sept d'Épées</strong> (tromperie), la <strong>Lune</strong> (secrets) ou le <strong>Diable</strong> (liaison cachée) apparaissent fréquemment dans les tirages quand une <strong>infidélité</strong> est en cours. Le <strong>voyant</strong> perçoit également les changements d'énergie dans la relation : distance émotionnelle, mensonges, doubles vies. Cependant, la voyance ne remplace pas une communication honnête avec votre partenaire. Elle vous donne des indices pour poser les bonnes questions et écouter votre <strong>intuition</strong> avec discernement.</p>
-            </div>
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Peut-on reconstruire un couple après une trahison ?</h3>
-              <p className="text-gray-700 leading-relaxed">Le <strong>tarot</strong> montre que la reconstruction après une <strong>trahison</strong> est possible mais exige un travail profond des deux partenaires. Les cartes de renouveau comme le <strong>Jugement</strong> ou l'<strong>Étoile</strong> indiquent un potentiel de renaissance du <strong>couple</strong>, tandis que la <strong>Tour</strong> suggère que certaines fondations doivent être détruites pour reconstruire sainement. La <strong>voyance</strong> révèle si votre partenaire éprouve des remords sincères et s'il est prêt à faire le travail nécessaire. La <strong>thérapie de couple</strong> et la <strong>guidance spirituelle</strong> offrent ensemble le meilleur cadre pour cette reconstruction délicate.</p>
-            </div>
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Comment savoir si je dois pardonner ou partir après une infidélité ?</h3>
-              <p className="text-gray-700 leading-relaxed">Cette décision est l'une des plus difficiles à prendre et la <strong>voyance</strong> vous aide à y voir clair. Le <strong>tarot</strong> analyse plusieurs dimensions : les <strong>sentiments</strong> réels de votre partenaire, sa propension à recommencer, votre capacité à pardonner sans rancœur, et le potentiel futur de votre <strong>couple</strong>. Des tirages spécifiques comme le tirage de la croisée des chemins éclairent les deux options. Un <strong>voyant</strong> expérimenté ne vous dit pas quoi faire mais vous révèle les conséquences probables de chaque choix. Si vous envisagez une <Link href="/rupture/rupture-amoureuse" className="text-gray-600 hover:text-gray-800 underline font-medium">séparation</Link>, la voyance vous accompagne également dans cette transition.</p>
-            </div>
-            <div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Combien de temps faut-il pour guérir d'une trahison amoureuse ?</h3>
-              <p className="text-gray-700 leading-relaxed">La <strong>guérison</strong> après une <strong>trahison</strong> prend généralement 12 à 24 mois selon la profondeur de la blessure et le soutien dont vous disposez. La <strong>voyance</strong> accompagne ce processus en identifiant les phases de <strong>deuil</strong> que vous traversez et en anticipant les moments de rechute émotionnelle. Le <strong>tarot</strong> montre que la guérison n'est pas linéaire : des vagues de colère, de tristesse et de doute se succèdent avant d'atteindre l'<strong>acceptation</strong>. La <strong>clairvoyance</strong> vous aide à traverser chaque phase avec conscience, sans vous enliser dans l'amertume ou le déni.</p>
-            </div>
-          </div>
-        </section>
-
-        <div className="bg-gray-100 rounded-xl p-6 mb-8">
-          <h3 className="font-bold text-lg mb-4 text-gray-900">📚 Articles Connexes</h3>
-          <div className="space-y-2">
-            <Link href="/rupture/rupture-amoureuse" className="block text-gray-600 hover:text-gray-800 font-medium">→ Surmonter une Rupture Amoureuse</Link>
-            <Link href="/rupture/comment-tourner-la-page" className="block text-gray-600 hover:text-gray-800 font-medium">→ Comment Tourner la Page</Link>
-            <Link href="/rupture/chagrin-damour" className="block text-gray-600 hover:text-gray-800 font-medium">→ Guérir d'un Chagrin d'Amour</Link>
-            <Link href="/rupture/oublier-son-ex" className="block text-gray-600 hover:text-gray-800 font-medium">→ Comment Oublier son Ex</Link>
-            <Link href="/reconquete/reconquerir-son-ex" className="block text-gray-600 hover:text-gray-800 font-medium">→ Reconquérir son Ex</Link>
-            <Link href="/sentiments/maime-t-il-elle" className="block text-gray-600 hover:text-gray-800 font-medium">→ M'aime-t-il / M'aime-t-elle Encore ?</Link>
-          </div>
-        </div>
-
-        <VoyantFinalCTA topic="rupture" source="surmonter-trahison-final" />
-      </div>
-    </main>
+    </ContentPage>
   );
 }

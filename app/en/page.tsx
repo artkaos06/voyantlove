@@ -9,8 +9,7 @@ import AffiliateDisclosure from '@/components/en/AffiliateDisclosure';
 // surfaces the most useful pages, and guides readers to either a topic page
 // (intent-driven) or the services hub (commercial intent).
 //
-// We intentionally don't put a giant "Try Keen now" CTA above the fold —
-// that's the thin-affiliate pattern Google penalizes. Instead, the home
+// We intentionally don't put a giant "Try Keen now" CTA above the fold, // that's the thin-affiliate pattern Google penalizes. Instead, the home
 // page reads like the front page of a small editorial site.
 
 export const metadata: Metadata = {
@@ -19,7 +18,7 @@ export const metadata: Metadata = {
   description:
     'Independent guides and reviews of online love psychic reading services. We test the platforms, compare pricing, and recommend the ones worth your time. Reader-supported, no fluff.',
   alternates: {
-    canonical: 'https://www.lovepsychicguide.com',
+    canonical: 'https://www.lovepsychicguide.com/',
   },
 };
 
@@ -39,7 +38,7 @@ export default function HomePage() {
             We test the platforms, compare pricing, and write the reviews we
             wished existed when we first searched for clarity about a
             relationship. Start here if you&apos;re trying to figure out
-            whether a love reading is right for you — and which service is
+            whether a love reading is right for you, and which service is
             actually worth your time.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row gap-3 justify-center">
@@ -66,7 +65,7 @@ export default function HomePage() {
             <div className="text-purple-600 text-2xl mb-2">✦</div>
             <h2 className="font-bold text-lg mb-2">We pay our own way</h2>
             <p className="text-gray-600 text-sm leading-relaxed">
-              When we test a service, we sign up like any other user — no
+              When we test a service, we sign up like any other user, no
               comped accounts, no special advisor pairings. The reviews
               describe the actual experience.
             </p>
@@ -92,7 +91,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Topic guides — the editorial core */}
+      {/* Topic guides, the editorial core */}
       <section className="bg-gray-50 px-4 py-16">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold text-gray-900 mb-2 text-center">
@@ -113,7 +112,7 @@ export default function HomePage() {
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
                 What relationship research actually says about how often exes
-                return — and the specific signs that suggest it&apos;s likely
+                return, and the specific signs that suggest it&apos;s likely
                 versus unlikely in your situation.
               </p>
               <p className="text-purple-600 text-sm font-semibold mt-3">
@@ -181,9 +180,8 @@ export default function HomePage() {
           Looking for a reading?
         </h2>
         <p className="text-gray-700 leading-relaxed mb-6">
-          When self-reflection isn&apos;t enough — when the conversation in
-          your head keeps looping and you want an outside perspective —
-          a love-focused psychic reading can help. We&apos;ve reviewed the
+          When self-reflection isn&apos;t enough, when the conversation in
+          your head keeps looping and you want an outside perspective,           a love-focused psychic reading can help. We&apos;ve reviewed the
           major online services so you don&apos;t have to gamble on which
           one is worth your time.
         </p>

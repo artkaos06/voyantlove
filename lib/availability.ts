@@ -4,7 +4,7 @@
 // soir après 21h". A visitor arriving at 9am reads a line about tonight,
 // which reads as boilerplate and kills the urgency it was meant to create.
 // Worse, the pages advertise hours of 8h–2h while the badge claimed
-// "Voyants disponibles maintenant" around the clock — at 4am that is a false
+// "Voyants disponibles maintenant" around the clock, at 4am that is a false
 // availability claim AND the tap produces a call that cannot connect, so it
 // burns a paid click and the visitor's trust at once.
 //
@@ -20,7 +20,7 @@ export interface Availability {
   open: boolean;
   /** Pill at the top of the page. */
   badge: string;
-  /** Urgency line — scarcity while open, reopening time while closed. */
+  /** Urgency line, scarcity while open, reopening time while closed. */
   scarcity: string;
   /** Social-proof counter, scaled so it is plausible for the hour. */
   callsToday: string;
@@ -63,7 +63,7 @@ export function availabilityNow(now: Date = new Date()): Availability {
   const elapsed = (h < CLOSE_HOUR ? h + 24 : h) - OPEN_HOUR; // 0…17
   const calls = 18 + elapsed * 13; // ~18 at 08h → ~239 at 01h
 
-  // Slot scarcity tightens as the day fills up — reads as real inventory
+  // Slot scarcity tightens as the day fills up, reads as real inventory
   // rather than a constant "3 places" that never moves.
   const slots = elapsed < 6 ? 5 : elapsed < 11 ? 4 : 3;
 

@@ -10,13 +10,13 @@ interface VoyantTrustGridProps {
 
 /**
  * Display-only grid of voyant portraits for trust signal.
- * NOT clickable — pure social proof. Uses real photos from
+ * NOT clickable, pure social proof. Uses real photos from
  * monsitevoyance (https://www.monsitevoyance.com/vignaff/{ID}.jpg).
  *
  * Legal framing: presents voyants as a partner network, not as a promise
  * that any specific voyant will answer the phone. The phone CTA above
  * routes to the Goracash standard, where voyant attribution depends on
- * availability — hence the small disclaimer at the bottom.
+ * availability, hence the small disclaimer at the bottom.
  */
 export default function VoyantTrustGrid({
   limit = 6,

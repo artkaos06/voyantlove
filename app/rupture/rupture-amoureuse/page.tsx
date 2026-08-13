@@ -1,98 +1,73 @@
-import type { Metadata } from 'next';
 import Link from 'next/link';
-import { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getAuthorSchema } from '@/lib/schema';
-import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
-import VoyantFinalCTA from '@/components/VoyantFinalCTA';
+import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
-export const metadata: Metadata = {
+const config: ContentPageConfig = {
   title: 'Rupture Amoureuse : Comprendre et Surmonter selon la Voyance',
   description: 'Comprendre les raisons d\'une rupture amoureuse et guérir selon le tarot. Processus de deuil, timing et reconstruction après séparation.',
+  url: 'https://www.voyantlove.fr/rupture/rupture-amoureuse/',
   keywords: ['rupture amoureuse', 'séparation', 'fin relation', 'deuil amoureux', 'surmonter rupture'],
-  alternates: { canonical: 'https://www.voyantlove.fr/rupture/rupture-amoureuse/' },
-};
-
-export default function RuptureAmoureusePage() {
-  const articleSchema = getArticleSchema({
-    title: 'Rupture Amoureuse : Comprendre et Surmonter selon la Voyance',
-    description: 'Comprendre les raisons d\'une rupture amoureuse et guérir selon le tarot. Processus de deuil, timing et reconstruction après séparation.',
-    url: 'https://www.voyantlove.fr/rupture/rupture-amoureuse/',
-    datePublished: '2026-01-11',
-    dateModified: '2026-01-11',
-    keywords: ['rupture amoureuse', 'séparation', 'fin relation', 'deuil amoureux', 'surmonter rupture'],
-  });
-
-  const faqSchema = getFAQSchema([
-    {
-      question: 'Pourquoi ma relation s\'est terminée ?',
-      answer: 'Le tarot révèle les causes profondes d\'une rupture amoureuse : incompatibilité fondamentale de valeurs ou de projets de vie, schémas toxiques installés progressivement (jalousie, contrôle, critique), évolution divergente où l\'un a grandi tandis que l\'autre restait figé, ou timing karmique signifiant que la leçon de cette relation était accomplie. La plupart des ruptures impliquent au moins deux de ces facteurs simultanément. Un tirage spécialisé identifie précisément quelle dynamique a mené à votre séparation, ce qui facilite considérablement l\'acceptation et accélère le processus de guérison émotionnelle.',
-    },
-    {
-      question: 'Combien de temps pour guérir d\'une rupture amoureuse ?',
-      answer: 'La règle couramment admise est d\'un mois de guérison par année de relation. Cependant, le tarot affine ce timing selon votre situation personnelle. En moyenne, comptez 3 à 6 mois pour une relation de courte durée, 6 à 12 mois pour une relation de plusieurs années, et 12 à 18 mois pour une relation très longue ou un mariage. Des facteurs comme la présence d\'enfants, l\'infidélité, ou un attachement anxieux peuvent allonger ce délai. L\'essentiel n\'est pas la vitesse mais la qualité de la guérison : traverser chaque phase du deuil sans les éviter garantit une reconstruction solide et durable.',
-    },
-    {
-      question: 'Vais-je retrouver l\'amour après une rupture ?',
-      answer: 'Oui, et l\'expérience le confirme : la grande majorité des personnes retrouvent l\'amour après une guérison complète, souvent avec un partenaire mieux aligné avec qui elles sont devenues. La clé est de ne pas chercher à remplacer l\'ancien partenaire mais de se reconstruire d\'abord individuellement. Les personnes qui prennent le temps de comprendre les leçons de leur rupture et de guérir leurs blessures attirent naturellement des relations plus saines et plus épanouissantes. Le tarot révèle votre timing amoureux personnel et les qualités du futur partenaire qui correspond à votre nouvelle version.',
-    },
-    {
-      question: 'Comment savoir si je guéris bien d\'une rupture ?',
-      answer: 'Les signes d\'une guérison saine après une rupture amoureuse sont progressifs et mesurables. Vous pensez de moins en moins à votre ex au fil des semaines, les souvenirs deviennent neutres plutôt que douloureux, la joie de vivre revient naturellement, vous ressentez de la curiosité pour de nouvelles rencontres sans urgence ni besoin de combler un vide. Vous comprenez les leçons de la relation passée sans amertume. En revanche, si après 6 mois vous êtes toujours obsédé par votre ex, incapable de fonctionner normalement, ou si vous idéalisez la relation, consultez un professionnel. Le deuil qui stagne peut devenir un deuil pathologique.',
-    },
-  ]);
-
-  const breadcrumbSchema = getBreadcrumbSchema([
+  datePublished: '2026-01-11',
+  dateModified: '2026-01-11',
+  breadcrumb: [
     { name: 'Accueil', url: 'https://www.voyantlove.fr' },
     { name: 'Rupture', url: 'https://www.voyantlove.fr/rupture/' },
     { name: 'Rupture Amoureuse', url: 'https://www.voyantlove.fr/rupture/rupture-amoureuse/' },
-  ]);
+  ],
+  header: {
+    emoji: '💔',
+    h1: 'Rupture Amoureuse',
+    subtitle: 'Comprendre et surmonter avec le tarot',
+    gradient: 'from-gray-700 via-gray-800 to-gray-900',
+    backLink: { href: '/rupture', label: 'Retour aux Ruptures Amoureuses' },
+    anchors: [
+      { href: '#consultation', label: 'Comprendre', primary: true },
+      { href: '#guerison', label: 'Guérison' },
+    ],
+  },
+  accentText: 'text-gray-700',
+  stats: [
+    { icon: '⭐', value: 'Clarté', label: 'Sur votre situation' },
+    { icon: '💔', value: 'Compréhension', label: 'Des causes profondes' },
+    { icon: '⏰', value: '4-8 mois', label: 'Guérison' },
+    { icon: '🌱', value: 'Évolution', label: 'Personnelle assurée' },
+  ],
+  eeat: { colorScheme: 'red', method: 'Tarot de guérison émotionnelle' },
+  cta: { topic: 'rupture', slug: 'rupture-amoureuse' },
+  faq: [
+    {
+      q: 'Pourquoi ma relation s\'est terminée ?',
+      a: 'Le tarot révèle les causes profondes d\'une rupture amoureuse : incompatibilité fondamentale de valeurs ou de projets de vie, schémas toxiques installés progressivement (jalousie, contrôle, critique), évolution divergente où l\'un a grandi tandis que l\'autre restait figé, ou timing karmique signifiant que la leçon de cette relation était accomplie. La plupart des ruptures impliquent au moins deux de ces facteurs simultanément. Un tirage spécialisé identifie précisément quelle dynamique a mené à votre séparation, ce qui facilite considérablement l\'acceptation et accélère le processus de guérison émotionnelle.',
+    },
+    {
+      q: 'Combien de temps pour guérir d\'une rupture amoureuse ?',
+      a: 'La règle couramment admise est d\'un mois de guérison par année de relation. Cependant, le tarot affine ce timing selon votre situation personnelle. En moyenne, comptez 3 à 6 mois pour une relation de courte durée, 6 à 12 mois pour une relation de plusieurs années, et 12 à 18 mois pour une relation très longue ou un mariage. Des facteurs comme la présence d\'enfants, l\'infidélité, ou un attachement anxieux peuvent allonger ce délai. L\'essentiel n\'est pas la vitesse mais la qualité de la guérison : traverser chaque phase du deuil sans les éviter garantit une reconstruction solide et durable.',
+    },
+    {
+      q: 'Vais-je retrouver l\'amour après une rupture ?',
+      a: 'Oui, et l\'expérience le confirme : la grande majorité des personnes retrouvent l\'amour après une guérison complète, souvent avec un partenaire mieux aligné avec qui elles sont devenues. La clé est de ne pas chercher à remplacer l\'ancien partenaire mais de se reconstruire d\'abord individuellement. Les personnes qui prennent le temps de comprendre les leçons de leur rupture et de guérir leurs blessures attirent naturellement des relations plus saines et plus épanouissantes. Le tarot révèle votre timing amoureux personnel et les qualités du futur partenaire qui correspond à votre nouvelle version.',
+    },
+    {
+      q: 'Comment savoir si je guéris bien d\'une rupture ?',
+      a: 'Les signes d\'une guérison saine après une rupture amoureuse sont progressifs et mesurables. Vous pensez de moins en moins à votre ex au fil des semaines, les souvenirs deviennent neutres plutôt que douloureux, la joie de vivre revient naturellement, vous ressentez de la curiosité pour de nouvelles rencontres sans urgence ni besoin de combler un vide. Vous comprenez les leçons de la relation passée sans amertume. En revanche, si après 6 mois vous êtes toujours obsédé par votre ex, incapable de fonctionner normalement, ou si vous idéalisez la relation, consultez un professionnel. Le deuil qui stagne peut devenir un deuil pathologique.',
+    },
+  ],
+  related: [
+    { href: '/rupture', label: 'Surmonter une Séparation : Guide Complet' },
+    { href: '/rupture/oublier-son-ex', label: 'Oublier son Ex : Tourner la Page' },
+    { href: '/rupture/chagrin-damour', label: 'Chagrin d\'Amour : Guérir la Peine de Coeur' },
+    { href: '/reconquete/va-t-il-elle-revenir', label: 'Va-t-il Revenir ? Le Tarot Répond' },
+    { href: '/nouvelle-rencontre/quand-rencontre-amour', label: 'Quand Vais-je Rencontrer l\'Amour ?' },
+    { href: '/sentiments/maime-t-il-elle', label: 'M\'aime-t-il/elle Encore ?' },
+  ],
+};
 
-  const authorSchema = getAuthorSchema();
+export const metadata = contentMeta(config);
 
+export default function RuptureAmoureusePage() {
   return (
-    <main className="min-h-screen bg-gray-50">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(authorSchema) }}
-      />
-      <header className="bg-gradient-to-r from-gray-700 via-gray-800 to-gray-900 text-white py-16 px-4">
-        <div className="max-w-4xl mx-auto">
-          <Link href="/rupture" className="text-white/80 hover:text-white mb-4 inline-block">← Retour aux Ruptures Amoureuses</Link>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">💔 Rupture Amoureuse</h1>
-          <p className="text-xl opacity-95 mb-6">Comprendre et surmonter avec le tarot</p>
-          <div className="flex gap-4 flex-wrap">
-            <a href="#consultation" className="bg-white text-gray-800 px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition">Comprendre</a>
-            <a href="#guerison" className="border-2 border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-gray-800 transition">Guérison</a>
-          </div>
-        </div>
-      </header>
-
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <div className="bg-white rounded-xl shadow-md p-6 mb-8 grid grid-cols-4 gap-4 text-center">
-          <div><div className="text-3xl mb-1">⭐</div><div className="text-2xl font-bold text-gray-700">Clarté</div><div className="text-sm text-gray-600">Sur votre situation</div></div>
-          <div><div className="text-3xl mb-1">💔</div><div className="text-2xl font-bold text-gray-700">Compréhension</div><div className="text-sm text-gray-600">Des causes profondes</div></div>
-          <div><div className="text-3xl mb-1">⏰</div><div className="text-2xl font-bold text-gray-700">4-8 mois</div><div className="text-sm text-gray-600">Guérison</div></div>
-          <div><div className="text-3xl mb-1">🌱</div><div className="text-2xl font-bold text-gray-700">Évolution</div><div className="text-sm text-gray-600">Personnelle assurée</div></div>
-        </div>
-
-        <EEATSignal
-          colorScheme="red"
-          method="Tarot de guérison émotionnelle"
-        />
-
+    <ContentPage config={config}>
         <article className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-gray-700">
           <p className="text-lg leading-relaxed mb-4">Une <strong>rupture amoureuse</strong> est l'une des épreuves les plus douloureuses de l'existence humaine. Le <strong>tarot</strong> révèle avec précision pourquoi cette <strong>séparation</strong> devait avoir lieu et comment en guérir durablement. La <strong>voyance amoureuse</strong> éclaire le sens profond de votre souffrance et trace le chemin le plus sûr vers la reconstruction personnelle. Selon les études en psychologie, une rupture active les mêmes zones cérébrales que la douleur physique, ce qui explique pourquoi le <strong>deuil amoureux</strong> peut être aussi invalidant qu'une blessure corporelle. Comprendre cette réalité est la première étape pour traverser cette tempête intérieure avec bienveillance envers vous-même.</p>
           <p className="text-lg leading-relaxed mb-4">Le <strong>tirage de rupture</strong> explore les vraies raisons de la séparation, souvent cachées sous la surface des disputes et des reproches quotidiens. Il met en lumière la responsabilité de chacun, les <strong>schémas relationnels</strong> répétitifs, et les leçons karmiques à intégrer pour ne pas reproduire les mêmes erreurs. Chaque rupture, aussi douloureuse soit-elle, porte en elle les graines de votre évolution future. Le processus de <strong>deuil amoureux</strong> suit des phases identifiables que le tarot aide à traverser en vous rassurant : vous êtes exactement là où vous devez être, votre douleur est normale et temporaire, et elle finira par se transformer en sagesse. Si vous vivez un profond <Link href="/rupture/chagrin-damour" className="text-gray-700 hover:text-gray-900 underline font-medium">chagrin d'amour</Link>, sachez que cette souffrance est le signe que vous êtes capable d'aimer profondément.</p>
@@ -205,32 +180,6 @@ export default function RuptureAmoureusePage() {
             </div>
           </div>
         </section>
-
-        <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold mb-8">❓ Questions Fréquentes</h2>
-          <p className="text-lg font-semibold text-gray-800 mb-4">Voici les réponses aux questions les plus posées sur la rupture amoureuse : causes profondes, durée de guérison, chances de retrouver l'amour et signes concrets d'une reconstruction réussie.</p>
-          <div className="space-y-6">
-            <div className="border-b pb-6"><h3 className="text-xl font-bold mb-3">Pourquoi ma relation s'est terminée ?</h3><p className="text-gray-700">Le <strong>tarot</strong> révèle les causes profondes d'une <strong>rupture amoureuse</strong> : incompatibilité fondamentale de valeurs ou de projets de vie, schémas toxiques installés progressivement comme la jalousie ou le contrôle, évolution divergente où l'un a grandi tandis que l'autre restait figé, ou timing karmique signifiant que la leçon de cette relation était accomplie. Selon les études, la plupart des ruptures impliquent au moins deux de ces facteurs simultanément. Un <strong>tirage spécialisé</strong> identifie précisément quelle dynamique a mené à votre séparation, ce qui facilite considérablement l'acceptation et accélère le processus de guérison émotionnelle.</p></div>
-            <div className="border-b pb-6"><h3 className="text-xl font-bold mb-3">Combien de temps pour guérir d'une rupture amoureuse ?</h3><p className="text-gray-700">La règle couramment admise par les thérapeutes est d'<strong>un mois de guérison par année de relation</strong>. Le tarot affine ce timing en fonction de votre situation personnelle. En moyenne, comptez 3 à 6 mois pour une relation de courte durée, 6 à 12 mois pour une relation de plusieurs années, et 12 à 18 mois pour une relation très longue ou un mariage. Des facteurs comme la présence d'enfants, l'infidélité, ou un <strong>attachement anxieux</strong> peuvent allonger ce délai. L'essentiel n'est pas la vitesse mais la qualité de la guérison : traverser chaque phase du deuil sans les éviter garantit une <strong>reconstruction solide</strong> et durable.</p></div>
-            <div className="border-b pb-6"><h3 className="text-xl font-bold mb-3">Vais-je retrouver l'amour après une rupture ?</h3><p className="text-gray-700">Oui, et l'expérience le confirme : <strong>la grande majorité des personnes retrouvent l'amour</strong> après une guérison complète, souvent avec un partenaire mieux aligné avec qui elles sont devenues. La clé est de ne pas chercher à remplacer l'ancien partenaire mais de se reconstruire d'abord individuellement. Les personnes qui prennent le temps de comprendre les leçons de leur rupture et de guérir leurs blessures attirent naturellement des relations plus saines. Le tarot révèle votre <strong>timing amoureux</strong> personnel et les qualités du futur partenaire qui correspond à votre nouvelle version. Pour approfondir cette question, découvrez nos guidances sur la possibilité de <Link href="/nouvelle-rencontre/quand-rencontre-amour" className="text-gray-700 hover:text-gray-900 underline font-medium">nouvelle rencontre</Link> après une séparation.</p></div>
-            <div><h3 className="text-xl font-bold mb-3">Comment savoir si je guéris bien d'une rupture ?</h3><p className="text-gray-700">Les signes d'une <strong>guérison saine</strong> après une rupture amoureuse sont progressifs et mesurables. Vous pensez de moins en moins à votre ex au fil des semaines, les souvenirs deviennent neutres plutôt que douloureux, la <strong>joie de vivre</strong> revient naturellement, vous ressentez de la curiosité pour de nouvelles rencontres sans urgence ni besoin de combler un vide. Vous comprenez les leçons de la relation passée sans amertume. En revanche, si après 6 mois vous êtes toujours obsédé(e) par votre ex, incapable de fonctionner normalement, ou si vous idéalisez la relation, consultez un professionnel. Le deuil qui stagne peut devenir un <strong>deuil pathologique</strong> nécessitant un accompagnement spécialisé.</p></div>
-          </div>
-        </section>
-
-        <div className="bg-gray-100 rounded-xl p-6 mb-8">
-          <h3 className="font-bold text-lg mb-4">📚 Articles Connexes</h3>
-          <div className="space-y-2">
-            <Link href="/rupture" className="block text-gray-700 hover:text-gray-900 font-medium">→ Surmonter une Séparation : Guide Complet</Link>
-            <Link href="/rupture/oublier-son-ex" className="block text-gray-700 hover:text-gray-900 font-medium">→ Oublier son Ex : Tourner la Page</Link>
-            <Link href="/rupture/chagrin-damour" className="block text-gray-700 hover:text-gray-900 font-medium">→ Chagrin d'Amour : Guérir la Peine de Coeur</Link>
-            <Link href="/reconquete/va-t-il-elle-revenir" className="block text-gray-700 hover:text-gray-900 font-medium">→ Va-t-il Revenir ? Le Tarot Répond</Link>
-            <Link href="/nouvelle-rencontre/quand-rencontre-amour" className="block text-gray-700 hover:text-gray-900 font-medium">→ Quand Vais-je Rencontrer l'Amour ?</Link>
-            <Link href="/sentiments/maime-t-il-elle" className="block text-gray-700 hover:text-gray-900 font-medium">→ M'aime-t-il/elle Encore ?</Link>
-          </div>
-        </div>
-
-        <VoyantFinalCTA topic="rupture" source="rupture-amoureuse-final" />
-      </div>
-    </main>
+    </ContentPage>
   );
 }

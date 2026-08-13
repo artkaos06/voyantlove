@@ -1,104 +1,78 @@
-import type { Metadata } from 'next';
 import Link from 'next/link';
-import { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getAuthorSchema } from '@/lib/schema';
-import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
-import VoyantFinalCTA from '@/components/VoyantFinalCTA';
+import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
-export const metadata: Metadata = {
+const config: ContentPageConfig = {
   title: 'Compatibilit\u00e9 Amoureuse : \u00cates-vous Faits l\u2019Un pour l\u2019Autre ? | Voyance',
   description: 'Analyse de compatibilit\u00e9 amoureuse par le tarot et l\u2019astrologie. Synastrie, \u00e2me s\u0153ur, flamme jumelle : d\u00e9couvrez si vous \u00eates vraiment compatibles.',
+  url: 'https://www.voyantlove.fr/sentiments/compatibilite-amoureuse/',
   keywords: ['compatibilit\u00e9 amoureuse', 'compatibilit\u00e9 couple voyance', 'synastrie amoureuse', 'sommes-nous faits l\'un pour l\'autre', 'compatibilit\u00e9 astrale'],
-  alternates: {
-    canonical: 'https://www.voyantlove.fr/sentiments/compatibilite-amoureuse/',
-  },
-};
-
-export default function CompatibiliteAmoureusePage() {
-  const articleSchema = getArticleSchema({
-    title: 'Compatibilit\u00e9 Amoureuse : \u00cates-vous Faits l\u2019Un pour l\u2019Autre ? | Voyance',
-    description: 'Analyse de compatibilit\u00e9 amoureuse par le tarot et l\u2019astrologie. Synastrie, \u00e2me s\u0153ur, flamme jumelle : d\u00e9couvrez si vous \u00eates vraiment compatibles.',
-    url: 'https://www.voyantlove.fr/sentiments/compatibilite-amoureuse/',
-    datePublished: '2026-02-09',
-    dateModified: '2026-02-09',
-    keywords: ['compatibilit\u00e9 amoureuse', 'compatibilit\u00e9 couple voyance', 'synastrie amoureuse', 'sommes-nous faits l\'un pour l\'autre', 'compatibilit\u00e9 astrale'],
-  });
-
-  const breadcrumbSchema = getBreadcrumbSchema([
+  datePublished: '2026-02-09',
+  dateModified: '2026-02-09',
+  breadcrumb: [
     { name: 'Accueil', url: 'https://www.voyantlove.fr' },
     { name: 'Sentiments', url: 'https://www.voyantlove.fr/sentiments/' },
     { name: 'Compatibilit\u00e9 Amoureuse', url: 'https://www.voyantlove.fr/sentiments/compatibilite-amoureuse/' },
-  ]);
+  ],
+  header: {
+    emoji: '\ud83d\udc95',
+    h1: 'Compatibilit\u00e9 Amoureuse : \u00cates-vous Faits l\u2019Un pour l\u2019Autre ?',
+    subtitle: 'Analyse de compatibilit\u00e9 par le tarot et la synastrie astrologique',
+    gradient: 'from-pink-500 via-rose-500 to-red-500',
+    backLink: { href: '/sentiments', label: 'Retour aux Sentiments' },
+    anchors: [
+      { href: '#consultation', label: 'Analyse de Compatibilit\u00e9', primary: true },
+      { href: '#piliers', label: 'Les 7 Piliers du Couple' },
+    ],
+  },
+  accentText: 'text-rose-600',
+  stats: [
+    { icon: '\ud83c\udfaf', value: 'Reconnue', label: 'Expertise compatibilit\u00e9' },
+    { icon: '\ud83d\udc91', value: '8,200+', label: 'Couples analys\u00e9s' },
+    { icon: '\u2b50', value: '4.9/5', label: 'Satisfaction' },
+    { icon: '\ud83d\udd2e', value: '15 ans', label: 'Exp\u00e9rience' },
+  ],
+  eeat: { colorScheme: 'rose', method: 'Tarot de compatibilit\u00e9 et synastrie astrologique' },
+  cta: { topic: 'sentiments', slug: 'compatibilite-amoureuse' },
+  faq: [
+    {
+      q: 'Sommes-nous vraiment compatibles ?',
+      a: 'La compatibilit\u00e9 amoureuse s\u2019\u00e9value \u00e0 travers plusieurs dimensions compl\u00e9mentaires. Le tarot de compatibilit\u00e9 analyse l\u2019harmonie \u00e9motionnelle, la communication profonde et la vision commune du couple. La synastrie astrologique \u00e9tudie les aspects plan\u00e9taires entre vos deux th\u00e8mes nataux pour mesurer l\u2019attraction, la stabilit\u00e9 et le potentiel de durabilit\u00e9. Une vraie compatibilit\u00e9 ne signifie pas l\u2019absence de conflits, mais la capacit\u00e9 \u00e0 les traverser ensemble. Un voyant exp\u00e9riment\u00e9 croise ces deux approches pour offrir une \u00e9valuation fiable et nuanc\u00e9e de votre lien amoureux.',
+    },
+    {
+      q: 'La synastrie astrologique est-elle fiable ?',
+      a: 'La synastrie astrologique est un outil ancestral d\u2019une grande profondeur. En \u00e9tudiant les aspects entre V\u00e9nus, Mars, la Lune et le Soleil de chaque partenaire, elle r\u00e9v\u00e8le les zones d\u2019harmonie naturelle et les points de friction potentiels. Un trigone V\u00e9nus-Mars indique une attraction magn\u00e9tique puissante, tandis qu\u2019un carr\u00e9 Lune-Saturne signale des tensions \u00e9motionnelles r\u00e9currentes. La fiabilit\u00e9 augmente lorsqu\u2019on combine la synastrie avec un tirage de tarot, car le tarot capte les \u00e9nergies actuelles l\u00e0 o\u00f9 l\u2019astrologie montre les tendances de fond.',
+    },
+    {
+      q: 'Peut-on am\u00e9liorer la compatibilit\u00e9 de couple ?',
+      a: 'Oui, la compatibilit\u00e9 amoureuse n\u2019est pas fig\u00e9e. Le tarot r\u00e9v\u00e8le les blocages sp\u00e9cifiques qui entravent votre harmonie de couple et propose des pistes concr\u00e8tes. Travailler sur la communication, d\u00e9velopper l\u2019empathie mutuelle et comprendre les besoins profonds de l\u2019autre transforme la dynamique relationnelle. L\u2019astrologie identifie vos diff\u00e9rences fondamentales pour mieux les accepter. Un carr\u00e9 plan\u00e9taire difficile en synastrie devient une opportunit\u00e9 de croissance plut\u00f4t qu\u2019une fatalit\u00e9. La cl\u00e9 r\u00e9side dans la volont\u00e9 commune d\u2019\u00e9voluer ensemble.',
+    },
+    {
+      q: 'Compatibilit\u00e9 ou amour : quelle diff\u00e9rence ?',
+      a: 'L\u2019amour est une \u00e9motion intense, un \u00e9lan du c\u0153ur qui peut na\u00eetre entre deux personnes tr\u00e8s diff\u00e9rentes. La compatibilit\u00e9 amoureuse, en revanche, mesure la capacit\u00e9 de deux \u00eatres \u00e0 construire ensemble sur la dur\u00e9e. On peut aimer profond\u00e9ment sans \u00eatre compatible : valeurs divergentes, rythmes de vie oppos\u00e9s, visions d\u2019avenir contradictoires. Inversement, une forte compatibilit\u00e9 astrale sans flamme passionnelle cr\u00e9e une relation confortable mais fade. L\u2019id\u00e9al r\u00e9v\u00e9l\u00e9 par le tarot combine amour authentique et compatibilit\u00e9 profonde pour une relation \u00e9panouissante et durable.',
+    },
+    {
+      q: 'Le tarot pr\u00e9dit-il l\u2019avenir d\u2019un couple ?',
+      a: 'Le tarot de compatibilit\u00e9 ne se contente pas de mesurer l\u2019harmonie pr\u00e9sente : il r\u00e9v\u00e8le \u00e9galement la trajectoire probable de votre relation. Les arcanes majeurs comme Les Amoureux, Le Soleil ou Le Monde annoncent un avenir lumineux pour les couples fortement compatibles. Le Dix de Coupe confirme l\u2019accomplissement familial. Toutefois, m\u00eame les couples les plus compatibles traversent des \u00e9preuves. Le tarot identifie ces d\u00e9fis \u00e0 venir et vous pr\u00e9pare \u00e0 les affronter ensemble, transformant chaque obstacle en tremplin vers une union plus solide.',
+    },
+  ],
+  related: [
+    { href: '/sentiments', label: 'Sentiments Amoureux : Toutes nos Guidances' },
+    { href: '/sentiments/maime-t-il-elle', label: 'M\u2019aime-t-il/elle Vraiment ?' },
+    { href: '/sentiments/avenir-amoureux', label: 'Mon Avenir Amoureux : Pr\u00e9dictions' },
+    { href: '/sentiments/signes-il-elle-maime', label: 'Les Signes qu\u2019il/elle M\u2019aime' },
+    { href: '/nouvelle-rencontre/signes-ame-soeur', label: 'Reconna\u00eetre les Signes de l\u2019\u00c2me S\u0153ur' },
+    { href: '/crise-couple', label: 'Surmonter une Crise de Couple' },
+  ],
+};
 
-  const authorSchema = getAuthorSchema();
+export const metadata = contentMeta(config);
 
-  const faqSchema = getFAQSchema([
-    {
-      question: 'Sommes-nous vraiment compatibles ?',
-      answer: 'La compatibilit\u00e9 amoureuse s\u2019\u00e9value \u00e0 travers plusieurs dimensions compl\u00e9mentaires. Le tarot de compatibilit\u00e9 analyse l\u2019harmonie \u00e9motionnelle, la communication profonde et la vision commune du couple. La synastrie astrologique \u00e9tudie les aspects plan\u00e9taires entre vos deux th\u00e8mes nataux pour mesurer l\u2019attraction, la stabilit\u00e9 et le potentiel de durabilit\u00e9. Une vraie compatibilit\u00e9 ne signifie pas l\u2019absence de conflits, mais la capacit\u00e9 \u00e0 les traverser ensemble. Un voyant exp\u00e9riment\u00e9 croise ces deux approches pour offrir une \u00e9valuation fiable et nuanc\u00e9e de votre lien amoureux.',
-    },
-    {
-      question: 'La synastrie astrologique est-elle fiable ?',
-      answer: 'La synastrie astrologique est un outil ancestral d\u2019une grande profondeur. En \u00e9tudiant les aspects entre V\u00e9nus, Mars, la Lune et le Soleil de chaque partenaire, elle r\u00e9v\u00e8le les zones d\u2019harmonie naturelle et les points de friction potentiels. Un trigone V\u00e9nus-Mars indique une attraction magn\u00e9tique puissante, tandis qu\u2019un carr\u00e9 Lune-Saturne signale des tensions \u00e9motionnelles r\u00e9currentes. La fiabilit\u00e9 augmente lorsqu\u2019on combine la synastrie avec un tirage de tarot, car le tarot capte les \u00e9nergies actuelles l\u00e0 o\u00f9 l\u2019astrologie montre les tendances de fond.',
-    },
-    {
-      question: 'Peut-on am\u00e9liorer la compatibilit\u00e9 de couple ?',
-      answer: 'Oui, la compatibilit\u00e9 amoureuse n\u2019est pas fig\u00e9e. Le tarot r\u00e9v\u00e8le les blocages sp\u00e9cifiques qui entravent votre harmonie de couple et propose des pistes concr\u00e8tes. Travailler sur la communication, d\u00e9velopper l\u2019empathie mutuelle et comprendre les besoins profonds de l\u2019autre transforme la dynamique relationnelle. L\u2019astrologie identifie vos diff\u00e9rences fondamentales pour mieux les accepter. Un carr\u00e9 plan\u00e9taire difficile en synastrie devient une opportunit\u00e9 de croissance plut\u00f4t qu\u2019une fatalit\u00e9. La cl\u00e9 r\u00e9side dans la volont\u00e9 commune d\u2019\u00e9voluer ensemble.',
-    },
-    {
-      question: 'Compatibilit\u00e9 ou amour : quelle diff\u00e9rence ?',
-      answer: 'L\u2019amour est une \u00e9motion intense, un \u00e9lan du c\u0153ur qui peut na\u00eetre entre deux personnes tr\u00e8s diff\u00e9rentes. La compatibilit\u00e9 amoureuse, en revanche, mesure la capacit\u00e9 de deux \u00eatres \u00e0 construire ensemble sur la dur\u00e9e. On peut aimer profond\u00e9ment sans \u00eatre compatible : valeurs divergentes, rythmes de vie oppos\u00e9s, visions d\u2019avenir contradictoires. Inversement, une forte compatibilit\u00e9 astrale sans flamme passionnelle cr\u00e9e une relation confortable mais fade. L\u2019id\u00e9al r\u00e9v\u00e9l\u00e9 par le tarot combine amour authentique et compatibilit\u00e9 profonde pour une relation \u00e9panouissante et durable.',
-    },
-    {
-      question: 'Le tarot pr\u00e9dit-il l\u2019avenir d\u2019un couple ?',
-      answer: 'Le tarot de compatibilit\u00e9 ne se contente pas de mesurer l\u2019harmonie pr\u00e9sente : il r\u00e9v\u00e8le \u00e9galement la trajectoire probable de votre relation. Les arcanes majeurs comme Les Amoureux, Le Soleil ou Le Monde annoncent un avenir lumineux pour les couples fortement compatibles. Le Dix de Coupe confirme l\u2019accomplissement familial. Toutefois, m\u00eame les couples les plus compatibles traversent des \u00e9preuves. Le tarot identifie ces d\u00e9fis \u00e0 venir et vous pr\u00e9pare \u00e0 les affronter ensemble, transformant chaque obstacle en tremplin vers une union plus solide.',
-    },
-  ]);
+export default function CompatibiliteAmoureusePage() {
 
   return (
-    <main className="min-h-screen bg-gray-50">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(authorSchema) }}
-      />
-
-      {/* Header */}
-      <header className="bg-gradient-to-r from-pink-500 via-rose-500 to-red-500 text-white py-16 px-4">
-        <div className="max-w-4xl mx-auto">
-          <Link href="/sentiments" className="text-white/80 hover:text-white mb-4 inline-block">&larr; Retour aux Sentiments</Link>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">💕 Compatibilit&eacute; Amoureuse : &Ecirc;tes-vous Faits l&rsquo;Un pour l&rsquo;Autre ?</h1>
-          <p className="text-xl opacity-95 mb-6">Analyse de compatibilit&eacute; par le tarot et la synastrie astrologique</p>
-          <div className="flex gap-4 flex-wrap">
-            <a href="#consultation" className="bg-white text-rose-600 px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition">Analyse de Compatibilit&eacute;</a>
-            <a href="#piliers" className="border-2 border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-rose-600 transition">Les 7 Piliers du Couple</a>
-          </div>
-        </div>
-      </header>
-
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        {/* Stats bar */}
-        <div className="bg-white rounded-xl shadow-md p-6 mb-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-          <div><div className="text-3xl mb-1">🎯</div><div className="text-2xl font-bold text-rose-600">Reconnue</div><div className="text-sm text-gray-600">Expertise compatibilit&eacute;</div></div>
-          <div><div className="text-3xl mb-1">💑</div><div className="text-2xl font-bold text-rose-600">8,200+</div><div className="text-sm text-gray-600">Couples analys&eacute;s</div></div>
-          <div><div className="text-3xl mb-1">⭐</div><div className="text-2xl font-bold text-rose-600">4.9/5</div><div className="text-sm text-gray-600">Satisfaction</div></div>
-          <div><div className="text-3xl mb-1">🔮</div><div className="text-2xl font-bold text-rose-600">15 ans</div><div className="text-sm text-gray-600">Exp&eacute;rience</div></div>
-        </div>
-
-        {/* EEAT Signal */}
-        <EEATSignal colorScheme="rose" method="Tarot de compatibilit&eacute; et synastrie astrologique" />
+    <ContentPage config={config}>
 
         {/* Answer Capsule Article */}
         <article className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-rose-600">
@@ -339,54 +313,6 @@ export default function CompatibiliteAmoureusePage() {
           </div>
         </section>
 
-        {/* FAQ Section */}
-        <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">❓ Questions Fr&eacute;quentes sur la Compatibilit&eacute; Amoureuse</h2>
-          <p className="text-lg font-semibold text-gray-800 mb-4">Les reponses aux questions les plus posees sur la compatibilite de couple, la synastrie astrologique et l'analyse des liens amoureux par le tarot.</p>
-          <div className="space-y-6">
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Sommes-nous vraiment compatibles ?</h3>
-              <p className="text-gray-700 leading-relaxed">La <strong>compatibilit&eacute; amoureuse</strong> s&rsquo;&eacute;value &agrave; travers plusieurs dimensions compl&eacute;mentaires. Le <strong>tarot de compatibilit&eacute;</strong> analyse l&rsquo;harmonie &eacute;motionnelle, la communication profonde et la vision commune du couple. La <strong>synastrie astrologique</strong> &eacute;tudie les aspects plan&eacute;taires entre vos deux th&egrave;mes nataux pour mesurer l&rsquo;attraction, la stabilit&eacute; et le potentiel de durabilit&eacute;. Une vraie compatibilit&eacute; ne signifie pas l&rsquo;absence de conflits, mais la capacit&eacute; &agrave; les traverser ensemble. Un <strong>voyant</strong> exp&eacute;riment&eacute; croise ces deux approches pour offrir une &eacute;valuation fiable et nuanc&eacute;e de votre lien amoureux.</p>
-            </div>
-
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">La synastrie astrologique est-elle fiable ?</h3>
-              <p className="text-gray-700 leading-relaxed">La <strong>synastrie astrologique</strong> est un outil ancestral d&rsquo;une grande profondeur. En &eacute;tudiant les aspects entre <strong>V&eacute;nus</strong>, <strong>Mars</strong>, la <strong>Lune</strong> et le <strong>Soleil</strong> de chaque partenaire, elle r&eacute;v&egrave;le les zones d&rsquo;harmonie naturelle et les points de friction potentiels. Un <strong>trigone</strong> V&eacute;nus-Mars indique une attraction magn&eacute;tique puissante, tandis qu&rsquo;un <strong>carr&eacute;</strong> Lune-Saturne signale des tensions &eacute;motionnelles r&eacute;currentes. La fiabilit&eacute; augmente lorsqu&rsquo;on combine la synastrie avec un tirage de <strong>tarot</strong>, car le tarot capte les &eacute;nergies actuelles l&agrave; o&ugrave; l&rsquo;astrologie montre les tendances de fond.</p>
-            </div>
-
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Peut-on am&eacute;liorer la compatibilit&eacute; de couple ?</h3>
-              <p className="text-gray-700 leading-relaxed">Oui, la <strong>compatibilit&eacute; amoureuse</strong> n&rsquo;est pas fig&eacute;e. Le <strong>tarot</strong> r&eacute;v&egrave;le les blocages sp&eacute;cifiques qui entravent votre harmonie de couple et propose des pistes concr&egrave;tes. Travailler sur la <strong>communication</strong>, d&eacute;velopper l&rsquo;empathie mutuelle et comprendre les besoins profonds de l&rsquo;autre transforme la dynamique relationnelle. L&rsquo;<strong>astrologie</strong> identifie vos diff&eacute;rences fondamentales pour mieux les accepter. Un <strong>carr&eacute; plan&eacute;taire</strong> difficile en synastrie devient une opportunit&eacute; de croissance plut&ocirc;t qu&rsquo;une fatalit&eacute;. La cl&eacute; r&eacute;side dans la volont&eacute; commune d&rsquo;&eacute;voluer ensemble.</p>
-            </div>
-
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Compatibilit&eacute; ou amour : quelle diff&eacute;rence ?</h3>
-              <p className="text-gray-700 leading-relaxed">L&rsquo;<strong>amour</strong> est une &eacute;motion intense, un &eacute;lan du c&oelig;ur qui peut na&icirc;tre entre deux personnes tr&egrave;s diff&eacute;rentes. La <strong>compatibilit&eacute; amoureuse</strong>, en revanche, mesure la capacit&eacute; de deux &ecirc;tres &agrave; construire ensemble sur la dur&eacute;e. On peut aimer profond&eacute;ment sans &ecirc;tre <strong>compatible</strong> : valeurs divergentes, rythmes de vie oppos&eacute;s, visions d&rsquo;avenir contradictoires. Inversement, une forte <strong>compatibilit&eacute; astrale</strong> sans flamme passionnelle cr&eacute;e une relation confortable mais fade. L&rsquo;id&eacute;al r&eacute;v&eacute;l&eacute; par le <strong>tarot</strong> combine amour authentique et compatibilit&eacute; profonde pour une relation &eacute;panouissante et durable.</p>
-            </div>
-
-            <div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Le tarot pr&eacute;dit-il l&rsquo;avenir d&rsquo;un couple ?</h3>
-              <p className="text-gray-700 leading-relaxed">Le <strong>tarot de compatibilit&eacute;</strong> ne se contente pas de mesurer l&rsquo;harmonie pr&eacute;sente : il r&eacute;v&egrave;le &eacute;galement la trajectoire probable de votre <strong>relation</strong>. Les arcanes majeurs comme <strong>Les Amoureux</strong>, <strong>Le Soleil</strong> ou <strong>Le Monde</strong> annoncent un avenir lumineux pour les couples fortement compatibles. Le <strong>Dix de Coupe</strong> confirme l&rsquo;accomplissement familial. Toutefois, m&ecirc;me les couples les plus compatibles traversent des &eacute;preuves. Le tarot identifie ces d&eacute;fis &agrave; venir et vous pr&eacute;pare &agrave; les affronter ensemble, transformant chaque obstacle en tremplin vers une union plus solide.</p>
-            </div>
-          </div>
-        </section>
-
-        {/* Articles Connexes */}
-        <div className="bg-gray-100 rounded-xl p-6 mb-8">
-          <h3 className="font-bold text-lg mb-4 text-gray-900">📚 Articles Connexes</h3>
-          <div className="space-y-2">
-            <Link href="/sentiments" className="block text-rose-600 hover:text-rose-800 font-medium">&rarr; Sentiments Amoureux : Toutes nos Guidances</Link>
-            <Link href="/sentiments/maime-t-il-elle" className="block text-rose-600 hover:text-rose-800 font-medium">&rarr; M&rsquo;aime-t-il/elle Vraiment ?</Link>
-            <Link href="/sentiments/avenir-amoureux" className="block text-rose-600 hover:text-rose-800 font-medium">&rarr; Mon Avenir Amoureux : Pr&eacute;dictions</Link>
-            <Link href="/sentiments/signes-il-elle-maime" className="block text-rose-600 hover:text-rose-800 font-medium">&rarr; Les Signes qu&rsquo;il/elle M&rsquo;aime</Link>
-            <Link href="/nouvelle-rencontre/signes-ame-soeur" className="block text-rose-600 hover:text-rose-800 font-medium">&rarr; Reconna&icirc;tre les Signes de l&rsquo;&Acirc;me S&oelig;ur</Link>
-            <Link href="/crise-couple" className="block text-rose-600 hover:text-rose-800 font-medium">&rarr; Surmonter une Crise de Couple</Link>
-          </div>
-        </div>
-
-        {/* CTA Footer */}
-        <VoyantFinalCTA topic="sentiments" source="compatibilite-amoureuse-final" />
-      </div>
-    </main>
+      </ContentPage>
   );
 }

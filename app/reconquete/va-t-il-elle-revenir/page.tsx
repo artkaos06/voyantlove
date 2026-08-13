@@ -1,96 +1,73 @@
-import type { Metadata } from 'next';
 import Link from 'next/link';
-import { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getAuthorSchema } from '@/lib/schema';
-import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
-import VoyantFinalCTA from '@/components/VoyantFinalCTA';
+import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
-export const metadata: Metadata = {
+const config: ContentPageConfig = {
   title: 'Mon Ex Va-t-il Revenir ? Réponse du Tarot et Voyance | Prédiction',
   description: 'Votre ex va-t-il/elle revenir ? Le tarot répond à cette question cruciale. Découvrez les signes de retour, le timing probable et ce qu\'il/elle ressent vraiment.',
+  url: 'https://www.voyantlove.fr/reconquete/va-t-il-elle-revenir/',
   keywords: ['va-t-il revenir', 'mon ex va revenir', 'retour ex tarot', 'prédiction retour', 'signes retour ex'],
-  alternates: {
-    canonical: 'https://www.voyantlove.fr/reconquete/va-t-il-elle-revenir/',
-  },
-};
-
-export default function VaTilRevenirPage() {
-  const articleSchema = getArticleSchema({
-    title: 'Mon Ex Va-t-il Revenir ? Réponse du Tarot et Voyance | Prédiction',
-    description: 'Votre ex va-t-il/elle revenir ? Le tarot répond à cette question cruciale. Découvrez les signes de retour, le timing probable et ce qu\'il/elle ressent vraiment.',
-    url: 'https://www.voyantlove.fr/reconquete/va-t-il-elle-revenir/',
-    datePublished: '2026-01-14',
-    dateModified: '2026-01-14',
-    keywords: ['va-t-il revenir', 'mon ex va revenir', 'retour ex tarot', 'prédiction retour', 'signes retour ex'],
-  });
-
-  const faqSchema = getFAQSchema([
-    {
-      question: 'Le tarot peut-il prédire le retour de mon ex ?',
-      answer: 'Le tarot indique les probabilités selon les énergies actuelles et les choix de libre arbitre de chacun. Il révèle si un retour est très probable, possible, improbable ou impossible. Un bon voyant vous donnera un pourcentage honnête basé sur les cartes et ne vous promettra jamais un retour à 100% car le futur reste mouvant.',
-    },
-    {
-      question: 'Combien de temps faut-il attendre pour savoir ?',
-      answer: 'Le tarot peut donner un timing : quelques semaines, 3 mois, 6 mois, 1 an. Si après ce délai rien ne se passe, c\'est qu\'il faut lâcher prise. Attention aux faux espoirs : si après 6 mois de silence total votre ex n\'a fait aucun signe, les chances diminuent drastiquement.',
-    },
-    {
-      question: 'Quels sont les signes astrologiques d\'un retour imminent ?',
-      answer: 'Vénus rétrograde dans votre signe ou celui de votre ex, éclipse sur votre axe relationnel (Descendant), transit de Vénus sur votre Soleil natal, nouvelle lune en maison 7. Ces périodes astrologiques créent des ouvertures propices aux retours. Un voyant astrologue peut analyser votre thème pour identifier ces moments.',
-    },
-    {
-      question: 'Dois-je attendre mon ex ou tourner la page ?',
-      answer: 'Le tarot répond clairement à cette question cruciale. S\'il montre un retour probable dans un délai raisonnable (3-6 mois) et que ce retour est bénéfique, vous pouvez attendre tout en vivant votre vie. S\'il montre que c\'est terminé, tournez la page pour votre bien. Un voyant vous conseille honnêtement.',
-    },
-  ]);
-
-  const breadcrumbSchema = getBreadcrumbSchema([
+  datePublished: '2026-01-14',
+  dateModified: '2026-01-14',
+  breadcrumb: [
     { name: 'Accueil', url: 'https://www.voyantlove.fr' },
     { name: 'Reconquête', url: 'https://www.voyantlove.fr/reconquete/' },
     { name: 'Va-t-il/elle Revenir', url: 'https://www.voyantlove.fr/reconquete/va-t-il-elle-revenir/' },
-  ]);
+  ],
+  header: {
+    emoji: '❓',
+    h1: 'Va-t-il/elle Revenir ?',
+    subtitle: 'La réponse honnête du tarot à votre question la plus importante',
+    gradient: 'from-purple-600 via-indigo-600 to-blue-600',
+    backLink: { href: '/reconquete', label: 'Retour à la Reconquête' },
+    anchors: [
+      { href: '#consultation', label: 'Tirage Retour Personnalisé', primary: true },
+      { href: '#signes', label: 'Voir les Signes' },
+    ],
+  },
+  accentText: 'text-purple-600',
+  stats: [
+    { icon: '⭐', value: '4.8/5', label: '287 avis' },
+    { icon: '↩️', value: 'Fréquent', label: 'Retours observés' },
+    { icon: '⏰', value: '3-6 mois', label: 'Délai moyen' },
+    { icon: '🔮', value: 'Reconnue', label: 'Expertise' },
+  ],
+  eeat: { colorScheme: 'blue', method: 'Tarot prédictif et astrologie' },
+  cta: { topic: 'reconquete', slug: 'va-t-il-elle-revenir' },
+  faq: [
+    {
+      q: 'Le tarot peut-il prédire le retour de mon ex ?',
+      a: 'Le tarot indique les probabilités selon les énergies actuelles et les choix de libre arbitre de chacun. Il révèle si un retour est très probable, possible, improbable ou impossible. Un bon voyant vous donnera un pourcentage honnête basé sur les cartes et ne vous promettra jamais un retour à 100% car le futur reste mouvant.',
+    },
+    {
+      q: 'Combien de temps faut-il attendre pour savoir ?',
+      a: 'Le tarot peut donner un timing : quelques semaines, 3 mois, 6 mois, 1 an. Si après ce délai rien ne se passe, c\'est qu\'il faut lâcher prise. Attention aux faux espoirs : si après 6 mois de silence total votre ex n\'a fait aucun signe, les chances diminuent drastiquement.',
+    },
+    {
+      q: 'Quels sont les signes astrologiques d\'un retour imminent ?',
+      a: 'Vénus rétrograde dans votre signe ou celui de votre ex, éclipse sur votre axe relationnel (Descendant), transit de Vénus sur votre Soleil natal, nouvelle lune en maison 7. Ces périodes astrologiques créent des ouvertures propices aux retours. Un voyant astrologue peut analyser votre thème pour identifier ces moments.',
+    },
+    {
+      q: 'Dois-je attendre mon ex ou tourner la page ?',
+      a: 'Le tarot répond clairement à cette question cruciale. S\'il montre un retour probable dans un délai raisonnable (3-6 mois) et que ce retour est bénéfique, vous pouvez attendre tout en vivant votre vie. S\'il montre que c\'est terminé, tournez la page pour votre bien. Un voyant vous conseille honnêtement.',
+    },
+  ],
+  related: [
+    { href: '/reconquete/reconquerir-son-ex', label: 'Reconquérir son Ex si la Réponse est Oui' },
+    { href: '/reconquete/seconde-chance-amour', label: 'Donner une Seconde Chance en Amour' },
+    { href: '/reconquete/ex-qui-revient', label: 'Quand l\'Ex Revient : Que Faire ?' },
+    { href: '/rupture/oublier-son-ex', label: 'Tourner la Page si la Réponse est Non' },
+    { href: '/sentiments/maime-t-il-elle', label: 'Ce qu\'il/elle Ressent Vraiment' },
+    { href: '/reconquete/quitte-pour-quelquun-dautre-va-t-il-revenir', label: 'Quitté pour Quelqu\'un d\'Autre : Va-t-il Revenir ?' },
+  ],
+};
 
-  const authorSchema = getAuthorSchema();
+export const metadata = contentMeta(config);
 
+export default function VaTilRevenirPage() {
   return (
-    <main className="min-h-screen bg-gray-50">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(authorSchema) }}
-      />
-      <header className="bg-gradient-to-r from-purple-600 via-indigo-600 to-blue-600 text-white py-16 px-4">
-        <div className="max-w-4xl mx-auto">
-          <Link href="/reconquete" className="text-white/80 hover:text-white mb-4 inline-block">← Retour à la Reconquête</Link>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">❓ Va-t-il/elle Revenir ?</h1>
-          <p className="text-xl opacity-95 mb-6">La réponse honnête du tarot à votre question la plus importante</p>
-          <div className="flex gap-4 flex-wrap">
-            <a href="#consultation" className="bg-white text-purple-600 px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition">Tirage Retour Personnalisé</a>
-            <a href="#signes" className="border-2 border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-purple-600 transition">Voir les Signes</a>
-          </div>
-        </div>
-      </header>
-
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <div className="bg-white rounded-xl shadow-md p-6 mb-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-          <div><div className="text-3xl mb-1">⭐</div><div className="text-2xl font-bold text-purple-600">4.8/5</div><div className="text-sm text-gray-600">287 avis</div></div>
-          <div><div className="text-3xl mb-1">↩️</div><div className="text-2xl font-bold text-purple-600">Fréquent</div><div className="text-sm text-gray-600">Retours observés</div></div>
-          <div><div className="text-3xl mb-1">⏰</div><div className="text-2xl font-bold text-purple-600">3-6 mois</div><div className="text-sm text-gray-600">Délai moyen</div></div>
-          <div><div className="text-3xl mb-1">🔮</div><div className="text-2xl font-bold text-purple-600">Reconnue</div><div className="text-sm text-gray-600">Expertise</div></div>
-        </div>
-
-        <EEATSignal colorScheme="blue" method="Tarot prédictif et astrologie" />
+    <ContentPage config={config}>
 
         <article className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-purple-600">
           <div className="prose prose-lg max-w-none">
@@ -258,43 +235,6 @@ export default function VaTilRevenirPage() {
           </div>
         </section>
 
-        <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">❓ Questions Fréquentes</h2>
-          <p className="text-lg font-semibold text-gray-800 mb-4">Voici les réponses aux questions les plus fréquentes sur le retour d'un ex : certitude du tarot, délai d'attente, signes astrologiques et décision d'attendre ou de tourner la page.</p>
-          <div className="space-y-6">
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Le tarot peut-il prédire le retour de mon ex ?</h3>
-              <p className="text-gray-700 leading-relaxed">Le tarot indique les probabilités selon les énergies actuelles et les choix de libre arbitre de chacun. Il révèle si un retour est très probable, possible, improbable ou impossible. Un bon voyant vous donnera un pourcentage honnête basé sur les cartes et ne vous promettra jamais un retour à 100% car le futur reste mouvant.</p>
-            </div>
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Combien de temps faut-il attendre pour savoir ?</h3>
-              <p className="text-gray-700 leading-relaxed">Le tarot peut donner un timing : quelques semaines, 3 mois, 6 mois, 1 an. Si après ce délai rien ne se passe, c'est qu'il faut lâcher prise. Attention aux faux espoirs : si après 6 mois de silence total votre ex n'a fait aucun signe, les chances diminuent drastiquement.</p>
-            </div>
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Quels sont les signes astrologiques d'un retour imminent ?</h3>
-              <p className="text-gray-700 leading-relaxed">Vénus rétrograde dans votre signe ou celui de votre ex, éclipse sur votre axe relationnel (Descendant), transit de Vénus sur votre Soleil natal, nouvelle lune en maison 7. Ces périodes astrologiques créent des ouvertures propices aux retours. Un voyant astrologue peut analyser votre thème pour identifier ces moments.</p>
-            </div>
-            <div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Dois-je attendre mon ex ou tourner la page ?</h3>
-              <p className="text-gray-700 leading-relaxed">Le tarot répond clairement à cette question cruciale. S'il montre un retour probable dans un délai raisonnable (3-6 mois) et que ce retour est bénéfique, vous pouvez attendre tout en vivant votre vie -- et envisager une <Link href="/reconquete/seconde-chance-amour" className="text-purple-600 hover:text-purple-800 underline font-medium">seconde chance</Link> sur de bonnes bases. S'il montre que c'est terminé, tournez la page pour votre bien. Un voyant vous conseille honnêtement.</p>
-            </div>
-          </div>
-        </section>
-
-        <div className="bg-gray-100 rounded-xl p-6 mb-8">
-          <h3 className="font-bold text-lg mb-4 text-gray-900">📚 Articles Connexes</h3>
-          <div className="space-y-2">
-            <Link href="/reconquete/reconquerir-son-ex" className="block text-purple-600 hover:text-purple-800 font-medium">→ Reconquérir son Ex si la Réponse est Oui</Link>
-            <Link href="/reconquete/seconde-chance-amour" className="block text-purple-600 hover:text-purple-800 font-medium">→ Donner une Seconde Chance en Amour</Link>
-            <Link href="/reconquete/ex-qui-revient" className="block text-purple-600 hover:text-purple-800 font-medium">→ Quand l'Ex Revient : Que Faire ?</Link>
-            <Link href="/rupture/oublier-son-ex" className="block text-purple-600 hover:text-purple-800 font-medium">→ Tourner la Page si la Réponse est Non</Link>
-            <Link href="/sentiments/maime-t-il-elle" className="block text-purple-600 hover:text-purple-800 font-medium">→ Ce qu'il/elle Ressent Vraiment</Link>
-            <Link href="/reconquete/quitte-pour-quelquun-dautre-va-t-il-revenir" className="block text-purple-600 hover:text-purple-800 font-medium">→ Quitté pour Quelqu'un d'Autre : Va-t-il Revenir ?</Link>
-          </div>
-        </div>
-
-        <VoyantFinalCTA topic="reconquete" source="va-t-il-elle-revenir-final" />
-      </div>
-    </main>
+      </ContentPage>
   );
 }

@@ -6,13 +6,13 @@ import { OFFER } from '@/lib/offer';
 import { PHONE_NUMBERS, formatPhone } from '@/lib/phoneNumbers';
 import VoyantStrip from '@/components/VoyantStrip';
 
-// MGID test — Angle 2 "Relationship Clarity" (emotional hook).
+// MGID test, Angle 2 "Relationship Clarity" (emotional hook).
 // Ad headline: "Il/Elle vous aime vraiment ? La révélation en 2 min"
-// Spec: audit §8.4 — ONE question, then an immediate situation-specific
+// Spec: audit §8.4, ONE question, then an immediate situation-specific
 // phone CTA. No loading screen, no email gate (both were identified as
 // conversion killers in the old 5-question funnel).
 //
-// Step logic is pure CSS — hidden radio inputs + general-sibling selectors
+// Step logic is pure CSS, hidden radio inputs + general-sibling selectors
 // swap the question for the matching result. Zero JS on purpose: MGID's
 // top FR sources are Xiaomi/Huawei in-app newsfeed browsers that choke on
 // Next.js hydration, and a quiz needing JS to advance shows a dead screen
@@ -23,7 +23,7 @@ import VoyantStrip from '@/components/VoyantStrip';
 // the other two landers by URL alone.
 
 export const metadata: Metadata = {
-  title: 'Il/Elle vous aime vraiment ? — La révélation en 2 minutes',
+  title: 'Il/Elle vous aime vraiment ?, La révélation en 2 minutes',
   description: 'Une question, une réponse. Découvrez ce qu’un voyant peut révéler sur vos sentiments.',
   robots: { index: false, follow: false },
 };
@@ -37,7 +37,7 @@ export const viewport: Viewport = {
 
 // Télémaque attribution bucket 2 (angle 2 "Relationship Clarity"). One bucket
 // per angle is what makes per-angle revenue readable in Télémaque's
-// reversement reporting — never share a bucket with another lander.
+// reversement reporting, never share a bucket with another lander.
 const PHONE = PHONE_NUMBERS['2'];
 const PHONE_DISPLAY = formatPhone(PHONE);
 
@@ -50,7 +50,7 @@ const OPTIONS = [
 ];
 
 const STYLE = `
-.vq-body,.vq-body *{-webkit-tap-highlight-color:transparent}
+.vq-body.vq-body *{-webkit-tap-highlight-color:transparent}
 .vq-body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
      background:linear-gradient(160deg,#241657 0%,#3a1d6e 55%,#4a1f5e 100%);
      color:#fff;min-height:100vh;min-height:100dvh;padding:24px 20px 40px;line-height:1.5}
@@ -78,7 +78,7 @@ const STYLE = `
 .vq-result-inner{text-align:center;padding-bottom:86px}
 /* Sticky CTA is gated on an answer. Showing the phone number on the question
    screen would let visitors skip the one question, which is the entire
-   mechanic of this angle — so it rides the same :checked selector. */
+   mechanic of this angle, so it rides the same :checked selector. */
 .vq-sticky{display:none;position:fixed;bottom:0;left:0;right:0;
      background:rgba(36,22,87,0.97);padding:12px 20px;
      border-top:1px solid rgba(255,255,255,0.12);z-index:100}
@@ -95,7 +95,7 @@ const STYLE = `
      box-shadow:0 8px 32px rgba(255,107,157,0.4);margin-bottom:10px}
 .vq-cta-num{font-size:26px;font-weight:800;letter-spacing:1px;display:block}
 .vq-cta-sub{font-size:13px;opacity:.92;display:block;margin-top:3px}
-/* Quiet by design — see the note on .vd-pricing in voyant-direct. */
+/* Quiet by design, see the note on .vd-pricing in voyant-direct. */
 .vq-pricing{margin:12px 0 16px;text-align:center}
 .vq-pricing-lead{font-size:12.5px;font-weight:700;color:rgba(255,255,255,0.72);
      margin-bottom:2px;line-height:1.4}
@@ -120,7 +120,7 @@ function Result({
         Un voyant spécialisé en {spec} est disponible maintenant.
       </div>
 
-      {/* Faces at the moment of decision — the result screen IS the CTA screen
+      {/* Faces at the moment of decision, the result screen IS the CTA screen
           on this angle, so the trust signal belongs here, not on the question. */}
       <VoyantStrip limit={4} label="Voyants partenaires en ligne" />
 
@@ -130,7 +130,7 @@ function Result({
       </a>
 
       <div className="vq-pricing">
-        <div className="vq-pricing-lead">💳 {OFFER.intro} — {OFFER.introPerMin}</div>
+        <div className="vq-pricing-lead">💳 {OFFER.intro}, {OFFER.introPerMin}</div>
         <div className="vq-pricing-then">{OFFER.after} · {OFFER.payment}</div>
       </div>
 
@@ -147,7 +147,7 @@ function Result({
       <div style={{ textAlign: 'left' }}>
         <LanderFaq />
         {/* Only for fresh visitors. Post-submit the page reloads with ?merci=,
-            which resets the CSS :checked state — so the confirmation is
+            which resets the CSS :checked state, so the confirmation is
             rendered above the quiz instead, where it is actually visible. */}
         {!done && (
           <LanderEmailForm
@@ -174,7 +174,7 @@ export default async function LPIlElleVousAime({
   const merciParam = one(sp, 'merci', 8);
   if (!merciParam) await recordLanderLoad('il-elle-vous-aime', sp);
 
-  // Copy adapts to the real request time — see lib/availability.ts.
+  // Copy adapts to the real request time, see lib/availability.ts.
   const av = availabilityNow();
 
   // Email form state round-trips through the URL (native POST/Redirect/GET).
@@ -205,7 +205,7 @@ export default async function LPIlElleVousAime({
         )}
 
         <div className="vq-flow">
-          {/* Hidden state — must precede the steps for the ~ selectors to work */}
+          {/* Hidden state, must precede the steps for the ~ selectors to work */}
           {OPTIONS.map((o) => (
             <input key={o.id} type="radio" name="vqs" id={`opt-${o.id}`} className="vq-radio" />
           ))}
@@ -226,13 +226,13 @@ export default async function LPIlElleVousAime({
           {/* Must stay INSIDE .vq-flow: the `input:checked ~` sibling selector
               can only reach elements that share the inputs' parent. */}
           <div className="vq-sticky">
-            <a href={`tel:${PHONE}`}>📞 Appeler — {PHONE_DISPLAY}</a>
+            <a href={`tel:${PHONE}`}>📞 Appeler, {PHONE_DISPLAY}</a>
           </div>
         </div>
 
         <footer className="vq-footer">
           Service réservé aux personnes majeures (18+). Divertissement et guidance
-          personnelle — ne remplace aucun avis médical, juridique ou financier.
+          personnelle, ne remplace aucun avis médical, juridique ou financier.
         </footer>
       </div>
     </div>

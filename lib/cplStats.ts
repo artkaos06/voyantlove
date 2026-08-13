@@ -1,7 +1,7 @@
-// Durable CPL lead counter — server-only.
+// Durable CPL lead counter, server-only.
 //
 // Why this exists: the daily digest's in-memory counters (lib/digestState)
-// don't survive Vercel's serverless model — the postback that records a lead
+// don't survive Vercel's serverless model, the postback that records a lead
 // runs on a different instance than the cron that builds the report, so CPL
 // leads never showed up. This persists the count in Vercel KV instead, keyed
 // by Europe/Paris date (Goracash + the network operate on French time).
@@ -31,11 +31,11 @@ export async function recordCplLead(): Promise<void> {
   try {
     const k = key(parisDate());
     await kv.incr(k);
-    // Refresh TTL on every write — cheap, keeps the key alive for 40 days
+    // Refresh TTL on every write, cheap, keeps the key alive for 40 days
     // from the last lead, then it expires on its own.
     await kv.expire(k, TTL_SECONDS);
   } catch {
-    // Swallow — durable counting is a nice-to-have, not on the critical path.
+    // Swallow, durable counting is a nice-to-have, not on the critical path.
   }
 }
 
@@ -59,7 +59,7 @@ export async function getCplLeadCount(date: string): Promise<number> {
 // proxy blacklisting into "this source spent €X and produced 0 leads → cut".
 //
 // Keys:
-//   cpl:click:<cid>       → { widget, wname, teaser }   (3-day TTL — leads
+//   cpl:click:<cid>       → { widget, wname, teaser }   (3-day TTL, leads
 //                            on this SOI offer land within minutes/hours)
 //   cpl:widgets:<date>    → Redis hash { <widget label>: leadCount }
 // ---------------------------------------------------------------------------
@@ -144,10 +144,10 @@ export async function getTeaserLeadCounts(
 // Per-source & per-creative SPEND accumulation (from MGID's {click_price}).
 //
 // Every click carries its price; we sum it per source and per teaser so the
-// readout can show cost-per-lead per source/ad directly — no manual CSV
+// readout can show cost-per-lead per source/ad directly, no manual CSV
 // cross-referencing. Raw click_price is stored as-is; the readout divides by
 // CPL_CLICK_PRICE_DIVISOR to convert to euros (calibrated against MGID's
-// reported spend — 100 if {click_price} is in cents, 1 if already euros).
+// reported spend, 100 if {click_price} is in cents, 1 if already euros).
 //
 // Keys: cpl:spend:<date> (by source) · cpl:teaserspend:<date> (by teaser)
 // ---------------------------------------------------------------------------

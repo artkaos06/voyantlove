@@ -9,6 +9,7 @@ import { renderWithEntities } from '@/lib/entityBold';
 import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
+import AskAI from '@/components/AskAI';
 
 const LIVE_SIGNS = SIGNES_AMOUR.filter((s) => validateSignRecord(s).length === 0);
 const LIVE_PAIR_SLUGS = new Set(
@@ -90,10 +91,13 @@ export default async function SignPage({ params }: Props) {
       <div className="max-w-4xl mx-auto px-4 py-8">
         <EEATSignal colorScheme="purple" method="Analyse astrologique du signe en amour" />
 
-        {/* Answer capsule — extractive snippet target */}
+        {/* Answer capsule, extractive snippet target */}
         <section className="bg-purple-50 border-l-4 border-purple-500 rounded-r-xl p-6 md:p-8 mb-8">
           <h2 className="text-xl font-bold text-gray-900 mb-3">Comment aime le {s.name}&nbsp;?</h2>
           <p className="text-lg leading-relaxed text-gray-800">{renderWithEntities(s.answerCapsule)}</p>
+          <div className="mt-5">
+            <AskAI title={title} url={url} context={s.answerCapsule} />
+          </div>
         </section>
 
         <article className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-fuchsia-500">

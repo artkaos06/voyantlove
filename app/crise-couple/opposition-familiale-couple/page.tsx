@@ -1,89 +1,76 @@
-import type { Metadata } from 'next';
 import Link from 'next/link';
-import { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getAuthorSchema } from '@/lib/schema';
-import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
-import VoyantFinalCTA from '@/components/VoyantFinalCTA';
+import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
-export const metadata: Metadata = {
+const config: ContentPageConfig = {
   title: 'Opposition Familiale au Couple : Voyance et Solutions',
   description: 'Votre famille s\'oppose à votre relation ? Le tarot éclaire les causes de cette opposition et les stratégies pour préserver votre couple.',
+  url: 'https://www.voyantlove.fr/crise-couple/opposition-familiale-couple/',
   keywords: ['opposition familiale couple', 'famille contre ma relation', 'parents opposés relation voyance', 'famille désapprouve couple', 'tarot opposition familiale'],
-  alternates: {
-    canonical: 'https://www.voyantlove.fr/crise-couple/opposition-familiale-couple/',
-  },
-};
-
-export default function OppositionFamilialeCouplePage() {
-  const articleSchema = getArticleSchema({
-    title: 'Opposition Familiale au Couple : Voyance et Solutions',
-    description: 'Votre famille s\'oppose à votre relation ? Le tarot éclaire les causes de cette opposition et les stratégies pour préserver votre couple.',
-    url: 'https://www.voyantlove.fr/crise-couple/opposition-familiale-couple/',
-    datePublished: '2026-07-22',
-    dateModified: '2026-07-22',
-    keywords: ['opposition familiale couple', 'famille contre ma relation', 'parents opposés relation voyance', 'famille désapprouve couple', 'tarot opposition familiale'],
-  });
-
-  const faqSchema = getFAQSchema([
-    {
-      question: 'Pourquoi ma famille s\'oppose-t-elle à ma relation ?',
-      answer: 'Les oppositions familiales naissent souvent de différences culturelles, religieuses ou sociales, de blessures passées projetées sur le nouveau partenaire, ou d\'une peur de perdre le lien privilégié avec l\'enfant. Le tarot familial identifie la racine émotionnelle réelle de cette opposition : protection excessive, préjugés, jalousie inconsciente ou véritable inquiétude fondée sur des signaux objectifs concernant la relation.',
-    },
-    {
-      question: 'Faut-il choisir entre sa famille et son couple ?',
-      answer: 'Ce choix radical est rarement nécessaire et souvent contre-productif. La plupart des situations d\'opposition familiale évoluent avec le temps, le dialogue et la démonstration de la solidité du couple. Le tarot aide à identifier des voies de conciliation avant d\'envisager une rupture définitive avec l\'un ou l\'autre camp, en révélant le potentiel réel d\'apaisement de la situation.',
-    },
-    {
-      question: 'Comment faire accepter mon/ma partenaire à ma famille ?',
-      answer: 'La patience, la transparence et les occasions de rencontre progressive et informelle permettent souvent d\'adoucir les résistances familiales. Éviter la confrontation frontale et privilégier des preuves concrètes d\'engagement et de sérieux du couple facilite l\'acceptation. Le tarot indique le moment le plus favorable pour organiser ces rapprochements et les personnes clés à convaincre en priorité.',
-    },
-    {
-      question: 'L\'opposition familiale peut-elle détruire un couple ?',
-      answer: 'Oui, si elle n\'est pas gérée avec un front uni entre les partenaires. Le véritable danger ne vient pas de l\'opposition elle-même mais des divisions qu\'elle crée au sein du couple si l\'un des deux partenaires cède à la pression familiale au détriment de la relation. Le tarot évalue la solidité du couple face à cette pression externe et sa capacité à rester uni.',
-    },
-    {
-      question: 'Comment savoir si l\'opposition familiale est justifiée ?',
-      answer: 'Une opposition fondée sur des préoccupations concrètes et vérifiables (comportement toxique, instabilité, valeurs incompatibles) mérite d\'être entendue sérieusement. Une opposition fondée uniquement sur des préjugés, une origine sociale ou une possessivité parentale excessive relève davantage d\'un blocage émotionnel familial à travailler que d\'un signal d\'alerte réel concernant votre partenaire.',
-    },
-  ]);
-
-  const breadcrumbSchema = getBreadcrumbSchema([
+  datePublished: '2026-07-22',
+  dateModified: '2026-07-22',
+  breadcrumb: [
     { name: 'Accueil', url: 'https://www.voyantlove.fr' },
     { name: 'Crise de Couple', url: 'https://www.voyantlove.fr/crise-couple/' },
     { name: 'Opposition Familiale', url: 'https://www.voyantlove.fr/crise-couple/opposition-familiale-couple/' },
-  ]);
+  ],
+  header: {
+    emoji: '👪',
+    h1: 'Opposition Familiale au Couple',
+    subtitle: 'Comment le tarot éclaire et apaise le conflit entre votre famille et votre relation',
+    gradient: 'from-amber-700 via-orange-700 to-red-700',
+    backLink: { href: '/crise-couple', label: 'Retour aux Crises de Couple' },
+    anchors: [
+      { href: '#causes', label: 'Comprendre les Causes', primary: true },
+      { href: '#strategies', label: 'Stratégies d\'Apaisement' },
+    ],
+  },
+  accentText: 'text-orange-700',
+  stats: [
+    { icon: '🔮', value: 'Reconnue', label: 'Expertise' },
+    { icon: '👪', value: '2,800+', label: 'Tirages réalisés' },
+    { icon: '⭐', value: '4.6/5', label: '203 avis' },
+    { icon: '🔒', value: '100%', label: 'Confidentiel' },
+  ],
+  eeat: { colorScheme: 'orange', method: 'Tarot familial et guidance de couple' },
+  cta: { topic: 'crise-couple', slug: 'opposition-familiale' },
+  faq: [
+    {
+      q: 'Pourquoi ma famille s\'oppose-t-elle à ma relation ?',
+      a: 'Les oppositions familiales naissent souvent de différences culturelles, religieuses ou sociales, de blessures passées projetées sur le nouveau partenaire, ou d\'une peur de perdre le lien privilégié avec l\'enfant. Le tarot familial identifie la racine émotionnelle réelle de cette opposition : protection excessive, préjugés, jalousie inconsciente ou véritable inquiétude fondée sur des signaux objectifs concernant la relation.',
+    },
+    {
+      q: 'Faut-il choisir entre sa famille et son couple ?',
+      a: 'Ce choix radical est rarement nécessaire et souvent contre-productif. La plupart des situations d\'opposition familiale évoluent avec le temps, le dialogue et la démonstration de la solidité du couple. Le tarot aide à identifier des voies de conciliation avant d\'envisager une rupture définitive avec l\'un ou l\'autre camp, en révélant le potentiel réel d\'apaisement de la situation.',
+    },
+    {
+      q: 'Comment faire accepter mon/ma partenaire à ma famille ?',
+      a: 'La patience, la transparence et les occasions de rencontre progressive et informelle permettent souvent d\'adoucir les résistances familiales. Éviter la confrontation frontale et privilégier des preuves concrètes d\'engagement et de sérieux du couple facilite l\'acceptation. Le tarot indique le moment le plus favorable pour organiser ces rapprochements et les personnes clés à convaincre en priorité.',
+    },
+    {
+      q: 'L\'opposition familiale peut-elle détruire un couple ?',
+      a: 'Oui, si elle n\'est pas gérée avec un front uni entre les partenaires. Le véritable danger ne vient pas de l\'opposition elle-même mais des divisions qu\'elle crée au sein du couple si l\'un des deux partenaires cède à la pression familiale au détriment de la relation. Le tarot évalue la solidité du couple face à cette pression externe et sa capacité à rester uni.',
+    },
+    {
+      q: 'Comment savoir si l\'opposition familiale est justifiée ?',
+      a: 'Une opposition fondée sur des préoccupations concrètes et vérifiables (comportement toxique, instabilité, valeurs incompatibles) mérite d\'être entendue sérieusement. Une opposition fondée uniquement sur des préjugés, une origine sociale ou une possessivité parentale excessive relève davantage d\'un blocage émotionnel familial à travailler que d\'un signal d\'alerte réel concernant votre partenaire.',
+    },
+  ],
+  related: [
+    { href: '/crise-couple', label: 'Crise de Couple : Toutes nos Guidances' },
+    { href: '/crise-couple/sauver-son-couple', label: 'Sauver son Couple' },
+    { href: '/crise-couple/problemes-communication-couple', label: 'Problèmes de Communication' },
+    { href: '/crise-couple/couple-a-distance-voyance', label: 'Couple à Distance' },
+    { href: '/crise-couple/pardonner-en-amour', label: 'Pardonner en Amour' },
+  ],
+};
 
-  const authorSchema = getAuthorSchema();
+export const metadata = contentMeta(config);
 
+export default function OppositionFamilialeCouplePage() {
   return (
-    <main className="min-h-screen bg-gray-50">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(authorSchema) }} />
-
-      <header className="bg-gradient-to-r from-amber-700 via-orange-700 to-red-700 text-white py-16 px-4">
-        <div className="max-w-4xl mx-auto">
-          <Link href="/crise-couple" className="text-white/80 hover:text-white mb-4 inline-block">&larr; Retour aux Crises de Couple</Link>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">{'\u{1F46A}'} Opposition Familiale au Couple</h1>
-          <p className="text-xl opacity-95 mb-6">Comment le tarot éclaire et apaise le conflit entre votre famille et votre relation</p>
-          <div className="flex gap-4 flex-wrap">
-            <a href="#causes" className="bg-white text-orange-700 px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition">Comprendre les Causes</a>
-            <a href="#strategies" className="border-2 border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-orange-700 transition">Stratégies d&apos;Apaisement</a>
-          </div>
-        </div>
-      </header>
-
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <div className="bg-white rounded-xl shadow-md p-6 mb-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-          <div><div className="text-3xl mb-1">{'\u{1F52E}'}</div><div className="text-2xl font-bold text-orange-700">Reconnue</div><div className="text-sm text-gray-600">Expertise</div></div>
-          <div><div className="text-3xl mb-1">{'\u{1F46A}'}</div><div className="text-2xl font-bold text-orange-700">2,800+</div><div className="text-sm text-gray-600">Tirages réalisés</div></div>
-          <div><div className="text-3xl mb-1">{'⭐'}</div><div className="text-2xl font-bold text-orange-700">4.6/5</div><div className="text-sm text-gray-600">203 avis</div></div>
-          <div><div className="text-3xl mb-1">{'\u{1F512}'}</div><div className="text-2xl font-bold text-orange-700">100%</div><div className="text-sm text-gray-600">Confidentiel</div></div>
-        </div>
-
-        <EEATSignal colorScheme="orange" method="Tarot familial et guidance de couple" />
+    <ContentPage config={config}>
 
         {/* Answer Capsule */}
         <article className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-orange-600">
@@ -204,48 +191,6 @@ export default function OppositionFamilialeCouplePage() {
           </div>
         </section>
 
-        {/* FAQ Section */}
-        <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">{'❓'} Questions Fréquentes</h2>
-          <p className="text-lg font-semibold text-gray-800 mb-4">Les reponses aux questions les plus posees sur l&apos;opposition familiale, ses causes et les strategies pour preserver son couple.</p>
-          <div className="space-y-6">
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Pourquoi ma famille s&apos;oppose-t-elle à ma relation ?</h3>
-              <p className="text-gray-700 leading-relaxed">Les <strong>oppositions familiales</strong> naissent souvent de différences culturelles, religieuses ou sociales, de blessures passées projetées sur le nouveau partenaire, ou d&apos;une <strong>peur de perdre le lien privilégié</strong> avec l&apos;enfant. Le tarot familial identifie la racine émotionnelle réelle de cette opposition.</p>
-            </div>
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Faut-il choisir entre sa famille et son couple ?</h3>
-              <p className="text-gray-700 leading-relaxed">Ce choix radical est rarement nécessaire et souvent contre-productif. La plupart des situations d&apos;<strong>opposition familiale</strong> évoluent avec le temps, le dialogue et la démonstration de la <strong>solidité du couple</strong>. Le tarot aide à identifier des voies de conciliation avant d&apos;envisager une rupture définitive.</p>
-            </div>
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Comment faire accepter mon/ma partenaire à ma famille ?</h3>
-              <p className="text-gray-700 leading-relaxed">La <strong>patience</strong>, la transparence et les occasions de <strong>rencontre progressive</strong> et informelle permettent souvent d&apos;adoucir les résistances familiales. Éviter la confrontation frontale et privilégier des preuves concrètes d&apos;engagement facilite l&apos;acceptation.</p>
-            </div>
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">L&apos;opposition familiale peut-elle détruire un couple ?</h3>
-              <p className="text-gray-700 leading-relaxed">Oui, si elle n&apos;est pas gérée avec un <strong>front uni</strong> entre les partenaires. Le véritable danger vient des <strong>divisions internes</strong> qu&apos;elle crée si l&apos;un des partenaires cède à la pression familiale au détriment de la relation.</p>
-            </div>
-            <div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Comment savoir si l&apos;opposition familiale est justifiée ?</h3>
-              <p className="text-gray-700 leading-relaxed">Une opposition fondée sur des <strong>préoccupations concrètes et vérifiables</strong> mérite d&apos;être entendue sérieusement. Une opposition fondée uniquement sur des préjugés ou une <strong>possessivité parentale</strong> excessive relève davantage d&apos;un blocage émotionnel familial à travailler.</p>
-            </div>
-          </div>
-        </section>
-
-        {/* Articles Connexes */}
-        <div className="bg-gray-100 rounded-xl p-6 mb-8">
-          <h3 className="font-bold text-lg mb-4 text-gray-900">{'\u{1F4DA}'} Articles Connexes</h3>
-          <div className="space-y-2">
-            <Link href="/crise-couple" className="block text-orange-700 hover:text-orange-900 font-medium">&rarr; Crise de Couple : Toutes nos Guidances</Link>
-            <Link href="/crise-couple/sauver-son-couple" className="block text-orange-700 hover:text-orange-900 font-medium">&rarr; Sauver son Couple</Link>
-            <Link href="/crise-couple/problemes-communication-couple" className="block text-orange-700 hover:text-orange-900 font-medium">&rarr; Problèmes de Communication</Link>
-            <Link href="/crise-couple/couple-a-distance-voyance" className="block text-orange-700 hover:text-orange-900 font-medium">&rarr; Couple à Distance</Link>
-            <Link href="/crise-couple/pardonner-en-amour" className="block text-orange-700 hover:text-orange-900 font-medium">&rarr; Pardonner en Amour</Link>
-          </div>
-        </div>
-
-        <VoyantFinalCTA topic="crise-couple" source="opposition-familiale-final" />
-      </div>
-    </main>
+    </ContentPage>
   );
 }

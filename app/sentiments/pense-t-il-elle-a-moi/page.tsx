@@ -1,101 +1,77 @@
-import type { Metadata } from 'next';
 import Link from 'next/link';
-import { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getAuthorSchema } from '@/lib/schema';
-import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
-import VoyantFinalCTA from '@/components/VoyantFinalCTA';
+import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
-export const metadata: Metadata = {
+const config: ContentPageConfig = {
   title: 'Pense-t-il/elle à Moi ? Ce que le Tarot Révèle | Voyance',
   description: 'Découvrez si cette personne pense à vous grâce au tarot et à la voyance. Signes énergétiques, télépathie amoureuse, tirage spécifique.',
+  url: 'https://www.voyantlove.fr/sentiments/pense-t-il-elle-a-moi/',
   keywords: ['pense-t-il à moi voyance', 'est-ce qu\'il pense à moi tarot', 'pense-t-elle à moi', 'signes qu\'il pense à moi', 'voyance pensées'],
-  alternates: {
-    canonical: 'https://www.voyantlove.fr/sentiments/pense-t-il-elle-a-moi/',
-  },
-};
-
-export default function PenseTilElleAMoiPage() {
-  const articleSchema = getArticleSchema({
-    title: 'Pense-t-il/elle à Moi ? Ce que le Tarot Révèle | Voyance',
-    description: 'Découvrez si cette personne pense à vous grâce au tarot et à la voyance. Signes énergétiques, télépathie amoureuse, tirage spécifique.',
-    url: 'https://www.voyantlove.fr/sentiments/pense-t-il-elle-a-moi/',
-    datePublished: '2026-02-09',
-    dateModified: '2026-02-09',
-    keywords: ['pense-t-il à moi voyance', 'est-ce qu\'il pense à moi tarot', 'pense-t-elle à moi', 'signes qu\'il pense à moi', 'voyance pensées'],
-  });
-
-  const faqSchema = getFAQSchema([
-    {
-      question: 'Comment savoir s\'il pense a moi avec le tarot ?',
-      answer: 'Le tarot des pensées utilise un tirage spécifique en quatre positions pour capter l\'énergie mentale dirigée vers vous. Le Cavalier de Coupe, La Lune et L\'Hermite sont des cartes révélatrices d\'une présence mentale forte. Le voyant interprète la fréquence, la nature et l\'intensité des pensées de l\'autre personne. Ce tirage distingue les pensées nostalgiques des pensées désirantes ou conflictuelles, vous offrant une lecture précise de ce qui se passe dans l\'esprit de cette personne.',
-    },
-    {
-      question: 'Quels signes montrent qu\'il pense a moi ?',
-      answer: 'Plusieurs signes physiques trahissent une connexion télépathique active. Des pensées soudaines et inexplicables concernant cette personne, un éternuement sans raison apparente, un bourdonnement dans l\'oreille droite, des rêves récurrents la mettant en scène, ou encore des synchronicités troublantes comme voir son prénom partout. Le hoquet inexpliqué et les frissons sans cause physique sont aussi des manifestations reconnues en voyance énergétique comme des signes qu\'une personne pense intensément à vous.',
-    },
-    {
-      question: 'La telepathie amoureuse existe-t-elle ?',
-      answer: 'La télépathie amoureuse désigne la capacité de ressentir les émotions et pensées d\'une personne avec laquelle on partage un lien affectif profond. Ce phénomène s\'explique par la connexion énergétique entre deux êtres ayant partagé une intimité émotionnelle intense. Les flammes jumelles et les âmes soeurs développent souvent cette capacité naturellement. Le tarot et la voyance permettent de confirmer et de mesurer l\'intensité de cette connexion spirituelle invisible mais réelle.',
-    },
-    {
-      question: 'Si je pense a lui, pense-t-il aussi a moi ?',
-      answer: 'Pas systématiquement, mais une connexion énergétique bidirectionnelle existe souvent entre deux personnes liées émotionnellement. La voyance distingue les pensées unilatérales (projection de votre désir) des connexions réciproques (échange télépathique réel). Le tarot permet de vérifier si vos pensées obsédantes reflètent un lien mutuel ou simplement votre propre attachement. Un voyant expérimenté capte la direction et la réciprocité du flux énergétique entre vous.',
-    },
-    {
-      question: 'Comment savoir si quelqu\'un pense à moi ?',
-      answer: 'Plusieurs signes subtils peuvent indiquer qu\'une personne pense à vous : synchronicités répétées (voir son prénom, entendre "sa" chanson), intuitions soudaines, rêves vivaces où cette personne apparaît, ou encore une sensation de présence inexplicable. La voyance va plus loin en captant directement l\'énergie et les pensées de l\'autre grâce à des outils divinatoires précis. Le tirage tarot des pensées utilise des cartes révélatrices comme La Lune (pensées inconscientes) et Le Bateleur (intentions actives) pour décoder ce que l\'autre ressent. La télépathie émotionnelle entre deux personnes liées est un phénomène reconnu en voyance. Un voyant expérimenté peut confirmer ou infirmer vos ressentis et vous dire avec précision la nature des pensées dirigées vers vous.',
-    },
-  ]);
-
-  const breadcrumbSchema = getBreadcrumbSchema([
+  datePublished: '2026-02-09',
+  dateModified: '2026-02-09',
+  breadcrumb: [
     { name: 'Accueil', url: 'https://www.voyantlove.fr' },
     { name: 'Sentiments', url: 'https://www.voyantlove.fr/sentiments/' },
     { name: 'Pense-t-il/elle à Moi ?', url: 'https://www.voyantlove.fr/sentiments/pense-t-il-elle-a-moi/' },
-  ]);
+  ],
+  header: {
+    emoji: '💭',
+    h1: 'Pense-t-il/elle à Moi ?',
+    subtitle: 'Ce que le tarot et la voyance révèlent sur ses pensées secrètes',
+    gradient: 'from-pink-400 via-rose-500 to-purple-500',
+    backLink: { href: '/sentiments', label: 'Retour aux Sentiments' },
+    anchors: [
+      { href: '#tirage', label: 'Tirage des Pensées', primary: true },
+      { href: '#signes', label: 'Signes Énergétiques' },
+    ],
+  },
+  accentText: 'text-pink-600',
+  stats: [
+    { icon: '🔮', value: 'Reconnue', label: 'Expertise' },
+    { icon: '💭', value: '4,200+', label: 'Tirages réalisés' },
+    { icon: '⭐', value: '4.7/5', label: '312 avis' },
+    { icon: '🔒', value: '100%', label: 'Confidentiel' },
+  ],
+  eeat: { colorScheme: 'pink', method: 'Tarot des pensées et connexion télépathique' },
+  cta: { topic: 'sentiments', slug: 'pense-t-il-elle-a-moi' },
+  faq: [
+    {
+      q: 'Comment savoir s\'il pense a moi avec le tarot ?',
+      a: 'Le tarot des pensées utilise un tirage spécifique en quatre positions pour capter l\'énergie mentale dirigée vers vous. Le Cavalier de Coupe, La Lune et L\'Hermite sont des cartes révélatrices d\'une présence mentale forte. Le voyant interprète la fréquence, la nature et l\'intensité des pensées de l\'autre personne. Ce tirage distingue les pensées nostalgiques des pensées désirantes ou conflictuelles, vous offrant une lecture précise de ce qui se passe dans l\'esprit de cette personne.',
+    },
+    {
+      q: 'Quels signes montrent qu\'il pense a moi ?',
+      a: 'Plusieurs signes physiques trahissent une connexion télépathique active. Des pensées soudaines et inexplicables concernant cette personne, un éternuement sans raison apparente, un bourdonnement dans l\'oreille droite, des rêves récurrents la mettant en scène, ou encore des synchronicités troublantes comme voir son prénom partout. Le hoquet inexpliqué et les frissons sans cause physique sont aussi des manifestations reconnues en voyance énergétique comme des signes qu\'une personne pense intensément à vous.',
+    },
+    {
+      q: 'La telepathie amoureuse existe-t-elle ?',
+      a: 'La télépathie amoureuse désigne la capacité de ressentir les émotions et pensées d\'une personne avec laquelle on partage un lien affectif profond. Ce phénomène s\'explique par la connexion énergétique entre deux êtres ayant partagé une intimité émotionnelle intense. Les flammes jumelles et les âmes soeurs développent souvent cette capacité naturellement. Le tarot et la voyance permettent de confirmer et de mesurer l\'intensité de cette connexion spirituelle invisible mais réelle.',
+    },
+    {
+      q: 'Si je pense a lui, pense-t-il aussi a moi ?',
+      a: 'Pas systématiquement, mais une connexion énergétique bidirectionnelle existe souvent entre deux personnes liées émotionnellement. La voyance distingue les pensées unilatérales (projection de votre désir) des connexions réciproques (échange télépathique réel). Le tarot permet de vérifier si vos pensées obsédantes reflètent un lien mutuel ou simplement votre propre attachement. Un voyant expérimenté capte la direction et la réciprocité du flux énergétique entre vous.',
+    },
+    {
+      q: 'Comment savoir si quelqu\'un pense à moi ?',
+      a: 'Plusieurs signes subtils peuvent indiquer qu\'une personne pense à vous : synchronicités répétées (voir son prénom, entendre "sa" chanson), intuitions soudaines, rêves vivaces où cette personne apparaît, ou encore une sensation de présence inexplicable. La voyance va plus loin en captant directement l\'énergie et les pensées de l\'autre grâce à des outils divinatoires précis. Le tirage tarot des pensées utilise des cartes révélatrices comme La Lune (pensées inconscientes) et Le Bateleur (intentions actives) pour décoder ce que l\'autre ressent. La télépathie émotionnelle entre deux personnes liées est un phénomène reconnu en voyance. Un voyant expérimenté peut confirmer ou infirmer vos ressentis et vous dire avec précision la nature des pensées dirigées vers vous.',
+    },
+  ],
+  related: [
+    { href: '/sentiments', label: 'Sentiments Amoureux : Toutes nos Guidances' },
+    { href: '/sentiments/maime-t-il-elle', label: 'M\'aime-t-il/elle Vraiment ?' },
+    { href: '/sentiments/signes-il-elle-maime', label: 'Les Signes Concrets d\'Amour' },
+    { href: '/reconquete/va-t-il-elle-revenir', label: 'Va-t-il/elle Revenir ?' },
+    { href: '/sentiments/avenir-amoureux', label: 'Mon Avenir Amoureux' },
+  ],
+};
 
-  const authorSchema = getAuthorSchema();
+export const metadata = contentMeta(config);
+
+export default function PenseTilElleAMoiPage() {
 
   return (
-    <main className="min-h-screen bg-gray-50">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(authorSchema) }}
-      />
-
-      <header className="bg-gradient-to-r from-pink-400 via-rose-500 to-purple-500 text-white py-16 px-4">
-        <div className="max-w-4xl mx-auto">
-          <Link href="/sentiments" className="text-white/80 hover:text-white mb-4 inline-block">&larr; Retour aux Sentiments</Link>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">{'\u{1F4AD}'} Pense-t-il/elle à Moi ?</h1>
-          <p className="text-xl opacity-95 mb-6">Ce que le tarot et la voyance révèlent sur ses pensées secrètes</p>
-          <div className="flex gap-4 flex-wrap">
-            <a href="#tirage" className="bg-white text-pink-600 px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition">Tirage des Pensées</a>
-            <a href="#signes" className="border-2 border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-pink-600 transition">Signes Énergétiques</a>
-          </div>
-        </div>
-      </header>
-
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <div className="bg-white rounded-xl shadow-md p-6 mb-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-          <div><div className="text-3xl mb-1">{'\u{1F52E}'}</div><div className="text-2xl font-bold text-pink-600">Reconnue</div><div className="text-sm text-gray-600">Expertise</div></div>
-          <div><div className="text-3xl mb-1">{'\u{1F4AD}'}</div><div className="text-2xl font-bold text-pink-600">4,200+</div><div className="text-sm text-gray-600">Tirages réalisés</div></div>
-          <div><div className="text-3xl mb-1">{'\u2B50'}</div><div className="text-2xl font-bold text-pink-600">4.7/5</div><div className="text-sm text-gray-600">312 avis</div></div>
-          <div><div className="text-3xl mb-1">{'\u{1F512}'}</div><div className="text-2xl font-bold text-pink-600">100%</div><div className="text-sm text-gray-600">Confidentiel</div></div>
-        </div>
-
-        <EEATSignal colorScheme="pink" method="Tarot des pensées et connexion télépathique" />
+    <ContentPage config={config}>
 
         {/* Answer Capsule */}
         <article className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-pink-500">
@@ -304,49 +280,6 @@ export default function PenseTilElleAMoiPage() {
           </div>
         </section>
 
-        {/* FAQ Section */}
-        <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">{'\u2753'} Questions Fréquentes</h2>
-          <p className="text-lg font-semibold text-gray-800 mb-4">Les reponses aux questions les plus posees sur la telepathie amoureuse, les signes qu&apos;il pense a vous et le tirage tarot des pensees.</p>
-          <div className="space-y-6">
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Comment savoir s&apos;il pense a moi avec le tarot ?</h3>
-              <p className="text-gray-700 leading-relaxed">Le <strong>tarot des pensées</strong> utilise un tirage spécifique en quatre positions pour capter l&apos;énergie mentale dirigée vers vous. Le <strong>Cavalier de Coupe</strong>, La Lune et L&apos;Hermite sont des cartes révélatrices d&apos;une présence mentale forte. Le voyant interprète la fréquence, la nature et l&apos;intensité des pensées de l&apos;autre personne. Ce tirage distingue les pensées nostalgiques des pensées désirantes ou conflictuelles, vous offrant une lecture précise de ce qui se passe dans l&apos;esprit de cette personne grâce à la <strong>clairvoyance</strong>.</p>
-            </div>
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Quels signes montrent qu&apos;il pense a moi ?</h3>
-              <p className="text-gray-700 leading-relaxed">Plusieurs <strong>signes physiques</strong> trahissent une connexion télépathique active. Des pensées soudaines et inexplicables concernant cette personne, un éternuement sans raison apparente, un <strong>bourdonnement dans l&apos;oreille</strong> droite, des rêves récurrents la mettant en scène, ou encore des synchronicités troublantes comme voir son prénom partout. Le hoquet inexpliqué et les frissons sans cause physique sont aussi des manifestations reconnues en <strong>voyance énergétique</strong> comme des signaux qu&apos;une personne pense intensément à vous.</p>
-            </div>
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">La telepathie amoureuse existe-t-elle ?</h3>
-              <p className="text-gray-700 leading-relaxed">La <strong>télépathie amoureuse</strong> désigne la capacité de ressentir les émotions et pensées d&apos;une personne avec laquelle on partage un lien affectif profond. Ce phénomène s&apos;explique par la <strong>connexion énergétique</strong> entre deux êtres ayant partagé une intimité émotionnelle intense. Les flammes jumelles et les âmes soeurs développent souvent cette capacité naturellement. Le <strong>tarot</strong> et la voyance permettent de confirmer et de mesurer l&apos;intensité de cette connexion spirituelle invisible mais réelle.</p>
-            </div>
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Si je pense a lui, pense-t-il aussi a moi ?</h3>
-              <p className="text-gray-700 leading-relaxed">Pas systématiquement, mais une <strong>connexion énergétique bidirectionnelle</strong> existe souvent entre deux personnes liées émotionnellement. La voyance distingue les pensées unilatérales (projection de votre désir) des connexions réciproques (échange <strong>télépathique</strong> réel). Le tarot permet de vérifier si vos pensées obsédantes reflètent un lien mutuel ou simplement votre propre attachement. Un <strong>voyant expérimenté</strong> capte la direction et la réciprocité du flux énergétique entre vous.</p>
-            </div>
-            <div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Comment savoir si quelqu&apos;un pense à moi ?</h3>
-              <p className="text-gray-700 leading-relaxed">Plusieurs <strong>signes subtils</strong> peuvent indiquer qu&apos;une personne pense à vous : synchronicités répétées (voir son prénom, entendre &laquo;sa&raquo; chanson), intuitions soudaines, rêves vivaces où cette personne apparaît, ou encore une sensation de présence inexplicable. La <strong>voyance</strong> va plus loin en captant directement l&apos;énergie et les pensées de l&apos;autre grâce à des outils divinatoires précis. Le <strong>tirage tarot des pensées</strong> utilise des cartes révélatrices comme La Lune (pensées inconscientes) et Le Bateleur (intentions actives) pour décoder ce que l&apos;autre ressent. La <strong>télépathie émotionnelle</strong> entre deux personnes liées est un phénomène reconnu en voyance. Un voyant expérimenté peut confirmer ou infirmer vos ressentis et vous dire avec précision la nature des pensées dirigées vers vous.</p>
-            </div>
-          </div>
-        </section>
-
-        {/* Articles Connexes */}
-        <div className="bg-gray-100 rounded-xl p-6 mb-8">
-          <h3 className="font-bold text-lg mb-4 text-gray-900">{'\u{1F4DA}'} Articles Connexes</h3>
-          <div className="space-y-2">
-            <Link href="/sentiments" className="block text-pink-600 hover:text-pink-800 font-medium">&rarr; Sentiments Amoureux : Toutes nos Guidances</Link>
-            <Link href="/sentiments/maime-t-il-elle" className="block text-pink-600 hover:text-pink-800 font-medium">&rarr; M&apos;aime-t-il/elle Vraiment ?</Link>
-            <Link href="/sentiments/signes-il-elle-maime" className="block text-pink-600 hover:text-pink-800 font-medium">&rarr; Les Signes Concrets d&apos;Amour</Link>
-            <Link href="/reconquete/va-t-il-elle-revenir" className="block text-pink-600 hover:text-pink-800 font-medium">&rarr; Va-t-il/elle Revenir ?</Link>
-            <Link href="/sentiments/avenir-amoureux" className="block text-pink-600 hover:text-pink-800 font-medium">&rarr; Mon Avenir Amoureux</Link>
-          </div>
-        </div>
-
-        {/* CTA Footer */}
-        <VoyantFinalCTA topic="sentiments" source="pense-t-il-elle-a-moi-final" />
-      </div>
-    </main>
+      </ContentPage>
   );
 }

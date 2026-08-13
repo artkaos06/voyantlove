@@ -30,7 +30,7 @@ const FAQ: Array<{ q: string; a: string }> = [
   },
   {
     q: 'Qui sont les voyants ?',
-    a: 'Un réseau de praticiens partenaires expérimentés en voyance sentimentale. Le voyant qui vous répond dépend des disponibilités du moment — nous ne promettons pas un praticien en particulier.',
+    a: 'Un réseau de praticiens partenaires expérimentés en voyance sentimentale. Le voyant qui vous répond dépend des disponibilités du moment, nous ne promettons pas un praticien en particulier.',
   },
   {
     q: 'Un voyant peut-il me garantir un résultat ?',
@@ -103,7 +103,7 @@ const field: React.CSSProperties = {
 };
 
 /**
- * Secondary email capture. NOT a gate — the phone CTA stays primary and
+ * Secondary email capture. NOT a gate, the phone CTA stays primary and
  * untouched above this. The old funnel put an email wall *between* the quiz
  * and the payoff and lost 76.7% of everyone who reached it; this only
  * catches people who were leaving anyway.
@@ -175,14 +175,14 @@ export function LanderEmailForm({
         </p>
       )}
 
-      {/* Native POST: no fetch, no onSubmit — works with JS disabled. */}
+      {/* Native POST: no fetch, no onSubmit, works with JS disabled. */}
       <form action="/api/lead/lander" method="POST">
         <input type="hidden" name="lander" value={lander} />
         <input type="hidden" name="source" value={source} />
         <input type="hidden" name="sid" value={sid} />
-        {/* Round-trips so the redirect can restore attribution — see backTo() */}
+        {/* Round-trips so the redirect can restore attribution, see backTo() */}
         <input type="hidden" name="click_id" value={clickId || ''} />
-        {/* Honeypot — hidden from humans, irresistible to bots. */}
+        {/* Honeypot, hidden from humans, irresistible to bots. */}
         <input
           type="text"
           name="website"

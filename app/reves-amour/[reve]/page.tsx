@@ -7,8 +7,33 @@ import { renderWithEntities } from '@/lib/entityBold';
 import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
+import AskAI from '@/components/AskAI';
 
 const LIVE_DREAMS = REVES_AMOUR.filter((d) => validateDreamRecord(d).length === 0);
+
+// Each dream funnels to the most theme-relevant priority page (keyed on the
+// slug), so the 85 rêves pages pass authority to the emotional-long-tail
+// clusters instead of dead-ending at the hub. Anchors/targets vary by theme.
+function dreamFunnel(slug: string): { href: string; anchor: string; lead: string } {
+  if (/(^|-)ex(-|$)|rupture|larguer|quitte|separation|abandon|remplace/.test(slug))
+    return { href: '/reconquete/va-t-il-elle-revenir', anchor: 'le retour de l’ex', lead: 'Ce rêve touche souvent à' };
+  if (/mariage|fiancailles|demande|epous|noce|bague/.test(slug))
+    return { href: '/sentiments/voyance-mariage', anchor: 'la voyance du mariage', lead: 'Pour prolonger la réflexion, explorez' };
+  if (/tromp|jalou|infidel|amant|mensonge/.test(slug))
+    return { href: '/crise-couple/infidelite-couple', anchor: 'l’infidélité dans le couple', lead: 'Ce songe renvoie parfois à' };
+  if (/enceinte|grossesse|bebe|enfant|accouch/.test(slug))
+    return { href: '/sentiments/voyance-grossesse-bebe', anchor: 'la voyance grossesse et bébé', lead: 'Ce rêve peut faire écho à' };
+  if (/crush|tomber-amoureux|declaration|baiser|rencontre|inconnu/.test(slug))
+    return { href: '/nouvelle-rencontre/flamme-jumelle', anchor: 'la flamme jumelle', lead: 'Ce rêve évoque parfois' };
+  // Feeling-themed default, spread deterministically across 3 sentiment pages
+  // (varied anchors) so it isn't one identical sitewide link.
+  const defaults = [
+    { href: '/sentiments/maime-t-il-elle', anchor: 'décrypter les sentiments de l’autre', lead: 'Pour aller plus loin, apprenez à' },
+    { href: '/sentiments/avenir-amoureux', anchor: 'votre avenir amoureux', lead: 'Ce rêve invite à interroger' },
+    { href: '/sentiments', anchor: 'la guidance des sentiments amoureux', lead: 'Pour y voir plus clair, explorez' },
+  ];
+  return defaults[slug.length % defaults.length];
+}
 
 export function generateStaticParams() {
   return LIVE_DREAMS.map((d) => ({ reve: d.slug }));
@@ -38,6 +63,7 @@ export default async function DreamPage({ params }: Props) {
 
   const url = `https://www.voyantlove.fr/reves-amour/${d.slug}/`;
   const title = `${d.titre} : Signification et Interprétation`;
+  const funnel = dreamFunnel(d.slug);
   const siblings = LIVE_DREAMS.filter((x) => x.slug !== d.slug).slice(0, 5);
 
   const articleSchema = getArticleSchema({
@@ -67,18 +93,27 @@ export default async function DreamPage({ params }: Props) {
         <div className="max-w-4xl mx-auto">
           <Link href="/reves-amour" className="text-white/80 hover:text-white mb-4 inline-block">&larr; Tous les rêves amoureux</Link>
           <h1 className="text-4xl md:text-5xl font-bold mb-3">{d.emoji} {d.primaryQuery} : Signification</h1>
-          <p className="text-lg opacity-90">Interprétation des rêves amoureux — ce que ce rêve révèle, et ce qu&apos;il ne prédit pas</p>
+          <p className="text-lg opacity-90">Interprétation des rêves amoureux, ce que ce rêve révèle, et ce qu&apos;il ne prédit pas</p>
         </div>
       </header>
 
       <div className="max-w-4xl mx-auto px-4 py-8">
         <EEATSignal colorScheme="purple" method="Interprétation symbolique des rêves et guidance émotionnelle" />
 
-        {/* Answer capsule — extractive snippet target */}
+        {/* Answer capsule, extractive snippet target */}
         <section className="bg-purple-50 border-l-4 border-purple-500 rounded-r-xl p-6 md:p-8 mb-8">
           <h2 className="text-xl font-bold text-gray-900 mb-3">Que signifie {d.titre.toLowerCase()}&nbsp;?</h2>
           <p className="text-lg leading-relaxed text-gray-800">{renderWithEntities(d.answerCapsule)}</p>
+          <div className="mt-5">
+            <AskAI title={title} url={url} context={d.answerCapsule} />
+          </div>
         </section>
+
+        {/* Theme funnel to the most relevant priority page */}
+        <p className="text-gray-600 mb-8">
+          {funnel.lead}{' '}
+          <Link href={funnel.href} className="text-indigo-600 hover:text-indigo-800 underline font-medium">{funnel.anchor}</Link>.
+        </p>
 
         <article className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-indigo-500">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Pourquoi fait-on ce rêve&nbsp;?</h2>

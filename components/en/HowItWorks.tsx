@@ -23,7 +23,7 @@ const STEPS: StepProps[] = [
     number: '2',
     title: 'Connect in seconds',
     description:
-      'Choose live chat or a phone call. Keen connects you instantly — no waiting room, no scheduling, no caller-ID exposure either way.',
+      'Choose live chat or a phone call. Keen connects you instantly, no waiting room, no scheduling, no caller-ID exposure either way.',
   },
   {
     number: '3',
@@ -43,7 +43,7 @@ export default function HowItWorks() {
         How it works
       </h2>
       <p className="text-center text-gray-600 text-sm md:text-base mb-8">
-        From click to your first reading — usually under 2 minutes.
+        From click to your first reading, usually under 2 minutes.
       </p>
 
       <ol className="grid md:grid-cols-3 gap-5 md:gap-6">

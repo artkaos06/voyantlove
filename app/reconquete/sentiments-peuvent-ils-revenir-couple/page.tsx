@@ -1,89 +1,76 @@
-import type { Metadata } from 'next';
 import Link from 'next/link';
-import { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getAuthorSchema } from '@/lib/schema';
-import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
-import VoyantFinalCTA from '@/components/VoyantFinalCTA';
+import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
-export const metadata: Metadata = {
+const config: ContentPageConfig = {
   title: 'Les Sentiments Peuvent-ils Revenir dans un Couple ?',
   description: 'Perte de sentiments annoncée : peuvent-ils revenir ? Conditions réelles de reconnexion, faux signes à éviter et comportements qui éloignent davantage.',
+  url: 'https://www.voyantlove.fr/reconquete/sentiments-peuvent-ils-revenir-couple/',
   keywords: ['les sentiments peuvent-ils revenir dans un couple', 'peut-on retrouver ses sentiments pour quelqu\'un', 'mon mari ne m\'aime plus peut-il revenir', 'retrouver l\'amour après une séparation', 'il m\'aime mais ne veut plus être avec moi'],
-  alternates: {
-    canonical: 'https://www.voyantlove.fr/reconquete/sentiments-peuvent-ils-revenir-couple/',
-  },
-};
-
-export default function SentimentsPeuventIlsRevenirCouplePage() {
-  const articleSchema = getArticleSchema({
-    title: 'Les Sentiments Peuvent-ils Revenir dans un Couple ?',
-    description: 'Perte de sentiments annoncée : peuvent-ils revenir ? Conditions réelles de reconnexion, faux signes à éviter et comportements qui éloignent davantage.',
-    url: 'https://www.voyantlove.fr/reconquete/sentiments-peuvent-ils-revenir-couple/',
-    datePublished: '2026-07-29',
-    dateModified: '2026-07-29',
-    keywords: ['les sentiments peuvent-ils revenir dans un couple', 'ma femme dit ne plus avoir de sentiments', 'est-ce que l\'amour peut renaître dans un couple', 'perte de sentiments reconnexion', 'attachement familial ou amour'],
-  });
-
-  const faqSchema = getFAQSchema([
-    {
-      question: 'Peut-on retrouver ses sentiments pour quelqu\'un ?',
-      answer: 'Les sentiments amoureux ne s\'éteignent pas toujours de façon irréversible : ils peuvent parfois s\'atténuer sous l\'effet de la routine, de la fatigue ou d\'un conflit non résolu, sans avoir totalement disparu. Une reconnexion reste possible lorsque les causes du détachement sont identifiées et traitées par les deux personnes, et lorsque chacune montre, par des actes répétés, une volonté réelle de reconstruire. Il n\'existe cependant aucune garantie : certaines pertes de sentiments sont réellement définitives, et le confondre avec une pause serait entretenir une attente coûteuse.',
-    },
-    {
-      question: 'Mon mari ou ma femme dit ne plus m\'aimer, peut-il/elle revenir ?',
-      answer: 'Une déclaration de ce type est sincère au moment où elle est prononcée, mais elle ne fige pas nécessairement l\'avenir : les sentiments évoluent avec les circonstances, le temps et le travail personnel de chacun. Un retour reste possible si des conditions concrètes changent réellement, mais il ne se produit pas simplement parce que du temps passe ou que vous l\'espérez. Observer les actes sur plusieurs semaines, plutôt que de se fier à un espoir, donne une image plus fiable de l\'évolution réelle de la situation.',
-    },
-    {
-      question: 'Est-ce que l\'amour peut renaître dans un couple après une rupture ?',
-      answer: 'Oui, dans certaines situations, notamment lorsque la rupture initiale résultait d\'un épuisement temporaire plutôt que d\'une incompatibilité de fond, et lorsque les deux personnes engagent un travail réel sur les causes du détachement. Ce renouveau n\'est cependant ni automatique ni garanti : il dépend d\'une réciprocité authentique, pas seulement du souhait d\'une seule des deux personnes.',
-    },
-    {
-      question: 'Comment distinguer l\'amour du confort ou de la coparentalité ?',
-      answer: 'Rester bon parent, bien s\'entendre au quotidien ou partager une histoire commune ne signifie pas nécessairement vouloir reformer un couple. Ces liens peuvent perdurer indépendamment d\'un désir romantique réciproque. La différence se mesure aux gestes qui dépassent le cadre familial ou pratique : des questions sur une vie de couple future, une volonté explicite de reconstruire une intimité, exprimées par les deux personnes et pas seulement espérées par l\'une d\'elles.',
-    },
-    {
-      question: 'Combien de temps attendre un possible retour des sentiments ?',
-      answer: 'Il n\'existe pas de délai universel, mais suspendre indéfiniment sa vie dans l\'attente d\'un changement de sentiments chez l\'autre devient généralement contre-productif. Fixez-vous une période d\'observation raisonnable, pendant laquelle vous continuez à vivre pleinement, et réévaluez ensuite la situation à partir des actes constatés plutôt que de l\'espoir initial.',
-    },
-  ]);
-
-  const breadcrumbSchema = getBreadcrumbSchema([
+  datePublished: '2026-07-29',
+  dateModified: '2026-07-29',
+  breadcrumb: [
     { name: 'Accueil', url: 'https://www.voyantlove.fr' },
     { name: 'Reconquête', url: 'https://www.voyantlove.fr/reconquete/' },
     { name: 'Les Sentiments Peuvent-ils Revenir', url: 'https://www.voyantlove.fr/reconquete/sentiments-peuvent-ils-revenir-couple/' },
-  ]);
+  ],
+  header: {
+    emoji: '💞',
+    h1: 'Les Sentiments Amoureux Peuvent-ils Revenir Après une Séparation ?',
+    subtitle: 'Distinguer un espoir réel des faux signes qui entretiennent l\'attente',
+    gradient: 'from-rose-600 via-pink-600 to-fuchsia-700',
+    backLink: { href: '/reconquete', label: 'Retour à la Reconquête' },
+    anchors: [
+      { href: '#conditions', label: 'Conditions de Reconnexion', primary: true },
+      { href: '#actes', label: 'Les Actes qui Comptent' },
+    ],
+  },
+  accentText: 'text-rose-700',
+  stats: [
+    { icon: '🔮', value: 'Reconnue', label: 'Expertise' },
+    { icon: '💞', value: '3,300+', label: 'Consultations' },
+    { icon: '⭐', value: '4.7/5', label: '261 avis' },
+    { icon: '🔒', value: '100%', label: 'Confidentiel' },
+  ],
+  eeat: { colorScheme: 'rose', method: 'Guidance sur la reconnexion sentimentale et la perte de sentiments' },
+  cta: { topic: 'reconquete', slug: 'sentiments-reviennent' },
+  faq: [
+    {
+      q: 'Peut-on retrouver ses sentiments pour quelqu\'un ?',
+      a: 'Les sentiments amoureux ne s\'éteignent pas toujours de façon irréversible : ils peuvent parfois s\'atténuer sous l\'effet de la routine, de la fatigue ou d\'un conflit non résolu, sans avoir totalement disparu. Une reconnexion reste possible lorsque les causes du détachement sont identifiées et traitées par les deux personnes, et lorsque chacune montre, par des actes répétés, une volonté réelle de reconstruire. Il n\'existe cependant aucune garantie : certaines pertes de sentiments sont réellement définitives, et le confondre avec une pause serait entretenir une attente coûteuse.',
+    },
+    {
+      q: 'Mon mari ou ma femme dit ne plus m\'aimer, peut-il/elle revenir ?',
+      a: 'Une déclaration de ce type est sincère au moment où elle est prononcée, mais elle ne fige pas nécessairement l\'avenir : les sentiments évoluent avec les circonstances, le temps et le travail personnel de chacun. Un retour reste possible si des conditions concrètes changent réellement, mais il ne se produit pas simplement parce que du temps passe ou que vous l\'espérez. Observer les actes sur plusieurs semaines, plutôt que de se fier à un espoir, donne une image plus fiable de l\'évolution réelle de la situation.',
+    },
+    {
+      q: 'Est-ce que l\'amour peut renaître dans un couple après une rupture ?',
+      a: 'Oui, dans certaines situations, notamment lorsque la rupture initiale résultait d\'un épuisement temporaire plutôt que d\'une incompatibilité de fond, et lorsque les deux personnes engagent un travail réel sur les causes du détachement. Ce renouveau n\'est cependant ni automatique ni garanti : il dépend d\'une réciprocité authentique, pas seulement du souhait d\'une seule des deux personnes.',
+    },
+    {
+      q: 'Comment distinguer l\'amour du confort ou de la coparentalité ?',
+      a: 'Rester bon parent, bien s\'entendre au quotidien ou partager une histoire commune ne signifie pas nécessairement vouloir reformer un couple. Ces liens peuvent perdurer indépendamment d\'un désir romantique réciproque. La différence se mesure aux gestes qui dépassent le cadre familial ou pratique : des questions sur une vie de couple future, une volonté explicite de reconstruire une intimité, exprimées par les deux personnes et pas seulement espérées par l\'une d\'elles.',
+    },
+    {
+      q: 'Combien de temps attendre un possible retour des sentiments ?',
+      a: 'Il n\'existe pas de délai universel, mais suspendre indéfiniment sa vie dans l\'attente d\'un changement de sentiments chez l\'autre devient généralement contre-productif. Fixez-vous une période d\'observation raisonnable, pendant laquelle vous continuez à vivre pleinement, et réévaluez ensuite la situation à partir des actes constatés plutôt que de l\'espoir initial.',
+    },
+  ],
+  related: [
+    { href: '/reconquete', label: 'Reconquête Amoureuse : Toutes nos Guidances' },
+    { href: '/reconquete/se-remettre-ensemble', label: 'Se Remettre Ensemble : les 5 Étapes' },
+    { href: '/reconquete/veut-se-remettre-ensemble-mais-ne-fait-rien', label: 'Il Veut se Remettre Ensemble mais ne Fait Rien' },
+    { href: '/reconquete/separation-temporaire-ou-definitive', label: 'Séparation Temporaire ou Définitive ?' },
+    { href: '/sentiments/sentiments-non-partages', label: 'Sentiments Non Partagés' },
+  ],
+};
 
-  const authorSchema = getAuthorSchema();
+export const metadata = contentMeta(config);
 
+export default function SentimentsPeuventIlsRevenirCouplePage() {
   return (
-    <main className="min-h-screen bg-gray-50">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(authorSchema) }} />
-
-      <header className="bg-gradient-to-r from-rose-600 via-pink-600 to-fuchsia-700 text-white py-16 px-4">
-        <div className="max-w-4xl mx-auto">
-          <Link href="/reconquete" className="text-white/80 hover:text-white mb-4 inline-block">&larr; Retour à la Reconquête</Link>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">{'\u{1F49E}'} Les Sentiments Amoureux Peuvent-ils Revenir Après une Séparation ?</h1>
-          <p className="text-xl opacity-95 mb-6">Distinguer un espoir réel des faux signes qui entretiennent l&apos;attente</p>
-          <div className="flex gap-4 flex-wrap">
-            <a href="#conditions" className="bg-white text-rose-700 px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition">Conditions de Reconnexion</a>
-            <a href="#actes" className="border-2 border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-rose-700 transition">Les Actes qui Comptent</a>
-          </div>
-        </div>
-      </header>
-
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <div className="bg-white rounded-xl shadow-md p-6 mb-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-          <div><div className="text-3xl mb-1">{'\u{1F52E}'}</div><div className="text-2xl font-bold text-rose-700">Reconnue</div><div className="text-sm text-gray-600">Expertise</div></div>
-          <div><div className="text-3xl mb-1">{'\u{1F49E}'}</div><div className="text-2xl font-bold text-rose-700">3,300+</div><div className="text-sm text-gray-600">Consultations</div></div>
-          <div><div className="text-3xl mb-1">{'⭐'}</div><div className="text-2xl font-bold text-rose-700">4.7/5</div><div className="text-sm text-gray-600">261 avis</div></div>
-          <div><div className="text-3xl mb-1">{'\u{1F512}'}</div><div className="text-2xl font-bold text-rose-700">100%</div><div className="text-sm text-gray-600">Confidentiel</div></div>
-        </div>
-
-        <EEATSignal colorScheme="rose" method="Guidance sur la reconnexion sentimentale et la perte de sentiments" />
+    <ContentPage config={config}>
 
         {/* Answer Capsule */}
         <article className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-rose-600">
@@ -92,7 +79,7 @@ export default function SentimentsPeuventIlsRevenirCouplePage() {
               Entendre &laquo;je ne suis plus sûr(e) de mes <strong>sentiments</strong>&raquo; ou &laquo;je ne t&apos;aime plus comme avant&raquo; ouvre une question douloureuse : cette <strong>perte de sentiments</strong> est-elle définitive, ou peut-elle évoluer ? Les sentiments ne sont pas toujours figés : ils peuvent s&apos;atténuer sous l&apos;effet de la <strong>routine</strong>, d&apos;un <strong>épuisement relationnel</strong> ou d&apos;un conflit non résolu, sans que cela signifie une extinction définitive. Mais aucune évolution n&apos;est garantie, et il est essentiel de ne pas confondre un espoir légitime avec une certitude.
             </p>
             <p className="text-lg leading-relaxed mb-4">
-              Cette page distingue ce qui peut favoriser une <strong>reconnexion</strong> réelle de ce qui l&apos;éloigne davantage, et surtout ce que certains signes rassurants — <strong>coparentalité</strong> harmonieuse, proximité physique, attirance persistante — ne prouvent pas à eux seuls. Pour la situation où l&apos;autre parle de reconstruire sans jamais agir, notre guide sur <Link href="/reconquete/veut-se-remettre-ensemble-mais-ne-fait-rien" className="text-rose-700 hover:text-rose-900 underline font-medium">vouloir se remettre ensemble sans le faire</Link> complète cette lecture.
+              Cette page distingue ce qui peut favoriser une <strong>reconnexion</strong> réelle de ce qui l&apos;éloigne davantage, et surtout ce que certains signes rassurants, <strong>coparentalité</strong> harmonieuse, proximité physique, attirance persistante, ne prouvent pas à eux seuls. Pour la situation où l&apos;autre parle de reconstruire sans jamais agir, notre guide sur <Link href="/reconquete/veut-se-remettre-ensemble-mais-ne-fait-rien" className="text-rose-700 hover:text-rose-900 underline font-medium">vouloir se remettre ensemble sans le faire</Link> complète cette lecture.
             </p>
             <p className="text-lg leading-relaxed">
               Personne ne peut connaître avec certitude les émotions secrètes d&apos;un tiers, et aucune lecture ne peut garantir un retour ou une renaissance des sentiments. L&apos;objectif est de vous aider à observer honnêtement la situation et à choisir la voie qui protège votre équilibre, quelle que soit l&apos;issue.
@@ -204,52 +191,10 @@ export default function SentimentsPeuventIlsRevenirCouplePage() {
             Attendre un possible retour des sentiments ne doit jamais suspendre votre propre vie ni votre équilibre. Si cette attente prend une place envahissante, notre guide sur la <Link href="/crise-couple/dependance-affective" className="text-rose-700 hover:text-rose-900 underline font-medium">dépendance affective</Link> aide à reconnaître les signaux d&apos;alerte avant qu&apos;ils ne deviennent un piège émotionnel durable.
           </p>
           <div className="bg-white p-6 rounded-lg border-2 border-rose-200">
-            <p className="text-gray-700"><strong>{'\u{1F52E}'} À considérer :</strong> une <strong>consultation de voyance sentimentale</strong> peut vous aider à explorer la dynamique de votre relation et vos propres choix — sans jamais garantir un retour des sentiments ni prétendre connaître les émotions secrètes de l&apos;autre.</p>
+            <p className="text-gray-700"><strong>{'\u{1F52E}'} À considérer :</strong> une <strong>consultation de voyance sentimentale</strong> peut vous aider à explorer la dynamique de votre relation et vos propres choix, sans jamais garantir un retour des sentiments ni prétendre connaître les émotions secrètes de l&apos;autre.</p>
           </div>
         </section>
 
-        {/* FAQ Section */}
-        <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">{'❓'} Questions Fréquentes</h2>
-          <p className="text-lg font-semibold text-gray-800 mb-4">Les reponses aux questions les plus posees sur la perte de sentiments et le potentiel de reconnexion dans un couple.</p>
-          <div className="space-y-6">
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Peut-on retrouver ses sentiments pour quelqu&apos;un ?</h3>
-              <p className="text-gray-700 leading-relaxed">Les <strong>sentiments</strong> ne s&apos;éteignent pas toujours de façon irréversible : ils peuvent s&apos;atténuer sous l&apos;effet de la routine ou d&apos;un conflit non résolu, sans avoir totalement disparu. Une <strong>reconnexion</strong> reste possible si les causes du détachement sont traitées par les deux personnes, avec des actes répétés. Aucune garantie n&apos;existe : certaines pertes sont réellement définitives.</p>
-            </div>
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Mon mari ou ma femme dit ne plus m&apos;aimer, peut-il/elle revenir ?</h3>
-              <p className="text-gray-700 leading-relaxed">Cette déclaration est sincère sur le moment mais ne fige pas nécessairement l&apos;avenir : les sentiments évoluent avec les circonstances et le <strong>travail personnel</strong> de chacun. Un retour reste possible si des conditions concrètes changent réellement, jamais simplement parce que du temps passe ou que vous l&apos;espérez.</p>
-            </div>
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Est-ce que l&apos;amour peut renaître dans un couple après une rupture ?</h3>
-              <p className="text-gray-700 leading-relaxed">Oui, notamment lorsque la rupture résultait d&apos;un <strong>épuisement temporaire</strong> plutôt que d&apos;une incompatibilité de fond, et lorsque les deux personnes engagent un travail réel sur les causes du détachement. Ce renouveau dépend d&apos;une <strong>réciprocité authentique</strong>, pas seulement du souhait d&apos;une seule personne.</p>
-            </div>
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Comment distinguer l&apos;amour du confort ou de la coparentalité ?</h3>
-              <p className="text-gray-700 leading-relaxed">Rester bon parent ou bien s&apos;entendre au quotidien ne signifie pas vouloir reformer un couple. La différence se mesure aux <strong>gestes qui dépassent le cadre familial</strong> : des questions sur une vie de couple future, exprimées par les deux personnes et pas seulement espérées par l&apos;une d&apos;elles.</p>
-            </div>
-            <div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Combien de temps attendre un possible retour des sentiments ?</h3>
-              <p className="text-gray-700 leading-relaxed">Il n&apos;existe pas de délai universel, mais suspendre indéfiniment sa vie devient généralement contre-productif. Fixez-vous une <strong>période d&apos;observation raisonnable</strong>, en continuant à vivre pleinement, et réévaluez à partir des actes constatés plutôt que de l&apos;espoir initial.</p>
-            </div>
-          </div>
-        </section>
-
-        {/* Articles Connexes */}
-        <div className="bg-gray-100 rounded-xl p-6 mb-8">
-          <h3 className="font-bold text-lg mb-4 text-gray-900">{'\u{1F4DA}'} Articles Connexes</h3>
-          <div className="space-y-2">
-            <Link href="/reconquete" className="block text-rose-700 hover:text-rose-900 font-medium">&rarr; Reconquête Amoureuse : Toutes nos Guidances</Link>
-            <Link href="/reconquete/se-remettre-ensemble" className="block text-rose-700 hover:text-rose-900 font-medium">&rarr; Se Remettre Ensemble : les 5 Étapes</Link>
-            <Link href="/reconquete/veut-se-remettre-ensemble-mais-ne-fait-rien" className="block text-rose-700 hover:text-rose-900 font-medium">&rarr; Il Veut se Remettre Ensemble mais ne Fait Rien</Link>
-            <Link href="/reconquete/separation-temporaire-ou-definitive" className="block text-rose-700 hover:text-rose-900 font-medium">&rarr; Séparation Temporaire ou Définitive ?</Link>
-            <Link href="/sentiments/sentiments-non-partages" className="block text-rose-700 hover:text-rose-900 font-medium">&rarr; Sentiments Non Partagés</Link>
-          </div>
-        </div>
-
-        <VoyantFinalCTA topic="reconquete" source="sentiments-reviennent-final" />
-      </div>
-    </main>
+      </ContentPage>
   );
 }

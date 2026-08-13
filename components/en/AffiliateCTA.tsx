@@ -14,8 +14,7 @@
 // sessionStorage so it survives in-tab navigation across topic / review
 // pages, then forward it with the matching name on click-out.
 //
-// rel="sponsored noopener" is required by Google for affiliate / paid links —
-// signals "this is a commercial relationship, do not pass PageRank".
+// rel="sponsored noopener" is required by Google for affiliate / paid links, // signals "this is a commercial relationship, do not pass PageRank".
 // target="_blank" so reading the review and clicking through doesn't lose
 // the user's place on our site if they want to come back to keep reading.
 
@@ -64,18 +63,18 @@ export default function AffiliateCTA({
       for (const key of STORAGE_KEYS) {
         const fromUrl = params.get(key);
         if (fromUrl) {
-          // URL wins — this is a fresh landing with the latest attribution.
+          // URL wins, this is a fresh landing with the latest attribution.
           sessionStorage.setItem(key, fromUrl);
           next[key] = fromUrl;
         } else {
-          // No URL value — fall back to whatever the prior landing stored.
+          // No URL value, fall back to whatever the prior landing stored.
           const stored = sessionStorage.getItem(key);
           if (stored) next[key] = stored;
         }
       }
       setAttribution(next);
     } catch {
-      // sessionStorage unavailable (privacy mode / SSR mismatch) — fine,
+      // sessionStorage unavailable (privacy mode / SSR mismatch), fine,
       // click-out still works without attribution; we just lose Google Ads
       // attribution on this session.
     }

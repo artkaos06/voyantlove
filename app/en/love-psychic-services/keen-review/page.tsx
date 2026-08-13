@@ -4,7 +4,7 @@ import AffiliateCTA from '@/components/en/AffiliateCTA';
 import AffiliateDisclosure from '@/components/en/AffiliateDisclosure';
 import Screenshot from '@/components/en/Screenshot';
 
-// Keen review — Tier 2 review page, primary launch target for paid traffic.
+// Keen review, Tier 2 review page, primary launch target for paid traffic.
 //
 // Structure follows the editorial-review pattern that survives Google's
 // affiliate policy filter and converts cold traffic:
@@ -25,10 +25,10 @@ import Screenshot from '@/components/en/Screenshot';
 export const metadata: Metadata = {
   title: 'Keen review (2026): is the love psychic platform worth it?',
   description:
-    'In-depth review of Keen — the longest-running online psychic platform. Pricing, advisor quality, pros and cons, and who should (and shouldn\'t) use it.',
+    'In-depth review of Keen, the longest-running online psychic platform. Pricing, advisor quality, pros and cons, and who should (and shouldn\'t) use it.',
   alternates: {
     canonical:
-      'https://www.lovepsychicguide.com/love-psychic-services/keen-review',
+      'https://www.lovepsychicguide.com/love-psychic-services/keen-review/',
   },
 };
 
@@ -51,6 +51,11 @@ const reviewSchema = {
     bestRating: '5',
     worstRating: '1',
   },
+  // TODO: set these to the review's real authored / last-reviewed dates.
+  datePublished: '2026-02-15',
+  dateModified: '2026-08-07',
+  reviewBody:
+    'Keen (Ingenio LLC) is the longest-running online psychic platform, operating since 1999. This review covers pricing, advisor quality and vetting, the new-user introductory offer, the main pros and cons, and who Keen is, and is not, the right fit for. Overall rating: 4.4 out of 5.',
   author: {
     '@type': 'Organization',
     name: 'LovePsychicGuide',
@@ -117,25 +122,25 @@ export default function KeenReviewPage() {
 
       {/* Body */}
       <div className="max-w-3xl mx-auto px-4 py-8 prose prose-purple prose-lg max-w-none">
-        {/* Hero screenshot — Keen homepage / brand context */}
+        {/* Hero screenshot, Keen homepage / brand context */}
         <Screenshot
           src="/images/keen/homepage.png"
-          alt="Keen.com homepage — &ldquo;Real answers from trusted psychics&rdquo;"
-          caption="Keen.com homepage. The interface leads with a question prompt — type what you're dealing with and the platform matches you to relevant advisors."
+          alt="Keen.com homepage, &ldquo;Real answers from trusted psychics&rdquo;"
+          caption="Keen.com homepage. The interface leads with a question prompt, type what you're dealing with and the platform matches you to relevant advisors."
         />
 
         {/* TL;DR */}
         <section className="bg-purple-50 border-l-4 border-purple-400 p-5 rounded-r-md not-prose mb-10">
           <p className="font-bold text-purple-900 mb-2">In short</p>
           <p className="text-purple-900 leading-relaxed text-sm">
-            Keen is a marketplace, not a service — thousands of independent
+            Keen is a marketplace, not a service, thousands of independent
             advisors set their own rates and compete on rating, specialty, and
             reviews. For love and relationship questions specifically, the
             depth of advisor specialization (clairvoyants, empaths, tarot
             readers, dream interpreters) is one of the strongest on the
             market. Pay-per-minute pricing is the main downside; budget caps
-            are essential. New-user introductory pricing — currently{' '}
-            <strong>5 minutes for $1</strong> with each new advisor — keeps
+            are essential. New-user introductory pricing, currently{' '}
+            <strong>5 minutes for $1</strong> with each new advisor, keeps
             the cost of testing fit low.
           </p>
         </section>
@@ -144,7 +149,7 @@ export default function KeenReviewPage() {
         <p>
           Keen.com launched in 1999, originally as a general advice
           marketplace. Over the past two decades it has narrowed its identity
-          to live psychic, tarot, astrology, and spiritual readings — with
+          to live psychic, tarot, astrology, and spiritual readings, with
           love and relationship advice being its most populated category.
           Since 2007 it has been part of <strong>Ingenio LLC</strong>, the
           parent company that also owns Kasamba and Psychic Source. Ingenio
@@ -155,8 +160,8 @@ export default function KeenReviewPage() {
           The platform&apos;s scale is its main differentiator. At the time
           of writing there are several thousand active advisors, including
           long-tenured profiles with a decade or more of session history on
-          the platform. For a niche question — say, dream interpretation
-          specifically about an ex, or twin-flame guidance — you can usually
+          the platform. For a niche question, say, dream interpretation
+          specifically about an ex, or twin-flame guidance, you can usually
           find a specialist rather than getting routed to whichever generalist
           happens to be online.
         </p>
@@ -169,7 +174,7 @@ export default function KeenReviewPage() {
           Work) plus subspecialties like Psychic Mediums, Otherworld
           Connections, Dream Interpretation, and Pet Psychics. Each advisor
           card shows rating, total readings since they joined the platform,
-          and current availability — and importantly, Keen surfaces one{' '}
+          and current availability, and importantly, Keen surfaces one{' '}
           <em>Highlighted Review</em> per advisor algorithmically, which
           functions as a quick credibility check before you commit any time.
         </p>
@@ -203,7 +208,7 @@ export default function KeenReviewPage() {
         </ul>
         <p>
           You pay per minute at the advisor&apos;s posted rate. New users
-          get an introductory promotion — at the time of writing,{' '}
+          get an introductory promotion, at the time of writing,{' '}
           <strong>5 minutes for $1</strong> with each new advisor. The
           promotion shows up as a discounted rate badge on each advisor card
           (their original per-minute price crossed out, replaced by the
@@ -215,7 +220,7 @@ export default function KeenReviewPage() {
 
         <Screenshot
           src="/images/keen/advisor-browse.png"
-          alt="Keen advisor browse — Love & Relationships category showing 6 advisor cards"
+          alt="Keen advisor browse, Love & Relationships category showing 6 advisor cards"
           caption="The advisor grid. Each card surfaces rating, total readings since joining (e.g. 79,688 readings since 2005 for Gina Marie), the introductory '5 minutes for $1' badge, and live availability."
         />
 
@@ -225,7 +230,7 @@ export default function KeenReviewPage() {
             Want to see for yourself?
           </p>
           <p className="text-sm text-gray-700 mb-4">
-            Browse the love &amp; relationship advisors on Keen — new users
+            Browse the love &amp; relationship advisors on Keen, new users
             get 5 minutes for $1 with each new advisor.
           </p>
           <AffiliateCTA
@@ -242,8 +247,7 @@ export default function KeenReviewPage() {
           Posted rates range from $1.99/min on the low end (often newer
           advisors building reviews) to $50/min for top-tier specialists with
           long waitlists. Most love advisors fall in the $2.99 to $7.99 per
-          minute band based on a sample of currently-available advisors —
-          rates that look like &ldquo;$6.99/min&rdquo; or &ldquo;$2.99/min&rdquo;
+          minute band based on a sample of currently-available advisors,           rates that look like &ldquo;$6.99/min&rdquo; or &ldquo;$2.99/min&rdquo;
           on each card. A 15-minute session at $6.99/min, after the intro
           deal&apos;s first 5 minutes for $1, costs roughly $71.
         </p>
@@ -251,14 +255,13 @@ export default function KeenReviewPage() {
           Compared to in-person psychic readings, which typically run
           $150–$300 per hour and require travel, Keen is meaningfully
           cheaper for the same time on the clock. Compared to other online
-          platforms, pricing is competitive but not the cheapest available —
-          you&apos;re paying for the depth of the advisor pool and the rating
+          platforms, pricing is competitive but not the cheapest available,           you&apos;re paying for the depth of the advisor pool and the rating
           history that helps you screen quality.
         </p>
         <p>
           One important behavior: Keen lets you set a per-call dollar limit.
           Use it. Without a cap, the per-minute meter has a way of inducing
-          one of two opposite behaviors — either rushing through your
+          one of two opposite behaviors, either rushing through your
           questions and not hearing the answer, or losing track of time. A
           $50 or $75 cap on your first session forces you to focus and
           protects against the bill creeping past what you intended to spend.
@@ -266,20 +269,20 @@ export default function KeenReviewPage() {
 
         <Screenshot
           src="/images/keen/advisor-profile.png"
-          alt="Keen advisor profile page — Briaz, 4.85 rating, 439 reviews"
-          caption="A typical advisor profile. Rating breakdown, total ratings, total readings, current availability, and the intro &lsquo;5 minutes for $1&rsquo; badge are all visible above the fold — alongside a Highlighted Review pulled from past clients as a quick credibility check."
+          alt="Keen advisor profile page, Briaz, 4.85 rating, 439 reviews"
+          caption="A typical advisor profile. Rating breakdown, total ratings, total readings, current availability, and the intro &lsquo;5 minutes for $1&rsquo; badge are all visible above the fold, alongside a Highlighted Review pulled from past clients as a quick credibility check."
         />
 
         <h2>Best for</h2>
         <ul>
           <li>
-            <strong>Specific love questions</strong> — &ldquo;is he going to
+            <strong>Specific love questions</strong>, &ldquo;is he going to
             reach out,&rdquo; &ldquo;does she still have feelings,&rdquo;
             &ldquo;is this person aligned with my long-term path.&rdquo;
             Advisor depth helps you find someone whose wheelhouse matches.
           </li>
           <li>
-            <strong>Late-night moments of doubt</strong> — psychic platforms
+            <strong>Late-night moments of doubt</strong>, psychic platforms
             of any size can&apos;t guarantee 24/7 advisor availability, but
             Keen&apos;s scale means there is almost always someone qualified
             online when you need them.
@@ -290,7 +293,7 @@ export default function KeenReviewPage() {
             walking into an unknown storefront.
           </li>
           <li>
-            <strong>Privacy-conscious users</strong> — sessions happen via
+            <strong>Privacy-conscious users</strong>, sessions happen via
             the platform&apos;s phone bridge or in-app chat, so neither side
             sees the other&apos;s number or address.
           </li>
@@ -331,7 +334,7 @@ export default function KeenReviewPage() {
 
         <h2>What to expect in your first session</h2>
         <p>
-          Pick an advisor whose specialty matches your question — for love
+          Pick an advisor whose specialty matches your question, for love
           topics specifically, look at the &ldquo;Love &amp; Relationships&rdquo;
           category and filter by rating (4.5 stars and above is a reasonable
           floor). Read the most recent five to ten reviews, paying attention
@@ -377,7 +380,7 @@ export default function KeenReviewPage() {
           <li>
             <strong>Tenure.</strong> Long-tenured advisors (multi-year
             histories on the platform) tend to have more consistent quality.
-            Newer advisors can be excellent — but variance is higher.
+            Newer advisors can be excellent, but variance is higher.
           </li>
           <li>
             <strong>Specialty match.</strong> If your question is about
@@ -403,7 +406,7 @@ export default function KeenReviewPage() {
         <Screenshot
           src="/images/keen/categories.png"
           alt="Keen Explore by Topics categories and Psychic Readings subspecialties"
-          caption="Keen organizes browsing by both top-level topics (Love & Relationships, Destiny and Life Path, Family and Friends, Money and Prosperity, Career and Work) and reading subspecialties — Psychic Mediums, Otherworld Connections, Dream Interpretation, Pet Psychics, and more. The depth lets you find a specialist whose framework matches your question."
+          caption="Keen organizes browsing by both top-level topics (Love & Relationships, Destiny and Life Path, Family and Friends, Money and Prosperity, Career and Work) and reading subspecialties, Psychic Mediums, Otherworld Connections, Dream Interpretation, Pet Psychics, and more. The depth lets you find a specialist whose framework matches your question."
         />
 
         <h2>Pros and cons</h2>
@@ -413,7 +416,7 @@ export default function KeenReviewPage() {
             <ul className="space-y-2 text-sm text-green-900">
               <li>✓ 25+ years operating history, financial stability</li>
               <li>✓ Largest depth of love-specific advisors in the space</li>
-              <li>✓ Three free minutes per new advisor — real trial</li>
+              <li>✓ Three free minutes per new advisor, real trial</li>
               <li>✓ Per-call dollar cap protects against runaway bills</li>
               <li>✓ Multiple session formats (phone, chat, written)</li>
               <li>✓ Rating + review history visible per advisor</li>
@@ -440,8 +443,7 @@ export default function KeenReviewPage() {
           Keen earns a 4.4 / 5 from us. The depth of love-specific advisors
           and the operating-history credibility put it at the top of the
           shortlist for online love readings. The pay-per-minute model and
-          the variance in advisor quality keep it from a perfect score —
-          but those are arguably structural to the entire live-reading
+          the variance in advisor quality keep it from a perfect score,           but those are arguably structural to the entire live-reading
           format, not Keen-specific failings.
         </p>
         <p>
@@ -458,7 +460,7 @@ export default function KeenReviewPage() {
         <div className="not-prose my-12 p-8 bg-gradient-to-r from-purple-600 to-pink-500 text-white rounded-2xl text-center">
           <p className="text-2xl font-bold mb-3">Ready to try a reading?</p>
           <p className="mb-6 opacity-90">
-            Browse Keen&apos;s love &amp; relationship advisors — first three
+            Browse Keen&apos;s love &amp; relationship advisors, first three
             minutes free with each.
           </p>
           <AffiliateCTA

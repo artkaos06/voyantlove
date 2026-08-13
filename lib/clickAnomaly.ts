@@ -1,11 +1,11 @@
-// Click-rate anomaly detection — server-only.
+// Click-rate anomaly detection, server-only.
 //
 // Catches bot/abuse traffic against /api/go/<offer> by tracking click
 // timestamps per IP. If an IP exceeds the per-minute threshold, fires a
 // red Discord alert (with cooldown to avoid spamming the channel).
 //
 // Memory-bounded: when the IP map exceeds MAX_TRACKED_IPS, oldest entries
-// are evicted on each call. This is an approximate detector — serverless
+// are evicted on each call. This is an approximate detector, serverless
 // functions may run on multiple instances, so a distributed bot hitting
 // many instances at low rates each can still slip through. For our scale
 // (low volume, Google Ads filtering most bot traffic upstream), this is

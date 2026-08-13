@@ -9,7 +9,7 @@
 //     &cid=[request_id]          ← our click ID, round-tripped from /api/go/cpl
 //     &campaign=[campaign_id]    ← their campaign id (optional, for reporting)
 //
-// We deliberately do NOT request their [email] placeholder — request_id is
+// We deliberately do NOT request their [email] placeholder, request_id is
 // all we need for attribution, and not ingesting lead PII keeps us clean
 // under GDPR.
 //
@@ -22,7 +22,7 @@
 // v1 (with a KV click store): resolve cid → upstream native click_id and
 // relay the conversion to the native platform's S2S endpoint (MGID/Taboola)
 // so their algorithm optimizes toward converting placements. Not needed for
-// the first test — native-platform reporting + these pings suffice.
+// the first test, native-platform reporting + these pings suffice.
 
 import { NextRequest, NextResponse } from 'next/server';
 import { Color, notifyDiscord } from '@/lib/discord';
@@ -78,7 +78,7 @@ async function handle(request: NextRequest): Promise<NextResponse> {
 
   if (!process.env.CPL_POSTBACK_SECRET) {
     console.warn(
-      '[postback/cpl] CPL_POSTBACK_SECRET not set — accepting unsigned postbacks. Set it in Vercel to harden.'
+      '[postback/cpl] CPL_POSTBACK_SECRET not set, accepting unsigned postbacks. Set it in Vercel to harden.'
     );
   }
 
@@ -97,7 +97,7 @@ async function handle(request: NextRequest): Promise<NextResponse> {
   // in-memory digest counters) so the daily report tallies CPL leads.
   await recordCplLead();
   // Resolve the cid back to its source + creative and increment both daily
-  // tallies — turns blind blacklisting into precise "this source/ad spent
+  // tallies, turns blind blacklisting into precise "this source/ad spent
   // €X, produced 0 leads → cut".
   const { widget, teaser } = cid
     ? await attributeLead(cid)
@@ -122,7 +122,7 @@ async function handle(request: NextRequest): Promise<NextResponse> {
     ],
   });
 
-  // 200 with a tiny body — networks typically just need a 2xx to mark the
+  // 200 with a tiny body, networks typically just need a 2xx to mark the
   // postback delivered.
   return NextResponse.json({ ok: true });
 }

@@ -68,7 +68,7 @@ export default function AlternativeCpa68Tracker() {
       send(buildAlternativeTrackingPayload('call_button_click', attribution, placement));
 
       // Feed MGID's existing cta_call goal directly from this dedicated
-      // tracker — CPA68 is excluded from app/layout.tsx's sitewide listener
+      // tracker, CPA68 is excluded from app/layout.tsx's sitewide listener
       // (Télémaque isolation), so that shared listener never fires it here.
       try {
         notifyMgidCtaCall(window as unknown as { _mgq?: unknown[] });

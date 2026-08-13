@@ -12,7 +12,7 @@
 // Télémaque fires this when a conversion happens, handing back the real payout.
 // This turns the otherwise blind RevShare into a real-time revenue signal: a
 // Discord ping with the € amount the instant money is earned, plus durable daily
-// revenue counters — instead of waiting for the monthly reversement.
+// revenue counters, instead of waiting for the monthly reversement.
 //
 // Attribution ceiling depends on ${SUBID}:
 //   - If we passed our click id as subid (a WEB clickthrough link), we can later
@@ -54,7 +54,7 @@ async function handle(request: NextRequest): Promise<NextResponse> {
   }
 
   const subid = sp.get('subid')?.slice(0, 80) || null;
-  // Payout may arrive with a comma decimal or currency noise — sanitize.
+  // Payout may arrive with a comma decimal or currency noise, sanitize.
   const payoutRaw = (sp.get('payout') || '').replace(',', '.').replace(/[^\d.]/g, '');
   const payout = Number(payoutRaw) || 0;
 
@@ -72,7 +72,7 @@ async function handle(request: NextRequest): Promise<NextResponse> {
     if (subid) await kv.hincrbyfloat(k, `rev:subid:${subid}`, payout);
     await kv.expire(k, TTL);
   } catch {
-    /* best-effort — never fail the postback */
+    /* best-effort, never fail the postback */
   }
 
   await notifyDiscord({
@@ -83,7 +83,7 @@ async function handle(request: NextRequest): Promise<NextResponse> {
       'A conversion postbacked from Télémaque. Payout is the real commission for this consultation.',
     fields: [
       { name: 'Payout', value: `€${payout.toFixed(2)}`, inline: true },
-      { name: 'SubID', value: subid || '(none — phone/unattributed)', inline: true },
+      { name: 'SubID', value: subid || '(none, phone/unattributed)', inline: true },
     ],
   });
 

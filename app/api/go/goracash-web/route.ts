@@ -10,9 +10,9 @@
 // value we send here is our ONLY join key between "a conversion happened"
 // and "which click caused it".
 //
-// v0 design — Discord as the click ledger (no KV dependency yet):
+// v0 design, Discord as the click ledger (no KV dependency yet):
 //   1. Mint a short first-party click ID (cid).
-//   2. Send cid as `datas` to Goracash (short value — unknown length limit
+//   2. Send cid as `datas` to Goracash (short value, unknown length limit
 //      on their side, so we do NOT send the raw gclid which can exceed
 //      100 chars).
 //   3. Log the full click context (cid + gclid/gbraid/wbraid + source +
@@ -95,7 +95,7 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
     request.headers.get('x-real-ip') ||
     null;
 
-  // Structured log — the cid makes this row joinable with the Goracash
+  // Structured log, the cid makes this row joinable with the Goracash
   // dashboard. Vercel free-tier retention is short; Discord (below) is the
   // durable ledger.
   console.log('[go/goracash-web] click_out', {
@@ -153,7 +153,7 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
       ...(wbraid ? [{ name: 'wbraid', value: wbraid, inline: false }] : []),
       {
         name: 'Referer',
-        value: referer || '(none — direct hit or test)',
+        value: referer || '(none, direct hit or test)',
       },
       { name: 'User Agent', value: userAgent || '(empty)' },
     ],

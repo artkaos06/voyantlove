@@ -1,98 +1,76 @@
-import type { Metadata } from 'next';
 import Link from 'next/link';
-import { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getAuthorSchema } from '@/lib/schema';
-import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
-import VoyantFinalCTA from '@/components/VoyantFinalCTA';
+import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
-export const metadata: Metadata = {
+const config: ContentPageConfig = {
   title: 'Silence Radio Reconquête : Stratégie et Voyance',
   description: 'Le silence radio est-il la clé pour reconquérir son ex ? Découvrez la durée idéale, les étapes et ce que la voyance révèle sur cette stratégie puissante.',
+  url: 'https://www.voyantlove.fr/reconquete/silence-radio-reconquete/',
   keywords: ['silence radio', 'reconquête silence', 'ne plus donner de nouvelles', 'silence radio ex', 'reconquête amoureuse'],
-  alternates: { canonical: 'https://www.voyantlove.fr/reconquete/silence-radio-reconquete/' },
-};
-
-export default function SilenceRadioReconquetePage() {
-  const articleSchema = getArticleSchema({
-    title: 'Silence Radio : La Clé de la Reconquête Amoureuse',
-    description: 'Le silence radio est-il la clé pour reconquérir son ex ? Découvrez la durée idéale, les étapes et ce que la voyance révèle sur cette stratégie puissante.',
-    url: 'https://www.voyantlove.fr/reconquete/silence-radio-reconquete/',
-    datePublished: '2026-03-22',
-    dateModified: '2026-03-22',
-    keywords: ['silence radio', 'reconquête silence', 'ne plus donner de nouvelles', 'silence radio ex', 'reconquête amoureuse'],
-  });
-
-  const faqSchema = getFAQSchema([
-    {
-      question: 'Combien de temps doit durer le silence radio pour reconquérir son ex ?',
-      answer: 'La durée idéale du silence radio varie selon la longueur et l\'intensité de votre relation. Pour une relation de moins d\'un an, 3 à 4 semaines suffisent généralement. Pour une relation longue de plusieurs années, 6 à 8 semaines sont recommandées. Le tarot peut affiner ce timing en captant l\'évolution émotionnelle de votre ex en temps réel. La voyance révèle le moment précis où le manque s\'installe chez votre ancien partenaire et où la colère cède la place à la nostalgie. Un silence radio trop court ne laisse pas le temps au manque de s\'installer, tandis qu\'un silence trop long peut être interprété comme de l\'indifférence.',
-    },
-    {
-      question: 'Le silence radio fonctionne-t-il vraiment pour reconquérir un ex ?',
-      answer: 'Le silence radio est reconnu comme l\'une des stratégies les plus efficaces en reconquête amoureuse, et la voyance confirme son pouvoir à travers les tirages. Il fonctionne sur un principe psychologique et énergétique : l\'absence crée le manque, et le manque ravive les sentiments. Le tarot montre que dans environ 70% des cas, l\'ex commence à ressentir de la nostalgie après 3 semaines de silence complet. Cependant, le silence radio seul ne suffit pas. Il doit s\'accompagner d\'un travail sur soi authentique et d\'une évolution personnelle visible pour que la reconquête aboutisse.',
-    },
-    {
-      question: 'Que faire si mon ex me contacte pendant le silence radio ?',
-      answer: 'Si votre ex vous contacte pendant le silence radio, c\'est souvent un signe positif que le manque commence à agir. La voyance recommande de ne pas répondre immédiatement, sauf en cas d\'urgence réelle. Attendez quelques heures, puis répondez de manière courte, positive et détachée. Ne relancez pas la conversation et ne posez pas de questions sur ses sentiments. Le tarot peut vous guider sur la nature exacte de ce contact : est-ce de la curiosité, du manque authentique, ou une simple habitude ? Cette distinction est cruciale pour adapter votre réponse sans compromettre l\'efficacité de votre stratégie de reconquête.',
-    },
-    {
-      question: 'Comment gérer l\'angoisse du silence radio selon la voyance ?',
-      answer: 'Le silence radio est souvent plus difficile pour celui qui l\'initie que pour l\'ex. L\'angoisse de ne pas savoir ce que pense votre ex est normale et humaine. La voyance offre un soutien précieux pendant cette période en vous donnant des informations sur l\'état émotionnel de votre ancien partenaire. Un tirage régulier vous rassure et vous confirme que votre stratégie fonctionne. Profitez de ce temps pour vous reconnecter à vous-même : méditation, sport, développement personnel. Le tarot montre que les personnes qui utilisent le silence radio comme un véritable temps de transformation intérieure obtiennent les meilleurs résultats en reconquête.',
-    },
-  ]);
-
-  const breadcrumbSchema = getBreadcrumbSchema([
+  datePublished: '2026-03-22',
+  dateModified: '2026-03-22',
+  breadcrumb: [
     { name: 'Accueil', url: 'https://www.voyantlove.fr' },
     { name: 'Reconquête', url: 'https://www.voyantlove.fr/reconquete/' },
     { name: 'Silence Radio Reconquête', url: 'https://www.voyantlove.fr/reconquete/silence-radio-reconquete/' },
-  ]);
+  ],
+  header: {
+    emoji: '💜',
+    h1: 'Silence Radio : La Clé de la Reconquête Amoureuse',
+    subtitle: 'Comprendre et maîtriser le silence radio avec la guidance de la voyance',
+    gradient: 'from-purple-600 via-purple-700 to-indigo-600',
+    backLink: { href: '/reconquete', label: 'Reconquête' },
+    anchors: [
+      { href: '#consultation', label: 'Consultation Reconquête', primary: true },
+    ],
+  },
+  accentText: 'text-purple-600',
+  stats: [
+    { icon: '⭐', value: '4.8/5', label: '295 avis' },
+    { icon: '🤫', value: '70%', label: 'Taux de succès' },
+    { icon: '⏰', value: '3-8 sem', label: 'Durée moyenne' },
+    { icon: '🔮', value: '15 ans', label: 'Expérience' },
+  ],
+  eeat: { colorScheme: 'purple', method: 'Guidance voyance pour le silence radio en reconquête amoureuse' },
+  cta: { topic: 'reconquete', slug: 'silence-radio-reconquete' },
+  faq: [
+    {
+      q: 'Combien de temps doit durer le silence radio pour reconquérir son ex ?',
+      a: 'La durée idéale du silence radio varie selon la longueur et l\'intensité de votre relation. Pour une relation de moins d\'un an, 3 à 4 semaines suffisent généralement. Pour une relation longue de plusieurs années, 6 à 8 semaines sont recommandées. Le tarot peut affiner ce timing en captant l\'évolution émotionnelle de votre ex en temps réel. La voyance révèle le moment précis où le manque s\'installe chez votre ancien partenaire et où la colère cède la place à la nostalgie. Un silence radio trop court ne laisse pas le temps au manque de s\'installer, tandis qu\'un silence trop long peut être interprété comme de l\'indifférence.',
+    },
+    {
+      q: 'Le silence radio fonctionne-t-il vraiment pour reconquérir un ex ?',
+      a: 'Le silence radio est reconnu comme l\'une des stratégies les plus efficaces en reconquête amoureuse, et la voyance confirme son pouvoir à travers les tirages. Il fonctionne sur un principe psychologique et énergétique : l\'absence crée le manque, et le manque ravive les sentiments. Le tarot montre que dans environ 70% des cas, l\'ex commence à ressentir de la nostalgie après 3 semaines de silence complet. Cependant, le silence radio seul ne suffit pas. Il doit s\'accompagner d\'un travail sur soi authentique et d\'une évolution personnelle visible pour que la reconquête aboutisse.',
+    },
+    {
+      q: 'Que faire si mon ex me contacte pendant le silence radio ?',
+      a: 'Si votre ex vous contacte pendant le silence radio, c\'est souvent un signe positif que le manque commence à agir. La voyance recommande de ne pas répondre immédiatement, sauf en cas d\'urgence réelle. Attendez quelques heures, puis répondez de manière courte, positive et détachée. Ne relancez pas la conversation et ne posez pas de questions sur ses sentiments. Le tarot peut vous guider sur la nature exacte de ce contact : est-ce de la curiosité, du manque authentique, ou une simple habitude ? Cette distinction est cruciale pour adapter votre réponse sans compromettre l\'efficacité de votre stratégie de reconquête.',
+    },
+    {
+      q: 'Comment gérer l\'angoisse du silence radio selon la voyance ?',
+      a: 'Le silence radio est souvent plus difficile pour celui qui l\'initie que pour l\'ex. L\'angoisse de ne pas savoir ce que pense votre ex est normale et humaine. La voyance offre un soutien précieux pendant cette période en vous donnant des informations sur l\'état émotionnel de votre ancien partenaire. Un tirage régulier vous rassure et vous confirme que votre stratégie fonctionne. Profitez de ce temps pour vous reconnecter à vous-même : méditation, sport, développement personnel. Le tarot montre que les personnes qui utilisent le silence radio comme un véritable temps de transformation intérieure obtiennent les meilleurs résultats en reconquête.',
+    },
+  ],
+  related: [
+    { href: '/reconquete/reconquerir-son-ex', label: 'Reconquérir son Ex : Guide Complet' },
+    { href: '/reconquete/lettre-a-son-ex', label: 'Écrire une Lettre à son Ex' },
+    { href: '/reconquete/va-t-il-elle-revenir', label: 'Va-t-il/elle Revenir ?' },
+    { href: '/reconquete/ex-revient-silence-radio', label: 'Ex qui Revient après Silence Radio' },
+    { href: '/rupture/oublier-son-ex', label: 'Comment Oublier son Ex' },
+    { href: '/sentiments/maime-t-il-elle', label: 'M\'aime-t-il / M\'aime-t-elle Encore ?' },
+  ],
+};
 
-  const authorSchema = getAuthorSchema();
+export const metadata = contentMeta(config);
 
+export default function SilenceRadioReconquetePage() {
   return (
-    <main className="min-h-screen bg-gray-50">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(authorSchema) }}
-      />
-      <header className="bg-gradient-to-r from-purple-600 via-purple-700 to-indigo-600 text-white py-16 px-4">
-        <div className="max-w-4xl mx-auto">
-          <Link href="/reconquete" className="text-white/80 hover:text-white mb-4 inline-block">← Reconquête</Link>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">💜 Silence Radio : La Clé de la Reconquête Amoureuse</h1>
-          <p className="text-xl opacity-95 mb-6">Comprendre et maîtriser le silence radio avec la guidance de la voyance</p>
-          <a href="#consultation" className="bg-white text-purple-600 px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition inline-block">Consultation Reconquête</a>
-        </div>
-      </header>
-
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <div className="bg-white rounded-xl shadow-md p-6 mb-8 grid grid-cols-4 gap-4 text-center">
-          <div><div className="text-3xl mb-1">⭐</div><div className="text-2xl font-bold text-purple-600">4.8/5</div><div className="text-sm text-gray-600">295 avis</div></div>
-          <div><div className="text-3xl mb-1">🤫</div><div className="text-2xl font-bold text-purple-600">70%</div><div className="text-sm text-gray-600">Taux de succès</div></div>
-          <div><div className="text-3xl mb-1">⏰</div><div className="text-2xl font-bold text-purple-600">3-8 sem</div><div className="text-sm text-gray-600">Durée moyenne</div></div>
-          <div><div className="text-3xl mb-1">🔮</div><div className="text-2xl font-bold text-purple-600">15 ans</div><div className="text-sm text-gray-600">Expérience</div></div>
-        </div>
-
-        <EEATSignal
-          colorScheme="purple"
-          method="Guidance voyance pour le silence radio en reconquête amoureuse"
-        />
+    <ContentPage config={config}>
 
         <article className="bg-purple-50 border-l-4 border-purple-500 rounded-xl shadow-md p-8 mb-8">
           <p className="text-lg leading-relaxed mb-4">
-            Le <strong>silence radio</strong> est la stratégie la plus puissante et la plus redoutée de la <strong>reconquête amoureuse</strong>. Ce principe simple en apparence — couper tout contact avec son <strong>ex</strong> pendant plusieurs semaines — cache en réalité une mécanique émotionnelle et énergétique d'une efficacité redoutable. La <strong>voyance</strong> et le <strong>tarot</strong> confirment que cette période de retrait est souvent le catalyseur qui déclenche le processus de retour.
+            Le <strong>silence radio</strong> est la stratégie la plus puissante et la plus redoutée de la <strong>reconquête amoureuse</strong>. Ce principe simple en apparence, couper tout contact avec son <strong>ex</strong> pendant plusieurs semaines, cache en réalité une mécanique émotionnelle et énergétique d'une efficacité redoutable. La <strong>voyance</strong> et le <strong>tarot</strong> confirment que cette période de retrait est souvent le catalyseur qui déclenche le processus de retour.
           </p>
           <p className="text-lg leading-relaxed mb-4">
             Pourtant, le <strong>silence radio</strong> terrifie la plupart des personnes qui veulent <strong>reconquérir</strong> leur <strong>ex</strong>. La peur de l'oubli, l'angoisse de perdre tout lien, la crainte que l'autre refasse sa vie : ces inquiétudes sont légitimes. Mais la <strong>voyance amoureuse</strong> apporte un éclairage rassurant en révélant ce qui se passe réellement dans le cœur et l'esprit de votre ancien partenaire pendant votre absence.
@@ -219,43 +197,6 @@ export default function SilenceRadioReconquetePage() {
           </div>
         </section>
 
-        <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">❓ Questions Fréquentes</h2>
-          <p className="text-lg font-semibold text-gray-800 mb-4">Retrouvez les réponses aux questions les plus posées sur le silence radio en reconquête : durée, efficacité, gestion de l'angoisse et contact de l'ex.</p>
-          <div className="space-y-6">
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Combien de temps doit durer le silence radio pour reconquérir son ex ?</h3>
-              <p className="text-gray-700 leading-relaxed">La durée idéale du <strong>silence radio</strong> varie selon la longueur et l'intensité de votre <strong>relation</strong>. Pour une relation de moins d'un an, 3 à 4 semaines suffisent généralement. Pour une relation longue de plusieurs années, 6 à 8 semaines sont recommandées. Le <strong>tarot</strong> peut affiner ce timing en captant l'évolution émotionnelle de votre <strong>ex</strong> en temps réel. La <strong>voyance</strong> révèle le moment précis où le manque s'installe chez votre ancien partenaire et où la colère cède la place à la nostalgie. Un silence radio trop court ne laisse pas le temps au manque de s'installer, tandis qu'un silence trop long peut être interprété comme de l'<strong>indifférence</strong>.</p>
-            </div>
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Le silence radio fonctionne-t-il vraiment pour reconquérir un ex ?</h3>
-              <p className="text-gray-700 leading-relaxed">Le <strong>silence radio</strong> est reconnu comme l'une des stratégies les plus efficaces en <strong>reconquête amoureuse</strong>, et la <strong>voyance</strong> confirme son pouvoir à travers les tirages. Il fonctionne sur un principe psychologique et énergétique : l'absence crée le manque, et le manque ravive les <strong>sentiments</strong>. Le <strong>tarot</strong> montre que dans environ 70% des cas, l'ex commence à ressentir de la nostalgie après 3 semaines de silence complet. Cependant, le silence radio seul ne suffit pas. Découvrez notre guide complet pour <Link href="/reconquete/reconquerir-son-ex" className="text-purple-600 hover:text-purple-800 underline font-medium">reconquérir son ex</Link> et comprendre la stratégie globale.</p>
-            </div>
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Que faire si mon ex me contacte pendant le silence radio ?</h3>
-              <p className="text-gray-700 leading-relaxed">Si votre <strong>ex</strong> vous contacte pendant le <strong>silence radio</strong>, c'est souvent un signe positif que le manque commence à agir. La <strong>voyance</strong> recommande de ne pas répondre immédiatement, sauf en cas d'urgence réelle. Attendez quelques heures, puis répondez de manière courte, positive et détachée. Ne relancez pas la conversation et ne posez pas de questions sur ses <strong>sentiments</strong>. Le <strong>tarot</strong> peut vous guider sur la nature exacte de ce contact : est-ce de la curiosité, du manque authentique, ou une simple habitude ? Notre article sur <Link href="/reconquete/ex-qui-revient" className="text-purple-600 hover:text-purple-800 underline font-medium">l'ex qui revient</Link> approfondit les signes de retour à surveiller.</p>
-            </div>
-            <div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Comment gérer l'angoisse du silence radio selon la voyance ?</h3>
-              <p className="text-gray-700 leading-relaxed">Le <strong>silence radio</strong> est souvent plus difficile pour celui qui l'initie que pour l'<strong>ex</strong>. L'angoisse de ne pas savoir ce que pense votre ex est normale et humaine. La <strong>voyance</strong> offre un soutien précieux pendant cette période en vous donnant des informations sur l'état émotionnel de votre ancien partenaire. Un <strong>tirage</strong> régulier vous rassure et vous confirme que votre stratégie fonctionne. Profitez de ce temps pour vous reconnecter à vous-même : méditation, sport, <strong>développement personnel</strong>. Le <strong>tarot</strong> montre que les personnes qui utilisent le silence radio comme un véritable temps de <strong>transformation intérieure</strong> obtiennent les meilleurs résultats en <strong>reconquête</strong>.</p>
-            </div>
-          </div>
-        </section>
-
-        <div className="bg-gray-100 rounded-xl p-6 mb-8">
-          <h3 className="font-bold text-lg mb-4 text-gray-900">📚 Articles Connexes</h3>
-          <div className="space-y-2">
-            <Link href="/reconquete/reconquerir-son-ex" className="block text-purple-600 hover:text-purple-800 font-medium">→ Reconquérir son Ex : Guide Complet</Link>
-            <Link href="/reconquete/lettre-a-son-ex" className="block text-purple-600 hover:text-purple-800 font-medium">→ Écrire une Lettre à son Ex</Link>
-            <Link href="/reconquete/va-t-il-elle-revenir" className="block text-purple-600 hover:text-purple-800 font-medium">→ Va-t-il/elle Revenir ?</Link>
-            <Link href="/reconquete/ex-revient-silence-radio" className="block text-purple-600 hover:text-purple-800 font-medium">→ Ex qui Revient après Silence Radio</Link>
-            <Link href="/rupture/oublier-son-ex" className="block text-purple-600 hover:text-purple-800 font-medium">→ Comment Oublier son Ex</Link>
-            <Link href="/sentiments/maime-t-il-elle" className="block text-purple-600 hover:text-purple-800 font-medium">→ M'aime-t-il / M'aime-t-elle Encore ?</Link>
-          </div>
-        </div>
-
-        <VoyantFinalCTA topic="reconquete" source="silence-radio-reconquete-final" />
-      </div>
-    </main>
+      </ContentPage>
   );
 }

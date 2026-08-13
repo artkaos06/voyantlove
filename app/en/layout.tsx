@@ -1,10 +1,13 @@
-// EN site layout. Wraps all routes under app/en/* with EN-specific metadata,
-// the EN header/footer, and proper hreflang annotations to the FR site.
+// EN site layout. Wraps all routes under app/en/* with EN-specific metadata
+// and the EN header/footer.
 //
-// We can't override <html lang> from a nested layout, so the lang attribute
-// stays "fr" from the root layout. This is a known minor SEO trade-off —
-// Google primarily ranks on content + hreflang annotations, not the html lang
-// attribute. The hreflang links below are the load-bearing signal.
+// No cross-domain hreflang: lovepsychicguide.com and voyantlove.fr are
+// separate brands that share a codebase, not translations of each other, so
+// hreflang between them would be incorrect (see `alternates` below).
+//
+// Caveat: we can't override <html lang> from a nested layout, so the lang
+// attribute stays "fr" from the root layout, a known minor trade-off. Google
+// ranks primarily on content, not the html lang attribute.
 
 import type { Metadata } from 'next';
 import SiteHeader from '@/components/en/SiteHeader';
@@ -16,18 +19,17 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
     default:
-      'LovePsychicGuide — Honest reviews of love & relationship psychic services',
+      'LovePsychicGuide, Honest reviews of love & relationship psychic services',
     template: '%s | LovePsychicGuide',
   },
   description:
     'Independent reviews of love psychic reading services. Honest pros and cons of Keen, Kasamba, and other top platforms. Reader-supported, no-fluff editorial.',
+  // No hreflang: lovepsychicguide.com and voyantlove.fr are independent
+  // brands that share a codebase, not language variants of the same pages,
+  // so cross-domain hreflang would be incorrect. Self-referential canonical
+  // only. (Every EN page also overrides `alternates` with its own canonical.)
   alternates: {
     canonical: SITE_URL,
-    languages: {
-      'en-US': SITE_URL,
-      'fr-FR': 'https://www.voyantlove.fr',
-      'x-default': SITE_URL,
-    },
   },
   openGraph: {
     type: 'website',
@@ -35,13 +37,13 @@ export const metadata: Metadata = {
     url: SITE_URL,
     siteName: 'LovePsychicGuide',
     title:
-      'LovePsychicGuide — Honest reviews of love psychic reading services',
+      'LovePsychicGuide, Honest reviews of love psychic reading services',
     description:
       'Independent reviews of love psychic reading services. Honest pros and cons of Keen, Kasamba, and others.',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'LovePsychicGuide — Love psychic reading reviews',
+    title: 'LovePsychicGuide, Love psychic reading reviews',
     description:
       'Independent reviews of love psychic reading services. Honest pros and cons.',
   },

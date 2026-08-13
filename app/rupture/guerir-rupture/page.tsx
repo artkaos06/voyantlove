@@ -1,106 +1,76 @@
-import type { Metadata } from 'next';
 import Link from 'next/link';
-import { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getAuthorSchema } from '@/lib/schema';
-import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
-import VoyantFinalCTA from '@/components/VoyantFinalCTA';
+import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
-export const metadata: Metadata = {
-  title: 'Gu\u00e9rir d\u2019une Rupture Amoureuse : \u00c9tapes, Dur\u00e9e et Reconstruction',
-  description: 'Comment gu\u00e9rir d\u2019une rupture amoureuse ? D\u00e9couvrez les 5 \u00e9tapes du deuil amoureux, le temps de gu\u00e9rison, les signes de reconstruction et le r\u00f4le du tarot.',
-  keywords: ['gu\u00e9rir rupture', 'temps gu\u00e9rison rupture', 'reconstruction apr\u00e8s rupture', 'surmonter s\u00e9paration', 'cicatrisation amoureuse'],
-  alternates: {
-    canonical: 'https://www.voyantlove.fr/rupture/guerir-rupture/',
-  },
-};
-
-export default function GuerirRupturePage() {
-  const articleSchema = getArticleSchema({
-    title: 'Gu\u00e9rir d\u2019une Rupture Amoureuse : \u00c9tapes, Dur\u00e9e et Reconstruction',
-    description: 'Comment gu\u00e9rir d\u2019une rupture amoureuse ? D\u00e9couvrez les 5 \u00e9tapes du deuil amoureux, le temps de gu\u00e9rison, les signes de reconstruction et le r\u00f4le du tarot.',
-    url: 'https://www.voyantlove.fr/rupture/guerir-rupture/',
-    datePublished: '2026-03-03',
-    dateModified: '2026-03-03',
-    keywords: ['gu\u00e9rir rupture', 'temps gu\u00e9rison rupture', 'reconstruction apr\u00e8s rupture', 'surmonter s\u00e9paration', 'cicatrisation amoureuse'],
-  });
-
-  const breadcrumbSchema = getBreadcrumbSchema([
+const config: ContentPageConfig = {
+  title: 'Guérir d’une Rupture Amoureuse : Étapes, Durée et Reconstruction',
+  description: 'Comment guérir d’une rupture amoureuse ? Découvrez les 5 étapes du deuil amoureux, le temps de guérison, les signes de reconstruction et le rôle du tarot.',
+  url: 'https://www.voyantlove.fr/rupture/guerir-rupture/',
+  keywords: ['guérir rupture', 'temps guérison rupture', 'reconstruction après rupture', 'surmonter séparation', 'cicatrisation amoureuse'],
+  datePublished: '2026-03-03',
+  dateModified: '2026-03-03',
+  breadcrumb: [
     { name: 'Accueil', url: 'https://www.voyantlove.fr' },
     { name: 'Rupture Amoureuse', url: 'https://www.voyantlove.fr/rupture/' },
-    { name: 'Gu\u00e9rir d\u2019une Rupture', url: 'https://www.voyantlove.fr/rupture/guerir-rupture/' },
-  ]);
+    { name: 'Guérir d’une Rupture', url: 'https://www.voyantlove.fr/rupture/guerir-rupture/' },
+  ],
+  header: {
+    emoji: '🌿',
+    h1: 'Guérir d\'une Rupture Amoureuse',
+    subtitle: 'Étapes du deuil amoureux, durée de guérison et chemin vers la reconstruction',
+    gradient: 'from-teal-500 via-emerald-500 to-green-500',
+    backLink: { href: '/rupture', label: 'Retour aux Ruptures Amoureuses' },
+    anchors: [
+      { href: '#consultation', label: 'Guidance de Guérison', primary: true },
+      { href: '#etapes', label: 'Les 5 Étapes' },
+    ],
+  },
+  accentText: 'text-teal-600',
+  stats: [
+    { icon: '⏳', value: '6-12 mois', label: 'Durée moyenne' },
+    { icon: '💚', value: 'Forte', label: 'Guérison constatée' },
+    { icon: '⭐', value: '4.9/5', label: 'Satisfaction' },
+    { icon: '🔮', value: '5 étapes', label: 'Du deuil amoureux' },
+  ],
+  eeat: { colorScheme: 'teal', method: 'Tarot de guérison et accompagnement post-rupture' },
+  cta: { topic: 'rupture', slug: 'guerir-rupture' },
+  faq: [
+    {
+      q: 'Combien de temps pour gu\u00e9rir d\u2019une rupture ?',
+      a: 'Le temps de gu\u00e9rison d\u2019une rupture amoureuse varie selon la dur\u00e9e de la relation, la profondeur de l\u2019attachement et les circonstances de la s\u00e9paration. En moyenne, il faut entre 6 et 12 mois pour une relation de plusieurs ann\u00e9es. Les psychologues estiment souvent un mois de deuil par ann\u00e9e de relation. Le tarot peut r\u00e9v\u00e9ler o\u00f9 vous en \u00eates dans votre processus de gu\u00e9rison et combien de temps la phase actuelle devrait encore durer.',
+    },
+    {
+      q: 'Normal de souffrir des mois apr\u00e8s une rupture ?',
+      a: 'Oui, il est tout \u00e0 fait normal de ressentir encore de la douleur plusieurs mois apr\u00e8s une rupture, surtout si la relation \u00e9tait longue et significative. Le deuil amoureux n\u2019est pas lin\u00e9aire : vous pouvez avoir des jours de l\u00e9g\u00e8ret\u00e9 suivis de rechutes douloureuses. C\u2019est le sch\u00e9ma naturel de la gu\u00e9rison. Toutefois, si la souffrance reste aussi intense qu\u2019au premier jour apr\u00e8s un an, consulter un professionnel en plus de la voyance est recommand\u00e9.',
+    },
+    {
+      q: 'Le tarot aide-t-il \u00e0 gu\u00e9rir d\u2019une rupture ?',
+      a: 'Le tarot est un outil pr\u00e9cieux dans le processus de gu\u00e9rison apr\u00e8s une rupture. Il r\u00e9v\u00e8le les le\u00e7ons cach\u00e9es de la relation pass\u00e9e, identifie les blocages \u00e9motionnels qui retardent la gu\u00e9rison et \u00e9claire le chemin vers la reconstruction. Les cartes comme Temp\u00e9rance, l\u2019\u00c9toile et le Soleil apparaissent fr\u00e9quemment dans les tirages de gu\u00e9rison, signalant que l\u2019apaisement et le renouveau approchent.',
+    },
+    {
+      q: 'Comment savoir si je suis pr\u00eat(e) \u00e0 aimer de nouveau ?',
+      a: 'Plusieurs signes indiquent que vous \u00eates pr\u00eat(e) \u00e0 accueillir un nouvel amour : vous pouvez penser \u00e0 votre ex sans douleur aigu\u00eb, vous \u00eates int\u00e9ress\u00e9(e) par de nouvelles personnes de mani\u00e8re saine, vous ne cherchez pas \u00e0 remplacer votre ex mais \u00e0 construire quelque chose de nouveau, et vous vous sentez complet(e) seul(e). Le tarot confirme cette disponibilit\u00e9 \u00e9motionnelle \u00e0 travers des cartes comme l\u2019As de Coupe et le Soleil en position d\u2019avenir.',
+    },
+    {
+      q: 'Faut-il couper le contact avec son ex ?',
+      a: 'Le silence radio est g\u00e9n\u00e9ralement recommand\u00e9 dans les premiers mois suivant la rupture pour permettre la gu\u00e9rison \u00e9motionnelle. Maintenir le contact entretient l\u2019esp\u00e9rance et retarde le processus de deuil amoureux. Cependant, chaque situation est unique. Le tarot peut r\u00e9v\u00e9ler si le contact avec votre ex nourrit votre gu\u00e9rison ou l\u2019entrave. Dans certains cas, une cl\u00f4ture consciente par un dernier \u00e9change est n\u00e9cessaire avant de tourner la page.',
+    },
+  ],
+  related: [
+    { href: '/rupture/rupture-amoureuse', label: 'Comprendre la Rupture Amoureuse' },
+    { href: '/rupture/oublier-son-ex', label: 'Comment Oublier son Ex' },
+    { href: '/rupture/chagrin-damour', label: 'Surmonter un Chagrin d\'Amour' },
+    { href: '/nouvelle-rencontre/quand-rencontre-amour', label: 'Quand Vais-je Rencontrer l\'Amour ?' },
+    { href: '/rupture', label: 'Rupture Amoureuse : Toutes nos Guidances' },
+  ],
+};
 
-  const authorSchema = getAuthorSchema();
+export const metadata = contentMeta(config);
 
-  const faqSchema = getFAQSchema([
-    {
-      question: 'Combien de temps pour gu\u00e9rir d\u2019une rupture ?',
-      answer: 'Le temps de gu\u00e9rison d\u2019une rupture amoureuse varie selon la dur\u00e9e de la relation, la profondeur de l\u2019attachement et les circonstances de la s\u00e9paration. En moyenne, il faut entre 6 et 12 mois pour une relation de plusieurs ann\u00e9es. Les psychologues estiment souvent un mois de deuil par ann\u00e9e de relation. Le tarot peut r\u00e9v\u00e9ler o\u00f9 vous en \u00eates dans votre processus de gu\u00e9rison et combien de temps la phase actuelle devrait encore durer.',
-    },
-    {
-      question: 'Normal de souffrir des mois apr\u00e8s une rupture ?',
-      answer: 'Oui, il est tout \u00e0 fait normal de ressentir encore de la douleur plusieurs mois apr\u00e8s une rupture, surtout si la relation \u00e9tait longue et significative. Le deuil amoureux n\u2019est pas lin\u00e9aire : vous pouvez avoir des jours de l\u00e9g\u00e8ret\u00e9 suivis de rechutes douloureuses. C\u2019est le sch\u00e9ma naturel de la gu\u00e9rison. Toutefois, si la souffrance reste aussi intense qu\u2019au premier jour apr\u00e8s un an, consulter un professionnel en plus de la voyance est recommand\u00e9.',
-    },
-    {
-      question: 'Le tarot aide-t-il \u00e0 gu\u00e9rir d\u2019une rupture ?',
-      answer: 'Le tarot est un outil pr\u00e9cieux dans le processus de gu\u00e9rison apr\u00e8s une rupture. Il r\u00e9v\u00e8le les le\u00e7ons cach\u00e9es de la relation pass\u00e9e, identifie les blocages \u00e9motionnels qui retardent la gu\u00e9rison et \u00e9claire le chemin vers la reconstruction. Les cartes comme Temp\u00e9rance, l\u2019\u00c9toile et le Soleil apparaissent fr\u00e9quemment dans les tirages de gu\u00e9rison, signalant que l\u2019apaisement et le renouveau approchent.',
-    },
-    {
-      question: 'Comment savoir si je suis pr\u00eat(e) \u00e0 aimer de nouveau ?',
-      answer: 'Plusieurs signes indiquent que vous \u00eates pr\u00eat(e) \u00e0 accueillir un nouvel amour : vous pouvez penser \u00e0 votre ex sans douleur aigu\u00eb, vous \u00eates int\u00e9ress\u00e9(e) par de nouvelles personnes de mani\u00e8re saine, vous ne cherchez pas \u00e0 remplacer votre ex mais \u00e0 construire quelque chose de nouveau, et vous vous sentez complet(e) seul(e). Le tarot confirme cette disponibilit\u00e9 \u00e9motionnelle \u00e0 travers des cartes comme l\u2019As de Coupe et le Soleil en position d\u2019avenir.',
-    },
-    {
-      question: 'Faut-il couper le contact avec son ex ?',
-      answer: 'Le silence radio est g\u00e9n\u00e9ralement recommand\u00e9 dans les premiers mois suivant la rupture pour permettre la gu\u00e9rison \u00e9motionnelle. Maintenir le contact entretient l\u2019esp\u00e9rance et retarde le processus de deuil amoureux. Cependant, chaque situation est unique. Le tarot peut r\u00e9v\u00e9ler si le contact avec votre ex nourrit votre gu\u00e9rison ou l\u2019entrave. Dans certains cas, une cl\u00f4ture consciente par un dernier \u00e9change est n\u00e9cessaire avant de tourner la page.',
-    },
-  ]);
-
+export default function GuerirRupturePage() {
   return (
-    <main className="min-h-screen bg-gray-50">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(authorSchema) }}
-      />
-
-      {/* Header */}
-      <header className="bg-gradient-to-r from-teal-500 via-emerald-500 to-green-500 text-white py-16 px-4">
-        <div className="max-w-4xl mx-auto">
-          <Link href="/rupture" className="text-white/80 hover:text-white mb-4 inline-block">&larr; Retour aux Ruptures Amoureuses</Link>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">&#x1F33F; Gu&eacute;rir d&apos;une Rupture Amoureuse</h1>
-          <p className="text-xl opacity-95 mb-6">&Eacute;tapes du deuil amoureux, dur&eacute;e de gu&eacute;rison et chemin vers la reconstruction</p>
-          <div className="flex gap-4 flex-wrap">
-            <a href="#consultation" className="bg-white text-teal-600 px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition">Guidance de Gu&eacute;rison</a>
-            <a href="#etapes" className="border-2 border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-teal-600 transition">Les 5 &Eacute;tapes</a>
-          </div>
-        </div>
-      </header>
-
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        {/* Stats bar */}
-        <div className="bg-white rounded-xl shadow-md p-6 mb-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-          <div><div className="text-3xl mb-1">&#x23F3;</div><div className="text-2xl font-bold text-teal-600">6-12 mois</div><div className="text-sm text-gray-600">Dur&eacute;e moyenne</div></div>
-          <div><div className="text-3xl mb-1">&#x1F49A;</div><div className="text-2xl font-bold text-teal-600">Forte</div><div className="text-sm text-gray-600">Gu&eacute;rison constat&eacute;e</div></div>
-          <div><div className="text-3xl mb-1">&#x2B50;</div><div className="text-2xl font-bold text-teal-600">4.9/5</div><div className="text-sm text-gray-600">Satisfaction</div></div>
-          <div><div className="text-3xl mb-1">&#x1F52E;</div><div className="text-2xl font-bold text-teal-600">5 &eacute;tapes</div><div className="text-sm text-gray-600">Du deuil amoureux</div></div>
-        </div>
-
-        {/* EEAT Signal */}
-        <EEATSignal colorScheme="teal" method="Tarot de gu&eacute;rison et accompagnement post-rupture" />
-
-        {/* Answer Capsule */}
+    <ContentPage config={config}>
         <article className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-teal-600">
           <div className="bg-teal-50 border-l-4 border-teal-500 p-6 rounded-lg">
             <p className="text-lg leading-relaxed">
@@ -313,53 +283,6 @@ export default function GuerirRupturePage() {
             </div>
           </div>
         </section>
-
-        {/* FAQ Section */}
-        <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">&#x2753; Questions Fr&eacute;quentes sur la Gu&eacute;rison Apr&egrave;s une Rupture</h2>
-          <p className="text-lg font-semibold text-gray-800 mb-4">Voici les r&eacute;ponses aux questions les plus pos&eacute;es sur la gu&eacute;rison apr&egrave;s une rupture : dur&eacute;e du processus, normalit&eacute; de la douleur, r&ocirc;le du tarot, disponibilit&eacute; &agrave; aimer et n&eacute;cessit&eacute; du silence radio.</p>
-          <div className="space-y-6">
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Combien de temps pour gu&eacute;rir d&apos;une rupture ?</h3>
-              <p className="text-gray-700 leading-relaxed">Le temps de <strong>gu&eacute;rison d&apos;une rupture amoureuse</strong> varie selon la dur&eacute;e de la <strong>relation</strong>, la profondeur de l&apos;attachement et les circonstances de la <strong>s&eacute;paration</strong>. En moyenne, il faut entre 6 et 12 mois pour une relation de plusieurs ann&eacute;es. Les psychologues estiment souvent un mois de <strong>deuil</strong> par ann&eacute;e de relation. Le <strong>tarot</strong> peut r&eacute;v&eacute;ler o&ugrave; vous en &ecirc;tes dans votre processus de <strong>gu&eacute;rison</strong> et combien de temps la phase actuelle devrait encore durer.</p>
-            </div>
-
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Normal de souffrir des mois apr&egrave;s une rupture ?</h3>
-              <p className="text-gray-700 leading-relaxed">Oui, il est tout &agrave; fait normal de ressentir encore de la douleur plusieurs mois apr&egrave;s une <strong>rupture</strong>, surtout si la <strong>relation</strong> &eacute;tait longue et significative. Le <strong>deuil amoureux</strong> n&apos;est pas lin&eacute;aire : vous pouvez avoir des jours de l&eacute;g&egrave;ret&eacute; suivis de rechutes douloureuses. C&apos;est le sch&eacute;ma naturel de la <strong>cicatrisation amoureuse</strong>. Toutefois, si la souffrance reste aussi intense qu&apos;au premier jour apr&egrave;s un an, consulter un professionnel en plus de la <strong>voyance</strong> est recommand&eacute;.</p>
-            </div>
-
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Le tarot aide-t-il &agrave; gu&eacute;rir d&apos;une rupture ?</h3>
-              <p className="text-gray-700 leading-relaxed">Le <strong>tarot</strong> est un outil pr&eacute;cieux dans le processus de <strong>gu&eacute;rison apr&egrave;s une rupture</strong>. Il r&eacute;v&egrave;le les le&ccedil;ons cach&eacute;es de la <strong>relation</strong> pass&eacute;e, identifie les <strong>blocages &eacute;motionnels</strong> qui retardent la gu&eacute;rison et &eacute;claire le chemin vers la <strong>reconstruction</strong>. Les cartes comme <strong>Temp&eacute;rance</strong>, l&apos;<strong>&Eacute;toile</strong> et le <strong>Soleil</strong> apparaissent fr&eacute;quemment dans les tirages de gu&eacute;rison, signalant que l&apos;apaisement et le renouveau approchent.</p>
-            </div>
-
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Comment savoir si je suis pr&ecirc;t(e) &agrave; aimer de nouveau ?</h3>
-              <p className="text-gray-700 leading-relaxed">Plusieurs signes indiquent que vous &ecirc;tes pr&ecirc;t(e) &agrave; accueillir un <strong>nouvel amour</strong> : vous pouvez penser &agrave; votre <strong>ex</strong> sans douleur aigu&euml;, vous &ecirc;tes int&eacute;ress&eacute;(e) par de nouvelles personnes de mani&egrave;re saine, vous ne cherchez pas &agrave; remplacer votre ex mais &agrave; construire quelque chose de nouveau, et vous vous sentez complet(e) seul(e). Le <strong>tarot</strong> confirme cette disponibilit&eacute; &eacute;motionnelle &agrave; travers des cartes comme l&apos;<strong>As de Coupe</strong> et le <strong>Soleil</strong> en position d&apos;avenir.</p>
-            </div>
-
-            <div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Faut-il couper le contact avec son ex ?</h3>
-              <p className="text-gray-700 leading-relaxed">Le <strong>silence radio</strong> est g&eacute;n&eacute;ralement recommand&eacute; dans les premiers mois suivant la <strong>rupture</strong> pour permettre la <strong>gu&eacute;rison &eacute;motionnelle</strong>. Maintenir le contact entretient l&apos;esp&eacute;rance et retarde le processus de <strong>deuil amoureux</strong>. Cependant, chaque situation est unique. Le <strong>tarot</strong> peut r&eacute;v&eacute;ler si le contact avec votre <strong>ex</strong> nourrit votre gu&eacute;rison ou l&apos;entrave. Dans certains cas, une cl&ocirc;ture consciente par un dernier &eacute;change est n&eacute;cessaire avant de tourner la page.</p>
-            </div>
-          </div>
-        </section>
-
-        {/* Articles Connexes */}
-        <div className="bg-gray-100 rounded-xl p-6 mb-8">
-          <h3 className="font-bold text-lg mb-4 text-gray-900">&#x1F4DA; Articles Connexes</h3>
-          <div className="space-y-2">
-            <Link href="/rupture/rupture-amoureuse" className="block text-teal-600 hover:text-teal-800 font-medium">&rarr; Comprendre la Rupture Amoureuse</Link>
-            <Link href="/rupture/oublier-son-ex" className="block text-teal-600 hover:text-teal-800 font-medium">&rarr; Comment Oublier son Ex</Link>
-            <Link href="/rupture/chagrin-damour" className="block text-teal-600 hover:text-teal-800 font-medium">&rarr; Surmonter un Chagrin d&apos;Amour</Link>
-            <Link href="/nouvelle-rencontre/quand-rencontre-amour" className="block text-teal-600 hover:text-teal-800 font-medium">&rarr; Quand Vais-je Rencontrer l&apos;Amour ?</Link>
-            <Link href="/rupture" className="block text-teal-600 hover:text-teal-800 font-medium">&rarr; Rupture Amoureuse : Toutes nos Guidances</Link>
-          </div>
-        </div>
-
-        <VoyantFinalCTA topic="rupture" source="guerir-rupture-final" />
-      </div>
-    </main>
+    </ContentPage>
   );
 }

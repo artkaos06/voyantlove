@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import LeadCaptureForm from '@/components/LeadCaptureForm';
 
 export const metadata: Metadata = {
-  title: 'Tirage Tarot Amour Gratuit — Votre Prédiction Personnalisée',
+  title: 'Tirage Tarot Amour Gratuit, Votre Prédiction Personnalisée',
   description: 'Recevez votre tirage tarot amour gratuit et personnalisé. Analyse de votre situation sentimentale basée sur votre signe astrologique.',
   robots: { index: false, follow: false },
 };
@@ -18,7 +18,7 @@ export default function LPVoyanceAmour() {
             Recevez Votre Tirage Tarot Amour Gratuit
           </h1>
           <p className="text-xl opacity-95 mb-8 max-w-2xl mx-auto">
-            Découvrez ce que les cartes révèlent sur votre vie sentimentale — analyse personnalisée selon votre signe et votre situation.
+            Découvrez ce que les cartes révèlent sur votre vie sentimentale, analyse personnalisée selon votre signe et votre situation.
           </p>
           <a href="#tirage" className="inline-block bg-white text-purple-700 px-8 py-4 rounded-lg font-bold text-lg hover:shadow-xl transition-all">
             Obtenir Mon Tirage Gratuit ↓
@@ -78,7 +78,7 @@ export default function LPVoyanceAmour() {
               <div key={i} className="bg-gray-50 p-5 rounded-lg">
                 <div className="mb-2">{'⭐'.repeat(t.stars)}</div>
                 <p className="text-gray-700 italic mb-3">&quot;{t.text}&quot;</p>
-                <p className="text-sm font-semibold text-gray-500">— {t.name}</p>
+                <p className="text-sm font-semibold text-gray-500">, {t.name}</p>
               </div>
             ))}
           </div>

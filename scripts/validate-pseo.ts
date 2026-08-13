@@ -220,7 +220,9 @@ async function checkNetworks(): Promise<{
       if (!paramSlugs.has(slug)) {
         issues.push({ severity: 'error', scope: net.name, message: `"${slug}" passes validation but is missing from generateStaticParams()` });
       }
-      const url = `${SITE_URL}${net.basePath}${slug}`;
+      // Trailing slash to match the canonical form (trailingSlash: true) that
+      // app/sitemap.ts now emits — consistent with validRoutes/line-238 below.
+      const url = `${SITE_URL}${net.basePath}${slug}/`;
       if (!sitemapUrls.has(url)) {
         issues.push({ severity: 'error', scope: net.name, message: `"${slug}" passes validation but is missing from app/sitemap.ts (expected ${url})` });
       }

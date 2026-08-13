@@ -3,7 +3,7 @@
 // Why this exists: until now, "🎁 Essayer Gratuitement" / "Consulter maintenant"
 // buttons rendered as plain <a href="https://www.monsitevoyance.com/...">
 // links. The browser navigated the user straight off-domain, so our server
-// had zero visibility into affiliate clicks — no Discord ping, no digest
+// had zero visibility into affiliate clicks, no Discord ping, no digest
 // counter, no log of which gclid/gbraid/wbraid was attached to which click.
 // Clarity recordings hinted at funnel drop-off on /consulter (one visitor
 // tapped "Essayer Gratuitement" three times without converting) but we
@@ -12,8 +12,8 @@
 // This route is the affiliate equivalent of /api/go/[offer] for the Keen
 // (EN) funnel, but pointed at MonSiteVoyance (FR) which has no TUNE/postback
 // integration. We can't round-trip the gclid back via postback the way the
-// Keen flow does — MonSiteVoyance just reports conversions in their own
-// dashboard — but we can at least log it on the click so any conversion
+// Keen flow does, MonSiteVoyance just reports conversions in their own
+// dashboard, but we can at least log it on the click so any conversion
 // that *does* surface can be manually reconciled against Google Ads OCI.
 //
 // Inputs (querystring):
@@ -45,7 +45,7 @@ function buildMonSiteVoyanceUrl(id: string, source: string): string {
 export async function GET(request: NextRequest): Promise<NextResponse> {
   const sp = request.nextUrl.searchParams;
 
-  // Validate voyant ID — digits only, length-capped. MonSiteVoyance IDs in
+  // Validate voyant ID, digits only, length-capped. MonSiteVoyance IDs in
   // our dataset are 4-5 digit integers; rejecting anything else stops people
   // (or bots) from using the redirect as an open-redirect probe.
   const idRaw = sp.get('id') || '';
@@ -92,11 +92,11 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
     received_at: new Date().toISOString(),
   });
 
-  // Daily-digest counter — same bucket as Keen click-outs and tel-clicks
+  // Daily-digest counter, same bucket as Keen click-outs and tel-clicks
   // since all three are "user-initiated affiliate conversion intent".
   recordClickOut({ attributionType, ip });
 
-  // Click-rate anomaly detection — alerts on bursts from the same IP that
+  // Click-rate anomaly detection, alerts on bursts from the same IP that
   // may indicate bot probing of the redirect endpoint.
   // Discord notifications are awaited so Vercel doesn't terminate the
   // serverless function before the webhook fires (same pattern as
@@ -136,7 +136,7 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
       ...(wbraid ? [{ name: 'wbraid', value: wbraid, inline: false }] : []),
       {
         name: 'Referer',
-        value: referer || '(none — likely bot or direct URL hit)',
+        value: referer || '(none, likely bot or direct URL hit)',
       },
       { name: 'User Agent', value: userAgent || '(empty)' },
     ],

@@ -67,7 +67,7 @@ async function handle(request: NextRequest): Promise<NextResponse> {
       await kv.hincrby(k, 'emailctas', 1);
       if (num) await kv.hincrby(k, `emailcta:num:${num}`, 1);
     } else if (event === 'step') {
-      // Drop-off only — must not touch starts/ctas or the funnel maths shifts.
+      // Drop-off only, must not touch starts/ctas or the funnel maths shifts.
       const stepName = (body.tracking?.step || '').slice(0, 20);
       if (STEP_NAMES.has(stepName)) await kv.hincrby(k, `step:${stepName}`, 1);
     } else {
@@ -92,7 +92,7 @@ async function handle(request: NextRequest): Promise<NextResponse> {
 
   // Real-time money signal: the CTA tap = a fully-converted lead. Email is
   // gated before the result, so reaching the call button means email captured
-  // + call intent. One clean ping per conversion — the RevShare equivalent of
+  // + call intent. One clean ping per conversion, the RevShare equivalent of
   // the old CPL lead ping. category:'lead' passes the leads-only gate.
   if (event === 'cta') {
     const tr = body.tracking || {};
@@ -101,13 +101,13 @@ async function handle(request: NextRequest): Promise<NextResponse> {
       category: 'lead',
       color: Color.GREEN,
       title: '📞 Quiz · appel lancé (lead converti)',
-      description: `Numéro composé : **${tr.dialed || '—'}**`,
+      description: `Numéro composé : **${tr.dialed || ', '}**`,
       fields: [
-        { name: 'Angle', value: `num=${num || '—'}`, inline: true },
+        { name: 'Angle', value: `num=${num || ', '}`, inline: true },
         { name: 'Source', value: tr.wname || tr.source || source, inline: true },
-        { name: 'Situation', value: ans.situation || '—', inline: true },
-        { name: 'Question', value: ans.question || '—', inline: true },
-        { name: 'Signe', value: ans.signe || '—', inline: true },
+        { name: 'Situation', value: ans.situation || ', ', inline: true },
+        { name: 'Question', value: ans.question || ', ', inline: true },
+        { name: 'Signe', value: ans.signe || ', ', inline: true },
       ],
     });
   }
@@ -119,10 +119,10 @@ async function handle(request: NextRequest): Promise<NextResponse> {
       category: 'lead',
       color: Color.PURPLE,
       title: '📧 Email → appel lancé',
-      description: `Numéro composé : **${tr.dialed || '—'}**`,
+      description: `Numéro composé : **${tr.dialed || ', '}**`,
       fields: [
         { name: 'Canal', value: tr.source || 'email', inline: true },
-        { name: 'Numéro', value: `num=${num || '—'}`, inline: true },
+        { name: 'Numéro', value: `num=${num || ', '}`, inline: true },
       ],
     });
   }

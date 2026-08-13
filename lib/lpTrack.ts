@@ -7,7 +7,7 @@
 //
 // Loads are recorded SERVER-SIDE during render, not via a JS beacon. The
 // landers are zero-JS by design because MGID's top FR sources are
-// Xiaomi/Huawei in-app browsers that choke on hydration — a JS load beacon
+// Xiaomi/Huawei in-app browsers that choke on hydration, a JS load beacon
 // would systematically undercount exactly the traffic we most need to
 // measure, making bad sources look small instead of bad.
 //
@@ -20,7 +20,7 @@ import { parisDate } from '@/lib/cplStats';
 
 export const LP_TTL = 60 * 60 * 24 * 40;
 
-/** Landers we accept — an unknown value is dropped so a spoofed or mistyped
+/** Landers we accept, an unknown value is dropped so a spoofed or mistyped
  *  beacon can't blow up the hash's key cardinality. */
 export const LANDERS = new Set(['voyant-direct', 'il-elle-vous-aime', 'histoire-sophie']);
 
@@ -63,7 +63,7 @@ export function readTracking(sp: SP): LpTracking {
     sid: one(sp, 'sid', 32),
     // MGID's tracking-link builder emits `adclid={click_id}` by default, so
     // the param on the wire is `adclid` even though the macro is named
-    // {click_id}. Accept either: a mismatch here is invisible — attribution
+    // {click_id}. Accept either: a mismatch here is invisible, attribution
     // and the conversion relay would just silently stay empty.
     clickId: one(sp, 'click_id', 64) || one(sp, 'adclid', 64),
     creativeId: one(sp, 'creative_id', 32),
@@ -72,7 +72,7 @@ export function readTracking(sp: SP): LpTracking {
 
 /**
  * Increment one funnel event. `event` is 'load' or 'tel'.
- * Best-effort: never throws — a KV outage must not break a paid lander.
+ * Best-effort: never throws, a KV outage must not break a paid lander.
  */
 export async function recordLpEvent(
   event: 'load' | 'tel',

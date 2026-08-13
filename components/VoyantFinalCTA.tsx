@@ -57,7 +57,7 @@ export default function VoyantFinalCTA({
     sentiments: 'Nos voyants lisent les sentiments cachés et révèlent la vérité',
     'crise-couple': 'Nos voyants identifient les solutions pour retrouver l\'harmonie',
     'methodes-voyance': 'Nos experts du tarot et de l\'oracle éclairent votre vie sentimentale',
-    'voyance-gratuite': 'Découvrez la voyance amoureuse sans engagement — premières minutes offertes',
+    'voyance-gratuite': 'Découvrez la voyance amoureuse sans engagement, premières minutes offertes',
   };
 
   const buttonColors: Record<string, string> = {

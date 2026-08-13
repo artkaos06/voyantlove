@@ -1,10 +1,10 @@
 'use client';
 
-// Astro-love quiz funnel — the pre-lander that was missing from every paid
+// Astro-love quiz funnel, the pre-lander that was missing from every paid
 // test. Cold native traffic direct-linked to a form converts ~0.7%. A
 // multi-step quiz that collects birth data + situation step-by-step builds
 // commitment (consistency principle) so the visitor is invested by the time
-// they hit the offer — the classic profitable native astro pattern.
+// they hit the offer, the classic profitable native astro pattern.
 //
 // Flow: native ad → THIS quiz → offer handoff (Télémaque phone by default,
 // swappable). Native tracking params (source, click_id, widget, teaser) are
@@ -83,7 +83,7 @@ const TRACK_KEYS = [
 
 export default function LectureAmourQuiz() {
   // step 1..N = questions, N+1 = email capture, N+2 = loading, N+3 = result.
-  // We land the visitor DIRECTLY on question 1 (no intro gate) — the old intro
+  // We land the visitor DIRECTLY on question 1 (no intro gate), the old intro
   // screen bled 94% of loads before anyone answered. Email is gated between the
   // last question and the payoff; the phone CTA that follows catches immediate
   // callers, and the Brevo list nurtures the rest over the following weeks.
@@ -191,7 +191,7 @@ export default function LectureAmourQuiz() {
         <div className="w-full max-w-md">
           {step >= 1 && step <= N && (
             <div>
-              {/* Slim trust header on the landing question — context + urgency
+              {/* Slim trust header on the landing question, context + urgency
                   without an intro gate. */}
               {step === 1 && (
                 <div className="text-center mb-6">
@@ -225,7 +225,7 @@ export default function LectureAmourQuiz() {
 
       <footer className="px-5 pb-6 pt-2 text-center text-[11px] text-white/45 leading-relaxed">
         Service de voyance réservé aux personnes majeures (18+). Divertissement et
-        guidance personnelle — ne remplace aucun avis médical, juridique ou financier.
+        guidance personnelle, ne remplace aucun avis médical, juridique ou financier.
       </footer>
     </main>
   );
@@ -366,12 +366,11 @@ function Result({
   onCta: () => void;
 }) {
   return (
-    // The CTA button sits right after the title, ABOVE the teaser copy —
-    // not a styling choice, a fix. The cookie-consent bar renders
+    // The CTA button sits right after the title, ABOVE the teaser copy,     // not a styling choice, a fix. The cookie-consent bar renders
     // position:fixed/bottom:0 at max z-index and does NOT reflow page
     // content, so it sits on top of whatever is at the bottom of the
     // viewport. Padding-bottom on this block doesn't help (it only adds
-    // space after the button, it never moves the button itself — normal
+    // space after the button, it never moves the button itself, normal
     // block flow, not a centered/clamped container). The only viewport-
     // height-independent fix is keeping the button close to the top of
     // this block so it clears the bar regardless of screen height. This
@@ -405,12 +404,12 @@ function buildTeaser(a: Record<string, string>): string {
   return (
     `${signe}, dans une période « ${sit} », entre en forte résonance avec votre ` +
     `question sur ${q}. Nos voyants perçoivent souvent un tournant important pour ` +
-    `les profils comme le vôtre — mais chaque situation est unique. Une consultation ` +
+    `les profils comme le vôtre, mais chaque situation est unique. Une consultation ` +
     `privée avec un voyant peut vous apporter des réponses claires, maintenant.`
   );
 }
 
-// Best-effort funnel beacon — never blocks the UI.
+// Best-effort funnel beacon, never blocks the UI.
 function beacon(
   event: 'start' | 'cta' | 'step',
   tracking: Record<string, string>,

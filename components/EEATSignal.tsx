@@ -27,16 +27,18 @@ export default function EEATSignal({
     pink: 'bg-pink-50 border-pink-500',
   };
 
-  const displayDate = lastUpdated || new Date().toLocaleDateString('fr-FR', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
-  });
-
+  // Only show a "Mis à jour" date when the page passes a real one. The old
+  // `new Date()` fallback rendered the *build* date on every page, implying
+  // fresh updates that never happened, a fake-freshness signal search
+  // engines penalize. Pages that want the freshness signal pass `lastUpdated`.
   return (
     <div className={`${colors[colorScheme]} border-l-4 p-4 mb-8 text-sm text-gray-700`}>
       <strong>Source :</strong> {source} • {' '}
-      <strong>Mis à jour :</strong> {displayDate} • {' '}
+      {lastUpdated && (
+        <>
+          <strong>Mis à jour :</strong> {lastUpdated} • {' '}
+        </>
+      )}
       <strong>Méthode :</strong> {method}
     </div>
   );

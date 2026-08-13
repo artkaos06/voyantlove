@@ -1,4 +1,4 @@
-// Discord webhook notifier — server-only.
+// Discord webhook notifier, server-only.
 // Never import from a 'use client' module.
 //
 // Used to push real-time visibility on click-outs and conversions to a
@@ -15,7 +15,7 @@
 //   - Silent no-op if DISCORD_WEBHOOK_URL is not configured (graceful)
 //   - Best-effort fire-and-forget: never blocks the actual response
 //   - Short timeout to avoid hanging serverless functions
-//   - All errors swallowed — observability shouldn't break the critical path
+//   - All errors swallowed, observability shouldn't break the critical path
 
 const WEBHOOK_TIMEOUT_MS = 2000;
 
@@ -27,7 +27,7 @@ export const Color = {
   GREEN: 65407, // #00FF7F
   /** Click without attribution (likely bot or direct traffic). */
   YELLOW: 16763911, // #FFC107
-  /** Failure — Google Ads upload rejected, postback malformed, etc. */
+  /** Failure, Google Ads upload rejected, postback malformed, etc. */
   RED: 16733525, // #FF5555
   /** Informational. */
   GRAY: 9013641, // #898989
@@ -40,7 +40,7 @@ interface EmbedField {
 }
 
 /**
- * Notification category — controls what reaches Discord in real time.
+ * Notification category, controls what reaches Discord in real time.
  * With DISCORD_LEADS_ONLY on (the default), only 'lead' and 'digest' fire;
  * everything else (click-outs, anomalies, OCI, tel-taps, unauthorized) is
  * suppressed to keep the channel a clean money-signal feed. Set
@@ -98,7 +98,7 @@ export async function notifyDiscord(payload: NotifyPayload): Promise<void> {
       ? {
           fields: payload.fields.map((f) => ({
             name: truncate(f.name, 256),
-            value: truncate(f.value || '—', 1024),
+            value: truncate(f.value || ', ', 1024),
             ...(f.inline ? { inline: true } : {}),
           })),
         }
@@ -118,7 +118,7 @@ export async function notifyDiscord(payload: NotifyPayload): Promise<void> {
       signal: AbortSignal.timeout(WEBHOOK_TIMEOUT_MS),
     });
   } catch {
-    // Swallow — observability must not break the actual handler.
+    // Swallow, observability must not break the actual handler.
     // (network error, timeout, Discord rate-limit, all map here.)
   }
 }

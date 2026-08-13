@@ -48,7 +48,7 @@ export default function SiteHeader() {
           <span>💜</span><span>VoyantLove</span>
         </Link>
 
-        {/* Desktop nav — CSS hover/focus dropdowns, no JS state */}
+        {/* Desktop nav, CSS hover/focus dropdowns, no JS state */}
         <div className="hidden md:flex items-center gap-1">
           {NAV.map((group) => (
             <div key={group.label} className="relative group">

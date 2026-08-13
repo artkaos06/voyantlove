@@ -3,7 +3,7 @@
 // implication, breaks up wall-of-text, gives scanners a thread to follow.
 //
 // Three visual variants for different emotional registers:
-//   - 'default'  : neutral purple/indigo (most common — translates insight to action)
+//   - 'default'  : neutral purple/indigo (most common, translates insight to action)
 //   - 'positive' : green (good news, encouragement)
 //   - 'caution'  : amber (something to be wary of, no-contact rule, etc.)
 

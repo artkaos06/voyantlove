@@ -4,7 +4,7 @@
 // lecture"). This endpoint adds the contact to a Brevo list with the quiz
 // answers as attributes (for segmentation + the relance sequence) and
 // increments the funnel's email counter. Building the email list is the
-// durable asset — the phone CTA that follows captures the immediate callers,
+// durable asset, the phone CTA that follows captures the immediate callers,
 // the Brevo nurture converts the rest over the following weeks.
 //
 // Best-effort on Brevo: a hiccup there never blocks the funnel (we still
@@ -63,7 +63,7 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
   const source = (t.source || 'direct').slice(0, 60);
 
   // Add to Brevo. Uses the attributes the account already defines (PRENOM,
-  // SIGNE_ASTRO, SITUATION, SOURCE — same set /api/admin/stats reads).
+  // SIGNE_ASTRO, SITUATION, SOURCE, same set /api/admin/stats reads).
   let brevoOk = false;
   let brevoStatus = 0;
   let brevoErr = '';

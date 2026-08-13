@@ -1,4 +1,4 @@
-// Quiz funnel readout — start → email → CTA, blended and broken down by
+// Quiz funnel readout, start → email → CTA, blended and broken down by
 // source and by dedicated number (num).
 //
 // Data comes from the cpl:quiz:<date> hash written by /api/track/quiz
@@ -83,8 +83,7 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
   }
 
   // Noise = test entries, my diagnostics, or an UNSUBSTITUTED macro like
-  // "{source}" (MGID ad-review/preview and hand-loaded URLs never fill macros —
-  // those aren't real clicks). Drop them so the funnel reflects real traffic.
+  // "{source}" (MGID ad-review/preview and hand-loaded URLs never fill macros,   // those aren't real clicks). Drop them so the funnel reflects real traffic.
   const isNoise = (s: string) =>
     /test/i.test(s) || /diag/i.test(s) || /^\{.*\}$/.test(s);
 
@@ -101,7 +100,7 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
   const excludedLoads = total.starts - cleanTotal.starts;
 
   // Ordered drop-off: exactly where the visitors go. drop_from_prev_pct is the
-  // share lost at THAT step — the biggest number is the bottleneck.
+  // share lost at THAT step, the biggest number is the bottleneck.
   const stepSeq: Array<[string, number]> = [
     ['1_load', cleanTotal.starts],
     ['2_q1', steps.q1 || 0],
@@ -149,6 +148,6 @@ export async function GET(request: NextRequest): Promise<NextResponse> {
     by_source: sources,
     by_num: numbers,
     note:
-      'email_rate = completed→gave email; cta_rate = gave email→tapped call; start_to_cta = overall. by_num maps to your 3 Télémaque dedicated numbers — cross-reference cta counts against per-number reversement to find the angle that drives paying calls.',
+      'email_rate = completed→gave email; cta_rate = gave email→tapped call; start_to_cta = overall. by_num maps to your 3 Télémaque dedicated numbers, cross-reference cta counts against per-number reversement to find the angle that drives paying calls.',
   });
 }
