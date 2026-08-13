@@ -69,7 +69,11 @@ export default function VoyantCard({ voyant, source = 'content-page', compact = 
   }
 
   return (
-    <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200 hover:shadow-2xl transition-all duration-300">
+    // h-full + flex-col: the card is a grid item, so it already stretches to the
+    // row height — but its CONTENT used to stack from the top, leaving 69-189px
+    // of uneven dead space under each CTA. Making the card a column lets the
+    // body absorb the slack (see flex-1 / mt-auto below) so the buttons line up.
+    <div className="h-full flex flex-col bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200 hover:shadow-2xl transition-all duration-300">
       {/* Header with online status */}
       <div className="bg-gradient-to-r from-purple-600 to-indigo-600 text-white p-4">
         <div className="flex items-center justify-between">
@@ -87,9 +91,13 @@ export default function VoyantCard({ voyant, source = 'content-page', compact = 
                 }}
               />
             </div>
-            <div>
-              <h3 className="text-xl font-bold capitalize">{voyant.VOYANT}</h3>
-              <p className="text-sm opacity-90">{genderLabel} Expert</p>
+            {/* min-w-0 + nowrap: without these, "Voyante Expert" wrapped to a
+                second line on cards whose name is long or that lack the "En
+                ligne" badge, making that card's purple header 100px vs 96px —
+                the headers visibly failed to line up across the row. */}
+            <div className="min-w-0">
+              <h3 className="text-xl font-bold capitalize truncate">{voyant.VOYANT}</h3>
+              <p className="text-sm opacity-90 whitespace-nowrap">{genderLabel} Expert</p>
             </div>
           </div>
           {isOnline && (
@@ -101,8 +109,12 @@ export default function VoyantCard({ voyant, source = 'content-page', compact = 
         </div>
       </div>
 
-      {/* Body */}
-      <div className="p-6">
+      {/* Body — flex-1 so it fills the stretched card, flex-col so the CTA can
+          be pushed to the bottom with mt-auto. Voyants have different numbers
+          of service tags and price rows, so this slack is unavoidable; the
+          point is to collect it in ONE place instead of leaving it under the
+          button on some cards and not others. */}
+      <div className="p-6 flex flex-col flex-1">
         {/* Trust indicators */}
         <div className="grid grid-cols-3 gap-2 mb-6 text-center">
           <div className="bg-purple-50 rounded-lg p-2">
@@ -176,13 +188,14 @@ export default function VoyantCard({ voyant, source = 'content-page', compact = 
           </div>
         </div>
 
-        {/* CTA Button */}
+        {/* CTA Button — mt-auto collects all remaining vertical slack above it,
+            so every card's button sits on the same baseline across the row. */}
         <a
           href={affiliateLink}
           target="_blank"
           rel="noopener noreferrer sponsored"
           onClick={handleAffiliateClick}
-          className="block w-full bg-gradient-to-r from-purple-600 to-indigo-600 text-white text-center font-semibold py-3 rounded-lg hover:from-purple-700 hover:to-indigo-700 transition-all shadow-md hover:shadow-lg"
+          className="mt-auto block w-full bg-gradient-to-r from-purple-600 to-indigo-600 text-white text-center font-semibold py-3 rounded-lg hover:from-purple-700 hover:to-indigo-700 transition-all shadow-md hover:shadow-lg"
         >
           {isOnline ? '🔮 Consulter maintenant' : '📅 Prendre rendez-vous'}
         </a>
