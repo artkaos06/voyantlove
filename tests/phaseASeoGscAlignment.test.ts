@@ -87,7 +87,10 @@ test('nouvelle-rencontre: title fits the SERP budget so the "voyance rencontre" 
 test('problemes-communication-couple: H1 matches the title\'s exact "communication couple difficile" phrasing', () => {
   const source = read('app/crise-couple/problemes-communication-couple/page.tsx');
 
-  assert.match(source, /<h1[^>]*>Communication Couple Difficile/, 'H1 must lead with the exact low-confidence query phrase');
+  // This page renders through the shared ContentPage shell (see
+  // components/ContentPage.tsx): the <h1> is rendered by the shell from
+  // `config.header.h1`, not written literally in this file's source.
+  assert.match(source, /h1:\s*'Communication Couple Difficile/, 'H1 must lead with the exact low-confidence query phrase');
 
   // dateModified for this Article page must stay pinned (not today's date)
   // unless the primary content actually changed — c84d7d9 fixed the bug

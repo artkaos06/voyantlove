@@ -29,19 +29,26 @@ voyantlove/
 ├── app/                    # Next.js 15 App Router
 │   ├── layout.tsx         # Root layout with metadata
 │   ├── page.tsx           # Homepage
-│   └── [slug]/            # Dynamic love situation pages
-├── components/            # Reusable React components
-│   ├── AnswerCapsule.tsx
-│   ├── FAQSection.tsx
-│   ├── TrustBar.tsx
-│   └── CTASection.tsx
-├── data/                  # Semantic data
-│   ├── entities/          # Entity database (120 entities)
-│   ├── intents/           # Intent templates (8 templates)
-│   └── love-situations/   # 106 situation data files
-├── lib/                   # Business logic
-│   ├── semantic/          # Semantic SEO utilities
-│   └── generators/        # Content generators
+│   ├── compatibilite-amoureuse/[pair]/   # Dynamic hub (typed-array driven)
+│   ├── tarot-amour/[carte]/              # Dynamic hub (typed-array driven)
+│   ├── astrologie-amour/[signe]/         # Dynamic hub (typed-array driven)
+│   ├── reves-amour/[reve]/               # Dynamic hub (typed-array driven)
+│   ├── glossaire/[terme]/                # Dynamic hub (typed-array driven)
+│   └── crise-couple/, reconquete/, rupture/, sentiments/,
+│       nouvelle-rencontre/, methodes-voyance/,
+│       voyance-gratuite-amour/           # Hand-authored pages on the shared
+│                                          # ContentPage shell (see below)
+├── components/             # Reusable React components
+│   ├── ContentPage.tsx    # Shared shell (metadata/H1/schema/FAQ/CTA) driven
+│   │                      # by a typed ContentPageConfig, used by ~85 pages
+│   └── ...
+├── data/                  # Small static datasets (e.g. data/voyants.json)
+├── lib/                   # Typed per-network data arrays + business logic
+│   ├── compatibilitePairs.ts, tarotLoveCards.ts, signesAmour.ts,
+│   │   revesAmour.ts, glossaire.ts   # each exports validate<X>Record()
+│   └── numerology.ts, voyants.ts, schema.ts, ...
+├── scripts/
+│   └── validate-pseo.ts   # Repository-native pSEO quality gate (npm run validate)
 └── public/                # Static assets
 ```
 
@@ -227,32 +234,38 @@ Homepage (Hub)
 
 ## 🧪 Validation
 
-### Semantic Quality Check
+### pSEO Quality Gate
 
 ```bash
 npm run validate
 ```
 
-Checks:
-- Intent fulfillment score (>80%)
-- Entity coverage (5+ per 200 words)
-- Semantic uniqueness (<40% similarity)
-- LLM readiness (80%+ answer capsules)
+`scripts/validate-pseo.ts` is the repository-native validator (it replaces an
+older `scripts/validate-semantic-quality.js` that targeted a since-removed
+`data/entities/` + `data/intents/` + `lib/semantic/` pipeline). Against the
+architecture that actually ships today, it checks:
+- Each typed network's own `validate<X>Record()` publication gate, re-run as a CI failure
+- Slug uniqueness and `generateStaticParams()`/`app/sitemap.ts` drift
+- Per-page metadata/canonical/H1/schema presence (aware of both literal
+  page source and the shared `ContentPage`/`contentMeta` shell)
+- Orphan-page and broken-internal-link detection
+- Cross-page keyword-cannibalization and within-network near-duplicate content
 
 ---
 
 ## 📦 Data Files
 
-### Entities
-- `data/entities/voyance-amoureuse-entities.json` (120 entities)
-- `data/entities/voyance-amoureuse-relationships.json` (45+ relationships)
+Content data lives in typed TypeScript arrays under `lib/*.ts`, not JSON —
+each per-network file (`lib/compatibilitePairs.ts`, `lib/tarotLoveCards.ts`,
+`lib/signesAmour.ts`, `lib/revesAmour.ts`, `lib/glossaire.ts`) exports its
+records plus a `validate<X>Record()` gate, rendered through the matching
+`app/**/[param]/page.tsx` dynamic route and filtered into `app/sitemap.ts`.
 
-### Intents
-- `data/intents/voyance-amoureuse-intent-taxonomy.json` (8 intents)
-- `data/intents/voyance-amoureuse-templates-complete.json` (8 templates)
-
-### Pages
-- `data/love-situations/` (106 situation data files - to be generated)
+The hand-authored pages under `crise-couple/`, `reconquete/`, `rupture/`,
+`sentiments/`, `nouvelle-rencontre/`, `methodes-voyance/`, and
+`voyance-gratuite-amour/` are driven by a per-page `ContentPageConfig` object
+consumed by the shared `components/ContentPage.tsx` shell instead of a
+separate data file.
 
 ---
 

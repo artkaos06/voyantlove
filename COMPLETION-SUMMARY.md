@@ -112,16 +112,14 @@ voyantlove/
 │   ├── rupture-amoureuse/page.tsx     ✅ 741 words
 │   ├── retour-de-lex/page.tsx         ✅ 762 words
 │   └── chagrin-damour/page.tsx        ✅ 780 words
-├── data/
-│   ├── entities/
-│   │   ├── voyance-amoureuse-entities.json          (120 entities)
-│   │   └── voyance-amoureuse-relationships.json     (45+ relationships)
-│   └── intents/
-│       ├── voyance-amoureuse-intent-taxonomy.json   (8 intents)
-│       └── voyance-amoureuse-templates-complete.json (8 templates)
-├── lib/
-│   └── semantic/
-│       └── types.ts                   ✅ TypeScript types
+├── data/                               (this early entities/intents/
+│                                        semantic-pipeline plan — data/entities/,
+│                                        data/intents/, lib/semantic/types.ts —
+│                                        was superseded by the typed
+│                                        per-network arrays under lib/*.ts and
+│                                        removed once confirmed unimported;
+│                                        see README.md's "Data Files" section
+│                                        for the current architecture)
 ├── package.json                       ✅ Dependencies
 ├── next.config.mjs                    ✅ Config
 ├── tailwind.config.ts                 ✅ Brand colors

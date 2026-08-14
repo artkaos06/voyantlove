@@ -82,6 +82,25 @@ export function loadPages(appDir: string, repoRoot: string): DiscoveredPage[] {
 }
 
 /**
+ * Pages built on the shared ContentPage shell (components/ContentPage.tsx —
+ * used by ~85 hand-authored pages under crise-couple/, reconquete/,
+ * rupture/, sentiments/, nouvelle-rencontre/, methodes-voyance/, and
+ * voyance-gratuite-amour/) pass their metadata/H1/schema through a typed
+ * `ContentPageConfig` object instead of writing `canonical: '...'`, a
+ * literal `<h1>`, or a JSON-LD block directly in the page source — the
+ * shell renders all of that unconditionally from `config` (see
+ * `contentMeta()` and the `<ContentPage>` body in ContentPage.tsx).
+ * `ContentPageConfig` requires `url`, `header.h1`, `faq`, and `cta` as
+ * non-optional fields, so `tsc` (via `npm run build`) already guarantees
+ * those invariants hold for any page that compiles; detecting shell usage
+ * here is the source-level equivalent of the dynamic-route reasoning above
+ * (structurally guaranteed, not grep-able per literal).
+ */
+export function usesContentPageShell(source: string): boolean {
+  return /from ['"]@\/components\/ContentPage['"]/.test(source) && /\bcontentMeta\(/.test(source);
+}
+
+/**
  * Best-effort static-source audit of a single page file. Everything here is
  * a WARNING, never a blocking error: this scans pre-existing hand-authored
  * pages too, and this validator's job is to surface regressions for review,
@@ -94,13 +113,15 @@ export function auditPageSource(page: Pick<DiscoveredPage, 'route' | 'source'>):
   const isNoindex = /index:\s*false/.test(source);
   if (isNoindex) return issues; // deliberately non-indexable — nothing to check
 
+  const shellManaged = usesContentPageShell(source);
+
   const hasStaticMetadata = /export\s+const\s+metadata\s*[:=]/.test(source);
   const hasGenerateMetadata = /export\s+(async\s+)?function\s+generateMetadata/.test(source);
   if (!hasStaticMetadata && !hasGenerateMetadata) {
     issues.push({ severity: 'warning', message: `${route}: no metadata export (\`metadata\` or \`generateMetadata\`) found` });
   }
 
-  const hasCanonical = /canonical:\s*[`'"]/.test(source);
+  const hasCanonical = /canonical:\s*[`'"]/.test(source) || shellManaged;
   if (!hasCanonical) {
     issues.push({ severity: 'warning', message: `${route}: no alternates.canonical found in source` });
   }
@@ -110,13 +131,20 @@ export function auditPageSource(page: Pick<DiscoveredPage, 'route' | 'source'>):
   }
 
   const h1Count = (source.match(/<h1[\s>]/g) || []).length;
-  if (h1Count === 0) {
+  if (shellManaged) {
+    // The shell always renders exactly one <h1> from config.header.h1; a
+    // page body adding its own would produce two.
+    if (h1Count > 0) {
+      issues.push({ severity: 'warning', message: `${route}: page body renders its own <h1> in addition to the ContentPage shell's config.header.h1 (would produce multiple <h1>)` });
+    }
+  } else if (h1Count === 0) {
     issues.push({ severity: 'warning', message: `${route}: no <h1> found in source` });
   } else if (h1Count > 1) {
     issues.push({ severity: 'warning', message: `${route}: multiple <h1> occurrences found (${h1Count})` });
   }
 
   const hasSchema =
+    shellManaged ||
     /application\/ld\+json/.test(source) ||
     /get(Article|FAQ|Breadcrumb|WebPage|Organization)Schema/.test(source);
   if (!hasSchema) {

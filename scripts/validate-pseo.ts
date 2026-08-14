@@ -3,15 +3,14 @@
 // Replaces the missing scripts/validate-semantic-quality.js referenced by
 // `npm run validate`. The old script predates the site's current
 // architecture (see README's "Semantic Quality Check" section, written for
-// a data/love-situations/ + lib/semantic/ pipeline that was superseded by
-// the per-network data layer under lib/*.ts — see lib/semantic/types.ts'
-// ValidationResult/ValidationIssue shapes, which this file's Issue type
-// deliberately mirrors in spirit). This script re-implements the same
-// *intent* — intent-fulfillment/entity-coverage/semantic-uniqueness/
-// LLM-readiness style gating — against the architecture that actually ships
-// today: typed record arrays, each with its own `validate<X>Record` gate,
-// rendered through `[param]/page.tsx` dynamic routes and filtered into
-// app/sitemap.ts.
+// a data/love-situations/ + lib/semantic/ pipeline — data/entities/,
+// data/intents/, and lib/semantic/types.ts — that was superseded by the
+// per-network data layer under lib/*.ts and removed as dead weight once
+// confirmed unimported). This script re-implements the same *intent* —
+// intent-fulfillment/entity-coverage/semantic-uniqueness/LLM-readiness style
+// gating — against the architecture that actually ships today: typed record
+// arrays, each with its own `validate<X>Record` gate, rendered through
+// `[param]/page.tsx` dynamic routes and filtered into app/sitemap.ts.
 //
 // What it checks:
 //  1. Re-runs every typed network's own `validate<X>Record` gate as a CI

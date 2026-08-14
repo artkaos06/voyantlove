@@ -95,9 +95,9 @@ test('every valid term feeds route params and sitemap URLs directly', () => {
 
   for (const term of GLOSSARY_TERMS) {
     assert.ok(routeSlugs.has(term.slug), `${term.slug} missing from generateStaticParams`);
-    assert.ok(urls.has(`https://www.voyantlove.fr/glossaire/${term.slug}`), `${term.slug} missing from sitemap`);
+    assert.ok(urls.has(`https://www.voyantlove.fr/glossaire/${term.slug}/`), `${term.slug} missing from sitemap`);
   }
-  assert.ok(urls.has('https://www.voyantlove.fr/glossaire'), 'glossary hub missing from sitemap');
+  assert.ok(urls.has('https://www.voyantlove.fr/glossaire/'), 'glossary hub missing from sitemap');
 });
 
 test('glossary terms do not re-cover the exact headword of an existing dedicated route (duplicate-intent guard)', () => {

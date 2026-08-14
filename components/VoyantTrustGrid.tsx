@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import type { Voyant } from '@/lib/voyants';
 import { getOnlineVoyants, getTopVoyants } from '@/lib/voyants';
 import voyantsData from '@/data/voyants.json';
@@ -53,11 +54,12 @@ export default function VoyantTrustGrid({
                 className="bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden"
               >
                 <div className="relative aspect-square bg-gradient-to-br from-purple-100 to-indigo-100">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
+                  <Image
                     src={`https://www.monsitevoyance.com/vignaff/${v.ID}.jpg`}
                     alt={`Portrait de ${v.VOYANT}`}
-                    className="w-full h-full object-cover"
+                    fill
+                    sizes="(min-width: 768px) 16vw, 33vw"
+                    className="object-cover"
                     loading="lazy"
                   />
                   {isOnline && (

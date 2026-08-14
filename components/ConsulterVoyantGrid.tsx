@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 import { Voyant, getAffiliateLink, formatPrice } from '@/lib/voyants';
 import { trackAffiliateClick } from '@/lib/glyphex';
 import { useSearchParams } from 'next/navigation';
@@ -104,11 +105,13 @@ export default function ConsulterVoyantGrid() {
 
         {/* Header */}
         <div className={`p-4 flex items-center gap-4 ${isFree ? 'bg-gradient-to-r from-green-600 to-emerald-600' : 'bg-gradient-to-r from-purple-600 to-indigo-600'}`}>
-          <div className="w-16 h-16 bg-white/20 rounded-full overflow-hidden flex-shrink-0">
-            <img
+          <div className="relative w-16 h-16 bg-white/20 rounded-full overflow-hidden flex-shrink-0">
+            <Image
               src={`https://www.monsitevoyance.com/vignaff/${voyant.ID}.jpg`}
               alt={voyant.VOYANT}
-              className="w-full h-full object-cover"
+              fill
+              sizes="64px"
+              className="object-cover"
               onError={(e) => {
                 const target = e.target as HTMLImageElement;
                 target.style.display = 'none';

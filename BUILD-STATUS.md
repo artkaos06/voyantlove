@@ -176,10 +176,14 @@ voyantlove/
 │   ├── rupture-amoureuse/page.tsx    ⏳ Pending
 │   ├── retour-de-lex/page.tsx        ⏳ Pending
 │   └── chagrin-damour/page.tsx       ⏳ Pending
-├── data/
-│   ├── entities/                      ✅ 120 entities
-│   └── intents/                       ✅ 8 templates
-├── lib/semantic/types.ts              ✅ Complete
+├── data/                               (this early entities/intents/
+│                                        semantic-pipeline plan — data/entities/,
+│                                        data/intents/, lib/semantic/types.ts —
+│                                        was superseded by the typed
+│                                        per-network arrays under lib/*.ts and
+│                                        removed once confirmed unimported;
+│                                        see README.md's "Data Files" section
+│                                        for the current architecture)
 ├── package.json                       ✅ Complete
 ├── next.config.mjs                    ✅ Complete
 ├── tailwind.config.ts                 ✅ Complete

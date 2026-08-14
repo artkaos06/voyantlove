@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 import { Voyant, formatPrice, getAvailabilityServices, getGenderLabel, getTrustScore, getAffiliateLink } from '@/lib/voyants';
 import { trackAffiliateClick } from '@/lib/glyphex';
 
@@ -78,11 +79,13 @@ export default function VoyantCard({ voyant, source = 'content-page', compact = 
       <div className="bg-gradient-to-r from-purple-600 to-indigo-600 text-white p-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center text-3xl font-bold overflow-hidden">
-              <img
+            <div className="relative w-16 h-16 bg-white/20 rounded-full flex items-center justify-center text-3xl font-bold overflow-hidden">
+              <Image
                 src={`https://www.monsitevoyance.com/vignaff/${voyant.ID}.jpg`}
                 alt={voyant.VOYANT}
-                className="w-full h-full object-cover"
+                fill
+                sizes="64px"
+                className="object-cover"
                 onError={(e) => {
                   // Fallback to initial if image doesn't exist
                   const target = e.target as HTMLImageElement;

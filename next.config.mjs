@@ -1,7 +1,19 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    unoptimized: true
+    // Narrow allowlist: only the voyant-portrait JPGs used by
+    // VoyantTrustGrid/ConsulterVoyantGrid/VoyantCard (components/*.tsx) go
+    // through next/image and Next's Image Optimization API. Everything
+    // else on the site is either a local /public asset (no remotePatterns
+    // needed) or the deliberately-raw <img> in VoyantStrip.tsx (zero-JS
+    // landers — see that file's own comment for why it stays unoptimized).
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'www.monsitevoyance.com',
+        pathname: '/vignaff/*.jpg',
+      },
+    ],
   },
   trailingSlash: true, // Better for SEO
   // Disable Next's automatic 308 slash-redirect: it also fired on /api/*

@@ -4,7 +4,7 @@ import path from 'node:path';
 import test from 'node:test';
 
 import sitemap from '../app/sitemap';
-import { auditPageSource, extractInternalHrefs, loadAllSources } from '../scripts/pseo-validate/page-audit';
+import { auditPageSource, extractInternalHrefs, loadAllSources, usesContentPageShell } from '../scripts/pseo-validate/page-audit';
 import { composeCompatibilityReading, findCompatibility, findLifePathMeaning, lifePathNumber } from '../lib/numerology';
 
 // Phase B: 4 new canonical pages plus 4 improved canonical outputs,
@@ -57,14 +57,19 @@ test('all 4 new Phase B pages satisfy the publication contract', () => {
 
 test('each new page canonical matches its route exactly', () => {
   for (const { route, file } of NEW_PAGES) {
-    assert.ok(readSource(file).includes(`canonical: '${SITE_URL}${route}'`));
+    const source = readSource(file);
+    // Pages on the shared ContentPage shell (components/ContentPage.tsx) set
+    // canonical via `config.url`, consumed by `contentMeta(config)` — not a
+    // literal `canonical: '...'` in this file's source.
+    const expected = usesContentPageShell(source) ? `url: '${SITE_URL}${route}'` : `canonical: '${SITE_URL}${route}'`;
+    assert.ok(source.includes(expected), `${route} expected to include \`${expected}\``);
   }
 });
 
 test('all 4 new pages are registered in app/sitemap.ts', () => {
   const urls = new Set(sitemap().map((entry) => entry.url));
   for (const { route } of NEW_PAGES) {
-    assert.ok(urls.has(`${SITE_URL}${route.replace(/\/$/, '')}`), `${route} missing from sitemap`);
+    assert.ok(urls.has(`${SITE_URL}${route}`), `${route} missing from sitemap`);
   }
 });
 
@@ -78,8 +83,16 @@ test('all 4 new pages have an internal Link and preserve the CTA contract', () =
     assert.ok(allHrefs.has(route), `${route} is orphaned`);
     const source = readSource(file);
     assert.match(source, /VoyantQuickCTA/);
-    assert.match(source, /VoyantFinalCTA/);
-    assert.match(source, /getFAQSchema|getArticleSchema/);
+    if (usesContentPageShell(source)) {
+      // The shell renders VoyantFinalCTA and Article/FAQ schema
+      // unconditionally from `config.cta` / `config.faq` — not literally in
+      // this file's source (see components/ContentPage.tsx).
+      assert.match(source, /cta:\s*\{\s*topic:/, `${route} config must declare cta.topic`);
+      assert.match(source, /faq:\s*\[/, `${route} config must declare a faq array`);
+    } else {
+      assert.match(source, /VoyantFinalCTA/);
+      assert.match(source, /getFAQSchema|getArticleSchema/);
+    }
   }
 });
 
@@ -102,11 +115,20 @@ test('voyance gratuite en ligne reuses the existing hub canonical and CTA contra
 test('improved outputs preserve canonical and CTA contracts', () => {
   for (const { route, file } of IMPROVED_OUTPUTS) {
     const source = readSource(file);
-    assert.ok(source.includes(`canonical: '${SITE_URL}${route}'`));
     assert.match(source, /VoyantQuickCTA/);
-    assert.match(source, /VoyantFinalCTA/);
     assert.match(source, /dateModified: '2026-08-07'/);
-    assert.match(source, /lastUpdated="7 août 2026"/);
+    if (usesContentPageShell(source)) {
+      // Shell-managed pages: canonical comes from config.url, VoyantFinalCTA
+      // is rendered internally by the shell from config.cta, and the shell
+      // has no `lastUpdated` freshness prop — dateModified (asserted above)
+      // is the freshness signal for these pages.
+      assert.ok(source.includes(`url: '${SITE_URL}${route}'`));
+      assert.match(source, /cta:\s*\{\s*topic:/);
+    } else {
+      assert.ok(source.includes(`canonical: '${SITE_URL}${route}'`));
+      assert.match(source, /VoyantFinalCTA/);
+      assert.match(source, /lastUpdated="7 août 2026"/);
+    }
   }
 });
 
