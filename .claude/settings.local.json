@@ -41,7 +41,24 @@
       "Bash(npx next:*)",
       "Bash(while read:*)",
       "Bash(do sed:*)",
-      "Bash(done)"
+      "Bash(done)",
+      "mcp__gsc__quick_wins",
+      "mcp__gsc__ctr_opportunities",
+      "mcp__gsc__traffic_drops",
+      "mcp__gsc__content_gaps",
+      "mcp__gsc__site_snapshot",
+      "mcp__gsc__inspect_url",
+      "mcp__gsc__cannibalization_check",
+      "mcp__gsc__content_decay",
+      "mcp__gsc__topic_cluster_performance",
+      "mcp__gsc__ctr_vs_benchmark",
+      "mcp__gsc__verify_claim",
+      "mcp__gsc__advanced_search_analytics",
+      "mcp__gsc__check_alerts",
+      "mcp__gsc__content_recommendations",
+      "mcp__gsc__generate_report",
+      "mcp__gsc__multi_site_dashboard",
+      "mcp__gsc__list_sitemaps"
     ]
   }
 }
