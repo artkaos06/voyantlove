@@ -77,10 +77,14 @@ export function contentMeta(c: ContentPageConfig): Metadata {
 // Tailwind can't see interpolated class names, so map the fixed set we use.
 const GRID_COLS: Record<number, string> = {
   1: 'grid-cols-1',
-  2: 'grid-cols-2',
-  3: 'grid-cols-3',
-  4: 'grid-cols-4',
+  2: 'grid-cols-1 sm:grid-cols-2',
+  3: 'grid-cols-1 sm:grid-cols-3',
+  4: 'grid-cols-2 md:grid-cols-4',
 };
+
+export function getStatsGridClassName(count: number): string {
+  return GRID_COLS[count] ?? 'grid-cols-2 md:grid-cols-4';
+}
 
 export default function ContentPage({
   config,
@@ -143,11 +147,11 @@ export default function ContentPage({
 
       <div className="max-w-4xl mx-auto px-4 py-8">
         {config.stats && config.stats.length > 0 && (
-          <div className={`bg-white rounded-xl shadow-md p-6 mb-8 grid ${GRID_COLS[config.stats.length] ?? 'grid-cols-4'} gap-4 text-center`}>
+          <div className={`bg-white rounded-xl shadow-md p-5 sm:p-6 mb-8 grid ${getStatsGridClassName(config.stats.length)} gap-x-4 gap-y-6 text-center`}>
             {config.stats.map((s, i) => (
-              <div key={i}>
+              <div key={i} className="min-w-0">
                 <div className="text-3xl mb-1">{s.icon}</div>
-                <div className={`text-2xl font-bold ${accent}`}>{s.value}</div>
+                <div className={`text-xl sm:text-2xl leading-tight font-bold break-words ${accent}`}>{s.value}</div>
                 <div className="text-sm text-gray-600">{s.label}</div>
               </div>
             ))}
