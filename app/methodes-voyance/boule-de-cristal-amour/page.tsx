@@ -20,7 +20,7 @@ const config: ContentPageConfig = {
     h1: 'Boule de Cristal Amour',
     subtitle: 'La cristallomancie au service de vos questions sentimentales',
     gradient: 'from-blue-800 via-indigo-800 to-violet-900',
-    backLink: { href: '/methodes-voyance', label: 'Retour aux Méthodes de Voyance' },
+    backLink: { href: '/methodes-voyance/', label: 'Retour aux Méthodes de Voyance' },
     anchors: [
       { href: '#fonctionnement', label: 'Comment ça Marche', primary: true },
       { href: '#consultation', label: 'La Consultation' },
@@ -54,12 +54,12 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/methodes-voyance', label: 'Toutes les Méthodes de Voyance Amoureuse' },
-    { href: '/methodes-voyance/voyance-sentimentale', label: 'Voyance Sentimentale' },
-    { href: '/methodes-voyance/medium-amour', label: 'Médium Amour' },
-    { href: '/methodes-voyance/oracle-amour', label: 'Oracle de l\'Amour' },
-    { href: '/glossaire/cristallomancie', label: 'Glossaire : Cristallomancie' },
-    { href: '/glossaire/voyance-blanche', label: 'Glossaire : Voyance Blanche' },
+    { href: '/methodes-voyance/', label: 'Toutes les Méthodes de Voyance Amoureuse' },
+    { href: '/methodes-voyance/voyance-sentimentale/', label: 'Voyance Sentimentale' },
+    { href: '/methodes-voyance/medium-amour/', label: 'Médium Amour' },
+    { href: '/methodes-voyance/oracle-amour/', label: 'Oracle de l\'Amour' },
+    { href: '/glossaire/cristallomancie/', label: 'Glossaire : Cristallomancie' },
+    { href: '/glossaire/voyance-blanche/', label: 'Glossaire : Voyance Blanche' },
   ],
 };
 
@@ -151,7 +151,7 @@ export default function BouleDeCristalAmourPage() {
                 <p>&bull; Idéal pour analyser une dynamique</p>
               </div>
               <p className="text-sm text-purple-600 mt-3">
-                <Link href="/methodes-voyance/tirage-tarot-amour" className="underline hover:text-purple-800 font-medium">Découvrir le tarot amoureux &rarr;</Link>
+                <Link href="/methodes-voyance/tirage-tarot-amour/" className="underline hover:text-purple-800 font-medium">Découvrir le tarot amoureux &rarr;</Link>
               </p>
             </div>
             <div className="bg-white rounded-lg p-5 border-2 border-slate-300">
@@ -164,7 +164,7 @@ export default function BouleDeCristalAmourPage() {
             </div>
           </div>
           <div className="bg-indigo-50 border-l-4 border-indigo-500 p-5 rounded-lg mt-6">
-            <p className="text-gray-700"><strong>Notre conseil :</strong> beaucoup de <Link href="/methodes-voyance/voyance-sentimentale" className="text-indigo-700 hover:text-indigo-900 underline font-medium">voyants sentimentaux</Link> combinent la boule de cristal avec un tirage de cartes pour affiner leur lecture, la sphère capte l&apos;énergie générale de la situation, les cartes en précisent les détails.</p>
+            <p className="text-gray-700"><strong>Notre conseil :</strong> beaucoup de <Link href="/methodes-voyance/voyance-sentimentale/" className="text-indigo-700 hover:text-indigo-900 underline font-medium">voyants sentimentaux</Link> combinent la boule de cristal avec un tirage de cartes pour affiner leur lecture, la sphère capte l&apos;énergie générale de la situation, les cartes en précisent les détails.</p>
           </div>
         </section>
 
@@ -187,7 +187,7 @@ export default function BouleDeCristalAmourPage() {
             </div>
           </div>
           <div className="text-center mt-6">
-            <Link href="/consulter?ref=boule-de-cristal-amour" className="inline-block bg-indigo-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-indigo-800 transition">Consulter un Voyant Spécialisé →</Link>
+            <Link href="/consulter/?ref=boule-de-cristal-amour" className="inline-block bg-indigo-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-indigo-800 transition">Consulter un Voyant Spécialisé →</Link>
           </div>
         </section>
     </ContentPage>

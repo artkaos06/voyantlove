@@ -58,7 +58,7 @@ export default function ReconqueteHubPage() {
           <Link href="/" className="text-white/80 hover:text-white mb-4 inline-block">← Accueil</Link>
           <h1 className="text-5xl font-bold mb-6">💜 Reconquête Amoureuse</h1>
           <p className="text-2xl opacity-95 mb-8">Stratégies et Guidance pour Reconquérir votre Ex</p>
-          <p className="text-lg opacity-90 max-w-2xl mx-auto">En <Link href="/voyance-amour" className="text-white underline hover:text-white/80 font-medium">voyance amoureuse</Link>, le tarot révèle si un retour est possible, le timing idéal et les étapes pour maximiser vos chances.</p>
+          <p className="text-lg opacity-90 max-w-2xl mx-auto">En <Link href="/voyance-amour/" className="text-white underline hover:text-white/80 font-medium">voyance amoureuse</Link>, le tarot révèle si un retour est possible, le timing idéal et les étapes pour maximiser vos chances.</p>
         </div>
       </header>
 
@@ -71,100 +71,100 @@ export default function ReconqueteHubPage() {
           <h2 className="text-3xl font-bold mb-8 text-center">🗺️ Votre Parcours de Reconquête</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le parcours de reconquête amoureuse comprend six axes : reconquérir son ex, savoir s'il va revenir, interpréter les signes du retour, gérer un ex qui revient, accorder une seconde chance, et se remettre ensemble durablement.</p>
           <div className="grid md:grid-cols-3 gap-6">
-            <Link href="/reconquete/reconquerir-son-ex" className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition border-t-4 border-purple-500">
+            <Link href="/reconquete/reconquerir-son-ex/" className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition border-t-4 border-purple-500">
               <div className="text-3xl mb-3">💜</div>
               <h3 className="text-xl font-bold mb-2">Reconquérir son Ex</h3>
               <p className="text-gray-600 text-sm">Guide complet stratégies et étapes</p>
             </Link>
-            <Link href="/reconquete/va-t-il-elle-revenir" className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition border-t-4 border-indigo-500">
+            <Link href="/reconquete/va-t-il-elle-revenir/" className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition border-t-4 border-indigo-500">
               <div className="text-3xl mb-3">❓</div>
               <h3 className="text-xl font-bold mb-2">Va-t-il/elle Revenir ?</h3>
               <p className="text-gray-600 text-sm">Réponse honnête du tarot</p>
             </Link>
-            <Link href="/reconquete/retour-de-lex" className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition border-t-4 border-violet-500">
+            <Link href="/reconquete/retour-de-lex/" className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition border-t-4 border-violet-500">
               <div className="text-3xl mb-3">↩️</div>
               <h3 className="text-xl font-bold mb-2">Retour de l'Ex</h3>
               <p className="text-gray-600 text-sm">Signes et prédictions</p>
             </Link>
-            <Link href="/reconquete/ex-qui-revient" className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition border-t-4 border-pink-500">
+            <Link href="/reconquete/ex-qui-revient/" className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition border-t-4 border-pink-500">
               <div className="text-3xl mb-3">💕</div>
               <h3 className="text-xl font-bold mb-2">Ex qui Revient</h3>
               <p className="text-gray-600 text-sm">Que faire maintenant ?</p>
             </Link>
-            <Link href="/reconquete/seconde-chance-amour" className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition border-t-4 border-green-500">
+            <Link href="/reconquete/seconde-chance-amour/" className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition border-t-4 border-green-500">
               <div className="text-3xl mb-3">🌱</div>
               <h3 className="text-xl font-bold mb-2">Seconde Chance</h3>
               <p className="text-gray-600 text-sm">Donner une nouvelle opportunité</p>
             </Link>
-            <Link href="/reconquete/se-remettre-ensemble" className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition border-t-4 border-teal-500">
+            <Link href="/reconquete/se-remettre-ensemble/" className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition border-t-4 border-teal-500">
               <div className="text-3xl mb-3">💞</div>
               <h3 className="text-xl font-bold mb-2">Se Remettre Ensemble</h3>
               <p className="text-gray-600 text-sm">Reconstruction du couple</p>
             </Link>
-            <Link href="/reconquete/lettre-a-son-ex" className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition border-t-4 border-purple-500">
+            <Link href="/reconquete/lettre-a-son-ex/" className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition border-t-4 border-purple-500">
               <div className="text-3xl mb-3">✉️</div>
               <h3 className="text-xl font-bold mb-2">Lettre à son Ex</h3>
               <p className="text-gray-600 text-sm">Comment écrire une lettre de reconquête authentique et touchante.</p>
             </Link>
-            <Link href="/reconquete/silence-radio-reconquete" className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition border-t-4 border-pink-500">
+            <Link href="/reconquete/silence-radio-reconquete/" className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition border-t-4 border-pink-500">
               <div className="text-3xl mb-3">🤫</div>
               <h3 className="text-xl font-bold mb-2">Silence Radio</h3>
               <p className="text-gray-600 text-sm">La stratégie du silence radio pour déclencher le manque et le retour.</p>
             </Link>
-            <Link href="/reconquete/ex-revient-silence-radio" className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition border-t-4 border-rose-500">
+            <Link href="/reconquete/ex-revient-silence-radio/" className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition border-t-4 border-rose-500">
               <div className="text-3xl mb-3">📱</div>
               <h3 className="text-xl font-bold mb-2">Ex qui Recontacte</h3>
               <p className="text-gray-600 text-sm">Il/elle revient après le silence radio : signes, réactions et premier message.</p>
             </Link>
-            <Link href="/reconquete/pendule-retour-amour" className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition border-t-4 border-indigo-500">
+            <Link href="/reconquete/pendule-retour-amour/" className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition border-t-4 border-indigo-500">
               <div className="text-3xl mb-3">🔮</div>
               <h3 className="text-xl font-bold mb-2">Pendule Retour Amour</h3>
               <p className="text-gray-600 text-sm">Comment le pendule peut révéler l&apos;énergie de retour de votre ex.</p>
             </Link>
 
-            <Link href="/reconquete/dois-je-attendre-son-retour" className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition border-t-4 border-violet-500">
+            <Link href="/reconquete/dois-je-attendre-son-retour/" className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition border-t-4 border-violet-500">
               <div className="text-3xl mb-3">⏳</div>
               <h3 className="text-xl font-bold mb-2">Dois-je l&apos;Attendre ?</h3>
               <p className="text-gray-600 text-sm">Faut-il patienter pour un retour, et combien de temps.</p>
             </Link>
 
-            <Link href="/reconquete/veut-se-remettre-ensemble-mais-ne-fait-rien" className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition border-t-4 border-purple-500">
+            <Link href="/reconquete/veut-se-remettre-ensemble-mais-ne-fait-rien/" className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition border-t-4 border-purple-500">
               <div className="text-3xl mb-3">💬</div>
               <h3 className="text-xl font-bold mb-2">Il Veut mais ne Fait Rien</h3>
               <p className="text-gray-600 text-sm">Distinguer une vraie volonté de reconstruire d&apos;un simple lien entretenu.</p>
             </Link>
 
-            <Link href="/reconquete/ex-chaud-et-froid-apres-separation" className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition border-t-4 border-pink-500">
+            <Link href="/reconquete/ex-chaud-et-froid-apres-separation/" className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition border-t-4 border-pink-500">
               <div className="text-3xl mb-3">🌡️</div>
               <h3 className="text-xl font-bold mb-2">Ex Chaud et Froid</h3>
               <p className="text-gray-600 text-sm">Décoder les signaux contradictoires après une séparation.</p>
             </Link>
 
-            <Link href="/reconquete/quitte-pour-quelquun-dautre-va-t-il-revenir" className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition border-t-4 border-fuchsia-500">
+            <Link href="/reconquete/quitte-pour-quelquun-dautre-va-t-il-revenir/" className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition border-t-4 border-fuchsia-500">
               <div className="text-3xl mb-3">💔</div>
               <h3 className="text-xl font-bold mb-2">Quitté pour un Autre</h3>
               <p className="text-gray-600 text-sm">Va-t-il revenir après vous avoir quitté pour quelqu&apos;un d&apos;autre ?</p>
             </Link>
 
-            <Link href="/reconquete/repondre-a-son-ex" className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition border-t-4 border-violet-500">
+            <Link href="/reconquete/repondre-a-son-ex/" className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition border-t-4 border-violet-500">
               <div className="text-3xl mb-3">📩</div>
               <h3 className="text-xl font-bold mb-2">Faut-il Répondre à son Ex ?</h3>
               <p className="text-gray-600 text-sm">Répondre, ignorer ou attendre quand votre ex reprend contact.</p>
             </Link>
 
-            <Link href="/reconquete/revoir-son-ex" className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition border-t-4 border-pink-500">
+            <Link href="/reconquete/revoir-son-ex/" className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition border-t-4 border-pink-500">
               <div className="text-3xl mb-3">🤝</div>
               <h3 className="text-xl font-bold mb-2">Revoir son Ex</h3>
               <p className="text-gray-600 text-sm">Se préparer et se comporter en revoyant son ex après la rupture.</p>
             </Link>
 
-            <Link href="/reconquete/separation-temporaire-ou-definitive" className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition border-t-4 border-cyan-500">
+            <Link href="/reconquete/separation-temporaire-ou-definitive/" className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition border-t-4 border-cyan-500">
               <div className="text-3xl mb-3">⚖️</div>
               <h3 className="text-xl font-bold mb-2">Séparation Temporaire ou Définitive ?</h3>
               <p className="text-gray-600 text-sm">Les signes à observer pour savoir où en est réellement la relation.</p>
             </Link>
 
-            <Link href="/reconquete/sentiments-peuvent-ils-revenir-couple" className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition border-t-4 border-rose-500">
+            <Link href="/reconquete/sentiments-peuvent-ils-revenir-couple/" className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition border-t-4 border-rose-500">
               <div className="text-3xl mb-3">💞</div>
               <h3 className="text-xl font-bold mb-2">Les Sentiments Peuvent-ils Revenir ?</h3>
               <p className="text-gray-600 text-sm">Conditions réelles de reconnexion après une perte de sentiments.</p>
@@ -180,7 +180,7 @@ export default function ReconqueteHubPage() {
           <div className="space-y-6">
             <div className="border-b border-gray-200 pb-6">
               <h3 className="text-xl font-bold text-gray-900 mb-3">Comment reconquérir son ex avec le tarot ?</h3>
-              <p className="text-gray-700 leading-relaxed">La stratégie la plus efficace selon le tarot repose sur trois piliers : le silence radio initial pour créer le manque, le travail sur soi pour corriger les causes de la rupture, et le timing précis révélé par les cartes pour reprendre contact. Notre guide complet pour <Link href="/reconquete/reconquerir-son-ex" className="text-purple-600 hover:text-purple-800 underline font-medium">reconquérir son ex</Link> détaille chacun de ces piliers avec des exemples concrets. Le tarot identifie également les blocages de votre ex et les leviers émotionnels à activer. Chaque reconquête est unique et le voyant adapte la stratégie à votre situation spécifique.</p>
+              <p className="text-gray-700 leading-relaxed">La stratégie la plus efficace selon le tarot repose sur trois piliers : le silence radio initial pour créer le manque, le travail sur soi pour corriger les causes de la rupture, et le timing précis révélé par les cartes pour reprendre contact. Notre guide complet pour <Link href="/reconquete/reconquerir-son-ex/" className="text-purple-600 hover:text-purple-800 underline font-medium">reconquérir son ex</Link> détaille chacun de ces piliers avec des exemples concrets. Le tarot identifie également les blocages de votre ex et les leviers émotionnels à activer. Chaque reconquête est unique et le voyant adapte la stratégie à votre situation spécifique.</p>
             </div>
             <div className="border-b border-gray-200 pb-6">
               <h3 className="text-xl font-bold text-gray-900 mb-3">Combien de temps pour reconquérir son ex ?</h3>
@@ -202,19 +202,19 @@ export default function ReconqueteHubPage() {
           <p className="text-lg font-semibold text-gray-800 mb-4">La reconquête amoureuse est liée à trois thèmes connexes : comprendre les causes de la rupture, décrypter les sentiments de votre ex, et choisir la méthode de voyance adaptée à votre situation.</p>
           <p className="text-gray-700 mb-4">La reconquête amoureuse touche à plusieurs dimensions de la vie sentimentale. Explorez nos guidances complémentaires pour une vision complète de votre situation.</p>
           <div className="grid md:grid-cols-3 gap-4">
-            <Link href="/rupture" className="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition">
+            <Link href="/rupture/" className="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition">
               <h3 className="font-bold text-gray-900 mb-1">Rupture Amoureuse</h3>
               <p className="text-sm text-gray-600">Comprendre les causes profondes de la séparation pour mieux reconstruire.</p>
             </Link>
-            <Link href="/sentiments" className="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition">
+            <Link href="/sentiments/" className="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition">
               <h3 className="font-bold text-gray-900 mb-1">Sentiments Amoureux</h3>
               <p className="text-sm text-gray-600">Décrypter les vrais sentiments de votre ex avant de tenter la reconquête.</p>
             </Link>
-            <Link href="/methodes-voyance" className="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition">
+            <Link href="/methodes-voyance/" className="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition">
               <h3 className="font-bold text-gray-900 mb-1">Méthodes de Voyance</h3>
               <p className="text-sm text-gray-600">Tarot, oracle et astrologie pour guider votre stratégie de reconquête.</p>
             </Link>
-            <Link href="/consulter" className="bg-purple-50 rounded-lg p-4 hover:bg-purple-100 transition border border-purple-200">
+            <Link href="/consulter/" className="bg-purple-50 rounded-lg p-4 hover:bg-purple-100 transition border border-purple-200">
               <h3 className="font-bold text-purple-900 mb-1">Consulter un Voyant</h3>
               <p className="text-sm text-purple-700">Tous nos voyants disponibles maintenant pour une guidance personnalisée.</p>
             </Link>

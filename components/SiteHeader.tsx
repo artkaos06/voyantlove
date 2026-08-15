@@ -16,24 +16,24 @@ const NAV: NavGroup[] = [
   {
     label: 'Situations',
     links: [
-      { href: '/reconquete', label: 'Reconquête amoureuse' },
-      { href: '/rupture', label: 'Rupture & guérison' },
-      { href: '/nouvelle-rencontre', label: 'Nouvelle rencontre' },
-      { href: '/sentiments', label: 'Sentiments & avenir' },
-      { href: '/crise-couple', label: 'Crise de couple' },
+      { href: '/reconquete/', label: 'Reconquête amoureuse' },
+      { href: '/rupture/', label: 'Rupture & guérison' },
+      { href: '/nouvelle-rencontre/', label: 'Nouvelle rencontre' },
+      { href: '/sentiments/', label: 'Sentiments & avenir' },
+      { href: '/crise-couple/', label: 'Crise de couple' },
     ],
   },
   {
     label: 'Voyance & Tarot',
     links: [
-      { href: '/methodes-voyance', label: 'Méthodes de voyance' },
-      { href: '/tarot-amour', label: 'Tarot amour' },
-      { href: '/reves-amour', label: 'Rêves amoureux' },
-      { href: '/astrologie-amour', label: 'Signes en amour' },
-      { href: '/compatibilite-amoureuse', label: 'Compatibilité des signes' },
-      { href: '/methodes-voyance/numerologie-amoureuse', label: 'Numérologie amoureuse' },
-      { href: '/methodes-voyance/synastrie-amoureuse', label: 'Synastrie' },
-      { href: '/voyance-gratuite-amour', label: 'Voyance gratuite' },
+      { href: '/methodes-voyance/', label: 'Méthodes de voyance' },
+      { href: '/tarot-amour/', label: 'Tarot amour' },
+      { href: '/reves-amour/', label: 'Rêves amoureux' },
+      { href: '/astrologie-amour/', label: 'Signes en amour' },
+      { href: '/compatibilite-amoureuse/', label: 'Compatibilité des signes' },
+      { href: '/methodes-voyance/numerologie-amoureuse/', label: 'Numérologie amoureuse' },
+      { href: '/methodes-voyance/synastrie-amoureuse/', label: 'Synastrie' },
+      { href: '/voyance-gratuite-amour/', label: 'Voyance gratuite' },
     ],
   },
 ];
@@ -75,17 +75,17 @@ export default function SiteHeader() {
               </div>
             </div>
           ))}
-          <Link href="/voyance-amour" className="px-3 py-2 text-sm font-medium text-gray-700 hover:text-purple-700 rounded-lg hover:bg-purple-50 transition">
+          <Link href="/voyance-amour/" className="px-3 py-2 text-sm font-medium text-gray-700 hover:text-purple-700 rounded-lg hover:bg-purple-50 transition">
             Voyance Amour
           </Link>
-          <Link href="/consulter" className="ml-2 bg-purple-700 hover:bg-purple-800 text-white text-sm font-semibold px-4 py-2 rounded-lg transition">
+          <Link href="/consulter/" className="ml-2 bg-purple-700 hover:bg-purple-800 text-white text-sm font-semibold px-4 py-2 rounded-lg transition">
             🔮 Consulter
           </Link>
         </div>
 
         {/* Mobile controls */}
         <div className="flex md:hidden items-center gap-2">
-          <Link href="/consulter" className="bg-purple-700 hover:bg-purple-800 text-white text-sm font-semibold px-3 py-1.5 rounded-lg transition">
+          <Link href="/consulter/" className="bg-purple-700 hover:bg-purple-800 text-white text-sm font-semibold px-3 py-1.5 rounded-lg transition">
             Consulter
           </Link>
           <button
@@ -116,7 +116,7 @@ export default function SiteHeader() {
                 </div>
               </div>
             ))}
-            <Link href="/voyance-amour" onClick={() => setMobileOpen(false)} className="block py-2 font-medium text-gray-800 hover:text-purple-700">
+            <Link href="/voyance-amour/" onClick={() => setMobileOpen(false)} className="block py-2 font-medium text-gray-800 hover:text-purple-700">
               Voyance Amour
             </Link>
           </div>

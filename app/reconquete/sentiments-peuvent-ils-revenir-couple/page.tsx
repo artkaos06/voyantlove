@@ -20,7 +20,7 @@ const config: ContentPageConfig = {
     h1: 'Les Sentiments Amoureux Peuvent-ils Revenir Après une Séparation ?',
     subtitle: 'Distinguer un espoir réel des faux signes qui entretiennent l\'attente',
     gradient: 'from-rose-600 via-pink-600 to-fuchsia-700',
-    backLink: { href: '/reconquete', label: 'Retour à la Reconquête' },
+    backLink: { href: '/reconquete/', label: 'Retour à la Reconquête' },
     anchors: [
       { href: '#conditions', label: 'Conditions de Reconnexion', primary: true },
       { href: '#actes', label: 'Les Actes qui Comptent' },
@@ -58,11 +58,11 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/reconquete', label: 'Reconquête Amoureuse : Toutes nos Guidances' },
-    { href: '/reconquete/se-remettre-ensemble', label: 'Se Remettre Ensemble : les 5 Étapes' },
-    { href: '/reconquete/veut-se-remettre-ensemble-mais-ne-fait-rien', label: 'Il Veut se Remettre Ensemble mais ne Fait Rien' },
-    { href: '/reconquete/separation-temporaire-ou-definitive', label: 'Séparation Temporaire ou Définitive ?' },
-    { href: '/sentiments/sentiments-non-partages', label: 'Sentiments Non Partagés' },
+    { href: '/reconquete/', label: 'Reconquête Amoureuse : Toutes nos Guidances' },
+    { href: '/reconquete/se-remettre-ensemble/', label: 'Se Remettre Ensemble : les 5 Étapes' },
+    { href: '/reconquete/veut-se-remettre-ensemble-mais-ne-fait-rien/', label: 'Il Veut se Remettre Ensemble mais ne Fait Rien' },
+    { href: '/reconquete/separation-temporaire-ou-definitive/', label: 'Séparation Temporaire ou Définitive ?' },
+    { href: '/sentiments/sentiments-non-partages/', label: 'Sentiments Non Partagés' },
   ],
 };
 
@@ -79,7 +79,7 @@ export default function SentimentsPeuventIlsRevenirCouplePage() {
               Entendre &laquo;je ne suis plus sûr(e) de mes <strong>sentiments</strong>&raquo; ou &laquo;je ne t&apos;aime plus comme avant&raquo; ouvre une question douloureuse : cette <strong>perte de sentiments</strong> est-elle définitive, ou peut-elle évoluer ? Les sentiments ne sont pas toujours figés : ils peuvent s&apos;atténuer sous l&apos;effet de la <strong>routine</strong>, d&apos;un <strong>épuisement relationnel</strong> ou d&apos;un conflit non résolu, sans que cela signifie une extinction définitive. Mais aucune évolution n&apos;est garantie, et il est essentiel de ne pas confondre un espoir légitime avec une certitude.
             </p>
             <p className="text-lg leading-relaxed mb-4">
-              Cette page distingue ce qui peut favoriser une <strong>reconnexion</strong> réelle de ce qui l&apos;éloigne davantage, et surtout ce que certains signes rassurants, <strong>coparentalité</strong> harmonieuse, proximité physique, attirance persistante, ne prouvent pas à eux seuls. Pour la situation où l&apos;autre parle de reconstruire sans jamais agir, notre guide sur <Link href="/reconquete/veut-se-remettre-ensemble-mais-ne-fait-rien" className="text-rose-700 hover:text-rose-900 underline font-medium">vouloir se remettre ensemble sans le faire</Link> complète cette lecture.
+              Cette page distingue ce qui peut favoriser une <strong>reconnexion</strong> réelle de ce qui l&apos;éloigne davantage, et surtout ce que certains signes rassurants, <strong>coparentalité</strong> harmonieuse, proximité physique, attirance persistante, ne prouvent pas à eux seuls. Pour la situation où l&apos;autre parle de reconstruire sans jamais agir, notre guide sur <Link href="/reconquete/veut-se-remettre-ensemble-mais-ne-fait-rien/" className="text-rose-700 hover:text-rose-900 underline font-medium">vouloir se remettre ensemble sans le faire</Link> complète cette lecture.
             </p>
             <p className="text-lg leading-relaxed">
               Personne ne peut connaître avec certitude les émotions secrètes d&apos;un tiers, et aucune lecture ne peut garantir un retour ou une renaissance des sentiments. L&apos;objectif est de vous aider à observer honnêtement la situation et à choisir la voie qui protège votre équilibre, quelle que soit l&apos;issue.
@@ -170,7 +170,7 @@ export default function SentimentsPeuventIlsRevenirCouplePage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">{'✅'} Quels Actes Montrent une Volonté Réciproque de Reconstruire</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Une volonte reciproque se traduit par des initiatives concretes des deux partenaires, une discussion ouverte sur les causes du detachement et une projection commune vers un avenir de couple, plutot que par de simples signes de proximite ou d&apos;affection ponctuelle.</p>
           <p className="text-gray-700 leading-relaxed">
-            Un attachement persistant ou une attirance physique ne suffit pas à confirmer un projet de couple. Ce qui compte est la <strong>réciprocité des actes</strong> : les deux personnes prennent-elles l&apos;initiative de reconstruire, abordent-elles ouvertement ce qui a causé la distance, et évoquent-elles un avenir commun en termes concrets ? Notre cadre détaillé sur <Link href="/reconquete/se-remettre-ensemble" className="text-rose-700 hover:text-rose-900 underline font-medium">se remettre ensemble</Link> décrit les étapes d&apos;une reconstruction saine une fois cette réciprocité confirmée.
+            Un attachement persistant ou une attirance physique ne suffit pas à confirmer un projet de couple. Ce qui compte est la <strong>réciprocité des actes</strong> : les deux personnes prennent-elles l&apos;initiative de reconstruire, abordent-elles ouvertement ce qui a causé la distance, et évoquent-elles un avenir commun en termes concrets ? Notre cadre détaillé sur <Link href="/reconquete/se-remettre-ensemble/" className="text-rose-700 hover:text-rose-900 underline font-medium">se remettre ensemble</Link> décrit les étapes d&apos;une reconstruction saine une fois cette réciprocité confirmée.
           </p>
         </section>
 
@@ -179,7 +179,7 @@ export default function SentimentsPeuventIlsRevenirCouplePage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">{'\u{1F4C5}'} Combien de Temps Laisser à la Situation sans Suspendre sa Vie</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Se fixer une periode d&apos;observation raisonnable, sans mettre sa propre vie en pause, permet d&apos;evaluer honnetement une possible reconnexion sans se laisser enfermer dans une attente indefinie.</p>
           <p className="text-gray-700 leading-relaxed">
-            Il n&apos;existe pas de délai universel pour savoir si des sentiments perdus peuvent revenir. Si votre situation implique une séparation ambiguë, notre page sur <Link href="/reconquete/separation-temporaire-ou-definitive" className="text-rose-700 hover:text-rose-900 underline font-medium">séparation temporaire ou définitive</Link> propose un cadre complémentaire pour situer où en est réellement la relation, avant de décider combien de temps continuer à espérer.
+            Il n&apos;existe pas de délai universel pour savoir si des sentiments perdus peuvent revenir. Si votre situation implique une séparation ambiguë, notre page sur <Link href="/reconquete/separation-temporaire-ou-definitive/" className="text-rose-700 hover:text-rose-900 underline font-medium">séparation temporaire ou définitive</Link> propose un cadre complémentaire pour situer où en est réellement la relation, avant de décider combien de temps continuer à espérer.
           </p>
         </section>
 
@@ -188,7 +188,7 @@ export default function SentimentsPeuventIlsRevenirCouplePage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">{'\u{1F331}'} Se Reconstruire, Qu&apos;il y Ait Réconciliation ou Non</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Que la reconnexion se produise ou non, maintenir sa vie sociale, travailler sur soi et eviter la dependance a une reponse hypothetique restent les fondations d&apos;une reconstruction personnelle solide.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Attendre un possible retour des sentiments ne doit jamais suspendre votre propre vie ni votre équilibre. Si cette attente prend une place envahissante, notre guide sur la <Link href="/crise-couple/dependance-affective" className="text-rose-700 hover:text-rose-900 underline font-medium">dépendance affective</Link> aide à reconnaître les signaux d&apos;alerte avant qu&apos;ils ne deviennent un piège émotionnel durable.
+            Attendre un possible retour des sentiments ne doit jamais suspendre votre propre vie ni votre équilibre. Si cette attente prend une place envahissante, notre guide sur la <Link href="/crise-couple/dependance-affective/" className="text-rose-700 hover:text-rose-900 underline font-medium">dépendance affective</Link> aide à reconnaître les signaux d&apos;alerte avant qu&apos;ils ne deviennent un piège émotionnel durable.
           </p>
           <div className="bg-white p-6 rounded-lg border-2 border-rose-200">
             <p className="text-gray-700"><strong>{'\u{1F52E}'} À considérer :</strong> une <strong>consultation de voyance sentimentale</strong> peut vous aider à explorer la dynamique de votre relation et vos propres choix, sans jamais garantir un retour des sentiments ni prétendre connaître les émotions secrètes de l&apos;autre.</p>

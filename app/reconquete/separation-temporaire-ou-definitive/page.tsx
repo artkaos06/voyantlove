@@ -20,7 +20,7 @@ const config: ContentPageConfig = {
     h1: 'Comment Savoir si une Séparation est Temporaire ou Définitive ?',
     subtitle: 'Un cadre basé sur les actes, pas sur un message tendre ou un moment d\'intimité isolé',
     gradient: 'from-cyan-600 via-teal-600 to-blue-700',
-    backLink: { href: '/reconquete', label: 'Retour à la Reconquête' },
+    backLink: { href: '/reconquete/', label: 'Retour à la Reconquête' },
     anchors: [
       { href: '#signes', label: 'Les Signes à Observer', primary: true },
       { href: '#limites', label: 'Fixer une Limite' },
@@ -58,11 +58,11 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/reconquete', label: 'Reconquête Amoureuse : Toutes nos Guidances' },
-    { href: '/reconquete/ex-chaud-et-froid-apres-separation', label: 'Mon Ex est Chaud et Froid' },
-    { href: '/reconquete/veut-se-remettre-ensemble-mais-ne-fait-rien', label: 'Il Veut se Remettre Ensemble mais ne Fait Rien' },
-    { href: '/crise-couple/vivre-meme-toit-apres-separation', label: 'Vivre sous le Même Toit Après une Séparation' },
-    { href: '/rupture/rupture-soudaine-sans-explication', label: 'Rupture Soudaine sans Explication' },
+    { href: '/reconquete/', label: 'Reconquête Amoureuse : Toutes nos Guidances' },
+    { href: '/reconquete/ex-chaud-et-froid-apres-separation/', label: 'Mon Ex est Chaud et Froid' },
+    { href: '/reconquete/veut-se-remettre-ensemble-mais-ne-fait-rien/', label: 'Il Veut se Remettre Ensemble mais ne Fait Rien' },
+    { href: '/crise-couple/vivre-meme-toit-apres-separation/', label: 'Vivre sous le Même Toit Après une Séparation' },
+    { href: '/rupture/rupture-soudaine-sans-explication/', label: 'Rupture Soudaine sans Explication' },
   ],
 };
 
@@ -79,7 +79,7 @@ export default function SeparationTemporaireOuDefinitivePage() {
               Entre une <strong>pause de couple</strong> qui laisse un espoir réel et une <strong>rupture</strong> qui ne dit pas son nom, l&apos;incertitude peut durer des semaines. Le partenaire tient parfois des propos contradictoires, un message tendre, un moment d&apos;<strong>intimité</strong>, puis un silence complet, sans que rien ne permette de trancher clairement. Cette page propose un cadre basé sur les <strong>actes concrets</strong>, les limites posées et les engagements réels, plutôt que sur une déclaration isolée ou un instant nostalgique.
             </p>
             <p className="text-lg leading-relaxed mb-4">
-              Une <strong>séparation temporaire</strong> et une <strong>séparation définitive</strong> peuvent, au jour le jour, se ressembler énormément : mêmes silences, mêmes retrouvailles ponctuelles, même absence de décision affichée. La différence se lit sur la durée, dans l&apos;évolution du dialogue et dans la présence ou l&apos;absence de jalons concrets. Notre guide sur l&apos;<Link href="/reconquete/ex-chaud-et-froid-apres-separation" className="text-teal-700 hover:text-teal-900 underline font-medium">ex chaud et froid</Link> complète cette lecture pour les situations où le comportement, davantage que le statut du couple, est en jeu.
+              Une <strong>séparation temporaire</strong> et une <strong>séparation définitive</strong> peuvent, au jour le jour, se ressembler énormément : mêmes silences, mêmes retrouvailles ponctuelles, même absence de décision affichée. La différence se lit sur la durée, dans l&apos;évolution du dialogue et dans la présence ou l&apos;absence de jalons concrets. Notre guide sur l&apos;<Link href="/reconquete/ex-chaud-et-froid-apres-separation/" className="text-teal-700 hover:text-teal-900 underline font-medium">ex chaud et froid</Link> complète cette lecture pour les situations où le comportement, davantage que le statut du couple, est en jeu.
             </p>
             <p className="text-lg leading-relaxed">
               Personne ne peut garantir l&apos;issue d&apos;une relation en pause. L&apos;objectif ici est de vous aider à observer sans illusion, à poser les bonnes questions, et à fixer une limite qui protège votre équilibre quelle que soit la décision finale de l&apos;autre.
@@ -177,7 +177,7 @@ export default function SeparationTemporaireOuDefinitivePage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">{'\u{1F5E3}️'} Pourquoi les Paroles et les Gestes Peuvent se Contredire</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Une declaration affectueuse et une decision de rester separe peuvent parfaitement coexister sans contradiction reelle, car l&apos;amour ressenti et la volonte de rester en couple relevent de deux registres distincts.</p>
           <p className="text-gray-700 leading-relaxed">
-            Entendre &laquo;je t&apos;aime&raquo; tout en constatant une distance maintenue n&apos;est pas nécessairement incohérent. L&apos;amour peut coexister avec un épuisement relationnel, une conviction que la relation actuelle ne fonctionne pas, ou un besoin d&apos;espace sincère. Pour approfondir cette distinction entre paroles et engagement réel, notre guide sur <Link href="/reconquete/veut-se-remettre-ensemble-mais-ne-fait-rien" className="text-teal-700 hover:text-teal-900 underline font-medium">vouloir se remettre ensemble sans agir</Link> détaille un cadre similaire appliqué à la reconquête.
+            Entendre &laquo;je t&apos;aime&raquo; tout en constatant une distance maintenue n&apos;est pas nécessairement incohérent. L&apos;amour peut coexister avec un épuisement relationnel, une conviction que la relation actuelle ne fonctionne pas, ou un besoin d&apos;espace sincère. Pour approfondir cette distinction entre paroles et engagement réel, notre guide sur <Link href="/reconquete/veut-se-remettre-ensemble-mais-ne-fait-rien/" className="text-teal-700 hover:text-teal-900 underline font-medium">vouloir se remettre ensemble sans agir</Link> détaille un cadre similaire appliqué à la reconquête.
           </p>
         </section>
 
@@ -209,7 +209,7 @@ export default function SeparationTemporaireOuDefinitivePage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">{'\u{1F4CD}'} Fixer une Durée, des Limites et un Point de Décision</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Se fixer une duree limite, meme non annoncee a l&apos;autre, protege votre equilibre et evite qu&apos;une separation ambigue ne se transforme en attente indefinie sans jamais etre nommee.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Que la relation évolue vers un retour ou vers une rupture définitive, vous fixer intérieurement une <strong>date de réévaluation</strong> vous évite de rester suspendu(e) indéfiniment. Cette limite ne doit pas nécessairement être communiquée à l&apos;autre : elle sert avant tout à vous protéger. Si l&apos;incertitude actuelle vous épuise particulièrement, notre page sur <Link href="/reconquete/dois-je-attendre-son-retour" className="text-teal-700 hover:text-teal-900 underline font-medium">dois-je l&apos;attendre</Link> approfondit la question du délai raisonnable.
+            Que la relation évolue vers un retour ou vers une rupture définitive, vous fixer intérieurement une <strong>date de réévaluation</strong> vous évite de rester suspendu(e) indéfiniment. Cette limite ne doit pas nécessairement être communiquée à l&apos;autre : elle sert avant tout à vous protéger. Si l&apos;incertitude actuelle vous épuise particulièrement, notre page sur <Link href="/reconquete/dois-je-attendre-son-retour/" className="text-teal-700 hover:text-teal-900 underline font-medium">dois-je l&apos;attendre</Link> approfondit la question du délai raisonnable.
           </p>
         </section>
 
@@ -218,7 +218,7 @@ export default function SeparationTemporaireOuDefinitivePage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">{'\u{1F6E1}️'} Se Protéger Lorsque l&apos;Autre Refuse de Définir la Relation</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Quand un partenaire refuse durablement de clarifier le statut de la relation, continuer a vivre pleinement sa vie et poser une limite de temps personnelle protege votre equilibre, independamment de la decision finale de l&apos;autre.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Certaines situations restent volontairement floues parce que l&apos;ambiguïté sert davantage l&apos;autre que vous. Dans ce cas, protéger votre équilibre ne signifie pas renoncer à tout espoir, mais refuser de suspendre votre vie à une réponse qui ne vient pas. Si votre situation implique de continuer à partager un logement pendant cette période, notre guide sur <Link href="/crise-couple/vivre-meme-toit-apres-separation" className="text-teal-700 hover:text-teal-900 underline font-medium">vivre sous le même toit après une séparation</Link> détaille comment poser des limites concrètes au quotidien.
+            Certaines situations restent volontairement floues parce que l&apos;ambiguïté sert davantage l&apos;autre que vous. Dans ce cas, protéger votre équilibre ne signifie pas renoncer à tout espoir, mais refuser de suspendre votre vie à une réponse qui ne vient pas. Si votre situation implique de continuer à partager un logement pendant cette période, notre guide sur <Link href="/crise-couple/vivre-meme-toit-apres-separation/" className="text-teal-700 hover:text-teal-900 underline font-medium">vivre sous le même toit après une séparation</Link> détaille comment poser des limites concrètes au quotidien.
           </p>
           <div className="bg-white p-6 rounded-lg border-2 border-teal-200">
             <p className="text-gray-700"><strong>{'\u{1F52E}'} À considérer :</strong> une <strong>consultation de voyance sentimentale</strong> peut aider à comprendre la dynamique en jeu et à préparer votre propre décision, jamais à garantir l&apos;issue de la relation ni à prédire avec certitude le choix de l&apos;autre.</p>

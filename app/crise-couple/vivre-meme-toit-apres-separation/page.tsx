@@ -20,7 +20,7 @@ const config: ContentPageConfig = {
     h1: 'Comment Vivre sous le Même Toit Après une Séparation ?',
     subtitle: 'Créer une séparation réelle malgré un logement partagé, sans faux espoirs',
     gradient: 'from-amber-600 via-orange-600 to-red-700',
-    backLink: { href: '/crise-couple', label: 'Retour à la Crise de Couple' },
+    backLink: { href: '/crise-couple/', label: 'Retour à la Crise de Couple' },
     anchors: [
       { href: '#regles', label: 'Règles de Cohabitation', primary: true },
       { href: '#sortie', label: 'Préparer la Sortie' },
@@ -58,11 +58,11 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/crise-couple', label: 'Crise de Couple : Toutes nos Guidances' },
-    { href: '/crise-couple/dependance-affective', label: 'Dépendance Affective' },
-    { href: '/crise-couple/couple-a-distance-voyance', label: 'Couple à Distance' },
-    { href: '/reconquete/separation-temporaire-ou-definitive', label: 'Séparation Temporaire ou Définitive ?' },
-    { href: '/rupture/rupture-soudaine-sans-explication', label: 'Rupture Soudaine sans Explication' },
+    { href: '/crise-couple/', label: 'Crise de Couple : Toutes nos Guidances' },
+    { href: '/crise-couple/dependance-affective/', label: 'Dépendance Affective' },
+    { href: '/crise-couple/couple-a-distance-voyance/', label: 'Couple à Distance' },
+    { href: '/reconquete/separation-temporaire-ou-definitive/', label: 'Séparation Temporaire ou Définitive ?' },
+    { href: '/rupture/rupture-soudaine-sans-explication/', label: 'Rupture Soudaine sans Explication' },
   ],
 };
 
@@ -79,7 +79,7 @@ export default function VivreMemeToitApresSeparationPage() {
               Des contraintes pratiques, <strong>logement</strong>, finances, enfants, timing, empêchent parfois un départ immédiat après une <strong>rupture</strong>, obligeant à continuer de <strong>cohabiter</strong> avec son ex. Cette situation peut vite entretenir une <strong>ambiguïté</strong> épuisante : ni tout à fait séparés, ni vraiment en couple. Cette page se concentre sur les <strong>limites affectives</strong>, la communication et l&apos;organisation du quotidien, pas sur les questions juridiques, immobilières ou financières, qui relèvent d&apos;un accompagnement spécialisé.
             </p>
             <p className="text-lg leading-relaxed mb-4">
-              Une séparation vécue sous le même toit devient réelle quand elle se traduit par des choix concrets : un statut clairement défini, des espaces distincts, des règles de communication et d&apos;<strong>intimité</strong> posées explicitement. Sans ce cadre, la cohabitation reproduit souvent les habitudes d&apos;un couple sans jamais permettre à la <Link href="/rupture/rupture-soudaine-sans-explication" className="text-orange-700 hover:text-orange-900 underline font-medium">séparation</Link> de produire ses effets.
+              Une séparation vécue sous le même toit devient réelle quand elle se traduit par des choix concrets : un statut clairement défini, des espaces distincts, des règles de communication et d&apos;<strong>intimité</strong> posées explicitement. Sans ce cadre, la cohabitation reproduit souvent les habitudes d&apos;un couple sans jamais permettre à la <Link href="/rupture/rupture-soudaine-sans-explication/" className="text-orange-700 hover:text-orange-900 underline font-medium">séparation</Link> de produire ses effets.
             </p>
             <p className="text-lg leading-relaxed">
               Cette guidance ne banalise jamais une situation où la peur, le contrôle ou la menace seraient présents : dans ce cas, la priorité est la sécurité, pas l&apos;organisation du quotidien. Pour les autres situations, une <strong>consultation de voyance sentimentale</strong> peut aider à clarifier les limites nécessaires, sans jamais garantir que la cohabitation mènera à une réconciliation.
@@ -106,7 +106,7 @@ export default function VivreMemeToitApresSeparationPage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">{'\u{1F4CB}'} Définir Clairement le Statut de la Relation</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Nommer explicitement que la relation de couple est terminee, meme en continuant a partager un logement, evite les malentendus et pose la base necessaire a toutes les autres regles de cohabitation.</p>
           <p className="text-gray-700 leading-relaxed">
-            Avant d&apos;organiser quoi que ce soit d&apos;autre, il est nécessaire que les deux personnes partagent la même compréhension du <strong>statut de la relation</strong>. Si l&apos;un considère toujours être en couple pendant que l&apos;autre se vit comme séparé(e), toute organisation pratique reposera sur un malentendu de fond. Si ce statut lui-même reste flou ou changeant, notre guide sur une <Link href="/reconquete/separation-temporaire-ou-definitive" className="text-orange-700 hover:text-orange-900 underline font-medium">séparation temporaire ou définitive</Link> aide à clarifier ce point avant d&apos;aller plus loin.
+            Avant d&apos;organiser quoi que ce soit d&apos;autre, il est nécessaire que les deux personnes partagent la même compréhension du <strong>statut de la relation</strong>. Si l&apos;un considère toujours être en couple pendant que l&apos;autre se vit comme séparé(e), toute organisation pratique reposera sur un malentendu de fond. Si ce statut lui-même reste flou ou changeant, notre guide sur une <Link href="/reconquete/separation-temporaire-ou-definitive/" className="text-orange-700 hover:text-orange-900 underline font-medium">séparation temporaire ou définitive</Link> aide à clarifier ce point avant d&apos;aller plus loin.
           </p>
         </section>
 
@@ -155,7 +155,7 @@ export default function VivreMemeToitApresSeparationPage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">{'\u{1F6D1}'} Éviter le Rôle de &laquo;Couple sans Engagement&raquo;</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">La cohabitation post-rupture expose au risque de devenir un couple de fait, sans les avantages de l&apos;engagement ni la liberte de la separation, une situation confortable pour l&apos;un et souvent epuisante pour l&apos;autre.</p>
           <p className="text-gray-700 leading-relaxed">
-            Ce rôle intermédiaire, partager un quotidien, une intimité occasionnelle, un soutien mutuel, sans aucun projet de couple assumé, profite rarement de manière équilibrée aux deux personnes. Si vous reconnaissez ce schéma, notre guide sur la <Link href="/crise-couple/dependance-affective" className="text-orange-700 hover:text-orange-900 underline font-medium">dépendance affective</Link> peut aider à identifier pourquoi il est difficile d&apos;en sortir malgré l&apos;inconfort ressenti.
+            Ce rôle intermédiaire, partager un quotidien, une intimité occasionnelle, un soutien mutuel, sans aucun projet de couple assumé, profite rarement de manière équilibrée aux deux personnes. Si vous reconnaissez ce schéma, notre guide sur la <Link href="/crise-couple/dependance-affective/" className="text-orange-700 hover:text-orange-900 underline font-medium">dépendance affective</Link> peut aider à identifier pourquoi il est difficile d&apos;en sortir malgré l&apos;inconfort ressenti.
           </p>
         </section>
 
@@ -173,7 +173,7 @@ export default function VivreMemeToitApresSeparationPage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">{'\u{1F6AA}'} Préparer une Sortie Progressive de la Cohabitation</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Se fixer des etapes concretes et un horizon realiste de fin de cohabitation, meme sans date precise au depart, permet d&apos;avancer activement vers l&apos;autonomie plutot que de subir une situation qui s&apos;eternise.</p>
           <p className="text-gray-700 leading-relaxed">
-            Même quand aucune date n&apos;est fixée dès le départ, garder en vue des <strong>étapes concrètes</strong> vers l&apos;autonomie, recherche active de logement, plan financier, réorganisation progressive, évite que la cohabitation ne devienne une situation par défaut, confortable à court terme mais coûteuse émotionnellement sur la durée. Une fois le départ effectif, notre guide pour <Link href="/rupture/oublier-son-ex" className="text-orange-700 hover:text-orange-900 underline font-medium">oublier son ex</Link> accompagne l&apos;étape suivante de la reconstruction.
+            Même quand aucune date n&apos;est fixée dès le départ, garder en vue des <strong>étapes concrètes</strong> vers l&apos;autonomie, recherche active de logement, plan financier, réorganisation progressive, évite que la cohabitation ne devienne une situation par défaut, confortable à court terme mais coûteuse émotionnellement sur la durée. Une fois le départ effectif, notre guide pour <Link href="/rupture/oublier-son-ex/" className="text-orange-700 hover:text-orange-900 underline font-medium">oublier son ex</Link> accompagne l&apos;étape suivante de la reconstruction.
           </p>
         </section>
 

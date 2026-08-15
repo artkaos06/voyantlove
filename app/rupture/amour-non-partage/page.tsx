@@ -20,7 +20,7 @@ const config: ContentPageConfig = {
     h1: 'Amour Non Partagé',
     subtitle: 'Comprendre et surmonter un amour à sens unique grâce à la voyance sentimentale',
     gradient: 'from-rose-500 via-pink-500 to-fuchsia-500',
-    backLink: { href: '/rupture', label: 'Retour aux Ruptures Amoureuses' },
+    backLink: { href: '/rupture/', label: 'Retour aux Ruptures Amoureuses' },
     anchors: [
       { href: '#consultation', label: 'Guidance Sentimentale', primary: true },
       { href: '#signes', label: 'Les Signes Révélateurs' },
@@ -58,11 +58,11 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/sentiments/maime-t-il-elle', label: 'M\'aime-t-il/elle Vraiment ?' },
-    { href: '/rupture/oublier-son-ex', label: 'Comment Oublier son Ex' },
-    { href: '/nouvelle-rencontre/trouver-ame-soeur', label: 'Trouver son Âme Sœur' },
-    { href: '/sentiments/pense-t-il-elle-a-moi', label: 'Pense-t-il/elle à Moi ?' },
-    { href: '/rupture/chagrin-damour', label: 'Surmonter un Chagrin d\'Amour' },
+    { href: '/sentiments/maime-t-il-elle/', label: 'M\'aime-t-il/elle Vraiment ?' },
+    { href: '/rupture/oublier-son-ex/', label: 'Comment Oublier son Ex' },
+    { href: '/nouvelle-rencontre/trouver-ame-soeur/', label: 'Trouver son Âme Sœur' },
+    { href: '/sentiments/pense-t-il-elle-a-moi/', label: 'Pense-t-il/elle à Moi ?' },
+    { href: '/rupture/chagrin-damour/', label: 'Surmonter un Chagrin d\'Amour' },
   ],
 };
 
@@ -74,7 +74,7 @@ export default function AmourNonPartagePage() {
         <article className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-rose-600">
           <div className="bg-rose-50 border-l-4 border-rose-500 p-6 rounded-lg">
             <p className="text-lg leading-relaxed">
-              L&apos;<strong>amour non partag&eacute;</strong> est l&apos;une des souffrances sentimentales les plus universelles et les plus d&eacute;chirantes. Aussi douloureuse qu&apos;une <Link href="/rupture" className="text-rose-600 hover:text-rose-800 underline font-medium">rupture amoureuse</Link>, cette blessure d&apos;aimer quelqu&apos;un qui ne vous aime pas en retour &mdash; ou pas de la m&ecirc;me mani&egrave;re &mdash; cr&eacute;e un <strong>d&eacute;s&eacute;quilibre &eacute;motionnel</strong> profond qui affecte l&apos;estime de soi, la confiance et la capacit&eacute; &agrave; s&apos;ouvrir aux autres. La <strong>voyance sentimentale</strong> apporte une lumi&egrave;re pr&eacute;cieuse sur cette situation douloureuse en r&eacute;v&eacute;lant les <strong>sentiments v&eacute;ritables</strong> de l&apos;autre personne, les raisons profondes de cette non-r&eacute;ciprocit&eacute; et le chemin vers la <strong>lib&eacute;ration &eacute;motionnelle</strong>. Le <strong>tarot sentimental</strong> d&eacute;code les &eacute;nergies invisibles entre vous et la personne aim&eacute;e, distinguant un <strong>amour non r&eacute;ciproque</strong> d&eacute;finitif d&apos;un amour potentiel qui n&apos;a pas encore &eacute;clos. La <strong>clairvoyance</strong> offre le discernement n&eacute;cessaire pour savoir si l&apos;espoir est fond&eacute; ou s&apos;il est temps de tourner votre c&oelig;ur vers un <strong>amour v&eacute;ritable</strong> et r&eacute;ciproque.
+              L&apos;<strong>amour non partag&eacute;</strong> est l&apos;une des souffrances sentimentales les plus universelles et les plus d&eacute;chirantes. Aussi douloureuse qu&apos;une <Link href="/rupture/" className="text-rose-600 hover:text-rose-800 underline font-medium">rupture amoureuse</Link>, cette blessure d&apos;aimer quelqu&apos;un qui ne vous aime pas en retour &mdash; ou pas de la m&ecirc;me mani&egrave;re &mdash; cr&eacute;e un <strong>d&eacute;s&eacute;quilibre &eacute;motionnel</strong> profond qui affecte l&apos;estime de soi, la confiance et la capacit&eacute; &agrave; s&apos;ouvrir aux autres. La <strong>voyance sentimentale</strong> apporte une lumi&egrave;re pr&eacute;cieuse sur cette situation douloureuse en r&eacute;v&eacute;lant les <strong>sentiments v&eacute;ritables</strong> de l&apos;autre personne, les raisons profondes de cette non-r&eacute;ciprocit&eacute; et le chemin vers la <strong>lib&eacute;ration &eacute;motionnelle</strong>. Le <strong>tarot sentimental</strong> d&eacute;code les &eacute;nergies invisibles entre vous et la personne aim&eacute;e, distinguant un <strong>amour non r&eacute;ciproque</strong> d&eacute;finitif d&apos;un amour potentiel qui n&apos;a pas encore &eacute;clos. La <strong>clairvoyance</strong> offre le discernement n&eacute;cessaire pour savoir si l&apos;espoir est fond&eacute; ou s&apos;il est temps de tourner votre c&oelig;ur vers un <strong>amour v&eacute;ritable</strong> et r&eacute;ciproque.
             </p>
           </div>
         </article>
@@ -160,7 +160,7 @@ export default function AmourNonPartagePage() {
             <div className="bg-white rounded-lg p-5 border-l-4 border-red-500">
               <h3 className="font-bold text-lg mb-2 text-red-700">Le D&eacute;ni Int&eacute;rieur</h3>
               <p className="text-gray-700 text-sm">
-                Le signe le plus subtil est votre propre <strong>d&eacute;ni</strong>. Vous interpr&eacute;tez chaque geste banal comme un signe d&apos;int&eacute;r&ecirc;t, vous trouvez des excuses &agrave; son indiff&eacute;rence et vous vous accrochez &agrave; de minuscules espoirs. Le <strong>tarot</strong> coupe &agrave; travers vos illusions avec bienveillance, r&eacute;v&eacute;lant la r&eacute;alit&eacute; &eacute;nerg&eacute;tique du lien plut&ocirc;t que vos projections. Pour savoir ce que l&apos;autre pense r&eacute;ellement, consultez notre guide <Link href="/sentiments/pense-t-il-elle-a-moi" className="text-rose-600 hover:text-rose-800 underline font-medium">Pense-t-il/elle &agrave; moi ?</Link>.
+                Le signe le plus subtil est votre propre <strong>d&eacute;ni</strong>. Vous interpr&eacute;tez chaque geste banal comme un signe d&apos;int&eacute;r&ecirc;t, vous trouvez des excuses &agrave; son indiff&eacute;rence et vous vous accrochez &agrave; de minuscules espoirs. Le <strong>tarot</strong> coupe &agrave; travers vos illusions avec bienveillance, r&eacute;v&eacute;lant la r&eacute;alit&eacute; &eacute;nerg&eacute;tique du lien plut&ocirc;t que vos projections. Pour savoir ce que l&apos;autre pense r&eacute;ellement, consultez notre guide <Link href="/sentiments/pense-t-il-elle-a-moi/" className="text-rose-600 hover:text-rose-800 underline font-medium">Pense-t-il/elle &agrave; moi ?</Link>.
               </p>
             </div>
           </div>
@@ -199,7 +199,7 @@ export default function AmourNonPartagePage() {
           </div>
 
           <div className="bg-rose-50 border-l-4 border-rose-600 p-5 rounded mt-6">
-            <p className="text-gray-700"><strong>&Agrave; d&eacute;couvrir :</strong> Pour une analyse compl&egrave;te des sentiments de l&apos;autre, consultez notre guide <Link href="/sentiments/maime-t-il-elle" className="text-rose-600 hover:text-rose-800 underline font-medium">M&apos;aime-t-il/elle vraiment ?</Link> qui d&eacute;taille chaque carte en position de <strong>sentiments</strong>.</p>
+            <p className="text-gray-700"><strong>&Agrave; d&eacute;couvrir :</strong> Pour une analyse compl&egrave;te des sentiments de l&apos;autre, consultez notre guide <Link href="/sentiments/maime-t-il-elle/" className="text-rose-600 hover:text-rose-800 underline font-medium">M&apos;aime-t-il/elle vraiment ?</Link> qui d&eacute;taille chaque carte en position de <strong>sentiments</strong>.</p>
           </div>
         </section>
 
@@ -231,7 +231,7 @@ export default function AmourNonPartagePage() {
             <div className="bg-white rounded-lg p-5 border-l-4 border-fuchsia-500">
               <h3 className="font-bold text-lg mb-2 text-fuchsia-700">&Eacute;tape 3 &mdash; Traverser la Douleur</h3>
               <p className="text-gray-700 text-sm">
-                Autorisez-vous &agrave; ressentir pleinement le <strong>chagrin d&apos;amour</strong>. Le <Link href="/rupture/deuil-amoureux" className="text-rose-600 hover:text-rose-800 underline font-medium">deuil amoureux</Link> d&apos;un amour qui n&apos;a jamais exist&eacute; dans sa r&eacute;ciprocit&eacute; est l&eacute;gitime et n&eacute;cessaire. Pleurez ce qui aurait pu &ecirc;tre, la beaut&eacute; du sentiment que vous portiez, et les r&ecirc;ves associ&eacute;s. Le <strong>tarot de gu&eacute;rison</strong> soutient cette traversée en r&eacute;v&eacute;lant les cartes d&apos;espoir qui annoncent l&apos;apaisement.
+                Autorisez-vous &agrave; ressentir pleinement le <strong>chagrin d&apos;amour</strong>. Le <Link href="/rupture/deuil-amoureux/" className="text-rose-600 hover:text-rose-800 underline font-medium">deuil amoureux</Link> d&apos;un amour qui n&apos;a jamais exist&eacute; dans sa r&eacute;ciprocit&eacute; est l&eacute;gitime et n&eacute;cessaire. Pleurez ce qui aurait pu &ecirc;tre, la beaut&eacute; du sentiment que vous portiez, et les r&ecirc;ves associ&eacute;s. Le <strong>tarot de gu&eacute;rison</strong> soutient cette traversée en r&eacute;v&eacute;lant les cartes d&apos;espoir qui annoncent l&apos;apaisement.
               </p>
             </div>
 
@@ -277,13 +277,13 @@ export default function AmourNonPartagePage() {
             <div className="bg-fuchsia-50 border-l-4 border-fuchsia-500 p-5 rounded-lg">
               <h3 className="font-bold text-lg mb-2 text-fuchsia-700">Faire Confiance au Timing Divin</h3>
               <p className="text-gray-700 text-sm">
-                La <strong>voyance</strong> r&eacute;v&egrave;le que chaque exp&eacute;rience amoureuse &mdash; m&ecirc;me douloureuse &mdash; vous pr&eacute;pare &agrave; la <strong>relation</strong> qui vous est destin&eacute;e. L&apos;<strong>amour non partag&eacute;</strong> que vous avez travers&eacute; a renforc&eacute; votre c&oelig;ur, affin&eacute; vos besoins et clarifi&eacute; vos valeurs. Le <strong>tarot</strong> r&eacute;v&egrave;le que le moment de votre <strong>rencontre v&eacute;ritable</strong> approche. Pour en savoir plus, explorez notre guidance sur <Link href="/nouvelle-rencontre/quand-rencontre-amour" className="text-rose-600 hover:text-rose-800 underline font-medium">quand vais-je rencontrer l&apos;amour</Link>.
+                La <strong>voyance</strong> r&eacute;v&egrave;le que chaque exp&eacute;rience amoureuse &mdash; m&ecirc;me douloureuse &mdash; vous pr&eacute;pare &agrave; la <strong>relation</strong> qui vous est destin&eacute;e. L&apos;<strong>amour non partag&eacute;</strong> que vous avez travers&eacute; a renforc&eacute; votre c&oelig;ur, affin&eacute; vos besoins et clarifi&eacute; vos valeurs. Le <strong>tarot</strong> r&eacute;v&egrave;le que le moment de votre <strong>rencontre v&eacute;ritable</strong> approche. Pour en savoir plus, explorez notre guidance sur <Link href="/nouvelle-rencontre/quand-rencontre-amour/" className="text-rose-600 hover:text-rose-800 underline font-medium">quand vais-je rencontrer l&apos;amour</Link>.
               </p>
             </div>
           </div>
 
           <div className="bg-rose-50 border-l-4 border-rose-600 p-5 rounded mt-6">
-            <p className="text-gray-700"><strong>Compl&eacute;ment :</strong> Si vous traversez un <strong>chagrin d&apos;amour</strong> li&eacute; &agrave; cette situation, notre guide d&eacute;di&eacute; au <Link href="/rupture/chagrin-damour" className="text-rose-600 hover:text-rose-800 underline font-medium">chagrin d&apos;amour</Link> vous propose des techniques concr&egrave;tes de soulagement imm&eacute;diat.</p>
+            <p className="text-gray-700"><strong>Compl&eacute;ment :</strong> Si vous traversez un <strong>chagrin d&apos;amour</strong> li&eacute; &agrave; cette situation, notre guide d&eacute;di&eacute; au <Link href="/rupture/chagrin-damour/" className="text-rose-600 hover:text-rose-800 underline font-medium">chagrin d&apos;amour</Link> vous propose des techniques concr&egrave;tes de soulagement imm&eacute;diat.</p>
           </div>
         </section>
     </ContentPage>

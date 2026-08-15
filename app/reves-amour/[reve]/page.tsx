@@ -16,21 +16,21 @@ const LIVE_DREAMS = REVES_AMOUR.filter((d) => validateDreamRecord(d).length === 
 // clusters instead of dead-ending at the hub. Anchors/targets vary by theme.
 function dreamFunnel(slug: string): { href: string; anchor: string; lead: string } {
   if (/(^|-)ex(-|$)|rupture|larguer|quitte|separation|abandon|remplace/.test(slug))
-    return { href: '/reconquete/va-t-il-elle-revenir', anchor: 'le retour de l’ex', lead: 'Ce rêve touche souvent à' };
+    return { href: '/reconquete/va-t-il-elle-revenir/', anchor: 'le retour de l’ex', lead: 'Ce rêve touche souvent à' };
   if (/mariage|fiancailles|demande|epous|noce|bague/.test(slug))
-    return { href: '/sentiments/voyance-mariage', anchor: 'la voyance du mariage', lead: 'Pour prolonger la réflexion, explorez' };
+    return { href: '/sentiments/voyance-mariage/', anchor: 'la voyance du mariage', lead: 'Pour prolonger la réflexion, explorez' };
   if (/tromp|jalou|infidel|amant|mensonge/.test(slug))
-    return { href: '/crise-couple/infidelite-couple', anchor: 'l’infidélité dans le couple', lead: 'Ce songe renvoie parfois à' };
+    return { href: '/crise-couple/infidelite-couple/', anchor: 'l’infidélité dans le couple', lead: 'Ce songe renvoie parfois à' };
   if (/enceinte|grossesse|bebe|enfant|accouch/.test(slug))
-    return { href: '/sentiments/voyance-grossesse-bebe', anchor: 'la voyance grossesse et bébé', lead: 'Ce rêve peut faire écho à' };
+    return { href: '/sentiments/voyance-grossesse-bebe/', anchor: 'la voyance grossesse et bébé', lead: 'Ce rêve peut faire écho à' };
   if (/crush|tomber-amoureux|declaration|baiser|rencontre|inconnu/.test(slug))
-    return { href: '/nouvelle-rencontre/flamme-jumelle', anchor: 'la flamme jumelle', lead: 'Ce rêve évoque parfois' };
+    return { href: '/nouvelle-rencontre/flamme-jumelle/', anchor: 'la flamme jumelle', lead: 'Ce rêve évoque parfois' };
   // Feeling-themed default, spread deterministically across 3 sentiment pages
   // (varied anchors) so it isn't one identical sitewide link.
   const defaults = [
-    { href: '/sentiments/maime-t-il-elle', anchor: 'décrypter les sentiments de l’autre', lead: 'Pour aller plus loin, apprenez à' },
-    { href: '/sentiments/avenir-amoureux', anchor: 'votre avenir amoureux', lead: 'Ce rêve invite à interroger' },
-    { href: '/sentiments', anchor: 'la guidance des sentiments amoureux', lead: 'Pour y voir plus clair, explorez' },
+    { href: '/sentiments/maime-t-il-elle/', anchor: 'décrypter les sentiments de l’autre', lead: 'Pour aller plus loin, apprenez à' },
+    { href: '/sentiments/avenir-amoureux/', anchor: 'votre avenir amoureux', lead: 'Ce rêve invite à interroger' },
+    { href: '/sentiments/', anchor: 'la guidance des sentiments amoureux', lead: 'Pour y voir plus clair, explorez' },
   ];
   return defaults[slug.length % defaults.length];
 }
@@ -91,7 +91,7 @@ export default async function DreamPage({ params }: Props) {
 
       <header className="bg-gradient-to-r from-indigo-700 via-purple-700 to-violet-800 text-white py-16 px-4">
         <div className="max-w-4xl mx-auto">
-          <Link href="/reves-amour" className="text-white/80 hover:text-white mb-4 inline-block">&larr; Tous les rêves amoureux</Link>
+          <Link href="/reves-amour/" className="text-white/80 hover:text-white mb-4 inline-block">&larr; Tous les rêves amoureux</Link>
           <h1 className="text-4xl md:text-5xl font-bold mb-3">{d.emoji} {d.primaryQuery} : Signification</h1>
           <p className="text-lg opacity-90">Interprétation des rêves amoureux, ce que ce rêve révèle, et ce qu&apos;il ne prédit pas</p>
         </div>
@@ -163,11 +163,11 @@ export default async function DreamPage({ params }: Props) {
           <h2 className="font-bold text-lg mb-4 text-gray-900">🌙 Autres rêves amoureux</h2>
           <div className="space-y-2">
             {siblings.map((x) => (
-              <Link key={x.slug} href={`/reves-amour/${x.slug}`} className="block text-indigo-600 hover:text-indigo-800 font-medium">
+              <Link key={x.slug} href={`/reves-amour/${x.slug}/`} className="block text-indigo-600 hover:text-indigo-800 font-medium">
                 &rarr; {x.emoji} {x.primaryQuery}
               </Link>
             ))}
-            <Link href="/rupture/rever-de-son-ex" className="block text-indigo-600 hover:text-indigo-800 font-medium">
+            <Link href="/rupture/rever-de-son-ex/" className="block text-indigo-600 hover:text-indigo-800 font-medium">
               &rarr; 🌙 Rêver de son ex : signification complète
             </Link>
           </div>

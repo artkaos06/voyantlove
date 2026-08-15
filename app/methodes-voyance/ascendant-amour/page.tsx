@@ -20,7 +20,7 @@ const config: ContentPageConfig = {
     h1: 'Ascendant en Amour',
     subtitle: 'Ce que votre signe ascendant révèle sur votre style de séduction',
     gradient: 'from-violet-600 via-indigo-600 to-purple-600',
-    backLink: { href: '/methodes-voyance', label: 'Retour aux Méthodes de Voyance' },
+    backLink: { href: '/methodes-voyance/', label: 'Retour aux Méthodes de Voyance' },
     anchors: [
       { href: '#calcul', label: 'Calculer son Ascendant', primary: true },
       { href: '#signes', label: 'Ascendant par Signe' },
@@ -54,11 +54,11 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/methodes-voyance/astrologie-amoureuse', label: 'Astrologie Amoureuse : Compatibilité Astrale et Prédictions' },
-    { href: '/methodes-voyance/synastrie-amoureuse', label: 'Synastrie Amoureuse : Compatibilité de Couple' },
-    { href: '/astrologie-amour', label: 'Les Signes Astrologiques en Amour' },
-    { href: '/glossaire/ascendant', label: 'Glossaire : Ascendant' },
-    { href: '/sentiments/compatibilite-amoureuse', label: 'Compatibilité Amoureuse : Tous les Indicateurs' },
+    { href: '/methodes-voyance/astrologie-amoureuse/', label: 'Astrologie Amoureuse : Compatibilité Astrale et Prédictions' },
+    { href: '/methodes-voyance/synastrie-amoureuse/', label: 'Synastrie Amoureuse : Compatibilité de Couple' },
+    { href: '/astrologie-amour/', label: 'Les Signes Astrologiques en Amour' },
+    { href: '/glossaire/ascendant/', label: 'Glossaire : Ascendant' },
+    { href: '/sentiments/compatibilite-amoureuse/', label: 'Compatibilité Amoureuse : Tous les Indicateurs' },
   ],
 };
 
@@ -88,7 +88,7 @@ export default function AscendantAmourPage() {
               L&apos;<strong>ascendant</strong> est le signe du zodiaque qui se levait &agrave; l&apos;horizon Est au moment et au lieu exacts de votre naissance. Contrairement au <strong>signe solaire</strong>, d&eacute;termin&eacute; uniquement par la date, l&apos;ascendant n&eacute;cessite de conna&icirc;tre l&apos;<strong>heure pr&eacute;cise</strong> de naissance, puisqu&apos;il change de signe environ toutes les deux heures. En <strong>amour</strong>, il joue un r&ocirc;le central dans l&apos;<strong>attraction imm&eacute;diate</strong> et la premi&egrave;re impression&nbsp;: c&apos;est souvent lui, plus que le signe solaire, qui d&eacute;termine comment on vous per&ccedil;oit lors d&apos;une premi&egrave;re rencontre.
             </p>
             <p className="text-lg leading-relaxed">
-              Traditionnellement d&eacute;crit comme le &laquo;&nbsp;masque social&nbsp;&raquo;, l&apos;ascendant colore votre <strong>style de s&eacute;duction</strong> spontan&eacute; avant m&ecirc;me que votre personnalit&eacute; profonde ne se r&eacute;v&egrave;le. Ce guide explique comment le calculer, ce que chaque ascendant r&eacute;v&egrave;le en amour, et comment il s&apos;articule avec le reste de votre <Link href="/methodes-voyance/astrologie-amoureuse" className="text-indigo-600 hover:text-indigo-800 underline font-medium">th&egrave;me astral amoureux</Link>.
+              Traditionnellement d&eacute;crit comme le &laquo;&nbsp;masque social&nbsp;&raquo;, l&apos;ascendant colore votre <strong>style de s&eacute;duction</strong> spontan&eacute; avant m&ecirc;me que votre personnalit&eacute; profonde ne se r&eacute;v&egrave;le. Ce guide explique comment le calculer, ce que chaque ascendant r&eacute;v&egrave;le en amour, et comment il s&apos;articule avec le reste de votre <Link href="/methodes-voyance/astrologie-amoureuse/" className="text-indigo-600 hover:text-indigo-800 underline font-medium">th&egrave;me astral amoureux</Link>.
             </p>
           </div>
         </article>
@@ -103,7 +103,7 @@ export default function AscendantAmourPage() {
             Contrairement au signe solaire, calculable &agrave; partir de la seule date de naissance, l&apos;<strong>ascendant</strong> exige trois informations&nbsp;: la <strong>date</strong>, l&apos;<strong>heure exacte</strong> (id&eacute;alement &agrave; quelques minutes pr&egrave;s) et le <strong>lieu de naissance</strong>. Ces trois &eacute;l&eacute;ments permettent de d&eacute;terminer le degr&eacute; du zodiaque qui croisait l&apos;horizon Est au moment pr&eacute;cis de la naissance &mdash; un calcul astronomique que r&eacute;alise un <strong>astrologue</strong> ou un outil sp&eacute;cialis&eacute;.
           </p>
           <p className="text-gray-700 leading-relaxed">
-            Sans heure de naissance fiable, l&apos;ascendant ne peut &ecirc;tre d&eacute;termin&eacute; avec certitude&nbsp;: une erreur de deux heures peut suffire &agrave; changer enti&egrave;rement de signe ascendant. C&apos;est pourquoi les <strong>horoscopes g&eacute;n&eacute;ralistes</strong>, bas&eacute;s uniquement sur la date de naissance, ne peuvent jamais int&eacute;grer cette dimension &mdash; contrairement &agrave; une <Link href="/methodes-voyance/synastrie-amoureuse" className="text-indigo-600 hover:text-indigo-800 underline font-medium">&eacute;tude de synastrie</Link> compl&egrave;te r&eacute;alis&eacute;e par un professionnel.
+            Sans heure de naissance fiable, l&apos;ascendant ne peut &ecirc;tre d&eacute;termin&eacute; avec certitude&nbsp;: une erreur de deux heures peut suffire &agrave; changer enti&egrave;rement de signe ascendant. C&apos;est pourquoi les <strong>horoscopes g&eacute;n&eacute;ralistes</strong>, bas&eacute;s uniquement sur la date de naissance, ne peuvent jamais int&eacute;grer cette dimension &mdash; contrairement &agrave; une <Link href="/methodes-voyance/synastrie-amoureuse/" className="text-indigo-600 hover:text-indigo-800 underline font-medium">&eacute;tude de synastrie</Link> compl&egrave;te r&eacute;alis&eacute;e par un professionnel.
           </p>
         </section>
 
@@ -128,13 +128,13 @@ export default function AscendantAmourPage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">💫 Ascendant et Compatibilité de Couple</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">L&apos;ascendant influence la première attraction et complète l&apos;analyse de compatibilité, sans jamais la remplacer entièrement.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            En <Link href="/methodes-voyance/synastrie-amoureuse" className="text-indigo-600 hover:text-indigo-800 underline font-medium">synastrie amoureuse</Link>, quand une plan&egrave;te de votre partenaire &mdash; le Soleil, V&eacute;nus ou Mars &mdash; tombe pr&egrave;s de votre ascendant, elle &laquo;&nbsp;&eacute;claire&nbsp;&raquo; ou &laquo;&nbsp;challenge&nbsp;&raquo; de mani&egrave;re tr&egrave;s perceptible l&apos;image que vous projetez. C&apos;est souvent ce type de contact qui explique une <strong>attraction imm&eacute;diate</strong> et une forte visibilit&eacute; mutuelle d&egrave;s les premiers &eacute;changes.
+            En <Link href="/methodes-voyance/synastrie-amoureuse/" className="text-indigo-600 hover:text-indigo-800 underline font-medium">synastrie amoureuse</Link>, quand une plan&egrave;te de votre partenaire &mdash; le Soleil, V&eacute;nus ou Mars &mdash; tombe pr&egrave;s de votre ascendant, elle &laquo;&nbsp;&eacute;claire&nbsp;&raquo; ou &laquo;&nbsp;challenge&nbsp;&raquo; de mani&egrave;re tr&egrave;s perceptible l&apos;image que vous projetez. C&apos;est souvent ce type de contact qui explique une <strong>attraction imm&eacute;diate</strong> et une forte visibilit&eacute; mutuelle d&egrave;s les premiers &eacute;changes.
           </p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Comparer les ascendants de deux personnes compl&egrave;te utilement l&apos;analyse de <Link href="/sentiments/compatibilite-amoureuse" className="text-indigo-600 hover:text-indigo-800 underline font-medium">compatibilit&eacute; amoureuse</Link> par signe solaire, sans pour autant la remplacer&nbsp;: le signe solaire renseigne sur l&apos;identit&eacute; profonde et les besoins affectifs fondamentaux, tandis que l&apos;ascendant informe davantage sur la mani&egrave;re d&apos;aborder une rencontre et le type de partenaire vers lequel on est spontan&eacute;ment attir&eacute;.
+            Comparer les ascendants de deux personnes compl&egrave;te utilement l&apos;analyse de <Link href="/sentiments/compatibilite-amoureuse/" className="text-indigo-600 hover:text-indigo-800 underline font-medium">compatibilit&eacute; amoureuse</Link> par signe solaire, sans pour autant la remplacer&nbsp;: le signe solaire renseigne sur l&apos;identit&eacute; profonde et les besoins affectifs fondamentaux, tandis que l&apos;ascendant informe davantage sur la mani&egrave;re d&apos;aborder une rencontre et le type de partenaire vers lequel on est spontan&eacute;ment attir&eacute;.
           </p>
           <p className="text-gray-700 leading-relaxed">
-            Pour une lecture compl&egrave;te de votre profil amoureux, l&apos;ascendant s&apos;articule avec la position de <strong>V&eacute;nus</strong> (votre fa&ccedil;on d&apos;aimer) et de <strong>Mars</strong> (votre d&eacute;sir) d&eacute;taill&eacute;es dans notre guide d&apos;<Link href="/methodes-voyance/astrologie-amoureuse" className="text-indigo-600 hover:text-indigo-800 underline font-medium">astrologie amoureuse</Link>.
+            Pour une lecture compl&egrave;te de votre profil amoureux, l&apos;ascendant s&apos;articule avec la position de <strong>V&eacute;nus</strong> (votre fa&ccedil;on d&apos;aimer) et de <strong>Mars</strong> (votre d&eacute;sir) d&eacute;taill&eacute;es dans notre guide d&apos;<Link href="/methodes-voyance/astrologie-amoureuse/" className="text-indigo-600 hover:text-indigo-800 underline font-medium">astrologie amoureuse</Link>.
           </p>
         </section>
     </ContentPage>

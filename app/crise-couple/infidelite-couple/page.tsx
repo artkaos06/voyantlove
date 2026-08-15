@@ -20,7 +20,7 @@ const config: ContentPageConfig = {
     h1: 'Infidélité dans le Couple',
     subtitle: 'Comprendre la trahison, cheminer vers le pardon, et reconstruire la confiance',
     gradient: 'from-red-600 via-rose-600 to-pink-600',
-    backLink: { href: '/crise-couple', label: 'Retour aux Crises de Couple' },
+    backLink: { href: '/crise-couple/', label: 'Retour aux Crises de Couple' },
     anchors: [
       { href: '#reconstruction', label: 'Reconstruire', primary: true },
       { href: '#tirage', label: 'Tirage Infidélité' },
@@ -62,12 +62,12 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/crise-couple', label: 'Crises de Couple : Guide Complet' },
-    { href: '/crise-couple/problemes-communication-couple', label: 'Problèmes de Communication dans le Couple' },
-    { href: '/crise-couple/jalousie-excessive', label: 'Jalousie Excessive : Causes et Solutions' },
-    { href: '/reconquete/se-remettre-ensemble', label: 'Se Remettre Ensemble avec son Ex' },
-    { href: '/sentiments/maime-t-il-elle', label: 'M\'aime-t-il/elle Vraiment ?' },
-    { href: '/sentiments/avenir-amoureux', label: 'Mon Avenir Amoureux' },
+    { href: '/crise-couple/', label: 'Crises de Couple : Guide Complet' },
+    { href: '/crise-couple/problemes-communication-couple/', label: 'Problèmes de Communication dans le Couple' },
+    { href: '/crise-couple/jalousie-excessive/', label: 'Jalousie Excessive : Causes et Solutions' },
+    { href: '/reconquete/se-remettre-ensemble/', label: 'Se Remettre Ensemble avec son Ex' },
+    { href: '/sentiments/maime-t-il-elle/', label: 'M\'aime-t-il/elle Vraiment ?' },
+    { href: '/sentiments/avenir-amoureux/', label: 'Mon Avenir Amoureux' },
   ],
 };
 
@@ -88,7 +88,7 @@ export default function InfideliteCouplePage() {
             Le <strong>tarot de l'infidélité</strong> offre une perspective unique sur cette crise : il révèle non seulement la vérité sur la trahison, mais aussi les <strong>causes profondes karmiques et énergétiques</strong>, les leçons à apprendre, et surtout, si votre couple peut réellement se reconstruire ou si la séparation est la voie de libération. La voyance ne juge pas, elle éclaire pour que vous puissiez prendre la décision la plus alignée avec votre bien-être.
           </p>
           <p className="text-lg leading-relaxed">
-            Que vous soyez en train de découvrir l'infidélité, en plein processus de pardon, ou en questionnement sur rester ou partir, ce guide complet vous accompagne. Pour comprendre l'ensemble des <Link href="/crise-couple" className="text-rose-600 hover:text-rose-800 underline font-medium">crises de couple</Link>, découvrez toutes nos guidances spécialisées pour traverser les tempêtes relationnelles.
+            Que vous soyez en train de découvrir l'infidélité, en plein processus de pardon, ou en questionnement sur rester ou partir, ce guide complet vous accompagne. Pour comprendre l'ensemble des <Link href="/crise-couple/" className="text-rose-600 hover:text-rose-800 underline font-medium">crises de couple</Link>, découvrez toutes nos guidances spécialisées pour traverser les tempêtes relationnelles.
           </p>
         </article>
 
@@ -200,7 +200,7 @@ export default function InfideliteCouplePage() {
             <div className="bg-white rounded-lg p-5 border-l-4 border-yellow-600">
               <h3 className="font-bold mb-2 text-yellow-700 text-lg">Phase 3 : Marchandage et Questionnement (Mois 2-4)</h3>
               <p className="text-gray-700 mb-2">
-                <strong>Symptômes :</strong> "Et si j'avais été différent?", remise en question de votre valeur, recherche obsessionnelle de ce que l'autre personne a que vous n'avez pas, <Link href="/crise-couple/jalousie-excessive" className="text-rose-600 hover:text-rose-800 underline font-medium">jalousie excessive</Link> et contrôle du partenaire, besoin constant de réassurance.
+                <strong>Symptômes :</strong> "Et si j'avais été différent?", remise en question de votre valeur, recherche obsessionnelle de ce que l'autre personne a que vous n'avez pas, <Link href="/crise-couple/jalousie-excessive/" className="text-rose-600 hover:text-rose-800 underline font-medium">jalousie excessive</Link> et contrôle du partenaire, besoin constant de réassurance.
               </p>
               <p className="text-gray-700">
                 <strong>Ce dont vous avez besoin :</strong> Comprendre que l'infidélité est le choix de votre partenaire, pas votre faute. Thérapie individuelle pour reconstruire votre estime. Décider si vous voulez tenter la reconstruction ou vous séparer.
@@ -242,7 +242,7 @@ export default function InfideliteCouplePage() {
           <h2 className="text-3xl font-bold mb-6 text-rose-600">❤️‍🩹 Reconstruire le Couple Après l'Infidélité : Les 7 Piliers</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Reconstruire après une infidélité repose sur sept piliers essentiels : transparence totale, responsabilité assumée, expression de la douleur, compréhension des causes, thérapie de couple, reconstruction de l'intimité et engagement sur la durée.</p>
           <p className="text-gray-700 mb-6">
-            Si vous décidez de donner une <Link href="/reconquete/seconde-chance-amour" className="text-rose-600 hover:text-rose-800 underline font-medium">seconde chance en amour</Link>, voici les éléments absolument essentiels pour une reconstruction authentique et durable. Sans ces piliers, vous risquez de prolonger une souffrance plutôt que de guérir.
+            Si vous décidez de donner une <Link href="/reconquete/seconde-chance-amour/" className="text-rose-600 hover:text-rose-800 underline font-medium">seconde chance en amour</Link>, voici les éléments absolument essentiels pour une reconstruction authentique et durable. Sans ces piliers, vous risquez de prolonger une souffrance plutôt que de guérir.
           </p>
 
           <div className="space-y-6">
@@ -264,7 +264,7 @@ export default function InfideliteCouplePage() {
                 <div>
                   <h4 className="font-semibold text-green-600 mb-2">Pourquoi c'est essentiel :</h4>
                   <p className="text-gray-700">
-                    La confiance se reconstruit par la vérification répétée. Si le partenaire infidèle refuse la transparence ou maintient un contact même minimal avec la tierce personne, la reconstruction est impossible. C'est un test de son engagement réel à <Link href="/crise-couple/sauver-son-couple" className="text-rose-600 hover:text-rose-800 underline font-medium">sauver le couple</Link>.
+                    La confiance se reconstruit par la vérification répétée. Si le partenaire infidèle refuse la transparence ou maintient un contact même minimal avec la tierce personne, la reconstruction est impossible. C'est un test de son engagement réel à <Link href="/crise-couple/sauver-son-couple/" className="text-rose-600 hover:text-rose-800 underline font-medium">sauver le couple</Link>.
                   </p>
                 </div>
               </div>
@@ -404,7 +404,7 @@ export default function InfideliteCouplePage() {
                 <div>
                   <h4 className="font-semibold text-orange-600 mb-2">Quand abandonner la reconstruction :</h4>
                   <p className="text-gray-700">
-                    Si après 12-18 mois d'efforts sincères des deux côtés, vous : ne parvenez toujours pas à faire confiance, ressentez du mépris constant, êtes plus malheureux qu'avant, vivez dans l'hyper-vigilance épuisante, alors la <Link href="/rupture/rupture-amoureuse" className="text-rose-600 hover:text-rose-800 underline font-medium">rupture amoureuse</Link> est probablement la voie de guérison.
+                    Si après 12-18 mois d'efforts sincères des deux côtés, vous : ne parvenez toujours pas à faire confiance, ressentez du mépris constant, êtes plus malheureux qu'avant, vivez dans l'hyper-vigilance épuisante, alors la <Link href="/rupture/rupture-amoureuse/" className="text-rose-600 hover:text-rose-800 underline font-medium">rupture amoureuse</Link> est probablement la voie de guérison.
                   </p>
                 </div>
               </div>

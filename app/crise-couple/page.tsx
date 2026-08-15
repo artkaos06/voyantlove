@@ -71,86 +71,86 @@ export default function CriseCoupleHubPage() {
 
         <section className="mb-16">
           <h2 className="text-3xl font-bold mb-8 text-center">🗺️ Résoudre les Crises</h2>
-          <p className="text-lg font-semibold text-gray-800 mb-4">Résoudre une crise de couple passe par l'identification du problème central -- infidélité, jalousie, communication ou dépendance -- puis par un travail ciblé. La <Link href="/voyance-amour" className="text-orange-600 hover:text-orange-800 underline font-medium">voyance amoureuse</Link> et le tarot relationnel éclairent les blocages et guident la reconstruction.</p>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Résoudre une crise de couple passe par l'identification du problème central -- infidélité, jalousie, communication ou dépendance -- puis par un travail ciblé. La <Link href="/voyance-amour/" className="text-orange-600 hover:text-orange-800 underline font-medium">voyance amoureuse</Link> et le tarot relationnel éclairent les blocages et guident la reconstruction.</p>
           <div className="grid md:grid-cols-3 gap-8">
-            <Link href="/crise-couple/infidelite-couple" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-red-500">
+            <Link href="/crise-couple/infidelite-couple/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-red-500">
               <div className="text-4xl mb-4">💔</div>
               <h3 className="text-2xl font-bold mb-3">Infidélité Couple</h3>
               <p className="text-gray-600 mb-4">Découvrir et surmonter une infidélité selon le tarot.</p>
               <span className="text-red-600 font-semibold">Lire →</span>
             </Link>
 
-            <Link href="/crise-couple/jalousie-excessive" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-yellow-500">
+            <Link href="/crise-couple/jalousie-excessive/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-yellow-500">
               <div className="text-4xl mb-4">😠</div>
               <h3 className="text-2xl font-bold mb-3">Jalousie Excessive</h3>
               <p className="text-gray-600 mb-4">Gérer et guérir la jalousie maladive dans le couple.</p>
               <span className="text-yellow-600 font-semibold">Lire →</span>
             </Link>
 
-            <Link href="/crise-couple/problemes-communication-couple" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-blue-500">
+            <Link href="/crise-couple/problemes-communication-couple/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-blue-500">
               <div className="text-4xl mb-4">💬</div>
               <h3 className="text-2xl font-bold mb-3">Problèmes Communication</h3>
               <p className="text-gray-600 mb-4">Rétablir le dialogue et la compréhension mutuelle.</p>
               <span className="text-blue-600 font-semibold">Lire →</span>
             </Link>
 
-            <Link href="/crise-couple/sauver-son-couple" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-green-500">
+            <Link href="/crise-couple/sauver-son-couple/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-green-500">
               <div className="text-4xl mb-4">🛟</div>
               <h3 className="text-2xl font-bold mb-3">Sauver son Couple</h3>
               <p className="text-gray-600 mb-4">Stratégies pour sauver votre relation avant la rupture.</p>
               <span className="text-green-600 font-semibold">Lire →</span>
             </Link>
 
-            <Link href="/crise-couple/dependance-affective" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-purple-500">
+            <Link href="/crise-couple/dependance-affective/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-purple-500">
               <div className="text-4xl mb-4">🔗</div>
               <h3 className="text-2xl font-bold mb-3">Dépendance Affective</h3>
               <p className="text-gray-600 mb-4">Se libérer de la dépendance affective selon le tarot.</p>
               <span className="text-purple-600 font-semibold">Lire →</span>
             </Link>
 
-            <Link href="/crise-couple/pardonner-en-amour" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-teal-500">
+            <Link href="/crise-couple/pardonner-en-amour/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-teal-500">
               <div className="text-4xl mb-4">🕊️</div>
               <h3 className="text-2xl font-bold mb-3">Pardonner en Amour</h3>
               <p className="text-gray-600 mb-4">Comment pardonner une erreur et reconstruire la confiance.</p>
               <span className="text-teal-600 font-semibold">Lire →</span>
             </Link>
 
-            <Link href="/crise-couple/couple-a-distance-voyance" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-cyan-500">
+            <Link href="/crise-couple/couple-a-distance-voyance/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-cyan-500">
               <div className="text-4xl mb-4">🌍</div>
               <h3 className="text-2xl font-bold mb-3">Couple à Distance</h3>
               <p className="text-gray-600 mb-4">Guidance voyance pour les couples à distance et la séparation géographique.</p>
               <span className="text-cyan-600 font-semibold">Lire →</span>
             </Link>
 
-            <Link href="/crise-couple/emprise-amoureuse-voyance" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-rose-500">
+            <Link href="/crise-couple/emprise-amoureuse-voyance/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-rose-500">
               <div className="text-4xl mb-4">⛓️</div>
               <h3 className="text-2xl font-bold mb-3">Emprise Amoureuse</h3>
               <p className="text-gray-600 mb-4">Reconnaître et se libérer d&apos;une emprise amoureuse.</p>
               <span className="text-rose-600 font-semibold">Lire →</span>
             </Link>
 
-            <Link href="/crise-couple/reconnecter-son-couple" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-indigo-500">
+            <Link href="/crise-couple/reconnecter-son-couple/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-indigo-500">
               <div className="text-4xl mb-4">💞</div>
               <h3 className="text-2xl font-bold mb-3">Reconnecter son Couple</h3>
               <p className="text-gray-600 mb-4">Retrouver l&apos;intimité et la complicité perdues dans votre relation.</p>
               <span className="text-indigo-600 font-semibold">Lire →</span>
             </Link>
 
-            <Link href="/crise-couple/opposition-familiale-couple" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-amber-500">
+            <Link href="/crise-couple/opposition-familiale-couple/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-amber-500">
               <div className="text-4xl mb-4">👪</div>
               <h3 className="text-2xl font-bold mb-3">Opposition Familiale</h3>
               <p className="text-gray-600 mb-4">Gérer une famille qui s&apos;oppose à votre relation.</p>
               <span className="text-amber-600 font-semibold">Lire →</span>
             </Link>
 
-            <Link href="/crise-couple/difference-age-couple" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-cyan-500">
+            <Link href="/crise-couple/difference-age-couple/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-cyan-500">
               <div className="text-4xl mb-4">⏳</div>
               <h3 className="text-2xl font-bold mb-3">Différence d&apos;Âge</h3>
               <p className="text-gray-600 mb-4">Ce qui compte vraiment dans un couple avec un grand écart d&apos;âge.</p>
               <span className="text-cyan-600 font-semibold">Lire →</span>
             </Link>
 
-            <Link href="/crise-couple/vivre-meme-toit-apres-separation" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-amber-500">
+            <Link href="/crise-couple/vivre-meme-toit-apres-separation/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-amber-500">
               <div className="text-4xl mb-4">🏠</div>
               <h3 className="text-2xl font-bold mb-3">Vivre sous le Même Toit</h3>
               <p className="text-gray-600 mb-4">Cohabiter avec son ex après la séparation, sans ambiguïté.</p>
@@ -171,7 +171,7 @@ export default function CriseCoupleHubPage() {
             </div>
             <div className="border-b border-gray-200 pb-6">
               <h3 className="text-xl font-bold text-gray-900 mb-3">La voyance peut-elle sauver un couple ?</h3>
-              <p className="text-gray-700 leading-relaxed">La <strong>voyance relationnelle</strong> offre un éclairage unique sur les <strong>dynamiques invisibles</strong> qui régissent le couple. Grâce au <strong>tirage de tarot</strong>, le voyant identifie les <strong>schémas répétitifs</strong>, les blessures non exprimées et les <strong>attentes insatisfaites</strong> de chaque partenaire. Cette guidance ne remplace pas une <strong>thérapie de couple</strong>, mais elle la complète en révélant les <strong>causes profondes</strong> des conflits. La consultation aide à comprendre le <strong>timing émotionnel</strong> de la relation : certaines périodes favorisent la réconciliation tandis que d&apos;autres appellent à la patience. Les arcanes du tarot éclairent le chemin vers une <Link href="/crise-couple/problemes-communication-couple" className="text-orange-600 hover:text-orange-800 underline font-medium">communication restaurée</Link> et un équilibre affectif durable.</p>
+              <p className="text-gray-700 leading-relaxed">La <strong>voyance relationnelle</strong> offre un éclairage unique sur les <strong>dynamiques invisibles</strong> qui régissent le couple. Grâce au <strong>tirage de tarot</strong>, le voyant identifie les <strong>schémas répétitifs</strong>, les blessures non exprimées et les <strong>attentes insatisfaites</strong> de chaque partenaire. Cette guidance ne remplace pas une <strong>thérapie de couple</strong>, mais elle la complète en révélant les <strong>causes profondes</strong> des conflits. La consultation aide à comprendre le <strong>timing émotionnel</strong> de la relation : certaines périodes favorisent la réconciliation tandis que d&apos;autres appellent à la patience. Les arcanes du tarot éclairent le chemin vers une <Link href="/crise-couple/problemes-communication-couple/" className="text-orange-600 hover:text-orange-800 underline font-medium">communication restaurée</Link> et un équilibre affectif durable.</p>
             </div>
             <div className="border-b border-gray-200 pb-6">
               <h3 className="text-xl font-bold text-gray-900 mb-3">Quels signes montrent qu&apos;un couple peut surmonter une crise ?</h3>
@@ -189,19 +189,19 @@ export default function CriseCoupleHubPage() {
           <p className="text-lg font-semibold text-gray-800 mb-4">Les crises de couple touchent à la reconquête, la rupture et la compréhension des sentiments. Explorer ces thèmes connexes offre une vision complète de votre situation amoureuse et des solutions adaptées à chaque étape.</p>
           <p className="text-gray-700 mb-4">Les crises de couple s'inscrivent dans un parcours sentimental complexe. Découvrez nos guidances complémentaires.</p>
           <div className="grid md:grid-cols-3 gap-4">
-            <Link href="/reconquete" className="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition">
+            <Link href="/reconquete/" className="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition">
               <h3 className="font-bold text-gray-900 mb-1">Reconquête Amoureuse</h3>
               <p className="text-sm text-gray-600">Reconstruire votre relation après une crise majeure.</p>
             </Link>
-            <Link href="/rupture" className="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition">
+            <Link href="/rupture/" className="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition">
               <h3 className="font-bold text-gray-900 mb-1">Rupture Amoureuse</h3>
               <p className="text-sm text-gray-600">Comprendre et surmonter une séparation si la crise mène à la rupture.</p>
             </Link>
-            <Link href="/sentiments" className="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition">
+            <Link href="/sentiments/" className="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition">
               <h3 className="font-bold text-gray-900 mb-1">Sentiments Amoureux</h3>
               <p className="text-sm text-gray-600">Décrypter les vrais sentiments de votre partenaire pendant la crise.</p>
             </Link>
-            <Link href="/consulter" className="bg-purple-50 rounded-lg p-4 hover:bg-purple-100 transition border border-purple-200">
+            <Link href="/consulter/" className="bg-purple-50 rounded-lg p-4 hover:bg-purple-100 transition border border-purple-200">
               <h3 className="font-bold text-purple-900 mb-1">Consulter un Voyant</h3>
               <p className="text-sm text-purple-700">Tous nos voyants disponibles maintenant pour une guidance personnalisée.</p>
             </Link>

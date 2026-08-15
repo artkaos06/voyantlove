@@ -75,7 +75,7 @@ export default function TirageGratuitCelibatairePage() {
       {/* Header */}
       <header className="bg-gradient-to-r from-rose-500 via-pink-500 to-fuchsia-500 text-white py-16 px-4">
         <div className="max-w-4xl mx-auto">
-          <Link href="/voyance-gratuite-amour" className="text-white/80 hover:text-white mb-4 inline-block">&larr; Retour &agrave; Voyance Gratuite Amour</Link>
+          <Link href="/voyance-gratuite-amour/" className="text-white/80 hover:text-white mb-4 inline-block">&larr; Retour &agrave; Voyance Gratuite Amour</Link>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">&#x1F0CF; Tirage Gratuit Amour C&eacute;libataire</h1>
           <p className="text-xl opacity-95 mb-6">D&eacute;couvrez votre avenir sentimental gr&acirc;ce au tarot et &agrave; l&apos;oracle pour c&eacute;libataires</p>
           <div className="flex gap-4 flex-wrap">
@@ -172,7 +172,7 @@ export default function TirageGratuitCelibatairePage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">&#x1F552; Quand Vais-je Rencontrer l&apos;Amour ?</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le tarot r&eacute;v&egrave;le les &eacute;nergies temporelles et les conditions n&eacute;cessaires &agrave; la rencontre amoureuse sans donner de date pr&eacute;cise, mais en identifiant les p&eacute;riodes favorables.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            La question &laquo;&nbsp;<Link href="/nouvelle-rencontre/quand-rencontre-amour" className="text-rose-600 hover:text-rose-800 underline font-medium">quand rencontrer l&apos;amour</Link>&nbsp;&raquo; est la plus pos&eacute;e par les c&eacute;libataires en <strong>consultation de voyance</strong>. Le <strong>tarot</strong> apporte des r&eacute;ponses nuanc&eacute;es qui vont bien au-del&agrave; d&apos;une simple date. Il r&eacute;v&egrave;le les conditions &eacute;nerg&eacute;tiques &agrave; r&eacute;unir, les p&eacute;riodes favorables et les signes qui annoncent l&apos;arriv&eacute;e de l&apos;amour.
+            La question &laquo;&nbsp;<Link href="/nouvelle-rencontre/quand-rencontre-amour/" className="text-rose-600 hover:text-rose-800 underline font-medium">quand rencontrer l&apos;amour</Link>&nbsp;&raquo; est la plus pos&eacute;e par les c&eacute;libataires en <strong>consultation de voyance</strong>. Le <strong>tarot</strong> apporte des r&eacute;ponses nuanc&eacute;es qui vont bien au-del&agrave; d&apos;une simple date. Il r&eacute;v&egrave;le les conditions &eacute;nerg&eacute;tiques &agrave; r&eacute;unir, les p&eacute;riodes favorables et les signes qui annoncent l&apos;arriv&eacute;e de l&apos;amour.
           </p>
 
           <div className="space-y-5">
@@ -232,7 +232,7 @@ export default function TirageGratuitCelibatairePage() {
             <div className="bg-fuchsia-50 border-l-4 border-fuchsia-500 p-5 rounded-lg">
               <h3 className="font-bold text-lg mb-2 text-fuchsia-700">Les Sch&eacute;mas R&eacute;p&eacute;titifs</h3>
               <p className="text-gray-700 text-sm">
-                La Roue de Fortune ou le Jugement dans un <strong>tirage de tarot</strong> indiquent des cycles sentimentaux qui se r&eacute;p&egrave;tent. Vous rencontrez toujours le m&ecirc;me type de personne, vivez les m&ecirc;mes d&eacute;ceptions ou reproduisez les m&ecirc;mes erreurs relationnelles. La <strong>voyance sentimentale</strong> d&eacute;code ces sch&eacute;mas karmiques et r&eacute;v&egrave;le la le&ccedil;on que l&apos;univers cherche &agrave; vous transmettre. Pour <Link href="/nouvelle-rencontre/trouver-ame-soeur" className="text-rose-600 hover:text-rose-800 underline font-medium">trouver votre &acirc;me s&oelig;ur</Link>, il faut d&apos;abord briser ces cycles inconscients.
+                La Roue de Fortune ou le Jugement dans un <strong>tirage de tarot</strong> indiquent des cycles sentimentaux qui se r&eacute;p&egrave;tent. Vous rencontrez toujours le m&ecirc;me type de personne, vivez les m&ecirc;mes d&eacute;ceptions ou reproduisez les m&ecirc;mes erreurs relationnelles. La <strong>voyance sentimentale</strong> d&eacute;code ces sch&eacute;mas karmiques et r&eacute;v&egrave;le la le&ccedil;on que l&apos;univers cherche &agrave; vous transmettre. Pour <Link href="/nouvelle-rencontre/trouver-ame-soeur/" className="text-rose-600 hover:text-rose-800 underline font-medium">trouver votre &acirc;me s&oelig;ur</Link>, il faut d&apos;abord briser ces cycles inconscients.
               </p>
             </div>
 
@@ -273,7 +273,7 @@ export default function TirageGratuitCelibatairePage() {
             <div className="bg-white rounded-lg p-5 border-l-4 border-fuchsia-500">
               <h3 className="font-bold text-lg mb-2 text-fuchsia-700">Les Combinaisons R&eacute;v&eacute;latrices</h3>
               <p className="text-gray-700 text-sm">
-                Certaines combinaisons dans le <strong>tirage c&eacute;libataire</strong> sont particuli&egrave;rement &eacute;loquentes. Les Amoureux suivis du Soleil promettent un <strong>amour lumineux</strong> et r&eacute;ciproque. L&apos;&Eacute;toile associ&eacute;e &agrave; l&apos;Imp&eacute;ratrice annonce une rencontre avec une personne magn&eacute;tique et bienveillante. Le Chariot coupl&eacute; au Deux de Coupe pr&eacute;dit une <strong>relation amoureuse</strong> qui d&eacute;marre rapidement et avec &eacute;nergie. Pour <Link href="/nouvelle-rencontre/flamme-jumelle" className="text-rose-600 hover:text-rose-800 underline font-medium">reconna&icirc;tre une flamme jumelle</Link>, observez la pr&eacute;sence du Jugement ou de la Temp&eacute;rance.
+                Certaines combinaisons dans le <strong>tirage c&eacute;libataire</strong> sont particuli&egrave;rement &eacute;loquentes. Les Amoureux suivis du Soleil promettent un <strong>amour lumineux</strong> et r&eacute;ciproque. L&apos;&Eacute;toile associ&eacute;e &agrave; l&apos;Imp&eacute;ratrice annonce une rencontre avec une personne magn&eacute;tique et bienveillante. Le Chariot coupl&eacute; au Deux de Coupe pr&eacute;dit une <strong>relation amoureuse</strong> qui d&eacute;marre rapidement et avec &eacute;nergie. Pour <Link href="/nouvelle-rencontre/flamme-jumelle/" className="text-rose-600 hover:text-rose-800 underline font-medium">reconna&icirc;tre une flamme jumelle</Link>, observez la pr&eacute;sence du Jugement ou de la Temp&eacute;rance.
               </p>
             </div>
 
@@ -325,7 +325,7 @@ export default function TirageGratuitCelibatairePage() {
           </div>
 
           <div className="bg-rose-50 border-l-4 border-rose-600 p-5 rounded mt-6">
-            <p className="text-gray-700"><strong>&Agrave; d&eacute;couvrir :</strong> Pour approfondir votre recherche de l&apos;&acirc;me s&oelig;ur et explorer toutes les formes de <strong>guidance sentimentale</strong> disponibles, consultez notre hub <Link href="/voyance-gratuite-amour" className="text-rose-600 hover:text-rose-800 underline font-medium">voyance gratuite amour</Link> qui rassemble les meilleures ressources pour les c&eacute;libataires en qu&ecirc;te d&apos;amour.</p>
+            <p className="text-gray-700"><strong>&Agrave; d&eacute;couvrir :</strong> Pour approfondir votre recherche de l&apos;&acirc;me s&oelig;ur et explorer toutes les formes de <strong>guidance sentimentale</strong> disponibles, consultez notre hub <Link href="/voyance-gratuite-amour/" className="text-rose-600 hover:text-rose-800 underline font-medium">voyance gratuite amour</Link> qui rassemble les meilleures ressources pour les c&eacute;libataires en qu&ecirc;te d&apos;amour.</p>
           </div>
         </section>
 
@@ -360,10 +360,10 @@ export default function TirageGratuitCelibatairePage() {
         <div className="bg-gray-100 rounded-xl p-6 mb-8">
           <h3 className="font-bold text-lg mb-4 text-gray-900">&#x1F4DA; Articles Connexes</h3>
           <div className="space-y-2">
-            <Link href="/voyance-gratuite-amour" className="block text-rose-600 hover:text-rose-800 font-medium">&rarr; Voyance Gratuite Amour : Tirages et Guidance Sentimentale</Link>
-            <Link href="/nouvelle-rencontre/quand-rencontre-amour" className="block text-rose-600 hover:text-rose-800 font-medium">&rarr; Quand Vais-je Rencontrer l&apos;Amour ?</Link>
-            <Link href="/nouvelle-rencontre/trouver-ame-soeur" className="block text-rose-600 hover:text-rose-800 font-medium">&rarr; Trouver Votre &Acirc;me S&oelig;ur : Guidance Compl&egrave;te</Link>
-            <Link href="/nouvelle-rencontre/flamme-jumelle" className="block text-rose-600 hover:text-rose-800 font-medium">&rarr; Flamme Jumelle : Signes et Reconnexion</Link>
+            <Link href="/voyance-gratuite-amour/" className="block text-rose-600 hover:text-rose-800 font-medium">&rarr; Voyance Gratuite Amour : Tirages et Guidance Sentimentale</Link>
+            <Link href="/nouvelle-rencontre/quand-rencontre-amour/" className="block text-rose-600 hover:text-rose-800 font-medium">&rarr; Quand Vais-je Rencontrer l&apos;Amour ?</Link>
+            <Link href="/nouvelle-rencontre/trouver-ame-soeur/" className="block text-rose-600 hover:text-rose-800 font-medium">&rarr; Trouver Votre &Acirc;me S&oelig;ur : Guidance Compl&egrave;te</Link>
+            <Link href="/nouvelle-rencontre/flamme-jumelle/" className="block text-rose-600 hover:text-rose-800 font-medium">&rarr; Flamme Jumelle : Signes et Reconnexion</Link>
           </div>
         </div>
 

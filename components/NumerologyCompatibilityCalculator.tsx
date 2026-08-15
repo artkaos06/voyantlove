@@ -93,7 +93,7 @@ export default function NumerologyCompatibilityCalculator() {
           </div>
           <p className="text-sm text-gray-600 mt-4">
             Envie d&rsquo;une lecture complète croisant vos trois nombres (chemin de vie, expression, nombre intime) avec ceux de votre partenaire ?{' '}
-            <Link href="/consulter" className="text-red-700 hover:text-red-900 underline font-medium">
+            <Link href="/consulter/" className="text-red-700 hover:text-red-900 underline font-medium">
               Consultez un voyant spécialisé
             </Link>.
           </p>

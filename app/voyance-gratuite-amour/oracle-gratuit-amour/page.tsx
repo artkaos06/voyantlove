@@ -75,7 +75,7 @@ export default function OracleGratuitAmourPage() {
       {/* Header */}
       <header className="bg-gradient-to-r from-teal-500 via-emerald-500 to-green-500 text-white py-16 px-4">
         <div className="max-w-4xl mx-auto">
-          <Link href="/voyance-gratuite-amour" className="text-white/80 hover:text-white mb-4 inline-block">&larr; Retour &agrave; Voyance Gratuite Amour</Link>
+          <Link href="/voyance-gratuite-amour/" className="text-white/80 hover:text-white mb-4 inline-block">&larr; Retour &agrave; Voyance Gratuite Amour</Link>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">&#x1F52E; Oracle Gratuit Amour</h1>
           <p className="text-xl opacity-95 mb-6">Belline, G&eacute; et Guidance Sentimentale pour &eacute;clairer votre c&oelig;ur</p>
           <div className="flex gap-4 flex-wrap">
@@ -124,7 +124,7 @@ export default function OracleGratuitAmourPage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">&#x2696;&#xFE0F; Diff&eacute;rence Oracle vs Tarot en Amour</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">L&apos;oracle et le tarot sont deux outils de voyance sentimentale distincts : le tarot poss&egrave;de une structure fixe de 78 cartes, tandis que l&apos;oracle est un jeu libre avec sa propre symbolique, offrant des messages plus directs et intuitifs pour les questions amoureuses.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Comprendre la diff&eacute;rence entre un <strong>oracle amour gratuit</strong> et un <strong>tarot amoureux</strong> est essentiel pour choisir l&apos;outil de <strong>voyance sentimentale</strong> le plus adapt&eacute; &agrave; votre question. Si vous explorez le monde de la <Link href="/voyance-gratuite-amour" className="text-teal-600 hover:text-teal-800 underline font-medium">voyance gratuite amour</Link>, conna&icirc;tre ces distinctions vous aidera &agrave; formuler des questions plus pr&eacute;cises et &agrave; mieux interpr&eacute;ter les r&eacute;ponses re&ccedil;ues.
+            Comprendre la diff&eacute;rence entre un <strong>oracle amour gratuit</strong> et un <strong>tarot amoureux</strong> est essentiel pour choisir l&apos;outil de <strong>voyance sentimentale</strong> le plus adapt&eacute; &agrave; votre question. Si vous explorez le monde de la <Link href="/voyance-gratuite-amour/" className="text-teal-600 hover:text-teal-800 underline font-medium">voyance gratuite amour</Link>, conna&icirc;tre ces distinctions vous aidera &agrave; formuler des questions plus pr&eacute;cises et &agrave; mieux interpr&eacute;ter les r&eacute;ponses re&ccedil;ues.
           </p>
 
           <div className="space-y-5">
@@ -138,14 +138,14 @@ export default function OracleGratuitAmourPage() {
             <div className="bg-emerald-50 border-l-4 border-emerald-500 p-5 rounded-lg">
               <h3 className="font-bold text-lg mb-2 text-emerald-700">Approche de la Question Sentimentale</h3>
               <p className="text-gray-700 text-sm">
-                Le <strong>tarot</strong> excelle dans l&apos;analyse d&eacute;taill&eacute;e des situations complexes gr&acirc;ce &agrave; ses tirages structur&eacute;s en positions pr&eacute;cises. Il d&eacute;compose la situation amoureuse en facettes multiples : pass&eacute;, pr&eacute;sent, avenir, obstacles et conseils. L&apos;<strong>oracle gratuit amour</strong>, lui, privil&eacute;gie une r&eacute;ponse plus directe et intuitive. Chaque carte d&eacute;livre un message clair, souvent accompagn&eacute; d&apos;un mot-cl&eacute; ou d&apos;une phrase qui &eacute;claire imm&eacute;diatement votre <strong>question sentimentale</strong>. Si vous pr&eacute;f&eacute;rez rester c&ocirc;t&eacute; cartomancie tout en gardant cette imm&eacute;diatet&eacute;, le <Link href="/voyance-gratuite-amour/tarot-oui-non-amour" className="text-teal-600 hover:text-teal-800 underline font-medium">tarot oui/non amour</Link> offre la m&ecirc;me r&eacute;ponse directe, sous forme binaire.
+                Le <strong>tarot</strong> excelle dans l&apos;analyse d&eacute;taill&eacute;e des situations complexes gr&acirc;ce &agrave; ses tirages structur&eacute;s en positions pr&eacute;cises. Il d&eacute;compose la situation amoureuse en facettes multiples : pass&eacute;, pr&eacute;sent, avenir, obstacles et conseils. L&apos;<strong>oracle gratuit amour</strong>, lui, privil&eacute;gie une r&eacute;ponse plus directe et intuitive. Chaque carte d&eacute;livre un message clair, souvent accompagn&eacute; d&apos;un mot-cl&eacute; ou d&apos;une phrase qui &eacute;claire imm&eacute;diatement votre <strong>question sentimentale</strong>. Si vous pr&eacute;f&eacute;rez rester c&ocirc;t&eacute; cartomancie tout en gardant cette imm&eacute;diatet&eacute;, le <Link href="/voyance-gratuite-amour/tarot-oui-non-amour/" className="text-teal-600 hover:text-teal-800 underline font-medium">tarot oui/non amour</Link> offre la m&ecirc;me r&eacute;ponse directe, sous forme binaire.
               </p>
             </div>
 
             <div className="bg-green-50 border-l-4 border-green-500 p-5 rounded-lg">
               <h3 className="font-bold text-lg mb-2 text-green-700">Niveau d&apos;Interpr&eacute;tation</h3>
               <p className="text-gray-700 text-sm">
-                Le <strong>tarot amoureux</strong> demande une expertise approfondie pour interpr&eacute;ter les combinaisons entre cartes, les positions et les &eacute;nergies crois&eacute;es. L&apos;<strong>oracle</strong> est g&eacute;n&eacute;ralement plus accessible : ses cartes portent des significations explicites qui facilitent la compr&eacute;hension, m&ecirc;me pour un d&eacute;butant en <strong>voyance sentimentale</strong>. L&apos;<Link href="/methodes-voyance/oracle-amour" className="text-teal-600 hover:text-teal-800 underline font-medium">oracle de l&apos;amour</Link> offre ainsi une porte d&apos;entr&eacute;e douce vers la <strong>guidance amoureuse</strong>.
+                Le <strong>tarot amoureux</strong> demande une expertise approfondie pour interpr&eacute;ter les combinaisons entre cartes, les positions et les &eacute;nergies crois&eacute;es. L&apos;<strong>oracle</strong> est g&eacute;n&eacute;ralement plus accessible : ses cartes portent des significations explicites qui facilitent la compr&eacute;hension, m&ecirc;me pour un d&eacute;butant en <strong>voyance sentimentale</strong>. L&apos;<Link href="/methodes-voyance/oracle-amour/" className="text-teal-600 hover:text-teal-800 underline font-medium">oracle de l&apos;amour</Link> offre ainsi une porte d&apos;entr&eacute;e douce vers la <strong>guidance amoureuse</strong>.
               </p>
             </div>
 
@@ -195,7 +195,7 @@ export default function OracleGratuitAmourPage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">&#x1F4A1; Oracle de G&eacute; : Clart&eacute; Situationnelle</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">L&apos;Oracle de G&eacute; et ses 61 cartes illustr&eacute;es de sc&egrave;nes concr&egrave;tes de la vie quotidienne offrent une clart&eacute; imm&eacute;diate sur les situations amoureuses confuses et les dynamiques de couple.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Cr&eacute;&eacute; par G&eacute;rard Barbier, l&apos;<strong>Oracle de G&eacute;</strong> se distingue par ses illustrations r&eacute;alistes repr&eacute;sentant des sc&egrave;nes de la vie quotidienne. Cette approche concr&egrave;te en fait un outil de <strong>voyance sentimentale</strong> particuli&egrave;rement efficace pour les personnes qui cherchent des r&eacute;ponses claires et directes. Lorsque vous traversez une p&eacute;riode de confusion amoureuse et que vous avez besoin de <Link href="/rupture/guerir-rupture" className="text-teal-600 hover:text-teal-800 underline font-medium">surmonter une rupture amoureuse</Link> ou de comprendre une <strong>situation sentimentale</strong> complexe, l&apos;Oracle de G&eacute; apporte une lumi&egrave;re bienvenue.
+            Cr&eacute;&eacute; par G&eacute;rard Barbier, l&apos;<strong>Oracle de G&eacute;</strong> se distingue par ses illustrations r&eacute;alistes repr&eacute;sentant des sc&egrave;nes de la vie quotidienne. Cette approche concr&egrave;te en fait un outil de <strong>voyance sentimentale</strong> particuli&egrave;rement efficace pour les personnes qui cherchent des r&eacute;ponses claires et directes. Lorsque vous traversez une p&eacute;riode de confusion amoureuse et que vous avez besoin de <Link href="/rupture/guerir-rupture/" className="text-teal-600 hover:text-teal-800 underline font-medium">surmonter une rupture amoureuse</Link> ou de comprendre une <strong>situation sentimentale</strong> complexe, l&apos;Oracle de G&eacute; apporte une lumi&egrave;re bienvenue.
           </p>
 
           <div className="space-y-5">
@@ -229,7 +229,7 @@ export default function OracleGratuitAmourPage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">&#x1F54A;&#xFE0F; Oracle des Anges : Gu&eacute;rison et Guidance</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">L&apos;Oracle des Anges est un outil de guidance spirituelle d&eacute;di&eacute; &agrave; la gu&eacute;rison &eacute;motionnelle et au r&eacute;confort des c&oelig;urs bless&eacute;s. Ses messages bienveillants accompagnent les transitions amoureuses les plus d&eacute;licates.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            L&apos;<strong>Oracle des Anges</strong> occupe une place particuli&egrave;re dans la <strong>voyance amoureuse</strong> : il ne cherche pas tant &agrave; pr&eacute;dire qu&apos;&agrave; gu&eacute;rir. Inspir&eacute; par Doreen Virtue et d&apos;autres auteurs spirituels, cet <strong>oracle</strong> canalise des messages d&apos;amour inconditionnel et de r&eacute;confort. Il est particuli&egrave;rement pr&eacute;cieux pour ceux qui traversent un <strong>chagrin d&apos;amour</strong> et cherchent &agrave; <Link href="/rupture/chagrin-damour" className="text-teal-600 hover:text-teal-800 underline font-medium">gu&eacute;rir d&apos;un chagrin d&apos;amour</Link> en retrouvant confiance en l&apos;avenir.
+            L&apos;<strong>Oracle des Anges</strong> occupe une place particuli&egrave;re dans la <strong>voyance amoureuse</strong> : il ne cherche pas tant &agrave; pr&eacute;dire qu&apos;&agrave; gu&eacute;rir. Inspir&eacute; par Doreen Virtue et d&apos;autres auteurs spirituels, cet <strong>oracle</strong> canalise des messages d&apos;amour inconditionnel et de r&eacute;confort. Il est particuli&egrave;rement pr&eacute;cieux pour ceux qui traversent un <strong>chagrin d&apos;amour</strong> et cherchent &agrave; <Link href="/rupture/chagrin-damour/" className="text-teal-600 hover:text-teal-800 underline font-medium">gu&eacute;rir d&apos;un chagrin d&apos;amour</Link> en retrouvant confiance en l&apos;avenir.
           </p>
 
           <div className="space-y-5">
@@ -329,12 +329,12 @@ export default function OracleGratuitAmourPage() {
         <div className="bg-gray-100 rounded-xl p-6 mb-8">
           <h3 className="font-bold text-lg mb-4 text-gray-900">&#x1F4DA; Articles Connexes</h3>
           <div className="space-y-2">
-            <Link href="/voyance-gratuite-amour" className="block text-teal-600 hover:text-teal-800 font-medium">&rarr; Voyance Gratuite Amour : Guide Complet</Link>
-            <Link href="/methodes-voyance/oracle-amour" className="block text-teal-600 hover:text-teal-800 font-medium">&rarr; Oracle de l&apos;Amour : Guidance Sentimentale</Link>
-            <Link href="/rupture/chagrin-damour" className="block text-teal-600 hover:text-teal-800 font-medium">&rarr; Chagrin d&apos;Amour : Surmonter la Douleur</Link>
-            <Link href="/rupture/guerir-rupture" className="block text-teal-600 hover:text-teal-800 font-medium">&rarr; Gu&eacute;rir d&apos;une Rupture Amoureuse</Link>
-            <Link href="/voyance-gratuite-amour/tarot-amour-gratuit" className="block text-teal-600 hover:text-teal-800 font-medium">&rarr; Tarot Amour Gratuit : Tirage Sentimental</Link>
-            <Link href="/voyance-gratuite-amour/tarot-oui-non-amour" className="block text-teal-600 hover:text-teal-800 font-medium">&rarr; Tarot Oui Non Amour : R&eacute;ponse Imm&eacute;diate</Link>
+            <Link href="/voyance-gratuite-amour/" className="block text-teal-600 hover:text-teal-800 font-medium">&rarr; Voyance Gratuite Amour : Guide Complet</Link>
+            <Link href="/methodes-voyance/oracle-amour/" className="block text-teal-600 hover:text-teal-800 font-medium">&rarr; Oracle de l&apos;Amour : Guidance Sentimentale</Link>
+            <Link href="/rupture/chagrin-damour/" className="block text-teal-600 hover:text-teal-800 font-medium">&rarr; Chagrin d&apos;Amour : Surmonter la Douleur</Link>
+            <Link href="/rupture/guerir-rupture/" className="block text-teal-600 hover:text-teal-800 font-medium">&rarr; Gu&eacute;rir d&apos;une Rupture Amoureuse</Link>
+            <Link href="/voyance-gratuite-amour/tarot-amour-gratuit/" className="block text-teal-600 hover:text-teal-800 font-medium">&rarr; Tarot Amour Gratuit : Tirage Sentimental</Link>
+            <Link href="/voyance-gratuite-amour/tarot-oui-non-amour/" className="block text-teal-600 hover:text-teal-800 font-medium">&rarr; Tarot Oui Non Amour : R&eacute;ponse Imm&eacute;diate</Link>
           </div>
         </div>
 

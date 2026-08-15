@@ -20,7 +20,7 @@ const config: ContentPageConfig = {
     h1: 'Compatibilit\u00e9 Amoureuse : \u00cates-vous Faits l\u2019Un pour l\u2019Autre ?',
     subtitle: 'Analyse de compatibilit\u00e9 par le tarot et la synastrie astrologique',
     gradient: 'from-pink-500 via-rose-500 to-red-500',
-    backLink: { href: '/sentiments', label: 'Retour aux Sentiments' },
+    backLink: { href: '/sentiments/', label: 'Retour aux Sentiments' },
     anchors: [
       { href: '#consultation', label: 'Analyse de Compatibilit\u00e9', primary: true },
       { href: '#piliers', label: 'Les 7 Piliers du Couple' },
@@ -58,12 +58,12 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/sentiments', label: 'Sentiments Amoureux : Toutes nos Guidances' },
-    { href: '/sentiments/maime-t-il-elle', label: 'M\u2019aime-t-il/elle Vraiment ?' },
-    { href: '/sentiments/avenir-amoureux', label: 'Mon Avenir Amoureux : Pr\u00e9dictions' },
-    { href: '/sentiments/signes-il-elle-maime', label: 'Les Signes qu\u2019il/elle M\u2019aime' },
-    { href: '/nouvelle-rencontre/signes-ame-soeur', label: 'Reconna\u00eetre les Signes de l\u2019\u00c2me S\u0153ur' },
-    { href: '/crise-couple', label: 'Surmonter une Crise de Couple' },
+    { href: '/sentiments/', label: 'Sentiments Amoureux : Toutes nos Guidances' },
+    { href: '/sentiments/maime-t-il-elle/', label: 'M\u2019aime-t-il/elle Vraiment ?' },
+    { href: '/sentiments/avenir-amoureux/', label: 'Mon Avenir Amoureux : Pr\u00e9dictions' },
+    { href: '/sentiments/signes-il-elle-maime/', label: 'Les Signes qu\u2019il/elle M\u2019aime' },
+    { href: '/nouvelle-rencontre/signes-ame-soeur/', label: 'Reconna\u00eetre les Signes de l\u2019\u00c2me S\u0153ur' },
+    { href: '/crise-couple/', label: 'Surmonter une Crise de Couple' },
   ],
 };
 
@@ -78,7 +78,7 @@ export default function CompatibiliteAmoureusePage() {
         <article className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-rose-600">
           <div className="prose prose-lg max-w-none">
             <p className="text-lg leading-relaxed mb-4">
-              La <strong>compatibilit&eacute; amoureuse</strong> est la question fondamentale de toute <strong>relation sentimentale</strong> qui aspire &agrave; durer. &Agrave; travers le <strong>tarot de compatibilit&eacute;</strong> et la <strong>synastrie astrologique</strong>, il est possible de mesurer avec pr&eacute;cision l&rsquo;harmonie profonde entre deux &ecirc;tres au c&oelig;ur de leurs <Link href="/sentiments" className="text-rose-600 hover:text-rose-800 underline font-medium">sentiments amoureux</Link>. Que vous cherchiez &agrave; savoir si votre partenaire est votre <strong>&acirc;me s&oelig;ur</strong>, votre <strong>flamme jumelle</strong>, ou simplement un compagnon de route, la <strong>voyance amoureuse</strong> offre des r&eacute;ponses claires et nuanc&eacute;es. La <strong>compatibilit&eacute; astrale</strong> croise les positions de V&eacute;nus, Mars et la Lune dans vos deux th&egrave;mes nataux pour r&eacute;v&eacute;ler les zones d&rsquo;attraction magn&eacute;tique, les tensions latentes et le potentiel de construction commune. Le <strong>tirage de compatibilit&eacute;</strong> compl&egrave;te cette analyse en captant les &eacute;nergies vivantes du moment pr&eacute;sent, car un couple &eacute;volue sans cesse. Comprendre votre <strong>compatibilit&eacute; de couple</strong> par la voyance, c&rsquo;est prendre le recul n&eacute;cessaire pour b&acirc;tir une relation &eacute;panouissante fond&eacute;e sur la connaissance mutuelle plut&ocirc;t que sur l&rsquo;illusion.
+              La <strong>compatibilit&eacute; amoureuse</strong> est la question fondamentale de toute <strong>relation sentimentale</strong> qui aspire &agrave; durer. &Agrave; travers le <strong>tarot de compatibilit&eacute;</strong> et la <strong>synastrie astrologique</strong>, il est possible de mesurer avec pr&eacute;cision l&rsquo;harmonie profonde entre deux &ecirc;tres au c&oelig;ur de leurs <Link href="/sentiments/" className="text-rose-600 hover:text-rose-800 underline font-medium">sentiments amoureux</Link>. Que vous cherchiez &agrave; savoir si votre partenaire est votre <strong>&acirc;me s&oelig;ur</strong>, votre <strong>flamme jumelle</strong>, ou simplement un compagnon de route, la <strong>voyance amoureuse</strong> offre des r&eacute;ponses claires et nuanc&eacute;es. La <strong>compatibilit&eacute; astrale</strong> croise les positions de V&eacute;nus, Mars et la Lune dans vos deux th&egrave;mes nataux pour r&eacute;v&eacute;ler les zones d&rsquo;attraction magn&eacute;tique, les tensions latentes et le potentiel de construction commune. Le <strong>tirage de compatibilit&eacute;</strong> compl&egrave;te cette analyse en captant les &eacute;nergies vivantes du moment pr&eacute;sent, car un couple &eacute;volue sans cesse. Comprendre votre <strong>compatibilit&eacute; de couple</strong> par la voyance, c&rsquo;est prendre le recul n&eacute;cessaire pour b&acirc;tir une relation &eacute;panouissante fond&eacute;e sur la connaissance mutuelle plut&ocirc;t que sur l&rsquo;illusion.
             </p>
           </div>
         </article>
@@ -132,7 +132,7 @@ export default function CompatibiliteAmoureusePage() {
           </div>
 
           <div className="bg-rose-50 border-l-4 border-rose-600 p-5 rounded mt-6">
-            <p className="text-gray-700"><strong>Important :</strong> Ce tirage r&eacute;v&egrave;le les &eacute;nergies actuelles du couple. Pour comprendre <Link href="/sentiments/maime-t-il-elle" className="text-rose-600 hover:text-rose-800 underline font-medium">ses vrais sentiments</Link> &agrave; votre &eacute;gard et approfondir votre lecture, combinez ce tirage avec une analyse individuelle des &eacute;motions de chaque partenaire.</p>
+            <p className="text-gray-700"><strong>Important :</strong> Ce tirage r&eacute;v&egrave;le les &eacute;nergies actuelles du couple. Pour comprendre <Link href="/sentiments/maime-t-il-elle/" className="text-rose-600 hover:text-rose-800 underline font-medium">ses vrais sentiments</Link> &agrave; votre &eacute;gard et approfondir votre lecture, combinez ce tirage avec une analyse individuelle des &eacute;motions de chaque partenaire.</p>
           </div>
         </section>
 
@@ -141,7 +141,7 @@ export default function CompatibiliteAmoureusePage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">⭐ Synastrie Astrologique &mdash; Votre Couple au Microscope</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">La synastrie astrologique superpose vos deux themes nataux pour mesurer la compatibilite astrale. Les aspects Venus-Mars, Lune-Lune, Soleil-Soleil et Saturne revelent attraction, emotion, identite et durabilite.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            La <strong>synastrie amoureuse</strong> est l&rsquo;art ancestral de superposer deux th&egrave;mes nataux pour mesurer la <strong>compatibilit&eacute; astrale</strong> d&rsquo;un couple. Cette branche de l&rsquo;<Link href="/methodes-voyance/astrologie-amoureuse" className="text-rose-600 hover:text-rose-800 underline font-medium">astrologie amoureuse</Link> r&eacute;v&egrave;le, &agrave; travers chaque aspect plan&eacute;taire, une dimension sp&eacute;cifique de votre relation &mdash; de l&rsquo;attraction physique &agrave; la connexion spirituelle. Cette m&eacute;thode permet de comprendre pourquoi certains couples fonctionnent sans effort tandis que d&rsquo;autres luttent en permanence malgr&eacute; un amour sinc&egrave;re.
+            La <strong>synastrie amoureuse</strong> est l&rsquo;art ancestral de superposer deux th&egrave;mes nataux pour mesurer la <strong>compatibilit&eacute; astrale</strong> d&rsquo;un couple. Cette branche de l&rsquo;<Link href="/methodes-voyance/astrologie-amoureuse/" className="text-rose-600 hover:text-rose-800 underline font-medium">astrologie amoureuse</Link> r&eacute;v&egrave;le, &agrave; travers chaque aspect plan&eacute;taire, une dimension sp&eacute;cifique de votre relation &mdash; de l&rsquo;attraction physique &agrave; la connexion spirituelle. Cette m&eacute;thode permet de comprendre pourquoi certains couples fonctionnent sans effort tandis que d&rsquo;autres luttent en permanence malgr&eacute; un amour sinc&egrave;re.
           </p>
 
           <div className="space-y-5">
@@ -155,7 +155,7 @@ export default function CompatibiliteAmoureusePage() {
             <div className="bg-white rounded-lg p-5 border-l-4 border-blue-500">
               <h3 className="font-bold text-lg mb-3 text-blue-700">Lune-Lune : La Connexion &Eacute;motionnelle</h3>
               <p className="text-gray-700 mb-2">
-                La comparaison des <strong>Lunes</strong> dans vos deux th&egrave;mes r&eacute;v&egrave;le votre <strong>compatibilit&eacute; &eacute;motionnelle</strong> profonde. Deux Lunes en trigone ressentent intuitivement les besoins de l&rsquo;autre et cr&eacute;ent un cocon de s&eacute;curit&eacute; affective. Des Lunes en carr&eacute; provoquent des r&eacute;actions &eacute;motionnelles incompatibles : quand l&rsquo;un a besoin de r&eacute;confort, l&rsquo;autre se ferme. Cet aspect est crucial pour d&eacute;terminer si vous pouvez construire un foyer harmonieux. Pour explorer votre <Link href="/sentiments/avenir-amoureux" className="text-rose-600 hover:text-rose-800 underline font-medium">avenir amoureux ensemble</Link>, cette dimension &eacute;motionnelle est d&eacute;terminante.
+                La comparaison des <strong>Lunes</strong> dans vos deux th&egrave;mes r&eacute;v&egrave;le votre <strong>compatibilit&eacute; &eacute;motionnelle</strong> profonde. Deux Lunes en trigone ressentent intuitivement les besoins de l&rsquo;autre et cr&eacute;ent un cocon de s&eacute;curit&eacute; affective. Des Lunes en carr&eacute; provoquent des r&eacute;actions &eacute;motionnelles incompatibles : quand l&rsquo;un a besoin de r&eacute;confort, l&rsquo;autre se ferme. Cet aspect est crucial pour d&eacute;terminer si vous pouvez construire un foyer harmonieux. Pour explorer votre <Link href="/sentiments/avenir-amoureux/" className="text-rose-600 hover:text-rose-800 underline font-medium">avenir amoureux ensemble</Link>, cette dimension &eacute;motionnelle est d&eacute;terminante.
               </p>
             </div>
 
@@ -187,7 +187,7 @@ export default function CompatibiliteAmoureusePage() {
             <div className="bg-green-50 border-l-4 border-green-500 rounded-lg p-6">
               <h3 className="font-bold text-lg mb-3 text-green-700">💚 L&rsquo;&Acirc;me S&oelig;ur</h3>
               <p className="text-gray-700 mb-3">
-                Votre <strong>&acirc;me s&oelig;ur</strong> est une personne avec laquelle vous partagez une connexion spirituelle ancienne, souvent d&eacute;crite comme une reconnaissance imm&eacute;diate lors de la premi&egrave;re rencontre. Le tarot la r&eacute;v&egrave;le par le Deux de Coupe et Le Soleil en combinaison. Cette relation apporte confort, compr&eacute;hension profonde et croissance mutuelle. Contrairement aux id&eacute;es re&ccedil;ues, nous avons plusieurs &acirc;mes s&oelig;urs potentielles au cours d&rsquo;une vie. Pour reconna&icirc;tre les <Link href="/nouvelle-rencontre/signes-ame-soeur" className="text-rose-600 hover:text-rose-800 underline font-medium">signes de l&rsquo;&acirc;me s&oelig;ur</Link>, la voyance offre des rep&egrave;res pr&eacute;cis.
+                Votre <strong>&acirc;me s&oelig;ur</strong> est une personne avec laquelle vous partagez une connexion spirituelle ancienne, souvent d&eacute;crite comme une reconnaissance imm&eacute;diate lors de la premi&egrave;re rencontre. Le tarot la r&eacute;v&egrave;le par le Deux de Coupe et Le Soleil en combinaison. Cette relation apporte confort, compr&eacute;hension profonde et croissance mutuelle. Contrairement aux id&eacute;es re&ccedil;ues, nous avons plusieurs &acirc;mes s&oelig;urs potentielles au cours d&rsquo;une vie. Pour reconna&icirc;tre les <Link href="/nouvelle-rencontre/signes-ame-soeur/" className="text-rose-600 hover:text-rose-800 underline font-medium">signes de l&rsquo;&acirc;me s&oelig;ur</Link>, la voyance offre des rep&egrave;res pr&eacute;cis.
               </p>
               <ul className="text-gray-700 text-sm space-y-1">
                 <li>&bull; Sentiment de familiarit&eacute; instantan&eacute;e</li>
@@ -241,7 +241,7 @@ export default function CompatibiliteAmoureusePage() {
 
             <div className="bg-orange-50 rounded-lg p-5 border-l-4 border-orange-400">
               <h3 className="font-bold text-orange-700 mb-2">2. La Compatibilit&eacute; &Eacute;motionnelle</h3>
-              <p className="text-gray-700 text-sm mb-2">La capacit&eacute; &agrave; ressentir, exprimer et accueillir les &eacute;motions de l&rsquo;autre. Pour d&eacute;couvrir les <Link href="/sentiments/signes-il-elle-maime" className="text-rose-600 hover:text-rose-800 underline font-medium">signes d&rsquo;amour authentique</Link>, cette dimension est d&eacute;terminante dans le tirage.</p>
+              <p className="text-gray-700 text-sm mb-2">La capacit&eacute; &agrave; ressentir, exprimer et accueillir les &eacute;motions de l&rsquo;autre. Pour d&eacute;couvrir les <Link href="/sentiments/signes-il-elle-maime/" className="text-rose-600 hover:text-rose-800 underline font-medium">signes d&rsquo;amour authentique</Link>, cette dimension est d&eacute;terminante dans le tirage.</p>
               <p className="text-gray-600 text-xs italic">Le tarot r&eacute;v&egrave;le : La Reine de Coupe et le Deux de Coupe confirment l&rsquo;harmonie &eacute;motionnelle.</p>
             </div>
 
@@ -289,7 +289,7 @@ export default function CompatibiliteAmoureusePage() {
             <div className="bg-white rounded-lg p-5 border-l-4 border-green-500">
               <h3 className="font-bold text-lg mb-2 text-green-700">Incompatibilit&eacute;s Surmontables</h3>
               <p className="text-gray-700 text-sm">
-                Les diff&eacute;rences de <strong>communication</strong>, de rythme &eacute;motionnel ou d&rsquo;habitudes quotidiennes peuvent &ecirc;tre travaill&eacute;es. Le tarot conseille souvent la carte de Temp&eacute;rance : patience, compromis et adaptation mutuelle. Un carr&eacute; V&eacute;nus-Mars en <strong>synastrie</strong> transforme la tension en passion cr&eacute;ative quand les deux partenaires s&rsquo;y engagent. De nombreux couples ayant travers&eacute; des <Link href="/crise-couple" className="text-rose-600 hover:text-rose-800 underline font-medium">crises de couple</Link> t&eacute;moignent que ces &eacute;preuves ont renforc&eacute; leur lien.
+                Les diff&eacute;rences de <strong>communication</strong>, de rythme &eacute;motionnel ou d&rsquo;habitudes quotidiennes peuvent &ecirc;tre travaill&eacute;es. Le tarot conseille souvent la carte de Temp&eacute;rance : patience, compromis et adaptation mutuelle. Un carr&eacute; V&eacute;nus-Mars en <strong>synastrie</strong> transforme la tension en passion cr&eacute;ative quand les deux partenaires s&rsquo;y engagent. De nombreux couples ayant travers&eacute; des <Link href="/crise-couple/" className="text-rose-600 hover:text-rose-800 underline font-medium">crises de couple</Link> t&eacute;moignent que ces &eacute;preuves ont renforc&eacute; leur lien.
               </p>
             </div>
 

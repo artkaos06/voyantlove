@@ -13,13 +13,13 @@ const LIVE_TERMS = GLOSSARY_TERMS.filter((t) => validateTermRecord(t).length ===
 
 // Each glossary term funnels authority to the priority page for its category,
 // so anchors/targets vary by category rather than repeating one sitewide link.
-const FUNNEL_FALLBACK = { href: '/methodes-voyance', anchor: 'les méthodes de voyance amoureuse', lead: 'Ce terme s’inscrit dans' };
+const FUNNEL_FALLBACK = { href: '/methodes-voyance/', anchor: 'les méthodes de voyance amoureuse', lead: 'Ce terme s’inscrit dans' };
 const CATEGORY_FUNNEL: Record<string, { href: string; anchor: string; lead: string }> = {
-  astrologie: { href: '/astrologie-amour', anchor: 'l’astrologie amoureuse', lead: 'Ce terme s’éclaire à la lumière de' },
-  numerologie: { href: '/methodes-voyance/numerologie-amoureuse', anchor: 'la numérologie amoureuse', lead: 'Pour aller plus loin, découvrez' },
-  'pratiques-divinatoires': { href: '/tarot-amour', anchor: 'le tarot de l’amour', lead: 'On retrouve souvent ce concept dans' },
-  'psychologie-amoureuse': { href: '/sentiments', anchor: 'les sentiments amoureux', lead: 'Ce mécanisme touche au cœur des' },
-  spiritualite: { href: '/nouvelle-rencontre/flamme-jumelle', anchor: 'la flamme jumelle', lead: 'Cette notion est proche de l’univers de' },
+  astrologie: { href: '/astrologie-amour/', anchor: 'l’astrologie amoureuse', lead: 'Ce terme s’éclaire à la lumière de' },
+  numerologie: { href: '/methodes-voyance/numerologie-amoureuse/', anchor: 'la numérologie amoureuse', lead: 'Pour aller plus loin, découvrez' },
+  'pratiques-divinatoires': { href: '/tarot-amour/', anchor: 'le tarot de l’amour', lead: 'On retrouve souvent ce concept dans' },
+  'psychologie-amoureuse': { href: '/sentiments/', anchor: 'les sentiments amoureux', lead: 'Ce mécanisme touche au cœur des' },
+  spiritualite: { href: '/nouvelle-rencontre/flamme-jumelle/', anchor: 'la flamme jumelle', lead: 'Cette notion est proche de l’univers de' },
 };
 
 export function generateStaticParams() {
@@ -80,7 +80,7 @@ export default async function GlossaryTermPage({ params }: Props) {
       <header className="bg-gradient-to-r from-violet-700 via-purple-700 to-fuchsia-800 text-white py-16 px-4">
         <div className="max-w-4xl mx-auto">
           <nav className="text-sm text-white/80 mb-4">
-            <Link href="/glossaire" className="hover:text-white">Glossaire</Link>
+            <Link href="/glossaire/" className="hover:text-white">Glossaire</Link>
             <span className="mx-2">/</span>
             <span className="text-white/60">{CATEGORY_LABELS[t.categorie]}</span>
           </nav>
@@ -160,7 +160,7 @@ export default async function GlossaryTermPage({ params }: Props) {
             <h2 className="font-bold text-lg mb-4 text-gray-900">📖 Termes liés</h2>
             <div className="grid sm:grid-cols-2 gap-2">
               {related.map((r) => (
-                <Link key={r.slug} href={`/glossaire/${r.slug}`} className="block text-indigo-600 hover:text-indigo-800 font-medium">
+                <Link key={r.slug} href={`/glossaire/${r.slug}/`} className="block text-indigo-600 hover:text-indigo-800 font-medium">
                   &rarr; {r.emoji} {r.terme}
                 </Link>
               ))}
@@ -173,12 +173,12 @@ export default async function GlossaryTermPage({ params }: Props) {
             <h2 className="font-bold text-lg mb-4 text-gray-900">{CATEGORY_LABELS[t.categorie]} : autres termes</h2>
             <div className="grid sm:grid-cols-2 gap-2">
               {siblings.map((s) => (
-                <Link key={s.slug} href={`/glossaire/${s.slug}`} className="block text-indigo-600 hover:text-indigo-800 font-medium">
+                <Link key={s.slug} href={`/glossaire/${s.slug}/`} className="block text-indigo-600 hover:text-indigo-800 font-medium">
                   &rarr; {s.emoji} {s.terme}
                 </Link>
               ))}
             </div>
-            <Link href="/glossaire" className="inline-block mt-4 text-sm text-violet-700 hover:text-violet-900 font-semibold">
+            <Link href="/glossaire/" className="inline-block mt-4 text-sm text-violet-700 hover:text-violet-900 font-semibold">
               Voir tout le glossaire &rarr;
             </Link>
           </div>

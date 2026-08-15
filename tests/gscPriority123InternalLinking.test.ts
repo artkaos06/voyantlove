@@ -19,17 +19,17 @@ test('priority 1: hub links to voyance-amour-immediate with differentiated conte
 
   assert.match(
     hub,
-    /href="\/voyance-gratuite-amour\/voyance-amour-immediate"[^>]*>voyance amour immédiate<\/Link>/,
+    /href="\/voyance-gratuite-amour\/voyance-amour-immediate\/"[^>]*>voyance amour immédiate<\/Link>/,
     'hub prose must link to the immediate page with the "voyance amour immédiate" anchor'
   );
   assert.match(
     hub,
-    /href="\/voyance-gratuite-amour\/voyance-amour-immediate"[^>]*>voyance amour direct<\/Link>/,
+    /href="\/voyance-gratuite-amour\/voyance-amour-immediate\/"[^>]*>voyance amour direct<\/Link>/,
     'hub prose must link to the immediate page with the differentiated "voyance amour direct" anchor'
   );
 
   // Existing card-grid link into the page must still be present (not replaced).
-  assert.match(hub, /href="\/voyance-gratuite-amour\/voyance-amour-immediate"/, 'card grid link must be preserved');
+  assert.match(hub, /href="\/voyance-gratuite-amour\/voyance-amour-immediate\/"/, 'card grid link must be preserved');
 
   // Commercial plumbing / routing this task must not touch.
   assert.match(hub, /alternates: \{ canonical: 'https:\/\/www\.voyantlove\.fr\/voyance-gratuite-amour\/' \}/, 'hub canonical must be unchanged');
@@ -65,13 +65,13 @@ test('priority 2: tarot-oui-non-amour gains contextual links from the hub and th
 
   assert.match(
     hub,
-    /href="\/voyance-gratuite-amour\/tarot-oui-non-amour"[^>]*>tarot oui\/non<\/Link>/,
+    /href="\/voyance-gratuite-amour\/tarot-oui-non-amour\/"[^>]*>tarot oui\/non<\/Link>/,
     'hub method-list sentence must link "tarot oui/non" to the tarot-oui-non-amour page'
   );
 
   assert.match(
     oracle,
-    /href="\/voyance-gratuite-amour\/tarot-oui-non-amour"[^>]*>tarot oui\/non amour<\/Link>/,
+    /href="\/voyance-gratuite-amour\/tarot-oui-non-amour\/"[^>]*>tarot oui\/non amour<\/Link>/,
     'oracle page must gain a contextual link to tarot-oui-non-amour where it discusses direct answers'
   );
 

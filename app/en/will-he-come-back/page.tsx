@@ -254,7 +254,7 @@ export default function WillHeComeBackPage() {
           <p className="text-sm text-gray-600 text-center">
             Want to read more about Keen first?{' '}
             <Link
-              href="/love-psychic-services/keen-review"
+              href="/love-psychic-services/keen-review/"
               className="text-purple-700 underline decoration-purple-300 underline-offset-4 font-semibold"
             >
               Our honest 5-minute Keen review

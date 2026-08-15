@@ -20,7 +20,7 @@ const config: ContentPageConfig = {
     h1: 'Médium Amour',
     subtitle: 'La médiumnité au service de votre guidance sentimentale',
     gradient: 'from-fuchsia-700 via-purple-700 to-indigo-800',
-    backLink: { href: '/methodes-voyance', label: 'Retour aux Méthodes de Voyance' },
+    backLink: { href: '/methodes-voyance/', label: 'Retour aux Méthodes de Voyance' },
     anchors: [
       { href: '#dons', label: 'Les Dons Médiumniques', primary: true },
       { href: '#consultation', label: 'La Consultation' },
@@ -58,13 +58,13 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/methodes-voyance', label: 'Toutes les Méthodes de Voyance Amoureuse' },
-    { href: '/methodes-voyance/suis-je-medium-comment-savoir', label: 'Suis-je Médium ? Comment le Savoir' },
-    { href: '/methodes-voyance/voyance-sentimentale', label: 'Voyance Sentimentale' },
-    { href: '/methodes-voyance/boule-de-cristal-amour', label: 'Boule de Cristal Amour' },
-    { href: '/methodes-voyance/voyance-telephone-amour', label: 'Voyance par Téléphone' },
-    { href: '/glossaire/clairvoyance', label: 'Glossaire : Clairvoyance' },
-    { href: '/glossaire/channeling', label: 'Glossaire : Channeling' },
+    { href: '/methodes-voyance/', label: 'Toutes les Méthodes de Voyance Amoureuse' },
+    { href: '/methodes-voyance/suis-je-medium-comment-savoir/', label: 'Suis-je Médium ? Comment le Savoir' },
+    { href: '/methodes-voyance/voyance-sentimentale/', label: 'Voyance Sentimentale' },
+    { href: '/methodes-voyance/boule-de-cristal-amour/', label: 'Boule de Cristal Amour' },
+    { href: '/methodes-voyance/voyance-telephone-amour/', label: 'Voyance par Téléphone' },
+    { href: '/glossaire/clairvoyance/', label: 'Glossaire : Clairvoyance' },
+    { href: '/glossaire/channeling/', label: 'Glossaire : Channeling' },
   ],
 };
 
@@ -75,7 +75,7 @@ export default function MediumAmourPage() {
     <ContentPage config={config}>
         <article className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-purple-700">
           <p className="text-lg leading-relaxed mb-4">
-            Un <strong>médium</strong> se distingue des autres praticiens de <Link href="/voyance-amour" className="text-purple-700 hover:text-purple-900 underline font-medium">voyance amoureuse</Link> par la nature de sa perception : là où le tarologue interprète des cartes et l&apos;astrologue analyse un thème, le médium affirme <strong>recevoir directement</strong> des informations sur votre situation sentimentale, par clairvoyance, clairaudience ou clairsentience, sans passer par un support symbolique à décoder. En amour, cette faculté est mobilisée pour ressentir l&apos;état affectif réel d&apos;un partenaire, capter l&apos;énergie d&apos;une relation, ou recevoir un message de guidance sur une décision de cœur.
+            Un <strong>médium</strong> se distingue des autres praticiens de <Link href="/voyance-amour/" className="text-purple-700 hover:text-purple-900 underline font-medium">voyance amoureuse</Link> par la nature de sa perception : là où le tarologue interprète des cartes et l&apos;astrologue analyse un thème, le médium affirme <strong>recevoir directement</strong> des informations sur votre situation sentimentale, par clairvoyance, clairaudience ou clairsentience, sans passer par un support symbolique à décoder. En amour, cette faculté est mobilisée pour ressentir l&apos;état affectif réel d&apos;un partenaire, capter l&apos;énergie d&apos;une relation, ou recevoir un message de guidance sur une décision de cœur.
           </p>
           <p className="text-lg leading-relaxed">
             Cette guidance complète explique les différents dons médiumniques utilisés en amour, comment se déroule une consultation, ce qu&apos;un médium peut raisonnablement vous apporter, et comment cette approche se distingue des autres méthodes de voyance sentimentale.
@@ -175,7 +175,7 @@ export default function MediumAmourPage() {
                 <p>&bull; Idéal pour une analyse narrative détaillée</p>
               </div>
               <p className="text-sm text-indigo-600 mt-3">
-                <Link href="/methodes-voyance/tarologie-amoureuse" className="underline hover:text-indigo-800 font-medium">Découvrir la tarologie &rarr;</Link>
+                <Link href="/methodes-voyance/tarologie-amoureuse/" className="underline hover:text-indigo-800 font-medium">Découvrir la tarologie &rarr;</Link>
               </p>
             </div>
             <div className="bg-rose-50 rounded-lg p-5 border-2 border-rose-300">
@@ -185,12 +185,12 @@ export default function MediumAmourPage() {
                 <p>&bull; Idéal pour confirmer une intuition précise</p>
               </div>
               <p className="text-sm text-rose-600 mt-3">
-                <Link href="/methodes-voyance/pendule-amour" className="underline hover:text-rose-800 font-medium">Découvrir le pendule &rarr;</Link>
+                <Link href="/methodes-voyance/pendule-amour/" className="underline hover:text-rose-800 font-medium">Découvrir le pendule &rarr;</Link>
               </p>
             </div>
           </div>
           <div className="bg-purple-50 border-l-4 border-purple-500 p-5 rounded-lg mt-6">
-            <p className="text-gray-700"><strong>À noter :</strong> cette page présente la <strong>médiumnité</strong> comme méthode de perception. Pour choisir le <strong>canal de communication</strong> de votre consultation (téléphone, chat, mail), consultez notre guide de la <Link href="/methodes-voyance/voyance-telephone-amour" className="text-purple-700 hover:text-purple-900 underline font-medium">voyance par téléphone</Link> ou notre page <Link href="/methodes-voyance/voyance-sentimentale" className="text-purple-700 hover:text-purple-900 underline font-medium">voyance sentimentale</Link>, qui couvre l&apos;ensemble des options disponibles.</p>
+            <p className="text-gray-700"><strong>À noter :</strong> cette page présente la <strong>médiumnité</strong> comme méthode de perception. Pour choisir le <strong>canal de communication</strong> de votre consultation (téléphone, chat, mail), consultez notre guide de la <Link href="/methodes-voyance/voyance-telephone-amour/" className="text-purple-700 hover:text-purple-900 underline font-medium">voyance par téléphone</Link> ou notre page <Link href="/methodes-voyance/voyance-sentimentale/" className="text-purple-700 hover:text-purple-900 underline font-medium">voyance sentimentale</Link>, qui couvre l&apos;ensemble des options disponibles.</p>
           </div>
         </section>
 
@@ -213,7 +213,7 @@ export default function MediumAmourPage() {
             </div>
           </div>
           <div className="text-center mt-6">
-            <Link href="/consulter?ref=medium-amour" className="inline-block bg-purple-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-purple-800 transition">Consulter un Médium Vérifié →</Link>
+            <Link href="/consulter/?ref=medium-amour" className="inline-block bg-purple-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-purple-800 transition">Consulter un Médium Vérifié →</Link>
           </div>
         </section>
     </ContentPage>

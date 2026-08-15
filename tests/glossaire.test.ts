@@ -85,7 +85,7 @@ test('getGlossaryHubCards exposes exactly the live records, each with a working 
   const cards = getGlossaryHubCards();
   assert.equal(cards.length, GLOSSARY_TERMS.filter((t) => validateTermRecord(t).length === 0).length);
   for (const card of cards) {
-    assert.equal(card.href, `/glossaire/${card.slug}`);
+    assert.equal(card.href, `/glossaire/${card.slug}/`);
   }
 });
 

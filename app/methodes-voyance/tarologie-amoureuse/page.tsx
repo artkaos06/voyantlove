@@ -20,7 +20,7 @@ const config: ContentPageConfig = {
     h1: 'Tarologie Amoureuse',
     subtitle: 'L\'art de lire les cartes du tarot pour décrypter votre vie sentimentale',
     gradient: 'from-indigo-600 via-purple-600 to-violet-600',
-    backLink: { href: '/methodes-voyance', label: 'Méthodes de Voyance' },
+    backLink: { href: '/methodes-voyance/', label: 'Méthodes de Voyance' },
     anchors: [
       { href: '#consultation', label: 'Consulter un Tarologue', primary: true },
       { href: '#arcanes', label: 'Les Arcanes Clés' },
@@ -62,12 +62,12 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/methodes-voyance/tirage-tarot-amour', label: 'Tirage Tarot Amour : Guide Complet' },
-    { href: '/methodes-voyance/oracle-amour', label: 'Oracle de l\'Amour' },
-    { href: '/methodes-voyance/pendule-amour', label: 'Pendule Amour' },
-    { href: '/methodes-voyance/voyance-sentimentale', label: 'Voyance Sentimentale' },
-    { href: '/voyance-gratuite-amour/tarot-oui-non-amour', label: 'Tarot Oui/Non Amour Gratuit' },
-    { href: '/voyance-amour', label: 'Voyance Amour : Tout Savoir' },
+    { href: '/methodes-voyance/tirage-tarot-amour/', label: 'Tirage Tarot Amour : Guide Complet' },
+    { href: '/methodes-voyance/oracle-amour/', label: 'Oracle de l\'Amour' },
+    { href: '/methodes-voyance/pendule-amour/', label: 'Pendule Amour' },
+    { href: '/methodes-voyance/voyance-sentimentale/', label: 'Voyance Sentimentale' },
+    { href: '/voyance-gratuite-amour/tarot-oui-non-amour/', label: 'Tarot Oui/Non Amour Gratuit' },
+    { href: '/voyance-amour/', label: 'Voyance Amour : Tout Savoir' },
   ],
 };
 
@@ -79,7 +79,7 @@ export default function TarologieAmoureusePage() {
         <article className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-indigo-600">
           <div className="bg-indigo-50 border-l-4 border-indigo-500 p-6 rounded-lg">
             <p className="text-lg leading-relaxed">
-              La <strong>tarologie amoureuse</strong> est l&apos;art de lire les <strong>78 cartes du tarot</strong> pour décrypter les dynamiques sentimentales : sentiments réels de l&apos;autre, évolution d&apos;une relation, retour d&apos;un ex, perspectives de rencontre. C&apos;est une spécialisation au sein de la <Link href="/voyance-amour" className="text-indigo-600 hover:text-indigo-800 underline font-medium">voyance amour</Link>, où le tarologue concentre toute son expertise sur la <strong>symbolique des arcanes appliquée aux questions de cœur</strong>. Contrairement à un voyant généraliste qui utilise plusieurs outils, le tarologue spécialisé maîtrise un support unique avec une profondeur remarquable. Les 22 arcanes majeurs racontent les grands archétypes amoureux, les 56 mineurs nuancent les situations du quotidien. Cette page vous explique comment fonctionne la tarologie amoureuse, quels tirages choisir selon votre question et comment trouver un tarologue de confiance.
+              La <strong>tarologie amoureuse</strong> est l&apos;art de lire les <strong>78 cartes du tarot</strong> pour décrypter les dynamiques sentimentales : sentiments réels de l&apos;autre, évolution d&apos;une relation, retour d&apos;un ex, perspectives de rencontre. C&apos;est une spécialisation au sein de la <Link href="/voyance-amour/" className="text-indigo-600 hover:text-indigo-800 underline font-medium">voyance amour</Link>, où le tarologue concentre toute son expertise sur la <strong>symbolique des arcanes appliquée aux questions de cœur</strong>. Contrairement à un voyant généraliste qui utilise plusieurs outils, le tarologue spécialisé maîtrise un support unique avec une profondeur remarquable. Les 22 arcanes majeurs racontent les grands archétypes amoureux, les 56 mineurs nuancent les situations du quotidien. Cette page vous explique comment fonctionne la tarologie amoureuse, quels tirages choisir selon votre question et comment trouver un tarologue de confiance.
             </p>
           </div>
         </article>
@@ -138,7 +138,7 @@ export default function TarologieAmoureusePage() {
             </div>
           </div>
           <div className="bg-purple-100 border-l-4 border-purple-600 p-5 rounded-lg mt-6">
-            <p className="text-gray-700"><strong>Note importante :</strong> ces interprétations sont des repères généraux. Un <strong>tarologue spécialisé</strong> affine toujours la lecture en fonction de la position de l&apos;arcane dans le tirage, des cartes voisines et de votre situation personnelle. Pour explorer les tirages complets, voyez notre guide du <Link href="/methodes-voyance/tirage-tarot-amour" className="text-purple-700 hover:text-purple-900 underline font-medium">tirage tarot amour</Link>.</p>
+            <p className="text-gray-700"><strong>Note importante :</strong> ces interprétations sont des repères généraux. Un <strong>tarologue spécialisé</strong> affine toujours la lecture en fonction de la position de l&apos;arcane dans le tirage, des cartes voisines et de votre situation personnelle. Pour explorer les tirages complets, voyez notre guide du <Link href="/methodes-voyance/tirage-tarot-amour/" className="text-purple-700 hover:text-purple-900 underline font-medium">tirage tarot amour</Link>.</p>
           </div>
         </section>
 
@@ -160,7 +160,7 @@ export default function TarologieAmoureusePage() {
             </div>
             <div className="bg-fuchsia-50 rounded-lg p-5 border border-fuchsia-200">
               <h3 className="font-bold text-lg mb-2 text-fuchsia-700">Le Oui/Non Amour (3 cartes)</h3>
-              <p className="text-gray-700 text-sm">Réponse binaire à une question précise. Trois cartes sont tirées : si la majorité est à l&apos;endroit, la réponse penche vers le oui ; à l&apos;envers, vers le non. Idéal pour confirmer une intuition sur des questions du type « M&apos;aime-t-il ? » ou « Va-t-elle revenir ? ». Vous pouvez tester gratuitement notre <Link href="/voyance-gratuite-amour/tarot-oui-non-amour" className="text-fuchsia-700 hover:text-fuchsia-900 underline font-medium">tarot oui/non amour en ligne</Link>.</p>
+              <p className="text-gray-700 text-sm">Réponse binaire à une question précise. Trois cartes sont tirées : si la majorité est à l&apos;endroit, la réponse penche vers le oui ; à l&apos;envers, vers le non. Idéal pour confirmer une intuition sur des questions du type « M&apos;aime-t-il ? » ou « Va-t-elle revenir ? ». Vous pouvez tester gratuitement notre <Link href="/voyance-gratuite-amour/tarot-oui-non-amour/" className="text-fuchsia-700 hover:text-fuchsia-900 underline font-medium">tarot oui/non amour en ligne</Link>.</p>
             </div>
           </div>
         </section>
@@ -196,7 +196,7 @@ export default function TarologieAmoureusePage() {
             </div>
           </div>
           <div className="text-center">
-            <Link href="/consulter?ref=tarologie-amoureuse" className="inline-block bg-indigo-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-indigo-700 transition">Consulter un Tarologue Vérifié →</Link>
+            <Link href="/consulter/?ref=tarologie-amoureuse" className="inline-block bg-indigo-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-indigo-700 transition">Consulter un Tarologue Vérifié →</Link>
           </div>
         </section>
     </ContentPage>

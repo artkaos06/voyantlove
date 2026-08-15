@@ -14,7 +14,7 @@ interface InlineCTAProps {
 }
 
 export default function InlineCTA({
-  href = '/love-psychic-services/keen-review',
+  href='/love-psychic-services/keen-review/',
   children,
   className = '',
 }: InlineCTAProps) {

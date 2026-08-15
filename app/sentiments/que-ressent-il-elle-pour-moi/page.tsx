@@ -20,7 +20,7 @@ const config: ContentPageConfig = {
     h1: 'Que Ressent-il/elle pour Moi ?',
     subtitle: 'La nature exacte de ses sentiments révélée par le tarot',
     gradient: 'from-rose-500 via-pink-500 to-fuchsia-500',
-    backLink: { href: '/sentiments', label: 'Retour aux Sentiments' },
+    backLink: { href: '/sentiments/', label: 'Retour aux Sentiments' },
     anchors: [
       { href: '#nature', label: 'Tirage des Sentiments', primary: true },
       { href: '#signes', label: 'Signes Révélateurs' },
@@ -58,11 +58,11 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/sentiments', label: 'Sentiments Amoureux : Toutes nos Guidances' },
-    { href: '/sentiments/maime-t-il-elle', label: 'M\'aime-t-il/elle Vraiment ?' },
-    { href: '/sentiments/pense-t-il-elle-a-moi', label: 'Pense-t-il/elle à Moi ?' },
-    { href: '/sentiments/compatibilite-amoureuse', label: 'Notre Compatibilité Amoureuse' },
-    { href: '/sentiments/avenir-amoureux', label: 'Mon Avenir Amoureux' },
+    { href: '/sentiments/', label: 'Sentiments Amoureux : Toutes nos Guidances' },
+    { href: '/sentiments/maime-t-il-elle/', label: 'M\'aime-t-il/elle Vraiment ?' },
+    { href: '/sentiments/pense-t-il-elle-a-moi/', label: 'Pense-t-il/elle à Moi ?' },
+    { href: '/sentiments/compatibilite-amoureuse/', label: 'Notre Compatibilité Amoureuse' },
+    { href: '/sentiments/avenir-amoureux/', label: 'Mon Avenir Amoureux' },
   ],
 };
 
@@ -80,7 +80,7 @@ export default function QueRessentIlEllePourMoiPage() {
               Savoir qu&apos;une personne pense à vous ou vous aime ne suffit pas toujours : la vraie question est souvent <strong>&laquo;que ressent-il/elle pour moi&raquo;</strong> exactement. Entre <strong>amour véritable</strong>, simple <strong>attachement</strong>, <strong>désir passager</strong> ou <strong>indifférence polie</strong>, la nuance change tout pour la suite de votre relation. Le <strong>tarot des émotions</strong> permet de cartographier précisément la nature de ce que ressent l&apos;autre, au-delà des mots et des comportements parfois trompeurs.
             </p>
             <p className="text-lg leading-relaxed mb-4">
-              Une <strong>lecture énergétique</strong> distingue les émotions superficielles des sentiments profondément ancrés. Pour comprendre si ces sentiments sont réciproques ou si vous projetez vos propres attentes, notre guidance sur <Link href="/sentiments/maime-t-il-elle" className="text-rose-600 hover:text-rose-800 underline font-medium">m&apos;aime-t-il/elle vraiment</Link> complète parfaitement cette analyse.
+              Une <strong>lecture énergétique</strong> distingue les émotions superficielles des sentiments profondément ancrés. Pour comprendre si ces sentiments sont réciproques ou si vous projetez vos propres attentes, notre guidance sur <Link href="/sentiments/maime-t-il-elle/" className="text-rose-600 hover:text-rose-800 underline font-medium">m&apos;aime-t-il/elle vraiment</Link> complète parfaitement cette analyse.
             </p>
             <p className="text-lg leading-relaxed">
               Que vous soyez au début d&apos;une relation ambiguë ou que vous cherchiez à comprendre un silence inexpliqué, la <strong>voyance sentimentale</strong> et le <strong>tirage tarot</strong> offrent une lecture claire de ce qui se joue dans le cœur de cette personne, entre <strong>confusion émotionnelle</strong> et vérité cachée.
@@ -174,7 +174,7 @@ export default function QueRessentIlEllePourMoiPage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">{'⚖️'} Attachement ou Amour Véritable : Comment Distinguer</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">L&apos;amour veritable pousse a faire grandir l&apos;autre tandis que l&apos;attachement repose sur le confort et la peur de la solitude. Le tarot distingue ces deux energies grace a des cartes specifiques.</p>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Confondre <strong>attachement</strong> et <strong>amour véritable</strong> est une erreur fréquente qui entretient des relations déséquilibrées. L&apos;amour sincère se nourrit de l&apos;épanouissement mutuel, tandis que l&apos;attachement se nourrit souvent de la peur : peur de perdre l&apos;autre, peur de rester seul(e), peur du changement. Pour approfondir cette distinction dans votre propre relation, consultez notre guide sur la <Link href="/sentiments/compatibilite-amoureuse" className="text-rose-600 hover:text-rose-800 underline font-medium">compatibilité amoureuse</Link>.
+            Confondre <strong>attachement</strong> et <strong>amour véritable</strong> est une erreur fréquente qui entretient des relations déséquilibrées. L&apos;amour sincère se nourrit de l&apos;épanouissement mutuel, tandis que l&apos;attachement se nourrit souvent de la peur : peur de perdre l&apos;autre, peur de rester seul(e), peur du changement. Pour approfondir cette distinction dans votre propre relation, consultez notre guide sur la <Link href="/sentiments/compatibilite-amoureuse/" className="text-rose-600 hover:text-rose-800 underline font-medium">compatibilité amoureuse</Link>.
           </p>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-white rounded-lg p-6 border-l-4 border-green-500">
@@ -203,7 +203,7 @@ export default function QueRessentIlEllePourMoiPage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">{'\u{1F441}️'} Les Signes Comportementaux qui Trahissent ses Sentiments</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Regard soutenu, disponibilite spontanee, memoire des details et langage corporel ouvert sont des indices comportementaux fiables pour comprendre la nature reelle de ses sentiments.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Au-delà du tarot, certains comportements observables donnent des indices précieux sur la nature de ses <strong>sentiments réels</strong>. Ces <Link href="/sentiments/signes-il-elle-maime" className="text-rose-600 hover:text-rose-800 underline font-medium">signes concrets d&apos;amour</Link> permettent de croiser l&apos;analyse énergétique avec des observations tangibles.
+            Au-delà du tarot, certains comportements observables donnent des indices précieux sur la nature de ses <strong>sentiments réels</strong>. Ces <Link href="/sentiments/signes-il-elle-maime/" className="text-rose-600 hover:text-rose-800 underline font-medium">signes concrets d&apos;amour</Link> permettent de croiser l&apos;analyse énergétique avec des observations tangibles.
           </p>
           <div className="space-y-4">
             <div className="bg-rose-50 border-l-4 border-rose-500 p-5 rounded">
@@ -220,7 +220,7 @@ export default function QueRessentIlEllePourMoiPage() {
             </div>
           </div>
           <div className="mt-6 bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded">
-            <p className="text-gray-700"><strong>{'⚠️'} Attention :</strong> Ces signes doivent être observés dans la durée, pas isolément. Une seule attention ponctuelle ne suffit pas à conclure sur la nature de ses <strong>sentiments profonds</strong>. Pour savoir si cette énergie évoluera vers un engagement, découvrez notre guidance sur l&apos;<Link href="/sentiments/avenir-amoureux" className="text-rose-600 hover:text-rose-800 underline font-medium">avenir de votre relation</Link>.</p>
+            <p className="text-gray-700"><strong>{'⚠️'} Attention :</strong> Ces signes doivent être observés dans la durée, pas isolément. Une seule attention ponctuelle ne suffit pas à conclure sur la nature de ses <strong>sentiments profonds</strong>. Pour savoir si cette énergie évoluera vers un engagement, découvrez notre guidance sur l&apos;<Link href="/sentiments/avenir-amoureux/" className="text-rose-600 hover:text-rose-800 underline font-medium">avenir de votre relation</Link>.</p>
           </div>
         </section>
 

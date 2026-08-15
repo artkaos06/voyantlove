@@ -20,7 +20,7 @@ const config: ContentPageConfig = {
     h1: 'Voyance par Chat Amour : Consultation en Ligne',
     subtitle: 'Consultez un voyant en ligne par messagerie, en toute discrétion',
     gradient: 'from-indigo-500 via-violet-600 to-indigo-700',
-    backLink: { href: '/methodes-voyance', label: 'Méthodes de Voyance' },
+    backLink: { href: '/methodes-voyance/', label: 'Méthodes de Voyance' },
     anchors: [
       { href: '#consultation', label: 'Démarrer un Chat', primary: true },
     ],
@@ -53,9 +53,9 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/methodes-voyance/voyance-telephone-amour', label: 'Voyance par Téléphone Amour' },
-    { href: '/methodes-voyance/voyance-sentimentale', label: 'Voyance Sentimentale' },
-    { href: '/methodes-voyance/tirage-tarot-amour', label: 'Tirage Tarot Amour' },
+    { href: '/methodes-voyance/voyance-telephone-amour/', label: 'Voyance par Téléphone Amour' },
+    { href: '/methodes-voyance/voyance-sentimentale/', label: 'Voyance Sentimentale' },
+    { href: '/methodes-voyance/tirage-tarot-amour/', label: 'Tirage Tarot Amour' },
   ],
 };
 
@@ -87,7 +87,7 @@ export default function VoyanceParChatAmourPage() {
           <div className="space-y-4">
             <div className="bg-indigo-50 border-l-4 border-indigo-500 p-6 rounded-lg">
               <h3 className="font-bold text-lg mb-2 text-indigo-700">Discrétion Absolue</h3>
-              <p className="text-gray-700">La <strong>voyance par chat</strong> est le format le plus discret qui existe. Pas besoin de s&apos;isoler pour téléphoner, pas de risque d&apos;être entendu(e) par vos proches ou vos collègues. Vous pouvez consulter depuis n&apos;importe où, à n&apos;importe quel moment, en toute <strong>confidentialité</strong>. Cette discrétion est particulièrement précieuse quand vos questions portent sur des sujets sensibles comme l&apos;<Link href="/crise-couple/infidelite-couple" className="text-indigo-600 hover:text-indigo-800 underline font-medium">infidélité</Link> ou des sentiments que vous n&apos;osez pas exprimer à voix haute.</p>
+              <p className="text-gray-700">La <strong>voyance par chat</strong> est le format le plus discret qui existe. Pas besoin de s&apos;isoler pour téléphoner, pas de risque d&apos;être entendu(e) par vos proches ou vos collègues. Vous pouvez consulter depuis n&apos;importe où, à n&apos;importe quel moment, en toute <strong>confidentialité</strong>. Cette discrétion est particulièrement précieuse quand vos questions portent sur des sujets sensibles comme l&apos;<Link href="/crise-couple/infidelite-couple/" className="text-indigo-600 hover:text-indigo-800 underline font-medium">infidélité</Link> ou des sentiments que vous n&apos;osez pas exprimer à voix haute.</p>
             </div>
             <div className="bg-violet-50 border-l-4 border-violet-500 p-6 rounded-lg">
               <h3 className="font-bold text-lg mb-2 text-violet-700">Trace Écrite Précieuse</h3>
@@ -133,7 +133,7 @@ export default function VoyanceParChatAmourPage() {
               <div className="text-3xl font-bold text-indigo-600">4</div>
               <div>
                 <h3 className="font-bold text-lg mb-2">Les Échanges Approfondis</h3>
-                <p className="text-gray-700">C&apos;est le coeur de la <strong>consultation</strong>. Vous posez vos questions complémentaires, demandez des précisions, explorez les aspects qui vous préoccupent le plus. Le <strong>voyant par chat</strong> peut tirer des cartes supplémentaires pour approfondir un point spécifique. C&apos;est aussi le moment où il peut vous orienter vers des ressources complémentaires, comme notre guide sur la <Link href="/methodes-voyance/voyance-sentimentale" className="text-indigo-600 hover:text-indigo-800 underline font-medium">voyance sentimentale</Link>.</p>
+                <p className="text-gray-700">C&apos;est le coeur de la <strong>consultation</strong>. Vous posez vos questions complémentaires, demandez des précisions, explorez les aspects qui vous préoccupent le plus. Le <strong>voyant par chat</strong> peut tirer des cartes supplémentaires pour approfondir un point spécifique. C&apos;est aussi le moment où il peut vous orienter vers des ressources complémentaires, comme notre guide sur la <Link href="/methodes-voyance/voyance-sentimentale/" className="text-indigo-600 hover:text-indigo-800 underline font-medium">voyance sentimentale</Link>.</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
@@ -196,7 +196,7 @@ export default function VoyanceParChatAmourPage() {
             </table>
           </div>
           <p className="text-gray-700 leading-relaxed">
-            Le choix entre <strong>voyance par chat</strong>, <Link href="/methodes-voyance/voyance-telephone-amour" className="text-indigo-600 hover:text-indigo-800 underline font-medium">voyance par téléphone</Link> et cabinet dépend de votre personnalité et de vos circonstances. Les personnes introverties ou celles qui ont du mal à exprimer leurs émotions à l&apos;oral préfèrent souvent le chat. Celles qui ont besoin d&apos;entendre une voix rassurante optent pour le téléphone. Les deux formats sont complémentaires et offrent une <strong>voyance amoureuse</strong> de qualité équivalente.
+            Le choix entre <strong>voyance par chat</strong>, <Link href="/methodes-voyance/voyance-telephone-amour/" className="text-indigo-600 hover:text-indigo-800 underline font-medium">voyance par téléphone</Link> et cabinet dépend de votre personnalité et de vos circonstances. Les personnes introverties ou celles qui ont du mal à exprimer leurs émotions à l&apos;oral préfèrent souvent le chat. Celles qui ont besoin d&apos;entendre une voix rassurante optent pour le téléphone. Les deux formats sont complémentaires et offrent une <strong>voyance amoureuse</strong> de qualité équivalente.
           </p>
         </section>
 

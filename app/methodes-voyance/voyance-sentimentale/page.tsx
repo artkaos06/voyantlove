@@ -20,7 +20,7 @@ const config: ContentPageConfig = {
     h1: 'Voyance Sentimentale',
     subtitle: 'Guidance amoureuse spécialisée pour éclairer toutes vos questions du cœur',
     gradient: 'from-indigo-600 via-purple-600 to-pink-500',
-    backLink: { href: '/methodes-voyance', label: 'Retour aux Méthodes de Voyance' },
+    backLink: { href: '/methodes-voyance/', label: 'Retour aux Méthodes de Voyance' },
     anchors: [
       { href: '#consultation', label: 'Consulter un Voyant', primary: true },
       { href: '#methodes', label: 'Les Méthodes' },
@@ -70,11 +70,11 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/methodes-voyance', label: 'Méthodes de Voyance Amoureuse : Guide Complet' },
-    { href: '/methodes-voyance/tirage-tarot-amour', label: 'Tirage Tarot Amour : Analyse Sentimentale' },
-    { href: '/methodes-voyance/voyance-telephone-amour', label: 'Voyance par Téléphone Amour' },
-    { href: '/voyance-gratuite-amour', label: 'Voyance Gratuite Amour : Tirages et Guidance' },
-    { href: '/sentiments', label: 'Sentiments & Avenir Amoureux' },
+    { href: '/methodes-voyance/', label: 'Méthodes de Voyance Amoureuse : Guide Complet' },
+    { href: '/methodes-voyance/tirage-tarot-amour/', label: 'Tirage Tarot Amour : Analyse Sentimentale' },
+    { href: '/methodes-voyance/voyance-telephone-amour/', label: 'Voyance par Téléphone Amour' },
+    { href: '/voyance-gratuite-amour/', label: 'Voyance Gratuite Amour : Tirages et Guidance' },
+    { href: '/sentiments/', label: 'Sentiments & Avenir Amoureux' },
   ],
 };
 
@@ -92,7 +92,7 @@ export default function VoyanceSentimentalePage() {
               Ce qui distingue la <strong>voyance sentimentale</strong> de la voyance g&eacute;n&eacute;raliste est la profondeur de l&apos;analyse &eacute;motionnelle. Un <strong>voyant sp&eacute;cialis&eacute; amour</strong> capte les <strong>&eacute;nergies sentimentales</strong> avec une sensibilit&eacute; accrue, identifie les <strong>blocages relationnels</strong> et r&eacute;v&egrave;le les <strong>sentiments cach&eacute;s</strong> que ni vous ni votre partenaire n&apos;osez exprimer. Cette approche cibl&eacute;e permet d&apos;obtenir des r&eacute;ponses pr&eacute;cises l&agrave; o&ugrave; un voyant g&eacute;n&eacute;raliste resterait en surface.
             </p>
             <p className="text-lg leading-relaxed">
-              Que vous souhaitiez savoir si <Link href="/sentiments/maime-t-il-elle" className="text-purple-600 hover:text-purple-800 underline font-medium">il ou elle vous aime</Link>, comprendre pourquoi votre couple traverse une crise, ou anticiper l&apos;arriv&eacute;e d&apos;une <Link href="/nouvelle-rencontre/quand-rencontre-amour" className="text-purple-600 hover:text-purple-800 underline font-medium">nouvelle rencontre amoureuse</Link>, la <strong>consultation sentimentale</strong> vous apporte clart&eacute;, apaisement et direction concr&egrave;te pour prendre les meilleures d&eacute;cisions de votre vie affective.
+              Que vous souhaitiez savoir si <Link href="/sentiments/maime-t-il-elle/" className="text-purple-600 hover:text-purple-800 underline font-medium">il ou elle vous aime</Link>, comprendre pourquoi votre couple traverse une crise, ou anticiper l&apos;arriv&eacute;e d&apos;une <Link href="/nouvelle-rencontre/quand-rencontre-amour/" className="text-purple-600 hover:text-purple-800 underline font-medium">nouvelle rencontre amoureuse</Link>, la <strong>consultation sentimentale</strong> vous apporte clart&eacute;, apaisement et direction concr&egrave;te pour prendre les meilleures d&eacute;cisions de votre vie affective.
             </p>
           </div>
         </article>
@@ -118,35 +118,35 @@ export default function VoyanceSentimentalePage() {
             <div className="bg-pink-50 rounded-lg p-5 border-l-4 border-pink-500">
               <h3 className="font-bold text-lg mb-2 text-pink-700">Reconqu&ecirc;te Amoureuse</h3>
               <p className="text-gray-700 text-sm">
-                La <strong>voyance sentimentale</strong> &eacute;claire les chances de <Link href="/reconquete" className="text-purple-600 hover:text-purple-800 underline font-medium">reconqu&ecirc;te amoureuse</Link> avec pr&eacute;cision. Le voyant analyse l&apos;&eacute;tat &eacute;motionnel de votre ex, identifie le timing optimal pour agir, et r&eacute;v&egrave;le les obstacles invisibles qui freinent le retour. Les tirages sentimentaux montrent si les <strong>&eacute;nergies</strong> sont favorables &agrave; une r&eacute;conciliation ou s&apos;il est temps de tourner la page.
+                La <strong>voyance sentimentale</strong> &eacute;claire les chances de <Link href="/reconquete/" className="text-purple-600 hover:text-purple-800 underline font-medium">reconqu&ecirc;te amoureuse</Link> avec pr&eacute;cision. Le voyant analyse l&apos;&eacute;tat &eacute;motionnel de votre ex, identifie le timing optimal pour agir, et r&eacute;v&egrave;le les obstacles invisibles qui freinent le retour. Les tirages sentimentaux montrent si les <strong>&eacute;nergies</strong> sont favorables &agrave; une r&eacute;conciliation ou s&apos;il est temps de tourner la page.
               </p>
             </div>
 
             <div className="bg-blue-50 rounded-lg p-5 border-l-4 border-blue-500">
               <h3 className="font-bold text-lg mb-2 text-blue-700">Rupture et Deuil Amoureux</h3>
               <p className="text-gray-700 text-sm">
-                Apr&egrave;s une <Link href="/rupture" className="text-purple-600 hover:text-purple-800 underline font-medium">rupture amoureuse</Link>, la <strong>consultation sentimentale</strong> aide &agrave; comprendre les v&eacute;ritables raisons de la s&eacute;paration, &agrave; identifier les le&ccedil;ons &agrave; tirer et &agrave; anticiper le processus de gu&eacute;rison. Le <strong>voyant</strong> accompagne le <strong>deuil amoureux</strong> en r&eacute;v&eacute;lant les &eacute;nergies de renouveau qui se pr&eacute;parent dans votre avenir sentimental.
+                Apr&egrave;s une <Link href="/rupture/" className="text-purple-600 hover:text-purple-800 underline font-medium">rupture amoureuse</Link>, la <strong>consultation sentimentale</strong> aide &agrave; comprendre les v&eacute;ritables raisons de la s&eacute;paration, &agrave; identifier les le&ccedil;ons &agrave; tirer et &agrave; anticiper le processus de gu&eacute;rison. Le <strong>voyant</strong> accompagne le <strong>deuil amoureux</strong> en r&eacute;v&eacute;lant les &eacute;nergies de renouveau qui se pr&eacute;parent dans votre avenir sentimental.
               </p>
             </div>
 
             <div className="bg-cyan-50 rounded-lg p-5 border-l-4 border-cyan-500">
               <h3 className="font-bold text-lg mb-2 text-cyan-700">Nouvelle Rencontre</h3>
               <p className="text-gray-700 text-sm">
-                Pour les c&eacute;libataires, la <strong>voyance sentimentale</strong> r&eacute;v&egrave;le les p&eacute;riodes favorables aux <Link href="/nouvelle-rencontre" className="text-purple-600 hover:text-purple-800 underline font-medium">nouvelles rencontres</Link>, le profil &eacute;nerg&eacute;tique de votre futur partenaire et les blocages int&eacute;rieurs qui freinent l&apos;arriv&eacute;e de l&apos;amour. L&apos;<strong>astrologie amoureuse</strong> compl&egrave;te cette analyse en identifiant les transits plan&eacute;taires propices.
+                Pour les c&eacute;libataires, la <strong>voyance sentimentale</strong> r&eacute;v&egrave;le les p&eacute;riodes favorables aux <Link href="/nouvelle-rencontre/" className="text-purple-600 hover:text-purple-800 underline font-medium">nouvelles rencontres</Link>, le profil &eacute;nerg&eacute;tique de votre futur partenaire et les blocages int&eacute;rieurs qui freinent l&apos;arriv&eacute;e de l&apos;amour. L&apos;<strong>astrologie amoureuse</strong> compl&egrave;te cette analyse en identifiant les transits plan&eacute;taires propices.
               </p>
             </div>
 
             <div className="bg-orange-50 rounded-lg p-5 border-l-4 border-orange-500">
               <h3 className="font-bold text-lg mb-2 text-orange-700">Crise de Couple</h3>
               <p className="text-gray-700 text-sm">
-                Infid&eacute;lit&eacute;, jalousie, <Link href="/crise-couple/problemes-communication-couple" className="text-purple-600 hover:text-purple-800 underline font-medium">probl&egrave;mes de communication</Link>, perte de d&eacute;sir : la <strong>voyance sentimentale</strong> identifie la source profonde de la <Link href="/crise-couple" className="text-purple-600 hover:text-purple-800 underline font-medium">crise de couple</Link> et r&eacute;v&egrave;le les actions concr&egrave;tes pour la surmonter. Le <strong>tirage de couple</strong> montre les dynamiques invisibles entre les deux partenaires.
+                Infid&eacute;lit&eacute;, jalousie, <Link href="/crise-couple/problemes-communication-couple/" className="text-purple-600 hover:text-purple-800 underline font-medium">probl&egrave;mes de communication</Link>, perte de d&eacute;sir : la <strong>voyance sentimentale</strong> identifie la source profonde de la <Link href="/crise-couple/" className="text-purple-600 hover:text-purple-800 underline font-medium">crise de couple</Link> et r&eacute;v&egrave;le les actions concr&egrave;tes pour la surmonter. Le <strong>tirage de couple</strong> montre les dynamiques invisibles entre les deux partenaires.
               </p>
             </div>
 
             <div className="bg-red-50 rounded-lg p-5 border-l-4 border-red-500">
               <h3 className="font-bold text-lg mb-2 text-red-700">Compatibilit&eacute; Amoureuse</h3>
               <p className="text-gray-700 text-sm">
-                La <strong>voyance sentimentale</strong> analyse la <Link href="/sentiments/compatibilite-amoureuse" className="text-purple-600 hover:text-purple-800 underline font-medium">compatibilit&eacute; amoureuse</Link> entre deux personnes gr&acirc;ce &agrave; l&apos;&eacute;tude des &eacute;nergies respectives, des th&egrave;mes astraux et des dynamiques relationnelles. Cette analyse r&eacute;v&egrave;le les affinit&eacute;s naturelles, les zones de tension potentielles et le potentiel d&apos;&eacute;volution du couple &agrave; long terme.
+                La <strong>voyance sentimentale</strong> analyse la <Link href="/sentiments/compatibilite-amoureuse/" className="text-purple-600 hover:text-purple-800 underline font-medium">compatibilit&eacute; amoureuse</Link> entre deux personnes gr&acirc;ce &agrave; l&apos;&eacute;tude des &eacute;nergies respectives, des th&egrave;mes astraux et des dynamiques relationnelles. Cette analyse r&eacute;v&egrave;le les affinit&eacute;s naturelles, les zones de tension potentielles et le potentiel d&apos;&eacute;volution du couple &agrave; long terme.
               </p>
             </div>
           </div>
@@ -164,7 +164,7 @@ export default function VoyanceSentimentalePage() {
             <div className="bg-white rounded-lg p-5 border-l-4 border-indigo-500">
               <h3 className="font-bold text-lg mb-2 text-indigo-700">Le Tarot Amoureux</h3>
               <p className="text-gray-700 text-sm mb-2">
-                Le <Link href="/methodes-voyance/tirage-tarot-amour" className="text-purple-600 hover:text-purple-800 underline font-medium">tarot amoureux</Link> est l&apos;outil le plus complet de la <strong>voyance sentimentale</strong>. Les 78 <strong>arcanes</strong> du <strong>Tarot de Marseille</strong> offrent une palette nuanc&eacute;e pour analyser chaque facette de votre <strong>situation amoureuse</strong>. Le tirage en croix sentimental explore la dynamique actuelle, les obstacles, les influences ext&eacute;rieures et l&apos;&eacute;volution probable de votre relation. Le <Link href="/voyance-gratuite-amour/tarot-oui-non-amour" className="text-purple-600 hover:text-purple-800 underline font-medium">tirage oui/non amour</Link> apporte une r&eacute;ponse synth&eacute;tique aux questions binaires.
+                Le <Link href="/methodes-voyance/tirage-tarot-amour/" className="text-purple-600 hover:text-purple-800 underline font-medium">tarot amoureux</Link> est l&apos;outil le plus complet de la <strong>voyance sentimentale</strong>. Les 78 <strong>arcanes</strong> du <strong>Tarot de Marseille</strong> offrent une palette nuanc&eacute;e pour analyser chaque facette de votre <strong>situation amoureuse</strong>. Le tirage en croix sentimental explore la dynamique actuelle, les obstacles, les influences ext&eacute;rieures et l&apos;&eacute;volution probable de votre relation. Le <Link href="/voyance-gratuite-amour/tarot-oui-non-amour/" className="text-purple-600 hover:text-purple-800 underline font-medium">tirage oui/non amour</Link> apporte une r&eacute;ponse synth&eacute;tique aux questions binaires.
               </p>
               <p className="text-gray-700 text-sm font-semibold">Id&eacute;al pour : analyse d&eacute;taill&eacute;e des sentiments, &eacute;volution de la relation, timing.</p>
             </div>
@@ -172,7 +172,7 @@ export default function VoyanceSentimentalePage() {
             <div className="bg-white rounded-lg p-5 border-l-4 border-purple-500">
               <h3 className="font-bold text-lg mb-2 text-purple-700">La Clairvoyance Pure</h3>
               <p className="text-gray-700 text-sm mb-2">
-                La <strong>clairvoyance</strong> est la capacit&eacute; du <strong>voyant</strong> &agrave; percevoir les <strong>&eacute;nergies sentimentales</strong> sans support physique. Par la connexion intuitive &agrave; votre vibration &eacute;motionnelle, le voyant clairvoyant capte des images, des ressentis et des messages li&eacute;s &agrave; votre <strong>situation amoureuse</strong>. Cette m&eacute;thode est particuli&egrave;rement efficace pour les questions urgentes o&ugrave; une r&eacute;ponse imm&eacute;diate est n&eacute;cessaire, notamment en <Link href="/methodes-voyance/voyance-telephone-amour" className="text-purple-600 hover:text-purple-800 underline font-medium">voyance par t&eacute;l&eacute;phone</Link>.
+                La <strong>clairvoyance</strong> est la capacit&eacute; du <strong>voyant</strong> &agrave; percevoir les <strong>&eacute;nergies sentimentales</strong> sans support physique. Par la connexion intuitive &agrave; votre vibration &eacute;motionnelle, le voyant clairvoyant capte des images, des ressentis et des messages li&eacute;s &agrave; votre <strong>situation amoureuse</strong>. Cette m&eacute;thode est particuli&egrave;rement efficace pour les questions urgentes o&ugrave; une r&eacute;ponse imm&eacute;diate est n&eacute;cessaire, notamment en <Link href="/methodes-voyance/voyance-telephone-amour/" className="text-purple-600 hover:text-purple-800 underline font-medium">voyance par t&eacute;l&eacute;phone</Link>.
               </p>
               <p className="text-gray-700 text-sm font-semibold">Id&eacute;al pour : questions urgentes, ressentis imm&eacute;diats, v&eacute;rification d&apos;intuitions.</p>
             </div>
@@ -180,7 +180,7 @@ export default function VoyanceSentimentalePage() {
             <div className="bg-white rounded-lg p-5 border-l-4 border-pink-500">
               <h3 className="font-bold text-lg mb-2 text-pink-700">L&apos;Astrologie Amoureuse</h3>
               <p className="text-gray-700 text-sm mb-2">
-                L&apos;<Link href="/methodes-voyance/astrologie-amoureuse" className="text-purple-600 hover:text-purple-800 underline font-medium">astrologie amoureuse</Link> analyse la <strong>compatibilit&eacute;</strong> entre deux th&egrave;mes astraux par la synastrie. La position de V&eacute;nus r&eacute;v&egrave;le la mani&egrave;re d&apos;aimer, Mars l&apos;attraction physique, et la Lune les besoins &eacute;motionnels profonds. Les transits plan&eacute;taires identifient les p&eacute;riodes favorables aux rencontres, aux r&eacute;conciliations et aux engagements. Cette m&eacute;thode de <strong>voyance sentimentale</strong> excelle pour la vision &agrave; long terme.
+                L&apos;<Link href="/methodes-voyance/astrologie-amoureuse/" className="text-purple-600 hover:text-purple-800 underline font-medium">astrologie amoureuse</Link> analyse la <strong>compatibilit&eacute;</strong> entre deux th&egrave;mes astraux par la synastrie. La position de V&eacute;nus r&eacute;v&egrave;le la mani&egrave;re d&apos;aimer, Mars l&apos;attraction physique, et la Lune les besoins &eacute;motionnels profonds. Les transits plan&eacute;taires identifient les p&eacute;riodes favorables aux rencontres, aux r&eacute;conciliations et aux engagements. Cette m&eacute;thode de <strong>voyance sentimentale</strong> excelle pour la vision &agrave; long terme.
               </p>
               <p className="text-gray-700 text-sm font-semibold">Id&eacute;al pour : compatibilit&eacute;, timing des rencontres, vision &agrave; long terme.</p>
             </div>
@@ -188,7 +188,7 @@ export default function VoyanceSentimentalePage() {
             <div className="bg-white rounded-lg p-5 border-l-4 border-rose-500">
               <h3 className="font-bold text-lg mb-2 text-rose-700">L&apos;Oracle de l&apos;Amour</h3>
               <p className="text-gray-700 text-sm mb-2">
-                L&apos;<Link href="/methodes-voyance/oracle-amour" className="text-purple-600 hover:text-purple-800 underline font-medium">oracle amour</Link> d&eacute;livre des messages directs et intuitifs sur votre <strong>situation sentimentale</strong>. Plus libre et accessible que le <strong>tarot</strong>, l&apos;oracle offre une <strong>guidance</strong> imm&eacute;diate sous forme de messages inspir&eacute;s, de symboles et de conseils. Chaque carte porte un message unique qui &eacute;claire un aspect pr&eacute;cis de votre questionnement amoureux. C&apos;est le support id&eacute;al pour une premi&egrave;re <strong>consultation de voyance sentimentale</strong>.
+                L&apos;<Link href="/methodes-voyance/oracle-amour/" className="text-purple-600 hover:text-purple-800 underline font-medium">oracle amour</Link> d&eacute;livre des messages directs et intuitifs sur votre <strong>situation sentimentale</strong>. Plus libre et accessible que le <strong>tarot</strong>, l&apos;oracle offre une <strong>guidance</strong> imm&eacute;diate sous forme de messages inspir&eacute;s, de symboles et de conseils. Chaque carte porte un message unique qui &eacute;claire un aspect pr&eacute;cis de votre questionnement amoureux. C&apos;est le support id&eacute;al pour une premi&egrave;re <strong>consultation de voyance sentimentale</strong>.
               </p>
               <p className="text-gray-700 text-sm font-semibold">Id&eacute;al pour : premi&egrave;re consultation, messages directs, guidance intuitive.</p>
             </div>
@@ -248,7 +248,7 @@ export default function VoyanceSentimentalePage() {
             <div className="bg-white rounded-lg p-5 border-l-4 border-green-500">
               <h3 className="font-bold text-lg mb-2 text-green-700">Tirages de Tarot Gratuits en Ligne</h3>
               <p className="text-gray-700 text-sm">
-                Les <Link href="/voyance-gratuite-amour/tarot-amour-gratuit" className="text-purple-600 hover:text-purple-800 underline font-medium">tirages de tarot amour gratuits</Link> offrent une premi&egrave;re r&eacute;ponse &agrave; vos questions sentimentales. Le <Link href="/voyance-gratuite-amour/tarot-oui-non-amour" className="text-purple-600 hover:text-purple-800 underline font-medium">tarot oui/non amour</Link> r&eacute;pond aux questions binaires, tandis que les tirages plus d&eacute;taill&eacute;s explorent les nuances de votre situation. Ces outils gratuits constituent un excellent point d&apos;entr&eacute;e dans la <strong>voyance sentimentale</strong>.
+                Les <Link href="/voyance-gratuite-amour/tarot-amour-gratuit/" className="text-purple-600 hover:text-purple-800 underline font-medium">tirages de tarot amour gratuits</Link> offrent une premi&egrave;re r&eacute;ponse &agrave; vos questions sentimentales. Le <Link href="/voyance-gratuite-amour/tarot-oui-non-amour/" className="text-purple-600 hover:text-purple-800 underline font-medium">tarot oui/non amour</Link> r&eacute;pond aux questions binaires, tandis que les tirages plus d&eacute;taill&eacute;s explorent les nuances de votre situation. Ces outils gratuits constituent un excellent point d&apos;entr&eacute;e dans la <strong>voyance sentimentale</strong>.
               </p>
             </div>
 
@@ -262,7 +262,7 @@ export default function VoyanceSentimentalePage() {
             <div className="bg-white rounded-lg p-5 border-l-4 border-teal-500">
               <h3 className="font-bold text-lg mb-2 text-teal-700">Oracles et Horoscopes Amoureux</h3>
               <p className="text-gray-700 text-sm">
-                Les <Link href="/voyance-gratuite-amour/oracle-gratuit-amour" className="text-purple-600 hover:text-purple-800 underline font-medium">oracles gratuits amour</Link> et les <Link href="/voyance-gratuite-amour/horoscope-amour-2026" className="text-purple-600 hover:text-purple-800 underline font-medium">horoscopes amoureux</Link> compl&egrave;tent l&apos;offre de <strong>voyance sentimentale gratuite</strong>. Ces outils d&eacute;livrent des messages inspir&eacute;s et des tendances g&eacute;n&eacute;rales qui &eacute;clairent votre parcours amoureux au quotidien.
+                Les <Link href="/voyance-gratuite-amour/oracle-gratuit-amour/" className="text-purple-600 hover:text-purple-800 underline font-medium">oracles gratuits amour</Link> et les <Link href="/voyance-gratuite-amour/horoscope-amour-2026/" className="text-purple-600 hover:text-purple-800 underline font-medium">horoscopes amoureux</Link> compl&egrave;tent l&apos;offre de <strong>voyance sentimentale gratuite</strong>. Ces outils d&eacute;livrent des messages inspir&eacute;s et des tendances g&eacute;n&eacute;rales qui &eacute;clairent votre parcours amoureux au quotidien.
               </p>
             </div>
           </div>
@@ -281,7 +281,7 @@ export default function VoyanceSentimentalePage() {
               <div className="text-2xl">💔</div>
               <div>
                 <h3 className="font-bold text-gray-800 mb-1">Apr&egrave;s une Rupture Douloureuse</h3>
-                <p className="text-gray-700 text-sm">Comprendre les raisons profondes, savoir si votre ex reviendra, et trouver la force de traverser le <Link href="/rupture/chagrin-damour" className="text-purple-600 hover:text-purple-800 underline font-medium">chagrin d&apos;amour</Link>.</p>
+                <p className="text-gray-700 text-sm">Comprendre les raisons profondes, savoir si votre ex reviendra, et trouver la force de traverser le <Link href="/rupture/chagrin-damour/" className="text-purple-600 hover:text-purple-800 underline font-medium">chagrin d&apos;amour</Link>.</p>
               </div>
             </div>
 

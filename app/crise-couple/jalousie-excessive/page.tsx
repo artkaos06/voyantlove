@@ -20,7 +20,7 @@ const config: ContentPageConfig = {
     h1: 'Jalousie Excessive dans le Couple',
     subtitle: 'Comprendre les causes, reconnaître les signes et trouver des solutions durables',
     gradient: 'from-red-500 via-orange-500 to-amber-500',
-    backLink: { href: '/crise-couple', label: 'Retour aux Crises de Couple' },
+    backLink: { href: '/crise-couple/', label: 'Retour aux Crises de Couple' },
     anchors: [
       { href: '#causes', label: 'Identifier les Causes', primary: true },
       { href: '#solutions', label: 'Trouver des Solutions' },
@@ -62,11 +62,11 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/crise-couple', label: 'Crise de Couple : Toutes nos Solutions' },
-    { href: '/crise-couple/problemes-communication-couple', label: 'Problèmes de Communication dans le Couple' },
-    { href: '/crise-couple/infidelite-couple', label: 'Infidélité dans le Couple' },
-    { href: '/sentiments/maime-t-il-elle', label: 'M\'aime-t-il/elle Vraiment ?' },
-    { href: '/reconquete/ex-revient-silence-radio', label: 'Ex qui Revient après Silence Radio' },
+    { href: '/crise-couple/', label: 'Crise de Couple : Toutes nos Solutions' },
+    { href: '/crise-couple/problemes-communication-couple/', label: 'Problèmes de Communication dans le Couple' },
+    { href: '/crise-couple/infidelite-couple/', label: 'Infidélité dans le Couple' },
+    { href: '/sentiments/maime-t-il-elle/', label: 'M\'aime-t-il/elle Vraiment ?' },
+    { href: '/reconquete/ex-revient-silence-radio/', label: 'Ex qui Revient après Silence Radio' },
   ],
 };
 
@@ -84,7 +84,7 @@ export default function JalousieExcessivePage() {
             Les faits sont éloquents : une proportion très importante des ruptures sont causées directement ou indirectement par la jalousie, et la majorité des personnes qui vivent avec un partenaire jaloux excessif rapportent un épuisement émotionnel chronique. La <strong>jalousie pathologique</strong> n'est pas un signe d'amour intense, mais un symptôme de blessures non guéries, d'insécurité profonde, ou de troubles anxieux qui nécessitent un travail psychologique sérieux.
           </p>
           <p className="text-lg leading-relaxed">
-            Ce guide complet explore les <strong>causes profondes de la jalousie</strong>, les signes qui distinguent la jalousie normale de la jalousie toxique, et surtout les <strong>solutions concrètes</strong> pour soigner cette dynamique destructrice. Que vous soyez la personne jalouse cherchant à se libérer de cette souffrance, ou le partenaire épuisé cherchant à comprendre et protéger votre santé mentale, vous trouverez ici des clés essentielles. Pour comprendre d'autres <Link href="/crise-couple" className="text-red-600 hover:text-red-800 underline font-medium">crises de couple</Link>, explorez nos autres guidances spécialisées.
+            Ce guide complet explore les <strong>causes profondes de la jalousie</strong>, les signes qui distinguent la jalousie normale de la jalousie toxique, et surtout les <strong>solutions concrètes</strong> pour soigner cette dynamique destructrice. Que vous soyez la personne jalouse cherchant à se libérer de cette souffrance, ou le partenaire épuisé cherchant à comprendre et protéger votre santé mentale, vous trouverez ici des clés essentielles. Pour comprendre d'autres <Link href="/crise-couple/" className="text-red-600 hover:text-red-800 underline font-medium">crises de couple</Link>, explorez nos autres guidances spécialisées.
           </p>
         </article>
 
@@ -212,7 +212,7 @@ export default function JalousieExcessivePage() {
             <div className="bg-white rounded-lg p-6 border-l-4 border-purple-500">
               <h3 className="font-bold text-xl mb-3 text-purple-700">2. Trahisons Passées Non Guéries</h3>
               <p className="text-gray-700 mb-3">
-                Avoir vécu une <Link href="/crise-couple/infidelite-couple" className="text-red-600 hover:text-red-800 underline font-medium">infidélité dans le couple</Link> crée un <strong>traumatisme de trahison</strong>. Si ce trauma n'est pas soigné (par thérapie ou travail émotionnel profond), il se projette automatiquement sur les relations futures. La personne revit constamment l'angoisse de la découverte passée et cherche obsessionnellement les "signes" qui, la dernière fois, lui avaient échappé.
+                Avoir vécu une <Link href="/crise-couple/infidelite-couple/" className="text-red-600 hover:text-red-800 underline font-medium">infidélité dans le couple</Link> crée un <strong>traumatisme de trahison</strong>. Si ce trauma n'est pas soigné (par thérapie ou travail émotionnel profond), il se projette automatiquement sur les relations futures. La personne revit constamment l'angoisse de la découverte passée et cherche obsessionnellement les "signes" qui, la dernière fois, lui avaient échappé.
               </p>
               <p className="text-gray-700 font-semibold">
                 Piège : Punir un nouveau partenaire fidèle pour les erreurs d'un ex crée une prophétie auto-réalisatrice. De nombreuses relations post-trahison se terminent à cause de cette jalousie transférée.
@@ -262,7 +262,7 @@ export default function JalousieExcessivePage() {
             <div className="bg-white rounded-lg p-6 border-l-4 border-indigo-500">
               <h3 className="font-bold text-xl mb-3 text-indigo-700">7. Dépendance Affective et Fusion Relationnelle</h3>
               <p className="text-gray-700 mb-3">
-                Quand votre partenaire devient votre <strong>unique source</strong> de bonheur, d'identité et de validation, toute menace à cette relation devient une menace à votre existence même. Cette <Link href="/crise-couple/dependance-affective" className="text-red-600 hover:text-red-800 underline font-medium">dépendance affective</Link> crée une jalousie disproportionnée : sans vie personnelle riche, vous vivez dans la terreur permanente que votre "tout" vous soit retiré.
+                Quand votre partenaire devient votre <strong>unique source</strong> de bonheur, d'identité et de validation, toute menace à cette relation devient une menace à votre existence même. Cette <Link href="/crise-couple/dependance-affective/" className="text-red-600 hover:text-red-800 underline font-medium">dépendance affective</Link> crée une jalousie disproportionnée : sans vie personnelle riche, vous vivez dans la terreur permanente que votre "tout" vous soit retiré.
               </p>
               <p className="text-gray-700 font-semibold">
                 Solution : Reconstruire une vie individuelle (amitiés, passions, accomplissements personnels) réduit drastiquement la jalousie car vous ne dépendez plus uniquement de votre partenaire pour votre bien-être.

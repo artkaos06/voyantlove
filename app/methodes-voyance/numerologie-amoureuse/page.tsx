@@ -23,7 +23,7 @@ const config: ContentPageConfig = {
     h1: 'Numérologie Amoureuse',
     subtitle: 'Compatibilité et Destin par les Chiffres',
     gradient: 'from-amber-600 via-orange-600 to-red-600',
-    backLink: { href: '/methodes-voyance', label: 'Retour aux Méthodes de Voyance' },
+    backLink: { href: '/methodes-voyance/', label: 'Retour aux Méthodes de Voyance' },
     anchors: [
       { href: '#calculateur', label: 'Calculer mes Nombres', primary: true },
       { href: '#compatibilite', label: 'Compatibilité Numérique' },
@@ -88,7 +88,7 @@ export default function NumerologieAmourPage() {
             La <strong>compatibilité numérique</strong> entre deux partenaires va bien au-delà d&rsquo;un simple horoscope : elle analyse la résonance vibratoire entre deux chemins de vie, révèle les zones d&rsquo;harmonie naturelle et les points de friction potentiels, et identifie le <strong>karma amoureux</strong> que le couple est destiné à traverser ensemble. Cette analyse offre une feuille de route précieuse pour naviguer la relation avec conscience et profondeur.
           </p>
           <p className="text-lg leading-relaxed">
-            Que vous soyez célibataire cherchant à comprendre votre destin amoureux, ou en couple désirant approfondir votre lien, ce guide complet vous livre les clés de la numérologie amoureuse. Complétez cette exploration avec notre guide sur <Link href="/methodes-voyance/astrologie-amoureuse" className="text-orange-600 hover:text-orange-800 underline font-medium">l&rsquo;astrologie amoureuse</Link> pour une vision encore plus complète de votre destinée sentimentale.
+            Que vous soyez célibataire cherchant à comprendre votre destin amoureux, ou en couple désirant approfondir votre lien, ce guide complet vous livre les clés de la numérologie amoureuse. Complétez cette exploration avec notre guide sur <Link href="/methodes-voyance/astrologie-amoureuse/" className="text-orange-600 hover:text-orange-800 underline font-medium">l&rsquo;astrologie amoureuse</Link> pour une vision encore plus complète de votre destinée sentimentale.
           </p>
         </article>
 
@@ -229,7 +229,7 @@ export default function NumerologieAmourPage() {
           <h2 className="text-3xl font-bold mb-6 text-gray-900">&#x2764;&#xFE0F; Compatibilité Numérologique entre Partenaires</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">La compatibilité numérique analyse la résonance entre deux chemins de vie pour identifier les affinités naturelles et les zones de friction potentielles dans la relation amoureuse.</p>
           <p className="text-gray-700 mb-6">
-            La <strong>compatibilité numérique</strong> ne prédit pas le succès ou l&rsquo;échec d&rsquo;une relation, elle révèle les dynamiques naturelles qui s&rsquo;installeront entre deux personnes. Certains couples numériquement &ldquo;difficiles&rdquo; bâtissent des relations extraordinaires grâce à la conscience de leurs différences. Pour approfondir votre analyse, consultez notre guide sur la <Link href="/sentiments/compatibilite-amoureuse" className="text-orange-600 hover:text-orange-800 underline font-medium">compatibilité amoureuse</Link>.
+            La <strong>compatibilité numérique</strong> ne prédit pas le succès ou l&rsquo;échec d&rsquo;une relation, elle révèle les dynamiques naturelles qui s&rsquo;installeront entre deux personnes. Certains couples numériquement &ldquo;difficiles&rdquo; bâtissent des relations extraordinaires grâce à la conscience de leurs différences. Pour approfondir votre analyse, consultez notre guide sur la <Link href="/sentiments/compatibilite-amoureuse/" className="text-orange-600 hover:text-orange-800 underline font-medium">compatibilité amoureuse</Link>.
           </p>
 
           <div className="mb-6">
@@ -238,7 +238,7 @@ export default function NumerologieAmourPage() {
 
           <h3 className="font-bold text-gray-900 text-xl mb-4">Compatibilité par Date de Naissance : Comment Ça Marche</h3>
           <p className="text-gray-700 mb-6">
-            La <strong>compatibilité par date de naissance</strong> part d&rsquo;un principe simple : chaque date de naissance se réduit à un <strong>chemin de vie</strong> unique (voir la méthode de calcul plus haut sur cette page), et c&rsquo;est la résonance entre les deux chemins de vie qui indique la nature de la dynamique amoureuse, complémentaire, stimulante ou exigeante en conscience. Cette approche se distingue de la <Link href="/sentiments/compatibilite-amoureuse" className="text-orange-600 hover:text-orange-800 underline font-medium">compatibilité par signe astrologique</Link>, qui se base sur la position du Soleil plutôt que sur un calcul numérique dérivé de la date complète.
+            La <strong>compatibilité par date de naissance</strong> part d&rsquo;un principe simple : chaque date de naissance se réduit à un <strong>chemin de vie</strong> unique (voir la méthode de calcul plus haut sur cette page), et c&rsquo;est la résonance entre les deux chemins de vie qui indique la nature de la dynamique amoureuse, complémentaire, stimulante ou exigeante en conscience. Cette approche se distingue de la <Link href="/sentiments/compatibilite-amoureuse/" className="text-orange-600 hover:text-orange-800 underline font-medium">compatibilité par signe astrologique</Link>, qui se base sur la position du Soleil plutôt que sur un calcul numérique dérivé de la date complète.
           </p>
 
           <p className="text-sm text-gray-600 mb-4">Les associations ci-dessous sont des exemples de lecture, pas une matrice exhaustive ni une garantie sur l&rsquo;avenir du couple.</p>
@@ -369,7 +369,7 @@ export default function NumerologieAmourPage() {
               <p>Vous êtes en <strong>Année Personnelle 1</strong> en 2026 : nouveau départ, initiative amoureuse.</p>
             </div>
             <p className="text-gray-700">
-              Pour compléter cette analyse avec d&rsquo;autres outils divinatoires, découvrez notre guide sur le <Link href="/methodes-voyance/tirage-tarot-amour" className="text-orange-600 hover:text-orange-800 underline font-medium">tirage tarot amour</Link> qui confirme et enrichit les révélations numériques.
+              Pour compléter cette analyse avec d&rsquo;autres outils divinatoires, découvrez notre guide sur le <Link href="/methodes-voyance/tirage-tarot-amour/" className="text-orange-600 hover:text-orange-800 underline font-medium">tirage tarot amour</Link> qui confirme et enrichit les révélations numériques.
             </p>
           </div>
         </section>

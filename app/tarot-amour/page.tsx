@@ -58,7 +58,7 @@ export default function TarotAmourHub() {
             {LIVE_CARDS.map((c) => (
               <Link
                 key={c.slug}
-                href={`/tarot-amour/${c.slug}`}
+                href={`/tarot-amour/${c.slug}/`}
                 className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition border-t-4 border-indigo-500"
               >
                 <div className="flex items-center justify-between mb-2">
@@ -78,15 +78,15 @@ export default function TarotAmourHub() {
         <section className="mb-12">
           <h2 className="text-2xl font-bold mb-6 text-gray-900">Aller plus loin</h2>
           <div className="grid md:grid-cols-3 gap-4">
-            <Link href="/voyance-gratuite-amour/tarot-amour-gratuit" className="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition">
+            <Link href="/voyance-gratuite-amour/tarot-amour-gratuit/" className="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition">
               <h3 className="font-bold text-gray-900 mb-1">Tirage Tarot Gratuit</h3>
               <p className="text-sm text-gray-600">Tirez les cartes vous-même, en croix, gratuitement et en direct.</p>
             </Link>
-            <Link href="/methodes-voyance/tirage-tarot-amour" className="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition">
+            <Link href="/methodes-voyance/tirage-tarot-amour/" className="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition">
               <h3 className="font-bold text-gray-900 mb-1">Le Tirage en Détail</h3>
               <p className="text-sm text-gray-600">Comprendre les tirages de tarot amoureux et leurs positions.</p>
             </Link>
-            <Link href="/voyance-gratuite-amour/tarot-oui-non-amour" className="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition">
+            <Link href="/voyance-gratuite-amour/tarot-oui-non-amour/" className="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition">
               <h3 className="font-bold text-gray-900 mb-1">Tarot Oui ou Non</h3>
               <p className="text-sm text-gray-600">Une réponse claire à votre question de cœur, en une carte.</p>
             </Link>

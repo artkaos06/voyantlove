@@ -149,19 +149,19 @@ export default function ContactPage() {
             Avant de nous contacter, consultez nos pages spécialisées qui répondent peut-être déjà à vos questions :
           </p>
           <div className="grid md:grid-cols-2 gap-4">
-            <Link href="/reconquete/reconquerir-son-ex" className="bg-white p-4 rounded-lg hover:shadow-md transition">
+            <Link href="/reconquete/reconquerir-son-ex/" className="bg-white p-4 rounded-lg hover:shadow-md transition">
               <p className="font-semibold text-purple-600 mb-1">💜 Reconquérir son Ex</p>
               <p className="text-sm text-gray-600">Timing, étapes, signes de retour</p>
             </Link>
-            <Link href="/sentiments/maime-t-il-elle" className="bg-white p-4 rounded-lg hover:shadow-md transition">
+            <Link href="/sentiments/maime-t-il-elle/" className="bg-white p-4 rounded-lg hover:shadow-md transition">
               <p className="font-semibold text-red-600 mb-1">💖 M'aime-t-il/elle ?</p>
               <p className="text-sm text-gray-600">Décrypter les vrais sentiments</p>
             </Link>
-            <Link href="/rupture/oublier-son-ex" className="bg-white p-4 rounded-lg hover:shadow-md transition">
+            <Link href="/rupture/oublier-son-ex/" className="bg-white p-4 rounded-lg hover:shadow-md transition">
               <p className="font-semibold text-gray-700 mb-1">💔 Oublier son Ex</p>
               <p className="text-sm text-gray-600">Surmonter le chagrin d'amour</p>
             </Link>
-            <Link href="/nouvelle-rencontre" className="bg-white p-4 rounded-lg hover:shadow-md transition">
+            <Link href="/nouvelle-rencontre/" className="bg-white p-4 rounded-lg hover:shadow-md transition">
               <p className="font-semibold text-cyan-600 mb-1">✨ Nouvelle Rencontre</p>
               <p className="text-sm text-gray-600">Trouver l'amour, timing idéal</p>
             </Link>

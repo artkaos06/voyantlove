@@ -20,7 +20,7 @@ const config: ContentPageConfig = {
     h1: 'Reconnecter son Couple : Retrouver la Complicité',
     subtitle: 'Guidance voyance et tarot pour raviver la flamme et reconstruire votre lien',
     gradient: 'from-amber-500 via-amber-600 to-orange-600',
-    backLink: { href: '/crise-couple', label: 'Crise de Couple' },
+    backLink: { href: '/crise-couple/', label: 'Crise de Couple' },
     anchors: [
       { href: '#consultation', label: 'Consultation Couple', primary: true },
     ],
@@ -53,9 +53,9 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/crise-couple/sauver-son-couple', label: 'Sauver son Couple' },
-    { href: '/crise-couple/problemes-communication-couple', label: 'Problèmes de Communication dans le Couple' },
-    { href: '/crise-couple/pardonner-en-amour', label: 'Pardonner en Amour' },
+    { href: '/crise-couple/sauver-son-couple/', label: 'Sauver son Couple' },
+    { href: '/crise-couple/problemes-communication-couple/', label: 'Problèmes de Communication dans le Couple' },
+    { href: '/crise-couple/pardonner-en-amour/', label: 'Pardonner en Amour' },
   ],
 };
 
@@ -92,7 +92,7 @@ export default function ReconnecterSonCouplePage() {
             </div>
             <div className="bg-orange-50 border-l-4 border-orange-500 p-6 rounded-lg">
               <h3 className="font-bold text-lg mb-2 text-orange-700">Les Obstacles Invisibles</h3>
-              <p className="text-gray-700">Ce qui sépare un couple est rarement ce qu&apos;on croit. La <strong>voyance</strong> révèle les véritables obstacles : une blessure ancienne jamais exprimée, une perte de confiance progressive, l&apos;ingérence de la famille, la <strong>routine</strong> qui a étouffé le désir. Les <Link href="/crise-couple/problemes-communication-couple" className="text-amber-600 hover:text-amber-800 underline font-medium">problèmes de communication</Link> sont souvent le symptôme visible de causes bien plus profondes que le <strong>tarot</strong> met en lumière avec précision.</p>
+              <p className="text-gray-700">Ce qui sépare un couple est rarement ce qu&apos;on croit. La <strong>voyance</strong> révèle les véritables obstacles : une blessure ancienne jamais exprimée, une perte de confiance progressive, l&apos;ingérence de la famille, la <strong>routine</strong> qui a étouffé le désir. Les <Link href="/crise-couple/problemes-communication-couple/" className="text-amber-600 hover:text-amber-800 underline font-medium">problèmes de communication</Link> sont souvent le symptôme visible de causes bien plus profondes que le <strong>tarot</strong> met en lumière avec précision.</p>
             </div>
             <div className="bg-amber-50 border-l-4 border-amber-500 p-6 rounded-lg">
               <h3 className="font-bold text-lg mb-2 text-amber-700">Les Forces Cachées du Couple</h3>
@@ -100,7 +100,7 @@ export default function ReconnecterSonCouplePage() {
             </div>
             <div className="bg-orange-50 border-l-4 border-orange-500 p-6 rounded-lg">
               <h3 className="font-bold text-lg mb-2 text-orange-700">Le Potentiel de Renouveau</h3>
-              <p className="text-gray-700">La question centrale est : votre couple peut-il renaître ? Le <strong>tarot</strong> donne une réponse nuancée mais honnête. La carte du Jugement annonce une <strong>renaissance possible</strong> si les deux partenaires s&apos;engagent dans le travail. La Roue de Fortune suggère que le cycle actuel touche à sa fin et qu&apos;un tournant approche. À l&apos;inverse, la Tour peut indiquer qu&apos;une structure doit s&apos;effondrer avant de pouvoir reconstruire sur des bases plus saines. Pour une vision complète, consultez notre guide pour <Link href="/crise-couple/sauver-son-couple" className="text-amber-600 hover:text-amber-800 underline font-medium">sauver son couple</Link>.</p>
+              <p className="text-gray-700">La question centrale est : votre couple peut-il renaître ? Le <strong>tarot</strong> donne une réponse nuancée mais honnête. La carte du Jugement annonce une <strong>renaissance possible</strong> si les deux partenaires s&apos;engagent dans le travail. La Roue de Fortune suggère que le cycle actuel touche à sa fin et qu&apos;un tournant approche. À l&apos;inverse, la Tour peut indiquer qu&apos;une structure doit s&apos;effondrer avant de pouvoir reconstruire sur des bases plus saines. Pour une vision complète, consultez notre guide pour <Link href="/crise-couple/sauver-son-couple/" className="text-amber-600 hover:text-amber-800 underline font-medium">sauver son couple</Link>.</p>
             </div>
           </div>
         </section>
@@ -127,7 +127,7 @@ export default function ReconnecterSonCouplePage() {
               <div className="text-3xl font-bold text-amber-600">3</div>
               <div>
                 <h3 className="font-bold text-lg mb-2">L&apos;Intimité Émotionnelle</h3>
-                <p className="text-gray-700">Avant l&apos;intimité physique, il faut reconstruire l&apos;<strong>intimité émotionnelle</strong>. Cela signifie oser être vulnérable devant l&apos;autre, exprimer ses besoins sans accuser, et écouter avec le coeur plutôt qu&apos;avec le jugement. Le <strong>tarot</strong> révèle souvent que la <Link href="/crise-couple/jalousie-excessive" className="text-amber-600 hover:text-amber-800 underline font-medium">jalousie</Link> ou la méfiance ont érigé des murs protecteurs qu&apos;il faut déconstruire pierre par pierre pour retrouver cette proximité précieuse.</p>
+                <p className="text-gray-700">Avant l&apos;intimité physique, il faut reconstruire l&apos;<strong>intimité émotionnelle</strong>. Cela signifie oser être vulnérable devant l&apos;autre, exprimer ses besoins sans accuser, et écouter avec le coeur plutôt qu&apos;avec le jugement. Le <strong>tarot</strong> révèle souvent que la <Link href="/crise-couple/jalousie-excessive/" className="text-amber-600 hover:text-amber-800 underline font-medium">jalousie</Link> ou la méfiance ont érigé des murs protecteurs qu&apos;il faut déconstruire pierre par pierre pour retrouver cette proximité précieuse.</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
@@ -186,7 +186,7 @@ export default function ReconnecterSonCouplePage() {
             La <strong>synastrie astrologique</strong> &mdash; la comparaison de vos deux thèmes natals &mdash; révèle les forces et les défis naturels de votre couple. Certains aspects planétaires créent une <strong>complicité innée</strong>, d&apos;autres génèrent des frictions récurrentes. Comprendre ces dynamiques transforme votre façon d&apos;aborder les conflits.
           </p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Les transits de <strong>Vénus</strong> et de <strong>Jupiter</strong> marquent des fenêtres de reconnexion particulièrement favorables. Vénus conjointe à votre Soleil ou à votre Vénus natale ouvre le coeur et adoucit les rancunes. Jupiter en maison VII apporte expansion et optimisme dans la sphère relationnelle. Un <Link href="/methodes-voyance/astrologie-amoureuse" className="text-amber-600 hover:text-amber-800 underline font-medium">voyant astrologue</Link> identifie ces moments clés pour maximiser vos efforts de <strong>reconnexion</strong>.
+            Les transits de <strong>Vénus</strong> et de <strong>Jupiter</strong> marquent des fenêtres de reconnexion particulièrement favorables. Vénus conjointe à votre Soleil ou à votre Vénus natale ouvre le coeur et adoucit les rancunes. Jupiter en maison VII apporte expansion et optimisme dans la sphère relationnelle. Un <Link href="/methodes-voyance/astrologie-amoureuse/" className="text-amber-600 hover:text-amber-800 underline font-medium">voyant astrologue</Link> identifie ces moments clés pour maximiser vos efforts de <strong>reconnexion</strong>.
           </p>
           <p className="text-gray-700 leading-relaxed">
             Les <strong>éclipses</strong> en signes relationnels (Balance, Scorpion, Taureau) sont des catalyseurs puissants de transformation dans le couple. Elles forcent à regarder la vérité de la relation en face et offrent une opportunité de <strong>renouveau radical</strong>. La <strong>voyance</strong> vous prépare à tirer le meilleur parti de ces moments cosmiques pour votre <strong>couple</strong>.

@@ -63,7 +63,7 @@ export default function TarotFuturProcheAmourPage() {
       {/* Header */}
       <header className="bg-gradient-to-r from-teal-500 via-emerald-500 to-green-500 text-white py-16 px-4">
         <div className="max-w-4xl mx-auto">
-          <Link href="/voyance-gratuite-amour" className="text-white/80 hover:text-white mb-4 inline-block">&larr; Retour &agrave; Voyance Gratuite Amour</Link>
+          <Link href="/voyance-gratuite-amour/" className="text-white/80 hover:text-white mb-4 inline-block">&larr; Retour &agrave; Voyance Gratuite Amour</Link>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">🔭 Tarot Futur Proche Amour Gratuit</h1>
           <p className="text-xl opacity-95 mb-6">Un tirage à trois cartes pour éclairer les prochaines semaines de votre vie sentimentale</p>
           <div className="flex gap-4 flex-wrap">
@@ -101,7 +101,7 @@ export default function TarotFuturProcheAmourPage() {
               Le <strong>tarot futur proche amour</strong> est un tirage &agrave; trois cartes con&ccedil;u pour &eacute;clairer l&apos;&eacute;volution de votre <strong>situation sentimentale</strong>. Chaque carte correspond &agrave; une &eacute;ch&eacute;ance successive et non chevauchante &mdash; dans les 7 jours, entre 8 et 30 jours, puis du 2e au 3e mois &mdash; pour dessiner une v&eacute;ritable <strong>tendance</strong>.
             </p>
             <p className="text-lg leading-relaxed mb-4">
-              Ce format r&eacute;pond &agrave; une question tr&egrave;s fr&eacute;quente en <strong>voyance amoureuse</strong>&nbsp;: &laquo;&nbsp;o&ugrave; va ma relation&nbsp;&raquo; ou &laquo;&nbsp;qu&apos;est-ce qui m&apos;attend bient&ocirc;t en amour&nbsp;&raquo;. Contrairement au <Link href="/voyance-gratuite-amour/tarot-oui-non-amour" className="text-teal-600 hover:text-teal-800 underline font-medium">tarot oui/non</Link>, il n&apos;offre pas de r&eacute;ponse binaire mais un r&eacute;cit en trois temps, plus riche pour comprendre une dynamique amoureuse en mouvement.
+              Ce format r&eacute;pond &agrave; une question tr&egrave;s fr&eacute;quente en <strong>voyance amoureuse</strong>&nbsp;: &laquo;&nbsp;o&ugrave; va ma relation&nbsp;&raquo; ou &laquo;&nbsp;qu&apos;est-ce qui m&apos;attend bient&ocirc;t en amour&nbsp;&raquo;. Contrairement au <Link href="/voyance-gratuite-amour/tarot-oui-non-amour/" className="text-teal-600 hover:text-teal-800 underline font-medium">tarot oui/non</Link>, il n&apos;offre pas de r&eacute;ponse binaire mais un r&eacute;cit en trois temps, plus riche pour comprendre une dynamique amoureuse en mouvement.
             </p>
             <p className="text-lg leading-relaxed">
               Ce <strong>tarot futur proche gratuit</strong> constitue une premi&egrave;re approche accessible. Pour une projection int&eacute;grant votre situation pr&eacute;cise, un <strong>voyant sp&eacute;cialis&eacute;</strong> affine consid&eacute;rablement cette lecture &agrave; court terme.
@@ -116,7 +116,7 @@ export default function TarotFuturProcheAmourPage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">📆 Que Signifie &laquo;&nbsp;Futur Proche&nbsp;&raquo; en Tarot</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le futur proche désigne un horizon de quelques semaines à deux ou trois mois, une fenêtre suffisamment courte pour rester lisible sans figer une date précise.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            En <strong>tarot</strong>, la notion de &laquo;&nbsp;futur proche&nbsp;&raquo; d&eacute;signe un horizon temporel court, g&eacute;n&eacute;ralement estim&eacute; entre quelques semaines et deux ou trois mois. Contrairement &agrave; une <Link href="/sentiments/avenir-amoureux" className="text-teal-600 hover:text-teal-800 underline font-medium">pr&eacute;diction amoureuse</Link> sur le long terme, ce tirage se concentre sur ce qui est d&eacute;j&agrave; en train de se mettre en mouvement dans votre <strong>vie sentimentale</strong> &mdash; des &eacute;nergies qui commencent &agrave; se manifester, plut&ocirc;t que des sc&eacute;narios lointains et abstraits.
+            En <strong>tarot</strong>, la notion de &laquo;&nbsp;futur proche&nbsp;&raquo; d&eacute;signe un horizon temporel court, g&eacute;n&eacute;ralement estim&eacute; entre quelques semaines et deux ou trois mois. Contrairement &agrave; une <Link href="/sentiments/avenir-amoureux/" className="text-teal-600 hover:text-teal-800 underline font-medium">pr&eacute;diction amoureuse</Link> sur le long terme, ce tirage se concentre sur ce qui est d&eacute;j&agrave; en train de se mettre en mouvement dans votre <strong>vie sentimentale</strong> &mdash; des &eacute;nergies qui commencent &agrave; se manifester, plut&ocirc;t que des sc&eacute;narios lointains et abstraits.
           </p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Le <strong>tarot</strong> ne fournit jamais de date exacte&nbsp;: il indique des tendances et des &eacute;nergies dominantes sur une p&eacute;riode donn&eacute;e. C&apos;est pourquoi le tirage &agrave; trois cartes segmente cette p&eacute;riode en trois moments successifs plut&ocirc;t que de tout condenser dans une seule carte&nbsp;: cela permet de rep&eacute;rer une &eacute;volution &mdash; une carte tendue en premi&egrave;re position suivie d&apos;une carte plus apais&eacute;e en derni&egrave;re position raconte un mouvement, pas un &eacute;tat fig&eacute;.
@@ -159,7 +159,7 @@ export default function TarotFuturProcheAmourPage() {
             Un tirage <strong>tarot futur proche</strong> gratuit s&apos;appuie sur un algorithme al&eacute;atoire&nbsp;: il applique la symbolique classique des <strong>arcanes</strong> sans conna&icirc;tre les d&eacute;tails de votre histoire. Un <strong>voyant sp&eacute;cialis&eacute;</strong> en <strong>voyance amoureuse</strong> combine cette m&ecirc;me structure de lecture avec votre contexte r&eacute;el&nbsp;: l&apos;historique du couple, le comportement r&eacute;cent de l&apos;autre personne, le timing de vos propres d&eacute;cisions.
           </p>
           <p className="text-gray-700 leading-relaxed">
-            Si le tirage gratuit fait &eacute;cho &agrave; une question qui vous pr&eacute;occupe s&eacute;rieusement, ou si vous souhaitez une lecture qui int&egrave;gre les <Link href="/reconquete/va-t-il-elle-revenir" className="text-teal-600 hover:text-teal-800 underline font-medium">signes qu&apos;un ex va revenir</Link> ou l&apos;&eacute;volution d&apos;une <strong>relation actuelle</strong>, une consultation personnalis&eacute;e reste la fa&ccedil;on la plus fiable d&apos;affiner cette projection &agrave; court terme.
+            Si le tirage gratuit fait &eacute;cho &agrave; une question qui vous pr&eacute;occupe s&eacute;rieusement, ou si vous souhaitez une lecture qui int&egrave;gre les <Link href="/reconquete/va-t-il-elle-revenir/" className="text-teal-600 hover:text-teal-800 underline font-medium">signes qu&apos;un ex va revenir</Link> ou l&apos;&eacute;volution d&apos;une <strong>relation actuelle</strong>, une consultation personnalis&eacute;e reste la fa&ccedil;on la plus fiable d&apos;affiner cette projection &agrave; court terme.
           </p>
         </section>
 
@@ -190,11 +190,11 @@ export default function TarotFuturProcheAmourPage() {
         <div className="bg-gray-100 rounded-xl p-6 mb-8">
           <h3 className="font-bold text-lg mb-4 text-gray-900">📚 Articles Connexes</h3>
           <div className="space-y-2">
-            <Link href="/voyance-gratuite-amour" className="block text-teal-600 hover:text-teal-800 font-medium">&rarr; Voyance Gratuite Amour : Guide Complet</Link>
-            <Link href="/voyance-gratuite-amour/tarot-du-jour-amour" className="block text-teal-600 hover:text-teal-800 font-medium">&rarr; Tarot du Jour Amour Gratuit</Link>
-            <Link href="/sentiments/avenir-amoureux" className="block text-teal-600 hover:text-teal-800 font-medium">&rarr; Mon Avenir Amoureux : Prédictions</Link>
-            <Link href="/voyance-gratuite-amour/tarot-oui-non-amour" className="block text-teal-600 hover:text-teal-800 font-medium">&rarr; Tarot Oui Non Amour Gratuit</Link>
-            <Link href="/reconquete/va-t-il-elle-revenir" className="block text-teal-600 hover:text-teal-800 font-medium">&rarr; Va-t-il/elle Revenir ? Prédictions</Link>
+            <Link href="/voyance-gratuite-amour/" className="block text-teal-600 hover:text-teal-800 font-medium">&rarr; Voyance Gratuite Amour : Guide Complet</Link>
+            <Link href="/voyance-gratuite-amour/tarot-du-jour-amour/" className="block text-teal-600 hover:text-teal-800 font-medium">&rarr; Tarot du Jour Amour Gratuit</Link>
+            <Link href="/sentiments/avenir-amoureux/" className="block text-teal-600 hover:text-teal-800 font-medium">&rarr; Mon Avenir Amoureux : Prédictions</Link>
+            <Link href="/voyance-gratuite-amour/tarot-oui-non-amour/" className="block text-teal-600 hover:text-teal-800 font-medium">&rarr; Tarot Oui Non Amour Gratuit</Link>
+            <Link href="/reconquete/va-t-il-elle-revenir/" className="block text-teal-600 hover:text-teal-800 font-medium">&rarr; Va-t-il/elle Revenir ? Prédictions</Link>
           </div>
         </div>
 

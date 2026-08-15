@@ -20,7 +20,7 @@ const config: ContentPageConfig = {
     h1: 'Revoir son Ex Après une Rupture',
     subtitle: 'Se préparer, se comporter le jour J et interpréter ce que vous ressentez ensuite',
     gradient: 'from-violet-600 via-fuchsia-600 to-pink-600',
-    backLink: { href: '/reconquete', label: 'Retour à la Reconquête' },
+    backLink: { href: '/reconquete/', label: 'Retour à la Reconquête' },
     anchors: [
       { href: '#preparer', label: 'Se Préparer', primary: true },
       { href: '#apres', label: 'Après la Rencontre' },
@@ -58,11 +58,11 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/reconquete', label: 'Reconquête Amoureuse : Toutes nos Guidances' },
-    { href: '/reconquete/repondre-a-son-ex', label: 'Faut-il Répondre à son Ex ?' },
-    { href: '/reconquete/se-remettre-ensemble', label: 'Se Remettre Ensemble : Les 5 Étapes' },
-    { href: '/reconquete/veut-se-remettre-ensemble-mais-ne-fait-rien', label: 'Il Veut se Remettre Ensemble mais ne Fait Rien' },
-    { href: '/rupture/comment-tourner-la-page', label: 'Comment Tourner la Page' },
+    { href: '/reconquete/', label: 'Reconquête Amoureuse : Toutes nos Guidances' },
+    { href: '/reconquete/repondre-a-son-ex/', label: 'Faut-il Répondre à son Ex ?' },
+    { href: '/reconquete/se-remettre-ensemble/', label: 'Se Remettre Ensemble : Les 5 Étapes' },
+    { href: '/reconquete/veut-se-remettre-ensemble-mais-ne-fait-rien/', label: 'Il Veut se Remettre Ensemble mais ne Fait Rien' },
+    { href: '/rupture/comment-tourner-la-page/', label: 'Comment Tourner la Page' },
   ],
 };
 
@@ -79,7 +79,7 @@ export default function RevoirSonExPage() {
               <strong>Revoir son ex</strong> après une rupture est un moment chargé : espoir, appréhension, souvenirs qui remontent d&apos;un coup. La question n&apos;est pas tant &laquo;puis-je le revoir ?&raquo; que &laquo;<strong>pourquoi</strong> et dans quel état vais-je le faire ?&raquo;. Une rencontre peut aider à obtenir une clarification, à tourner la page en conscience ou à explorer un rapprochement, à condition d&apos;être assez stable pour ne pas rouvrir la plaie inutilement.
             </p>
             <p className="text-lg leading-relaxed mb-4">
-              La <strong>présence physique</strong> court-circuite le travail de deuil : elle réactive des sensations et un <strong>attachement</strong> que la distance avait endormis. C&apos;est pourquoi revoir un ex peut faire mal même quand on se croyait apaisé. Ce ressac est normal et ne signifie pas que vous régressez. Si vous hésitez encore sur l&apos;opportunité même de la rencontre, notre guide <Link href="/reconquete/dois-je-attendre-son-retour" className="text-fuchsia-600 hover:text-fuchsia-800 underline font-medium">dois-je l&apos;attendre</Link> peut compléter votre réflexion.
+              La <strong>présence physique</strong> court-circuite le travail de deuil : elle réactive des sensations et un <strong>attachement</strong> que la distance avait endormis. C&apos;est pourquoi revoir un ex peut faire mal même quand on se croyait apaisé. Ce ressac est normal et ne signifie pas que vous régressez. Si vous hésitez encore sur l&apos;opportunité même de la rencontre, notre guide <Link href="/reconquete/dois-je-attendre-son-retour/" className="text-fuchsia-600 hover:text-fuchsia-800 underline font-medium">dois-je l&apos;attendre</Link> peut compléter votre réflexion.
             </p>
             <p className="text-lg leading-relaxed">
               Cette page vous accompagne sur trois temps : <strong>clarifier votre intention</strong>, vous comporter avec justesse le jour J, et interpréter sans précipitation ce que la rencontre fait remonter. Revoir son ex ne provoque ni ne garantit une réconciliation ; ce qui compte, si un rapprochement se dessine, c&apos;est la <strong>cohérence des actes</strong> dans la durée. Une <strong>consultation de voyance</strong> peut clarifier vos intentions avant la rencontre, sans jamais en prédire l&apos;issue.
@@ -165,11 +165,11 @@ export default function RevoirSonExPage() {
             </div>
             <div className="bg-white rounded-lg p-6 border-l-4 border-purple-500">
               <h3 className="font-bold text-lg mb-2 text-purple-700">{'\u{1F4C8}'} Regarder les actes</h3>
-              <p className="text-gray-700 text-sm">Si un rapprochement s&apos;esquisse, observez si les <Link href="/reconquete/veut-se-remettre-ensemble-mais-ne-fait-rien" className="text-purple-600 hover:text-purple-800 underline font-medium">actes suivent les mots</Link> dans la durée, plutôt qu&apos;un seul moment partagé.</p>
+              <p className="text-gray-700 text-sm">Si un rapprochement s&apos;esquisse, observez si les <Link href="/reconquete/veut-se-remettre-ensemble-mais-ne-fait-rien/" className="text-purple-600 hover:text-purple-800 underline font-medium">actes suivent les mots</Link> dans la durée, plutôt qu&apos;un seul moment partagé.</p>
             </div>
           </div>
           <div className="mt-6 bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded">
-            <p className="text-gray-700"><strong>{'\u{1F4A1}'} À retenir :</strong> si la rencontre confirme au contraire votre besoin de clôture, notre guide pour <Link href="/rupture/comment-tourner-la-page" className="text-pink-600 hover:text-pink-800 underline font-medium">tourner la page</Link> vous accompagne dans cette étape. Revoir son ex peut aussi servir à conclure sereinement, pas seulement à raviver.</p>
+            <p className="text-gray-700"><strong>{'\u{1F4A1}'} À retenir :</strong> si la rencontre confirme au contraire votre besoin de clôture, notre guide pour <Link href="/rupture/comment-tourner-la-page/" className="text-pink-600 hover:text-pink-800 underline font-medium">tourner la page</Link> vous accompagne dans cette étape. Revoir son ex peut aussi servir à conclure sereinement, pas seulement à raviver.</p>
           </div>
         </section>
 

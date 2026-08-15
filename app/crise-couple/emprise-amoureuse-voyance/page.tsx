@@ -19,7 +19,7 @@ const config: ContentPageConfig = {
     h1: 'Emprise Amoureuse',
     subtitle: 'Reconnaître et Se Libérer d\'un Manipulateur',
     gradient: 'from-red-700 via-rose-700 to-pink-700',
-    backLink: { href: '/crise-couple', label: 'Retour à Crise de Couple' },
+    backLink: { href: '/crise-couple/', label: 'Retour à Crise de Couple' },
     anchors: [
       { href: '#signes', label: 'Les 10 Signes d\'Emprise', primary: true },
       { href: '#liberation', label: 'Se Libérer' },
@@ -53,10 +53,10 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/crise-couple', label: 'Crise de Couple : Toutes nos Guidances' },
-    { href: '/sentiments/relation-toxique', label: 'Relation Toxique : Signes et Comment S\'en Sortir' },
-    { href: '/crise-couple/pardonner-en-amour', label: 'Pardonner en Amour : Quand et Comment ?' },
-    { href: '/rupture/oublier-son-ex', label: 'Se Reconstruire après la Rupture : Guide Complet' },
+    { href: '/crise-couple/', label: 'Crise de Couple : Toutes nos Guidances' },
+    { href: '/sentiments/relation-toxique/', label: 'Relation Toxique : Signes et Comment S\'en Sortir' },
+    { href: '/crise-couple/pardonner-en-amour/', label: 'Pardonner en Amour : Quand et Comment ?' },
+    { href: '/rupture/oublier-son-ex/', label: 'Se Reconstruire après la Rupture : Guide Complet' },
   ],
 };
 
@@ -75,7 +75,7 @@ export default function EmpriseAmoureusePage() {
             Le mécanisme central de l'emprise est le <strong>gaslighting</strong>, cette technique qui consiste à faire douter la <strong>victime d'emprise</strong> de sa propre perception de la réalité. Elle est progressivement convaincue qu'elle exagère, qu'elle est trop sensible, qu'elle est la source des problèmes. Se libérer de cette dynamique exige un travail courageux de <strong>reconstruction</strong> identitaire et émotionnelle, visant à retrouver une <strong>liberté émotionnelle</strong> profonde et une capacité renouvelée à aimer sainement.
           </p>
           <p className="text-lg leading-relaxed">
-            Cette guidance vous permet d'identifier les signaux d'alarme, de comprendre ce que la voyance révèle sur les relations sous emprise, et de tracer un chemin concret vers la guérison. Pour aller plus loin sur la dynamique des liens négatifs, consultez notre guide sur la <Link href="/sentiments/relation-toxique" className="text-red-600 hover:text-red-800 underline font-medium">relation toxique</Link> et ses mécanismes profonds.
+            Cette guidance vous permet d'identifier les signaux d'alarme, de comprendre ce que la voyance révèle sur les relations sous emprise, et de tracer un chemin concret vers la guérison. Pour aller plus loin sur la dynamique des liens négatifs, consultez notre guide sur la <Link href="/sentiments/relation-toxique/" className="text-red-600 hover:text-red-800 underline font-medium">relation toxique</Link> et ses mécanismes profonds.
           </p>
         </article>
 
@@ -203,7 +203,7 @@ export default function EmpriseAmoureusePage() {
           <div className="bg-red-100 border-2 border-red-300 rounded-lg p-6 mt-6">
             <h4 className="font-bold text-red-800 mb-3 text-lg">&#x1F4A1; Ce que la Voyance ne Peut Pas Faire</h4>
             <p className="text-gray-700">
-              La voyance éclaire et nomme, mais ne décide pas à votre place. Elle peut révéler la nature toxique d'une relation avec une clarté parfois bouleversante, identifier le bon moment pour agir, et guider le chemin de reconstruction. Mais la décision de partir reste la vôtre, et c'est précisément cette décision que l'emprise cherche à paralyser. Pour approfondir comment <Link href="/crise-couple/pardonner-en-amour" className="text-red-600 hover:text-red-800 underline font-medium">pardonner après une blessure</Link> profonde dans le cadre d'une relation difficile, notre guidance dédiée vous accompagne.
+              La voyance éclaire et nomme, mais ne décide pas à votre place. Elle peut révéler la nature toxique d'une relation avec une clarté parfois bouleversante, identifier le bon moment pour agir, et guider le chemin de reconstruction. Mais la décision de partir reste la vôtre, et c'est précisément cette décision que l'emprise cherche à paralyser. Pour approfondir comment <Link href="/crise-couple/pardonner-en-amour/" className="text-red-600 hover:text-red-800 underline font-medium">pardonner après une blessure</Link> profonde dans le cadre d'une relation difficile, notre guidance dédiée vous accompagne.
             </p>
           </div>
         </section>
@@ -291,7 +291,7 @@ export default function EmpriseAmoureusePage() {
             La dimension spirituelle de la reconstruction est souvent sous-estimée. Nombreuses sont les personnes sorties d'une emprise qui témoignent d'une transformation profonde de leur rapport à elles-mêmes et au monde. La voyance accompagne ce processus en révélant les ressources intérieures cachées, les leçons karmiques de l'expérience vécue et les perspectives lumineuses d'un amour futur plus aligné avec leur vraie nature.
           </p>
           <p className="text-gray-700">
-            Pour ceux qui traversent aussi le deuil de la relation, notre guide complet vous aide à <Link href="/rupture/oublier-son-ex" className="text-red-600 hover:text-red-800 underline font-medium">se reconstruire après la rupture</Link> avec les outils pratiques et spirituels adaptés.
+            Pour ceux qui traversent aussi le deuil de la relation, notre guide complet vous aide à <Link href="/rupture/oublier-son-ex/" className="text-red-600 hover:text-red-800 underline font-medium">se reconstruire après la rupture</Link> avec les outils pratiques et spirituels adaptés.
           </p>
         </section>
 

@@ -20,7 +20,7 @@ const config: ContentPageConfig = {
     h1: 'Opposition Familiale au Couple',
     subtitle: 'Comment le tarot éclaire et apaise le conflit entre votre famille et votre relation',
     gradient: 'from-amber-700 via-orange-700 to-red-700',
-    backLink: { href: '/crise-couple', label: 'Retour aux Crises de Couple' },
+    backLink: { href: '/crise-couple/', label: 'Retour aux Crises de Couple' },
     anchors: [
       { href: '#causes', label: 'Comprendre les Causes', primary: true },
       { href: '#strategies', label: 'Stratégies d\'Apaisement' },
@@ -58,11 +58,11 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/crise-couple', label: 'Crise de Couple : Toutes nos Guidances' },
-    { href: '/crise-couple/sauver-son-couple', label: 'Sauver son Couple' },
-    { href: '/crise-couple/problemes-communication-couple', label: 'Problèmes de Communication' },
-    { href: '/crise-couple/couple-a-distance-voyance', label: 'Couple à Distance' },
-    { href: '/crise-couple/pardonner-en-amour', label: 'Pardonner en Amour' },
+    { href: '/crise-couple/', label: 'Crise de Couple : Toutes nos Guidances' },
+    { href: '/crise-couple/sauver-son-couple/', label: 'Sauver son Couple' },
+    { href: '/crise-couple/problemes-communication-couple/', label: 'Problèmes de Communication' },
+    { href: '/crise-couple/couple-a-distance-voyance/', label: 'Couple à Distance' },
+    { href: '/crise-couple/pardonner-en-amour/', label: 'Pardonner en Amour' },
   ],
 };
 
@@ -79,7 +79,7 @@ export default function OppositionFamilialeCouplePage() {
               Faire face à une <strong>opposition familiale</strong> envers son couple est une épreuve particulièrement douloureuse, tiraillée entre <strong>loyauté familiale</strong> et <strong>amour choisi</strong>. Que l&apos;opposition vienne de différences culturelles, religieuses, sociales ou d&apos;une possessivité parentale, le <strong>tarot familial</strong> permet d&apos;identifier la racine réelle de ce conflit et d&apos;évaluer les chances d&apos;apaisement à moyen terme.
             </p>
             <p className="text-lg leading-relaxed mb-4">
-              Cette situation fragilise souvent le couple lui-même, au-delà du conflit avec la famille. Pour renforcer votre <strong>union</strong> face à cette pression externe, notre guidance sur <Link href="/crise-couple/sauver-son-couple" className="text-orange-700 hover:text-orange-900 underline font-medium">sauver son couple</Link> propose des stratégies complémentaires de consolidation.
+              Cette situation fragilise souvent le couple lui-même, au-delà du conflit avec la famille. Pour renforcer votre <strong>union</strong> face à cette pression externe, notre guidance sur <Link href="/crise-couple/sauver-son-couple/" className="text-orange-700 hover:text-orange-900 underline font-medium">sauver son couple</Link> propose des stratégies complémentaires de consolidation.
             </p>
             <p className="text-lg leading-relaxed">
               Grâce à un <strong>tirage ciblé</strong>, la <strong>voyance relationnelle</strong> révèle si cette opposition est une épreuve temporaire destinée à renforcer votre couple, ou un <strong>signal profond</strong> méritant une attention particulière avant de vous engager davantage.
@@ -157,7 +157,7 @@ export default function OppositionFamilialeCouplePage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">{'⚖️'} Faut-il Choisir Entre l&apos;Amour et la Famille</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Ce choix radical est rarement necessaire : la plupart des oppositions familiales evoluent avec le dialogue, la patience et la demonstration de la solidite du couple dans le temps.</p>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Le véritable danger ne vient pas toujours de l&apos;<strong>opposition elle-même</strong>, mais des <strong>divisions internes</strong> qu&apos;elle provoque au sein du couple si l&apos;un des partenaires cède à la pression familiale sans en discuter ouvertement avec l&apos;autre. Un couple qui traverse cette épreuve unie en ressort généralement renforcé, à condition de préserver une <Link href="/crise-couple/problemes-communication-couple" className="text-orange-700 hover:text-orange-900 underline font-medium">communication transparente</Link> entre les deux partenaires.
+            Le véritable danger ne vient pas toujours de l&apos;<strong>opposition elle-même</strong>, mais des <strong>divisions internes</strong> qu&apos;elle provoque au sein du couple si l&apos;un des partenaires cède à la pression familiale sans en discuter ouvertement avec l&apos;autre. Un couple qui traverse cette épreuve unie en ressort généralement renforcé, à condition de préserver une <Link href="/crise-couple/problemes-communication-couple/" className="text-orange-700 hover:text-orange-900 underline font-medium">communication transparente</Link> entre les deux partenaires.
           </p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Rompre définitivement avec sa famille ou sacrifier sa relation amoureuse sont des décisions extrêmes qui méritent d&apos;être envisagées seulement après avoir épuisé toutes les voies de dialogue et de conciliation possibles.

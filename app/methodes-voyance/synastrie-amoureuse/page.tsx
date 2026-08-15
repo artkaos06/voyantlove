@@ -21,7 +21,7 @@ const config: ContentPageConfig = {
     h1: 'Synastrie Amoureuse',
     subtitle: 'La Compatibilité Astrale de Votre Couple',
     gradient: 'from-indigo-700 via-purple-700 to-violet-700',
-    backLink: { href: '/methodes-voyance', label: 'Retour aux Méthodes de Voyance' },
+    backLink: { href: '/methodes-voyance/', label: 'Retour aux Méthodes de Voyance' },
     anchors: [
       { href: '#calculateur', label: 'Tester Notre Compatibilité', primary: true },
       { href: '#planetes', label: 'Les Planètes Clés' },
@@ -55,11 +55,11 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/methodes-voyance', label: 'Méthodes de Voyance : Toutes nos Approches' },
-    { href: '/methodes-voyance/astrologie-amoureuse', label: 'Astrologie Amoureuse : Comprendre Votre Ciel Sentimental' },
-    { href: '/astrologie-amour', label: 'Les Signes Astrologiques en Amour : Profil de Chaque Signe' },
-    { href: '/sentiments/compatibilite-amoureuse', label: 'Compatibilité Amoureuse : Tous les Indicateurs' },
-    { href: '/sentiments/avenir-amoureux', label: 'L\'Avenir de Votre Couple : Guidance Complète' },
+    { href: '/methodes-voyance/', label: 'Méthodes de Voyance : Toutes nos Approches' },
+    { href: '/methodes-voyance/astrologie-amoureuse/', label: 'Astrologie Amoureuse : Comprendre Votre Ciel Sentimental' },
+    { href: '/astrologie-amour/', label: 'Les Signes Astrologiques en Amour : Profil de Chaque Signe' },
+    { href: '/sentiments/compatibilite-amoureuse/', label: 'Compatibilité Amoureuse : Tous les Indicateurs' },
+    { href: '/sentiments/avenir-amoureux/', label: 'L\'Avenir de Votre Couple : Guidance Complète' },
   ],
 };
 
@@ -80,7 +80,7 @@ export default function SynastrieAmoureusePage() {
             Les <strong>maisons astrologiques</strong> jouent également un rôle clé : les planètes du partenaire qui tombent dans vos maisons sensibles activent ces domaines de vie de manière significative. Une planète dans votre 7e maison (mariage, partenariat) ou votre 5e maison (amour romantique) indique une personne qui joue un rôle central dans ces sphères. La synastrie ne prédit pas l'avenir de manière mécanique, mais elle révèle le tissu énergétique de votre relation avec une profondeur rare.
           </p>
           <p className="text-lg leading-relaxed">
-            Cet article vous guide à travers les planètes essentielles, les aspects déterminants et les maisons cruciales pour comprendre ce que votre carte du ciel commune dit de votre couple. Pour une vision encore plus complète, explorez également notre guide sur l'<Link href="/methodes-voyance/astrologie-amoureuse" className="text-indigo-600 hover:text-indigo-800 underline font-medium">astrologie amoureuse</Link> et ses applications sentimentales.
+            Cet article vous guide à travers les planètes essentielles, les aspects déterminants et les maisons cruciales pour comprendre ce que votre carte du ciel commune dit de votre couple. Pour une vision encore plus complète, explorez également notre guide sur l'<Link href="/methodes-voyance/astrologie-amoureuse/" className="text-indigo-600 hover:text-indigo-800 underline font-medium">astrologie amoureuse</Link> et ses applications sentimentales.
           </p>
         </article>
 
@@ -242,7 +242,7 @@ export default function SynastrieAmoureusePage() {
                 La <strong>7e maison</strong> est la maison du partenariat formel, du mariage, des engagements sérieux et des contrats. C'est la maison la plus directement liée à la question "est-ce que cette personne est mon partenaire de vie ?" En synastrie, lorsque le Soleil, Vénus ou Saturne de votre partenaire touchent votre 7e maison, cette relation a une forte dimension d'engagement et de projet commun.
               </p>
               <p className="text-gray-700">
-                La planète qui occupe le plus souvent la 7e maison d'un partenaire en synastrie correspond souvent à ce que vous cherchez profondément dans un partenaire de vie. Pour en savoir plus sur la <Link href="/sentiments/compatibilite-amoureuse" className="text-indigo-600 hover:text-indigo-800 underline font-medium">compatibilité amoureuse</Link> au-delà de l'astrologie, explorez nos autres analyses sentimentales.
+                La planète qui occupe le plus souvent la 7e maison d'un partenaire en synastrie correspond souvent à ce que vous cherchez profondément dans un partenaire de vie. Pour en savoir plus sur la <Link href="/sentiments/compatibilite-amoureuse/" className="text-indigo-600 hover:text-indigo-800 underline font-medium">compatibilité amoureuse</Link> au-delà de l'astrologie, explorez nos autres analyses sentimentales.
               </p>
             </div>
 
@@ -310,7 +310,7 @@ export default function SynastrieAmoureusePage() {
             <div className="bg-indigo-50 border-l-4 border-indigo-500 p-5 rounded-lg">
               <h4 className="font-bold text-indigo-800 mb-2">&#x1F52E; L'Interprétation Globale Prime sur les Aspects Isolés</h4>
               <p className="text-gray-700">
-                Une synastrie se lit comme un tout, pas comme une liste de bons et mauvais aspects. Un couple avec beaucoup de carrés mais une forte présence de Saturne harmonieux peut être plus durable qu'un couple avec des trigones mais aucune planète d'engagement. Pour explorer comment votre synastrie s'inscrit dans <Link href="/sentiments/avenir-amoureux" className="text-indigo-600 hover:text-indigo-800 underline font-medium">l'avenir de votre couple</Link>, une consultation personnalisée offre la lecture la plus juste de votre situation spécifique.
+                Une synastrie se lit comme un tout, pas comme une liste de bons et mauvais aspects. Un couple avec beaucoup de carrés mais une forte présence de Saturne harmonieux peut être plus durable qu'un couple avec des trigones mais aucune planète d'engagement. Pour explorer comment votre synastrie s'inscrit dans <Link href="/sentiments/avenir-amoureux/" className="text-indigo-600 hover:text-indigo-800 underline font-medium">l'avenir de votre couple</Link>, une consultation personnalisée offre la lecture la plus juste de votre situation spécifique.
               </p>
             </div>
           </div>

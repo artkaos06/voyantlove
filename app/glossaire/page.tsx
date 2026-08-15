@@ -106,12 +106,12 @@ export default function GlossaireHubPage() {
         <div className="bg-gray-100 rounded-xl p-6 mb-8 max-w-4xl mx-auto">
           <h2 className="font-bold text-lg mb-4 text-gray-900">🔮 Aller plus loin</h2>
           <div className="grid sm:grid-cols-2 gap-2">
-            <Link href="/methodes-voyance" className="block text-indigo-600 hover:text-indigo-800 font-medium">&rarr; Les méthodes de voyance amoureuse</Link>
-            <Link href="/tarot-amour" className="block text-indigo-600 hover:text-indigo-800 font-medium">&rarr; Tarot amour : signification des cartes</Link>
-            <Link href="/astrologie-amour" className="block text-indigo-600 hover:text-indigo-800 font-medium">&rarr; Signes astrologiques en amour</Link>
-            <Link href="/reves-amour" className="block text-indigo-600 hover:text-indigo-800 font-medium">&rarr; Interprétation des rêves amoureux</Link>
-            <Link href="/compatibilite-amoureuse" className="block text-indigo-600 hover:text-indigo-800 font-medium">&rarr; Compatibilité amoureuse par signes</Link>
-            <Link href="/voyance-amour" className="block text-indigo-600 hover:text-indigo-800 font-medium">&rarr; Voyance amour : tout savoir</Link>
+            <Link href="/methodes-voyance/" className="block text-indigo-600 hover:text-indigo-800 font-medium">&rarr; Les méthodes de voyance amoureuse</Link>
+            <Link href="/tarot-amour/" className="block text-indigo-600 hover:text-indigo-800 font-medium">&rarr; Tarot amour : signification des cartes</Link>
+            <Link href="/astrologie-amour/" className="block text-indigo-600 hover:text-indigo-800 font-medium">&rarr; Signes astrologiques en amour</Link>
+            <Link href="/reves-amour/" className="block text-indigo-600 hover:text-indigo-800 font-medium">&rarr; Interprétation des rêves amoureux</Link>
+            <Link href="/compatibilite-amoureuse/" className="block text-indigo-600 hover:text-indigo-800 font-medium">&rarr; Compatibilité amoureuse par signes</Link>
+            <Link href="/voyance-amour/" className="block text-indigo-600 hover:text-indigo-800 font-medium">&rarr; Voyance amour : tout savoir</Link>
           </div>
         </div>
 

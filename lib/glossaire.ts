@@ -128,7 +128,7 @@ export function getGlossaryHubCards() {
     emoji: t.emoji,
     categorie: t.categorie,
     definitionCourte: t.definitionCourte,
-    href: `/glossaire/${t.slug}`,
+    href: `/glossaire/${t.slug}/`,
   }));
 }
 
@@ -165,8 +165,8 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     ],
     termesLies: ['connexion-ames', 'corde-karmique', 'contrat-ame'],
     liensSite: [
-      { label: 'Crise de couple : nos guidances', href: '/crise-couple' },
-      { label: 'Reconquête amoureuse', href: '/reconquete' },
+      { label: 'Crise de couple : nos guidances', href: '/crise-couple/' },
+      { label: 'Reconquête amoureuse', href: '/reconquete/' },
     ],
     faq: [
       {
@@ -204,8 +204,8 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     ],
     termesLies: ['amour-karmique', 'connexion-ames', 'guide-spirituel'],
     liensSite: [
-      { label: 'Nouvelle rencontre amoureuse', href: '/nouvelle-rencontre' },
-      { label: 'Voyance amour', href: '/voyance-amour' },
+      { label: 'Nouvelle rencontre amoureuse', href: '/nouvelle-rencontre/' },
+      { label: 'Voyance amour', href: '/voyance-amour/' },
     ],
     faq: [
       {
@@ -243,8 +243,8 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     ],
     termesLies: ['amour-karmique', 'contrat-ame', 'synchronicite-amoureuse'],
     liensSite: [
-      { label: 'Savoir si c’est l’amour', href: '/sentiments/savoir-si-cest-lamour' },
-      { label: 'Compatibilité amoureuse', href: '/compatibilite-amoureuse' },
+      { label: 'Savoir si c’est l’amour', href: '/sentiments/savoir-si-cest-lamour/' },
+      { label: 'Compatibilité amoureuse', href: '/compatibilite-amoureuse/' },
     ],
     faq: [
       {
@@ -282,8 +282,8 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     ],
     termesLies: ['amour-karmique', 'blocage-energetique-amoureux', 'protection-energetique-amour'],
     liensSite: [
-      { label: 'Oublier son ex', href: '/rupture/oublier-son-ex' },
-      { label: 'Guérir après une rupture', href: '/rupture/guerir-rupture' },
+      { label: 'Oublier son ex', href: '/rupture/oublier-son-ex/' },
+      { label: 'Guérir après une rupture', href: '/rupture/guerir-rupture/' },
     ],
     faq: [
       {
@@ -321,8 +321,8 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     ],
     termesLies: ['signe-du-destin', 'plume-blanche', 'heures-miroir'],
     liensSite: [
-      { label: 'Pense-t-il/elle à moi ?', href: '/sentiments/pense-t-il-elle-a-moi' },
-      { label: 'Quand vais-je rencontrer l’amour ?', href: '/nouvelle-rencontre/quand-rencontre-amour' },
+      { label: 'Pense-t-il/elle à moi ?', href: '/sentiments/pense-t-il-elle-a-moi/' },
+      { label: 'Quand vais-je rencontrer l’amour ?', href: '/nouvelle-rencontre/quand-rencontre-amour/' },
     ],
     faq: [
       {
@@ -360,8 +360,8 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     ],
     termesLies: ['synchronicite-amoureuse', 'plume-blanche', 'heures-miroir'],
     liensSite: [
-      { label: 'Savoir si c’est l’amour', href: '/sentiments/savoir-si-cest-lamour' },
-      { label: 'Rencontre amoureuse en ligne', href: '/nouvelle-rencontre/rencontre-amoureuse-en-ligne' },
+      { label: 'Savoir si c’est l’amour', href: '/sentiments/savoir-si-cest-lamour/' },
+      { label: 'Rencontre amoureuse en ligne', href: '/nouvelle-rencontre/rencontre-amoureuse-en-ligne/' },
     ],
     faq: [
       {
@@ -399,8 +399,8 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     ],
     termesLies: ['manifestation-amoureuse', 'blocage-energetique-amoureux', 'heures-miroir'],
     liensSite: [
-      { label: 'Quand vais-je rencontrer l’amour ?', href: '/nouvelle-rencontre/quand-rencontre-amour' },
-      { label: 'Trouver l’âme sœur', href: '/nouvelle-rencontre/trouver-ame-soeur' },
+      { label: 'Quand vais-je rencontrer l’amour ?', href: '/nouvelle-rencontre/quand-rencontre-amour/' },
+      { label: 'Trouver l’âme sœur', href: '/nouvelle-rencontre/trouver-ame-soeur/' },
     ],
     faq: [
       {
@@ -438,8 +438,8 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     ],
     termesLies: ['loi-attraction-amour', 'pleine-lune-amour', 'blocage-energetique-amoureux'],
     liensSite: [
-      { label: 'Trouver l’âme sœur', href: '/nouvelle-rencontre/trouver-ame-soeur' },
-      { label: 'Voyance amour gratuite', href: '/voyance-gratuite-amour' },
+      { label: 'Trouver l’âme sœur', href: '/nouvelle-rencontre/trouver-ame-soeur/' },
+      { label: 'Voyance amour gratuite', href: '/voyance-gratuite-amour/' },
     ],
     faq: [
       {
@@ -477,8 +477,8 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     ],
     termesLies: ['chakra-du-coeur', 'corde-karmique', 'protection-energetique-amour'],
     liensSite: [
-      { label: 'Peur d’aimer à nouveau', href: '/nouvelle-rencontre/peur-de-aimer-a-nouveau' },
-      { label: 'Voyance célibat et trouver l’amour', href: '/nouvelle-rencontre/voyance-celibat-trouver-lamour' },
+      { label: 'Peur d’aimer à nouveau', href: '/nouvelle-rencontre/peur-de-aimer-a-nouveau/' },
+      { label: 'Voyance célibat et trouver l’amour', href: '/nouvelle-rencontre/voyance-celibat-trouver-lamour/' },
     ],
     faq: [
       {
@@ -516,8 +516,8 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     ],
     termesLies: ['blocage-energetique-amoureux', 'aura', 'troisieme-oeil'],
     liensSite: [
-      { label: 'Relation toxique', href: '/sentiments/relation-toxique' },
-      { label: 'Guérir après une rupture', href: '/rupture/guerir-rupture' },
+      { label: 'Relation toxique', href: '/sentiments/relation-toxique/' },
+      { label: 'Guérir après une rupture', href: '/rupture/guerir-rupture/' },
     ],
     faq: [
       {
@@ -555,8 +555,8 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     ],
     termesLies: ['chakra-du-coeur', 'troisieme-oeil', 'clairvoyance'],
     liensSite: [
-      { label: 'Voyance sentimentale', href: '/methodes-voyance/voyance-sentimentale' },
-      { label: 'Compatibilité amoureuse', href: '/compatibilite-amoureuse' },
+      { label: 'Voyance sentimentale', href: '/methodes-voyance/voyance-sentimentale/' },
+      { label: 'Compatibilité amoureuse', href: '/compatibilite-amoureuse/' },
     ],
     faq: [
       {
@@ -594,8 +594,8 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     ],
     termesLies: ['channeling', 'clairaudience', 'contrat-ame'],
     liensSite: [
-      { label: 'Voyance amour', href: '/voyance-amour' },
-      { label: 'Voyance par téléphone', href: '/methodes-voyance/voyance-telephone-amour' },
+      { label: 'Voyance amour', href: '/voyance-amour/' },
+      { label: 'Voyance par téléphone', href: '/methodes-voyance/voyance-telephone-amour/' },
     ],
     faq: [
       {
@@ -633,8 +633,8 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     ],
     termesLies: ['guide-spirituel', 'clairaudience', 'voyance-blanche'],
     liensSite: [
-      { label: 'Voyance par chat', href: '/methodes-voyance/voyance-par-chat-amour' },
-      { label: 'Voyance sentimentale', href: '/methodes-voyance/voyance-sentimentale' },
+      { label: 'Voyance par chat', href: '/methodes-voyance/voyance-par-chat-amour/' },
+      { label: 'Voyance sentimentale', href: '/methodes-voyance/voyance-sentimentale/' },
     ],
     faq: [
       {
@@ -672,8 +672,8 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     ],
     termesLies: ['clairvoyance', 'clairaudience', 'channeling'],
     liensSite: [
-      { label: 'Voyance sentimentale', href: '/methodes-voyance/voyance-sentimentale' },
-      { label: 'Voyance par téléphone', href: '/methodes-voyance/voyance-telephone-amour' },
+      { label: 'Voyance sentimentale', href: '/methodes-voyance/voyance-sentimentale/' },
+      { label: 'Voyance par téléphone', href: '/methodes-voyance/voyance-telephone-amour/' },
     ],
     faq: [
       {
@@ -711,8 +711,8 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     ],
     termesLies: ['clairvoyance', 'aura', 'chakra-du-coeur'],
     liensSite: [
-      { label: 'Signes qu’il/elle m’aime', href: '/sentiments/signes-il-elle-maime' },
-      { label: 'Que ressent-il/elle pour moi', href: '/sentiments/que-ressent-il-elle-pour-moi' },
+      { label: 'Signes qu’il/elle m’aime', href: '/sentiments/signes-il-elle-maime/' },
+      { label: 'Que ressent-il/elle pour moi', href: '/sentiments/que-ressent-il-elle-pour-moi/' },
     ],
     faq: [
       {
@@ -750,8 +750,8 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     ],
     termesLies: ['clairaudience', 'troisieme-oeil', 'voyance-blanche'],
     liensSite: [
-      { label: 'Voyance par chat', href: '/methodes-voyance/voyance-par-chat-amour' },
-      { label: 'Avenir amoureux', href: '/sentiments/avenir-amoureux' },
+      { label: 'Voyance par chat', href: '/methodes-voyance/voyance-par-chat-amour/' },
+      { label: 'Avenir amoureux', href: '/sentiments/avenir-amoureux/' },
     ],
     faq: [
       {
@@ -789,8 +789,8 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     ],
     termesLies: ['clairvoyance', 'channeling', 'guide-spirituel'],
     liensSite: [
-      { label: 'Voyance par téléphone', href: '/methodes-voyance/voyance-telephone-amour' },
-      { label: 'Pense-t-il/elle à moi ?', href: '/sentiments/pense-t-il-elle-a-moi' },
+      { label: 'Voyance par téléphone', href: '/methodes-voyance/voyance-telephone-amour/' },
+      { label: 'Pense-t-il/elle à moi ?', href: '/sentiments/pense-t-il-elle-a-moi/' },
     ],
     faq: [
       {
@@ -828,8 +828,8 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     ],
     termesLies: ['signe-du-destin', 'synchronicite-amoureuse', 'guide-spirituel'],
     liensSite: [
-      { label: 'Savoir si c’est l’amour', href: '/sentiments/savoir-si-cest-lamour' },
-      { label: 'Signes de l’âme sœur', href: '/nouvelle-rencontre/signes-ame-soeur' },
+      { label: 'Savoir si c’est l’amour', href: '/sentiments/savoir-si-cest-lamour/' },
+      { label: 'Signes de l’âme sœur', href: '/nouvelle-rencontre/signes-ame-soeur/' },
     ],
     faq: [
       {
@@ -867,8 +867,8 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     ],
     termesLies: ['empathe', 'blocage-energetique-amoureux', 'corde-karmique'],
     liensSite: [
-      { label: 'Crise de couple', href: '/crise-couple' },
-      { label: 'Relation toxique', href: '/sentiments/relation-toxique' },
+      { label: 'Crise de couple', href: '/crise-couple/' },
+      { label: 'Relation toxique', href: '/sentiments/relation-toxique/' },
     ],
     faq: [
       {
@@ -906,8 +906,8 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     ],
     termesLies: ['peur-de-labandon', 'attachement-anxieux', 'sabotage-amoureux'],
     liensSite: [
-      { label: 'Problèmes de communication en couple', href: '/crise-couple/problemes-communication-couple' },
-      { label: 'Jalousie excessive', href: '/crise-couple/jalousie-excessive' },
+      { label: 'Problèmes de communication en couple', href: '/crise-couple/problemes-communication-couple/' },
+      { label: 'Jalousie excessive', href: '/crise-couple/jalousie-excessive/' },
     ],
     faq: [
       {
@@ -945,8 +945,8 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     ],
     termesLies: ['signe-du-destin', 'synchronicite-amoureuse', 'numerologie'],
     liensSite: [
-      { label: 'Numérologie amoureuse', href: '/methodes-voyance/numerologie-amoureuse' },
-      { label: 'Pense-t-il/elle à moi ?', href: '/sentiments/pense-t-il-elle-a-moi' },
+      { label: 'Numérologie amoureuse', href: '/methodes-voyance/numerologie-amoureuse/' },
+      { label: 'Pense-t-il/elle à moi ?', href: '/sentiments/pense-t-il-elle-a-moi/' },
     ],
     faq: [
       {
@@ -988,9 +988,9 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     ],
     termesLies: ['theme-composite', 'signe-lunaire', 'aspect-astrologique'],
     liensSite: [
-      { label: 'Ascendant en amour', href: '/methodes-voyance/ascendant-amour' },
-      { label: 'Synastrie amoureuse', href: '/methodes-voyance/synastrie-amoureuse' },
-      { label: 'Astrologie amoureuse', href: '/methodes-voyance/astrologie-amoureuse' },
+      { label: 'Ascendant en amour', href: '/methodes-voyance/ascendant-amour/' },
+      { label: 'Synastrie amoureuse', href: '/methodes-voyance/synastrie-amoureuse/' },
+      { label: 'Astrologie amoureuse', href: '/methodes-voyance/astrologie-amoureuse/' },
     ],
     faq: [
       {
@@ -1028,8 +1028,8 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     ],
     termesLies: ['ascendant', 'aspect-astrologique', 'element-astrologique'],
     liensSite: [
-      { label: 'Synastrie amoureuse', href: '/methodes-voyance/synastrie-amoureuse' },
-      { label: 'Compatibilité amoureuse', href: '/compatibilite-amoureuse' },
+      { label: 'Synastrie amoureuse', href: '/methodes-voyance/synastrie-amoureuse/' },
+      { label: 'Compatibilité amoureuse', href: '/compatibilite-amoureuse/' },
     ],
     faq: [
       {
@@ -1067,8 +1067,8 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     ],
     termesLies: ['ascendant', 'noeud-lunaire', 'signe-lunaire'],
     liensSite: [
-      { label: 'Astrologie amoureuse', href: '/methodes-voyance/astrologie-amoureuse' },
-      { label: 'Relation toxique', href: '/sentiments/relation-toxique' },
+      { label: 'Astrologie amoureuse', href: '/methodes-voyance/astrologie-amoureuse/' },
+      { label: 'Relation toxique', href: '/sentiments/relation-toxique/' },
     ],
     faq: [
       {
@@ -1106,8 +1106,8 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     ],
     termesLies: ['lune-noire', 'amour-karmique', 'ascendant'],
     liensSite: [
-      { label: 'Sentiments non partagés', href: '/sentiments/sentiments-non-partages' },
-      { label: 'Dépendance affective', href: '/crise-couple/dependance-affective' },
+      { label: 'Sentiments non partagés', href: '/sentiments/sentiments-non-partages/' },
+      { label: 'Dépendance affective', href: '/crise-couple/dependance-affective/' },
     ],
     faq: [
       {
@@ -1145,8 +1145,8 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     ],
     termesLies: ['ascendant', 'theme-composite', 'element-astrologique'],
     liensSite: [
-      { label: 'Synastrie amoureuse', href: '/methodes-voyance/synastrie-amoureuse' },
-      { label: 'Astrologie amoureuse', href: '/methodes-voyance/astrologie-amoureuse' },
+      { label: 'Synastrie amoureuse', href: '/methodes-voyance/synastrie-amoureuse/' },
+      { label: 'Astrologie amoureuse', href: '/methodes-voyance/astrologie-amoureuse/' },
     ],
     faq: [
       {
@@ -1184,8 +1184,8 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     ],
     termesLies: ['aspect-astrologique', 'retour-de-saturne', 'pleine-lune-amour'],
     liensSite: [
-      { label: 'Ex qui revient', href: '/reconquete/ex-qui-revient' },
-      { label: 'Astrologie amoureuse', href: '/methodes-voyance/astrologie-amoureuse' },
+      { label: 'Ex qui revient', href: '/reconquete/ex-qui-revient/' },
+      { label: 'Astrologie amoureuse', href: '/methodes-voyance/astrologie-amoureuse/' },
     ],
     faq: [
       {
@@ -1223,8 +1223,8 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     ],
     termesLies: ['venus-retrograde', 'aspect-astrologique', 'theme-composite'],
     liensSite: [
-      { label: 'Amour après 40 ans', href: '/nouvelle-rencontre/amour-apres-40-ans' },
-      { label: 'Avenir amoureux', href: '/sentiments/avenir-amoureux' },
+      { label: 'Amour après 40 ans', href: '/nouvelle-rencontre/amour-apres-40-ans/' },
+      { label: 'Avenir amoureux', href: '/sentiments/avenir-amoureux/' },
     ],
     faq: [
       {
@@ -1262,8 +1262,8 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     ],
     termesLies: ['manifestation-amoureuse', 'venus-retrograde', 'signe-lunaire'],
     liensSite: [
-      { label: 'Horoscope amour 2026', href: '/voyance-gratuite-amour/horoscope-amour-2026' },
-      { label: 'Crise de couple', href: '/crise-couple' },
+      { label: 'Horoscope amour 2026', href: '/voyance-gratuite-amour/horoscope-amour-2026/' },
+      { label: 'Crise de couple', href: '/crise-couple/' },
     ],
     faq: [
       {
@@ -1301,8 +1301,8 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     ],
     termesLies: ['ascendant', 'lune-noire', 'pleine-lune-amour'],
     liensSite: [
-      { label: 'Signes en amour par signe astrologique', href: '/astrologie-amour' },
-      { label: 'Synastrie amoureuse', href: '/methodes-voyance/synastrie-amoureuse' },
+      { label: 'Signes en amour par signe astrologique', href: '/astrologie-amour/' },
+      { label: 'Synastrie amoureuse', href: '/methodes-voyance/synastrie-amoureuse/' },
     ],
     faq: [
       {
@@ -1340,8 +1340,8 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     ],
     termesLies: ['ascendant', 'aspect-astrologique', 'theme-composite'],
     liensSite: [
-      { label: 'Compatibilité amoureuse par signes', href: '/compatibilite-amoureuse' },
-      { label: 'Astrologie amoureuse', href: '/methodes-voyance/astrologie-amoureuse' },
+      { label: 'Compatibilité amoureuse par signes', href: '/compatibilite-amoureuse/' },
+      { label: 'Astrologie amoureuse', href: '/methodes-voyance/astrologie-amoureuse/' },
     ],
     faq: [
       {
@@ -1383,8 +1383,8 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     ],
     termesLies: ['nombre-maitre', 'heures-miroir', 'aspect-astrologique'],
     liensSite: [
-      { label: 'Numérologie amoureuse', href: '/methodes-voyance/numerologie-amoureuse' },
-      { label: 'Compatibilité amoureuse', href: '/compatibilite-amoureuse' },
+      { label: 'Numérologie amoureuse', href: '/methodes-voyance/numerologie-amoureuse/' },
+      { label: 'Compatibilité amoureuse', href: '/compatibilite-amoureuse/' },
     ],
     faq: [
       {
@@ -1422,8 +1422,8 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     ],
     termesLies: ['numerologie', 'heures-miroir', 'amour-karmique'],
     liensSite: [
-      { label: 'Numérologie amoureuse', href: '/methodes-voyance/numerologie-amoureuse' },
-      { label: 'Voyance amour gratuite', href: '/voyance-gratuite-amour' },
+      { label: 'Numérologie amoureuse', href: '/methodes-voyance/numerologie-amoureuse/' },
+      { label: 'Voyance amour gratuite', href: '/voyance-gratuite-amour/' },
     ],
     faq: [
       {
@@ -1465,8 +1465,8 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     ],
     termesLies: ['cristallomancie', 'tasseographie', 'arcane-majeur'],
     liensSite: [
-      { label: 'Lignes de la main et amour', href: '/methodes-voyance/lignes-de-la-main-amour' },
-      { label: 'Méthodes de voyance', href: '/methodes-voyance' },
+      { label: 'Lignes de la main et amour', href: '/methodes-voyance/lignes-de-la-main-amour/' },
+      { label: 'Méthodes de voyance', href: '/methodes-voyance/' },
     ],
     faq: [
       {
@@ -1504,8 +1504,8 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     ],
     termesLies: ['chiromancie', 'tasseographie', 'voyance-blanche'],
     liensSite: [
-      { label: 'Boule de cristal et amour', href: '/methodes-voyance/boule-de-cristal-amour' },
-      { label: 'Voyance sentimentale', href: '/methodes-voyance/voyance-sentimentale' },
+      { label: 'Boule de cristal et amour', href: '/methodes-voyance/boule-de-cristal-amour/' },
+      { label: 'Voyance sentimentale', href: '/methodes-voyance/voyance-sentimentale/' },
     ],
     faq: [
       {
@@ -1543,8 +1543,8 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     ],
     termesLies: ['chiromancie', 'cristallomancie', 'carte-inversee'],
     liensSite: [
-      { label: 'Marc de café et amour', href: '/methodes-voyance/marc-de-cafe-amour' },
-      { label: 'Oracle de l’amour', href: '/methodes-voyance/oracle-amour' },
+      { label: 'Marc de café et amour', href: '/methodes-voyance/marc-de-cafe-amour/' },
+      { label: 'Oracle de l’amour', href: '/methodes-voyance/oracle-amour/' },
     ],
     faq: [
       {
@@ -1582,8 +1582,8 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     ],
     termesLies: ['carte-inversee', 'arcane-majeur', 'chiromancie'],
     liensSite: [
-      { label: 'Cartomancie et amour', href: '/methodes-voyance/cartomancie-amour' },
-      { label: 'Tirage tarot amour', href: '/methodes-voyance/tirage-tarot-amour' },
+      { label: 'Cartomancie et amour', href: '/methodes-voyance/cartomancie-amour/' },
+      { label: 'Tirage tarot amour', href: '/methodes-voyance/tirage-tarot-amour/' },
     ],
     faq: [
       {
@@ -1621,8 +1621,8 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     ],
     termesLies: ['arcane-mineur', 'carte-inversee', 'petit-lenormand'],
     liensSite: [
-      { label: 'Tarologie amoureuse', href: '/methodes-voyance/tarologie-amoureuse' },
-      { label: 'Tarot amour : signification des cartes', href: '/tarot-amour' },
+      { label: 'Tarologie amoureuse', href: '/methodes-voyance/tarologie-amoureuse/' },
+      { label: 'Tarot amour : signification des cartes', href: '/tarot-amour/' },
     ],
     faq: [
       {
@@ -1660,8 +1660,8 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     ],
     termesLies: ['arcane-majeur', 'carte-inversee', 'petit-lenormand'],
     liensSite: [
-      { label: 'Tirage tarot amour', href: '/methodes-voyance/tirage-tarot-amour' },
-      { label: 'Tarot amour : signification des cartes', href: '/tarot-amour' },
+      { label: 'Tirage tarot amour', href: '/methodes-voyance/tirage-tarot-amour/' },
+      { label: 'Tarot amour : signification des cartes', href: '/tarot-amour/' },
     ],
     faq: [
       {
@@ -1699,8 +1699,8 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     ],
     termesLies: ['arcane-majeur', 'arcane-mineur', 'petit-lenormand'],
     liensSite: [
-      { label: 'Tirage tarot amour', href: '/methodes-voyance/tirage-tarot-amour' },
-      { label: 'Oracle de l’amour', href: '/methodes-voyance/oracle-amour' },
+      { label: 'Tirage tarot amour', href: '/methodes-voyance/tirage-tarot-amour/' },
+      { label: 'Oracle de l’amour', href: '/methodes-voyance/oracle-amour/' },
     ],
     faq: [
       {
@@ -1738,8 +1738,8 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     ],
     termesLies: ['chakra-du-coeur', 'manifestation-amoureuse', 'feng-shui-amour'],
     liensSite: [
-      { label: 'Pendule amour', href: '/methodes-voyance/pendule-amour' },
-      { label: 'Trouver l’âme sœur', href: '/nouvelle-rencontre/trouver-ame-soeur' },
+      { label: 'Pendule amour', href: '/methodes-voyance/pendule-amour/' },
+      { label: 'Trouver l’âme sœur', href: '/nouvelle-rencontre/trouver-ame-soeur/' },
     ],
     faq: [
       {
@@ -1777,8 +1777,8 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     ],
     termesLies: ['lithotherapie-amoureuse', 'manifestation-amoureuse', 'pleine-lune-amour'],
     liensSite: [
-      { label: 'Trouver l’âme sœur', href: '/nouvelle-rencontre/trouver-ame-soeur' },
-      { label: 'Voyance célibat et trouver l’amour', href: '/nouvelle-rencontre/voyance-celibat-trouver-lamour' },
+      { label: 'Trouver l’âme sœur', href: '/nouvelle-rencontre/trouver-ame-soeur/' },
+      { label: 'Voyance célibat et trouver l’amour', href: '/nouvelle-rencontre/voyance-celibat-trouver-lamour/' },
     ],
     faq: [
       {
@@ -1820,8 +1820,8 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     ],
     termesLies: ['attachement-evitant', 'peur-de-labandon', 'ombre-shadow-work'],
     liensSite: [
-      { label: 'Sentiments non partagés', href: '/sentiments/sentiments-non-partages' },
-      { label: 'Dépendance affective', href: '/crise-couple/dependance-affective' },
+      { label: 'Sentiments non partagés', href: '/sentiments/sentiments-non-partages/' },
+      { label: 'Dépendance affective', href: '/crise-couple/dependance-affective/' },
     ],
     faq: [
       {
@@ -1859,8 +1859,8 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     ],
     termesLies: ['attachement-anxieux', 'peur-de-labandon', 'sabotage-amoureux'],
     liensSite: [
-      { label: 'Peur d’aimer à nouveau', href: '/nouvelle-rencontre/peur-de-aimer-a-nouveau' },
-      { label: 'Problèmes de communication en couple', href: '/crise-couple/problemes-communication-couple' },
+      { label: 'Peur d’aimer à nouveau', href: '/nouvelle-rencontre/peur-de-aimer-a-nouveau/' },
+      { label: 'Problèmes de communication en couple', href: '/crise-couple/problemes-communication-couple/' },
     ],
     faq: [
       {
@@ -1898,8 +1898,8 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     ],
     termesLies: ['pervers-narcissique', 'peur-de-labandon', 'sabotage-amoureux'],
     liensSite: [
-      { label: 'Relation toxique', href: '/sentiments/relation-toxique' },
-      { label: 'Emprise amoureuse', href: '/crise-couple/emprise-amoureuse-voyance' },
+      { label: 'Relation toxique', href: '/sentiments/relation-toxique/' },
+      { label: 'Emprise amoureuse', href: '/crise-couple/emprise-amoureuse-voyance/' },
     ],
     faq: [
       {
@@ -1937,8 +1937,8 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     ],
     termesLies: ['love-bombing', 'sabotage-amoureux', 'peur-de-labandon'],
     liensSite: [
-      { label: 'Emprise amoureuse', href: '/crise-couple/emprise-amoureuse-voyance' },
-      { label: 'Relation toxique', href: '/sentiments/relation-toxique' },
+      { label: 'Emprise amoureuse', href: '/crise-couple/emprise-amoureuse-voyance/' },
+      { label: 'Relation toxique', href: '/sentiments/relation-toxique/' },
     ],
     faq: [
       {
@@ -1976,8 +1976,8 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     ],
     termesLies: ['sabotage-amoureux', 'attachement-evitant', 'empathe'],
     liensSite: [
-      { label: 'Problèmes de communication en couple', href: '/crise-couple/problemes-communication-couple' },
-      { label: 'Reconnecter son couple', href: '/crise-couple/reconnecter-son-couple' },
+      { label: 'Problèmes de communication en couple', href: '/crise-couple/problemes-communication-couple/' },
+      { label: 'Reconnecter son couple', href: '/crise-couple/reconnecter-son-couple/' },
     ],
     faq: [
       {
@@ -2015,8 +2015,8 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     ],
     termesLies: ['rebond-amoureux', 'peur-de-labandon', 'sabotage-amoureux'],
     liensSite: [
-      { label: 'Savoir si c’est l’amour', href: '/sentiments/savoir-si-cest-lamour' },
-      { label: 'Que ressent-il/elle pour moi', href: '/sentiments/que-ressent-il-elle-pour-moi' },
+      { label: 'Savoir si c’est l’amour', href: '/sentiments/savoir-si-cest-lamour/' },
+      { label: 'Que ressent-il/elle pour moi', href: '/sentiments/que-ressent-il-elle-pour-moi/' },
     ],
     faq: [
       {
@@ -2054,8 +2054,8 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     ],
     termesLies: ['limerence', 'peur-de-labandon', 'sabotage-amoureux'],
     liensSite: [
-      { label: 'Oublier son ex', href: '/rupture/oublier-son-ex' },
-      { label: 'Nouvelle relation amoureuse', href: '/nouvelle-rencontre/nouvelle-relation-amoureuse' },
+      { label: 'Oublier son ex', href: '/rupture/oublier-son-ex/' },
+      { label: 'Nouvelle relation amoureuse', href: '/nouvelle-rencontre/nouvelle-relation-amoureuse/' },
     ],
     faq: [
       {
@@ -2093,8 +2093,8 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     ],
     termesLies: ['attachement-anxieux', 'attachement-evitant', 'ombre-shadow-work'],
     liensSite: [
-      { label: 'Jalousie excessive', href: '/crise-couple/jalousie-excessive' },
-      { label: 'Dépendance affective', href: '/crise-couple/dependance-affective' },
+      { label: 'Jalousie excessive', href: '/crise-couple/jalousie-excessive/' },
+      { label: 'Dépendance affective', href: '/crise-couple/dependance-affective/' },
     ],
     faq: [
       {
@@ -2132,8 +2132,8 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     ],
     termesLies: ['protection-energetique-amour', 'chakra-du-coeur', 'charge-mentale'],
     liensSite: [
-      { label: 'Relation toxique', href: '/sentiments/relation-toxique' },
-      { label: 'Crise de couple', href: '/crise-couple' },
+      { label: 'Relation toxique', href: '/sentiments/relation-toxique/' },
+      { label: 'Crise de couple', href: '/crise-couple/' },
     ],
     faq: [
       {
@@ -2171,8 +2171,8 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     ],
     termesLies: ['peur-de-labandon', 'ombre-shadow-work', 'attachement-evitant'],
     liensSite: [
-      { label: 'Peur d’aimer à nouveau', href: '/nouvelle-rencontre/peur-de-aimer-a-nouveau' },
-      { label: 'Confiance en soi après divorce', href: '/rupture/confiance-en-soi-apres-divorce' },
+      { label: 'Peur d’aimer à nouveau', href: '/nouvelle-rencontre/peur-de-aimer-a-nouveau/' },
+      { label: 'Confiance en soi après divorce', href: '/rupture/confiance-en-soi-apres-divorce/' },
     ],
     faq: [
       {

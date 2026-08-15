@@ -83,7 +83,7 @@ export default function HomePage() {
               className="bg-white text-brand-purple px-8 py-4 rounded-lg font-semibold hover:shadow-lg transition"
             />
             <Link
-              href="/consulter"
+              href="/consulter/"
               className="bg-transparent border-2 border-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-brand-purple transition"
             >
               Voir nos Voyants Disponibles
@@ -198,7 +198,7 @@ export default function HomePage() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Network 1: Reconquête */}
-            <Link href="/reconquete" className="group">
+            <Link href="/reconquete/" className="group">
               <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition border-t-4 border-purple-600">
                 <div className="text-4xl mb-4">💜</div>
                 <h3 className="text-xl font-bold mb-2 group-hover:text-purple-600 transition">
@@ -214,7 +214,7 @@ export default function HomePage() {
             </Link>
 
             {/* Network 2: Rupture */}
-            <Link href="/rupture" className="group">
+            <Link href="/rupture/" className="group">
               <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition border-t-4 border-gray-700">
                 <div className="text-4xl mb-4">💔</div>
                 <h3 className="text-xl font-bold mb-2 group-hover:text-gray-700 transition">
@@ -230,7 +230,7 @@ export default function HomePage() {
             </Link>
 
             {/* Network 3: Nouvelle Rencontre */}
-            <Link href="/nouvelle-rencontre" className="group">
+            <Link href="/nouvelle-rencontre/" className="group">
               <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition border-t-4 border-cyan-500">
                 <div className="text-4xl mb-4">✨</div>
                 <h3 className="text-xl font-bold mb-2 group-hover:text-cyan-500 transition">
@@ -246,7 +246,7 @@ export default function HomePage() {
             </Link>
 
             {/* Network 4: Sentiments */}
-            <Link href="/sentiments" className="group">
+            <Link href="/sentiments/" className="group">
               <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition border-t-4 border-red-500">
                 <div className="text-4xl mb-4">💖</div>
                 <h3 className="text-xl font-bold mb-2 group-hover:text-red-500 transition">
@@ -262,7 +262,7 @@ export default function HomePage() {
             </Link>
 
             {/* Network 5: Crise de Couple */}
-            <Link href="/crise-couple" className="group">
+            <Link href="/crise-couple/" className="group">
               <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition border-t-4 border-orange-500">
                 <div className="text-4xl mb-4">⚠️</div>
                 <h3 className="text-xl font-bold mb-2 group-hover:text-orange-500 transition">
@@ -278,7 +278,7 @@ export default function HomePage() {
             </Link>
 
             {/* Network 6: Méthodes de Voyance */}
-            <Link href="/methodes-voyance" className="group">
+            <Link href="/methodes-voyance/" className="group">
               <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition border-t-4 border-indigo-500">
                 <div className="text-4xl mb-4">🔮</div>
                 <h3 className="text-xl font-bold mb-2 group-hover:text-indigo-500 transition">
@@ -294,7 +294,7 @@ export default function HomePage() {
             </Link>
 
             {/* Network 7: Voyance Gratuite Amour */}
-            <Link href="/voyance-gratuite-amour" className="group">
+            <Link href="/voyance-gratuite-amour/" className="group">
               <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition border-t-4 border-green-500">
                 <div className="text-4xl mb-4">🌟</div>
                 <h3 className="text-xl font-bold mb-2 group-hover:text-green-500 transition">
@@ -347,7 +347,7 @@ export default function HomePage() {
 
           <div className="text-center">
             <p className="text-gray-600 mb-4">Vous voulez en savoir plus sur nos méthodes et notre approche ?</p>
-            <Link href="/voyance-amour" className="text-purple-600 hover:text-purple-800 underline font-semibold">
+            <Link href="/voyance-amour/" className="text-purple-600 hover:text-purple-800 underline font-semibold">
               Découvrir notre approche de la voyance amoureuse →
             </Link>
           </div>
@@ -438,10 +438,10 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto text-center">
           <p className="mb-4">© 2026 VoyantLove.fr, Vos Voyants Spécialisés en Amour</p>
           <div className="flex gap-6 justify-center text-sm text-gray-400">
-            <Link href="/a-propos" className="hover:text-white">À propos</Link>
-            <Link href="/mentions-legales" className="hover:text-white">Mentions légales</Link>
-            <Link href="/confidentialite" className="hover:text-white">Confidentialité</Link>
-            <Link href="/contact" className="hover:text-white">Contact</Link>
+            <Link href="/a-propos/" className="hover:text-white">À propos</Link>
+            <Link href="/mentions-legales/" className="hover:text-white">Mentions légales</Link>
+            <Link href="/confidentialite/" className="hover:text-white">Confidentialité</Link>
+            <Link href="/contact/" className="hover:text-white">Contact</Link>
           </div>
         </div>
       </footer>

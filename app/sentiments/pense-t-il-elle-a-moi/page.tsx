@@ -20,7 +20,7 @@ const config: ContentPageConfig = {
     h1: 'Pense-t-il/elle à Moi ?',
     subtitle: 'Ce que le tarot et la voyance révèlent sur ses pensées secrètes',
     gradient: 'from-pink-400 via-rose-500 to-purple-500',
-    backLink: { href: '/sentiments', label: 'Retour aux Sentiments' },
+    backLink: { href: '/sentiments/', label: 'Retour aux Sentiments' },
     anchors: [
       { href: '#tirage', label: 'Tirage des Pensées', primary: true },
       { href: '#signes', label: 'Signes Énergétiques' },
@@ -58,11 +58,11 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/sentiments', label: 'Sentiments Amoureux : Toutes nos Guidances' },
-    { href: '/sentiments/maime-t-il-elle', label: 'M\'aime-t-il/elle Vraiment ?' },
-    { href: '/sentiments/signes-il-elle-maime', label: 'Les Signes Concrets d\'Amour' },
-    { href: '/reconquete/va-t-il-elle-revenir', label: 'Va-t-il/elle Revenir ?' },
-    { href: '/sentiments/avenir-amoureux', label: 'Mon Avenir Amoureux' },
+    { href: '/sentiments/', label: 'Sentiments Amoureux : Toutes nos Guidances' },
+    { href: '/sentiments/maime-t-il-elle/', label: 'M\'aime-t-il/elle Vraiment ?' },
+    { href: '/sentiments/signes-il-elle-maime/', label: 'Les Signes Concrets d\'Amour' },
+    { href: '/reconquete/va-t-il-elle-revenir/', label: 'Va-t-il/elle Revenir ?' },
+    { href: '/sentiments/avenir-amoureux/', label: 'Mon Avenir Amoureux' },
   ],
 };
 
@@ -80,7 +80,7 @@ export default function PenseTilElleAMoiPage() {
               La question &laquo;<strong>pense-t-il/elle à moi</strong>&raquo; est l&apos;une des plus fréquentes en <strong>voyance amoureuse</strong>. Lorsque vous ressentez une obsession persistante pour une personne, il est naturel de vouloir savoir si cette <strong>connexion énergétique</strong> est réciproque. Le <strong>tarot des pensées</strong> offre un éclairage unique sur ce qui se passe dans l&apos;esprit de l&apos;autre, en captant les <strong>vibrations télépathiques</strong> qui circulent entre deux êtres liés émotionnellement. Grâce à un <strong>tirage spécifique</strong>, le voyant identifie la fréquence, la nature et l&apos;intensité des pensées de cette personne à votre égard. Les <strong>signes spirituels</strong> comme les rêves partagés, les synchronicités ou les sensations physiques inexpliquées confirment souvent ce que le <strong>tarot</strong> révèle : un lien mental puissant qui transcende la distance et le silence.
             </p>
             <p className="text-lg leading-relaxed mb-4">
-              La <strong>télépathie amoureuse</strong> n&apos;est pas un mythe : elle repose sur des liens énergétiques tissés par l&apos;intimité émotionnelle partagée. Un <strong>voyant expérimenté</strong> capte ces flux invisibles et distingue les pensées nostalgiques des pensées désirantes, les regrets des intentions d&apos;action. Pour comprendre pleinement les <Link href="/sentiments" className="text-pink-600 hover:text-pink-800 underline font-medium">sentiments amoureux</Link> que cette personne ressent au-delà de ses pensées, explorez notre guidance sur <Link href="/sentiments/maime-t-il-elle" className="text-pink-600 hover:text-pink-800 underline font-medium">ses vrais sentiments pour vous</Link>.
+              La <strong>télépathie amoureuse</strong> n&apos;est pas un mythe : elle repose sur des liens énergétiques tissés par l&apos;intimité émotionnelle partagée. Un <strong>voyant expérimenté</strong> capte ces flux invisibles et distingue les pensées nostalgiques des pensées désirantes, les regrets des intentions d&apos;action. Pour comprendre pleinement les <Link href="/sentiments/" className="text-pink-600 hover:text-pink-800 underline font-medium">sentiments amoureux</Link> que cette personne ressent au-delà de ses pensées, explorez notre guidance sur <Link href="/sentiments/maime-t-il-elle/" className="text-pink-600 hover:text-pink-800 underline font-medium">ses vrais sentiments pour vous</Link>.
             </p>
             <p className="text-lg leading-relaxed">
               Que vous soyez séparé(e) de votre ex, en attente d&apos;un signe de la personne que vous aimez, ou simplement curieux(se) de savoir si quelqu&apos;un pense à vous secrètement, le <strong>tarot des pensées</strong> apporte des réponses concrètes. La <strong>clairvoyance</strong> permet de percer le voile du silence et de comprendre ce qui se joue dans l&apos;invisible, là où les mots n&apos;ont pas encore trouvé leur chemin.
@@ -95,7 +95,7 @@ export default function PenseTilElleAMoiPage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">{'\u2728'} Les Signes Énergétiques qu&apos;il/elle Pense à Vous</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Pensees soudaines inexplicables, reves recurrents, bourdonnement dans l&apos;oreille et synchronicites troublantes sont les signes energetiques les plus courants qu&apos;une personne pense intensement a vous.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Lorsqu&apos;une personne pense intensément à vous, cette <strong>énergie mentale</strong> se manifeste à travers des <Link href="/sentiments/signes-il-elle-maime" className="text-pink-600 hover:text-pink-800 underline font-medium">signes d&apos;amour</Link> physiques et spirituels que la <strong>voyance</strong> reconnaît depuis des siècles. Voici les manifestations les plus courantes d&apos;une connexion télépathique active.
+            Lorsqu&apos;une personne pense intensément à vous, cette <strong>énergie mentale</strong> se manifeste à travers des <Link href="/sentiments/signes-il-elle-maime/" className="text-pink-600 hover:text-pink-800 underline font-medium">signes d&apos;amour</Link> physiques et spirituels que la <strong>voyance</strong> reconnaît depuis des siècles. Voici les manifestations les plus courantes d&apos;une connexion télépathique active.
           </p>
           <div className="grid md:grid-cols-2 gap-6 mb-6">
             <div className="bg-pink-50 border-2 border-pink-300 rounded-lg p-6">
@@ -182,7 +182,7 @@ export default function PenseTilElleAMoiPage() {
             La <strong>télépathie amoureuse</strong> désigne cette capacité intuitive de ressentir les émotions, les pensées et même les intentions d&apos;une personne avec laquelle on partage un lien affectif profond. Ce phénomène, reconnu depuis des millénaires dans les traditions spirituelles, s&apos;explique par la <strong>connexion énergétique</strong> qui se tisse naturellement entre deux êtres ayant partagé une intimité émotionnelle intense.
           </p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Les <strong>flammes jumelles</strong> et les <strong>âmes soeurs</strong> développent souvent cette capacité de manière spontanée. Leur connexion dépasse le plan physique pour atteindre une dimension spirituelle où la distance et le temps n&apos;ont plus de prise. Un séparation physique ne rompt pas ce lien : au contraire, elle peut l&apos;intensifier en obligeant la communication à emprunter des canaux subtils et énergétiques. Si vous pensez avoir rencontré votre âme soeur, découvrez les signes révélateurs d&apos;une <Link href="/nouvelle-rencontre/signes-ame-soeur" className="text-pink-600 hover:text-pink-800 underline font-medium">connexion d&apos;âme soeur</Link> authentique.
+            Les <strong>flammes jumelles</strong> et les <strong>âmes soeurs</strong> développent souvent cette capacité de manière spontanée. Leur connexion dépasse le plan physique pour atteindre une dimension spirituelle où la distance et le temps n&apos;ont plus de prise. Un séparation physique ne rompt pas ce lien : au contraire, elle peut l&apos;intensifier en obligeant la communication à emprunter des canaux subtils et énergétiques. Si vous pensez avoir rencontré votre âme soeur, découvrez les signes révélateurs d&apos;une <Link href="/nouvelle-rencontre/signes-ame-soeur/" className="text-pink-600 hover:text-pink-800 underline font-medium">connexion d&apos;âme soeur</Link> authentique.
           </p>
           <div className="grid md:grid-cols-3 gap-4 mb-6">
             <div className="bg-pink-50 rounded-lg p-5 text-center">
@@ -213,10 +213,10 @@ export default function PenseTilElleAMoiPage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">{'\u26A0\uFE0F'} Penser à Vous &ne; Vouloir Revenir : Les Nuances</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Penser a vous ne signifie pas vouloir revenir. Le tarot distingue les pensees motivees par le regret ou la nostalgie passive de celles qui menent a une action concrete de reconciliation.</p>
           <p className="text-gray-700 leading-relaxed mb-4">
-            L&apos;une des erreurs les plus courantes est de confondre <strong>pensées persistantes</strong> et <strong>intention de retour</strong>. Une personne peut penser à vous quotidiennement, intensément, avec nostalgie et tendresse, sans pour autant souhaiter reprendre la relation ou vous recontacter. Cette distinction est fondamentale pour éviter de nourrir de faux espoirs, surtout en période de <Link href="/reconquete/ex-revient-silence-radio" className="text-pink-600 hover:text-pink-800 underline font-medium">silence radio</Link> après une séparation.
+            L&apos;une des erreurs les plus courantes est de confondre <strong>pensées persistantes</strong> et <strong>intention de retour</strong>. Une personne peut penser à vous quotidiennement, intensément, avec nostalgie et tendresse, sans pour autant souhaiter reprendre la relation ou vous recontacter. Cette distinction est fondamentale pour éviter de nourrir de faux espoirs, surtout en période de <Link href="/reconquete/ex-revient-silence-radio/" className="text-pink-600 hover:text-pink-800 underline font-medium">silence radio</Link> après une séparation.
           </p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Le <strong>tarot</strong> fait cette distinction cruciale. Les pensées peuvent être motivées par le regret, la culpabilité, l&apos;habitude ou la simple nostalgie, sans impliquer un désir réel de réconciliation. Inversement, certaines personnes pensent peu à vous consciemment mais ressentent un manque profond qui les poussera à agir. Pour savoir si un retour est envisageable dans votre situation, consultez notre guidance dédiée pour savoir si <Link href="/reconquete/va-t-il-elle-revenir" className="text-pink-600 hover:text-pink-800 underline font-medium">un retour est possible</Link>.
+            Le <strong>tarot</strong> fait cette distinction cruciale. Les pensées peuvent être motivées par le regret, la culpabilité, l&apos;habitude ou la simple nostalgie, sans impliquer un désir réel de réconciliation. Inversement, certaines personnes pensent peu à vous consciemment mais ressentent un manque profond qui les poussera à agir. Pour savoir si un retour est envisageable dans votre situation, consultez notre guidance dédiée pour savoir si <Link href="/reconquete/va-t-il-elle-revenir/" className="text-pink-600 hover:text-pink-800 underline font-medium">un retour est possible</Link>.
           </p>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-white rounded-lg p-6 border-l-4 border-green-500">
@@ -265,7 +265,7 @@ export default function PenseTilElleAMoiPage() {
             <div className="bg-indigo-50 border-l-4 border-indigo-500 p-5 rounded">
               <h3 className="font-bold mb-2 text-indigo-700">{'\u{1F56F}\uFE0F'} Rituel d&apos;Intention</h3>
               <p className="text-gray-700 text-sm">
-                Allumez une bougie rose, écrivez le prénom de la personne sur un papier et placez-le sous la bougie. Formulez votre <strong>intention clairement</strong> : non pas de manipuler, mais de renforcer un lien déjà existant. Ce <strong>rituel simple</strong> canalise votre énergie et amplifie votre signal télépathique. La bougie rose symbolise l&apos;amour doux et sincère, sans intention de contrôle. Pour explorer l&apos;avenir de cette connexion, découvrez ce que le tarot prédit sur l&apos;<Link href="/sentiments/avenir-amoureux" className="text-pink-600 hover:text-pink-800 underline font-medium">avenir de votre relation</Link>.
+                Allumez une bougie rose, écrivez le prénom de la personne sur un papier et placez-le sous la bougie. Formulez votre <strong>intention clairement</strong> : non pas de manipuler, mais de renforcer un lien déjà existant. Ce <strong>rituel simple</strong> canalise votre énergie et amplifie votre signal télépathique. La bougie rose symbolise l&apos;amour doux et sincère, sans intention de contrôle. Pour explorer l&apos;avenir de cette connexion, découvrez ce que le tarot prédit sur l&apos;<Link href="/sentiments/avenir-amoureux/" className="text-pink-600 hover:text-pink-800 underline font-medium">avenir de votre relation</Link>.
               </p>
             </div>
             <div className="bg-rose-50 border-l-4 border-rose-500 p-5 rounded">

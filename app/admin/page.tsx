@@ -188,10 +188,10 @@ export default function AdminDashboard() {
               <a href={EXTERNAL_LINKS.gtm} target="_blank" rel="noopener" className="block text-yellow-400 hover:text-yellow-300 text-sm">
                 Google Tag Manager →
               </a>
-              <a href="https://www.voyantlove.fr/lp/voyance-amour" target="_blank" rel="noopener" className="block text-yellow-400 hover:text-yellow-300 text-sm">
+              <a href="https://www.voyantlove.fr/lp/voyance-amour/" target="_blank" rel="noopener" className="block text-yellow-400 hover:text-yellow-300 text-sm">
                 LP: Voyance Amour →
               </a>
-              <a href="https://www.voyantlove.fr/lp/voyance-gratuite-amour" target="_blank" rel="noopener" className="block text-yellow-400 hover:text-yellow-300 text-sm">
+              <a href="https://www.voyantlove.fr/lp/voyance-gratuite-amour/" target="_blank" rel="noopener" className="block text-yellow-400 hover:text-yellow-300 text-sm">
                 LP: Voyance Gratuite →
               </a>
             </div>

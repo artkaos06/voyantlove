@@ -85,7 +85,7 @@ export default async function PairPage({ params }: Props) {
 
       <header className="bg-gradient-to-r from-indigo-700 via-purple-700 to-violet-700 text-white py-16 px-4">
         <div className="max-w-4xl mx-auto">
-          <Link href="/compatibilite-amoureuse" className="text-white/80 hover:text-white mb-4 inline-block">&larr; Toutes les compatibilités</Link>
+          <Link href="/compatibilite-amoureuse/" className="text-white/80 hover:text-white mb-4 inline-block">&larr; Toutes les compatibilités</Link>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">{sA?.emoji} {rec.signA} et {rec.signB} {sB?.emoji}</h1>
           <p className="text-xl opacity-95 mb-3">{rec.titre}</p>
           <div className="text-2xl" aria-label={`Score de compatibilité : ${rec.score} sur 5`}>{hearts}</div>
@@ -110,12 +110,12 @@ export default async function PairPage({ params }: Props) {
         <p className="text-gray-600 mb-8">
           Explorez aussi les profils amoureux :{' '}
           {LIVE_SIGN_SLUG[rec.signA] ? (
-            <Link href={`/astrologie-amour/${LIVE_SIGN_SLUG[rec.signA]}`} className="text-indigo-600 hover:text-indigo-800 underline font-medium">{rec.signA} en amour</Link>
+            <Link href={`/astrologie-amour/${LIVE_SIGN_SLUG[rec.signA]}/`} className="text-indigo-600 hover:text-indigo-800 underline font-medium">{rec.signA} en amour</Link>
           ) : (
             <>{rec.signA} en amour</>
           )}{' '}et{' '}
           {LIVE_SIGN_SLUG[rec.signB] ? (
-            <Link href={`/astrologie-amour/${LIVE_SIGN_SLUG[rec.signB]}`} className="text-indigo-600 hover:text-indigo-800 underline font-medium">{rec.signB} en amour</Link>
+            <Link href={`/astrologie-amour/${LIVE_SIGN_SLUG[rec.signB]}/`} className="text-indigo-600 hover:text-indigo-800 underline font-medium">{rec.signB} en amour</Link>
           ) : (
             <>{rec.signB} en amour</>
           )}.
@@ -166,11 +166,11 @@ export default async function PairPage({ params }: Props) {
             <h2 className="font-bold text-lg mb-4 text-gray-900">💞 Autres compatibilités avec {rec.signA} ou {rec.signB}</h2>
             <div className="space-y-2">
               {siblings.map((p) => (
-                <Link key={p.slug} href={`/compatibilite-amoureuse/${p.slug}`} className="block text-indigo-600 hover:text-indigo-800 font-medium">
+                <Link key={p.slug} href={`/compatibilite-amoureuse/${p.slug}/`} className="block text-indigo-600 hover:text-indigo-800 font-medium">
                   &rarr; {p.signA} et {p.signB} : {p.titre}
                 </Link>
               ))}
-              <Link href="/methodes-voyance/synastrie-amoureuse" className="block text-indigo-600 hover:text-indigo-800 font-medium">
+              <Link href="/methodes-voyance/synastrie-amoureuse/" className="block text-indigo-600 hover:text-indigo-800 font-medium">
                 &rarr; Aller plus loin : la synastrie amoureuse complète
               </Link>
             </div>

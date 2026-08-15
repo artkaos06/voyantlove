@@ -26,7 +26,7 @@ export default function SiteFooter() {
             <ul className="space-y-2 text-sm">
               <li>
                 <Link
-                  href="/love-psychic-services"
+                  href="/love-psychic-services/"
                   className="text-gray-600 hover:text-purple-700"
                 >
                   All services
@@ -34,7 +34,7 @@ export default function SiteFooter() {
               </li>
               <li>
                 <Link
-                  href="/love-psychic-services/keen-review"
+                  href="/love-psychic-services/keen-review/"
                   className="text-gray-600 hover:text-purple-700"
                 >
                   Keen review
@@ -48,7 +48,7 @@ export default function SiteFooter() {
             <ul className="space-y-2 text-sm">
               <li>
                 <Link
-                  href="/will-he-come-back"
+                  href="/will-he-come-back/"
                   className="text-gray-600 hover:text-purple-700"
                 >
                   Will he come back?
@@ -56,7 +56,7 @@ export default function SiteFooter() {
               </li>
               <li>
                 <Link
-                  href="/is-my-ex-thinking-of-me"
+                  href="/is-my-ex-thinking-of-me/"
                   className="text-gray-600 hover:text-purple-700"
                 >
                   Is my ex thinking of me?

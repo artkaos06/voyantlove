@@ -72,7 +72,7 @@ test('new valid records feed route params, hub cards, and sitemap URLs directly'
 
   for (const slug of NEW_SLUGS) {
     assert.ok(routeSlugs.has(slug), `${slug} missing from generateStaticParams`);
-    assert.equal(hubCards.get(slug)?.href, `/reves-amour/${slug}`);
+    assert.equal(hubCards.get(slug)?.href, `/reves-amour/${slug}/`);
     assert.ok(urls.has(`https://www.voyantlove.fr/reves-amour/${slug}/`), `${slug} missing from sitemap`);
   }
 });

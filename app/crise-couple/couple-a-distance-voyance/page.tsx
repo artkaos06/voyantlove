@@ -20,7 +20,7 @@ const config: ContentPageConfig = {
     h1: 'Couple à Distance',
     subtitle: 'Voyance et Conseils pour Durer',
     gradient: 'from-sky-600 via-blue-600 to-indigo-600',
-    backLink: { href: '/crise-couple', label: 'Retour à Crise de Couple' },
+    backLink: { href: '/crise-couple/', label: 'Retour à Crise de Couple' },
     anchors: [
       { href: '#signes-survivre', label: 'Votre Couple Peut Durer', primary: true },
       { href: '#retrouvailles', label: 'Quand Se Retrouver ?' },
@@ -54,10 +54,10 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/crise-couple', label: 'Crise de Couple : Toutes nos Guidances' },
-    { href: '/crise-couple/reconnecter-son-couple', label: 'Reconnecter son Couple : Guide Complet' },
-    { href: '/crise-couple/jalousie-excessive', label: 'Jalousie Excessive : Comprendre et Gérer' },
-    { href: '/sentiments/avenir-amoureux', label: 'Mon Avenir Amoureux : Guidance Complète' },
+    { href: '/crise-couple/', label: 'Crise de Couple : Toutes nos Guidances' },
+    { href: '/crise-couple/reconnecter-son-couple/', label: 'Reconnecter son Couple : Guide Complet' },
+    { href: '/crise-couple/jalousie-excessive/', label: 'Jalousie Excessive : Comprendre et Gérer' },
+    { href: '/sentiments/avenir-amoureux/', label: 'Mon Avenir Amoureux : Guidance Complète' },
   ],
 };
 
@@ -76,7 +76,7 @@ export default function CoupleADistancePage() {
             Ce que la voyance révèle sur les relations longue distance va bien au-delà des conseils pratiques : elle explore le lien énergétique profond entre deux partenaires, évalue la solidité de leur <strong>projet commun</strong>, et donne des indices précieux sur le timing des <strong>retrouvailles</strong>. La question de la <strong>fidélité</strong> revient systématiquement dans ces consultations, tout comme la difficulté à maintenir une <strong>communication virtuelle</strong> qui nourrit véritablement la relation à distance.
           </p>
           <p className="text-lg leading-relaxed">
-            Cette guidance complète analyse les défis spirituels de l&apos;amour à distance, ce qu&apos;un voyant peut réellement voir sur votre couple séparé, et les signes qui indiquent si votre relation est destinée à durer. Pour explorer d&apos;autres dimensions de la crise de couple, découvrez comment <Link href="/crise-couple/reconnecter-son-couple" className="text-blue-600 hover:text-blue-800 underline font-medium">reconnecter votre couple</Link> et raviver la flamme malgré l&apos;éloignement.
+            Cette guidance complète analyse les défis spirituels de l&apos;amour à distance, ce qu&apos;un voyant peut réellement voir sur votre couple séparé, et les signes qui indiquent si votre relation est destinée à durer. Pour explorer d&apos;autres dimensions de la crise de couple, découvrez comment <Link href="/crise-couple/reconnecter-son-couple/" className="text-blue-600 hover:text-blue-800 underline font-medium">reconnecter votre couple</Link> et raviver la flamme malgré l&apos;éloignement.
           </p>
         </article>
 
@@ -256,7 +256,7 @@ export default function CoupleADistancePage() {
             <div className="bg-red-50 border-l-4 border-red-500 p-5 rounded-lg">
               <h3 className="font-bold text-lg mb-2 text-red-700">&#x1F621; La Jalousie Incontrôlée</h3>
               <p className="text-gray-700">
-                La jalousie est la menace la plus fréquente dans les couples à distance. Sans visibilité sur le quotidien de l&apos;autre, l&apos;imagination comble les vides et souvent de façon négative. Cette jalousie génère des interrogatoires, de la surveillance des réseaux sociaux et une atmosphère de suspicion destructrice. La voyance aide à identifier si cette jalousie est fondée sur des éléments réels ou si elle révèle une insécurité personnelle à travailler. Pour aller plus loin sur ce sujet, notre guide sur la façon de <Link href="/crise-couple/jalousie-excessive" className="text-blue-600 hover:text-blue-800 underline font-medium">gérer la jalousie</Link> en couple offre des outils concrets.
+                La jalousie est la menace la plus fréquente dans les couples à distance. Sans visibilité sur le quotidien de l&apos;autre, l&apos;imagination comble les vides et souvent de façon négative. Cette jalousie génère des interrogatoires, de la surveillance des réseaux sociaux et une atmosphère de suspicion destructrice. La voyance aide à identifier si cette jalousie est fondée sur des éléments réels ou si elle révèle une insécurité personnelle à travailler. Pour aller plus loin sur ce sujet, notre guide sur la façon de <Link href="/crise-couple/jalousie-excessive/" className="text-blue-600 hover:text-blue-800 underline font-medium">gérer la jalousie</Link> en couple offre des outils concrets.
               </p>
             </div>
 
@@ -302,7 +302,7 @@ export default function CoupleADistancePage() {
             <div className="bg-white border-l-4 border-blue-500 p-5 rounded-lg">
               <h3 className="font-bold text-lg mb-2 text-blue-700">&#x1F6A7; Les Obstacles à Identifier</h3>
               <p className="text-gray-700">
-                La voyance peut identifier les obstacles spécifiques qui retardent votre réunion : un blocage lié à la peur de l&apos;engagement chez l&apos;un des partenaires, des contraintes professionnelles réelles, des liens familiaux qui retiennent, ou des résistances intérieures inconscientes au changement. Identifier ces obstacles clairement permet de travailler à les lever, que ce soit par la communication, des décisions pratiques ou un travail sur soi. Pour explorer <Link href="/sentiments/avenir-amoureux" className="text-blue-600 hover:text-blue-800 underline font-medium">l&apos;avenir de votre relation</Link> dans son ensemble, notre guidance complète sur l&apos;avenir amoureux apporte des éclairages précieux.
+                La voyance peut identifier les obstacles spécifiques qui retardent votre réunion : un blocage lié à la peur de l&apos;engagement chez l&apos;un des partenaires, des contraintes professionnelles réelles, des liens familiaux qui retiennent, ou des résistances intérieures inconscientes au changement. Identifier ces obstacles clairement permet de travailler à les lever, que ce soit par la communication, des décisions pratiques ou un travail sur soi. Pour explorer <Link href="/sentiments/avenir-amoureux/" className="text-blue-600 hover:text-blue-800 underline font-medium">l&apos;avenir de votre relation</Link> dans son ensemble, notre guidance complète sur l&apos;avenir amoureux apporte des éclairages précieux.
               </p>
             </div>
 

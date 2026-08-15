@@ -35,7 +35,7 @@ export default function LeadCaptureForm({ source, colorScheme, mode = 'full' }: 
   useEffect(() => {
     if (view !== 'result' || mode !== 'teaser') return;
     if (countdown <= 0) {
-      router.push(`/consulter?ref=${source}-teaser`);
+      router.push(`/consulter/?ref=${source}-teaser`);
       return;
     }
     const t = setTimeout(() => setCountdown((c) => c - 1), 1000);
@@ -115,7 +115,7 @@ export default function LeadCaptureForm({ source, colorScheme, mode = 'full' }: 
             {/* /consulter CTA with countdown */}
             <div className="text-center">
               <a
-                href={`/consulter?ref=${source}-teaser`}
+                href={`/consulter/?ref=${source}-teaser`}
                 onClick={() => window.dataLayer?.push({ event: 'cta_click', cta_label: `consulter-teaser-${source}` })}
                 className={`inline-block ${btnClass} text-white px-6 py-3 rounded-lg font-semibold transition-all hover:scale-105`}
               >
@@ -187,7 +187,7 @@ export default function LeadCaptureForm({ source, colorScheme, mode = 'full' }: 
             Choisissez un voyant pour une consultation par chat ou email.
           </p>
           <a
-            href={`/consulter?ref=${source}-post-prediction`}
+            href={`/consulter/?ref=${source}-post-prediction`}
             className={`inline-block ${btnClass} text-white px-8 py-3 rounded-lg font-bold transition-all hover:scale-105 hover:shadow-xl`}
           >
             Choisir Mon Voyant en Ligne

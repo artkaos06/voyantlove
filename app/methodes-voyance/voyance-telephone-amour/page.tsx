@@ -20,7 +20,7 @@ const config: ContentPageConfig = {
     h1: 'Voyance par Téléphone Amour',
     subtitle: 'Consultation sentimentale à distance pour éclairer votre vie amoureuse, disponible 24h/24',
     gradient: 'from-indigo-500 via-violet-500 to-purple-500',
-    backLink: { href: '/methodes-voyance', label: 'Retour aux Méthodes de Voyance' },
+    backLink: { href: '/methodes-voyance/', label: 'Retour aux Méthodes de Voyance' },
     anchors: [
       { href: '#consultation', label: 'Consulter Maintenant', primary: true },
       { href: '#avantages', label: 'Les Avantages' },
@@ -58,11 +58,11 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/methodes-voyance/tirage-tarot-amour', label: 'Tirage de Tarot Amoureux : Guide Complet' },
-    { href: '/methodes-voyance/oracle-amour', label: 'Oracle de l\'Amour : Guidance Sentimentale par les Cartes' },
-    { href: '/methodes-voyance/pendule-amour', label: 'Pendule Amour : Réponses Précises à Vos Questions Sentimentales' },
-    { href: '/methodes-voyance/astrologie-amoureuse', label: 'Astrologie Amoureuse : Compatibilité Astrale' },
-    { href: '/sentiments/avenir-amoureux', label: 'Mon Avenir Amoureux : Prédictions Sentimentales' },
+    { href: '/methodes-voyance/tirage-tarot-amour/', label: 'Tirage de Tarot Amoureux : Guide Complet' },
+    { href: '/methodes-voyance/oracle-amour/', label: 'Oracle de l\'Amour : Guidance Sentimentale par les Cartes' },
+    { href: '/methodes-voyance/pendule-amour/', label: 'Pendule Amour : Réponses Précises à Vos Questions Sentimentales' },
+    { href: '/methodes-voyance/astrologie-amoureuse/', label: 'Astrologie Amoureuse : Compatibilité Astrale' },
+    { href: '/sentiments/avenir-amoureux/', label: 'Mon Avenir Amoureux : Prédictions Sentimentales' },
   ],
 };
 
@@ -100,7 +100,7 @@ export default function VoyanceTelephoneAmourPage() {
             <div className="bg-violet-50 border-l-4 border-violet-500 p-5 rounded-lg">
               <h3 className="font-bold text-lg mb-2 text-violet-700">&Eacute;tape 2 &mdash; L&apos;Exploration &Eacute;nerg&eacute;tique</h3>
               <p className="text-gray-700 text-sm">
-                Le <strong>voyant</strong> utilise ensuite ses outils de pr&eacute;dilection &mdash; <Link href="/methodes-voyance/tirage-tarot-amour" className="text-indigo-600 hover:text-indigo-800 underline font-medium">tarot</Link>, <strong>oracle</strong>, <Link href="/methodes-voyance/pendule-amour" className="text-indigo-600 hover:text-indigo-800 underline font-medium">pendule</Link> ou clairvoyance pure &mdash; pour explorer votre situation sentimentale. Il capte les &eacute;nergies qui circulent autour de vous, identifie les pr&eacute;sences &eacute;motionnelles li&eacute;es &agrave; votre question et d&eacute;code les messages qui &eacute;mergent. La distance physique n&apos;alt&egrave;re en rien la qualit&eacute; de cette lecture &eacute;nerg&eacute;tique.
+                Le <strong>voyant</strong> utilise ensuite ses outils de pr&eacute;dilection &mdash; <Link href="/methodes-voyance/tirage-tarot-amour/" className="text-indigo-600 hover:text-indigo-800 underline font-medium">tarot</Link>, <strong>oracle</strong>, <Link href="/methodes-voyance/pendule-amour/" className="text-indigo-600 hover:text-indigo-800 underline font-medium">pendule</Link> ou clairvoyance pure &mdash; pour explorer votre situation sentimentale. Il capte les &eacute;nergies qui circulent autour de vous, identifie les pr&eacute;sences &eacute;motionnelles li&eacute;es &agrave; votre question et d&eacute;code les messages qui &eacute;mergent. La distance physique n&apos;alt&egrave;re en rien la qualit&eacute; de cette lecture &eacute;nerg&eacute;tique.
               </p>
             </div>
 
@@ -118,7 +118,7 @@ export default function VoyanceTelephoneAmourPage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">&#x2705; Les Avantages de la Consultation T&eacute;l&eacute;phonique</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Les avantages de la voyance par t&eacute;l&eacute;phone sont l&apos;imm&eacute;diatet&eacute; (r&eacute;ponses instantan&eacute;es), la confidentialit&eacute; absolue, la puissance de la connexion vocale et le confort de consulter depuis chez soi.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            La <strong>voyance par t&eacute;l&eacute;phone</strong> pr&eacute;sente de nombreux atouts qui expliquent sa popularit&eacute; croissante aupr&egrave;s des personnes en qu&ecirc;te de <strong>guidance amoureuse</strong>. Que vous traversiez une <Link href="/reconquete/reconquerir-son-ex" className="text-indigo-600 hover:text-indigo-800 underline font-medium">p&eacute;riode de reconqu&ecirc;te</Link> ou que vous souhaitiez explorer votre <Link href="/sentiments/avenir-amoureux" className="text-indigo-600 hover:text-indigo-800 underline font-medium">avenir amoureux</Link>, le t&eacute;l&eacute;phone offre un cadre id&eacute;al pour une consultation efficace.
+            La <strong>voyance par t&eacute;l&eacute;phone</strong> pr&eacute;sente de nombreux atouts qui expliquent sa popularit&eacute; croissante aupr&egrave;s des personnes en qu&ecirc;te de <strong>guidance amoureuse</strong>. Que vous traversiez une <Link href="/reconquete/reconquerir-son-ex/" className="text-indigo-600 hover:text-indigo-800 underline font-medium">p&eacute;riode de reconqu&ecirc;te</Link> ou que vous souhaitiez explorer votre <Link href="/sentiments/avenir-amoureux/" className="text-indigo-600 hover:text-indigo-800 underline font-medium">avenir amoureux</Link>, le t&eacute;l&eacute;phone offre un cadre id&eacute;al pour une consultation efficace.
           </p>
 
           <div className="space-y-5">
@@ -164,7 +164,7 @@ export default function VoyanceTelephoneAmourPage() {
             <div className="bg-pink-50 border-l-4 border-pink-500 p-5 rounded-lg">
               <h3 className="font-bold text-lg mb-2 text-pink-700">Questions sur Votre Ex</h3>
               <p className="text-gray-700 text-sm">
-                Si votre c&oelig;ur est encore tourn&eacute; vers votre ancien partenaire, les questions les plus pertinentes portent sur les &eacute;nergies r&eacute;siduelles entre vous : &laquo;&nbsp;Mon ex pense-t-il encore &agrave; moi&nbsp;?&nbsp;&raquo;, &laquo;&nbsp;Y a-t-il une possibilit&eacute; de retour&nbsp;?&nbsp;&raquo;, &laquo;&nbsp;Quelles le&ccedil;ons dois-je tirer de cette relation&nbsp;?&nbsp;&raquo;. Le <strong>voyant amour</strong> peut capter les sentiments r&eacute;siduels de votre ex et vous guider vers la bonne d&eacute;cision, qu&apos;il s&apos;agisse de <Link href="/reconquete/reconquerir-son-ex" className="text-indigo-600 hover:text-indigo-800 underline font-medium">reconqu&ecirc;te</Link> ou de lib&eacute;ration &eacute;motionnelle.
+                Si votre c&oelig;ur est encore tourn&eacute; vers votre ancien partenaire, les questions les plus pertinentes portent sur les &eacute;nergies r&eacute;siduelles entre vous : &laquo;&nbsp;Mon ex pense-t-il encore &agrave; moi&nbsp;?&nbsp;&raquo;, &laquo;&nbsp;Y a-t-il une possibilit&eacute; de retour&nbsp;?&nbsp;&raquo;, &laquo;&nbsp;Quelles le&ccedil;ons dois-je tirer de cette relation&nbsp;?&nbsp;&raquo;. Le <strong>voyant amour</strong> peut capter les sentiments r&eacute;siduels de votre ex et vous guider vers la bonne d&eacute;cision, qu&apos;il s&apos;agisse de <Link href="/reconquete/reconquerir-son-ex/" className="text-indigo-600 hover:text-indigo-800 underline font-medium">reconqu&ecirc;te</Link> ou de lib&eacute;ration &eacute;motionnelle.
               </p>
             </div>
 
@@ -185,7 +185,7 @@ export default function VoyanceTelephoneAmourPage() {
             <div className="bg-orange-50 border-l-4 border-orange-500 p-5 rounded-lg">
               <h3 className="font-bold text-lg mb-2 text-orange-700">Questions en P&eacute;riode de Crise de Couple</h3>
               <p className="text-gray-700 text-sm">
-                Lorsque votre couple traverse une zone de turbulences, la <strong>consultation t&eacute;l&eacute;phonique</strong> offre un refuge pour comprendre les dynamiques en jeu. &laquo;&nbsp;Notre couple peut-il surmonter cette &eacute;preuve&nbsp;?&nbsp;&raquo;, &laquo;&nbsp;Quelle est la source profonde de nos conflits&nbsp;?&nbsp;&raquo;, &laquo;&nbsp;Devons-nous prendre du recul ou nous rapprocher&nbsp;?&nbsp;&raquo;. Le <strong>voyant amour</strong> identifie les blocages &eacute;nerg&eacute;tiques qui parasitent la communication et propose des pistes concr&egrave;tes pour <Link href="/crise-couple/sauver-son-couple" className="text-indigo-600 hover:text-indigo-800 underline font-medium">sauver son couple</Link>.
+                Lorsque votre couple traverse une zone de turbulences, la <strong>consultation t&eacute;l&eacute;phonique</strong> offre un refuge pour comprendre les dynamiques en jeu. &laquo;&nbsp;Notre couple peut-il surmonter cette &eacute;preuve&nbsp;?&nbsp;&raquo;, &laquo;&nbsp;Quelle est la source profonde de nos conflits&nbsp;?&nbsp;&raquo;, &laquo;&nbsp;Devons-nous prendre du recul ou nous rapprocher&nbsp;?&nbsp;&raquo;. Le <strong>voyant amour</strong> identifie les blocages &eacute;nerg&eacute;tiques qui parasitent la communication et propose des pistes concr&egrave;tes pour <Link href="/crise-couple/sauver-son-couple/" className="text-indigo-600 hover:text-indigo-800 underline font-medium">sauver son couple</Link>.
               </p>
             </div>
           </div>
@@ -198,35 +198,35 @@ export default function VoyanceTelephoneAmourPage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">&#x1F52E; Les Diff&eacute;rentes M&eacute;thodes Utilis&eacute;es par T&eacute;l&eacute;phone</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Les m&eacute;thodes de voyance par t&eacute;l&eacute;phone incluent le tirage de tarot amoureux, l&apos;oracle de l&apos;amour, le pendule pour les questions oui/non, la clairvoyance pure et l&apos;astrologie amoureuse. Chaque m&eacute;thode s&apos;adapte parfaitement &agrave; la consultation &agrave; distance.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Les <strong>voyants sp&eacute;cialis&eacute;s en amour</strong> ma&icirc;trisent plusieurs <Link href="/methodes-voyance" className="text-indigo-600 hover:text-indigo-800 underline font-medium">m&eacute;thodes de voyance</Link> qui s&apos;adaptent parfaitement &agrave; la <strong>consultation t&eacute;l&eacute;phonique</strong>. Chaque m&eacute;thode apporte un &eacute;clairage diff&eacute;rent sur votre <strong>situation sentimentale</strong> et peut &ecirc;tre utilis&eacute;e seule ou en compl&eacute;ment d&apos;autres approches pour une <strong>guidance amoureuse</strong> compl&egrave;te.
+            Les <strong>voyants sp&eacute;cialis&eacute;s en amour</strong> ma&icirc;trisent plusieurs <Link href="/methodes-voyance/" className="text-indigo-600 hover:text-indigo-800 underline font-medium">m&eacute;thodes de voyance</Link> qui s&apos;adaptent parfaitement &agrave; la <strong>consultation t&eacute;l&eacute;phonique</strong>. Chaque m&eacute;thode apporte un &eacute;clairage diff&eacute;rent sur votre <strong>situation sentimentale</strong> et peut &ecirc;tre utilis&eacute;e seule ou en compl&eacute;ment d&apos;autres approches pour une <strong>guidance amoureuse</strong> compl&egrave;te.
           </p>
 
           <div className="space-y-5">
             <div className="bg-white rounded-lg p-5 border-l-4 border-blue-500">
               <h3 className="font-bold text-lg mb-2 text-blue-700">Le Tarot Amoureux</h3>
               <p className="text-gray-700 text-sm">
-                Le <Link href="/methodes-voyance/tirage-tarot-amour" className="text-indigo-600 hover:text-indigo-800 underline font-medium">tirage de tarot amoureux</Link> est la m&eacute;thode la plus utilis&eacute;e en <strong>voyance par t&eacute;l&eacute;phone</strong>. Le <strong>voyant</strong> tire les cartes en direct pendant votre appel, vous d&eacute;crivant chaque arcane r&eacute;v&eacute;l&eacute; et son interpr&eacute;tation sentimentale. Les 22 <strong>arcanes majeurs</strong> du Tarot de Marseille offrent une lecture profonde des &eacute;nergies amoureuses, des blocages &eacute;motionnels et des perspectives d&apos;&eacute;volution de votre relation.
+                Le <Link href="/methodes-voyance/tirage-tarot-amour/" className="text-indigo-600 hover:text-indigo-800 underline font-medium">tirage de tarot amoureux</Link> est la m&eacute;thode la plus utilis&eacute;e en <strong>voyance par t&eacute;l&eacute;phone</strong>. Le <strong>voyant</strong> tire les cartes en direct pendant votre appel, vous d&eacute;crivant chaque arcane r&eacute;v&eacute;l&eacute; et son interpr&eacute;tation sentimentale. Les 22 <strong>arcanes majeurs</strong> du Tarot de Marseille offrent une lecture profonde des &eacute;nergies amoureuses, des blocages &eacute;motionnels et des perspectives d&apos;&eacute;volution de votre relation.
               </p>
             </div>
 
             <div className="bg-white rounded-lg p-5 border-l-4 border-indigo-500">
               <h3 className="font-bold text-lg mb-2 text-indigo-700">L&apos;Oracle de l&apos;Amour</h3>
               <p className="text-gray-700 text-sm">
-                L&apos;<Link href="/methodes-voyance/oracle-amour" className="text-indigo-600 hover:text-indigo-800 underline font-medium">oracle de l&apos;amour</Link> propose des messages plus directs et intuitifs que le <strong>tarot</strong>. Ses cartes illustr&eacute;es portent des messages clairs qui r&eacute;sonnent imm&eacute;diatement avec votre situation. Lors d&apos;une <strong>consultation t&eacute;l&eacute;phonique</strong>, l&apos;oracle est particuli&egrave;rement appr&eacute;ci&eacute; pour sa capacit&eacute; &agrave; d&eacute;livrer des r&eacute;ponses lumineuses et r&eacute;confortantes, id&eacute;ales pour les moments de doute sentimental.
+                L&apos;<Link href="/methodes-voyance/oracle-amour/" className="text-indigo-600 hover:text-indigo-800 underline font-medium">oracle de l&apos;amour</Link> propose des messages plus directs et intuitifs que le <strong>tarot</strong>. Ses cartes illustr&eacute;es portent des messages clairs qui r&eacute;sonnent imm&eacute;diatement avec votre situation. Lors d&apos;une <strong>consultation t&eacute;l&eacute;phonique</strong>, l&apos;oracle est particuli&egrave;rement appr&eacute;ci&eacute; pour sa capacit&eacute; &agrave; d&eacute;livrer des r&eacute;ponses lumineuses et r&eacute;confortantes, id&eacute;ales pour les moments de doute sentimental.
               </p>
             </div>
 
             <div className="bg-white rounded-lg p-5 border-l-4 border-violet-500">
               <h3 className="font-bold text-lg mb-2 text-violet-700">Le Pendule Amoureux</h3>
               <p className="text-gray-700 text-sm">
-                Le <Link href="/methodes-voyance/pendule-amour" className="text-indigo-600 hover:text-indigo-800 underline font-medium">pendule amoureux</Link> r&eacute;pond aux questions ferm&eacute;es avec une pr&eacute;cision saisissante. Le <strong>voyant</strong> le fait osciller au-dessus de supports sp&eacute;cifiques pendant votre appel et vous communique les r&eacute;ponses en temps r&eacute;el. Le pendule est id&eacute;al pour les questions de type oui/non sur vos <strong>questions amoureuses</strong> : &laquo;&nbsp;M&apos;aime-t-il&nbsp;?&nbsp;&raquo;, &laquo;&nbsp;Va-t-il revenir&nbsp;?&nbsp;&raquo;, &laquo;&nbsp;Cette relation est-elle faite pour durer&nbsp;?&nbsp;&raquo;.
+                Le <Link href="/methodes-voyance/pendule-amour/" className="text-indigo-600 hover:text-indigo-800 underline font-medium">pendule amoureux</Link> r&eacute;pond aux questions ferm&eacute;es avec une pr&eacute;cision saisissante. Le <strong>voyant</strong> le fait osciller au-dessus de supports sp&eacute;cifiques pendant votre appel et vous communique les r&eacute;ponses en temps r&eacute;el. Le pendule est id&eacute;al pour les questions de type oui/non sur vos <strong>questions amoureuses</strong> : &laquo;&nbsp;M&apos;aime-t-il&nbsp;?&nbsp;&raquo;, &laquo;&nbsp;Va-t-il revenir&nbsp;?&nbsp;&raquo;, &laquo;&nbsp;Cette relation est-elle faite pour durer&nbsp;?&nbsp;&raquo;.
               </p>
             </div>
 
             <div className="bg-white rounded-lg p-5 border-l-4 border-purple-500">
               <h3 className="font-bold text-lg mb-2 text-purple-700">La Clairvoyance et l&apos;Astrologie</h3>
               <p className="text-gray-700 text-sm">
-                Certains <strong>voyants</strong> pratiquent la <strong>clairvoyance</strong> pure, sans support physique, captant directement les images, les sensations et les messages li&eacute;s &agrave; votre <strong>situation amoureuse</strong>. D&apos;autres combinent leur don avec l&apos;<Link href="/methodes-voyance/astrologie-amoureuse" className="text-indigo-600 hover:text-indigo-800 underline font-medium">astrologie amoureuse</Link> pour analyser la compatibilit&eacute; astrale et les transits plan&eacute;taires qui influencent votre vie sentimentale. Par t&eacute;l&eacute;phone, ces m&eacute;thodes sont tout aussi efficaces car elles reposent sur la connexion &eacute;nerg&eacute;tique, ind&eacute;pendante de la distance.
+                Certains <strong>voyants</strong> pratiquent la <strong>clairvoyance</strong> pure, sans support physique, captant directement les images, les sensations et les messages li&eacute;s &agrave; votre <strong>situation amoureuse</strong>. D&apos;autres combinent leur don avec l&apos;<Link href="/methodes-voyance/astrologie-amoureuse/" className="text-indigo-600 hover:text-indigo-800 underline font-medium">astrologie amoureuse</Link> pour analyser la compatibilit&eacute; astrale et les transits plan&eacute;taires qui influencent votre vie sentimentale. Par t&eacute;l&eacute;phone, ces m&eacute;thodes sont tout aussi efficaces car elles reposent sur la connexion &eacute;nerg&eacute;tique, ind&eacute;pendante de la distance.
               </p>
             </div>
           </div>

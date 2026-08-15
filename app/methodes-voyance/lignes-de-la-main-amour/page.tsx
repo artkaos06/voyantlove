@@ -20,7 +20,7 @@ const config: ContentPageConfig = {
     h1: 'Lignes de la Main Amour',
     subtitle: 'Ce que la chiromancie révèle sur votre vie sentimentale',
     gradient: 'from-orange-600 via-red-600 to-rose-700',
-    backLink: { href: '/methodes-voyance', label: 'Retour aux Méthodes de Voyance' },
+    backLink: { href: '/methodes-voyance/', label: 'Retour aux Méthodes de Voyance' },
     anchors: [
       { href: '#ligne-coeur', label: 'La Ligne de Cœur', primary: true },
       { href: '#lecture', label: 'Lire sa Propre Main' },
@@ -54,12 +54,12 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/methodes-voyance', label: 'Toutes les Méthodes de Voyance Amoureuse' },
-    { href: '/methodes-voyance/voyance-sentimentale', label: 'Voyance Sentimentale' },
-    { href: '/methodes-voyance/astrologie-amoureuse', label: 'Astrologie Amoureuse' },
-    { href: '/methodes-voyance/tirage-tarot-amour', label: 'Tirage Tarot Amour' },
-    { href: '/glossaire/chiromancie', label: 'Glossaire : Chiromancie' },
-    { href: '/sentiments/savoir-si-cest-lamour', label: 'Savoir si c\'est l\'amour' },
+    { href: '/methodes-voyance/', label: 'Toutes les Méthodes de Voyance Amoureuse' },
+    { href: '/methodes-voyance/voyance-sentimentale/', label: 'Voyance Sentimentale' },
+    { href: '/methodes-voyance/astrologie-amoureuse/', label: 'Astrologie Amoureuse' },
+    { href: '/methodes-voyance/tirage-tarot-amour/', label: 'Tirage Tarot Amour' },
+    { href: '/glossaire/chiromancie/', label: 'Glossaire : Chiromancie' },
+    { href: '/sentiments/savoir-si-cest-lamour/', label: 'Savoir si c\'est l\'amour' },
   ],
 };
 
@@ -110,7 +110,7 @@ export default function LignesDeLaMainAmourPage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">🌹 Le Mont de Vénus : Sensualité et Capacité d&apos;Aimer</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Cette zone charnue à la base du pouce, nommée d&apos;après la planète de l&apos;amour, révélerait l&apos;intensité de votre sensualité et votre générosité affective.</p>
           <p className="text-gray-700 mb-6">
-            Le <strong>mont de Vénus</strong> occupe la zone charnue qui entoure la base du pouce, sous la ligne de vie. Son nom, hérité de la planète associée à l&apos;amour en <Link href="/methodes-voyance/astrologie-amoureuse" className="text-rose-700 hover:text-rose-900 underline font-medium">astrologie amoureuse</Link>, n&apos;est pas un hasard : cette zone concentre, en chiromancie, tout ce qui touche à la sensualité et à la capacité d&apos;aimer.
+            Le <strong>mont de Vénus</strong> occupe la zone charnue qui entoure la base du pouce, sous la ligne de vie. Son nom, hérité de la planète associée à l&apos;amour en <Link href="/methodes-voyance/astrologie-amoureuse/" className="text-rose-700 hover:text-rose-900 underline font-medium">astrologie amoureuse</Link>, n&apos;est pas un hasard : cette zone concentre, en chiromancie, tout ce qui touche à la sensualité et à la capacité d&apos;aimer.
           </p>
           <div className="grid md:grid-cols-2 gap-5">
             <div className="bg-white rounded-lg p-5 border-2 border-rose-300">

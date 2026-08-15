@@ -20,7 +20,7 @@ const config: ContentPageConfig = {
     h1: 'Faut-il Répondre à son Ex Quand il Recontacte ?',
     subtitle: 'Décider selon vos objectifs, sans vous précipiter ni décoder chaque message',
     gradient: 'from-violet-600 via-purple-600 to-indigo-600',
-    backLink: { href: '/reconquete', label: 'Retour à la Reconquête' },
+    backLink: { href: '/reconquete/', label: 'Retour à la Reconquête' },
     anchors: [
       { href: '#decider', label: 'Répondre ou se Taire ?', primary: true },
       { href: '#comment', label: 'Comment Répondre' },
@@ -58,11 +58,11 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/reconquete', label: 'Reconquête Amoureuse : Toutes nos Guidances' },
-    { href: '/reconquete/ex-chaud-et-froid-apres-separation', label: 'Mon Ex est Chaud et Froid' },
-    { href: '/reconquete/veut-se-remettre-ensemble-mais-ne-fait-rien', label: 'Il Veut se Remettre Ensemble mais ne Fait Rien' },
-    { href: '/reconquete/ex-revient-silence-radio', label: 'Ex qui Revient après Silence Radio' },
-    { href: '/reconquete/dois-je-attendre-son-retour', label: 'Dois-je l\'Attendre ?' },
+    { href: '/reconquete/', label: 'Reconquête Amoureuse : Toutes nos Guidances' },
+    { href: '/reconquete/ex-chaud-et-froid-apres-separation/', label: 'Mon Ex est Chaud et Froid' },
+    { href: '/reconquete/veut-se-remettre-ensemble-mais-ne-fait-rien/', label: 'Il Veut se Remettre Ensemble mais ne Fait Rien' },
+    { href: '/reconquete/ex-revient-silence-radio/', label: 'Ex qui Revient après Silence Radio' },
+    { href: '/reconquete/dois-je-attendre-son-retour/', label: 'Dois-je l\'Attendre ?' },
   ],
 };
 
@@ -79,7 +79,7 @@ export default function RepondreASonExPage() {
               Votre <strong>ex vous recontacte</strong> et vous ne savez pas quoi faire : répondre, ignorer, attendre ? Il n&apos;existe pas de règle unique, car la bonne décision dépend de votre <strong>objectif</strong> et de votre <strong>état émotionnel</strong>, pas de ce que l&apos;autre attend. La question à se poser n&apos;est pas &laquo;qu&apos;attend-il de moi ?&raquo; mais &laquo;qu&apos;est-ce qui est bon pour moi ?&raquo;. Cette page vous aide à décider en conscience plutôt qu&apos;à réagir dans l&apos;impulsion.
             </p>
             <p className="text-lg leading-relaxed mb-4">
-              Une précision utile : cette situation diffère du cas où <strong>vous</strong> avez initié une période de silence en vue d&apos;une reconquête. Si c&apos;est votre cadre, notre guide sur l&apos;<Link href="/reconquete/ex-revient-silence-radio" className="text-violet-600 hover:text-violet-800 underline font-medium">ex qui revient après un silence radio</Link> est plus adapté. Ici, il s&apos;agit de <strong>recevoir</strong> un message inattendu et de décider quoi en faire, sans stratégie préétablie.
+              Une précision utile : cette situation diffère du cas où <strong>vous</strong> avez initié une période de silence en vue d&apos;une reconquête. Si c&apos;est votre cadre, notre guide sur l&apos;<Link href="/reconquete/ex-revient-silence-radio/" className="text-violet-600 hover:text-violet-800 underline font-medium">ex qui revient après un silence radio</Link> est plus adapté. Ici, il s&apos;agit de <strong>recevoir</strong> un message inattendu et de décider quoi en faire, sans stratégie préétablie.
             </p>
             <p className="text-lg leading-relaxed">
               Nous verrons quand répondre a du sens, quand le <strong>silence</strong> protège mieux, et comment répondre sans se dévaloriser ni relancer un jeu de <strong>chaud et froid</strong>. Répondre ne garantit jamais une réconciliation et ne doit pas être motivé par ce seul espoir. Une <strong>consultation de voyance</strong> peut clarifier vos propres intentions avant de répondre, sans jamais prédire ni provoquer la réaction de l&apos;autre.
@@ -129,7 +129,7 @@ export default function RepondreASonExPage() {
             </div>
           </div>
           <div className="mt-6 bg-white p-6 rounded-lg border-2 border-violet-200">
-            <p className="text-gray-700"><strong>{'\u{1F4A1}'} Repère :</strong> un contact qui réapparaît uniquement quand vous vous éloignez, puis retombe, ressemble à un schéma <Link href="/reconquete/ex-chaud-et-froid-apres-separation" className="text-violet-600 hover:text-violet-800 underline font-medium">chaud et froid</Link>. Dans ce cas, le silence n&apos;est pas de la fuite : c&apos;est une manière de ne pas alimenter un cycle qui ne mène nulle part.</p>
+            <p className="text-gray-700"><strong>{'\u{1F4A1}'} Repère :</strong> un contact qui réapparaît uniquement quand vous vous éloignez, puis retombe, ressemble à un schéma <Link href="/reconquete/ex-chaud-et-froid-apres-separation/" className="text-violet-600 hover:text-violet-800 underline font-medium">chaud et froid</Link>. Dans ce cas, le silence n&apos;est pas de la fuite : c&apos;est une manière de ne pas alimenter un cycle qui ne mène nulle part.</p>
           </div>
         </section>
 
@@ -175,7 +175,7 @@ export default function RepondreASonExPage() {
             </div>
           </div>
           <div className="mt-6 bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded">
-            <p className="text-gray-700"><strong>{'\u{1F4A1}'} À retenir :</strong> répondre ne garantit ni ne provoque une réconciliation. Si un rapprochement se dessine, observez si les <strong>actes suivent les mots</strong> dans la durée, un point développé dans notre guide <Link href="/reconquete/veut-se-remettre-ensemble-mais-ne-fait-rien" className="text-indigo-600 hover:text-indigo-800 underline font-medium">il veut se remettre ensemble mais ne fait rien</Link>.</p>
+            <p className="text-gray-700"><strong>{'\u{1F4A1}'} À retenir :</strong> répondre ne garantit ni ne provoque une réconciliation. Si un rapprochement se dessine, observez si les <strong>actes suivent les mots</strong> dans la durée, un point développé dans notre guide <Link href="/reconquete/veut-se-remettre-ensemble-mais-ne-fait-rien/" className="text-indigo-600 hover:text-indigo-800 underline font-medium">il veut se remettre ensemble mais ne fait rien</Link>.</p>
           </div>
         </section>
 

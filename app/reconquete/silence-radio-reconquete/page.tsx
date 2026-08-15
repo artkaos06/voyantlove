@@ -20,7 +20,7 @@ const config: ContentPageConfig = {
     h1: 'Silence Radio : La Clé de la Reconquête Amoureuse',
     subtitle: 'Comprendre et maîtriser le silence radio avec la guidance de la voyance',
     gradient: 'from-purple-600 via-purple-700 to-indigo-600',
-    backLink: { href: '/reconquete', label: 'Reconquête' },
+    backLink: { href: '/reconquete/', label: 'Reconquête' },
     anchors: [
       { href: '#consultation', label: 'Consultation Reconquête', primary: true },
     ],
@@ -53,12 +53,12 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/reconquete/reconquerir-son-ex', label: 'Reconquérir son Ex : Guide Complet' },
-    { href: '/reconquete/lettre-a-son-ex', label: 'Écrire une Lettre à son Ex' },
-    { href: '/reconquete/va-t-il-elle-revenir', label: 'Va-t-il/elle Revenir ?' },
-    { href: '/reconquete/ex-revient-silence-radio', label: 'Ex qui Revient après Silence Radio' },
-    { href: '/rupture/oublier-son-ex', label: 'Comment Oublier son Ex' },
-    { href: '/sentiments/maime-t-il-elle', label: 'M\'aime-t-il / M\'aime-t-elle Encore ?' },
+    { href: '/reconquete/reconquerir-son-ex/', label: 'Reconquérir son Ex : Guide Complet' },
+    { href: '/reconquete/lettre-a-son-ex/', label: 'Écrire une Lettre à son Ex' },
+    { href: '/reconquete/va-t-il-elle-revenir/', label: 'Va-t-il/elle Revenir ?' },
+    { href: '/reconquete/ex-revient-silence-radio/', label: 'Ex qui Revient après Silence Radio' },
+    { href: '/rupture/oublier-son-ex/', label: 'Comment Oublier son Ex' },
+    { href: '/sentiments/maime-t-il-elle/', label: 'M\'aime-t-il / M\'aime-t-elle Encore ?' },
   ],
 };
 
@@ -99,7 +99,7 @@ export default function SilenceRadioReconquetePage() {
             </div>
             <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-lg">
               <h3 className="font-bold text-lg mb-2 text-blue-700">Phase 3 : Le Manque (Semaine 4-6)</h3>
-              <p className="text-gray-700">C'est la phase déterminante. Le manque s'installe profondément et les <strong>souvenirs</strong> positifs de votre <strong>relation amoureuse</strong> remontent à la surface. Le <strong>tarot</strong> montre des cartes comme le Six de Coupes (nostalgie) ou la Lune (émotions profondes). Votre ex commence à regretter et à idéaliser ce que vous aviez ensemble. Si vous vous demandez si <Link href="/reconquete/va-t-il-elle-revenir" className="text-purple-600 hover:text-purple-800 underline font-medium">votre ex va revenir</Link>, cette phase est celle où les probabilités augmentent considérablement. Le <strong>voyant</strong> peut confirmer l'intensité de ce manque et vous conseiller sur le moment idéal pour rompre le silence.</p>
+              <p className="text-gray-700">C'est la phase déterminante. Le manque s'installe profondément et les <strong>souvenirs</strong> positifs de votre <strong>relation amoureuse</strong> remontent à la surface. Le <strong>tarot</strong> montre des cartes comme le Six de Coupes (nostalgie) ou la Lune (émotions profondes). Votre ex commence à regretter et à idéaliser ce que vous aviez ensemble. Si vous vous demandez si <Link href="/reconquete/va-t-il-elle-revenir/" className="text-purple-600 hover:text-purple-800 underline font-medium">votre ex va revenir</Link>, cette phase est celle où les probabilités augmentent considérablement. Le <strong>voyant</strong> peut confirmer l'intensité de ce manque et vous conseiller sur le moment idéal pour rompre le silence.</p>
             </div>
             <div className="bg-cyan-50 border-l-4 border-cyan-500 p-6 rounded-lg">
               <h3 className="font-bold text-lg mb-2 text-cyan-700">Phase 4 : La Remise en Question (Semaine 6-8)</h3>
@@ -154,7 +154,7 @@ export default function SilenceRadioReconquetePage() {
               <div className="text-3xl font-bold text-purple-600">3</div>
               <div>
                 <h3 className="font-bold text-lg mb-2">Travail sur Soi Profond</h3>
-                <p className="text-gray-700">Le silence radio n'est pas une attente passive. C'est une période de <strong>transformation intérieure</strong> intense. Thérapie, méditation, sport, nouvelles passions : chaque activité qui vous fait grandir renforce votre énergie amoureuse. La <strong>voyance</strong> enseigne que cette évolution se ressent énergétiquement par votre <strong>ex</strong>, même à distance. Pour comprendre comment guérir pleinement pendant cette période, notre guide sur <Link href="/rupture/rupture-amoureuse" className="text-purple-600 hover:text-purple-800 underline font-medium">surmonter une rupture amoureuse</Link> offre des outils complémentaires précieux.</p>
+                <p className="text-gray-700">Le silence radio n'est pas une attente passive. C'est une période de <strong>transformation intérieure</strong> intense. Thérapie, méditation, sport, nouvelles passions : chaque activité qui vous fait grandir renforce votre énergie amoureuse. La <strong>voyance</strong> enseigne que cette évolution se ressent énergétiquement par votre <strong>ex</strong>, même à distance. Pour comprendre comment guérir pleinement pendant cette période, notre guide sur <Link href="/rupture/rupture-amoureuse/" className="text-purple-600 hover:text-purple-800 underline font-medium">surmonter une rupture amoureuse</Link> offre des outils complémentaires précieux.</p>
               </div>
             </div>
             <div className="flex items-start gap-4">

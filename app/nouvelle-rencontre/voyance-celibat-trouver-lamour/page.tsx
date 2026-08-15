@@ -20,7 +20,7 @@ const config: ContentPageConfig = {
     h1: 'Voyance Célibat',
     subtitle: 'Quand Vais-Je Trouver l’Amour ?',
     gradient: 'from-blue-600 via-indigo-600 to-purple-600',
-    backLink: { href: '/nouvelle-rencontre', label: 'Retour aux Nouvelles Rencontres' },
+    backLink: { href: '/nouvelle-rencontre/', label: 'Retour aux Nouvelles Rencontres' },
     anchors: [
       { href: '#blocages', label: 'Identifier mes Blocages', primary: true },
       { href: '#timing', label: 'Timing de Rencontre' },
@@ -70,7 +70,7 @@ export default function VoyanceCelibatPage() {
           La voyance travaille sur votre <strong>vibration amoureuse</strong> profonde pour identifier à quel niveau l&rsquo;amour est bloqué. Est-ce une blessure de rejet non guérie ? Une croyance limitante intériorisée dans l&rsquo;enfance ? Un contrat karmique à solder avant de rencontrer votre <strong>âme sœur</strong> ? Chaque célibataire a un profil unique, et c&rsquo;est ce profil que révèle un tirage de voyance personnalisé.
         </p>
         <p className="text-lg leading-relaxed">
-          Ce guide complet vous permet d&rsquo;identifier vos blocages, de reconnaître les signes que l&rsquo;amour approche, et de comprendre le timing de votre prochaine rencontre. Pour aller plus loin dans votre quête, découvrez comment <Link href="/nouvelle-rencontre/trouver-ame-soeur" className="text-indigo-600 hover:text-indigo-800 underline font-medium">trouver votre âme sœur</Link> grâce à la guidance spirituelle.
+          Ce guide complet vous permet d&rsquo;identifier vos blocages, de reconnaître les signes que l&rsquo;amour approche, et de comprendre le timing de votre prochaine rencontre. Pour aller plus loin dans votre quête, découvrez comment <Link href="/nouvelle-rencontre/trouver-ame-soeur/" className="text-indigo-600 hover:text-indigo-800 underline font-medium">trouver votre âme sœur</Link> grâce à la guidance spirituelle.
         </p>
       </article>
 
@@ -137,7 +137,7 @@ export default function VoyanceCelibatPage() {
 
         <div className="bg-yellow-50 border-l-4 border-yellow-500 p-5 rounded-lg">
           <p className="text-gray-700">
-            <strong>&#x26A0;&#xFE0F; Important :</strong> Ces signes doivent être interprétés dans leur contexte global. Pour connaître ce que révèlent précisément les <Link href="/nouvelle-rencontre/signes-ame-soeur" className="text-indigo-600 hover:text-indigo-800 underline font-medium">signes de l&rsquo;âme sœur</Link> dans votre situation personnelle, une lecture de tarot approfondie reste l&rsquo;outil le plus fiable.
+            <strong>&#x26A0;&#xFE0F; Important :</strong> Ces signes doivent être interprétés dans leur contexte global. Pour connaître ce que révèlent précisément les <Link href="/nouvelle-rencontre/signes-ame-soeur/" className="text-indigo-600 hover:text-indigo-800 underline font-medium">signes de l&rsquo;âme sœur</Link> dans votre situation personnelle, une lecture de tarot approfondie reste l&rsquo;outil le plus fiable.
           </p>
         </div>
       </section>
@@ -266,7 +266,7 @@ export default function VoyanceCelibatPage() {
         <div className="bg-indigo-100 rounded-lg p-5 mt-6 text-center">
           <p className="text-indigo-800 font-semibold text-lg">
             Pour connaître précisément votre timing personnel, consultez notre guide complet sur{' '}
-            <Link href="/sentiments/avenir-amoureux" className="text-indigo-600 hover:text-indigo-800 underline font-medium">votre avenir amoureux</Link>.
+            <Link href="/sentiments/avenir-amoureux/" className="text-indigo-600 hover:text-indigo-800 underline font-medium">votre avenir amoureux</Link>.
           </p>
         </div>
       </section>

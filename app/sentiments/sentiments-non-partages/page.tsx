@@ -20,7 +20,7 @@ const config: ContentPageConfig = {
     h1: 'Sentiments Non Partagés : Comment Avancer',
     subtitle: 'Guidance voyance pour traverser l\'amour non réciproque et retrouver la paix',
     gradient: 'from-pink-500 via-rose-600 to-pink-700',
-    backLink: { href: '/sentiments', label: 'Sentiments' },
+    backLink: { href: '/sentiments/', label: 'Sentiments' },
     anchors: [
       { href: '#consultation', label: 'Consultation Sentiments', primary: true },
     ],
@@ -53,10 +53,10 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/sentiments/maime-t-il-elle', label: 'M\'aime-t-il / M\'aime-t-elle Encore ?' },
-    { href: '/sentiments/pense-t-il-elle-a-moi', label: 'Pense-t-il/elle à Moi ?' },
-    { href: '/rupture/chagrin-damour', label: 'Surmonter un Chagrin d\'Amour' },
-    { href: '/reconquete/sentiments-peuvent-ils-revenir-couple', label: 'Les Sentiments Peuvent-ils Revenir dans un Couple ?' },
+    { href: '/sentiments/maime-t-il-elle/', label: 'M\'aime-t-il / M\'aime-t-elle Encore ?' },
+    { href: '/sentiments/pense-t-il-elle-a-moi/', label: 'Pense-t-il/elle à Moi ?' },
+    { href: '/rupture/chagrin-damour/', label: 'Surmonter un Chagrin d\'Amour' },
+    { href: '/reconquete/sentiments-peuvent-ils-revenir-couple/', label: 'Les Sentiments Peuvent-ils Revenir dans un Couple ?' },
   ],
 };
 
@@ -90,7 +90,7 @@ export default function SentimentsNonPartagesPage() {
           <div className="space-y-4">
             <div className="bg-pink-50 border-l-4 border-pink-500 p-6 rounded-lg">
               <h3 className="font-bold text-lg mb-2 text-pink-700">Les Sentiments Réels de l&apos;Autre</h3>
-              <p className="text-gray-700">La première question que pose le <strong>tarot</strong> est : que ressent vraiment l&apos;autre personne ? Parfois, les <strong>sentiments</strong> sont présents mais refoulés par peur, par timing ou par circonstances. D&apos;autres fois, la carte du Cinq de Coupes confirme une indifférence sincère qu&apos;il faut accepter. Un <strong>voyant</strong> capte ces nuances avec précision. Si vous vous demandez ce que l&apos;autre pense de vous, notre guide &laquo; <Link href="/sentiments/pense-t-il-elle-a-moi" className="text-pink-600 hover:text-pink-800 underline font-medium">pense-t-il/elle à moi</Link> &raquo; approfondit cette question.</p>
+              <p className="text-gray-700">La première question que pose le <strong>tarot</strong> est : que ressent vraiment l&apos;autre personne ? Parfois, les <strong>sentiments</strong> sont présents mais refoulés par peur, par timing ou par circonstances. D&apos;autres fois, la carte du Cinq de Coupes confirme une indifférence sincère qu&apos;il faut accepter. Un <strong>voyant</strong> capte ces nuances avec précision. Si vous vous demandez ce que l&apos;autre pense de vous, notre guide &laquo; <Link href="/sentiments/pense-t-il-elle-a-moi/" className="text-pink-600 hover:text-pink-800 underline font-medium">pense-t-il/elle à moi</Link> &raquo; approfondit cette question.</p>
             </div>
             <div className="bg-rose-50 border-l-4 border-rose-500 p-6 rounded-lg">
               <h3 className="font-bold text-lg mb-2 text-rose-700">Les Obstacles à la Réciprocité</h3>
@@ -146,7 +146,7 @@ export default function SentimentsNonPartagesPage() {
               <div className="text-3xl font-bold text-pink-600">2</div>
               <div>
                 <h3 className="font-bold text-lg mb-2">Autoriser le Deuil Amoureux</h3>
-                <p className="text-gray-700">Même sans <strong>rupture</strong> formelle, un <strong>amour non partagé</strong> nécessite un deuil. Vous faites le deuil d&apos;une relation qui n&apos;a existé que dans votre coeur. Pleurez si vous en avez besoin, autorisez-vous la tristesse sans culpabilité. Ce processus ressemble au <Link href="/rupture/chagrin-damour" className="text-pink-600 hover:text-pink-800 underline font-medium">chagrin d&apos;amour</Link> classique et mérite la même attention et la même douceur. Un <strong>voyant</strong> vous accompagne dans ce processus en éclairant chaque étape du chemin.</p>
+                <p className="text-gray-700">Même sans <strong>rupture</strong> formelle, un <strong>amour non partagé</strong> nécessite un deuil. Vous faites le deuil d&apos;une relation qui n&apos;a existé que dans votre coeur. Pleurez si vous en avez besoin, autorisez-vous la tristesse sans culpabilité. Ce processus ressemble au <Link href="/rupture/chagrin-damour/" className="text-pink-600 hover:text-pink-800 underline font-medium">chagrin d&apos;amour</Link> classique et mérite la même attention et la même douceur. Un <strong>voyant</strong> vous accompagne dans ce processus en éclairant chaque étape du chemin.</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
@@ -167,7 +167,7 @@ export default function SentimentsNonPartagesPage() {
               <div className="text-3xl font-bold text-pink-600">5</div>
               <div>
                 <h3 className="font-bold text-lg mb-2">S&apos;Ouvrir au Renouveau Amoureux</h3>
-                <p className="text-gray-700">Quand le deuil est fait et la leçon intégrée, un espace se libère pour accueillir un <strong>amour réciproque</strong>. La <strong>voyance</strong> accompagne cette transition en éclairant les <strong>nouvelles opportunités sentimentales</strong> qui se profilent. Les transits de Vénus et de Jupiter annoncent souvent ces périodes de renouveau. Notre guide sur <Link href="/nouvelle-rencontre" className="text-pink-600 hover:text-pink-800 underline font-medium">quand rencontrer l&apos;amour</Link> peut vous aider à identifier ces fenêtres de chance amoureuse.</p>
+                <p className="text-gray-700">Quand le deuil est fait et la leçon intégrée, un espace se libère pour accueillir un <strong>amour réciproque</strong>. La <strong>voyance</strong> accompagne cette transition en éclairant les <strong>nouvelles opportunités sentimentales</strong> qui se profilent. Les transits de Vénus et de Jupiter annoncent souvent ces périodes de renouveau. Notre guide sur <Link href="/nouvelle-rencontre/" className="text-pink-600 hover:text-pink-800 underline font-medium">quand rencontrer l&apos;amour</Link> peut vous aider à identifier ces fenêtres de chance amoureuse.</p>
               </div>
             </div>
           </div>
@@ -183,7 +183,7 @@ export default function SentimentsNonPartagesPage() {
             <strong>Neptune</strong> en aspect difficile à votre Vénus natale crée des illusions romantiques puissantes. Vous idéalisez l&apos;autre personne et projetez sur elle des qualités qu&apos;elle ne possède peut-être pas. <strong>Pluton</strong> transitant votre maison VII génère des obsessions amoureuses intenses mais souvent destructrices. <strong>Chiron</strong>, l&apos;astéroïde de la blessure sacrée, réactive vos anciennes <strong>blessures sentimentales</strong> quand il touche vos planètes personnelles.
           </p>
           <p className="text-gray-700 leading-relaxed">
-            L&apos;<Link href="/methodes-voyance/astrologie-amoureuse" className="text-pink-600 hover:text-pink-800 underline font-medium">astrologie amoureuse</Link> ne sert pas seulement à prédire : elle offre une <strong>carte de navigation émotionnelle</strong> qui vous aide à comprendre pourquoi vous ressentez ce que vous ressentez et quand ces transits difficiles prendront fin. La combinaison de l&apos;<strong>astrologie</strong> et du <strong>tarot</strong> offre une vision complète qui transforme la confusion en compréhension et la souffrance en évolution.
+            L&apos;<Link href="/methodes-voyance/astrologie-amoureuse/" className="text-pink-600 hover:text-pink-800 underline font-medium">astrologie amoureuse</Link> ne sert pas seulement à prédire : elle offre une <strong>carte de navigation émotionnelle</strong> qui vous aide à comprendre pourquoi vous ressentez ce que vous ressentez et quand ces transits difficiles prendront fin. La combinaison de l&apos;<strong>astrologie</strong> et du <strong>tarot</strong> offre une vision complète qui transforme la confusion en compréhension et la souffrance en évolution.
           </p>
         </section>
 

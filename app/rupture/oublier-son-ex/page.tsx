@@ -20,7 +20,7 @@ const config: ContentPageConfig = {
     h1: 'Oublier son Ex et Surmonter la Rupture',
     subtitle: 'Guérison, reconstruction et préparation à l\'amour selon le tarot',
     gradient: 'from-pink-500 via-purple-500 to-indigo-500',
-    backLink: { href: '/rupture', label: 'Retour aux Ruptures Amoureuses' },
+    backLink: { href: '/rupture/', label: 'Retour aux Ruptures Amoureuses' },
     anchors: [
       { href: '#consultation', label: 'Consultation Guérison', primary: true },
       { href: '#tirage', label: 'Tirage pour Tourner la Page' },
@@ -54,14 +54,14 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/rupture', label: 'Rupture & Guérison : Toutes nos Guidances' },
-    { href: '/rupture/chagrin-damour', label: 'Surmonter le Chagrin d\'Amour' },
-    { href: '/rupture/rupture-amoureuse', label: 'Comprendre sa Rupture Amoureuse' },
-    { href: '/nouvelle-rencontre/quand-rencontre-amour', label: 'Quand Vais-je Rencontrer Quelqu\'un de Nouveau ?' },
-    { href: '/sentiments/avenir-amoureux', label: 'Mon Avenir Amoureux après la Rupture' },
-    { href: '/reconquete/reconquerir-son-ex', label: 'Reconquérir mon Ex si Finalement je Veux Essayer' },
-    { href: '/rupture/signes-reseaux-sociaux-apres-rupture', label: 'Réseaux Sociaux Après une Rupture : Décoder les Signes' },
-    { href: '/rupture/rever-de-son-ex', label: 'Rêver de son Ex : Signification' },
+    { href: '/rupture/', label: 'Rupture & Guérison : Toutes nos Guidances' },
+    { href: '/rupture/chagrin-damour/', label: 'Surmonter le Chagrin d\'Amour' },
+    { href: '/rupture/rupture-amoureuse/', label: 'Comprendre sa Rupture Amoureuse' },
+    { href: '/nouvelle-rencontre/quand-rencontre-amour/', label: 'Quand Vais-je Rencontrer Quelqu\'un de Nouveau ?' },
+    { href: '/sentiments/avenir-amoureux/', label: 'Mon Avenir Amoureux après la Rupture' },
+    { href: '/reconquete/reconquerir-son-ex/', label: 'Reconquérir mon Ex si Finalement je Veux Essayer' },
+    { href: '/rupture/signes-reseaux-sociaux-apres-rupture/', label: 'Réseaux Sociaux Après une Rupture : Décoder les Signes' },
+    { href: '/rupture/rever-de-son-ex/', label: 'Rêver de son Ex : Signification' },
   ],
 };
 
@@ -73,15 +73,15 @@ export default function OublierSonExPage() {
         <article className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-pink-500">
           <div className="prose prose-lg max-w-none">
             <p className="text-lg leading-relaxed mb-4">
-              Surmonter une <strong>rupture amoureuse</strong> et <strong>oublier son ex</strong> est un processus de guérison que la <strong>voyance</strong> peut accompagner avec douceur. Le <strong>tarot</strong> révèle que le <Link href="/rupture/chagrin-damour" className="text-purple-600 hover:text-purple-800 underline font-medium">chagrin d'amour</Link> suit un cycle naturel de 3 à 6 mois selon l'intensité de la relation, mais chaque personne a son propre rythme de reconstruction émotionnelle.
+              Surmonter une <strong>rupture amoureuse</strong> et <strong>oublier son ex</strong> est un processus de guérison que la <strong>voyance</strong> peut accompagner avec douceur. Le <strong>tarot</strong> révèle que le <Link href="/rupture/chagrin-damour/" className="text-purple-600 hover:text-purple-800 underline font-medium">chagrin d'amour</Link> suit un cycle naturel de 3 à 6 mois selon l'intensité de la relation, mais chaque personne a son propre rythme de reconstruction émotionnelle.
             </p>
             
             <p className="text-lg leading-relaxed mb-4">
-              Le <strong>tirage de l'oubli</strong> vous aide à comprendre pourquoi cette relation devait se terminer, les leçons à en tirer, et quand vous serez prêt(e) à accueillir un <strong>nouvel amour</strong>. La voyance n'efface pas la douleur magiquement, mais elle éclaire le chemin de guérison et vous rassure sur votre capacité à aimer à nouveau. L'astrologie identifie les périodes propices à la fermeture émotionnelle et à l'ouverture vers l'avenir. Pour en savoir plus sur le <Link href="/rupture" className="text-purple-600 hover:text-purple-800 underline font-medium">chagrin d'amour</Link>, découvrez toutes nos guidances spécialisées sur la guérison émotionnelle.
+              Le <strong>tirage de l'oubli</strong> vous aide à comprendre pourquoi cette relation devait se terminer, les leçons à en tirer, et quand vous serez prêt(e) à accueillir un <strong>nouvel amour</strong>. La voyance n'efface pas la douleur magiquement, mais elle éclaire le chemin de guérison et vous rassure sur votre capacité à aimer à nouveau. L'astrologie identifie les périodes propices à la fermeture émotionnelle et à l'ouverture vers l'avenir. Pour en savoir plus sur le <Link href="/rupture/" className="text-purple-600 hover:text-purple-800 underline font-medium">chagrin d'amour</Link>, découvrez toutes nos guidances spécialisées sur la guérison émotionnelle.
             </p>
             
             <p className="text-lg leading-relaxed">
-              Tourner la page ne signifie pas oublier complètement, mais transformer la douleur en sagesse. Un <strong>voyant bienveillant</strong> vous guide vers votre reconstruction intérieure et la préparation à votre <Link href="/nouvelle-rencontre/quand-rencontre-amour" className="text-purple-600 hover:text-purple-800 underline font-medium">prochaine rencontre amoureuse</Link>.
+              Tourner la page ne signifie pas oublier complètement, mais transformer la douleur en sagesse. Un <strong>voyant bienveillant</strong> vous guide vers votre reconstruction intérieure et la préparation à votre <Link href="/nouvelle-rencontre/quand-rencontre-amour/" className="text-purple-600 hover:text-purple-800 underline font-medium">prochaine rencontre amoureuse</Link>.
             </p>
           </div>
         </article>
@@ -95,7 +95,7 @@ export default function OublierSonExPage() {
           </h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le deuil amoureux selon le tarot traverse cinq étapes : le choc (La Tour), le déni (Le Pendu), la colère (Cinq d'Épée), la tristesse profonde (Trois d'Épée) et l'acceptation (Tempérance).</p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Le tarot identifie 5 phases de guérison après une rupture. Chaque phase a sa durée propre selon votre thème astral et l'intensité de la relation vécue. Accepter ces étapes sans les forcer accélère paradoxalement le processus pour <Link href="/rupture/guerir-rupture" className="text-purple-600 hover:text-purple-800 underline font-medium">guérir d'une rupture</Link> en profondeur.
+            Le tarot identifie 5 phases de guérison après une rupture. Chaque phase a sa durée propre selon votre thème astral et l'intensité de la relation vécue. Accepter ces étapes sans les forcer accélère paradoxalement le processus pour <Link href="/rupture/guerir-rupture/" className="text-purple-600 hover:text-purple-800 underline font-medium">guérir d'une rupture</Link> en profondeur.
           </p>
           
           <div className="space-y-4">

@@ -20,7 +20,7 @@ const config: ContentPageConfig = {
     h1: 'Relation Toxique : Signes, Lib\u00e9ration et Guidance',
     subtitle: 'Reconnaissez les signes de toxicit\u00e9 et lib\u00e9rez-vous gr\u00e2ce \u00e0 la voyance amoureuse',
     gradient: 'from-red-500 via-orange-500 to-amber-500',
-    backLink: { href: '/sentiments', label: 'Retour aux Sentiments & Avenir' },
+    backLink: { href: '/sentiments/', label: 'Retour aux Sentiments & Avenir' },
     anchors: [
       { href: '#liberation', label: 'Se Lib\u00e9rer Maintenant', primary: true },
       { href: '#signes', label: 'Les 10 Signes Cl\u00e9s' },
@@ -58,11 +58,11 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/crise-couple/dependance-affective', label: 'D\u00e9pendance Affective : Se Lib\u00e9rer et Aimer Sainement' },
-    { href: '/crise-couple/jalousie-excessive', label: 'Jalousie Excessive dans le Couple' },
-    { href: '/rupture/rupture-amoureuse', label: 'Rupture Amoureuse : Comprendre et Surmonter' },
-    { href: '/rupture/guerir-rupture', label: 'Gu\u00e9rir Apr\u00e8s une Rupture Douloureuse' },
-    { href: '/sentiments/maime-t-il-elle', label: 'M\u2019aime-t-il/elle Vraiment ?' },
+    { href: '/crise-couple/dependance-affective/', label: 'D\u00e9pendance Affective : Se Lib\u00e9rer et Aimer Sainement' },
+    { href: '/crise-couple/jalousie-excessive/', label: 'Jalousie Excessive dans le Couple' },
+    { href: '/rupture/rupture-amoureuse/', label: 'Rupture Amoureuse : Comprendre et Surmonter' },
+    { href: '/rupture/guerir-rupture/', label: 'Gu\u00e9rir Apr\u00e8s une Rupture Douloureuse' },
+    { href: '/sentiments/maime-t-il-elle/', label: 'M\u2019aime-t-il/elle Vraiment ?' },
   ],
 };
 
@@ -77,7 +77,7 @@ export default function RelationToxiquePage() {
         <article className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-red-600">
           <div className="prose prose-lg max-w-none">
             <p className="text-lg leading-relaxed mb-4">
-              La <strong>relation toxique</strong> est un pi&egrave;ge &eacute;motionnel qui pervertit vos <Link href="/sentiments" className="text-red-600 hover:text-red-800 underline font-medium">sentiments amoureux</Link>, enfermant des millions de personnes souvent sans m&ecirc;me qu&rsquo;elles en aient conscience. Derri&egrave;re les disputes r&eacute;p&eacute;t&eacute;es, les silences punitifs et les cycles de rupture-r&eacute;conciliation se cachent des <strong>signes de toxicit&eacute;</strong> pr&eacute;cis que la <strong>voyance amoureuse</strong> identifie avec clart&eacute;. La <strong>manipulation &eacute;motionnelle</strong>, le contr&ocirc;le, l&rsquo;isolement et le gaslighting &eacute;rodent lentement l&rsquo;estime de soi et cr&eacute;ent une <strong>d&eacute;pendance affective</strong> profonde qui rend la <strong>lib&eacute;ration</strong> extr&ecirc;mement difficile. Le <strong>tarot</strong> de lib&eacute;ration r&eacute;v&egrave;le la v&eacute;ritable nature de votre lien, brise les illusions entretenues par le partenaire toxique et trace le chemin vers une vie amoureuse saine et &eacute;panouissante. Comprendre les m&eacute;canismes de la toxicit&eacute; relationnelle est la premi&egrave;re &eacute;tape vers la reconqu&ecirc;te de votre libert&eacute; int&eacute;rieure.
+              La <strong>relation toxique</strong> est un pi&egrave;ge &eacute;motionnel qui pervertit vos <Link href="/sentiments/" className="text-red-600 hover:text-red-800 underline font-medium">sentiments amoureux</Link>, enfermant des millions de personnes souvent sans m&ecirc;me qu&rsquo;elles en aient conscience. Derri&egrave;re les disputes r&eacute;p&eacute;t&eacute;es, les silences punitifs et les cycles de rupture-r&eacute;conciliation se cachent des <strong>signes de toxicit&eacute;</strong> pr&eacute;cis que la <strong>voyance amoureuse</strong> identifie avec clart&eacute;. La <strong>manipulation &eacute;motionnelle</strong>, le contr&ocirc;le, l&rsquo;isolement et le gaslighting &eacute;rodent lentement l&rsquo;estime de soi et cr&eacute;ent une <strong>d&eacute;pendance affective</strong> profonde qui rend la <strong>lib&eacute;ration</strong> extr&ecirc;mement difficile. Le <strong>tarot</strong> de lib&eacute;ration r&eacute;v&egrave;le la v&eacute;ritable nature de votre lien, brise les illusions entretenues par le partenaire toxique et trace le chemin vers une vie amoureuse saine et &eacute;panouissante. Comprendre les m&eacute;canismes de la toxicit&eacute; relationnelle est la premi&egrave;re &eacute;tape vers la reconqu&ecirc;te de votre libert&eacute; int&eacute;rieure.
             </p>
           </div>
         </article>
@@ -103,7 +103,7 @@ export default function RelationToxiquePage() {
             <div className="bg-orange-50 border-l-4 border-orange-500 p-5 rounded-lg">
               <h3 className="font-bold text-orange-700 mb-2">2. La Jalousie Excessive et Possessive</h3>
               <p className="text-gray-700 text-sm">
-                Une <strong>jalousie maladive</strong> qui d&eacute;passe largement l&rsquo;inqui&eacute;tude normale. Votre partenaire per&ccedil;oit chaque interaction avec autrui comme une menace et vous reproche des infid&eacute;lit&eacute;s imaginaires. Cette possessivit&eacute; toxique vous isole progressivement. Pour approfondir ce sujet, d&eacute;couvrez notre guidance sur la <Link href="/crise-couple/jalousie-excessive" className="text-red-600 hover:text-red-800 underline font-medium">jalousie excessive dans le couple</Link>.
+                Une <strong>jalousie maladive</strong> qui d&eacute;passe largement l&rsquo;inqui&eacute;tude normale. Votre partenaire per&ccedil;oit chaque interaction avec autrui comme une menace et vous reproche des infid&eacute;lit&eacute;s imaginaires. Cette possessivit&eacute; toxique vous isole progressivement. Pour approfondir ce sujet, d&eacute;couvrez notre guidance sur la <Link href="/crise-couple/jalousie-excessive/" className="text-red-600 hover:text-red-800 underline font-medium">jalousie excessive dans le couple</Link>.
               </p>
             </div>
 
@@ -165,7 +165,7 @@ export default function RelationToxiquePage() {
           </div>
 
           <div className="bg-amber-50 border-l-4 border-amber-600 p-5 rounded mt-6">
-            <p className="text-gray-700"><strong>Important :</strong> Si vous reconnaissez 3 ou plus de ces signes, votre relation pr&eacute;sente des dynamiques toxiques. Une consultation de <Link href="/sentiments/maime-t-il-elle" className="text-red-600 hover:text-red-800 underline font-medium">voyance amoureuse</Link> peut vous aider &agrave; voir clairement la v&eacute;rit&eacute; de votre lien.</p>
+            <p className="text-gray-700"><strong>Important :</strong> Si vous reconnaissez 3 ou plus de ces signes, votre relation pr&eacute;sente des dynamiques toxiques. Une consultation de <Link href="/sentiments/maime-t-il-elle/" className="text-red-600 hover:text-red-800 underline font-medium">voyance amoureuse</Link> peut vous aider &agrave; voir clairement la v&eacute;rit&eacute; de votre lien.</p>
           </div>
         </section>
 
@@ -181,7 +181,7 @@ export default function RelationToxiquePage() {
             <div className="bg-white rounded-lg p-5 border-l-4 border-red-500">
               <h3 className="font-bold text-lg mb-3 text-red-700">La D&eacute;pendance Affective</h3>
               <p className="text-gray-700">
-                La <strong>d&eacute;pendance affective</strong> cr&eacute;e un besoin compulsif de la pr&eacute;sence de l&rsquo;autre pour se sentir exister. Vous avez tellement investi dans cette relation que la quitter signifie affronter un vide int&eacute;rieur terrifiant. Le Diable dans le tarot illustre ces cha&icirc;nes invisibles qui vous retiennent malgr&eacute; la souffrance. D&eacute;couvrez notre guidance compl&egrave;te sur la <Link href="/crise-couple/dependance-affective" className="text-red-600 hover:text-red-800 underline font-medium">d&eacute;pendance affective et ses m&eacute;canismes</Link>.
+                La <strong>d&eacute;pendance affective</strong> cr&eacute;e un besoin compulsif de la pr&eacute;sence de l&rsquo;autre pour se sentir exister. Vous avez tellement investi dans cette relation que la quitter signifie affronter un vide int&eacute;rieur terrifiant. Le Diable dans le tarot illustre ces cha&icirc;nes invisibles qui vous retiennent malgr&eacute; la souffrance. D&eacute;couvrez notre guidance compl&egrave;te sur la <Link href="/crise-couple/dependance-affective/" className="text-red-600 hover:text-red-800 underline font-medium">d&eacute;pendance affective et ses m&eacute;canismes</Link>.
               </p>
             </div>
 
@@ -299,7 +299,7 @@ export default function RelationToxiquePage() {
             <div className="bg-white p-6 rounded-lg border-2 border-green-200">
               <h3 className="font-bold text-xl mb-4 text-green-700">&Eacute;tape 4 : Poser des Limites Infranchissables</h3>
               <p className="text-gray-700 mb-3">
-                Apr&egrave;s la s&eacute;paration, le partenaire toxique tentera de revenir. <strong>Poser des limites claires</strong> est vital : couper le contact, ne pas r&eacute;pondre aux provocations, refuser tout tete-&agrave;-t&ecirc;te. Le tarot montre La Justice &mdash; la n&eacute;cessit&eacute; de trancher clairement et de maintenir votre d&eacute;cision sans fl&eacute;chir. Si votre situation &eacute;volue vers une <Link href="/rupture/rupture-amoureuse" className="text-red-600 hover:text-red-800 underline font-medium">rupture d&eacute;finitive</Link>, notre guidance sp&eacute;cifique vous accompagne dans cette transition.
+                Apr&egrave;s la s&eacute;paration, le partenaire toxique tentera de revenir. <strong>Poser des limites claires</strong> est vital : couper le contact, ne pas r&eacute;pondre aux provocations, refuser tout tete-&agrave;-t&ecirc;te. Le tarot montre La Justice &mdash; la n&eacute;cessit&eacute; de trancher clairement et de maintenir votre d&eacute;cision sans fl&eacute;chir. Si votre situation &eacute;volue vers une <Link href="/rupture/rupture-amoureuse/" className="text-red-600 hover:text-red-800 underline font-medium">rupture d&eacute;finitive</Link>, notre guidance sp&eacute;cifique vous accompagne dans cette transition.
               </p>
               <div className="bg-green-50 p-4 rounded border-l-4 border-green-400">
                 <p className="text-gray-700"><strong>Guidance :</strong> Chaque fois que vous maintenez une limite malgr&eacute; la pression, vous renforcez votre libert&eacute; nouvelle.</p>
@@ -320,21 +320,21 @@ export default function RelationToxiquePage() {
             <div className="bg-purple-50 border-l-4 border-purple-500 p-5 rounded-lg">
               <h3 className="font-bold text-lg mb-2 text-purple-700">Gu&eacute;rir les Blessures &Eacute;motionnelles</h3>
               <p className="text-gray-700">
-                Le <strong>processus de gu&eacute;rison</strong> commence par accueillir toutes les &eacute;motions refoul&eacute;es pendant la relation toxique : col&egrave;re, tristesse, honte, culpabilit&eacute;. Ces &eacute;motions ne sont pas vos ennemies mais des alli&eacute;es qui vous reconnectent &agrave; vous-m&ecirc;me. Le tarot, &agrave; travers L&rsquo;&Eacute;toile et Temp&eacute;rance, accompagne ce travail de lib&eacute;ration &eacute;motionnelle. Pour approfondir ce chemin, notre guidance sur <Link href="/rupture/guerir-rupture" className="text-red-600 hover:text-red-800 underline font-medium">comment gu&eacute;rir apr&egrave;s une rupture</Link> offre des pistes concr&egrave;tes.
+                Le <strong>processus de gu&eacute;rison</strong> commence par accueillir toutes les &eacute;motions refoul&eacute;es pendant la relation toxique : col&egrave;re, tristesse, honte, culpabilit&eacute;. Ces &eacute;motions ne sont pas vos ennemies mais des alli&eacute;es qui vous reconnectent &agrave; vous-m&ecirc;me. Le tarot, &agrave; travers L&rsquo;&Eacute;toile et Temp&eacute;rance, accompagne ce travail de lib&eacute;ration &eacute;motionnelle. Pour approfondir ce chemin, notre guidance sur <Link href="/rupture/guerir-rupture/" className="text-red-600 hover:text-red-800 underline font-medium">comment gu&eacute;rir apr&egrave;s une rupture</Link> offre des pistes concr&egrave;tes.
               </p>
             </div>
 
             <div className="bg-blue-50 border-l-4 border-blue-500 p-5 rounded-lg">
               <h3 className="font-bold text-lg mb-2 text-blue-700">Reconna&icirc;tre Vos Sch&eacute;mas R&eacute;p&eacute;titifs</h3>
               <p className="text-gray-700">
-                La cl&eacute; pour ne pas retomber dans une relation toxique est d&rsquo;identifier les <strong>sch&eacute;mas r&eacute;p&eacute;titifs</strong> qui vous attirent vers des partenaires toxiques. Quelle blessure cherchez-vous &agrave; combler ? Quel r&ocirc;le jouez-vous dans cette dynamique ? Le tarot karmique r&eacute;v&egrave;le les racines profondes de ces sch&eacute;mas et vous guide vers leur transformation. La guidance sp&eacute;cifique sur la <Link href="/crise-couple/dependance-affective" className="text-red-600 hover:text-red-800 underline font-medium">d&eacute;pendance affective</Link> compl&egrave;te cette introspection.
+                La cl&eacute; pour ne pas retomber dans une relation toxique est d&rsquo;identifier les <strong>sch&eacute;mas r&eacute;p&eacute;titifs</strong> qui vous attirent vers des partenaires toxiques. Quelle blessure cherchez-vous &agrave; combler ? Quel r&ocirc;le jouez-vous dans cette dynamique ? Le tarot karmique r&eacute;v&egrave;le les racines profondes de ces sch&eacute;mas et vous guide vers leur transformation. La guidance sp&eacute;cifique sur la <Link href="/crise-couple/dependance-affective/" className="text-red-600 hover:text-red-800 underline font-medium">d&eacute;pendance affective</Link> compl&egrave;te cette introspection.
               </p>
             </div>
 
             <div className="bg-green-50 border-l-4 border-green-500 p-5 rounded-lg">
               <h3 className="font-bold text-lg mb-2 text-green-700">S&rsquo;ouvrir &agrave; un Amour Sain</h3>
               <p className="text-gray-700">
-                Apr&egrave;s la gu&eacute;rison, vient le temps de s&rsquo;ouvrir &agrave; un <strong>amour v&eacute;ritable</strong> fond&eacute; sur une <Link href="/sentiments/compatibilite-amoureuse" className="text-red-600 hover:text-red-800 underline font-medium">compatibilit&eacute;</Link> r&eacute;elle, le respect mutuel, la libert&eacute; et l&rsquo;&eacute;panouissement de chacun. Le tarot annonce cette renaissance par Le Soleil et Les Amoureux en position positive &mdash; signes d&rsquo;une relation &eacute;quilibr&eacute;e et nourrissante. Vous m&eacute;ritez un amour qui vous &eacute;l&egrave;ve, pas un amour qui vous d&eacute;truit. Pour explorer ce que l&rsquo;avenir vous r&eacute;serve, d&eacute;couvrez si <Link href="/crise-couple/sauver-son-couple" className="text-red-600 hover:text-red-800 underline font-medium">votre couple m&eacute;rite d&rsquo;&ecirc;tre sauv&eacute;</Link> ou si un nouveau d&eacute;part est la meilleure voie.
+                Apr&egrave;s la gu&eacute;rison, vient le temps de s&rsquo;ouvrir &agrave; un <strong>amour v&eacute;ritable</strong> fond&eacute; sur une <Link href="/sentiments/compatibilite-amoureuse/" className="text-red-600 hover:text-red-800 underline font-medium">compatibilit&eacute;</Link> r&eacute;elle, le respect mutuel, la libert&eacute; et l&rsquo;&eacute;panouissement de chacun. Le tarot annonce cette renaissance par Le Soleil et Les Amoureux en position positive &mdash; signes d&rsquo;une relation &eacute;quilibr&eacute;e et nourrissante. Vous m&eacute;ritez un amour qui vous &eacute;l&egrave;ve, pas un amour qui vous d&eacute;truit. Pour explorer ce que l&rsquo;avenir vous r&eacute;serve, d&eacute;couvrez si <Link href="/crise-couple/sauver-son-couple/" className="text-red-600 hover:text-red-800 underline font-medium">votre couple m&eacute;rite d&rsquo;&ecirc;tre sauv&eacute;</Link> ou si un nouveau d&eacute;part est la meilleure voie.
               </p>
             </div>
           </div>

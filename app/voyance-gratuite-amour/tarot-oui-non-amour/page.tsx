@@ -79,7 +79,7 @@ export default function TarotOuiNonAmourPage() {
       {/* Header */}
       <header className="bg-gradient-to-r from-emerald-500 via-green-500 to-teal-500 text-white py-16 px-4">
         <div className="max-w-4xl mx-auto">
-          <Link href="/voyance-gratuite-amour" className="text-white/80 hover:text-white mb-4 inline-block">&larr; Retour &agrave; Voyance Gratuite Amour</Link>
+          <Link href="/voyance-gratuite-amour/" className="text-white/80 hover:text-white mb-4 inline-block">&larr; Retour &agrave; Voyance Gratuite Amour</Link>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">🔮 Tarot Oui Non Amour Gratuit</h1>
           <p className="text-xl opacity-95 mb-6">Tirage gratuit et sérieux, posez votre question et tirez une carte pour votre réponse</p>
           <div className="flex gap-4 flex-wrap">
@@ -128,7 +128,7 @@ export default function TarotOuiNonAmourPage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">&#x1F3AF; Principe du Tirage Oui/Non en Amour</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le tirage propos&eacute; ici repose sur une carte tir&eacute;e parmi les 22 arcanes majeurs du Tarot de Marseille. Chaque carte porte une interpr&eacute;tation oui, non ou nuanc&eacute;e.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Le principe du module est simple&nbsp;: chaque <strong>arcane majeur</strong> du <strong>Tarot de Marseille</strong> re&ccedil;oit une interpr&eacute;tation stable &mdash; oui, non ou nuanc&eacute;e &mdash; adapt&eacute;e &agrave; une question sentimentale. Une seule carte est choisie et son interpr&eacute;tation oriente la r&eacute;ponse. Cette m&eacute;thode fait partie des approches de <Link href="/voyance-gratuite-amour" className="text-emerald-600 hover:text-emerald-800 underline font-medium">voyance gratuite amour</Link> les plus demand&eacute;es.
+            Le principe du module est simple&nbsp;: chaque <strong>arcane majeur</strong> du <strong>Tarot de Marseille</strong> re&ccedil;oit une interpr&eacute;tation stable &mdash; oui, non ou nuanc&eacute;e &mdash; adapt&eacute;e &agrave; une question sentimentale. Une seule carte est choisie et son interpr&eacute;tation oriente la r&eacute;ponse. Cette m&eacute;thode fait partie des approches de <Link href="/voyance-gratuite-amour/" className="text-emerald-600 hover:text-emerald-800 underline font-medium">voyance gratuite amour</Link> les plus demand&eacute;es.
           </p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Le processus est structur&eacute; en trois &eacute;tapes. Vous formulez une <strong>question sentimentale</strong> claire et binaire, le jeu complet des 22 <strong>arcanes majeurs</strong> est m&eacute;lang&eacute;, puis vous choisissez une carte. Le Soleil, les Amoureux, l&apos;&Eacute;toile et Temp&eacute;rance donnent ici un &laquo;&nbsp;oui&nbsp;&raquo;&nbsp;; la Maison Dieu, le Diable et l&apos;Arcane sans nom donnent un &laquo;&nbsp;non&nbsp;&raquo;&nbsp;; la Lune, le Jugement ou la Roue de Fortune apportent une r&eacute;ponse nuanc&eacute;e.
@@ -146,7 +146,7 @@ export default function TarotOuiNonAmourPage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">&#x1F4AC; Les 10 Questions Amour les Plus Pos&eacute;es</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Les questions les plus fr&eacute;quentes au tarot oui/non amour portent sur la r&eacute;ciprocit&eacute; des sentiments, l&apos;avenir du couple, le retour de l&apos;ex et la possibilit&eacute; d&apos;une nouvelle rencontre.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Apr&egrave;s des ann&eacute;es de pratique en <strong>voyance sentimentale</strong>, certaines <strong>questions amoureuses</strong> reviennent avec une constance r&eacute;v&eacute;latrice. Voici les dix interrogations les plus pos&eacute;es au <strong>tarot oui non amour</strong>, accompagn&eacute;es de conseils pour les formuler de mani&egrave;re optimale. Si vous souhaitez <Link href="/sentiments/pense-t-il-elle-a-moi" className="text-emerald-600 hover:text-emerald-800 underline font-medium">savoir s&apos;il pense &agrave; vous</Link>, le tirage oui/non apporte souvent une premi&egrave;re r&eacute;ponse &eacute;clairante.
+            Apr&egrave;s des ann&eacute;es de pratique en <strong>voyance sentimentale</strong>, certaines <strong>questions amoureuses</strong> reviennent avec une constance r&eacute;v&eacute;latrice. Voici les dix interrogations les plus pos&eacute;es au <strong>tarot oui non amour</strong>, accompagn&eacute;es de conseils pour les formuler de mani&egrave;re optimale. Si vous souhaitez <Link href="/sentiments/pense-t-il-elle-a-moi/" className="text-emerald-600 hover:text-emerald-800 underline font-medium">savoir s&apos;il pense &agrave; vous</Link>, le tirage oui/non apporte souvent une premi&egrave;re r&eacute;ponse &eacute;clairante.
           </p>
 
           <div className="space-y-4">
@@ -247,7 +247,7 @@ export default function TarotOuiNonAmourPage() {
           </div>
 
           <p className="text-gray-700 leading-relaxed">
-            Il est essentiel de comprendre que cette classification sert de guide, pas de r&egrave;gle absolue. Un <strong>voyant</strong> exp&eacute;riment&eacute; en <strong>tarot amoureux</strong> adapte sa lecture &agrave; votre contexte personnel. Pour d&eacute;couvrir si votre ex pr&eacute;sente des <Link href="/reconquete/ex-qui-revient" className="text-emerald-600 hover:text-emerald-800 underline font-medium">signes qu&apos;un ex revient</Link>, le tirage oui/non peut confirmer l&apos;&eacute;nergie de retour per&ccedil;ue dans votre <strong>situation sentimentale</strong>.
+            Il est essentiel de comprendre que cette classification sert de guide, pas de r&egrave;gle absolue. Un <strong>voyant</strong> exp&eacute;riment&eacute; en <strong>tarot amoureux</strong> adapte sa lecture &agrave; votre contexte personnel. Pour d&eacute;couvrir si votre ex pr&eacute;sente des <Link href="/reconquete/ex-qui-revient/" className="text-emerald-600 hover:text-emerald-800 underline font-medium">signes qu&apos;un ex revient</Link>, le tirage oui/non peut confirmer l&apos;&eacute;nergie de retour per&ccedil;ue dans votre <strong>situation sentimentale</strong>.
           </p>
         </section>
 
@@ -311,7 +311,7 @@ export default function TarotOuiNonAmourPage() {
             <div className="bg-green-50 border-l-4 border-green-500 p-5 rounded-lg">
               <h3 className="font-bold text-lg mb-2 text-green-700">Quand le Voyant Devient Indispensable</h3>
               <p className="text-gray-700 text-sm">
-                La <strong>consultation</strong> avec un <strong>voyant sp&eacute;cialis&eacute;</strong> devient n&eacute;cessaire lorsque vos tirages gratuits ne suffisent plus &agrave; apaiser vos questionnements. Les situations impliquant un triangle amoureux, une <strong>rupture douloureuse</strong>, un <strong>sch&eacute;ma r&eacute;p&eacute;titif</strong> ou une d&eacute;cision engageante demandent l&apos;expertise d&apos;un professionnel qui combine la lecture des cartes avec son <strong>intuition</strong> et sa clairvoyance. Le voyant ne se contente pas de r&eacute;pondre : il vous accompagne vers des solutions. Pour obtenir des <Link href="/reconquete/va-t-il-elle-revenir" className="text-emerald-600 hover:text-emerald-800 underline font-medium">pr&eacute;dictions de retour</Link> fiables, cette expertise est souvent indispensable.
+                La <strong>consultation</strong> avec un <strong>voyant sp&eacute;cialis&eacute;</strong> devient n&eacute;cessaire lorsque vos tirages gratuits ne suffisent plus &agrave; apaiser vos questionnements. Les situations impliquant un triangle amoureux, une <strong>rupture douloureuse</strong>, un <strong>sch&eacute;ma r&eacute;p&eacute;titif</strong> ou une d&eacute;cision engageante demandent l&apos;expertise d&apos;un professionnel qui combine la lecture des cartes avec son <strong>intuition</strong> et sa clairvoyance. Le voyant ne se contente pas de r&eacute;pondre : il vous accompagne vers des solutions. Pour obtenir des <Link href="/reconquete/va-t-il-elle-revenir/" className="text-emerald-600 hover:text-emerald-800 underline font-medium">pr&eacute;dictions de retour</Link> fiables, cette expertise est souvent indispensable.
               </p>
             </div>
 
@@ -370,13 +370,13 @@ export default function TarotOuiNonAmourPage() {
         <div className="bg-gray-100 rounded-xl p-6 mb-8">
           <h3 className="font-bold text-lg mb-4 text-gray-900">&#x1F4DA; Articles Connexes</h3>
           <div className="space-y-2">
-            <Link href="/voyance-gratuite-amour" className="block text-emerald-600 hover:text-emerald-800 font-medium">&rarr; Voyance Gratuite Amour : Guide Complet</Link>
-            <Link href="/voyance-gratuite-amour/tarot-amour-gratuit" className="block text-emerald-600 hover:text-emerald-800 font-medium">&rarr; Tarot Amour Gratuit : Tirage et Interpr&eacute;tation</Link>
-            <Link href="/voyance-gratuite-amour/tarot-du-jour-amour" className="block text-emerald-600 hover:text-emerald-800 font-medium">&rarr; Tarot du Jour Amour Gratuit</Link>
-            <Link href="/voyance-gratuite-amour/tarot-futur-proche-amour" className="block text-emerald-600 hover:text-emerald-800 font-medium">&rarr; Tarot Futur Proche Amour Gratuit</Link>
-            <Link href="/reconquete/va-t-il-elle-revenir" className="block text-emerald-600 hover:text-emerald-800 font-medium">&rarr; Va-t-il/elle Revenir ? Pr&eacute;dictions</Link>
-            <Link href="/sentiments/pense-t-il-elle-a-moi" className="block text-emerald-600 hover:text-emerald-800 font-medium">&rarr; Pense-t-il/elle &agrave; Moi ?</Link>
-            <Link href="/reconquete/ex-qui-revient" className="block text-emerald-600 hover:text-emerald-800 font-medium">&rarr; Signes qu&apos;un Ex Revient</Link>
+            <Link href="/voyance-gratuite-amour/" className="block text-emerald-600 hover:text-emerald-800 font-medium">&rarr; Voyance Gratuite Amour : Guide Complet</Link>
+            <Link href="/voyance-gratuite-amour/tarot-amour-gratuit/" className="block text-emerald-600 hover:text-emerald-800 font-medium">&rarr; Tarot Amour Gratuit : Tirage et Interpr&eacute;tation</Link>
+            <Link href="/voyance-gratuite-amour/tarot-du-jour-amour/" className="block text-emerald-600 hover:text-emerald-800 font-medium">&rarr; Tarot du Jour Amour Gratuit</Link>
+            <Link href="/voyance-gratuite-amour/tarot-futur-proche-amour/" className="block text-emerald-600 hover:text-emerald-800 font-medium">&rarr; Tarot Futur Proche Amour Gratuit</Link>
+            <Link href="/reconquete/va-t-il-elle-revenir/" className="block text-emerald-600 hover:text-emerald-800 font-medium">&rarr; Va-t-il/elle Revenir ? Pr&eacute;dictions</Link>
+            <Link href="/sentiments/pense-t-il-elle-a-moi/" className="block text-emerald-600 hover:text-emerald-800 font-medium">&rarr; Pense-t-il/elle &agrave; Moi ?</Link>
+            <Link href="/reconquete/ex-qui-revient/" className="block text-emerald-600 hover:text-emerald-800 font-medium">&rarr; Signes qu&apos;un Ex Revient</Link>
           </div>
         </div>
 

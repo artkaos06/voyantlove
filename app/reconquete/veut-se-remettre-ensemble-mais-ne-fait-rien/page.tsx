@@ -20,7 +20,7 @@ const config: ContentPageConfig = {
     h1: 'Il Dit Vouloir se Remettre Ensemble, mais ne Fait Rien',
     subtitle: 'Comment interpréter l\'écart entre ses paroles et ses actes',
     gradient: 'from-violet-600 via-purple-600 to-indigo-600',
-    backLink: { href: '/reconquete', label: 'Retour à la Reconquête' },
+    backLink: { href: '/reconquete/', label: 'Retour à la Reconquête' },
     anchors: [
       { href: '#diagnostic', label: 'Le Cadre Paroles / Actes', primary: true },
       { href: '#decision', label: 'Demander une Décision' },
@@ -58,12 +58,12 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/reconquete', label: 'Reconquête Amoureuse : Toutes nos Guidances' },
-    { href: '/reconquete/dois-je-attendre-son-retour', label: 'Dois-je l\'Attendre ?' },
-    { href: '/reconquete/se-remettre-ensemble', label: 'Se Remettre Ensemble : Les 5 Étapes' },
-    { href: '/reconquete/va-t-il-elle-revenir', label: 'Va-t-il/elle Revenir ?' },
-    { href: '/crise-couple/dependance-affective', label: 'Reconnaître la Dépendance Affective' },
-    { href: '/reconquete/sentiments-peuvent-ils-revenir-couple', label: 'Les Sentiments Peuvent-ils Revenir ?' },
+    { href: '/reconquete/', label: 'Reconquête Amoureuse : Toutes nos Guidances' },
+    { href: '/reconquete/dois-je-attendre-son-retour/', label: 'Dois-je l\'Attendre ?' },
+    { href: '/reconquete/se-remettre-ensemble/', label: 'Se Remettre Ensemble : Les 5 Étapes' },
+    { href: '/reconquete/va-t-il-elle-revenir/', label: 'Va-t-il/elle Revenir ?' },
+    { href: '/crise-couple/dependance-affective/', label: 'Reconnaître la Dépendance Affective' },
+    { href: '/reconquete/sentiments-peuvent-ils-revenir-couple/', label: 'Les Sentiments Peuvent-ils Revenir ?' },
   ],
 };
 
@@ -80,7 +80,7 @@ export default function VeutSeRemettreEnsembleMaisNeFaitRienPage() {
               Entendre <strong>&laquo;je veux qu&apos;on se remette ensemble&raquo;</strong> sans voir aucun <strong>acte</strong> suivre est l&apos;une des situations les plus déroutantes après une séparation. Les <strong>paroles de réconciliation</strong> entretiennent l&apos;espoir, mais elles ne coûtent presque rien et n&apos;engagent à rien. La seule manière fiable de comprendre l&apos;intention réelle de l&apos;autre est d&apos;observer, sur plusieurs semaines, l&apos;écart entre <strong>ce qui est dit</strong> et <strong>ce qui est fait</strong>. Personne ne peut prédire à votre place s&apos;il ou elle reviendra vraiment, mais ce cadre vous rend votre lucidité.
             </p>
             <p className="text-lg leading-relaxed mb-4">
-              Derrière l&apos;inaction, plusieurs dynamiques coexistent souvent : une <strong>hésitation sincère</strong>, la peur de reprendre un <strong>engagement</strong> qui avait échoué, ou le confort d&apos;un lien maintenu sans décision. Aucune de ces explications ne relève d&apos;un diagnostic psychologique, et il ne s&apos;agit pas d&apos;étiqueter l&apos;autre. Si l&apos;incertitude vous épuise, notre guidance sur <Link href="/reconquete/dois-je-attendre-son-retour" className="text-violet-600 hover:text-violet-800 underline font-medium">dois-je l&apos;attendre</Link> complète cette réflexion sur la juste durée de patience.
+              Derrière l&apos;inaction, plusieurs dynamiques coexistent souvent : une <strong>hésitation sincère</strong>, la peur de reprendre un <strong>engagement</strong> qui avait échoué, ou le confort d&apos;un lien maintenu sans décision. Aucune de ces explications ne relève d&apos;un diagnostic psychologique, et il ne s&apos;agit pas d&apos;étiqueter l&apos;autre. Si l&apos;incertitude vous épuise, notre guidance sur <Link href="/reconquete/dois-je-attendre-son-retour/" className="text-violet-600 hover:text-violet-800 underline font-medium">dois-je l&apos;attendre</Link> complète cette réflexion sur la juste durée de patience.
             </p>
             <p className="text-lg leading-relaxed">
               L&apos;objectif de cette page n&apos;est pas de deviner ses intentions cachées, mais de vous donner une <strong>grille de lecture concrète</strong> pour évaluer les paroles, les comportements, leur constance, et décider de la limite qui protège votre équilibre. Une <strong>consultation de voyance sentimentale</strong> peut ensuite éclairer la dynamique émotionnelle en jeu et vos propres choix, sans jamais prétendre contraindre la décision de l&apos;autre.
@@ -150,7 +150,7 @@ export default function VeutSeRemettreEnsembleMaisNeFaitRienPage() {
             </div>
             <div className="bg-orange-50 border-l-4 border-orange-500 p-5 rounded">
               <h3 className="font-bold mb-2 text-orange-700">{'⏳'} Une Disponibilité Intermittente et Confortable</h3>
-              <p className="text-gray-700 text-sm">L&apos;autre est présent quand cela lui convient, absent le reste du temps, sans que la situation ne progresse. Si ce schéma vous épuise, notre guide sur la <Link href="/crise-couple/dependance-affective" className="text-violet-600 hover:text-violet-800 underline font-medium">dépendance affective</Link> aide à reconnaître le moment où le lien devient un piège.</p>
+              <p className="text-gray-700 text-sm">L&apos;autre est présent quand cela lui convient, absent le reste du temps, sans que la situation ne progresse. Si ce schéma vous épuise, notre guide sur la <Link href="/crise-couple/dependance-affective/" className="text-violet-600 hover:text-violet-800 underline font-medium">dépendance affective</Link> aide à reconnaître le moment où le lien devient un piège.</p>
             </div>
           </div>
         </section>
@@ -193,10 +193,10 @@ export default function VeutSeRemettreEnsembleMaisNeFaitRienPage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">{'\u{1F4C5}'} Combien de Temps Attendre Avant de Demander une Décision Claire</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Lorsque plusieurs mois passent sans qu&apos;aucun acte n&apos;appuie les paroles, demander une clarification devient legitime : ce n&apos;est pas un ultimatum, mais l&apos;expression d&apos;un besoin de lisibilite qui vous protege de l&apos;attente indefinie.</p>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Il n&apos;existe pas de délai universel, mais une <strong>séparation sans décision</strong> qui s&apos;étire sur des mois, sans acte pour soutenir les paroles, appelle une clarification. Demander où vous en êtes n&apos;est pas exercer une pression : c&apos;est reprendre votre part de responsabilité dans une situation où vous n&apos;êtes pas condamné(e) à seulement attendre. Pour situer la juste durée de patience, notre page <Link href="/reconquete/dois-je-attendre-son-retour" className="text-violet-600 hover:text-violet-800 underline font-medium">dois-je l&apos;attendre</Link> approfondit ce point.
+            Il n&apos;existe pas de délai universel, mais une <strong>séparation sans décision</strong> qui s&apos;étire sur des mois, sans acte pour soutenir les paroles, appelle une clarification. Demander où vous en êtes n&apos;est pas exercer une pression : c&apos;est reprendre votre part de responsabilité dans une situation où vous n&apos;êtes pas condamné(e) à seulement attendre. Pour situer la juste durée de patience, notre page <Link href="/reconquete/dois-je-attendre-son-retour/" className="text-violet-600 hover:text-violet-800 underline font-medium">dois-je l&apos;attendre</Link> approfondit ce point.
           </p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Avant même de parler à l&apos;autre, fixez-vous une <strong>limite intérieure de temps</strong>, révisable mais réelle. Cette limite n&apos;a pas à être annoncée : elle existe pour vous, pour éviter que l&apos;espoir ne se transforme en une <strong>attente indéfinie</strong> qui met votre vie en pause. Si un jour la réconciliation se concrétise, notre guide sur <Link href="/reconquete/se-remettre-ensemble" className="text-violet-600 hover:text-violet-800 underline font-medium">se remettre ensemble</Link> détaille les étapes pour repartir sur des bases saines.
+            Avant même de parler à l&apos;autre, fixez-vous une <strong>limite intérieure de temps</strong>, révisable mais réelle. Cette limite n&apos;a pas à être annoncée : elle existe pour vous, pour éviter que l&apos;espoir ne se transforme en une <strong>attente indéfinie</strong> qui met votre vie en pause. Si un jour la réconciliation se concrétise, notre guide sur <Link href="/reconquete/se-remettre-ensemble/" className="text-violet-600 hover:text-violet-800 underline font-medium">se remettre ensemble</Link> détaille les étapes pour repartir sur des bases saines.
           </p>
           <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded">
             <p className="text-gray-700"><strong>{'✨'} Repère utile :</strong> une bonne question à se poser régulièrement est simple, &laquo;depuis un mois, qu&apos;est-ce qui a concrètement changé ?&raquo;. Si la réponse reste &laquo;rien&raquo; mois après mois, l&apos;information est là, même sans confrontation.</p>

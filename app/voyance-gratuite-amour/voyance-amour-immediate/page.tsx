@@ -20,9 +20,9 @@ const config: ContentPageConfig = {
     h1: 'Voyance Amour Gratuite Immédiate',
     subtitle: 'Tirage instantané en ligne et consultation en direct sans attente',
     gradient: 'from-emerald-500 via-teal-500 to-green-500',
-    backLink: { href: '/voyance-gratuite-amour', label: 'Voyance Gratuite Amour' },
+    backLink: { href: '/voyance-gratuite-amour/', label: 'Voyance Gratuite Amour' },
     anchors: [
-      { href: '/voyance-gratuite-amour/tarot-oui-non-amour', label: 'Tirage Immédiat', primary: true },
+      { href: '/voyance-gratuite-amour/tarot-oui-non-amour/', label: 'Tirage Immédiat', primary: true },
       { href: '#consultation', label: 'Voyant en Direct' },
     ],
   },
@@ -58,12 +58,12 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/voyance-gratuite-amour', label: 'Toutes nos guidances gratuites' },
-    { href: '/voyance-gratuite-amour/tarot-oui-non-amour', label: 'Tarot Oui/Non Amour' },
-    { href: '/voyance-gratuite-amour/tarot-amour-gratuit', label: 'Tarot Amour Gratuit Complet' },
-    { href: '/voyance-gratuite-amour/voyance-tchat-gratuit-amour', label: 'Voyance par Chat Gratuit' },
-    { href: '/voyance-amour', label: 'Tout sur la Voyance Amour' },
-    { href: '/consulter', label: 'Consulter un Voyant en Direct' },
+    { href: '/voyance-gratuite-amour/', label: 'Toutes nos guidances gratuites' },
+    { href: '/voyance-gratuite-amour/tarot-oui-non-amour/', label: 'Tarot Oui/Non Amour' },
+    { href: '/voyance-gratuite-amour/tarot-amour-gratuit/', label: 'Tarot Amour Gratuit Complet' },
+    { href: '/voyance-gratuite-amour/voyance-tchat-gratuit-amour/', label: 'Voyance par Chat Gratuit' },
+    { href: '/voyance-amour/', label: 'Tout sur la Voyance Amour' },
+    { href: '/consulter/', label: 'Consulter un Voyant en Direct' },
   ],
 };
 
@@ -90,15 +90,15 @@ export default function VoyanceAmourImmediatePage() {
             Les <strong>tirages automatiques</strong> reposent sur un algorithme aléatoire qui simule fidèlement le tirage manuel des cartes. La symbolique des arcanes appliquée à votre question est <strong>authentique</strong> : c&apos;est exactement ce que ferait un tarologue débutant face à votre question. La différence avec une consultation humaine se joue sur la capacité à adapter l&apos;interprétation à votre énergie unique et à approfondir avec des questions de clarification.
           </p>
           <div className="grid md:grid-cols-3 gap-5 mb-6">
-            <Link href="/voyance-gratuite-amour/tarot-oui-non-amour" className="bg-emerald-50 rounded-lg p-5 border-l-4 border-emerald-500 hover:bg-emerald-100 transition">
+            <Link href="/voyance-gratuite-amour/tarot-oui-non-amour/" className="bg-emerald-50 rounded-lg p-5 border-l-4 border-emerald-500 hover:bg-emerald-100 transition">
               <h3 className="font-bold text-emerald-800 mb-2">⚡ Tarot Oui/Non Amour</h3>
               <p className="text-sm text-gray-700">Réponse binaire instantanée à une question sentimentale précise. Idéal pour trancher un doute.</p>
             </Link>
-            <Link href="/voyance-gratuite-amour/tarot-amour-gratuit" className="bg-teal-50 rounded-lg p-5 border-l-4 border-teal-500 hover:bg-teal-100 transition">
+            <Link href="/voyance-gratuite-amour/tarot-amour-gratuit/" className="bg-teal-50 rounded-lg p-5 border-l-4 border-teal-500 hover:bg-teal-100 transition">
               <h3 className="font-bold text-teal-800 mb-2">🃏 Tarot Amour Gratuit</h3>
               <p className="text-sm text-gray-700">Tirage en croix complet pour analyser les énergies, blocages et évolution d&apos;une relation.</p>
             </Link>
-            <Link href="/voyance-gratuite-amour/oracle-gratuit-amour" className="bg-green-50 rounded-lg p-5 border-l-4 border-green-500 hover:bg-green-100 transition">
+            <Link href="/voyance-gratuite-amour/oracle-gratuit-amour/" className="bg-green-50 rounded-lg p-5 border-l-4 border-green-500 hover:bg-green-100 transition">
               <h3 className="font-bold text-green-800 mb-2">✨ Oracle Gratuit Amour</h3>
               <p className="text-sm text-gray-700">Message intuitif et bienveillant sur votre situation sentimentale du moment.</p>
             </Link>
@@ -129,7 +129,7 @@ export default function VoyanceAmourImmediatePage() {
             </div>
           </div>
           <div className="text-center">
-            <Link href="/consulter?ref=voyance-amour-immediate" className="inline-block bg-emerald-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-emerald-700 transition">Voir les Voyants Disponibles Maintenant →</Link>
+            <Link href="/consulter/?ref=voyance-amour-immediate" className="inline-block bg-emerald-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-emerald-700 transition">Voir les Voyants Disponibles Maintenant →</Link>
           </div>
         </section>
 
@@ -161,7 +161,7 @@ export default function VoyanceAmourImmediatePage() {
             </div>
           </div>
           <div className="bg-purple-50 border-l-4 border-purple-500 p-5 rounded-lg mt-6">
-            <p className="text-gray-700"><strong>Notre conseil :</strong> commencez toujours par un tirage automatique gratuit pour clarifier votre question et obtenir un premier éclairage. Si la réponse soulève d&apos;autres interrogations ou si votre situation est nuancée, passez ensuite à une <Link href="/consulter" className="text-purple-600 hover:text-purple-800 underline font-medium">consultation immédiate</Link> avec un voyant spécialisé.</p>
+            <p className="text-gray-700"><strong>Notre conseil :</strong> commencez toujours par un tirage automatique gratuit pour clarifier votre question et obtenir un premier éclairage. Si la réponse soulève d&apos;autres interrogations ou si votre situation est nuancée, passez ensuite à une <Link href="/consulter/" className="text-purple-600 hover:text-purple-800 underline font-medium">consultation immédiate</Link> avec un voyant spécialisé.</p>
           </div>
         </section>
 

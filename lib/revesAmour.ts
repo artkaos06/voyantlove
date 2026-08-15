@@ -55,7 +55,7 @@ export function getDreamHubCards() {
     titre: d.titre,
     emoji: d.emoji,
     primaryQuery: d.primaryQuery,
-    href: `/reves-amour/${d.slug}`,
+    href: `/reves-amour/${d.slug}/`,
   }));
 }
 

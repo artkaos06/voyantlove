@@ -82,7 +82,7 @@ export default function VoyanceAmourPage() {
           <p className="text-2xl opacity-95 mb-6">Tout Savoir sur la Voyance Amoureuse</p>
           <p className="text-lg opacity-90 max-w-2xl mx-auto mb-8">Reconqu&ecirc;te, sentiments, rupture, rencontre &mdash; consultez un voyant sp&eacute;cialis&eacute; en amour pour &eacute;clairer votre chemin sentimental.</p>
           <div className="flex gap-4 flex-wrap justify-center">
-            <Link href="/consulter" className="bg-white text-purple-800 px-8 py-3 rounded-lg font-semibold hover:shadow-lg transition">Consulter un Voyant Amour</Link>
+            <Link href="/consulter/" className="bg-white text-purple-800 px-8 py-3 rounded-lg font-semibold hover:shadow-lg transition">Consulter un Voyant Amour</Link>
             <a href="#questions" className="border-2 border-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-purple-800 transition">Les 7 Questions Cl&eacute;s</a>
           </div>
         </div>
@@ -137,7 +137,7 @@ export default function VoyanceAmourPage() {
               <span className="text-red-600 font-semibold text-sm">D&eacute;couvrir &rarr;</span>
             </Link>
 
-            <Link href="/sentiments/avenir-amoureux" className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition border-t-4 border-violet-500 group">
+            <Link href="/sentiments/avenir-amoureux/" className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition border-t-4 border-violet-500 group">
               <div className="text-3xl mb-3">&#x1F52E;</div>
               <h3 className="text-xl font-bold mb-2 group-hover:text-violet-600 transition">Quel est mon avenir amoureux&nbsp;?</h3>
               <p className="text-gray-600 text-sm mb-3">Pr&eacute;dictions sentimentales, tendances &agrave; venir et chemins possibles r&eacute;v&eacute;l&eacute;s par le tarot.</p>
@@ -177,7 +177,7 @@ export default function VoyanceAmourPage() {
                   La qualit&eacute; de la r&eacute;ponse d&eacute;pend de la pr&eacute;cision de la question. Plut&ocirc;t que &laquo;&nbsp;Est-ce qu&rsquo;il m&rsquo;aime&nbsp;?&nbsp;&raquo;, essayez &laquo;&nbsp;Quelles sont les &eacute;nergies entre nous en ce moment&nbsp;?&nbsp;&raquo; ou &laquo;&nbsp;Que dois-je comprendre de cette situation&nbsp;?&nbsp;&raquo;.
                 </p>
                 <p className="text-gray-600 text-sm">
-                  <strong>Astuce&nbsp;:</strong> &eacute;crivez votre question avant la s&eacute;ance. Si vous h&eacute;sitez entre plusieurs, un bon <Link href="/methodes-voyance/voyance-sentimentale" className="text-purple-600 hover:text-purple-800 underline">voyant sentimental</Link> vous aidera &agrave; la reformuler.
+                  <strong>Astuce&nbsp;:</strong> &eacute;crivez votre question avant la s&eacute;ance. Si vous h&eacute;sitez entre plusieurs, un bon <Link href="/methodes-voyance/voyance-sentimentale/" className="text-purple-600 hover:text-purple-800 underline">voyant sentimental</Link> vous aidera &agrave; la reformuler.
                 </p>
               </div>
             </div>
@@ -190,7 +190,7 @@ export default function VoyanceAmourPage() {
               <div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Le Voyant Analyse votre Situation</h3>
                 <p className="text-gray-700 leading-relaxed mb-2">
-                  Selon votre probl&eacute;matique, le voyant choisit l&rsquo;outil le plus adapt&eacute;. Le <Link href="/methodes-voyance/tirage-tarot-amour" className="text-purple-600 hover:text-purple-800 underline">tarot amour</Link> convient pour une question pr&eacute;cise sur les sentiments. L&rsquo;<Link href="/methodes-voyance/astrologie-amoureuse" className="text-purple-600 hover:text-purple-800 underline">astrologie amoureuse</Link> &eacute;claire les compatibilit&eacute;s et les cycles. La <strong>clairvoyance</strong> pure capte les &eacute;nergies sans support, id&eacute;ale pour les situations complexes.
+                  Selon votre probl&eacute;matique, le voyant choisit l&rsquo;outil le plus adapt&eacute;. Le <Link href="/methodes-voyance/tirage-tarot-amour/" className="text-purple-600 hover:text-purple-800 underline">tarot amour</Link> convient pour une question pr&eacute;cise sur les sentiments. L&rsquo;<Link href="/methodes-voyance/astrologie-amoureuse/" className="text-purple-600 hover:text-purple-800 underline">astrologie amoureuse</Link> &eacute;claire les compatibilit&eacute;s et les cycles. La <strong>clairvoyance</strong> pure capte les &eacute;nergies sans support, id&eacute;ale pour les situations complexes.
                 </p>
                 <p className="text-gray-600 text-sm">
                   Le voyant peut combiner plusieurs m&eacute;thodes au cours d&rsquo;une m&ecirc;me s&eacute;ance pour affiner sa lecture.
@@ -221,7 +221,7 @@ export default function VoyanceAmourPage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-4 text-center">Les M&eacute;thodes de Voyance Amour</h2>
           <p className="text-lg text-gray-600 text-center mb-8 max-w-2xl mx-auto">Chaque m&eacute;thode apporte un &eacute;clairage diff&eacute;rent sur votre situation sentimentale. D&eacute;couvrez celle qui correspond &agrave; votre question.</p>
           <div className="grid md:grid-cols-2 gap-6">
-            <Link href="/methodes-voyance/tirage-tarot-amour" className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition group">
+            <Link href="/methodes-voyance/tirage-tarot-amour/" className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition group">
               <div className="flex items-start gap-4">
                 <div className="text-3xl">&#x1F0CF;</div>
                 <div>
@@ -238,14 +238,14 @@ export default function VoyanceAmourPage() {
                   <h3 className="text-xl font-bold mb-2">Astrologie &amp; Synastrie</h3>
                   <p className="text-gray-600 text-sm mb-2">L&rsquo;astrologie &eacute;tudie les cycles plan&eacute;taires favorables &agrave; l&rsquo;amour. La synastrie compare deux th&egrave;mes astraux pour r&eacute;v&eacute;ler la compatibilit&eacute; profonde.</p>
                   <div className="flex gap-3 text-sm">
-                    <Link href="/methodes-voyance/astrologie-amoureuse" className="text-purple-600 hover:text-purple-800 underline">Astrologie</Link>
-                    <Link href="/methodes-voyance/synastrie-amoureuse" className="text-purple-600 hover:text-purple-800 underline">Synastrie</Link>
+                    <Link href="/methodes-voyance/astrologie-amoureuse/" className="text-purple-600 hover:text-purple-800 underline">Astrologie</Link>
+                    <Link href="/methodes-voyance/synastrie-amoureuse/" className="text-purple-600 hover:text-purple-800 underline">Synastrie</Link>
                   </div>
                 </div>
               </div>
             </div>
 
-            <Link href="/methodes-voyance/pendule-amour" className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition group">
+            <Link href="/methodes-voyance/pendule-amour/" className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition group">
               <div className="flex items-start gap-4">
                 <div className="text-3xl">&#x1F4AB;</div>
                 <div>
@@ -255,7 +255,7 @@ export default function VoyanceAmourPage() {
               </div>
             </Link>
 
-            <Link href="/methodes-voyance/numerologie-amoureuse" className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition group">
+            <Link href="/methodes-voyance/numerologie-amoureuse/" className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition group">
               <div className="flex items-start gap-4">
                 <div className="text-3xl">&#x1F522;</div>
                 <div>
@@ -265,7 +265,7 @@ export default function VoyanceAmourPage() {
               </div>
             </Link>
 
-            <Link href="/methodes-voyance/oracle-amour" className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition group md:col-span-2">
+            <Link href="/methodes-voyance/oracle-amour/" className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition group md:col-span-2">
               <div className="flex items-start gap-4">
                 <div className="text-3xl">&#x1F3B4;</div>
                 <div>
@@ -284,10 +284,10 @@ export default function VoyanceAmourPage() {
             La <strong>voyance amour couple</strong> s&rsquo;adresse aux personnes en relation qui souhaitent comprendre la dynamique &eacute;motionnelle de leur partenaire ou anticiper l&rsquo;&eacute;volution de leur histoire. Contrairement &agrave; la voyance pour c&eacute;libataires (centr&eacute;e sur la rencontre), la voyance amour pour couple analyse la <strong>relation amoureuse existante</strong>&nbsp;: niveau d&rsquo;engagement r&eacute;el, blocages communs, projets compatibles et compatibilit&eacute; profonde &agrave; long terme.
           </p>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Un <strong>voyant sp&eacute;cialis&eacute; en voyance relation amoureuse</strong> aborde des questions sp&eacute;cifiques&nbsp;: votre partenaire est-il sinc&egrave;rement engag&eacute;&nbsp;? La crise actuelle est-elle passag&egrave;re ou annonciatrice d&rsquo;une rupture&nbsp;? Y a-t-il une troisi&egrave;me personne dans le tableau&nbsp;? Comment retrouver l&rsquo;&eacute;quilibre apr&egrave;s une infid&eacute;lit&eacute;&nbsp;? Le tarot relationnel et la <Link href="/methodes-voyance/synastrie-amoureuse" className="text-purple-600 hover:text-purple-800 underline">synastrie astrologique</Link> sont les outils les plus utilis&eacute;s pour ce type de lecture.
+            Un <strong>voyant sp&eacute;cialis&eacute; en voyance relation amoureuse</strong> aborde des questions sp&eacute;cifiques&nbsp;: votre partenaire est-il sinc&egrave;rement engag&eacute;&nbsp;? La crise actuelle est-elle passag&egrave;re ou annonciatrice d&rsquo;une rupture&nbsp;? Y a-t-il une troisi&egrave;me personne dans le tableau&nbsp;? Comment retrouver l&rsquo;&eacute;quilibre apr&egrave;s une infid&eacute;lit&eacute;&nbsp;? Le tarot relationnel et la <Link href="/methodes-voyance/synastrie-amoureuse/" className="text-purple-600 hover:text-purple-800 underline">synastrie astrologique</Link> sont les outils les plus utilis&eacute;s pour ce type de lecture.
           </p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Si votre couple traverse une p&eacute;riode difficile, notre hub <Link href="/crise-couple/" className="text-purple-600 hover:text-purple-800 underline">crise de couple</Link> propose des guidances cibl&eacute;es&nbsp;: <Link href="/crise-couple/infidelite-couple" className="text-purple-600 hover:text-purple-800 underline">infid&eacute;lit&eacute;</Link>, <Link href="/crise-couple/jalousie-excessive" className="text-purple-600 hover:text-purple-800 underline">jalousie</Link>, <Link href="/crise-couple/problemes-communication-couple" className="text-purple-600 hover:text-purple-800 underline">probl&egrave;mes de communication</Link>, <Link href="/crise-couple/sauver-son-couple" className="text-purple-600 hover:text-purple-800 underline">sauver son couple</Link>.
+            Si votre couple traverse une p&eacute;riode difficile, notre hub <Link href="/crise-couple/" className="text-purple-600 hover:text-purple-800 underline">crise de couple</Link> propose des guidances cibl&eacute;es&nbsp;: <Link href="/crise-couple/infidelite-couple/" className="text-purple-600 hover:text-purple-800 underline">infid&eacute;lit&eacute;</Link>, <Link href="/crise-couple/jalousie-excessive/" className="text-purple-600 hover:text-purple-800 underline">jalousie</Link>, <Link href="/crise-couple/problemes-communication-couple/" className="text-purple-600 hover:text-purple-800 underline">probl&egrave;mes de communication</Link>, <Link href="/crise-couple/sauver-son-couple/" className="text-purple-600 hover:text-purple-800 underline">sauver son couple</Link>.
           </p>
           <div className="grid md:grid-cols-3 gap-4 text-sm">
             <div className="bg-purple-50 rounded-lg p-4 border border-purple-100">
@@ -331,7 +331,7 @@ export default function VoyanceAmourPage() {
             Vous souhaitez d&eacute;couvrir la voyance amoureuse sans engagement&nbsp;? Plusieurs options gratuites existent. Notre <Link href="/voyance-gratuite-amour/" className="text-emerald-700 hover:text-emerald-900 underline font-semibold">espace voyance gratuite amour</Link> propose des tirages interactifs accessibles imm&eacute;diatement, dont le populaire <Link href="/voyance-gratuite-amour/tarot-oui-non-amour/" className="text-emerald-700 hover:text-emerald-900 underline font-semibold">tarot oui/non amour</Link> pour une r&eacute;ponse instantan&eacute;e &agrave; votre question sentimentale.
           </p>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Ces outils gratuits conviennent pour une premi&egrave;re exploration ou une question simple. Pour une analyse approfondie de votre situation &mdash; avec contexte, nuances et conseil personnalis&eacute; &mdash; une <Link href="/consulter" className="text-emerald-700 hover:text-emerald-900 underline font-semibold">consultation compl&egrave;te</Link> avec un voyant sp&eacute;cialis&eacute; reste indispensable.
+            Ces outils gratuits conviennent pour une premi&egrave;re exploration ou une question simple. Pour une analyse approfondie de votre situation &mdash; avec contexte, nuances et conseil personnalis&eacute; &mdash; une <Link href="/consulter/" className="text-emerald-700 hover:text-emerald-900 underline font-semibold">consultation compl&egrave;te</Link> avec un voyant sp&eacute;cialis&eacute; reste indispensable.
           </p>
           <div className="flex gap-4 flex-wrap">
             <Link href="/voyance-gratuite-amour/" className="bg-emerald-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-emerald-700 transition">Tirages Gratuits</Link>
@@ -374,7 +374,7 @@ export default function VoyanceAmourPage() {
           </div>
 
           <p className="text-gray-700">
-            Chez VoyantLove, chaque voyant est s&eacute;lectionn&eacute; selon ces crit&egrave;res stricts. D&eacute;couvrez <Link href="/a-propos" className="text-purple-600 hover:text-purple-800 underline font-semibold">notre processus de s&eacute;lection</Link> et l&rsquo;&eacute;thique qui guide notre plateforme.
+            Chez VoyantLove, chaque voyant est s&eacute;lectionn&eacute; selon ces crit&egrave;res stricts. D&eacute;couvrez <Link href="/a-propos/" className="text-purple-600 hover:text-purple-800 underline font-semibold">notre processus de s&eacute;lection</Link> et l&rsquo;&eacute;thique qui guide notre plateforme.
           </p>
         </section>
 

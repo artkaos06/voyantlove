@@ -19,7 +19,7 @@ const config: ContentPageConfig = {
     h1: 'Voyance Divorce',
     subtitle: 'Traverser la Séparation et Retrouver l\'Avenir',
     gradient: 'from-slate-700 via-gray-700 to-zinc-700',
-    backLink: { href: '/rupture', label: 'Retour à Rupture Amoureuse' },
+    backLink: { href: '/rupture/', label: 'Retour à Rupture Amoureuse' },
     anchors: [
       { href: '#reconstruction', label: 'Les Étapes de Reconstruction', primary: true },
       { href: '#apres-divorce', label: 'L\'Amour Après Divorce' },
@@ -53,12 +53,12 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/rupture', label: 'Rupture Amoureuse : Toutes nos Guidances' },
-    { href: '/rupture/oublier-son-ex', label: 'Surmonter la Rupture et Oublier son Ex' },
-    { href: '/rupture/deuil-amoureux', label: 'Traverser le Deuil Amoureux : Guide Complet' },
-    { href: '/nouvelle-rencontre/nouvelle-relation-amoureuse', label: 'Commencer une Nouvelle Relation Amoureuse' },
-    { href: '/rupture/confiance-en-soi-apres-divorce', label: 'Retrouver Confiance en Soi Après un Divorce' },
-    { href: '/rupture/rupture-soudaine-sans-explication', label: 'Rupture Soudaine sans Explication' },
+    { href: '/rupture/', label: 'Rupture Amoureuse : Toutes nos Guidances' },
+    { href: '/rupture/oublier-son-ex/', label: 'Surmonter la Rupture et Oublier son Ex' },
+    { href: '/rupture/deuil-amoureux/', label: 'Traverser le Deuil Amoureux : Guide Complet' },
+    { href: '/nouvelle-rencontre/nouvelle-relation-amoureuse/', label: 'Commencer une Nouvelle Relation Amoureuse' },
+    { href: '/rupture/confiance-en-soi-apres-divorce/', label: 'Retrouver Confiance en Soi Après un Divorce' },
+    { href: '/rupture/rupture-soudaine-sans-explication/', label: 'Rupture Soudaine sans Explication' },
   ],
 };
 
@@ -75,7 +75,7 @@ export default function VoyanceDivorceSeparationPage() {
             L'<strong>avenir après divorce</strong> est souvent bien plus lumineux que ce que la douleur immédiate laisse percevoir. La <strong>résilience</strong> humaine face à la séparation est une force que la voyance peut identifier, nourrir et orienter. Certains trouvent un amour plus profond et aligné après leur divorce ; d'autres découvrent qu'une période de solitude choisie est nécessaire pour cicatriser et reconstruire une <strong>famille recomposée</strong> saine et épanouie, dans une version d'eux-mêmes plus authentique.
           </p>
           <p className="text-lg leading-relaxed">
-            Pour traverser cette période avec le soutien d'une guidance dédiée, vous pouvez également consulter notre guide pour <Link href="/rupture/oublier-son-ex" className="text-slate-700 hover:text-slate-900 underline font-medium">surmonter la rupture</Link> et reprendre votre vie en main avec clarté et sérénité.
+            Pour traverser cette période avec le soutien d'une guidance dédiée, vous pouvez également consulter notre guide pour <Link href="/rupture/oublier-son-ex/" className="text-slate-700 hover:text-slate-900 underline font-medium">surmonter la rupture</Link> et reprendre votre vie en main avec clarté et sérénité.
           </p>
         </article>
 
@@ -150,7 +150,7 @@ export default function VoyanceDivorceSeparationPage() {
           <h2 className="text-3xl font-bold mb-6 text-gray-900">&#x1F331; Les Étapes de la Reconstruction après Divorce</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le deuil d'un mariage suit trois grandes phases, la dissolution, l'acceptation et la renaissance, chacune avec sa durée et ses défis spirituels propres.</p>
           <p className="text-gray-700 mb-6">
-            La <strong>reconstruction</strong> après un <strong>divorce</strong> est un voyage intérieur exigeant mais profondément libérateur. La voyance spirituelle accompagne chaque phase en fournissant clarté, timing et direction. Pour traverser le <Link href="/rupture/deuil-amoureux" className="text-slate-700 hover:text-slate-900 underline font-medium">deuil amoureux</Link> avec conscience, comprendre les étapes aide à ne pas rester bloqué dans la douleur.
+            La <strong>reconstruction</strong> après un <strong>divorce</strong> est un voyage intérieur exigeant mais profondément libérateur. La voyance spirituelle accompagne chaque phase en fournissant clarté, timing et direction. Pour traverser le <Link href="/rupture/deuil-amoureux/" className="text-slate-700 hover:text-slate-900 underline font-medium">deuil amoureux</Link> avec conscience, comprendre les étapes aide à ne pas rester bloqué dans la douleur.
           </p>
 
           <div className="space-y-6">
@@ -200,7 +200,7 @@ export default function VoyanceDivorceSeparationPage() {
           <h2 className="text-3xl font-bold mb-6 text-slate-700">&#x1F496; L'Amour après le Divorce : Quand et Comment ?</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Retrouver l'amour après un divorce est non seulement possible mais très probable, à condition de laisser suffisamment de temps à la reconstruction intérieure avant de s'ouvrir à une nouvelle relation.</p>
           <p className="text-gray-700 mb-6">
-            L'<strong>avenir après divorce</strong> inquiète profondément : sera-t-on capable d'aimer à nouveau ? De faire confiance ? La voyance rassure sur ce point tout en indiquant les conditions nécessaires à une nouvelle relation saine. Pour <Link href="/nouvelle-rencontre/nouvelle-relation-amoureuse" className="text-slate-700 hover:text-slate-900 underline font-medium">commencer une nouvelle relation</Link> après un divorce, la préparation intérieure est aussi importante que la rencontre elle-même.
+            L'<strong>avenir après divorce</strong> inquiète profondément : sera-t-on capable d'aimer à nouveau ? De faire confiance ? La voyance rassure sur ce point tout en indiquant les conditions nécessaires à une nouvelle relation saine. Pour <Link href="/nouvelle-rencontre/nouvelle-relation-amoureuse/" className="text-slate-700 hover:text-slate-900 underline font-medium">commencer une nouvelle relation</Link> après un divorce, la préparation intérieure est aussi importante que la rencontre elle-même.
           </p>
 
           <div className="grid md:grid-cols-2 gap-6 mb-6">

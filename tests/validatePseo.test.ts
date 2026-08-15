@@ -10,10 +10,12 @@ import {
 } from '../scripts/pseo-validate/text-similarity';
 import {
   auditPageSource,
+  extractHrefLikeLiterals,
   extractInternalHrefs,
   filePathToRoute,
   isDynamicRoute,
   isExcludedPath,
+  isUnslashedInternalHref,
   normalizeRoute,
 } from '../scripts/pseo-validate/page-audit';
 import { runValidation } from '../scripts/validate-pseo';
@@ -150,6 +152,50 @@ test('normalizeRoute always yields a single trailing slash and drops query/hash'
   assert.equal(normalizeRoute('/foo?ref=x'), '/foo/');
   assert.equal(normalizeRoute('/foo#bar'), '/foo/');
   assert.equal(normalizeRoute(''), '/');
+});
+
+// ---------------------------------------------------------------------------
+// trailing-slash literal audit
+// ---------------------------------------------------------------------------
+
+test('extractHrefLikeLiterals finds hrefs, href defaults, router calls, and redirects', () => {
+  const source = `
+    <Link href="/methodes-voyance/runes-amour">x</Link>
+    <a href={\`/consulter?ref=\${source}\`}>y</a>
+    const nav = [{ href: '/reconquete', label: 'Reconquête' }];
+    function CTA({ ctaHref = '/love-psychic-services/keen-review' }) {}
+    router.push(\`/consulter?ref=\${source}\`);
+    redirect('/contact');
+    <a href={dynamic}>skip me, not a literal</a>
+  `;
+  assert.deepEqual(extractHrefLikeLiterals(source), [
+    '/methodes-voyance/runes-amour',
+    '/consulter?ref=${source}',
+    '/reconquete',
+    '/love-psychic-services/keen-review',
+    '/consulter?ref=${source}',
+    '/contact',
+  ]);
+});
+
+test('isUnslashedInternalHref flags internal page links missing a trailing slash', () => {
+  assert.ok(isUnslashedInternalHref('/reconquete'));
+  assert.ok(isUnslashedInternalHref('/consulter?ref=teaser')); // slash must land before the query string
+  assert.ok(isUnslashedInternalHref('/reves-amour/${d.slug}')); // dynamic segment, still needs a trailing slash
+  assert.ok(isUnslashedInternalHref('https://www.voyantlove.fr/go?ref=email-cta')); // absolute self-link
+});
+
+test('isUnslashedInternalHref does not flag already-canonical or non-page links', () => {
+  assert.ok(!isUnslashedInternalHref('/reconquete/')); // already slashed
+  assert.ok(!isUnslashedInternalHref('/consulter/?ref=teaser')); // slash already before the query string
+  assert.ok(!isUnslashedInternalHref('/api/go/keen')); // API route, never slashed
+  assert.ok(!isUnslashedInternalHref('/_next/static/chunk.js')); // Next internals
+  assert.ok(!isUnslashedInternalHref('/og-image.png')); // static asset with an extension
+  assert.ok(!isUnslashedInternalHref('#consultation')); // same-page fragment anchor
+  assert.ok(!isUnslashedInternalHref('mailto:contact@voyantlove.fr'));
+  assert.ok(!isUnslashedInternalHref('tel:+33175754582'));
+  assert.ok(!isUnslashedInternalHref('https://example.com/external')); // third-party URL
+  assert.ok(!isUnslashedInternalHref('{{ unsubscribe }}')); // email ESP template placeholder
 });
 
 // ---------------------------------------------------------------------------

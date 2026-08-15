@@ -20,7 +20,7 @@ const config: ContentPageConfig = {
     h1: 'Pardonner en Amour : Le Chemin vers la Guérison',
     subtitle: 'Guidance voyance et tarot pour le pardon authentique et la reconstruction',
     gradient: 'from-amber-500 via-orange-500 to-amber-600',
-    backLink: { href: '/crise-couple', label: 'Crise de Couple' },
+    backLink: { href: '/crise-couple/', label: 'Crise de Couple' },
     anchors: [
       { href: '#consultation', label: 'Consultation Pardon', primary: true },
     ],
@@ -53,9 +53,9 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/crise-couple/infidelite-couple', label: 'Infidélité dans le Couple' },
-    { href: '/crise-couple/sauver-son-couple', label: 'Sauver son Couple' },
-    { href: '/crise-couple/reconnecter-son-couple', label: 'Reconnecter son Couple' },
+    { href: '/crise-couple/infidelite-couple/', label: 'Infidélité dans le Couple' },
+    { href: '/crise-couple/sauver-son-couple/', label: 'Sauver son Couple' },
+    { href: '/crise-couple/reconnecter-son-couple/', label: 'Reconnecter son Couple' },
   ],
 };
 
@@ -100,7 +100,7 @@ export default function PardonnerEnAmourPage() {
             </div>
             <div className="bg-orange-50 border-l-4 border-orange-500 p-6 rounded-lg">
               <h3 className="font-bold text-lg mb-2 text-orange-700">Le Potentiel de Reconstruction</h3>
-              <p className="text-gray-700">Si le <strong>pardon</strong> est accordé, que devient le couple ? Le <strong>tarot</strong> projette les potentiels : une relation plus forte et plus authentique, ou une répétition des mêmes schémas. La Tempérance annonce un <strong>équilibre retrouvé</strong>, le Monde promet un aboutissement heureux. Si vous traversez une <Link href="/crise-couple/infidelite-couple" className="text-amber-600 hover:text-amber-800 underline font-medium">infidélité</Link>, le tarot révèle si la <strong>confiance</strong> peut réellement être rebâtie sur des fondations solides et durables.</p>
+              <p className="text-gray-700">Si le <strong>pardon</strong> est accordé, que devient le couple ? Le <strong>tarot</strong> projette les potentiels : une relation plus forte et plus authentique, ou une répétition des mêmes schémas. La Tempérance annonce un <strong>équilibre retrouvé</strong>, le Monde promet un aboutissement heureux. Si vous traversez une <Link href="/crise-couple/infidelite-couple/" className="text-amber-600 hover:text-amber-800 underline font-medium">infidélité</Link>, le tarot révèle si la <strong>confiance</strong> peut réellement être rebâtie sur des fondations solides et durables.</p>
             </div>
           </div>
         </section>
@@ -141,7 +141,7 @@ export default function PardonnerEnAmourPage() {
               <div className="text-3xl font-bold text-amber-600">5</div>
               <div>
                 <h3 className="font-bold text-lg mb-2">Reconstruire sur de Nouvelles Bases</h3>
-                <p className="text-gray-700">Après le <strong>pardon</strong>, le couple ne revient pas à ce qu&apos;il était &mdash; il se transforme en quelque chose de nouveau. La <strong>reconstruction de la confiance</strong> est progressive et demande des actes concrets, pas seulement des promesses. La <strong>voyance</strong> accompagne cette phase en identifiant les progrès réels et les zones encore fragiles. Pour aller plus loin dans ce processus, notre guide pour <Link href="/crise-couple/sauver-son-couple" className="text-amber-600 hover:text-amber-800 underline font-medium">sauver son couple</Link> détaille les stratégies de reconstruction durable.</p>
+                <p className="text-gray-700">Après le <strong>pardon</strong>, le couple ne revient pas à ce qu&apos;il était &mdash; il se transforme en quelque chose de nouveau. La <strong>reconstruction de la confiance</strong> est progressive et demande des actes concrets, pas seulement des promesses. La <strong>voyance</strong> accompagne cette phase en identifiant les progrès réels et les zones encore fragiles. Pour aller plus loin dans ce processus, notre guide pour <Link href="/crise-couple/sauver-son-couple/" className="text-amber-600 hover:text-amber-800 underline font-medium">sauver son couple</Link> détaille les stratégies de reconstruction durable.</p>
               </div>
             </div>
           </div>
@@ -174,7 +174,7 @@ export default function PardonnerEnAmourPage() {
                 <li>L&apos;autre minimise votre douleur ou vous culpabilise</li>
                 <li>Il y a de la violence (physique ou psychologique)</li>
                 <li>Vous pardonnez par peur, pas par <strong>amour</strong></li>
-                <li>La <Link href="/sentiments/relation-toxique" className="text-red-600 hover:text-red-800 underline font-medium">relation est devenue toxique</Link></li>
+                <li>La <Link href="/sentiments/relation-toxique/" className="text-red-600 hover:text-red-800 underline font-medium">relation est devenue toxique</Link></li>
                 <li>Votre santé mentale se dégrade</li>
               </ul>
             </div>

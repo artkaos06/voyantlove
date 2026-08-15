@@ -20,7 +20,7 @@ const config: ContentPageConfig = {
     h1: 'Mon Avenir Amoureux',
     subtitle: 'Prédictions tarot et voyance pour votre futur sentimental',
     gradient: 'from-pink-500 via-rose-500 to-red-500',
-    backLink: { href: '/sentiments', label: 'Retour aux Sentiments' },
+    backLink: { href: '/sentiments/', label: 'Retour aux Sentiments' },
     anchors: [
       { href: '#consultation', label: 'Tirage Avenir Amoureux', primary: true },
       { href: '#timeline', label: 'Ma Timeline Sentimentale' },
@@ -70,11 +70,11 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/sentiments', label: 'Sentiments Amoureux : Toutes nos Guidances' },
-    { href: '/sentiments/maime-t-il-elle', label: 'M\'aime-t-il/elle Vraiment ?' },
-    { href: '/sentiments/signes-il-elle-maime', label: 'Les Signes qu\'il/elle M\'aime' },
-    { href: '/nouvelle-rencontre/quand-rencontre-amour', label: 'Quand Vais-je Rencontrer l\'Amour ?' },
-    { href: '/reconquete/va-t-il-elle-revenir', label: 'Mon Ex Va-t-il Revenir ?' },
+    { href: '/sentiments/', label: 'Sentiments Amoureux : Toutes nos Guidances' },
+    { href: '/sentiments/maime-t-il-elle/', label: 'M\'aime-t-il/elle Vraiment ?' },
+    { href: '/sentiments/signes-il-elle-maime/', label: 'Les Signes qu\'il/elle M\'aime' },
+    { href: '/nouvelle-rencontre/quand-rencontre-amour/', label: 'Quand Vais-je Rencontrer l\'Amour ?' },
+    { href: '/reconquete/va-t-il-elle-revenir/', label: 'Mon Ex Va-t-il Revenir ?' },
   ],
 };
 
@@ -90,10 +90,10 @@ export default function AvenirAmoureuxPage() {
             Connaître son <strong>avenir amoureux</strong> est l'une des questions les plus universelles en <strong>voyance</strong>. Le <strong>tarot</strong> et l'<strong>astrologie</strong> révèlent non seulement quand vous rencontrerez l'amour, mais aussi comment évoluera votre <strong>vie sentimentale</strong>, quels obstacles vous rencontrerez, et quelles opportunités s'offriront à vous dans les mois et années à venir.
           </p>
           <p className="text-lg leading-relaxed mb-4">
-            Votre <strong>futur sentimental</strong> n'est pas totalement prédéterminé : il se construit à l'intersection de vos choix conscients, de votre évolution personnelle, et des cycles cosmiques qui influencent votre destinée amoureuse. Le <strong>tirage de l'avenir amoureux</strong> éclaire ces trois dimensions pour vous guider vers l'épanouissement affectif que vous méritez. Pour les célibataires qui se demandent quand ils vont <Link href="/nouvelle-rencontre/quand-rencontre-amour" className="text-rose-600 hover:text-rose-800 underline font-medium">rencontrer l'amour</Link>, le tarot apporte des repères temporels concrets.
+            Votre <strong>futur sentimental</strong> n'est pas totalement prédéterminé : il se construit à l'intersection de vos choix conscients, de votre évolution personnelle, et des cycles cosmiques qui influencent votre destinée amoureuse. Le <strong>tirage de l'avenir amoureux</strong> éclaire ces trois dimensions pour vous guider vers l'épanouissement affectif que vous méritez. Pour les célibataires qui se demandent quand ils vont <Link href="/nouvelle-rencontre/quand-rencontre-amour/" className="text-rose-600 hover:text-rose-800 underline font-medium">rencontrer l'amour</Link>, le tarot apporte des repères temporels concrets.
           </p>
           <p className="text-lg leading-relaxed">
-            Que vous soyez célibataire en quête de l'<strong>âme sœur</strong>, en couple en questionnement sur votre <strong>avenir à deux</strong>, ou en période de transition sentimentale, la <strong>voyance amoureuse</strong> vous offre une vision claire de votre chemin relationnel. Pour en savoir plus sur vos <Link href="/sentiments" className="text-rose-600 hover:text-rose-800 underline font-medium">sentiments amoureux</Link>, découvrez toutes nos guidances spécialisées.
+            Que vous soyez célibataire en quête de l'<strong>âme sœur</strong>, en couple en questionnement sur votre <strong>avenir à deux</strong>, ou en période de transition sentimentale, la <strong>voyance amoureuse</strong> vous offre une vision claire de votre chemin relationnel. Pour en savoir plus sur vos <Link href="/sentiments/" className="text-rose-600 hover:text-rose-800 underline font-medium">sentiments amoureux</Link>, découvrez toutes nos guidances spécialisées.
           </p>
         </article>
 
@@ -239,7 +239,7 @@ export default function AvenirAmoureuxPage() {
                     <li>Mon couple a-t-il un avenir à long terme ?</li>
                     <li>Allons-nous nous marier / avoir des enfants ?</li>
                     <li>Les difficultés actuelles vont-elles se résoudre ?</li>
-                    <li><Link href="/sentiments/maime-t-il-elle" className="text-pink-600 hover:text-pink-800 underline">M'aime-t-il/elle</Link> vraiment ?</li>
+                    <li><Link href="/sentiments/maime-t-il-elle/" className="text-pink-600 hover:text-pink-800 underline">M'aime-t-il/elle</Link> vraiment ?</li>
                     <li>Risque-t-on une séparation dans les prochains mois ?</li>
                   </ul>
                 </div>
@@ -297,7 +297,7 @@ export default function AvenirAmoureuxPage() {
           <h2 className="text-3xl font-bold mb-6 text-rose-600">🌙 L'Astrologie de Votre Avenir Amoureux</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">L'astrologie amoureuse revele votre timeline sentimentale via la maison 7, les transits de Venus et Mars, les cycles de Jupiter et les eclipses sur votre axe relationnel.</p>
           <p className="text-gray-700 mb-6">
-            L'<Link href="/methodes-voyance/astrologie-amoureuse" className="text-rose-600 hover:text-rose-800 underline font-medium">astrologie amoureuse</Link> complète le tarot en révélant les cycles cosmiques qui influencent votre destinée sentimentale. Votre thème natal contient votre timeline amoureuse.
+            L'<Link href="/methodes-voyance/astrologie-amoureuse/" className="text-rose-600 hover:text-rose-800 underline font-medium">astrologie amoureuse</Link> complète le tarot en révélant les cycles cosmiques qui influencent votre destinée sentimentale. Votre thème natal contient votre timeline amoureuse.
           </p>
 
           <div className="space-y-6">

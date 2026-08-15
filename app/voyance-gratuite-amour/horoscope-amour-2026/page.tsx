@@ -79,7 +79,7 @@ export default function HoroscopeAmour2026Page() {
       {/* Header */}
       <header className="bg-gradient-to-r from-cyan-500 via-teal-500 to-emerald-500 text-white py-16 px-4">
         <div className="max-w-4xl mx-auto">
-          <Link href="/voyance-gratuite-amour" className="text-white/80 hover:text-white mb-4 inline-block">&larr; Retour &agrave; Voyance Gratuite Amour</Link>
+          <Link href="/voyance-gratuite-amour/" className="text-white/80 hover:text-white mb-4 inline-block">&larr; Retour &agrave; Voyance Gratuite Amour</Link>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">&#x2728; Horoscope Amour 2026</h1>
           <p className="text-xl opacity-95 mb-6">Pr&eacute;dictions sentimentales par signe pour une ann&eacute;e pleine de promesses</p>
           <div className="flex gap-4 flex-wrap">
@@ -128,7 +128,7 @@ export default function HoroscopeAmour2026Page() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">&#x1FA90; Les Transits 2026 qui Bouleversent l&apos;Amour</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Les transits majeurs de 2026 &mdash; Jupiter en G&eacute;meaux puis Cancer, Saturne en B&eacute;lier, et les r&eacute;trogradations de V&eacute;nus &mdash; cr&eacute;ent un paysage astrologique unique pour les relations amoureuses et les nouvelles rencontres.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            L&apos;<strong>horoscope amour 2026</strong> est fa&ccedil;onn&eacute; par des mouvements plan&eacute;taires d&apos;envergure qui influencent profond&eacute;ment la <strong>sph&egrave;re sentimentale</strong> de chaque signe. Comprendre ces transits permet d&apos;anticiper les grandes tendances de l&apos;ann&eacute;e en mati&egrave;re d&apos;<Link href="/methodes-voyance/astrologie-amoureuse" className="text-cyan-600 hover:text-cyan-800 underline font-medium">astrologie amoureuse</Link> et de saisir les opportunit&eacute;s qu&apos;ils offrent &agrave; votre <strong>vie sentimentale</strong>.
+            L&apos;<strong>horoscope amour 2026</strong> est fa&ccedil;onn&eacute; par des mouvements plan&eacute;taires d&apos;envergure qui influencent profond&eacute;ment la <strong>sph&egrave;re sentimentale</strong> de chaque signe. Comprendre ces transits permet d&apos;anticiper les grandes tendances de l&apos;ann&eacute;e en mati&egrave;re d&apos;<Link href="/methodes-voyance/astrologie-amoureuse/" className="text-cyan-600 hover:text-cyan-800 underline font-medium">astrologie amoureuse</Link> et de saisir les opportunit&eacute;s qu&apos;ils offrent &agrave; votre <strong>vie sentimentale</strong>.
           </p>
 
           <div className="space-y-5">
@@ -190,7 +190,7 @@ export default function HoroscopeAmour2026Page() {
             <div className="bg-white rounded-lg p-5 border-l-4 border-purple-500">
               <h3 className="font-bold text-lg mb-2 text-purple-700">&#x2650; Sagittaire &mdash; Aventures du C&oelig;ur</h3>
               <p className="text-gray-700 text-sm mb-2">
-                Le Sagittaire b&eacute;n&eacute;ficie d&apos;une ann&eacute;e 2026 favorable aux <strong>aventures sentimentales</strong>. Jupiter en G&eacute;meaux, face &agrave; votre signe, active votre maison des <strong>partenariats</strong> et des engagements. Une <strong>rencontre</strong> importante peut surgir d&apos;un voyage, d&apos;une formation ou d&apos;un contexte multiculturel. Les couples Sagittaire retrouvent la flamme de l&apos;aventure &agrave; deux, avec des projets de voyage qui renforcent le lien amoureux. L&apos;automne offre une belle fen&ecirc;tre pour la <Link href="/sentiments/compatibilite-amoureuse" className="text-cyan-600 hover:text-cyan-800 underline font-medium">compatibilit&eacute; amoureuse</Link> et les engagements s&eacute;rieux.
+                Le Sagittaire b&eacute;n&eacute;ficie d&apos;une ann&eacute;e 2026 favorable aux <strong>aventures sentimentales</strong>. Jupiter en G&eacute;meaux, face &agrave; votre signe, active votre maison des <strong>partenariats</strong> et des engagements. Une <strong>rencontre</strong> importante peut surgir d&apos;un voyage, d&apos;une formation ou d&apos;un contexte multiculturel. Les couples Sagittaire retrouvent la flamme de l&apos;aventure &agrave; deux, avec des projets de voyage qui renforcent le lien amoureux. L&apos;automne offre une belle fen&ecirc;tre pour la <Link href="/sentiments/compatibilite-amoureuse/" className="text-cyan-600 hover:text-cyan-800 underline font-medium">compatibilit&eacute; amoureuse</Link> et les engagements s&eacute;rieux.
               </p>
               <p className="text-gray-600 text-xs italic">P&eacute;riode cl&eacute; : septembre-novembre 2026 &mdash; Compatibilit&eacute; renforc&eacute;e avec G&eacute;meaux et Verseau.</p>
             </div>
@@ -239,7 +239,7 @@ export default function HoroscopeAmour2026Page() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">&#x1F4A8; Signes d&apos;Air : G&eacute;meaux, Balance, Verseau</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Les signes d&apos;Air naviguent entre l&eacute;g&egrave;ret&eacute; et profondeur en 2026. Jupiter en G&eacute;meaux stimule les rencontres, la Balance vit des choix sentimentaux d&eacute;cisifs et le Verseau affronte des turbulences transformatrices.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            L&apos;<strong>horoscope amour 2026</strong> des signes d&apos;Air est plac&eacute; sous le signe de l&apos;&eacute;volution. Ces signes, naturellement communicatifs et sociables, sont appel&eacute;s &agrave; approfondir leur approche des <strong>relations amoureuses</strong>. La question de savoir <Link href="/nouvelle-rencontre/quand-rencontre-amour" className="text-cyan-600 hover:text-cyan-800 underline font-medium">quand rencontrer l&apos;amour</Link> trouve des r&eacute;ponses concr&egrave;tes dans les mouvements plan&eacute;taires de cette ann&eacute;e.
+            L&apos;<strong>horoscope amour 2026</strong> des signes d&apos;Air est plac&eacute; sous le signe de l&apos;&eacute;volution. Ces signes, naturellement communicatifs et sociables, sont appel&eacute;s &agrave; approfondir leur approche des <strong>relations amoureuses</strong>. La question de savoir <Link href="/nouvelle-rencontre/quand-rencontre-amour/" className="text-cyan-600 hover:text-cyan-800 underline font-medium">quand rencontrer l&apos;amour</Link> trouve des r&eacute;ponses concr&egrave;tes dans les mouvements plan&eacute;taires de cette ann&eacute;e.
           </p>
 
           <div className="space-y-5">
@@ -274,7 +274,7 @@ export default function HoroscopeAmour2026Page() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">&#x1F30A; Signes d&apos;Eau : Cancer, Scorpion, Poissons</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Les signes d&apos;Eau b&eacute;n&eacute;ficient d&apos;une ann&eacute;e 2026 riche en &eacute;motions et en profondeur sentimentale. Jupiter en Cancer au second semestre promet des rencontres karmiques et des liens d&apos;&acirc;me exceptionnels.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            L&apos;<strong>horoscope amour 2026</strong> r&eacute;serve aux signes d&apos;Eau une ann&eacute;e de grande <strong>intensit&eacute; &eacute;motionnelle</strong>. Leur intuition naturelle est d&eacute;cupl&eacute;e par les transits plan&eacute;taires, leur permettant de percevoir les <strong>sentiments</strong> de l&apos;autre avec une acuit&eacute; remarquable. Pour une <Link href="/voyance-gratuite-amour" className="text-cyan-600 hover:text-cyan-800 underline font-medium">voyance gratuite amour</Link> encore plus pr&eacute;cise, les signes d&apos;Eau gagnent &agrave; combiner astrologie et <strong>guidance sentimentale</strong> personnalis&eacute;e.
+            L&apos;<strong>horoscope amour 2026</strong> r&eacute;serve aux signes d&apos;Eau une ann&eacute;e de grande <strong>intensit&eacute; &eacute;motionnelle</strong>. Leur intuition naturelle est d&eacute;cupl&eacute;e par les transits plan&eacute;taires, leur permettant de percevoir les <strong>sentiments</strong> de l&apos;autre avec une acuit&eacute; remarquable. Pour une <Link href="/voyance-gratuite-amour/" className="text-cyan-600 hover:text-cyan-800 underline font-medium">voyance gratuite amour</Link> encore plus pr&eacute;cise, les signes d&apos;Eau gagnent &agrave; combiner astrologie et <strong>guidance sentimentale</strong> personnalis&eacute;e.
           </p>
 
           <div className="space-y-5">
@@ -304,7 +304,7 @@ export default function HoroscopeAmour2026Page() {
           </div>
 
           <div className="bg-cyan-50 border-l-4 border-cyan-600 p-5 rounded mt-6">
-            <p className="text-gray-700"><strong>&Agrave; d&eacute;couvrir :</strong> Pour approfondir les <strong>pr&eacute;dictions sentimentales</strong> de votre signe et comprendre votre <Link href="/sentiments/compatibilite-amoureuse" className="text-cyan-600 hover:text-cyan-800 underline font-medium">compatibilit&eacute; amoureuse</Link> en 2026, une consultation personnalis&eacute;e d&apos;<Link href="/methodes-voyance/astrologie-amoureuse" className="text-cyan-600 hover:text-cyan-800 underline font-medium">astrologie amoureuse</Link> offre des r&eacute;v&eacute;lations bien plus pr&eacute;cises que l&apos;horoscope g&eacute;n&eacute;ral.</p>
+            <p className="text-gray-700"><strong>&Agrave; d&eacute;couvrir :</strong> Pour approfondir les <strong>pr&eacute;dictions sentimentales</strong> de votre signe et comprendre votre <Link href="/sentiments/compatibilite-amoureuse/" className="text-cyan-600 hover:text-cyan-800 underline font-medium">compatibilit&eacute; amoureuse</Link> en 2026, une consultation personnalis&eacute;e d&apos;<Link href="/methodes-voyance/astrologie-amoureuse/" className="text-cyan-600 hover:text-cyan-800 underline font-medium">astrologie amoureuse</Link> offre des r&eacute;v&eacute;lations bien plus pr&eacute;cises que l&apos;horoscope g&eacute;n&eacute;ral.</p>
           </div>
         </section>
 
@@ -344,11 +344,11 @@ export default function HoroscopeAmour2026Page() {
         <div className="bg-gray-100 rounded-xl p-6 mb-8">
           <h3 className="font-bold text-lg mb-4 text-gray-900">&#x1F4DA; Articles Connexes</h3>
           <div className="space-y-2">
-            <Link href="/voyance-gratuite-amour" className="block text-cyan-600 hover:text-cyan-800 font-medium">&rarr; Voyance Gratuite Amour : Guide Complet</Link>
-            <Link href="/methodes-voyance/astrologie-amoureuse" className="block text-cyan-600 hover:text-cyan-800 font-medium">&rarr; Astrologie Amoureuse : Compatibilit&eacute; Astrale</Link>
-            <Link href="/sentiments/compatibilite-amoureuse" className="block text-cyan-600 hover:text-cyan-800 font-medium">&rarr; Compatibilit&eacute; Amoureuse : &Ecirc;tes-vous Faits l&apos;Un pour l&apos;Autre ?</Link>
-            <Link href="/nouvelle-rencontre/quand-rencontre-amour" className="block text-cyan-600 hover:text-cyan-800 font-medium">&rarr; Quand Vais-je Rencontrer l&apos;Amour ?</Link>
-            <Link href="/voyance-gratuite-amour/oracle-gratuit-amour" className="block text-cyan-600 hover:text-cyan-800 font-medium">&rarr; Oracle Gratuit Amour : Belline, G&eacute; et Guidance</Link>
+            <Link href="/voyance-gratuite-amour/" className="block text-cyan-600 hover:text-cyan-800 font-medium">&rarr; Voyance Gratuite Amour : Guide Complet</Link>
+            <Link href="/methodes-voyance/astrologie-amoureuse/" className="block text-cyan-600 hover:text-cyan-800 font-medium">&rarr; Astrologie Amoureuse : Compatibilit&eacute; Astrale</Link>
+            <Link href="/sentiments/compatibilite-amoureuse/" className="block text-cyan-600 hover:text-cyan-800 font-medium">&rarr; Compatibilit&eacute; Amoureuse : &Ecirc;tes-vous Faits l&apos;Un pour l&apos;Autre ?</Link>
+            <Link href="/nouvelle-rencontre/quand-rencontre-amour/" className="block text-cyan-600 hover:text-cyan-800 font-medium">&rarr; Quand Vais-je Rencontrer l&apos;Amour ?</Link>
+            <Link href="/voyance-gratuite-amour/oracle-gratuit-amour/" className="block text-cyan-600 hover:text-cyan-800 font-medium">&rarr; Oracle Gratuit Amour : Belline, G&eacute; et Guidance</Link>
           </div>
         </div>
 

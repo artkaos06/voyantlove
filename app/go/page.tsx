@@ -9,7 +9,7 @@ function GoRedirect() {
 
   useEffect(() => {
     const ref = searchParams.get('ref') || 'email-cta';
-    window.location.href = `/consulter?ref=${encodeURIComponent(ref)}`;
+    window.location.href = `/consulter/?ref=${encodeURIComponent(ref)}`;
   }, [searchParams]);
 
   return (

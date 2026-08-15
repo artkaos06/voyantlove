@@ -20,7 +20,7 @@ const config: ContentPageConfig = {
     h1: 'Communication Couple Difficile : Solutions Concrètes',
     subtitle: 'Communication couple difficile ? Techniques pour reconstruire le dialogue et retrouver la compréhension mutuelle',
     gradient: 'from-indigo-600 via-purple-600 to-pink-600',
-    backLink: { href: '/crise-couple', label: 'Retour aux Crises de Couple' },
+    backLink: { href: '/crise-couple/', label: 'Retour aux Crises de Couple' },
     anchors: [
       { href: '#solutions', label: 'Solutions Concrètes', primary: true },
       { href: '#tirage', label: 'Tirage Communication' },
@@ -69,11 +69,11 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/crise-couple', label: 'Crises de Couple : Guide Complet' },
-    { href: '/crise-couple/infidelite-couple', label: 'Infidélité dans le Couple' },
-    { href: '/crise-couple/jalousie-excessive', label: 'Jalousie Excessive dans le Couple' },
-    { href: '/sentiments/maime-t-il-elle', label: 'M\'aime-t-il/elle Vraiment ?' },
-    { href: '/reconquete/se-remettre-ensemble', label: 'Se Remettre Ensemble avec son Ex' },
+    { href: '/crise-couple/', label: 'Crises de Couple : Guide Complet' },
+    { href: '/crise-couple/infidelite-couple/', label: 'Infidélité dans le Couple' },
+    { href: '/crise-couple/jalousie-excessive/', label: 'Jalousie Excessive dans le Couple' },
+    { href: '/sentiments/maime-t-il-elle/', label: 'M\'aime-t-il/elle Vraiment ?' },
+    { href: '/reconquete/se-remettre-ensemble/', label: 'Se Remettre Ensemble avec son Ex' },
   ],
 };
 
@@ -94,7 +94,7 @@ export default function ProblemesCommunicationCouplePage() {
             Le <strong>tarot relationnel</strong> révèle les <strong>blocages énergétiques</strong> qui empêchent la vraie connexion, les <strong>blessures non guéries</strong> qui créent des schémas de communication toxiques, et les <strong>peurs inconscientes</strong> qui font que vous et votre partenaire ne vous entendez plus. Plus qu'un simple diagnostic, la voyance offre des solutions concrètes pour <strong>reconstruire le dialogue</strong> et retrouver l'intimité émotionnelle.
           </p>
           <p className="text-lg leading-relaxed">
-            Que vous traversiez une <strong>crise de communication passagère</strong> ou un <strong>silence profond</strong> qui dure depuis des mois, des solutions existent pour rétablir la connexion. Pour comprendre l'ensemble des <Link href="/crise-couple" className="text-purple-600 hover:text-purple-800 underline font-medium">crises de couple</Link>, découvrez nos guidances spécialisées qui abordent tous les aspects des difficultés relationnelles.
+            Que vous traversiez une <strong>crise de communication passagère</strong> ou un <strong>silence profond</strong> qui dure depuis des mois, des solutions existent pour rétablir la connexion. Pour comprendre l'ensemble des <Link href="/crise-couple/" className="text-purple-600 hover:text-purple-800 underline font-medium">crises de couple</Link>, découvrez nos guidances spécialisées qui abordent tous les aspects des difficultés relationnelles.
           </p>
         </article>
 
@@ -166,7 +166,7 @@ export default function ProblemesCommunicationCouplePage() {
                 <strong>Symptômes :</strong> Un ou les deux partenaires se ferment complètement, refusent de discuter des problèmes, donnent le traitement du silence, se retirent physiquement ou émotionnellement lors des conflits.
               </p>
               <p className="text-gray-700 mb-3">
-                <strong>Impact :</strong> Le silence est souvent plus destructeur que les disputes. Il crée un vide émotionnel qui se remplit d'angoisses, d'interprétations négatives, de <Link href="/crise-couple/jalousie-excessive" className="text-purple-600 hover:text-purple-800 underline font-medium">jalousie</Link> et de ressentiment. La connexion s'évapore progressivement.
+                <strong>Impact :</strong> Le silence est souvent plus destructeur que les disputes. Il crée un vide émotionnel qui se remplit d'angoisses, d'interprétations négatives, de <Link href="/crise-couple/jalousie-excessive/" className="text-purple-600 hover:text-purple-800 underline font-medium">jalousie</Link> et de ressentiment. La connexion s'évapore progressivement.
               </p>
               <p className="text-gray-700">
                 <strong>Origine énergétique :</strong> Peur intense du conflit, traumatisme d'enfance lié aux disputes parentales, sentiment d'impuissance face aux émotions, ou protection ultime quand la personne ne se sent plus en sécurité dans la relation.
@@ -176,7 +176,7 @@ export default function ProblemesCommunicationCouplePage() {
             <div className="bg-indigo-50 border-l-4 border-indigo-500 p-6 rounded-lg">
               <h3 className="font-bold text-lg mb-3 text-indigo-700">6. Les Différences de Langage Amoureux</h3>
               <p className="text-gray-700 mb-3">
-                <strong>Symptômes :</strong> Vous exprimez votre amour d'une manière que votre partenaire ne reconnaît pas, vous ne vous sentez pas aimé malgré les efforts de l'autre, vos besoins émotionnels semblent fondamentalement incompatibles. <Link href="/sentiments/maime-t-il-elle" className="text-purple-600 hover:text-purple-800 underline font-medium">Comprendre les sentiments réels</Link> de votre partenaire devient alors essentiel.
+                <strong>Symptômes :</strong> Vous exprimez votre amour d'une manière que votre partenaire ne reconnaît pas, vous ne vous sentez pas aimé malgré les efforts de l'autre, vos besoins émotionnels semblent fondamentalement incompatibles. <Link href="/sentiments/maime-t-il-elle/" className="text-purple-600 hover:text-purple-800 underline font-medium">Comprendre les sentiments réels</Link> de votre partenaire devient alors essentiel.
               </p>
               <p className="text-gray-700 mb-3">
                 <strong>Impact :</strong> Sentiment douloureux de ne pas être aimé alors que votre partenaire pense faire des efforts. Frustration mutuelle où chacun donne mais personne ne reçoit. Questionnement sur la compatibilité fondamentale.
@@ -528,7 +528,7 @@ export default function ProblemesCommunicationCouplePage() {
               <div className="text-2xl text-blue-600">💔</div>
               <div>
                 <h3 className="font-bold text-gray-800 mb-1">Envisage sérieusement la séparation</h3>
-                <p className="text-gray-700">Si l'un de vous pense régulièrement à se séparer, une thérapie de couple peut soit <Link href="/crise-couple/sauver-son-couple" className="text-purple-600 hover:text-purple-800 underline font-medium">sauver votre couple</Link>, soit vous aider à vous séparer de manière saine si c'est la meilleure option.</p>
+                <p className="text-gray-700">Si l'un de vous pense régulièrement à se séparer, une thérapie de couple peut soit <Link href="/crise-couple/sauver-son-couple/" className="text-purple-600 hover:text-purple-800 underline font-medium">sauver votre couple</Link>, soit vous aider à vous séparer de manière saine si c'est la meilleure option.</p>
               </div>
             </div>
 

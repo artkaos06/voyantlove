@@ -69,98 +69,98 @@ export default function RuptureHubPage() {
           <h2 className="text-3xl font-bold mb-8 text-center">🗺️ Votre Parcours de Guérison</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le parcours de guérison après une rupture passe par six étapes clés : comprendre la séparation, traverser le chagrin, oublier son ex, guérir en profondeur, surmonter un amour non partagé et renaître après le deuil amoureux.</p>
           <div className="grid md:grid-cols-3 gap-8">
-            <Link href="/rupture/rupture-amoureuse" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-red-500">
+            <Link href="/rupture/rupture-amoureuse/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-red-500">
               <div className="text-4xl mb-4">💔</div>
               <h3 className="text-2xl font-bold mb-3 text-gray-900">Rupture Amoureuse</h3>
               <p className="text-gray-600 mb-4">Comprendre les vraies raisons de la séparation et le sens profond de cette épreuve.</p>
               <span className="text-red-600 font-semibold">Lire →</span>
             </Link>
 
-            <Link href="/rupture/chagrin-damour" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-blue-500">
+            <Link href="/rupture/chagrin-damour/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-blue-500">
               <div className="text-4xl mb-4">💙</div>
               <h3 className="text-2xl font-bold mb-3 text-gray-900">Chagrin d'Amour</h3>
               <p className="text-gray-600 mb-4">Traverser la douleur étape par étape avec compassion et retrouver l'espoir.</p>
               <span className="text-blue-600 font-semibold">Lire →</span>
             </Link>
 
-            <Link href="/rupture/oublier-son-ex" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-pink-500">
+            <Link href="/rupture/oublier-son-ex/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-pink-500">
               <div className="text-4xl mb-4">🌱</div>
               <h3 className="text-2xl font-bold mb-3 text-gray-900">Oublier son Ex</h3>
               <p className="text-gray-600 mb-4">Tourner la page complètement et se préparer à rencontrer un nouvel amour.</p>
               <span className="text-pink-600 font-semibold">Lire →</span>
             </Link>
 
-            <Link href="/rupture/guerir-rupture" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-teal-500">
+            <Link href="/rupture/guerir-rupture/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-teal-500">
               <div className="text-4xl mb-4">🌿</div>
               <h3 className="text-2xl font-bold mb-3 text-gray-900">Guérir d'une Rupture</h3>
               <p className="text-gray-600 mb-4">Les étapes du deuil amoureux et le temps nécessaire pour se reconstruire.</p>
               <span className="text-teal-600 font-semibold">Lire →</span>
             </Link>
 
-            <Link href="/rupture/amour-non-partage" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-rose-500">
+            <Link href="/rupture/amour-non-partage/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-rose-500">
               <div className="text-4xl mb-4">💜</div>
               <h3 className="text-2xl font-bold mb-3 text-gray-900">Amour Non Partagé</h3>
               <p className="text-gray-600 mb-4">Comprendre et surmonter un amour à sens unique selon le tarot.</p>
               <span className="text-rose-600 font-semibold">Lire →</span>
             </Link>
 
-            <Link href="/rupture/deuil-amoureux" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-slate-500">
+            <Link href="/rupture/deuil-amoureux/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-slate-500">
               <div className="text-4xl mb-4">🕊️</div>
               <h3 className="text-2xl font-bold mb-3 text-gray-900">Deuil Amoureux</h3>
               <p className="text-gray-600 mb-4">Traverser la perte amoureuse et renaître grâce à la voyance.</p>
               <span className="text-slate-600 font-semibold">Lire →</span>
             </Link>
 
-            <Link href="/rupture/surmonter-trahison" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-amber-500">
+            <Link href="/rupture/surmonter-trahison/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-amber-500">
               <div className="text-4xl mb-4">🗡️</div>
               <h3 className="text-2xl font-bold mb-3 text-gray-900">Surmonter une Trahison</h3>
               <p className="text-gray-600 mb-4">Guérir après une trahison amoureuse et retrouver confiance.</p>
               <span className="text-amber-600 font-semibold">Lire →</span>
             </Link>
 
-            <Link href="/rupture/comment-tourner-la-page" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-emerald-500">
+            <Link href="/rupture/comment-tourner-la-page/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-emerald-500">
               <div className="text-4xl mb-4">📖</div>
               <h3 className="text-2xl font-bold mb-3 text-gray-900">Tourner la Page</h3>
               <p className="text-gray-600 mb-4">Comment tourner la page définitivement et avancer sereinement.</p>
               <span className="text-emerald-600 font-semibold">Lire →</span>
             </Link>
 
-            <Link href="/rupture/voyance-divorce-separation" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-gray-500">
+            <Link href="/rupture/voyance-divorce-separation/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-gray-500">
               <div className="text-4xl mb-4">⚖️</div>
               <h3 className="text-2xl font-bold mb-3 text-gray-900">Divorce & Séparation</h3>
               <p className="text-gray-600 mb-4">Guidance voyance pour traverser un divorce ou une séparation difficile.</p>
               <span className="text-gray-600 font-semibold">Lire →</span>
             </Link>
 
-            <Link href="/rupture/confiance-en-soi-apres-divorce" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-teal-500">
+            <Link href="/rupture/confiance-en-soi-apres-divorce/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-teal-500">
               <div className="text-4xl mb-4">🌱</div>
               <h3 className="text-2xl font-bold mb-3 text-gray-900">Confiance en Soi Après Divorce</h3>
               <p className="text-gray-600 mb-4">Un parcours de reconstruction, étape par étape, pour retrouver l&apos;estime de soi.</p>
               <span className="text-teal-600 font-semibold">Lire →</span>
             </Link>
 
-            <Link href="/rupture/signes-reseaux-sociaux-apres-rupture" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-indigo-500">
+            <Link href="/rupture/signes-reseaux-sociaux-apres-rupture/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-indigo-500">
               <div className="text-4xl mb-4">📱</div>
               <h3 className="text-2xl font-bold mb-3 text-gray-900">Réseaux Sociaux Après une Rupture</h3>
               <p className="text-gray-600 mb-4">Photos supprimées, stories, blocages : ce que ces signaux prouvent (ou pas).</p>
               <span className="text-indigo-600 font-semibold">Lire →</span>
             </Link>
 
-            <Link href="/rupture/rever-de-son-ex" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-purple-500">
+            <Link href="/rupture/rever-de-son-ex/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-purple-500">
               <div className="text-4xl mb-4">🌙</div>
               <h3 className="text-2xl font-bold mb-3 text-gray-900">Rêver de son Ex</h3>
               <p className="text-gray-600 mb-4">Ce que ces rêves révèlent sur vous, et ce qu&apos;ils ne prédisent pas.</p>
               <span className="text-purple-600 font-semibold">Lire →</span>
             </Link>
 
-            <Link href="/rupture/ex-refait-sa-vie" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-teal-500">
+            <Link href="/rupture/ex-refait-sa-vie/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-teal-500">
               <div className="text-4xl mb-4">🍃</div>
               <h3 className="text-2xl font-bold mb-3 text-gray-900">Mon Ex Refait sa Vie</h3>
               <p className="text-gray-600 mb-4">Ce que ça prouve (ou pas), et comment retrouver votre équilibre.</p>
               <span className="text-teal-600 font-semibold">Lire →</span>
             </Link>
 
-            <Link href="/rupture/rupture-soudaine-sans-explication" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-blue-700">
+            <Link href="/rupture/rupture-soudaine-sans-explication/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-blue-700">
               <div className="text-4xl mb-4">⚡</div>
               <h3 className="text-2xl font-bold mb-3 text-gray-900">Rupture Soudaine sans Explication</h3>
               <p className="text-gray-600 mb-4">Comprendre une séparation qui semble arriver du jour au lendemain.</p>
@@ -174,7 +174,7 @@ export default function RuptureHubPage() {
         <section className="bg-white rounded-xl p-8 mb-12">
           <h2 className="text-3xl font-bold mb-6">🔮 Ce que la Voyance Révèle sur la Rupture</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">La voyance révèle les causes invisibles de votre rupture, les leçons karmiques à intégrer et le timing précis de votre guérison. Le tarot transforme la souffrance en compréhension et en évolution personnelle.</p>
-          <p className="text-lg text-gray-700 leading-relaxed mb-6">En <Link href="/voyance-amour" className="text-gray-700 hover:text-gray-900 underline font-medium">voyance amoureuse</Link>, le <strong>tarot</strong> aide à comprendre pourquoi votre relation devait se terminer, quelles leçons en tirer, et comment transformer cette épreuve en évolution personnelle. Que vous cherchiez à <Link href="/rupture/guerir-rupture" className="text-gray-700 hover:text-gray-900 underline font-medium">guérir après une rupture</Link> ou à comprendre votre souffrance, chaque <strong>rupture amoureuse</strong> porte un sens spirituel profond.</p>
+          <p className="text-lg text-gray-700 leading-relaxed mb-6">En <Link href="/voyance-amour/" className="text-gray-700 hover:text-gray-900 underline font-medium">voyance amoureuse</Link>, le <strong>tarot</strong> aide à comprendre pourquoi votre relation devait se terminer, quelles leçons en tirer, et comment transformer cette épreuve en évolution personnelle. Que vous cherchiez à <Link href="/rupture/guerir-rupture/" className="text-gray-700 hover:text-gray-900 underline font-medium">guérir après une rupture</Link> ou à comprendre votre souffrance, chaque <strong>rupture amoureuse</strong> porte un sens spirituel profond.</p>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-gray-50 p-6 rounded-lg">
               <h3 className="font-bold text-lg mb-3">✨ Les Leçons Karmiques</h3>
@@ -215,19 +215,19 @@ export default function RuptureHubPage() {
           <p className="text-lg font-semibold text-gray-800 mb-4">La rupture touche à la reconquête amoureuse, à la nouvelle rencontre et à la crise de couple. Explorer ces thèmes complémentaires enrichit votre compréhension et accélère votre reconstruction sentimentale.</p>
           <p className="text-gray-700 mb-4">La rupture touche à de nombreuses facettes de votre vie amoureuse. Explorez ces guidances complémentaires pour avancer sereinement.</p>
           <div className="grid md:grid-cols-3 gap-4">
-            <Link href="/reconquete" className="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition">
+            <Link href="/reconquete/" className="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition">
               <h3 className="font-bold text-gray-900 mb-1">Reconquête Amoureuse</h3>
               <p className="text-sm text-gray-600">Reconquérir votre ex si vous souhaitez une seconde chance.</p>
             </Link>
-            <Link href="/nouvelle-rencontre" className="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition">
+            <Link href="/nouvelle-rencontre/" className="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition">
               <h3 className="font-bold text-gray-900 mb-1">Nouvelle Rencontre</h3>
               <p className="text-sm text-gray-600">Quand et comment rencontrer un nouvel amour après la rupture.</p>
             </Link>
-            <Link href="/crise-couple" className="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition">
+            <Link href="/crise-couple/" className="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition">
               <h3 className="font-bold text-gray-900 mb-1">Crise de Couple</h3>
               <p className="text-sm text-gray-600">Comprendre les crises pour éviter qu'elles ne mènent à la rupture.</p>
             </Link>
-            <Link href="/consulter" className="bg-purple-50 rounded-lg p-4 hover:bg-purple-100 transition border border-purple-200">
+            <Link href="/consulter/" className="bg-purple-50 rounded-lg p-4 hover:bg-purple-100 transition border border-purple-200">
               <h3 className="font-bold text-purple-900 mb-1">Consulter un Voyant</h3>
               <p className="text-sm text-purple-700">Tous nos voyants disponibles maintenant pour une guidance personnalisée.</p>
             </Link>

@@ -20,7 +20,7 @@ const config: ContentPageConfig = {
     h1: 'Les Signes de l\'Âme Sœur',
     subtitle: 'Reconnaître votre connexion karmique et votre amour véritable',
     gradient: 'from-purple-600 via-pink-500 to-rose-500',
-    backLink: { href: '/nouvelle-rencontre', label: 'Retour aux Nouvelles Rencontres' },
+    backLink: { href: '/nouvelle-rencontre/', label: 'Retour aux Nouvelles Rencontres' },
     anchors: [
       { href: '#signes', label: 'Découvrir les 15 Signes', primary: true },
       { href: '#tarot', label: 'Confirmation Tarot' },
@@ -62,10 +62,10 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/nouvelle-rencontre', label: 'Nouvelle Rencontre : Toutes nos Guidances' },
-    { href: '/nouvelle-rencontre/nouvelle-relation-amoureuse', label: 'Nouvelle Relation Amoureuse : Premiers Mois' },
-    { href: '/nouvelle-rencontre/quand-rencontre-amour', label: 'Quand Vais-je Rencontrer l\'Amour ?' },
-    { href: '/sentiments/avenir-amoureux', label: 'Mon Avenir Amoureux' },
+    { href: '/nouvelle-rencontre/', label: 'Nouvelle Rencontre : Toutes nos Guidances' },
+    { href: '/nouvelle-rencontre/nouvelle-relation-amoureuse/', label: 'Nouvelle Relation Amoureuse : Premiers Mois' },
+    { href: '/nouvelle-rencontre/quand-rencontre-amour/', label: 'Quand Vais-je Rencontrer l\'Amour ?' },
+    { href: '/sentiments/avenir-amoureux/', label: 'Mon Avenir Amoureux' },
   ],
 };
 
@@ -82,7 +82,7 @@ export default function SignesAmeSoeurPage() {
           Contrairement aux relations ordinaires qui se construisent progressivement, la <strong>rencontre d'âme sœur</strong> se caractérise par une reconnaissance instantanée, une facilité naturelle, et des synchronicités troublantes. Votre âme sait avant votre mental conscient. Le <strong>tarot</strong>, la <strong>numérologie</strong>, et l'<strong>astrologie</strong> confirment ce que votre intuition ressent déjà.
         </p>
         <p className="text-lg leading-relaxed">
-          Cette guidance complète vous révèle les <strong>15 signes infaillibles</strong> pour reconnaître votre âme sœur, les différencier d'une flamme jumelle ou d'une simple compatibilité, et comprendre la dimension karmique de cette union sacrée. Pour explorer d'autres aspects de votre <Link href="/nouvelle-rencontre" className="text-purple-600 hover:text-purple-800 underline font-medium">nouvelle rencontre amoureuse</Link>, découvrez toutes nos guidances spécialisées.
+          Cette guidance complète vous révèle les <strong>15 signes infaillibles</strong> pour reconnaître votre âme sœur, les différencier d'une flamme jumelle ou d'une simple compatibilité, et comprendre la dimension karmique de cette union sacrée. Pour explorer d'autres aspects de votre <Link href="/nouvelle-rencontre/" className="text-purple-600 hover:text-purple-800 underline font-medium">nouvelle rencontre amoureuse</Link>, découvrez toutes nos guidances spécialisées.
         </p>
       </article>
 
@@ -123,7 +123,7 @@ export default function SignesAmeSoeurPage() {
           <div className="bg-green-50 border-l-4 border-green-500 p-6 rounded-lg">
             <h3 className="font-bold text-lg mb-3 text-green-700">4. Valeurs et Vision de Vie Alignées</h3>
             <p className="text-gray-700">
-              Au-delà de l'attraction, vous partagez les <strong>mêmes valeurs fondamentales</strong> : vision de la famille, spiritualité, objectifs de vie, principes éthiques. Vous voulez aller dans la même direction, même si les chemins diffèrent. Cette alignement profond distingue l'âme sœur de la simple <Link href="/sentiments/compatibilite-amoureuse" className="text-purple-600 hover:text-purple-800 underline font-medium">compatibilité amoureuse</Link>. La grande majorité des couples âmes sœurs rapportent cette cohérence de valeurs dès le début.
+              Au-delà de l'attraction, vous partagez les <strong>mêmes valeurs fondamentales</strong> : vision de la famille, spiritualité, objectifs de vie, principes éthiques. Vous voulez aller dans la même direction, même si les chemins diffèrent. Cette alignement profond distingue l'âme sœur de la simple <Link href="/sentiments/compatibilite-amoureuse/" className="text-purple-600 hover:text-purple-800 underline font-medium">compatibilité amoureuse</Link>. La grande majorité des couples âmes sœurs rapportent cette cohérence de valeurs dès le début.
             </p>
           </div>
 
@@ -210,7 +210,7 @@ export default function SignesAmeSoeurPage() {
         <h2 className="text-3xl font-bold mb-6 text-gray-900">🔮 Âme Sœur vs Flamme Jumelle : Comprendre la Différence</h2>
         <p className="text-lg font-semibold text-gray-800 mb-4">L'ame soeur offre une connexion harmonieuse et stable. La flamme jumelle est un miroir intense, souvent turbulent, qui declenche une transformation spirituelle profonde. La grande majorite des rencontres sont des ames soeurs.</p>
         <p className="text-gray-700 mb-6">
-          Beaucoup confondent <strong>âme sœur</strong> et <strong><Link href="/nouvelle-rencontre/flamme-jumelle" className="text-purple-600 hover:text-purple-800 underline font-medium">flamme jumelle</Link></strong>, alors que ces concepts représentent deux types de connexions spirituelles distinctes. Voici comment les différencier.
+          Beaucoup confondent <strong>âme sœur</strong> et <strong><Link href="/nouvelle-rencontre/flamme-jumelle/" className="text-purple-600 hover:text-purple-800 underline font-medium">flamme jumelle</Link></strong>, alors que ces concepts représentent deux types de connexions spirituelles distinctes. Voici comment les différencier.
         </p>
 
         <div className="grid md:grid-cols-2 gap-6">
@@ -429,7 +429,7 @@ export default function SignesAmeSoeurPage() {
             <div className="text-2xl text-red-500">✗</div>
             <div>
               <h3 className="font-bold text-gray-800 mb-1">Attendre passivement que l'univers vous l'amène</h3>
-              <p className="text-gray-700">Pour <Link href="/nouvelle-rencontre/trouver-ame-soeur" className="text-purple-600 hover:text-purple-800 underline font-medium">trouver l'âme sœur</Link>, une préparation active est indispensable : guérison de vos blessures, clarté sur vos valeurs, disponibilité émotionnelle. Vous devez aussi agir : sortir, rencontrer, être ouvert. L'univers crée les opportunités, mais vous devez les saisir.</p>
+              <p className="text-gray-700">Pour <Link href="/nouvelle-rencontre/trouver-ame-soeur/" className="text-purple-600 hover:text-purple-800 underline font-medium">trouver l'âme sœur</Link>, une préparation active est indispensable : guérison de vos blessures, clarté sur vos valeurs, disponibilité émotionnelle. Vous devez aussi agir : sortir, rencontrer, être ouvert. L'univers crée les opportunités, mais vous devez les saisir.</p>
             </div>
           </div>
 

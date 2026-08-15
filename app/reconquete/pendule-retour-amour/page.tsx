@@ -20,7 +20,7 @@ const config: ContentPageConfig = {
     h1: 'Pendule pour Faire Revenir une Personne',
     subtitle: 'Ce que le pendule peut révéler, et ce qu\'il ne peut pas faire',
     gradient: 'from-purple-600 via-pink-500 to-rose-500',
-    backLink: { href: '/reconquete', label: 'Reconquête' },
+    backLink: { href: '/reconquete/', label: 'Reconquête' },
     anchors: [
       { href: '#questions', label: 'Questions à Poser', primary: true },
       { href: '#consultation', label: 'Consultation Pendule' },
@@ -62,12 +62,12 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/reconquete', label: 'Reconquête Amoureuse : Toutes les Guidances' },
-    { href: '/reconquete/reconquerir-son-ex', label: 'Reconquérir son Ex : Guide Complet' },
-    { href: '/reconquete/silence-radio-reconquete', label: 'Silence Radio : La Stratégie' },
-    { href: '/reconquete/va-t-il-elle-revenir', label: 'Va-t-il/elle Revenir ?' },
-    { href: '/methodes-voyance/pendule-amour', label: 'Pendule Amour : Guide Général' },
-    { href: '/reconquete/ex-revient-silence-radio', label: 'Ex qui Recontacte Après le Silence Radio' },
+    { href: '/reconquete/', label: 'Reconquête Amoureuse : Toutes les Guidances' },
+    { href: '/reconquete/reconquerir-son-ex/', label: 'Reconquérir son Ex : Guide Complet' },
+    { href: '/reconquete/silence-radio-reconquete/', label: 'Silence Radio : La Stratégie' },
+    { href: '/reconquete/va-t-il-elle-revenir/', label: 'Va-t-il/elle Revenir ?' },
+    { href: '/methodes-voyance/pendule-amour/', label: 'Pendule Amour : Guide Général' },
+    { href: '/reconquete/ex-revient-silence-radio/', label: 'Ex qui Recontacte Après le Silence Radio' },
   ],
 };
 
@@ -207,7 +207,7 @@ export default function PenduleRetourAmourPage() {
             </div>
           </div>
           <div className="text-center">
-            <Link href="/consulter?ref=pendule-retour-amour" className="inline-block bg-purple-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-purple-700 transition">Consulter un Radiesthésiste Spécialisé →</Link>
+            <Link href="/consulter/?ref=pendule-retour-amour" className="inline-block bg-purple-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-purple-700 transition">Consulter un Radiesthésiste Spécialisé →</Link>
           </div>
         </section>
 

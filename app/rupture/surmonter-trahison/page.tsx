@@ -20,7 +20,7 @@ const config: ContentPageConfig = {
     h1: 'Surmonter une Trahison Amoureuse',
     subtitle: 'Guérir de l\'infidélité avec la guidance de la voyance et du tarot',
     gradient: 'from-gray-700 via-gray-800 to-gray-900',
-    backLink: { href: '/rupture', label: 'Rupture' },
+    backLink: { href: '/rupture/', label: 'Rupture' },
     anchors: [
       { href: '#consultation', label: 'Consultation Guidance', primary: true },
     ],
@@ -53,12 +53,12 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/rupture/rupture-amoureuse', label: 'Surmonter une Rupture Amoureuse' },
-    { href: '/rupture/comment-tourner-la-page', label: 'Comment Tourner la Page' },
-    { href: '/rupture/chagrin-damour', label: 'Guérir d\'un Chagrin d\'Amour' },
-    { href: '/rupture/oublier-son-ex', label: 'Comment Oublier son Ex' },
-    { href: '/reconquete/reconquerir-son-ex', label: 'Reconquérir son Ex' },
-    { href: '/sentiments/maime-t-il-elle', label: 'M\'aime-t-il / M\'aime-t-elle Encore ?' },
+    { href: '/rupture/rupture-amoureuse/', label: 'Surmonter une Rupture Amoureuse' },
+    { href: '/rupture/comment-tourner-la-page/', label: 'Comment Tourner la Page' },
+    { href: '/rupture/chagrin-damour/', label: 'Guérir d\'un Chagrin d\'Amour' },
+    { href: '/rupture/oublier-son-ex/', label: 'Comment Oublier son Ex' },
+    { href: '/reconquete/reconquerir-son-ex/', label: 'Reconquérir son Ex' },
+    { href: '/sentiments/maime-t-il-elle/', label: 'M\'aime-t-il / M\'aime-t-elle Encore ?' },
   ],
 };
 
@@ -98,7 +98,7 @@ export default function SurmonterTrahisonPage() {
             </div>
             <div className="bg-gray-50 border-l-4 border-gray-400 p-6 rounded-lg">
               <h3 className="font-bold text-lg mb-2 text-gray-700">Le Chemin de Guérison</h3>
-              <p className="text-gray-700">Après la tempête émotionnelle, le <strong>tarot</strong> trace un chemin vers la <strong>guérison</strong>. Des cartes comme l'<strong>Étoile</strong> (espoir renouvelé), le <strong>Monde</strong> (complétude intérieure) ou la <strong>Tempérance</strong> (équilibre retrouvé) apparaissent pour indiquer que la douleur actuelle mène à une transformation profonde. La <strong>voyance</strong> vous accompagne dans cette traversée en identifiant les étapes de reconstruction et les pièges à éviter. Si la <Link href="/rupture/rupture-amoureuse" className="text-purple-600 hover:text-gray-800 underline font-medium">rupture amoureuse</Link> est inévitable, elle peut aussi devenir un tremplin vers un amour plus authentique.</p>
+              <p className="text-gray-700">Après la tempête émotionnelle, le <strong>tarot</strong> trace un chemin vers la <strong>guérison</strong>. Des cartes comme l'<strong>Étoile</strong> (espoir renouvelé), le <strong>Monde</strong> (complétude intérieure) ou la <strong>Tempérance</strong> (équilibre retrouvé) apparaissent pour indiquer que la douleur actuelle mène à une transformation profonde. La <strong>voyance</strong> vous accompagne dans cette traversée en identifiant les étapes de reconstruction et les pièges à éviter. Si la <Link href="/rupture/rupture-amoureuse/" className="text-purple-600 hover:text-gray-800 underline font-medium">rupture amoureuse</Link> est inévitable, elle peut aussi devenir un tremplin vers un amour plus authentique.</p>
             </div>
           </div>
         </section>
@@ -125,7 +125,7 @@ export default function SurmonterTrahisonPage() {
               <div className="text-3xl font-bold text-gray-600">3</div>
               <div>
                 <h3 className="font-bold text-lg mb-2">Le Deuil de la Relation Idéalisée</h3>
-                <p className="text-gray-700">L'étape la plus douloureuse est le deuil non pas de votre partenaire, mais de l'image que vous aviez de votre <strong>couple</strong>. La <strong>trahison</strong> révèle que la réalité était différente de votre perception. Ce <strong>deuil amoureux</strong> est profond car il touche à votre confiance en votre propre jugement. Le <strong>tarot</strong> vous aide à voir votre relation telle qu'elle était vraiment, avec ses beautés et ses failles. Cette lucidité, bien que douloureuse, est libératrice. Pour approfondir ce processus, notre guide sur le <Link href="/rupture/chagrin-damour" className="text-gray-600 hover:text-gray-800 underline font-medium">chagrin d'amour</Link> offre des outils complémentaires.</p>
+                <p className="text-gray-700">L'étape la plus douloureuse est le deuil non pas de votre partenaire, mais de l'image que vous aviez de votre <strong>couple</strong>. La <strong>trahison</strong> révèle que la réalité était différente de votre perception. Ce <strong>deuil amoureux</strong> est profond car il touche à votre confiance en votre propre jugement. Le <strong>tarot</strong> vous aide à voir votre relation telle qu'elle était vraiment, avec ses beautés et ses failles. Cette lucidité, bien que douloureuse, est libératrice. Pour approfondir ce processus, notre guide sur le <Link href="/rupture/chagrin-damour/" className="text-gray-600 hover:text-gray-800 underline font-medium">chagrin d'amour</Link> offre des outils complémentaires.</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
@@ -196,7 +196,7 @@ export default function SurmonterTrahisonPage() {
             </div>
             <div className="flex items-start gap-3">
               <div className="text-2xl text-gray-600">✦</div>
-              <p className="text-gray-700"><strong>Vous accédez à une profondeur émotionnelle nouvelle</strong> : avoir traversé l'enfer de la <strong>tromperie</strong> vous donne une empathie et une sensibilité qui enrichissent tous vos <strong>liens humains</strong>. Si vous envisagez de reconstruire votre vie amoureuse, notre guide sur <Link href="/rupture/oublier-son-ex" className="text-gray-600 hover:text-gray-800 underline font-medium">comment oublier son ex</Link> peut compléter votre démarche de guérison.</p>
+              <p className="text-gray-700"><strong>Vous accédez à une profondeur émotionnelle nouvelle</strong> : avoir traversé l'enfer de la <strong>tromperie</strong> vous donne une empathie et une sensibilité qui enrichissent tous vos <strong>liens humains</strong>. Si vous envisagez de reconstruire votre vie amoureuse, notre guide sur <Link href="/rupture/oublier-son-ex/" className="text-gray-600 hover:text-gray-800 underline font-medium">comment oublier son ex</Link> peut compléter votre démarche de guérison.</p>
             </div>
           </div>
         </section>

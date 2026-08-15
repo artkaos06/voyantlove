@@ -77,7 +77,7 @@ export default async function SignPage({ params }: Props) {
 
       <header className="bg-gradient-to-r from-fuchsia-700 via-purple-700 to-indigo-800 text-white py-16 px-4">
         <div className="max-w-4xl mx-auto">
-          <Link href="/astrologie-amour" className="text-white/80 hover:text-white mb-4 inline-block">&larr; Tous les signes en amour</Link>
+          <Link href="/astrologie-amour/" className="text-white/80 hover:text-white mb-4 inline-block">&larr; Tous les signes en amour</Link>
           <h1 className="text-4xl md:text-5xl font-bold mb-3">{s.emoji} {s.name} en Amour</h1>
           <p className="text-lg opacity-90 mb-4">Signe de {s.element} · gouverné par {s.planet} · {s.dates}</p>
           <div className="flex gap-2 flex-wrap">
@@ -155,13 +155,13 @@ export default async function SignPage({ params }: Props) {
             </p>
             <div className="grid sm:grid-cols-2 gap-2">
               {compatLinks.map((c) => (
-                <Link key={c.slug} href={`/compatibilite-amoureuse/${c.slug}`} className="block text-fuchsia-700 hover:text-fuchsia-900 font-medium py-1">
+                <Link key={c.slug} href={`/compatibilite-amoureuse/${c.slug}/`} className="block text-fuchsia-700 hover:text-fuchsia-900 font-medium py-1">
                   &rarr; {s.name} et {c.other}
                 </Link>
               ))}
             </div>
             <div className="mt-5">
-              <Link href="/methodes-voyance/synastrie-amoureuse" className="inline-block bg-fuchsia-700 hover:bg-fuchsia-800 text-white font-semibold px-6 py-3 rounded-lg transition">
+              <Link href="/methodes-voyance/synastrie-amoureuse/" className="inline-block bg-fuchsia-700 hover:bg-fuchsia-800 text-white font-semibold px-6 py-3 rounded-lg transition">
                 🔮 Tester votre compatibilité avec le {s.name}
               </Link>
             </div>
@@ -186,14 +186,14 @@ export default async function SignPage({ params }: Props) {
           <h2 className="font-bold text-lg mb-4 text-gray-900">♾️ Les autres signes en amour</h2>
           <div className="grid sm:grid-cols-2 gap-2">
             {siblings.map((x) => (
-              <Link key={x.slug} href={`/astrologie-amour/${x.slug}`} className="block text-fuchsia-700 hover:text-fuchsia-900 font-medium">
+              <Link key={x.slug} href={`/astrologie-amour/${x.slug}/`} className="block text-fuchsia-700 hover:text-fuchsia-900 font-medium">
                 &rarr; {x.emoji} {x.name} en amour
               </Link>
             ))}
           </div>
           <div className="mt-4 pt-4 border-t border-gray-200 space-y-2">
-            <Link href="/tarot-amour" className="block text-fuchsia-700 hover:text-fuchsia-900 font-medium">&rarr; 🃏 Tarot amour : signification des cartes</Link>
-            <Link href="/compatibilite-amoureuse" className="block text-fuchsia-700 hover:text-fuchsia-900 font-medium">&rarr; 💞 Toutes les compatibilités amoureuses</Link>
+            <Link href="/tarot-amour/" className="block text-fuchsia-700 hover:text-fuchsia-900 font-medium">&rarr; 🃏 Tarot amour : signification des cartes</Link>
+            <Link href="/compatibilite-amoureuse/" className="block text-fuchsia-700 hover:text-fuchsia-900 font-medium">&rarr; 💞 Toutes les compatibilités amoureuses</Link>
           </div>
         </div>
 

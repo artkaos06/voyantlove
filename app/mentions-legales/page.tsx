@@ -90,7 +90,7 @@ export default function MentionsLegalesPage() {
               vous disposez d'un droit d'accès, de rectification, de suppression et d'opposition aux données personnelles vous concernant.
             </p>
             <p className="text-gray-700">
-              Pour plus d'informations, consultez notre <Link href="/confidentialite" className="text-purple-600 hover:underline">Politique de Confidentialité</Link>.
+              Pour plus d'informations, consultez notre <Link href="/confidentialite/" className="text-purple-600 hover:underline">Politique de Confidentialité</Link>.
             </p>
           </section>
 

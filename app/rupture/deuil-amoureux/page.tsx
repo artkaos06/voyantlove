@@ -20,7 +20,7 @@ const config: ContentPageConfig = {
     h1: 'Deuil Amoureux : Traverser la Perte et Renaître',
     subtitle: 'Comprendre le processus de deuil sentimental et retrouver le chemin de la renaissance',
     gradient: 'from-slate-600 via-gray-600 to-zinc-600',
-    backLink: { href: '/rupture', label: 'Retour aux Ruptures Amoureuses' },
+    backLink: { href: '/rupture/', label: 'Retour aux Ruptures Amoureuses' },
     anchors: [
       { href: '#consultation', label: 'Guidance de Renaissance', primary: true },
       { href: '#phases', label: 'Les Phases du Deuil' },
@@ -58,11 +58,11 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/rupture/guerir-rupture', label: 'Guérir d\'une Rupture Amoureuse' },
-    { href: '/rupture/chagrin-damour', label: 'Surmonter un Chagrin d\'Amour' },
-    { href: '/rupture/oublier-son-ex', label: 'Comment Oublier son Ex' },
-    { href: '/rupture/rupture-amoureuse', label: 'Comprendre la Rupture Amoureuse' },
-    { href: '/rupture/amour-non-partage', label: 'Amour Non Partagé : Comprendre et Surmonter' },
+    { href: '/rupture/guerir-rupture/', label: 'Guérir d\'une Rupture Amoureuse' },
+    { href: '/rupture/chagrin-damour/', label: 'Surmonter un Chagrin d\'Amour' },
+    { href: '/rupture/oublier-son-ex/', label: 'Comment Oublier son Ex' },
+    { href: '/rupture/rupture-amoureuse/', label: 'Comprendre la Rupture Amoureuse' },
+    { href: '/rupture/amour-non-partage/', label: 'Amour Non Partagé : Comprendre et Surmonter' },
   ],
 };
 
@@ -74,7 +74,7 @@ export default function DeuilAmoureuxPage() {
         <article className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-slate-600">
           <div className="bg-slate-50 border-l-4 border-slate-500 p-6 rounded-lg">
             <p className="text-lg leading-relaxed">
-              Le <strong>deuil amoureux</strong> est bien plus qu&apos;une simple tristesse passag&egrave;re : c&apos;est un v&eacute;ritable <strong>processus de deuil</strong> qui touche l&apos;&acirc;me en profondeur. Qu&apos;il s&apos;agisse d&apos;une <Link href="/rupture" className="text-slate-600 hover:text-slate-800 underline font-medium">s&eacute;paration amoureuse</Link> douloureuse, d&apos;un amour non r&eacute;ciproque, d&apos;une trahison d&eacute;vastatrice ou de la mort d&apos;un r&ecirc;ve de vie &agrave; deux, la <strong>perte amoureuse</strong> d&eacute;clenche un bouleversement int&eacute;rieur comparable &agrave; un deuil r&eacute;el. La <strong>gu&eacute;rison sentimentale</strong> exige du temps, de la patience et une compr&eacute;hension claire des &eacute;tapes &agrave; traverser. Le <strong>tarot</strong> de deuil amoureux accompagne chaque phase de cette travers&eacute;e en r&eacute;v&eacute;lant les blocages invisibles, les le&ccedil;ons karmiques et les &eacute;nergies de <strong>reconstruction</strong> qui sommeillent en vous. La <strong>voyance amoureuse</strong> offre la clart&eacute; et le r&eacute;confort n&eacute;cessaires pour transformer cette &eacute;preuve en tremplin vers une renaissance profonde. Chaque deuil port&eacute; avec conscience m&egrave;ne inexorablement vers une version plus forte, plus sage et plus ouverte &agrave; l&apos;amour v&eacute;ritable.
+              Le <strong>deuil amoureux</strong> est bien plus qu&apos;une simple tristesse passag&egrave;re : c&apos;est un v&eacute;ritable <strong>processus de deuil</strong> qui touche l&apos;&acirc;me en profondeur. Qu&apos;il s&apos;agisse d&apos;une <Link href="/rupture/" className="text-slate-600 hover:text-slate-800 underline font-medium">s&eacute;paration amoureuse</Link> douloureuse, d&apos;un amour non r&eacute;ciproque, d&apos;une trahison d&eacute;vastatrice ou de la mort d&apos;un r&ecirc;ve de vie &agrave; deux, la <strong>perte amoureuse</strong> d&eacute;clenche un bouleversement int&eacute;rieur comparable &agrave; un deuil r&eacute;el. La <strong>gu&eacute;rison sentimentale</strong> exige du temps, de la patience et une compr&eacute;hension claire des &eacute;tapes &agrave; traverser. Le <strong>tarot</strong> de deuil amoureux accompagne chaque phase de cette travers&eacute;e en r&eacute;v&eacute;lant les blocages invisibles, les le&ccedil;ons karmiques et les &eacute;nergies de <strong>reconstruction</strong> qui sommeillent en vous. La <strong>voyance amoureuse</strong> offre la clart&eacute; et le r&eacute;confort n&eacute;cessaires pour transformer cette &eacute;preuve en tremplin vers une renaissance profonde. Chaque deuil port&eacute; avec conscience m&egrave;ne inexorablement vers une version plus forte, plus sage et plus ouverte &agrave; l&apos;amour v&eacute;ritable.
             </p>
           </div>
         </article>
@@ -107,7 +107,7 @@ export default function DeuilAmoureuxPage() {
             <div className="bg-gray-100 border-l-4 border-gray-500 p-5 rounded-lg">
               <h3 className="font-bold text-lg mb-2 text-gray-700">Les Multiples Visages du Deuil Amoureux</h3>
               <p className="text-gray-700 text-sm">
-                Le <strong>deuil amoureux</strong> ne se limite pas aux ruptures amoureuses classiques. Il englobe aussi le deuil d&apos;un <Link href="/rupture/amour-non-partage" className="text-slate-600 hover:text-slate-800 underline font-medium">amour non partag&eacute;</Link>, le deuil d&apos;une relation qui n&apos;a jamais pu exister, le deuil d&apos;un id&eacute;al amoureux bris&eacute; par la trahison, et m&ecirc;me le deuil de la version id&eacute;alis&eacute;e de son partenaire. Chaque forme de perte n&eacute;cessite un parcours de <strong>gu&eacute;rison</strong> adapt&eacute; que le <strong>tarot</strong> aide &agrave; personnaliser.
+                Le <strong>deuil amoureux</strong> ne se limite pas aux ruptures amoureuses classiques. Il englobe aussi le deuil d&apos;un <Link href="/rupture/amour-non-partage/" className="text-slate-600 hover:text-slate-800 underline font-medium">amour non partag&eacute;</Link>, le deuil d&apos;une relation qui n&apos;a jamais pu exister, le deuil d&apos;un id&eacute;al amoureux bris&eacute; par la trahison, et m&ecirc;me le deuil de la version id&eacute;alis&eacute;e de son partenaire. Chaque forme de perte n&eacute;cessite un parcours de <strong>gu&eacute;rison</strong> adapt&eacute; que le <strong>tarot</strong> aide &agrave; personnaliser.
               </p>
             </div>
           </div>
@@ -157,7 +157,7 @@ export default function DeuilAmoureuxPage() {
             <div className="bg-white rounded-lg p-5 border-l-4 border-green-500">
               <h3 className="font-bold text-lg mb-2 text-green-700">Phase 5 &mdash; L&apos;Acceptation</h3>
               <p className="text-gray-700 text-sm mb-2">
-                L&apos;<strong>acceptation</strong> n&apos;est ni l&apos;oubli ni l&apos;indiff&eacute;rence. C&apos;est l&apos;int&eacute;gration paisible de cette exp&eacute;rience dans votre parcours de vie. Vous reconnaissez la valeur de ce que vous avez v&eacute;cu tout en &eacute;tant tourn&eacute;(e) vers l&apos;avenir. La <strong>renaissance</strong> commence : de nouveaux projets, une nouvelle &eacute;nergie, une ouverture renouvel&eacute;e au bonheur et la possibilit&eacute; de <Link href="/nouvelle-rencontre/trouver-ame-soeur" className="text-slate-600 hover:text-slate-800 underline font-medium">trouver l&apos;&acirc;me s&oelig;ur</Link>. Vous &ecirc;tes transform&eacute;(e), non bris&eacute;(e).
+                L&apos;<strong>acceptation</strong> n&apos;est ni l&apos;oubli ni l&apos;indiff&eacute;rence. C&apos;est l&apos;int&eacute;gration paisible de cette exp&eacute;rience dans votre parcours de vie. Vous reconnaissez la valeur de ce que vous avez v&eacute;cu tout en &eacute;tant tourn&eacute;(e) vers l&apos;avenir. La <strong>renaissance</strong> commence : de nouveaux projets, une nouvelle &eacute;nergie, une ouverture renouvel&eacute;e au bonheur et la possibilit&eacute; de <Link href="/nouvelle-rencontre/trouver-ame-soeur/" className="text-slate-600 hover:text-slate-800 underline font-medium">trouver l&apos;&acirc;me s&oelig;ur</Link>. Vous &ecirc;tes transform&eacute;(e), non bris&eacute;(e).
               </p>
               <p className="text-gray-600 text-xs italic">Carte du tarot associ&eacute;e : L&apos;&Eacute;toile &mdash; espoir renouvel&eacute;, gu&eacute;rison, renaissance spirituelle.</p>
             </div>
@@ -169,7 +169,7 @@ export default function DeuilAmoureuxPage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">&#x2696; Deuil Amoureux vs Rupture Classique</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le deuil amoureux se distingue d&apos;une rupture classique par sa profondeur : il survient apr&egrave;s des relations longues, des trahisons, quand on aime encore ou quand un r&ecirc;ve de vie commune s&apos;effondre. La souffrance touche l&apos;identit&eacute; m&ecirc;me.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Toute <strong>rupture amoureuse</strong> engendre de la souffrance, mais le <strong>deuil amoureux</strong> va au-del&agrave; de la tristesse habituelle d&apos;une s&eacute;paration. Certaines circonstances transforment une <Link href="/rupture/rupture-amoureuse" className="text-slate-600 hover:text-slate-800 underline font-medium">rupture</Link> en v&eacute;ritable deuil &eacute;motionnel qui n&eacute;cessite un accompagnement sp&eacute;cifique. Reconna&icirc;tre cette diff&eacute;rence est essentiel pour choisir le bon parcours de <strong>gu&eacute;rison</strong>.
+            Toute <strong>rupture amoureuse</strong> engendre de la souffrance, mais le <strong>deuil amoureux</strong> va au-del&agrave; de la tristesse habituelle d&apos;une s&eacute;paration. Certaines circonstances transforment une <Link href="/rupture/rupture-amoureuse/" className="text-slate-600 hover:text-slate-800 underline font-medium">rupture</Link> en v&eacute;ritable deuil &eacute;motionnel qui n&eacute;cessite un accompagnement sp&eacute;cifique. Reconna&icirc;tre cette diff&eacute;rence est essentiel pour choisir le bon parcours de <strong>gu&eacute;rison</strong>.
           </p>
 
           <div className="space-y-5">
@@ -190,7 +190,7 @@ export default function DeuilAmoureuxPage() {
             <div className="bg-gray-100 border-l-4 border-gray-500 p-5 rounded-lg">
               <h3 className="font-bold text-lg mb-2 text-gray-700">Aimer Encore celui/celle qui Part</h3>
               <p className="text-gray-700 text-sm">
-                Le <strong>deuil amoureux</strong> le plus douloureux survient lorsque vous aimez encore profond&eacute;ment la personne qui vous quitte. Contrairement &agrave; une rupture mutuelle ou souhait&eacute;e, cette situation vous laisse avec un <strong>amour intact</strong> qui n&apos;a plus d&apos;objet. L&apos;attachement persiste alors que le lien est bris&eacute;, cr&eacute;ant une dissonance &eacute;motionnelle &eacute;puisante. Le <strong>tarot</strong> aide &agrave; comprendre si cet amour r&eacute;siduel est un lien v&eacute;ritable ou une <Link href="/crise-couple/dependance-affective" className="text-slate-600 hover:text-slate-800 underline font-medium">d&eacute;pendance affective</Link> qu&apos;il faut d&eacute;nouer.
+                Le <strong>deuil amoureux</strong> le plus douloureux survient lorsque vous aimez encore profond&eacute;ment la personne qui vous quitte. Contrairement &agrave; une rupture mutuelle ou souhait&eacute;e, cette situation vous laisse avec un <strong>amour intact</strong> qui n&apos;a plus d&apos;objet. L&apos;attachement persiste alors que le lien est bris&eacute;, cr&eacute;ant une dissonance &eacute;motionnelle &eacute;puisante. Le <strong>tarot</strong> aide &agrave; comprendre si cet amour r&eacute;siduel est un lien v&eacute;ritable ou une <Link href="/crise-couple/dependance-affective/" className="text-slate-600 hover:text-slate-800 underline font-medium">d&eacute;pendance affective</Link> qu&apos;il faut d&eacute;nouer.
               </p>
             </div>
 
@@ -235,7 +235,7 @@ export default function DeuilAmoureuxPage() {
             <div className="bg-white rounded-lg p-5 border-l-4 border-gray-500">
               <h3 className="font-bold text-lg mb-2 text-gray-700">Guidance &agrave; Chaque Phase du Deuil</h3>
               <p className="text-gray-700 text-sm">
-                Le <strong>tarot</strong> adapte sa guidance &agrave; la phase que vous traversez. En phase de d&eacute;ni, il r&eacute;v&egrave;le la r&eacute;alit&eacute; avec douceur. En phase de col&egrave;re, il canalise l&apos;&eacute;nergie destructrice vers la transformation. En phase de marchandage, il &eacute;claire ce qui est r&eacute;ellement possible. En phase de d&eacute;pression, il r&eacute;v&egrave;le la lumi&egrave;re qui attend au bout du tunnel. Et en phase d&apos;acceptation, il ouvre les portes de la <strong>renaissance sentimentale</strong>. Pour un accompagnement plus large de votre <strong>gu&eacute;rison</strong>, d&eacute;couvrez aussi notre guidance compl&egrave;te sur <Link href="/rupture/guerir-rupture" className="text-slate-600 hover:text-slate-800 underline font-medium">gu&eacute;rir d&apos;une rupture</Link>.
+                Le <strong>tarot</strong> adapte sa guidance &agrave; la phase que vous traversez. En phase de d&eacute;ni, il r&eacute;v&egrave;le la r&eacute;alit&eacute; avec douceur. En phase de col&egrave;re, il canalise l&apos;&eacute;nergie destructrice vers la transformation. En phase de marchandage, il &eacute;claire ce qui est r&eacute;ellement possible. En phase de d&eacute;pression, il r&eacute;v&egrave;le la lumi&egrave;re qui attend au bout du tunnel. Et en phase d&apos;acceptation, il ouvre les portes de la <strong>renaissance sentimentale</strong>. Pour un accompagnement plus large de votre <strong>gu&eacute;rison</strong>, d&eacute;couvrez aussi notre guidance compl&egrave;te sur <Link href="/rupture/guerir-rupture/" className="text-slate-600 hover:text-slate-800 underline font-medium">gu&eacute;rir d&apos;une rupture</Link>.
               </p>
             </div>
           </div>
@@ -271,7 +271,7 @@ export default function DeuilAmoureuxPage() {
             <div className="bg-green-50 border-l-4 border-green-500 p-5 rounded-lg">
               <h3 className="font-bold text-lg mb-2 text-green-700">Voyance et Th&eacute;rapie : une Compl&eacute;mentarit&eacute;</h3>
               <p className="text-gray-700 text-sm">
-                La <strong>voyance amoureuse</strong> et la th&eacute;rapie professionnelle ne s&apos;opposent pas : elles se compl&egrave;tent remarquablement. La th&eacute;rapie traite les m&eacute;canismes psychologiques (sch&eacute;mas d&apos;attachement, blessures d&apos;enfance, estime de soi). Le <strong>tarot</strong> &eacute;claire la dimension spirituelle (le&ccedil;ons karmiques, &eacute;nergies de l&apos;avenir, timing de la <strong>renaissance</strong>). Ensemble, ces deux approches offrent un accompagnement holistique du <strong>deuil amoureux</strong> qui acc&eacute;l&egrave;re la <strong>gu&eacute;rison</strong> et la rend plus profonde. Pour mieux comprendre le <Link href="/rupture/chagrin-damour" className="text-slate-600 hover:text-slate-800 underline font-medium">chagrin d&apos;amour</Link> et ses m&eacute;canismes, notre guide d&eacute;di&eacute; compl&egrave;te cet accompagnement.
+                La <strong>voyance amoureuse</strong> et la th&eacute;rapie professionnelle ne s&apos;opposent pas : elles se compl&egrave;tent remarquablement. La th&eacute;rapie traite les m&eacute;canismes psychologiques (sch&eacute;mas d&apos;attachement, blessures d&apos;enfance, estime de soi). Le <strong>tarot</strong> &eacute;claire la dimension spirituelle (le&ccedil;ons karmiques, &eacute;nergies de l&apos;avenir, timing de la <strong>renaissance</strong>). Ensemble, ces deux approches offrent un accompagnement holistique du <strong>deuil amoureux</strong> qui acc&eacute;l&egrave;re la <strong>gu&eacute;rison</strong> et la rend plus profonde. Pour mieux comprendre le <Link href="/rupture/chagrin-damour/" className="text-slate-600 hover:text-slate-800 underline font-medium">chagrin d&apos;amour</Link> et ses m&eacute;canismes, notre guide d&eacute;di&eacute; compl&egrave;te cet accompagnement.
               </p>
             </div>
           </div>

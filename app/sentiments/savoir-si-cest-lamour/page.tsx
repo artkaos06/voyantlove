@@ -20,7 +20,7 @@ const config: ContentPageConfig = {
     h1: 'Comment Savoir si C\'est le Vrai Amour',
     subtitle: 'Les signes qui ne trompent pas, éclairés par la voyance et le tarot',
     gradient: 'from-pink-500 via-pink-600 to-rose-600',
-    backLink: { href: '/sentiments', label: 'Sentiments' },
+    backLink: { href: '/sentiments/', label: 'Sentiments' },
     anchors: [
       { href: '#consultation', label: 'Consultation Sentiments', primary: true },
     ],
@@ -53,9 +53,9 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/sentiments/maime-t-il-elle', label: 'M\'aime-t-il / M\'aime-t-elle Encore ?' },
-    { href: '/sentiments/compatibilite-amoureuse', label: 'Compatibilité Amoureuse' },
-    { href: '/sentiments/signes-il-elle-maime', label: 'Les Signes qu\'Il/Elle M\'Aime' },
+    { href: '/sentiments/maime-t-il-elle/', label: 'M\'aime-t-il / M\'aime-t-elle Encore ?' },
+    { href: '/sentiments/compatibilite-amoureuse/', label: 'Compatibilité Amoureuse' },
+    { href: '/sentiments/signes-il-elle-maime/', label: 'Les Signes qu\'Il/Elle M\'Aime' },
   ],
 };
 
@@ -93,7 +93,7 @@ export default function SavoirSiCestLamourPage() {
             </div>
             <div className="bg-rose-50 border-l-4 border-rose-500 p-6 rounded-lg">
               <h3 className="font-bold text-lg mb-2 text-rose-700">2. La Liberté d&apos;Être Soi-Même</h3>
-              <p className="text-gray-700">Dans un <strong>amour véritable</strong>, vous n&apos;avez pas besoin de porter un masque. Vous pouvez montrer vos vulnérabilités sans crainte du jugement. La <strong>voyance amoureuse</strong> révèle souvent que les couples les plus solides sont ceux où chaque partenaire se sent libre d&apos;être authentique. L&apos;arcane de la Tempérance symbolise cet équilibre parfait entre deux êtres qui se complètent sans se contraindre. C&apos;est l&apos;inverse de la <Link href="/sentiments/relation-toxique" className="text-pink-600 hover:text-pink-800 underline font-medium">relation toxique</Link> où l&apos;on s&apos;efface pour plaire.</p>
+              <p className="text-gray-700">Dans un <strong>amour véritable</strong>, vous n&apos;avez pas besoin de porter un masque. Vous pouvez montrer vos vulnérabilités sans crainte du jugement. La <strong>voyance amoureuse</strong> révèle souvent que les couples les plus solides sont ceux où chaque partenaire se sent libre d&apos;être authentique. L&apos;arcane de la Tempérance symbolise cet équilibre parfait entre deux êtres qui se complètent sans se contraindre. C&apos;est l&apos;inverse de la <Link href="/sentiments/relation-toxique/" className="text-pink-600 hover:text-pink-800 underline font-medium">relation toxique</Link> où l&apos;on s&apos;efface pour plaire.</p>
             </div>
             <div className="bg-pink-50 border-l-4 border-pink-500 p-6 rounded-lg">
               <h3 className="font-bold text-lg mb-2 text-pink-700">3. L&apos;Envie de Grandir Ensemble</h3>
@@ -101,7 +101,7 @@ export default function SavoirSiCestLamourPage() {
             </div>
             <div className="bg-rose-50 border-l-4 border-rose-500 p-6 rounded-lg">
               <h3 className="font-bold text-lg mb-2 text-rose-700">4. La Résonance Énergétique</h3>
-              <p className="text-gray-700">En <strong>voyance</strong>, on perçoit une vibration particulière entre deux personnes unies par un <strong>amour authentique</strong>. Cette <strong>connexion karmique</strong> se manifeste par des synchronicités, une compréhension intuitive mutuelle, et un sentiment de reconnaissance profonde &mdash; comme si vous vous étiez toujours connus. Le <strong>tarot</strong> capte cette résonance à travers la carte des Amoureux, qui ne parle pas seulement d&apos;attirance mais d&apos;une union sacrée entre deux âmes. Consultez notre guide sur la <Link href="/sentiments/compatibilite-amoureuse" className="text-pink-600 hover:text-pink-800 underline font-medium">compatibilité amoureuse</Link> pour approfondir ce sujet.</p>
+              <p className="text-gray-700">En <strong>voyance</strong>, on perçoit une vibration particulière entre deux personnes unies par un <strong>amour authentique</strong>. Cette <strong>connexion karmique</strong> se manifeste par des synchronicités, une compréhension intuitive mutuelle, et un sentiment de reconnaissance profonde &mdash; comme si vous vous étiez toujours connus. Le <strong>tarot</strong> capte cette résonance à travers la carte des Amoureux, qui ne parle pas seulement d&apos;attirance mais d&apos;une union sacrée entre deux âmes. Consultez notre guide sur la <Link href="/sentiments/compatibilite-amoureuse/" className="text-pink-600 hover:text-pink-800 underline font-medium">compatibilité amoureuse</Link> pour approfondir ce sujet.</p>
             </div>
           </div>
         </section>
@@ -127,7 +127,7 @@ export default function SavoirSiCestLamourPage() {
             </div>
             <div className="bg-white rounded-lg p-5 border-l-4 border-rose-500">
               <h3 className="font-bold mb-2 text-rose-700">L&apos;Étoile : Espoir et Renouveau</h3>
-              <p className="text-gray-700">L&apos;Étoile signale un <strong>amour</strong> porteur d&apos;espoir, souvent après une période difficile. Si vous sortez d&apos;une <Link href="/rupture/chagrin-damour" className="text-pink-600 hover:text-pink-800 underline font-medium">peine de coeur</Link>, cette carte indique que ce nouvel <strong>amour</strong> est une chance de renouveau authentique. Elle symbolise la guérison émotionnelle et l&apos;ouverture du coeur à une connexion plus profonde et plus mature que les précédentes.</p>
+              <p className="text-gray-700">L&apos;Étoile signale un <strong>amour</strong> porteur d&apos;espoir, souvent après une période difficile. Si vous sortez d&apos;une <Link href="/rupture/chagrin-damour/" className="text-pink-600 hover:text-pink-800 underline font-medium">peine de coeur</Link>, cette carte indique que ce nouvel <strong>amour</strong> est une chance de renouveau authentique. Elle symbolise la guérison émotionnelle et l&apos;ouverture du coeur à une connexion plus profonde et plus mature que les précédentes.</p>
             </div>
           </div>
         </section>
@@ -165,7 +165,7 @@ export default function SavoirSiCestLamourPage() {
             </div>
           </div>
           <p className="text-gray-700 leading-relaxed">
-            Si vous reconnaissez des signes de <strong>dépendance affective</strong>, la <strong>voyance</strong> peut vous aider à comprendre l&apos;origine de ces schémas et à vous en libérer. Consultez notre article dédié sur la <Link href="/crise-couple/dependance-affective" className="text-pink-600 hover:text-pink-800 underline font-medium">dépendance affective en couple</Link> pour aller plus loin dans cette compréhension.
+            Si vous reconnaissez des signes de <strong>dépendance affective</strong>, la <strong>voyance</strong> peut vous aider à comprendre l&apos;origine de ces schémas et à vous en libérer. Consultez notre article dédié sur la <Link href="/crise-couple/dependance-affective/" className="text-pink-600 hover:text-pink-800 underline font-medium">dépendance affective en couple</Link> pour aller plus loin dans cette compréhension.
           </p>
         </section>
 
@@ -191,7 +191,7 @@ export default function SavoirSiCestLamourPage() {
               <div className="text-3xl font-bold text-pink-600">3</div>
               <div>
                 <h3 className="font-bold text-lg mb-2">L&apos;Analyse de Compatibilité Profonde</h3>
-                <p className="text-gray-700">La <Link href="/sentiments/compatibilite-amoureuse" className="text-pink-600 hover:text-pink-800 underline font-medium">compatibilité amoureuse</Link> va bien au-delà des signes du zodiaque. Une <strong>synastrie</strong> complète analyse les interactions entre vos deux thèmes natals pour révéler si votre connexion a des fondations solides. Les aspects entre vos Lunes respectives indiquent la <strong>compatibilité émotionnelle</strong>, tandis que Vénus et Mars révèlent l&apos;alchimie physique et le désir mutuel.</p>
+                <p className="text-gray-700">La <Link href="/sentiments/compatibilite-amoureuse/" className="text-pink-600 hover:text-pink-800 underline font-medium">compatibilité amoureuse</Link> va bien au-delà des signes du zodiaque. Une <strong>synastrie</strong> complète analyse les interactions entre vos deux thèmes natals pour révéler si votre connexion a des fondations solides. Les aspects entre vos Lunes respectives indiquent la <strong>compatibilité émotionnelle</strong>, tandis que Vénus et Mars révèlent l&apos;alchimie physique et le désir mutuel.</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
@@ -205,7 +205,7 @@ export default function SavoirSiCestLamourPage() {
               <div className="text-3xl font-bold text-pink-600">5</div>
               <div>
                 <h3 className="font-bold text-lg mb-2">La Projection dans l&apos;Avenir</h3>
-                <p className="text-gray-700">Pouvez-vous imaginer votre vie avec cette personne dans cinq, dix, vingt ans ? Non pas dans un fantasme idéalisé, mais dans la réalité du quotidien, avec ses hauts et ses bas ? Le <strong>tarot</strong> explore cette dimension temporelle en révélant les potentiels à long terme de votre relation. Un <strong>voyant</strong> peut percevoir les défis futurs et les ressources dont vous disposez ensemble pour les traverser. Découvrez aussi notre guide sur l&apos;<Link href="/sentiments/avenir-amoureux" className="text-pink-600 hover:text-pink-800 underline font-medium">avenir amoureux</Link> pour explorer votre destinée sentimentale.</p>
+                <p className="text-gray-700">Pouvez-vous imaginer votre vie avec cette personne dans cinq, dix, vingt ans ? Non pas dans un fantasme idéalisé, mais dans la réalité du quotidien, avec ses hauts et ses bas ? Le <strong>tarot</strong> explore cette dimension temporelle en révélant les potentiels à long terme de votre relation. Un <strong>voyant</strong> peut percevoir les défis futurs et les ressources dont vous disposez ensemble pour les traverser. Découvrez aussi notre guide sur l&apos;<Link href="/sentiments/avenir-amoureux/" className="text-pink-600 hover:text-pink-800 underline font-medium">avenir amoureux</Link> pour explorer votre destinée sentimentale.</p>
               </div>
             </div>
           </div>
@@ -221,7 +221,7 @@ export default function SavoirSiCestLamourPage() {
             Un <strong>voyant</strong> perçoit ces blessures anciennes qui interfèrent avec vos émotions actuelles. Le <strong>tarot</strong> peut révéler des <strong>schémas inconscients</strong> hérités de l&apos;enfance ou de relations passées : peur de l&apos;abandon, peur de l&apos;engagement, tendance à fuir le bonheur par auto-sabotage. Comprendre ces mécanismes est la première étape pour s&apos;en libérer et accueillir enfin le <strong>vrai amour</strong>.
           </p>
           <p className="text-gray-700 leading-relaxed">
-            Si la question &laquo; <Link href="/sentiments/maime-t-il-elle" className="text-pink-600 hover:text-pink-800 underline font-medium">m&apos;aime-t-il ou m&apos;aime-t-elle</Link> &raquo; vous hante, c&apos;est peut-être parce que vous n&apos;osez pas encore croire que vous méritez d&apos;être aimé(e) pleinement. La <strong>voyance amoureuse</strong> vous aide à lever ce voile et à accueillir les <strong>sentiments</strong> que la vie vous offre. Chaque consultation est une invitation à regarder plus loin que la surface, vers la vérité lumineuse de votre coeur.
+            Si la question &laquo; <Link href="/sentiments/maime-t-il-elle/" className="text-pink-600 hover:text-pink-800 underline font-medium">m&apos;aime-t-il ou m&apos;aime-t-elle</Link> &raquo; vous hante, c&apos;est peut-être parce que vous n&apos;osez pas encore croire que vous méritez d&apos;être aimé(e) pleinement. La <strong>voyance amoureuse</strong> vous aide à lever ce voile et à accueillir les <strong>sentiments</strong> que la vie vous offre. Chaque consultation est une invitation à regarder plus loin que la surface, vers la vérité lumineuse de votre coeur.
           </p>
         </section>
 

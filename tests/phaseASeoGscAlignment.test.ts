@@ -43,7 +43,7 @@ test('voyance-gratuite-amour: primary page targets the voyance amour / voyance a
   // "voyance amoureuse" anchor — that link is the query-routing signal that
   // keeps this page from cannibalizing the pillar page's intent.
   assert.match(source, /voyance gratuite amour<\/strong>/i, 'opening paragraph must lead with the exact primary phrase');
-  assert.match(source, /href="\/voyance-amour"[^>]*>voyance amoureuse<\/Link>/, 'must keep the differentiating internal link to the voyance-amour pillar page');
+  assert.match(source, /href="\/voyance-amour\/"[^>]*>voyance amoureuse<\/Link>/, 'must keep the differentiating internal link to the voyance-amour pillar page');
 
   // Commercial plumbing this task must not touch.
   assert.match(source, /tel:0175754582/, 'phone CTA number must be preserved');
@@ -107,6 +107,6 @@ test('voyance-gratuite-amour subpages with low-confidence evidence keep coherent
     'app/voyance-gratuite-amour/tarot-oui-non-amour/page.tsx',
   ]) {
     const source = read(relPath);
-    assert.match(source, /href="\/voyance-gratuite-amour"/, `${relPath} must link back to the hub`);
+    assert.match(source, /href="\/voyance-gratuite-amour\/"/, `${relPath} must link back to the hub`);
   }
 });

@@ -20,7 +20,7 @@ const config: ContentPageConfig = {
     h1: 'Mon Ex Refait sa Vie : Comment le Vivre et Avancer',
     subtitle: 'Ce que cela prouve (ou pas), pourquoi ça fait mal, et comment retrouver votre équilibre',
     gradient: 'from-teal-600 via-cyan-600 to-blue-600',
-    backLink: { href: '/rupture', label: 'Retour à Rupture & Guérison' },
+    backLink: { href: '/rupture/', label: 'Retour à Rupture & Guérison' },
     anchors: [
       { href: '#prouve', label: 'Ce que Ça Prouve (ou Pas)', primary: true },
       { href: '#accepter', label: 'Comment Accepter' },
@@ -58,11 +58,11 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/rupture', label: 'Rupture & Guérison : Toutes nos Guidances' },
-    { href: '/rupture/guerir-rupture', label: 'Guérir d\'une Rupture Amoureuse' },
-    { href: '/reconquete/quitte-pour-quelquun-dautre-va-t-il-revenir', label: 'Quitté pour Quelqu\'un d\'Autre : Va-t-il Revenir ?' },
-    { href: '/rupture/signes-reseaux-sociaux-apres-rupture', label: 'Réseaux Sociaux Après une Rupture' },
-    { href: '/rupture/confiance-en-soi-apres-divorce', label: 'Retrouver Confiance en Soi Après un Divorce' },
+    { href: '/rupture/', label: 'Rupture & Guérison : Toutes nos Guidances' },
+    { href: '/rupture/guerir-rupture/', label: 'Guérir d\'une Rupture Amoureuse' },
+    { href: '/reconquete/quitte-pour-quelquun-dautre-va-t-il-revenir/', label: 'Quitté pour Quelqu\'un d\'Autre : Va-t-il Revenir ?' },
+    { href: '/rupture/signes-reseaux-sociaux-apres-rupture/', label: 'Réseaux Sociaux Après une Rupture' },
+    { href: '/rupture/confiance-en-soi-apres-divorce/', label: 'Retrouver Confiance en Soi Après un Divorce' },
   ],
 };
 
@@ -77,10 +77,10 @@ export default function ExRefaitSaViePage() {
               Apprendre que son <strong>ex refait sa vie</strong>, nouvelle relation, publications complices, impression qu&apos;il ou elle est &laquo;passé à autre chose&raquo;, ravive souvent une douleur qu&apos;on croyait apaisée. La première chose à savoir : voir son ex avec quelqu&apos;un ne <strong>prouve pas</strong>, à soi seul, que toute page est définitivement tournée, mais ne prouve pas l&apos;inverse non plus. Certaines nouvelles relations durent, d&apos;autres s&apos;éteignent, et personne ne peut prédire l&apos;issue.
             </p>
             <p className="text-lg leading-relaxed mb-4">
-              Si c&apos;est aussi douloureux, c&apos;est que cela touche à la <strong>comparaison</strong>, au sentiment d&apos;avoir été <strong>remplacé</strong> et à l&apos;impression que l&apos;autre avance plus vite. Ces réactions sont normales et ne mesurent pas votre valeur. On surestime d&apos;ailleurs souvent le bonheur affiché : les débuts d&apos;une relation et les <strong>réseaux sociaux</strong> ne montrent qu&apos;une image partielle. Cette distinction est détaillée dans notre guide sur les <Link href="/rupture/signes-reseaux-sociaux-apres-rupture" className="text-teal-600 hover:text-teal-800 underline font-medium">signes des réseaux sociaux après une rupture</Link>.
+              Si c&apos;est aussi douloureux, c&apos;est que cela touche à la <strong>comparaison</strong>, au sentiment d&apos;avoir été <strong>remplacé</strong> et à l&apos;impression que l&apos;autre avance plus vite. Ces réactions sont normales et ne mesurent pas votre valeur. On surestime d&apos;ailleurs souvent le bonheur affiché : les débuts d&apos;une relation et les <strong>réseaux sociaux</strong> ne montrent qu&apos;une image partielle. Cette distinction est détaillée dans notre guide sur les <Link href="/rupture/signes-reseaux-sociaux-apres-rupture/" className="text-teal-600 hover:text-teal-800 underline font-medium">signes des réseaux sociaux après une rupture</Link>.
             </p>
             <p className="text-lg leading-relaxed">
-              Cette page ne cherche pas à deviner l&apos;avenir de leur couple, mais à vous aider à <strong>cesser de suspendre le vôtre</strong> à cette hypothèse. À la différence d&apos;une séparation où l&apos;on a été <Link href="/reconquete/quitte-pour-quelquun-dautre-va-t-il-revenir" className="text-teal-600 hover:text-teal-800 underline font-medium">quitté pour quelqu&apos;un d&apos;autre</Link>, il s&apos;agit ici d&apos;un ex qui avance <em>après</em> la rupture. Une <strong>consultation de voyance</strong> peut éclairer votre ressenti et votre reconstruction, sans jamais prédire ni provoquer quoi que ce soit.
+              Cette page ne cherche pas à deviner l&apos;avenir de leur couple, mais à vous aider à <strong>cesser de suspendre le vôtre</strong> à cette hypothèse. À la différence d&apos;une séparation où l&apos;on a été <Link href="/reconquete/quitte-pour-quelquun-dautre-va-t-il-revenir/" className="text-teal-600 hover:text-teal-800 underline font-medium">quitté pour quelqu&apos;un d&apos;autre</Link>, il s&apos;agit ici d&apos;un ex qui avance <em>après</em> la rupture. Une <strong>consultation de voyance</strong> peut éclairer votre ressenti et votre reconstruction, sans jamais prédire ni provoquer quoi que ce soit.
             </p>
           </div>
         </article>
@@ -161,11 +161,11 @@ export default function ExRefaitSaViePage() {
             </div>
             <div className="bg-white rounded-lg p-6 border-l-4 border-blue-500">
               <h3 className="font-bold text-lg mb-2 text-blue-700">{'\u{1F327}️'} Autoriser la tristesse</h3>
-              <p className="text-gray-700 text-sm">Refouler la peine la prolonge. La laisser exister, par vagues, sans qu&apos;elle envahisse tout, fait partie du <Link href="/rupture/guerir-rupture" className="text-blue-600 hover:text-blue-800 underline font-medium">chemin de guérison</Link>.</p>
+              <p className="text-gray-700 text-sm">Refouler la peine la prolonge. La laisser exister, par vagues, sans qu&apos;elle envahisse tout, fait partie du <Link href="/rupture/guerir-rupture/" className="text-blue-600 hover:text-blue-800 underline font-medium">chemin de guérison</Link>.</p>
             </div>
             <div className="bg-white rounded-lg p-6 border-l-4 border-teal-500">
               <h3 className="font-bold text-lg mb-2 text-teal-700">{'\u{1F31F}'} Se tourner vers l&apos;avenir</h3>
-              <p className="text-gray-700 text-sm">Le jour où l&apos;idée d&apos;une <Link href="/nouvelle-rencontre/nouvelle-relation-amoureuse" className="text-teal-600 hover:text-teal-800 underline font-medium">nouvelle relation</Link> suscite de la curiosité plutôt que de la peur, vous saurez que vous avancez vraiment.</p>
+              <p className="text-gray-700 text-sm">Le jour où l&apos;idée d&apos;une <Link href="/nouvelle-rencontre/nouvelle-relation-amoureuse/" className="text-teal-600 hover:text-teal-800 underline font-medium">nouvelle relation</Link> suscite de la curiosité plutôt que de la peur, vous saurez que vous avancez vraiment.</p>
             </div>
           </div>
           <div className="mt-6 bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded">

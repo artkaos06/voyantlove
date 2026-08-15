@@ -20,7 +20,7 @@ const config: ContentPageConfig = {
     h1: 'Cartomancie Amour',
     subtitle: 'L\'art ancestral des cartes au service de votre vie sentimentale',
     gradient: 'from-teal-600 via-cyan-600 to-blue-700',
-    backLink: { href: '/methodes-voyance', label: 'Retour aux Méthodes de Voyance' },
+    backLink: { href: '/methodes-voyance/', label: 'Retour aux Méthodes de Voyance' },
     anchors: [
       { href: '#lenormand', label: 'Le Petit Lenormand', primary: true },
       { href: '#consultation', label: 'Consulter un Cartomancien' },
@@ -54,12 +54,12 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/methodes-voyance', label: 'Toutes les Méthodes de Voyance Amoureuse' },
-    { href: '/methodes-voyance/tirage-tarot-amour', label: 'Tirage Tarot Amour : Guide Complet' },
-    { href: '/methodes-voyance/tarologie-amoureuse', label: 'Tarologie Amoureuse' },
-    { href: '/methodes-voyance/oracle-amour', label: 'Oracle de l\'Amour' },
-    { href: '/glossaire/petit-lenormand', label: 'Glossaire : Petit Lenormand' },
-    { href: '/glossaire/carte-inversee', label: 'Glossaire : Carte Inversée' },
+    { href: '/methodes-voyance/', label: 'Toutes les Méthodes de Voyance Amoureuse' },
+    { href: '/methodes-voyance/tirage-tarot-amour/', label: 'Tirage Tarot Amour : Guide Complet' },
+    { href: '/methodes-voyance/tarologie-amoureuse/', label: 'Tarologie Amoureuse' },
+    { href: '/methodes-voyance/oracle-amour/', label: 'Oracle de l\'Amour' },
+    { href: '/glossaire/petit-lenormand/', label: 'Glossaire : Petit Lenormand' },
+    { href: '/glossaire/carte-inversee/', label: 'Glossaire : Carte Inversée' },
   ],
 };
 
@@ -70,7 +70,7 @@ export default function CartomancieAmourPage() {
     <ContentPage config={config}>
         <article className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-teal-600">
           <p className="text-lg leading-relaxed mb-4">
-            La <strong>cartomancie amour</strong> est l&apos;art ancestral de lire les cartes pour éclairer votre vie sentimentale, non pas avec les 78 arcanes du <Link href="/methodes-voyance/tirage-tarot-amour" className="text-teal-700 hover:text-teal-900 underline font-medium">tarot</Link>, mais avec des jeux plus anciens et plus directs : le <strong>Petit Lenormand</strong>, ses 36 cartes aux symboles concrets, ou le traditionnel <strong>jeu de 32 cartes</strong> utilisé par les cartomanciennes depuis des générations. Là où le tarot déploie une symbolique riche à interpréter carte par carte, la cartomancie fonctionne par <strong>combinaison</strong> : deux ou trois cartes assemblées forment une phrase, une réponse nette à votre question de cœur.
+            La <strong>cartomancie amour</strong> est l&apos;art ancestral de lire les cartes pour éclairer votre vie sentimentale, non pas avec les 78 arcanes du <Link href="/methodes-voyance/tirage-tarot-amour/" className="text-teal-700 hover:text-teal-900 underline font-medium">tarot</Link>, mais avec des jeux plus anciens et plus directs : le <strong>Petit Lenormand</strong>, ses 36 cartes aux symboles concrets, ou le traditionnel <strong>jeu de 32 cartes</strong> utilisé par les cartomanciennes depuis des générations. Là où le tarot déploie une symbolique riche à interpréter carte par carte, la cartomancie fonctionne par <strong>combinaison</strong> : deux ou trois cartes assemblées forment une phrase, une réponse nette à votre question de cœur.
           </p>
           <p className="text-lg leading-relaxed">
             Cette guidance complète vous explique l&apos;histoire de la cartomancie, le fonctionnement du Petit Lenormand et du jeu de 32 cartes, la symbolique des couleurs, comment se déroule une consultation, et comment choisir un cartomancien de confiance pour vos questions amoureuses.
@@ -197,7 +197,7 @@ export default function CartomancieAmourPage() {
                 <p>&bull; <strong>Limite :</strong> lecture plus longue à interpréter</p>
               </div>
               <p className="text-sm text-indigo-600 mt-3">
-                <Link href="/methodes-voyance/tarologie-amoureuse" className="underline hover:text-indigo-800 font-medium">Découvrir la tarologie amoureuse &rarr;</Link>
+                <Link href="/methodes-voyance/tarologie-amoureuse/" className="underline hover:text-indigo-800 font-medium">Découvrir la tarologie amoureuse &rarr;</Link>
               </p>
             </div>
             <div className="bg-white rounded-lg p-5 border-2 border-purple-300">
@@ -208,12 +208,12 @@ export default function CartomancieAmourPage() {
                 <p>&bull; <strong>Limite :</strong> moins systématique</p>
               </div>
               <p className="text-sm text-purple-600 mt-3">
-                <Link href="/methodes-voyance/oracle-amour" className="underline hover:text-purple-800 font-medium">Découvrir l&apos;oracle amour &rarr;</Link>
+                <Link href="/methodes-voyance/oracle-amour/" className="underline hover:text-purple-800 font-medium">Découvrir l&apos;oracle amour &rarr;</Link>
               </p>
             </div>
           </div>
           <div className="bg-white border-l-4 border-teal-500 p-5 rounded-lg mt-6">
-            <p className="text-gray-700"><strong>Le conseil VoyantLove :</strong> pour une question fermée et précise (« Va-t-il revenir ? », « Est-ce le bon ? »), la <strong>cartomancie</strong> apporte souvent la réponse la plus nette. Pour comprendre les rouages émotionnels d&apos;une relation, le <strong>tarot</strong> ou la <Link href="/methodes-voyance/voyance-sentimentale" className="text-teal-700 hover:text-teal-900 underline font-medium">voyance sentimentale</Link> complète offrent une lecture plus approfondie.</p>
+            <p className="text-gray-700"><strong>Le conseil VoyantLove :</strong> pour une question fermée et précise (« Va-t-il revenir ? », « Est-ce le bon ? »), la <strong>cartomancie</strong> apporte souvent la réponse la plus nette. Pour comprendre les rouages émotionnels d&apos;une relation, le <strong>tarot</strong> ou la <Link href="/methodes-voyance/voyance-sentimentale/" className="text-teal-700 hover:text-teal-900 underline font-medium">voyance sentimentale</Link> complète offrent une lecture plus approfondie.</p>
           </div>
         </section>
 
@@ -239,7 +239,7 @@ export default function CartomancieAmourPage() {
             </div>
           </div>
           <div className="text-center mt-6">
-            <Link href="/consulter?ref=cartomancie-amour" className="inline-block bg-teal-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-teal-700 transition">Consulter un Cartomancien Vérifié →</Link>
+            <Link href="/consulter/?ref=cartomancie-amour" className="inline-block bg-teal-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-teal-700 transition">Consulter un Cartomancien Vérifié →</Link>
           </div>
         </section>
     </ContentPage>

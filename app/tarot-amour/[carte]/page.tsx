@@ -72,7 +72,7 @@ export default async function CardPage({ params }: Props) {
 
       <header className="bg-gradient-to-r from-purple-800 via-indigo-800 to-violet-900 text-white py-16 px-4">
         <div className="max-w-4xl mx-auto">
-          <Link href="/tarot-amour" className="text-white/80 hover:text-white mb-4 inline-block">&larr; Toutes les cartes du tarot amour</Link>
+          <Link href="/tarot-amour/" className="text-white/80 hover:text-white mb-4 inline-block">&larr; Toutes les cartes du tarot amour</Link>
           <h1 className="text-4xl md:text-5xl font-bold mb-3">{c.emoji} {c.name} en Amour</h1>
           <p className="text-lg opacity-90 mb-4">{c.arcane} du Tarot de Marseille</p>
           <span className={`inline-block text-sm font-bold uppercase tracking-wide px-4 py-1.5 rounded-full border ${OUINON_STYLE[c.ouiNon]}`}>
@@ -131,7 +131,7 @@ export default async function CardPage({ params }: Props) {
 
         <section className="bg-white rounded-xl shadow-md p-6 mb-8 text-center">
           <p className="text-gray-700 mb-3">Envie de tirer les cartes vous-même&nbsp;? Essayez notre tirage tarot amour gratuit et immédiat.</p>
-          <Link href="/voyance-gratuite-amour/tarot-amour-gratuit" className="inline-block bg-indigo-700 hover:bg-indigo-800 text-white font-semibold px-6 py-3 rounded-lg transition">
+          <Link href="/voyance-gratuite-amour/tarot-amour-gratuit/" className="inline-block bg-indigo-700 hover:bg-indigo-800 text-white font-semibold px-6 py-3 rounded-lg transition">
             🔮 Faire un tirage gratuit
           </Link>
         </section>
@@ -153,11 +153,11 @@ export default async function CardPage({ params }: Props) {
             <h2 className="font-bold text-lg mb-4 text-gray-900">🃏 Autres cartes du tarot amour</h2>
             <div className="space-y-2">
               {siblings.map((x) => (
-                <Link key={x.slug} href={`/tarot-amour/${x.slug}`} className="block text-indigo-600 hover:text-indigo-800 font-medium">
+                <Link key={x.slug} href={`/tarot-amour/${x.slug}/`} className="block text-indigo-600 hover:text-indigo-800 font-medium">
                   &rarr; {x.emoji} {x.name} en amour
                 </Link>
               ))}
-              <Link href="/methodes-voyance/tirage-tarot-amour" className="block text-indigo-600 hover:text-indigo-800 font-medium">
+              <Link href="/methodes-voyance/tirage-tarot-amour/" className="block text-indigo-600 hover:text-indigo-800 font-medium">
                 &rarr; Comprendre le tirage de tarot amoureux
               </Link>
             </div>

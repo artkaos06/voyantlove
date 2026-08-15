@@ -20,7 +20,7 @@ const config: ContentPageConfig = {
     h1: 'Comment Tourner la Page après une Rupture',
     subtitle: 'Lâcher prise et avancer avec la guidance de la voyance',
     gradient: 'from-gray-700 via-gray-800 to-gray-900',
-    backLink: { href: '/rupture', label: 'Rupture' },
+    backLink: { href: '/rupture/', label: 'Rupture' },
     anchors: [
       { href: '#consultation', label: 'Consultation Guidance', primary: true },
     ],
@@ -53,12 +53,12 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/rupture/rupture-amoureuse', label: 'Surmonter une Rupture Amoureuse' },
-    { href: '/rupture/oublier-son-ex', label: 'Comment Oublier son Ex' },
-    { href: '/rupture/surmonter-trahison', label: 'Surmonter une Trahison Amoureuse' },
-    { href: '/rupture/chagrin-damour', label: 'Guérir d\'un Chagrin d\'Amour' },
-    { href: '/nouvelle-rencontre/quand-rencontre-amour', label: 'Quand Vais-je Rencontrer l\'Amour ?' },
-    { href: '/sentiments/maime-t-il-elle', label: 'M\'aime-t-il / M\'aime-t-elle Encore ?' },
+    { href: '/rupture/rupture-amoureuse/', label: 'Surmonter une Rupture Amoureuse' },
+    { href: '/rupture/oublier-son-ex/', label: 'Comment Oublier son Ex' },
+    { href: '/rupture/surmonter-trahison/', label: 'Surmonter une Trahison Amoureuse' },
+    { href: '/rupture/chagrin-damour/', label: 'Guérir d\'un Chagrin d\'Amour' },
+    { href: '/nouvelle-rencontre/quand-rencontre-amour/', label: 'Quand Vais-je Rencontrer l\'Amour ?' },
+    { href: '/sentiments/maime-t-il-elle/', label: 'M\'aime-t-il / M\'aime-t-elle Encore ?' },
   ],
 };
 
@@ -98,7 +98,7 @@ export default function CommentTournerLaPagePage() {
             </div>
             <div className="bg-gray-50 border-l-4 border-gray-400 p-6 rounded-lg">
               <h3 className="font-bold text-lg mb-2 text-gray-700">L'Ouverture au Renouveau</h3>
-              <p className="text-gray-700">Une fois les liens coupés, le <strong>tarot</strong> révèle un horizon nouveau. L'<strong>As de Coupes</strong> annonce un nouveau départ affectif. Le <strong>Monde</strong> indique que ce cycle est complet et qu'un nouveau commence. Le <strong>Soleil</strong> promet une période de joie et d'<strong>épanouissement</strong> à venir. La <strong>voyance</strong> vous prépare à accueillir ce renouveau avec un cœur ouvert mais protégé, fort de vos expériences passées. Pour approfondir ce processus, découvrez notre guide sur <Link href="/rupture/oublier-son-ex" className="text-gray-600 hover:text-gray-800 underline font-medium">comment oublier son ex</Link> et avancer sereinement.</p>
+              <p className="text-gray-700">Une fois les liens coupés, le <strong>tarot</strong> révèle un horizon nouveau. L'<strong>As de Coupes</strong> annonce un nouveau départ affectif. Le <strong>Monde</strong> indique que ce cycle est complet et qu'un nouveau commence. Le <strong>Soleil</strong> promet une période de joie et d'<strong>épanouissement</strong> à venir. La <strong>voyance</strong> vous prépare à accueillir ce renouveau avec un cœur ouvert mais protégé, fort de vos expériences passées. Pour approfondir ce processus, découvrez notre guide sur <Link href="/rupture/oublier-son-ex/" className="text-gray-600 hover:text-gray-800 underline font-medium">comment oublier son ex</Link> et avancer sereinement.</p>
             </div>
           </div>
         </section>
@@ -118,7 +118,7 @@ export default function CommentTournerLaPagePage() {
               <div className="text-3xl font-bold text-gray-600">2</div>
               <div>
                 <h3 className="font-bold text-lg mb-2">Traverser le Deuil sans le Fuir</h3>
-                <p className="text-gray-700">Le <strong>deuil amoureux</strong> est un passage obligé que beaucoup tentent de court-circuiter par la distraction, les rebonds ou le déni. La <strong>voyance</strong> enseigne que ces raccourcis ne font que retarder la <strong>guérison</strong>. Autorisez-vous à pleurer, à être en colère, à ressentir le vide. Le <strong>tarot</strong> accompagne chaque phase de ce deuil en vous montrant où vous en êtes et combien de chemin il reste. La <strong>clairvoyance</strong> vous rassure : chaque larme versée est un pas vers la <strong>libération</strong>. Le <Link href="/rupture/chagrin-damour" className="text-gray-600 hover:text-gray-800 underline font-medium">chagrin d'amour</Link> est un passage, pas une destination.</p>
+                <p className="text-gray-700">Le <strong>deuil amoureux</strong> est un passage obligé que beaucoup tentent de court-circuiter par la distraction, les rebonds ou le déni. La <strong>voyance</strong> enseigne que ces raccourcis ne font que retarder la <strong>guérison</strong>. Autorisez-vous à pleurer, à être en colère, à ressentir le vide. Le <strong>tarot</strong> accompagne chaque phase de ce deuil en vous montrant où vous en êtes et combien de chemin il reste. La <strong>clairvoyance</strong> vous rassure : chaque larme versée est un pas vers la <strong>libération</strong>. Le <Link href="/rupture/chagrin-damour/" className="text-gray-600 hover:text-gray-800 underline font-medium">chagrin d'amour</Link> est un passage, pas une destination.</p>
               </div>
             </div>
             <div className="flex items-start gap-4">

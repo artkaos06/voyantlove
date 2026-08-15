@@ -245,7 +245,7 @@ export default function OnlinePsychicReadingPage() {
           <p>
             If you&apos;d like a deeper editorial look at Keen before your
             first session, our{' '}
-            <Link href="/love-psychic-services/keen-review">
+            <Link href="/love-psychic-services/keen-review/">
               full Keen review
             </Link>{' '}
             covers pricing, how to choose the right advisor, pros and cons,

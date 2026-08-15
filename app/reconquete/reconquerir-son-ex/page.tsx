@@ -20,7 +20,7 @@ const config: ContentPageConfig = {
     h1: 'Reconquérir son Ex',
     subtitle: 'Guidance tarot et voyance pour le retour de votre ex',
     gradient: 'from-purple-600 via-purple-700 to-indigo-600',
-    backLink: { href: '/reconquete', label: 'Reconquête' },
+    backLink: { href: '/reconquete/', label: 'Reconquête' },
     anchors: [
       { href: '#consultation', label: 'Consultation Reconquête', primary: true },
     ],
@@ -53,12 +53,12 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/reconquete/va-t-il-elle-revenir', label: 'Va-t-il/elle Revenir ?' },
-    { href: '/reconquete/ex-qui-revient', label: 'Mon Ex qui Revient' },
-    { href: '/reconquete/ex-revient-silence-radio', label: 'Ex qui Revient après Silence Radio' },
-    { href: '/reconquete/seconde-chance-amour', label: 'Seconde Chance en Amour' },
-    { href: '/rupture/oublier-son-ex', label: 'Comment Oublier son Ex' },
-    { href: '/sentiments/maime-t-il-elle', label: 'M\'aime-t-il / M\'aime-t-elle Encore ?' },
+    { href: '/reconquete/va-t-il-elle-revenir/', label: 'Va-t-il/elle Revenir ?' },
+    { href: '/reconquete/ex-qui-revient/', label: 'Mon Ex qui Revient' },
+    { href: '/reconquete/ex-revient-silence-radio/', label: 'Ex qui Revient après Silence Radio' },
+    { href: '/reconquete/seconde-chance-amour/', label: 'Seconde Chance en Amour' },
+    { href: '/rupture/oublier-son-ex/', label: 'Comment Oublier son Ex' },
+    { href: '/sentiments/maime-t-il-elle/', label: 'M\'aime-t-il / M\'aime-t-elle Encore ?' },
   ],
 };
 
@@ -91,19 +91,19 @@ export default function ReconquerirSonExPage() {
           <div className="space-y-4">
             <div className="bg-purple-50 border-l-4 border-purple-500 p-6 rounded-lg">
               <h3 className="font-bold text-lg mb-2 text-purple-700">1. Sentiments Actuels de Votre Ex</h3>
-              <p className="text-gray-700">Le tarot capte ce que votre ex ressent vraiment maintenant : amour résiduel, regrets, colère, indifférence. Cette carte est déterminante. Si vous vous demandez si <Link href="/sentiments/maime-t-il-elle" className="text-purple-600 hover:text-purple-800 underline font-medium">votre ex vous aime encore</Link>, cette position apporte une réponse claire. Les arcanes majeurs comme l'Amoureux ou la Lune révèlent des sentiments profonds, tandis que les arcanes mineurs précisent l'intensité émotionnelle et la direction que prennent ces émotions au fil du temps.</p>
+              <p className="text-gray-700">Le tarot capte ce que votre ex ressent vraiment maintenant : amour résiduel, regrets, colère, indifférence. Cette carte est déterminante. Si vous vous demandez si <Link href="/sentiments/maime-t-il-elle/" className="text-purple-600 hover:text-purple-800 underline font-medium">votre ex vous aime encore</Link>, cette position apporte une réponse claire. Les arcanes majeurs comme l'Amoureux ou la Lune révèlent des sentiments profonds, tandis que les arcanes mineurs précisent l'intensité émotionnelle et la direction que prennent ces émotions au fil du temps.</p>
             </div>
             <div className="bg-indigo-50 border-l-4 border-indigo-500 p-6 rounded-lg">
               <h3 className="font-bold text-lg mb-2 text-indigo-700">2. Obstacles à la Réconciliation</h3>
-              <p className="text-gray-700">Qu'est-ce qui bloque le retour ? Fierté, nouvelle relation, blessure profonde, peur de souffrir à nouveau ? Le tarot identifie les vrais obstacles. Comprendre ces blocages est essentiel avant toute tentative de <strong>reconquête amoureuse</strong>. Parfois, la <Link href="/rupture/rupture-amoureuse" className="text-purple-600 hover:text-purple-800 underline font-medium">douleur liée à la rupture</Link> crée des barrières émotionnelles que seul un travail intérieur peut lever. Le voyant vous guide pour contourner chaque obstacle avec intelligence et respect.</p>
+              <p className="text-gray-700">Qu'est-ce qui bloque le retour ? Fierté, nouvelle relation, blessure profonde, peur de souffrir à nouveau ? Le tarot identifie les vrais obstacles. Comprendre ces blocages est essentiel avant toute tentative de <strong>reconquête amoureuse</strong>. Parfois, la <Link href="/rupture/rupture-amoureuse/" className="text-purple-600 hover:text-purple-800 underline font-medium">douleur liée à la rupture</Link> crée des barrières émotionnelles que seul un travail intérieur peut lever. Le voyant vous guide pour contourner chaque obstacle avec intelligence et respect.</p>
             </div>
             <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-lg">
               <h3 className="font-bold text-lg mb-2 text-blue-700">3. Ce que Vous Devez Changer</h3>
-              <p className="text-gray-700">Le tarot révèle votre part de responsabilité et les évolutions personnelles nécessaires pour que la relation fonctionne cette fois. Cette position met en lumière des schémas répétitifs : dépendance affective, manque de communication ou peur de l'engagement. Le <strong>développement personnel</strong> guidé par la voyance vous permet d'identifier précisément les comportements à transformer. C'est souvent cette évolution intérieure qui déclenche naturellement le <Link href="/reconquete/retour-de-lex" className="text-purple-600 hover:text-purple-800 underline font-medium">retour de l'ex</Link> dans votre vie.</p>
+              <p className="text-gray-700">Le tarot révèle votre part de responsabilité et les évolutions personnelles nécessaires pour que la relation fonctionne cette fois. Cette position met en lumière des schémas répétitifs : dépendance affective, manque de communication ou peur de l'engagement. Le <strong>développement personnel</strong> guidé par la voyance vous permet d'identifier précisément les comportements à transformer. C'est souvent cette évolution intérieure qui déclenche naturellement le <Link href="/reconquete/retour-de-lex/" className="text-purple-600 hover:text-purple-800 underline font-medium">retour de l'ex</Link> dans votre vie.</p>
             </div>
             <div className="bg-cyan-50 border-l-4 border-cyan-500 p-6 rounded-lg">
               <h3 className="font-bold text-lg mb-2 text-cyan-700">4. Issue Probable et Timing</h3>
-              <p className="text-gray-700">La carte finale indique si la reconquête est probable et dans combien de temps. Elle guide votre stratégie d'action. Un tirage favorable montre souvent des cartes comme le Soleil ou le Monde, signes de renouveau et d'aboutissement. À l'inverse, la Tour ou le Diable invitent à la prudence. Consultez notre guide complet sur la question « <Link href="/reconquete/va-t-il-elle-revenir" className="text-purple-600 hover:text-purple-800 underline font-medium">va-t-il ou elle revenir</Link> » pour approfondir l'interprétation de ces messages du tarot.</p>
+              <p className="text-gray-700">La carte finale indique si la reconquête est probable et dans combien de temps. Elle guide votre stratégie d'action. Un tirage favorable montre souvent des cartes comme le Soleil ou le Monde, signes de renouveau et d'aboutissement. À l'inverse, la Tour ou le Diable invitent à la prudence. Consultez notre guide complet sur la question « <Link href="/reconquete/va-t-il-elle-revenir/" className="text-purple-600 hover:text-purple-800 underline font-medium">va-t-il ou elle revenir</Link> » pour approfondir l'interprétation de ces messages du tarot.</p>
             </div>
           </div>
         </section>
@@ -151,7 +151,7 @@ export default function ReconquerirSonExPage() {
               <div className="text-3xl font-bold text-purple-600">3</div>
               <div>
                 <h3 className="font-bold text-lg mb-2">Reprise de Contact Subtile</h3>
-                <p className="text-gray-700">Message court et léger après le silence radio. Pas de déclaration, juste une connexion amicale. Testez la réceptivité. Beaucoup de personnes constatent les premiers signes positifs lors d'un <Link href="/reconquete/ex-qui-revient" className="text-purple-600 hover:text-purple-800 underline font-medium">ex qui revient</Link> naturellement après cette phase de recul. L'essentiel est de rester détendu(e) et de ne pas forcer la conversation.</p>
+                <p className="text-gray-700">Message court et léger après le silence radio. Pas de déclaration, juste une connexion amicale. Testez la réceptivité. Beaucoup de personnes constatent les premiers signes positifs lors d'un <Link href="/reconquete/ex-qui-revient/" className="text-purple-600 hover:text-purple-800 underline font-medium">ex qui revient</Link> naturellement après cette phase de recul. L'essentiel est de rester détendu(e) et de ne pas forcer la conversation.</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
@@ -165,7 +165,7 @@ export default function ReconquerirSonExPage() {
               <div className="text-3xl font-bold text-purple-600">5</div>
               <div>
                 <h3 className="font-bold text-lg mb-2">Nouvelle Relation, Pas Continuation</h3>
-                <p className="text-gray-700">Ne reprenez pas là où vous étiez. Recommencez avec de nouvelles bases, nouvelles règles, nouvelle dynamique plus saine. Retrouvez l'ensemble de nos conseils dans notre rubrique <Link href="/reconquete" className="text-purple-600 hover:text-purple-800 underline font-medium">reconquête amoureuse</Link> pour bâtir un couple durable et épanoui sur des fondations solides.</p>
+                <p className="text-gray-700">Ne reprenez pas là où vous étiez. Recommencez avec de nouvelles bases, nouvelles règles, nouvelle dynamique plus saine. Retrouvez l'ensemble de nos conseils dans notre rubrique <Link href="/reconquete/" className="text-purple-600 hover:text-purple-800 underline font-medium">reconquête amoureuse</Link> pour bâtir un couple durable et épanoui sur des fondations solides.</p>
               </div>
             </div>
           </div>

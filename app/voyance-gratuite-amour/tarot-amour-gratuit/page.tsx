@@ -79,7 +79,7 @@ export default function TarotAmourGratuitPage() {
       {/* Header */}
       <header className="bg-gradient-to-r from-green-500 via-emerald-500 to-teal-500 text-white py-16 px-4">
         <div className="max-w-4xl mx-auto">
-          <Link href="/voyance-gratuite-amour" className="text-white/80 hover:text-white mb-4 inline-block">&larr; Retour &agrave; Voyance Gratuite Amour</Link>
+          <Link href="/voyance-gratuite-amour/" className="text-white/80 hover:text-white mb-4 inline-block">&larr; Retour &agrave; Voyance Gratuite Amour</Link>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">&#x1F0CF; Tarot Amour Gratuit</h1>
           <p className="text-xl opacity-95 mb-6">Tirage et interpr&eacute;tation sentimentale pour &eacute;clairer votre vie amoureuse</p>
           <div className="flex gap-4 flex-wrap">
@@ -133,7 +133,7 @@ export default function TarotAmourGratuitPage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">&#x1F4D6; Comprendre le Tarot Amoureux Gratuit</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le tarot amoureux gratuit repose sur la symbolique universelle des 22 arcanes majeurs du Tarot de Marseille, utilis&eacute;s depuis des si&egrave;cles pour &eacute;clairer les questions du c&oelig;ur et guider les &acirc;mes en qu&ecirc;te de r&eacute;ponses sentimentales.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Le <strong>tarot amour gratuit</strong> puise dans une tradition mill&eacute;naire de <strong>cartomancie sentimentale</strong>. Les 22 <strong>arcanes majeurs</strong> repr&eacute;sentent des arche&acute;types universels &mdash; l&apos;amour, la trahison, le renouveau, la patience &mdash; qui r&eacute;sonnent avec les situations amoureuses que chacun traverse. Contrairement aux id&eacute;es re&ccedil;ues, un <strong>tirage gratuit</strong> ne pr&eacute;dit pas un destin fig&eacute; : il &eacute;claire les &eacute;nergies en pr&eacute;sence et les trajectoires possibles de votre <strong>parcours sentimental</strong>. En explorant la <Link href="/voyance-gratuite-amour" className="text-green-600 hover:text-green-800 underline font-medium">voyance gratuite amour</Link>, vous acc&eacute;dez &agrave; un premier niveau de compr&eacute;hension de votre situation amoureuse.
+            Le <strong>tarot amour gratuit</strong> puise dans une tradition mill&eacute;naire de <strong>cartomancie sentimentale</strong>. Les 22 <strong>arcanes majeurs</strong> repr&eacute;sentent des arche&acute;types universels &mdash; l&apos;amour, la trahison, le renouveau, la patience &mdash; qui r&eacute;sonnent avec les situations amoureuses que chacun traverse. Contrairement aux id&eacute;es re&ccedil;ues, un <strong>tirage gratuit</strong> ne pr&eacute;dit pas un destin fig&eacute; : il &eacute;claire les &eacute;nergies en pr&eacute;sence et les trajectoires possibles de votre <strong>parcours sentimental</strong>. En explorant la <Link href="/voyance-gratuite-amour/" className="text-green-600 hover:text-green-800 underline font-medium">voyance gratuite amour</Link>, vous acc&eacute;dez &agrave; un premier niveau de compr&eacute;hension de votre situation amoureuse.
           </p>
           <p className="text-gray-700 leading-relaxed mb-6">
             L&apos;accessibilit&eacute; du <strong>tarot gratuit amour</strong> en fait un outil d&eacute;mocratique de d&eacute;veloppement personnel sentimental. Il permet &agrave; chaque personne, ind&eacute;pendamment de son budget, de b&eacute;n&eacute;ficier d&apos;un regard symbolique sur sa <strong>vie amoureuse</strong>. Le <strong>Tarot de Marseille</strong>, avec ses images riches en symbolisme, offre une lecture intuitive que m&ecirc;me les d&eacute;butants peuvent appr&eacute;hender. Chaque arcane raconte une histoire d&apos;amour, de d&eacute;fi, de transformation ou de r&eacute;v&eacute;lation qui entre en r&eacute;sonance avec votre v&eacute;cu personnel.
@@ -148,7 +148,7 @@ export default function TarotAmourGratuitPage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">&#x2764;&#xFE0F; Les Arcanes Majeurs en Amour</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Les 22 arcanes majeurs du Tarot de Marseille forment un langage symbolique complet pour d&eacute;chiffrer les &eacute;nergies amoureuses, des premiers &eacute;lans du c&oelig;ur aux unions durables.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Chaque <strong>arcane majeur</strong> porte une signification sentimentale sp&eacute;cifique que le <strong>tarologue</strong> interpr&egrave;te en fonction du contexte de votre question amoureuse. Si vous cherchez &agrave; <Link href="/sentiments/maime-t-il-elle" className="text-green-600 hover:text-green-800 underline font-medium">d&eacute;crypter les sentiments</Link> d&apos;une personne, certaines cartes apportent des r&eacute;ponses particuli&egrave;rement &eacute;clairantes. Voici les <strong>arcanes</strong> les plus significatifs en mati&egrave;re de <strong>voyance sentimentale</strong>.
+            Chaque <strong>arcane majeur</strong> porte une signification sentimentale sp&eacute;cifique que le <strong>tarologue</strong> interpr&egrave;te en fonction du contexte de votre question amoureuse. Si vous cherchez &agrave; <Link href="/sentiments/maime-t-il-elle/" className="text-green-600 hover:text-green-800 underline font-medium">d&eacute;crypter les sentiments</Link> d&apos;une personne, certaines cartes apportent des r&eacute;ponses particuli&egrave;rement &eacute;clairantes. Voici les <strong>arcanes</strong> les plus significatifs en mati&egrave;re de <strong>voyance sentimentale</strong>.
           </p>
 
           <div className="space-y-5">
@@ -194,7 +194,7 @@ export default function TarotAmourGratuitPage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">&#x1F3AF; Tirages Gratuits par Situation Sentimentale</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Chaque situation amoureuse appelle un type de tirage sp&eacute;cifique : le tirage en croix pour une vision globale, le tirage des trois cartes pour une r&eacute;ponse rapide, ou le tirage sentimental complet pour explorer une relation en profondeur.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            L&apos;efficacit&eacute; d&apos;un <strong>tirage de tarot amour gratuit</strong> d&eacute;pend en grande partie du choix du tirage adapt&eacute; &agrave; votre situation. Comme dans un <Link href="/methodes-voyance/tirage-tarot-amour" className="text-green-600 hover:text-green-800 underline font-medium">tirage de tarot amoureux</Link> professionnel, la m&eacute;thode utilis&eacute;e oriente la qualit&eacute; des r&eacute;ponses. Voici les tirages les plus pertinents selon votre contexte <strong>sentimental</strong>.
+            L&apos;efficacit&eacute; d&apos;un <strong>tirage de tarot amour gratuit</strong> d&eacute;pend en grande partie du choix du tirage adapt&eacute; &agrave; votre situation. Comme dans un <Link href="/methodes-voyance/tirage-tarot-amour/" className="text-green-600 hover:text-green-800 underline font-medium">tirage de tarot amoureux</Link> professionnel, la m&eacute;thode utilis&eacute;e oriente la qualit&eacute; des r&eacute;ponses. Voici les tirages les plus pertinents selon votre contexte <strong>sentimental</strong>.
           </p>
 
           <div className="space-y-5">
@@ -222,7 +222,7 @@ export default function TarotAmourGratuitPage() {
             <div className="bg-lime-50 border-l-4 border-lime-500 p-5 rounded-lg">
               <h3 className="font-bold text-lg mb-2 text-lime-700">Retour de l&apos;Ex &mdash; Le Tirage des Retrouvailles</h3>
               <p className="text-gray-700 text-sm">
-                Si la question du retour d&apos;un ancien partenaire vous obsede, le tirage des retrouvailles en trois cartes r&eacute;v&egrave;le les <strong>sentiments</strong> actuels de votre ex, les chances r&eacute;elles de <strong>retrouvailles amoureuses</strong> et le conseil des <strong>arcanes</strong> sur la marche &agrave; suivre. Pour approfondir cette question, vous pouvez &eacute;galement consulter notre guide pour <Link href="/reconquete/va-t-il-elle-revenir" className="text-green-600 hover:text-green-800 underline font-medium">savoir si votre ex va revenir</Link>, qui compl&egrave;te le tirage avec des analyses suppl&eacute;mentaires.
+                Si la question du retour d&apos;un ancien partenaire vous obsede, le tirage des retrouvailles en trois cartes r&eacute;v&egrave;le les <strong>sentiments</strong> actuels de votre ex, les chances r&eacute;elles de <strong>retrouvailles amoureuses</strong> et le conseil des <strong>arcanes</strong> sur la marche &agrave; suivre. Pour approfondir cette question, vous pouvez &eacute;galement consulter notre guide pour <Link href="/reconquete/va-t-il-elle-revenir/" className="text-green-600 hover:text-green-800 underline font-medium">savoir si votre ex va revenir</Link>, qui compl&egrave;te le tirage avec des analyses suppl&eacute;mentaires.
               </p>
             </div>
           </div>
@@ -345,11 +345,11 @@ export default function TarotAmourGratuitPage() {
         <div className="bg-gray-100 rounded-xl p-6 mb-8">
           <h3 className="font-bold text-lg mb-4 text-gray-900">&#x1F4DA; Articles Connexes</h3>
           <div className="space-y-2">
-            <Link href="/voyance-gratuite-amour" className="block text-green-600 hover:text-green-800 font-medium">&rarr; Voyance Gratuite Amour : Guide Complet</Link>
-            <Link href="/methodes-voyance/tirage-tarot-amour" className="block text-green-600 hover:text-green-800 font-medium">&rarr; Tirage de Tarot Amoureux : Guide des Tirages Sentimentaux</Link>
-            <Link href="/sentiments/maime-t-il-elle" className="block text-green-600 hover:text-green-800 font-medium">&rarr; M&apos;aime-t-il/elle Vraiment ?</Link>
-            <Link href="/reconquete/va-t-il-elle-revenir" className="block text-green-600 hover:text-green-800 font-medium">&rarr; Va-t-il/elle Revenir ? Pr&eacute;dictions</Link>
-            <Link href="/voyance-gratuite-amour/tarot-oui-non-amour" className="block text-green-600 hover:text-green-800 font-medium">&rarr; Tarot Oui Non Amour : R&eacute;ponses Sentimentales</Link>
+            <Link href="/voyance-gratuite-amour/" className="block text-green-600 hover:text-green-800 font-medium">&rarr; Voyance Gratuite Amour : Guide Complet</Link>
+            <Link href="/methodes-voyance/tirage-tarot-amour/" className="block text-green-600 hover:text-green-800 font-medium">&rarr; Tirage de Tarot Amoureux : Guide des Tirages Sentimentaux</Link>
+            <Link href="/sentiments/maime-t-il-elle/" className="block text-green-600 hover:text-green-800 font-medium">&rarr; M&apos;aime-t-il/elle Vraiment ?</Link>
+            <Link href="/reconquete/va-t-il-elle-revenir/" className="block text-green-600 hover:text-green-800 font-medium">&rarr; Va-t-il/elle Revenir ? Pr&eacute;dictions</Link>
+            <Link href="/voyance-gratuite-amour/tarot-oui-non-amour/" className="block text-green-600 hover:text-green-800 font-medium">&rarr; Tarot Oui Non Amour : R&eacute;ponses Sentimentales</Link>
           </div>
         </div>
 

@@ -20,7 +20,7 @@ const config: ContentPageConfig = {
     h1: 'Marc de Café Amour',
     subtitle: 'La tasséographie au service de vos questions sentimentales',
     gradient: 'from-amber-900 via-orange-800 to-stone-800',
-    backLink: { href: '/methodes-voyance', label: 'Retour aux Méthodes de Voyance' },
+    backLink: { href: '/methodes-voyance/', label: 'Retour aux Méthodes de Voyance' },
     anchors: [
       { href: '#symboles', label: 'Les Symboles Amoureux', primary: true },
       { href: '#pratique', label: 'Faire sa Propre Lecture' },
@@ -54,12 +54,12 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/methodes-voyance', label: 'Toutes les Méthodes de Voyance Amoureuse' },
-    { href: '/methodes-voyance/cartomancie-amour', label: 'Cartomancie Amour' },
-    { href: '/methodes-voyance/voyance-sentimentale', label: 'Voyance Sentimentale' },
-    { href: '/methodes-voyance/oracle-amour', label: 'Oracle de l\'Amour' },
-    { href: '/glossaire/tasseographie', label: 'Glossaire : Tasséographie' },
-    { href: '/glossaire/signe-du-destin', label: 'Glossaire : Signe du Destin' },
+    { href: '/methodes-voyance/', label: 'Toutes les Méthodes de Voyance Amoureuse' },
+    { href: '/methodes-voyance/cartomancie-amour/', label: 'Cartomancie Amour' },
+    { href: '/methodes-voyance/voyance-sentimentale/', label: 'Voyance Sentimentale' },
+    { href: '/methodes-voyance/oracle-amour/', label: 'Oracle de l\'Amour' },
+    { href: '/glossaire/tasseographie/', label: 'Glossaire : Tasséographie' },
+    { href: '/glossaire/signe-du-destin/', label: 'Glossaire : Signe du Destin' },
   ],
 };
 
@@ -71,7 +71,7 @@ export default function MarcDeCafeAmourPage() {
         <article className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-amber-800">
           <div className="bg-amber-50 border-l-4 border-amber-600 p-6 rounded-lg">
             <p className="text-lg leading-relaxed">
-              Le <strong>marc de café amour</strong> désigne l&apos;art de lire les formes laissées par le café au fond d&apos;une tasse, une pratique appelée <strong>tasséographie</strong> (ou caféomancie), pour éclairer vos questions sentimentales. Contrairement au <Link href="/methodes-voyance/tirage-tarot-amour" className="text-amber-800 hover:text-amber-900 underline font-medium">tarot</Link> ou à l&apos;<Link href="/methodes-voyance/oracle-amour" className="text-amber-800 hover:text-amber-900 underline font-medium">oracle</Link>, cette méthode se pratique traditionnellement entre proches, autour d&apos;un café partagé, ce qui lui donne une dimension chaleureuse et accessible. Chaque forme perçue, un cœur, un anneau, un oiseau, porte une signification symbolique précise, interprétée selon sa position dans la tasse. Cette guidance complète explore les symboles amoureux les plus fréquents, la méthode de lecture, et comment vous initier vous-même à cette pratique ancestrale.
+              Le <strong>marc de café amour</strong> désigne l&apos;art de lire les formes laissées par le café au fond d&apos;une tasse, une pratique appelée <strong>tasséographie</strong> (ou caféomancie), pour éclairer vos questions sentimentales. Contrairement au <Link href="/methodes-voyance/tirage-tarot-amour/" className="text-amber-800 hover:text-amber-900 underline font-medium">tarot</Link> ou à l&apos;<Link href="/methodes-voyance/oracle-amour/" className="text-amber-800 hover:text-amber-900 underline font-medium">oracle</Link>, cette méthode se pratique traditionnellement entre proches, autour d&apos;un café partagé, ce qui lui donne une dimension chaleureuse et accessible. Chaque forme perçue, un cœur, un anneau, un oiseau, porte une signification symbolique précise, interprétée selon sa position dans la tasse. Cette guidance complète explore les symboles amoureux les plus fréquents, la méthode de lecture, et comment vous initier vous-même à cette pratique ancestrale.
             </p>
           </div>
         </article>
@@ -178,7 +178,7 @@ export default function MarcDeCafeAmourPage() {
                 <p>&bull; Réponses concrètes et précises</p>
               </div>
               <p className="text-sm text-teal-600 mt-3">
-                <Link href="/methodes-voyance/cartomancie-amour" className="underline hover:text-teal-800 font-medium">Découvrir la cartomancie &rarr;</Link>
+                <Link href="/methodes-voyance/cartomancie-amour/" className="underline hover:text-teal-800 font-medium">Découvrir la cartomancie &rarr;</Link>
               </p>
             </div>
             <div className="bg-white rounded-lg p-5 border-2 border-indigo-300">
@@ -188,12 +188,12 @@ export default function MarcDeCafeAmourPage() {
                 <p>&bull; Idéal pour une analyse en profondeur</p>
               </div>
               <p className="text-sm text-indigo-600 mt-3">
-                <Link href="/methodes-voyance/tirage-tarot-amour" className="underline hover:text-indigo-800 font-medium">Découvrir le tarot &rarr;</Link>
+                <Link href="/methodes-voyance/tirage-tarot-amour/" className="underline hover:text-indigo-800 font-medium">Découvrir le tarot &rarr;</Link>
               </p>
             </div>
           </div>
           <div className="bg-white border-l-4 border-amber-600 p-5 rounded-lg mt-6">
-            <p className="text-gray-700"><strong>Le conseil VoyantLove :</strong> le marc de café convient parfaitement à une question sentimentale ponctuelle abordée sur le ton de la confidence. Pour une analyse plus approfondie de votre relation, la <Link href="/methodes-voyance/voyance-sentimentale" className="text-amber-800 hover:text-amber-900 underline font-medium">voyance sentimentale</Link> complète offre une lecture plus structurée.</p>
+            <p className="text-gray-700"><strong>Le conseil VoyantLove :</strong> le marc de café convient parfaitement à une question sentimentale ponctuelle abordée sur le ton de la confidence. Pour une analyse plus approfondie de votre relation, la <Link href="/methodes-voyance/voyance-sentimentale/" className="text-amber-800 hover:text-amber-900 underline font-medium">voyance sentimentale</Link> complète offre une lecture plus structurée.</p>
           </div>
         </section>
 
@@ -205,7 +205,7 @@ export default function MarcDeCafeAmourPage() {
             Si la tasséographie se prête bien à une pratique entre proches, une consultation avec un <strong>voyant</strong> spécialisé apporte une profondeur supplémentaire, en particulier lorsque votre question sentimentale est complexe ou chargée émotionnellement.
           </p>
           <div className="text-center">
-            <Link href="/consulter?ref=marc-de-cafe-amour" className="inline-block bg-amber-800 text-white px-8 py-3 rounded-lg font-semibold hover:bg-amber-900 transition">Consulter un Praticien Vérifié →</Link>
+            <Link href="/consulter/?ref=marc-de-cafe-amour" className="inline-block bg-amber-800 text-white px-8 py-3 rounded-lg font-semibold hover:bg-amber-900 transition">Consulter un Praticien Vérifié →</Link>
           </div>
         </section>
     </ContentPage>

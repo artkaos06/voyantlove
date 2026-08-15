@@ -20,7 +20,7 @@ const config: ContentPageConfig = {
     h1: 'Mon Conjoint m\'a Quitté pour Quelqu\'un d\'Autre : Va-t-il Revenir ?',
     subtitle: 'Ce qui est possible, ce qui reste imprévisible, et comment ne pas mettre votre vie en pause',
     gradient: 'from-violet-600 via-purple-600 to-fuchsia-600',
-    backLink: { href: '/reconquete', label: 'Retour à la Reconquête' },
+    backLink: { href: '/reconquete/', label: 'Retour à la Reconquête' },
     anchors: [
       { href: '#possible', label: 'Possible ou Imprévisible ?', primary: true },
       { href: '#identite', label: 'Retrouver son Identité' },
@@ -58,12 +58,12 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/reconquete', label: 'Reconquête Amoureuse : Toutes nos Guidances' },
-    { href: '/reconquete/va-t-il-elle-revenir', label: 'Va-t-il/elle Revenir ?' },
-    { href: '/rupture/surmonter-trahison', label: 'Surmonter une Trahison Amoureuse' },
-    { href: '/reconquete/seconde-chance-amour', label: 'La Seconde Chance en Amour' },
-    { href: '/rupture/guerir-rupture', label: 'Guérir d\'une Rupture' },
-    { href: '/rupture/ex-refait-sa-vie', label: 'Mon Ex Refait sa Vie : Comment le Vivre' },
+    { href: '/reconquete/', label: 'Reconquête Amoureuse : Toutes nos Guidances' },
+    { href: '/reconquete/va-t-il-elle-revenir/', label: 'Va-t-il/elle Revenir ?' },
+    { href: '/rupture/surmonter-trahison/', label: 'Surmonter une Trahison Amoureuse' },
+    { href: '/reconquete/seconde-chance-amour/', label: 'La Seconde Chance en Amour' },
+    { href: '/rupture/guerir-rupture/', label: 'Guérir d\'une Rupture' },
+    { href: '/rupture/ex-refait-sa-vie/', label: 'Mon Ex Refait sa Vie : Comment le Vivre' },
   ],
 };
 
@@ -83,7 +83,7 @@ export default function QuittePourQuelquunDautreVaTIlRevenirPage() {
               Cette page ne cherche pas à vous rassurer avec de fausses promesses. Elle sépare clairement <strong>ce qui est possible</strong>, <strong>ce qui reste inconnaissable</strong>, les <strong>signes comportementaux</strong> qui comptent vraiment, et le coût d&apos;une attente qui met votre vie entre parenthèses. Se répéter que sa nouvelle relation est forcément une &laquo;relation pansement&raquo; est un raccourci qui soulage sur le moment mais entretient une <strong>attente passive</strong>.
             </p>
             <p className="text-lg leading-relaxed">
-              Quelle que soit l&apos;issue, votre priorité reste de vous <strong>reconstruire</strong> et de retrouver une identité indépendante de ce couple. Pour évaluer sereinement l&apos;éventualité d&apos;un retour au-delà de ce contexte précis, notre guidance sur <Link href="/reconquete/va-t-il-elle-revenir" className="text-violet-600 hover:text-violet-800 underline font-medium">va-t-il/elle revenir</Link> complète cette lecture. Une <strong>consultation de voyance sentimentale</strong> peut éclairer la dynamique et vos choix, sans jamais garantir ni provoquer un retour.
+              Quelle que soit l&apos;issue, votre priorité reste de vous <strong>reconstruire</strong> et de retrouver une identité indépendante de ce couple. Pour évaluer sereinement l&apos;éventualité d&apos;un retour au-delà de ce contexte précis, notre guidance sur <Link href="/reconquete/va-t-il-elle-revenir/" className="text-violet-600 hover:text-violet-800 underline font-medium">va-t-il/elle revenir</Link> complète cette lecture. Une <strong>consultation de voyance sentimentale</strong> peut éclairer la dynamique et vos choix, sans jamais garantir ni provoquer un retour.
             </p>
           </div>
         </article>
@@ -162,7 +162,7 @@ export default function QuittePourQuelquunDautreVaTIlRevenirPage() {
             </div>
           </div>
           <div className="mt-6 bg-blue-50 border-l-4 border-blue-500 p-6 rounded">
-            <p className="text-gray-700"><strong>{'\u{1F4A1}'} Repère :</strong> ces faux signaux ressemblent beaucoup au comportement <Link href="/reconquete/ex-chaud-et-froid-apres-separation" className="text-violet-600 hover:text-violet-800 underline font-medium">chaud et froid</Link> d&apos;un ex ambivalent. Un geste n&apos;a de valeur que confirmé par la <strong>constance</strong>.</p>
+            <p className="text-gray-700"><strong>{'\u{1F4A1}'} Repère :</strong> ces faux signaux ressemblent beaucoup au comportement <Link href="/reconquete/ex-chaud-et-froid-apres-separation/" className="text-violet-600 hover:text-violet-800 underline font-medium">chaud et froid</Link> d&apos;un ex ambivalent. Un geste n&apos;a de valeur que confirmé par la <strong>constance</strong>.</p>
           </div>
         </section>
 
@@ -173,7 +173,7 @@ export default function QuittePourQuelquunDautreVaTIlRevenirPage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">{'⏳'} Faut-il Attendre que sa Nouvelle Relation se Termine ?</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Attendre activement la fin d&apos;une autre relation est l&apos;une des attentes les plus couteuses, car elle place votre vie sous la dependance d&apos;un evenement que vous ne maitrisez pas et qui peut ne jamais survenir.</p>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Guetter la fin de leur couple transforme votre quotidien en <strong>salle d&apos;attente</strong>. Vous pouvez rester ouvert(e) à un dialogue si l&apos;autre revient de lui-même, mais suspendre votre existence à cette hypothèse revient à confier les clés de votre bonheur à une situation que vous ne contrôlez pas. Pour situer la juste durée d&apos;une attente, notre page <Link href="/reconquete/dois-je-attendre-son-retour" className="text-violet-600 hover:text-violet-800 underline font-medium">dois-je l&apos;attendre</Link> approfondit ce dosage.
+            Guetter la fin de leur couple transforme votre quotidien en <strong>salle d&apos;attente</strong>. Vous pouvez rester ouvert(e) à un dialogue si l&apos;autre revient de lui-même, mais suspendre votre existence à cette hypothèse revient à confier les clés de votre bonheur à une situation que vous ne contrôlez pas. Pour situer la juste durée d&apos;une attente, notre page <Link href="/reconquete/dois-je-attendre-son-retour/" className="text-violet-600 hover:text-violet-800 underline font-medium">dois-je l&apos;attendre</Link> approfondit ce dosage.
           </p>
           <p className="text-gray-700 leading-relaxed">
             La posture la plus protectrice consiste à fixer une <strong>limite intérieure de temps</strong> et à continuer d&apos;avancer. Si un retour doit avoir lieu, il vous trouvera debout ; s&apos;il n&apos;a pas lieu, vous ne l&apos;aurez pas payé de plusieurs années de votre vie.
@@ -198,11 +198,11 @@ export default function QuittePourQuelquunDautreVaTIlRevenirPage() {
             </div>
             <div className="bg-white rounded-lg p-6 border-l-4 border-purple-500">
               <h3 className="font-bold text-lg mb-2 text-purple-700">{'\u{1F331}'} Avancer à votre rythme</h3>
-              <p className="text-gray-700 text-sm">Il n&apos;y a pas de calendrier imposé pour guérir. Notre guide pour <Link href="/rupture/guerir-rupture" className="text-purple-600 hover:text-purple-800 underline font-medium">guérir d&apos;une rupture</Link> détaille les étapes de cette reconstruction.</p>
+              <p className="text-gray-700 text-sm">Il n&apos;y a pas de calendrier imposé pour guérir. Notre guide pour <Link href="/rupture/guerir-rupture/" className="text-purple-600 hover:text-purple-800 underline font-medium">guérir d&apos;une rupture</Link> détaille les étapes de cette reconstruction.</p>
             </div>
           </div>
           <div className="mt-6 bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded">
-            <p className="text-gray-700"><strong>{'\u{1F4A1}'} À retenir :</strong> si une seconde chance devait un jour se présenter, elle ne serait saine qu&apos;à certaines conditions, reconnaissance des causes, changements réels, respect retrouvé. Notre guidance sur la <Link href="/reconquete/seconde-chance-amour" className="text-purple-600 hover:text-purple-800 underline font-medium">seconde chance en amour</Link> explore ce qu&apos;il faut vérifier avant de rouvrir cette porte.</p>
+            <p className="text-gray-700"><strong>{'\u{1F4A1}'} À retenir :</strong> si une seconde chance devait un jour se présenter, elle ne serait saine qu&apos;à certaines conditions, reconnaissance des causes, changements réels, respect retrouvé. Notre guidance sur la <Link href="/reconquete/seconde-chance-amour/" className="text-purple-600 hover:text-purple-800 underline font-medium">seconde chance en amour</Link> explore ce qu&apos;il faut vérifier avant de rouvrir cette porte.</p>
           </div>
         </section>
 

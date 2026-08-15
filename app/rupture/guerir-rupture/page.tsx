@@ -20,7 +20,7 @@ const config: ContentPageConfig = {
     h1: 'Guérir d\'une Rupture Amoureuse',
     subtitle: 'Étapes du deuil amoureux, durée de guérison et chemin vers la reconstruction',
     gradient: 'from-teal-500 via-emerald-500 to-green-500',
-    backLink: { href: '/rupture', label: 'Retour aux Ruptures Amoureuses' },
+    backLink: { href: '/rupture/', label: 'Retour aux Ruptures Amoureuses' },
     anchors: [
       { href: '#consultation', label: 'Guidance de Guérison', primary: true },
       { href: '#etapes', label: 'Les 5 Étapes' },
@@ -58,11 +58,11 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/rupture/rupture-amoureuse', label: 'Comprendre la Rupture Amoureuse' },
-    { href: '/rupture/oublier-son-ex', label: 'Comment Oublier son Ex' },
-    { href: '/rupture/chagrin-damour', label: 'Surmonter un Chagrin d\'Amour' },
-    { href: '/nouvelle-rencontre/quand-rencontre-amour', label: 'Quand Vais-je Rencontrer l\'Amour ?' },
-    { href: '/rupture', label: 'Rupture Amoureuse : Toutes nos Guidances' },
+    { href: '/rupture/rupture-amoureuse/', label: 'Comprendre la Rupture Amoureuse' },
+    { href: '/rupture/oublier-son-ex/', label: 'Comment Oublier son Ex' },
+    { href: '/rupture/chagrin-damour/', label: 'Surmonter un Chagrin d\'Amour' },
+    { href: '/nouvelle-rencontre/quand-rencontre-amour/', label: 'Quand Vais-je Rencontrer l\'Amour ?' },
+    { href: '/rupture/', label: 'Rupture Amoureuse : Toutes nos Guidances' },
   ],
 };
 
@@ -74,7 +74,7 @@ export default function GuerirRupturePage() {
         <article className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-teal-600">
           <div className="bg-teal-50 border-l-4 border-teal-500 p-6 rounded-lg">
             <p className="text-lg leading-relaxed">
-              <strong>Gu&eacute;rir d&apos;une rupture amoureuse</strong> est un processus profond de <strong>transformation int&eacute;rieure</strong> qui traverse cinq &eacute;tapes distinctes du <strong>deuil amoureux</strong>. Que votre <strong>s&eacute;paration</strong> soit r&eacute;cente ou ancienne, que vous l&apos;ayez initi&eacute;e ou subie, la douleur sentimentale emprunte un chemin universel qui m&egrave;ne inexorablement vers la <strong>reconstruction</strong> et le renouveau. Le <strong>tarot de gu&eacute;rison</strong> accompagne chaque &eacute;tape de ce parcours en r&eacute;v&eacute;lant les <strong>blocages &eacute;motionnels</strong> cach&eacute;s, les le&ccedil;ons &agrave; int&eacute;grer et les &eacute;nergies de renaissance qui s&apos;&eacute;veillent en vous. La <strong>voyance sentimentale</strong> offre le recul et la clart&eacute; n&eacute;cessaires pour traverser le <strong>chagrin d&apos;amour</strong> avec conscience plut&ocirc;t qu&apos;avec r&eacute;signation. La <strong>cicatrisation amoureuse</strong> n&apos;est pas un retour &agrave; l&apos;&eacute;tat ant&eacute;rieur : c&apos;est une renaissance qui vous transforme en une version plus forte, plus sage et plus ouverte &agrave; l&apos;<strong>amour v&eacute;ritable</strong>. Chaque &eacute;preuve de <Link href="/rupture" className="text-teal-600 hover:text-teal-800 underline font-medium">rupture amoureuse</Link> porte en elle les graines d&apos;un nouveau chapitre sentimental plus lumineux.
+              <strong>Gu&eacute;rir d&apos;une rupture amoureuse</strong> est un processus profond de <strong>transformation int&eacute;rieure</strong> qui traverse cinq &eacute;tapes distinctes du <strong>deuil amoureux</strong>. Que votre <strong>s&eacute;paration</strong> soit r&eacute;cente ou ancienne, que vous l&apos;ayez initi&eacute;e ou subie, la douleur sentimentale emprunte un chemin universel qui m&egrave;ne inexorablement vers la <strong>reconstruction</strong> et le renouveau. Le <strong>tarot de gu&eacute;rison</strong> accompagne chaque &eacute;tape de ce parcours en r&eacute;v&eacute;lant les <strong>blocages &eacute;motionnels</strong> cach&eacute;s, les le&ccedil;ons &agrave; int&eacute;grer et les &eacute;nergies de renaissance qui s&apos;&eacute;veillent en vous. La <strong>voyance sentimentale</strong> offre le recul et la clart&eacute; n&eacute;cessaires pour traverser le <strong>chagrin d&apos;amour</strong> avec conscience plut&ocirc;t qu&apos;avec r&eacute;signation. La <strong>cicatrisation amoureuse</strong> n&apos;est pas un retour &agrave; l&apos;&eacute;tat ant&eacute;rieur : c&apos;est une renaissance qui vous transforme en une version plus forte, plus sage et plus ouverte &agrave; l&apos;<strong>amour v&eacute;ritable</strong>. Chaque &eacute;preuve de <Link href="/rupture/" className="text-teal-600 hover:text-teal-800 underline font-medium">rupture amoureuse</Link> porte en elle les graines d&apos;un nouveau chapitre sentimental plus lumineux.
             </p>
           </div>
         </article>
@@ -117,7 +117,7 @@ export default function GuerirRupturePage() {
             <div className="bg-gray-100 border-l-4 border-gray-500 p-5 rounded-lg">
               <h3 className="font-bold text-lg mb-2 text-gray-700">&Eacute;tape 4 &mdash; La Tristesse et la D&eacute;pression</h3>
               <p className="text-gray-700 text-sm mb-2">
-                La phase la plus difficile du <Link href="/rupture/deuil-amoureux" className="text-teal-600 hover:text-teal-800 underline font-medium"><strong>deuil amoureux</strong></Link>. La r&eacute;alit&eacute; de la perte s&apos;impose pleinement. Le <strong>chagrin d&apos;amour</strong> envahit tout : manque physique, solitude, perte de rep&egrave;res, vide existentiel. Paradoxalement, cette &eacute;tape est le signe que la <strong>gu&eacute;rison</strong> avance : vous ne fuyez plus la douleur, vous la traversez.
+                La phase la plus difficile du <Link href="/rupture/deuil-amoureux/" className="text-teal-600 hover:text-teal-800 underline font-medium"><strong>deuil amoureux</strong></Link>. La r&eacute;alit&eacute; de la perte s&apos;impose pleinement. Le <strong>chagrin d&apos;amour</strong> envahit tout : manque physique, solitude, perte de rep&egrave;res, vide existentiel. Paradoxalement, cette &eacute;tape est le signe que la <strong>gu&eacute;rison</strong> avance : vous ne fuyez plus la douleur, vous la traversez.
               </p>
               <p className="text-gray-600 text-xs italic">Carte du tarot associ&eacute;e : Cinq de Coupe &mdash; perte, chagrin, mais aussi deux coupes debout signifiant espoir.</p>
             </div>
@@ -234,7 +234,7 @@ export default function GuerirRupturePage() {
           </div>
 
           <div className="bg-teal-50 border-l-4 border-teal-600 p-5 rounded mt-6">
-            <p className="text-gray-700"><strong>Compl&eacute;ment :</strong> Si la douleur de votre <strong>chagrin d&apos;amour</strong> vous submerge encore, notre guide d&eacute;di&eacute; au <Link href="/rupture/chagrin-damour" className="text-teal-600 hover:text-teal-800 underline font-medium">chagrin d&apos;amour</Link> propose des techniques imm&eacute;diates de soulagement. Pour ceux qui envisagent de tourner d&eacute;finitivement la page, d&eacute;couvrez notre guidance sur comment <Link href="/rupture/oublier-son-ex" className="text-teal-600 hover:text-teal-800 underline font-medium">oublier son ex</Link>.</p>
+            <p className="text-gray-700"><strong>Compl&eacute;ment :</strong> Si la douleur de votre <strong>chagrin d&apos;amour</strong> vous submerge encore, notre guide d&eacute;di&eacute; au <Link href="/rupture/chagrin-damour/" className="text-teal-600 hover:text-teal-800 underline font-medium">chagrin d&apos;amour</Link> propose des techniques imm&eacute;diates de soulagement. Pour ceux qui envisagent de tourner d&eacute;finitivement la page, d&eacute;couvrez notre guidance sur comment <Link href="/rupture/oublier-son-ex/" className="text-teal-600 hover:text-teal-800 underline font-medium">oublier son ex</Link>.</p>
           </div>
         </section>
 
@@ -264,7 +264,7 @@ export default function GuerirRupturePage() {
             <div className="bg-green-50 border-l-4 border-green-500 p-5 rounded-lg">
               <h3 className="font-bold text-lg mb-2 text-green-700">S&apos;Ouvrir &agrave; un Nouvel Amour</h3>
               <p className="text-gray-700 text-sm">
-                Quand la <strong>gu&eacute;rison</strong> est suffisamment avanc&eacute;e, le c&oelig;ur s&apos;ouvre naturellement &agrave; de nouvelles possibilit&eacute;s sentimentales. Le <strong>tarot</strong> identifie le moment id&eacute;al pour cette ouverture et r&eacute;v&egrave;le les &eacute;nergies de <strong>rencontre amoureuse</strong> qui se profilent. L&apos;As de Coupe dans votre tirage annonce ce renouveau imminent. Pour explorer quand cette <strong>nouvelle rencontre</strong> pourrait se manifester, consultez notre guidance sur <Link href="/nouvelle-rencontre/quand-rencontre-amour" className="text-teal-600 hover:text-teal-800 underline font-medium">quand vais-je rencontrer l&apos;amour</Link>.
+                Quand la <strong>gu&eacute;rison</strong> est suffisamment avanc&eacute;e, le c&oelig;ur s&apos;ouvre naturellement &agrave; de nouvelles possibilit&eacute;s sentimentales. Le <strong>tarot</strong> identifie le moment id&eacute;al pour cette ouverture et r&eacute;v&egrave;le les &eacute;nergies de <strong>rencontre amoureuse</strong> qui se profilent. L&apos;As de Coupe dans votre tirage annonce ce renouveau imminent. Pour explorer quand cette <strong>nouvelle rencontre</strong> pourrait se manifester, consultez notre guidance sur <Link href="/nouvelle-rencontre/quand-rencontre-amour/" className="text-teal-600 hover:text-teal-800 underline font-medium">quand vais-je rencontrer l&apos;amour</Link>.
               </p>
             </div>
 

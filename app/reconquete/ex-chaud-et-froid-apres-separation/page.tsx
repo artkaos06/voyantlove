@@ -20,7 +20,7 @@ const config: ContentPageConfig = {
     h1: 'Pourquoi Mon Ex Souffle-t-il le Chaud et le Froid ?',
     subtitle: 'Comprendre les signaux contradictoires après une séparation',
     gradient: 'from-rose-500 via-purple-600 to-blue-600',
-    backLink: { href: '/reconquete', label: 'Retour à la Reconquête' },
+    backLink: { href: '/reconquete/', label: 'Retour à la Reconquête' },
     anchors: [
       { href: '#decodeur', label: 'Le Décodeur des Signaux', primary: true },
       { href: '#reagir', label: 'Comment Réagir' },
@@ -58,12 +58,12 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/reconquete', label: 'Reconquête Amoureuse : Toutes nos Guidances' },
-    { href: '/reconquete/veut-se-remettre-ensemble-mais-ne-fait-rien', label: 'Il Veut se Remettre Ensemble mais ne Fait Rien' },
-    { href: '/reconquete/ex-qui-revient', label: 'Ex qui Revient : Que Faire ?' },
-    { href: '/sentiments/pense-t-il-elle-a-moi', label: 'Pense-t-il/elle à Moi ?' },
-    { href: '/reconquete/silence-radio-reconquete', label: 'Le Silence Radio en Reconquête' },
-    { href: '/reconquete/separation-temporaire-ou-definitive', label: 'Séparation Temporaire ou Définitive ?' },
+    { href: '/reconquete/', label: 'Reconquête Amoureuse : Toutes nos Guidances' },
+    { href: '/reconquete/veut-se-remettre-ensemble-mais-ne-fait-rien/', label: 'Il Veut se Remettre Ensemble mais ne Fait Rien' },
+    { href: '/reconquete/ex-qui-revient/', label: 'Ex qui Revient : Que Faire ?' },
+    { href: '/sentiments/pense-t-il-elle-a-moi/', label: 'Pense-t-il/elle à Moi ?' },
+    { href: '/reconquete/silence-radio-reconquete/', label: 'Le Silence Radio en Reconquête' },
+    { href: '/reconquete/separation-temporaire-ou-definitive/', label: 'Séparation Temporaire ou Définitive ?' },
   ],
 };
 
@@ -80,7 +80,7 @@ export default function ExChaudEtFroidApresSeparationPage() {
               Un ex qui vous <strong>parle puis vous ignore</strong>, se montre affectueux avant de disparaître, évoque une réconciliation sans jamais la concrétiser : ce comportement <strong>chaud et froid</strong> est l&apos;un des plus déstabilisants après une séparation. Dans la grande majorité des cas, il traduit une <strong>ambivalence</strong> intérieure, un tiraillement entre l&apos;attachement encore vivant et les raisons qui ont mené à la rupture, plutôt qu&apos;une stratégie calculée. Personne ne peut lire ses pensées avec certitude, mais on peut organiser ces signaux en <strong>schémas observables</strong>.
             </p>
             <p className="text-lg leading-relaxed mb-4">
-              Plusieurs moteurs alimentent souvent ces allers-retours : la <strong>culpabilité</strong>, la <strong>solitude</strong>, la peur de perdre définitivement l&apos;autre, ou le confort d&apos;un lien maintenu sans décision. Aucun de ces ressentis n&apos;est un diagnostic, et un même geste peut avoir plusieurs sens. Recontacter, en particulier, ne prouve pas un désir de retour, un point que notre guidance sur <Link href="/sentiments/pense-t-il-elle-a-moi" className="text-purple-600 hover:text-purple-800 underline font-medium">pense-t-il/elle à moi</Link> nuance en détail.
+              Plusieurs moteurs alimentent souvent ces allers-retours : la <strong>culpabilité</strong>, la <strong>solitude</strong>, la peur de perdre définitivement l&apos;autre, ou le confort d&apos;un lien maintenu sans décision. Aucun de ces ressentis n&apos;est un diagnostic, et un même geste peut avoir plusieurs sens. Recontacter, en particulier, ne prouve pas un désir de retour, un point que notre guidance sur <Link href="/sentiments/pense-t-il-elle-a-moi/" className="text-purple-600 hover:text-purple-800 underline font-medium">pense-t-il/elle à moi</Link> nuance en détail.
             </p>
             <p className="text-lg leading-relaxed">
               L&apos;objectif de cette page est de vous sortir de l&apos;analyse épuisante de chaque message pour vous rendre une <strong>lecture d&apos;ensemble</strong> : ce que chaque signal peut signifier, ce qu&apos;il ne prouve pas, et surtout comment répondre en préservant votre équilibre. Une <strong>consultation de voyance sentimentale</strong> peut ensuite éclairer la dynamique et votre propre positionnement, sans prétendre dévoiler avec certitude les intentions de l&apos;autre.
@@ -177,7 +177,7 @@ export default function ExChaudEtFroidApresSeparationPage() {
             Face à l&apos;ambiguïté, l&apos;esprit cherche à combler le vide en <strong>surinterprétant</strong> chaque détail. Mais analyser un comportement contradictoire ne le rend pas cohérent : cela transforme seulement votre quotidien en une veille anxieuse, suspendue au prochain message. Cette <strong>hypervigilance</strong> renforce la dépendance au lien, sans jamais livrer la réponse espérée.
           </p>
           <p className="text-gray-700 leading-relaxed">
-            La sortie ne consiste pas à mieux décoder, mais à <strong>reculer d&apos;un cran</strong> : observer la tendance générale sur un mois plutôt que le détail de chaque échange. Si le besoin de vérifier ses moindres faits et gestes devient envahissant, notre guide pour <Link href="/rupture/oublier-son-ex" className="text-purple-600 hover:text-purple-800 underline font-medium">oublier son ex</Link> propose des repères pour reprendre la main.
+            La sortie ne consiste pas à mieux décoder, mais à <strong>reculer d&apos;un cran</strong> : observer la tendance générale sur un mois plutôt que le détail de chaque échange. Si le besoin de vérifier ses moindres faits et gestes devient envahissant, notre guide pour <Link href="/rupture/oublier-son-ex/" className="text-purple-600 hover:text-purple-800 underline font-medium">oublier son ex</Link> propose des repères pour reprendre la main.
           </p>
         </section>
 

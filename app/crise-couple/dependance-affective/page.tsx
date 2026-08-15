@@ -20,7 +20,7 @@ const config: ContentPageConfig = {
     h1: 'Dépendance Affective',
     subtitle: 'Se Libérer et Aimer Sainement',
     gradient: 'from-teal-600 via-cyan-600 to-blue-600',
-    backLink: { href: '/crise-couple', label: 'Retour aux Crises de Couple' },
+    backLink: { href: '/crise-couple/', label: 'Retour aux Crises de Couple' },
     anchors: [
       { href: '#liberation', label: 'Chemin de Libération', primary: true },
       { href: '#signes', label: 'Reconnaître les Signes' },
@@ -58,13 +58,13 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/crise-couple', label: 'Crise de Couple : Toutes nos Guidances' },
-    { href: '/crise-couple/jalousie-excessive', label: 'Jalousie Excessive dans le Couple' },
-    { href: '/crise-couple/problemes-communication-couple', label: 'Problèmes de Communication dans le Couple' },
-    { href: '/rupture/oublier-son-ex', label: 'Oublier son Ex et Tourner la Page' },
-    { href: '/sentiments/maime-t-il-elle', label: 'M’aime-t-il/elle Vraiment ?' },
-    { href: '/sentiments/avenir-amoureux', label: 'Votre Avenir Amoureux' },
-    { href: '/crise-couple/vivre-meme-toit-apres-separation', label: 'Vivre sous le Même Toit Après une Séparation' },
+    { href: '/crise-couple/', label: 'Crise de Couple : Toutes nos Guidances' },
+    { href: '/crise-couple/jalousie-excessive/', label: 'Jalousie Excessive dans le Couple' },
+    { href: '/crise-couple/problemes-communication-couple/', label: 'Problèmes de Communication dans le Couple' },
+    { href: '/rupture/oublier-son-ex/', label: 'Oublier son Ex et Tourner la Page' },
+    { href: '/sentiments/maime-t-il-elle/', label: 'M’aime-t-il/elle Vraiment ?' },
+    { href: '/sentiments/avenir-amoureux/', label: 'Votre Avenir Amoureux' },
+    { href: '/crise-couple/vivre-meme-toit-apres-separation/', label: 'Vivre sous le Même Toit Après une Séparation' },
   ],
 };
 
@@ -103,7 +103,7 @@ export default function DependanceAffectivePage() {
             </div>
           </div>
           <p className="text-gray-700">
-            La diff&eacute;rence fondamentale entre l&rsquo;amour et la d&eacute;pendance r&eacute;side dans la <strong>libert&eacute; int&eacute;rieure</strong>. Dans l&rsquo;amour sain, vous &ecirc;tes deux &ecirc;tres complets qui choisissent de partager leur vie. Dans la d&eacute;pendance, vous &ecirc;tes un &ecirc;tre incomplet qui s&rsquo;agrippe &agrave; l&rsquo;autre pour combler un vide. Si vous doutez de la nature de vos sentiments, une guidance peut vous aider &agrave; <Link href="/sentiments/maime-t-il-elle" className="text-teal-600 hover:text-teal-800 underline font-medium">savoir si c&rsquo;est de l&rsquo;amour ou de la d&eacute;pendance</Link> et vous offrir la clart&eacute; n&eacute;cessaire pour avancer.
+            La diff&eacute;rence fondamentale entre l&rsquo;amour et la d&eacute;pendance r&eacute;side dans la <strong>libert&eacute; int&eacute;rieure</strong>. Dans l&rsquo;amour sain, vous &ecirc;tes deux &ecirc;tres complets qui choisissent de partager leur vie. Dans la d&eacute;pendance, vous &ecirc;tes un &ecirc;tre incomplet qui s&rsquo;agrippe &agrave; l&rsquo;autre pour combler un vide. Si vous doutez de la nature de vos sentiments, une guidance peut vous aider &agrave; <Link href="/sentiments/maime-t-il-elle/" className="text-teal-600 hover:text-teal-800 underline font-medium">savoir si c&rsquo;est de l&rsquo;amour ou de la d&eacute;pendance</Link> et vous offrir la clart&eacute; n&eacute;cessaire pour avancer.
           </p>
         </section>
 
@@ -132,7 +132,7 @@ export default function DependanceAffectivePage() {
             <div className="bg-white border-l-4 border-teal-500 p-5 rounded-lg">
               <h3 className="font-bold text-teal-700 mb-2">3. La Jalousie Maladive et Possessive</h3>
               <p className="text-gray-700">
-                La d&eacute;pendance affective g&eacute;n&egrave;re une <strong>jalousie intense</strong> qui d&eacute;passe largement la jalousie normale. Vous percevez chaque personne qui approche votre partenaire comme une menace. Cette possessivit&eacute; est en r&eacute;alit&eacute; le reflet de votre peur de ne pas suffire. Si vous reconnaissez ce sch&eacute;ma, notre guidance sur la <Link href="/crise-couple/jalousie-excessive" className="text-teal-600 hover:text-teal-800 underline font-medium">jalousie excessive dans le couple</Link> peut vous &eacute;clairer davantage.
+                La d&eacute;pendance affective g&eacute;n&egrave;re une <strong>jalousie intense</strong> qui d&eacute;passe largement la jalousie normale. Vous percevez chaque personne qui approche votre partenaire comme une menace. Cette possessivit&eacute; est en r&eacute;alit&eacute; le reflet de votre peur de ne pas suffire. Si vous reconnaissez ce sch&eacute;ma, notre guidance sur la <Link href="/crise-couple/jalousie-excessive/" className="text-teal-600 hover:text-teal-800 underline font-medium">jalousie excessive dans le couple</Link> peut vous &eacute;clairer davantage.
               </p>
             </div>
 
@@ -146,7 +146,7 @@ export default function DependanceAffectivePage() {
             <div className="bg-white border-l-4 border-teal-500 p-5 rounded-lg">
               <h3 className="font-bold text-teal-700 mb-2">5. Accepter l&rsquo;Inacceptable</h3>
               <p className="text-gray-700">
-                Par peur de perdre l&rsquo;autre, vous tol&eacute;rez des comportements que vous refuseriez normalement : manque de respect, mensonges, n&eacute;gligence &eacute;motionnelle, voire violence. Votre seuil de tol&eacute;rance est anormalement &eacute;lev&eacute; parce que la <strong>solitude</strong> vous terrifie plus que la <Link href="/sentiments/relation-toxique" className="text-teal-600 hover:text-teal-800 underline font-medium">relation toxique</Link> elle-m&ecirc;me.
+                Par peur de perdre l&rsquo;autre, vous tol&eacute;rez des comportements que vous refuseriez normalement : manque de respect, mensonges, n&eacute;gligence &eacute;motionnelle, voire violence. Votre seuil de tol&eacute;rance est anormalement &eacute;lev&eacute; parce que la <strong>solitude</strong> vous terrifie plus que la <Link href="/sentiments/relation-toxique/" className="text-teal-600 hover:text-teal-800 underline font-medium">relation toxique</Link> elle-m&ecirc;me.
               </p>
             </div>
 
@@ -220,7 +220,7 @@ export default function DependanceAffectivePage() {
           <div className="mt-6 bg-amber-50 border-l-4 border-amber-500 p-5 rounded-lg">
             <p className="text-gray-800 font-semibold mb-2">Comprendre pour briser le cycle :</p>
             <p className="text-gray-700">
-              La r&eacute;p&eacute;tition relationnelle n&rsquo;est pas une fatalit&eacute;. D&egrave;s que vous prenez conscience du <strong>sch&eacute;ma karmique</strong> qui op&egrave;re, vous r&eacute;cup&eacute;rez le pouvoir de le transformer. La voyance &eacute;claire ce qui reste dans l&rsquo;ombre : les blessures originelles, les croyances limitantes et les &eacute;nergies bloqu&eacute;es. Une bonne <Link href="/crise-couple/problemes-communication-couple" className="text-teal-600 hover:text-teal-800 underline font-medium">communication dans le couple</Link> est aussi essentielle pour &eacute;viter de reproduire ces dynamiques inconsciemment.
+              La r&eacute;p&eacute;tition relationnelle n&rsquo;est pas une fatalit&eacute;. D&egrave;s que vous prenez conscience du <strong>sch&eacute;ma karmique</strong> qui op&egrave;re, vous r&eacute;cup&eacute;rez le pouvoir de le transformer. La voyance &eacute;claire ce qui reste dans l&rsquo;ombre : les blessures originelles, les croyances limitantes et les &eacute;nergies bloqu&eacute;es. Une bonne <Link href="/crise-couple/problemes-communication-couple/" className="text-teal-600 hover:text-teal-800 underline font-medium">communication dans le couple</Link> est aussi essentielle pour &eacute;viter de reproduire ces dynamiques inconsciemment.
             </p>
           </div>
         </section>
@@ -238,7 +238,7 @@ export default function DependanceAffectivePage() {
             <div className="bg-white p-6 rounded-lg border-2 border-red-200">
               <h3 className="font-bold text-xl mb-4 text-red-700">&Eacute;tape 1 : La Prise de Conscience &mdash; La Tour (XVI)</h3>
               <p className="text-gray-700 mb-3">
-                Tout commence par un effondrement. <strong>La Tour</strong> repr&eacute;sente le moment de v&eacute;rit&eacute; o&ugrave; les illusions s&rsquo;&eacute;croulent : une <Link href="/crise-couple" className="text-teal-600 hover:text-teal-800 underline font-medium">crise de couple</Link>, une rupture, ou un &eacute;v&eacute;nement qui vous force &agrave; voir la r&eacute;alit&eacute; de votre d&eacute;pendance. Ce choc, aussi douloureux soit-il, est n&eacute;cessaire. Sans lui, le d&eacute;ni se poursuit ind&eacute;finiment. La Tour d&eacute;truit les structures fausses pour permettre une <strong>reconstruction authentique</strong>.
+                Tout commence par un effondrement. <strong>La Tour</strong> repr&eacute;sente le moment de v&eacute;rit&eacute; o&ugrave; les illusions s&rsquo;&eacute;croulent : une <Link href="/crise-couple/" className="text-teal-600 hover:text-teal-800 underline font-medium">crise de couple</Link>, une rupture, ou un &eacute;v&eacute;nement qui vous force &agrave; voir la r&eacute;alit&eacute; de votre d&eacute;pendance. Ce choc, aussi douloureux soit-il, est n&eacute;cessaire. Sans lui, le d&eacute;ni se poursuit ind&eacute;finiment. La Tour d&eacute;truit les structures fausses pour permettre une <strong>reconstruction authentique</strong>.
               </p>
               <div className="bg-red-50 p-4 rounded border-l-4 border-red-400">
                 <p className="text-gray-700"><strong>Guidance :</strong> Accueillez la crise comme un catalyseur de transformation. Ce qui s&rsquo;effondre n&rsquo;&eacute;tait pas solide. Ce qui reste apr&egrave;s est votre v&eacute;rit&eacute;.</p>
@@ -268,7 +268,7 @@ export default function DependanceAffectivePage() {
             <div className="bg-white p-6 rounded-lg border-2 border-purple-200">
               <h3 className="font-bold text-xl mb-4 text-purple-700">&Eacute;tape 4 : Apprendre l&rsquo;Ind&eacute;pendance &Eacute;motionnelle &mdash; L&rsquo;Ermite (IX)</h3>
               <p className="text-gray-700 mb-3">
-                <strong>L&rsquo;Ermite</strong> repr&eacute;sente la p&eacute;riode n&eacute;cessaire de solitude choisie. Contrairement &agrave; l&rsquo;isolement subi, cette retraite est volontaire et f&eacute;conde. Vous apprenez &agrave; &ecirc;tre seul(e) sans &ecirc;tre seul(e) : &agrave; trouver en vous la lumi&egrave;re qui vous guide, &agrave; d&eacute;velopper une <strong>ind&eacute;pendance &eacute;motionnelle</strong> qui ne d&eacute;pend plus de la pr&eacute;sence d&rsquo;un partenaire. Si une rupture fait partie de votre parcours, la guidance pour <Link href="/rupture/oublier-son-ex" className="text-teal-600 hover:text-teal-800 underline font-medium">tourner la page apr&egrave;s une relation toxique</Link> peut accompagner cette &eacute;tape.
+                <strong>L&rsquo;Ermite</strong> repr&eacute;sente la p&eacute;riode n&eacute;cessaire de solitude choisie. Contrairement &agrave; l&rsquo;isolement subi, cette retraite est volontaire et f&eacute;conde. Vous apprenez &agrave; &ecirc;tre seul(e) sans &ecirc;tre seul(e) : &agrave; trouver en vous la lumi&egrave;re qui vous guide, &agrave; d&eacute;velopper une <strong>ind&eacute;pendance &eacute;motionnelle</strong> qui ne d&eacute;pend plus de la pr&eacute;sence d&rsquo;un partenaire. Si une rupture fait partie de votre parcours, la guidance pour <Link href="/rupture/oublier-son-ex/" className="text-teal-600 hover:text-teal-800 underline font-medium">tourner la page apr&egrave;s une relation toxique</Link> peut accompagner cette &eacute;tape.
               </p>
               <div className="bg-purple-50 p-4 rounded border-l-4 border-purple-400">
                 <p className="text-gray-700"><strong>Guidance :</strong> La solitude choisie est la plus grande preuve de libert&eacute; int&eacute;rieure. L&rsquo;Ermite n&rsquo;est pas seul : il est en sa propre compagnie.</p>
@@ -369,7 +369,7 @@ export default function DependanceAffectivePage() {
           </div>
 
           <p className="text-gray-700">
-            Construire un <strong>amour &eacute;quilibr&eacute;</strong> demande de la vigilance, surtout au d&eacute;but. Les anciens r&eacute;flexes de d&eacute;pendance peuvent resurgir sous stress, et il faut savoir <Link href="/crise-couple/sauver-son-couple" className="text-teal-600 hover:text-teal-800 underline font-medium">pr&eacute;server son couple</Link> sans retomber dans les anciens sch&eacute;mas. L&rsquo;essentiel est de rester conscient de vos sch&eacute;mas et de vous entourer de personnes qui soutiennent votre <strong>croissance personnelle</strong>. D&eacute;couvrez ce que la guidance r&eacute;v&egrave;le sur <Link href="/sentiments/avenir-amoureux" className="text-teal-600 hover:text-teal-800 underline font-medium">votre avenir amoureux lib&eacute;r&eacute;</Link> des cha&icirc;nes du pass&eacute;.
+            Construire un <strong>amour &eacute;quilibr&eacute;</strong> demande de la vigilance, surtout au d&eacute;but. Les anciens r&eacute;flexes de d&eacute;pendance peuvent resurgir sous stress, et il faut savoir <Link href="/crise-couple/sauver-son-couple/" className="text-teal-600 hover:text-teal-800 underline font-medium">pr&eacute;server son couple</Link> sans retomber dans les anciens sch&eacute;mas. L&rsquo;essentiel est de rester conscient de vos sch&eacute;mas et de vous entourer de personnes qui soutiennent votre <strong>croissance personnelle</strong>. D&eacute;couvrez ce que la guidance r&eacute;v&egrave;le sur <Link href="/sentiments/avenir-amoureux/" className="text-teal-600 hover:text-teal-800 underline font-medium">votre avenir amoureux lib&eacute;r&eacute;</Link> des cha&icirc;nes du pass&eacute;.
           </p>
         </section>
 

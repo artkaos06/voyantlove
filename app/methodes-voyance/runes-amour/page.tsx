@@ -20,7 +20,7 @@ const config: ContentPageConfig = {
     h1: 'Runes Amour',
     subtitle: 'Tirage Runique pour Votre Vie Sentimentale',
     gradient: 'from-stone-700 via-amber-800 to-yellow-800',
-    backLink: { href: '/methodes-voyance', label: 'Retour aux Méthodes de Voyance' },
+    backLink: { href: '/methodes-voyance/', label: 'Retour aux Méthodes de Voyance' },
     anchors: [
       { href: '#runes-importantes', label: 'Les 7 Runes Clés', primary: true },
       { href: '#tirage', label: 'Faire un Tirage' },
@@ -54,10 +54,10 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/methodes-voyance', label: 'Toutes les Méthodes de Voyance Amoureuse' },
-    { href: '/methodes-voyance/tirage-tarot-amour', label: 'Tirage Tarot Amour : Guide Complet' },
-    { href: '/methodes-voyance/oracle-amour', label: 'Oracle Amour : Signification et Méthode' },
-    { href: '/methodes-voyance/pendule-amour', label: 'Pendule Amour : Réponses Claires et Rapides' },
+    { href: '/methodes-voyance/', label: 'Toutes les Méthodes de Voyance Amoureuse' },
+    { href: '/methodes-voyance/tirage-tarot-amour/', label: 'Tirage Tarot Amour : Guide Complet' },
+    { href: '/methodes-voyance/oracle-amour/', label: 'Oracle Amour : Signification et Méthode' },
+    { href: '/methodes-voyance/pendule-amour/', label: 'Pendule Amour : Réponses Claires et Rapides' },
   ],
 };
 
@@ -74,7 +74,7 @@ export default function RunesAmourPage() {
             Parmi les runes les plus significatives pour les questions de cœur, <strong>Gebo</strong> symbolise le don mutuel et l&apos;échange équilibré dans le couple, <strong>Wunjo</strong> annonce la joie et le bonheur partagé, tandis qu&apos;<strong>Ehwaz</strong> représente le partenariat profond et la fidélité durable. La <strong>lecture runes amour</strong> interprète ces symboles dans leur contexte, position, combinaisons, inversions, pour vous offrir une vision claire et nuancée de votre relation.
           </p>
           <p className="text-lg leading-relaxed">
-            Contrairement au tarot qui utilise des images narratives, les runes agissent par résonance énergétique directe avec votre question. Cette guidance complète vous explique l&apos;origine et le fonctionnement des runes, les sept symboles essentiels pour l&apos;amour, les méthodes de tirage, et comment distinguer les runes droites des runes inversées. Pour explorer d&apos;autres méthodes de divination amoureuse, consultez notre guide du <Link href="/methodes-voyance/tirage-tarot-amour" className="text-amber-700 hover:text-amber-900 underline font-medium">tirage tarot amour</Link> et ses nombreuses applications sentimentales.
+            Contrairement au tarot qui utilise des images narratives, les runes agissent par résonance énergétique directe avec votre question. Cette guidance complète vous explique l&apos;origine et le fonctionnement des runes, les sept symboles essentiels pour l&apos;amour, les méthodes de tirage, et comment distinguer les runes droites des runes inversées. Pour explorer d&apos;autres méthodes de divination amoureuse, consultez notre guide du <Link href="/methodes-voyance/tirage-tarot-amour/" className="text-amber-700 hover:text-amber-900 underline font-medium">tirage tarot amour</Link> et ses nombreuses applications sentimentales.
           </p>
         </article>
 
@@ -201,7 +201,7 @@ export default function RunesAmourPage() {
           <div className="bg-amber-100 border-l-4 border-amber-600 p-6 rounded-lg">
             <h4 className="font-bold text-amber-900 mb-2 text-lg">&#x26A0;&#xFE0F; L&apos;Importance de la Préparation</h4>
             <p className="text-gray-700">
-              Pour obtenir une lecture runique précise et fiable, la qualité de votre intention et de votre concentration est déterminante. Formulez votre question de manière claire et spécifique avant de tirer les runes. Évitez les questions à double sens ou trop vagues. Un voyant professionnel maîtrise ces conditions pour maximiser la justesse de la lecture. Pour approfondir votre compréhension des outils divinatoires, explorez également l&apos;<Link href="/methodes-voyance/oracle-amour" className="text-amber-700 hover:text-amber-900 underline font-medium">oracle amour</Link> et ses approches complémentaires.
+              Pour obtenir une lecture runique précise et fiable, la qualité de votre intention et de votre concentration est déterminante. Formulez votre question de manière claire et spécifique avant de tirer les runes. Évitez les questions à double sens ou trop vagues. Un voyant professionnel maîtrise ces conditions pour maximiser la justesse de la lecture. Pour approfondir votre compréhension des outils divinatoires, explorez également l&apos;<Link href="/methodes-voyance/oracle-amour/" className="text-amber-700 hover:text-amber-900 underline font-medium">oracle amour</Link> et ses approches complémentaires.
             </p>
           </div>
         </section>
@@ -337,7 +337,7 @@ export default function RunesAmourPage() {
           <div className="bg-white border-l-4 border-amber-500 p-6 rounded-lg">
             <h4 className="font-bold text-amber-900 mb-2 text-lg">&#x1F4A1; Le Meilleur des Deux Mondes</h4>
             <p className="text-gray-700">
-              De nombreux voyants professionnels combinent les deux systèmes dans une même consultation : les runes pour identifier l&apos;énergie dominante et les forces en jeu, puis le tarot pour affiner la lecture et apporter des détails narratifs. Cette approche combinée offre une vision à la fois précise et complète de votre situation amoureuse. Pour explorer cet outil complémentaire, découvrez notre guide du <Link href="/methodes-voyance/pendule-amour" className="text-amber-700 hover:text-amber-900 underline font-medium">pendule amour</Link> pour des confirmations intuitives rapides et efficaces.
+              De nombreux voyants professionnels combinent les deux systèmes dans une même consultation : les runes pour identifier l&apos;énergie dominante et les forces en jeu, puis le tarot pour affiner la lecture et apporter des détails narratifs. Cette approche combinée offre une vision à la fois précise et complète de votre situation amoureuse. Pour explorer cet outil complémentaire, découvrez notre guide du <Link href="/methodes-voyance/pendule-amour/" className="text-amber-700 hover:text-amber-900 underline font-medium">pendule amour</Link> pour des confirmations intuitives rapides et efficaces.
             </p>
           </div>
         </section>

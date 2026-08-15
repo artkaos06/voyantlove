@@ -20,7 +20,7 @@ const config: ContentPageConfig = {
     h1: 'Suis-je Médium ? Comment le Savoir',
     subtitle: 'Les signes d\'une sensibilité médiumnique dans votre vie sentimentale',
     gradient: 'from-violet-700 via-fuchsia-700 to-purple-800',
-    backLink: { href: '/methodes-voyance', label: 'Retour aux Méthodes de Voyance' },
+    backLink: { href: '/methodes-voyance/', label: 'Retour aux Méthodes de Voyance' },
     anchors: [
       { href: '#signes', label: 'Les Signes à Observer', primary: true },
       { href: '#distinguer', label: 'Empathe ou Médium ?' },
@@ -54,12 +54,12 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/methodes-voyance', label: 'Toutes les Méthodes de Voyance Amoureuse' },
-    { href: '/methodes-voyance/medium-amour', label: 'Médium Amour : Consultation et Guidance' },
-    { href: '/methodes-voyance/medium-amour#sans-support', label: 'Médium Sans Support : La Voyance Sans Outils' },
-    { href: '/methodes-voyance/voyance-sentimentale', label: 'Voyance Sentimentale' },
-    { href: '/glossaire/clairvoyance', label: 'Glossaire : Clairvoyance' },
-    { href: '/glossaire/channeling', label: 'Glossaire : Channeling' },
+    { href: '/methodes-voyance/', label: 'Toutes les Méthodes de Voyance Amoureuse' },
+    { href: '/methodes-voyance/medium-amour/', label: 'Médium Amour : Consultation et Guidance' },
+    { href: '/methodes-voyance/medium-amour/#sans-support', label: 'Médium Sans Support : La Voyance Sans Outils' },
+    { href: '/methodes-voyance/voyance-sentimentale/', label: 'Voyance Sentimentale' },
+    { href: '/glossaire/clairvoyance/', label: 'Glossaire : Clairvoyance' },
+    { href: '/glossaire/channeling/', label: 'Glossaire : Channeling' },
   ],
 };
 
@@ -70,7 +70,7 @@ export default function SuisJeMediumPage() {
     <ContentPage config={config}>
         <article className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-purple-700">
           <p className="text-lg leading-relaxed mb-4">
-            &laquo;&nbsp;<strong>Comment savoir si l&apos;on est médium</strong>&nbsp;?&nbsp;&raquo; est une question que beaucoup de personnes se posent, souvent d&eacute;clench&eacute;e par une <strong>intuition</strong> troublante v&eacute;rifi&eacute;e apr&egrave;s coup, une <strong>empathie</strong> qui d&eacute;borde le cadre habituel, ou la sensation r&eacute;currente de percevoir les <strong>&eacute;motions</strong> d&apos;un proche &mdash; en particulier d&apos;un partenaire &mdash; avant m&ecirc;me qu&apos;il ne les exprime. Contrairement &agrave; une consultation avec un <Link href="/methodes-voyance/medium-amour" className="text-purple-700 hover:text-purple-900 underline font-medium">m&eacute;dium professionnel</Link>, cette page s&apos;adresse &agrave; celles et ceux qui se demandent s&apos;ils poss&egrave;dent eux-m&ecirc;mes cette sensibilit&eacute;.
+            &laquo;&nbsp;<strong>Comment savoir si l&apos;on est médium</strong>&nbsp;?&nbsp;&raquo; est une question que beaucoup de personnes se posent, souvent d&eacute;clench&eacute;e par une <strong>intuition</strong> troublante v&eacute;rifi&eacute;e apr&egrave;s coup, une <strong>empathie</strong> qui d&eacute;borde le cadre habituel, ou la sensation r&eacute;currente de percevoir les <strong>&eacute;motions</strong> d&apos;un proche &mdash; en particulier d&apos;un partenaire &mdash; avant m&ecirc;me qu&apos;il ne les exprime. Contrairement &agrave; une consultation avec un <Link href="/methodes-voyance/medium-amour/" className="text-purple-700 hover:text-purple-900 underline font-medium">m&eacute;dium professionnel</Link>, cette page s&apos;adresse &agrave; celles et ceux qui se demandent s&apos;ils poss&egrave;dent eux-m&ecirc;mes cette sensibilit&eacute;.
           </p>
           <p className="text-lg leading-relaxed">
             Il n&apos;existe pas de test scientifique validant un &laquo;&nbsp;don de m&eacute;dium&nbsp;&raquo;. Cette guidance recense les <strong>signes les plus souvent d&eacute;crits</strong> par les praticiens et les personnes qui se sont interrog&eacute;es sur leur propre sensibilit&eacute;, avec la prudence n&eacute;cessaire face &agrave; un sujet qui ne se r&eacute;duit pas &agrave; une case coch&eacute;e.
@@ -125,7 +125,7 @@ export default function SuisJeMediumPage() {
             </div>
             <div className="bg-white rounded-lg p-5 border-2 border-indigo-300">
               <h3 className="font-bold text-lg mb-3 text-indigo-700">🕊️ Médium</h3>
-              <p className="text-gray-700 text-sm">D&eacute;crit une perception qui semble provenir d&apos;une source ext&eacute;rieure &agrave; sa propre pens&eacute;e &mdash; une information re&ccedil;ue plut&ocirc;t que d&eacute;duite. Pour en savoir plus sur cette distinction, consultez notre guide <Link href="/methodes-voyance/medium-amour" className="underline hover:text-indigo-900 font-medium">m&eacute;dium en amour</Link>.</p>
+              <p className="text-gray-700 text-sm">D&eacute;crit une perception qui semble provenir d&apos;une source ext&eacute;rieure &agrave; sa propre pens&eacute;e &mdash; une information re&ccedil;ue plut&ocirc;t que d&eacute;duite. Pour en savoir plus sur cette distinction, consultez notre guide <Link href="/methodes-voyance/medium-amour/" className="underline hover:text-indigo-900 font-medium">m&eacute;dium en amour</Link>.</p>
             </div>
           </div>
           <p className="text-gray-700 leading-relaxed mt-6">
@@ -154,7 +154,7 @@ export default function SuisJeMediumPage() {
             </div>
           </div>
           <div className="text-center mt-6">
-            <Link href="/consulter?ref=suis-je-medium" className="inline-block bg-purple-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-purple-800 transition">Échanger avec un Médium Vérifié →</Link>
+            <Link href="/consulter/?ref=suis-je-medium" className="inline-block bg-purple-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-purple-800 transition">Échanger avec un Médium Vérifié →</Link>
           </div>
         </section>
     </ContentPage>

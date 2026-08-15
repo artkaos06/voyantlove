@@ -20,7 +20,7 @@ const config: ContentPageConfig = {
     h1: 'Oracle de l\'Amour',
     subtitle: 'Guidance sentimentale par les cartes oracle pour éclairer votre cœur',
     gradient: 'from-purple-500 via-fuchsia-500 to-pink-500',
-    backLink: { href: '/methodes-voyance', label: 'Retour aux Méthodes de Voyance' },
+    backLink: { href: '/methodes-voyance/', label: 'Retour aux Méthodes de Voyance' },
     anchors: [
       { href: '#consultation', label: 'Consultation Oracle', primary: true },
       { href: '#oracles', label: 'Les Oracles Puissants' },
@@ -58,11 +58,11 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/methodes-voyance/tirage-tarot-amour', label: 'Tirage de Tarot Amoureux : Guide Complet' },
-    { href: '/methodes-voyance/astrologie-amoureuse', label: 'Astrologie Amoureuse : Compatibilité Astrale' },
-    { href: '/sentiments/avenir-amoureux', label: 'Mon Avenir Amoureux : Prédictions Complètes' },
-    { href: '/sentiments/pense-t-il-elle-a-moi', label: 'Pense-t-il/elle à Moi ?' },
-    { href: '/nouvelle-rencontre/flamme-jumelle', label: 'Flamme Jumelle : Connexion Spirituelle Intense' },
+    { href: '/methodes-voyance/tirage-tarot-amour/', label: 'Tirage de Tarot Amoureux : Guide Complet' },
+    { href: '/methodes-voyance/astrologie-amoureuse/', label: 'Astrologie Amoureuse : Compatibilité Astrale' },
+    { href: '/sentiments/avenir-amoureux/', label: 'Mon Avenir Amoureux : Prédictions Complètes' },
+    { href: '/sentiments/pense-t-il-elle-a-moi/', label: 'Pense-t-il/elle à Moi ?' },
+    { href: '/nouvelle-rencontre/flamme-jumelle/', label: 'Flamme Jumelle : Connexion Spirituelle Intense' },
   ],
 };
 
@@ -86,7 +86,7 @@ export default function OracleAmourPage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">&#x1F49C; Qu&apos;est-ce que l&apos;Oracle de l&apos;Amour ?</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">L&apos;oracle de l&apos;amour est un jeu de cartes divinatoires utilis&eacute; pour r&eacute;pondre aux questions sentimentales. Contrairement au tarot, chaque oracle poss&egrave;de sa propre symbolique et d&eacute;livre des messages intuitifs directs sur votre vie amoureuse.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            L&apos;<strong>Oracle de l&apos;Amour</strong> d&eacute;signe l&apos;ensemble des jeux de <strong>cartes oracle</strong> utilis&eacute;s sp&eacute;cifiquement pour r&eacute;pondre aux questions sentimentales. Parmi les <Link href="/methodes-voyance" className="text-purple-600 hover:text-purple-800 underline font-medium">m&eacute;thodes de voyance</Link> amoureuse, l&apos;oracle se distingue par sa libert&eacute; : contrairement au <strong>Tarot de Marseille</strong> dont la structure est fig&eacute;e, chaque oracle poss&egrave;de sa propre identit&eacute;, son propre nombre de cartes et sa propre mani&egrave;re de transmettre les messages de l&apos;univers. Cette diversit&eacute; constitue la richesse de l&apos;<strong>oracle sentimental</strong>.
+            L&apos;<strong>Oracle de l&apos;Amour</strong> d&eacute;signe l&apos;ensemble des jeux de <strong>cartes oracle</strong> utilis&eacute;s sp&eacute;cifiquement pour r&eacute;pondre aux questions sentimentales. Parmi les <Link href="/methodes-voyance/" className="text-purple-600 hover:text-purple-800 underline font-medium">m&eacute;thodes de voyance</Link> amoureuse, l&apos;oracle se distingue par sa libert&eacute; : contrairement au <strong>Tarot de Marseille</strong> dont la structure est fig&eacute;e, chaque oracle poss&egrave;de sa propre identit&eacute;, son propre nombre de cartes et sa propre mani&egrave;re de transmettre les messages de l&apos;univers. Cette diversit&eacute; constitue la richesse de l&apos;<strong>oracle sentimental</strong>.
           </p>
 
           <div className="space-y-5">
@@ -107,7 +107,7 @@ export default function OracleAmourPage() {
             <div className="bg-purple-50 border-l-4 border-purple-500 p-5 rounded-lg">
               <h3 className="font-bold text-lg mb-2 text-purple-700">L&apos;Oracle comme Miroir de l&apos;&Acirc;me</h3>
               <p className="text-gray-700 text-sm">
-                Plus qu&apos;un simple outil de pr&eacute;diction, l&apos;<strong>oracle de l&apos;amour</strong> agit comme un miroir de votre &acirc;me amoureuse. Il r&eacute;v&egrave;le vos d&eacute;sirs profonds, vos peurs inconscientes et les sch&eacute;mas r&eacute;p&eacute;titifs qui influencent vos <strong>relations sentimentales</strong>. En prenant conscience de ces m&eacute;canismes gr&acirc;ce &agrave; la <strong>guidance oracle</strong>, vous gagnez le pouvoir de transformer votre <Link href="/sentiments/avenir-amoureux" className="text-purple-600 hover:text-purple-800 underline font-medium">avenir amoureux</Link> en faisant des choix plus &eacute;clair&eacute;s et align&eacute;s avec votre &ecirc;tre v&eacute;ritable.
+                Plus qu&apos;un simple outil de pr&eacute;diction, l&apos;<strong>oracle de l&apos;amour</strong> agit comme un miroir de votre &acirc;me amoureuse. Il r&eacute;v&egrave;le vos d&eacute;sirs profonds, vos peurs inconscientes et les sch&eacute;mas r&eacute;p&eacute;titifs qui influencent vos <strong>relations sentimentales</strong>. En prenant conscience de ces m&eacute;canismes gr&acirc;ce &agrave; la <strong>guidance oracle</strong>, vous gagnez le pouvoir de transformer votre <Link href="/sentiments/avenir-amoureux/" className="text-purple-600 hover:text-purple-800 underline font-medium">avenir amoureux</Link> en faisant des choix plus &eacute;clair&eacute;s et align&eacute;s avec votre &ecirc;tre v&eacute;ritable.
               </p>
             </div>
           </div>
@@ -220,7 +220,7 @@ export default function OracleAmourPage() {
                 <p>&bull; <strong>Niveau :</strong> N&eacute;cessite expertise du tarologue</p>
               </div>
               <p className="text-sm text-purple-600 mt-4">
-                <Link href="/methodes-voyance/tirage-tarot-amour" className="underline hover:text-purple-800 font-medium">D&eacute;couvrir le tirage de tarot amoureux &rarr;</Link>
+                <Link href="/methodes-voyance/tirage-tarot-amour/" className="underline hover:text-purple-800 font-medium">D&eacute;couvrir le tirage de tarot amoureux &rarr;</Link>
               </p>
             </div>
 
@@ -256,7 +256,7 @@ export default function OracleAmourPage() {
             <div className="bg-pink-50 border-l-4 border-pink-500 p-5 rounded-lg">
               <h3 className="font-bold text-lg mb-2 text-pink-700">Pour les C&eacute;libataires en Qu&ecirc;te d&apos;Amour</h3>
               <p className="text-gray-700 text-sm">
-                L&apos;<strong>oracle</strong> identifie les <strong>blocages &eacute;nerg&eacute;tiques</strong> qui retardent votre <strong>rencontre amoureuse</strong> : blessures du pass&eacute; non gu&eacute;ries, peur de l&apos;engagement, id&eacute;alisation excessive du partenaire. Les cartes de l&apos;oracle r&eacute;v&egrave;lent &eacute;galement les p&eacute;riodes favorables et les lieux propices &agrave; une <strong>nouvelle rencontre</strong>. La carte &laquo;&nbsp;Renouveau&nbsp;&raquo; dans l&apos;Oracle Belline annonce l&apos;arriv&eacute;e imminente d&apos;un nouvel amour dans votre vie. Pour en savoir plus sur le timing de votre prochaine rencontre, d&eacute;couvrez notre page d&eacute;di&eacute;e &agrave; <Link href="/sentiments/pense-t-il-elle-a-moi" className="text-purple-600 hover:text-purple-800 underline font-medium">savoir si quelqu&apos;un pense &agrave; vous</Link>.
+                L&apos;<strong>oracle</strong> identifie les <strong>blocages &eacute;nerg&eacute;tiques</strong> qui retardent votre <strong>rencontre amoureuse</strong> : blessures du pass&eacute; non gu&eacute;ries, peur de l&apos;engagement, id&eacute;alisation excessive du partenaire. Les cartes de l&apos;oracle r&eacute;v&egrave;lent &eacute;galement les p&eacute;riodes favorables et les lieux propices &agrave; une <strong>nouvelle rencontre</strong>. La carte &laquo;&nbsp;Renouveau&nbsp;&raquo; dans l&apos;Oracle Belline annonce l&apos;arriv&eacute;e imminente d&apos;un nouvel amour dans votre vie. Pour en savoir plus sur le timing de votre prochaine rencontre, d&eacute;couvrez notre page d&eacute;di&eacute;e &agrave; <Link href="/sentiments/pense-t-il-elle-a-moi/" className="text-purple-600 hover:text-purple-800 underline font-medium">savoir si quelqu&apos;un pense &agrave; vous</Link>.
               </p>
             </div>
 
@@ -277,7 +277,7 @@ export default function OracleAmourPage() {
             <div className="bg-violet-50 border-l-4 border-violet-500 p-5 rounded-lg">
               <h3 className="font-bold text-lg mb-2 text-violet-700">Pour Explorer une Connexion Spirituelle</h3>
               <p className="text-gray-700 text-sm">
-                Si vous ressentez une connexion profonde et inexplicable avec quelqu&apos;un, l&apos;<strong>oracle sentimental</strong> peut confirmer la nature de ce lien. <strong>Flamme jumelle</strong>, <strong>&acirc;me s&oelig;ur</strong> ou lien karmique : les cartes r&eacute;v&egrave;lent la v&eacute;ritable nature de cette connexion et son potentiel d&apos;&eacute;volution. Pour une exploration approfondie de ces liens sacr&eacute;s, consultez notre guide complet sur la <Link href="/nouvelle-rencontre/flamme-jumelle" className="text-purple-600 hover:text-purple-800 underline font-medium">flamme jumelle</Link>.
+                Si vous ressentez une connexion profonde et inexplicable avec quelqu&apos;un, l&apos;<strong>oracle sentimental</strong> peut confirmer la nature de ce lien. <strong>Flamme jumelle</strong>, <strong>&acirc;me s&oelig;ur</strong> ou lien karmique : les cartes r&eacute;v&egrave;lent la v&eacute;ritable nature de cette connexion et son potentiel d&apos;&eacute;volution. Pour une exploration approfondie de ces liens sacr&eacute;s, consultez notre guide complet sur la <Link href="/nouvelle-rencontre/flamme-jumelle/" className="text-purple-600 hover:text-purple-800 underline font-medium">flamme jumelle</Link>.
               </p>
             </div>
           </div>

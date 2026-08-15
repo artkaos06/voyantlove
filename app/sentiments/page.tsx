@@ -69,79 +69,79 @@ export default function SentimentsHubPage() {
 
         <section className="mb-16">
           <h2 className="text-3xl font-bold mb-8 text-center">🗺️ Comprendre vos Sentiments</h2>
-          <p className="text-lg font-semibold text-gray-800 mb-4">La <Link href="/voyance-amour" className="text-rose-600 hover:text-rose-800 underline font-medium">voyance amoureuse</Link> analyse vos sentiments grace au tarot et a la clairvoyance. Un tirage sentimental revele la nature du lien, les emotions cachees et les intentions reelles de l'autre personne envers vous. La question la plus posee reste <Link href="/sentiments/maime-t-il-elle" className="text-rose-600 hover:text-rose-800 underline font-medium">m'aime-t-il/elle vraiment</Link>, a laquelle le tarot repond avec precision.</p>
+          <p className="text-lg font-semibold text-gray-800 mb-4">La <Link href="/voyance-amour/" className="text-rose-600 hover:text-rose-800 underline font-medium">voyance amoureuse</Link> analyse vos sentiments grace au tarot et a la clairvoyance. Un tirage sentimental revele la nature du lien, les emotions cachees et les intentions reelles de l'autre personne envers vous. La question la plus posee reste <Link href="/sentiments/maime-t-il-elle/" className="text-rose-600 hover:text-rose-800 underline font-medium">m'aime-t-il/elle vraiment</Link>, a laquelle le tarot repond avec precision.</p>
           <div className="grid md:grid-cols-3 gap-8">
-            <Link href="/sentiments/maime-t-il-elle" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-red-500">
+            <Link href="/sentiments/maime-t-il-elle/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-red-500">
               <div className="text-4xl mb-4">💖</div>
               <h3 className="text-2xl font-bold mb-3">M'aime-t-il/elle ?</h3>
               <p className="text-gray-600 mb-4">Décryptez ses vrais sentiments grâce au tarot et à la voyance.</p>
               <span className="text-red-600 font-semibold">Découvrir →</span>
             </Link>
 
-            <Link href="/sentiments/signes-il-elle-maime" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-pink-500">
+            <Link href="/sentiments/signes-il-elle-maime/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-pink-500">
               <div className="text-4xl mb-4">💝</div>
               <h3 className="text-2xl font-bold mb-3">Signes d'Amour</h3>
               <p className="text-gray-600 mb-4">Reconnaître les signes qu'il/elle vous aime vraiment.</p>
               <span className="text-pink-600 font-semibold">Découvrir →</span>
             </Link>
 
-            <Link href="/sentiments/avenir-amoureux" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-purple-500">
+            <Link href="/sentiments/avenir-amoureux/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-purple-500">
               <div className="text-4xl mb-4">🔮</div>
               <h3 className="text-2xl font-bold mb-3">Avenir Amoureux</h3>
               <p className="text-gray-600 mb-4">Prédictions sur votre futur sentimental et votre destinée.</p>
               <span className="text-purple-600 font-semibold">Découvrir →</span>
             </Link>
 
-            <Link href="/sentiments/compatibilite-amoureuse" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-rose-500">
+            <Link href="/sentiments/compatibilite-amoureuse/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-rose-500">
               <div className="text-4xl mb-4">💕</div>
               <h3 className="text-2xl font-bold mb-3">Compatibilité Amoureuse</h3>
               <p className="text-gray-600 mb-4">Évaluez la compatibilité de votre couple selon le tarot.</p>
               <span className="text-rose-600 font-semibold">Découvrir →</span>
             </Link>
 
-            <Link href="/sentiments/pense-t-il-elle-a-moi" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-violet-500">
+            <Link href="/sentiments/pense-t-il-elle-a-moi/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-violet-500">
               <div className="text-4xl mb-4">💭</div>
               <h3 className="text-2xl font-bold mb-3">Pense-t-il/elle à Moi ?</h3>
               <p className="text-gray-600 mb-4">Savoir si l'autre pense à vous grâce à la voyance.</p>
               <span className="text-violet-600 font-semibold">Découvrir →</span>
             </Link>
 
-            <Link href="/sentiments/relation-toxique" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-orange-500">
+            <Link href="/sentiments/relation-toxique/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-orange-500">
               <div className="text-4xl mb-4">⚠️</div>
               <h3 className="text-2xl font-bold mb-3">Relation Toxique</h3>
               <p className="text-gray-600 mb-4">Reconnaître les signes d'une relation toxique et se libérer.</p>
               <span className="text-orange-600 font-semibold">Découvrir →</span>
             </Link>
 
-            <Link href="/sentiments/savoir-si-cest-lamour" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-amber-500">
+            <Link href="/sentiments/savoir-si-cest-lamour/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-amber-500">
               <div className="text-4xl mb-4">💫</div>
               <h3 className="text-2xl font-bold mb-3">Est-ce l&apos;Amour ?</h3>
               <p className="text-gray-600 mb-4">Savoir si c&apos;est le vrai amour ou une simple attirance passagère.</p>
               <span className="text-amber-600 font-semibold">Découvrir →</span>
             </Link>
 
-            <Link href="/sentiments/sentiments-non-partages" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-slate-500">
+            <Link href="/sentiments/sentiments-non-partages/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-slate-500">
               <div className="text-4xl mb-4">💔</div>
               <h3 className="text-2xl font-bold mb-3">Sentiments Non Partagés</h3>
               <p className="text-gray-600 mb-4">Comprendre et surmonter un amour non réciproque.</p>
               <span className="text-slate-600 font-semibold">Découvrir →</span>
             </Link>
 
-            <Link href="/sentiments/voyance-mariage" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-teal-500">
+            <Link href="/sentiments/voyance-mariage/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-teal-500">
               <div className="text-4xl mb-4">💍</div>
               <h3 className="text-2xl font-bold mb-3">Voyance Mariage</h3>
               <p className="text-gray-600 mb-4">Prédictions sur votre mariage : timing, compatibilité et avenir.</p>
               <span className="text-teal-600 font-semibold">Découvrir →</span>
             </Link>
 
-            <Link href="/sentiments/que-ressent-il-elle-pour-moi" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-fuchsia-500">
+            <Link href="/sentiments/que-ressent-il-elle-pour-moi/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-fuchsia-500">
               <div className="text-4xl mb-4">💞</div>
               <h3 className="text-2xl font-bold mb-3">Que Ressent-il/elle pour Moi ?</h3>
               <p className="text-gray-600 mb-4">La nature exacte de ses sentiments : amour, attachement ou désir.</p>
               <span className="text-fuchsia-600 font-semibold">Lire →</span>
             </Link>
 
-            <Link href="/sentiments/voyance-grossesse-bebe" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-green-500">
+            <Link href="/sentiments/voyance-grossesse-bebe/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-green-500">
               <div className="text-4xl mb-4">👶</div>
               <h3 className="text-2xl font-bold mb-3">Voyance Grossesse</h3>
               <p className="text-gray-600 mb-4">Prédictions bébé et grossesse : quand et comment selon la voyance.</p>
@@ -180,23 +180,23 @@ export default function SentimentsHubPage() {
           <p className="text-lg font-semibold text-gray-800 mb-4">Reconquete, crise de couple et methodes de voyance completent l'analyse des sentiments pour une guidance amoureuse globale et un accompagnement personnalise.</p>
           <p className="text-gray-700 mb-4">Comprendre les sentiments est une étape clé dans votre parcours amoureux. Explorez ces guidances complémentaires.</p>
           <div className="grid md:grid-cols-3 gap-4">
-            <Link href="/reconquete" className="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition">
+            <Link href="/reconquete/" className="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition">
               <h3 className="font-bold text-gray-900 mb-1">Reconquête Amoureuse</h3>
               <p className="text-sm text-gray-600">Reconquérir votre ex en comprenant ses vrais sentiments.</p>
             </Link>
-            <Link href="/crise-couple" className="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition">
+            <Link href="/crise-couple/" className="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition">
               <h3 className="font-bold text-gray-900 mb-1">Crise de Couple</h3>
               <p className="text-sm text-gray-600">Résoudre les conflits et retrouver l'harmonie dans votre relation.</p>
             </Link>
-            <Link href="/methodes-voyance" className="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition">
+            <Link href="/methodes-voyance/" className="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition">
               <h3 className="font-bold text-gray-900 mb-1">Méthodes de Voyance</h3>
               <p className="text-sm text-gray-600">Tarot, oracle et astrologie pour décrypter les émotions cachées.</p>
             </Link>
-            <Link href="/voyance-gratuite-amour" className="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition">
+            <Link href="/voyance-gratuite-amour/" className="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition">
               <h3 className="font-bold text-gray-900 mb-1">Voyance Gratuite Amour</h3>
               <p className="text-sm text-gray-600">Découvrez la voyance sentimentale gratuitement avec nos tirages en ligne.</p>
             </Link>
-            <Link href="/consulter" className="bg-purple-50 rounded-lg p-4 hover:bg-purple-100 transition border border-purple-200">
+            <Link href="/consulter/" className="bg-purple-50 rounded-lg p-4 hover:bg-purple-100 transition border border-purple-200">
               <h3 className="font-bold text-purple-900 mb-1">Consulter un Voyant</h3>
               <p className="text-sm text-purple-700">Tous nos voyants disponibles maintenant pour une guidance personnalisée.</p>
             </Link>

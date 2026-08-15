@@ -22,25 +22,25 @@ export default function SiteHeader() {
           className="hidden md:flex items-center gap-6 text-sm font-medium text-gray-700"
         >
           <Link
-            href="/love-psychic-services"
+            href="/love-psychic-services/"
             className="hover:text-purple-700 transition-colors"
           >
             Services
           </Link>
           <Link
-            href="/love-psychic-services/keen-review"
+            href="/love-psychic-services/keen-review/"
             className="hover:text-purple-700 transition-colors"
           >
             Keen review
           </Link>
           <Link
-            href="/will-he-come-back"
+            href="/will-he-come-back/"
             className="hover:text-purple-700 transition-colors"
           >
             Will he come back?
           </Link>
           <Link
-            href="/is-my-ex-thinking-of-me"
+            href="/is-my-ex-thinking-of-me/"
             className="hover:text-purple-700 transition-colors"
           >
             Is my ex thinking of me?

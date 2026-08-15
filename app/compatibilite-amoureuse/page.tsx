@@ -62,7 +62,7 @@ export default function CompatibiliteHubPage() {
               return (
                 <Link
                   key={p.slug}
-                  href={`/compatibilite-amoureuse/${p.slug}`}
+                  href={`/compatibilite-amoureuse/${p.slug}/`}
                   className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition border-t-4 border-indigo-500"
                 >
                   <div className="text-3xl mb-3">{sA?.emoji} {sB?.emoji}</div>
@@ -78,19 +78,19 @@ export default function CompatibiliteHubPage() {
         <section className="mb-12">
           <h2 className="text-2xl font-bold mb-6 text-gray-900">Aller plus loin</h2>
           <div className="grid md:grid-cols-3 gap-4">
-            <Link href="/astrologie-amour" className="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition">
+            <Link href="/astrologie-amour/" className="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition">
               <h3 className="font-bold text-gray-900 mb-1">Les Signes en Amour</h3>
               <p className="text-sm text-gray-600">Le profil amoureux de chaque signe : caractère, séduction, défauts.</p>
             </Link>
-            <Link href="/methodes-voyance/synastrie-amoureuse" className="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition">
+            <Link href="/methodes-voyance/synastrie-amoureuse/" className="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition">
               <h3 className="font-bold text-gray-900 mb-1">Synastrie Amoureuse</h3>
               <p className="text-sm text-gray-600">L'analyse complète des deux thèmes astraux, planète par planète.</p>
             </Link>
-            <Link href="/sentiments/compatibilite-amoureuse" className="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition">
+            <Link href="/sentiments/compatibilite-amoureuse/" className="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition">
               <h3 className="font-bold text-gray-900 mb-1">Compatibilité : le Guide</h3>
               <p className="text-sm text-gray-600">Tous les indicateurs de compatibilité au-delà de l'astrologie.</p>
             </Link>
-            <Link href="/methodes-voyance/numerologie-amoureuse" className="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition">
+            <Link href="/methodes-voyance/numerologie-amoureuse/" className="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition">
               <h3 className="font-bold text-gray-900 mb-1">Numérologie Amoureuse</h3>
               <p className="text-sm text-gray-600">La compatibilité par les chiffres : chemin de vie et nombres.</p>
             </Link>

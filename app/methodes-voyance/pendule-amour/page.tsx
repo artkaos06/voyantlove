@@ -20,7 +20,7 @@ const config: ContentPageConfig = {
     h1: 'Pendule Amour',
     subtitle: 'Réponses Oui/Non instantanées et guidance sentimentale par la radiésthésie amoureuse',
     gradient: 'from-rose-500 via-fuchsia-500 to-pink-500',
-    backLink: { href: '/methodes-voyance', label: 'Retour aux Méthodes de Voyance' },
+    backLink: { href: '/methodes-voyance/', label: 'Retour aux Méthodes de Voyance' },
     anchors: [
       { href: '#consultation', label: 'Consultation Pendule', primary: true },
       { href: '#questions', label: 'Questions Populaires' },
@@ -70,11 +70,11 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/methodes-voyance/tirage-tarot-amour', label: 'Tirage de Tarot Amoureux : Guide Complet des Tirages Sentimentaux' },
-    { href: '/methodes-voyance/oracle-amour', label: 'Oracle de l\'Amour : Guidance Sentimentale par les Cartes' },
-    { href: '/methodes-voyance/voyance-telephone-amour', label: 'Voyance Téléphone Amour : Consultation à Distance' },
-    { href: '/methodes-voyance/astrologie-amoureuse', label: 'Astrologie Amoureuse : Compatibilité Astrale et Amour' },
-    { href: '/sentiments/maime-t-il-elle', label: 'M\'aime-t-il/elle Vraiment ? Les Signes qui Ne Trompent Pas' },
+    { href: '/methodes-voyance/tirage-tarot-amour/', label: 'Tirage de Tarot Amoureux : Guide Complet des Tirages Sentimentaux' },
+    { href: '/methodes-voyance/oracle-amour/', label: 'Oracle de l\'Amour : Guidance Sentimentale par les Cartes' },
+    { href: '/methodes-voyance/voyance-telephone-amour/', label: 'Voyance Téléphone Amour : Consultation à Distance' },
+    { href: '/methodes-voyance/astrologie-amoureuse/', label: 'Astrologie Amoureuse : Compatibilité Astrale et Amour' },
+    { href: '/sentiments/maime-t-il-elle/', label: 'M\'aime-t-il/elle Vraiment ? Les Signes qui Ne Trompent Pas' },
   ],
 };
 
@@ -98,7 +98,7 @@ export default function PenduleAmourPage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">&#x1F52E; Qu&apos;est-ce que le Pendule Amour ?</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le pendule amour est un instrument de radi&eacute;sth&eacute;sie suspendu &agrave; un fil qui capte les &eacute;nergies subtiles pour r&eacute;pondre par oui ou non &agrave; vos questions sentimentales. Utilis&eacute; depuis l&apos;Antiquit&eacute;, il existe en quartz rose, am&eacute;thyste ou laiton.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Le <strong>pendule amour</strong> est un outil de <strong>radi&eacute;sth&eacute;sie</strong> sp&eacute;cifiquement utilis&eacute; pour r&eacute;pondre aux interrogations du c&oelig;ur. Son histoire remonte &agrave; l&apos;Antiquit&eacute;, o&ugrave; les devins &eacute;gyptiens et grecs utilisaient d&eacute;j&agrave; des objets suspendus pour capter les &eacute;nergies invisibles et obtenir des r&eacute;ponses &agrave; leurs questions les plus profondes. Au fil des si&egrave;cles, cette pratique s&apos;est raffin&eacute;e pour devenir un art &agrave; part enti&egrave;re parmi les <Link href="/methodes-voyance" className="text-rose-600 hover:text-rose-800 underline font-medium">m&eacute;thodes de voyance</Link> sentimentale.
+            Le <strong>pendule amour</strong> est un outil de <strong>radi&eacute;sth&eacute;sie</strong> sp&eacute;cifiquement utilis&eacute; pour r&eacute;pondre aux interrogations du c&oelig;ur. Son histoire remonte &agrave; l&apos;Antiquit&eacute;, o&ugrave; les devins &eacute;gyptiens et grecs utilisaient d&eacute;j&agrave; des objets suspendus pour capter les &eacute;nergies invisibles et obtenir des r&eacute;ponses &agrave; leurs questions les plus profondes. Au fil des si&egrave;cles, cette pratique s&apos;est raffin&eacute;e pour devenir un art &agrave; part enti&egrave;re parmi les <Link href="/methodes-voyance/" className="text-rose-600 hover:text-rose-800 underline font-medium">m&eacute;thodes de voyance</Link> sentimentale.
           </p>
 
           <div className="space-y-5">
@@ -130,7 +130,7 @@ export default function PenduleAmourPage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">&#x1F4AB; Comment le Pendule R&eacute;pond &agrave; Vos Questions d&apos;Amour</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le pendule r&eacute;pond par ses mouvements : un cercle dans le sens horaire signifie oui, un mouvement contraire signifie non. L&apos;amplitude et la vitesse r&eacute;v&egrave;lent l&apos;intensit&eacute; des &eacute;nergies sentimentales en jeu.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            La force du <strong>pendule amour</strong> r&eacute;side dans sa capacit&eacute; &agrave; fournir des <strong>r&eacute;ponses oui/non</strong> nettes et imm&eacute;diates. Contrairement au <strong>tarot</strong> qui d&eacute;ploie un r&eacute;cit complexe ou &agrave; l&apos;<Link href="/methodes-voyance/oracle-amour" className="text-rose-600 hover:text-rose-800 underline font-medium">oracle de l&apos;amour</Link> qui d&eacute;livre des messages nuanc&eacute;s, le <strong>pendule divinatoire</strong> va droit au but. Voici comment interpr&eacute;ter ses mouvements en mati&egrave;re sentimentale.
+            La force du <strong>pendule amour</strong> r&eacute;side dans sa capacit&eacute; &agrave; fournir des <strong>r&eacute;ponses oui/non</strong> nettes et imm&eacute;diates. Contrairement au <strong>tarot</strong> qui d&eacute;ploie un r&eacute;cit complexe ou &agrave; l&apos;<Link href="/methodes-voyance/oracle-amour/" className="text-rose-600 hover:text-rose-800 underline font-medium">oracle de l&apos;amour</Link> qui d&eacute;livre des messages nuanc&eacute;s, le <strong>pendule divinatoire</strong> va droit au but. Voici comment interpr&eacute;ter ses mouvements en mati&egrave;re sentimentale.
           </p>
 
           <div className="space-y-5">
@@ -175,12 +175,12 @@ export default function PenduleAmourPage() {
           <div className="space-y-4">
             <div className="bg-rose-50 rounded-lg p-4 border-l-4 border-rose-400">
               <h3 className="font-bold text-rose-700 mb-1">1. &laquo;&nbsp;M&apos;aime-t-il/elle vraiment ?&nbsp;&raquo;</h3>
-              <p className="text-gray-700 text-sm">La question la plus pos&eacute;e en <strong>voyance sentimentale</strong>. Le pendule mesure l&apos;intensit&eacute; des sentiments de l&apos;autre &agrave; travers l&apos;amplitude de sa rotation. Pour approfondir, d&eacute;couvrez notre guide <Link href="/sentiments/maime-t-il-elle" className="text-rose-600 hover:text-rose-800 underline font-medium">M&apos;aime-t-il/elle vraiment ?</Link></p>
+              <p className="text-gray-700 text-sm">La question la plus pos&eacute;e en <strong>voyance sentimentale</strong>. Le pendule mesure l&apos;intensit&eacute; des sentiments de l&apos;autre &agrave; travers l&apos;amplitude de sa rotation. Pour approfondir, d&eacute;couvrez notre guide <Link href="/sentiments/maime-t-il-elle/" className="text-rose-600 hover:text-rose-800 underline font-medium">M&apos;aime-t-il/elle vraiment ?</Link></p>
             </div>
 
             <div className="bg-pink-50 rounded-lg p-4 border-l-4 border-pink-400">
               <h3 className="font-bold text-pink-700 mb-1">2. &laquo;&nbsp;Va-t-il/elle revenir ?&nbsp;&raquo;</h3>
-              <p className="text-gray-700 text-sm">Apr&egrave;s une <strong>rupture</strong>, cette question hante les c&oelig;urs bris&eacute;s. Le <strong>pendule</strong> capte les &eacute;nergies de retour et le potentiel de <strong>reconqu&ecirc;te</strong>. Consultez &eacute;galement <Link href="/reconquete/va-t-il-elle-revenir" className="text-rose-600 hover:text-rose-800 underline font-medium">Va-t-il/elle revenir ?</Link> Si votre question porte sp&eacute;cifiquement sur la reconqu&ecirc;te et le retour d&apos;un ex, notre guide d&eacute;di&eacute; au <Link href="/reconquete/pendule-retour-amour" className="text-rose-600 hover:text-rose-800 underline font-medium">pendule pour faire revenir une personne</Link> d&eacute;taille la m&eacute;thode et ses limites.</p>
+              <p className="text-gray-700 text-sm">Apr&egrave;s une <strong>rupture</strong>, cette question hante les c&oelig;urs bris&eacute;s. Le <strong>pendule</strong> capte les &eacute;nergies de retour et le potentiel de <strong>reconqu&ecirc;te</strong>. Consultez &eacute;galement <Link href="/reconquete/va-t-il-elle-revenir/" className="text-rose-600 hover:text-rose-800 underline font-medium">Va-t-il/elle revenir ?</Link> Si votre question porte sp&eacute;cifiquement sur la reconqu&ecirc;te et le retour d&apos;un ex, notre guide d&eacute;di&eacute; au <Link href="/reconquete/pendule-retour-amour/" className="text-rose-600 hover:text-rose-800 underline font-medium">pendule pour faire revenir une personne</Link> d&eacute;taille la m&eacute;thode et ses limites.</p>
             </div>
 
             <div className="bg-fuchsia-50 rounded-lg p-4 border-l-4 border-fuchsia-400">
@@ -195,7 +195,7 @@ export default function PenduleAmourPage() {
 
             <div className="bg-pink-50 rounded-lg p-4 border-l-4 border-pink-400">
               <h3 className="font-bold text-pink-700 mb-1">5. &laquo;&nbsp;Vais-je rencontrer quelqu&apos;un bient&ocirc;t ?&nbsp;&raquo;</h3>
-              <p className="text-gray-700 text-sm">Pour les c&eacute;libataires, le pendule sonde les &eacute;nergies de <strong>rencontre amoureuse</strong> &agrave; venir. D&eacute;couvrez aussi les <Link href="/nouvelle-rencontre/signes-ame-soeur" className="text-rose-600 hover:text-rose-800 underline font-medium">signes de l&apos;&acirc;me s&oelig;ur</Link>.</p>
+              <p className="text-gray-700 text-sm">Pour les c&eacute;libataires, le pendule sonde les &eacute;nergies de <strong>rencontre amoureuse</strong> &agrave; venir. D&eacute;couvrez aussi les <Link href="/nouvelle-rencontre/signes-ame-soeur/" className="text-rose-600 hover:text-rose-800 underline font-medium">signes de l&apos;&acirc;me s&oelig;ur</Link>.</p>
             </div>
 
             <div className="bg-fuchsia-50 rounded-lg p-4 border-l-4 border-fuchsia-400">
@@ -255,7 +255,7 @@ export default function PenduleAmourPage() {
                 <p>&bull; <strong>Limite :</strong> Interpr&eacute;tation complexe</p>
               </div>
               <p className="text-sm text-indigo-600 mt-3">
-                <Link href="/methodes-voyance/tirage-tarot-amour" className="underline hover:text-indigo-800 font-medium">D&eacute;couvrir le tarot amoureux &rarr;</Link>
+                <Link href="/methodes-voyance/tirage-tarot-amour/" className="underline hover:text-indigo-800 font-medium">D&eacute;couvrir le tarot amoureux &rarr;</Link>
               </p>
             </div>
 
@@ -268,7 +268,7 @@ export default function PenduleAmourPage() {
                 <p>&bull; <strong>Limite :</strong> Moins syst&eacute;matique</p>
               </div>
               <p className="text-sm text-purple-600 mt-3">
-                <Link href="/methodes-voyance/oracle-amour" className="underline hover:text-purple-800 font-medium">D&eacute;couvrir l&apos;oracle amour &rarr;</Link>
+                <Link href="/methodes-voyance/oracle-amour/" className="underline hover:text-purple-800 font-medium">D&eacute;couvrir l&apos;oracle amour &rarr;</Link>
               </p>
             </div>
           </div>
@@ -283,7 +283,7 @@ export default function PenduleAmourPage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">&#x1F9D9; Consulter un Voyant Sp&eacute;cialis&eacute; en Pendule</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Un voyant sp&eacute;cialis&eacute; en pendule offre une neutralit&eacute; &eacute;motionnelle, une ma&icirc;trise technique et une clairvoyance compl&eacute;mentaire qui d&eacute;cuplent la pr&eacute;cision des r&eacute;ponses &agrave; vos questions sentimentales.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Si le <strong>pendule amour</strong> peut &ecirc;tre utilis&eacute; en pratique personnelle, une consultation avec un <strong>voyant</strong> sp&eacute;cialis&eacute; en <strong>radi&eacute;sth&eacute;sie</strong> offre un niveau de pr&eacute;cision et de profondeur incomparable. L&apos;expertise du praticien transforme un simple oui/non en v&eacute;ritable <strong>guidance sentimentale</strong> &eacute;clair&eacute;e, que ce soit en cabinet ou lors d&apos;une <Link href="/methodes-voyance/voyance-telephone-amour" className="text-rose-600 hover:text-rose-800 underline font-medium">voyance par t&eacute;l&eacute;phone</Link>.
+            Si le <strong>pendule amour</strong> peut &ecirc;tre utilis&eacute; en pratique personnelle, une consultation avec un <strong>voyant</strong> sp&eacute;cialis&eacute; en <strong>radi&eacute;sth&eacute;sie</strong> offre un niveau de pr&eacute;cision et de profondeur incomparable. L&apos;expertise du praticien transforme un simple oui/non en v&eacute;ritable <strong>guidance sentimentale</strong> &eacute;clair&eacute;e, que ce soit en cabinet ou lors d&apos;une <Link href="/methodes-voyance/voyance-telephone-amour/" className="text-rose-600 hover:text-rose-800 underline font-medium">voyance par t&eacute;l&eacute;phone</Link>.
           </p>
 
           <div className="space-y-5">
@@ -297,14 +297,14 @@ export default function PenduleAmourPage() {
             <div className="bg-fuchsia-50 border-l-4 border-fuchsia-500 p-5 rounded-lg">
               <h3 className="font-bold text-lg mb-2 text-fuchsia-700">D&eacute;roulement d&apos;une S&eacute;ance</h3>
               <p className="text-gray-700 text-sm">
-                La <strong>consultation pendule</strong> commence par un &eacute;change sur votre situation amoureuse pour cerner vos interrogations. Le <strong>voyant</strong> calibre ensuite son <strong>pendule</strong>, puis pose une s&eacute;rie de questions structur&eacute;es : d&apos;abord les questions g&eacute;n&eacute;rales sur les &eacute;nergies de votre <strong>relation</strong>, puis des questions de plus en plus pr&eacute;cises pour affiner les r&eacute;ponses. Chaque mouvement du pendule est analys&eacute; en fonction de son amplitude, de sa vitesse et de sa direction. Le praticien compl&egrave;te souvent la s&eacute;ance par un <Link href="/methodes-voyance/tirage-tarot-amour" className="text-rose-600 hover:text-rose-800 underline font-medium">tirage de tarot amoureux</Link> pour approfondir les r&eacute;ponses obtenues.
+                La <strong>consultation pendule</strong> commence par un &eacute;change sur votre situation amoureuse pour cerner vos interrogations. Le <strong>voyant</strong> calibre ensuite son <strong>pendule</strong>, puis pose une s&eacute;rie de questions structur&eacute;es : d&apos;abord les questions g&eacute;n&eacute;rales sur les &eacute;nergies de votre <strong>relation</strong>, puis des questions de plus en plus pr&eacute;cises pour affiner les r&eacute;ponses. Chaque mouvement du pendule est analys&eacute; en fonction de son amplitude, de sa vitesse et de sa direction. Le praticien compl&egrave;te souvent la s&eacute;ance par un <Link href="/methodes-voyance/tirage-tarot-amour/" className="text-rose-600 hover:text-rose-800 underline font-medium">tirage de tarot amoureux</Link> pour approfondir les r&eacute;ponses obtenues.
               </p>
             </div>
 
             <div className="bg-pink-50 border-l-4 border-pink-500 p-5 rounded-lg">
               <h3 className="font-bold text-lg mb-2 text-pink-700">La Combinaison Pendule + Voyance</h3>
               <p className="text-gray-700 text-sm">
-                Les <strong>voyants</strong> les plus talentueux utilisent le <strong>pendule</strong> comme point de d&eacute;part de leur <strong>clairvoyance</strong>. Le mouvement du pendule &laquo;&nbsp;ouvre un canal&nbsp;&raquo; qui permet au praticien de recevoir des visions, des impressions et des messages compl&eacute;mentaires. Cette synergie entre <strong>radi&eacute;sth&eacute;sie</strong> et intuition transforme une simple r&eacute;ponse binaire en une v&eacute;ritable guidance compl&egrave;te. Le pendule confirme la direction, la <strong>voyance</strong> dessine le chemin. Vous pouvez &eacute;galement explorer l&apos;<Link href="/methodes-voyance/astrologie-amoureuse" className="text-rose-600 hover:text-rose-800 underline font-medium">astrologie amoureuse</Link> pour croiser les r&eacute;v&eacute;lations du pendule avec les influences plan&eacute;taires.
+                Les <strong>voyants</strong> les plus talentueux utilisent le <strong>pendule</strong> comme point de d&eacute;part de leur <strong>clairvoyance</strong>. Le mouvement du pendule &laquo;&nbsp;ouvre un canal&nbsp;&raquo; qui permet au praticien de recevoir des visions, des impressions et des messages compl&eacute;mentaires. Cette synergie entre <strong>radi&eacute;sth&eacute;sie</strong> et intuition transforme une simple r&eacute;ponse binaire en une v&eacute;ritable guidance compl&egrave;te. Le pendule confirme la direction, la <strong>voyance</strong> dessine le chemin. Vous pouvez &eacute;galement explorer l&apos;<Link href="/methodes-voyance/astrologie-amoureuse/" className="text-rose-600 hover:text-rose-800 underline font-medium">astrologie amoureuse</Link> pour croiser les r&eacute;v&eacute;lations du pendule avec les influences plan&eacute;taires.
               </p>
             </div>
           </div>

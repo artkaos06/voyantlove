@@ -172,6 +172,88 @@ export function normalizeRoute(href: string): string {
   return clean.endsWith('/') ? clean : `${clean}/`;
 }
 
+// ---------------------------------------------------------------------------
+// Trailing-slash literal audit
+//
+// next.config.mjs sets trailingSlash: true, and middleware.ts 308-redirects
+// any page request missing it. That redirect is a safety net, not something
+// source code should lean on: every literal internal link should already
+// point at the canonical (slashed) form. These two helpers are the source-of-
+// truth definition of "needs a trailing slash" shared by both the codemod
+// that fixed the repo-wide backlog and the checkTrailingSlashLinks() gate in
+// validate-pseo.ts that keeps it fixed.
+// ---------------------------------------------------------------------------
+
+/** Our own domains, expressed as absolute-URL prefixes. A literal href/url
+ * targeting one of these is just as much an "internal page link" as a
+ * root-relative one (e.g. email templates, app/admin's absolute preview
+ * links) — strip the origin so the rest of the trailing-slash logic is
+ * identical for both forms. */
+const SELF_ORIGINS = ['https://www.voyantlove.fr', 'https://voyantlove.fr'];
+
+function stripSelfOrigin(raw: string): string {
+  for (const origin of SELF_ORIGINS) {
+    if (raw.startsWith(`${origin}/`)) return raw.slice(origin.length);
+  }
+  return raw;
+}
+
+/**
+ * Every navigation-like string literal in a source file: JSX `href="..."` /
+ * `href={'...'}` / `href={`...`}` attributes, and object-literal
+ * `href: '...'` properties (nav arrays, ContentPageConfig.related/backLink,
+ * funnel-link maps, etc.), href-named defaults such as `ctaHref = '...'`,
+ * client-router calls, and Next redirect calls. Template-literal interpolations
+ * (e.g. `${slug}`) are returned verbatim; isUnslashedInternalHref() treats
+ * them as opaque path segments, which is enough since none of this repo's
+ * dynamic hrefs interpolate a `/`, `?`, or `#` into the value.
+ */
+export function extractHrefLikeLiterals(source: string): string[] {
+  const patterns = [
+    /\bhref\s*(?:=\{?|:)\s*(['"`])((?:\\.|(?!\1)[^\\])*)\1/g,
+    /\b[A-Za-z_$][\w$]*Href\s*=\s*(['"`])((?:\\.|(?!\1)[^\\])*)\1/g,
+    /\brouter\.(?:push|replace)\s*\(\s*(['"`])((?:\\.|(?!\1)[^\\])*)\1/g,
+    /\b(?:redirect|permanentRedirect)\s*\(\s*(['"`])((?:\\.|(?!\1)[^\\])*)\1/g,
+  ];
+  const matches: { index: number; value: string }[] = [];
+  for (const re of patterns) {
+    let m: RegExpExecArray | null;
+    while ((m = re.exec(source)) !== null) {
+      matches.push({ index: m.index, value: m[2] });
+    }
+  }
+  return matches.sort((a, b) => a.index - b.index).map((match) => match.value);
+}
+
+/**
+ * True if `raw` is an internal page-route link that should carry a trailing
+ * slash but doesn't. Deliberately excludes everything that must NOT be
+ * slashed: mailto:/tel:, external URLs, `/api/*` route handlers, `/_next` /
+ * `/_vercel` internals, email-template placeholders (`{{ unsubscribe }}`),
+ * fragment-only same-page anchors (`#foo`), and any path segment that's
+ * already slashed or ends in a file extension (static assets).
+ */
+export function isUnslashedInternalHref(raw: string): boolean {
+  const value = stripSelfOrigin(raw);
+
+  if (value.startsWith('mailto:') || value.startsWith('tel:')) return false;
+  if (/^https?:\/\//.test(value)) return false; // still absolute → external (or unhandled own-domain form)
+  if (value.startsWith('//')) return false; // protocol-relative external
+  if (value.startsWith('{{')) return false; // email template placeholder
+  if (!value.startsWith('/')) return false; // fragment-only, relative, or a non-literal remnant
+  if (value.startsWith('/api/')) return false;
+  if (value.startsWith('/_next') || value.startsWith('/_vercel')) return false;
+
+  const qIdx = value.search(/[?#]/);
+  const pathPart = qIdx === -1 ? value : value.slice(0, qIdx);
+
+  if (pathPart === '') return false;
+  if (pathPart.endsWith('/')) return false; // already canonical
+  if (/\.[a-zA-Z0-9]{1,5}$/.test(pathPart)) return false; // static file w/ extension
+
+  return true;
+}
+
 /**
  * Walk one or more directories collecting every .tsx/.ts source file's text.
  * Used for internal-link (orphan) discovery, which must see links declared

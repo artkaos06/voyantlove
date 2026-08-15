@@ -215,7 +215,7 @@ export default function AProposPage() {
           <h2 className="text-2xl font-bold mb-4">Une question sur VoyantLove ?</h2>
           <p className="text-lg opacity-90 mb-6">Notre équipe est disponible pour répondre à vos questions sur nos services et notre approche.</p>
           <Link
-            href="/contact"
+            href="/contact/"
             className="inline-block bg-white text-purple-700 px-8 py-3 rounded-lg font-bold hover:shadow-lg transition-all"
           >
             Nous Contacter

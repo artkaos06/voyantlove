@@ -44,7 +44,7 @@ export default function LanderTLDR({
   summary,
   ctaPrompt = 'Want personalized clarity from a real love psychic?',
   cta,
-  ctaHref = '/love-psychic-services/keen-review',
+  ctaHref = '/love-psychic-services/keen-review/',
   ctaLabel = 'See our Keen review →',
   ctaFootnote,
 }: LanderTLDRProps) {

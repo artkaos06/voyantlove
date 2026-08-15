@@ -20,7 +20,7 @@ const config: ContentPageConfig = {
     h1: 'Rencontre Amoureuse en Ligne : Guidance Voyance',
     subtitle: 'Trouvez l\'amour en ligne guidé(e) par la voyance et le tarot',
     gradient: 'from-cyan-500 via-cyan-600 to-blue-600',
-    backLink: { href: '/nouvelle-rencontre', label: 'Nouvelle Rencontre' },
+    backLink: { href: '/nouvelle-rencontre/', label: 'Nouvelle Rencontre' },
     anchors: [
       { href: '#consultation', label: 'Consultation Rencontre', primary: true },
     ],
@@ -53,12 +53,12 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/nouvelle-rencontre/quand-rencontre-amour', label: 'Quand Vais-je Rencontrer l\'Amour ?' },
-    { href: '/nouvelle-rencontre/peur-de-aimer-a-nouveau', label: 'Peur d\'Aimer à Nouveau' },
-    { href: '/nouvelle-rencontre/signes-ame-soeur', label: 'Les Signes de l\'Âme Sœur' },
-    { href: '/nouvelle-rencontre/flamme-jumelle', label: 'La Flamme Jumelle' },
-    { href: '/nouvelle-rencontre/trouver-ame-soeur', label: 'Trouver son Âme Sœur' },
-    { href: '/sentiments/maime-t-il-elle', label: 'M\'aime-t-il / M\'aime-t-elle ?' },
+    { href: '/nouvelle-rencontre/quand-rencontre-amour/', label: 'Quand Vais-je Rencontrer l\'Amour ?' },
+    { href: '/nouvelle-rencontre/peur-de-aimer-a-nouveau/', label: 'Peur d\'Aimer à Nouveau' },
+    { href: '/nouvelle-rencontre/signes-ame-soeur/', label: 'Les Signes de l\'Âme Sœur' },
+    { href: '/nouvelle-rencontre/flamme-jumelle/', label: 'La Flamme Jumelle' },
+    { href: '/nouvelle-rencontre/trouver-ame-soeur/', label: 'Trouver son Âme Sœur' },
+    { href: '/sentiments/maime-t-il-elle/', label: 'M\'aime-t-il / M\'aime-t-elle ?' },
   ],
 };
 
@@ -94,11 +94,11 @@ export default function RencontreAmoureuseEnLignePage() {
           </div>
           <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-lg">
             <h3 className="font-bold text-lg mb-2 text-blue-700">Les Blocages Invisibles</h3>
-            <p className="text-gray-700">Beaucoup de célibataires sabotent inconsciemment leurs <strong>rencontres</strong>. Peur de l'engagement, idéalisation impossible, <strong>blessures</strong> non guéries d'une ancienne relation, croyances limitantes sur l'amour. Le <strong>tarot</strong> met en lumière ces <strong>blocages</strong> avec précision. Le <strong>Diable</strong> révèle les schémas d'attachement toxiques. La <strong>Lune</strong> pointe les illusions et les projections. Le Huit d'Épées montre les auto-limitations mentales. En prenant conscience de ces <strong>obstacles</strong>, vous pouvez les transformer et attirer enfin des partenaires alignés avec vos vrais besoins affectifs. Si vous reconnaissez cette peur en vous, notre guide sur <Link href="/nouvelle-rencontre/peur-de-aimer-a-nouveau" className="text-cyan-600 hover:text-cyan-800 underline font-medium">la peur d'aimer à nouveau</Link> vous accompagnera.</p>
+            <p className="text-gray-700">Beaucoup de célibataires sabotent inconsciemment leurs <strong>rencontres</strong>. Peur de l'engagement, idéalisation impossible, <strong>blessures</strong> non guéries d'une ancienne relation, croyances limitantes sur l'amour. Le <strong>tarot</strong> met en lumière ces <strong>blocages</strong> avec précision. Le <strong>Diable</strong> révèle les schémas d'attachement toxiques. La <strong>Lune</strong> pointe les illusions et les projections. Le Huit d'Épées montre les auto-limitations mentales. En prenant conscience de ces <strong>obstacles</strong>, vous pouvez les transformer et attirer enfin des partenaires alignés avec vos vrais besoins affectifs. Si vous reconnaissez cette peur en vous, notre guide sur <Link href="/nouvelle-rencontre/peur-de-aimer-a-nouveau/" className="text-cyan-600 hover:text-cyan-800 underline font-medium">la peur d'aimer à nouveau</Link> vous accompagnera.</p>
           </div>
           <div className="bg-indigo-50 border-l-4 border-indigo-500 p-6 rounded-lg">
             <h3 className="font-bold text-lg mb-2 text-indigo-700">Les Fenêtres Astrologiques Favorables</h3>
-            <p className="text-gray-700">L'<strong>astrologie</strong> identifie des périodes plus propices aux <strong>rencontres significatives</strong>. Quand <strong>Vénus</strong> transite votre maison 7 (celle du couple), les probabilités de rencontrer quelqu'un d'important augmentent considérablement. Les <strong>nouvelles lunes</strong> en signes d'eau favorisent les connexions émotionnelles profondes. <strong>Jupiter</strong> dans votre maison 5 (romance) ouvre une année entière de possibilités amoureuses. Un <strong>voyant</strong> calcule ces fenêtres pour que vous intensifiiez vos recherches au bon moment et découvriez <Link href="/nouvelle-rencontre/quand-rencontre-amour" className="text-cyan-600 hover:text-cyan-800 underline font-medium">quand vous rencontrerez l'amour</Link>.</p>
+            <p className="text-gray-700">L'<strong>astrologie</strong> identifie des périodes plus propices aux <strong>rencontres significatives</strong>. Quand <strong>Vénus</strong> transite votre maison 7 (celle du couple), les probabilités de rencontrer quelqu'un d'important augmentent considérablement. Les <strong>nouvelles lunes</strong> en signes d'eau favorisent les connexions émotionnelles profondes. <strong>Jupiter</strong> dans votre maison 5 (romance) ouvre une année entière de possibilités amoureuses. Un <strong>voyant</strong> calcule ces fenêtres pour que vous intensifiiez vos recherches au bon moment et découvriez <Link href="/nouvelle-rencontre/quand-rencontre-amour/" className="text-cyan-600 hover:text-cyan-800 underline font-medium">quand vous rencontrerez l'amour</Link>.</p>
           </div>
         </div>
       </section>
@@ -183,7 +183,7 @@ export default function RencontreAmoureuseEnLignePage() {
           </div>
           <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-lg">
             <h3 className="font-bold mb-2 text-blue-700">La Conversation qui Connecte</h3>
-            <p className="text-gray-700 text-sm">Posez des questions ouvertes, partagez des anecdotes personnelles, créez un <strong>espace de confiance</strong>. Le <strong>tarot</strong> montre que les conversations qui alternent profondeur et légèreté créent les meilleures connexions. N'attendez pas trop longtemps avant de proposer un rendez-vous : la <strong>voyance</strong> confirme que l'énergie s'essouffle après deux semaines d'échanges uniquement virtuels. Pour approfondir vos connaissances sur les signes de compatibilité, découvrez notre guide sur <Link href="/nouvelle-rencontre/signes-ame-soeur" className="text-cyan-600 hover:text-cyan-800 underline font-medium">les signes de l'âme sœur</Link>.</p>
+            <p className="text-gray-700 text-sm">Posez des questions ouvertes, partagez des anecdotes personnelles, créez un <strong>espace de confiance</strong>. Le <strong>tarot</strong> montre que les conversations qui alternent profondeur et légèreté créent les meilleures connexions. N'attendez pas trop longtemps avant de proposer un rendez-vous : la <strong>voyance</strong> confirme que l'énergie s'essouffle après deux semaines d'échanges uniquement virtuels. Pour approfondir vos connaissances sur les signes de compatibilité, découvrez notre guide sur <Link href="/nouvelle-rencontre/signes-ame-soeur/" className="text-cyan-600 hover:text-cyan-800 underline font-medium">les signes de l'âme sœur</Link>.</p>
           </div>
           <div className="bg-indigo-50 border-l-4 border-indigo-500 p-4 rounded-lg">
             <h3 className="font-bold mb-2 text-indigo-700">Le Premier Rendez-vous</h3>

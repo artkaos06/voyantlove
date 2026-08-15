@@ -20,7 +20,7 @@ const config: ContentPageConfig = {
     h1: 'Voyance par Mail Amour',
     subtitle: 'Guide du Format Écrit et Alternative Immédiate en Direct',
     gradient: 'from-teal-600 via-cyan-600 to-blue-600',
-    backLink: { href: '/methodes-voyance', label: 'Retour aux Méthodes de Voyance' },
+    backLink: { href: '/methodes-voyance/', label: 'Retour aux Méthodes de Voyance' },
     anchors: [
       { href: '#formuler', label: 'Comment Formuler sa Question', primary: true },
       { href: '#choisir', label: 'Choisir son Voyant' },
@@ -58,10 +58,10 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/methodes-voyance', label: 'Méthodes de Voyance : Toutes nos Approches' },
-    { href: '/methodes-voyance/voyance-par-chat-amour', label: 'Voyance par Chat Amour : Consultation Instantanée' },
-    { href: '/methodes-voyance/voyance-telephone-amour', label: 'Voyance par Téléphone : Échange Direct et Immédiat' },
-    { href: '/methodes-voyance/tirage-tarot-amour', label: 'Tirage Tarot Amour : Lire les Cartes de l\'Amour' },
+    { href: '/methodes-voyance/', label: 'Méthodes de Voyance : Toutes nos Approches' },
+    { href: '/methodes-voyance/voyance-par-chat-amour/', label: 'Voyance par Chat Amour : Consultation Instantanée' },
+    { href: '/methodes-voyance/voyance-telephone-amour/', label: 'Voyance par Téléphone : Échange Direct et Immédiat' },
+    { href: '/methodes-voyance/tirage-tarot-amour/', label: 'Tirage Tarot Amour : Lire les Cartes de l\'Amour' },
   ],
 };
 
@@ -78,7 +78,7 @@ export default function VoyanceParMailAmourPage() {
             Lorsqu’un praticien tiers propose ce format, le <strong>voyant par mail</strong> réalise généralement un <strong>tirage écrit</strong> à partir de la question, puis consigne son interprétation dans un texte que la personne peut conserver. Les modalités, tarifs et délais dépendent du service choisi et doivent être vérifiés auprès de celui-ci.
           </p>
           <p className="text-lg leading-relaxed">
-            Si vous souhaitez parler de votre situation sans attendre une réponse par email, l’alternative disponible sur VoyantLove est une <Link href="/consulter?ref=voyance-par-mail-guide" className="text-teal-600 hover:text-teal-800 underline font-medium">consultation en direct avec un voyant</Link>. Vous pouvez aussi comparer les formats dans notre guide sur la <Link href="/methodes-voyance/voyance-par-chat-amour" className="text-teal-600 hover:text-teal-800 underline font-medium">voyance par chat</Link>.
+            Si vous souhaitez parler de votre situation sans attendre une réponse par email, l’alternative disponible sur VoyantLove est une <Link href="/consulter/?ref=voyance-par-mail-guide" className="text-teal-600 hover:text-teal-800 underline font-medium">consultation en direct avec un voyant</Link>. Vous pouvez aussi comparer les formats dans notre guide sur la <Link href="/methodes-voyance/voyance-par-chat-amour/" className="text-teal-600 hover:text-teal-800 underline font-medium">voyance par chat</Link>.
           </p>
         </article>
 
@@ -236,7 +236,7 @@ export default function VoyanceParMailAmourPage() {
               Les voyants par mail utilisent diverses méthodes selon leur spécialité :
             </p>
             <ul className="space-y-2 text-gray-700">
-              <li className="flex items-start gap-2"><span className="text-teal-500 font-bold">&#x2022;</span> <strong>Tirage tarot amoureux :</strong> 3 à 10 lames pour explorer passé, présent et futur sentimental. Pour approfondir cette méthode, consultez notre guide sur le <Link href="/methodes-voyance/tirage-tarot-amour" className="text-teal-600 hover:text-teal-800 underline font-medium">tirage tarot amour</Link>.</li>
+              <li className="flex items-start gap-2"><span className="text-teal-500 font-bold">&#x2022;</span> <strong>Tirage tarot amoureux :</strong> 3 à 10 lames pour explorer passé, présent et futur sentimental. Pour approfondir cette méthode, consultez notre guide sur le <Link href="/methodes-voyance/tirage-tarot-amour/" className="text-teal-600 hover:text-teal-800 underline font-medium">tirage tarot amour</Link>.</li>
               <li className="flex items-start gap-2"><span className="text-teal-500 font-bold">&#x2022;</span> <strong>Oracle de l'amour :</strong> Cartes messages spécifiquement dédiées aux questions sentimentales</li>
               <li className="flex items-start gap-2"><span className="text-teal-500 font-bold">&#x2022;</span> <strong>Numérologie amoureuse :</strong> Analyse des nombres de vie pour évaluer la compatibilité</li>
               <li className="flex items-start gap-2"><span className="text-teal-500 font-bold">&#x2022;</span> <strong>Lecture médiumnique :</strong> Connexion directe avec les énergies de la personne concernée</li>
@@ -311,7 +311,7 @@ export default function VoyanceParMailAmourPage() {
           <div className="bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded-lg">
             <h4 className="font-bold text-yellow-800 mb-2">&#x26A0;&#xFE0F; Mise en Garde sur les Offres Gratuites</h4>
             <p className="text-gray-700">
-              Certains sites proposent une <strong>voyance par mail gratuite</strong> comme appât commercial. La réponse initiale est souvent vague et conçue pour susciter un besoin de "révélation complète" payante. Si vous souhaitez comparer avec une consultation en direct, la <Link href="/methodes-voyance/voyance-telephone-amour" className="text-teal-600 hover:text-teal-800 underline font-medium">voyance par téléphone</Link> propose généralement quelques minutes gratuites d'une meilleure qualité d'échange.
+              Certains sites proposent une <strong>voyance par mail gratuite</strong> comme appât commercial. La réponse initiale est souvent vague et conçue pour susciter un besoin de "révélation complète" payante. Si vous souhaitez comparer avec une consultation en direct, la <Link href="/methodes-voyance/voyance-telephone-amour/" className="text-teal-600 hover:text-teal-800 underline font-medium">voyance par téléphone</Link> propose généralement quelques minutes gratuites d'une meilleure qualité d'échange.
             </p>
           </div>
         </section>

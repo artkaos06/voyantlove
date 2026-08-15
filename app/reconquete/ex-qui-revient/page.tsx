@@ -20,7 +20,7 @@ const config: ContentPageConfig = {
     h1: 'Ex qui Revient',
     subtitle: 'Que faire selon le tarot ?',
     gradient: 'from-violet-500 via-pink-500 to-rose-500',
-    backLink: { href: '/reconquete', label: 'Retour à la Reconquête' },
+    backLink: { href: '/reconquete/', label: 'Retour à la Reconquête' },
     anchors: [
       { href: '#consultation', label: 'Consultation', primary: true },
     ],
@@ -61,14 +61,14 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/reconquete', label: 'Reconquête Amoureuse : Toutes nos Guidances' },
-    { href: '/reconquete/seconde-chance-amour', label: 'Seconde Chance en Amour : Conditions de Réussite' },
-    { href: '/reconquete/se-remettre-ensemble', label: 'Se Remettre Ensemble : Les 5 Étapes' },
-    { href: '/reconquete/ex-revient-silence-radio', label: 'Ex qui Revient après Silence Radio' },
-    { href: '/reconquete/retour-de-lex', label: 'Retour de l\'Ex : Signes et Timing' },
-    { href: '/reconquete/va-t-il-elle-revenir', label: 'Va-t-il/elle Revenir ? Prédiction Tarot' },
-    { href: '/reconquete/reconquerir-son-ex', label: 'Reconquérir son Ex : Stratégies Efficaces' },
-    { href: '/reconquete/ex-chaud-et-froid-apres-separation', label: 'Mon Ex est Chaud et Froid : Décoder les Signaux' },
+    { href: '/reconquete/', label: 'Reconquête Amoureuse : Toutes nos Guidances' },
+    { href: '/reconquete/seconde-chance-amour/', label: 'Seconde Chance en Amour : Conditions de Réussite' },
+    { href: '/reconquete/se-remettre-ensemble/', label: 'Se Remettre Ensemble : Les 5 Étapes' },
+    { href: '/reconquete/ex-revient-silence-radio/', label: 'Ex qui Revient après Silence Radio' },
+    { href: '/reconquete/retour-de-lex/', label: 'Retour de l\'Ex : Signes et Timing' },
+    { href: '/reconquete/va-t-il-elle-revenir/', label: 'Va-t-il/elle Revenir ? Prédiction Tarot' },
+    { href: '/reconquete/reconquerir-son-ex/', label: 'Reconquérir son Ex : Stratégies Efficaces' },
+    { href: '/reconquete/ex-chaud-et-froid-apres-separation/', label: 'Mon Ex est Chaud et Froid : Décoder les Signaux' },
   ],
 };
 
@@ -80,8 +80,8 @@ export default function ExQuiRevientPage() {
 
         <article className="bg-white rounded-xl p-8 mb-8 border-t-4 border-pink-500">
           <p className="text-lg mb-4">Votre <strong>ex qui revient</strong> pose la question cruciale : <strong>que faire</strong> ? La plupart des personnes confrontées au <strong>retour de l'ex</strong> hésitent entre donner une <strong>seconde chance</strong> ou refuser définitivement. Le <strong>tarot</strong> guide votre décision en révélant les vraies motivations de ce retour et vos chances réelles de réussite. Cette situation délicate nécessite une analyse approfondie avant toute décision.</p>
-          <p className="text-lg mb-4">Le <strong>retour d'un ex</strong> peut signifier plusieurs choses : des regrets sincères accompagnés d'une véritable évolution personnelle, une simple nostalgie passagère, une peur de la solitude, ou dans les cas les plus problématiques, une tentative de manipulation. Pour mieux cerner ses intentions, repérez les <Link href="/sentiments/signes-il-elle-maime" className="text-pink-600 hover:text-pink-800 underline font-medium">signes qu'il ou elle vous aime</Link> encore avant de prendre une décision. Le <strong>tarot de Marseille</strong> et les oracles amoureux permettent de distinguer ces motivations pour éviter de répéter les mêmes erreurs qui ont mené à la première rupture.</p>
-          <p className="text-lg">Comprendre pourquoi votre <strong>ex revenu</strong> frappe à votre porte est essentiel pour prendre la bonne décision. Cette guidance tarot, au coeur de notre approche de la <Link href="/reconquete" className="text-pink-600 hover:text-pink-800 underline font-medium">reconquête amoureuse</Link>, vous aide à analyser la situation objectivement, au-delà des émotions du moment, pour construire un avenir sentimental épanouissant.</p>
+          <p className="text-lg mb-4">Le <strong>retour d'un ex</strong> peut signifier plusieurs choses : des regrets sincères accompagnés d'une véritable évolution personnelle, une simple nostalgie passagère, une peur de la solitude, ou dans les cas les plus problématiques, une tentative de manipulation. Pour mieux cerner ses intentions, repérez les <Link href="/sentiments/signes-il-elle-maime/" className="text-pink-600 hover:text-pink-800 underline font-medium">signes qu'il ou elle vous aime</Link> encore avant de prendre une décision. Le <strong>tarot de Marseille</strong> et les oracles amoureux permettent de distinguer ces motivations pour éviter de répéter les mêmes erreurs qui ont mené à la première rupture.</p>
+          <p className="text-lg">Comprendre pourquoi votre <strong>ex revenu</strong> frappe à votre porte est essentiel pour prendre la bonne décision. Cette guidance tarot, au coeur de notre approche de la <Link href="/reconquete/" className="text-pink-600 hover:text-pink-800 underline font-medium">reconquête amoureuse</Link>, vous aide à analyser la situation objectivement, au-delà des émotions du moment, pour construire un avenir sentimental épanouissant.</p>
         </article>
 
         {/* ZONE 1: Early CTA - Bandeau compact après introduction */}
@@ -95,7 +95,7 @@ export default function ExQuiRevientPage() {
           <div className="space-y-4">
             <div className="bg-green-50 border-l-4 border-green-500 p-5">
               <h3 className="font-bold text-green-700 mb-3 text-xl">1. Le Retour Sincère (Le Plus Rare)</h3>
-              <p className="text-gray-700 mb-3">Votre ex a réellement changé et évolué. Il ou elle reconnaît ses erreurs, a travaillé sur les causes de la rupture et revient avec des solutions concrètes. Ce type de retour se manifeste par de la patience, du respect de votre rythme, et une communication ouverte. Plusieurs signes concrets permettent de savoir si le <Link href="/reconquete/retour-de-lex" className="text-pink-600 hover:text-pink-800 underline font-medium">retour de l'ex</Link> est sincère ou superficiel.</p>
+              <p className="text-gray-700 mb-3">Votre ex a réellement changé et évolué. Il ou elle reconnaît ses erreurs, a travaillé sur les causes de la rupture et revient avec des solutions concrètes. Ce type de retour se manifeste par de la patience, du respect de votre rythme, et une communication ouverte. Plusieurs signes concrets permettent de savoir si le <Link href="/reconquete/retour-de-lex/" className="text-pink-600 hover:text-pink-800 underline font-medium">retour de l'ex</Link> est sincère ou superficiel.</p>
               <p className="text-gray-700"><strong>Signes à observer :</strong> Actions cohérentes avec les paroles, acceptation de sa responsabilité, proposition de thérapie de couple ou changements concrets, respect de vos limites. Le tarot révèle ce retour avec Les Amoureux, Le Soleil ou Le Jugement.</p>
             </div>
 

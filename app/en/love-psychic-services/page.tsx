@@ -85,7 +85,7 @@ export default function ServicesHub() {
 
           <div className="flex flex-col sm:flex-row gap-3">
             <Link
-              href="/love-psychic-services/keen-review"
+              href="/love-psychic-services/keen-review/"
               className="inline-flex items-center justify-center bg-purple-600 hover:bg-purple-700 text-white font-semibold px-5 py-3 rounded-lg transition-colors"
             >
               Read the full Keen review →

@@ -20,7 +20,7 @@ const config: ContentPageConfig = {
     h1: 'Retrouver Confiance en Soi Après un Divorce',
     subtitle: 'Un chemin de reconstruction, étape par étape, à votre rythme',
     gradient: 'from-teal-500 via-emerald-500 to-cyan-600',
-    backLink: { href: '/rupture', label: 'Retour à Rupture & Guérison' },
+    backLink: { href: '/rupture/', label: 'Retour à Rupture & Guérison' },
     anchors: [
       { href: '#parcours', label: 'Le Parcours de Reconstruction', primary: true },
       { href: '#pret', label: 'Suis-je Prêt à Rencontrer ?' },
@@ -58,11 +58,11 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/rupture', label: 'Rupture & Guérison : Toutes nos Guidances' },
-    { href: '/rupture/voyance-divorce-separation', label: 'Voyance Divorce et Séparation' },
-    { href: '/rupture/guerir-rupture', label: 'Guérir d\'une Rupture Amoureuse' },
-    { href: '/nouvelle-rencontre/peur-de-aimer-a-nouveau', label: 'Surmonter la Peur d\'Aimer à Nouveau' },
-    { href: '/nouvelle-rencontre/nouvelle-relation-amoureuse', label: 'Construire une Nouvelle Relation' },
+    { href: '/rupture/', label: 'Rupture & Guérison : Toutes nos Guidances' },
+    { href: '/rupture/voyance-divorce-separation/', label: 'Voyance Divorce et Séparation' },
+    { href: '/rupture/guerir-rupture/', label: 'Guérir d\'une Rupture Amoureuse' },
+    { href: '/nouvelle-rencontre/peur-de-aimer-a-nouveau/', label: 'Surmonter la Peur d\'Aimer à Nouveau' },
+    { href: '/nouvelle-rencontre/nouvelle-relation-amoureuse/', label: 'Construire une Nouvelle Relation' },
   ],
 };
 
@@ -95,7 +95,7 @@ export default function ConfianceEnSoiApresDivorcePage() {
             Pendant une longue relation, une partie de qui l&apos;on est se définit à travers le <strong>couple</strong> : des rôles, des habitudes, un regard quotidien qui nous renvoyait une image de nous-mêmes. Le <strong>divorce</strong> retire ce cadre d&apos;un coup, et la perte de repères qui suit n&apos;est pas un signe de faiblesse : c&apos;est la conséquence logique de la disparition d&apos;un point d&apos;appui devenu invisible tant qu&apos;il était là.
           </p>
           <p className="text-gray-700 leading-relaxed">
-            Comprendre ce mécanisme change tout : votre confiance n&apos;a pas &laquo;disparu&raquo;, elle s&apos;était simplement <strong>adossée</strong> à la relation. La reconstruire consiste à réapprendre à la faire reposer sur vous-même. Ce travail rejoint celui, plus large, de <Link href="/rupture/guerir-rupture" className="text-teal-600 hover:text-teal-800 underline font-medium">guérir d&apos;une rupture</Link>, dont il constitue une dimension centrale après un divorce.
+            Comprendre ce mécanisme change tout : votre confiance n&apos;a pas &laquo;disparu&raquo;, elle s&apos;était simplement <strong>adossée</strong> à la relation. La reconstruire consiste à réapprendre à la faire reposer sur vous-même. Ce travail rejoint celui, plus large, de <Link href="/rupture/guerir-rupture/" className="text-teal-600 hover:text-teal-800 underline font-medium">guérir d&apos;une rupture</Link>, dont il constitue une dimension centrale après un divorce.
           </p>
         </section>
 
@@ -179,7 +179,7 @@ export default function ConfianceEnSoiApresDivorcePage() {
             </div>
           </div>
           <div className="mt-6 bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded">
-            <p className="text-gray-700"><strong>{'\u{1F4A1}'} À retenir :</strong> dater n&apos;est jamais une obligation pour guérir, et rien ne presse. Si la <strong>peur d&apos;aimer à nouveau</strong> vous freine plus que la culpabilité, notre guide dédié à la <Link href="/nouvelle-rencontre/peur-de-aimer-a-nouveau" className="text-teal-600 hover:text-teal-800 underline font-medium">peur d&apos;aimer à nouveau</Link> approfondit ce blocage précis.</p>
+            <p className="text-gray-700"><strong>{'\u{1F4A1}'} À retenir :</strong> dater n&apos;est jamais une obligation pour guérir, et rien ne presse. Si la <strong>peur d&apos;aimer à nouveau</strong> vous freine plus que la culpabilité, notre guide dédié à la <Link href="/nouvelle-rencontre/peur-de-aimer-a-nouveau/" className="text-teal-600 hover:text-teal-800 underline font-medium">peur d&apos;aimer à nouveau</Link> approfondit ce blocage précis.</p>
           </div>
         </section>
     </ContentPage>

@@ -20,7 +20,7 @@ const config: ContentPageConfig = {
     h1: 'Dois-je l\'Attendre ?',
     subtitle: 'Le tarot révèle si l\'attente de son retour en vaut vraiment la peine',
     gradient: 'from-violet-600 via-purple-600 to-indigo-600',
-    backLink: { href: '/reconquete', label: 'Retour à la Reconquête' },
+    backLink: { href: '/reconquete/', label: 'Retour à la Reconquête' },
     anchors: [
       { href: '#signes', label: 'Signes à Observer', primary: true },
       { href: '#tirage', label: 'Tirage de l\'Attente' },
@@ -58,12 +58,12 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/reconquete', label: 'Reconquête Amoureuse : Toutes nos Guidances' },
-    { href: '/reconquete/va-t-il-elle-revenir', label: 'Va-t-il/elle Revenir ?' },
-    { href: '/reconquete/ex-revient-silence-radio', label: 'Silence Radio : Ex qui Recontacte' },
-    { href: '/crise-couple/dependance-affective', label: 'Dépendance Affective' },
-    { href: '/reconquete/se-remettre-ensemble', label: 'Se Remettre Ensemble' },
-    { href: '/reconquete/veut-se-remettre-ensemble-mais-ne-fait-rien', label: 'Il Veut se Remettre Ensemble mais ne Fait Rien' },
+    { href: '/reconquete/', label: 'Reconquête Amoureuse : Toutes nos Guidances' },
+    { href: '/reconquete/va-t-il-elle-revenir/', label: 'Va-t-il/elle Revenir ?' },
+    { href: '/reconquete/ex-revient-silence-radio/', label: 'Silence Radio : Ex qui Recontacte' },
+    { href: '/crise-couple/dependance-affective/', label: 'Dépendance Affective' },
+    { href: '/reconquete/se-remettre-ensemble/', label: 'Se Remettre Ensemble' },
+    { href: '/reconquete/veut-se-remettre-ensemble-mais-ne-fait-rien/', label: 'Il Veut se Remettre Ensemble mais ne Fait Rien' },
   ],
 };
 
@@ -80,7 +80,7 @@ export default function DoisJeAttendreSonRetourPage() {
               <strong>&laquo;Dois-je l&apos;attendre&raquo;</strong> est l&apos;une des questions les plus douloureuses en <strong>reconquête amoureuse</strong>. Entre l&apos;espoir d&apos;un <strong>retour</strong> et la peur de gâcher du temps précieux, cette décision mérite un éclairage précis. Le <strong>tarot de l&apos;attente</strong> analyse trois dimensions essentielles : la probabilité réelle de réconciliation, le <strong>timing</strong> envisageable et le coût émotionnel de cette patience pour vous.
             </p>
             <p className="text-lg leading-relaxed mb-4">
-              Toute attente n&apos;est pas équivalente. Une <strong>attente active</strong>, nourrie d&apos;espoir fondé et de travail personnel, diffère radicalement d&apos;une <strong>attente passive</strong> qui vous maintient prisonnier(ère) du passé. Pour évaluer si un retour est réellement envisageable, notre guidance sur <Link href="/reconquete/va-t-il-elle-revenir" className="text-violet-600 hover:text-violet-800 underline font-medium">va-t-il/elle revenir</Link> complète parfaitement cette analyse.
+              Toute attente n&apos;est pas équivalente. Une <strong>attente active</strong>, nourrie d&apos;espoir fondé et de travail personnel, diffère radicalement d&apos;une <strong>attente passive</strong> qui vous maintient prisonnier(ère) du passé. Pour évaluer si un retour est réellement envisageable, notre guidance sur <Link href="/reconquete/va-t-il-elle-revenir/" className="text-violet-600 hover:text-violet-800 underline font-medium">va-t-il/elle revenir</Link> complète parfaitement cette analyse.
             </p>
             <p className="text-lg leading-relaxed">
               Que vous soyez en plein <strong>silence radio</strong> ou dans l&apos;incertitude d&apos;un contact intermittent, la <strong>voyance</strong> offre un cadre clair pour décider sereinement si patienter est un acte de foi justifié ou une <strong>illusion émotionnelle</strong> à abandonner.
@@ -161,7 +161,7 @@ export default function DoisJeAttendreSonRetourPage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">{'\u{1F4C5}'} Combien de Temps Attendre Raisonnablement</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Au-dela de trois a six mois sans evolution tangible du silence radio, l&apos;attente devient generalement contre-productive et le tarot precise un delai personnalise selon votre situation.</p>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Il n&apos;existe pas de règle universelle, mais l&apos;expérience montre qu&apos;au-delà de <strong>trois à six mois</strong> sans évolution tangible, l&apos;attente devient souvent contre-productive et nuit à votre reconstruction personnelle. Si vous traversez actuellement une période de <Link href="/reconquete/ex-revient-silence-radio" className="text-violet-600 hover:text-violet-800 underline font-medium">silence radio</Link>, ce délai s&apos;applique particulièrement à votre situation.
+            Il n&apos;existe pas de règle universelle, mais l&apos;expérience montre qu&apos;au-delà de <strong>trois à six mois</strong> sans évolution tangible, l&apos;attente devient souvent contre-productive et nuit à votre reconstruction personnelle. Si vous traversez actuellement une période de <Link href="/reconquete/ex-revient-silence-radio/" className="text-violet-600 hover:text-violet-800 underline font-medium">silence radio</Link>, ce délai s&apos;applique particulièrement à votre situation.
           </p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Le <strong>tarot</strong> personnalise ce délai selon le profil émotionnel de votre ex, les circonstances de la rupture et l&apos;intensité du lien passé. Certaines situations justifient une patience plus longue, notamment lorsque des <strong>obstacles extérieurs</strong> (distance, famille, timing de vie) plutôt qu&apos;un désintérêt réel expliquent l&apos;éloignement actuel.
@@ -176,7 +176,7 @@ export default function DoisJeAttendreSonRetourPage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">{'\u{1F331}'} Attendre sans s&apos;Oublier : Comment Faire</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Maintenir sa vie sociale, poursuivre un travail personnel et fixer une limite claire permettent d&apos;attendre sainement sans sombrer dans la dependance affective ou l&apos;obsession.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            L&apos;<strong>attente saine</strong> se distingue radicalement de l&apos;attente toxique. Elle nécessite de continuer à vivre pleinement, sans mettre votre existence entière en pause dans l&apos;espoir d&apos;un retour hypothétique. Si cette attente commence à ressembler à une dépendance, notre guide sur la <Link href="/crise-couple/dependance-affective" className="text-violet-600 hover:text-violet-800 underline font-medium">dépendance affective</Link> peut vous aider à identifier les signaux d&apos;alerte.
+            L&apos;<strong>attente saine</strong> se distingue radicalement de l&apos;attente toxique. Elle nécessite de continuer à vivre pleinement, sans mettre votre existence entière en pause dans l&apos;espoir d&apos;un retour hypothétique. Si cette attente commence à ressembler à une dépendance, notre guide sur la <Link href="/crise-couple/dependance-affective/" className="text-violet-600 hover:text-violet-800 underline font-medium">dépendance affective</Link> peut vous aider à identifier les signaux d&apos;alerte.
           </p>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-white rounded-lg p-6 border-l-4 border-green-500">

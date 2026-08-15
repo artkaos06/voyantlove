@@ -20,7 +20,7 @@ const config: ContentPageConfig = {
     h1: "Peur d'Aimer à Nouveau : Surmonter les Blocages",
     subtitle: 'Lever les blocages amoureux avec la guidance de la voyance',
     gradient: 'from-cyan-500 via-cyan-600 to-blue-600',
-    backLink: { href: '/nouvelle-rencontre', label: 'Nouvelle Rencontre' },
+    backLink: { href: '/nouvelle-rencontre/', label: 'Nouvelle Rencontre' },
     anchors: [
       { href: '#consultation', label: 'Consultation Blocages', primary: true },
     ],
@@ -53,12 +53,12 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/nouvelle-rencontre/quand-rencontre-amour', label: 'Quand Vais-je Rencontrer l\'Amour ?' },
-    { href: '/nouvelle-rencontre/rencontre-amoureuse-en-ligne', label: 'Rencontre Amoureuse en Ligne' },
-    { href: '/nouvelle-rencontre/signes-ame-soeur', label: 'Les Signes de l\'Âme Sœur' },
-    { href: '/rupture/comment-tourner-la-page', label: 'Comment Tourner la Page' },
-    { href: '/rupture/chagrin-damour', label: 'Guérir d\'un Chagrin d\'Amour' },
-    { href: '/rupture/surmonter-trahison', label: 'Surmonter une Trahison Amoureuse' },
+    { href: '/nouvelle-rencontre/quand-rencontre-amour/', label: 'Quand Vais-je Rencontrer l\'Amour ?' },
+    { href: '/nouvelle-rencontre/rencontre-amoureuse-en-ligne/', label: 'Rencontre Amoureuse en Ligne' },
+    { href: '/nouvelle-rencontre/signes-ame-soeur/', label: 'Les Signes de l\'Âme Sœur' },
+    { href: '/rupture/comment-tourner-la-page/', label: 'Comment Tourner la Page' },
+    { href: '/rupture/chagrin-damour/', label: 'Guérir d\'un Chagrin d\'Amour' },
+    { href: '/rupture/surmonter-trahison/', label: 'Surmonter une Trahison Amoureuse' },
   ],
 };
 
@@ -90,7 +90,7 @@ export default function PeurDeAimerANouveauPage() {
         <div className="space-y-4">
           <div className="bg-cyan-50 border-l-4 border-cyan-500 p-6 rounded-lg">
             <h3 className="font-bold text-lg mb-2 text-cyan-700">La Blessure Originelle</h3>
-            <p className="text-gray-700">Le <strong>tarot</strong> remonte à la source de votre <strong>peur d'aimer</strong>. Le <strong>Trois d'Épées</strong> pointe vers une <strong>trahison</strong> ou un cœur brisé dont la cicatrice n'est pas encore fermée. La <strong>Lune</strong> révèle des peurs inconscientes, souvent héritées de l'enfance ou de schémas familiaux. Le <strong>Cinq de Coupes</strong> montre un <strong>deuil amoureux</strong> inachevé qui vous retient dans le passé. La <strong>voyance</strong> ne se contente pas d'identifier la blessure : elle éclaire aussi le chemin de <strong>guérison</strong> spécifique à votre situation. Si votre peur est liée à une <strong>rupture</strong> récente, notre guide sur <Link href="/rupture/chagrin-damour" className="text-cyan-600 hover:text-cyan-800 underline font-medium">le chagrin d'amour</Link> peut compléter cette guidance.</p>
+            <p className="text-gray-700">Le <strong>tarot</strong> remonte à la source de votre <strong>peur d'aimer</strong>. Le <strong>Trois d'Épées</strong> pointe vers une <strong>trahison</strong> ou un cœur brisé dont la cicatrice n'est pas encore fermée. La <strong>Lune</strong> révèle des peurs inconscientes, souvent héritées de l'enfance ou de schémas familiaux. Le <strong>Cinq de Coupes</strong> montre un <strong>deuil amoureux</strong> inachevé qui vous retient dans le passé. La <strong>voyance</strong> ne se contente pas d'identifier la blessure : elle éclaire aussi le chemin de <strong>guérison</strong> spécifique à votre situation. Si votre peur est liée à une <strong>rupture</strong> récente, notre guide sur <Link href="/rupture/chagrin-damour/" className="text-cyan-600 hover:text-cyan-800 underline font-medium">le chagrin d'amour</Link> peut compléter cette guidance.</p>
           </div>
           <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-lg">
             <h3 className="font-bold text-lg mb-2 text-blue-700">Les Mécanismes de Défense</h3>
@@ -98,7 +98,7 @@ export default function PeurDeAimerANouveauPage() {
           </div>
           <div className="bg-indigo-50 border-l-4 border-indigo-500 p-6 rounded-lg">
             <h3 className="font-bold text-lg mb-2 text-indigo-700">Le Potentiel Amoureux Derrière les Murs</h3>
-            <p className="text-gray-700">Derrière chaque mur de protection se cache un immense potentiel d'<strong>amour</strong>. Le <strong>tarot</strong> révèle ce qui vous attend quand vous oserez ouvrir votre cœur à nouveau. L'<strong>As de Coupes</strong> promet un nouveau départ affectif débordant de joie. Le <strong>Deux de Coupes</strong> annonce une <strong>rencontre</strong> d'âmes profonde et authentique. Le <strong>Soleil</strong> prédit une période de bonheur lumineux. La <strong>voyance</strong> vous montre que la douleur que vous fuyez est infiniment moindre que la joie qui vous attend. Découvrez <Link href="/nouvelle-rencontre/quand-rencontre-amour" className="text-cyan-600 hover:text-cyan-800 underline font-medium">quand vous rencontrerez l'amour</Link> pour ancrer cet espoir dans une temporalité concrète.</p>
+            <p className="text-gray-700">Derrière chaque mur de protection se cache un immense potentiel d'<strong>amour</strong>. Le <strong>tarot</strong> révèle ce qui vous attend quand vous oserez ouvrir votre cœur à nouveau. L'<strong>As de Coupes</strong> promet un nouveau départ affectif débordant de joie. Le <strong>Deux de Coupes</strong> annonce une <strong>rencontre</strong> d'âmes profonde et authentique. Le <strong>Soleil</strong> prédit une période de bonheur lumineux. La <strong>voyance</strong> vous montre que la douleur que vous fuyez est infiniment moindre que la joie qui vous attend. Découvrez <Link href="/nouvelle-rencontre/quand-rencontre-amour/" className="text-cyan-600 hover:text-cyan-800 underline font-medium">quand vous rencontrerez l'amour</Link> pour ancrer cet espoir dans une temporalité concrète.</p>
           </div>
         </div>
       </section>
@@ -132,7 +132,7 @@ export default function PeurDeAimerANouveauPage() {
             <div className="text-3xl font-bold text-cyan-600">4</div>
             <div>
               <h3 className="font-bold text-lg mb-2">Avancer à son Propre Rythme</h3>
-              <p className="text-gray-700">La société vous presse : « tu devrais refaire ta vie », « ça fait longtemps maintenant ». La <strong>voyance</strong> respecte votre rythme et affirme que chaque personne guérit différemment. Le <strong>tarot</strong> vous montre où vous en êtes objectivement dans votre processus, sans comparaison ni jugement. Certaines personnes ont besoin de mois, d'autres d'années. L'important n'est pas la vitesse mais la direction. La <strong>clairvoyance</strong> vous rassure : l'amour ne connaît pas de date de péremption. Si votre <strong>blocage</strong> est lié à une rupture encore fraîche, découvrez comment <Link href="/rupture/comment-tourner-la-page" className="text-cyan-600 hover:text-cyan-800 underline font-medium">tourner la page</Link> à votre rythme.</p>
+              <p className="text-gray-700">La société vous presse : « tu devrais refaire ta vie », « ça fait longtemps maintenant ». La <strong>voyance</strong> respecte votre rythme et affirme que chaque personne guérit différemment. Le <strong>tarot</strong> vous montre où vous en êtes objectivement dans votre processus, sans comparaison ni jugement. Certaines personnes ont besoin de mois, d'autres d'années. L'important n'est pas la vitesse mais la direction. La <strong>clairvoyance</strong> vous rassure : l'amour ne connaît pas de date de péremption. Si votre <strong>blocage</strong> est lié à une rupture encore fraîche, découvrez comment <Link href="/rupture/comment-tourner-la-page/" className="text-cyan-600 hover:text-cyan-800 underline font-medium">tourner la page</Link> à votre rythme.</p>
             </div>
           </div>
           <div className="flex items-start gap-4">
@@ -172,7 +172,7 @@ export default function PeurDeAimerANouveauPage() {
           </div>
           <div className="flex items-start gap-3">
             <div className="text-2xl text-cyan-600">✦</div>
-            <p className="text-gray-700"><strong>Les synchronicités se multiplient</strong> : L'univers vous envoie des signes : numéros récurrents, chansons significatives, rencontres fortuites. La <strong>clairvoyance</strong> capte ces <strong>synchronicités</strong> comme des signaux que votre <strong>chemin amoureux</strong> est prêt à accueillir une nouvelle personne. Explorez notre guide pour reconnaître <Link href="/nouvelle-rencontre/signes-ame-soeur" className="text-cyan-600 hover:text-cyan-800 underline font-medium">les signes de l'âme sœur</Link>.</p>
+            <p className="text-gray-700"><strong>Les synchronicités se multiplient</strong> : L'univers vous envoie des signes : numéros récurrents, chansons significatives, rencontres fortuites. La <strong>clairvoyance</strong> capte ces <strong>synchronicités</strong> comme des signaux que votre <strong>chemin amoureux</strong> est prêt à accueillir une nouvelle personne. Explorez notre guide pour reconnaître <Link href="/nouvelle-rencontre/signes-ame-soeur/" className="text-cyan-600 hover:text-cyan-800 underline font-medium">les signes de l'âme sœur</Link>.</p>
           </div>
         </div>
       </section>

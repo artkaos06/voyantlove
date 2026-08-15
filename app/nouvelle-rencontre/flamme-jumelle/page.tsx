@@ -20,7 +20,7 @@ const config: ContentPageConfig = {
     h1: 'Flamme Jumelle',
     subtitle: 'Reconnaître et Vivre cette Connexion Intense',
     gradient: 'from-violet-600 via-purple-600 to-indigo-600',
-    backLink: { href: '/nouvelle-rencontre', label: 'Retour aux Nouvelles Rencontres' },
+    backLink: { href: '/nouvelle-rencontre/', label: 'Retour aux Nouvelles Rencontres' },
     anchors: [
       { href: '#signes', label: 'Découvrir les 11 Signes', primary: true },
       { href: '#tarot', label: 'Confirmation Tarot' },
@@ -54,11 +54,11 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/nouvelle-rencontre', label: 'Nouvelle Rencontre : Toutes nos Guidances' },
-    { href: '/nouvelle-rencontre/signes-ame-soeur', label: 'Les Signes de l\'Âme Sœur : 15 Indices Infaillibles' },
-    { href: '/nouvelle-rencontre/trouver-ame-soeur', label: 'Trouver son Âme Sœur : Guide Complet' },
-    { href: '/sentiments/compatibilite-amoureuse', label: 'Compatibilité Amoureuse et Spirituelle' },
-    { href: '/sentiments/avenir-amoureux', label: 'Mon Avenir Amoureux : Guidance Complète' },
+    { href: '/nouvelle-rencontre/', label: 'Nouvelle Rencontre : Toutes nos Guidances' },
+    { href: '/nouvelle-rencontre/signes-ame-soeur/', label: 'Les Signes de l\'Âme Sœur : 15 Indices Infaillibles' },
+    { href: '/nouvelle-rencontre/trouver-ame-soeur/', label: 'Trouver son Âme Sœur : Guide Complet' },
+    { href: '/sentiments/compatibilite-amoureuse/', label: 'Compatibilité Amoureuse et Spirituelle' },
+    { href: '/sentiments/avenir-amoureux/', label: 'Mon Avenir Amoureux : Guidance Complète' },
   ],
 };
 
@@ -76,7 +76,7 @@ export default function FlammeJumellePage() {
           Le <strong>tarot karmique</strong> et la <strong>voyance spirituelle</strong> permettent de confirmer cette connexion unique, d'identifier les blocages énergétiques et d'éclairer le chemin vers l'union harmonieuse. Chaque étape de ce parcours sacré sert l'<strong>évolution de l'âme</strong>, transformant la douleur en sagesse et l'intensité en illumination. Que vous soyez en phase de reconnaissance, de séparation ou de retrouvailles, comprendre la dynamique des flammes jumelles change profondément votre perspective sur l'amour et la spiritualité.
         </p>
         <p className="text-lg leading-relaxed">
-          Cette guidance complète vous révèle les <strong>signes d'une flamme jumelle</strong>, les huit étapes du parcours, le rôle du <strong>tarot</strong> dans la confirmation, et les clés pour traverser la séparation avec conscience. Pour explorer d'autres formes de connexion profonde, découvrez notre guide complet sur les <Link href="/nouvelle-rencontre/signes-ame-soeur" className="text-purple-600 hover:text-purple-800 underline font-medium">signes de l'âme s&oelig;ur</Link> et leurs différences fondamentales avec la flamme jumelle.
+          Cette guidance complète vous révèle les <strong>signes d'une flamme jumelle</strong>, les huit étapes du parcours, le rôle du <strong>tarot</strong> dans la confirmation, et les clés pour traverser la séparation avec conscience. Pour explorer d'autres formes de connexion profonde, découvrez notre guide complet sur les <Link href="/nouvelle-rencontre/signes-ame-soeur/" className="text-purple-600 hover:text-purple-800 underline font-medium">signes de l'âme s&oelig;ur</Link> et leurs différences fondamentales avec la flamme jumelle.
         </p>
       </article>
 
@@ -151,7 +151,7 @@ export default function FlammeJumellePage() {
         <div className="bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded-lg mt-6">
           <h4 className="font-bold text-yellow-800 mb-2">&#x26A0;&#xFE0F; Clarification Importante</h4>
           <p className="text-gray-700">
-            Ne romanticisez jamais la souffrance. Une <strong>relation d'âme s&oelig;ur</strong> harmonieuse est tout aussi précieuse et spirituellement valable qu'une connexion de flamme jumelle. Si vous souhaitez approfondir la nature de votre lien, vous pouvez <Link href="/nouvelle-rencontre/trouver-ame-soeur" className="text-purple-600 hover:text-purple-800 underline font-medium">trouver votre âme s&oelig;ur</Link> grâce à nos guidances dédiées et comprendre quel type de connexion sacrée vous vivez.
+            Ne romanticisez jamais la souffrance. Une <strong>relation d'âme s&oelig;ur</strong> harmonieuse est tout aussi précieuse et spirituellement valable qu'une connexion de flamme jumelle. Si vous souhaitez approfondir la nature de votre lien, vous pouvez <Link href="/nouvelle-rencontre/trouver-ame-soeur/" className="text-purple-600 hover:text-purple-800 underline font-medium">trouver votre âme s&oelig;ur</Link> grâce à nos guidances dédiées et comprendre quel type de connexion sacrée vous vivez.
           </p>
         </div>
       </section>
@@ -346,7 +346,7 @@ export default function FlammeJumellePage() {
               Plusieurs <strong>signes spirituels</strong> annoncent l'imminence des retrouvailles : les synchronicités s'amplifient soudainement, vous rêvez de votre flamme jumelle de manière récurrente et vivide, un sentiment de paix profonde remplace progressivement la douleur de la séparation, et vous ressentez une <strong>complétude intérieure</strong> nouvelle.
             </p>
             <p className="text-gray-700">
-              D'autres indicateurs incluent des sensations physiques inexplicables (chaleur au niveau du c&oelig;ur, picotements), l'apparition de chiffres miroirs en abondance, et une <strong>transformation visible</strong> de votre vie extérieure. Si vous traversez cette phase, une consultation dédiée aux <Link href="/reconquete/va-t-il-elle-revenir" className="text-purple-600 hover:text-purple-800 underline font-medium">retrouvailles avec votre flamme</Link> peut éclairer le timing et les conditions de votre réunion.
+              D'autres indicateurs incluent des sensations physiques inexplicables (chaleur au niveau du c&oelig;ur, picotements), l'apparition de chiffres miroirs en abondance, et une <strong>transformation visible</strong> de votre vie extérieure. Si vous traversez cette phase, une consultation dédiée aux <Link href="/reconquete/va-t-il-elle-revenir/" className="text-purple-600 hover:text-purple-800 underline font-medium">retrouvailles avec votre flamme</Link> peut éclairer le timing et les conditions de votre réunion.
             </p>
           </div>
 
@@ -364,7 +364,7 @@ export default function FlammeJumellePage() {
         <h2 className="text-3xl font-bold mb-6 text-purple-600">&#x1F0CF; Le Tarot Peut-il Confirmer une Flamme Jumelle ?</h2>
         <p className="text-lg font-semibold text-gray-800 mb-4">Oui, les cartes Les Amoureux, le Deux de Coupe, la Maison Dieu et Temperance apparaissent systematiquement dans les tirages confirmant une connexion authentique de flamme jumelle.</p>
         <p className="text-gray-700 mb-6">
-          Le <strong>tarot karmique</strong> est l'un des outils les plus puissants pour confirmer, clarifier et guider une connexion de <strong>flamme jumelle</strong>. Certaines cartes apparaissent systématiquement dans les tirages liés à cette dynamique spirituelle unique. Votre <Link href="/sentiments/compatibilite-amoureuse" className="text-purple-600 hover:text-purple-800 underline font-medium">compatibilité spirituelle</Link> se révèle à travers des arcanes spécifiques.
+          Le <strong>tarot karmique</strong> est l'un des outils les plus puissants pour confirmer, clarifier et guider une connexion de <strong>flamme jumelle</strong>. Certaines cartes apparaissent systématiquement dans les tirages liés à cette dynamique spirituelle unique. Votre <Link href="/sentiments/compatibilite-amoureuse/" className="text-purple-600 hover:text-purple-800 underline font-medium">compatibilité spirituelle</Link> se révèle à travers des arcanes spécifiques.
         </p>
 
         <div className="space-y-4">
@@ -411,7 +411,7 @@ export default function FlammeJumellePage() {
             <li><strong>Potentiel d'union :</strong> Conditions nécessaires à l'union harmonieuse</li>
           </ol>
           <p className="text-gray-700 mt-4 text-sm italic">
-            Ce tirage spécialisé offre une vision complète de votre parcours de flamme jumelle et guide vos prochains pas avec clarté. Pour une perspective plus large sur votre <Link href="/sentiments/avenir-amoureux" className="text-purple-600 hover:text-purple-800 underline font-medium">destinée amoureuse</Link>, combinez-le avec un tirage d'avenir amoureux complet.
+            Ce tirage spécialisé offre une vision complète de votre parcours de flamme jumelle et guide vos prochains pas avec clarté. Pour une perspective plus large sur votre <Link href="/sentiments/avenir-amoureux/" className="text-purple-600 hover:text-purple-800 underline font-medium">destinée amoureuse</Link>, combinez-le avec un tirage d'avenir amoureux complet.
           </p>
         </div>
       </section>

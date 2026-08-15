@@ -43,13 +43,13 @@ export default function HomePage() {
           </p>
           <div className="mt-10 flex flex-col sm:flex-row gap-3 justify-center">
             <Link
-              href="/love-psychic-services/keen-review"
+              href="/love-psychic-services/keen-review/"
               className="bg-purple-600 hover:bg-purple-700 text-white font-semibold px-6 py-3 rounded-lg transition-colors"
             >
               Read our Keen review →
             </Link>
             <Link
-              href="/love-psychic-services"
+              href="/love-psychic-services/"
               className="bg-white text-purple-700 border border-purple-200 hover:border-purple-400 font-semibold px-6 py-3 rounded-lg transition-colors"
             >
               See all services
@@ -104,7 +104,7 @@ export default function HomePage() {
 
           <div className="grid md:grid-cols-2 gap-6">
             <Link
-              href="/will-he-come-back"
+              href="/will-he-come-back/"
               className="block bg-white p-6 rounded-xl border border-gray-200 hover:border-purple-300 hover:shadow-md transition"
             >
               <h3 className="font-bold text-lg mb-2 text-gray-900">
@@ -121,7 +121,7 @@ export default function HomePage() {
             </Link>
 
             <Link
-              href="/is-my-ex-thinking-of-me"
+              href="/is-my-ex-thinking-of-me/"
               className="block bg-white p-6 rounded-xl border border-gray-200 hover:border-purple-300 hover:shadow-md transition"
             >
               <h3 className="font-bold text-lg mb-2 text-gray-900">
@@ -138,7 +138,7 @@ export default function HomePage() {
             </Link>
 
             <Link
-              href="/twin-flame-signs"
+              href="/twin-flame-signs/"
               className="block bg-white p-6 rounded-xl border border-gray-200 hover:border-purple-300 hover:shadow-md transition"
             >
               <h3 className="font-bold text-lg mb-2 text-gray-900">
@@ -155,7 +155,7 @@ export default function HomePage() {
             </Link>
 
             <Link
-              href="/dream-about-ex-meaning"
+              href="/dream-about-ex-meaning/"
               className="block bg-white p-6 rounded-xl border border-gray-200 hover:border-purple-300 hover:shadow-md transition"
             >
               <h3 className="font-bold text-lg mb-2 text-gray-900">
@@ -186,7 +186,7 @@ export default function HomePage() {
           one is worth your time.
         </p>
         <Link
-          href="/love-psychic-services"
+          href="/love-psychic-services/"
           className="inline-block bg-purple-600 hover:bg-purple-700 text-white font-semibold px-6 py-3 rounded-lg transition-colors"
         >
           See our recommended services →

@@ -71,7 +71,7 @@ export default function RevesAmourHub() {
 
             {/* Bridge to the full rêver-de-son-ex guidance page */}
             <Link
-              href="/rupture/rever-de-son-ex"
+              href="/rupture/rever-de-son-ex/"
               className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition border-t-4 border-purple-500"
             >
               <div className="text-3xl mb-2">🌙</div>
@@ -85,10 +85,10 @@ export default function RevesAmourHub() {
         <div className="bg-gray-100 rounded-xl p-6 mb-8">
           <h2 className="font-bold text-lg mb-4 text-gray-900">🔮 Aller plus loin</h2>
           <div className="space-y-2">
-            <Link href="/tarot-amour" className="block text-indigo-600 hover:text-indigo-800 font-medium">&rarr; Tarot amour : signification des cartes</Link>
-            <Link href="/methodes-voyance" className="block text-indigo-600 hover:text-indigo-800 font-medium">&rarr; Les méthodes de voyance amoureuse</Link>
-            <Link href="/rupture" className="block text-indigo-600 hover:text-indigo-800 font-medium">&rarr; Rupture &amp; guérison : toutes nos guidances</Link>
-            <Link href="/sentiments/pense-t-il-elle-a-moi" className="block text-indigo-600 hover:text-indigo-800 font-medium">&rarr; Pense-t-il/elle à moi ?</Link>
+            <Link href="/tarot-amour/" className="block text-indigo-600 hover:text-indigo-800 font-medium">&rarr; Tarot amour : signification des cartes</Link>
+            <Link href="/methodes-voyance/" className="block text-indigo-600 hover:text-indigo-800 font-medium">&rarr; Les méthodes de voyance amoureuse</Link>
+            <Link href="/rupture/" className="block text-indigo-600 hover:text-indigo-800 font-medium">&rarr; Rupture &amp; guérison : toutes nos guidances</Link>
+            <Link href="/sentiments/pense-t-il-elle-a-moi/" className="block text-indigo-600 hover:text-indigo-800 font-medium">&rarr; Pense-t-il/elle à moi ?</Link>
           </div>
         </div>
 

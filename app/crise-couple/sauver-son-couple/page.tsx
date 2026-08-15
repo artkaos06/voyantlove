@@ -20,7 +20,7 @@ const config: ContentPageConfig = {
     h1: 'Sauver son Couple',
     subtitle: 'Solutions spirituelles, étapes de reconstruction et guidance par le tarot pour redonner vie à votre relation',
     gradient: 'from-green-600 via-emerald-600 to-teal-600',
-    backLink: { href: '/crise-couple', label: 'Retour aux Crises de Couple' },
+    backLink: { href: '/crise-couple/', label: 'Retour aux Crises de Couple' },
     anchors: [
       { href: '#diagnostic', label: 'Diagnostic Tarot', primary: true },
       { href: '#etapes', label: '5 Étapes de Reconstruction' },
@@ -58,12 +58,12 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/crise-couple', label: 'Crises de Couple : Guide Complet' },
-    { href: '/crise-couple/infidelite-couple', label: 'Infidélité dans le Couple : Trahison et Reconstruction' },
-    { href: '/crise-couple/problemes-communication-couple', label: 'Problèmes de Communication dans le Couple' },
-    { href: '/crise-couple/jalousie-excessive', label: 'Jalousie Excessive : Causes et Solutions' },
-    { href: '/reconquete/se-remettre-ensemble', label: 'Se Remettre Ensemble avec son Ex' },
-    { href: '/sentiments/maime-t-il-elle', label: 'M\'aime-t-il/elle Vraiment ?' },
+    { href: '/crise-couple/', label: 'Crises de Couple : Guide Complet' },
+    { href: '/crise-couple/infidelite-couple/', label: 'Infidélité dans le Couple : Trahison et Reconstruction' },
+    { href: '/crise-couple/problemes-communication-couple/', label: 'Problèmes de Communication dans le Couple' },
+    { href: '/crise-couple/jalousie-excessive/', label: 'Jalousie Excessive : Causes et Solutions' },
+    { href: '/reconquete/se-remettre-ensemble/', label: 'Se Remettre Ensemble avec son Ex' },
+    { href: '/sentiments/maime-t-il-elle/', label: 'M\'aime-t-il/elle Vraiment ?' },
   ],
 };
 
@@ -81,7 +81,7 @@ export default function SauverSonCouplePage() {
             La décision de <strong>sauver une relation amoureuse</strong> exige du courage, de la patience et un <strong>engagement profond</strong> de chaque partenaire. Les crises de couple surgissent pour des raisons multiples : érosion de la communication, perte de connexion émotionnelle, routine qui étouffe la passion, ou événements extérieurs déstabilisants. Le <strong>tirage de reconstruction</strong> permet de diagnostiquer avec précision l'état réel de votre relation et de tracer un chemin vers la guérison.
           </p>
           <p className="text-lg leading-relaxed">
-            Que votre couple traverse une tempête passagère ou une crise profonde, ce guide complet vous accompagne pas à pas. Pour comprendre l'ensemble des dynamiques en jeu, explorez nos <Link href="/crise-couple" className="text-green-600 hover:text-green-800 underline font-medium">guidances sur les crises de couple</Link> et découvrez comment chaque situation peut devenir une opportunité de renaissance.
+            Que votre couple traverse une tempête passagère ou une crise profonde, ce guide complet vous accompagne pas à pas. Pour comprendre l'ensemble des dynamiques en jeu, explorez nos <Link href="/crise-couple/" className="text-green-600 hover:text-green-800 underline font-medium">guidances sur les crises de couple</Link> et découvrez comment chaque situation peut devenir une opportunité de renaissance.
           </p>
         </article>
 
@@ -179,7 +179,7 @@ export default function SauverSonCouplePage() {
                 La première étape pour <strong>sauver son couple</strong> est de restaurer un espace de parole sincère et bienveillant. L'Étoile dans le tarot symbolise la <strong>vulnérabilité assumée</strong> et l'espoir qui naît de la vérité partagée. Concrètement, il s'agit de créer des moments dédiés au dialogue, sans accusations ni reproches.
               </p>
               <p className="text-gray-700">
-                <strong>Exercice :</strong> Instaurez un rendez-vous hebdomadaire de 30 minutes où chacun parle sans être interrompu. Utilisez le format "Je ressens..." plutôt que "Tu fais toujours...". Pour approfondir cette pratique essentielle, découvrez comment <Link href="/crise-couple/problemes-communication-couple" className="text-green-600 hover:text-green-800 underline font-medium">rétablir la communication</Link> dans votre relation.
+                <strong>Exercice :</strong> Instaurez un rendez-vous hebdomadaire de 30 minutes où chacun parle sans être interrompu. Utilisez le format "Je ressens..." plutôt que "Tu fais toujours...". Pour approfondir cette pratique essentielle, découvrez comment <Link href="/crise-couple/problemes-communication-couple/" className="text-green-600 hover:text-green-800 underline font-medium">rétablir la communication</Link> dans votre relation.
               </p>
             </div>
 
@@ -196,7 +196,7 @@ export default function SauverSonCouplePage() {
             <div className="bg-white rounded-lg p-5 border-l-4 border-teal-600">
               <h3 className="font-bold mb-2 text-teal-700 text-lg">Étape 3 : Pardon et Lâcher-prise, Le Jugement</h3>
               <p className="text-gray-700 mb-2">
-                Le Jugement dans le tarot appelle à une <strong>renaissance par le pardon</strong>. Pardonner ne signifie pas oublier ni excuser, mais libérer l'énergie emprisonnée dans la rancune. Cette étape est souvent la plus difficile, surtout après une trahison comme une <Link href="/crise-couple/infidelite-couple" className="text-green-600 hover:text-green-800 underline font-medium">infidélité</Link> ou un mensonge profond.
+                Le Jugement dans le tarot appelle à une <strong>renaissance par le pardon</strong>. Pardonner ne signifie pas oublier ni excuser, mais libérer l'énergie emprisonnée dans la rancune. Cette étape est souvent la plus difficile, surtout après une trahison comme une <Link href="/crise-couple/infidelite-couple/" className="text-green-600 hover:text-green-800 underline font-medium">infidélité</Link> ou un mensonge profond.
               </p>
               <p className="text-gray-700">
                 <strong>Processus de pardon :</strong> Reconnaître pleinement la <strong>douleur vécue</strong>, exprimer cette douleur au partenaire, recevoir un remords sincère, décider consciemment de libérer la charge émotionnelle, et reconstruire progressivement. Le pardon authentique prend du temps, 6 à 18 mois est une durée normale.
@@ -304,7 +304,7 @@ export default function SauverSonCouplePage() {
                 Certaines cartes du tarot indiquent clairement que la <strong>séparation est la voie de libération</strong>. La Tour annonce un effondrement nécessaire pour reconstruire sur de meilleures bases, parfois séparément. Le Huit de Coupe montre un partenaire qui s'éloigne émotionnellement et physiquement. Le Dix d'Épée symbolise la <strong>fin définitive</strong> d'un cycle.
               </p>
               <p className="text-gray-700">
-                Accepter la fin d'une relation n'est pas un échec, c'est une <strong>libération courageuse</strong>. Si vous êtes confronté à cette réalité, nos guidances sur la <Link href="/rupture/rupture-amoureuse" className="text-green-600 hover:text-green-800 underline font-medium">rupture amoureuse</Link> peuvent vous accompagner dans cette transition vers une nouvelle vie. Parfois, c'est en libérant ce qui ne fonctionne plus que l'on ouvre la porte à un bonheur véritable.
+                Accepter la fin d'une relation n'est pas un échec, c'est une <strong>libération courageuse</strong>. Si vous êtes confronté à cette réalité, nos guidances sur la <Link href="/rupture/rupture-amoureuse/" className="text-green-600 hover:text-green-800 underline font-medium">rupture amoureuse</Link> peuvent vous accompagner dans cette transition vers une nouvelle vie. Parfois, c'est en libérant ce qui ne fonctionne plus que l'on ouvre la porte à un bonheur véritable.
               </p>
             </div>
           </div>
@@ -347,7 +347,7 @@ export default function SauverSonCouplePage() {
                 <strong>Déroulement :</strong> Chaque soir, notez dans un carnet partagé trois choses pour lesquelles vous êtes reconnaissant envers votre partenaire ce jour-là. Même les plus petites : "Merci d'avoir préparé le café", "J'ai apprécié ton sourire ce matin", "Merci d'avoir écouté quand j'avais besoin de parler".
               </p>
               <p className="text-gray-700">
-                <strong>Résultat attendu :</strong> En 21 jours de pratique, les couples observent un changement mesurable dans leur <strong>perception mutuelle</strong>. La <Link href="/crise-couple/jalousie-excessive" className="text-green-600 hover:text-green-800 underline font-medium">jalousie</Link> et la méfiance diminuent naturellement quand l'attention se tourne vers la <strong>reconnaissance</strong>.
+                <strong>Résultat attendu :</strong> En 21 jours de pratique, les couples observent un changement mesurable dans leur <strong>perception mutuelle</strong>. La <Link href="/crise-couple/jalousie-excessive/" className="text-green-600 hover:text-green-800 underline font-medium">jalousie</Link> et la méfiance diminuent naturellement quand l'attention se tourne vers la <strong>reconnaissance</strong>.
               </p>
             </div>
 
@@ -360,7 +360,7 @@ export default function SauverSonCouplePage() {
                 <strong>Déroulement :</strong> Prenez un grand panneau et des magazines. Ensemble, découpez et collez des images qui représentent votre <strong>vie de couple idéale</strong> dans 1, 3 et 5 ans. Voyages, maison, famille, activités, ambiance, laissez votre intuition guider vos choix. Discutez de chaque image choisie et de ce qu'elle représente pour chacun.
               </p>
               <p className="text-gray-700">
-                <strong>Pourquoi c'est puissant :</strong> Cet exercice replace le couple dans une dynamique de <strong>co-création</strong> plutôt que de survie. Il rappelle pourquoi vous êtes ensemble et ce que vous voulez construire. C'est aussi un excellent exercice pour ceux qui envisagent de <Link href="/reconquete/se-remettre-ensemble" className="text-green-600 hover:text-green-800 underline font-medium">se remettre ensemble</Link> après une séparation.
+                <strong>Pourquoi c'est puissant :</strong> Cet exercice replace le couple dans une dynamique de <strong>co-création</strong> plutôt que de survie. Il rappelle pourquoi vous êtes ensemble et ce que vous voulez construire. C'est aussi un excellent exercice pour ceux qui envisagent de <Link href="/reconquete/se-remettre-ensemble/" className="text-green-600 hover:text-green-800 underline font-medium">se remettre ensemble</Link> après une séparation.
               </p>
             </div>
           </div>

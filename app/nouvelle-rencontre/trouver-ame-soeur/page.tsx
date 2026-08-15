@@ -20,7 +20,7 @@ const config: ContentPageConfig = {
     h1: 'Trouver son Âme Sœur',
     subtitle: 'Guide complet pour reconnaître et attirer votre connexion spirituelle',
     gradient: 'from-purple-500 via-indigo-500 to-blue-500',
-    backLink: { href: '/nouvelle-rencontre', label: 'Retour aux Nouvelles Rencontres' },
+    backLink: { href: '/nouvelle-rencontre/', label: 'Retour aux Nouvelles Rencontres' },
     anchors: [
       { href: '#consultation', label: 'Tirage Âme Sœur', primary: true },
       { href: '#signes', label: 'Les 15 Signes' },
@@ -62,10 +62,10 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/nouvelle-rencontre', label: 'Nouvelle Rencontre Amoureuse : Toutes nos Guidances' },
-    { href: '/nouvelle-rencontre/quand-rencontre-amour', label: 'Quand Vais-je Rencontrer l\'Amour ?' },
-    { href: '/sentiments/avenir-amoureux', label: 'Mon Avenir Amoureux' },
-    { href: '/sentiments/signes-il-elle-maime', label: 'Signes qu\'il/elle m\'aime' },
+    { href: '/nouvelle-rencontre/', label: 'Nouvelle Rencontre Amoureuse : Toutes nos Guidances' },
+    { href: '/nouvelle-rencontre/quand-rencontre-amour/', label: 'Quand Vais-je Rencontrer l\'Amour ?' },
+    { href: '/sentiments/avenir-amoureux/', label: 'Mon Avenir Amoureux' },
+    { href: '/sentiments/signes-il-elle-maime/', label: 'Signes qu\'il/elle m\'aime' },
   ],
 };
 
@@ -82,7 +82,7 @@ export default function TrouverAmeSoeurPage() {
           Le <strong>tarot</strong> et la <strong>voyance</strong> révèlent non seulement quand et où vous rencontrerez votre âme sœur, mais aussi comment vous préparer intérieurement à cette rencontre sacrée. Car contrairement aux croyances populaires, attirer son âme sœur n'est pas une question de chance, mais de <strong>préparation vibratoire</strong> et d'alignement spirituel. Vous devez devenir la personne que votre âme sœur cherche également.
         </p>
         <p className="text-lg leading-relaxed">
-          Que vous soyez célibataire en quête de cette connexion profonde, ou en questionnement sur une relation actuelle (est-ce vraiment mon âme sœur ?), ce guide complet vous offre les clés pour reconnaître, attirer, et nourrir cette <strong>union d'âmes</strong> exceptionnelle. Pour découvrir quand vous rencontrerez l'amour, consultez notre page <Link href="/nouvelle-rencontre/quand-rencontre-amour" className="text-indigo-600 hover:text-indigo-800 underline font-medium">Quand vais-je rencontrer l'amour</Link> et explorez toutes nos guidances sur les <Link href="/nouvelle-rencontre" className="text-indigo-600 hover:text-indigo-800 underline font-medium">nouvelles rencontres amoureuses</Link>.
+          Que vous soyez célibataire en quête de cette connexion profonde, ou en questionnement sur une relation actuelle (est-ce vraiment mon âme sœur ?), ce guide complet vous offre les clés pour reconnaître, attirer, et nourrir cette <strong>union d'âmes</strong> exceptionnelle. Pour découvrir quand vous rencontrerez l'amour, consultez notre page <Link href="/nouvelle-rencontre/quand-rencontre-amour/" className="text-indigo-600 hover:text-indigo-800 underline font-medium">Quand vais-je rencontrer l'amour</Link> et explorez toutes nos guidances sur les <Link href="/nouvelle-rencontre/" className="text-indigo-600 hover:text-indigo-800 underline font-medium">nouvelles rencontres amoureuses</Link>.
         </p>
       </article>
 
@@ -185,7 +185,7 @@ export default function TrouverAmeSoeurPage() {
         <h2 className="text-3xl font-bold mb-6 text-gray-900">✨ Les 15 Signes que Vous Avez Rencontré Votre Âme Sœur</h2>
         <p className="text-lg font-semibold text-gray-800 mb-4">Les signes principaux incluent une familiarite instantanee, des synchronicites repetees, un sentiment de « rentrer a la maison » et une croissance mutuelle acceleree. Cinq signes ou plus confirment la connexion.</p>
         <p className="text-gray-700 mb-6">
-          Si vous vous demandez si une personne dans votre vie est votre <strong>âme sœur</strong>, voici les <Link href="/nouvelle-rencontre/signes-ame-soeur" className="text-indigo-600 hover:text-indigo-800 underline font-medium">signes de l'âme sœur</Link> universels. La présence de 5+ signes confirme fortement la connexion d'âmes sœurs.
+          Si vous vous demandez si une personne dans votre vie est votre <strong>âme sœur</strong>, voici les <Link href="/nouvelle-rencontre/signes-ame-soeur/" className="text-indigo-600 hover:text-indigo-800 underline font-medium">signes de l'âme sœur</Link> universels. La présence de 5+ signes confirme fortement la connexion d'âmes sœurs.
         </p>
 
         <div className="space-y-4">
@@ -387,7 +387,7 @@ export default function TrouverAmeSoeurPage() {
         <h2 className="text-3xl font-bold mb-6 text-indigo-600">🔮 Le Tarot des Âmes Sœurs : Cartes Révélatrices</h2>
         <p className="text-lg font-semibold text-gray-800 mb-4">Les cartes confirmant une connexion d'ame soeur sont Les Amoureux, le Deux de Coupe, l'Etoile, Temperance et le Soleil. Le Diable ou la Tour signalent au contraire un lien karmique toxique.</p>
         <p className="text-gray-700 mb-6">
-          Le <strong>tarot</strong> identifie les connexions d'âmes sœurs avec une précision remarquable grâce au <Link href="/methodes-voyance/tirage-tarot-amour" className="text-indigo-600 hover:text-indigo-800 underline font-medium">tirage de tarot amoureux</Link>. Certaines cartes sont des marqueurs directs de cette union spirituelle.
+          Le <strong>tarot</strong> identifie les connexions d'âmes sœurs avec une précision remarquable grâce au <Link href="/methodes-voyance/tirage-tarot-amour/" className="text-indigo-600 hover:text-indigo-800 underline font-medium">tirage de tarot amoureux</Link>. Certaines cartes sont des marqueurs directs de cette union spirituelle.
         </p>
 
         <div className="space-y-6">

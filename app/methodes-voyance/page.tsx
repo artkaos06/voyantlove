@@ -68,7 +68,7 @@ export default function MethodesVoyanceHubPage() {
         <div className="bg-pink-50 border-l-4 border-pink-500 rounded-lg p-6 mb-8">
           <p className="text-gray-800 leading-relaxed">
             <strong>Vous cherchez spécifiquement une voyance sentimentale ?</strong> Cette page présente l&apos;ensemble des méthodes de voyance amoureuse (tarot, oracle, astrologie, pendule...). Pour une guidance centrée uniquement sur vos sentiments, votre couple et votre avenir amoureux, consultez notre page dédiée{' '}
-            <Link href="/methodes-voyance/voyance-sentimentale" className="text-pink-700 hover:text-pink-900 underline font-semibold">
+            <Link href="/methodes-voyance/voyance-sentimentale/" className="text-pink-700 hover:text-pink-900 underline font-semibold">
               Voyance Sentimentale
             </Link>.
           </p>
@@ -78,135 +78,135 @@ export default function MethodesVoyanceHubPage() {
 
         <section className="mb-16">
           <h2 className="text-3xl font-bold mb-8 text-center">🗺️ Nos Méthodes de Voyance</h2>
-          <p className="text-lg font-semibold text-gray-800 mb-4">Les principales méthodes de <Link href="/voyance-amour" className="text-indigo-600 hover:text-indigo-800 underline font-medium">voyance amoureuse</Link> sont le tarot, l&apos;oracle, l&apos;astrologie, le pendule et la consultation par téléphone. Chaque outil offre un éclairage unique sur votre vie sentimentale selon la profondeur d&apos;analyse recherchée.</p>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Les principales méthodes de <Link href="/voyance-amour/" className="text-indigo-600 hover:text-indigo-800 underline font-medium">voyance amoureuse</Link> sont le tarot, l&apos;oracle, l&apos;astrologie, le pendule et la consultation par téléphone. Chaque outil offre un éclairage unique sur votre vie sentimentale selon la profondeur d&apos;analyse recherchée.</p>
           <div className="grid md:grid-cols-3 gap-8">
-            <Link href="/methodes-voyance/tirage-tarot-amour" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-indigo-500">
+            <Link href="/methodes-voyance/tirage-tarot-amour/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-indigo-500">
               <div className="text-4xl mb-4">🃏</div>
               <h3 className="text-2xl font-bold mb-3">Tirage Tarot Amour</h3>
               <p className="text-gray-600 mb-4">Découvrez ce que les arcanes révèlent sur votre vie sentimentale et vos relations.</p>
               <span className="text-indigo-600 font-semibold">Découvrir →</span>
             </Link>
 
-            <Link href="/methodes-voyance/oracle-amour" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-purple-500">
+            <Link href="/methodes-voyance/oracle-amour/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-purple-500">
               <div className="text-4xl mb-4">✨</div>
               <h3 className="text-2xl font-bold mb-3">Oracle de l&apos;Amour</h3>
               <p className="text-gray-600 mb-4">Recevez des messages intuitifs et des guidances claires sur votre destinée amoureuse.</p>
               <span className="text-purple-600 font-semibold">Découvrir →</span>
             </Link>
 
-            <Link href="/methodes-voyance/astrologie-amoureuse" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-violet-500">
+            <Link href="/methodes-voyance/astrologie-amoureuse/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-violet-500">
               <div className="text-4xl mb-4">⭐</div>
               <h3 className="text-2xl font-bold mb-3">Astrologie Amoureuse</h3>
               <p className="text-gray-600 mb-4">Analysez votre compatibilité astrale et les transits favorables à l&apos;amour.</p>
               <span className="text-violet-600 font-semibold">Découvrir →</span>
             </Link>
 
-            <Link href="/methodes-voyance/voyance-telephone-amour" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-blue-500">
+            <Link href="/methodes-voyance/voyance-telephone-amour/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-blue-500">
               <div className="text-4xl mb-4">📞</div>
               <h3 className="text-2xl font-bold mb-3">Voyance par Téléphone</h3>
               <p className="text-gray-600 mb-4">Consultez un voyant spécialisé amour par téléphone, 24h/24 en toute confidentialité.</p>
               <span className="text-blue-600 font-semibold">Découvrir →</span>
             </Link>
 
-            <Link href="/methodes-voyance/pendule-amour" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-rose-500">
+            <Link href="/methodes-voyance/pendule-amour/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-rose-500">
               <div className="text-4xl mb-4">🔮</div>
               <h3 className="text-2xl font-bold mb-3">Pendule Amour</h3>
               <p className="text-gray-600 mb-4">Réponses oui/non instantanées à vos questions sentimentales par le pendule.</p>
               <span className="text-rose-600 font-semibold">Découvrir →</span>
             </Link>
 
-            <Link href="/methodes-voyance/voyance-sentimentale" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-pink-500">
+            <Link href="/methodes-voyance/voyance-sentimentale/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-pink-500">
               <div className="text-4xl mb-4">💜</div>
               <h3 className="text-2xl font-bold mb-3">Voyance Sentimentale</h3>
               <p className="text-gray-600 mb-4">Guidance amoureuse complète : sentiments, compatibilité, reconquête et avenir du cœur.</p>
               <span className="text-pink-600 font-semibold">Découvrir →</span>
             </Link>
 
-            <Link href="/methodes-voyance/voyance-par-mail-amour" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-amber-500">
+            <Link href="/methodes-voyance/voyance-par-mail-amour/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-amber-500">
               <div className="text-4xl mb-4">📧</div>
               <h3 className="text-2xl font-bold mb-3">Voyance par Mail</h3>
               <p className="text-gray-600 mb-4">Guide pratique du fonctionnement d’une consultation écrite par email et alternative immédiate en direct.</p>
               <span className="text-amber-600 font-semibold">Découvrir →</span>
             </Link>
 
-            <Link href="/methodes-voyance/numerologie-amoureuse" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-teal-500">
+            <Link href="/methodes-voyance/numerologie-amoureuse/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-teal-500">
               <div className="text-4xl mb-4">🔢</div>
               <h3 className="text-2xl font-bold mb-3">Numérologie Amoureuse</h3>
               <p className="text-gray-600 mb-4">Compatibilité et cycles amoureux révélés par les nombres.</p>
               <span className="text-teal-600 font-semibold">Découvrir →</span>
             </Link>
 
-            <Link href="/methodes-voyance/voyance-par-chat-amour" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-green-500">
+            <Link href="/methodes-voyance/voyance-par-chat-amour/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-green-500">
               <div className="text-4xl mb-4">💬</div>
               <h3 className="text-2xl font-bold mb-3">Voyance par Chat</h3>
               <p className="text-gray-600 mb-4">Consultation voyance amour par chat en ligne, immédiate et confidentielle.</p>
               <span className="text-green-600 font-semibold">Découvrir →</span>
             </Link>
 
-            <Link href="/methodes-voyance/runes-amour" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-slate-500">
+            <Link href="/methodes-voyance/runes-amour/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-slate-500">
               <div className="text-4xl mb-4">ᚱ</div>
               <h3 className="text-2xl font-bold mb-3">Runes Amour</h3>
               <p className="text-gray-600 mb-4">Les runes nordiques appliquées aux questions sentimentales et amoureuses.</p>
               <span className="text-slate-600 font-semibold">Découvrir →</span>
             </Link>
 
-            <Link href="/methodes-voyance/synastrie-amoureuse" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-cyan-500">
+            <Link href="/methodes-voyance/synastrie-amoureuse/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-cyan-500">
               <div className="text-4xl mb-4">♾️</div>
               <h3 className="text-2xl font-bold mb-3">Synastrie Amoureuse</h3>
               <p className="text-gray-600 mb-4">Analyse astrologique de la compatibilité entre deux thèmes natals.</p>
               <span className="text-cyan-600 font-semibold">Découvrir →</span>
             </Link>
 
-            <Link href="/methodes-voyance/tarologie-amoureuse" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-indigo-500">
+            <Link href="/methodes-voyance/tarologie-amoureuse/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-indigo-500">
               <div className="text-4xl mb-4">🃏</div>
               <h3 className="text-2xl font-bold mb-3">Tarologie Amoureuse</h3>
               <p className="text-gray-600 mb-4">L&apos;art de lire les 78 cartes du tarot pour les questions sentimentales.</p>
               <span className="text-indigo-600 font-semibold">Découvrir →</span>
             </Link>
 
-            <Link href="/methodes-voyance/cartomancie-amour" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-teal-500">
+            <Link href="/methodes-voyance/cartomancie-amour/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-teal-500">
               <div className="text-4xl mb-4">🎴</div>
               <h3 className="text-2xl font-bold mb-3">Cartomancie Amour</h3>
               <p className="text-gray-600 mb-4">Le Petit Lenormand et le jeu de 32 cartes au service de vos questions de cœur.</p>
               <span className="text-teal-600 font-semibold">Découvrir →</span>
             </Link>
 
-            <Link href="/methodes-voyance/lignes-de-la-main-amour" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-red-500">
+            <Link href="/methodes-voyance/lignes-de-la-main-amour/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-red-500">
               <div className="text-4xl mb-4">✋</div>
               <h3 className="text-2xl font-bold mb-3">Lignes de la Main Amour</h3>
               <p className="text-gray-600 mb-4">Ce que la chiromancie et la ligne de cœur révèlent sur votre vie sentimentale.</p>
               <span className="text-red-600 font-semibold">Découvrir →</span>
             </Link>
 
-            <Link href="/methodes-voyance/boule-de-cristal-amour" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-indigo-500">
+            <Link href="/methodes-voyance/boule-de-cristal-amour/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-indigo-500">
               <div className="text-4xl mb-4">🔮</div>
               <h3 className="text-2xl font-bold mb-3">Boule de Cristal Amour</h3>
               <p className="text-gray-600 mb-4">La cristallomancie pour éclairer vos questions sentimentales.</p>
               <span className="text-indigo-600 font-semibold">Découvrir →</span>
             </Link>
 
-            <Link href="/methodes-voyance/medium-amour" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-purple-500">
+            <Link href="/methodes-voyance/medium-amour/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-purple-500">
               <div className="text-4xl mb-4">🕊️</div>
               <h3 className="text-2xl font-bold mb-3">Médium Amour</h3>
               <p className="text-gray-600 mb-4">La médiumnité, clairvoyance, clairaudience, clairsentience, au service de votre guidance sentimentale.</p>
               <span className="text-purple-600 font-semibold">Découvrir →</span>
             </Link>
 
-            <Link href="/methodes-voyance/marc-de-cafe-amour" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-amber-700">
+            <Link href="/methodes-voyance/marc-de-cafe-amour/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-amber-700">
               <div className="text-4xl mb-4">☕</div>
               <h3 className="text-2xl font-bold mb-3">Marc de Café Amour</h3>
               <p className="text-gray-600 mb-4">La tasséographie : les symboles du marc de café appliqués à vos questions de cœur.</p>
               <span className="text-amber-700 font-semibold">Découvrir →</span>
             </Link>
 
-            <Link href="/methodes-voyance/ascendant-amour" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-violet-500">
+            <Link href="/methodes-voyance/ascendant-amour/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-violet-500">
               <div className="text-4xl mb-4">🌅</div>
               <h3 className="text-2xl font-bold mb-3">Ascendant en Amour</h3>
               <p className="text-gray-600 mb-4">Ce que votre signe ascendant révèle sur votre style de séduction et la première attraction.</p>
               <span className="text-violet-600 font-semibold">Découvrir →</span>
             </Link>
 
-            <Link href="/methodes-voyance/suis-je-medium-comment-savoir" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-fuchsia-500">
+            <Link href="/methodes-voyance/suis-je-medium-comment-savoir/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-fuchsia-500">
               <div className="text-4xl mb-4">🌙</div>
               <h3 className="text-2xl font-bold mb-3">Suis-je Médium ?</h3>
               <p className="text-gray-600 mb-4">Les signes d&apos;une sensibilité médiumnique dans votre vie sentimentale : comment savoir.</p>
@@ -222,7 +222,7 @@ export default function MethodesVoyanceHubPage() {
         <section className="bg-white rounded-xl p-8 mb-12">
           <h2 className="text-3xl font-bold mb-6">🔮 Choisir la Bonne Méthode de Voyance</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le choix de la méthode de voyance dépend de votre question sentimentale : le tarot pour une analyse approfondie des dynamiques, l&apos;oracle pour des messages intuitifs directs, et l&apos;astrologie pour une compatibilité à long terme.</p>
-          <p className="text-lg text-gray-700 leading-relaxed mb-6">Chaque m&eacute;thode de <Link href="/" className="text-purple-600 hover:text-purple-800 underline font-medium">voyance amoureuse</Link> poss&egrave;de ses propres forces et sa sensibilit&eacute; unique. Le choix de l&apos;outil divinatoire d&eacute;pend de votre question sentimentale, de la profondeur d&apos;analyse souhait&eacute;e et de votre affinit&eacute; personnelle &mdash; le <Link href="/methodes-voyance/tirage-tarot-amour" className="text-purple-600 hover:text-purple-800 underline font-medium">tirage de tarot amoureux</Link> restant la m&eacute;thode la plus demand&eacute;e en consultation.</p>
+          <p className="text-lg text-gray-700 leading-relaxed mb-6">Chaque m&eacute;thode de <Link href="/" className="text-purple-600 hover:text-purple-800 underline font-medium">voyance amoureuse</Link> poss&egrave;de ses propres forces et sa sensibilit&eacute; unique. Le choix de l&apos;outil divinatoire d&eacute;pend de votre question sentimentale, de la profondeur d&apos;analyse souhait&eacute;e et de votre affinit&eacute; personnelle &mdash; le <Link href="/methodes-voyance/tirage-tarot-amour/" className="text-purple-600 hover:text-purple-800 underline font-medium">tirage de tarot amoureux</Link> restant la m&eacute;thode la plus demand&eacute;e en consultation.</p>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-gray-50 p-6 rounded-lg">
               <h3 className="font-bold text-lg mb-3">🃏 Tarot vs Oracle</h3>
@@ -263,23 +263,23 @@ export default function MethodesVoyanceHubPage() {
           <p className="text-lg font-semibold text-gray-800 mb-4">Les méthodes de voyance s&apos;appliquent à tous les domaines de votre vie sentimentale : sentiments cachés, reconquête amoureuse, nouvelles rencontres et compatibilité de couple.</p>
           <p className="text-gray-700 mb-4">Les méthodes de voyance s'appliquent à toutes les dimensions de votre vie sentimentale. Explorez nos guidances thématiques.</p>
           <div className="grid md:grid-cols-3 gap-4">
-            <Link href="/sentiments" className="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition">
+            <Link href="/sentiments/" className="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition">
               <h3 className="font-bold text-gray-900 mb-1">Sentiments Amoureux</h3>
               <p className="text-sm text-gray-600">Utiliser le tarot pour décrypter les émotions et sentiments cachés.</p>
             </Link>
-            <Link href="/reconquete" className="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition">
+            <Link href="/reconquete/" className="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition">
               <h3 className="font-bold text-gray-900 mb-1">Reconquête Amoureuse</h3>
               <p className="text-sm text-gray-600">Le tarot au service de votre stratégie de reconquête amoureuse.</p>
             </Link>
-            <Link href="/nouvelle-rencontre" className="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition">
+            <Link href="/nouvelle-rencontre/" className="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition">
               <h3 className="font-bold text-gray-900 mb-1">Nouvelle Rencontre</h3>
               <p className="text-sm text-gray-600">Prédictions et guidance pour trouver votre prochaine relation.</p>
             </Link>
-            <Link href="/voyance-gratuite-amour" className="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition">
+            <Link href="/voyance-gratuite-amour/" className="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition">
               <h3 className="font-bold text-gray-900 mb-1">Voyance Gratuite Amour</h3>
               <p className="text-sm text-gray-600">Tirages gratuits et premières minutes offertes pour découvrir la voyance.</p>
             </Link>
-            <Link href="/consulter" className="bg-purple-50 rounded-lg p-4 hover:bg-purple-100 transition border border-purple-200">
+            <Link href="/consulter/" className="bg-purple-50 rounded-lg p-4 hover:bg-purple-100 transition border border-purple-200">
               <h3 className="font-bold text-purple-900 mb-1">Consulter un Voyant</h3>
               <p className="text-sm text-purple-700">Tous nos voyants disponibles maintenant pour une guidance personnalisée.</p>
             </Link>

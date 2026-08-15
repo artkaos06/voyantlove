@@ -20,7 +20,7 @@ const config: ContentPageConfig = {
     h1: 'Signes qu\'il/elle m\'aime',
     subtitle: 'Décryptez les preuves d\'amour véritable selon le comportement et le tarot',
     gradient: 'from-pink-500 via-rose-500 to-red-500',
-    backLink: { href: '/sentiments', label: 'Retour aux Sentiments' },
+    backLink: { href: '/sentiments/', label: 'Retour aux Sentiments' },
     anchors: [
       { href: '#consultation', label: 'Analyser ses Sentiments', primary: true },
       { href: '#signes', label: 'Les 20 Signes Clés' },
@@ -62,10 +62,10 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/sentiments', label: 'Sentiments Amoureux : Toutes nos Guidances' },
-    { href: '/sentiments/maime-t-il-elle', label: 'M\'aime-t-il/elle Vraiment ?' },
-    { href: '/sentiments/avenir-amoureux', label: 'Mon Avenir Amoureux' },
-    { href: '/nouvelle-rencontre/trouver-ame-soeur', label: 'Trouver son Âme Sœur' },
+    { href: '/sentiments/', label: 'Sentiments Amoureux : Toutes nos Guidances' },
+    { href: '/sentiments/maime-t-il-elle/', label: 'M\'aime-t-il/elle Vraiment ?' },
+    { href: '/sentiments/avenir-amoureux/', label: 'Mon Avenir Amoureux' },
+    { href: '/nouvelle-rencontre/trouver-ame-soeur/', label: 'Trouver son Âme Sœur' },
   ],
 };
 
@@ -84,7 +84,7 @@ export default function SignesIlElleMaimePage() {
             L'amour véritable se manifeste à travers des <strong>signaux cohérents et répétés</strong> dans trois dimensions : physique (langage corporel, proximité, touches), émotionnelle (vulnérabilité, priorité, attention), et énergétique (ce que le tarot capte au-delà du visible). Un seul signe isolé ne suffit pas, mais un ensemble convergent de <strong>preuves d'amour</strong> révèle les sentiments authentiques.
           </p>
           <p className="text-lg leading-relaxed">
-            Que vous soyez en phase de séduction incertaine, en début de relation questionnant la réciprocité, ou dans un couple cherchant confirmation de l'amour durable, apprendre à <strong>décrypter les signes amoureux</strong> vous permet de prendre des décisions éclairées. Pour une analyse complète de ses sentiments, découvrez notre page <Link href="/sentiments/maime-t-il-elle" className="text-rose-600 hover:text-rose-800 underline font-medium">M'aime-t-il/elle vraiment</Link> et explorez tous nos guides sur les <Link href="/sentiments" className="text-rose-600 hover:text-rose-800 underline font-medium">sentiments amoureux</Link>.
+            Que vous soyez en phase de séduction incertaine, en début de relation questionnant la réciprocité, ou dans un couple cherchant confirmation de l'amour durable, apprendre à <strong>décrypter les signes amoureux</strong> vous permet de prendre des décisions éclairées. Pour une analyse complète de ses sentiments, découvrez notre page <Link href="/sentiments/maime-t-il-elle/" className="text-rose-600 hover:text-rose-800 underline font-medium">M'aime-t-il/elle vraiment</Link> et explorez tous nos guides sur les <Link href="/sentiments/" className="text-rose-600 hover:text-rose-800 underline font-medium">sentiments amoureux</Link>.
           </p>
         </article>
 
@@ -535,7 +535,7 @@ export default function SignesIlElleMaimePage() {
               <div>
                 <h3 className="font-bold text-gray-800 mb-2">Utilisez le Tarot pour Confirmer</h3>
                 <p className="text-gray-700">
-                  Si vous doutez malgré les signes comportementaux, le <strong>tarot offre confirmation énergétique</strong>. Il révèle les sentiments cachés que la personne ne montre pas encore ou ne comprend pas elle-même. Un <Link href="/methodes-voyance/tirage-tarot-amour" className="text-rose-600 hover:text-rose-800 underline font-medium">tirage de tarot amoureux</Link> croise observation et intuition pour une réponse complète.
+                  Si vous doutez malgré les signes comportementaux, le <strong>tarot offre confirmation énergétique</strong>. Il révèle les sentiments cachés que la personne ne montre pas encore ou ne comprend pas elle-même. Un <Link href="/methodes-voyance/tirage-tarot-amour/" className="text-rose-600 hover:text-rose-800 underline font-medium">tirage de tarot amoureux</Link> croise observation et intuition pour une réponse complète.
                 </p>
               </div>
             </div>
@@ -556,7 +556,7 @@ export default function SignesIlElleMaimePage() {
           <h2 className="text-3xl font-bold mb-6 text-rose-600">💔 Signes qu'il/elle NE vous aime PAS (Signaux d'Alerte)</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Un contact visuel fuyant, l'absence d'efforts pour vous voir, le manque d'inclusion dans ses projets et l'indifference a vos emotions sont des signaux clairs que les sentiments ne sont pas reciproques.</p>
           <p className="text-gray-700 mb-6">
-            Aussi important que reconnaître l'amour : identifier l'<strong>absence d'amour</strong> pour ne pas perdre de temps ni d'énergie émotionnelle sur quelqu'un qui ne ressent pas de sentiments réciproques. Une analyse de <Link href="/sentiments/compatibilite-amoureuse" className="text-rose-600 hover:text-rose-800 underline font-medium">compatibilité amoureuse</Link> peut aussi éclairer la nature profonde de votre lien.
+            Aussi important que reconnaître l'amour : identifier l'<strong>absence d'amour</strong> pour ne pas perdre de temps ni d'énergie émotionnelle sur quelqu'un qui ne ressent pas de sentiments réciproques. Une analyse de <Link href="/sentiments/compatibilite-amoureuse/" className="text-rose-600 hover:text-rose-800 underline font-medium">compatibilité amoureuse</Link> peut aussi éclairer la nature profonde de votre lien.
           </p>
 
           <div className="space-y-4">

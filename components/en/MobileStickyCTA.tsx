@@ -47,7 +47,7 @@ interface MobileStickyCTAProps {
 const ATTR_KEYS = ['gclid', 'gbraid', 'wbraid'] as const;
 
 export default function MobileStickyCTA({
-  href = '/love-psychic-services/keen-review',
+  href='/love-psychic-services/keen-review/',
   affiliateOffer,
   label = 'Talk to a love psychic',
   subLabel = '5 min for $1 · honest reviews · 18+',

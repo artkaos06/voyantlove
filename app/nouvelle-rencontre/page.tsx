@@ -93,7 +93,7 @@ export default function NouvelleRencontreHubPage() {
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">Voyance Rencontre : Comment la Voyance Prédit Votre Prochaine Rencontre Amoureuse</h2>
           <p className="text-lg text-gray-700 leading-relaxed mb-4">
-            La <strong>voyance rencontre</strong> est une branche spécialisée de la <Link href="/voyance-amour" className="text-cyan-600 hover:text-cyan-800 underline font-medium">voyance amoureuse</Link> qui se concentre sur une question fondamentale : <strong>quand, où et comment allez-vous rencontrer l'amour ?</strong> Que vous soyez célibataire depuis longtemps, que vous sortiez d'une <Link href="/rupture" className="text-cyan-600 hover:text-cyan-800 underline font-medium">rupture douloureuse</Link>, ou que vous ayez simplement le sentiment que quelque chose approche, un voyant spécialisé en rencontres analyse les énergies qui entourent votre vie sentimentale pour vous donner des réponses concrètes.
+            La <strong>voyance rencontre</strong> est une branche spécialisée de la <Link href="/voyance-amour/" className="text-cyan-600 hover:text-cyan-800 underline font-medium">voyance amoureuse</Link> qui se concentre sur une question fondamentale : <strong>quand, où et comment allez-vous rencontrer l'amour ?</strong> Que vous soyez célibataire depuis longtemps, que vous sortiez d'une <Link href="/rupture/" className="text-cyan-600 hover:text-cyan-800 underline font-medium">rupture douloureuse</Link>, ou que vous ayez simplement le sentiment que quelque chose approche, un voyant spécialisé en rencontres analyse les énergies qui entourent votre vie sentimentale pour vous donner des réponses concrètes.
           </p>
           <p className="text-gray-700 leading-relaxed mb-4">
             Contrairement à la voyance généraliste, la <strong>voyance sentimentale</strong> dédiée aux rencontres utilise des outils spécifiques : le <strong>tarot des nouvelles rencontres</strong>, l'analyse de vos transits planétaires en maisons relationnelles, et la lecture des blocages émotionnels qui peuvent inconsciemment repousser l'amour. Le voyant ne se contente pas de dire "vous allez rencontrer quelqu'un", il précise le contexte, le profil de la personne, et les conditions favorables.
@@ -157,7 +157,7 @@ export default function NouvelleRencontreHubPage() {
             </div>
           </div>
           <p className="text-gray-700 leading-relaxed">
-            Un <Link href="/nouvelle-rencontre/signes-ame-soeur" className="text-cyan-600 hover:text-cyan-800 underline font-medium">voyant spécialisé en signes de l'âme sœur</Link> peut confirmer si ces signaux annoncent bien une rencontre proche et vous préparer à la reconnaître quand elle arrivera.
+            Un <Link href="/nouvelle-rencontre/signes-ame-soeur/" className="text-cyan-600 hover:text-cyan-800 underline font-medium">voyant spécialisé en signes de l'âme sœur</Link> peut confirmer si ces signaux annoncent bien une rencontre proche et vous préparer à la reconnaître quand elle arrivera.
           </p>
         </section>
 
@@ -191,65 +191,65 @@ export default function NouvelleRencontreHubPage() {
 
         <section className="mb-16">
           <h2 className="text-3xl font-bold mb-8 text-center">🗺️ Votre Chemin vers l'Amour</h2>
-          <p className="text-lg font-semibold text-gray-800 mb-4">Le tarot et la <Link href="/voyance-amour" className="text-cyan-600 hover:text-cyan-800 underline font-medium">voyance amoureuse</Link> guident chaque étape de votre quête sentimentale, du timing de la rencontre à la reconnaissance de votre âme sœur, en passant par la préparation intérieure et spirituelle.</p>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Le tarot et la <Link href="/voyance-amour/" className="text-cyan-600 hover:text-cyan-800 underline font-medium">voyance amoureuse</Link> guident chaque étape de votre quête sentimentale, du timing de la rencontre à la reconnaissance de votre âme sœur, en passant par la préparation intérieure et spirituelle.</p>
           <div className="grid md:grid-cols-2 gap-8">
-            <Link href="/nouvelle-rencontre/quand-rencontre-amour" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-cyan-500">
+            <Link href="/nouvelle-rencontre/quand-rencontre-amour/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-cyan-500">
               <div className="text-4xl mb-4">⏰</div>
               <h3 className="text-2xl font-bold mb-3">Quand Rencontrer ?</h3>
               <p className="text-gray-600 mb-4">Timing, lieu et profil de votre prochaine rencontre amoureuse.</p>
               <span className="text-cyan-600 font-semibold">Découvrir →</span>
             </Link>
 
-            <Link href="/nouvelle-rencontre/trouver-ame-soeur" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-purple-500">
+            <Link href="/nouvelle-rencontre/trouver-ame-soeur/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-purple-500">
               <div className="text-4xl mb-4">💫</div>
               <h3 className="text-2xl font-bold mb-3">Trouver l'Âme Sœur</h3>
               <p className="text-gray-600 mb-4">Comment et où trouver votre âme sœur selon la destinée.</p>
               <span className="text-purple-600 font-semibold">Découvrir →</span>
             </Link>
 
-            <Link href="/nouvelle-rencontre/signes-ame-soeur" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-pink-500">
+            <Link href="/nouvelle-rencontre/signes-ame-soeur/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-pink-500">
               <div className="text-4xl mb-4">✨</div>
               <h3 className="text-2xl font-bold mb-3">Signes Âme Sœur</h3>
               <p className="text-gray-600 mb-4">Reconnaître votre âme sœur quand vous la rencontrez.</p>
               <span className="text-pink-600 font-semibold">Découvrir →</span>
             </Link>
 
-            <Link href="/nouvelle-rencontre/nouvelle-relation-amoureuse" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-green-500">
+            <Link href="/nouvelle-rencontre/nouvelle-relation-amoureuse/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-green-500">
               <div className="text-4xl mb-4">🌱</div>
               <h3 className="text-2xl font-bold mb-3">Nouvelle Relation</h3>
               <p className="text-gray-600 mb-4">Débuter une nouvelle relation après rupture avec sagesse.</p>
               <span className="text-green-600 font-semibold">Découvrir →</span>
             </Link>
 
-            <Link href="/nouvelle-rencontre/flamme-jumelle" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-indigo-500">
+            <Link href="/nouvelle-rencontre/flamme-jumelle/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-indigo-500">
               <div className="text-4xl mb-4">🔥</div>
               <h3 className="text-2xl font-bold mb-3">Flamme Jumelle</h3>
               <p className="text-gray-600 mb-4">Reconnaître et vivre la connexion avec votre flamme jumelle.</p>
               <span className="text-indigo-600 font-semibold">Découvrir →</span>
             </Link>
 
-            <Link href="/nouvelle-rencontre/amour-apres-40-ans" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-amber-500">
+            <Link href="/nouvelle-rencontre/amour-apres-40-ans/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-amber-500">
               <div className="text-4xl mb-4">💛</div>
               <h3 className="text-2xl font-bold mb-3">Amour après 40 ans</h3>
               <p className="text-gray-600 mb-4">Trouver l'amour après 40 ans : guidance et prédictions sentimentales.</p>
               <span className="text-amber-600 font-semibold">Découvrir →</span>
             </Link>
 
-            <Link href="/nouvelle-rencontre/peur-de-aimer-a-nouveau" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-rose-500">
+            <Link href="/nouvelle-rencontre/peur-de-aimer-a-nouveau/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-rose-500">
               <div className="text-4xl mb-4">🛡️</div>
               <h3 className="text-2xl font-bold mb-3">Peur d&apos;Aimer</h3>
               <p className="text-gray-600 mb-4">Surmonter la peur d&apos;aimer à nouveau après une blessure sentimentale.</p>
               <span className="text-rose-600 font-semibold">Découvrir →</span>
             </Link>
 
-            <Link href="/nouvelle-rencontre/voyance-celibat-trouver-lamour" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-violet-500">
+            <Link href="/nouvelle-rencontre/voyance-celibat-trouver-lamour/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-violet-500">
               <div className="text-4xl mb-4">💜</div>
               <h3 className="text-2xl font-bold mb-3">Célibat & Voyance</h3>
               <p className="text-gray-600 mb-4">Voyance pour célibataires : quand et comment trouver l&apos;amour.</p>
               <span className="text-violet-600 font-semibold">Découvrir →</span>
             </Link>
 
-            <Link href="/nouvelle-rencontre/rencontre-amoureuse-en-ligne" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-blue-500">
+            <Link href="/nouvelle-rencontre/rencontre-amoureuse-en-ligne/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-blue-500">
               <div className="text-4xl mb-4">💻</div>
               <h3 className="text-2xl font-bold mb-3">Rencontre en Ligne</h3>
               <p className="text-gray-600 mb-4">Guidance voyance pour les rencontres amoureuses en ligne.</p>
@@ -262,7 +262,7 @@ export default function NouvelleRencontreHubPage() {
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-8">Questions Fréquentes sur les Nouvelles Rencontres</h2>
-          <p className="text-lg font-semibold text-gray-800 mb-4">La voyance amoureuse repond aux interrogations les plus courantes sur le <Link href="/nouvelle-rencontre/quand-rencontre-amour" className="text-cyan-600 hover:text-cyan-800 underline font-medium">timing de la rencontre</Link>, le lieu et la preparation necessaire pour attirer une nouvelle rencontre sentimentale alignee avec votre destinee.</p>
+          <p className="text-lg font-semibold text-gray-800 mb-4">La voyance amoureuse repond aux interrogations les plus courantes sur le <Link href="/nouvelle-rencontre/quand-rencontre-amour/" className="text-cyan-600 hover:text-cyan-800 underline font-medium">timing de la rencontre</Link>, le lieu et la preparation necessaire pour attirer une nouvelle rencontre sentimentale alignee avec votre destinee.</p>
           <div className="space-y-6">
             <div className="border-b border-gray-200 pb-6">
               <h3 className="text-xl font-bold text-gray-900 mb-3">Quand vais-je rencontrer l'amour ?</h3>
@@ -298,7 +298,7 @@ export default function NouvelleRencontreHubPage() {
             </div>
             <div className="border-b border-gray-200 pb-6">
               <h3 className="text-xl font-bold text-gray-900 mb-3">Comment puis-je parler à une voyante gratuitement ?</h3>
-              <p className="text-gray-700 leading-relaxed"><strong>VoyantLove propose 10 minutes offertes</strong> sur votre première consultation. L'idée est simple : les voyants sérieux ont confiance en leur don et préfèrent le prouver plutôt que de vous demander de croire sur parole. Ces minutes gratuites vous permettent de tester la connexion et de juger la qualité des ressentis. Un avertissement : méfiez-vous de la voyance "entièrement gratuite sans limite", elle cache presque toujours un audiotel surtaxé ou une collecte de données. Une offre gratuite sérieuse est toujours limitée dans le temps. Appelez le <strong>01 75 75 45 82</strong> ou consultez en ligne via notre page <Link href="/consulter" className="text-cyan-600 hover:text-cyan-800 underline font-medium">/consulter</Link> pour en profiter.</p>
+              <p className="text-gray-700 leading-relaxed"><strong>VoyantLove propose 10 minutes offertes</strong> sur votre première consultation. L'idée est simple : les voyants sérieux ont confiance en leur don et préfèrent le prouver plutôt que de vous demander de croire sur parole. Ces minutes gratuites vous permettent de tester la connexion et de juger la qualité des ressentis. Un avertissement : méfiez-vous de la voyance "entièrement gratuite sans limite", elle cache presque toujours un audiotel surtaxé ou une collecte de données. Une offre gratuite sérieuse est toujours limitée dans le temps. Appelez le <strong>01 75 75 45 82</strong> ou consultez en ligne via notre page <Link href="/consulter/" className="text-cyan-600 hover:text-cyan-800 underline font-medium">/consulter</Link> pour en profiter.</p>
             </div>
             <div className="pb-6">
               <h3 className="text-xl font-bold text-gray-900 mb-3">Combien coûte une consultation avec un voyant ?</h3>
@@ -312,23 +312,23 @@ export default function NouvelleRencontreHubPage() {
           <p className="text-lg font-semibold text-gray-800 mb-4">La quete amoureuse touche aussi les sentiments actuels, la reconquete d'un ex et le choix de la bonne methode de voyance pour eclairer chaque situation.</p>
           <p className="text-gray-700 mb-4">La recherche de l'amour s'inscrit dans un parcours sentimental plus large. Découvrez nos guidances complémentaires.</p>
           <div className="grid md:grid-cols-3 gap-4">
-            <Link href="/sentiments" className="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition">
+            <Link href="/sentiments/" className="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition">
               <h3 className="font-bold text-gray-900 mb-1">Sentiments Amoureux</h3>
               <p className="text-sm text-gray-600">Décrypter les émotions et savoir si l'autre vous aime vraiment.</p>
             </Link>
-            <Link href="/reconquete" className="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition">
+            <Link href="/reconquete/" className="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition">
               <h3 className="font-bold text-gray-900 mb-1">Reconquête Amoureuse</h3>
               <p className="text-sm text-gray-600">Stratégies pour reconquérir un amour perdu et obtenir une seconde chance.</p>
             </Link>
-            <Link href="/methodes-voyance" className="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition">
+            <Link href="/methodes-voyance/" className="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition">
               <h3 className="font-bold text-gray-900 mb-1">Méthodes de Voyance</h3>
               <p className="text-sm text-gray-600">Tarot, oracle et astrologie pour guider votre quête amoureuse.</p>
             </Link>
-            <Link href="/voyance-gratuite-amour" className="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition">
+            <Link href="/voyance-gratuite-amour/" className="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition">
               <h3 className="font-bold text-gray-900 mb-1">Voyance Gratuite Amour</h3>
               <p className="text-sm text-gray-600">Essayez un tirage amour gratuit pour éclairer votre nouvelle rencontre.</p>
             </Link>
-            <Link href="/consulter" className="bg-purple-50 rounded-lg p-4 hover:bg-purple-100 transition border border-purple-200">
+            <Link href="/consulter/" className="bg-purple-50 rounded-lg p-4 hover:bg-purple-100 transition border border-purple-200">
               <h3 className="font-bold text-purple-900 mb-1">Consulter un Voyant</h3>
               <p className="text-sm text-purple-700">Tous nos voyants disponibles maintenant pour une guidance personnalisée.</p>
             </Link>

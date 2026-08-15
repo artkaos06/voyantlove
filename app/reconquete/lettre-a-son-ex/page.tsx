@@ -20,7 +20,7 @@ const config: ContentPageConfig = {
     h1: 'Écrire une Lettre à son Ex : Guide Voyance',
     subtitle: 'Les mots justes pour toucher le cœur de votre ex selon la voyance',
     gradient: 'from-purple-600 via-purple-700 to-indigo-600',
-    backLink: { href: '/reconquete', label: 'Reconquête' },
+    backLink: { href: '/reconquete/', label: 'Reconquête' },
     anchors: [
       { href: '#consultation', label: 'Consultation Reconquête', primary: true },
     ],
@@ -53,12 +53,12 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/reconquete/reconquerir-son-ex', label: 'Reconquérir son Ex : Guide Complet' },
-    { href: '/reconquete/silence-radio-reconquete', label: 'Silence Radio : La Clé de la Reconquête' },
-    { href: '/reconquete/va-t-il-elle-revenir', label: 'Va-t-il/elle Revenir ?' },
-    { href: '/reconquete/ex-qui-revient', label: 'Mon Ex qui Revient' },
-    { href: '/rupture/oublier-son-ex', label: 'Comment Oublier son Ex' },
-    { href: '/sentiments/maime-t-il-elle', label: 'M\'aime-t-il / M\'aime-t-elle Encore ?' },
+    { href: '/reconquete/reconquerir-son-ex/', label: 'Reconquérir son Ex : Guide Complet' },
+    { href: '/reconquete/silence-radio-reconquete/', label: 'Silence Radio : La Clé de la Reconquête' },
+    { href: '/reconquete/va-t-il-elle-revenir/', label: 'Va-t-il/elle Revenir ?' },
+    { href: '/reconquete/ex-qui-revient/', label: 'Mon Ex qui Revient' },
+    { href: '/rupture/oublier-son-ex/', label: 'Comment Oublier son Ex' },
+    { href: '/sentiments/maime-t-il-elle/', label: 'M\'aime-t-il / M\'aime-t-elle Encore ?' },
   ],
 };
 
@@ -91,7 +91,7 @@ export default function LettreASonExPage() {
           <div className="space-y-4">
             <div className="bg-purple-50 border-l-4 border-purple-500 p-6 rounded-lg">
               <h3 className="font-bold text-lg mb-2 text-purple-700">La Réceptivité de Votre Ex</h3>
-              <p className="text-gray-700">Le <strong>tarot</strong> révèle si votre ex est actuellement dans une phase d'ouverture ou de fermeture émotionnelle. Des cartes comme l'Étoile ou le Soleil indiquent une réceptivité favorable, tandis que la Tour ou le Huit d'Épées signalent que votre ex est encore trop blessé(e) pour recevoir vos mots. Si vous vous demandez si <Link href="/sentiments/maime-t-il-elle" className="text-purple-600 hover:text-purple-800 underline font-medium">votre ex vous aime encore</Link>, cette première position apporte un éclairage décisif. Comprendre cette réceptivité vous évite d'envoyer une lettre au mauvais moment, ce qui pourrait compromettre définitivement vos chances de <strong>réconciliation</strong>.</p>
+              <p className="text-gray-700">Le <strong>tarot</strong> révèle si votre ex est actuellement dans une phase d'ouverture ou de fermeture émotionnelle. Des cartes comme l'Étoile ou le Soleil indiquent une réceptivité favorable, tandis que la Tour ou le Huit d'Épées signalent que votre ex est encore trop blessé(e) pour recevoir vos mots. Si vous vous demandez si <Link href="/sentiments/maime-t-il-elle/" className="text-purple-600 hover:text-purple-800 underline font-medium">votre ex vous aime encore</Link>, cette première position apporte un éclairage décisif. Comprendre cette réceptivité vous évite d'envoyer une lettre au mauvais moment, ce qui pourrait compromettre définitivement vos chances de <strong>réconciliation</strong>.</p>
             </div>
             <div className="bg-indigo-50 border-l-4 border-indigo-500 p-6 rounded-lg">
               <h3 className="font-bold text-lg mb-2 text-indigo-700">Les Blessures à Reconnaître</h3>
@@ -157,7 +157,7 @@ export default function LettreASonExPage() {
           <div className="space-y-4">
             <div className="bg-white rounded-lg p-4 border-l-4 border-purple-500">
               <h3 className="font-bold mb-2 text-purple-700">Après le Silence Radio (4-8 semaines)</h3>
-              <p className="text-gray-700 text-sm">Le <strong>silence radio</strong> a permis au manque de s'installer. Votre ex a eu le temps de digérer les émotions brutes de la <strong>rupture</strong>. C'est souvent à ce moment que la nostalgie remplace la colère. Le <strong>tarot</strong> confirme quand cette bascule émotionnelle a lieu chez votre ancien partenaire. Pour approfondir cette stratégie, consultez notre guide sur la <Link href="/reconquete/reconquerir-son-ex" className="text-purple-600 hover:text-purple-800 underline font-medium">reconquête de son ex</Link>.</p>
+              <p className="text-gray-700 text-sm">Le <strong>silence radio</strong> a permis au manque de s'installer. Votre ex a eu le temps de digérer les émotions brutes de la <strong>rupture</strong>. C'est souvent à ce moment que la nostalgie remplace la colère. Le <strong>tarot</strong> confirme quand cette bascule émotionnelle a lieu chez votre ancien partenaire. Pour approfondir cette stratégie, consultez notre guide sur la <Link href="/reconquete/reconquerir-son-ex/" className="text-purple-600 hover:text-purple-800 underline font-medium">reconquête de son ex</Link>.</p>
             </div>
             <div className="bg-white rounded-lg p-4 border-l-4 border-pink-500">
               <h3 className="font-bold mb-2 text-pink-700">Pendant Vénus Rétrograde</h3>

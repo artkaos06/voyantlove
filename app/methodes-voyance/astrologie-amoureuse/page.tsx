@@ -20,7 +20,7 @@ const config: ContentPageConfig = {
     h1: 'Astrologie Amoureuse',
     subtitle: 'Compatibilité astrale, synastrie de couple et prédictions sentimentales',
     gradient: 'from-violet-500 via-purple-500 to-indigo-500',
-    backLink: { href: '/methodes-voyance', label: 'Retour aux Méthodes de Voyance' },
+    backLink: { href: '/methodes-voyance/', label: 'Retour aux Méthodes de Voyance' },
     anchors: [
       { href: '#consultation', label: 'Analyse Astrale', primary: true },
       { href: '#synastrie', label: 'Étude de Synastrie' },
@@ -58,11 +58,11 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/methodes-voyance/tirage-tarot-amour', label: 'Tirage de Tarot Amoureux : Guide Complet' },
-    { href: '/methodes-voyance/oracle-amour', label: 'Oracle de l\'Amour : Guidance Sentimentale' },
-    { href: '/sentiments/compatibilite-amoureuse', label: 'Compatibilité Amoureuse : Êtes-vous Faits l\'Un pour l\'Autre ?' },
-    { href: '/nouvelle-rencontre/quand-rencontre-amour', label: 'Quand Vais-je Rencontrer l\'Amour ?' },
-    { href: '/sentiments/avenir-amoureux', label: 'Mon Avenir Amoureux : Prédictions' },
+    { href: '/methodes-voyance/tirage-tarot-amour/', label: 'Tirage de Tarot Amoureux : Guide Complet' },
+    { href: '/methodes-voyance/oracle-amour/', label: 'Oracle de l\'Amour : Guidance Sentimentale' },
+    { href: '/sentiments/compatibilite-amoureuse/', label: 'Compatibilité Amoureuse : Êtes-vous Faits l\'Un pour l\'Autre ?' },
+    { href: '/nouvelle-rencontre/quand-rencontre-amour/', label: 'Quand Vais-je Rencontrer l\'Amour ?' },
+    { href: '/sentiments/avenir-amoureux/', label: 'Mon Avenir Amoureux : Prédictions' },
   ],
 };
 
@@ -86,7 +86,7 @@ export default function AstrologieAmoureusePage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">&#x1F52D; Qu&apos;est-ce que l&apos;Astrologie Amoureuse ?</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">L&apos;astrologie amoureuse est une branche de l&apos;astrologie qui analyse V&eacute;nus, Mars, la Lune et les maisons de votre th&egrave;me natal pour r&eacute;v&eacute;ler votre style amoureux, vos besoins affectifs et votre compatibilit&eacute; de couple.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            L&apos;<strong>astrologie amoureuse</strong> est l&apos;une des <Link href="/methodes-voyance" className="text-violet-600 hover:text-violet-800 underline font-medium">m&eacute;thodes de voyance</Link> les plus anciennes, une branche sp&eacute;cialis&eacute;e qui se concentre exclusivement sur les m&eacute;canismes du c&oelig;ur, de l&apos;attraction et de la <strong>compatibilit&eacute; de couple</strong>. Elle transcende les horoscopes simplistes bas&eacute;s sur le seul signe solaire pour explorer la richesse compl&egrave;te de votre <strong>th&egrave;me natal</strong> sous l&apos;angle sentimental.
+            L&apos;<strong>astrologie amoureuse</strong> est l&apos;une des <Link href="/methodes-voyance/" className="text-violet-600 hover:text-violet-800 underline font-medium">m&eacute;thodes de voyance</Link> les plus anciennes, une branche sp&eacute;cialis&eacute;e qui se concentre exclusivement sur les m&eacute;canismes du c&oelig;ur, de l&apos;attraction et de la <strong>compatibilit&eacute; de couple</strong>. Elle transcende les horoscopes simplistes bas&eacute;s sur le seul signe solaire pour explorer la richesse compl&egrave;te de votre <strong>th&egrave;me natal</strong> sous l&apos;angle sentimental.
           </p>
 
           <div className="space-y-5">
@@ -159,7 +159,7 @@ export default function AstrologieAmoureusePage() {
           </div>
 
           <div className="bg-purple-50 border-l-4 border-purple-600 p-5 rounded mt-6">
-            <p className="text-gray-700"><strong>&Agrave; explorer :</strong> Pour une analyse compl&egrave;te de votre <strong>compatibilit&eacute;</strong> int&eacute;grant synastrie et tarot, d&eacute;couvrez notre guide d&eacute;di&eacute; &agrave; la <Link href="/sentiments/compatibilite-amoureuse" className="text-violet-600 hover:text-violet-800 underline font-medium">compatibilit&eacute; amoureuse</Link> qui combine les deux approches pour une vision holistique de votre couple.</p>
+            <p className="text-gray-700"><strong>&Agrave; explorer :</strong> Pour une analyse compl&egrave;te de votre <strong>compatibilit&eacute;</strong> int&eacute;grant synastrie et tarot, d&eacute;couvrez notre guide d&eacute;di&eacute; &agrave; la <Link href="/sentiments/compatibilite-amoureuse/" className="text-violet-600 hover:text-violet-800 underline font-medium">compatibilit&eacute; amoureuse</Link> qui combine les deux approches pour une vision holistique de votre couple.</p>
           </div>
         </section>
 
@@ -168,7 +168,7 @@ export default function AstrologieAmoureusePage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">&#x2648; Les Signes Compatibles en Amour</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Les signes du m&ecirc;me &eacute;l&eacute;ment (Feu, Terre, Air, Eau) partagent une compr&eacute;hension naturelle. Les &eacute;l&eacute;ments compl&eacute;mentaires Feu-Air et Terre-Eau cr&eacute;ent des dynamiques amoureuses enrichissantes et stimulantes.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            La <strong>compatibilit&eacute; par &eacute;l&eacute;ment</strong> est le premier niveau de lecture en <strong>astrologie amoureuse</strong>. Les douze <strong>signes du zodiaque</strong> se r&eacute;partissent en quatre &eacute;l&eacute;ments &mdash; Feu, Terre, Air, Eau &mdash; qui d&eacute;terminent les affinit&eacute;s naturelles entre les signes. Cependant, rappelons que la <Link href="/sentiments/compatibilite-amoureuse" className="text-violet-600 hover:text-violet-800 underline font-medium">compatibilit&eacute; amoureuse</Link> compl&egrave;te n&eacute;cessite l&apos;analyse du th&egrave;me entier.
+            La <strong>compatibilit&eacute; par &eacute;l&eacute;ment</strong> est le premier niveau de lecture en <strong>astrologie amoureuse</strong>. Les douze <strong>signes du zodiaque</strong> se r&eacute;partissent en quatre &eacute;l&eacute;ments &mdash; Feu, Terre, Air, Eau &mdash; qui d&eacute;terminent les affinit&eacute;s naturelles entre les signes. Cependant, rappelons que la <Link href="/sentiments/compatibilite-amoureuse/" className="text-violet-600 hover:text-violet-800 underline font-medium">compatibilit&eacute; amoureuse</Link> compl&egrave;te n&eacute;cessite l&apos;analyse du th&egrave;me entier.
           </p>
 
           <div className="space-y-5">
@@ -246,7 +246,7 @@ export default function AstrologieAmoureusePage() {
           <div className="space-y-4">
             <div className="bg-yellow-50 rounded-lg p-5 border-l-4 border-yellow-400">
               <h3 className="font-bold text-yellow-700 mb-2">Jupiter en Maison VII &mdash; L&apos;Expansion Amoureuse</h3>
-              <p className="text-gray-700 text-sm">Le transit de <strong>Jupiter</strong> dans votre Maison VII est le signal astrologique le plus favorable pour les <strong>rencontres amoureuses</strong> et les engagements. Ce transit, qui dure environ un an, amplifie les opportunit&eacute;s sentimentales et attire dans votre vie des partenaires g&eacute;n&eacute;reux et bienveillants. Pour savoir quand ce transit se produit dans votre th&egrave;me, consultez notre page sur <Link href="/nouvelle-rencontre/quand-rencontre-amour" className="text-violet-600 hover:text-violet-800 underline font-medium">quand vais-je rencontrer l&apos;amour</Link>.</p>
+              <p className="text-gray-700 text-sm">Le transit de <strong>Jupiter</strong> dans votre Maison VII est le signal astrologique le plus favorable pour les <strong>rencontres amoureuses</strong> et les engagements. Ce transit, qui dure environ un an, amplifie les opportunit&eacute;s sentimentales et attire dans votre vie des partenaires g&eacute;n&eacute;reux et bienveillants. Pour savoir quand ce transit se produit dans votre th&egrave;me, consultez notre page sur <Link href="/nouvelle-rencontre/quand-rencontre-amour/" className="text-violet-600 hover:text-violet-800 underline font-medium">quand vais-je rencontrer l&apos;amour</Link>.</p>
             </div>
 
             <div className="bg-pink-50 rounded-lg p-5 border-l-4 border-pink-400">
@@ -266,7 +266,7 @@ export default function AstrologieAmoureusePage() {
           </div>
 
           <div className="bg-violet-50 border-l-4 border-violet-600 p-5 rounded mt-6">
-            <p className="text-gray-700"><strong>Compl&eacute;ment :</strong> Pour une approche int&eacute;grant les &eacute;nergies actuelles &agrave; votre analyse astrale, d&eacute;couvrez notre <Link href="/methodes-voyance/tirage-tarot-amour" className="text-violet-600 hover:text-violet-800 underline font-medium">tirage de tarot amoureux</Link> qui capte les &eacute;nergies du moment pr&eacute;sent l&agrave; o&ugrave; l&apos;astrologie montre les tendances de fond.</p>
+            <p className="text-gray-700"><strong>Compl&eacute;ment :</strong> Pour une approche int&eacute;grant les &eacute;nergies actuelles &agrave; votre analyse astrale, d&eacute;couvrez notre <Link href="/methodes-voyance/tirage-tarot-amour/" className="text-violet-600 hover:text-violet-800 underline font-medium">tirage de tarot amoureux</Link> qui capte les &eacute;nergies du moment pr&eacute;sent l&agrave; o&ugrave; l&apos;astrologie montre les tendances de fond.</p>
           </div>
         </section>
 
@@ -275,10 +275,10 @@ export default function AstrologieAmoureusePage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">&#x1F52E; Combiner Astrologie et Tarot pour l&apos;Amour</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Combiner astrologie et tarot offre la lecture amoureuse la plus compl&egrave;te : l&apos;astrologie r&eacute;v&egrave;le les tendances de fond de votre th&egrave;me natal, tandis que le tarot capte les &eacute;nergies vivantes du moment pr&eacute;sent.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            La combinaison de l&apos;<strong>astrologie amoureuse</strong> et du <Link href="/methodes-voyance/tirage-tarot-amour" className="text-violet-600 hover:text-violet-800 underline font-medium">tirage de tarot amoureux</Link> cr&eacute;e la lecture la plus compl&egrave;te et la plus pr&eacute;cise de votre <strong>destin&eacute;e amoureuse</strong>. L&agrave; o&ugrave; l&apos;astrologie montre les tendances de fond inscrites dans votre <strong>th&egrave;me natal</strong>, le <strong>tarot</strong> capte les &eacute;nergies vivantes du moment pr&eacute;sent. Ensemble, ces deux outils offrent une <strong>vision holistique</strong> incomparable.
+            La combinaison de l&apos;<strong>astrologie amoureuse</strong> et du <Link href="/methodes-voyance/tirage-tarot-amour/" className="text-violet-600 hover:text-violet-800 underline font-medium">tirage de tarot amoureux</Link> cr&eacute;e la lecture la plus compl&egrave;te et la plus pr&eacute;cise de votre <strong>destin&eacute;e amoureuse</strong>. L&agrave; o&ugrave; l&apos;astrologie montre les tendances de fond inscrites dans votre <strong>th&egrave;me natal</strong>, le <strong>tarot</strong> capte les &eacute;nergies vivantes du moment pr&eacute;sent. Ensemble, ces deux outils offrent une <strong>vision holistique</strong> incomparable.
           </p>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Par exemple, votre <strong>synastrie</strong> peut r&eacute;v&eacute;ler une <strong>compatibilit&eacute; astrale</strong> profonde avec votre partenaire, mais un transit difficile de <strong>Saturne</strong> sur votre <strong>V&eacute;nus</strong> natale cr&eacute;e temporairement des tensions. Le <strong>tarot</strong> pr&eacute;cise exactement comment traverser cette p&eacute;riode, et un <Link href="/methodes-voyance/oracle-amour" className="text-violet-600 hover:text-violet-800 underline font-medium">oracle amoureux</Link> peut confirmer quand l&apos;harmonie reviendra. Cette double lecture transforme la consultation en une guidance compl&egrave;te, o&ugrave; chaque dimension de votre <strong>vie sentimentale</strong> est explor&eacute;e avec pr&eacute;cision.
+            Par exemple, votre <strong>synastrie</strong> peut r&eacute;v&eacute;ler une <strong>compatibilit&eacute; astrale</strong> profonde avec votre partenaire, mais un transit difficile de <strong>Saturne</strong> sur votre <strong>V&eacute;nus</strong> natale cr&eacute;e temporairement des tensions. Le <strong>tarot</strong> pr&eacute;cise exactement comment traverser cette p&eacute;riode, et un <Link href="/methodes-voyance/oracle-amour/" className="text-violet-600 hover:text-violet-800 underline font-medium">oracle amoureux</Link> peut confirmer quand l&apos;harmonie reviendra. Cette double lecture transforme la consultation en une guidance compl&egrave;te, o&ugrave; chaque dimension de votre <strong>vie sentimentale</strong> est explor&eacute;e avec pr&eacute;cision.
           </p>
           <p className="text-gray-700 leading-relaxed">
             L&apos;<strong>astrologue-tarologue</strong> qui ma&icirc;trise les deux disciplines peut &eacute;galement confirmer les r&eacute;v&eacute;lations de l&apos;une par l&apos;autre : si la <strong>synastrie</strong> montre une <strong>attraction V&eacute;nus-Mars</strong> puissante et que le <strong>tirage</strong> r&eacute;v&egrave;le les Amoureux et l&apos;As de Coupe, la confirmation est formelle. Cette convergence renforce consid&eacute;rablement la fiabilit&eacute; de la <strong>guidance amoureuse</strong>.

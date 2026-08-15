@@ -19,7 +19,7 @@ const config: ContentPageConfig = {
     h1: 'Voyance Grossesse',
     subtitle: 'Vais-Je Avoir un Enfant ?',
     gradient: 'from-pink-500 via-rose-500 to-orange-500',
-    backLink: { href: '/sentiments', label: 'Retour aux Sentiments & Avenir' },
+    backLink: { href: '/sentiments/', label: 'Retour aux Sentiments & Avenir' },
     anchors: [
       { href: '#cartes', label: 'Les Cartes de la Grossesse', primary: true },
       { href: '#periodes', label: 'Périodes Favorables' },
@@ -53,10 +53,10 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/sentiments', label: 'Sentiments & Avenir : Toutes nos Guidances' },
-    { href: '/sentiments/avenir-amoureux', label: 'Mon Avenir Sentimental : Guidance Complète' },
-    { href: '/sentiments/maime-t-il-elle', label: 'Les Sentiments de mon Partenaire : Analyse Tarot' },
-    { href: '/methodes-voyance/tirage-tarot-amour', label: 'Tirage Tarot Amour : Guide Complet' },
+    { href: '/sentiments/', label: 'Sentiments & Avenir : Toutes nos Guidances' },
+    { href: '/sentiments/avenir-amoureux/', label: 'Mon Avenir Sentimental : Guidance Complète' },
+    { href: '/sentiments/maime-t-il-elle/', label: 'Les Sentiments de mon Partenaire : Analyse Tarot' },
+    { href: '/methodes-voyance/tirage-tarot-amour/', label: 'Tirage Tarot Amour : Guide Complet' },
   ],
 };
 
@@ -76,7 +76,7 @@ export default function VoyanceGrossessePage() {
             Le <strong>tirage grossesse</strong> s'appuie sur des cartes fondamentales dont <strong>l'Impératrice</strong> est la figure centrale, cette arcane III symbolise la fertilité, la création et la maternité accomplie dans toute sa plénitude. La voyance identifie aussi les <strong>périodes fertiles</strong> favorables selon les cycles astrologiques et énergétiques, offrant une dimension temporelle à ce désir de <strong>naissance</strong>.
           </p>
           <p className="text-lg leading-relaxed">
-            Cette guidance explore ce que la voyance peut véritablement révéler sur votre désir d'enfant, les cartes du tarot associées à la maternité, les signes spirituels annonciateurs et les périodes astrologiques à privilégier. Pour une vision globale de ce que l'avenir vous réserve sur le plan affectif, consultez notre guide sur <Link href="/sentiments/avenir-amoureux" className="text-pink-600 hover:text-pink-800 underline font-medium">votre avenir sentimental</Link> en complément de cette lecture.
+            Cette guidance explore ce que la voyance peut véritablement révéler sur votre désir d'enfant, les cartes du tarot associées à la maternité, les signes spirituels annonciateurs et les périodes astrologiques à privilégier. Pour une vision globale de ce que l'avenir vous réserve sur le plan affectif, consultez notre guide sur <Link href="/sentiments/avenir-amoureux/" className="text-pink-600 hover:text-pink-800 underline font-medium">votre avenir sentimental</Link> en complément de cette lecture.
           </p>
         </article>
 
@@ -115,7 +115,7 @@ export default function VoyanceGrossessePage() {
 
           <div className="bg-pink-100 border-l-4 border-pink-500 p-5 rounded-lg mt-5">
             <p className="text-gray-700">
-              <strong>La posture juste :</strong> La voyance grossesse est la plus précieuse quand elle est utilisée en complément d'un suivi médical, pas à sa place. Elle ouvre des dimensions que la médecine ne peut pas explorer et peut apporter une paix intérieure précieuse dans l'attente. Pour comprendre comment <Link href="/sentiments/maime-t-il-elle" className="text-pink-600 hover:text-pink-800 underline font-medium">les sentiments de votre partenaire</Link> s'inscrivent dans ce projet commun, notre guidance dédiée vous éclaire.
+              <strong>La posture juste :</strong> La voyance grossesse est la plus précieuse quand elle est utilisée en complément d'un suivi médical, pas à sa place. Elle ouvre des dimensions que la médecine ne peut pas explorer et peut apporter une paix intérieure précieuse dans l'attente. Pour comprendre comment <Link href="/sentiments/maime-t-il-elle/" className="text-pink-600 hover:text-pink-800 underline font-medium">les sentiments de votre partenaire</Link> s'inscrivent dans ce projet commun, notre guidance dédiée vous éclaire.
             </p>
           </div>
         </section>
@@ -238,7 +238,7 @@ export default function VoyanceGrossessePage() {
             <div className="bg-orange-50 border-l-4 border-orange-500 p-5 rounded-lg">
               <h3 className="font-bold text-lg mb-2 text-orange-700">&#x2609; Les Maisons Astrologiques Clés</h3>
               <p className="text-gray-700">
-                Dans la carte natale, la <strong>Maison V</strong> gouverne directement les enfants, la création et la procréation. Son état (signes des planètes qui y transitent, aspects reçus) révèle la facilité ou les défis du chemin vers la maternité. La <strong>Maison IV</strong> (foyer et famille) et la <strong>Maison VIII</strong> (transformations profondes) sont également analysées dans un bilan astrologique de maternité complet. Pour une lecture personnalisée intégrant votre thème natal, un <Link href="/methodes-voyance/tirage-tarot-amour" className="text-pink-600 hover:text-pink-800 underline font-medium">tirage tarot amour</Link> combiné à votre carte natale offre la vision la plus complète.
+                Dans la carte natale, la <strong>Maison V</strong> gouverne directement les enfants, la création et la procréation. Son état (signes des planètes qui y transitent, aspects reçus) révèle la facilité ou les défis du chemin vers la maternité. La <strong>Maison IV</strong> (foyer et famille) et la <strong>Maison VIII</strong> (transformations profondes) sont également analysées dans un bilan astrologique de maternité complet. Pour une lecture personnalisée intégrant votre thème natal, un <Link href="/methodes-voyance/tirage-tarot-amour/" className="text-pink-600 hover:text-pink-800 underline font-medium">tirage tarot amour</Link> combiné à votre carte natale offre la vision la plus complète.
               </p>
             </div>
           </div>

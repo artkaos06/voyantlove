@@ -156,7 +156,7 @@ export default function NumerologyCalculator() {
           </div>
           <p className="text-sm text-gray-600 mt-4">
             Envie d&rsquo;une lecture approfondie de ces trois nombres croisés avec ceux de votre partenaire ?{' '}
-            <Link href="/consulter" className="text-orange-700 hover:text-orange-900 underline font-medium">
+            <Link href="/consulter/" className="text-orange-700 hover:text-orange-900 underline font-medium">
               Consultez un voyant spécialisé
             </Link>.
           </p>

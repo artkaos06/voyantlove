@@ -19,7 +19,7 @@ const config: ContentPageConfig = {
     h1: 'Voyance Mariage',
     subtitle: 'Vais-Je Me Marier ? Avec Qui ?',
     gradient: 'from-rose-500 via-pink-600 to-purple-600',
-    backLink: { href: '/sentiments', label: 'Retour à Sentiments & Avenir' },
+    backLink: { href: '/sentiments/', label: 'Retour à Sentiments & Avenir' },
     anchors: [
       { href: '#tarot-mariage', label: 'Les Cartes du Mariage', primary: true },
       { href: '#quand', label: 'Timing & Numérologie' },
@@ -53,10 +53,10 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/sentiments', label: 'Sentiments & Avenir : Toutes nos Guidances' },
-    { href: '/sentiments/avenir-amoureux', label: 'Mon Avenir Amoureux : Guidance Complète' },
-    { href: '/sentiments/compatibilite-amoureuse', label: 'Compatibilité Amoureuse & Spirituelle' },
-    { href: '/nouvelle-rencontre/trouver-ame-soeur', label: 'Trouver son Âme Sœur : Guide Complet' },
+    { href: '/sentiments/', label: 'Sentiments & Avenir : Toutes nos Guidances' },
+    { href: '/sentiments/avenir-amoureux/', label: 'Mon Avenir Amoureux : Guidance Complète' },
+    { href: '/sentiments/compatibilite-amoureuse/', label: 'Compatibilité Amoureuse & Spirituelle' },
+    { href: '/nouvelle-rencontre/trouver-ame-soeur/', label: 'Trouver son Âme Sœur : Guide Complet' },
   ],
 };
 
@@ -76,7 +76,7 @@ export default function VoyanceMariagePage() {
             Au-delà de la simple prédiction, la voyance mariage explore la <strong>compatibilité</strong> profonde entre deux âmes, la solidité des fondations émotionnelles, et les dynamiques invisibles qui favorisent ou freinent une union officielle. Chaque consultation révèle non seulement si et quand la <strong>cérémonie</strong> peut avoir lieu, mais aussi comment préparer votre terrain intérieur pour accueillir cet engagement avec amour et clarté.
           </p>
           <p className="text-lg leading-relaxed">
-            Pour mieux cerner votre destinée amoureuse au-delà du mariage, explorez également notre guide sur <Link href="/sentiments/avenir-amoureux" className="text-rose-600 hover:text-rose-800 underline font-medium">votre avenir amoureux</Link> complet, qui embrasse tous les aspects de votre vie sentimentale à venir.
+            Pour mieux cerner votre destinée amoureuse au-delà du mariage, explorez également notre guide sur <Link href="/sentiments/avenir-amoureux/" className="text-rose-600 hover:text-rose-800 underline font-medium">votre avenir amoureux</Link> complet, qui embrasse tous les aspects de votre vie sentimentale à venir.
           </p>
         </article>
 
@@ -220,7 +220,7 @@ export default function VoyanceMariagePage() {
           <h2 className="text-3xl font-bold mb-6 text-rose-600">&#x1F48F; Avec Qui Vais-Je Me Marier ?</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">La voyance peut décrire le profil de votre futur conjoint selon ses traits de caractère dominants, son signe astrologique probable et le timing de votre rencontre si elle n'a pas encore eu lieu.</p>
           <p className="text-gray-700 mb-6">
-            La question du <strong>futur conjoint</strong> est l'une des plus demandées en consultation voyance mariage. Que vous soyez en couple et incertain de l'avenir, ou célibataire en attente d'une rencontre décisive, la voyance peut apporter des éléments concrets de réponse. Pour approfondir la <Link href="/sentiments/compatibilite-amoureuse" className="text-rose-600 hover:text-rose-800 underline font-medium">compatibilité de votre couple</Link>, un tirage dédié est particulièrement révélateur.
+            La question du <strong>futur conjoint</strong> est l'une des plus demandées en consultation voyance mariage. Que vous soyez en couple et incertain de l'avenir, ou célibataire en attente d'une rencontre décisive, la voyance peut apporter des éléments concrets de réponse. Pour approfondir la <Link href="/sentiments/compatibilite-amoureuse/" className="text-rose-600 hover:text-rose-800 underline font-medium">compatibilité de votre couple</Link>, un tirage dédié est particulièrement révélateur.
           </p>
 
           <div className="space-y-5">
@@ -241,7 +241,7 @@ export default function VoyanceMariagePage() {
             <div className="bg-purple-50 border-l-4 border-purple-500 p-5 rounded-lg">
               <h3 className="font-bold text-lg mb-2 text-purple-700">Si la rencontre n'a pas encore eu lieu</h3>
               <p className="text-gray-700">
-                Pour les personnes célibataires, la <strong>voyance mariage</strong> peut indiquer dans quel contexte la rencontre avec votre futur conjoint est la plus probable (via votre entourage, lors d'un voyage, via une application, dans un cadre professionnel ou associatif), la période de l'année la plus propice à cette rencontre, et les changements de comportement ou d'environnement qui peuvent accélérer cette venue. Si vous cherchez à <Link href="/nouvelle-rencontre/trouver-ame-soeur" className="text-rose-600 hover:text-rose-800 underline font-medium">trouver votre âme sœur</Link>, une consultation combinant voyance et numérologie personnelle est particulièrement éclairante.
+                Pour les personnes célibataires, la <strong>voyance mariage</strong> peut indiquer dans quel contexte la rencontre avec votre futur conjoint est la plus probable (via votre entourage, lors d'un voyage, via une application, dans un cadre professionnel ou associatif), la période de l'année la plus propice à cette rencontre, et les changements de comportement ou d'environnement qui peuvent accélérer cette venue. Si vous cherchez à <Link href="/nouvelle-rencontre/trouver-ame-soeur/" className="text-rose-600 hover:text-rose-800 underline font-medium">trouver votre âme sœur</Link>, une consultation combinant voyance et numérologie personnelle est particulièrement éclairante.
               </p>
             </div>
           </div>

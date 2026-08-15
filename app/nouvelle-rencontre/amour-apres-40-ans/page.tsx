@@ -20,7 +20,7 @@ const config: ContentPageConfig = {
     h1: 'Trouver l’Amour après 40 ans',
     subtitle: 'Voyance et guidance sentimentale pour une rencontre authentique et épanouissante',
     gradient: 'from-amber-500 via-yellow-500 to-orange-500',
-    backLink: { href: '/nouvelle-rencontre', label: 'Retour aux Nouvelles Rencontres' },
+    backLink: { href: '/nouvelle-rencontre/', label: 'Retour aux Nouvelles Rencontres' },
     anchors: [
       { href: '#guidance', label: 'Guidance Sentimentale', primary: true },
       { href: '#tarot', label: 'Tirage Tarot' },
@@ -58,11 +58,11 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/nouvelle-rencontre/trouver-ame-soeur', label: 'Trouver son Âme Sœur : Guide Complet' },
-    { href: '/nouvelle-rencontre/quand-rencontre-amour', label: 'Quand Vais-je Rencontrer l’Amour ?' },
-    { href: '/nouvelle-rencontre/signes-ame-soeur', label: 'Les Signes de l’Âme Sœur' },
-    { href: '/nouvelle-rencontre/flamme-jumelle', label: 'Flamme Jumelle : Reconnaissance et Union' },
-    { href: '/sentiments/compatibilite-amoureuse', label: 'Compatibilité Amoureuse' },
+    { href: '/nouvelle-rencontre/trouver-ame-soeur/', label: 'Trouver son Âme Sœur : Guide Complet' },
+    { href: '/nouvelle-rencontre/quand-rencontre-amour/', label: 'Quand Vais-je Rencontrer l’Amour ?' },
+    { href: '/nouvelle-rencontre/signes-ame-soeur/', label: 'Les Signes de l’Âme Sœur' },
+    { href: '/nouvelle-rencontre/flamme-jumelle/', label: 'Flamme Jumelle : Reconnaissance et Union' },
+    { href: '/sentiments/compatibilite-amoureuse/', label: 'Compatibilité Amoureuse' },
   ],
 };
 
@@ -76,7 +76,7 @@ export default function AmourApres40AnsPage() {
           L&rsquo;<strong>amour apr&egrave;s 40 ans</strong> n&rsquo;est pas un compromis &mdash; c&rsquo;est souvent la plus belle des histoires sentimentales. Contrairement aux id&eacute;es re&ccedil;ues, cette p&eacute;riode de la vie offre un terrain id&eacute;al pour construire des connexions profondes et authentiques. La <strong>rencontre tardive</strong> porte en elle une richesse que la jeunesse ne peut offrir : la <strong>maturit&eacute; sentimentale</strong>, la connaissance de soi et la clart&eacute; de ses d&eacute;sirs.
         </p>
         <p className="text-lg leading-relaxed mb-4">
-          La <strong>voyance amoureuse</strong> r&eacute;v&egrave;le que de nombreuses <strong>&acirc;me s&oelig;ur</strong> se retrouvent pr&eacute;cis&eacute;ment &agrave; cette &eacute;tape de leur parcours, une fois les le&ccedil;ons karmiques int&eacute;gr&eacute;es et les blessures du pass&eacute; apais&eacute;es. Le <strong>tarot</strong> et l&rsquo;<Link href="/methodes-voyance/astrologie-amoureuse" className="text-amber-600 hover:text-amber-800 underline font-medium">astrologie amoureuse</Link> permettent d&rsquo;identifier les p&eacute;riodes propices &agrave; cette rencontre et les blocages &eacute;nerg&eacute;tiques &agrave; lib&eacute;rer. Gr&acirc;ce &agrave; la <strong>guidance sentimentale</strong>, vous pouvez aborder cette nouvelle &eacute;tape avec confiance et s&eacute;r&eacute;nit&eacute;, en sachant que l&rsquo;univers pr&eacute;pare votre chemin vers un amour durable et &eacute;panouissant.
+          La <strong>voyance amoureuse</strong> r&eacute;v&egrave;le que de nombreuses <strong>&acirc;me s&oelig;ur</strong> se retrouvent pr&eacute;cis&eacute;ment &agrave; cette &eacute;tape de leur parcours, une fois les le&ccedil;ons karmiques int&eacute;gr&eacute;es et les blessures du pass&eacute; apais&eacute;es. Le <strong>tarot</strong> et l&rsquo;<Link href="/methodes-voyance/astrologie-amoureuse/" className="text-amber-600 hover:text-amber-800 underline font-medium">astrologie amoureuse</Link> permettent d&rsquo;identifier les p&eacute;riodes propices &agrave; cette rencontre et les blocages &eacute;nerg&eacute;tiques &agrave; lib&eacute;rer. Gr&acirc;ce &agrave; la <strong>guidance sentimentale</strong>, vous pouvez aborder cette nouvelle &eacute;tape avec confiance et s&eacute;r&eacute;nit&eacute;, en sachant que l&rsquo;univers pr&eacute;pare votre chemin vers un amour durable et &eacute;panouissant.
         </p>
       </article>
 
@@ -86,7 +86,7 @@ export default function AmourApres40AnsPage() {
         <h2 className="text-3xl font-bold mb-6 text-amber-600">&#127775; Pourquoi l&rsquo;Amour apr&egrave;s 40 ans Est le Plus Beau</h2>
         <p className="text-lg font-semibold text-gray-800 mb-4">Apr&egrave;s 40 ans, la maturit&eacute; &eacute;motionnelle, la connaissance de soi et la clart&eacute; de vos d&eacute;sirs cr&eacute;ent les conditions id&eacute;ales pour une rencontre authentique et une relation nettement plus durable.</p>
         <p className="text-gray-700 mb-6">
-          Apr&egrave;s 40 ans, vous n&rsquo;&ecirc;tes plus le m&ecirc;me amoureux qu&rsquo;&agrave; 20 ou 30 ans. Et c&rsquo;est pr&eacute;cis&eacute;ment ce qui rend cette p&eacute;riode si exceptionnelle pour la <strong><Link href="/nouvelle-rencontre" className="text-amber-600 hover:text-amber-800 underline font-medium">rencontre amoureuse</Link></strong>. La maturit&eacute; &eacute;motionnelle transform&eacute;e en force d&rsquo;attraction cr&eacute;e des liens d&rsquo;une qualit&eacute; incomparable.
+          Apr&egrave;s 40 ans, vous n&rsquo;&ecirc;tes plus le m&ecirc;me amoureux qu&rsquo;&agrave; 20 ou 30 ans. Et c&rsquo;est pr&eacute;cis&eacute;ment ce qui rend cette p&eacute;riode si exceptionnelle pour la <strong><Link href="/nouvelle-rencontre/" className="text-amber-600 hover:text-amber-800 underline font-medium">rencontre amoureuse</Link></strong>. La maturit&eacute; &eacute;motionnelle transform&eacute;e en force d&rsquo;attraction cr&eacute;e des liens d&rsquo;une qualit&eacute; incomparable.
         </p>
 
         <div className="space-y-4">
@@ -138,7 +138,7 @@ export default function AmourApres40AnsPage() {
           <div className="bg-gray-100 p-6 rounded-lg border-2 border-gray-300">
             <h3 className="font-bold text-xl mb-3 text-gray-700">Les Blessures du Pass&eacute;</h3>
             <p className="text-gray-700">
-              Divorces, trahisons, ruptures douloureuses&hellip; Chaque blessure non cicatris&eacute;e cr&eacute;e un <strong>bouclier &eacute;nerg&eacute;tique</strong> qui repousse inconsciemment l&rsquo;amour. Ces m&eacute;moires &eacute;motionnelles programment des sch&eacute;mas de m&eacute;fiance et de sabotage. Le <Link href="/rupture/guerir-rupture" className="text-amber-600 hover:text-amber-800 underline font-medium">travail de gu&eacute;rison des ruptures pass&eacute;es</Link> est essentiel avant de s&rsquo;ouvrir &agrave; une nouvelle histoire. La guidance aide &agrave; identifier et transformer ces blessures en sagesse.
+              Divorces, trahisons, ruptures douloureuses&hellip; Chaque blessure non cicatris&eacute;e cr&eacute;e un <strong>bouclier &eacute;nerg&eacute;tique</strong> qui repousse inconsciemment l&rsquo;amour. Ces m&eacute;moires &eacute;motionnelles programment des sch&eacute;mas de m&eacute;fiance et de sabotage. Le <Link href="/rupture/guerir-rupture/" className="text-amber-600 hover:text-amber-800 underline font-medium">travail de gu&eacute;rison des ruptures pass&eacute;es</Link> est essentiel avant de s&rsquo;ouvrir &agrave; une nouvelle histoire. La guidance aide &agrave; identifier et transformer ces blessures en sagesse.
             </p>
           </div>
 
@@ -164,7 +164,7 @@ export default function AmourApres40AnsPage() {
         <h2 className="text-3xl font-bold mb-6 text-amber-600">&#127183; Le Tarot R&eacute;v&egrave;le Votre Timing Amoureux</h2>
         <p className="text-lg font-semibold text-gray-800 mb-4">L&rsquo;Imp&eacute;ratrice, Le Monde, l&rsquo;&Eacute;toile et Temp&eacute;rance sont les cartes cl&eacute;s qui r&eacute;v&egrave;lent le timing et les conditions de votre prochaine rencontre amoureuse apr&egrave;s 40 ans.</p>
         <p className="text-gray-700 mb-6">
-          Le <strong>tarot amoureux</strong> est un outil pr&eacute;cieux pour les personnes de plus de 40 ans en qu&ecirc;te d&rsquo;amour. Il r&eacute;v&egrave;le <Link href="/nouvelle-rencontre/quand-rencontre-amour" className="text-amber-600 hover:text-amber-800 underline font-medium">quand vous allez rencontrer l&rsquo;amour</Link>, mais aussi les &eacute;nergies &agrave; aligner pour l&rsquo;attirer.
+          Le <strong>tarot amoureux</strong> est un outil pr&eacute;cieux pour les personnes de plus de 40 ans en qu&ecirc;te d&rsquo;amour. Il r&eacute;v&egrave;le <Link href="/nouvelle-rencontre/quand-rencontre-amour/" className="text-amber-600 hover:text-amber-800 underline font-medium">quand vous allez rencontrer l&rsquo;amour</Link>, mais aussi les &eacute;nergies &agrave; aligner pour l&rsquo;attirer.
         </p>
 
         <div className="space-y-4">
@@ -225,7 +225,7 @@ export default function AmourApres40AnsPage() {
           <div className="bg-green-50 p-6 rounded-lg border-2 border-green-200">
             <h3 className="font-bold text-xl mb-3 text-green-700">Les Activit&eacute;s Passionnantes</h3>
             <p className="text-gray-700 mb-3">
-              Les <strong>activit&eacute;s de groupe align&eacute;es avec vos passions</strong> sont le terrain id&eacute;al pour une rencontre authentique. Cours de cuisine, groupes de randonn&eacute;e, ateliers artistiques, clubs de lecture, voyages organis&eacute;s, b&eacute;n&eacute;volat&hellip; Vous y rencontrez des personnes partageant vos centres d&rsquo;int&eacute;r&ecirc;t, ce qui cr&eacute;e imm&eacute;diatement une base de <Link href="/sentiments/compatibilite-amoureuse" className="text-amber-600 hover:text-amber-800 underline font-medium">compatibilit&eacute; amoureuse</Link> naturelle.
+              Les <strong>activit&eacute;s de groupe align&eacute;es avec vos passions</strong> sont le terrain id&eacute;al pour une rencontre authentique. Cours de cuisine, groupes de randonn&eacute;e, ateliers artistiques, clubs de lecture, voyages organis&eacute;s, b&eacute;n&eacute;volat&hellip; Vous y rencontrez des personnes partageant vos centres d&rsquo;int&eacute;r&ecirc;t, ce qui cr&eacute;e imm&eacute;diatement une base de <Link href="/sentiments/compatibilite-amoureuse/" className="text-amber-600 hover:text-amber-800 underline font-medium">compatibilit&eacute; amoureuse</Link> naturelle.
             </p>
             <p className="text-gray-700 text-sm italic">
               La majorit&eacute; des rencontres durables apr&egrave;s 40 ans se font dans le cadre d&rsquo;activit&eacute;s partag&eacute;es.
@@ -242,14 +242,14 @@ export default function AmourApres40AnsPage() {
           <div className="bg-purple-50 p-6 rounded-lg border-2 border-purple-200">
             <h3 className="font-bold text-xl mb-3 text-purple-700">Les Signes de l&rsquo;Univers</h3>
             <p className="text-gray-700">
-              L&rsquo;univers envoie des <strong>synchronicit&eacute;s et des signes</strong> pour guider votre chemin amoureux. Chiffres r&eacute;p&eacute;t&eacute;s (11:11, 22:22), r&ecirc;ves pr&eacute;monitoires, rencontres &laquo;&nbsp;par hasard&nbsp;&raquo; r&eacute;p&eacute;t&eacute;es avec la m&ecirc;me personne, intuitions soudaines&hellip; Apprenez &agrave; reconna&icirc;tre ces <Link href="/nouvelle-rencontre/signes-ame-soeur" className="text-amber-600 hover:text-amber-800 underline font-medium">signes de l&rsquo;&acirc;me s&oelig;ur</Link> qui jalonnent votre parcours vers l&rsquo;amour. Le tarot aide &agrave; d&eacute;coder ces messages subtils.
+              L&rsquo;univers envoie des <strong>synchronicit&eacute;s et des signes</strong> pour guider votre chemin amoureux. Chiffres r&eacute;p&eacute;t&eacute;s (11:11, 22:22), r&ecirc;ves pr&eacute;monitoires, rencontres &laquo;&nbsp;par hasard&nbsp;&raquo; r&eacute;p&eacute;t&eacute;es avec la m&ecirc;me personne, intuitions soudaines&hellip; Apprenez &agrave; reconna&icirc;tre ces <Link href="/nouvelle-rencontre/signes-ame-soeur/" className="text-amber-600 hover:text-amber-800 underline font-medium">signes de l&rsquo;&acirc;me s&oelig;ur</Link> qui jalonnent votre parcours vers l&rsquo;amour. Le tarot aide &agrave; d&eacute;coder ces messages subtils.
             </p>
           </div>
 
           <div className="bg-yellow-50 p-6 rounded-lg border-2 border-yellow-200">
             <h3 className="font-bold text-xl mb-3 text-yellow-700">&Eacute;largir Son Cercle Sans D&eacute;sespoir</h3>
             <p className="text-gray-700">
-              La diff&eacute;rence entre chercher activement et &ecirc;tre d&eacute;sesp&eacute;r&eacute; est cruciale. <strong>Multipliez les occasions sans attente obsessionnelle.</strong> Acceptez les invitations, inscrivez-vous &agrave; de nouvelles activit&eacute;s, voyagez, dites oui &agrave; la vie. L&rsquo;&eacute;nergie de l&eacute;g&egrave;ret&eacute; et de joie est le plus puissant des aimants amoureux. Consultez votre <Link href="/sentiments/avenir-amoureux" className="text-amber-600 hover:text-amber-800 underline font-medium">avenir amoureux</Link> pour conna&icirc;tre les p&eacute;riodes les plus propices.
+              La diff&eacute;rence entre chercher activement et &ecirc;tre d&eacute;sesp&eacute;r&eacute; est cruciale. <strong>Multipliez les occasions sans attente obsessionnelle.</strong> Acceptez les invitations, inscrivez-vous &agrave; de nouvelles activit&eacute;s, voyagez, dites oui &agrave; la vie. L&rsquo;&eacute;nergie de l&eacute;g&egrave;ret&eacute; et de joie est le plus puissant des aimants amoureux. Consultez votre <Link href="/sentiments/avenir-amoureux/" className="text-amber-600 hover:text-amber-800 underline font-medium">avenir amoureux</Link> pour conna&icirc;tre les p&eacute;riodes les plus propices.
             </p>
           </div>
         </div>
@@ -259,7 +259,7 @@ export default function AmourApres40AnsPage() {
         <h2 className="text-3xl font-bold mb-6 text-gray-900">&#128142; Construire une Relation Durable apr&egrave;s 40 ans</h2>
         <p className="text-lg font-semibold text-gray-800 mb-4">Les piliers d&rsquo;une relation durable apr&egrave;s 40 ans sont la communication authentique, les limites saines, la gestion harmonieuse des familles recompos&eacute;es et la conscience des le&ccedil;ons du pass&eacute;.</p>
         <p className="text-gray-700 mb-6">
-          Une fois l&rsquo;amour trouv&eacute;, le d&eacute;fi de cette <Link href="/nouvelle-rencontre/nouvelle-relation-amoureuse" className="text-amber-600 hover:text-amber-800 underline font-medium">nouvelle relation amoureuse</Link> est de <strong>construire des bases solides</strong> qui tiennent compte des r&eacute;alit&eacute;s de la vie apr&egrave;s 40 ans. Voici les piliers essentiels.
+          Une fois l&rsquo;amour trouv&eacute;, le d&eacute;fi de cette <Link href="/nouvelle-rencontre/nouvelle-relation-amoureuse/" className="text-amber-600 hover:text-amber-800 underline font-medium">nouvelle relation amoureuse</Link> est de <strong>construire des bases solides</strong> qui tiennent compte des r&eacute;alit&eacute;s de la vie apr&egrave;s 40 ans. Voici les piliers essentiels.
         </p>
 
         <div className="space-y-4">

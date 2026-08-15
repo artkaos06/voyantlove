@@ -20,7 +20,7 @@ const config: ContentPageConfig = {
     h1: 'Différence d\'Âge en Couple',
     subtitle: 'Ce que le tarot révèle sur la compatibilité au-delà des années',
     gradient: 'from-cyan-600 via-sky-600 to-blue-600',
-    backLink: { href: '/crise-couple', label: 'Retour aux Crises de Couple' },
+    backLink: { href: '/crise-couple/', label: 'Retour aux Crises de Couple' },
     anchors: [
       { href: '#defis', label: 'Défis Spécifiques', primary: true },
       { href: '#regard', label: 'Le Regard des Autres' },
@@ -58,11 +58,11 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/crise-couple', label: 'Crise de Couple : Toutes nos Guidances' },
-    { href: '/sentiments/compatibilite-amoureuse', label: 'Compatibilité Amoureuse' },
-    { href: '/crise-couple/opposition-familiale-couple', label: 'Opposition Familiale au Couple' },
-    { href: '/nouvelle-rencontre/amour-apres-40-ans', label: 'Trouver l\'Amour Après 40 Ans' },
-    { href: '/sentiments/savoir-si-cest-lamour', label: 'Savoir si C\'est l\'Amour' },
+    { href: '/crise-couple/', label: 'Crise de Couple : Toutes nos Guidances' },
+    { href: '/sentiments/compatibilite-amoureuse/', label: 'Compatibilité Amoureuse' },
+    { href: '/crise-couple/opposition-familiale-couple/', label: 'Opposition Familiale au Couple' },
+    { href: '/nouvelle-rencontre/amour-apres-40-ans/', label: 'Trouver l\'Amour Après 40 Ans' },
+    { href: '/sentiments/savoir-si-cest-lamour/', label: 'Savoir si C\'est l\'Amour' },
   ],
 };
 
@@ -79,7 +79,7 @@ export default function DifferenceAgeCouplePage() {
               Une <strong>différence d&apos;âge</strong> importante dans un couple soulève souvent des interrogations légitimes, entre le <strong>jugement de l&apos;entourage</strong> et les questionnements internes sur la durabilité de la relation. Le <strong>tarot de compatibilité</strong> permet d&apos;évaluer ce qui compte réellement : la <strong>maturité émotionnelle partagée</strong>, l&apos;alignement des valeurs et la capacité à traverser ensemble des étapes de vie parfois décalées.
             </p>
             <p className="text-lg leading-relaxed mb-4">
-              Le succès d&apos;un couple ne se mesure pas au nombre d&apos;années d&apos;écart, mais à la profondeur du lien construit. Pour approfondir votre analyse de couple au-delà de cette question spécifique, notre guide sur la <Link href="/sentiments/compatibilite-amoureuse" className="text-cyan-700 hover:text-cyan-900 underline font-medium">compatibilité amoureuse</Link> complète cette guidance.
+              Le succès d&apos;un couple ne se mesure pas au nombre d&apos;années d&apos;écart, mais à la profondeur du lien construit. Pour approfondir votre analyse de couple au-delà de cette question spécifique, notre guide sur la <Link href="/sentiments/compatibilite-amoureuse/" className="text-cyan-700 hover:text-cyan-900 underline font-medium">compatibilité amoureuse</Link> complète cette guidance.
             </p>
             <p className="text-lg leading-relaxed">
               Que votre entourage soutienne ou questionne votre relation, la <strong>voyance</strong> offre un regard neutre et énergétique sur le véritable potentiel de votre couple, loin des <strong>préjugés sociaux</strong> liés à l&apos;âge.
@@ -157,7 +157,7 @@ export default function DifferenceAgeCouplePage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">{'❤️'} Ce Qui Compte Vraiment Au-delà de l&apos;Âge</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Maturite emotionnelle partagee, valeurs communes et communication ouverte comptent davantage que le nombre d&apos;annees d&apos;ecart pour construire une relation durable.</p>
           <p className="text-gray-700 leading-relaxed mb-4">
-            La <strong>maturité émotionnelle</strong> partagée est le facteur le plus déterminant dans la réussite d&apos;un couple avec une différence d&apos;âge, bien plus que le chiffre lui-même. Deux personnes alignées sur leurs <strong>valeurs fondamentales</strong> et leur vision de l&apos;avenir peuvent construire une relation solide, quel que soit l&apos;écart. Pour identifier si vos sentiments sont profonds et durables, consultez notre guide pour <Link href="/sentiments/savoir-si-cest-lamour" className="text-cyan-700 hover:text-cyan-900 underline font-medium">savoir si c&apos;est l&apos;amour</Link>.
+            La <strong>maturité émotionnelle</strong> partagée est le facteur le plus déterminant dans la réussite d&apos;un couple avec une différence d&apos;âge, bien plus que le chiffre lui-même. Deux personnes alignées sur leurs <strong>valeurs fondamentales</strong> et leur vision de l&apos;avenir peuvent construire une relation solide, quel que soit l&apos;écart. Pour identifier si vos sentiments sont profonds et durables, consultez notre guide pour <Link href="/sentiments/savoir-si-cest-lamour/" className="text-cyan-700 hover:text-cyan-900 underline font-medium">savoir si c&apos;est l&apos;amour</Link>.
           </p>
           <p className="text-gray-700 leading-relaxed mb-6">
             La <strong>communication ouverte</strong> sur les attentes de vie, dès le début de la relation, évite les malentendus futurs liés aux différences d&apos;âge. Aborder franchement les sujets sensibles comme la parentalité ou les projets de retraite renforce la confiance mutuelle plutôt que de créer des non-dits.
@@ -172,7 +172,7 @@ export default function DifferenceAgeCouplePage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">{'\u{1F441}️'} Gérer le Regard des Autres</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Se concentrer sur la solidite interne du couple, choisir ses cercles de confiance et cultiver l&apos;assurance permettent de preserver la relation face au jugement exterieur.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Le <strong>jugement extérieur</strong> reflète souvent des préjugés sociaux plus que la réalité de votre relation. Se concentrer sur la <strong>solidité interne du couple</strong> plutôt que sur l&apos;approbation externe protège durablement votre équilibre. Si cette pression provient spécifiquement de votre famille, notre guide sur l&apos;<Link href="/crise-couple/opposition-familiale-couple" className="text-cyan-700 hover:text-cyan-900 underline font-medium">opposition familiale</Link> propose des stratégies complémentaires.
+            Le <strong>jugement extérieur</strong> reflète souvent des préjugés sociaux plus que la réalité de votre relation. Se concentrer sur la <strong>solidité interne du couple</strong> plutôt que sur l&apos;approbation externe protège durablement votre équilibre. Si cette pression provient spécifiquement de votre famille, notre guide sur l&apos;<Link href="/crise-couple/opposition-familiale-couple/" className="text-cyan-700 hover:text-cyan-900 underline font-medium">opposition familiale</Link> propose des stratégies complémentaires.
           </p>
           <div className="bg-white p-6 rounded-lg border-2 border-cyan-200">
             <p className="text-gray-700"><strong>{'\u{1F52E}'} Conseil du voyant :</strong> Les couples qui résistent au jugement extérieur avec sérénité, sans chercher constamment à se justifier, en ressortent généralement plus <strong>soudés et confiants</strong> dans la légitimité de leur relation.</p>

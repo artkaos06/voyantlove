@@ -20,7 +20,7 @@ const config: ContentPageConfig = {
     h1: 'Voyance Tchat Gratuit Amour',
     subtitle: 'Guide complet pour une consultation sentimentale par tchat fiable et éclairante',
     gradient: 'from-blue-500 via-cyan-500 to-teal-500',
-    backLink: { href: '/voyance-gratuite-amour', label: 'Retour à Voyance Gratuite Amour' },
+    backLink: { href: '/voyance-gratuite-amour/', label: 'Retour à Voyance Gratuite Amour' },
     anchors: [
       { href: '#consultation', label: 'Consulter par Tchat', primary: true },
       { href: '#preparer', label: 'Préparer sa Séance' },
@@ -54,10 +54,10 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/voyance-gratuite-amour', label: 'Voyance Gratuite Amour : Tirages et Guidance Sentimentale' },
-    { href: '/methodes-voyance/voyance-telephone-amour', label: 'Voyance Téléphone Amour : Consultation Directe' },
-    { href: '/crise-couple/sauver-son-couple', label: 'Sauver Son Couple : Conseils et Guidance' },
-    { href: '/sentiments/avenir-amoureux', label: 'Mon Avenir Amoureux : Prédictions' },
+    { href: '/voyance-gratuite-amour/', label: 'Voyance Gratuite Amour : Tirages et Guidance Sentimentale' },
+    { href: '/methodes-voyance/voyance-telephone-amour/', label: 'Voyance Téléphone Amour : Consultation Directe' },
+    { href: '/crise-couple/sauver-son-couple/', label: 'Sauver Son Couple : Conseils et Guidance' },
+    { href: '/sentiments/avenir-amoureux/', label: 'Mon Avenir Amoureux : Prédictions' },
   ],
 };
 
@@ -89,7 +89,7 @@ export default function VoyanceTchatGratuitAmourPage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">&#x1F4AC; Comment Fonctionne la Voyance par Tchat</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">La voyance par tchat repose sur un &eacute;change &eacute;crit en temps r&eacute;el entre le consultant et le voyant, permettant une guidance sentimentale pr&eacute;cise et document&eacute;e.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            La <strong>voyance tchat gratuit amour</strong> fonctionne selon un principe simple mais efficace. Vous acc&eacute;dez &agrave; une plateforme en ligne, choisissez un <strong>voyant sp&eacute;cialis&eacute;</strong> en questions sentimentales et entamez une conversation &eacute;crite en temps r&eacute;el. Contrairement &agrave; la <Link href="/methodes-voyance/voyance-telephone-amour" className="text-blue-600 hover:text-blue-800 underline font-medium">voyance par t&eacute;l&eacute;phone</Link>, le tchat offre un temps de r&eacute;flexion pr&eacute;cieux entre chaque message, id&eacute;al pour formuler des questions sentimentales pr&eacute;cises.
+            La <strong>voyance tchat gratuit amour</strong> fonctionne selon un principe simple mais efficace. Vous acc&eacute;dez &agrave; une plateforme en ligne, choisissez un <strong>voyant sp&eacute;cialis&eacute;</strong> en questions sentimentales et entamez une conversation &eacute;crite en temps r&eacute;el. Contrairement &agrave; la <Link href="/methodes-voyance/voyance-telephone-amour/" className="text-blue-600 hover:text-blue-800 underline font-medium">voyance par t&eacute;l&eacute;phone</Link>, le tchat offre un temps de r&eacute;flexion pr&eacute;cieux entre chaque message, id&eacute;al pour formuler des questions sentimentales pr&eacute;cises.
           </p>
 
           <div className="space-y-5">
@@ -181,7 +181,7 @@ export default function VoyanceTchatGratuitAmourPage() {
             <div className="bg-blue-50 border-l-4 border-blue-500 p-5 rounded-lg">
               <h3 className="font-bold text-lg mb-2 text-blue-700">Questions sur l&apos;Avenir du Couple</h3>
               <p className="text-gray-700 text-sm">
-                Pour explorer <Link href="/sentiments/avenir-amoureux" className="text-blue-600 hover:text-blue-800 underline font-medium">votre avenir amoureux</Link>, posez des questions comme &laquo;&nbsp;quelle &eacute;volution se dessine pour notre <strong>relation</strong> dans les prochains mois&nbsp;?&nbsp;&raquo; ou &laquo;&nbsp;quels sont les d&eacute;fis &agrave; surmonter pour renforcer notre <strong>couple</strong>&nbsp;?&nbsp;&raquo;. Ces formulations invitent le <strong>voyant</strong> &agrave; d&eacute;tailler les &eacute;nergies positives et les obstacles, offrant une vision compl&egrave;te de votre <strong>avenir sentimental</strong>.
+                Pour explorer <Link href="/sentiments/avenir-amoureux/" className="text-blue-600 hover:text-blue-800 underline font-medium">votre avenir amoureux</Link>, posez des questions comme &laquo;&nbsp;quelle &eacute;volution se dessine pour notre <strong>relation</strong> dans les prochains mois&nbsp;?&nbsp;&raquo; ou &laquo;&nbsp;quels sont les d&eacute;fis &agrave; surmonter pour renforcer notre <strong>couple</strong>&nbsp;?&nbsp;&raquo;. Ces formulations invitent le <strong>voyant</strong> &agrave; d&eacute;tailler les &eacute;nergies positives et les obstacles, offrant une vision compl&egrave;te de votre <strong>avenir sentimental</strong>.
               </p>
             </div>
 
@@ -208,7 +208,7 @@ export default function VoyanceTchatGratuitAmourPage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">&#x1F50D; Reconna&icirc;tre un Voyant S&eacute;rieux en Ligne</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Un voyant s&eacute;rieux par tchat se distingue par sa bienveillance, sa pr&eacute;cision et son refus de cr&eacute;er une d&eacute;pendance &eacute;motionnelle chez le consultant.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Dans l&apos;univers de la <strong>voyance tchat gratuit amour</strong>, distinguer un praticien authentique d&apos;un charlatan est essentiel pour prot&eacute;ger votre c&oelig;ur et votre portefeuille. Certains signes ne trompent pas lorsque vous cherchez &agrave; <Link href="/crise-couple/sauver-son-couple" className="text-blue-600 hover:text-blue-800 underline font-medium">sauver votre couple</Link> ou &agrave; comprendre votre <strong>situation sentimentale</strong>. Voici les crit&egrave;res d&eacute;terminants.
+            Dans l&apos;univers de la <strong>voyance tchat gratuit amour</strong>, distinguer un praticien authentique d&apos;un charlatan est essentiel pour prot&eacute;ger votre c&oelig;ur et votre portefeuille. Certains signes ne trompent pas lorsque vous cherchez &agrave; <Link href="/crise-couple/sauver-son-couple/" className="text-blue-600 hover:text-blue-800 underline font-medium">sauver votre couple</Link> ou &agrave; comprendre votre <strong>situation sentimentale</strong>. Voici les crit&egrave;res d&eacute;terminants.
           </p>
 
           <div className="space-y-5">
@@ -280,7 +280,7 @@ export default function VoyanceTchatGratuitAmourPage() {
           </div>
 
           <div className="bg-blue-50 border-l-4 border-blue-600 p-5 rounded mt-6">
-            <p className="text-gray-700"><strong>Conseil :</strong> Avant de vous engager dans une consultation approfondie, explorez les diff&eacute;rentes options de <Link href="/voyance-gratuite-amour" className="text-blue-600 hover:text-blue-800 underline font-medium">voyance gratuite amour</Link> disponibles pour trouver le voyant et la m&eacute;thode qui vous correspondent le mieux.</p>
+            <p className="text-gray-700"><strong>Conseil :</strong> Avant de vous engager dans une consultation approfondie, explorez les diff&eacute;rentes options de <Link href="/voyance-gratuite-amour/" className="text-blue-600 hover:text-blue-800 underline font-medium">voyance gratuite amour</Link> disponibles pour trouver le voyant et la m&eacute;thode qui vous correspondent le mieux.</p>
           </div>
         </section>
 

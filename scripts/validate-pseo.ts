@@ -58,10 +58,12 @@ import { generateStaticParams as termParams, generateMetadata as termMeta } from
 import sitemap from '../app/sitemap';
 import {
   auditPageSource,
+  extractHrefLikeLiterals,
   extractInternalHrefs,
   filePathToRoute,
   findPageFiles,
   isDynamicRoute,
+  isUnslashedInternalHref,
   loadAllSources,
   loadPages,
   normalizeRoute,
@@ -346,6 +348,41 @@ function checkPages(networkRoutes: Set<string>): { issues: Issue[]; pages: Disco
   return { issues, pages };
 }
 
+// Trailing-slash literal audit: trailingSlash: true (next.config.mjs) makes
+// every page route's canonical form end in `/`; middleware.ts 308-redirects
+// requests that don't, but that redirect is a safety net for stray/external
+// links, not something our own source should rely on for every click. This
+// walks every href-like string literal — JSX `href=` attrs AND object
+// `href: '...'` properties (nav/footer arrays, ContentPageConfig
+// related/backLink, funnel-link maps) — across app/, components/, and lib/
+// (where several of those link arrays are defined), and blocks on any
+// internal page link that's missing its trailing slash. See
+// isUnslashedInternalHref() for the exact exclusion rules (api/_next,
+// external, mailto/tel, fragments, static assets).
+function checkTrailingSlashLinks(): Issue[] {
+  const issues: Issue[] = [];
+  const sources = loadAllSources(
+    [path.join(REPO_ROOT, 'app'), path.join(REPO_ROOT, 'components'), path.join(REPO_ROOT, 'lib')],
+    REPO_ROOT
+  );
+
+  for (const { relPath, source } of sources) {
+    const seen = new Set<string>();
+    for (const raw of extractHrefLikeLiterals(source)) {
+      if (!isUnslashedInternalHref(raw)) continue;
+      if (seen.has(raw)) continue; // one issue per distinct literal per file, not per occurrence
+      seen.add(raw);
+      issues.push({
+        severity: 'error',
+        scope: 'trailing-slash',
+        message: `${relPath}: internal link "${raw}" is missing its canonical trailing slash`,
+      });
+    }
+  }
+
+  return issues;
+}
+
 // ---------------------------------------------------------------------------
 // (6) duplicate-intent / content-similarity warnings
 // ---------------------------------------------------------------------------
@@ -418,9 +455,10 @@ export async function runValidation(): Promise<{ errors: Issue[]; warnings: Issu
   const { issues: networkIssues, metaSamples, validRoutes } = await checkNetworks();
   const integrityIssues = checkGlossaryIntegrity();
   const { issues: pageIssues, pages } = checkPages(validRoutes);
+  const trailingSlashIssues = checkTrailingSlashLinks();
   const duplicateIssues = checkDuplicateIntent(metaSamples, pages);
 
-  const all = [...networkIssues, ...integrityIssues, ...pageIssues, ...duplicateIssues];
+  const all = [...networkIssues, ...integrityIssues, ...pageIssues, ...trailingSlashIssues, ...duplicateIssues];
   return {
     errors: all.filter((i) => i.severity === 'error'),
     warnings: all.filter((i) => i.severity === 'warning'),

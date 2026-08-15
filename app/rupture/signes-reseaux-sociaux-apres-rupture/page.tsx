@@ -20,7 +20,7 @@ const config: ContentPageConfig = {
     h1: 'Photos Supprimées, Nom Modifié, Silence : Interpréter les Réseaux Sociaux Après une Rupture',
     subtitle: 'Ce que les signaux numériques peuvent dire, et surtout ce qu\'ils ne prouvent pas',
     gradient: 'from-slate-600 via-indigo-600 to-purple-600',
-    backLink: { href: '/rupture', label: 'Retour à Rupture & Guérison' },
+    backLink: { href: '/rupture/', label: 'Retour à Rupture & Guérison' },
     anchors: [
       { href: '#matrice', label: 'La Matrice des Signaux', primary: true },
       { href: '#surveillance', label: 'Quand la Veille Fait Mal' },
@@ -58,11 +58,11 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/rupture', label: 'Rupture & Guérison : Toutes nos Guidances' },
-    { href: '/rupture/oublier-son-ex', label: 'Oublier son Ex' },
-    { href: '/rupture/comment-tourner-la-page', label: 'Comment Tourner la Page' },
-    { href: '/reconquete/ex-chaud-et-froid-apres-separation', label: 'Mon Ex est Chaud et Froid' },
-    { href: '/sentiments/pense-t-il-elle-a-moi', label: 'Pense-t-il/elle à Moi ?' },
+    { href: '/rupture/', label: 'Rupture & Guérison : Toutes nos Guidances' },
+    { href: '/rupture/oublier-son-ex/', label: 'Oublier son Ex' },
+    { href: '/rupture/comment-tourner-la-page/', label: 'Comment Tourner la Page' },
+    { href: '/reconquete/ex-chaud-et-froid-apres-separation/', label: 'Mon Ex est Chaud et Froid' },
+    { href: '/sentiments/pense-t-il-elle-a-moi/', label: 'Pense-t-il/elle à Moi ?' },
   ],
 };
 
@@ -80,7 +80,7 @@ export default function SignesReseauxSociauxApresRupturePage() {
               Cette page propose une <strong>matrice d&apos;interprétation</strong> pratique : pour chaque signal numérique courant, ce qu&apos;il peut signifier, ce qu&apos;il ne prouve pas, et son degré de fiabilité. L&apos;objectif n&apos;est pas de transformer un like ou une vue de story en certitude, ce serait vous tromper, mais de vous rendre du recul face à des <strong>traces ambiguës</strong> par nature.
             </p>
             <p className="text-lg leading-relaxed">
-              Nous verrons aussi le moment où cette veille devient un piège qui entretient la souffrance, et comment retrouver de la clarté ailleurs que sur un écran. Cette approche rejoint notre guidance pour <Link href="/rupture/oublier-son-ex" className="text-indigo-600 hover:text-indigo-800 underline font-medium">oublier son ex</Link>. Une <strong>consultation de voyance</strong> peut éclairer votre ressenti et vos décisions, sans jamais établir avec certitude les intentions de l&apos;autre à partir de son profil.
+              Nous verrons aussi le moment où cette veille devient un piège qui entretient la souffrance, et comment retrouver de la clarté ailleurs que sur un écran. Cette approche rejoint notre guidance pour <Link href="/rupture/oublier-son-ex/" className="text-indigo-600 hover:text-indigo-800 underline font-medium">oublier son ex</Link>. Une <strong>consultation de voyance</strong> peut éclairer votre ressenti et vos décisions, sans jamais établir avec certitude les intentions de l&apos;autre à partir de son profil.
             </p>
           </div>
         </article>
@@ -150,7 +150,7 @@ export default function SignesReseauxSociauxApresRupturePage() {
             </div>
             <div className="bg-orange-50 border-l-4 border-orange-500 p-5 rounded">
               <h3 className="font-bold mb-2 text-orange-700">{'\u{1F504}'} La Réapparition Ponctuelle</h3>
-              <p className="text-gray-700 text-sm">Un message isolé qui retombe aussitôt ressemble au comportement <Link href="/reconquete/ex-chaud-et-froid-apres-separation" className="text-indigo-600 hover:text-indigo-800 underline font-medium">chaud et froid</Link> : sans suite concrète, il ne prouve rien.</p>
+              <p className="text-gray-700 text-sm">Un message isolé qui retombe aussitôt ressemble au comportement <Link href="/reconquete/ex-chaud-et-froid-apres-separation/" className="text-indigo-600 hover:text-indigo-800 underline font-medium">chaud et froid</Link> : sans suite concrète, il ne prouve rien.</p>
             </div>
             <div className="bg-orange-50 border-l-4 border-orange-500 p-5 rounded">
               <h3 className="font-bold mb-2 text-orange-700">{'\u{1F4F8}'} La Publication &laquo;Message&raquo;</h3>
@@ -187,7 +187,7 @@ export default function SignesReseauxSociauxApresRupturePage() {
             </div>
           </div>
           <div className="mt-6 bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded">
-            <p className="text-gray-700"><strong>{'\u{1F4A1}'} À retenir :</strong> retrouver de la clarté passe par le retour à soi, pas par le décryptage d&apos;un profil. Si tourner la page vous semble hors de portée, notre guide <Link href="/rupture/comment-tourner-la-page" className="text-indigo-600 hover:text-indigo-800 underline font-medium">comment tourner la page</Link> propose des repères concrets. Une <strong>consultation de voyance</strong> peut éclairer votre ressenti, sans jamais transformer un profil en preuve.</p>
+            <p className="text-gray-700"><strong>{'\u{1F4A1}'} À retenir :</strong> retrouver de la clarté passe par le retour à soi, pas par le décryptage d&apos;un profil. Si tourner la page vous semble hors de portée, notre guide <Link href="/rupture/comment-tourner-la-page/" className="text-indigo-600 hover:text-indigo-800 underline font-medium">comment tourner la page</Link> propose des repères concrets. Une <strong>consultation de voyance</strong> peut éclairer votre ressenti, sans jamais transformer un profil en preuve.</p>
           </div>
         </section>
     </ContentPage>

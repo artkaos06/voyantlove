@@ -20,7 +20,7 @@ const config: ContentPageConfig = {
     h1: 'Rêver de son Ex : Signification et Interprétation',
     subtitle: 'Ce que ces rêves révèlent sur votre monde intérieur, et ce qu\'ils ne prédisent pas',
     gradient: 'from-indigo-700 via-purple-700 to-violet-800',
-    backLink: { href: '/rupture', label: 'Retour à Rupture & Guérison' },
+    backLink: { href: '/rupture/', label: 'Retour à Rupture & Guérison' },
     anchors: [
       { href: '#types', label: 'Les Types de Rêves', primary: true },
       { href: '#pieges', label: 'Ce qu\'il ne Faut Pas y Lire' },
@@ -58,12 +58,12 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/rupture', label: 'Rupture & Guérison : Toutes nos Guidances' },
-    { href: '/rupture/oublier-son-ex', label: 'Oublier son Ex' },
-    { href: '/rupture/comment-tourner-la-page', label: 'Comment Tourner la Page' },
-    { href: '/sentiments/pense-t-il-elle-a-moi', label: 'Pense-t-il/elle à Moi ?' },
-    { href: '/rupture/deuil-amoureux', label: 'Traverser le Deuil Amoureux' },
-    { href: '/reves-amour', label: 'Interprétation des Rêves Amoureux : Tous les Rêves' },
+    { href: '/rupture/', label: 'Rupture & Guérison : Toutes nos Guidances' },
+    { href: '/rupture/oublier-son-ex/', label: 'Oublier son Ex' },
+    { href: '/rupture/comment-tourner-la-page/', label: 'Comment Tourner la Page' },
+    { href: '/sentiments/pense-t-il-elle-a-moi/', label: 'Pense-t-il/elle à Moi ?' },
+    { href: '/rupture/deuil-amoureux/', label: 'Traverser le Deuil Amoureux' },
+    { href: '/reves-amour/', label: 'Interprétation des Rêves Amoureux : Tous les Rêves' },
   ],
 };
 
@@ -81,7 +81,7 @@ export default function ReverDeSonExPage() {
               Un point essentiel dès le départ : un rêve n&apos;est <strong>pas une prémonition</strong>. Rêver que son ex revient ne prédit pas un retour réel ; cela exprime le plus souvent un <strong>désir</strong> ou un espoir non résolu. La signification dépend du <strong>ressenti au réveil</strong> et du contexte du rêve, jamais d&apos;une grille universelle et figée trouvée dans un &laquo;dictionnaire des rêves&raquo;.
             </p>
             <p className="text-lg leading-relaxed">
-              Cette page propose une lecture des <strong>types de rêves</strong> les plus courants, ce qu&apos;ils peuvent révéler, et surtout ce qu&apos;il ne faut pas y projeter. Rêver d&apos;un ex que l&apos;on croyait oublié est un signe de <strong>digestion émotionnelle</strong>, pas d&apos;un amour intact, un processus proche de celui décrit dans notre guide pour <Link href="/rupture/oublier-son-ex" className="text-indigo-600 hover:text-indigo-800 underline font-medium">oublier son ex</Link>. Une <strong>consultation de voyance</strong> peut éclairer un rêve récurrent, sans jamais prétendre prédire le comportement d&apos;une autre personne.
+              Cette page propose une lecture des <strong>types de rêves</strong> les plus courants, ce qu&apos;ils peuvent révéler, et surtout ce qu&apos;il ne faut pas y projeter. Rêver d&apos;un ex que l&apos;on croyait oublié est un signe de <strong>digestion émotionnelle</strong>, pas d&apos;un amour intact, un processus proche de celui décrit dans notre guide pour <Link href="/rupture/oublier-son-ex/" className="text-indigo-600 hover:text-indigo-800 underline font-medium">oublier son ex</Link>. Une <strong>consultation de voyance</strong> peut éclairer un rêve récurrent, sans jamais prétendre prédire le comportement d&apos;une autre personne.
             </p>
           </div>
         </article>
@@ -161,7 +161,7 @@ export default function ReverDeSonExPage() {
             </div>
           </div>
           <div className="mt-6 bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded">
-            <p className="text-gray-700"><strong>{'\u{1F4A1}'} À retenir :</strong> aucun rêve ne prouve ce que ressent l&apos;autre. Pour cette question précise, mieux vaut observer des faits concrets, un point détaillé dans notre guide <Link href="/sentiments/pense-t-il-elle-a-moi" className="text-indigo-600 hover:text-indigo-800 underline font-medium">pense-t-il/elle à moi</Link>, que d&apos;interpréter un songe.</p>
+            <p className="text-gray-700"><strong>{'\u{1F4A1}'} À retenir :</strong> aucun rêve ne prouve ce que ressent l&apos;autre. Pour cette question précise, mieux vaut observer des faits concrets, un point détaillé dans notre guide <Link href="/sentiments/pense-t-il-elle-a-moi/" className="text-indigo-600 hover:text-indigo-800 underline font-medium">pense-t-il/elle à moi</Link>, que d&apos;interpréter un songe.</p>
           </div>
         </section>
 
@@ -179,7 +179,7 @@ export default function ReverDeSonExPage() {
             </div>
             <div className="bg-white rounded-lg p-6 border-l-4 border-purple-500">
               <h3 className="font-bold text-lg mb-2 text-purple-700">{'\u{1F331}'} Repérer l&apos;étape</h3>
-              <p className="text-gray-700 text-sm">Le rêve situe où vous en êtes du deuil. Un rêve douloureux peut paradoxalement signaler que vous <Link href="/rupture/comment-tourner-la-page" className="text-purple-600 hover:text-purple-800 underline font-medium">tournez la page</Link>.</p>
+              <p className="text-gray-700 text-sm">Le rêve situe où vous en êtes du deuil. Un rêve douloureux peut paradoxalement signaler que vous <Link href="/rupture/comment-tourner-la-page/" className="text-purple-600 hover:text-purple-800 underline font-medium">tournez la page</Link>.</p>
             </div>
             <div className="bg-white rounded-lg p-6 border-l-4 border-violet-500">
               <h3 className="font-bold text-lg mb-2 text-violet-700">{'\u{1F54A}️'} Apaiser le récurrent</h3>

@@ -83,7 +83,7 @@ export default function KeenReviewPage() {
           </Link>{' '}
           /{' '}
           <Link
-            href="/love-psychic-services"
+            href="/love-psychic-services/"
             className="hover:text-purple-700"
           >
             Services
@@ -481,7 +481,7 @@ export default function KeenReviewPage() {
         {/* Related */}
         <div className="not-prose grid sm:grid-cols-2 gap-4">
           <Link
-            href="/will-he-come-back"
+            href="/will-he-come-back/"
             className="block p-5 border border-gray-200 rounded-xl hover:border-purple-300 hover:shadow-sm transition"
           >
             <p className="text-xs uppercase tracking-wide text-purple-600 font-semibold mb-1">
@@ -492,7 +492,7 @@ export default function KeenReviewPage() {
             </p>
           </Link>
           <Link
-            href="/is-my-ex-thinking-of-me"
+            href="/is-my-ex-thinking-of-me/"
             className="block p-5 border border-gray-200 rounded-xl hover:border-purple-300 hover:shadow-sm transition"
           >
             <p className="text-xs uppercase tracking-wide text-purple-600 font-semibold mb-1">

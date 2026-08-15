@@ -20,7 +20,7 @@ const config: ContentPageConfig = {
     h1: 'Comment Comprendre une Rupture Soudaine sans Explication ?',
     subtitle: 'Sortir de la sidération et retrouver des repères sans s\'enfermer dans les suppositions',
     gradient: 'from-slate-700 via-blue-800 to-indigo-900',
-    backLink: { href: '/rupture', label: 'Retour à la Rupture Amoureuse' },
+    backLink: { href: '/rupture/', label: 'Retour à la Rupture Amoureuse' },
     anchors: [
       { href: '#grille', label: 'La Grille de Lecture', primary: true },
       { href: '#demander', label: 'Demander une Explication' },
@@ -58,11 +58,11 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/rupture', label: 'Rupture Amoureuse : Toutes nos Guidances' },
-    { href: '/rupture/voyance-divorce-separation', label: 'Voyance Divorce et Séparation' },
-    { href: '/reconquete/separation-temporaire-ou-definitive', label: 'Séparation Temporaire ou Définitive ?' },
-    { href: '/reconquete/ex-chaud-et-froid-apres-separation', label: 'Mon Ex est Chaud et Froid' },
-    { href: '/rupture/deuil-amoureux', label: 'Deuil Amoureux' },
+    { href: '/rupture/', label: 'Rupture Amoureuse : Toutes nos Guidances' },
+    { href: '/rupture/voyance-divorce-separation/', label: 'Voyance Divorce et Séparation' },
+    { href: '/reconquete/separation-temporaire-ou-definitive/', label: 'Séparation Temporaire ou Définitive ?' },
+    { href: '/reconquete/ex-chaud-et-froid-apres-separation/', label: 'Mon Ex est Chaud et Froid' },
+    { href: '/rupture/deuil-amoureux/', label: 'Deuil Amoureux' },
   ],
 };
 
@@ -107,7 +107,7 @@ export default function RuptureSoudaineSansExplicationPage() {
             Après une rupture inattendue, l&apos;esprit cherche naturellement à relire le passé pour trouver des <strong>signes annonciateurs</strong>. Certains signaux discrets peuvent effectivement exister : une distance progressive, des sujets d&apos;avenir évités, une disponibilité émotionnelle en baisse. Mais cette relecture comporte un risque réel : celui de réinterpréter rétroactivement des moments heureux comme des mensonges, ou d&apos;inventer des signes qui n&apos;existaient pas pour donner un sens à tout prix à ce qui s&apos;est passé.
           </p>
           <p className="text-gray-700 leading-relaxed">
-            Si vous remarquez des changements de comportement sur les <Link href="/rupture/signes-reseaux-sociaux-apres-rupture" className="text-blue-700 hover:text-blue-900 underline font-medium">réseaux sociaux après la rupture</Link>, gardez la même prudence : un compte modifié ou des publications supprimées ne racontent qu&apos;une partie de la réalité, jamais toute l&apos;histoire.
+            Si vous remarquez des changements de comportement sur les <Link href="/rupture/signes-reseaux-sociaux-apres-rupture/" className="text-blue-700 hover:text-blue-900 underline font-medium">réseaux sociaux après la rupture</Link>, gardez la même prudence : un compte modifié ou des publications supprimées ne racontent qu&apos;une partie de la réalité, jamais toute l&apos;histoire.
           </p>
         </section>
 
@@ -176,7 +176,7 @@ export default function RuptureSoudaineSansExplicationPage() {
             Lorsque toutes les tentatives de dialogue restent sans réponse, continuer à attendre une explication qui ne vient pas devient souvent plus coûteux que d&apos;accepter l&apos;absence de réponse. Ce constat n&apos;est pas un renoncement : c&apos;est une manière de reprendre la main sur votre propre temps et votre énergie émotionnelle.
           </p>
           <p className="text-gray-700 leading-relaxed">
-            Si cette attente commence à occuper une place disproportionnée dans votre quotidien, notre guide sur la <Link href="/crise-couple/dependance-affective" className="text-blue-700 hover:text-blue-900 underline font-medium">dépendance affective</Link> peut aider à repérer le moment où l&apos;espoir d&apos;une réponse devient lui-même un poids à alléger.
+            Si cette attente commence à occuper une place disproportionnée dans votre quotidien, notre guide sur la <Link href="/crise-couple/dependance-affective/" className="text-blue-700 hover:text-blue-900 underline font-medium">dépendance affective</Link> peut aider à repérer le moment où l&apos;espoir d&apos;une réponse devient lui-même un poids à alléger.
           </p>
         </section>
 
@@ -208,7 +208,7 @@ export default function RuptureSoudaineSansExplicationPage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">{'\u{1F9ED}'} Retrouver une Direction Même sans Obtenir Toutes les Réponses</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Avancer apres une rupture sans explication complete suppose d&apos;accepter qu&apos;une comprehension suffisante, batie a partir des faits disponibles, peut remplacer une verite totale qui restera peut-etre toujours hors de portee.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            La grille de lecture proposée ici, <strong>faits</strong>, <strong>hypothèses</strong>, <strong>questions à poser</strong>, n&apos;a pas pour but de produire une certitude absolue, mais une compréhension suffisante pour reprendre pied. Si le <Link href="/rupture/deuil-amoureux" className="text-blue-700 hover:text-blue-900 underline font-medium">deuil amoureux</Link> qui suit vous semble particulièrement lourd à porter seul(e), un accompagnement structuré peut faire une réelle différence dans le rythme de votre reconstruction.
+            La grille de lecture proposée ici, <strong>faits</strong>, <strong>hypothèses</strong>, <strong>questions à poser</strong>, n&apos;a pas pour but de produire une certitude absolue, mais une compréhension suffisante pour reprendre pied. Si le <Link href="/rupture/deuil-amoureux/" className="text-blue-700 hover:text-blue-900 underline font-medium">deuil amoureux</Link> qui suit vous semble particulièrement lourd à porter seul(e), un accompagnement structuré peut faire une réelle différence dans le rythme de votre reconstruction.
           </p>
           <div className="bg-white p-6 rounded-lg border-2 border-blue-200">
             <p className="text-gray-700"><strong>{'\u{1F52E}'} À considérer :</strong> une <strong>consultation de voyance sentimentale</strong> peut vous aider à clarifier les dynamiques relationnelles en jeu et à formuler les bonnes questions pour vous-même, jamais à révéler avec certitude ce qui s&apos;est passé dans la tête de l&apos;autre, ni à garantir un retour.</p>
