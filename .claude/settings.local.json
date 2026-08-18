@@ -58,7 +58,32 @@
       "mcp__gsc__content_recommendations",
       "mcp__gsc__generate_report",
       "mcp__gsc__multi_site_dashboard",
-      "mcp__gsc__list_sitemaps"
+      "mcp__gsc__list_sitemaps",
+      "Bash(grep -ril \"veloelec\" /Users/roma/.claude/ 2>/dev/null | head -50)",
+      "Bash(ls /Users/roma/.claude/projects/ 2>/dev/null)",
+      "Read(//Users/roma/Projects/**)",
+      "Read(//Users/roma/**)",
+      "Bash(sed 's|<loc>||')",
+      "Bash(sed 's|https://iphone.fi||' urls.txt)",
+      "Bash(awk -F/ '{if\\(NF>=2 && $2!=\"\"\\) print $2; else print \"\\(root\\)\"}')",
+      "Bash([ -d \"$SRC\" ])",
+      "Bash(mkdir -p /Users/roma/Projects)",
+      "Bash(rsync -a --exclude node_modules --exclude .next --exclude .git --exclude *.tsbuildinfo '/Users/roma/Library/Application Support/Claude/local-agent-mode-sessions/3a25250c-ee6c-4f9c-b063-b4b2e82db6ac/082298a6-255d-49c4-9d4f-d40fad479eec/local_1d829cc3-20fb-4ac5-8ce0-b9846476391a/outputs/veloelecfacile/' /Users/roma/Projects/veloelecfacile/)",
+      "Bash(npm run *)",
+      "Bash(git init *)",
+      "Bash(git -c user.name=Roma -c user.email=romain@mediavalon.com commit -q -m 'Squelette initial : moteurs aides et autonomie *)",
+      "Bash(npx --yes vercel@latest whoami)",
+      "Bash(npx --yes vercel@latest link --yes --project veloelecfacile)",
+      "Bash(npx --yes vercel@latest deploy --prod --yes)",
+      "Bash(git -c user.name=Roma -c user.email=romain@mediavalon.com commit -q -m 'docs: protocole de vérification des aides + dossier IDFM partiel *)",
+      "Bash(npm test *)",
+      "Bash(git -c user.name=Roma -c user.email=romain@mediavalon.com commit -q -m 'aides: vérification en source primaire d'\\\\''IDFM et de la Ville de Paris *)",
+      "Bash(git -c user.name=Roma -c user.email=romain@mediavalon.com commit -q -m 'aides: format de date FR, libellé de certification, journal de vérification *)",
+      "Bash(git -c user.name=Roma -c user.email=romain@mediavalon.com commit -q -m 'aides: vérification de la Métropole de Lyon + plafond de prix d'\\\\''éligibilité *)",
+      "Bash(git -c user.name=Roma -c user.email=romain@mediavalon.com commit -q -m 'aides: afficher le plafond de prix d'\\\\''éligibilité sur la page dispositif *)",
+      "Bash(git fetch *)",
+      "Bash(git rebase *)",
+      "Bash(ssh -T git@github.com -o BatchMode=yes -o ConnectTimeout=8)"
     ]
   }
 }
