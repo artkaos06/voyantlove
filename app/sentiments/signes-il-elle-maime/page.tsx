@@ -88,7 +88,7 @@ export default function SignesIlElleMaimePage() {
           </p>
         </article>
 
-        <VoyantQuickCTA topic="sentiments" source="signes-il-elle-maime-early" />
+        <VoyantRecommendations topic="sentiments" limit={3} showOnlineFirst={true} source="signes-il-elle-maime-cards-top" />
 
         <section id="signes" className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-rose-600">👁️ Les 20 Signes Physiques et Corporels d'Amour</h2>
@@ -377,7 +377,7 @@ export default function SignesIlElleMaimePage() {
           </div>
         </section>
 
-        <VoyantRecommendations topic="sentiments" limit={3} showOnlineFirst={true} source="signes-il-elle-maime-mid" />
+        <VoyantQuickCTA topic="sentiments" source="signes-il-elle-maime-banner-mid" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-rose-600">🔮 Les Signes d'Amour Selon le Tarot</h2>

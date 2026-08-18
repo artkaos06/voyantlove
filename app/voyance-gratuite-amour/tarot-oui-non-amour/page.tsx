@@ -121,7 +121,7 @@ export default function TarotOuiNonAmourPage() {
           </div>
         </article>
 
-        <VoyantQuickCTA topic="voyance-gratuite" source="tarot-oui-non-amour-early" />
+        <VoyantRecommendations topic="voyance-gratuite" limit={3} showOnlineFirst={true} source="tarot-oui-non-amour-cards-top" />
 
         {/* Section 1: Principe du Tirage Oui/Non en Amour */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
@@ -251,7 +251,7 @@ export default function TarotOuiNonAmourPage() {
           </p>
         </section>
 
-        <VoyantRecommendations topic="voyance-gratuite" limit={3} showOnlineFirst={true} source="tarot-oui-non-amour-mid" />
+        <VoyantQuickCTA topic="voyance-gratuite" source="tarot-oui-non-amour-banner-mid" />
 
         {/* Section 4: Limites du Tirage Oui/Non */}
         <section className="bg-gradient-to-br from-green-50 to-teal-50 rounded-xl p-8 mb-8 border-2 border-green-200">

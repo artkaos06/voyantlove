@@ -92,7 +92,7 @@ export default function InfideliteCouplePage() {
           </p>
         </article>
 
-        <VoyantQuickCTA topic="crise-couple" source="infidelite-couple-early" />
+        <VoyantRecommendations topic="crise-couple" limit={3} showOnlineFirst={true} source="infidelite-couple-cards-top" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-rose-600">🔍 Comprendre l'Infidélité : Types et Causes Profondes</h2>
@@ -236,7 +236,7 @@ export default function InfideliteCouplePage() {
           </div>
         </section>
 
-        <VoyantRecommendations topic="crise-couple" limit={3} showOnlineFirst={true} source="infidelite-couple-mid" />
+        <VoyantQuickCTA topic="crise-couple" source="infidelite-couple-banner-mid" />
 
         <section id="reconstruction" className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-rose-600">❤️‍🩹 Reconstruire le Couple Après l'Infidélité : Les 7 Piliers</h2>

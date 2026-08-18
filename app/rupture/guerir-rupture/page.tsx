@@ -79,7 +79,7 @@ export default function GuerirRupturePage() {
           </div>
         </article>
 
-        <VoyantQuickCTA topic="rupture" source="guerir-rupture-early" />
+        <VoyantRecommendations topic="rupture" limit={3} showOnlineFirst={true} source="guerir-rupture-cards-top" />
 
         {/* Section: Les 5 &eacute;tapes du deuil amoureux */}
         <section id="etapes" className="bg-white rounded-xl shadow-md p-8 mb-8">
@@ -196,7 +196,7 @@ export default function GuerirRupturePage() {
           </div>
         </section>
 
-        <VoyantRecommendations topic="rupture" limit={3} showOnlineFirst={true} source="guerir-rupture-mid" />
+        <VoyantQuickCTA topic="rupture" source="guerir-rupture-banner-mid" />
 
         {/* Section: Tarot et gu&eacute;rison */}
         <section className="bg-gradient-to-br from-emerald-50 to-teal-50 rounded-xl p-8 mb-8 border-2 border-emerald-200">

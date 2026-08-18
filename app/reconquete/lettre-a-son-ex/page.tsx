@@ -80,7 +80,7 @@ export default function LettreASonExPage() {
           </p>
         </article>
 
-        <VoyantQuickCTA topic="reconquete" source="lettre-a-son-ex-early" />
+        <VoyantRecommendations topic="reconquete" limit={3} showOnlineFirst={true} source="lettre-a-son-ex-cards-top" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">🔮 Ce que le Tarot Révèle avant d'Écrire</h2>
@@ -146,7 +146,7 @@ export default function LettreASonExPage() {
           </div>
         </section>
 
-        <VoyantRecommendations topic="reconquete" limit={3} showOnlineFirst={true} source="lettre-a-son-ex-mid" />
+        <VoyantQuickCTA topic="reconquete" source="lettre-a-son-ex-banner-mid" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">⏰ Le Timing Idéal pour Envoyer votre Lettre</h2>

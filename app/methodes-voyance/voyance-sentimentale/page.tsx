@@ -97,7 +97,7 @@ export default function VoyanceSentimentalePage() {
           </div>
         </article>
 
-        <VoyantQuickCTA topic="sentiments" source="voyance-sentimentale-early" />
+        <VoyantRecommendations topic="sentiments" limit={3} showOnlineFirst={true} source="voyance-sentimentale-cards-top" />
 
         {/* Section 1: Les domaines de la voyance sentimentale */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
@@ -195,7 +195,7 @@ export default function VoyanceSentimentalePage() {
           </div>
         </section>
 
-        <VoyantRecommendations topic="sentiments" limit={3} showOnlineFirst={true} source="voyance-sentimentale-mid" />
+        <VoyantQuickCTA topic="sentiments" source="voyance-sentimentale-banner-mid" />
 
         {/* Section 3: Comment se déroule une consultation */}
         <section id="consultation" className="bg-white rounded-xl shadow-md p-8 mb-8">

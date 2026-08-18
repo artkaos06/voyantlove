@@ -74,7 +74,7 @@ export default function ChagrinAmourPage() {
         <p className="text-lg leading-relaxed">La <strong>guérison émotionnelle</strong> n'est jamais linéaire : vous connaîtrez des hauts et des bas, des jours où tout semble aller mieux et d'autres où la douleur revient par vagues. <Link href="/rupture/guerir-rupture/" className="text-blue-600 hover:text-blue-800 underline font-medium">Guérir d'une rupture</Link> est un processus parfaitement normal que le tarot vous aide à traverser jour après jour, en vous encourageant dans les moments difficiles et en célébrant vos progrès, même les plus petits. L'important est de ne pas rester seul(e) face à cette souffrance. Que ce soit à travers la voyance, le soutien de proches bienveillants ou un accompagnement thérapeutique, chaque geste vers la guérison compte et vous rapproche de la paix intérieure.</p>
       </article>
 
-      <VoyantQuickCTA topic="rupture" source="chagrin-damour-early" />
+      <VoyantRecommendations topic="rupture" limit={3} showOnlineFirst={true} source="chagrin-damour-cards-top" />
 
       <section id="etapes" className="bg-white rounded-xl shadow-md p-8 mb-8">
         <h2 className="text-3xl font-bold mb-6">💔 Étapes de Guérison</h2>
@@ -127,7 +127,7 @@ export default function ChagrinAmourPage() {
         </div>
       </section>
 
-      <VoyantRecommendations topic="rupture" limit={3} showOnlineFirst={true} source="chagrin-damour-mid" />
+      <VoyantQuickCTA topic="rupture" source="chagrin-damour-banner-mid" />
 
       <section className="bg-gradient-to-br from-purple-50 to-blue-50 rounded-xl p-8 mb-8 border-2 border-purple-200">
         <h2 className="text-3xl font-bold mb-6">🔬 Pourquoi le Chagrin Fait Si Mal : La Science et l'Énergie</h2>

@@ -76,7 +76,7 @@ export default function MarcDeCafeAmourPage() {
           </div>
         </article>
 
-        <VoyantQuickCTA topic="methodes-voyance" source="marc-de-cafe-amour-early" />
+        <VoyantRecommendations topic="methodes-voyance" limit={3} showOnlineFirst={true} source="marc-de-cafe-amour-cards-top" />
 
         {/* Section 1: Qu'est-ce que la tasséographie */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
@@ -129,7 +129,7 @@ export default function MarcDeCafeAmourPage() {
           </div>
         </section>
 
-        <VoyantRecommendations topic="methodes-voyance" limit={3} showOnlineFirst={true} source="marc-de-cafe-amour-mid" />
+        <VoyantQuickCTA topic="methodes-voyance" source="marc-de-cafe-amour-banner-mid" />
 
         {/* Section 3: Guide pratique */}
         <section id="pratique" className="bg-white rounded-xl shadow-md p-8 mb-8">

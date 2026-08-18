@@ -82,7 +82,7 @@ export default function VoyanceTchatGratuitAmourPage() {
           </div>
         </article>
 
-        <VoyantQuickCTA topic="voyance-gratuite" source="voyance-tchat-gratuit-amour-early" />
+        <VoyantRecommendations topic="voyance-gratuite" limit={3} showOnlineFirst={true} source="voyance-tchat-gratuit-amour-cards-top" />
 
         {/* Section 1: Comment Fonctionne la Voyance par Tchat */}
         <section id="consultation" className="bg-white rounded-xl shadow-md p-8 mb-8">
@@ -201,7 +201,7 @@ export default function VoyanceTchatGratuitAmourPage() {
           </div>
         </section>
 
-        <VoyantRecommendations topic="voyance-gratuite" limit={3} showOnlineFirst={true} source="voyance-tchat-gratuit-amour-mid" />
+        <VoyantQuickCTA topic="voyance-gratuite" source="voyance-tchat-gratuit-amour-banner-mid" />
 
         {/* Section 4: Reconna&icirc;tre un Voyant S&eacute;rieux en Ligne */}
         <section className="bg-gradient-to-br from-cyan-50 to-teal-50 rounded-xl p-8 mb-8 border-2 border-cyan-200">

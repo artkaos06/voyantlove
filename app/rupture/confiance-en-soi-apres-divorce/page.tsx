@@ -85,7 +85,7 @@ export default function ConfianceEnSoiApresDivorcePage() {
           </div>
         </article>
 
-        <VoyantQuickCTA topic="rupture" source="confiance-divorce-early" />
+        <VoyantRecommendations topic="rupture" limit={3} showOnlineFirst={true} source="confiance-en-soi-apres-divorce-cards-top" />
 
         {/* H2: Pourquoi le divorce fragilise */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
@@ -149,7 +149,7 @@ export default function ConfianceEnSoiApresDivorcePage() {
           </div>
         </section>
 
-        <VoyantRecommendations topic="rupture" limit={3} showOnlineFirst={true} source="confiance-divorce-mid" />
+        <VoyantQuickCTA topic="rupture" source="confiance-en-soi-apres-divorce-banner-mid" />
 
         {/* H2: Prêt à rencontrer + culpabilité */}
         <section id="pret" className="bg-white rounded-xl shadow-md p-8 mb-8">

@@ -79,7 +79,7 @@ export default function DeuilAmoureuxPage() {
           </div>
         </article>
 
-        <VoyantQuickCTA topic="rupture" source="deuil-amoureux-early" />
+        <VoyantRecommendations topic="rupture" limit={3} showOnlineFirst={true} source="deuil-amoureux-cards-top" />
 
         {/* Section 1: Qu'est-ce que le Deuil Amoureux ? */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
@@ -203,7 +203,7 @@ export default function DeuilAmoureuxPage() {
           </div>
         </section>
 
-        <VoyantRecommendations topic="rupture" limit={3} showOnlineFirst={true} source="deuil-amoureux-mid" />
+        <VoyantQuickCTA topic="rupture" source="deuil-amoureux-banner-mid" />
 
         {/* Section 4: Le Tarot pour Traverser le Deuil Amoureux */}
         <section className="bg-gradient-to-br from-blue-50 to-slate-50 rounded-xl p-8 mb-8 border-2 border-blue-200">

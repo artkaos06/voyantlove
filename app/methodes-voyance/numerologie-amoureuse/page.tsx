@@ -92,7 +92,7 @@ export default function NumerologieAmourPage() {
           </p>
         </article>
 
-        <VoyantQuickCTA topic="methodes-voyance" source="numerologie-amoureuse-early" />
+        <VoyantRecommendations topic="methodes-voyance" limit={3} showOnlineFirst={true} source="numerologie-amoureuse-cards-top" />
 
         {/* Section 1: Qu'est-ce que la numérologie amoureuse */}
         <section className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-xl p-8 mb-8 border-2 border-amber-200">
@@ -330,7 +330,7 @@ export default function NumerologieAmourPage() {
           </div>
         </section>
 
-        <VoyantRecommendations topic="methodes-voyance" limit={3} showOnlineFirst={true} source="numerologie-amoureuse-mid" />
+        <VoyantQuickCTA topic="methodes-voyance" source="numerologie-amoureuse-banner-mid" />
 
         {/* Section 5: Timing numérologique */}
         <section className="bg-gradient-to-br from-orange-50 to-amber-50 rounded-xl p-8 mb-8 border-2 border-orange-200">

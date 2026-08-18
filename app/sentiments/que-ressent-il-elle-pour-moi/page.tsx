@@ -88,7 +88,7 @@ export default function QueRessentIlEllePourMoiPage() {
           </div>
         </article>
 
-        <VoyantQuickCTA topic="sentiments" source="que-ressent-il-elle-early" />
+        <VoyantRecommendations topic="sentiments" limit={3} showOnlineFirst={true} source="que-ressent-il-elle-pour-moi-cards-top" />
 
         {/* H2: Les Sentiments Possibles */}
         <section id="nature" className="bg-white rounded-xl shadow-md p-8 mb-8">
@@ -167,7 +167,7 @@ export default function QueRessentIlEllePourMoiPage() {
           </div>
         </section>
 
-        <VoyantRecommendations topic="sentiments" limit={3} showOnlineFirst={true} source="que-ressent-il-elle-mid" />
+        <VoyantQuickCTA topic="sentiments" source="que-ressent-il-elle-pour-moi-banner-mid" />
 
         {/* H2: Attachement ou Amour */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">

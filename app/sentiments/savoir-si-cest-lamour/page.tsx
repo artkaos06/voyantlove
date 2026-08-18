@@ -78,7 +78,7 @@ export default function SavoirSiCestLamourPage() {
           </p>
         </article>
 
-        <VoyantQuickCTA topic="sentiments" source="savoir-si-cest-lamour-early" />
+        <VoyantRecommendations topic="sentiments" limit={3} showOnlineFirst={true} source="savoir-si-cest-lamour-cards-top" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">💖 Les 7 Signes du Vrai Amour selon la Voyance</h2>
@@ -132,7 +132,7 @@ export default function SavoirSiCestLamourPage() {
           </div>
         </section>
 
-        <VoyantRecommendations topic="sentiments" limit={3} showOnlineFirst={true} source="savoir-si-cest-lamour-mid" />
+        <VoyantQuickCTA topic="sentiments" source="savoir-si-cest-lamour-banner-mid" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">⚡ Amour ou Dépendance : Comment Faire la Différence</h2>

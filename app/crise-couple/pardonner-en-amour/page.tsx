@@ -77,7 +77,7 @@ export default function PardonnerEnAmourPage() {
           </p>
         </article>
 
-        <VoyantQuickCTA topic="crise-couple" source="pardonner-en-amour-early" />
+        <VoyantRecommendations topic="crise-couple" limit={3} showOnlineFirst={true} source="pardonner-en-amour-cards-top" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">🔮 Le Tarot et le Processus de Pardon</h2>
@@ -147,7 +147,7 @@ export default function PardonnerEnAmourPage() {
           </div>
         </section>
 
-        <VoyantRecommendations topic="crise-couple" limit={3} showOnlineFirst={true} source="pardonner-en-amour-mid" />
+        <VoyantQuickCTA topic="crise-couple" source="pardonner-en-amour-banner-mid" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">⚡ Pardonner ou Partir : Comment Décider</h2>

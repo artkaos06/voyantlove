@@ -76,7 +76,7 @@ export default function LignesDeLaMainAmourPage() {
           </div>
         </article>
 
-        <VoyantQuickCTA topic="methodes-voyance" source="lignes-main-amour-early" />
+        <VoyantRecommendations topic="methodes-voyance" limit={3} showOnlineFirst={true} source="lignes-de-la-main-amour-cards-top" />
 
         {/* Section 1: La ligne de cœur */}
         <section id="ligne-coeur" className="bg-white rounded-xl shadow-md p-8 mb-8">
@@ -136,7 +136,7 @@ export default function LignesDeLaMainAmourPage() {
           </div>
         </section>
 
-        <VoyantRecommendations topic="methodes-voyance" limit={3} showOnlineFirst={true} source="lignes-main-amour-mid" />
+        <VoyantQuickCTA topic="methodes-voyance" source="lignes-de-la-main-amour-banner-mid" />
 
         {/* Section 4: Comment lire sa main */}
         <section id="lecture" className="bg-gradient-to-br from-orange-50 to-red-50 rounded-xl p-8 mb-8 border-2 border-orange-200">

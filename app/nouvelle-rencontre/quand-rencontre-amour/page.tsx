@@ -74,7 +74,7 @@ export default function QuandRencontrePage() {
         <p className="text-lg leading-relaxed">La <strong>voyance</strong> ne fait pas apparaître quelqu'un magiquement, mais vous prépare énergétiquement, vous guide vers les lieux et situations propices, et vous aide à reconnaître la bonne personne quand elle arrive. Certaines personnes cherchent à <Link href="/nouvelle-rencontre/trouver-ame-soeur/" className="text-cyan-600 hover:text-cyan-800 underline font-medium">trouver leur âme sœur</Link> sans avoir conscience des blocages invisibles qui les en empêchent. Pour approfondir votre compréhension des <Link href="/nouvelle-rencontre/" className="text-cyan-600 hover:text-cyan-800 underline font-medium">nouvelles rencontres</Link> et découvrir toutes nos guidances spécialisées sur ce sujet, n'hésitez pas à explorer notre espace dédié.</p>
       </article>
 
-      <VoyantQuickCTA topic="nouvelle-rencontre" source="quand-rencontre-amour-early" />
+      <VoyantRecommendations topic="nouvelle-rencontre" limit={3} showOnlineFirst={true} source="quand-rencontre-amour-cards-top" />
 
       <section className="bg-white rounded-xl shadow-md p-8 mb-8">
         <h2 className="text-3xl font-bold mb-6">📅 Le Timing de votre Prochaine Rencontre</h2>
@@ -112,7 +112,7 @@ export default function QuandRencontrePage() {
         </div>
       </section>
 
-      <VoyantRecommendations topic="nouvelle-rencontre" limit={3} showOnlineFirst={true} source="quand-rencontre-amour-mid" />
+      <VoyantQuickCTA topic="nouvelle-rencontre" source="quand-rencontre-amour-banner-mid" />
 
       <section className="bg-red-50 border-2 border-red-200 rounded-xl p-8 mb-8">
         <h2 className="text-3xl font-bold mb-6">🚧 Ce Qui Bloque Actuellement Votre Rencontre</h2>

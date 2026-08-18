@@ -97,7 +97,7 @@ export default function AvenirAmoureuxPage() {
           </p>
         </article>
 
-        <VoyantQuickCTA topic="sentiments" source="avenir-amoureux-early" />
+        <VoyantRecommendations topic="sentiments" limit={3} showOnlineFirst={true} source="avenir-amoureux-cards-top" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-rose-600">🔮 Le Tirage de l'Avenir Amoureux : 5 Positions Clés</h2>
@@ -291,7 +291,7 @@ export default function AvenirAmoureuxPage() {
           </div>
         </section>
 
-        <VoyantRecommendations topic="sentiments" limit={3} showOnlineFirst={true} source="avenir-amoureux-mid" />
+        <VoyantQuickCTA topic="sentiments" source="avenir-amoureux-banner-mid" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-rose-600">🌙 L'Astrologie de Votre Avenir Amoureux</h2>

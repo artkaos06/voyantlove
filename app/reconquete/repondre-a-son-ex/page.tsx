@@ -87,7 +87,7 @@ export default function RepondreASonExPage() {
           </div>
         </article>
 
-        <VoyantQuickCTA topic="reconquete" source="repondre-ex-early" />
+        <VoyantRecommendations topic="reconquete" limit={3} showOnlineFirst={true} source="repondre-a-son-ex-cards-top" />
 
         {/* H2: La vraie question */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
@@ -145,7 +145,7 @@ export default function RepondreASonExPage() {
           </p>
         </section>
 
-        <VoyantRecommendations topic="reconquete" limit={3} showOnlineFirst={true} source="repondre-ex-mid" />
+        <VoyantQuickCTA topic="reconquete" source="repondre-a-son-ex-banner-mid" />
 
         {/* H2: Comment répondre sans se dévaloriser */}
         <section id="comment" className="bg-gradient-to-r from-indigo-50 to-purple-50 rounded-xl p-8 mb-8 border-2 border-indigo-200">

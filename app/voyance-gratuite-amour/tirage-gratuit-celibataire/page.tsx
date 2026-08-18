@@ -122,7 +122,7 @@ export default function TirageGratuitCelibatairePage() {
           </div>
         </article>
 
-        <VoyantQuickCTA topic="voyance-gratuite" source="tirage-gratuit-celibataire-early" />
+        <VoyantRecommendations topic="voyance-gratuite" limit={3} showOnlineFirst={true} source="tirage-gratuit-celibataire-cards-top" />
 
         {/* Section 1: Tirages Sp&eacute;cifiques pour C&eacute;libataires */}
         <section id="tirages" className="bg-white rounded-xl shadow-md p-8 mb-8">
@@ -245,7 +245,7 @@ export default function TirageGratuitCelibatairePage() {
           </div>
         </section>
 
-        <VoyantRecommendations topic="voyance-gratuite" limit={3} showOnlineFirst={true} source="tirage-gratuit-celibataire-mid" />
+        <VoyantQuickCTA topic="voyance-gratuite" source="tirage-gratuit-celibataire-banner-mid" />
 
         {/* Section 4: Signes d&apos;une Rencontre Imminente */}
         <section className="bg-gradient-to-br from-pink-50 to-fuchsia-50 rounded-xl p-8 mb-8 border-2 border-pink-200">

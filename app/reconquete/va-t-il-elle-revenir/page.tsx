@@ -83,7 +83,7 @@ export default function VaTilRevenirPage() {
           </div>
         </article>
 
-        <VoyantQuickCTA topic="reconquete" source="va-t-il-elle-revenir-early" />
+        <VoyantRecommendations topic="reconquete" limit={3} showOnlineFirst={true} source="va-t-il-elle-revenir-cards-top" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">🔮 Ce que le Tarot Révèle sur le Retour</h2>
@@ -136,7 +136,7 @@ export default function VaTilRevenirPage() {
           </div>
         </section>
 
-        <VoyantRecommendations topic="reconquete" limit={3} showOnlineFirst={true} source="va-t-il-elle-revenir-mid" />
+        <VoyantQuickCTA topic="reconquete" source="va-t-il-elle-revenir-banner-mid" />
 
         <section id="signes" className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">💡 Les Signes Concrets qu'il/elle Va Revenir</h2>

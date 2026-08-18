@@ -79,7 +79,7 @@ export default function AmourNonPartagePage() {
           </div>
         </article>
 
-        <VoyantQuickCTA topic="rupture" source="amour-non-partage-early" />
+        <VoyantRecommendations topic="rupture" limit={3} showOnlineFirst={true} source="amour-non-partage-cards-top" />
 
         {/* Section: Pourquoi l&apos;amour non partag&eacute; */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
@@ -203,7 +203,7 @@ export default function AmourNonPartagePage() {
           </div>
         </section>
 
-        <VoyantRecommendations topic="rupture" limit={3} showOnlineFirst={true} source="amour-non-partage-mid" />
+        <VoyantQuickCTA topic="rupture" source="amour-non-partage-banner-mid" />
 
         {/* Section: Guide &eacute;tape par &eacute;tape */}
         <section className="bg-gradient-to-br from-pink-50 to-rose-50 rounded-xl p-8 mb-8 border-2 border-pink-200">

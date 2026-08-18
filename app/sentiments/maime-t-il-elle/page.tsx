@@ -95,7 +95,7 @@ export default function MAimeTilEllePage() {
           </div>
         </article>
 
-        <VoyantQuickCTA topic="sentiments" source="maime-t-il-elle-early" />
+        <VoyantRecommendations topic="sentiments" limit={3} showOnlineFirst={true} source="maime-t-il-elle-cards-top" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">💖 Les Signes d'Amour Véritable selon le Tarot</h2>
@@ -161,7 +161,7 @@ export default function MAimeTilEllePage() {
           </div>
         </section>
 
-        <VoyantRecommendations topic="sentiments" limit={3} showOnlineFirst={true} source="maime-t-il-elle-mid" />
+        <VoyantQuickCTA topic="sentiments" source="maime-t-il-elle-banner-mid" />
 
         <section id="signes" className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">🎭 Pourquoi il/elle Cache ses Sentiments</h2>

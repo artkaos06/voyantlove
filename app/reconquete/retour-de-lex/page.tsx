@@ -75,7 +75,7 @@ export default function RetourExPage() {
           <p className="text-lg leading-relaxed mb-4">Chaque situation de rupture est unique, et c'est pourquoi un <strong>tirage personnalisé</strong> est bien plus fiable qu'une interprétation générale. Les <strong>arcanes majeurs</strong> comme Le Jugement, L'Étoile ou Le Monde révèlent les grandes tendances de votre avenir sentimental, tandis que les <strong>arcanes mineurs</strong> précisent le timing, les obstacles et les opportunités concrètes. Que la rupture soit récente ou ancienne, que les raisons soient émotionnelles ou pratiques, le tarot offre une lecture complète des dynamiques invisibles entre vous et votre ex. Avant de vous lancer dans toute démarche, il est essentiel de comprendre si le retour est véritablement dans votre intérêt ou si le destin vous oriente vers une nouvelle histoire.</p>
         </article>
 
-        <VoyantQuickCTA topic="reconquete" source="retour-de-lex-early" />
+        <VoyantRecommendations topic="reconquete" limit={3} showOnlineFirst={true} source="retour-de-lex-cards-top" />
 
         <section id="signes" className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6">💫 Les 10 Signes du Retour</h2>
@@ -107,7 +107,7 @@ export default function RetourExPage() {
           </div>
         </section>
 
-        <VoyantRecommendations topic="reconquete" limit={3} showOnlineFirst={true} source="retour-de-lex-mid" />
+        <VoyantQuickCTA topic="reconquete" source="retour-de-lex-banner-mid" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-fuchsia-500">
           <h2 className="text-3xl font-bold mb-6">🃏 Le Tirage Tarot du Retour : 5 Positions</h2>

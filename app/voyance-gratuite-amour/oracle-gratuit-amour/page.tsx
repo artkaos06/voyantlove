@@ -117,7 +117,7 @@ export default function OracleGratuitAmourPage() {
           </div>
         </article>
 
-        <VoyantQuickCTA topic="voyance-gratuite" source="oracle-gratuit-amour-early" />
+        <VoyantRecommendations topic="voyance-gratuite" limit={3} showOnlineFirst={true} source="oracle-gratuit-amour-cards-top" />
 
         {/* Section 1: Diff&eacute;rence Oracle vs Tarot en Amour */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
@@ -222,7 +222,7 @@ export default function OracleGratuitAmourPage() {
           </div>
         </section>
 
-        <VoyantRecommendations topic="voyance-gratuite" limit={3} showOnlineFirst={true} source="oracle-gratuit-amour-mid" />
+        <VoyantQuickCTA topic="voyance-gratuite" source="oracle-gratuit-amour-banner-mid" />
 
         {/* Section 4: Oracle des Anges : Gu&eacute;rison et Guidance */}
         <section className="bg-gradient-to-br from-emerald-50 to-green-50 rounded-xl p-8 mb-8 border-2 border-emerald-200">

@@ -82,7 +82,7 @@ export default function RelationToxiquePage() {
           </div>
         </article>
 
-        <VoyantQuickCTA topic="sentiments" source="relation-toxique-early" />
+        <VoyantRecommendations topic="sentiments" limit={3} showOnlineFirst={true} source="relation-toxique-cards-top" />
 
         {/* Section 1: Les 10 Signes d'une Relation Toxique */}
         <section id="signes" className="bg-white rounded-xl shadow-md p-8 mb-8">
@@ -255,7 +255,7 @@ export default function RelationToxiquePage() {
           </div>
         </section>
 
-        <VoyantRecommendations topic="sentiments" limit={3} showOnlineFirst={true} source="relation-toxique-mid" />
+        <VoyantQuickCTA topic="sentiments" source="relation-toxique-banner-mid" />
 
         {/* Section 4: Se Lib&eacute;rer d'une Relation Toxique */}
         <section id="liberation" className="bg-gradient-to-br from-red-50 to-orange-50 rounded-xl p-8 mb-8 border-2 border-red-200">

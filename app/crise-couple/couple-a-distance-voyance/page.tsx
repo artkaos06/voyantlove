@@ -80,7 +80,7 @@ export default function CoupleADistancePage() {
           </p>
         </article>
 
-        <VoyantQuickCTA topic="crise-couple" source="couple-distance-early" />
+        <VoyantRecommendations topic="crise-couple" limit={3} showOnlineFirst={true} source="couple-a-distance-voyance-cards-top" />
 
         {/* Section 1 : Défis spirituels */}
         <section className="bg-gradient-to-br from-sky-50 to-blue-50 rounded-xl p-8 mb-8 border-2 border-blue-200">
@@ -322,7 +322,7 @@ export default function CoupleADistancePage() {
           </div>
         </section>
 
-        <VoyantRecommendations topic="crise-couple" />
+        <VoyantQuickCTA topic="crise-couple" source="couple-a-distance-voyance-banner-mid" />
     </ContentPage>
   );
 }

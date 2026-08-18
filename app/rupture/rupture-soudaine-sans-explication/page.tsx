@@ -85,7 +85,7 @@ export default function RuptureSoudaineSansExplicationPage() {
           </div>
         </article>
 
-        <VoyantQuickCTA topic="rupture" source="rupture-soudaine-early" />
+        <VoyantRecommendations topic="rupture" limit={3} showOnlineFirst={true} source="rupture-soudaine-sans-explication-cards-top" />
 
         {/* H2 1 */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
@@ -111,7 +111,7 @@ export default function RuptureSoudaineSansExplicationPage() {
           </p>
         </section>
 
-        <VoyantRecommendations topic="rupture" limit={3} showOnlineFirst={true} source="rupture-soudaine-mid" />
+        <VoyantQuickCTA topic="rupture" source="rupture-soudaine-sans-explication-banner-mid" />
 
         {/* H2 3 */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">

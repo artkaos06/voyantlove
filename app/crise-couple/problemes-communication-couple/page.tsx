@@ -98,7 +98,7 @@ export default function ProblemesCommunicationCouplePage() {
           </p>
         </article>
 
-        <VoyantQuickCTA topic="crise-couple" source="problemes-communication-couple-early" />
+        <VoyantRecommendations topic="crise-couple" limit={3} showOnlineFirst={true} source="problemes-communication-couple-cards-top" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-purple-600">🔍 Les 7 Principaux Problèmes de Communication dans le Couple</h2>
@@ -378,7 +378,7 @@ export default function ProblemesCommunicationCouplePage() {
           </div>
         </section>
 
-        <VoyantRecommendations topic="crise-couple" limit={3} showOnlineFirst={true} source="problemes-communication-couple-mid" />
+        <VoyantQuickCTA topic="crise-couple" source="problemes-communication-couple-banner-mid" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-purple-600">🔮 Le Tarot de la Communication de Couple : 5 Positions</h2>

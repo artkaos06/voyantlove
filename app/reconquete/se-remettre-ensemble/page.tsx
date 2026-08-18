@@ -84,7 +84,7 @@ export default function SeRemettreEnsemblePage() {
           <p className="text-lg">Comprendre comment <strong>se remettre ensemble après une rupture</strong> de manière saine et durable vous évite des mois de souffrance et de déceptions répétées. Ce guide complet basé sur la guidance tarot vous accompagne à travers les 5 étapes essentielles pour maximiser vos chances de <strong>retrouvailles réussies</strong>. Pour en savoir plus sur les <Link href="/reconquete/" className="text-purple-600 hover:text-purple-800 underline font-medium">retrouvailles amoureuses</Link>, découvrez toutes nos guidances spécialisées.</p>
         </article>
 
-        <VoyantQuickCTA topic="reconquete" source="se-remettre-ensemble-early" />
+        <VoyantRecommendations topic="reconquete" limit={3} showOnlineFirst={true} source="se-remettre-ensemble-cards-top" />
 
         <section className="bg-white rounded-xl p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-purple-600">Les 5 Étapes Essentielles pour Se Remettre Ensemble</h2>
@@ -416,7 +416,7 @@ export default function SeRemettreEnsemblePage() {
           </div>
         </section>
 
-        <VoyantRecommendations topic="reconquete" limit={3} showOnlineFirst={true} source="se-remettre-ensemble-mid" />
+        <VoyantQuickCTA topic="reconquete" source="se-remettre-ensemble-banner-mid" />
 
         <section className="bg-white rounded-xl p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-purple-600">Stratégies de Communication pour Éviter la Deuxième Rupture</h2>

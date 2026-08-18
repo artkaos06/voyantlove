@@ -77,7 +77,7 @@ export default function SuisJeMediumPage() {
           </p>
         </article>
 
-        <VoyantQuickCTA topic="methodes-voyance" source="suis-je-medium-early" />
+        <VoyantRecommendations topic="methodes-voyance" limit={3} showOnlineFirst={true} source="suis-je-medium-comment-savoir-cards-top" />
 
         {/* Section 1: Signes */}
         <section id="signes" className="bg-white rounded-xl shadow-md p-8 mb-8">
@@ -133,7 +133,7 @@ export default function SuisJeMediumPage() {
           </p>
         </section>
 
-        <VoyantRecommendations topic="methodes-voyance" limit={3} showOnlineFirst={true} source="suis-je-medium-mid" />
+        <VoyantQuickCTA topic="methodes-voyance" source="suis-je-medium-comment-savoir-banner-mid" />
 
         {/* Section 3: Que faire */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">

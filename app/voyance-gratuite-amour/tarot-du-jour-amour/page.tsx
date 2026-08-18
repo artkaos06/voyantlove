@@ -109,7 +109,7 @@ export default function TarotDuJourAmourPage() {
           </div>
         </article>
 
-        <VoyantQuickCTA topic="voyance-gratuite" source="tarot-du-jour-amour-early" />
+        <VoyantRecommendations topic="voyance-gratuite" limit={3} showOnlineFirst={true} source="tarot-du-jour-amour-cards-top" />
 
         {/* Section 1 */}
         <section id="habitude" className="bg-white rounded-xl shadow-md p-8 mb-8">
@@ -150,7 +150,7 @@ export default function TarotDuJourAmourPage() {
           </div>
         </section>
 
-        <VoyantRecommendations topic="voyance-gratuite" limit={3} showOnlineFirst={true} source="tarot-du-jour-amour-mid" />
+        <VoyantQuickCTA topic="voyance-gratuite" source="tarot-du-jour-amour-banner-mid" />
 
         {/* Section 3 */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">

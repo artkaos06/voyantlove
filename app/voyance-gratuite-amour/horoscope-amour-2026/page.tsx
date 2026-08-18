@@ -121,7 +121,7 @@ export default function HoroscopeAmour2026Page() {
           </div>
         </article>
 
-        <VoyantQuickCTA topic="voyance-gratuite" source="horoscope-amour-2026-early" />
+        <VoyantRecommendations topic="voyance-gratuite" limit={3} showOnlineFirst={true} source="horoscope-amour-2026-cards-top" />
 
         {/* Section 1: Les Transits 2026 qui Bouleversent l&apos;Amour */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
@@ -232,7 +232,7 @@ export default function HoroscopeAmour2026Page() {
           </div>
         </section>
 
-        <VoyantRecommendations topic="voyance-gratuite" limit={3} showOnlineFirst={true} source="horoscope-amour-2026-mid" />
+        <VoyantQuickCTA topic="voyance-gratuite" source="horoscope-amour-2026-banner-mid" />
 
         {/* Section 4: Signes d&apos;Air */}
         <section className="bg-gradient-to-br from-teal-50 to-emerald-50 rounded-xl p-8 mb-8 border-2 border-teal-200">

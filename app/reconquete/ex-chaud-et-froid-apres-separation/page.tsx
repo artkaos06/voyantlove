@@ -88,7 +88,7 @@ export default function ExChaudEtFroidApresSeparationPage() {
           </div>
         </article>
 
-        <VoyantQuickCTA topic="reconquete" source="ex-chaud-froid-early" />
+        <VoyantRecommendations topic="reconquete" limit={3} showOnlineFirst={true} source="ex-chaud-et-froid-apres-separation-cards-top" />
 
         {/* H2: À quoi ressemble */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
@@ -135,7 +135,7 @@ export default function ExChaudEtFroidApresSeparationPage() {
           </div>
         </section>
 
-        <VoyantRecommendations topic="reconquete" limit={3} showOnlineFirst={true} source="ex-chaud-froid-mid" />
+        <VoyantQuickCTA topic="reconquete" source="ex-chaud-et-froid-apres-separation-banner-mid" />
 
         {/* H2: Décodeur - ambivalence sincère vs lien entretenu */}
         <section id="decodeur" className="bg-gradient-to-br from-purple-50 to-blue-50 rounded-xl p-8 mb-8 border-2 border-purple-200">

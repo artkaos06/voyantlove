@@ -80,7 +80,7 @@ export default function SilenceRadioReconquetePage() {
           </p>
         </article>
 
-        <VoyantQuickCTA topic="reconquete" source="silence-radio-reconquete-early" />
+        <VoyantRecommendations topic="reconquete" limit={3} showOnlineFirst={true} source="silence-radio-reconquete-cards-top" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">🔮 Pourquoi le Silence Radio Fonctionne selon la Voyance</h2>
@@ -130,7 +130,7 @@ export default function SilenceRadioReconquetePage() {
           </div>
         </section>
 
-        <VoyantRecommendations topic="reconquete" limit={3} showOnlineFirst={true} source="silence-radio-reconquete-mid" />
+        <VoyantQuickCTA topic="reconquete" source="silence-radio-reconquete-banner-mid" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">✅ Les Règles d'Or du Silence Radio</h2>

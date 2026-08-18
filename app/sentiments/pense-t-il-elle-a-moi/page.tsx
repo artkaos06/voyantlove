@@ -88,7 +88,7 @@ export default function PenseTilElleAMoiPage() {
           </div>
         </article>
 
-        <VoyantQuickCTA topic="sentiments" source="pense-t-il-elle-a-moi-early" />
+        <VoyantRecommendations topic="sentiments" limit={3} showOnlineFirst={true} source="pense-t-il-elle-a-moi-cards-top" />
 
         {/* H2: Les Signes Énergétiques */}
         <section id="signes" className="bg-white rounded-xl shadow-md p-8 mb-8">
@@ -206,7 +206,7 @@ export default function PenseTilElleAMoiPage() {
           </div>
         </section>
 
-        <VoyantRecommendations topic="sentiments" limit={3} showOnlineFirst={true} source="pense-t-il-elle-a-moi-mid" />
+        <VoyantQuickCTA topic="sentiments" source="pense-t-il-elle-a-moi-banner-mid" />
 
         {/* H2: Penser ≠ Vouloir Revenir */}
         <section className="bg-gradient-to-r from-rose-50 to-orange-50 rounded-xl p-8 mb-8 border-2 border-rose-200">

@@ -87,7 +87,7 @@ export default function RevoirSonExPage() {
           </div>
         </article>
 
-        <VoyantQuickCTA topic="reconquete" source="revoir-ex-early" />
+        <VoyantRecommendations topic="reconquete" limit={3} showOnlineFirst={true} source="revoir-son-ex-cards-top" />
 
         {/* H2: Clarifier son intention */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
@@ -133,7 +133,7 @@ export default function RevoirSonExPage() {
           </div>
         </section>
 
-        <VoyantRecommendations topic="reconquete" limit={3} showOnlineFirst={true} source="revoir-ex-mid" />
+        <VoyantQuickCTA topic="reconquete" source="revoir-son-ex-banner-mid" />
 
         {/* H2: Pourquoi ça peut faire mal */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">

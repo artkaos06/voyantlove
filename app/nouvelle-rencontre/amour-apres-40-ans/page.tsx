@@ -80,7 +80,7 @@ export default function AmourApres40AnsPage() {
         </p>
       </article>
 
-      <VoyantQuickCTA topic="nouvelle-rencontre" source="amour-apres-40-ans-early" />
+      <VoyantRecommendations topic="nouvelle-rencontre" limit={3} showOnlineFirst={true} source="amour-apres-40-ans-cards-top" />
 
       <section id="guidance" className="bg-white rounded-xl shadow-md p-8 mb-8">
         <h2 className="text-3xl font-bold mb-6 text-amber-600">&#127775; Pourquoi l&rsquo;Amour apr&egrave;s 40 ans Est le Plus Beau</h2>
@@ -158,7 +158,7 @@ export default function AmourApres40AnsPage() {
         </div>
       </section>
 
-      <VoyantRecommendations topic="nouvelle-rencontre" limit={3} showOnlineFirst={true} source="amour-apres-40-ans-mid" />
+      <VoyantQuickCTA topic="nouvelle-rencontre" source="amour-apres-40-ans-banner-mid" />
 
       <section id="tarot" className="bg-white rounded-xl shadow-md p-8 mb-8">
         <h2 className="text-3xl font-bold mb-6 text-amber-600">&#127183; Le Tarot R&eacute;v&egrave;le Votre Timing Amoureux</h2>

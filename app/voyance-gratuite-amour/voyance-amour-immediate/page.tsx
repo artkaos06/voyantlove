@@ -81,7 +81,7 @@ export default function VoyanceAmourImmediatePage() {
           </div>
         </article>
 
-        <VoyantQuickCTA topic="voyance-gratuite" source="voyance-amour-immediate-early" />
+        <VoyantRecommendations topic="voyance-gratuite" limit={3} showOnlineFirst={true} source="voyance-amour-immediate-cards-top" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">🎴 Tirages Automatiques Gratuits et Instantanés</h2>
@@ -165,7 +165,7 @@ export default function VoyanceAmourImmediatePage() {
           </div>
         </section>
 
-        <VoyantRecommendations topic="voyance-gratuite" limit={3} showOnlineFirst={true} source="voyance-amour-immediate-mid" />
+        <VoyantQuickCTA topic="voyance-gratuite" source="voyance-amour-immediate-banner-mid" />
 
     </ContentPage>
   );

@@ -80,7 +80,7 @@ export default function ReconquerirSonExPage() {
           </p>
         </article>
 
-        <VoyantQuickCTA topic="reconquete" source="reconquerir-son-ex-early" />
+        <VoyantRecommendations topic="reconquete" limit={3} showOnlineFirst={true} source="reconquerir-son-ex-cards-top" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">🔮 Ce que le Tarot Révèle sur la Reconquête</h2>
@@ -127,7 +127,7 @@ export default function ReconquerirSonExPage() {
           </div>
         </section>
 
-        <VoyantRecommendations topic="reconquete" limit={3} showOnlineFirst={true} source="reconquerir-son-ex-mid" />
+        <VoyantQuickCTA topic="reconquete" source="reconquerir-son-ex-banner-mid" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">✅ Les 5 Étapes de la Reconquête Réussie</h2>

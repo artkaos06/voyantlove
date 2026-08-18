@@ -93,7 +93,7 @@ export default function AscendantAmourPage() {
           </div>
         </article>
 
-        <VoyantQuickCTA topic="methodes-voyance" source="ascendant-amour-early" />
+        <VoyantRecommendations topic="methodes-voyance" limit={3} showOnlineFirst={true} source="ascendant-amour-cards-top" />
 
         {/* Section 1: Calcul */}
         <section id="calcul" className="bg-white rounded-xl shadow-md p-8 mb-8">
@@ -121,7 +121,7 @@ export default function AscendantAmourPage() {
           </div>
         </section>
 
-        <VoyantRecommendations topic="methodes-voyance" limit={3} showOnlineFirst={true} source="ascendant-amour-mid" />
+        <VoyantQuickCTA topic="methodes-voyance" source="ascendant-amour-banner-mid" />
 
         {/* Section 3: Ascendant vs signe solaire, rôle en synastrie */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">

@@ -85,7 +85,7 @@ export default function SauverSonCouplePage() {
           </p>
         </article>
 
-        <VoyantQuickCTA topic="crise-couple" source="sauver-son-couple-early" />
+        <VoyantRecommendations topic="crise-couple" limit={3} showOnlineFirst={true} source="sauver-son-couple-cards-top" />
 
         <section id="diagnostic" className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-green-600">🔮 Votre Couple Peut-il Être Sauvé ? Le Diagnostic Tarot</h2>
@@ -277,7 +277,7 @@ export default function SauverSonCouplePage() {
           </div>
         </section>
 
-        <VoyantRecommendations topic="crise-couple" limit={3} showOnlineFirst={true} source="sauver-son-couple-mid" />
+        <VoyantQuickCTA topic="crise-couple" source="sauver-son-couple-banner-mid" />
 
         <section className="bg-gradient-to-br from-red-50 to-orange-50 rounded-xl p-8 mb-8 border-2 border-red-200">
           <h2 className="text-3xl font-bold mb-6 text-gray-900">⚠️ Quand Sauver son Couple est Impossible, Reconnaître les Limites</h2>

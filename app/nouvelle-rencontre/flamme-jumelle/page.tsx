@@ -80,7 +80,7 @@ export default function FlammeJumellePage() {
         </p>
       </article>
 
-      <VoyantQuickCTA topic="nouvelle-rencontre" source="flamme-jumelle-early" />
+      <VoyantRecommendations topic="nouvelle-rencontre" limit={3} showOnlineFirst={true} source="flamme-jumelle-cards-top" />
 
       {/* Flamme Jumelle vs Âme Sœur */}
       <section className="bg-gradient-to-br from-purple-50 to-indigo-50 rounded-xl p-8 mb-8 border-2 border-purple-200">
@@ -319,7 +319,7 @@ export default function FlammeJumellePage() {
         </div>
       </section>
 
-      <VoyantRecommendations topic="nouvelle-rencontre" limit={3} showOnlineFirst={true} source="flamme-jumelle-mid" />
+      <VoyantQuickCTA topic="nouvelle-rencontre" source="flamme-jumelle-banner-mid" />
 
       {/* Séparation et Retrouvailles */}
       <section className="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-xl p-8 mb-8 border-2 border-indigo-200">

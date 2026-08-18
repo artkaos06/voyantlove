@@ -79,7 +79,7 @@ export default function AstrologieAmoureusePage() {
           </div>
         </article>
 
-        <VoyantQuickCTA topic="methodes-voyance" source="astrologie-amoureuse-early" />
+        <VoyantRecommendations topic="methodes-voyance" limit={3} showOnlineFirst={true} source="astrologie-amoureuse-cards-top" />
 
         {/* Section: Qu&apos;est-ce que l&apos;astrologie amoureuse */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
@@ -194,7 +194,7 @@ export default function AstrologieAmoureusePage() {
           </div>
         </section>
 
-        <VoyantRecommendations topic="methodes-voyance" limit={3} showOnlineFirst={true} source="astrologie-amoureuse-mid" />
+        <VoyantQuickCTA topic="methodes-voyance" source="astrologie-amoureuse-banner-mid" />
 
         {/* Section: V&eacute;nus et Mars */}
         <section className="bg-gradient-to-br from-purple-50 to-indigo-50 rounded-xl p-8 mb-8 border-2 border-purple-200">

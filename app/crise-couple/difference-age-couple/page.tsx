@@ -87,7 +87,7 @@ export default function DifferenceAgeCouplePage() {
           </div>
         </article>
 
-        <VoyantQuickCTA topic="crise-couple" source="difference-age-early" />
+        <VoyantRecommendations topic="crise-couple" limit={3} showOnlineFirst={true} source="difference-age-couple-cards-top" />
 
         {/* H2: Les défis spécifiques */}
         <section id="defis" className="bg-white rounded-xl shadow-md p-8 mb-8">
@@ -150,7 +150,7 @@ export default function DifferenceAgeCouplePage() {
           </div>
         </section>
 
-        <VoyantRecommendations topic="crise-couple" limit={3} showOnlineFirst={true} source="difference-age-mid" />
+        <VoyantQuickCTA topic="crise-couple" source="difference-age-couple-banner-mid" />
 
         {/* H2: Ce qui compte vraiment */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">

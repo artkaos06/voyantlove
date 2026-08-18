@@ -85,7 +85,7 @@ export default function ExRefaitSaViePage() {
           </div>
         </article>
 
-        <VoyantQuickCTA topic="rupture" source="ex-refait-vie-early" />
+        <VoyantRecommendations topic="rupture" limit={3} showOnlineFirst={true} source="ex-refait-sa-vie-cards-top" />
 
         {/* H2: Ce que ça prouve ou pas */}
         <section id="prouve" className="bg-white rounded-xl shadow-md p-8 mb-8">
@@ -141,7 +141,7 @@ export default function ExRefaitSaViePage() {
           </div>
         </section>
 
-        <VoyantRecommendations topic="rupture" limit={3} showOnlineFirst={true} source="ex-refait-vie-mid" />
+        <VoyantQuickCTA topic="rupture" source="ex-refait-sa-vie-banner-mid" />
 
         {/* H2: Comment accepter et avancer */}
         <section id="accepter" className="bg-gradient-to-br from-teal-50 to-blue-50 rounded-xl p-8 mb-8 border-2 border-teal-200">

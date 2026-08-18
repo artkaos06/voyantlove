@@ -88,7 +88,7 @@ export default function DoisJeAttendreSonRetourPage() {
           </div>
         </article>
 
-        <VoyantQuickCTA topic="reconquete" source="dois-je-attendre-early" />
+        <VoyantRecommendations topic="reconquete" limit={3} showOnlineFirst={true} source="dois-je-attendre-son-retour-cards-top" />
 
         {/* H2: Les Signes qu'il vaut la peine d'attendre */}
         <section id="signes" className="bg-white rounded-xl shadow-md p-8 mb-8">
@@ -154,7 +154,7 @@ export default function DoisJeAttendreSonRetourPage() {
           </div>
         </section>
 
-        <VoyantRecommendations topic="reconquete" limit={3} showOnlineFirst={true} source="dois-je-attendre-mid" />
+        <VoyantQuickCTA topic="reconquete" source="dois-je-attendre-son-retour-banner-mid" />
 
         {/* H2: Combien de temps */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">

@@ -76,7 +76,7 @@ export default function BouleDeCristalAmourPage() {
           </div>
         </article>
 
-        <VoyantQuickCTA topic="methodes-voyance" source="boule-cristal-amour-early" />
+        <VoyantRecommendations topic="methodes-voyance" limit={3} showOnlineFirst={true} source="boule-de-cristal-amour-cards-top" />
 
         {/* Section 1: Fonctionnement */}
         <section id="fonctionnement" className="bg-white rounded-xl shadow-md p-8 mb-8">
@@ -128,7 +128,7 @@ export default function BouleDeCristalAmourPage() {
           </div>
         </section>
 
-        <VoyantRecommendations topic="methodes-voyance" limit={3} showOnlineFirst={true} source="boule-cristal-amour-mid" />
+        <VoyantQuickCTA topic="methodes-voyance" source="boule-de-cristal-amour-banner-mid" />
 
         {/* Section 3: Comparaison */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">

@@ -86,7 +86,7 @@ export default function ReverDeSonExPage() {
           </div>
         </article>
 
-        <VoyantQuickCTA topic="rupture" source="rever-ex-early" />
+        <VoyantRecommendations topic="rupture" limit={3} showOnlineFirst={true} source="rever-de-son-ex-cards-top" />
 
         {/* H2: Pourquoi on rêve de son ex */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
@@ -131,7 +131,7 @@ export default function ReverDeSonExPage() {
           </div>
         </section>
 
-        <VoyantRecommendations topic="rupture" limit={3} showOnlineFirst={true} source="rever-ex-mid" />
+        <VoyantQuickCTA topic="rupture" source="rever-de-son-ex-banner-mid" />
 
         {/* H2: Ce qu'il ne faut pas y lire */}
         <section id="pieges" className="bg-white rounded-xl shadow-md p-8 mb-8">

@@ -77,7 +77,7 @@ export default function CartomancieAmourPage() {
           </p>
         </article>
 
-        <VoyantQuickCTA topic="methodes-voyance" source="cartomancie-amour-early" />
+        <VoyantRecommendations topic="methodes-voyance" limit={3} showOnlineFirst={true} source="cartomancie-amour-cards-top" />
 
         {/* Section 1: Qu'est-ce que la cartomancie */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
@@ -174,7 +174,7 @@ export default function CartomancieAmourPage() {
           </p>
         </section>
 
-        <VoyantRecommendations topic="methodes-voyance" limit={3} showOnlineFirst={true} source="cartomancie-amour-mid" />
+        <VoyantQuickCTA topic="methodes-voyance" source="cartomancie-amour-banner-mid" />
 
         {/* Section 4: Cartomancie vs Tarot vs Oracle */}
         <section className="bg-gradient-to-br from-cyan-50 to-blue-50 rounded-xl p-8 mb-8 border-2 border-cyan-200">

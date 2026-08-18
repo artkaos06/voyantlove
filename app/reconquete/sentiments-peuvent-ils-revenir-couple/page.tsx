@@ -87,7 +87,7 @@ export default function SentimentsPeuventIlsRevenirCouplePage() {
           </div>
         </article>
 
-        <VoyantQuickCTA topic="reconquete" source="sentiments-reviennent-early" />
+        <VoyantRecommendations topic="reconquete" limit={3} showOnlineFirst={true} source="sentiments-peuvent-ils-revenir-couple-cards-top" />
 
         {/* H2 1 */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
@@ -110,7 +110,7 @@ export default function SentimentsPeuventIlsRevenirCouplePage() {
           </p>
         </section>
 
-        <VoyantRecommendations topic="reconquete" limit={3} showOnlineFirst={true} source="sentiments-reviennent-mid" />
+        <VoyantQuickCTA topic="reconquete" source="sentiments-peuvent-ils-revenir-couple-banner-mid" />
 
         {/* H2 3 */}
         <section id="conditions" className="bg-gradient-to-br from-rose-50 to-fuchsia-50 rounded-xl p-8 mb-8 border-2 border-rose-200">

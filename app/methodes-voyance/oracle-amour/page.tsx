@@ -79,7 +79,7 @@ export default function OracleAmourPage() {
           </div>
         </article>
 
-        <VoyantQuickCTA topic="methodes-voyance" source="oracle-amour-early" />
+        <VoyantRecommendations topic="methodes-voyance" limit={3} showOnlineFirst={true} source="oracle-amour-cards-top" />
 
         {/* Section: Qu&apos;est-ce que l&apos;Oracle de l&apos;Amour */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
@@ -199,7 +199,7 @@ export default function OracleAmourPage() {
           </div>
         </section>
 
-        <VoyantRecommendations topic="methodes-voyance" limit={3} showOnlineFirst={true} source="oracle-amour-mid" />
+        <VoyantQuickCTA topic="methodes-voyance" source="oracle-amour-banner-mid" />
 
         {/* Section: Oracle vs Tarot */}
         <section className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-8 mb-8 border-2 border-purple-200">

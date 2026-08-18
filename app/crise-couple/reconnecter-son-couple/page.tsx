@@ -77,7 +77,7 @@ export default function ReconnecterSonCouplePage() {
           </p>
         </article>
 
-        <VoyantQuickCTA topic="crise-couple" source="reconnecter-son-couple-early" />
+        <VoyantRecommendations topic="crise-couple" limit={3} showOnlineFirst={true} source="reconnecter-son-couple-cards-top" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">🔮 Ce que le Tarot Révèle sur Votre Couple</h2>
@@ -147,7 +147,7 @@ export default function ReconnecterSonCouplePage() {
           </div>
         </section>
 
-        <VoyantRecommendations topic="crise-couple" limit={3} showOnlineFirst={true} source="reconnecter-son-couple-mid" />
+        <VoyantQuickCTA topic="crise-couple" source="reconnecter-son-couple-banner-mid" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">⚡ Les Signaux d&apos;Alerte à Ne Pas Ignorer</h2>

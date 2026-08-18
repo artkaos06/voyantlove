@@ -83,7 +83,7 @@ export default function SecondeChancePage() {
           <p className="text-lg">Comprendre la différence entre une vraie <strong>seconde chance constructive</strong> et une simple répétition de schéma toxique vous protège de nouvelles souffrances. Cette guidance complète vous aide à identifier les conditions de réussite, les signes d'alerte, et le chemin vers une <strong>reconstruction solide de votre couple</strong>. Pour en savoir plus sur les <Link href="/reconquete/" className="text-green-600 hover:text-green-800 underline font-medium">retrouvailles amoureuses</Link>, découvrez toutes nos guidances spécialisées.</p>
         </article>
 
-        <VoyantQuickCTA topic="reconquete" source="seconde-chance-amour-early" />
+        <VoyantRecommendations topic="reconquete" limit={3} showOnlineFirst={true} source="seconde-chance-amour-cards-top" />
 
         <section className="bg-white rounded-xl p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-green-600">Les 7 Conditions Essentielles pour Réussir une Seconde Chance</h2>
@@ -287,7 +287,7 @@ export default function SecondeChancePage() {
           </div>
         </section>
 
-        <VoyantRecommendations topic="reconquete" limit={3} showOnlineFirst={true} source="seconde-chance-amour-mid" />
+        <VoyantQuickCTA topic="reconquete" source="seconde-chance-amour-banner-mid" />
 
         <section className="bg-white rounded-xl p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-green-600">Seconde Chance vs Répétition de Schéma : Faites la Différence</h2>

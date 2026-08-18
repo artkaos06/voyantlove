@@ -86,7 +86,7 @@ export default function TrouverAmeSoeurPage() {
         </p>
       </article>
 
-      <VoyantQuickCTA topic="nouvelle-rencontre" source="trouver-ame-soeur-early" />
+      <VoyantRecommendations topic="nouvelle-rencontre" limit={3} showOnlineFirst={true} source="trouver-ame-soeur-cards-top" />
 
       <section className="bg-white rounded-xl shadow-md p-8 mb-8">
         <h2 className="text-3xl font-bold mb-6 text-indigo-600">💎 Qu'est-ce qu'une Âme Sœur Vraiment ?</h2>
@@ -489,7 +489,7 @@ export default function TrouverAmeSoeurPage() {
         </div>
       </section>
 
-      <VoyantRecommendations topic="nouvelle-rencontre" limit={3} showOnlineFirst={true} source="trouver-ame-soeur-mid" />
+      <VoyantQuickCTA topic="nouvelle-rencontre" source="trouver-ame-soeur-banner-mid" />
 
       <section className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-xl p-8 mb-8 border-2 border-blue-200">
         <h2 className="text-3xl font-bold mb-6 text-gray-900">🌟 Où et Comment Rencontrer Son Âme Sœur</h2>

@@ -88,7 +88,7 @@ export default function VeutSeRemettreEnsembleMaisNeFaitRienPage() {
           </div>
         </article>
 
-        <VoyantQuickCTA topic="reconquete" source="veut-se-remettre-early" />
+        <VoyantRecommendations topic="reconquete" limit={3} showOnlineFirst={true} source="veut-se-remettre-ensemble-mais-ne-fait-rien-cards-top" />
 
         {/* H2: Pourquoi les paroles ne suffisent pas */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
@@ -155,7 +155,7 @@ export default function VeutSeRemettreEnsembleMaisNeFaitRienPage() {
           </div>
         </section>
 
-        <VoyantRecommendations topic="reconquete" limit={3} showOnlineFirst={true} source="veut-se-remettre-mid" />
+        <VoyantQuickCTA topic="reconquete" source="veut-se-remettre-ensemble-mais-ne-fait-rien-banner-mid" />
 
         {/* H2: Diagnostic paroles vs actes */}
         <section id="diagnostic" className="bg-gradient-to-br from-violet-50 to-indigo-50 rounded-xl p-8 mb-8 border-2 border-violet-200">

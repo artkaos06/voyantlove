@@ -85,7 +85,7 @@ export default function SignesReseauxSociauxApresRupturePage() {
           </div>
         </article>
 
-        <VoyantQuickCTA topic="rupture" source="signes-reseaux-early" />
+        <VoyantRecommendations topic="rupture" limit={3} showOnlineFirst={true} source="signes-reseaux-sociaux-apres-rupture-cards-top" />
 
         {/* H2: Pourquoi les changements numériques comptent tant */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
@@ -130,7 +130,7 @@ export default function SignesReseauxSociauxApresRupturePage() {
           </div>
         </section>
 
-        <VoyantRecommendations topic="rupture" limit={3} showOnlineFirst={true} source="signes-reseaux-mid" />
+        <VoyantQuickCTA topic="rupture" source="signes-reseaux-sociaux-apres-rupture-banner-mid" />
 
         {/* H2: Faux signes de retour */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">

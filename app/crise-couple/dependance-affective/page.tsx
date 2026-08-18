@@ -80,7 +80,7 @@ export default function DependanceAffectivePage() {
           </p>
         </article>
 
-        <VoyantQuickCTA topic="crise-couple" source="dependance-affective-early" />
+        <VoyantRecommendations topic="crise-couple" limit={3} showOnlineFirst={true} source="dependance-affective-cards-top" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-teal-600">&#x1F52E; Qu&rsquo;est-ce que la D&eacute;pendance Affective selon la Voyance ?</h2>
@@ -225,7 +225,7 @@ export default function DependanceAffectivePage() {
           </div>
         </section>
 
-        <VoyantRecommendations topic="crise-couple" limit={3} showOnlineFirst={true} source="dependance-affective-mid" />
+        <VoyantQuickCTA topic="crise-couple" source="dependance-affective-banner-mid" />
 
         <section id="liberation" className="bg-gradient-to-br from-teal-50 to-blue-50 rounded-xl p-8 mb-8 border-2 border-teal-200">
           <h2 className="text-3xl font-bold mb-6 text-gray-900">&#x2728; Le Chemin de Lib&eacute;ration &mdash; 5 &Eacute;tapes Guid&eacute;es par le Tarot</h2>

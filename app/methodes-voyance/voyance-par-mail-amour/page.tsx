@@ -82,7 +82,7 @@ export default function VoyanceParMailAmourPage() {
           </p>
         </article>
 
-        <VoyantQuickCTA topic="methodes-voyance" source="voyance-par-mail-early" />
+        <VoyantRecommendations topic="methodes-voyance" limit={3} showOnlineFirst={true} source="voyance-par-mail-amour-cards-top" />
 
         {/* Qu'est-ce que la voyance par mail */}
         <section className="bg-gradient-to-br from-teal-50 to-cyan-50 rounded-xl p-8 mb-8 border-2 border-teal-200">
@@ -244,7 +244,7 @@ export default function VoyanceParMailAmourPage() {
           </div>
         </section>
 
-        <VoyantRecommendations topic="methodes-voyance" limit={3} showOnlineFirst={true} source="voyance-par-mail-mid" />
+        <VoyantQuickCTA topic="methodes-voyance" source="voyance-par-mail-amour-banner-mid" />
 
         {/* Gratuit vs payant */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">

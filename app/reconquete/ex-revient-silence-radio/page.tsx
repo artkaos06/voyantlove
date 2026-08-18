@@ -101,7 +101,7 @@ export default function ExRevientSilenceRadioPage() {
           </p>
         </article>
 
-        <VoyantQuickCTA topic="reconquete" source="ex-revient-silence-radio-early" />
+        <VoyantRecommendations topic="reconquete" limit={3} showOnlineFirst={true} source="ex-revient-silence-radio-cards-top" />
 
         <section id="delai" className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-purple-600">⏱️ Il/Elle Me Recontacte Après 2 Semaines, 1 Mois, 6 Mois de Silence : Que Faire ?</h2>
@@ -320,7 +320,7 @@ export default function ExRevientSilenceRadioPage() {
           </div>
         </section>
 
-        <VoyantRecommendations topic="reconquete" limit={3} showOnlineFirst={true} source="ex-revient-silence-radio-mid" />
+        <VoyantQuickCTA topic="reconquete" source="ex-revient-silence-radio-banner-mid" />
 
         <section id="reaction" className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-purple-600">💬 Comment Réagir Quand Votre Ex Revient : La Stratégie en 6 Étapes</h2>

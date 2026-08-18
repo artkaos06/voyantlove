@@ -86,7 +86,7 @@ export default function NouvelleRelationAmourseusePage() {
         </p>
       </article>
 
-      <VoyantQuickCTA topic="nouvelle-rencontre" source="nouvelle-relation-amoureuse-early" />
+      <VoyantRecommendations topic="nouvelle-rencontre" limit={3} showOnlineFirst={true} source="nouvelle-relation-amoureuse-cards-top" />
 
       <section id="etapes" className="bg-white rounded-xl shadow-md p-8 mb-8">
         <h2 className="text-3xl font-bold mb-6 text-rose-600">📅 Les 6 Étapes d'une Nouvelle Relation Amoureuse</h2>
@@ -338,7 +338,7 @@ export default function NouvelleRelationAmourseusePage() {
         </div>
       </section>
 
-      <VoyantRecommendations topic="nouvelle-rencontre" limit={3} showOnlineFirst={true} source="nouvelle-relation-amoureuse-mid" />
+      <VoyantQuickCTA topic="nouvelle-rencontre" source="nouvelle-relation-amoureuse-banner-mid" />
 
       <section className="bg-white rounded-xl shadow-md p-8 mb-8">
         <h2 className="text-3xl font-bold mb-6 text-rose-600">✅ Les 10 Signes d'une Nouvelle Relation Saine et Prometteuse</h2>

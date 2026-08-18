@@ -88,7 +88,7 @@ export default function JalousieExcessivePage() {
           </p>
         </article>
 
-        <VoyantQuickCTA topic="crise-couple" source="jalousie-excessive-early" />
+        <VoyantRecommendations topic="crise-couple" limit={3} showOnlineFirst={true} source="jalousie-excessive-cards-top" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-red-600">🔍 Jalousie Normale vs Jalousie Excessive : Les Différences Cruciales</h2>
@@ -271,7 +271,7 @@ export default function JalousieExcessivePage() {
           </div>
         </section>
 
-        <VoyantRecommendations topic="crise-couple" limit={3} showOnlineFirst={true} source="jalousie-excessive-mid" />
+        <VoyantQuickCTA topic="crise-couple" source="jalousie-excessive-banner-mid" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-red-600">⚠️ Les 10 Signes d'une Jalousie Devenue Toxique</h2>

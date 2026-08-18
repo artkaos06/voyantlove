@@ -82,7 +82,7 @@ export default function MediumAmourPage() {
           </p>
         </article>
 
-        <VoyantQuickCTA topic="methodes-voyance" source="medium-amour-early" />
+        <VoyantRecommendations topic="methodes-voyance" limit={3} showOnlineFirst={true} source="medium-amour-cards-top" />
 
         {/* Section 1: Dons médiumniques */}
         <section id="dons" className="bg-white rounded-xl shadow-md p-8 mb-8">
@@ -153,7 +153,7 @@ export default function MediumAmourPage() {
           </div>
         </section>
 
-        <VoyantRecommendations topic="methodes-voyance" limit={3} showOnlineFirst={true} source="medium-amour-mid" />
+        <VoyantQuickCTA topic="methodes-voyance" source="medium-amour-banner-mid" />
 
         {/* Section 3: Médium vs autres méthodes */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">

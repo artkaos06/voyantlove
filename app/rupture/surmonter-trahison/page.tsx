@@ -79,7 +79,7 @@ export default function SurmonterTrahisonPage() {
           </p>
         </article>
 
-        <VoyantQuickCTA topic="rupture" source="surmonter-trahison-early" />
+        <VoyantRecommendations topic="rupture" limit={3} showOnlineFirst={true} source="surmonter-trahison-cards-top" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">🔮 Ce que le Tarot Révèle sur la Trahison</h2>
@@ -145,7 +145,7 @@ export default function SurmonterTrahisonPage() {
           </div>
         </section>
 
-        <VoyantRecommendations topic="rupture" limit={3} showOnlineFirst={true} source="surmonter-trahison-mid" />
+        <VoyantQuickCTA topic="rupture" source="surmonter-trahison-banner-mid" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">🔄 Rester ou Partir : Ce que la Voyance Éclaire</h2>

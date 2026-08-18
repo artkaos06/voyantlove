@@ -79,7 +79,7 @@ export default function VoyanceTelephoneAmourPage() {
           </div>
         </article>
 
-        <VoyantQuickCTA topic="methodes-voyance" source="voyance-telephone-amour-early" />
+        <VoyantRecommendations topic="methodes-voyance" limit={3} showOnlineFirst={true} source="voyance-telephone-amour-cards-top" />
 
         {/* Section 1: Comment fonctionne la voyance par t&eacute;l&eacute;phone */}
         <section id="consultation" className="bg-white rounded-xl shadow-md p-8 mb-8">
@@ -191,7 +191,7 @@ export default function VoyanceTelephoneAmourPage() {
           </div>
         </section>
 
-        <VoyantRecommendations topic="methodes-voyance" limit={3} showOnlineFirst={true} source="voyance-telephone-amour-mid" />
+        <VoyantQuickCTA topic="methodes-voyance" source="voyance-telephone-amour-banner-mid" />
 
         {/* Section 4: Les diff&eacute;rentes m&eacute;thodes utilis&eacute;es par t&eacute;l&eacute;phone */}
         <section className="bg-gradient-to-br from-violet-50 to-purple-50 rounded-xl p-8 mb-8 border-2 border-violet-200">

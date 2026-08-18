@@ -79,7 +79,7 @@ export default function SentimentsNonPartagesPage() {
           </p>
         </article>
 
-        <VoyantQuickCTA topic="sentiments" source="sentiments-non-partages-early" />
+        <VoyantRecommendations topic="sentiments" limit={3} showOnlineFirst={true} source="sentiments-non-partages-cards-top" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">🔮 Ce que le Tarot Révèle sur l&apos;Amour Non Partagé</h2>
@@ -129,7 +129,7 @@ export default function SentimentsNonPartagesPage() {
           </div>
         </section>
 
-        <VoyantRecommendations topic="sentiments" limit={3} showOnlineFirst={true} source="sentiments-non-partages-mid" />
+        <VoyantQuickCTA topic="sentiments" source="sentiments-non-partages-banner-mid" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">🌱 5 Étapes pour Guérir et Avancer</h2>

@@ -83,7 +83,7 @@ export default function CompatibiliteAmoureusePage() {
           </div>
         </article>
 
-        <VoyantQuickCTA topic="sentiments" source="compatibilite-amoureuse-early" />
+        <VoyantRecommendations topic="sentiments" limit={3} showOnlineFirst={true} source="compatibilite-amoureuse-cards-top" />
 
         {/* Section: Analyse de Compatibilit&eacute; par le Tarot */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
@@ -222,7 +222,7 @@ export default function CompatibiliteAmoureusePage() {
           </div>
         </section>
 
-        <VoyantRecommendations topic="sentiments" limit={3} showOnlineFirst={true} source="compatibilite-amoureuse-mid" />
+        <VoyantQuickCTA topic="sentiments" source="compatibilite-amoureuse-banner-mid" />
 
         {/* Section: Les 7 Piliers de la Compatibilit&eacute; Amoureuse */}
         <section id="piliers" className="bg-white rounded-xl shadow-md p-8 mb-8">

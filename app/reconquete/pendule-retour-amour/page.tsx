@@ -85,7 +85,7 @@ export default function PenduleRetourAmourPage() {
           </div>
         </article>
 
-        <VoyantQuickCTA topic="reconquete" source="pendule-retour-amour-early" />
+        <VoyantRecommendations topic="reconquete" limit={3} showOnlineFirst={true} source="pendule-retour-amour-cards-top" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">⚖️ Ce que le Pendule PEUT et NE PEUT PAS Faire</h2>
@@ -184,7 +184,7 @@ export default function PenduleRetourAmourPage() {
           </div>
         </section>
 
-        <VoyantRecommendations topic="reconquete" limit={3} showOnlineFirst={true} source="pendule-retour-amour-mid" />
+        <VoyantQuickCTA topic="reconquete" source="pendule-retour-amour-banner-mid" />
 
         <section id="consultation" className="bg-gradient-to-br from-rose-50 to-purple-50 rounded-xl p-8 mb-8 border-2 border-rose-200">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">🧙 Pourquoi Consulter un Radiesthésiste plutôt que de Pratiquer Seul</h2>

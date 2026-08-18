@@ -79,7 +79,7 @@ export default function PeurDeAimerANouveauPage() {
         </p>
       </article>
 
-      <VoyantQuickCTA topic="nouvelle-rencontre" source="peur-de-aimer-early" />
+      <VoyantRecommendations topic="nouvelle-rencontre" limit={3} showOnlineFirst={true} source="peur-de-aimer-a-nouveau-cards-top" />
 
       <section className="bg-white rounded-xl shadow-md p-8 mb-8">
         <h2 className="text-3xl font-bold text-gray-900 mb-6">🔮 Ce que le Tarot Révèle sur votre Peur d'Aimer</h2>
@@ -145,7 +145,7 @@ export default function PeurDeAimerANouveauPage() {
         </div>
       </section>
 
-      <VoyantRecommendations topic="nouvelle-rencontre" limit={3} showOnlineFirst={true} source="peur-de-aimer-mid" />
+      <VoyantQuickCTA topic="nouvelle-rencontre" source="peur-de-aimer-a-nouveau-banner-mid" />
 
       <section className="bg-white rounded-xl shadow-md p-8 mb-8">
         <h2 className="text-3xl font-bold text-gray-900 mb-6">🌙 Les Signes que Vous Êtes Prêt(e) à Aimer à Nouveau</h2>

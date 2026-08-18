@@ -126,7 +126,7 @@ export default function TarotAmourGratuitPage() {
           </div>
         </article>
 
-        <VoyantQuickCTA topic="voyance-gratuite" source="tarot-amour-gratuit-early" />
+        <VoyantRecommendations topic="voyance-gratuite" limit={3} showOnlineFirst={true} source="tarot-amour-gratuit-cards-top" />
 
         {/* Section 1: Comprendre le Tarot Amoureux Gratuit */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
@@ -228,7 +228,7 @@ export default function TarotAmourGratuitPage() {
           </div>
         </section>
 
-        <VoyantRecommendations topic="voyance-gratuite" limit={3} showOnlineFirst={true} source="tarot-amour-gratuit-mid" />
+        <VoyantQuickCTA topic="voyance-gratuite" source="tarot-amour-gratuit-banner-mid" />
 
         {/* Section 4: Interpréter Votre Tirage Amoureux */}
         <section className="bg-gradient-to-br from-emerald-50 to-green-50 rounded-xl p-8 mb-8 border-2 border-emerald-200">

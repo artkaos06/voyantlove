@@ -87,7 +87,7 @@ export default function OppositionFamilialeCouplePage() {
           </div>
         </article>
 
-        <VoyantQuickCTA topic="crise-couple" source="opposition-familiale-early" />
+        <VoyantRecommendations topic="crise-couple" limit={3} showOnlineFirst={true} source="opposition-familiale-couple-cards-top" />
 
         {/* H2: Pourquoi les familles s'opposent */}
         <section id="causes" className="bg-white rounded-xl shadow-md p-8 mb-8">
@@ -150,7 +150,7 @@ export default function OppositionFamilialeCouplePage() {
           </div>
         </section>
 
-        <VoyantRecommendations topic="crise-couple" limit={3} showOnlineFirst={true} source="opposition-familiale-mid" />
+        <VoyantQuickCTA topic="crise-couple" source="opposition-familiale-couple-banner-mid" />
 
         {/* H2: Faut-il choisir */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">

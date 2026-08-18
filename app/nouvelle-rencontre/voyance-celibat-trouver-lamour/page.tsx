@@ -74,7 +74,7 @@ export default function VoyanceCelibatPage() {
         </p>
       </article>
 
-      <VoyantQuickCTA topic="nouvelle-rencontre" source="voyance-celibat-early" />
+      <VoyantRecommendations topic="nouvelle-rencontre" limit={3} showOnlineFirst={true} source="voyance-celibat-trouver-lamour-cards-top" />
 
       {/* Section 1: Pourquoi encore célibataire */}
       <section id="blocages" className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-8 mb-8 border-2 border-indigo-200">
@@ -211,7 +211,7 @@ export default function VoyanceCelibatPage() {
         </div>
       </section>
 
-      <VoyantRecommendations topic="nouvelle-rencontre" limit={3} showOnlineFirst={true} source="voyance-celibat-mid" />
+      <VoyantQuickCTA topic="nouvelle-rencontre" source="voyance-celibat-trouver-lamour-banner-mid" />
 
       {/* Section 5: Timing */}
       <section id="timing" className="bg-gradient-to-br from-indigo-50 to-blue-50 rounded-xl p-8 mb-8 border-2 border-blue-200">

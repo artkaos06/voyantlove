@@ -86,7 +86,7 @@ export default function SignesAmeSoeurPage() {
         </p>
       </article>
 
-      <VoyantQuickCTA topic="nouvelle-rencontre" source="signes-ame-soeur-early" />
+      <VoyantRecommendations topic="nouvelle-rencontre" limit={3} showOnlineFirst={true} source="signes-ame-soeur-cards-top" />
 
       <section id="signes" className="bg-white rounded-xl shadow-md p-8 mb-8">
         <h2 className="text-3xl font-bold mb-6 text-purple-600">💫 Les 15 Signes Infaillibles de l'Âme Sœur</h2>
@@ -287,7 +287,7 @@ export default function SignesAmeSoeurPage() {
         </div>
       </section>
 
-      <VoyantRecommendations topic="nouvelle-rencontre" limit={3} showOnlineFirst={true} source="signes-ame-soeur-mid" />
+      <VoyantQuickCTA topic="nouvelle-rencontre" source="signes-ame-soeur-banner-mid" />
 
       <section id="tarot" className="bg-white rounded-xl shadow-md p-8 mb-8">
         <h2 className="text-3xl font-bold mb-6 text-purple-600">🃏 Le Tarot Confirme : Les Cartes de l'Âme Sœur</h2>

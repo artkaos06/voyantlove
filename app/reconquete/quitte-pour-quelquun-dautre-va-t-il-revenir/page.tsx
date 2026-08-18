@@ -88,7 +88,7 @@ export default function QuittePourQuelquunDautreVaTIlRevenirPage() {
           </div>
         </article>
 
-        <VoyantQuickCTA topic="reconquete" source="quitte-pour-autre-early" />
+        <VoyantRecommendations topic="reconquete" limit={3} showOnlineFirst={true} source="quitte-pour-quelquun-dautre-va-t-il-revenir-cards-top" />
 
         {/* H2: Le départ ne révèle pas toute l'histoire */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
@@ -166,7 +166,7 @@ export default function QuittePourQuelquunDautreVaTIlRevenirPage() {
           </div>
         </section>
 
-        <VoyantRecommendations topic="reconquete" limit={3} showOnlineFirst={true} source="quitte-pour-autre-mid" />
+        <VoyantQuickCTA topic="reconquete" source="quitte-pour-quelquun-dautre-va-t-il-revenir-banner-mid" />
 
         {/* H2: Faut-il attendre la fin de sa nouvelle relation */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">

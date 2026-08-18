@@ -84,7 +84,7 @@ export default function TarologieAmoureusePage() {
           </div>
         </article>
 
-        <VoyantQuickCTA topic="methodes-voyance" source="tarologie-amoureuse-early" />
+        <VoyantRecommendations topic="methodes-voyance" limit={3} showOnlineFirst={true} source="tarologie-amoureuse-cards-top" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">📖 Qu&apos;est-ce que la Tarologie Amoureuse ?</h2>
@@ -165,7 +165,7 @@ export default function TarologieAmoureusePage() {
           </div>
         </section>
 
-        <VoyantRecommendations topic="methodes-voyance" limit={3} showOnlineFirst={true} source="tarologie-amoureuse-mid" />
+        <VoyantQuickCTA topic="methodes-voyance" source="tarologie-amoureuse-banner-mid" />
 
         <section id="consultation" className="bg-gradient-to-br from-purple-50 to-violet-50 rounded-xl p-8 mb-8 border-2 border-purple-200">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">🔮 Consulter un Tarologue Spécialisé en Amour</h2>

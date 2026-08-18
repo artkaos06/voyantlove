@@ -86,7 +86,7 @@ export default function OublierSonExPage() {
           </div>
         </article>
 
-        <VoyantQuickCTA topic="rupture" source="oublier-son-ex-early" />
+        <VoyantRecommendations topic="rupture" limit={3} showOnlineFirst={true} source="oublier-son-ex-cards-top" />
 
         {/* Section 1: Phases de deuil */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
@@ -192,7 +192,7 @@ export default function OublierSonExPage() {
           </div>
         </section>
 
-        <VoyantRecommendations topic="rupture" limit={3} showOnlineFirst={true} source="oublier-son-ex-mid" />
+        <VoyantQuickCTA topic="rupture" source="oublier-son-ex-banner-mid" />
 
         {/* Section 4: Signes de guérison */}
         <section className="bg-green-50 border-2 border-green-200 rounded-xl p-8 mb-8">

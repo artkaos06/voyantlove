@@ -79,7 +79,7 @@ export default function RencontreAmoureuseEnLignePage() {
         </p>
       </article>
 
-      <VoyantQuickCTA topic="nouvelle-rencontre" source="rencontre-en-ligne-early" />
+      <VoyantRecommendations topic="nouvelle-rencontre" limit={3} showOnlineFirst={true} source="rencontre-amoureuse-en-ligne-cards-top" />
 
       <section className="bg-white rounded-xl shadow-md p-8 mb-8">
         <h2 className="text-3xl font-bold text-gray-900 mb-6">🔮 Ce que le Tarot Révèle sur les Rencontres en Ligne</h2>
@@ -138,7 +138,7 @@ export default function RencontreAmoureuseEnLignePage() {
         </div>
       </section>
 
-      <VoyantRecommendations topic="nouvelle-rencontre" limit={3} showOnlineFirst={true} source="rencontre-en-ligne-mid" />
+      <VoyantQuickCTA topic="nouvelle-rencontre" source="rencontre-amoureuse-en-ligne-banner-mid" />
 
       <section className="bg-white rounded-xl shadow-md p-8 mb-8">
         <h2 className="text-3xl font-bold text-gray-900 mb-6">⚠️ Les Pièges des Rencontres en Ligne</h2>

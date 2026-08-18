@@ -91,7 +91,7 @@ export default function TirageTarotAmourPage() {
           </div>
         </article>
 
-        <VoyantQuickCTA topic="methodes-voyance" source="tirage-tarot-amour-early" />
+        <VoyantRecommendations topic="methodes-voyance" limit={3} showOnlineFirst={true} source="tirage-tarot-amour-cards-top" />
 
         {/* Section: Types de tirages amoureux */}
         <section id="types" className="bg-white rounded-xl shadow-md p-8 mb-8">
@@ -233,7 +233,7 @@ export default function TirageTarotAmourPage() {
           </div>
         </section>
 
-        <VoyantRecommendations topic="methodes-voyance" limit={3} showOnlineFirst={true} source="tirage-tarot-amour-mid" />
+        <VoyantQuickCTA topic="methodes-voyance" source="tirage-tarot-amour-banner-mid" />
 
         {/* Section: Quand faire un tirage */}
         <section className="bg-gradient-to-br from-indigo-50 to-blue-50 rounded-xl p-8 mb-8 border-2 border-indigo-200">

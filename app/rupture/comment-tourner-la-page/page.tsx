@@ -79,7 +79,7 @@ export default function CommentTournerLaPagePage() {
           </p>
         </article>
 
-        <VoyantQuickCTA topic="rupture" source="comment-tourner-la-page-early" />
+        <VoyantRecommendations topic="rupture" limit={3} showOnlineFirst={true} source="comment-tourner-la-page-cards-top" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">🔮 Ce que le Tarot Révèle sur le Lâcher-Prise</h2>
@@ -145,7 +145,7 @@ export default function CommentTournerLaPagePage() {
           </div>
         </section>
 
-        <VoyantRecommendations topic="rupture" limit={3} showOnlineFirst={true} source="comment-tourner-la-page-mid" />
+        <VoyantQuickCTA topic="rupture" source="comment-tourner-la-page-banner-mid" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">🌙 Les Rituels de Libération par la Voyance</h2>

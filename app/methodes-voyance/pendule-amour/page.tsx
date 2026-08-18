@@ -91,7 +91,7 @@ export default function PenduleAmourPage() {
           </div>
         </article>
 
-        <VoyantQuickCTA topic="methodes-voyance" source="pendule-amour-early" />
+        <VoyantRecommendations topic="methodes-voyance" limit={3} showOnlineFirst={true} source="pendule-amour-cards-top" />
 
         {/* Section: Qu&apos;est-ce que le Pendule Amour ? */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
@@ -225,7 +225,7 @@ export default function PenduleAmourPage() {
           </div>
         </section>
 
-        <VoyantRecommendations topic="methodes-voyance" limit={3} showOnlineFirst={true} source="pendule-amour-mid" />
+        <VoyantQuickCTA topic="methodes-voyance" source="pendule-amour-banner-mid" />
 
         {/* Section: Pendule vs Tarot vs Oracle */}
         <section className="bg-gradient-to-br from-fuchsia-50 to-rose-50 rounded-xl p-8 mb-8 border-2 border-fuchsia-200">

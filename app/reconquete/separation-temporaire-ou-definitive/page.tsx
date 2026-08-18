@@ -87,7 +87,7 @@ export default function SeparationTemporaireOuDefinitivePage() {
           </div>
         </article>
 
-        <VoyantQuickCTA topic="reconquete" source="separation-temp-def-early" />
+        <VoyantRecommendations topic="reconquete" limit={3} showOnlineFirst={true} source="separation-temporaire-ou-definitive-cards-top" />
 
         {/* H2 1 */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
@@ -170,7 +170,7 @@ export default function SeparationTemporaireOuDefinitivePage() {
           </div>
         </section>
 
-        <VoyantRecommendations topic="reconquete" limit={3} showOnlineFirst={true} source="separation-temp-def-mid" />
+        <VoyantQuickCTA topic="reconquete" source="separation-temporaire-ou-definitive-banner-mid" />
 
         {/* H2 4 */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">

@@ -109,7 +109,7 @@ export default function TarotFuturProcheAmourPage() {
           </div>
         </article>
 
-        <VoyantQuickCTA topic="voyance-gratuite" source="tarot-futur-proche-amour-early" />
+        <VoyantRecommendations topic="voyance-gratuite" limit={3} showOnlineFirst={true} source="tarot-futur-proche-amour-cards-top" />
 
         {/* Section 1 */}
         <section id="periode" className="bg-white rounded-xl shadow-md p-8 mb-8">
@@ -149,7 +149,7 @@ export default function TarotFuturProcheAmourPage() {
           </div>
         </section>
 
-        <VoyantRecommendations topic="voyance-gratuite" limit={3} showOnlineFirst={true} source="tarot-futur-proche-amour-mid" />
+        <VoyantQuickCTA topic="voyance-gratuite" source="tarot-futur-proche-amour-banner-mid" />
 
         {/* Section 3 */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
