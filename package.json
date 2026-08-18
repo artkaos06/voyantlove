@@ -9,7 +9,8 @@
     "start": "next start",
     "lint": "next lint",
     "test:cpa68": "node --import tsx --test tests/alternativeCpa68.test.ts",
-    "validate": "node --import tsx scripts/validate-pseo.ts"
+    "validate": "node --import tsx scripts/validate-pseo.ts",
+    "test:floating-cta": "node --import tsx --test tests/floatingCta.test.ts"
   },
   "dependencies": {
     "@vercel/kv": "^3.0.0",

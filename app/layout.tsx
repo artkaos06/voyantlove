@@ -3,6 +3,7 @@ import Script from "next/script";
 import CookieConsent from "@/components/CookieConsent";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
+import FloatingConsultCTA from "@/components/FloatingConsultCTA";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -295,6 +296,10 @@ export default function RootLayout({
         <SiteHeader />
         {children}
         <SiteFooter />
+        {/* Persistent CTA for long content reads. Self-excludes on /lp/*
+            (those own their sticky bar), on conversion/legal routes, and while
+            the cookie bar is on screen. */}
+        <FloatingConsultCTA />
       </body>
     </html>
   );
