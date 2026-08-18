@@ -67,7 +67,7 @@ export default function CriseCoupleHubPage() {
       <div className="max-w-6xl mx-auto px-4 py-12">
         <EEATSignal colorScheme="orange" method="Tarot relationnel et guidance de couple" />
 
-        <VoyantQuickCTA topic="crise-couple" source="crise-couple-hub-early" />
+        <VoyantRecommendations topic="crise-couple" limit={3} showOnlineFirst={true} source="crise-couple-hub-cards-top" />
 
         <section className="mb-16">
           <h2 className="text-3xl font-bold mb-8 text-center">🗺️ Résoudre les Crises</h2>
@@ -159,7 +159,7 @@ export default function CriseCoupleHubPage() {
           </div>
         </section>
 
-        <VoyantRecommendations topic="crise-couple" limit={3} showOnlineFirst={true} source="crise-couple-hub-mid" />
+        <VoyantQuickCTA topic="crise-couple" source="crise-couple-hub-banner-mid" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-8">Questions Fréquentes sur les Crises de Couple</h2>

@@ -119,7 +119,7 @@ export default function NouvelleRencontreHubPage() {
           </div>
         </section>
 
-        <VoyantQuickCTA topic="nouvelle-rencontre" source="nouvelle-rencontre-hub-early" />
+        <VoyantRecommendations topic="nouvelle-rencontre" limit={3} showOnlineFirst={true} source="nouvelle-rencontre-hub-cards-top" />
 
         {/* Dating apps angle */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
@@ -258,7 +258,7 @@ export default function NouvelleRencontreHubPage() {
           </div>
         </section>
 
-        <VoyantRecommendations topic="nouvelle-rencontre" limit={3} showOnlineFirst={true} source="nouvelle-rencontre-hub-mid" />
+        <VoyantQuickCTA topic="nouvelle-rencontre" source="nouvelle-rencontre-hub-banner-mid" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-8">Questions Fréquentes sur les Nouvelles Rencontres</h2>

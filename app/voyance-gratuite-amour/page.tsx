@@ -82,7 +82,7 @@ export default function VoyanceGratuiteAmourHubPage() {
       <div className="max-w-6xl mx-auto px-4 py-12">
         <EEATSignal colorScheme="green" method="Tarot, oracle et guidance gratuite" />
 
-        <VoyantQuickCTA topic="voyance-gratuite" source="voyance-gratuite-hub-early" />
+        <VoyantRecommendations topic="voyance-gratuite" limit={3} showOnlineFirst={true} source="voyance-gratuite-amour-hub-cards-top" />
 
         <section className="mb-16">
           <h2 className="text-3xl font-bold mb-8 text-center">🗺️ Nos Guidances Gratuites</h2>
@@ -153,7 +153,7 @@ export default function VoyanceGratuiteAmourHubPage() {
           </div>
         </section>
 
-        <VoyantRecommendations topic="voyance-gratuite" limit={3} showOnlineFirst={true} source="voyance-gratuite-hub-mid" />
+        <VoyantQuickCTA topic="voyance-gratuite" source="voyance-gratuite-amour-hub-banner-mid" />
 
         <section className="bg-white rounded-xl p-8 mb-12">
           <h2 className="text-3xl font-bold mb-6">🔮 Comprendre la Voyance Gratuite Amour</h2>

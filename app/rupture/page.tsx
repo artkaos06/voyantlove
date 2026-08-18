@@ -64,7 +64,7 @@ export default function RuptureHubPage() {
 
       <div className="max-w-6xl mx-auto px-4 py-12">
         <EEATSignal colorScheme="red" method="Tarot de guérison et accompagnement post-rupture" />
-        <VoyantQuickCTA topic="rupture" source="rupture-hub-early" />
+        <VoyantRecommendations topic="rupture" limit={3} showOnlineFirst={true} source="rupture-hub-cards-top" />
         <section className="mb-16">
           <h2 className="text-3xl font-bold mb-8 text-center">🗺️ Votre Parcours de Guérison</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le parcours de guérison après une rupture passe par six étapes clés : comprendre la séparation, traverser le chagrin, oublier son ex, guérir en profondeur, surmonter un amour non partagé et renaître après le deuil amoureux.</p>
@@ -169,7 +169,7 @@ export default function RuptureHubPage() {
           </div>
         </section>
 
-        <VoyantRecommendations topic="rupture" limit={3} showOnlineFirst={true} source="rupture-hub-mid" />
+        <VoyantQuickCTA topic="rupture" source="rupture-hub-banner-mid" />
 
         <section className="bg-white rounded-xl p-8 mb-12">
           <h2 className="text-3xl font-bold mb-6">🔮 Ce que la Voyance Révèle sur la Rupture</h2>

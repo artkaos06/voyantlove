@@ -65,7 +65,7 @@ export default function ReconqueteHubPage() {
       <div className="max-w-6xl mx-auto px-4 py-12">
         <EEATSignal colorScheme="purple" method="Tarot de reconquête et guidance stratégique" />
 
-        <VoyantQuickCTA topic="reconquete" source="reconquete-hub-early" />
+        <VoyantRecommendations topic="reconquete" limit={3} showOnlineFirst={true} source="reconquete-hub-cards-top" />
 
         <section className="mb-16">
           <h2 className="text-3xl font-bold mb-8 text-center">🗺️ Votre Parcours de Reconquête</h2>
@@ -172,7 +172,7 @@ export default function ReconqueteHubPage() {
           </div>
         </section>
 
-        <VoyantRecommendations topic="reconquete" limit={3} showOnlineFirst={true} source="reconquete-hub-mid" />
+        <VoyantQuickCTA topic="reconquete" source="reconquete-hub-banner-mid" />
 
         <section className="bg-white rounded-xl p-8 mb-12">
           <h2 className="text-3xl font-bold mb-8">Questions Fréquentes sur la Reconquête Amoureuse</h2>

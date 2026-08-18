@@ -65,7 +65,7 @@ export default function SentimentsHubPage() {
       <div className="max-w-6xl mx-auto px-4 py-12">
         <EEATSignal colorScheme="rose" method="Tarot des sentiments et clairvoyance émotionnelle" />
 
-        <VoyantQuickCTA topic="sentiments" source="sentiments-hub-early" />
+        <VoyantRecommendations topic="sentiments" limit={3} showOnlineFirst={true} source="sentiments-hub-cards-top" />
 
         <section className="mb-16">
           <h2 className="text-3xl font-bold mb-8 text-center">🗺️ Comprendre vos Sentiments</h2>
@@ -150,7 +150,7 @@ export default function SentimentsHubPage() {
           </div>
         </section>
 
-        <VoyantRecommendations topic="sentiments" limit={3} showOnlineFirst={true} source="sentiments-hub-mid" />
+        <VoyantQuickCTA topic="sentiments" source="sentiments-hub-banner-mid" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-8">Questions Fréquentes sur les Sentiments Amoureux</h2>

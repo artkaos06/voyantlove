@@ -74,7 +74,7 @@ export default function MethodesVoyanceHubPage() {
           </p>
         </div>
 
-        <VoyantQuickCTA topic="methodes-voyance" source="methodes-voyance-hub-early" />
+        <VoyantRecommendations topic="methodes-voyance" limit={3} showOnlineFirst={true} source="methodes-voyance-hub-cards-top" />
 
         <section className="mb-16">
           <h2 className="text-3xl font-bold mb-8 text-center">🗺️ Nos Méthodes de Voyance</h2>
@@ -217,7 +217,7 @@ export default function MethodesVoyanceHubPage() {
           </div>
         </section>
 
-        <VoyantRecommendations topic="methodes-voyance" limit={3} showOnlineFirst={true} source="methodes-voyance-hub-mid" />
+        <VoyantQuickCTA topic="methodes-voyance" source="methodes-voyance-hub-banner-mid" />
 
         <section className="bg-white rounded-xl p-8 mb-12">
           <h2 className="text-3xl font-bold mb-6">🔮 Choisir la Bonne Méthode de Voyance</h2>
