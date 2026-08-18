@@ -111,13 +111,6 @@ export default function FloatingConsultCTA() {
 
   const visible = shouldShowFloatingCta({ pastIntro, atEnd, ccOpen });
 
-  if (!shouldRenderFloatingCta({ pathname, dismissed, loading, voyantCount: voyants.length })) return null;
-
-  const topic = topicForPath(pathname);
-  const source = `floating-cta-${topic}`;
-  const voyant = voyants[0];
-  const affiliateLink = getAffiliateLink(voyant.ID, source);
-
   // One-shot entrance emphasis: a single subtle scale+glow the moment the bar
   // first slides in, then it settles for good. Deliberately NOT a looping pulse
   // — the money event here is a paid consultation, not a click, so permanent
@@ -139,6 +132,13 @@ export default function FloatingConsultCTA() {
     const t = setTimeout(() => setEmphasise(false), 950);
     return () => clearTimeout(t);
   }, [visible]);
+
+  if (!shouldRenderFloatingCta({ pathname, dismissed, loading, voyantCount: voyants.length })) return null;
+
+  const topic = topicForPath(pathname);
+  const source = `floating-cta-${topic}`;
+  const voyant = voyants[0];
+  const affiliateLink = getAffiliateLink(voyant.ID, source);
 
   const onClick = () => {
     trackAffiliateClick(voyant.ID, source, voyant.VOYANT);
