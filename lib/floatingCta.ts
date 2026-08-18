@@ -67,3 +67,16 @@ export function shouldRenderFloatingCta(o: {
   if (o.loading) return false;
   return o.voyantCount > 0;
 }
+
+/**
+ * One-shot entrance emphasis gate.
+ *
+ * The bar's CTA gets a single scale+glow when it first appears. The failure
+ * mode worth guarding is re-firing: `visible` flips back to true every time the
+ * reader scrolls up past the footer, so keying the animation off `visible`
+ * alone would produce a repeating pulse — precisely the looping behaviour this
+ * was designed not to be. `hasFired` makes it once per page view.
+ */
+export function shouldEmphasiseNow(hasFired: boolean, visible: boolean): boolean {
+  return visible && !hasFired;
+}

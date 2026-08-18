@@ -34,6 +34,7 @@ import { trackAffiliateClick } from '@/lib/glyphex';
 import { useVoyants } from '@/lib/useVoyants';
 import {
   topicForPath, isExcludedPath, shouldShowFloatingCta, shouldRenderFloatingCta,
+  shouldEmphasiseNow,
   FLOATING_CTA_DISMISS_KEY as DISMISS_KEY,
 } from '@/lib/floatingCta';
 
@@ -132,7 +133,7 @@ export default function FloatingConsultCTA() {
   const emphasisedRef = useRef(false);
 
   useEffect(() => {
-    if (!visible || emphasisedRef.current) return;
+    if (!shouldEmphasiseNow(emphasisedRef.current, visible)) return;
     emphasisedRef.current = true;
     setEmphasise(true);
     const t = setTimeout(() => setEmphasise(false), 950);

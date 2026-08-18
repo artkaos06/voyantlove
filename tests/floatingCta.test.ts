@@ -4,6 +4,7 @@ import test from 'node:test';
 import {
   FLOATING_CTA_DISMISS_KEY,
   isExcludedPath,
+  shouldEmphasiseNow,
   shouldRenderFloatingCta,
   shouldShowFloatingCta,
   topicForPath,
@@ -94,3 +95,17 @@ test('never renders on an excluded route even with voyants live', () => {
   assert.equal(shouldRenderFloatingCta({ ...base, pathname: '/lp/voyant-direct' }), false);
 });
 
+
+test('entrance emphasis fires on first appearance', () => {
+  assert.equal(shouldEmphasiseNow(false, true), true);
+});
+
+test('entrance emphasis does not fire before the bar appears', () => {
+  assert.equal(shouldEmphasiseNow(false, false), false);
+});
+
+test('entrance emphasis never re-fires — scrolling back up must not re-pulse', () => {
+  // hasFired stays true for the page view, so every later `visible` is a no-op.
+  assert.equal(shouldEmphasiseNow(true, true), false);
+  assert.equal(shouldEmphasiseNow(true, false), false);
+});
