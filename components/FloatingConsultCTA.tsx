@@ -27,7 +27,7 @@
 //   4. Appearing instantly. It waits for real reading depth, so it reads as a
 //      helpful follow-up rather than an interstitial.
 
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { usePathname } from 'next/navigation';
 import { getAffiliateLink } from '@/lib/voyants';
 import { trackAffiliateClick } from '@/lib/glyphex';
@@ -117,6 +117,28 @@ export default function FloatingConsultCTA() {
   const voyant = voyants[0];
   const affiliateLink = getAffiliateLink(voyant.ID, source);
 
+  // One-shot entrance emphasis: a single subtle scale+glow the moment the bar
+  // first slides in, then it settles for good. Deliberately NOT a looping pulse
+  // — the money event here is a paid consultation, not a click, so permanent
+  // motion would buy extra low-intent clicks while a reader is part-way through
+  // an article about a breakup or a divorce. Every other animation in this
+  // codebase is a status dot or a loading state, never a CTA; this keeps that
+  // line intact while still marking the arrival.
+  //
+  // emphasisedRef makes it fire ONCE per page view. Keying off `visible` alone
+  // would re-fire every time the reader scrolls back up past the footer, which
+  // is a repeating pulse wearing a disguise.
+  const [emphasise, setEmphasise] = useState(false);
+  const emphasisedRef = useRef(false);
+
+  useEffect(() => {
+    if (!visible || emphasisedRef.current) return;
+    emphasisedRef.current = true;
+    setEmphasise(true);
+    const t = setTimeout(() => setEmphasise(false), 950);
+    return () => clearTimeout(t);
+  }, [visible]);
+
   const onClick = () => {
     trackAffiliateClick(voyant.ID, source, voyant.VOYANT);
     window.dataLayer?.push({ event: 'cta_click', cta_label: `floating-cta-${topic}` });
@@ -134,6 +156,15 @@ export default function FloatingConsultCTA() {
       }`}
       aria-hidden={!visible}
     >
+      <style dangerouslySetInnerHTML={{ __html: `
+@keyframes vlCtaEnter{
+  0%{transform:scale(1);box-shadow:0 4px 6px -1px rgba(0,0,0,.1)}
+  35%{transform:scale(1.045);box-shadow:0 0 0 7px rgba(147,51,234,.16)}
+  100%{transform:scale(1);box-shadow:0 4px 6px -1px rgba(0,0,0,.1)}
+}
+.vl-cta-enter{animation:vlCtaEnter 900ms ease-out 1}
+@media(prefers-reduced-motion:reduce){.vl-cta-enter{animation:none}}
+` }} />
       <div className="mx-auto max-w-4xl px-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))]">
         <div className="flex items-center gap-3 rounded-2xl border border-purple-200 bg-white/95 p-3 shadow-2xl backdrop-blur">
           <div className="hidden sm:block flex-1 min-w-0">
@@ -149,7 +180,7 @@ export default function FloatingConsultCTA() {
             target="_blank"
             rel="noopener noreferrer sponsored"
             onClick={onClick}
-            className="flex-1 sm:flex-none flex min-h-[48px] items-center justify-center rounded-xl bg-gradient-to-r from-purple-600 to-indigo-600 px-6 text-sm font-bold text-white shadow-md transition hover:from-purple-700 hover:to-indigo-700 motion-reduce:transition-none"
+            className={`flex-1 sm:flex-none flex min-h-[48px] items-center justify-center rounded-xl bg-gradient-to-r from-purple-600 to-indigo-600 px-6 text-sm font-bold text-white shadow-md transition hover:from-purple-700 hover:to-indigo-700 motion-reduce:transition-none ${emphasise ? 'vl-cta-enter' : ''}`}
           >
             🔮 Consulter un voyant
           </a>
