@@ -62,7 +62,7 @@ const config: ContentPageConfig = {
     { href: '/reconquete/ex-chaud-et-froid-apres-separation/', label: 'Mon Ex est Chaud et Froid' },
     { href: '/reconquete/veut-se-remettre-ensemble-mais-ne-fait-rien/', label: 'Il Veut se Remettre Ensemble mais ne Fait Rien' },
     { href: '/reconquete/ex-revient-silence-radio/', label: 'Ex qui Revient après Silence Radio' },
-    { href: '/reconquete/dois-je-attendre-son-retour/', label: 'Dois-je l\'Attendre ?' },
+    { href: '/reconquete/dois-je-attendre-son-retour/', label: 'Dois-je attendre le retour de mon ex ?' },
   ],
 };
 

@@ -59,7 +59,7 @@ const config: ContentPageConfig = {
   ],
   related: [
     { href: '/reconquete/', label: 'Reconquête Amoureuse : Toutes nos Guidances' },
-    { href: '/reconquete/dois-je-attendre-son-retour/', label: 'Dois-je l\'Attendre ?' },
+    { href: '/reconquete/dois-je-attendre-son-retour/', label: 'Dois-je attendre le retour de mon ex ?' },
     { href: '/reconquete/se-remettre-ensemble/', label: 'Se Remettre Ensemble : Les 5 Étapes' },
     { href: '/reconquete/va-t-il-elle-revenir/', label: 'Va-t-il/elle Revenir ?' },
     { href: '/crise-couple/dependance-affective/', label: 'Reconnaître la Dépendance Affective' },

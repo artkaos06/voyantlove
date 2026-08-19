@@ -4,7 +4,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Dois-je l\'Attendre ? Voyance Retour de Mon Ex',
+  title: 'Dois-je attendre le retour de mon ex ? Réponse du tarot',
   description: 'Faut-il attendre le retour de votre ex ? Le tarot révèle les signes qui indiquent si l\'attente en vaut la peine, et combien de temps patienter.',
   url: 'https://www.voyantlove.fr/reconquete/dois-je-attendre-son-retour/',
   keywords: ['dois-je attendre mon ex', 'faut-il attendre son retour', 'attendre le retour voyance', 'combien de temps attendre ex', 'tarot attente reconquête'],
@@ -13,11 +13,11 @@ const config: ContentPageConfig = {
   breadcrumb: [
     { name: 'Accueil', url: 'https://www.voyantlove.fr' },
     { name: 'Reconquête', url: 'https://www.voyantlove.fr/reconquete/' },
-    { name: 'Dois-je l\'Attendre ?', url: 'https://www.voyantlove.fr/reconquete/dois-je-attendre-son-retour/' },
+    { name: 'Dois-je attendre le retour de mon ex ?', url: 'https://www.voyantlove.fr/reconquete/dois-je-attendre-son-retour/' },
   ],
   header: {
     emoji: '⏳',
-    h1: 'Dois-je l\'Attendre ?',
+    h1: 'Dois-je attendre le retour de mon ex ?',
     subtitle: 'Le tarot révèle si l\'attente de son retour en vaut vraiment la peine',
     gradient: 'from-violet-600 via-purple-600 to-indigo-600',
     backLink: { href: '/reconquete/', label: 'Retour à la Reconquête' },
