@@ -4,7 +4,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'M\'aime-t-il/elle Vraiment ? Tarot et Voyance des Sentiments',
+  title: 'M\'aime-t-il/elle vraiment ? Tarot et voyance des sentiments',
   description: 'Découvrez ses vrais sentiments grâce au tarot et à la voyance. M\'aime-t-il/elle vraiment ? Pense-t-il/elle à moi ? Que ressent-il/elle ?',
   url: 'https://www.voyantlove.fr/sentiments/maime-t-il-elle/',
   keywords: ['m\'aime-t-il', 'ses sentiments', 'vrais sentiments tarot', 'pense-t-il à moi', 'décrypter sentiments'],
@@ -17,18 +17,18 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: '💖',
-    h1: 'M\'aime-t-il/elle Vraiment ?',
+    h1: 'M\'aime-t-il/elle vraiment ?',
     subtitle: 'Décryptez ses vrais sentiments grâce au tarot et à la voyance',
     gradient: 'from-red-500 via-pink-500 to-rose-500',
-    backLink: { href: '/sentiments/', label: 'Retour aux Sentiments' },
+    backLink: { href: '/sentiments/', label: 'Retour aux sentiments' },
     anchors: [
-      { href: '#consultation', label: 'Décryptage des Sentiments', primary: true },
-      { href: '#signes', label: 'Voir les Signes d\'Amour' },
+      { href: '#consultation', label: 'Décryptage des sentiments', primary: true },
+      { href: '#signes', label: 'Voir les signes d\'amour' },
     ],
   },
   accentText: 'text-red-600',
   stats: [
-    { icon: '⭐', value: '4.8/5', label: '287 avis' },
+    { icon: '⭐', value: '4.8/5', label: '287 Avis' },
     { icon: '💝', value: 'Grande', label: 'Clarté obtenue' },
     { icon: '🎯', value: 'Reconnue', label: 'Expertise' },
     { icon: '🔒', value: '100%', label: 'Confidentiel' },
@@ -66,11 +66,11 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/sentiments/', label: 'Sentiments Amoureux : Toutes nos Guidances' },
-    { href: '/sentiments/signes-il-elle-maime/', label: 'Les Signes qu\'il/elle M\'aime' },
-    { href: '/nouvelle-rencontre/signes-ame-soeur/', label: 'Notre Compatibilité Amoureuse' },
-    { href: '/sentiments/avenir-amoureux/', label: 'Mon Avenir avec lui/elle' },
-    { href: '/reconquete/va-t-il-elle-revenir/', label: 'S\'il s\'agit d\'un Ex' },
+    { href: '/sentiments/', label: 'Sentiments amoureux : toutes nos guidances' },
+    { href: '/sentiments/signes-il-elle-maime/', label: 'Les signes qu\'il/elle m\'aime' },
+    { href: '/nouvelle-rencontre/signes-ame-soeur/', label: 'Notre compatibilité amoureuse' },
+    { href: '/sentiments/avenir-amoureux/', label: 'Mon avenir avec lui/elle' },
+    { href: '/reconquete/va-t-il-elle-revenir/', label: 'S\'il s\'agit d\'un ex' },
   ],
 };
 

@@ -8,7 +8,7 @@ import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 import OracleDraw from '@/components/OracleDraw';
 
 export const metadata: Metadata = {
-  title: 'Oracle Gratuit Amour : Belline, Gé et Guidance Sentimentale',
+  title: 'Oracle gratuit amour : belline, gé et guidance sentimentale',
   description: 'Oracle amour gratuit : guidance sentimentale par Oracle Belline, Gé et des Anges. Quel oracle pour votre question amoureuse ?',
   keywords: ['oracle gratuit amour', 'oracle amour gratuit', 'oracle belline amour gratuit'],
   alternates: {
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 
 export default function OracleGratuitAmourPage() {
   const articleSchema = getArticleSchema({
-    title: 'Oracle Gratuit Amour : Belline, Gé et Guidance Sentimentale',
+    title: 'Oracle gratuit amour : belline, gé et guidance sentimentale',
     description: 'Oracle amour gratuit : guidance sentimentale par Oracle Belline, Gé et des Anges. Quel oracle pour votre question amoureuse ?',
     url: 'https://www.voyantlove.fr/voyance-gratuite-amour/oracle-gratuit-amour/',
     datePublished: '2026-03-10',
@@ -76,7 +76,7 @@ export default function OracleGratuitAmourPage() {
       <header className="bg-gradient-to-r from-teal-500 via-emerald-500 to-green-500 text-white py-16 px-4">
         <div className="max-w-4xl mx-auto">
           <Link href="/voyance-gratuite-amour/" className="text-white/80 hover:text-white mb-4 inline-block">&larr; Retour &agrave; Voyance Gratuite Amour</Link>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">&#x1F52E; Oracle Gratuit Amour</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">&#x1F52E; Oracle gratuit amour</h1>
           <p className="text-xl opacity-95 mb-6">Belline, G&eacute; et Guidance Sentimentale pour &eacute;clairer votre c&oelig;ur</p>
           <div className="flex gap-4 flex-wrap">
             <a href="#consultation" className="bg-white text-teal-600 px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition">Consultation Oracle</a>

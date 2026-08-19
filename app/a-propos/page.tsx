@@ -3,14 +3,14 @@ import Link from 'next/link';
 import { getWebPageSchema, getBreadcrumbSchema, getOrganizationSchema, getAuthorSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
-  title: 'À Propos de VoyantLove, Notre Mission et Notre Équipe',
+  title: 'À propos de VoyantLove, notre mission et notre équipe',
   description: 'Découvrez l\'équipe VoyantLove : notre mission, nos valeurs, notre processus de sélection des voyants et notre engagement pour une voyance amoureuse éthique et fiable.',
   alternates: { canonical: 'https://www.voyantlove.fr/a-propos/' },
 };
 
 export default function AProposPage() {
   const webPageSchema = getWebPageSchema({
-    title: 'À Propos de VoyantLove, Notre Mission et Notre Équipe',
+    title: 'À propos de VoyantLove, notre mission et notre équipe',
     description: 'Découvrez l\'équipe VoyantLove : notre mission, nos valeurs, notre processus de sélection des voyants et notre engagement pour une voyance amoureuse éthique et fiable.',
     url: 'https://www.voyantlove.fr/a-propos/',
   });
@@ -46,7 +46,7 @@ export default function AProposPage() {
       <header className="bg-gradient-to-r from-purple-700 via-purple-600 to-indigo-700 text-white py-16 px-4">
         <div className="max-w-4xl mx-auto">
           <Link href="/" className="text-white/80 hover:text-white mb-4 inline-block">&larr; Retour &agrave; l&apos;accueil</Link>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">À Propos de VoyantLove</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">À propos de VoyantLove</h1>
           <p className="text-xl opacity-95">Notre mission : une voyance amoureuse éthique, fiable et accessible</p>
         </div>
       </header>

@@ -4,7 +4,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Amour Non Partagé : Comprendre et Surmonter un Amour à Sens Unique',
+  title: 'Amour non partagé : comprendre et surmonter un amour à sens unique',
   description: 'Comment surmonter un amour non partagé ? Découvrez les causes, les signes d’un amour non réciproque, le rôle du tarot et les étapes pour s’ouvrir à un amour véritable.',
   url: 'https://www.voyantlove.fr/rupture/amour-non-partage/',
   keywords: ['amour non partagé', 'amour à sens unique', 'amour non réciproque', 'surmonter rejet amoureux', 'voyance sentiments'],
@@ -17,13 +17,13 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: '💜',
-    h1: 'Amour Non Partagé',
+    h1: 'Amour non partagé',
     subtitle: 'Comprendre et surmonter un amour à sens unique grâce à la voyance sentimentale',
     gradient: 'from-rose-500 via-pink-500 to-fuchsia-500',
-    backLink: { href: '/rupture/', label: 'Retour aux Ruptures Amoureuses' },
+    backLink: { href: '/rupture/', label: 'Retour aux ruptures amoureuses' },
     anchors: [
-      { href: '#consultation', label: 'Guidance Sentimentale', primary: true },
-      { href: '#signes', label: 'Les Signes Révélateurs' },
+      { href: '#consultation', label: 'Guidance sentimentale', primary: true },
+      { href: '#signes', label: 'Les signes révélateurs' },
     ],
   },
   accentText: 'text-rose-600',
@@ -58,11 +58,11 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/sentiments/maime-t-il-elle/', label: 'M\'aime-t-il/elle Vraiment ?' },
-    { href: '/rupture/oublier-son-ex/', label: 'Comment Oublier son Ex' },
-    { href: '/nouvelle-rencontre/trouver-ame-soeur/', label: 'Trouver son Âme Sœur' },
-    { href: '/sentiments/pense-t-il-elle-a-moi/', label: 'Pense-t-il/elle à Moi ?' },
-    { href: '/rupture/chagrin-damour/', label: 'Surmonter un Chagrin d\'Amour' },
+    { href: '/sentiments/maime-t-il-elle/', label: 'M\'aime-t-il/elle vraiment ?' },
+    { href: '/rupture/oublier-son-ex/', label: 'Comment oublier son ex' },
+    { href: '/nouvelle-rencontre/trouver-ame-soeur/', label: 'Trouver son âme sœur' },
+    { href: '/sentiments/pense-t-il-elle-a-moi/', label: 'Pense-t-il/elle à moi ?' },
+    { href: '/rupture/chagrin-damour/', label: 'Surmonter un chagrin d\'amour' },
   ],
 };
 

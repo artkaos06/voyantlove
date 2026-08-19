@@ -4,7 +4,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Trouver son Âme Sœur : Guide Tarot et Voyance',
+  title: 'Trouver son âme sœur : guide Tarot et voyance',
   description: 'Comment trouver votre âme sœur selon le tarot et la destinée. Signes de reconnaissance, timing, préparation intérieure et guidance spirituelle complète.',
   url: 'https://www.voyantlove.fr/nouvelle-rencontre/trouver-ame-soeur/',
   keywords: ['trouver âme sœur', 'âme sœur tarot', 'connexion âme', 'flamme jumelle', 'destin amoureux'],
@@ -17,13 +17,13 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: '💫',
-    h1: 'Trouver son Âme Sœur',
+    h1: 'Trouver son âme sœur',
     subtitle: 'Guide complet pour reconnaître et attirer votre connexion spirituelle',
     gradient: 'from-purple-500 via-indigo-500 to-blue-500',
-    backLink: { href: '/nouvelle-rencontre/', label: 'Retour aux Nouvelles Rencontres' },
+    backLink: { href: '/nouvelle-rencontre/', label: 'Retour aux nouvelles rencontres' },
     anchors: [
-      { href: '#consultation', label: 'Tirage Âme Sœur', primary: true },
-      { href: '#signes', label: 'Les 15 Signes' },
+      { href: '#consultation', label: 'Tirage âme sœur', primary: true },
+      { href: '#signes', label: 'Les 15 signes' },
     ],
   },
   accentText: 'text-indigo-600',
@@ -31,7 +31,7 @@ const config: ContentPageConfig = {
     { icon: '💫', value: 'Élevée', label: 'Reconnexion' },
     { icon: '🔮', value: '18 mois', label: 'Délai moyen' },
     { icon: '✨', value: '4,200+', label: 'Unions guidées' },
-    { icon: '⭐', value: '4.8/5', label: '398 avis' },
+    { icon: '⭐', value: '4.8/5', label: '398 Avis' },
   ],
   eeat: { colorScheme: 'purple', method: 'Guidance spirituelle et lecture tarot des âmes sœurs' },
   cta: { topic: 'nouvelle-rencontre', slug: 'trouver-ame-soeur' },
@@ -62,9 +62,9 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/nouvelle-rencontre/', label: 'Nouvelle Rencontre Amoureuse : Toutes nos Guidances' },
-    { href: '/nouvelle-rencontre/quand-rencontre-amour/', label: 'Quand Vais-je Rencontrer l\'Amour ?' },
-    { href: '/sentiments/avenir-amoureux/', label: 'Mon Avenir Amoureux' },
+    { href: '/nouvelle-rencontre/', label: 'Nouvelle rencontre amoureuse : toutes nos guidances' },
+    { href: '/nouvelle-rencontre/quand-rencontre-amour/', label: 'Quand vais-je rencontrer l\'amour ?' },
+    { href: '/sentiments/avenir-amoureux/', label: 'Mon avenir amoureux' },
     { href: '/sentiments/signes-il-elle-maime/', label: 'Signes qu\'il/elle m\'aime' },
   ],
 };

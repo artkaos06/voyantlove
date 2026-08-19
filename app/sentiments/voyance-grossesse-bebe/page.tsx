@@ -3,7 +3,7 @@ import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Voyance Grossesse : Vais-Je Avoir un Enfant ? Prédictions',
+  title: 'Voyance grossesse : vais-Je avoir un enfant ? prédictions',
   description: 'Vous vous demandez si vous allez avoir un enfant ? La voyance grossesse révèle les perspectives de maternité, les périodes favorables et les signes spirituels d\'une naissance.',
   url: 'https://www.voyantlove.fr/sentiments/voyance-grossesse-bebe/',
   keywords: ['voyance grossesse', 'vais-je avoir un enfant', 'voyance bébé', 'voyance maternité', 'prédiction grossesse'],
@@ -16,13 +16,13 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: '👶',
-    h1: 'Voyance Grossesse',
+    h1: 'Voyance grossesse',
     subtitle: 'Vais-Je Avoir un Enfant ?',
     gradient: 'from-pink-500 via-rose-500 to-orange-500',
-    backLink: { href: '/sentiments/', label: 'Retour aux Sentiments & Avenir' },
+    backLink: { href: '/sentiments/', label: 'Retour aux sentiments & avenir' },
     anchors: [
-      { href: '#cartes', label: 'Les Cartes de la Grossesse', primary: true },
-      { href: '#periodes', label: 'Périodes Favorables' },
+      { href: '#cartes', label: 'Les cartes de la grossesse', primary: true },
+      { href: '#periodes', label: 'Périodes favorables' },
     ],
   },
   accentText: 'text-pink-600',
@@ -53,10 +53,10 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/sentiments/', label: 'Sentiments & Avenir : Toutes nos Guidances' },
-    { href: '/sentiments/avenir-amoureux/', label: 'Mon Avenir Sentimental : Guidance Complète' },
-    { href: '/sentiments/maime-t-il-elle/', label: 'Les Sentiments de mon Partenaire : Analyse Tarot' },
-    { href: '/methodes-voyance/tirage-tarot-amour/', label: 'Tirage Tarot Amour : Guide Complet' },
+    { href: '/sentiments/', label: 'Sentiments & avenir : toutes nos guidances' },
+    { href: '/sentiments/avenir-amoureux/', label: 'Mon avenir sentimental : guidance complète' },
+    { href: '/sentiments/maime-t-il-elle/', label: 'Les sentiments de mon partenaire : analyse Tarot' },
+    { href: '/methodes-voyance/tirage-tarot-amour/', label: 'Tirage Tarot amour : guide complet' },
   ],
 };
 

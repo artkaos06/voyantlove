@@ -4,7 +4,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Pardonner en Amour : Le Chemin vers la Guérison',
+  title: 'Pardonner en amour : le chemin vers la guérison',
   description: 'Comment pardonner en amour et reconstruire la confiance dans votre couple. Guidance voyance et tarot pour le pardon authentique et la guérison.',
   url: 'https://www.voyantlove.fr/crise-couple/pardonner-en-amour/',
   keywords: ['pardonner en amour', 'pardon couple', 'reconstruire confiance', 'pardon trahison', 'voyance pardon'],
@@ -17,17 +17,17 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: '🕊️',
-    h1: 'Pardonner en Amour : Le Chemin vers la Guérison',
+    h1: 'Pardonner en amour : le chemin vers la guérison',
     subtitle: 'Guidance voyance et tarot pour le pardon authentique et la reconstruction',
     gradient: 'from-amber-500 via-orange-500 to-amber-600',
-    backLink: { href: '/crise-couple/', label: 'Crise de Couple' },
+    backLink: { href: '/crise-couple/', label: 'Crise de couple' },
     anchors: [
-      { href: '#consultation', label: 'Consultation Pardon', primary: true },
+      { href: '#consultation', label: 'Consultation pardon', primary: true },
     ],
   },
   accentText: 'text-amber-600',
   stats: [
-    { icon: '⭐', value: '4.8/5', label: '264 avis' },
+    { icon: '⭐', value: '4.8/5', label: '264 Avis' },
     { icon: '🕊️', value: '84%', label: 'Ont pardonné' },
     { icon: '⏰', value: '30 min', label: 'Consultation' },
     { icon: '🔮', value: '15 ans', label: 'Expérience' },
@@ -53,9 +53,9 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/crise-couple/infidelite-couple/', label: 'Infidélité dans le Couple' },
-    { href: '/crise-couple/sauver-son-couple/', label: 'Sauver son Couple' },
-    { href: '/crise-couple/reconnecter-son-couple/', label: 'Reconnecter son Couple' },
+    { href: '/crise-couple/infidelite-couple/', label: 'Infidélité dans le couple' },
+    { href: '/crise-couple/sauver-son-couple/', label: 'Sauver son couple' },
+    { href: '/crise-couple/reconnecter-son-couple/', label: 'Reconnecter son couple' },
   ],
 };
 

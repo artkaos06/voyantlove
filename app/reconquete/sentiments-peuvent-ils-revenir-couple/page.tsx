@@ -4,7 +4,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Les Sentiments Peuvent-ils Revenir dans un Couple ?',
+  title: 'Les sentiments peuvent-ils revenir dans un couple ?',
   description: 'Perte de sentiments annoncée : peuvent-ils revenir ? Conditions réelles de reconnexion, faux signes à éviter et comportements qui éloignent davantage.',
   url: 'https://www.voyantlove.fr/reconquete/sentiments-peuvent-ils-revenir-couple/',
   keywords: ['les sentiments peuvent-ils revenir dans un couple', 'peut-on retrouver ses sentiments pour quelqu\'un', 'mon mari ne m\'aime plus peut-il revenir', 'retrouver l\'amour après une séparation', 'il m\'aime mais ne veut plus être avec moi'],
@@ -17,20 +17,20 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: '💞',
-    h1: 'Les Sentiments Amoureux Peuvent-ils Revenir Après une Séparation ?',
+    h1: 'Les sentiments amoureux peuvent-ils revenir après une séparation ?',
     subtitle: 'Distinguer un espoir réel des faux signes qui entretiennent l\'attente',
     gradient: 'from-rose-600 via-pink-600 to-fuchsia-700',
-    backLink: { href: '/reconquete/', label: 'Retour à la Reconquête' },
+    backLink: { href: '/reconquete/', label: 'Retour à la reconquête' },
     anchors: [
-      { href: '#conditions', label: 'Conditions de Reconnexion', primary: true },
-      { href: '#actes', label: 'Les Actes qui Comptent' },
+      { href: '#conditions', label: 'Conditions de reconnexion', primary: true },
+      { href: '#actes', label: 'Les actes qui comptent' },
     ],
   },
   accentText: 'text-rose-700',
   stats: [
     { icon: '🔮', value: 'Reconnue', label: 'Expertise' },
     { icon: '💞', value: '3,300+', label: 'Consultations' },
-    { icon: '⭐', value: '4.7/5', label: '261 avis' },
+    { icon: '⭐', value: '4.7/5', label: '261 Avis' },
     { icon: '🔒', value: '100%', label: 'Confidentiel' },
   ],
   eeat: { colorScheme: 'rose', method: 'Guidance sur la reconnexion sentimentale et la perte de sentiments' },
@@ -58,11 +58,11 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/reconquete/', label: 'Reconquête Amoureuse : Toutes nos Guidances' },
-    { href: '/reconquete/se-remettre-ensemble/', label: 'Se Remettre Ensemble : les 5 Étapes' },
-    { href: '/reconquete/veut-se-remettre-ensemble-mais-ne-fait-rien/', label: 'Il Veut se Remettre Ensemble mais ne Fait Rien' },
-    { href: '/reconquete/separation-temporaire-ou-definitive/', label: 'Séparation Temporaire ou Définitive ?' },
-    { href: '/sentiments/sentiments-non-partages/', label: 'Sentiments Non Partagés' },
+    { href: '/reconquete/', label: 'Reconquête amoureuse : toutes nos guidances' },
+    { href: '/reconquete/se-remettre-ensemble/', label: 'Se remettre ensemble : les 5 étapes' },
+    { href: '/reconquete/veut-se-remettre-ensemble-mais-ne-fait-rien/', label: 'Il veut se remettre ensemble mais ne fait rien' },
+    { href: '/reconquete/separation-temporaire-ou-definitive/', label: 'Séparation temporaire ou définitive ?' },
+    { href: '/sentiments/sentiments-non-partages/', label: 'Sentiments non partagés' },
   ],
 };
 

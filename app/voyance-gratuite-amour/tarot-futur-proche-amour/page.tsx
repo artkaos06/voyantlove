@@ -8,7 +8,7 @@ import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 import TarotSpread from '@/components/TarotSpread';
 
 export const metadata: Metadata = {
-  title: 'Tarot Futur Proche Amour Gratuit : Tirage à Court Terme',
+  title: 'Tarot futur proche amour gratuit : tirage à court terme',
   description: 'Tarot futur proche amour gratuit : un tirage à trois cartes pour éclairer les prochaines semaines de votre vie sentimentale. Tirage en ligne immédiat.',
   keywords: ['tarot futur proche amour', 'tarot futur proche gratuit', 'tirage futur proche amour', 'tarot avenir proche amour', 'tarot court terme amour'],
   alternates: {
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 
 export default function TarotFuturProcheAmourPage() {
   const articleSchema = getArticleSchema({
-    title: 'Tarot Futur Proche Amour Gratuit : Tirage à Court Terme | VoyantLove',
+    title: 'Tarot futur proche amour gratuit : tirage à court terme | VoyantLove',
     description: 'Tarot futur proche amour gratuit : un tirage à trois cartes pour éclairer les prochaines semaines de votre vie sentimentale. Tirage en ligne immédiat.',
     url: 'https://www.voyantlove.fr/voyance-gratuite-amour/tarot-futur-proche-amour/',
     datePublished: '2026-08-07',
@@ -64,7 +64,7 @@ export default function TarotFuturProcheAmourPage() {
       <header className="bg-gradient-to-r from-teal-500 via-emerald-500 to-green-500 text-white py-16 px-4">
         <div className="max-w-4xl mx-auto">
           <Link href="/voyance-gratuite-amour/" className="text-white/80 hover:text-white mb-4 inline-block">&larr; Retour &agrave; Voyance Gratuite Amour</Link>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">🔭 Tarot Futur Proche Amour Gratuit</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">🔭 Tarot futur proche amour gratuit</h1>
           <p className="text-xl opacity-95 mb-6">Un tirage à trois cartes pour éclairer les prochaines semaines de votre vie sentimentale</p>
           <div className="flex gap-4 flex-wrap">
             <a href="#tirage" className="bg-white text-teal-600 px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition">Tirer les Cartes ↓</a>

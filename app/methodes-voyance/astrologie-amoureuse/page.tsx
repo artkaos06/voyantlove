@@ -4,7 +4,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Astrologie Amoureuse : Compatibilit\u00e9 Astrale et Pr\u00e9dictions',
+  title: 'Astrologie amoureuse : compatibilit\u00e9 astrale et pr\u00e9dictions',
   description: 'L\u2019astrologie amoureuse r\u00e9v\u00e8le votre compatibilit\u00e9 astrale, votre synastrie de couple et vos transits favorables. V\u00e9nus, Mars et les signes compatibles en amour.',
   url: 'https://www.voyantlove.fr/methodes-voyance/astrologie-amoureuse/',
   keywords: ['astrologie amoureuse', 'compatibilit\u00e9 astrale', 'synastrie couple', 'Venus astrologie', 'signes compatibles amour'],
@@ -17,13 +17,13 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: '⭐',
-    h1: 'Astrologie Amoureuse',
+    h1: 'Astrologie amoureuse',
     subtitle: 'Compatibilité astrale, synastrie de couple et prédictions sentimentales',
     gradient: 'from-violet-500 via-purple-500 to-indigo-500',
-    backLink: { href: '/methodes-voyance/', label: 'Retour aux Méthodes de Voyance' },
+    backLink: { href: '/methodes-voyance/', label: 'Retour aux méthodes de voyance' },
     anchors: [
-      { href: '#consultation', label: 'Analyse Astrale', primary: true },
-      { href: '#synastrie', label: 'Étude de Synastrie' },
+      { href: '#consultation', label: 'Analyse astrale', primary: true },
+      { href: '#synastrie', label: 'Étude de synastrie' },
     ],
   },
   accentText: 'text-violet-600',
@@ -58,11 +58,11 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/methodes-voyance/tirage-tarot-amour/', label: 'Tirage de Tarot Amoureux : Guide Complet' },
-    { href: '/methodes-voyance/oracle-amour/', label: 'Oracle de l\'Amour : Guidance Sentimentale' },
-    { href: '/sentiments/compatibilite-amoureuse/', label: 'Compatibilité Amoureuse : Êtes-vous Faits l\'Un pour l\'Autre ?' },
-    { href: '/nouvelle-rencontre/quand-rencontre-amour/', label: 'Quand Vais-je Rencontrer l\'Amour ?' },
-    { href: '/sentiments/avenir-amoureux/', label: 'Mon Avenir Amoureux : Prédictions' },
+    { href: '/methodes-voyance/tirage-tarot-amour/', label: 'Tirage de Tarot amoureux : guide complet' },
+    { href: '/methodes-voyance/oracle-amour/', label: 'Oracle de l\'amour : guidance sentimentale' },
+    { href: '/sentiments/compatibilite-amoureuse/', label: 'Compatibilité amoureuse : êtes-vous faits l\'un pour l\'autre ?' },
+    { href: '/nouvelle-rencontre/quand-rencontre-amour/', label: 'Quand vais-je rencontrer l\'amour ?' },
+    { href: '/sentiments/avenir-amoureux/', label: 'Mon avenir amoureux : prédictions' },
   ],
 };
 

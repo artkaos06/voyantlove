@@ -4,7 +4,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Quand Vais-je Rencontrer Quelqu\'un ? Prédiction Tarot et Voyance',
+  title: 'Quand vais-je rencontrer quelqu\'un ? prédiction Tarot et voyance',
   description: 'Quand allez-vous rencontrer l\'amour ou votre âme sœur ? Le tarot prédit le timing, le lieu, et le profil de votre prochaine rencontre amoureuse.',
   url: 'https://www.voyantlove.fr/nouvelle-rencontre/quand-rencontre-amour/',
   keywords: ['quand rencontre', 'rencontrer quelqu\'un', 'âme sœur timing', 'nouvelle rencontre tarot', 'prédiction rencontre'],
@@ -17,18 +17,18 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: '✨',
-    h1: 'Quand Vais-je Rencontrer l\'Amour ?',
+    h1: 'Quand vais-je rencontrer l\'amour ?',
     subtitle: 'Le tarot révèle le timing, le lieu et le profil de votre prochaine rencontre',
     gradient: 'from-cyan-500 via-blue-500 to-indigo-500',
-    backLink: { href: '/nouvelle-rencontre/', label: 'Retour aux Nouvelles Rencontres' },
+    backLink: { href: '/nouvelle-rencontre/', label: 'Retour aux nouvelles rencontres' },
     anchors: [
-      { href: '#consultation', label: 'Prédiction Timing', primary: true },
-      { href: '#profil', label: 'Profil de la Personne' },
+      { href: '#consultation', label: 'Prédiction timing', primary: true },
+      { href: '#profil', label: 'Profil de la personne' },
     ],
   },
   accentText: 'text-cyan-600',
   stats: [
-    { icon: '⭐', value: '4.8/5', label: '287 avis' },
+    { icon: '⭐', value: '4.8/5', label: '287 Avis' },
     { icon: '⏰', value: '6-9 mois', label: 'Délai moyen' },
     { icon: '💫', value: 'Forte', label: 'Fiabilité prédictions' },
     { icon: '🔮', value: 'Reconnue', label: 'Expertise profil' },
@@ -54,12 +54,12 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/sentiments/avenir-amoureux/', label: 'Mon Avenir Amoureux Global' },
-    { href: '/nouvelle-rencontre/trouver-ame-soeur/', label: 'Compatibilité avec ma Future Rencontre' },
-    { href: '/nouvelle-rencontre/signes-ame-soeur/', label: 'Reconnaître les Signes de l\'Âme Sœur' },
-    { href: '/rupture/oublier-son-ex/', label: 'Si je Dois d\'Abord Oublier mon Ex' },
-    { href: '/sentiments/maime-t-il-elle/', label: 'Savoir si cette Personne m\'Aime' },
-    { href: '/reconquete/reconquerir-son-ex/', label: 'Reconquérir son Ex avant une Nouvelle Rencontre' },
+    { href: '/sentiments/avenir-amoureux/', label: 'Mon avenir amoureux global' },
+    { href: '/nouvelle-rencontre/trouver-ame-soeur/', label: 'Compatibilité avec ma future rencontre' },
+    { href: '/nouvelle-rencontre/signes-ame-soeur/', label: 'Reconnaître les signes de l\'âme sœur' },
+    { href: '/rupture/oublier-son-ex/', label: 'Si je dois d\'abord oublier mon ex' },
+    { href: '/sentiments/maime-t-il-elle/', label: 'Savoir si cette personne m\'aime' },
+    { href: '/reconquete/reconquerir-son-ex/', label: 'Reconquérir son ex avant une nouvelle rencontre' },
   ],
 };
 

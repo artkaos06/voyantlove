@@ -4,7 +4,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Sauver son Couple : Solutions et Guidance Spirituelle | Voyance',
+  title: 'Sauver son couple : solutions et guidance spirituelle | voyance',
   description: 'Comment sauver votre couple en crise ? Le tarot révèle les solutions, les étapes de reconstruction et si votre relation peut être sauvée.',
   url: 'https://www.voyantlove.fr/crise-couple/sauver-son-couple/',
   keywords: ['sauver son couple', 'sauver couple en crise', 'reconstruire couple voyance', 'comment sauver mon couple', 'sauver relation amoureuse'],
@@ -17,13 +17,13 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: '💚',
-    h1: 'Sauver son Couple',
+    h1: 'Sauver son couple',
     subtitle: 'Solutions spirituelles, étapes de reconstruction et guidance par le tarot pour redonner vie à votre relation',
     gradient: 'from-green-600 via-emerald-600 to-teal-600',
-    backLink: { href: '/crise-couple/', label: 'Retour aux Crises de Couple' },
+    backLink: { href: '/crise-couple/', label: 'Retour aux crises de couple' },
     anchors: [
       { href: '#diagnostic', label: 'Diagnostic Tarot', primary: true },
-      { href: '#etapes', label: '5 Étapes de Reconstruction' },
+      { href: '#etapes', label: '5 Étapes de reconstruction' },
     ],
   },
   accentText: 'text-green-600',
@@ -58,12 +58,12 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/crise-couple/', label: 'Crises de Couple : Guide Complet' },
-    { href: '/crise-couple/infidelite-couple/', label: 'Infidélité dans le Couple : Trahison et Reconstruction' },
-    { href: '/crise-couple/problemes-communication-couple/', label: 'Problèmes de Communication dans le Couple' },
-    { href: '/crise-couple/jalousie-excessive/', label: 'Jalousie Excessive : Causes et Solutions' },
-    { href: '/reconquete/se-remettre-ensemble/', label: 'Se Remettre Ensemble avec son Ex' },
-    { href: '/sentiments/maime-t-il-elle/', label: 'M\'aime-t-il/elle Vraiment ?' },
+    { href: '/crise-couple/', label: 'Crises de couple : guide complet' },
+    { href: '/crise-couple/infidelite-couple/', label: 'Infidélité dans le couple : trahison et reconstruction' },
+    { href: '/crise-couple/problemes-communication-couple/', label: 'Problèmes de communication dans le couple' },
+    { href: '/crise-couple/jalousie-excessive/', label: 'Jalousie excessive : causes et solutions' },
+    { href: '/reconquete/se-remettre-ensemble/', label: 'Se remettre ensemble avec son ex' },
+    { href: '/sentiments/maime-t-il-elle/', label: 'M\'aime-t-il/elle vraiment ?' },
   ],
 };
 

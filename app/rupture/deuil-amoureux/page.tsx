@@ -4,7 +4,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Deuil Amoureux : Traverser la Perte et Renaître Grâce à la Voyance',
+  title: 'Deuil amoureux : traverser la perte et renaître grâce à la voyance',
   description: 'Comment traverser un deuil amoureux ? Découvrez les phases du deuil sentimental, la différence avec une rupture classique, le rôle du tarot et les clés de la renaissance.',
   url: 'https://www.voyantlove.fr/rupture/deuil-amoureux/',
   keywords: ['deuil amoureux', 'perte amoureuse', 'processus de deuil', 'guérison sentimentale', 'deuil sentimental', 'renaissance après deuil amoureux'],
@@ -17,13 +17,13 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: '🕊',
-    h1: 'Deuil Amoureux : Traverser la Perte et Renaître',
+    h1: 'Deuil amoureux : traverser la perte et renaître',
     subtitle: 'Comprendre le processus de deuil sentimental et retrouver le chemin de la renaissance',
     gradient: 'from-slate-600 via-gray-600 to-zinc-600',
-    backLink: { href: '/rupture/', label: 'Retour aux Ruptures Amoureuses' },
+    backLink: { href: '/rupture/', label: 'Retour aux ruptures amoureuses' },
     anchors: [
-      { href: '#consultation', label: 'Guidance de Renaissance', primary: true },
-      { href: '#phases', label: 'Les Phases du Deuil' },
+      { href: '#consultation', label: 'Guidance de renaissance', primary: true },
+      { href: '#phases', label: 'Les phases du deuil' },
     ],
   },
   accentText: 'text-slate-600',
@@ -58,11 +58,11 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/rupture/guerir-rupture/', label: 'Guérir d\'une Rupture Amoureuse' },
-    { href: '/rupture/chagrin-damour/', label: 'Surmonter un Chagrin d\'Amour' },
-    { href: '/rupture/oublier-son-ex/', label: 'Comment Oublier son Ex' },
-    { href: '/rupture/rupture-amoureuse/', label: 'Comprendre la Rupture Amoureuse' },
-    { href: '/rupture/amour-non-partage/', label: 'Amour Non Partagé : Comprendre et Surmonter' },
+    { href: '/rupture/guerir-rupture/', label: 'Guérir d\'une rupture amoureuse' },
+    { href: '/rupture/chagrin-damour/', label: 'Surmonter un chagrin d\'amour' },
+    { href: '/rupture/oublier-son-ex/', label: 'Comment oublier son ex' },
+    { href: '/rupture/rupture-amoureuse/', label: 'Comprendre la rupture amoureuse' },
+    { href: '/rupture/amour-non-partage/', label: 'Amour non partagé : comprendre et surmonter' },
   ],
 };
 

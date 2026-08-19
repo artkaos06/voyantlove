@@ -4,7 +4,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Boule de Cristal Amour : Voyance et Cristallomancie Sentimentale',
+  title: 'Boule de cristal amour : voyance et cristallomancie sentimentale',
   description: 'Découvrez la boule de cristal appliquée à l\'amour : fonctionnement, symboles perçus, déroulement d\'une séance. Guide complet de la cristallomancie pour vos questions de cœur.',
   url: 'https://www.voyantlove.fr/methodes-voyance/boule-de-cristal-amour/',
   keywords: ['boule de cristal amour', 'cristallomancie amour', 'voyance boule de cristal', 'voyant boule de cristal amoureux'],
@@ -17,19 +17,19 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: '🔮',
-    h1: 'Boule de Cristal Amour',
+    h1: 'Boule de cristal amour',
     subtitle: 'La cristallomancie au service de vos questions sentimentales',
     gradient: 'from-blue-800 via-indigo-800 to-violet-900',
-    backLink: { href: '/methodes-voyance/', label: 'Retour aux Méthodes de Voyance' },
+    backLink: { href: '/methodes-voyance/', label: 'Retour aux méthodes de voyance' },
     anchors: [
-      { href: '#fonctionnement', label: 'Comment ça Marche', primary: true },
-      { href: '#consultation', label: 'La Consultation' },
+      { href: '#fonctionnement', label: 'Comment ça marche', primary: true },
+      { href: '#consultation', label: 'La consultation' },
     ],
   },
   accentText: 'text-indigo-800',
   stats: [
     { icon: '🔮', value: 'Scrying', label: 'Nom de la technique' },
-    { icon: '🏛️', value: 'Antique', label: 'Grèce et Égypte' },
+    { icon: '🏛️', value: 'Antique', label: 'Grèce et égypte' },
     { icon: '💭', value: 'Symbolique', label: 'Images à interpréter' },
     { icon: '🕯️', value: 'Concentration', label: 'État réceptif' },
   ],
@@ -54,12 +54,12 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/methodes-voyance/', label: 'Toutes les Méthodes de Voyance Amoureuse' },
-    { href: '/methodes-voyance/voyance-sentimentale/', label: 'Voyance Sentimentale' },
-    { href: '/methodes-voyance/medium-amour/', label: 'Médium Amour' },
-    { href: '/methodes-voyance/oracle-amour/', label: 'Oracle de l\'Amour' },
-    { href: '/glossaire/cristallomancie/', label: 'Glossaire : Cristallomancie' },
-    { href: '/glossaire/voyance-blanche/', label: 'Glossaire : Voyance Blanche' },
+    { href: '/methodes-voyance/', label: 'Toutes les méthodes de voyance amoureuse' },
+    { href: '/methodes-voyance/voyance-sentimentale/', label: 'Voyance sentimentale' },
+    { href: '/methodes-voyance/medium-amour/', label: 'Médium amour' },
+    { href: '/methodes-voyance/oracle-amour/', label: 'Oracle de l\'amour' },
+    { href: '/glossaire/cristallomancie/', label: 'Glossaire : cristallomancie' },
+    { href: '/glossaire/voyance-blanche/', label: 'Glossaire : voyance blanche' },
   ],
 };
 

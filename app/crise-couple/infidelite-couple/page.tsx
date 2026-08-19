@@ -4,7 +4,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Infidélité dans le Couple : Trahison, Pardon et Reconstruction | Voyance',
+  title: 'Infidélité dans le couple : trahison, pardon et reconstruction | voyance',
   description: 'Comprendre et surmonter l\'infidélité dans le couple. Guidance sur la trahison, le pardon, la reconstruction de la confiance et la seconde chance.',
   url: 'https://www.voyantlove.fr/crise-couple/infidelite-couple/',
   keywords: ['infidélité couple', 'trahison amoureuse', 'pardon infidélité', 'surmonter tromperie', 'seconde chance couple'],
@@ -17,13 +17,13 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: '💔',
-    h1: 'Infidélité dans le Couple',
+    h1: 'Infidélité dans le couple',
     subtitle: 'Comprendre la trahison, cheminer vers le pardon, et reconstruire la confiance',
     gradient: 'from-red-600 via-rose-600 to-pink-600',
-    backLink: { href: '/crise-couple/', label: 'Retour aux Crises de Couple' },
+    backLink: { href: '/crise-couple/', label: 'Retour aux crises de couple' },
     anchors: [
       { href: '#reconstruction', label: 'Reconstruire', primary: true },
-      { href: '#tirage', label: 'Tirage Infidélité' },
+      { href: '#tirage', label: 'Tirage infidélité' },
     ],
   },
   accentText: 'text-rose-600',
@@ -62,12 +62,12 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/crise-couple/', label: 'Crises de Couple : Guide Complet' },
-    { href: '/crise-couple/problemes-communication-couple/', label: 'Problèmes de Communication dans le Couple' },
-    { href: '/crise-couple/jalousie-excessive/', label: 'Jalousie Excessive : Causes et Solutions' },
-    { href: '/reconquete/se-remettre-ensemble/', label: 'Se Remettre Ensemble avec son Ex' },
-    { href: '/sentiments/maime-t-il-elle/', label: 'M\'aime-t-il/elle Vraiment ?' },
-    { href: '/sentiments/avenir-amoureux/', label: 'Mon Avenir Amoureux' },
+    { href: '/crise-couple/', label: 'Crises de couple : guide complet' },
+    { href: '/crise-couple/problemes-communication-couple/', label: 'Problèmes de communication dans le couple' },
+    { href: '/crise-couple/jalousie-excessive/', label: 'Jalousie excessive : causes et solutions' },
+    { href: '/reconquete/se-remettre-ensemble/', label: 'Se remettre ensemble avec son ex' },
+    { href: '/sentiments/maime-t-il-elle/', label: 'M\'aime-t-il/elle vraiment ?' },
+    { href: '/sentiments/avenir-amoureux/', label: 'Mon avenir amoureux' },
   ],
 };
 

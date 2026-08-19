@@ -4,7 +4,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Revoir son Ex Après une Rupture : Comment se Préparer et se Comporter',
+  title: 'Revoir son ex après une rupture : comment se préparer et se comporter',
   description: 'Vous allez revoir votre ex après la rupture ? Comment clarifier votre intention, gérer l\'émotion, vous comporter le jour J et interpréter ce que vous ressentez ensuite.',
   url: 'https://www.voyantlove.fr/reconquete/revoir-son-ex/',
   keywords: ['revoir son ex après une rupture', 'comment se comporter en revoyant son ex', 'revoir son ex fait mal', 'faut-il revoir son ex', 'premier rendez-vous avec son ex'],
@@ -17,20 +17,20 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: '🤝',
-    h1: 'Revoir son Ex Après une Rupture',
+    h1: 'Revoir son ex après une rupture',
     subtitle: 'Se préparer, se comporter le jour J et interpréter ce que vous ressentez ensuite',
     gradient: 'from-violet-600 via-fuchsia-600 to-pink-600',
-    backLink: { href: '/reconquete/', label: 'Retour à la Reconquête' },
+    backLink: { href: '/reconquete/', label: 'Retour à la reconquête' },
     anchors: [
-      { href: '#preparer', label: 'Se Préparer', primary: true },
-      { href: '#apres', label: 'Après la Rencontre' },
+      { href: '#preparer', label: 'Se préparer', primary: true },
+      { href: '#apres', label: 'Après la rencontre' },
     ],
   },
   accentText: 'text-fuchsia-600',
   stats: [
     { icon: '🔮', value: 'Reconnue', label: 'Expertise' },
     { icon: '🤝', value: '3,400+', label: 'Consultations' },
-    { icon: '⭐', value: '4.7/5', label: '269 avis' },
+    { icon: '⭐', value: '4.7/5', label: '269 Avis' },
     { icon: '🔒', value: '100%', label: 'Confidentiel' },
   ],
   eeat: { colorScheme: 'pink', method: 'Guidance de reconquête et accompagnement émotionnel' },
@@ -58,11 +58,11 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/reconquete/', label: 'Reconquête Amoureuse : Toutes nos Guidances' },
-    { href: '/reconquete/repondre-a-son-ex/', label: 'Faut-il Répondre à son Ex ?' },
-    { href: '/reconquete/se-remettre-ensemble/', label: 'Se Remettre Ensemble : Les 5 Étapes' },
-    { href: '/reconquete/veut-se-remettre-ensemble-mais-ne-fait-rien/', label: 'Il Veut se Remettre Ensemble mais ne Fait Rien' },
-    { href: '/rupture/comment-tourner-la-page/', label: 'Comment Tourner la Page' },
+    { href: '/reconquete/', label: 'Reconquête amoureuse : toutes nos guidances' },
+    { href: '/reconquete/repondre-a-son-ex/', label: 'Faut-il répondre à son ex ?' },
+    { href: '/reconquete/se-remettre-ensemble/', label: 'Se remettre ensemble : les 5 étapes' },
+    { href: '/reconquete/veut-se-remettre-ensemble-mais-ne-fait-rien/', label: 'Il veut se remettre ensemble mais ne fait rien' },
+    { href: '/rupture/comment-tourner-la-page/', label: 'Comment tourner la page' },
   ],
 };
 

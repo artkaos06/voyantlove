@@ -4,7 +4,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Voyance par T\u00e9l\u00e9phone Amour : Consultation Sentimentale \u00e0 Distance',
+  title: 'Voyance par t\u00e9l\u00e9phone amour : consultation sentimentale \u00e0 distance',
   description: 'D\u00e9couvrez la voyance par t\u00e9l\u00e9phone pour l\u2019amour : consultation sentimentale imm\u00e9diate, guidance amoureuse \u00e0 distance, voyant sp\u00e9cialis\u00e9 en questions de c\u0153ur. Disponible 24h/24.',
   url: 'https://www.voyantlove.fr/methodes-voyance/voyance-telephone-amour/',
   keywords: ['voyance par t\u00e9l\u00e9phone amour', 'consultation sentimentale t\u00e9l\u00e9phone', 'voyant amour t\u00e9l\u00e9phone', 'voyance amoureuse \u00e0 distance', 'guidance amoureuse t\u00e9l\u00e9phonique'],
@@ -17,13 +17,13 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: '📞',
-    h1: 'Voyance par Téléphone Amour',
+    h1: 'Voyance par téléphone amour',
     subtitle: 'Consultation sentimentale à distance pour éclairer votre vie amoureuse, disponible 24h/24',
     gradient: 'from-indigo-500 via-violet-500 to-purple-500',
-    backLink: { href: '/methodes-voyance/', label: 'Retour aux Méthodes de Voyance' },
+    backLink: { href: '/methodes-voyance/', label: 'Retour aux méthodes de voyance' },
     anchors: [
-      { href: '#consultation', label: 'Consulter Maintenant', primary: true },
-      { href: '#avantages', label: 'Les Avantages' },
+      { href: '#consultation', label: 'Consulter maintenant', primary: true },
+      { href: '#avantages', label: 'Les avantages' },
     ],
   },
   accentText: 'text-indigo-600',
@@ -58,11 +58,11 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/methodes-voyance/tirage-tarot-amour/', label: 'Tirage de Tarot Amoureux : Guide Complet' },
-    { href: '/methodes-voyance/oracle-amour/', label: 'Oracle de l\'Amour : Guidance Sentimentale par les Cartes' },
-    { href: '/methodes-voyance/pendule-amour/', label: 'Pendule Amour : Réponses Précises à Vos Questions Sentimentales' },
-    { href: '/methodes-voyance/astrologie-amoureuse/', label: 'Astrologie Amoureuse : Compatibilité Astrale' },
-    { href: '/sentiments/avenir-amoureux/', label: 'Mon Avenir Amoureux : Prédictions Sentimentales' },
+    { href: '/methodes-voyance/tirage-tarot-amour/', label: 'Tirage de Tarot amoureux : guide complet' },
+    { href: '/methodes-voyance/oracle-amour/', label: 'Oracle de l\'amour : guidance sentimentale par les cartes' },
+    { href: '/methodes-voyance/pendule-amour/', label: 'Pendule amour : réponses précises à vos questions sentimentales' },
+    { href: '/methodes-voyance/astrologie-amoureuse/', label: 'Astrologie amoureuse : compatibilité astrale' },
+    { href: '/sentiments/avenir-amoureux/', label: 'Mon avenir amoureux : prédictions sentimentales' },
   ],
 };
 

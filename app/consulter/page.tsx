@@ -4,14 +4,14 @@ import { getWebPageSchema, getBreadcrumbSchema, getOrganizationSchema } from '@/
 import ConsulterVoyantGrid from '@/components/ConsulterVoyantGrid';
 
 export const metadata: Metadata = {
-  title: 'Choisissez Votre Voyant Spécialisé Amour',
+  title: 'Choisissez votre voyant spécialisé amour',
   description: 'Consultez un voyant spécialisé en amour dès maintenant : 15 minutes gratuites pour votre première consultation, sans engagement, confidentiel et disponible 7j/7.',
   alternates: { canonical: 'https://www.voyantlove.fr/consulter/' },
 };
 
 export default function ConsulterPage() {
   const webPageSchema = getWebPageSchema({
-    title: 'Choisissez Votre Voyant Spécialisé Amour',
+    title: 'Choisissez votre voyant spécialisé amour',
     description: 'Consultez un voyant spécialisé en amour dès maintenant : 15 minutes gratuites pour votre première consultation, sans engagement, confidentiel et disponible 7j/7.',
     url: 'https://www.voyantlove.fr/consulter/',
   });
@@ -42,7 +42,7 @@ export default function ConsulterPage() {
       <section className="bg-gradient-to-br from-purple-700 via-purple-600 to-indigo-700 text-white py-12 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-3xl md:text-4xl font-bold mb-4">
-            Choisissez Votre Voyant Spécialisé Amour
+            Choisissez votre voyant spécialisé amour
           </h1>
           <p className="text-lg opacity-95 max-w-2xl mx-auto">
             Nos voyants sont disponibles maintenant. Profitez de <strong>15 minutes gratuites</strong> pour votre première consultation.

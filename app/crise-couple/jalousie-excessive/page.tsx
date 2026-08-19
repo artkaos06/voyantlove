@@ -4,7 +4,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Jalousie Excessive dans le Couple : Causes, Signes et Solutions Efficaces',
+  title: 'Jalousie excessive dans le couple : causes, signes et solutions efficaces',
   description: 'La jalousie détruit votre couple ? Découvrez les causes profondes, les signes de jalousie maladive et les solutions concrètes pour retrouver la confiance.',
   url: 'https://www.voyantlove.fr/crise-couple/jalousie-excessive/',
   keywords: ['jalousie excessive couple', 'jalousie maladive', 'crise de jalousie', 'surmonter jalousie', 'confiance couple'],
@@ -17,13 +17,13 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: '',
-    h1: 'Jalousie Excessive dans le Couple',
+    h1: 'Jalousie excessive dans le couple',
     subtitle: 'Comprendre les causes, reconnaître les signes et trouver des solutions durables',
     gradient: 'from-red-500 via-orange-500 to-amber-500',
-    backLink: { href: '/crise-couple/', label: 'Retour aux Crises de Couple' },
+    backLink: { href: '/crise-couple/', label: 'Retour aux crises de couple' },
     anchors: [
-      { href: '#causes', label: 'Identifier les Causes', primary: true },
-      { href: '#solutions', label: 'Trouver des Solutions' },
+      { href: '#causes', label: 'Identifier les causes', primary: true },
+      { href: '#solutions', label: 'Trouver des solutions' },
     ],
   },
   accentText: 'text-red-600',
@@ -62,11 +62,11 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/crise-couple/', label: 'Crise de Couple : Toutes nos Solutions' },
-    { href: '/crise-couple/problemes-communication-couple/', label: 'Problèmes de Communication dans le Couple' },
-    { href: '/crise-couple/infidelite-couple/', label: 'Infidélité dans le Couple' },
-    { href: '/sentiments/maime-t-il-elle/', label: 'M\'aime-t-il/elle Vraiment ?' },
-    { href: '/reconquete/ex-revient-silence-radio/', label: 'Ex qui Revient après Silence Radio' },
+    { href: '/crise-couple/', label: 'Crise de couple : toutes nos solutions' },
+    { href: '/crise-couple/problemes-communication-couple/', label: 'Problèmes de communication dans le couple' },
+    { href: '/crise-couple/infidelite-couple/', label: 'Infidélité dans le couple' },
+    { href: '/sentiments/maime-t-il-elle/', label: 'M\'aime-t-il/elle vraiment ?' },
+    { href: '/reconquete/ex-revient-silence-radio/', label: 'Ex qui revient après silence radio' },
   ],
 };
 

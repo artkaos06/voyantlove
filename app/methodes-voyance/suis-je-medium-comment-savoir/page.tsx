@@ -4,7 +4,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Suis-je Médium ? Comment Savoir en Amour',
+  title: 'Suis-je médium ? comment savoir en amour',
   description: 'Comment savoir si l\'on est médium ? Les signes d\'une sensibilité médiumnique dans votre vie sentimentale : empathie intense, intuitions, rêves prémonitoires.',
   url: 'https://www.voyantlove.fr/methodes-voyance/suis-je-medium-comment-savoir/',
   keywords: ['suis-je médium', 'comment savoir si on est médium', 'signes de médiumnité', 'don de médium amour', 'suis-je empathe'],
@@ -17,13 +17,13 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: '🌙',
-    h1: 'Suis-je Médium ? Comment le Savoir',
+    h1: 'Suis-je médium ? comment le savoir',
     subtitle: 'Les signes d\'une sensibilité médiumnique dans votre vie sentimentale',
     gradient: 'from-violet-700 via-fuchsia-700 to-purple-800',
-    backLink: { href: '/methodes-voyance/', label: 'Retour aux Méthodes de Voyance' },
+    backLink: { href: '/methodes-voyance/', label: 'Retour aux méthodes de voyance' },
     anchors: [
-      { href: '#signes', label: 'Les Signes à Observer', primary: true },
-      { href: '#distinguer', label: 'Empathe ou Médium ?' },
+      { href: '#signes', label: 'Les signes à observer', primary: true },
+      { href: '#distinguer', label: 'Empathe ou médium ?' },
     ],
   },
   accentText: 'text-purple-700',
@@ -54,12 +54,12 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/methodes-voyance/', label: 'Toutes les Méthodes de Voyance Amoureuse' },
-    { href: '/methodes-voyance/medium-amour/', label: 'Médium Amour : Consultation et Guidance' },
-    { href: '/methodes-voyance/medium-amour/#sans-support', label: 'Médium Sans Support : La Voyance Sans Outils' },
-    { href: '/methodes-voyance/voyance-sentimentale/', label: 'Voyance Sentimentale' },
-    { href: '/glossaire/clairvoyance/', label: 'Glossaire : Clairvoyance' },
-    { href: '/glossaire/channeling/', label: 'Glossaire : Channeling' },
+    { href: '/methodes-voyance/', label: 'Toutes les méthodes de voyance amoureuse' },
+    { href: '/methodes-voyance/medium-amour/', label: 'Médium amour : consultation et guidance' },
+    { href: '/methodes-voyance/medium-amour/#sans-support', label: 'Médium sans support : la voyance sans outils' },
+    { href: '/methodes-voyance/voyance-sentimentale/', label: 'Voyance sentimentale' },
+    { href: '/glossaire/clairvoyance/', label: 'Glossaire : clairvoyance' },
+    { href: '/glossaire/channeling/', label: 'Glossaire : channeling' },
   ],
 };
 

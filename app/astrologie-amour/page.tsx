@@ -8,7 +8,7 @@ import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 const LIVE_SIGNS = SIGNES_AMOUR.filter((s) => validateSignRecord(s).length === 0);
 
 export const metadata: Metadata = {
-  title: 'Signes Astrologiques en Amour : Caractère et Compatibilités',
+  title: 'Signes astrologiques en amour : caractère et compatibilités',
   description: 'Comment aime chaque signe du zodiaque : caractère amoureux, séduction, en couple et compatibilités du Bélier aux Poissons. Le guide complet des signes astrologiques en amour.',
   alternates: { canonical: 'https://www.voyantlove.fr/astrologie-amour/' },
 };
@@ -22,7 +22,7 @@ const ELEMENT_STYLE: Record<string, string> = {
 
 export default function AstrologieAmourHub() {
   const webPageSchema = getWebPageSchema({
-    title: 'Signes Astrologiques en Amour : Caractère et Compatibilités',
+    title: 'Signes astrologiques en amour : caractère et compatibilités',
     description: 'Comment aime chaque signe du zodiaque : caractère amoureux, séduction et compatibilités, du Bélier aux Poissons.',
     url: 'https://www.voyantlove.fr/astrologie-amour/',
   });
@@ -41,7 +41,7 @@ export default function AstrologieAmourHub() {
       <header className="bg-gradient-to-r from-fuchsia-700 via-purple-700 to-indigo-800 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <Link href="/" className="text-white/80 hover:text-white mb-4 inline-block">← Accueil</Link>
-          <h1 className="text-5xl font-bold mb-6">♾️ Les Signes Astrologiques en Amour</h1>
+          <h1 className="text-5xl font-bold mb-6">♾️ Les signes astrologiques en amour</h1>
           <p className="text-2xl opacity-95 mb-4">Comment aime chaque signe du zodiaque</p>
           <p className="text-lg opacity-90 max-w-2xl mx-auto">Caractère amoureux, séduction, vie de couple et compatibilités, du Bélier aux Poissons.</p>
         </div>

@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Politique de Confidentialité',
+  title: 'Politique de confidentialité',
   description: 'Politique de confidentialité et protection des données personnelles sur VoyantLove.fr.',
   robots: { index: false, follow: true },
   alternates: { canonical: 'https://www.voyantlove.fr/confidentialite/' },
@@ -14,7 +14,7 @@ export default function ConfidentialitePage() {
       <header className="bg-gradient-to-r from-purple-600 to-purple-800 text-white py-12 px-4">
         <div className="max-w-4xl mx-auto">
           <Link href="/" className="text-white/80 hover:text-white mb-4 inline-block">← Retour à l'accueil</Link>
-          <h1 className="text-4xl font-bold mb-4">Politique de Confidentialité</h1>
+          <h1 className="text-4xl font-bold mb-4">Politique de confidentialité</h1>
           <p className="text-lg opacity-90">Protection de vos données personnelles - Conformité RGPD</p>
         </div>
       </header>

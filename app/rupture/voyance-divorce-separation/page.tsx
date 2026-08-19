@@ -3,7 +3,7 @@ import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Voyance Divorce : Traverser la Séparation et Retrouver l\'Amour',
+  title: 'Voyance divorce : traverser la séparation et retrouver l\'amour',
   description: 'Vous traversez un divorce ou une séparation difficile ? La voyance vous aide à voir l\'avenir après la rupture conjugale, à comprendre les causes et à vous reconstruire.',
   url: 'https://www.voyantlove.fr/rupture/voyance-divorce-separation/',
   keywords: ['voyance divorce', 'voyance séparation couple', 'divorce avenir amoureux', 'après divorce rencontre', 'voyant divorce'],
@@ -16,13 +16,13 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: '💔',
-    h1: 'Voyance Divorce',
+    h1: 'Voyance divorce',
     subtitle: 'Traverser la Séparation et Retrouver l\'Avenir',
     gradient: 'from-slate-700 via-gray-700 to-zinc-700',
-    backLink: { href: '/rupture/', label: 'Retour à Rupture Amoureuse' },
+    backLink: { href: '/rupture/', label: 'Retour à rupture amoureuse' },
     anchors: [
-      { href: '#reconstruction', label: 'Les Étapes de Reconstruction', primary: true },
-      { href: '#apres-divorce', label: 'L\'Amour Après Divorce' },
+      { href: '#reconstruction', label: 'Les étapes de reconstruction', primary: true },
+      { href: '#apres-divorce', label: 'L\'amour après divorce' },
     ],
   },
   accentText: 'text-slate-700',
@@ -53,12 +53,12 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/rupture/', label: 'Rupture Amoureuse : Toutes nos Guidances' },
-    { href: '/rupture/oublier-son-ex/', label: 'Surmonter la Rupture et Oublier son Ex' },
-    { href: '/rupture/deuil-amoureux/', label: 'Traverser le Deuil Amoureux : Guide Complet' },
-    { href: '/nouvelle-rencontre/nouvelle-relation-amoureuse/', label: 'Commencer une Nouvelle Relation Amoureuse' },
-    { href: '/rupture/confiance-en-soi-apres-divorce/', label: 'Retrouver Confiance en Soi Après un Divorce' },
-    { href: '/rupture/rupture-soudaine-sans-explication/', label: 'Rupture Soudaine sans Explication' },
+    { href: '/rupture/', label: 'Rupture amoureuse : toutes nos guidances' },
+    { href: '/rupture/oublier-son-ex/', label: 'Surmonter la rupture et oublier son ex' },
+    { href: '/rupture/deuil-amoureux/', label: 'Traverser le deuil amoureux : guide complet' },
+    { href: '/nouvelle-rencontre/nouvelle-relation-amoureuse/', label: 'Commencer une nouvelle relation amoureuse' },
+    { href: '/rupture/confiance-en-soi-apres-divorce/', label: 'Retrouver confiance en soi après un divorce' },
+    { href: '/rupture/rupture-soudaine-sans-explication/', label: 'Rupture soudaine sans explication' },
   ],
 };
 

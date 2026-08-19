@@ -4,7 +4,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Rêver de son Ex : Signification et Interprétation',
+  title: 'Rêver de son ex : signification et interprétation',
   description: 'Rêver de son ex qui revient, qui vous ignore, qui vous embrasse : ce que ces rêves peuvent révéler sur votre monde intérieur, et ce qu\'ils ne prédisent pas.',
   url: 'https://www.voyantlove.fr/rupture/rever-de-son-ex/',
   keywords: ['rêver de son ex', 'rêver de son ex signification', 'rêver de son ex qui revient', 'rêver de son ex qui nous ignore', 'rêver de son ex qui nous embrasse'],
@@ -17,20 +17,20 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: '🌙',
-    h1: 'Rêver de son Ex : Signification et Interprétation',
+    h1: 'Rêver de son ex : signification et interprétation',
     subtitle: 'Ce que ces rêves révèlent sur votre monde intérieur, et ce qu\'ils ne prédisent pas',
     gradient: 'from-indigo-700 via-purple-700 to-violet-800',
-    backLink: { href: '/rupture/', label: 'Retour à Rupture & Guérison' },
+    backLink: { href: '/rupture/', label: 'Retour à rupture & guérison' },
     anchors: [
-      { href: '#types', label: 'Les Types de Rêves', primary: true },
-      { href: '#pieges', label: 'Ce qu\'il ne Faut Pas y Lire' },
+      { href: '#types', label: 'Les types de rêves', primary: true },
+      { href: '#pieges', label: 'Ce qu\'il ne faut pas y lire' },
     ],
   },
   accentText: 'text-indigo-700',
   stats: [
     { icon: '🔮', value: 'Reconnue', label: 'Expertise' },
     { icon: '🌙', value: '3,800+', label: 'Rêves interprétés' },
-    { icon: '⭐', value: '4.8/5', label: '301 avis' },
+    { icon: '⭐', value: '4.8/5', label: '301 Avis' },
     { icon: '🔒', value: '100%', label: 'Confidentiel' },
   ],
   eeat: { colorScheme: 'purple', method: 'Interprétation symbolique des rêves et guidance émotionnelle' },
@@ -58,12 +58,12 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/rupture/', label: 'Rupture & Guérison : Toutes nos Guidances' },
-    { href: '/rupture/oublier-son-ex/', label: 'Oublier son Ex' },
-    { href: '/rupture/comment-tourner-la-page/', label: 'Comment Tourner la Page' },
-    { href: '/sentiments/pense-t-il-elle-a-moi/', label: 'Pense-t-il/elle à Moi ?' },
-    { href: '/rupture/deuil-amoureux/', label: 'Traverser le Deuil Amoureux' },
-    { href: '/reves-amour/', label: 'Interprétation des Rêves Amoureux : Tous les Rêves' },
+    { href: '/rupture/', label: 'Rupture & guérison : toutes nos guidances' },
+    { href: '/rupture/oublier-son-ex/', label: 'Oublier son ex' },
+    { href: '/rupture/comment-tourner-la-page/', label: 'Comment tourner la page' },
+    { href: '/sentiments/pense-t-il-elle-a-moi/', label: 'Pense-t-il/elle à moi ?' },
+    { href: '/rupture/deuil-amoureux/', label: 'Traverser le deuil amoureux' },
+    { href: '/reves-amour/', label: 'Interprétation des rêves amoureux : tous les rêves' },
   ],
 };
 

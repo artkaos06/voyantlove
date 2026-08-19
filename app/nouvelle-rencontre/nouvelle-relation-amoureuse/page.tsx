@@ -4,7 +4,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Nouvelle Relation Amoureuse : Guide des Premiers Mois | Construire les Bases',
+  title: 'Nouvelle relation amoureuse : guide des premiers mois | construire les bases',
   description: 'Tout savoir sur les premiers mois d\'une nouvelle relation amoureuse. Étapes clés, erreurs à éviter, construire des fondations solides et signes d\'une relation saine.',
   url: 'https://www.voyantlove.fr/nouvelle-rencontre/nouvelle-relation-amoureuse/',
   keywords: ['nouvelle relation amoureuse', 'début relation', 'premiers mois couple', 'construire relation', 'nouvelle histoire amour'],
@@ -17,13 +17,13 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: '💕',
-    h1: 'Nouvelle Relation Amoureuse',
+    h1: 'Nouvelle relation amoureuse',
     subtitle: 'Réussir les premiers mois et construire des fondations solides',
     gradient: 'from-rose-500 via-pink-500 to-purple-500',
-    backLink: { href: '/nouvelle-rencontre/', label: 'Retour aux Nouvelles Rencontres' },
+    backLink: { href: '/nouvelle-rencontre/', label: 'Retour aux nouvelles rencontres' },
     anchors: [
-      { href: '#etapes', label: 'Les Étapes Clés', primary: true },
-      { href: '#erreurs', label: 'Éviter les Erreurs' },
+      { href: '#etapes', label: 'Les étapes clés', primary: true },
+      { href: '#erreurs', label: 'Éviter les erreurs' },
     ],
   },
   accentText: 'text-rose-600',
@@ -62,10 +62,10 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/nouvelle-rencontre/', label: 'Nouvelle Rencontre : Toutes nos Guidances' },
-    { href: '/nouvelle-rencontre/signes-ame-soeur/', label: 'Signes de l\'Âme Sœur' },
-    { href: '/nouvelle-rencontre/quand-rencontre-amour/', label: 'Quand Vais-je Rencontrer l\'Amour ?' },
-    { href: '/sentiments/avenir-amoureux/', label: 'Mon Avenir Amoureux' },
+    { href: '/nouvelle-rencontre/', label: 'Nouvelle rencontre : toutes nos guidances' },
+    { href: '/nouvelle-rencontre/signes-ame-soeur/', label: 'Signes de l\'âme sœur' },
+    { href: '/nouvelle-rencontre/quand-rencontre-amour/', label: 'Quand vais-je rencontrer l\'amour ?' },
+    { href: '/sentiments/avenir-amoureux/', label: 'Mon avenir amoureux' },
   ],
 };
 

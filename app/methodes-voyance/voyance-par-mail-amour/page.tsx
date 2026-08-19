@@ -4,7 +4,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Voyance par Mail Amour : Guide de la Consultation Écrite',
+  title: 'Voyance par mail amour : guide de la consultation écrite',
   description: 'Guide de la voyance amoureuse par mail : fonctionnement, formulation des questions et délais habituels. Pour une réponse immédiate, découvrez la consultation en direct.',
   url: 'https://www.voyantlove.fr/methodes-voyance/voyance-par-mail-amour/',
   keywords: ['voyance par mail amour', 'voyance gratuite par mail', 'consultation voyance par mail', 'voyant par email', 'voyance par écrit'],
@@ -17,13 +17,13 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: '✉️',
-    h1: 'Voyance par Mail Amour',
+    h1: 'Voyance par mail amour',
     subtitle: 'Guide du Format Écrit et Alternative Immédiate en Direct',
     gradient: 'from-teal-600 via-cyan-600 to-blue-600',
-    backLink: { href: '/methodes-voyance/', label: 'Retour aux Méthodes de Voyance' },
+    backLink: { href: '/methodes-voyance/', label: 'Retour aux méthodes de voyance' },
     anchors: [
-      { href: '#formuler', label: 'Comment Formuler sa Question', primary: true },
-      { href: '#choisir', label: 'Choisir son Voyant' },
+      { href: '#formuler', label: 'Comment formuler sa question', primary: true },
+      { href: '#choisir', label: 'Choisir son voyant' },
     ],
   },
   accentText: 'text-teal-600',
@@ -58,10 +58,10 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/methodes-voyance/', label: 'Méthodes de Voyance : Toutes nos Approches' },
-    { href: '/methodes-voyance/voyance-par-chat-amour/', label: 'Voyance par Chat Amour : Consultation Instantanée' },
-    { href: '/methodes-voyance/voyance-telephone-amour/', label: 'Voyance par Téléphone : Échange Direct et Immédiat' },
-    { href: '/methodes-voyance/tirage-tarot-amour/', label: 'Tirage Tarot Amour : Lire les Cartes de l\'Amour' },
+    { href: '/methodes-voyance/', label: 'Méthodes de voyance : toutes nos approches' },
+    { href: '/methodes-voyance/voyance-par-chat-amour/', label: 'Voyance par chat amour : consultation instantanée' },
+    { href: '/methodes-voyance/voyance-telephone-amour/', label: 'Voyance par téléphone : échange direct et immédiat' },
+    { href: '/methodes-voyance/tirage-tarot-amour/', label: 'Tirage Tarot amour : lire les cartes de l\'amour' },
   ],
 };
 

@@ -4,7 +4,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Silence Radio Reconquête : Stratégie et Voyance',
+  title: 'Silence radio reconquête : stratégie et voyance',
   description: 'Le silence radio est-il la clé pour reconquérir son ex ? Découvrez la durée idéale, les étapes et ce que la voyance révèle sur cette stratégie puissante.',
   url: 'https://www.voyantlove.fr/reconquete/silence-radio-reconquete/',
   keywords: ['silence radio', 'reconquête silence', 'ne plus donner de nouvelles', 'silence radio ex', 'reconquête amoureuse'],
@@ -17,17 +17,17 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: '💜',
-    h1: 'Silence Radio : La Clé de la Reconquête Amoureuse',
+    h1: 'Silence radio : la clé de la reconquête amoureuse',
     subtitle: 'Comprendre et maîtriser le silence radio avec la guidance de la voyance',
     gradient: 'from-purple-600 via-purple-700 to-indigo-600',
     backLink: { href: '/reconquete/', label: 'Reconquête' },
     anchors: [
-      { href: '#consultation', label: 'Consultation Reconquête', primary: true },
+      { href: '#consultation', label: 'Consultation reconquête', primary: true },
     ],
   },
   accentText: 'text-purple-600',
   stats: [
-    { icon: '⭐', value: '4.8/5', label: '295 avis' },
+    { icon: '⭐', value: '4.8/5', label: '295 Avis' },
     { icon: '🤫', value: '70%', label: 'Taux de succès' },
     { icon: '⏰', value: '3-8 sem', label: 'Durée moyenne' },
     { icon: '🔮', value: '15 ans', label: 'Expérience' },
@@ -53,12 +53,12 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/reconquete/reconquerir-son-ex/', label: 'Reconquérir son Ex : Guide Complet' },
-    { href: '/reconquete/lettre-a-son-ex/', label: 'Écrire une Lettre à son Ex' },
-    { href: '/reconquete/va-t-il-elle-revenir/', label: 'Va-t-il/elle Revenir ?' },
-    { href: '/reconquete/ex-revient-silence-radio/', label: 'Ex qui Revient après Silence Radio' },
-    { href: '/rupture/oublier-son-ex/', label: 'Comment Oublier son Ex' },
-    { href: '/sentiments/maime-t-il-elle/', label: 'M\'aime-t-il / M\'aime-t-elle Encore ?' },
+    { href: '/reconquete/reconquerir-son-ex/', label: 'Reconquérir son ex : guide complet' },
+    { href: '/reconquete/lettre-a-son-ex/', label: 'Écrire une lettre à son ex' },
+    { href: '/reconquete/va-t-il-elle-revenir/', label: 'Va-t-il/elle revenir ?' },
+    { href: '/reconquete/ex-revient-silence-radio/', label: 'Ex qui revient après silence radio' },
+    { href: '/rupture/oublier-son-ex/', label: 'Comment oublier son ex' },
+    { href: '/sentiments/maime-t-il-elle/', label: 'M\'aime-t-il / m\'aime-t-elle encore ?' },
   ],
 };
 

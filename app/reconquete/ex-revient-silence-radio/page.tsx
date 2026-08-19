@@ -4,7 +4,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Il/Elle Me Recontacte Après le Silence Radio',
+  title: 'Il/elle me recontacte après le silence radio',
   description: 'Il ou elle vous recontacte après le silence radio ? Signes qu\'un ex revient, comment réagir, quel message envoyer. Guide complet pour ne pas tout gâcher.',
   url: 'https://www.voyantlove.fr/reconquete/ex-revient-silence-radio/',
   keywords: ['il me recontacte après silence radio', 'elle me recontacte après silence radio', 'ex qui revient après silence radio', 'homme qui revient après silence', 'silence radio reconquête'],
@@ -17,14 +17,14 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: '',
-    h1: 'Il/Elle Me Recontacte Après le Silence Radio',
+    h1: 'Il/elle me recontacte après le silence radio',
     subtitle: 'Signes qu\'un ex revient, comment réagir et quel premier message envoyer',
     gradient: 'from-purple-600 via-pink-500 to-rose-500',
-    backLink: { href: '/reconquete/', label: 'Retour à la Reconquête' },
+    backLink: { href: '/reconquete/', label: 'Retour à la reconquête' },
     anchors: [
-      { href: '#delai', label: 'Que Faire Selon le Délai', primary: true },
-      { href: '#signes', label: 'Reconnaître les Signes' },
-      { href: '#reaction', label: 'Comment Réagir' },
+      { href: '#delai', label: 'Que faire selon le délai', primary: true },
+      { href: '#signes', label: 'Reconnaître les signes' },
+      { href: '#reaction', label: 'Comment réagir' },
     ],
   },
   accentText: 'text-purple-600',
@@ -75,11 +75,11 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/reconquete/', label: 'Reconquête Amoureuse : Toutes nos Stratégies' },
-    { href: '/reconquete/va-t-il-elle-revenir/', label: 'Mon Ex Va-t-il Revenir ? Signes et Prédictions' },
-    { href: '/reconquete/reconquerir-son-ex/', label: 'Comment Reconquérir son Ex : Guide Complet' },
-    { href: '/reconquete/repondre-a-son-ex/', label: 'Faut-il Répondre à son Ex Quand il Recontacte ?' },
-    { href: '/sentiments/', label: 'Comprendre les Sentiments Amoureux' },
+    { href: '/reconquete/', label: 'Reconquête amoureuse : toutes nos stratégies' },
+    { href: '/reconquete/va-t-il-elle-revenir/', label: 'Mon ex va-t-il revenir ? signes et prédictions' },
+    { href: '/reconquete/reconquerir-son-ex/', label: 'Comment reconquérir son ex : guide complet' },
+    { href: '/reconquete/repondre-a-son-ex/', label: 'Faut-il répondre à son ex quand il recontacte ?' },
+    { href: '/sentiments/', label: 'Comprendre les sentiments amoureux' },
   ],
 };
 

@@ -8,7 +8,7 @@ import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 import HoroscopeSelector from '@/components/HoroscopeSelector';
 
 export const metadata: Metadata = {
-  title: 'Horoscope Amour 2026 : Prédictions Sentimentales par Signe',
+  title: 'Horoscope amour 2026 : prédictions sentimentales par signe',
   description: 'Horoscope amour 2026 gratuit : prédictions sentimentales pour chaque signe. Périodes favorables, compatibilités et guidance.',
   keywords: ['horoscope amour 2026', 'horoscope amour gratuit', 'prédictions amoureuses 2026'],
   alternates: {
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 
 export default function HoroscopeAmour2026Page() {
   const articleSchema = getArticleSchema({
-    title: 'Horoscope Amour 2026 : Prédictions Sentimentales par Signe',
+    title: 'Horoscope amour 2026 : prédictions sentimentales par signe',
     description: 'Horoscope amour 2026 gratuit : prédictions sentimentales pour chaque signe. Périodes favorables, compatibilités et guidance.',
     url: 'https://www.voyantlove.fr/voyance-gratuite-amour/horoscope-amour-2026/',
     datePublished: '2026-03-10',
@@ -80,7 +80,7 @@ export default function HoroscopeAmour2026Page() {
       <header className="bg-gradient-to-r from-cyan-500 via-teal-500 to-emerald-500 text-white py-16 px-4">
         <div className="max-w-4xl mx-auto">
           <Link href="/voyance-gratuite-amour/" className="text-white/80 hover:text-white mb-4 inline-block">&larr; Retour &agrave; Voyance Gratuite Amour</Link>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">&#x2728; Horoscope Amour 2026</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">&#x2728; horoscope amour 2026</h1>
           <p className="text-xl opacity-95 mb-6">Pr&eacute;dictions sentimentales par signe pour une ann&eacute;e pleine de promesses</p>
           <div className="flex gap-4 flex-wrap">
             <a href="#consultation" className="bg-white text-cyan-600 px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition">Consultation Personnalis&eacute;e</a>

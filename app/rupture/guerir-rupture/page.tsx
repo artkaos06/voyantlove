@@ -4,7 +4,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Guérir d’une Rupture Amoureuse : Étapes, Durée et Reconstruction',
+  title: 'Guérir d’une rupture amoureuse : étapes, durée et reconstruction',
   description: 'Comment guérir d’une rupture amoureuse ? Découvrez les 5 étapes du deuil amoureux, le temps de guérison, les signes de reconstruction et le rôle du tarot.',
   url: 'https://www.voyantlove.fr/rupture/guerir-rupture/',
   keywords: ['guérir rupture', 'temps guérison rupture', 'reconstruction après rupture', 'surmonter séparation', 'cicatrisation amoureuse'],
@@ -17,13 +17,13 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: '🌿',
-    h1: 'Guérir d\'une Rupture Amoureuse',
+    h1: 'Guérir d\'une rupture amoureuse',
     subtitle: 'Étapes du deuil amoureux, durée de guérison et chemin vers la reconstruction',
     gradient: 'from-teal-500 via-emerald-500 to-green-500',
-    backLink: { href: '/rupture/', label: 'Retour aux Ruptures Amoureuses' },
+    backLink: { href: '/rupture/', label: 'Retour aux ruptures amoureuses' },
     anchors: [
-      { href: '#consultation', label: 'Guidance de Guérison', primary: true },
-      { href: '#etapes', label: 'Les 5 Étapes' },
+      { href: '#consultation', label: 'Guidance de guérison', primary: true },
+      { href: '#etapes', label: 'Les 5 étapes' },
     ],
   },
   accentText: 'text-teal-600',
@@ -58,11 +58,11 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/rupture/rupture-amoureuse/', label: 'Comprendre la Rupture Amoureuse' },
-    { href: '/rupture/oublier-son-ex/', label: 'Comment Oublier son Ex' },
-    { href: '/rupture/chagrin-damour/', label: 'Surmonter un Chagrin d\'Amour' },
-    { href: '/nouvelle-rencontre/quand-rencontre-amour/', label: 'Quand Vais-je Rencontrer l\'Amour ?' },
-    { href: '/rupture/', label: 'Rupture Amoureuse : Toutes nos Guidances' },
+    { href: '/rupture/rupture-amoureuse/', label: 'Comprendre la rupture amoureuse' },
+    { href: '/rupture/oublier-son-ex/', label: 'Comment oublier son ex' },
+    { href: '/rupture/chagrin-damour/', label: 'Surmonter un chagrin d\'amour' },
+    { href: '/nouvelle-rencontre/quand-rencontre-amour/', label: 'Quand vais-je rencontrer l\'amour ?' },
+    { href: '/rupture/', label: 'Rupture amoureuse : toutes nos guidances' },
   ],
 };
 

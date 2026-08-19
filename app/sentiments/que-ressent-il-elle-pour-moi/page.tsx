@@ -4,7 +4,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Que Ressent-il/elle pour Moi ? Voyance Sentiments',
+  title: 'Que ressent-il/elle pour moi ? voyance sentiments',
   description: 'Découvrez la nature exacte de ses sentiments grâce au tarot : amour, attachement, désir ou indifférence. Tirage spécifique et signes révélateurs.',
   url: 'https://www.voyantlove.fr/sentiments/que-ressent-il-elle-pour-moi/',
   keywords: ['que ressent-il pour moi', 'que ressent-elle pour moi voyance', 'ses sentiments pour moi tarot', 'nature de ses sentiments', 'voyance émotions'],
@@ -17,20 +17,20 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: '💞',
-    h1: 'Que Ressent-il/elle pour Moi ?',
+    h1: 'Que ressent-il/elle pour moi ?',
     subtitle: 'La nature exacte de ses sentiments révélée par le tarot',
     gradient: 'from-rose-500 via-pink-500 to-fuchsia-500',
-    backLink: { href: '/sentiments/', label: 'Retour aux Sentiments' },
+    backLink: { href: '/sentiments/', label: 'Retour aux sentiments' },
     anchors: [
-      { href: '#nature', label: 'Tirage des Sentiments', primary: true },
-      { href: '#signes', label: 'Signes Révélateurs' },
+      { href: '#nature', label: 'Tirage des sentiments', primary: true },
+      { href: '#signes', label: 'Signes révélateurs' },
     ],
   },
   accentText: 'text-rose-600',
   stats: [
     { icon: '🔮', value: 'Reconnue', label: 'Expertise' },
     { icon: '💞', value: '3,900+', label: 'Tirages réalisés' },
-    { icon: '⭐', value: '4.7/5', label: '298 avis' },
+    { icon: '⭐', value: '4.7/5', label: '298 Avis' },
     { icon: '🔒', value: '100%', label: 'Confidentiel' },
   ],
   eeat: { colorScheme: 'rose', method: 'Tarot des émotions et lecture énergétique' },
@@ -58,11 +58,11 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/sentiments/', label: 'Sentiments Amoureux : Toutes nos Guidances' },
-    { href: '/sentiments/maime-t-il-elle/', label: 'M\'aime-t-il/elle Vraiment ?' },
-    { href: '/sentiments/pense-t-il-elle-a-moi/', label: 'Pense-t-il/elle à Moi ?' },
-    { href: '/sentiments/compatibilite-amoureuse/', label: 'Notre Compatibilité Amoureuse' },
-    { href: '/sentiments/avenir-amoureux/', label: 'Mon Avenir Amoureux' },
+    { href: '/sentiments/', label: 'Sentiments amoureux : toutes nos guidances' },
+    { href: '/sentiments/maime-t-il-elle/', label: 'M\'aime-t-il/elle vraiment ?' },
+    { href: '/sentiments/pense-t-il-elle-a-moi/', label: 'Pense-t-il/elle à moi ?' },
+    { href: '/sentiments/compatibilite-amoureuse/', label: 'Notre compatibilité amoureuse' },
+    { href: '/sentiments/avenir-amoureux/', label: 'Mon avenir amoureux' },
   ],
 };
 

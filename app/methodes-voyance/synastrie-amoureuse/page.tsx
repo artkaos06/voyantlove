@@ -5,7 +5,7 @@ import SynastryCalculator from '@/components/SynastryCalculator';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Synastrie Amoureuse : Compatibilité de Couple',
+  title: 'Synastrie amoureuse : compatibilité de couple',
   description: 'La synastrie amoureuse analyse la compatibilité de deux thèmes astraux. Découvrez ce que les planètes révèlent sur votre couple : tensions, harmonies, forces et défis.',
   url: 'https://www.voyantlove.fr/methodes-voyance/synastrie-amoureuse/',
   keywords: ['synastrie amoureuse', 'thème astral couple', 'compatibilité astrologique couple', 'synastrie couple', 'Vénus Mars synastrie'],
@@ -18,13 +18,13 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: '⭐',
-    h1: 'Synastrie Amoureuse',
+    h1: 'Synastrie amoureuse',
     subtitle: 'La Compatibilité Astrale de Votre Couple',
     gradient: 'from-indigo-700 via-purple-700 to-violet-700',
-    backLink: { href: '/methodes-voyance/', label: 'Retour aux Méthodes de Voyance' },
+    backLink: { href: '/methodes-voyance/', label: 'Retour aux méthodes de voyance' },
     anchors: [
-      { href: '#calculateur', label: 'Tester Notre Compatibilité', primary: true },
-      { href: '#planetes', label: 'Les Planètes Clés' },
+      { href: '#calculateur', label: 'Tester notre compatibilité', primary: true },
+      { href: '#planetes', label: 'Les planètes clés' },
     ],
   },
   accentText: 'text-indigo-700',
@@ -55,11 +55,11 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/methodes-voyance/', label: 'Méthodes de Voyance : Toutes nos Approches' },
-    { href: '/methodes-voyance/astrologie-amoureuse/', label: 'Astrologie Amoureuse : Comprendre Votre Ciel Sentimental' },
-    { href: '/astrologie-amour/', label: 'Les Signes Astrologiques en Amour : Profil de Chaque Signe' },
-    { href: '/sentiments/compatibilite-amoureuse/', label: 'Compatibilité Amoureuse : Tous les Indicateurs' },
-    { href: '/sentiments/avenir-amoureux/', label: 'L\'Avenir de Votre Couple : Guidance Complète' },
+    { href: '/methodes-voyance/', label: 'Méthodes de voyance : toutes nos approches' },
+    { href: '/methodes-voyance/astrologie-amoureuse/', label: 'Astrologie amoureuse : comprendre votre ciel sentimental' },
+    { href: '/astrologie-amour/', label: 'Les signes astrologiques en amour : profil de chaque signe' },
+    { href: '/sentiments/compatibilite-amoureuse/', label: 'Compatibilité amoureuse : tous les indicateurs' },
+    { href: '/sentiments/avenir-amoureux/', label: 'L\'avenir de votre couple : guidance complète' },
   ],
 };
 

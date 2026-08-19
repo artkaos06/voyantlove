@@ -4,7 +4,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Séparation Temporaire ou Définitive : les Signes à Observer',
+  title: 'Séparation temporaire ou définitive : les signes à observer',
   description: 'Pause de couple, séparation d\'essai ou rupture réelle ? Un cadre pour évaluer les actes, pas les mots, et sortir du flou sur l\'avenir de votre relation.',
   url: 'https://www.voyantlove.fr/reconquete/separation-temporaire-ou-definitive/',
   keywords: ['séparation temporaire ou définitive', 'comment savoir si la séparation est définitive', 'séparation d\'essai signes', 'il veut partir mais dit qu\'il m\'aime', 'nous sommes séparés mais toujours ensemble'],
@@ -17,20 +17,20 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: '⚖️',
-    h1: 'Comment Savoir si une Séparation est Temporaire ou Définitive ?',
+    h1: 'Comment savoir si une séparation est temporaire ou définitive ?',
     subtitle: 'Un cadre basé sur les actes, pas sur un message tendre ou un moment d\'intimité isolé',
     gradient: 'from-cyan-600 via-teal-600 to-blue-700',
-    backLink: { href: '/reconquete/', label: 'Retour à la Reconquête' },
+    backLink: { href: '/reconquete/', label: 'Retour à la reconquête' },
     anchors: [
-      { href: '#signes', label: 'Les Signes à Observer', primary: true },
-      { href: '#limites', label: 'Fixer une Limite' },
+      { href: '#signes', label: 'Les signes à observer', primary: true },
+      { href: '#limites', label: 'Fixer une limite' },
     ],
   },
   accentText: 'text-teal-700',
   stats: [
     { icon: '🔮', value: 'Reconnue', label: 'Expertise' },
     { icon: '⚖️', value: '3,100+', label: 'Consultations' },
-    { icon: '⭐', value: '4.7/5', label: '248 avis' },
+    { icon: '⭐', value: '4.7/5', label: '248 Avis' },
     { icon: '🔒', value: '100%', label: 'Confidentiel' },
   ],
   eeat: { colorScheme: 'cyan', method: 'Cadre décisionnel de couple et guidance de reconquête' },
@@ -58,11 +58,11 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/reconquete/', label: 'Reconquête Amoureuse : Toutes nos Guidances' },
-    { href: '/reconquete/ex-chaud-et-froid-apres-separation/', label: 'Mon Ex est Chaud et Froid' },
-    { href: '/reconquete/veut-se-remettre-ensemble-mais-ne-fait-rien/', label: 'Il Veut se Remettre Ensemble mais ne Fait Rien' },
-    { href: '/crise-couple/vivre-meme-toit-apres-separation/', label: 'Vivre sous le Même Toit Après une Séparation' },
-    { href: '/rupture/rupture-soudaine-sans-explication/', label: 'Rupture Soudaine sans Explication' },
+    { href: '/reconquete/', label: 'Reconquête amoureuse : toutes nos guidances' },
+    { href: '/reconquete/ex-chaud-et-froid-apres-separation/', label: 'Mon ex est chaud et froid' },
+    { href: '/reconquete/veut-se-remettre-ensemble-mais-ne-fait-rien/', label: 'Il veut se remettre ensemble mais ne fait rien' },
+    { href: '/crise-couple/vivre-meme-toit-apres-separation/', label: 'Vivre sous le même toit après une séparation' },
+    { href: '/rupture/rupture-soudaine-sans-explication/', label: 'Rupture soudaine sans explication' },
   ],
 };
 

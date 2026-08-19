@@ -4,7 +4,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Mon Ex est Chaud et Froid Après la Séparation : Pourquoi ?',
+  title: 'Mon ex est chaud et froid après la séparation : pourquoi ?',
   description: 'Votre ex souffle le chaud et le froid après la rupture ? Comprenez les dynamiques derrière les signaux contradictoires et décidez comment répondre sans décoder chaque message.',
   url: 'https://www.voyantlove.fr/reconquete/ex-chaud-et-froid-apres-separation/',
   keywords: ['mon ex est chaud et froid', 'mon ex revient puis repart', 'mon ex me parle puis m\'ignore', 'mon ex envoie des signes contradictoires', 'comportement ambigu après séparation'],
@@ -17,20 +17,20 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: '🌡️',
-    h1: 'Pourquoi Mon Ex Souffle-t-il le Chaud et le Froid ?',
+    h1: 'Pourquoi mon ex souffle-t-il le chaud et le froid ?',
     subtitle: 'Comprendre les signaux contradictoires après une séparation',
     gradient: 'from-rose-500 via-purple-600 to-blue-600',
-    backLink: { href: '/reconquete/', label: 'Retour à la Reconquête' },
+    backLink: { href: '/reconquete/', label: 'Retour à la reconquête' },
     anchors: [
-      { href: '#decodeur', label: 'Le Décodeur des Signaux', primary: true },
-      { href: '#reagir', label: 'Comment Réagir' },
+      { href: '#decodeur', label: 'Le décodeur des signaux', primary: true },
+      { href: '#reagir', label: 'Comment réagir' },
     ],
   },
   accentText: 'text-purple-600',
   stats: [
     { icon: '🔮', value: 'Reconnue', label: 'Expertise' },
     { icon: '🌡️', value: '3,500+', label: 'Consultations' },
-    { icon: '⭐', value: '4.7/5', label: '289 avis' },
+    { icon: '⭐', value: '4.7/5', label: '289 Avis' },
     { icon: '🔒', value: '100%', label: 'Confidentiel' },
   ],
   eeat: { colorScheme: 'purple', method: 'Guidance de reconquête et lecture des signaux relationnels' },
@@ -58,12 +58,12 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/reconquete/', label: 'Reconquête Amoureuse : Toutes nos Guidances' },
-    { href: '/reconquete/veut-se-remettre-ensemble-mais-ne-fait-rien/', label: 'Il Veut se Remettre Ensemble mais ne Fait Rien' },
-    { href: '/reconquete/ex-qui-revient/', label: 'Ex qui Revient : Que Faire ?' },
-    { href: '/sentiments/pense-t-il-elle-a-moi/', label: 'Pense-t-il/elle à Moi ?' },
-    { href: '/reconquete/silence-radio-reconquete/', label: 'Le Silence Radio en Reconquête' },
-    { href: '/reconquete/separation-temporaire-ou-definitive/', label: 'Séparation Temporaire ou Définitive ?' },
+    { href: '/reconquete/', label: 'Reconquête amoureuse : toutes nos guidances' },
+    { href: '/reconquete/veut-se-remettre-ensemble-mais-ne-fait-rien/', label: 'Il veut se remettre ensemble mais ne fait rien' },
+    { href: '/reconquete/ex-qui-revient/', label: 'Ex qui revient : que faire ?' },
+    { href: '/sentiments/pense-t-il-elle-a-moi/', label: 'Pense-t-il/elle à moi ?' },
+    { href: '/reconquete/silence-radio-reconquete/', label: 'Le silence radio en reconquête' },
+    { href: '/reconquete/separation-temporaire-ou-definitive/', label: 'Séparation temporaire ou définitive ?' },
   ],
 };
 

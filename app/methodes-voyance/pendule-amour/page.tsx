@@ -4,7 +4,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Pendule Amour : Questions Sentimentales, Guide et Consultation',
+  title: 'Pendule amour : questions sentimentales, guide et consultation',
   description: 'D\u00e9couvrez le pendule amour : r\u00e9ponses oui/non instantan\u00e9es, radi\u00e9sth\u00e9sie amoureuse et guidance sentimentale. Guide complet du pendule divinatoire pour les questions d\u2019amour.',
   url: 'https://www.voyantlove.fr/methodes-voyance/pendule-amour/',
   keywords: ['pendule amour', 'radi\u00e9sth\u00e9sie amoureuse', 'pendule divinatoire', 'voyance pendule', 'pendule oui non amour'],
@@ -17,13 +17,13 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: '🔮',
-    h1: 'Pendule Amour',
+    h1: 'Pendule amour',
     subtitle: 'Réponses Oui/Non instantanées et guidance sentimentale par la radiésthésie amoureuse',
     gradient: 'from-rose-500 via-fuchsia-500 to-pink-500',
-    backLink: { href: '/methodes-voyance/', label: 'Retour aux Méthodes de Voyance' },
+    backLink: { href: '/methodes-voyance/', label: 'Retour aux méthodes de voyance' },
     anchors: [
-      { href: '#consultation', label: 'Consultation Pendule', primary: true },
-      { href: '#questions', label: 'Questions Populaires' },
+      { href: '#consultation', label: 'Consultation pendule', primary: true },
+      { href: '#questions', label: 'Questions populaires' },
     ],
   },
   accentText: 'text-rose-600',
@@ -70,11 +70,11 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/methodes-voyance/tirage-tarot-amour/', label: 'Tirage de Tarot Amoureux : Guide Complet des Tirages Sentimentaux' },
-    { href: '/methodes-voyance/oracle-amour/', label: 'Oracle de l\'Amour : Guidance Sentimentale par les Cartes' },
-    { href: '/methodes-voyance/voyance-telephone-amour/', label: 'Voyance Téléphone Amour : Consultation à Distance' },
-    { href: '/methodes-voyance/astrologie-amoureuse/', label: 'Astrologie Amoureuse : Compatibilité Astrale et Amour' },
-    { href: '/sentiments/maime-t-il-elle/', label: 'M\'aime-t-il/elle Vraiment ? Les Signes qui Ne Trompent Pas' },
+    { href: '/methodes-voyance/tirage-tarot-amour/', label: 'Tirage de Tarot amoureux : guide complet des tirages sentimentaux' },
+    { href: '/methodes-voyance/oracle-amour/', label: 'Oracle de l\'amour : guidance sentimentale par les cartes' },
+    { href: '/methodes-voyance/voyance-telephone-amour/', label: 'Voyance téléphone amour : consultation à distance' },
+    { href: '/methodes-voyance/astrologie-amoureuse/', label: 'Astrologie amoureuse : compatibilité astrale et amour' },
+    { href: '/sentiments/maime-t-il-elle/', label: 'M\'aime-t-il/elle vraiment ? les signes qui ne trompent pas' },
   ],
 };
 

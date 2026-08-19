@@ -4,7 +4,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Surmonter une Trahison Amoureuse : Guidance Voyance',
+  title: 'Surmonter une trahison amoureuse : guidance voyance',
   description: 'Comment surmonter une trahison et une infidélité ? Découvrez la guidance de la voyance et du tarot pour guérir, comprendre et reconstruire après la tromperie.',
   url: 'https://www.voyantlove.fr/rupture/surmonter-trahison/',
   keywords: ['surmonter trahison', 'tromperie couple', 'infidélité guérison', 'trahison amoureuse', 'voyance infidélité'],
@@ -17,17 +17,17 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: '🖤',
-    h1: 'Surmonter une Trahison Amoureuse',
+    h1: 'Surmonter une trahison amoureuse',
     subtitle: 'Guérir de l\'infidélité avec la guidance de la voyance et du tarot',
     gradient: 'from-gray-700 via-gray-800 to-gray-900',
     backLink: { href: '/rupture/', label: 'Rupture' },
     anchors: [
-      { href: '#consultation', label: 'Consultation Guidance', primary: true },
+      { href: '#consultation', label: 'Consultation guidance', primary: true },
     ],
   },
   accentText: 'text-gray-700',
   stats: [
-    { icon: '⭐', value: '4.9/5', label: '341 avis' },
+    { icon: '⭐', value: '4.9/5', label: '341 Avis' },
     { icon: '💔', value: '12-24', label: 'Mois de guérison' },
     { icon: '🔄', value: '60%', label: 'Couples reconstruits' },
     { icon: '🔮', value: '15 ans', label: 'Expérience' },
@@ -53,12 +53,12 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/rupture/rupture-amoureuse/', label: 'Surmonter une Rupture Amoureuse' },
-    { href: '/rupture/comment-tourner-la-page/', label: 'Comment Tourner la Page' },
-    { href: '/rupture/chagrin-damour/', label: 'Guérir d\'un Chagrin d\'Amour' },
-    { href: '/rupture/oublier-son-ex/', label: 'Comment Oublier son Ex' },
-    { href: '/reconquete/reconquerir-son-ex/', label: 'Reconquérir son Ex' },
-    { href: '/sentiments/maime-t-il-elle/', label: 'M\'aime-t-il / M\'aime-t-elle Encore ?' },
+    { href: '/rupture/rupture-amoureuse/', label: 'Surmonter une rupture amoureuse' },
+    { href: '/rupture/comment-tourner-la-page/', label: 'Comment tourner la page' },
+    { href: '/rupture/chagrin-damour/', label: 'Guérir d\'un chagrin d\'amour' },
+    { href: '/rupture/oublier-son-ex/', label: 'Comment oublier son ex' },
+    { href: '/reconquete/reconquerir-son-ex/', label: 'Reconquérir son ex' },
+    { href: '/sentiments/maime-t-il-elle/', label: 'M\'aime-t-il / m\'aime-t-elle encore ?' },
   ],
 };
 

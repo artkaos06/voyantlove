@@ -4,7 +4,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Couple à Distance : Voyance et Conseils pour Durer',
+  title: 'Couple à distance : voyance et conseils pour durer',
   description: 'Votre couple est séparé géographiquement ? La voyance couple à distance révèle si votre relation peut durer, quand vous retrouverez et comment maintenir le lien à distance.',
   url: 'https://www.voyantlove.fr/crise-couple/couple-a-distance-voyance/',
   keywords: ['couple à distance voyance', 'relation longue distance amour', 'amour à distance voyant', 'voyance séparation géographique', 'couple distance durer'],
@@ -17,13 +17,13 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: '✈️',
-    h1: 'Couple à Distance',
+    h1: 'Couple à distance',
     subtitle: 'Voyance et Conseils pour Durer',
     gradient: 'from-sky-600 via-blue-600 to-indigo-600',
-    backLink: { href: '/crise-couple/', label: 'Retour à Crise de Couple' },
+    backLink: { href: '/crise-couple/', label: 'Retour à crise de couple' },
     anchors: [
-      { href: '#signes-survivre', label: 'Votre Couple Peut Durer', primary: true },
-      { href: '#retrouvailles', label: 'Quand Se Retrouver ?' },
+      { href: '#signes-survivre', label: 'Votre couple peut durer', primary: true },
+      { href: '#retrouvailles', label: 'Quand se retrouver ?' },
     ],
   },
   accentText: 'text-blue-600',
@@ -54,10 +54,10 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/crise-couple/', label: 'Crise de Couple : Toutes nos Guidances' },
-    { href: '/crise-couple/reconnecter-son-couple/', label: 'Reconnecter son Couple : Guide Complet' },
-    { href: '/crise-couple/jalousie-excessive/', label: 'Jalousie Excessive : Comprendre et Gérer' },
-    { href: '/sentiments/avenir-amoureux/', label: 'Mon Avenir Amoureux : Guidance Complète' },
+    { href: '/crise-couple/', label: 'Crise de couple : toutes nos guidances' },
+    { href: '/crise-couple/reconnecter-son-couple/', label: 'Reconnecter son couple : guide complet' },
+    { href: '/crise-couple/jalousie-excessive/', label: 'Jalousie excessive : comprendre et gérer' },
+    { href: '/sentiments/avenir-amoureux/', label: 'Mon avenir amoureux : guidance complète' },
   ],
 };
 

@@ -4,7 +4,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Marc de Café Amour : Tasséographie et Signes Sentimentaux',
+  title: 'Marc de café amour : tasséographie et signes sentimentaux',
   description: 'Découvrez la lecture du marc de café appliquée à l\'amour : symboles du cœur, de l\'anneau, de l\'oiseau, méthode de tirage et guide pratique. La tasséographie au service de vos questions de cœur.',
   url: 'https://www.voyantlove.fr/methodes-voyance/marc-de-cafe-amour/',
   keywords: ['marc de café amour', 'tasséographie amour', 'lecture marc de café sentimental', 'symboles marc de café amour'],
@@ -17,13 +17,13 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: '☕',
-    h1: 'Marc de Café Amour',
+    h1: 'Marc de café amour',
     subtitle: 'La tasséographie au service de vos questions sentimentales',
     gradient: 'from-amber-900 via-orange-800 to-stone-800',
-    backLink: { href: '/methodes-voyance/', label: 'Retour aux Méthodes de Voyance' },
+    backLink: { href: '/methodes-voyance/', label: 'Retour aux méthodes de voyance' },
     anchors: [
-      { href: '#symboles', label: 'Les Symboles Amoureux', primary: true },
-      { href: '#pratique', label: 'Faire sa Propre Lecture' },
+      { href: '#symboles', label: 'Les symboles amoureux', primary: true },
+      { href: '#pratique', label: 'Faire sa propre lecture' },
     ],
   },
   accentText: 'text-amber-800',
@@ -54,12 +54,12 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/methodes-voyance/', label: 'Toutes les Méthodes de Voyance Amoureuse' },
-    { href: '/methodes-voyance/cartomancie-amour/', label: 'Cartomancie Amour' },
-    { href: '/methodes-voyance/voyance-sentimentale/', label: 'Voyance Sentimentale' },
-    { href: '/methodes-voyance/oracle-amour/', label: 'Oracle de l\'Amour' },
-    { href: '/glossaire/tasseographie/', label: 'Glossaire : Tasséographie' },
-    { href: '/glossaire/signe-du-destin/', label: 'Glossaire : Signe du Destin' },
+    { href: '/methodes-voyance/', label: 'Toutes les méthodes de voyance amoureuse' },
+    { href: '/methodes-voyance/cartomancie-amour/', label: 'Cartomancie amour' },
+    { href: '/methodes-voyance/voyance-sentimentale/', label: 'Voyance sentimentale' },
+    { href: '/methodes-voyance/oracle-amour/', label: 'Oracle de l\'amour' },
+    { href: '/glossaire/tasseographie/', label: 'Glossaire : tasséographie' },
+    { href: '/glossaire/signe-du-destin/', label: 'Glossaire : signe du destin' },
   ],
 };
 

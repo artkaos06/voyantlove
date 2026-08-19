@@ -4,7 +4,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Trouver l\'Amour apr&egrave;s 40 ans : Voyance et Guidance Sentimentale',
+  title: 'Trouver l\'amour apr&egrave;s 40 ans : voyance et guidance sentimentale',
   description: 'D&eacute;couvrez comment trouver l\'amour apr&egrave;s 40 ans gr&acirc;ce &agrave; la voyance amoureuse, le tarot et la guidance sentimentale. Maturit&eacute;, timing, opportunit&eacute;s et conseils pour une rencontre tardive &eacute;panouissante.',
   url: 'https://www.voyantlove.fr/nouvelle-rencontre/amour-apres-40-ans/',
   keywords: ['amour apr&egrave;s 40 ans', 'rencontre tardive', 'voyance amoureuse 40 ans', 'trouver amour maturit&eacute;', 'guidance sentimentale', 'tarot amoureux', '&acirc;me s&oelig;ur apr&egrave;s 40 ans'],
@@ -17,21 +17,21 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: '♥',
-    h1: 'Trouver l’Amour après 40 ans',
+    h1: 'Trouver l’amour après 40 ans',
     subtitle: 'Voyance et guidance sentimentale pour une rencontre authentique et épanouissante',
     gradient: 'from-amber-500 via-yellow-500 to-orange-500',
-    backLink: { href: '/nouvelle-rencontre/', label: 'Retour aux Nouvelles Rencontres' },
+    backLink: { href: '/nouvelle-rencontre/', label: 'Retour aux nouvelles rencontres' },
     anchors: [
-      { href: '#guidance', label: 'Guidance Sentimentale', primary: true },
+      { href: '#guidance', label: 'Guidance sentimentale', primary: true },
       { href: '#tarot', label: 'Tirage Tarot' },
     ],
   },
   accentText: 'text-amber-600',
   stats: [
-    { icon: '♥', value: 'Nombreux', label: 'couples formés après 40 ans' },
-    { icon: '🔮', value: '7 800+', label: 'consultations' },
-    { icon: '⭐', value: '4.8/5', label: 'satisfaction' },
-    { icon: '✨', value: 'L’âge d’or', label: 'de l’amour' },
+    { icon: '♥', value: 'Nombreux', label: 'Couples formés après 40 ans' },
+    { icon: '🔮', value: '7 800+', label: 'Consultations' },
+    { icon: '⭐', value: '4.8/5', label: 'Satisfaction' },
+    { icon: '✨', value: 'L’âge d’or', label: 'De l’amour' },
   ],
   eeat: { colorScheme: 'orange', method: 'Tarot amoureux et guidance pour les rencontres tardives' },
   cta: { topic: 'nouvelle-rencontre', slug: 'amour-apres-40-ans' },
@@ -58,11 +58,11 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/nouvelle-rencontre/trouver-ame-soeur/', label: 'Trouver son Âme Sœur : Guide Complet' },
-    { href: '/nouvelle-rencontre/quand-rencontre-amour/', label: 'Quand Vais-je Rencontrer l’Amour ?' },
-    { href: '/nouvelle-rencontre/signes-ame-soeur/', label: 'Les Signes de l’Âme Sœur' },
-    { href: '/nouvelle-rencontre/flamme-jumelle/', label: 'Flamme Jumelle : Reconnaissance et Union' },
-    { href: '/sentiments/compatibilite-amoureuse/', label: 'Compatibilité Amoureuse' },
+    { href: '/nouvelle-rencontre/trouver-ame-soeur/', label: 'Trouver son âme sœur : guide complet' },
+    { href: '/nouvelle-rencontre/quand-rencontre-amour/', label: 'Quand vais-je rencontrer l’amour ?' },
+    { href: '/nouvelle-rencontre/signes-ame-soeur/', label: 'Les signes de l’âme sœur' },
+    { href: '/nouvelle-rencontre/flamme-jumelle/', label: 'Flamme jumelle : reconnaissance et union' },
+    { href: '/sentiments/compatibilite-amoureuse/', label: 'Compatibilité amoureuse' },
   ],
 };
 

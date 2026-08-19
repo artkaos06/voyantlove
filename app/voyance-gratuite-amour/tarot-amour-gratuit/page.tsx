@@ -8,7 +8,7 @@ import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 import TarotSpread from '@/components/TarotSpread';
 
 export const metadata: Metadata = {
-  title: 'Tarot Amour Gratuit : Tirage et Interprétation Sentimentale',
+  title: 'Tarot amour gratuit : tirage et interprétation sentimentale',
   description: 'Tirage de tarot amour gratuit : comprendre les arcanes, interpréter votre situation sentimentale et préparer une consultation.',
   keywords: ['tarot amour gratuit', 'tarot gratuit amour', 'tirage tarot gratuit amour'],
   alternates: {
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 
 export default function TarotAmourGratuitPage() {
   const articleSchema = getArticleSchema({
-    title: 'Tarot Amour Gratuit : Tirage et Interprétation Sentimentale',
+    title: 'Tarot amour gratuit : tirage et interprétation sentimentale',
     description: 'Tirage de tarot amour gratuit : comprendre les arcanes, interpréter votre situation sentimentale et préparer une consultation.',
     url: 'https://www.voyantlove.fr/voyance-gratuite-amour/tarot-amour-gratuit/',
     datePublished: '2026-03-10',
@@ -80,7 +80,7 @@ export default function TarotAmourGratuitPage() {
       <header className="bg-gradient-to-r from-green-500 via-emerald-500 to-teal-500 text-white py-16 px-4">
         <div className="max-w-4xl mx-auto">
           <Link href="/voyance-gratuite-amour/" className="text-white/80 hover:text-white mb-4 inline-block">&larr; Retour &agrave; Voyance Gratuite Amour</Link>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">&#x1F0CF; Tarot Amour Gratuit</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">&#x1F0CF; Tarot amour gratuit</h1>
           <p className="text-xl opacity-95 mb-6">Tirage et interpr&eacute;tation sentimentale pour &eacute;clairer votre vie amoureuse</p>
           <div className="flex gap-4 flex-wrap">
             <a href="#consultation" className="bg-white text-green-600 px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition">Consulter un Voyant</a>

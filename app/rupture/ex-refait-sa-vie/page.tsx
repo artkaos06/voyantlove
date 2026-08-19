@@ -4,7 +4,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Mon Ex Refait sa Vie : Comment le Vivre et Avancer',
+  title: 'Mon ex refait sa vie : comment le vivre et avancer',
   description: 'Votre ex est déjà avec quelqu\'un ou semble passé à autre chose ? Ce que cela prouve (ou pas), pourquoi ça fait si mal, et comment retrouver votre équilibre sans mettre votre vie en pause.',
   url: 'https://www.voyantlove.fr/rupture/ex-refait-sa-vie/',
   keywords: ['mon ex refait sa vie', 'mon ex est déjà avec quelqu\'un', 'mon ex est passé à autre chose', 'accepter que mon ex refasse sa vie', 'mon ex a quelqu\'un d\'autre et ça fait mal'],
@@ -17,20 +17,20 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: '🍃',
-    h1: 'Mon Ex Refait sa Vie : Comment le Vivre et Avancer',
+    h1: 'Mon ex refait sa vie : comment le vivre et avancer',
     subtitle: 'Ce que cela prouve (ou pas), pourquoi ça fait mal, et comment retrouver votre équilibre',
     gradient: 'from-teal-600 via-cyan-600 to-blue-600',
-    backLink: { href: '/rupture/', label: 'Retour à Rupture & Guérison' },
+    backLink: { href: '/rupture/', label: 'Retour à rupture & guérison' },
     anchors: [
-      { href: '#prouve', label: 'Ce que Ça Prouve (ou Pas)', primary: true },
-      { href: '#accepter', label: 'Comment Accepter' },
+      { href: '#prouve', label: 'Ce que ça prouve (ou pas)', primary: true },
+      { href: '#accepter', label: 'Comment accepter' },
     ],
   },
   accentText: 'text-teal-600',
   stats: [
     { icon: '🔮', value: 'Reconnue', label: 'Expertise' },
     { icon: '🍃', value: '3,300+', label: 'Consultations' },
-    { icon: '⭐', value: '4.7/5', label: '283 avis' },
+    { icon: '⭐', value: '4.7/5', label: '283 Avis' },
     { icon: '🔒', value: '100%', label: 'Confidentiel' },
   ],
   eeat: { colorScheme: 'teal', method: 'Guidance de reconstruction et accompagnement après séparation' },
@@ -58,11 +58,11 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/rupture/', label: 'Rupture & Guérison : Toutes nos Guidances' },
-    { href: '/rupture/guerir-rupture/', label: 'Guérir d\'une Rupture Amoureuse' },
-    { href: '/reconquete/quitte-pour-quelquun-dautre-va-t-il-revenir/', label: 'Quitté pour Quelqu\'un d\'Autre : Va-t-il Revenir ?' },
-    { href: '/rupture/signes-reseaux-sociaux-apres-rupture/', label: 'Réseaux Sociaux Après une Rupture' },
-    { href: '/rupture/confiance-en-soi-apres-divorce/', label: 'Retrouver Confiance en Soi Après un Divorce' },
+    { href: '/rupture/', label: 'Rupture & guérison : toutes nos guidances' },
+    { href: '/rupture/guerir-rupture/', label: 'Guérir d\'une rupture amoureuse' },
+    { href: '/reconquete/quitte-pour-quelquun-dautre-va-t-il-revenir/', label: 'Quitté pour quelqu\'un d\'autre : va-t-il revenir ?' },
+    { href: '/rupture/signes-reseaux-sociaux-apres-rupture/', label: 'Réseaux sociaux après une rupture' },
+    { href: '/rupture/confiance-en-soi-apres-divorce/', label: 'Retrouver confiance en soi après un divorce' },
   ],
 };
 

@@ -7,14 +7,14 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
 export const metadata: Metadata = {
-  title: 'Reconquête Amoureuse : Reconquérir son Ex | Voyance et Tarot',
+  title: 'Reconquête amoureuse : reconquérir son ex | voyance et Tarot',
   description: 'Guide complet pour reconquérir votre ex : stratégies, timing idéal, signes de retour selon le tarot et la voyance.',
   alternates: { canonical: 'https://www.voyantlove.fr/reconquete/' },
 };
 
 export default function ReconqueteHubPage() {
   const webPageSchema = getWebPageSchema({
-    title: 'Reconquête Amoureuse : Reconquérir son Ex | Voyance et Tarot',
+    title: 'Reconquête amoureuse : reconquérir son ex | voyance et Tarot',
     description: 'Guide complet pour reconquérir votre ex : stratégies, timing idéal, signes de retour selon le tarot et la voyance.',
     url: 'https://www.voyantlove.fr/reconquete/',
   });
@@ -56,7 +56,7 @@ export default function ReconqueteHubPage() {
       <header className="bg-gradient-to-r from-purple-600 via-purple-700 to-indigo-600 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <Link href="/" className="text-white/80 hover:text-white mb-4 inline-block">← Accueil</Link>
-          <h1 className="text-5xl font-bold mb-6">💜 Reconquête Amoureuse</h1>
+          <h1 className="text-5xl font-bold mb-6">💜 Reconquête amoureuse</h1>
           <p className="text-2xl opacity-95 mb-8">Stratégies et Guidance pour Reconquérir votre Ex</p>
           <p className="text-lg opacity-90 max-w-2xl mx-auto">En <Link href="/voyance-amour/" className="text-white underline hover:text-white/80 font-medium">voyance amoureuse</Link>, le tarot révèle si un retour est possible, le timing idéal et les étapes pour maximiser vos chances.</p>
         </div>

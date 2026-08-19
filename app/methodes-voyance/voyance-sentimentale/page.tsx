@@ -4,7 +4,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Voyance Sentimentale : Consultation Gratuite ou avec Voyant Expert',
+  title: 'Voyance sentimentale : consultation gratuite ou avec voyant expert',
   description: 'Voyance sentimentale : consultation gratuite ou avec voyant spécialisé amour. Sentiments, couple, reconquête, rencontre, guidance par tarot, oracle et clairvoyance.',
   url: 'https://www.voyantlove.fr/methodes-voyance/voyance-sentimentale/',
   keywords: ['consultation voyance sentimentale', 'voyance sentimentale', 'consultation voyance amour', 'voyance amoureuse', 'voyance du coeur', 'voyant amour'],
@@ -17,13 +17,13 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: '',
-    h1: 'Voyance Sentimentale',
+    h1: 'Voyance sentimentale',
     subtitle: 'Guidance amoureuse spécialisée pour éclairer toutes vos questions du cœur',
     gradient: 'from-indigo-600 via-purple-600 to-pink-500',
-    backLink: { href: '/methodes-voyance/', label: 'Retour aux Méthodes de Voyance' },
+    backLink: { href: '/methodes-voyance/', label: 'Retour aux méthodes de voyance' },
     anchors: [
-      { href: '#consultation', label: 'Consulter un Voyant', primary: true },
-      { href: '#methodes', label: 'Les Méthodes' },
+      { href: '#consultation', label: 'Consulter un voyant', primary: true },
+      { href: '#methodes', label: 'Les méthodes' },
     ],
   },
   accentText: 'text-purple-600',
@@ -70,11 +70,11 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/methodes-voyance/', label: 'Méthodes de Voyance Amoureuse : Guide Complet' },
-    { href: '/methodes-voyance/tirage-tarot-amour/', label: 'Tirage Tarot Amour : Analyse Sentimentale' },
-    { href: '/methodes-voyance/voyance-telephone-amour/', label: 'Voyance par Téléphone Amour' },
-    { href: '/voyance-gratuite-amour/', label: 'Voyance Gratuite Amour : Tirages et Guidance' },
-    { href: '/sentiments/', label: 'Sentiments & Avenir Amoureux' },
+    { href: '/methodes-voyance/', label: 'Méthodes de voyance amoureuse : guide complet' },
+    { href: '/methodes-voyance/tirage-tarot-amour/', label: 'Tirage Tarot amour : analyse sentimentale' },
+    { href: '/methodes-voyance/voyance-telephone-amour/', label: 'Voyance par téléphone amour' },
+    { href: '/voyance-gratuite-amour/', label: 'Voyance gratuite amour : tirages et guidance' },
+    { href: '/sentiments/', label: 'Sentiments & avenir amoureux' },
   ],
 };
 

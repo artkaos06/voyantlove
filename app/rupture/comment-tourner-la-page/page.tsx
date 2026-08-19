@@ -4,7 +4,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Comment Tourner la Page après une Rupture | Voyance',
+  title: 'Comment tourner la page après une rupture | voyance',
   description: 'Comment tourner la page après une rupture amoureuse ? La voyance et le tarot vous guident pour lâcher prise, avancer et retrouver la paix intérieure.',
   url: 'https://www.voyantlove.fr/rupture/comment-tourner-la-page/',
   keywords: ['tourner la page', 'avancer après rupture', 'oublier et avancer', 'lâcher prise amour', 'après rupture voyance'],
@@ -17,17 +17,17 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: '🖤',
-    h1: 'Comment Tourner la Page après une Rupture',
+    h1: 'Comment tourner la page après une rupture',
     subtitle: 'Lâcher prise et avancer avec la guidance de la voyance',
     gradient: 'from-gray-700 via-gray-800 to-gray-900',
     backLink: { href: '/rupture/', label: 'Rupture' },
     anchors: [
-      { href: '#consultation', label: 'Consultation Guidance', primary: true },
+      { href: '#consultation', label: 'Consultation guidance', primary: true },
     ],
   },
   accentText: 'text-gray-700',
   stats: [
-    { icon: '⭐', value: '4.8/5', label: '328 avis' },
+    { icon: '⭐', value: '4.8/5', label: '328 Avis' },
     { icon: '🕊️', value: '6-18', label: 'Mois de guérison' },
     { icon: '💫', value: '89%', label: 'Retrouvent le sourire' },
     { icon: '🔮', value: '15 ans', label: 'Expérience' },
@@ -53,12 +53,12 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/rupture/rupture-amoureuse/', label: 'Surmonter une Rupture Amoureuse' },
-    { href: '/rupture/oublier-son-ex/', label: 'Comment Oublier son Ex' },
-    { href: '/rupture/surmonter-trahison/', label: 'Surmonter une Trahison Amoureuse' },
-    { href: '/rupture/chagrin-damour/', label: 'Guérir d\'un Chagrin d\'Amour' },
-    { href: '/nouvelle-rencontre/quand-rencontre-amour/', label: 'Quand Vais-je Rencontrer l\'Amour ?' },
-    { href: '/sentiments/maime-t-il-elle/', label: 'M\'aime-t-il / M\'aime-t-elle Encore ?' },
+    { href: '/rupture/rupture-amoureuse/', label: 'Surmonter une rupture amoureuse' },
+    { href: '/rupture/oublier-son-ex/', label: 'Comment oublier son ex' },
+    { href: '/rupture/surmonter-trahison/', label: 'Surmonter une trahison amoureuse' },
+    { href: '/rupture/chagrin-damour/', label: 'Guérir d\'un chagrin d\'amour' },
+    { href: '/nouvelle-rencontre/quand-rencontre-amour/', label: 'Quand vais-je rencontrer l\'amour ?' },
+    { href: '/sentiments/maime-t-il-elle/', label: 'M\'aime-t-il / m\'aime-t-elle encore ?' },
   ],
 };
 

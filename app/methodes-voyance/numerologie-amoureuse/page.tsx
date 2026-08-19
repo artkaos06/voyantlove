@@ -7,7 +7,7 @@ import NumerologyCompatibilityCalculator from '@/components/NumerologyCompatibil
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Numérologie Amoureuse : Compatibilité',
+  title: 'Numérologie amoureuse : compatibilité',
   description: 'Numérologie amoureuse : chemin de vie, nombre d\'expression, nombre intime et compatibilité de couple. Calculez vos chiffres et leur sens en amour.',
   url: 'https://www.voyantlove.fr/methodes-voyance/numerologie-amoureuse/',
   keywords: ['numérologie amoureuse', 'numérologie couple', 'chemin de vie amour', 'compatibilité numérologie', 'nombre d\'expression amour', 'nombre intime numérologie', 'compatibilité par date de naissance'],
@@ -20,13 +20,13 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: '🔢',
-    h1: 'Numérologie Amoureuse',
+    h1: 'Numérologie amoureuse',
     subtitle: 'Compatibilité et Destin par les Chiffres',
     gradient: 'from-amber-600 via-orange-600 to-red-600',
-    backLink: { href: '/methodes-voyance/', label: 'Retour aux Méthodes de Voyance' },
+    backLink: { href: '/methodes-voyance/', label: 'Retour aux méthodes de voyance' },
     anchors: [
-      { href: '#calculateur', label: 'Calculer mes Nombres', primary: true },
-      { href: '#compatibilite', label: 'Compatibilité Numérique' },
+      { href: '#calculateur', label: 'Calculer mes nombres', primary: true },
+      { href: '#compatibilite', label: 'Compatibilité numérique' },
     ],
   },
   accentText: 'text-orange-600',

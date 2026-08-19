@@ -4,7 +4,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Ascendant en Amour : Signification et Compatibilité',
+  title: 'Ascendant en amour : signification et compatibilité',
   description: 'L\'ascendant en amour : ce que votre signe ascendant révèle sur votre style de séduction et la première attraction. Calcul, signification par signe et compatibilité.',
   url: 'https://www.voyantlove.fr/methodes-voyance/ascendant-amour/',
   keywords: ['ascendant amour', 'ascendant en amour', 'signe ascendant amoureux', 'calculer son ascendant', 'ascendant et attraction'],
@@ -17,13 +17,13 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: '🌅',
-    h1: 'Ascendant en Amour',
+    h1: 'Ascendant en amour',
     subtitle: 'Ce que votre signe ascendant révèle sur votre style de séduction',
     gradient: 'from-violet-600 via-indigo-600 to-purple-600',
-    backLink: { href: '/methodes-voyance/', label: 'Retour aux Méthodes de Voyance' },
+    backLink: { href: '/methodes-voyance/', label: 'Retour aux méthodes de voyance' },
     anchors: [
-      { href: '#calcul', label: 'Calculer son Ascendant', primary: true },
-      { href: '#signes', label: 'Ascendant par Signe' },
+      { href: '#calcul', label: 'Calculer son ascendant', primary: true },
+      { href: '#signes', label: 'Ascendant par signe' },
     ],
   },
   accentText: 'text-indigo-700',
@@ -54,11 +54,11 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/methodes-voyance/astrologie-amoureuse/', label: 'Astrologie Amoureuse : Compatibilité Astrale et Prédictions' },
-    { href: '/methodes-voyance/synastrie-amoureuse/', label: 'Synastrie Amoureuse : Compatibilité de Couple' },
-    { href: '/astrologie-amour/', label: 'Les Signes Astrologiques en Amour' },
-    { href: '/glossaire/ascendant/', label: 'Glossaire : Ascendant' },
-    { href: '/sentiments/compatibilite-amoureuse/', label: 'Compatibilité Amoureuse : Tous les Indicateurs' },
+    { href: '/methodes-voyance/astrologie-amoureuse/', label: 'Astrologie amoureuse : compatibilité astrale et prédictions' },
+    { href: '/methodes-voyance/synastrie-amoureuse/', label: 'Synastrie amoureuse : compatibilité de couple' },
+    { href: '/astrologie-amour/', label: 'Les signes astrologiques en amour' },
+    { href: '/glossaire/ascendant/', label: 'Glossaire : ascendant' },
+    { href: '/sentiments/compatibilite-amoureuse/', label: 'Compatibilité amoureuse : tous les indicateurs' },
   ],
 };
 

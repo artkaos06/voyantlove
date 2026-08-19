@@ -4,7 +4,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Voyance par Chat Amour : Consultation en Ligne',
+  title: 'Voyance par chat amour : consultation en ligne',
   description: 'Voyance par chat amour : consultez un voyant en ligne par messagerie pour vos questions sentimentales. Discret, rapide et accessible 24h/24.',
   url: 'https://www.voyantlove.fr/methodes-voyance/voyance-par-chat-amour/',
   keywords: ['voyance chat amour', 'voyance en ligne', 'consultation chat voyance', 'voyance par messagerie', 'chat voyant amour'],
@@ -17,17 +17,17 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: '💬',
-    h1: 'Voyance par Chat Amour : Consultation en Ligne',
+    h1: 'Voyance par chat amour : consultation en ligne',
     subtitle: 'Consultez un voyant en ligne par messagerie, en toute discrétion',
     gradient: 'from-indigo-500 via-violet-600 to-indigo-700',
-    backLink: { href: '/methodes-voyance/', label: 'Méthodes de Voyance' },
+    backLink: { href: '/methodes-voyance/', label: 'Méthodes de voyance' },
     anchors: [
-      { href: '#consultation', label: 'Démarrer un Chat', primary: true },
+      { href: '#consultation', label: 'Démarrer un chat', primary: true },
     ],
   },
   accentText: 'text-indigo-600',
   stats: [
-    { icon: '⭐', value: '4.8/5', label: '358 avis' },
+    { icon: '⭐', value: '4.8/5', label: '358 Avis' },
     { icon: '💬', value: '24/7', label: 'Disponibilité' },
     { icon: '🔒', value: '100%', label: 'Confidentiel' },
     { icon: '🔮', value: '15 ans', label: 'Expérience' },
@@ -53,9 +53,9 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/methodes-voyance/voyance-telephone-amour/', label: 'Voyance par Téléphone Amour' },
-    { href: '/methodes-voyance/voyance-sentimentale/', label: 'Voyance Sentimentale' },
-    { href: '/methodes-voyance/tirage-tarot-amour/', label: 'Tirage Tarot Amour' },
+    { href: '/methodes-voyance/voyance-telephone-amour/', label: 'Voyance par téléphone amour' },
+    { href: '/methodes-voyance/voyance-sentimentale/', label: 'Voyance sentimentale' },
+    { href: '/methodes-voyance/tirage-tarot-amour/', label: 'Tirage Tarot amour' },
   ],
 };
 

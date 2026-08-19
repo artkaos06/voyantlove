@@ -4,7 +4,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Dois-je attendre le retour de mon ex ? Réponse du tarot',
+  title: 'Dois-je attendre le retour de mon ex ? réponse du tarot',
   description: 'Faut-il attendre le retour de votre ex ? Le tarot révèle les signes qui indiquent si l\'attente en vaut la peine, et combien de temps patienter.',
   url: 'https://www.voyantlove.fr/reconquete/dois-je-attendre-son-retour/',
   keywords: ['dois-je attendre mon ex', 'faut-il attendre son retour', 'attendre le retour voyance', 'combien de temps attendre ex', 'tarot attente reconquête'],
@@ -20,17 +20,17 @@ const config: ContentPageConfig = {
     h1: 'Dois-je attendre le retour de mon ex ?',
     subtitle: 'Le tarot révèle si l\'attente de son retour en vaut vraiment la peine',
     gradient: 'from-violet-600 via-purple-600 to-indigo-600',
-    backLink: { href: '/reconquete/', label: 'Retour à la Reconquête' },
+    backLink: { href: '/reconquete/', label: 'Retour à la reconquête' },
     anchors: [
-      { href: '#signes', label: 'Signes à Observer', primary: true },
-      { href: '#tirage', label: 'Tirage de l\'Attente' },
+      { href: '#signes', label: 'Signes à observer', primary: true },
+      { href: '#tirage', label: 'Tirage de l\'attente' },
     ],
   },
   accentText: 'text-violet-600',
   stats: [
     { icon: '🔮', value: 'Reconnue', label: 'Expertise' },
     { icon: '⏳', value: '3,600+', label: 'Tirages réalisés' },
-    { icon: '⭐', value: '4.7/5', label: '271 avis' },
+    { icon: '⭐', value: '4.7/5', label: '271 Avis' },
     { icon: '🔒', value: '100%', label: 'Confidentiel' },
   ],
   eeat: { colorScheme: 'purple', method: 'Tarot de l\'attente et guidance de reconquête' },
@@ -58,12 +58,12 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/reconquete/', label: 'Reconquête Amoureuse : Toutes nos Guidances' },
-    { href: '/reconquete/va-t-il-elle-revenir/', label: 'Va-t-il/elle Revenir ?' },
-    { href: '/reconquete/ex-revient-silence-radio/', label: 'Silence Radio : Ex qui Recontacte' },
-    { href: '/crise-couple/dependance-affective/', label: 'Dépendance Affective' },
-    { href: '/reconquete/se-remettre-ensemble/', label: 'Se Remettre Ensemble' },
-    { href: '/reconquete/veut-se-remettre-ensemble-mais-ne-fait-rien/', label: 'Il Veut se Remettre Ensemble mais ne Fait Rien' },
+    { href: '/reconquete/', label: 'Reconquête amoureuse : toutes nos guidances' },
+    { href: '/reconquete/va-t-il-elle-revenir/', label: 'Va-t-il/elle revenir ?' },
+    { href: '/reconquete/ex-revient-silence-radio/', label: 'Silence radio : ex qui recontacte' },
+    { href: '/crise-couple/dependance-affective/', label: 'Dépendance affective' },
+    { href: '/reconquete/se-remettre-ensemble/', label: 'Se remettre ensemble' },
+    { href: '/reconquete/veut-se-remettre-ensemble-mais-ne-fait-rien/', label: 'Il veut se remettre ensemble mais ne fait rien' },
   ],
 };
 

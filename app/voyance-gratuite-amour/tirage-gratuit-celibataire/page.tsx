@@ -8,7 +8,7 @@ import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 import TarotSpread from '@/components/TarotSpread';
 
 export const metadata: Metadata = {
-  title: 'Tirage Gratuit Amour Célibataire : Votre Avenir Sentimental',
+  title: 'Tirage gratuit amour célibataire : votre avenir sentimental',
   description: 'Tirage gratuit amour pour célibataires : découvrez quand et comment vous rencontrerez l\'amour selon le tarot et l\'oracle.',
   keywords: ['tirage gratuit amour celibataire', 'tarot celibataire gratuit', 'voyance gratuite celibataire'],
   alternates: {
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 
 export default function TirageGratuitCelibatairePage() {
   const articleSchema = getArticleSchema({
-    title: 'Tirage Gratuit Amour Célibataire : Votre Avenir Sentimental',
+    title: 'Tirage gratuit amour célibataire : votre avenir sentimental',
     description: 'Tirage gratuit amour pour célibataires : découvrez quand et comment vous rencontrerez l\'amour selon le tarot et l\'oracle.',
     url: 'https://www.voyantlove.fr/voyance-gratuite-amour/tirage-gratuit-celibataire/',
     datePublished: '2026-03-10',
@@ -76,7 +76,7 @@ export default function TirageGratuitCelibatairePage() {
       <header className="bg-gradient-to-r from-rose-500 via-pink-500 to-fuchsia-500 text-white py-16 px-4">
         <div className="max-w-4xl mx-auto">
           <Link href="/voyance-gratuite-amour/" className="text-white/80 hover:text-white mb-4 inline-block">&larr; Retour &agrave; Voyance Gratuite Amour</Link>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">&#x1F0CF; Tirage Gratuit Amour C&eacute;libataire</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">&#x1F0CF; tirage gratuit amour c&eacute;libataire</h1>
           <p className="text-xl opacity-95 mb-6">D&eacute;couvrez votre avenir sentimental gr&acirc;ce au tarot et &agrave; l&apos;oracle pour c&eacute;libataires</p>
           <div className="flex gap-4 flex-wrap">
             <a href="#tirages" className="bg-white text-rose-600 px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition">Tirage Personnalis&eacute;</a>

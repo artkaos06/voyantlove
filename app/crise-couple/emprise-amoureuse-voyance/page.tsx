@@ -3,7 +3,7 @@ import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Emprise Amoureuse : Reconnaître et Se Libérer d\'un Manipulateur',
+  title: 'Emprise amoureuse : reconnaître et se libérer d\'un manipulateur',
   description: 'Vous êtes sous emprise amoureuse ou avec un manipulateur ? Découvrez les signes d\'une relation toxique, comment s\'en sortir et ce que la voyance révèle sur votre situation.',
   url: 'https://www.voyantlove.fr/crise-couple/emprise-amoureuse-voyance/',
   keywords: ['emprise amoureuse', 'relation toxique voyance', 'manipulateur amour', 'pervers narcissique voyance', 'se libérer emprise amoureuse'],
@@ -16,13 +16,13 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: '⚠️',
-    h1: 'Emprise Amoureuse',
+    h1: 'Emprise amoureuse',
     subtitle: 'Reconnaître et Se Libérer d\'un Manipulateur',
     gradient: 'from-red-700 via-rose-700 to-pink-700',
-    backLink: { href: '/crise-couple/', label: 'Retour à Crise de Couple' },
+    backLink: { href: '/crise-couple/', label: 'Retour à crise de couple' },
     anchors: [
-      { href: '#signes', label: 'Les 10 Signes d\'Emprise', primary: true },
-      { href: '#liberation', label: 'Se Libérer' },
+      { href: '#signes', label: 'Les 10 signes d\'emprise', primary: true },
+      { href: '#liberation', label: 'Se libérer' },
     ],
   },
   accentText: 'text-red-600',
@@ -53,10 +53,10 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/crise-couple/', label: 'Crise de Couple : Toutes nos Guidances' },
-    { href: '/sentiments/relation-toxique/', label: 'Relation Toxique : Signes et Comment S\'en Sortir' },
-    { href: '/crise-couple/pardonner-en-amour/', label: 'Pardonner en Amour : Quand et Comment ?' },
-    { href: '/rupture/oublier-son-ex/', label: 'Se Reconstruire après la Rupture : Guide Complet' },
+    { href: '/crise-couple/', label: 'Crise de couple : toutes nos guidances' },
+    { href: '/sentiments/relation-toxique/', label: 'Relation toxique : signes et comment s\'en sortir' },
+    { href: '/crise-couple/pardonner-en-amour/', label: 'Pardonner en amour : quand et comment ?' },
+    { href: '/rupture/oublier-son-ex/', label: 'Se reconstruire après la rupture : guide complet' },
   ],
 };
 

@@ -4,7 +4,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Réseaux Sociaux Après une Rupture : Que Signifient ses Changements ?',
+  title: 'Réseaux sociaux après une rupture : que signifient ses changements ?',
   description: 'Photos supprimées, nom modifié, désabonnement, stories regardées : une matrice d\'interprétation des signaux numériques après une rupture, ce qu\'ils peuvent dire et ce qu\'ils ne prouvent pas.',
   url: 'https://www.voyantlove.fr/rupture/signes-reseaux-sociaux-apres-rupture/',
   keywords: ['signes réseaux sociaux après rupture', 'mon ex a supprimé nos photos', 'mon ex regarde toutes mes stories', 'mon ex ne me suit plus sur Instagram', 'pourquoi mon ex me bloque puis me débloque'],
@@ -17,20 +17,20 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: '📱',
-    h1: 'Photos Supprimées, Nom Modifié, Silence : Interpréter les Réseaux Sociaux Après une Rupture',
+    h1: 'Photos supprimées, nom modifié, silence : interpréter les réseaux sociaux après une rupture',
     subtitle: 'Ce que les signaux numériques peuvent dire, et surtout ce qu\'ils ne prouvent pas',
     gradient: 'from-slate-600 via-indigo-600 to-purple-600',
-    backLink: { href: '/rupture/', label: 'Retour à Rupture & Guérison' },
+    backLink: { href: '/rupture/', label: 'Retour à rupture & guérison' },
     anchors: [
-      { href: '#matrice', label: 'La Matrice des Signaux', primary: true },
-      { href: '#surveillance', label: 'Quand la Veille Fait Mal' },
+      { href: '#matrice', label: 'La matrice des signaux', primary: true },
+      { href: '#surveillance', label: 'Quand la veille fait mal' },
     ],
   },
   accentText: 'text-indigo-600',
   stats: [
     { icon: '🔮', value: 'Reconnue', label: 'Expertise' },
     { icon: '📱', value: '3,200+', label: 'Consultations' },
-    { icon: '⭐', value: '4.7/5', label: '254 avis' },
+    { icon: '⭐', value: '4.7/5', label: '254 Avis' },
     { icon: '🔒', value: '100%', label: 'Confidentiel' },
   ],
   eeat: { colorScheme: 'blue', method: 'Guidance émotionnelle et lecture des comportements post-rupture' },
@@ -58,11 +58,11 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/rupture/', label: 'Rupture & Guérison : Toutes nos Guidances' },
-    { href: '/rupture/oublier-son-ex/', label: 'Oublier son Ex' },
-    { href: '/rupture/comment-tourner-la-page/', label: 'Comment Tourner la Page' },
-    { href: '/reconquete/ex-chaud-et-froid-apres-separation/', label: 'Mon Ex est Chaud et Froid' },
-    { href: '/sentiments/pense-t-il-elle-a-moi/', label: 'Pense-t-il/elle à Moi ?' },
+    { href: '/rupture/', label: 'Rupture & guérison : toutes nos guidances' },
+    { href: '/rupture/oublier-son-ex/', label: 'Oublier son ex' },
+    { href: '/rupture/comment-tourner-la-page/', label: 'Comment tourner la page' },
+    { href: '/reconquete/ex-chaud-et-froid-apres-separation/', label: 'Mon ex est chaud et froid' },
+    { href: '/sentiments/pense-t-il-elle-a-moi/', label: 'Pense-t-il/elle à moi ?' },
   ],
 };
 

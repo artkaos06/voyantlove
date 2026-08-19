@@ -4,7 +4,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Vivre sous le Même Toit Après une Séparation : Comment Faire ?',
+  title: 'Vivre sous le même toit après une séparation : comment faire ?',
   description: 'Contraint(e) de cohabiter avec votre ex après la rupture ? Limites affectives, communication et organisation concrète pour sortir de l\'ambiguïté au quotidien.',
   url: 'https://www.voyantlove.fr/crise-couple/vivre-meme-toit-apres-separation/',
   keywords: ['vivre sous le même toit après une séparation', 'cohabiter après une rupture', 'séparés mais vivant ensemble', 'vivre avec son ex sous le même toit', 'comment tourner la page en vivant avec son ex'],
@@ -17,20 +17,20 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: '🏠',
-    h1: 'Comment Vivre sous le Même Toit Après une Séparation ?',
+    h1: 'Comment vivre sous le même toit après une séparation ?',
     subtitle: 'Créer une séparation réelle malgré un logement partagé, sans faux espoirs',
     gradient: 'from-amber-600 via-orange-600 to-red-700',
-    backLink: { href: '/crise-couple/', label: 'Retour à la Crise de Couple' },
+    backLink: { href: '/crise-couple/', label: 'Retour à la crise de couple' },
     anchors: [
-      { href: '#regles', label: 'Règles de Cohabitation', primary: true },
-      { href: '#sortie', label: 'Préparer la Sortie' },
+      { href: '#regles', label: 'Règles de cohabitation', primary: true },
+      { href: '#sortie', label: 'Préparer la sortie' },
     ],
   },
   accentText: 'text-orange-700',
   stats: [
     { icon: '🔮', value: 'Reconnue', label: 'Expertise' },
     { icon: '🏠', value: '2,900+', label: 'Consultations' },
-    { icon: '⭐', value: '4.6/5', label: '237 avis' },
+    { icon: '⭐', value: '4.6/5', label: '237 Avis' },
     { icon: '🔒', value: '100%', label: 'Confidentiel' },
   ],
   eeat: { colorScheme: 'orange', method: 'Guidance sur la cohabitation post-rupture et les limites relationnelles' },
@@ -58,11 +58,11 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/crise-couple/', label: 'Crise de Couple : Toutes nos Guidances' },
-    { href: '/crise-couple/dependance-affective/', label: 'Dépendance Affective' },
-    { href: '/crise-couple/couple-a-distance-voyance/', label: 'Couple à Distance' },
-    { href: '/reconquete/separation-temporaire-ou-definitive/', label: 'Séparation Temporaire ou Définitive ?' },
-    { href: '/rupture/rupture-soudaine-sans-explication/', label: 'Rupture Soudaine sans Explication' },
+    { href: '/crise-couple/', label: 'Crise de couple : toutes nos guidances' },
+    { href: '/crise-couple/dependance-affective/', label: 'Dépendance affective' },
+    { href: '/crise-couple/couple-a-distance-voyance/', label: 'Couple à distance' },
+    { href: '/reconquete/separation-temporaire-ou-definitive/', label: 'Séparation temporaire ou définitive ?' },
+    { href: '/rupture/rupture-soudaine-sans-explication/', label: 'Rupture soudaine sans explication' },
   ],
 };
 

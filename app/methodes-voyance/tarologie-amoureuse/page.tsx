@@ -4,7 +4,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Tarologie Amoureuse : L\'Art de Lire les Cartes de l\'Amour',
+  title: 'Tarologie amoureuse : l\'art de lire les cartes de l\'amour',
   description: 'Tarologie amoureuse : l\'art de lire le tarot pour les questions sentimentales. Découvrez les tirages, les arcanes clés et comment choisir un tarologue spécialisé en amour.',
   url: 'https://www.voyantlove.fr/methodes-voyance/tarologie-amoureuse/',
   keywords: ['tarologie amoureuse', 'tarologie amour', 'tarologue amour', 'tarologie sentimentale', 'lecture tarot amour', 'tarologue spécialisé amour'],
@@ -17,13 +17,13 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: '🃏',
-    h1: 'Tarologie Amoureuse',
+    h1: 'Tarologie amoureuse',
     subtitle: 'L\'art de lire les cartes du tarot pour décrypter votre vie sentimentale',
     gradient: 'from-indigo-600 via-purple-600 to-violet-600',
-    backLink: { href: '/methodes-voyance/', label: 'Méthodes de Voyance' },
+    backLink: { href: '/methodes-voyance/', label: 'Méthodes de voyance' },
     anchors: [
-      { href: '#consultation', label: 'Consulter un Tarologue', primary: true },
-      { href: '#arcanes', label: 'Les Arcanes Clés' },
+      { href: '#consultation', label: 'Consulter un tarologue', primary: true },
+      { href: '#arcanes', label: 'Les arcanes clés' },
     ],
   },
   accentText: 'text-indigo-600',
@@ -62,12 +62,12 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/methodes-voyance/tirage-tarot-amour/', label: 'Tirage Tarot Amour : Guide Complet' },
-    { href: '/methodes-voyance/oracle-amour/', label: 'Oracle de l\'Amour' },
-    { href: '/methodes-voyance/pendule-amour/', label: 'Pendule Amour' },
-    { href: '/methodes-voyance/voyance-sentimentale/', label: 'Voyance Sentimentale' },
-    { href: '/voyance-gratuite-amour/tarot-oui-non-amour/', label: 'Tarot Oui/Non Amour Gratuit' },
-    { href: '/voyance-amour/', label: 'Voyance Amour : Tout Savoir' },
+    { href: '/methodes-voyance/tirage-tarot-amour/', label: 'Tirage Tarot amour : guide complet' },
+    { href: '/methodes-voyance/oracle-amour/', label: 'Oracle de l\'amour' },
+    { href: '/methodes-voyance/pendule-amour/', label: 'Pendule amour' },
+    { href: '/methodes-voyance/voyance-sentimentale/', label: 'Voyance sentimentale' },
+    { href: '/voyance-gratuite-amour/tarot-oui-non-amour/', label: 'Tarot oui/non amour gratuit' },
+    { href: '/voyance-amour/', label: 'Voyance amour : tout savoir' },
   ],
 };
 

@@ -8,7 +8,7 @@ import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 import TarotSpread from '@/components/TarotSpread';
 
 export const metadata: Metadata = {
-  title: 'Tarot du Jour Amour Gratuit : Tirage Quotidien en Ligne',
+  title: 'Tarot du jour amour gratuit : tirage quotidien en ligne',
   description: 'Tirez votre tarot du jour amour gratuit : une carte pour éclairer votre énergie sentimentale du jour. Tirage quotidien en ligne, sans inscription.',
   keywords: ['tarot du jour amour', 'tarot du jour gratuit', 'carte du jour amour', 'tirage quotidien amour', 'tarot du jour en ligne'],
   alternates: {
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 
 export default function TarotDuJourAmourPage() {
   const articleSchema = getArticleSchema({
-    title: 'Tarot du Jour Amour Gratuit : Tirage Quotidien en Ligne | VoyantLove',
+    title: 'Tarot du jour amour gratuit : tirage quotidien en ligne | VoyantLove',
     description: 'Tirez votre tarot du jour amour gratuit : une carte pour éclairer votre énergie sentimentale du jour. Tirage quotidien en ligne, sans inscription.',
     url: 'https://www.voyantlove.fr/voyance-gratuite-amour/tarot-du-jour-amour/',
     datePublished: '2026-08-07',
@@ -64,7 +64,7 @@ export default function TarotDuJourAmourPage() {
       <header className="bg-gradient-to-r from-emerald-500 via-green-500 to-teal-500 text-white py-16 px-4">
         <div className="max-w-4xl mx-auto">
           <Link href="/voyance-gratuite-amour/" className="text-white/80 hover:text-white mb-4 inline-block">&larr; Retour &agrave; Voyance Gratuite Amour</Link>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">🌞 Tarot du Jour Amour Gratuit</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">🌞 Tarot du jour amour gratuit</h1>
           <p className="text-xl opacity-95 mb-6">Une carte, un éclairage sur l&apos;énergie sentimentale de votre journée</p>
           <div className="flex gap-4 flex-wrap">
             <a href="#tirage" className="bg-white text-emerald-600 px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition">Tirer ma Carte du Jour ↓</a>

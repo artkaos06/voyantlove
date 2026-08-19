@@ -20,14 +20,14 @@ const config: ContentPageConfig = {
     h1: "Peur d'Aimer à Nouveau : Surmonter les Blocages",
     subtitle: 'Lever les blocages amoureux avec la guidance de la voyance',
     gradient: 'from-cyan-500 via-cyan-600 to-blue-600',
-    backLink: { href: '/nouvelle-rencontre/', label: 'Nouvelle Rencontre' },
+    backLink: { href: '/nouvelle-rencontre/', label: 'Nouvelle rencontre' },
     anchors: [
-      { href: '#consultation', label: 'Consultation Blocages', primary: true },
+      { href: '#consultation', label: 'Consultation blocages', primary: true },
     ],
   },
   accentText: 'text-cyan-600',
   stats: [
-    { icon: '⭐', value: '4.8/5', label: '276 avis' },
+    { icon: '⭐', value: '4.8/5', label: '276 Avis' },
     { icon: '🛡️', value: '1 sur 4', label: 'Personnes touchées' },
     { icon: '💫', value: '85%', label: 'Surmontent la peur' },
     { icon: '🔮', value: '15 ans', label: 'Expérience' },
@@ -53,12 +53,12 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/nouvelle-rencontre/quand-rencontre-amour/', label: 'Quand Vais-je Rencontrer l\'Amour ?' },
-    { href: '/nouvelle-rencontre/rencontre-amoureuse-en-ligne/', label: 'Rencontre Amoureuse en Ligne' },
-    { href: '/nouvelle-rencontre/signes-ame-soeur/', label: 'Les Signes de l\'Âme Sœur' },
-    { href: '/rupture/comment-tourner-la-page/', label: 'Comment Tourner la Page' },
-    { href: '/rupture/chagrin-damour/', label: 'Guérir d\'un Chagrin d\'Amour' },
-    { href: '/rupture/surmonter-trahison/', label: 'Surmonter une Trahison Amoureuse' },
+    { href: '/nouvelle-rencontre/quand-rencontre-amour/', label: 'Quand vais-je rencontrer l\'amour ?' },
+    { href: '/nouvelle-rencontre/rencontre-amoureuse-en-ligne/', label: 'Rencontre amoureuse en ligne' },
+    { href: '/nouvelle-rencontre/signes-ame-soeur/', label: 'Les signes de l\'âme sœur' },
+    { href: '/rupture/comment-tourner-la-page/', label: 'Comment tourner la page' },
+    { href: '/rupture/chagrin-damour/', label: 'Guérir d\'un chagrin d\'amour' },
+    { href: '/rupture/surmonter-trahison/', label: 'Surmonter une trahison amoureuse' },
   ],
 };
 

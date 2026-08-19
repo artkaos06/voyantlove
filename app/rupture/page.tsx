@@ -7,14 +7,14 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
 export const metadata: Metadata = {
-  title: 'Voyance Rupture Amoureuse : Comprendre, Surmonter et Guérir',
+  title: 'Voyance rupture amoureuse : comprendre, surmonter et guérir',
   description: 'Voyance rupture amoureuse : comprenez les causes, surmontez le chagrin et découvrez votre avenir sentimental selon le tarot. Guidance personnalisée.',
   alternates: { canonical: 'https://www.voyantlove.fr/rupture/' },
 };
 
 export default function RuptureHubPage() {
   const webPageSchema = getWebPageSchema({
-    title: 'Voyance Rupture Amoureuse : Comprendre, Surmonter et Guérir | VoyantLove',
+    title: 'Voyance rupture amoureuse : comprendre, surmonter et guérir | VoyantLove',
     description: 'Voyance rupture amoureuse : comprenez les causes, surmontez le chagrin et découvrez votre avenir sentimental selon le tarot. Guidance personnalisée.',
     url: 'https://www.voyantlove.fr/rupture/',
   });
@@ -56,7 +56,7 @@ export default function RuptureHubPage() {
       <header className="bg-gradient-to-r from-gray-700 via-gray-800 to-gray-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <Link href="/" className="text-white/80 hover:text-white mb-4 inline-block">← Accueil</Link>
-          <h1 className="text-5xl font-bold mb-6">💔 Rupture Amoureuse</h1>
+          <h1 className="text-5xl font-bold mb-6">💔 Rupture amoureuse</h1>
           <p className="text-2xl opacity-95 mb-8">Comprendre, Surmonter et Guérir selon la Voyance</p>
           <p className="text-lg opacity-90 max-w-2xl mx-auto">Guidance tarot pour traverser votre rupture, comprendre les raisons profondes et entamer votre reconstruction.</p>
         </div>

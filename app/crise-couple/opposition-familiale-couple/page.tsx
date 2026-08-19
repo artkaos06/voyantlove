@@ -4,7 +4,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Opposition Familiale au Couple : Voyance et Solutions',
+  title: 'Opposition familiale au couple : voyance et solutions',
   description: 'Votre famille s\'oppose à votre relation ? Le tarot éclaire les causes de cette opposition et les stratégies pour préserver votre couple.',
   url: 'https://www.voyantlove.fr/crise-couple/opposition-familiale-couple/',
   keywords: ['opposition familiale couple', 'famille contre ma relation', 'parents opposés relation voyance', 'famille désapprouve couple', 'tarot opposition familiale'],
@@ -17,20 +17,20 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: '👪',
-    h1: 'Opposition Familiale au Couple',
+    h1: 'Opposition familiale au couple',
     subtitle: 'Comment le tarot éclaire et apaise le conflit entre votre famille et votre relation',
     gradient: 'from-amber-700 via-orange-700 to-red-700',
-    backLink: { href: '/crise-couple/', label: 'Retour aux Crises de Couple' },
+    backLink: { href: '/crise-couple/', label: 'Retour aux crises de couple' },
     anchors: [
-      { href: '#causes', label: 'Comprendre les Causes', primary: true },
-      { href: '#strategies', label: 'Stratégies d\'Apaisement' },
+      { href: '#causes', label: 'Comprendre les causes', primary: true },
+      { href: '#strategies', label: 'Stratégies d\'apaisement' },
     ],
   },
   accentText: 'text-orange-700',
   stats: [
     { icon: '🔮', value: 'Reconnue', label: 'Expertise' },
     { icon: '👪', value: '2,800+', label: 'Tirages réalisés' },
-    { icon: '⭐', value: '4.6/5', label: '203 avis' },
+    { icon: '⭐', value: '4.6/5', label: '203 Avis' },
     { icon: '🔒', value: '100%', label: 'Confidentiel' },
   ],
   eeat: { colorScheme: 'orange', method: 'Tarot familial et guidance de couple' },
@@ -58,11 +58,11 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/crise-couple/', label: 'Crise de Couple : Toutes nos Guidances' },
-    { href: '/crise-couple/sauver-son-couple/', label: 'Sauver son Couple' },
-    { href: '/crise-couple/problemes-communication-couple/', label: 'Problèmes de Communication' },
-    { href: '/crise-couple/couple-a-distance-voyance/', label: 'Couple à Distance' },
-    { href: '/crise-couple/pardonner-en-amour/', label: 'Pardonner en Amour' },
+    { href: '/crise-couple/', label: 'Crise de couple : toutes nos guidances' },
+    { href: '/crise-couple/sauver-son-couple/', label: 'Sauver son couple' },
+    { href: '/crise-couple/problemes-communication-couple/', label: 'Problèmes de communication' },
+    { href: '/crise-couple/couple-a-distance-voyance/', label: 'Couple à distance' },
+    { href: '/crise-couple/pardonner-en-amour/', label: 'Pardonner en amour' },
   ],
 };
 

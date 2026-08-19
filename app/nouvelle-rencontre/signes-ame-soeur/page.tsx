@@ -4,7 +4,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Signes de l\'Âme Sœur : Reconnaître Votre Connexion Karmique | 15 Indices',
+  title: 'Signes de l\'âme sœur : reconnaître votre connexion karmique | 15 indices',
   description: 'Découvrez les 15 signes infaillibles de l\'âme sœur selon le tarot et la spiritualité. Connexion instantanée, synchronicités, reconnaissance karmique et union des flammes jumelles.',
   url: 'https://www.voyantlove.fr/nouvelle-rencontre/signes-ame-soeur/',
   keywords: ['âme sœur signes', 'reconnaître âme sœur', 'connexion karmique', 'flammes jumelles', 'signes amour véritable'],
@@ -17,12 +17,12 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: '✨',
-    h1: 'Les Signes de l\'Âme Sœur',
+    h1: 'Les signes de l\'âme sœur',
     subtitle: 'Reconnaître votre connexion karmique et votre amour véritable',
     gradient: 'from-purple-600 via-pink-500 to-rose-500',
-    backLink: { href: '/nouvelle-rencontre/', label: 'Retour aux Nouvelles Rencontres' },
+    backLink: { href: '/nouvelle-rencontre/', label: 'Retour aux nouvelles rencontres' },
     anchors: [
-      { href: '#signes', label: 'Découvrir les 15 Signes', primary: true },
+      { href: '#signes', label: 'Découvrir les 15 signes', primary: true },
       { href: '#tarot', label: 'Confirmation Tarot' },
     ],
   },
@@ -62,10 +62,10 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/nouvelle-rencontre/', label: 'Nouvelle Rencontre : Toutes nos Guidances' },
-    { href: '/nouvelle-rencontre/nouvelle-relation-amoureuse/', label: 'Nouvelle Relation Amoureuse : Premiers Mois' },
-    { href: '/nouvelle-rencontre/quand-rencontre-amour/', label: 'Quand Vais-je Rencontrer l\'Amour ?' },
-    { href: '/sentiments/avenir-amoureux/', label: 'Mon Avenir Amoureux' },
+    { href: '/nouvelle-rencontre/', label: 'Nouvelle rencontre : toutes nos guidances' },
+    { href: '/nouvelle-rencontre/nouvelle-relation-amoureuse/', label: 'Nouvelle relation amoureuse : premiers mois' },
+    { href: '/nouvelle-rencontre/quand-rencontre-amour/', label: 'Quand vais-je rencontrer l\'amour ?' },
+    { href: '/sentiments/avenir-amoureux/', label: 'Mon avenir amoureux' },
   ],
 };
 

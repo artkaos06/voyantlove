@@ -4,7 +4,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Mon Ex Va-t-il Revenir ? Réponse du Tarot et Voyance | Prédiction',
+  title: 'Mon ex va-t-il revenir ? réponse du Tarot et voyance | prédiction',
   description: 'Votre ex va-t-il/elle revenir ? Le tarot répond à cette question cruciale. Découvrez les signes de retour, le timing probable et ce qu\'il/elle ressent vraiment.',
   url: 'https://www.voyantlove.fr/reconquete/va-t-il-elle-revenir/',
   keywords: ['va-t-il revenir', 'mon ex va revenir', 'retour ex tarot', 'prédiction retour', 'signes retour ex'],
@@ -17,18 +17,18 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: '❓',
-    h1: 'Va-t-il/elle Revenir ?',
+    h1: 'Va-t-il/elle revenir ?',
     subtitle: 'La réponse honnête du tarot à votre question la plus importante',
     gradient: 'from-purple-600 via-indigo-600 to-blue-600',
-    backLink: { href: '/reconquete/', label: 'Retour à la Reconquête' },
+    backLink: { href: '/reconquete/', label: 'Retour à la reconquête' },
     anchors: [
-      { href: '#consultation', label: 'Tirage Retour Personnalisé', primary: true },
-      { href: '#signes', label: 'Voir les Signes' },
+      { href: '#consultation', label: 'Tirage retour personnalisé', primary: true },
+      { href: '#signes', label: 'Voir les signes' },
     ],
   },
   accentText: 'text-purple-600',
   stats: [
-    { icon: '⭐', value: '4.8/5', label: '287 avis' },
+    { icon: '⭐', value: '4.8/5', label: '287 Avis' },
     { icon: '↩️', value: 'Fréquent', label: 'Retours observés' },
     { icon: '⏰', value: '3-6 mois', label: 'Délai moyen' },
     { icon: '🔮', value: 'Reconnue', label: 'Expertise' },
@@ -54,12 +54,12 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/reconquete/reconquerir-son-ex/', label: 'Reconquérir son Ex si la Réponse est Oui' },
-    { href: '/reconquete/seconde-chance-amour/', label: 'Donner une Seconde Chance en Amour' },
-    { href: '/reconquete/ex-qui-revient/', label: 'Quand l\'Ex Revient : Que Faire ?' },
-    { href: '/rupture/oublier-son-ex/', label: 'Tourner la Page si la Réponse est Non' },
-    { href: '/sentiments/maime-t-il-elle/', label: 'Ce qu\'il/elle Ressent Vraiment' },
-    { href: '/reconquete/quitte-pour-quelquun-dautre-va-t-il-revenir/', label: 'Quitté pour Quelqu\'un d\'Autre : Va-t-il Revenir ?' },
+    { href: '/reconquete/reconquerir-son-ex/', label: 'Reconquérir son ex si la réponse est oui' },
+    { href: '/reconquete/seconde-chance-amour/', label: 'Donner une seconde chance en amour' },
+    { href: '/reconquete/ex-qui-revient/', label: 'Quand l\'ex revient : que faire ?' },
+    { href: '/rupture/oublier-son-ex/', label: 'Tourner la page si la réponse est non' },
+    { href: '/sentiments/maime-t-il-elle/', label: 'Ce qu\'il/elle ressent vraiment' },
+    { href: '/reconquete/quitte-pour-quelquun-dautre-va-t-il-revenir/', label: 'Quitté pour quelqu\'un d\'autre : va-t-il revenir ?' },
   ],
 };
 

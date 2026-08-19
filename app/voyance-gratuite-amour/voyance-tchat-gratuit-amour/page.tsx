@@ -4,7 +4,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Voyance Tchat Gratuit Amour : Consultation Sentimentale',
+  title: 'Voyance tchat gratuit amour : consultation sentimentale',
   description: 'Voyance gratuite par tchat amour : guide pour une consultation sentimentale fiable. Préparez vos questions, évitez les pièges.',
   url: 'https://www.voyantlove.fr/voyance-gratuite-amour/voyance-tchat-gratuit-amour/',
   keywords: ['voyance tchat gratuit amour', 'voyance gratuite par tchat amour', 'voyance gratuite immediate amour'],
@@ -17,13 +17,13 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: '💬',
-    h1: 'Voyance Tchat Gratuit Amour',
+    h1: 'Voyance tchat gratuit amour',
     subtitle: 'Guide complet pour une consultation sentimentale par tchat fiable et éclairante',
     gradient: 'from-blue-500 via-cyan-500 to-teal-500',
-    backLink: { href: '/voyance-gratuite-amour/', label: 'Retour à Voyance Gratuite Amour' },
+    backLink: { href: '/voyance-gratuite-amour/', label: 'Retour à voyance gratuite amour' },
     anchors: [
-      { href: '#consultation', label: 'Consulter par Tchat', primary: true },
-      { href: '#preparer', label: 'Préparer sa Séance' },
+      { href: '#consultation', label: 'Consulter par tchat', primary: true },
+      { href: '#preparer', label: 'Préparer sa séance' },
     ],
   },
   accentText: 'text-blue-600',
@@ -54,10 +54,10 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/voyance-gratuite-amour/', label: 'Voyance Gratuite Amour : Tirages et Guidance Sentimentale' },
-    { href: '/methodes-voyance/voyance-telephone-amour/', label: 'Voyance Téléphone Amour : Consultation Directe' },
-    { href: '/crise-couple/sauver-son-couple/', label: 'Sauver Son Couple : Conseils et Guidance' },
-    { href: '/sentiments/avenir-amoureux/', label: 'Mon Avenir Amoureux : Prédictions' },
+    { href: '/voyance-gratuite-amour/', label: 'Voyance gratuite amour : tirages et guidance sentimentale' },
+    { href: '/methodes-voyance/voyance-telephone-amour/', label: 'Voyance téléphone amour : consultation directe' },
+    { href: '/crise-couple/sauver-son-couple/', label: 'Sauver son couple : conseils et guidance' },
+    { href: '/sentiments/avenir-amoureux/', label: 'Mon avenir amoureux : prédictions' },
   ],
 };
 

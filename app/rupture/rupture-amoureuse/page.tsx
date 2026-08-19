@@ -4,7 +4,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Rupture Amoureuse : Comprendre et Surmonter selon la Voyance',
+  title: 'Rupture amoureuse : comprendre et surmonter selon la voyance',
   description: 'Comprendre les raisons d\'une rupture amoureuse et guérir selon le tarot. Processus de deuil, timing et reconstruction après séparation.',
   url: 'https://www.voyantlove.fr/rupture/rupture-amoureuse/',
   keywords: ['rupture amoureuse', 'séparation', 'fin relation', 'deuil amoureux', 'surmonter rupture'],
@@ -17,10 +17,10 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: '💔',
-    h1: 'Rupture Amoureuse',
+    h1: 'Rupture amoureuse',
     subtitle: 'Comprendre et surmonter avec le tarot',
     gradient: 'from-gray-700 via-gray-800 to-gray-900',
-    backLink: { href: '/rupture/', label: 'Retour aux Ruptures Amoureuses' },
+    backLink: { href: '/rupture/', label: 'Retour aux ruptures amoureuses' },
     anchors: [
       { href: '#consultation', label: 'Comprendre', primary: true },
       { href: '#guerison', label: 'Guérison' },
@@ -54,12 +54,12 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/rupture/', label: 'Surmonter une Séparation : Guide Complet' },
-    { href: '/rupture/oublier-son-ex/', label: 'Oublier son Ex : Tourner la Page' },
-    { href: '/rupture/chagrin-damour/', label: 'Chagrin d\'Amour : Guérir la Peine de Coeur' },
-    { href: '/reconquete/va-t-il-elle-revenir/', label: 'Va-t-il Revenir ? Le Tarot Répond' },
-    { href: '/nouvelle-rencontre/quand-rencontre-amour/', label: 'Quand Vais-je Rencontrer l\'Amour ?' },
-    { href: '/sentiments/maime-t-il-elle/', label: 'M\'aime-t-il/elle Encore ?' },
+    { href: '/rupture/', label: 'Surmonter une séparation : guide complet' },
+    { href: '/rupture/oublier-son-ex/', label: 'Oublier son ex : tourner la page' },
+    { href: '/rupture/chagrin-damour/', label: 'Chagrin d\'amour : guérir la peine de coeur' },
+    { href: '/reconquete/va-t-il-elle-revenir/', label: 'Va-t-il revenir ? le Tarot répond' },
+    { href: '/nouvelle-rencontre/quand-rencontre-amour/', label: 'Quand vais-je rencontrer l\'amour ?' },
+    { href: '/sentiments/maime-t-il-elle/', label: 'M\'aime-t-il/elle encore ?' },
   ],
 };
 

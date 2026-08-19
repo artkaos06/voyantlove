@@ -4,7 +4,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Il m\'a Quitté pour Quelqu\'un d\'Autre : Peut-il Revenir ?',
+  title: 'Il m\'a quitté pour quelqu\'un d\'autre : peut-il revenir ?',
   description: 'Votre conjoint vous a quitté pour une autre personne ? Ce qui est possible, ce qui reste imprévisible, les signes concrets d\'un retour et comment ne pas mettre votre vie en pause.',
   url: 'https://www.voyantlove.fr/reconquete/quitte-pour-quelquun-dautre-va-t-il-revenir/',
   keywords: ['il m\'a quittée pour une autre va-t-il revenir', 'ma femme est partie avec un autre homme', 'mon mari m\'a remplacée va-t-il regretter', 'mon ex reviendra-t-il après une relation pansement', 'quitté pour quelqu\'un d\'autre'],
@@ -17,20 +17,20 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: '💔',
-    h1: 'Mon Conjoint m\'a Quitté pour Quelqu\'un d\'Autre : Va-t-il Revenir ?',
+    h1: 'Mon conjoint m\'a quitté pour quelqu\'un d\'autre : va-t-il revenir ?',
     subtitle: 'Ce qui est possible, ce qui reste imprévisible, et comment ne pas mettre votre vie en pause',
     gradient: 'from-violet-600 via-purple-600 to-fuchsia-600',
-    backLink: { href: '/reconquete/', label: 'Retour à la Reconquête' },
+    backLink: { href: '/reconquete/', label: 'Retour à la reconquête' },
     anchors: [
-      { href: '#possible', label: 'Possible ou Imprévisible ?', primary: true },
-      { href: '#identite', label: 'Retrouver son Identité' },
+      { href: '#possible', label: 'Possible ou imprévisible ?', primary: true },
+      { href: '#identite', label: 'Retrouver son identité' },
     ],
   },
   accentText: 'text-violet-600',
   stats: [
     { icon: '🔮', value: 'Reconnue', label: 'Expertise' },
     { icon: '💔', value: '3,700+', label: 'Consultations' },
-    { icon: '⭐', value: '4.8/5', label: '312 avis' },
+    { icon: '⭐', value: '4.8/5', label: '312 Avis' },
     { icon: '🔒', value: '100%', label: 'Confidentiel' },
   ],
   eeat: { colorScheme: 'purple', method: 'Guidance de reconquête et accompagnement après séparation' },
@@ -58,12 +58,12 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/reconquete/', label: 'Reconquête Amoureuse : Toutes nos Guidances' },
-    { href: '/reconquete/va-t-il-elle-revenir/', label: 'Va-t-il/elle Revenir ?' },
-    { href: '/rupture/surmonter-trahison/', label: 'Surmonter une Trahison Amoureuse' },
-    { href: '/reconquete/seconde-chance-amour/', label: 'La Seconde Chance en Amour' },
-    { href: '/rupture/guerir-rupture/', label: 'Guérir d\'une Rupture' },
-    { href: '/rupture/ex-refait-sa-vie/', label: 'Mon Ex Refait sa Vie : Comment le Vivre' },
+    { href: '/reconquete/', label: 'Reconquête amoureuse : toutes nos guidances' },
+    { href: '/reconquete/va-t-il-elle-revenir/', label: 'Va-t-il/elle revenir ?' },
+    { href: '/rupture/surmonter-trahison/', label: 'Surmonter une trahison amoureuse' },
+    { href: '/reconquete/seconde-chance-amour/', label: 'La seconde chance en amour' },
+    { href: '/rupture/guerir-rupture/', label: 'Guérir d\'une rupture' },
+    { href: '/rupture/ex-refait-sa-vie/', label: 'Mon ex refait sa vie : comment le vivre' },
   ],
 };
 

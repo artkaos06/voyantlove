@@ -7,14 +7,14 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
 export const metadata: Metadata = {
-  title: 'Méthodes de Voyance Amoureuse : Tarot, Pendule, Oracle et Astrologie',
+  title: 'Méthodes de voyance amoureuse : Tarot, pendule, Oracle et astrologie',
   description: 'Toutes les méthodes de voyance amoureuse expliquées : tarot, pendule, oracle, astrologie, numérologie. Comparez les approches pour choisir celle qui correspond à votre question sentimentale.',
   alternates: { canonical: 'https://www.voyantlove.fr/methodes-voyance/' },
 };
 
 export default function MethodesVoyanceHubPage() {
   const webPageSchema = getWebPageSchema({
-    title: 'Méthodes de Voyance Amoureuse : Tarot, Pendule, Oracle et Astrologie | VoyantLove',
+    title: 'Méthodes de voyance amoureuse : Tarot, pendule, Oracle et astrologie | VoyantLove',
     description: 'Toutes les méthodes de voyance amoureuse expliquées : tarot, pendule, oracle, astrologie, numérologie. Comparez les approches pour choisir celle qui correspond à votre question sentimentale.',
     url: 'https://www.voyantlove.fr/methodes-voyance/',
   });
@@ -56,7 +56,7 @@ export default function MethodesVoyanceHubPage() {
       <header className="bg-gradient-to-r from-indigo-600 via-purple-600 to-violet-600 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <Link href="/" className="text-white/80 hover:text-white mb-4 inline-block">← Accueil</Link>
-          <h1 className="text-5xl font-bold mb-6">🔮 Méthodes de Voyance Amoureuse</h1>
+          <h1 className="text-5xl font-bold mb-6">🔮 Méthodes de voyance amoureuse</h1>
           <p className="text-2xl opacity-95 mb-8">Tarot, Oracle et Astrologie au Service de l&apos;Amour</p>
           <p className="text-lg opacity-90 max-w-2xl mx-auto">Explorez les différentes méthodes de voyance pour éclairer votre vie sentimentale et découvrir votre avenir amoureux.</p>
         </div>

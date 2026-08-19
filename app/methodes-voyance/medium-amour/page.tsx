@@ -4,7 +4,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Médium Amour : Médiumnité et Guidance Sentimentale',
+  title: 'Médium amour : médiumnité et guidance sentimentale',
   description: 'Découvrez ce qu\'est un médium en amour : dons médiumniques, déroulement d\'une consultation, ce qu\'un médium peut révéler sur votre vie sentimentale. Guide complet de la médiumnité amoureuse.',
   url: 'https://www.voyantlove.fr/methodes-voyance/medium-amour/',
   keywords: ['médium amour', 'médium amoureux', 'médiumnité amour', 'consultation médium sentimental', 'don de médium amour'],
@@ -17,13 +17,13 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: '🕊️',
-    h1: 'Médium Amour',
+    h1: 'Médium amour',
     subtitle: 'La médiumnité au service de votre guidance sentimentale',
     gradient: 'from-fuchsia-700 via-purple-700 to-indigo-800',
-    backLink: { href: '/methodes-voyance/', label: 'Retour aux Méthodes de Voyance' },
+    backLink: { href: '/methodes-voyance/', label: 'Retour aux méthodes de voyance' },
     anchors: [
-      { href: '#dons', label: 'Les Dons Médiumniques', primary: true },
-      { href: '#consultation', label: 'La Consultation' },
+      { href: '#dons', label: 'Les dons médiumniques', primary: true },
+      { href: '#consultation', label: 'La consultation' },
     ],
   },
   accentText: 'text-purple-700',
@@ -58,13 +58,13 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/methodes-voyance/', label: 'Toutes les Méthodes de Voyance Amoureuse' },
-    { href: '/methodes-voyance/suis-je-medium-comment-savoir/', label: 'Suis-je Médium ? Comment le Savoir' },
-    { href: '/methodes-voyance/voyance-sentimentale/', label: 'Voyance Sentimentale' },
-    { href: '/methodes-voyance/boule-de-cristal-amour/', label: 'Boule de Cristal Amour' },
-    { href: '/methodes-voyance/voyance-telephone-amour/', label: 'Voyance par Téléphone' },
-    { href: '/glossaire/clairvoyance/', label: 'Glossaire : Clairvoyance' },
-    { href: '/glossaire/channeling/', label: 'Glossaire : Channeling' },
+    { href: '/methodes-voyance/', label: 'Toutes les méthodes de voyance amoureuse' },
+    { href: '/methodes-voyance/suis-je-medium-comment-savoir/', label: 'Suis-je médium ? comment le savoir' },
+    { href: '/methodes-voyance/voyance-sentimentale/', label: 'Voyance sentimentale' },
+    { href: '/methodes-voyance/boule-de-cristal-amour/', label: 'Boule de cristal amour' },
+    { href: '/methodes-voyance/voyance-telephone-amour/', label: 'Voyance par téléphone' },
+    { href: '/glossaire/clairvoyance/', label: 'Glossaire : clairvoyance' },
+    { href: '/glossaire/channeling/', label: 'Glossaire : channeling' },
   ],
 };
 

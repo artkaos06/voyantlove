@@ -4,7 +4,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Il Veut se Remettre Ensemble mais ne Fait Rien : Que Comprendre ?',
+  title: 'Il veut se remettre ensemble mais ne fait rien : que comprendre ?',
   description: 'Il/elle dit vouloir se remettre ensemble mais ne fait aucun effort ? Distinguez une vraie volonté de reconstruire d\'un simple lien entretenu, grâce à un cadre paroles contre actes.',
   url: 'https://www.voyantlove.fr/reconquete/veut-se-remettre-ensemble-mais-ne-fait-rien/',
   keywords: ['il veut se remettre ensemble mais ne fait rien', 'il veut revenir mais ne fait aucun effort', 'mon ex parle de réconciliation mais ne revient pas', 'il dit qu\'il m\'aime mais ne veut pas se remettre avec moi', 'séparation sans décision depuis des mois'],
@@ -17,20 +17,20 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: '💬',
-    h1: 'Il Dit Vouloir se Remettre Ensemble, mais ne Fait Rien',
+    h1: 'Il dit vouloir se remettre ensemble, mais ne fait rien',
     subtitle: 'Comment interpréter l\'écart entre ses paroles et ses actes',
     gradient: 'from-violet-600 via-purple-600 to-indigo-600',
-    backLink: { href: '/reconquete/', label: 'Retour à la Reconquête' },
+    backLink: { href: '/reconquete/', label: 'Retour à la reconquête' },
     anchors: [
-      { href: '#diagnostic', label: 'Le Cadre Paroles / Actes', primary: true },
-      { href: '#decision', label: 'Demander une Décision' },
+      { href: '#diagnostic', label: 'Le cadre paroles / actes', primary: true },
+      { href: '#decision', label: 'Demander une décision' },
     ],
   },
   accentText: 'text-violet-600',
   stats: [
     { icon: '🔮', value: 'Reconnue', label: 'Expertise' },
     { icon: '💬', value: '3,400+', label: 'Consultations' },
-    { icon: '⭐', value: '4.7/5', label: '264 avis' },
+    { icon: '⭐', value: '4.7/5', label: '264 Avis' },
     { icon: '🔒', value: '100%', label: 'Confidentiel' },
   ],
   eeat: { colorScheme: 'purple', method: 'Guidance de reconquête et lecture des dynamiques relationnelles' },
@@ -58,12 +58,12 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/reconquete/', label: 'Reconquête Amoureuse : Toutes nos Guidances' },
+    { href: '/reconquete/', label: 'Reconquête amoureuse : toutes nos guidances' },
     { href: '/reconquete/dois-je-attendre-son-retour/', label: 'Dois-je attendre le retour de mon ex ?' },
-    { href: '/reconquete/se-remettre-ensemble/', label: 'Se Remettre Ensemble : Les 5 Étapes' },
-    { href: '/reconquete/va-t-il-elle-revenir/', label: 'Va-t-il/elle Revenir ?' },
-    { href: '/crise-couple/dependance-affective/', label: 'Reconnaître la Dépendance Affective' },
-    { href: '/reconquete/sentiments-peuvent-ils-revenir-couple/', label: 'Les Sentiments Peuvent-ils Revenir ?' },
+    { href: '/reconquete/se-remettre-ensemble/', label: 'Se remettre ensemble : les 5 étapes' },
+    { href: '/reconquete/va-t-il-elle-revenir/', label: 'Va-t-il/elle revenir ?' },
+    { href: '/crise-couple/dependance-affective/', label: 'Reconnaître la dépendance affective' },
+    { href: '/reconquete/sentiments-peuvent-ils-revenir-couple/', label: 'Les sentiments peuvent-ils revenir ?' },
   ],
 };
 

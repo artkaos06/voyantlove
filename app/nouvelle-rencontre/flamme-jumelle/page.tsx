@@ -4,7 +4,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Flamme Jumelle : Reconnaître et Vivre cette Connexion Intense | Voyance',
+  title: 'Flamme jumelle : reconnaître et vivre cette connexion intense | voyance',
   description: 'Découvrez les signes de la flamme jumelle selon le tarot et la spiritualité. Différence avec l\'âme sœur, étapes de la relation, séparation et retrouvailles karmiques.',
   url: 'https://www.voyantlove.fr/nouvelle-rencontre/flamme-jumelle/',
   keywords: ['flamme jumelle', 'flamme jumelle signes', 'reconnaître flamme jumelle', 'flamme jumelle voyance', 'différence âme sœur flamme jumelle'],
@@ -17,12 +17,12 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: '🔥',
-    h1: 'Flamme Jumelle',
+    h1: 'Flamme jumelle',
     subtitle: 'Reconnaître et Vivre cette Connexion Intense',
     gradient: 'from-violet-600 via-purple-600 to-indigo-600',
-    backLink: { href: '/nouvelle-rencontre/', label: 'Retour aux Nouvelles Rencontres' },
+    backLink: { href: '/nouvelle-rencontre/', label: 'Retour aux nouvelles rencontres' },
     anchors: [
-      { href: '#signes', label: 'Découvrir les 11 Signes', primary: true },
+      { href: '#signes', label: 'Découvrir les 11 signes', primary: true },
       { href: '#tarot', label: 'Confirmation Tarot' },
     ],
   },
@@ -54,11 +54,11 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/nouvelle-rencontre/', label: 'Nouvelle Rencontre : Toutes nos Guidances' },
-    { href: '/nouvelle-rencontre/signes-ame-soeur/', label: 'Les Signes de l\'Âme Sœur : 15 Indices Infaillibles' },
-    { href: '/nouvelle-rencontre/trouver-ame-soeur/', label: 'Trouver son Âme Sœur : Guide Complet' },
-    { href: '/sentiments/compatibilite-amoureuse/', label: 'Compatibilité Amoureuse et Spirituelle' },
-    { href: '/sentiments/avenir-amoureux/', label: 'Mon Avenir Amoureux : Guidance Complète' },
+    { href: '/nouvelle-rencontre/', label: 'Nouvelle rencontre : toutes nos guidances' },
+    { href: '/nouvelle-rencontre/signes-ame-soeur/', label: 'Les signes de l\'âme sœur : 15 indices infaillibles' },
+    { href: '/nouvelle-rencontre/trouver-ame-soeur/', label: 'Trouver son âme sœur : guide complet' },
+    { href: '/sentiments/compatibilite-amoureuse/', label: 'Compatibilité amoureuse et spirituelle' },
+    { href: '/sentiments/avenir-amoureux/', label: 'Mon avenir amoureux : guidance complète' },
   ],
 };
 

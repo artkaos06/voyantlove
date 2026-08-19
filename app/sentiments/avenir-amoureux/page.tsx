@@ -4,7 +4,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Prédiction Amour Voyance : Votre Avenir Amoureux Révélé',
+  title: 'Prédiction amour voyance : votre avenir amoureux révélé',
   description: 'Prédiction amour et voyance : découvrez votre avenir amoureux selon le tarot. Rencontres, évolution de couple et timeline sentimentale personnalisée.',
   url: 'https://www.voyantlove.fr/sentiments/avenir-amoureux/',
   keywords: ['amour prediction voyance', 'prédiction amour', 'avenir amoureux', 'futur sentimental', 'tarot avenir', 'voyance future amour'],
@@ -17,18 +17,18 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: '🔮',
-    h1: 'Mon Avenir Amoureux',
+    h1: 'Mon avenir amoureux',
     subtitle: 'Prédictions tarot et voyance pour votre futur sentimental',
     gradient: 'from-pink-500 via-rose-500 to-red-500',
-    backLink: { href: '/sentiments/', label: 'Retour aux Sentiments' },
+    backLink: { href: '/sentiments/', label: 'Retour aux sentiments' },
     anchors: [
-      { href: '#consultation', label: 'Tirage Avenir Amoureux', primary: true },
-      { href: '#timeline', label: 'Ma Timeline Sentimentale' },
+      { href: '#consultation', label: 'Tirage avenir amoureux', primary: true },
+      { href: '#timeline', label: 'Ma timeline sentimentale' },
     ],
   },
   accentText: 'text-rose-600',
   stats: [
-    { icon: '⭐', value: '4.8/5', label: '287 avis' },
+    { icon: '⭐', value: '4.8/5', label: '287 Avis' },
     { icon: '🔮', value: 'Reconnue', label: 'Expertise' },
     { icon: '💫', value: '15 ans', label: 'Expérience' },
     { icon: '💖', value: '5,400+', label: 'Prédictions' },
@@ -70,11 +70,11 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/sentiments/', label: 'Sentiments Amoureux : Toutes nos Guidances' },
-    { href: '/sentiments/maime-t-il-elle/', label: 'M\'aime-t-il/elle Vraiment ?' },
-    { href: '/sentiments/signes-il-elle-maime/', label: 'Les Signes qu\'il/elle M\'aime' },
-    { href: '/nouvelle-rencontre/quand-rencontre-amour/', label: 'Quand Vais-je Rencontrer l\'Amour ?' },
-    { href: '/reconquete/va-t-il-elle-revenir/', label: 'Mon Ex Va-t-il Revenir ?' },
+    { href: '/sentiments/', label: 'Sentiments amoureux : toutes nos guidances' },
+    { href: '/sentiments/maime-t-il-elle/', label: 'M\'aime-t-il/elle vraiment ?' },
+    { href: '/sentiments/signes-il-elle-maime/', label: 'Les signes qu\'il/elle m\'aime' },
+    { href: '/nouvelle-rencontre/quand-rencontre-amour/', label: 'Quand vais-je rencontrer l\'amour ?' },
+    { href: '/reconquete/va-t-il-elle-revenir/', label: 'Mon ex va-t-il revenir ?' },
   ],
 };
 

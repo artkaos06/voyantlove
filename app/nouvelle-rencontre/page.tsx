@@ -7,14 +7,14 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
 export const metadata: Metadata = {
-  title: 'Voyance Rencontre : Quand Trouver l\'Amour ?',
+  title: 'Voyance rencontre : quand trouver l\'amour ?',
   description: 'Voyance rencontre : quand et comment allez-vous rencontrer l\'amour ? Prédictions tarot et timing astrologique pour votre prochaine rencontre amoureuse.',
   alternates: { canonical: 'https://www.voyantlove.fr/nouvelle-rencontre/' },
 };
 
 export default function NouvelleRencontreHubPage() {
   const webPageSchema = getWebPageSchema({
-    title: 'Voyance Rencontre : Quand Trouver l\'Amour ? | VoyantLove',
+    title: 'Voyance rencontre : quand trouver l\'amour ? | VoyantLove',
     description: 'Voyance rencontre : quand et comment allez-vous rencontrer l\'amour ? Prédictions tarot et timing astrologique pour votre prochaine rencontre amoureuse.',
     url: 'https://www.voyantlove.fr/nouvelle-rencontre/',
   });
@@ -80,7 +80,7 @@ export default function NouvelleRencontreHubPage() {
       <header className="bg-gradient-to-r from-cyan-500 via-blue-500 to-indigo-500 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <Link href="/" className="text-white/80 hover:text-white mb-4 inline-block">← Accueil</Link>
-          <h1 className="text-5xl font-bold mb-6">✨ Nouvelle Rencontre Amoureuse</h1>
+          <h1 className="text-5xl font-bold mb-6">✨ Nouvelle rencontre amoureuse</h1>
           <p className="text-2xl opacity-95 mb-8">Trouver l'Amour et votre Âme Sœur</p>
           <p className="text-lg opacity-90 max-w-2xl mx-auto">Le tarot prédit quand, où et comment vous allez rencontrer votre prochaine relation.</p>
         </div>

@@ -4,7 +4,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Sentiments Non Partagés : Comment Avancer | Voyance',
+  title: 'Sentiments non partagés : comment avancer | voyance',
   description: 'Amour non partagé : comment gérer des sentiments non réciproques. Découvrez les guidances de la voyance pour avancer et retrouver votre équilibre.',
   url: 'https://www.voyantlove.fr/sentiments/sentiments-non-partages/',
   keywords: ['amour non partagé', 'sentiments non réciproques', 'aimer sans retour', 'amour à sens unique', 'voyance sentiments'],
@@ -17,17 +17,17 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: '💔',
-    h1: 'Sentiments Non Partagés : Comment Avancer',
+    h1: 'Sentiments non partagés : comment avancer',
     subtitle: 'Guidance voyance pour traverser l\'amour non réciproque et retrouver la paix',
     gradient: 'from-pink-500 via-rose-600 to-pink-700',
     backLink: { href: '/sentiments/', label: 'Sentiments' },
     anchors: [
-      { href: '#consultation', label: 'Consultation Sentiments', primary: true },
+      { href: '#consultation', label: 'Consultation sentiments', primary: true },
     ],
   },
   accentText: 'text-pink-600',
   stats: [
-    { icon: '⭐', value: '4.8/5', label: '298 avis' },
+    { icon: '⭐', value: '4.8/5', label: '298 Avis' },
     { icon: '💪', value: '91%', label: 'Ont avancé' },
     { icon: '🔮', value: '25 min', label: 'Consultation' },
     { icon: '✨', value: '15 ans', label: 'Expérience' },
@@ -53,10 +53,10 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/sentiments/maime-t-il-elle/', label: 'M\'aime-t-il / M\'aime-t-elle Encore ?' },
-    { href: '/sentiments/pense-t-il-elle-a-moi/', label: 'Pense-t-il/elle à Moi ?' },
-    { href: '/rupture/chagrin-damour/', label: 'Surmonter un Chagrin d\'Amour' },
-    { href: '/reconquete/sentiments-peuvent-ils-revenir-couple/', label: 'Les Sentiments Peuvent-ils Revenir dans un Couple ?' },
+    { href: '/sentiments/maime-t-il-elle/', label: 'M\'aime-t-il / m\'aime-t-elle encore ?' },
+    { href: '/sentiments/pense-t-il-elle-a-moi/', label: 'Pense-t-il/elle à moi ?' },
+    { href: '/rupture/chagrin-damour/', label: 'Surmonter un chagrin d\'amour' },
+    { href: '/reconquete/sentiments-peuvent-ils-revenir-couple/', label: 'Les sentiments peuvent-ils revenir dans un couple ?' },
   ],
 };
 

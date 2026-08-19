@@ -4,7 +4,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Faut-il Répondre à son Ex ? Comment Réagir Quand il Recontacte',
+  title: 'Faut-il répondre à son ex ? comment réagir quand il recontacte',
   description: 'Votre ex vous recontacte : faut-il répondre, comment, et quand se taire ? Un cadre pour décider selon vos objectifs, sans vous précipiter ni décoder chaque message.',
   url: 'https://www.voyantlove.fr/reconquete/repondre-a-son-ex/',
   keywords: ['faut-il répondre à son ex', 'mon ex me recontacte que faire', 'comment répondre à son ex', 'mon ex m\'envoie un message', 'répondre ou ignorer son ex'],
@@ -17,20 +17,20 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: '📩',
-    h1: 'Faut-il Répondre à son Ex Quand il Recontacte ?',
+    h1: 'Faut-il répondre à son ex quand il recontacte ?',
     subtitle: 'Décider selon vos objectifs, sans vous précipiter ni décoder chaque message',
     gradient: 'from-violet-600 via-purple-600 to-indigo-600',
-    backLink: { href: '/reconquete/', label: 'Retour à la Reconquête' },
+    backLink: { href: '/reconquete/', label: 'Retour à la reconquête' },
     anchors: [
-      { href: '#decider', label: 'Répondre ou se Taire ?', primary: true },
-      { href: '#comment', label: 'Comment Répondre' },
+      { href: '#decider', label: 'Répondre ou se taire ?', primary: true },
+      { href: '#comment', label: 'Comment répondre' },
     ],
   },
   accentText: 'text-violet-600',
   stats: [
     { icon: '🔮', value: 'Reconnue', label: 'Expertise' },
     { icon: '📩', value: '3,500+', label: 'Consultations' },
-    { icon: '⭐', value: '4.7/5', label: '278 avis' },
+    { icon: '⭐', value: '4.7/5', label: '278 Avis' },
     { icon: '🔒', value: '100%', label: 'Confidentiel' },
   ],
   eeat: { colorScheme: 'purple', method: 'Guidance de reconquête et lecture des dynamiques relationnelles' },
@@ -58,10 +58,10 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/reconquete/', label: 'Reconquête Amoureuse : Toutes nos Guidances' },
-    { href: '/reconquete/ex-chaud-et-froid-apres-separation/', label: 'Mon Ex est Chaud et Froid' },
-    { href: '/reconquete/veut-se-remettre-ensemble-mais-ne-fait-rien/', label: 'Il Veut se Remettre Ensemble mais ne Fait Rien' },
-    { href: '/reconquete/ex-revient-silence-radio/', label: 'Ex qui Revient après Silence Radio' },
+    { href: '/reconquete/', label: 'Reconquête amoureuse : toutes nos guidances' },
+    { href: '/reconquete/ex-chaud-et-froid-apres-separation/', label: 'Mon ex est chaud et froid' },
+    { href: '/reconquete/veut-se-remettre-ensemble-mais-ne-fait-rien/', label: 'Il veut se remettre ensemble mais ne fait rien' },
+    { href: '/reconquete/ex-revient-silence-radio/', label: 'Ex qui revient après silence radio' },
     { href: '/reconquete/dois-je-attendre-son-retour/', label: 'Dois-je attendre le retour de mon ex ?' },
   ],
 };

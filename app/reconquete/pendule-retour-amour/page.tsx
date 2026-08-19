@@ -4,7 +4,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Pendule pour Faire Revenir une Personne : Guide et Limites',
+  title: 'Pendule pour faire revenir une personne : guide et limites',
   description: 'Pendule pour faire revenir une personne : comment ça marche vraiment, formulation des questions, signaux à observer. Guide honnête sur l\'usage du pendule en reconquête.',
   url: 'https://www.voyantlove.fr/reconquete/pendule-retour-amour/',
   keywords: ['pendule pour faire revenir une personne', 'pendule retour ex', 'pendule reconquête', 'pendule pour ex', 'pendule amour retour', 'pendule retour amour'],
@@ -17,13 +17,13 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: '🔮',
-    h1: 'Pendule pour Faire Revenir une Personne',
+    h1: 'Pendule pour faire revenir une personne',
     subtitle: 'Ce que le pendule peut révéler, et ce qu\'il ne peut pas faire',
     gradient: 'from-purple-600 via-pink-500 to-rose-500',
     backLink: { href: '/reconquete/', label: 'Reconquête' },
     anchors: [
-      { href: '#questions', label: 'Questions à Poser', primary: true },
-      { href: '#consultation', label: 'Consultation Pendule' },
+      { href: '#questions', label: 'Questions à poser', primary: true },
+      { href: '#consultation', label: 'Consultation pendule' },
     ],
   },
   accentText: 'text-purple-600',
@@ -62,12 +62,12 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/reconquete/', label: 'Reconquête Amoureuse : Toutes les Guidances' },
-    { href: '/reconquete/reconquerir-son-ex/', label: 'Reconquérir son Ex : Guide Complet' },
-    { href: '/reconquete/silence-radio-reconquete/', label: 'Silence Radio : La Stratégie' },
-    { href: '/reconquete/va-t-il-elle-revenir/', label: 'Va-t-il/elle Revenir ?' },
-    { href: '/methodes-voyance/pendule-amour/', label: 'Pendule Amour : Guide Général' },
-    { href: '/reconquete/ex-revient-silence-radio/', label: 'Ex qui Recontacte Après le Silence Radio' },
+    { href: '/reconquete/', label: 'Reconquête amoureuse : toutes les guidances' },
+    { href: '/reconquete/reconquerir-son-ex/', label: 'Reconquérir son ex : guide complet' },
+    { href: '/reconquete/silence-radio-reconquete/', label: 'Silence radio : la stratégie' },
+    { href: '/reconquete/va-t-il-elle-revenir/', label: 'Va-t-il/elle revenir ?' },
+    { href: '/methodes-voyance/pendule-amour/', label: 'Pendule amour : guide général' },
+    { href: '/reconquete/ex-revient-silence-radio/', label: 'Ex qui recontacte après le silence radio' },
   ],
 };
 

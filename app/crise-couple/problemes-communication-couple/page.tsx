@@ -4,7 +4,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Communication Couple Difficile : Causes, Solutions et Guidance Voyance',
+  title: 'Communication couple difficile : causes, solutions et guidance voyance',
   description: 'Communication couple difficile ? Problème de communication dans le couple, dialogue impossible, incompréhension : causes profondes, solutions concrètes et guidance voyance.',
   url: 'https://www.voyantlove.fr/crise-couple/problemes-communication-couple/',
   keywords: ['communication couple difficile', 'problème de communication couple', 'problème de communication dans le couple', 'dialogue couple', 'quand le dialogue devient impossible', 'améliorer communication couple'],
@@ -17,13 +17,13 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: '',
-    h1: 'Communication Couple Difficile : Solutions Concrètes',
+    h1: 'Communication couple difficile : solutions concrètes',
     subtitle: 'Communication couple difficile ? Techniques pour reconstruire le dialogue et retrouver la compréhension mutuelle',
     gradient: 'from-indigo-600 via-purple-600 to-pink-600',
-    backLink: { href: '/crise-couple/', label: 'Retour aux Crises de Couple' },
+    backLink: { href: '/crise-couple/', label: 'Retour aux crises de couple' },
     anchors: [
-      { href: '#solutions', label: 'Solutions Concrètes', primary: true },
-      { href: '#tirage', label: 'Tirage Communication' },
+      { href: '#solutions', label: 'Solutions concrètes', primary: true },
+      { href: '#tirage', label: 'Tirage communication' },
     ],
   },
   stats: [
@@ -69,11 +69,11 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/crise-couple/', label: 'Crises de Couple : Guide Complet' },
-    { href: '/crise-couple/infidelite-couple/', label: 'Infidélité dans le Couple' },
-    { href: '/crise-couple/jalousie-excessive/', label: 'Jalousie Excessive dans le Couple' },
-    { href: '/sentiments/maime-t-il-elle/', label: 'M\'aime-t-il/elle Vraiment ?' },
-    { href: '/reconquete/se-remettre-ensemble/', label: 'Se Remettre Ensemble avec son Ex' },
+    { href: '/crise-couple/', label: 'Crises de couple : guide complet' },
+    { href: '/crise-couple/infidelite-couple/', label: 'Infidélité dans le couple' },
+    { href: '/crise-couple/jalousie-excessive/', label: 'Jalousie excessive dans le couple' },
+    { href: '/sentiments/maime-t-il-elle/', label: 'M\'aime-t-il/elle vraiment ?' },
+    { href: '/reconquete/se-remettre-ensemble/', label: 'Se remettre ensemble avec son ex' },
   ],
 };
 

@@ -4,7 +4,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Rencontre Amoureuse en Ligne : Guidance Voyance',
+  title: 'Rencontre amoureuse en ligne : guidance voyance',
   description: 'Comment trouver l\'amour en ligne avec la guidance de la voyance ? Découvrez les conseils du tarot pour réussir vos rencontres sur internet et applications.',
   url: 'https://www.voyantlove.fr/nouvelle-rencontre/rencontre-amoureuse-en-ligne/',
   keywords: ['rencontre en ligne', 'amour internet', 'Tinder voyance', 'rencontre amoureuse en ligne', 'dating voyance'],
@@ -17,17 +17,17 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: '💙',
-    h1: 'Rencontre Amoureuse en Ligne : Guidance Voyance',
+    h1: 'Rencontre amoureuse en ligne : guidance voyance',
     subtitle: 'Trouvez l\'amour en ligne guidé(e) par la voyance et le tarot',
     gradient: 'from-cyan-500 via-cyan-600 to-blue-600',
-    backLink: { href: '/nouvelle-rencontre/', label: 'Nouvelle Rencontre' },
+    backLink: { href: '/nouvelle-rencontre/', label: 'Nouvelle rencontre' },
     anchors: [
-      { href: '#consultation', label: 'Consultation Rencontre', primary: true },
+      { href: '#consultation', label: 'Consultation rencontre', primary: true },
     ],
   },
   accentText: 'text-cyan-600',
   stats: [
-    { icon: '⭐', value: '4.7/5', label: '264 avis' },
+    { icon: '⭐', value: '4.7/5', label: '264 Avis' },
     { icon: '💑', value: '1 sur 3', label: 'Couples en ligne' },
     { icon: '📱', value: '12M+', label: 'Français inscrits' },
     { icon: '🔮', value: '15 ans', label: 'Expérience' },
@@ -53,12 +53,12 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/nouvelle-rencontre/quand-rencontre-amour/', label: 'Quand Vais-je Rencontrer l\'Amour ?' },
-    { href: '/nouvelle-rencontre/peur-de-aimer-a-nouveau/', label: 'Peur d\'Aimer à Nouveau' },
-    { href: '/nouvelle-rencontre/signes-ame-soeur/', label: 'Les Signes de l\'Âme Sœur' },
-    { href: '/nouvelle-rencontre/flamme-jumelle/', label: 'La Flamme Jumelle' },
-    { href: '/nouvelle-rencontre/trouver-ame-soeur/', label: 'Trouver son Âme Sœur' },
-    { href: '/sentiments/maime-t-il-elle/', label: 'M\'aime-t-il / M\'aime-t-elle ?' },
+    { href: '/nouvelle-rencontre/quand-rencontre-amour/', label: 'Quand vais-je rencontrer l\'amour ?' },
+    { href: '/nouvelle-rencontre/peur-de-aimer-a-nouveau/', label: 'Peur d\'aimer à nouveau' },
+    { href: '/nouvelle-rencontre/signes-ame-soeur/', label: 'Les signes de l\'âme sœur' },
+    { href: '/nouvelle-rencontre/flamme-jumelle/', label: 'La flamme jumelle' },
+    { href: '/nouvelle-rencontre/trouver-ame-soeur/', label: 'Trouver son âme sœur' },
+    { href: '/sentiments/maime-t-il-elle/', label: 'M\'aime-t-il / m\'aime-t-elle ?' },
   ],
 };
 

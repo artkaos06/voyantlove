@@ -4,7 +4,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Lignes de la Main Amour : Chiromancie et Ligne de Cœur',
+  title: 'Lignes de la main amour : chiromancie et ligne de cœur',
   description: 'Découvrez ce que les lignes de votre main révèlent sur votre vie amoureuse : ligne de cœur, mont de Vénus, lignes de mariage. Guide complet de chiromancie sentimentale.',
   url: 'https://www.voyantlove.fr/methodes-voyance/lignes-de-la-main-amour/',
   keywords: ['lignes de la main amour', 'ligne de cœur', 'chiromancie amour', 'mont de vénus', 'ligne de mariage main'],
@@ -17,13 +17,13 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: '✋',
-    h1: 'Lignes de la Main Amour',
+    h1: 'Lignes de la main amour',
     subtitle: 'Ce que la chiromancie révèle sur votre vie sentimentale',
     gradient: 'from-orange-600 via-red-600 to-rose-700',
-    backLink: { href: '/methodes-voyance/', label: 'Retour aux Méthodes de Voyance' },
+    backLink: { href: '/methodes-voyance/', label: 'Retour aux méthodes de voyance' },
     anchors: [
-      { href: '#ligne-coeur', label: 'La Ligne de Cœur', primary: true },
-      { href: '#lecture', label: 'Lire sa Propre Main' },
+      { href: '#ligne-coeur', label: 'La ligne de cœur', primary: true },
+      { href: '#lecture', label: 'Lire sa propre main' },
     ],
   },
   accentText: 'text-red-700',
@@ -54,11 +54,11 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/methodes-voyance/', label: 'Toutes les Méthodes de Voyance Amoureuse' },
-    { href: '/methodes-voyance/voyance-sentimentale/', label: 'Voyance Sentimentale' },
-    { href: '/methodes-voyance/astrologie-amoureuse/', label: 'Astrologie Amoureuse' },
-    { href: '/methodes-voyance/tirage-tarot-amour/', label: 'Tirage Tarot Amour' },
-    { href: '/glossaire/chiromancie/', label: 'Glossaire : Chiromancie' },
+    { href: '/methodes-voyance/', label: 'Toutes les méthodes de voyance amoureuse' },
+    { href: '/methodes-voyance/voyance-sentimentale/', label: 'Voyance sentimentale' },
+    { href: '/methodes-voyance/astrologie-amoureuse/', label: 'Astrologie amoureuse' },
+    { href: '/methodes-voyance/tirage-tarot-amour/', label: 'Tirage Tarot amour' },
+    { href: '/glossaire/chiromancie/', label: 'Glossaire : chiromancie' },
     { href: '/sentiments/savoir-si-cest-lamour/', label: 'Savoir si c\'est l\'amour' },
   ],
 };

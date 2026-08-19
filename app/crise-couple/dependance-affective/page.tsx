@@ -4,7 +4,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Dépendance Affective : Se Libérer et Aimer Sainement | Voyance',
+  title: 'Dépendance affective : se libérer et aimer sainement | voyance',
   description: 'Comprendre et surmonter la dépendance affective. Le tarot révèle vos schémas répétitifs, blocages karmiques et le chemin vers des relations saines.',
   url: 'https://www.voyantlove.fr/crise-couple/dependance-affective/',
   keywords: ['dépendance affective', 'dépendance émotionnelle couple', 'se libérer dépendance affective', 'relation toxique voyance', 'attachement anxieux'],
@@ -17,13 +17,13 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: '🔗',
-    h1: 'Dépendance Affective',
+    h1: 'Dépendance affective',
     subtitle: 'Se Libérer et Aimer Sainement',
     gradient: 'from-teal-600 via-cyan-600 to-blue-600',
-    backLink: { href: '/crise-couple/', label: 'Retour aux Crises de Couple' },
+    backLink: { href: '/crise-couple/', label: 'Retour aux crises de couple' },
     anchors: [
-      { href: '#liberation', label: 'Chemin de Libération', primary: true },
-      { href: '#signes', label: 'Reconnaître les Signes' },
+      { href: '#liberation', label: 'Chemin de libération', primary: true },
+      { href: '#signes', label: 'Reconnaître les signes' },
     ],
   },
   accentText: 'text-teal-600',
@@ -58,13 +58,13 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/crise-couple/', label: 'Crise de Couple : Toutes nos Guidances' },
-    { href: '/crise-couple/jalousie-excessive/', label: 'Jalousie Excessive dans le Couple' },
-    { href: '/crise-couple/problemes-communication-couple/', label: 'Problèmes de Communication dans le Couple' },
-    { href: '/rupture/oublier-son-ex/', label: 'Oublier son Ex et Tourner la Page' },
-    { href: '/sentiments/maime-t-il-elle/', label: 'M’aime-t-il/elle Vraiment ?' },
-    { href: '/sentiments/avenir-amoureux/', label: 'Votre Avenir Amoureux' },
-    { href: '/crise-couple/vivre-meme-toit-apres-separation/', label: 'Vivre sous le Même Toit Après une Séparation' },
+    { href: '/crise-couple/', label: 'Crise de couple : toutes nos guidances' },
+    { href: '/crise-couple/jalousie-excessive/', label: 'Jalousie excessive dans le couple' },
+    { href: '/crise-couple/problemes-communication-couple/', label: 'Problèmes de communication dans le couple' },
+    { href: '/rupture/oublier-son-ex/', label: 'Oublier son ex et tourner la page' },
+    { href: '/sentiments/maime-t-il-elle/', label: 'M’aime-t-il/elle vraiment ?' },
+    { href: '/sentiments/avenir-amoureux/', label: 'Votre avenir amoureux' },
+    { href: '/crise-couple/vivre-meme-toit-apres-separation/', label: 'Vivre sous le même toit après une séparation' },
   ],
 };
 

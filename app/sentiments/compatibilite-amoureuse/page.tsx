@@ -4,7 +4,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Compatibilit\u00e9 Amoureuse : \u00cates-vous Faits l\u2019Un pour l\u2019Autre ? | Voyance',
+  title: 'Compatibilit\u00e9 amoureuse : \u00cates-vous faits l\u2019un pour l\u2019autre ? | voyance',
   description: 'Analyse de compatibilit\u00e9 amoureuse par le tarot et l\u2019astrologie. Synastrie, \u00e2me s\u0153ur, flamme jumelle : d\u00e9couvrez si vous \u00eates vraiment compatibles.',
   url: 'https://www.voyantlove.fr/sentiments/compatibilite-amoureuse/',
   keywords: ['compatibilit\u00e9 amoureuse', 'compatibilit\u00e9 couple voyance', 'synastrie amoureuse', 'sommes-nous faits l\'un pour l\'autre', 'compatibilit\u00e9 astrale'],
@@ -17,13 +17,13 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: '\ud83d\udc95',
-    h1: 'Compatibilit\u00e9 Amoureuse : \u00cates-vous Faits l\u2019Un pour l\u2019Autre ?',
+    h1: 'Compatibilit\u00e9 amoureuse : \u00cates-vous faits l\u2019un pour l\u2019autre ?',
     subtitle: 'Analyse de compatibilit\u00e9 par le tarot et la synastrie astrologique',
     gradient: 'from-pink-500 via-rose-500 to-red-500',
-    backLink: { href: '/sentiments/', label: 'Retour aux Sentiments' },
+    backLink: { href: '/sentiments/', label: 'Retour aux sentiments' },
     anchors: [
-      { href: '#consultation', label: 'Analyse de Compatibilit\u00e9', primary: true },
-      { href: '#piliers', label: 'Les 7 Piliers du Couple' },
+      { href: '#consultation', label: 'Analyse de compatibilit\u00e9', primary: true },
+      { href: '#piliers', label: 'Les 7 piliers du couple' },
     ],
   },
   accentText: 'text-rose-600',
@@ -58,12 +58,12 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/sentiments/', label: 'Sentiments Amoureux : Toutes nos Guidances' },
-    { href: '/sentiments/maime-t-il-elle/', label: 'M\u2019aime-t-il/elle Vraiment ?' },
-    { href: '/sentiments/avenir-amoureux/', label: 'Mon Avenir Amoureux : Pr\u00e9dictions' },
-    { href: '/sentiments/signes-il-elle-maime/', label: 'Les Signes qu\u2019il/elle M\u2019aime' },
-    { href: '/nouvelle-rencontre/signes-ame-soeur/', label: 'Reconna\u00eetre les Signes de l\u2019\u00c2me S\u0153ur' },
-    { href: '/crise-couple/', label: 'Surmonter une Crise de Couple' },
+    { href: '/sentiments/', label: 'Sentiments amoureux : toutes nos guidances' },
+    { href: '/sentiments/maime-t-il-elle/', label: 'M\u2019aime-t-il/elle vraiment ?' },
+    { href: '/sentiments/avenir-amoureux/', label: 'Mon avenir amoureux : pr\u00e9dictions' },
+    { href: '/sentiments/signes-il-elle-maime/', label: 'Les signes qu\u2019il/elle m\u2019aime' },
+    { href: '/nouvelle-rencontre/signes-ame-soeur/', label: 'Reconna\u00eetre les signes de l\u2019\u00c2me s\u0153ur' },
+    { href: '/crise-couple/', label: 'Surmonter une crise de couple' },
   ],
 };
 

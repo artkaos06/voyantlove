@@ -4,7 +4,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Différence d\'Âge en Couple : Voyance et Compatibilité',
+  title: 'Différence d\'âge en couple : voyance et compatibilité',
   description: 'Une grande différence d\'âge dans votre couple ? Le tarot éclaire les défis réels et le potentiel de compatibilité durable de votre relation.',
   url: 'https://www.voyantlove.fr/crise-couple/difference-age-couple/',
   keywords: ['différence d\'âge couple voyance', 'grand écart âge relation', 'compatibilité âge tarot', 'couple différence âge importante', 'relation écart âge'],
@@ -17,20 +17,20 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: '⏳',
-    h1: 'Différence d\'Âge en Couple',
+    h1: 'Différence d\'âge en couple',
     subtitle: 'Ce que le tarot révèle sur la compatibilité au-delà des années',
     gradient: 'from-cyan-600 via-sky-600 to-blue-600',
-    backLink: { href: '/crise-couple/', label: 'Retour aux Crises de Couple' },
+    backLink: { href: '/crise-couple/', label: 'Retour aux crises de couple' },
     anchors: [
-      { href: '#defis', label: 'Défis Spécifiques', primary: true },
-      { href: '#regard', label: 'Le Regard des Autres' },
+      { href: '#defis', label: 'Défis spécifiques', primary: true },
+      { href: '#regard', label: 'Le regard des autres' },
     ],
   },
   accentText: 'text-cyan-700',
   stats: [
     { icon: '🔮', value: 'Reconnue', label: 'Expertise' },
     { icon: '⏳', value: '2,500+', label: 'Tirages réalisés' },
-    { icon: '⭐', value: '4.6/5', label: '187 avis' },
+    { icon: '⭐', value: '4.6/5', label: '187 Avis' },
     { icon: '🔒', value: '100%', label: 'Confidentiel' },
   ],
   eeat: { colorScheme: 'cyan', method: 'Tarot de compatibilité et guidance de couple' },
@@ -58,11 +58,11 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/crise-couple/', label: 'Crise de Couple : Toutes nos Guidances' },
-    { href: '/sentiments/compatibilite-amoureuse/', label: 'Compatibilité Amoureuse' },
-    { href: '/crise-couple/opposition-familiale-couple/', label: 'Opposition Familiale au Couple' },
-    { href: '/nouvelle-rencontre/amour-apres-40-ans/', label: 'Trouver l\'Amour Après 40 Ans' },
-    { href: '/sentiments/savoir-si-cest-lamour/', label: 'Savoir si C\'est l\'Amour' },
+    { href: '/crise-couple/', label: 'Crise de couple : toutes nos guidances' },
+    { href: '/sentiments/compatibilite-amoureuse/', label: 'Compatibilité amoureuse' },
+    { href: '/crise-couple/opposition-familiale-couple/', label: 'Opposition familiale au couple' },
+    { href: '/nouvelle-rencontre/amour-apres-40-ans/', label: 'Trouver l\'amour après 40 ans' },
+    { href: '/sentiments/savoir-si-cest-lamour/', label: 'Savoir si c\'est l\'amour' },
   ],
 };
 

@@ -4,7 +4,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Retour de l\'Ex : Signes, Timing et Prédictions du Tarot',
+  title: 'Retour de l\'ex : signes, timing et prédictions du Tarot',
   description: 'Votre ex reviendra-t-il ? Découvrez les signes du retour, le timing astrologique et comment préparer les retrouvailles selon le tarot.',
   url: 'https://www.voyantlove.fr/reconquete/retour-de-lex/',
   keywords: ['retour ex', 'ex qui revient', 'signes retour', 'retour être aimé', 'retrouvailles'],
@@ -17,18 +17,18 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: '↩️',
-    h1: 'Retour de l\'Ex',
+    h1: 'Retour de l\'ex',
     subtitle: 'Signes, timing et prédictions du tarot',
     gradient: 'from-violet-600 via-purple-600 to-fuchsia-600',
-    backLink: { href: '/reconquete/', label: 'Retour à la Reconquête' },
+    backLink: { href: '/reconquete/', label: 'Retour à la reconquête' },
     anchors: [
       { href: '#consultation', label: 'Prédiction', primary: true },
-      { href: '#signes', label: 'Les Signes' },
+      { href: '#signes', label: 'Les signes' },
     ],
   },
   accentText: 'text-violet-600',
   stats: [
-    { icon: '⭐', value: '4.8/5', label: '287 avis' },
+    { icon: '⭐', value: '4.8/5', label: '287 Avis' },
     { icon: '↩️', value: 'Fréquent', label: 'Retours observés' },
     { icon: '⏰', value: '2-6 mois', label: 'Délai' },
     { icon: '🔮', value: 'Reconnue', label: 'Expertise' },
@@ -54,12 +54,12 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/reconquete/reconquerir-son-ex/', label: 'Reconquérir son Ex : Le Guide Complet' },
-    { href: '/reconquete/va-t-il-elle-revenir/', label: 'Va-t-il/elle Revenir ? Prédictions' },
-    { href: '/reconquete/ex-qui-revient/', label: 'Ex qui Revient : Comprendre ses Motivations' },
-    { href: '/reconquete/seconde-chance-amour/', label: 'Seconde Chance en Amour : Y Croire' },
-    { href: '/sentiments/maime-t-il-elle/', label: 'M\'aime-t-il Encore ? Ses Sentiments Révélés' },
-    { href: '/rupture/oublier-son-ex/', label: 'Oublier son Ex ou le Reconquérir ?' },
+    { href: '/reconquete/reconquerir-son-ex/', label: 'Reconquérir son ex : le guide complet' },
+    { href: '/reconquete/va-t-il-elle-revenir/', label: 'Va-t-il/elle revenir ? prédictions' },
+    { href: '/reconquete/ex-qui-revient/', label: 'Ex qui revient : comprendre ses motivations' },
+    { href: '/reconquete/seconde-chance-amour/', label: 'Seconde chance en amour : y croire' },
+    { href: '/sentiments/maime-t-il-elle/', label: 'M\'aime-t-il encore ? ses sentiments révélés' },
+    { href: '/rupture/oublier-son-ex/', label: 'Oublier son ex ou le reconquérir ?' },
   ],
 };
 

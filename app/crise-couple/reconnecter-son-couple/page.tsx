@@ -4,7 +4,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Reconnecter son Couple : Retrouver la Complicité',
+  title: 'Reconnecter son couple : retrouver la complicité',
   description: 'Comment reconnecter votre couple et raviver la flamme. Voyance et tarot pour retrouver la complicité perdue et reconstruire une relation épanouissante.',
   url: 'https://www.voyantlove.fr/crise-couple/reconnecter-son-couple/',
   keywords: ['reconnecter couple', 'retrouver complicité', 'raviver flamme', 'couple en crise', 'voyance couple'],
@@ -17,17 +17,17 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: '🔥',
-    h1: 'Reconnecter son Couple : Retrouver la Complicité',
+    h1: 'Reconnecter son couple : retrouver la complicité',
     subtitle: 'Guidance voyance et tarot pour raviver la flamme et reconstruire votre lien',
     gradient: 'from-amber-500 via-amber-600 to-orange-600',
-    backLink: { href: '/crise-couple/', label: 'Crise de Couple' },
+    backLink: { href: '/crise-couple/', label: 'Crise de couple' },
     anchors: [
-      { href: '#consultation', label: 'Consultation Couple', primary: true },
+      { href: '#consultation', label: 'Consultation couple', primary: true },
     ],
   },
   accentText: 'text-amber-600',
   stats: [
-    { icon: '⭐', value: '4.9/5', label: '276 avis' },
+    { icon: '⭐', value: '4.9/5', label: '276 Avis' },
     { icon: '💑', value: '87%', label: 'Couples reconnectés' },
     { icon: '⏰', value: '4-8 sem', label: 'Résultats visibles' },
     { icon: '🔮', value: '15 ans', label: 'Expérience' },
@@ -53,9 +53,9 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/crise-couple/sauver-son-couple/', label: 'Sauver son Couple' },
-    { href: '/crise-couple/problemes-communication-couple/', label: 'Problèmes de Communication dans le Couple' },
-    { href: '/crise-couple/pardonner-en-amour/', label: 'Pardonner en Amour' },
+    { href: '/crise-couple/sauver-son-couple/', label: 'Sauver son couple' },
+    { href: '/crise-couple/problemes-communication-couple/', label: 'Problèmes de communication dans le couple' },
+    { href: '/crise-couple/pardonner-en-amour/', label: 'Pardonner en amour' },
   ],
 };
 

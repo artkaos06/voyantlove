@@ -6,7 +6,7 @@ import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
 export const metadata: Metadata = {
-  title: 'Voyance Amour : Consultation Voyant & Voyante Amour Sp\u00e9cialis\u00e9',
+  title: 'Voyance amour : consultation voyant & voyante amour sp\u00e9cialis\u00e9',
   description: 'Voyance amour : consultation avec un voyant ou une voyante sp\u00e9cialis\u00e9 en questions sentimentales. Couple, reconqu\u00eate, rupture, rencontre \u2014 guidance tarot, astrologie et clairvoyance.',
   keywords: ['voyance amour', 'voyant amour', 'voyante amour', 'voyance amoureuse', 'voyance en amour', 'consultation voyance amour', 'voyance amour couple', 'voyance relation amoureuse', 'voyance amour avis'],
   alternates: { canonical: 'https://www.voyantlove.fr/voyance-amour/' },
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 export default function VoyanceAmourPage() {
   const webPageSchema = getWebPageSchema({
-    title: 'Voyance Amour : Consultation Voyant & Voyante Amour Sp\u00e9cialis\u00e9 | VoyantLove',
+    title: 'Voyance amour : consultation voyant & voyante amour sp\u00e9cialis\u00e9 | VoyantLove',
     description: 'Voyance amour : consultation avec un voyant ou une voyante sp\u00e9cialis\u00e9 en questions sentimentales. Couple, reconqu\u00eate, rupture, rencontre \u2014 guidance tarot, astrologie et clairvoyance.',
     url: 'https://www.voyantlove.fr/voyance-amour/',
   });
@@ -78,7 +78,7 @@ export default function VoyanceAmourPage() {
       <header className="bg-gradient-to-r from-purple-800 via-indigo-800 to-purple-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <Link href="/" className="text-white/80 hover:text-white mb-4 inline-block">&larr; Accueil</Link>
-          <h1 className="text-5xl md:text-6xl font-bold mb-4">&#x1F52E; Voyance Amour</h1>
+          <h1 className="text-5xl md:text-6xl font-bold mb-4">&#x1F52E; voyance amour</h1>
           <p className="text-2xl opacity-95 mb-6">Tout Savoir sur la Voyance Amoureuse</p>
           <p className="text-lg opacity-90 max-w-2xl mx-auto mb-8">Reconqu&ecirc;te, sentiments, rupture, rencontre &mdash; consultez un voyant sp&eacute;cialis&eacute; en amour pour &eacute;clairer votre chemin sentimental.</p>
           <div className="flex gap-4 flex-wrap justify-center">

@@ -8,14 +8,14 @@ import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 const DREAM_HUB_CARDS = getDreamHubCards();
 
 export const metadata: Metadata = {
-  title: 'Interprétation des Rêves Amoureux : Signification',
+  title: 'Interprétation des rêves amoureux : signification',
   description: 'Rêver de son ex, de tromperie, de mariage, de son crush : la signification des rêves d\'amour. Ce que chaque rêve révèle sur votre monde intérieur, et ce qu\'il ne prédit pas.',
   alternates: { canonical: 'https://www.voyantlove.fr/reves-amour/' },
 };
 
 export default function RevesAmourHub() {
   const webPageSchema = getWebPageSchema({
-    title: 'Interprétation des Rêves Amoureux : Signification',
+    title: 'Interprétation des rêves amoureux : signification',
     description: 'La signification des rêves d\'amour : ex, tromperie, mariage, crush. Ce que chaque rêve révèle de votre monde intérieur.',
     url: 'https://www.voyantlove.fr/reves-amour/',
   });
@@ -34,7 +34,7 @@ export default function RevesAmourHub() {
       <header className="bg-gradient-to-r from-indigo-700 via-purple-700 to-violet-800 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <Link href="/" className="text-white/80 hover:text-white mb-4 inline-block">← Accueil</Link>
-          <h1 className="text-5xl font-bold mb-6">🌙 Interprétation des Rêves Amoureux</h1>
+          <h1 className="text-5xl font-bold mb-6">🌙 Interprétation des rêves amoureux</h1>
           <p className="text-2xl opacity-95 mb-4">Ce que vos rêves d&apos;amour révèlent sur votre monde intérieur</p>
           <p className="text-lg opacity-90 max-w-2xl mx-auto">Rêver de son ex, de tromperie, de mariage, de son crush : la signification de chaque rêve, et ce qu&apos;il ne prédit pas.</p>
         </div>

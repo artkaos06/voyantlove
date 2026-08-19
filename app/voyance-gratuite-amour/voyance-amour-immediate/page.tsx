@@ -4,7 +4,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Voyance Amour Gratuite Immédiate : Tirage Instantané en Ligne',
+  title: 'Voyance amour gratuite immédiate : tirage instantané en ligne',
   description: 'Voyance amour gratuite immédiate : tirage instantané en ligne, oracle et tarot oui/non amour. Réponse en quelques secondes à votre question sentimentale, sans inscription.',
   url: 'https://www.voyantlove.fr/voyance-gratuite-amour/voyance-amour-immediate/',
   keywords: ['voyance amour gratuite immediate', 'voyance gratuite immediate amour', 'voyance amoureuse gratuite immediate', 'voyance amour gratuit immediat', 'voyance gratuite amour en ligne immediate', 'tirage amour immediat'],
@@ -17,13 +17,13 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: '⚡',
-    h1: 'Voyance Amour Gratuite Immédiate',
+    h1: 'Voyance amour gratuite immédiate',
     subtitle: 'Tirage instantané en ligne et consultation en direct sans attente',
     gradient: 'from-emerald-500 via-teal-500 to-green-500',
-    backLink: { href: '/voyance-gratuite-amour/', label: 'Voyance Gratuite Amour' },
+    backLink: { href: '/voyance-gratuite-amour/', label: 'Voyance gratuite amour' },
     anchors: [
-      { href: '/voyance-gratuite-amour/tarot-oui-non-amour/', label: 'Tirage Immédiat', primary: true },
-      { href: '#consultation', label: 'Voyant en Direct' },
+      { href: '/voyance-gratuite-amour/tarot-oui-non-amour/', label: 'Tirage immédiat', primary: true },
+      { href: '#consultation', label: 'Voyant en direct' },
     ],
   },
   accentText: 'text-emerald-600',
@@ -59,11 +59,11 @@ const config: ContentPageConfig = {
   ],
   related: [
     { href: '/voyance-gratuite-amour/', label: 'Toutes nos guidances gratuites' },
-    { href: '/voyance-gratuite-amour/tarot-oui-non-amour/', label: 'Tarot Oui/Non Amour' },
-    { href: '/voyance-gratuite-amour/tarot-amour-gratuit/', label: 'Tarot Amour Gratuit Complet' },
-    { href: '/voyance-gratuite-amour/voyance-tchat-gratuit-amour/', label: 'Voyance par Chat Gratuit' },
-    { href: '/voyance-amour/', label: 'Tout sur la Voyance Amour' },
-    { href: '/consulter/', label: 'Consulter un Voyant en Direct' },
+    { href: '/voyance-gratuite-amour/tarot-oui-non-amour/', label: 'Tarot oui/non amour' },
+    { href: '/voyance-gratuite-amour/tarot-amour-gratuit/', label: 'Tarot amour gratuit complet' },
+    { href: '/voyance-gratuite-amour/voyance-tchat-gratuit-amour/', label: 'Voyance par chat gratuit' },
+    { href: '/voyance-amour/', label: 'Tout sur la voyance amour' },
+    { href: '/consulter/', label: 'Consulter un voyant en direct' },
   ],
 };
 

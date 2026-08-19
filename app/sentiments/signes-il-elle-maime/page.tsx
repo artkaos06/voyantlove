@@ -4,7 +4,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Signes qu\'il/elle m\'aime : Décrypter l\'Amour Véritable | Tarot',
+  title: 'Signes qu\'il/elle m\'aime : décrypter l\'amour véritable | Tarot',
   description: 'Découvrez les signes qu\'il ou elle vous aime vraiment. Langage corporel, comportements révélateurs, signes du tarot et preuves d\'amour authentique.',
   url: 'https://www.voyantlove.fr/sentiments/signes-il-elle-maime/',
   keywords: ['signes il elle maime', 'signes amour', 'langage corporel amoureux', 'comportement amoureux', 'tarot signes amour'],
@@ -20,10 +20,10 @@ const config: ContentPageConfig = {
     h1: 'Signes qu\'il/elle m\'aime',
     subtitle: 'Décryptez les preuves d\'amour véritable selon le comportement et le tarot',
     gradient: 'from-pink-500 via-rose-500 to-red-500',
-    backLink: { href: '/sentiments/', label: 'Retour aux Sentiments' },
+    backLink: { href: '/sentiments/', label: 'Retour aux sentiments' },
     anchors: [
-      { href: '#consultation', label: 'Analyser ses Sentiments', primary: true },
-      { href: '#signes', label: 'Les 20 Signes Clés' },
+      { href: '#consultation', label: 'Analyser ses sentiments', primary: true },
+      { href: '#signes', label: 'Les 20 signes clés' },
     ],
   },
   accentText: 'text-rose-600',
@@ -31,7 +31,7 @@ const config: ContentPageConfig = {
     { icon: '💖', value: 'Reconnue', label: 'Expertise' },
     { icon: '👁️', value: 'Clé', label: 'Langage corporel' },
     { icon: '🔮', value: '3,800+', label: 'Analyses' },
-    { icon: '⭐', value: '4.9/5', label: '342 avis' },
+    { icon: '⭐', value: '4.9/5', label: '342 Avis' },
   ],
   eeat: { colorScheme: 'purple', method: 'Analyse comportementale et lecture tarot des sentiments' },
   cta: { topic: 'sentiments', slug: 'signes-il-elle-maime' },
@@ -62,10 +62,10 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/sentiments/', label: 'Sentiments Amoureux : Toutes nos Guidances' },
-    { href: '/sentiments/maime-t-il-elle/', label: 'M\'aime-t-il/elle Vraiment ?' },
-    { href: '/sentiments/avenir-amoureux/', label: 'Mon Avenir Amoureux' },
-    { href: '/nouvelle-rencontre/trouver-ame-soeur/', label: 'Trouver son Âme Sœur' },
+    { href: '/sentiments/', label: 'Sentiments amoureux : toutes nos guidances' },
+    { href: '/sentiments/maime-t-il-elle/', label: 'M\'aime-t-il/elle vraiment ?' },
+    { href: '/sentiments/avenir-amoureux/', label: 'Mon avenir amoureux' },
+    { href: '/nouvelle-rencontre/trouver-ame-soeur/', label: 'Trouver son âme sœur' },
   ],
 };
 

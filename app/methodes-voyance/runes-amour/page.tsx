@@ -4,7 +4,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Runes Amour : Tirage et Signification pour Votre Vie Sentimentale',
+  title: 'Runes amour : tirage et signification pour votre vie sentimentale',
   description: 'Découvrez le tirage de runes pour l\'amour. Signification des runes en amour, comment les lire pour votre vie sentimentale, et ce qu\'elles révèlent sur votre relation.',
   url: 'https://www.voyantlove.fr/methodes-voyance/runes-amour/',
   keywords: ['runes amour', 'tirage runes amour', 'runes signification amour', 'runes couple', 'voyance runes sentimentale'],
@@ -17,18 +17,18 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: 'ᚱ',
-    h1: 'Runes Amour',
+    h1: 'Runes amour',
     subtitle: 'Tirage Runique pour Votre Vie Sentimentale',
     gradient: 'from-stone-700 via-amber-800 to-yellow-800',
-    backLink: { href: '/methodes-voyance/', label: 'Retour aux Méthodes de Voyance' },
+    backLink: { href: '/methodes-voyance/', label: 'Retour aux méthodes de voyance' },
     anchors: [
-      { href: '#runes-importantes', label: 'Les 7 Runes Clés', primary: true },
-      { href: '#tirage', label: 'Faire un Tirage' },
+      { href: '#runes-importantes', label: 'Les 7 runes clés', primary: true },
+      { href: '#tirage', label: 'Faire un tirage' },
     ],
   },
   accentText: 'text-amber-700',
   stats: [
-    { icon: 'ᚱ', value: '24 Runes', label: 'Alphabet Elder Futhark' },
+    { icon: 'ᚱ', value: '24 Runes', label: 'Alphabet elder futhark' },
     { icon: '❤', value: '7 Runes', label: 'Essentielles pour l\'amour' },
     { icon: '✨', value: '11 ans', label: 'Expertise en divination runique' },
     { icon: '💫', value: '1 400+', label: 'Consultations réalisées' },
@@ -54,10 +54,10 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/methodes-voyance/', label: 'Toutes les Méthodes de Voyance Amoureuse' },
-    { href: '/methodes-voyance/tirage-tarot-amour/', label: 'Tirage Tarot Amour : Guide Complet' },
-    { href: '/methodes-voyance/oracle-amour/', label: 'Oracle Amour : Signification et Méthode' },
-    { href: '/methodes-voyance/pendule-amour/', label: 'Pendule Amour : Réponses Claires et Rapides' },
+    { href: '/methodes-voyance/', label: 'Toutes les méthodes de voyance amoureuse' },
+    { href: '/methodes-voyance/tirage-tarot-amour/', label: 'Tirage Tarot amour : guide complet' },
+    { href: '/methodes-voyance/oracle-amour/', label: 'Oracle amour : signification et méthode' },
+    { href: '/methodes-voyance/pendule-amour/', label: 'Pendule amour : réponses claires et rapides' },
   ],
 };
 

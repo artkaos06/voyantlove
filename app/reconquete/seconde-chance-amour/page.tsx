@@ -4,7 +4,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Seconde Chance en Amour : Donner une Nouvelle Opportunité',
+  title: 'Seconde chance en amour : donner une nouvelle opportunité',
   description: 'Faut-il donner une seconde chance en amour ? Le tarot guide votre décision pour reconstruire ou tourner la page.',
   url: 'https://www.voyantlove.fr/reconquete/seconde-chance-amour/',
   keywords: ['seconde chance', 'nouvelle opportunité', 'pardon', 'reconstruction'],
@@ -17,10 +17,10 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: '🌱',
-    h1: 'Seconde Chance en Amour',
+    h1: 'Seconde chance en amour',
     subtitle: 'Donner une nouvelle opportunité selon le tarot',
     gradient: 'from-green-500 via-teal-500 to-cyan-500',
-    backLink: { href: '/reconquete/', label: 'Retour à la Reconquête' },
+    backLink: { href: '/reconquete/', label: 'Retour à la reconquête' },
     anchors: [
       { href: '#consultation', label: 'Consultation', primary: true },
     ],
@@ -61,13 +61,13 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/reconquete/', label: 'Reconquête Amoureuse : Toutes nos Guidances' },
-    { href: '/reconquete/ex-qui-revient/', label: 'Ex qui Revient : Identifier les Vraies Motivations' },
-    { href: '/reconquete/se-remettre-ensemble/', label: 'Se Remettre Ensemble : Guide Complet' },
-    { href: '/reconquete/ex-revient-silence-radio/', label: 'Ex qui Revient après Silence Radio' },
-    { href: '/reconquete/retour-de-lex/', label: 'Retour de l\'Ex : Signes et Timing' },
-    { href: '/reconquete/va-t-il-elle-revenir/', label: 'Va-t-il/elle Revenir ? Prédiction Tarot' },
-    { href: '/reconquete/reconquerir-son-ex/', label: 'Reconquérir son Ex : Stratégies Efficaces' },
+    { href: '/reconquete/', label: 'Reconquête amoureuse : toutes nos guidances' },
+    { href: '/reconquete/ex-qui-revient/', label: 'Ex qui revient : identifier les vraies motivations' },
+    { href: '/reconquete/se-remettre-ensemble/', label: 'Se remettre ensemble : guide complet' },
+    { href: '/reconquete/ex-revient-silence-radio/', label: 'Ex qui revient après silence radio' },
+    { href: '/reconquete/retour-de-lex/', label: 'Retour de l\'ex : signes et timing' },
+    { href: '/reconquete/va-t-il-elle-revenir/', label: 'Va-t-il/elle revenir ? prédiction Tarot' },
+    { href: '/reconquete/reconquerir-son-ex/', label: 'Reconquérir son ex : stratégies efficaces' },
   ],
 };
 

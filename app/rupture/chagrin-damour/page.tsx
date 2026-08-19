@@ -4,7 +4,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Chagrin d\'Amour : Guérir et Surmonter selon le Tarot',
+  title: 'Chagrin d\'amour : guérir et surmonter selon le Tarot',
   description: 'Comment surmonter un chagrin d\'amour avec la voyance ? Processus de guérison, timing de reconstruction et retrouver la joie de vivre.',
   url: 'https://www.voyantlove.fr/rupture/chagrin-damour/',
   keywords: ['chagrin d\'amour', 'peine de cœur', 'cœur brisé', 'guérir chagrin', 'surmonter peine'],
@@ -17,10 +17,10 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: '💙',
-    h1: 'Chagrin d\'Amour',
+    h1: 'Chagrin d\'amour',
     subtitle: 'Guérir et retrouver l\'espoir',
     gradient: 'from-blue-600 via-indigo-600 to-purple-600',
-    backLink: { href: '/rupture/', label: 'Retour aux Ruptures Amoureuses' },
+    backLink: { href: '/rupture/', label: 'Retour aux ruptures amoureuses' },
     anchors: [
       { href: '#consultation', label: 'Guidance', primary: true },
       { href: '#etapes', label: 'Étapes' },
@@ -28,7 +28,7 @@ const config: ContentPageConfig = {
   },
   accentText: 'text-blue-600',
   stats: [
-    { icon: '⭐', value: '4.8/5', label: '287 avis' },
+    { icon: '⭐', value: '4.8/5', label: '287 Avis' },
     { icon: '💙', value: 'Nette', label: 'Amélioration ressentie' },
     { icon: '⏰', value: '3-6 mois', label: 'Guérison' },
     { icon: '🌈', value: 'Grande', label: 'Majorité retrouve joie' },
@@ -54,12 +54,12 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/rupture/', label: 'Rupture & Guérison : Toutes nos Guidances' },
-    { href: '/rupture/oublier-son-ex/', label: 'Oublier son Ex et Tourner la Page' },
-    { href: '/rupture/rupture-amoureuse/', label: 'Comprendre sa Rupture Amoureuse en Profondeur' },
-    { href: '/reconquete/va-t-il-elle-revenir/', label: 'Va-t-il/elle Revenir ? Tirage de Retour' },
-    { href: '/nouvelle-rencontre/quand-rencontre-amour/', label: 'Quand Vais-je Rencontrer l\'Amour à Nouveau ?' },
-    { href: '/sentiments/maime-t-il-elle/', label: 'Décrypter les Sentiments de l\'Autre' },
+    { href: '/rupture/', label: 'Rupture & guérison : toutes nos guidances' },
+    { href: '/rupture/oublier-son-ex/', label: 'Oublier son ex et tourner la page' },
+    { href: '/rupture/rupture-amoureuse/', label: 'Comprendre sa rupture amoureuse en profondeur' },
+    { href: '/reconquete/va-t-il-elle-revenir/', label: 'Va-t-il/elle revenir ? tirage de retour' },
+    { href: '/nouvelle-rencontre/quand-rencontre-amour/', label: 'Quand vais-je rencontrer l\'amour à nouveau ?' },
+    { href: '/sentiments/maime-t-il-elle/', label: 'Décrypter les sentiments de l\'autre' },
   ],
 };
 

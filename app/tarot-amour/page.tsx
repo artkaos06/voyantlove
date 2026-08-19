@@ -8,7 +8,7 @@ import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 const LIVE_CARDS = TAROT_LOVE_CARDS.filter((c) => validateCardRecord(c).length === 0);
 
 export const metadata: Metadata = {
-  title: 'Tarot Amour : Signification des Cartes en Amour',
+  title: 'Tarot amour : signification des cartes en amour',
   description: 'Signification des cartes du tarot en amour : chaque arcane décrypté à l\'endroit et renversé, pour célibataire, couple et retour d\'un ex. Tarot de Marseille.',
   alternates: { canonical: 'https://www.voyantlove.fr/tarot-amour/' },
 };
@@ -21,7 +21,7 @@ const OUINON_DOT: Record<string, string> = {
 
 export default function TarotAmourHub() {
   const webPageSchema = getWebPageSchema({
-    title: 'Tarot Amour : Signification des Cartes en Amour',
+    title: 'Tarot amour : signification des cartes en amour',
     description: 'Signification des cartes du tarot en amour, arcane par arcane, à l\'endroit et renversé.',
     url: 'https://www.voyantlove.fr/tarot-amour/',
   });
@@ -40,7 +40,7 @@ export default function TarotAmourHub() {
       <header className="bg-gradient-to-r from-purple-800 via-indigo-800 to-violet-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <Link href="/" className="text-white/80 hover:text-white mb-4 inline-block">← Accueil</Link>
-          <h1 className="text-5xl font-bold mb-6">🃏 Tarot Amour : Signification des Cartes</h1>
+          <h1 className="text-5xl font-bold mb-6">🃏 Tarot amour : signification des cartes</h1>
           <p className="text-2xl opacity-95 mb-4">Chaque arcane décrypté pour votre vie sentimentale</p>
           <p className="text-lg opacity-90 max-w-2xl mx-auto">Signification à l&apos;endroit et renversée, message pour célibataire, couple et retour d&apos;un ex.</p>
         </div>

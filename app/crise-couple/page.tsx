@@ -7,14 +7,14 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
 export const metadata: Metadata = {
-  title: 'Crise de Couple : Solutions et Guidance | Voyance',
+  title: 'Crise de couple : solutions et guidance | voyance',
   description: 'Surmonter les crises de couple : infidélité, jalousie, communication. Solutions selon le tarot et la voyance.',
   alternates: { canonical: 'https://www.voyantlove.fr/crise-couple/' },
 };
 
 export default function CriseCoupleHubPage() {
   const webPageSchema = getWebPageSchema({
-    title: 'Crise de Couple : Solutions et Guidance | Voyance',
+    title: 'Crise de couple : solutions et guidance | voyance',
     description: 'Surmonter les crises de couple : infidélité, jalousie, communication. Solutions selon le tarot et la voyance.',
     url: 'https://www.voyantlove.fr/crise-couple/',
   });
@@ -58,7 +58,7 @@ export default function CriseCoupleHubPage() {
       <header className="bg-gradient-to-r from-orange-600 via-red-600 to-pink-600 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <Link href="/" className="text-white/80 hover:text-white mb-4 inline-block">← Accueil</Link>
-          <h1 className="text-5xl font-bold mb-6">⚠️ Crise de Couple</h1>
+          <h1 className="text-5xl font-bold mb-6">⚠️ Crise de couple</h1>
           <p className="text-2xl opacity-95 mb-8">Solutions et Guidance pour Surmonter les Problèmes</p>
           <p className="text-lg opacity-90 max-w-2xl mx-auto">Le tarot aide à résoudre infidélité, jalousie et problèmes de communication.</p>
         </div>

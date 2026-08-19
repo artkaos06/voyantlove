@@ -4,7 +4,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Relation Toxique : Signes, Lib\u00e9ration et Guidance par la Voyance',
+  title: 'Relation toxique : signes, lib\u00e9ration et guidance par la voyance',
   description: 'Identifiez les 10 signes d\u2019une relation toxique et lib\u00e9rez-vous gr\u00e2ce \u00e0 la voyance amoureuse. Tarot de lib\u00e9ration, manipulation \u00e9motionnelle, reconstruction apr\u00e8s toxicit\u00e9.',
   url: 'https://www.voyantlove.fr/sentiments/relation-toxique/',
   keywords: ['relation toxique', 'signes relation toxique', 'manipulation \u00e9motionnelle', 'd\u00e9pendance affective', 'lib\u00e9ration relation toxique', 'voyance amoureuse', 'tarot lib\u00e9ration'],
@@ -17,13 +17,13 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: '\u26a0\ufe0f',
-    h1: 'Relation Toxique : Signes, Lib\u00e9ration et Guidance',
+    h1: 'Relation toxique : signes, lib\u00e9ration et guidance',
     subtitle: 'Reconnaissez les signes de toxicit\u00e9 et lib\u00e9rez-vous gr\u00e2ce \u00e0 la voyance amoureuse',
     gradient: 'from-red-500 via-orange-500 to-amber-500',
-    backLink: { href: '/sentiments/', label: 'Retour aux Sentiments & Avenir' },
+    backLink: { href: '/sentiments/', label: 'Retour aux sentiments & avenir' },
     anchors: [
-      { href: '#liberation', label: 'Se Lib\u00e9rer Maintenant', primary: true },
-      { href: '#signes', label: 'Les 10 Signes Cl\u00e9s' },
+      { href: '#liberation', label: 'Se lib\u00e9rer maintenant', primary: true },
+      { href: '#signes', label: 'Les 10 signes cl\u00e9s' },
     ],
   },
   accentText: 'text-red-600',
@@ -58,11 +58,11 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/crise-couple/dependance-affective/', label: 'D\u00e9pendance Affective : Se Lib\u00e9rer et Aimer Sainement' },
-    { href: '/crise-couple/jalousie-excessive/', label: 'Jalousie Excessive dans le Couple' },
-    { href: '/rupture/rupture-amoureuse/', label: 'Rupture Amoureuse : Comprendre et Surmonter' },
-    { href: '/rupture/guerir-rupture/', label: 'Gu\u00e9rir Apr\u00e8s une Rupture Douloureuse' },
-    { href: '/sentiments/maime-t-il-elle/', label: 'M\u2019aime-t-il/elle Vraiment ?' },
+    { href: '/crise-couple/dependance-affective/', label: 'D\u00e9pendance affective : se lib\u00e9rer et aimer sainement' },
+    { href: '/crise-couple/jalousie-excessive/', label: 'Jalousie excessive dans le couple' },
+    { href: '/rupture/rupture-amoureuse/', label: 'Rupture amoureuse : comprendre et surmonter' },
+    { href: '/rupture/guerir-rupture/', label: 'Gu\u00e9rir apr\u00e8s une rupture douloureuse' },
+    { href: '/sentiments/maime-t-il-elle/', label: 'M\u2019aime-t-il/elle vraiment ?' },
   ],
 };
 

@@ -4,7 +4,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Rupture Soudaine sans Explication : Comprendre et Réagir',
+  title: 'Rupture soudaine sans explication : comprendre et réagir',
   description: 'Rupture ou demande de divorce soudaine, sans explication claire ? Une grille de lecture pour distinguer les faits, les hypothèses et les questions à poser.',
   url: 'https://www.voyantlove.fr/rupture/rupture-soudaine-sans-explication/',
   keywords: ['rupture soudaine sans explication', 'pourquoi il me quitte du jour au lendemain', 'mon mari veut divorcer sans explication', 'ma femme me quitte soudainement', 'rupture inattendue que faire'],
@@ -17,20 +17,20 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: '⚡',
-    h1: 'Comment Comprendre une Rupture Soudaine sans Explication ?',
+    h1: 'Comment comprendre une rupture soudaine sans explication ?',
     subtitle: 'Sortir de la sidération et retrouver des repères sans s\'enfermer dans les suppositions',
     gradient: 'from-slate-700 via-blue-800 to-indigo-900',
-    backLink: { href: '/rupture/', label: 'Retour à la Rupture Amoureuse' },
+    backLink: { href: '/rupture/', label: 'Retour à la rupture amoureuse' },
     anchors: [
-      { href: '#grille', label: 'La Grille de Lecture', primary: true },
-      { href: '#demander', label: 'Demander une Explication' },
+      { href: '#grille', label: 'La grille de lecture', primary: true },
+      { href: '#demander', label: 'Demander une explication' },
     ],
   },
   accentText: 'text-blue-700',
   stats: [
     { icon: '🔮', value: 'Reconnue', label: 'Expertise' },
     { icon: '⚡', value: '3,200+', label: 'Consultations' },
-    { icon: '⭐', value: '4.7/5', label: '254 avis' },
+    { icon: '⭐', value: '4.7/5', label: '254 Avis' },
     { icon: '🔒', value: '100%', label: 'Confidentiel' },
   ],
   eeat: { colorScheme: 'blue', method: 'Grille de lecture post-rupture et guidance sentimentale' },
@@ -58,11 +58,11 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/rupture/', label: 'Rupture Amoureuse : Toutes nos Guidances' },
-    { href: '/rupture/voyance-divorce-separation/', label: 'Voyance Divorce et Séparation' },
-    { href: '/reconquete/separation-temporaire-ou-definitive/', label: 'Séparation Temporaire ou Définitive ?' },
-    { href: '/reconquete/ex-chaud-et-froid-apres-separation/', label: 'Mon Ex est Chaud et Froid' },
-    { href: '/rupture/deuil-amoureux/', label: 'Deuil Amoureux' },
+    { href: '/rupture/', label: 'Rupture amoureuse : toutes nos guidances' },
+    { href: '/rupture/voyance-divorce-separation/', label: 'Voyance divorce et séparation' },
+    { href: '/reconquete/separation-temporaire-ou-definitive/', label: 'Séparation temporaire ou définitive ?' },
+    { href: '/reconquete/ex-chaud-et-froid-apres-separation/', label: 'Mon ex est chaud et froid' },
+    { href: '/rupture/deuil-amoureux/', label: 'Deuil amoureux' },
   ],
 };
 

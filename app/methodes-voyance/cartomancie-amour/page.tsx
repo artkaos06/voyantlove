@@ -4,7 +4,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Cartomancie Amour : L\'Art des Cartes au Service de Votre Cœur',
+  title: 'Cartomancie amour : l\'art des cartes au service de votre cœur',
   description: 'Découvrez la cartomancie amoureuse : Petit Lenormand, jeu de 32 cartes, symbolique des couleurs. Guide complet pour comprendre cet art divinatoire ancestral appliqué aux questions de cœur.',
   url: 'https://www.voyantlove.fr/methodes-voyance/cartomancie-amour/',
   keywords: ['cartomancie amour', 'cartomancie amoureuse', 'petit lenormand amour', 'cartomancien amour', 'tirage cartomancie sentimental'],
@@ -17,18 +17,18 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: '🎴',
-    h1: 'Cartomancie Amour',
+    h1: 'Cartomancie amour',
     subtitle: 'L\'art ancestral des cartes au service de votre vie sentimentale',
     gradient: 'from-teal-600 via-cyan-600 to-blue-700',
-    backLink: { href: '/methodes-voyance/', label: 'Retour aux Méthodes de Voyance' },
+    backLink: { href: '/methodes-voyance/', label: 'Retour aux méthodes de voyance' },
     anchors: [
-      { href: '#lenormand', label: 'Le Petit Lenormand', primary: true },
-      { href: '#consultation', label: 'Consulter un Cartomancien' },
+      { href: '#lenormand', label: 'Le petit lenormand', primary: true },
+      { href: '#consultation', label: 'Consulter un cartomancien' },
     ],
   },
   accentText: 'text-teal-700',
   stats: [
-    { icon: '🎴', value: '36 cartes', label: 'Petit Lenormand' },
+    { icon: '🎴', value: '36 cartes', label: 'Petit lenormand' },
     { icon: '📜', value: '19e siècle', label: 'Origine en France' },
     { icon: '💞', value: 'Direct', label: 'Réponses concrètes' },
     { icon: '🔗', value: 'Combinatoire', label: 'Lecture par association' },
@@ -54,12 +54,12 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/methodes-voyance/', label: 'Toutes les Méthodes de Voyance Amoureuse' },
-    { href: '/methodes-voyance/tirage-tarot-amour/', label: 'Tirage Tarot Amour : Guide Complet' },
-    { href: '/methodes-voyance/tarologie-amoureuse/', label: 'Tarologie Amoureuse' },
-    { href: '/methodes-voyance/oracle-amour/', label: 'Oracle de l\'Amour' },
-    { href: '/glossaire/petit-lenormand/', label: 'Glossaire : Petit Lenormand' },
-    { href: '/glossaire/carte-inversee/', label: 'Glossaire : Carte Inversée' },
+    { href: '/methodes-voyance/', label: 'Toutes les méthodes de voyance amoureuse' },
+    { href: '/methodes-voyance/tirage-tarot-amour/', label: 'Tirage Tarot amour : guide complet' },
+    { href: '/methodes-voyance/tarologie-amoureuse/', label: 'Tarologie amoureuse' },
+    { href: '/methodes-voyance/oracle-amour/', label: 'Oracle de l\'amour' },
+    { href: '/glossaire/petit-lenormand/', label: 'Glossaire : petit lenormand' },
+    { href: '/glossaire/carte-inversee/', label: 'Glossaire : carte inversée' },
   ],
 };
 

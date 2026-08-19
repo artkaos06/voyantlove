@@ -10,14 +10,14 @@ import SynastryCalculator from '@/components/SynastryCalculator';
 const LIVE_PAIRS = COMPATIBILITY_PAIRS.filter((p) => validatePairRecord(p).length === 0);
 
 export const metadata: Metadata = {
-  title: 'Compatibilité Amoureuse des Signes Astrologiques',
+  title: 'Compatibilité amoureuse des signes astrologiques',
   description: 'Compatibilité amoureuse signe par signe : dynamique, forces, défis et conseils pour chaque couple du zodiaque. Testez votre duo avec le calculateur.',
   alternates: { canonical: 'https://www.voyantlove.fr/compatibilite-amoureuse/' },
 };
 
 export default function CompatibiliteHubPage() {
   const webPageSchema = getWebPageSchema({
-    title: 'Compatibilité Amoureuse des Signes Astrologiques',
+    title: 'Compatibilité amoureuse des signes astrologiques',
     description: 'Compatibilité amoureuse signe par signe : dynamique, forces, défis et conseils pour chaque couple du zodiaque.',
     url: 'https://www.voyantlove.fr/compatibilite-amoureuse/',
   });
@@ -36,7 +36,7 @@ export default function CompatibiliteHubPage() {
       <header className="bg-gradient-to-r from-indigo-700 via-purple-700 to-violet-700 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <Link href="/" className="text-white/80 hover:text-white mb-4 inline-block">← Accueil</Link>
-          <h1 className="text-5xl font-bold mb-6">💞 Compatibilité Amoureuse des Signes</h1>
+          <h1 className="text-5xl font-bold mb-6">💞 Compatibilité amoureuse des signes</h1>
           <p className="text-2xl opacity-95 mb-4">Chaque duo du zodiaque a sa propre alchimie</p>
           <p className="text-lg opacity-90 max-w-2xl mx-auto">Dynamique, forces, défis et conseils, signe par signe, couple par couple.</p>
         </div>

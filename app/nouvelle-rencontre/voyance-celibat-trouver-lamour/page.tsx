@@ -17,13 +17,13 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: '🔮',
-    h1: 'Voyance Célibat',
+    h1: 'Voyance célibat',
     subtitle: 'Quand Vais-Je Trouver l’Amour ?',
     gradient: 'from-blue-600 via-indigo-600 to-purple-600',
-    backLink: { href: '/nouvelle-rencontre/', label: 'Retour aux Nouvelles Rencontres' },
+    backLink: { href: '/nouvelle-rencontre/', label: 'Retour aux nouvelles rencontres' },
     anchors: [
-      { href: '#blocages', label: 'Identifier mes Blocages', primary: true },
-      { href: '#timing', label: 'Timing de Rencontre' },
+      { href: '#blocages', label: 'Identifier mes blocages', primary: true },
+      { href: '#timing', label: 'Timing de rencontre' },
     ],
   },
   accentText: 'text-indigo-600',

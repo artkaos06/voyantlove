@@ -4,7 +4,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Pense-t-il/elle à Moi ? Ce que le Tarot Révèle | Voyance',
+  title: 'Pense-t-il/elle à moi ? ce que le Tarot révèle | voyance',
   description: 'Découvrez si cette personne pense à vous grâce au tarot et à la voyance. Signes énergétiques, télépathie amoureuse, tirage spécifique.',
   url: 'https://www.voyantlove.fr/sentiments/pense-t-il-elle-a-moi/',
   keywords: ['pense-t-il à moi voyance', 'est-ce qu\'il pense à moi tarot', 'pense-t-elle à moi', 'signes qu\'il pense à moi', 'voyance pensées'],
@@ -17,20 +17,20 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: '💭',
-    h1: 'Pense-t-il/elle à Moi ?',
+    h1: 'Pense-t-il/elle à moi ?',
     subtitle: 'Ce que le tarot et la voyance révèlent sur ses pensées secrètes',
     gradient: 'from-pink-400 via-rose-500 to-purple-500',
-    backLink: { href: '/sentiments/', label: 'Retour aux Sentiments' },
+    backLink: { href: '/sentiments/', label: 'Retour aux sentiments' },
     anchors: [
-      { href: '#tirage', label: 'Tirage des Pensées', primary: true },
-      { href: '#signes', label: 'Signes Énergétiques' },
+      { href: '#tirage', label: 'Tirage des pensées', primary: true },
+      { href: '#signes', label: 'Signes énergétiques' },
     ],
   },
   accentText: 'text-pink-600',
   stats: [
     { icon: '🔮', value: 'Reconnue', label: 'Expertise' },
     { icon: '💭', value: '4,200+', label: 'Tirages réalisés' },
-    { icon: '⭐', value: '4.7/5', label: '312 avis' },
+    { icon: '⭐', value: '4.7/5', label: '312 Avis' },
     { icon: '🔒', value: '100%', label: 'Confidentiel' },
   ],
   eeat: { colorScheme: 'pink', method: 'Tarot des pensées et connexion télépathique' },
@@ -58,11 +58,11 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/sentiments/', label: 'Sentiments Amoureux : Toutes nos Guidances' },
-    { href: '/sentiments/maime-t-il-elle/', label: 'M\'aime-t-il/elle Vraiment ?' },
-    { href: '/sentiments/signes-il-elle-maime/', label: 'Les Signes Concrets d\'Amour' },
-    { href: '/reconquete/va-t-il-elle-revenir/', label: 'Va-t-il/elle Revenir ?' },
-    { href: '/sentiments/avenir-amoureux/', label: 'Mon Avenir Amoureux' },
+    { href: '/sentiments/', label: 'Sentiments amoureux : toutes nos guidances' },
+    { href: '/sentiments/maime-t-il-elle/', label: 'M\'aime-t-il/elle vraiment ?' },
+    { href: '/sentiments/signes-il-elle-maime/', label: 'Les signes concrets d\'amour' },
+    { href: '/reconquete/va-t-il-elle-revenir/', label: 'Va-t-il/elle revenir ?' },
+    { href: '/sentiments/avenir-amoureux/', label: 'Mon avenir amoureux' },
   ],
 };
 

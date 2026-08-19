@@ -4,7 +4,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Se Remettre Ensemble : Les 5 Étapes pour Réussir',
+  title: 'Se remettre ensemble : les 5 étapes pour réussir',
   description: 'Comment se remettre ensemble avec son ex ? Découvrez les étapes essentielles et la guidance tarot pour une réunion réussie.',
   url: 'https://www.voyantlove.fr/reconquete/se-remettre-ensemble/',
   keywords: ['se remettre ensemble', 'reprise relation', 'reconstruction couple', 'retrouvailles'],
@@ -17,10 +17,10 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: '💑',
-    h1: 'Se Remettre Ensemble',
+    h1: 'Se remettre ensemble',
     subtitle: 'Les 5 étapes pour réussir vos retrouvailles selon le tarot',
     gradient: 'from-purple-500 via-pink-500 to-rose-500',
-    backLink: { href: '/reconquete/', label: 'Retour à la Reconquête' },
+    backLink: { href: '/reconquete/', label: 'Retour à la reconquête' },
     anchors: [
       { href: '#consultation', label: 'Consultation', primary: true },
     ],
@@ -61,14 +61,14 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/reconquete/', label: 'Reconquête Amoureuse : Toutes nos Guidances' },
-    { href: '/reconquete/ex-qui-revient/', label: 'Ex qui Revient : Identifier les Vraies Motivations' },
-    { href: '/reconquete/seconde-chance-amour/', label: 'Seconde Chance en Amour : Conditions de Réussite' },
-    { href: '/reconquete/ex-revient-silence-radio/', label: 'Ex qui Revient après Silence Radio' },
-    { href: '/reconquete/retour-de-lex/', label: 'Retour de l\'Ex : Signes et Timing' },
-    { href: '/reconquete/va-t-il-elle-revenir/', label: 'Va-t-il/elle Revenir ? Prédiction Tarot' },
-    { href: '/reconquete/reconquerir-son-ex/', label: 'Reconquérir son Ex : Stratégies Efficaces' },
-    { href: '/reconquete/revoir-son-ex/', label: 'Revoir son Ex Après une Rupture' },
+    { href: '/reconquete/', label: 'Reconquête amoureuse : toutes nos guidances' },
+    { href: '/reconquete/ex-qui-revient/', label: 'Ex qui revient : identifier les vraies motivations' },
+    { href: '/reconquete/seconde-chance-amour/', label: 'Seconde chance en amour : conditions de réussite' },
+    { href: '/reconquete/ex-revient-silence-radio/', label: 'Ex qui revient après silence radio' },
+    { href: '/reconquete/retour-de-lex/', label: 'Retour de l\'ex : signes et timing' },
+    { href: '/reconquete/va-t-il-elle-revenir/', label: 'Va-t-il/elle revenir ? prédiction Tarot' },
+    { href: '/reconquete/reconquerir-son-ex/', label: 'Reconquérir son ex : stratégies efficaces' },
+    { href: '/reconquete/revoir-son-ex/', label: 'Revoir son ex après une rupture' },
   ],
 };
 

@@ -3,7 +3,7 @@ import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Voyance Mariage : Vais-Je Me Marier ? Avec Qui ?',
+  title: 'Voyance mariage : vais-Je me marier ? avec qui ?',
   description: 'Vous vous demandez si et quand vous allez vous marier ? La voyance mariage révèle les prédictions sur votre union, la demande en mariage et votre futur conjoint.',
   url: 'https://www.voyantlove.fr/sentiments/voyance-mariage/',
   keywords: ['voyance mariage', 'vais-je me marier', 'quand vais-je me marier', 'prédiction mariage', 'voyance union'],
@@ -16,13 +16,13 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: '💍',
-    h1: 'Voyance Mariage',
+    h1: 'Voyance mariage',
     subtitle: 'Vais-Je Me Marier ? Avec Qui ?',
     gradient: 'from-rose-500 via-pink-600 to-purple-600',
-    backLink: { href: '/sentiments/', label: 'Retour à Sentiments & Avenir' },
+    backLink: { href: '/sentiments/', label: 'Retour à sentiments & avenir' },
     anchors: [
-      { href: '#tarot-mariage', label: 'Les Cartes du Mariage', primary: true },
-      { href: '#quand', label: 'Timing & Numérologie' },
+      { href: '#tarot-mariage', label: 'Les cartes du mariage', primary: true },
+      { href: '#quand', label: 'Timing & numérologie' },
     ],
   },
   accentText: 'text-pink-600',
@@ -53,10 +53,10 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/sentiments/', label: 'Sentiments & Avenir : Toutes nos Guidances' },
-    { href: '/sentiments/avenir-amoureux/', label: 'Mon Avenir Amoureux : Guidance Complète' },
-    { href: '/sentiments/compatibilite-amoureuse/', label: 'Compatibilité Amoureuse & Spirituelle' },
-    { href: '/nouvelle-rencontre/trouver-ame-soeur/', label: 'Trouver son Âme Sœur : Guide Complet' },
+    { href: '/sentiments/', label: 'Sentiments & avenir : toutes nos guidances' },
+    { href: '/sentiments/avenir-amoureux/', label: 'Mon avenir amoureux : guidance complète' },
+    { href: '/sentiments/compatibilite-amoureuse/', label: 'Compatibilité amoureuse & spirituelle' },
+    { href: '/nouvelle-rencontre/trouver-ame-soeur/', label: 'Trouver son âme sœur : guide complet' },
   ],
 };
 

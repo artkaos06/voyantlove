@@ -4,7 +4,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Comment Savoir si C\'est le Vrai Amour | Voyance',
+  title: 'Comment savoir si c\'est le vrai amour | voyance',
   description: 'Découvrez les signes du vrai amour grâce à la voyance et au tarot. Apprenez à distinguer l\'amour authentique de l\'attachement ou de la passion éphémère.',
   url: 'https://www.voyantlove.fr/sentiments/savoir-si-cest-lamour/',
   keywords: ['savoir si c\'est l\'amour', 'vrai amour signes', 'est-ce de l\'amour', 'reconnaître le vrai amour', 'voyance amour'],
@@ -17,17 +17,17 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: '💗',
-    h1: 'Comment Savoir si C\'est le Vrai Amour',
+    h1: 'Comment savoir si c\'est le vrai amour',
     subtitle: 'Les signes qui ne trompent pas, éclairés par la voyance et le tarot',
     gradient: 'from-pink-500 via-pink-600 to-rose-600',
     backLink: { href: '/sentiments/', label: 'Sentiments' },
     anchors: [
-      { href: '#consultation', label: 'Consultation Sentiments', primary: true },
+      { href: '#consultation', label: 'Consultation sentiments', primary: true },
     ],
   },
   accentText: 'text-pink-600',
   stats: [
-    { icon: '⭐', value: '4.9/5', label: '312 avis' },
+    { icon: '⭐', value: '4.9/5', label: '312 Avis' },
     { icon: '💕', value: '89%', label: 'Clarté obtenue' },
     { icon: '🔮', value: '20 min', label: 'Consultation' },
     { icon: '✨', value: '15 ans', label: 'Expérience' },
@@ -53,9 +53,9 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/sentiments/maime-t-il-elle/', label: 'M\'aime-t-il / M\'aime-t-elle Encore ?' },
-    { href: '/sentiments/compatibilite-amoureuse/', label: 'Compatibilité Amoureuse' },
-    { href: '/sentiments/signes-il-elle-maime/', label: 'Les Signes qu\'Il/Elle M\'Aime' },
+    { href: '/sentiments/maime-t-il-elle/', label: 'M\'aime-t-il / m\'aime-t-elle encore ?' },
+    { href: '/sentiments/compatibilite-amoureuse/', label: 'Compatibilité amoureuse' },
+    { href: '/sentiments/signes-il-elle-maime/', label: 'Les signes qu\'il/elle m\'aime' },
   ],
 };
 

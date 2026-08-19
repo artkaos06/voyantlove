@@ -17,14 +17,14 @@ const CATEGORY_ORDER: GlossaryCategory[] = [
 ];
 
 export const metadata: Metadata = {
-  title: 'Glossaire de la Voyance Amoureuse : Tous les Termes Expliqués',
+  title: 'Glossaire de la voyance amoureuse : tous les termes expliqués',
   description: `Plus de ${HUB_CARDS.length} termes de voyance et d'amour définis simplement : spiritualité, astrologie, numérologie, pratiques divinatoires et psychologie amoureuse. Le dictionnaire complet de VoyantLove.`,
   alternates: { canonical: 'https://www.voyantlove.fr/glossaire/' },
 };
 
 export default function GlossaireHubPage() {
   const webPageSchema = getWebPageSchema({
-    title: 'Glossaire de la Voyance Amoureuse : Tous les Termes Expliqués',
+    title: 'Glossaire de la voyance amoureuse : tous les termes expliqués',
     description: `Le dictionnaire de la voyance amoureuse : ${HUB_CARDS.length} définitions claires sur la spiritualité, l'astrologie, la numérologie, les pratiques divinatoires et la psychologie amoureuse.`,
     url: 'https://www.voyantlove.fr/glossaire/',
   });
@@ -60,7 +60,7 @@ export default function GlossaireHubPage() {
       <header className="bg-gradient-to-r from-violet-700 via-purple-700 to-fuchsia-800 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <Link href="/" className="text-white/80 hover:text-white mb-4 inline-block">← Accueil</Link>
-          <h1 className="text-5xl font-bold mb-6">📖 Glossaire de la Voyance Amoureuse</h1>
+          <h1 className="text-5xl font-bold mb-6">📖 Glossaire de la voyance amoureuse</h1>
           <p className="text-2xl opacity-95 mb-4">{HUB_CARDS.length} termes de voyance et d&apos;amour expliqués simplement</p>
           <p className="text-lg opacity-90 max-w-2xl mx-auto">Spiritualité, astrologie, numérologie, pratiques divinatoires et psychologie amoureuse : chaque terme est défini, mis en contexte et relié à votre vie sentimentale.</p>
         </div>

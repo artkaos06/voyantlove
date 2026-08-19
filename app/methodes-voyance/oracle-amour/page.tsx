@@ -4,7 +4,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Oracle de l\u2019Amour : Guidance Sentimentale par les Cartes Oracle',
+  title: 'Oracle de l\u2019amour : guidance sentimentale par les cartes Oracle',
   description: 'D\u00e9couvrez l\u2019Oracle de l\u2019Amour : Oracle Belline, Oracle de G\u00e9, Oracle des Anges. Guidance sentimentale compl\u00e8te pour \u00e9clairer votre vie amoureuse.',
   url: 'https://www.voyantlove.fr/methodes-voyance/oracle-amour/',
   keywords: ['oracle amour', 'oracle sentimental', 'guidance amoureuse', 'cartes oracle', 'oracle des anges amour'],
@@ -17,13 +17,13 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: '✨',
-    h1: 'Oracle de l\'Amour',
+    h1: 'Oracle de l\'amour',
     subtitle: 'Guidance sentimentale par les cartes oracle pour éclairer votre cœur',
     gradient: 'from-purple-500 via-fuchsia-500 to-pink-500',
-    backLink: { href: '/methodes-voyance/', label: 'Retour aux Méthodes de Voyance' },
+    backLink: { href: '/methodes-voyance/', label: 'Retour aux méthodes de voyance' },
     anchors: [
       { href: '#consultation', label: 'Consultation Oracle', primary: true },
-      { href: '#oracles', label: 'Les Oracles Puissants' },
+      { href: '#oracles', label: 'Les oracles puissants' },
     ],
   },
   accentText: 'text-purple-600',
@@ -58,11 +58,11 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/methodes-voyance/tirage-tarot-amour/', label: 'Tirage de Tarot Amoureux : Guide Complet' },
-    { href: '/methodes-voyance/astrologie-amoureuse/', label: 'Astrologie Amoureuse : Compatibilité Astrale' },
-    { href: '/sentiments/avenir-amoureux/', label: 'Mon Avenir Amoureux : Prédictions Complètes' },
-    { href: '/sentiments/pense-t-il-elle-a-moi/', label: 'Pense-t-il/elle à Moi ?' },
-    { href: '/nouvelle-rencontre/flamme-jumelle/', label: 'Flamme Jumelle : Connexion Spirituelle Intense' },
+    { href: '/methodes-voyance/tirage-tarot-amour/', label: 'Tirage de Tarot amoureux : guide complet' },
+    { href: '/methodes-voyance/astrologie-amoureuse/', label: 'Astrologie amoureuse : compatibilité astrale' },
+    { href: '/sentiments/avenir-amoureux/', label: 'Mon avenir amoureux : prédictions complètes' },
+    { href: '/sentiments/pense-t-il-elle-a-moi/', label: 'Pense-t-il/elle à moi ?' },
+    { href: '/nouvelle-rencontre/flamme-jumelle/', label: 'Flamme jumelle : connexion spirituelle intense' },
   ],
 };
 

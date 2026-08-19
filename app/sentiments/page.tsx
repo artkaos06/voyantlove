@@ -7,14 +7,14 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
 export const metadata: Metadata = {
-  title: 'M\'aime-t-il ? Décrypter les Sentiments Amoureux',
+  title: 'M\'aime-t-il ? décrypter les sentiments amoureux',
   description: 'M\'aime-t-il vraiment ? Décryptez les sentiments amoureux, prédictions d\'avenir et compatibilité grâce au tarot et à la voyance sentimentale.',
   alternates: { canonical: 'https://www.voyantlove.fr/sentiments/' },
 };
 
 export default function SentimentsHubPage() {
   const webPageSchema = getWebPageSchema({
-    title: 'M\'aime-t-il ? Décrypter les Sentiments Amoureux | VoyantLove',
+    title: 'M\'aime-t-il ? décrypter les sentiments amoureux | VoyantLove',
     description: 'M\'aime-t-il vraiment ? Décryptez les sentiments amoureux, prédictions d\'avenir et compatibilité grâce au tarot et à la voyance sentimentale.',
     url: 'https://www.voyantlove.fr/sentiments/',
   });
@@ -56,7 +56,7 @@ export default function SentimentsHubPage() {
       <header className="bg-gradient-to-r from-red-500 via-pink-500 to-rose-500 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <Link href="/" className="text-white/80 hover:text-white mb-4 inline-block">← Accueil</Link>
-          <h1 className="text-5xl font-bold mb-6">💖 Sentiments Amoureux</h1>
+          <h1 className="text-5xl font-bold mb-6">💖 Sentiments amoureux</h1>
           <p className="text-2xl opacity-95 mb-8">Décrypter les Émotions et Prédire l'Avenir</p>
           <p className="text-lg opacity-90 max-w-2xl mx-auto">Le tarot révèle les vrais sentiments et prédit votre futur sentimental avec précision.</p>
         </div>

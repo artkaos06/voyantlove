@@ -4,7 +4,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Oublier son Ex : Voyance pour Guérir et Tourner la Page | Tarot',
+  title: 'Oublier son ex : voyance pour guérir et tourner la page | Tarot',
   description: 'Comment surmonter une rupture et oublier son ex selon la voyance ? Découvrez le processus de guérison, le timing de reconstruction et quand vous rencontrerez à nouveau.',
   url: 'https://www.voyantlove.fr/rupture/oublier-son-ex/',
   keywords: ['oublier son ex', 'surmonter rupture', 'chagrin d\'amour', 'guérir rupture', 'tourner la page', 'voyance rupture'],
@@ -17,18 +17,18 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: '💔',
-    h1: 'Oublier son Ex et Surmonter la Rupture',
+    h1: 'Oublier son ex et surmonter la rupture',
     subtitle: 'Guérison, reconstruction et préparation à l\'amour selon le tarot',
     gradient: 'from-pink-500 via-purple-500 to-indigo-500',
-    backLink: { href: '/rupture/', label: 'Retour aux Ruptures Amoureuses' },
+    backLink: { href: '/rupture/', label: 'Retour aux ruptures amoureuses' },
     anchors: [
-      { href: '#consultation', label: 'Consultation Guérison', primary: true },
-      { href: '#tirage', label: 'Tirage pour Tourner la Page' },
+      { href: '#consultation', label: 'Consultation guérison', primary: true },
+      { href: '#tirage', label: 'Tirage pour tourner la page' },
     ],
   },
   accentText: 'text-pink-600',
   stats: [
-    { icon: '⭐', value: '4.8/5', label: '287 avis' },
+    { icon: '⭐', value: '4.8/5', label: '287 Avis' },
     { icon: '💔→💖', value: '3-6 mois', label: 'Temps guérison' },
     { icon: '✨', value: 'Forte', label: 'Chance de renouveau' },
     { icon: '🔒', value: '100%', label: 'Confidentiel' },
@@ -54,14 +54,14 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/rupture/', label: 'Rupture & Guérison : Toutes nos Guidances' },
-    { href: '/rupture/chagrin-damour/', label: 'Surmonter le Chagrin d\'Amour' },
-    { href: '/rupture/rupture-amoureuse/', label: 'Comprendre sa Rupture Amoureuse' },
-    { href: '/nouvelle-rencontre/quand-rencontre-amour/', label: 'Quand Vais-je Rencontrer Quelqu\'un de Nouveau ?' },
-    { href: '/sentiments/avenir-amoureux/', label: 'Mon Avenir Amoureux après la Rupture' },
-    { href: '/reconquete/reconquerir-son-ex/', label: 'Reconquérir mon Ex si Finalement je Veux Essayer' },
-    { href: '/rupture/signes-reseaux-sociaux-apres-rupture/', label: 'Réseaux Sociaux Après une Rupture : Décoder les Signes' },
-    { href: '/rupture/rever-de-son-ex/', label: 'Rêver de son Ex : Signification' },
+    { href: '/rupture/', label: 'Rupture & guérison : toutes nos guidances' },
+    { href: '/rupture/chagrin-damour/', label: 'Surmonter le chagrin d\'amour' },
+    { href: '/rupture/rupture-amoureuse/', label: 'Comprendre sa rupture amoureuse' },
+    { href: '/nouvelle-rencontre/quand-rencontre-amour/', label: 'Quand vais-je rencontrer quelqu\'un de nouveau ?' },
+    { href: '/sentiments/avenir-amoureux/', label: 'Mon avenir amoureux après la rupture' },
+    { href: '/reconquete/reconquerir-son-ex/', label: 'Reconquérir mon ex si finalement je veux essayer' },
+    { href: '/rupture/signes-reseaux-sociaux-apres-rupture/', label: 'Réseaux sociaux après une rupture : décoder les signes' },
+    { href: '/rupture/rever-de-son-ex/', label: 'Rêver de son ex : signification' },
   ],
 };
 

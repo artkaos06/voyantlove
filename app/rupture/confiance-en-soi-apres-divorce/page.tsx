@@ -4,7 +4,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Retrouver Confiance en Soi Après un Divorce : Par Où Commencer ?',
+  title: 'Retrouver confiance en soi après un divorce : par où commencer ?',
   description: 'Reconstruire l\'estime de soi après un divorce, étape par étape : renouer avec son identité, dépasser la culpabilité de recommencer et se rouvrir à l\'amour à son rythme.',
   url: 'https://www.voyantlove.fr/rupture/confiance-en-soi-apres-divorce/',
   keywords: ['retrouver confiance en soi après un divorce', 'peur de refaire sa vie après divorce', 'retrouver son estime de soi après séparation', 'se sentir coupable de rencontrer quelqu\'un après divorce', 'peur de rester seul après divorce'],
@@ -17,20 +17,20 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: '🌱',
-    h1: 'Retrouver Confiance en Soi Après un Divorce',
+    h1: 'Retrouver confiance en soi après un divorce',
     subtitle: 'Un chemin de reconstruction, étape par étape, à votre rythme',
     gradient: 'from-teal-500 via-emerald-500 to-cyan-600',
-    backLink: { href: '/rupture/', label: 'Retour à Rupture & Guérison' },
+    backLink: { href: '/rupture/', label: 'Retour à rupture & guérison' },
     anchors: [
-      { href: '#parcours', label: 'Le Parcours de Reconstruction', primary: true },
-      { href: '#pret', label: 'Suis-je Prêt à Rencontrer ?' },
+      { href: '#parcours', label: 'Le parcours de reconstruction', primary: true },
+      { href: '#pret', label: 'Suis-je prêt à rencontrer ?' },
     ],
   },
   accentText: 'text-teal-600',
   stats: [
     { icon: '🔮', value: 'Reconnue', label: 'Expertise' },
     { icon: '🌱', value: '3,300+', label: 'Consultations' },
-    { icon: '⭐', value: '4.8/5', label: '276 avis' },
+    { icon: '⭐', value: '4.8/5', label: '276 Avis' },
     { icon: '🔒', value: '100%', label: 'Confidentiel' },
   ],
   eeat: { colorScheme: 'teal', method: 'Guidance de reconstruction et accompagnement après séparation' },
@@ -58,11 +58,11 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/rupture/', label: 'Rupture & Guérison : Toutes nos Guidances' },
-    { href: '/rupture/voyance-divorce-separation/', label: 'Voyance Divorce et Séparation' },
-    { href: '/rupture/guerir-rupture/', label: 'Guérir d\'une Rupture Amoureuse' },
-    { href: '/nouvelle-rencontre/peur-de-aimer-a-nouveau/', label: 'Surmonter la Peur d\'Aimer à Nouveau' },
-    { href: '/nouvelle-rencontre/nouvelle-relation-amoureuse/', label: 'Construire une Nouvelle Relation' },
+    { href: '/rupture/', label: 'Rupture & guérison : toutes nos guidances' },
+    { href: '/rupture/voyance-divorce-separation/', label: 'Voyance divorce et séparation' },
+    { href: '/rupture/guerir-rupture/', label: 'Guérir d\'une rupture amoureuse' },
+    { href: '/nouvelle-rencontre/peur-de-aimer-a-nouveau/', label: 'Surmonter la peur d\'aimer à nouveau' },
+    { href: '/nouvelle-rencontre/nouvelle-relation-amoureuse/', label: 'Construire une nouvelle relation' },
   ],
 };
 

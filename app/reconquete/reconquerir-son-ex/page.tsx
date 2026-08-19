@@ -4,7 +4,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Reconquérir son Ex : Voyance et Tarot | Guidance Retour',
+  title: 'Reconquérir son ex : voyance et Tarot | guidance retour',
   description: 'Comment reconquérir votre ex selon la voyance et le tarot ? Découvrez le timing idéal, les étapes de reconquête et ce que votre ex ressent vraiment.',
   url: 'https://www.voyantlove.fr/reconquete/reconquerir-son-ex/',
   keywords: ['reconquérir son ex', 'reconquête amoureuse', 'retour ex', 'tarot ex', 'voyance retour'],
@@ -17,17 +17,17 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: '💜',
-    h1: 'Reconquérir son Ex',
+    h1: 'Reconquérir son ex',
     subtitle: 'Guidance tarot et voyance pour le retour de votre ex',
     gradient: 'from-purple-600 via-purple-700 to-indigo-600',
     backLink: { href: '/reconquete/', label: 'Reconquête' },
     anchors: [
-      { href: '#consultation', label: 'Consultation Reconquête', primary: true },
+      { href: '#consultation', label: 'Consultation reconquête', primary: true },
     ],
   },
   accentText: 'text-purple-600',
   stats: [
-    { icon: '⭐', value: '4.8/5', label: '287 avis' },
+    { icon: '⭐', value: '4.8/5', label: '287 Avis' },
     { icon: '✓', value: 'Fort', label: 'Potentiel retour' },
     { icon: '⏰', value: '3-8 sem', label: 'Délai moyen' },
     { icon: '🔮', value: '15 ans', label: 'Expérience' },
@@ -53,12 +53,12 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/reconquete/va-t-il-elle-revenir/', label: 'Va-t-il/elle Revenir ?' },
-    { href: '/reconquete/ex-qui-revient/', label: 'Mon Ex qui Revient' },
-    { href: '/reconquete/ex-revient-silence-radio/', label: 'Ex qui Revient après Silence Radio' },
-    { href: '/reconquete/seconde-chance-amour/', label: 'Seconde Chance en Amour' },
-    { href: '/rupture/oublier-son-ex/', label: 'Comment Oublier son Ex' },
-    { href: '/sentiments/maime-t-il-elle/', label: 'M\'aime-t-il / M\'aime-t-elle Encore ?' },
+    { href: '/reconquete/va-t-il-elle-revenir/', label: 'Va-t-il/elle revenir ?' },
+    { href: '/reconquete/ex-qui-revient/', label: 'Mon ex qui revient' },
+    { href: '/reconquete/ex-revient-silence-radio/', label: 'Ex qui revient après silence radio' },
+    { href: '/reconquete/seconde-chance-amour/', label: 'Seconde chance en amour' },
+    { href: '/rupture/oublier-son-ex/', label: 'Comment oublier son ex' },
+    { href: '/sentiments/maime-t-il-elle/', label: 'M\'aime-t-il / m\'aime-t-elle encore ?' },
   ],
 };
 

@@ -4,7 +4,7 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Tirage de Tarot Amoureux : Guide Complet des Tirages Sentimentaux',
+  title: 'Tirage de Tarot amoureux : guide complet des tirages sentimentaux',
   description: 'D\u00e9couvrez le tirage de tarot amoureux : tirage en croix, tirage sentimental, interpr\u00e9tation des arcanes majeurs pour l\u2019amour. Guide complet pour comprendre vos sentiments.',
   url: 'https://www.voyantlove.fr/methodes-voyance/tirage-tarot-amour/',
   keywords: ['tirage tarot amour', 'tarot amoureux', 'tirage sentimental', 'lecture tarot couple', 'tarot des sentiments'],
@@ -17,13 +17,13 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: '🃏',
-    h1: 'Tirage de Tarot Amoureux',
+    h1: 'Tirage de Tarot amoureux',
     subtitle: 'Guide complet des tirages sentimentaux pour éclairer votre vie amoureuse',
     gradient: 'from-indigo-500 via-blue-500 to-purple-500',
-    backLink: { href: '/methodes-voyance/', label: 'Retour aux Méthodes de Voyance' },
+    backLink: { href: '/methodes-voyance/', label: 'Retour aux méthodes de voyance' },
     anchors: [
-      { href: '#consultation', label: 'Tirage Personnalisé', primary: true },
-      { href: '#types', label: 'Types de Tirages' },
+      { href: '#consultation', label: 'Tirage personnalisé', primary: true },
+      { href: '#types', label: 'Types de tirages' },
     ],
   },
   accentText: 'text-indigo-600',
@@ -70,11 +70,11 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
-    { href: '/methodes-voyance/oracle-amour/', label: 'Oracle de l\'Amour : Guidance Sentimentale par les Cartes' },
-    { href: '/methodes-voyance/astrologie-amoureuse/', label: 'Astrologie Amoureuse : Compatibilité Astrale' },
-    { href: '/sentiments/compatibilite-amoureuse/', label: 'Compatibilité Amoureuse : Êtes-vous Faits l\'Un pour l\'Autre ?' },
-    { href: '/sentiments/maime-t-il-elle/', label: 'M\'aime-t-il/elle Vraiment ?' },
-    { href: '/sentiments/avenir-amoureux/', label: 'Mon Avenir Amoureux : Prédictions' },
+    { href: '/methodes-voyance/oracle-amour/', label: 'Oracle de l\'amour : guidance sentimentale par les cartes' },
+    { href: '/methodes-voyance/astrologie-amoureuse/', label: 'Astrologie amoureuse : compatibilité astrale' },
+    { href: '/sentiments/compatibilite-amoureuse/', label: 'Compatibilité amoureuse : êtes-vous faits l\'un pour l\'autre ?' },
+    { href: '/sentiments/maime-t-il-elle/', label: 'M\'aime-t-il/elle vraiment ?' },
+    { href: '/sentiments/avenir-amoureux/', label: 'Mon avenir amoureux : prédictions' },
   ],
 };
 
