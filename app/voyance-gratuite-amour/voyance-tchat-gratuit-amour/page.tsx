@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
-import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
+  railsTop: 'voyance-tchat-gratuit-amour-cards-top',
   title: 'Voyance tchat gratuit amour : consultation sentimentale',
   description: 'Voyance gratuite par tchat amour : guide pour une consultation sentimentale fiable. Préparez vos questions, évitez les pièges.',
   url: 'https://www.voyantlove.fr/voyance-gratuite-amour/voyance-tchat-gratuit-amour/',
@@ -82,7 +82,6 @@ export default function VoyanceTchatGratuitAmourPage() {
           </div>
         </article>
 
-        <VoyantRecommendations variant="rail" topic="voyance-gratuite" limit={3} showOnlineFirst={true} source="voyance-tchat-gratuit-amour-cards-top" />
 
         {/* Section 1: Comment Fonctionne la Voyance par Tchat */}
         <section id="consultation" className="bg-white rounded-xl shadow-md p-8 mb-8">

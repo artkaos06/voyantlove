@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
-import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
+  railsTop: 'runes-amour-cards-top',
   title: 'Runes amour : tirage et signification pour votre vie sentimentale',
   description: 'Découvrez le tirage de runes pour l\'amour. Signification des runes en amour, comment les lire pour votre vie sentimentale, et ce qu\'elles révèlent sur votre relation.',
   url: 'https://www.voyantlove.fr/methodes-voyance/runes-amour/',
@@ -78,7 +78,6 @@ export default function RunesAmourPage() {
           </p>
         </article>
 
-        <VoyantRecommendations variant="rail" topic="methodes-voyance" limit={3} showOnlineFirst={true} source="runes-amour-cards-top" />
 
         {/* Section 1 : Qu'est-ce que les runes ? */}
         <section className="bg-gradient-to-br from-amber-50 to-stone-50 rounded-xl p-8 mb-8 border-2 border-amber-200">

@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
-import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
+  railsTop: 'cartomancie-amour-cards-top',
   title: 'Cartomancie amour : l\'art des cartes au service de votre cœur',
   description: 'Découvrez la cartomancie amoureuse : Petit Lenormand, jeu de 32 cartes, symbolique des couleurs. Guide complet pour comprendre cet art divinatoire ancestral appliqué aux questions de cœur.',
   url: 'https://www.voyantlove.fr/methodes-voyance/cartomancie-amour/',
@@ -77,7 +77,6 @@ export default function CartomancieAmourPage() {
           </p>
         </article>
 
-        <VoyantRecommendations variant="rail" topic="methodes-voyance" limit={3} showOnlineFirst={true} source="cartomancie-amour-cards-top" />
 
         {/* Section 1: Qu'est-ce que la cartomancie */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">

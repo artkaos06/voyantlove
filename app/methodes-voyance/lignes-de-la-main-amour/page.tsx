@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
-import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
+  railsTop: 'lignes-de-la-main-amour-cards-top',
   title: 'Lignes de la main amour : chiromancie et ligne de cœur',
   description: 'Découvrez ce que les lignes de votre main révèlent sur votre vie amoureuse : ligne de cœur, mont de Vénus, lignes de mariage. Guide complet de chiromancie sentimentale.',
   url: 'https://www.voyantlove.fr/methodes-voyance/lignes-de-la-main-amour/',
@@ -76,7 +76,6 @@ export default function LignesDeLaMainAmourPage() {
           </div>
         </article>
 
-        <VoyantRecommendations variant="rail" topic="methodes-voyance" limit={3} showOnlineFirst={true} source="lignes-de-la-main-amour-cards-top" />
 
         {/* Section 1: La ligne de cœur */}
         <section id="ligne-coeur" className="bg-white rounded-xl shadow-md p-8 mb-8">

@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getWebPageSchema, getBreadcrumbSchema, getOrganizationSchema, getFAQSchema, getAuthorSchema } from '@/lib/schema';
-import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
@@ -87,7 +86,6 @@ export default function NouvelleRencontreHubPage() {
       </header>
 
       <div className="max-w-6xl mx-auto px-4 py-12">
-        <EEATSignal colorScheme="cyan" method="Tarot des nouvelles rencontres et prédictions" />
 
         {/* Editorial intro - What is voyance rencontre */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">

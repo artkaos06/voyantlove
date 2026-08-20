@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getOrganizationSchema, getWebSiteSchema, getFAQSchema, getAuthorSchema } from '@/lib/schema';
-import EEATSignal from '@/components/EEATSignal';
 import VoyantRail from '@/components/VoyantRail';
 import TestimonialSection from '@/components/TestimonialSection';
 import TrustBadges from '@/components/TrustBadges';
@@ -222,7 +221,6 @@ export default function HomePage() {
       </section>
 
       <div className="mx-auto max-w-6xl px-4 py-4">
-        <EEATSignal colorScheme="purple" method="Tarot, clairvoyance et astrologie amoureuse" />
       </div>
 
       {/* Why VoyantLove — 4 cards kept, padding halved. */}

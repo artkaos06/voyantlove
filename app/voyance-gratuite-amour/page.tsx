@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getWebPageSchema, getBreadcrumbSchema, getOrganizationSchema, getFAQSchema, getAuthorSchema } from '@/lib/schema';
-import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
@@ -79,10 +78,9 @@ export default function VoyanceGratuiteAmourHubPage() {
         </div>
       </header>
 
-      <div className="max-w-6xl mx-auto px-4 py-12">
-        <EEATSignal colorScheme="green" method="Tarot, oracle et guidance gratuite" />
-
         <VoyantRecommendations variant="rail" topic="voyance-gratuite" limit={3} showOnlineFirst={true} source="voyance-gratuite-amour-hub-cards-top" />
+
+      <div className="max-w-6xl mx-auto px-4 py-12">
 
         <section className="mb-16">
           <h2 className="text-3xl font-bold mb-8 text-center">🗺️ Nos Guidances Gratuites</h2>

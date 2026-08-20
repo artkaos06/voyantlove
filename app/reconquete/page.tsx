@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getWebPageSchema, getBreadcrumbSchema, getOrganizationSchema, getFAQSchema, getAuthorSchema } from '@/lib/schema';
-import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
@@ -63,7 +62,6 @@ export default function ReconqueteHubPage() {
       </header>
 
       <div className="max-w-6xl mx-auto px-4 py-12">
-        <EEATSignal colorScheme="purple" method="Tarot de reconquête et guidance stratégique" />
 
         <VoyantRecommendations topic="reconquete" limit={3} showOnlineFirst={true} source="reconquete-hub-cards-top" />
 

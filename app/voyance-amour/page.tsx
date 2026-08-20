@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getWebPageSchema, getBreadcrumbSchema, getOrganizationSchema, getFAQSchema, getAuthorSchema } from '@/lib/schema';
-import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 import VoyantRailSection from '@/components/VoyantRailSection';
@@ -89,6 +88,9 @@ export default function VoyanceAmourPage() {
         </div>
       </header>
 
+        {/* Bloc voyants commercial : mêmes rails que la home. */}
+        <VoyantRailSection source="voyance-amour-pillar-rail" bare />
+
       <div className="max-w-4xl mx-auto px-4 py-12">
 
         {/* Section 1: Answer Capsule */}
@@ -104,9 +106,6 @@ export default function VoyanceAmourPage() {
             Chaque ann&eacute;e, des milliers de personnes consultent un voyant amour pour retrouver confiance et s&eacute;r&eacute;nit&eacute; dans leur vie sentimentale. Cette page est votre guide complet pour comprendre comment fonctionne la <strong>voyance en amour</strong>, choisir le bon praticien et poser les bonnes questions.
           </p>
         </section>
-        {/* Bloc voyants commercial : mêmes rails que la home. */}
-        <VoyantRailSection source="voyance-amour-pillar-rail" bare />
-
         {/* Section 2: 7 Questions Grid */}
         <section className="mb-12" id="questions">
           <h2 className="text-3xl font-bold text-gray-900 mb-4 text-center">Les 7 Questions d&rsquo;Amour les Plus Fr&eacute;quentes</h2>
@@ -437,7 +436,6 @@ export default function VoyanceAmourPage() {
         </section>
 
         {/* Section 9: EEAT Signal */}
-        <EEATSignal colorScheme="purple" method="Voyance amoureuse : tarot, astrologie et clairvoyance sentimentale" />
 
         {/* Section 10: Final CTA */}
         <VoyantFinalCTA topic="sentiments" source="voyance-amour-pillar-bottom" />

@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
-import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
+  railsTop: 'marc-de-cafe-amour-cards-top',
   title: 'Marc de café amour : tasséographie et signes sentimentaux',
   description: 'Découvrez la lecture du marc de café appliquée à l\'amour : symboles du cœur, de l\'anneau, de l\'oiseau, méthode de tirage et guide pratique. La tasséographie au service de vos questions de cœur.',
   url: 'https://www.voyantlove.fr/methodes-voyance/marc-de-cafe-amour/',
@@ -76,7 +76,6 @@ export default function MarcDeCafeAmourPage() {
           </div>
         </article>
 
-        <VoyantRecommendations variant="rail" topic="methodes-voyance" limit={3} showOnlineFirst={true} source="marc-de-cafe-amour-cards-top" />
 
         {/* Section 1: Qu'est-ce que la tasséographie */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">

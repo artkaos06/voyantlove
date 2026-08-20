@@ -2,7 +2,6 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getWebPageSchema, getBreadcrumbSchema, getAuthorSchema } from '@/lib/schema';
 import { TAROT_LOVE_CARDS, validateCardRecord } from '@/lib/tarotLoveCards';
-import EEATSignal from '@/components/EEATSignal';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 import VoyantRailSection from '@/components/VoyantRailSection';
 
@@ -48,7 +47,6 @@ export default function TarotAmourHub() {
       </header>
 
       <div className="max-w-4xl mx-auto px-4 py-8">
-        <EEATSignal colorScheme="purple" method="Interprétation du Tarot de Marseille en amour" />
 
 
         {/* Bloc voyants commercial : mêmes rails que la home. */}

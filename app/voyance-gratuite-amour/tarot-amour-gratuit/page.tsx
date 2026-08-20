@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getAuthorSchema } from '@/lib/schema';
-import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
@@ -89,6 +88,8 @@ export default function TarotAmourGratuitPage() {
         </div>
       </header>
 
+        <VoyantRecommendations variant="rail" topic="voyance-gratuite" limit={3} showOnlineFirst={true} source="tarot-amour-gratuit-cards-top" />
+
       {/* Interactive Tarot Tool */}
       <section id="tirage" className="max-w-4xl mx-auto px-4 py-8">
         <TarotSpread
@@ -109,7 +110,6 @@ export default function TarotAmourGratuitPage() {
         </div>
 
         {/* EEAT Signal */}
-        <EEATSignal colorScheme="green" method="Tarot de Marseille et tirages sentimentaux gratuits" />
 
         {/* Answer Capsule */}
         <article className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-green-600">
@@ -125,8 +125,6 @@ export default function TarotAmourGratuitPage() {
             </p>
           </div>
         </article>
-
-        <VoyantRecommendations variant="rail" topic="voyance-gratuite" limit={3} showOnlineFirst={true} source="tarot-amour-gratuit-cards-top" />
 
         {/* Section 1: Comprendre le Tarot Amoureux Gratuit */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">

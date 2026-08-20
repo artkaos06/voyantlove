@@ -2,7 +2,6 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getWebPageSchema, getBreadcrumbSchema, getAuthorSchema } from '@/lib/schema';
 import { SIGNES_AMOUR, validateSignRecord } from '@/lib/signesAmour';
-import EEATSignal from '@/components/EEATSignal';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 import VoyantRailSection from '@/components/VoyantRailSection';
 
@@ -49,7 +48,6 @@ export default function AstrologieAmourHub() {
       </header>
 
       <div className="max-w-4xl mx-auto px-4 py-8">
-        <EEATSignal colorScheme="purple" method="Analyse astrologique des signes en amour" />
 
 
         {/* Bloc voyants commercial : mêmes rails que la home. */}

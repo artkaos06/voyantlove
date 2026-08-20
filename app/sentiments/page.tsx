@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getWebPageSchema, getBreadcrumbSchema, getOrganizationSchema, getFAQSchema, getAuthorSchema } from '@/lib/schema';
-import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
@@ -63,7 +62,6 @@ export default function SentimentsHubPage() {
       </header>
 
       <div className="max-w-6xl mx-auto px-4 py-12">
-        <EEATSignal colorScheme="rose" method="Tarot des sentiments et clairvoyance émotionnelle" />
 
         <VoyantRecommendations topic="sentiments" limit={3} showOnlineFirst={true} source="sentiments-hub-cards-top" />
 

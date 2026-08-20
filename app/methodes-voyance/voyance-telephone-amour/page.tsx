@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
-import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
+  railsTop: 'voyance-telephone-amour-cards-top',
   title: 'Voyance par t\u00e9l\u00e9phone amour : consultation sentimentale \u00e0 distance',
   description: 'D\u00e9couvrez la voyance par t\u00e9l\u00e9phone pour l\u2019amour : consultation sentimentale imm\u00e9diate, guidance amoureuse \u00e0 distance, voyant sp\u00e9cialis\u00e9 en questions de c\u0153ur. Disponible 24h/24.',
   url: 'https://www.voyantlove.fr/methodes-voyance/voyance-telephone-amour/',
@@ -79,7 +79,6 @@ export default function VoyanceTelephoneAmourPage() {
           </div>
         </article>
 
-        <VoyantRecommendations variant="rail" topic="methodes-voyance" limit={3} showOnlineFirst={true} source="voyance-telephone-amour-cards-top" />
 
         {/* Section 1: Comment fonctionne la voyance par t&eacute;l&eacute;phone */}
         <section id="consultation" className="bg-white rounded-xl shadow-md p-8 mb-8">

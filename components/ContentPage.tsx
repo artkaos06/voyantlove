@@ -13,11 +13,14 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getAuthorSchema } from '@/lib/schema';
-import EEATSignal from '@/components/EEATSignal';
+import VoyantRailSection from '@/components/VoyantRailSection';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 import AskAI from '@/components/AskAI';
 
-type EEATColor = NonNullable<React.ComponentProps<typeof EEATSignal>['colorScheme']>;
+// Was derived from the removed EEATSignal component. The union is inlined so
+// the 85 existing page configs keep typechecking unchanged.
+type EEATColor =
+  | 'purple' | 'blue' | 'green' | 'pink' | 'orange' | 'red' | 'rose' | 'teal' | 'cyan';
 type CTATopic = React.ComponentProps<typeof VoyantFinalCTA>['topic'];
 
 export interface ContentFAQ {
@@ -33,6 +36,18 @@ export interface ContentPageConfig {
   datePublished: string;
   dateModified: string;
   breadcrumb: { name: string; url: string }[];
+  /**
+   * Render the commercial voyant rails immediately under the title banner,
+   * above the stats grid, the E-E-A-T band and the article body.
+   *
+   * Opt-in: this shell backs 85 pages and only the commercial ones (the
+   * /methodes-voyance/, /voyance-amour/, /voyance-gratuite-amour/ hubs and the
+   * "Voyance & Tarot" menu) put the offer first. On a guidance page under
+   * /reconquete/ the reader came for the answer, not the price list.
+   *
+   * The value is the tracking source prefix for the rails' affiliate links.
+   */
+  railsTop?: string;
   header: {
     emoji: string;
     h1: string;
@@ -43,7 +58,13 @@ export interface ContentPageConfig {
   };
   accentText?: string; // color class for stat values, e.g. "text-blue-600"
   stats?: { icon: string; value: string; label: string }[];
-  eeat: { colorScheme: EEATColor; method: string };
+  /**
+   * No longer rendered. The "Source : … • Méthode : …" band was removed as
+   * carrying no reader, SEO or trust value. Kept optional so the 85 existing
+   * page configs still typecheck without touching every one of them; drop the
+   * key from configs as they are next edited.
+   */
+  eeat?: { colorScheme: EEATColor; method: string };
   cta: { topic: CTATopic; slug: string };
   faq: ContentFAQ[];
   related?: { href: string; label: string }[];
@@ -118,7 +139,7 @@ export default function ContentPage({
         />
       ))}
 
-      <header className={`bg-gradient-to-r ${config.header.gradient} text-white py-16 px-4`}>
+      <header className={`bg-gradient-to-r ${config.header.gradient} text-white py-8 px-4 sm:py-16`}>
         <div className="max-w-4xl mx-auto">
           <Link href={config.header.backLink.href} className="text-white/80 hover:text-white mb-4 inline-block">
             ← {config.header.backLink.label}
@@ -145,6 +166,17 @@ export default function ContentPage({
         </div>
       </header>
 
+      {/* Voyants d'abord : sur une page commerciale, le visiteur doit voir
+          l'offre sans scroller. Le bloc passe AVANT la grille de stats, la
+          bande E-E-A-T et le corps de l'article. */}
+      {config.railsTop && (
+        <section className="border-b border-gray-200 bg-white px-4 py-6">
+          <div className="mx-auto max-w-6xl">
+            <VoyantRailSection source={config.railsTop} bare />
+          </div>
+        </section>
+      )}
+
       <div className="max-w-4xl mx-auto px-4 py-8">
         {config.stats && config.stats.length > 0 && (
           <div className={`bg-white rounded-xl shadow-md p-5 sm:p-6 mb-8 grid ${getStatsGridClassName(config.stats.length)} gap-x-4 gap-y-6 text-center`}>
@@ -158,7 +190,6 @@ export default function ContentPage({
           </div>
         )}
 
-        <EEATSignal colorScheme={config.eeat.colorScheme} method={config.eeat.method} />
 
         {children}
 

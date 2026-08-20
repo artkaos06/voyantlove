@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getAuthorSchema } from '@/lib/schema';
-import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
@@ -89,6 +88,8 @@ export default function HoroscopeAmour2026Page() {
         </div>
       </header>
 
+        <VoyantRecommendations variant="rail" topic="voyance-gratuite" limit={3} showOnlineFirst={true} source="horoscope-amour-2026-cards-top" />
+
       {/* Interactive Sign Selector */}
       <section id="mon-signe" className="max-w-4xl mx-auto px-4 py-8">
         <HoroscopeSelector />
@@ -104,7 +105,6 @@ export default function HoroscopeAmour2026Page() {
         </div>
 
         {/* EEAT Signal */}
-        <EEATSignal colorScheme="green" method="Astrologie et transits planétaires 2026" />
 
         {/* Answer Capsule */}
         <article className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-cyan-600">
@@ -120,8 +120,6 @@ export default function HoroscopeAmour2026Page() {
             </p>
           </div>
         </article>
-
-        <VoyantRecommendations variant="rail" topic="voyance-gratuite" limit={3} showOnlineFirst={true} source="horoscope-amour-2026-cards-top" />
 
         {/* Section 1: Les Transits 2026 qui Bouleversent l&apos;Amour */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">

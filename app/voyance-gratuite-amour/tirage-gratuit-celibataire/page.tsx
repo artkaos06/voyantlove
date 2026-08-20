@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getAuthorSchema } from '@/lib/schema';
-import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
@@ -85,6 +84,8 @@ export default function TirageGratuitCelibatairePage() {
         </div>
       </header>
 
+        <VoyantRecommendations variant="rail" topic="voyance-gratuite" limit={3} showOnlineFirst={true} source="tirage-gratuit-celibataire-cards-top" />
+
       {/* Interactive Tarot Tool */}
       <section id="tirage" className="max-w-4xl mx-auto px-4 py-8">
         <TarotSpread
@@ -105,7 +106,6 @@ export default function TirageGratuitCelibatairePage() {
         </div>
 
         {/* EEAT Signal */}
-        <EEATSignal colorScheme="green" method="Tarot de Marseille et tirages sentimentaux pour célibataires" />
 
         {/* Answer Capsule */}
         <article className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-rose-600">
@@ -121,8 +121,6 @@ export default function TirageGratuitCelibatairePage() {
             </p>
           </div>
         </article>
-
-        <VoyantRecommendations variant="rail" topic="voyance-gratuite" limit={3} showOnlineFirst={true} source="tirage-gratuit-celibataire-cards-top" />
 
         {/* Section 1: Tirages Sp&eacute;cifiques pour C&eacute;libataires */}
         <section id="tirages" className="bg-white rounded-xl shadow-md p-8 mb-8">

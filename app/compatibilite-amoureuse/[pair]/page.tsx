@@ -6,7 +6,6 @@ import { COMPATIBILITY_PAIRS, findPair, validatePairRecord } from '@/lib/compati
 import { ZODIAC_SIGNS } from '@/lib/zodiac';
 import { SIGNES_AMOUR, validateSignRecord } from '@/lib/signesAmour';
 import { renderWithEntities } from '@/lib/entityBold';
-import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 import SynastryCalculator from '@/components/SynastryCalculator';
@@ -97,7 +96,6 @@ export default async function PairPage({ params }: Props) {
       <VoyantRailSection source="compatibilite-pair-rail" />
 
       <div className="max-w-4xl mx-auto px-4 py-8">
-        <EEATSignal colorScheme="purple" method="Analyse astrologique des signes et des éléments" />
 
         {/* Answer capsule, extractive snippet target for "sont-ils compatibles" */}
         {rec.answerCapsule && (

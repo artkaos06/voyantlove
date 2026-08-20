@@ -2,7 +2,6 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getWebPageSchema, getBreadcrumbSchema, getOrganizationSchema, getFAQSchema, getAuthorSchema } from '@/lib/schema';
 import { CATEGORY_LABELS, CATEGORY_EMOJI, type GlossaryCategory, getGlossaryHubCards } from '@/lib/glossaire';
-import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
@@ -67,7 +66,6 @@ export default function GlossaireHubPage() {
       </header>
 
       <div className="max-w-6xl mx-auto px-4 py-8">
-        <EEATSignal colorScheme="purple" method="Glossaire de la voyance amoureuse, définitions et guidance sentimentale" />
 
         <section className="bg-purple-50 border-l-4 border-purple-500 rounded-r-xl p-6 md:p-8 mb-10 max-w-4xl mx-auto">
           <h2 className="text-xl font-bold text-gray-900 mb-3">Un dictionnaire au service de vos guidances</h2>

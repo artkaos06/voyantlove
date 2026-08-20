@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getAuthorSchema } from '@/lib/schema';
-import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
@@ -73,6 +72,8 @@ export default function TarotFuturProcheAmourPage() {
         </div>
       </header>
 
+        <VoyantRecommendations variant="rail" topic="voyance-gratuite" limit={3} showOnlineFirst={true} source="tarot-futur-proche-amour-cards-top" />
+
       {/* Interactive Tarot Tool */}
       <section id="tirage" className="max-w-4xl mx-auto px-4 py-8">
         <TarotSpread
@@ -92,7 +93,6 @@ export default function TarotFuturProcheAmourPage() {
           <div><div className="text-3xl mb-1">🔮</div><div className="text-2xl font-bold text-teal-600">Immédiat</div><div className="text-sm text-gray-600">Résultat instantané</div></div>
         </div>
 
-        <EEATSignal colorScheme="teal" method="Tarot du futur proche et tirages sentimentaux progressifs" lastUpdated="7 août 2026" />
 
         {/* Answer Capsule */}
         <article className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-teal-600">
@@ -108,8 +108,6 @@ export default function TarotFuturProcheAmourPage() {
             </p>
           </div>
         </article>
-
-        <VoyantRecommendations variant="rail" topic="voyance-gratuite" limit={3} showOnlineFirst={true} source="tarot-futur-proche-amour-cards-top" />
 
         {/* Section 1 */}
         <section id="periode" className="bg-white rounded-xl shadow-md p-8 mb-8">

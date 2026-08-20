@@ -4,7 +4,6 @@ import { notFound } from 'next/navigation';
 import { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getAuthorSchema } from '@/lib/schema';
 import { GLOSSARY_TERMS, CATEGORY_LABELS, findTerm, getRelatedTerms, validateTermRecord } from '@/lib/glossaire';
 import { renderWithEntities } from '@/lib/entityBold';
-import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 import AskAI from '@/components/AskAI';
@@ -90,7 +89,6 @@ export default async function GlossaryTermPage({ params }: Props) {
       </header>
 
       <div className="max-w-4xl mx-auto px-4 py-8">
-        <EEATSignal colorScheme="purple" method="Glossaire de la voyance amoureuse, définitions et guidance sentimentale" />
 
         {/* Answer capsule, extractive snippet target */}
         <section className="bg-purple-50 border-l-4 border-purple-500 rounded-r-xl p-6 md:p-8 mb-8">

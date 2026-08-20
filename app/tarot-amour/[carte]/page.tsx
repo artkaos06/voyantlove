@@ -4,7 +4,6 @@ import { notFound } from 'next/navigation';
 import { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getAuthorSchema } from '@/lib/schema';
 import { TAROT_LOVE_CARDS, findCard, validateCardRecord } from '@/lib/tarotLoveCards';
 import { renderWithEntities } from '@/lib/entityBold';
-import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 import AskAI from '@/components/AskAI';
@@ -82,8 +81,10 @@ export default async function CardPage({ params }: Props) {
         </div>
       </header>
 
+        {/* Bloc voyants commercial : mêmes rails que la home. */}
+        <VoyantRailSection source="tarot-amour-carte-rail" bare />
+
       <div className="max-w-4xl mx-auto px-4 py-8">
-        <EEATSignal colorScheme="purple" method="Interprétation du Tarot de Marseille en amour" />
 
         {/* Answer capsule, extractive snippet target */}
         <section className="bg-purple-50 border-l-4 border-purple-500 rounded-r-xl p-6 md:p-8 mb-8">
@@ -93,9 +94,6 @@ export default async function CardPage({ params }: Props) {
             <AskAI title={title} url={url} context={c.answerCapsule} />
           </div>
         </section>
-        {/* Bloc voyants commercial : mêmes rails que la home. */}
-        <VoyantRailSection source="tarot-amour-carte-rail" bare />
-
         <article className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-indigo-500">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Que révèle {c.name} sur votre vie amoureuse&nbsp;?</h2>
           <p className="text-lg leading-relaxed text-gray-700">{renderWithEntities(c.signification)}</p>

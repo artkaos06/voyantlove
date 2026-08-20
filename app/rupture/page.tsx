@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getWebPageSchema, getBreadcrumbSchema, getOrganizationSchema, getFAQSchema, getAuthorSchema } from '@/lib/schema';
-import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
@@ -63,7 +62,6 @@ export default function RuptureHubPage() {
       </header>
 
       <div className="max-w-6xl mx-auto px-4 py-12">
-        <EEATSignal colorScheme="red" method="Tarot de guérison et accompagnement post-rupture" />
         <VoyantRecommendations topic="rupture" limit={3} showOnlineFirst={true} source="rupture-hub-cards-top" />
         <section className="mb-16">
           <h2 className="text-3xl font-bold mb-8 text-center">🗺️ Votre Parcours de Guérison</h2>

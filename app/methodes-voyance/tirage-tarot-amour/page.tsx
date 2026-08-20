@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
-import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
+  railsTop: 'tirage-tarot-amour-cards-top',
   title: 'Tirage de Tarot amoureux : guide complet des tirages sentimentaux',
   description: 'D\u00e9couvrez le tirage de tarot amoureux : tirage en croix, tirage sentimental, interpr\u00e9tation des arcanes majeurs pour l\u2019amour. Guide complet pour comprendre vos sentiments.',
   url: 'https://www.voyantlove.fr/methodes-voyance/tirage-tarot-amour/',
@@ -91,7 +91,6 @@ export default function TirageTarotAmourPage() {
           </div>
         </article>
 
-        <VoyantRecommendations variant="rail" topic="methodes-voyance" limit={3} showOnlineFirst={true} source="tirage-tarot-amour-cards-top" />
 
         {/* Section: Types de tirages amoureux */}
         <section id="types" className="bg-white rounded-xl shadow-md p-8 mb-8">

@@ -127,7 +127,11 @@ test('improved outputs preserve canonical and CTA contracts', () => {
     } else {
       assert.ok(source.includes(`canonical: '${SITE_URL}${route}'`));
       assert.match(source, /VoyantFinalCTA/);
-      assert.match(source, /lastUpdated="7 août 2026"/);
+      // The `lastUpdated="7 août 2026"` assertion lived here until the
+      // "Source : … • Méthode : …" band (EEATSignal) was removed sitewide —
+      // that prop was its visible freshness line. dateModified, asserted
+      // above, is now the freshness signal for these pages too, exactly as
+      // the shell-managed branch already documents.
     }
   }
 });

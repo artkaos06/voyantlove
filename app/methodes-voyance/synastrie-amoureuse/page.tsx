@@ -1,10 +1,10 @@
 import Link from 'next/link';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
-import VoyantRecommendations from '@/components/VoyantRecommendations';
 import SynastryCalculator from '@/components/SynastryCalculator';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
+  railsTop: 'synastrie-amoureuse-cards-top',
   title: 'Synastrie amoureuse : compatibilité de couple',
   description: 'La synastrie amoureuse analyse la compatibilité de deux thèmes astraux. Découvrez ce que les planètes révèlent sur votre couple : tensions, harmonies, forces et défis.',
   url: 'https://www.voyantlove.fr/methodes-voyance/synastrie-amoureuse/',
@@ -84,7 +84,6 @@ export default function SynastrieAmoureusePage() {
           </p>
         </article>
 
-        <VoyantRecommendations variant="rail" topic="methodes-voyance" limit={3} showOnlineFirst={true} source="synastrie-amoureuse-cards-top" />
 
         {/* Qu'est-ce que la synastrie */}
         <section className="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-xl p-8 mb-8 border-2 border-indigo-200">

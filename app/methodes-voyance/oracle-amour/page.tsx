@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
-import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
+  railsTop: 'oracle-amour-cards-top',
   title: 'Oracle de l\u2019amour : guidance sentimentale par les cartes Oracle',
   description: 'D\u00e9couvrez l\u2019Oracle de l\u2019Amour : Oracle Belline, Oracle de G\u00e9, Oracle des Anges. Guidance sentimentale compl\u00e8te pour \u00e9clairer votre vie amoureuse.',
   url: 'https://www.voyantlove.fr/methodes-voyance/oracle-amour/',
@@ -79,7 +79,6 @@ export default function OracleAmourPage() {
           </div>
         </article>
 
-        <VoyantRecommendations variant="rail" topic="methodes-voyance" limit={3} showOnlineFirst={true} source="oracle-amour-cards-top" />
 
         {/* Section: Qu&apos;est-ce que l&apos;Oracle de l&apos;Amour */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">

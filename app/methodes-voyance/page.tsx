@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getWebPageSchema, getBreadcrumbSchema, getOrganizationSchema, getFAQSchema, getAuthorSchema } from '@/lib/schema';
-import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
@@ -62,8 +61,9 @@ export default function MethodesVoyanceHubPage() {
         </div>
       </header>
 
+        <VoyantRecommendations variant="rail" topic="methodes-voyance" limit={3} showOnlineFirst={true} source="methodes-voyance-hub-cards-top" />
+
       <div className="max-w-6xl mx-auto px-4 py-12">
-        <EEATSignal colorScheme="purple" method="Tarot, oracle et astrologie amoureuse" />
 
         <div className="bg-pink-50 border-l-4 border-pink-500 rounded-lg p-6 mb-8">
           <p className="text-gray-800 leading-relaxed">
@@ -73,8 +73,6 @@ export default function MethodesVoyanceHubPage() {
             </Link>.
           </p>
         </div>
-
-        <VoyantRecommendations variant="rail" topic="methodes-voyance" limit={3} showOnlineFirst={true} source="methodes-voyance-hub-cards-top" />
 
         <section className="mb-16">
           <h2 className="text-3xl font-bold mb-8 text-center">🗺️ Nos Méthodes de Voyance</h2>

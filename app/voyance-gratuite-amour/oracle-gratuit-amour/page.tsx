@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getAuthorSchema } from '@/lib/schema';
-import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
@@ -85,6 +84,8 @@ export default function OracleGratuitAmourPage() {
         </div>
       </header>
 
+        <VoyantRecommendations variant="rail" topic="voyance-gratuite" limit={3} showOnlineFirst={true} source="oracle-gratuit-amour-cards-top" />
+
       {/* Interactive Oracle Tool */}
       <section id="tirage" className="max-w-4xl mx-auto px-4 py-8">
         <OracleDraw />
@@ -100,7 +101,6 @@ export default function OracleGratuitAmourPage() {
         </div>
 
         {/* EEAT Signal */}
-        <EEATSignal colorScheme="green" method="Oracles divinatoires : Belline, Gé et Oracle des Anges" />
 
         {/* Answer Capsule */}
         <article className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-teal-600">
@@ -116,8 +116,6 @@ export default function OracleGratuitAmourPage() {
             </p>
           </div>
         </article>
-
-        <VoyantRecommendations variant="rail" topic="voyance-gratuite" limit={3} showOnlineFirst={true} source="oracle-gratuit-amour-cards-top" />
 
         {/* Section 1: Diff&eacute;rence Oracle vs Tarot en Amour */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">

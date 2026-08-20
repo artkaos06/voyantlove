@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
-import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
+  railsTop: 'voyance-par-chat-amour-cards-top',
   title: 'Voyance par chat amour : consultation en ligne',
   description: 'Voyance par chat amour : consultez un voyant en ligne par messagerie pour vos questions sentimentales. Discret, rapide et accessible 24h/24.',
   url: 'https://www.voyantlove.fr/methodes-voyance/voyance-par-chat-amour/',
@@ -76,7 +76,6 @@ export default function VoyanceParChatAmourPage() {
           </p>
         </article>
 
-        <VoyantRecommendations variant="rail" topic="methodes-voyance" limit={3} showOnlineFirst={true} source="voyance-par-chat-amour-cards-top" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">💬 Les Avantages Uniques de la Voyance par Chat</h2>

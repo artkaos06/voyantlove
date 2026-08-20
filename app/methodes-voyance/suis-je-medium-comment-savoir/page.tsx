@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
-import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
+  railsTop: 'suis-je-medium-comment-savoir-cards-top',
   title: 'Suis-je médium ? comment savoir en amour',
   description: 'Comment savoir si l\'on est médium ? Les signes d\'une sensibilité médiumnique dans votre vie sentimentale : empathie intense, intuitions, rêves prémonitoires.',
   url: 'https://www.voyantlove.fr/methodes-voyance/suis-je-medium-comment-savoir/',
@@ -77,7 +77,6 @@ export default function SuisJeMediumPage() {
           </p>
         </article>
 
-        <VoyantRecommendations variant="rail" topic="methodes-voyance" limit={3} showOnlineFirst={true} source="suis-je-medium-comment-savoir-cards-top" />
 
         {/* Section 1: Signes */}
         <section id="signes" className="bg-white rounded-xl shadow-md p-8 mb-8">

@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
-import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
+  railsTop: 'medium-amour-cards-top',
   title: 'Médium amour : médiumnité et guidance sentimentale',
   description: 'Découvrez ce qu\'est un médium en amour : dons médiumniques, déroulement d\'une consultation, ce qu\'un médium peut révéler sur votre vie sentimentale. Guide complet de la médiumnité amoureuse.',
   url: 'https://www.voyantlove.fr/methodes-voyance/medium-amour/',
@@ -82,7 +82,6 @@ export default function MediumAmourPage() {
           </p>
         </article>
 
-        <VoyantRecommendations variant="rail" topic="methodes-voyance" limit={3} showOnlineFirst={true} source="medium-amour-cards-top" />
 
         {/* Section 1: Dons médiumniques */}
         <section id="dons" className="bg-white rounded-xl shadow-md p-8 mb-8">

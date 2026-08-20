@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
-import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
+  railsTop: 'pendule-amour-cards-top',
   title: 'Pendule amour : questions sentimentales, guide et consultation',
   description: 'D\u00e9couvrez le pendule amour : r\u00e9ponses oui/non instantan\u00e9es, radi\u00e9sth\u00e9sie amoureuse et guidance sentimentale. Guide complet du pendule divinatoire pour les questions d\u2019amour.',
   url: 'https://www.voyantlove.fr/methodes-voyance/pendule-amour/',
@@ -91,7 +91,6 @@ export default function PenduleAmourPage() {
           </div>
         </article>
 
-        <VoyantRecommendations variant="rail" topic="methodes-voyance" limit={3} showOnlineFirst={true} source="pendule-amour-cards-top" />
 
         {/* Section: Qu&apos;est-ce que le Pendule Amour ? */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">

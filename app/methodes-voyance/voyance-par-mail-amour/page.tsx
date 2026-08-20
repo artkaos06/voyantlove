@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
-import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
+  railsTop: 'voyance-par-mail-amour-cards-top',
   title: 'Voyance par mail amour : guide de la consultation écrite',
   description: 'Guide de la voyance amoureuse par mail : fonctionnement, formulation des questions et délais habituels. Pour une réponse immédiate, découvrez la consultation en direct.',
   url: 'https://www.voyantlove.fr/methodes-voyance/voyance-par-mail-amour/',
@@ -82,7 +82,6 @@ export default function VoyanceParMailAmourPage() {
           </p>
         </article>
 
-        <VoyantRecommendations variant="rail" topic="methodes-voyance" limit={3} showOnlineFirst={true} source="voyance-par-mail-amour-cards-top" />
 
         {/* Qu'est-ce que la voyance par mail */}
         <section className="bg-gradient-to-br from-teal-50 to-cyan-50 rounded-xl p-8 mb-8 border-2 border-teal-200">

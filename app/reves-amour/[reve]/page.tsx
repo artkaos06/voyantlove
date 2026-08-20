@@ -4,7 +4,6 @@ import { notFound } from 'next/navigation';
 import { getArticleSchema, getFAQSchema, getBreadcrumbSchema, getAuthorSchema } from '@/lib/schema';
 import { REVES_AMOUR, findDream, validateDreamRecord } from '@/lib/revesAmour';
 import { renderWithEntities } from '@/lib/entityBold';
-import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 import AskAI from '@/components/AskAI';
@@ -98,8 +97,10 @@ export default async function DreamPage({ params }: Props) {
         </div>
       </header>
 
+        {/* Bloc voyants commercial : mêmes rails que la home. */}
+        <VoyantRailSection source="reves-amour-reve-rail" bare />
+
       <div className="max-w-4xl mx-auto px-4 py-8">
-        <EEATSignal colorScheme="purple" method="Interprétation symbolique des rêves et guidance émotionnelle" />
 
         {/* Answer capsule, extractive snippet target */}
         <section className="bg-purple-50 border-l-4 border-purple-500 rounded-r-xl p-6 md:p-8 mb-8">
@@ -109,9 +110,6 @@ export default async function DreamPage({ params }: Props) {
             <AskAI title={title} url={url} context={d.answerCapsule} />
           </div>
         </section>
-        {/* Bloc voyants commercial : mêmes rails que la home. */}
-        <VoyantRailSection source="reves-amour-reve-rail" bare />
-
         {/* Theme funnel to the most relevant priority page */}
         <p className="text-gray-600 mb-8">
           {funnel.lead}{' '}

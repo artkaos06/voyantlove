@@ -72,21 +72,32 @@ export default function VoyantRecommendations({
         variant === 'rail' ? 'p-4 sm:p-8' : 'p-8'
       }`}
     >
-      <div className="text-center mb-8">
-        <h2 className="text-3xl font-bold text-gray-900 mb-3">
+      {/* In the rail variant this header is deliberately compact: a 3xl
+          centred title plus a lead paragraph plus the online-count badge cost
+          ~230px above the cards, which pushed the first face below the fold
+          (879px on a 390x844 screen). Each rail carries its own title, so the
+          topical H2 is kept and everything else goes. */}
+      {variant === 'rail' ? (
+        <h2 className="mb-4 text-xl font-bold text-gray-900">
           {title || defaultTitles[topic]}
         </h2>
-        <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-          {subtitle || defaultSubtitles[topic]}
-        </p>
-        <div className="flex items-center justify-center gap-2 mt-4">
-          {liveVoyants.length > 0 && (
-            <span className="bg-green-100 text-green-700 text-sm font-semibold px-4 py-2 rounded-full">
-              ⚡ {liveVoyants.length} voyants en ligne maintenant
-            </span>
-          )}
+      ) : (
+        <div className="text-center mb-8">
+          <h2 className="text-3xl font-bold text-gray-900 mb-3">
+            {title || defaultTitles[topic]}
+          </h2>
+          <p className="text-lg text-gray-700 max-w-3xl mx-auto">
+            {subtitle || defaultSubtitles[topic]}
+          </p>
+          <div className="flex items-center justify-center gap-2 mt-4">
+            {liveVoyants.length > 0 && (
+              <span className="bg-green-100 text-green-700 text-sm font-semibold px-4 py-2 rounded-full">
+                ⚡ {liveVoyants.length} voyants en ligne maintenant
+              </span>
+            )}
+          </div>
         </div>
-      </div>
+      )}
 
       {variant === 'rail' ? (
         // Three rails on the same orderings the homepage uses. The first is

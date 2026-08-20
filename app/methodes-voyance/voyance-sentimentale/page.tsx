@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
-import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
+  railsTop: 'voyance-sentimentale-cards-top',
   title: 'Voyance sentimentale : consultation gratuite ou avec voyant expert',
   description: 'Voyance sentimentale : consultation gratuite ou avec voyant spécialisé amour. Sentiments, couple, reconquête, rencontre, guidance par tarot, oracle et clairvoyance.',
   url: 'https://www.voyantlove.fr/methodes-voyance/voyance-sentimentale/',
@@ -97,7 +97,6 @@ export default function VoyanceSentimentalePage() {
           </div>
         </article>
 
-        <VoyantRecommendations variant="rail" topic="sentiments" limit={3} showOnlineFirst={true} source="voyance-sentimentale-cards-top" />
 
         {/* Section 1: Les domaines de la voyance sentimentale */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">

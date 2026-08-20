@@ -6,7 +6,6 @@ import { SIGNES_AMOUR, findSign, validateSignRecord } from '@/lib/signesAmour';
 import { ZODIAC_SIGNS } from '@/lib/zodiac';
 import { COMPATIBILITY_PAIRS, validatePairRecord, pairSlug } from '@/lib/compatibilitePairs';
 import { renderWithEntities } from '@/lib/entityBold';
-import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 import AskAI from '@/components/AskAI';
@@ -89,8 +88,10 @@ export default async function SignPage({ params }: Props) {
         </div>
       </header>
 
+        {/* Bloc voyants commercial : mêmes rails que la home. */}
+        <VoyantRailSection source="astrologie-amour-signe-rail" bare />
+
       <div className="max-w-4xl mx-auto px-4 py-8">
-        <EEATSignal colorScheme="purple" method="Analyse astrologique du signe en amour" />
 
         {/* Answer capsule, extractive snippet target */}
         <section className="bg-purple-50 border-l-4 border-purple-500 rounded-r-xl p-6 md:p-8 mb-8">
@@ -100,9 +101,6 @@ export default async function SignPage({ params }: Props) {
             <AskAI title={title} url={url} context={s.answerCapsule} />
           </div>
         </section>
-        {/* Bloc voyants commercial : mêmes rails que la home. */}
-        <VoyantRailSection source="astrologie-amour-signe-rail" bare />
-
         <article className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-fuchsia-500">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Le {s.name} en amour</h2>
           <p className="text-lg leading-relaxed text-gray-700">{renderWithEntities(s.enAmour)}</p>

@@ -1,12 +1,12 @@
 import Link from 'next/link';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
-import VoyantRecommendations from '@/components/VoyantRecommendations';
 import { LIFE_PATH_MEANINGS, EXPRESSION_MEANINGS, INTIMATE_MEANINGS } from '@/lib/numerology';
 import NumerologyCalculator from '@/components/NumerologyCalculator';
 import NumerologyCompatibilityCalculator from '@/components/NumerologyCompatibilityCalculator';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
+  railsTop: 'numerologie-amoureuse-cards-top',
   title: 'Numérologie amoureuse : compatibilité',
   description: 'Numérologie amoureuse : chemin de vie, nombre d\'expression, nombre intime et compatibilité de couple. Calculez vos chiffres et leur sens en amour.',
   url: 'https://www.voyantlove.fr/methodes-voyance/numerologie-amoureuse/',
@@ -92,7 +92,6 @@ export default function NumerologieAmourPage() {
           </p>
         </article>
 
-        <VoyantRecommendations variant="rail" topic="methodes-voyance" limit={3} showOnlineFirst={true} source="numerologie-amoureuse-cards-top" />
 
         {/* Section 1: Qu'est-ce que la numérologie amoureuse */}
         <section className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-xl p-8 mb-8 border-2 border-amber-200">

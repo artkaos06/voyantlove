@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
-import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
+  railsTop: 'voyance-amour-immediate-cards-top',
   title: 'Voyance amour gratuite immédiate : tirage instantané en ligne',
   description: 'Voyance amour gratuite immédiate : tirage instantané en ligne, oracle et tarot oui/non amour. Réponse en quelques secondes à votre question sentimentale, sans inscription.',
   url: 'https://www.voyantlove.fr/voyance-gratuite-amour/voyance-amour-immediate/',
@@ -81,7 +81,6 @@ export default function VoyanceAmourImmediatePage() {
           </div>
         </article>
 
-        <VoyantRecommendations variant="rail" topic="voyance-gratuite" limit={3} showOnlineFirst={true} source="voyance-amour-immediate-cards-top" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">🎴 Tirages Automatiques Gratuits et Instantanés</h2>

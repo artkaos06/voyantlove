@@ -3,7 +3,6 @@ import Link from 'next/link';
 import { getWebPageSchema, getBreadcrumbSchema, getAuthorSchema } from '@/lib/schema';
 import { COMPATIBILITY_PAIRS, validatePairRecord } from '@/lib/compatibilitePairs';
 import { ZODIAC_SIGNS } from '@/lib/zodiac';
-import EEATSignal from '@/components/EEATSignal';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 import SynastryCalculator from '@/components/SynastryCalculator';
 import VoyantRailSection from '@/components/VoyantRailSection';
@@ -43,15 +42,14 @@ export default function CompatibiliteHubPage() {
         </div>
       </header>
 
+        {/* Bloc voyants commercial : mêmes rails que la home. */}
+        <VoyantRailSection source="compatibilite-hub-rail" bare />
+
       <div className="max-w-4xl mx-auto px-4 py-8">
         {/* Calculator first, answers the "are we compatible" intent immediately */}
         <section id="calculateur" className="mb-8">
           <SynastryCalculator />
         </section>
-        {/* Bloc voyants commercial : mêmes rails que la home. */}
-        <VoyantRailSection source="compatibilite-hub-rail" bare />
-
-        <EEATSignal colorScheme="purple" method="Analyse astrologique des signes, éléments et aspects" />
 
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-4 text-gray-900">Les compatibilités analysées</h2>

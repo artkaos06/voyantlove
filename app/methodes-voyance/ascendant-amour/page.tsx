@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
-import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
+  railsTop: 'ascendant-amour-cards-top',
   title: 'Ascendant en amour : signification et compatibilité',
   description: 'L\'ascendant en amour : ce que votre signe ascendant révèle sur votre style de séduction et la première attraction. Calcul, signification par signe et compatibilité.',
   url: 'https://www.voyantlove.fr/methodes-voyance/ascendant-amour/',
@@ -93,7 +93,6 @@ export default function AscendantAmourPage() {
           </div>
         </article>
 
-        <VoyantRecommendations variant="rail" topic="methodes-voyance" limit={3} showOnlineFirst={true} source="ascendant-amour-cards-top" />
 
         {/* Section 1: Calcul */}
         <section id="calcul" className="bg-white rounded-xl shadow-md p-8 mb-8">

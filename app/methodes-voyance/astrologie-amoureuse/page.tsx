@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
-import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
+  railsTop: 'astrologie-amoureuse-cards-top',
   title: 'Astrologie amoureuse : compatibilit\u00e9 astrale et pr\u00e9dictions',
   description: 'L\u2019astrologie amoureuse r\u00e9v\u00e8le votre compatibilit\u00e9 astrale, votre synastrie de couple et vos transits favorables. V\u00e9nus, Mars et les signes compatibles en amour.',
   url: 'https://www.voyantlove.fr/methodes-voyance/astrologie-amoureuse/',
@@ -79,7 +79,6 @@ export default function AstrologieAmoureusePage() {
           </div>
         </article>
 
-        <VoyantRecommendations variant="rail" topic="methodes-voyance" limit={3} showOnlineFirst={true} source="astrologie-amoureuse-cards-top" />
 
         {/* Section: Qu&apos;est-ce que l&apos;astrologie amoureuse */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">

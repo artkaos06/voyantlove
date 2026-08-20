@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
-import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
+  railsTop: 'boule-de-cristal-amour-cards-top',
   title: 'Boule de cristal amour : voyance et cristallomancie sentimentale',
   description: 'Découvrez la boule de cristal appliquée à l\'amour : fonctionnement, symboles perçus, déroulement d\'une séance. Guide complet de la cristallomancie pour vos questions de cœur.',
   url: 'https://www.voyantlove.fr/methodes-voyance/boule-de-cristal-amour/',
@@ -76,7 +76,6 @@ export default function BouleDeCristalAmourPage() {
           </div>
         </article>
 
-        <VoyantRecommendations variant="rail" topic="methodes-voyance" limit={3} showOnlineFirst={true} source="boule-de-cristal-amour-cards-top" />
 
         {/* Section 1: Fonctionnement */}
         <section id="fonctionnement" className="bg-white rounded-xl shadow-md p-8 mb-8">
