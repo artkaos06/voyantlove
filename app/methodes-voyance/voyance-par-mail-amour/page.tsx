@@ -82,7 +82,7 @@ export default function VoyanceParMailAmourPage() {
           </p>
         </article>
 
-        <VoyantRecommendations topic="methodes-voyance" limit={3} showOnlineFirst={true} source="voyance-par-mail-amour-cards-top" />
+        <VoyantRecommendations variant="rail" topic="methodes-voyance" limit={3} showOnlineFirst={true} source="voyance-par-mail-amour-cards-top" />
 
         {/* Qu'est-ce que la voyance par mail */}
         <section className="bg-gradient-to-br from-teal-50 to-cyan-50 rounded-xl p-8 mb-8 border-2 border-teal-200">

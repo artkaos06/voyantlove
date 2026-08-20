@@ -11,6 +11,7 @@ import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 import SynastryCalculator from '@/components/SynastryCalculator';
 import AskAI from '@/components/AskAI';
+import VoyantRailSection from '@/components/VoyantRailSection';
 
 // Publication gate: only records passing validation get a page.
 const LIVE_PAIRS = COMPATIBILITY_PAIRS.filter((p) => validatePairRecord(p).length === 0);
@@ -91,6 +92,9 @@ export default async function PairPage({ params }: Props) {
           <div className="text-2xl" aria-label={`Score de compatibilité : ${rec.score} sur 5`}>{hearts}</div>
         </div>
       </header>
+
+      {/* Bloc voyants commercial : mêmes rails que la home. */}
+      <VoyantRailSection source="compatibilite-pair-rail" />
 
       <div className="max-w-4xl mx-auto px-4 py-8">
         <EEATSignal colorScheme="purple" method="Analyse astrologique des signes et des éléments" />

@@ -84,7 +84,7 @@ export default function SynastrieAmoureusePage() {
           </p>
         </article>
 
-        <VoyantRecommendations topic="methodes-voyance" limit={3} showOnlineFirst={true} source="synastrie-amoureuse-cards-top" />
+        <VoyantRecommendations variant="rail" topic="methodes-voyance" limit={3} showOnlineFirst={true} source="synastrie-amoureuse-cards-top" />
 
         {/* Qu'est-ce que la synastrie */}
         <section className="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-xl p-8 mb-8 border-2 border-indigo-200">

@@ -74,7 +74,7 @@ export default function MethodesVoyanceHubPage() {
           </p>
         </div>
 
-        <VoyantRecommendations topic="methodes-voyance" limit={3} showOnlineFirst={true} source="methodes-voyance-hub-cards-top" />
+        <VoyantRecommendations variant="rail" topic="methodes-voyance" limit={3} showOnlineFirst={true} source="methodes-voyance-hub-cards-top" />
 
         <section className="mb-16">
           <h2 className="text-3xl font-bold mb-8 text-center">🗺️ Nos Méthodes de Voyance</h2>

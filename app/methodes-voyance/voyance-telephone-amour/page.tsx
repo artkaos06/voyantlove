@@ -79,7 +79,7 @@ export default function VoyanceTelephoneAmourPage() {
           </div>
         </article>
 
-        <VoyantRecommendations topic="methodes-voyance" limit={3} showOnlineFirst={true} source="voyance-telephone-amour-cards-top" />
+        <VoyantRecommendations variant="rail" topic="methodes-voyance" limit={3} showOnlineFirst={true} source="voyance-telephone-amour-cards-top" />
 
         {/* Section 1: Comment fonctionne la voyance par t&eacute;l&eacute;phone */}
         <section id="consultation" className="bg-white rounded-xl shadow-md p-8 mb-8">

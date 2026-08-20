@@ -79,7 +79,7 @@ export default function OracleAmourPage() {
           </div>
         </article>
 
-        <VoyantRecommendations topic="methodes-voyance" limit={3} showOnlineFirst={true} source="oracle-amour-cards-top" />
+        <VoyantRecommendations variant="rail" topic="methodes-voyance" limit={3} showOnlineFirst={true} source="oracle-amour-cards-top" />
 
         {/* Section: Qu&apos;est-ce que l&apos;Oracle de l&apos;Amour */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">

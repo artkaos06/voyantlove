@@ -121,7 +121,7 @@ export default function HoroscopeAmour2026Page() {
           </div>
         </article>
 
-        <VoyantRecommendations topic="voyance-gratuite" limit={3} showOnlineFirst={true} source="horoscope-amour-2026-cards-top" />
+        <VoyantRecommendations variant="rail" topic="voyance-gratuite" limit={3} showOnlineFirst={true} source="horoscope-amour-2026-cards-top" />
 
         {/* Section 1: Les Transits 2026 qui Bouleversent l&apos;Amour */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">

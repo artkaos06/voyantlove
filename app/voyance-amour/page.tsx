@@ -4,6 +4,7 @@ import { getWebPageSchema, getBreadcrumbSchema, getOrganizationSchema, getFAQSch
 import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
+import VoyantRailSection from '@/components/VoyantRailSection';
 
 export const metadata: Metadata = {
   title: 'Voyance amour : consultation voyant & voyante amour sp\u00e9cialis\u00e9',
@@ -103,6 +104,8 @@ export default function VoyanceAmourPage() {
             Chaque ann&eacute;e, des milliers de personnes consultent un voyant amour pour retrouver confiance et s&eacute;r&eacute;nit&eacute; dans leur vie sentimentale. Cette page est votre guide complet pour comprendre comment fonctionne la <strong>voyance en amour</strong>, choisir le bon praticien et poser les bonnes questions.
           </p>
         </section>
+        {/* Bloc voyants commercial : mêmes rails que la home. */}
+        <VoyantRailSection source="voyance-amour-pillar-rail" bare />
 
         {/* Section 2: 7 Questions Grid */}
         <section className="mb-12" id="questions">

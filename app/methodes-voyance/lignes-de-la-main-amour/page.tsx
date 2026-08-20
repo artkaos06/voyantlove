@@ -76,7 +76,7 @@ export default function LignesDeLaMainAmourPage() {
           </div>
         </article>
 
-        <VoyantRecommendations topic="methodes-voyance" limit={3} showOnlineFirst={true} source="lignes-de-la-main-amour-cards-top" />
+        <VoyantRecommendations variant="rail" topic="methodes-voyance" limit={3} showOnlineFirst={true} source="lignes-de-la-main-amour-cards-top" />
 
         {/* Section 1: La ligne de cœur */}
         <section id="ligne-coeur" className="bg-white rounded-xl shadow-md p-8 mb-8">

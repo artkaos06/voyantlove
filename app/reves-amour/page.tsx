@@ -4,6 +4,7 @@ import { getWebPageSchema, getBreadcrumbSchema, getAuthorSchema } from '@/lib/sc
 import { getDreamHubCards } from '@/lib/revesAmour';
 import EEATSignal from '@/components/EEATSignal';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
+import VoyantRailSection from '@/components/VoyantRailSection';
 
 const DREAM_HUB_CARDS = getDreamHubCards();
 
@@ -50,6 +51,8 @@ export default function RevesAmourHub() {
             En amour comme ailleurs, un <strong>rêve</strong> parle de votre <strong>monde intérieur</strong>, pas de celui d&apos;une autre personne. Il met en scène des émotions non digérées, désir, peur, manque, attachement, bien plus qu&apos;il n&apos;annonce l&apos;avenir. Un rêve n&apos;est ni une <strong>prémonition</strong>, ni un message que quelqu&apos;un vous envoie, ni une preuve des sentiments de l&apos;autre. La clé d&apos;interprétation la plus fiable reste le <strong>ressenti au réveil</strong>, jamais une grille figée. Chaque fiche ci-dessous décode un rêve d&apos;amour selon cet esprit&nbsp;: ce qu&apos;il peut refléter, et ce qu&apos;il ne prouve pas.
           </p>
         </section>
+        {/* Bloc voyants commercial : mêmes rails que la home. */}
+        <VoyantRailSection source="reves-amour-hub-rail" bare />
 
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-4 text-gray-900">Les rêves d&apos;amour décryptés</h2>

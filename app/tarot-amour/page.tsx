@@ -4,6 +4,7 @@ import { getWebPageSchema, getBreadcrumbSchema, getAuthorSchema } from '@/lib/sc
 import { TAROT_LOVE_CARDS, validateCardRecord } from '@/lib/tarotLoveCards';
 import EEATSignal from '@/components/EEATSignal';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
+import VoyantRailSection from '@/components/VoyantRailSection';
 
 const LIVE_CARDS = TAROT_LOVE_CARDS.filter((c) => validateCardRecord(c).length === 0);
 
@@ -48,6 +49,12 @@ export default function TarotAmourHub() {
 
       <div className="max-w-4xl mx-auto px-4 py-8">
         <EEATSignal colorScheme="purple" method="Interprétation du Tarot de Marseille en amour" />
+
+
+        {/* Bloc voyants commercial : mêmes rails que la home. */}
+
+        <VoyantRailSection source="tarot-amour-hub-rail" bare />
+
 
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-4 text-gray-900">Les cartes décryptées en amour</h2>

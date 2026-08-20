@@ -126,7 +126,7 @@ export default function TarotAmourGratuitPage() {
           </div>
         </article>
 
-        <VoyantRecommendations topic="voyance-gratuite" limit={3} showOnlineFirst={true} source="tarot-amour-gratuit-cards-top" />
+        <VoyantRecommendations variant="rail" topic="voyance-gratuite" limit={3} showOnlineFirst={true} source="tarot-amour-gratuit-cards-top" />
 
         {/* Section 1: Comprendre le Tarot Amoureux Gratuit */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">

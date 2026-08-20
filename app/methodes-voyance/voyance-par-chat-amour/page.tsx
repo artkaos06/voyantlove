@@ -76,7 +76,7 @@ export default function VoyanceParChatAmourPage() {
           </p>
         </article>
 
-        <VoyantRecommendations topic="methodes-voyance" limit={3} showOnlineFirst={true} source="voyance-par-chat-amour-cards-top" />
+        <VoyantRecommendations variant="rail" topic="methodes-voyance" limit={3} showOnlineFirst={true} source="voyance-par-chat-amour-cards-top" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">💬 Les Avantages Uniques de la Voyance par Chat</h2>

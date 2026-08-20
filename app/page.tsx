@@ -106,19 +106,50 @@ export default function HomePage() {
       </section>
 
       {/* ---------------------------------------------------------------
-          RAIL 1 — the whole point of the restructure.
-          A voyant's face used to appear at 1 681px (screen 3). It now
-          appears within the first screen. NOT lazy: lazy-mounting the
-          one thing we moved above the fold would defeat the change.
+          ZONE VOYANTS — tous les rails, avant tout contenu éditorial.
+
+          Le premier rail n'est pas paresseux : il est au-dessus de la ligne
+          de flottaison et le différer coûterait exactement ce que cette
+          refonte achète, un visage de voyant sur le premier écran. Le
+          deuxième non plus, il tombe dans les deux premiers écrans. Les deux
+          derniers le restent, avec l'échéance de repli de VoyantRail.
+
+          Chaque rail trie sur un champ que le flux partenaire renvoie
+          vraiment. Il n'y a volontairement PAS de rail « nouveaux voyants » :
+          le flux ne porte aucune date d'inscription et il n'existe aucun
+          moyen honnête d'en déduire une.
           --------------------------------------------------------------- */}
       <section className="bg-white px-4 py-6">
-        <div className="mx-auto max-w-6xl">
+        <div className="mx-auto max-w-6xl space-y-8">
           <VoyantRail
             title="Voyants disponibles maintenant"
             subtitle="Tarif à la minute affiché sur chaque fiche."
-            limit={12}
+            limit={16}
             source="homepage-rail-online"
             lazy={false}
+          />
+          <VoyantRail
+            title="Les mieux notés"
+            subtitle="Classés par note moyenne, puis par nombre d’avis."
+            limit={16}
+            source="homepage-rail-top-rated"
+            sortBy="rating"
+          />
+          <VoyantRail
+            title="Les plus consultés"
+            subtitle="Ceux que nos visiteurs appellent le plus."
+            limit={16}
+            source="homepage-rail-most-consulted"
+            sortBy="consultations"
+            lazy
+          />
+          <VoyantRail
+            title="Disponibles par téléphone"
+            subtitle="Ligne ouverte en ce moment."
+            limit={16}
+            source="homepage-rail-phone"
+            telOnly
+            lazy
           />
         </div>
       </section>
@@ -187,48 +218,6 @@ export default function HomePage() {
               </Link>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* ---------------------------------------------------------------
-          RAILS THÉMATIQUES
-
-          Chaque rail trie sur un champ que le flux partenaire renvoie
-          vraiment. Il n'y a volontairement PAS de rail « nouveaux voyants » :
-          le flux ne porte aucune date d'inscription et il n'existe aucun
-          moyen honnête d'en déduire une.
-
-          Ces rails sont possibles depuis que nbr=8 est passé à nbr=100 dans
-          next.config.mjs. Sur 8 voyants ils auraient réaffiché les mêmes
-          visages ; sur 72, « les mieux notés » et « les plus consultés » ne
-          se recoupent que partiellement.
-          --------------------------------------------------------------- */}
-      <section className="bg-gray-50 px-4 py-8">
-        <div className="mx-auto max-w-6xl space-y-8">
-          <VoyantRail
-            title="Les mieux notés"
-            subtitle="Classés par note moyenne, puis par nombre d’avis."
-            limit={16}
-            source="homepage-rail-top-rated"
-            sortBy="rating"
-            lazy
-          />
-          <VoyantRail
-            title="Les plus consultés"
-            subtitle="Ceux que nos visiteurs appellent le plus."
-            limit={16}
-            source="homepage-rail-most-consulted"
-            sortBy="consultations"
-            lazy
-          />
-          <VoyantRail
-            title="Disponibles par téléphone"
-            subtitle="Ligne ouverte en ce moment."
-            limit={16}
-            source="homepage-rail-phone"
-            telOnly
-            lazy
-          />
         </div>
       </section>
 

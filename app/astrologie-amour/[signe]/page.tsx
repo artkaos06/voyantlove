@@ -10,6 +10,7 @@ import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 import AskAI from '@/components/AskAI';
+import VoyantRailSection from '@/components/VoyantRailSection';
 
 const LIVE_SIGNS = SIGNES_AMOUR.filter((s) => validateSignRecord(s).length === 0);
 const LIVE_PAIR_SLUGS = new Set(
@@ -99,6 +100,8 @@ export default async function SignPage({ params }: Props) {
             <AskAI title={title} url={url} context={s.answerCapsule} />
           </div>
         </section>
+        {/* Bloc voyants commercial : mêmes rails que la home. */}
+        <VoyantRailSection source="astrologie-amour-signe-rail" bare />
 
         <article className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-fuchsia-500">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Le {s.name} en amour</h2>

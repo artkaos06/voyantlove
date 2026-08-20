@@ -91,7 +91,7 @@ export default function TirageTarotAmourPage() {
           </div>
         </article>
 
-        <VoyantRecommendations topic="methodes-voyance" limit={3} showOnlineFirst={true} source="tirage-tarot-amour-cards-top" />
+        <VoyantRecommendations variant="rail" topic="methodes-voyance" limit={3} showOnlineFirst={true} source="tirage-tarot-amour-cards-top" />
 
         {/* Section: Types de tirages amoureux */}
         <section id="types" className="bg-white rounded-xl shadow-md p-8 mb-8">

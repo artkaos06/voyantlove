@@ -117,7 +117,7 @@ export default function OracleGratuitAmourPage() {
           </div>
         </article>
 
-        <VoyantRecommendations topic="voyance-gratuite" limit={3} showOnlineFirst={true} source="oracle-gratuit-amour-cards-top" />
+        <VoyantRecommendations variant="rail" topic="voyance-gratuite" limit={3} showOnlineFirst={true} source="oracle-gratuit-amour-cards-top" />
 
         {/* Section 1: Diff&eacute;rence Oracle vs Tarot en Amour */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">

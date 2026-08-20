@@ -97,7 +97,7 @@ export default function VoyanceSentimentalePage() {
           </div>
         </article>
 
-        <VoyantRecommendations topic="sentiments" limit={3} showOnlineFirst={true} source="voyance-sentimentale-cards-top" />
+        <VoyantRecommendations variant="rail" topic="sentiments" limit={3} showOnlineFirst={true} source="voyance-sentimentale-cards-top" />
 
         {/* Section 1: Les domaines de la voyance sentimentale */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">

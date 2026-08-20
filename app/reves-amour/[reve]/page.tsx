@@ -8,6 +8,7 @@ import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 import AskAI from '@/components/AskAI';
+import VoyantRailSection from '@/components/VoyantRailSection';
 
 const LIVE_DREAMS = REVES_AMOUR.filter((d) => validateDreamRecord(d).length === 0);
 
@@ -108,6 +109,8 @@ export default async function DreamPage({ params }: Props) {
             <AskAI title={title} url={url} context={d.answerCapsule} />
           </div>
         </section>
+        {/* Bloc voyants commercial : mêmes rails que la home. */}
+        <VoyantRailSection source="reves-amour-reve-rail" bare />
 
         {/* Theme funnel to the most relevant priority page */}
         <p className="text-gray-600 mb-8">

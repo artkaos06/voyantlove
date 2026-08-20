@@ -8,6 +8,7 @@ import EEATSignal from '@/components/EEATSignal';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 import AskAI from '@/components/AskAI';
+import VoyantRailSection from '@/components/VoyantRailSection';
 
 const LIVE_CARDS = TAROT_LOVE_CARDS.filter((c) => validateCardRecord(c).length === 0);
 
@@ -92,6 +93,8 @@ export default async function CardPage({ params }: Props) {
             <AskAI title={title} url={url} context={c.answerCapsule} />
           </div>
         </section>
+        {/* Bloc voyants commercial : mêmes rails que la home. */}
+        <VoyantRailSection source="tarot-amour-carte-rail" bare />
 
         <article className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-indigo-500">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Que révèle {c.name} sur votre vie amoureuse&nbsp;?</h2>

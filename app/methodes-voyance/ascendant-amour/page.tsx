@@ -93,7 +93,7 @@ export default function AscendantAmourPage() {
           </div>
         </article>
 
-        <VoyantRecommendations topic="methodes-voyance" limit={3} showOnlineFirst={true} source="ascendant-amour-cards-top" />
+        <VoyantRecommendations variant="rail" topic="methodes-voyance" limit={3} showOnlineFirst={true} source="ascendant-amour-cards-top" />
 
         {/* Section 1: Calcul */}
         <section id="calcul" className="bg-white rounded-xl shadow-md p-8 mb-8">

@@ -122,7 +122,7 @@ export default function TirageGratuitCelibatairePage() {
           </div>
         </article>
 
-        <VoyantRecommendations topic="voyance-gratuite" limit={3} showOnlineFirst={true} source="tirage-gratuit-celibataire-cards-top" />
+        <VoyantRecommendations variant="rail" topic="voyance-gratuite" limit={3} showOnlineFirst={true} source="tirage-gratuit-celibataire-cards-top" />
 
         {/* Section 1: Tirages Sp&eacute;cifiques pour C&eacute;libataires */}
         <section id="tirages" className="bg-white rounded-xl shadow-md p-8 mb-8">

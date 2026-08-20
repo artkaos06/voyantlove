@@ -109,7 +109,7 @@ export default function TarotDuJourAmourPage() {
           </div>
         </article>
 
-        <VoyantRecommendations topic="voyance-gratuite" limit={3} showOnlineFirst={true} source="tarot-du-jour-amour-cards-top" />
+        <VoyantRecommendations variant="rail" topic="voyance-gratuite" limit={3} showOnlineFirst={true} source="tarot-du-jour-amour-cards-top" />
 
         {/* Section 1 */}
         <section id="habitude" className="bg-white rounded-xl shadow-md p-8 mb-8">

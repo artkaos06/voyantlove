@@ -6,6 +6,7 @@ import { ZODIAC_SIGNS } from '@/lib/zodiac';
 import EEATSignal from '@/components/EEATSignal';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 import SynastryCalculator from '@/components/SynastryCalculator';
+import VoyantRailSection from '@/components/VoyantRailSection';
 
 const LIVE_PAIRS = COMPATIBILITY_PAIRS.filter((p) => validatePairRecord(p).length === 0);
 
@@ -47,6 +48,8 @@ export default function CompatibiliteHubPage() {
         <section id="calculateur" className="mb-8">
           <SynastryCalculator />
         </section>
+        {/* Bloc voyants commercial : mêmes rails que la home. */}
+        <VoyantRailSection source="compatibilite-hub-rail" bare />
 
         <EEATSignal colorScheme="purple" method="Analyse astrologique des signes, éléments et aspects" />
 

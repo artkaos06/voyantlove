@@ -2,6 +2,7 @@
 
 import React from 'react';
 import VoyantCard from './VoyantCard';
+import VoyantRail from './VoyantRail';
 import { useVoyants } from '@/lib/useVoyants';
 
 interface VoyantRecommendationsProps {
@@ -11,6 +12,17 @@ interface VoyantRecommendationsProps {
   limit?: number;
   showOnlineFirst?: boolean;
   source?: string;
+  /**
+   * 'cards' (default) keeps the historic 3 full-size VoyantCards.
+   * 'rail'  swaps in horizontal rails of compact cards.
+   *
+   * Opt-in rather than a global swap: this component renders on 95 pages, and
+   * only the commercial ones (the /methodes-voyance/, /voyance-amour/,
+   * /voyance-gratuite-amour/ hubs and the "Voyance & Tarot" menu) were asked
+   * to change. The guidance pages under /reconquete/, /rupture/ etc. keep the
+   * full card, where the extra reassurance is doing real work mid-article.
+   */
+  variant?: 'cards' | 'rail';
 }
 
 export default function VoyantRecommendations({
@@ -19,10 +31,15 @@ export default function VoyantRecommendations({
   subtitle,
   limit = 3,
   source = 'recommendations',
+  variant = 'cards',
 }: VoyantRecommendationsProps) {
   const { voyants: liveVoyants, loading } = useVoyants();
 
-  if (loading || liveVoyants.length === 0) return null;
+  // The rail variant renders through VoyantRail, which draws its own
+  // height-reserving skeletons — so it can render immediately instead of
+  // returning null and popping the whole block in later, shifting everything
+  // below it. The legacy card variant keeps the old guard.
+  if (variant !== 'rail' && (loading || liveVoyants.length === 0)) return null;
 
   // Take first `limit` voyants from live feed (all are online)
   const displayVoyants = liveVoyants.slice(0, limit);
@@ -48,7 +65,13 @@ export default function VoyantRecommendations({
   };
 
   return (
-    <section className="bg-gradient-to-br from-purple-50 via-pink-50 to-blue-50 rounded-xl p-8 my-8">
+    <section
+      className={`bg-gradient-to-br from-purple-50 via-pink-50 to-blue-50 rounded-xl my-8 ${
+        // The rail bleeds to its container's edge, so a fat mobile gutter here
+        // just narrows every card: p-8 dropped them from 156px to 127px.
+        variant === 'rail' ? 'p-4 sm:p-8' : 'p-8'
+      }`}
+    >
       <div className="text-center mb-8">
         <h2 className="text-3xl font-bold text-gray-900 mb-3">
           {title || defaultTitles[topic]}
@@ -57,17 +80,49 @@ export default function VoyantRecommendations({
           {subtitle || defaultSubtitles[topic]}
         </p>
         <div className="flex items-center justify-center gap-2 mt-4">
-          <span className="bg-green-100 text-green-700 text-sm font-semibold px-4 py-2 rounded-full">
-            ⚡ {liveVoyants.length} voyants en ligne maintenant
-          </span>
+          {liveVoyants.length > 0 && (
+            <span className="bg-green-100 text-green-700 text-sm font-semibold px-4 py-2 rounded-full">
+              ⚡ {liveVoyants.length} voyants en ligne maintenant
+            </span>
+          )}
         </div>
       </div>
 
-      <div className="grid md:grid-cols-3 gap-6 mb-6">
-        {displayVoyants.map((voyant) => (
-          <VoyantCard key={voyant.ID} voyant={voyant} source={`${source}-${topic}`} />
-        ))}
-      </div>
+      {variant === 'rail' ? (
+        // Three rails on the same orderings the homepage uses. The first is
+        // eager: on a commercial page this block is the offer, not a footnote.
+        <div className="mb-6 space-y-8">
+          <VoyantRail
+            title="Voyants disponibles maintenant"
+            subtitle="Tarif à la minute affiché sur chaque fiche."
+            limit={16}
+            source={`${source}-${topic}-online`}
+            lazy={false}
+          />
+          <VoyantRail
+            title="Les mieux notés"
+            subtitle="Classés par note moyenne, puis par nombre d’avis."
+            limit={16}
+            source={`${source}-${topic}-top-rated`}
+            sortBy="rating"
+            lazy
+          />
+          <VoyantRail
+            title="Les plus consultés"
+            subtitle="Ceux que nos visiteurs appellent le plus."
+            limit={16}
+            source={`${source}-${topic}-most-consulted`}
+            sortBy="consultations"
+            lazy
+          />
+        </div>
+      ) : (
+        <div className="grid md:grid-cols-3 gap-6 mb-6">
+          {displayVoyants.map((voyant) => (
+            <VoyantCard key={voyant.ID} voyant={voyant} source={`${source}-${topic}`} />
+          ))}
+        </div>
+      )}
 
       <div className="bg-white rounded-lg p-6 text-center border-2 border-purple-200">
         <h3 className="font-bold text-xl text-gray-900 mb-3">

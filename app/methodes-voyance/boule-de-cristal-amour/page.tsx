@@ -76,7 +76,7 @@ export default function BouleDeCristalAmourPage() {
           </div>
         </article>
 
-        <VoyantRecommendations topic="methodes-voyance" limit={3} showOnlineFirst={true} source="boule-de-cristal-amour-cards-top" />
+        <VoyantRecommendations variant="rail" topic="methodes-voyance" limit={3} showOnlineFirst={true} source="boule-de-cristal-amour-cards-top" />
 
         {/* Section 1: Fonctionnement */}
         <section id="fonctionnement" className="bg-white rounded-xl shadow-md p-8 mb-8">

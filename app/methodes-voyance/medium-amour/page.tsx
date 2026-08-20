@@ -82,7 +82,7 @@ export default function MediumAmourPage() {
           </p>
         </article>
 
-        <VoyantRecommendations topic="methodes-voyance" limit={3} showOnlineFirst={true} source="medium-amour-cards-top" />
+        <VoyantRecommendations variant="rail" topic="methodes-voyance" limit={3} showOnlineFirst={true} source="medium-amour-cards-top" />
 
         {/* Section 1: Dons médiumniques */}
         <section id="dons" className="bg-white rounded-xl shadow-md p-8 mb-8">

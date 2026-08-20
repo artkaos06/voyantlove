@@ -84,7 +84,7 @@ export default function TarologieAmoureusePage() {
           </div>
         </article>
 
-        <VoyantRecommendations topic="methodes-voyance" limit={3} showOnlineFirst={true} source="tarologie-amoureuse-cards-top" />
+        <VoyantRecommendations variant="rail" topic="methodes-voyance" limit={3} showOnlineFirst={true} source="tarologie-amoureuse-cards-top" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">📖 Qu&apos;est-ce que la Tarologie Amoureuse ?</h2>

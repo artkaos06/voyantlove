@@ -82,7 +82,7 @@ export default function VoyanceTchatGratuitAmourPage() {
           </div>
         </article>
 
-        <VoyantRecommendations topic="voyance-gratuite" limit={3} showOnlineFirst={true} source="voyance-tchat-gratuit-amour-cards-top" />
+        <VoyantRecommendations variant="rail" topic="voyance-gratuite" limit={3} showOnlineFirst={true} source="voyance-tchat-gratuit-amour-cards-top" />
 
         {/* Section 1: Comment Fonctionne la Voyance par Tchat */}
         <section id="consultation" className="bg-white rounded-xl shadow-md p-8 mb-8">

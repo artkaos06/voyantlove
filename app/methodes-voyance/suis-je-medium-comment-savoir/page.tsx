@@ -77,7 +77,7 @@ export default function SuisJeMediumPage() {
           </p>
         </article>
 
-        <VoyantRecommendations topic="methodes-voyance" limit={3} showOnlineFirst={true} source="suis-je-medium-comment-savoir-cards-top" />
+        <VoyantRecommendations variant="rail" topic="methodes-voyance" limit={3} showOnlineFirst={true} source="suis-je-medium-comment-savoir-cards-top" />
 
         {/* Section 1: Signes */}
         <section id="signes" className="bg-white rounded-xl shadow-md p-8 mb-8">

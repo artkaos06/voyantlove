@@ -4,6 +4,7 @@ import { getWebPageSchema, getBreadcrumbSchema, getAuthorSchema } from '@/lib/sc
 import { SIGNES_AMOUR, validateSignRecord } from '@/lib/signesAmour';
 import EEATSignal from '@/components/EEATSignal';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
+import VoyantRailSection from '@/components/VoyantRailSection';
 
 const LIVE_SIGNS = SIGNES_AMOUR.filter((s) => validateSignRecord(s).length === 0);
 
@@ -49,6 +50,12 @@ export default function AstrologieAmourHub() {
 
       <div className="max-w-4xl mx-auto px-4 py-8">
         <EEATSignal colorScheme="purple" method="Analyse astrologique des signes en amour" />
+
+
+        {/* Bloc voyants commercial : mêmes rails que la home. */}
+
+        <VoyantRailSection source="astrologie-amour-hub-rail" bare />
+
 
         <section className="bg-purple-50 border-l-4 border-purple-500 rounded-r-xl p-6 md:p-8 mb-10">
           <h2 className="text-xl font-bold text-gray-900 mb-3">Chaque signe aime à sa manière</h2>

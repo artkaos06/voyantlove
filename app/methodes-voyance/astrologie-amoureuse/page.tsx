@@ -79,7 +79,7 @@ export default function AstrologieAmoureusePage() {
           </div>
         </article>
 
-        <VoyantRecommendations topic="methodes-voyance" limit={3} showOnlineFirst={true} source="astrologie-amoureuse-cards-top" />
+        <VoyantRecommendations variant="rail" topic="methodes-voyance" limit={3} showOnlineFirst={true} source="astrologie-amoureuse-cards-top" />
 
         {/* Section: Qu&apos;est-ce que l&apos;astrologie amoureuse */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
