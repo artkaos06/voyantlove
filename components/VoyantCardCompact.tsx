@@ -73,26 +73,30 @@ export default function VoyantCardCompact({ voyant, source = 'rail', priority = 
       target="_blank"
       rel="noopener noreferrer sponsored"
       onClick={handleClick}
-      className="group flex h-full flex-col overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm transition-shadow hover:shadow-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-600"
+      className="group flex h-full flex-col overflow-hidden rounded-lg border border-gray-200 bg-white transition-colors hover:border-purple-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-600"
     >
-      {/* Portrait. aspect-[4/5] rather than a fixed px height so the card can
-          flex with the rail's --spv without the face ever being cropped
-          differently between breakpoints. */}
-      <div className="relative aspect-[4/5] w-full bg-gradient-to-br from-purple-100 to-pink-100">
+      {/* Portrait, 1:1.
+          The partner serves these at exactly 180x180. Cropping a square source
+          to 4:5 sliced the tops of heads and framed every voyant differently;
+          matching the source aspect means no crop and no stretch. Combined with
+          a narrower card this takes the upscale from ~2.6x on a 3x phone down
+          to ~1.3x, which is the difference between a soft face and a sharp one.
+          Fix the source and this can grow again — see sizes below. */}
+      <div className="relative aspect-square w-full bg-gray-100">
         <Image
           src={`https://www.monsitevoyance.com/vignaff/${voyant.ID}.jpg`}
           alt={`Portrait de ${voyant.VOYANT}`}
           fill
-          // The card is never wider than ~200px in any layout, so we ask for
-          // 200px and let Next pick the DPR variants. Their site ships a
-          // 1080px file into a 146px slot; we are not copying that.
-          sizes="200px"
+          // 180px is the intrinsic size of the source file, so asking for more
+          // buys nothing — the optimiser will not invent detail. If the partner
+          // ever ships larger portraits, raise this first.
+          sizes="180px"
           priority={priority}
           className="object-cover"
         />
         {isOnline && (
-          <span className="absolute left-2 top-2 flex items-center gap-1 rounded-full bg-green-500 px-2 py-0.5 text-[10px] font-semibold text-white shadow">
-            <span className="h-1.5 w-1.5 rounded-full bg-white" />
+          <span className="absolute left-2 top-2 flex items-center gap-1 rounded-full bg-black/60 px-2 py-0.5 text-[10px] font-medium text-white backdrop-blur-sm">
+            <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
             En ligne
           </span>
         )}
@@ -116,7 +120,7 @@ export default function VoyantCardCompact({ voyant, source = 'rail', priority = 
         {/* mt-auto so every CTA in the rail sits on one baseline even when a
             voyant has no live price channel — the same slack-collecting trick
             that fixed the full card's row alignment. */}
-        <span className="mt-auto block w-full rounded-lg bg-gradient-to-r from-purple-600 to-indigo-600 px-2 py-2 text-center text-xs font-semibold text-white transition-all group-hover:from-purple-700 group-hover:to-indigo-700">
+        <span className="mt-auto block w-full rounded-md bg-purple-700 px-2 py-2 text-center text-xs font-semibold text-white transition-colors group-hover:bg-purple-800">
           {isOnline ? 'Consulter' : 'Rendez-vous'}
         </span>
       </div>

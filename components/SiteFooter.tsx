@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Icon from '@/components/Icon';
 import AffiliateDisclosure from '@/components/AffiliateDisclosure';
 
 const COLUMNS: { title: string; links: { href: string; label: string }[] }[] = [
@@ -67,7 +68,7 @@ export default function SiteFooter() {
         </div>
         <div className="border-t border-gray-700 mt-10 pt-6 flex flex-col md:flex-row items-center justify-between gap-3">
           <Link href="/" className="flex items-center gap-1.5 font-bold text-white">
-            <span>💜</span><span>VoyantLove</span>
+            <Icon name="heart" size={18} className="text-purple-400" /><span>VoyantLove</span>
           </Link>
           <AffiliateDisclosure variant="inline" className="text-center md:text-right md:max-w-lg" />
         </div>

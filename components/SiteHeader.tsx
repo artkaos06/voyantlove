@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Icon from '@/components/Icon';
 
 interface NavLink {
   href: string;
@@ -45,7 +46,9 @@ export default function SiteHeader() {
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-gray-200">
       <nav className="max-w-6xl mx-auto px-4 h-14 flex items-center justify-between gap-4">
         <Link href="/" className="flex items-center gap-1.5 font-bold text-lg text-purple-700 shrink-0" onClick={() => setMobileOpen(false)}>
-          <span>💜</span><span>VoyantLove</span>
+          {/* Was a 💜 emoji, i.e. an OS-rendered glyph as the brand mark. */}
+          <Icon name="heart" size={19} className="text-purple-700" />
+          <span>VoyantLove</span>
         </Link>
 
         {/* Desktop nav, CSS hover/focus dropdowns, no JS state */}
@@ -95,7 +98,12 @@ export default function SiteHeader() {
             aria-label={mobileOpen ? 'Fermer le menu' : 'Ouvrir le menu'}
             aria-expanded={mobileOpen}
           >
-            {mobileOpen ? '✕' : '☰'}
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor"
+                 strokeWidth={1.75} strokeLinecap="round" aria-hidden="true">
+              {mobileOpen
+                ? <path d="M5 5l14 14M19 5L5 19" />
+                : <><path d="M4 7h16" /><path d="M4 12h16" /><path d="M4 17h16" /></>}
+            </svg>
           </button>
         </div>
       </nav>

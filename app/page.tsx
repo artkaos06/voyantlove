@@ -5,6 +5,7 @@ import VoyantRail from '@/components/VoyantRail';
 import TestimonialSection from '@/components/TestimonialSection';
 import TrustBadges from '@/components/TrustBadges';
 import DynamicCTAButton from '@/components/DynamicCTAButton';
+import Icon, { type IconName } from '@/components/Icon';
 
 export const metadata: Metadata = {
   title: {
@@ -14,15 +15,20 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://www.voyantlove.fr/' },
 };
 
-const SITUATIONS = [
-  { href: '/reconquete/', emoji: '💜', title: 'Reconquête amoureuse', desc: 'Reconquérir votre ex, timing idéal, signes de retour.', accent: 'border-purple-600' },
-  { href: '/rupture/', emoji: '💔', title: 'Rupture et guérison', desc: 'Comprendre, surmonter le chagrin, oublier son ex.', accent: 'border-gray-700' },
-  { href: '/nouvelle-rencontre/', emoji: '✨', title: 'Nouvelle rencontre', desc: 'Trouver l’amour, quand, reconnaître votre âme sœur.', accent: 'border-cyan-500' },
-  { href: '/sentiments/', emoji: '💖', title: 'Sentiments et avenir', desc: 'Décrypter ses sentiments, signes d’amour, prédictions.', accent: 'border-red-500' },
-  { href: '/crise-couple/', emoji: '⚠️', title: 'Crise de couple', desc: 'Infidélité, jalousie, communication : que faire.', accent: 'border-orange-500' },
-  { href: '/methodes-voyance/', emoji: '🔮', title: 'Méthodes de voyance', desc: 'Tarot, oracle, astrologie et leurs spécificités.', accent: 'border-indigo-500' },
-  { href: '/voyance-gratuite-amour/', emoji: '🌟', title: 'Voyance gratuite amour', desc: 'Tirages et guidance sentimentale sans engagement.', accent: 'border-green-500' },
+// One accent colour, not seven. The grid used to carry a different border
+// colour per card — purple, charcoal, cyan, red, orange, indigo, green — which
+// gave the eye no way to tell what mattered. Differentiation comes from the
+// icon and the label now.
+const SITUATIONS: { href: string; icon: IconName; title: string; desc: string }[] = [
+  { href: '/reconquete/', icon: 'heart', title: 'Reconquête amoureuse', desc: 'Reconquérir votre ex, timing idéal, signes de retour.' },
+  { href: '/rupture/', icon: 'heartbreak', title: 'Rupture et guérison', desc: 'Comprendre, surmonter le chagrin, oublier son ex.' },
+  { href: '/nouvelle-rencontre/', icon: 'sparkle', title: 'Nouvelle rencontre', desc: 'Trouver l’amour, quand, reconnaître votre âme sœur.' },
+  { href: '/sentiments/', icon: 'chat', title: 'Sentiments et avenir', desc: 'Décrypter ses sentiments, signes d’amour, prédictions.' },
+  { href: '/crise-couple/', icon: 'alert', title: 'Crise de couple', desc: 'Infidélité, jalousie, communication : que faire.' },
+  { href: '/methodes-voyance/', icon: 'moon', title: 'Méthodes de voyance', desc: 'Tarot, oracle, astrologie et leurs spécificités.' },
+  { href: '/voyance-gratuite-amour/', icon: 'gift', title: 'Voyance gratuite amour', desc: 'Tirages et guidance sentimentale sans engagement.' },
 ];
+
 
 const FAQ_ITEMS = [
   {
@@ -71,36 +77,35 @@ export default function HomePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(authorSchema) }} />
 
       {/* ---------------------------------------------------------------
-          HERO — compressed from py-20 (≈560px on mobile) to py-8.
-          The H1 was "💜 VoyantLove", the brand name: it told a visitor
-          nothing and it targeted no query. It now states the service.
-          One primary action, not two competing ones.
+          HERO — flat and editorial.
+
+          Was a full-bleed purple gradient slab with three centred white text
+          sizes stacked on it. The gradient carried no information, centred
+          body copy is harder to read, and the slab pushed the voyants down.
+          Now: white ground, left-aligned type, one accent, one action.
           --------------------------------------------------------------- */}
-      <section className="bg-gradient-to-r from-brand-purple to-brand-purple-dark px-4 py-8 text-white sm:py-12">
-        <div className="mx-auto max-w-4xl text-center">
-          <h1 className="text-3xl font-bold leading-tight sm:text-4xl md:text-5xl">
+      <section className="border-b border-gray-200 bg-white px-4 pb-7 pt-8 sm:pt-12">
+        <div className="mx-auto max-w-4xl">
+          <h1 className="text-[1.75rem] font-bold leading-[1.15] tracking-tight text-gray-900 sm:text-4xl">
             Voyance amoureuse par téléphone et par chat
           </h1>
           {/* "voyante" carries its own search demand alongside "voyant", so the
-              hero has to cover both. The old hero did this with a title-cased
-              line ("Vos Voyants et Voyantes Spécialisés en Amour"); the
-              coverage is kept, the casing is not — French headings are
-              sentence case. */}
-          <p className="mt-2 text-lg font-semibold opacity-95">
+              hero has to cover both. */}
+          <p className="mt-2 text-base font-medium text-purple-700 sm:text-lg">
             Nos voyants et voyantes spécialisés en amour
           </p>
-          <p className="mx-auto mt-3 max-w-2xl text-base opacity-95 sm:text-lg">
+          <p className="mt-3 max-w-2xl text-[0.95rem] leading-relaxed text-gray-600">
             Reconquête, sentiments, rupture, rencontre : consultez un voyant qui se consacre
             exclusivement aux questions du cœur. Tarif à la minute affiché, sans inscription.
           </p>
-          <div className="mt-5">
+          <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-3">
             <DynamicCTAButton
-              label="🔮 Consulter un voyant"
+              label="Consulter un voyant"
               source="homepage-hero-primary"
-              className="inline-block rounded-lg bg-white px-8 py-4 font-semibold text-brand-purple shadow-md transition hover:shadow-lg"
+              className="inline-block rounded-lg bg-purple-700 px-6 py-3.5 font-semibold text-white transition hover:bg-purple-800"
             />
+            <span className="text-sm text-gray-500">10 minutes offertes pour découvrir le service</span>
           </div>
-          <p className="mt-3 text-sm opacity-80">10 minutes offertes pour découvrir le service</p>
         </div>
       </section>
 
@@ -153,25 +158,23 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Trust bar — was a 4-cell grid with 4xl emoji (≈300px). Now one row. */}
+      {/* Trust bar */}
       <section className="border-y border-gray-200 bg-gray-50 px-4 py-4">
-        <div className="mx-auto grid max-w-6xl grid-cols-2 gap-3 text-center text-sm md:grid-cols-4">
-          <div>
-            <div className="font-bold text-brand-purple">Spécialistes amour</div>
-            <div className="text-xs text-gray-600">Questions sentimentales uniquement</div>
-          </div>
-          <div>
-            <div className="font-bold text-brand-purple">Tarif affiché</div>
-            <div className="text-xs text-gray-600">En euros, à la minute, avant l’appel</div>
-          </div>
-          <div>
-            <div className="font-bold text-brand-purple">Sans inscription</div>
-            <div className="text-xs text-gray-600">Guidances gratuites en accès libre</div>
-          </div>
-          <div>
-            <div className="font-bold text-brand-purple">Confidentiel</div>
-            <div className="text-xs text-gray-600">Consultations 100 % privées</div>
-          </div>
+        <div className="mx-auto grid max-w-6xl grid-cols-2 gap-x-4 gap-y-3 md:grid-cols-4">
+          {[
+            { icon: 'heart' as IconName, t: 'Spécialistes amour', d: 'Questions sentimentales uniquement' },
+            { icon: 'check' as IconName, t: 'Tarif affiché', d: 'En euros, à la minute, avant l’appel' },
+            { icon: 'sparkle' as IconName, t: 'Sans inscription', d: 'Guidances gratuites en accès libre' },
+            { icon: 'lock' as IconName, t: 'Confidentiel', d: 'Consultations 100 % privées' },
+          ].map((x) => (
+            <div key={x.t} className="flex items-start gap-2">
+              <Icon name={x.icon} size={17} className="mt-0.5 text-purple-700" />
+              <div className="min-w-0">
+                <div className="text-sm font-semibold text-gray-900">{x.t}</div>
+                <div className="text-xs leading-snug text-gray-600">{x.d}</div>
+              </div>
+            </div>
+          ))}
         </div>
       </section>
 
@@ -207,12 +210,12 @@ export default function HomePage() {
             Chaque situation amoureuse est unique. Découvrez la guidance adaptée à la vôtre.
           </p>
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {SITUATIONS.map((s) => (
-              <Link key={s.href} href={s.href} className="group">
-                <div className={`h-full rounded-xl border-t-4 bg-white p-4 shadow-sm transition hover:shadow-lg ${s.accent}`}>
-                  <div className="mb-2 text-2xl">{s.emoji}</div>
-                  <h3 className="mb-1 font-bold transition group-hover:text-purple-700">{s.title}</h3>
-                  <p className="text-sm text-gray-600">{s.desc}</p>
+            {SITUATIONS.map((item) => (
+              <Link key={item.href} href={item.href} className="group">
+                <div className="h-full rounded-lg border border-gray-200 bg-white p-4 transition hover:border-purple-300 hover:shadow-sm">
+                  <Icon name={item.icon} size={22} className="mb-2 text-purple-700" />
+                  <h3 className="mb-1 font-semibold text-gray-900 transition group-hover:text-purple-700">{item.title}</h3>
+                  <p className="text-sm leading-relaxed text-gray-600">{item.desc}</p>
                 </div>
               </Link>
             ))}
@@ -234,20 +237,20 @@ export default function HomePage() {
             équipe est spécialisé en questions sentimentales, c’est notre seul métier.
           </p>
           <div className="grid gap-4 sm:grid-cols-2">
-            <div className="rounded-xl bg-purple-50 p-4">
-              <h3 className="mb-1 font-bold">🎯 100 % spécialisés amour</h3>
+            <div className="rounded-lg border border-gray-200 bg-white p-4">
+              <h3 className="mb-1 flex items-center gap-2 font-semibold text-gray-900"><Icon name="check" size={18} className="text-purple-700" />100 % spécialisés amour</h3>
               <p className="text-sm text-gray-600">Nos praticiens ne traitent que les problématiques du cœur : reconquête, sentiments, rupture, rencontre, crise de couple.</p>
             </div>
-            <div className="rounded-xl bg-purple-50 p-4">
-              <h3 className="mb-1 font-bold">✅ Voyants sélectionnés</h3>
+            <div className="rounded-lg border border-gray-200 bg-white p-4">
+              <h3 className="mb-1 flex items-center gap-2 font-semibold text-gray-900"><Icon name="shield" size={18} className="text-purple-700" />Voyants sélectionnés</h3>
               <p className="text-sm text-gray-600">Minimum 5 ans d’expérience, avis clients authentiques et engagement éthique.</p>
             </div>
-            <div className="rounded-xl bg-purple-50 p-4">
-              <h3 className="mb-1 font-bold">💬 Réponses franches</h3>
+            <div className="rounded-lg border border-gray-200 bg-white p-4">
+              <h3 className="mb-1 flex items-center gap-2 font-semibold text-gray-900"><Icon name="chat" size={18} className="text-purple-700" />Réponses franches</h3>
               <p className="text-sm text-gray-600">Nos voyants vous disent ce qu’ils voient, même quand c’est difficile à entendre. Zéro promesse irréaliste, zéro vente de rituels.</p>
             </div>
-            <div className="rounded-xl bg-purple-50 p-4">
-              <h3 className="mb-1 font-bold">🔒 Confidentialité totale</h3>
+            <div className="rounded-lg border border-gray-200 bg-white p-4">
+              <h3 className="mb-1 flex items-center gap-2 font-semibold text-gray-900"><Icon name="lock" size={18} className="text-purple-700" />Confidentialité totale</h3>
               <p className="text-sm text-gray-600">Vos consultations restent strictement privées. Aucune donnée partagée, aucun historique accessible à des tiers.</p>
             </div>
           </div>
@@ -298,7 +301,7 @@ export default function HomePage() {
       </section>
 
       {/* Closing CTA */}
-      <section className="bg-gradient-to-r from-brand-purple to-brand-purple-dark px-4 py-10 text-white">
+      <section className="bg-gray-900 px-4 py-10 text-white">
         <div className="mx-auto max-w-4xl text-center">
           <h2 className="mb-3 text-2xl font-bold sm:text-3xl">
             Besoin d’une guidance personnalisée ?
@@ -309,7 +312,7 @@ export default function HomePage() {
           <DynamicCTAButton
             label="Consulter un voyant maintenant"
             source="homepage-cta-primary"
-            className="inline-block rounded-lg bg-white px-8 py-4 font-semibold text-brand-purple shadow-md transition hover:shadow-lg"
+            className="inline-block rounded-lg bg-purple-600 px-8 py-4 font-semibold text-white transition hover:bg-purple-500"
             voyantIndex={0}
           />
           <div className="mt-6">

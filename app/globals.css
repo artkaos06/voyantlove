@@ -55,7 +55,7 @@ html {
    support and RTL for free, and it costs 0 KB.
    --------------------------------------------------------------------------- */
 .vl-rail {
-  --spv: 2.2;
+  --spv: 2.6;
   --vl-rail-gap: 0.75rem;
   display: flex;
   gap: var(--vl-rail-gap);
@@ -82,13 +82,13 @@ html {
 
 @media (min-width: 640px) {
   .vl-rail {
-    --spv: 3.2;
+    --spv: 4.2;
   }
 }
 
 @media (min-width: 1024px) {
   .vl-rail {
-    --spv: 5;
+    --spv: 6;
     padding-inline: 0;
     margin-inline: 0;
   }

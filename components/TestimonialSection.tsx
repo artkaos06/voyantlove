@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Icon from '@/components/Icon';
 import voyants from '@/data/voyants.json';
 import { Voyant } from '@/lib/voyants';
 
@@ -31,9 +32,6 @@ export default function TestimonialSection({
   if (testimonials.length === 0) return null;
 
   // Get initials for avatar
-  const getInitials = (name: string) => {
-    return name.charAt(0).toUpperCase();
-  };
 
   // Star rating component
   const StarRating = ({ rating }: { rating: number }) => {
@@ -44,11 +42,11 @@ export default function TestimonialSection({
       <div className="flex items-center gap-1">
         {[...Array(5)].map((_, i) => {
           if (i < fullStars) {
-            return <span key={i} className="text-yellow-400">★</span>;
+            return <Icon key={i} name="star" filled size={15} className="text-amber-400" />;
           } else if (i === fullStars && hasHalfStar) {
-            return <span key={i} className="text-yellow-400">★</span>;
+            return <Icon key={i} name="star" filled size={15} className="text-amber-400" />;
           } else {
-            return <span key={i} className="text-gray-300">★</span>;
+            return <Icon key={i} name="star" filled size={15} className="text-gray-300" />;
           }
         })}
       </div>
@@ -88,20 +86,24 @@ export default function TestimonialSection({
                 </blockquote>
 
                 {/* Author */}
-                <div className="flex items-center gap-3 pt-4 border-t border-gray-100">
-                  <div className="w-10 h-10 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full flex items-center justify-center text-white font-bold">
-                    {getInitials(voyant.VOYANT)}
-                  </div>
-                  <div>
-                    {showVoyantName && (
-                      <div className="font-semibold text-gray-900 text-sm capitalize">
-                        Client de {voyant.VOYANT}
-                      </div>
-                    )}
-                    <div className="text-xs text-gray-500">
-                      ✓ Consultation vérifiée
-                    </div>
-                  </div>
+                {/* Attribution.
+                    This used to read "Client de Kalinda" over a purple-pink
+                    gradient initial — an author invented from the voyant's own
+                    name, with "de" wrongly capitalised by `capitalize`. It read
+                    as a fabricated persona and undercut a review that is in
+                    fact real (LASTEVAL comes straight from the partner feed).
+                    The honest framing is to credit the reading, not a person we
+                    cannot name. */}
+                <div className="flex items-center gap-2 pt-4 border-t border-gray-100 text-xs text-gray-500">
+                  <Icon name="check" size={14} className="text-gray-400" />
+                  {showVoyantName ? (
+                    <span>
+                      Avis vérifié, consultation avec{' '}
+                      <span className="font-semibold capitalize text-gray-700">{voyant.VOYANT}</span>
+                    </span>
+                  ) : (
+                    <span>Avis vérifié</span>
+                  )}
                 </div>
 
                 {/* Trust indicators */}
@@ -123,17 +125,14 @@ export default function TestimonialSection({
           </p>
           <div className="flex justify-center gap-3 text-sm text-gray-500">
             <span className="flex items-center gap-1">
-              <span className="text-green-600">✓</span>
+              <Icon name="check" size={14} className="text-gray-400" />
               Paiement sécurisé
             </span>
             <span className="flex items-center gap-1">
-              <span className="text-green-600">✓</span>
-              Confidentialité garantie
+              <Icon name="check" size={14} className="text-gray-400" />
+              Tarif affiché avant l’appel
             </span>
-            <span className="flex items-center gap-1">
-              <span className="text-green-600">✓</span>
-              Satisfait ou remboursé
-            </span>
+
           </div>
         </div>
       </div>
