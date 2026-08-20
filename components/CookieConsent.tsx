@@ -46,9 +46,12 @@ export default function CookieConsent() {
           translations: {
             fr: {
               consentModal: {
-                title: '🍪 Cookies',
+                // No title: it read "🍪 Cookies" directly above a sentence
+                // that already says "cookies". On a 390px screen that line
+                // plus its margin cost ~34px to repeat a word.
+                title: '',
                 description:
-                  "Nous utilisons des cookies pour mesurer l'audience et personnaliser les publicités.",
+                  "Cookies pour mesurer l'audience et personnaliser les publicités.",
                 acceptAllBtn: 'Tout accepter',
                 acceptNecessaryBtn: 'Tout refuser',
                 showPreferencesBtn: 'Personnaliser',
@@ -111,24 +114,47 @@ export default function CookieConsent() {
   // the quiz answers. vanilla-cookieconsent v3 class names (.cm*).
   return (
     <style>{`
+      /* vanilla-cookieconsent v3 ships generous padding on every internal
+         block (.cm__texts 16px top, .cm__desc 11px bottom + 17.6px sides,
+         .cm__btns 16px/17.6px). Stacked, that padding — not the text — was
+         most of the bar's height. The bar supplies its own gutter instead. */
       #cc-main .cm--bar { padding: .55rem .8rem; }
-      #cc-main .cm__title { font-size: .85rem; margin-bottom: .1rem; }
-      #cc-main .cm__desc { font-size: .74rem; line-height: 1.3; }
+      #cc-main .cm__title { display: none; }
+      #cc-main .cm__texts { padding: 0 !important; }
+      #cc-main .cm__desc { padding: 0 !important; font-size: .78rem; line-height: 1.35; }
+      #cc-main .cm__footer { padding: 0 !important; margin-top: .35rem; }
+      #cc-main .cm__links { padding: 0 !important; }
+
       /* Flatten the two button groups into one flex row: accept + refuse sit
          side-by-side; "Personnaliser" drops to its own line as a small link.
          !important because the library's CSS loads after this style at equal
          specificity and otherwise forces flex-direction: column. */
-      #cc-main .cm__btns { display: flex !important; flex-flow: row wrap !important; align-items: center; gap: .4rem; margin-top: .5rem; }
-      #cc-main .cm__btn-group { display: contents !important; }
-      #cc-main .cm__btn { flex: 1 1 auto !important; width: auto !important; padding: .5rem .7rem; font-size: .8rem; margin: 0; }
-      #cc-main .cm__btn--secondary {
-        flex: 0 0 100% !important; background: transparent !important; border: 0 !important;
-        text-decoration: underline; padding: .2rem; font-size: .72rem; opacity: .8;
+      #cc-main .cm__btns {
+        display: flex !important; flex-flow: row wrap !important; align-items: center;
+        gap: .4rem; padding: 0 !important; margin: .5rem 0 0 !important; border: 0 !important;
       }
+      #cc-main .cm__btn-group { display: contents !important; }
+      #cc-main .cm__btn {
+        flex: 1 1 8rem !important; width: auto !important; min-height: 40px;
+        padding: .5rem .7rem; font-size: .8rem; margin: 0;
+      }
+      #cc-main .cm__btn--secondary {
+        flex: 0 0 100% !important; min-height: 0; background: transparent !important;
+        border: 0 !important; text-decoration: underline; padding: .15rem;
+        font-size: .72rem; opacity: .8;
+      }
+
+      /* Mobile: the bar was ~231px, about 27% of a 390x844 screen, across four
+         stacked blocks each carrying its own padding. Hard-cap the scrollable
+         body so no translation or future copy change can push it past a
+         quarter of the viewport. */
       @media (max-width: 640px) {
         #cc-main .cm--bar { padding: .5rem .7rem; }
-        #cc-main .cm__desc { font-size: .7rem; }
-        #cc-main .cm__btn { padding: .45rem .5rem; font-size: .77rem; }
+        #cc-main .cm__desc { font-size: .74rem; }
+        #cc-main .cm__btn { padding: .45rem .4rem; font-size: .77rem; }
+        #cc-main .cm__btn--secondary { font-size: .68rem; }
+        #cc-main .cm__footer { font-size: .65rem; line-height: 1.2; opacity: .75; }
+        #cc-main .cm__body { max-height: 22vh; overflow-y: auto; }
       }
     `}</style>
   );

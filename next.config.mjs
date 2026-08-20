@@ -30,16 +30,24 @@ const nextConfig = {
     SITE_DESCRIPTION: 'Voyance amoureuse spécialisée : reconquérir son ex, rencontrer l\'amour, compatibilité de couple. Tarot et guidance pour vos questions sentimentales.',
   },
 
-  // Proxy voyant API to avoid CORS
+  // Proxy voyant API to avoid CORS.
+  //
+  // nbr=100 asks for the whole roster (the upstream returns 72 for tpe=1 and
+  // caps there). It used to say nbr=8, which was not a page size — it was the
+  // entire catalogue the site could ever show. Every "top rated" or "most
+  // consulted" ranking was really a ranking of the same arbitrary 8, and their
+  // STAR values were all 5 or 5.5, so nothing could be sorted meaningfully.
+  // Across the full 72 the spread is 1.5 to 5.5 and CONSULT runs 80 to 3 768.
+  // Payload is 36 KB, fetched once and cached client-side for 2 minutes.
   async rewrites() {
     return [
       {
         source: '/api/voyants',
-        destination: 'https://www.webangelis.fr/api_msvaff.php?key=NTc1V3V6OWJhNE5ySFJKektjTTNHNVhDbmlpdlVWZUd3Y2tIeXA3WHhXY3RXQk9JekxleEJMVlcwQVBhd01NOQ==&tpe=1&nbr=8',
+        destination: 'https://www.webangelis.fr/api_msvaff.php?key=NTc1V3V6OWJhNE5ySFJKektjTTNHNVhDbmlpdlVWZUd3Y2tIeXA3WHhXY3RXQk9JekxleEJMVlcwQVBhd01NOQ==&tpe=1&nbr=100',
       },
       {
         source: '/api/voyants-gratuit',
-        destination: 'https://www.webangelis.fr/api_msvaff.php?key=NTc1V3V6OWJhNE5ySFJKektjTTNHNVhDbmlpdlVWZUd3Y2tIeXA3WHhXY3RXQk9JekxleEJMVlcwQVBhd01NOQ==&tpe=2&nbr=8',
+        destination: 'https://www.webangelis.fr/api_msvaff.php?key=NTc1V3V6OWJhNE5ySFJKektjTTNHNVhDbmlpdlVWZUd3Y2tIeXA3WHhXY3RXQk9JekxleEJMVlcwQVBhd01NOQ==&tpe=2&nbr=100',
       },
     ]
   },

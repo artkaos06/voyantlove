@@ -4,6 +4,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import VoyantCardCompact from './VoyantCardCompact';
 import { useVoyants } from '@/lib/useVoyants';
+import { Voyant } from '@/lib/voyants';
 
 interface VoyantRailProps {
   title: string;
@@ -21,7 +22,37 @@ interface VoyantRailProps {
    * cost us the one thing we are trying to buy: a voyant visible on screen 1.
    */
   lazy?: boolean;
+  /**
+   * Ordering. A STRING, not a comparator: the homepage is a Server Component
+   * and React cannot serialise a function across the server/client boundary
+   * ("Functions cannot be passed directly to Client Components"), so the
+   * comparators live here.
+   */
+  sortBy?: SortKey;
+  /** Only keep voyants whose phone line is live. */
+  telOnly?: boolean;
+  /** Only keep voyants whose chat is live. */
+  chatOnly?: boolean;
 }
+
+/**
+ * Ordering keys. Every one of these reads a field the partner feed actually
+ * returns — there is deliberately no "nouveaux voyants" key, because the feed
+ * carries no signup or join date and there is no honest way to infer one.
+ */
+export type SortKey = 'feed' | 'rating' | 'consultations' | 'reviews';
+
+const SORTERS: Record<SortKey, ((a: Voyant, b: Voyant) => number) | null> = {
+  // Feed order: the partner already returns its own preferred ordering.
+  feed: null,
+  // STAR runs 1.5 to 5.5 across the full roster, so this genuinely ranks.
+  // Ties break on review count so a lone 5.5 with 3 reviews cannot outrank a
+  // 5.5 with 1 170.
+  rating: (a, b) =>
+    parseFloat(b.STAR) - parseFloat(a.STAR) || parseInt(b.EVAL, 10) - parseInt(a.EVAL, 10),
+  consultations: (a, b) => parseInt(b.CONSULT, 10) - parseInt(a.CONSULT, 10),
+  reviews: (a, b) => parseInt(b.EVAL, 10) - parseInt(a.EVAL, 10),
+};
 
 const SKELETON_COUNT = 6;
 
@@ -33,6 +64,9 @@ export default function VoyantRail({
   source,
   href = '/consulter/',
   lazy = false,
+  sortBy = 'feed',
+  telOnly = false,
+  chatOnly = false,
 }: VoyantRailProps) {
   const { voyants, loading } = useVoyants();
   const containerRef = useRef<HTMLDivElement | null>(null);
@@ -87,7 +121,12 @@ export default function VoyantRail({
     };
   }, [lazy, shouldMount]);
 
-  const selection = voyants.slice(offset, offset + limit);
+  let pool = voyants;
+  if (telOnly) pool = pool.filter((v) => v.TEL === '1');
+  if (chatOnly) pool = pool.filter((v) => v.CHAT === '1');
+  const sorter = SORTERS[sortBy];
+  if (sorter) pool = [...pool].sort(sorter);
+  const selection = pool.slice(offset, offset + limit);
 
   // Reserve the row's height while loading so the rail never displaces the
   // content under it. Their site grows 1 350px mid-scroll; we are not doing

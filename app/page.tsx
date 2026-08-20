@@ -190,10 +190,47 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* A second rail was built here and then removed. The live feed carries
-          8 voyants, so a "top rated" rail re-rendered the same 8 faces in
-          near-identical order — precisely the stacked-duplicate-carousel
-          pattern this restructure exists to avoid. One rail, everyone in it. */}
+      {/* ---------------------------------------------------------------
+          RAILS THÉMATIQUES
+
+          Chaque rail trie sur un champ que le flux partenaire renvoie
+          vraiment. Il n'y a volontairement PAS de rail « nouveaux voyants » :
+          le flux ne porte aucune date d'inscription et il n'existe aucun
+          moyen honnête d'en déduire une.
+
+          Ces rails sont possibles depuis que nbr=8 est passé à nbr=100 dans
+          next.config.mjs. Sur 8 voyants ils auraient réaffiché les mêmes
+          visages ; sur 72, « les mieux notés » et « les plus consultés » ne
+          se recoupent que partiellement.
+          --------------------------------------------------------------- */}
+      <section className="bg-gray-50 px-4 py-8">
+        <div className="mx-auto max-w-6xl space-y-8">
+          <VoyantRail
+            title="Les mieux notés"
+            subtitle="Classés par note moyenne, puis par nombre d’avis."
+            limit={16}
+            source="homepage-rail-top-rated"
+            sortBy="rating"
+            lazy
+          />
+          <VoyantRail
+            title="Les plus consultés"
+            subtitle="Ceux que nos visiteurs appellent le plus."
+            limit={16}
+            source="homepage-rail-most-consulted"
+            sortBy="consultations"
+            lazy
+          />
+          <VoyantRail
+            title="Disponibles par téléphone"
+            subtitle="Ligne ouverte en ce moment."
+            limit={16}
+            source="homepage-rail-phone"
+            telOnly
+            lazy
+          />
+        </div>
+      </section>
 
       <div className="mx-auto max-w-6xl px-4 py-4">
         <EEATSignal colorScheme="purple" method="Tarot, clairvoyance et astrologie amoureuse" />
