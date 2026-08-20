@@ -130,9 +130,12 @@ export function getVoyantsForTopic(
   return getTopVoyants(filtered, limit);
 }
 
-// Format price for display
+// Format price for display.
+// French typography: decimal COMMA, and a non-breaking space before the euro
+// sign so "1,40 €" can never wrap across two lines. The previous "1.40€" was
+// an English decimal point glued to the symbol.
 export function formatPrice(price: string): string {
-  return `${parseFloat(price).toFixed(2)}€`;
+  return `${parseFloat(price).toFixed(2).replace('.', ',')}\u00a0€`;
 }
 
 // Get availability badge

@@ -165,7 +165,7 @@ export default function VoyantCard({ voyant, source = 'content-page', compact = 
             {voyant.MAIL === '1' && (
               <div className="flex justify-between">
                 <span className="text-gray-600">📧 Email :</span>
-                <span className="font-semibold text-purple-700">{formatPrice(voyant.MAIL_S)}€</span>
+                <span className="font-semibold text-purple-700">{formatPrice(voyant.MAIL_S)}</span>
               </div>
             )}
           </div>

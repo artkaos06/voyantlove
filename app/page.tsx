@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getOrganizationSchema, getWebSiteSchema, getFAQSchema, getAuthorSchema } from '@/lib/schema';
 import EEATSignal from '@/components/EEATSignal';
-import VoyantRecommendations from '@/components/VoyantRecommendations';
+import VoyantRail from '@/components/VoyantRail';
 import TestimonialSection from '@/components/TestimonialSection';
 import TrustBadges from '@/components/TrustBadges';
 import DynamicCTAButton from '@/components/DynamicCTAButton';
@@ -15,436 +15,287 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://www.voyantlove.fr/' },
 };
 
+const SITUATIONS = [
+  { href: '/reconquete/', emoji: '💜', title: 'Reconquête amoureuse', desc: 'Reconquérir votre ex, timing idéal, signes de retour.', accent: 'border-purple-600' },
+  { href: '/rupture/', emoji: '💔', title: 'Rupture et guérison', desc: 'Comprendre, surmonter le chagrin, oublier son ex.', accent: 'border-gray-700' },
+  { href: '/nouvelle-rencontre/', emoji: '✨', title: 'Nouvelle rencontre', desc: 'Trouver l’amour, quand, reconnaître votre âme sœur.', accent: 'border-cyan-500' },
+  { href: '/sentiments/', emoji: '💖', title: 'Sentiments et avenir', desc: 'Décrypter ses sentiments, signes d’amour, prédictions.', accent: 'border-red-500' },
+  { href: '/crise-couple/', emoji: '⚠️', title: 'Crise de couple', desc: 'Infidélité, jalousie, communication : que faire.', accent: 'border-orange-500' },
+  { href: '/methodes-voyance/', emoji: '🔮', title: 'Méthodes de voyance', desc: 'Tarot, oracle, astrologie et leurs spécificités.', accent: 'border-indigo-500' },
+  { href: '/voyance-gratuite-amour/', emoji: '🌟', title: 'Voyance gratuite amour', desc: 'Tirages et guidance sentimentale sans engagement.', accent: 'border-green-500' },
+];
+
+const FAQ_ITEMS = [
+  {
+    q: 'Comment fonctionne VoyantLove ?',
+    a: 'VoyantLove est une plateforme de consultation avec des voyants spécialisés en questions sentimentales. Vous choisissez votre situation (reconquête, sentiments, rupture, rencontre, crise de couple), explorez nos guidances gratuites, puis réservez une consultation privée avec un voyant expert si vous souhaitez une analyse personnalisée. Chaque voyant utilise le tarot, la clairvoyance ou l’astrologie selon votre question.',
+  },
+  {
+    q: 'Comment sont sélectionnés les voyants VoyantLove ?',
+    a: 'Chaque voyant de notre équipe passe un processus de sélection rigoureux. Nous vérifions un minimum de 5 ans d’expérience en guidance sentimentale, la qualité des avis clients, et l’engagement à respecter notre charte éthique : pas de promesses irréalistes, pas de vente de rituels, et une posture bienveillante qui rend le consultant autonome plutôt que dépendant.',
+  },
+  {
+    q: 'Combien coûte une consultation sur VoyantLove ?',
+    a: 'Les tarifs varient selon le voyant choisi et la durée de la consultation. Le tarif à la minute est affiché sur la fiche de chaque voyant, avant tout engagement. Nous offrons 10 minutes gratuites pour découvrir le service. Nos guidances en ligne (reconquête, sentiments, rupture, etc.) sont entièrement gratuites et accessibles sans inscription.',
+  },
+  {
+    q: 'Mes consultations sont-elles confidentielles ?',
+    a: 'Oui, totalement. Vos consultations restent strictement privées. Aucune donnée personnelle n’est partagée avec des tiers, et votre historique de consultation n’est accessible qu’à vous. Nous respectons le RGPD et les normes européennes de protection des données.',
+  },
+  {
+    q: 'Quelle différence entre les guidances gratuites et une consultation privée ?',
+    a: 'Nos guidances gratuites sont des analyses générales par situation (reconquête, rupture, sentiments...) qui vous donnent des repères et des conseils basés sur le tarot. Une consultation privée est un échange individuel avec un voyant qui analyse VOTRE situation spécifique : les sentiments en jeu, les blocages, le timing. C’est la différence entre lire un guide et avoir un GPS personnalisé.',
+  },
+  {
+    q: 'Peut-on consulter un voyant VoyantLove par téléphone ou par chat ?',
+    a: 'Oui, nos voyants sont disponibles par téléphone et par chat en ligne. Choisissez le mode qui vous met le plus à l’aise. La qualité de la lecture est identique quel que soit le canal, ce qui compte, c’est la connexion énergétique entre vous et le voyant, pas le support technique.',
+  },
+];
+
+const STEPS = [
+  { n: '1', title: 'Choisissez votre situation', desc: 'Reconquête, rencontre, doute, crise : la problématique qui correspond à votre vécu.' },
+  { n: '2', title: 'Découvrez la guidance tarot', desc: 'Timing, étapes à suivre, erreurs à éviter, selon les cartes. Gratuit et sans inscription.' },
+  { n: '3', title: 'Consultez un voyant si besoin', desc: 'Pour une analyse 100 % personnalisée, au tarif affiché sur sa fiche.' },
+];
+
 export default function HomePage() {
   const organizationSchema = getOrganizationSchema();
   const websiteSchema = getWebSiteSchema();
   const authorSchema = getAuthorSchema();
-  const faqSchema = getFAQSchema([
-    {
-      question: 'Comment fonctionne VoyantLove ?',
-      answer: 'VoyantLove est une plateforme de consultation avec des voyants spécialisés en questions sentimentales. Vous choisissez votre situation (reconquête, sentiments, rupture, rencontre, crise de couple), explorez nos guidances gratuites, puis réservez une consultation privée avec un voyant expert si vous souhaitez une analyse personnalisée. Chaque voyant utilise le tarot, la clairvoyance ou l\'astrologie selon votre question.',
-    },
-    {
-      question: 'Comment sont sélectionnés les voyants VoyantLove ?',
-      answer: 'Chaque voyant de notre équipe passe un processus de sélection rigoureux. Nous vérifions un minimum de 5 ans d\'expérience en guidance sentimentale, la qualité des avis clients, et l\'engagement à respecter notre charte éthique : pas de promesses irréalistes, pas de vente de rituels, et une posture bienveillante qui rend le consultant autonome plutôt que dépendant.',
-    },
-    {
-      question: 'Combien coûte une consultation sur VoyantLove ?',
-      answer: 'Les tarifs varient selon le voyant choisi et la durée de la consultation. Nous offrons 10 minutes gratuites pour découvrir le service. Nos guidances en ligne (reconquête, sentiments, rupture, etc.) sont entièrement gratuites et accessibles sans inscription.',
-    },
-    {
-      question: 'Mes consultations sont-elles confidentielles ?',
-      answer: 'Oui, totalement. Vos consultations restent strictement privées. Aucune donnée personnelle n\'est partagée avec des tiers, et votre historique de consultation n\'est accessible qu\'à vous. Nous respectons le RGPD et les normes européennes de protection des données.',
-    },
-    {
-      question: 'Quelle différence entre les guidances gratuites et une consultation privée ?',
-      answer: 'Nos guidances gratuites sont des analyses générales par situation (reconquête, rupture, sentiments...) qui vous donnent des repères et des conseils basés sur le tarot. Une consultation privée est un échange individuel avec un voyant qui analyse VOTRE situation spécifique : les sentiments en jeu, les blocages, le timing. C\'est la différence entre lire un guide et avoir un GPS personnalisé.',
-    },
-    {
-      question: 'Peut-on consulter un voyant VoyantLove par téléphone ou par chat ?',
-      answer: 'Oui, nos voyants sont disponibles par téléphone et par chat en ligne. Choisissez le mode qui vous met le plus à l\'aise. La qualité de la lecture est identique quel que soit le canal, ce qui compte, c\'est la connexion énergétique entre vous et le voyant, pas le support technique.',
-    },
-  ]);
+  const faqSchema = getFAQSchema(FAQ_ITEMS.map(({ q, a }) => ({ question: q, answer: a })));
 
   return (
     <main className="min-h-screen">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(authorSchema) }}
-      />
-      {/* Hero Section */}
-      <section className="bg-gradient-to-r from-brand-purple to-brand-purple-dark text-white py-20 px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-5xl md:text-6xl font-bold mb-4">
-            💜 VoyantLove
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(authorSchema) }} />
+
+      {/* ---------------------------------------------------------------
+          HERO — compressed from py-20 (≈560px on mobile) to py-8.
+          The H1 was "💜 VoyantLove", the brand name: it told a visitor
+          nothing and it targeted no query. It now states the service.
+          One primary action, not two competing ones.
+          --------------------------------------------------------------- */}
+      <section className="bg-gradient-to-r from-brand-purple to-brand-purple-dark px-4 py-8 text-white sm:py-12">
+        <div className="mx-auto max-w-4xl text-center">
+          <h1 className="text-3xl font-bold leading-tight sm:text-4xl md:text-5xl">
+            Voyance amoureuse par téléphone et par chat
           </h1>
-          <p className="text-2xl mb-3 opacity-95 font-semibold">
-            Vos Voyants et Voyantes Spécialisés en Amour
+          {/* "voyante" carries its own search demand alongside "voyant", so the
+              hero has to cover both. The old hero did this with a title-cased
+              line ("Vos Voyants et Voyantes Spécialisés en Amour"); the
+              coverage is kept, the casing is not — French headings are
+              sentence case. */}
+          <p className="mt-2 text-lg font-semibold opacity-95">
+            Nos voyants et voyantes spécialisés en amour
           </p>
-          <p className="text-lg mb-8 max-w-2xl mx-auto opacity-90">
-            Reconquête, sentiments, rencontre, rupture, consultez un voyant expert qui se consacre exclusivement aux questions du cœur.
+          <p className="mx-auto mt-3 max-w-2xl text-base opacity-95 sm:text-lg">
+            Reconquête, sentiments, rupture, rencontre : consultez un voyant qui se consacre
+            exclusivement aux questions du cœur. Tarif à la minute affiché, sans inscription.
           </p>
-          <div className="flex gap-4 justify-center flex-wrap">
+          <div className="mt-5">
             <DynamicCTAButton
-              label="🔮 Consultation Voyance"
+              label="🔮 Consulter un voyant"
               source="homepage-hero-primary"
-              className="bg-white text-brand-purple px-8 py-4 rounded-lg font-semibold hover:shadow-lg transition"
+              className="inline-block rounded-lg bg-white px-8 py-4 font-semibold text-brand-purple shadow-md transition hover:shadow-lg"
             />
-            <Link
-              href="/consulter/"
-              className="bg-transparent border-2 border-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-brand-purple transition"
-            >
-              Voir nos Voyants Disponibles
-            </Link>
           </div>
+          <p className="mt-3 text-sm opacity-80">10 minutes offertes pour découvrir le service</p>
         </div>
       </section>
 
-      {/* Trust Bar */}
-      <section className="bg-gray-100 py-8">
-        <div className="max-w-6xl mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-            <div>
-              <div className="text-4xl mb-2">⭐</div>
-              <div className="text-2xl font-bold text-brand-purple">4,9/5</div>
-              <div className="text-sm text-gray-600">Plus de 2 500 avis vérifiés</div>
-            </div>
-            <div>
-              <div className="text-4xl mb-2">💜</div>
-              <div className="text-2xl font-bold text-brand-purple">Spécialistes Amour</div>
-              <div className="text-sm text-gray-600">Dédiés aux questions sentimentales</div>
-            </div>
-            <div>
-              <div className="text-4xl mb-2">🔮</div>
-              <div className="text-2xl font-bold text-brand-purple">Expérimentés</div>
-              <div className="text-sm text-gray-600">Des années de pratique</div>
-            </div>
-            <div>
-              <div className="text-4xl mb-2">🔒</div>
-              <div className="text-2xl font-bold text-brand-purple">Confidentiel</div>
-              <div className="text-sm text-gray-600">Consultations 100% privées</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* How it works */}
-      <section id="about" className="bg-gray-50 py-16 px-4">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-12">
-            Comment fonctionne VoyantLove ?
-          </h2>
-
-          <div className="space-y-8">
-            <div className="flex gap-6 items-start">
-              <div className="flex-shrink-0 w-12 h-12 bg-brand-purple text-white rounded-full flex items-center justify-center font-bold text-xl">
-                1
-              </div>
-              <div>
-                <h3 className="text-xl font-bold mb-2">Choisissez votre situation</h3>
-                <p className="text-gray-600">
-                  Sélectionnez la problématique amoureuse qui correspond à votre vécu : reconquête, rencontre, doute, crise...
-                </p>
-              </div>
-            </div>
-
-            <div className="flex gap-6 items-start">
-              <div className="flex-shrink-0 w-12 h-12 bg-brand-purple text-white rounded-full flex items-center justify-center font-bold text-xl">
-                2
-              </div>
-              <div>
-                <h3 className="text-xl font-bold mb-2">Découvrez la guidance tarot</h3>
-                <p className="text-gray-600">
-                  Chaque page contient une analyse complète : timing idéal, étapes à suivre, erreurs à éviter, selon les cartes.
-                </p>
-              </div>
-            </div>
-
-            <div className="flex gap-6 items-start">
-              <div className="flex-shrink-0 w-12 h-12 bg-brand-purple text-white rounded-full flex items-center justify-center font-bold text-xl">
-                3
-              </div>
-              <div>
-                <h3 className="text-xl font-bold mb-2">Consultez un voyant si besoin</h3>
-                <p className="text-gray-600">
-                  Pour une guidance 100% personnalisée, réservez une consultation privée avec nos voyants spécialisés en amour.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Featured Voyants Section */}
-      <section className="py-16 px-4 bg-gray-50">
-        <div className="max-w-6xl mx-auto">
-          <VoyantRecommendations
-            topic="sentiments"
-            title="🔮 Nos Voyants Experts en Amour"
-            subtitle="Voyants spécialisés en guidance amoureuse avec des milliers de consultations réussies. Disponibles maintenant pour vous accompagner."
-            limit={3}
-            showOnlineFirst={true}
-            source="homepage-featured"
+      {/* ---------------------------------------------------------------
+          RAIL 1 — the whole point of the restructure.
+          A voyant's face used to appear at 1 681px (screen 3). It now
+          appears within the first screen. NOT lazy: lazy-mounting the
+          one thing we moved above the fold would defeat the change.
+          --------------------------------------------------------------- */}
+      <section className="bg-white px-4 py-6">
+        <div className="mx-auto max-w-6xl">
+          <VoyantRail
+            title="Voyants disponibles maintenant"
+            subtitle="Tarif à la minute affiché sur chaque fiche."
+            limit={12}
+            source="homepage-rail-online"
+            lazy={false}
           />
         </div>
       </section>
 
-      {/* E-E-A-T Signal */}
-      <div className="max-w-6xl mx-auto px-4 pt-8">
+      {/* Trust bar — was a 4-cell grid with 4xl emoji (≈300px). Now one row. */}
+      <section className="border-y border-gray-200 bg-gray-50 px-4 py-4">
+        <div className="mx-auto grid max-w-6xl grid-cols-2 gap-3 text-center text-sm md:grid-cols-4">
+          <div>
+            <div className="font-bold text-brand-purple">Spécialistes amour</div>
+            <div className="text-xs text-gray-600">Questions sentimentales uniquement</div>
+          </div>
+          <div>
+            <div className="font-bold text-brand-purple">Tarif affiché</div>
+            <div className="text-xs text-gray-600">En euros, à la minute, avant l’appel</div>
+          </div>
+          <div>
+            <div className="font-bold text-brand-purple">Sans inscription</div>
+            <div className="text-xs text-gray-600">Guidances gratuites en accès libre</div>
+          </div>
+          <div>
+            <div className="font-bold text-brand-purple">Confidentiel</div>
+            <div className="text-xs text-gray-600">Consultations 100 % privées</div>
+          </div>
+        </div>
+      </section>
+
+      {/* How it works — 3 stacked rows (≈420px) collapsed into a 3-col row. */}
+      <section id="about" className="bg-white px-4 py-10">
+        <div className="mx-auto max-w-5xl">
+          <h2 className="mb-6 text-center text-2xl font-bold sm:text-3xl">
+            Comment fonctionne VoyantLove ?
+          </h2>
+          <div className="grid gap-5 sm:grid-cols-3">
+            {STEPS.map((step) => (
+              <div key={step.n} className="flex gap-3 sm:flex-col sm:gap-2 sm:text-center">
+                <div className="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full bg-brand-purple font-bold text-white sm:mx-auto">
+                  {step.n}
+                </div>
+                <div>
+                  <h3 className="font-bold">{step.title}</h3>
+                  <p className="mt-1 text-sm text-gray-600">{step.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Situations — the site's real IA. Compacted from p-6/gap-8 cards. */}
+      <section id="situations" className="bg-gray-50 px-4 py-10">
+        <div className="mx-auto max-w-6xl">
+          <h2 className="mb-2 text-center text-2xl font-bold sm:text-3xl">
+            Nos consultations spécialisées
+          </h2>
+          <p className="mx-auto mb-6 max-w-2xl text-center text-sm text-gray-600">
+            Chaque situation amoureuse est unique. Découvrez la guidance adaptée à la vôtre.
+          </p>
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {SITUATIONS.map((s) => (
+              <Link key={s.href} href={s.href} className="group">
+                <div className={`h-full rounded-xl border-t-4 bg-white p-4 shadow-sm transition hover:shadow-lg ${s.accent}`}>
+                  <div className="mb-2 text-2xl">{s.emoji}</div>
+                  <h3 className="mb-1 font-bold transition group-hover:text-purple-700">{s.title}</h3>
+                  <p className="text-sm text-gray-600">{s.desc}</p>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* A second rail was built here and then removed. The live feed carries
+          8 voyants, so a "top rated" rail re-rendered the same 8 faces in
+          near-identical order — precisely the stacked-duplicate-carousel
+          pattern this restructure exists to avoid. One rail, everyone in it. */}
+
+      <div className="mx-auto max-w-6xl px-4 py-4">
         <EEATSignal colorScheme="purple" method="Tarot, clairvoyance et astrologie amoureuse" />
       </div>
 
-      {/* Main Situations */}
-      <section id="situations" className="py-16 px-4">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-4">
-            Nos Consultations Spécialisées
+      {/* Why VoyantLove — 4 cards kept, padding halved. */}
+      <section className="bg-white px-4 py-10">
+        <div className="mx-auto max-w-4xl">
+          <h2 className="mb-3 text-center text-2xl font-bold sm:text-3xl">
+            Pourquoi choisir VoyantLove ?
           </h2>
-          <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
-            Chaque situation amoureuse est unique. Découvrez nos guidances spécialisées adaptées à votre problématique.
+          <p className="mx-auto mb-6 max-w-3xl text-center text-gray-700">
+            VoyantLove n’est pas une plateforme de voyance généraliste. Chaque voyant de notre
+            équipe est spécialisé en questions sentimentales, c’est notre seul métier.
           </p>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Network 1: Reconquête */}
-            <Link href="/reconquete/" className="group">
-              <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition border-t-4 border-purple-600">
-                <div className="text-4xl mb-4">💜</div>
-                <h3 className="text-xl font-bold mb-2 group-hover:text-purple-600 transition">
-                  Reconquête Amoureuse
-                </h3>
-                <p className="text-gray-600 mb-4">
-                  Reconquérir votre ex, timing idéal, étapes de reconquête, signes de retour selon le tarot.
-                </p>
-                <div className="text-purple-600 font-semibold">
-                  Découvrir →
-                </div>
-              </div>
-            </Link>
-
-            {/* Network 2: Rupture */}
-            <Link href="/rupture/" className="group">
-              <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition border-t-4 border-gray-700">
-                <div className="text-4xl mb-4">💔</div>
-                <h3 className="text-xl font-bold mb-2 group-hover:text-gray-700 transition">
-                  Rupture & Guérison
-                </h3>
-                <p className="text-gray-600 mb-4">
-                  Comprendre les raisons, surmonter le chagrin et oublier son ex selon le tarot.
-                </p>
-                <div className="text-gray-700 font-semibold">
-                  Explorer →
-                </div>
-              </div>
-            </Link>
-
-            {/* Network 3: Nouvelle Rencontre */}
-            <Link href="/nouvelle-rencontre/" className="group">
-              <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition border-t-4 border-cyan-500">
-                <div className="text-4xl mb-4">✨</div>
-                <h3 className="text-xl font-bold mb-2 group-hover:text-cyan-500 transition">
-                  Nouvelle Rencontre
-                </h3>
-                <p className="text-gray-600 mb-4">
-                  Trouver l'amour, quand rencontrer, reconnaître votre âme sœur selon le tarot.
-                </p>
-                <div className="text-cyan-500 font-semibold">
-                  Découvrir →
-                </div>
-              </div>
-            </Link>
-
-            {/* Network 4: Sentiments */}
-            <Link href="/sentiments/" className="group">
-              <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition border-t-4 border-red-500">
-                <div className="text-4xl mb-4">💖</div>
-                <h3 className="text-xl font-bold mb-2 group-hover:text-red-500 transition">
-                  Sentiments & Avenir
-                </h3>
-                <p className="text-gray-600 mb-4">
-                  Décrypter sentiments, signes d'amour, prédictions avenir amoureux selon le tarot.
-                </p>
-                <div className="text-red-500 font-semibold">
-                  Analyser →
-                </div>
-              </div>
-            </Link>
-
-            {/* Network 5: Crise de Couple */}
-            <Link href="/crise-couple/" className="group">
-              <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition border-t-4 border-orange-500">
-                <div className="text-4xl mb-4">⚠️</div>
-                <h3 className="text-xl font-bold mb-2 group-hover:text-orange-500 transition">
-                  Crise de Couple
-                </h3>
-                <p className="text-gray-600 mb-4">
-                  Infidélité, jalousie, communication : solutions pour surmonter les crises selon le tarot.
-                </p>
-                <div className="text-orange-500 font-semibold">
-                  Solutions →
-                </div>
-              </div>
-            </Link>
-
-            {/* Network 6: Méthodes de Voyance */}
-            <Link href="/methodes-voyance/" className="group">
-              <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition border-t-4 border-indigo-500">
-                <div className="text-4xl mb-4">🔮</div>
-                <h3 className="text-xl font-bold mb-2 group-hover:text-indigo-500 transition">
-                  Méthodes de Voyance
-                </h3>
-                <p className="text-gray-600 mb-4">
-                  Tarot, oracle, astrologie : découvrez les méthodes de voyance amoureuse et leurs spécificités.
-                </p>
-                <div className="text-indigo-500 font-semibold">
-                  Explorer →
-                </div>
-              </div>
-            </Link>
-
-            {/* Network 7: Voyance Gratuite Amour */}
-            <Link href="/voyance-gratuite-amour/" className="group">
-              <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition border-t-4 border-green-500">
-                <div className="text-4xl mb-4">🌟</div>
-                <h3 className="text-xl font-bold mb-2 group-hover:text-green-500 transition">
-                  Voyance Gratuite Amour
-                </h3>
-                <p className="text-gray-600 mb-4">
-                  Tarot gratuit, oracle et horoscope amour : tirages et guidance sentimentale sans engagement.
-                </p>
-                <div className="text-green-500 font-semibold">
-                  Découvrir →
-                </div>
-              </div>
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Why VoyantLove - Brand differentiation section */}
-      <section className="py-16 px-4 bg-white">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-8">
-            Pourquoi Choisir VoyantLove ?
-          </h2>
-          <p className="text-lg text-gray-800 mb-10 text-center max-w-3xl mx-auto">
-            VoyantLove n&apos;est pas une plateforme de voyance généraliste. Chaque voyant de notre équipe est spécialisé en questions sentimentales, c&apos;est notre seul métier.
-          </p>
-
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
-            <div className="bg-purple-50 rounded-xl p-6">
-              <div className="text-3xl mb-3">🎯</div>
-              <h3 className="font-bold text-lg mb-2">100% Spécialisés Amour</h3>
-              <p className="text-gray-600 text-sm">Pas de voyance généraliste ici. Nos praticiens ne traitent que les problématiques du cœur : reconquête, sentiments, rupture, rencontre, crise de couple.</p>
+          <div className="grid gap-4 sm:grid-cols-2">
+            <div className="rounded-xl bg-purple-50 p-4">
+              <h3 className="mb-1 font-bold">🎯 100 % spécialisés amour</h3>
+              <p className="text-sm text-gray-600">Nos praticiens ne traitent que les problématiques du cœur : reconquête, sentiments, rupture, rencontre, crise de couple.</p>
             </div>
-            <div className="bg-purple-50 rounded-xl p-6">
-              <div className="text-3xl mb-3">✅</div>
-              <h3 className="font-bold text-lg mb-2">Voyants Sélectionnés</h3>
-              <p className="text-gray-600 text-sm">Chaque voyant passe un processus de vérification rigoureux : minimum 5 ans d&apos;expérience, avis clients authentiques et engagement éthique.</p>
+            <div className="rounded-xl bg-purple-50 p-4">
+              <h3 className="mb-1 font-bold">✅ Voyants sélectionnés</h3>
+              <p className="text-sm text-gray-600">Minimum 5 ans d’expérience, avis clients authentiques et engagement éthique.</p>
             </div>
-            <div className="bg-purple-50 rounded-xl p-6">
-              <div className="text-3xl mb-3">💬</div>
-              <h3 className="font-bold text-lg mb-2">Réponses Franches</h3>
-              <p className="text-gray-600 text-sm">Nos voyants vous disent ce qu&apos;ils voient, même quand c&apos;est difficile à entendre. Zéro promesses irréalistes, zéro vente de rituels.</p>
+            <div className="rounded-xl bg-purple-50 p-4">
+              <h3 className="mb-1 font-bold">💬 Réponses franches</h3>
+              <p className="text-sm text-gray-600">Nos voyants vous disent ce qu’ils voient, même quand c’est difficile à entendre. Zéro promesse irréaliste, zéro vente de rituels.</p>
             </div>
-            <div className="bg-purple-50 rounded-xl p-6">
-              <div className="text-3xl mb-3">🔒</div>
-              <h3 className="font-bold text-lg mb-2">Confidentialité Totale</h3>
-              <p className="text-gray-600 text-sm">Vos consultations restent strictement privées. Aucune donnée partagée, aucun historique accessible à des tiers.</p>
+            <div className="rounded-xl bg-purple-50 p-4">
+              <h3 className="mb-1 font-bold">🔒 Confidentialité totale</h3>
+              <p className="text-sm text-gray-600">Vos consultations restent strictement privées. Aucune donnée partagée, aucun historique accessible à des tiers.</p>
             </div>
           </div>
-
-          <div className="text-center">
-            <p className="text-gray-600 mb-4">Vous voulez en savoir plus sur nos méthodes et notre approche ?</p>
-            <Link href="/voyance-amour/" className="text-purple-600 hover:text-purple-800 underline font-semibold">
+          <div className="mt-6 text-center">
+            <Link href="/voyance-amour/" className="font-semibold text-purple-700 underline hover:text-purple-900">
               Découvrir notre approche de la voyance amoureuse →
             </Link>
           </div>
+          <div className="mt-8">
+            <TrustBadges />
+          </div>
         </div>
       </section>
 
-      {/* Trust Badges Section */}
-      <section className="py-16 px-4 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <TrustBadges />
-        </div>
-      </section>
-
-      {/* Client Testimonials */}
+      {/* Testimonials — 6 → 3. At 476px each, the other three cost a full
+          screen and a half for no additional persuasion. */}
       <section className="bg-gradient-to-br from-purple-50 to-pink-50">
         <TestimonialSection
-          title="Ce Que Disent Nos Clients"
-          subtitle="Des milliers de personnes ont déjà trouvé leurs réponses grâce à nos voyants experts"
-          limit={6}
+          title="Ce que disent nos clients"
+          subtitle="Des retours de personnes venues avec une question sentimentale précise"
+          limit={3}
           showVoyantName={true}
         />
       </section>
 
-      {/* FAQ Section */}
-      <section className="py-16 px-4 bg-white">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-12">Questions Fréquentes sur VoyantLove</h2>
-          <div className="space-y-6">
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Comment fonctionne VoyantLove ?</h3>
-              <p className="text-gray-700 leading-relaxed">VoyantLove est une plateforme de consultation avec des voyants spécialisés en questions sentimentales. Vous choisissez votre situation (reconquête, sentiments, rupture, rencontre, crise de couple), explorez nos guidances gratuites, puis réservez une consultation privée avec un voyant expert si vous souhaitez une analyse personnalisée.</p>
-            </div>
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Comment sont sélectionnés les voyants VoyantLove ?</h3>
-              <p className="text-gray-700 leading-relaxed">Chaque voyant passe un processus de sélection rigoureux. Nous vérifions un minimum de <strong>5 ans d&apos;expérience</strong> en guidance sentimentale, la qualité des <strong>avis clients</strong>, et l&apos;engagement à respecter notre charte éthique : pas de promesses irréalistes, pas de vente de rituels, et une posture bienveillante.</p>
-            </div>
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Combien coûte une consultation sur VoyantLove ?</h3>
-              <p className="text-gray-700 leading-relaxed">Les tarifs varient selon le voyant choisi et la durée de la consultation. Nous offrons <strong>10 minutes gratuites</strong> pour découvrir le service. Nos guidances en ligne (reconquête, sentiments, rupture, etc.) sont entièrement gratuites et accessibles sans inscription.</p>
-            </div>
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Mes consultations sont-elles confidentielles ?</h3>
-              <p className="text-gray-700 leading-relaxed">Oui, totalement. Vos consultations restent strictement privées. Aucune donnée personnelle n&apos;est partagée avec des tiers, et votre historique de consultation n&apos;est accessible qu&apos;à vous. Nous respectons le <strong>RGPD</strong> et les normes européennes de protection des données.</p>
-            </div>
-            <div className="border-b border-gray-200 pb-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Quelle différence entre les guidances gratuites et une consultation privée ?</h3>
-              <p className="text-gray-700 leading-relaxed">Nos guidances gratuites sont des analyses générales par situation qui vous donnent des repères et des conseils. Une <strong>consultation privée</strong> est un échange individuel avec un voyant qui analyse votre situation spécifique : les sentiments en jeu, les blocages, le timing. C&apos;est la différence entre lire un guide et avoir un GPS personnalisé.</p>
-            </div>
-            <div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Peut-on consulter par téléphone ou par chat ?</h3>
-              <p className="text-gray-700 leading-relaxed">Oui, nos voyants sont disponibles par <strong>téléphone</strong> et par <strong>chat en ligne</strong>. Choisissez le mode qui vous met le plus à l&apos;aise. La qualité de la lecture est identique quel que soit le canal, ce qui compte, c&apos;est la connexion entre vous et le voyant.</p>
-            </div>
+      {/* FAQ — same six answers, same FAQPage schema (built from the same
+          array above), but collapsed. The text stays in the DOM for crawlers;
+          only its rendered height goes away. */}
+      <section className="bg-white px-4 py-10">
+        <div className="mx-auto max-w-4xl">
+          <h2 className="mb-6 text-center text-2xl font-bold sm:text-3xl">
+            Questions fréquentes sur VoyantLove
+          </h2>
+          <div className="divide-y divide-gray-200 border-y border-gray-200">
+            {FAQ_ITEMS.map((item) => (
+              <details key={item.q} className="group py-3">
+                <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-semibold text-gray-900">
+                  <h3 className="text-base">{item.q}</h3>
+                  <span className="shrink-0 text-purple-700 transition-transform group-open:rotate-45" aria-hidden>
+                    +
+                  </span>
+                </summary>
+                <p className="mt-2 text-sm leading-relaxed text-gray-700">{item.a}</p>
+              </details>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* CTA Footer */}
-      <section className="bg-gradient-to-r from-brand-purple to-brand-purple-dark text-white py-16 px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-4">
-            Besoin d'une Guidance Personnalisée ?
+      {/* Closing CTA */}
+      <section className="bg-gradient-to-r from-brand-purple to-brand-purple-dark px-4 py-10 text-white">
+        <div className="mx-auto max-w-4xl text-center">
+          <h2 className="mb-3 text-2xl font-bold sm:text-3xl">
+            Besoin d’une guidance personnalisée ?
           </h2>
-          <p className="text-lg mb-8 opacity-90">
-            Consultez un voyant spécialisé en amour pour une analyse 100% adaptée à votre situation unique
+          <p className="mb-6 opacity-90">
+            Consultez un voyant spécialisé en amour pour une analyse adaptée à votre situation.
           </p>
-          <div className="flex gap-4 justify-center flex-wrap">
-            <DynamicCTAButton
-              label="Consulter un Voyant Maintenant"
-              source="homepage-cta-primary"
-              className="bg-white text-brand-purple px-8 py-4 rounded-lg font-semibold hover:shadow-lg transition"
-              voyantIndex={0}
-            />
-            <DynamicCTAButton
-              label="Tirage Tarot Personnalisé"
-              source="homepage-cta-secondary"
-              className="bg-transparent border-2 border-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-brand-purple transition"
-              voyantIndex={1}
-            />
-          </div>
+          <DynamicCTAButton
+            label="Consulter un voyant maintenant"
+            source="homepage-cta-primary"
+            className="inline-block rounded-lg bg-white px-8 py-4 font-semibold text-brand-purple shadow-md transition hover:shadow-lg"
+            voyantIndex={0}
+          />
           <div className="mt-6">
             <TrustBadges variant="compact" />
           </div>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="bg-gray-800 text-white py-8 px-4">
-        <div className="max-w-6xl mx-auto text-center">
-          <p className="mb-4">© 2026 VoyantLove.fr, Vos Voyants Spécialisés en Amour</p>
-          <div className="flex gap-6 justify-center text-sm text-gray-400">
-            <Link href="/a-propos/" className="hover:text-white">À propos</Link>
-            <Link href="/mentions-legales/" className="hover:text-white">Mentions légales</Link>
-            <Link href="/confidentialite/" className="hover:text-white">Confidentialité</Link>
-            <Link href="/contact/" className="hover:text-white">Contact</Link>
-          </div>
-        </div>
-      </footer>
+      {/* The page-local <footer> that used to sit here duplicated SiteFooter
+          from app/layout.tsx — two footers, two copyright lines, two sets of
+          legal links. Removed. */}
     </main>
   );
 }

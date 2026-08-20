@@ -65,7 +65,15 @@ test('homepage: adds gender-inclusive "voyante" coverage without copying /voyanc
   assert.match(description, /voyante/i, 'description must mention "voyante" for query coverage');
   assert.ok(description.length <= MAX_DESCRIPTION_LENGTH, `description must fit the SERP budget, got ${description.length} chars`);
 
-  assert.match(source, /Vos Voyants et Voyantes Sp[ée]cialis[ée]s en Amour/, 'hero subheading must be gender-inclusive');
+  // What this guards is the gender-inclusive COVERAGE ("voyante" has its own
+  // search demand), not one particular sentence. The original assertion pinned
+  // the exact title-cased string "Vos Voyants et Voyantes Spécialisés en
+  // Amour", which the repo's move to French sentence case made unmaintainable.
+  assert.match(
+    source,
+    /voyants et voyantes sp[ée]cialis[ée]s en amour/i,
+    'hero subheading must be gender-inclusive (cover "voyantes", not just "voyants")'
+  );
 
   // Commercial plumbing this task must not touch.
   assert.match(source, /<DynamicCTAButton\s+[\s\S]*?source="homepage-hero-primary"/, 'primary hero CTA wiring must be preserved');
@@ -77,11 +85,15 @@ test('nouvelle-rencontre: title fits the SERP budget so the "voyance rencontre" 
   const title = extractQuoted(source, 'title');
   const rendered = title + BRAND_SUFFIX;
   assert.ok(rendered.length <= MAX_TITLE_LENGTH, `title+suffix must fit the SERP budget, got ${rendered.length} chars: "${rendered}"`);
-  assert.match(title, /^Voyance Rencontre/, 'title must still lead with the exact ranking query');
+  // Case-insensitive on purpose. What matters is that the title LEADS with the
+  // exact ranking query; Google matches queries case-insensitively. Pinning the
+  // capital R made this assertion fail the moment French headings moved to
+  // sentence case, which is a house convention, not an SEO regression.
+  assert.match(title, /^Voyance rencontre/i, 'title must still lead with the exact ranking query');
 
   const description = extractQuoted(source, 'description');
   assert.ok(description.length <= MAX_DESCRIPTION_LENGTH, `description must fit the SERP budget, got ${description.length} chars`);
-  assert.match(description, /^Voyance rencontre/, 'description must still lead with the exact ranking query');
+  assert.match(description, /^Voyance rencontre/i, 'description must still lead with the exact ranking query');
 });
 
 test('problemes-communication-couple: H1 matches the title\'s exact "communication couple difficile" phrasing', () => {
@@ -90,7 +102,8 @@ test('problemes-communication-couple: H1 matches the title\'s exact "communicati
   // This page renders through the shared ContentPage shell (see
   // components/ContentPage.tsx): the <h1> is rendered by the shell from
   // `config.header.h1`, not written literally in this file's source.
-  assert.match(source, /h1:\s*'Communication Couple Difficile/, 'H1 must lead with the exact low-confidence query phrase');
+  // Case-insensitive: see the note on the nouvelle-rencontre title above.
+  assert.match(source, /h1:\s*'Communication couple difficile/i, 'H1 must lead with the exact low-confidence query phrase');
 
   // dateModified for this Article page must stay pinned (not today's date)
   // unless the primary content actually changed — c84d7d9 fixed the bug

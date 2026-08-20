@@ -42,3 +42,61 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--brand-purple-dark);
 }
+
+/* ---------------------------------------------------------------------------
+   Voyant rails — horizontal, CSS-native scroll-snap.
+
+   --spv = "slots per view": how many cards fit in the viewport. The fractional
+   value on mobile (2.2) is deliberate — the 0.2 leaves a sliver of the next
+   card visible at the right edge, which is the only reliable affordance that
+   the row scrolls. A whole number reads as a finished grid and nobody swipes.
+
+   No JS carousel: native overflow scrolling gives us momentum, keyboard
+   support and RTL for free, and it costs 0 KB.
+   --------------------------------------------------------------------------- */
+.vl-rail {
+  --spv: 2.2;
+  --vl-rail-gap: 0.75rem;
+  display: flex;
+  gap: var(--vl-rail-gap);
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  /* Bleed to the viewport edge on mobile so the peeking card is not cut off by
+     the page gutter, while the first card still lines up with the text above. */
+  padding-inline: 1rem;
+  margin-inline: -1rem;
+  padding-bottom: 0.5rem;
+}
+
+.vl-rail::-webkit-scrollbar {
+  display: none;
+}
+
+.vl-rail > * {
+  flex: 0 0 calc((100% - (var(--spv) - 1) * var(--vl-rail-gap)) / var(--spv));
+  scroll-snap-align: start;
+}
+
+@media (min-width: 640px) {
+  .vl-rail {
+    --spv: 3.2;
+  }
+}
+
+@media (min-width: 1024px) {
+  .vl-rail {
+    --spv: 5;
+    padding-inline: 0;
+    margin-inline: 0;
+  }
+}
+
+/* A rail is a scrollable region, so it is focusable for keyboard users; make
+   that focus visible rather than suppressing the outline. */
+.vl-rail:focus-visible {
+  outline: 2px solid var(--brand-purple);
+  outline-offset: 4px;
+}
