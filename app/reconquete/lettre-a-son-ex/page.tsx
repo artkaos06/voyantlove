@@ -16,7 +16,7 @@ const config: ContentPageConfig = {
     { name: 'Lettre à son Ex', url: 'https://www.voyantlove.fr/reconquete/lettre-a-son-ex/' },
   ],
   header: {
-    emoji: '💜',
+    emoji: '',
     h1: 'Écrire une lettre à son ex : guide voyance',
     subtitle: 'Les mots justes pour toucher le cœur de votre ex selon la voyance',
     gradient: 'from-purple-600 via-purple-700 to-indigo-600',
@@ -27,10 +27,10 @@ const config: ContentPageConfig = {
   },
   accentText: 'text-purple-600',
   stats: [
-    { icon: '⭐', value: '4.9/5', label: '312 Avis' },
+    { icon: '', value: '4.9/5', label: '312 Avis' },
     { icon: '✉️', value: '78%', label: 'Taux de réponse' },
-    { icon: '⏰', value: '4-6 sem', label: 'Délai idéal' },
-    { icon: '🔮', value: '15 ans', label: 'Expérience' },
+    { icon: '', value: '4-6 sem', label: 'Délai idéal' },
+    { icon: '', value: '15 ans', label: 'Expérience' },
   ],
   eeat: { colorScheme: 'purple', method: 'Guidance voyance pour la rédaction de lettre de reconquête' },
   cta: { topic: 'reconquete', slug: 'lettre-a-son-ex' },
@@ -83,7 +83,7 @@ export default function LettreASonExPage() {
         <VoyantRecommendations topic="reconquete" limit={3} showOnlineFirst={true} source="lettre-a-son-ex-cards-top" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">🔮 Ce que le Tarot Révèle avant d'Écrire</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Ce que le Tarot Révèle avant d'Écrire</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Avant de prendre la plume, le tarot de reconquête analyse l'état émotionnel de votre ex, sa réceptivité à recevoir une lettre, et les thèmes à aborder pour maximiser l'impact de vos mots.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Le <strong>tirage de guidance</strong> avant la rédaction d'une lettre est une étape cruciale que beaucoup négligent. Pourtant, écrire sans connaître l'état émotionnel de votre <strong>ex</strong> revient à naviguer sans boussole. Le <strong>tarot amoureux</strong> vous offre cette clarté indispensable en révélant les courants souterrains qui agitent encore votre relation.
@@ -105,7 +105,7 @@ export default function LettreASonExPage() {
         </section>
 
         <section className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-8 mb-8 border-2 border-purple-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">✍️ Les 5 Éléments d'une Lettre qui Touche le Cœur</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Les 5 Éléments d'une Lettre qui Touche le Cœur</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Une lettre de reconquête efficace contient cinq éléments essentiels : la reconnaissance sincère, l'évolution personnelle, les souvenirs positifs, la vision d'avenir, et le respect de la liberté de l'autre.</p>
           <div className="space-y-6">
             <div className="flex items-start gap-4">
@@ -149,7 +149,7 @@ export default function LettreASonExPage() {
         <VoyantQuickCTA topic="reconquete" source="lettre-a-son-ex-banner-mid" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">⏰ Le Timing Idéal pour Envoyer votre Lettre</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Le Timing Idéal pour Envoyer votre Lettre</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le moment d'envoi de votre lettre est aussi important que son contenu. La voyance identifie trois fenêtres favorables : après le silence radio, pendant Vénus rétrograde, et lorsque Mercure transite favorablement votre thème natal.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Beaucoup de personnes écrivent des lettres magnifiques qui échouent simplement parce qu'elles arrivent au mauvais moment. Votre <strong>ex</strong> peut être dans une phase de colère, de déni ou de reconstruction où même les mots les plus sincères rebondissent sans pénétrer. La <strong>voyance</strong> vous permet d'identifier les fenêtres d'ouverture émotionnelle.
@@ -171,7 +171,7 @@ export default function LettreASonExPage() {
         </section>
 
         <section className="bg-red-50 border-2 border-red-200 rounded-xl p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">❌ Les Erreurs Fatales dans une Lettre à son Ex</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Les Erreurs Fatales dans une Lettre à son Ex</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Certaines erreurs dans une lettre de reconquête peuvent ruiner définitivement vos chances. Voici les pièges à éviter absolument selon les retours de la voyance amoureuse.</p>
           <div className="space-y-3">
             <div className="flex items-start gap-3">

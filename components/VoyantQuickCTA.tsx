@@ -76,10 +76,10 @@ export default function VoyantQuickCTA({ topic, source = 'quick-cta' }: VoyantQu
     <div className={`bg-gradient-to-r ${colors.bg} rounded-xl p-6 mb-8 border-l-4 ${colors.border} shadow-md`}>
       <div className="flex flex-col md:flex-row items-start md:items-center gap-6">
         <div className="flex items-start gap-4 flex-1">
-          <div className="text-5xl flex-shrink-0">🔮</div>
+          <div className="text-5xl flex-shrink-0"></div>
           <div>
             <h3 className="font-bold text-xl text-gray-900 mb-2">
-              ⚡ Voyant disponible maintenant
+              Voyant disponible maintenant
             </h3>
             <p className="text-gray-700 mb-3">
               {selectedVoyant.VOYANT.charAt(0).toUpperCase() + selectedVoyant.VOYANT.slice(1)} est en ligne et peut vous guider immédiatement
@@ -87,17 +87,17 @@ export default function VoyantQuickCTA({ topic, source = 'quick-cta' }: VoyantQu
             <div className="flex flex-wrap gap-2 text-sm text-gray-600">
               {selectedVoyant.TEL === '1' && (
                 <span className="bg-white px-3 py-1 rounded-full">
-                  📞 {parseFloat(selectedVoyant.T_TEL).toFixed(2)}€/min
+                  {parseFloat(selectedVoyant.T_TEL).toFixed(2)}€/min
                 </span>
               )}
               {selectedVoyant.CHAT === '1' && (
                 <span className="bg-white px-3 py-1 rounded-full">
-                  💬 {parseFloat(selectedVoyant.T_CHAT).toFixed(2)}€/min
+                  {parseFloat(selectedVoyant.T_CHAT).toFixed(2)}€/min
                 </span>
               )}
               {selectedVoyant.MAIL === '1' && (
                 <span className="bg-white px-3 py-1 rounded-full">
-                  📧 {parseFloat(selectedVoyant.MAIL_S).toFixed(0)}€
+                  {parseFloat(selectedVoyant.MAIL_S).toFixed(0)}€
                 </span>
               )}
             </div>
@@ -112,7 +112,7 @@ export default function VoyantQuickCTA({ topic, source = 'quick-cta' }: VoyantQu
             onClick={handleAffiliateClick}
             className={`block w-full md:w-auto text-center bg-gradient-to-r ${colors.button} text-white font-semibold px-8 py-4 rounded-lg shadow-md hover:shadow-xl transition-all`}
           >
-            🔮 Consulter maintenant
+            Consulter maintenant
           </a>
           <p className="text-xs text-gray-600 text-center mt-2">
             ✓ {selectedVoyant.EVAL} avis clients • ✓ Paiement sécurisé
@@ -123,7 +123,7 @@ export default function VoyantQuickCTA({ topic, source = 'quick-cta' }: VoyantQu
       {selectedVoyant.LASTEVAL && (
         <div className="mt-4 pt-4 border-t border-gray-300/50">
           <p className="text-sm text-gray-700 italic line-clamp-2">
-            💬 &quot;{selectedVoyant.LASTEVAL}&quot;
+            &quot;{selectedVoyant.LASTEVAL}&quot;
           </p>
         </div>
       )}

@@ -76,7 +76,7 @@ export default function AProposPage() {
 
             <div className="bg-white rounded-xl shadow-sm p-6 border border-gray-100">
               <div className="flex items-center gap-4 mb-4">
-                <div className="w-14 h-14 bg-purple-100 rounded-full flex items-center justify-center text-2xl">🔮</div>
+                <div className="w-14 h-14 bg-purple-100 rounded-full flex items-center justify-center text-2xl"></div>
                 <div>
                   <h3 className="font-bold text-gray-900 text-lg">Sibylle Moreau</h3>
                   <p className="text-purple-600 text-sm font-medium">Rédactrice en chef &amp; Tarologue</p>
@@ -90,7 +90,7 @@ export default function AProposPage() {
 
             <div className="bg-white rounded-xl shadow-sm p-6 border border-gray-100">
               <div className="flex items-center gap-4 mb-4">
-                <div className="w-14 h-14 bg-indigo-100 rounded-full flex items-center justify-center text-2xl">⭐</div>
+                <div className="w-14 h-14 bg-indigo-100 rounded-full flex items-center justify-center text-2xl"></div>
                 <div>
                   <h3 className="font-bold text-gray-900 text-lg">Kalinda Vasseur</h3>
                   <p className="text-indigo-600 text-sm font-medium">Astrologue &amp; Spécialiste Compatibilité</p>
@@ -104,7 +104,7 @@ export default function AProposPage() {
 
             <div className="bg-white rounded-xl shadow-sm p-6 border border-gray-100">
               <div className="flex items-center gap-4 mb-4">
-                <div className="w-14 h-14 bg-rose-100 rounded-full flex items-center justify-center text-2xl">💫</div>
+                <div className="w-14 h-14 bg-rose-100 rounded-full flex items-center justify-center text-2xl"></div>
                 <div>
                   <h3 className="font-bold text-gray-900 text-lg">Ella Fontaine</h3>
                   <p className="text-rose-600 text-sm font-medium">Médium &amp; Spécialiste Reconquête</p>
@@ -118,7 +118,7 @@ export default function AProposPage() {
 
             <div className="bg-white rounded-xl shadow-sm p-6 border border-gray-100">
               <div className="flex items-center gap-4 mb-4">
-                <div className="w-14 h-14 bg-amber-100 rounded-full flex items-center justify-center text-2xl">🕯️</div>
+                <div className="w-14 h-14 bg-amber-100 rounded-full flex items-center justify-center text-2xl"></div>
                 <div>
                   <h3 className="font-bold text-gray-900 text-lg">Marc-Antoine Dulac</h3>
                   <p className="text-amber-600 text-sm font-medium">Numérologue &amp; Rédacteur</p>
@@ -177,17 +177,17 @@ export default function AProposPage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">Nos Valeurs</h2>
           <div className="grid md:grid-cols-3 gap-6">
             <div className="bg-white rounded-xl shadow-sm p-6 border border-gray-100 text-center">
-              <div className="text-4xl mb-3">🤝</div>
+              <div className="text-4xl mb-3"></div>
               <h3 className="font-bold text-gray-900 mb-2">Honnêteté</h3>
               <p className="text-gray-600 text-sm">Un bon voyant dit ce qu&apos;il voit, même si ce n&apos;est pas ce que vous voulez entendre. Nous privilégions la vérité au réconfort de façade.</p>
             </div>
             <div className="bg-white rounded-xl shadow-sm p-6 border border-gray-100 text-center">
-              <div className="text-4xl mb-3">🛡️</div>
+              <div className="text-4xl mb-3"></div>
               <h3 className="font-bold text-gray-900 mb-2">Protection</h3>
               <p className="text-gray-600 text-sm">Nous dénonçons les pratiques abusives : faux retours d&apos;affection, maraboutage, dépendance à la consultation. La voyance doit libérer, pas enchaîner.</p>
             </div>
             <div className="bg-white rounded-xl shadow-sm p-6 border border-gray-100 text-center">
-              <div className="text-4xl mb-3">🌱</div>
+              <div className="text-4xl mb-3"></div>
               <h3 className="font-bold text-gray-900 mb-2">Libre arbitre</h3>
               <p className="text-gray-600 text-sm">La voyance éclaire des probabilités, elle ne dicte pas votre avenir. Vous restez toujours maître de vos décisions sentimentales.</p>
             </div>

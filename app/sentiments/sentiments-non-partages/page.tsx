@@ -16,7 +16,7 @@ const config: ContentPageConfig = {
     { name: 'Sentiments Non Partagés', url: 'https://www.voyantlove.fr/sentiments/sentiments-non-partages/' },
   ],
   header: {
-    emoji: '💔',
+    emoji: '',
     h1: 'Sentiments non partagés : comment avancer',
     subtitle: 'Guidance voyance pour traverser l\'amour non réciproque et retrouver la paix',
     gradient: 'from-pink-500 via-rose-600 to-pink-700',
@@ -27,10 +27,10 @@ const config: ContentPageConfig = {
   },
   accentText: 'text-pink-600',
   stats: [
-    { icon: '⭐', value: '4.8/5', label: '298 Avis' },
-    { icon: '💪', value: '91%', label: 'Ont avancé' },
-    { icon: '🔮', value: '25 min', label: 'Consultation' },
-    { icon: '✨', value: '15 ans', label: 'Expérience' },
+    { icon: '', value: '4.8/5', label: '298 Avis' },
+    { icon: '', value: '91%', label: 'Ont avancé' },
+    { icon: '', value: '25 min', label: 'Consultation' },
+    { icon: '', value: '15 ans', label: 'Expérience' },
   ],
   eeat: { colorScheme: 'pink', method: 'Tarot des sentiments et guidance émotionnelle' },
   cta: { topic: 'sentiments', slug: 'sentiments-non-partages' },
@@ -82,7 +82,7 @@ export default function SentimentsNonPartagesPage() {
         <VoyantRecommendations topic="sentiments" limit={3} showOnlineFirst={true} source="sentiments-non-partages-cards-top" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">🔮 Ce que le Tarot Révèle sur l&apos;Amour Non Partagé</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Ce que le Tarot Révèle sur l&apos;Amour Non Partagé</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le tarot des sentiments analyse les dynamiques profondes d&apos;un amour non réciproque : les raisons cachées de la non-réciprocité, les illusions à dépasser, et les chemins d&apos;évolution possibles.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Quand un consultant souffre d&apos;<strong>amour non partagé</strong>, le <strong>tarot</strong> apporte des réponses que ni les amis ni la logique ne peuvent offrir. Les cartes plongent au coeur de la dynamique relationnelle et révèlent des vérités parfois difficiles mais toujours libératrices.
@@ -108,7 +108,7 @@ export default function SentimentsNonPartagesPage() {
         </section>
 
         <section className="bg-gradient-to-br from-pink-50 to-rose-50 rounded-xl p-8 mb-8 border-2 border-pink-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">💫 Pourquoi On Tombe Amoureux de la Mauvaise Personne</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Pourquoi On Tombe Amoureux de la Mauvaise Personne</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">L&apos;attirance pour des personnes inaccessibles cache souvent des schémas inconscients. La voyance et l&apos;astrologie révèlent les racines profondes de ces choix amoureux répétitifs.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             L&apos;<strong>amour non partagé</strong> n&apos;est pas un accident. En <strong>voyance</strong>, on observe que les personnes qui vivent régulièrement des <strong>sentiments non réciproques</strong> suivent souvent des schémas inconscients. Ce n&apos;est pas une question de malchance mais de programmation émotionnelle profonde qu&apos;il est possible de comprendre et de transformer.
@@ -132,7 +132,7 @@ export default function SentimentsNonPartagesPage() {
         <VoyantQuickCTA topic="sentiments" source="sentiments-non-partages-banner-mid" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">🌱 5 Étapes pour Guérir et Avancer</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">5 Étapes pour Guérir et Avancer</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">La guérison d&apos;un amour non partagé suit un processus en cinq étapes : accepter la réalité, autoriser le deuil, se reconnecter à soi, transformer l&apos;expérience et s&apos;ouvrir au renouveau.</p>
           <div className="space-y-6">
             <div className="flex items-start gap-4">
@@ -174,7 +174,7 @@ export default function SentimentsNonPartagesPage() {
         </section>
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">🌙 L&apos;Astrologie et l&apos;Amour Non Réciproque</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">L&apos;Astrologie et l&apos;Amour Non Réciproque</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">L&apos;astrologie explique pourquoi certaines périodes nous rendent plus vulnérables aux amours impossibles et comment les transits planétaires influencent nos choix sentimentaux.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             En <strong>astrologie</strong>, les périodes d&apos;<strong>amour non partagé</strong> ne sont pas aléatoires. Elles correspondent souvent à des transits planétaires spécifiques qui intensifient notre besoin d&apos;amour tout en nous orientant vers des cibles inaccessibles. Comprendre ces cycles permet de les traverser avec plus de conscience et moins de souffrance.

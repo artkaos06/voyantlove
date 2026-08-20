@@ -16,7 +16,7 @@ const config: ContentPageConfig = {
     { name: 'Cartomancie Amour', url: 'https://www.voyantlove.fr/methodes-voyance/cartomancie-amour/' },
   ],
   header: {
-    emoji: '🎴',
+    emoji: '',
     h1: 'Cartomancie amour',
     subtitle: 'L\'art ancestral des cartes au service de votre vie sentimentale',
     gradient: 'from-teal-600 via-cyan-600 to-blue-700',
@@ -28,10 +28,10 @@ const config: ContentPageConfig = {
   },
   accentText: 'text-teal-700',
   stats: [
-    { icon: '🎴', value: '36 cartes', label: 'Petit lenormand' },
-    { icon: '📜', value: '19e siècle', label: 'Origine en France' },
-    { icon: '💞', value: 'Direct', label: 'Réponses concrètes' },
-    { icon: '🔗', value: 'Combinatoire', label: 'Lecture par association' },
+    { icon: '', value: '36 cartes', label: 'Petit lenormand' },
+    { icon: '', value: '19e siècle', label: 'Origine en France' },
+    { icon: '', value: 'Direct', label: 'Réponses concrètes' },
+    { icon: '', value: 'Combinatoire', label: 'Lecture par association' },
   ],
   eeat: { colorScheme: 'teal', method: 'Cartomancie amoureuse, Petit Lenormand et cartes traditionnelles' },
   cta: { topic: 'methodes-voyance', slug: 'cartomancie-amour' },
@@ -80,7 +80,7 @@ export default function CartomancieAmourPage() {
 
         {/* Section 1: Qu'est-ce que la cartomancie */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">📖 Qu&apos;est-ce que la Cartomancie Amoureuse ?</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Qu&apos;est-ce que la Cartomancie Amoureuse ?</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">La cartomancie est l&apos;art de lire des cartes ordinaires ou du Petit Lenormand pour révéler les dynamiques amoureuses, une pratique distincte du tarot par son approche plus concrète et combinatoire.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             La <strong>cartomancie</strong> désigne, au sens strict, la divination par les cartes en général, mais dans l&apos;usage courant français, elle renvoie surtout à la tradition du <strong>Petit Lenormand</strong> et du <strong>jeu de 32 cartes</strong>, distincte du tarot par son histoire et sa méthode de lecture. Cette pratique remonte au dix-huitième siècle, popularisée en France par des figures comme <strong>Etteilla</strong>, premier cartomancien professionnel connu, puis par la légendaire <strong>Marie-Anne Lenormand</strong>, consultée sous le Premier Empire par des personnalités de la cour impériale.
@@ -103,18 +103,18 @@ export default function CartomancieAmourPage() {
 
         {/* Section 2: Petit Lenormand */}
         <section id="lenormand" className="bg-gradient-to-br from-teal-50 to-cyan-50 rounded-xl p-8 mb-8 border-2 border-teal-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">🎴 Le Petit Lenormand : Le Jeu de Référence en Amour</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Le Petit Lenormand : Le Jeu de Référence en Amour</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le Petit Lenormand compte 36 cartes aux symboles concrets, Cœur, Anneau, Navire, dont la combinaison offre des réponses amoureuses précises et rarement ambiguës.</p>
           <p className="text-gray-700 mb-6">
             Nommé d&apos;après Marie-Anne Lenormand bien que commercialisé après sa mort, ce jeu de <strong>36 cartes</strong> s&apos;est imposé comme la référence de la cartomancie amoureuse en France. Voici les cartes les plus scrutées lors d&apos;un tirage sentimental.
           </p>
           <div className="grid md:grid-cols-2 gap-5">
             <div className="bg-white rounded-lg p-5 border-l-4 border-rose-500">
-              <h3 className="font-bold text-lg mb-2 text-rose-700">💗 Le Cœur</h3>
+              <h3 className="font-bold text-lg mb-2 text-rose-700">Le Cœur</h3>
               <p className="text-gray-700 text-sm">La carte centrale de toute question amoureuse. Associée à l&apos;Anneau, elle annonce un engagement sincère ; associée aux Nuages, elle signale des sentiments troublés par le doute.</p>
             </div>
             <div className="bg-white rounded-lg p-5 border-l-4 border-amber-500">
-              <h3 className="font-bold text-lg mb-2 text-amber-700">💍 L&apos;Anneau</h3>
+              <h3 className="font-bold text-lg mb-2 text-amber-700">L&apos;Anneau</h3>
               <p className="text-gray-700 text-sm">Symbole d&apos;engagement et d&apos;union. Proche du Cœur, elle confirme un mariage ou des fiançailles ; isolée, elle peut simplement indiquer un accord ou une promesse.</p>
             </div>
             <div className="bg-white rounded-lg p-5 border-l-4 border-blue-500">
@@ -122,15 +122,15 @@ export default function CartomancieAmourPage() {
               <p className="text-gray-700 text-sm">Le voyage, l&apos;éloignement, parfois une rencontre venue d&apos;ailleurs. En amour, elle peut annoncer une relation à distance ou un déplacement lié à une histoire de cœur.</p>
             </div>
             <div className="bg-white rounded-lg p-5 border-l-4 border-slate-500">
-              <h3 className="font-bold text-lg mb-2 text-slate-700">☁️ Les Nuages</h3>
+              <h3 className="font-bold text-lg mb-2 text-slate-700">Les Nuages</h3>
               <p className="text-gray-700 text-sm">Confusion, malentendu, période trouble. Elle invite à la patience et à la clarification avant de tirer des conclusions sur une situation amoureuse ambiguë.</p>
             </div>
             <div className="bg-white rounded-lg p-5 border-l-4 border-red-500">
-              <h3 className="font-bold text-lg mb-2 text-red-700">🦊 Le Renard</h3>
+              <h3 className="font-bold text-lg mb-2 text-red-700">Le Renard</h3>
               <p className="text-gray-700 text-sm">Ruse, méfiance, parfois un manque de sincérité de l&apos;un des partenaires. Une carte qui invite à la vigilance plutôt qu&apos;à la confiance aveugle.</p>
             </div>
             <div className="bg-white rounded-lg p-5 border-l-4 border-emerald-500">
-              <h3 className="font-bold text-lg mb-2 text-emerald-700">🏠 La Maison</h3>
+              <h3 className="font-bold text-lg mb-2 text-emerald-700">La Maison</h3>
               <p className="text-gray-700 text-sm">Le foyer, la stabilité, la vie à deux installée. Associée au Cœur, elle annonce un amour durable qui s&apos;ancre dans le quotidien partagé.</p>
             </div>
           </div>
@@ -141,14 +141,14 @@ export default function CartomancieAmourPage() {
 
         {/* Section 3: jeu de 32 cartes */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">♥️ Le Jeu de 32 Cartes et la Symbolique des Couleurs</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Le Jeu de 32 Cartes et la Symbolique des Couleurs</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le jeu de 32 cartes ordinaires, celui de la belote, porte lui aussi une symbolique divinatoire précise en amour, chaque couleur incarnant un domaine de vie.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Avant même le Petit Lenormand, les cartomanciennes françaises lisaient l&apos;avenir dans un simple <strong>jeu de 32 cartes</strong>, celui-là même utilisé pour la belote ou le piquet. Chaque couleur y porte un domaine symbolique précis, hérité d&apos;une tradition orale transmise de génération en génération.
           </p>
           <div className="grid md:grid-cols-4 gap-4 mb-6">
             <div className="bg-red-50 rounded-lg p-4 text-center border border-red-200">
-              <div className="text-3xl mb-2">♥️</div>
+              <div className="text-3xl mb-2"></div>
               <h3 className="font-bold text-red-700 mb-1">Cœur</h3>
               <p className="text-xs text-gray-600">Amour, sentiments, famille</p>
             </div>
@@ -177,11 +177,11 @@ export default function CartomancieAmourPage() {
 
         {/* Section 4: Cartomancie vs Tarot vs Oracle */}
         <section className="bg-gradient-to-br from-cyan-50 to-blue-50 rounded-xl p-8 mb-8 border-2 border-cyan-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">⚖️ Cartomancie, Tarot ou Oracle : Que Choisir ?</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Cartomancie, Tarot ou Oracle : Que Choisir ?</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">La cartomancie excelle pour des réponses concrètes et rapides, le tarot pour une analyse psychologique profonde, l&apos;oracle pour une guidance intuitive et douce.</p>
           <div className="grid md:grid-cols-3 gap-5">
             <div className="bg-white rounded-lg p-5 border-2 border-teal-300">
-              <h3 className="font-bold text-lg mb-3 text-teal-700">🎴 Cartomancie</h3>
+              <h3 className="font-bold text-lg mb-3 text-teal-700">Cartomancie</h3>
               <div className="space-y-2 text-gray-700 text-sm">
                 <p>&bull; <strong>Force :</strong> réponses concrètes et directes</p>
                 <p>&bull; <strong>Idéal pour :</strong> confirmer une situation précise</p>
@@ -189,7 +189,7 @@ export default function CartomancieAmourPage() {
               </div>
             </div>
             <div className="bg-white rounded-lg p-5 border-2 border-indigo-300">
-              <h3 className="font-bold text-lg mb-3 text-indigo-700">🃏 Tarot</h3>
+              <h3 className="font-bold text-lg mb-3 text-indigo-700">Tarot</h3>
               <div className="space-y-2 text-gray-700 text-sm">
                 <p>&bull; <strong>Force :</strong> profondeur psychologique</p>
                 <p>&bull; <strong>Idéal pour :</strong> comprendre une dynamique complexe</p>
@@ -200,7 +200,7 @@ export default function CartomancieAmourPage() {
               </p>
             </div>
             <div className="bg-white rounded-lg p-5 border-2 border-purple-300">
-              <h3 className="font-bold text-lg mb-3 text-purple-700">✨ Oracle</h3>
+              <h3 className="font-bold text-lg mb-3 text-purple-700">Oracle</h3>
               <div className="space-y-2 text-gray-700 text-sm">
                 <p>&bull; <strong>Force :</strong> messages intuitifs et bienveillants</p>
                 <p>&bull; <strong>Idéal pour :</strong> guidance émotionnelle douce</p>
@@ -218,7 +218,7 @@ export default function CartomancieAmourPage() {
 
         {/* Section 5: Consultation */}
         <section id="consultation" className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">🧙 Consulter un Cartomancien Spécialisé en Amour</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Consulter un Cartomancien Spécialisé en Amour</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Un bon cartomancien combine la maîtrise technique du Petit Lenormand ou du jeu de 32 cartes à une intuition affinée, indispensable pour nuancer une lecture combinatoire.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             La cartomancie amoureuse demande une double compétence : la connaissance rigoureuse des significations et des combinaisons, et une sensibilité intuitive qui permet d&apos;adapter la lecture à votre situation précise. Voici comment se déroule généralement une consultation.

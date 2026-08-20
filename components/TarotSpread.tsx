@@ -70,14 +70,14 @@ export default function TarotSpread({ title, subtitle, positions, ctaSource }: T
             onClick={startDraw}
             className="w-full bg-gradient-to-r from-purple-500 to-indigo-500 hover:from-purple-400 hover:to-indigo-400 text-white font-bold py-4 rounded-lg text-lg transition-all hover:scale-[1.02] hover:shadow-lg"
           >
-            Tirer les Cartes ✨
+            Tirer les Cartes 
           </button>
         </div>
       )}
 
       {step === 'shuffle' && (
         <div className="text-center py-10">
-          <div className="text-6xl animate-spin mb-4" style={{ animationDuration: '1.5s' }}>🃏</div>
+          <div className="text-6xl animate-spin mb-4" style={{ animationDuration: '1.5s' }}></div>
           <p className="text-xl font-semibold text-purple-200 animate-pulse">Les cartes se mélangent...</p>
           {question && <p className="text-sm text-purple-300 mt-2 italic">&quot;{question}&quot;</p>}
         </div>
@@ -110,7 +110,7 @@ export default function TarotSpread({ title, subtitle, positions, ctaSource }: T
               data-analytics={`tarot-spread-cta-${ctaSource}`}
               className="inline-block bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-400 hover:to-emerald-400 text-white px-8 py-4 rounded-xl font-bold text-xl transition-all hover:scale-105 hover:shadow-xl mb-3"
             >
-              📞 01 75 75 45 82
+              01 75 75 45 82
             </a>
             <p className="text-green-300 text-sm font-semibold">10 minutes gratuites • Disponible maintenant</p>
           </div>

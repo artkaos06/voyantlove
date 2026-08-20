@@ -135,12 +135,12 @@ export default async function LPVoyantDirect({
         <p className="vd-sub">Consultation téléphonique confidentielle. Réponses claires sur l&apos;amour, le couple, l&apos;avenir.</p>
 
         <a href={`tel:${PHONE}`} className="vd-cta-btn">
-          <div className="vd-phone">📞 {PHONE_DISPLAY}</div>
+          <div className="vd-phone">{PHONE_DISPLAY}</div>
           <div className="vd-phone-sub">{av.ctaSub}</div>
         </a>
 
         <div className="vd-pricing">
-          <div className="vd-pricing-lead">💳 {OFFER.intro}, {OFFER.introPerMin}</div>
+          <div className="vd-pricing-lead">{OFFER.intro}, {OFFER.introPerMin}</div>
           <div className="vd-pricing-then">{OFFER.after} · {OFFER.payment}</div>
         </div>
 
@@ -154,7 +154,7 @@ export default async function LPVoyantDirect({
         <div className="vd-urgency">
           <div className="vd-urgency-row">{av.scarcity}</div>
           <div className="vd-urgency-row">{av.callsToday}</div>
-          <div className="vd-urgency-row">⭐ 4,7/5 satisfaction clients</div>
+          <div className="vd-urgency-row">4,7/5 satisfaction clients</div>
         </div>
 
         <div className="vd-features">
@@ -187,7 +187,7 @@ export default async function LPVoyantDirect({
 
       <div className="vd-sticky-cta">
         <div className="vd-sticky-info" style={{ whiteSpace: 'pre-line' }}>{av.stickyInfo}</div>
-        <a href={`tel:${PHONE}`}>📞 Appeler</a>
+        <a href={`tel:${PHONE}`}>Appeler</a>
       </div>
     </div>
   );

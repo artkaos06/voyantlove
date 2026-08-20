@@ -55,7 +55,7 @@ export default async function PairPage({ params }: Props) {
   const title = `Compatibilité Amoureuse ${rec.signA} ${rec.signB}`;
   const sA = signMeta(rec.signA);
   const sB = signMeta(rec.signB);
-  const hearts = '❤️'.repeat(rec.score) + '🤍'.repeat(5 - rec.score);
+  const hearts = ''.repeat(rec.score) + ''.repeat(5 - rec.score);
   const siblings = LIVE_PAIRS.filter(
     (p) => p.slug !== rec.slug && (p.signA === rec.signA || p.signB === rec.signA || p.signA === rec.signB || p.signB === rec.signB)
   ).slice(0, 4);
@@ -152,7 +152,7 @@ export default async function PairPage({ params }: Props) {
         </section>
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">❓ Questions fréquentes sur le couple {rec.signA}-{rec.signB}</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">Questions fréquentes sur le couple {rec.signA}-{rec.signB}</h2>
           <div className="space-y-6">
             {rec.faq.map((f, i) => (
               <div key={i} className={i < rec.faq.length - 1 ? 'border-b border-gray-200 pb-6' : ''}>
@@ -165,7 +165,7 @@ export default async function PairPage({ params }: Props) {
 
         {siblings.length > 0 && (
           <div className="bg-gray-100 rounded-xl p-6 mb-8">
-            <h2 className="font-bold text-lg mb-4 text-gray-900">💞 Autres compatibilités avec {rec.signA} ou {rec.signB}</h2>
+            <h2 className="font-bold text-lg mb-4 text-gray-900">Autres compatibilités avec {rec.signA} ou {rec.signB}</h2>
             <div className="space-y-2">
               {siblings.map((p) => (
                 <Link key={p.slug} href={`/compatibilite-amoureuse/${p.slug}/`} className="block text-indigo-600 hover:text-indigo-800 font-medium">

@@ -16,7 +16,7 @@ const config: ContentPageConfig = {
     { name: 'Infidélité dans le Couple', url: 'https://www.voyantlove.fr/crise-couple/infidelite-couple/' },
   ],
   header: {
-    emoji: '💔',
+    emoji: '',
     h1: 'Infidélité dans le couple',
     subtitle: 'Comprendre la trahison, cheminer vers le pardon, et reconstruire la confiance',
     gradient: 'from-red-600 via-rose-600 to-pink-600',
@@ -28,10 +28,10 @@ const config: ContentPageConfig = {
   },
   accentText: 'text-rose-600',
   stats: [
-    { icon: '💔', value: 'Réelle', label: 'Guérison possible' },
-    { icon: '🔮', value: 'Reconnue', label: 'Expertise' },
-    { icon: '❤️‍🩹', value: 'Vaste', label: 'Expérience' },
-    { icon: '⭐', value: 'Élevée', label: 'Satisfaction' },
+    { icon: '', value: 'Réelle', label: 'Guérison possible' },
+    { icon: '', value: 'Reconnue', label: 'Expertise' },
+    { icon: '‍', value: 'Vaste', label: 'Expérience' },
+    { icon: '', value: 'Élevée', label: 'Satisfaction' },
   ],
   eeat: { colorScheme: 'purple', method: 'Tarot relationnel et guidance de reconstruction' },
   cta: { topic: 'crise-couple', slug: 'infidelite-couple' },
@@ -95,7 +95,7 @@ export default function InfideliteCouplePage() {
         <VoyantRecommendations topic="crise-couple" limit={3} showOnlineFirst={true} source="infidelite-couple-cards-top" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold mb-6 text-rose-600">🔍 Comprendre l'Infidélité : Types et Causes Profondes</h2>
+          <h2 className="text-3xl font-bold mb-6 text-rose-600">Comprendre l'Infidélité : Types et Causes Profondes</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">L'infidélité prend cinq formes principales : physique occasionnelle, liaison émotionnelle, double vie, pattern chronique et combinée. Chaque type a des causes distinctes et un pronostic de reconstruction différent, du plus favorable pour une erreur isolée au plus faible pour un schéma répétitif.</p>
           <p className="text-gray-700 mb-6">
             L'<strong>infidélité</strong> n'est pas un phénomène unique. Comprendre son type et ses causes est essentiel pour décider de la suite à donner à votre relation.
@@ -170,7 +170,7 @@ export default function InfideliteCouplePage() {
         </section>
 
         <section className="bg-gradient-to-br from-rose-50 to-red-50 rounded-xl p-8 mb-8 border-2 border-rose-200">
-          <h2 className="text-3xl font-bold mb-6 text-gray-900">💔 Les 5 Étapes du Traumatisme de la Trahison</h2>
+          <h2 className="text-3xl font-bold mb-6 text-gray-900">Les 5 Étapes du Traumatisme de la Trahison</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le traumatisme de la trahison se déroule en cinq phases : choc et déni, colère, marchandage, dépression, puis acceptation. Ce processus dure en moyenne 18 à 36 mois et n'est pas linéaire -- des rechutes émotionnelles sont normales à chaque étape.</p>
           <p className="text-gray-700 mb-6">
             Découvrir l'<strong>infidélité</strong> déclenche un processus de deuil et de traumatisme en plusieurs phases. Comprendre ces étapes vous aide à normaliser vos réactions et à avancer dans la guérison.
@@ -239,7 +239,7 @@ export default function InfideliteCouplePage() {
         <VoyantQuickCTA topic="crise-couple" source="infidelite-couple-banner-mid" />
 
         <section id="reconstruction" className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold mb-6 text-rose-600">❤️‍🩹 Reconstruire le Couple Après l'Infidélité : Les 7 Piliers</h2>
+          <h2 className="text-3xl font-bold mb-6 text-rose-600">‍Reconstruire le Couple Après l'Infidélité : Les 7 Piliers</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Reconstruire après une infidélité repose sur sept piliers essentiels : transparence totale, responsabilité assumée, expression de la douleur, compréhension des causes, thérapie de couple, reconstruction de l'intimité et engagement sur la durée.</p>
           <p className="text-gray-700 mb-6">
             Si vous décidez de donner une <Link href="/reconquete/seconde-chance-amour/" className="text-rose-600 hover:text-rose-800 underline font-medium">seconde chance en amour</Link>, voici les éléments absolument essentiels pour une reconstruction authentique et durable. Sans ces piliers, vous risquez de prolonger une souffrance plutôt que de guérir.
@@ -413,7 +413,7 @@ export default function InfideliteCouplePage() {
         </section>
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold mb-6 text-rose-600">🔮 Le Tirage Tarot de l'Infidélité : 6 Positions</h2>
+          <h2 className="text-3xl font-bold mb-6 text-rose-600">Le Tirage Tarot de l'Infidélité : 6 Positions</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le tirage tarot de l'infidélité utilise six positions pour révéler la vérité sur la trahison, les circonstances, les causes karmiques, les sentiments réels du partenaire, le potentiel de reconstruction et la guidance concrète pour décider.</p>
           <p className="text-gray-700 mb-6">
             Ce <strong>tirage spécialisé</strong> révèle la vérité sur l'infidélité, les causes profondes, et surtout, le chemin vers la guérison ou la libération.
@@ -465,7 +465,7 @@ export default function InfideliteCouplePage() {
         </section>
 
         <section className="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-xl p-8 mb-8 border-2 border-indigo-200">
-          <h2 className="text-3xl font-bold mb-6 text-gray-900">🚨 Signes d'une Infidélité Possible</h2>
+          <h2 className="text-3xl font-bold mb-6 text-gray-900">Signes d'une Infidélité Possible</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Les signes d'infidélité incluent la protection excessive du téléphone, les absences inexpliquées, la distance émotionnelle soudaine et les changements d'apparence inhabituels. Ces indices ne sont pas des preuves, mais ils méritent une conversation honnête.</p>
           <p className="text-gray-700 mb-6">
             Ces signaux ne sont PAS des preuves absolues, mais des indicateurs qui méritent une conversation honnête. Évitez les accusations sans preuves, mais ne niez pas votre intuition.
@@ -518,7 +518,7 @@ export default function InfideliteCouplePage() {
         </section>
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold mb-6 text-rose-600">🤔 Rester ou Partir ? La Décision la Plus Difficile</h2>
+          <h2 className="text-3xl font-bold mb-6 text-rose-600">Rester ou Partir ? La Décision la Plus Difficile</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Après une infidélité, rester vaut la peine si le partenaire assume pleinement, coupe tout contact et accepte la thérapie. Partir est préférable en cas de trahison répétée, de refus de transparence ou si vous restez par peur plutôt que par amour.</p>
           <p className="text-gray-700 mb-6">
             C'est LA question après une infidélité. Il n'y a pas de "bonne" réponse universelle. Voici un guide pour clarifier votre décision.

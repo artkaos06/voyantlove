@@ -16,7 +16,7 @@ const config: ContentPageConfig = {
     { name: 'Médium Amour', url: 'https://www.voyantlove.fr/methodes-voyance/medium-amour/' },
   ],
   header: {
-    emoji: '🕊️',
+    emoji: '',
     h1: 'Médium amour',
     subtitle: 'La médiumnité au service de votre guidance sentimentale',
     gradient: 'from-fuchsia-700 via-purple-700 to-indigo-800',
@@ -28,10 +28,10 @@ const config: ContentPageConfig = {
   },
   accentText: 'text-purple-700',
   stats: [
-    { icon: '🕊️', value: '3 dons', label: 'Clair-perceptions' },
-    { icon: '📡', value: 'Channeling', label: 'Réception de messages' },
-    { icon: '🧘', value: 'État réceptif', label: 'Concentration profonde' },
-    { icon: '💜', value: 'Guidance', label: 'Pas une prédiction figée' },
+    { icon: '', value: '3 dons', label: 'Clair-perceptions' },
+    { icon: '', value: 'Channeling', label: 'Réception de messages' },
+    { icon: '', value: 'État réceptif', label: 'Concentration profonde' },
+    { icon: '', value: 'Guidance', label: 'Pas une prédiction figée' },
   ],
   eeat: { colorScheme: 'purple', method: 'Médiumnité et guidance sentimentale par channeling' },
   cta: { topic: 'methodes-voyance', slug: 'medium-amour' },
@@ -85,22 +85,22 @@ export default function MediumAmourPage() {
 
         {/* Section 1: Dons médiumniques */}
         <section id="dons" className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">✨ Les Différents Dons Médiumniques Utilisés en Amour</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Les Différents Dons Médiumniques Utilisés en Amour</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Clairvoyance, clairaudience et clairsentience sont les trois canaux de perception principaux qu&apos;un médium mobilise pour éclairer votre vie sentimentale.</p>
           <p className="text-gray-700 mb-6">
             La <strong>médiumnité</strong> ne désigne pas un don unique, mais un ensemble de facultés de perception que chaque praticien développe différemment. Voici les trois canaux les plus mobilisés en consultation amoureuse.
           </p>
           <div className="space-y-5">
             <div className="bg-purple-50 border-l-4 border-purple-500 p-5 rounded-lg">
-              <h3 className="font-bold text-lg mb-2 text-purple-800">👁️ La Clairvoyance</h3>
+              <h3 className="font-bold text-lg mb-2 text-purple-800">La Clairvoyance</h3>
               <p className="text-gray-700 text-sm">La perception d&apos;<strong>images</strong> et de symboles liés à votre situation amoureuse : le visage ou l&apos;attitude d&apos;une personne, une scène évocatrice, l&apos;ambiance d&apos;une relation. C&apos;est le don le plus souvent associé au mot « voyance » lui-même.</p>
             </div>
             <div className="bg-fuchsia-50 border-l-4 border-fuchsia-500 p-5 rounded-lg">
-              <h3 className="font-bold text-lg mb-2 text-fuchsia-800">👂 La Clairaudience</h3>
+              <h3 className="font-bold text-lg mb-2 text-fuchsia-800">La Clairaudience</h3>
               <p className="text-gray-700 text-sm">La perception de <strong>mots, phrases ou noms</strong> en lien avec votre question : un médium clairaudient peut « entendre » intérieurement une information précise qui vient préciser sa lecture de votre situation.</p>
             </div>
             <div className="bg-indigo-50 border-l-4 border-indigo-500 p-5 rounded-lg">
-              <h3 className="font-bold text-lg mb-2 text-indigo-800">💓 La Clairsentience</h3>
+              <h3 className="font-bold text-lg mb-2 text-indigo-800">La Clairsentience</h3>
               <p className="text-gray-700 text-sm">La capacité à <strong>ressentir physiquement ou émotionnellement</strong> l&apos;énergie d&apos;une situation ou d&apos;une personne : un médium clairsentient peut percevoir la tension, l&apos;affection ou l&apos;ambivalence d&apos;un partenaire comme s&apos;il la vivait lui-même l&apos;espace d&apos;un instant.</p>
             </div>
           </div>
@@ -110,7 +110,7 @@ export default function MediumAmourPage() {
         </section>
 
         <section id="sans-support" className="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-xl p-8 mb-8 border-2 border-indigo-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">🕊️ Médium Sans Support en Amour : une Perception Sans Outil</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Médium Sans Support en Amour : une Perception Sans Outil</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Un médium dit « sans support » ne tire ni tarot ni oracle et n’utilise pas de pendule : il s’appuie sur ses perceptions directes pour éclairer la question sentimentale.</p>
           <p className="text-gray-700 leading-relaxed mb-5">Dans une consultation amoureuse, cette approche commence généralement par une question claire et quelques éléments de contexte. Le praticien se concentre ensuite sur les images, mots, sensations ou impressions qu’il affirme recevoir. Il les restitue au fil de l’échange, puis la personne qui consulte peut demander des précisions. L’absence de cartes ne signifie donc pas une séance muette ni une réponse instantanée sans contexte.</p>
           <div className="grid md:grid-cols-2 gap-5 mb-5">
@@ -128,7 +128,7 @@ export default function MediumAmourPage() {
 
         {/* Section 2: Ce qu'un médium peut apporter */}
         <section className="bg-gradient-to-br from-purple-50 to-fuchsia-50 rounded-xl p-8 mb-8 border-2 border-purple-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">💜 Ce qu&apos;un Médium Peut (et ne Peut pas) Vous Dire en Amour</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Ce qu&apos;un Médium Peut (et ne Peut pas) Vous Dire en Amour</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Un médium sérieux éclaire une énergie et une tendance, jamais une certitude absolue sur l&apos;avenir de votre couple.</p>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-white rounded-lg p-6 border-2 border-green-300">
@@ -156,11 +156,11 @@ export default function MediumAmourPage() {
 
         {/* Section 3: Médium vs autres méthodes */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">⚖️ Médium, Tarot ou Pendule : Quelle Méthode Choisir ?</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Médium, Tarot ou Pendule : Quelle Méthode Choisir ?</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le médium excelle pour ressentir une énergie et recevoir une guidance globale, le tarot pour une analyse structurée, le pendule pour une réponse binaire rapide.</p>
           <div className="grid md:grid-cols-3 gap-5">
             <div className="bg-purple-50 rounded-lg p-5 border-2 border-purple-300">
-              <h3 className="font-bold text-lg mb-3 text-purple-700">🕊️ Médium</h3>
+              <h3 className="font-bold text-lg mb-3 text-purple-700">Médium</h3>
               <div className="space-y-2 text-gray-700 text-sm">
                 <p>&bull; Perception directe, sans support</p>
                 <p>&bull; Idéal pour ressentir une énergie globale</p>
@@ -168,7 +168,7 @@ export default function MediumAmourPage() {
               </div>
             </div>
             <div className="bg-indigo-50 rounded-lg p-5 border-2 border-indigo-300">
-              <h3 className="font-bold text-lg mb-3 text-indigo-700">🃏 Tarot</h3>
+              <h3 className="font-bold text-lg mb-3 text-indigo-700">Tarot</h3>
               <div className="space-y-2 text-gray-700 text-sm">
                 <p>&bull; Grille symbolique structurée</p>
                 <p>&bull; Idéal pour une analyse narrative détaillée</p>
@@ -178,7 +178,7 @@ export default function MediumAmourPage() {
               </p>
             </div>
             <div className="bg-rose-50 rounded-lg p-5 border-2 border-rose-300">
-              <h3 className="font-bold text-lg mb-3 text-rose-700">🔮 Pendule</h3>
+              <h3 className="font-bold text-lg mb-3 text-rose-700">Pendule</h3>
               <div className="space-y-2 text-gray-700 text-sm">
                 <p>&bull; Réponses oui/non directes</p>
                 <p>&bull; Idéal pour confirmer une intuition précise</p>
@@ -195,7 +195,7 @@ export default function MediumAmourPage() {
 
         {/* Section 4: Consultation */}
         <section id="consultation" className="bg-gradient-to-br from-fuchsia-50 to-indigo-50 rounded-xl p-8 mb-8 border-2 border-fuchsia-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">🧘 Comment se Déroule une Consultation Médiumnique Amoureuse</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Comment se Déroule une Consultation Médiumnique Amoureuse</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">La séance alterne temps d&apos;échange, moments de concentration du médium, et partage progressif des impressions perçues sur votre situation.</p>
           <div className="space-y-4">
             <div className="bg-white rounded-lg p-5 border-l-4 border-purple-400">

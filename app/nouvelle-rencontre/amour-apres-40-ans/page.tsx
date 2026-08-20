@@ -16,7 +16,7 @@ const config: ContentPageConfig = {
     { name: 'Amour apr&egrave;s 40 ans', url: 'https://www.voyantlove.fr/nouvelle-rencontre/amour-apres-40-ans/' },
   ],
   header: {
-    emoji: '♥',
+    emoji: '',
     h1: 'Trouver l’amour après 40 ans',
     subtitle: 'Voyance et guidance sentimentale pour une rencontre authentique et épanouissante',
     gradient: 'from-amber-500 via-yellow-500 to-orange-500',
@@ -28,10 +28,10 @@ const config: ContentPageConfig = {
   },
   accentText: 'text-amber-600',
   stats: [
-    { icon: '♥', value: 'Nombreux', label: 'Couples formés après 40 ans' },
-    { icon: '🔮', value: '7 800+', label: 'Consultations' },
-    { icon: '⭐', value: '4.8/5', label: 'Satisfaction' },
-    { icon: '✨', value: 'L’âge d’or', label: 'De l’amour' },
+    { icon: '', value: 'Nombreux', label: 'Couples formés après 40 ans' },
+    { icon: '', value: '7 800+', label: 'Consultations' },
+    { icon: '', value: '4.8/5', label: 'Satisfaction' },
+    { icon: '', value: 'L’âge d’or', label: 'De l’amour' },
   ],
   eeat: { colorScheme: 'orange', method: 'Tarot amoureux et guidance pour les rencontres tardives' },
   cta: { topic: 'nouvelle-rencontre', slug: 'amour-apres-40-ans' },
@@ -83,7 +83,7 @@ export default function AmourApres40AnsPage() {
       <VoyantRecommendations topic="nouvelle-rencontre" limit={3} showOnlineFirst={true} source="amour-apres-40-ans-cards-top" />
 
       <section id="guidance" className="bg-white rounded-xl shadow-md p-8 mb-8">
-        <h2 className="text-3xl font-bold mb-6 text-amber-600">&#127775; Pourquoi l&rsquo;Amour apr&egrave;s 40 ans Est le Plus Beau</h2>
+        <h2 className="text-3xl font-bold mb-6 text-amber-600">Pourquoi l&rsquo;Amour apr&egrave;s 40 ans Est le Plus Beau</h2>
         <p className="text-lg font-semibold text-gray-800 mb-4">Apr&egrave;s 40 ans, la maturit&eacute; &eacute;motionnelle, la connaissance de soi et la clart&eacute; de vos d&eacute;sirs cr&eacute;ent les conditions id&eacute;ales pour une rencontre authentique et une relation nettement plus durable.</p>
         <p className="text-gray-700 mb-6">
           Apr&egrave;s 40 ans, vous n&rsquo;&ecirc;tes plus le m&ecirc;me amoureux qu&rsquo;&agrave; 20 ou 30 ans. Et c&rsquo;est pr&eacute;cis&eacute;ment ce qui rend cette p&eacute;riode si exceptionnelle pour la <strong><Link href="/nouvelle-rencontre/" className="text-amber-600 hover:text-amber-800 underline font-medium">rencontre amoureuse</Link></strong>. La maturit&eacute; &eacute;motionnelle transform&eacute;e en force d&rsquo;attraction cr&eacute;e des liens d&rsquo;une qualit&eacute; incomparable.
@@ -121,7 +121,7 @@ export default function AmourApres40AnsPage() {
       </section>
 
       <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-        <h2 className="text-3xl font-bold mb-6 text-amber-600">&#128274; Les Blocages qui Emp&ecirc;chent de Trouver l&rsquo;Amour apr&egrave;s 40 ans</h2>
+        <h2 className="text-3xl font-bold mb-6 text-amber-600">Les Blocages qui Emp&ecirc;chent de Trouver l&rsquo;Amour apr&egrave;s 40 ans</h2>
         <p className="text-lg font-semibold text-gray-800 mb-4">Les quatre blocages principaux sont la peur de la solitude d&eacute;finitive, les blessures non cicatris&eacute;es du pass&eacute;, les croyances limitantes li&eacute;es &agrave; l&rsquo;&acirc;ge et la logistique des enfants d&rsquo;une relation pr&eacute;c&eacute;dente.</p>
         <p className="text-gray-700 mb-6">
           Malgr&eacute; tous les atouts de la maturit&eacute;, certains <strong>blocages &eacute;nerg&eacute;tiques et &eacute;motionnels</strong> peuvent freiner votre chemin vers l&rsquo;amour. Les identifier est la premi&egrave;re &eacute;tape pour les dissoudre.
@@ -161,7 +161,7 @@ export default function AmourApres40AnsPage() {
       <VoyantQuickCTA topic="nouvelle-rencontre" source="amour-apres-40-ans-banner-mid" />
 
       <section id="tarot" className="bg-white rounded-xl shadow-md p-8 mb-8">
-        <h2 className="text-3xl font-bold mb-6 text-amber-600">&#127183; Le Tarot R&eacute;v&egrave;le Votre Timing Amoureux</h2>
+        <h2 className="text-3xl font-bold mb-6 text-amber-600">Le Tarot R&eacute;v&egrave;le Votre Timing Amoureux</h2>
         <p className="text-lg font-semibold text-gray-800 mb-4">L&rsquo;Imp&eacute;ratrice, Le Monde, l&rsquo;&Eacute;toile et Temp&eacute;rance sont les cartes cl&eacute;s qui r&eacute;v&egrave;lent le timing et les conditions de votre prochaine rencontre amoureuse apr&egrave;s 40 ans.</p>
         <p className="text-gray-700 mb-6">
           Le <strong>tarot amoureux</strong> est un outil pr&eacute;cieux pour les personnes de plus de 40 ans en qu&ecirc;te d&rsquo;amour. Il r&eacute;v&egrave;le <Link href="/nouvelle-rencontre/quand-rencontre-amour/" className="text-amber-600 hover:text-amber-800 underline font-medium">quand vous allez rencontrer l&rsquo;amour</Link>, mais aussi les &eacute;nergies &agrave; aligner pour l&rsquo;attirer.
@@ -169,28 +169,28 @@ export default function AmourApres40AnsPage() {
 
         <div className="space-y-4">
           <div className="bg-amber-50 p-5 rounded-lg border-l-4 border-amber-500">
-            <h3 className="font-bold text-amber-700 mb-2 text-lg">&#127876; L&rsquo;Imp&eacute;ratrice &mdash; La Maturit&eacute; F&eacute;conde</h3>
+            <h3 className="font-bold text-amber-700 mb-2 text-lg">L&rsquo;Imp&eacute;ratrice &mdash; La Maturit&eacute; F&eacute;conde</h3>
             <p className="text-gray-700">
               Cette carte est particuli&egrave;rement puissante pour les rencontres apr&egrave;s 40 ans. Elle symbolise la <strong>f&eacute;condit&eacute; &eacute;motionnelle</strong>, la pl&eacute;nitude int&eacute;rieure et la capacit&eacute; &agrave; nourrir une relation profonde. Sa pr&eacute;sence dans un tirage indique que votre &eacute;nergie f&eacute;minine (yin) est en plein &eacute;panouissement, cr&eacute;ant un magn&eacute;tisme naturel qui attire l&rsquo;amour v&eacute;ritable. Souvent pr&eacute;sente dans les tirages des personnes pr&ecirc;tes &agrave; accueillir un amour mature.
             </p>
           </div>
 
           <div className="bg-yellow-50 p-5 rounded-lg border-l-4 border-yellow-500">
-            <h3 className="font-bold text-yellow-700 mb-2 text-lg">&#127183; Le Monde &mdash; L&rsquo;Accomplissement Avant la Rencontre</h3>
+            <h3 className="font-bold text-yellow-700 mb-2 text-lg">Le Monde &mdash; L&rsquo;Accomplissement Avant la Rencontre</h3>
             <p className="text-gray-700">
               Le Monde repr&eacute;sente un <strong>cycle achev&eacute; et un nouveau d&eacute;but</strong>. Dans un tirage amoureux apr&egrave;s 40 ans, cette carte signifie que vous avez termin&eacute; un chapitre karmique majeur et que l&rsquo;univers pr&eacute;pare une nouvelle phase sentimentale. Le timing est souvent de 3 &agrave; 9 mois. Elle peut aussi indiquer une rencontre lors d&rsquo;un voyage ou d&rsquo;un &eacute;v&eacute;nement qui &eacute;largit votre monde.
             </p>
           </div>
 
           <div className="bg-orange-50 p-5 rounded-lg border-l-4 border-orange-500">
-            <h3 className="font-bold text-orange-700 mb-2 text-lg">&#127183; L&rsquo;&Eacute;toile &mdash; L&rsquo;Espoir Renouvel&eacute;</h3>
+            <h3 className="font-bold text-orange-700 mb-2 text-lg">L&rsquo;&Eacute;toile &mdash; L&rsquo;Espoir Renouvel&eacute;</h3>
             <p className="text-gray-700">
               L&rsquo;&Eacute;toile appara&icirc;t fr&eacute;quemment pour ceux qui ont travers&eacute; des <strong>p&eacute;riodes sombres en amour</strong> et sont pr&ecirc;ts &agrave; rena&icirc;tre. Elle annonce une <strong>gu&eacute;rison &eacute;motionnelle compl&egrave;te</strong> suivie d&rsquo;une rencontre inspir&eacute;e et guid&eacute;e par le destin. Pour les plus de 40 ans, elle repr&eacute;sente la confirmation que l&rsquo;amour n&rsquo;est pas derri&egrave;re eux mais devant, plus lumineux et plus authentique que jamais.
             </p>
           </div>
 
           <div className="bg-rose-50 p-5 rounded-lg border-l-4 border-rose-500">
-            <h3 className="font-bold text-rose-700 mb-2 text-lg">&#127183; Temp&eacute;rance &mdash; L&rsquo;&Eacute;quilibre Qui Attire</h3>
+            <h3 className="font-bold text-rose-700 mb-2 text-lg">Temp&eacute;rance &mdash; L&rsquo;&Eacute;quilibre Qui Attire</h3>
             <p className="text-gray-700">
               Temp&eacute;rance r&eacute;v&egrave;le que votre <strong>&eacute;quilibre int&eacute;rieur est la cl&eacute;</strong> de votre prochaine rencontre. Cette carte indique que l&rsquo;harmonie entre vos diff&eacute;rentes sph&egrave;res de vie (professionnelle, personnelle, spirituelle) cr&eacute;e les conditions &eacute;nerg&eacute;tiques id&eacute;ales pour attirer un partenaire &eacute;galement &eacute;quilibr&eacute;. Le timing associ&eacute; est souvent celui d&rsquo;une p&eacute;riode de s&eacute;r&eacute;nit&eacute;, pas de tumulte.
             </p>
@@ -198,7 +198,7 @@ export default function AmourApres40AnsPage() {
         </div>
 
         <div className="bg-amber-50 border-2 border-amber-300 rounded-lg p-6 mt-6">
-          <h4 className="font-bold text-amber-800 mb-3 text-lg">&#128302; Tirage Sp&eacute;cial &laquo;&nbsp;Timing Amoureux apr&egrave;s 40 ans&nbsp;&raquo;</h4>
+          <h4 className="font-bold text-amber-800 mb-3 text-lg">Tirage Sp&eacute;cial &laquo;&nbsp;Timing Amoureux apr&egrave;s 40 ans&nbsp;&raquo;</h4>
           <p className="text-gray-700 mb-3">
             Un tirage en 4 positions sp&eacute;cialement con&ccedil;u pour les rencontres tardives :
           </p>
@@ -215,7 +215,7 @@ export default function AmourApres40AnsPage() {
       </section>
 
       <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-        <h2 className="text-3xl font-bold mb-6 text-amber-600">&#127759; O&ugrave; et Comment Rencontrer l&rsquo;Amour apr&egrave;s 40 ans</h2>
+        <h2 className="text-3xl font-bold mb-6 text-amber-600">O&ugrave; et Comment Rencontrer l&rsquo;Amour apr&egrave;s 40 ans</h2>
         <p className="text-lg font-semibold text-gray-800 mb-4">Les rencontres durables apr&egrave;s 40 ans se font principalement via des activit&eacute;s partag&eacute;es, en ligne, ou gr&acirc;ce aux signes de l&rsquo;univers et &agrave; un &eacute;tat d&rsquo;esprit d&rsquo;ouverture au quotidien.</p>
         <p className="text-gray-700 mb-6">
           Les opportunit&eacute;s de rencontre apr&egrave;s 40 ans sont multiples et vari&eacute;es. La cl&eacute; est de <strong>multiplier les espaces de connexion authentique</strong> tout en restant attentif aux signes de l&rsquo;univers.
@@ -256,7 +256,7 @@ export default function AmourApres40AnsPage() {
       </section>
 
       <section className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-xl p-8 mb-8 border-2 border-amber-200">
-        <h2 className="text-3xl font-bold mb-6 text-gray-900">&#128142; Construire une Relation Durable apr&egrave;s 40 ans</h2>
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Construire une Relation Durable apr&egrave;s 40 ans</h2>
         <p className="text-lg font-semibold text-gray-800 mb-4">Les piliers d&rsquo;une relation durable apr&egrave;s 40 ans sont la communication authentique, les limites saines, la gestion harmonieuse des familles recompos&eacute;es et la conscience des le&ccedil;ons du pass&eacute;.</p>
         <p className="text-gray-700 mb-6">
           Une fois l&rsquo;amour trouv&eacute;, le d&eacute;fi de cette <Link href="/nouvelle-rencontre/nouvelle-relation-amoureuse/" className="text-amber-600 hover:text-amber-800 underline font-medium">nouvelle relation amoureuse</Link> est de <strong>construire des bases solides</strong> qui tiennent compte des r&eacute;alit&eacute;s de la vie apr&egrave;s 40 ans. Voici les piliers essentiels.

@@ -36,7 +36,7 @@ export function trackAffiliateClick(
 
     // Also log to console in development
     if (process.env.NODE_ENV === 'development') {
-      console.log('📊 Glyphex: Affiliate click tracked', {
+      console.log('Glyphex: Affiliate click tracked', {
         voyantId,
         source,
         voyantName,

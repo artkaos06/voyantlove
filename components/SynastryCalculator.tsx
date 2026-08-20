@@ -44,7 +44,7 @@ export default function SynastryCalculator() {
 
   return (
     <div className="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-xl p-6 md:p-8 border-2 border-indigo-300">
-      <h3 className="font-bold text-xl text-indigo-800 mb-2">⭐ Testez Votre Compatibilité de Signes</h3>
+      <h3 className="font-bold text-xl text-indigo-800 mb-2">Testez Votre Compatibilité de Signes</h3>
       <p className="text-gray-700 text-sm mb-5">
         Entrez les deux dates de naissance : lecture instantanée par élément (Feu, Terre, Air, Eau), dans votre navigateur, sans donnée conservée. Pour une vraie synastrie planète par planète, il faut l&rsquo;heure et le lieu de naissance, c&rsquo;est le travail d&rsquo;une <Link href="/consulter/" className="underline font-medium">consultation</Link>.
       </p>

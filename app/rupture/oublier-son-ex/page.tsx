@@ -16,7 +16,7 @@ const config: ContentPageConfig = {
     { name: 'Oublier son Ex', url: 'https://www.voyantlove.fr/rupture/oublier-son-ex/' },
   ],
   header: {
-    emoji: '💔',
+    emoji: '',
     h1: 'Oublier son ex et surmonter la rupture',
     subtitle: 'Guérison, reconstruction et préparation à l\'amour selon le tarot',
     gradient: 'from-pink-500 via-purple-500 to-indigo-500',
@@ -28,10 +28,10 @@ const config: ContentPageConfig = {
   },
   accentText: 'text-pink-600',
   stats: [
-    { icon: '⭐', value: '4.8/5', label: '287 Avis' },
-    { icon: '💔→💖', value: '3-6 mois', label: 'Temps guérison' },
-    { icon: '✨', value: 'Forte', label: 'Chance de renouveau' },
-    { icon: '🔒', value: '100%', label: 'Confidentiel' },
+    { icon: '', value: '4.8/5', label: '287 Avis' },
+    { icon: '→', value: '3-6 mois', label: 'Temps guérison' },
+    { icon: '', value: 'Forte', label: 'Chance de renouveau' },
+    { icon: '', value: '100%', label: 'Confidentiel' },
   ],
   eeat: { colorScheme: 'blue', method: 'Tarot de guérison et astrologie' },
   cta: { topic: 'rupture', slug: 'oublier-son-ex' },
@@ -91,7 +91,7 @@ export default function OublierSonExPage() {
         {/* Section 1: Phases de deuil */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">
-            💔 Les Étapes du Deuil Amoureux selon le Tarot
+            Les Étapes du Deuil Amoureux selon le Tarot
           </h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le deuil amoureux selon le tarot traverse cinq étapes : le choc (La Tour), le déni (Le Pendu), la colère (Cinq d'Épée), la tristesse profonde (Trois d'Épée) et l'acceptation (Tempérance).</p>
           <p className="text-gray-700 leading-relaxed mb-6">
@@ -129,7 +129,7 @@ export default function OublierSonExPage() {
         {/* Section 2: Timing */}
         <section className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-8 mb-8 border-2 border-purple-200">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">
-            ⏰ Combien de Temps pour Guérir ?
+            Combien de Temps pour Guérir ?
           </h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Comptez environ un mois de guérison par année de relation : 2 à 4 mois pour une relation courte, 4 à 8 mois pour une relation moyenne, et jusqu'à 18 mois pour une relation très longue. Le tarot affine ce timing.</p>
           <p className="text-gray-700 leading-relaxed mb-4">
@@ -141,7 +141,7 @@ export default function OublierSonExPage() {
           </p>
           
           <div className="bg-white rounded-lg p-6 mt-6">
-            <h3 className="font-bold text-lg mb-3">📅 Timeline Moyenne de Guérison</h3>
+            <h3 className="font-bold text-lg mb-3">Timeline Moyenne de Guérison</h3>
             <ul className="space-y-2 text-gray-700">
               <li>• <strong>Relation courte (moins d'1 an)</strong> : 2-4 mois</li>
               <li>• <strong>Relation moyenne (1-3 ans)</strong> : 4-8 mois</li>
@@ -154,7 +154,7 @@ export default function OublierSonExPage() {
         {/* Section 3: Rituels */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">
-            🌱 Rituels de Libération Émotionnelle
+            Rituels de Libération Émotionnelle
           </h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Les rituels de libération émotionnelle combinent lettre brûlée, tirage de libération, nettoyage énergétique de votre espace et coupure des liens éthériques lors de la nouvelle lune pour accélérer le détachement.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
@@ -163,28 +163,28 @@ export default function OublierSonExPage() {
           
           <div className="grid md:grid-cols-2 gap-6">
             <div className="border-2 border-purple-200 rounded-lg p-6">
-              <h3 className="font-bold text-lg mb-3 text-purple-600">🔥 Rituel de la Lettre Brûlée</h3>
+              <h3 className="font-bold text-lg mb-3 text-purple-600">Rituel de la Lettre Brûlée</h3>
               <p className="text-gray-700 text-sm">
                 Écrivez tout ce que vous n'avez jamais dit à votre ex : colère, tristesse, amour, regrets. Puis brûlez la lettre lors d'une nouvelle lune en visualisant la libération émotionnelle.
               </p>
             </div>
             
             <div className="border-2 border-pink-200 rounded-lg p-6">
-              <h3 className="font-bold text-lg mb-3 text-pink-600">🃏 Tirage de Libération</h3>
+              <h3 className="font-bold text-lg mb-3 text-pink-600">Tirage de Libération</h3>
               <p className="text-gray-700 text-sm">
                 Tirage spécifique avec enfouissement des cartes symbolisant l'attachement. La Terre absorbe l'énergie bloquée et transforme la douleur en force.
               </p>
             </div>
             
             <div className="border-2 border-blue-200 rounded-lg p-6">
-              <h3 className="font-bold text-lg mb-3 text-blue-600">🌿 Nettoyage Énergétique</h3>
+              <h3 className="font-bold text-lg mb-3 text-blue-600">Nettoyage Énergétique</h3>
               <p className="text-gray-700 text-sm">
                 Purifiez votre espace de vie avec sauge ou encens. Débarrassez-vous des objets rappelant l'ex. Créez un environnement propice au nouveau départ.
               </p>
             </div>
             
             <div className="border-2 border-indigo-200 rounded-lg p-6">
-              <h3 className="font-bold text-lg mb-3 text-indigo-600">🌙 Coupure des Liens Éthériques</h3>
+              <h3 className="font-bold text-lg mb-3 text-indigo-600">Coupure des Liens Éthériques</h3>
               <p className="text-gray-700 text-sm">
                 Méditation guidée pendant la nouvelle lune pour couper les cordons énergétiques invisibles qui vous relient encore à votre ex sur le plan subtil.
               </p>
@@ -197,7 +197,7 @@ export default function OublierSonExPage() {
         {/* Section 4: Signes de guérison */}
         <section className="bg-green-50 border-2 border-green-200 rounded-xl p-8 mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">
-            ✨ Signes que Vous Êtes Prêt(e) à Aimer à Nouveau
+            Signes que Vous Êtes Prêt(e) à Aimer à Nouveau
           </h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Vous êtes prêt(e) à aimer à nouveau quand vous pensez rarement à votre ex, que les souvenirs ne font plus mal, que la joie de vivre revient et que vous ne comparez plus chaque nouvelle personne à votre ancien partenaire.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
@@ -233,7 +233,7 @@ export default function OublierSonExPage() {
           
           <div className="bg-white rounded-lg p-6 mt-6">
             <p className="text-gray-700 italic">
-              💡 <strong>Important :</strong> Ne forcez pas ces signes. Ils apparaissent naturellement quand la guérison est complète. Respectez votre rythme unique.
+              <strong>Important :</strong> Ne forcez pas ces signes. Ils apparaissent naturellement quand la guérison est complète. Respectez votre rythme unique.
             </p>
           </div>
         </section>
@@ -241,7 +241,7 @@ export default function OublierSonExPage() {
         {/* Section 5: Préparer nouvelle rencontre */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">
-            💫 Préparer Votre Prochaine Rencontre
+            Préparer Votre Prochaine Rencontre
           </h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Préparer votre prochaine rencontre combine travail intérieur (méditation, clarification des besoins), travail extérieur (sortir, fréquenter de nouveaux lieux) et travail énergétique (visualisation, affirmations positives).</p>
           <p className="text-gray-700 leading-relaxed mb-6">
@@ -250,7 +250,7 @@ export default function OublierSonExPage() {
           
           <div className="space-y-6">
             <div>
-              <h3 className="font-bold text-lg mb-2 text-purple-600">🧘 Travail Intérieur</h3>
+              <h3 className="font-bold text-lg mb-2 text-purple-600">Travail Intérieur</h3>
               <ul className="list-disc ml-6 text-gray-700 space-y-1">
                 <li>Ouvrez votre <strong>chakra du cœur</strong> par la méditation</li>
                 <li>Clarifiez ce que vous voulez <strong>vraiment</strong> dans une relation</li>
@@ -260,7 +260,7 @@ export default function OublierSonExPage() {
             </div>
             
             <div>
-              <h3 className="font-bold text-lg mb-2 text-pink-600">🌟 Travail Extérieur</h3>
+              <h3 className="font-bold text-lg mb-2 text-pink-600">Travail Extérieur</h3>
               <ul className="list-disc ml-6 text-gray-700 space-y-1">
                 <li>Exposez-vous socialement - <strong>sortez, acceptez les invitations</strong></li>
                 <li>Fréquentez les <strong>lieux révélés par le tarot</strong> (yoga, librairie, voyage)</li>
@@ -270,7 +270,7 @@ export default function OublierSonExPage() {
             </div>
             
             <div>
-              <h3 className="font-bold text-lg mb-2 text-blue-600">✨ Travail Énergétique</h3>
+              <h3 className="font-bold text-lg mb-2 text-blue-600">Travail Énergétique</h3>
               <ul className="list-disc ml-6 text-gray-700 space-y-1">
                 <li><strong>Visualisation</strong> quotidienne de l'amour entrant dans votre vie</li>
                 <li><strong>Rituel de la nouvelle lune</strong> pour manifester une nouvelle relation</li>
@@ -281,7 +281,7 @@ export default function OublierSonExPage() {
           
           <div className="bg-purple-50 rounded-lg p-6 mt-6 border-l-4 border-purple-500">
             <p className="text-gray-700">
-              <strong>🔮 Le tarot vous révèle :</strong> Les périodes astrologiques favorables aux nouvelles rencontres et le profil énergétique de votre prochain partenaire potentiel.
+              <strong>Le tarot vous révèle :</strong> Les périodes astrologiques favorables aux nouvelles rencontres et le profil énergétique de votre prochain partenaire potentiel.
             </p>
           </div>
         </section>

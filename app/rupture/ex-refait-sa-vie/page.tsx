@@ -16,7 +16,7 @@ const config: ContentPageConfig = {
     { name: 'Mon Ex Refait sa Vie', url: 'https://www.voyantlove.fr/rupture/ex-refait-sa-vie/' },
   ],
   header: {
-    emoji: '🍃',
+    emoji: '',
     h1: 'Mon ex refait sa vie : comment le vivre et avancer',
     subtitle: 'Ce que cela prouve (ou pas), pourquoi ça fait mal, et comment retrouver votre équilibre',
     gradient: 'from-teal-600 via-cyan-600 to-blue-600',
@@ -28,10 +28,10 @@ const config: ContentPageConfig = {
   },
   accentText: 'text-teal-600',
   stats: [
-    { icon: '🔮', value: 'Reconnue', label: 'Expertise' },
-    { icon: '🍃', value: '3,300+', label: 'Consultations' },
-    { icon: '⭐', value: '4.7/5', label: '283 Avis' },
-    { icon: '🔒', value: '100%', label: 'Confidentiel' },
+    { icon: '', value: 'Reconnue', label: 'Expertise' },
+    { icon: '', value: '3,300+', label: 'Consultations' },
+    { icon: '', value: '4.7/5', label: '283 Avis' },
+    { icon: '', value: '100%', label: 'Confidentiel' },
   ],
   eeat: { colorScheme: 'teal', method: 'Guidance de reconstruction et accompagnement après séparation' },
   cta: { topic: 'rupture', slug: 'ex-refait-vie' },
@@ -89,14 +89,14 @@ export default function ExRefaitSaViePage() {
 
         {/* H2: Ce que ça prouve ou pas */}
         <section id="prouve" className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">{'⚖️'} Ce que le Fait qu&apos;il Refasse sa Vie Prouve, et ne Prouve Pas</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">{''} Ce que le Fait qu&apos;il Refasse sa Vie Prouve, et ne Prouve Pas</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Qu&apos;un ex refasse sa vie prouve qu&apos;il avance a son rythme, mais ne prouve ni que la relation ne comptait pas, ni que tout est definitivement fini, ni que sa nouvelle histoire durera : ces conclusions depassent ce qu&apos;un fait exterieur peut reveler.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Face à la douleur, l&apos;esprit tire des conclusions rapides. Séparer les <strong>faits</strong> des <strong>interprétations</strong> évite de se blesser davantage avec des certitudes qui n&apos;en sont pas.
           </p>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-teal-50 border-2 border-teal-300 rounded-lg p-6">
-              <h3 className="font-bold text-lg mb-3 text-teal-700">{'✅'} Ce que Ça Peut Indiquer</h3>
+              <h3 className="font-bold text-lg mb-3 text-teal-700">{''} Ce que Ça Peut Indiquer</h3>
               <ul className="space-y-2 text-gray-700 text-sm">
                 <li>&bull; Qu&apos;il ou elle <strong>avance</strong>, à son propre rythme</li>
                 <li>&bull; Un besoin de se sentir désiré(e) de nouveau</li>
@@ -104,7 +104,7 @@ export default function ExRefaitSaViePage() {
               </ul>
             </div>
             <div className="bg-orange-50 border-2 border-orange-300 rounded-lg p-6">
-              <h3 className="font-bold text-lg mb-3 text-orange-700">{'\u{26A0}️'} Ce que Ça ne Prouve Pas</h3>
+              <h3 className="font-bold text-lg mb-3 text-orange-700">{'️'} Ce que Ça ne Prouve Pas</h3>
               <ul className="space-y-2 text-gray-700 text-sm">
                 <li>&bull; Que votre relation ne <strong>comptait pas</strong></li>
                 <li>&bull; Que sa nouvelle histoire durera forcément</li>
@@ -114,28 +114,28 @@ export default function ExRefaitSaViePage() {
             </div>
           </div>
           <div className="mt-6 bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded">
-            <p className="text-gray-700"><strong>{'\u{1F4A1}'} À retenir :</strong> la vitesse à laquelle un ex &laquo;refait sa vie&raquo; ne dit rien de la profondeur de ce que vous avez vécu. Le rythme de deuil de chacun est différent, et avancer vite n&apos;est pas un signe d&apos;amour moindre.</p>
+            <p className="text-gray-700"><strong>À retenir :</strong> la vitesse à laquelle un ex &laquo;refait sa vie&raquo; ne dit rien de la profondeur de ce que vous avez vécu. Le rythme de deuil de chacun est différent, et avancer vite n&apos;est pas un signe d&apos;amour moindre.</p>
           </div>
         </section>
 
         {/* H2: Pourquoi ça fait si mal */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">{'\u{1F494}'} Pourquoi Ça Fait Aussi Mal</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Pourquoi Ça Fait Aussi Mal</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">La douleur vient de la comparaison, du sentiment d&apos;avoir ete remplace et de l&apos;impression que l&apos;autre avance plus vite : des reactions normales, amplifiees par l&apos;image partielle et idealisee que montrent les debuts d&apos;une relation.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Comprendre l&apos;origine de la douleur aide à ne pas la retourner contre soi. Voici les mécanismes les plus courants.
           </p>
           <div className="space-y-4">
             <div className="bg-cyan-50 border-l-4 border-cyan-500 p-5 rounded">
-              <h3 className="font-bold mb-2 text-cyan-700">{'⚖️'} La Comparaison</h3>
+              <h3 className="font-bold mb-2 text-cyan-700">{''} La Comparaison</h3>
               <p className="text-gray-700 text-sm">Se mesurer à la <strong>nouvelle personne</strong> est un réflexe douloureux et perdu d&apos;avance. Votre valeur ne se joue pas dans cette comparaison.</p>
             </div>
             <div className="bg-cyan-50 border-l-4 border-cyan-500 p-5 rounded">
-              <h3 className="font-bold mb-2 text-cyan-700">{'\u{1F504}'} Le Sentiment d&apos;Être Remplacé</h3>
+              <h3 className="font-bold mb-2 text-cyan-700">Le Sentiment d&apos;Être Remplacé</h3>
               <p className="text-gray-700 text-sm">L&apos;idée d&apos;avoir été &laquo;remplacé&raquo; blesse l&apos;estime. Pourtant, une personne ne se remplace pas : une nouvelle relation est une autre histoire, pas la vôtre reprise par quelqu&apos;un d&apos;autre.</p>
             </div>
             <div className="bg-cyan-50 border-l-4 border-cyan-500 p-5 rounded">
-              <h3 className="font-bold mb-2 text-cyan-700">{'\u{1F3AD}'} L&apos;Image Idéalisée</h3>
+              <h3 className="font-bold mb-2 text-cyan-700">L&apos;Image Idéalisée</h3>
               <p className="text-gray-700 text-sm">On surestime presque toujours le <strong>bonheur affiché</strong> de l&apos;autre. Les débuts et les réseaux sociaux montrent une vitrine, jamais la réalité complète.</p>
             </div>
           </div>
@@ -145,31 +145,31 @@ export default function ExRefaitSaViePage() {
 
         {/* H2: Comment accepter et avancer */}
         <section id="accepter" className="bg-gradient-to-br from-teal-50 to-blue-50 rounded-xl p-8 mb-8 border-2 border-teal-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">{'\u{1F331}'} Comment Accepter et Réinvestir votre Vie</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Comment Accepter et Réinvestir votre Vie</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Accepter n&apos;est pas etre d&apos;accord ni ne plus rien ressentir : c&apos;est cesser de lutter contre une realite que l&apos;on ne controle pas, en se coupant de la surveillance, en renouant avec son identite et en autorisant la tristesse sans la laisser tout envahir.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             L&apos;acceptation avance par <strong>étapes</strong>, pas d&apos;un coup. Voici les leviers concrets qui aident à traverser cette phase.
           </p>
           <div className="space-y-4">
             <div className="bg-white rounded-lg p-6 border-l-4 border-teal-500">
-              <h3 className="font-bold text-lg mb-2 text-teal-700">{'\u{1F6D1}'} Se couper de la surveillance</h3>
+              <h3 className="font-bold text-lg mb-2 text-teal-700">Se couper de la surveillance</h3>
               <p className="text-gray-700 text-sm">Suivre l&apos;autre couple à distance ravive la blessure sans rien changer. Se désabonner ou masquer est un <strong>acte de protection</strong>, pas de l&apos;évitement.</p>
             </div>
             <div className="bg-white rounded-lg p-6 border-l-4 border-cyan-500">
-              <h3 className="font-bold text-lg mb-2 text-cyan-700">{'\u{1F98B}'} Renouer avec son identité</h3>
+              <h3 className="font-bold text-lg mb-2 text-cyan-700">Renouer avec son identité</h3>
               <p className="text-gray-700 text-sm">Reprendre des goûts, des amitiés et des projets à soi restaure une <strong>identité indépendante</strong> de l&apos;ancien couple, le socle de toute reconstruction.</p>
             </div>
             <div className="bg-white rounded-lg p-6 border-l-4 border-blue-500">
-              <h3 className="font-bold text-lg mb-2 text-blue-700">{'\u{1F327}️'} Autoriser la tristesse</h3>
+              <h3 className="font-bold text-lg mb-2 text-blue-700">{'️'} Autoriser la tristesse</h3>
               <p className="text-gray-700 text-sm">Refouler la peine la prolonge. La laisser exister, par vagues, sans qu&apos;elle envahisse tout, fait partie du <Link href="/rupture/guerir-rupture/" className="text-blue-600 hover:text-blue-800 underline font-medium">chemin de guérison</Link>.</p>
             </div>
             <div className="bg-white rounded-lg p-6 border-l-4 border-teal-500">
-              <h3 className="font-bold text-lg mb-2 text-teal-700">{'\u{1F31F}'} Se tourner vers l&apos;avenir</h3>
+              <h3 className="font-bold text-lg mb-2 text-teal-700">Se tourner vers l&apos;avenir</h3>
               <p className="text-gray-700 text-sm">Le jour où l&apos;idée d&apos;une <Link href="/nouvelle-rencontre/nouvelle-relation-amoureuse/" className="text-teal-600 hover:text-teal-800 underline font-medium">nouvelle relation</Link> suscite de la curiosité plutôt que de la peur, vous saurez que vous avancez vraiment.</p>
             </div>
           </div>
           <div className="mt-6 bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded">
-            <p className="text-gray-700"><strong>{'\u{1F4A1}'} À retenir :</strong> accepter que son ex refasse sa vie ne veut pas dire renoncer à être heureux, c&apos;est libérer l&apos;énergie qui vous épuisait pour la réinvestir en vous. Retrouver l&apos;estime de soi est au cœur de ce travail, notamment après une séparation longue.</p>
+            <p className="text-gray-700"><strong>À retenir :</strong> accepter que son ex refasse sa vie ne veut pas dire renoncer à être heureux, c&apos;est libérer l&apos;énergie qui vous épuisait pour la réinvestir en vous. Retrouver l&apos;estime de soi est au cœur de ce travail, notamment après une séparation longue.</p>
           </div>
         </section>
     </ContentPage>

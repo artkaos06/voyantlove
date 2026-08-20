@@ -16,7 +16,7 @@ const config: ContentPageConfig = {
     { name: 'Savoir si C\'est l\'Amour', url: 'https://www.voyantlove.fr/sentiments/savoir-si-cest-lamour/' },
   ],
   header: {
-    emoji: '💗',
+    emoji: '',
     h1: 'Comment savoir si c\'est le vrai amour',
     subtitle: 'Les signes qui ne trompent pas, éclairés par la voyance et le tarot',
     gradient: 'from-pink-500 via-pink-600 to-rose-600',
@@ -27,10 +27,10 @@ const config: ContentPageConfig = {
   },
   accentText: 'text-pink-600',
   stats: [
-    { icon: '⭐', value: '4.9/5', label: '312 Avis' },
-    { icon: '💕', value: '89%', label: 'Clarté obtenue' },
-    { icon: '🔮', value: '20 min', label: 'Consultation' },
-    { icon: '✨', value: '15 ans', label: 'Expérience' },
+    { icon: '', value: '4.9/5', label: '312 Avis' },
+    { icon: '', value: '89%', label: 'Clarté obtenue' },
+    { icon: '', value: '20 min', label: 'Consultation' },
+    { icon: '', value: '15 ans', label: 'Expérience' },
   ],
   eeat: { colorScheme: 'pink', method: 'Tarot des sentiments amoureux' },
   cta: { topic: 'sentiments', slug: 'savoir-si-cest-lamour' },
@@ -81,7 +81,7 @@ export default function SavoirSiCestLamourPage() {
         <VoyantRecommendations topic="sentiments" limit={3} showOnlineFirst={true} source="savoir-si-cest-lamour-cards-top" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">💖 Les 7 Signes du Vrai Amour selon la Voyance</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Les 7 Signes du Vrai Amour selon la Voyance</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le vrai amour se reconnaît à des signes précis que la voyance et le tarot identifient avec une grande clarté : la paix intérieure, la liberté de l&apos;autre, la croissance mutuelle et la résonance énergétique profonde.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Quand un consultant vient me voir en se demandant si ce qu&apos;il ressent est du <strong>vrai amour</strong>, les cartes ne mentent jamais. Voici les sept signes que la <strong>voyance</strong> identifie systématiquement dans les relations authentiques, des marqueurs qui transcendent les apparences et touchent à l&apos;essence même du lien.
@@ -107,7 +107,7 @@ export default function SavoirSiCestLamourPage() {
         </section>
 
         <section className="bg-gradient-to-br from-pink-50 to-rose-50 rounded-xl p-8 mb-8 border-2 border-pink-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">🔮 Ce que le Tarot Révèle sur Vos Sentiments</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Ce que le Tarot Révèle sur Vos Sentiments</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Chaque arcane du tarot porte un message spécifique sur la nature de vos sentiments. Les cartes majeures distinguent clairement l&apos;amour vrai de l&apos;illusion, de la passion passagère ou de la dépendance émotionnelle.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Le <strong>tarot des sentiments</strong> fonctionne comme un miroir de votre âme. Il ne vous dit pas ce que vous voulez entendre, mais ce que vous avez besoin de savoir. Chaque carte porte un message spécifique sur la nature de ce que vous ressentez, et un <strong>voyant expérimenté</strong> sait décoder ces messages avec précision et bienveillance.
@@ -135,7 +135,7 @@ export default function SavoirSiCestLamourPage() {
         <VoyantQuickCTA topic="sentiments" source="savoir-si-cest-lamour-banner-mid" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">⚡ Amour ou Dépendance : Comment Faire la Différence</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Amour ou Dépendance : Comment Faire la Différence</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Distinguer l&apos;amour authentique de la dépendance affective est essentiel pour construire une relation saine. La voyance identifie des marqueurs énergétiques très différents entre ces deux dynamiques relationnelles.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             L&apos;une des confusions les plus fréquentes en <strong>voyance amoureuse</strong> concerne la distinction entre <strong>amour véritable</strong> et <strong>dépendance affective</strong>. Beaucoup de consultants viennent avec une intensité émotionnelle qu&apos;ils confondent avec la profondeur des sentiments. Or, l&apos;intensité n&apos;est pas synonyme d&apos;authenticité.
@@ -170,7 +170,7 @@ export default function SavoirSiCestLamourPage() {
         </section>
 
         <section className="bg-gradient-to-br from-rose-50 to-pink-50 rounded-xl p-8 mb-8 border-2 border-rose-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">🌟 Les Étapes pour Confirmer Vos Sentiments</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Les Étapes pour Confirmer Vos Sentiments</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Confirmer la nature de vos sentiments passe par un processus en cinq étapes : l&apos;introspection honnête, la consultation du tarot, l&apos;analyse de la compatibilité, l&apos;écoute du corps et la projection dans l&apos;avenir.</p>
           <div className="space-y-6">
             <div className="flex items-start gap-4">
@@ -212,7 +212,7 @@ export default function SavoirSiCestLamourPage() {
         </section>
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">🌙 Quand le Doute Persiste : Que Faire ?</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Quand le Doute Persiste : Que Faire ?</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le doute amoureux est normal et même sain. Il devient problématique quand il vous paralyse. La voyance offre un espace de clarification pour transformer l&apos;incertitude en compréhension.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Douter de ses <strong>sentiments</strong> ne signifie pas que l&apos;<strong>amour</strong> est absent. Parfois, le doute est le signe d&apos;un esprit qui cherche à protéger un coeur déjà blessé par le passé. Les <strong>expériences amoureuses</strong> précédentes laissent des traces qui peuvent brouiller votre perception du présent. La question essentielle n&apos;est pas &laquo; est-ce que j&apos;aime ? &raquo; mais &laquo; est-ce que je me permets d&apos;aimer ? &raquo;.

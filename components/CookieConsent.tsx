@@ -46,7 +46,7 @@ export default function CookieConsent() {
           translations: {
             fr: {
               consentModal: {
-                // No title: it read "🍪 Cookies" directly above a sentence
+                // No title: it read "Cookies" directly above a sentence
                 // that already says "cookies". On a 390px screen that line
                 // plus its margin cost ~34px to repeat a word.
                 title: '',

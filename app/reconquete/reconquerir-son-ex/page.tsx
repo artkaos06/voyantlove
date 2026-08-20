@@ -16,7 +16,7 @@ const config: ContentPageConfig = {
     { name: 'Reconquérir son Ex', url: 'https://www.voyantlove.fr/reconquete/reconquerir-son-ex/' },
   ],
   header: {
-    emoji: '💜',
+    emoji: '',
     h1: 'Reconquérir son ex',
     subtitle: 'Guidance tarot et voyance pour le retour de votre ex',
     gradient: 'from-purple-600 via-purple-700 to-indigo-600',
@@ -27,10 +27,10 @@ const config: ContentPageConfig = {
   },
   accentText: 'text-purple-600',
   stats: [
-    { icon: '⭐', value: '4.8/5', label: '287 Avis' },
+    { icon: '', value: '4.8/5', label: '287 Avis' },
     { icon: '✓', value: 'Fort', label: 'Potentiel retour' },
-    { icon: '⏰', value: '3-8 sem', label: 'Délai moyen' },
-    { icon: '🔮', value: '15 ans', label: 'Expérience' },
+    { icon: '', value: '3-8 sem', label: 'Délai moyen' },
+    { icon: '', value: '15 ans', label: 'Expérience' },
   ],
   eeat: { colorScheme: 'purple', method: 'Tarot de la reconquête amoureuse' },
   cta: { topic: 'reconquete', slug: 'reconquerir-son-ex' },
@@ -83,7 +83,7 @@ export default function ReconquerirSonExPage() {
         <VoyantRecommendations topic="reconquete" limit={3} showOnlineFirst={true} source="reconquerir-son-ex-cards-top" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">🔮 Ce que le Tarot Révèle sur la Reconquête</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Ce que le Tarot Révèle sur la Reconquête</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le tarot de reconquête analyse quatre positions clés : les sentiments actuels de votre ex, les obstacles à la réconciliation, ce que vous devez changer en vous, et l'issue probable avec son timing.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Le tirage spécifique de reconquête analyse quatre positions clés pour éclairer votre situation et vos chances de succès.
@@ -109,7 +109,7 @@ export default function ReconquerirSonExPage() {
         </section>
 
         <section className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-8 mb-8 border-2 border-purple-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">⏰ Le Timing Idéal pour Agir</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Le Timing Idéal pour Agir</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le timing idéal pour reconquérir son ex repose sur trois fenêtres : le silence radio initial de 3 à 8 semaines, les périodes de Vénus rétrograde tous les 18 mois, et les transits de Vénus sur votre thème natal.</p>
           <div className="space-y-4">
             <div className="bg-white rounded-lg p-4 border-l-4 border-purple-500">
@@ -130,7 +130,7 @@ export default function ReconquerirSonExPage() {
         <VoyantQuickCTA topic="reconquete" source="reconquerir-son-ex-banner-mid" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">✅ Les 5 Étapes de la Reconquête Réussie</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Les 5 Étapes de la Reconquête Réussie</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">La reconquête amoureuse suit cinq étapes clés : le silence radio complet, le travail sur soi authentique, la reprise de contact subtile, la reconstruction de la confiance, et la création d'une nouvelle relation sur des bases saines.</p>
           <div className="space-y-6">
             <div className="flex items-start gap-4">
@@ -172,7 +172,7 @@ export default function ReconquerirSonExPage() {
         </section>
 
         <section className="bg-red-50 border-2 border-red-200 rounded-xl p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">❌ Les Erreurs à Éviter Absolument</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Les Erreurs à Éviter Absolument</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Les cinq erreurs fatales en reconquête sont : harceler votre ex, supplier ou implorer, culpabiliser, agir par désespoir plutôt que par amour, et ignorer les vraies causes de la rupture.</p>
           <div className="space-y-3">
             <div className="flex items-start gap-3">

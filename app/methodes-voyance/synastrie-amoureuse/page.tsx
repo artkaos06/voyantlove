@@ -17,7 +17,7 @@ const config: ContentPageConfig = {
     { name: 'Synastrie Amoureuse', url: 'https://www.voyantlove.fr/methodes-voyance/synastrie-amoureuse/' },
   ],
   header: {
-    emoji: '⭐',
+    emoji: '',
     h1: 'Synastrie amoureuse',
     subtitle: 'La Compatibilité Astrale de Votre Couple',
     gradient: 'from-indigo-700 via-purple-700 to-violet-700',
@@ -29,10 +29,10 @@ const config: ContentPageConfig = {
   },
   accentText: 'text-indigo-700',
   stats: [
-    { icon: '⭐', value: '2 Thèmes', label: 'Superposition astrologique' },
-    { icon: '🪐', value: '10 Planètes', label: 'Analysées en interaction' },
-    { icon: '💫', value: '18 ans', label: 'D\'expérience en synastrie' },
-    { icon: '💜', value: '4 100+', label: 'Consultations réalisées' },
+    { icon: '', value: '2 Thèmes', label: 'Superposition astrologique' },
+    { icon: '', value: '10 Planètes', label: 'Analysées en interaction' },
+    { icon: '', value: '18 ans', label: 'D\'expérience en synastrie' },
+    { icon: '', value: '4 100+', label: 'Consultations réalisées' },
   ],
   eeat: { colorScheme: 'purple', method: 'Tarot et voyance professionnelle' },
   cta: { topic: 'methodes-voyance', slug: 'synastrie-amoureuse' },
@@ -87,7 +87,7 @@ export default function SynastrieAmoureusePage() {
 
         {/* Qu'est-ce que la synastrie */}
         <section className="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-xl p-8 mb-8 border-2 border-indigo-200">
-          <h2 className="text-3xl font-bold mb-6 text-gray-900">&#x2B50; Qu'est-ce que la Synastrie Amoureuse ?</h2>
+          <h2 className="text-3xl font-bold mb-6 text-gray-900"> Qu'est-ce que la Synastrie Amoureuse ?</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">La synastrie superpose deux thèmes astraux pour révéler les harmonies et tensions entre deux partenaires. Née dans l'Antiquité, elle analyse comment chaque planète de l'un résonne avec celle de l'autre.</p>
           <p className="text-gray-700 mb-6">
             Le mot <strong>synastrie</strong> vient du grec "syn" (ensemble) et "astron" (étoile). C'est l'une des branches les plus anciennes et les plus complexes de l'<strong>astrologie amoureuse</strong>. Hippocrate, Ptolémée et les astrologues de la Renaissance l'utilisaient déjà pour évaluer la compatibilité entre souverains avant des mariages dynastiques. Aujourd'hui, elle reste l'outil de prédilection des astrologues pour analyser les relations de couple avec précision.
@@ -95,7 +95,7 @@ export default function SynastrieAmoureusePage() {
 
           <div className="grid md:grid-cols-2 gap-6 mb-6">
             <div className="bg-white rounded-lg p-6 border-l-4 border-indigo-500">
-              <h3 className="font-bold text-lg mb-3 text-indigo-700">&#x1F4D0; Le Principe de Superposition</h3>
+              <h3 className="font-bold text-lg mb-3 text-indigo-700"> Le Principe de Superposition</h3>
               <p className="text-gray-700 mb-3">
                 En synastrie, l'astrologue dresse les deux <strong>thèmes natals</strong> séparément, puis les superpose sur un même cercle zodiacal. Chaque planète de la personne A est alors mise en relation avec toutes les planètes de la personne B. On obtient ainsi une carte des interactions planétaires qui révèle la dynamique profonde du couple.
               </p>
@@ -105,7 +105,7 @@ export default function SynastrieAmoureusePage() {
             </div>
 
             <div className="bg-white rounded-lg p-6 border-l-4 border-purple-500">
-              <h3 className="font-bold text-lg mb-3 text-purple-700">&#x1F4C5; Ce que la Synastrie Révèle</h3>
+              <h3 className="font-bold text-lg mb-3 text-purple-700"> Ce que la Synastrie Révèle</h3>
               <ul className="space-y-2 text-gray-700">
                 <li className="flex items-start gap-2"><span className="text-purple-500">&#x2022;</span> L'attraction physique et le désir mutuel entre les partenaires</li>
                 <li className="flex items-start gap-2"><span className="text-purple-500">&#x2022;</span> La compatibilité émotionnelle et les besoins affectifs de chacun</li>
@@ -118,7 +118,7 @@ export default function SynastrieAmoureusePage() {
           </div>
 
           <div className="bg-indigo-50 border-l-4 border-indigo-500 p-6 rounded-lg">
-            <h4 className="font-bold text-indigo-800 mb-2">&#x2728; Synastrie vs Thème Composite</h4>
+            <h4 className="font-bold text-indigo-800 mb-2"> Synastrie vs Thème Composite</h4>
             <p className="text-gray-700">
               La synastrie diffère du <strong>thème composite</strong>, autre technique d'analyse de couple qui crée un thème astral unique en calculant les points médians entre les planètes des deux partenaires. Le thème composite représente l'"entité couple" elle-même, tandis que la synastrie analyse l'interaction entre deux individus distincts. Les deux méthodes sont complémentaires et les astrologues expérimentés utilisent souvent les deux pour une analyse complète.
             </p>
@@ -127,7 +127,7 @@ export default function SynastrieAmoureusePage() {
 
         {/* Les planètes clés */}
         <section id="planetes" className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold mb-6 text-indigo-600">&#x1FA90; Les Planètes Clés de la Synastrie Amoureuse</h2>
+          <h2 className="text-3xl font-bold mb-6 text-indigo-600"> Les Planètes Clés de la Synastrie Amoureuse</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Vénus et Mars gouvernent l'amour et le désir. Le Soleil et la Lune révèlent la compatibilité des personnalités et des besoins émotionnels. Les ascendants définissent la première impression et l'attraction physique.</p>
           <p className="text-gray-700 mb-6">
             Toutes les planètes participent à la synastrie, mais certaines dominent l'analyse amoureuse. Comprendre le rôle de chaque planète vous permet de lire votre propre carte de synastrie avec plus de précision.
@@ -135,35 +135,35 @@ export default function SynastrieAmoureusePage() {
 
           <div className="space-y-5">
             <div className="bg-pink-50 border-l-4 border-pink-500 p-5 rounded-lg">
-              <h3 className="font-bold text-lg mb-2 text-pink-700">&#x2665;&#xFE0F; Vénus, La Planète de l'Amour</h3>
+              <h3 className="font-bold text-lg mb-2 text-pink-700">&#xFE0F; Vénus, La Planète de l'Amour</h3>
               <p className="text-gray-700">
                 <strong>Vénus</strong> représente votre manière d'aimer, vos valeurs affectives, ce que vous trouvez beau et désirable dans un partenaire. En synastrie, la position de la Vénus de l'un par rapport aux planètes de l'autre est cruciale. La Vénus touchant le Soleil du partenaire crée une <strong>admiration réciproque</strong> et une attraction profonde. La Vénus en contact avec la Lune génère une tendresse émotionnelle et une sécurité affective durables. Les aspects Vénus-Vénus entre partenaires indiquent des valeurs et des goûts partagés, ciment de l'harmonie quotidienne.
               </p>
             </div>
 
             <div className="bg-red-50 border-l-4 border-red-500 p-5 rounded-lg">
-              <h3 className="font-bold text-lg mb-2 text-red-700">&#x1F525; Mars, La Planète du Désir</h3>
+              <h3 className="font-bold text-lg mb-2 text-red-700"> Mars, La Planète du Désir</h3>
               <p className="text-gray-700">
                 <strong>Mars</strong> symbolise l'énergie sexuelle, l'affirmation de soi et la manière d'agir dans une relation. La <strong>conjonction</strong> Vénus-Mars entre partenaires (votre Vénus touchant son Mars ou inversement) est l'un des indicateurs les plus forts d'une attraction physique puissante et d'une complicité sexuelle naturelle. Mars en aspect avec Jupiter crée une dynamique énergique et aventurière dans le couple. Mars en tension avec Saturne peut générer des frustrations et des blocages dans l'expression des désirs.
               </p>
             </div>
 
             <div className="bg-yellow-50 border-l-4 border-yellow-500 p-5 rounded-lg">
-              <h3 className="font-bold text-lg mb-2 text-yellow-700">&#x2600;&#xFE0F; Soleil, L'Identité Profonde</h3>
+              <h3 className="font-bold text-lg mb-2 text-yellow-700">&#xFE0F; Soleil, L'Identité Profonde</h3>
               <p className="text-gray-700">
                 Le <strong>Soleil</strong> représente l'essence de la personnalité, le moi profond et la vitalité. En synastrie, les aspects entre les Soleils des deux partenaires indiquent si vos identités fondamentales s'harmonisent ou entrent en compétition. Un Soleil-Lune en bon aspect entre partenaires est l'un des classiques de la <strong>compatibilité amoureuse</strong> durable : il crée une complémentarité naturelle entre la volonté de l'un et l'émotivité de l'autre, comme le Yang et le Yin d'une même entité.
               </p>
             </div>
 
             <div className="bg-blue-50 border-l-4 border-blue-500 p-5 rounded-lg">
-              <h3 className="font-bold text-lg mb-2 text-blue-700">&#x1F319; Lune, Les Besoins Émotionnels</h3>
+              <h3 className="font-bold text-lg mb-2 text-blue-700"> Lune, Les Besoins Émotionnels</h3>
               <p className="text-gray-700">
                 La <strong>Lune</strong> gouverne les émotions, les besoins affectifs inconscients, les habitudes et le sentiment de sécurité. La position de la Lune dans une synastrie révèle comment chaque partenaire nourrit (ou néglige) les besoins émotionnels profonds de l'autre. Deux Lunes en opposition peuvent indiquer des besoins affectifs diamétralement opposés qui nécessitent de constants ajustements. Une Lune en bel aspect avec Vénus ou Jupiter crée une atmosphère chaleureuse et bienveillante dans le couple.
               </p>
             </div>
 
             <div className="bg-purple-50 border-l-4 border-purple-500 p-5 rounded-lg">
-              <h3 className="font-bold text-lg mb-2 text-purple-700">&#x1F9ED; Ascendants, La Première Attraction</h3>
+              <h3 className="font-bold text-lg mb-2 text-purple-700"> Ascendants, La Première Attraction</h3>
               <p className="text-gray-700">
                 L'<strong>ascendant</strong> (AS) représente l'image projetée, la première impression et le style de vie. Quand les planètes de l'un tombent près de l'ascendant de l'autre, elles "éclairent" ou "challengent" l'identité projetée de ce dernier de manière très perceptible. Le Soleil ou Vénus d'un partenaire en conjonction avec l'ascendant de l'autre crée une attraction immédiate et une forte visibilité mutuelle.
               </p>
@@ -173,7 +173,7 @@ export default function SynastrieAmoureusePage() {
 
         {/* Les aspects majeurs */}
         <section className="bg-gradient-to-br from-purple-50 to-violet-50 rounded-xl p-8 mb-8 border-2 border-purple-200">
-          <h2 className="text-3xl font-bold mb-6 text-gray-900">&#x2736; Les Aspects Majeurs entre Deux Thèmes</h2>
+          <h2 className="text-3xl font-bold mb-6 text-gray-900"> Les Aspects Majeurs entre Deux Thèmes</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">La conjonction fusionne les énergies, le trigone crée l'harmonie naturelle, le carré génère des tensions stimulantes et l'opposition crée une attraction par polarité. Chaque aspect révèle une dynamique relationnelle distincte.</p>
           <p className="text-gray-700 mb-6">
             Les <strong>aspects planétaires</strong> sont les angles formés entre deux planètes sur le cercle zodiacal. Ils constituent le langage même de la synastrie : ce sont eux qui révèlent si deux énergies planétaires coopèrent harmonieusement ou se confrontent avec tension. Voici les quatre aspects fondamentaux et ce qu'ils signifient pour votre relation.
@@ -181,7 +181,7 @@ export default function SynastrieAmoureusePage() {
 
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-white rounded-lg p-6 border-2 border-indigo-300">
-              <h3 className="font-bold text-xl mb-3 text-indigo-700">&#x25CF; La Conjonction (0°)</h3>
+              <h3 className="font-bold text-xl mb-3 text-indigo-700"> La Conjonction (0°)</h3>
               <p className="text-gray-700 mb-3">
                 La <strong>conjonction</strong> est l'aspect le plus intense : deux planètes occupent la même position zodiacale. Les énergies se fusionnent et s'amplifient mutuellement. En synastrie amoureuse, une conjonction crée une résonance puissante, pour le meilleur et le pire. Une conjonction Vénus-Mars entre partenaires génère une attraction magnétique. Une conjonction Saturne-Soleil peut indiquer un lien karmatique sérieux mais parfois contraignant.
               </p>
@@ -189,7 +189,7 @@ export default function SynastrieAmoureusePage() {
             </div>
 
             <div className="bg-white rounded-lg p-6 border-2 border-green-300">
-              <h3 className="font-bold text-xl mb-3 text-green-700">&#x25B3; Le Trigone (120°)</h3>
+              <h3 className="font-bold text-xl mb-3 text-green-700"> Le Trigone (120°)</h3>
               <p className="text-gray-700 mb-3">
                 Le <strong>trigone</strong> est l'aspect le plus harmonieux de la synastrie. Il crée une fluidité naturelle entre les deux énergies planétaires, un soutien mutuel sans effort. Les couples avec beaucoup de trigones en synastrie se comprennent intuitivement, partagent des valeurs similaires et s'épanouissent ensemble sans friction majeure. Le risque ? L'absence de tension peut parfois réduire l'intensité et le sentiment d'électricité dans la relation.
               </p>
@@ -197,7 +197,7 @@ export default function SynastrieAmoureusePage() {
             </div>
 
             <div className="bg-white rounded-lg p-6 border-2 border-orange-300">
-              <h3 className="font-bold text-xl mb-3 text-orange-700">&#x25A1; Le Carré (90°)</h3>
+              <h3 className="font-bold text-xl mb-3 text-orange-700"> Le Carré (90°)</h3>
               <p className="text-gray-700 mb-3">
                 Le <strong>carré</strong> crée une tension dynamique entre deux énergies planétaires. En synastrie, il indique des zones de friction, de compétition ou d'incompréhension récurrentes. Cependant, le carré n'est pas nécessairement négatif : il génère une tension qui pousse les deux partenaires à se dépasser. De nombreuses relations passionnées et durables comportent des carrés significatifs. L'essentiel est d'en être conscient pour ne pas laisser les frictions dégénérer en conflits destructeurs.
               </p>
@@ -205,7 +205,7 @@ export default function SynastrieAmoureusePage() {
             </div>
 
             <div className="bg-white rounded-lg p-6 border-2 border-red-300">
-              <h3 className="font-bold text-xl mb-3 text-red-700">&#x2194;&#xFE0F; L'Opposition (180°)</h3>
+              <h3 className="font-bold text-xl mb-3 text-red-700">&#xFE0F; L'Opposition (180°)</h3>
               <p className="text-gray-700 mb-3">
                 L'<strong>opposition</strong> place deux planètes aux antipodes du zodiaque. Elle génère une polarité fascinante : les partenaires se sentent attirés l'un vers l'autre précisément parce qu'ils incarnent des énergies opposées et complémentaires. L'opposition crée une tension magnétique qui peut être très stimulante dans une relation amoureuse. Elle demande cependant un travail conscient pour éviter que l'attraction polaire ne devienne conflit de pouvoir ou incompréhension profonde.
               </p>
@@ -218,7 +218,7 @@ export default function SynastrieAmoureusePage() {
 
         {/* Les maisons importantes */}
         <section id="maisons" className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold mb-6 text-indigo-600">&#x1F3E0; Les Maisons Importantes pour l'Amour en Synastrie</h2>
+          <h2 className="text-3xl font-bold mb-6 text-indigo-600"> Les Maisons Importantes pour l'Amour en Synastrie</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">La 5e maison gouverne l'amour romantique et le plaisir. La 7e maison représente le partenariat et le mariage. La 8e maison révèle l'intimité profonde, la sexualité et les transformations à travers la relation.</p>
           <p className="text-gray-700 mb-6">
             En synastrie, les <strong>maisons astrologiques</strong> jouent un rôle fondamental : quand les planètes d'un partenaire tombent dans vos maisons, elles activent ces domaines de votre vie de manière significative. Trois maisons sont particulièrement déterminantes pour comprendre la dimension amoureuse d'une relation.
@@ -226,7 +226,7 @@ export default function SynastrieAmoureusePage() {
 
           <div className="space-y-6">
             <div className="bg-pink-50 border-l-4 border-pink-500 p-6 rounded-lg">
-              <h3 className="font-bold text-xl mb-3 text-pink-700">&#x2665;&#xFE0F; La 5e Maison, L'Amour Romantique</h3>
+              <h3 className="font-bold text-xl mb-3 text-pink-700">&#xFE0F; La 5e Maison, L'Amour Romantique</h3>
               <p className="text-gray-700 mb-3">
                 La <strong>5e maison</strong> gouverne la romance, le plaisir, la créativité, les aventures amoureuses et la joie de vivre en couple. Lorsque le Soleil, Vénus ou Jupiter de votre partenaire tombent dans votre 5e maison, cette personne illumine votre vie romantique et apporte de la légèreté et du plaisir. C'est souvent le signe d'une relation qui reste vivante et joyeuse dans la durée.
               </p>
@@ -236,7 +236,7 @@ export default function SynastrieAmoureusePage() {
             </div>
 
             <div className="bg-indigo-50 border-l-4 border-indigo-500 p-6 rounded-lg">
-              <h3 className="font-bold text-xl mb-3 text-indigo-700">&#x1F48D; La 7e Maison, Le Partenariat et le Mariage</h3>
+              <h3 className="font-bold text-xl mb-3 text-indigo-700"> La 7e Maison, Le Partenariat et le Mariage</h3>
               <p className="text-gray-700 mb-3">
                 La <strong>7e maison</strong> est la maison du partenariat formel, du mariage, des engagements sérieux et des contrats. C'est la maison la plus directement liée à la question "est-ce que cette personne est mon partenaire de vie ?" En synastrie, lorsque le Soleil, Vénus ou Saturne de votre partenaire touchent votre 7e maison, cette relation a une forte dimension d'engagement et de projet commun.
               </p>
@@ -246,7 +246,7 @@ export default function SynastrieAmoureusePage() {
             </div>
 
             <div className="bg-purple-50 border-l-4 border-purple-500 p-6 rounded-lg">
-              <h3 className="font-bold text-xl mb-3 text-purple-700">&#x1F300; La 8e Maison, L'Intimité et la Transformation</h3>
+              <h3 className="font-bold text-xl mb-3 text-purple-700"> La 8e Maison, L'Intimité et la Transformation</h3>
               <p className="text-gray-700 mb-3">
                 La <strong>8e maison</strong> gouverne l'intimité profonde, la sexualité, les ressources partagées, la mort symbolique et la renaissance. C'est la maison la plus intense de la synastrie. Quand les planètes d'un partenaire tombent dans votre 8e maison, cette relation vous transforme en profondeur, parfois douloureusement, toujours significativement.
               </p>
@@ -259,7 +259,7 @@ export default function SynastrieAmoureusePage() {
 
         {/* Synastrie et durabilité */}
         <section className="bg-gradient-to-br from-indigo-50 to-violet-50 rounded-xl p-8 mb-8 border-2 border-indigo-200">
-          <h2 className="text-3xl font-bold mb-6 text-gray-900">&#x231B; Synastrie et Durabilité du Couple</h2>
+          <h2 className="text-3xl font-bold mb-6 text-gray-900"> Synastrie et Durabilité du Couple</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Les aspects Saturne-Vénus ou Soleil-Lune harmonieux favorisent la durabilité. Les carrés et oppositions créent de l'intensité mais demandent un travail conscient. Aucun aspect n'est définitivement fatal dans une relation.</p>
           <p className="text-gray-700 mb-6">
             L'une des questions les plus fréquentes posées à un astrologue est : "notre synastrie indique-t-elle que notre relation peut durer ?" La réponse honnête est qu'aucune synastrie, aussi bonne soit-elle, ne garantit la durabilité d'une relation. Mais certains aspects favorisent clairement l'engagement à long terme.
@@ -267,7 +267,7 @@ export default function SynastrieAmoureusePage() {
 
           <div className="space-y-5">
             <div className="bg-white rounded-lg p-6 border-l-4 border-green-500">
-              <h3 className="font-bold text-lg mb-3 text-green-700">&#x2705; Aspects Favorables à Long Terme</h3>
+              <h3 className="font-bold text-lg mb-3 text-green-700"> Aspects Favorables à Long Terme</h3>
               <ul className="space-y-3 text-gray-700">
                 <li className="flex items-start gap-2">
                   <span className="text-green-500 font-bold">&#x2713;</span>
@@ -289,7 +289,7 @@ export default function SynastrieAmoureusePage() {
             </div>
 
             <div className="bg-white rounded-lg p-6 border-l-4 border-orange-500">
-              <h3 className="font-bold text-lg mb-3 text-orange-700">&#x26A0;&#xFE0F; Défis à Surmonter Consciemment</h3>
+              <h3 className="font-bold text-lg mb-3 text-orange-700">&#xFE0F; Défis à Surmonter Consciemment</h3>
               <ul className="space-y-3 text-gray-700">
                 <li className="flex items-start gap-2">
                   <span className="text-orange-500 font-bold">!</span>
@@ -307,7 +307,7 @@ export default function SynastrieAmoureusePage() {
             </div>
 
             <div className="bg-indigo-50 border-l-4 border-indigo-500 p-5 rounded-lg">
-              <h4 className="font-bold text-indigo-800 mb-2">&#x1F52E; L'Interprétation Globale Prime sur les Aspects Isolés</h4>
+              <h4 className="font-bold text-indigo-800 mb-2"> L'Interprétation Globale Prime sur les Aspects Isolés</h4>
               <p className="text-gray-700">
                 Une synastrie se lit comme un tout, pas comme une liste de bons et mauvais aspects. Un couple avec beaucoup de carrés mais une forte présence de Saturne harmonieux peut être plus durable qu'un couple avec des trigones mais aucune planète d'engagement. Pour explorer comment votre synastrie s'inscrit dans <Link href="/sentiments/avenir-amoureux/" className="text-indigo-600 hover:text-indigo-800 underline font-medium">l'avenir de votre couple</Link>, une consultation personnalisée offre la lecture la plus juste de votre situation spécifique.
               </p>

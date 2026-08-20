@@ -16,7 +16,7 @@ const config: ContentPageConfig = {
     { name: 'Rêver de son Ex', url: 'https://www.voyantlove.fr/rupture/rever-de-son-ex/' },
   ],
   header: {
-    emoji: '🌙',
+    emoji: '',
     h1: 'Rêver de son ex : signification et interprétation',
     subtitle: 'Ce que ces rêves révèlent sur votre monde intérieur, et ce qu\'ils ne prédisent pas',
     gradient: 'from-indigo-700 via-purple-700 to-violet-800',
@@ -28,10 +28,10 @@ const config: ContentPageConfig = {
   },
   accentText: 'text-indigo-700',
   stats: [
-    { icon: '🔮', value: 'Reconnue', label: 'Expertise' },
-    { icon: '🌙', value: '3,800+', label: 'Rêves interprétés' },
-    { icon: '⭐', value: '4.8/5', label: '301 Avis' },
-    { icon: '🔒', value: '100%', label: 'Confidentiel' },
+    { icon: '', value: 'Reconnue', label: 'Expertise' },
+    { icon: '', value: '3,800+', label: 'Rêves interprétés' },
+    { icon: '', value: '4.8/5', label: '301 Avis' },
+    { icon: '', value: '100%', label: 'Confidentiel' },
   ],
   eeat: { colorScheme: 'purple', method: 'Interprétation symbolique des rêves et guidance émotionnelle' },
   cta: { topic: 'rupture', slug: 'rever-ex' },
@@ -90,7 +90,7 @@ export default function ReverDeSonExPage() {
 
         {/* H2: Pourquoi on rêve de son ex */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">{'\u{1F4AD}'} Pourquoi Rêve-t-on de son Ex, Même Longtemps Après</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Pourquoi Rêve-t-on de son Ex, Même Longtemps Après</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le sommeil traite les emotions residuelles que la vie eveillee met de cote : rever de son ex, meme apres l&apos;avoir oublie, signale une part du deuil encore active en profondeur, souvent ravivee par une transition de vie.</p>
           <p className="text-gray-700 leading-relaxed mb-4">
             Pendant le sommeil, l&apos;esprit range et retraite les <strong>émotions</strong> que la journée refoule. Un ex, figure chargée d&apos;affect, réapparaît naturellement dans ce travail nocturne, parfois des années après, sans que cela signifie un retour en arrière. Ces rêves surgissent souvent lors de <strong>transitions</strong> : une nouvelle relation, une date anniversaire, un changement de vie, comme si l&apos;inconscient rouvrait brièvement un dossier resté entrouvert.
@@ -102,30 +102,30 @@ export default function ReverDeSonExPage() {
 
         {/* H2: Les types de rêves */}
         <section id="types" className="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-xl p-8 mb-8 border-2 border-indigo-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">{'\u{1F32C}️'} Les Types de Rêves d&apos;Ex les Plus Fréquents et Leur Signification</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">{'️'} Les Types de Rêves d&apos;Ex les Plus Fréquents et Leur Signification</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Chaque scenario de reve d&apos;ex renvoie a une emotion interieure differente : le retour a un desir non resolu, l&apos;indifference a une peur d&apos;abandon, le baiser a un manque, la dispute a un conflit non solde.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Voici les <strong>scénarios</strong> les plus courants, décodés comme des reflets de votre monde intérieur. La clé reste toujours le <strong>ressenti au réveil</strong>, plus parlant que le scénario lui-même.
           </p>
           <div className="space-y-4">
             <div className="bg-white rounded-lg p-6 border-l-4 border-indigo-500">
-              <h3 className="font-bold text-lg mb-2 text-indigo-700">{'↩️'} Rêver de son ex qui revient</h3>
+              <h3 className="font-bold text-lg mb-2 text-indigo-700">{''} Rêver de son ex qui revient</h3>
               <p className="text-gray-700 text-sm"><strong>Peut refléter :</strong> un désir non résolu, un espoir de réparation, un besoin de clôture. <span className="text-gray-500">Ne prédit pas un retour réel, c&apos;est un mouvement intérieur, pas une annonce.</span></p>
             </div>
             <div className="bg-white rounded-lg p-6 border-l-4 border-purple-500">
-              <h3 className="font-bold text-lg mb-2 text-purple-700">{'\u{1F6B6}'} Rêver de son ex qui nous ignore ou nous rejette</h3>
+              <h3 className="font-bold text-lg mb-2 text-purple-700">Rêver de son ex qui nous ignore ou nous rejette</h3>
               <p className="text-gray-700 text-sm"><strong>Peut refléter :</strong> une peur d&apos;abandon, une blessure rejouée pour être apprivoisée, une insécurité personnelle. <span className="text-gray-500">Ne dit rien des sentiments réels de l&apos;autre.</span></p>
             </div>
             <div className="bg-white rounded-lg p-6 border-l-4 border-violet-500">
-              <h3 className="font-bold text-lg mb-2 text-violet-700">{'\u{1F48B}'} Rêver de son ex qui nous embrasse</h3>
+              <h3 className="font-bold text-lg mb-2 text-violet-700">Rêver de son ex qui nous embrasse</h3>
               <p className="text-gray-700 text-sm"><strong>Peut refléter :</strong> un manque de tendresse, la nostalgie d&apos;une intimité, un besoin affectif présent, pas nécessairement lié à cet ex précis. <span className="text-gray-500">Souvent un besoin, pas un signe.</span></p>
             </div>
             <div className="bg-white rounded-lg p-6 border-l-4 border-fuchsia-500">
-              <h3 className="font-bold text-lg mb-2 text-fuchsia-700">{'\u{26A1}'} Rêver de se disputer avec son ex</h3>
+              <h3 className="font-bold text-lg mb-2 text-fuchsia-700">Rêver de se disputer avec son ex</h3>
               <p className="text-gray-700 text-sm"><strong>Peut refléter :</strong> un conflit non soldé, de la colère non exprimée, un dialogue intérieur inachevé. <span className="text-gray-500">Souvent le signe d&apos;une émotion qui cherche une issue.</span></p>
             </div>
             <div className="bg-white rounded-lg p-6 border-l-4 border-slate-500">
-              <h3 className="font-bold text-lg mb-2 text-slate-700">{'\u{1F91D}'} Rêver que son ex refait sa vie</h3>
+              <h3 className="font-bold text-lg mb-2 text-slate-700">Rêver que son ex refait sa vie</h3>
               <p className="text-gray-700 text-sm"><strong>Peut refléter :</strong> un travail d&apos;acceptation en cours, la peur de la page qui se tourne. <span className="text-gray-500">Souvent le signe que vous avancez, même si le rêve est douloureux.</span></p>
             </div>
           </div>
@@ -135,14 +135,14 @@ export default function ReverDeSonExPage() {
 
         {/* H2: Ce qu'il ne faut pas y lire */}
         <section id="pieges" className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">{'\u{26A0}️'} Ce qu&apos;il ne Faut Pas Lire dans un Rêve d&apos;Ex</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">{'️'} Ce qu&apos;il ne Faut Pas Lire dans un Rêve d&apos;Ex</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Un reve n&apos;est ni une premonition, ni un message de l&apos;autre, ni une preuve de sentiments intacts : le prendre pour une annonce du futur transforme un simple travail interieur en attente illusoire.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             La tentation est grande de faire d&apos;un rêve un <strong>signe</strong>. Voici les interprétations à écarter pour ne pas se piéger soi-même.
           </p>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-white rounded-lg p-6 border-l-4 border-red-500">
-              <h3 className="font-bold text-lg mb-3 text-red-700">{'\u{1F6D1}'} À ne Pas Conclure</h3>
+              <h3 className="font-bold text-lg mb-3 text-red-700">À ne Pas Conclure</h3>
               <ul className="space-y-2 text-gray-700 text-sm">
                 <li>&bull; &laquo;Il a rêvé de moi, donc il pense à moi&raquo;</li>
                 <li>&bull; &laquo;J&apos;ai rêvé qu&apos;il revenait, donc il va revenir&raquo;</li>
@@ -151,7 +151,7 @@ export default function ReverDeSonExPage() {
               </ul>
             </div>
             <div className="bg-white rounded-lg p-6 border-l-4 border-green-500">
-              <h3 className="font-bold text-lg mb-3 text-green-700">{'✅'} Lecture Plus Juste</h3>
+              <h3 className="font-bold text-lg mb-3 text-green-700">{''} Lecture Plus Juste</h3>
               <ul className="space-y-2 text-gray-700 text-sm">
                 <li>&bull; Le rêve parle de <strong>mon</strong> monde intérieur</li>
                 <li>&bull; Il éclaire une émotion à accueillir, pas un futur</li>
@@ -161,28 +161,28 @@ export default function ReverDeSonExPage() {
             </div>
           </div>
           <div className="mt-6 bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded">
-            <p className="text-gray-700"><strong>{'\u{1F4A1}'} À retenir :</strong> aucun rêve ne prouve ce que ressent l&apos;autre. Pour cette question précise, mieux vaut observer des faits concrets, un point détaillé dans notre guide <Link href="/sentiments/pense-t-il-elle-a-moi/" className="text-indigo-600 hover:text-indigo-800 underline font-medium">pense-t-il/elle à moi</Link>, que d&apos;interpréter un songe.</p>
+            <p className="text-gray-700"><strong>À retenir :</strong> aucun rêve ne prouve ce que ressent l&apos;autre. Pour cette question précise, mieux vaut observer des faits concrets, un point détaillé dans notre guide <Link href="/sentiments/pense-t-il-elle-a-moi/" className="text-indigo-600 hover:text-indigo-800 underline font-medium">pense-t-il/elle à moi</Link>, que d&apos;interpréter un songe.</p>
           </div>
         </section>
 
         {/* H2: En quoi une vraie interprétation aide */}
         <section className="bg-gradient-to-r from-purple-50 to-indigo-50 rounded-xl p-8 mb-8 border-2 border-purple-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">{'\u{1F9ED}'} En Quoi une Interprétation Aide Vraiment</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">En Quoi une Interprétation Aide Vraiment</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Une interpretation utile ne predit pas l&apos;avenir : elle met des mots sur l&apos;emotion que le reve met en scene, aide a identifier ce qui reste a cicatriser et apaise, surtout face a un reve recurrent.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Un rêve d&apos;ex bien lu devient un <strong>outil de connaissance de soi</strong>. Plutôt que de chercher un présage, il s&apos;agit d&apos;écouter ce que l&apos;émotion révèle et d&apos;en faire un pas vers l&apos;apaisement.
           </p>
           <div className="grid md:grid-cols-3 gap-6">
             <div className="bg-white rounded-lg p-6 border-l-4 border-indigo-500">
-              <h3 className="font-bold text-lg mb-2 text-indigo-700">{'\u{1F50D}'} Nommer l&apos;émotion</h3>
+              <h3 className="font-bold text-lg mb-2 text-indigo-700">Nommer l&apos;émotion</h3>
               <p className="text-gray-700 text-sm">Identifier le sentiment dominant du rêve, manque, colère, peur, met en lumière ce qui demande encore de l&apos;attention.</p>
             </div>
             <div className="bg-white rounded-lg p-6 border-l-4 border-purple-500">
-              <h3 className="font-bold text-lg mb-2 text-purple-700">{'\u{1F331}'} Repérer l&apos;étape</h3>
+              <h3 className="font-bold text-lg mb-2 text-purple-700">Repérer l&apos;étape</h3>
               <p className="text-gray-700 text-sm">Le rêve situe où vous en êtes du deuil. Un rêve douloureux peut paradoxalement signaler que vous <Link href="/rupture/comment-tourner-la-page/" className="text-purple-600 hover:text-purple-800 underline font-medium">tournez la page</Link>.</p>
             </div>
             <div className="bg-white rounded-lg p-6 border-l-4 border-violet-500">
-              <h3 className="font-bold text-lg mb-2 text-violet-700">{'\u{1F54A}️'} Apaiser le récurrent</h3>
+              <h3 className="font-bold text-lg mb-2 text-violet-700">{'️'} Apaiser le récurrent</h3>
               <p className="text-gray-700 text-sm">Un rêve qui revient insiste sur une émotion. Le comprendre l&apos;aide souvent à se dénouer et à s&apos;espacer.</p>
             </div>
           </div>

@@ -289,7 +289,7 @@ function EmailCapture({
   return (
     <div>
       <div className="text-center mb-6">
-        <div className="text-4xl mb-2">✨</div>
+        <div className="text-4xl mb-2"></div>
         <h2 className="text-2xl font-bold mb-2">Votre lecture est presque prête</h2>
         <p className="text-white/75 leading-relaxed">
           Indiquez votre prénom et votre email pour recevoir votre lecture
@@ -335,7 +335,7 @@ function EmailCapture({
         </button>
       </form>
       <p className="mt-3 text-center text-[11px] text-white/45">
-        🔒 Vos informations restent confidentielles.
+        Vos informations restent confidentielles.
       </p>
     </div>
   );
@@ -378,14 +378,14 @@ function Result({
     // (2026-07-09 to 07-12) after the bar was slimmed down but never
     // re-verified against this screen.
     <div className="text-center pb-16">
-      <div className="text-4xl mb-3">🔮</div>
+      <div className="text-4xl mb-3"></div>
       <h2 className="text-2xl font-bold mb-5">Votre lecture est prête</h2>
       <button
         onClick={onCta}
         className="w-full py-4 rounded-xl font-bold text-lg text-white transition-transform active:scale-95 shadow-lg"
         style={{ background: 'linear-gradient(90deg,#ff6b9d,#ff8f6b)' }}
       >
-        📞 {CTA_LABEL}
+        {CTA_LABEL}
       </button>
       <p className="mt-2 text-lg font-bold" style={{ color: '#f4d98a' }}>
         {formatPhone(phoneNumber)}

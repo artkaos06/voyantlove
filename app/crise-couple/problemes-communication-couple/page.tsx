@@ -27,10 +27,10 @@ const config: ContentPageConfig = {
     ],
   },
   stats: [
-    { icon: '💬', value: 'Nettes', label: 'Améliorations' },
-    { icon: '🔮', value: 'Élevée', label: 'Satisfaction' },
-    { icon: '💡', value: 'Vaste', label: 'Expérience' },
-    { icon: '❤️', value: 'Reconnue', label: 'Expertise' },
+    { icon: '', value: 'Nettes', label: 'Améliorations' },
+    { icon: '', value: 'Élevée', label: 'Satisfaction' },
+    { icon: '', value: 'Vaste', label: 'Expérience' },
+    { icon: '', value: 'Reconnue', label: 'Expertise' },
   ],
   eeat: { colorScheme: 'purple', method: 'Tarot relationnel et communication consciente' },
   cta: { topic: 'crise-couple', slug: 'problemes-communication-couple' },
@@ -101,7 +101,7 @@ export default function ProblemesCommunicationCouplePage() {
         <VoyantRecommendations topic="crise-couple" limit={3} showOnlineFirst={true} source="problemes-communication-couple-cards-top" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold mb-6 text-purple-600">🔍 Les 7 Principaux Problèmes de Communication dans le Couple</h2>
+          <h2 className="text-3xl font-bold mb-6 text-purple-600">Les 7 Principaux Problèmes de Communication dans le Couple</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Les sept problèmes de communication les plus fréquents sont les non-dits, les disputes répétitives sans résolution, le manque d'écoute, la communication toxique, le mur du silence, les différences de langage amoureux et l'évitement émotionnel.</p>
           <p className="text-gray-700 mb-6">
             Identifier précisément votre <strong>type de problème de communication</strong> est la première étape vers la résolution. Voici les difficultés les plus fréquentes que rencontrent les couples.
@@ -202,7 +202,7 @@ export default function ProblemesCommunicationCouplePage() {
         </section>
 
         <section id="solutions" className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-8 mb-8 border-2 border-purple-200">
-          <h2 className="text-3xl font-bold mb-6 text-gray-900">🛠️ Solutions Concrètes pour Reconstruire la Communication</h2>
+          <h2 className="text-3xl font-bold mb-6 text-gray-900">Solutions Concrètes pour Reconstruire la Communication</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Reconstruire la communication passe par l'écoute active, la communication non-violente (CNV), un rituel de dialogue hebdomadaire, la gestion constructive des conflits et des techniques pour briser le mur du silence. Les améliorations apparaissent en 2 à 4 semaines de pratique.</p>
           <p className="text-gray-700 mb-6">
             Améliorer la <strong>communication de couple</strong> demande des actions concrètes et une pratique régulière. Voici les techniques les plus efficaces validées par la psychologie relationnelle et la sagesse du tarot.
@@ -381,7 +381,7 @@ export default function ProblemesCommunicationCouplePage() {
         <VoyantQuickCTA topic="crise-couple" source="problemes-communication-couple-banner-mid" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold mb-6 text-purple-600">🔮 Le Tarot de la Communication de Couple : 5 Positions</h2>
+          <h2 className="text-3xl font-bold mb-6 text-purple-600">Le Tarot de la Communication de Couple : 5 Positions</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le tirage de communication utilise cinq positions pour révéler l'état du dialogue, les blocages inconscients, ce que votre partenaire ne dit pas, vos propres non-dits et le chemin de guérison concret. Il accède aux dynamiques qui échappent à la seule raison.</p>
           <p className="text-gray-700 mb-6">
             Ce <strong>tirage spécialisé</strong> révèle précisément où votre communication se bloque et comment la débloquer. Le tarot accède aux dynamiques inconscientes qui échappent à la thérapie classique.
@@ -426,7 +426,7 @@ export default function ProblemesCommunicationCouplePage() {
         </section>
 
         <section className="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-xl p-8 mb-8 border-2 border-indigo-200">
-          <h2 className="text-3xl font-bold mb-6 text-gray-900">💡 Les 5 Langages Amoureux et la Communication</h2>
+          <h2 className="text-3xl font-bold mb-6 text-gray-900">Les 5 Langages Amoureux et la Communication</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Les cinq langages amoureux sont les paroles valorisantes, les moments de qualité, les cadeaux, les services rendus et le toucher physique. Quand les partenaires parlent des langages différents, ils s'aiment sans se sentir aimés, ce qui crée incompréhension et frustration.</p>
           <p className="text-gray-700 mb-6">
             Selon Dr. Gary Chapman, chaque personne donne et reçoit l'amour selon un <strong>langage principal</strong>. Quand les partenaires ont des langages différents, ils peuvent s'aimer profondément mais ne pas se sentir aimés. Comprendre ces langages transforme la communication.
@@ -493,7 +493,7 @@ export default function ProblemesCommunicationCouplePage() {
         </section>
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold mb-6 text-purple-600">⚠️ Quand Consulter un Thérapeute de Couple ?</h2>
+          <h2 className="text-3xl font-bold mb-6 text-purple-600">Quand Consulter un Thérapeute de Couple ?</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Consultez un thérapeute de couple si la communication est devenue toxique ou violente, si le silence dure plus de 3 mois, si les mêmes conflits se répètent depuis plus d'un an, ou si l'un de vous envisage sérieusement la séparation.</p>
           <p className="text-gray-700 mb-6">
             Certains problèmes de communication dépassent ce que vous pouvez résoudre seuls. Voici les <strong>signaux d'alerte</strong> qui indiquent qu'une aide professionnelle est nécessaire.
@@ -501,7 +501,7 @@ export default function ProblemesCommunicationCouplePage() {
 
           <div className="space-y-4">
             <div className="flex items-start gap-3 bg-red-50 p-4 rounded-lg border-l-4 border-red-500">
-              <div className="text-2xl text-red-600">🚨</div>
+              <div className="text-2xl text-red-600"></div>
               <div>
                 <h3 className="font-bold text-gray-800 mb-1">Communication devenue toxique ou violente</h3>
                 <p className="text-gray-700">Insultes régulières, mépris, violence verbale ou physique, menaces. Ces dynamiques nécessitent une intervention immédiate avant qu'elles ne détruisent irrémédiablement la relation.</p>
@@ -509,7 +509,7 @@ export default function ProblemesCommunicationCouplePage() {
             </div>
 
             <div className="flex items-start gap-3 bg-orange-50 p-4 rounded-lg border-l-4 border-orange-500">
-              <div className="text-2xl text-orange-600">⚡</div>
+              <div className="text-2xl text-orange-600"></div>
               <div>
                 <h3 className="font-bold text-gray-800 mb-1">Silence de plus de 3 mois</h3>
                 <p className="text-gray-700">Si vous ne parlez plus depuis plusieurs mois et ne parvenez pas à briser le mur malgré vos efforts, un médiateur peut faciliter la reprise du dialogue.</p>
@@ -517,7 +517,7 @@ export default function ProblemesCommunicationCouplePage() {
             </div>
 
             <div className="flex items-start gap-3 bg-yellow-50 p-4 rounded-lg border-l-4 border-yellow-500">
-              <div className="text-2xl text-yellow-600">🔄</div>
+              <div className="text-2xl text-yellow-600"></div>
               <div>
                 <h3 className="font-bold text-gray-800 mb-1">Mêmes conflits répétés depuis plus d'un an</h3>
                 <p className="text-gray-700">Si vous vous disputez sur les mêmes sujets pendant plus d'un an sans trouver de résolution, vous êtes dans un pattern qui nécessite un regard extérieur pour être brisé.</p>
@@ -525,7 +525,7 @@ export default function ProblemesCommunicationCouplePage() {
             </div>
 
             <div className="flex items-start gap-3 bg-blue-50 p-4 rounded-lg border-l-4 border-blue-500">
-              <div className="text-2xl text-blue-600">💔</div>
+              <div className="text-2xl text-blue-600"></div>
               <div>
                 <h3 className="font-bold text-gray-800 mb-1">Envisage sérieusement la séparation</h3>
                 <p className="text-gray-700">Si l'un de vous pense régulièrement à se séparer, une thérapie de couple peut soit <Link href="/crise-couple/sauver-son-couple/" className="text-purple-600 hover:text-purple-800 underline font-medium">sauver votre couple</Link>, soit vous aider à vous séparer de manière saine si c'est la meilleure option.</p>
@@ -533,7 +533,7 @@ export default function ProblemesCommunicationCouplePage() {
             </div>
 
             <div className="flex items-start gap-3 bg-purple-50 p-4 rounded-lg border-l-4 border-purple-500">
-              <div className="text-2xl text-purple-600">🔍</div>
+              <div className="text-2xl text-purple-600"></div>
               <div>
                 <h3 className="font-bold text-gray-800 mb-1">Traumatismes ou problèmes psychologiques individuels</h3>
                 <p className="text-gray-700">Si l'un de vous souffre de dépression, anxiété, traumatismes passés, ou troubles de personnalité, ces problèmes impactent forcément la communication et nécessitent un accompagnement spécialisé.</p>

@@ -16,7 +16,7 @@ const config: ContentPageConfig = {
     { name: 'Surmonter une Trahison', url: 'https://www.voyantlove.fr/rupture/surmonter-trahison/' },
   ],
   header: {
-    emoji: '🖤',
+    emoji: '',
     h1: 'Surmonter une trahison amoureuse',
     subtitle: 'Guérir de l\'infidélité avec la guidance de la voyance et du tarot',
     gradient: 'from-gray-700 via-gray-800 to-gray-900',
@@ -27,10 +27,10 @@ const config: ContentPageConfig = {
   },
   accentText: 'text-gray-700',
   stats: [
-    { icon: '⭐', value: '4.9/5', label: '341 Avis' },
-    { icon: '💔', value: '12-24', label: 'Mois de guérison' },
-    { icon: '🔄', value: '60%', label: 'Couples reconstruits' },
-    { icon: '🔮', value: '15 ans', label: 'Expérience' },
+    { icon: '', value: '4.9/5', label: '341 Avis' },
+    { icon: '', value: '12-24', label: 'Mois de guérison' },
+    { icon: '', value: '60%', label: 'Couples reconstruits' },
+    { icon: '', value: '15 ans', label: 'Expérience' },
   ],
   eeat: { colorScheme: 'rose', method: 'Guidance voyance pour surmonter la trahison amoureuse' },
   cta: { topic: 'rupture', slug: 'surmonter-trahison' },
@@ -82,7 +82,7 @@ export default function SurmonterTrahisonPage() {
         <VoyantRecommendations topic="rupture" limit={3} showOnlineFirst={true} source="surmonter-trahison-cards-top" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">🔮 Ce que le Tarot Révèle sur la Trahison</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Ce que le Tarot Révèle sur la Trahison</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le tarot ne se contente pas de confirmer une infidélité : il dévoile les raisons profondes de la tromperie, les émotions cachées de votre partenaire, et le chemin de guérison qui s'offre à vous.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Les arcanes du <strong>tarot</strong> portent une sagesse millénaire sur les épreuves du cœur. Quand une <strong>trahison</strong> survient dans un <strong>couple</strong>, les cartes révèlent bien plus que la surface des événements. Elles plongent dans les profondeurs de l'âme pour éclairer les motivations inconscientes, les blessures anciennes et les possibilités de renouveau.
@@ -104,7 +104,7 @@ export default function SurmonterTrahisonPage() {
         </section>
 
         <section className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl p-8 mb-8 border-2 border-gray-300">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">💪 Les 5 Étapes pour Surmonter la Trahison</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Les 5 Étapes pour Surmonter la Trahison</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">La guérison après une trahison suit cinq étapes clés : le choc initial et la colère, la quête de vérité, le deuil de la relation idéalisée, la reconstruction de l'estime de soi, et le pardon libérateur.</p>
           <div className="space-y-6">
             <div className="flex items-start gap-4">
@@ -148,7 +148,7 @@ export default function SurmonterTrahisonPage() {
         <VoyantQuickCTA topic="rupture" source="surmonter-trahison-banner-mid" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">🔄 Rester ou Partir : Ce que la Voyance Éclaire</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Rester ou Partir : Ce que la Voyance Éclaire</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">La décision de rester ou de quitter après une trahison est profondément personnelle. Le tarot analyse les deux voies et révèle les potentiels de chaque choix pour vous aider à décider en conscience.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             La question la plus douloureuse après une <strong>infidélité</strong> est : dois-je rester ou partir ? Il n'existe pas de réponse universelle. La <strong>voyance</strong> ne vous impose pas un choix mais éclaire les conséquences probables de chaque voie. Le <strong>tarot</strong> est un outil remarquable pour cette prise de décision car il capte les <strong>énergies</strong> des deux futurs possibles.
@@ -180,7 +180,7 @@ export default function SurmonterTrahisonPage() {
         </section>
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">🌟 Transformer la Blessure en Force</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Transformer la Blessure en Force</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">La voyance enseigne que toute épreuve porte en elle une graine de transformation. La trahison, malgré sa brutalité, peut devenir le catalyseur d'un éveil personnel profond et d'un amour futur plus authentique.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Aussi paradoxal que cela puisse sembler au cœur de la souffrance, de nombreuses personnes témoignent que leur <strong>trahison amoureuse</strong> a été le déclencheur d'une transformation de vie profonde. La <strong>voyance</strong> confirme cette dimension karmique : certaines épreuves sont des catalyseurs d'éveil nécessaires sur notre <strong>chemin de vie</strong>.

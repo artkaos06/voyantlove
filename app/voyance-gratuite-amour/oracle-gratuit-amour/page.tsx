@@ -75,7 +75,7 @@ export default function OracleGratuitAmourPage() {
       <header className="bg-gradient-to-r from-teal-500 via-emerald-500 to-green-500 text-white py-16 px-4">
         <div className="max-w-4xl mx-auto">
           <Link href="/voyance-gratuite-amour/" className="text-white/80 hover:text-white mb-4 inline-block">&larr; Retour &agrave; Voyance Gratuite Amour</Link>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">&#x1F52E; Oracle gratuit amour</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4"> Oracle gratuit amour</h1>
           <p className="text-xl opacity-95 mb-6">Belline, G&eacute; et Guidance Sentimentale pour &eacute;clairer votre c&oelig;ur</p>
           <div className="flex gap-4 flex-wrap">
             <a href="#consultation" className="bg-white text-teal-600 px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition">Consultation Oracle</a>
@@ -94,10 +94,10 @@ export default function OracleGratuitAmourPage() {
       <div className="max-w-4xl mx-auto px-4 py-8">
         {/* Stats bar */}
         <div className="bg-white rounded-xl shadow-md p-6 mb-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-          <div><div className="text-3xl mb-1">&#x1F52E;</div><div className="text-2xl font-bold text-teal-600">3 oracles</div><div className="text-sm text-gray-600">Jeux analys&eacute;s</div></div>
-          <div><div className="text-3xl mb-1">&#x2728;</div><div className="text-2xl font-bold text-teal-600">Intuitif</div><div className="text-sm text-gray-600">Approche guid&eacute;e</div></div>
-          <div><div className="text-3xl mb-1">&#x2B50;</div><div className="text-2xl font-bold text-teal-600">Appr&eacute;ci&eacute;</div><div className="text-sm text-gray-600">Par les consultants</div></div>
-          <div><div className="text-3xl mb-1">&#x1F4AC;</div><div className="text-2xl font-bold text-teal-600">Fiable</div><div className="text-sm text-gray-600">Guidance personnalis&eacute;e</div></div>
+          <div><div className="text-3xl mb-1"></div><div className="text-2xl font-bold text-teal-600">3 oracles</div><div className="text-sm text-gray-600">Jeux analys&eacute;s</div></div>
+          <div><div className="text-3xl mb-1"></div><div className="text-2xl font-bold text-teal-600">Intuitif</div><div className="text-sm text-gray-600">Approche guid&eacute;e</div></div>
+          <div><div className="text-3xl mb-1"></div><div className="text-2xl font-bold text-teal-600">Appr&eacute;ci&eacute;</div><div className="text-sm text-gray-600">Par les consultants</div></div>
+          <div><div className="text-3xl mb-1"></div><div className="text-2xl font-bold text-teal-600">Fiable</div><div className="text-sm text-gray-600">Guidance personnalis&eacute;e</div></div>
         </div>
 
         {/* EEAT Signal */}
@@ -119,7 +119,7 @@ export default function OracleGratuitAmourPage() {
 
         {/* Section 1: Diff&eacute;rence Oracle vs Tarot en Amour */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">&#x2696;&#xFE0F; Diff&eacute;rence Oracle vs Tarot en Amour</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">&#xFE0F; Diff&eacute;rence Oracle vs Tarot en Amour</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">L&apos;oracle et le tarot sont deux outils de voyance sentimentale distincts : le tarot poss&egrave;de une structure fixe de 78 cartes, tandis que l&apos;oracle est un jeu libre avec sa propre symbolique, offrant des messages plus directs et intuitifs pour les questions amoureuses.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Comprendre la diff&eacute;rence entre un <strong>oracle amour gratuit</strong> et un <strong>tarot amoureux</strong> est essentiel pour choisir l&apos;outil de <strong>voyance sentimentale</strong> le plus adapt&eacute; &agrave; votre question. Si vous explorez le monde de la <Link href="/voyance-gratuite-amour/" className="text-teal-600 hover:text-teal-800 underline font-medium">voyance gratuite amour</Link>, conna&icirc;tre ces distinctions vous aidera &agrave; formuler des questions plus pr&eacute;cises et &agrave; mieux interpr&eacute;ter les r&eacute;ponses re&ccedil;ues.
@@ -158,7 +158,7 @@ export default function OracleGratuitAmourPage() {
 
         {/* Section 2: Oracle Belline pour les Sentiments */}
         <section id="belline" className="bg-gradient-to-br from-teal-50 to-emerald-50 rounded-xl p-8 mb-8 border-2 border-teal-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">&#x1F31F; Oracle Belline pour les Sentiments</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6"> Oracle Belline pour les Sentiments</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">L&apos;Oracle Belline amour gratuit est l&apos;un des jeux divinatoires les plus pr&eacute;cis pour les questions sentimentales. Ses 52 cartes r&eacute;parties en sept groupes plan&eacute;taires offrent une lecture d&eacute;taill&eacute;e de votre destin amoureux.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Cr&eacute;&eacute; par le c&eacute;l&egrave;bre <strong>voyant Edmond</strong> au XIX&egrave;me si&egrave;cle puis red&eacute;couvert par Marcel Belline, l&apos;<strong>Oracle Belline</strong> est un tr&eacute;sor de la <strong>voyance fran&ccedil;aise</strong>. Ses 52 cartes sont organis&eacute;es en sept groupes li&eacute;s aux plan&egrave;tes, chacun apportant un &eacute;clairage unique sur votre <strong>vie sentimentale</strong>. En mati&egrave;re d&apos;<strong>oracle amour gratuit</strong>, le Belline se distingue par sa capacit&eacute; &agrave; d&eacute;crire avec finesse les &eacute;motions, les intentions et les &eacute;volutions d&apos;une <strong>relation amoureuse</strong>.
@@ -190,7 +190,7 @@ export default function OracleGratuitAmourPage() {
 
         {/* Section 3: Oracle de G&eacute; : Clart&eacute; Situationnelle */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">&#x1F4A1; Oracle de G&eacute; : Clart&eacute; Situationnelle</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6"> Oracle de G&eacute; : Clart&eacute; Situationnelle</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">L&apos;Oracle de G&eacute; et ses 61 cartes illustr&eacute;es de sc&egrave;nes concr&egrave;tes de la vie quotidienne offrent une clart&eacute; imm&eacute;diate sur les situations amoureuses confuses et les dynamiques de couple.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Cr&eacute;&eacute; par G&eacute;rard Barbier, l&apos;<strong>Oracle de G&eacute;</strong> se distingue par ses illustrations r&eacute;alistes repr&eacute;sentant des sc&egrave;nes de la vie quotidienne. Cette approche concr&egrave;te en fait un outil de <strong>voyance sentimentale</strong> particuli&egrave;rement efficace pour les personnes qui cherchent des r&eacute;ponses claires et directes. Lorsque vous traversez une p&eacute;riode de confusion amoureuse et que vous avez besoin de <Link href="/rupture/guerir-rupture/" className="text-teal-600 hover:text-teal-800 underline font-medium">surmonter une rupture amoureuse</Link> ou de comprendre une <strong>situation sentimentale</strong> complexe, l&apos;Oracle de G&eacute; apporte une lumi&egrave;re bienvenue.
@@ -224,7 +224,7 @@ export default function OracleGratuitAmourPage() {
 
         {/* Section 4: Oracle des Anges : Gu&eacute;rison et Guidance */}
         <section className="bg-gradient-to-br from-emerald-50 to-green-50 rounded-xl p-8 mb-8 border-2 border-emerald-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">&#x1F54A;&#xFE0F; Oracle des Anges : Gu&eacute;rison et Guidance</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">&#xFE0F; Oracle des Anges : Gu&eacute;rison et Guidance</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">L&apos;Oracle des Anges est un outil de guidance spirituelle d&eacute;di&eacute; &agrave; la gu&eacute;rison &eacute;motionnelle et au r&eacute;confort des c&oelig;urs bless&eacute;s. Ses messages bienveillants accompagnent les transitions amoureuses les plus d&eacute;licates.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             L&apos;<strong>Oracle des Anges</strong> occupe une place particuli&egrave;re dans la <strong>voyance amoureuse</strong> : il ne cherche pas tant &agrave; pr&eacute;dire qu&apos;&agrave; gu&eacute;rir. Inspir&eacute; par Doreen Virtue et d&apos;autres auteurs spirituels, cet <strong>oracle</strong> canalise des messages d&apos;amour inconditionnel et de r&eacute;confort. Il est particuli&egrave;rement pr&eacute;cieux pour ceux qui traversent un <strong>chagrin d&apos;amour</strong> et cherchent &agrave; <Link href="/rupture/chagrin-damour/" className="text-teal-600 hover:text-teal-800 underline font-medium">gu&eacute;rir d&apos;un chagrin d&apos;amour</Link> en retrouvant confiance en l&apos;avenir.
@@ -256,7 +256,7 @@ export default function OracleGratuitAmourPage() {
 
         {/* Section 5: Choisir Votre Oracle Amoureux */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6" id="consultation">&#x1F3AF; Choisir Votre Oracle Amoureux</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6" id="consultation"> Choisir Votre Oracle Amoureux</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le choix de l&apos;oracle d&eacute;pend de votre question, de votre sensibilit&eacute; et de ce que vous attendez de la consultation. Chaque oracle r&eacute;pond &agrave; un besoin sp&eacute;cifique dans votre parcours sentimental.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Face &agrave; la diversit&eacute; des <strong>oracles amour gratuits</strong> disponibles, il est naturel de se demander lequel correspond le mieux &agrave; votre situation. La <strong>voyance sentimentale</strong> n&apos;est pas un art unique : chaque outil r&eacute;sonne diff&eacute;remment selon le consultant, la question et le moment. Voici un guide pratique pour orienter votre choix et optimiser votre exp&eacute;rience de <strong>guidance amoureuse</strong>.
@@ -298,7 +298,7 @@ export default function OracleGratuitAmourPage() {
 
         {/* FAQ Section */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">&#x2753; Questions Fr&eacute;quentes sur l&apos;Oracle Amour Gratuit</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8"> Questions Fr&eacute;quentes sur l&apos;Oracle Amour Gratuit</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Les questions les plus pos&eacute;es concernent la diff&eacute;rence oracle/tarot, le choix de l&apos;oracle selon le probl&egrave;me, la fiabilit&eacute; des tirages gratuits et la fr&eacute;quence de consultation recommand&eacute;e.</p>
           <div className="space-y-6">
             <div className="border-b border-gray-200 pb-6">
@@ -325,7 +325,7 @@ export default function OracleGratuitAmourPage() {
 
         {/* Articles Connexes */}
         <div className="bg-gray-100 rounded-xl p-6 mb-8">
-          <h3 className="font-bold text-lg mb-4 text-gray-900">&#x1F4DA; Articles Connexes</h3>
+          <h3 className="font-bold text-lg mb-4 text-gray-900"> Articles Connexes</h3>
           <div className="space-y-2">
             <Link href="/voyance-gratuite-amour/" className="block text-teal-600 hover:text-teal-800 font-medium">&rarr; Voyance Gratuite Amour : Guide Complet</Link>
             <Link href="/methodes-voyance/oracle-amour/" className="block text-teal-600 hover:text-teal-800 font-medium">&rarr; Oracle de l&apos;Amour : Guidance Sentimentale</Link>

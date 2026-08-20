@@ -86,7 +86,7 @@ export default function NumerologyCalculator() {
 
   return (
     <div className="bg-gradient-to-br from-orange-50 to-amber-50 rounded-xl p-6 md:p-8 border-2 border-orange-300">
-      <h3 className="font-bold text-xl text-orange-800 mb-2">🔢 Calculez Vos 3 Nombres Maintenant</h3>
+      <h3 className="font-bold text-xl text-orange-800 mb-2">Calculez Vos 3 Nombres Maintenant</h3>
       <p className="text-gray-700 text-sm mb-5">
         Entrez votre prénom, nom et date de naissance : le calcul se fait instantanément dans votre navigateur, aucune donnée n&rsquo;est envoyée ni conservée.
       </p>
@@ -131,7 +131,7 @@ export default function NumerologyCalculator() {
           <div className="grid md:grid-cols-3 gap-4">
             <ResultCard
               label="Chemin de Vie"
-              icon="🧭"
+              icon=""
               num={result.lifePath}
               title={lifePathMeaning.title}
               desc={lifePathMeaning.desc}
@@ -139,7 +139,7 @@ export default function NumerologyCalculator() {
             />
             <ResultCard
               label="Nombre d'Expression"
-              icon="🗣️"
+              icon=""
               num={result.expression}
               title={expressionMeaning.title}
               desc={expressionMeaning.desc}
@@ -147,7 +147,7 @@ export default function NumerologyCalculator() {
             />
             <ResultCard
               label="Nombre Intime"
-              icon="💛"
+              icon=""
               num={result.intimate}
               title={intimateMeaning.title}
               desc={intimateMeaning.desc}

@@ -86,7 +86,7 @@ export default function RelationToxiquePage() {
 
         {/* Section 1: Les 10 Signes d'une Relation Toxique */}
         <section id="signes" className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">&#x1F6A8; Les 10 Signes d&rsquo;une Relation Toxique</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6"> Les 10 Signes d&rsquo;une Relation Toxique</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Controle permanent, jalousie excessive, manipulation emotionnelle, isolement social, gaslighting, cycles rupture-reconciliation, devalorisation, chantage, epuisement et perte d'identite sont les 10 signes cles d'une relation toxique.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Reconna&icirc;tre les <strong>signes d&rsquo;une relation toxique</strong> est la premi&egrave;re &eacute;tape vers la lib&eacute;ration. Ces comportements, souvent insidieux, s&rsquo;installent progressivement et finissent par para&icirc;tre &laquo; normaux &raquo;. Le <strong>tarot</strong> met en lumi&egrave;re ces dynamiques destructrices avec une pr&eacute;cision saisissante.
@@ -171,7 +171,7 @@ export default function RelationToxiquePage() {
 
         {/* Section 2: Pourquoi Reste-t-on dans une Relation Toxique ? */}
         <section className="bg-gradient-to-br from-red-50 to-orange-50 rounded-xl p-8 mb-8 border-2 border-red-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">&#x1F512; Pourquoi Reste-t-on dans une Relation Toxique ?</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6"> Pourquoi Reste-t-on dans une Relation Toxique ?</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">La dependance affective, la peur de la solitude, l'espoir que l'autre change et le trauma bonding sont les quatre mecanismes psychologiques qui maintiennent une personne dans une relation toxique.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Comprendre <strong>pourquoi on reste</strong> dans une relation toxique est essentiel pour se lib&eacute;rer. Ce n&rsquo;est jamais une question de faiblesse &mdash; des m&eacute;canismes psychologiques puissants et des <strong>blessures profondes</strong> vous maintiennent pi&eacute;g&eacute;(e) dans un cycle dont il semble impossible de sortir.
@@ -210,7 +210,7 @@ export default function RelationToxiquePage() {
 
         {/* Section 3: Le Tarot R&eacute;v&egrave;le la V&eacute;rit&eacute; sur Votre Relation */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">&#x1F3B4; Le Tarot R&eacute;v&egrave;le la V&eacute;rit&eacute; sur Votre Relation</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6"> Le Tarot R&eacute;v&egrave;le la V&eacute;rit&eacute; sur Votre Relation</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le Diable revele l'emprise et les chaines emotionnelles, La Tour annonce l'effondrement necessaire, La Lune devoile les illusions du manipulateur et L'Etoile promet la guerison apres la liberation.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Le <strong>tarot de lib&eacute;ration</strong> est un outil puissant pour d&eacute;masquer la toxicit&eacute; relationnelle. Certains arcanes apparaissent r&eacute;guli&egrave;rement dans les tirages li&eacute;s aux <strong>relations toxiques</strong>, r&eacute;v&eacute;lant ce que votre c&oelig;ur refuse encore de voir.
@@ -259,7 +259,7 @@ export default function RelationToxiquePage() {
 
         {/* Section 4: Se Lib&eacute;rer d'une Relation Toxique */}
         <section id="liberation" className="bg-gradient-to-br from-red-50 to-orange-50 rounded-xl p-8 mb-8 border-2 border-red-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">&#x1F513; Se Lib&eacute;rer d&rsquo;une Relation Toxique</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6"> Se Lib&eacute;rer d&rsquo;une Relation Toxique</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Se liberer d'une relation toxique suit quatre etapes : briser le deni, preparer sa sortie en securite, reconstruire l'estime de soi et poser des limites infranchissables avec l'aide du tarot.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             <strong>Quitter une relation toxique</strong> est un acte de courage immense qui demande pr&eacute;paration, soutien et d&eacute;termination. Le <strong>tarot</strong> guide chaque &eacute;tape de ce parcours de lib&eacute;ration, vous donnant la force et la clart&eacute; n&eacute;cessaires pour reprendre le contr&ocirc;le de votre vie.
@@ -310,7 +310,7 @@ export default function RelationToxiquePage() {
 
         {/* Section 5: Reconstruire Apr&egrave;s une Relation Toxique */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">&#x1F331; Reconstruire Apr&egrave;s une Relation Toxique</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6"> Reconstruire Apr&egrave;s une Relation Toxique</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">La reconstruction apres une relation toxique passe par la guerison des blessures emotionnelles, l'identification des schemas repetitifs et l'ouverture progressive a un amour sain et equilibre.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             La <strong>reconstruction apr&egrave;s une relation toxique</strong> est un parcours de gu&eacute;rison qui demande du temps, de la patience et un accompagnement bienveillant. Le tarot trace ce chemin de renaissance &agrave; travers des arcanes porteurs d&rsquo;espoir et de transformation.

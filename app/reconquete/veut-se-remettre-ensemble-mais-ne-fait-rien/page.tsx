@@ -16,7 +16,7 @@ const config: ContentPageConfig = {
     { name: 'Il Veut se Remettre Ensemble mais ne Fait Rien', url: 'https://www.voyantlove.fr/reconquete/veut-se-remettre-ensemble-mais-ne-fait-rien/' },
   ],
   header: {
-    emoji: '💬',
+    emoji: '',
     h1: 'Il dit vouloir se remettre ensemble, mais ne fait rien',
     subtitle: 'Comment interpréter l\'écart entre ses paroles et ses actes',
     gradient: 'from-violet-600 via-purple-600 to-indigo-600',
@@ -28,10 +28,10 @@ const config: ContentPageConfig = {
   },
   accentText: 'text-violet-600',
   stats: [
-    { icon: '🔮', value: 'Reconnue', label: 'Expertise' },
-    { icon: '💬', value: '3,400+', label: 'Consultations' },
-    { icon: '⭐', value: '4.7/5', label: '264 Avis' },
-    { icon: '🔒', value: '100%', label: 'Confidentiel' },
+    { icon: '', value: 'Reconnue', label: 'Expertise' },
+    { icon: '', value: '3,400+', label: 'Consultations' },
+    { icon: '', value: '4.7/5', label: '264 Avis' },
+    { icon: '', value: '100%', label: 'Confidentiel' },
   ],
   eeat: { colorScheme: 'purple', method: 'Guidance de reconquête et lecture des dynamiques relationnelles' },
   cta: { topic: 'reconquete', slug: 'veut-se-remettre' },
@@ -92,13 +92,13 @@ export default function VeutSeRemettreEnsembleMaisNeFaitRienPage() {
 
         {/* H2: Pourquoi les paroles ne suffisent pas */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">{'\u{1F5E3}️'} Pourquoi les Paroles de Réconciliation ne Suffisent Pas</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">{'️'} Pourquoi les Paroles de Réconciliation ne Suffisent Pas</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Une parole de reconciliation exprime un desir de l&apos;instant, tandis qu&apos;un acte engage la personne dans la duree : c&apos;est la repetition des gestes concrets, non des mots, qui revele une intention reelle.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Dire &laquo;je veux qu&apos;on se remette ensemble&raquo; peut être parfaitement sincère sur le moment, et pourtant ne rien engager. Une <strong>parole</strong> exprime une envie, un manque ou un élan passager ; un <strong>acte</strong> demande du courage, de l&apos;organisation et une décision assumée. C&apos;est pourquoi il est possible de penser vraiment ce qu&apos;on dit et de ne rien faire pour autant.
           </p>
           <div className="bg-violet-50 border-l-4 border-violet-500 p-6 rounded mb-4">
-            <p className="text-gray-700"><strong>{'\u{1F4A1}'} L&apos;essentiel :</strong> une phrase ne se juge pas isolément. Ce qui compte, c&apos;est le <strong>schéma</strong> : les paroles sont-elles suivies, une fois sur deux, une fois sur dix, jamais, par un geste concret ? La réponse à cette question vaut plus que le contenu de n&apos;importe quelle déclaration.</p>
+            <p className="text-gray-700"><strong>L&apos;essentiel :</strong> une phrase ne se juge pas isolément. Ce qui compte, c&apos;est le <strong>schéma</strong> : les paroles sont-elles suivies, une fois sur deux, une fois sur dix, jamais, par un geste concret ? La réponse à cette question vaut plus que le contenu de n&apos;importe quelle déclaration.</p>
           </div>
           <p className="text-gray-700 leading-relaxed">
             Ce constat n&apos;a rien de cynique : il vous évite d&apos;organiser votre vie autour d&apos;intentions qui ne se matérialisent jamais. Tant que vous mesurez l&apos;<strong>engagement</strong> aux mots, l&apos;incertitude peut durer indéfiniment.
@@ -107,26 +107,26 @@ export default function VeutSeRemettreEnsembleMaisNeFaitRienPage() {
 
         {/* H2: Les actes qui prouvent une vraie volonté */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">{'✅'} Quels Actes Montrent une Véritable Volonté de Reconstruire</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">{''} Quels Actes Montrent une Véritable Volonté de Reconstruire</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Proposer des rendez-vous datés, aborder les causes de la rupture, montrer des changements observables et prendre l&apos;initiative du contact sont les actes concrets qui traduisent une intention sincère de reconstruire le couple.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Une volonté réelle de se remettre ensemble laisse des traces visibles. Voici les <strong>signaux comportementaux</strong> les plus fiables, à observer dans leur <strong>constance</strong> plutôt qu&apos;isolément.
           </p>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-green-50 border-2 border-green-300 rounded-lg p-6">
-              <h3 className="font-bold text-lg mb-3 text-green-700">{'\u{1F4C5}'} Des Propositions Concrètes et Datées</h3>
+              <h3 className="font-bold text-lg mb-3 text-green-700">Des Propositions Concrètes et Datées</h3>
               <p className="text-gray-700 text-sm">Il ou elle propose un moment précis, avec un jour et un lieu, plutôt que des &laquo;on devrait se revoir&raquo; sans lendemain. L&apos;<strong>initiative datée</strong> est l&apos;un des marqueurs les plus parlants d&apos;une intention réelle.</p>
             </div>
             <div className="bg-green-50 border-2 border-green-300 rounded-lg p-6">
-              <h3 className="font-bold text-lg mb-3 text-green-700">{'\u{1F50D}'} Une Vraie Discussion sur la Rupture</h3>
+              <h3 className="font-bold text-lg mb-3 text-green-700">Une Vraie Discussion sur la Rupture</h3>
               <p className="text-gray-700 text-sm">Reconstruire suppose de nommer ce qui a échoué. Une personne engagée aborde les <strong>causes de la rupture</strong> au lieu de les contourner, et cherche à comprendre plutôt qu&apos;à séduire de nouveau.</p>
             </div>
             <div className="bg-green-50 border-2 border-green-300 rounded-lg p-6">
-              <h3 className="font-bold text-lg mb-3 text-green-700">{'\u{1F331}'} Des Changements Observables</h3>
+              <h3 className="font-bold text-lg mb-3 text-green-700">Des Changements Observables</h3>
               <p className="text-gray-700 text-sm">Les promesses de changement se vérifient dans les faits. Un <strong>comportement</strong> réellement modifié, visible sur la durée, pèse infiniment plus lourd qu&apos;un engagement formulé mais jamais tenu.</p>
             </div>
             <div className="bg-green-50 border-2 border-green-300 rounded-lg p-6">
-              <h3 className="font-bold text-lg mb-3 text-green-700">{'\u{1F5FA}️'} Un Avenir Évoqué en Termes Tangibles</h3>
+              <h3 className="font-bold text-lg mb-3 text-green-700">{'️'} Un Avenir Évoqué en Termes Tangibles</h3>
               <p className="text-gray-700 text-sm">Parler d&apos;un <strong>projet commun</strong> avec des éléments concrets, un rythme, des étapes, une organisation, traduit une projection réelle, à distinguer des &laquo;un jour peut-être&raquo; qui restent flous.</p>
             </div>
           </div>
@@ -134,22 +134,22 @@ export default function VeutSeRemettreEnsembleMaisNeFaitRienPage() {
 
         {/* H2: Les signes qu'il veut maintenir le lien */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">{'\u{1FA9D}'} Les Signes qu&apos;il ou elle Veut Surtout Maintenir le Lien</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Les Signes qu&apos;il ou elle Veut Surtout Maintenir le Lien</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Des marques d&apos;affection qui reapparaissent des que vous prenez de la distance, des paroles jamais suivies d&apos;actes et une disponibilite intermittente signalent un lien entretenu pour la securite affective, sans projet de reconstruction.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             À l&apos;opposé des signaux d&apos;engagement, certains schémas trahissent un <strong>lien maintenu sans décision</strong>. Ils ne prouvent pas une manipulation consciente, mais entretiennent une ambiguïté confortable pour l&apos;autre et douloureuse pour vous.
           </p>
           <div className="space-y-4">
             <div className="bg-orange-50 border-l-4 border-orange-500 p-5 rounded">
-              <h3 className="font-bold mb-2 text-orange-700">{'\u{1F504}'} Le Retour à Chaque Prise de Distance</h3>
+              <h3 className="font-bold mb-2 text-orange-700">Le Retour à Chaque Prise de Distance</h3>
               <p className="text-gray-700 text-sm">Chaque fois que vous vous éloignez, un message tendre réapparaît, puis plus rien dès que le lien est rétabli. Ce rythme relance l&apos;espoir sans jamais faire avancer la situation.</p>
             </div>
             <div className="bg-orange-50 border-l-4 border-orange-500 p-5 rounded">
-              <h3 className="font-bold mb-2 text-orange-700">{'\u{1F4AC}'} Des Mots Chaleureux, Aucun Geste</h3>
+              <h3 className="font-bold mb-2 text-orange-700">Des Mots Chaleureux, Aucun Geste</h3>
               <p className="text-gray-700 text-sm">Les déclarations sont fréquentes et sincères en apparence, mais rien ne les suit. L&apos;<strong>écart parole / acte</strong> reste stable dans le temps, sans jamais se réduire.</p>
             </div>
             <div className="bg-orange-50 border-l-4 border-orange-500 p-5 rounded">
-              <h3 className="font-bold mb-2 text-orange-700">{'⏳'} Une Disponibilité Intermittente et Confortable</h3>
+              <h3 className="font-bold mb-2 text-orange-700">{''} Une Disponibilité Intermittente et Confortable</h3>
               <p className="text-gray-700 text-sm">L&apos;autre est présent quand cela lui convient, absent le reste du temps, sans que la situation ne progresse. Si ce schéma vous épuise, notre guide sur la <Link href="/crise-couple/dependance-affective/" className="text-violet-600 hover:text-violet-800 underline font-medium">dépendance affective</Link> aide à reconnaître le moment où le lien devient un piège.</p>
             </div>
           </div>
@@ -159,7 +159,7 @@ export default function VeutSeRemettreEnsembleMaisNeFaitRienPage() {
 
         {/* H2: Diagnostic paroles vs actes */}
         <section id="diagnostic" className="bg-gradient-to-br from-violet-50 to-indigo-50 rounded-xl p-8 mb-8 border-2 border-violet-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">{'⚖️'} Hésitation Sincère ou Absence d&apos;Engagement : le Cadre Paroles / Actes</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">{''} Hésitation Sincère ou Absence d&apos;Engagement : le Cadre Paroles / Actes</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Pour trancher entre une hesitation sincere et une absence d&apos;engagement, comparez cinq elements : ce qui est dit, ce qui est fait de facon repetee, ce qui manque encore, la limite que vous pouvez poser et la preuve qui justifierait de reconsiderer.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Ce cadre en cinq points remplace l&apos;interprétation sans fin par une <strong>observation structurée</strong>. Il ne prédit pas l&apos;avenir : il vous aide à voir la situation telle qu&apos;elle est réellement.
@@ -190,7 +190,7 @@ export default function VeutSeRemettreEnsembleMaisNeFaitRienPage() {
 
         {/* H2: Combien de temps / demander une décision */}
         <section id="decision" className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">{'\u{1F4C5}'} Combien de Temps Attendre Avant de Demander une Décision Claire</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Combien de Temps Attendre Avant de Demander une Décision Claire</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Lorsque plusieurs mois passent sans qu&apos;aucun acte n&apos;appuie les paroles, demander une clarification devient legitime : ce n&apos;est pas un ultimatum, mais l&apos;expression d&apos;un besoin de lisibilite qui vous protege de l&apos;attente indefinie.</p>
           <p className="text-gray-700 leading-relaxed mb-4">
             Il n&apos;existe pas de délai universel, mais une <strong>séparation sans décision</strong> qui s&apos;étire sur des mois, sans acte pour soutenir les paroles, appelle une clarification. Demander où vous en êtes n&apos;est pas exercer une pression : c&apos;est reprendre votre part de responsabilité dans une situation où vous n&apos;êtes pas condamné(e) à seulement attendre. Pour situer la juste durée de patience, notre page <Link href="/reconquete/dois-je-attendre-son-retour/" className="text-violet-600 hover:text-violet-800 underline font-medium">dois-je l&apos;attendre</Link> approfondit ce point.
@@ -199,20 +199,20 @@ export default function VeutSeRemettreEnsembleMaisNeFaitRienPage() {
             Avant même de parler à l&apos;autre, fixez-vous une <strong>limite intérieure de temps</strong>, révisable mais réelle. Cette limite n&apos;a pas à être annoncée : elle existe pour vous, pour éviter que l&apos;espoir ne se transforme en une <strong>attente indéfinie</strong> qui met votre vie en pause. Si un jour la réconciliation se concrétise, notre guide sur <Link href="/reconquete/se-remettre-ensemble/" className="text-violet-600 hover:text-violet-800 underline font-medium">se remettre ensemble</Link> détaille les étapes pour repartir sur des bases saines.
           </p>
           <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded">
-            <p className="text-gray-700"><strong>{'✨'} Repère utile :</strong> une bonne question à se poser régulièrement est simple, &laquo;depuis un mois, qu&apos;est-ce qui a concrètement changé ?&raquo;. Si la réponse reste &laquo;rien&raquo; mois après mois, l&apos;information est là, même sans confrontation.</p>
+            <p className="text-gray-700"><strong>{''} Repère utile :</strong> une bonne question à se poser régulièrement est simple, &laquo;depuis un mois, qu&apos;est-ce qui a concrètement changé ?&raquo;. Si la réponse reste &laquo;rien&raquo; mois après mois, l&apos;information est là, même sans confrontation.</p>
           </div>
         </section>
 
         {/* H2: Poser une limite sans ultimatum */}
         <section className="bg-gradient-to-r from-rose-50 to-orange-50 rounded-xl p-8 mb-8 border-2 border-rose-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">{'\u{1F6E1}️'} Comment Poser une Limite sans Tomber dans l&apos;Ultimatum Destructeur</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">{'️'} Comment Poser une Limite sans Tomber dans l&apos;Ultimatum Destructeur</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Une limite saine parle de vos besoins et non des torts de l&apos;autre : elle exprime ce dont vous avez besoin pour avancer, tandis que l&apos;ultimatum menace et acule ; la premiere ouvre un choix, le second ferme le dialogue.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             La différence entre une <strong>limite</strong> et un <strong>ultimatum</strong> tient à l&apos;intention et à la formulation. La limite protège votre équilibre ; l&apos;ultimatum cherche à forcer une réponse. La première laisse à l&apos;autre la liberté de se positionner par des actes ; le second transforme la décision en réaction sous contrainte, rarement durable.
           </p>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-white rounded-lg p-6 border-l-4 border-green-500">
-              <h3 className="font-bold text-lg mb-3 text-green-700">{'✅'} Une Limite Saine</h3>
+              <h3 className="font-bold text-lg mb-3 text-green-700">{''} Une Limite Saine</h3>
               <ul className="space-y-2 text-gray-700 text-sm">
                 <li>&bull; Parle de <strong>vos besoins</strong> : &laquo;j&apos;ai besoin de lisibilité&raquo;</li>
                 <li>&bull; Nomme un ressenti sans accuser l&apos;autre</li>
@@ -221,7 +221,7 @@ export default function VeutSeRemettreEnsembleMaisNeFaitRienPage() {
               </ul>
             </div>
             <div className="bg-white rounded-lg p-6 border-l-4 border-red-500">
-              <h3 className="font-bold text-lg mb-3 text-red-700">{'\u{1F6D1}'} Un Ultimatum Destructeur</h3>
+              <h3 className="font-bold text-lg mb-3 text-red-700">Un Ultimatum Destructeur</h3>
               <ul className="space-y-2 text-gray-700 text-sm">
                 <li>&bull; Menace : &laquo;décide maintenant ou je pars&raquo;</li>
                 <li>&bull; Cherche à contraindre plutôt qu&apos;à clarifier</li>
@@ -231,7 +231,7 @@ export default function VeutSeRemettreEnsembleMaisNeFaitRienPage() {
             </div>
           </div>
           <div className="mt-6 bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded">
-            <p className="text-gray-700"><strong>{'\u{1F4A1}'} À retenir :</strong> avant d&apos;engager cette conversation, il est utile de clarifier vos propres attentes. Une <strong>consultation de voyance sentimentale</strong> peut vous aider à y voir clair dans ce que vous ressentez et souhaitez, sans jamais prétendre décider à la place de l&apos;autre ni garantir son retour.</p>
+            <p className="text-gray-700"><strong>À retenir :</strong> avant d&apos;engager cette conversation, il est utile de clarifier vos propres attentes. Une <strong>consultation de voyance sentimentale</strong> peut vous aider à y voir clair dans ce que vous ressentez et souhaitez, sans jamais prétendre décider à la place de l&apos;autre ni garantir son retour.</p>
           </div>
         </section>
 

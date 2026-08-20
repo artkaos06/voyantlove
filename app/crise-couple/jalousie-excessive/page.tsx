@@ -28,10 +28,10 @@ const config: ContentPageConfig = {
   },
   accentText: 'text-red-600',
   stats: [
-    { icon: '📊', value: 'Majeure', label: 'Cause de rupture' },
-    { icon: '🧠', value: 'Fréquente', label: 'Origine traumatique' },
-    { icon: '💚', value: 'Réelle', label: 'Guérison possible' },
-    { icon: '⚠️', value: 'Vaste', label: 'Expérience' },
+    { icon: '', value: 'Majeure', label: 'Cause de rupture' },
+    { icon: '', value: 'Fréquente', label: 'Origine traumatique' },
+    { icon: '', value: 'Réelle', label: 'Guérison possible' },
+    { icon: '', value: 'Vaste', label: 'Expérience' },
   ],
   eeat: { colorScheme: 'red', method: 'Psychologie relationnelle et thérapie de couple' },
   cta: { topic: 'crise-couple', slug: 'jalousie-excessive' },
@@ -91,7 +91,7 @@ export default function JalousieExcessivePage() {
         <VoyantRecommendations topic="crise-couple" limit={3} showOnlineFirst={true} source="jalousie-excessive-cards-top" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold mb-6 text-red-600">🔍 Jalousie Normale vs Jalousie Excessive : Les Différences Cruciales</h2>
+          <h2 className="text-3xl font-bold mb-6 text-red-600">Jalousie Normale vs Jalousie Excessive : Les Différences Cruciales</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">La jalousie normale est ponctuelle, proportionnée et basée sur des faits réels. La jalousie excessive est permanente, disproportionnée et fondée sur des scénarios imaginaires. Si elle occupe vos pensées plus de 2-3 heures par jour, elle est probablement pathologique.</p>
           <p className="text-gray-700 mb-6">
             Toute jalousie n'est pas pathologique. Comprendre la frontière entre <strong>jalousie saine</strong> et <strong>jalousie toxique</strong> est essentiel pour évaluer votre situation.
@@ -192,7 +192,7 @@ export default function JalousieExcessivePage() {
         </section>
 
         <section id="causes" className="bg-gradient-to-br from-orange-50 to-red-50 rounded-xl p-8 mb-8 border-2 border-orange-200">
-          <h2 className="text-3xl font-bold mb-6 text-gray-900">🧠 Les 7 Causes Profondes de la Jalousie Excessive</h2>
+          <h2 className="text-3xl font-bold mb-6 text-gray-900">Les 7 Causes Profondes de la Jalousie Excessive</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">La jalousie excessive provient de blessures d'abandon infantile, de trahisons passées non guéries, d'une faible estime de soi, d'anxiété généralisée, de projection de ses propres tentations, de modèles familiaux dysfonctionnels ou de dépendance affective.</p>
           <p className="text-gray-700 mb-6">
             La jalousie maladive n'apparaît jamais sans raison. Elle est toujours le symptôme de <strong>blessures émotionnelles</strong> ou de <strong>schémas psychologiques</strong> non résolus.
@@ -274,7 +274,7 @@ export default function JalousieExcessivePage() {
         <VoyantQuickCTA topic="crise-couple" source="jalousie-excessive-banner-mid" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold mb-6 text-red-600">⚠️ Les 10 Signes d'une Jalousie Devenue Toxique</h2>
+          <h2 className="text-3xl font-bold mb-6 text-red-600">Les 10 Signes d'une Jalousie Devenue Toxique</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Les signes d'une jalousie toxique sont la surveillance du téléphone, le contrôle des sorties, les accusations sans fondement, les crises disproportionnées, l'isolement social imposé et les menaces. Si votre partenaire modifie sa vie pour éviter vos crises, la jalousie est devenue abusive.</p>
           <p className="text-gray-700 mb-6">
             Voici les <strong>comportements concrets</strong> qui indiquent que la jalousie a franchi la ligne rouge et détruit activement la relation.
@@ -354,7 +354,7 @@ export default function JalousieExcessivePage() {
         </section>
 
         <section id="solutions" className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl p-8 mb-8 border-2 border-green-200">
-          <h2 className="text-3xl font-bold mb-6 text-gray-900">💚 Solutions : Comment Soigner la Jalousie Excessive</h2>
+          <h2 className="text-3xl font-bold mb-6 text-gray-900">Solutions : Comment Soigner la Jalousie Excessive</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Soigner la jalousie excessive passe par la thérapie cognitivo-comportementale, le travail sur les traumatismes d'attachement, la reconstruction de l'estime de soi et l'acceptation de l'incertitude en amour. Les résultats apparaissent après 3 à 6 mois de thérapie régulière.</p>
           <p className="text-gray-700 mb-6">
             La jalousie maladive peut se soigner, mais cela exige un <strong>travail psychologique profond</strong>, de l'humilité, et de la persévérance. Voici les approches les plus efficaces.
@@ -441,7 +441,7 @@ export default function JalousieExcessivePage() {
         </section>
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold mb-6 text-red-600">🛡️ Pour le Partenaire Non-Jaloux : Comment Se Protéger</h2>
+          <h2 className="text-3xl font-bold mb-6 text-red-600">Pour le Partenaire Non-Jaloux : Comment Se Protéger</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Protégez-vous en posant des limites fermes, en refusant de sacrifier votre vie sociale et en exigeant que votre partenaire consulte un thérapeute. Ne cédez jamais sur vos libertés fondamentales pour calmer la jalousie, car chaque concession renforce le schéma.</p>
           <p className="text-gray-700 mb-6">
             Si vous êtes la personne qui subit la jalousie excessive de votre partenaire, voici comment <strong>protéger votre santé mentale</strong> sans abandonner immédiatement la relation.

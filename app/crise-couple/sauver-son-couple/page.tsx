@@ -16,7 +16,7 @@ const config: ContentPageConfig = {
     { name: 'Sauver son Couple', url: 'https://www.voyantlove.fr/crise-couple/sauver-son-couple/' },
   ],
   header: {
-    emoji: '💚',
+    emoji: '',
     h1: 'Sauver son couple',
     subtitle: 'Solutions spirituelles, étapes de reconstruction et guidance par le tarot pour redonner vie à votre relation',
     gradient: 'from-green-600 via-emerald-600 to-teal-600',
@@ -28,10 +28,10 @@ const config: ContentPageConfig = {
   },
   accentText: 'text-green-600',
   stats: [
-    { icon: '💚', value: 'Forte', label: 'Réussite' },
-    { icon: '🔮', value: 'Vaste', label: 'Expérience' },
-    { icon: '⭐', value: 'Élevée', label: 'Satisfaction' },
-    { icon: '🎯', value: 'Reconnue', label: 'Expertise' },
+    { icon: '', value: 'Forte', label: 'Réussite' },
+    { icon: '', value: 'Vaste', label: 'Expérience' },
+    { icon: '', value: 'Élevée', label: 'Satisfaction' },
+    { icon: '', value: 'Reconnue', label: 'Expertise' },
   ],
   eeat: { colorScheme: 'green', method: 'Tarot de reconstruction et guidance de couple' },
   cta: { topic: 'crise-couple', slug: 'sauver-son-couple' },
@@ -88,7 +88,7 @@ export default function SauverSonCouplePage() {
         <VoyantRecommendations topic="crise-couple" limit={3} showOnlineFirst={true} source="sauver-son-couple-cards-top" />
 
         <section id="diagnostic" className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold mb-6 text-green-600">🔮 Votre Couple Peut-il Être Sauvé ? Le Diagnostic Tarot</h2>
+          <h2 className="text-3xl font-bold mb-6 text-green-600">Votre Couple Peut-il Être Sauvé ? Le Diagnostic Tarot</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le diagnostic tarot en 5 cartes évalue l'état du lien amoureux, les blocages à surmonter, la volonté réelle du partenaire, le potentiel de transformation et le verdict final. Il révèle si votre couple peut renaître ou si le lâcher-prise est la voie de libération.</p>
           <p className="text-gray-700 mb-6">
             Le <strong>diagnostic tarot de couple</strong> utilise un tirage en 5 cartes spécialement conçu pour évaluer le potentiel de <strong>reconstruction de votre relation</strong>. Chaque position révèle un aspect essentiel de votre situation actuelle et de l'avenir possible de votre union.
@@ -166,7 +166,7 @@ export default function SauverSonCouplePage() {
         </section>
 
         <section id="etapes" className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl p-8 mb-8 border-2 border-green-200">
-          <h2 className="text-3xl font-bold mb-6 text-gray-900">🔄 Les 5 Étapes de Reconstruction Révélées par les Cartes</h2>
+          <h2 className="text-3xl font-bold mb-6 text-gray-900">Les 5 Étapes de Reconstruction Révélées par les Cartes</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Les cinq étapes pour sauver un couple sont le dialogue authentique, la compréhension des causes profondes, le pardon et le lâcher-prise, l'établissement d'un nouveau contrat de couple, et la renaissance de l'intimité. Ce processus prend 6 à 18 mois.</p>
           <p className="text-gray-700 mb-6">
             Le <strong>tarot de reconstruction</strong> dessine un chemin en cinq étapes essentielles pour <strong>sauver votre couple</strong>. Chaque étape correspond à une carte majeure qui guide la transformation.
@@ -226,7 +226,7 @@ export default function SauverSonCouplePage() {
         </section>
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold mb-6 text-green-600">💎 Les Piliers d'un Couple Sauvé selon la Voyance</h2>
+          <h2 className="text-3xl font-bold mb-6 text-green-600">Les Piliers d'un Couple Sauvé selon la Voyance</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Un couple sauvé repose sur six piliers essentiels : la confiance retrouvée, la communication équilibrée, l'intimité renouvelée, les projets communs, le respect mutuel et l'indépendance dans l'interdépendance. Chacun correspond à un arcane majeur du tarot.</p>
           <p className="text-gray-700 mb-6">
             La <strong>guidance spirituelle</strong> révèle six piliers fondamentaux sur lesquels repose un couple qui a réussi à surmonter sa crise. Chaque pilier est associé à une carte du <strong>tarot</strong> qui en symbolise l'essence.
@@ -280,7 +280,7 @@ export default function SauverSonCouplePage() {
         <VoyantQuickCTA topic="crise-couple" source="sauver-son-couple-banner-mid" />
 
         <section className="bg-gradient-to-br from-red-50 to-orange-50 rounded-xl p-8 mb-8 border-2 border-red-200">
-          <h2 className="text-3xl font-bold mb-6 text-gray-900">⚠️ Quand Sauver son Couple est Impossible, Reconnaître les Limites</h2>
+          <h2 className="text-3xl font-bold mb-6 text-gray-900">Quand Sauver son Couple est Impossible, Reconnaître les Limites</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Sauver un couple est impossible en cas de violence physique ou psychologique, de mépris chronique, d'infidélités répétées, de manipulation ou de refus total de changement. Dans ces situations, la séparation est l'acte d'amour le plus courageux envers soi-même.</p>
           <p className="text-gray-700 mb-6">
             La <strong>voyance responsable</strong> implique aussi de reconnaître honnêtement quand une relation ne peut pas être sauvée. Persister dans une <strong>relation toxique</strong> par peur de la solitude ou par espoir illusoire prolonge la souffrance des deux partenaires. Voici les situations où le lâcher-prise devient l'acte d'amour le plus courageux.
@@ -318,7 +318,7 @@ export default function SauverSonCouplePage() {
         </section>
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold mb-6 text-green-600">🧘 Exercices de Couple Inspirés par la Guidance Spirituelle</h2>
+          <h2 className="text-3xl font-bold mb-6 text-green-600">Exercices de Couple Inspirés par la Guidance Spirituelle</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Trois exercices pratiques renforcent la reconstruction : le rituel de dialogue hebdomadaire pour restaurer la parole, le journal de gratitude à deux pour se recentrer sur le positif, et le vision board de couple pour créer une vision d'avenir commune.</p>
           <p className="text-gray-700 mb-6">
             Ces <strong>exercices pratiques</strong> s'inspirent de la sagesse du tarot et de la <strong>guidance spirituelle</strong> pour renforcer votre lien au quotidien. Pratiquez-les régulièrement pour ancrer la reconstruction dans des gestes concrets.

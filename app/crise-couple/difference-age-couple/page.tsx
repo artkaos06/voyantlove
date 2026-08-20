@@ -16,7 +16,7 @@ const config: ContentPageConfig = {
     { name: 'Différence d\'Âge', url: 'https://www.voyantlove.fr/crise-couple/difference-age-couple/' },
   ],
   header: {
-    emoji: '⏳',
+    emoji: '',
     h1: 'Différence d\'âge en couple',
     subtitle: 'Ce que le tarot révèle sur la compatibilité au-delà des années',
     gradient: 'from-cyan-600 via-sky-600 to-blue-600',
@@ -28,10 +28,10 @@ const config: ContentPageConfig = {
   },
   accentText: 'text-cyan-700',
   stats: [
-    { icon: '🔮', value: 'Reconnue', label: 'Expertise' },
-    { icon: '⏳', value: '2,500+', label: 'Tirages réalisés' },
-    { icon: '⭐', value: '4.6/5', label: '187 Avis' },
-    { icon: '🔒', value: '100%', label: 'Confidentiel' },
+    { icon: '', value: 'Reconnue', label: 'Expertise' },
+    { icon: '', value: '2,500+', label: 'Tirages réalisés' },
+    { icon: '', value: '4.6/5', label: '187 Avis' },
+    { icon: '', value: '100%', label: 'Confidentiel' },
   ],
   eeat: { colorScheme: 'cyan', method: 'Tarot de compatibilité et guidance de couple' },
   cta: { topic: 'crise-couple', slug: 'difference-age' },
@@ -91,32 +91,32 @@ export default function DifferenceAgeCouplePage() {
 
         {/* H2: Les défis spécifiques */}
         <section id="defis" className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">{'\u{1F3AF}'} Les Défis Spécifiques d&apos;une Différence d&apos;Âge</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Les Défis Spécifiques d&apos;une Différence d&apos;Âge</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Etapes de vie decalees, energie et rythme differents, projets de parentalite et jugement social sont les principaux defis rencontres par les couples avec un ecart d&apos;age important.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Certains défis reviennent fréquemment dans les couples avec un <strong>écart d&apos;âge</strong> significatif, sans pour autant être insurmontables.
           </p>
           <div className="grid md:grid-cols-2 gap-6 mb-6">
             <div className="bg-cyan-50 border-2 border-cyan-300 rounded-lg p-6">
-              <h3 className="font-bold text-lg mb-3 text-cyan-700">{'\u{1F4C6}'} Étapes de Vie Décalées</h3>
+              <h3 className="font-bold text-lg mb-3 text-cyan-700">Étapes de Vie Décalées</h3>
               <p className="text-gray-700 text-sm mb-2">
                 L&apos;un des partenaires peut être en début de carrière quand l&apos;autre pense déjà à la <strong>retraite</strong>, créant des priorités de vie différentes qu&apos;il faut consciemment harmoniser.
               </p>
             </div>
             <div className="bg-sky-50 border-2 border-sky-300 rounded-lg p-6">
-              <h3 className="font-bold text-lg mb-3 text-sky-700">{'⚡'} Énergie et Rythme de Vie</h3>
+              <h3 className="font-bold text-lg mb-3 text-sky-700">{''} Énergie et Rythme de Vie</h3>
               <p className="text-gray-700 text-sm mb-2">
                 Des <strong>rythmes de vie différents</strong>, en termes d&apos;énergie sociale ou physique, peuvent nécessiter des ajustements pour préserver l&apos;équilibre et le plaisir partagé dans la relation.
               </p>
             </div>
             <div className="bg-blue-50 border-2 border-blue-300 rounded-lg p-6">
-              <h3 className="font-bold text-lg mb-3 text-blue-700">{'\u{1F476}'} Projets de Parentalité</h3>
+              <h3 className="font-bold text-lg mb-3 text-blue-700">Projets de Parentalité</h3>
               <p className="text-gray-700 text-sm mb-2">
                 Le désir ou non d&apos;avoir des enfants, et le <strong>timing biologique</strong> associé, est un sujet central à clarifier tôt pour éviter des désillusions douloureuses plus tard.
               </p>
             </div>
             <div className="bg-indigo-50 border-2 border-indigo-300 rounded-lg p-6">
-              <h3 className="font-bold text-lg mb-3 text-indigo-700">{'\u{1F441}️'} Jugement Social et Familial</h3>
+              <h3 className="font-bold text-lg mb-3 text-indigo-700">{'️'} Jugement Social et Familial</h3>
               <p className="text-gray-700 text-sm mb-2">
                 Le <strong>regard extérieur</strong>, qu&apos;il vienne de la famille ou de la société, peut peser sur le couple s&apos;il n&apos;est pas anticipé et géré avec sérénité et assurance.
               </p>
@@ -126,7 +126,7 @@ export default function DifferenceAgeCouplePage() {
 
         {/* H2: Le Tirage */}
         <section className="bg-gradient-to-br from-cyan-50 to-blue-50 rounded-xl p-8 mb-8 border-2 border-cyan-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">{'\u{1F0CF}'} Le Tirage &laquo;Notre Différence d&apos;Âge en Couple&raquo;</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Le Tirage &laquo;Notre Différence d&apos;Âge en Couple&raquo;</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Ce tirage en trois positions evalue la compatibilite energetique reelle, les zones de friction potentielles et le potentiel de longevite de la relation malgre l&apos;ecart d&apos;age.</p>
           <div className="grid md:grid-cols-3 gap-6 mb-6">
             <div className="bg-white rounded-lg p-6 border-l-4 border-cyan-500">
@@ -154,7 +154,7 @@ export default function DifferenceAgeCouplePage() {
 
         {/* H2: Ce qui compte vraiment */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">{'❤️'} Ce Qui Compte Vraiment Au-delà de l&apos;Âge</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">{''} Ce Qui Compte Vraiment Au-delà de l&apos;Âge</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Maturite emotionnelle partagee, valeurs communes et communication ouverte comptent davantage que le nombre d&apos;annees d&apos;ecart pour construire une relation durable.</p>
           <p className="text-gray-700 leading-relaxed mb-4">
             La <strong>maturité émotionnelle</strong> partagée est le facteur le plus déterminant dans la réussite d&apos;un couple avec une différence d&apos;âge, bien plus que le chiffre lui-même. Deux personnes alignées sur leurs <strong>valeurs fondamentales</strong> et leur vision de l&apos;avenir peuvent construire une relation solide, quel que soit l&apos;écart. Pour identifier si vos sentiments sont profonds et durables, consultez notre guide pour <Link href="/sentiments/savoir-si-cest-lamour/" className="text-cyan-700 hover:text-cyan-900 underline font-medium">savoir si c&apos;est l&apos;amour</Link>.
@@ -163,19 +163,19 @@ export default function DifferenceAgeCouplePage() {
             La <strong>communication ouverte</strong> sur les attentes de vie, dès le début de la relation, évite les malentendus futurs liés aux différences d&apos;âge. Aborder franchement les sujets sensibles comme la parentalité ou les projets de retraite renforce la confiance mutuelle plutôt que de créer des non-dits.
           </p>
           <div className="bg-green-50 border-l-4 border-green-500 p-6 rounded">
-            <p className="text-gray-700"><strong>{'✅'} Fondation solide :</strong> Un couple qui partage des <strong>valeurs profondes</strong> et une vision commune traverse plus facilement les défis liés à l&apos;écart d&apos;âge qu&apos;un couple du même âge sans alignement de valeurs.</p>
+            <p className="text-gray-700"><strong>{''} Fondation solide :</strong> Un couple qui partage des <strong>valeurs profondes</strong> et une vision commune traverse plus facilement les défis liés à l&apos;écart d&apos;âge qu&apos;un couple du même âge sans alignement de valeurs.</p>
           </div>
         </section>
 
         {/* H2: Le regard des autres */}
         <section id="regard" className="bg-gradient-to-r from-rose-50 to-orange-50 rounded-xl p-8 mb-8 border-2 border-rose-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">{'\u{1F441}️'} Gérer le Regard des Autres</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">{'️'} Gérer le Regard des Autres</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Se concentrer sur la solidite interne du couple, choisir ses cercles de confiance et cultiver l&apos;assurance permettent de preserver la relation face au jugement exterieur.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Le <strong>jugement extérieur</strong> reflète souvent des préjugés sociaux plus que la réalité de votre relation. Se concentrer sur la <strong>solidité interne du couple</strong> plutôt que sur l&apos;approbation externe protège durablement votre équilibre. Si cette pression provient spécifiquement de votre famille, notre guide sur l&apos;<Link href="/crise-couple/opposition-familiale-couple/" className="text-cyan-700 hover:text-cyan-900 underline font-medium">opposition familiale</Link> propose des stratégies complémentaires.
           </p>
           <div className="bg-white p-6 rounded-lg border-2 border-cyan-200">
-            <p className="text-gray-700"><strong>{'\u{1F52E}'} Conseil du voyant :</strong> Les couples qui résistent au jugement extérieur avec sérénité, sans chercher constamment à se justifier, en ressortent généralement plus <strong>soudés et confiants</strong> dans la légitimité de leur relation.</p>
+            <p className="text-gray-700"><strong>Conseil du voyant :</strong> Les couples qui résistent au jugement extérieur avec sérénité, sans chercher constamment à se justifier, en ressortent généralement plus <strong>soudés et confiants</strong> dans la légitimité de leur relation.</p>
           </div>
         </section>
 

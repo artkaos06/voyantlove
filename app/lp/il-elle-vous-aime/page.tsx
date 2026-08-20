@@ -115,7 +115,7 @@ function Result({
 }) {
   return (
     <div className="vq-result-inner">
-      <div className="vq-seal">🔮</div>
+      <div className="vq-seal"></div>
       <div className="vq-rh">
         Un voyant spécialisé en {spec} est disponible maintenant.
       </div>
@@ -125,19 +125,19 @@ function Result({
       <VoyantStrip limit={4} label="Voyants partenaires en ligne" />
 
       <a href={`tel:${PHONE}`} className="vq-cta">
-        <span className="vq-cta-num">📞 {PHONE_DISPLAY}</span>
+        <span className="vq-cta-num">{PHONE_DISPLAY}</span>
         <span className="vq-cta-sub">{av.ctaSub}</span>
       </a>
 
       <div className="vq-pricing">
-        <div className="vq-pricing-lead">💳 {OFFER.intro}, {OFFER.introPerMin}</div>
+        <div className="vq-pricing-lead">{OFFER.intro}, {OFFER.introPerMin}</div>
         <div className="vq-pricing-then">{OFFER.after} · {OFFER.payment}</div>
       </div>
 
       <div className="vq-urgency">
         <div>{av.scarcity}</div>
         <div>{av.callsToday}</div>
-        <div>⭐ <strong>4,7/5</strong> satisfaction clients</div>
+        <div><strong>4,7/5</strong> satisfaction clients</div>
       </div>
 
       <p className="vq-reassure">
@@ -226,7 +226,7 @@ export default async function LPIlElleVousAime({
           {/* Must stay INSIDE .vq-flow: the `input:checked ~` sibling selector
               can only reach elements that share the inputs' parent. */}
           <div className="vq-sticky">
-            <a href={`tel:${PHONE}`}>📞 Appeler, {PHONE_DISPLAY}</a>
+            <a href={`tel:${PHONE}`}>Appeler, {PHONE_DISPLAY}</a>
           </div>
         </div>
 

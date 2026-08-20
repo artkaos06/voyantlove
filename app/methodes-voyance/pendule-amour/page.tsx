@@ -16,7 +16,7 @@ const config: ContentPageConfig = {
     { name: 'Pendule Amour', url: 'https://www.voyantlove.fr/methodes-voyance/pendule-amour/' },
   ],
   header: {
-    emoji: '🔮',
+    emoji: '',
     h1: 'Pendule amour',
     subtitle: 'Réponses Oui/Non instantanées et guidance sentimentale par la radiésthésie amoureuse',
     gradient: 'from-rose-500 via-fuchsia-500 to-pink-500',
@@ -28,10 +28,10 @@ const config: ContentPageConfig = {
   },
   accentText: 'text-rose-600',
   stats: [
-    { icon: '🔮', value: 'Oui/Non', label: 'Instantané' },
-    { icon: '💕', value: 'Ancestral', label: 'Art millénaire' },
-    { icon: '⭐', value: 'Élevée', label: 'Satisfaction' },
-    { icon: '✨', value: 'Forte', label: 'Fiabilité' },
+    { icon: '', value: 'Oui/Non', label: 'Instantané' },
+    { icon: '', value: 'Ancestral', label: 'Art millénaire' },
+    { icon: '', value: 'Élevée', label: 'Satisfaction' },
+    { icon: '', value: 'Forte', label: 'Fiabilité' },
   ],
   eeat: { colorScheme: 'rose', method: 'Pendule divinatoire et radi\\u00e9sth\\u00e9sie amoureuse' },
   cta: { topic: 'methodes-voyance', slug: 'pendule-amour' },
@@ -94,7 +94,7 @@ export default function PenduleAmourPage() {
 
         {/* Section: Qu&apos;est-ce que le Pendule Amour ? */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">&#x1F52E; Qu&apos;est-ce que le Pendule Amour ?</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6"> Qu&apos;est-ce que le Pendule Amour ?</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le pendule amour est un instrument de radi&eacute;sth&eacute;sie suspendu &agrave; un fil qui capte les &eacute;nergies subtiles pour r&eacute;pondre par oui ou non &agrave; vos questions sentimentales. Utilis&eacute; depuis l&apos;Antiquit&eacute;, il existe en quartz rose, am&eacute;thyste ou laiton.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Le <strong>pendule amour</strong> est un outil de <strong>radi&eacute;sth&eacute;sie</strong> sp&eacute;cifiquement utilis&eacute; pour r&eacute;pondre aux interrogations du c&oelig;ur. Son histoire remonte &agrave; l&apos;Antiquit&eacute;, o&ugrave; les devins &eacute;gyptiens et grecs utilisaient d&eacute;j&agrave; des objets suspendus pour capter les &eacute;nergies invisibles et obtenir des r&eacute;ponses &agrave; leurs questions les plus profondes. Au fil des si&egrave;cles, cette pratique s&apos;est raffin&eacute;e pour devenir un art &agrave; part enti&egrave;re parmi les <Link href="/methodes-voyance/" className="text-rose-600 hover:text-rose-800 underline font-medium">m&eacute;thodes de voyance</Link> sentimentale.
@@ -126,7 +126,7 @@ export default function PenduleAmourPage() {
 
         {/* Section: Comment le Pendule R&eacute;pond */}
         <section className="bg-gradient-to-br from-rose-50 to-fuchsia-50 rounded-xl p-8 mb-8 border-2 border-rose-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">&#x1F4AB; Comment le Pendule R&eacute;pond &agrave; Vos Questions d&apos;Amour</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6"> Comment le Pendule R&eacute;pond &agrave; Vos Questions d&apos;Amour</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le pendule r&eacute;pond par ses mouvements : un cercle dans le sens horaire signifie oui, un mouvement contraire signifie non. L&apos;amplitude et la vitesse r&eacute;v&egrave;lent l&apos;intensit&eacute; des &eacute;nergies sentimentales en jeu.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             La force du <strong>pendule amour</strong> r&eacute;side dans sa capacit&eacute; &agrave; fournir des <strong>r&eacute;ponses oui/non</strong> nettes et imm&eacute;diates. Contrairement au <strong>tarot</strong> qui d&eacute;ploie un r&eacute;cit complexe ou &agrave; l&apos;<Link href="/methodes-voyance/oracle-amour/" className="text-rose-600 hover:text-rose-800 underline font-medium">oracle de l&apos;amour</Link> qui d&eacute;livre des messages nuanc&eacute;s, le <strong>pendule divinatoire</strong> va droit au but. Voici comment interpr&eacute;ter ses mouvements en mati&egrave;re sentimentale.
@@ -165,7 +165,7 @@ export default function PenduleAmourPage() {
 
         {/* Section: Les 10 Questions d&apos;Amour les Plus Pos&eacute;es au Pendule */}
         <section id="questions" className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">&#x2764;&#xFE0F; Les 10 Questions d&apos;Amour les Plus Pos&eacute;es au Pendule</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">&#xFE0F; Les 10 Questions d&apos;Amour les Plus Pos&eacute;es au Pendule</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Les questions les plus pos&eacute;es au pendule amour sont : &laquo;&nbsp;M&apos;aime-t-il ?&nbsp;&raquo;, &laquo;&nbsp;Va-t-il revenir ?&nbsp;&raquo;, &laquo;&nbsp;Est-ce le bon ?&nbsp;&raquo;, &laquo;&nbsp;Pense-t-il &agrave; moi ?&nbsp;&raquo; et &laquo;&nbsp;Vais-je rencontrer quelqu&apos;un ?&nbsp;&raquo;.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Au fil de milliers de consultations de <strong>radi&eacute;sth&eacute;sie amoureuse</strong>, certaines questions reviennent avec une r&eacute;gularit&eacute; frappante. Voici les dix interrogations sentimentales les plus fr&eacute;quemment soumises au <strong>pendule amour</strong>, et comment celui-ci y r&eacute;pond.
@@ -228,7 +228,7 @@ export default function PenduleAmourPage() {
 
         {/* Section: Pendule vs Tarot vs Oracle */}
         <section className="bg-gradient-to-br from-fuchsia-50 to-rose-50 rounded-xl p-8 mb-8 border-2 border-fuchsia-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">&#x2696;&#xFE0F; Pendule vs Tarot vs Oracle : Quelle M&eacute;thode Choisir ?</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">&#xFE0F; Pendule vs Tarot vs Oracle : Quelle M&eacute;thode Choisir ?</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le pendule excelle pour les r&eacute;ponses oui/non rapides, le tarot pour une analyse d&eacute;taill&eacute;e des dynamiques relationnelles, et l&apos;oracle pour une guidance intuitive douce. Les meilleurs voyants combinent les trois m&eacute;thodes.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Chaque outil de <strong>voyance sentimentale</strong> poss&egrave;de ses forces et ses sp&eacute;cificit&eacute;s. Comprendre les diff&eacute;rences entre le <strong>pendule</strong>, le <strong>tarot</strong> et l&apos;<strong>oracle</strong> vous aide &agrave; choisir la m&eacute;thode la plus adapt&eacute;e &agrave; votre question amoureuse.
@@ -236,7 +236,7 @@ export default function PenduleAmourPage() {
 
           <div className="grid md:grid-cols-3 gap-5">
             <div className="bg-white rounded-lg p-5 border-2 border-rose-300">
-              <h3 className="font-bold text-lg mb-3 text-rose-700">&#x1F52E; Le Pendule</h3>
+              <h3 className="font-bold text-lg mb-3 text-rose-700"> Le Pendule</h3>
               <div className="space-y-2 text-gray-700 text-sm">
                 <p>&bull; <strong>Type :</strong> R&eacute;ponses Oui/Non directes</p>
                 <p>&bull; <strong>Force :</strong> Rapidit&eacute; et clart&eacute; absolue</p>
@@ -246,7 +246,7 @@ export default function PenduleAmourPage() {
             </div>
 
             <div className="bg-white rounded-lg p-5 border-2 border-indigo-300">
-              <h3 className="font-bold text-lg mb-3 text-indigo-700">&#x1F0CF; Le Tarot</h3>
+              <h3 className="font-bold text-lg mb-3 text-indigo-700"> Le Tarot</h3>
               <div className="space-y-2 text-gray-700 text-sm">
                 <p>&bull; <strong>Type :</strong> Analyse d&eacute;taill&eacute;e et narrative</p>
                 <p>&bull; <strong>Force :</strong> Profondeur et nuance</p>
@@ -259,7 +259,7 @@ export default function PenduleAmourPage() {
             </div>
 
             <div className="bg-white rounded-lg p-5 border-2 border-purple-300">
-              <h3 className="font-bold text-lg mb-3 text-purple-700">&#x2728; L&apos;Oracle</h3>
+              <h3 className="font-bold text-lg mb-3 text-purple-700"> L&apos;Oracle</h3>
               <div className="space-y-2 text-gray-700 text-sm">
                 <p>&bull; <strong>Type :</strong> Messages intuitifs et guidance</p>
                 <p>&bull; <strong>Force :</strong> Douceur et bienveillance</p>
@@ -279,7 +279,7 @@ export default function PenduleAmourPage() {
 
         {/* Section: Consulter un Voyant Sp&eacute;cialis&eacute; en Pendule */}
         <section id="consultation" className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">&#x1F9D9; Consulter un Voyant Sp&eacute;cialis&eacute; en Pendule</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6"> Consulter un Voyant Sp&eacute;cialis&eacute; en Pendule</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Un voyant sp&eacute;cialis&eacute; en pendule offre une neutralit&eacute; &eacute;motionnelle, une ma&icirc;trise technique et une clairvoyance compl&eacute;mentaire qui d&eacute;cuplent la pr&eacute;cision des r&eacute;ponses &agrave; vos questions sentimentales.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Si le <strong>pendule amour</strong> peut &ecirc;tre utilis&eacute; en pratique personnelle, une consultation avec un <strong>voyant</strong> sp&eacute;cialis&eacute; en <strong>radi&eacute;sth&eacute;sie</strong> offre un niveau de pr&eacute;cision et de profondeur incomparable. L&apos;expertise du praticien transforme un simple oui/non en v&eacute;ritable <strong>guidance sentimentale</strong> &eacute;clair&eacute;e, que ce soit en cabinet ou lors d&apos;une <Link href="/methodes-voyance/voyance-telephone-amour/" className="text-rose-600 hover:text-rose-800 underline font-medium">voyance par t&eacute;l&eacute;phone</Link>.

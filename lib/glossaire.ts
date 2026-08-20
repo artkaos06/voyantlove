@@ -46,18 +46,9 @@ export const CATEGORY_LABELS: Record<GlossaryCategory, string> = {
   'psychologie-amoureuse': 'Psychologie amoureuse',
 };
 
-export const CATEGORY_EMOJI: Record<GlossaryCategory, string> = {
-  spiritualite: '✨',
-  astrologie: '⭐',
-  numerologie: '🔢',
-  'pratiques-divinatoires': '🔮',
-  'psychologie-amoureuse': '💗',
-};
-
 export interface GlossaryTerm {
   slug: string;
   terme: string;
-  emoji: string;
   categorie: GlossaryCategory;
   /** 1-2 sentence definition, used on hub cards + as the meta description base (80-240 chars) */
   definitionCourte: string;
@@ -103,7 +94,6 @@ export function validateTermRecord(t: GlossaryTerm): string[] {
     if (f.a.length < 150) issues.push(`${t.slug}: faq[${i}] answer too short`);
   });
   if (!t.terme.trim()) issues.push(`${t.slug}: missing terme`);
-  if (!t.emoji.trim()) issues.push(`${t.slug}: missing emoji`);
   return issues;
 }
 
@@ -125,7 +115,6 @@ export function getGlossaryHubCards() {
   return GLOSSARY_TERMS.filter((t) => validateTermRecord(t).length === 0).map((t) => ({
     slug: t.slug,
     terme: t.terme,
-    emoji: t.emoji,
     categorie: t.categorie,
     definitionCourte: t.definitionCourte,
     href: `/glossaire/${t.slug}/`,
@@ -147,7 +136,6 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
   {
     slug: 'amour-karmique',
     terme: 'Amour Karmique',
-    emoji: '🔗',
     categorie: 'spiritualite',
     definitionCourte:
       'Une relation amoureuse intense, souvent difficile, censée rejouer une leçon ou une dette héritée d’une vie antérieure plutôt qu’un simple hasard de rencontre.',
@@ -186,7 +174,6 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
   {
     slug: 'contrat-ame',
     terme: 'Contrat d’Âme',
-    emoji: '📜',
     categorie: 'spiritualite',
     definitionCourte:
       'Un accord que deux âmes auraient conclu avant leur incarnation pour se rencontrer dans cette vie et s’aider mutuellement à évoluer, en amour comme dans d’autres domaines.',
@@ -225,7 +212,6 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
   {
     slug: 'connexion-ames',
     terme: 'Connexion d’Âmes',
-    emoji: '💫',
     categorie: 'spiritualite',
     definitionCourte:
       'Un lien affectif ressenti comme profondément authentique et rare avec une autre personne, au-delà de l’attirance physique ou des affinités de surface.',
@@ -264,7 +250,6 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
   {
     slug: 'corde-karmique',
     terme: 'Corde Karmique',
-    emoji: '🪢',
     categorie: 'spiritualite',
     definitionCourte:
       'Un lien énergétique invisible censé subsister entre deux personnes ayant partagé une relation intense, même longtemps après la séparation.',
@@ -303,7 +288,6 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
   {
     slug: 'synchronicite-amoureuse',
     terme: 'Synchronicité (en Amour)',
-    emoji: '🔄',
     categorie: 'spiritualite',
     definitionCourte:
       'Une coïncidence chargée de sens, comme penser à quelqu’un juste avant qu’il n’appelle, que la voyance amoureuse lit comme un signe plutôt qu’un simple hasard.',
@@ -342,7 +326,6 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
   {
     slug: 'signe-du-destin',
     terme: 'Signe du Destin',
-    emoji: '🌠',
     categorie: 'spiritualite',
     definitionCourte:
       'Un événement, une image ou une rencontre perçue comme un message de l’univers venant confirmer ou orienter une décision amoureuse.',
@@ -381,7 +364,6 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
   {
     slug: 'loi-attraction-amour',
     terme: 'Loi de l’Attraction en Amour',
-    emoji: '🧲',
     categorie: 'spiritualite',
     definitionCourte:
       'L’idée que nos pensées et notre état émotionnel dominant attireraient dans notre vie des expériences amoureuses en résonance avec eux.',
@@ -420,7 +402,6 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
   {
     slug: 'manifestation-amoureuse',
     terme: 'Manifestation Amoureuse',
-    emoji: '🌟',
     categorie: 'spiritualite',
     definitionCourte:
       'Une pratique consistant à visualiser et formuler précisément la relation amoureuse que l’on souhaite attirer, pour orienter consciemment son énergie et ses choix vers elle.',
@@ -459,7 +440,6 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
   {
     slug: 'blocage-energetique-amoureux',
     terme: 'Blocage Énergétique Amoureux',
-    emoji: '🚧',
     categorie: 'spiritualite',
     definitionCourte:
       'Une entrave invisible, souvent liée à une blessure ou une peur non résolue, qui empêcherait l’amour de circuler librement dans la vie d’une personne.',
@@ -498,7 +478,6 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
   {
     slug: 'chakra-du-coeur',
     terme: 'Chakra du Cœur',
-    emoji: '💚',
     categorie: 'spiritualite',
     definitionCourte:
       'Le centre énergétique associé à l’amour, à la compassion et à la capacité de se relier aux autres, situé selon la tradition au niveau de la poitrine.',
@@ -537,7 +516,6 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
   {
     slug: 'aura',
     terme: 'Aura',
-    emoji: '🌈',
     categorie: 'spiritualite',
     definitionCourte:
       'Le champ énergétique subtil qui envelopperait chaque personne, dont certains praticiens affirment pouvoir percevoir la couleur et l’état pour éclairer sa vie amoureuse.',
@@ -576,7 +554,6 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
   {
     slug: 'guide-spirituel',
     terme: 'Guide Spirituel',
-    emoji: '🕊️',
     categorie: 'spiritualite',
     definitionCourte:
       'Une entité ou une présence immatérielle censée accompagner une personne tout au long de sa vie pour l’aider à évoluer, y compris dans ses choix amoureux.',
@@ -615,7 +592,6 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
   {
     slug: 'channeling',
     terme: 'Channeling (Canalisation)',
-    emoji: '📡',
     categorie: 'spiritualite',
     definitionCourte:
       'Une pratique consistant, pour un médium, à se mettre en état réceptif pour transmettre des messages venant de guides, d’esprits ou d’une conscience supérieure.',
@@ -654,7 +630,6 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
   {
     slug: 'voyance-blanche',
     terme: 'Voyance Blanche',
-    emoji: '🤍',
     categorie: 'spiritualite',
     definitionCourte:
       'Une forme de voyance pratiquée sans aucun support matériel, ni cartes, ni pendule, reposant uniquement sur l’intuition directe et la clairvoyance naturelle du praticien.',
@@ -693,7 +668,6 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
   {
     slug: 'troisieme-oeil',
     terme: 'Troisième Œil',
-    emoji: '👁️',
     categorie: 'spiritualite',
     definitionCourte:
       'Le centre énergétique symbolique situé entre les sourcils, associé à l’intuition, à la clairvoyance et à la perception au-delà des cinq sens ordinaires.',
@@ -732,7 +706,6 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
   {
     slug: 'clairvoyance',
     terme: 'Clairvoyance',
-    emoji: '🔭',
     categorie: 'spiritualite',
     definitionCourte:
       'La faculté intuitive de percevoir des images ou des symboles liés à une personne ou une situation, indépendamment des cinq sens physiques ordinaires.',
@@ -771,7 +744,6 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
   {
     slug: 'clairaudience',
     terme: 'Clairaudience',
-    emoji: '👂',
     categorie: 'spiritualite',
     definitionCourte:
       'La faculté intuitive de percevoir des mots, des phrases ou des sons liés à une personne ou une situation, sans passer par l’ouïe physique.',
@@ -810,7 +782,6 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
   {
     slug: 'plume-blanche',
     terme: 'Plume Blanche',
-    emoji: '🪶',
     categorie: 'spiritualite',
     definitionCourte:
       'Une plume blanche trouvée de façon inattendue, traditionnellement interprétée comme un signe de protection ou un message envoyé par un être cher ou un ange gardien.',
@@ -849,7 +820,6 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
   {
     slug: 'protection-energetique-amour',
     terme: 'Protection Énergétique en Amour',
-    emoji: '🛡️',
     categorie: 'spiritualite',
     definitionCourte:
       'L’ensemble des pratiques visant à se prémunir des énergies négatives ou envahissantes dans ses relations amoureuses, sans fermer son cœur à l’amour.',
@@ -888,7 +858,6 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
   {
     slug: 'ombre-shadow-work',
     terme: 'Travail de l’Ombre (Shadow Work)',
-    emoji: '🌓',
     categorie: 'spiritualite',
     definitionCourte:
       'Un travail intérieur consistant à explorer consciemment les parts de soi refoulées ou rejetées, souvent projetées sur le partenaire dans les conflits de couple.',
@@ -927,7 +896,6 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
   {
     slug: 'heures-miroir',
     terme: 'Heures Miroir',
-    emoji: '⏰',
     categorie: 'spiritualite',
     definitionCourte:
       'Des heures où les chiffres se répètent sur l’horloge (11:11, 22:22), traditionnellement lues comme des messages symboliques, notamment sur la vie amoureuse.',
@@ -970,7 +938,6 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
   {
     slug: 'ascendant',
     terme: 'Ascendant',
-    emoji: '🌅',
     categorie: 'astrologie',
     definitionCourte:
       'Le signe astrologique qui se levait à l’horizon au moment précis de la naissance, déterminant selon l’astrologie la première image que l’on projette et le style d’attraction en amour.',
@@ -1010,7 +977,6 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
   {
     slug: 'theme-composite',
     terme: 'Thème Composite',
-    emoji: '🔗',
     categorie: 'astrologie',
     definitionCourte:
       'Un thème astral unique créé en calculant les points médians entre les planètes de deux partenaires, censé représenter l’énergie propre du couple en tant qu’entité à part entière.',
@@ -1049,7 +1015,6 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
   {
     slug: 'lune-noire',
     terme: 'Lune Noire (Lilith)',
-    emoji: '🌑',
     categorie: 'astrologie',
     definitionCourte:
       'Un point astrologique, souvent appelé Lilith, associé aux désirs profonds, aux zones d’ombre et à la part la plus indomptée et instinctive de la personnalité amoureuse.',
@@ -1088,7 +1053,6 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
   {
     slug: 'noeud-lunaire',
     terme: 'Nœud Lunaire',
-    emoji: '☊',
     categorie: 'astrologie',
     definitionCourte:
       'Deux points opposés du thème astral représentant, en astrologie karmique, les schémas hérités du passé à dépasser et la direction d’évolution à privilégier en amour.',
@@ -1127,7 +1091,6 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
   {
     slug: 'aspect-astrologique',
     terme: 'Aspect Astrologique',
-    emoji: '📐',
     categorie: 'astrologie',
     definitionCourte:
       'L’angle géométrique formé entre deux planètes dans un thème, déterminant si leurs énergies s’harmonisent, se tendent ou s’ignorent, la base de toute lecture de compatibilité en astrologie.',
@@ -1166,7 +1129,6 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
   {
     slug: 'venus-retrograde',
     terme: 'Vénus Rétrograde',
-    emoji: '♀️',
     categorie: 'astrologie',
     definitionCourte:
       'Une période d’environ six semaines, tous les dix-huit mois environ, où Vénus semble reculer dans le ciel, traditionnellement associée à un retour sur les questions de cœur et de valeurs.',
@@ -1205,7 +1167,6 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
   {
     slug: 'retour-de-saturne',
     terme: 'Retour de Saturne',
-    emoji: '🪐',
     categorie: 'astrologie',
     definitionCourte:
       'Le moment, autour de 29 ans puis 58 ans, où Saturne revient à sa position de naissance, marquant en astrologie un passage à l’âge adulte qui bouscule souvent les choix amoureux.',
@@ -1244,7 +1205,6 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
   {
     slug: 'pleine-lune-amour',
     terme: 'Pleine Lune et Amour',
-    emoji: '🌕',
     categorie: 'astrologie',
     definitionCourte:
       'Une phase du cycle lunaire, tous les 29,5 jours environ, traditionnellement associée à une intensification des émotions et à un moment propice aux bilans amoureux.',
@@ -1283,7 +1243,6 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
   {
     slug: 'signe-lunaire',
     terme: 'Signe Lunaire',
-    emoji: '🌙',
     categorie: 'astrologie',
     definitionCourte:
       'Le signe du zodiaque occupé par la Lune au moment de la naissance, révélant en astrologie les besoins émotionnels profonds d’une personne en amour, au-delà de son signe solaire.',
@@ -1322,7 +1281,6 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
   {
     slug: 'element-astrologique',
     terme: 'Élément Astrologique (en Amour)',
-    emoji: '🔥',
     categorie: 'astrologie',
     definitionCourte:
       'L’un des quatre groupes, Feu, Terre, Air, Eau, auxquels appartient chaque signe du zodiaque, déterminant selon l’astrologie un style amoureux et des affinités de compatibilité typiques.',
@@ -1365,7 +1323,6 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
   {
     slug: 'numerologie',
     terme: 'Numérologie',
-    emoji: '🔢',
     categorie: 'numerologie',
     definitionCourte:
       'Une pratique divinatoire qui attribue à chaque nombre une signification symbolique, utilisée pour éclairer la personnalité, les cycles de vie et la compatibilité amoureuse.',
@@ -1404,7 +1361,6 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
   {
     slug: 'nombre-maitre',
     terme: 'Nombre Maître',
-    emoji: '✨',
     categorie: 'numerologie',
     definitionCourte:
       'L’un des trois nombres 11, 22 ou 33 en numérologie, considérés comme porteurs d’une vibration spirituelle plus intense et plus exigeante que les nombres simples.',
@@ -1447,7 +1403,6 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
   {
     slug: 'chiromancie',
     terme: 'Chiromancie',
-    emoji: '✋',
     categorie: 'pratiques-divinatoires',
     definitionCourte:
       'L’art divinatoire de lire les lignes, monts et formes de la main pour éclairer la personnalité, le parcours de vie et les tendances amoureuses d’une personne.',
@@ -1486,7 +1441,6 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
   {
     slug: 'cristallomancie',
     terme: 'Cristallomancie',
-    emoji: '🔮',
     categorie: 'pratiques-divinatoires',
     definitionCourte:
       'L’art divinatoire consistant à lire des images et impressions symboliques en fixant une surface réfléchissante ou transparente, le plus souvent une boule de cristal.',
@@ -1525,7 +1479,6 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
   {
     slug: 'tasseographie',
     terme: 'Tasséographie',
-    emoji: '☕',
     categorie: 'pratiques-divinatoires',
     definitionCourte:
       'L’art de lire les formes dessinées par le marc de café ou les feuilles de thé au fond d’une tasse pour en tirer une guidance symbolique, notamment amoureuse.',
@@ -1564,7 +1517,6 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
   {
     slug: 'petit-lenormand',
     terme: 'Petit Lenormand',
-    emoji: '🎴',
     categorie: 'pratiques-divinatoires',
     definitionCourte:
       'Un jeu divinatoire de 36 cartes illustrées de symboles simples et concrets, distinct du tarot, très prisé pour des lectures directes sur les questions amoureuses.',
@@ -1603,7 +1555,6 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
   {
     slug: 'arcane-majeur',
     terme: 'Arcane Majeur',
-    emoji: '🃏',
     categorie: 'pratiques-divinatoires',
     definitionCourte:
       'L’une des 22 cartes fondamentales du tarot, numérotées de 0 à 21, représentant les grands archétypes universels de l’existence humaine, de l’amour à la transformation.',
@@ -1642,7 +1593,6 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
   {
     slug: 'arcane-mineur',
     terme: 'Arcane Mineur',
-    emoji: '🎴',
     categorie: 'pratiques-divinatoires',
     definitionCourte:
       'L’une des 56 cartes du tarot réparties en quatre suites (Coupes, Deniers, Épées, Bâtons), détaillant les circonstances concrètes et quotidiennes d’une situation.',
@@ -1681,7 +1631,6 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
   {
     slug: 'carte-inversee',
     terme: 'Carte Inversée',
-    emoji: '🔃',
     categorie: 'pratiques-divinatoires',
     definitionCourte:
       'Une carte tirée à l’envers dans un jeu de tarot ou d’oracle, dont la signification se nuance ou s’inverse par rapport à sa position droite habituelle.',
@@ -1720,7 +1669,6 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
   {
     slug: 'lithotherapie-amoureuse',
     terme: 'Lithothérapie Amoureuse',
-    emoji: '💎',
     categorie: 'pratiques-divinatoires',
     definitionCourte:
       'L’usage de pierres et cristaux, comme le quartz rose, censés porter des propriétés énergétiques favorables à l’amour, la confiance en soi et l’ouverture du cœur.',
@@ -1759,7 +1707,6 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
   {
     slug: 'feng-shui-amour',
     terme: 'Feng Shui de l’Amour',
-    emoji: '🏮',
     categorie: 'pratiques-divinatoires',
     definitionCourte:
       'L’application de l’art chinois d’harmonisation des espaces à la chambre et au foyer, pour favoriser la circulation d’une énergie propice à l’amour et au couple.',
@@ -1802,7 +1749,6 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
   {
     slug: 'attachement-anxieux',
     terme: 'Attachement Anxieux',
-    emoji: '😰',
     categorie: 'psychologie-amoureuse',
     definitionCourte:
       'Un style relationnel marqué par une forte peur de l’abandon et un besoin intense de réassurance, développé selon la théorie de l’attachement dès la petite enfance.',
@@ -1841,7 +1787,6 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
   {
     slug: 'attachement-evitant',
     terme: 'Attachement Évitant',
-    emoji: '🚪',
     categorie: 'psychologie-amoureuse',
     definitionCourte:
       'Un style relationnel marqué par une forte valorisation de l’indépendance et un inconfort face à l’intimité émotionnelle trop proche ou trop exigeante.',
@@ -1880,7 +1825,6 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
   {
     slug: 'love-bombing',
     terme: 'Love Bombing',
-    emoji: '💣',
     categorie: 'psychologie-amoureuse',
     definitionCourte:
       'Une stratégie de séduction excessive et précipitée, déclarations intenses, cadeaux, disponibilité totale, parfois utilisée pour créer une dépendance affective rapide.',
@@ -1919,7 +1863,6 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
   {
     slug: 'pervers-narcissique',
     terme: 'Pervers Narcissique',
-    emoji: '🎭',
     categorie: 'psychologie-amoureuse',
     definitionCourte:
       'Une expression courante désignant une personne dont le fonctionnement relationnel repose sur la manipulation, la dévalorisation et le contrôle systématique de son partenaire.',
@@ -1958,7 +1901,6 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
   {
     slug: 'charge-mentale',
     terme: 'Charge Mentale',
-    emoji: '🧠',
     categorie: 'psychologie-amoureuse',
     definitionCourte:
       'Le travail invisible d’anticipation, d’organisation et de gestion du quotidien qui pèse de façon disproportionnée sur l’un des deux partenaires au sein d’un couple.',
@@ -1997,7 +1939,6 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
   {
     slug: 'limerence',
     terme: 'Limérence',
-    emoji: '💘',
     categorie: 'psychologie-amoureuse',
     definitionCourte:
       'Un état amoureux obsessionnel et intrusif, caractérisé par une préoccupation mentale presque constante pour une personne, avec un fort espoir de réciprocité.',
@@ -2036,7 +1977,6 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
   {
     slug: 'rebond-amoureux',
     terme: 'Rebond Amoureux',
-    emoji: '🔁',
     categorie: 'psychologie-amoureuse',
     definitionCourte:
       'Une relation entamée peu après une rupture, souvent motivée par le besoin de combler un vide affectif plutôt que par un investissement pleinement disponible envers la nouvelle personne.',
@@ -2075,7 +2015,6 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
   {
     slug: 'peur-de-labandon',
     terme: 'Peur de l’Abandon',
-    emoji: '🥺',
     categorie: 'psychologie-amoureuse',
     definitionCourte:
       'Une crainte profonde, souvent enracinée dans l’enfance, d’être quitté ou rejeté par les personnes que l’on aime, influençant fortement les comportements amoureux à l’âge adulte.',
@@ -2114,7 +2053,6 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
   {
     slug: 'empathe',
     terme: 'Empathe (Personne Empathique)',
-    emoji: '🌊',
     categorie: 'psychologie-amoureuse',
     definitionCourte:
       'Une personne décrite comme ressentant intensément et directement les émotions d’autrui, ce qui influence fortement sa façon de vivre l’intimité et les relations amoureuses.',
@@ -2153,7 +2091,6 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
   {
     slug: 'sabotage-amoureux',
     terme: 'Sabotage Amoureux (Auto-Sabotage)',
-    emoji: '🧨',
     categorie: 'psychologie-amoureuse',
     definitionCourte:
       'Un ensemble de comportements inconscients qui compromettent une relation par ailleurs satisfaisante, souvent par peur de la vulnérabilité ou de l’échec amoureux.',

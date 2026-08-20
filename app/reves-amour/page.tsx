@@ -34,7 +34,7 @@ export default function RevesAmourHub() {
       <header className="bg-gradient-to-r from-indigo-700 via-purple-700 to-violet-800 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <Link href="/" className="text-white/80 hover:text-white mb-4 inline-block">← Accueil</Link>
-          <h1 className="text-5xl font-bold mb-6">🌙 Interprétation des rêves amoureux</h1>
+          <h1 className="text-5xl font-bold mb-6">Interprétation des rêves amoureux</h1>
           <p className="text-2xl opacity-95 mb-4">Ce que vos rêves d&apos;amour révèlent sur votre monde intérieur</p>
           <p className="text-lg opacity-90 max-w-2xl mx-auto">Rêver de son ex, de tromperie, de mariage, de son crush : la signification de chaque rêve, et ce qu&apos;il ne prédit pas.</p>
         </div>
@@ -75,7 +75,7 @@ export default function RevesAmourHub() {
               href="/rupture/rever-de-son-ex/"
               className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition border-t-4 border-purple-500"
             >
-              <div className="text-3xl mb-2">🌙</div>
+              <div className="text-3xl mb-2"></div>
               <h3 className="text-xl font-bold mb-1 text-gray-900">Rêver de son Ex</h3>
               <p className="text-gray-600 text-sm">Le guide complet : rêver de son ex qui revient, qui nous ignore, qui nous embrasse.</p>
             </Link>
@@ -84,7 +84,7 @@ export default function RevesAmourHub() {
 
         {/* Related networks */}
         <div className="bg-gray-100 rounded-xl p-6 mb-8">
-          <h2 className="font-bold text-lg mb-4 text-gray-900">🔮 Aller plus loin</h2>
+          <h2 className="font-bold text-lg mb-4 text-gray-900">Aller plus loin</h2>
           <div className="space-y-2">
             <Link href="/tarot-amour/" className="block text-indigo-600 hover:text-indigo-800 font-medium">&rarr; Tarot amour : signification des cartes</Link>
             <Link href="/methodes-voyance/" className="block text-indigo-600 hover:text-indigo-800 font-medium">&rarr; Les méthodes de voyance amoureuse</Link>

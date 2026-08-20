@@ -16,7 +16,7 @@ const config: ContentPageConfig = {
     { name: 'Silence Radio Reconquête', url: 'https://www.voyantlove.fr/reconquete/silence-radio-reconquete/' },
   ],
   header: {
-    emoji: '💜',
+    emoji: '',
     h1: 'Silence radio : la clé de la reconquête amoureuse',
     subtitle: 'Comprendre et maîtriser le silence radio avec la guidance de la voyance',
     gradient: 'from-purple-600 via-purple-700 to-indigo-600',
@@ -27,10 +27,10 @@ const config: ContentPageConfig = {
   },
   accentText: 'text-purple-600',
   stats: [
-    { icon: '⭐', value: '4.8/5', label: '295 Avis' },
-    { icon: '🤫', value: '70%', label: 'Taux de succès' },
-    { icon: '⏰', value: '3-8 sem', label: 'Durée moyenne' },
-    { icon: '🔮', value: '15 ans', label: 'Expérience' },
+    { icon: '', value: '4.8/5', label: '295 Avis' },
+    { icon: '', value: '70%', label: 'Taux de succès' },
+    { icon: '', value: '3-8 sem', label: 'Durée moyenne' },
+    { icon: '', value: '15 ans', label: 'Expérience' },
   ],
   eeat: { colorScheme: 'purple', method: 'Guidance voyance pour le silence radio en reconquête amoureuse' },
   cta: { topic: 'reconquete', slug: 'silence-radio-reconquete' },
@@ -83,7 +83,7 @@ export default function SilenceRadioReconquetePage() {
         <VoyantRecommendations topic="reconquete" limit={3} showOnlineFirst={true} source="silence-radio-reconquete-cards-top" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">🔮 Pourquoi le Silence Radio Fonctionne selon la Voyance</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Pourquoi le Silence Radio Fonctionne selon la Voyance</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le silence radio agit sur trois niveaux : psychologique en créant le manque, énergétique en libérant les attachements toxiques, et astrologique en laissant les cycles planétaires œuvrer en votre faveur.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Le <strong>tarot</strong> révèle systématiquement les mêmes schémas chez les personnes en <strong>reconquête amoureuse</strong>. Quand vous cessez tout contact, votre <strong>ex</strong> traverse plusieurs phases émotionnelles prévisibles que la <strong>voyance</strong> permet de suivre à distance, sans briser le silence.
@@ -109,7 +109,7 @@ export default function SilenceRadioReconquetePage() {
         </section>
 
         <section className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-8 mb-8 border-2 border-purple-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">⏰ Quelle Durée pour votre Silence Radio ?</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Quelle Durée pour votre Silence Radio ?</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">La durée optimale du silence radio dépend de la longueur de votre relation, de la gravité de la rupture et des configurations astrologiques. Le tarot affine ce timing pour chaque situation unique.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Il n'existe pas de durée universelle pour le <strong>silence radio</strong>. Chaque <strong>relation amoureuse</strong> est unique et les dynamiques émotionnelles varient considérablement d'un couple à l'autre. La <strong>voyance</strong> excelle dans cette personnalisation du timing, car elle capte l'énergie spécifique de votre situation.
@@ -133,7 +133,7 @@ export default function SilenceRadioReconquetePage() {
         <VoyantQuickCTA topic="reconquete" source="silence-radio-reconquete-banner-mid" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">✅ Les Règles d'Or du Silence Radio</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Les Règles d'Or du Silence Radio</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Pour que le silence radio soit efficace, cinq règles fondamentales doivent être respectées : le zéro contact absolu, l'utilisation stratégique des réseaux sociaux, le travail sur soi, la patience, et la guidance régulière de la voyance.</p>
           <div className="space-y-6">
             <div className="flex items-start gap-4">
@@ -175,7 +175,7 @@ export default function SilenceRadioReconquetePage() {
         </section>
 
         <section className="bg-red-50 border-2 border-red-200 rounded-xl p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">❌ Quand NE PAS Faire le Silence Radio</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Quand NE PAS Faire le Silence Radio</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le silence radio n'est pas toujours approprié. Certaines situations requièrent une approche différente que la voyance aide à identifier pour ne pas compromettre vos chances.</p>
           <div className="space-y-3">
             <div className="flex items-start gap-3">

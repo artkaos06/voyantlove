@@ -16,7 +16,7 @@ const config: ContentPageConfig = {
     { name: 'Trouver son Âme Sœur', url: 'https://www.voyantlove.fr/nouvelle-rencontre/trouver-ame-soeur/' },
   ],
   header: {
-    emoji: '💫',
+    emoji: '',
     h1: 'Trouver son âme sœur',
     subtitle: 'Guide complet pour reconnaître et attirer votre connexion spirituelle',
     gradient: 'from-purple-500 via-indigo-500 to-blue-500',
@@ -28,10 +28,10 @@ const config: ContentPageConfig = {
   },
   accentText: 'text-indigo-600',
   stats: [
-    { icon: '💫', value: 'Élevée', label: 'Reconnexion' },
-    { icon: '🔮', value: '18 mois', label: 'Délai moyen' },
-    { icon: '✨', value: '4,200+', label: 'Unions guidées' },
-    { icon: '⭐', value: '4.8/5', label: '398 Avis' },
+    { icon: '', value: 'Élevée', label: 'Reconnexion' },
+    { icon: '', value: '18 mois', label: 'Délai moyen' },
+    { icon: '', value: '4,200+', label: 'Unions guidées' },
+    { icon: '', value: '4.8/5', label: '398 Avis' },
   ],
   eeat: { colorScheme: 'purple', method: 'Guidance spirituelle et lecture tarot des âmes sœurs' },
   cta: { topic: 'nouvelle-rencontre', slug: 'trouver-ame-soeur' },
@@ -89,7 +89,7 @@ export default function TrouverAmeSoeurPage() {
       <VoyantRecommendations topic="nouvelle-rencontre" limit={3} showOnlineFirst={true} source="trouver-ame-soeur-cards-top" />
 
       <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-        <h2 className="text-3xl font-bold mb-6 text-indigo-600">💎 Qu'est-ce qu'une Âme Sœur Vraiment ?</h2>
+        <h2 className="text-3xl font-bold mb-6 text-indigo-600">Qu'est-ce qu'une Âme Sœur Vraiment ?</h2>
         <p className="text-lg font-semibold text-gray-800 mb-4">L'ame soeur est une personne avec qui vous partagez un lien spirituel preexistant, forge dans des vies anterieures. Vos ames se reconnaissent et cheminent ensemble pour evoluer mutuellement.</p>
         <p className="text-gray-700 mb-6">
           Avant de chercher votre <strong>âme sœur</strong>, il est essentiel de comprendre ce concept au-delà des clichés romantiques et des illusions hollywoodiennes.
@@ -110,16 +110,16 @@ export default function TrouverAmeSoeurPage() {
             <h3 className="font-bold text-lg mb-3 text-blue-700">Ce que l'Âme Sœur N'EST PAS</h3>
             <div className="space-y-2">
               <p className="text-gray-700">
-                <strong>❌ Pas la perfection sans effort :</strong> L'âme sœur ne signifie pas relation sans travail. Toute relation nécessite communication, compromis, et évolution mutuelle.
+                <strong>Pas la perfection sans effort :</strong> L'âme sœur ne signifie pas relation sans travail. Toute relation nécessite communication, compromis, et évolution mutuelle.
               </p>
               <p className="text-gray-700">
-                <strong>❌ Pas l'unique personne au monde :</strong> Vous pouvez avoir plusieurs âmes sœurs potentielles. L'âme sœur romantique est celle avec qui vous choisissez consciemment de construire une vie.
+                <strong>Pas l'unique personne au monde :</strong> Vous pouvez avoir plusieurs âmes sœurs potentielles. L'âme sœur romantique est celle avec qui vous choisissez consciemment de construire une vie.
               </p>
               <p className="text-gray-700">
-                <strong>❌ Pas un sauveur qui règle vos problèmes :</strong> L'âme sœur vous accompagne mais ne vous "répare" pas. Vous devez arriver entier, pas brisé et en attente de sauvetage.
+                <strong>Pas un sauveur qui règle vos problèmes :</strong> L'âme sœur vous accompagne mais ne vous "répare" pas. Vous devez arriver entier, pas brisé et en attente de sauvetage.
               </p>
               <p className="text-gray-700">
-                <strong>❌ Pas forcément la passion dévorante :</strong> L'âme sœur peut être connexion paisible et profonde plutôt que feu d'artifice constant. La paix est sous-estimée.
+                <strong>Pas forcément la passion dévorante :</strong> L'âme sœur peut être connexion paisible et profonde plutôt que feu d'artifice constant. La paix est sous-estimée.
               </p>
             </div>
           </div>
@@ -152,7 +152,7 @@ export default function TrouverAmeSoeurPage() {
             <h3 className="font-bold text-lg mb-3 text-pink-700">Âme Sœur vs Flamme Jumelle</h3>
             <div className="grid md:grid-cols-2 gap-4 mt-3">
               <div>
-                <h4 className="font-semibold text-pink-600 mb-2">🌟 Âme Sœur</h4>
+                <h4 className="font-semibold text-pink-600 mb-2">Âme Sœur</h4>
                 <ul className="text-sm text-gray-700 space-y-1">
                   <li>• Connexion complémentaire</li>
                   <li>• Relation stable et harmonieuse</li>
@@ -163,7 +163,7 @@ export default function TrouverAmeSoeurPage() {
                 </ul>
               </div>
               <div>
-                <h4 className="font-semibold text-pink-600 mb-2">🔥 Flamme Jumelle</h4>
+                <h4 className="font-semibold text-pink-600 mb-2">Flamme Jumelle</h4>
                 <ul className="text-sm text-gray-700 space-y-1">
                   <li>• Connexion miroir (même âme)</li>
                   <li>• Relation intense et tumultueuse</li>
@@ -182,7 +182,7 @@ export default function TrouverAmeSoeurPage() {
       </section>
 
       <section id="signes" className="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-xl p-8 mb-8 border-2 border-indigo-200">
-        <h2 className="text-3xl font-bold mb-6 text-gray-900">✨ Les 15 Signes que Vous Avez Rencontré Votre Âme Sœur</h2>
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Les 15 Signes que Vous Avez Rencontré Votre Âme Sœur</h2>
         <p className="text-lg font-semibold text-gray-800 mb-4">Les signes principaux incluent une familiarite instantanee, des synchronicites repetees, un sentiment de « rentrer a la maison » et une croissance mutuelle acceleree. Cinq signes ou plus confirment la connexion.</p>
         <p className="text-gray-700 mb-6">
           Si vous vous demandez si une personne dans votre vie est votre <strong>âme sœur</strong>, voici les <Link href="/nouvelle-rencontre/signes-ame-soeur/" className="text-indigo-600 hover:text-indigo-800 underline font-medium">signes de l'âme sœur</Link> universels. La présence de 5+ signes confirme fortement la connexion d'âmes sœurs.
@@ -296,7 +296,7 @@ export default function TrouverAmeSoeurPage() {
         </div>
 
         <div className="mt-6 bg-white rounded-lg p-5 border-2 border-indigo-300">
-          <h3 className="font-bold text-indigo-700 mb-3">💡 Interprétation des Résultats</h3>
+          <h3 className="font-bold text-indigo-700 mb-3">Interprétation des Résultats</h3>
           <ul className="space-y-2 text-gray-700">
             <li><strong>10-15 signes :</strong> C'est très probablement votre âme sœur. La connexion est indéniable.</li>
             <li><strong>5-9 signes :</strong> Connexion forte avec potentiel d'âme sœur. Laissez le temps révéler la vérité.</li>
@@ -307,7 +307,7 @@ export default function TrouverAmeSoeurPage() {
       </section>
 
       <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-        <h2 className="text-3xl font-bold mb-6 text-indigo-600">🧘 Comment Se Préparer à Rencontrer Son Âme Sœur</h2>
+        <h2 className="text-3xl font-bold mb-6 text-indigo-600">Comment Se Préparer à Rencontrer Son Âme Sœur</h2>
         <p className="text-lg font-semibold text-gray-800 mb-4">La preparation passe par sept etapes : guerir les blessures passees, clarifier vos attentes, elever votre vibration, lacher prise sur le controle et agir dans le monde physique. Comptez 12 a 18 mois de travail interieur.</p>
         <p className="text-gray-700 mb-6">
           Attirer votre <strong>âme sœur</strong> nécessite une préparation intérieure. Vous n'attirez pas qui vous voulez, mais qui vous êtes. Élevez votre vibration pour attirer une âme élevée.
@@ -315,7 +315,7 @@ export default function TrouverAmeSoeurPage() {
 
         <div className="space-y-6">
           <div className="bg-gradient-to-r from-purple-100 to-indigo-100 p-6 rounded-lg border-2 border-purple-300">
-            <h3 className="font-bold text-xl mb-4 text-purple-800">🔮 Les 7 Étapes de Préparation Spirituelle</h3>
+            <h3 className="font-bold text-xl mb-4 text-purple-800">Les 7 Étapes de Préparation Spirituelle</h3>
 
             <div className="space-y-4">
               <div>
@@ -370,7 +370,7 @@ export default function TrouverAmeSoeurPage() {
           </div>
 
           <div className="bg-yellow-50 p-6 rounded-lg border-2 border-yellow-300">
-            <h3 className="font-bold text-xl mb-3 text-yellow-800">⏰ Timeline de Préparation Moyenne</h3>
+            <h3 className="font-bold text-xl mb-3 text-yellow-800">Timeline de Préparation Moyenne</h3>
             <div className="space-y-2 text-gray-700">
               <p><strong>Guérison profonde :</strong> 6-12 mois de travail thérapeutique intensif</p>
               <p><strong>Clarification et vision :</strong> 1-2 mois de réflexion et journaling</p>
@@ -384,7 +384,7 @@ export default function TrouverAmeSoeurPage() {
       </section>
 
       <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-        <h2 className="text-3xl font-bold mb-6 text-indigo-600">🔮 Le Tarot des Âmes Sœurs : Cartes Révélatrices</h2>
+        <h2 className="text-3xl font-bold mb-6 text-indigo-600">Le Tarot des Âmes Sœurs : Cartes Révélatrices</h2>
         <p className="text-lg font-semibold text-gray-800 mb-4">Les cartes confirmant une connexion d'ame soeur sont Les Amoureux, le Deux de Coupe, l'Etoile, Temperance et le Soleil. Le Diable ou la Tour signalent au contraire un lien karmique toxique.</p>
         <p className="text-gray-700 mb-6">
           Le <strong>tarot</strong> identifie les connexions d'âmes sœurs avec une précision remarquable grâce au <Link href="/methodes-voyance/tirage-tarot-amour/" className="text-indigo-600 hover:text-indigo-800 underline font-medium">tirage de tarot amoureux</Link>. Certaines cartes sont des marqueurs directs de cette union spirituelle.
@@ -392,7 +392,7 @@ export default function TrouverAmeSoeurPage() {
 
         <div className="space-y-6">
           <div className="bg-gradient-to-r from-pink-100 to-rose-100 p-6 rounded-lg border-2 border-pink-300">
-            <h3 className="font-bold text-xl mb-4 text-pink-800">💖 Cartes Confirmant la Connexion d'Âme Sœur</h3>
+            <h3 className="font-bold text-xl mb-4 text-pink-800">Cartes Confirmant la Connexion d'Âme Sœur</h3>
 
             <div className="space-y-4">
               <div>
@@ -447,7 +447,7 @@ export default function TrouverAmeSoeurPage() {
           </div>
 
           <div className="bg-gradient-to-r from-gray-100 to-slate-100 p-6 rounded-lg border-2 border-gray-300">
-            <h3 className="font-bold text-xl mb-4 text-gray-800">⚠️ Cartes Indiquant Ce N'est PAS Votre Âme Sœur</h3>
+            <h3 className="font-bold text-xl mb-4 text-gray-800">Cartes Indiquant Ce N'est PAS Votre Âme Sœur</h3>
 
             <div className="space-y-4">
               <div>
@@ -492,7 +492,7 @@ export default function TrouverAmeSoeurPage() {
       <VoyantQuickCTA topic="nouvelle-rencontre" source="trouver-ame-soeur-banner-mid" />
 
       <section className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-xl p-8 mb-8 border-2 border-blue-200">
-        <h2 className="text-3xl font-bold mb-6 text-gray-900">🌟 Où et Comment Rencontrer Son Âme Sœur</h2>
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Où et Comment Rencontrer Son Âme Sœur</h2>
         <p className="text-lg font-semibold text-gray-800 mb-4">Les ames soeurs se rencontrent principalement lors d'activites alignees avec leurs passions, par le cercle social ou dans des lieux spirituels. Multiplier les contextes augmente les chances.</p>
         <p className="text-gray-700 mb-6">
           Les <strong>âmes sœurs</strong> se rencontrent rarement par hasard total. L'univers crée des opportunités dans des contextes spécifiques. Voici les lieux et situations les plus fréquents.
@@ -550,7 +550,7 @@ export default function TrouverAmeSoeurPage() {
         </div>
 
         <div className="mt-6 bg-white rounded-lg p-5 border-2 border-blue-300">
-          <h3 className="font-bold text-blue-700 mb-3">💡 Stratégie d'Ouverture Maximale</h3>
+          <h3 className="font-bold text-blue-700 mb-3">Stratégie d'Ouverture Maximale</h3>
           <p className="text-gray-700">
             Pour maximiser vos chances : <strong>combinez plusieurs canaux</strong>. Restez actif socialement, participez à activités alignées, soyez ouvert en ligne, voyagez si possible. Plus vous créez d'opportunités (tout en restant sélectif et aligné), plus l'univers a de moyens de vous connecter à votre âme sœur. Mais toujours : qualité {'>'} quantité, intention {'>'} désespoir.
           </p>
@@ -558,7 +558,7 @@ export default function TrouverAmeSoeurPage() {
       </section>
 
       <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-        <h2 className="text-3xl font-bold mb-6 text-indigo-600">⚠️ Erreurs Fréquentes Qui Retardent la Rencontre</h2>
+        <h2 className="text-3xl font-bold mb-6 text-indigo-600">Erreurs Fréquentes Qui Retardent la Rencontre</h2>
         <p className="text-lg font-semibold text-gray-800 mb-4">Les erreurs qui retardent la rencontre sont : chercher pour combler un vide, rester attache a un ex, avoir des criteres superficiels, etre impatient et negliger le travail interieur.</p>
         <p className="text-gray-700 mb-6">
           Ces blocages inconscients empêchent l'âme sœur d'entrer dans votre vie, même si vous pensez être "prêt".

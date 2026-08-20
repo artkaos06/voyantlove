@@ -15,7 +15,7 @@ const config: ContentPageConfig = {
     { name: 'Voyance Mariage', url: 'https://www.voyantlove.fr/sentiments/voyance-mariage/' },
   ],
   header: {
-    emoji: '💍',
+    emoji: '',
     h1: 'Voyance mariage',
     subtitle: 'Vais-Je Me Marier ? Avec Qui ?',
     gradient: 'from-rose-500 via-pink-600 to-purple-600',
@@ -27,10 +27,10 @@ const config: ContentPageConfig = {
   },
   accentText: 'text-pink-600',
   stats: [
-    { icon: '💍', value: '5 Cartes', label: 'Tarot union & mariage' },
-    { icon: '✨', value: '16 ans', label: 'D\'expertise en voyance' },
-    { icon: '🔮', value: '3 400+', label: 'Consultations réalisées' },
-    { icon: '🌟', value: 'Timing', label: 'Cycles Jupiter & num.' },
+    { icon: '', value: '5 Cartes', label: 'Tarot union & mariage' },
+    { icon: '', value: '16 ans', label: 'D\'expertise en voyance' },
+    { icon: '', value: '3 400+', label: 'Consultations réalisées' },
+    { icon: '', value: 'Timing', label: 'Cycles Jupiter & num.' },
   ],
   eeat: { colorScheme: 'rose', method: 'Tarot et voyance professionnelle' },
   cta: { topic: 'sentiments', slug: 'voyance-mariage' },
@@ -84,7 +84,7 @@ export default function VoyanceMariagePage() {
 
         {/* Ce que la voyance révèle sur votre mariage */}
         <section className="bg-gradient-to-br from-rose-50 to-pink-50 rounded-xl p-8 mb-8 border-2 border-rose-200">
-          <h2 className="text-3xl font-bold mb-6 text-gray-900">&#x1F52E; Ce que la Voyance Révèle sur Votre Mariage</h2>
+          <h2 className="text-3xl font-bold mb-6 text-gray-900"> Ce que la Voyance Révèle sur Votre Mariage</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">La voyance mariage peut identifier les probabilités d'union, le timing favorable, les blocages énergétiques et le profil de votre futur conjoint, sans jamais ôter votre libre arbitre.</p>
           <p className="text-gray-700 mb-6">
             La <strong>voyance mariage</strong> ne fonctionne pas comme un oracle infaillible qui dicte un futur figé. Elle lit les courants énergétiques présents dans votre vie amoureuse et évalue la probabilité d'une union formelle selon votre vibration actuelle, les tendances de votre relation, et les cycles cosmiques qui vous gouvernent.
@@ -116,7 +116,7 @@ export default function VoyanceMariagePage() {
 
         {/* Les cartes du tarot */}
         <section id="tarot-mariage" className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold mb-6 text-rose-600">&#x1F0CF; Les Cartes du Tarot qui Annoncent un Mariage</h2>
+          <h2 className="text-3xl font-bold mb-6 text-rose-600"> Les Cartes du Tarot qui Annoncent un Mariage</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">L'Amoureux, le Soleil, le 10 de Coupe, l'As de Bâton et le 4 de Bâton sont les cinq cartes les plus associées à l'annonce d'un mariage ou d'une demande imminente dans un tirage amoureux.</p>
           <p className="text-gray-700 mb-6">
             Chaque carte du tarot porte une symbolique précise lorsqu'elle apparaît dans un contexte de <strong>voyance union</strong>. Leur position dans le tirage et leur association avec les autres cartes affinent considérablement le message. Voici les cinq arcanes les plus significatifs pour la question du mariage.
@@ -124,35 +124,35 @@ export default function VoyanceMariagePage() {
 
           <div className="space-y-4">
             <div className="bg-pink-50 p-5 rounded-lg border-l-4 border-pink-500">
-              <h3 className="font-bold text-pink-700 mb-2 text-lg">&#x1F0CF; L'Amoureux (Arcane VI)</h3>
+              <h3 className="font-bold text-pink-700 mb-2 text-lg"> L'Amoureux (Arcane VI)</h3>
               <p className="text-gray-700">
                 L'Amoureux représente le choix conscient et délibéré de l'union. Dans un tirage mariage, il symbolise la décision intérieure d'officialiser la relation. Il peut indiquer que votre partenaire est en train de peser cet engagement dans son for intérieur. Quand il apparaît accompagné d'autres cartes positives, il signale que la <strong>demande en mariage</strong> est une possibilité réelle dans l'horizon proche. Il invite aussi à vérifier que les deux partenaires choisissent cette union librement et en conscience, sans pression extérieure.
               </p>
             </div>
 
             <div className="bg-yellow-50 p-5 rounded-lg border-l-4 border-yellow-500">
-              <h3 className="font-bold text-yellow-700 mb-2 text-lg">&#x1F0CF; Le Soleil (Arcane XIX)</h3>
+              <h3 className="font-bold text-yellow-700 mb-2 text-lg"> Le Soleil (Arcane XIX)</h3>
               <p className="text-gray-700">
                 Le Soleil est la carte de la joie rayonnante, de la réussite et de la célébration. Dans un tirage mariage, il annonce une <strong>cérémonie</strong> heureuse, reconnue et célébrée par l'entourage. Il indique également une union fondée sur une lumière authentique et une transparence émotionnelle entre les partenaires. Le Soleil dans une position d'avenir représente souvent une union qui s'épanouit pleinement et qui rayonne de bonheur durable.
               </p>
             </div>
 
             <div className="bg-blue-50 p-5 rounded-lg border-l-4 border-blue-500">
-              <h3 className="font-bold text-blue-700 mb-2 text-lg">&#x1F0CF; Le 10 de Coupe</h3>
+              <h3 className="font-bold text-blue-700 mb-2 text-lg"> Le 10 de Coupe</h3>
               <p className="text-gray-700">
                 Le 10 de Coupe est la carte de l'accomplissement émotionnel et familial par excellence. Elle représente le bonheur conjugal durable, la fondation d'un foyer aimant et l'épanouissement de la vie à deux. Sa présence dans un tirage mariage est un signe très positif : elle indique que l'union envisagée portera les fruits d'une profonde satisfaction émotionnelle et d'une <strong>compatibilité</strong> fondamentale entre les âmes. C'est la carte du « ils vécurent heureux » du tarot.
               </p>
             </div>
 
             <div className="bg-orange-50 p-5 rounded-lg border-l-4 border-orange-500">
-              <h3 className="font-bold text-orange-700 mb-2 text-lg">&#x1F0CF; L'As de Bâton</h3>
+              <h3 className="font-bold text-orange-700 mb-2 text-lg"> L'As de Bâton</h3>
               <p className="text-gray-700">
                 L'As de Bâton représente un nouveau départ ardent, une initiative passionnée et le lancement d'un projet amoureux majeur. Dans le contexte du mariage, il peut signaler l'émergence d'une décision d'<strong>engagement</strong> chez votre partenaire, une étincelle qui cherche à se concrétiser. Il peut aussi indiquer une proposition de mariage spontanée et enthousiaste, portée par une énergie de feu et de désir de construction commune. Sa présence est encourageante et dynamique.
               </p>
             </div>
 
             <div className="bg-green-50 p-5 rounded-lg border-l-4 border-green-500">
-              <h3 className="font-bold text-green-700 mb-2 text-lg">&#x1F0CF; Le 4 de Bâton</h3>
+              <h3 className="font-bold text-green-700 mb-2 text-lg"> Le 4 de Bâton</h3>
               <p className="text-gray-700">
                 Le 4 de Bâton est la carte la plus directement liée à la <strong>cérémonie de mariage</strong> dans le tarot des mineurs. Elle représente littéralement la célébration, le portique floral de la noce, la fête et la stabilité d'une union officialisée. Sa présence dans un tirage est un signal puissant d'une célébration imminente ou prochaine. Combinée au Soleil ou à l'Amoureux, elle constitue l'un des signes les plus clairs d'un mariage dans votre avenir proche selon la <strong>voyance mariage</strong>.
               </p>
@@ -162,7 +162,7 @@ export default function VoyanceMariagePage() {
 
         {/* Signes que la demande approche */}
         <section className="bg-gradient-to-br from-purple-50 to-rose-50 rounded-xl p-8 mb-8 border-2 border-purple-200">
-          <h2 className="text-3xl font-bold mb-6 text-gray-900">&#x2728; Signes que la Demande en Mariage Approche</h2>
+          <h2 className="text-3xl font-bold mb-6 text-gray-900"> Signes que la Demande en Mariage Approche</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Certains comportements, synchronicités et rêves signalent que votre partenaire prépare une demande en mariage ou que l'univers vous oriente vers une union prochaine.</p>
           <p className="text-gray-700 mb-6">
             En dehors du tarot, certains signaux dans votre vie quotidienne peuvent indiquer qu'une <strong>demande en mariage</strong> se prépare. La voyance interprète ces signaux comme des marqueurs énergétiques d'un changement de cap amoureux imminent.
@@ -173,19 +173,19 @@ export default function VoyanceMariagePage() {
               <h3 className="font-bold text-xl mb-4 text-rose-700">Comportements de votre partenaire</h3>
               <div className="space-y-3 text-gray-700">
                 <div className="flex items-start gap-2">
-                  <span className="text-rose-500 font-bold">&#x2665;</span>
+                  <span className="text-rose-500 font-bold"></span>
                   <p>Il ou elle parle davantage d'avenir commun, de projets à long terme et de famille</p>
                 </div>
                 <div className="flex items-start gap-2">
-                  <span className="text-rose-500 font-bold">&#x2665;</span>
+                  <span className="text-rose-500 font-bold"></span>
                   <p>Changements de comportement discrets : économies, discussions avec la famille, secrets inhabituels</p>
                 </div>
                 <div className="flex items-start gap-2">
-                  <span className="text-rose-500 font-bold">&#x2665;</span>
+                  <span className="text-rose-500 font-bold"></span>
                   <p>Intérêt soudain pour des bagues, des bijoux ou les préférences de votre entourage</p>
                 </div>
                 <div className="flex items-start gap-2">
-                  <span className="text-rose-500 font-bold">&#x2665;</span>
+                  <span className="text-rose-500 font-bold"></span>
                   <p>Profonde stabilisation émotionnelle, réduction des conflits et apaisement général du couple</p>
                 </div>
               </div>
@@ -195,19 +195,19 @@ export default function VoyanceMariagePage() {
               <h3 className="font-bold text-xl mb-4 text-purple-700">Synchronicités &amp; signes de l'univers</h3>
               <div className="space-y-3 text-gray-700">
                 <div className="flex items-start gap-2">
-                  <span className="text-purple-500 font-bold">&#x2605;</span>
+                  <span className="text-purple-500 font-bold"></span>
                   <p>Répétition du chiffre 6 (Amoureux tarot) ou de nombres doubles dans votre quotidien</p>
                 </div>
                 <div className="flex items-start gap-2">
-                  <span className="text-purple-500 font-bold">&#x2605;</span>
+                  <span className="text-purple-500 font-bold"></span>
                   <p>Rêves de bague, de cérémonie, de robe blanche ou de votre partenaire en habits de fête</p>
                 </div>
                 <div className="flex items-start gap-2">
-                  <span className="text-purple-500 font-bold">&#x2605;</span>
+                  <span className="text-purple-500 font-bold"></span>
                   <p>Invitations répétées à des mariages ou rencontres fréquentes avec des couples qui viennent de se fiancer</p>
                 </div>
                 <div className="flex items-start gap-2">
-                  <span className="text-purple-500 font-bold">&#x2605;</span>
+                  <span className="text-purple-500 font-bold"></span>
                   <p>Sentiment intérieur fort et persistant d'un engagement imminent, intuition qui se renforce chaque semaine</p>
                 </div>
               </div>
@@ -217,7 +217,7 @@ export default function VoyanceMariagePage() {
 
         {/* Avec qui vais-je me marier ? */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold mb-6 text-rose-600">&#x1F48F; Avec Qui Vais-Je Me Marier ?</h2>
+          <h2 className="text-3xl font-bold mb-6 text-rose-600"> Avec Qui Vais-Je Me Marier ?</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">La voyance peut décrire le profil de votre futur conjoint selon ses traits de caractère dominants, son signe astrologique probable et le timing de votre rencontre si elle n'a pas encore eu lieu.</p>
           <p className="text-gray-700 mb-6">
             La question du <strong>futur conjoint</strong> est l'une des plus demandées en consultation voyance mariage. Que vous soyez en couple et incertain de l'avenir, ou célibataire en attente d'une rencontre décisive, la voyance peut apporter des éléments concrets de réponse. Pour approfondir la <Link href="/sentiments/compatibilite-amoureuse/" className="text-rose-600 hover:text-rose-800 underline font-medium">compatibilité de votre couple</Link>, un tirage dédié est particulièrement révélateur.
@@ -249,7 +249,7 @@ export default function VoyanceMariagePage() {
 
         {/* Quand vais-je me marier ? */}
         <section id="quand" className="bg-gradient-to-br from-pink-50 to-purple-50 rounded-xl p-8 mb-8 border-2 border-pink-200">
-          <h2 className="text-3xl font-bold mb-6 text-gray-900">&#x1F4C5; Quand Vais-Je Me Marier ?</h2>
+          <h2 className="text-3xl font-bold mb-6 text-gray-900"> Quand Vais-Je Me Marier ?</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Les périodes les plus favorables au mariage se lisent dans les cycles de Jupiter, les années personnelles en numérologie et les transits planétaires sur votre Vénus natale.</p>
           <p className="text-gray-700 mb-6">
             La question du timing est centrale en <strong>prédiction mariage</strong>. Plusieurs disciplines divinatoires convergent pour identifier les fenêtres temporelles les plus propices à l'union officielle.
@@ -257,14 +257,14 @@ export default function VoyanceMariagePage() {
 
           <div className="grid md:grid-cols-2 gap-6 mb-6">
             <div className="bg-white rounded-lg p-6 shadow-sm">
-              <h3 className="font-bold text-xl mb-4 text-rose-700">&#x1FA90; Cycles de Jupiter</h3>
+              <h3 className="font-bold text-xl mb-4 text-rose-700"> Cycles de Jupiter</h3>
               <p className="text-gray-700 mb-3">
                 Jupiter, planète de l'expansion et de la chance, fait le tour du zodiaque en 12 ans. Lorsqu'il transite sur votre Vénus natale, votre Maison VII (maison du mariage) ou votre Descendant, il ouvre une période de grande opportunité d'union et d'<strong>engagement</strong> officiel. Ces fenêtres durent environ 12 à 18 mois et constituent les périodes les plus favorables pour célébrer un mariage ou recevoir une demande.
               </p>
             </div>
 
             <div className="bg-white rounded-lg p-6 shadow-sm">
-              <h3 className="font-bold text-xl mb-4 text-purple-700">&#x1F522; Années Personnelles en Numérologie</h3>
+              <h3 className="font-bold text-xl mb-4 text-purple-700"> Années Personnelles en Numérologie</h3>
               <p className="text-gray-700 mb-3">
                 En numérologie, certaines années personnelles favorisent particulièrement l'union. L'<strong>année personnelle 6</strong> est la plus associée au mariage, à la famille et à l'engagement, c'est l'année des unions officielles et des engagements durables. L'année 2 favorise les partenariats intimes et les fiançailles. L'année 9 peut marquer la fin d'un cycle et la préparation à une nouvelle union. Calculer votre année personnelle actuelle vous donne une indication précieuse sur le timing probable de votre mariage.
               </p>
@@ -272,7 +272,7 @@ export default function VoyanceMariagePage() {
           </div>
 
           <div className="bg-white rounded-lg p-6 shadow-sm">
-            <h3 className="font-bold text-xl mb-4 text-pink-700">&#x1F4AB; Transits Vénus et Saisons Favorables</h3>
+            <h3 className="font-bold text-xl mb-4 text-pink-700"> Transits Vénus et Saisons Favorables</h3>
             <p className="text-gray-700 mb-4">
               Les transits de Vénus sur les points sensibles de votre thème natal (Ascendant, Vénus natale, Lune, soleil) créent des fenêtres d'opportunité romantique et d'<strong>engagement</strong>. Certaines saisons astronomiques sont traditionnellement plus propices : le printemps (sous l'influence de Vénus en Taureau) et la fin d'été (Vénus en Vierge ou Balance) concentrent historiquement le plus grand nombre de mariages et de demandes.
             </p>

@@ -57,7 +57,7 @@ export const TAROT_LOVE_CARDS: TarotLoveCard[] = [
   {
     slug: 'l-amoureux',
     name: 'L’Amoureux',
-    emoji: '💕',
+    emoji: '',
     arcane: 'Arcane majeur VI',
     ouiNon: 'Oui',
     answerCapsule:
@@ -95,7 +95,7 @@ export const TAROT_LOVE_CARDS: TarotLoveCard[] = [
   {
     slug: 'la-lune',
     name: 'La Lune',
-    emoji: '🌙',
+    emoji: '',
     arcane: 'Arcane majeur XVIII',
     ouiNon: 'Nuancé',
     answerCapsule:
@@ -133,7 +133,7 @@ export const TAROT_LOVE_CARDS: TarotLoveCard[] = [
   {
     slug: 'le-soleil',
     name: 'Le Soleil',
-    emoji: '☀️',
+    emoji: '',
     arcane: 'Arcane majeur XIX',
     ouiNon: 'Oui',
     answerCapsule:
@@ -171,7 +171,7 @@ export const TAROT_LOVE_CARDS: TarotLoveCard[] = [
   {
     slug: 'l-etoile',
     name: 'L’Étoile',
-    emoji: '⭐',
+    emoji: '',
     arcane: 'Arcane majeur XVII',
     ouiNon: 'Oui',
     answerCapsule:
@@ -209,7 +209,7 @@ export const TAROT_LOVE_CARDS: TarotLoveCard[] = [
   {
     slug: 'le-diable',
     name: 'Le Diable',
-    emoji: '😈',
+    emoji: '',
     arcane: 'Arcane majeur XV',
     ouiNon: 'Nuancé',
     answerCapsule:
@@ -247,7 +247,7 @@ export const TAROT_LOVE_CARDS: TarotLoveCard[] = [
   {
     slug: 'la-tour',
     name: 'La Tour',
-    emoji: '⚡',
+    emoji: '',
     arcane: 'Arcane majeur XVI',
     ouiNon: 'Non',
     answerCapsule:
@@ -285,7 +285,7 @@ export const TAROT_LOVE_CARDS: TarotLoveCard[] = [
   {
     slug: 'la-roue-de-fortune',
     name: 'La Roue de Fortune',
-    emoji: '🎡',
+    emoji: '',
     arcane: 'Arcane majeur X',
     ouiNon: 'Oui',
     answerCapsule:
@@ -323,7 +323,7 @@ export const TAROT_LOVE_CARDS: TarotLoveCard[] = [
   {
     slug: 'la-mort',
     name: 'La Mort',
-    emoji: '💀',
+    emoji: '',
     arcane: 'Arcane majeur XIII',
     ouiNon: 'Nuancé',
     answerCapsule:
@@ -361,7 +361,7 @@ export const TAROT_LOVE_CARDS: TarotLoveCard[] = [
   {
     slug: 'le-bateleur',
     name: 'Le Bateleur',
-    emoji: '🪄',
+    emoji: '',
     arcane: 'Arcane majeur I',
     ouiNon: 'Oui',
     answerCapsule:
@@ -400,7 +400,7 @@ export const TAROT_LOVE_CARDS: TarotLoveCard[] = [
   {
     slug: 'l-imperatrice',
     name: 'L’Impératrice',
-    emoji: '👑',
+    emoji: '',
     arcane: 'Arcane majeur III',
     ouiNon: 'Oui',
     answerCapsule:
@@ -439,7 +439,7 @@ export const TAROT_LOVE_CARDS: TarotLoveCard[] = [
   {
     slug: 'l-empereur',
     name: 'L’Empereur',
-    emoji: '🛡️',
+    emoji: '',
     arcane: 'Arcane majeur IV',
     ouiNon: 'Oui',
     answerCapsule:
@@ -478,7 +478,7 @@ export const TAROT_LOVE_CARDS: TarotLoveCard[] = [
   {
     slug: 'le-pape',
     name: 'Le Pape',
-    emoji: '📿',
+    emoji: '',
     arcane: 'Arcane majeur V',
     ouiNon: 'Oui',
     answerCapsule:
@@ -517,7 +517,7 @@ export const TAROT_LOVE_CARDS: TarotLoveCard[] = [
   {
     slug: 'le-chariot',
     name: 'Le Chariot',
-    emoji: '🏇',
+    emoji: '',
     arcane: 'Arcane majeur VII',
     ouiNon: 'Oui',
     answerCapsule:
@@ -556,7 +556,7 @@ export const TAROT_LOVE_CARDS: TarotLoveCard[] = [
   {
     slug: 'la-justice',
     name: 'La Justice',
-    emoji: '⚖️',
+    emoji: '',
     arcane: 'Arcane majeur VIII',
     ouiNon: 'Nuancé',
     answerCapsule:
@@ -595,7 +595,7 @@ export const TAROT_LOVE_CARDS: TarotLoveCard[] = [
   {
     slug: 'le-pendu',
     name: 'Le Pendu',
-    emoji: '🙃',
+    emoji: '',
     arcane: 'Arcane majeur XII',
     ouiNon: 'Nuancé',
     answerCapsule:
@@ -634,7 +634,7 @@ export const TAROT_LOVE_CARDS: TarotLoveCard[] = [
   {
     slug: 'le-mat',
     name: 'Le Mat',
-    emoji: '🚶',
+    emoji: '',
     arcane: 'Arcane sans numéro',
     ouiNon: 'Nuancé',
     answerCapsule:
@@ -673,7 +673,7 @@ export const TAROT_LOVE_CARDS: TarotLoveCard[] = [
   {
     slug: 'la-papesse',
     name: 'La Papesse',
-    emoji: '📜',
+    emoji: '',
     arcane: 'Arcane majeur II',
     ouiNon: 'Nuancé',
     answerCapsule:
@@ -712,7 +712,7 @@ export const TAROT_LOVE_CARDS: TarotLoveCard[] = [
   {
     slug: 'l-ermite',
     name: 'L’Ermite',
-    emoji: '🕯️',
+    emoji: '',
     arcane: 'Arcane majeur IX',
     ouiNon: 'Nuancé',
     answerCapsule:
@@ -751,7 +751,7 @@ export const TAROT_LOVE_CARDS: TarotLoveCard[] = [
   {
     slug: 'la-force',
     name: 'La Force',
-    emoji: '🦁',
+    emoji: '',
     arcane: 'Arcane majeur XI',
     ouiNon: 'Oui',
     answerCapsule:
@@ -790,7 +790,7 @@ export const TAROT_LOVE_CARDS: TarotLoveCard[] = [
   {
     slug: 'la-temperance',
     name: 'La Tempérance',
-    emoji: '🕊️',
+    emoji: '',
     arcane: 'Arcane majeur XIV',
     ouiNon: 'Oui',
     answerCapsule:
@@ -829,7 +829,7 @@ export const TAROT_LOVE_CARDS: TarotLoveCard[] = [
   {
     slug: 'le-jugement',
     name: 'Le Jugement',
-    emoji: '🎺',
+    emoji: '',
     arcane: 'Arcane majeur XX',
     ouiNon: 'Oui',
     answerCapsule:
@@ -868,7 +868,7 @@ export const TAROT_LOVE_CARDS: TarotLoveCard[] = [
   {
     slug: 'le-monde',
     name: 'Le Monde',
-    emoji: '🌍',
+    emoji: '',
     arcane: 'Arcane majeur XXI',
     ouiNon: 'Oui',
     answerCapsule:

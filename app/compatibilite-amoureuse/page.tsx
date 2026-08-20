@@ -36,7 +36,7 @@ export default function CompatibiliteHubPage() {
       <header className="bg-gradient-to-r from-indigo-700 via-purple-700 to-violet-700 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <Link href="/" className="text-white/80 hover:text-white mb-4 inline-block">← Accueil</Link>
-          <h1 className="text-5xl font-bold mb-6">💞 Compatibilité amoureuse des signes</h1>
+          <h1 className="text-5xl font-bold mb-6">Compatibilité amoureuse des signes</h1>
           <p className="text-2xl opacity-95 mb-4">Chaque duo du zodiaque a sa propre alchimie</p>
           <p className="text-lg opacity-90 max-w-2xl mx-auto">Dynamique, forces, défis et conseils, signe par signe, couple par couple.</p>
         </div>
@@ -69,7 +69,7 @@ export default function CompatibiliteHubPage() {
                   <div className="text-3xl mb-3">{sA?.emoji} {sB?.emoji}</div>
                   <h3 className="text-xl font-bold mb-2">{p.signA} et {p.signB}</h3>
                   <p className="text-gray-600 mb-3 text-sm">{p.titre}</p>
-                  <span className="text-sm" aria-label={`Score : ${p.score} sur 5`}>{'❤️'.repeat(p.score)}{'🤍'.repeat(5 - p.score)}</span>
+                  <span className="text-sm" aria-label={`Score : ${p.score} sur 5`}>{''.repeat(p.score)}{''.repeat(5 - p.score)}</span>
                 </Link>
               );
             })}

@@ -16,7 +16,7 @@ const config: ContentPageConfig = {
     { name: 'Signes qu\'il/elle m\'aime', url: 'https://www.voyantlove.fr/sentiments/signes-il-elle-maime/' },
   ],
   header: {
-    emoji: '💝',
+    emoji: '',
     h1: 'Signes qu\'il/elle m\'aime',
     subtitle: 'Décryptez les preuves d\'amour véritable selon le comportement et le tarot',
     gradient: 'from-pink-500 via-rose-500 to-red-500',
@@ -28,10 +28,10 @@ const config: ContentPageConfig = {
   },
   accentText: 'text-rose-600',
   stats: [
-    { icon: '💖', value: 'Reconnue', label: 'Expertise' },
-    { icon: '👁️', value: 'Clé', label: 'Langage corporel' },
-    { icon: '🔮', value: '3,800+', label: 'Analyses' },
-    { icon: '⭐', value: '4.9/5', label: '342 Avis' },
+    { icon: '', value: 'Reconnue', label: 'Expertise' },
+    { icon: '', value: 'Clé', label: 'Langage corporel' },
+    { icon: '', value: '3,800+', label: 'Analyses' },
+    { icon: '', value: '4.9/5', label: '342 Avis' },
   ],
   eeat: { colorScheme: 'purple', method: 'Analyse comportementale et lecture tarot des sentiments' },
   cta: { topic: 'sentiments', slug: 'signes-il-elle-maime' },
@@ -91,7 +91,7 @@ export default function SignesIlElleMaimePage() {
         <VoyantRecommendations topic="sentiments" limit={3} showOnlineFirst={true} source="signes-il-elle-maime-cards-top" />
 
         <section id="signes" className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold mb-6 text-rose-600">👁️ Les 20 Signes Physiques et Corporels d'Amour</h2>
+          <h2 className="text-3xl font-bold mb-6 text-rose-600">Les 20 Signes Physiques et Corporels d'Amour</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le contact visuel prolonge, les pupilles dilatees, le mimetisme gestuel et la proximite physique reduite sont les signes corporels les plus fiables d'un amour veritable que le corps ne peut pas dissimuler.</p>
           <p className="text-gray-700 mb-6">
             Le <strong>langage corporel amoureux</strong> est le révélateur le plus fiable des sentiments réels. Le corps ne ment pas : il trahit l'attirance et l'attachement avant que la personne ne l'admette consciemment ou verbalement.
@@ -271,7 +271,7 @@ export default function SignesIlElleMaimePage() {
         </section>
 
         <section className="bg-gradient-to-br from-rose-50 to-pink-50 rounded-xl p-8 mb-8 border-2 border-rose-200">
-          <h2 className="text-3xl font-bold mb-6 text-gray-900">💬 Les Signes Comportementaux d'Amour Authentique</h2>
+          <h2 className="text-3xl font-bold mb-6 text-gray-900">Les Signes Comportementaux d'Amour Authentique</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Se souvenir de details vous concernant, vous presenter a ses proches, inclure "nous" dans ses projets et vous soutenir dans les moments difficiles sont des preuves concretes d'amour veritable.</p>
           <p className="text-gray-700 mb-6">
             Au-delà du langage corporel, les <strong>comportements quotidiens</strong> révèlent l'investissement émotionnel et la place que vous occupez dans sa vie.
@@ -380,7 +380,7 @@ export default function SignesIlElleMaimePage() {
         <VoyantQuickCTA topic="sentiments" source="signes-il-elle-maime-banner-mid" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold mb-6 text-rose-600">🔮 Les Signes d'Amour Selon le Tarot</h2>
+          <h2 className="text-3xl font-bold mb-6 text-rose-600">Les Signes d'Amour Selon le Tarot</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le Deux de Coupe, L'Amoureux et Le Soleil confirment un amour sincere dans le tarot. Le Sept de Coupe et Le Diable alertent sur une illusion sentimentale ou un attachement toxique.</p>
           <p className="text-gray-700 mb-6">
             Le <strong>tarot des sentiments</strong> révèle la vérité énergétique au-delà des comportements visibles. Certaines cartes sont des indicateurs directs d'amour véritable ou d'illusion sentimentale.
@@ -388,7 +388,7 @@ export default function SignesIlElleMaimePage() {
 
           <div className="space-y-6">
             <div className="bg-gradient-to-r from-pink-100 to-rose-100 p-6 rounded-lg border-2 border-pink-300">
-              <h3 className="font-bold text-xl mb-4 text-pink-800">💕 Cartes Indiquant l'Amour Véritable</h3>
+              <h3 className="font-bold text-xl mb-4 text-pink-800">Cartes Indiquant l'Amour Véritable</h3>
 
               <div className="space-y-4">
                 <div>
@@ -436,7 +436,7 @@ export default function SignesIlElleMaimePage() {
             </div>
 
             <div className="bg-gradient-to-r from-gray-100 to-slate-100 p-6 rounded-lg border-2 border-gray-300">
-              <h3 className="font-bold text-xl mb-4 text-gray-800">⚠️ Cartes Indiquant l'Absence d'Amour ou Illusion</h3>
+              <h3 className="font-bold text-xl mb-4 text-gray-800">Cartes Indiquant l'Absence d'Amour ou Illusion</h3>
 
               <div className="space-y-4">
                 <div>
@@ -486,7 +486,7 @@ export default function SignesIlElleMaimePage() {
         </section>
 
         <section className="bg-gradient-to-br from-yellow-50 to-orange-50 rounded-xl p-8 mb-8 border-2 border-orange-200">
-          <h2 className="text-3xl font-bold mb-6 text-gray-900">🎯 Comment Interpréter Correctement les Signes</h2>
+          <h2 className="text-3xl font-bold mb-6 text-gray-900">Comment Interpréter Correctement les Signes</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Cherchez la coherence des comportements dans le temps plutot que des signes isoles. Observez les actions plus que les paroles et comparez avec votre propre intuition validee par le tarot.</p>
 
           <div className="space-y-4">
@@ -553,7 +553,7 @@ export default function SignesIlElleMaimePage() {
         </section>
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold mb-6 text-rose-600">💔 Signes qu'il/elle NE vous aime PAS (Signaux d'Alerte)</h2>
+          <h2 className="text-3xl font-bold mb-6 text-rose-600">Signes qu'il/elle NE vous aime PAS (Signaux d'Alerte)</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Un contact visuel fuyant, l'absence d'efforts pour vous voir, le manque d'inclusion dans ses projets et l'indifference a vos emotions sont des signaux clairs que les sentiments ne sont pas reciproques.</p>
           <p className="text-gray-700 mb-6">
             Aussi important que reconnaître l'amour : identifier l'<strong>absence d'amour</strong> pour ne pas perdre de temps ni d'énergie émotionnelle sur quelqu'un qui ne ressent pas de sentiments réciproques. Une analyse de <Link href="/sentiments/compatibilite-amoureuse/" className="text-rose-600 hover:text-rose-800 underline font-medium">compatibilité amoureuse</Link> peut aussi éclairer la nature profonde de votre lien.

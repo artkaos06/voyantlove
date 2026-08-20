@@ -53,7 +53,7 @@ export default function AskAI(props: AskAIProps) {
   return (
     <div className={props.className ?? 'rounded-xl border border-gray-200 bg-white p-4 shadow-sm'}>
       <p className="mb-3 text-sm font-semibold text-gray-700">
-        <span aria-hidden>✨</span> {props.label ?? 'Approfondir avec une IA'}
+        <span aria-hidden></span> {props.label ?? 'Approfondir avec une IA'}
       </p>
       <div className="flex flex-wrap gap-2">
         {PROVIDERS.map((p) => (

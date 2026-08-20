@@ -83,12 +83,12 @@ export default function AstrologieAmourHub() {
         </section>
 
         <div className="bg-gray-100 rounded-xl p-6 mb-8">
-          <h2 className="font-bold text-lg mb-4 text-gray-900">🔮 Aller plus loin</h2>
+          <h2 className="font-bold text-lg mb-4 text-gray-900">Aller plus loin</h2>
           <div className="space-y-2">
-            <Link href="/compatibilite-amoureuse/" className="block text-fuchsia-700 hover:text-fuchsia-900 font-medium">&rarr; 💞 Compatibilité amoureuse des signes (les 78 duos)</Link>
-            <Link href="/methodes-voyance/synastrie-amoureuse/" className="block text-fuchsia-700 hover:text-fuchsia-900 font-medium">&rarr; 🔭 Tester votre compatibilité (synastrie)</Link>
-            <Link href="/tarot-amour/" className="block text-fuchsia-700 hover:text-fuchsia-900 font-medium">&rarr; 🃏 Tarot amour : signification des cartes</Link>
-            <Link href="/methodes-voyance/astrologie-amoureuse/" className="block text-fuchsia-700 hover:text-fuchsia-900 font-medium">&rarr; ✨ L&apos;astrologie amoureuse : la méthode</Link>
+            <Link href="/compatibilite-amoureuse/" className="block text-fuchsia-700 hover:text-fuchsia-900 font-medium">&rarr; Compatibilité amoureuse des signes (les 78 duos)</Link>
+            <Link href="/methodes-voyance/synastrie-amoureuse/" className="block text-fuchsia-700 hover:text-fuchsia-900 font-medium">&rarr; Tester votre compatibilité (synastrie)</Link>
+            <Link href="/tarot-amour/" className="block text-fuchsia-700 hover:text-fuchsia-900 font-medium">&rarr; Tarot amour : signification des cartes</Link>
+            <Link href="/methodes-voyance/astrologie-amoureuse/" className="block text-fuchsia-700 hover:text-fuchsia-900 font-medium">&rarr; L&apos;astrologie amoureuse : la méthode</Link>
           </div>
         </div>
 

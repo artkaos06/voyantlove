@@ -94,7 +94,7 @@ export default function LeadCaptureForm({ source, colorScheme, mode = 'full' }: 
                 <p className="text-gray-600 text-sm">{prediction.timeframe}</p>
               </div>
               <div className="absolute inset-0 flex flex-col items-center justify-center bg-white/60">
-                <span className="text-2xl mb-1">🔒</span>
+                <span className="text-2xl mb-1"></span>
                 <p className="text-sm font-semibold text-gray-700 text-center px-4">
                   Un voyant peut vous révéler l&apos;interprétation complète
                 </p>
@@ -107,7 +107,7 @@ export default function LeadCaptureForm({ source, colorScheme, mode = 'full' }: 
                 href="tel:0175754582"
                 className="inline-block w-full bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 text-white px-8 py-4 rounded-lg font-bold text-xl transition-all hover:scale-105 hover:shadow-xl text-center"
               >
-                📞 01 75 75 45 82
+                01 75 75 45 82
               </a>
               <p className="text-green-700 font-semibold mt-2 text-sm">10 minutes gratuites • Disponible maintenant</p>
             </div>
@@ -171,7 +171,7 @@ export default function LeadCaptureForm({ source, colorScheme, mode = 'full' }: 
                 href="tel:0175754582"
                 className="inline-block bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 text-white px-8 py-4 rounded-lg font-bold text-xl transition-all hover:scale-105 hover:shadow-xl"
               >
-                📞 01 75 75 45 82
+                01 75 75 45 82
               </a>
               <p className="text-green-700 font-semibold mt-3 text-sm">10 minutes gratuites, 1re consultation offerte</p>
               <p className="text-xs text-gray-500 mt-1">Voyants disponibles maintenant, Appel confidentiel</p>

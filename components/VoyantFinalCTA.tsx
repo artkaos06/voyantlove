@@ -73,7 +73,7 @@ export default function VoyantFinalCTA({
   return (
     <div className={`bg-gradient-to-br ${gradients[topic]} text-white rounded-xl p-10 mb-8 text-center shadow-2xl`}>
       <div className="mb-6">
-        <h2 className="text-4xl font-bold mb-4">🔮 {headline || defaultHeadlines[topic]}</h2>
+        <h2 className="text-4xl font-bold mb-4">{headline || defaultHeadlines[topic]}</h2>
         <p className="text-xl opacity-95 max-w-2xl mx-auto mb-2">
           {subheadline || defaultSubheadlines[topic]}
         </p>
@@ -84,17 +84,17 @@ export default function VoyantFinalCTA({
 
       <div className="grid md:grid-cols-3 gap-4 max-w-3xl mx-auto mb-8 text-sm">
         <div className="bg-white/10 backdrop-blur rounded-lg p-4">
-          <div className="text-3xl mb-2">⚡</div>
+          <div className="text-3xl mb-2"></div>
           <div className="font-semibold">Réponse Immédiate</div>
           <div className="opacity-90 text-xs mt-1">Voyants disponibles maintenant</div>
         </div>
         <div className="bg-white/10 backdrop-blur rounded-lg p-4">
-          <div className="text-3xl mb-2">🎯</div>
+          <div className="text-3xl mb-2"></div>
           <div className="font-semibold">Guidance Précise</div>
           <div className="opacity-90 text-xs mt-1">Adaptée à votre situation</div>
         </div>
         <div className="bg-white/10 backdrop-blur rounded-lg p-4">
-          <div className="text-3xl mb-2">💯</div>
+          <div className="text-3xl mb-2"></div>
           <div className="font-semibold">Sans Jugement</div>
           <div className="opacity-90 text-xs mt-1">Écoute bienveillante garantie</div>
         </div>
@@ -107,7 +107,7 @@ export default function VoyantFinalCTA({
         onClick={handleAffiliateClick}
         className={`inline-block bg-white ${buttonColors[topic]} px-10 py-4 rounded-lg font-bold text-lg hover:shadow-2xl transition-all hover:scale-105`}
       >
-        🔮 Consulter un Voyant Maintenant
+        Consulter un Voyant Maintenant
       </a>
       <p className="mt-4 text-sm opacity-90">
         ✓ {liveVoyants.length} voyants en ligne • ✓ Paiement sécurisé • ✓ Confidentialité garantie

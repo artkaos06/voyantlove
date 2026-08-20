@@ -16,7 +16,7 @@ const config: ContentPageConfig = {
     { name: 'Avenir Amoureux', url: 'https://www.voyantlove.fr/sentiments/avenir-amoureux/' },
   ],
   header: {
-    emoji: '🔮',
+    emoji: '',
     h1: 'Mon avenir amoureux',
     subtitle: 'Prédictions tarot et voyance pour votre futur sentimental',
     gradient: 'from-pink-500 via-rose-500 to-red-500',
@@ -28,10 +28,10 @@ const config: ContentPageConfig = {
   },
   accentText: 'text-rose-600',
   stats: [
-    { icon: '⭐', value: '4.8/5', label: '287 Avis' },
-    { icon: '🔮', value: 'Reconnue', label: 'Expertise' },
-    { icon: '💫', value: '15 ans', label: 'Expérience' },
-    { icon: '💖', value: '5,400+', label: 'Prédictions' },
+    { icon: '', value: '4.8/5', label: '287 Avis' },
+    { icon: '', value: 'Reconnue', label: 'Expertise' },
+    { icon: '', value: '15 ans', label: 'Expérience' },
+    { icon: '', value: '5,400+', label: 'Prédictions' },
   ],
   eeat: { colorScheme: 'purple', method: 'Tarot prédictif et astrologie amoureuse' },
   cta: { topic: 'sentiments', slug: 'avenir-amoureux' },
@@ -100,7 +100,7 @@ export default function AvenirAmoureuxPage() {
         <VoyantRecommendations topic="sentiments" limit={3} showOnlineFirst={true} source="avenir-amoureux-cards-top" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold mb-6 text-rose-600">🔮 Le Tirage de l'Avenir Amoureux : 5 Positions Clés</h2>
+          <h2 className="text-3xl font-bold mb-6 text-rose-600">Le Tirage de l'Avenir Amoureux : 5 Positions Clés</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le tirage predictif en 5 positions analyse votre situation actuelle, les obstacles a court terme, les opportunites a 6 mois, l'evolution a 12 mois et le conseil des guides pour votre futur sentimental.</p>
           <p className="text-gray-700 mb-6">
             Le <strong>tirage prédictif</strong> analyse cinq aspects fondamentaux de votre futur sentimental pour une vision complète et nuancée.
@@ -145,7 +145,7 @@ export default function AvenirAmoureuxPage() {
         </section>
 
         <section id="timeline" className="bg-gradient-to-br from-rose-50 to-pink-50 rounded-xl p-8 mb-8 border-2 border-rose-200">
-          <h2 className="text-3xl font-bold mb-6 text-gray-900">📅 Timeline de l'Avenir Amoureux : Que Révèle Chaque Période</h2>
+          <h2 className="text-3xl font-bold mb-6 text-gray-900">Timeline de l'Avenir Amoureux : Que Révèle Chaque Période</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le tarot decompose votre avenir amoureux en periodes de 1-3 mois, 3-6 mois, 6-12 mois et au-dela. Chaque periode porte des energies et des opportunites sentimentales distinctes a anticiper.</p>
           <p className="text-gray-700 mb-6">
             Le tarot décompose votre <strong>futur sentimental</strong> en périodes distinctes, chacune porteuse d'énergies et d'opportunités spécifiques.
@@ -192,7 +192,7 @@ export default function AvenirAmoureuxPage() {
         </section>
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold mb-6 text-rose-600">🌟 Avenir Amoureux selon Votre Situation Actuelle</h2>
+          <h2 className="text-3xl font-bold mb-6 text-rose-600">Avenir Amoureux selon Votre Situation Actuelle</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Votre avenir amoureux depend de votre situation : celibataire en quete de rencontre, en couple en questionnement ou en transition post-rupture. Le tarot adapte ses predictions a chaque profil.</p>
           <p className="text-gray-700 mb-6">
             Votre <strong>futur sentimental</strong> varie considérablement selon que vous êtes célibataire, en couple, ou en transition. Voici ce que le tarot révèle pour chaque situation.
@@ -200,7 +200,7 @@ export default function AvenirAmoureuxPage() {
 
           <div className="space-y-6">
             <div className="bg-cyan-50 p-6 rounded-lg border-2 border-cyan-200">
-              <h3 className="font-bold text-xl mb-4 text-cyan-700">💙 Avenir Amoureux des Célibataires</h3>
+              <h3 className="font-bold text-xl mb-4 text-cyan-700">Avenir Amoureux des Célibataires</h3>
 
               <div className="space-y-4">
                 <div>
@@ -230,7 +230,7 @@ export default function AvenirAmoureuxPage() {
             </div>
 
             <div className="bg-pink-50 p-6 rounded-lg border-2 border-pink-200">
-              <h3 className="font-bold text-xl mb-4 text-pink-700">💕 Avenir Amoureux des Couples</h3>
+              <h3 className="font-bold text-xl mb-4 text-pink-700">Avenir Amoureux des Couples</h3>
 
               <div className="space-y-4">
                 <div>
@@ -260,7 +260,7 @@ export default function AvenirAmoureuxPage() {
             </div>
 
             <div className="bg-purple-50 p-6 rounded-lg border-2 border-purple-200">
-              <h3 className="font-bold text-xl mb-4 text-purple-700">💜 Avenir Amoureux en Transition (Post-Rupture)</h3>
+              <h3 className="font-bold text-xl mb-4 text-purple-700">Avenir Amoureux en Transition (Post-Rupture)</h3>
 
               <div className="space-y-4">
                 <div>
@@ -294,7 +294,7 @@ export default function AvenirAmoureuxPage() {
         <VoyantQuickCTA topic="sentiments" source="avenir-amoureux-banner-mid" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold mb-6 text-rose-600">🌙 L'Astrologie de Votre Avenir Amoureux</h2>
+          <h2 className="text-3xl font-bold mb-6 text-rose-600">L'Astrologie de Votre Avenir Amoureux</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">L'astrologie amoureuse revele votre timeline sentimentale via la maison 7, les transits de Venus et Mars, les cycles de Jupiter et les eclipses sur votre axe relationnel.</p>
           <p className="text-gray-700 mb-6">
             L'<Link href="/methodes-voyance/astrologie-amoureuse/" className="text-rose-600 hover:text-rose-800 underline font-medium">astrologie amoureuse</Link> complète le tarot en révélant les cycles cosmiques qui influencent votre destinée sentimentale. Votre thème natal contient votre timeline amoureuse.
@@ -345,7 +345,7 @@ export default function AvenirAmoureuxPage() {
         </section>
 
         <section className="bg-gradient-to-br from-yellow-50 to-orange-50 rounded-xl p-8 mb-8 border-2 border-orange-200">
-          <h2 className="text-3xl font-bold mb-6 text-gray-900">⚠️ Les Erreurs à Éviter pour Manifester Votre Meilleur Avenir Amoureux</h2>
+          <h2 className="text-3xl font-bold mb-6 text-gray-900">Les Erreurs à Éviter pour Manifester Votre Meilleur Avenir Amoureux</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Consulter trop souvent, rester passif apres une prediction, ignorer les avertissements du tarot, forcer le timing et negliger votre developpement personnel sont les cinq erreurs majeures a eviter.</p>
 
           <div className="space-y-4">

@@ -16,7 +16,7 @@ const config: ContentPageConfig = {
     { name: 'Boule de Cristal Amour', url: 'https://www.voyantlove.fr/methodes-voyance/boule-de-cristal-amour/' },
   ],
   header: {
-    emoji: '🔮',
+    emoji: '',
     h1: 'Boule de cristal amour',
     subtitle: 'La cristallomancie au service de vos questions sentimentales',
     gradient: 'from-blue-800 via-indigo-800 to-violet-900',
@@ -28,10 +28,10 @@ const config: ContentPageConfig = {
   },
   accentText: 'text-indigo-800',
   stats: [
-    { icon: '🔮', value: 'Scrying', label: 'Nom de la technique' },
-    { icon: '🏛️', value: 'Antique', label: 'Grèce et égypte' },
-    { icon: '💭', value: 'Symbolique', label: 'Images à interpréter' },
-    { icon: '🕯️', value: 'Concentration', label: 'État réceptif' },
+    { icon: '', value: 'Scrying', label: 'Nom de la technique' },
+    { icon: '', value: 'Antique', label: 'Grèce et égypte' },
+    { icon: '', value: 'Symbolique', label: 'Images à interpréter' },
+    { icon: '', value: 'Concentration', label: 'État réceptif' },
   ],
   eeat: { colorScheme: 'blue', method: 'Cristallomancie et voyance à la boule de cristal' },
   cta: { topic: 'methodes-voyance', slug: 'boule-cristal-amour' },
@@ -79,7 +79,7 @@ export default function BouleDeCristalAmourPage() {
 
         {/* Section 1: Fonctionnement */}
         <section id="fonctionnement" className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">🔮 Comment Fonctionne la Boule de Cristal en Amour ?</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Comment Fonctionne la Boule de Cristal en Amour ?</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le praticien fixe la boule pour entrer dans un état de concentration relâchée qui laisserait émerger des images mentales liées à votre question sentimentale.</p>
           <p className="text-gray-700 mb-6">
             La pratique de la <strong>cristallomancie</strong>, ou « scrying » en anglais, consiste à percevoir des impressions en fixant longuement une surface réfléchissante ou transparente. Loin d&apos;être un simple accessoire décoratif, la boule de cristal joue un rôle précis dans le processus de voyance.
@@ -102,7 +102,7 @@ export default function BouleDeCristalAmourPage() {
 
         {/* Section 2: Symboles perçus */}
         <section className="bg-gradient-to-br from-indigo-50 to-violet-50 rounded-xl p-8 mb-8 border-2 border-indigo-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">💭 Les Symboles Fréquemment Perçus en Amour</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Les Symboles Fréquemment Perçus en Amour</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Ambiance, silhouette, couleurs ou scène évocatrice : les impressions perçues dans une boule de cristal sont toujours symboliques et jamais littérales.</p>
           <div className="grid md:grid-cols-2 gap-5">
             <div className="bg-white rounded-lg p-5 border-l-4 border-rose-500">
@@ -131,11 +131,11 @@ export default function BouleDeCristalAmourPage() {
 
         {/* Section 3: Comparaison */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">⚖️ Boule de Cristal, Tarot ou Voyance Blanche : Quelle Différence ?</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Boule de Cristal, Tarot ou Voyance Blanche : Quelle Différence ?</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">La boule de cristal utilise un support neutre pour canaliser l&apos;intuition, contrairement au tarot qui s&apos;appuie sur une grille symbolique riche, ou à la voyance blanche qui se passe de tout outil.</p>
           <div className="grid md:grid-cols-3 gap-5">
             <div className="bg-indigo-50 rounded-lg p-5 border-2 border-indigo-300">
-              <h3 className="font-bold text-lg mb-3 text-indigo-700">🔮 Boule de Cristal</h3>
+              <h3 className="font-bold text-lg mb-3 text-indigo-700">Boule de Cristal</h3>
               <div className="space-y-2 text-gray-700 text-sm">
                 <p>&bull; Support neutre de concentration</p>
                 <p>&bull; Images et impressions symboliques</p>
@@ -143,7 +143,7 @@ export default function BouleDeCristalAmourPage() {
               </div>
             </div>
             <div className="bg-purple-50 rounded-lg p-5 border-2 border-purple-300">
-              <h3 className="font-bold text-lg mb-3 text-purple-700">🃏 Tarot</h3>
+              <h3 className="font-bold text-lg mb-3 text-purple-700">Tarot</h3>
               <div className="space-y-2 text-gray-700 text-sm">
                 <p>&bull; Grille symbolique structurée</p>
                 <p>&bull; Lecture narrative détaillée</p>
@@ -154,7 +154,7 @@ export default function BouleDeCristalAmourPage() {
               </p>
             </div>
             <div className="bg-white rounded-lg p-5 border-2 border-slate-300">
-              <h3 className="font-bold text-lg mb-3 text-slate-700">🤍 Voyance Blanche</h3>
+              <h3 className="font-bold text-lg mb-3 text-slate-700">Voyance Blanche</h3>
               <div className="space-y-2 text-gray-700 text-sm">
                 <p>&bull; Aucun support, intuition pure</p>
                 <p>&bull; Lecture directe et personnalisée</p>
@@ -169,7 +169,7 @@ export default function BouleDeCristalAmourPage() {
 
         {/* Section 4: Consultation */}
         <section id="consultation" className="bg-gradient-to-br from-violet-50 to-blue-50 rounded-xl p-8 mb-8 border-2 border-violet-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">🕯️ Comment se Déroule une Consultation ?</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Comment se Déroule une Consultation ?</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Une séance de boule de cristal dure généralement vingt à quarante-cinq minutes, entre échange initial, temps de concentration et partage des impressions perçues.</p>
           <div className="space-y-4">
             <div className="bg-white rounded-lg p-5 border-l-4 border-indigo-400">

@@ -16,7 +16,7 @@ const config: ContentPageConfig = {
     { name: 'Pendule pour Faire Revenir une Personne', url: 'https://www.voyantlove.fr/reconquete/pendule-retour-amour/' },
   ],
   header: {
-    emoji: '🔮',
+    emoji: '',
     h1: 'Pendule pour faire revenir une personne',
     subtitle: 'Ce que le pendule peut révéler, et ce qu\'il ne peut pas faire',
     gradient: 'from-purple-600 via-pink-500 to-rose-500',
@@ -28,10 +28,10 @@ const config: ContentPageConfig = {
   },
   accentText: 'text-purple-600',
   stats: [
-    { icon: '🔮', value: 'Oui/Non', label: 'Réponses claires' },
-    { icon: '⚡', value: 'Rapide', label: 'Quelques minutes' },
-    { icon: '💭', value: 'Énergies', label: 'État présent' },
-    { icon: '⚖️', value: 'Limité', label: 'Pas de contrôle' },
+    { icon: '', value: 'Oui/Non', label: 'Réponses claires' },
+    { icon: '', value: 'Rapide', label: 'Quelques minutes' },
+    { icon: '', value: 'Énergies', label: 'État présent' },
+    { icon: '', value: 'Limité', label: 'Pas de contrôle' },
   ],
   eeat: { colorScheme: 'purple', method: 'Pendule appliqué aux questions de retour de l\'ex' },
   cta: { topic: 'reconquete', slug: 'pendule-retour-amour' },
@@ -88,7 +88,7 @@ export default function PenduleRetourAmourPage() {
         <VoyantRecommendations topic="reconquete" limit={3} showOnlineFirst={true} source="pendule-retour-amour-cards-top" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">⚖️ Ce que le Pendule PEUT et NE PEUT PAS Faire</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Ce que le Pendule PEUT et NE PEUT PAS Faire</h2>
           <p className="text-lg font-semibold text-gray-800 mb-6">Le pendule révèle des énergies présentes, indique des tendances et guide votre attitude. Il ne peut pas forcer un retour, contrôler une autre personne ni garantir un scénario futur précis.</p>
           <div className="grid md:grid-cols-2 gap-5">
             <div className="bg-green-50 rounded-lg p-5 border-2 border-green-300">
@@ -115,12 +115,12 @@ export default function PenduleRetourAmourPage() {
             </div>
           </div>
           <div className="bg-amber-50 border-l-4 border-amber-500 p-5 rounded-lg mt-6">
-            <p className="text-gray-700 text-sm"><strong>⚠️ Méfiez-vous</strong> des sites ou praticiens qui promettent un &laquo;&nbsp;pendule magique pour faire revenir votre ex en 7 jours&nbsp;&raquo; ou vendent des rituels en complément. Le retour d&apos;une personne dépend de SON libre arbitre, du travail que vous faites sur vous-même, et du timing réel, pas d&apos;un objet ou d&apos;un sortilège.</p>
+            <p className="text-gray-700 text-sm"><strong>Méfiez-vous</strong> des sites ou praticiens qui promettent un &laquo;&nbsp;pendule magique pour faire revenir votre ex en 7 jours&nbsp;&raquo; ou vendent des rituels en complément. Le retour d&apos;une personne dépend de SON libre arbitre, du travail que vous faites sur vous-même, et du timing réel, pas d&apos;un objet ou d&apos;un sortilège.</p>
           </div>
         </section>
 
         <section id="questions" className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-8 mb-8 border-2 border-purple-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">🎯 Les 8 Questions à Poser au Pendule sur le Retour d&apos;un Ex</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Les 8 Questions à Poser au Pendule sur le Retour d&apos;un Ex</h2>
           <p className="text-lg font-semibold text-gray-800 mb-6">Formulez des questions fermées au présent, centrées sur les énergies actuelles plutôt que sur des prédictions absolues. Ces 8 questions couvrent les situations de reconquête les plus fréquentes.</p>
           <div className="space-y-3">
             <div className="bg-white rounded-lg p-4 border-l-4 border-purple-400">
@@ -162,7 +162,7 @@ export default function PenduleRetourAmourPage() {
         </section>
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">🛠️ Comment Calibrer Votre Pendule</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Comment Calibrer Votre Pendule</h2>
           <p className="text-lg font-semibold text-gray-800 mb-6">La calibration consiste à établir le langage du pendule (quel mouvement = oui, lequel = non) puis à vérifier sa fiabilité avec des questions de contrôle.</p>
           <div className="space-y-5">
             <div className="bg-purple-50 rounded-lg p-5">
@@ -187,7 +187,7 @@ export default function PenduleRetourAmourPage() {
         <VoyantQuickCTA topic="reconquete" source="pendule-retour-amour-banner-mid" />
 
         <section id="consultation" className="bg-gradient-to-br from-rose-50 to-purple-50 rounded-xl p-8 mb-8 border-2 border-rose-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">🧙 Pourquoi Consulter un Radiesthésiste plutôt que de Pratiquer Seul</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Pourquoi Consulter un Radiesthésiste plutôt que de Pratiquer Seul</h2>
           <p className="text-lg font-semibold text-gray-800 mb-6">L&apos;auto-pratique du pendule sur son propre ex est biaisée par les émotions. Un voyant radiesthésiste apporte neutralité, technique et clairvoyance complémentaire.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Quand vous interrogez le <strong>pendule sur le retour de votre ex</strong>, vos émotions influencent inévitablement les micro-mouvements musculaires qui font bouger l&apos;objet. C&apos;est le principal défaut de l&apos;auto-pratique. Un <strong>voyant radiesthésiste expérimenté</strong> obtient des réponses bien plus fiables, pour trois raisons.

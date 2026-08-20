@@ -16,7 +16,7 @@ const config: ContentPageConfig = {
     { name: 'Suis-je Médium ?', url: 'https://www.voyantlove.fr/methodes-voyance/suis-je-medium-comment-savoir/' },
   ],
   header: {
-    emoji: '🌙',
+    emoji: '',
     h1: 'Suis-je médium ? comment le savoir',
     subtitle: 'Les signes d\'une sensibilité médiumnique dans votre vie sentimentale',
     gradient: 'from-violet-700 via-fuchsia-700 to-purple-800',
@@ -28,10 +28,10 @@ const config: ContentPageConfig = {
   },
   accentText: 'text-purple-700',
   stats: [
-    { icon: '🌙', value: 'Auto-diagnostic', label: 'Pas un verdict figé' },
-    { icon: '💓', value: 'Empathie', label: 'Signe le plus cité' },
-    { icon: '🌌', value: 'Récurrence', label: 'Clé de lecture' },
-    { icon: '🕊️', value: 'Prudence', label: 'Sans excès d\'interprétation' },
+    { icon: '', value: 'Auto-diagnostic', label: 'Pas un verdict figé' },
+    { icon: '', value: 'Empathie', label: 'Signe le plus cité' },
+    { icon: '', value: 'Récurrence', label: 'Clé de lecture' },
+    { icon: '', value: 'Prudence', label: 'Sans excès d\'interprétation' },
   ],
   eeat: { colorScheme: 'purple', method: 'Médiumnité et sensibilité intuitive en amour' },
   cta: { topic: 'methodes-voyance', slug: 'suis-je-medium' },
@@ -80,27 +80,27 @@ export default function SuisJeMediumPage() {
 
         {/* Section 1: Signes */}
         <section id="signes" className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">✨ Les Signes Souvent Associés à une Sensibilité Médiumnique</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Les Signes Souvent Associés à une Sensibilité Médiumnique</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Aucun signe isolé ne suffit : c&apos;est la récurrence de plusieurs de ces expériences, en particulier dans vos relations, qui oriente vers l&apos;hypothèse d&apos;une sensibilité médiumnique.</p>
           <div className="space-y-4">
             <div className="bg-purple-50 border-l-4 border-purple-500 p-5 rounded-lg">
-              <h3 className="font-bold text-lg mb-2 text-purple-800">💓 Une empathie qui dépasse la compréhension</h3>
+              <h3 className="font-bold text-lg mb-2 text-purple-800">Une empathie qui dépasse la compréhension</h3>
               <p className="text-gray-700 text-sm">Vous ne comprenez pas seulement ce que ressent votre partenaire, vous le ressentez dans votre propre corps &mdash; une lourdeur, une tension, une joie soudaine sans cause apparente qui appartient en r&eacute;alit&eacute; &agrave; l&apos;autre personne.</p>
             </div>
             <div className="bg-fuchsia-50 border-l-4 border-fuchsia-500 p-5 rounded-lg">
-              <h3 className="font-bold text-lg mb-2 text-fuchsia-800">🌙 Des rêves qui se vérifient</h3>
+              <h3 className="font-bold text-lg mb-2 text-fuchsia-800">Des rêves qui se vérifient</h3>
               <p className="text-gray-700 text-sm">Certains r&ecirc;ves r&eacute;currents ou particuli&egrave;rement vivants concernant une relation semblent, apr&egrave;s coup, avoir anticip&eacute; une situation r&eacute;elle&nbsp;: une rupture, une rencontre, un retour inattendu.</p>
             </div>
             <div className="bg-indigo-50 border-l-4 border-indigo-500 p-5 rounded-lg">
-              <h3 className="font-bold text-lg mb-2 text-indigo-800">🔔 Des intuitions qui se confirment</h3>
+              <h3 className="font-bold text-lg mb-2 text-indigo-800">Des intuitions qui se confirment</h3>
               <p className="text-gray-700 text-sm">Un pressentiment concernant une personne &mdash; &laquo;&nbsp;quelque chose ne va pas&nbsp;&raquo;, &laquo;&nbsp;cette personne va m&apos;appeler&nbsp;&raquo; &mdash; se v&eacute;rifie avec une fr&eacute;quence qui d&eacute;passe la simple co&iuml;ncidence &agrave; vos yeux.</p>
             </div>
             <div className="bg-violet-50 border-l-4 border-violet-500 p-5 rounded-lg">
-              <h3 className="font-bold text-lg mb-2 text-violet-800">🌡️ Une sensibilité aux ambiances et aux énergies</h3>
+              <h3 className="font-bold text-lg mb-2 text-violet-800">Une sensibilité aux ambiances et aux énergies</h3>
               <p className="text-gray-700 text-sm">Vous percevez tr&egrave;s vite la tension ou l&apos;harmonie d&apos;un lieu ou d&apos;un groupe en entrant dans une pi&egrave;ce, avant m&ecirc;me d&apos;avoir &eacute;chang&eacute; un mot avec qui que ce soit.</p>
             </div>
             <div className="bg-purple-50 border-l-4 border-purple-500 p-5 rounded-lg">
-              <h3 className="font-bold text-lg mb-2 text-purple-800">🕰️ Une sensibilité présente depuis l&apos;enfance</h3>
+              <h3 className="font-bold text-lg mb-2 text-purple-800">Une sensibilité présente depuis l&apos;enfance</h3>
               <p className="text-gray-700 text-sm">Beaucoup de personnes qui se d&eacute;crivent m&eacute;diums rapportent avoir per&ccedil;u ce type d&apos;informations d&egrave;s l&apos;enfance, parfois sans les nommer ni comprendre ce qu&apos;elles vivaient &agrave; l&apos;&eacute;poque.</p>
             </div>
           </div>
@@ -111,19 +111,19 @@ export default function SuisJeMediumPage() {
 
         {/* Section 2: Distinguer */}
         <section id="distinguer" className="bg-gradient-to-br from-purple-50 to-fuchsia-50 rounded-xl p-8 mb-8 border-2 border-purple-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">⚖️ Empathe, Intuitif ou Médium : Où Est la Frontière ?</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Empathe, Intuitif ou Médium : Où Est la Frontière ?</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">La frontière entre grande sensibilité, intuition développée et médiumnité reste floue et débattue même parmi les praticiens ; elle tient surtout à la nature et à la source perçue de l&apos;information.</p>
           <div className="grid md:grid-cols-3 gap-5">
             <div className="bg-white rounded-lg p-5 border-2 border-purple-300">
-              <h3 className="font-bold text-lg mb-3 text-purple-700">💗 Empathe</h3>
+              <h3 className="font-bold text-lg mb-3 text-purple-700">Empathe</h3>
               <p className="text-gray-700 text-sm">Ressent intens&eacute;ment les &eacute;motions des autres, souvent par contact direct ou proximit&eacute;. La perception reste g&eacute;n&eacute;ralement li&eacute;e &agrave; une pr&eacute;sence physique ou &eacute;motionnelle imm&eacute;diate.</p>
             </div>
             <div className="bg-white rounded-lg p-5 border-2 border-fuchsia-300">
-              <h3 className="font-bold text-lg mb-3 text-fuchsia-700">✨ Intuitif</h3>
+              <h3 className="font-bold text-lg mb-3 text-fuchsia-700">Intuitif</h3>
               <p className="text-gray-700 text-sm">Per&ccedil;oit des informations ou des pressentiments sans pouvoir les justifier rationnellement, mais sans n&eacute;cessairement les attribuer &agrave; une source ext&eacute;rieure &agrave; sa propre psych&eacute;.</p>
             </div>
             <div className="bg-white rounded-lg p-5 border-2 border-indigo-300">
-              <h3 className="font-bold text-lg mb-3 text-indigo-700">🕊️ Médium</h3>
+              <h3 className="font-bold text-lg mb-3 text-indigo-700">Médium</h3>
               <p className="text-gray-700 text-sm">D&eacute;crit une perception qui semble provenir d&apos;une source ext&eacute;rieure &agrave; sa propre pens&eacute;e &mdash; une information re&ccedil;ue plut&ocirc;t que d&eacute;duite. Pour en savoir plus sur cette distinction, consultez notre guide <Link href="/methodes-voyance/medium-amour/" className="underline hover:text-indigo-900 font-medium">m&eacute;dium en amour</Link>.</p>
             </div>
           </div>
@@ -136,7 +136,7 @@ export default function SuisJeMediumPage() {
 
         {/* Section 3: Que faire */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">🧭 Que Faire de Cette Sensibilité en Amour</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Que Faire de Cette Sensibilité en Amour</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Observer, noter et prendre du recul sont les trois réflexes les plus utiles avant de tirer une conclusion sur sa propre sensibilité médiumnique.</p>
           <div className="space-y-4">
             <div className="bg-purple-50 rounded-lg p-5 border-l-4 border-purple-400">

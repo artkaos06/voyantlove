@@ -46,7 +46,7 @@ export default function SiteHeader() {
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-gray-200">
       <nav className="max-w-6xl mx-auto px-4 h-14 flex items-center justify-between gap-4">
         <Link href="/" className="flex items-center gap-1.5 font-bold text-lg text-purple-700 shrink-0" onClick={() => setMobileOpen(false)}>
-          {/* Was a 💜 emoji, i.e. an OS-rendered glyph as the brand mark. */}
+          {/* Was a emoji, i.e. an OS-rendered glyph as the brand mark. */}
           <Icon name="heart" size={19} className="text-purple-700" />
           <span>VoyantLove</span>
         </Link>
@@ -82,7 +82,7 @@ export default function SiteHeader() {
             Voyance Amour
           </Link>
           <Link href="/consulter/" className="ml-2 bg-purple-700 hover:bg-purple-800 text-white text-sm font-semibold px-4 py-2 rounded-lg transition">
-            🔮 Consulter
+            Consulter
           </Link>
         </div>
 

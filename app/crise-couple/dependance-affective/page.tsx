@@ -16,7 +16,7 @@ const config: ContentPageConfig = {
     { name: 'Dépendance Affective', url: 'https://www.voyantlove.fr/crise-couple/dependance-affective/' },
   ],
   header: {
-    emoji: '🔗',
+    emoji: '',
     h1: 'Dépendance affective',
     subtitle: 'Se Libérer et Aimer Sainement',
     gradient: 'from-teal-600 via-cyan-600 to-blue-600',
@@ -28,10 +28,10 @@ const config: ContentPageConfig = {
   },
   accentText: 'text-teal-600',
   stats: [
-    { icon: '📊', value: '1 sur 4', label: 'Personnes touchées' },
-    { icon: '🔍', value: 'Profonde', label: 'Origine karmique' },
-    { icon: '💚', value: 'Réelle', label: 'Guérison possible' },
-    { icon: '✨', value: 'Vaste', label: 'Expérience' },
+    { icon: '', value: '1 sur 4', label: 'Personnes touchées' },
+    { icon: '', value: 'Profonde', label: 'Origine karmique' },
+    { icon: '', value: 'Réelle', label: 'Guérison possible' },
+    { icon: '', value: 'Vaste', label: 'Expérience' },
   ],
   eeat: { colorScheme: 'teal', method: 'Tarot de libération et guidance karmique' },
   cta: { topic: 'crise-couple', slug: 'dependance-affective' },
@@ -83,7 +83,7 @@ export default function DependanceAffectivePage() {
         <VoyantRecommendations topic="crise-couple" limit={3} showOnlineFirst={true} source="dependance-affective-cards-top" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold mb-6 text-teal-600">&#x1F52E; Qu&rsquo;est-ce que la D&eacute;pendance Affective selon la Voyance ?</h2>
+          <h2 className="text-3xl font-bold mb-6 text-teal-600"> Qu&rsquo;est-ce que la D&eacute;pendance Affective selon la Voyance ?</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">La d&eacute;pendance affective est un besoin compulsif de la pr&eacute;sence et de la validation d&rsquo;une autre personne pour se sentir exister. Le tarot la r&eacute;v&egrave;le &agrave; travers Le Diable (cha&icirc;nes &eacute;motionnelles) et La Lune (illusions affectives), distinguant clairement amour sain et attachement toxique.</p>
           <p className="text-gray-700 mb-6">
             La <strong>d&eacute;pendance affective</strong> se d&eacute;finit comme un besoin compulsif et irr&eacute;pressible de la pr&eacute;sence, de la validation et de l&rsquo;approbation d&rsquo;une autre personne pour se sentir exister. Contrairement &agrave; l&rsquo;<strong>amour sain</strong> qui enrichit et &eacute;l&egrave;ve les deux partenaires, la d&eacute;pendance cr&eacute;e une relation d&eacute;s&eacute;quilibr&eacute;e o&ugrave; l&rsquo;un se dissout dans l&rsquo;autre. En voyance, cette probl&eacute;matique appara&icirc;t avec une clart&eacute; saisissante dans les tirages de tarot.
@@ -108,7 +108,7 @@ export default function DependanceAffectivePage() {
         </section>
 
         <section id="signes" className="bg-gradient-to-br from-teal-50 to-cyan-50 rounded-xl p-8 mb-8 border-2 border-teal-200">
-          <h2 className="text-3xl font-bold mb-6 text-gray-900">&#x1F3B4; Les 10 Signes R&eacute;v&eacute;l&eacute;s par le Tarot</h2>
+          <h2 className="text-3xl font-bold mb-6 text-gray-900"> Les 10 Signes R&eacute;v&eacute;l&eacute;s par le Tarot</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Les dix signes de d&eacute;pendance affective sont la peur panique de l&rsquo;abandon, le besoin constant de r&eacute;assurance, la jalousie maladive, la perte d&rsquo;identit&eacute;, l&rsquo;acceptation de l&rsquo;inacceptable, l&rsquo;id&eacute;alisation du partenaire, l&rsquo;incapacit&eacute; &agrave; &ecirc;tre seul, le sacrifice de ses besoins, les variations d&rsquo;humeur et la r&eacute;p&eacute;tition des m&ecirc;mes sch&eacute;mas.</p>
           <p className="text-gray-700 mb-6">
             Le tirage de tarot met en lumi&egrave;re les <strong>comportements r&eacute;v&eacute;lateurs</strong> de la d&eacute;pendance affective. Voici les dix signes que la guidance spirituelle identifie le plus fr&eacute;quemment chez les personnes concern&eacute;es par cette <strong>probl&eacute;matique relationnelle</strong>.
@@ -188,7 +188,7 @@ export default function DependanceAffectivePage() {
         </section>
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold mb-6 text-teal-600">&#x1F504; Sch&eacute;mas Karmiques et R&eacute;p&eacute;titions Relationnelles</h2>
+          <h2 className="text-3xl font-bold mb-6 text-teal-600"> Sch&eacute;mas Karmiques et R&eacute;p&eacute;titions Relationnelles</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">La d&eacute;pendance affective s&rsquo;enracine dans des blessures karmiques (abandon dans des vies ant&eacute;rieures) et des sch&eacute;mas familiaux transmis de g&eacute;n&eacute;ration en g&eacute;n&eacute;ration. Le tarot identifie ces origines profondes &agrave; travers La Lune, Le Diable et Le Pendu invers&eacute;.</p>
           <p className="text-gray-700 mb-6">
             La voyance r&eacute;v&egrave;le que la <strong>d&eacute;pendance affective</strong> ne na&icirc;t jamais dans le vide. Elle s&rsquo;enracine dans des blessures qui d&eacute;passent souvent cette vie. Les <strong>m&eacute;moires karmiques</strong> portent l&rsquo;empreinte de relations pass&eacute;es o&ugrave; l&rsquo;abandon, la trahison ou la soumission affective ont laiss&eacute; des traces ind&eacute;l&eacute;biles dans l&rsquo;&acirc;me.
@@ -228,7 +228,7 @@ export default function DependanceAffectivePage() {
         <VoyantQuickCTA topic="crise-couple" source="dependance-affective-banner-mid" />
 
         <section id="liberation" className="bg-gradient-to-br from-teal-50 to-blue-50 rounded-xl p-8 mb-8 border-2 border-teal-200">
-          <h2 className="text-3xl font-bold mb-6 text-gray-900">&#x2728; Le Chemin de Lib&eacute;ration &mdash; 5 &Eacute;tapes Guid&eacute;es par le Tarot</h2>
+          <h2 className="text-3xl font-bold mb-6 text-gray-900"> Le Chemin de Lib&eacute;ration &mdash; 5 &Eacute;tapes Guid&eacute;es par le Tarot</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Se lib&eacute;rer de la d&eacute;pendance affective passe par cinq &eacute;tapes : la prise de conscience (La Tour), affronter la blessure d&rsquo;origine (Le Pendu), reconstruire l&rsquo;estime de soi (La Force), apprendre l&rsquo;ind&eacute;pendance &eacute;motionnelle (L&rsquo;Ermite) et s&rsquo;ouvrir &agrave; l&rsquo;amour sain (L&rsquo;&Eacute;toile).</p>
           <p className="text-gray-700 mb-6">
             Le tarot ne se contente pas de r&eacute;v&eacute;ler la d&eacute;pendance : il trace un <strong>chemin de lib&eacute;ration</strong> pr&eacute;cis &agrave; travers cinq arcanes majeurs. Chaque &eacute;tape correspond &agrave; une phase essentielle du processus de <strong>gu&eacute;rison &eacute;motionnelle</strong>.
@@ -288,7 +288,7 @@ export default function DependanceAffectivePage() {
         </section>
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold mb-6 text-teal-600">&#x1F49A; Construire des Relations Saines Apr&egrave;s la D&eacute;pendance</h2>
+          <h2 className="text-3xl font-bold mb-6 text-teal-600"> Construire des Relations Saines Apr&egrave;s la D&eacute;pendance</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Une relation saine apr&egrave;s la d&eacute;pendance repose sur l&rsquo;autonomie pr&eacute;serv&eacute;e, la confiance naturelle, la communication ouverte et le respect mutuel. Les personnes gu&eacute;ries d&eacute;veloppent une lucidit&eacute; qui leur permet de construire des liens plus authentiques que la moyenne.</p>
           <p className="text-gray-700 mb-6">
             La <strong>lib&eacute;ration de la d&eacute;pendance affective</strong> n&rsquo;est pas une fin mais un commencement. Une fois le travail int&eacute;rieur accompli, vous d&eacute;couvrez une mani&egrave;re enti&egrave;rement nouvelle d&rsquo;aimer. Voici ce qui distingue une <strong>relation saine</strong> d&rsquo;une relation de d&eacute;pendance.
@@ -299,31 +299,31 @@ export default function DependanceAffectivePage() {
               <h3 className="font-bold text-xl mb-4 text-green-700">&#x2713; Signes d&rsquo;un Amour Sain</h3>
               <ul className="space-y-3">
                 <li className="flex items-start gap-2">
-                  <div className="text-green-600 mt-1">&#x25CF;</div>
+                  <div className="text-green-600 mt-1"></div>
                   <div className="text-gray-700">
                     <strong>Autonomie pr&eacute;serv&eacute;e :</strong> Chaque partenaire conserve ses passions, ses amiti&eacute;s et son identit&eacute; propre au sein du couple.
                   </div>
                 </li>
                 <li className="flex items-start gap-2">
-                  <div className="text-green-600 mt-1">&#x25CF;</div>
+                  <div className="text-green-600 mt-1"></div>
                   <div className="text-gray-700">
                     <strong>Confiance naturelle :</strong> L&rsquo;absence de l&rsquo;autre est supportable et ne provoque pas d&rsquo;angoisse disproportionn&eacute;e.
                   </div>
                 </li>
                 <li className="flex items-start gap-2">
-                  <div className="text-green-600 mt-1">&#x25CF;</div>
+                  <div className="text-green-600 mt-1"></div>
                   <div className="text-gray-700">
                     <strong>Communication ouverte :</strong> Les besoins et les limites s&rsquo;expriment librement, sans peur du rejet ou de la punition.
                   </div>
                 </li>
                 <li className="flex items-start gap-2">
-                  <div className="text-green-600 mt-1">&#x25CF;</div>
+                  <div className="text-green-600 mt-1"></div>
                   <div className="text-gray-700">
                     <strong>Respect mutuel :</strong> Les deux partenaires respectent l&rsquo;espace, le rythme et les choix de l&rsquo;autre sans tentative de contr&ocirc;le.
                   </div>
                 </li>
                 <li className="flex items-start gap-2">
-                  <div className="text-green-600 mt-1">&#x25CF;</div>
+                  <div className="text-green-600 mt-1"></div>
                   <div className="text-gray-700">
                     <strong>&Eacute;panouissement individuel :</strong> La relation nourrit la croissance personnelle de chacun plut&ocirc;t que de la limiter.
                   </div>
@@ -332,34 +332,34 @@ export default function DependanceAffectivePage() {
             </div>
 
             <div className="bg-red-50 border-2 border-red-200 rounded-lg p-6">
-              <h3 className="font-bold text-xl mb-4 text-red-700">&#x2717; Signes de D&eacute;pendance D&eacute;guis&eacute;e</h3>
+              <h3 className="font-bold text-xl mb-4 text-red-700"> Signes de D&eacute;pendance D&eacute;guis&eacute;e</h3>
               <ul className="space-y-3">
                 <li className="flex items-start gap-2">
-                  <div className="text-red-600 mt-1">&#x25CF;</div>
+                  <div className="text-red-600 mt-1"></div>
                   <div className="text-gray-700">
                     <strong>Fusion totale :</strong> Vous ne faites plus rien sans l&rsquo;autre et avez abandonn&eacute; votre vie personnelle.
                   </div>
                 </li>
                 <li className="flex items-start gap-2">
-                  <div className="text-red-600 mt-1">&#x25CF;</div>
+                  <div className="text-red-600 mt-1"></div>
                   <div className="text-gray-700">
                     <strong>Angoisse permanente :</strong> Chaque absence d&eacute;clenche une panique qui para&icirc;t vitale, pas simplement un manque affectueux.
                   </div>
                 </li>
                 <li className="flex items-start gap-2">
-                  <div className="text-red-600 mt-1">&#x25CF;</div>
+                  <div className="text-red-600 mt-1"></div>
                   <div className="text-gray-700">
                     <strong>Silence forc&eacute; :</strong> Vous taisez vos besoins r&eacute;els par peur de d&eacute;plaire ou d&rsquo;&ecirc;tre abandonn&eacute;(e).
                   </div>
                 </li>
                 <li className="flex items-start gap-2">
-                  <div className="text-red-600 mt-1">&#x25CF;</div>
+                  <div className="text-red-600 mt-1"></div>
                   <div className="text-gray-700">
                     <strong>Contr&ocirc;le d&eacute;guis&eacute; :</strong> Vous surveillez l&rsquo;autre sous couvert d&rsquo;attention ou d&rsquo;amour intense.
                   </div>
                 </li>
                 <li className="flex items-start gap-2">
-                  <div className="text-red-600 mt-1">&#x25CF;</div>
+                  <div className="text-red-600 mt-1"></div>
                   <div className="text-gray-700">
                     <strong>R&eacute;tr&eacute;cissement :</strong> Depuis le d&eacute;but de la relation, votre monde s&rsquo;est r&eacute;duit au lieu de s&rsquo;&eacute;largir.
                   </div>

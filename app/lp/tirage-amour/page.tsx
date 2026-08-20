@@ -14,7 +14,7 @@ export default function LPTirageAmour() {
       <section className="bg-gradient-to-br from-indigo-800 via-purple-700 to-pink-700 text-white py-14 px-4">
         <div className="max-w-3xl mx-auto text-center">
           <div className="inline-block bg-white/20 rounded-full px-4 py-1 text-sm font-semibold mb-5">
-            🔮 Voyants disponibles maintenant
+            Voyants disponibles maintenant
           </div>
           <h1 className="text-4xl md:text-5xl font-bold mb-5 leading-tight">
             Votre Tirage Tarot Révèle la Vérité sur Votre Amour
@@ -32,7 +32,7 @@ export default function LPTirageAmour() {
 
       {/* Urgency bar */}
       <div className="bg-amber-400 text-amber-900 text-center py-2 px-4 text-sm font-semibold">
-        ⚡ 3 voyants disponibles en ce moment, Disponibilité limitée
+        3 voyants disponibles en ce moment, Disponibilité limitée
       </div>
 
       {/* Form, teaser mode */}
@@ -47,9 +47,9 @@ export default function LPTirageAmour() {
         <div className="max-w-3xl mx-auto">
           <div className="grid md:grid-cols-3 gap-6 text-center">
             {[
-              { icon: '⭐', title: '4.8/5', sub: '2 400+ avis vérifiés' },
-              { icon: '🔒', title: 'Confidentiel', sub: 'Vos données protégées' },
-              { icon: '📞', title: '10 min offertes', sub: '1re consultation gratuite' },
+              { icon: '', title: '4.8/5', sub: '2 400+ avis vérifiés' },
+              { icon: '', title: 'Confidentiel', sub: 'Vos données protégées' },
+              { icon: '', title: '10 min offertes', sub: '1re consultation gratuite' },
             ].map((item, i) => (
               <div key={i} className="p-4">
                 <div className="text-3xl mb-2">{item.icon}</div>
@@ -70,7 +70,7 @@ export default function LPTirageAmour() {
               { text: 'J\'hésitais mais le tirage m\'a convaincue. Le voyant m\'a donné des réponses très précises.', name: 'Isabelle M.', stars: 5 },
             ].map((t, i) => (
               <div key={i} className="bg-white p-5 rounded-lg shadow-sm">
-                <div className="mb-2">{'⭐'.repeat(t.stars)}</div>
+                <div className="mb-2">{''.repeat(t.stars)}</div>
                 <p className="text-gray-700 italic mb-3">&quot;{t.text}&quot;</p>
                 <p className="text-sm font-semibold text-gray-500">, {t.name}</p>
               </div>

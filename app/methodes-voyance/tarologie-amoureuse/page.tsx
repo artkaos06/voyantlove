@@ -16,7 +16,7 @@ const config: ContentPageConfig = {
     { name: 'Tarologie Amoureuse', url: 'https://www.voyantlove.fr/methodes-voyance/tarologie-amoureuse/' },
   ],
   header: {
-    emoji: '🃏',
+    emoji: '',
     h1: 'Tarologie amoureuse',
     subtitle: 'L\'art de lire les cartes du tarot pour décrypter votre vie sentimentale',
     gradient: 'from-indigo-600 via-purple-600 to-violet-600',
@@ -28,10 +28,10 @@ const config: ContentPageConfig = {
   },
   accentText: 'text-indigo-600',
   stats: [
-    { icon: '🃏', value: '78 arcanes', label: 'Symbolique riche' },
-    { icon: '💖', value: 'Spécialisé', label: 'Questions amour' },
-    { icon: '📖', value: 'Narratif', label: 'Lecture détaillée' },
-    { icon: '⭐', value: 'Précis', label: 'Analyse fine' },
+    { icon: '', value: '78 arcanes', label: 'Symbolique riche' },
+    { icon: '', value: 'Spécialisé', label: 'Questions amour' },
+    { icon: '', value: 'Narratif', label: 'Lecture détaillée' },
+    { icon: '', value: 'Précis', label: 'Analyse fine' },
   ],
   eeat: { colorScheme: 'purple', method: 'Tarologie amoureuse : lecture du tarot appliquée aux questions sentimentales' },
   cta: { topic: 'methodes-voyance', slug: 'tarologie-amoureuse' },
@@ -86,7 +86,7 @@ export default function TarologieAmoureusePage() {
 
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">📖 Qu&apos;est-ce que la Tarologie Amoureuse ?</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Qu&apos;est-ce que la Tarologie Amoureuse ?</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">La tarologie amoureuse est une spécialité du tarot consacrée exclusivement aux questions sentimentales. Le tarologue interprète les 78 arcanes en fonction de leur position dans le tirage et de la dynamique relationnelle qu&apos;ils décrivent.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             La <strong>tarologie</strong> est l&apos;étude approfondie du tarot comme outil de connaissance de soi et de divination. La <strong>tarologie amoureuse</strong>, ou <strong>tarologie sentimentale</strong>, en est une branche spécialisée : le tarologue ne traite que les questions de couple, de sentiments, de rupture et de rencontre. Cette focalisation lui permet de développer une lecture extrêmement fine des nuances émotionnelles que les cartes révèlent.
@@ -108,7 +108,7 @@ export default function TarologieAmoureusePage() {
         </section>
 
         <section id="arcanes" className="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-xl p-8 mb-8 border-2 border-indigo-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">🌟 Les Arcanes Majeurs Clés de la Tarologie Amoureuse</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Les Arcanes Majeurs Clés de la Tarologie Amoureuse</h2>
           <p className="text-lg font-semibold text-gray-800 mb-6">Six arcanes majeurs dominent les tirages sentimentaux : Les Amoureux, Le Soleil, L&apos;Étoile (positifs) ; La Lune, Le Diable, La Tour (à nuancer). Leur apparition oriente toute la lecture.</p>
           <div className="grid md:grid-cols-2 gap-5">
             <div className="bg-white rounded-lg p-5 border-l-4 border-green-500">
@@ -142,7 +142,7 @@ export default function TarologieAmoureusePage() {
         </section>
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">🎯 Les Tirages de Tarologie Amoureuse</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Les Tirages de Tarologie Amoureuse</h2>
           <p className="text-lg font-semibold text-gray-800 mb-6">Quatre tirages dominent la tarologie sentimentale : la croix (général), le V (passé/présent/futur), le fer à cheval (compatibilité) et le oui/non (questions binaires).</p>
           <div className="space-y-5">
             <div className="bg-indigo-50 rounded-lg p-5 border border-indigo-200">
@@ -167,7 +167,7 @@ export default function TarologieAmoureusePage() {
         <VoyantQuickCTA topic="methodes-voyance" source="tarologie-amoureuse-banner-mid" />
 
         <section id="consultation" className="bg-gradient-to-br from-purple-50 to-violet-50 rounded-xl p-8 mb-8 border-2 border-purple-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">🔮 Consulter un Tarologue Spécialisé en Amour</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Consulter un Tarologue Spécialisé en Amour</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Choisissez un tarologue avec au moins 5 ans d&apos;expérience exclusive en questions sentimentales, des avis clients détaillés et une éthique claire (pas de promesses de résultats, pas de vente de rituels).</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             La qualité d&apos;une consultation de <strong>tarologie amoureuse</strong> dépend avant tout du tarologue. Un praticien expérimenté tire la même lecture qu&apos;un débutant des mêmes cartes, mais l&apos;interprétation sera radicalement plus juste et nuancée. Voici comment reconnaître un bon <strong>tarologue spécialisé en amour</strong>.

@@ -125,11 +125,11 @@ export default async function SignPage({ params }: Props) {
           <h2 className="text-2xl font-bold text-gray-900 mb-5">Le {s.name} célibataire et en couple</h2>
           <div className="space-y-5">
             <div>
-              <h3 className="font-bold text-fuchsia-800 mb-1">💗 Le {s.name} célibataire</h3>
+              <h3 className="font-bold text-fuchsia-800 mb-1">Le {s.name} célibataire</h3>
               <p className="text-gray-700">{renderWithEntities(s.celibataire)}</p>
             </div>
             <div>
-              <h3 className="font-bold text-fuchsia-800 mb-1">💞 Le {s.name} en couple</h3>
+              <h3 className="font-bold text-fuchsia-800 mb-1">Le {s.name} en couple</h3>
               <p className="text-gray-700">{renderWithEntities(s.couple)}</p>
             </div>
           </div>
@@ -163,7 +163,7 @@ export default async function SignPage({ params }: Props) {
             </div>
             <div className="mt-5">
               <Link href="/methodes-voyance/synastrie-amoureuse/" className="inline-block bg-fuchsia-700 hover:bg-fuchsia-800 text-white font-semibold px-6 py-3 rounded-lg transition">
-                🔮 Tester votre compatibilité avec le {s.name}
+                Tester votre compatibilité avec le {s.name}
               </Link>
             </div>
           </section>
@@ -171,7 +171,7 @@ export default async function SignPage({ params }: Props) {
 
         {/* FAQ */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">❓ Questions fréquentes sur le {s.name} en amour</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">Questions fréquentes sur le {s.name} en amour</h2>
           <div className="space-y-6">
             {s.faq.map((f, i) => (
               <div key={i} className={i < s.faq.length - 1 ? 'border-b border-gray-200 pb-6' : ''}>
@@ -193,8 +193,8 @@ export default async function SignPage({ params }: Props) {
             ))}
           </div>
           <div className="mt-4 pt-4 border-t border-gray-200 space-y-2">
-            <Link href="/tarot-amour/" className="block text-fuchsia-700 hover:text-fuchsia-900 font-medium">&rarr; 🃏 Tarot amour : signification des cartes</Link>
-            <Link href="/compatibilite-amoureuse/" className="block text-fuchsia-700 hover:text-fuchsia-900 font-medium">&rarr; 💞 Toutes les compatibilités amoureuses</Link>
+            <Link href="/tarot-amour/" className="block text-fuchsia-700 hover:text-fuchsia-900 font-medium">&rarr; Tarot amour : signification des cartes</Link>
+            <Link href="/compatibilite-amoureuse/" className="block text-fuchsia-700 hover:text-fuchsia-900 font-medium">&rarr; Toutes les compatibilités amoureuses</Link>
           </div>
         </div>
 

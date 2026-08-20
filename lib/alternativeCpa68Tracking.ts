@@ -130,7 +130,7 @@ export function buildAlternativeDiscordNotification(
   const source = event.source || event.utm_source || ', ';
   return {
     category: 'lead',
-    title: '📞 CPA68, appel lancé',
+    title: 'CPA68, appel lancé',
     description: `Numéro composé : **${offer.displayPhone}**\nClic téléphone valorisé **5 € proxy**, aucun CPA de 68 € n’est encore validé.`,
     fields: [
       { name: 'Provider', value: event.provider_id, inline: true },

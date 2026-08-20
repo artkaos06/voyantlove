@@ -16,7 +16,7 @@ const config: ContentPageConfig = {
     { name: 'Seconde Chance en Amour', url: 'https://www.voyantlove.fr/reconquete/seconde-chance-amour/' },
   ],
   header: {
-    emoji: '🌱',
+    emoji: '',
     h1: 'Seconde chance en amour',
     subtitle: 'Donner une nouvelle opportunité selon le tarot',
     gradient: 'from-green-500 via-teal-500 to-cyan-500',
@@ -27,10 +27,10 @@ const config: ContentPageConfig = {
   },
   accentText: 'text-green-600',
   stats: [
-    { icon: '⭐', value: '4.8/5', label: '' },
-    { icon: '🌱', value: 'Variable', label: '' },
-    { icon: '⏰', value: '4-8m', label: '' },
-    { icon: '💚', value: 'Élevée', label: '' },
+    { icon: '', value: '4.8/5', label: '' },
+    { icon: '', value: 'Variable', label: '' },
+    { icon: '', value: '4-8m', label: '' },
+    { icon: '', value: 'Élevée', label: '' },
   ],
   eeat: { colorScheme: 'purple', method: 'Tarot de la reconquête amoureuse' },
   cta: { topic: 'reconquete', slug: 'seconde-chance-amour' },
@@ -355,7 +355,7 @@ export default function SecondeChancePage() {
         </section>
 
         <section className="bg-gradient-to-br from-green-50 to-teal-50 rounded-xl p-8 mb-8">
-          <h2 className="text-3xl font-bold mb-6 text-teal-700">🔮 Guidance Tarot pour la Seconde Chance</h2>
+          <h2 className="text-3xl font-bold mb-6 text-teal-700">Guidance Tarot pour la Seconde Chance</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le tarot guide votre décision de seconde chance : Le Jugement, Les Amoureux, La Tempérance et L'Etoile sont des feux verts, tandis que Le Diable, La Tour, le Huit de Coupe et La Roue inversée signalent un refus nécessaire.</p>
           <p className="text-gray-700 mb-6">Le <strong>tarot</strong> révèle si cette <strong>seconde chance en amour</strong> est guidée par les énergies constructives ou destructrices. Voici les cartes clés pour votre décision.</p>
 

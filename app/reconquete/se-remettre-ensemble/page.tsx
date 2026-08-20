@@ -16,7 +16,7 @@ const config: ContentPageConfig = {
     { name: 'Se Remettre Ensemble', url: 'https://www.voyantlove.fr/reconquete/se-remettre-ensemble/' },
   ],
   header: {
-    emoji: '💑',
+    emoji: '',
     h1: 'Se remettre ensemble',
     subtitle: 'Les 5 étapes pour réussir vos retrouvailles selon le tarot',
     gradient: 'from-purple-500 via-pink-500 to-rose-500',
@@ -27,10 +27,10 @@ const config: ContentPageConfig = {
   },
   accentText: 'text-purple-600',
   stats: [
-    { icon: '⭐', value: '4.7/5', label: '' },
-    { icon: '💑', value: 'Variable', label: '' },
-    { icon: '⏰', value: '3-6m', label: '' },
-    { icon: '🔮', value: 'Reconnue', label: '' },
+    { icon: '', value: '4.7/5', label: '' },
+    { icon: '', value: 'Variable', label: '' },
+    { icon: '', value: '3-6m', label: '' },
+    { icon: '', value: 'Reconnue', label: '' },
   ],
   eeat: { colorScheme: 'purple', method: 'Tarot de la reconquête amoureuse' },
   cta: { topic: 'reconquete', slug: 'se-remettre-ensemble' },
@@ -360,56 +360,56 @@ export default function SeRemettreEnsemblePage() {
           <div className="grid md:grid-cols-2 gap-4">
             <div className="bg-red-50 p-5 rounded-lg border-2 border-red-200">
               <h3 className="font-bold text-red-700 mb-3 flex items-center">
-                <span className="text-xl mr-2">❌</span> Erreur 1 : Reprise Trop Rapide
+                <span className="text-xl mr-2"></span> Erreur 1 : Reprise Trop Rapide
               </h3>
               <p className="text-gray-700 text-sm">Se remettre ensemble quelques jours ou semaines après la rupture, avant toute évolution réelle. Résultat : reproduction exacte des mêmes problèmes en quelques mois.</p>
             </div>
 
             <div className="bg-red-50 p-5 rounded-lg border-2 border-red-200">
               <h3 className="font-bold text-red-700 mb-3 flex items-center">
-                <span className="text-xl mr-2">❌</span> Erreur 2 : Ignorer les Red Flags
+                <span className="text-xl mr-2"></span> Erreur 2 : Ignorer les Red Flags
               </h3>
               <p className="text-gray-700 text-sm">Minimiser ou excuser les comportements problématiques par optimisme ou désespoir. Les red flags (contrôle, jalousie, manipulation) s'aggravent avec le temps, ils ne disparaissent pas miraculeusement.</p>
             </div>
 
             <div className="bg-red-50 p-5 rounded-lg border-2 border-red-200">
               <h3 className="font-bold text-red-700 mb-3 flex items-center">
-                <span className="text-xl mr-2">❌</span> Erreur 3 : Ne Pas Parler des Vraies Causes
+                <span className="text-xl mr-2"></span> Erreur 3 : Ne Pas Parler des Vraies Causes
               </h3>
               <p className="text-gray-700 text-sm">Éviter les discussions difficiles sur ce qui a causé la rupture, par peur de conflit. Sans cette confrontation honnête, les mêmes dynamiques toxiques persistent sous la surface et exploseront à nouveau.</p>
             </div>
 
             <div className="bg-red-50 p-5 rounded-lg border-2 border-red-200">
               <h3 className="font-bold text-red-700 mb-3 flex items-center">
-                <span className="text-xl mr-2">❌</span> Erreur 4 : Croire aux Promesses Sans Actions
+                <span className="text-xl mr-2"></span> Erreur 4 : Croire aux Promesses Sans Actions
               </h3>
               <p className="text-gray-700 text-sm">"Je vais changer, je te le promets." Sans preuves concrètes de changement (thérapie suivie, comportements modifiés), ces promesses ne valent rien. Observez les actes, pas les paroles.</p>
             </div>
 
             <div className="bg-red-50 p-5 rounded-lg border-2 border-red-200">
               <h3 className="font-bold text-red-700 mb-3 flex items-center">
-                <span className="text-xl mr-2">❌</span> Erreur 5 : Reprendre par Peur de la Solitude
+                <span className="text-xl mr-2"></span> Erreur 5 : Reprendre par Peur de la Solitude
               </h3>
               <p className="text-gray-700 text-sm">Accepter la reprise parce que le célibat est difficile, pas par amour véritable. Cette motivation conduit à une relation insatisfaisante où vous restez par nécessité, générant frustration et ressentiment.</p>
             </div>
 
             <div className="bg-red-50 p-5 rounded-lg border-2 border-red-200">
               <h3 className="font-bold text-red-700 mb-3 flex items-center">
-                <span className="text-xl mr-2">❌</span> Erreur 6 : Espérer Que l'Autre Change Seul
+                <span className="text-xl mr-2"></span> Erreur 6 : Espérer Que l'Autre Change Seul
               </h3>
               <p className="text-gray-700 text-sm">Attendre que votre partenaire fasse tous les efforts pendant que vous restez inchangé. Une relation nécessite l'évolution des DEUX partenaires. Si un seul change, le déséquilibre persiste.</p>
             </div>
 
             <div className="bg-red-50 p-5 rounded-lg border-2 border-red-200">
               <h3 className="font-bold text-red-700 mb-3 flex items-center">
-                <span className="text-xl mr-2">❌</span> Erreur 7 : Garder de la Rancune
+                <span className="text-xl mr-2"></span> Erreur 7 : Garder de la Rancune
               </h3>
               <p className="text-gray-700 text-sm">Dire qu'on pardonne mais rappeler constamment les erreurs passées lors des disputes. Le pardon authentique est essentiel. Sans lui, vous punirez continuellement votre partenaire, créant une dynamique toxique.</p>
             </div>
 
             <div className="bg-red-50 p-5 rounded-lg border-2 border-red-200">
               <h3 className="font-bold text-red-700 mb-3 flex items-center">
-                <span className="text-xl mr-2">❌</span> Erreur 8 : Précipiter l'Engagement
+                <span className="text-xl mr-2"></span> Erreur 8 : Précipiter l'Engagement
               </h3>
               <p className="text-gray-700 text-sm">Emménager ensemble, se fiancer ou avoir un enfant rapidement pour "cimenter" la relation. Ces engagements lourds sur des fondations fragiles mènent à des situations encore plus compliquées lors de l'inévitable deuxième rupture.</p>
             </div>
@@ -483,7 +483,7 @@ export default function SeRemettreEnsemblePage() {
         </section>
 
         <section className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-8 mb-8">
-          <h2 className="text-3xl font-bold mb-6 text-purple-700">🔮 Guidance Tarot pour Se Remettre Ensemble</h2>
+          <h2 className="text-3xl font-bold mb-6 text-purple-700">Guidance Tarot pour Se Remettre Ensemble</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le tarot guide votre remise en couple : Les Amoureux, Le Jugement, Le Soleil et le Deux de Coupe sont favorables. La Tempérance invite à la patience. Le Diable, La Tour et le Huit de Coupe déconseillent la reprise.</p>
           <p className="text-gray-700 mb-6">Le <strong>tarot</strong> révèle le timing idéal, les chances de succès et les obstacles à surmonter pour votre <strong>reprise de relation</strong>.</p>
 

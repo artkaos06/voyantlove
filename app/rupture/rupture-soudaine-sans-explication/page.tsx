@@ -16,7 +16,7 @@ const config: ContentPageConfig = {
     { name: 'Rupture Soudaine sans Explication', url: 'https://www.voyantlove.fr/rupture/rupture-soudaine-sans-explication/' },
   ],
   header: {
-    emoji: '⚡',
+    emoji: '',
     h1: 'Comment comprendre une rupture soudaine sans explication ?',
     subtitle: 'Sortir de la sidération et retrouver des repères sans s\'enfermer dans les suppositions',
     gradient: 'from-slate-700 via-blue-800 to-indigo-900',
@@ -28,10 +28,10 @@ const config: ContentPageConfig = {
   },
   accentText: 'text-blue-700',
   stats: [
-    { icon: '🔮', value: 'Reconnue', label: 'Expertise' },
-    { icon: '⚡', value: '3,200+', label: 'Consultations' },
-    { icon: '⭐', value: '4.7/5', label: '254 Avis' },
-    { icon: '🔒', value: '100%', label: 'Confidentiel' },
+    { icon: '', value: 'Reconnue', label: 'Expertise' },
+    { icon: '', value: '3,200+', label: 'Consultations' },
+    { icon: '', value: '4.7/5', label: '254 Avis' },
+    { icon: '', value: '100%', label: 'Confidentiel' },
   ],
   eeat: { colorScheme: 'blue', method: 'Grille de lecture post-rupture et guidance sentimentale' },
   cta: { topic: 'rupture', slug: 'rupture-soudaine' },
@@ -89,19 +89,19 @@ export default function RuptureSoudaineSansExplicationPage() {
 
         {/* H2 1 */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">{'\u{1F914}'} Pourquoi une Rupture Peut-elle Sembler Arriver &laquo;Du Jour au Lendemain&raquo;</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Pourquoi une Rupture Peut-elle Sembler Arriver &laquo;Du Jour au Lendemain&raquo;</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Une decision de rupture murit generalement pendant des semaines ou des mois avant d&apos;etre annoncee, mais ce cheminement reste souvent invisible pour l&apos;autre partenaire, ce qui cree une impression trompeuse de soudainete.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Ce qui est vécu comme un <strong>événement brutal</strong> résulte presque toujours d&apos;un processus plus long. La personne qui part a souvent traversé un doute, puis une hésitation, puis une décision, sans jamais partager ces étapes à voix haute, par peur du conflit, par culpabilité, ou parce qu&apos;elle n&apos;a elle-même pris conscience de son désengagement que progressivement.
           </p>
           <div className="bg-blue-50 border-l-4 border-blue-600 p-6 rounded">
-            <p className="text-gray-700"><strong>{'\u{1F4A1}'} À retenir :</strong> la soudaineté ressentie dit surtout que vous n&apos;avez pas eu accès à ce cheminement intérieur, pas que la décision a réellement été prise sur un coup de tête. Cette nuance change la façon dont vous pouvez chercher à comprendre la situation.</p>
+            <p className="text-gray-700"><strong>À retenir :</strong> la soudaineté ressentie dit surtout que vous n&apos;avez pas eu accès à ce cheminement intérieur, pas que la décision a réellement été prise sur un coup de tête. Cette nuance change la façon dont vous pouvez chercher à comprendre la situation.</p>
           </div>
         </section>
 
         {/* H2 2 */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">{'\u{1F50D}'} Les Signes Rétrospectifs Possibles, sans Réécrire Toute l&apos;Histoire</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Les Signes Rétrospectifs Possibles, sans Réécrire Toute l&apos;Histoire</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Certains signes discrets peuvent apparaitre en retrospective -- distance progressive, moindre disponibilite, conversations plus courtes -- mais il est risque de reecrire toute une histoire commune a la lumiere de la seule rupture.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Après une rupture inattendue, l&apos;esprit cherche naturellement à relire le passé pour trouver des <strong>signes annonciateurs</strong>. Certains signaux discrets peuvent effectivement exister : une distance progressive, des sujets d&apos;avenir évités, une disponibilité émotionnelle en baisse. Mais cette relecture comporte un risque réel : celui de réinterpréter rétroactivement des moments heureux comme des mensonges, ou d&apos;inventer des signes qui n&apos;existaient pas pour donner un sens à tout prix à ce qui s&apos;est passé.
@@ -115,40 +115,40 @@ export default function RuptureSoudaineSansExplicationPage() {
 
         {/* H2 3 */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">{'\u{1F910}'} Silence, Évitement ou Décision Mûrie en Secret : ce que Cela Peut Signifier</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Silence, Évitement ou Décision Mûrie en Secret : ce que Cela Peut Signifier</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le silence d&apos;un partenaire apres une rupture soudaine peut traduire un evitement du conflit, une decision deja arretee qu&apos;il juge inutile de justifier, ou une difficulte a mettre des mots sur un desengagement progressif -- rarement une volonte de nuire.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Le <strong>silence</strong> qui suit une rupture soudaine intrigue autant qu&apos;il blesse. Il recouvre en réalité plusieurs réalités très différentes, qu&apos;il est utile de distinguer sans les confondre en une seule explication.
           </p>
           <div className="space-y-4">
             <div className="bg-blue-50 border-l-4 border-blue-600 p-5 rounded">
-              <h3 className="font-bold mb-2 text-blue-800">{'\u{1F6AA}'} L&apos;Évitement du Conflit</h3>
+              <h3 className="font-bold mb-2 text-blue-800">L&apos;Évitement du Conflit</h3>
               <p className="text-gray-700 text-sm">Certaines personnes fuient les confrontations émotionnelles et préfèrent le silence à une discussion douloureuse, même au prix de laisser l&apos;autre dans l&apos;incompréhension.</p>
             </div>
             <div className="bg-blue-50 border-l-4 border-blue-600 p-5 rounded">
-              <h3 className="font-bold mb-2 text-blue-800">{'\u{1F512}'} Une Décision Déjà Arrêtée</h3>
+              <h3 className="font-bold mb-2 text-blue-800">Une Décision Déjà Arrêtée</h3>
               <p className="text-gray-700 text-sm">Quand la décision est vécue comme définitive par celui ou celle qui part, expliquer peut sembler inutile à ses yeux, même si cela laisse l&apos;autre sans réponse légitime.</p>
             </div>
             <div className="bg-blue-50 border-l-4 border-blue-600 p-5 rounded">
-              <h3 className="font-bold mb-2 text-blue-800">{'\u{1F5E3}️'} La Difficulté à Nommer un Désengagement Progressif</h3>
+              <h3 className="font-bold mb-2 text-blue-800">{'️'} La Difficulté à Nommer un Désengagement Progressif</h3>
               <p className="text-gray-700 text-sm">Certaines personnes ne savent tout simplement pas expliquer un désamour progressif qui n&apos;a pas de cause unique et identifiable, et préfèrent le silence à une explication qu&apos;elles jugent insuffisante.</p>
             </div>
           </div>
           <div className="mt-6 bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded">
-            <p className="text-gray-700"><strong>{'⚠️'} Important :</strong> ce silence ne doit pas être automatiquement attribué à une infidélité, une manipulation ou un trouble caché. Ces hypothèses restent possibles mais ne peuvent être confirmées sans faits concrets, et les envisager comme certitudes ajoute une souffrance supplémentaire inutile.</p>
+            <p className="text-gray-700"><strong>{''} Important :</strong> ce silence ne doit pas être automatiquement attribué à une infidélité, une manipulation ou un trouble caché. Ces hypothèses restent possibles mais ne peuvent être confirmées sans faits concrets, et les envisager comme certitudes ajoute une souffrance supplémentaire inutile.</p>
           </div>
         </section>
 
         {/* H2 4 */}
         <section id="demander" className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-8 mb-8 border-2 border-blue-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">{'\u{1F4AC}'} Comment Demander une Explication sans Supplier ni Harceler</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Comment Demander une Explication sans Supplier ni Harceler</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Une demande d&apos;explication efficace est unique, calme et formulee comme un besoin personnel plutot que comme un reproche ; la repeter sous des formes multiples ferme generalement le dialogue au lieu de l&apos;ouvrir.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Il existe une différence nette entre <strong>demander une fois clairement</strong> et relancer la question à travers des messages, des appels ou des tentatives indirectes. La seconde option épuise les deux parties et associe votre image à l&apos;insistance plutôt qu&apos;à la dignité, sans augmenter les chances d&apos;obtenir une réponse.
           </p>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-white rounded-lg p-6 border-l-4 border-green-500">
-              <h3 className="font-bold text-lg mb-3 text-green-700">{'✅'} Une Formulation Utile</h3>
+              <h3 className="font-bold text-lg mb-3 text-green-700">{''} Une Formulation Utile</h3>
               <ul className="space-y-2 text-gray-700 text-sm">
                 <li>&bull; &laquo;J&apos;ai besoin de comprendre, pour moi-même&raquo;</li>
                 <li>&bull; Un moment calme, en tête-à-tête</li>
@@ -157,7 +157,7 @@ export default function RuptureSoudaineSansExplicationPage() {
               </ul>
             </div>
             <div className="bg-white rounded-lg p-6 border-l-4 border-orange-500">
-              <h3 className="font-bold text-lg mb-3 text-orange-700">{'\u{1F6D1}'} Ce qui Ferme le Dialogue</h3>
+              <h3 className="font-bold text-lg mb-3 text-orange-700">Ce qui Ferme le Dialogue</h3>
               <ul className="space-y-2 text-gray-700 text-sm">
                 <li>&bull; Répéter la même question sous dix formes</li>
                 <li>&bull; Multiplier messages, appels et tiers intermédiaires</li>
@@ -170,7 +170,7 @@ export default function RuptureSoudaineSansExplicationPage() {
 
         {/* H2 5 */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">{'\u{1F6D1}'} Que Faire lorsque l&apos;Autre Refuse Toute Discussion</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Que Faire lorsque l&apos;Autre Refuse Toute Discussion</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Un refus persistant de discuter n&apos;est pas necessairement un aveu de faute grave : il peut signaler un epuisement emotionnel ou la conviction que rien ne changera la decision, et appelle a rediriger son energie vers sa propre reconstruction.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Lorsque toutes les tentatives de dialogue restent sans réponse, continuer à attendre une explication qui ne vient pas devient souvent plus coûteux que d&apos;accepter l&apos;absence de réponse. Ce constat n&apos;est pas un renoncement : c&apos;est une manière de reprendre la main sur votre propre temps et votre énergie émotionnelle.
@@ -182,22 +182,22 @@ export default function RuptureSoudaineSansExplicationPage() {
 
         {/* H2 6 */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">{'\u{2696}️'} Comment Distinguer Intuition, Peur et Faits Vérifiables</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">{'️'} Comment Distinguer Intuition, Peur et Faits Vérifiables</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Face a l&apos;incertitude, il est utile de separer trois registres distincts : les faits observables et verifiables, les hypotheses raisonnables non confirmees, et les peurs ou suppositions anxieuses qui n&apos;ont pas de base concrete.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             L&apos;absence d&apos;explication laisse un vide que l&apos;esprit remplit spontanément, souvent avec les scénarios les plus anxiogènes. Séparer clairement ce que vous <strong>savez</strong>, ce que vous <strong>supposez</strong> et ce que vous <strong>redoutez</strong> permet de ne pas traiter une peur comme une certitude.
           </p>
           <div className="grid md:grid-cols-3 gap-6">
             <div className="bg-green-50 border-2 border-green-300 rounded-lg p-6">
-              <h3 className="font-bold text-lg mb-3 text-green-700">{'\u{1F4CB}'} Faits Observables</h3>
+              <h3 className="font-bold text-lg mb-3 text-green-700">Faits Observables</h3>
               <p className="text-gray-700 text-sm">Ce qui a été dit explicitement, les actes concrets constatés, les dates et événements vérifiables.</p>
             </div>
             <div className="bg-yellow-50 border-2 border-yellow-300 rounded-lg p-6">
-              <h3 className="font-bold text-lg mb-3 text-yellow-700">{'\u{2753}'} Hypothèses Raisonnables</h3>
+              <h3 className="font-bold text-lg mb-3 text-yellow-700">Hypothèses Raisonnables</h3>
               <p className="text-gray-700 text-sm">Des explications plausibles compte tenu du contexte, mais non confirmées et à ne pas traiter comme acquises.</p>
             </div>
             <div className="bg-red-50 border-2 border-red-300 rounded-lg p-6">
-              <h3 className="font-bold text-lg mb-3 text-red-700">{'\u{1F630}'} Peurs Anxieuses</h3>
+              <h3 className="font-bold text-lg mb-3 text-red-700">Peurs Anxieuses</h3>
               <p className="text-gray-700 text-sm">Des scénarios catastrophes construits par l&apos;angoisse, sans appui factuel, qui méritent d&apos;être reconnus comme tels plutôt que crus.</p>
             </div>
           </div>
@@ -205,13 +205,13 @@ export default function RuptureSoudaineSansExplicationPage() {
 
         {/* H2 7 */}
         <section id="grille" className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-8 mb-8 border-2 border-blue-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">{'\u{1F9ED}'} Retrouver une Direction Même sans Obtenir Toutes les Réponses</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Retrouver une Direction Même sans Obtenir Toutes les Réponses</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Avancer apres une rupture sans explication complete suppose d&apos;accepter qu&apos;une comprehension suffisante, batie a partir des faits disponibles, peut remplacer une verite totale qui restera peut-etre toujours hors de portee.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             La grille de lecture proposée ici, <strong>faits</strong>, <strong>hypothèses</strong>, <strong>questions à poser</strong>, n&apos;a pas pour but de produire une certitude absolue, mais une compréhension suffisante pour reprendre pied. Si le <Link href="/rupture/deuil-amoureux/" className="text-blue-700 hover:text-blue-900 underline font-medium">deuil amoureux</Link> qui suit vous semble particulièrement lourd à porter seul(e), un accompagnement structuré peut faire une réelle différence dans le rythme de votre reconstruction.
           </p>
           <div className="bg-white p-6 rounded-lg border-2 border-blue-200">
-            <p className="text-gray-700"><strong>{'\u{1F52E}'} À considérer :</strong> une <strong>consultation de voyance sentimentale</strong> peut vous aider à clarifier les dynamiques relationnelles en jeu et à formuler les bonnes questions pour vous-même, jamais à révéler avec certitude ce qui s&apos;est passé dans la tête de l&apos;autre, ni à garantir un retour.</p>
+            <p className="text-gray-700"><strong>À considérer :</strong> une <strong>consultation de voyance sentimentale</strong> peut vous aider à clarifier les dynamiques relationnelles en jeu et à formuler les bonnes questions pour vous-même, jamais à révéler avec certitude ce qui s&apos;est passé dans la tête de l&apos;autre, ni à garantir un retour.</p>
           </div>
         </section>
     </ContentPage>

@@ -16,7 +16,7 @@ const config: ContentPageConfig = {
     { name: 'Marc de Café Amour', url: 'https://www.voyantlove.fr/methodes-voyance/marc-de-cafe-amour/' },
   ],
   header: {
-    emoji: '☕',
+    emoji: '',
     h1: 'Marc de café amour',
     subtitle: 'La tasséographie au service de vos questions sentimentales',
     gradient: 'from-amber-900 via-orange-800 to-stone-800',
@@ -28,10 +28,10 @@ const config: ContentPageConfig = {
   },
   accentText: 'text-amber-800',
   stats: [
-    { icon: '☕', value: 'Tasséographie', label: 'Nom de l\'art' },
-    { icon: '🌍', value: 'Turc & Grec', label: 'Traditions vivantes' },
-    { icon: '💞', value: 'Conviviale', label: 'Pratique partagée' },
-    { icon: '🔍', value: 'Symbolique', label: 'Formes à interpréter' },
+    { icon: '', value: 'Tasséographie', label: 'Nom de l\'art' },
+    { icon: '', value: 'Turc & Grec', label: 'Traditions vivantes' },
+    { icon: '', value: 'Conviviale', label: 'Pratique partagée' },
+    { icon: '', value: 'Symbolique', label: 'Formes à interpréter' },
   ],
   eeat: { colorScheme: 'orange', method: 'Tasséographie amoureuse, lecture du marc de café' },
   cta: { topic: 'methodes-voyance', slug: 'marc-de-cafe-amour' },
@@ -79,7 +79,7 @@ export default function MarcDeCafeAmourPage() {
 
         {/* Section 1: Qu'est-ce que la tasséographie */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">📖 Qu&apos;est-ce que la Lecture du Marc de Café en Amour ?</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Qu&apos;est-ce que la Lecture du Marc de Café en Amour ?</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">La tasséographie interprète les formes dessinées par le marc de café au fond de la tasse, une tradition particulièrement vivante dans les cultures turque, grecque et d&apos;Europe de l&apos;Est.</p>
           <p className="text-gray-700 mb-6">
             La <strong>tasséographie</strong>, parfois appelée caféomancie, hérite d&apos;une tradition plus ancienne, la <strong>lécanomancie</strong>, art antique consistant à lire des présages dans un bassin d&apos;eau ou d&apos;huile. L&apos;arrivée du café au Moyen-Orient puis en Europe a donné naissance à cette variante spécifique, transmise de génération en génération au sein des familles plutôt que par des professionnels.
@@ -98,31 +98,31 @@ export default function MarcDeCafeAmourPage() {
 
         {/* Section 2: Symboles amoureux */}
         <section id="symboles" className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-xl p-8 mb-8 border-2 border-amber-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">💕 Les Symboles Amoureux les Plus Fréquents</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Les Symboles Amoureux les Plus Fréquents</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Cœur, anneau, oiseau ou étoile : chaque forme dessinée par le marc porte une signification amoureuse précise, à nuancer selon son contexte dans la tasse.</p>
           <div className="grid md:grid-cols-2 gap-5">
             <div className="bg-white rounded-lg p-5 border-l-4 border-rose-500">
-              <h3 className="font-bold text-lg mb-2 text-rose-700">💗 Le Cœur</h3>
+              <h3 className="font-bold text-lg mb-2 text-rose-700">Le Cœur</h3>
               <p className="text-gray-700 text-sm">Le symbole le plus recherché en tasséographie amoureuse. Un cœur bien formé annonce un amour sincère ou une déclaration proche ; un cœur fragmenté peut indiquer une période de doute à traverser.</p>
             </div>
             <div className="bg-white rounded-lg p-5 border-l-4 border-amber-500">
-              <h3 className="font-bold text-lg mb-2 text-amber-700">💍 L&apos;Anneau</h3>
+              <h3 className="font-bold text-lg mb-2 text-amber-700">L&apos;Anneau</h3>
               <p className="text-gray-700 text-sm">Évoque un engagement ou des fiançailles proches. Sa netteté et sa proximité avec le bord de la tasse renforceraient l&apos;imminence de l&apos;événement annoncé.</p>
             </div>
             <div className="bg-white rounded-lg p-5 border-l-4 border-sky-500">
-              <h3 className="font-bold text-lg mb-2 text-sky-700">🕊️ L&apos;Oiseau</h3>
+              <h3 className="font-bold text-lg mb-2 text-sky-700">L&apos;Oiseau</h3>
               <p className="text-gray-700 text-sm">Symbolise de bonnes nouvelles sentimentales ou l&apos;arrivée d&apos;un message important, une déclaration attendue, des nouvelles d&apos;une personne qui compte.</p>
             </div>
             <div className="bg-white rounded-lg p-5 border-l-4 border-yellow-500">
-              <h3 className="font-bold text-lg mb-2 text-yellow-700">⭐ L&apos;Étoile</h3>
+              <h3 className="font-bold text-lg mb-2 text-yellow-700">L&apos;Étoile</h3>
               <p className="text-gray-700 text-sm">Indique généralement la chance et l&apos;épanouissement en amour, particulièrement favorable lorsqu&apos;elle apparaît nette et bien dessinée près du cœur de la tasse.</p>
             </div>
             <div className="bg-white rounded-lg p-5 border-l-4 border-slate-500">
-              <h3 className="font-bold text-lg mb-2 text-slate-700">🛤️ Le Chemin ou la Ligne</h3>
+              <h3 className="font-bold text-lg mb-2 text-slate-700">Le Chemin ou la Ligne</h3>
               <p className="text-gray-700 text-sm">Une ligne droite et continue évoque une relation qui avance clairement ; une ligne brisée ou sinueuse suggère des obstacles ou des hésitations à surmonter ensemble.</p>
             </div>
             <div className="bg-white rounded-lg p-5 border-l-4 border-gray-500">
-              <h3 className="font-bold text-lg mb-2 text-gray-700">☁️ Le Nuage</h3>
+              <h3 className="font-bold text-lg mb-2 text-gray-700">Le Nuage</h3>
               <p className="text-gray-700 text-sm">Signale une période de confusion ou de doute sentimental. Un nuage isolé invite à la patience avant de tirer des conclusions hâtives sur une situation ambiguë.</p>
             </div>
           </div>
@@ -132,7 +132,7 @@ export default function MarcDeCafeAmourPage() {
 
         {/* Section 3: Guide pratique */}
         <section id="pratique" className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">🔍 Comment Faire une Lecture de Marc de Café Soi-Même</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Comment Faire une Lecture de Marc de Café Soi-Même</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Quatre étapes simples permettent de s&apos;initier à la tasséographie amoureuse, même si une lecture fiable demande de l&apos;entraînement et un œil exercé.</p>
           <div className="space-y-4">
             <div className="bg-amber-50 rounded-lg p-4 border-l-4 border-amber-400">
@@ -159,11 +159,11 @@ export default function MarcDeCafeAmourPage() {
 
         {/* Section 4: Comparaison */}
         <section className="bg-gradient-to-br from-orange-50 to-stone-50 rounded-xl p-8 mb-8 border-2 border-orange-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">⚖️ Marc de Café, Cartomancie ou Tarot : Quelle Différence ?</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Marc de Café, Cartomancie ou Tarot : Quelle Différence ?</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le marc de café offre une lecture spontanée et symbolique à partir de formes naturelles, là où la cartomancie et le tarot s&apos;appuient sur des cartes aux significations codifiées.</p>
           <div className="grid md:grid-cols-3 gap-5">
             <div className="bg-white rounded-lg p-5 border-2 border-amber-300">
-              <h3 className="font-bold text-lg mb-3 text-amber-800">☕ Marc de Café</h3>
+              <h3 className="font-bold text-lg mb-3 text-amber-800">Marc de Café</h3>
               <div className="space-y-2 text-gray-700 text-sm">
                 <p>&bull; Formes naturelles et spontanées</p>
                 <p>&bull; Pratique conviviale et accessible</p>
@@ -171,7 +171,7 @@ export default function MarcDeCafeAmourPage() {
               </div>
             </div>
             <div className="bg-white rounded-lg p-5 border-2 border-teal-300">
-              <h3 className="font-bold text-lg mb-3 text-teal-700">🎴 Cartomancie</h3>
+              <h3 className="font-bold text-lg mb-3 text-teal-700">Cartomancie</h3>
               <div className="space-y-2 text-gray-700 text-sm">
                 <p>&bull; Symboles codifiés et combinatoires</p>
                 <p>&bull; Réponses concrètes et précises</p>
@@ -181,7 +181,7 @@ export default function MarcDeCafeAmourPage() {
               </p>
             </div>
             <div className="bg-white rounded-lg p-5 border-2 border-indigo-300">
-              <h3 className="font-bold text-lg mb-3 text-indigo-700">🃏 Tarot</h3>
+              <h3 className="font-bold text-lg mb-3 text-indigo-700">Tarot</h3>
               <div className="space-y-2 text-gray-700 text-sm">
                 <p>&bull; Symbolique riche et narrative</p>
                 <p>&bull; Idéal pour une analyse en profondeur</p>
@@ -198,7 +198,7 @@ export default function MarcDeCafeAmourPage() {
 
         {/* Section 5: Consultation */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">🧙 Consulter un Praticien Spécialisé en Marc de Café</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Consulter un Praticien Spécialisé en Marc de Café</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Un praticien expérimenté combine la connaissance des symboles traditionnels à une intuition affinée pour une lecture nuancée de votre situation amoureuse.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Si la tasséographie se prête bien à une pratique entre proches, une consultation avec un <strong>voyant</strong> spécialisé apporte une profondeur supplémentaire, en particulier lorsque votre question sentimentale est complexe ou chargée émotionnellement.

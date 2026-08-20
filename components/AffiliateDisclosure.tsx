@@ -4,7 +4,7 @@
 // standard, en bannière (haut de page) ou en ligne (pied de page / fin
 // d'article). Équivalent EN : components/en/AffiliateDisclosure.tsx.
 //
-// ⚠️ Formulation à faire valider par le client / un conseil juridique avant
+// Formulation à faire valider par le client / un conseil juridique avant
 // mise en production.
 
 interface AffiliateDisclosureProps {

@@ -64,7 +64,7 @@ export default function ConsulterVoyantGrid() {
   if (loading) {
     return (
       <div className="text-center py-16">
-        <div className="text-5xl mb-4">🔮</div>
+        <div className="text-5xl mb-4"></div>
         <p className="text-lg text-gray-600">Recherche des voyants disponibles...</p>
       </div>
     );
@@ -99,7 +99,7 @@ export default function ConsulterVoyantGrid() {
         {/* Free badge */}
         {isFree && (
           <div className="bg-gradient-to-r from-green-500 to-emerald-500 text-white text-center py-2 text-sm font-bold">
-            🎁 15 MINUTES GRATUITES, Offre Découverte
+            15 MINUTES GRATUITES, Offre Découverte
           </div>
         )}
 
@@ -160,19 +160,19 @@ export default function ConsulterVoyantGrid() {
           <div className="space-y-2 mb-4 text-sm">
             {voyant.TEL === '1' && (
               <div className="flex justify-between items-center">
-                <span className="text-gray-600">📞 Téléphone</span>
+                <span className="text-gray-600">Téléphone</span>
                 <span className="font-semibold text-purple-700">{isFree ? <><s className="text-gray-400">{formatPrice(voyant.T_TEL)}/min</s> <span className="text-green-600 ml-1">GRATUIT 15min</span></> : `${formatPrice(voyant.T_TEL)}/min`}</span>
               </div>
             )}
             {voyant.CHAT === '1' && (
               <div className="flex justify-between items-center">
-                <span className="text-gray-600">💬 Chat</span>
+                <span className="text-gray-600">Chat</span>
                 <span className="font-semibold text-purple-700">{isFree ? <><s className="text-gray-400">{formatPrice(voyant.T_CHAT)}/min</s> <span className="text-green-600 ml-1">GRATUIT 15min</span></> : `${formatPrice(voyant.T_CHAT)}/min`}</span>
               </div>
             )}
             {voyant.MAIL === '1' && (
               <div className="flex justify-between items-center">
-                <span className="text-gray-600">📧 Email</span>
+                <span className="text-gray-600">Email</span>
                 <span className="font-semibold text-purple-700">{formatPrice(voyant.MAIL_S)}</span>
               </div>
             )}
@@ -187,7 +187,7 @@ export default function ConsulterVoyantGrid() {
 
           {/* CTA */}
           <div className={`text-white text-center font-semibold py-3 rounded-lg transition-all ${isFree ? 'bg-gradient-to-r from-green-600 to-emerald-600 group-hover:from-green-700 group-hover:to-emerald-700' : 'bg-gradient-to-r from-purple-600 to-indigo-600 group-hover:from-purple-700 group-hover:to-indigo-700'}`}>
-            {isFree ? '🎁 Essayer Gratuitement' : (isOnline ? 'Consulter maintenant' : 'Voir le profil')}
+            {isFree ? 'Essayer Gratuitement' : (isOnline ? 'Consulter maintenant' : 'Voir le profil')}
           </div>
         </div>
       </a>
@@ -200,7 +200,7 @@ export default function ConsulterVoyantGrid() {
       {voyants.length > 0 && (
         <div className="mb-10">
           <div className="text-center mb-6">
-            <h2 className="text-2xl font-bold text-gray-900 mb-2">🔮 Nos Voyants Experts</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-2">Nos Voyants Experts</h2>
             <p className="text-gray-600">Les mieux notés par nos consultants, disponibles maintenant</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -213,7 +213,7 @@ export default function ConsulterVoyantGrid() {
       {freeVoyants.length > 0 && (
         <div>
           <div className="text-center mb-6">
-            <h2 className="text-2xl font-bold text-gray-900 mb-2">🎁 Voyants avec 15 Minutes Gratuites</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-2">Voyants avec 15 Minutes Gratuites</h2>
             <p className="text-gray-600">Première consultation offerte, testez sans engagement</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">

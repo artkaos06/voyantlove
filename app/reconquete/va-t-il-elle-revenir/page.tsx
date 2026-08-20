@@ -16,7 +16,7 @@ const config: ContentPageConfig = {
     { name: 'Va-t-il/elle Revenir', url: 'https://www.voyantlove.fr/reconquete/va-t-il-elle-revenir/' },
   ],
   header: {
-    emoji: '❓',
+    emoji: '',
     h1: 'Va-t-il/elle revenir ?',
     subtitle: 'La réponse honnête du tarot à votre question la plus importante',
     gradient: 'from-purple-600 via-indigo-600 to-blue-600',
@@ -28,10 +28,10 @@ const config: ContentPageConfig = {
   },
   accentText: 'text-purple-600',
   stats: [
-    { icon: '⭐', value: '4.8/5', label: '287 Avis' },
-    { icon: '↩️', value: 'Fréquent', label: 'Retours observés' },
-    { icon: '⏰', value: '3-6 mois', label: 'Délai moyen' },
-    { icon: '🔮', value: 'Reconnue', label: 'Expertise' },
+    { icon: '', value: '4.8/5', label: '287 Avis' },
+    { icon: '', value: 'Fréquent', label: 'Retours observés' },
+    { icon: '', value: '3-6 mois', label: 'Délai moyen' },
+    { icon: '', value: 'Reconnue', label: 'Expertise' },
   ],
   eeat: { colorScheme: 'blue', method: 'Tarot prédictif et astrologie' },
   cta: { topic: 'reconquete', slug: 'va-t-il-elle-revenir' },
@@ -86,7 +86,7 @@ export default function VaTilRevenirPage() {
         <VoyantRecommendations topic="reconquete" limit={3} showOnlineFirst={true} source="va-t-il-elle-revenir-cards-top" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">🔮 Ce que le Tarot Révèle sur le Retour</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Ce que le Tarot Révèle sur le Retour</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le tarot analyse le retour de votre ex en quatre positions : ses sentiments actuels, ses pensées et regrets, les obstacles au retour, et la probabilité avec le timing prévu.</p>
           <p className="text-gray-700 leading-relaxed mb-6">Le tirage du retour de l'ex analyse 4 positions clés pour vous donner une réponse complète et honnête.</p>
           <div className="grid md:grid-cols-2 gap-6">
@@ -108,29 +108,29 @@ export default function VaTilRevenirPage() {
             </div>
           </div>
           <div className="mt-6 bg-gray-50 p-6 rounded-lg">
-            <p className="text-gray-700"><strong>🃏 Cartes clés :</strong> <span className="text-purple-600">Le Retour, Deux de Coupe, L'Amoureux</span> = retour probable • <span className="text-red-600">Tour, Dix d'Épée, Huit de Coupe</span> = fin définitive • <span className="text-yellow-600">Pendu, Roue</span> = attente nécessaire</p>
+            <p className="text-gray-700"><strong>Cartes clés :</strong> <span className="text-purple-600">Le Retour, Deux de Coupe, L'Amoureux</span> = retour probable • <span className="text-red-600">Tour, Dix d'Épée, Huit de Coupe</span> = fin définitive • <span className="text-yellow-600">Pendu, Roue</span> = attente nécessaire</p>
           </div>
         </section>
 
         <section className="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-xl p-8 mb-8 border-2 border-indigo-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">📅 Timing du Retour selon l'Astrologie</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Timing du Retour selon l'Astrologie</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">L'astrologie identifie quatre fenêtres propices au retour d'un ex : Vénus rétrograde, les éclipses lunaires, les Pleines Lunes en signes d'eau et certains transits planétaires ciblés.</p>
           <p className="text-gray-700 leading-relaxed mb-6">Si le tarot indique un retour possible, l'astrologie affine le timing pour savoir quand cela pourrait se produire.</p>
           <div className="space-y-4">
             <div className="bg-white rounded-lg p-4 border-l-4 border-pink-500">
-              <h3 className="font-bold mb-2 text-pink-700">💕 Vénus Rétrograde</h3>
+              <h3 className="font-bold mb-2 text-pink-700">Vénus Rétrograde</h3>
               <p className="text-gray-700 text-sm">Période puissante pour les retours d'ex (tous les 18 mois). Les anciens amours resurging naturellement pendant ces 40 jours.</p>
             </div>
             <div className="bg-white rounded-lg p-4 border-l-4 border-purple-500">
-              <h3 className="font-bold mb-2 text-purple-700">🌕 Éclipses</h3>
+              <h3 className="font-bold mb-2 text-purple-700">Éclipses</h3>
               <p className="text-gray-700 text-sm">Provoquent des retournements de situation spectaculaires. Les ex peuvent revenir lors d'éclipses lunaires sur votre axe relationnel.</p>
             </div>
             <div className="bg-white rounded-lg p-4 border-l-4 border-blue-500">
-              <h3 className="font-bold mb-2 text-blue-700">🌙 Pleine Lune</h3>
+              <h3 className="font-bold mb-2 text-blue-700">Pleine Lune</h3>
               <p className="text-gray-700 text-sm">Favorise les retours émotionnels soudains et les prises de conscience. Les ex ressentent un manque intense lors des pleines lunes.</p>
             </div>
             <div className="bg-white rounded-lg p-4 border-l-4 border-indigo-500">
-              <h3 className="font-bold mb-2 text-indigo-700">⏰ Timeline Tarot</h3>
+              <h3 className="font-bold mb-2 text-indigo-700">Timeline Tarot</h3>
               <p className="text-gray-700 text-sm">As = 1-3 mois • Cavaliers = 3-6 mois • Reines/Rois = 6-12 mois • Arcanes Majeurs = plus d'un an ou jamais</p>
             </div>
           </div>
@@ -139,7 +139,7 @@ export default function VaTilRevenirPage() {
         <VoyantQuickCTA topic="reconquete" source="va-t-il-elle-revenir-banner-mid" />
 
         <section id="signes" className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">💡 Les Signes Concrets qu'il/elle Va Revenir</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Les Signes Concrets qu'il/elle Va Revenir</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Les signes qu'un ex va revenir incluent la reprise de contact, les questions indirectes via des amis, les réactions sur les réseaux sociaux, les croisements répétés et le refus de rendre vos affaires.</p>
           <p className="text-gray-700 leading-relaxed mb-6">Observez ces indices dans votre vie quotidienne - ils confirment ce que le tarot a révélé.</p>
           <div className="space-y-3">
@@ -169,12 +169,12 @@ export default function VaTilRevenirPage() {
             </div>
           </div>
           <div className="mt-6 bg-purple-50 border-l-4 border-purple-500 p-6 rounded">
-            <p className="text-gray-700"><strong>🔮 Confirmation tarot :</strong> Si ces signes s'accumulent ET que le tarot confirme, le retour est très probable. Si les signes sont là mais le tarot dit non, c'est de la simple curiosité sans intention réelle.</p>
+            <p className="text-gray-700"><strong>Confirmation tarot :</strong> Si ces signes s'accumulent ET que le tarot confirme, le retour est très probable. Si les signes sont là mais le tarot dit non, c'est de la simple curiosité sans intention réelle.</p>
           </div>
         </section>
 
         <section className="bg-red-50 border-2 border-red-200 rounded-xl p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">❌ Les Signes qu'il/elle Ne Reviendra PAS</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Les Signes qu'il/elle Ne Reviendra PAS</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Les signes d'un non-retour définitif sont : une nouvelle relation officielle, un blocage total sur tous les canaux, un silence absolu prolongé, un discours ferme et la récupération complète de vos affaires.</p>
           <p className="text-gray-700 leading-relaxed mb-6">Il est aussi important de reconnaître les signaux de fin définitive pour ne pas s'accrocher à un faux espoir.</p>
           <div className="space-y-3">
@@ -204,16 +204,16 @@ export default function VaTilRevenirPage() {
             </div>
           </div>
           <div className="mt-6 bg-white p-6 rounded-lg border-l-4 border-red-500">
-            <p className="text-gray-700"><strong>⚠️ Tarot honnête :</strong> Si le tarot montre La Tour inversée, Le Dix d'Épée, ou Le Huit de Coupe, le voyant doit vous dire la vérité : c'est terminé. S'accrocher prolonge votre souffrance inutilement.</p>
+            <p className="text-gray-700"><strong>Tarot honnête :</strong> Si le tarot montre La Tour inversée, Le Dix d'Épée, ou Le Huit de Coupe, le voyant doit vous dire la vérité : c'est terminé. S'accrocher prolonge votre souffrance inutilement.</p>
           </div>
         </section>
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">🤔 Que Faire en Attendant ?</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Que Faire en Attendant ?</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">En attendant la réponse du tarot, deux stratégies s'offrent à vous : si le retour est probable, maintenez le silence radio et travaillez sur vous ; si c'est terminé, entamez le deuil et ouvrez-vous à l'avenir.</p>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-green-50 border-2 border-green-300 rounded-lg p-6">
-              <h3 className="font-bold text-lg mb-3 text-green-700">✅ Si le Tarot Dit OUI (retour probable)</h3>
+              <h3 className="font-bold text-lg mb-3 text-green-700">Si le Tarot Dit OUI (retour probable)</h3>
               <ul className="space-y-2 text-gray-700">
                 <li>• <strong>Silence radio</strong> : Ne harcelez pas, laissez l'espace nécessaire</li>
                 <li>• <strong>Travaillez sur vous</strong> : Devenez la meilleure version de vous-même</li>
@@ -223,7 +223,7 @@ export default function VaTilRevenirPage() {
               </ul>
             </div>
             <div className="bg-red-50 border-2 border-red-300 rounded-lg p-6">
-              <h3 className="font-bold text-lg mb-3 text-red-700">❌ Si le Tarot Dit NON (fin définitive)</h3>
+              <h3 className="font-bold text-lg mb-3 text-red-700">Si le Tarot Dit NON (fin définitive)</h3>
               <ul className="space-y-2 text-gray-700">
                 <li>• <strong>Acceptez la vérité</strong> : Le déni prolonge la souffrance</li>
                 <li>• <strong>Entamez le deuil</strong> : Commencez votre processus de guérison</li>

@@ -54,7 +54,7 @@ export default function ContactPage() {
             <div className="space-y-6">
               <div className="flex items-start gap-4">
                 <div className="flex-shrink-0 w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center">
-                  <span className="text-2xl">📧</span>
+                  <span className="text-2xl"></span>
                 </div>
                 <div>
                   <p className="font-semibold text-gray-900 mb-1">Email</p>
@@ -67,7 +67,7 @@ export default function ContactPage() {
 
               <div className="flex items-start gap-4">
                 <div className="flex-shrink-0 w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center">
-                  <span className="text-2xl">📞</span>
+                  <span className="text-2xl"></span>
                 </div>
                 <div>
                   <p className="font-semibold text-gray-900 mb-1">Téléphone</p>
@@ -81,7 +81,7 @@ export default function ContactPage() {
 
             <div className="mt-8 p-4 bg-purple-50 rounded-lg">
               <p className="text-sm text-purple-900">
-                <strong>🔒 Confidentialité :</strong> Toutes vos communications sont strictement confidentielles et protégées conformément au RGPD.
+                <strong>Confidentialité :</strong> Toutes vos communications sont strictement confidentielles et protégées conformément au RGPD.
               </p>
             </div>
           </div>
@@ -150,19 +150,19 @@ export default function ContactPage() {
           </p>
           <div className="grid md:grid-cols-2 gap-4">
             <Link href="/reconquete/reconquerir-son-ex/" className="bg-white p-4 rounded-lg hover:shadow-md transition">
-              <p className="font-semibold text-purple-600 mb-1">💜 Reconquérir son Ex</p>
+              <p className="font-semibold text-purple-600 mb-1">Reconquérir son Ex</p>
               <p className="text-sm text-gray-600">Timing, étapes, signes de retour</p>
             </Link>
             <Link href="/sentiments/maime-t-il-elle/" className="bg-white p-4 rounded-lg hover:shadow-md transition">
-              <p className="font-semibold text-red-600 mb-1">💖 M'aime-t-il/elle ?</p>
+              <p className="font-semibold text-red-600 mb-1">M'aime-t-il/elle ?</p>
               <p className="text-sm text-gray-600">Décrypter les vrais sentiments</p>
             </Link>
             <Link href="/rupture/oublier-son-ex/" className="bg-white p-4 rounded-lg hover:shadow-md transition">
-              <p className="font-semibold text-gray-700 mb-1">💔 Oublier son Ex</p>
+              <p className="font-semibold text-gray-700 mb-1">Oublier son Ex</p>
               <p className="text-sm text-gray-600">Surmonter le chagrin d'amour</p>
             </Link>
             <Link href="/nouvelle-rencontre/" className="bg-white p-4 rounded-lg hover:shadow-md transition">
-              <p className="font-semibold text-cyan-600 mb-1">✨ Nouvelle Rencontre</p>
+              <p className="font-semibold text-cyan-600 mb-1">Nouvelle Rencontre</p>
               <p className="text-sm text-gray-600">Trouver l'amour, timing idéal</p>
             </Link>
           </div>
@@ -170,7 +170,7 @@ export default function ContactPage() {
 
         {/* CTA */}
         <div className="bg-white rounded-xl shadow-md p-8 text-center">
-          <div className="text-4xl mb-4">🔮</div>
+          <div className="text-4xl mb-4"></div>
           <h2 className="text-2xl font-bold mb-4 text-gray-900">Prêt pour une Consultation ?</h2>
           <p className="text-gray-700 mb-6 max-w-2xl mx-auto">
             Obtenez une guidance personnalisée sur votre situation amoureuse avec nos voyants spécialisés.

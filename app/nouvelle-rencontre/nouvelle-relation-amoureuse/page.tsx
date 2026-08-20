@@ -16,7 +16,7 @@ const config: ContentPageConfig = {
     { name: 'Nouvelle Relation Amoureuse', url: 'https://www.voyantlove.fr/nouvelle-rencontre/nouvelle-relation-amoureuse/' },
   ],
   header: {
-    emoji: '💕',
+    emoji: '',
     h1: 'Nouvelle relation amoureuse',
     subtitle: 'Réussir les premiers mois et construire des fondations solides',
     gradient: 'from-rose-500 via-pink-500 to-purple-500',
@@ -28,10 +28,10 @@ const config: ContentPageConfig = {
   },
   accentText: 'text-rose-600',
   stats: [
-    { icon: '💖', value: '3-6 Mois', label: 'Phase cruciale' },
-    { icon: '📊', value: 'Forte', label: 'Réussite' },
-    { icon: '⚠️', value: '8 Erreurs', label: 'À éviter' },
-    { icon: '✨', value: '4,100+', label: 'Couples guidés' },
+    { icon: '', value: '3-6 Mois', label: 'Phase cruciale' },
+    { icon: '', value: 'Forte', label: 'Réussite' },
+    { icon: '', value: '8 Erreurs', label: 'À éviter' },
+    { icon: '', value: '4,100+', label: 'Couples guidés' },
   ],
   eeat: { colorScheme: 'purple', method: 'Guidance relationnelle et tarot de couple' },
   cta: { topic: 'nouvelle-rencontre', slug: 'nouvelle-relation-amoureuse' },
@@ -89,7 +89,7 @@ export default function NouvelleRelationAmourseusePage() {
       <VoyantRecommendations topic="nouvelle-rencontre" limit={3} showOnlineFirst={true} source="nouvelle-relation-amoureuse-cards-top" />
 
       <section id="etapes" className="bg-white rounded-xl shadow-md p-8 mb-8">
-        <h2 className="text-3xl font-bold mb-6 text-rose-600">📅 Les 6 Étapes d'une Nouvelle Relation Amoureuse</h2>
+        <h2 className="text-3xl font-bold mb-6 text-rose-600">Les 6 Étapes d'une Nouvelle Relation Amoureuse</h2>
         <p className="text-lg font-semibold text-gray-800 mb-4">Une nouvelle relation traverse six phases naturelles : attraction initiale, decouverte, construction de l'intimite, premier plateau, decision d'engagement et transition vers le couple etabli.</p>
         <p className="text-gray-700 mb-6">
           Toute <strong>nouvelle relation</strong> traverse des phases naturelles et prévisibles. Comprendre ces étapes vous aide à naviguer sereinement et à reconnaître si votre relation évolue sainement.
@@ -174,7 +174,7 @@ export default function NouvelleRelationAmourseusePage() {
       </section>
 
       <section className="bg-gradient-to-br from-rose-50 to-pink-50 rounded-xl p-8 mb-8 border-2 border-rose-200">
-        <h2 className="text-3xl font-bold mb-6 text-gray-900">🏗️ Construire des Fondations Solides : Les 7 Piliers</h2>
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Construire des Fondations Solides : Les 7 Piliers</h2>
         <p className="text-lg font-semibold text-gray-800 mb-4">Les sept piliers d'une relation durable sont : communication honnete, respect des limites, gestion saine des conflits, alignement des valeurs, intimite equilibree, confiance et investissement reciproque.</p>
         <p className="text-gray-700 mb-6">
           Une <strong>relation durable</strong> ne se construit pas sur la passion seule, mais sur des fondations conscientes et solides établies dès les premiers mois.
@@ -233,7 +233,7 @@ export default function NouvelleRelationAmourseusePage() {
       </section>
 
       <section id="erreurs" className="bg-white rounded-xl shadow-md p-8 mb-8">
-        <h2 className="text-3xl font-bold mb-6 text-rose-600">⚠️ Les 8 Erreurs Fatales des Premiers Mois</h2>
+        <h2 className="text-3xl font-bold mb-6 text-rose-600">Les 8 Erreurs Fatales des Premiers Mois</h2>
         <p className="text-lg font-semibold text-gray-800 mb-4">Les erreurs les plus frequentes sont aller trop vite, ignorer les red flags, se perdre dans la relation, eviter les conversations difficiles et comparer constamment avec un ex.</p>
         <p className="text-gray-700 mb-6">
           Certaines erreurs classiques peuvent compromettre une <strong>nouvelle relation prometteuse</strong>. Voici les pièges les plus fréquents à éviter absolument.
@@ -341,7 +341,7 @@ export default function NouvelleRelationAmourseusePage() {
       <VoyantQuickCTA topic="nouvelle-rencontre" source="nouvelle-relation-amoureuse-banner-mid" />
 
       <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-        <h2 className="text-3xl font-bold mb-6 text-rose-600">✅ Les 10 Signes d'une Nouvelle Relation Saine et Prometteuse</h2>
+        <h2 className="text-3xl font-bold mb-6 text-rose-600">Les 10 Signes d'une Nouvelle Relation Saine et Prometteuse</h2>
         <p className="text-lg font-semibold text-gray-800 mb-4">Une relation saine se reconnait par une communication facile, la coherence entre paroles et actes, le respect mutuel, l'equilibre donner-recevoir et un sentiment de securite emotionnelle.</p>
         <p className="text-gray-700 mb-6">
           Comment savoir si votre <strong>nouvelle relation</strong> a un potentiel de durabilité ? Voici les indicateurs fiables d'une relation partie sur de bonnes bases.
@@ -421,7 +421,7 @@ export default function NouvelleRelationAmourseusePage() {
 
         <div className="bg-blue-50 border-2 border-blue-300 rounded-lg p-6 mt-6">
           <h4 className="font-bold text-blue-800 mb-2 flex items-center gap-2">
-            <span>🔮</span> Confirmation Tarot
+            <span></span> Confirmation Tarot
           </h4>
           <p className="text-gray-700">
             Le <strong>tarot de couple</strong> peut confirmer si votre nouvelle relation a un potentiel de durabilité. Cartes positives : Deux de Coupe (partenariat harmonieux), Dix de Coupe (accomplissement), Les Amoureux (choix conscient), L'Étoile (espoir et guidance). Si 3+ signes positifs ci-dessus PLUS cartes favorables au tarot = relation très prometteuse.
@@ -430,7 +430,7 @@ export default function NouvelleRelationAmourseusePage() {
       </section>
 
       <section className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-8 mb-8 border-2 border-purple-200">
-        <h2 className="text-3xl font-bold mb-6 text-gray-900">🗓️ Timeline Pratique : Que Faire et Quand ?</h2>
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Timeline Pratique : Que Faire et Quand ?</h2>
         <p className="text-lg font-semibold text-gray-800 mb-4">Le premier mois est dedie a la decouverte, les mois 2-3 a la definition de la relation, les mois 4-6 au premier « je t'aime » et les mois 7-12 a la presentation a la famille et la decision d'engagement.</p>
         <p className="text-gray-700 mb-6">
           Un guide pratique des <strong>milestones naturels</strong> d'une nouvelle relation saine. Ces timings ne sont pas rigides mais représentent des moyennes statistiques.
@@ -483,7 +483,7 @@ export default function NouvelleRelationAmourseusePage() {
         </div>
 
         <div className="bg-yellow-50 border-l-4 border-yellow-500 p-5 rounded-lg mt-6">
-          <h4 className="font-bold text-yellow-800 mb-2">⚠️ Note Importante</h4>
+          <h4 className="font-bold text-yellow-800 mb-2">Note Importante</h4>
           <p className="text-gray-700">
             Ces timelines sont des <strong>moyennes</strong>, pas des règles absolues. Certains couples vont plus vite, d'autres plus lentement -- notamment ceux qui vivent l'<Link href="/nouvelle-rencontre/amour-apres-40-ans/" className="text-rose-600 hover:text-rose-800 underline font-medium">amour après 40 ans</Link>, où la maturité émotionnelle accélère souvent la connexion. L'important est que VOUS vous sentiez confortable avec le rythme et que les deux partenaires soient alignés. Méfiez-vous cependant des extrêmes : trop rapide (risque de fusion) ou trop lent après 6+ mois (peur d'engagement ?).
           </p>

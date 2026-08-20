@@ -57,7 +57,7 @@ export default function VoyantCardCompact({ voyant, source = 'rail', priority = 
   const cheapest = rates.length ? Math.min(...rates) : null;
 
   // Ratings in this feed are all 5 or 5.5 on an undocumented scale, so they
-  // separate nobody and "5,5 ⭐" next to a review count reads as 5.5 out of 5.
+  // separate nobody and "5,5 " next to a review count reads as 5.5 out of 5.
   // The review count is the honest, genuinely discriminating number here
   // (120 vs 2 697), so that is what the card shows.
   const reviewCount = parseInt(voyant.EVAL, 10);

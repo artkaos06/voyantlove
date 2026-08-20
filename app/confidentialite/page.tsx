@@ -117,7 +117,7 @@ export default function ConfidentialitePage() {
               <li><strong>Autorités légales :</strong> Sur demande légale uniquement (réquisition judiciaire)</li>
             </ul>
             <p className="text-gray-700 mt-4">
-              <strong>⚠️ Confidentialité absolue :</strong> Aucune donnée relative aux consultations n'est partagée avec des tiers à des fins commerciales.
+              <strong>Confidentialité absolue :</strong> Aucune donnée relative aux consultations n'est partagée avec des tiers à des fins commerciales.
             </p>
           </section>
 
@@ -241,7 +241,7 @@ export default function ConfidentialitePage() {
 
           <div className="bg-purple-50 border-l-4 border-purple-500 p-4 mt-8">
             <p className="text-sm text-purple-900">
-              <strong>🔒 Engagement :</strong> VoyantLove.fr s'engage à traiter vos données personnelles avec le plus grand soin et dans
+              <strong>Engagement :</strong> VoyantLove.fr s'engage à traiter vos données personnelles avec le plus grand soin et dans
               le respect de la réglementation en vigueur. La confidentialité de vos consultations de voyance est notre priorité absolue.
             </p>
           </div>

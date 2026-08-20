@@ -149,7 +149,7 @@ export default async function DreamPage({ params }: Props) {
         </section>
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">❓ Questions fréquentes sur ce rêve</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">Questions fréquentes sur ce rêve</h2>
           <div className="space-y-6">
             {d.faq.map((f, i) => (
               <div key={i} className={i < d.faq.length - 1 ? 'border-b border-gray-200 pb-6' : ''}>
@@ -161,7 +161,7 @@ export default async function DreamPage({ params }: Props) {
         </section>
 
         <div className="bg-gray-100 rounded-xl p-6 mb-8">
-          <h2 className="font-bold text-lg mb-4 text-gray-900">🌙 Autres rêves amoureux</h2>
+          <h2 className="font-bold text-lg mb-4 text-gray-900">Autres rêves amoureux</h2>
           <div className="space-y-2">
             {siblings.map((x) => (
               <Link key={x.slug} href={`/reves-amour/${x.slug}/`} className="block text-indigo-600 hover:text-indigo-800 font-medium">
@@ -169,7 +169,7 @@ export default async function DreamPage({ params }: Props) {
               </Link>
             ))}
             <Link href="/rupture/rever-de-son-ex/" className="block text-indigo-600 hover:text-indigo-800 font-medium">
-              &rarr; 🌙 Rêver de son ex : signification complète
+              &rarr; Rêver de son ex : signification complète
             </Link>
           </div>
         </div>

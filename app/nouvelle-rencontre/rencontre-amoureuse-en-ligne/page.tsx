@@ -16,7 +16,7 @@ const config: ContentPageConfig = {
     { name: 'Rencontre en Ligne', url: 'https://www.voyantlove.fr/nouvelle-rencontre/rencontre-amoureuse-en-ligne/' },
   ],
   header: {
-    emoji: '💙',
+    emoji: '',
     h1: 'Rencontre amoureuse en ligne : guidance voyance',
     subtitle: 'Trouvez l\'amour en ligne guidé(e) par la voyance et le tarot',
     gradient: 'from-cyan-500 via-cyan-600 to-blue-600',
@@ -27,10 +27,10 @@ const config: ContentPageConfig = {
   },
   accentText: 'text-cyan-600',
   stats: [
-    { icon: '⭐', value: '4.7/5', label: '264 Avis' },
-    { icon: '💑', value: '1 sur 3', label: 'Couples en ligne' },
-    { icon: '📱', value: '12M+', label: 'Français inscrits' },
-    { icon: '🔮', value: '15 ans', label: 'Expérience' },
+    { icon: '', value: '4.7/5', label: '264 Avis' },
+    { icon: '', value: '1 sur 3', label: 'Couples en ligne' },
+    { icon: '', value: '12M+', label: 'Français inscrits' },
+    { icon: '', value: '15 ans', label: 'Expérience' },
   ],
   eeat: { colorScheme: 'cyan', method: 'Guidance voyance pour les rencontres amoureuses en ligne' },
   cta: { topic: 'nouvelle-rencontre', slug: 'rencontre-en-ligne' },
@@ -82,7 +82,7 @@ export default function RencontreAmoureuseEnLignePage() {
       <VoyantRecommendations topic="nouvelle-rencontre" limit={3} showOnlineFirst={true} source="rencontre-amoureuse-en-ligne-cards-top" />
 
       <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-        <h2 className="text-3xl font-bold text-gray-900 mb-6">🔮 Ce que le Tarot Révèle sur les Rencontres en Ligne</h2>
+        <h2 className="text-3xl font-bold text-gray-900 mb-6">Ce que le Tarot Révèle sur les Rencontres en Ligne</h2>
         <p className="text-lg font-semibold text-gray-800 mb-4">Le tarot analyse votre énergie amoureuse actuelle, identifie les blocages qui freinent vos rencontres, et révèle les périodes favorables pour trouver l'amour en ligne selon les configurations astrologiques.</p>
         <p className="text-gray-700 leading-relaxed mb-6">
           Avant de swiper ou de rédiger votre profil, le <strong>tarot</strong> offre un diagnostic précieux de votre situation amoureuse. Il ne s'agit pas de prédire un « match » spécifique, mais de comprendre votre <strong>énergie amoureuse</strong> et les dynamiques inconscientes qui influencent vos <strong>rencontres</strong>.
@@ -104,7 +104,7 @@ export default function RencontreAmoureuseEnLignePage() {
       </section>
 
       <section className="bg-gradient-to-br from-cyan-50 to-blue-50 rounded-xl p-8 mb-8 border-2 border-cyan-200">
-        <h2 className="text-3xl font-bold text-gray-900 mb-6">📱 Optimiser son Profil avec la Guidance Voyance</h2>
+        <h2 className="text-3xl font-bold text-gray-900 mb-6">Optimiser son Profil avec la Guidance Voyance</h2>
         <p className="text-lg font-semibold text-gray-800 mb-4">La voyance vous guide pour créer un profil qui attire les bonnes personnes : choix des photos alignées avec votre énergie, rédaction d'une description authentique, et sélection de la bonne application selon votre profil astrologique.</p>
         <div className="space-y-6">
           <div className="flex items-start gap-4">
@@ -141,7 +141,7 @@ export default function RencontreAmoureuseEnLignePage() {
       <VoyantQuickCTA topic="nouvelle-rencontre" source="rencontre-amoureuse-en-ligne-banner-mid" />
 
       <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-        <h2 className="text-3xl font-bold text-gray-900 mb-6">⚠️ Les Pièges des Rencontres en Ligne</h2>
+        <h2 className="text-3xl font-bold text-gray-900 mb-6">Les Pièges des Rencontres en Ligne</h2>
         <p className="text-lg font-semibold text-gray-800 mb-4">La voyance met en garde contre cinq pièges fréquents des rencontres en ligne : le ghosting, le catfishing, l'idéalisation, l'addiction au swipe, et les arnaques sentimentales.</p>
         <p className="text-gray-700 leading-relaxed mb-6">
           Le monde des <strong>rencontres en ligne</strong> recèle des pièges que la <strong>voyance</strong> aide à déjouer. Le <strong>tarot</strong> est un outil de discernement puissant quand les apparences numériques brouillent le jugement.
@@ -171,7 +171,7 @@ export default function RencontreAmoureuseEnLignePage() {
       </section>
 
       <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-        <h2 className="text-3xl font-bold text-gray-900 mb-6">✨ Du Premier Message au Premier Rendez-vous</h2>
+        <h2 className="text-3xl font-bold text-gray-900 mb-6">Du Premier Message au Premier Rendez-vous</h2>
         <p className="text-lg font-semibold text-gray-800 mb-4">La voyance guide chaque étape de la rencontre en ligne : le premier message qui marque, la conversation qui crée une vraie connexion, et le premier rendez-vous où l'énergie en personne confirme ou infirme le potentiel.</p>
         <p className="text-gray-700 leading-relaxed mb-6">
           Le passage du virtuel au réel est un moment charnière que la <strong>voyance</strong> aide à naviguer avec sagesse. Chaque étape demande une <strong>énergie</strong> différente et le <strong>tarot</strong> vous guide pour ajuster votre approche.

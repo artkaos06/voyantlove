@@ -83,7 +83,7 @@ export default async function GlossaryTermPage({ params }: Props) {
             <span className="mx-2">/</span>
             <span className="text-white/60">{CATEGORY_LABELS[t.categorie]}</span>
           </nav>
-          <h1 className="text-4xl md:text-5xl font-bold mb-3">{t.emoji} {t.terme}</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-3">{t.terme}</h1>
           <p className="text-lg opacity-90">{t.definitionCourte}</p>
         </div>
       </header>
@@ -129,7 +129,7 @@ export default async function GlossaryTermPage({ params }: Props) {
         </section>
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">❓ Questions fréquentes</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">Questions fréquentes</h2>
           <div className="space-y-6">
             {t.faq.map((f, i) => (
               <div key={i} className={i < t.faq.length - 1 ? 'border-b border-gray-200 pb-6' : ''}>
@@ -142,7 +142,7 @@ export default async function GlossaryTermPage({ params }: Props) {
 
         {t.liensSite.length > 0 && (
           <div className="bg-violet-50 rounded-xl p-6 mb-8 border border-violet-200">
-            <h2 className="font-bold text-lg mb-4 text-gray-900">🔮 Pour aller plus loin sur VoyantLove</h2>
+            <h2 className="font-bold text-lg mb-4 text-gray-900">Pour aller plus loin sur VoyantLove</h2>
             <div className="space-y-2">
               {t.liensSite.map((l) => (
                 <Link key={l.href} href={l.href} className="block text-violet-700 hover:text-violet-900 font-medium">
@@ -155,11 +155,11 @@ export default async function GlossaryTermPage({ params }: Props) {
 
         {related.length > 0 && (
           <div className="bg-gray-100 rounded-xl p-6 mb-8">
-            <h2 className="font-bold text-lg mb-4 text-gray-900">📖 Termes liés</h2>
+            <h2 className="font-bold text-lg mb-4 text-gray-900">Termes liés</h2>
             <div className="grid sm:grid-cols-2 gap-2">
               {related.map((r) => (
                 <Link key={r.slug} href={`/glossaire/${r.slug}/`} className="block text-indigo-600 hover:text-indigo-800 font-medium">
-                  &rarr; {r.emoji} {r.terme}
+                  &rarr; {r.terme}
                 </Link>
               ))}
             </div>
@@ -172,7 +172,7 @@ export default async function GlossaryTermPage({ params }: Props) {
             <div className="grid sm:grid-cols-2 gap-2">
               {siblings.map((s) => (
                 <Link key={s.slug} href={`/glossaire/${s.slug}/`} className="block text-indigo-600 hover:text-indigo-800 font-medium">
-                  &rarr; {s.emoji} {s.terme}
+                  &rarr; {s.terme}
                 </Link>
               ))}
             </div>

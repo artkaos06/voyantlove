@@ -29,10 +29,10 @@ const config: ContentPageConfig = {
   },
   accentText: 'text-purple-600',
   stats: [
-    { icon: '📊', value: 'Élevé', label: 'Potentiel retour' },
-    { icon: '⏱️', value: '2-4 mois', label: 'Délai moyen' },
-    { icon: '✅', value: 'Forte', label: 'Efficacité SR' },
-    { icon: '💔', value: '15 ans', label: 'Expérience' },
+    { icon: '', value: 'Élevé', label: 'Potentiel retour' },
+    { icon: '', value: '2-4 mois', label: 'Délai moyen' },
+    { icon: '', value: 'Forte', label: 'Efficacité SR' },
+    { icon: '', value: '15 ans', label: 'Expérience' },
   ],
   eeat: { colorScheme: 'purple', method: 'Analyse psychologique des dynamiques de reconquête' },
   cta: { topic: 'reconquete', slug: 'ex-revient-silence-radio' },
@@ -104,7 +104,7 @@ export default function ExRevientSilenceRadioPage() {
         <VoyantRecommendations topic="reconquete" limit={3} showOnlineFirst={true} source="ex-revient-silence-radio-cards-top" />
 
         <section id="delai" className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold mb-6 text-purple-600">⏱️ Il/Elle Me Recontacte Après 2 Semaines, 1 Mois, 6 Mois de Silence : Que Faire ?</h2>
+          <h2 className="text-3xl font-bold mb-6 text-purple-600">Il/Elle Me Recontacte Après 2 Semaines, 1 Mois, 6 Mois de Silence : Que Faire ?</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le retour le plus fréquent survient après 2 semaines de silence, quand le manque quotidien devient difficile à gérer. La signification change selon le délai : voici ce que révèle un retour après 1 semaine, 2 semaines, 1 mois, 2-3 mois ou 6 mois et plus.</p>
 
           <div className="space-y-5">
@@ -151,7 +151,7 @@ export default function ExRevientSilenceRadioPage() {
         </section>
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 id="signes" className="text-3xl font-bold mb-6 text-purple-600">🔍 Les 8 Signes Qu'un Ex Va Revenir Après Silence Radio</h2>
+          <h2 id="signes" className="text-3xl font-bold mb-6 text-purple-600">Les 8 Signes Qu'un Ex Va Revenir Après Silence Radio</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Les huit signes précurseurs du retour après silence radio sont : surveillance de vos réseaux sociaux, présence accidentelle répétée, questions via l'entourage, message prétexte neutre, déblocage sur les réseaux, publications nostalgiques, mentions positives du passé et jalousie visible.</p>
           <p className="text-gray-700 mb-6">
             Avant même le premier message, votre ex envoie des <strong>signaux subtils</strong> qui trahissent son intérêt retrouvé. Voici les indicateurs les plus fiables.
@@ -241,7 +241,7 @@ export default function ExRevientSilenceRadioPage() {
         </section>
 
         <section className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-8 mb-8 border-2 border-purple-200">
-          <h2 className="text-3xl font-bold mb-6 text-gray-900">🧠 Pourquoi un Ex Revient Après Silence Radio : 7 Raisons Psychologiques</h2>
+          <h2 className="text-3xl font-bold mb-6 text-gray-900">Pourquoi un Ex Revient Après Silence Radio : 7 Raisons Psychologiques</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Les sept raisons psychologiques du retour après silence radio sont : l'effet de manque, la peur de vous perdre définitivement, l'échec d'une relation rebond, votre transformation visible, la solitude, la prise de conscience mature et le besoin de valider son pouvoir de séduction.</p>
           <p className="text-gray-700 mb-6">
             Comprendre les <strong>motivations réelles</strong> de votre ex est crucial pour évaluer si ce retour mérite votre attention ou s'il s'agit d'un piège émotionnel.
@@ -323,7 +323,7 @@ export default function ExRevientSilenceRadioPage() {
         <VoyantQuickCTA topic="reconquete" source="ex-revient-silence-radio-banner-mid" />
 
         <section id="reaction" className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold mb-6 text-purple-600">💬 Comment Réagir Quand Votre Ex Revient : La Stratégie en 6 Étapes</h2>
+          <h2 className="text-3xl font-bold mb-6 text-purple-600">Comment Réagir Quand Votre Ex Revient : La Stratégie en 6 Étapes</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Quand votre ex revient après un silence radio, suivez six étapes : ne répondez pas immédiatement, restez neutre et amical, laissez votre ex mener la conversation, observez ses intentions pendant 2 à 3 semaines, exigez une conversation honnête, puis reconstruisez lentement ou refusez.</p>
           <p className="text-gray-700 mb-6">
             Votre <strong>première réaction</strong> détermine toute la suite. Voici le protocole exact pour maximiser vos chances de réconciliation saine.
@@ -396,7 +396,7 @@ export default function ExRevientSilenceRadioPage() {
         </section>
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold mb-6 text-purple-600">🎯 Deux Situations Particulières à Anticiper</h2>
+          <h2 className="text-3xl font-bold mb-6 text-purple-600">Deux Situations Particulières à Anticiper</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Que faire si votre ex propose directement un rendez-vous, et comment réagir s'il/elle vous recontacte alors que vous fréquentez déjà quelqu'un d'autre : deux scénarios fréquents qui demandent une approche spécifique.</p>
 
           <div className="space-y-6">
@@ -423,7 +423,7 @@ export default function ExRevientSilenceRadioPage() {
         </section>
 
         <section className="bg-gradient-to-br from-rose-50 to-pink-50 rounded-xl p-8 mb-8 border-2 border-rose-200">
-          <h2 className="text-3xl font-bold mb-6 text-gray-900">🚨 Red Flags : Quand Refuser le Retour de Votre Ex</h2>
+          <h2 className="text-3xl font-bold mb-6 text-gray-900">Red Flags : Quand Refuser le Retour de Votre Ex</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Refusez le retour de votre ex si : il vous contacte uniquement la nuit, refuse de parler des problèmes passés, revient juste après une autre rupture, n'a pas changé de comportement, vous manipule, reproduit un cycle de ruptures, ou si vous sentez que vous méritez mieux.</p>
           <p className="text-gray-700 mb-6">
             Tous les retours ne méritent pas d'être acceptés. Voici les <strong>signaux d'alarme</strong> qui doivent vous faire refuser catégoriquement.
@@ -431,7 +431,7 @@ export default function ExRevientSilenceRadioPage() {
 
           <div className="space-y-4">
             <div className="flex items-start gap-3 bg-white p-4 rounded-lg border-l-4 border-red-500">
-              <div className="text-2xl text-red-500">🚫</div>
+              <div className="text-2xl text-red-500"></div>
               <div>
                 <h3 className="font-bold text-gray-800 mb-1">Messages Uniquement Tard le Soir ou en Soirée</h3>
                 <p className="text-gray-700">Votre ex vous contacte seulement après 22h ou quand il/elle a bu = vous êtes un plan B émotionnel ou physique. Aucun respect ni intention sérieuse.</p>
@@ -439,7 +439,7 @@ export default function ExRevientSilenceRadioPage() {
             </div>
 
             <div className="flex items-start gap-3 bg-white p-4 rounded-lg border-l-4 border-red-500">
-              <div className="text-2xl text-red-500">🚫</div>
+              <div className="text-2xl text-red-500"></div>
               <div>
                 <h3 className="font-bold text-gray-800 mb-1">Refus de Parler des Problèmes Passés</h3>
                 <p className="text-gray-700">Si votre ex dit "Oublions le passé et recommençons" sans analyser ce qui a dysfonctionné, les mêmes patterns se répéteront exactement. Fuite de la responsabilité.</p>
@@ -447,7 +447,7 @@ export default function ExRevientSilenceRadioPage() {
             </div>
 
             <div className="flex items-start gap-3 bg-white p-4 rounded-lg border-l-4 border-red-500">
-              <div className="text-2xl text-red-500">🚫</div>
+              <div className="text-2xl text-red-500"></div>
               <div>
                 <h3 className="font-bold text-gray-800 mb-1">Retour Juste Après une Rupture avec Quelqu'un d'Autre</h3>
                 <p className="text-gray-700">Votre ex revient immédiatement après l'échec de sa relation suivante = vous êtes le rebond du rebond. Attendez minimum 2-3 mois pour voir si l'intérêt persiste.</p>
@@ -455,7 +455,7 @@ export default function ExRevientSilenceRadioPage() {
             </div>
 
             <div className="flex items-start gap-3 bg-white p-4 rounded-lg border-l-4 border-red-500">
-              <div className="text-2xl text-red-500">🚫</div>
+              <div className="text-2xl text-red-500"></div>
               <div>
                 <h3 className="font-bold text-gray-800 mb-1">Aucun Changement Visible de Comportement</h3>
                 <p className="text-gray-700">Si votre ex revient avec exactement les mêmes attitudes qui ont causé la rupture (jalousie, manque de communication, égoïsme), rien ne changera. Les promesses sans actes sont vides.</p>
@@ -463,7 +463,7 @@ export default function ExRevientSilenceRadioPage() {
             </div>
 
             <div className="flex items-start gap-3 bg-white p-4 rounded-lg border-l-4 border-red-500">
-              <div className="text-2xl text-red-500">🚫</div>
+              <div className="text-2xl text-red-500"></div>
               <div>
                 <h3 className="font-bold text-gray-800 mb-1">Manipulation Émotionnelle ou Culpabilisation</h3>
                 <p className="text-gray-700">"Si tu m'aimais vraiment, tu me donnerais une autre chance", "C'est de ta faute si j'ai souffert" = manipulation toxique. Un retour sain se fait dans le respect mutuel, pas la culpabilité.</p>
@@ -471,7 +471,7 @@ export default function ExRevientSilenceRadioPage() {
             </div>
 
             <div className="flex items-start gap-3 bg-white p-4 rounded-lg border-l-4 border-red-500">
-              <div className="text-2xl text-red-500">🚫</div>
+              <div className="text-2xl text-red-500"></div>
               <div>
                 <h3 className="font-bold text-gray-800 mb-1">Pattern de Ruptures/Réconciliations Répété</h3>
                 <p className="text-gray-700">Si c'est la 3ème, 4ème fois que vous vous séparez et revenez ensemble, le pattern est installé. Sans thérapie de couple ou changement radical, le cycle continuera indéfiniment.</p>
@@ -479,7 +479,7 @@ export default function ExRevientSilenceRadioPage() {
             </div>
 
             <div className="flex items-start gap-3 bg-white p-4 rounded-lg border-l-4 border-red-500">
-              <div className="text-2xl text-red-500">🚫</div>
+              <div className="text-2xl text-red-500"></div>
               <div>
                 <h3 className="font-bold text-gray-800 mb-1">Vous Sentez que Vous Méritez Mieux</h3>
                 <p className="text-gray-700">Le signal le plus important : votre intuition. Si pendant le silence radio vous avez réalisé votre valeur et que vous ne ressentez plus le besoin de cette personne, écoutez-vous. Le silence radio révèle parfois que le célibat est préférable à une mauvaise relation.</p>
@@ -489,7 +489,7 @@ export default function ExRevientSilenceRadioPage() {
         </section>
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold mb-6 text-purple-600">📊 Statistiques : Que Deviennent les Couples Après un Retour Post-Silence Radio ?</h2>
+          <h2 className="text-3xl font-bold mb-6 text-purple-600">Statistiques : Que Deviennent les Couples Après un Retour Post-Silence Radio ?</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Après un retour post-silence radio, une partie des couples restent ensemble durablement, beaucoup se séparent à nouveau dans les 6 à 18 mois, certains renoncent après quelques rendez-vous, et quelques-uns transforment la relation en amitié.</p>
 
           <div className="space-y-5">

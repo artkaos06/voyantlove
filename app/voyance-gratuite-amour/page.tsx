@@ -72,7 +72,7 @@ export default function VoyanceGratuiteAmourHubPage() {
       <header className="bg-gradient-to-r from-green-600 via-emerald-600 to-teal-600 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <Link href="/" className="text-white/80 hover:text-white mb-4 inline-block">&larr; Accueil</Link>
-          <h1 className="text-5xl font-bold mb-6">🌟 Voyance gratuite amour</h1>
+          <h1 className="text-5xl font-bold mb-6">Voyance gratuite amour</h1>
           <p className="text-2xl opacity-95 mb-8">Tirages et Guidance Sentimentale Sans Engagement</p>
           <p className="text-lg opacity-90 max-w-2xl mx-auto">La <strong>voyance gratuite amour</strong> vous ouvre les portes de la <Link href="/voyance-amour/" className="text-white underline hover:text-white/80 font-medium">voyance amoureuse</Link> : tarot, oracle et horoscope pour éclairer votre <strong>vie sentimentale</strong> en toute confiance.</p>
         </div>
@@ -83,67 +83,67 @@ export default function VoyanceGratuiteAmourHubPage() {
       <div className="max-w-6xl mx-auto px-4 py-12">
 
         <section className="mb-16">
-          <h2 className="text-3xl font-bold mb-8 text-center">🗺️ Nos Guidances Gratuites</h2>
+          <h2 className="text-3xl font-bold mb-8 text-center">Nos Guidances Gratuites</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Les principales méthodes de <strong>voyance gratuite en ligne</strong> pour l&apos;amour sont le <strong>tarot amour gratuit</strong>, le <strong>tarot du jour</strong>, le <Link href="/voyance-gratuite-amour/tarot-oui-non-amour/" className="text-emerald-700 hover:text-emerald-900 underline font-medium">tarot oui/non</Link>, le <strong>tarot futur proche</strong>, l&apos;<strong>oracle</strong>, l&apos;<strong>horoscope amoureux</strong>, la <strong>voyance par tchat</strong> et les <strong>tirages pour célibataires</strong>. Chaque outil offre un éclairage unique sur votre situation sentimentale, disponible directement en ligne et sans inscription.</p>
           <div className="grid md:grid-cols-3 gap-8">
             <Link href="/voyance-gratuite-amour/tarot-amour-gratuit/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-green-500">
-              <div className="text-4xl mb-4">🃏</div>
+              <div className="text-4xl mb-4"></div>
               <h3 className="text-2xl font-bold mb-3">Tarot Amour Gratuit</h3>
               <p className="text-gray-600 mb-4">Tirage et interprétation des arcanes pour éclairer votre vie sentimentale.</p>
               <span className="text-green-600 font-semibold">Découvrir &rarr;</span>
             </Link>
 
             <Link href="/voyance-gratuite-amour/tarot-oui-non-amour/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-emerald-500">
-              <div className="text-4xl mb-4">✅</div>
+              <div className="text-4xl mb-4"></div>
               <h3 className="text-2xl font-bold mb-3">Tarot Oui Non Amour</h3>
               <p className="text-gray-600 mb-4">Réponses claires et directes à vos questions sentimentales les plus pressantes.</p>
               <span className="text-emerald-600 font-semibold">Découvrir &rarr;</span>
             </Link>
 
             <Link href="/voyance-gratuite-amour/oracle-gratuit-amour/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-teal-500">
-              <div className="text-4xl mb-4">✨</div>
+              <div className="text-4xl mb-4"></div>
               <h3 className="text-2xl font-bold mb-3">Oracle Gratuit Amour</h3>
               <p className="text-gray-600 mb-4">Guidance intuitive par Oracle Belline, Gé et des Anges pour votre amour.</p>
               <span className="text-teal-600 font-semibold">Découvrir &rarr;</span>
             </Link>
 
             <Link href="/voyance-gratuite-amour/horoscope-amour-2026/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-cyan-500">
-              <div className="text-4xl mb-4">⭐</div>
+              <div className="text-4xl mb-4"></div>
               <h3 className="text-2xl font-bold mb-3">Horoscope Amour 2026</h3>
               <p className="text-gray-600 mb-4">Prédictions sentimentales par signe pour l&apos;année 2026.</p>
               <span className="text-cyan-600 font-semibold">Découvrir &rarr;</span>
             </Link>
 
             <Link href="/voyance-gratuite-amour/voyance-tchat-gratuit-amour/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-blue-500">
-              <div className="text-4xl mb-4">💬</div>
+              <div className="text-4xl mb-4"></div>
               <h3 className="text-2xl font-bold mb-3">Voyance Tchat Gratuit</h3>
               <p className="text-gray-600 mb-4">Consultation sentimentale immédiate par tchat avec un voyant en ligne.</p>
               <span className="text-blue-600 font-semibold">Découvrir &rarr;</span>
             </Link>
 
             <Link href="/voyance-gratuite-amour/tirage-gratuit-celibataire/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-rose-500">
-              <div className="text-4xl mb-4">💕</div>
+              <div className="text-4xl mb-4"></div>
               <h3 className="text-2xl font-bold mb-3">Tirage Célibataire</h3>
               <p className="text-gray-600 mb-4">Découvrez quand et comment vous rencontrerez l&apos;amour selon les cartes.</p>
               <span className="text-rose-600 font-semibold">Découvrir &rarr;</span>
             </Link>
 
             <Link href="/voyance-gratuite-amour/voyance-amour-immediate/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-emerald-500">
-              <div className="text-4xl mb-4">⚡</div>
+              <div className="text-4xl mb-4"></div>
               <h3 className="text-2xl font-bold mb-3">Voyance Amour Immédiate</h3>
               <p className="text-gray-600 mb-4">Tirage instantané et consultation en direct sans attente, 24h/24.</p>
               <span className="text-emerald-600 font-semibold">Découvrir &rarr;</span>
             </Link>
 
             <Link href="/voyance-gratuite-amour/tarot-du-jour-amour/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-green-500">
-              <div className="text-4xl mb-4">🌞</div>
+              <div className="text-4xl mb-4"></div>
               <h3 className="text-2xl font-bold mb-3">Tarot du Jour Amour</h3>
               <p className="text-gray-600 mb-4">Une carte pour éclairer l&apos;énergie sentimentale de votre journée.</p>
               <span className="text-green-600 font-semibold">Découvrir &rarr;</span>
             </Link>
 
             <Link href="/voyance-gratuite-amour/tarot-futur-proche-amour/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-teal-500">
-              <div className="text-4xl mb-4">🔭</div>
+              <div className="text-4xl mb-4"></div>
               <h3 className="text-2xl font-bold mb-3">Tarot Futur Proche</h3>
               <p className="text-gray-600 mb-4">Un tirage à trois cartes pour éclairer les prochaines semaines de votre vie sentimentale.</p>
               <span className="text-teal-600 font-semibold">Découvrir &rarr;</span>
@@ -154,23 +154,23 @@ export default function VoyanceGratuiteAmourHubPage() {
         <VoyantQuickCTA topic="voyance-gratuite" source="voyance-gratuite-amour-hub-banner-mid" />
 
         <section className="bg-white rounded-xl p-8 mb-12">
-          <h2 className="text-3xl font-bold mb-6">🔮 Comprendre la Voyance Gratuite Amour</h2>
+          <h2 className="text-3xl font-bold mb-6">Comprendre la Voyance Gratuite Amour</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">La <strong>voyance gratuite amour</strong> permet de découvrir la <strong>guidance sentimentale</strong> sans engagement financier, grâce aux <strong>premières minutes offertes</strong>, aux <strong>tirages en ligne</strong> et aux <strong>prédictions horoscopiques</strong> personnalisées.</p>
           <p className="text-lg text-gray-700 leading-relaxed mb-6">Que vous soyez en couple ou célibataire, la <Link href="/" className="text-green-600 hover:text-green-800 underline font-medium">voyance amoureuse</Link> offre un éclairage précieux sur votre situation sentimentale. Le <strong>tarot amour gratuit</strong> reste la méthode la plus populaire pour une première approche, tandis que l&apos;<strong>oracle</strong> et l&apos;<strong>horoscope amoureux</strong> complètent cette guidance avec des perspectives différentes. Besoin d&apos;une première orientation rapide&nbsp;? La <Link href="/voyance-gratuite-amour/voyance-amour-immediate/" className="text-green-600 hover:text-green-800 underline font-medium">voyance amour immédiate</Link> réunit tirages instantanés et accès direct aux voyants affichés comme disponibles. Pour approfondir, nos <Link href="/methodes-voyance/" className="text-green-600 hover:text-green-800 underline font-medium">méthodes de voyance</Link> détaillent chaque outil divinatoire.</p>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-gray-50 p-6 rounded-lg">
-              <h3 className="font-bold text-lg mb-3">🃏 Gratuit en Ligne vs Consultation</h3>
+              <h3 className="font-bold text-lg mb-3">Gratuit en Ligne vs Consultation</h3>
               <p className="text-gray-700">Le <strong>tirage gratuit en ligne</strong> offre une lecture générale basée sur la symbolique authentique des <strong>arcanes du tarot</strong>. La <strong>consultation personnalisée</strong> avec un <strong>voyant spécialisé amour</strong> apporte la connexion humaine, l&apos;interprétation contextuelle et une <strong>guidance sentimentale</strong> adaptée à votre situation unique. Le gratuit est le tremplin idéal vers une lecture approfondie.</p>
             </div>
             <div className="bg-gray-50 p-6 rounded-lg">
-              <h3 className="font-bold text-lg mb-3">⚡ Préparer Votre Question</h3>
+              <h3 className="font-bold text-lg mb-3">Préparer Votre Question</h3>
               <p className="text-gray-700">La qualité de votre <strong>tirage gratuit</strong> dépend de la clarté de votre question. Privilégiez les questions ouvertes : &laquo;&nbsp;Que dois-je comprendre de ma situation avec cette personne&nbsp;?&nbsp;&raquo; plutôt que &laquo;&nbsp;Va-t-il revenir&nbsp;?&nbsp;&raquo;. Concentrez-vous sur ce que <strong>vous</strong> pouvez influencer dans votre <strong>vie amoureuse</strong>. Un tirage bien préparé révèle des insights puissants.</p>
             </div>
           </div>
         </section>
 
         <section className="bg-gradient-to-br from-emerald-50 to-teal-50 rounded-xl p-8 mb-12 border border-emerald-200">
-          <h2 className="text-3xl font-bold mb-6">💞 Voyance Sentimentale Gratuite&nbsp;: Une Branche Spécialisée</h2>
+          <h2 className="text-3xl font-bold mb-6">Voyance Sentimentale Gratuite&nbsp;: Une Branche Spécialisée</h2>
           <p className="text-lg text-gray-700 leading-relaxed mb-4">
             La <strong>voyance sentimentale gratuite</strong> est une sous-catégorie de la voyance amour gratuite, centrée exclusivement sur les <strong>questions de couple, de sentiments et de relations</strong>. Elle se distingue de la voyance générale par sa spécialisation&nbsp;: les tirages, les méthodes et l&apos;interprétation sont calibrés pour décrypter les <strong>dynamiques émotionnelles</strong> entre deux personnes.
           </p>
@@ -197,17 +197,17 @@ export default function VoyanceGratuiteAmourHubPage() {
         </section>
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">📞 Consultation Immédiate&nbsp;: Trois Canaux Sans Rendez-vous</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Consultation Immédiate&nbsp;: Trois Canaux Sans Rendez-vous</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Une fois les tirages gratuits explorés, trois canaux permettent de consulter un voyant immédiatement, sans inscription&nbsp;: la consultation privée avec minutes offertes, l&apos;audiotel et le tchat SMS.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Chaque canal a un fonctionnement et un tarif différents. Voici les trois options telles qu&apos;elles existent réellement, pour choisir en connaissance de cause. Pour un panorama complet des options de <Link href="/voyance-gratuite-amour/voyance-amour-immediate/" className="text-emerald-700 hover:text-emerald-900 underline font-semibold">voyance amour direct</Link>, des tirages automatiques à l&apos;accès aux voyants en ligne, consultez notre guide dédié.
           </p>
           <div className="grid md:grid-cols-3 gap-6">
             <div className="bg-emerald-50 border-2 border-emerald-300 rounded-lg p-6">
-              <h3 className="font-bold text-lg mb-2 text-emerald-800">💬 Consultation Privée</h3>
+              <h3 className="font-bold text-lg mb-2 text-emerald-800">Consultation Privée</h3>
               <p className="text-2xl font-bold text-emerald-700 mb-1">10 min offertes</p>
               <p className="text-gray-700 text-sm mb-3">Puis tarif à la consultation selon le voyant choisi. Numéro non surtaxé, sans inscription obligatoire pour le rappel.</p>
-              <a href="tel:0175754582" className="block text-center bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 rounded-lg transition mb-2">📞 01 75 75 45 82</a>
+              <a href="tel:0175754582" className="block text-center bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 rounded-lg transition mb-2">01 75 75 45 82</a>
               <p className="text-gray-500 text-xs">7j/7 de 9h à 21h · téléphone, chat ou email</p>
             </div>
             <div className="bg-teal-50 border-2 border-teal-300 rounded-lg p-6">
@@ -218,7 +218,7 @@ export default function VoyanceGratuiteAmourHubPage() {
               <p className="text-gray-500 text-xs">Code 1711 · réponse immédiate, 24h/24</p>
             </div>
             <div className="bg-cyan-50 border-2 border-cyan-300 rounded-lg p-6">
-              <h3 className="font-bold text-lg mb-2 text-cyan-800">💬 Tchat SMS</h3>
+              <h3 className="font-bold text-lg mb-2 text-cyan-800">Tchat SMS</h3>
               <p className="text-2xl font-bold text-cyan-700 mb-1">0,99&nbsp;€/SMS</p>
               <p className="text-gray-700 text-sm mb-3">+ prix d&apos;un SMS selon votre opérateur. Pratique si vous préférez l&apos;écrit ou si vous n&apos;êtes pas disponible pour un appel.</p>
               <div className="text-center bg-cyan-600 text-white font-semibold py-2 rounded-lg mb-2">VOY1711 au 71700</div>
@@ -226,7 +226,7 @@ export default function VoyanceGratuiteAmourHubPage() {
             </div>
           </div>
           <div className="mt-6 bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded">
-            <p className="text-gray-700"><strong>💡 Comment choisir :</strong> la <strong>consultation privée</strong> reste la plus économique une fois les 10 minutes offertes dépassées, l&apos;<strong>audiotel</strong> convient pour une question rapide sans inscription, et le <strong>SMS</strong> pour une réponse écrite que vous pouvez consulter à votre rythme.</p>
+            <p className="text-gray-700"><strong>Comment choisir :</strong> la <strong>consultation privée</strong> reste la plus économique une fois les 10 minutes offertes dépassées, l&apos;<strong>audiotel</strong> convient pour une question rapide sans inscription, et le <strong>SMS</strong> pour une réponse écrite que vous pouvez consulter à votre rythme.</p>
           </div>
         </section>
 

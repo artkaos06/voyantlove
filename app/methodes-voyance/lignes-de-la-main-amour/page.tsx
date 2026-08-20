@@ -16,7 +16,7 @@ const config: ContentPageConfig = {
     { name: 'Lignes de la Main Amour', url: 'https://www.voyantlove.fr/methodes-voyance/lignes-de-la-main-amour/' },
   ],
   header: {
-    emoji: '✋',
+    emoji: '',
     h1: 'Lignes de la main amour',
     subtitle: 'Ce que la chiromancie révèle sur votre vie sentimentale',
     gradient: 'from-orange-600 via-red-600 to-rose-700',
@@ -28,10 +28,10 @@ const config: ContentPageConfig = {
   },
   accentText: 'text-red-700',
   stats: [
-    { icon: '✋', value: '3 lignes', label: 'Principales étudiées' },
-    { icon: '💕', value: 'Ligne de Cœur', label: 'Baromètre amoureux' },
-    { icon: '📜', value: 'Antique', label: 'Origine millénaire' },
-    { icon: '🤲', value: '2 mains', label: 'Potentiel et vécu' },
+    { icon: '', value: '3 lignes', label: 'Principales étudiées' },
+    { icon: '', value: 'Ligne de Cœur', label: 'Baromètre amoureux' },
+    { icon: '', value: 'Antique', label: 'Origine millénaire' },
+    { icon: '', value: '2 mains', label: 'Potentiel et vécu' },
   ],
   eeat: { colorScheme: 'rose', method: 'Chiromancie amoureuse, lecture des lignes de la main' },
   cta: { topic: 'methodes-voyance', slug: 'lignes-main-amour' },
@@ -79,7 +79,7 @@ export default function LignesDeLaMainAmourPage() {
 
         {/* Section 1: La ligne de cœur */}
         <section id="ligne-coeur" className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">💕 La Ligne de Cœur : le Baromètre de Votre Vie Amoureuse</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">La Ligne de Cœur : le Baromètre de Votre Vie Amoureuse</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">La ligne de cœur, première grande ligne horizontale sous les doigts, révèle la profondeur de vos sentiments, votre rapport à l&apos;engagement et votre intensité émotionnelle.</p>
           <p className="text-gray-700 mb-6">
             En <strong>chiromancie</strong>, la <strong>ligne de cœur</strong> occupe la place la plus proche des doigts parmi les trois grandes lignes de la paume. Sa forme, sa longueur et son tracé livrent des indications précises sur votre tempérament amoureux.
@@ -106,7 +106,7 @@ export default function LignesDeLaMainAmourPage() {
 
         {/* Section 2: Mont de Vénus */}
         <section className="bg-gradient-to-br from-rose-50 to-orange-50 rounded-xl p-8 mb-8 border-2 border-rose-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">🌹 Le Mont de Vénus : Sensualité et Capacité d&apos;Aimer</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Le Mont de Vénus : Sensualité et Capacité d&apos;Aimer</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Cette zone charnue à la base du pouce, nommée d&apos;après la planète de l&apos;amour, révélerait l&apos;intensité de votre sensualité et votre générosité affective.</p>
           <p className="text-gray-700 mb-6">
             Le <strong>mont de Vénus</strong> occupe la zone charnue qui entoure la base du pouce, sous la ligne de vie. Son nom, hérité de la planète associée à l&apos;amour en <Link href="/methodes-voyance/astrologie-amoureuse/" className="text-rose-700 hover:text-rose-900 underline font-medium">astrologie amoureuse</Link>, n&apos;est pas un hasard : cette zone concentre, en chiromancie, tout ce qui touche à la sensualité et à la capacité d&apos;aimer.
@@ -125,7 +125,7 @@ export default function LignesDeLaMainAmourPage() {
 
         {/* Section 3: Lignes de mariage */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">💍 Les Lignes d&apos;Union (« Lignes de Mariage »)</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Les Lignes d&apos;Union (« Lignes de Mariage »)</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Ces petites lignes horizontales sur le bord de la paume, sous l&apos;auriculaire, indiqueraient le nombre et l&apos;intensité des attachements affectifs marquants d&apos;une vie.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Situées sur le bord externe de la main, entre la base de l&apos;auriculaire et le début de la ligne de cœur, les <strong>lignes d&apos;union</strong>, parfois appelées « lignes de mariage » bien qu&apos;elles ne prédisent pas nécessairement un mariage officiel, indiqueraient les attachements affectifs les plus marquants d&apos;une existence. Une ligne profonde et nette suggérerait une relation intense et durable ; plusieurs lignes fines évoqueraient des attachements significatifs mais plus nombreux. Leur interprétation reste délicate et gagne à être confiée à un chiromancien expérimenté, qui saura la croiser avec l&apos;ensemble de la main plutôt que de l&apos;isoler.
@@ -139,7 +139,7 @@ export default function LignesDeLaMainAmourPage() {
 
         {/* Section 4: Comment lire sa main */}
         <section id="lecture" className="bg-gradient-to-br from-orange-50 to-red-50 rounded-xl p-8 mb-8 border-2 border-orange-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">🔍 Comment Lire Votre Propre Main : Guide Pratique</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Comment Lire Votre Propre Main : Guide Pratique</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Repérer sa ligne de cœur et son mont de Vénus est accessible à tous, mais une lecture fiable et nuancée demande l&apos;œil exercé d&apos;un chiromancien professionnel.</p>
           <div className="space-y-4">
             <div className="bg-white rounded-lg p-5 border-l-4 border-red-400">

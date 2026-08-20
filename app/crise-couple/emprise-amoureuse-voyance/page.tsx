@@ -15,7 +15,7 @@ const config: ContentPageConfig = {
     { name: 'Emprise Amoureuse', url: 'https://www.voyantlove.fr/crise-couple/emprise-amoureuse-voyance/' },
   ],
   header: {
-    emoji: '⚠️',
+    emoji: '',
     h1: 'Emprise amoureuse',
     subtitle: 'Reconnaître et Se Libérer d\'un Manipulateur',
     gradient: 'from-red-700 via-rose-700 to-pink-700',
@@ -27,10 +27,10 @@ const config: ContentPageConfig = {
   },
   accentText: 'text-red-600',
   stats: [
-    { icon: '⚠️', value: '10 Signes', label: 'Reconnaître l\'emprise' },
-    { icon: '🔮', value: 'Cartes Clés', label: 'Révélées par le tarot' },
-    { icon: '✨', value: '14 Ans', label: 'D\'expérience' },
-    { icon: '💜', value: '2 600+', label: 'Consultations' },
+    { icon: '', value: '10 Signes', label: 'Reconnaître l\'emprise' },
+    { icon: '', value: 'Cartes Clés', label: 'Révélées par le tarot' },
+    { icon: '', value: '14 Ans', label: 'D\'expérience' },
+    { icon: '', value: '2 600+', label: 'Consultations' },
   ],
   eeat: { colorScheme: 'red', method: 'Analyse tarot des relations toxiques et guidance de libération' },
   cta: { topic: 'crise-couple', slug: 'emprise-amoureuse' },
@@ -83,7 +83,7 @@ export default function EmpriseAmoureusePage() {
 
         {/* Section 1, Définition */}
         <section className="bg-gradient-to-br from-red-50 to-rose-50 rounded-xl p-8 mb-8 border-2 border-red-200">
-          <h2 className="text-3xl font-bold mb-6 text-gray-900">&#x1F9E0; Qu'est-ce que l'Emprise Amoureuse ?</h2>
+          <h2 className="text-3xl font-bold mb-6 text-gray-900"> Qu'est-ce que l'Emprise Amoureuse ?</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">L'emprise amoureuse est un processus graduel de prise de contrôle psychologique, émotionnel et parfois physique qui transforme une relation d'amour en prison invisible.</p>
           <p className="text-gray-700 mb-5">
             Contrairement à ce que l'on pourrait imaginer, l'emprise ne commence pas par la violence ou la domination ouverte. Elle naît souvent dans un excès d'amour apparent, une intensité séductrice et une attention exclusive qui flattent profondément. Les premières semaines ou mois ressemblent à un amour idéal, c'est la phase d'<strong>idéalisation</strong>, soigneusement orchestrée par le futur empriseur.
@@ -103,7 +103,7 @@ export default function EmpriseAmoureusePage() {
 
         {/* Section 2, Les 10 Signes */}
         <section id="signes" className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold mb-6 text-red-600">&#x1F6A8; Les 10 Signes que Vous Êtes Sous Emprise</h2>
+          <h2 className="text-3xl font-bold mb-6 text-red-600"> Les 10 Signes que Vous Êtes Sous Emprise</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Les signaux caractéristiques incluent l'isolement des proches, la peur permanente de déplaire, le doute de sa propre perception, l'abandon de ses activités et une culpabilité chronique sans raison objective.</p>
           <p className="text-gray-700 mb-6">
             Reconnaître l'emprise est souvent la partie la plus difficile, car le système de contrôle a été mis en place pour vous empêcher de le voir clairement. Voici les dix signaux les plus révélateurs.
@@ -164,7 +164,7 @@ export default function EmpriseAmoureusePage() {
 
         {/* Section 3, Ce que la voyance révèle */}
         <section className="bg-gradient-to-br from-rose-50 to-pink-50 rounded-xl p-8 mb-8 border-2 border-rose-200">
-          <h2 className="text-3xl font-bold mb-6 text-gray-900">&#x1F52E; Ce que la Voyance Révèle sur une Relation sous Emprise</h2>
+          <h2 className="text-3xl font-bold mb-6 text-gray-900"> Ce que la Voyance Révèle sur une Relation sous Emprise</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le tarot identifie clairement les relations toxiques à travers des arcanes spécifiques : le Diable symbolise l'enchaînement, la Tour annonce la rupture nécessaire, et le Chariot inversé révèle une volonté captive.</p>
           <p className="text-gray-700 mb-6">
             La voyance offre un regard singulier sur les dynamiques d'emprise : en lisant les énergies de la relation plutôt que ses faits objectifs, elle peut révéler des vérités que la victime n'ose pas encore formuler. Les outils de divination, tarot, numérologie, astrologie, donnent un nom et une forme à ce qui est ressenti mais difficilement exprimable.
@@ -172,28 +172,28 @@ export default function EmpriseAmoureusePage() {
 
           <div className="space-y-4">
             <div className="bg-white p-5 rounded-lg border-l-4 border-red-500">
-              <h3 className="font-bold text-red-700 mb-2 text-lg">&#x1F0CF; Le Diable (Arcane XV), L'Enchaînement</h3>
+              <h3 className="font-bold text-red-700 mb-2 text-lg"> Le Diable (Arcane XV), L'Enchaînement</h3>
               <p className="text-gray-700">
                 Le Diable est la carte la plus directement associée à l'emprise amoureuse. Il représente les <strong>liens de dépendance</strong>, les addictions émotionnelles et les relations qui retiennent contre la vraie volonté. Quand cette carte apparaît en position centrale dans un tirage sentimental, le voyant sait qu'une dynamique d'enchaînement est en jeu. Les deux personnages enchaînés de la carte ont pourtant des chaînes assez larges pour se libérer, symbole que la libération est toujours possible.
               </p>
             </div>
 
             <div className="bg-white p-5 rounded-lg border-l-4 border-rose-500">
-              <h3 className="font-bold text-rose-700 mb-2 text-lg">&#x1F0CF; La Tour (Arcane XVI), La Rupture Nécessaire</h3>
+              <h3 className="font-bold text-rose-700 mb-2 text-lg"> La Tour (Arcane XVI), La Rupture Nécessaire</h3>
               <p className="text-gray-700">
                 La Tour dans un contexte d'emprise n'est pas une carte négative : elle annonce une <strong>rupture libératrice</strong>, parfois douloureuse mais indispensable. La structure que cette tour représente, la relation toxique, doit s'effondrer pour que la vraie liberté puisse émerger. Sa présence dans un tirage signale souvent que le moment de la séparation approche ou que quelque chose dans la relation va fondamentalement changer.
               </p>
             </div>
 
             <div className="bg-white p-5 rounded-lg border-l-4 border-pink-500">
-              <h3 className="font-bold text-pink-700 mb-2 text-lg">&#x1F0CF; Le Chariot Inversé, La Volonté Captive</h3>
+              <h3 className="font-bold text-pink-700 mb-2 text-lg"> Le Chariot Inversé, La Volonté Captive</h3>
               <p className="text-gray-700">
                 Le Chariot à l'endroit symbolise la maîtrise de soi et la direction claire de sa vie. Inversé, il indique une <strong>volonté neutralisée</strong>, une personne qui a perdu le contrôle de sa propre trajectoire. Dans un tirage d'emprise, cette carte révèle que la capacité d'agir librement est temporairement paralysée par la pression psychologique exercée dans la relation.
               </p>
             </div>
 
             <div className="bg-white p-5 rounded-lg border-l-4 border-red-400">
-              <h3 className="font-bold text-red-600 mb-2 text-lg">&#x1F0CF; L'Hermite Inversé, L'Isolement Imposé</h3>
+              <h3 className="font-bold text-red-600 mb-2 text-lg"> L'Hermite Inversé, L'Isolement Imposé</h3>
               <p className="text-gray-700">
                 L'Hermite inversé révèle un <strong>isolement subi</strong> plutôt que choisi. Dans le contexte d'une emprise, cette carte signale que la personne a été coupée de ses ressources intérieures et de ses soutiens extérieurs. Le voyant l'utilise pour identifier l'ampleur de l'isolement et travailler à la reconnexion progressive avec les ressources personnelles.
               </p>
@@ -201,7 +201,7 @@ export default function EmpriseAmoureusePage() {
           </div>
 
           <div className="bg-red-100 border-2 border-red-300 rounded-lg p-6 mt-6">
-            <h4 className="font-bold text-red-800 mb-3 text-lg">&#x1F4A1; Ce que la Voyance ne Peut Pas Faire</h4>
+            <h4 className="font-bold text-red-800 mb-3 text-lg"> Ce que la Voyance ne Peut Pas Faire</h4>
             <p className="text-gray-700">
               La voyance éclaire et nomme, mais ne décide pas à votre place. Elle peut révéler la nature toxique d'une relation avec une clarté parfois bouleversante, identifier le bon moment pour agir, et guider le chemin de reconstruction. Mais la décision de partir reste la vôtre, et c'est précisément cette décision que l'emprise cherche à paralyser. Pour approfondir comment <Link href="/crise-couple/pardonner-en-amour/" className="text-red-600 hover:text-red-800 underline font-medium">pardonner après une blessure</Link> profonde dans le cadre d'une relation difficile, notre guidance dédiée vous accompagne.
             </p>
@@ -210,7 +210,7 @@ export default function EmpriseAmoureusePage() {
 
         {/* Section 4, Se libérer */}
         <section id="liberation" className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold mb-6 text-red-600">&#x1F513; Comment Se Libérer d'une Emprise : Étapes Pratiques</h2>
+          <h2 className="text-3xl font-bold mb-6 text-red-600"> Comment Se Libérer d'une Emprise : Étapes Pratiques</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">La libération d'une emprise passe par cinq étapes clés : reconnaître la réalité, briser l'isolement, sécuriser sa sortie, couper les liens énergétiques et construire son nouveau centre de gravité personnel.</p>
           <p className="text-gray-700 mb-6">
             Se libérer d'une emprise amoureuse est un processus graduel qui exige à la fois des mesures pratiques concrètes et un travail énergétique et intérieur profond. Les deux dimensions sont indissociables pour une libération durable.
@@ -259,7 +259,7 @@ export default function EmpriseAmoureusePage() {
 
         {/* Section 5, Reconstruction */}
         <section className="bg-gradient-to-br from-pink-50 to-rose-50 rounded-xl p-8 mb-8 border-2 border-pink-200">
-          <h2 className="text-3xl font-bold mb-6 text-gray-900">&#x1F338; Reconstruction après une Relation Toxique</h2>
+          <h2 className="text-3xl font-bold mb-6 text-gray-900"> Reconstruction après une Relation Toxique</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">La reconstruction après une emprise est un chemin vers soi-même : retrouver ses valeurs, reconstruire son estime, apprendre à se faire confiance à nouveau et réapprendre ce qu'est un amour sain et respectueux.</p>
           <p className="text-gray-700 mb-5">
             La reconstruction post-emprise n'est pas un retour à l'état antérieur, c'est une transformation. Les personnes qui traversent ce processus avec conscience et accompagnement en ressortent souvent avec une connaissance de soi plus profonde, des limites plus claires et une capacité à aimer plus saine et plus libre.
@@ -267,7 +267,7 @@ export default function EmpriseAmoureusePage() {
 
           <div className="grid md:grid-cols-2 gap-6 mb-6">
             <div className="bg-white rounded-lg p-6 border-2 border-rose-300">
-              <h3 className="font-bold text-lg mb-4 text-rose-700">&#x1F9E0; Reconstruire l'Estime de Soi</h3>
+              <h3 className="font-bold text-lg mb-4 text-rose-700"> Reconstruire l'Estime de Soi</h3>
               <div className="space-y-3 text-gray-700">
                 <p>&#x2713; <strong>Tenir un journal de gratitude :</strong> noter trois qualités personnelles chaque jour</p>
                 <p>&#x2713; <strong>Honorer ses réussites :</strong> même les plus petites, pour recréer la confiance</p>
@@ -277,7 +277,7 @@ export default function EmpriseAmoureusePage() {
             </div>
 
             <div className="bg-white rounded-lg p-6 border-2 border-pink-300">
-              <h3 className="font-bold text-lg mb-4 text-pink-700">&#x1F4AB; Réapprendre l'Amour Sain</h3>
+              <h3 className="font-bold text-lg mb-4 text-pink-700"> Réapprendre l'Amour Sain</h3>
               <div className="space-y-3 text-gray-700">
                 <p>&#x2713; <strong>Identifier ses patterns :</strong> comprendre pourquoi cette relation s'est installée</p>
                 <p>&#x2713; <strong>Définir ses valeurs relationnelles :</strong> ce qui est non-négociable pour soi</p>

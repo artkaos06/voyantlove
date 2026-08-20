@@ -16,7 +16,7 @@ const config: ContentPageConfig = {
     { name: 'Revoir son Ex Après une Rupture', url: 'https://www.voyantlove.fr/reconquete/revoir-son-ex/' },
   ],
   header: {
-    emoji: '🤝',
+    emoji: '',
     h1: 'Revoir son ex après une rupture',
     subtitle: 'Se préparer, se comporter le jour J et interpréter ce que vous ressentez ensuite',
     gradient: 'from-violet-600 via-fuchsia-600 to-pink-600',
@@ -28,10 +28,10 @@ const config: ContentPageConfig = {
   },
   accentText: 'text-fuchsia-600',
   stats: [
-    { icon: '🔮', value: 'Reconnue', label: 'Expertise' },
-    { icon: '🤝', value: '3,400+', label: 'Consultations' },
-    { icon: '⭐', value: '4.7/5', label: '269 Avis' },
-    { icon: '🔒', value: '100%', label: 'Confidentiel' },
+    { icon: '', value: 'Reconnue', label: 'Expertise' },
+    { icon: '', value: '3,400+', label: 'Consultations' },
+    { icon: '', value: '4.7/5', label: '269 Avis' },
+    { icon: '', value: '100%', label: 'Confidentiel' },
   ],
   eeat: { colorScheme: 'pink', method: 'Guidance de reconquête et accompagnement émotionnel' },
   cta: { topic: 'reconquete', slug: 'revoir-ex' },
@@ -91,7 +91,7 @@ export default function RevoirSonExPage() {
 
         {/* H2: Clarifier son intention */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">{'\u{1F3AF}'} D&apos;Abord, Clarifier votre Intention</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">D&apos;Abord, Clarifier votre Intention</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Avant d&apos;accepter une rencontre, identifiez pourquoi vous la souhaitez : obtenir une clarification, tourner la page, explorer un rapprochement ou seulement ceder a un manque ; connaitre votre intention reelle protege de la deception.</p>
           <p className="text-gray-700 leading-relaxed mb-4">
             Le point de départ n&apos;est pas la logistique de la rencontre, mais votre <strong>intention</strong> réelle. Cherchez-vous une réponse à une question restée ouverte, une clôture apaisée, une possibilité de reconstruction, ou répondez-vous simplement à un manque du moment ? Nommer honnêtement cette intention évite de transformer un élan passager en rendez-vous qui blesse.
@@ -103,14 +103,14 @@ export default function RevoirSonExPage() {
 
         {/* H2: Se préparer et se comporter le jour J */}
         <section id="preparer" className="bg-gradient-to-br from-fuchsia-50 to-pink-50 rounded-xl p-8 mb-8 border-2 border-fuchsia-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">{'\u{1F338}'} Se Préparer et se Comporter le Jour de la Rencontre</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Se Préparer et se Comporter le Jour de la Rencontre</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Fixez a l&apos;avance un cadre simple, lieu, duree, sujets a aborder ou non,  restez vous-meme plutot que de jouer un role, ecoutez autant que vous parlez et autorisez-vous a ecourter si l&apos;emotion devient trop lourde.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Un cadre préparé à l&apos;avance allège l&apos;anxiété et vous garde maître de la situation. Voici les repères d&apos;une rencontre vécue avec dignité.
           </p>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-white rounded-lg p-6 border-l-4 border-green-500">
-              <h3 className="font-bold text-lg mb-3 text-green-700">{'✅'} Ce qui Aide</h3>
+              <h3 className="font-bold text-lg mb-3 text-green-700">{''} Ce qui Aide</h3>
               <ul className="space-y-2 text-gray-700 text-sm">
                 <li>&bull; Choisir un <strong>lieu neutre</strong> et une durée limitée</li>
                 <li>&bull; Rester <strong>authentique</strong>, sans jouer un rôle</li>
@@ -119,7 +119,7 @@ export default function RevoirSonExPage() {
               </ul>
             </div>
             <div className="bg-white rounded-lg p-6 border-l-4 border-red-500">
-              <h3 className="font-bold text-lg mb-3 text-red-700">{'\u{1F6D1}'} Ce qui Nuit</h3>
+              <h3 className="font-bold text-lg mb-3 text-red-700">Ce qui Nuit</h3>
               <ul className="space-y-2 text-gray-700 text-sm">
                 <li>&bull; Enchaîner les <strong>reproches</strong> sur le passé</li>
                 <li>&bull; Forcer la séduction pour provoquer une réaction</li>
@@ -129,7 +129,7 @@ export default function RevoirSonExPage() {
             </div>
           </div>
           <div className="mt-6 bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded">
-            <p className="text-gray-700"><strong>{'\u{1F4A1}'} À retenir :</strong> l&apos;objectif n&apos;est pas de &laquo;gagner&raquo; la rencontre, mais de rester fidèle à vos limites quoi que fasse l&apos;autre. Une attitude posée, ni froide ni empressée, en dit plus long qu&apos;un discours préparé.</p>
+            <p className="text-gray-700"><strong>À retenir :</strong> l&apos;objectif n&apos;est pas de &laquo;gagner&raquo; la rencontre, mais de rester fidèle à vos limites quoi que fasse l&apos;autre. Une attitude posée, ni froide ni empressée, en dit plus long qu&apos;un discours préparé.</p>
           </div>
         </section>
 
@@ -137,7 +137,7 @@ export default function RevoirSonExPage() {
 
         {/* H2: Pourquoi ça peut faire mal */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">{'\u{1F494}'} Pourquoi Revoir son Ex Peut Faire Mal</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Pourquoi Revoir son Ex Peut Faire Mal</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">La presence physique reactive d&apos;un coup souvenirs, sensations et attachement que la distance avait mis en sommeil : ce ressac emotionnel est normal et ne signifie pas une regression, seulement que le lien laisse encore une trace.</p>
           <p className="text-gray-700 leading-relaxed mb-4">
             À distance, le <strong>deuil</strong> avance : l&apos;émotion s&apos;apaise, les repères se reconstruisent. Une rencontre physique peut <strong>court-circuiter</strong> ce processus en réveillant d&apos;un coup ce que le temps avait mis en sommeil. Éprouver une vague de nostalgie, d&apos;espoir ou de tristesse au contact de l&apos;autre est donc parfaitement normal, et ne prouve pas que vous êtes revenu(e) au point de départ.
@@ -149,27 +149,27 @@ export default function RevoirSonExPage() {
 
         {/* H2: Après la rencontre */}
         <section id="apres" className="bg-gradient-to-r from-pink-50 to-purple-50 rounded-xl p-8 mb-8 border-2 border-pink-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">{'\u{1F9ED}'} Que Faire des Émotions Ressenties Après</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Que Faire des Émotions Ressenties Après</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Une vague de nostalgie, d&apos;espoir ou de tristesse apres avoir revu son ex est une information sur votre etat interieur, pas une decision : laissez passer quelques jours avant d&apos;interpreter, car l&apos;emotion a chaud deforme le jugement.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             L&apos;après-rencontre est souvent plus déterminant que la rencontre elle-même. Voici comment traiter ce qui remonte sans en tirer de conclusion hâtive.
           </p>
           <div className="grid md:grid-cols-3 gap-6">
             <div className="bg-white rounded-lg p-6 border-l-4 border-pink-500">
-              <h3 className="font-bold text-lg mb-2 text-pink-700">{'\u{1F553}'} Laisser retomber</h3>
+              <h3 className="font-bold text-lg mb-2 text-pink-700">Laisser retomber</h3>
               <p className="text-gray-700 text-sm">Attendez quelques jours avant d&apos;interpréter. L&apos;<strong>émotion à chaud</strong> déforme le jugement et pousse aux décisions impulsives.</p>
             </div>
             <div className="bg-white rounded-lg p-6 border-l-4 border-fuchsia-500">
-              <h3 className="font-bold text-lg mb-2 text-fuchsia-700">{'\u{1F50D}'} Distinguer émotion et décision</h3>
+              <h3 className="font-bold text-lg mb-2 text-fuchsia-700">Distinguer émotion et décision</h3>
               <p className="text-gray-700 text-sm">Ressentir un élan ne veut pas dire qu&apos;il faut se remettre ensemble ; une tristesse ne veut pas dire que tout est fini. C&apos;est une <strong>information</strong>, pas une conclusion.</p>
             </div>
             <div className="bg-white rounded-lg p-6 border-l-4 border-purple-500">
-              <h3 className="font-bold text-lg mb-2 text-purple-700">{'\u{1F4C8}'} Regarder les actes</h3>
+              <h3 className="font-bold text-lg mb-2 text-purple-700">Regarder les actes</h3>
               <p className="text-gray-700 text-sm">Si un rapprochement s&apos;esquisse, observez si les <Link href="/reconquete/veut-se-remettre-ensemble-mais-ne-fait-rien/" className="text-purple-600 hover:text-purple-800 underline font-medium">actes suivent les mots</Link> dans la durée, plutôt qu&apos;un seul moment partagé.</p>
             </div>
           </div>
           <div className="mt-6 bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded">
-            <p className="text-gray-700"><strong>{'\u{1F4A1}'} À retenir :</strong> si la rencontre confirme au contraire votre besoin de clôture, notre guide pour <Link href="/rupture/comment-tourner-la-page/" className="text-pink-600 hover:text-pink-800 underline font-medium">tourner la page</Link> vous accompagne dans cette étape. Revoir son ex peut aussi servir à conclure sereinement, pas seulement à raviver.</p>
+            <p className="text-gray-700"><strong>À retenir :</strong> si la rencontre confirme au contraire votre besoin de clôture, notre guide pour <Link href="/rupture/comment-tourner-la-page/" className="text-pink-600 hover:text-pink-800 underline font-medium">tourner la page</Link> vous accompagne dans cette étape. Revoir son ex peut aussi servir à conclure sereinement, pas seulement à raviver.</p>
           </div>
         </section>
 

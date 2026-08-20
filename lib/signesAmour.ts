@@ -61,7 +61,7 @@ export const SIGNES_AMOUR: SignLoveProfile[] = [
   {
     slug: 'belier',
     name: 'Bélier',
-    emoji: '♈',
+    emoji: '♈︎',
     element: 'Feu',
     planet: 'Mars',
     dates: '21 mars – 19 avril',
@@ -100,7 +100,7 @@ export const SIGNES_AMOUR: SignLoveProfile[] = [
   {
     slug: 'taureau',
     name: 'Taureau',
-    emoji: '♉',
+    emoji: '♉︎',
     element: 'Terre',
     planet: 'Vénus',
     dates: '20 avril – 20 mai',
@@ -139,7 +139,7 @@ export const SIGNES_AMOUR: SignLoveProfile[] = [
   {
     slug: 'gemeaux',
     name: 'Gémeaux',
-    emoji: '♊',
+    emoji: '♊︎',
     element: 'Air',
     planet: 'Mercure',
     dates: '21 mai – 20 juin',
@@ -178,7 +178,7 @@ export const SIGNES_AMOUR: SignLoveProfile[] = [
   {
     slug: 'cancer',
     name: 'Cancer',
-    emoji: '♋',
+    emoji: '♋︎',
     element: 'Eau',
     planet: 'la Lune',
     dates: '21 juin – 22 juillet',
@@ -217,7 +217,7 @@ export const SIGNES_AMOUR: SignLoveProfile[] = [
   {
     slug: 'lion',
     name: 'Lion',
-    emoji: '♌',
+    emoji: '♌︎',
     element: 'Feu',
     planet: 'le Soleil',
     dates: '23 juillet – 22 août',
@@ -256,7 +256,7 @@ export const SIGNES_AMOUR: SignLoveProfile[] = [
   {
     slug: 'vierge',
     name: 'Vierge',
-    emoji: '♍',
+    emoji: '♍︎',
     element: 'Terre',
     planet: 'Mercure',
     dates: '23 août – 22 septembre',
@@ -295,7 +295,7 @@ export const SIGNES_AMOUR: SignLoveProfile[] = [
   {
     slug: 'balance',
     name: 'Balance',
-    emoji: '♎',
+    emoji: '♎︎',
     element: 'Air',
     planet: 'Vénus',
     dates: '23 septembre – 22 octobre',
@@ -334,7 +334,7 @@ export const SIGNES_AMOUR: SignLoveProfile[] = [
   {
     slug: 'scorpion',
     name: 'Scorpion',
-    emoji: '♏',
+    emoji: '♏︎',
     element: 'Eau',
     planet: 'Pluton',
     dates: '23 octobre – 21 novembre',
@@ -373,7 +373,7 @@ export const SIGNES_AMOUR: SignLoveProfile[] = [
   {
     slug: 'sagittaire',
     name: 'Sagittaire',
-    emoji: '♐',
+    emoji: '♐︎',
     element: 'Feu',
     planet: 'Jupiter',
     dates: '22 novembre – 21 décembre',
@@ -412,7 +412,7 @@ export const SIGNES_AMOUR: SignLoveProfile[] = [
   {
     slug: 'capricorne',
     name: 'Capricorne',
-    emoji: '♑',
+    emoji: '♑︎',
     element: 'Terre',
     planet: 'Saturne',
     dates: '22 décembre – 19 janvier',
@@ -451,7 +451,7 @@ export const SIGNES_AMOUR: SignLoveProfile[] = [
   {
     slug: 'verseau',
     name: 'Verseau',
-    emoji: '♒',
+    emoji: '♒︎',
     element: 'Air',
     planet: 'Uranus',
     dates: '20 janvier – 18 février',
@@ -490,7 +490,7 @@ export const SIGNES_AMOUR: SignLoveProfile[] = [
   {
     slug: 'poissons',
     name: 'Poissons',
-    emoji: '♓',
+    emoji: '♓︎',
     element: 'Eau',
     planet: 'Neptune',
     dates: '19 février – 20 mars',

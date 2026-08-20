@@ -16,7 +16,7 @@ const config: ContentPageConfig = {
     { name: 'Vivre sous le Même Toit Après une Séparation', url: 'https://www.voyantlove.fr/crise-couple/vivre-meme-toit-apres-separation/' },
   ],
   header: {
-    emoji: '🏠',
+    emoji: '',
     h1: 'Comment vivre sous le même toit après une séparation ?',
     subtitle: 'Créer une séparation réelle malgré un logement partagé, sans faux espoirs',
     gradient: 'from-amber-600 via-orange-600 to-red-700',
@@ -28,10 +28,10 @@ const config: ContentPageConfig = {
   },
   accentText: 'text-orange-700',
   stats: [
-    { icon: '🔮', value: 'Reconnue', label: 'Expertise' },
-    { icon: '🏠', value: '2,900+', label: 'Consultations' },
-    { icon: '⭐', value: '4.6/5', label: '237 Avis' },
-    { icon: '🔒', value: '100%', label: 'Confidentiel' },
+    { icon: '', value: 'Reconnue', label: 'Expertise' },
+    { icon: '', value: '2,900+', label: 'Consultations' },
+    { icon: '', value: '4.6/5', label: '237 Avis' },
+    { icon: '', value: '100%', label: 'Confidentiel' },
   ],
   eeat: { colorScheme: 'orange', method: 'Guidance sur la cohabitation post-rupture et les limites relationnelles' },
   cta: { topic: 'crise-couple', slug: 'vivre-meme-toit' },
@@ -91,19 +91,19 @@ export default function VivreMemeToitApresSeparationPage() {
 
         {/* H2 1 */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">{'\u{1F914}'} Peut-on Vraiment se Séparer Tout en Cohabitant ?</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Peut-on Vraiment se Séparer Tout en Cohabitant ?</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Une separation reelle sous le meme toit est possible, mais seulement si elle repose sur un cadre explicite -- statut defini, espaces distincts, regles claires -- et non sur une simple intention silencieuse que rien ne vient concretiser.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Beaucoup de couples séparés continuent de partager un logement en pensant que la rupture est suffisamment claire dans leur tête pour se passer d&apos;un cadre explicite. En pratique, sans <strong>accord concret</strong>, les habitudes du couple reprennent souvent naturellement : repas partagés, gestes tendres automatiques, décisions prises comme si rien n&apos;avait changé. La séparation reste alors théorique tant qu&apos;elle ne se traduit pas par des choix visibles au quotidien.
           </p>
           <div className="bg-orange-50 border-l-4 border-orange-500 p-6 rounded">
-            <p className="text-gray-700"><strong>{'\u{1F4A1}'} À retenir :</strong> ce n&apos;est pas l&apos;intention qui rend une séparation réelle, mais les changements concrets qu&apos;elle produit dans l&apos;organisation quotidienne du foyer.</p>
+            <p className="text-gray-700"><strong>À retenir :</strong> ce n&apos;est pas l&apos;intention qui rend une séparation réelle, mais les changements concrets qu&apos;elle produit dans l&apos;organisation quotidienne du foyer.</p>
           </div>
         </section>
 
         {/* H2 2 */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">{'\u{1F4CB}'} Définir Clairement le Statut de la Relation</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Définir Clairement le Statut de la Relation</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Nommer explicitement que la relation de couple est terminee, meme en continuant a partager un logement, evite les malentendus et pose la base necessaire a toutes les autres regles de cohabitation.</p>
           <p className="text-gray-700 leading-relaxed">
             Avant d&apos;organiser quoi que ce soit d&apos;autre, il est nécessaire que les deux personnes partagent la même compréhension du <strong>statut de la relation</strong>. Si l&apos;un considère toujours être en couple pendant que l&apos;autre se vit comme séparé(e), toute organisation pratique reposera sur un malentendu de fond. Si ce statut lui-même reste flou ou changeant, notre guide sur une <Link href="/reconquete/separation-temporaire-ou-definitive/" className="text-orange-700 hover:text-orange-900 underline font-medium">séparation temporaire ou définitive</Link> aide à clarifier ce point avant d&apos;aller plus loin.
@@ -112,11 +112,11 @@ export default function VivreMemeToitApresSeparationPage() {
 
         {/* H2 3 */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">{'\u{1F6CF}️'} Organiser des Espaces et des Rythmes Séparés</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">{'️'} Organiser des Espaces et des Rythmes Séparés</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Definir des espaces personnels distincts et des horaires de vie separes, meme dans un logement partage, reduit considerablement les frictions quotidiennes et renforce concretement la realite de la separation.</p>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-white rounded-lg p-6 border-l-4 border-green-500">
-              <h3 className="font-bold text-lg mb-3 text-green-700">{'✅'} Ce qui Aide</h3>
+              <h3 className="font-bold text-lg mb-3 text-green-700">{''} Ce qui Aide</h3>
               <ul className="space-y-2 text-gray-700 text-sm">
                 <li>&bull; Chambre ou espace personnel <strong>clairement délimité</strong></li>
                 <li>&bull; Horaires de repas ou de salon décalés si possible</li>
@@ -125,7 +125,7 @@ export default function VivreMemeToitApresSeparationPage() {
               </ul>
             </div>
             <div className="bg-white rounded-lg p-6 border-l-4 border-orange-500">
-              <h3 className="font-bold text-lg mb-3 text-orange-700">{'\u{1F6AB}'} Ce qui Entretient la Confusion</h3>
+              <h3 className="font-bold text-lg mb-3 text-orange-700">Ce qui Entretient la Confusion</h3>
               <ul className="space-y-2 text-gray-700 text-sm">
                 <li>&bull; Continuer les rituels affectifs du couple</li>
                 <li>&bull; Improviser l&apos;organisation au jour le jour</li>
@@ -140,19 +140,19 @@ export default function VivreMemeToitApresSeparationPage() {
 
         {/* H2 4 */}
         <section id="regles" className="bg-gradient-to-br from-orange-50 to-amber-50 rounded-xl p-8 mb-8 border-2 border-orange-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">{'\u{1F5E3}️'} Fixer des Règles de Communication et d&apos;Intimité</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">{'️'} Fixer des Règles de Communication et d&apos;Intimité</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Poser des regles explicites sur l&apos;intimite physique, les marques d&apos;affection et le ton des echanges quotidiens empeche la cohabitation de glisser vers une relation ambigue qui ne dit pas son nom.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             L&apos;absence de règles claires laisse la porte ouverte à des situations que l&apos;une des deux personnes regrettera ensuite : un rapport intime &laquo;juste une fois&raquo;, une nuit passée ensemble par habitude, un geste tendre réflexe. Ces moments, une fois qu&apos;ils se produisent, brouillent encore davantage la frontière entre séparation et couple.
           </p>
           <div className="bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded">
-            <p className="text-gray-700"><strong>{'⚠️'} Point de vigilance :</strong> un rapport intime ou une nuit partagée pendant la cohabitation ne relance pas automatiquement la relation et ne doit pas être traité comme une preuve de retour, mais comme un signal qu&apos;une limite a été franchie et qu&apos;il faut la reclarifier.</p>
+            <p className="text-gray-700"><strong>{''} Point de vigilance :</strong> un rapport intime ou une nuit partagée pendant la cohabitation ne relance pas automatiquement la relation et ne doit pas être traité comme une preuve de retour, mais comme un signal qu&apos;une limite a été franchie et qu&apos;il faut la reclarifier.</p>
           </div>
         </section>
 
         {/* H2 5 */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">{'\u{1F6D1}'} Éviter le Rôle de &laquo;Couple sans Engagement&raquo;</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Éviter le Rôle de &laquo;Couple sans Engagement&raquo;</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">La cohabitation post-rupture expose au risque de devenir un couple de fait, sans les avantages de l&apos;engagement ni la liberte de la separation, une situation confortable pour l&apos;un et souvent epuisante pour l&apos;autre.</p>
           <p className="text-gray-700 leading-relaxed">
             Ce rôle intermédiaire, partager un quotidien, une intimité occasionnelle, un soutien mutuel, sans aucun projet de couple assumé, profite rarement de manière équilibrée aux deux personnes. Si vous reconnaissez ce schéma, notre guide sur la <Link href="/crise-couple/dependance-affective/" className="text-orange-700 hover:text-orange-900 underline font-medium">dépendance affective</Link> peut aider à identifier pourquoi il est difficile d&apos;en sortir malgré l&apos;inconfort ressenti.
@@ -161,7 +161,7 @@ export default function VivreMemeToitApresSeparationPage() {
 
         {/* H2 6 */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">{'\u{1F440}'} Gérer Jalousie, Nouveaux Partenaires et Signaux Contradictoires</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Gérer Jalousie, Nouveaux Partenaires et Signaux Contradictoires</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">L&apos;apparition d&apos;une nouvelle rencontre ou une reaction de jalousie pendant la cohabitation ne prouve ni un desir de retour ni une trahison : ce sont des reactions humaines a encadrer par des regles anticipees plutot qu&apos;a interpreter dans l&apos;instant.</p>
           <p className="text-gray-700 leading-relaxed">
             Introduire un nouveau partenaire dans un logement encore partagé demande une discussion anticipée, pas une improvisation au moment critique. De même, une réaction de jalousie de l&apos;ex ne signale pas nécessairement un désir de reconstruire : elle peut simplement traduire une difficulté à voir l&apos;autre avancer pendant que soi-même on cohabite encore dans l&apos;ancien cadre.
@@ -170,7 +170,7 @@ export default function VivreMemeToitApresSeparationPage() {
 
         {/* H2 7 */}
         <section id="sortie" className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">{'\u{1F6AA}'} Préparer une Sortie Progressive de la Cohabitation</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Préparer une Sortie Progressive de la Cohabitation</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Se fixer des etapes concretes et un horizon realiste de fin de cohabitation, meme sans date precise au depart, permet d&apos;avancer activement vers l&apos;autonomie plutot que de subir une situation qui s&apos;eternise.</p>
           <p className="text-gray-700 leading-relaxed">
             Même quand aucune date n&apos;est fixée dès le départ, garder en vue des <strong>étapes concrètes</strong> vers l&apos;autonomie, recherche active de logement, plan financier, réorganisation progressive, évite que la cohabitation ne devienne une situation par défaut, confortable à court terme mais coûteuse émotionnellement sur la durée. Une fois le départ effectif, notre guide pour <Link href="/rupture/oublier-son-ex/" className="text-orange-700 hover:text-orange-900 underline font-medium">oublier son ex</Link> accompagne l&apos;étape suivante de la reconstruction.
@@ -179,13 +179,13 @@ export default function VivreMemeToitApresSeparationPage() {
 
         {/* H2 8 */}
         <section className="bg-gradient-to-r from-red-50 to-orange-50 rounded-xl p-8 mb-8 border-2 border-red-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">{'\u{1F6A8}'} Reconnaître Quand la Situation Devient Émotionnellement Intenable</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Reconnaître Quand la Situation Devient Émotionnellement Intenable</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Si la cohabitation s&apos;accompagne de controle, de pression, de peur ou de menaces, il ne s&apos;agit plus d&apos;une simple difficulte relationnelle mais d&apos;une situation a securiser en priorite, avec l&apos;aide de ressources dediees.</p>
           <p className="text-gray-700 leading-relaxed mb-4">
             Certains signes doivent alerter au-delà du simple inconfort émotionnel : contrôle des allées et venues, pression répétée pour revenir, peur ressentie au quotidien dans son propre logement, ou comportements menaçants. Dans ces situations, la priorité absolue devient la <strong>sécurité</strong>, pas l&apos;organisation harmonieuse de la cohabitation.
           </p>
           <div className="bg-white p-6 rounded-lg border-2 border-red-200">
-            <p className="text-gray-700"><strong>{'\u{1F6A8}'} Ressource utile :</strong> en France, le <strong>3919</strong> (Violences Femmes Info) offre une écoute et une orientation pour les situations de violence conjugale. Organisez votre sortie avec le soutien de personnes de confiance et sans prévenir la personne concernée à l&apos;avance si vous vous sentez en danger.</p>
+            <p className="text-gray-700"><strong>Ressource utile :</strong> en France, le <strong>3919</strong> (Violences Femmes Info) offre une écoute et une orientation pour les situations de violence conjugale. Organisez votre sortie avec le soutien de personnes de confiance et sans prévenir la personne concernée à l&apos;avance si vous vous sentez en danger.</p>
           </div>
         </section>
 

@@ -53,7 +53,7 @@ export default function VoyantCard({ voyant, source = 'content-page', compact = 
             <p className="text-sm text-gray-600 mb-2">{genderLabel}</p>
             <div className="flex items-center gap-3 text-xs text-gray-600 mb-2">
               <span className="flex items-center gap-1">
-                ⭐ {parseFloat(voyant.STAR).toFixed(1)}/5
+                {parseFloat(voyant.STAR).toFixed(1)}/5
               </span>
               <span>{voyant.EVAL} avis</span>
               <span>{voyant.CONSULT} consultations</span>
@@ -122,15 +122,15 @@ export default function VoyantCard({ voyant, source = 'content-page', compact = 
         <div className="grid grid-cols-3 gap-2 mb-6 text-center">
           <div className="bg-purple-50 rounded-lg p-2">
             <div className="text-lg font-bold text-purple-700 truncate">{parseFloat(voyant.STAR).toFixed(1)}</div>
-            <div className="text-xs text-gray-600 mt-1">⭐ Note</div>
+            <div className="text-xs text-gray-600 mt-1">Note</div>
           </div>
           <div className="bg-blue-50 rounded-lg p-2">
             <div className="text-lg font-bold text-blue-700 truncate">{voyant.EVAL}</div>
-            <div className="text-xs text-gray-600 mt-1">📝 Avis</div>
+            <div className="text-xs text-gray-600 mt-1">Avis</div>
           </div>
           <div className="bg-green-50 rounded-lg p-2">
             <div className="text-lg font-bold text-green-700 truncate">{voyant.CONSULT}</div>
-            <div className="text-xs text-gray-600 mt-1">✅ Consultations</div>
+            <div className="text-xs text-gray-600 mt-1">Consultations</div>
           </div>
         </div>
 
@@ -152,19 +152,19 @@ export default function VoyantCard({ voyant, source = 'content-page', compact = 
           <div className="space-y-1 text-sm">
             {voyant.TEL === '1' && (
               <div className="flex justify-between">
-                <span className="text-gray-600">📞 Téléphone :</span>
+                <span className="text-gray-600">Téléphone :</span>
                 <span className="font-semibold text-purple-700">{formatPrice(voyant.T_TEL)}/min</span>
               </div>
             )}
             {voyant.CHAT === '1' && (
               <div className="flex justify-between">
-                <span className="text-gray-600">💬 Chat :</span>
+                <span className="text-gray-600">Chat :</span>
                 <span className="font-semibold text-purple-700">{formatPrice(voyant.T_CHAT)}/min</span>
               </div>
             )}
             {voyant.MAIL === '1' && (
               <div className="flex justify-between">
-                <span className="text-gray-600">📧 Email :</span>
+                <span className="text-gray-600">Email :</span>
                 <span className="font-semibold text-purple-700">{formatPrice(voyant.MAIL_S)}</span>
               </div>
             )}
@@ -173,7 +173,7 @@ export default function VoyantCard({ voyant, source = 'content-page', compact = 
 
         {/* Last review */}
         <div className="mb-4 bg-gradient-to-br from-purple-50 to-pink-50 rounded-lg p-4 border-l-4 border-purple-500">
-          <h4 className="text-sm font-semibold text-gray-700 mb-2">💬 Dernier avis client :</h4>
+          <h4 className="text-sm font-semibold text-gray-700 mb-2">Dernier avis client :</h4>
           <p className="text-sm text-gray-700 italic line-clamp-3">"{voyant.LASTEVAL}"</p>
         </div>
 
@@ -200,7 +200,7 @@ export default function VoyantCard({ voyant, source = 'content-page', compact = 
           onClick={handleAffiliateClick}
           className="mt-auto block w-full bg-gradient-to-r from-purple-600 to-indigo-600 text-white text-center font-semibold py-3 rounded-lg hover:from-purple-700 hover:to-indigo-700 transition-all shadow-md hover:shadow-lg"
         >
-          {isOnline ? '🔮 Consulter maintenant' : '📅 Prendre rendez-vous'}
+          {isOnline ? 'Consulter maintenant' : 'Prendre rendez-vous'}
         </a>
 
         <p className="text-xs text-gray-500 text-center mt-3">

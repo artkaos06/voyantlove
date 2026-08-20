@@ -79,7 +79,7 @@ export default function NouvelleRencontreHubPage() {
       <header className="bg-gradient-to-r from-cyan-500 via-blue-500 to-indigo-500 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <Link href="/" className="text-white/80 hover:text-white mb-4 inline-block">← Accueil</Link>
-          <h1 className="text-5xl font-bold mb-6">✨ Nouvelle rencontre amoureuse</h1>
+          <h1 className="text-5xl font-bold mb-6">Nouvelle rencontre amoureuse</h1>
           <p className="text-2xl opacity-95 mb-8">Trouver l'Amour et votre Âme Sœur</p>
           <p className="text-lg opacity-90 max-w-2xl mx-auto">Le tarot prédit quand, où et comment vous allez rencontrer votre prochaine relation.</p>
         </div>
@@ -188,67 +188,67 @@ export default function NouvelleRencontreHubPage() {
         </section>
 
         <section className="mb-16">
-          <h2 className="text-3xl font-bold mb-8 text-center">🗺️ Votre Chemin vers l'Amour</h2>
+          <h2 className="text-3xl font-bold mb-8 text-center">Votre Chemin vers l'Amour</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le tarot et la <Link href="/voyance-amour/" className="text-cyan-600 hover:text-cyan-800 underline font-medium">voyance amoureuse</Link> guident chaque étape de votre quête sentimentale, du timing de la rencontre à la reconnaissance de votre âme sœur, en passant par la préparation intérieure et spirituelle.</p>
           <div className="grid md:grid-cols-2 gap-8">
             <Link href="/nouvelle-rencontre/quand-rencontre-amour/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-cyan-500">
-              <div className="text-4xl mb-4">⏰</div>
+              <div className="text-4xl mb-4"></div>
               <h3 className="text-2xl font-bold mb-3">Quand Rencontrer ?</h3>
               <p className="text-gray-600 mb-4">Timing, lieu et profil de votre prochaine rencontre amoureuse.</p>
               <span className="text-cyan-600 font-semibold">Découvrir →</span>
             </Link>
 
             <Link href="/nouvelle-rencontre/trouver-ame-soeur/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-purple-500">
-              <div className="text-4xl mb-4">💫</div>
+              <div className="text-4xl mb-4"></div>
               <h3 className="text-2xl font-bold mb-3">Trouver l'Âme Sœur</h3>
               <p className="text-gray-600 mb-4">Comment et où trouver votre âme sœur selon la destinée.</p>
               <span className="text-purple-600 font-semibold">Découvrir →</span>
             </Link>
 
             <Link href="/nouvelle-rencontre/signes-ame-soeur/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-pink-500">
-              <div className="text-4xl mb-4">✨</div>
+              <div className="text-4xl mb-4"></div>
               <h3 className="text-2xl font-bold mb-3">Signes Âme Sœur</h3>
               <p className="text-gray-600 mb-4">Reconnaître votre âme sœur quand vous la rencontrez.</p>
               <span className="text-pink-600 font-semibold">Découvrir →</span>
             </Link>
 
             <Link href="/nouvelle-rencontre/nouvelle-relation-amoureuse/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-green-500">
-              <div className="text-4xl mb-4">🌱</div>
+              <div className="text-4xl mb-4"></div>
               <h3 className="text-2xl font-bold mb-3">Nouvelle Relation</h3>
               <p className="text-gray-600 mb-4">Débuter une nouvelle relation après rupture avec sagesse.</p>
               <span className="text-green-600 font-semibold">Découvrir →</span>
             </Link>
 
             <Link href="/nouvelle-rencontre/flamme-jumelle/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-indigo-500">
-              <div className="text-4xl mb-4">🔥</div>
+              <div className="text-4xl mb-4"></div>
               <h3 className="text-2xl font-bold mb-3">Flamme Jumelle</h3>
               <p className="text-gray-600 mb-4">Reconnaître et vivre la connexion avec votre flamme jumelle.</p>
               <span className="text-indigo-600 font-semibold">Découvrir →</span>
             </Link>
 
             <Link href="/nouvelle-rencontre/amour-apres-40-ans/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-amber-500">
-              <div className="text-4xl mb-4">💛</div>
+              <div className="text-4xl mb-4"></div>
               <h3 className="text-2xl font-bold mb-3">Amour après 40 ans</h3>
               <p className="text-gray-600 mb-4">Trouver l'amour après 40 ans : guidance et prédictions sentimentales.</p>
               <span className="text-amber-600 font-semibold">Découvrir →</span>
             </Link>
 
             <Link href="/nouvelle-rencontre/peur-de-aimer-a-nouveau/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-rose-500">
-              <div className="text-4xl mb-4">🛡️</div>
+              <div className="text-4xl mb-4"></div>
               <h3 className="text-2xl font-bold mb-3">Peur d&apos;Aimer</h3>
               <p className="text-gray-600 mb-4">Surmonter la peur d&apos;aimer à nouveau après une blessure sentimentale.</p>
               <span className="text-rose-600 font-semibold">Découvrir →</span>
             </Link>
 
             <Link href="/nouvelle-rencontre/voyance-celibat-trouver-lamour/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-violet-500">
-              <div className="text-4xl mb-4">💜</div>
+              <div className="text-4xl mb-4"></div>
               <h3 className="text-2xl font-bold mb-3">Célibat & Voyance</h3>
               <p className="text-gray-600 mb-4">Voyance pour célibataires : quand et comment trouver l&apos;amour.</p>
               <span className="text-violet-600 font-semibold">Découvrir →</span>
             </Link>
 
             <Link href="/nouvelle-rencontre/rencontre-amoureuse-en-ligne/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-blue-500">
-              <div className="text-4xl mb-4">💻</div>
+              <div className="text-4xl mb-4"></div>
               <h3 className="text-2xl font-bold mb-3">Rencontre en Ligne</h3>
               <p className="text-gray-600 mb-4">Guidance voyance pour les rencontres amoureuses en ligne.</p>
               <span className="text-blue-600 font-semibold">Découvrir →</span>

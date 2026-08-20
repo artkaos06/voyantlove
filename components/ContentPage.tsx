@@ -139,23 +139,28 @@ export default function ContentPage({
         />
       ))}
 
-      <header className={`bg-gradient-to-r ${config.header.gradient} text-white py-8 px-4 sm:py-16`}>
+      <header className="border-b border-gray-200 bg-white px-4 pb-7 pt-8 sm:pt-12">
         <div className="max-w-4xl mx-auto">
-          <Link href={config.header.backLink.href} className="text-white/80 hover:text-white mb-4 inline-block">
+          <Link href={config.header.backLink.href} className="mb-3 inline-block text-sm text-purple-700 hover:text-purple-900 hover:underline">
             ← {config.header.backLink.label}
           </Link>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">{config.header.emoji} {config.header.h1}</h1>
-          <p className="text-xl opacity-95 mb-6">{config.header.subtitle}</p>
+          {/* config.header.emoji is deliberately not rendered. 119 page configs
+              still carry the field; leaving it unused retires every one of them
+              at once instead of editing 119 files. */}
+          <h1 className="text-[1.75rem] font-bold leading-[1.15] tracking-tight text-gray-900 sm:text-4xl">{config.header.h1}</h1>
+          <p className="mt-3 max-w-2xl text-[0.95rem] leading-relaxed text-gray-600">{config.header.subtitle}</p>
           {config.header.anchors && config.header.anchors.length > 0 && (
-            <div className="flex gap-4 flex-wrap">
+            <div className="mt-5 flex flex-wrap gap-3">
               {config.header.anchors.map((a) => (
                 <a
                   key={a.href}
                   href={a.href}
+                  // Was white-on-gradient. The banner is white now, so a white
+                  // button and a white border were both invisible.
                   className={
                     a.primary
-                      ? 'bg-white text-gray-900 px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition'
-                      : 'border-2 border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-gray-900 transition'
+                      ? 'rounded-lg bg-purple-700 px-5 py-3 text-sm font-semibold text-white transition hover:bg-purple-800'
+                      : 'rounded-lg border border-gray-300 px-5 py-3 text-sm font-semibold text-gray-700 transition hover:border-purple-400 hover:text-purple-700'
                   }
                 >
                   {a.label}
@@ -182,7 +187,8 @@ export default function ContentPage({
           <div className={`bg-white rounded-xl shadow-md p-5 sm:p-6 mb-8 grid ${getStatsGridClassName(config.stats.length)} gap-x-4 gap-y-6 text-center`}>
             {config.stats.map((s, i) => (
               <div key={i} className="min-w-0">
-                <div className="text-3xl mb-1">{s.icon}</div>
+                {/* s.icon held 311 emoji across the site. The number and its
+                    label carry the meaning; the emoji above them never did. */}
                 <div className={`text-xl sm:text-2xl leading-tight font-bold break-words ${accent}`}>{s.value}</div>
                 <div className="text-sm text-gray-600">{s.label}</div>
               </div>
@@ -194,7 +200,7 @@ export default function ContentPage({
         {children}
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold mb-8">❓ Questions Fréquentes</h2>
+          <h2 className="text-3xl font-bold mb-8">Questions Fréquentes</h2>
           <div className="space-y-6">
             {config.faq.map((f, i) => (
               <div key={i} className={i < config.faq.length - 1 ? 'border-b pb-6' : ''}>
@@ -207,7 +213,7 @@ export default function ContentPage({
 
         {config.related && config.related.length > 0 && (
           <div className="bg-gray-100 rounded-xl p-6 mb-8">
-            <h3 className="font-bold text-lg mb-4">📚 Articles Connexes</h3>
+            <h3 className="font-bold text-lg mb-4">Articles Connexes</h3>
             <div className="space-y-2">
               {config.related.map((r) => (
                 <Link key={r.href} href={r.href} className="block text-blue-600 hover:text-blue-800 font-medium">

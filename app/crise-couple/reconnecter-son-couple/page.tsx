@@ -16,7 +16,7 @@ const config: ContentPageConfig = {
     { name: 'Reconnecter son Couple', url: 'https://www.voyantlove.fr/crise-couple/reconnecter-son-couple/' },
   ],
   header: {
-    emoji: '🔥',
+    emoji: '',
     h1: 'Reconnecter son couple : retrouver la complicité',
     subtitle: 'Guidance voyance et tarot pour raviver la flamme et reconstruire votre lien',
     gradient: 'from-amber-500 via-amber-600 to-orange-600',
@@ -27,10 +27,10 @@ const config: ContentPageConfig = {
   },
   accentText: 'text-amber-600',
   stats: [
-    { icon: '⭐', value: '4.9/5', label: '276 Avis' },
-    { icon: '💑', value: '87%', label: 'Couples reconnectés' },
-    { icon: '⏰', value: '4-8 sem', label: 'Résultats visibles' },
-    { icon: '🔮', value: '15 ans', label: 'Expérience' },
+    { icon: '', value: '4.9/5', label: '276 Avis' },
+    { icon: '', value: '87%', label: 'Couples reconnectés' },
+    { icon: '', value: '4-8 sem', label: 'Résultats visibles' },
+    { icon: '', value: '15 ans', label: 'Expérience' },
   ],
   eeat: { colorScheme: 'orange', method: 'Tarot relationnel et guidance de couple' },
   cta: { topic: 'crise-couple', slug: 'reconnecter-son-couple' },
@@ -80,7 +80,7 @@ export default function ReconnecterSonCouplePage() {
         <VoyantRecommendations topic="crise-couple" limit={3} showOnlineFirst={true} source="reconnecter-son-couple-cards-top" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">🔮 Ce que le Tarot Révèle sur Votre Couple</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Ce que le Tarot Révèle sur Votre Couple</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le tarot relationnel analyse la dynamique de votre couple à travers quatre axes : l&apos;état émotionnel de chaque partenaire, les obstacles à la reconnexion, les forces cachées du couple et le potentiel de renouveau.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Un <strong>tirage de couple</strong> ne se contente pas de décrire la surface. Il plonge dans les couches profondes de votre relation pour révéler des dynamiques dont vous n&apos;avez peut-être même pas conscience. Chaque carte devient un miroir qui reflète une dimension de votre <strong>lien amoureux</strong>.
@@ -106,7 +106,7 @@ export default function ReconnecterSonCouplePage() {
         </section>
 
         <section className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-xl p-8 mb-8 border-2 border-amber-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">💛 Les 5 Piliers de la Reconnexion</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Les 5 Piliers de la Reconnexion</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Reconnecter un couple repose sur cinq piliers essentiels : la communication authentique, le temps de qualité, l&apos;intimité émotionnelle, la gratitude partagée et le projet commun renouvelé.</p>
           <div className="space-y-6">
             <div className="flex items-start gap-4">
@@ -150,37 +150,37 @@ export default function ReconnecterSonCouplePage() {
         <VoyantQuickCTA topic="crise-couple" source="reconnecter-son-couple-banner-mid" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">⚡ Les Signaux d&apos;Alerte à Ne Pas Ignorer</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Les Signaux d&apos;Alerte à Ne Pas Ignorer</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Certains signaux indiquent que votre couple a besoin d&apos;attention urgente. Les reconnaître tôt permet d&apos;agir avant que l&apos;éloignement ne devienne irréversible.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             L&apos;éloignement dans un couple ne se produit pas du jour au lendemain. Il s&apos;installe progressivement, par petites touches, jusqu&apos;au jour où vous réalisez que vous vivez en parallèle plutôt qu&apos;ensemble. La <strong>voyance</strong> identifie ces signaux précoces que beaucoup de partenaires ignorent par habitude ou par peur de la confrontation.
           </p>
           <div className="space-y-3">
             <div className="flex items-start gap-3">
-              <div className="text-2xl text-amber-500">⚠️</div>
+              <div className="text-2xl text-amber-500"></div>
               <p className="text-gray-700"><strong>Conversations réduites au minimum</strong> : Quand vous ne parlez plus que de logistique (courses, enfants, factures), l&apos;<strong>intimité émotionnelle</strong> s&apos;éteint. Ce silence complice qui existait au début est devenu un vide inconfortable.</p>
             </div>
             <div className="flex items-start gap-3">
-              <div className="text-2xl text-amber-500">⚠️</div>
+              <div className="text-2xl text-amber-500"></div>
               <p className="text-gray-700"><strong>Irritation constante</strong> : Les petites habitudes qui vous attendrissaient deviennent des sources d&apos;agacement. Ce changement de perception révèle un <strong>éloignement émotionnel</strong> qu&apos;il est crucial de traiter rapidement.</p>
             </div>
             <div className="flex items-start gap-3">
-              <div className="text-2xl text-amber-500">⚠️</div>
+              <div className="text-2xl text-amber-500"></div>
               <p className="text-gray-700"><strong>Vies séparées sous le même toit</strong> : Chacun a ses activités, ses amis, son écran. Les moments de partage se raréfient. Le <strong>couple</strong> existe sur le papier mais plus dans le quotidien vécu.</p>
             </div>
             <div className="flex items-start gap-3">
-              <div className="text-2xl text-amber-500">⚠️</div>
+              <div className="text-2xl text-amber-500"></div>
               <p className="text-gray-700"><strong>Absence de projets communs</strong> : Vous ne planifiez plus rien ensemble. L&apos;avenir se conjugue au singulier plutôt qu&apos;au pluriel. C&apos;est le signe que la <strong>connexion de couple</strong> s&apos;est fragilisée.</p>
             </div>
             <div className="flex items-start gap-3">
-              <div className="text-2xl text-amber-500">⚠️</div>
+              <div className="text-2xl text-amber-500"></div>
               <p className="text-gray-700"><strong>Indifférence émotionnelle</strong> : Le plus dangereux des signaux. Quand la colère laisse place à l&apos;indifférence, la <strong>reconnexion</strong> devient urgente. Le <strong>tarot</strong> révèle souvent que sous cette indifférence apparente se cache encore une étincelle qu&apos;il est possible de <strong>raviver</strong>.</p>
             </div>
           </div>
         </section>
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">🌟 L&apos;Astrologie au Service de Votre Couple</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">L&apos;Astrologie au Service de Votre Couple</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">L&apos;astrologie de couple identifie les périodes favorables à la reconnexion et les dynamiques naturelles entre partenaires pour construire une stratégie de renouveau alignée avec les cycles cosmiques.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             La <strong>synastrie astrologique</strong> &mdash; la comparaison de vos deux thèmes natals &mdash; révèle les forces et les défis naturels de votre couple. Certains aspects planétaires créent une <strong>complicité innée</strong>, d&apos;autres génèrent des frictions récurrentes. Comprendre ces dynamiques transforme votre façon d&apos;aborder les conflits.

@@ -16,7 +16,7 @@ const config: ContentPageConfig = {
     { name: 'Rupture Amoureuse', url: 'https://www.voyantlove.fr/rupture/rupture-amoureuse/' },
   ],
   header: {
-    emoji: '💔',
+    emoji: '',
     h1: 'Rupture amoureuse',
     subtitle: 'Comprendre et surmonter avec le tarot',
     gradient: 'from-gray-700 via-gray-800 to-gray-900',
@@ -28,10 +28,10 @@ const config: ContentPageConfig = {
   },
   accentText: 'text-gray-700',
   stats: [
-    { icon: '⭐', value: 'Clarté', label: 'Sur votre situation' },
-    { icon: '💔', value: 'Compréhension', label: 'Des causes profondes' },
-    { icon: '⏰', value: '4-8 mois', label: 'Guérison' },
-    { icon: '🌱', value: 'Évolution', label: 'Personnelle assurée' },
+    { icon: '', value: 'Clarté', label: 'Sur votre situation' },
+    { icon: '', value: 'Compréhension', label: 'Des causes profondes' },
+    { icon: '', value: '4-8 mois', label: 'Guérison' },
+    { icon: '', value: 'Évolution', label: 'Personnelle assurée' },
   ],
   eeat: { colorScheme: 'red', method: 'Tarot de guérison émotionnelle' },
   cta: { topic: 'rupture', slug: 'rupture-amoureuse' },
@@ -77,7 +77,7 @@ export default function RuptureAmoureusePage() {
         <VoyantRecommendations topic="rupture" limit={3} showOnlineFirst={true} source="rupture-amoureuse-cards-top" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold mb-6">🔍 Les Vraies Raisons</h2>
+          <h2 className="text-3xl font-bold mb-6">Les Vraies Raisons</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Les vraies raisons d'une rupture sont souvent invisibles : incompatibilité de valeurs, schémas toxiques installés progressivement, évolution divergente des partenaires ou timing karmique accompli. Le tarot révèle ces causes profondes.</p>
           <div className="space-y-4">
             <div className="bg-red-50 border-l-4 border-red-500 p-4 rounded"><h3 className="font-bold text-red-700 mb-2">Incompatibilité Fondamentale</h3><p className="text-gray-700">Des <strong>valeurs</strong> et des <strong>objectifs de vie</strong> fondamentalement divergents finissent toujours par créer une fracture irréparable. L'un rêvait d'enfants tandis que l'autre ne s'y voyait pas, l'un aspirait à l'aventure et aux voyages quand l'autre recherchait la stabilité et la routine. Ces différences, souvent minimisées au début de la relation par l'euphorie amoureuse, deviennent des sources de frustration chronique au fil des années. Le tarot identifie ces incompatibilités profondes et révèle si elles étaient présentes dès le départ ou si elles se sont développées avec le temps.</p></div>
@@ -88,7 +88,7 @@ export default function RuptureAmoureusePage() {
         </section>
 
         <section id="guerison" className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl p-8 mb-8">
-          <h2 className="text-3xl font-bold mb-6">🌱 Processus de Guérison</h2>
+          <h2 className="text-3xl font-bold mb-6">Processus de Guérison</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le processus de guérison après une rupture suit cinq phases : le choc initial, la colère, la négociation, la tristesse profonde et enfin la reconstruction. Le tarot identifie votre phase actuelle et le temps restant.</p>
           <div className="space-y-4">
             <div className="bg-white p-4 rounded border-l-4 border-red-500"><h3 className="font-bold text-red-700 mb-2">Semaines 1-2: Choc</h3><p className="text-gray-700">La phase de <strong>choc</strong> se manifeste par de l'incrédulité, du déni et un espoir irrationnel que tout va s'arranger. Votre cerveau active un mécanisme de protection psychique qui vous empêche de ressentir l'ampleur de la douleur d'un seul coup. Vous pouvez avoir l'impression de fonctionner en pilote automatique, de vivre dans un rêve, ou de vous réveiller chaque matin en oubliant pendant quelques secondes que la rupture a eu lieu. Ne prenez aucune décision importante pendant cette phase et entourez-vous de personnes bienveillantes.</p></div>
@@ -100,7 +100,7 @@ export default function RuptureAmoureusePage() {
         </section>
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold mb-6">🔮 Le Tirage Tarot de la Rupture : 5 Positions</h2>
+          <h2 className="text-3xl font-bold mb-6">Le Tirage Tarot de la Rupture : 5 Positions</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le tirage tarot de la rupture en cinq positions révèle la cause réelle, la leçon karmique, votre état émotionnel, le potentiel de retour ou de nouvelle rencontre, et le conseil de guérison personnalisé.</p>
           <p className="text-gray-700 mb-6">
             Ce <strong>tirage spécialisé</strong> en cinq cartes est spécifiquement conçu pour les personnes traversant une <strong>rupture amoureuse</strong>. Il éclaire les zones d'ombre de votre séparation et trace un chemin concret vers la guérison.
@@ -147,7 +147,7 @@ export default function RuptureAmoureusePage() {
         <VoyantQuickCTA topic="rupture" source="rupture-amoureuse-banner-mid" />
 
         <section className="bg-gradient-to-br from-red-50 to-orange-50 rounded-xl p-8 mb-8 border-2 border-red-200">
-          <h2 className="text-3xl font-bold mb-6 text-gray-900">🚫 Les Erreurs à Éviter Après une Rupture</h2>
+          <h2 className="text-3xl font-bold mb-6 text-gray-900">Les Erreurs à Éviter Après une Rupture</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Les cinq erreurs majeures après une rupture sont : recontacter son ex sous l'émotion, se précipiter dans une relation rebond, stalker son ex en ligne, refuser la douleur et idéaliser la relation passée.</p>
           <p className="text-gray-700 mb-6">
             Dans la douleur d'une <strong>séparation</strong>, certains comportements instinctifs peuvent considérablement ralentir votre guérison. Voici les pièges les plus courants à identifier et à éviter pour avancer sereinement.

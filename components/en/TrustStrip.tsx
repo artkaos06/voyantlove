@@ -22,7 +22,7 @@ const BADGES: TrustBadgeProps[] = [
     subtext: 'Keen launched 1999 · part of Ingenio LLC',
   },
   {
-    icon: '🛡️',
+    icon: '',
     headline: 'Money-back guarantee',
     subtext: 'Unhappy with your first session? Get your money back.',
   },

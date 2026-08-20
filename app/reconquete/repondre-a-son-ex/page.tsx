@@ -16,7 +16,7 @@ const config: ContentPageConfig = {
     { name: 'Faut-il Répondre à son Ex ?', url: 'https://www.voyantlove.fr/reconquete/repondre-a-son-ex/' },
   ],
   header: {
-    emoji: '📩',
+    emoji: '',
     h1: 'Faut-il répondre à son ex quand il recontacte ?',
     subtitle: 'Décider selon vos objectifs, sans vous précipiter ni décoder chaque message',
     gradient: 'from-violet-600 via-purple-600 to-indigo-600',
@@ -28,10 +28,10 @@ const config: ContentPageConfig = {
   },
   accentText: 'text-violet-600',
   stats: [
-    { icon: '🔮', value: 'Reconnue', label: 'Expertise' },
-    { icon: '📩', value: '3,500+', label: 'Consultations' },
-    { icon: '⭐', value: '4.7/5', label: '278 Avis' },
-    { icon: '🔒', value: '100%', label: 'Confidentiel' },
+    { icon: '', value: 'Reconnue', label: 'Expertise' },
+    { icon: '', value: '3,500+', label: 'Consultations' },
+    { icon: '', value: '4.7/5', label: '278 Avis' },
+    { icon: '', value: '100%', label: 'Confidentiel' },
   ],
   eeat: { colorScheme: 'purple', method: 'Guidance de reconquête et lecture des dynamiques relationnelles' },
   cta: { topic: 'reconquete', slug: 'repondre-ex' },
@@ -91,7 +91,7 @@ export default function RepondreASonExPage() {
 
         {/* H2: La vraie question */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">{'\u{1F9ED}'} La Vraie Question : Qu&apos;est-ce qui est Bon pour Vous ?</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">La Vraie Question : Qu&apos;est-ce qui est Bon pour Vous ?</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Avant de se demander ce que l&apos;autre attend, il faut clarifier son propre objectif : cherchez-vous une clarification, un apaisement, une reconquete, ou simplement a proteger votre guerison ? La reponse guide toute la decision.</p>
           <p className="text-gray-700 leading-relaxed mb-4">
             Le réflexe, en recevant un message d&apos;un ex, est de chercher à décoder <strong>ses</strong> intentions. Mais la décision de répondre vous appartient et doit d&apos;abord servir <strong>votre</strong> équilibre. Identifier votre objectif, clarifier, apaiser, envisager une reconquête, ou protéger votre guérison, transforme une réaction impulsive en choix conscient.
@@ -103,14 +103,14 @@ export default function RepondreASonExPage() {
 
         {/* H2: Répondre ou se taire */}
         <section id="decider" className="bg-gradient-to-br from-violet-50 to-indigo-50 rounded-xl p-8 mb-8 border-2 border-violet-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">{'⚖️'} Répondre ou Garder le Silence : Comment Trancher</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">{''} Répondre ou Garder le Silence : Comment Trancher</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Repondre a du sens lorsque vous etes apaise et ouvert au dialogue ou que vous cherchez une clarification, tandis que le silence protege mieux quand le message vous replonge dans la douleur ou qu&apos;il s&apos;agit d&apos;un contact ambigu et repete sans projet.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Voici deux colonnes pour situer votre situation. Elles ne décident pas à votre place, mais éclairent le choix le plus aligné avec votre état du moment.
           </p>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-white rounded-lg p-6 border-l-4 border-green-500">
-              <h3 className="font-bold text-lg mb-3 text-green-700">{'✅'} Répondre a du Sens Si...</h3>
+              <h3 className="font-bold text-lg mb-3 text-green-700">{''} Répondre a du Sens Si...</h3>
               <ul className="space-y-2 text-gray-700 text-sm">
                 <li>&bull; Vous êtes <strong>apaisé(e)</strong> et ouvert(e) au dialogue</li>
                 <li>&bull; Vous souhaitez une clarification que vous n&apos;avez pas eue</li>
@@ -119,7 +119,7 @@ export default function RepondreASonExPage() {
               </ul>
             </div>
             <div className="bg-white rounded-lg p-6 border-l-4 border-orange-500">
-              <h3 className="font-bold text-lg mb-3 text-orange-700">{'\u{1F92B}'} Le Silence Protège Mieux Si...</h3>
+              <h3 className="font-bold text-lg mb-3 text-orange-700">Le Silence Protège Mieux Si...</h3>
               <ul className="space-y-2 text-gray-700 text-sm">
                 <li>&bull; Le message vous <strong>replonge dans la douleur</strong></li>
                 <li>&bull; C&apos;est un contact ambigu et répété, sans projet</li>
@@ -129,13 +129,13 @@ export default function RepondreASonExPage() {
             </div>
           </div>
           <div className="mt-6 bg-white p-6 rounded-lg border-2 border-violet-200">
-            <p className="text-gray-700"><strong>{'\u{1F4A1}'} Repère :</strong> un contact qui réapparaît uniquement quand vous vous éloignez, puis retombe, ressemble à un schéma <Link href="/reconquete/ex-chaud-et-froid-apres-separation/" className="text-violet-600 hover:text-violet-800 underline font-medium">chaud et froid</Link>. Dans ce cas, le silence n&apos;est pas de la fuite : c&apos;est une manière de ne pas alimenter un cycle qui ne mène nulle part.</p>
+            <p className="text-gray-700"><strong>Repère :</strong> un contact qui réapparaît uniquement quand vous vous éloignez, puis retombe, ressemble à un schéma <Link href="/reconquete/ex-chaud-et-froid-apres-separation/" className="text-violet-600 hover:text-violet-800 underline font-medium">chaud et froid</Link>. Dans ce cas, le silence n&apos;est pas de la fuite : c&apos;est une manière de ne pas alimenter un cycle qui ne mène nulle part.</p>
           </div>
         </section>
 
         {/* H2: Ne pas répondre dans l'instant */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">{'⏳'} Pourquoi ne Pas Répondre dans l&apos;Instant</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">{''} Pourquoi ne Pas Répondre dans l&apos;Instant</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Prendre le temps de sentir ce que le message provoque evite les reponses impulsives dictees par l&apos;emotion : se donner quelques heures n&apos;est ni un jeu ni une manipulation, c&apos;est repondre depuis un etat pose plutot que sous le coup de l&apos;emotion.</p>
           <p className="text-gray-700 leading-relaxed mb-4">
             Recevoir un message d&apos;un ex déclenche souvent une vague émotionnelle intense, joie, colère, espoir, peur. Répondre dans cet état conduit fréquemment à <strong>en dire trop</strong>, à relancer un lien qu&apos;une partie de vous cherchait à apaiser, ou à formuler quelque chose qu&apos;on regrette. Se donner quelques heures, voire un jour, laisse l&apos;émotion redescendre.
@@ -149,14 +149,14 @@ export default function RepondreASonExPage() {
 
         {/* H2: Comment répondre sans se dévaloriser */}
         <section id="comment" className="bg-gradient-to-r from-indigo-50 to-purple-50 rounded-xl p-8 mb-8 border-2 border-indigo-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">{'\u{1F4AC}'} Comment Répondre sans se Dévaloriser ni Relancer un Jeu</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Comment Répondre sans se Dévaloriser ni Relancer un Jeu</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Une reponse saine est authentique, mesuree et coherente : elle evite la froideur calculee comme l&apos;empressement qui efface les limites, repond a ce qui est reellement dit sans surinterpreter, et pose un cadre clair sur ce que vous acceptez.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Si vous choisissez de répondre, la <strong>forme</strong> compte autant que la décision. Voici les repères d&apos;une réponse qui vous respecte.
           </p>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-white rounded-lg p-6 border-l-4 border-green-500">
-              <h3 className="font-bold text-lg mb-3 text-green-700">{'✅'} Une Réponse Qui Vous Respecte</h3>
+              <h3 className="font-bold text-lg mb-3 text-green-700">{''} Une Réponse Qui Vous Respecte</h3>
               <ul className="space-y-2 text-gray-700 text-sm">
                 <li>&bull; <strong>Authentique</strong> : fidèle à ce que vous ressentez</li>
                 <li>&bull; Mesurée : ni glaciale, ni empressée</li>
@@ -165,7 +165,7 @@ export default function RepondreASonExPage() {
               </ul>
             </div>
             <div className="bg-white rounded-lg p-6 border-l-4 border-red-500">
-              <h3 className="font-bold text-lg mb-3 text-red-700">{'\u{1F6D1}'} Les Pièges à Éviter</h3>
+              <h3 className="font-bold text-lg mb-3 text-red-700">Les Pièges à Éviter</h3>
               <ul className="space-y-2 text-gray-700 text-sm">
                 <li>&bull; La <strong>froideur calculée</strong> pour provoquer une réaction</li>
                 <li>&bull; L&apos;empressement qui efface vos limites</li>
@@ -175,7 +175,7 @@ export default function RepondreASonExPage() {
             </div>
           </div>
           <div className="mt-6 bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded">
-            <p className="text-gray-700"><strong>{'\u{1F4A1}'} À retenir :</strong> répondre ne garantit ni ne provoque une réconciliation. Si un rapprochement se dessine, observez si les <strong>actes suivent les mots</strong> dans la durée, un point développé dans notre guide <Link href="/reconquete/veut-se-remettre-ensemble-mais-ne-fait-rien/" className="text-indigo-600 hover:text-indigo-800 underline font-medium">il veut se remettre ensemble mais ne fait rien</Link>.</p>
+            <p className="text-gray-700"><strong>À retenir :</strong> répondre ne garantit ni ne provoque une réconciliation. Si un rapprochement se dessine, observez si les <strong>actes suivent les mots</strong> dans la durée, un point développé dans notre guide <Link href="/reconquete/veut-se-remettre-ensemble-mais-ne-fait-rien/" className="text-indigo-600 hover:text-indigo-800 underline font-medium">il veut se remettre ensemble mais ne fait rien</Link>.</p>
           </div>
         </section>
 

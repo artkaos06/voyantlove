@@ -75,7 +75,7 @@ export default function TirageGratuitCelibatairePage() {
       <header className="bg-gradient-to-r from-rose-500 via-pink-500 to-fuchsia-500 text-white py-16 px-4">
         <div className="max-w-4xl mx-auto">
           <Link href="/voyance-gratuite-amour/" className="text-white/80 hover:text-white mb-4 inline-block">&larr; Retour &agrave; Voyance Gratuite Amour</Link>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">&#x1F0CF; tirage gratuit amour c&eacute;libataire</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4"> tirage gratuit amour c&eacute;libataire</h1>
           <p className="text-xl opacity-95 mb-6">D&eacute;couvrez votre avenir sentimental gr&acirc;ce au tarot et &agrave; l&apos;oracle pour c&eacute;libataires</p>
           <div className="flex gap-4 flex-wrap">
             <a href="#tirages" className="bg-white text-rose-600 px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition">Tirage Personnalis&eacute;</a>
@@ -89,7 +89,7 @@ export default function TirageGratuitCelibatairePage() {
       {/* Interactive Tarot Tool */}
       <section id="tirage" className="max-w-4xl mx-auto px-4 py-8">
         <TarotSpread
-          title="🔮 Tirage Spécial Célibataire"
+          title="Tirage Spécial Célibataire"
           subtitle="Où, quand et comment : trois cartes pour éclairer votre prochaine rencontre"
           positions={['Où', 'Quand', 'Comment']}
           ctaSource="tirage-gratuit-celibataire"
@@ -99,10 +99,10 @@ export default function TirageGratuitCelibatairePage() {
       <div className="max-w-4xl mx-auto px-4 py-8">
         {/* Stats bar */}
         <div className="bg-white rounded-xl shadow-md p-6 mb-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-          <div><div className="text-3xl mb-1">&#x1F0CF;</div><div className="text-2xl font-bold text-rose-600">3 tirages</div><div className="text-sm text-gray-600">Sp&eacute;cifiques c&eacute;libataires</div></div>
-          <div><div className="text-3xl mb-1">&#x2B50;</div><div className="text-2xl font-bold text-rose-600">Fiable</div><div className="text-sm text-gray-600">Guidance sentimentale</div></div>
-          <div><div className="text-3xl mb-1">&#x1F52E;</div><div className="text-2xl font-bold text-rose-600">22 arcanes</div><div className="text-sm text-gray-600">R&eacute;v&eacute;lateurs</div></div>
-          <div><div className="text-3xl mb-1">&#x2764;&#xFE0F;</div><div className="text-2xl font-bold text-rose-600">Personnalis&eacute;</div><div className="text-sm text-gray-600">Adapt&eacute; &agrave; votre profil</div></div>
+          <div><div className="text-3xl mb-1"></div><div className="text-2xl font-bold text-rose-600">3 tirages</div><div className="text-sm text-gray-600">Sp&eacute;cifiques c&eacute;libataires</div></div>
+          <div><div className="text-3xl mb-1"></div><div className="text-2xl font-bold text-rose-600">Fiable</div><div className="text-sm text-gray-600">Guidance sentimentale</div></div>
+          <div><div className="text-3xl mb-1"></div><div className="text-2xl font-bold text-rose-600">22 arcanes</div><div className="text-sm text-gray-600">R&eacute;v&eacute;lateurs</div></div>
+          <div><div className="text-3xl mb-1">&#xFE0F;</div><div className="text-2xl font-bold text-rose-600">Personnalis&eacute;</div><div className="text-sm text-gray-600">Adapt&eacute; &agrave; votre profil</div></div>
         </div>
 
         {/* EEAT Signal */}
@@ -124,7 +124,7 @@ export default function TirageGratuitCelibatairePage() {
 
         {/* Section 1: Tirages Sp&eacute;cifiques pour C&eacute;libataires */}
         <section id="tirages" className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">&#x1F0CF; Tirages Sp&eacute;cifiques pour C&eacute;libataires</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6"> Tirages Sp&eacute;cifiques pour C&eacute;libataires</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Les tirages d&eacute;di&eacute;s aux c&eacute;libataires analysent les &eacute;nergies de rencontre, les blocages amoureux et le potentiel sentimental &agrave; venir avec des m&eacute;thodes adapt&eacute;es.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Chaque <strong>tirage gratuit amour c&eacute;libataire</strong> r&eacute;pond &agrave; une interrogation pr&eacute;cise sur votre <strong>avenir sentimental</strong>. Les <strong>voyants sp&eacute;cialis&eacute;s</strong> utilisent des m&eacute;thodes sp&eacute;cifiquement con&ccedil;ues pour les personnes seules, diff&eacute;rentes de celles employ&eacute;es pour les couples &eacute;tablis. Voici les tirages les plus r&eacute;v&eacute;lateurs pour &eacute;clairer votre chemin vers l&apos;amour.
@@ -167,7 +167,7 @@ export default function TirageGratuitCelibatairePage() {
 
         {/* Section 2: Quand Vais-je Rencontrer l&apos;Amour ? */}
         <section id="rencontre" className="bg-gradient-to-br from-rose-50 to-pink-50 rounded-xl p-8 mb-8 border-2 border-rose-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">&#x1F552; Quand Vais-je Rencontrer l&apos;Amour ?</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6"> Quand Vais-je Rencontrer l&apos;Amour ?</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le tarot r&eacute;v&egrave;le les &eacute;nergies temporelles et les conditions n&eacute;cessaires &agrave; la rencontre amoureuse sans donner de date pr&eacute;cise, mais en identifiant les p&eacute;riodes favorables.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             La question &laquo;&nbsp;<Link href="/nouvelle-rencontre/quand-rencontre-amour/" className="text-rose-600 hover:text-rose-800 underline font-medium">quand rencontrer l&apos;amour</Link>&nbsp;&raquo; est la plus pos&eacute;e par les c&eacute;libataires en <strong>consultation de voyance</strong>. Le <strong>tarot</strong> apporte des r&eacute;ponses nuanc&eacute;es qui vont bien au-del&agrave; d&apos;une simple date. Il r&eacute;v&egrave;le les conditions &eacute;nerg&eacute;tiques &agrave; r&eacute;unir, les p&eacute;riodes favorables et les signes qui annoncent l&apos;arriv&eacute;e de l&apos;amour.
@@ -206,7 +206,7 @@ export default function TirageGratuitCelibatairePage() {
 
         {/* Section 3: Blocages R&eacute;v&eacute;l&eacute;s par les Cartes */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">&#x1F512; Blocages R&eacute;v&eacute;l&eacute;s par les Cartes</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6"> Blocages R&eacute;v&eacute;l&eacute;s par les Cartes</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le tarot identifie les blocages &eacute;nerg&eacute;tiques, &eacute;motionnels et comportementaux qui retardent la rencontre amoureuse et propose des pistes de lib&eacute;ration.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             L&apos;un des apports les plus pr&eacute;cieux du <strong>tirage gratuit amour c&eacute;libataire</strong> est sa capacit&eacute; &agrave; identifier les <strong>blocages invisibles</strong> qui vous emp&ecirc;chent de rencontrer l&apos;amour. Ces obstacles &eacute;nerg&eacute;tiques, souvent inconscients, se manifestent par des sch&eacute;mas r&eacute;p&eacute;titifs, des choix amoureux autodestructeurs ou une fermeture &eacute;motionnelle involontaire. Le <strong>tarot</strong> les met en lumi&egrave;re avec une pr&eacute;cision &eacute;tonnante.
@@ -247,7 +247,7 @@ export default function TirageGratuitCelibatairePage() {
 
         {/* Section 4: Signes d&apos;une Rencontre Imminente */}
         <section className="bg-gradient-to-br from-pink-50 to-fuchsia-50 rounded-xl p-8 mb-8 border-2 border-pink-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">&#x2728; Signes d&apos;une Rencontre Imminente</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6"> Signes d&apos;une Rencontre Imminente</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le tarot r&eacute;v&egrave;le des signes &eacute;nerg&eacute;tiques pr&eacute;curseurs qui annoncent l&apos;arriv&eacute;e prochaine d&apos;une rencontre amoureuse significative dans votre vie.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Certaines cartes et combinaisons dans un <strong>tirage gratuit amour c&eacute;libataire</strong> signalent que l&apos;amour est sur le point de frapper &agrave; votre porte. Reconna&icirc;tre ces signes dans le <strong>tarot</strong> et dans votre quotidien vous permet de rester ouvert et r&eacute;ceptif &agrave; cette <strong>rencontre amoureuse</strong> qui se dessine dans les &eacute;nergies.
@@ -286,7 +286,7 @@ export default function TirageGratuitCelibatairePage() {
 
         {/* Section 5: Pr&eacute;parer l&apos;Arriv&eacute;e de l&apos;Amour */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">&#x1F33F; Pr&eacute;parer l&apos;Arriv&eacute;e de l&apos;Amour</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6"> Pr&eacute;parer l&apos;Arriv&eacute;e de l&apos;Amour</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le tarot ne se contente pas de pr&eacute;dire : il guide activement le c&eacute;libataire vers les actions concr&egrave;tes qui favorisent la rencontre et pr&eacute;parent le terrain pour un amour durable.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Le <strong>tirage gratuit amour c&eacute;libataire</strong> offre bien plus qu&apos;une pr&eacute;diction passive. Il fournit une feuille de route personnalis&eacute;e pour <strong>attirer l&apos;amour</strong> dans votre vie. Les cartes r&eacute;v&egrave;lent les actions &agrave; entreprendre, les habitudes &agrave; changer et les &eacute;nergies &agrave; cultiver pour cr&eacute;er les conditions optimales d&apos;une <strong>rencontre amoureuse</strong> authentique et durable.
@@ -329,7 +329,7 @@ export default function TirageGratuitCelibatairePage() {
 
         {/* FAQ Section */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">&#x2753; Questions Fr&eacute;quentes sur le Tirage Gratuit C&eacute;libataire</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8"> Questions Fr&eacute;quentes sur le Tirage Gratuit C&eacute;libataire</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Les questions les plus pos&eacute;es concernent le meilleur tirage pour c&eacute;libataires, la pr&eacute;diction de la rencontre, les cartes favorables et les blocages &eacute;nerg&eacute;tiques &agrave; surmonter.</p>
           <div className="space-y-6">
             <div className="border-b border-gray-200 pb-6">
@@ -356,7 +356,7 @@ export default function TirageGratuitCelibatairePage() {
 
         {/* Articles Connexes */}
         <div className="bg-gray-100 rounded-xl p-6 mb-8">
-          <h3 className="font-bold text-lg mb-4 text-gray-900">&#x1F4DA; Articles Connexes</h3>
+          <h3 className="font-bold text-lg mb-4 text-gray-900"> Articles Connexes</h3>
           <div className="space-y-2">
             <Link href="/voyance-gratuite-amour/" className="block text-rose-600 hover:text-rose-800 font-medium">&rarr; Voyance Gratuite Amour : Tirages et Guidance Sentimentale</Link>
             <Link href="/nouvelle-rencontre/quand-rencontre-amour/" className="block text-rose-600 hover:text-rose-800 font-medium">&rarr; Quand Vais-je Rencontrer l&apos;Amour ?</Link>

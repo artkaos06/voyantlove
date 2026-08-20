@@ -79,7 +79,7 @@ export default function TarotAmourGratuitPage() {
       <header className="bg-gradient-to-r from-green-500 via-emerald-500 to-teal-500 text-white py-16 px-4">
         <div className="max-w-4xl mx-auto">
           <Link href="/voyance-gratuite-amour/" className="text-white/80 hover:text-white mb-4 inline-block">&larr; Retour &agrave; Voyance Gratuite Amour</Link>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">&#x1F0CF; Tarot amour gratuit</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4"> Tarot amour gratuit</h1>
           <p className="text-xl opacity-95 mb-6">Tirage et interpr&eacute;tation sentimentale pour &eacute;clairer votre vie amoureuse</p>
           <div className="flex gap-4 flex-wrap">
             <a href="#consultation" className="bg-white text-green-600 px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition">Consulter un Voyant</a>
@@ -93,7 +93,7 @@ export default function TarotAmourGratuitPage() {
       {/* Interactive Tarot Tool */}
       <section id="tirage" className="max-w-4xl mx-auto px-4 py-8">
         <TarotSpread
-          title="🔮 Tirage en Croix, 5 Cartes"
+          title="Tirage en Croix, 5 Cartes"
           subtitle="Le tirage le plus complet pour une vision d'ensemble de votre situation sentimentale"
           positions={['Vous', "L'autre", 'Le Défi', 'Le Conseil', "L'Issue"]}
           ctaSource="tarot-amour-gratuit"
@@ -103,10 +103,10 @@ export default function TarotAmourGratuitPage() {
       <div className="max-w-4xl mx-auto px-4 py-8">
         {/* Stats bar */}
         <div className="bg-white rounded-xl shadow-md p-6 mb-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-          <div><div className="text-3xl mb-1">&#x1F0CF;</div><div className="text-2xl font-bold text-green-600">22 arcanes</div><div className="text-sm text-gray-600">Majeurs analys&eacute;s</div></div>
-          <div><div className="text-3xl mb-1">&#x2B50;</div><div className="text-2xl font-bold text-green-600">Appr&eacute;ci&eacute;</div><div className="text-sm text-gray-600">Par les consultants</div></div>
-          <div><div className="text-3xl mb-1">&#x1F3AF;</div><div className="text-2xl font-bold text-green-600">Accessible</div><div className="text-sm text-gray-600">Tirage en ligne</div></div>
-          <div><div className="text-3xl mb-1">&#x1F52E;</div><div className="text-2xl font-bold text-green-600">Fiable</div><div className="text-sm text-gray-600">Symbolique mill&eacute;naire</div></div>
+          <div><div className="text-3xl mb-1"></div><div className="text-2xl font-bold text-green-600">22 arcanes</div><div className="text-sm text-gray-600">Majeurs analys&eacute;s</div></div>
+          <div><div className="text-3xl mb-1"></div><div className="text-2xl font-bold text-green-600">Appr&eacute;ci&eacute;</div><div className="text-sm text-gray-600">Par les consultants</div></div>
+          <div><div className="text-3xl mb-1"></div><div className="text-2xl font-bold text-green-600">Accessible</div><div className="text-sm text-gray-600">Tirage en ligne</div></div>
+          <div><div className="text-3xl mb-1"></div><div className="text-2xl font-bold text-green-600">Fiable</div><div className="text-sm text-gray-600">Symbolique mill&eacute;naire</div></div>
         </div>
 
         {/* EEAT Signal */}
@@ -128,7 +128,7 @@ export default function TarotAmourGratuitPage() {
 
         {/* Section 1: Comprendre le Tarot Amoureux Gratuit */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">&#x1F4D6; Comprendre le Tarot Amoureux Gratuit</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6"> Comprendre le Tarot Amoureux Gratuit</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le tarot amoureux gratuit repose sur la symbolique universelle des 22 arcanes majeurs du Tarot de Marseille, utilis&eacute;s depuis des si&egrave;cles pour &eacute;clairer les questions du c&oelig;ur et guider les &acirc;mes en qu&ecirc;te de r&eacute;ponses sentimentales.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Le <strong>tarot amour gratuit</strong> puise dans une tradition mill&eacute;naire de <strong>cartomancie sentimentale</strong>. Les 22 <strong>arcanes majeurs</strong> repr&eacute;sentent des arche&acute;types universels &mdash; l&apos;amour, la trahison, le renouveau, la patience &mdash; qui r&eacute;sonnent avec les situations amoureuses que chacun traverse. Contrairement aux id&eacute;es re&ccedil;ues, un <strong>tirage gratuit</strong> ne pr&eacute;dit pas un destin fig&eacute; : il &eacute;claire les &eacute;nergies en pr&eacute;sence et les trajectoires possibles de votre <strong>parcours sentimental</strong>. En explorant la <Link href="/voyance-gratuite-amour/" className="text-green-600 hover:text-green-800 underline font-medium">voyance gratuite amour</Link>, vous acc&eacute;dez &agrave; un premier niveau de compr&eacute;hension de votre situation amoureuse.
@@ -143,7 +143,7 @@ export default function TarotAmourGratuitPage() {
 
         {/* Section 2: Les Arcanes Majeurs en Amour */}
         <section id="arcanes" className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl p-8 mb-8 border-2 border-green-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">&#x2764;&#xFE0F; Les Arcanes Majeurs en Amour</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">&#xFE0F; Les Arcanes Majeurs en Amour</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Les 22 arcanes majeurs du Tarot de Marseille forment un langage symbolique complet pour d&eacute;chiffrer les &eacute;nergies amoureuses, des premiers &eacute;lans du c&oelig;ur aux unions durables.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Chaque <strong>arcane majeur</strong> porte une signification sentimentale sp&eacute;cifique que le <strong>tarologue</strong> interpr&egrave;te en fonction du contexte de votre question amoureuse. Si vous cherchez &agrave; <Link href="/sentiments/maime-t-il-elle/" className="text-green-600 hover:text-green-800 underline font-medium">d&eacute;crypter les sentiments</Link> d&apos;une personne, certaines cartes apportent des r&eacute;ponses particuli&egrave;rement &eacute;clairantes. Voici les <strong>arcanes</strong> les plus significatifs en mati&egrave;re de <strong>voyance sentimentale</strong>.
@@ -189,7 +189,7 @@ export default function TarotAmourGratuitPage() {
 
         {/* Section 3: Tirages Gratuits par Situation Sentimentale */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">&#x1F3AF; Tirages Gratuits par Situation Sentimentale</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6"> Tirages Gratuits par Situation Sentimentale</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Chaque situation amoureuse appelle un type de tirage sp&eacute;cifique : le tirage en croix pour une vision globale, le tirage des trois cartes pour une r&eacute;ponse rapide, ou le tirage sentimental complet pour explorer une relation en profondeur.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             L&apos;efficacit&eacute; d&apos;un <strong>tirage de tarot amour gratuit</strong> d&eacute;pend en grande partie du choix du tirage adapt&eacute; &agrave; votre situation. Comme dans un <Link href="/methodes-voyance/tirage-tarot-amour/" className="text-green-600 hover:text-green-800 underline font-medium">tirage de tarot amoureux</Link> professionnel, la m&eacute;thode utilis&eacute;e oriente la qualit&eacute; des r&eacute;ponses. Voici les tirages les plus pertinents selon votre contexte <strong>sentimental</strong>.
@@ -230,7 +230,7 @@ export default function TarotAmourGratuitPage() {
 
         {/* Section 4: Interpréter Votre Tirage Amoureux */}
         <section className="bg-gradient-to-br from-emerald-50 to-green-50 rounded-xl p-8 mb-8 border-2 border-emerald-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">&#x1F4D6; Interpr&eacute;ter Votre Tirage Amoureux</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6"> Interpr&eacute;ter Votre Tirage Amoureux</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">L&apos;interpr&eacute;tation d&apos;un tirage amoureux repose sur trois piliers : la signification individuelle des arcanes, les combinaisons entre cartes et le contexte &eacute;motionnel du consultant.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Lire un <strong>tirage de tarot amour gratuit</strong> ne se r&eacute;sume pas &agrave; additionner les significations individuelles de chaque carte. L&apos;art de l&apos;<strong>interpr&eacute;tation sentimentale</strong> consiste &agrave; percevoir le dialogue entre les <strong>arcanes</strong>, &agrave; identifier les &eacute;chos symboliques et &agrave; tisser un r&eacute;cit coh&eacute;rent qui &eacute;claire votre situation amoureuse. Un <strong>tarologue</strong> exp&eacute;riment&eacute; ma&icirc;trise cette lecture multi-niveaux pour offrir une <strong>guidance</strong> v&eacute;ritablement &eacute;clairante.
@@ -269,7 +269,7 @@ export default function TarotAmourGratuitPage() {
 
         {/* Section 5: Quand Consulter un Voyant Spécialisé */}
         <section id="consultation" className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">&#x1F52E; Quand Consulter un Voyant Sp&eacute;cialis&eacute;</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6"> Quand Consulter un Voyant Sp&eacute;cialis&eacute;</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le tarot amour gratuit &eacute;claire vos questionnements sentimentaux, mais certaines situations n&eacute;cessitent l&apos;expertise d&apos;un voyant sp&eacute;cialis&eacute; pour une guidance personnalis&eacute;e et approfondie.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Le <strong>tarot gratuit amour</strong> est un formidable outil d&apos;exploration, mais il a ses limites. Lorsque votre <strong>situation sentimentale</strong> est complexe, &eacute;motionnellement charg&eacute;e ou qu&apos;elle engage des d&eacute;cisions majeures, l&apos;accompagnement d&apos;un <strong>voyant sp&eacute;cialis&eacute;</strong> en <strong>voyance amoureuse</strong> fait toute la diff&eacute;rence. Le professionnel apporte l&apos;intuition, l&apos;exp&eacute;rience et la connexion &eacute;nerg&eacute;tique que le tirage automatis&eacute; ne peut offrir.
@@ -309,7 +309,7 @@ export default function TarotAmourGratuitPage() {
 
         {/* FAQ Section */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">&#x2753; Questions Fr&eacute;quentes sur le Tarot Amour Gratuit</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8"> Questions Fr&eacute;quentes sur le Tarot Amour Gratuit</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Les questions les plus pos&eacute;es portent sur la fiabilit&eacute; du tarot gratuit, le meilleur tirage amour, l&apos;interpr&eacute;tation des arcanes et les diff&eacute;rences entre gratuit et payant.</p>
           <div className="space-y-6">
             <div className="border-b border-gray-200 pb-6">
@@ -341,7 +341,7 @@ export default function TarotAmourGratuitPage() {
 
         {/* Articles Connexes */}
         <div className="bg-gray-100 rounded-xl p-6 mb-8">
-          <h3 className="font-bold text-lg mb-4 text-gray-900">&#x1F4DA; Articles Connexes</h3>
+          <h3 className="font-bold text-lg mb-4 text-gray-900"> Articles Connexes</h3>
           <div className="space-y-2">
             <Link href="/voyance-gratuite-amour/" className="block text-green-600 hover:text-green-800 font-medium">&rarr; Voyance Gratuite Amour : Guide Complet</Link>
             <Link href="/methodes-voyance/tirage-tarot-amour/" className="block text-green-600 hover:text-green-800 font-medium">&rarr; Tirage de Tarot Amoureux : Guide des Tirages Sentimentaux</Link>

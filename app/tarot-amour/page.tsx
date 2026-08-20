@@ -40,7 +40,7 @@ export default function TarotAmourHub() {
       <header className="bg-gradient-to-r from-purple-800 via-indigo-800 to-violet-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <Link href="/" className="text-white/80 hover:text-white mb-4 inline-block">← Accueil</Link>
-          <h1 className="text-5xl font-bold mb-6">🃏 Tarot amour : signification des cartes</h1>
+          <h1 className="text-5xl font-bold mb-6">Tarot amour : signification des cartes</h1>
           <p className="text-2xl opacity-95 mb-4">Chaque arcane décrypté pour votre vie sentimentale</p>
           <p className="text-lg opacity-90 max-w-2xl mx-auto">Signification à l&apos;endroit et renversée, message pour célibataire, couple et retour d&apos;un ex.</p>
         </div>

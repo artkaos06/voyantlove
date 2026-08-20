@@ -183,7 +183,7 @@ export default function FloatingConsultCTA() {
             onClick={onClick}
             className={`flex-1 sm:flex-none flex min-h-[48px] items-center justify-center rounded-xl bg-gradient-to-r from-purple-600 to-indigo-600 px-6 text-sm font-bold text-white shadow-md transition hover:from-purple-700 hover:to-indigo-700 motion-reduce:transition-none ${emphasise ? 'vl-cta-enter' : ''}`}
           >
-            🔮 Consulter un voyant
+            Consulter un voyant
           </a>
           <button
             type="button"

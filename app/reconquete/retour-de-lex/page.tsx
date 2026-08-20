@@ -16,7 +16,7 @@ const config: ContentPageConfig = {
     { name: 'Retour de l\'Ex', url: 'https://www.voyantlove.fr/reconquete/retour-de-lex/' },
   ],
   header: {
-    emoji: '↩️',
+    emoji: '',
     h1: 'Retour de l\'ex',
     subtitle: 'Signes, timing et prédictions du tarot',
     gradient: 'from-violet-600 via-purple-600 to-fuchsia-600',
@@ -28,10 +28,10 @@ const config: ContentPageConfig = {
   },
   accentText: 'text-violet-600',
   stats: [
-    { icon: '⭐', value: '4.8/5', label: '287 Avis' },
-    { icon: '↩️', value: 'Fréquent', label: 'Retours observés' },
-    { icon: '⏰', value: '2-6 mois', label: 'Délai' },
-    { icon: '🔮', value: 'Reconnue', label: 'Expertise' },
+    { icon: '', value: '4.8/5', label: '287 Avis' },
+    { icon: '', value: 'Fréquent', label: 'Retours observés' },
+    { icon: '', value: '2-6 mois', label: 'Délai' },
+    { icon: '', value: 'Reconnue', label: 'Expertise' },
   ],
   eeat: { colorScheme: 'purple', method: 'Tarot de la reconquête amoureuse' },
   cta: { topic: 'reconquete', slug: 'retour-de-lex' },
@@ -78,7 +78,7 @@ export default function RetourExPage() {
         <VoyantRecommendations topic="reconquete" limit={3} showOnlineFirst={true} source="retour-de-lex-cards-top" />
 
         <section id="signes" className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold mb-6">💫 Les 10 Signes du Retour</h2>
+          <h2 className="text-3xl font-bold mb-6">Les 10 Signes du Retour</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Les dix signes annonciateurs du retour d'un ex sont : la reprise de contact, la nostalgie, la jalousie, les questions sur vous, la présence en ligne, les croisements fortuits, les prétextes pour se voir, un changement visible, des regrets exprimés et l'initiative de se revoir.</p>
           <div className="space-y-3">
             <div className="flex items-start gap-3 p-3 bg-green-50 rounded"><div className="text-2xl">1️⃣</div><p className="text-gray-700"><strong>Contact repris</strong> : Votre ex vous recontacte après une période de silence, souvent avec un prétexte anodin comme récupérer un objet ou poser une question pratique. Ce premier message est rarement innocent : il teste votre réceptivité et jauge votre réaction émotionnelle avant d'aller plus loin.</p></div>
@@ -90,18 +90,18 @@ export default function RetourExPage() {
             <div className="flex items-start gap-3 p-3 bg-green-50 rounded"><div className="text-2xl">7️⃣</div><p className="text-gray-700"><strong>Prétextes pour se voir</strong> : Votre ex invente des raisons de vous rencontrer, qu'il s'agisse d'un objet à rendre, d'une question à poser ou d'un service à demander. Ces prétextes multiples sont autant de tentatives de recréer un contact physique et de raviver la connexion émotionnelle perdue.</p></div>
             <div className="flex items-start gap-3 p-3 bg-green-50 rounded"><div className="text-2xl">8️⃣</div><p className="text-gray-700"><strong>Changement visible</strong> : Votre ex a évolué positivement -- nouveau style, thérapie, changements de comportement concrets. Cette <strong>transformation personnelle</strong> est le signe le plus prometteur d'un retour durable, car elle démontre une prise de conscience des erreurs passées et une volonté réelle de faire mieux. Pour confirmer que ces changements s'accompagnent de sentiments authentiques, repérez les <Link href="/sentiments/signes-il-elle-maime/" className="text-violet-600 hover:text-violet-800 font-medium">signes qu'il ou elle vous aime</Link> encore.</p></div>
             <div className="flex items-start gap-3 p-3 bg-green-50 rounded"><div className="text-2xl">9️⃣</div><p className="text-gray-700"><strong>Regrets exprimés</strong> : Votre ex admet ouvertement ses erreurs, reconnaît sa part de responsabilité dans la rupture et exprime des regrets sincères. Ces aveux sont rares et précieux : ils indiquent une maturité émotionnelle nouvelle et une ouverture au dialogue constructif indispensable pour une <Link href="/reconquete/seconde-chance-amour/" className="text-violet-600 hover:text-violet-800 font-medium">seconde chance en amour</Link>.</p></div>
-            <div className="flex items-start gap-3 p-3 bg-green-50 rounded"><div className="text-2xl">🔟</div><p className="text-gray-700"><strong>Initiative de se revoir</strong> : Votre ex propose clairement un rendez-vous, un café ou une activité ensemble. C'est le signe le plus explicite d'un désir de retour. Cette initiative directe montre que la phase de réflexion est terminée et que votre ex est prêt à passer à l'action pour reconstruire le lien.</p></div>
+            <div className="flex items-start gap-3 p-3 bg-green-50 rounded"><div className="text-2xl"></div><p className="text-gray-700"><strong>Initiative de se revoir</strong> : Votre ex propose clairement un rendez-vous, un café ou une activité ensemble. C'est le signe le plus explicite d'un désir de retour. Cette initiative directe montre que la phase de réflexion est terminée et que votre ex est prêt à passer à l'action pour reconstruire le lien.</p></div>
           </div>
         </section>
 
         <section className="bg-gradient-to-br from-violet-50 to-purple-50 rounded-xl p-8 mb-8">
-          <h2 className="text-3xl font-bold mb-6">📅 Timing Astrologique</h2>
+          <h2 className="text-3xl font-bold mb-6">Timing Astrologique</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Les cinq configurations astrologiques les plus propices au retour d'un ex sont Vénus rétrograde, les éclipses, la Pleine Lune en signes d'eau, le transit de Jupiter en Maison VII et Mercure rétrograde.</p>
           <p className="text-gray-700 mb-6">L'astrologie joue un rôle déterminant dans les <strong>retours d'ex</strong>. Certaines configurations planétaires créent des fenêtres énergétiques propices aux retrouvailles, en réveillant les souvenirs émotionnels et en adoucissant les rancœurs accumulées. Comprendre ces cycles permet d'anticiper les moments où votre ex sera le plus réceptif à un rapprochement. Si vous hésitez encore sur la direction à prendre, découvrir les clés pour <Link href="/reconquete/reconquerir-son-ex/" className="text-violet-600 hover:text-violet-800 font-medium">reconquérir son ex</Link> en phase avec le timing cosmique multiplie vos chances de succès.</p>
           <div className="space-y-4">
-            <div className="bg-white p-4 rounded border-l-4 border-pink-500"><h3 className="font-bold text-pink-700 mb-2">💕 Vénus Rétrograde</h3><p className="text-gray-700 text-sm">Cette phase survient tous les 18 mois et dure environ 40 jours. C'est la <strong>période la plus puissante</strong> pour les retours d'ex, car Vénus rétrograde pousse chacun à revisiter ses anciennes relations, à réévaluer ses choix amoureux et à ressentir une nostalgie intense pour les amours passées. Les souvenirs refont surface avec une force émotionnelle décuplée, rendant le contact quasi inévitable.</p></div>
-            <div className="bg-white p-4 rounded border-l-4 border-purple-500"><h3 className="font-bold text-purple-700 mb-2">🌕 Éclipses</h3><p className="text-gray-700 text-sm">Les éclipses, solaires et lunaires, provoquent des <strong>retournements spectaculaires</strong> dans la sphère sentimentale. Les éclipses lunaires en particulier libèrent des émotions enfouies et catalysent les décisions impulsives. Un ex qui hésitait depuis des semaines peut soudainement vous recontacter lors d'une éclipse, porté par une vague émotionnelle impossible à ignorer.</p></div>
-            <div className="bg-white p-4 rounded border-l-4 border-blue-500"><h3 className="font-bold text-blue-700 mb-2">🌙 Pleine Lune en Signes d'Eau</h3><p className="text-gray-700 text-sm">Les Pleines Lunes en Cancer, Scorpion ou Poissons amplifient la <strong>sensibilité émotionnelle</strong> et le manque affectif. Votre ex ressent un manque intense, souvent soudain et inexplicable, qui le pousse à agir. Ces nuits de Pleine Lune sont les moments où les messages inattendus arrivent le plus fréquemment, car les défenses émotionnelles tombent.</p></div>
+            <div className="bg-white p-4 rounded border-l-4 border-pink-500"><h3 className="font-bold text-pink-700 mb-2">Vénus Rétrograde</h3><p className="text-gray-700 text-sm">Cette phase survient tous les 18 mois et dure environ 40 jours. C'est la <strong>période la plus puissante</strong> pour les retours d'ex, car Vénus rétrograde pousse chacun à revisiter ses anciennes relations, à réévaluer ses choix amoureux et à ressentir une nostalgie intense pour les amours passées. Les souvenirs refont surface avec une force émotionnelle décuplée, rendant le contact quasi inévitable.</p></div>
+            <div className="bg-white p-4 rounded border-l-4 border-purple-500"><h3 className="font-bold text-purple-700 mb-2">Éclipses</h3><p className="text-gray-700 text-sm">Les éclipses, solaires et lunaires, provoquent des <strong>retournements spectaculaires</strong> dans la sphère sentimentale. Les éclipses lunaires en particulier libèrent des émotions enfouies et catalysent les décisions impulsives. Un ex qui hésitait depuis des semaines peut soudainement vous recontacter lors d'une éclipse, porté par une vague émotionnelle impossible à ignorer.</p></div>
+            <div className="bg-white p-4 rounded border-l-4 border-blue-500"><h3 className="font-bold text-blue-700 mb-2">Pleine Lune en Signes d'Eau</h3><p className="text-gray-700 text-sm">Les Pleines Lunes en Cancer, Scorpion ou Poissons amplifient la <strong>sensibilité émotionnelle</strong> et le manque affectif. Votre ex ressent un manque intense, souvent soudain et inexplicable, qui le pousse à agir. Ces nuits de Pleine Lune sont les moments où les messages inattendus arrivent le plus fréquemment, car les défenses émotionnelles tombent.</p></div>
             <div className="bg-white p-4 rounded border-l-4 border-indigo-500"><h3 className="font-bold text-indigo-700 mb-2">♃ Transit de Jupiter</h3><p className="text-gray-700 text-sm">Lorsque <strong>Jupiter transite votre Maison VII</strong> (celle du couple), il ouvre une période de 12 mois particulièrement favorable aux réconciliations et aux engagements renouvelés. Ce transit apporte expansion, générosité et optimisme dans vos relations, créant un terrain fertile pour un retour sous le signe de la croissance mutuelle.</p></div>
             <div className="bg-white p-4 rounded border-l-4 border-teal-500"><h3 className="font-bold text-teal-700 mb-2">☿ Mercure Rétrograde</h3><p className="text-gray-700 text-sm">Bien que Mercure rétrograde soit souvent redouté, cette période de 3 semaines (3 fois par an) favorise la <strong>reprise de communication</strong> avec les anciennes relations. Les malentendus passés trouvent enfin leur résolution, et les conversations inachevées reprennent naturellement. C'est un moment propice pour clarifier les non-dits qui ont contribué à la rupture.</p></div>
           </div>
@@ -110,7 +110,7 @@ export default function RetourExPage() {
         <VoyantQuickCTA topic="reconquete" source="retour-de-lex-banner-mid" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-fuchsia-500">
-          <h2 className="text-3xl font-bold mb-6">🃏 Le Tirage Tarot du Retour : 5 Positions</h2>
+          <h2 className="text-3xl font-bold mb-6">Le Tirage Tarot du Retour : 5 Positions</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le tirage tarot du retour en 5 positions analyse les sentiments de votre ex, les obstacles au retour, le timing probable, la meilleure stratégie à adopter et l'issue finale de la situation.</p>
           <p className="text-gray-700 mb-6">Ce <strong>tirage spécifique en 5 positions</strong> est conçu pour répondre à toutes vos questions sur le retour potentiel de votre ex. Chaque position explore une dimension essentielle de la dynamique entre vous, offrant une vision complète de la situation. Si la question « <Link href="/reconquete/va-t-il-elle-revenir/" className="text-violet-600 hover:text-violet-800 font-medium">va-t-il/elle revenir</Link> » vous obsède, ce tirage apporte des réponses structurées et nuancées.</p>
           <div className="space-y-4">
@@ -138,7 +138,7 @@ export default function RetourExPage() {
         </section>
 
         <section className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl p-8 mb-8">
-          <h2 className="text-3xl font-bold mb-6">🛤️ Comment Préparer le Retour</h2>
+          <h2 className="text-3xl font-bold mb-6">Comment Préparer le Retour</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Préparer le retour de son ex passe par quatre étapes : le silence radio pour créer le manque, le travail sur soi pour évoluer sincèrement, la reprise de contact au bon moment et la reconstruction progressive du lien.</p>
           <p className="text-gray-700 mb-6">Le retour d'un ex ne s'improvise pas. Il se prépare méthodiquement, en combinant <strong>travail intérieur</strong> et <strong>stratégie relationnelle</strong>. Voici les étapes essentielles validées par l'expérience de nos consultants en voyance amoureuse et par les témoignages de centaines de couples réunis.</p>
           <div className="space-y-4">

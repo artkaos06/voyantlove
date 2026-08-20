@@ -19,7 +19,7 @@ const config: ContentPageConfig = {
     { name: 'Numérologie Amoureuse', url: 'https://www.voyantlove.fr/methodes-voyance/numerologie-amoureuse/' },
   ],
   header: {
-    emoji: '🔢',
+    emoji: '',
     h1: 'Numérologie amoureuse',
     subtitle: 'Compatibilité et Destin par les Chiffres',
     gradient: 'from-amber-600 via-orange-600 to-red-600',
@@ -31,10 +31,10 @@ const config: ContentPageConfig = {
   },
   accentText: 'text-orange-600',
   stats: [
-    { icon: '🔢', value: '15 ans', label: 'Expertise numérologie' },
-    { icon: '💛', value: '2 800+', label: 'Consultations réalisées' },
-    { icon: '✨', value: '9 Chemins', label: 'Profils amoureux' },
-    { icon: '⭐', value: '4.8/5', label: 'Satisfaction clients' },
+    { icon: '', value: '15 ans', label: 'Expertise numérologie' },
+    { icon: '', value: '2 800+', label: 'Consultations réalisées' },
+    { icon: '', value: '9 Chemins', label: 'Profils amoureux' },
+    { icon: '', value: '4.8/5', label: 'Satisfaction clients' },
   ],
   eeat: { colorScheme: 'orange', method: 'Numérologie & Amour, Chemin de vie, compatibilité et timing par les chiffres' },
   cta: { topic: 'methodes-voyance', slug: 'numerologie-amoureuse' },
@@ -95,7 +95,7 @@ export default function NumerologieAmourPage() {
 
         {/* Section 1: Qu'est-ce que la numérologie amoureuse */}
         <section className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-xl p-8 mb-8 border-2 border-amber-200">
-          <h2 className="text-3xl font-bold mb-6 text-gray-900">&#x1F4D6; Qu&rsquo;est-ce que la Numérologie Amoureuse ?</h2>
+          <h2 className="text-3xl font-bold mb-6 text-gray-900"> Qu&rsquo;est-ce que la Numérologie Amoureuse ?</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">La numérologie amoureuse est une science symbolique fondée par Pythagore qui utilise les vibrations numériques de votre date de naissance pour révéler votre profil sentimental et vos affinités naturelles.</p>
           <p className="text-gray-700 mb-6">
             La numérologie est l&rsquo;une des plus anciennes sciences divinatoires de l&rsquo;humanité. Ses origines remontent à l&rsquo;Antiquité, avec des traces en Égypte, en Chine et en Inde, mais c&rsquo;est <strong>Pythagore</strong> au VI&egrave; siècle avant J.-C. qui en a formalisé les principes en Occident. Selon sa vision du monde, les nombres ne sont pas de simples outils mathématiques : ils sont les briques fondamentales de la réalité, chacun portant une <strong>vibration</strong> spécifique qui influence tous les aspects de l&rsquo;existence humaine.
@@ -103,13 +103,13 @@ export default function NumerologieAmourPage() {
 
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-white rounded-lg p-5">
-              <h3 className="font-bold text-amber-700 text-lg mb-3">&#x1F9EE; Le Principe des Vibrations</h3>
+              <h3 className="font-bold text-amber-700 text-lg mb-3"> Le Principe des Vibrations</h3>
               <p className="text-gray-700">
                 Selon la numérologie, chaque nombre vibre à une fréquence particulière. Le 1 vibre à la fréquence de l&rsquo;indépendance et du leadership, le 2 à celle de l&rsquo;amour et du partenariat, le 6 à celle de la famille et du foyer. En amour, ces vibrations déterminent non seulement le type de partenaire que vous attirez naturellement, mais aussi les qualités que vous cherchez inconsciemment dans une relation. La numérologie rend ces dynamiques visibles et conscientes.
               </p>
             </div>
             <div className="bg-white rounded-lg p-5">
-              <h3 className="font-bold text-orange-700 text-lg mb-3">&#x1F4C5; Pourquoi la Date de Naissance ?</h3>
+              <h3 className="font-bold text-orange-700 text-lg mb-3"> Pourquoi la Date de Naissance ?</h3>
               <p className="text-gray-700">
                 Votre <strong>date de naissance</strong> est l&rsquo;empreinte numérique de votre âme : elle encode le chemin que vous avez choisi de parcourir avant de vous incarner. Ce n&rsquo;est pas un hasard si vous êtes né(e) ce jour précis. La numérologie décode cette empreinte pour révéler votre mission de vie, vos forces, vos faiblesses, et, en amour, le type de relation qui vous permettra de vous épanouir pleinement et d&rsquo;accomplir votre destinée.
               </p>
@@ -119,11 +119,11 @@ export default function NumerologieAmourPage() {
 
         {/* Section 2: Calculer son chemin de vie */}
         <section id="calcul" className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold mb-6 text-orange-600">&#x1F9EE; Calculez Votre Chemin de Vie</h2>
+          <h2 className="text-3xl font-bold mb-6 text-orange-600"> Calculez Votre Chemin de Vie</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le chemin de vie se calcule en réduisant votre date de naissance complète à un seul chiffre directeur, sauf pour les nombres maîtres 11, 22 et 33 qui ne sont pas réduits.</p>
 
           <div className="bg-amber-50 border-2 border-amber-300 rounded-lg p-6 mb-6">
-            <h3 className="font-bold text-amber-800 text-lg mb-4">&#x1F4CA; Formule de Calcul</h3>
+            <h3 className="font-bold text-amber-800 text-lg mb-4"> Formule de Calcul</h3>
             <p className="text-gray-700 mb-3">Additionnez tous les chiffres de votre date de naissance (jour + mois + année) et réduisez jusqu&rsquo;à un seul chiffre.</p>
             <div className="bg-white rounded p-4 font-mono text-sm">
               <p><strong>Exemple :</strong> né(e) le 23/04/1991</p>
@@ -149,14 +149,14 @@ export default function NumerologieAmourPage() {
 
         {/* Section 2bis: Nombre d'Expression et Nombre Intime */}
         <section id="prenom" className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold mb-6 text-orange-600">&#x1F4DB; Nombre d&rsquo;Expression et Nombre Intime : l&rsquo;Analyse par le Prénom</h2>
+          <h2 className="text-3xl font-bold mb-6 text-orange-600"> Nombre d&rsquo;Expression et Nombre Intime : l&rsquo;Analyse par le Prénom</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Au-delà du chemin de vie (date de naissance), deux autres nombres calculés à partir de votre nom complet affinent votre profil amoureux : le nombre d&rsquo;expression et le nombre intime.</p>
           <p className="text-gray-700 mb-6">
             Le chemin de vie révèle votre mission de vie, mais il ne raconte qu&rsquo;une partie de l&rsquo;histoire. Le <strong>nombre d&rsquo;expression</strong> (calculé à partir de toutes les lettres de votre nom complet) montre comment vous vous présentez et agissez en amour. Le <strong>nombre intime</strong>, ou nombre de l&rsquo;âme (calculé à partir des seules voyelles), révèle vos besoins émotionnels les plus profonds, ceux que vous ne montrez pas toujours, même à votre partenaire. Une analyse complète en <strong>numérologie amoureuse</strong> croise systématiquement ces trois nombres : chemin de vie, expression, et nombre intime.
           </p>
 
           <div className="bg-orange-50 border-2 border-orange-300 rounded-lg p-6 mb-6">
-            <h3 className="font-bold text-orange-800 text-lg mb-4">&#x1F524; Table de Conversion Lettre &rarr; Chiffre</h3>
+            <h3 className="font-bold text-orange-800 text-lg mb-4"> Table de Conversion Lettre &rarr; Chiffre</h3>
             <p className="text-gray-700 mb-3">Chaque lettre de l&rsquo;alphabet correspond à un chiffre de 1 à 9, selon la méthode pythagoricienne :</p>
             <div className="bg-white rounded p-4 font-mono text-sm grid grid-cols-3 md:grid-cols-9 gap-2 text-center">
               <div><strong>1</strong><br />A J S</div>
@@ -173,7 +173,7 @@ export default function NumerologieAmourPage() {
 
           <div className="grid md:grid-cols-2 gap-6 mb-6">
             <div className="bg-white border-2 border-orange-200 rounded-lg p-6">
-              <h3 className="font-bold text-orange-700 text-lg mb-3">&#x1F5E3;&#xFE0F; Calculer son Nombre d&rsquo;Expression</h3>
+              <h3 className="font-bold text-orange-700 text-lg mb-3">&#xFE0F; Calculer son Nombre d&rsquo;Expression</h3>
               <p className="text-gray-700 text-sm mb-3">Convertissez chaque lettre de votre <strong>nom et prénom complets</strong> en chiffre, additionnez le tout, puis réduisez à un seul chiffre (sauf nombres maîtres).</p>
               <div className="bg-orange-50 rounded p-3 font-mono text-xs">
                 <p><strong>Exemple :</strong> Marie Dupont</p>
@@ -183,7 +183,7 @@ export default function NumerologieAmourPage() {
               </div>
             </div>
             <div className="bg-white border-2 border-amber-200 rounded-lg p-6">
-              <h3 className="font-bold text-amber-700 text-lg mb-3">&#x1F49B; Calculer son Nombre Intime</h3>
+              <h3 className="font-bold text-amber-700 text-lg mb-3"> Calculer son Nombre Intime</h3>
               <p className="text-gray-700 text-sm mb-3">Ne retenez que les <strong>voyelles</strong> (A, E, I, O, U, et parfois Y) de votre nom complet, convertissez-les et réduisez à un seul chiffre.</p>
               <div className="bg-amber-50 rounded p-3 font-mono text-xs">
                 <p><strong>Exemple :</strong> Marie Dupont</p>
@@ -219,13 +219,13 @@ export default function NumerologieAmourPage() {
           </div>
 
           <div className="mt-6 bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded">
-            <p className="text-gray-700"><strong>&#x1F4A1; Pourquoi croiser les trois nombres :</strong> Un chemin de vie 6 (nourricier) avec un nombre intime 5 (besoin de liberté) révèle une tension intérieure entre le désir de foyer et le besoin d&rsquo;indépendance, une nuance invisible si l&rsquo;on ne regarde que la date de naissance. C&rsquo;est cette lecture combinée qui distingue une <strong>analyse numérologique complète</strong> d&rsquo;un simple calcul de chemin de vie.</p>
+            <p className="text-gray-700"><strong> Pourquoi croiser les trois nombres :</strong> Un chemin de vie 6 (nourricier) avec un nombre intime 5 (besoin de liberté) révèle une tension intérieure entre le désir de foyer et le besoin d&rsquo;indépendance, une nuance invisible si l&rsquo;on ne regarde que la date de naissance. C&rsquo;est cette lecture combinée qui distingue une <strong>analyse numérologique complète</strong> d&rsquo;un simple calcul de chemin de vie.</p>
           </div>
         </section>
 
         {/* Section 3: Compatibilité */}
         <section id="compatibilite" className="bg-gradient-to-br from-red-50 to-orange-50 rounded-xl p-8 mb-8 border-2 border-red-200">
-          <h2 className="text-3xl font-bold mb-6 text-gray-900">&#x2764;&#xFE0F; Compatibilité Numérologique entre Partenaires</h2>
+          <h2 className="text-3xl font-bold mb-6 text-gray-900">&#xFE0F; Compatibilité Numérologique entre Partenaires</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">La compatibilité numérique analyse la résonance entre deux chemins de vie pour identifier les affinités naturelles et les zones de friction potentielles dans la relation amoureuse.</p>
           <p className="text-gray-700 mb-6">
             La <strong>compatibilité numérique</strong> ne prédit pas le succès ou l&rsquo;échec d&rsquo;une relation, elle révèle les dynamiques naturelles qui s&rsquo;installeront entre deux personnes. Certains couples numériquement &ldquo;difficiles&rdquo; bâtissent des relations extraordinaires grâce à la conscience de leurs différences. Pour approfondir votre analyse, consultez notre guide sur la <Link href="/sentiments/compatibilite-amoureuse/" className="text-orange-600 hover:text-orange-800 underline font-medium">compatibilité amoureuse</Link>.
@@ -243,7 +243,7 @@ export default function NumerologieAmourPage() {
           <p className="text-sm text-gray-600 mb-4">Les associations ci-dessous sont des exemples de lecture, pas une matrice exhaustive ni une garantie sur l&rsquo;avenir du couple.</p>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-white rounded-lg p-6">
-              <h3 className="font-bold text-green-700 text-lg mb-4">&#x2705; Exemples de Complémentarités</h3>
+              <h3 className="font-bold text-green-700 text-lg mb-4"> Exemples de Complémentarités</h3>
               <div className="space-y-3 text-gray-700">
                 <div className="flex items-start gap-3 p-3 bg-green-50 rounded-lg">
                   <span className="text-green-500 font-bold text-xl">2+6</span>
@@ -265,7 +265,7 @@ export default function NumerologieAmourPage() {
             </div>
 
             <div className="bg-white rounded-lg p-6">
-              <h3 className="font-bold text-red-700 text-lg mb-4">&#x26A0;&#xFE0F; Exemples de Points de Friction</h3>
+              <h3 className="font-bold text-red-700 text-lg mb-4">&#xFE0F; Exemples de Points de Friction</h3>
               <div className="space-y-3 text-gray-700">
                 <div className="flex items-start gap-3 p-3 bg-red-50 rounded-lg">
                   <span className="text-red-500 font-bold text-xl">1+1</span>
@@ -290,7 +290,7 @@ export default function NumerologieAmourPage() {
 
         {/* Section 4: Nombres maîtres */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold mb-6 text-orange-600">&#x1F4AB; Les Nombres Maîtres en Amour</h2>
+          <h2 className="text-3xl font-bold mb-6 text-orange-600"> Les Nombres Maîtres en Amour</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Les nombres maîtres 11, 22 et 33 portent une intensité vibratoire extraordinaire qui se traduit en amour par des connexions profondes, des défis spirituels et une quête d&rsquo;union transcendante.</p>
           <p className="text-gray-700 mb-6">
             Les nombres maîtres sont les plus élevés de la numérologie : ils ne sont pas réduits car leur double vibration démultiplie leur puissance. En amour, ils indiquent des âmes évoluées qui ne peuvent se contenter d&rsquo;une relation ordinaire.
@@ -298,7 +298,7 @@ export default function NumerologieAmourPage() {
 
           <div className="space-y-5">
             <div className="bg-indigo-50 border-l-4 border-indigo-500 p-6 rounded-lg">
-              <h3 className="font-bold text-xl text-indigo-700 mb-3">&#x1F52E; Le 11, L&rsquo;Amour Intuitif et Spirituel</h3>
+              <h3 className="font-bold text-xl text-indigo-700 mb-3"> Le 11, L&rsquo;Amour Intuitif et Spirituel</h3>
               <p className="text-gray-700 mb-2">
                 Le <strong>chemin de vie 11</strong> est celui de l&rsquo;intuition supérieure et de la sensibilité extrême. En amour, ces natifs ressentent les émotions à une profondeur que la plupart des gens n&rsquo;imaginent pas. Ils cherchent une âme complémentaire capables de les comprendre sans mots, une connexion qui touche l&rsquo;âme et pas seulement le corps. Leur plus grand défi : la tendance à idéaliser le partenaire au point d&rsquo;en être cruellement déçu quand la réalité reprend ses droits.
               </p>
@@ -308,7 +308,7 @@ export default function NumerologieAmourPage() {
             </div>
 
             <div className="bg-amber-50 border-l-4 border-amber-500 p-6 rounded-lg">
-              <h3 className="font-bold text-xl text-amber-700 mb-3">&#x1F3D7;&#xFE0F; Le 22, L&rsquo;Amour Bâtisseur</h3>
+              <h3 className="font-bold text-xl text-amber-700 mb-3">&#xFE0F; Le 22, L&rsquo;Amour Bâtisseur</h3>
               <p className="text-gray-700 mb-2">
                 Le <strong>chemin de vie 22</strong> est celui du maître bâtisseur. En amour, ces personnes veulent construire quelque chose de grand et durable avec leur partenaire : une famille, une entreprise, une mission commune. Ils cherchent un complice de vie autant qu&rsquo;un amoureux. Leur relation doit avoir un sens qui dépasse leur couple pour toucher le collectif ou laisser une trace dans le monde.
               </p>
@@ -318,7 +318,7 @@ export default function NumerologieAmourPage() {
             </div>
 
             <div className="bg-rose-50 border-l-4 border-rose-500 p-6 rounded-lg">
-              <h3 className="font-bold text-xl text-rose-700 mb-3">&#x1F496; Le 33, L&rsquo;Amour Universel</h3>
+              <h3 className="font-bold text-xl text-rose-700 mb-3"> Le 33, L&rsquo;Amour Universel</h3>
               <p className="text-gray-700 mb-2">
                 Le <strong>chemin de vie 33</strong>, le plus rare, est celui du maître enseignant et de l&rsquo;amour universel. Ces personnes aiment avec une générosité et une compassion qui dépassent souvent le cadre du couple pour embrasser tous les êtres. Leur défi en amour est d&rsquo;apprendre à recevoir autant qu&rsquo;ils donnent, et à établir des limites saines sans perdre leur générosité naturelle.
               </p>
@@ -333,7 +333,7 @@ export default function NumerologieAmourPage() {
 
         {/* Section 5: Timing numérologique */}
         <section className="bg-gradient-to-br from-orange-50 to-amber-50 rounded-xl p-8 mb-8 border-2 border-orange-200">
-          <h2 className="text-3xl font-bold mb-6 text-gray-900">&#x23F3; Numérologie et Timing Amoureux</h2>
+          <h2 className="text-3xl font-bold mb-6 text-gray-900"> Numérologie et Timing Amoureux</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Les années personnelles 2, 6 et 9 sont les plus favorables aux rencontres et aux engagements amoureux, tandis que les années 1 et 5 favorisent les nouvelles aventures et les changements de situation sentimentale.</p>
           <p className="text-gray-700 mb-6">
             La numérologie ne se contente pas d&rsquo;analyser votre profil : elle prédit aussi les <strong>cycles temporels</strong> favorables à l&rsquo;amour. Chaque personne traverse des années personnelles de 1 à 9 qui cyclent indéfiniment, chacune avec son énergie particulière en amour.
@@ -358,7 +358,7 @@ export default function NumerologieAmourPage() {
           </div>
 
           <div className="bg-white rounded-lg p-6">
-            <h3 className="font-bold text-orange-700 text-lg mb-4">&#x1F4CB; Comment Calculer Votre Année Personnelle</h3>
+            <h3 className="font-bold text-orange-700 text-lg mb-4"> Comment Calculer Votre Année Personnelle</h3>
             <p className="text-gray-700 mb-3">Additionnez votre jour de naissance, votre mois de naissance et l&rsquo;année civile en cours, puis réduisez au chiffre unique.</p>
             <div className="bg-orange-50 rounded-lg p-4 font-mono text-sm mb-4">
               <p><strong>Exemple :</strong> né(e) le 08 octobre</p>

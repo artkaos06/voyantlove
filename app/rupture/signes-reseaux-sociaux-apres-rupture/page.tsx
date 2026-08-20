@@ -16,7 +16,7 @@ const config: ContentPageConfig = {
     { name: 'Réseaux Sociaux Après une Rupture', url: 'https://www.voyantlove.fr/rupture/signes-reseaux-sociaux-apres-rupture/' },
   ],
   header: {
-    emoji: '📱',
+    emoji: '',
     h1: 'Photos supprimées, nom modifié, silence : interpréter les réseaux sociaux après une rupture',
     subtitle: 'Ce que les signaux numériques peuvent dire, et surtout ce qu\'ils ne prouvent pas',
     gradient: 'from-slate-600 via-indigo-600 to-purple-600',
@@ -28,10 +28,10 @@ const config: ContentPageConfig = {
   },
   accentText: 'text-indigo-600',
   stats: [
-    { icon: '🔮', value: 'Reconnue', label: 'Expertise' },
-    { icon: '📱', value: '3,200+', label: 'Consultations' },
-    { icon: '⭐', value: '4.7/5', label: '254 Avis' },
-    { icon: '🔒', value: '100%', label: 'Confidentiel' },
+    { icon: '', value: 'Reconnue', label: 'Expertise' },
+    { icon: '', value: '3,200+', label: 'Consultations' },
+    { icon: '', value: '4.7/5', label: '254 Avis' },
+    { icon: '', value: '100%', label: 'Confidentiel' },
   ],
   eeat: { colorScheme: 'blue', method: 'Guidance émotionnelle et lecture des comportements post-rupture' },
   cta: { topic: 'rupture', slug: 'signes-reseaux' },
@@ -89,7 +89,7 @@ export default function SignesReseauxSociauxApresRupturePage() {
 
         {/* H2: Pourquoi les changements numériques comptent tant */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">{'\u{1F50D}'} Pourquoi les Changements Numériques Prennent Autant d&apos;Importance</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Pourquoi les Changements Numériques Prennent Autant d&apos;Importance</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Apres une rupture, les reseaux sociaux deviennent l&apos;une des dernieres fenetres visibles sur l&apos;autre : en l&apos;absence de contact direct, l&apos;esprit se rabat sur ces traces et leur prete un sens qu&apos;elles n&apos;ont pas forcement.</p>
           <p className="text-gray-700 leading-relaxed mb-4">
             Quand le dialogue s&apos;interrompt, le <strong>profil</strong> de l&apos;autre reste souvent le seul point de contact accessible. L&apos;esprit, privé d&apos;informations directes, se rabat sur ces <strong>indices numériques</strong> et cherche à y lire les émotions qu&apos;il ne peut plus observer autrement. Ce réflexe est humain, mais il repose sur un matériau trompeur : ce qui est publié est une mise en scène, pas un journal intime.
@@ -101,29 +101,29 @@ export default function SignesReseauxSociauxApresRupturePage() {
 
         {/* H2: La matrice des signaux */}
         <section id="matrice" className="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-xl p-8 mb-8 border-2 border-indigo-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">{'\u{1F9E9}'} La Matrice d&apos;Interprétation des Signaux Numériques</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">La Matrice d&apos;Interprétation des Signaux Numériques</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Pour chaque signal numerique, il faut distinguer ce qu&apos;il peut signifier, ce qu&apos;il ne prouve pas et sa fiabilite reelle : les gestes qui demandent peu d&apos;effort, comme regarder une story, sont les moins fiables.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Voici les <strong>signaux</strong> les plus fréquemment scrutés, décodés sans surinterprétation. La règle générale : plus un geste demande d&apos;<strong>effort</strong>, plus il est parlant ; plus il est facile, moins il prouve.
           </p>
           <div className="space-y-4">
             <div className="bg-white rounded-lg p-6 border-l-4 border-indigo-500">
-              <h3 className="font-bold text-lg mb-2 text-indigo-700">{'\u{1F5BC}️'} Suppression des Photos de Couple</h3>
+              <h3 className="font-bold text-lg mb-2 text-indigo-700">{'️'} Suppression des Photos de Couple</h3>
               <p className="text-gray-700 text-sm mb-2"><strong>Peut signifier :</strong> un besoin de tourner la page, une réaction à chaud, ou une mise en cohérence de son image publique.</p>
               <p className="text-gray-600 text-sm"><strong>Ne prouve pas :</strong> ni un rejet définitif, ni une absence de sentiments. <span className="italic">Fiabilité : faible à modérée.</span></p>
             </div>
             <div className="bg-white rounded-lg p-6 border-l-4 border-purple-500">
-              <h3 className="font-bold text-lg mb-2 text-purple-700">{'\u{1F4DB}'} Changement de Nom ou de Statut</h3>
+              <h3 className="font-bold text-lg mb-2 text-purple-700">Changement de Nom ou de Statut</h3>
               <p className="text-gray-700 text-sm mb-2"><strong>Peut signifier :</strong> un symbole public de nouvelle étape, ou une simple décision administrative ou émotionnelle.</p>
               <p className="text-gray-600 text-sm"><strong>Ne prouve pas :</strong> un message qui vous serait personnellement adressé. <span className="italic">Fiabilité : faible.</span></p>
             </div>
             <div className="bg-white rounded-lg p-6 border-l-4 border-slate-500">
-              <h3 className="font-bold text-lg mb-2 text-slate-700">{'\u{1F6AB}'} Désabonnement, Blocage, Silence</h3>
+              <h3 className="font-bold text-lg mb-2 text-slate-700">Désabonnement, Blocage, Silence</h3>
               <p className="text-gray-700 text-sm mb-2"><strong>Peut signifier :</strong> un besoin de se protéger, de ne plus voir l&apos;autre pour avancer, une réaction défensive.</p>
               <p className="text-gray-600 text-sm"><strong>Ne prouve pas :</strong> de la haine, ni paradoxalement une absence de sentiments, on se coupe souvent de ce qui touche encore. <span className="italic">Fiabilité : modérée sur l&apos;émotion, nulle sur l&apos;intention.</span></p>
             </div>
             <div className="bg-white rounded-lg p-6 border-l-4 border-fuchsia-500">
-              <h3 className="font-bold text-lg mb-2 text-fuchsia-700">{'\u{1F440}'} Stories Regardées, Publications Aimées</h3>
+              <h3 className="font-bold text-lg mb-2 text-fuchsia-700">Stories Regardées, Publications Aimées</h3>
               <p className="text-gray-700 text-sm mb-2"><strong>Peut signifier :</strong> une curiosité, un reste d&apos;attention, une habitude, de la nostalgie.</p>
               <p className="text-gray-600 text-sm"><strong>Ne prouve pas :</strong> un désir de réconciliation. C&apos;est le signal le moins fiable, car il coûte presque rien. <span className="italic">Fiabilité : très faible.</span></p>
             </div>
@@ -134,26 +134,26 @@ export default function SignesReseauxSociauxApresRupturePage() {
 
         {/* H2: Faux signes de retour */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">{'\u{26A0}️'} Les Faux Signes de Retour les Plus Fréquents</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">{'️'} Les Faux Signes de Retour les Plus Fréquents</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Les gestes numeriques faciles a produire, comme regarder une story, aimer une vieille photo ou reapparaitre ponctuellement, sont souvent pris a tort pour des signes de retour alors qu&apos;ils n&apos;engagent a rien.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             L&apos;espoir pousse à surinterpréter les gestes les plus anodins. Voici les <strong>faux positifs</strong> les plus courants, à reconnaître pour ne pas s&apos;y accrocher.
           </p>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-orange-50 border-l-4 border-orange-500 p-5 rounded">
-              <h3 className="font-bold mb-2 text-orange-700">{'\u{1F441}️'} La Vue de Story Systématique</h3>
+              <h3 className="font-bold mb-2 text-orange-700">{'️'} La Vue de Story Systématique</h3>
               <p className="text-gray-700 text-sm">Voir vos stories chaque jour peut n&apos;être qu&apos;une <strong>habitude</strong> automatique. Un geste sans effort ne traduit pas un projet.</p>
             </div>
             <div className="bg-orange-50 border-l-4 border-orange-500 p-5 rounded">
-              <h3 className="font-bold mb-2 text-orange-700">{'❤️'} Le Like sur une Vieille Photo</h3>
+              <h3 className="font-bold mb-2 text-orange-700">{''} Le Like sur une Vieille Photo</h3>
               <p className="text-gray-700 text-sm">Un like nostalgique relance l&apos;espoir sans engager. Il exprime au mieux une émotion passagère, jamais une décision.</p>
             </div>
             <div className="bg-orange-50 border-l-4 border-orange-500 p-5 rounded">
-              <h3 className="font-bold mb-2 text-orange-700">{'\u{1F504}'} La Réapparition Ponctuelle</h3>
+              <h3 className="font-bold mb-2 text-orange-700">La Réapparition Ponctuelle</h3>
               <p className="text-gray-700 text-sm">Un message isolé qui retombe aussitôt ressemble au comportement <Link href="/reconquete/ex-chaud-et-froid-apres-separation/" className="text-indigo-600 hover:text-indigo-800 underline font-medium">chaud et froid</Link> : sans suite concrète, il ne prouve rien.</p>
             </div>
             <div className="bg-orange-50 border-l-4 border-orange-500 p-5 rounded">
-              <h3 className="font-bold mb-2 text-orange-700">{'\u{1F4F8}'} La Publication &laquo;Message&raquo;</h3>
+              <h3 className="font-bold mb-2 text-orange-700">La Publication &laquo;Message&raquo;</h3>
               <p className="text-gray-700 text-sm">Croire qu&apos;une citation ou une photo vous est secrètement destinée est un piège classique. La plupart du temps, elle ne parle que de la personne elle-même.</p>
             </div>
           </div>
@@ -161,14 +161,14 @@ export default function SignesReseauxSociauxApresRupturePage() {
 
         {/* H2: Quand la surveillance entretient la souffrance */}
         <section id="surveillance" className="bg-gradient-to-r from-slate-50 to-indigo-50 rounded-xl p-8 mb-8 border-2 border-slate-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">{'\u{1F9F1}'} Quand la Surveillance des Réseaux Entretient la Souffrance</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Quand la Surveillance des Réseaux Entretient la Souffrance</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Verifier reguliierement les profils relance l&apos;analyse, ravive l&apos;emotion et retarde la guerison sans jamais livrer la certitude recherchee : se couper temporairement de ce fil est souvent le geste le plus protecteur.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             La <strong>veille numérique</strong> donne l&apos;illusion de garder le contrôle, alors qu&apos;elle enferme dans une boucle : chaque vérification relance l&apos;interprétation, l&apos;émotion remonte, et la guérison recule. Reconnaître le moment où cette habitude devient nuisible est une étape clé.
           </p>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-white rounded-lg p-6 border-l-4 border-red-500">
-              <h3 className="font-bold text-lg mb-3 text-red-700">{'\u{1F6D1}'} Signaux d&apos;une Veille Nuisible</h3>
+              <h3 className="font-bold text-lg mb-3 text-red-700">Signaux d&apos;une Veille Nuisible</h3>
               <ul className="space-y-2 text-gray-700 text-sm">
                 <li>&bull; Vous vérifiez son profil <strong>plusieurs fois par jour</strong></li>
                 <li>&bull; Votre humeur dépend de ce que vous y voyez</li>
@@ -177,7 +177,7 @@ export default function SignesReseauxSociauxApresRupturePage() {
               </ul>
             </div>
             <div className="bg-white rounded-lg p-6 border-l-4 border-green-500">
-              <h3 className="font-bold text-lg mb-3 text-green-700">{'✅'} Reprendre la Main</h3>
+              <h3 className="font-bold text-lg mb-3 text-green-700">{''} Reprendre la Main</h3>
               <ul className="space-y-2 text-gray-700 text-sm">
                 <li>&bull; Masquer ou se <strong>désabonner</strong> temporairement</li>
                 <li>&bull; S&apos;imposer des plages sans consultation</li>
@@ -187,7 +187,7 @@ export default function SignesReseauxSociauxApresRupturePage() {
             </div>
           </div>
           <div className="mt-6 bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded">
-            <p className="text-gray-700"><strong>{'\u{1F4A1}'} À retenir :</strong> retrouver de la clarté passe par le retour à soi, pas par le décryptage d&apos;un profil. Si tourner la page vous semble hors de portée, notre guide <Link href="/rupture/comment-tourner-la-page/" className="text-indigo-600 hover:text-indigo-800 underline font-medium">comment tourner la page</Link> propose des repères concrets. Une <strong>consultation de voyance</strong> peut éclairer votre ressenti, sans jamais transformer un profil en preuve.</p>
+            <p className="text-gray-700"><strong>À retenir :</strong> retrouver de la clarté passe par le retour à soi, pas par le décryptage d&apos;un profil. Si tourner la page vous semble hors de portée, notre guide <Link href="/rupture/comment-tourner-la-page/" className="text-indigo-600 hover:text-indigo-800 underline font-medium">comment tourner la page</Link> propose des repères concrets. Une <strong>consultation de voyance</strong> peut éclairer votre ressenti, sans jamais transformer un profil en preuve.</p>
           </div>
         </section>
     </ContentPage>

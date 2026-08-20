@@ -93,11 +93,11 @@ function CallBlock({ ctaSub }: { ctaSub: string }) {
           fabricated person as a real customer. */}
       <VoyantStrip limit={4} label="Voyants partenaires en ligne" />
       <a href={`tel:${PHONE}`} className="vs-cta">
-        <span className="vs-cta-num">📞 {PHONE_DISPLAY}</span>
+        <span className="vs-cta-num">{PHONE_DISPLAY}</span>
         <span className="vs-cta-sub">{ctaSub}</span>
       </a>
       <div className="vs-pricing">
-        <div className="vs-pricing-lead">💳 {OFFER.intro}, {OFFER.introPerMin}</div>
+        <div className="vs-pricing-lead">{OFFER.intro}, {OFFER.introPerMin}</div>
         <div className="vs-pricing-then">{OFFER.after} · {OFFER.payment}</div>
       </div>
     </>
@@ -181,7 +181,7 @@ export default async function LPHistoireSophie({
         <div className="vs-urgency">
           <div>{av.scarcity}</div>
           <div>{av.callsToday}</div>
-          <div>⭐ <strong>4,7/5</strong> satisfaction clients</div>
+          <div><strong>4,7/5</strong> satisfaction clients</div>
         </div>
 
         <LanderFaq />
@@ -207,7 +207,7 @@ export default async function LPHistoireSophie({
       </div>
 
       <div className="vs-sticky">
-        <a href={`tel:${PHONE}`}>📞 Appeler, {PHONE_DISPLAY}</a>
+        <a href={`tel:${PHONE}`}>Appeler, {PHONE_DISPLAY}</a>
       </div>
     </div>
   );

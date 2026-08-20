@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getWebPageSchema, getBreadcrumbSchema, getOrganizationSchema, getFAQSchema, getAuthorSchema } from '@/lib/schema';
-import { CATEGORY_LABELS, CATEGORY_EMOJI, type GlossaryCategory, getGlossaryHubCards } from '@/lib/glossaire';
+import { CATEGORY_LABELS, type GlossaryCategory, getGlossaryHubCards } from '@/lib/glossaire';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 
@@ -59,7 +59,7 @@ export default function GlossaireHubPage() {
       <header className="bg-gradient-to-r from-violet-700 via-purple-700 to-fuchsia-800 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <Link href="/" className="text-white/80 hover:text-white mb-4 inline-block">← Accueil</Link>
-          <h1 className="text-5xl font-bold mb-6">📖 Glossaire de la voyance amoureuse</h1>
+          <h1 className="text-5xl font-bold mb-6">Glossaire de la voyance amoureuse</h1>
           <p className="text-2xl opacity-95 mb-4">{HUB_CARDS.length} termes de voyance et d&apos;amour expliqués simplement</p>
           <p className="text-lg opacity-90 max-w-2xl mx-auto">Spiritualité, astrologie, numérologie, pratiques divinatoires et psychologie amoureuse : chaque terme est défini, mis en contexte et relié à votre vie sentimentale.</p>
         </div>
@@ -81,7 +81,7 @@ export default function GlossaireHubPage() {
           if (cards.length === 0) return null;
           return (
             <section key={cat} className="mb-14">
-              <h2 className="text-3xl font-bold mb-2 text-gray-900">{CATEGORY_EMOJI[cat]} {CATEGORY_LABELS[cat]}</h2>
+              <h2 className="text-3xl font-bold mb-2 text-gray-900">{CATEGORY_LABELS[cat]}</h2>
               <p className="text-gray-600 mb-6">{cards.length} terme{cards.length > 1 ? 's' : ''}</p>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
                 {cards.map((c) => (
@@ -90,7 +90,6 @@ export default function GlossaireHubPage() {
                     href={c.href}
                     className="bg-white rounded-xl p-5 shadow-md hover:shadow-xl transition border-t-4 border-violet-500"
                   >
-                    <div className="text-2xl mb-2">{c.emoji}</div>
                     <h3 className="text-lg font-bold mb-1 text-gray-900">{c.terme}</h3>
                     <p className="text-gray-600 text-sm line-clamp-3">{c.definitionCourte}</p>
                   </Link>
@@ -102,7 +101,7 @@ export default function GlossaireHubPage() {
 
         {/* Related networks */}
         <div className="bg-gray-100 rounded-xl p-6 mb-8 max-w-4xl mx-auto">
-          <h2 className="font-bold text-lg mb-4 text-gray-900">🔮 Aller plus loin</h2>
+          <h2 className="font-bold text-lg mb-4 text-gray-900">Aller plus loin</h2>
           <div className="grid sm:grid-cols-2 gap-2">
             <Link href="/methodes-voyance/" className="block text-indigo-600 hover:text-indigo-800 font-medium">&rarr; Les méthodes de voyance amoureuse</Link>
             <Link href="/tarot-amour/" className="block text-indigo-600 hover:text-indigo-800 font-medium">&rarr; Tarot amour : signification des cartes</Link>
@@ -114,7 +113,7 @@ export default function GlossaireHubPage() {
         </div>
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8 max-w-4xl mx-auto">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">❓ Questions fréquentes sur ce glossaire</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">Questions fréquentes sur ce glossaire</h2>
           <div className="space-y-6">
             <div className="border-b border-gray-200 pb-6">
               <h3 className="text-lg font-bold text-gray-900 mb-2">À quoi sert ce glossaire de la voyance amoureuse ?</h3>

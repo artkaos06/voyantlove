@@ -16,7 +16,7 @@ const config: ContentPageConfig = {
     { name: 'Ascendant en Amour', url: 'https://www.voyantlove.fr/methodes-voyance/ascendant-amour/' },
   ],
   header: {
-    emoji: '🌅',
+    emoji: '',
     h1: 'Ascendant en amour',
     subtitle: 'Ce que votre signe ascendant révèle sur votre style de séduction',
     gradient: 'from-violet-600 via-indigo-600 to-purple-600',
@@ -28,10 +28,10 @@ const config: ContentPageConfig = {
   },
   accentText: 'text-indigo-700',
   stats: [
-    { icon: '🌅', value: '12 signes', label: 'Ascendants possibles' },
-    { icon: '🕰️', value: '~2h', label: 'Change de signe' },
-    { icon: '🎭', value: 'Masque social', label: 'Première impression' },
-    { icon: '💫', value: 'Attraction', label: 'Rôle en synastrie' },
+    { icon: '', value: '12 signes', label: 'Ascendants possibles' },
+    { icon: '', value: '~2h', label: 'Change de signe' },
+    { icon: '', value: 'Masque social', label: 'Première impression' },
+    { icon: '', value: 'Attraction', label: 'Rôle en synastrie' },
   ],
   eeat: { colorScheme: 'purple', method: 'Astrologie amoureuse et lecture de l\'ascendant' },
   cta: { topic: 'methodes-voyance', slug: 'ascendant-amour' },
@@ -63,18 +63,18 @@ const config: ContentPageConfig = {
 };
 
 const ASCENDANTS = [
-  { signe: 'Bélier', emoji: '♈', trait: 'Allure dynamique et séduction directe. L\'ascendant Bélier donne une première impression énergique, spontanée, presque conquérante.' },
-  { signe: 'Taureau', emoji: '♉', trait: 'Présence posée et sensuelle. L\'ascendant Taureau projette une image rassurante et chaleureuse, un charme qui prend son temps.' },
-  { signe: 'Gémeaux', emoji: '♊', trait: 'Charme par les mots et la vivacité. L\'ascendant Gémeaux séduit par sa curiosité, son esprit pétillant et sa facilité de contact.' },
-  { signe: 'Cancer', emoji: '♋', trait: 'Douceur protectrice perceptible immédiatement. L\'ascendant Cancer inspire confiance et donne une image chaleureuse, presque familière dès le premier échange.' },
-  { signe: 'Lion', emoji: '♌', trait: 'Charisme et assurance immédiats. L\'ascendant Lion attire les regards par sa prestance naturelle et son envie de briller.' },
-  { signe: 'Vierge', emoji: '♍', trait: 'Réserve élégante et soignée. L\'ascendant Vierge séduit par son attention aux détails et une discrétion qui intrigue plus qu\'elle n\'éloigne.' },
-  { signe: 'Balance', emoji: '♎', trait: 'Charme raffiné et sens de l\'harmonie. L\'ascendant Balance donne une image agréable, diplomate, portée sur l\'esthétique de la première rencontre.' },
-  { signe: 'Scorpion', emoji: '♏', trait: 'Intensité magnétique et regard marquant. L\'ascendant Scorpion projette un mystère qui capte l\'attention et suscite la curiosité.' },
-  { signe: 'Sagittaire', emoji: '♐', trait: 'Énergie joviale et franchise désarmante. L\'ascendant Sagittaire donne une image aventurière, optimiste, facile d\'accès dès les premiers instants.' },
-  { signe: 'Capricorne', emoji: '♑', trait: 'Sérieux et retenue qui inspirent le respect. L\'ascendant Capricorne projette une image mature, une séduction qui se construit progressivement.' },
-  { signe: 'Verseau', emoji: '♒', trait: 'Originalité assumée. L\'ascendant Verseau attire par sa différence, son détachement apparent et son style hors des sentiers battus.' },
-  { signe: 'Poissons', emoji: '♓', trait: 'Douceur rêveuse et sensibilité visible. L\'ascendant Poissons dégage un romantisme perceptible dès le premier regard.' },
+  { signe: 'Bélier', emoji: '♈︎', trait: 'Allure dynamique et séduction directe. L\'ascendant Bélier donne une première impression énergique, spontanée, presque conquérante.' },
+  { signe: 'Taureau', emoji: '♉︎', trait: 'Présence posée et sensuelle. L\'ascendant Taureau projette une image rassurante et chaleureuse, un charme qui prend son temps.' },
+  { signe: 'Gémeaux', emoji: '♊︎', trait: 'Charme par les mots et la vivacité. L\'ascendant Gémeaux séduit par sa curiosité, son esprit pétillant et sa facilité de contact.' },
+  { signe: 'Cancer', emoji: '♋︎', trait: 'Douceur protectrice perceptible immédiatement. L\'ascendant Cancer inspire confiance et donne une image chaleureuse, presque familière dès le premier échange.' },
+  { signe: 'Lion', emoji: '♌︎', trait: 'Charisme et assurance immédiats. L\'ascendant Lion attire les regards par sa prestance naturelle et son envie de briller.' },
+  { signe: 'Vierge', emoji: '♍︎', trait: 'Réserve élégante et soignée. L\'ascendant Vierge séduit par son attention aux détails et une discrétion qui intrigue plus qu\'elle n\'éloigne.' },
+  { signe: 'Balance', emoji: '♎︎', trait: 'Charme raffiné et sens de l\'harmonie. L\'ascendant Balance donne une image agréable, diplomate, portée sur l\'esthétique de la première rencontre.' },
+  { signe: 'Scorpion', emoji: '♏︎', trait: 'Intensité magnétique et regard marquant. L\'ascendant Scorpion projette un mystère qui capte l\'attention et suscite la curiosité.' },
+  { signe: 'Sagittaire', emoji: '♐︎', trait: 'Énergie joviale et franchise désarmante. L\'ascendant Sagittaire donne une image aventurière, optimiste, facile d\'accès dès les premiers instants.' },
+  { signe: 'Capricorne', emoji: '♑︎', trait: 'Sérieux et retenue qui inspirent le respect. L\'ascendant Capricorne projette une image mature, une séduction qui se construit progressivement.' },
+  { signe: 'Verseau', emoji: '♒︎', trait: 'Originalité assumée. L\'ascendant Verseau attire par sa différence, son détachement apparent et son style hors des sentiers battus.' },
+  { signe: 'Poissons', emoji: '♓︎', trait: 'Douceur rêveuse et sensibilité visible. L\'ascendant Poissons dégage un romantisme perceptible dès le premier regard.' },
 ];
 
 export const metadata = contentMeta(config);
@@ -96,7 +96,7 @@ export default function AscendantAmourPage() {
 
         {/* Section 1: Calcul */}
         <section id="calcul" className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">🧮 Comment Calculer Son Ascendant</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Comment Calculer Son Ascendant</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le calcul de l&apos;ascendant nécessite trois données précises : date, heure et lieu de naissance, car il change de signe environ toutes les deux heures.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Contrairement au signe solaire, calculable &agrave; partir de la seule date de naissance, l&apos;<strong>ascendant</strong> exige trois informations&nbsp;: la <strong>date</strong>, l&apos;<strong>heure exacte</strong> (id&eacute;alement &agrave; quelques minutes pr&egrave;s) et le <strong>lieu de naissance</strong>. Ces trois &eacute;l&eacute;ments permettent de d&eacute;terminer le degr&eacute; du zodiaque qui croisait l&apos;horizon Est au moment pr&eacute;cis de la naissance &mdash; un calcul astronomique que r&eacute;alise un <strong>astrologue</strong> ou un outil sp&eacute;cialis&eacute;.
@@ -108,7 +108,7 @@ export default function AscendantAmourPage() {
 
         {/* Section 2: 12 signs */}
         <section id="signes" className="bg-gradient-to-br from-indigo-50 to-violet-50 rounded-xl p-8 mb-8 border-2 border-indigo-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">🎭 L&apos;Ascendant en Amour, Signe par Signe</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">L&apos;Ascendant en Amour, Signe par Signe</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Chaque ascendant colore différemment le style de séduction et la première impression laissée, indépendamment du signe solaire.</p>
           <div className="grid md:grid-cols-2 gap-4">
             {ASCENDANTS.map(({ signe, emoji, trait }) => (
@@ -124,7 +124,7 @@ export default function AscendantAmourPage() {
 
         {/* Section 3: Ascendant vs signe solaire, rôle en synastrie */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">💫 Ascendant et Compatibilité de Couple</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Ascendant et Compatibilité de Couple</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">L&apos;ascendant influence la première attraction et complète l&apos;analyse de compatibilité, sans jamais la remplacer entièrement.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             En <Link href="/methodes-voyance/synastrie-amoureuse/" className="text-indigo-600 hover:text-indigo-800 underline font-medium">synastrie amoureuse</Link>, quand une plan&egrave;te de votre partenaire &mdash; le Soleil, V&eacute;nus ou Mars &mdash; tombe pr&egrave;s de votre ascendant, elle &laquo;&nbsp;&eacute;claire&nbsp;&raquo; ou &laquo;&nbsp;challenge&nbsp;&raquo; de mani&egrave;re tr&egrave;s perceptible l&apos;image que vous projetez. C&apos;est souvent ce type de contact qui explique une <strong>attraction imm&eacute;diate</strong> et une forte visibilit&eacute; mutuelle d&egrave;s les premiers &eacute;changes.

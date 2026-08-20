@@ -16,7 +16,7 @@ const config: ContentPageConfig = {
     { name: 'Ex qui Revient', url: 'https://www.voyantlove.fr/reconquete/ex-qui-revient/' },
   ],
   header: {
-    emoji: '💕',
+    emoji: '',
     h1: 'Ex qui revient',
     subtitle: 'Que faire selon le tarot ?',
     gradient: 'from-violet-500 via-pink-500 to-rose-500',
@@ -27,10 +27,10 @@ const config: ContentPageConfig = {
   },
   accentText: 'text-pink-600',
   stats: [
-    { icon: '⭐', value: '4.8/5', label: '' },
-    { icon: '💕', value: 'Forte', label: '' },
-    { icon: '⏰', value: '3-6m', label: '' },
-    { icon: '🔮', value: 'Reconnue', label: '' },
+    { icon: '', value: '4.8/5', label: '' },
+    { icon: '', value: 'Forte', label: '' },
+    { icon: '', value: '3-6m', label: '' },
+    { icon: '', value: 'Reconnue', label: '' },
   ],
   eeat: { colorScheme: 'purple', method: 'Tarot de la reconquête amoureuse' },
   cta: { topic: 'reconquete', slug: 'ex-qui-revient' },
@@ -178,7 +178,7 @@ export default function ExQuiRevientPage() {
         {/* ZONE 2: Mid-Content - Recommandations complètes (milieu article) */}
         <VoyantRecommendations
           topic="reconquete"
-          title="💕 Voyants Spécialisés Retour de l'Ex"
+          title="Voyants Spécialisés Retour de l'Ex"
           subtitle="Ces voyants experts ont accompagné des centaines de personnes dans votre situation. Leur guidance vous aide à prendre la bonne décision et à voir clair dans les intentions de votre ex."
           limit={3}
           showOnlineFirst={true}
@@ -230,7 +230,7 @@ export default function ExQuiRevientPage() {
           <div className="grid md:grid-cols-2 gap-6 mb-6">
             <div className="bg-red-50 p-6 rounded-lg border-2 border-red-200">
               <h3 className="font-bold text-red-700 mb-4 text-xl flex items-center">
-                <span className="text-2xl mr-2">🚩</span> Red Flags : Refusez le Retour
+                <span className="text-2xl mr-2"></span> Red Flags : Refusez le Retour
               </h3>
               <ul className="space-y-3 text-gray-700">
                 <li className="flex items-start"><span className="text-red-600 mr-2">✗</span><span>Aucun changement visible de comportement</span></li>
@@ -246,7 +246,7 @@ export default function ExQuiRevientPage() {
 
             <div className="bg-green-50 p-6 rounded-lg border-2 border-green-200">
               <h3 className="font-bold text-green-700 mb-4 text-xl flex items-center">
-                <span className="text-2xl mr-2">✅</span> Green Flags : Envisagez la Seconde Chance
+                <span className="text-2xl mr-2"></span> Green Flags : Envisagez la Seconde Chance
               </h3>
               <ul className="space-y-3 text-gray-700">
                 <li className="flex items-start"><span className="text-green-600 mr-2">✓</span><span>Changements concrets et visibles (thérapie, comportement)</span></li>
@@ -269,7 +269,7 @@ export default function ExQuiRevientPage() {
         </section>
 
         <section className="bg-gradient-to-br from-violet-50 to-pink-50 rounded-xl p-8 mb-8">
-          <h2 className="text-3xl font-bold mb-6 text-purple-700">🔮 Guidance Tarot : Les Cartes du Retour de l'Ex</h2>
+          <h2 className="text-3xl font-bold mb-6 text-purple-700">Guidance Tarot : Les Cartes du Retour de l'Ex</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Les cartes favorables au retour sont Les Amoureux, Le Jugement, Le Soleil et le Deux de Coupe. Les cartes d'alerte sont Le Diable, La Tour, La Lune et le Sept d'Epée qui signalent un retour toxique.</p>
           <p className="text-gray-700 mb-6">Le <strong>tarot</strong> révèle les énergies en présence et guide votre décision face au <strong>retour de votre ex</strong>. Voici les cartes clés et leur interprétation.</p>
 

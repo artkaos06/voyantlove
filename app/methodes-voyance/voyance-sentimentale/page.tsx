@@ -28,10 +28,10 @@ const config: ContentPageConfig = {
   },
   accentText: 'text-purple-600',
   stats: [
-    { icon: '💜', value: 'Spécialisée', label: 'Questions amoureuses' },
-    { icon: '🔮', value: 'Multi-supports', label: 'Tarot, oracle, astro' },
-    { icon: '⭐', value: 'Reconnue', label: 'Expertise sentimentale' },
-    { icon: '🔒', value: 'Confidentielle', label: 'Consultations privées' },
+    { icon: '', value: 'Spécialisée', label: 'Questions amoureuses' },
+    { icon: '', value: 'Multi-supports', label: 'Tarot, oracle, astro' },
+    { icon: '', value: 'Reconnue', label: 'Expertise sentimentale' },
+    { icon: '', value: 'Confidentielle', label: 'Consultations privées' },
   ],
   eeat: { colorScheme: 'purple', method: 'Voyance sentimentale par tarot, clairvoyance et astrologie amoureuse' },
   cta: { topic: 'sentiments', slug: 'voyance-sentimentale' },
@@ -277,7 +277,7 @@ export default function VoyanceSentimentalePage() {
 
           <div className="space-y-4">
             <div className="flex items-start gap-3 bg-purple-50 p-4 rounded-lg">
-              <div className="text-2xl">💔</div>
+              <div className="text-2xl"></div>
               <div>
                 <h3 className="font-bold text-gray-800 mb-1">Apr&egrave;s une Rupture Douloureuse</h3>
                 <p className="text-gray-700 text-sm">Comprendre les raisons profondes, savoir si votre ex reviendra, et trouver la force de traverser le <Link href="/rupture/chagrin-damour/" className="text-purple-600 hover:text-purple-800 underline font-medium">chagrin d&apos;amour</Link>.</p>
@@ -285,7 +285,7 @@ export default function VoyanceSentimentalePage() {
             </div>
 
             <div className="flex items-start gap-3 bg-pink-50 p-4 rounded-lg">
-              <div className="text-2xl">❓</div>
+              <div className="text-2xl"></div>
               <div>
                 <h3 className="font-bold text-gray-800 mb-1">Quand le Doute s&apos;Installe</h3>
                 <p className="text-gray-700 text-sm">Vous ne savez plus ce que l&apos;autre ressent, si votre relation a un avenir, ou si vous devez rester ou partir.</p>
@@ -293,7 +293,7 @@ export default function VoyanceSentimentalePage() {
             </div>
 
             <div className="flex items-start gap-3 bg-blue-50 p-4 rounded-lg">
-              <div className="text-2xl">🔄</div>
+              <div className="text-2xl"></div>
               <div>
                 <h3 className="font-bold text-gray-800 mb-1">Avant une D&eacute;cision Importante</h3>
                 <p className="text-gray-700 text-sm">Engagement, d&eacute;m&eacute;nagement, mariage, r&eacute;conciliation : la <strong>voyance sentimentale</strong> &eacute;claire les cons&eacute;quences &eacute;nerg&eacute;tiques de vos choix.</p>
@@ -301,7 +301,7 @@ export default function VoyanceSentimentalePage() {
             </div>
 
             <div className="flex items-start gap-3 bg-green-50 p-4 rounded-lg">
-              <div className="text-2xl">✨</div>
+              <div className="text-2xl"></div>
               <div>
                 <h3 className="font-bold text-gray-800 mb-1">En Qu&ecirc;te de l&apos;Amour</h3>
                 <p className="text-gray-700 text-sm">C&eacute;libataire depuis longtemps, vous cherchez &agrave; comprendre pourquoi et quand l&apos;amour arrivera dans votre vie.</p>
@@ -309,7 +309,7 @@ export default function VoyanceSentimentalePage() {
             </div>
 
             <div className="flex items-start gap-3 bg-orange-50 p-4 rounded-lg">
-              <div className="text-2xl">⚠️</div>
+              <div className="text-2xl"></div>
               <div>
                 <h3 className="font-bold text-gray-800 mb-1">En Pleine Crise de Couple</h3>
                 <p className="text-gray-700 text-sm">Infid&eacute;lit&eacute;, perte de confiance, communication rompue : le <strong>voyant</strong> identifie la source du probl&egrave;me et les pistes de r&eacute;solution.</p>

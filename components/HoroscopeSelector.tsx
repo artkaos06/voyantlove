@@ -11,7 +11,7 @@ export default function HoroscopeSelector() {
   return (
     <div className="bg-gradient-to-br from-cyan-900 via-teal-900 to-emerald-900 rounded-2xl p-6 md:p-10 text-white shadow-2xl">
       <div className="text-center mb-6">
-        <h2 className="text-2xl md:text-3xl font-bold mb-2">✨ Quel Est Votre Signe ?</h2>
+        <h2 className="text-2xl md:text-3xl font-bold mb-2">Quel Est Votre Signe ?</h2>
         <p className="text-teal-200 text-sm">Cliquez sur votre signe pour votre prédiction amoureuse 2026</p>
       </div>
 

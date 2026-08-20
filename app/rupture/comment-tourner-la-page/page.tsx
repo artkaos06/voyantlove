@@ -16,7 +16,7 @@ const config: ContentPageConfig = {
     { name: 'Comment Tourner la Page', url: 'https://www.voyantlove.fr/rupture/comment-tourner-la-page/' },
   ],
   header: {
-    emoji: '🖤',
+    emoji: '',
     h1: 'Comment tourner la page après une rupture',
     subtitle: 'Lâcher prise et avancer avec la guidance de la voyance',
     gradient: 'from-gray-700 via-gray-800 to-gray-900',
@@ -27,10 +27,10 @@ const config: ContentPageConfig = {
   },
   accentText: 'text-gray-700',
   stats: [
-    { icon: '⭐', value: '4.8/5', label: '328 Avis' },
-    { icon: '🕊️', value: '6-18', label: 'Mois de guérison' },
-    { icon: '💫', value: '89%', label: 'Retrouvent le sourire' },
-    { icon: '🔮', value: '15 ans', label: 'Expérience' },
+    { icon: '', value: '4.8/5', label: '328 Avis' },
+    { icon: '', value: '6-18', label: 'Mois de guérison' },
+    { icon: '', value: '89%', label: 'Retrouvent le sourire' },
+    { icon: '', value: '15 ans', label: 'Expérience' },
   ],
   eeat: { colorScheme: 'rose', method: 'Guidance voyance pour tourner la page et avancer après une rupture' },
   cta: { topic: 'rupture', slug: 'comment-tourner-la-page' },
@@ -82,7 +82,7 @@ export default function CommentTournerLaPagePage() {
         <VoyantRecommendations topic="rupture" limit={3} showOnlineFirst={true} source="comment-tourner-la-page-cards-top" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">🔮 Ce que le Tarot Révèle sur le Lâcher-Prise</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Ce que le Tarot Révèle sur le Lâcher-Prise</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le tarot identifie trois clés pour tourner la page : comprendre pourquoi vous restez accroché(e), couper les liens énergétiques invisibles, et ouvrir la porte au renouveau amoureux.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Beaucoup de personnes pensent avoir tourné la page alors qu'elles portent encore des <strong>liens énergétiques invisibles</strong> avec leur ex. Le <strong>tarot</strong> détecte ces attachements résiduels qui vous maintiennent prisonnier(ère) du passé sans que vous en ayez conscience. La <strong>voyance</strong> vous aide à identifier et à couper ces fils pour retrouver votre <strong>liberté émotionnelle</strong>.
@@ -104,7 +104,7 @@ export default function CommentTournerLaPagePage() {
         </section>
 
         <section className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl p-8 mb-8 border-2 border-gray-300">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">🗝️ Les 5 Clés pour Tourner la Page</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Les 5 Clés pour Tourner la Page</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">La voyance révèle cinq clés essentielles pour tourner la page : accepter la réalité, traverser le deuil, se reconnecter à soi, créer du nouveau, et accueillir l'avenir avec confiance.</p>
           <div className="space-y-6">
             <div className="flex items-start gap-4">
@@ -148,7 +148,7 @@ export default function CommentTournerLaPagePage() {
         <VoyantQuickCTA topic="rupture" source="comment-tourner-la-page-banner-mid" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">🌙 Les Rituels de Libération par la Voyance</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Les Rituels de Libération par la Voyance</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">La voyance propose des rituels concrets pour accélérer le processus de détachement : la méditation de coupure des liens, le rituel de la lettre brûlée, et la purification énergétique du lieu de vie.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Au-delà de l'accompagnement psychologique, la <strong>voyance</strong> offre des outils énergétiques puissants pour faciliter le <strong>lâcher-prise</strong>. Ces rituels ne sont pas des superstitions mais des pratiques symboliques qui agissent sur votre <strong>subconscient</strong> et votre champ énergétique.

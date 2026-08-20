@@ -94,7 +94,7 @@ export default async function Consultation10MinutesOffertesPage({
 
       <section className="cpa68-hero" aria-labelledby="cpa68-title">
         <div className="cpa68-shell">
-          <div className="cpa68-brand"><span className="cpa68-heart" aria-hidden="true">♥</span> VoyantLove</div>
+          <div className="cpa68-brand"><span className="cpa68-heart" aria-hidden="true"></span> VoyantLove</div>
           <p className="cpa68-eyebrow">CONSULTATION PAR TÉLÉPHONE</p>
           <h1 id="cpa68-title">Besoin d’y voir plus clair dans votre situation&nbsp;?</h1>
           <p className="cpa68-lead">Parlez maintenant à un voyant pendant 10 minutes offertes.</p>

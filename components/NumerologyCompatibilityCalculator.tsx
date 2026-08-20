@@ -35,7 +35,7 @@ export default function NumerologyCompatibilityCalculator() {
 
   return (
     <div className="bg-gradient-to-br from-red-50 to-orange-50 rounded-xl p-6 md:p-8 border-2 border-red-300">
-      <h3 className="font-bold text-xl text-red-800 mb-2">💞 Calculez Votre Compatibilité par Date de Naissance</h3>
+      <h3 className="font-bold text-xl text-red-800 mb-2">Calculez Votre Compatibilité par Date de Naissance</h3>
       <p className="text-gray-700 text-sm mb-5">
         Entrez les deux dates de naissance : le chemin de vie de chaque partenaire se calcule instantanément dans votre navigateur, aucune donnée n&rsquo;est envoyée ni conservée.
       </p>
@@ -75,12 +75,12 @@ export default function NumerologyCompatibilityCalculator() {
         <div className="mt-6">
           <div className="grid md:grid-cols-2 gap-4 mb-4">
             <div className="bg-white rounded-lg p-5 border-2 border-red-200">
-              <div className="text-xs font-semibold uppercase tracking-wide text-gray-500 mb-1">🧭 Votre chemin de vie</div>
+              <div className="text-xs font-semibold uppercase tracking-wide text-gray-500 mb-1">Votre chemin de vie</div>
               <div className="text-3xl font-bold text-red-600 mb-1">{result.lifePathA}</div>
               <div className="font-bold text-gray-800 mb-1">{meaningA.title}</div>
             </div>
             <div className="bg-white rounded-lg p-5 border-2 border-orange-200">
-              <div className="text-xs font-semibold uppercase tracking-wide text-gray-500 mb-1">🧭 Chemin de vie du partenaire</div>
+              <div className="text-xs font-semibold uppercase tracking-wide text-gray-500 mb-1">Chemin de vie du partenaire</div>
               <div className="text-3xl font-bold text-orange-600 mb-1">{result.lifePathB}</div>
               <div className="font-bold text-gray-800 mb-1">{meaningB.title}</div>
             </div>

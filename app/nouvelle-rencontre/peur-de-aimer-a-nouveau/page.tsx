@@ -16,7 +16,7 @@ const config: ContentPageConfig = {
     { name: "Peur d'Aimer à Nouveau", url: 'https://www.voyantlove.fr/nouvelle-rencontre/peur-de-aimer-a-nouveau/' },
   ],
   header: {
-    emoji: '💙',
+    emoji: '',
     h1: "Peur d'Aimer à Nouveau : Surmonter les Blocages",
     subtitle: 'Lever les blocages amoureux avec la guidance de la voyance',
     gradient: 'from-cyan-500 via-cyan-600 to-blue-600',
@@ -27,10 +27,10 @@ const config: ContentPageConfig = {
   },
   accentText: 'text-cyan-600',
   stats: [
-    { icon: '⭐', value: '4.8/5', label: '276 Avis' },
-    { icon: '🛡️', value: '1 sur 4', label: 'Personnes touchées' },
-    { icon: '💫', value: '85%', label: 'Surmontent la peur' },
-    { icon: '🔮', value: '15 ans', label: 'Expérience' },
+    { icon: '', value: '4.8/5', label: '276 Avis' },
+    { icon: '', value: '1 sur 4', label: 'Personnes touchées' },
+    { icon: '', value: '85%', label: 'Surmontent la peur' },
+    { icon: '', value: '15 ans', label: 'Expérience' },
   ],
   eeat: { colorScheme: 'cyan', method: "Guidance voyance pour surmonter la peur d'aimer à nouveau" },
   cta: { topic: 'nouvelle-rencontre', slug: 'peur-de-aimer' },
@@ -82,7 +82,7 @@ export default function PeurDeAimerANouveauPage() {
       <VoyantRecommendations topic="nouvelle-rencontre" limit={3} showOnlineFirst={true} source="peur-de-aimer-a-nouveau-cards-top" />
 
       <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-        <h2 className="text-3xl font-bold text-gray-900 mb-6">🔮 Ce que le Tarot Révèle sur votre Peur d'Aimer</h2>
+        <h2 className="text-3xl font-bold text-gray-900 mb-6">Ce que le Tarot Révèle sur votre Peur d'Aimer</h2>
         <p className="text-lg font-semibold text-gray-800 mb-4">Le tarot identifie trois dimensions de la peur d'aimer : la blessure originelle qui a créé le blocage, les mécanismes de défense que vous avez érigés, et le potentiel amoureux qui attend derrière ces murs.</p>
         <p className="text-gray-700 leading-relaxed mb-6">
           Les arcanes du <strong>tarot</strong> sont d'une précision remarquable pour cartographier les <strong>blocages amoureux</strong>. Chaque carte raconte une histoire différente et ensemble, elles dessinent la carte de votre paysage émotionnel avec ses montagnes de peur et ses vallées de potentiel inexploré.
@@ -104,7 +104,7 @@ export default function PeurDeAimerANouveauPage() {
       </section>
 
       <section className="bg-gradient-to-br from-cyan-50 to-blue-50 rounded-xl p-8 mb-8 border-2 border-cyan-200">
-        <h2 className="text-3xl font-bold text-gray-900 mb-6">🗝️ Les 5 Clés pour Surmonter la Peur d'Aimer</h2>
+        <h2 className="text-3xl font-bold text-gray-900 mb-6">Les 5 Clés pour Surmonter la Peur d'Aimer</h2>
         <p className="text-lg font-semibold text-gray-800 mb-4">Cinq clés guidées par la voyance transforment la peur d'aimer en force : reconnaître la peur, guérir la blessure source, se reconnecter au désir d'aimer, avancer à son rythme, et accueillir l'amour imparfait.</p>
         <div className="space-y-6">
           <div className="flex items-start gap-4">
@@ -148,7 +148,7 @@ export default function PeurDeAimerANouveauPage() {
       <VoyantQuickCTA topic="nouvelle-rencontre" source="peur-de-aimer-a-nouveau-banner-mid" />
 
       <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-        <h2 className="text-3xl font-bold text-gray-900 mb-6">🌙 Les Signes que Vous Êtes Prêt(e) à Aimer à Nouveau</h2>
+        <h2 className="text-3xl font-bold text-gray-900 mb-6">Les Signes que Vous Êtes Prêt(e) à Aimer à Nouveau</h2>
         <p className="text-lg font-semibold text-gray-800 mb-4">La voyance identifie cinq signes que votre cœur s'ouvre à nouveau : la nostalgie qui cède la place à la sérénité, l'envie de partager, la capacité à être vulnérable, la paix avec le passé, et les synchronicités amoureuses.</p>
         <p className="text-gray-700 leading-relaxed mb-6">
           Comment savoir si vous êtes vraiment prêt(e) à aimer à nouveau ou si vous forcez les choses par impatience ou pression sociale ? La <strong>voyance</strong> et le <strong>tarot</strong> vous offrent des indicateurs fiables de votre état de préparation émotionnelle.
@@ -178,7 +178,7 @@ export default function PeurDeAimerANouveauPage() {
       </section>
 
       <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-        <h2 className="text-3xl font-bold text-gray-900 mb-6">🌟 L'Astrologie au Service de la Guérison Amoureuse</h2>
+        <h2 className="text-3xl font-bold text-gray-900 mb-6">L'Astrologie au Service de la Guérison Amoureuse</h2>
         <p className="text-lg font-semibold text-gray-800 mb-4">Votre thème natal révèle votre rapport inné à l'amour et les transits planétaires indiquent les périodes idéales pour transformer votre peur en ouverture du cœur.</p>
         <p className="text-gray-700 leading-relaxed mb-6">
           L'<strong>astrologie</strong> offre une grille de lecture complémentaire au <strong>tarot</strong> pour comprendre et surmonter la <strong>peur d'aimer</strong>. Votre thème natal contient des informations précieuses sur votre <strong>rapport à l'amour</strong> et aux <strong>relations</strong>.

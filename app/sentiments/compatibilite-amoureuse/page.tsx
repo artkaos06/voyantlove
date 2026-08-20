@@ -87,7 +87,7 @@ export default function CompatibiliteAmoureusePage() {
 
         {/* Section: Analyse de Compatibilit&eacute; par le Tarot */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">🃏 Analyse de Compatibilit&eacute; par le Tarot</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Analyse de Compatibilit&eacute; par le Tarot</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le tirage de compatibilite en six positions analyse l'attraction, la communication, les valeurs, l'equilibre emotionnel, la croissance et le destin du couple a travers une double lecture positive et defi.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Le <strong>tirage de compatibilit&eacute; amoureuse</strong> utilise un &eacute;talement sp&eacute;cifique de six positions, chacune r&eacute;v&eacute;lant une dimension essentielle de votre lien. Chaque position est interpr&eacute;t&eacute;e &agrave; travers deux cartes : l&rsquo;une montrant le potentiel positif, l&rsquo;autre les d&eacute;fis &agrave; surmonter. Cette double lecture offre une <strong>analyse de couple</strong> compl&egrave;te et honn&ecirc;te.
@@ -138,7 +138,7 @@ export default function CompatibiliteAmoureusePage() {
 
         {/* Section: Synastrie Astrologique */}
         <section className="bg-gradient-to-br from-rose-50 to-pink-50 rounded-xl p-8 mb-8 border-2 border-rose-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">⭐ Synastrie Astrologique &mdash; Votre Couple au Microscope</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Synastrie Astrologique &mdash; Votre Couple au Microscope</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">La synastrie astrologique superpose vos deux themes nataux pour mesurer la compatibilite astrale. Les aspects Venus-Mars, Lune-Lune, Soleil-Soleil et Saturne revelent attraction, emotion, identite et durabilite.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             La <strong>synastrie amoureuse</strong> est l&rsquo;art ancestral de superposer deux th&egrave;mes nataux pour mesurer la <strong>compatibilit&eacute; astrale</strong> d&rsquo;un couple. Cette branche de l&rsquo;<Link href="/methodes-voyance/astrologie-amoureuse/" className="text-rose-600 hover:text-rose-800 underline font-medium">astrologie amoureuse</Link> r&eacute;v&egrave;le, &agrave; travers chaque aspect plan&eacute;taire, une dimension sp&eacute;cifique de votre relation &mdash; de l&rsquo;attraction physique &agrave; la connexion spirituelle. Cette m&eacute;thode permet de comprendre pourquoi certains couples fonctionnent sans effort tandis que d&rsquo;autres luttent en permanence malgr&eacute; un amour sinc&egrave;re.
@@ -177,7 +177,7 @@ export default function CompatibiliteAmoureusePage() {
 
         {/* Section: &Acirc;me S&oelig;ur vs Partenaire Compatible vs Flamme Jumelle */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">🔥 &Acirc;me S&oelig;ur vs Partenaire Compatible vs Flamme Jumelle</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">&Acirc;me S&oelig;ur vs Partenaire Compatible vs Flamme Jumelle</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">L'ame soeur apporte reconnaissance et harmonie, le partenaire compatible offre stabilite concrete, et la flamme jumelle provoque une transformation intense. Le tarot differencie ces trois types de liens amoureux.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             La <strong>voyance amoureuse</strong> distingue trois types de liens profonds entre deux &ecirc;tres. Chacun poss&egrave;de ses propres caract&eacute;ristiques, ses signes r&eacute;v&eacute;lateurs et son impact sur votre vie sentimentale. Confondre ces liens m&egrave;ne souvent &agrave; des attentes irr&eacute;alistes et des d&eacute;ceptions. Voici comment le <strong>tarot</strong> et l&rsquo;<strong>astrologie</strong> les diff&eacute;rencient.
@@ -185,7 +185,7 @@ export default function CompatibiliteAmoureusePage() {
 
           <div className="space-y-5">
             <div className="bg-green-50 border-l-4 border-green-500 rounded-lg p-6">
-              <h3 className="font-bold text-lg mb-3 text-green-700">💚 L&rsquo;&Acirc;me S&oelig;ur</h3>
+              <h3 className="font-bold text-lg mb-3 text-green-700">L&rsquo;&Acirc;me S&oelig;ur</h3>
               <p className="text-gray-700 mb-3">
                 Votre <strong>&acirc;me s&oelig;ur</strong> est une personne avec laquelle vous partagez une connexion spirituelle ancienne, souvent d&eacute;crite comme une reconnaissance imm&eacute;diate lors de la premi&egrave;re rencontre. Le tarot la r&eacute;v&egrave;le par le Deux de Coupe et Le Soleil en combinaison. Cette relation apporte confort, compr&eacute;hension profonde et croissance mutuelle. Contrairement aux id&eacute;es re&ccedil;ues, nous avons plusieurs &acirc;mes s&oelig;urs potentielles au cours d&rsquo;une vie. Pour reconna&icirc;tre les <Link href="/nouvelle-rencontre/signes-ame-soeur/" className="text-rose-600 hover:text-rose-800 underline font-medium">signes de l&rsquo;&acirc;me s&oelig;ur</Link>, la voyance offre des rep&egrave;res pr&eacute;cis.
               </p>
@@ -197,7 +197,7 @@ export default function CompatibiliteAmoureusePage() {
             </div>
 
             <div className="bg-blue-50 border-l-4 border-blue-500 rounded-lg p-6">
-              <h3 className="font-bold text-lg mb-3 text-blue-700">💙 Le Partenaire Compatible</h3>
+              <h3 className="font-bold text-lg mb-3 text-blue-700">Le Partenaire Compatible</h3>
               <p className="text-gray-700 mb-3">
                 Un <strong>partenaire compatible</strong> est une personne dont les valeurs, le rythme de vie et la vision du couple s&rsquo;harmonisent naturellement avec les v&ocirc;tres. La <strong>compatibilit&eacute; amoureuse</strong> se construit ici sur des bases concr&egrave;tes plut&ocirc;t que mystiques. Le tarot la montre par le Dix de Pentacles et Temp&eacute;rance. Cette relation est stable, pr&eacute;visible et propice &agrave; la construction d&rsquo;une vie commune durable, m&ecirc;me si elle manque parfois du feu sacr&eacute; des liens karmiques.
               </p>
@@ -209,7 +209,7 @@ export default function CompatibiliteAmoureusePage() {
             </div>
 
             <div className="bg-purple-50 border-l-4 border-purple-500 rounded-lg p-6">
-              <h3 className="font-bold text-lg mb-3 text-purple-700">💜 La Flamme Jumelle</h3>
+              <h3 className="font-bold text-lg mb-3 text-purple-700">La Flamme Jumelle</h3>
               <p className="text-gray-700 mb-3">
                 La <strong>flamme jumelle</strong> repr&eacute;sente la connexion la plus intense et la plus transformatrice. Ce lien, r&eacute;v&eacute;l&eacute; par Le Jugement et La Lune dans le tarot, provoque un bouleversement total de votre &ecirc;tre. Contrairement &agrave; l&rsquo;<strong>&acirc;me s&oelig;ur</strong>, la flamme jumelle n&rsquo;est pas toujours confortable : elle confronte vos ombres, vos peurs et vos blessures les plus profondes. Cette relation catalyse une &eacute;volution spirituelle acc&eacute;l&eacute;r&eacute;e qui peut &ecirc;tre douloureuse mais profond&eacute;ment lib&eacute;ratrice.
               </p>
@@ -226,7 +226,7 @@ export default function CompatibiliteAmoureusePage() {
 
         {/* Section: Les 7 Piliers de la Compatibilit&eacute; Amoureuse */}
         <section id="piliers" className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">🏛️ Les 7 Piliers de la Compatibilit&eacute; Amoureuse</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Les 7 Piliers de la Compatibilit&eacute; Amoureuse</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">La compatibilite amoureuse repose sur sept piliers : physique, emotionnel, intellectuel, valeurs, projet de vie, communication et spirituel. Un deficit sur un seul pilier fragilise l'ensemble du couple.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Une <strong>compatibilit&eacute; amoureuse</strong> solide repose sur sept dimensions compl&eacute;mentaires. Le <strong>tarot de compatibilit&eacute;</strong> &eacute;value chacun de ces piliers pour dresser un portrait global de votre harmonie de couple. Un d&eacute;ficit sur un seul pilier peut fragiliser l&rsquo;ensemble de la relation.
@@ -279,7 +279,7 @@ export default function CompatibiliteAmoureusePage() {
 
         {/* Section: Surmonter l&rsquo;Incompatibilit&eacute; */}
         <section className="bg-gradient-to-br from-rose-50 to-pink-50 rounded-xl p-8 mb-8 border-2 border-rose-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">🛠️ Surmonter l&rsquo;Incompatibilit&eacute; &mdash; Ce que le Tarot Conseille</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Surmonter l&rsquo;Incompatibilit&eacute; &mdash; Ce que le Tarot Conseille</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Les incompatibilites de communication ou de rythme sont surmontables avec effort mutuel. Les divergences de valeurs fondamentales sont structurelles et le tarot conseille alors une decision lucide.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Lorsque le <strong>tirage de compatibilit&eacute;</strong> r&eacute;v&egrave;le des zones d&rsquo;incompatibilit&eacute;, tout n&rsquo;est pas perdu. Le <strong>tarot</strong> ne condamne jamais un couple &mdash; il &eacute;claire les chemins possibles. Certaines incompatibilit&eacute;s sont surmontables avec effort et conscience, tandis que d&rsquo;autres signalent des diff&eacute;rences trop fondamentales pour &ecirc;tre r&eacute;solues. Savoir faire la distinction est essentiel pour votre bonheur.

@@ -16,7 +16,7 @@ const config: ContentPageConfig = {
     { name: 'Voyance par Chat Amour', url: 'https://www.voyantlove.fr/methodes-voyance/voyance-par-chat-amour/' },
   ],
   header: {
-    emoji: '💬',
+    emoji: '',
     h1: 'Voyance par chat amour : consultation en ligne',
     subtitle: 'Consultez un voyant en ligne par messagerie, en toute discrétion',
     gradient: 'from-indigo-500 via-violet-600 to-indigo-700',
@@ -27,10 +27,10 @@ const config: ContentPageConfig = {
   },
   accentText: 'text-indigo-600',
   stats: [
-    { icon: '⭐', value: '4.8/5', label: '358 Avis' },
-    { icon: '💬', value: '24/7', label: 'Disponibilité' },
-    { icon: '🔒', value: '100%', label: 'Confidentiel' },
-    { icon: '🔮', value: '15 ans', label: 'Expérience' },
+    { icon: '', value: '4.8/5', label: '358 Avis' },
+    { icon: '', value: '24/7', label: 'Disponibilité' },
+    { icon: '', value: '100%', label: 'Confidentiel' },
+    { icon: '', value: '15 ans', label: 'Expérience' },
   ],
   eeat: { colorScheme: 'purple', method: 'Voyance amoureuse par chat en ligne' },
   cta: { topic: 'methodes-voyance', slug: 'voyance-par-chat-amour' },
@@ -78,7 +78,7 @@ export default function VoyanceParChatAmourPage() {
 
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">💬 Les Avantages Uniques de la Voyance par Chat</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Les Avantages Uniques de la Voyance par Chat</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">La voyance par chat offre des avantages spécifiques que les autres formats ne proposent pas : discrétion totale, trace écrite, temps de réflexion et accessibilité permanente.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             La <strong>consultation par chat</strong> n&apos;est pas simplement une alternative au téléphone ou au cabinet &mdash; c&apos;est un format qui possède ses propres forces. De nombreux consultants découvrent que le chat leur convient mieux que tout autre mode de <strong>voyance</strong>, et voici pourquoi.
@@ -104,7 +104,7 @@ export default function VoyanceParChatAmourPage() {
         </section>
 
         <section className="bg-gradient-to-br from-indigo-50 to-violet-50 rounded-xl p-8 mb-8 border-2 border-indigo-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">🔮 Comment Se Déroule une Consultation Chat Amour</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Comment Se Déroule une Consultation Chat Amour</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Une consultation de voyance par chat suit un processus structuré en cinq étapes : la connexion initiale, l&apos;exposition de votre situation, le tirage et la lecture, les échanges approfondis et les conseils de guidance.</p>
           <div className="space-y-6">
             <div className="flex items-start gap-4">
@@ -148,7 +148,7 @@ export default function VoyanceParChatAmourPage() {
         <VoyantQuickCTA topic="methodes-voyance" source="voyance-par-chat-amour-banner-mid" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">⚡ Chat vs Téléphone vs Cabinet : Le Comparatif</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Chat vs Téléphone vs Cabinet : Le Comparatif</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Chaque mode de consultation possède ses atouts. Comprendre les différences vous aide à choisir le format le plus adapté à vos besoins et à votre personnalité.</p>
           <div className="overflow-x-auto mb-6">
             <table className="w-full text-left border-collapse">
@@ -200,7 +200,7 @@ export default function VoyanceParChatAmourPage() {
         </section>
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">🛡️ Comment Reconnaître un Voyant Chat Fiable</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Comment Reconnaître un Voyant Chat Fiable</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Choisir un bon voyant par chat nécessite de vérifier plusieurs critères : avis vérifiés, spécialisation en amour, qualité des premiers échanges et transparence sur les tarifs.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Le marché de la <strong>voyance en ligne</strong> est vaste, et tous les praticiens ne se valent pas. Voici les critères essentiels pour identifier un <strong>voyant par chat</strong> digne de confiance qui vous apportera une <strong>guidance amoureuse</strong> authentique et précise.

@@ -116,15 +116,15 @@ export default async function CardPage({ params }: Props) {
           <h2 className="text-2xl font-bold text-gray-900 mb-5">{c.name} selon votre situation amoureuse</h2>
           <div className="space-y-5">
             <div>
-              <h3 className="font-bold text-indigo-800 mb-1">💗 Pour un célibataire</h3>
+              <h3 className="font-bold text-indigo-800 mb-1">Pour un célibataire</h3>
               <p className="text-gray-700">{renderWithEntities(c.celibataire)}</p>
             </div>
             <div>
-              <h3 className="font-bold text-indigo-800 mb-1">💞 Pour un couple</h3>
+              <h3 className="font-bold text-indigo-800 mb-1">Pour un couple</h3>
               <p className="text-gray-700">{renderWithEntities(c.couple)}</p>
             </div>
             <div>
-              <h3 className="font-bold text-indigo-800 mb-1">💔 Concernant un ex</h3>
+              <h3 className="font-bold text-indigo-800 mb-1">Concernant un ex</h3>
               <p className="text-gray-700">{renderWithEntities(c.ex)}</p>
             </div>
           </div>
@@ -133,12 +133,12 @@ export default async function CardPage({ params }: Props) {
         <section className="bg-white rounded-xl shadow-md p-6 mb-8 text-center">
           <p className="text-gray-700 mb-3">Envie de tirer les cartes vous-même&nbsp;? Essayez notre tirage tarot amour gratuit et immédiat.</p>
           <Link href="/voyance-gratuite-amour/tarot-amour-gratuit/" className="inline-block bg-indigo-700 hover:bg-indigo-800 text-white font-semibold px-6 py-3 rounded-lg transition">
-            🔮 Faire un tirage gratuit
+            Faire un tirage gratuit
           </Link>
         </section>
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">❓ Questions fréquentes sur {c.name} en amour</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">Questions fréquentes sur {c.name} en amour</h2>
           <div className="space-y-6">
             {c.faq.map((f, i) => (
               <div key={i} className={i < c.faq.length - 1 ? 'border-b border-gray-200 pb-6' : ''}>
@@ -151,7 +151,7 @@ export default async function CardPage({ params }: Props) {
 
         {siblings.length > 0 && (
           <div className="bg-gray-100 rounded-xl p-6 mb-8">
-            <h2 className="font-bold text-lg mb-4 text-gray-900">🃏 Autres cartes du tarot amour</h2>
+            <h2 className="font-bold text-lg mb-4 text-gray-900">Autres cartes du tarot amour</h2>
             <div className="space-y-2">
               {siblings.map((x) => (
                 <Link key={x.slug} href={`/tarot-amour/${x.slug}/`} className="block text-indigo-600 hover:text-indigo-800 font-medium">

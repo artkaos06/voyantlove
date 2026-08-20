@@ -16,7 +16,7 @@ const config: ContentPageConfig = {
     { name: 'Pense-t-il/elle à Moi ?', url: 'https://www.voyantlove.fr/sentiments/pense-t-il-elle-a-moi/' },
   ],
   header: {
-    emoji: '💭',
+    emoji: '',
     h1: 'Pense-t-il/elle à moi ?',
     subtitle: 'Ce que le tarot et la voyance révèlent sur ses pensées secrètes',
     gradient: 'from-pink-400 via-rose-500 to-purple-500',
@@ -28,10 +28,10 @@ const config: ContentPageConfig = {
   },
   accentText: 'text-pink-600',
   stats: [
-    { icon: '🔮', value: 'Reconnue', label: 'Expertise' },
-    { icon: '💭', value: '4,200+', label: 'Tirages réalisés' },
-    { icon: '⭐', value: '4.7/5', label: '312 Avis' },
-    { icon: '🔒', value: '100%', label: 'Confidentiel' },
+    { icon: '', value: 'Reconnue', label: 'Expertise' },
+    { icon: '', value: '4,200+', label: 'Tirages réalisés' },
+    { icon: '', value: '4.7/5', label: '312 Avis' },
+    { icon: '', value: '100%', label: 'Confidentiel' },
   ],
   eeat: { colorScheme: 'pink', method: 'Tarot des pensées et connexion télépathique' },
   cta: { topic: 'sentiments', slug: 'pense-t-il-elle-a-moi' },
@@ -92,35 +92,35 @@ export default function PenseTilElleAMoiPage() {
 
         {/* H2: Les Signes Énergétiques */}
         <section id="signes" className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">{'\u2728'} Les Signes Énergétiques qu&apos;il/elle Pense à Vous</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Les Signes Énergétiques qu&apos;il/elle Pense à Vous</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Pensees soudaines inexplicables, reves recurrents, bourdonnement dans l&apos;oreille et synchronicites troublantes sont les signes energetiques les plus courants qu&apos;une personne pense intensement a vous.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Lorsqu&apos;une personne pense intensément à vous, cette <strong>énergie mentale</strong> se manifeste à travers des <Link href="/sentiments/signes-il-elle-maime/" className="text-pink-600 hover:text-pink-800 underline font-medium">signes d&apos;amour</Link> physiques et spirituels que la <strong>voyance</strong> reconnaît depuis des siècles. Voici les manifestations les plus courantes d&apos;une connexion télépathique active.
           </p>
           <div className="grid md:grid-cols-2 gap-6 mb-6">
             <div className="bg-pink-50 border-2 border-pink-300 rounded-lg p-6">
-              <h3 className="font-bold text-lg mb-3 text-pink-700">{'\u{1F4AD}'} Pensées Soudaines et Inexplicables</h3>
+              <h3 className="font-bold text-lg mb-3 text-pink-700">Pensées Soudaines et Inexplicables</h3>
               <p className="text-gray-700 text-sm mb-2">
                 Vous pensez brusquement à cette personne sans raison apparente, au milieu d&apos;une activité sans rapport. Cette <strong>irruption mentale</strong> correspond souvent au moment exact où l&apos;autre pense à vous. Le lien énergétique agit comme un fil invisible qui transmet les pensées intenses d&apos;un esprit à l&apos;autre, créant une résonance émotionnelle instantanée.
               </p>
               <p className="text-pink-600 text-sm italic">Signal fort si cela survient à des moments précis et récurrents.</p>
             </div>
             <div className="bg-purple-50 border-2 border-purple-300 rounded-lg p-6">
-              <h3 className="font-bold text-lg mb-3 text-purple-700">{'\u{1F311}'} Rêves Récurrents</h3>
+              <h3 className="font-bold text-lg mb-3 text-purple-700">Rêves Récurrents</h3>
               <p className="text-gray-700 text-sm mb-2">
                 Les <strong>rêves mettant en scène</strong> cette personne de manière répétée signalent une connexion active sur le plan astral. Pendant le sommeil, les barrières conscientes tombent et les énergies circulent librement. Un rêve particulièrement vivace et émotionnellement chargé indique que la personne pense intensément à vous au même moment.
               </p>
               <p className="text-purple-600 text-sm italic">Plus le rêve est précis et émotionnel, plus la connexion est forte.</p>
             </div>
             <div className="bg-rose-50 border-2 border-rose-300 rounded-lg p-6">
-              <h3 className="font-bold text-lg mb-3 text-rose-700">{'\u{1F442}'} Bourdonnement dans l&apos;Oreille</h3>
+              <h3 className="font-bold text-lg mb-3 text-rose-700">Bourdonnement dans l&apos;Oreille</h3>
               <p className="text-gray-700 text-sm mb-2">
                 Un bourdonnement soudain dans l&apos;<strong>oreille droite</strong> sans cause médicale est considéré en tradition spirituelle comme le signe que quelqu&apos;un parle ou pense à vous positivement. L&apos;oreille gauche indiquerait des pensées plus critiques ou conflictuelles. Cette manifestation physique est l&apos;un des <strong>signes télépathiques</strong> les plus anciennement documentés.
               </p>
               <p className="text-rose-600 text-sm italic">Oreille droite = pensées positives. Oreille gauche = pensées conflictuelles.</p>
             </div>
             <div className="bg-indigo-50 border-2 border-indigo-300 rounded-lg p-6">
-              <h3 className="font-bold text-lg mb-3 text-indigo-700">{'\u{1F300}'} Synchronicités Troublantes</h3>
+              <h3 className="font-bold text-lg mb-3 text-indigo-700">Synchronicités Troublantes</h3>
               <p className="text-gray-700 text-sm mb-2">
                 Voir son prénom partout, entendre &laquo;votre chanson&raquo;, tomber sur des photos anciennes : ces <strong>coïncidences significatives</strong> sont des synchronicités orchestrées par l&apos;univers. Elles apparaissent lorsque deux personnes sont connectées énergétiquement et que l&apos;une pense fortement à l&apos;autre. Ces signes sont fréquemment confirmés lors d&apos;un <strong>tirage de tarot</strong>.
               </p>
@@ -128,13 +128,13 @@ export default function PenseTilElleAMoiPage() {
             </div>
           </div>
           <div className="bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded">
-            <p className="text-gray-700"><strong>{'\u{1F4A1}'} Autres signes reconnus :</strong> éternuement soudain sans allergie, hoquet inexpliqué, frissons sans cause physique, sensation de chaleur ou de picotement sur la joue. Ces <strong>manifestations corporelles</strong> sont des réponses physiologiques à l&apos;énergie télépathique reçue.</p>
+            <p className="text-gray-700"><strong>Autres signes reconnus :</strong> éternuement soudain sans allergie, hoquet inexpliqué, frissons sans cause physique, sensation de chaleur ou de picotement sur la joue. Ces <strong>manifestations corporelles</strong> sont des réponses physiologiques à l&apos;énergie télépathique reçue.</p>
           </div>
         </section>
 
         {/* H2: Le Tirage Tarot */}
         <section id="tirage" className="bg-gradient-to-br from-pink-50 to-purple-50 rounded-xl p-8 mb-8 border-2 border-pink-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">{'\u{1F0CF}'} Le Tirage Tarot &laquo;Pense-t-il/elle à Moi ?&raquo;</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Le Tirage Tarot &laquo;Pense-t-il/elle à Moi ?&raquo;</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le tirage en quatre positions analyse la frequence des pensees, leur nature (nostalgiques ou desirantes), la raison profonde de ces pensees et si elles meneront a une action concrete de sa part.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Ce <strong>tirage spécifique en quatre positions</strong> est conçu pour capter l&apos;énergie mentale de la personne concernée. Chaque position du tirage répond à une dimension précise de ses <strong>pensées vous concernant</strong>, offrant une lecture complète de ce qui se passe dans son esprit.
@@ -170,13 +170,13 @@ export default function PenseTilElleAMoiPage() {
             </div>
           </div>
           <div className="bg-white p-6 rounded-lg border-2 border-pink-200">
-            <p className="text-gray-700"><strong>{'\u{1F52E}'} Conseil du voyant :</strong> Ce tirage est particulièrement puissant lorsqu&apos;il est réalisé le soir, moment où les <strong>barrières mentales</strong> s&apos;abaissent et où les <strong>connexions télépathiques</strong> sont les plus actives. La précision augmente si vous méditez quelques instants sur la personne avant le tirage.</p>
+            <p className="text-gray-700"><strong>Conseil du voyant :</strong> Ce tirage est particulièrement puissant lorsqu&apos;il est réalisé le soir, moment où les <strong>barrières mentales</strong> s&apos;abaissent et où les <strong>connexions télépathiques</strong> sont les plus actives. La précision augmente si vous méditez quelques instants sur la personne avant le tirage.</p>
           </div>
         </section>
 
         {/* H2: Télépathie Amoureuse */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">{'\u{1F9E0}'} Télépathie Amoureuse et Connexion Spirituelle</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Télépathie Amoureuse et Connexion Spirituelle</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">La telepathie amoureuse est la capacite de ressentir les emotions d&apos;une personne avec laquelle on partage un lien affectif profond. Les flammes jumelles et ames soeurs developpent naturellement cette connexion.</p>
           <p className="text-gray-700 leading-relaxed mb-4">
             La <strong>télépathie amoureuse</strong> désigne cette capacité intuitive de ressentir les émotions, les pensées et même les intentions d&apos;une personne avec laquelle on partage un lien affectif profond. Ce phénomène, reconnu depuis des millénaires dans les traditions spirituelles, s&apos;explique par la <strong>connexion énergétique</strong> qui se tisse naturellement entre deux êtres ayant partagé une intimité émotionnelle intense.
@@ -186,23 +186,23 @@ export default function PenseTilElleAMoiPage() {
           </p>
           <div className="grid md:grid-cols-3 gap-4 mb-6">
             <div className="bg-pink-50 rounded-lg p-5 text-center">
-              <div className="text-3xl mb-2">{'\u{1F496}'}</div>
+              <div className="text-3xl mb-2"></div>
               <h3 className="font-bold text-pink-700 mb-2">Lien Émotionnel</h3>
               <p className="text-gray-700 text-sm">L&apos;<strong>intensité émotionnelle</strong> partagée crée un canal de communication invisible entre les deux personnes.</p>
             </div>
             <div className="bg-purple-50 rounded-lg p-5 text-center">
-              <div className="text-3xl mb-2">{'\u{1F30C}'}</div>
+              <div className="text-3xl mb-2"></div>
               <h3 className="font-bold text-purple-700 mb-2">Plan Astral</h3>
               <p className="text-gray-700 text-sm">La <strong>connexion astrale</strong> se manifeste surtout la nuit, pendant le sommeil, quand les défenses conscientes tombent.</p>
             </div>
             <div className="bg-indigo-50 rounded-lg p-5 text-center">
-              <div className="text-3xl mb-2">{'\u{1F54A}\uFE0F'}</div>
+              <div className="text-3xl mb-2"></div>
               <h3 className="font-bold text-indigo-700 mb-2">Synchronicité</h3>
               <p className="text-gray-700 text-sm">Les <strong>coïncidences significatives</strong> confirment l&apos;existence d&apos;un lien télépathique actif entre vous.</p>
             </div>
           </div>
           <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded">
-            <p className="text-gray-700"><strong>{'\u2728'} Phénomène fréquent :</strong> Vous pensez à cette personne et elle vous contacte quelques minutes après. Cette <strong>synchronicité relationnelle</strong> est l&apos;une des preuves les plus tangibles d&apos;une connexion télépathique amoureuse. Le <strong>tarot</strong> permet de mesurer l&apos;intensité réelle de ce lien invisible.</p>
+            <p className="text-gray-700"><strong>Phénomène fréquent :</strong> Vous pensez à cette personne et elle vous contacte quelques minutes après. Cette <strong>synchronicité relationnelle</strong> est l&apos;une des preuves les plus tangibles d&apos;une connexion télépathique amoureuse. Le <strong>tarot</strong> permet de mesurer l&apos;intensité réelle de ce lien invisible.</p>
           </div>
         </section>
 
@@ -210,7 +210,7 @@ export default function PenseTilElleAMoiPage() {
 
         {/* H2: Penser ≠ Vouloir Revenir */}
         <section className="bg-gradient-to-r from-rose-50 to-orange-50 rounded-xl p-8 mb-8 border-2 border-rose-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">{'\u26A0\uFE0F'} Penser à Vous &ne; Vouloir Revenir : Les Nuances</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Penser à Vous &ne; Vouloir Revenir : Les Nuances</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Penser a vous ne signifie pas vouloir revenir. Le tarot distingue les pensees motivees par le regret ou la nostalgie passive de celles qui menent a une action concrete de reconciliation.</p>
           <p className="text-gray-700 leading-relaxed mb-4">
             L&apos;une des erreurs les plus courantes est de confondre <strong>pensées persistantes</strong> et <strong>intention de retour</strong>. Une personne peut penser à vous quotidiennement, intensément, avec nostalgie et tendresse, sans pour autant souhaiter reprendre la relation ou vous recontacter. Cette distinction est fondamentale pour éviter de nourrir de faux espoirs, surtout en période de <Link href="/reconquete/ex-revient-silence-radio/" className="text-pink-600 hover:text-pink-800 underline font-medium">silence radio</Link> après une séparation.
@@ -220,7 +220,7 @@ export default function PenseTilElleAMoiPage() {
           </p>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-white rounded-lg p-6 border-l-4 border-green-500">
-              <h3 className="font-bold text-lg mb-3 text-green-700">{'\u2705'} Pensées qui Mènent à l&apos;Action</h3>
+              <h3 className="font-bold text-lg mb-3 text-green-700">Pensées qui Mènent à l&apos;Action</h3>
               <ul className="space-y-2 text-gray-700 text-sm">
                 <li>&bull; <strong>Pensées accompagnées de regret actif</strong> et envie de réparer</li>
                 <li>&bull; Rêves récurrents suivis de tentatives de contact</li>
@@ -230,7 +230,7 @@ export default function PenseTilElleAMoiPage() {
               </ul>
             </div>
             <div className="bg-white rounded-lg p-6 border-l-4 border-orange-500">
-              <h3 className="font-bold text-lg mb-3 text-orange-700">{'\u{1F6D1}'} Pensées sans Intention de Retour</h3>
+              <h3 className="font-bold text-lg mb-3 text-orange-700">Pensées sans Intention de Retour</h3>
               <ul className="space-y-2 text-gray-700 text-sm">
                 <li>&bull; <strong>Nostalgie passive</strong> sans volonté de changement</li>
                 <li>&bull; Pensées motivées par l&apos;habitude, non par le manque</li>
@@ -244,39 +244,39 @@ export default function PenseTilElleAMoiPage() {
 
         {/* H2: Renforcer la Connexion Télépathique */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">{'\u{1F9D8}'} Comment Renforcer la Connexion Télépathique</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Comment Renforcer la Connexion Télépathique</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Meditation de connexion, visualisation creatrice, rituel d&apos;intention et journal telepathique sont quatre pratiques spirituelles eprouvees pour intensifier le lien energetique avec une personne.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Si vous souhaitez intensifier le <strong>lien télépathique</strong> avec cette personne, certaines pratiques spirituelles et méditatives permettent de renforcer la <strong>connexion énergétique</strong> existante. Ces techniques sont utilisées depuis des siècles dans les traditions de voyance et de développement intuitif.
           </p>
           <div className="space-y-4">
             <div className="bg-pink-50 border-l-4 border-pink-500 p-5 rounded">
-              <h3 className="font-bold mb-2 text-pink-700">{'\u{1F9D8}'} Méditation de Connexion</h3>
+              <h3 className="font-bold mb-2 text-pink-700">Méditation de Connexion</h3>
               <p className="text-gray-700 text-sm">
                 Installez-vous au calme, fermez les yeux et visualisez un <strong>fil de lumière rose</strong> reliant votre coeur au sien. Concentrez-vous sur les émotions positives partagées. Cette <strong>méditation dirigée</strong> renforce le canal télépathique en y injectant de l&apos;énergie intentionnelle. Pratiquez 10 à 15 minutes, idéalement le soir avant de dormir quand les réceptivités sont maximales.
               </p>
             </div>
             <div className="bg-purple-50 border-l-4 border-purple-500 p-5 rounded">
-              <h3 className="font-bold mb-2 text-purple-700">{'\u{1F5BC}\uFE0F'} Visualisation Créatrice</h3>
+              <h3 className="font-bold mb-2 text-purple-700">Visualisation Créatrice</h3>
               <p className="text-gray-700 text-sm">
                 Imaginez avec le plus de détails possible un <strong>moment heureux partagé</strong> avec cette personne. Revivez les sensations, les émotions, les odeurs et les sons. Cette <strong>visualisation intensive</strong> envoie un signal énergétique puissant sur le plan astral. Plus l&apos;image mentale est précise et chargée émotionnellement, plus le message télépathique est fort et susceptible d&apos;être capté par l&apos;autre personne.
               </p>
             </div>
             <div className="bg-indigo-50 border-l-4 border-indigo-500 p-5 rounded">
-              <h3 className="font-bold mb-2 text-indigo-700">{'\u{1F56F}\uFE0F'} Rituel d&apos;Intention</h3>
+              <h3 className="font-bold mb-2 text-indigo-700">Rituel d&apos;Intention</h3>
               <p className="text-gray-700 text-sm">
                 Allumez une bougie rose, écrivez le prénom de la personne sur un papier et placez-le sous la bougie. Formulez votre <strong>intention clairement</strong> : non pas de manipuler, mais de renforcer un lien déjà existant. Ce <strong>rituel simple</strong> canalise votre énergie et amplifie votre signal télépathique. La bougie rose symbolise l&apos;amour doux et sincère, sans intention de contrôle. Pour explorer l&apos;avenir de cette connexion, découvrez ce que le tarot prédit sur l&apos;<Link href="/sentiments/avenir-amoureux/" className="text-pink-600 hover:text-pink-800 underline font-medium">avenir de votre relation</Link>.
               </p>
             </div>
             <div className="bg-rose-50 border-l-4 border-rose-500 p-5 rounded">
-              <h3 className="font-bold mb-2 text-rose-700">{'\u{1F4DD}'} Journal Télépathique</h3>
+              <h3 className="font-bold mb-2 text-rose-700">Journal Télépathique</h3>
               <p className="text-gray-700 text-sm">
                 Tenez un journal où vous notez chaque <strong>pensée soudaine</strong>, chaque rêve, chaque synchronicité liés à cette personne, avec la date et l&apos;heure précises. Ce <strong>suivi rigoureux</strong> vous permet d&apos;identifier des patterns et de vérifier a posteriori les correspondances avec les moments où l&apos;autre personne pensait à vous. Souvent, les coïncidences temporelles sont troublantes de précision.
               </p>
             </div>
           </div>
           <div className="mt-6 bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded">
-            <p className="text-gray-700"><strong>{'\u26A0\uFE0F'} Mise en garde importante :</strong> Ces pratiques visent à renforcer une <strong>connexion existante</strong>, pas à créer une obsession ou à manipuler les sentiments d&apos;autrui. Le respect du libre arbitre de l&apos;autre personne est fondamental. Si la <strong>voyance</strong> révèle que le lien n&apos;est pas réciproque, la sagesse consiste à accepter cette vérité et à avancer.</p>
+            <p className="text-gray-700"><strong>Mise en garde importante :</strong> Ces pratiques visent à renforcer une <strong>connexion existante</strong>, pas à créer une obsession ou à manipuler les sentiments d&apos;autrui. Le respect du libre arbitre de l&apos;autre personne est fondamental. Si la <strong>voyance</strong> révèle que le lien n&apos;est pas réciproque, la sagesse consiste à accepter cette vérité et à avancer.</p>
           </div>
         </section>
 

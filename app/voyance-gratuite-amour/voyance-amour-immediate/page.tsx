@@ -16,7 +16,7 @@ const config: ContentPageConfig = {
     { name: 'Voyance Amour Gratuite Immédiate', url: 'https://www.voyantlove.fr/voyance-gratuite-amour/voyance-amour-immediate/' },
   ],
   header: {
-    emoji: '⚡',
+    emoji: '',
     h1: 'Voyance amour gratuite immédiate',
     subtitle: 'Tirage instantané en ligne et consultation en direct sans attente',
     gradient: 'from-emerald-500 via-teal-500 to-green-500',
@@ -28,10 +28,10 @@ const config: ContentPageConfig = {
   },
   accentText: 'text-emerald-600',
   stats: [
-    { icon: '⚡', value: 'Instantané', label: 'Réponse en secondes' },
-    { icon: '🎁', value: 'Gratuit', label: 'Sans inscription' },
-    { icon: '🕐', value: '24h/24', label: 'Disponible' },
-    { icon: '🔒', value: 'Privé', label: 'Confidentiel' },
+    { icon: '', value: 'Instantané', label: 'Réponse en secondes' },
+    { icon: '', value: 'Gratuit', label: 'Sans inscription' },
+    { icon: '', value: '24h/24', label: 'Disponible' },
+    { icon: '', value: 'Privé', label: 'Confidentiel' },
   ],
   eeat: { colorScheme: 'green', method: 'Voyance amour immédiate : tirages automatiques et consultations en direct' },
   cta: { topic: 'voyance-gratuite', slug: 'voyance-amour-immediate' },
@@ -83,22 +83,22 @@ export default function VoyanceAmourImmediatePage() {
 
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">🎴 Tirages Automatiques Gratuits et Instantanés</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Tirages Automatiques Gratuits et Instantanés</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Les tirages automatiques de voyance amour sont disponibles 24h/24 sans inscription : tarot oui/non, tirage en croix sentimental, oracle de l&apos;amour. Réponse en moins d&apos;une minute.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Les <strong>tirages automatiques</strong> reposent sur un algorithme aléatoire qui simule fidèlement le tirage manuel des cartes. La symbolique des arcanes appliquée à votre question est <strong>authentique</strong> : c&apos;est exactement ce que ferait un tarologue débutant face à votre question. La différence avec une consultation humaine se joue sur la capacité à adapter l&apos;interprétation à votre énergie unique et à approfondir avec des questions de clarification.
           </p>
           <div className="grid md:grid-cols-3 gap-5 mb-6">
             <Link href="/voyance-gratuite-amour/tarot-oui-non-amour/" className="bg-emerald-50 rounded-lg p-5 border-l-4 border-emerald-500 hover:bg-emerald-100 transition">
-              <h3 className="font-bold text-emerald-800 mb-2">⚡ Tarot Oui/Non Amour</h3>
+              <h3 className="font-bold text-emerald-800 mb-2">Tarot Oui/Non Amour</h3>
               <p className="text-sm text-gray-700">Réponse binaire instantanée à une question sentimentale précise. Idéal pour trancher un doute.</p>
             </Link>
             <Link href="/voyance-gratuite-amour/tarot-amour-gratuit/" className="bg-teal-50 rounded-lg p-5 border-l-4 border-teal-500 hover:bg-teal-100 transition">
-              <h3 className="font-bold text-teal-800 mb-2">🃏 Tarot Amour Gratuit</h3>
+              <h3 className="font-bold text-teal-800 mb-2">Tarot Amour Gratuit</h3>
               <p className="text-sm text-gray-700">Tirage en croix complet pour analyser les énergies, blocages et évolution d&apos;une relation.</p>
             </Link>
             <Link href="/voyance-gratuite-amour/oracle-gratuit-amour/" className="bg-green-50 rounded-lg p-5 border-l-4 border-green-500 hover:bg-green-100 transition">
-              <h3 className="font-bold text-green-800 mb-2">✨ Oracle Gratuit Amour</h3>
+              <h3 className="font-bold text-green-800 mb-2">Oracle Gratuit Amour</h3>
               <p className="text-sm text-gray-700">Message intuitif et bienveillant sur votre situation sentimentale du moment.</p>
             </Link>
           </div>
@@ -108,7 +108,7 @@ export default function VoyanceAmourImmediatePage() {
         </section>
 
         <section id="consultation" className="bg-gradient-to-br from-emerald-50 to-teal-50 rounded-xl p-8 mb-8 border-2 border-emerald-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">📞 Voyance Amour Immédiate avec un Voyant en Direct</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Voyance Amour Immédiate avec un Voyant en Direct</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Les consultations en direct avec un voyant spécialisé amour offrent une lecture personnalisée immédiate. Les premières minutes sont offertes pour découvrir le praticien sans engagement.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Quand votre question dépasse le binaire oui/non, sentiments complexes, situation triangulaire, doute existentiel, la <strong>consultation immédiate avec un voyant</strong> apporte une profondeur que le tirage automatique ne peut atteindre. Le praticien capte votre énergie à travers la voix, pose des questions de clarification et ajuste sa lecture en temps réel. C&apos;est l&apos;équivalent immédiat d&apos;une vraie consultation en cabinet.
@@ -133,11 +133,11 @@ export default function VoyanceAmourImmediatePage() {
         </section>
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">⏱️ Tirage Automatique vs Consultation Immédiate</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Tirage Automatique vs Consultation Immédiate</h2>
           <p className="text-lg font-semibold text-gray-800 mb-6">Le tirage automatique convient pour une question simple et rapide. La consultation immédiate avec un voyant est nécessaire pour les situations complexes ou émotionnellement chargées.</p>
           <div className="grid md:grid-cols-2 gap-5">
             <div className="bg-emerald-50 rounded-lg p-6 border-2 border-emerald-300">
-              <h3 className="font-bold text-lg mb-3 text-emerald-700">🎴 Tirage Automatique</h3>
+              <h3 className="font-bold text-lg mb-3 text-emerald-700">Tirage Automatique</h3>
               <ul className="text-gray-700 text-sm space-y-2">
                 <li>✓ Réponse instantanée (moins d&apos;une minute)</li>
                 <li>✓ 100% gratuit, sans inscription</li>
@@ -148,7 +148,7 @@ export default function VoyanceAmourImmediatePage() {
               </ul>
             </div>
             <div className="bg-teal-50 rounded-lg p-6 border-2 border-teal-300">
-              <h3 className="font-bold text-lg mb-3 text-teal-700">📞 Consultation Immédiate</h3>
+              <h3 className="font-bold text-lg mb-3 text-teal-700">Consultation Immédiate</h3>
               <ul className="text-gray-700 text-sm space-y-2">
                 <li>✓ Premières minutes offertes</li>
                 <li>✓ Lecture personnalisée par un voyant</li>

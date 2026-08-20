@@ -141,9 +141,9 @@ export function formatPrice(price: string): string {
 // Get availability badge
 export function getAvailabilityServices(voyant: Voyant): string[] {
   const services: string[] = [];
-  if (voyant.CHAT === '1') services.push('💬 Chat');
-  if (voyant.TEL === '1') services.push('📞 Téléphone');
-  if (voyant.MAIL === '1') services.push('📧 Email');
+  if (voyant.CHAT === '1') services.push('Chat');
+  if (voyant.TEL === '1') services.push('Téléphone');
+  if (voyant.MAIL === '1') services.push('Email');
   return services;
 }
 

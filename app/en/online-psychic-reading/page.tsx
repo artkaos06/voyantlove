@@ -88,7 +88,7 @@ export default function OnlinePsychicReadingPage() {
 
             {/* True scarcity note */}
             <div className="inline-flex items-center gap-2 mt-5 px-4 py-2 bg-amber-50 border border-amber-200 rounded-full">
-              <span aria-hidden="true">⏳</span>
+              <span aria-hidden="true"></span>
               <p className="text-xs text-amber-900 font-medium">
                 The $1 trial applies once per new user, you won&apos;t see this
                 price again after sign-up.

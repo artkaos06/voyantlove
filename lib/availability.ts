@@ -51,8 +51,8 @@ export function availabilityNow(now: Date = new Date()): Availability {
     return {
       open: false,
       badge: 'Ligne ouverte à partir de 8h',
-      scarcity: `⏱️ Nos voyants reprennent les appels à ${OPEN_HOUR}h`,
-      callsToday: '👥 Plus de 200 appels chaque jour',
+      scarcity: `Nos voyants reprennent les appels à ${OPEN_HOUR}h`,
+      callsToday: 'Plus de 200 appels chaque jour',
       ctaSub: 'Appelez dès 8h',
       stickyInfo: 'Ligne ouverte\ndès 8h',
     };
@@ -79,8 +79,8 @@ export function availabilityNow(now: Date = new Date()): Availability {
   return {
     open: true,
     badge: 'Voyants disponibles maintenant',
-    scarcity: `⏱️ Seulement ${slots} consultations disponibles ${partOfDay}`,
-    callsToday: `👥 ${calls} appels aujourd'hui`,
+    scarcity: `Seulement ${slots} consultations disponibles ${partOfDay}`,
+    callsToday: `${calls} appels aujourd'hui`,
     ctaSub: 'Appeler maintenant',
     stickyInfo: `${slots} voyants\ndisponibles`,
   };

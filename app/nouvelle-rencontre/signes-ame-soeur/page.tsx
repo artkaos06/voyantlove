@@ -16,7 +16,7 @@ const config: ContentPageConfig = {
     { name: 'Signes de l\'Âme Sœur', url: 'https://www.voyantlove.fr/nouvelle-rencontre/signes-ame-soeur/' },
   ],
   header: {
-    emoji: '✨',
+    emoji: '',
     h1: 'Les signes de l\'âme sœur',
     subtitle: 'Reconnaître votre connexion karmique et votre amour véritable',
     gradient: 'from-purple-600 via-pink-500 to-rose-500',
@@ -28,10 +28,10 @@ const config: ContentPageConfig = {
   },
   accentText: 'text-purple-600',
   stats: [
-    { icon: '💫', value: '15 Signes', label: 'Reconnaître l\'âme sœur' },
-    { icon: '🔮', value: 'Majoritaire', label: 'Reconnaissance immédiate' },
-    { icon: '✨', value: '8/15', label: 'Signes minimum' },
-    { icon: '💖', value: '3,200+', label: 'Confirmations' },
+    { icon: '', value: '15 Signes', label: 'Reconnaître l\'âme sœur' },
+    { icon: '', value: 'Majoritaire', label: 'Reconnaissance immédiate' },
+    { icon: '', value: '8/15', label: 'Signes minimum' },
+    { icon: '', value: '3,200+', label: 'Confirmations' },
   ],
   eeat: { colorScheme: 'purple', method: 'Analyse des signes karmiques et spirituels' },
   cta: { topic: 'nouvelle-rencontre', slug: 'signes-ame-soeur' },
@@ -89,7 +89,7 @@ export default function SignesAmeSoeurPage() {
       <VoyantRecommendations topic="nouvelle-rencontre" limit={3} showOnlineFirst={true} source="signes-ame-soeur-cards-top" />
 
       <section id="signes" className="bg-white rounded-xl shadow-md p-8 mb-8">
-        <h2 className="text-3xl font-bold mb-6 text-purple-600">💫 Les 15 Signes Infaillibles de l'Âme Sœur</h2>
+        <h2 className="text-3xl font-bold mb-6 text-purple-600">Les 15 Signes Infaillibles de l'Âme Sœur</h2>
         <p className="text-lg font-semibold text-gray-800 mb-4">Les signes de l'ame soeur incluent la connexion instantanee, les synchronicites repetees, le sentiment de « rentrer chez soi » et la croissance mutuelle. Au moins 8 signes sur 15 confirment la connexion.</p>
         <p className="text-gray-700 mb-6">
           Votre <strong>âme sœur</strong> se révèle à travers une constellation de signes qui, ensemble, forment une signature énergétique unique. Voici les 15 indicateurs les plus fiables selon la tradition spirituelle et confirmés par 15 ans d'expérience en voyance amoureuse.
@@ -207,7 +207,7 @@ export default function SignesAmeSoeurPage() {
       </section>
 
       <section className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-8 mb-8 border-2 border-purple-200">
-        <h2 className="text-3xl font-bold mb-6 text-gray-900">🔮 Âme Sœur vs Flamme Jumelle : Comprendre la Différence</h2>
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Âme Sœur vs Flamme Jumelle : Comprendre la Différence</h2>
         <p className="text-lg font-semibold text-gray-800 mb-4">L'ame soeur offre une connexion harmonieuse et stable. La flamme jumelle est un miroir intense, souvent turbulent, qui declenche une transformation spirituelle profonde. La grande majorite des rencontres sont des ames soeurs.</p>
         <p className="text-gray-700 mb-6">
           Beaucoup confondent <strong>âme sœur</strong> et <strong><Link href="/nouvelle-rencontre/flamme-jumelle/" className="text-purple-600 hover:text-purple-800 underline font-medium">flamme jumelle</Link></strong>, alors que ces concepts représentent deux types de connexions spirituelles distinctes. Voici comment les différencier.
@@ -216,7 +216,7 @@ export default function SignesAmeSoeurPage() {
         <div className="grid md:grid-cols-2 gap-6">
           <div className="bg-white rounded-lg p-6 border-2 border-pink-300">
             <h3 className="font-bold text-xl mb-4 text-pink-700 flex items-center gap-2">
-              <span>💕</span> L'Âme Sœur
+              <span></span> L'Âme Sœur
             </h3>
             <div className="space-y-3 text-gray-700">
               <div className="flex items-start gap-2">
@@ -248,7 +248,7 @@ export default function SignesAmeSoeurPage() {
 
           <div className="bg-white rounded-lg p-6 border-2 border-purple-300">
             <h3 className="font-bold text-xl mb-4 text-purple-700 flex items-center gap-2">
-              <span>🔥</span> La Flamme Jumelle
+              <span></span> La Flamme Jumelle
             </h3>
             <div className="space-y-3 text-gray-700">
               <div className="flex items-start gap-2">
@@ -280,7 +280,7 @@ export default function SignesAmeSoeurPage() {
         </div>
 
         <div className="bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded-lg mt-6">
-          <h4 className="font-bold text-yellow-800 mb-2">⚠️ Clarification Importante</h4>
+          <h4 className="font-bold text-yellow-800 mb-2">Clarification Importante</h4>
           <p className="text-gray-700">
             Si votre relation est <strong>majoritairement harmonieuse et évolutive</strong>, vous avez probablement rencontré une <strong>âme sœur</strong>. Si elle est <strong>extrêmement intense, cyclique, et transformative</strong> avec phases de séparation douloureuses, c'est potentiellement une <strong>flamme jumelle</strong>. Les deux sont des cadeaux spirituels, mais nécessitent des approches différentes. Ne romanticez pas la souffrance : une âme sœur harmonieuse est tout aussi précieuse qu'une flamme jumelle intense.
           </p>
@@ -290,7 +290,7 @@ export default function SignesAmeSoeurPage() {
       <VoyantQuickCTA topic="nouvelle-rencontre" source="signes-ame-soeur-banner-mid" />
 
       <section id="tarot" className="bg-white rounded-xl shadow-md p-8 mb-8">
-        <h2 className="text-3xl font-bold mb-6 text-purple-600">🃏 Le Tarot Confirme : Les Cartes de l'Âme Sœur</h2>
+        <h2 className="text-3xl font-bold mb-6 text-purple-600">Le Tarot Confirme : Les Cartes de l'Âme Sœur</h2>
         <p className="text-lg font-semibold text-gray-800 mb-4">Les Amoureux, le Deux de Coupe, le Soleil, l'Etoile et Temperance sont les cartes qui confirment une connexion d'ame soeur lors d'un tirage de tarot amoureux.</p>
         <p className="text-gray-700 mb-6">
           Le <strong>tarot</strong> offre une confirmation spirituelle de votre rencontre d'âme sœur à travers des cartes spécifiques qui révèlent la nature karmique et sacrée de votre connexion.
@@ -298,49 +298,49 @@ export default function SignesAmeSoeurPage() {
 
         <div className="space-y-4">
           <div className="bg-pink-50 p-5 rounded-lg border-l-4 border-pink-500">
-            <h3 className="font-bold text-pink-700 mb-2 text-lg">🎴 Les Amoureux (Arcane VI)</h3>
+            <h3 className="font-bold text-pink-700 mb-2 text-lg">Les Amoureux (Arcane VI)</h3>
             <p className="text-gray-700">
               LA carte de l'âme sœur par excellence. Représente le <strong>choix conscient de l'amour</strong>, l'union divinely guided, la décision du cœur alignée avec l'âme. Quand cette carte apparaît dans un tirage relationnel, elle confirme que cette personne est une âme sœur avec qui vous partagez une mission commune. Cette carte apparaît très fréquemment dans les tirages confirmant une âme sœur.
             </p>
           </div>
 
           <div className="bg-purple-50 p-5 rounded-lg border-l-4 border-purple-500">
-            <h3 className="font-bold text-purple-700 mb-2 text-lg">🎴 Deux de Coupe</h3>
+            <h3 className="font-bold text-purple-700 mb-2 text-lg">Deux de Coupe</h3>
             <p className="text-gray-700">
               Symbolise le <strong>partenariat équilibré et harmonieux</strong>, l'échange énergétique mutuel, la reconnaissance réciproque. Cette carte indique que vous avez rencontré quelqu'un avec qui vous partagez une connexion d'égal à égal, basée sur le respect et l'amour authentique. Confirme la compatibilité profonde et l'alignement vibratoire.
             </p>
           </div>
 
           <div className="bg-blue-50 p-5 rounded-lg border-l-4 border-blue-500">
-            <h3 className="font-bold text-blue-700 mb-2 text-lg">🎴 Le Soleil (Arcane XIX)</h3>
+            <h3 className="font-bold text-blue-700 mb-2 text-lg">Le Soleil (Arcane XIX)</h3>
             <p className="text-gray-700">
               Représente la <strong>joie pure, l'accomplissement, la clarté</strong>. Dans un contexte d'âme sœur, le Soleil indique que cette relation vous apporte épanouissement authentique et illumine votre chemin de vie. Vous rayonnez ensemble. Cette carte confirme que vous avez trouvé THE personne qui fait briller votre lumière intérieure.
             </p>
           </div>
 
           <div className="bg-green-50 p-5 rounded-lg border-l-4 border-green-500">
-            <h3 className="font-bold text-green-700 mb-2 text-lg">🎴 L'Étoile (Arcane XVII)</h3>
+            <h3 className="font-bold text-green-700 mb-2 text-lg">L'Étoile (Arcane XVII)</h3>
             <p className="text-gray-700">
               Symbolise l'<strong>espoir, la guidance divine, la connexion spirituelle</strong>. Quand l'Étoile apparaît, elle confirme que votre rencontre est orchestrée par l'univers et guidée par des forces supérieures. Cette personne arrive dans votre vie comme une bénédiction céleste, souvent après une période sombre. Marque la guérison par l'amour.
             </p>
           </div>
 
           <div className="bg-yellow-50 p-5 rounded-lg border-l-4 border-yellow-500">
-            <h3 className="font-bold text-yellow-700 mb-2 text-lg">🎴 Dix de Coupe</h3>
+            <h3 className="font-bold text-yellow-700 mb-2 text-lg">Dix de Coupe</h3>
             <p className="text-gray-700">
               LA carte du <strong>bonheur familial durable et de l'accomplissement émotionnel</strong>. Annonce que cette relation mènera à une union stable, possiblement mariage et famille. Confirme que vous avez trouvé quelqu'un avec qui construire une vie entière. Vision à long terme extrêmement positive.
             </p>
           </div>
 
           <div className="bg-indigo-50 p-5 rounded-lg border-l-4 border-indigo-500">
-            <h3 className="font-bold text-indigo-700 mb-2 text-lg">🎴 Tempérance (Arcane XIV)</h3>
+            <h3 className="font-bold text-indigo-700 mb-2 text-lg">Tempérance (Arcane XIV)</h3>
             <p className="text-gray-700">
               Représente l'<strong>alchimie parfaite, l'équilibre, la fusion harmonieuse</strong> de deux êtres. Dans un tirage d'âme sœur, Tempérance confirme que vous et cette personne créez ensemble quelque chose de supérieur à la somme de vos individualités. Votre union est alchemical transformation.
             </p>
           </div>
 
           <div className="bg-red-50 p-5 rounded-lg border-l-4 border-red-500">
-            <h3 className="font-bold text-red-700 mb-2 text-lg">🎴 Le Jugement (Arcane XX)</h3>
+            <h3 className="font-bold text-red-700 mb-2 text-lg">Le Jugement (Arcane XX)</h3>
             <p className="text-gray-700">
               Symbolise la <strong>renaissance, le réveil spirituel, la réunion karmique</strong>. Indique que cette rencontre est un awakening majeur dans votre parcours d'âme. Souvent présent dans les retrouvailles après séparation ou les reconnaissances de connexions de vies antérieures. Confirmation puissante du lien karmique.
             </p>
@@ -348,7 +348,7 @@ export default function SignesAmeSoeurPage() {
         </div>
 
         <div className="bg-purple-50 border-2 border-purple-300 rounded-lg p-6 mt-6">
-          <h4 className="font-bold text-purple-800 mb-3 text-lg">🔮 Tirage Spécial "Âme Sœur Confirmation"</h4>
+          <h4 className="font-bold text-purple-800 mb-3 text-lg">Tirage Spécial "Âme Sœur Confirmation"</h4>
           <p className="text-gray-700 mb-3">
             Pour confirmer si vous avez rencontré votre âme sœur, le tarot propose un tirage en 5 positions :
           </p>
@@ -366,7 +366,7 @@ export default function SignesAmeSoeurPage() {
       </section>
 
       <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-        <h2 className="text-3xl font-bold mb-6 text-purple-600">🌙 La Dimension Karmique de l'Âme Sœur</h2>
+        <h2 className="text-3xl font-bold mb-6 text-purple-600">La Dimension Karmique de l'Âme Sœur</h2>
         <p className="text-lg font-semibold text-gray-800 mb-4">Votre ame soeur est une rencontre karmique planifiee avant l'incarnation. Des contrats d'ames definissent le type de relation, les lecons a apprendre et la duree prevue de l'union.</p>
         <p className="text-gray-700 mb-6">
           Votre <strong>âme sœur</strong> n'est pas un accident cosmique. C'est une <strong>rencontre karmique planifiée</strong> avant votre incarnation, une union qui sert votre évolution spirituelle et celle de votre partenaire.
@@ -374,7 +374,7 @@ export default function SignesAmeSoeurPage() {
 
         <div className="space-y-6">
           <div className="bg-cyan-50 p-6 rounded-lg border-2 border-cyan-200">
-            <h3 className="font-bold text-xl mb-3 text-cyan-700">📜 Contrats d'Âmes et Vies Antérieures</h3>
+            <h3 className="font-bold text-xl mb-3 text-cyan-700">Contrats d'Âmes et Vies Antérieures</h3>
             <p className="text-gray-700 mb-3">
               Avant votre naissance, votre âme a passé des <strong>contrats avec d'autres âmes</strong> pour vous rencontrer à des moments précis de votre vie actuelle. Ces contrats définissent le type de relation (romantique, amicale, familiale), les leçons à apprendre, et la durée de l'union.
             </p>
@@ -384,7 +384,7 @@ export default function SignesAmeSoeurPage() {
           </div>
 
           <div className="bg-pink-50 p-6 rounded-lg border-2 border-pink-200">
-            <h3 className="font-bold text-xl mb-3 text-pink-700">⚡ Karma Positif vs Karma à Résoudre</h3>
+            <h3 className="font-bold text-xl mb-3 text-pink-700">Karma Positif vs Karma à Résoudre</h3>
             <p className="text-gray-700 mb-3">
               <strong>Karma positif :</strong> Certaines âmes sœurs se retrouvent pour célébrer et profiter d'un karma positif créé ensemble dans des vies antérieures. Ces relations sont naturellement harmonieuses et heureuses dès le début.
             </p>
@@ -394,7 +394,7 @@ export default function SignesAmeSoeurPage() {
           </div>
 
           <div className="bg-purple-50 p-6 rounded-lg border-2 border-purple-200">
-            <h3 className="font-bold text-xl mb-3 text-purple-700">🎯 Mission Commune et Évolution Spirituelle</h3>
+            <h3 className="font-bold text-xl mb-3 text-purple-700">Mission Commune et Évolution Spirituelle</h3>
             <p className="text-gray-700 mb-3">
               Chaque union d'âmes sœurs sert une <strong>mission spirituelle</strong> : guérir des lignées familiales, créer ensemble, éveiller l'un l'autre, incarner l'amour inconditionnel, servir une cause commune, ou simplement apprendre les leçons de l'intimité et de l'engagement.
             </p>
@@ -404,7 +404,7 @@ export default function SignesAmeSoeurPage() {
           </div>
 
           <div className="bg-blue-50 p-6 rounded-lg border-2 border-blue-200">
-            <h3 className="font-bold text-xl mb-3 text-blue-700">🔄 Durée de l'Union : Éternelle ou Temporaire ?</h3>
+            <h3 className="font-bold text-xl mb-3 text-blue-700">Durée de l'Union : Éternelle ou Temporaire ?</h3>
             <p className="text-gray-700">
               Toutes les âmes sœurs ne sont pas destinées à rester ensemble toute la vie. Certaines viennent pour une <strong>période spécifique</strong> : vous aider à traverser une transition, vous enseigner une leçon cruciale, ou vous préparer pour l'union définitive. D'autres sont des <strong>âmes sœurs à vie</strong>, partenaires pour toute cette incarnation et au-delà. Le tarot et l'astrologie révèlent la nature et la durée prévue de votre connexion.
             </p>
@@ -413,7 +413,7 @@ export default function SignesAmeSoeurPage() {
       </section>
 
       <section className="bg-gradient-to-br from-yellow-50 to-orange-50 rounded-xl p-8 mb-8 border-2 border-orange-200">
-        <h2 className="text-3xl font-bold mb-6 text-gray-900">⚠️ Les Pièges à Éviter dans la Quête de l'Âme Sœur</h2>
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Les Pièges à Éviter dans la Quête de l'Âme Sœur</h2>
         <p className="text-lg font-semibold text-gray-800 mb-4">Les pieges principaux sont idealiser le concept au point d'ignorer les red flags, attendre passivement, forcer une connexion et negliger la compatibilite pratique au quotidien.</p>
 
         <div className="space-y-4">

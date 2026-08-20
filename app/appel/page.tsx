@@ -49,7 +49,7 @@ function AppelInner() {
       style={{ background: 'linear-gradient(160deg,#241657 0%,#3a1d6e 55%,#4a1f5e 100%)' }}
     >
       <div className="w-full max-w-md">
-        <div className="text-5xl mb-4">🔮</div>
+        <div className="text-5xl mb-4"></div>
         <h1 className="text-2xl font-bold mb-3">Votre voyant vous attend</h1>
         <p className="text-white/75 mb-8 leading-relaxed">
           Appuyez pour lancer votre consultation privée, en toute confidentialité.
@@ -59,7 +59,7 @@ function AppelInner() {
           className="w-full py-4 rounded-xl font-bold text-lg text-white transition-transform active:scale-95 shadow-lg"
           style={{ background: 'linear-gradient(90deg,#ff6b9d,#ff8f6b)' }}
         >
-          📞 Appeler maintenant
+          Appeler maintenant
         </button>
         <p className="mt-3 text-lg font-bold" style={{ color: '#f4d98a' }}>
           {formatPhone(phone)}

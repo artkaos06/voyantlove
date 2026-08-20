@@ -16,7 +16,7 @@ const config: ContentPageConfig = {
     { name: 'Chagrin d\'Amour', url: 'https://www.voyantlove.fr/rupture/chagrin-damour/' },
   ],
   header: {
-    emoji: '💙',
+    emoji: '',
     h1: 'Chagrin d\'amour',
     subtitle: 'Guérir et retrouver l\'espoir',
     gradient: 'from-blue-600 via-indigo-600 to-purple-600',
@@ -28,10 +28,10 @@ const config: ContentPageConfig = {
   },
   accentText: 'text-blue-600',
   stats: [
-    { icon: '⭐', value: '4.8/5', label: '287 Avis' },
-    { icon: '💙', value: 'Nette', label: 'Amélioration ressentie' },
-    { icon: '⏰', value: '3-6 mois', label: 'Guérison' },
-    { icon: '🌈', value: 'Grande', label: 'Majorité retrouve joie' },
+    { icon: '', value: '4.8/5', label: '287 Avis' },
+    { icon: '', value: 'Nette', label: 'Amélioration ressentie' },
+    { icon: '', value: '3-6 mois', label: 'Guérison' },
+    { icon: '', value: 'Grande', label: 'Majorité retrouve joie' },
   ],
   eeat: { colorScheme: 'red', method: 'Tarot de guérison émotionnelle' },
   cta: { topic: 'rupture', slug: 'chagrin-damour' },
@@ -77,7 +77,7 @@ export default function ChagrinAmourPage() {
       <VoyantRecommendations topic="rupture" limit={3} showOnlineFirst={true} source="chagrin-damour-cards-top" />
 
       <section id="etapes" className="bg-white rounded-xl shadow-md p-8 mb-8">
-        <h2 className="text-3xl font-bold mb-6">💔 Étapes de Guérison</h2>
+        <h2 className="text-3xl font-bold mb-6">Étapes de Guérison</h2>
         <p className="text-lg font-semibold text-gray-800 mb-4">La guérison d'un chagrin d'amour suit cinq étapes : le choc initial (1-2 semaines), le déni (3-6 semaines), la tristesse profonde (2-3 mois), l'émergence (4-6 mois) et la guérison complète (6 mois et plus).</p>
         <div className="space-y-4">
           <div className="bg-red-50 p-4 rounded border-l-4 border-red-500"><h3 className="font-bold text-red-700 mb-2">Semaines 1-2: Choc</h3><p className="text-gray-700 text-sm">La douleur aiguë envahit tout votre être : <strong>pleurs fréquents</strong>, difficulté à manger, à dormir et à fonctionner normalement dans votre quotidien. Votre cerveau refuse encore d'accepter la réalité de la séparation, ce qui crée un état de <strong>sidération émotionnelle</strong> comparable à un traumatisme. C'est une réaction tout à fait NORMALE de votre organisme face à la perte d'un lien d'attachement profond. Soyez doux avec vous-même durant cette phase, ne vous forcez à rien et autorisez-vous à ressentir pleinement cette douleur sans la juger. Le tarot associe cette étape à l'arcane de la <strong>Tour foudroyée</strong>, symbole d'effondrement nécessaire avant la reconstruction.</p></div>
@@ -89,7 +89,7 @@ export default function ChagrinAmourPage() {
       </section>
 
       <section className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl p-8 mb-8">
-        <h2 className="text-3xl font-bold mb-6">🌟 Actions pour Guérir</h2>
+        <h2 className="text-3xl font-bold mb-6">Actions pour Guérir</h2>
         <p className="text-lg font-semibold text-gray-800 mb-4">Pour guérir d'un chagrin d'amour, quatre actions sont essentielles : autoriser la souffrance sans la refouler, couper le contact avec son ex, prendre soin de son corps et de son esprit, et recréer son identité individuelle.</p>
         <div className="grid md:grid-cols-2 gap-6">
           <div className="bg-white p-6 rounded border-l-4 border-blue-500"><h3 className="font-bold mb-3 text-blue-700">Autorisez la Souffrance</h3><p className="text-gray-700 text-sm mb-3">Refouler vos émotions ne fait que retarder la guérison. Accordez-vous le droit de souffrir pleinement, c'est la première étape vers la libération émotionnelle.</p><ul className="text-gray-700 text-sm space-y-1"><li>• Pleurez autant que nécessaire, sans honte ni retenue</li><li>• N'enfouissez pas vos émotions derrière un masque de force</li><li>• Parlez ouvertement à des amis bienveillants et de confiance</li><li>• Écrivez ce que vous ressentez dans un journal intime</li></ul></div>
@@ -100,7 +100,7 @@ export default function ChagrinAmourPage() {
       </section>
 
       <section className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-indigo-500">
-        <h2 className="text-3xl font-bold mb-6">🃏 Le Tirage Tarot du Chagrin : 5 Positions</h2>
+        <h2 className="text-3xl font-bold mb-6">Le Tirage Tarot du Chagrin : 5 Positions</h2>
         <p className="text-lg font-semibold text-gray-800 mb-4">Le tirage tarot du chagrin en cinq positions éclaire la racine de votre douleur, ce que vous devez lâcher, votre force cachée, l'action clé à entreprendre et la lumière qui vous attend au bout du tunnel.</p>
         <p className="text-gray-700 leading-relaxed mb-6">Ce <strong>tirage en 5 cartes</strong> est spécialement conçu pour accompagner les personnes traversant un <strong>chagrin d'amour</strong>. Chaque position éclaire un aspect différent de votre processus de guérison, depuis l'origine de la douleur jusqu'à la lumière qui vous attend au bout du tunnel. Le voyant interprète les arcanes en tenant compte de votre histoire personnelle, de votre énergie actuelle et des influences astrologiques du moment.</p>
         <div className="space-y-4">
@@ -130,7 +130,7 @@ export default function ChagrinAmourPage() {
       <VoyantQuickCTA topic="rupture" source="chagrin-damour-banner-mid" />
 
       <section className="bg-gradient-to-br from-purple-50 to-blue-50 rounded-xl p-8 mb-8 border-2 border-purple-200">
-        <h2 className="text-3xl font-bold mb-6">🔬 Pourquoi le Chagrin Fait Si Mal : La Science et l'Énergie</h2>
+        <h2 className="text-3xl font-bold mb-6">Pourquoi le Chagrin Fait Si Mal : La Science et l'Énergie</h2>
         <p className="text-lg font-semibold text-gray-800 mb-4">Le chagrin d'amour fait si mal parce qu'il active les mêmes zones cérébrales que la douleur physique et provoque un sevrage hormonal comparable à l'arrêt d'une substance addictive. Les liens énergétiques persistent après la séparation.</p>
         <p className="text-gray-700 leading-relaxed mb-4">La science moderne confirme ce que la <strong>voyance intuitive</strong> perçoit depuis des siècles : un <strong>chagrin d'amour</strong> active dans le cerveau les mêmes zones que la douleur physique. Les recherches en neurosciences montrent que la rupture d'un lien amoureux provoque une véritable réaction de <strong>sevrage biochimique</strong>, similaire à l'arrêt d'une substance addictive. Votre cerveau, habitué aux doses régulières de dopamine et d'ocytocine générées par la présence de votre partenaire, se retrouve brutalement privé de ces hormones du bonheur, ce qui explique l'intensité quasi physique de la souffrance.</p>
         <p className="text-gray-700 leading-relaxed mb-4">Sur le plan <strong>énergétique et spirituel</strong>, la tradition du tarot enseigne que chaque relation amoureuse crée des liens éthériques entre les deux partenaires, notamment au niveau du <strong>chakra du cœur</strong>. Lorsqu'une séparation survient, ces cordons d'énergie ne se dissolvent pas instantanément. Ils tirent, ils appellent, ils créent ce sentiment de manque et de vide intérieur que vous ressentez au creux de la poitrine. C'est pourquoi la <strong>coupure énergétique</strong>, accompagnée par un voyant, peut considérablement accélérer le processus de détachement et réduire la douleur émotionnelle. Pour mieux décrypter les <Link href="/sentiments/maime-t-il-elle/" className="text-blue-600 hover:text-blue-800 underline font-medium">sentiments de l'autre</Link>, le tarot révèle aussi les liens invisibles qui persistent entre vous.</p>

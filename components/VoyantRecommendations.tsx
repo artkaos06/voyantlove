@@ -45,13 +45,13 @@ export default function VoyantRecommendations({
   const displayVoyants = liveVoyants.slice(0, limit);
 
   const defaultTitles: Record<string, string> = {
-    reconquete: '💕 Voyants Spécialisés en Reconquête Amoureuse',
-    rupture: '💔 Voyants Experts en Rupture et Guérison',
-    'nouvelle-rencontre': '✨ Voyants Spécialisés Nouvelle Rencontre',
-    sentiments: '💖 Voyants Experts en Sentiments Amoureux',
-    'crise-couple': '⚠️ Voyants Spécialisés Crise de Couple',
-    'methodes-voyance': '🔮 Voyants Experts en Tarot et Oracle Amoureux',
-    'voyance-gratuite': '🌟 Voyants avec Offre Découverte Gratuite',
+    reconquete: 'Voyants Spécialisés en Reconquête Amoureuse',
+    rupture: 'Voyants Experts en Rupture et Guérison',
+    'nouvelle-rencontre': 'Voyants Spécialisés Nouvelle Rencontre',
+    sentiments: 'Voyants Experts en Sentiments Amoureux',
+    'crise-couple': 'Voyants Spécialisés Crise de Couple',
+    'methodes-voyance': 'Voyants Experts en Tarot et Oracle Amoureux',
+    'voyance-gratuite': 'Voyants avec Offre Découverte Gratuite',
   };
 
   const defaultSubtitles: Record<string, string> = {
@@ -92,7 +92,7 @@ export default function VoyantRecommendations({
           <div className="flex items-center justify-center gap-2 mt-4">
             {liveVoyants.length > 0 && (
               <span className="bg-green-100 text-green-700 text-sm font-semibold px-4 py-2 rounded-full">
-                ⚡ {liveVoyants.length} voyants en ligne maintenant
+                {liveVoyants.length} voyants en ligne maintenant
               </span>
             )}
           </div>
@@ -137,26 +137,26 @@ export default function VoyantRecommendations({
 
       <div className="bg-white rounded-lg p-6 text-center border-2 border-purple-200">
         <h3 className="font-bold text-xl text-gray-900 mb-3">
-          🔮 Pourquoi Choisir Nos Voyants ?
+          Pourquoi Choisir Nos Voyants ?
         </h3>
         <div className="grid md:grid-cols-4 gap-4 text-sm">
           <div className="bg-purple-50 rounded-lg p-4">
-            <div className="text-3xl mb-2">✅</div>
+            <div className="text-3xl mb-2"></div>
             <div className="font-semibold text-gray-800">Vérifiés</div>
             <div className="text-gray-600 mt-1">Tous nos voyants sont certifiés et vérifiés</div>
           </div>
           <div className="bg-blue-50 rounded-lg p-4">
-            <div className="text-3xl mb-2">🎯</div>
+            <div className="text-3xl mb-2"></div>
             <div className="font-semibold text-gray-800">Spécialisés</div>
             <div className="text-gray-600 mt-1">Experts dans leur domaine avec retours positifs</div>
           </div>
           <div className="bg-pink-50 rounded-lg p-4">
-            <div className="text-3xl mb-2">💯</div>
+            <div className="text-3xl mb-2"></div>
             <div className="font-semibold text-gray-800">Satisfaits</div>
             <div className="text-gray-600 mt-1">Milliers de consultations réussies</div>
           </div>
           <div className="bg-green-50 rounded-lg p-4">
-            <div className="text-3xl mb-2">🔒</div>
+            <div className="text-3xl mb-2"></div>
             <div className="font-semibold text-gray-800">Confidentiel</div>
             <div className="text-gray-600 mt-1">Confidentialité et paiement sécurisé garantis</div>
           </div>

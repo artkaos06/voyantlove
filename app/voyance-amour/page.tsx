@@ -78,7 +78,7 @@ export default function VoyanceAmourPage() {
       <header className="bg-gradient-to-r from-purple-800 via-indigo-800 to-purple-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <Link href="/" className="text-white/80 hover:text-white mb-4 inline-block">&larr; Accueil</Link>
-          <h1 className="text-5xl md:text-6xl font-bold mb-4">&#x1F52E; voyance amour</h1>
+          <h1 className="text-5xl md:text-6xl font-bold mb-4"> voyance amour</h1>
           <p className="text-2xl opacity-95 mb-6">Tout Savoir sur la Voyance Amoureuse</p>
           <p className="text-lg opacity-90 max-w-2xl mx-auto mb-8">Reconqu&ecirc;te, sentiments, rupture, rencontre &mdash; consultez un voyant sp&eacute;cialis&eacute; en amour pour &eacute;clairer votre chemin sentimental.</p>
           <div className="flex gap-4 flex-wrap justify-center">
@@ -112,49 +112,49 @@ export default function VoyanceAmourPage() {
           <p className="text-lg text-gray-600 text-center mb-8 max-w-2xl mx-auto">Voici les interrogations sentimentales les plus pos&eacute;es en <strong>voyance amour</strong>. Chacune m&egrave;ne vers une guidance d&eacute;di&eacute;e.</p>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <Link href="/sentiments/" className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition border-t-4 border-pink-500 group">
-              <div className="text-3xl mb-3">&#x1F496;</div>
+              <div className="text-3xl mb-3"></div>
               <h3 className="text-xl font-bold mb-2 group-hover:text-pink-600 transition">M&rsquo;aime-t-il vraiment&nbsp;?</h3>
               <p className="text-gray-600 text-sm mb-3">D&eacute;cryptez les sentiments r&eacute;els de l&rsquo;autre gr&acirc;ce au tarot et &agrave; la clairvoyance &eacute;motionnelle.</p>
               <span className="text-pink-600 font-semibold text-sm">D&eacute;couvrir &rarr;</span>
             </Link>
 
             <Link href="/reconquete/" className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition border-t-4 border-purple-500 group">
-              <div className="text-3xl mb-3">&#x1F504;</div>
+              <div className="text-3xl mb-3"></div>
               <h3 className="text-xl font-bold mb-2 group-hover:text-purple-600 transition">Mon ex va-t-il revenir&nbsp;?</h3>
               <p className="text-gray-600 text-sm mb-3">Strat&eacute;gies de reconqu&ecirc;te, silence radio et signes de retour analys&eacute;s par la voyance.</p>
               <span className="text-purple-600 font-semibold text-sm">D&eacute;couvrir &rarr;</span>
             </Link>
 
             <Link href="/nouvelle-rencontre/" className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition border-t-4 border-indigo-500 group">
-              <div className="text-3xl mb-3">&#x2728;</div>
+              <div className="text-3xl mb-3"></div>
               <h3 className="text-xl font-bold mb-2 group-hover:text-indigo-600 transition">Quand vais-je rencontrer l&rsquo;amour&nbsp;?</h3>
               <p className="text-gray-600 text-sm mb-3">P&eacute;riodes favorables, signes pr&eacute;curseurs et guidance pour attirer la bonne personne.</p>
               <span className="text-indigo-600 font-semibold text-sm">D&eacute;couvrir &rarr;</span>
             </Link>
 
             <Link href="/crise-couple/" className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition border-t-4 border-red-500 group">
-              <div className="text-3xl mb-3">&#x1F494;</div>
+              <div className="text-3xl mb-3"></div>
               <h3 className="text-xl font-bold mb-2 group-hover:text-red-600 transition">Mon couple peut-il &ecirc;tre sauv&eacute;&nbsp;?</h3>
               <p className="text-gray-600 text-sm mb-3">Analyse des tensions, communication et pistes pour retrouver l&rsquo;harmonie conjugale.</p>
               <span className="text-red-600 font-semibold text-sm">D&eacute;couvrir &rarr;</span>
             </Link>
 
             <Link href="/sentiments/avenir-amoureux/" className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition border-t-4 border-violet-500 group">
-              <div className="text-3xl mb-3">&#x1F52E;</div>
+              <div className="text-3xl mb-3"></div>
               <h3 className="text-xl font-bold mb-2 group-hover:text-violet-600 transition">Quel est mon avenir amoureux&nbsp;?</h3>
               <p className="text-gray-600 text-sm mb-3">Pr&eacute;dictions sentimentales, tendances &agrave; venir et chemins possibles r&eacute;v&eacute;l&eacute;s par le tarot.</p>
               <span className="text-violet-600 font-semibold text-sm">D&eacute;couvrir &rarr;</span>
             </Link>
 
             <Link href="/methodes-voyance/" className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition border-t-4 border-amber-500 group">
-              <div className="text-3xl mb-3">&#x1F0CF;</div>
+              <div className="text-3xl mb-3"></div>
               <h3 className="text-xl font-bold mb-2 group-hover:text-amber-600 transition">Quel tirage pour une question d&rsquo;amour&nbsp;?</h3>
               <p className="text-gray-600 text-sm mb-3">Tarot, oracle, pendule, astrologie &mdash; quelle m&eacute;thode pour quelle question sentimentale.</p>
               <span className="text-amber-600 font-semibold text-sm">D&eacute;couvrir &rarr;</span>
             </Link>
 
             <Link href="/voyance-gratuite-amour/" className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition border-t-4 border-emerald-500 group md:col-span-2 lg:col-span-1">
-              <div className="text-3xl mb-3">&#x1F381;</div>
+              <div className="text-3xl mb-3"></div>
               <h3 className="text-xl font-bold mb-2 group-hover:text-emerald-600 transition">Existe-t-il un tirage gratuit&nbsp;?</h3>
               <p className="text-gray-600 text-sm mb-3">Tirages gratuits en ligne, tarot oui/non amour et premi&egrave;res minutes offertes.</p>
               <span className="text-emerald-600 font-semibold text-sm">D&eacute;couvrir &rarr;</span>
@@ -225,7 +225,7 @@ export default function VoyanceAmourPage() {
           <div className="grid md:grid-cols-2 gap-6">
             <Link href="/methodes-voyance/tirage-tarot-amour/" className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition group">
               <div className="flex items-start gap-4">
-                <div className="text-3xl">&#x1F0CF;</div>
+                <div className="text-3xl"></div>
                 <div>
                   <h3 className="text-xl font-bold mb-2 group-hover:text-purple-600 transition">Tarot de Marseille</h3>
                   <p className="text-gray-600 text-sm">L&rsquo;outil phare de la voyance amoureuse. Les 78 arcanes r&eacute;v&egrave;lent sentiments cach&eacute;s, intentions de l&rsquo;autre et &eacute;volution de la relation. Id&eacute;al pour une question pr&eacute;cise.</p>
@@ -235,7 +235,7 @@ export default function VoyanceAmourPage() {
 
             <div className="bg-white rounded-xl p-6 shadow-md">
               <div className="flex items-start gap-4">
-                <div className="text-3xl">&#x2B50;</div>
+                <div className="text-3xl"></div>
                 <div>
                   <h3 className="text-xl font-bold mb-2">Astrologie &amp; Synastrie</h3>
                   <p className="text-gray-600 text-sm mb-2">L&rsquo;astrologie &eacute;tudie les cycles plan&eacute;taires favorables &agrave; l&rsquo;amour. La synastrie compare deux th&egrave;mes astraux pour r&eacute;v&eacute;ler la compatibilit&eacute; profonde.</p>
@@ -249,7 +249,7 @@ export default function VoyanceAmourPage() {
 
             <Link href="/methodes-voyance/pendule-amour/" className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition group">
               <div className="flex items-start gap-4">
-                <div className="text-3xl">&#x1F4AB;</div>
+                <div className="text-3xl"></div>
                 <div>
                   <h3 className="text-xl font-bold mb-2 group-hover:text-purple-600 transition">Pendule Amour</h3>
                   <p className="text-gray-600 text-sm">Le pendule r&eacute;pond par oui ou non avec une pr&eacute;cision remarquable. Parfait pour trancher un dilemme sentimental ou confirmer une intuition.</p>
@@ -259,7 +259,7 @@ export default function VoyanceAmourPage() {
 
             <Link href="/methodes-voyance/numerologie-amoureuse/" className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition group">
               <div className="flex items-start gap-4">
-                <div className="text-3xl">&#x1F522;</div>
+                <div className="text-3xl"></div>
                 <div>
                   <h3 className="text-xl font-bold mb-2 group-hover:text-purple-600 transition">Num&eacute;rologie</h3>
                   <p className="text-gray-600 text-sm">Les nombres de votre date de naissance et de votre nom r&eacute;v&egrave;lent votre profil amoureux, vos ann&eacute;es cl&eacute;s de rencontre et votre compatibilit&eacute;.</p>
@@ -269,7 +269,7 @@ export default function VoyanceAmourPage() {
 
             <Link href="/methodes-voyance/oracle-amour/" className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition group md:col-span-2">
               <div className="flex items-start gap-4">
-                <div className="text-3xl">&#x1F3B4;</div>
+                <div className="text-3xl"></div>
                 <div>
                   <h3 className="text-xl font-bold mb-2 group-hover:text-purple-600 transition">Oracle Amour</h3>
                   <p className="text-gray-600 text-sm">Plus intuitif que le tarot, l&rsquo;oracle d&eacute;livre des messages clairs et bienveillants. Appr&eacute;ci&eacute; pour les p&eacute;riodes de doute o&ugrave; l&rsquo;on cherche r&eacute;confort et direction.</p>
@@ -328,7 +328,7 @@ export default function VoyanceAmourPage() {
 
         {/* Section 5: Voyance Amour Gratuite */}
         <section className="bg-gradient-to-r from-emerald-50 to-teal-50 rounded-xl p-8 mb-12 border border-emerald-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">&#x1F381; Voyance Amour Gratuite</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-4"> Voyance Amour Gratuite</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
             Vous souhaitez d&eacute;couvrir la voyance amoureuse sans engagement&nbsp;? Plusieurs options gratuites existent. Notre <Link href="/voyance-gratuite-amour/" className="text-emerald-700 hover:text-emerald-900 underline font-semibold">espace voyance gratuite amour</Link> propose des tirages interactifs accessibles imm&eacute;diatement, dont le populaire <Link href="/voyance-gratuite-amour/tarot-oui-non-amour/" className="text-emerald-700 hover:text-emerald-900 underline font-semibold">tarot oui/non amour</Link> pour une r&eacute;ponse instantan&eacute;e &agrave; votre question sentimentale.
           </p>
@@ -348,25 +348,25 @@ export default function VoyanceAmourPage() {
 
           <div className="grid md:grid-cols-2 gap-6 mb-8">
             <div className="bg-purple-50 rounded-lg p-5 border border-purple-100">
-              <h3 className="font-bold text-purple-800 mb-2">&#x1F3AF; Sp&eacute;cialisation Amour</h3>
+              <h3 className="font-bold text-purple-800 mb-2"> Sp&eacute;cialisation Amour</h3>
               <p className="text-gray-700 text-sm">Privil&eacute;giez un voyant dont la majorit&eacute; des consultations porte sur les questions sentimentales. La <strong>voyance amour</strong> demande une sensibilit&eacute; &eacute;motionnelle particuli&egrave;re et une connaissance fine des dynamiques relationnelles.</p>
             </div>
             <div className="bg-purple-50 rounded-lg p-5 border border-purple-100">
-              <h3 className="font-bold text-purple-800 mb-2">&#x2696;&#xFE0F; &Eacute;thique et D&eacute;ontologie</h3>
+              <h3 className="font-bold text-purple-800 mb-2">&#xFE0F; &Eacute;thique et D&eacute;ontologie</h3>
               <p className="text-gray-700 text-sm">Un voyant s&eacute;rieux respecte votre libre arbitre, ne cr&eacute;e jamais de d&eacute;pendance et refuse de &laquo;&nbsp;jeter des sorts&nbsp;&raquo; ou de &laquo;&nbsp;forcer un retour&nbsp;&raquo;. Il est transparent sur ses tarifs et la dur&eacute;e de la s&eacute;ance.</p>
             </div>
             <div className="bg-purple-50 rounded-lg p-5 border border-purple-100">
-              <h3 className="font-bold text-purple-800 mb-2">&#x1F4C5; Exp&eacute;rience V&eacute;rifiable</h3>
+              <h3 className="font-bold text-purple-800 mb-2"> Exp&eacute;rience V&eacute;rifiable</h3>
               <p className="text-gray-700 text-sm">Recherchez un minimum de 5 ans de pratique. L&rsquo;exp&eacute;rience affine l&rsquo;intuition et la capacit&eacute; &agrave; interpr&eacute;ter les cartes dans le contexte sp&eacute;cifique de chaque histoire d&rsquo;amour.</p>
             </div>
             <div className="bg-purple-50 rounded-lg p-5 border border-purple-100">
-              <h3 className="font-bold text-purple-800 mb-2">&#x2B50; Avis Authentiques</h3>
+              <h3 className="font-bold text-purple-800 mb-2"> Avis Authentiques</h3>
               <p className="text-gray-700 text-sm">Consultez les t&eacute;moignages d&rsquo;autres clients. Des avis d&eacute;taill&eacute;s mentionnant des situations concr&egrave;tes sont plus fiables que de simples notes &eacute;toil&eacute;es sans commentaire.</p>
             </div>
           </div>
 
           <div className="bg-red-50 rounded-lg p-5 border border-red-200 mb-6">
-            <h3 className="font-bold text-red-800 mb-2">&#x1F6A9; Signaux d&rsquo;Alerte</h3>
+            <h3 className="font-bold text-red-800 mb-2"> Signaux d&rsquo;Alerte</h3>
             <ul className="text-gray-700 text-sm space-y-1">
               <li>&bull; Promesse de &laquo;&nbsp;retour de l&rsquo;ex garanti en 48h&nbsp;&raquo; &mdash; aucun voyant s&eacute;rieux ne garantit un r&eacute;sultat</li>
               <li>&bull; Demande de travaux occultes payants suppl&eacute;mentaires (bougies, rituels, envoutements)</li>

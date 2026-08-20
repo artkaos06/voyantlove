@@ -16,7 +16,7 @@ const config: ContentPageConfig = {
     { name: 'Amour Non Partagé', url: 'https://www.voyantlove.fr/rupture/amour-non-partage/' },
   ],
   header: {
-    emoji: '💜',
+    emoji: '',
     h1: 'Amour non partagé',
     subtitle: 'Comprendre et surmonter un amour à sens unique grâce à la voyance sentimentale',
     gradient: 'from-rose-500 via-pink-500 to-fuchsia-500',
@@ -28,10 +28,10 @@ const config: ContentPageConfig = {
   },
   accentText: 'text-rose-600',
   stats: [
-    { icon: '💔', value: '1 sur 4', label: 'Personnes concernées' },
-    { icon: '💚', value: 'Forte', label: 'Résilience constatée' },
-    { icon: '⭐', value: '4.8/5', label: 'Satisfaction' },
-    { icon: '⏳', value: '3-6 mois', label: 'Durée moyenne' },
+    { icon: '', value: '1 sur 4', label: 'Personnes concernées' },
+    { icon: '', value: 'Forte', label: 'Résilience constatée' },
+    { icon: '', value: '4.8/5', label: 'Satisfaction' },
+    { icon: '', value: '3-6 mois', label: 'Durée moyenne' },
   ],
   eeat: { colorScheme: 'rose', method: 'Tarot sentimental et clairvoyance émotionnelle' },
   cta: { topic: 'rupture', slug: 'amour-non-partage' },
@@ -83,7 +83,7 @@ export default function AmourNonPartagePage() {
 
         {/* Section: Pourquoi l&apos;amour non partag&eacute; */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">&#x1F4A1; Pourquoi l&apos;Amour Non Partag&eacute; ?</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6"> Pourquoi l&apos;Amour Non Partag&eacute; ?</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">L&apos;amour non partag&eacute; s&apos;explique par quatre causes principales : l&apos;id&eacute;alisation de l&apos;autre, des sch&eacute;mas r&eacute;p&eacute;titifs li&eacute;s &agrave; l&apos;enfance, la peur inconsciente de l&apos;intimit&eacute; v&eacute;ritable et un lien karmique &agrave; transcender.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             L&apos;<strong>amour &agrave; sens unique</strong> n&apos;est pas le fruit du hasard. Il r&eacute;pond &agrave; des m&eacute;canismes psychologiques, &eacute;nerg&eacute;tiques et parfois karmiques que la <strong>voyance amoureuse</strong> permet de comprendre en profondeur. Identifier les causes de votre <strong>amour non r&eacute;ciproque</strong> est la premi&egrave;re &eacute;tape vers la <strong>gu&eacute;rison</strong> et la transformation.
@@ -122,7 +122,7 @@ export default function AmourNonPartagePage() {
 
         {/* Section: Signes non r&eacute;ciproque */}
         <section id="signes" className="bg-gradient-to-br from-rose-50 to-pink-50 rounded-xl p-8 mb-8 border-2 border-rose-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">&#x1F50D; Les Signes d&apos;un Amour Non R&eacute;ciproque</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6"> Les Signes d&apos;un Amour Non R&eacute;ciproque</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Les cinq signes d&apos;un amour non r&eacute;ciproque sont l&apos;asym&eacute;trie des efforts, l&apos;&eacute;vitement de l&apos;intimit&eacute;, le flou sur l&apos;avenir, le positionnement en ami(e) et votre propre d&eacute;ni face aux indices.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Reconna&icirc;tre les signes d&apos;un <strong>amour non partag&eacute;</strong> est douloureux mais essentiel. Refuser de voir la r&eacute;alit&eacute; prolonge inutilement la souffrance. Voici les indicateurs les plus fiables, tels que r&eacute;v&eacute;l&eacute;s par la <strong>voyance sentimentale</strong> et confirm&eacute;s par des milliers de consultations.
@@ -168,7 +168,7 @@ export default function AmourNonPartagePage() {
 
         {/* Section: Le Tarot r&eacute;v&egrave;le les sentiments */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">&#x1F0CF; Ce que le Tarot R&eacute;v&egrave;le sur les Sentiments de l&apos;Autre</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6"> Ce que le Tarot R&eacute;v&egrave;le sur les Sentiments de l&apos;Autre</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le tarot r&eacute;v&egrave;le les sentiments v&eacute;ritables de l&apos;autre : le Deux de Coupe signale une connexion mutuelle, tandis que le Quatre de Coupe ou le Huit de Coupe confirment un amour non r&eacute;ciproque.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Le <strong>tarot sentimental</strong> est l&apos;outil le plus pr&eacute;cis pour r&eacute;v&eacute;ler ce que la personne aim&eacute;e ressent v&eacute;ritablement. Certaines cartes sont particuli&egrave;rement r&eacute;v&eacute;latrices lorsqu&apos;elles apparaissent en position &laquo;&nbsp;sentiments de l&apos;autre&nbsp;&raquo; dans un <strong>tirage amoureux</strong>.
@@ -207,7 +207,7 @@ export default function AmourNonPartagePage() {
 
         {/* Section: Guide &eacute;tape par &eacute;tape */}
         <section className="bg-gradient-to-br from-pink-50 to-rose-50 rounded-xl p-8 mb-8 border-2 border-pink-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">&#x1F4CB; Guide &Eacute;tape par &Eacute;tape pour Surmonter un Amour Non Partag&eacute;</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6"> Guide &Eacute;tape par &Eacute;tape pour Surmonter un Amour Non Partag&eacute;</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Surmonter un amour non partag&eacute; passe par cinq &eacute;tapes : reconna&icirc;tre et accepter la non-r&eacute;ciprocit&eacute;, cr&eacute;er de la distance, traverser la douleur, se recentrer sur soi et comprendre les le&ccedil;ons karmiques.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Surmonter un <strong>amour non r&eacute;ciproque</strong> est un parcours structur&eacute; qui demande du courage, de l&apos;honnêtet&eacute; envers soi-m&ecirc;me et du temps. Le <strong>tarot</strong> et la <strong>voyance sentimentale</strong> accompagnent chaque &eacute;tape de cette <strong>lib&eacute;ration &eacute;motionnelle</strong>.
@@ -253,7 +253,7 @@ export default function AmourNonPartagePage() {
 
         {/* Section: S&apos;ouvrir &agrave; l&apos;amour r&eacute;ciproque */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">&#x1F49D; S&apos;Ouvrir &agrave; l&apos;Amour R&eacute;ciproque</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6"> S&apos;Ouvrir &agrave; l&apos;Amour R&eacute;ciproque</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">S&apos;ouvrir &agrave; l&apos;amour r&eacute;ciproque exige de red&eacute;finir ses crit&egrave;res amoureux en pla&ccedil;ant la r&eacute;ciprocit&eacute; en priorit&eacute;, d&apos;accueillir la vuln&eacute;rabilit&eacute; et de faire confiance au timing de la vie.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Apr&egrave;s avoir travers&eacute; et int&eacute;gr&eacute; l&apos;exp&eacute;rience d&apos;un <strong>amour non partag&eacute;</strong>, votre c&oelig;ur est pr&ecirc;t &agrave; accueillir une <strong>relation &eacute;quilibr&eacute;e</strong> et <strong>r&eacute;ciproque</strong>. Le <strong>tarot</strong> et la <strong>voyance sentimentale</strong> guident cette ouverture en identifiant les &eacute;nergies favorables et les blocages r&eacute;siduels.

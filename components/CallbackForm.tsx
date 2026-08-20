@@ -167,7 +167,7 @@ export default function CallbackForm({ source = 'lp-voyant-direct' }: CallbackFo
             className="inline-flex items-center justify-center gap-2 w-full bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-400 hover:to-emerald-400 text-white px-6 py-4 rounded-xl font-bold text-lg shadow-lg transition-all hover:scale-[1.02]"
             data-analytics="callback-fallback-tel"
           >
-            📞 01 75 75 45 82
+            01 75 75 45 82
           </a>
           <p className="text-[11px] text-gray-500 mt-3 leading-snug">
             Appel non surtaxé · 10 minutes offertes · 7j/7 de 9h à 21h

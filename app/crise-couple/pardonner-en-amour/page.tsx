@@ -16,7 +16,7 @@ const config: ContentPageConfig = {
     { name: 'Pardonner en Amour', url: 'https://www.voyantlove.fr/crise-couple/pardonner-en-amour/' },
   ],
   header: {
-    emoji: '🕊️',
+    emoji: '',
     h1: 'Pardonner en amour : le chemin vers la guérison',
     subtitle: 'Guidance voyance et tarot pour le pardon authentique et la reconstruction',
     gradient: 'from-amber-500 via-orange-500 to-amber-600',
@@ -27,10 +27,10 @@ const config: ContentPageConfig = {
   },
   accentText: 'text-amber-600',
   stats: [
-    { icon: '⭐', value: '4.8/5', label: '264 Avis' },
-    { icon: '🕊️', value: '84%', label: 'Ont pardonné' },
-    { icon: '⏰', value: '30 min', label: 'Consultation' },
-    { icon: '🔮', value: '15 ans', label: 'Expérience' },
+    { icon: '', value: '4.8/5', label: '264 Avis' },
+    { icon: '', value: '84%', label: 'Ont pardonné' },
+    { icon: '', value: '30 min', label: 'Consultation' },
+    { icon: '', value: '15 ans', label: 'Expérience' },
   ],
   eeat: { colorScheme: 'orange', method: 'Tarot du pardon et guidance de guérison' },
   cta: { topic: 'crise-couple', slug: 'pardonner-en-amour' },
@@ -80,7 +80,7 @@ export default function PardonnerEnAmourPage() {
         <VoyantRecommendations topic="crise-couple" limit={3} showOnlineFirst={true} source="pardonner-en-amour-cards-top" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">🔮 Le Tarot et le Processus de Pardon</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Le Tarot et le Processus de Pardon</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le tarot éclaire les quatre dimensions essentielles du pardon amoureux : la profondeur de la blessure, la sincérité du repentir, votre capacité à pardonner et le potentiel de reconstruction du couple.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Le <strong>tarot du pardon</strong> n&apos;est pas un tirage ordinaire. Il explore les couches les plus profondes de votre relation pour révéler ce qui doit être guéri, compris et transformé. Chaque position apporte une lumière spécifique sur le chemin vers la <strong>réconciliation</strong>.
@@ -106,7 +106,7 @@ export default function PardonnerEnAmourPage() {
         </section>
 
         <section className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-xl p-8 mb-8 border-2 border-amber-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">💛 Les 5 Étapes du Pardon Authentique</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Les 5 Étapes du Pardon Authentique</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le pardon véritable suit un processus en cinq étapes : reconnaître la blessure, exprimer la douleur, comprendre les causes profondes, choisir consciemment le pardon et reconstruire ensemble.</p>
           <div className="space-y-6">
             <div className="flex items-start gap-4">
@@ -150,7 +150,7 @@ export default function PardonnerEnAmourPage() {
         <VoyantQuickCTA topic="crise-couple" source="pardonner-en-amour-banner-mid" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">⚡ Pardonner ou Partir : Comment Décider</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Pardonner ou Partir : Comment Décider</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">La décision entre pardonner et mettre fin à la relation est l&apos;une des plus difficiles. La voyance éclaire les critères essentiels pour faire un choix aligné avec votre bien-être profond.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Toutes les blessures ne méritent pas le même <strong>pardon</strong>. La <strong>voyance</strong> vous aide à distinguer les situations où le <strong>pardon</strong> est un acte de force de celles où il serait un acte de soumission. Cette distinction est vitale pour votre <strong>santé émotionnelle</strong> et pour l&apos;avenir de votre relation.
@@ -185,7 +185,7 @@ export default function PardonnerEnAmourPage() {
         </section>
 
         <section className="bg-gradient-to-br from-orange-50 to-amber-50 rounded-xl p-8 mb-8 border-2 border-orange-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">🌟 Le Pardon de Soi : La Clé Oubliée</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Le Pardon de Soi : La Clé Oubliée</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Avant de pouvoir pardonner à l&apos;autre, il faut souvent se pardonner à soi-même : pour avoir fait confiance, pour ne pas avoir vu les signes, pour être resté(e) malgré tout.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             La <strong>voyance</strong> révèle un aspect souvent négligé du <strong>pardon amoureux</strong> : le pardon de soi. Beaucoup de personnes blessées portent une double souffrance &mdash; la douleur causée par l&apos;autre et la culpabilité de s&apos;être laissé(e) blesser. &laquo; Comment ai-je pu ne pas voir ? &raquo;, &laquo; Pourquoi suis-je resté(e) ? &raquo;, &laquo; Je suis trop naïf/naïve &raquo;... Ces pensées auto-punitives bloquent le processus de <strong>guérison</strong>.

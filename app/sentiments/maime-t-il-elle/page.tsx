@@ -16,7 +16,7 @@ const config: ContentPageConfig = {
     { name: 'M\'aime-t-il/elle', url: 'https://www.voyantlove.fr/sentiments/maime-t-il-elle/' },
   ],
   header: {
-    emoji: '💖',
+    emoji: '',
     h1: 'M\'aime-t-il/elle vraiment ?',
     subtitle: 'Décryptez ses vrais sentiments grâce au tarot et à la voyance',
     gradient: 'from-red-500 via-pink-500 to-rose-500',
@@ -28,10 +28,10 @@ const config: ContentPageConfig = {
   },
   accentText: 'text-red-600',
   stats: [
-    { icon: '⭐', value: '4.8/5', label: '287 Avis' },
-    { icon: '💝', value: 'Grande', label: 'Clarté obtenue' },
-    { icon: '🎯', value: 'Reconnue', label: 'Expertise' },
-    { icon: '🔒', value: '100%', label: 'Confidentiel' },
+    { icon: '', value: '4.8/5', label: '287 Avis' },
+    { icon: '', value: 'Grande', label: 'Clarté obtenue' },
+    { icon: '', value: 'Reconnue', label: 'Expertise' },
+    { icon: '', value: '100%', label: 'Confidentiel' },
   ],
   eeat: { colorScheme: 'rose', method: 'Tarot des sentiments et clairvoyance' },
   cta: { topic: 'sentiments', slug: 'maime-t-il-elle' },
@@ -98,12 +98,12 @@ export default function MAimeTilEllePage() {
         <VoyantRecommendations topic="sentiments" limit={3} showOnlineFirst={true} source="maime-t-il-elle-cards-top" />
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">💖 Les Signes d'Amour Véritable selon le Tarot</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Les Signes d'Amour Véritable selon le Tarot</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Les arcanes L'Amoureux, le Deux de Coupe et Le Soleil confirment un amour authentique dans le tarot. A l'inverse, Le Diable et le Sept d'Epee signalent un attachement toxique ou une manipulation emotionnelle.</p>
           <p className="text-gray-700 leading-relaxed mb-6">Le tarot utilise des cartes spécifiques pour révéler la nature authentique des sentiments. Apprenez aussi à repérer les <Link href="/sentiments/signes-il-elle-maime/" className="text-red-600 hover:text-red-800 underline font-medium">signes qu'il/elle vous aime</Link> dans son comportement quotidien.</p>
           <div className="grid md:grid-cols-2 gap-6 mb-6">
             <div className="bg-green-50 border-2 border-green-300 rounded-lg p-6">
-              <h3 className="font-bold text-lg mb-3 text-green-700">✅ Cartes d'Amour Authentique</h3>
+              <h3 className="font-bold text-lg mb-3 text-green-700">Cartes d'Amour Authentique</h3>
               <ul className="space-y-2 text-gray-700 text-sm">
                 <li><strong>L'Amoureux</strong> : Amour vrai et choix conscient</li>
                 <li><strong>Deux de Coupe</strong> : Réciprocité et harmonie</li>
@@ -113,7 +113,7 @@ export default function MAimeTilEllePage() {
               </ul>
             </div>
             <div className="bg-red-50 border-2 border-red-300 rounded-lg p-6">
-              <h3 className="font-bold text-lg mb-3 text-red-700">❌ Cartes d'Attachement Problématique</h3>
+              <h3 className="font-bold text-lg mb-3 text-red-700">Cartes d'Attachement Problématique</h3>
               <ul className="space-y-2 text-gray-700 text-sm">
                 <li><strong>Le Diable</strong> : Attachement toxique, dépendance</li>
                 <li><strong>Cinq de Coupe</strong> : Regrets, insatisfaction</li>
@@ -124,17 +124,17 @@ export default function MAimeTilEllePage() {
             </div>
           </div>
           <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded">
-            <p className="text-gray-700"><strong>💡 Interprétation :</strong> Si les cartes positives dominent le tirage, oui il/elle vous aime. Si les cartes négatives prédominent, c'est de l'attachement toxique ou de la manipulation, pas de l'amour.</p>
+            <p className="text-gray-700"><strong>Interprétation :</strong> Si les cartes positives dominent le tirage, oui il/elle vous aime. Si les cartes négatives prédominent, c'est de l'attachement toxique ou de la manipulation, pas de l'amour.</p>
           </div>
         </section>
 
         <section className="bg-gradient-to-br from-rose-50 to-pink-50 rounded-xl p-8 mb-8 border-2 border-rose-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">🧠 Différence entre Amour et Attachement</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Différence entre Amour et Attachement</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">L'amour veritable respecte la liberte de l'autre et apporte de la joie. L'attachement toxique repose sur la dependance, la peur de la solitude et le besoin de controle. Le tarot distingue ces deux dynamiques.</p>
           <p className="text-gray-700 leading-relaxed mb-6">Le tarot révèle la vraie nature du lien - c'est crucial pour votre bonheur.</p>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-white rounded-lg p-6 border-l-4 border-green-500">
-              <h3 className="font-bold text-lg mb-3 text-green-700">💚 Amour Véritable</h3>
+              <h3 className="font-bold text-lg mb-3 text-green-700">Amour Véritable</h3>
               <ul className="space-y-2 text-gray-700 text-sm">
                 <li>✓ Vous veut du bien même sans réciprocité</li>
                 <li>✓ Respecte votre liberté et autonomie</li>
@@ -145,7 +145,7 @@ export default function MAimeTilEllePage() {
               </ul>
             </div>
             <div className="bg-white rounded-lg p-6 border-l-4 border-red-500">
-              <h3 className="font-bold text-lg mb-3 text-red-700">💔 Attachement Toxique</h3>
+              <h3 className="font-bold text-lg mb-3 text-red-700">Attachement Toxique</h3>
               <ul className="space-y-2 text-gray-700 text-sm">
                 <li>✗ Possessif et jaloux de manière excessive</li>
                 <li>✗ Dépendant émotionnellement de vous</li>
@@ -157,46 +157,46 @@ export default function MAimeTilEllePage() {
             </div>
           </div>
           <div className="mt-6 bg-white p-6 rounded-lg">
-            <p className="text-gray-700"><strong>🔮 Le tarot ne ment pas :</strong> Même si vous aimez cette personne, si le tarot montre un attachement toxique plutôt qu'un amour sain, le voyant doit vous prévenir pour votre protection.</p>
+            <p className="text-gray-700"><strong>Le tarot ne ment pas :</strong> Même si vous aimez cette personne, si le tarot montre un attachement toxique plutôt qu'un amour sain, le voyant doit vous prévenir pour votre protection.</p>
           </div>
         </section>
 
         <VoyantQuickCTA topic="sentiments" source="maime-t-il-elle-banner-mid" />
 
         <section id="signes" className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">🎭 Pourquoi il/elle Cache ses Sentiments</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Pourquoi il/elle Cache ses Sentiments</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Une personne cache ses sentiments par peur de souffrir, crainte de l'engagement, blocage familial, situation compliquee ou simple fierte. Le tarot identifie ces blocages invisibles avec precision.</p>
           <p className="text-gray-700 leading-relaxed mb-6">Le tarot révèle les blocages invisibles qui empêchent l'expression des sentiments.</p>
           <div className="space-y-4">
             <div className="bg-purple-50 border-l-4 border-purple-500 p-4 rounded">
-              <h3 className="font-bold mb-2 text-purple-700">😨 Peur de Souffrir</h3>
+              <h3 className="font-bold mb-2 text-purple-700">Peur de Souffrir</h3>
               <p className="text-gray-700 text-sm">Blessure passée non guérie. Il/elle a peur de s'ouvrir à nouveau et de revivre la douleur d'une rupture ou trahison antérieure.</p>
             </div>
             <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded">
-              <h3 className="font-bold mb-2 text-blue-700">🦅 Peur de Perdre sa Liberté</h3>
+              <h3 className="font-bold mb-2 text-blue-700">Peur de Perdre sa Liberté</h3>
               <p className="text-gray-700 text-sm">L'engagement fait peur. Il/elle vous aime mais n'est pas prêt(e) à renoncer à son indépendance ou son célibat confortable.</p>
             </div>
             <div className="bg-orange-50 border-l-4 border-orange-500 p-4 rounded">
-              <h3 className="font-bold mb-2 text-orange-700">👨‍👩‍👧 Blocage Familial ou Culturel</h3>
+              <h3 className="font-bold mb-2 text-orange-700">‍‍Blocage Familial ou Culturel</h3>
               <p className="text-gray-700 text-sm">Pression familiale, différence de religion/culture, ou désapprobation de l'entourage qui empêche l'expression libre des sentiments.</p>
             </div>
             <div className="bg-pink-50 border-l-4 border-pink-500 p-4 rounded">
-              <h3 className="font-bold mb-2 text-pink-700">💔 Situation Compliquée</h3>
+              <h3 className="font-bold mb-2 text-pink-700">Situation Compliquée</h3>
               <p className="text-gray-700 text-sm">Déjà en couple, distance géographique, différence d'âge importante, ou contexte professionnel qui complique l'expression des sentiments.</p>
             </div>
             <div className="bg-indigo-50 border-l-4 border-indigo-500 p-4 rounded">
-              <h3 className="font-bold mb-2 text-indigo-700">🎭 Fierté ou Ego</h3>
+              <h3 className="font-bold mb-2 text-indigo-700">Fierté ou Ego</h3>
               <p className="text-gray-700 text-sm">Orgueil qui empêche d'avouer ses sentiments, peur du rejet ou de paraître vulnérable, besoin de garder le contrôle de la situation.</p>
             </div>
           </div>
         </section>
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">💭 Pense-t-il/elle à Vous ?</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Pense-t-il/elle à Vous ?</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le Cavalier de Coupe, La Lune et L'Hermite dans le tarot indiquent que la personne pense a vous frequemment. Le tirage revele la nature de ces pensees : nostalgiques, desirantes ou conflictuelles.</p>
           <p className="text-gray-700 leading-relaxed mb-6">Le tarot répond aussi à cette question intimement liée aux sentiments. Notre guidance complète sur <Link href="/sentiments/pense-t-il-elle-a-moi/" className="text-red-600 hover:text-red-800 underline font-medium">pense-t-il/elle à moi</Link> approfondit ce sujet.</p>
           <div className="bg-green-50 border-2 border-green-300 rounded-lg p-6 mb-6">
-            <h3 className="font-bold text-lg mb-3 text-green-700">✅ Signes qu'il/elle Pense à Vous</h3>
+            <h3 className="font-bold text-lg mb-3 text-green-700">Signes qu'il/elle Pense à Vous</h3>
             <p className="text-gray-700 mb-4">Les cartes <strong>Cavalier de Coupe</strong>, <strong>La Lune</strong>, et <strong>Le Hermite</strong> indiquent une présence mentale forte. Voici comment cela se manifeste :</p>
             <ul className="space-y-2 text-gray-700">
               <li>• <strong>Fréquence</strong> : Il/elle pense à vous plusieurs fois par jour</li>
@@ -206,16 +206,16 @@ export default function MAimeTilEllePage() {
             </ul>
           </div>
           <div className="bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded">
-            <p className="text-gray-700"><strong>⚠️ Important :</strong> Penser à vous ne signifie pas forcément qu'il/elle agira ou s'engagera. Le tarot distingue entre pensées passives et intentions d'action concrète.</p>
+            <p className="text-gray-700"><strong>Important :</strong> Penser à vous ne signifie pas forcément qu'il/elle agira ou s'engagera. Le tarot distingue entre pensées passives et intentions d'action concrète.</p>
           </div>
         </section>
 
         <section className="bg-gradient-to-r from-rose-50 to-purple-50 rounded-xl p-8 mb-8 border-2 border-rose-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">🚦 Que Faire selon la Réponse ?</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Que Faire selon la Réponse ?</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Si le tarot confirme qu'il/elle vous aime, communiquez ouvertement. En cas d'attachement sans amour, protegez-vous. Si l'amour n'est pas reciproque, acceptez la verite pour avancer.</p>
           <div className="space-y-6">
             <div className="bg-white rounded-lg p-6 border-l-4 border-green-500">
-              <h3 className="font-bold text-lg mb-3 text-green-700">💚 S'il/elle vous AIME vraiment</h3>
+              <h3 className="font-bold text-lg mb-3 text-green-700">S'il/elle vous AIME vraiment</h3>
               <ul className="space-y-2 text-gray-700">
                 <li>✓ <strong>Communiquez</strong> vos sentiments ouvertement et honnêtement</li>
                 <li>✓ <strong>Créez des opportunités</strong> de rapprochement et d'intimité</li>
@@ -225,17 +225,17 @@ export default function MAimeTilEllePage() {
               </ul>
             </div>
             <div className="bg-white rounded-lg p-6 border-l-4 border-orange-500">
-              <h3 className="font-bold text-lg mb-3 text-orange-700">🟧 S'il/elle est ATTACHÉ sans amour</h3>
+              <h3 className="font-bold text-lg mb-3 text-orange-700">S'il/elle est ATTACHÉ sans amour</h3>
               <ul className="space-y-2 text-gray-700">
-                <li>⚠️ <strong>Protégez-vous</strong> émotionnellement de la manipulation</li>
-                <li>⚠️ <strong>Ne confondez pas</strong> attachement toxique et amour véritable</li>
-                <li>⚠️ <strong>Établissez des limites</strong> claires et fermes</li>
-                <li>⚠️ <strong>Questionnez</strong> si cette relation vous apporte du bonheur</li>
-                <li>⚠️ <strong>Envisagez</strong> de vous éloigner pour votre bien-être</li>
+                <li><strong>Protégez-vous</strong> émotionnellement de la manipulation</li>
+                <li><strong>Ne confondez pas</strong> attachement toxique et amour véritable</li>
+                <li><strong>Établissez des limites</strong> claires et fermes</li>
+                <li><strong>Questionnez</strong> si cette relation vous apporte du bonheur</li>
+                <li><strong>Envisagez</strong> de vous éloigner pour votre bien-être</li>
               </ul>
             </div>
             <div className="bg-white rounded-lg p-6 border-l-4 border-red-500">
-              <h3 className="font-bold text-lg mb-3 text-red-700">❌ S'il/elle ne vous AIME PAS</h3>
+              <h3 className="font-bold text-lg mb-3 text-red-700">S'il/elle ne vous AIME PAS</h3>
               <ul className="space-y-2 text-gray-700">
                 <li>✗ <strong>Acceptez cette vérité</strong> difficile mais libératrice</li>
                 <li>✗ <strong>Ne perdez pas votre temps</strong> à attendre un amour qui n'existe pas</li>
