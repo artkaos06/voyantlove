@@ -1,6 +1,18 @@
 'use client';
 
-import { useState, useCallback } from 'react';
+// Multi-card tarot spread, reused by the tirage pages under
+// /voyance-gratuite-amour/ (tarot-amour-gratuit, tarot-du-jour-amour,
+// tarot-futur-proche-amour, tirage-gratuit-celibataire).
+//
+// The site-wide de-emoji pass blanked SpreadCard.emoji but left the markup that
+// consumed it, so the widget rendered an empty spinning block during the
+// shuffle and an empty 3xl span in front of every card name. Card identity is
+// now the position number plus the card name, and the site's Icon component
+// stands in for the face-down backs — the same pattern as
+// components/TarotOuiNon.tsx.
+
+import { useCallback, useEffect, useRef, useState } from 'react';
+import Icon from '@/components/Icon';
 import { TAROT_SPREAD_DECK, type SpreadCard } from '@/lib/tarotDeck';
 
 interface DrawnPosition {
@@ -14,6 +26,8 @@ interface TarotSpreadProps {
   positions: string[];
   ctaSource: string;
 }
+
+const SHUFFLE_MS = 1400;
 
 function drawUnique(count: number): SpreadCard[] {
   const pool = [...TAROT_SPREAD_DECK];
@@ -31,97 +45,156 @@ export default function TarotSpread({ title, subtitle, positions, ctaSource }: T
   const [question, setQuestion] = useState('');
   const [drawn, setDrawn] = useState<DrawnPosition[]>([]);
 
+  // One timer at a time, cleared on unmount so a draw left mid-animation never
+  // sets state on an unmounted component.
+  const timer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  useEffect(() => () => {
+    if (timer.current) clearTimeout(timer.current);
+  }, []);
+
   const startDraw = useCallback(() => {
+    if (timer.current) clearTimeout(timer.current);
     setStep('shuffle');
-    setTimeout(() => {
+    timer.current = setTimeout(() => {
       const cards = drawUnique(positions.length);
       setDrawn(positions.map((label, i) => ({ label, card: cards[i] })));
       setStep('result');
-    }, 1800);
+    }, SHUFFLE_MS);
   }, [positions]);
 
   const reset = useCallback(() => {
+    if (timer.current) clearTimeout(timer.current);
     setStep('intro');
     setQuestion('');
     setDrawn([]);
   }, []);
 
   return (
-    <div className="bg-gradient-to-br from-indigo-900 via-purple-900 to-violet-900 rounded-2xl p-6 md:p-10 text-white shadow-2xl">
-      <div className="text-center mb-6">
-        <h2 className="text-2xl md:text-3xl font-bold mb-2">{title}</h2>
-        <p className="text-purple-200 text-sm">{subtitle}</p>
+    <div className="rounded-xl border border-gray-200 bg-white p-5 shadow-sm sm:p-8">
+      <div className="mb-6">
+        <h2 className="text-xl font-bold tracking-tight text-gray-900 sm:text-2xl">{title}</h2>
+        <p className="mt-2 text-[0.95rem] leading-relaxed text-gray-600">{subtitle}</p>
       </div>
 
+      {/* Étape 1 — la question */}
       {step === 'intro' && (
-        <div className="max-w-lg mx-auto space-y-5">
+        <form
+          onSubmit={(e) => {
+            e.preventDefault();
+            startDraw();
+          }}
+          className="space-y-4"
+        >
           <div>
-            <label className="block text-sm font-semibold text-purple-200 mb-2">Votre question ou intention (optionnel) :</label>
+            <label htmlFor="spread-question" className="mb-2 block text-sm font-semibold text-gray-800">
+              Votre question ou intention (facultatif)
+            </label>
             <input
+              id="spread-question"
               type="text"
               value={question}
               onChange={(e) => setQuestion(e.target.value)}
-              placeholder="Ex : Où en est ma vie amoureuse en ce moment ?"
-              className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:border-transparent"
-              onKeyDown={(e) => e.key === 'Enter' && startDraw()}
+              placeholder="Ex : où en est ma vie amoureuse en ce moment ?"
+              maxLength={140}
+              autoComplete="off"
+              className="w-full rounded-lg border border-gray-300 px-4 py-3 text-gray-900 placeholder-gray-400 focus:border-purple-500 focus:outline-none focus:ring-2 focus:ring-purple-200"
             />
           </div>
           <button
-            onClick={startDraw}
-            className="w-full bg-gradient-to-r from-purple-500 to-indigo-500 hover:from-purple-400 hover:to-indigo-400 text-white font-bold py-4 rounded-lg text-lg transition-all hover:scale-[1.02] hover:shadow-lg"
+            type="submit"
+            className="w-full rounded-lg bg-purple-700 px-5 py-3.5 text-base font-semibold text-white transition hover:bg-purple-800"
           >
-            Tirer les Cartes 
+            Tirer les cartes
           </button>
-        </div>
+          <p className="text-center text-xs text-gray-500">
+            Gratuit, sans inscription.{' '}
+            {positions.length > 1
+              ? `${positions.length} cartes, une lecture d’ensemble.`
+              : 'Une carte, une lecture.'}
+          </p>
+        </form>
       )}
 
+      {/* Étape 2 — le mélange */}
       {step === 'shuffle' && (
-        <div className="text-center py-10">
-          <div className="text-6xl animate-spin mb-4" style={{ animationDuration: '1.5s' }}></div>
-          <p className="text-xl font-semibold text-purple-200 animate-pulse">Les cartes se mélangent...</p>
-          {question && <p className="text-sm text-purple-300 mt-2 italic">&quot;{question}&quot;</p>}
+        <div>
+          <p className="text-sm font-semibold text-gray-800">Les cartes se mélangent…</p>
+          {question && <p className="mt-1 truncate text-sm italic text-gray-500">« {question} »</p>}
+
+          <div
+            className="mx-auto mt-5 grid gap-3"
+            style={{
+              gridTemplateColumns: `repeat(${Math.min(positions.length, 3)}, minmax(0, 1fr))`,
+              maxWidth: `${Math.min(positions.length, 3) * 7}rem`,
+            }}
+          >
+            {positions.map((label, slot) => (
+              <div
+                key={label}
+                aria-hidden="true"
+                style={{ animationDelay: `${slot * 120}ms` }}
+                className="flex aspect-[2/3] animate-pulse items-center justify-center rounded-lg border border-gray-200 bg-gray-100 text-gray-300"
+              >
+                <Icon name="star" size={22} />
+              </div>
+            ))}
+          </div>
         </div>
       )}
 
-      {step === 'result' && (
-        <div className="space-y-6">
-          {question && (
-            <p className="text-center text-sm text-purple-300 italic">&quot;{question}&quot;</p>
-          )}
-          <div className={`grid gap-4 ${drawn.length >= 4 ? 'md:grid-cols-2' : 'md:grid-cols-3'}`}>
+      {/* Étape 3 — le tirage */}
+      {step === 'result' && drawn.length > 0 && (
+        <div aria-live="polite">
+          {question && <p className="truncate text-sm italic text-gray-500">« {question} »</p>}
+
+          <div
+            className={`mt-3 grid gap-4 ${
+              drawn.length === 1 ? '' : drawn.length >= 4 ? 'sm:grid-cols-2' : 'sm:grid-cols-3'
+            }`}
+          >
             {drawn.map(({ label, card }, i) => (
-              <div key={i} className="bg-white/10 rounded-xl p-5 border border-white/10">
-                <div className="text-xs font-bold uppercase tracking-wider text-purple-300 mb-2">{label}</div>
-                <div className="flex items-center gap-3 mb-2">
-                  <span className="text-3xl">{card.emoji}</span>
-                  <span className="font-bold text-lg">{card.name}</span>
-                </div>
-                <p className="text-purple-100 text-sm leading-relaxed">{card.meaning}</p>
+              <div key={label} className="rounded-xl border border-gray-200 p-5">
+                <p className="text-xs font-semibold uppercase tracking-wider text-purple-700">
+                  {i + 1}. {label}
+                </p>
+                <p className="mt-1 text-lg font-bold tracking-tight text-gray-900">{card.name}</p>
+                <p className="mt-2 text-sm leading-relaxed text-gray-700">{card.meaning}</p>
               </div>
             ))}
           </div>
 
-          <div className="bg-white/5 rounded-xl p-6 border border-white/10 text-center">
-            <p className="font-semibold text-purple-100 mb-3">
-              Pour une interprétation approfondie de votre tirage, consultez un voyant spécialisé en amour :
+          <div className="mt-4 flex flex-col gap-3 sm:flex-row">
+            <button
+              type="button"
+              onClick={startDraw}
+              className="rounded-lg bg-purple-700 px-5 py-3 text-sm font-semibold text-white transition hover:bg-purple-800"
+            >
+              Refaire un tirage
+            </button>
+            <button
+              type="button"
+              onClick={reset}
+              className="rounded-lg border border-gray-300 px-5 py-3 text-sm font-semibold text-gray-700 transition hover:border-purple-400 hover:text-purple-700"
+            >
+              Poser une autre question
+            </button>
+          </div>
+
+          <div className="mt-6 rounded-xl border border-gray-200 bg-gray-50 p-5">
+            <p className="font-semibold text-gray-900">Un tirage indique une tendance</p>
+            <p className="mt-1 text-sm leading-relaxed text-gray-600">
+              Pour une interprétation approfondie de ces cartes dans votre situation, un voyant
+              spécialisé en amour reprend votre tirage avec vous.
             </p>
             <a
               href="tel:0175754582"
               data-analytics={`tarot-spread-cta-${ctaSource}`}
-              className="inline-block bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-400 hover:to-emerald-400 text-white px-8 py-4 rounded-xl font-bold text-xl transition-all hover:scale-105 hover:shadow-xl mb-3"
+              className="mt-4 inline-flex items-center gap-2 rounded-lg bg-purple-700 px-5 py-3 text-base font-semibold text-white transition hover:bg-purple-800"
             >
+              <Icon name="phone" size={18} />
               01 75 75 45 82
             </a>
-            <p className="text-green-300 text-sm font-semibold">10 minutes gratuites • Disponible maintenant</p>
-          </div>
-
-          <div className="text-center">
-            <button
-              onClick={reset}
-              className="text-purple-300 hover:text-white text-sm underline underline-offset-4 transition-colors"
-            >
-              Refaire un tirage →
-            </button>
+            <p className="mt-2 text-xs text-gray-500">10 minutes offertes pour une première consultation</p>
           </div>
         </div>
       )}

@@ -1,40 +1,58 @@
 'use client';
 
-import React, { useState, useCallback } from 'react';
+// Interactive one-card oui/non draw — the tool that /voyance-gratuite-amour/
+// tarot-oui-non-amour/ ranks for. The queries behind that page ("tirage oui non
+// gratuit", "tarots amour oui non") are tool intent, not article intent: every
+// SERP leader answers with a widget, so this component sits directly under the
+// H1 rather than below the prose.
+//
+// The oui / non / nuancé classification is not arbitrary — it is the same
+// classification the page states in its "Cartes Oui vs Cartes Non" section
+// (10 oui, 5 non, 7 conditionnelles). Changing a verdict here without changing
+// it there makes the tool contradict its own explanation. tests/
+// phaseBBoundedBatch.test.ts pins the count at 22.
+
+import React, { useCallback, useEffect, useRef, useState } from 'react';
+import Link from 'next/link';
+import Icon from '@/components/Icon';
+import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 
 type CardResult = 'oui' | 'non' | 'peut-etre';
 
 interface TarotCard {
   name: string;
-  emoji: string;
+  /** Roman numeral of the arcanum — the card's identity now that emoji are gone. */
+  numeral: string;
+  /** Slug of the matching /tarot-amour/[carte]/ page, when one exists. */
+  slug?: string;
   result: CardResult;
   message: string;
 }
 
 const TAROT_CARDS: TarotCard[] = [
   // The complete 22 major arcana, each with one stable interpretation.
-  { name: 'Le Mat', emoji: '', result: 'peut-etre', message: 'Le Mat ouvre un chemin imprévisible. La réponse reste nuancée : avancez avec curiosité, sans tenir l’issue pour acquise.' },
-  { name: 'Le Bateleur', emoji: '', result: 'oui', message: 'Le Bateleur favorise l’initiative et le commencement. Oui, à condition de faire un premier pas concret.' },
-  { name: 'La Papesse', emoji: '', result: 'peut-etre', message: 'La Papesse garde encore une information sous silence. La réponse est nuancée : observez et laissez la vérité se révéler.' },
-  { name: 'L\'Impératrice', emoji: '', result: 'oui', message: 'L’Impératrice favorise l’expression des sentiments. Oui : une dynamique chaleureuse et créative peut grandir.' },
-  { name: 'L\'Empereur', emoji: '', result: 'oui', message: 'L’Empereur apporte structure et stabilité. Oui, si la relation s’appuie sur des actes constants et un engagement clair.' },
-  { name: 'Le Pape', emoji: '', result: 'peut-etre', message: 'Le Pape invite à clarifier les valeurs et l’engagement. La réponse dépend d’un accord sincère entre les deux personnes.' },
-  { name: 'L\'Amoureux', emoji: '', result: 'oui', message: 'L’Amoureux confirme un oui, tout en rappelant qu’un choix sincère doit être assumé.' },
-  { name: 'Le Chariot', emoji: '', result: 'oui', message: 'Le Chariot annonce une avancée. Oui : prenez une direction claire et évitez les signaux contradictoires.' },
-  { name: 'La Justice', emoji: '', result: 'peut-etre', message: 'La Justice pèse votre situation. La réponse dépend de l’honnêteté, de l’équilibre et des choix de chacun.' },
-  { name: 'L\'Ermite', emoji: '', result: 'non', message: 'L’Ermite indique retrait et lenteur. Non pour le moment : accordez du temps à la réflexion avant de relancer la situation.' },
-  { name: 'La Roue de Fortune', emoji: '', result: 'peut-etre', message: 'La Roue de Fortune annonce un changement. La réponse reste nuancée car le timing et vos prochains choix peuvent encore la faire évoluer.' },
-  { name: 'La Force', emoji: '', result: 'oui', message: 'La Force soutient une progression patiente et maîtrisée. Oui, si vous privilégiez la confiance plutôt que le rapport de force.' },
-  { name: 'Le Pendu', emoji: '', result: 'non', message: 'Le Pendu signale un blocage. Non pour le moment : changez de perspective et ne forcez pas le rythme.' },
-  { name: 'L\'Arcane sans nom', emoji: '', result: 'non', message: 'L’Arcane sans nom clôt une forme ancienne de la situation. Non dans les conditions actuelles : une transformation est nécessaire.' },
-  { name: 'Tempérance', emoji: '', result: 'oui', message: 'Tempérance favorise l’apaisement et le dialogue. Oui, avec patience, mesure et ajustements réciproques.' },
-  { name: 'Le Diable', emoji: '', result: 'non', message: 'Le Diable révèle une illusion ou une dépendance. Non dans les conditions actuelles : prenez du recul avant d’avancer.' },
-  { name: 'La Maison Dieu', emoji: '', result: 'non', message: 'La Maison Dieu annonce un bouleversement. Non pour l’instant : les bases doivent être revues avant de reconstruire.' },
-  { name: 'L\'Étoile', emoji: '', result: 'oui', message: 'L’Étoile brille en votre faveur. Oui, avec douceur : espoir, sérénité et renouveau sentimental sont encouragés.' },
-  { name: 'La Lune', emoji: '', result: 'peut-etre', message: 'La Lune voile la réponse. La réponse est nuancée : des éléments cachés influencent encore la situation.' },
-  { name: 'Le Soleil', emoji: '', result: 'oui', message: 'Le Soleil éclaire votre question. Oui : la dynamique favorise la clarté, le partage et l’épanouissement.' },
-  { name: 'Le Jugement', emoji: '', result: 'peut-etre', message: 'Le Jugement ouvre une possibilité de réveil ou de retour. La réponse dépend d’une prise de conscience suivie d’une action concrète.' },
-  { name: 'Le Monde', emoji: '', result: 'oui', message: 'Le Monde annonce l’accomplissement. Oui : un cycle peut aboutir de manière cohérente et constructive.' },
+  { name: 'Le Mat', numeral: '0', slug: 'le-mat', result: 'peut-etre', message: 'Le Mat ouvre un chemin imprévisible. La réponse reste nuancée : avancez avec curiosité, sans tenir l’issue pour acquise.' },
+  { name: 'Le Bateleur', numeral: 'I', slug: 'le-bateleur', result: 'oui', message: 'Le Bateleur favorise l’initiative et le commencement. Oui, à condition de faire un premier pas concret.' },
+  { name: 'La Papesse', numeral: 'II', slug: 'la-papesse', result: 'peut-etre', message: 'La Papesse garde encore une information sous silence. La réponse est nuancée : observez et laissez la vérité se révéler.' },
+  { name: 'L\'Impératrice', numeral: 'III', slug: 'l-imperatrice', result: 'oui', message: 'L’Impératrice favorise l’expression des sentiments. Oui : une dynamique chaleureuse et créative peut grandir.' },
+  { name: 'L\'Empereur', numeral: 'IV', slug: 'l-empereur', result: 'oui', message: 'L’Empereur apporte structure et stabilité. Oui, si la relation s’appuie sur des actes constants et un engagement clair.' },
+  { name: 'Le Pape', numeral: 'V', slug: 'le-pape', result: 'peut-etre', message: 'Le Pape invite à clarifier les valeurs et l’engagement. La réponse dépend d’un accord sincère entre les deux personnes.' },
+  { name: 'L\'Amoureux', numeral: 'VI', slug: 'l-amoureux', result: 'oui', message: 'L’Amoureux confirme un oui, tout en rappelant qu’un choix sincère doit être assumé.' },
+  { name: 'Le Chariot', numeral: 'VII', slug: 'le-chariot', result: 'oui', message: 'Le Chariot annonce une avancée. Oui : prenez une direction claire et évitez les signaux contradictoires.' },
+  { name: 'La Justice', numeral: 'VIII', slug: 'la-justice', result: 'peut-etre', message: 'La Justice pèse votre situation. La réponse dépend de l’honnêteté, de l’équilibre et des choix de chacun.' },
+  { name: 'L\'Ermite', numeral: 'IX', slug: 'l-ermite', result: 'non', message: 'L’Ermite indique retrait et lenteur. Non pour le moment : accordez du temps à la réflexion avant de relancer la situation.' },
+  { name: 'La Roue de Fortune', numeral: 'X', slug: 'la-roue-de-fortune', result: 'peut-etre', message: 'La Roue de Fortune annonce un changement. La réponse reste nuancée car le timing et vos prochains choix peuvent encore la faire évoluer.' },
+  { name: 'La Force', numeral: 'XI', slug: 'la-force', result: 'oui', message: 'La Force soutient une progression patiente et maîtrisée. Oui, si vous privilégiez la confiance plutôt que le rapport de force.' },
+  { name: 'Le Pendu', numeral: 'XII', slug: 'le-pendu', result: 'non', message: 'Le Pendu signale un blocage. Non pour le moment : changez de perspective et ne forcez pas le rythme.' },
+  { name: 'L\'Arcane sans nom', numeral: 'XIII', slug: 'la-mort', result: 'non', message: 'L’Arcane sans nom clôt une forme ancienne de la situation. Non dans les conditions actuelles : une transformation est nécessaire.' },
+  { name: 'Tempérance', numeral: 'XIV', slug: 'la-temperance', result: 'oui', message: 'Tempérance favorise l’apaisement et le dialogue. Oui, avec patience, mesure et ajustements réciproques.' },
+  { name: 'Le Diable', numeral: 'XV', slug: 'le-diable', result: 'non', message: 'Le Diable révèle une illusion ou une dépendance. Non dans les conditions actuelles : prenez du recul avant d’avancer.' },
+  { name: 'La Maison Dieu', numeral: 'XVI', slug: 'la-tour', result: 'non', message: 'La Maison Dieu annonce un bouleversement. Non pour l’instant : les bases doivent être revues avant de reconstruire.' },
+  { name: 'L\'Étoile', numeral: 'XVII', slug: 'l-etoile', result: 'oui', message: 'L’Étoile brille en votre faveur. Oui, avec douceur : espoir, sérénité et renouveau sentimental sont encouragés.' },
+  { name: 'La Lune', numeral: 'XVIII', slug: 'la-lune', result: 'peut-etre', message: 'La Lune voile la réponse. La réponse est nuancée : des éléments cachés influencent encore la situation.' },
+  { name: 'Le Soleil', numeral: 'XIX', slug: 'le-soleil', result: 'oui', message: 'Le Soleil éclaire votre question. Oui : la dynamique favorise la clarté, le partage et l’épanouissement.' },
+  { name: 'Le Jugement', numeral: 'XX', slug: 'le-jugement', result: 'peut-etre', message: 'Le Jugement ouvre une possibilité de réveil ou de retour. La réponse dépend d’une prise de conscience suivie d’une action concrète.' },
+  { name: 'Le Monde', numeral: 'XXI', slug: 'le-monde', result: 'oui', message: 'Le Monde annonce l’accomplissement. Oui : un cycle peut aboutir de manière cohérente et constructive.' },
 ];
 
 const SAMPLE_QUESTIONS = [
@@ -43,89 +61,137 @@ const SAMPLE_QUESTIONS = [
   'Vais-je rencontrer quelqu\'un bientôt ?',
   'Notre couple va-t-il durer ?',
   'Est-il/elle fidèle ?',
-  'Vais-je me marier cette année ?',
 ];
+
+/** How many face-down cards the spread offers. */
+const SPREAD_SIZE = 6;
+
+const SHUFFLE_MS = 900;
+const FLIP_MS = 450;
+
+const VERDICT: Record<CardResult, { label: string; panel: string; badge: string }> = {
+  oui: {
+    label: 'Oui',
+    panel: 'border-green-200 bg-green-50',
+    badge: 'text-green-700',
+  },
+  non: {
+    label: 'Non',
+    panel: 'border-red-200 bg-red-50',
+    badge: 'text-red-700',
+  },
+  'peut-etre': {
+    label: 'Peut-être',
+    panel: 'border-amber-200 bg-amber-50',
+    badge: 'text-amber-700',
+  },
+};
+
+/** Fisher-Yates over the deck indices, then keep the first `size`. */
+function dealSpread(size: number): number[] {
+  const indices = TAROT_CARDS.map((_, i) => i);
+  for (let i = indices.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [indices[i], indices[j]] = [indices[j], indices[i]];
+  }
+  return indices.slice(0, size);
+}
 
 export default function TarotOuiNon() {
   const [step, setStep] = useState<'question' | 'shuffle' | 'pick' | 'result'>('question');
   const [question, setQuestion] = useState('');
-  const [drawnCard, setDrawnCard] = useState<TarotCard | null>(null);
-  const [shuffledCards, setShuffledCards] = useState<number[]>([]);
-  const [flippedIndex, setFlippedIndex] = useState<number | null>(null);
+  const [spread, setSpread] = useState<number[]>([]);
+  const [pickedSlot, setPickedSlot] = useState<number | null>(null);
 
-  const startShuffle = useCallback(() => {
+  // One timer at a time, cleared on unmount so a draw left mid-animation never
+  // sets state on an unmounted component.
+  const timer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const schedule = useCallback((fn: () => void, ms: number) => {
+    if (timer.current) clearTimeout(timer.current);
+    timer.current = setTimeout(fn, ms);
+  }, []);
+  useEffect(() => () => {
+    if (timer.current) clearTimeout(timer.current);
+  }, []);
+
+  const drawnCard = pickedSlot !== null && spread[pickedSlot] !== undefined
+    ? TAROT_CARDS[spread[pickedSlot]]
+    : null;
+
+  const shuffle = useCallback(() => {
     if (!question.trim()) return;
-
-    // Generate 6 random card indices
-    const indices: number[] = [];
-    while (indices.length < 6) {
-      const idx = Math.floor(Math.random() * TAROT_CARDS.length);
-      if (!indices.includes(idx)) indices.push(idx);
-    }
-    setShuffledCards(indices);
+    setSpread(dealSpread(SPREAD_SIZE));
+    setPickedSlot(null);
     setStep('shuffle');
+    schedule(() => setStep('pick'), SHUFFLE_MS);
+  }, [question, schedule]);
 
-    // Auto-advance to pick after 2s
-    setTimeout(() => setStep('pick'), 2000);
-  }, [question]);
+  const pickCard = useCallback((slot: number) => {
+    if (step !== 'pick' || pickedSlot !== null) return;
+    setPickedSlot(slot);
+    schedule(() => setStep('result'), FLIP_MS);
+  }, [step, pickedSlot, schedule]);
 
-  const pickCard = useCallback((displayIndex: number) => {
-    if (step !== 'pick' || flippedIndex !== null) return;
-    setFlippedIndex(displayIndex);
-    const card = TAROT_CARDS[shuffledCards[displayIndex]];
-    setDrawnCard(card);
-
-    setTimeout(() => setStep('result'), 1200);
-  }, [step, flippedIndex, shuffledCards]);
+  /** Same question, fresh cards. */
+  const drawAgain = useCallback(() => {
+    setSpread(dealSpread(SPREAD_SIZE));
+    setPickedSlot(null);
+    setStep('shuffle');
+    schedule(() => setStep('pick'), SHUFFLE_MS);
+  }, [schedule]);
 
   const reset = useCallback(() => {
     setStep('question');
     setQuestion('');
-    setDrawnCard(null);
-    setShuffledCards([]);
-    setFlippedIndex(null);
+    setSpread([]);
+    setPickedSlot(null);
   }, []);
 
-  const resultColor = drawnCard?.result === 'oui'
-    ? 'from-green-500 to-emerald-600'
-    : drawnCard?.result === 'non'
-      ? 'from-red-500 to-rose-600'
-      : 'from-amber-500 to-orange-500';
-
-  const resultLabel = drawnCard?.result === 'oui'
-    ? 'OUI ✓'
-    : drawnCard?.result === 'non'
-      ? 'NON ✗'
-      : 'PEUT-ÊTRE ◎';
+  const verdict = drawnCard ? VERDICT[drawnCard.result] : null;
 
   return (
-    <div className="bg-gradient-to-br from-indigo-900 via-purple-900 to-violet-900 rounded-2xl p-6 md:p-10 text-white shadow-2xl">
-      <div className="text-center mb-6">
-        <h2 className="text-2xl md:text-3xl font-bold mb-2">Tirage Tarot Oui Non Amour</h2>
-        <p className="text-purple-200 text-sm">Posez votre question et tirez une carte pour obtenir votre réponse</p>
+    <div className="rounded-xl border border-gray-200 bg-white p-5 shadow-sm sm:p-8">
+      <div className="mb-6">
+        <h2 className="text-xl font-bold tracking-tight text-gray-900 sm:text-2xl">
+          Tirage oui ou non gratuit
+        </h2>
+        <p className="mt-2 text-[0.95rem] leading-relaxed text-gray-600">
+          Posez une question fermée, tirez une carte parmi les 22 arcanes majeurs et lisez sa réponse.
+        </p>
       </div>
 
-      {/* Step 1: Question */}
+      {/* Étape 1 — la question */}
       {step === 'question' && (
-        <div className="max-w-lg mx-auto space-y-5">
+        <form
+          onSubmit={(e) => {
+            e.preventDefault();
+            shuffle();
+          }}
+          className="space-y-4"
+        >
           <div>
-            <label className="block text-sm font-semibold text-purple-200 mb-2">Votre question (oui/non) :</label>
+            <label htmlFor="tarot-question" className="mb-2 block text-sm font-semibold text-gray-800">
+              Votre question
+            </label>
             <input
+              id="tarot-question"
               type="text"
               value={question}
               onChange={(e) => setQuestion(e.target.value)}
-              placeholder="Ex : M'aime-t-il vraiment ?"
-              className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:border-transparent"
-              onKeyDown={(e) => e.key === 'Enter' && startShuffle()}
+              placeholder="Ex : m’aime-t-il vraiment ?"
+              maxLength={140}
+              autoComplete="off"
+              className="w-full rounded-lg border border-gray-300 px-4 py-3 text-gray-900 placeholder-gray-400 focus:border-purple-500 focus:outline-none focus:ring-2 focus:ring-purple-200"
             />
           </div>
 
-          <div className="flex flex-wrap gap-2 justify-center">
-            {SAMPLE_QUESTIONS.map((q, i) => (
+          <div className="flex flex-wrap gap-2">
+            {SAMPLE_QUESTIONS.map((q) => (
               <button
-                key={i}
-                onClick={() => { setQuestion(q); }}
-                className="text-xs bg-white/10 hover:bg-white/20 border border-white/15 px-3 py-1.5 rounded-full transition-colors"
+                key={q}
+                type="button"
+                onClick={() => setQuestion(q)}
+                className="rounded-full border border-gray-300 px-3 py-1.5 text-xs text-gray-700 transition hover:border-purple-400 hover:text-purple-700"
               >
                 {q}
               </button>
@@ -133,96 +199,128 @@ export default function TarotOuiNon() {
           </div>
 
           <button
-            onClick={startShuffle}
+            type="submit"
             disabled={!question.trim()}
-            className="w-full bg-gradient-to-r from-purple-500 to-indigo-500 hover:from-purple-400 hover:to-indigo-400 disabled:opacity-40 disabled:cursor-not-allowed text-white font-bold py-4 rounded-lg text-lg transition-all hover:scale-[1.02] hover:shadow-lg"
+            className="w-full rounded-lg bg-purple-700 px-5 py-3.5 text-base font-semibold text-white transition hover:bg-purple-800 disabled:cursor-not-allowed disabled:bg-gray-300"
           >
-            Mélanger les Cartes 
+            Mélanger les cartes
           </button>
+          <p className="text-center text-xs text-gray-500">
+            Gratuit, sans inscription. Une carte, une réponse.
+          </p>
+        </form>
+      )}
+
+      {/* Étapes 2 et 3 — le mélange puis le choix, sur la même grille pour que
+          rien ne bouge entre les deux. */}
+      {(step === 'shuffle' || step === 'pick') && (
+        <div>
+          <p className="text-sm font-semibold text-gray-800">
+            {step === 'shuffle' ? 'Les cartes se mélangent…' : 'Choisissez une carte'}
+          </p>
+          <p className="mt-1 truncate text-sm italic text-gray-500">« {question} »</p>
+
+          <div className="mx-auto mt-5 grid max-w-md grid-cols-3 gap-3">
+            {spread.map((deckIndex, slot) => {
+              const isPicked = pickedSlot === slot;
+              const isDimmed = pickedSlot !== null && !isPicked;
+              return (
+                <button
+                  key={slot}
+                  type="button"
+                  onClick={() => pickCard(slot)}
+                  disabled={step !== 'pick' || pickedSlot !== null}
+                  aria-label={`Carte face cachée numéro ${slot + 1}`}
+                  style={step === 'shuffle' ? { animationDelay: `${slot * 90}ms` } : undefined}
+                  className={[
+                    'flex aspect-[2/3] items-center justify-center rounded-lg border transition duration-300',
+                    step === 'shuffle' ? 'animate-pulse border-gray-200 bg-gray-100 text-gray-300' : '',
+                    step === 'pick' && !isPicked && !isDimmed
+                      ? 'cursor-pointer border-purple-200 bg-purple-50 text-purple-400 hover:-translate-y-1 hover:border-purple-500 hover:text-purple-700'
+                      : '',
+                    isPicked ? 'scale-105 border-purple-600 bg-purple-700 text-white shadow-md' : '',
+                    isDimmed ? 'border-gray-200 bg-gray-50 text-gray-300 opacity-50' : '',
+                  ].join(' ')}
+                >
+                  {isPicked && drawnCard ? (
+                    <span className="px-1 text-center">
+                      <span className="block text-lg font-bold leading-none">{drawnCard.numeral}</span>
+                      <span className="mt-1 block text-[0.65rem] font-semibold leading-tight">{drawnCard.name}</span>
+                    </span>
+                  ) : (
+                    <Icon name="star" size={22} />
+                  )}
+                </button>
+              );
+            })}
+          </div>
         </div>
       )}
 
-      {/* Step 2: Shuffle animation */}
-      {step === 'shuffle' && (
-        <div className="text-center py-10">
-          <div className="text-6xl animate-spin mb-4" style={{ animationDuration: '1.5s' }}></div>
-          <p className="text-xl font-semibold text-purple-200 animate-pulse">Les cartes se mélangent...</p>
-          <p className="text-sm text-purple-300 mt-2 italic">&quot;{question}&quot;</p>
-        </div>
-      )}
+      {/* Étape 4 — la réponse */}
+      {step === 'result' && drawnCard && verdict && (
+        <div aria-live="polite">
+          <p className="truncate text-sm italic text-gray-500">« {question} »</p>
 
-      {/* Step 3: Pick a card */}
-      {step === 'pick' && (
-        <div className="text-center">
-          <p className="text-lg font-semibold text-purple-200 mb-2">Choisissez une carte</p>
-          <p className="text-sm text-purple-300 mb-6 italic">&quot;{question}&quot;</p>
-          <div className="grid grid-cols-3 gap-3 max-w-md mx-auto">
-            {shuffledCards.map((_, i) => (
-              <button
-                key={i}
-                onClick={() => pickCard(i)}
-                className={`aspect-[2/3] rounded-xl border-2 transition-all duration-500 ${
-                  flippedIndex === i
-                    ? 'bg-gradient-to-br from-yellow-400 to-amber-500 border-yellow-300 scale-110 shadow-xl'
-                    : flippedIndex !== null
-                      ? 'bg-indigo-800/50 border-white/10 opacity-40 cursor-not-allowed'
-                      : 'bg-gradient-to-br from-indigo-700 to-purple-800 border-white/20 hover:border-white/50 hover:scale-105 hover:shadow-lg cursor-pointer'
-                }`}
+          <div className={`mt-3 rounded-xl border p-6 text-center ${verdict.panel}`}>
+            <p className={`text-4xl font-bold tracking-tight sm:text-5xl ${verdict.badge}`}>
+              {verdict.label}
+            </p>
+            <p className="mt-2 text-sm font-semibold text-gray-700">
+              {drawnCard.name} (arcane {drawnCard.numeral})
+            </p>
+          </div>
+
+          <div className="mt-4 rounded-xl border border-gray-200 p-5">
+            <p className="text-xs font-semibold uppercase tracking-wider text-gray-500">Interprétation</p>
+            <p className="mt-2 leading-relaxed text-gray-800">{drawnCard.message}</p>
+            {drawnCard.slug && (
+              <Link
+                href={`/tarot-amour/${drawnCard.slug}/`}
+                className="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-purple-700 hover:text-purple-900 hover:underline"
               >
-                {flippedIndex === i && drawnCard ? (
-                  <div className="flex flex-col items-center justify-center h-full p-2">
-                    <span className="text-3xl md:text-4xl mb-1">{drawnCard.emoji}</span>
-                    <span className="text-xs font-bold text-indigo-900 leading-tight">{drawnCard.name}</span>
-                  </div>
-                ) : (
-                  <div className="flex items-center justify-center h-full">
-                    <span className="text-3xl md:text-4xl"></span>
-                  </div>
-                )}
-              </button>
-            ))}
-          </div>
-        </div>
-      )}
-
-      {/* Step 4: Result */}
-      {step === 'result' && drawnCard && (
-        <div className="max-w-lg mx-auto text-center space-y-6">
-          <div>
-            <span className="text-6xl block mb-3">{drawnCard.emoji}</span>
-            <h3 className="text-2xl font-bold mb-1">{drawnCard.name}</h3>
-            <div className={`inline-block bg-gradient-to-r ${resultColor} px-6 py-2 rounded-full font-black text-xl tracking-wider mt-2`}>
-              {resultLabel}
-            </div>
+                Signification complète de {drawnCard.name} en amour
+                <Icon name="arrow" size={14} />
+              </Link>
+            )}
           </div>
 
-          <div className="bg-white/10 rounded-xl p-5 text-left border border-white/10">
-            <p className="text-sm text-purple-100 mb-2 font-semibold uppercase tracking-wider">Votre question :</p>
-            <p className="text-white italic mb-4">&quot;{question}&quot;</p>
-            <p className="text-sm text-purple-100 mb-2 font-semibold uppercase tracking-wider">Interprétation :</p>
-            <p className="text-white leading-relaxed">{drawnCard.message}</p>
+          <div className="mt-4 flex flex-col gap-3 sm:flex-row">
+            <button
+              type="button"
+              onClick={drawAgain}
+              className="rounded-lg bg-purple-700 px-5 py-3 text-sm font-semibold text-white transition hover:bg-purple-800"
+            >
+              Retirer une carte
+            </button>
+            <button
+              type="button"
+              onClick={reset}
+              className="rounded-lg border border-gray-300 px-5 py-3 text-sm font-semibold text-gray-700 transition hover:border-purple-400 hover:text-purple-700"
+            >
+              Poser une autre question
+            </button>
           </div>
 
-          {/* CTA */}
-          <div className="bg-white/5 rounded-xl p-6 border border-white/10">
-            <p className="font-semibold text-purple-100 mb-3">
-              Pour une interprétation approfondie de votre situation, consultez un voyant spécialisé en amour :
+          <div className="mt-6 rounded-xl border border-gray-200 bg-gray-50 p-5">
+            <p className="font-semibold text-gray-900">Une réponse en oui/non ne dit pas tout</p>
+            <p className="mt-1 text-sm leading-relaxed text-gray-600">
+              Le tirage indique une tendance. Pour comprendre le « pourquoi » et le « quand » de votre
+              situation, un voyant spécialisé en amour reprend cette carte dans votre contexte.
             </p>
             <a
               href="tel:0175754582"
-              className="inline-block bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-400 hover:to-emerald-400 text-white px-8 py-4 rounded-xl font-bold text-xl transition-all hover:scale-105 hover:shadow-xl mb-3"
+              className="mt-4 inline-flex items-center gap-2 rounded-lg bg-purple-700 px-5 py-3 text-base font-semibold text-white transition hover:bg-purple-800"
             >
+              <Icon name="phone" size={18} />
               01 75 75 45 82
             </a>
-            <p className="text-green-300 text-sm font-semibold">10 minutes gratuites • Disponible maintenant</p>
+            <p className="mt-2 text-xs text-gray-500">10 minutes offertes pour une première consultation</p>
           </div>
 
-          <button
-            onClick={reset}
-            className="text-purple-300 hover:text-white text-sm underline underline-offset-4 transition-colors"
-          >
-            Poser une autre question →
-          </button>
+          <div className="mt-4">
+            <VoyantQuickCTA topic="voyance-gratuite" source="tarot-oui-non-tirage-result" />
+          </div>
         </div>
       )}
     </div>

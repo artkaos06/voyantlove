@@ -83,7 +83,7 @@ export default function VoyanceDivorceSeparationPage() {
 
         {/* Ce que la voyance révèle après un divorce */}
         <section className="bg-gradient-to-br from-slate-50 to-gray-50 rounded-xl p-8 mb-8 border-2 border-slate-200">
-          <h2 className="text-3xl font-bold mb-6 text-gray-900"> Ce que la Voyance Révèle après un Divorce</h2>
+          <h2 className="text-3xl font-bold mb-6 text-gray-900">Ce que la Voyance Révèle après un Divorce</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">La voyance apporte une perspective spirituelle sur la séparation : elle distingue les relations karmiques accomplies des unions interrompues avant terme, et révèle les leçons de vie que chaque divorce porte en lui.</p>
           <p className="text-gray-700 mb-6">
             La <strong>voyance divorce</strong> ne se limite pas à prédire votre futur amoureux. Elle donne un sens profond à ce que vous traversez, ancrant votre expérience dans une perspective spirituelle qui transforme la souffrance en compréhension et la confusion en clarté.
@@ -115,7 +115,7 @@ export default function VoyanceDivorceSeparationPage() {
 
         {/* Causes spirituelles du divorce */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold mb-6 text-slate-700"> Comprendre les Causes Spirituelles du Divorce</h2>
+          <h2 className="text-3xl font-bold mb-6 text-slate-700">Comprendre les Causes Spirituelles du Divorce</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Les missions d'âme, le karma de couple et les contrats d'âme non renouvelés expliquent spirituellement pourquoi certaines unions se terminent malgré l'amour initial.</p>
           <p className="text-gray-700 mb-6">
             La spiritualité amoureuse distingue différents types d'unions selon leur nature karmique. Comprendre dans quel cadre s'inscrivait votre mariage change profondément la manière dont vous vivez et acceptez le <strong>divorce</strong>.
@@ -147,7 +147,7 @@ export default function VoyanceDivorceSeparationPage() {
 
         {/* Les étapes de la reconstruction */}
         <section id="reconstruction" className="bg-gradient-to-br from-gray-50 to-slate-50 rounded-xl p-8 mb-8 border-2 border-gray-200">
-          <h2 className="text-3xl font-bold mb-6 text-gray-900"> Les Étapes de la Reconstruction après Divorce</h2>
+          <h2 className="text-3xl font-bold mb-6 text-gray-900">Les Étapes de la Reconstruction après Divorce</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le deuil d'un mariage suit trois grandes phases, la dissolution, l'acceptation et la renaissance, chacune avec sa durée et ses défis spirituels propres.</p>
           <p className="text-gray-700 mb-6">
             La <strong>reconstruction</strong> après un <strong>divorce</strong> est un voyage intérieur exigeant mais profondément libérateur. La voyance spirituelle accompagne chaque phase en fournissant clarté, timing et direction. Pour traverser le <Link href="/rupture/deuil-amoureux/" className="text-slate-700 hover:text-slate-900 underline font-medium">deuil amoureux</Link> avec conscience, comprendre les étapes aide à ne pas rester bloqué dans la douleur.
@@ -197,7 +197,7 @@ export default function VoyanceDivorceSeparationPage() {
 
         {/* L'amour après le divorce */}
         <section id="apres-divorce" className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold mb-6 text-slate-700"> L'Amour après le Divorce : Quand et Comment ?</h2>
+          <h2 className="text-3xl font-bold mb-6 text-slate-700">L'Amour après le Divorce : Quand et Comment ?</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Retrouver l'amour après un divorce est non seulement possible mais très probable, à condition de laisser suffisamment de temps à la reconstruction intérieure avant de s'ouvrir à une nouvelle relation.</p>
           <p className="text-gray-700 mb-6">
             L'<strong>avenir après divorce</strong> inquiète profondément : sera-t-on capable d'aimer à nouveau ? De faire confiance ? La voyance rassure sur ce point tout en indiquant les conditions nécessaires à une nouvelle relation saine. Pour <Link href="/nouvelle-rencontre/nouvelle-relation-amoureuse/" className="text-slate-700 hover:text-slate-900 underline font-medium">commencer une nouvelle relation</Link> après un divorce, la préparation intérieure est aussi importante que la rencontre elle-même.
@@ -205,7 +205,7 @@ export default function VoyanceDivorceSeparationPage() {
 
           <div className="grid md:grid-cols-2 gap-6 mb-6">
             <div className="bg-slate-50 rounded-lg p-6 border-2 border-slate-200">
-              <h3 className="font-bold text-xl mb-4 text-slate-700"> Le Timing de la Rencontre</h3>
+              <h3 className="font-bold text-xl mb-4 text-slate-700">Le Timing de la Rencontre</h3>
               <p className="text-gray-700 mb-3">
                 La <strong>voyance divorce</strong> peut estimer quand vous serez émotionnellement disponible pour une nouvelle rencontre significative. Cette disponibilité est énergétique avant d'être calendaire : elle survient quand le deuil de l'union passée est suffisamment traversé et quand vous rayonnez à nouveau votre propre lumière individuelle.
               </p>
@@ -215,7 +215,7 @@ export default function VoyanceDivorceSeparationPage() {
             </div>
 
             <div className="bg-gray-50 rounded-lg p-6 border-2 border-gray-200">
-              <h3 className="font-bold text-xl mb-4 text-gray-700"> La Période de Reconstruction Nécessaire</h3>
+              <h3 className="font-bold text-xl mb-4 text-gray-700">La Période de Reconstruction Nécessaire</h3>
               <p className="text-gray-700 mb-3">
                 Il n'existe pas de durée universelle pour la période de reconstruction post-divorce. La <strong>voyance séparation couple</strong> peut identifier votre rythme individuel de guérison, qui dépend de la durée du mariage, de la manière dont il s'est terminé, de votre constitution émotionnelle et des ressources de soutien disponibles.
               </p>
@@ -226,7 +226,7 @@ export default function VoyanceDivorceSeparationPage() {
           </div>
 
           <div className="bg-slate-50 border-2 border-slate-300 rounded-lg p-6">
-            <h4 className="font-bold text-slate-800 mb-3 text-lg"> Profil de Votre Prochain Amour</h4>
+            <h4 className="font-bold text-slate-800 mb-3 text-lg">Profil de Votre Prochain Amour</h4>
             <p className="text-gray-700 mb-3">
               La <strong>voyance divorce</strong> peut décrire les traits énergétiques et caractériels de la personne qui entrera dans votre vie après cette période de reconstruction. Cette description n'est pas une liste de critères à cocher, mais une reconnaissance énergétique : quand vous rencontrerez cette personne, quelque chose en vous sera profondément familier et aligné. Les personnes qui ont traversé un <strong>divorce</strong> avec conscience attirent généralement des partenaires plus matures, plus ancrés et plus capables de vraie intimité que ceux rencontrés dans la jeunesse.
             </p>
@@ -238,7 +238,7 @@ export default function VoyanceDivorceSeparationPage() {
 
         {/* Questions à poser à un voyant */}
         <section className="bg-gradient-to-br from-zinc-50 to-slate-50 rounded-xl p-8 mb-8 border-2 border-zinc-200">
-          <h2 className="text-3xl font-bold mb-6 text-gray-900"> Questions à Poser à un Voyant lors d'un Divorce</h2>
+          <h2 className="text-3xl font-bold mb-6 text-gray-900">Questions à Poser à un Voyant lors d'un Divorce</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Les questions les plus révélatrices lors d'une consultation voyance divorce portent sur le sens spirituel de la séparation, le timing de la reconstruction et les conditions d'un nouvel amour épanoui.</p>
           <p className="text-gray-700 mb-6">
             Préparer votre consultation voyance avec des questions précises permet d'obtenir des guidances bien plus utiles et concrètes. Voici les questions qui donnent les réponses les plus éclairantes dans le contexte d'un <strong>divorce</strong> ou d'une <strong>séparation conjugale</strong>.

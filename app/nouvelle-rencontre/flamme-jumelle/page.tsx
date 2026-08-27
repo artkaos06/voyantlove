@@ -2,6 +2,7 @@ import Link from 'next/link';
 import VoyantQuickCTA from '@/components/VoyantQuickCTA';
 import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
+import { getHeureMiroirHubCards } from '@/lib/heuresMiroirsFlammeJumelle';
 
 const config: ContentPageConfig = {
   title: 'Flamme jumelle : reconnaître et vivre cette connexion intense | voyance',
@@ -23,6 +24,7 @@ const config: ContentPageConfig = {
     backLink: { href: '/nouvelle-rencontre/', label: 'Retour aux nouvelles rencontres' },
     anchors: [
       { href: '#signes', label: 'Découvrir les 11 signes', primary: true },
+      { href: '#heures-miroirs', label: 'Heures miroirs' },
       { href: '#tarot', label: 'Confirmation Tarot' },
     ],
   },
@@ -84,7 +86,7 @@ export default function FlammeJumellePage() {
 
       {/* Flamme Jumelle vs Âme Sœur */}
       <section className="bg-gradient-to-br from-purple-50 to-indigo-50 rounded-xl p-8 mb-8 border-2 border-purple-200">
-        <h2 className="text-3xl font-bold mb-6 text-gray-900"> Flamme Jumelle vs Âme S&oelig;ur, La Différence Cruciale</h2>
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Flamme Jumelle vs Âme S&oelig;ur, La Différence Cruciale</h2>
         <p className="text-lg font-semibold text-gray-800 mb-4">L'ame soeur offre une connexion harmonieuse et stable pour construire une vie ensemble. La flamme jumelle est votre miroir parfait, une relation intense et turbulente destinee a l'eveil spirituel.</p>
         <p className="text-gray-700 mb-6">
           La confusion entre <strong>flamme jumelle</strong> et <strong>âme s&oelig;ur</strong> est l'erreur la plus fréquente en voyance amoureuse. Ces deux types de connexion spirituelle répondent à des missions karmiques distinctes et se vivent de manière radicalement différente. Voici les critères essentiels pour les distinguer clairement.
@@ -158,7 +160,7 @@ export default function FlammeJumellePage() {
 
       {/* Les 11 Signes */}
       <section id="signes" className="bg-white rounded-xl shadow-md p-8 mb-8">
-        <h2 className="text-3xl font-bold mb-6 text-purple-600"> Les 11 Signes d'une Flamme Jumelle selon la Voyance</h2>
+        <h2 className="text-3xl font-bold mb-6 text-purple-600">Les 11 Signes d'une Flamme Jumelle selon la Voyance</h2>
         <p className="text-lg font-semibold text-gray-800 mb-4">Les signes principaux sont la reconnaissance instantanee, l'effet miroir puissant, l'intensite extreme, la telepathie a distance, les synchronicites constantes et une transformation personnelle acceleree.</p>
         <p className="text-gray-700 mb-6">
           Reconnaître votre <strong>flamme jumelle</strong> demande une conscience aiguë des signaux spirituels et énergétiques. Voici les 11 signes les plus fiables identifiés par la <strong>voyance karmique</strong> et confirmés par des milliers de consultations.
@@ -196,7 +198,7 @@ export default function FlammeJumellePage() {
           <div className="bg-cyan-50 border-l-4 border-cyan-500 p-5 rounded-lg">
             <h3 className="font-bold text-lg mb-2 text-cyan-700">5. Synchronicités Constantes</h3>
             <p className="text-gray-700">
-              Les <strong>synchronicités</strong> se multiplient de manière spectaculaire : chiffres miroirs (11:11, 22:22), coïncidences impossibles, signes répétés dans votre environnement. L'univers semble orchestrer votre rencontre et confirmer votre lien par des <strong>messages cosmiques</strong> de plus en plus évidents. Ces signes s'amplifient autour des moments clés de votre relation.
+              Les <strong>synchronicités</strong> se multiplient de manière spectaculaire : chiffres miroirs (11:11, 22:22), coïncidences impossibles, signes répétés dans votre environnement. L'univers semble orchestrer votre rencontre et confirmer votre lien par des <strong>messages cosmiques</strong> de plus en plus évidents. Ces signes s'amplifient autour des moments clés de votre relation. Chaque <a href="#heures-miroirs" className="text-purple-700 underline hover:text-purple-900">heure miroir</a> porte d'ailleurs un message différent selon la phase que vous traversez.
             </p>
           </div>
 
@@ -244,9 +246,37 @@ export default function FlammeJumellePage() {
         </div>
       </section>
 
+      {/* Heures miroirs : parent du cluster /flamme-jumelle/[heure]/ */}
+      <section id="heures-miroirs" className="mb-8 rounded-xl border border-gray-200 bg-white p-6 md:p-8">
+        <h2 className="mb-4 text-2xl font-bold text-gray-900">Signification des heures miroirs pour les flammes jumelles</h2>
+        <p className="mb-4 text-lg font-semibold text-gray-800">
+          Une heure miroir ne dit pas ce que fait votre jumeau : elle nomme la phase que vous traversez. 12h12 parle d&apos;alignement, 17h17 d&apos;épreuve, 20h20 de message, 10h10 de nouveau cycle, 23h23 de lâcher-prise et 21h21 d&apos;introspection.
+        </p>
+        <p className="mb-6 text-gray-700">
+          Les <strong>heures miroirs</strong> sont les synchronicités les plus fréquemment rapportées par les personnes qui vivent une <strong>connexion de flamme jumelle</strong>. Chacune possède sa lecture propre dans la tradition, son nombre et son arcane du <strong>tarot</strong>, et chacune se lit différemment selon que vous êtes en séparation, en silence radio ou en retrouvailles. Voici les six heures les plus consultées, chacune détaillée sur sa propre page.
+        </p>
+
+        <div className="grid gap-3 sm:grid-cols-2">
+          {getHeureMiroirHubCards().map((c) => (
+            <Link
+              key={c.slug}
+              href={c.href}
+              className="block rounded-lg border border-gray-200 p-4 transition hover:border-purple-400"
+            >
+              <div className="font-bold text-purple-700">{c.heure} signification flamme jumelle</div>
+              <div className="text-sm text-gray-600">{c.theme}</div>
+            </Link>
+          ))}
+        </div>
+
+        <p className="mt-6 text-gray-700">
+          Aucune de ces heures ne constitue une preuve sur les sentiments d&apos;une autre personne, et aucune n&apos;annonce de date. Pour confronter ce que vous observez à votre situation réelle, <Link href="/voyance-gratuite-amour/" className="font-medium text-purple-700 underline hover:text-purple-900">une consultation de voyance gratuite en amour</Link> donne un premier éclairage immédiat, sans engagement.
+        </p>
+      </section>
+
       {/* Les 8 Étapes */}
       <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-        <h2 className="text-3xl font-bold mb-6 text-purple-600"> Les 8 Étapes de la Relation Flamme Jumelle</h2>
+        <h2 className="text-3xl font-bold mb-6 text-purple-600">Les 8 Étapes de la Relation Flamme Jumelle</h2>
         <p className="text-lg font-semibold text-gray-800 mb-4">Le parcours flamme jumelle suit huit etapes karmiques : reconnaissance, fusion, crise, course-poursuite, lacher-prise, eveil, illumination et union harmonieuse finale.</p>
         <p className="text-gray-700 mb-6">
           Le parcours de la <strong>flamme jumelle</strong> suit un schéma karmique précis en huit étapes. Chaque phase sert l'<strong>évolution spirituelle</strong> des deux âmes et prépare l'union finale. Comprendre ces étapes permet de traverser les moments difficiles avec conscience et patience.
@@ -323,7 +353,7 @@ export default function FlammeJumellePage() {
 
       {/* Séparation et Retrouvailles */}
       <section className="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-xl p-8 mb-8 border-2 border-indigo-200">
-        <h2 className="text-3xl font-bold mb-6 text-gray-900"> Séparation et Retrouvailles, Le Cycle Karmique</h2>
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Séparation et Retrouvailles, Le Cycle Karmique</h2>
         <p className="text-lg font-semibold text-gray-800 mb-4">La separation de flamme jumelle dure en moyenne 1 a 3 ans. Elle permet a chaque ame de guerir individuellement avant l'union harmonieuse. Les synchronicites amplifient quand les retrouvailles approchent.</p>
         <p className="text-gray-700 mb-6">
           La <strong>séparation de flamme jumelle</strong> est l'épreuve la plus redoutée et la plus incomprise du parcours. Pourtant, elle constitue un passage obligé vers l'<strong>union harmonieuse</strong> et sert des objectifs spirituels précis.
@@ -361,7 +391,7 @@ export default function FlammeJumellePage() {
 
       {/* Le Tarot et la Flamme Jumelle */}
       <section id="tarot" className="bg-white rounded-xl shadow-md p-8 mb-8">
-        <h2 className="text-3xl font-bold mb-6 text-purple-600"> Le Tarot Peut-il Confirmer une Flamme Jumelle ?</h2>
+        <h2 className="text-3xl font-bold mb-6 text-purple-600">Le Tarot Peut-il Confirmer une Flamme Jumelle ?</h2>
         <p className="text-lg font-semibold text-gray-800 mb-4">Oui, les cartes Les Amoureux, le Deux de Coupe, la Maison Dieu et Temperance apparaissent systematiquement dans les tirages confirmant une connexion authentique de flamme jumelle.</p>
         <p className="text-gray-700 mb-6">
           Le <strong>tarot karmique</strong> est l'un des outils les plus puissants pour confirmer, clarifier et guider une connexion de <strong>flamme jumelle</strong>. Certaines cartes apparaissent systématiquement dans les tirages liés à cette dynamique spirituelle unique. Votre <Link href="/sentiments/compatibilite-amoureuse/" className="text-purple-600 hover:text-purple-800 underline font-medium">compatibilité spirituelle</Link> se révèle à travers des arcanes spécifiques.
@@ -369,28 +399,28 @@ export default function FlammeJumellePage() {
 
         <div className="space-y-4">
           <div className="bg-pink-50 p-5 rounded-lg border-l-4 border-pink-500">
-            <h3 className="font-bold text-pink-700 mb-2 text-lg"> Les Amoureux (Arcane VI)</h3>
+            <h3 className="font-bold text-pink-700 mb-2 text-lg">Les Amoureux (Arcane VI)</h3>
             <p className="text-gray-700">
               Cette carte représente le <strong>choix sacré de l'union</strong> et la dualité fondamentale de la flamme jumelle. Les Amoureux symbolisent la décision consciente de s'engager dans le parcours de transformation mutuelle. Quand cette carte apparaît dans un tirage de flamme jumelle, elle confirme que la connexion est authentique et divinement guidée. Elle indique aussi que vous êtes face à un choix crucial concernant cette relation.
             </p>
           </div>
 
           <div className="bg-purple-50 p-5 rounded-lg border-l-4 border-purple-500">
-            <h3 className="font-bold text-purple-700 mb-2 text-lg"> Le Deux de Coupe</h3>
+            <h3 className="font-bold text-purple-700 mb-2 text-lg">Le Deux de Coupe</h3>
             <p className="text-gray-700">
               Carte de l'<strong>union des âmes</strong> et de la réciprocité parfaite, le Deux de Coupe dans un tirage de flamme jumelle confirme la nature miroir de votre connexion. Il révèle un <strong>échange énergétique</strong> équilibré entre les deux flammes et annonce souvent une phase de rapprochement. Cette carte apparaît très fréquemment dans les tirages confirmant une authentique connexion de flamme jumelle.
             </p>
           </div>
 
           <div className="bg-red-50 p-5 rounded-lg border-l-4 border-red-500">
-            <h3 className="font-bold text-red-700 mb-2 text-lg"> La Maison Dieu (Arcane XVI)</h3>
+            <h3 className="font-bold text-red-700 mb-2 text-lg">La Maison Dieu (Arcane XVI)</h3>
             <p className="text-gray-700">
               La <strong>Tour</strong> symbolise la destruction nécessaire des structures anciennes, des illusions et des faux-semblants. Dans un contexte de flamme jumelle, elle représente les phases de crise et de <strong>déconstruction de l'ego</strong> qui précèdent la transformation profonde. Sa présence confirme que la relation provoquera un bouleversement radical mais libérateur de votre vie.
             </p>
           </div>
 
           <div className="bg-blue-50 p-5 rounded-lg border-l-4 border-blue-500">
-            <h3 className="font-bold text-blue-700 mb-2 text-lg"> Tempérance (Arcane XIV)</h3>
+            <h3 className="font-bold text-blue-700 mb-2 text-lg">Tempérance (Arcane XIV)</h3>
             <p className="text-gray-700">
               Tempérance incarne l'<strong>alchimie des flammes jumelles</strong>, la fusion harmonieuse de deux essences opposées en une unité supérieure. Cette carte annonce que les deux flammes s'approchent de l'<strong>équilibre</strong> nécessaire à l'union. Elle est le signe le plus positif dans un tirage de flamme jumelle, indiquant que la phase d'illumination et d'union harmonieuse est en préparation.
             </p>
@@ -398,7 +428,7 @@ export default function FlammeJumellePage() {
         </div>
 
         <div className="bg-purple-50 border-2 border-purple-300 rounded-lg p-6 mt-6">
-          <h4 className="font-bold text-purple-800 mb-3 text-lg"> Tirage Spécial "Flamme Jumelle"</h4>
+          <h4 className="font-bold text-purple-800 mb-3 text-lg">Tirage Spécial "Flamme Jumelle"</h4>
           <p className="text-gray-700 mb-3">
             Le <strong>tirage karmique de flamme jumelle</strong> se réalise en 6 positions spécifiques pour cartographier l'ensemble de votre connexion :
           </p>

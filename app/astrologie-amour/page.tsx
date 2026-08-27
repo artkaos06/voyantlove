@@ -58,7 +58,7 @@ export default function AstrologieAmourHub() {
         <section className="bg-purple-50 border-l-4 border-purple-500 rounded-r-xl p-6 md:p-8 mb-10">
           <h2 className="text-xl font-bold text-gray-900 mb-3">Chaque signe aime à sa manière</h2>
           <p className="text-lg leading-relaxed text-gray-800">
-            Le <strong>signe solaire</strong> donne une première clé pour comprendre la façon d&apos;aimer d&apos;une personne&nbsp;: son rapport à la <strong>passion</strong>, à l&apos;engagement, à la <strong>séduction</strong> et à la fidélité. Un signe de <strong>Feu</strong> n&apos;aime pas comme un signe d&apos;<strong>Eau</strong>, ni un signe d&apos;<strong>Air</strong> comme un signe de <strong>Terre</strong>. Découvrez le profil amoureux complet de chaque signe du zodiaque, l&apos;homme et la femme, comment le séduire et avec qui il est le plus compatible. Rappelez-vous&nbsp;: le signe solaire éclaire une tendance, jamais un destin, un thème complet demande la date, l&apos;heure et le lieu de naissance.
+            Le <strong>signe solaire</strong> donne une première clé pour comprendre la façon d&apos;aimer d&apos;une personne&nbsp;: son rapport à la <strong>passion</strong>, à l&apos;engagement, à la <strong>séduction</strong> et à la fidélité. Un signe de <strong>Feu</strong> n&apos;aime pas comme un signe d&apos;<strong>Eau</strong>, ni un signe d&apos;<strong>Air</strong> comme un signe de <strong>Terre</strong>. Découvrez le profil amoureux complet de chaque signe du zodiaque, l&apos;homme et la femme, comment le séduire et avec qui il est le plus compatible. Rappelez-vous&nbsp;: le signe solaire éclaire une tendance, jamais un destin, un thème complet demande la date, l&apos;heure et le lieu de naissance. Pour passer de la tendance à votre histoire, la <Link href="/voyance-gratuite-amour/" className="text-purple-700 hover:text-purple-900 underline font-medium">voyance gratuite amour</Link> réunit tirages, oracle et horoscope amoureux, sans engagement.
           </p>
         </section>
 
@@ -89,6 +89,7 @@ export default function AstrologieAmourHub() {
             <Link href="/methodes-voyance/synastrie-amoureuse/" className="block text-fuchsia-700 hover:text-fuchsia-900 font-medium">&rarr; Tester votre compatibilité (synastrie)</Link>
             <Link href="/tarot-amour/" className="block text-fuchsia-700 hover:text-fuchsia-900 font-medium">&rarr; Tarot amour : signification des cartes</Link>
             <Link href="/methodes-voyance/astrologie-amoureuse/" className="block text-fuchsia-700 hover:text-fuchsia-900 font-medium">&rarr; L&apos;astrologie amoureuse : la méthode</Link>
+            <Link href="/voyance-gratuite-amour/" className="block text-fuchsia-700 hover:text-fuchsia-900 font-medium">&rarr; Voyance gratuite amour : tirages et horoscope amoureux</Link>
           </div>
         </div>
 

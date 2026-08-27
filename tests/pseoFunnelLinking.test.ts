@@ -66,3 +66,52 @@ test('tarot cards keep their existing links to the tarot KD-giant + tools (alrea
   assert.match(tpl, /\/methodes-voyance\/tirage-tarot-amour/, 'links to the tirage page');
   assert.match(tpl, /\/voyance-gratuite-amour\/tarot-amour-gratuit/, 'links to the free tarot tool');
 });
+
+// 2026-08-27, DataForSEO (Google FR): /voyance-gratuite-amour/ is the domain's
+// strongest asset — #26 on "voyance gratuite amour" (1 900/mo) and 30 ranking
+// keywords, more than any other URL. On a 2-month-old zero-authority domain the
+// lever is to concentrate internal equity there, so every pSEO network now
+// funnels into it contextually (in prose, not in a sitewide boilerplate block).
+// Anchors are deliberately varied across networks: one repeated exact-match
+// anchor on ~200 templated pages reads as a footprint, four closely related
+// French variants read as editorial.
+test('every pSEO network funnels contextually into the /voyance-gratuite-amour/ hub', () => {
+  const templates: Record<string, RegExp> = {
+    // sign profiles (12 pages)
+    'app/astrologie-amour/[signe]/page.tsx': /voyance gratuite amour<\/Link>/,
+    // compatibility pairs (81 pages)
+    'app/compatibilite-amoureuse/[pair]/page.tsx': /voyance amoureuse gratuite<\/Link>/,
+    // dream interpretations
+    'app/reves-amour/[reve]/page.tsx': /voyance gratuite amour<\/Link>/,
+    // glossary terms (55 pages)
+    'app/glossaire/[terme]/page.tsx': /voyance amoureuse gratuite en ligne<\/Link>/,
+  };
+
+  for (const [relPath, anchor] of Object.entries(templates)) {
+    const tpl = read(relPath);
+    assert.match(tpl, /href="\/voyance-gratuite-amour\/"/, `${relPath} must link to the hub`);
+    assert.match(tpl, anchor, `${relPath} must use its differentiated descriptive French anchor`);
+  }
+
+  // The cluster hubs themselves, which carry the most equity per page.
+  for (const relPath of [
+    'app/astrologie-amour/page.tsx',
+    'app/compatibilite-amoureuse/page.tsx',
+    'app/reves-amour/page.tsx',
+    'app/glossaire/page.tsx',
+    'app/crise-couple/page.tsx',
+  ]) {
+    assert.match(read(relPath), /href="\/voyance-gratuite-amour\/"/, `${relPath} must link to the hub`);
+  }
+});
+
+test('the hub funnel does not disturb the pre-existing per-network funnels', () => {
+  // Regression guard: the hub link was ADDED alongside the category/theme
+  // funnels pinned by the tests above, never in place of one.
+  assert.match(read('app/glossaire/[terme]/page.tsx'), /href=\{funnel\.href\}/, 'glossary category funnel preserved');
+  assert.match(read('app/reves-amour/[reve]/page.tsx'), /href=\{funnel\.href\}/, 'dream theme funnel preserved');
+  assert.ok(
+    read('app/compatibilite-amoureuse/[pair]/page.tsx').includes('`/astrologie-amour/${LIVE_SIGN_SLUG[rec.signA]}/`'),
+    'compatibility -> astro funnel preserved'
+  );
+});

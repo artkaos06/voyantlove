@@ -78,7 +78,7 @@ export default function VoyanceCelibatPage() {
 
       {/* Section 1: Pourquoi encore célibataire */}
       <section id="blocages" className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-8 mb-8 border-2 border-indigo-200">
-        <h2 className="text-3xl font-bold mb-6 text-gray-900"> Pourquoi Êtes-Vous Encore Célibataire selon la Voyance ?</h2>
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Pourquoi Êtes-Vous Encore Célibataire selon la Voyance ?</h2>
         <p className="text-lg font-semibold text-gray-800 mb-4">Les causes profondes du célibat prolongé sont les blocages karmiques, les croyances limitantes héritées du passé et les périodes de préparation spirituelle nécessaires avant une rencontre significative.</p>
         <p className="text-gray-700 mb-6">
           La question que posent presque tous les célibataires en consultation est la même : <em>&laquo; Je suis quelqu&rsquo;un de bien, je fais des efforts, alors pourquoi suis-je encore seul(e) ? &raquo;</em> La voyance apporte des réponses là où la logique ordinaire échoue.
@@ -86,21 +86,21 @@ export default function VoyanceCelibatPage() {
 
         <div className="space-y-5">
           <div className="bg-white rounded-lg p-6 border-l-4 border-blue-500">
-            <h3 className="font-bold text-lg mb-3 text-blue-700"> Les Blocages Karmiques</h3>
+            <h3 className="font-bold text-lg mb-3 text-blue-700">Les Blocages Karmiques</h3>
             <p className="text-gray-700">
               Certains célibats prolongés sont liés à des <strong>dettes karmiques</strong> issues de vies antérieures ou de schémas répétitifs transgénérationnels. Ces blocages se manifestent par une attraction systématique pour des partenaires indisponibles, des ruptures au même stade de la relation, ou une peur irrationnelle de l&rsquo;engagement. La voyance karmique identifie précisément quelle leçon de vie doit être intégrée avant que l&rsquo;amour stable puisse se manifester. Ces contrats karmiques, une fois conscientisés, peuvent être libérés grâce à un travail spirituel ciblé.
             </p>
           </div>
 
           <div className="bg-white rounded-lg p-6 border-l-4 border-indigo-500">
-            <h3 className="font-bold text-lg mb-3 text-indigo-700"> Les Croyances Limitantes</h3>
+            <h3 className="font-bold text-lg mb-3 text-indigo-700">Les Croyances Limitantes</h3>
             <p className="text-gray-700">
               Les croyances comme <em>&laquo; l&rsquo;amour fait toujours souffrir &raquo;</em>, <em>&laquo; je ne suis pas suffisamment bien &raquo;</em> ou <em>&laquo; les hommes/femmes bien sont tous pris &raquo;</em> créent un filtre énergétique qui repousse les partenaires compatibles avant même qu&rsquo;ils n&rsquo;approchent. Ces <strong>croyances limitantes</strong> sont souvent héritées de l&rsquo;enfance, de parents, ou de ruptures douloureuses. Un voyant expérimenté les identifie rapidement dans votre champ énergétique et propose des pratiques concrètes pour les reprogrammer. Une croyance limitante transformée peut changer radicalement votre vie amoureuse en quelques mois.
             </p>
           </div>
 
           <div className="bg-white rounded-lg p-6 border-l-4 border-purple-500">
-            <h3 className="font-bold text-lg mb-3 text-purple-700"> La Période de Préparation</h3>
+            <h3 className="font-bold text-lg mb-3 text-purple-700">La Période de Préparation</h3>
             <p className="text-gray-700">
               Parfois, le célibat n&rsquo;est pas un blocage mais une <strong>période de préparation</strong> nécessaire. L&rsquo;univers vous accorde ce temps pour vous développer, guérir vos blessures passées, et devenir la personne avec qui votre futur partenaire va tomber amoureux. Cette phase, bien que douloureuse à vivre, est souvent précédée d&rsquo;une rencontre significative imminente. La voyance distingue clairement les périodes de blocage à travailler des périodes de maturation à accepter avec confiance et patience.
             </p>
@@ -110,7 +110,7 @@ export default function VoyanceCelibatPage() {
 
       {/* Section 2: Signes que l'amour approche */}
       <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-        <h2 className="text-3xl font-bold mb-6 text-indigo-600"> Les Signes que l&rsquo;Amour Approche</h2>
+        <h2 className="text-3xl font-bold mb-6 text-indigo-600">Les Signes que l&rsquo;Amour Approche</h2>
         <p className="text-lg font-semibold text-gray-800 mb-4">Les signaux précurseurs d&rsquo;une rencontre amoureuse imminente incluent les synchronicités répétées, les rêves prémonitoires et un changement soudain d&rsquo;énergie intérieure inexplicable.</p>
         <p className="text-gray-700 mb-6">
           La voyance et la spiritualité s&rsquo;accordent sur ce point : avant chaque rencontre significative, l&rsquo;univers envoie des signaux annonciateurs. Apprendre à les lire vous permet non seulement de vous préparer, mais aussi d&rsquo;agir au bon moment.
@@ -118,19 +118,19 @@ export default function VoyanceCelibatPage() {
 
         <div className="grid md:grid-cols-2 gap-6 mb-6">
           <div className="bg-indigo-50 rounded-lg p-5">
-            <h3 className="font-bold text-indigo-700 mb-3"> Synchronicités Répétées</h3>
+            <h3 className="font-bold text-indigo-700 mb-3">Synchronicités Répétées</h3>
             <p className="text-gray-700">Vous voyez les mêmes chiffres en boucle (11:11, 222, 444), croisez des situations qui vous rappellent votre désir d&rsquo;amour, entendez la même chanson romantique dans des contextes différents. Ces <strong>synchronicités</strong> sont la signature de l&rsquo;univers vous signalant que votre énergie s&rsquo;aligne sur la fréquence de l&rsquo;amour.</p>
           </div>
           <div className="bg-purple-50 rounded-lg p-5">
-            <h3 className="font-bold text-purple-700 mb-3"> Rêves Prémonitoires</h3>
+            <h3 className="font-bold text-purple-700 mb-3">Rêves Prémonitoires</h3>
             <p className="text-gray-700">Des <strong>rêves prémonitoires</strong> mettant en scène un inconnu dont vous percevez clairement la présence affective, ou des rêves récurrents où vous êtes heureux(se) en couple, sont des signaux puissants. L&rsquo;inconscient capte les informations énergétiques avant la conscience éveillée.</p>
           </div>
           <div className="bg-blue-50 rounded-lg p-5">
-            <h3 className="font-bold text-blue-700 mb-3"> Changement d&rsquo;Énergie</h3>
+            <h3 className="font-bold text-blue-700 mb-3">Changement d&rsquo;Énergie</h3>
             <p className="text-gray-700">Un regain d&rsquo;optimisme inexplicable, une envie soudaine de prendre soin de votre apparence, une ouverture naturelle vers les autres, ces <strong>changements d&rsquo;énergie</strong> signalent que votre corps et votre âme se préparent à accueillir quelqu&rsquo;un de nouveau dans votre vie.</p>
           </div>
           <div className="bg-violet-50 rounded-lg p-5">
-            <h3 className="font-bold text-violet-700 mb-3"> Conversations Qui Reviennent</h3>
+            <h3 className="font-bold text-violet-700 mb-3">Conversations Qui Reviennent</h3>
             <p className="text-gray-700">Des amis vous parlent d&rsquo;une personne à rencontrer, des inconnus vous complimentent davantage, ou des opportunités sociales se présentent de manière inhabituelle. L&rsquo;univers crée les conditions de la rencontre à travers votre environnement humain immédiat.</p>
           </div>
         </div>
@@ -144,7 +144,7 @@ export default function VoyanceCelibatPage() {
 
       {/* Section 3: Tarot pour célibataires */}
       <section id="tarot" className="bg-gradient-to-br from-purple-50 to-violet-50 rounded-xl p-8 mb-8 border-2 border-purple-200">
-        <h2 className="text-3xl font-bold mb-6 text-gray-900"> Quel Tirage Tarot pour les Célibataires ?</h2>
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Quel Tirage Tarot pour les Célibataires ?</h2>
         <p className="text-lg font-semibold text-gray-800 mb-4">Les cartes clés pour les célibataires en quête d&rsquo;amour sont l&rsquo;Impératrice pour l&rsquo;attractivité, le Monde pour l&rsquo;accomplissement à venir, et l&rsquo;As de Coupe pour un nouveau départ sentimental.</p>
         <p className="text-gray-700 mb-6">
           Le tarot offre des éclairages uniques pour les célibataires qui cherchent à comprendre leur situation amoureuse et à anticiper leurs prochaines rencontres. Certaines cartes sont particulièrement significatives dans ce contexte.
@@ -179,7 +179,7 @@ export default function VoyanceCelibatPage() {
 
       {/* Section 4: Attirer l'amour */}
       <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-        <h2 className="text-3xl font-bold mb-6 text-purple-600"> Comment Attirer l&rsquo;Amour : Conseils Spirituels</h2>
+        <h2 className="text-3xl font-bold mb-6 text-purple-600">Comment Attirer l&rsquo;Amour : Conseils Spirituels</h2>
         <p className="text-lg font-semibold text-gray-800 mb-4">Attirer l&rsquo;amour passe par la loi de l&rsquo;attraction, un travail de guérison intérieure profond et l&rsquo;ouverture consciente du cœur aux nouvelles expériences amoureuses.</p>
         <p className="text-gray-700 mb-6">
           La voyance ne se contente pas de prédire : elle guide aussi vers les actions concrètes et les pratiques spirituelles qui accélèrent l&rsquo;arrivée de l&rsquo;amour dans votre vie. Voici les piliers identifiés après 12 ans de consultations spécialisées.
@@ -204,7 +204,7 @@ export default function VoyanceCelibatPage() {
         </div>
 
         <div className="bg-gradient-to-r from-pink-50 to-purple-50 rounded-lg p-6 mt-6 border border-purple-200">
-          <h3 className="font-bold text-purple-800 mb-3"> La Pratique des 21 Jours</h3>
+          <h3 className="font-bold text-purple-800 mb-3">La Pratique des 21 Jours</h3>
           <p className="text-gray-700">
             La voyance recommande souvent une pratique de 21 jours pour reprogrammer votre énergie sentimentale : écrire chaque soir trois qualités que vous apportez dans une relation, visualiser 5 minutes votre futur partenaire avec reconnaissance, et noter les synchronicités du jour. Cette pratique simple mais puissante transforme progressivement votre <strong>vibration amoureuse</strong> et accélère concrètement l&rsquo;arrivée de l&rsquo;amour dans votre vie.
           </p>
@@ -215,7 +215,7 @@ export default function VoyanceCelibatPage() {
 
       {/* Section 5: Timing */}
       <section id="timing" className="bg-gradient-to-br from-indigo-50 to-blue-50 rounded-xl p-8 mb-8 border-2 border-blue-200">
-        <h2 className="text-3xl font-bold mb-6 text-gray-900"> Timing : Quand Rencontrerez-Vous l&rsquo;Amour ?</h2>
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Timing : Quand Rencontrerez-Vous l&rsquo;Amour ?</h2>
         <p className="text-lg font-semibold text-gray-800 mb-4">Les périodes les plus favorables aux rencontres amoureuses correspondent aux transits de Vénus et Jupiter, aux années personnelles 2, 6 et 9, et aux saisons astrologiques du Taureau et de la Balance.</p>
         <p className="text-gray-700 mb-6">
           La question du timing est celle qui revient le plus souvent en consultation de voyance célibat. L&rsquo;astrologie et la numérologie offrent des repères précieux pour anticiper les périodes favorables.
@@ -223,7 +223,7 @@ export default function VoyanceCelibatPage() {
 
         <div className="grid md:grid-cols-2 gap-6">
           <div className="bg-white rounded-lg p-6">
-            <h3 className="font-bold text-blue-700 text-lg mb-4"> Périodes Favorables par Signe</h3>
+            <h3 className="font-bold text-blue-700 text-lg mb-4">Périodes Favorables par Signe</h3>
             <div className="space-y-3 text-gray-700">
               <div className="flex justify-between items-center border-b pb-2">
                 <span className="font-medium">Bélier, Lion, Sagittaire</span>
@@ -245,7 +245,7 @@ export default function VoyanceCelibatPage() {
           </div>
 
           <div className="bg-white rounded-lg p-6">
-            <h3 className="font-bold text-purple-700 text-lg mb-4"> Planètes de l&rsquo;Amour</h3>
+            <h3 className="font-bold text-purple-700 text-lg mb-4">Planètes de l&rsquo;Amour</h3>
             <div className="space-y-4 text-gray-700">
               <div>
                 <p className="font-semibold text-pink-600">Vénus</p>

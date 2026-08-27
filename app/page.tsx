@@ -127,6 +127,8 @@ export default function HomePage() {
         <div className="mx-auto max-w-6xl space-y-8">
           <VoyantRail
             title="Voyants disponibles maintenant"
+            fallbackTitle="Nos voyants amour"
+            onlineOnly
             subtitle="Tarif à la minute affiché sur chaque fiche."
             limit={16}
             source="homepage-rail-online"

@@ -109,6 +109,7 @@ export default function GlossaireHubPage() {
             <Link href="/reves-amour/" className="block text-indigo-600 hover:text-indigo-800 font-medium">&rarr; Interprétation des rêves amoureux</Link>
             <Link href="/compatibilite-amoureuse/" className="block text-indigo-600 hover:text-indigo-800 font-medium">&rarr; Compatibilité amoureuse par signes</Link>
             <Link href="/voyance-amour/" className="block text-indigo-600 hover:text-indigo-800 font-medium">&rarr; Voyance amour : tout savoir</Link>
+            <Link href="/voyance-gratuite-amour/" className="block text-indigo-600 hover:text-indigo-800 font-medium">&rarr; Voyance gratuite amour : tirages sans engagement</Link>
           </div>
         </div>
 
@@ -125,7 +126,7 @@ export default function GlossaireHubPage() {
             </div>
             <div>
               <h3 className="text-lg font-bold text-gray-900 mb-2">Le glossaire remplace-t-il une consultation de voyance ?</h3>
-              <p className="text-gray-700 leading-relaxed">Non. Le glossaire vous donne les clés de vocabulaire pour mieux comprendre les concepts de voyance et de psychologie amoureuse, mais il ne remplace pas l&apos;éclairage personnalisé d&apos;un voyant sur votre situation précise. Chaque fiche renvoie vers nos guides pratiques et vers une consultation pour approfondir votre cas particulier.</p>
+              <p className="text-gray-700 leading-relaxed">Non. Le glossaire vous donne les clés de vocabulaire pour mieux comprendre les concepts de voyance et de psychologie amoureuse, mais il ne remplace pas l&apos;éclairage personnalisé d&apos;un voyant sur votre situation précise. Chaque fiche renvoie vers nos guides pratiques et vers une consultation pour approfondir votre cas particulier. Pour tester sans engagement, nos tirages de <Link href="/voyance-gratuite-amour/" className="text-violet-700 hover:text-violet-900 underline font-medium">voyance amoureuse gratuite</Link> mettent ce vocabulaire en pratique sur votre propre situation.</p>
             </div>
           </div>
         </section>

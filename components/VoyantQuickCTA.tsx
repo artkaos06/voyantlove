@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { Voyant, getAffiliateLink } from '@/lib/voyants';
+import { Voyant, formatPrice, getAffiliateLink, getOnlineVoyants } from '@/lib/voyants';
 import { trackAffiliateClick } from '@/lib/glyphex';
 import { useVoyants } from '@/lib/useVoyants';
 
@@ -15,8 +15,15 @@ export default function VoyantQuickCTA({ topic, source = 'quick-cta' }: VoyantQu
 
   if (loading || liveVoyants.length === 0) return null;
 
-  // Pick the first online voyant from the live feed (API already returns only online ones)
-  const selectedVoyant = liveVoyants[0];
+  // The feed is the FULL roster, not the online subset — it carries ETAT ('1'
+  // online, '0' offline) precisely because both are in it. This block claims
+  // availability in its heading AND in the sentence under it, so it has to
+  // pick an online voyant when there is one, and stop claiming it when there
+  // is not.
+  const online = getOnlineVoyants(liveVoyants);
+  const selectedVoyant = online[0] ?? liveVoyants[0];
+  const isOnline = selectedVoyant.ETAT === '1';
+  const displayName = selectedVoyant.VOYANT.charAt(0).toUpperCase() + selectedVoyant.VOYANT.slice(1);
 
   const affiliateLink = getAffiliateLink(selectedVoyant.ID, `${source}-${topic}`);
 
@@ -76,28 +83,29 @@ export default function VoyantQuickCTA({ topic, source = 'quick-cta' }: VoyantQu
     <div className={`bg-gradient-to-r ${colors.bg} rounded-xl p-6 mb-8 border-l-4 ${colors.border} shadow-md`}>
       <div className="flex flex-col md:flex-row items-start md:items-center gap-6">
         <div className="flex items-start gap-4 flex-1">
-          <div className="text-5xl flex-shrink-0"></div>
           <div>
             <h3 className="font-bold text-xl text-gray-900 mb-2">
-              Voyant disponible maintenant
+              {isOnline ? 'Voyant disponible maintenant' : 'Nos voyants amour'}
             </h3>
             <p className="text-gray-700 mb-3">
-              {selectedVoyant.VOYANT.charAt(0).toUpperCase() + selectedVoyant.VOYANT.slice(1)} est en ligne et peut vous guider immédiatement
+              {isOnline
+                ? `${displayName} est en ligne et peut vous guider immédiatement`
+                : `${displayName} vous reçoit sur rendez-vous pour faire le point sur votre situation`}
             </p>
             <div className="flex flex-wrap gap-2 text-sm text-gray-600">
               {selectedVoyant.TEL === '1' && (
                 <span className="bg-white px-3 py-1 rounded-full">
-                  {parseFloat(selectedVoyant.T_TEL).toFixed(2)}€/min
+                  {formatPrice(selectedVoyant.T_TEL)}/min
                 </span>
               )}
               {selectedVoyant.CHAT === '1' && (
                 <span className="bg-white px-3 py-1 rounded-full">
-                  {parseFloat(selectedVoyant.T_CHAT).toFixed(2)}€/min
+                  {formatPrice(selectedVoyant.T_CHAT)}/min
                 </span>
               )}
               {selectedVoyant.MAIL === '1' && (
                 <span className="bg-white px-3 py-1 rounded-full">
-                  {parseFloat(selectedVoyant.MAIL_S).toFixed(0)}€
+                  {formatPrice(selectedVoyant.MAIL_S)}
                 </span>
               )}
             </div>
@@ -112,7 +120,7 @@ export default function VoyantQuickCTA({ topic, source = 'quick-cta' }: VoyantQu
             onClick={handleAffiliateClick}
             className={`block w-full md:w-auto text-center bg-gradient-to-r ${colors.button} text-white font-semibold px-8 py-4 rounded-lg shadow-md hover:shadow-xl transition-all`}
           >
-            Consulter maintenant
+            {isOnline ? 'Consulter maintenant' : 'Prendre rendez-vous'}
           </a>
           <p className="text-xs text-gray-600 text-center mt-2">
             ✓ {selectedVoyant.EVAL} avis clients • ✓ Paiement sécurisé

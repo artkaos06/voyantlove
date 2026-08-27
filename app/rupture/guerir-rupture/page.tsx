@@ -83,7 +83,7 @@ export default function GuerirRupturePage() {
 
         {/* Section: Les 5 &eacute;tapes du deuil amoureux */}
         <section id="etapes" className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6"> Les 5 &Eacute;tapes du Deuil Amoureux</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Les 5 &Eacute;tapes du Deuil Amoureux</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Les cinq &eacute;tapes du deuil amoureux sont le choc et le d&eacute;ni, la col&egrave;re et la r&eacute;volte, la n&eacute;gociation, la tristesse profonde et enfin l&apos;acceptation. Le tarot identifie pr&eacute;cis&eacute;ment o&ugrave; vous en &ecirc;tes dans ce processus.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Le <strong>deuil amoureux</strong> suit un sch&eacute;ma universel en cinq &eacute;tapes, inspir&eacute; du mod&egrave;le de K&uuml;bler-Ross. Chaque phase est n&eacute;cessaire et doit &ecirc;tre travers&eacute;e pleinement pour que la <strong>gu&eacute;rison</strong> soit compl&egrave;te. Le <strong>tarot</strong> identifie avec pr&eacute;cision l&apos;&eacute;tape o&ugrave; vous vous trouvez et les &eacute;nergies dominantes de votre processus de <strong>reconstruction</strong>.
@@ -134,7 +134,7 @@ export default function GuerirRupturePage() {
 
         {/* Section: Combien de temps pour gu&eacute;rir */}
         <section className="bg-gradient-to-br from-teal-50 to-emerald-50 rounded-xl p-8 mb-8 border-2 border-teal-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6"> Combien de Temps pour Gu&eacute;rir d&apos;une Rupture ?</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Combien de Temps pour Gu&eacute;rir d&apos;une Rupture ?</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le temps de gu&eacute;rison varie de 1 &agrave; 3 mois pour une relation courte, 3 &agrave; 9 mois pour une relation de 1 &agrave; 3 ans, 6 &agrave; 18 mois pour plus de 5 ans, et 12 &agrave; 24 mois pour un mariage ou une vie commune longue.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             La dur&eacute;e de <strong>gu&eacute;rison apr&egrave;s une rupture</strong> est l&apos;une des questions les plus pos&eacute;es en <strong>consultation de voyance</strong>. La r&eacute;ponse d&eacute;pend de nombreux facteurs personnels, mais des tendances g&eacute;n&eacute;rales se d&eacute;gagent. Le <strong>tarot</strong> permet de situer pr&eacute;cis&eacute;ment o&ugrave; vous en &ecirc;tes et d&apos;estimer la dur&eacute;e restante de votre <strong>processus de cicatrisation</strong>.
@@ -167,7 +167,7 @@ export default function GuerirRupturePage() {
 
         {/* Section: Signes de gu&eacute;rison */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6"> Les Signes que Vous Gu&eacute;rissez</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Les Signes que Vous Gu&eacute;rissez</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Les signes que vous gu&eacute;rissez d&apos;une rupture : vous pensez &agrave; votre ex sans douleur vive, vous retrouvez le plaisir de la solitude, vous vous projetez dans l&apos;avenir et vous ressentez de la gratitude pour les le&ccedil;ons apprises.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             La <strong>gu&eacute;rison apr&egrave;s une rupture</strong> est un processus graduel qui se manifeste par des signes concrets. Les reconna&icirc;tre vous encourage &agrave; poursuivre votre chemin et confirme que votre <strong>reconstruction</strong> avance dans la bonne direction. Le <strong>tarot de gu&eacute;rison</strong> valide ces signes et r&eacute;v&egrave;le les progr&egrave;s invisibles &agrave; vos propres yeux.
@@ -200,7 +200,7 @@ export default function GuerirRupturePage() {
 
         {/* Section: Tarot et gu&eacute;rison */}
         <section className="bg-gradient-to-br from-emerald-50 to-teal-50 rounded-xl p-8 mb-8 border-2 border-emerald-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6"> Le Tarot au Service de Votre Gu&eacute;rison</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Le Tarot au Service de Votre Gu&eacute;rison</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le tarot accompagne la gu&eacute;rison post-rupture avec un tirage sp&eacute;cial en 5 positions, des cartes de gu&eacute;rison (L&apos;&Eacute;toile, Temp&eacute;rance, Le Soleil) et des cartes d&apos;alerte qui signalent les blocages &eacute;motionnels persistants.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Le <strong>tarot de gu&eacute;rison</strong> est un outil puissant d&apos;accompagnement apr&egrave;s une <strong>rupture amoureuse</strong>. Il ne se contente pas de pr&eacute;dire : il &eacute;claire, console et guide vers la <strong>reconstruction</strong>. Certains tirages et certaines cartes sont sp&eacute;cifiquement d&eacute;di&eacute;s au processus de <strong>cicatrisation amoureuse</strong>.
@@ -240,7 +240,7 @@ export default function GuerirRupturePage() {
 
         {/* Section: Se Reconstruire */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6"> Se Reconstruire Apr&egrave;s une Rupture</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Se Reconstruire Apr&egrave;s une Rupture</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Se reconstruire apr&egrave;s une rupture passe par cinq &eacute;tapes : red&eacute;couvrir qui vous &ecirc;tes, tirer les le&ccedil;ons sans culpabilit&eacute;, s&apos;ouvrir &agrave; un nouvel amour, cultiver l&apos;amour de soi et &eacute;viter les relations rebond.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             La <strong>reconstruction apr&egrave;s une rupture</strong> n&apos;est pas un retour &agrave; l&apos;&eacute;tat ant&eacute;rieur : c&apos;est la cr&eacute;ation d&apos;une version plus forte et plus &eacute;clair&eacute;e de vous-m&ecirc;me. Le <strong>tarot</strong> guide cette renaissance en r&eacute;v&eacute;lant les potentiels insoup&ccedil;onn&eacute;s qui &eacute;mergent de l&apos;&eacute;preuve.

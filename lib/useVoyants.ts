@@ -35,16 +35,32 @@ async function fetchVoyants(): Promise<Voyant[]> {
   return fetchPromise;
 }
 
-export function useVoyants(): { voyants: Voyant[]; loading: boolean } {
+/**
+ * Live voyant feed.
+ *
+ * `enabled` exists because hooks cannot be called conditionally: a component
+ * that only sometimes needs the feed (FloatingConsultCTA is hidden on paid
+ * landers, legal pages and the English brand) must still call the hook, and
+ * without this flag it would pull the full ~36 KB roster on every one of those
+ * pages for nothing. While disabled the hook stays in its loading state, which
+ * every consumer already treats as "render nothing".
+ */
+export function useVoyants(enabled: boolean = true): { voyants: Voyant[]; loading: boolean } {
   const [voyants, setVoyants] = useState<Voyant[]>(cachedVoyants || []);
   const [loading, setLoading] = useState(!cachedVoyants);
 
   useEffect(() => {
+    if (!enabled) return;
+    let cancelled = false;
     fetchVoyants().then((data) => {
+      if (cancelled) return;
       setVoyants(data);
       setLoading(false);
     });
-  }, []);
+    return () => {
+      cancelled = true;
+    };
+  }, [enabled]);
 
   return { voyants, loading };
 }

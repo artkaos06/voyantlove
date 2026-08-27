@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { getAffiliateLink } from '@/lib/voyants';
+import { getAffiliateLink, getOnlineVoyants } from '@/lib/voyants';
 import { trackAffiliateClick } from '@/lib/glyphex';
 import { useVoyants } from '@/lib/useVoyants';
 
@@ -22,7 +22,11 @@ export default function VoyantFinalCTA({
 
   if (loading || liveVoyants.length === 0) return null;
 
-  const selectedVoyant = liveVoyants[0];
+  // Same trap as VoyantQuickCTA: the feed is the whole roster, ETAT '0'
+  // included, so "n voyants en ligne" below has to count the online ones and
+  // the promoted voyant has to be one of them when there is one.
+  const onlineVoyants = getOnlineVoyants(liveVoyants);
+  const selectedVoyant = onlineVoyants[0] ?? liveVoyants[0];
   const affiliateLink = getAffiliateLink(selectedVoyant.ID, `${source}-${topic}`);
 
   const handleAffiliateClick = () => {
@@ -84,17 +88,14 @@ export default function VoyantFinalCTA({
 
       <div className="grid md:grid-cols-3 gap-4 max-w-3xl mx-auto mb-8 text-sm">
         <div className="bg-white/10 backdrop-blur rounded-lg p-4">
-          <div className="text-3xl mb-2"></div>
           <div className="font-semibold">Réponse Immédiate</div>
           <div className="opacity-90 text-xs mt-1">Voyants disponibles maintenant</div>
         </div>
         <div className="bg-white/10 backdrop-blur rounded-lg p-4">
-          <div className="text-3xl mb-2"></div>
           <div className="font-semibold">Guidance Précise</div>
           <div className="opacity-90 text-xs mt-1">Adaptée à votre situation</div>
         </div>
         <div className="bg-white/10 backdrop-blur rounded-lg p-4">
-          <div className="text-3xl mb-2"></div>
           <div className="font-semibold">Sans Jugement</div>
           <div className="opacity-90 text-xs mt-1">Écoute bienveillante garantie</div>
         </div>
@@ -110,7 +111,7 @@ export default function VoyantFinalCTA({
         Consulter un Voyant Maintenant
       </a>
       <p className="mt-4 text-sm opacity-90">
-        ✓ {liveVoyants.length} voyants en ligne • ✓ Paiement sécurisé • ✓ Confidentialité garantie
+        {onlineVoyants.length > 0 && <>✓ {onlineVoyants.length} voyants en ligne • </>}✓ Paiement sécurisé • ✓ Confidentialité garantie
       </p>
     </div>
   );

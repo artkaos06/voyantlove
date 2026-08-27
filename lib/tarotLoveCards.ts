@@ -17,7 +17,6 @@ export interface CardFaq {
 export interface TarotLoveCard {
   slug: string;
   name: string;
-  emoji: string;
   arcane: string;
   /** 'Oui' | 'Non' | 'Nuancé', the oui/non love verdict */
   ouiNon: string;
@@ -57,7 +56,6 @@ export const TAROT_LOVE_CARDS: TarotLoveCard[] = [
   {
     slug: 'l-amoureux',
     name: 'L’Amoureux',
-    emoji: '',
     arcane: 'Arcane majeur VI',
     ouiNon: 'Oui',
     answerCapsule:
@@ -95,7 +93,6 @@ export const TAROT_LOVE_CARDS: TarotLoveCard[] = [
   {
     slug: 'la-lune',
     name: 'La Lune',
-    emoji: '',
     arcane: 'Arcane majeur XVIII',
     ouiNon: 'Nuancé',
     answerCapsule:
@@ -133,7 +130,6 @@ export const TAROT_LOVE_CARDS: TarotLoveCard[] = [
   {
     slug: 'le-soleil',
     name: 'Le Soleil',
-    emoji: '',
     arcane: 'Arcane majeur XIX',
     ouiNon: 'Oui',
     answerCapsule:
@@ -171,7 +167,6 @@ export const TAROT_LOVE_CARDS: TarotLoveCard[] = [
   {
     slug: 'l-etoile',
     name: 'L’Étoile',
-    emoji: '',
     arcane: 'Arcane majeur XVII',
     ouiNon: 'Oui',
     answerCapsule:
@@ -209,11 +204,10 @@ export const TAROT_LOVE_CARDS: TarotLoveCard[] = [
   {
     slug: 'le-diable',
     name: 'Le Diable',
-    emoji: '',
     arcane: 'Arcane majeur XV',
-    ouiNon: 'Nuancé',
+    ouiNon: 'Non',
     answerCapsule:
-      'Le Diable est l’une des cartes les plus intenses et ambivalentes du tarot amour. Quinzième arcane majeur du Tarot de Marseille, il incarne la passion charnelle, le désir puissant, mais aussi l’attachement toxique et la dépendance. Tiré en amour, Le Diable ne donne pas un oui ni un non simple : il révèle une attraction magnétique qui peut être délicieuse ou aliénante. À l’endroit, il signale une passion physique intense, une emprise ou une relation où le désir domine la raison ; renversé, il annonce une libération, la fin d’une dépendance affective. Pour un célibataire, il met en garde contre une attirance purement charnelle ; pour un couple, il interroge l’équilibre entre passion et liberté. Le Diable invite à distinguer l’amour véritable de l’obsession. Une consultation de voyance amoureuse peut vous aider à y voir clair dans une relation intense.',
+      'Le Diable est l’une des cartes les plus intenses et ambivalentes du tarot amour. Quinzième arcane majeur du Tarot de Marseille, il incarne la passion charnelle, le désir puissant, mais aussi l’attachement toxique et la dépendance. Tiré en amour, Le Diable répond non dans les conditions actuelles : il révèle une attraction magnétique qui enchaîne plus qu’elle ne construit. À l’endroit, il signale une passion physique intense, une emprise ou une relation où le désir domine la raison ; renversé, il annonce une libération, la fin d’une dépendance affective. Pour un célibataire, il met en garde contre une attirance purement charnelle ; pour un couple, il interroge l’équilibre entre passion et liberté. Le Diable invite à distinguer l’amour véritable de l’obsession. Une consultation de voyance amoureuse peut vous aider à y voir clair dans une relation intense.',
     signification:
       'En amour, Le Diable gouverne le désir, la sensualité et les liens puissants, pour le meilleur et pour le pire. Il représente l’attraction magnétique, la passion charnelle, mais aussi tout ce qui enchaîne : la dépendance affective, la jalousie, l’emprise, l’obsession. Cette carte n’est pas mauvaise en soi ; elle éclaire l’intensité brute d’une relation et pose une question essentielle : cette passion vous élève-t-elle ou vous enchaîne-t-elle ? Le quinzième arcane majeur apparaît souvent quand le désir prend le pas sur la raison, ou quand un lien devient difficile à rompre malgré la souffrance. Il invite à la lucidité sur ce qui vous attache réellement.',
     endroit:
@@ -247,7 +241,6 @@ export const TAROT_LOVE_CARDS: TarotLoveCard[] = [
   {
     slug: 'la-tour',
     name: 'La Tour',
-    emoji: '',
     arcane: 'Arcane majeur XVI',
     ouiNon: 'Non',
     answerCapsule:
@@ -285,11 +278,10 @@ export const TAROT_LOVE_CARDS: TarotLoveCard[] = [
   {
     slug: 'la-roue-de-fortune',
     name: 'La Roue de Fortune',
-    emoji: '',
     arcane: 'Arcane majeur X',
-    ouiNon: 'Oui',
+    ouiNon: 'Nuancé',
     answerCapsule:
-      'La Roue de Fortune est la carte du destin et du changement dans le tarot amour. Dixième arcane majeur du Tarot de Marseille, elle représente les cycles de la vie, les tournants inattendus et le mouvement du sort. Tirée en amour, La Roue de Fortune est plutôt un oui porteur d’évolution : elle annonce un changement de situation, une rencontre providentielle ou un tournant décisif dans votre vie sentimentale. À l’endroit, elle apporte chance et opportunités, un cycle qui s’améliore ; renversée, elle signale un retard, une malchance passagère ou une résistance au changement. Pour un célibataire, elle annonce une rencontre due au hasard du destin ; pour un couple, une nouvelle phase. La Roue tourne toujours : rien n’est figé en amour. Une consultation de voyance amoureuse peut préciser le tournant que cette carte annonce pour vous.',
+      'La Roue de Fortune est la carte du destin et du changement dans le tarot amour. Dixième arcane majeur du Tarot de Marseille, elle représente les cycles de la vie, les tournants inattendus et le mouvement du sort. Tirée en amour, La Roue de Fortune donne une réponse nuancée : elle annonce un changement de situation, une rencontre providentielle ou un tournant décisif dans votre vie sentimentale, sans dire encore dans quel sens la roue s’arrêtera. À l’endroit, elle apporte chance et opportunités, un cycle qui s’améliore ; renversée, elle signale un retard, une malchance passagère ou une résistance au changement. Pour un célibataire, elle annonce une rencontre due au hasard du destin ; pour un couple, une nouvelle phase. La Roue tourne toujours : rien n’est figé en amour. Une consultation de voyance amoureuse peut préciser le tournant que cette carte annonce pour vous.',
     signification:
       'En amour, La Roue de Fortune symbolise le mouvement, le destin et les cycles inévitables de la vie sentimentale. Elle rappelle que rien n’est figé : les situations évoluent, la chance tourne, et un changement se prépare souvent au moment où on l’attend le moins. Cette carte est généralement positive car elle annonce une amélioration, une opportunité ou un tournant favorable. Le dixième arcane majeur parle aussi de synchronicités, de rencontres providentielles et de ce timing mystérieux qui met les bonnes personnes sur notre route. Quand La Roue apparaît, elle invite à accueillir le changement et à faire confiance au mouvement de la vie amoureuse.',
     endroit:
@@ -312,7 +304,7 @@ export const TAROT_LOVE_CARDS: TarotLoveCard[] = [
       },
       {
         q: 'La Roue de Fortune est-elle un oui en amour ?',
-        a: 'La Roue de Fortune est plutôt un oui en amour, porteur d’évolution favorable. À l’endroit, elle annonce un changement positif, de la chance et de belles opportunités sentimentales : un cycle difficile se termine et un nouveau chapitre s’ouvre. Renversée, la réponse se nuance en « pas encore » : un retard ou une résistance au changement freine le mouvement. Dans l’ensemble, c’est une carte de dynamique positive qui invite à accueillir le tournant qui vient.',
+        a: 'La Roue de Fortune ne donne pas un oui ferme : sa réponse reste nuancée, car tout dépend du timing et de vos prochains choix. À l’endroit, elle annonce un changement plutôt favorable, de la chance et de belles opportunités sentimentales : un cycle difficile se termine et un nouveau chapitre s’ouvre. Renversée, la réponse devient « pas encore » : un retard ou une résistance au changement freine le mouvement. Dans tous les cas, la roue tourne encore et l’issue reste ouverte.',
       },
       {
         q: 'Que veut dire La Roue de Fortune renversée en amour ?',
@@ -323,11 +315,10 @@ export const TAROT_LOVE_CARDS: TarotLoveCard[] = [
   {
     slug: 'la-mort',
     name: 'La Mort',
-    emoji: '',
     arcane: 'Arcane majeur XIII',
-    ouiNon: 'Nuancé',
+    ouiNon: 'Non',
     answerCapsule:
-      'La Mort est la carte la plus mal comprise du tarot amour. Treizième arcane majeur du Tarot de Marseille, elle n’annonce presque jamais une mort réelle, mais une transformation profonde, la fin d’un cycle et un renouveau. Tirée en amour, La Mort n’est ni un oui ni un non simple : elle signale qu’une page se tourne pour qu’une nouvelle puisse s’écrire. À l’endroit, elle annonce la fin nécessaire d’une situation, une métamorphose du couple ou d’un célibat ; renversée, elle révèle une résistance au changement, un refus de tourner la page. Pour un célibataire, elle balaie l’ancien pour préparer le neuf ; pour un couple, elle transforme le lien en profondeur. La Mort libère de ce qui est terminé. Une consultation de voyance amoureuse peut éclairer la renaissance que cette carte prépare pour vous.',
+      'La Mort est la carte la plus mal comprise du tarot amour. Treizième arcane majeur du Tarot de Marseille, elle n’annonce presque jamais une mort réelle, mais une transformation profonde, la fin d’un cycle et un renouveau. Tirée en amour, La Mort répond non dans les conditions actuelles : elle signale qu’une page se tourne pour qu’une nouvelle puisse s’écrire. À l’endroit, elle annonce la fin nécessaire d’une situation, une métamorphose du couple ou d’un célibat ; renversée, elle révèle une résistance au changement, un refus de tourner la page. Pour un célibataire, elle balaie l’ancien pour préparer le neuf ; pour un couple, elle transforme le lien en profondeur. La Mort libère de ce qui est terminé. Une consultation de voyance amoureuse peut éclairer la renaissance que cette carte prépare pour vous.',
     signification:
       'En amour, La Mort symbolise la transformation radicale et la fin d’un cycle. Contrairement à sa réputation effrayante, elle n’annonce quasiment jamais un décès : elle parle de mutation, de renaissance, de ce qui doit finir pour laisser place au neuf. Une relation qui se termine, un schéma amoureux que l’on abandonne, une version de soi que l’on quitte : le treizième arcane majeur fait table rase pour permettre un renouveau. C’est une carte de passage, souvent inconfortable car elle impose de lâcher prise, mais profondément régénératrice. Quand La Mort apparaît, elle annonce que quelque chose se termine pour qu’une histoire plus vraie puisse commencer.',
     endroit:
@@ -361,7 +352,6 @@ export const TAROT_LOVE_CARDS: TarotLoveCard[] = [
   {
     slug: 'le-bateleur',
     name: 'Le Bateleur',
-    emoji: '',
     arcane: 'Arcane majeur I',
     ouiNon: 'Oui',
     answerCapsule:
@@ -400,7 +390,6 @@ export const TAROT_LOVE_CARDS: TarotLoveCard[] = [
   {
     slug: 'l-imperatrice',
     name: 'L’Impératrice',
-    emoji: '',
     arcane: 'Arcane majeur III',
     ouiNon: 'Oui',
     answerCapsule:
@@ -439,7 +428,6 @@ export const TAROT_LOVE_CARDS: TarotLoveCard[] = [
   {
     slug: 'l-empereur',
     name: 'L’Empereur',
-    emoji: '',
     arcane: 'Arcane majeur IV',
     ouiNon: 'Oui',
     answerCapsule:
@@ -478,11 +466,10 @@ export const TAROT_LOVE_CARDS: TarotLoveCard[] = [
   {
     slug: 'le-pape',
     name: 'Le Pape',
-    emoji: '',
     arcane: 'Arcane majeur V',
-    ouiNon: 'Oui',
+    ouiNon: 'Nuancé',
     answerCapsule:
-      'Le Pape est la carte du mariage et de l’union sacrée dans le tarot amour. Cinquième arcane majeur du Tarot de Marseille, il incarne l’engagement officiel, la tradition, la bénédiction et les valeurs partagées. Tiré en amour, Le Pape est un oui empreint de sérieux : il annonce un mariage, une union durable, ou une relation fondée sur des valeurs et un respect profonds. À l’endroit, il représente l’engagement sincère, la fidélité et l’approbation de l’entourage ; renversé, il signale un conformisme pesant, une union par convention ou un décalage de valeurs. Pour un célibataire, il annonce une relation sérieuse et officielle ; pour un couple, une étape d’engagement. Le Pape invite à unir les cœurs sur des bases solides et partagées. Une consultation de voyance amoureuse peut préciser l’union qu’il annonce.',
+      'Le Pape est la carte du mariage et de l’union sacrée dans le tarot amour. Cinquième arcane majeur du Tarot de Marseille, il incarne l’engagement officiel, la tradition, la bénédiction et les valeurs partagées. Tiré en amour, Le Pape donne une réponse conditionnelle : il annonce un mariage, une union durable ou une relation fondée sur des valeurs profondes, à condition que les deux personnes partagent réellement les mêmes principes. À l’endroit, il représente l’engagement sincère, la fidélité et l’approbation de l’entourage ; renversé, il signale un conformisme pesant, une union par convention ou un décalage de valeurs. Pour un célibataire, il annonce une relation sérieuse et officielle ; pour un couple, une étape d’engagement. Le Pape invite à unir les cœurs sur des bases solides et partagées. Une consultation de voyance amoureuse peut préciser l’union qu’il annonce.',
     signification:
       'En amour, Le Pape symbolise l’engagement officiel, l’union sacrée et les valeurs partagées. Il représente le mariage, la relation reconnue et bénie, celle qui s’inscrit dans la durée et le respect mutuel. Le cinquième arcane majeur incarne aussi la fidélité, la spiritualité du lien et l’importance de partager les mêmes principes. Quand Le Pape apparaît dans un tirage sentimental, il annonce souvent une union sérieuse ou un engagement qui se formalise. C’est une carte de couple traditionnel et solide, fondé sur la confiance, le respect et des valeurs communes plutôt que sur la seule passion.',
     endroit:
@@ -506,7 +493,7 @@ export const TAROT_LOVE_CARDS: TarotLoveCard[] = [
       },
       {
         q: 'Le Pape est-il un oui en amour ?',
-        a: 'Le Pape est un oui sérieux en amour, tourné vers l’engagement durable. À l’endroit, il répond favorablement aux questions sur le mariage, l’union officielle et la solidité du couple : le lien est fondé pour durer. Renversé, la réponse se nuance : conformisme, union par convention ou décalage de valeurs viennent brouiller la sincérité. Dans l’ensemble, c’est une carte positive pour un couple qui s’engage sur des bases solides.',
+        a: 'Le Pape donne une réponse nuancée en amour : un oui conditionné à un engagement sincère et à des valeurs réellement partagées. À l’endroit, il est favorable aux questions sur le mariage, l’union officielle et la solidité du couple, si le lien repose sur des principes communs et non sur les apparences. Renversé, la réponse penche vers le non : conformisme, union par convention ou décalage de valeurs brouillent la sincérité. Tout dépend donc de l’accord profond entre les deux personnes.',
       },
       {
         q: 'Que veut dire Le Pape renversé en amour ?',
@@ -517,7 +504,6 @@ export const TAROT_LOVE_CARDS: TarotLoveCard[] = [
   {
     slug: 'le-chariot',
     name: 'Le Chariot',
-    emoji: '',
     arcane: 'Arcane majeur VII',
     ouiNon: 'Oui',
     answerCapsule:
@@ -556,7 +542,6 @@ export const TAROT_LOVE_CARDS: TarotLoveCard[] = [
   {
     slug: 'la-justice',
     name: 'La Justice',
-    emoji: '',
     arcane: 'Arcane majeur VIII',
     ouiNon: 'Nuancé',
     answerCapsule:
@@ -595,11 +580,10 @@ export const TAROT_LOVE_CARDS: TarotLoveCard[] = [
   {
     slug: 'le-pendu',
     name: 'Le Pendu',
-    emoji: '',
     arcane: 'Arcane majeur XII',
-    ouiNon: 'Nuancé',
+    ouiNon: 'Non',
     answerCapsule:
-      'Le Pendu est la carte de l’attente et du lâcher-prise dans le tarot amour. Douzième arcane majeur du Tarot de Marseille, il incarne la suspension, le sacrifice, le changement de perspective et la patience imposée. Tiré en amour, Le Pendu n’est ni un oui ni un non : il annonce une situation en suspens, une relation qui n’avance pas encore, un temps d’attente nécessaire. À l’endroit, il invite au lâcher-prise et à voir les choses autrement pour débloquer la situation ; renversé, il signale une stagnation stérile, un sacrifice inutile ou un refus de lâcher prise. Pour un célibataire, il appelle une pause avant de rencontrer ; pour un couple, un temps de recul salutaire. Le Pendu rappelle que forcer ne sert à rien : parfois, il faut attendre et changer de regard. Une consultation de voyance amoureuse peut éclairer cette pause.',
+      'Le Pendu est la carte de l’attente et du lâcher-prise dans le tarot amour. Douzième arcane majeur du Tarot de Marseille, il incarne la suspension, le sacrifice, le changement de perspective et la patience imposée. Tiré en amour, Le Pendu répond non pour le moment : il annonce une situation en suspens, une relation qui n’avance pas encore, un temps d’attente nécessaire. À l’endroit, il invite au lâcher-prise et à voir les choses autrement pour débloquer la situation ; renversé, il signale une stagnation stérile, un sacrifice inutile ou un refus de lâcher prise. Pour un célibataire, il appelle une pause avant de rencontrer ; pour un couple, un temps de recul salutaire. Le Pendu rappelle que forcer ne sert à rien : parfois, il faut attendre et changer de regard. Une consultation de voyance amoureuse peut éclairer cette pause.',
     signification:
       'En amour, Le Pendu symbolise la suspension, l’attente et le lâcher-prise. Il représente ces moments où la situation sentimentale est comme figée, où rien n’avance malgré les efforts, et où la seule issue est d’accepter la pause et de changer de point de vue. Le douzième arcane majeur parle aussi de sacrifice consenti et de la nécessité de renoncer à vouloir tout contrôler. Quand Le Pendu apparaît dans un tirage amoureux, il invite à la patience et à voir la situation sous un autre angle : c’est souvent en lâchant prise, et non en forçant, que le blocage finit par se dénouer.',
     endroit:
@@ -623,7 +607,7 @@ export const TAROT_LOVE_CARDS: TarotLoveCard[] = [
       },
       {
         q: 'Le Pendu est-il un oui ou un non en amour ?',
-        a: 'Le Pendu n’est ni un oui ni un non : c’est une carte de suspens qui répond « pas maintenant ». Elle indique que la situation est en attente et qu’il faut lâcher prise plutôt que forcer une réponse. À l’endroit, cette pause est constructive et prépare un déblocage par le changement de perspective. Renversée, elle signale une stagnation stérile à dépasser. Dans tous les cas, Le Pendu invite à la patience avant qu’une réponse claire n’émerge.',
+        a: 'Le Pendu est un non pour le moment : c’est une carte de suspens qui répond « pas maintenant ». Elle indique que la situation est bloquée et qu’il faut lâcher prise plutôt que forcer une réponse. À l’endroit, cette pause est constructive et prépare un déblocage par le changement de perspective. Renversée, elle signale une stagnation stérile à dépasser. Le refus n’est donc pas définitif, mais rien n’aboutira tant que le blocage n’est pas accepté.',
       },
       {
         q: 'Que veut dire Le Pendu renversé en amour ?',
@@ -634,7 +618,6 @@ export const TAROT_LOVE_CARDS: TarotLoveCard[] = [
   {
     slug: 'le-mat',
     name: 'Le Mat',
-    emoji: '',
     arcane: 'Arcane sans numéro',
     ouiNon: 'Nuancé',
     answerCapsule:
@@ -673,7 +656,6 @@ export const TAROT_LOVE_CARDS: TarotLoveCard[] = [
   {
     slug: 'la-papesse',
     name: 'La Papesse',
-    emoji: '',
     arcane: 'Arcane majeur II',
     ouiNon: 'Nuancé',
     answerCapsule:
@@ -712,11 +694,10 @@ export const TAROT_LOVE_CARDS: TarotLoveCard[] = [
   {
     slug: 'l-ermite',
     name: 'L’Ermite',
-    emoji: '',
     arcane: 'Arcane majeur IX',
-    ouiNon: 'Nuancé',
+    ouiNon: 'Non',
     answerCapsule:
-      'L’Ermite est la carte de l’introspection et de la solitude dans le tarot amour. Neuvième arcane majeur du Tarot de Marseille, il incarne le recul, la sagesse intérieure, la patience et le besoin de solitude. Tiré en amour, L’Ermite n’est pas un oui : il annonce un temps de retrait, une introspection nécessaire ou une distance dans la relation. À l’endroit, il invite à se recentrer, à réfléchir à ses vrais besoins avant d’avancer ; renversé, il signale un isolement excessif, une solitude subie ou une peur de s’engager. Pour un célibataire, il appelle un temps pour soi avant la rencontre ; pour un couple, un besoin d’espace ou de recul. L’Ermite rappelle que se connaître soi-même précède un amour juste. Une consultation de voyance amoureuse peut éclairer ce temps de retrait.',
+      'L’Ermite est la carte de l’introspection et de la solitude dans le tarot amour. Neuvième arcane majeur du Tarot de Marseille, il incarne le recul, la sagesse intérieure, la patience et le besoin de solitude. Tiré en amour, L’Ermite répond non pour le moment : il annonce un temps de retrait, une introspection nécessaire ou une distance dans la relation. À l’endroit, il invite à se recentrer, à réfléchir à ses vrais besoins avant d’avancer ; renversé, il signale un isolement excessif, une solitude subie ou une peur de s’engager. Pour un célibataire, il appelle un temps pour soi avant la rencontre ; pour un couple, un besoin d’espace ou de recul. L’Ermite rappelle que se connaître soi-même précède un amour juste. Une consultation de voyance amoureuse peut éclairer ce temps de retrait.',
     signification:
       'En amour, L’Ermite symbolise l’introspection, la solitude et la sagesse intérieure. Il représente ces périodes où l’on a besoin de se retirer, de réfléchir à ses vrais désirs et de faire le point loin du bruit des relations. Le neuvième arcane majeur incarne la patience, la maturité et la quête de vérité personnelle avant de s’engager. Il apparaît souvent quand une distance s’installe, quand l’on cherche à se comprendre, ou quand la solitude devient nécessaire. L’Ermite invite à écouter sa lumière intérieure : c’est en se connaissant soi-même que l’on prépare un amour juste, plutôt qu’en fuyant dans une relation.',
     endroit:
@@ -740,7 +721,7 @@ export const TAROT_LOVE_CARDS: TarotLoveCard[] = [
       },
       {
         q: 'L’Ermite est-il un oui en amour ?',
-        a: 'L’Ermite n’est pas un oui : il répond « prends du recul avant de décider ». C’est une carte de retrait et d’introspection qui invite à la patience plutôt qu’à l’action immédiate. À l’endroit, ce temps de solitude est sage et prépare un amour plus juste. Renversé, il signale un isolement excessif à dépasser. Pour une question sur un rapprochement immédiat, L’Ermite conseille d’attendre et de se connaître d’abord.',
+        a: 'L’Ermite est un non pour le moment : il répond « prends du recul avant de décider ». C’est une carte de retrait et d’introspection qui écarte l’action immédiate au profit de la patience. À l’endroit, ce temps de solitude est sage et prépare un amour plus juste. Renversé, il signale un isolement excessif à dépasser. Pour une question sur un rapprochement immédiat, la réponse est donc négative : il faut d’abord attendre et se connaître.',
       },
       {
         q: 'Que veut dire L’Ermite renversé en amour ?',
@@ -751,7 +732,6 @@ export const TAROT_LOVE_CARDS: TarotLoveCard[] = [
   {
     slug: 'la-force',
     name: 'La Force',
-    emoji: '',
     arcane: 'Arcane majeur XI',
     ouiNon: 'Oui',
     answerCapsule:
@@ -790,7 +770,6 @@ export const TAROT_LOVE_CARDS: TarotLoveCard[] = [
   {
     slug: 'la-temperance',
     name: 'La Tempérance',
-    emoji: '',
     arcane: 'Arcane majeur XIV',
     ouiNon: 'Oui',
     answerCapsule:
@@ -829,11 +808,10 @@ export const TAROT_LOVE_CARDS: TarotLoveCard[] = [
   {
     slug: 'le-jugement',
     name: 'Le Jugement',
-    emoji: '',
     arcane: 'Arcane majeur XX',
-    ouiNon: 'Oui',
+    ouiNon: 'Nuancé',
     answerCapsule:
-      'Le Jugement est la carte du renouveau et de la seconde chance dans le tarot amour. Vingtième arcane majeur du Tarot de Marseille, il incarne la renaissance, l’éveil, le pardon et le nouveau départ après une épreuve. Tiré en amour, Le Jugement est un oui porteur d’espoir : il annonce une réconciliation, une relation qui renaît, ou une prise de conscience qui change tout. À l’endroit, il représente le pardon, le renouveau et l’appel du cœur auquel on répond ; renversé, il signale le refus de pardonner, un blocage dans le passé ou une seconde chance manquée. Pour un célibataire, il annonce un renouveau sentimental ; pour un couple, une renaissance ou une réconciliation. Le Jugement rappelle qu’il est toujours possible de repartir sur de nouvelles bases. Une consultation de voyance amoureuse peut préciser ce renouveau.',
+      'Le Jugement est la carte du renouveau et de la seconde chance dans le tarot amour. Vingtième arcane majeur du Tarot de Marseille, il incarne la renaissance, l’éveil, le pardon et le nouveau départ après une épreuve. Tiré en amour, Le Jugement donne une réponse conditionnelle porteuse d’espoir : il ouvre la possibilité d’une réconciliation ou d’une relation qui renaît, mais seulement si une prise de conscience est suivie d’une action concrète. À l’endroit, il représente le pardon, le renouveau et l’appel du cœur auquel on répond ; renversé, il signale le refus de pardonner, un blocage dans le passé ou une seconde chance manquée. Pour un célibataire, il annonce un renouveau sentimental ; pour un couple, une renaissance ou une réconciliation. Le Jugement rappelle qu’il est toujours possible de repartir sur de nouvelles bases. Une consultation de voyance amoureuse peut préciser ce renouveau.',
     signification:
       'En amour, Le Jugement symbolise le renouveau, la renaissance et la seconde chance. Il représente ces moments de bascule où l’on prend conscience de ses vrais sentiments, où l’on pardonne, où une relation renaît de ses cendres. Le vingtième arcane majeur incarne l’éveil, l’appel du destin et la libération du passé. Il apparaît souvent pour annoncer une réconciliation, un retour, ou une décision qui répare et fait repartir. Quand Le Jugement apparaît dans un tirage sentimental, il porte un message d’espoir : le passé peut être dépassé, les erreurs pardonnées, et une nouvelle histoire, ou la même, renouvelée, peut commencer.',
     endroit:
@@ -857,7 +835,7 @@ export const TAROT_LOVE_CARDS: TarotLoveCard[] = [
       },
       {
         q: 'Le Jugement est-il un oui en amour ?',
-        a: 'Oui, Le Jugement est un oui porteur d’espoir et de renouveau en amour. À l’endroit, il répond favorablement aux questions sur la réconciliation, la seconde chance et la renaissance d’une relation : le passé peut être dépassé et une nouvelle page s’écrire. Renversé, la réponse se nuance : rancune ou blocage dans le passé freinent le renouveau. Dans l’ensemble, c’est une carte très positive pour repartir sur de nouvelles bases.',
+        a: 'Le Jugement n’est pas un oui automatique : sa réponse est nuancée, conditionnée à un pardon réel et à une décision assumée. À l’endroit, il ouvre la porte à la réconciliation, à la seconde chance et à la renaissance d’une relation : le passé peut être dépassé si l’éveil se traduit en actes. Renversé, la réponse bascule vers le non : rancune ou blocage dans le passé empêchent le renouveau. C’est une carte d’espoir, à condition d’agir sur cette prise de conscience.',
       },
       {
         q: 'Que veut dire Le Jugement renversé en amour ?',
@@ -868,7 +846,6 @@ export const TAROT_LOVE_CARDS: TarotLoveCard[] = [
   {
     slug: 'le-monde',
     name: 'Le Monde',
-    emoji: '',
     arcane: 'Arcane majeur XXI',
     ouiNon: 'Oui',
     answerCapsule:

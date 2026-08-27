@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 import { Voyant, formatPrice, getAvailabilityServices, getGenderLabel, getTrustScore, getAffiliateLink } from '@/lib/voyants';
 import { trackAffiliateClick } from '@/lib/glyphex';
@@ -17,6 +17,16 @@ export default function VoyantCard({ voyant, source = 'content-page', compact = 
   const trustScore = getTrustScore(voyant);
   const isOnline = voyant.ETAT === '1';
   const affiliateLink = getAffiliateLink(voyant.ID, source);
+
+  // Portrait fallback as STATE, not as a DOM write.
+  //
+  // The handler used to do `target.parentElement.innerHTML = ...`, which
+  // replaces nodes React still believes it owns — the next render of this
+  // subtree can then try to remove a child that is no longer there and throw
+  // NotFoundError. The initial letter is just another render output, so React
+  // stays the only writer of this DOM.
+  const [portraitFailed, setPortraitFailed] = useState(false);
+  const initial = voyant.VOYANT.charAt(0).toUpperCase();
 
   // Get primary service and price
   const getPrimaryService = () => {
@@ -80,19 +90,18 @@ export default function VoyantCard({ voyant, source = 'content-page', compact = 
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
             <div className="relative w-16 h-16 bg-white/20 rounded-full flex items-center justify-center text-3xl font-bold overflow-hidden">
-              <Image
-                src={`https://www.monsitevoyance.com/vignaff/${voyant.ID}.jpg`}
-                alt={voyant.VOYANT}
-                fill
-                sizes="64px"
-                className="object-cover"
-                onError={(e) => {
-                  // Fallback to initial if image doesn't exist
-                  const target = e.target as HTMLImageElement;
-                  target.style.display = 'none';
-                  target.parentElement!.innerHTML = `<span class="text-3xl font-bold">${voyant.VOYANT.charAt(0).toUpperCase()}</span>`;
-                }}
-              />
+              {portraitFailed ? (
+                <span className="text-3xl font-bold">{initial}</span>
+              ) : (
+                <Image
+                  src={`https://www.monsitevoyance.com/vignaff/${voyant.ID}.jpg`}
+                  alt={voyant.VOYANT}
+                  fill
+                  sizes="64px"
+                  className="object-cover"
+                  onError={() => setPortraitFailed(true)}
+                />
+              )}
             </div>
             {/* min-w-0 + nowrap: without these, "Voyante Expert" wrapped to a
                 second line on cards whose name is long or that lack the "En

@@ -92,7 +92,7 @@ export default async function DreamPage({ params }: Props) {
       <header className="bg-gradient-to-r from-indigo-700 via-purple-700 to-violet-800 text-white py-16 px-4">
         <div className="max-w-4xl mx-auto">
           <Link href="/reves-amour/" className="text-white/80 hover:text-white mb-4 inline-block">&larr; Tous les rêves amoureux</Link>
-          <h1 className="text-4xl md:text-5xl font-bold mb-3">{d.emoji} {d.primaryQuery} : Signification</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-3">{d.primaryQuery} : Signification</h1>
           <p className="text-lg opacity-90">Interprétation des rêves amoureux, ce que ce rêve révèle, et ce qu&apos;il ne prédit pas</p>
         </div>
       </header>
@@ -113,7 +113,10 @@ export default async function DreamPage({ params }: Props) {
         {/* Theme funnel to the most relevant priority page */}
         <p className="text-gray-600 mb-8">
           {funnel.lead}{' '}
-          <Link href={funnel.href} className="text-indigo-600 hover:text-indigo-800 underline font-medium">{funnel.anchor}</Link>.
+          <Link href={funnel.href} className="text-indigo-600 hover:text-indigo-800 underline font-medium">{funnel.anchor}</Link>.{' '}
+          Un rêve pose une question&nbsp;; la{' '}
+          <Link href="/voyance-gratuite-amour/" className="text-indigo-600 hover:text-indigo-800 underline font-medium">voyance gratuite amour</Link>{' '}
+          aide à y répondre, tirage à l&apos;appui.
         </p>
 
         <article className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-indigo-500">
@@ -165,7 +168,7 @@ export default async function DreamPage({ params }: Props) {
           <div className="space-y-2">
             {siblings.map((x) => (
               <Link key={x.slug} href={`/reves-amour/${x.slug}/`} className="block text-indigo-600 hover:text-indigo-800 font-medium">
-                &rarr; {x.emoji} {x.primaryQuery}
+                &rarr; {x.primaryQuery}
               </Link>
             ))}
             <Link href="/rupture/rever-de-son-ex/" className="block text-indigo-600 hover:text-indigo-800 font-medium">

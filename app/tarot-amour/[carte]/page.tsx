@@ -73,7 +73,7 @@ export default async function CardPage({ params }: Props) {
       <header className="bg-gradient-to-r from-purple-800 via-indigo-800 to-violet-900 text-white py-16 px-4">
         <div className="max-w-4xl mx-auto">
           <Link href="/tarot-amour/" className="text-white/80 hover:text-white mb-4 inline-block">&larr; Toutes les cartes du tarot amour</Link>
-          <h1 className="text-4xl md:text-5xl font-bold mb-3">{c.emoji} {c.name} en Amour</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-3">{c.name} en Amour</h1>
           <p className="text-lg opacity-90 mb-4">{c.arcane} du Tarot de Marseille</p>
           <span className={`inline-block text-sm font-bold uppercase tracking-wide px-4 py-1.5 rounded-full border ${OUINON_STYLE[c.ouiNon]}`}>
             Réponse oui/non : {c.ouiNon}
@@ -155,7 +155,7 @@ export default async function CardPage({ params }: Props) {
             <div className="space-y-2">
               {siblings.map((x) => (
                 <Link key={x.slug} href={`/tarot-amour/${x.slug}/`} className="block text-indigo-600 hover:text-indigo-800 font-medium">
-                  &rarr; {x.emoji} {x.name} en amour
+                  &rarr; {x.name} en amour
                 </Link>
               ))}
               <Link href="/methodes-voyance/tirage-tarot-amour/" className="block text-indigo-600 hover:text-indigo-800 font-medium">

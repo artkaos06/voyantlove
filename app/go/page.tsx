@@ -15,7 +15,6 @@ function GoRedirect() {
   return (
     <main className="min-h-screen bg-gray-50 flex items-center justify-center">
       <div className="text-center">
-        <div className="text-5xl mb-4"></div>
         <p className="text-lg text-gray-700 font-medium">Recherche des voyants disponibles...</p>
         <p className="text-sm text-gray-500 mt-2">Vous allez être redirigé dans quelques secondes</p>
       </div>

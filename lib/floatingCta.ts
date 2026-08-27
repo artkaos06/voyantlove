@@ -20,6 +20,37 @@ export const FLOATING_CTA_EXCLUDED = [
 export const FLOATING_CTA_DISMISS_KEY = 'vl_floating_cta_dismissed';
 
 /**
+ * Hosts serving the English brand. Mirrors EN_HOSTS in middleware.ts — the two
+ * lists must stay in sync, tests/floatingCta.test.ts asserts they do.
+ */
+export const EN_BRAND_HOSTS = ['lovepsychicguide.com', 'www.lovepsychicguide.com'] as const;
+
+/**
+ * Is the current page the English brand (lovepsychicguide.com, served from
+ * app/en/*)? The bar's copy is French only, so it must never render there.
+ *
+ * A path exclusion CANNOT do this job. middleware.ts REWRITES
+ * lovepsychicguide.com/foo → /en/foo, and a rewrite is invisible to the
+ * client: usePathname() on the EN site returns '/will-he-come-back/', with no
+ * '/en' prefix — indistinguishable from a French content route by shape.
+ *
+ * The host is the real signal, and middleware makes it authoritative: it hard
+ * 404s /en/* on every non-EN host, so EN content can only ever be rendered on
+ * an EN host. The '/en' path test is a second line of defence, covering a
+ * hand-typed /en/... URL on the EN domain, which middleware passes through
+ * without rewriting.
+ *
+ * document.documentElement.lang is deliberately NOT used: Next.js only lets
+ * the ROOT layout own <html>, so app/en/layout.tsx cannot override lang and
+ * both brands serve lang="fr" (that file documents the trade-off).
+ */
+export function isEnglishBrand(o: { hostname: string; pathname: string }): boolean {
+  const host = o.hostname.toLowerCase().replace(/:\d+$/, '');
+  if ((EN_BRAND_HOSTS as readonly string[]).includes(host)) return true;
+  return o.pathname === '/en' || o.pathname.startsWith('/en/');
+}
+
+/**
  * Route prefix -> CTA topic, so affiliate attribution matches the page cluster.
  * Unknown routes fall back to 'methodes-voyance' (the generic guidance bucket).
  */
@@ -61,7 +92,13 @@ export function shouldRenderFloatingCta(o: {
   dismissed: boolean;
   loading: boolean;
   voyantCount: number;
+  /**
+   * The page belongs to the English brand. Optional so existing FR callers
+   * read unchanged; see isEnglishBrand above for why this cannot be a path.
+   */
+  enBrand?: boolean;
 }): boolean {
+  if (o.enBrand) return false;
   if (isExcludedPath(o.pathname)) return false;
   if (o.dismissed) return false;
   if (o.loading) return false;

@@ -83,7 +83,7 @@ export default function DeuilAmoureuxPage() {
 
         {/* Section 1: Qu'est-ce que le Deuil Amoureux ? */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6"> Qu&apos;est-ce que le Deuil Amoureux ?</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Qu&apos;est-ce que le Deuil Amoureux ?</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le deuil amoureux est un processus &eacute;motionnel profond d&eacute;clench&eacute; par la perte d&apos;un lien sentimental significatif. Il engage corps, esprit et &acirc;me dans une d&eacute;construction puis une reconstruction qui dure en moyenne 6 &agrave; 18 mois.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Le <strong>deuil amoureux</strong> d&eacute;signe le processus &eacute;motionnel et psychologique que l&apos;on traverse lorsqu&apos;on perd un lien amoureux significatif. Contrairement &agrave; une simple tristesse qui s&apos;estompe en quelques jours, le <strong>deuil sentimental</strong> engage l&apos;int&eacute;gralit&eacute; de votre &ecirc;tre &mdash; corps, esprit et &acirc;me &mdash; dans un processus de d&eacute;construction puis de <strong>reconstruction</strong> profonde.
@@ -115,7 +115,7 @@ export default function DeuilAmoureuxPage() {
 
         {/* Section 2: Les Phases du Deuil Amoureux */}
         <section id="phases" className="bg-gradient-to-br from-slate-50 to-blue-50 rounded-xl p-8 mb-8 border-2 border-slate-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6"> Les Phases du Deuil Amoureux</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Les Phases du Deuil Amoureux</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le deuil amoureux traverse cinq phases distinctes : le d&eacute;ni, la col&egrave;re, le marchandage, la d&eacute;pression et l&apos;acceptation. Ces &eacute;tapes ne sont pas lin&eacute;aires et le tarot identifie la phase dominante de votre parcours.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Le <strong>deuil amoureux</strong> traverse cinq phases distinctes, inspir&eacute;es du mod&egrave;le de K&uuml;bler-Ross. Ces &eacute;tapes ne sont pas forc&eacute;ment lin&eacute;aires : vous pouvez alterner entre elles, revenir en arri&egrave;re ou en traverser plusieurs simultan&eacute;ment. Le <strong>tarot</strong> identifie avec pr&eacute;cision la phase dominante et les cartes associ&eacute;es &agrave; chaque &eacute;tape pour guider votre <strong>gu&eacute;rison sentimentale</strong>.
@@ -166,7 +166,7 @@ export default function DeuilAmoureuxPage() {
 
         {/* Section 3: Deuil Amoureux vs Rupture Classique */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6"> Deuil Amoureux vs Rupture Classique</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Deuil Amoureux vs Rupture Classique</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le deuil amoureux se distingue d&apos;une rupture classique par sa profondeur : il survient apr&egrave;s des relations longues, des trahisons, quand on aime encore ou quand un r&ecirc;ve de vie commune s&apos;effondre. La souffrance touche l&apos;identit&eacute; m&ecirc;me.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Toute <strong>rupture amoureuse</strong> engendre de la souffrance, mais le <strong>deuil amoureux</strong> va au-del&agrave; de la tristesse habituelle d&apos;une s&eacute;paration. Certaines circonstances transforment une <Link href="/rupture/rupture-amoureuse/" className="text-slate-600 hover:text-slate-800 underline font-medium">rupture</Link> en v&eacute;ritable deuil &eacute;motionnel qui n&eacute;cessite un accompagnement sp&eacute;cifique. Reconna&icirc;tre cette diff&eacute;rence est essentiel pour choisir le bon parcours de <strong>gu&eacute;rison</strong>.
@@ -207,7 +207,7 @@ export default function DeuilAmoureuxPage() {
 
         {/* Section 4: Le Tarot pour Traverser le Deuil Amoureux */}
         <section className="bg-gradient-to-br from-blue-50 to-slate-50 rounded-xl p-8 mb-8 border-2 border-blue-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6"> Le Tarot pour Traverser le Deuil Amoureux</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Le Tarot pour Traverser le Deuil Amoureux</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le tarot accompagne le deuil amoureux avec un tirage sp&eacute;cial en 6 positions et des cartes de renaissance comme L&apos;&Eacute;toile, Temp&eacute;rance et le Jugement. Il adapte sa guidance &agrave; chaque phase du processus.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Le <strong>tarot de deuil amoureux</strong> est un outil d&apos;accompagnement puissant qui &eacute;claire chaque &eacute;tape de votre <strong>processus de gu&eacute;rison</strong>. Il ne pr&eacute;dit pas seulement l&apos;avenir : il r&eacute;v&egrave;le les dynamiques &eacute;nerg&eacute;tiques en jeu, les blocages &agrave; d&eacute;nouer et les ressources int&eacute;rieures &agrave; mobiliser pour acc&eacute;l&eacute;rer votre <strong>renaissance</strong>.
@@ -243,7 +243,7 @@ export default function DeuilAmoureuxPage() {
 
         {/* Section 5: Quand le Deuil Amoureux Devient Pathologique */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6"> Quand le Deuil Amoureux Devient Pathologique</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Quand le Deuil Amoureux Devient Pathologique</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Un deuil amoureux devient pathologique quand la douleur reste aussi intense apr&egrave;s 12 mois, que l&apos;isolement s&apos;installe et que l&apos;int&eacute;r&ecirc;t pour la vie dispara&icirc;t. Consultez un professionnel en compl&eacute;ment de la voyance.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Le <strong>deuil amoureux</strong> est un processus naturel et sain qui conduit &agrave; la <strong>gu&eacute;rison</strong>. Cependant, dans certains cas, ce processus se bloque et se transforme en souffrance chronique qui n&eacute;cessite une intervention professionnelle. Reconna&icirc;tre les signes d&apos;un deuil pathologique est essentiel pour agir &agrave; temps. La <strong>voyance</strong> compl&egrave;te alors l&apos;accompagnement th&eacute;rapeutique mais ne le remplace pas.

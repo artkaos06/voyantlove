@@ -134,22 +134,31 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
   // Spiritualité & énergie amoureuse
   // =====================================================================
   {
+    // Realigned to the "relation karmique" head term (the query users actually
+    // type, ~3,300/mo across the cluster) while keeping the historical
+    // 'amour-karmique' slug — no redirect, the URL is already indexed.
+    // The cluster's sub-intents (définition / signes / peut-elle durer /
+    // test) are answered through the fields the template already renders:
+    // answerCapsule = définition, points = the signs checklist, FAQ headings
+    // carry the exact long-tail questions.
     slug: 'amour-karmique',
-    terme: 'Amour Karmique',
+    terme: 'Relation Karmique',
     categorie: 'spiritualite',
     definitionCourte:
-      'Une relation amoureuse intense, souvent difficile, censée rejouer une leçon ou une dette héritée d’une vie antérieure plutôt qu’un simple hasard de rencontre.',
+      'Une relation karmique est un lien amoureux intense et éprouvant que la tradition ésotérique relie à une vie antérieure : sa fonction serait d’enseigner une leçon plutôt que d’offrir une histoire paisible.',
     answerCapsule:
-      'Un amour karmique désigne une relation amoureuse d’une intensité rare, marquée par une attirance immédiate et une sensation de « déjà-vécu », que la tradition ésotérique relie à un lien noué dans une vie antérieure. Contrairement à une romance paisible, l’amour karmique est souvent chaotique : il alterne passion brûlante et épreuves, séparations et retrouvailles, comme si la relation existait pour faire travailler quelque chose de précis chez les deux partenaires, un pardon à accorder, une peur à dépasser, un schéma répétitif à briser. Il ne s’agit pas nécessairement d’un grand amour destiné à durer toute une vie : certaines relations karmiques ont justement pour fonction de se terminer, une fois la leçon reçue. On distingue l’amour karmique de l’âme sœur classique par cette dimension d’épreuve et de croissance forcée, plus que d’harmonie immédiate. Une consultation de voyance amoureuse peut aider à identifier si une relation relève de cette dynamique karmique et quelle leçon elle vous invite à intégrer.',
+      'Une relation karmique est une relation amoureuse d’une intensité rare, marquée par une attirance immédiate et une troublante sensation de « déjà-vécu », que la tradition ésotérique relie à un lien noué dans une vie antérieure. Contrairement à une histoire paisible, la relation karmique est souvent chaotique : elle alterne passion brûlante et épreuves, ruptures et retrouvailles, comme si elle existait pour faire travailler quelque chose de précis chez les deux partenaires, un pardon à accorder, une peur à dépasser, un schéma répétitif à briser. Les signes d’une relation karmique tiennent moins à la douceur du lien qu’à sa fonction de miroir : elle vous renvoie sans cesse à vos propres blessures. Une relation karmique n’est pas nécessairement faite pour durer, certaines ont justement pour rôle de se refermer une fois la leçon reçue. Une consultation de voyance amoureuse peut aider à reconnaître cette dynamique et à identifier ce qu’elle vous invite à intégrer.',
     explication:
-      'La notion d’amour karmique puise dans la croyance en la réincarnation et la loi de cause à effet : chaque âme porterait la mémoire de ses liens passés, et certaines rencontres réactiveraient une dette ou un contrat non soldé. Ce concept, popularisé par les courants New Age occidentaux à partir du vingtième siècle, s’appuie sur des traditions bien plus anciennes, védique et bouddhiste notamment, où le karma désigne la conséquence de nos actes à travers les existences. Appliqué au couple, il postule que deux âmes ayant vécu un conflit, une trahison ou un amour inachevé dans une autre vie se retrouveraient dans celle-ci pour clore ce cycle. La relation karmique se reconnaît moins à sa douceur qu’à son intensité : elle bouscule, elle enseigne, elle confronte chacun à ses propres blessures. C’est précisément cette fonction de miroir qui la distingue d’une simple compatibilité de caractère.',
+      'La notion de relation karmique puise dans la croyance en la réincarnation et la loi de cause à effet : chaque âme porterait la mémoire de ses liens passés, et certaines rencontres réactiveraient une dette ou un contrat non soldé. Le mot karma, issu du sanskrit, désigne dans les traditions védique et bouddhiste la conséquence de nos actes à travers les existences ; sa lecture amoureuse, elle, a surtout été popularisée par les courants New Age occidentaux à partir du vingtième siècle. Appliquée au couple, l’idée postule que deux âmes ayant vécu un conflit, une trahison ou un amour inachevé dans une autre vie se retrouveraient dans celle-ci pour clore ce cycle. Une relation karmique se reconnaît donc moins à sa douceur qu’à son intensité : elle bouscule, elle enseigne, elle confronte chacun à ses propres blessures. C’est précisément cette fonction de miroir qui la distingue d’une simple compatibilité de caractère.',
     enAmour:
-      'En amour, repérer une dynamique karmique aide à sortir du jugement facile envers une relation compliquée : au lieu de se demander « pourquoi est-ce si difficile ? », on se demande « que suis-je en train d’apprendre ? ». Cette lecture invite à ne pas s’accrocher indéfiniment à une relation destructrice sous prétexte qu’elle serait « écrite », tout en honorant ce que chaque histoire, même brève, a permis de transformer chez soi. Un voyant spécialisé peut aider à distinguer une relation karmique qui a rempli sa fonction et doit être libérée, d’un lien à retravailler consciemment pour évoluer vers une relation plus apaisée.',
+      'En amour, repérer une relation karmique aide à sortir du jugement facile envers une histoire compliquée : au lieu de se demander « pourquoi est-ce si difficile ? », on se demande « qu’est-ce que je suis en train d’apprendre ? ». Une relation karmique amoureuse peut être profondément transformatrice sans être vivable au quotidien, et cette lecture invite à ne pas s’accrocher indéfiniment à un lien destructeur sous prétexte qu’il serait « écrit », tout en honorant ce que chaque histoire, même brève, a permis de transformer chez soi. Un voyant spécialisé peut aider à distinguer une relation karmique qui a rempli sa fonction et doit être libérée, d’un lien à retravailler consciemment pour évoluer vers une relation plus apaisée.',
     points: [
-      'Attirance immédiate et sensation de déjà-vécu dès la première rencontre',
-      'Alternance marquée entre passion intense et épreuves ou séparations',
-      'Sentiment que la relation « enseigne » quelque chose plutôt qu’elle n’apaise simplement',
-      'Certaines relations karmiques sont faites pour se refermer une fois la leçon reçue',
+      'Signe 1, la reconnaissance immédiate : une attirance magnétique dès le premier échange et une troublante sensation de déjà-vécu.',
+      'Signe 2, l’intensité disproportionnée : la relation prend une place immense en très peu de temps, bien avant qu’on se connaisse vraiment.',
+      'Signe 3, le cycle ruptures-retrouvailles : on se quitte, on revient, parfois plusieurs fois, sans jamais refermer vraiment la porte.',
+      'Signe 4, l’effet miroir : l’autre réveille précisément vos blessures anciennes, peur de l’abandon, jalousie, besoin de contrôle.',
+      'Signe 5, la leçon qui se répète : le même schéma revient tant qu’il n’est pas conscientisé, souvent d’une relation à la suivante.',
+      'Signe 6, l’épuisement : on en ressort transformé mais vidé, très loin de l’apaisement d’une relation sereine.',
     ],
     termesLies: ['connexion-ames', 'corde-karmique', 'contrat-ame'],
     liensSite: [
@@ -158,15 +167,23 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     ],
     faq: [
       {
-        q: 'Un amour karmique est-il forcément destiné à durer ?',
-        a: 'Non, et c’est même une idée reçue à corriger. Beaucoup de relations karmiques ont justement pour fonction de se terminer une fois que la leçon qu’elles portaient a été reçue par les deux partenaires. Confondre intensité et destin conduit souvent à s’accrocher à des liens douloureux par conviction qu’ils seraient « écrits ». Une relation peut être profondément karmique et pourtant ne pas être faite pour la vie entière : son rôle est parfois de transformer, pas de perdurer.',
+        q: 'Quels sont les signes d’une relation karmique ?',
+        a: 'Les signes d’une relation karmique les plus souvent cités sont une attirance immédiate accompagnée d’une sensation de déjà-vécu, une intensité disproportionnée par rapport au temps réellement passé ensemble, un cycle de ruptures et de retrouvailles qui se répète, un effet miroir qui réveille des blessures anciennes, et le sentiment d’avoir beaucoup appris tout en sortant épuisé. Aucun de ces signes ne suffit à lui seul : c’est leur accumulation, et surtout la répétition du même schéma, qui caractérise la dynamique.',
       },
       {
-        q: 'Comment reconnaître une relation karmique d’un simple coup de foudre ?',
+        q: 'Une relation karmique peut-elle durer ?',
+        a: 'Oui, mais rarement sous sa forme initiale. Beaucoup de relations karmiques ont justement pour fonction de se terminer une fois la leçon reçue par les deux partenaires. Une relation karmique peut durer lorsque les deux personnes prennent conscience du schéma qu’elles rejouent et acceptent de le travailler : le lien cesse alors d’être karmique au sens strict pour devenir une relation choisie. Confondre intensité et destin conduit souvent à s’accrocher à une histoire douloureuse par conviction qu’elle serait « écrite ».',
+      },
+      {
+        q: 'Test : comment savoir si je vis une relation karmique ?',
+        a: 'Il n’existe aucun test scientifique, mais une auto-évaluation honnête aide à y voir clair. Reprenez les six signes listés plus haut et comptez ceux qui décrivent réellement votre histoire, pas celle que vous aimeriez vivre. Un ou deux signes évoquent surtout une relation passionnée ordinaire. Quatre signes ou plus, avec la répétition d’un même schéma, correspondent à ce que la tradition appelle une relation karmique. Ce résultat ne prédit rien : il indique seulement quelle question intérieure mérite votre attention.',
+      },
+      {
+        q: 'Quelle différence entre une relation karmique et un simple coup de foudre ?',
         a: 'Le coup de foudre classique s’accompagne généralement d’un sentiment de légèreté et d’évidence. La relation karmique, elle, mêle dès le départ une attirance forte à une tension : disputes récurrentes, séparations suivies de retrouvailles, sentiment d’être renvoyé sans cesse à ses propres blessures. C’est cette dimension répétitive et confrontante, plus que la seule intensité du début, qui signe une dynamique karmique. Un accompagnement en voyance peut aider à objectiver ce ressenti.',
       },
       {
-        q: 'Faut-il rester dans une relation qu’on pense karmique ?',
+        q: 'Faut-il rester dans une relation karmique ?',
         a: 'Pas nécessairement. L’idée de karma explique une dynamique, elle ne justifie jamais de subir une relation toxique ou destructrice. Si le lien apporte des épreuves formatrices dans le respect mutuel, il peut valoir la peine d’être travaillé consciemment. S’il ne produit que souffrance sans aucune réciprocité, la leçon karmique est souvent précisément d’apprendre à s’en détacher. Le discernement personnel reste la meilleure boussole, éventuellement éclairé par une consultation.',
       },
     ],
@@ -530,6 +547,7 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
       'Chaque couleur perçue est associée à une signification : rose pour la tendresse, rouge pour la passion',
       'Utilisée pour évaluer la compatibilité énergétique ou l’état affectif réel d’une personne',
       'Considérée comme changeante, non figée, à l’image des émotions vécues au quotidien',
+      'Orthographe : on écrit une aura, le mot est féminin ; « un aura » est une faute courante',
     ],
     termesLies: ['chakra-du-coeur', 'troisieme-oeil', 'clairvoyance'],
     liensSite: [
@@ -537,6 +555,10 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
       { label: 'Compatibilité amoureuse', href: '/compatibilite-amoureuse/' },
     ],
     faq: [
+      {
+        q: 'Un aura ou une aura ?',
+        a: 'On écrit une aura : le mot est féminin. « Un aura » est une faute fréquente, provoquée par la voyelle initiale, qui rend l’article difficile à entendre à l’oral, et par la proximité sonore avec le futur du verbe avoir, « il aura ». On dit donc une aura lumineuse, une belle aura, son aura est apaisante, et au pluriel des auras. Le mot vient du latin aura, la brise ou le souffle, féminin lui aussi, et il a gardé ce genre en français.',
+      },
       {
         q: 'De quelle couleur est l’aura de l’amour ?',
         a: 'Le rose est la couleur la plus fréquemment associée à l’amour tendre et inconditionnel dans la lecture d’aura, tandis que le rouge évoque plutôt la passion physique et l’intensité du désir. Une aura mêlant plusieurs de ces teintes peut indiquer une relation qui combine tendresse profonde et attirance physique forte, ce qui est généralement lu comme un signe favorable d’équilibre relationnel.',
@@ -670,9 +692,9 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     terme: 'Troisième Œil',
     categorie: 'spiritualite',
     definitionCourte:
-      'Le centre énergétique symbolique situé entre les sourcils, associé à l’intuition, à la clairvoyance et à la perception au-delà des cinq sens ordinaires.',
+      'Le troisième œil est le centre énergétique symbolique situé entre les sourcils, associé à l’intuition, à la clairvoyance et à la perception au-delà des cinq sens ordinaires.',
     answerCapsule:
-      'Le troisième œil désigne, dans la tradition yogique, le sixième chakra, nommé Ajna en sanskrit, situé symboliquement entre les deux sourcils, légèrement au-dessus. Il est associé à l’intuition, à la clairvoyance, à la perception subtile et à la capacité de « voir » au-delà des cinq sens physiques ordinaires, d’où son usage fréquent en voyance pour désigner la faculté intuitive elle-même. Un troisième œil considéré comme ouvert ou développé permettrait de percevoir des informations, des images ou des impressions inaccessibles à la perception rationnelle courante, tandis qu’un troisième œil fermé ou peu développé se traduirait par une confiance limitée en son intuition, un scepticisme excessif envers ses propres ressentis, ou une difficulté à distinguer une vraie intuition d’une simple peur. En amour, on évoque le troisième œil pour désigner la capacité à « sentir » au-delà des mots ce que ressent réellement un partenaire, ou à pressentir l’évolution d’une relation avant qu’elle ne se manifeste concrètement.',
+      'Le troisième œil est un centre énergétique symbolique situé entre les deux sourcils, légèrement au-dessus, que la tradition yogique nomme Ajna, le sixième chakra. Il est associé à l’intuition, à la clairvoyance, à la perception subtile et à la capacité de « voir » au-delà des cinq sens physiques ordinaires, d’où son usage fréquent en voyance pour désigner la faculté intuitive elle-même. Un troisième œil considéré comme ouvert ou développé permettrait de percevoir des informations, des images ou des impressions inaccessibles à la perception rationnelle courante, tandis qu’un troisième œil fermé ou peu développé se traduirait par une confiance limitée en son intuition, un scepticisme excessif envers ses propres ressentis, ou une difficulté à distinguer une vraie intuition d’une simple peur. En amour, on évoque le troisième œil pour désigner la capacité à « sentir » au-delà des mots ce que ressent réellement un partenaire, ou à pressentir l’évolution d’une relation avant qu’elle ne se manifeste concrètement.',
     explication:
       'Le concept trouve son origine dans les textes tantriques indiens, où Ajna représente le point de convergence entre les deux principaux canaux énergétiques du corps subtil, symbolisant l’union des polarités et l’accès à une perception unifiée au-delà de la dualité ordinaire. Sa popularisation en Occident, notamment à travers la théosophie à la fin du dix-neuvième siècle puis la culture New Age du vingtième siècle, en a fait un symbole largement reconnu de l’éveil intuitif et spirituel, parfois associé à la glande pinéale dans certaines lectures qui cherchent un ancrage physiologique à ce concept énergétique, bien que ce rapprochement reste spéculatif et non validé scientifiquement. Développer son troisième œil, dans cette tradition, passerait par des pratiques régulières de méditation, de visualisation et d’attention portée à ses rêves et à ses intuitions spontanées, sur l’idée que cette faculté, présente chez tous en germe, se cultive comme un muscle que l’on entraîne.',
     enAmour:
@@ -689,6 +711,10 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
       { label: 'Que ressent-il/elle pour moi', href: '/sentiments/que-ressent-il-elle-pour-moi/' },
     ],
     faq: [
+      {
+        q: 'Qu’est-ce que le troisième œil ?',
+        a: 'Le troisième œil est un centre énergétique symbolique situé entre les deux sourcils, que la tradition yogique appelle Ajna, le sixième chakra. Il ne s’agit pas d’un organe physique mais d’une image : celle d’une perception qui ne passe ni par les yeux ni par le raisonnement, l’intuition, la clairvoyance, le pressentiment. Dire qu’une personne a « le troisième œil ouvert » signifie donc, dans ce vocabulaire, qu’elle fait confiance à ses ressentis et qu’elle perçoit ce que les cinq sens ordinaires ne captent pas.',
+      },
       {
         q: 'Comment savoir si mon troisième œil est développé ?',
         a: 'Les signes évoqués incluent des intuitions qui se révèlent régulièrement justes, une sensibilité accrue à l’énergie et à l’état émotionnel des personnes autour de soi, ou des rêves particulièrement vivides et parfois prémonitoires selon les personnes qui les vivent. Ces signes restent des repères subjectifs plutôt qu’une mesure objective, et varient beaucoup d’une personne à l’autre.',
@@ -857,10 +883,13 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
   },
   {
     slug: 'ombre-shadow-work',
-    terme: 'Travail de l’Ombre (Shadow Work)',
+    // Anglicism leads the headword on purpose: "shadow work" is the query
+    // that carries the volume, and `terme` drives both the H1 and the
+    // <title> in app/glossaire/[terme]/page.tsx.
+    terme: 'Shadow Work (Travail de l’Ombre)',
     categorie: 'spiritualite',
     definitionCourte:
-      'Un travail intérieur consistant à explorer consciemment les parts de soi refoulées ou rejetées, souvent projetées sur le partenaire dans les conflits de couple.',
+      'Le shadow work, ou travail de l’ombre, est une démarche intérieure qui explore consciemment les parts de soi refoulées ou rejetées, souvent projetées sur le partenaire dans les conflits de couple.',
     answerCapsule:
       'Le travail de l’ombre, ou shadow work, désigne une démarche introspective consistant à explorer consciemment les aspects de soi-même que l’on a refoulés, niés ou rejetés, colère, jalousie, besoin de contrôle, vulnérabilité, et qui continuent d’influencer nos comportements malgré ce refoulement. Ce concept, issu de la psychologie analytique de Carl Gustav Jung, est aujourd’hui largement repris par la spiritualité contemporaine comme un outil de développement personnel. En amour, le travail de l’ombre part du constat que ce qui nous irrite le plus chez un partenaire reflète souvent une part de nous-même que l’on refuse de voir ou d’assumer, un mécanisme appelé projection. Une personne qui reproche sans cesse à l’autre son égoïsme peut ainsi, à travers ce travail, découvrir sa propre difficulté à exprimer ses besoins ; une jalousie envahissante peut révéler une peur de l’abandon jamais nommée. Ce travail vise non pas à éliminer ces parts d’ombre, mais à les intégrer consciemment pour qu’elles cessent de gouverner les réactions à l’insu de la personne.',
     explication:
@@ -879,6 +908,10 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
       { label: 'Jalousie excessive', href: '/crise-couple/jalousie-excessive/' },
     ],
     faq: [
+      {
+        q: 'Qu’est-ce que le shadow work ?',
+        a: 'Le shadow work est le nom anglais du travail de l’ombre, la démarche d’introspection héritée de Carl Gustav Jung qui consiste à regarder en face les parts de soi que l’on a refoulées : colère, jalousie, besoin de contrôle, vulnérabilité. L’expression anglaise s’est imposée en français avec la vague du développement personnel en ligne, mais elle désigne exactement la même pratique. Faire son shadow work, ce n’est pas éliminer ces zones d’ombre, c’est cesser de les laisser gouverner ses réactions à son insu.',
+      },
       {
         q: 'Comment commencer un travail de l’ombre sur son couple ?',
         a: 'Un bon point de départ consiste à noter, sur une période de quelques semaines, les situations qui déclenchent une réaction émotionnelle disproportionnée avec son partenaire, puis à se demander honnêtement ce que cette réaction révèle de ses propres peurs ou besoins non exprimés. Ce travail peut se mener seul par l’écriture, ou être accompagné par un thérapeute pour les zones les plus sensibles ou anciennes.',

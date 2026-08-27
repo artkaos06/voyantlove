@@ -107,3 +107,72 @@ test('glossary terms do not re-cover the exact headword of an existing dedicated
   const slugs = new Set(GLOSSARY_TERMS.map((t) => t.slug));
   for (const r of reserved) assert.ok(!slugs.has(r), `"${r}" duplicates an existing dedicated page and must not be a glossary entry`);
 });
+
+// ---------------------------------------------------------------------------
+// Keyword-alignment locks. Each of these entries was realigned to the query
+// users actually type (verified against live Google FR data), not to the
+// phrasing the entry happened to be drafted with. The assertions below pin
+// the exact strings that carry the ranking intent — headword, capsule
+// opening, and the FAQ questions that render as <h3> and feed FAQPage schema
+// — so a future copy edit can't silently drop them.
+// ---------------------------------------------------------------------------
+
+const faqQuestions = (slug: string) => findTerm(slug)!.faq.map((f) => f.q);
+
+test('amour-karmique keeps its indexed slug while leading on the "relation karmique" head term', () => {
+  const t = findTerm('amour-karmique');
+  assert.ok(t, 'the historical /glossaire/amour-karmique/ URL must not be renamed or redirected');
+  assert.equal(t!.terme, 'Relation Karmique', 'terme drives the H1 and the <title>');
+  // definitionCourte is the meta-description base, so the head term belongs in it too.
+  assert.match(t!.definitionCourte, /relation karmique/i);
+  // The capsule renders under the "Que signifie ... ?" H2 and is the définition answer.
+  assert.match(t!.answerCapsule, /^Une relation karmique est/);
+});
+
+test('the relation-karmique cluster answers each sub-intent as its own question heading', () => {
+  const questions = faqQuestions('amour-karmique');
+  for (const expected of [
+    'Quels sont les signes d’une relation karmique ?',
+    'Une relation karmique peut-elle durer ?',
+    'Test : comment savoir si je vis une relation karmique ?',
+  ]) {
+    assert.ok(questions.includes(expected), `missing FAQ heading for sub-intent: "${expected}"`);
+  }
+});
+
+test('the relation-karmique signs checklist is substantive enough to back the self-assessment', () => {
+  const points = findTerm('amour-karmique')!.points;
+  const signs = points.filter((p) => /^Signe \d/.test(p));
+  assert.ok(signs.length >= 6, `expected >= 6 numbered signs, found ${signs.length}`);
+  // The "test" FAQ tells the reader to count these, so the two must stay in sync.
+  const testFaq = findTerm('amour-karmique')!.faq.find((f) => f.q.startsWith('Test :'))!;
+  assert.match(testFaq.a, /six signes/);
+});
+
+test('aura answers the "un aura ou une aura" grammar query, plainly, in the first sentence', () => {
+  assert.ok(faqQuestions('aura').includes('Un aura ou une aura ?'));
+  const answer = findTerm('aura')!.faq.find((f) => f.q === 'Un aura ou une aura ?')!.a;
+  const firstSentence = answer.split(/(?<=\.)\s/)[0];
+  assert.match(firstSentence, /On écrit une aura/, 'the verdict must come first, not after the etymology');
+  assert.match(firstSentence, /féminin/);
+  // Also surfaced above the FAQ, in the bullet list.
+  assert.ok(findTerm('aura')!.points.some((p) => /une aura/.test(p) && /féminin/.test(p)));
+});
+
+test('troisieme-oeil answers "qu’est-ce que le troisième œil" up front', () => {
+  const t = findTerm('troisieme-oeil')!;
+  assert.match(t.answerCapsule, /^Le troisième œil est un centre énergétique/);
+  assert.match(t.definitionCourte, /^Le troisième œil est/);
+  assert.ok(faqQuestions('troisieme-oeil').includes('Qu’est-ce que le troisième œil ?'));
+});
+
+test('ombre-shadow-work leads with the "shadow work" anglicism in its title-level fields', () => {
+  const t = findTerm('ombre-shadow-work')!;
+  // `terme` is interpolated into both the <h1> and generateMetadata()'s title,
+  // so the anglicism (which carries the search volume) must come FIRST rather
+  // than trail the French term in parentheses.
+  assert.equal(t.terme, 'Shadow Work (Travail de l’Ombre)');
+  assert.match(t.definitionCourte, /shadow work/i);
+  assert.match(t.answerCapsule, /shadow work/i);
+  assert.ok(faqQuestions('ombre-shadow-work').includes('Qu’est-ce que le shadow work ?'));
+});

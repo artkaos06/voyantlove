@@ -82,7 +82,7 @@ export default function AstrologieAmoureusePage() {
 
         {/* Section: Qu&apos;est-ce que l&apos;astrologie amoureuse */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6"> Qu&apos;est-ce que l&apos;Astrologie Amoureuse ?</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Qu&apos;est-ce que l&apos;Astrologie Amoureuse ?</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">L&apos;astrologie amoureuse est une branche de l&apos;astrologie qui analyse V&eacute;nus, Mars, la Lune et les maisons de votre th&egrave;me natal pour r&eacute;v&eacute;ler votre style amoureux, vos besoins affectifs et votre compatibilit&eacute; de couple.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             L&apos;<strong>astrologie amoureuse</strong> est l&apos;une des <Link href="/methodes-voyance/" className="text-violet-600 hover:text-violet-800 underline font-medium">m&eacute;thodes de voyance</Link> les plus anciennes, une branche sp&eacute;cialis&eacute;e qui se concentre exclusivement sur les m&eacute;canismes du c&oelig;ur, de l&apos;attraction et de la <strong>compatibilit&eacute; de couple</strong>. Elle transcende les horoscopes simplistes bas&eacute;s sur le seul signe solaire pour explorer la richesse compl&egrave;te de votre <strong>th&egrave;me natal</strong> sous l&apos;angle sentimental.
@@ -114,7 +114,7 @@ export default function AstrologieAmoureusePage() {
 
         {/* Section: La Synastrie */}
         <section id="synastrie" className="bg-gradient-to-br from-violet-50 to-purple-50 rounded-xl p-8 mb-8 border-2 border-violet-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6"> La Synastrie &mdash; Votre Couple au Microscope Astral</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">La Synastrie &mdash; Votre Couple au Microscope Astral</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">La synastrie superpose deux th&egrave;mes nataux pour identifier les aspects plan&eacute;taires entre partenaires : conjonctions (fusion), trigones (harmonie), carr&eacute;s (tension cr&eacute;atrice) et oppositions (attraction des contraires).</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             La <strong>synastrie</strong> est la technique reine de l&apos;<strong>astrologie amoureuse</strong>. Elle consiste &agrave; superposer deux <strong>th&egrave;mes nataux</strong> pour identifier les <strong>aspects plan&eacute;taires</strong> qui r&eacute;v&egrave;lent la nature profonde du lien entre deux personnes. Chaque aspect raconte une histoire sp&eacute;cifique sur votre <strong>relation de couple</strong>.
@@ -172,22 +172,22 @@ export default function AstrologieAmoureusePage() {
 
           <div className="space-y-5">
             <div className="bg-red-50 rounded-lg p-5 border-l-4 border-red-400">
-              <h3 className="font-bold text-red-700 mb-2"> Signes de Feu &mdash; B&eacute;lier, Lion, Sagittaire</h3>
+              <h3 className="font-bold text-red-700 mb-2">Signes de Feu &mdash; B&eacute;lier, Lion, Sagittaire</h3>
               <p className="text-gray-700 text-sm mb-2">Passionn&eacute;s, enthousiastes et spontan&eacute;s en <strong>amour</strong>. Compatibles naturellement entre eux et avec les signes d&apos;Air (G&eacute;meaux, Balance, Verseau) qui attisent leur flamme. Le <strong>B&eacute;lier</strong> aime conqu&eacute;rir, le <strong>Lion</strong> cherche l&apos;adoration, le <strong>Sagittaire</strong> d&eacute;sire l&apos;aventure. Ensemble, les signes de Feu cr&eacute;ent des <strong>relations</strong> intenses et vibrantes mais doivent g&eacute;rer l&apos;orgueil et la comp&eacute;tition.</p>
             </div>
 
             <div className="bg-green-50 rounded-lg p-5 border-l-4 border-green-400">
-              <h3 className="font-bold text-green-700 mb-2"> Signes de Terre &mdash; Taureau, Vierge, Capricorne</h3>
+              <h3 className="font-bold text-green-700 mb-2">Signes de Terre &mdash; Taureau, Vierge, Capricorne</h3>
               <p className="text-gray-700 text-sm mb-2">Stables, sensuels et fid&egrave;les en <strong>amour</strong>. Compatibles entre eux et avec les signes d&apos;Eau (Cancer, Scorpion, Poissons) qui nourrissent leur besoin de s&eacute;curit&eacute; &eacute;motionnelle. Le <strong>Taureau</strong> recherche la sensualit&eacute;, la <strong>Vierge</strong> le d&eacute;vouement, le <strong>Capricorne</strong> l&apos;engagement durable. Les <strong>couples</strong> de Terre construisent des <strong>relations</strong> solides et concr&egrave;tes.</p>
             </div>
 
             <div className="bg-blue-50 rounded-lg p-5 border-l-4 border-blue-400">
-              <h3 className="font-bold text-blue-700 mb-2"> Signes d&apos;Air &mdash; G&eacute;meaux, Balance, Verseau</h3>
+              <h3 className="font-bold text-blue-700 mb-2">Signes d&apos;Air &mdash; G&eacute;meaux, Balance, Verseau</h3>
               <p className="text-gray-700 text-sm mb-2">Communicatifs, intellectuels et sociables en <strong>amour</strong>. Compatibles entre eux et avec les signes de Feu qui apportent la passion &agrave; leur monde d&apos;id&eacute;es. Les <strong>G&eacute;meaux</strong> recherchent la stimulation mentale, la <strong>Balance</strong> l&apos;harmonie parfaite, le <strong>Verseau</strong> la libert&eacute; dans l&apos;engagement. Les <strong>couples</strong> d&apos;Air privil&eacute;gient le dialogue et la complicit&eacute; intellectuelle.</p>
             </div>
 
             <div className="bg-cyan-50 rounded-lg p-5 border-l-4 border-cyan-400">
-              <h3 className="font-bold text-cyan-700 mb-2"> Signes d&apos;Eau &mdash; Cancer, Scorpion, Poissons</h3>
+              <h3 className="font-bold text-cyan-700 mb-2">Signes d&apos;Eau &mdash; Cancer, Scorpion, Poissons</h3>
               <p className="text-gray-700 text-sm mb-2">&Eacute;motionnels, intuitifs et profonds en <strong>amour</strong>. Compatibles entre eux et avec les signes de Terre qui leur offrent l&apos;ancrage n&eacute;cessaire. Le <strong>Cancer</strong> recherche la protection, le <strong>Scorpion</strong> la fusion totale, les <strong>Poissons</strong> l&apos;amour inconditionnel. Les <strong>couples</strong> d&apos;Eau vivent des <strong>relations sentimentales</strong> intenses et profond&eacute;ment &eacute;motionnelles.</p>
             </div>
           </div>
@@ -236,7 +236,7 @@ export default function AstrologieAmoureusePage() {
 
         {/* Section: Transits Favorables */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6"> Transits Plan&eacute;taires Favorables &agrave; l&apos;Amour</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Transits Plan&eacute;taires Favorables &agrave; l&apos;Amour</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Les transits les plus favorables &agrave; l&apos;amour sont Jupiter en Maison VII (rencontres), le retour de V&eacute;nus (renouveau sentimental), Pluton en aspect &agrave; V&eacute;nus (transformation profonde) et Saturne en Maison VII (engagement s&eacute;rieux).</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Les <strong>transits plan&eacute;taires</strong> sont les d&eacute;placements actuels des plan&egrave;tes par rapport &agrave; votre <strong>th&egrave;me natal</strong>. Certains transits ouvrent des fen&ecirc;tres sentimentales privil&eacute;gi&eacute;es qui favorisent les <strong>rencontres amoureuses</strong>, les engagements ou les transformations relationnelles. L&apos;<strong>astrologue amoureux</strong> identifie ces p&eacute;riodes dans votre th&egrave;me personnel.
@@ -271,7 +271,7 @@ export default function AstrologieAmoureusePage() {
 
         {/* Section: Combiner Astrologie et Tarot */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6"> Combiner Astrologie et Tarot pour l&apos;Amour</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Combiner Astrologie et Tarot pour l&apos;Amour</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Combiner astrologie et tarot offre la lecture amoureuse la plus compl&egrave;te : l&apos;astrologie r&eacute;v&egrave;le les tendances de fond de votre th&egrave;me natal, tandis que le tarot capte les &eacute;nergies vivantes du moment pr&eacute;sent.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             La combinaison de l&apos;<strong>astrologie amoureuse</strong> et du <Link href="/methodes-voyance/tirage-tarot-amour/" className="text-violet-600 hover:text-violet-800 underline font-medium">tirage de tarot amoureux</Link> cr&eacute;e la lecture la plus compl&egrave;te et la plus pr&eacute;cise de votre <strong>destin&eacute;e amoureuse</strong>. L&agrave; o&ugrave; l&apos;astrologie montre les tendances de fond inscrites dans votre <strong>th&egrave;me natal</strong>, le <strong>tarot</strong> capte les &eacute;nergies vivantes du moment pr&eacute;sent. Ensemble, ces deux outils offrent une <strong>vision holistique</strong> incomparable.

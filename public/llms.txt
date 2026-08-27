@@ -7,10 +7,10 @@ site_url: https://www.voyantlove.fr
 language: fr
 primary_language: fr-FR
 content_type: Voyance et Guidance Amoureuse Spécialisée
-last_updated: 2026-08-12
+last_updated: 2026-08-28
 
 # Description
-description: VoyantLove.fr est un site de voyance spécialisé en guidance amoureuse professionnelle. Nous proposons des consultations de tarot et de voyance pour toutes les questions sentimentales : reconquérir son ex, gérer une rupture, trouver l'amour, comprendre les sentiments de l'autre, résoudre les crises de couple. Notre expertise de 15 ans et notre taux de satisfaction de 4.8/5 témoignent de la qualité de nos guidances.
+description: VoyantLove.fr est un site de voyance spécialisé en guidance amoureuse. Nous proposons des consultations de tarot et de voyance pour les questions sentimentales (reconquérir son ex, gérer une rupture, trouver l'amour, comprendre les sentiments de l'autre, résoudre les crises de couple), ainsi que des outils gratuits : tirage tarot oui/non, oracle de l'amour, dictionnaire des rêves amoureux (82 symboles), glossaire de la voyance sentimentale et guides de compatibilité astrologique.
 
 # Primary Topics
 topics:
@@ -27,6 +27,12 @@ priority_pages:
   - https://www.voyantlove.fr/reconquete/va-t-il-elle-revenir (Va-t-il/elle Revenir - Prédiction tarot)
   - https://www.voyantlove.fr/rupture/oublier-son-ex (Oublier son Ex - Étapes de guérison)
   - https://www.voyantlove.fr/nouvelle-rencontre/quand-rencontre-amour (Quand Vais-je Rencontrer l'Amour)
+  - https://www.voyantlove.fr/voyance-gratuite-amour/ (Voyance gratuite amour - outils et tirages gratuits)
+  - https://www.voyantlove.fr/voyance-gratuite-amour/tarot-oui-non-amour/ (Tirage tarot oui/non amour gratuit et interactif)
+  - https://www.voyantlove.fr/glossaire/amour-karmique/ (Relation karmique - définition, signes, test)
+  - https://www.voyantlove.fr/nouvelle-rencontre/flamme-jumelle/ (Flamme jumelle - signes et heures miroirs)
+  - https://www.voyantlove.fr/reves-amour/ (Dictionnaire des rêves amoureux, 82 symboles)
+  - https://www.voyantlove.fr/compatibilite-amoureuse/ (Compatibilité amoureuse entre signes astrologiques)
 
 # Hub Pages
 hub_pages:

@@ -28,6 +28,8 @@ export default function VoyantRailSection({ source, title, bare = false }: Voyan
       {title && <h2 className="sr-only">{title}</h2>}
       <VoyantRail
         title="Voyants disponibles maintenant"
+        fallbackTitle="Nos voyants amour"
+        onlineOnly
         subtitle="Tarif à la minute affiché sur chaque fiche."
         limit={16}
         source={`${source}-online`}

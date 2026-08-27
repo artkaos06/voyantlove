@@ -93,7 +93,7 @@ export default function VoyanceParMailAmourPage() {
 
           <div className="grid md:grid-cols-2 gap-6 mb-6">
             <div className="bg-white rounded-lg p-6 border-2 border-teal-300">
-              <h3 className="font-bold text-xl mb-4 text-teal-700"> Comment se déroule la consultation</h3>
+              <h3 className="font-bold text-xl mb-4 text-teal-700">Comment se déroule la consultation</h3>
               <div className="space-y-3 text-gray-700">
                 <div className="flex items-start gap-2">
                   <span className="text-teal-500 font-bold">1.</span>
@@ -115,7 +115,7 @@ export default function VoyanceParMailAmourPage() {
             </div>
 
             <div className="bg-white rounded-lg p-6 border-2 border-cyan-300">
-              <h3 className="font-bold text-xl mb-4 text-cyan-700"> Mail vs Téléphone : Les Différences</h3>
+              <h3 className="font-bold text-xl mb-4 text-cyan-700">Mail vs Téléphone : Les Différences</h3>
               <div className="space-y-3 text-gray-700">
                 <div className="flex items-start gap-2">
                   <span className="text-green-500 font-bold">&#x2713;</span>
@@ -142,7 +142,7 @@ export default function VoyanceParMailAmourPage() {
           </div>
 
           <div className="bg-teal-50 border-l-4 border-teal-500 p-6 rounded-lg">
-            <h4 className="font-bold text-teal-800 mb-2"> Avantage clé de la voyance par mail</h4>
+            <h4 className="font-bold text-teal-800 mb-2">Avantage clé de la voyance par mail</h4>
             <p className="text-gray-700">
               La <strong>consultation écrite</strong> permet au voyant de prendre le temps nécessaire pour approfondir son analyse sans la pression du temps en direct. Certains voyants travaillent mieux dans le calme de la concentration, loin de l'énergie parfois chargée d'une communication téléphonique. Vous bénéficiez ainsi d'une réflexion plus posée et d'une réponse plus structurée.
             </p>
@@ -159,7 +159,7 @@ export default function VoyanceParMailAmourPage() {
 
           <div className="space-y-5">
             <div className="bg-green-50 border-l-4 border-green-500 p-5 rounded-lg">
-              <h3 className="font-bold text-lg mb-3 text-green-700"> Exemples de Bonnes Questions</h3>
+              <h3 className="font-bold text-lg mb-3 text-green-700">Exemples de Bonnes Questions</h3>
               <ul className="space-y-2 text-gray-700">
                 <li className="flex items-start gap-2"><span className="text-green-500">&#x2713;</span> "Mon ex (prénom) pense-t-il encore à moi et est-il susceptible de me recontacter dans les prochains mois ?"</li>
                 <li className="flex items-start gap-2"><span className="text-green-500">&#x2713;</span> "La personne que je fréquente depuis 3 mois est-elle sincère dans ses sentiments ?"</li>
@@ -169,7 +169,7 @@ export default function VoyanceParMailAmourPage() {
             </div>
 
             <div className="bg-red-50 border-l-4 border-red-500 p-5 rounded-lg">
-              <h3 className="font-bold text-lg mb-3 text-red-700"> Questions à Éviter</h3>
+              <h3 className="font-bold text-lg mb-3 text-red-700">Questions à Éviter</h3>
               <ul className="space-y-2 text-gray-700">
                 <li className="flex items-start gap-2"><span className="text-red-500"></span> "Parlez-moi de ma vie amoureuse", trop vague, impossible à explorer en profondeur</li>
                 <li className="flex items-start gap-2"><span className="text-red-500"></span> "Est-ce que je serai heureuse en amour ?", trop général, sans ancrage temporel</li>
@@ -179,7 +179,7 @@ export default function VoyanceParMailAmourPage() {
             </div>
 
             <div className="bg-blue-50 border-l-4 border-blue-500 p-5 rounded-lg">
-              <h3 className="font-bold text-lg mb-3 text-blue-700"> Informations à Inclure dans Votre Mail</h3>
+              <h3 className="font-bold text-lg mb-3 text-blue-700">Informations à Inclure dans Votre Mail</h3>
               <p className="text-gray-700 mb-3">Pour faciliter la connexion énergétique du voyant, incluez systématiquement :</p>
               <ul className="space-y-2 text-gray-700">
                 <li className="flex items-start gap-2"><span className="text-blue-500 font-bold">&#x2022;</span> Votre prénom et votre date de naissance complète</li>
@@ -193,7 +193,7 @@ export default function VoyanceParMailAmourPage() {
 
         {/* Ce que la voyance par mail peut révéler */}
         <section className="bg-gradient-to-br from-cyan-50 to-blue-50 rounded-xl p-8 mb-8 border-2 border-cyan-200">
-          <h2 className="text-3xl font-bold mb-6 text-gray-900"> Ce que la Voyance par Mail peut Révéler sur Votre Amour</h2>
+          <h2 className="text-3xl font-bold mb-6 text-gray-900">Ce que la Voyance par Mail peut Révéler sur Votre Amour</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">La voyance par mail explore les sentiments cachés, les perspectives de votre relation, les blocages énergétiques et les évolutions probables dans votre vie amoureuse selon les tirages réalisés.</p>
           <p className="text-gray-700 mb-6">
             Une <strong>consultation écrite</strong> de qualité peut aller bien plus loin qu'une simple prédiction. Selon la méthode utilisée par le voyant, <strong>tirage tarot de l'amour</strong>, lecture des cartes oracles, analyse numérologique ou médiumnité, la réponse peut couvrir plusieurs dimensions de votre situation sentimentale.
@@ -201,28 +201,28 @@ export default function VoyanceParMailAmourPage() {
 
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-white rounded-lg p-6 border-l-4 border-cyan-500">
-              <h3 className="font-bold text-lg mb-3 text-cyan-700"> Sentiments et Intentions</h3>
+              <h3 className="font-bold text-lg mb-3 text-cyan-700">Sentiments et Intentions</h3>
               <p className="text-gray-700">
                 Le voyant peut lire l'état émotionnel réel de votre partenaire ou de votre ex, ses intentions conscientes et inconscientes, et la sincérité de ses sentiments envers vous. Cette lecture des <strong>énergies cachées</strong> est souvent la plus demandée en voyance amoureuse par mail.
               </p>
             </div>
 
             <div className="bg-white rounded-lg p-6 border-l-4 border-blue-500">
-              <h3 className="font-bold text-lg mb-3 text-blue-700"> Évolution et Timing</h3>
+              <h3 className="font-bold text-lg mb-3 text-blue-700">Évolution et Timing</h3>
               <p className="text-gray-700">
                 La voyance par mail peut identifier des <strong>tendances temporelles</strong> : périodes favorables pour une réconciliation, délais probables avant une évolution, moments propices pour prendre une décision. Ces indications temporelles guident vos actions sans vous enfermer dans une fatalité.
               </p>
             </div>
 
             <div className="bg-white rounded-lg p-6 border-l-4 border-teal-500">
-              <h3 className="font-bold text-lg mb-3 text-teal-700"> Blocages et Obstacles</h3>
+              <h3 className="font-bold text-lg mb-3 text-teal-700">Blocages et Obstacles</h3>
               <p className="text-gray-700">
                 Souvent, une relation stagne non par manque de sentiments, mais à cause de <strong>blocages énergétiques</strong>, de peurs non exprimées ou de schémas répétitifs. La lecture par mail peut mettre en lumière ces obstacles et vous donner des pistes concrètes pour les lever.
               </p>
             </div>
 
             <div className="bg-white rounded-lg p-6 border-l-4 border-indigo-500">
-              <h3 className="font-bold text-lg mb-3 text-indigo-700"> Potentiel de la Relation</h3>
+              <h3 className="font-bold text-lg mb-3 text-indigo-700">Potentiel de la Relation</h3>
               <p className="text-gray-700">
                 Le <strong>tirage écrit</strong> révèle le potentiel réel d'une relation : durabilité, compatibilité profonde, perspectives d'engagement ou de mariage, et compatibilité entre vos projets de vie respectifs. Ces éléments permettent de prendre des décisions éclairées sur l'avenir de votre couple.
               </p>
@@ -230,7 +230,7 @@ export default function VoyanceParMailAmourPage() {
           </div>
 
           <div className="bg-white rounded-lg p-6 border-2 border-teal-200 mt-6">
-            <h4 className="font-bold text-teal-800 mb-3 text-lg"> Types de Tirages Réalisés par Mail</h4>
+            <h4 className="font-bold text-teal-800 mb-3 text-lg">Types de Tirages Réalisés par Mail</h4>
             <p className="text-gray-700 mb-3">
               Les voyants par mail utilisent diverses méthodes selon leur spécialité :
             </p>
@@ -247,7 +247,7 @@ export default function VoyanceParMailAmourPage() {
 
         {/* Gratuit vs payant */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold mb-6 text-teal-600"> Voyance par Mail Gratuite vs Payante</h2>
+          <h2 className="text-3xl font-bold mb-6 text-teal-600">Voyance par Mail Gratuite vs Payante</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">La voyance par mail gratuite existe mais est souvent générique ou limitée. Une consultation payante offre une réponse entièrement personnalisée, plus approfondie et rédigée spécifiquement pour votre situation.</p>
           <p className="text-gray-700 mb-6">
             L'attrait de la <strong>voyance gratuite par mail</strong> est compréhensible, notamment pour les personnes qui découvrent la voyance amoureuse ou qui ont un budget limité. Mais il est important de comprendre les différences réelles entre les deux formats avant de faire votre choix.
@@ -255,7 +255,7 @@ export default function VoyanceParMailAmourPage() {
 
           <div className="grid md:grid-cols-2 gap-6 mb-6">
             <div className="bg-gray-50 rounded-lg p-6 border-2 border-gray-300">
-              <h3 className="font-bold text-xl mb-4 text-gray-700"> Voyance par Mail Gratuite</h3>
+              <h3 className="font-bold text-xl mb-4 text-gray-700">Voyance par Mail Gratuite</h3>
               <div className="space-y-3 text-gray-700">
                 <div className="flex items-start gap-2">
                   <span className="text-green-500 font-bold">&#x2713;</span>
@@ -281,7 +281,7 @@ export default function VoyanceParMailAmourPage() {
             </div>
 
             <div className="bg-teal-50 rounded-lg p-6 border-2 border-teal-300">
-              <h3 className="font-bold text-xl mb-4 text-teal-700"> Voyance par Mail Payante</h3>
+              <h3 className="font-bold text-xl mb-4 text-teal-700">Voyance par Mail Payante</h3>
               <div className="space-y-3 text-gray-700">
                 <div className="flex items-start gap-2">
                   <span className="text-green-500 font-bold">&#x2713;</span>
@@ -317,7 +317,7 @@ export default function VoyanceParMailAmourPage() {
 
         {/* Choisir son voyant par mail */}
         <section id="choisir" className="bg-gradient-to-br from-teal-50 to-cyan-50 rounded-xl p-8 mb-8 border-2 border-teal-200">
-          <h2 className="text-3xl font-bold mb-6 text-gray-900"> Comment Choisir son Voyant par Mail</h2>
+          <h2 className="text-3xl font-bold mb-6 text-gray-900">Comment Choisir son Voyant par Mail</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Un bon voyant par mail se distingue par sa transparence sur ses méthodes, un délai de réponse réaliste et des avis clients vérifiables. Les promesses de résultats garantis sont toujours un signal d'alarme.</p>
           <p className="text-gray-700 mb-6">
             Face à la multitude de voyants proposant des consultations par mail sur internet, la sélection est cruciale. Une mauvaise expérience peut non seulement vous coûter de l'argent, mais aussi vous induire en erreur sur votre situation amoureuse.
@@ -325,7 +325,7 @@ export default function VoyanceParMailAmourPage() {
 
           <div className="space-y-5">
             <div className="bg-white rounded-lg p-6 border-l-4 border-green-500">
-              <h3 className="font-bold text-lg mb-3 text-green-700"> Critères d'un Voyant par Mail Sérieux</h3>
+              <h3 className="font-bold text-lg mb-3 text-green-700">Critères d'un Voyant par Mail Sérieux</h3>
               <ul className="space-y-2 text-gray-700">
                 <li className="flex items-start gap-2"><span className="text-green-500">&#x2713;</span> <strong>Présentation claire :</strong> Sa biographie mentionne son parcours, ses dons et ses méthodes de travail</li>
                 <li className="flex items-start gap-2"><span className="text-green-500">&#x2713;</span> <strong>Délai réaliste :</strong> Il annonce 24 à 72 heures, jamais une réponse "instantanée" par mail</li>
@@ -337,7 +337,7 @@ export default function VoyanceParMailAmourPage() {
             </div>
 
             <div className="bg-red-50 border-l-4 border-red-500 p-5 rounded-lg">
-              <h3 className="font-bold text-lg mb-3 text-red-700"> Red Flags à Éviter Absolument</h3>
+              <h3 className="font-bold text-lg mb-3 text-red-700">Red Flags à Éviter Absolument</h3>
               <ul className="space-y-2 text-gray-700">
                 <li className="flex items-start gap-2"><span className="text-red-500"></span> "Je ressens que vous êtes sous l'emprise d'un sort", manipulation classique pour vendre des rituels coûteux</li>
                 <li className="flex items-start gap-2"><span className="text-red-500"></span> Demandes d'argent répétées après la première consultation</li>

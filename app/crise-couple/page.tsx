@@ -165,7 +165,7 @@ export default function CriseCoupleHubPage() {
           <div className="space-y-6">
             <div className="border-b border-gray-200 pb-6">
               <h3 className="text-xl font-bold text-gray-900 mb-3">Crise de couple passagère ou définitive ?</h3>
-              <p className="text-gray-700 leading-relaxed">Une crise passagère se caractérise par des <strong>tensions temporaires</strong> liées à un événement précis : déménagement, naissance, stress professionnel. Les deux partenaires conservent une <strong>volonté de dialogue</strong> et un attachement sincère. En revanche, une <strong>rupture définitive</strong> s&apos;installe quand l&apos;indifférence remplace le conflit, quand les <strong>projets communs</strong> disparaissent et que le <strong>désir de reconstruction</strong> s&apos;éteint. Le tarot relationnel permet d&apos;identifier les <strong>énergies dominantes</strong> du couple et de distinguer une phase de transformation d&apos;un point de non-retour. Un tirage ciblé révèle si les <strong>blocages émotionnels</strong> sont surmontables ou profondément enracinés.</p>
+              <p className="text-gray-700 leading-relaxed">Une crise passagère se caractérise par des <strong>tensions temporaires</strong> liées à un événement précis : déménagement, naissance, stress professionnel. Les deux partenaires conservent une <strong>volonté de dialogue</strong> et un attachement sincère. En revanche, une <strong>rupture définitive</strong> s&apos;installe quand l&apos;indifférence remplace le conflit, quand les <strong>projets communs</strong> disparaissent et que le <strong>désir de reconstruction</strong> s&apos;éteint. Le tarot relationnel permet d&apos;identifier les <strong>énergies dominantes</strong> du couple et de distinguer une phase de transformation d&apos;un point de non-retour. Un tirage ciblé révèle si les <strong>blocages émotionnels</strong> sont surmontables ou profondément enracinés. Pour un premier repère sans engagement, la <Link href="/voyance-gratuite-amour/" className="text-orange-600 hover:text-orange-800 underline font-medium">voyance gratuite amour</Link> propose un tirage immédiat sur la situation de votre couple.</p>
             </div>
             <div className="border-b border-gray-200 pb-6">
               <h3 className="text-xl font-bold text-gray-900 mb-3">La voyance peut-elle sauver un couple ?</h3>
@@ -198,6 +198,10 @@ export default function CriseCoupleHubPage() {
             <Link href="/sentiments/" className="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition">
               <h3 className="font-bold text-gray-900 mb-1">Sentiments Amoureux</h3>
               <p className="text-sm text-gray-600">Décrypter les vrais sentiments de votre partenaire pendant la crise.</p>
+            </Link>
+            <Link href="/voyance-gratuite-amour/" className="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition">
+              <h3 className="font-bold text-gray-900 mb-1">Voyance gratuite amour</h3>
+              <p className="text-sm text-gray-600">Un premier éclairage sur votre couple : tirage tarot et oracle, sans engagement.</p>
             </Link>
             <Link href="/consulter/" className="bg-purple-50 rounded-lg p-4 hover:bg-purple-100 transition border border-purple-200">
               <h3 className="font-bold text-purple-900 mb-1">Consulter un Voyant</h3>

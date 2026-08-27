@@ -75,33 +75,37 @@ export default function TarotOuiNonAmourPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(authorSchema) }}
       />
 
-      {/* Header */}
-      <header className="bg-gradient-to-r from-emerald-500 via-green-500 to-teal-500 text-white py-16 px-4">
+      {/* Header — aligné sur le bandeau de la refonte (fond blanc, typo à
+          gauche, une seule couleur d'accent), comme components/ContentPage.tsx. */}
+      <header className="border-b border-gray-200 bg-white px-4 pb-7 pt-8 sm:pt-12">
         <div className="max-w-4xl mx-auto">
-          <Link href="/voyance-gratuite-amour/" className="text-white/80 hover:text-white mb-4 inline-block">&larr; Retour &agrave; Voyance Gratuite Amour</Link>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Tarot oui non amour gratuit</h1>
-          <p className="text-xl opacity-95 mb-6">Tirage gratuit et sérieux, posez votre question et tirez une carte pour votre réponse</p>
-          <div className="flex gap-4 flex-wrap">
-            <a href="#tirage" className="bg-white text-emerald-600 px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition">Tirer une Carte ↓</a>
-            <a href="#questions" className="border-2 border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-emerald-600 transition">Les 10 Questions</a>
-          </div>
+          <Link href="/voyance-gratuite-amour/" className="mb-3 inline-block text-sm text-purple-700 hover:text-purple-900 hover:underline">&larr; Retour &agrave; Voyance Gratuite Amour</Link>
+          <h1 className="text-[1.75rem] font-bold leading-[1.15] tracking-tight text-gray-900 sm:text-4xl">Tarot oui non amour gratuit</h1>
+          <p className="mt-3 max-w-2xl text-[0.95rem] leading-relaxed text-gray-600">Tirage gratuit et sérieux, posez votre question et tirez une carte pour votre réponse</p>
         </div>
       </header>
 
-        <VoyantRecommendations variant="rail" topic="voyance-gratuite" limit={3} showOnlineFirst={true} source="tarot-oui-non-amour-cards-top" />
-
-      {/* Interactive Tarot Tool */}
-      <section id="tirage" className="max-w-4xl mx-auto px-4 py-8">
+      {/* Le tirage d'abord. Les requêtes qui amènent ici ("tirage oui non
+          gratuit", "tarots amour oui non") sont des intentions d'outil : le
+          module doit être visible sans scroller, avant le rail de voyants. */}
+      <section id="tirage" className="max-w-4xl mx-auto px-4 pt-6">
         <TarotOuiNon />
+        <p className="mt-3 text-center text-sm text-gray-600">
+          <a href="#questions" className="font-medium text-purple-700 hover:text-purple-900 hover:underline">Les 10 questions les plus pos&eacute;es au tarot oui/non &darr;</a>
+        </p>
       </section>
+
+      <div className="pt-8">
+        <VoyantRecommendations variant="rail" topic="voyance-gratuite" limit={3} showOnlineFirst={true} source="tarot-oui-non-amour-cards-top" />
+      </div>
 
       <div className="max-w-4xl mx-auto px-4 py-8">
         {/* Stats bar */}
         <div className="bg-white rounded-xl shadow-md p-6 mb-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-          <div><div className="text-3xl mb-1"></div><div className="text-2xl font-bold text-emerald-600">Direct</div><div className="text-sm text-gray-600">R&eacute;ponses claires</div></div>
-          <div><div className="text-3xl mb-1"></div><div className="text-2xl font-bold text-emerald-600">1 carte</div><div className="text-sm text-gray-600">Parmi 22 arcanes</div></div>
-          <div><div className="text-3xl mb-1"></div><div className="text-2xl font-bold text-emerald-600">Populaire</div><div className="text-sm text-gray-600">Tirage le plus demand&eacute;</div></div>
-          <div><div className="text-3xl mb-1"></div><div className="text-2xl font-bold text-emerald-600">Accessible</div><div className="text-sm text-gray-600">Pour tous les niveaux</div></div>
+          <div><div className="text-2xl font-bold text-purple-700">Direct</div><div className="text-sm text-gray-600">R&eacute;ponses claires</div></div>
+          <div><div className="text-2xl font-bold text-purple-700">1 carte</div><div className="text-sm text-gray-600">Parmi 22 arcanes</div></div>
+          <div><div className="text-2xl font-bold text-purple-700">Populaire</div><div className="text-sm text-gray-600">Tirage le plus demand&eacute;</div></div>
+          <div><div className="text-2xl font-bold text-purple-700">Accessible</div><div className="text-sm text-gray-600">Pour tous les niveaux</div></div>
         </div>
 
         {/* EEAT Signal */}
@@ -123,10 +127,10 @@ export default function TarotOuiNonAmourPage() {
 
         {/* Section 1: Principe du Tirage Oui/Non en Amour */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6"> Principe du Tirage Oui/Non en Amour</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Principe du Tirage Oui/Non en Amour</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le tirage propos&eacute; ici repose sur une carte tir&eacute;e parmi les 22 arcanes majeurs du Tarot de Marseille. Chaque carte porte une interpr&eacute;tation oui, non ou nuanc&eacute;e.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Le principe du module est simple&nbsp;: chaque <strong>arcane majeur</strong> du <strong>Tarot de Marseille</strong> re&ccedil;oit une interpr&eacute;tation stable &mdash; oui, non ou nuanc&eacute;e &mdash; adapt&eacute;e &agrave; une question sentimentale. Une seule carte est choisie et son interpr&eacute;tation oriente la r&eacute;ponse. Cette m&eacute;thode fait partie des approches de <Link href="/voyance-gratuite-amour/" className="text-emerald-600 hover:text-emerald-800 underline font-medium">voyance gratuite amour</Link> les plus demand&eacute;es.
+            Le principe du module est simple&nbsp;: chaque <strong>arcane majeur</strong> du <strong>Tarot de Marseille</strong> re&ccedil;oit une interpr&eacute;tation stable &mdash; oui, non ou nuanc&eacute;e &mdash; adapt&eacute;e &agrave; une question sentimentale. Une seule carte est choisie et son interpr&eacute;tation oriente la r&eacute;ponse. Cette m&eacute;thode fait partie des approches de <Link href="/voyance-gratuite-amour/" className="text-purple-700 hover:text-purple-900 underline font-medium">voyance gratuite amour</Link> les plus demand&eacute;es.
           </p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Le processus est structur&eacute; en trois &eacute;tapes. Vous formulez une <strong>question sentimentale</strong> claire et binaire, le jeu complet des 22 <strong>arcanes majeurs</strong> est m&eacute;lang&eacute;, puis vous choisissez une carte. Le Soleil, les Amoureux, l&apos;&Eacute;toile et Temp&eacute;rance donnent ici un &laquo;&nbsp;oui&nbsp;&raquo;&nbsp;; la Maison Dieu, le Diable et l&apos;Arcane sans nom donnent un &laquo;&nbsp;non&nbsp;&raquo;&nbsp;; la Lune, le Jugement ou la Roue de Fortune apportent une r&eacute;ponse nuanc&eacute;e.
@@ -141,10 +145,10 @@ export default function TarotOuiNonAmourPage() {
 
         {/* Section 2: Les 10 Questions Amour les Plus Posées */}
         <section id="questions" className="bg-gradient-to-br from-emerald-50 to-green-50 rounded-xl p-8 mb-8 border-2 border-emerald-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6"> Les 10 Questions Amour les Plus Pos&eacute;es</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Les 10 Questions Amour les Plus Pos&eacute;es</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Les questions les plus fr&eacute;quentes au tarot oui/non amour portent sur la r&eacute;ciprocit&eacute; des sentiments, l&apos;avenir du couple, le retour de l&apos;ex et la possibilit&eacute; d&apos;une nouvelle rencontre.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Apr&egrave;s des ann&eacute;es de pratique en <strong>voyance sentimentale</strong>, certaines <strong>questions amoureuses</strong> reviennent avec une constance r&eacute;v&eacute;latrice. Voici les dix interrogations les plus pos&eacute;es au <strong>tarot oui non amour</strong>, accompagn&eacute;es de conseils pour les formuler de mani&egrave;re optimale. Si vous souhaitez <Link href="/sentiments/pense-t-il-elle-a-moi/" className="text-emerald-600 hover:text-emerald-800 underline font-medium">savoir s&apos;il pense &agrave; vous</Link>, le tirage oui/non apporte souvent une premi&egrave;re r&eacute;ponse &eacute;clairante.
+            Apr&egrave;s des ann&eacute;es de pratique en <strong>voyance sentimentale</strong>, certaines <strong>questions amoureuses</strong> reviennent avec une constance r&eacute;v&eacute;latrice. Voici les dix interrogations les plus pos&eacute;es au <strong>tarot oui non amour</strong>, accompagn&eacute;es de conseils pour les formuler de mani&egrave;re optimale. Si vous souhaitez <Link href="/sentiments/pense-t-il-elle-a-moi/" className="text-purple-700 hover:text-purple-900 underline font-medium">savoir s&apos;il pense &agrave; vous</Link>, le tirage oui/non apporte souvent une premi&egrave;re r&eacute;ponse &eacute;clairante.
           </p>
 
           <div className="space-y-4">
@@ -193,15 +197,15 @@ export default function TarotOuiNonAmourPage() {
 
         {/* Section 3: Cartes Oui vs Cartes Non en Amour */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6"> Cartes Oui vs Cartes Non en Amour</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Cartes oui vs cartes non en amour</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Chaque arcane majeur du Tarot de Marseille poss&egrave;de une polarit&eacute; sentimentale qui d&eacute;termine s&apos;il s&apos;agit d&apos;une carte &laquo;&nbsp;oui&nbsp;&raquo;, &laquo;&nbsp;non&nbsp;&raquo; ou &laquo;&nbsp;neutre/conditionnel&nbsp;&raquo; dans un tirage amoureux.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             La classification des <strong>arcanes majeurs</strong> en cartes positives et n&eacute;gatives est le fondement du <strong>tarot oui non amour</strong>. Cette polarit&eacute; n&apos;est pas absolue : elle varie selon le contexte de la <strong>question sentimentale</strong> et l&apos;intuition du <strong>tarologue</strong>. Voici le classement de r&eacute;f&eacute;rence utilis&eacute; en <strong>voyance amoureuse</strong> pour interpr&eacute;ter le tirage.
           </p>
 
           <div className="grid md:grid-cols-2 gap-6 mb-6">
-            <div className="bg-green-50 border-2 border-green-300 rounded-xl p-5">
-              <h3 className="font-bold text-lg mb-3 text-green-700 text-center"> Cartes OUI en Amour</h3>
+            <div className="rounded-xl border border-green-200 bg-green-50 p-5">
+              <h3 className="font-bold text-lg mb-3 text-green-700 text-center">Cartes oui en amour</h3>
               <ul className="text-gray-700 text-sm space-y-2">
                 <li>&bull; <strong>Le Bateleur (I)</strong> &mdash; Initiative, premier pas, nouvelle relation</li>
                 <li>&bull; <strong>L&apos;Imp&eacute;ratrice (III)</strong> &mdash; S&eacute;duction, f&eacute;condit&eacute;</li>
@@ -216,8 +220,8 @@ export default function TarotOuiNonAmourPage() {
               </ul>
             </div>
 
-            <div className="bg-red-50 border-2 border-red-300 rounded-xl p-5">
-              <h3 className="font-bold text-lg mb-3 text-red-700 text-center"> Cartes NON en Amour</h3>
+            <div className="rounded-xl border border-red-200 bg-red-50 p-5">
+              <h3 className="font-bold text-lg mb-3 text-red-700 text-center">Cartes non en amour</h3>
               <ul className="text-gray-700 text-sm space-y-2">
                 <li>&bull; <strong>L&apos;Ermite (IX)</strong> &mdash; Solitude, retrait</li>
                 <li>&bull; <strong>Le Pendu (XII)</strong> &mdash; Blocage, sacrifice</li>
@@ -228,8 +232,8 @@ export default function TarotOuiNonAmourPage() {
             </div>
           </div>
 
-          <div className="bg-yellow-50 border-2 border-yellow-300 rounded-xl p-5 mb-6">
-            <h3 className="font-bold text-lg mb-3 text-yellow-700 text-center">&#xFE0F; Cartes Conditionnelles</h3>
+          <div className="mb-6 rounded-xl border border-amber-200 bg-amber-50 p-5">
+            <h3 className="font-bold text-lg mb-3 text-amber-700 text-center">Cartes conditionnelles</h3>
             <p className="text-gray-700 text-sm mb-3">
               Certains <strong>arcanes</strong> ne sont ni clairement oui ni clairement non. Leur signification d&eacute;pend enti&egrave;rement du contexte de votre <strong>question amoureuse</strong> et des cartes qui les accompagnent dans le <strong>tirage</strong>.
             </p>
@@ -245,44 +249,44 @@ export default function TarotOuiNonAmourPage() {
           </div>
 
           <p className="text-gray-700 leading-relaxed">
-            Il est essentiel de comprendre que cette classification sert de guide, pas de r&egrave;gle absolue. Un <strong>voyant</strong> exp&eacute;riment&eacute; en <strong>tarot amoureux</strong> adapte sa lecture &agrave; votre contexte personnel. Pour d&eacute;couvrir si votre ex pr&eacute;sente des <Link href="/reconquete/ex-qui-revient/" className="text-emerald-600 hover:text-emerald-800 underline font-medium">signes qu&apos;un ex revient</Link>, le tirage oui/non peut confirmer l&apos;&eacute;nergie de retour per&ccedil;ue dans votre <strong>situation sentimentale</strong>.
+            Il est essentiel de comprendre que cette classification sert de guide, pas de r&egrave;gle absolue. Un <strong>voyant</strong> exp&eacute;riment&eacute; en <strong>tarot amoureux</strong> adapte sa lecture &agrave; votre contexte personnel. Pour d&eacute;couvrir si votre ex pr&eacute;sente des <Link href="/reconquete/ex-qui-revient/" className="text-purple-700 hover:text-purple-900 underline font-medium">signes qu&apos;un ex revient</Link>, le tirage oui/non peut confirmer l&apos;&eacute;nergie de retour per&ccedil;ue dans votre <strong>situation sentimentale</strong>.
           </p>
         </section>
 
         <VoyantQuickCTA topic="voyance-gratuite" source="tarot-oui-non-amour-banner-mid" />
 
         {/* Section 4: Limites du Tirage Oui/Non */}
-        <section className="bg-gradient-to-br from-green-50 to-teal-50 rounded-xl p-8 mb-8 border-2 border-green-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">&#xFE0F; Limites du Tirage Oui/Non</h2>
+        <section className="bg-white rounded-xl shadow-md p-8 mb-8">
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Limites du tirage oui/non</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le tirage oui/non amour offre des r&eacute;ponses directes mais simplifie n&eacute;cessairement des situations sentimentales complexes. Conna&icirc;tre ses limites vous aide &agrave; l&apos;utiliser &agrave; bon escient.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Aussi pratique et populaire soit-il, le <strong>tarot oui non amour</strong> pr&eacute;sente des limites inh&eacute;rentes &agrave; sa nature binaire. Comprendre ces contraintes vous permet d&apos;utiliser ce <strong>tirage</strong> de mani&egrave;re &eacute;clair&eacute;e et de savoir quand il est pr&eacute;f&eacute;rable de basculer vers un <strong>tirage sentimental</strong> plus d&eacute;taill&eacute; avec un <strong>voyant sp&eacute;cialis&eacute;</strong>.
           </p>
 
           <div className="space-y-5">
-            <div className="bg-white rounded-lg p-5 border-l-4 border-orange-500">
-              <h3 className="font-bold text-lg mb-2 text-orange-700">La Simplification des &Eacute;motions</h3>
+            <div className="rounded-lg border-l-4 border-purple-700 bg-gray-50 p-5">
+              <h3 className="font-bold text-lg mb-2 text-gray-900">La simplification des &eacute;motions</h3>
               <p className="text-gray-700 text-sm">
                 Les <strong>sentiments amoureux</strong> sont rarement binaires. Un partenaire peut vous aimer sinc&egrave;rement tout en ayant peur de l&apos;engagement. Le <strong>tarot oui/non</strong> ne capte pas ces nuances essentielles. La r&eacute;ponse &laquo;&nbsp;oui, il vous aime&nbsp;&raquo; peut masquer un &laquo;&nbsp;mais il n&apos;est pas pr&ecirc;t&nbsp;&raquo; que seul un <strong>tirage en croix</strong> complet ou une <strong>consultation</strong> avec un tarologue pourra r&eacute;v&eacute;ler.
               </p>
             </div>
 
-            <div className="bg-white rounded-lg p-5 border-l-4 border-amber-500">
-              <h3 className="font-bold text-lg mb-2 text-amber-700">L&apos;Absence de Temporalit&eacute;</h3>
+            <div className="rounded-lg border-l-4 border-purple-700 bg-gray-50 p-5">
+              <h3 className="font-bold text-lg mb-2 text-gray-900">L&apos;absence de temporalit&eacute;</h3>
               <p className="text-gray-700 text-sm">
                 Le <strong>tirage oui/non</strong> ne pr&eacute;cise g&eacute;n&eacute;ralement pas le &laquo;&nbsp;quand&nbsp;&raquo;. Une r&eacute;ponse positive &agrave; &laquo;&nbsp;va-t-il revenir&nbsp;?&nbsp;&raquo; ne dit pas si ce retour aura lieu dans une semaine ou dans un an. Pour explorer la dimension temporelle, un <strong>voyant</strong> utilise des tirages sp&eacute;cifiques comme le tirage du chemin amoureux, qui trace une <strong>chronologie sentimentale</strong> sur plusieurs mois.
               </p>
             </div>
 
-            <div className="bg-white rounded-lg p-5 border-l-4 border-red-500">
-              <h3 className="font-bold text-lg mb-2 text-red-700">Le Risque de R&eacute;p&eacute;tition Compulsive</h3>
+            <div className="rounded-lg border-l-4 border-purple-700 bg-gray-50 p-5">
+              <h3 className="font-bold text-lg mb-2 text-gray-900">Le risque de r&eacute;p&eacute;tition compulsive</h3>
               <p className="text-gray-700 text-sm">
                 Le pi&egrave;ge le plus fr&eacute;quent est de r&eacute;p&eacute;ter le <strong>tirage oui/non amour</strong> jusqu&apos;&agrave; obtenir la r&eacute;ponse d&eacute;sir&eacute;e. Ce comportement brouille les <strong>&eacute;nergies</strong>, cr&eacute;e de la confusion et invalide la pertinence des <strong>arcanes</strong>. Respectez un d&eacute;lai d&apos;au moins deux semaines entre deux tirages sur la m&ecirc;me question. Si la r&eacute;ponse ne vous convient pas, consultez un <strong>voyant sp&eacute;cialis&eacute;</strong> pour approfondir.
               </p>
             </div>
 
-            <div className="bg-white rounded-lg p-5 border-l-4 border-yellow-500">
-              <h3 className="font-bold text-lg mb-2 text-yellow-700">Les Questions Inadapt&eacute;es</h3>
+            <div className="rounded-lg border-l-4 border-purple-700 bg-gray-50 p-5">
+              <h3 className="font-bold text-lg mb-2 text-gray-900">Les questions inadapt&eacute;es</h3>
               <p className="text-gray-700 text-sm">
                 Certaines questions <strong>sentimentales</strong> ne se pr&ecirc;tent pas au format oui/non. &laquo;&nbsp;Pourquoi m&apos;a-t-il quitt&eacute;&nbsp;?&nbsp;&raquo;, &laquo;&nbsp;Quand vais-je rencontrer l&apos;amour&nbsp;?&nbsp;&raquo; ou &laquo;&nbsp;Comment sauver mon <strong>couple</strong>&nbsp;?&nbsp;&raquo; appellent des r&eacute;ponses d&eacute;velopp&eacute;es que seul un <strong>tirage sentimental</strong> complet peut fournir. Utilisez le oui/non pour les questions binaires et r&eacute;servez les tirages en croix pour les interrogations ouvertes.
               </p>
@@ -292,50 +296,50 @@ export default function TarotOuiNonAmourPage() {
 
         {/* Section 5: Au-delà du Oui/Non : Quand Approfondir */}
         <section id="consultation" className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6"> Au-del&agrave; du Oui/Non : Quand Approfondir</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Au-del&agrave; du oui/non : quand approfondir</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le tirage oui/non est un point de d&eacute;part. Pour une compr&eacute;hension compl&egrave;te de votre situation amoureuse, un tirage d&eacute;taill&eacute; ou une consultation avec un voyant sp&eacute;cialis&eacute; s&apos;impose souvent.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Le <strong>tarot oui non amour</strong> ouvre une porte sur votre <strong>situation sentimentale</strong>, mais la v&eacute;ritable guidance commence l&agrave; o&ugrave; le oui/non s&apos;arr&ecirc;te. Lorsque votre c&oelig;ur demande plus que des r&eacute;ponses binaires, il est temps d&apos;explorer des <strong>tirages approfondis</strong> ou de consulter un <strong>voyant sp&eacute;cialis&eacute;</strong> en <strong>voyance amoureuse</strong> qui d&eacute;ploie tout le potentiel du <strong>Tarot de Marseille</strong>.
           </p>
 
           <div className="space-y-5">
-            <div className="bg-emerald-50 border-l-4 border-emerald-500 p-5 rounded-lg">
-              <h3 className="font-bold text-lg mb-2 text-emerald-700">Du Oui/Non au Tirage en Croix</h3>
+            <div className="rounded-lg border-l-4 border-purple-700 bg-gray-50 p-5">
+              <h3 className="font-bold text-lg mb-2 text-gray-900">Du oui/non au tirage en croix</h3>
               <p className="text-gray-700 text-sm">
                 Si le <strong>tirage oui/non</strong> a confirm&eacute; une tendance mais que vous avez besoin de comprendre le &laquo;&nbsp;comment&nbsp;&raquo; et le &laquo;&nbsp;pourquoi&nbsp;&raquo;, le tirage en croix sentimental &agrave; cinq cartes est l&apos;&eacute;tape naturelle suivante. Il explore la situation actuelle, les obstacles, les <strong>influences cach&eacute;es</strong>, le conseil des <strong>arcanes</strong> et l&apos;&eacute;volution probable de votre <strong>relation amoureuse</strong>. C&apos;est un approfondissement logique qui compl&egrave;te la r&eacute;ponse binaire avec un r&eacute;cit d&eacute;taill&eacute;.
               </p>
             </div>
 
-            <div className="bg-green-50 border-l-4 border-green-500 p-5 rounded-lg">
-              <h3 className="font-bold text-lg mb-2 text-green-700">Quand le Voyant Devient Indispensable</h3>
+            <div className="rounded-lg border-l-4 border-purple-700 bg-gray-50 p-5">
+              <h3 className="font-bold text-lg mb-2 text-gray-900">Quand le voyant devient indispensable</h3>
               <p className="text-gray-700 text-sm">
-                La <strong>consultation</strong> avec un <strong>voyant sp&eacute;cialis&eacute;</strong> devient n&eacute;cessaire lorsque vos tirages gratuits ne suffisent plus &agrave; apaiser vos questionnements. Les situations impliquant un triangle amoureux, une <strong>rupture douloureuse</strong>, un <strong>sch&eacute;ma r&eacute;p&eacute;titif</strong> ou une d&eacute;cision engageante demandent l&apos;expertise d&apos;un professionnel qui combine la lecture des cartes avec son <strong>intuition</strong> et sa clairvoyance. Le voyant ne se contente pas de r&eacute;pondre : il vous accompagne vers des solutions. Pour obtenir des <Link href="/reconquete/va-t-il-elle-revenir/" className="text-emerald-600 hover:text-emerald-800 underline font-medium">pr&eacute;dictions de retour</Link> fiables, cette expertise est souvent indispensable.
+                La <strong>consultation</strong> avec un <strong>voyant sp&eacute;cialis&eacute;</strong> devient n&eacute;cessaire lorsque vos tirages gratuits ne suffisent plus &agrave; apaiser vos questionnements. Les situations impliquant un triangle amoureux, une <strong>rupture douloureuse</strong>, un <strong>sch&eacute;ma r&eacute;p&eacute;titif</strong> ou une d&eacute;cision engageante demandent l&apos;expertise d&apos;un professionnel qui combine la lecture des cartes avec son <strong>intuition</strong> et sa clairvoyance. Le voyant ne se contente pas de r&eacute;pondre : il vous accompagne vers des solutions. Pour obtenir des <Link href="/reconquete/va-t-il-elle-revenir/" className="text-purple-700 hover:text-purple-900 underline font-medium">pr&eacute;dictions de retour</Link> fiables, cette expertise est souvent indispensable.
               </p>
             </div>
 
-            <div className="bg-teal-50 border-l-4 border-teal-500 p-5 rounded-lg">
-              <h3 className="font-bold text-lg mb-2 text-teal-700">Combiner Plusieurs M&eacute;thodes</h3>
+            <div className="rounded-lg border-l-4 border-purple-700 bg-gray-50 p-5">
+              <h3 className="font-bold text-lg mb-2 text-gray-900">Combiner plusieurs m&eacute;thodes</h3>
               <p className="text-gray-700 text-sm">
                 Les meilleurs <strong>voyants</strong> ne se limitent pas au <strong>tarot</strong>. Ils combinent la cartomancie avec la <strong>clairvoyance</strong>, la m&eacute;diumnit&eacute; ou l&apos;astrologie pour offrir une <strong>guidance sentimentale</strong> compl&egrave;te. Le tarot oui/non r&eacute;pond &agrave; votre question imm&eacute;diate. Le tirage en croix explore la dynamique. La clairvoyance r&eacute;v&egrave;le les &eacute;nergies invisibles. Ensemble, ces m&eacute;thodes composent un portrait fidele et nuanc&eacute; de votre <strong>parcours amoureux</strong>.
               </p>
             </div>
 
-            <div className="bg-lime-50 border-l-4 border-lime-500 p-5 rounded-lg">
-              <h3 className="font-bold text-lg mb-2 text-lime-700">Transformer la R&eacute;ponse en Action</h3>
+            <div className="rounded-lg border-l-4 border-purple-700 bg-gray-50 p-5">
+              <h3 className="font-bold text-lg mb-2 text-gray-900">Transformer la r&eacute;ponse en action</h3>
               <p className="text-gray-700 text-sm">
                 Le v&eacute;ritable objectif du <strong>tarot oui non amour</strong> n&apos;est pas d&apos;obtenir une r&eacute;ponse fig&eacute;e mais de vous aider &agrave; prendre des d&eacute;cisions &eacute;clair&eacute;es. Un &laquo;&nbsp;oui&nbsp;&raquo; du tarot n&apos;est pas une invitation &agrave; l&apos;inaction &mdash; c&apos;est une confirmation &eacute;nerg&eacute;tique qui vous encourage &agrave; agir. Un &laquo;&nbsp;non&nbsp;&raquo; n&apos;est pas une condamnation mais une invitation &agrave; r&eacute;fl&eacute;chir, &agrave; &eacute;voluer ou &agrave; explorer d&apos;autres chemins <strong>sentimentaux</strong>. Le <strong>voyant</strong> vous aide &agrave; transformer chaque r&eacute;ponse en plan d&apos;action concret.
               </p>
             </div>
           </div>
 
-          <div className="bg-emerald-50 border-l-4 border-emerald-600 p-5 rounded mt-6">
+          <div className="mt-6 rounded border-l-4 border-purple-700 bg-gray-50 p-5">
             <p className="text-gray-700"><strong>Conseil :</strong> Utilisez le <strong>tirage oui/non</strong> comme point de d&eacute;part, puis approfondissez avec un <strong>voyant sp&eacute;cialis&eacute;</strong> pour transformer cette premi&egrave;re r&eacute;ponse en v&eacute;ritable <strong>guidance sentimentale</strong> personnalis&eacute;e.</p>
           </div>
         </section>
 
         {/* FAQ Section */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8"> Questions Fr&eacute;quentes sur le Tarot Oui Non Amour</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">Questions fr&eacute;quentes sur le tarot oui non amour</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Les interrogations les plus courantes portent sur la fiabilit&eacute; du tirage oui/non, la formulation des questions, la gestion des r&eacute;ponses ambigues et le passage au tirage complet.</p>
           <div className="space-y-6">
             <div className="border-b border-gray-200 pb-6">
@@ -366,15 +370,15 @@ export default function TarotOuiNonAmourPage() {
 
         {/* Articles Connexes */}
         <div className="bg-gray-100 rounded-xl p-6 mb-8">
-          <h3 className="font-bold text-lg mb-4 text-gray-900"> Articles Connexes</h3>
+          <h3 className="font-bold text-lg mb-4 text-gray-900">Articles connexes</h3>
           <div className="space-y-2">
-            <Link href="/voyance-gratuite-amour/" className="block text-emerald-600 hover:text-emerald-800 font-medium">&rarr; Voyance Gratuite Amour : Guide Complet</Link>
-            <Link href="/voyance-gratuite-amour/tarot-amour-gratuit/" className="block text-emerald-600 hover:text-emerald-800 font-medium">&rarr; Tarot Amour Gratuit : Tirage et Interpr&eacute;tation</Link>
-            <Link href="/voyance-gratuite-amour/tarot-du-jour-amour/" className="block text-emerald-600 hover:text-emerald-800 font-medium">&rarr; Tarot du Jour Amour Gratuit</Link>
-            <Link href="/voyance-gratuite-amour/tarot-futur-proche-amour/" className="block text-emerald-600 hover:text-emerald-800 font-medium">&rarr; Tarot Futur Proche Amour Gratuit</Link>
-            <Link href="/reconquete/va-t-il-elle-revenir/" className="block text-emerald-600 hover:text-emerald-800 font-medium">&rarr; Va-t-il/elle Revenir ? Pr&eacute;dictions</Link>
-            <Link href="/sentiments/pense-t-il-elle-a-moi/" className="block text-emerald-600 hover:text-emerald-800 font-medium">&rarr; Pense-t-il/elle &agrave; Moi ?</Link>
-            <Link href="/reconquete/ex-qui-revient/" className="block text-emerald-600 hover:text-emerald-800 font-medium">&rarr; Signes qu&apos;un Ex Revient</Link>
+            <Link href="/voyance-gratuite-amour/" className="block text-purple-700 hover:text-purple-900 font-medium">&rarr; Voyance Gratuite Amour : Guide Complet</Link>
+            <Link href="/voyance-gratuite-amour/tarot-amour-gratuit/" className="block text-purple-700 hover:text-purple-900 font-medium">&rarr; Tarot Amour Gratuit : Tirage et Interpr&eacute;tation</Link>
+            <Link href="/voyance-gratuite-amour/tarot-du-jour-amour/" className="block text-purple-700 hover:text-purple-900 font-medium">&rarr; Tarot du Jour Amour Gratuit</Link>
+            <Link href="/voyance-gratuite-amour/tarot-futur-proche-amour/" className="block text-purple-700 hover:text-purple-900 font-medium">&rarr; Tarot Futur Proche Amour Gratuit</Link>
+            <Link href="/reconquete/va-t-il-elle-revenir/" className="block text-purple-700 hover:text-purple-900 font-medium">&rarr; Va-t-il/elle Revenir ? Pr&eacute;dictions</Link>
+            <Link href="/sentiments/pense-t-il-elle-a-moi/" className="block text-purple-700 hover:text-purple-900 font-medium">&rarr; Pense-t-il/elle &agrave; Moi ?</Link>
+            <Link href="/reconquete/ex-qui-revient/" className="block text-purple-700 hover:text-purple-900 font-medium">&rarr; Signes qu&apos;un Ex Revient</Link>
           </div>
         </div>
 
