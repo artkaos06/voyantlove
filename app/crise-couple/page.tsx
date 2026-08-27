@@ -154,6 +154,13 @@ export default function CriseCoupleHubPage() {
               <p className="text-gray-600 mb-4">Cohabiter avec son ex après la séparation, sans ambiguïté.</p>
               <span className="text-amber-600 font-semibold">Lire →</span>
             </Link>
+
+            <Link href="/crise-couple/signes-il-ne-sengagera-pas/" className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition border-t-4 border-rose-500">
+              <div className="text-4xl mb-4"></div>
+              <h3 className="text-2xl font-bold mb-3">Signes qu&apos;il ne s&apos;engagera pas</h3>
+              <p className="text-gray-600 mb-4">Reconnaître les comportements révélateurs d&apos;un refus d&apos;engagement.</p>
+              <span className="text-rose-600 font-semibold">Lire →</span>
+            </Link>
           </div>
         </section>
 
