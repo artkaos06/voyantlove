@@ -7,7 +7,7 @@ const config: ContentPageConfig = {
   title: 'Rêver de son ex : signification et interprétation',
   description: 'Rêver de son ex qui revient, qui vous ignore, qui vous embrasse : ce que ces rêves peuvent révéler sur votre monde intérieur, et ce qu\'ils ne prédisent pas.',
   url: 'https://www.voyantlove.fr/rupture/rever-de-son-ex/',
-  keywords: ['rêver de son ex', 'rêver de son ex signification', 'rêver de son ex qui revient', 'rêver de son ex qui nous ignore', 'rêver de son ex qui nous embrasse'],
+  keywords: ['rêver de son ex', 'rêver de son ex signification', 'rêver de son ex qui revient', 'rêver de son ex qui veut revenir', 'rêver de son ex qui nous ignore', 'rêver de son ex qui nous embrasse'],
   datePublished: '2026-07-29',
   dateModified: '2026-07-29',
   breadcrumb: [
@@ -43,6 +43,10 @@ const config: ContentPageConfig = {
     {
       q: 'Rêver que son ex revient veut-il dire qu\'il va revenir ?',
       a: 'Non. Un rêve n\'est pas une prémonition, et rêver que son ex revient ne prédit pas un retour réel. Ce type de rêve exprime le plus souvent un désir personnel, un espoir non résolu ou un besoin de réparation, projeté par l\'inconscient pendant le sommeil. Il renseigne sur votre monde intérieur, ce que vous n\'avez pas encore lâché, et non sur les intentions de l\'autre. Interpréter un rêve comme une annonce du futur mène presque toujours à une attente illusoire.',
+    },
+    {
+      q: 'Rêver de son ex qui veut revenir : quelle signification ?',
+      a: 'Ce rêve met en scène une demande, pas un retour : votre ex y sollicite, supplie ou négocie, et c\'est cette position qui porte le sens. Rêver de son ex qui veut revenir renvoie le plus souvent à un besoin de se sentir choisi, à un rééquilibrage symbolique après une rupture subie, ou à une valeur personnelle que la séparation avait mise en doute. L\'information la plus utile n\'est d\'ailleurs pas sa demande, mais votre réponse dans le rêve : accepter, hésiter ou refuser en dit bien plus long sur l\'étape où vous en êtes que le retour lui-même. Là encore, rien de prémonitoire : le rêve rejoue un équilibre intérieur, il n\'annonce aucune démarche réelle de votre ex.',
     },
     {
       q: 'Pourquoi je rêve de mon ex alors que je pensais l\'avoir oublié ?',
@@ -111,6 +115,10 @@ export default function ReverDeSonExPage() {
             <div className="bg-white rounded-lg p-6 border-l-4 border-indigo-500">
               <h3 className="font-bold text-lg mb-2 text-indigo-700">{''} Rêver de son ex qui revient</h3>
               <p className="text-gray-700 text-sm"><strong>Peut refléter :</strong> un désir non résolu, un espoir de réparation, un besoin de clôture. <span className="text-gray-500">Ne prédit pas un retour réel, c&apos;est un mouvement intérieur, pas une annonce.</span></p>
+            </div>
+            <div className="bg-white rounded-lg p-6 border-l-4 border-indigo-400">
+              <h3 className="font-bold text-lg mb-2 text-indigo-700">Rêver de son ex qui veut revenir</h3>
+              <p className="text-gray-700 text-sm"><strong>Peut refléter :</strong> un besoin de se sentir choisi, un rééquilibrage après une rupture subie, une valeur personnelle à restaurer. <span className="text-gray-500">Différent du rêve précédent : ici l&apos;autre demande, et c&apos;est votre réponse dans le rêve qui informe, pas sa demande.</span></p>
             </div>
             <div className="bg-white rounded-lg p-6 border-l-4 border-purple-500">
               <h3 className="font-bold text-lg mb-2 text-purple-700">Rêver de son ex qui nous ignore ou nous rejette</h3>

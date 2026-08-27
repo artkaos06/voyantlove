@@ -15,6 +15,12 @@ export default function ConsulterVoyantGrid() {
     gbraid: string | null;
     wbraid: string | null;
   }>({ gclid: null, gbraid: null, wbraid: null });
+  // Portraits that 404'd, keyed by voyant ID. State rather than a DOM write:
+  // the handler used to do `target.parentElement.innerHTML = ...` inside a
+  // next/image subtree React still owns, which can make a later render remove
+  // a child that no longer exists (NotFoundError). One Set for the whole grid
+  // keeps renderVoyantCard a plain function instead of a hook-bearing one.
+  const [failedPortraits, setFailedPortraits] = useState<ReadonlySet<string>>(new Set());
   const searchParams = useSearchParams();
   const source = searchParams.get('ref') || 'consulter';
 
@@ -64,7 +70,6 @@ export default function ConsulterVoyantGrid() {
   if (loading) {
     return (
       <div className="text-center py-16">
-        <div className="text-5xl mb-4"></div>
         <p className="text-lg text-gray-600">Recherche des voyants disponibles...</p>
       </div>
     );
@@ -106,18 +111,24 @@ export default function ConsulterVoyantGrid() {
         {/* Header */}
         <div className={`p-4 flex items-center gap-4 ${isFree ? 'bg-gradient-to-r from-green-600 to-emerald-600' : 'bg-gradient-to-r from-purple-600 to-indigo-600'}`}>
           <div className="relative w-16 h-16 bg-white/20 rounded-full overflow-hidden flex-shrink-0">
-            <Image
-              src={`https://www.monsitevoyance.com/vignaff/${voyant.ID}.jpg`}
-              alt={voyant.VOYANT}
-              fill
-              sizes="64px"
-              className="object-cover"
-              onError={(e) => {
-                const target = e.target as HTMLImageElement;
-                target.style.display = 'none';
-                target.parentElement!.innerHTML = `<span class="text-white text-2xl font-bold flex items-center justify-center w-full h-full">${voyant.VOYANT.charAt(0).toUpperCase()}</span>`;
-              }}
-            />
+            {failedPortraits.has(voyant.ID) ? (
+              <span className="text-white text-2xl font-bold flex items-center justify-center w-full h-full">
+                {voyant.VOYANT.charAt(0).toUpperCase()}
+              </span>
+            ) : (
+              <Image
+                src={`https://www.monsitevoyance.com/vignaff/${voyant.ID}.jpg`}
+                alt={voyant.VOYANT}
+                fill
+                sizes="64px"
+                className="object-cover"
+                onError={() =>
+                  setFailedPortraits((prev) =>
+                    prev.has(voyant.ID) ? prev : new Set(prev).add(voyant.ID)
+                  )
+                }
+              />
+            )}
           </div>
           <div className="text-white flex-1">
             <h2 className="text-lg font-bold capitalize">{voyant.VOYANT}</h2>

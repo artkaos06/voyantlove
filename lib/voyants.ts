@@ -113,8 +113,43 @@ export function getTopVoyants(voyants: Voyant[], limit: number = 3): Voyant[] {
 }
 
 // Get online voyants
-export function getOnlineVoyants(voyants: Voyant[]): Voyant[] {
+export function getOnlineVoyants<T extends { ETAT: string }>(voyants: T[]): T[] {
   return voyants.filter((v) => v.ETAT === '1');
+}
+
+/**
+ * How many voyants must actually be online before a rail may be headed
+ * "Voyants disponibles maintenant".
+ *
+ * The feed carries ETAT ('1' online, '0' offline) and the cards already read
+ * it — an offline voyant's own button says "Rendez-vous". A rail promising
+ * availability while showing those cards contradicts itself on screen, so the
+ * heading and the selection have to agree.
+ *
+ * Below this floor the honest move is not to show a two-card rail: it is to
+ * show the full roster under a heading that claims nothing about availability.
+ * Four is the point where the rail still reads as a row rather than a gap
+ * (the compact cards run ~2.2 per screen on mobile).
+ */
+export const ONLINE_RAIL_MIN = 4;
+
+/**
+ * Decide what an "available now" rail should show and be called.
+ *
+ * Pure so the honesty rule is testable without a DOM: see tests/voyantRail.test.ts.
+ * While the feed is still loading nothing is claimed either way — the rail is a
+ * skeleton — so the primary heading is kept to avoid a title that flips on load.
+ */
+export function resolveOnlineRail<T extends { ETAT: string }>(
+  voyants: T[],
+  o: { loading: boolean; title: string; fallbackTitle: string },
+): { voyants: T[]; title: string; filteredToOnline: boolean } {
+  if (o.loading) return { voyants: [], title: o.title, filteredToOnline: true };
+  const online = getOnlineVoyants(voyants);
+  if (online.length >= ONLINE_RAIL_MIN) {
+    return { voyants: online, title: o.title, filteredToOnline: true };
+  }
+  return { voyants, title: o.fallbackTitle, filteredToOnline: false };
 }
 
 // Get voyants for specific topic

@@ -4,6 +4,7 @@ import { TAROT_LOVE_CARDS, validateCardRecord } from '@/lib/tarotLoveCards'
 import { REVES_AMOUR, validateDreamRecord } from '@/lib/revesAmour'
 import { SIGNES_AMOUR, validateSignRecord } from '@/lib/signesAmour'
 import { GLOSSARY_TERMS, validateTermRecord } from '@/lib/glossaire'
+import { HEURES_MIROIRS_FLAMME_JUMELLE, validateHeureMiroirRecord } from '@/lib/heuresMiroirsFlammeJumelle'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://www.voyantlove.fr'
@@ -214,6 +215,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: now,
       changeFrequency: 'weekly' as const,
       priority: 0.6,
+    })),
+    // Mirror-hour cluster nested under the flamme-jumelle hub (that hub's own
+    // URL is already listed in contentPages above).
+    ...HEURES_MIROIRS_FLAMME_JUMELLE.filter((h) => validateHeureMiroirRecord(h).length === 0).map((h) => ({
+      url: `${baseUrl}/nouvelle-rencontre/flamme-jumelle/${h.slug}`,
+      lastModified: now,
+      changeFrequency: 'weekly' as const,
+      priority: 0.7,
     })),
   ]
 

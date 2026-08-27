@@ -49,7 +49,7 @@ export default function RevesAmourHub() {
         <section className="bg-purple-50 border-l-4 border-purple-500 rounded-r-xl p-6 md:p-8 mb-10">
           <h2 className="text-xl font-bold text-gray-900 mb-3">Comment lire un rêve amoureux&nbsp;?</h2>
           <p className="text-lg leading-relaxed text-gray-800">
-            En amour comme ailleurs, un <strong>rêve</strong> parle de votre <strong>monde intérieur</strong>, pas de celui d&apos;une autre personne. Il met en scène des émotions non digérées, désir, peur, manque, attachement, bien plus qu&apos;il n&apos;annonce l&apos;avenir. Un rêve n&apos;est ni une <strong>prémonition</strong>, ni un message que quelqu&apos;un vous envoie, ni une preuve des sentiments de l&apos;autre. La clé d&apos;interprétation la plus fiable reste le <strong>ressenti au réveil</strong>, jamais une grille figée. Chaque fiche ci-dessous décode un rêve d&apos;amour selon cet esprit&nbsp;: ce qu&apos;il peut refléter, et ce qu&apos;il ne prouve pas.
+            En amour comme ailleurs, un <strong>rêve</strong> parle de votre <strong>monde intérieur</strong>, pas de celui d&apos;une autre personne. Il met en scène des émotions non digérées, désir, peur, manque, attachement, bien plus qu&apos;il n&apos;annonce l&apos;avenir. Un rêve n&apos;est ni une <strong>prémonition</strong>, ni un message que quelqu&apos;un vous envoie, ni une preuve des sentiments de l&apos;autre. La clé d&apos;interprétation la plus fiable reste le <strong>ressenti au réveil</strong>, jamais une grille figée. Chaque fiche ci-dessous décode un rêve d&apos;amour selon cet esprit&nbsp;: ce qu&apos;il peut refléter, et ce qu&apos;il ne prouve pas. Si un rêve vous laisse une question sans réponse, la <Link href="/voyance-gratuite-amour/" className="text-purple-700 hover:text-purple-900 underline font-medium">voyance gratuite amour</Link> permet de la poser, tirage à l&apos;appui.
           </p>
         </section>
         <section className="mb-12">
@@ -64,7 +64,6 @@ export default function RevesAmourHub() {
                 href={d.href}
                 className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition border-t-4 border-indigo-500"
               >
-                <div className="text-3xl mb-2">{d.emoji}</div>
                 <h3 className="text-xl font-bold mb-1 text-gray-900">{d.titre}</h3>
                 <p className="text-gray-600 text-sm">{d.primaryQuery}</p>
               </Link>
@@ -90,6 +89,7 @@ export default function RevesAmourHub() {
             <Link href="/methodes-voyance/" className="block text-indigo-600 hover:text-indigo-800 font-medium">&rarr; Les méthodes de voyance amoureuse</Link>
             <Link href="/rupture/" className="block text-indigo-600 hover:text-indigo-800 font-medium">&rarr; Rupture &amp; guérison : toutes nos guidances</Link>
             <Link href="/sentiments/pense-t-il-elle-a-moi/" className="block text-indigo-600 hover:text-indigo-800 font-medium">&rarr; Pense-t-il/elle à moi ?</Link>
+            <Link href="/voyance-gratuite-amour/" className="block text-indigo-600 hover:text-indigo-800 font-medium">&rarr; Voyance gratuite amour : tirages et guidance sentimentale</Link>
           </div>
         </div>
 

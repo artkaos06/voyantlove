@@ -4,7 +4,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import VoyantCardCompact from './VoyantCardCompact';
 import { useVoyants } from '@/lib/useVoyants';
-import { Voyant } from '@/lib/voyants';
+import { Voyant, resolveOnlineRail } from '@/lib/voyants';
 
 interface VoyantRailProps {
   title: string;
@@ -33,6 +33,19 @@ interface VoyantRailProps {
   telOnly?: boolean;
   /** Only keep voyants whose chat is live. */
   chatOnly?: boolean;
+  /**
+   * Restrict the rail to voyants actually online (ETAT === '1'). Set this on
+   * any rail whose title claims availability: without it the rail shows
+   * offline voyants whose own card button reads "Rendez-vous", so the heading
+   * is contradicted by the cards under it.
+   *
+   * If too few are online to fill a row the rail falls back to the full roster
+   * AND to `fallbackTitle`, so it never keeps the availability claim while
+   * quietly showing everyone. See resolveOnlineRail in lib/voyants.ts.
+   */
+  onlineOnly?: boolean;
+  /** Heading used when `onlineOnly` cannot be honoured honestly. */
+  fallbackTitle?: string;
 }
 
 /**
@@ -67,6 +80,8 @@ export default function VoyantRail({
   sortBy = 'feed',
   telOnly = false,
   chatOnly = false,
+  onlineOnly = false,
+  fallbackTitle,
 }: VoyantRailProps) {
   const { voyants, loading } = useVoyants();
   const containerRef = useRef<HTMLDivElement | null>(null);
@@ -121,7 +136,14 @@ export default function VoyantRail({
     };
   }, [lazy, shouldMount]);
 
-  let pool = voyants;
+  // Availability first: an "available now" rail must not be able to show a
+  // voyant whose own card says "Rendez-vous".
+  const resolved = onlineOnly
+    ? resolveOnlineRail(voyants, { loading, title, fallbackTitle: fallbackTitle ?? title })
+    : { voyants, title, filteredToOnline: false };
+  const railTitle = resolved.title;
+
+  let pool = resolved.voyants;
   if (telOnly) pool = pool.filter((v) => v.TEL === '1');
   if (chatOnly) pool = pool.filter((v) => v.CHAT === '1');
   const sorter = SORTERS[sortBy];
@@ -137,7 +159,7 @@ export default function VoyantRail({
     <div ref={containerRef}>
       <div className="mb-3 flex items-end justify-between gap-4">
         <div className="min-w-0">
-          <h2 className="text-lg font-bold text-gray-900 sm:text-xl">{title}</h2>
+          <h2 className="text-lg font-bold text-gray-900 sm:text-xl">{railTitle}</h2>
           {subtitle && <p className="mt-0.5 text-sm text-gray-600">{subtitle}</p>}
         </div>
         <Link
@@ -148,7 +170,7 @@ export default function VoyantRail({
         </Link>
       </div>
 
-      <div className="vl-rail" tabIndex={0} role="group" aria-label={title}>
+      <div className="vl-rail" tabIndex={0} role="group" aria-label={railTitle}>
         {showSkeleton
           ? Array.from({ length: SKELETON_COUNT }).map((_, i) => (
               <div key={i} aria-hidden>

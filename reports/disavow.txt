@@ -1,0 +1,14 @@
+# VoyantLove.fr — disavow file (draft, 2026-08-27)
+# Source: DataForSEO backlinks API — ALL 7 live backlinks are .xyz link-farm spam
+# (Telegram "SEO CARTEL" / "BHS LINKS" services). Nofollow, but spam score 65-75
+# and 100% of the profile — disavowing is cheap insurance for a DR-0 domain.
+# New spam is still arriving (latest first_seen: 2026-08-27) — re-check monthly
+# and append new farm domains.
+# Upload at: https://search.google.com/search-console/disavow-links
+domain:seo-cartel-0-151.xyz
+domain:seo-cartel-0-155.xyz
+domain:seo-cartel-0-156.xyz
+domain:seo-cartel-0-165.xyz
+domain:seo-cartel-0-167.xyz
+domain:seo-cartel-0-170.xyz
+domain:bhs-links-kirin.xyz

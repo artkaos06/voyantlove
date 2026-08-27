@@ -66,8 +66,8 @@ export default function TarotFuturProcheAmourPage() {
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Tarot futur proche amour gratuit</h1>
           <p className="text-xl opacity-95 mb-6">Un tirage à trois cartes pour éclairer les prochaines semaines de votre vie sentimentale</p>
           <div className="flex gap-4 flex-wrap">
-            <a href="#tirage" className="bg-white text-teal-600 px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition">Tirer les Cartes ↓</a>
-            <a href="#periode" className="border-2 border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-teal-600 transition">Comprendre la Période</a>
+            <a href="#tirage" className="bg-white text-teal-600 px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition">Tirer les cartes ↓</a>
+            <a href="#periode" className="border-2 border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-teal-600 transition">Comprendre la période</a>
           </div>
         </div>
       </header>
@@ -77,7 +77,7 @@ export default function TarotFuturProcheAmourPage() {
       {/* Interactive Tarot Tool */}
       <section id="tirage" className="max-w-4xl mx-auto px-4 py-8">
         <TarotSpread
-          title="Votre Tarot Futur Proche Amour"
+          title="Votre tarot futur proche amour"
           subtitle="Trois cartes pour explorer l'évolution de votre situation sentimentale à court terme"
           positions={['Dans les 7 jours', 'Entre 8 et 30 jours', 'Du 2e au 3e mois']}
           ctaSource="tarot-futur-proche-amour"
@@ -87,10 +87,10 @@ export default function TarotFuturProcheAmourPage() {
       <div className="max-w-4xl mx-auto px-4 py-8">
         {/* Stats bar */}
         <div className="bg-white rounded-xl shadow-md p-6 mb-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-          <div><div className="text-3xl mb-1"></div><div className="text-2xl font-bold text-teal-600">3 cartes</div><div className="text-sm text-gray-600">Tirage progressif</div></div>
-          <div><div className="text-3xl mb-1"></div><div className="text-2xl font-bold text-teal-600">Court terme</div><div className="text-sm text-gray-600">Quelques semaines</div></div>
-          <div><div className="text-3xl mb-1"></div><div className="text-2xl font-bold text-teal-600">Gratuit</div><div className="text-sm text-gray-600">Sans inscription</div></div>
-          <div><div className="text-3xl mb-1"></div><div className="text-2xl font-bold text-teal-600">Immédiat</div><div className="text-sm text-gray-600">Résultat instantané</div></div>
+          <div><div className="text-2xl font-bold text-teal-600">3 cartes</div><div className="text-sm text-gray-600">Tirage progressif</div></div>
+          <div><div className="text-2xl font-bold text-teal-600">Court terme</div><div className="text-sm text-gray-600">Quelques semaines</div></div>
+          <div><div className="text-2xl font-bold text-teal-600">Gratuit</div><div className="text-sm text-gray-600">Sans inscription</div></div>
+          <div><div className="text-2xl font-bold text-teal-600">Immédiat</div><div className="text-sm text-gray-600">Résultat instantané</div></div>
         </div>
 
 
@@ -111,7 +111,7 @@ export default function TarotFuturProcheAmourPage() {
 
         {/* Section 1 */}
         <section id="periode" className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">Que Signifie &laquo;&nbsp;Futur Proche&nbsp;&raquo; en Tarot</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Que signifie &laquo;&nbsp;futur proche&nbsp;&raquo; en tarot</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le futur proche désigne un horizon de quelques semaines à deux ou trois mois, une fenêtre suffisamment courte pour rester lisible sans figer une date précise.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             En <strong>tarot</strong>, la notion de &laquo;&nbsp;futur proche&nbsp;&raquo; d&eacute;signe un horizon temporel court, g&eacute;n&eacute;ralement estim&eacute; entre quelques semaines et deux ou trois mois. Contrairement &agrave; une <Link href="/sentiments/avenir-amoureux/" className="text-teal-600 hover:text-teal-800 underline font-medium">pr&eacute;diction amoureuse</Link> sur le long terme, ce tirage se concentre sur ce qui est d&eacute;j&agrave; en train de se mettre en mouvement dans votre <strong>vie sentimentale</strong> &mdash; des &eacute;nergies qui commencent &agrave; se manifester, plut&ocirc;t que des sc&eacute;narios lointains et abstraits.
@@ -126,7 +126,7 @@ export default function TarotFuturProcheAmourPage() {
 
         {/* Section 2 */}
         <section className="bg-gradient-to-br from-teal-50 to-emerald-50 rounded-xl p-8 mb-8 border-2 border-teal-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">Lire les Trois Positions du Tirage</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Lire les trois positions du tirage</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Chaque position du tirage futur proche raconte une étape différente de la période à venir, à lire comme une progression plutôt que trois messages isolés.</p>
           <div className="space-y-4">
             <div className="bg-white rounded-lg p-5 border-l-4 border-teal-500">
@@ -151,7 +151,7 @@ export default function TarotFuturProcheAmourPage() {
 
         {/* Section 3 */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">Approfondir au-delà du Tirage Gratuit</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Approfondir au-delà du tirage gratuit</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le tirage en ligne donne une première tendance ; une consultation avec un voyant spécialisé permet d&apos;intégrer le contexte réel de votre relation à cette projection.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Un tirage <strong>tarot futur proche</strong> gratuit s&apos;appuie sur un algorithme al&eacute;atoire&nbsp;: il applique la symbolique classique des <strong>arcanes</strong> sans conna&icirc;tre les d&eacute;tails de votre histoire. Un <strong>voyant sp&eacute;cialis&eacute;</strong> en <strong>voyance amoureuse</strong> combine cette m&ecirc;me structure de lecture avec votre contexte r&eacute;el&nbsp;: l&apos;historique du couple, le comportement r&eacute;cent de l&apos;autre personne, le timing de vos propres d&eacute;cisions.
@@ -163,7 +163,7 @@ export default function TarotFuturProcheAmourPage() {
 
         {/* FAQ Section */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">Questions Fréquentes sur le Tarot Futur Proche Amour</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">Questions fréquentes sur le tarot futur proche amour</h2>
           <div className="space-y-6">
             <div className="border-b border-gray-200 pb-6">
               <h3 className="text-xl font-bold text-gray-900 mb-3">Sur quelle période porte le tarot futur proche en amour ?</h3>
@@ -186,7 +186,7 @@ export default function TarotFuturProcheAmourPage() {
 
         {/* Articles Connexes */}
         <div className="bg-gray-100 rounded-xl p-6 mb-8">
-          <h3 className="font-bold text-lg mb-4 text-gray-900">Articles Connexes</h3>
+          <h3 className="font-bold text-lg mb-4 text-gray-900">Articles connexes</h3>
           <div className="space-y-2">
             <Link href="/voyance-gratuite-amour/" className="block text-teal-600 hover:text-teal-800 font-medium">&rarr; Voyance Gratuite Amour : Guide Complet</Link>
             <Link href="/voyance-gratuite-amour/tarot-du-jour-amour/" className="block text-teal-600 hover:text-teal-800 font-medium">&rarr; Tarot du Jour Amour Gratuit</Link>

@@ -54,7 +54,7 @@ export default function CompatibiliteHubPage() {
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-4 text-gray-900">Les compatibilités analysées</h2>
           <p className="text-lg text-gray-700 mb-8">
-            Chaque analyse détaille la dynamique du couple, ses forces naturelles, ses défis récurrents et le conseil clé pour durer. Les autres duos du zodiaque arrivent progressivement, testez le vôtre avec le calculateur en attendant.
+            Chaque analyse détaille la dynamique du couple, ses forces naturelles, ses défis récurrents et le conseil clé pour durer. Les autres duos du zodiaque arrivent progressivement, testez le vôtre avec le calculateur en attendant. L&apos;astrologie décrit le terrain, pas votre relation précise&nbsp;: pour cela, la <Link href="/voyance-gratuite-amour/" className="text-indigo-600 hover:text-indigo-800 underline font-medium">voyance gratuite amour</Link> propose un tirage immédiat, sans engagement.
           </p>
           <div className="grid md:grid-cols-2 gap-6">
             {LIVE_PAIRS.map((p) => {
@@ -69,7 +69,19 @@ export default function CompatibiliteHubPage() {
                   <div className="text-3xl mb-3">{sA?.emoji} {sB?.emoji}</div>
                   <h3 className="text-xl font-bold mb-2">{p.signA} et {p.signB}</h3>
                   <p className="text-gray-600 mb-3 text-sm">{p.titre}</p>
-                  <span className="text-sm" aria-label={`Score : ${p.score} sur 5`}>{''.repeat(p.score)}{''.repeat(5 - p.score)}</span>
+                  {/* Même traitement que la fiche de couple : 5 pastilles
+                      pleines/vides plus la valeur chiffrée. */}
+                  <div className="flex items-center gap-2">
+                    <div className="flex items-center gap-1" role="img" aria-label={`Score de compatibilité : ${p.score} sur 5`}>
+                      {Array.from({ length: 5 }, (_, i) => (
+                        <span
+                          key={i}
+                          className={`h-2.5 w-2.5 rounded-full ${i < p.score ? 'bg-purple-700' : 'bg-gray-300'}`}
+                        />
+                      ))}
+                    </div>
+                    <span className="text-sm font-semibold text-gray-700" aria-hidden="true">{p.score}/5</span>
+                  </div>
                 </Link>
               );
             })}
@@ -94,6 +106,10 @@ export default function CompatibiliteHubPage() {
             <Link href="/methodes-voyance/numerologie-amoureuse/" className="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition">
               <h3 className="font-bold text-gray-900 mb-1">Numérologie Amoureuse</h3>
               <p className="text-sm text-gray-600">La compatibilité par les chiffres : chemin de vie et nombres.</p>
+            </Link>
+            <Link href="/voyance-gratuite-amour/" className="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition">
+              <h3 className="font-bold text-gray-900 mb-1">Voyance gratuite amour</h3>
+              <p className="text-sm text-gray-600">Au-delà des signes : tirage tarot, oracle et horoscope amoureux, sans engagement.</p>
             </Link>
           </div>
         </section>

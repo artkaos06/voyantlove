@@ -94,7 +94,7 @@ export default function TirageTarotAmourPage() {
 
         {/* Section: Types de tirages amoureux */}
         <section id="types" className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6"> Types de Tirages Amoureux</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Types de Tirages Amoureux</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Les principaux tirages de tarot amoureux sont le tirage en croix (5 cartes), le tirage des sept cartes de l&apos;amour, le tirage de la relation (12 cartes), le tirage oui/non (3 cartes) et le tirage du chemin amoureux (10 cartes).</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Chaque question sentimentale m&eacute;rite un <strong>tirage de tarot</strong> adapt&eacute;. Parmi les <Link href="/methodes-voyance/" className="text-indigo-600 hover:text-indigo-800 underline font-medium">m&eacute;thodes de voyance</Link> amoureuse, le tarot se distingue par la vari&eacute;t&eacute; de ses tirages, chacun con&ccedil;u pour explorer une dimension sp&eacute;cifique de votre <strong>vie sentimentale</strong>. Voici les tirages les plus puissants et les plus r&eacute;v&eacute;lateurs utilis&eacute;s en consultation.
@@ -145,7 +145,7 @@ export default function TirageTarotAmourPage() {
 
         {/* Section: Interpr&eacute;ter un tirage sentimental */}
         <section className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-8 mb-8 border-2 border-blue-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6"> Interpr&eacute;ter un Tirage Sentimental</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Interpr&eacute;ter un Tirage Sentimental</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Interpr&eacute;ter un tirage sentimental consiste &agrave; analyser la position de chaque carte, les combinaisons entre arcanes et les &eacute;nergies subtiles du tirage. L&apos;intuition du voyant compl&egrave;te la symbolique pour une lecture personnalis&eacute;e.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             L&apos;interpr&eacute;tation d&apos;un <strong>tirage de tarot amoureux</strong> requiert bien plus que la simple connaissance des significations individuelles des cartes. C&apos;est l&apos;art de lire les <strong>combinaisons</strong>, de percevoir les <strong>&eacute;nergies subtiles</strong> et de tisser un r&eacute;cit coh&eacute;rent &agrave; partir de symboles millionaires. Le <strong>tarologue</strong> exp&eacute;riment&eacute; en <strong>voyance amoureuse</strong> consid&egrave;re chaque carte dans son contexte, sa position et ses interactions avec les cartes voisines.
@@ -184,7 +184,7 @@ export default function TirageTarotAmourPage() {
 
         {/* Section: Tirage en croix pour l&apos;amour */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6"> Le Tirage en Croix pour l&apos;Amour &mdash; M&eacute;thode D&eacute;taill&eacute;e</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Le Tirage en Croix pour l&apos;Amour &mdash; M&eacute;thode D&eacute;taill&eacute;e</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le tirage en croix amoureux utilise 5 cartes dispos&eacute;es en croix pour r&eacute;v&eacute;ler la situation actuelle, l&apos;obstacle, les influences cach&eacute;es, le conseil du tarot et l&apos;&eacute;volution probable de votre relation sentimentale.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Le <strong>tirage en croix</strong> est le fondement de la <strong>cartomancie amoureuse</strong>. Sa structure simple mais puissante en cinq positions permet de r&eacute;pondre &agrave; toutes les questions sentimentales avec une pr&eacute;cision remarquable. Voici comment chaque position &eacute;claire votre <strong>situation amoureuse</strong>.
@@ -236,7 +236,7 @@ export default function TirageTarotAmourPage() {
 
         {/* Section: Quand faire un tirage */}
         <section className="bg-gradient-to-br from-indigo-50 to-blue-50 rounded-xl p-8 mb-8 border-2 border-indigo-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6"> Quand Faire un Tirage de Tarot Amoureux</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Quand Faire un Tirage de Tarot Amoureux</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le meilleur moment pour un tirage de tarot amoureux est lors d&apos;un doute sentimental, au d&eacute;but d&apos;une relation, avant une d&eacute;cision importante ou apr&egrave;s une crise de couple. &Eacute;vitez de tirer les cartes en pleine crise &eacute;motionnelle.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Le timing d&apos;un <strong>tirage de tarot amoureux</strong> influence consid&eacute;rablement la qualit&eacute; et la pertinence des r&eacute;ponses obtenues. Certains moments sont particuli&egrave;rement propices &agrave; la <strong>consultation de voyance sentimentale</strong>, tandis que d&apos;autres n&eacute;cessitent de la prudence. Savoir quand consulter le <strong>tarot</strong> optimise votre exp&eacute;rience et la pr&eacute;cision des r&eacute;v&eacute;lations.

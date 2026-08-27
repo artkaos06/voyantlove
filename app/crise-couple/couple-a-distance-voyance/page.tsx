@@ -84,7 +84,7 @@ export default function CoupleADistancePage() {
 
         {/* Section 1 : Défis spirituels */}
         <section className="bg-gradient-to-br from-sky-50 to-blue-50 rounded-xl p-8 mb-8 border-2 border-blue-200">
-          <h2 className="text-3xl font-bold mb-6 text-gray-900"> Les Défis Spirituels d&apos;une Relation à Distance</h2>
+          <h2 className="text-3xl font-bold mb-6 text-gray-900">Les Défis Spirituels d&apos;une Relation à Distance</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">La distance géographique n&apos;est pas seulement physique, elle crée un espace énergétique entre deux partenaires que seul un lien d&apos;âme authentique peut traverser sans s&apos;affaiblir.</p>
           <p className="text-gray-700 mb-6">
             Sur le plan spirituel, une relation à distance constitue l&apos;un des tests les plus exigeants pour un couple. L&apos;énergie d&apos;une relation amoureuse se nourrit en grande partie de la proximité physique, des petits gestes quotidiens, des regards, des touchers et de la présence partagée. Quand cette proximité disparaît, le couple doit trouver d&apos;autres canaux pour maintenir son lien vivant.
@@ -92,21 +92,21 @@ export default function CoupleADistancePage() {
 
           <div className="space-y-5">
             <div className="bg-white border-l-4 border-sky-500 p-5 rounded-lg">
-              <h3 className="font-bold text-lg mb-2 text-sky-700"> L&apos;Énergie à Distance</h3>
+              <h3 className="font-bold text-lg mb-2 text-sky-700">L&apos;Énergie à Distance</h3>
               <p className="text-gray-700">
                 La <strong>connexion énergétique</strong> entre deux partenaires ne s&apos;arrête pas aux frontières géographiques. En voyance, on perçoit le lien entre deux êtres comme un fil invisible qui les relie indépendamment de la distance. Cependant, sans entretien conscient, communication profonde, rituels partagés, intentions communes, ce fil peut s&apos;effilocher progressivement. La qualité de l&apos;énergie partagée devient le baromètre principal de la santé du couple à distance.
               </p>
             </div>
 
             <div className="bg-white border-l-4 border-blue-500 p-5 rounded-lg">
-              <h3 className="font-bold text-lg mb-2 text-blue-700"> La Connexion des Âmes</h3>
+              <h3 className="font-bold text-lg mb-2 text-blue-700">La Connexion des Âmes</h3>
               <p className="text-gray-700">
                 Certains couples à distance bénéficient d&apos;une <strong>connexion des âmes</strong> particulièrement forte, qui leur permet de maintenir une intimité profonde même séparés par des milliers de kilomètres. Ces couples ressentent souvent la présence de l&apos;autre dans leurs moments de silence, partagent des rêves ou des intuitions communes, et maintiennent une telepathie émotionnelle naturelle. Cette dimension spirituelle du lien est celle que la voyance peut évaluer le plus précisément.
               </p>
             </div>
 
             <div className="bg-white border-l-4 border-indigo-500 p-5 rounded-lg">
-              <h3 className="font-bold text-lg mb-2 text-indigo-700"> Le Karma Commun</h3>
+              <h3 className="font-bold text-lg mb-2 text-indigo-700">Le Karma Commun</h3>
               <p className="text-gray-700">
                 Selon la lecture karmique, certains couples vivent leur séparation géographique comme une épreuve karmique délibérée, un test que leurs âmes ont choisi pour mesurer la profondeur de leur engagement. D&apos;autres ont un <strong>karma commun</strong> de voyages et de mobilité qui leur demande de développer une forme d&apos;amour plus libre et moins attaché à la présence physique permanente. Identifier la nature karmique de votre séparation aide à la vivre avec plus de sérénité.
               </p>
@@ -116,7 +116,7 @@ export default function CoupleADistancePage() {
 
         {/* Section 2 : Ce que la voyance révèle */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold mb-6 text-blue-600"> Ce que la Voyance Révèle sur Votre Couple à Distance</h2>
+          <h2 className="text-3xl font-bold mb-6 text-blue-600">Ce que la Voyance Révèle sur Votre Couple à Distance</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Un voyant spécialisé dans les couples à distance peut lire les intentions réelles de votre partenaire, évaluer la solidité du lien énergétique, et identifier les obstacles spécifiques à votre réunion.</p>
           <p className="text-gray-700 mb-6">
             Les questions posées lors des consultations de voyance sur les couples à distance sont souvent les mêmes, mais les réponses varient considérablement selon chaque situation. Voici ce qu&apos;un voyant peut réellement percevoir et vous révéler.
@@ -124,7 +124,7 @@ export default function CoupleADistancePage() {
 
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-blue-50 rounded-lg p-6 border-2 border-blue-200">
-              <h3 className="font-bold text-xl mb-4 text-blue-800"> Questions les Plus Posées</h3>
+              <h3 className="font-bold text-xl mb-4 text-blue-800">Questions les Plus Posées</h3>
               <div className="space-y-3 text-gray-700 text-sm">
                 <div className="flex items-start gap-2">
                   <span className="text-blue-500 font-bold">&#x2022;</span>
@@ -154,7 +154,7 @@ export default function CoupleADistancePage() {
             </div>
 
             <div className="bg-sky-50 rounded-lg p-6 border-2 border-sky-200">
-              <h3 className="font-bold text-xl mb-4 text-sky-800"> Ce qu&apos;un Voyant Peut Voir</h3>
+              <h3 className="font-bold text-xl mb-4 text-sky-800">Ce qu&apos;un Voyant Peut Voir</h3>
               <div className="space-y-3 text-gray-700 text-sm">
                 <div className="flex items-start gap-2">
                   <span className="text-sky-500 font-bold">&#x2022;</span>
@@ -187,7 +187,7 @@ export default function CoupleADistancePage() {
 
         {/* Section 3 : Signes que le couple survivra */}
         <section id="signes-survivre" className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-8 mb-8 border-2 border-indigo-200">
-          <h2 className="text-3xl font-bold mb-6 text-gray-900"> Signes que Votre Couple Survivra à la Distance</h2>
+          <h2 className="text-3xl font-bold mb-6 text-gray-900">Signes que Votre Couple Survivra à la Distance</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Les couples à distance qui durent partagent des comportements et des synchronicités spécifiques, voici les indicateurs les plus fiables selon la voyance et la psychologie des relations.</p>
           <p className="text-gray-700 mb-6">
             Les indicateurs de résilience dans un couple à distance sont identifiables à la fois par l&apos;analyse comportementale et par la lecture énergétique. Voici les signaux positifs les plus significatifs selon les milliers de consultations réalisées.
@@ -254,28 +254,28 @@ export default function CoupleADistancePage() {
 
           <div className="space-y-5">
             <div className="bg-red-50 border-l-4 border-red-500 p-5 rounded-lg">
-              <h3 className="font-bold text-lg mb-2 text-red-700"> La Jalousie Incontrôlée</h3>
+              <h3 className="font-bold text-lg mb-2 text-red-700">La Jalousie Incontrôlée</h3>
               <p className="text-gray-700">
                 La jalousie est la menace la plus fréquente dans les couples à distance. Sans visibilité sur le quotidien de l&apos;autre, l&apos;imagination comble les vides et souvent de façon négative. Cette jalousie génère des interrogatoires, de la surveillance des réseaux sociaux et une atmosphère de suspicion destructrice. La voyance aide à identifier si cette jalousie est fondée sur des éléments réels ou si elle révèle une insécurité personnelle à travailler. Pour aller plus loin sur ce sujet, notre guide sur la façon de <Link href="/crise-couple/jalousie-excessive/" className="text-blue-600 hover:text-blue-800 underline font-medium">gérer la jalousie</Link> en couple offre des outils concrets.
               </p>
             </div>
 
             <div className="bg-orange-50 border-l-4 border-orange-500 p-5 rounded-lg">
-              <h3 className="font-bold text-lg mb-2 text-orange-700"> L&apos;Éloignement Émotionnel Progressif</h3>
+              <h3 className="font-bold text-lg mb-2 text-orange-700">L&apos;Éloignement Émotionnel Progressif</h3>
               <p className="text-gray-700">
                 L&apos;<strong>éloignement émotionnel</strong> est plus insidieux que la jalousie car il s&apos;installe graduellement, souvent sans que le couple s&apos;en rende compte. Les conversations deviennent plus superficielles, les appels plus courts, les silences moins confortables. Un des partenaires commence à construire une vie autonome où l&apos;autre tient une place de plus en plus marginale. Ce glissement est l&apos;un des premiers signaux que lit un voyant lors d&apos;une consultation sur un couple à distance.
               </p>
             </div>
 
             <div className="bg-amber-50 border-l-4 border-amber-500 p-5 rounded-lg">
-              <h3 className="font-bold text-lg mb-2 text-amber-700"> Les Tentations Extérieures</h3>
+              <h3 className="font-bold text-lg mb-2 text-amber-700">Les Tentations Extérieures</h3>
               <p className="text-gray-700">
                 L&apos;isolement affectif crée naturellement un terrain fertile pour les <strong>tentations</strong>. Un collègue attentionné, une amitié qui prend une tournure ambiguë, ces situations sont plus fréquentes quand un besoin de présence et de contact physique n&apos;est pas satisfait. La voyance peut identifier si votre partenaire est dans une telle situation et si elle représente une menace réelle pour votre couple, ou si elle reste superficielle.
               </p>
             </div>
 
             <div className="bg-gray-100 border-l-4 border-gray-400 p-5 rounded-lg">
-              <h3 className="font-bold text-lg mb-2 text-gray-700"> La Routine qui Tue le Désir</h3>
+              <h3 className="font-bold text-lg mb-2 text-gray-700">La Routine qui Tue le Désir</h3>
               <p className="text-gray-700">
                 Les couples à distance tombent parfois dans une <strong>routine de communication virtuelle</strong> qui devient mécanique et perd son caractère intime. &laquo;&nbsp;Comment s&apos est ta journée ?&nbsp;&raquo; tous les soirs remplace progressivement les vraies conversations sur les rêves, les peurs et les désirs. Quand la routine tue le désir de se connecter, la relation perd son essence même.
               </p>
@@ -285,7 +285,7 @@ export default function CoupleADistancePage() {
 
         {/* Section 5 : Retrouvailles et timing */}
         <section id="retrouvailles" className="bg-gradient-to-br from-sky-50 to-indigo-50 rounded-xl p-8 mb-8 border-2 border-sky-200">
-          <h2 className="text-3xl font-bold mb-6 text-gray-900"> Quand Vous Retrouverez-vous ? Prédictions sur la Réunion</h2>
+          <h2 className="text-3xl font-bold mb-6 text-gray-900">Quand Vous Retrouverez-vous ? Prédictions sur la Réunion</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">La voyance peut identifier les périodes énergétiquement favorables à votre réunion en analysant les obstacles actuels, les cycles personnels de chacun et les alignements qui facilitent les grands changements de vie.</p>
           <p className="text-gray-700 mb-6">
             La question du timing des retrouvailles est celle qui revient le plus souvent dans les consultations sur les couples à distance. Si aucun voyant ne peut garantir une date précise, la lecture des énergies permet d&apos;identifier des fenêtres favorables et des obstacles potentiels.
@@ -293,21 +293,21 @@ export default function CoupleADistancePage() {
 
           <div className="space-y-5 mb-6">
             <div className="bg-white border-l-4 border-sky-500 p-5 rounded-lg">
-              <h3 className="font-bold text-lg mb-2 text-sky-700"> Périodes Favorables au Déménagement Commun</h3>
+              <h3 className="font-bold text-lg mb-2 text-sky-700">Périodes Favorables au Déménagement Commun</h3>
               <p className="text-gray-700">
                 Selon la <strong>voyance</strong>, certaines périodes sont plus propices aux grands changements de vie comme un déménagement commun. Les moments de transition naturels, fin d&apos;un contrat de travail, fin d&apos;études, nouvelle opportunité professionnelle, correspondent souvent à des ouvertures énergétiques que la lecture peut identifier. Un voyant analyse ces cycles pour vous indiquer quand l&apos;énergie sera la plus favorable à votre réunion physique.
               </p>
             </div>
 
             <div className="bg-white border-l-4 border-blue-500 p-5 rounded-lg">
-              <h3 className="font-bold text-lg mb-2 text-blue-700"> Les Obstacles à Identifier</h3>
+              <h3 className="font-bold text-lg mb-2 text-blue-700">Les Obstacles à Identifier</h3>
               <p className="text-gray-700">
                 La voyance peut identifier les obstacles spécifiques qui retardent votre réunion : un blocage lié à la peur de l&apos;engagement chez l&apos;un des partenaires, des contraintes professionnelles réelles, des liens familiaux qui retiennent, ou des résistances intérieures inconscientes au changement. Identifier ces obstacles clairement permet de travailler à les lever, que ce soit par la communication, des décisions pratiques ou un travail sur soi. Pour explorer <Link href="/sentiments/avenir-amoureux/" className="text-blue-600 hover:text-blue-800 underline font-medium">l&apos;avenir de votre relation</Link> dans son ensemble, notre guidance complète sur l&apos;avenir amoureux apporte des éclairages précieux.
               </p>
             </div>
 
             <div className="bg-white border-l-4 border-indigo-500 p-5 rounded-lg">
-              <h3 className="font-bold text-lg mb-2 text-indigo-700"> Renforcer l&apos;Énergie de la Réunion</h3>
+              <h3 className="font-bold text-lg mb-2 text-indigo-700">Renforcer l&apos;Énergie de la Réunion</h3>
               <p className="text-gray-700">
                 La voyance ne se contente pas de prédire, elle conseille aussi. Pour accélérer le timing de votre réunion, un voyant peut vous guider sur les actions concrètes et les pratiques énergétiques qui renforcent l&apos;intention commune : conversations sur le projet de vie commune, méditations de couple à distance, affirmations partagées, et surtout la levée des blocages personnels qui freinent chacun d&apos;entre vous.
               </p>
@@ -315,7 +315,7 @@ export default function CoupleADistancePage() {
           </div>
 
           <div className="bg-blue-100 border-l-4 border-blue-600 p-6 rounded-lg">
-            <h4 className="font-bold text-blue-900 mb-2 text-lg"> Statistiques sur les Couples à Distance</h4>
+            <h4 className="font-bold text-blue-900 mb-2 text-lg">Statistiques sur les Couples à Distance</h4>
             <p className="text-gray-700">
               Selon les études sur les relations longue distance, environ 37% des relations à distance se terminent dans les 3 premiers mois après le début de la séparation. En revanche, les couples qui maintiennent un projet commun de réunion dans les 18 mois ont un taux de réussite comparable aux couples géographiquement proches. La qualité de la communication et l&apos;existence d&apos;un plan concret sont les deux facteurs les plus prédictifs de la réussite.
             </p>

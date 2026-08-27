@@ -50,6 +50,38 @@ test('voyance-gratuite-amour: primary page targets the voyance amour / voyance a
   assert.match(source, /<VoyantQuickCTA topic="voyance-gratuite"/, 'CTA component wiring must be preserved');
 });
 
+// 2026-08-27 DataForSEO pass. The hub already owned the head term; what it did
+// NOT own on-page were the two close variants that carry their own demand:
+// "voyance amoureuse gratuite immédiate" and "voyance amoureuse gratuite en
+// ligne" (note "amoureuse", not "amour" — the page only ever said "voyance
+// amour gratuite immédiate" and "voyance gratuite en ligne"). Each now has a
+// home in an H2 or the opening paragraph rather than only in `keywords`, which
+// Google ignores.
+test('voyance-gratuite-amour: the "voyance amoureuse gratuite" close variants are covered on-page, not just in the keywords array', () => {
+  const source = read('app/voyance-gratuite-amour/page.tsx');
+
+  assert.match(
+    source,
+    /<h2[^>]*>Voyance amoureuse gratuite immédiate/,
+    'an H2 must carry the "voyance amoureuse gratuite immédiate" variant'
+  );
+  assert.match(
+    source,
+    /voyance amoureuse gratuite en ligne<\/strong>/,
+    'the opening paragraph must carry the "voyance amoureuse gratuite en ligne" variant'
+  );
+
+  // French house style is sentence case (commit 1896a6e). Pin the headings this
+  // pass rewrote so a future edit doesn't silently reintroduce title case.
+  for (const heading of [
+    'Nos guidances de voyance gratuite amour',
+    'Comprendre la voyance gratuite amour',
+    'Questions fréquentes sur la voyance gratuite amour',
+  ]) {
+    assert.ok(source.includes(`>${heading}</h2>`), `heading "${heading}" must stay in French sentence case`);
+  }
+});
+
 test('homepage: adds gender-inclusive "voyante" coverage without copying /voyance-amour/\'s title', () => {
   const source = read('app/page.tsx');
 

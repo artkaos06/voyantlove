@@ -105,6 +105,8 @@ export default function VoyantRecommendations({
         <div className="mb-6 space-y-8">
           <VoyantRail
             title="Voyants disponibles maintenant"
+            fallbackTitle="Nos voyants amour"
+            onlineOnly
             subtitle="Tarif à la minute affiché sur chaque fiche."
             limit={16}
             source={`${source}-${topic}-online`}
@@ -141,22 +143,18 @@ export default function VoyantRecommendations({
         </h3>
         <div className="grid md:grid-cols-4 gap-4 text-sm">
           <div className="bg-purple-50 rounded-lg p-4">
-            <div className="text-3xl mb-2"></div>
             <div className="font-semibold text-gray-800">Vérifiés</div>
             <div className="text-gray-600 mt-1">Tous nos voyants sont certifiés et vérifiés</div>
           </div>
           <div className="bg-blue-50 rounded-lg p-4">
-            <div className="text-3xl mb-2"></div>
             <div className="font-semibold text-gray-800">Spécialisés</div>
             <div className="text-gray-600 mt-1">Experts dans leur domaine avec retours positifs</div>
           </div>
           <div className="bg-pink-50 rounded-lg p-4">
-            <div className="text-3xl mb-2"></div>
             <div className="font-semibold text-gray-800">Satisfaits</div>
             <div className="text-gray-600 mt-1">Milliers de consultations réussies</div>
           </div>
           <div className="bg-green-50 rounded-lg p-4">
-            <div className="text-3xl mb-2"></div>
             <div className="font-semibold text-gray-800">Confidentiel</div>
             <div className="text-gray-600 mt-1">Confidentialité et paiement sécurisé garantis</div>
           </div>

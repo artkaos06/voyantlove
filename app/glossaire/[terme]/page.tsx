@@ -111,7 +111,10 @@ export default async function GlossaryTermPage({ params }: Props) {
           <p className="text-gray-800 leading-relaxed">{renderWithEntities(t.enAmour)}</p>
           <p className="text-gray-700 leading-relaxed mt-4">
             {funnel.lead}{' '}
-            <Link href={funnel.href} className="text-violet-700 hover:text-violet-900 underline font-medium">{funnel.anchor}</Link>.
+            <Link href={funnel.href} className="text-violet-700 hover:text-violet-900 underline font-medium">{funnel.anchor}</Link>.{' '}
+            Pour voir ce que cette notion donne sur votre propre situation, la{' '}
+            <Link href="/voyance-gratuite-amour/" className="text-violet-700 hover:text-violet-900 underline font-medium">voyance amoureuse gratuite en ligne</Link>{' '}
+            propose un tirage immédiat, sans engagement.
           </p>
         </section>
 

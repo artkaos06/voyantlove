@@ -98,9 +98,9 @@ export default function LPVoyanceGratuiteAmour() {
               { text: 'Rapide, personnalisé et gratuit. Le tirage m\'a rassurée sur ma situation avec mon ex.', name: 'Amélie V.', stars: 4 },
             ].map((t, i) => (
               <div key={i} className="bg-emerald-50 p-5 rounded-lg">
-                <div className="mb-2">{''.repeat(t.stars)}</div>
+                <div className="mb-2 text-amber-500" role="img" aria-label={`Note : ${t.stars} sur 5`}>{'★'.repeat(t.stars)}<span className="text-gray-300">{'★'.repeat(5 - t.stars)}</span></div>
                 <p className="text-gray-700 italic mb-3">&quot;{t.text}&quot;</p>
-                <p className="text-sm font-semibold text-gray-500">, {t.name}</p>
+                <p className="text-sm font-semibold text-gray-500">{t.name}</p>
               </div>
             ))}
           </div>

@@ -90,7 +90,7 @@ export default function RunesAmourPage() {
             Chaque rune est bien plus qu&apos;une lettre : c&apos;est un archétype cosmique, une force naturelle condensée dans un symbole. Les Vikings et les chamans nordiques gravaient des runes sur leurs armes, leurs bijoux et leurs talismans pour invoquer ces énergies. En divination, le <strong>principe de la lecture runique</strong> repose sur la synchronicité, l&apos;idée que les runes tirées au hasard reflètent la réalité énergétique de votre situation présente et future.
           </p>
           <div className="bg-white rounded-lg p-6 border-l-4 border-amber-500">
-            <h3 className="font-bold text-amber-800 mb-3 text-lg"> Pourquoi les Runes Fonctionnent-elles en Amour ?</h3>
+            <h3 className="font-bold text-amber-800 mb-3 text-lg">Pourquoi les Runes Fonctionnent-elles en Amour ?</h3>
             <p className="text-gray-700">
               La divination runique est particulièrement efficace pour les questions amoureuses car les runes sont profondément connectées aux émotions humaines fondamentales : l&apos;amour, la perte, la joie, la douleur, l&apos;espoir et la transformation. L&apos;alphabet Futhark contient plusieurs runes dédiées aux liens humains, à la fertilité et aux émotions, ce qui en fait un outil exceptionnel pour explorer la complexité des relations de couple.
             </p>
@@ -99,7 +99,7 @@ export default function RunesAmourPage() {
 
         {/* Section 2 : Les 7 runes importantes pour l'amour */}
         <section id="runes-importantes" className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold mb-6 text-amber-700"> Les 7 Runes Essentielles pour l&apos;Amour</h2>
+          <h2 className="text-3xl font-bold mb-6 text-amber-700">Les 7 Runes Essentielles pour l&apos;Amour</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Les sept runes clés pour l&apos;amour sont Gebo, Wunjo, Ehwaz, Berkano, Kenaz, Ingwaz et Laguz, chacune éclairant une dimension différente de votre vie sentimentale.</p>
           <p className="text-gray-700 mb-6">
             Parmi les 24 runes de l&apos;alphabet Elder Futhark, certaines résonnent particulièrement fort dans les questions sentimentales. Voici les sept symboles que tout voyant runique consulte en priorité lors d&apos;une lecture amoureuse.
@@ -159,7 +159,7 @@ export default function RunesAmourPage() {
 
         {/* Section 3 : Comment lire un tirage */}
         <section id="tirage" className="bg-gradient-to-br from-stone-50 to-amber-50 rounded-xl p-8 mb-8 border-2 border-stone-200">
-          <h2 className="text-3xl font-bold mb-6 text-gray-900"> Comment Lire un Tirage de Runes pour l&apos;Amour</h2>
+          <h2 className="text-3xl font-bold mb-6 text-gray-900">Comment Lire un Tirage de Runes pour l&apos;Amour</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Les tirages à 1, 3 et 5 runes offrent des niveaux de profondeur croissants pour répondre à vos questions sentimentales, du simple aperçu au portrait complet de votre relation.</p>
           <p className="text-gray-700 mb-6">
             La méthode de tirage choisie détermine la profondeur et la complexité de votre lecture. Un voyant expérimenté adapte le type de tirage runique à la nature de votre question amoureuse.
@@ -207,7 +207,7 @@ export default function RunesAmourPage() {
 
         {/* Section 4 : Runes inversées */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold mb-6 text-amber-700"> Runes Inversées en Amour : Que Signifient-elles ?</h2>
+          <h2 className="text-3xl font-bold mb-6 text-amber-700">Runes Inversées en Amour : Que Signifient-elles ?</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Les runes inversées ne signifient pas le contraire de la rune droite, elles indiquent un blocage, un retard ou une énergie qui peine à se manifester dans votre situation amoureuse.</p>
           <p className="text-gray-700 mb-6">
             Lorsqu&apos;une rune est tirée à l&apos;envers dans un tirage amoureux, son interprétation se nuance considérablement. Les runes inversées, également appelées runes merkstave, ne représentent pas simplement l&apos;opposé de leur sens positif. Elles signalent plutôt une énergie bloquée, un potentiel non exprimé, ou une situation qui demande plus de temps et de travail intérieur pour se résoudre.
@@ -260,7 +260,7 @@ export default function RunesAmourPage() {
           </div>
 
           <div className="bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded-lg">
-            <h4 className="font-bold text-yellow-800 mb-2"> Interprétation Équilibrée</h4>
+            <h4 className="font-bold text-yellow-800 mb-2">Interprétation Équilibrée</h4>
             <p className="text-gray-700">
               Une rune inversée dans un tirage amoureux n&apos;est pas nécessairement mauvais signe, c&apos;est avant tout un message d&apos;attention et de conscience. Elle indique où concentrer votre énergie pour améliorer votre situation sentimentale. Un voyant expérimenté sait équilibrer les runes positives et inversées pour vous offrir une lecture globale et constructive, pas alarmiste.
             </p>
@@ -269,7 +269,7 @@ export default function RunesAmourPage() {
 
         {/* Section 5 : Runes vs Tarot */}
         <section className="bg-gradient-to-br from-amber-50 to-yellow-50 rounded-xl p-8 mb-8 border-2 border-amber-200">
-          <h2 className="text-3xl font-bold mb-6 text-gray-900"> Runes vs Tarot pour l&apos;Amour : Quand Choisir les Runes ?</h2>
+          <h2 className="text-3xl font-bold mb-6 text-gray-900">Runes vs Tarot pour l&apos;Amour : Quand Choisir les Runes ?</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Les runes offrent une énergie plus directe et instinctive que le tarot, elles sont idéales pour des réponses nettes, des confirmations intuitives et les questions liées aux forces profondes qui régissent votre relation.</p>
           <p className="text-gray-700 mb-6">
             Le choix entre les runes et le tarot pour une question amoureuse dépend souvent du type de réponse recherché et de la nature de votre question. Ces deux systèmes divinatoires sont complémentaires plutôt que concurrents.
@@ -334,7 +334,7 @@ export default function RunesAmourPage() {
           </div>
 
           <div className="bg-white border-l-4 border-amber-500 p-6 rounded-lg">
-            <h4 className="font-bold text-amber-900 mb-2 text-lg"> Le Meilleur des Deux Mondes</h4>
+            <h4 className="font-bold text-amber-900 mb-2 text-lg">Le Meilleur des Deux Mondes</h4>
             <p className="text-gray-700">
               De nombreux voyants professionnels combinent les deux systèmes dans une même consultation : les runes pour identifier l&apos;énergie dominante et les forces en jeu, puis le tarot pour affiner la lecture et apporter des détails narratifs. Cette approche combinée offre une vision à la fois précise et complète de votre situation amoureuse. Pour explorer cet outil complémentaire, découvrez notre guide du <Link href="/methodes-voyance/pendule-amour/" className="text-amber-700 hover:text-amber-900 underline font-medium">pendule amour</Link> pour des confirmations intuitives rapides et efficaces.
             </p>

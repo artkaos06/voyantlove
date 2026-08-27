@@ -48,12 +48,14 @@ import { TAROT_LOVE_CARDS, validateCardRecord, type TarotLoveCard } from '../lib
 import { SIGNES_AMOUR, validateSignRecord, type SignLoveProfile } from '../lib/signesAmour';
 import { COMPATIBILITY_PAIRS, validatePairRecord, type PairRecord } from '../lib/compatibilitePairs';
 import { GLOSSARY_TERMS, validateTermRecord, validateGlossaryIntegrity, type GlossaryTerm } from '../lib/glossaire';
+import { HEURES_MIROIRS_FLAMME_JUMELLE, validateHeureMiroirRecord, type HeureMiroirEntry } from '../lib/heuresMiroirsFlammeJumelle';
 
 import { generateStaticParams as dreamParams, generateMetadata as dreamMeta } from '../app/reves-amour/[reve]/page';
 import { generateStaticParams as cardParams, generateMetadata as cardMeta } from '../app/tarot-amour/[carte]/page';
 import { generateStaticParams as signParams, generateMetadata as signMeta } from '../app/astrologie-amour/[signe]/page';
 import { generateStaticParams as pairParams, generateMetadata as pairMeta } from '../app/compatibilite-amoureuse/[pair]/page';
 import { generateStaticParams as termParams, generateMetadata as termMeta } from '../app/glossaire/[terme]/page';
+import { generateStaticParams as heureParams, generateMetadata as heureMeta } from '../app/nouvelle-rencontre/flamme-jumelle/[heure]/page';
 
 import sitemap from '../app/sitemap';
 import {
@@ -165,6 +167,21 @@ const NETWORKS: NetworkConfig<any>[] = [
     paramKey: 'terme',
     staticParams: termParams(),
     generateMetadata: termMeta,
+  },
+  {
+    // Nested under an existing hand-authored hub rather than sitting at the
+    // site root: basePath is the hub's own URL, and the stale-sitemap sweep
+    // below already skips `basePath` itself, so the hub page is untouched.
+    name: 'heures-miroirs-flamme-jumelle',
+    basePath: '/nouvelle-rencontre/flamme-jumelle/',
+    records: HEURES_MIROIRS_FLAMME_JUMELLE,
+    validate: (r: HeureMiroirEntry) => validateHeureMiroirRecord(r),
+    slugOf: (r: HeureMiroirEntry) => r.slug,
+    titleOf: (r: HeureMiroirEntry) => `${r.primaryQuery} : ${r.titleSuffix}`,
+    bodyOf: (r: HeureMiroirEntry) => r.answerCapsule,
+    paramKey: 'heure',
+    staticParams: heureParams(),
+    generateMetadata: heureMeta,
   },
 ];
 

@@ -101,6 +101,16 @@ export default async function SignPage({ params }: Props) {
             <AskAI title={title} url={url} context={s.answerCapsule} />
           </div>
         </section>
+
+        {/* Funnel to the free-reading hub. The sign profile answers "comment
+            aime le {s.name}" in general; the hub answers "et moi, maintenant ?"
+            — same intent, one step further down the funnel. */}
+        <p className="text-gray-600 mb-8">
+          Le signe éclaire une tendance, pas votre histoire&nbsp;: pour une lecture de votre situation, la{' '}
+          <Link href="/voyance-gratuite-amour/" className="text-fuchsia-700 hover:text-fuchsia-900 underline font-medium">voyance gratuite amour</Link>{' '}
+          réunit tirages, oracle et horoscope amoureux, sans engagement.
+        </p>
+
         <article className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-fuchsia-500">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Le {s.name} en amour</h2>
           <p className="text-lg leading-relaxed text-gray-700">{renderWithEntities(s.enAmour)}</p>
@@ -184,7 +194,7 @@ export default async function SignPage({ params }: Props) {
 
         {/* Other signs */}
         <div className="bg-gray-100 rounded-xl p-6 mb-8">
-          <h2 className="font-bold text-lg mb-4 text-gray-900">♾️ Les autres signes en amour</h2>
+          <h2 className="font-bold text-lg mb-4 text-gray-900">Les autres signes en amour</h2>
           <div className="grid sm:grid-cols-2 gap-2">
             {siblings.map((x) => (
               <Link key={x.slug} href={`/astrologie-amour/${x.slug}/`} className="block text-fuchsia-700 hover:text-fuchsia-900 font-medium">

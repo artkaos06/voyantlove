@@ -79,7 +79,7 @@ export default function HoroscopeAmour2026Page() {
       <header className="bg-gradient-to-r from-cyan-500 via-teal-500 to-emerald-500 text-white py-16 px-4">
         <div className="max-w-4xl mx-auto">
           <Link href="/voyance-gratuite-amour/" className="text-white/80 hover:text-white mb-4 inline-block">&larr; Retour &agrave; Voyance Gratuite Amour</Link>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4"> horoscope amour 2026</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">Horoscope amour 2026</h1>
           <p className="text-xl opacity-95 mb-6">Pr&eacute;dictions sentimentales par signe pour une ann&eacute;e pleine de promesses</p>
           <div className="flex gap-4 flex-wrap">
             <a href="#consultation" className="bg-white text-cyan-600 px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition">Consultation Personnalis&eacute;e</a>
@@ -98,10 +98,10 @@ export default function HoroscopeAmour2026Page() {
       <div className="max-w-4xl mx-auto px-4 py-8">
         {/* Stats bar */}
         <div className="bg-white rounded-xl shadow-md p-6 mb-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-          <div><div className="text-3xl mb-1">&#x2648;</div><div className="text-2xl font-bold text-cyan-600">12 signes</div><div className="text-sm text-gray-600">Analys&eacute;s en d&eacute;tail</div></div>
-          <div><div className="text-3xl mb-1"></div><div className="text-2xl font-bold text-cyan-600">Ann&eacute;e 2026</div><div className="text-sm text-gray-600">Pr&eacute;dictions compl&egrave;tes</div></div>
-          <div><div className="text-3xl mb-1"></div><div className="text-2xl font-bold text-cyan-600">Fiable</div><div className="text-sm text-gray-600">Bas&eacute; sur les transits</div></div>
-          <div><div className="text-3xl mb-1"></div><div className="text-2xl font-bold text-cyan-600">Complet</div><div className="text-sm text-gray-600">Amour &amp; compatibilit&eacute;</div></div>
+          <div><div className="text-2xl font-bold text-cyan-600">12 signes</div><div className="text-sm text-gray-600">Analys&eacute;s en d&eacute;tail</div></div>
+          <div><div className="text-2xl font-bold text-cyan-600">Ann&eacute;e 2026</div><div className="text-sm text-gray-600">Pr&eacute;dictions compl&egrave;tes</div></div>
+          <div><div className="text-2xl font-bold text-cyan-600">Fiable</div><div className="text-sm text-gray-600">Bas&eacute; sur les transits</div></div>
+          <div><div className="text-2xl font-bold text-cyan-600">Complet</div><div className="text-sm text-gray-600">Amour &amp; compatibilit&eacute;</div></div>
         </div>
 
         {/* EEAT Signal */}
@@ -123,7 +123,7 @@ export default function HoroscopeAmour2026Page() {
 
         {/* Section 1: Les Transits 2026 qui Bouleversent l&apos;Amour */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6"> Les Transits 2026 qui Bouleversent l&apos;Amour</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Les Transits 2026 qui Bouleversent l&apos;Amour</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Les transits majeurs de 2026 &mdash; Jupiter en G&eacute;meaux puis Cancer, Saturne en B&eacute;lier, et les r&eacute;trogradations de V&eacute;nus &mdash; cr&eacute;ent un paysage astrologique unique pour les relations amoureuses et les nouvelles rencontres.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             L&apos;<strong>horoscope amour 2026</strong> est fa&ccedil;onn&eacute; par des mouvements plan&eacute;taires d&apos;envergure qui influencent profond&eacute;ment la <strong>sph&egrave;re sentimentale</strong> de chaque signe. Comprendre ces transits permet d&apos;anticiper les grandes tendances de l&apos;ann&eacute;e en mati&egrave;re d&apos;<Link href="/methodes-voyance/astrologie-amoureuse/" className="text-cyan-600 hover:text-cyan-800 underline font-medium">astrologie amoureuse</Link> et de saisir les opportunit&eacute;s qu&apos;ils offrent &agrave; votre <strong>vie sentimentale</strong>.
@@ -162,7 +162,7 @@ export default function HoroscopeAmour2026Page() {
 
         {/* Section 2: Signes de Feu */}
         <section id="feu" className="bg-gradient-to-br from-cyan-50 to-teal-50 rounded-xl p-8 mb-8 border-2 border-cyan-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6"> Signes de Feu : B&eacute;lier, Lion, Sagittaire</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Signes de Feu : B&eacute;lier, Lion, Sagittaire</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Les signes de Feu vivent une ann&eacute;e 2026 passionn&eacute;e mais exigeante en amour. Saturne en B&eacute;lier impose des le&ccedil;ons de maturit&eacute; sentimentale, tandis que Jupiter offre de belles ouvertures aux c&eacute;libataires.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             L&apos;ann&eacute;e 2026 invite les signes de Feu &agrave; canaliser leur &eacute;nergie passionnelle vers des <strong>relations amoureuses</strong> plus authentiques et durables. L&apos;<strong>horoscope amour 2026</strong> r&eacute;v&egrave;le des d&eacute;fis stimulants mais aussi des r&eacute;compenses sentimentales m&eacute;rit&eacute;es pour ceux qui acceptent de grandir en amour.
@@ -197,7 +197,7 @@ export default function HoroscopeAmour2026Page() {
 
         {/* Section 3: Signes de Terre */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6"> Signes de Terre : Taureau, Vierge, Capricorne</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Signes de Terre : Taureau, Vierge, Capricorne</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Les signes de Terre sont les grands favoris de l&apos;horoscope amour 2026. Le Taureau conna&icirc;t une ann&eacute;e sentimentale exceptionnelle, la Vierge approfondit ses liens et le Capricorne lib&egrave;re sa sensibilit&eacute;.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             La stabilit&eacute; et la sensualit&eacute; naturelles des signes de Terre trouvent un &eacute;cho puissant dans les <strong>transits plan&eacute;taires</strong> de 2026. L&apos;<strong>horoscope amour 2026</strong> leur promet des avanc&eacute;es concr&egrave;tes en <strong>mati&egrave;re sentimentale</strong> : engagements, emm&eacute;nagements, et pour certains, une <strong>rencontre amoureuse</strong> qui bouleverse leur quotidien dans le meilleur sens du terme.
@@ -234,7 +234,7 @@ export default function HoroscopeAmour2026Page() {
 
         {/* Section 4: Signes d&apos;Air */}
         <section className="bg-gradient-to-br from-teal-50 to-emerald-50 rounded-xl p-8 mb-8 border-2 border-teal-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6"> Signes d&apos;Air : G&eacute;meaux, Balance, Verseau</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Signes d&apos;Air : G&eacute;meaux, Balance, Verseau</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Les signes d&apos;Air naviguent entre l&eacute;g&egrave;ret&eacute; et profondeur en 2026. Jupiter en G&eacute;meaux stimule les rencontres, la Balance vit des choix sentimentaux d&eacute;cisifs et le Verseau affronte des turbulences transformatrices.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             L&apos;<strong>horoscope amour 2026</strong> des signes d&apos;Air est plac&eacute; sous le signe de l&apos;&eacute;volution. Ces signes, naturellement communicatifs et sociables, sont appel&eacute;s &agrave; approfondir leur approche des <strong>relations amoureuses</strong>. La question de savoir <Link href="/nouvelle-rencontre/quand-rencontre-amour/" className="text-cyan-600 hover:text-cyan-800 underline font-medium">quand rencontrer l&apos;amour</Link> trouve des r&eacute;ponses concr&egrave;tes dans les mouvements plan&eacute;taires de cette ann&eacute;e.
@@ -269,7 +269,7 @@ export default function HoroscopeAmour2026Page() {
 
         {/* Section 5: Signes d&apos;Eau */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8" id="consultation">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6"> Signes d&apos;Eau : Cancer, Scorpion, Poissons</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Signes d&apos;Eau : Cancer, Scorpion, Poissons</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Les signes d&apos;Eau b&eacute;n&eacute;ficient d&apos;une ann&eacute;e 2026 riche en &eacute;motions et en profondeur sentimentale. Jupiter en Cancer au second semestre promet des rencontres karmiques et des liens d&apos;&acirc;me exceptionnels.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             L&apos;<strong>horoscope amour 2026</strong> r&eacute;serve aux signes d&apos;Eau une ann&eacute;e de grande <strong>intensit&eacute; &eacute;motionnelle</strong>. Leur intuition naturelle est d&eacute;cupl&eacute;e par les transits plan&eacute;taires, leur permettant de percevoir les <strong>sentiments</strong> de l&apos;autre avec une acuit&eacute; remarquable. Pour une <Link href="/voyance-gratuite-amour/" className="text-cyan-600 hover:text-cyan-800 underline font-medium">voyance gratuite amour</Link> encore plus pr&eacute;cise, les signes d&apos;Eau gagnent &agrave; combiner astrologie et <strong>guidance sentimentale</strong> personnalis&eacute;e.
@@ -308,7 +308,7 @@ export default function HoroscopeAmour2026Page() {
 
         {/* FAQ Section */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8"> Questions Fr&eacute;quentes sur l&apos;Horoscope Amour 2026</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">Questions Fr&eacute;quentes sur l&apos;Horoscope Amour 2026</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Les questions les plus pos&eacute;es concernent le signe le plus chanceux en 2026, les meilleures p&eacute;riodes pour une rencontre, la fiabilit&eacute; de l&apos;horoscope amour et la diff&eacute;rence entre horoscope et th&egrave;me natal.</p>
           <div className="space-y-6">
             <div className="border-b border-gray-200 pb-6">
@@ -340,7 +340,7 @@ export default function HoroscopeAmour2026Page() {
 
         {/* Articles Connexes */}
         <div className="bg-gray-100 rounded-xl p-6 mb-8">
-          <h3 className="font-bold text-lg mb-4 text-gray-900"> Articles Connexes</h3>
+          <h3 className="font-bold text-lg mb-4 text-gray-900">Articles Connexes</h3>
           <div className="space-y-2">
             <Link href="/voyance-gratuite-amour/" className="block text-cyan-600 hover:text-cyan-800 font-medium">&rarr; Voyance Gratuite Amour : Guide Complet</Link>
             <Link href="/methodes-voyance/astrologie-amoureuse/" className="block text-cyan-600 hover:text-cyan-800 font-medium">&rarr; Astrologie Amoureuse : Compatibilit&eacute; Astrale</Link>

@@ -1,4 +1,6 @@
 import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
+import { join } from 'node:path';
 import test from 'node:test';
 
 import { generateStaticParams } from '../app/reves-amour/[reve]/page';
@@ -50,6 +52,45 @@ test('slugs, titles, and primary queries are unique and slugs are ASCII kebab-ca
 test('the dedicated ex guide remains a bridge rather than a generic or first-love record', () => {
   assert.equal(findDream('rever-de-son-ex'), undefined);
   assert.equal(findDream('rever-de-son-premier-amour'), undefined);
+});
+
+test('the "rêver de son ex" head term stays owned by one URL, and that URL is live', () => {
+  // The dictionary carries the ex VARIANTS only; the head query ("rêver de
+  // son ex", plus its "signification" / "qui revient" long tails) is owned by
+  // the richer guidance page at /rupture/rever-de-son-ex/. Adding a head
+  // record here would put two of our own URLs on the same query, so the
+  // bridge target is asserted to exist rather than the record being added.
+  const urls = new Set(sitemap().map((entry) => entry.url));
+  assert.ok(urls.has('https://www.voyantlove.fr/rupture/rever-de-son-ex/'), 'the bridge target must be indexable');
+
+  const exVariants = REVES_AMOUR.filter((d) => /-ex(-|$)/.test(d.slug)).map((d) => d.slug);
+  assert.ok(exVariants.length >= 5, `expected the ex variants to remain, found ${exVariants.length}`);
+  for (const slug of exVariants) {
+    assert.notEqual(slug, 'rever-de-son-ex', 'no variant may collide with the head term');
+  }
+});
+
+test('the bridge page covers "qui veut revenir" as its own sub-intent, distinct from "qui revient"', () => {
+  // Because the head term is owned by ONE page, that page has to carry the
+  // whole cluster. "qui revient" (the ex returns) and "qui veut revenir" (the
+  // ex asks to return) are separate queries with separate answers, so both
+  // must exist and neither may be a reworded copy of the other.
+  // Reads raw source rather than importing the page: it is a server component
+  // wired into CTA/recommendation plumbing not worth booting for a text check,
+  // matching the approach in voyanceGratuiteAmourFaqSync.test.ts.
+  const source = readFileSync(join(__dirname, '..', 'app/rupture/rever-de-son-ex/page.tsx'), 'utf8');
+
+  assert.ok(source.includes('Rêver de son ex qui veut revenir'), 'missing the "qui veut revenir" phrasing');
+  // config.faq single-sources the rendered <h3> AND getFAQSchema() in ContentPage,
+  // so an entry here is also a FAQPage schema entry.
+  assert.ok(
+    source.includes("q: 'Rêver de son ex qui veut revenir : quelle signification ?'"),
+    'the sub-intent must be a config.faq question so it reaches the FAQPage schema'
+  );
+  assert.ok(source.includes("'rêver de son ex qui veut revenir'"), 'missing from config.keywords');
+  // The pre-existing "qui revient" treatment must survive alongside it.
+  assert.ok(source.includes('Rêver de son ex qui revient'));
+  assert.ok(source.includes("q: 'Rêver que son ex revient veut-il dire qu\\'il va revenir ?'"));
 });
 
 test('the four records state focused, differentiated interpretation contracts', () => {

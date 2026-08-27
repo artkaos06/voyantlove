@@ -66,8 +66,8 @@ export default function TarotDuJourAmourPage() {
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Tarot du jour amour gratuit</h1>
           <p className="text-xl opacity-95 mb-6">Une carte, un éclairage sur l&apos;énergie sentimentale de votre journée</p>
           <div className="flex gap-4 flex-wrap">
-            <a href="#tirage" className="bg-white text-emerald-600 px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition">Tirer ma Carte du Jour ↓</a>
-            <a href="#habitude" className="border-2 border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-emerald-600 transition">Pourquoi un Tirage Quotidien</a>
+            <a href="#tirage" className="bg-white text-emerald-600 px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition">Tirer ma carte du jour ↓</a>
+            <a href="#habitude" className="border-2 border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-emerald-600 transition">Pourquoi un tirage quotidien</a>
           </div>
         </div>
       </header>
@@ -77,7 +77,7 @@ export default function TarotDuJourAmourPage() {
       {/* Interactive Tarot Tool */}
       <section id="tirage" className="max-w-4xl mx-auto px-4 py-8">
         <TarotSpread
-          title="Votre Tarot du Jour Amour"
+          title="Votre tarot du jour amour"
           subtitle="Concentrez-vous sur votre vie sentimentale et tirez la carte de votre journée"
           positions={['Votre carte du jour']}
           ctaSource="tarot-du-jour-amour"
@@ -87,10 +87,10 @@ export default function TarotDuJourAmourPage() {
       <div className="max-w-4xl mx-auto px-4 py-8">
         {/* Stats bar */}
         <div className="bg-white rounded-xl shadow-md p-6 mb-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-          <div><div className="text-3xl mb-1"></div><div className="text-2xl font-bold text-emerald-600">1 carte</div><div className="text-sm text-gray-600">Tirage express</div></div>
-          <div><div className="text-3xl mb-1"></div><div className="text-2xl font-bold text-emerald-600">Quotidien</div><div className="text-sm text-gray-600">À renouveler chaque jour</div></div>
-          <div><div className="text-3xl mb-1"></div><div className="text-2xl font-bold text-emerald-600">Gratuit</div><div className="text-sm text-gray-600">Sans inscription</div></div>
-          <div><div className="text-3xl mb-1"></div><div className="text-2xl font-bold text-emerald-600">Immédiat</div><div className="text-sm text-gray-600">Résultat instantané</div></div>
+          <div><div className="text-2xl font-bold text-emerald-600">1 carte</div><div className="text-sm text-gray-600">Tirage express</div></div>
+          <div><div className="text-2xl font-bold text-emerald-600">Quotidien</div><div className="text-sm text-gray-600">À renouveler chaque jour</div></div>
+          <div><div className="text-2xl font-bold text-emerald-600">Gratuit</div><div className="text-sm text-gray-600">Sans inscription</div></div>
+          <div><div className="text-2xl font-bold text-emerald-600">Immédiat</div><div className="text-sm text-gray-600">Résultat instantané</div></div>
         </div>
 
 
@@ -111,7 +111,7 @@ export default function TarotDuJourAmourPage() {
 
         {/* Section 1 */}
         <section id="habitude" className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">Pourquoi Tirer un Tarot du Jour en Amour</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Pourquoi tirer un tarot du jour en amour</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le tarot du jour aide à aborder sa journée sentimentale avec plus de conscience : il attire l&apos;attention sur une énergie à cultiver ou un piège à éviter dans vos relations.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Contrairement &agrave; un <Link href="/voyance-gratuite-amour/tarot-amour-gratuit/" className="text-emerald-600 hover:text-emerald-800 underline font-medium">tirage tarot amour</Link> complet r&eacute;alis&eacute; pour r&eacute;pondre &agrave; une question sp&eacute;cifique, le <strong>tarot du jour</strong> ne cherche pas &agrave; r&eacute;pondre &agrave; quoi que ce soit&nbsp;: il propose simplement une <strong>tonalit&eacute; du jour</strong>. Cette diff&eacute;rence de format en fait un exercice quotidien l&eacute;ger, plut&ocirc;t qu&apos;une consultation ponctuelle sur un sujet pr&eacute;cis.
@@ -126,23 +126,23 @@ export default function TarotDuJourAmourPage() {
 
         {/* Section 2 */}
         <section className="bg-gradient-to-br from-emerald-50 to-green-50 rounded-xl p-8 mb-8 border-2 border-emerald-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">Interpréter Votre Carte du Jour en Amour</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Interpréter votre carte du jour en amour</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Chaque famille d&apos;arcanes oriente différemment la lecture du jour : les cartes de Coupe parlent d&apos;émotions, les arcanes majeurs annoncent des énergies plus marquantes.</p>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-white rounded-lg p-5 border-l-4 border-emerald-500">
-              <h3 className="font-bold text-emerald-700 mb-2">Les Arcanes Majeurs</h3>
+              <h3 className="font-bold text-emerald-700 mb-2">Les arcanes majeurs</h3>
               <p className="text-gray-700 text-sm">Le Soleil, la Lune, l&apos;&Eacute;toile ou la Tour indiquent une <strong>&eacute;nergie forte</strong> qui structure la journ&eacute;e enti&egrave;re. Une carte majeure m&eacute;rite qu&apos;on s&apos;y attarde un peu plus longtemps que les autres jours.</p>
             </div>
             <div className="bg-white rounded-lg p-5 border-l-4 border-green-500">
-              <h3 className="font-bold text-green-700 mb-2">Les Cartes de Coupe</h3>
+              <h3 className="font-bold text-green-700 mb-2">Les cartes de coupe</h3>
               <p className="text-gray-700 text-sm">Li&eacute;es &agrave; l&apos;eau et aux &eacute;motions, elles annoncent une journ&eacute;e o&ugrave; les <strong>sentiments</strong> occupent le devant de la sc&egrave;ne&nbsp;: tendresse, nostalgie ou nouvelle connexion.</p>
             </div>
             <div className="bg-white rounded-lg p-5 border-l-4 border-teal-500">
-              <h3 className="font-bold text-teal-700 mb-2">Les Cartes d&apos;&Eacute;p&eacute;e</h3>
+              <h3 className="font-bold text-teal-700 mb-2">Les cartes d&apos;&eacute;p&eacute;e</h3>
               <p className="text-gray-700 text-sm">Associ&eacute;es &agrave; la pens&eacute;e et &agrave; la communication, elles signalent souvent une journ&eacute;e propice &mdash; ou &agrave; risque &mdash; pour les <strong>discussions importantes</strong> en couple.</p>
             </div>
             <div className="bg-white rounded-lg p-5 border-l-4 border-lime-500">
-              <h3 className="font-bold text-lime-700 mb-2">Les Cartes de B&acirc;ton</h3>
+              <h3 className="font-bold text-lime-700 mb-2">Les cartes de b&acirc;ton</h3>
               <p className="text-gray-700 text-sm">Symboles d&apos;action et de d&eacute;sir, elles annoncent une journ&eacute;e o&ugrave; l&apos;<strong>initiative amoureuse</strong> est favoris&eacute;e&nbsp;: oser un premier pas, relancer une conversation.</p>
             </div>
           </div>
@@ -152,7 +152,7 @@ export default function TarotDuJourAmourPage() {
 
         {/* Section 3 */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">Tarot du Jour et Tarot Futur Proche : Quelle Différence</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Tarot du jour et tarot futur proche : quelle différence</h2>
           <p className="text-lg font-semibold text-gray-800 mb-4">Le tarot du jour éclaire les prochaines 24 heures, tandis que le tarot futur proche projette un tirage sur les prochaines semaines.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
             Ces deux formats de <strong>voyance gratuite amour</strong> se compl&egrave;tent sans se substituer l&apos;un &agrave; l&apos;autre. Le <strong>tarot du jour</strong> ne concerne que la journ&eacute;e en cours&nbsp;: une seule carte, une lecture imm&eacute;diate. Pour une vision sur un horizon plus large &mdash; les prochaines semaines de votre <strong>situation sentimentale</strong> &mdash; le <Link href="/voyance-gratuite-amour/tarot-futur-proche-amour/" className="text-emerald-600 hover:text-emerald-800 underline font-medium">tarot futur proche amour</Link> propose un tirage &agrave; plusieurs cartes qui trace une v&eacute;ritable tendance &agrave; court terme.
@@ -164,7 +164,7 @@ export default function TarotDuJourAmourPage() {
 
         {/* FAQ Section */}
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">Questions Fréquentes sur le Tarot du Jour Amour</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">Questions fréquentes sur le tarot du jour amour</h2>
           <div className="space-y-6">
             <div className="border-b border-gray-200 pb-6">
               <h3 className="text-xl font-bold text-gray-900 mb-3">Comment fonctionne le tarot du jour en amour ?</h3>
@@ -187,7 +187,7 @@ export default function TarotDuJourAmourPage() {
 
         {/* Articles Connexes */}
         <div className="bg-gray-100 rounded-xl p-6 mb-8">
-          <h3 className="font-bold text-lg mb-4 text-gray-900">Articles Connexes</h3>
+          <h3 className="font-bold text-lg mb-4 text-gray-900">Articles connexes</h3>
           <div className="space-y-2">
             <Link href="/voyance-gratuite-amour/" className="block text-emerald-600 hover:text-emerald-800 font-medium">&rarr; Voyance Gratuite Amour : Guide Complet</Link>
             <Link href="/voyance-gratuite-amour/tarot-futur-proche-amour/" className="block text-emerald-600 hover:text-emerald-800 font-medium">&rarr; Tarot Futur Proche Amour Gratuit</Link>

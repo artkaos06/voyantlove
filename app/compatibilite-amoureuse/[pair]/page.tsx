@@ -55,7 +55,6 @@ export default async function PairPage({ params }: Props) {
   const title = `Compatibilité Amoureuse ${rec.signA} ${rec.signB}`;
   const sA = signMeta(rec.signA);
   const sB = signMeta(rec.signB);
-  const hearts = ''.repeat(rec.score) + ''.repeat(5 - rec.score);
   const siblings = LIVE_PAIRS.filter(
     (p) => p.slug !== rec.slug && (p.signA === rec.signA || p.signB === rec.signA || p.signA === rec.signB || p.signB === rec.signB)
   ).slice(0, 4);
@@ -88,7 +87,23 @@ export default async function PairPage({ params }: Props) {
           <Link href="/compatibilite-amoureuse/" className="text-white/80 hover:text-white mb-4 inline-block">&larr; Toutes les compatibilités</Link>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">{sA?.emoji} {rec.signA} et {rec.signB} {sB?.emoji}</h1>
           <p className="text-xl opacity-95 mb-3">{rec.titre}</p>
-          <div className="text-2xl" aria-label={`Score de compatibilité : ${rec.score} sur 5`}>{hearts}</div>
+          {/* Score de compatibilité : 5 pastilles pleines/vides + la valeur
+              chiffrée. Le bandeau est un dégradé indigo/violet, donc les
+              pastilles pleines sont blanches (le violet du design system y
+              serait invisible) et les vides en blanc translucide. La valeur
+              chiffrée est aria-hidden pour ne pas doubler le libellé lu par
+              les lecteurs d'écran. */}
+          <div className="flex items-center gap-3">
+            <div className="flex items-center gap-1.5" role="img" aria-label={`Score de compatibilité : ${rec.score} sur 5`}>
+              {Array.from({ length: 5 }, (_, i) => (
+                <span
+                  key={i}
+                  className={`h-3.5 w-3.5 rounded-full ${i < rec.score ? 'bg-white' : 'bg-white/30 ring-1 ring-inset ring-white/50'}`}
+                />
+              ))}
+            </div>
+            <span className="text-xl font-semibold" aria-hidden="true">{rec.score}/5</span>
+          </div>
         </div>
       </header>
 
@@ -120,7 +135,9 @@ export default async function PairPage({ params }: Props) {
             <Link href={`/astrologie-amour/${LIVE_SIGN_SLUG[rec.signB]}/`} className="text-indigo-600 hover:text-indigo-800 underline font-medium">{rec.signB} en amour</Link>
           ) : (
             <>{rec.signB} en amour</>
-          )}.
+          )}. Et pour dépasser le seul thème astral, la{' '}
+          <Link href="/voyance-gratuite-amour/" className="text-indigo-600 hover:text-indigo-800 underline font-medium">voyance amoureuse gratuite</Link>{' '}
+          éclaire ce duo carte en main.
         </p>
 
         <article className="bg-white rounded-xl shadow-md p-8 mb-8 border-t-4 border-indigo-500">

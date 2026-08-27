@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect } from 'react';
+import { setCookieBarOpen } from '@/lib/cookieBar';
 
 declare global {
   interface Window {
@@ -12,6 +13,8 @@ declare global {
 export default function CookieConsent() {
   useEffect(() => {
     let cancelled = false;
+    // Which consent modals are currently on screen (see onModalShow below).
+    const openModals = new Set<string>();
 
     (async () => {
       const CC = await import('vanilla-cookieconsent');
@@ -102,6 +105,24 @@ export default function CookieConsent() {
         onFirstConsent: ({ cookie }) => applyConsent(cookie.categories || []),
         onConsent: ({ cookie }) => applyConsent(cookie.categories || []),
         onChange: ({ cookie }) => applyConsent(cookie.categories || []),
+
+        // #cc-main out-stacks everything on the page (z-index 2147483647), so
+        // anything bottom-fixed shown underneath it is invisible and
+        // unclickable — that is what buried the quiz lander's CTA for four
+        // days. These two callbacks publish "a consent modal is on screen" to
+        // lib/cookieBar, which components/FloatingConsultCTA.tsx reads to stay
+        // down. Tracked as a set of modal names, not a single flag: opening
+        // "Personnaliser" shows the preferences modal before hiding the
+        // consent bar, so a plain boolean would flicker to false while a modal
+        // is still up.
+        onModalShow: ({ modalName }) => {
+          openModals.add(modalName);
+          setCookieBarOpen(true);
+        },
+        onModalHide: ({ modalName }) => {
+          openModals.delete(modalName);
+          setCookieBarOpen(openModals.size > 0);
+        },
       });
     })();
 

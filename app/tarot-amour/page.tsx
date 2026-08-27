@@ -66,8 +66,11 @@ export default function TarotAmourHub() {
                 href={`/tarot-amour/${c.slug}/`}
                 className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition border-t-4 border-indigo-500"
               >
-                <div className="flex items-center justify-between mb-2">
-                  <div className="text-3xl">{c.emoji}</div>
+                {/* La passe de dé-émojisation a vidé TarotLoveCard.emoji sans
+                    retirer le bloc qui l'affichait : chaque carte portait donc
+                    une pastille de 3xl entièrement vide. L'identité de la carte,
+                    c'est son nom et son arcane, comme dans TarotOuiNon. */}
+                <div className="flex items-center justify-end mb-2">
                   <span className="flex items-center gap-1.5 text-xs font-semibold text-gray-500">
                     <span className={`w-2.5 h-2.5 rounded-full ${OUINON_DOT[c.ouiNon]}`}></span>
                     {c.ouiNon}

@@ -14,46 +14,94 @@
 // other content CTA. `source` is distinct (floating-cta-*) so its contribution
 // is measurable separately.
 //
-// Four things it deliberately avoids, each a real trap in this codebase:
+// Five things it deliberately avoids, each a real trap in this codebase:
 //   1. The cookie bar (#cc-main) renders at z-index 2147483647 — vanilla-
 //      cookieconsent's max, nothing can out-stack it. A bottom-fixed CTA shown
 //      while it is open would sit UNDER it. That is exactly what buried the
 //      quiz lander's CTA for 4 days (commit 38adde3). So: stay hidden while
-//      #cc-main is on screen.
+//      #cc-main is on screen. Visibility comes from lib/cookieBar, published
+//      by components/CookieConsent.tsx.
 //   2. Doubling up with VoyantFinalCTA. Near the page bottom the final CTA and
 //      footer are already on screen, so the bar hides instead of stacking two
 //      competing CTAs (and covering the footer links).
 //   3. Paid landers own their own sticky bar — never render there.
 //   4. Appearing instantly. It waits for real reading depth, so it reads as a
 //      helpful follow-up rather than an interstitial.
+//   5. The English brand. This component lives in the ROOT layout, which
+//      app/en/* inherits, so lovepsychicguide.com would otherwise get a French
+//      affiliate bar. See isEnglishBrand in lib/floatingCta.ts for why a path
+//      exclusion cannot detect that.
 
 import { useEffect, useRef, useState } from 'react';
 import { usePathname } from 'next/navigation';
 import { getAffiliateLink } from '@/lib/voyants';
 import { trackAffiliateClick } from '@/lib/glyphex';
 import { useVoyants } from '@/lib/useVoyants';
+import { isCookieBarOpen, subscribeCookieBar } from '@/lib/cookieBar';
 import {
-  topicForPath, isExcludedPath, shouldShowFloatingCta, shouldRenderFloatingCta,
-  shouldEmphasiseNow,
+  topicForPath, isExcludedPath, isEnglishBrand, shouldShowFloatingCta,
+  shouldRenderFloatingCta, shouldEmphasiseNow,
   FLOATING_CTA_DISMISS_KEY as DISMISS_KEY,
 } from '@/lib/floatingCta';
 
 export default function FloatingConsultCTA() {
   const pathname = usePathname() || '/';
-  const { voyants, loading } = useVoyants();
   const [pastIntro, setPastIntro] = useState(false);
   const [atEnd, setAtEnd] = useState(false);
   const [ccOpen, setCcOpen] = useState(false);
   const [dismissed, setDismissed] = useState(false);
+  // Entrance emphasis, documented at its effect below. Declared up here so the
+  // per-page reset a few lines down can clear it.
+  const [emphasise, setEmphasise] = useState(false);
+  const emphasisedRef = useRef(false);
+
+  // Brand is read from the real location, not from the router path (the EN
+  // rewrite is server-side and invisible to usePathname). Lazily initialised
+  // so the very first client render already knows, then re-checked per route.
+  // Both renders that could disagree — the server's and the first client's —
+  // return null anyway while the feed is loading, so there is no hydration
+  // mismatch to trade for it.
+  const [enBrand, setEnBrand] = useState(
+    () => typeof window !== 'undefined'
+      && isEnglishBrand({ hostname: window.location.hostname, pathname: window.location.pathname }),
+  );
+  useEffect(() => {
+    setEnBrand(isEnglishBrand({
+      hostname: window.location.hostname,
+      pathname: window.location.pathname,
+    }));
+  }, [pathname]);
 
   const excluded = isExcludedPath(pathname);
+  const inactive = excluded || enBrand;
+
+  // Don't pull the ~36 KB roster on pages that can never show the bar. The
+  // hook still runs (hooks cannot be conditional); the flag gates its fetch.
+  const { voyants, loading } = useVoyants(!inactive);
+
+  // Per-page reset, applied during render rather than in an effect.
+  //
+  // The component lives in the root layout, so a client-side navigation does
+  // NOT remount it: without this, pastIntro stayed true from the previous
+  // article and the bar was already up at the top of the next one, turning
+  // "waits for reading depth" into "appears once per session". Effects run
+  // after paint, so resetting there would still flash the bar for a frame.
+  // React's documented adjust-state-during-render pattern re-renders before
+  // anything is shown.
+  const [renderedPath, setRenderedPath] = useState(pathname);
+  if (renderedPath !== pathname) {
+    setRenderedPath(pathname);
+    setPastIntro(false);
+    setAtEnd(false);
+    setEmphasise(false);
+  }
 
   useEffect(() => {
-    if (excluded) return;
+    if (inactive) return;
     try {
       if (sessionStorage.getItem(DISMISS_KEY) === '1') setDismissed(true);
     } catch { /* private mode */ }
-  }, [excluded]);
+  }, [inactive]);
 
   // Visibility is driven by IntersectionObserver rather than a scroll handler:
   // IO reports element positions directly, so it works no matter which element
@@ -61,8 +109,14 @@ export default function FloatingConsultCTA() {
   // frame. The two triggers are semantic rather than numeric:
   //   - past the <h1>  => the visitor is genuinely reading, not bouncing
   //   - <footer> in view => the final CTA is already on screen, so stand down
+  //
+  // `pathname` is in the deps because a client-side navigation swaps the whole
+  // article without remounting this component: the previous page's <h1> is
+  // gone from the document and the observers pointed at it are dead, so the
+  // new page's heading has to be observed afresh. Without it the bar never
+  // learned anything about the second article a reader opened.
   useEffect(() => {
-    if (excluded || dismissed) return;
+    if (inactive || dismissed) return;
 
     const h1 = document.querySelector('h1');
     const footer = document.querySelector('footer');
@@ -89,25 +143,22 @@ export default function FloatingConsultCTA() {
     }
 
     return () => observers.forEach((o) => o.disconnect());
-  }, [excluded, dismissed]);
+  }, [pathname, inactive, dismissed]);
 
   // The cookie bar renders at z-index 2147483647 (vanilla-cookieconsent's max,
   // nothing can out-stack it), so anything bottom-fixed shown underneath it is
-  // invisible and unclickable. Watch it and stay down until it is gone.
+  // invisible and unclickable. Stay down until it is gone.
+  //
+  // This used to be a MutationObserver on document.documentElement (subtree +
+  // childList + attributes) whose callback ran a querySelector and an
+  // offsetHeight read — a forced layout — on every DOM mutation on the site,
+  // for the whole session, to maintain one boolean. CookieConsent now publishes
+  // that boolean from vanilla-cookieconsent's own onModalShow / onModalHide.
   useEffect(() => {
-    if (excluded || dismissed) return;
-    const check = () => {
-      const cc = document.querySelector('#cc-main') as HTMLElement | null;
-      setCcOpen(!!cc && cc.offsetHeight > 0);
-    };
-    check();
-    const mo = new MutationObserver(check);
-    mo.observe(document.documentElement, {
-      subtree: true, attributes: true, childList: true,
-      attributeFilter: ['class', 'style'],
-    });
-    return () => mo.disconnect();
-  }, [excluded, dismissed]);
+    if (inactive || dismissed) return;
+    setCcOpen(isCookieBarOpen()); // the bar may already be up when we mount
+    return subscribeCookieBar(setCcOpen);
+  }, [inactive, dismissed]);
 
   const visible = shouldShowFloatingCta({ pastIntro, atEnd, ccOpen });
 
@@ -122,8 +173,14 @@ export default function FloatingConsultCTA() {
   // emphasisedRef makes it fire ONCE per page view. Keying off `visible` alone
   // would re-fire every time the reader scrolls back up past the footer, which
   // is a repeating pulse wearing a disguise.
-  const [emphasise, setEmphasise] = useState(false);
-  const emphasisedRef = useRef(false);
+  //
+  // "Page view", not "session": a client-side navigation is a new page view, so
+  // the ref is armed again below on every route change. Leaving it latched made
+  // the emphasis a once-per-session effect on a site whose readers routinely
+  // open three or four articles.
+  useEffect(() => {
+    emphasisedRef.current = false;
+  }, [pathname]);
 
   useEffect(() => {
     if (!shouldEmphasiseNow(emphasisedRef.current, visible)) return;
@@ -133,7 +190,7 @@ export default function FloatingConsultCTA() {
     return () => clearTimeout(t);
   }, [visible]);
 
-  if (!shouldRenderFloatingCta({ pathname, dismissed, loading, voyantCount: voyants.length })) return null;
+  if (!shouldRenderFloatingCta({ pathname, dismissed, loading, voyantCount: voyants.length, enBrand })) return null;
 
   const topic = topicForPath(pathname);
   const source = `floating-cta-${topic}`;
@@ -156,6 +213,15 @@ export default function FloatingConsultCTA() {
         visible ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0 pointer-events-none'
       }`}
       aria-hidden={!visible}
+      // The hidden state is only translate + opacity + pointer-events, all of
+      // which leave the anchor and the dismiss button in the tab order: a
+      // keyboard user could Tab into an invisible bar and fire an affiliate
+      // click with Enter, and aria-hidden around focusable content is an
+      // accessibility violation in its own right. `inert` removes the subtree
+      // from focus, hit-testing and the a11y tree without touching layout, so
+      // the slide animation is unaffected. React 19 (this repo is on 19.2)
+      // passes it through as a real boolean attribute.
+      inert={!visible}
     >
       <style dangerouslySetInnerHTML={{ __html: `
 @keyframes vlCtaEnter{
