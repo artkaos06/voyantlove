@@ -189,6 +189,49 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     ],
   },
   {
+    slug: 'ame-soeur',
+    terme: 'Âme sœur',
+    categorie: 'spiritualite',
+    definitionCourte:
+      'Une personne avec qui l’on partage un lien profond de reconnaissance mutuelle et de complémentarité, concept enraciné dans la philosophie antique et repris par les traditions spirituelles.',
+    answerCapsule:
+      'L’âme sœur désigne une personne avec laquelle on ressent un lien profond de reconnaissance mutuelle, de complémentarité et de facilité relationnelle, comme si la rencontre répondait à quelque chose qui attendait depuis longtemps. L’origine la plus connue de ce concept se trouve dans Le Banquet de Platon, où le personnage d’Aristophane raconte que les humains étaient autrefois des êtres doubles, coupés en deux par Zeus et condamnés à chercher leur moitié perdue. Cette image poétique a traversé les siècles, reprise par les traditions romantiques occidentales, puis par les courants spirituels contemporains. La psychologie ne valide pas la notion d’âme sœur en tant que telle, mais l’expérience qu’elle décrit, la reconnaissance profonde, la facilité de communication, le sentiment de croissance mutuelle, correspond à ce que les chercheurs observent dans les couples à attachement sécure. L’âme sœur se distingue de la flamme jumelle : là où l’âme sœur évoque la complémentarité et l’apaisement, la flamme jumelle désigne un lien miroir intense et souvent éprouvant.',
+    explication:
+      'Le mythe d’Aristophane dans Le Banquet de Platon (vers 385 av. J.-C.) est souvent résumé comme la quête de « l’autre moitié », mais le texte original est plus nuancé : Aristophane y décrit des êtres sphériques à quatre bras et quatre jambes, séparés par les dieux, dont la quête de l’autre n’est pas une recherche de fusion parfaite mais un élan de reconnaissance. Cette image a ensuite été intégrée aux traditions monothéistes sous des formes variées, puis considérablement réinterprétée par les courants New Age à partir du vingtième siècle. L’expression « âme sœur » est aujourd’hui utilisée aussi bien dans un sens strictement romantique que dans un sens plus large, toute personne avec qui l’on partage une connexion de reconnaissance profonde. La croyance en une âme sœur unique et prédestinée est largement répandue : une étude Marist (2011) estimait que 73 % des Américains y croyaient. Les psychologues relationnels, eux, préfèrent parler de compatibilité construite plutôt que de prédestination.',
+    enAmour:
+      'En pratique, la distinction la plus utile est celle entre « trouver » son âme sœur et « construire » une relation profonde. La croyance en une personne unique prédestinée peut devenir un piège : elle pousse à idéaliser un partenaire au début puis à le rejeter dès que la relation demande un effort, en concluant qu’il n’était pas « le bon ». La recherche en psychologie relationnelle, notamment les travaux de Raymond Knee (1998) sur les théories implicites de la relation, montre que les personnes qui croient au destin amoureux (destiny beliefs) ont tendance à abandonner plus vite face aux difficultés que celles qui croient en la croissance du couple (growth beliefs). L’idée de l’âme sœur est belle comme aspiration ; elle devient problématique quand elle sert de critère de tri instantané.',
+    points: [
+      'Concept tracé jusqu’au mythe d’Aristophane dans Le Banquet de Platon (vers 385 av. J.-C.)',
+      'Se distingue de la flamme jumelle : complémentarité et apaisement vs. miroir et intensité',
+      'La psychologie ne valide pas la prédestination mais reconnaît l’expérience de reconnaissance profonde',
+      'Les « destiny beliefs » prédisent moins bien la durabilité des couples que les « growth beliefs » (Knee, 1998)',
+    ],
+    termesLies: ['connexion-ames', 'amour-karmique', 'contrat-ame', 'signe-du-destin'],
+    liensSite: [
+      { label: 'Signes de l’âme sœur', href: '/nouvelle-rencontre/signes-ame-soeur/' },
+      { label: 'Trouver son âme sœur', href: '/nouvelle-rencontre/trouver-ame-soeur/' },
+      { label: 'Flamme jumelle', href: '/nouvelle-rencontre/flamme-jumelle/' },
+    ],
+    faq: [
+      {
+        q: 'Qu’est-ce qu’une âme sœur au sens spirituel ?',
+        a: 'Dans la tradition spirituelle, une âme sœur est une personne avec laquelle on partagerait un lien forgé avant l’incarnation, une forme de reconnaissance entre deux âmes qui se sont déjà rencontrées dans d’autres vies ou qui auraient un accord d’évolution mutuelle. Cette lecture donne du sens aux rencontres marquées par un sentiment immédiat de familiarité. Elle se distingue du concept de flamme jumelle, qui désigne un lien plus intense et plus confrontant, souvent décrit comme un miroir plutôt qu’un complément.',
+      },
+      {
+        q: 'Différence entre âme sœur et flamme jumelle ?',
+        a: 'L’âme sœur évoque la complémentarité, le confort, une relation où l’on se sent profondément compris et soutenu. La flamme jumelle, elle, désigne un lien miroir d’une intensité souvent déstabilisante : elle vous renvoie à vos propres blessures et provoque une transformation intérieure qui passe rarement par la tranquillité. On peut avoir plusieurs âmes sœurs au cours d’une vie (y compris en amitié), alors que la flamme jumelle est généralement décrite comme unique. En pratique, cette distinction aide à ne pas confondre une relation apaisante avec un lien trop confortable, ni une relation intense avec un lien forcément juste.',
+      },
+      {
+        q: 'Peut-on avoir plusieurs âmes sœurs ?',
+        a: 'Oui, dans la plupart des traditions spirituelles, une personne peut croiser plusieurs âmes sœurs au cours de sa vie, et pas seulement en amour : un ami proche, un mentor, un membre de la famille peuvent aussi porter cette qualité de reconnaissance profonde. L’idée d’une seule âme sœur unique relève davantage du romantisme occidental moderne que des traditions ésotériques elles-mêmes, qui décrivent plutôt un réseau d’âmes liées par des expériences et des accords d’évolution partagés.',
+      },
+      {
+        q: 'Comment reconnaître son âme sœur ?',
+        a: 'Les signes les plus souvent cités sont un sentiment immédiat de familiarité et de reconnaissance, une facilité de communication qui semble naturelle plutôt qu’acquise, une complémentarité qui n’efface pas les différences mais les rend fertiles, et un sentiment de croissance mutuelle : la relation vous rend meilleur sans vous forcer à être quelqu’un d’autre. Ces signes ne sont pas des preuves ; ils indiquent une compatibilité profonde qui, pour durer, devra tout de même être nourrie par un engagement conscient et quotidien.',
+      },
+    ],
+  },
+  {
     slug: 'contrat-ame',
     terme: 'Contrat d’Âme',
     categorie: 'spiritualite',
@@ -1780,6 +1823,44 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
   // Psychologie amoureuse
   // =====================================================================
   {
+    slug: 'style-dattachement',
+    terme: 'Style d’attachement',
+    categorie: 'psychologie-amoureuse',
+    definitionCourte:
+      'Un schéma relationnel forgé dans l’enfance, selon la théorie de l’attachement, qui influence durablement la façon dont une personne vit l’intimité, la proximité et la séparation en couple.',
+    answerCapsule:
+      'Un style d’attachement est un schéma relationnel qui se construit dès la petite enfance en fonction de la qualité du lien avec les figures parentales, et qui influence durablement la façon dont une personne vit l’intimité, la proximité et la séparation à l’âge adulte, en particulier en couple. Le concept a été introduit par le psychiatre britannique John Bowlby dans les années 1960-1970, puis validé expérimentalement par la psychologue Mary Ainsworth à travers le protocole de la « Situation étrange » en 1978. À la fin des années 1980, Cindy Hazan et Phillip Shaver ont transposé ce cadre aux relations amoureuses adultes. On distingue quatre styles : sécure, anxieux, évitant et désorganisé. Selon les méta-analyses disponibles, environ 55 % de la population présente un attachement sécure, 20 % un style anxieux et 25 % un style évitant ou désorganisé. Ces styles ne sont pas des traits de personnalité figés à la naissance ; ce sont des stratégies apprises, susceptibles d’évoluer.',
+    explication:
+      'La théorie de l’attachement repose sur l’idée que l’enfant développe un « modèle opérant interne » de la relation, un ensemble d’attentes inconscientes sur la disponibilité et la fiabilité des autres, en fonction de l’expérience vécue avec ses premiers donneurs de soins. Si ces figures sont cohérentes et réactives, l’enfant développe un attachement sécure qui se traduit plus tard par une aisance dans l’intimité et une capacité à gérer les conflits sans perdre pied. Si la réponse parentale est incohérente, distante ou effrayante, d’autres stratégies se mettent en place. Kim Bartholomew et Leonard Horowitz ont affiné le modèle en 1991 en distinguant quatre catégories adultes croisées selon deux axes : l’image de soi (positive ou négative) et l’image de l’autre (positive ou négative).',
+    enAmour:
+      'Connaître son style d’attachement aide à comprendre ses réactions automatiques dans le couple : pourquoi un silence provoque de l’angoisse chez une personne mais du soulagement chez une autre, pourquoi certaines personnes fuient la proximité au moment précis où la relation s’approfondit. Ce cadre n’est ni un test de personnalité ni une étiquette figée : les psychologues s’accordent à dire que le style d’attachement peut évoluer avec le temps, notamment à travers l’expérience d’une relation stable avec un partenaire sécure ou un travail thérapeutique ciblé, un processus parfois appelé « attachement gagné » (earned security).',
+    points: [
+      'Concept fondé par John Bowlby (années 1960) et validé par Mary Ainsworth (1978)',
+      'Transposé aux relations amoureuses adultes par Cindy Hazan et Phillip Shaver (1987)',
+      'Quatre styles reconnus : sécure (~55 %), anxieux (~20 %), évitant, désorganisé (~25 % combinés)',
+      'N’est pas un trait figé : peut évoluer via une relation sécure ou un travail thérapeutique',
+    ],
+    termesLies: ['attachement-anxieux', 'attachement-evitant', 'attachement-desorganise'],
+    liensSite: [
+      { label: 'Dépendance affective', href: '/crise-couple/dependance-affective/' },
+      { label: 'Sentiments amoureux', href: '/sentiments/' },
+    ],
+    faq: [
+      {
+        q: 'Quel est mon style d’attachement ?',
+        a: 'Plusieurs questionnaires validés en psychologie permettent d’évaluer son style d’attachement adulte, dont le ECR-R (Experiences in Close Relationships, Revised). Ils mesurent deux dimensions principales : l’anxiété d’abandon (la peur de perdre l’autre) et l’évitement de l’intimité (l’inconfort face à la proximité émotionnelle). Un score bas sur les deux indique un attachement sécure. Un thérapeute formé en attachement peut aussi aider à identifier son style à travers l’exploration de ses schémas relationnels récurrents.',
+      },
+      {
+        q: 'Les 4 styles d’attachement en amour, c’est quoi ?',
+        a: 'L’attachement sécure se traduit par une aisance dans l’intimité et une capacité à gérer les conflits avec calme. L’attachement anxieux se manifeste par un fort besoin de réassurance et une peur de l’abandon. L’attachement évitant valorise l’indépendance et se retire face à l’intimité. L’attachement désorganisé combine une envie de proximité et une peur de l’intimité, souvent liées à des expériences précoces marquantes. Chaque style est une stratégie apprise, pas un défaut de caractère.',
+      },
+      {
+        q: 'Peut-on changer de style d’attachement ?',
+        a: 'Oui. Les recherches longitudinales montrent que le style d’attachement n’est pas gravé dans le marbre. Il peut évoluer dans deux directions : une personne insécure peut développer un attachement gagné (earned security) à travers une relation stable et cohérente ou un travail thérapeutique, et inversement, un traumatisme ou une relation destructrice peut déstabiliser un attachement jusque-là sécure. Le facteur le plus souvent cité est la prise de conscience de ses propres schémas, qui permet de choisir des réponses plus adaptées plutôt que de répéter des automatismes.',
+      },
+    ],
+  },
+  {
     slug: 'attachement-anxieux',
     terme: 'Attachement Anxieux',
     categorie: 'psychologie-amoureuse',
@@ -1856,6 +1937,45 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     ],
   },
   {
+    slug: 'attachement-desorganise',
+    terme: 'Attachement désorganisé',
+    categorie: 'psychologie-amoureuse',
+    definitionCourte:
+      'Le quatrième style d’attachement, caractérisé par une oscillation entre désir intense de proximité et peur de l’intimité, souvent lié à des expériences précoces marquantes.',
+    answerCapsule:
+      'L’attachement désorganisé, parfois appelé attachement craintif-évitant dans le modèle adulte de Kim Bartholomew et Leonard Horowitz (1991), est le quatrième style d’attachement identifié par les psychologues Mary Main et Erik Hesse en 1990. Contrairement aux styles anxieux et évitant qui représentent chacun une stratégie organisée face à l’intimité, l’un en s’agrippant, l’autre en se retirant, l’attachement désorganisé se caractérise par l’absence de stratégie cohérente : la personne oscille entre un besoin intense de proximité et une peur profonde de cette même proximité, sans pouvoir résoudre cette contradiction. Ce style se développerait dans un contexte où la figure d’attachement a été à la fois source de réconfort et source de peur pour l’enfant, créant un dilemme où approcher le parent représente à la fois la solution et le danger. En couple, cette dynamique se traduit souvent par des comportements imprévisibles et des cycles déroutants de rapprochement intense suivi de rejet brutal.',
+    explication:
+      'Les travaux de Mary Main et Erik Hesse ont montré que l’attachement désorganisé émerge principalement lorsque la figure d’attachement présente des comportements effrayants ou effrayés (frightened/frightening), une posture parentale déstabilisante pour l’enfant qui ne peut ni fuir ni se rapprocher en sécurité. Ce style se distingue clairement de l’attachement évitant : la personne évitante a une stratégie organisée (minimiser l’intimité) et s’y tient de façon relativement prévisible, tandis que la personne à l’attachement désorganisé n’a pas de stratégie stable et peut basculer d’un comportement à l’autre sans transition. Dans le modèle de Bartholomew et Horowitz, ce profil combine une image négative de soi (je ne mérite pas d’être aimé) et une image négative de l’autre (on ne peut pas faire confiance), ce qui le distingue aussi de l’attachement anxieux (image négative de soi mais positive de l’autre).',
+    enAmour:
+      'En couple, une personne à l’attachement désorganisé peut vivre une relation comme un terrain simultanément attirant et menaçant : elle désire profondément la connexion mais ressent une angoisse aiguë dès que l’intimité se rapproche. Cela peut se manifester par des déclarations d’amour intenses suivies de retraits soudains, de la jalousie mêlée à un besoin de distancer le partenaire, ou une difficulté à faire confiance malgré des preuves répétées de fiabilité. Comprendre ce fonctionnement, que ce soit en soi ou chez un partenaire, est un premier pas vers la désescalade de ces cycles. Un accompagnement thérapeutique est souvent recommandé, en particulier les approches centrées sur le trauma.',
+    points: [
+      'Identifié par Mary Main et Erik Hesse en 1990, distinct des styles anxieux et évitant',
+      'Résulte souvent d’un contexte parental à la fois réconfortant et effrayant pour l’enfant',
+      'Se manifeste par une oscillation entre recherche de proximité et peur de l’intimité',
+      'Appelé « craintif-évitant » dans le modèle adulte de Bartholomew et Horowitz (1991)',
+      'Les approches thérapeutiques centrées sur le trauma sont généralement recommandées',
+    ],
+    termesLies: ['attachement-anxieux', 'attachement-evitant', 'style-dattachement', 'peur-de-labandon'],
+    liensSite: [
+      { label: 'Dépendance affective', href: '/crise-couple/dependance-affective/' },
+      { label: 'Peur d’aimer à nouveau', href: '/nouvelle-rencontre/peur-de-aimer-a-nouveau/' },
+    ],
+    faq: [
+      {
+        q: 'Quelle est la différence entre attachement évitant et attachement désorganisé ?',
+        a: 'L’attachement évitant est une stratégie organisée et prévisible : la personne minimise systématiquement l’importance de l’intimité et prend ses distances de façon relativement constante. L’attachement désorganisé se caractérise par l’absence de stratégie cohérente : la personne oscille entre un besoin intense de proximité et une peur profonde de cette même proximité, produisant des comportements contradictoires et imprévisibles. L’évitant est distant de façon stable ; le désorganisé est instable dans son rapport même à la distance et à la proximité.',
+      },
+      {
+        q: 'L’attachement désorganisé est-il lié à un traumatisme ?',
+        a: 'Les recherches de Main et Hesse ont établi un lien étroit entre l’attachement désorganisé chez l’enfant et des comportements parentaux effrayants ou effrayés. Chez l’adulte, ce style est fréquemment associé à des expériences précoces marquantes : maltraitance, négligence grave, perte non résolue d’une figure d’attachement. Cela ne signifie pas que toute personne à l’attachement désorganisé a subi un traumatisme au sens strict, mais le lien est suffisamment documenté pour que les approches thérapeutiques recommandées ciblent souvent le trauma en priorité.',
+      },
+      {
+        q: 'Peut-on construire un couple stable avec un attachement désorganisé ?',
+        a: 'Oui, mais cela demande généralement un travail thérapeutique de fond plutôt qu’une simple bonne volonté. La personne à l’attachement désorganisé bénéficie souvent d’approches centrées sur le trauma qui lui permettent de démêler les réactions automatiques liées à ses expériences précoces de ses réponses face au partenaire actuel. Un partenaire stable et patient favorise ce processus, mais ne peut pas le remplacer : la relation seule ne suffit généralement pas à réorganiser un style d’attachement aussi profondément enraciné.',
+      },
+    ],
+  },
+  {
     slug: 'love-bombing',
     terme: 'Love Bombing',
     categorie: 'psychologie-amoureuse',
@@ -1917,6 +2037,10 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
       { label: 'Relation toxique', href: '/sentiments/relation-toxique/' },
     ],
     faq: [
+      {
+        q: 'Qu’est-ce qu’un pervers narcissique ?',
+        a: 'Le terme « pervers narcissique » désigne, dans le langage courant français, une personne dont le fonctionnement relationnel repose sur un cycle caractéristique : une phase de séduction intense (proche du love bombing), suivie d’une dévalorisation progressive du partenaire, d’une inversion systématique des responsabilités lors des conflits et d’un isolement graduel de la victime. Ce profil, popularisé par le psychiatre Paul-Claude Racamier dans les années 1980, n’est pas un diagnostic psychiatrique officiel mais décrit une dynamique de relation toxique dans laquelle l’emprise s’installe de façon insidieuse. La souffrance vécue par le partenaire est réelle et mérite d’être nommée, indépendamment de la question du diagnostic clinique.',
+      },
       {
         q: 'Le terme « pervers narcissique » est-il un vrai diagnostic médical ?',
         a: 'Non, ce n’est pas un diagnostic reconnu tel quel dans les classifications psychiatriques internationales de référence, qui utilisent plutôt les catégories de trouble de la personnalité narcissique ou de comportements manipulateurs pervers. C’est un terme de vulgarisation, très utilisé dans le langage courant français, qui décrit un ensemble de comportements relationnels problématiques plutôt qu’une entité clinique précisément délimitée.',
