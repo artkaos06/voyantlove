@@ -5,6 +5,7 @@ import { REVES_AMOUR, validateDreamRecord } from '@/lib/revesAmour'
 import { SIGNES_AMOUR, validateSignRecord } from '@/lib/signesAmour'
 import { GLOSSARY_TERMS, validateTermRecord } from '@/lib/glossaire'
 import { HEURES_MIROIRS_FLAMME_JUMELLE, validateHeureMiroirRecord } from '@/lib/heuresMiroirsFlammeJumelle'
+import { CHEMIN_DE_VIE_ENTRIES, validateCheminDeVieRecord } from '@/lib/cheminDeVie'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://www.voyantlove.fr'
@@ -21,6 +22,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { slug: '/crise-couple', priority: 0.9 },
     { slug: '/methodes-voyance', priority: 0.9 },
     { slug: '/voyance-gratuite-amour', priority: 0.9 },
+    { slug: '/chemin-de-vie', priority: 0.9 },
   ]
 
   // Content pages grouped by cluster
@@ -94,6 +96,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/crise-couple/opposition-familiale-couple',
     '/crise-couple/difference-age-couple',
     '/crise-couple/vivre-meme-toit-apres-separation',
+    '/crise-couple/signes-il-ne-sengagera-pas',
     // Méthodes voyance
     '/methodes-voyance/tirage-tarot-amour',
     '/methodes-voyance/oracle-amour',
@@ -125,6 +128,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/voyance-gratuite-amour/voyance-amour-immediate',
     '/voyance-gratuite-amour/tarot-du-jour-amour',
     '/voyance-gratuite-amour/tarot-futur-proche-amour',
+    // Voyance amour
+    '/voyance-amour/retour-affectif',
   ]
 
   // Legal pages (low priority)
@@ -220,6 +225,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // URL is already listed in contentPages above).
     ...HEURES_MIROIRS_FLAMME_JUMELLE.filter((h) => validateHeureMiroirRecord(h).length === 0).map((h) => ({
       url: `${baseUrl}/nouvelle-rencontre/flamme-jumelle/${h.slug}`,
+      lastModified: now,
+      changeFrequency: 'weekly' as const,
+      priority: 0.7,
+    })),
+    ...CHEMIN_DE_VIE_ENTRIES.filter((e) => validateCheminDeVieRecord(e).length === 0).map((e) => ({
+      url: `${baseUrl}/chemin-de-vie/${e.slug}`,
       lastModified: now,
       changeFrequency: 'weekly' as const,
       priority: 0.7,
