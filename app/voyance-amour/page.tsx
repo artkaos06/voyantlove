@@ -361,6 +361,9 @@ export default function VoyanceAmourPage() {
               <li>&bull; Cr&eacute;ation de peur (&laquo;&nbsp;un mal&eacute;fice bloque votre amour&nbsp;&raquo;) pour inciter &agrave; rappeler</li>
               <li>&bull; Absence totale d&rsquo;avis v&eacute;rifiables ou profil sans aucune information personnelle</li>
             </ul>
+            <p className="text-sm text-gray-700 mt-3">
+              Consultez notre <Link href="/voyance-amour/retour-affectif/" className="text-red-700 hover:text-red-900 underline font-semibold">guide complet sur les arnaques au retour affectif</Link> pour reconna&icirc;tre tous les red flags et vous prot&eacute;ger.
+            </p>
           </div>
 
           <p className="text-gray-700">

@@ -49,6 +49,7 @@ import { SIGNES_AMOUR, validateSignRecord, type SignLoveProfile } from '../lib/s
 import { COMPATIBILITY_PAIRS, validatePairRecord, type PairRecord } from '../lib/compatibilitePairs';
 import { GLOSSARY_TERMS, validateTermRecord, validateGlossaryIntegrity, type GlossaryTerm } from '../lib/glossaire';
 import { HEURES_MIROIRS_FLAMME_JUMELLE, validateHeureMiroirRecord, type HeureMiroirEntry } from '../lib/heuresMiroirsFlammeJumelle';
+import { CHEMIN_DE_VIE_ENTRIES, validateCheminDeVieRecord, type CheminDeVieEntry } from '../lib/cheminDeVie';
 
 import { generateStaticParams as dreamParams, generateMetadata as dreamMeta } from '../app/reves-amour/[reve]/page';
 import { generateStaticParams as cardParams, generateMetadata as cardMeta } from '../app/tarot-amour/[carte]/page';
@@ -56,6 +57,7 @@ import { generateStaticParams as signParams, generateMetadata as signMeta } from
 import { generateStaticParams as pairParams, generateMetadata as pairMeta } from '../app/compatibilite-amoureuse/[pair]/page';
 import { generateStaticParams as termParams, generateMetadata as termMeta } from '../app/glossaire/[terme]/page';
 import { generateStaticParams as heureParams, generateMetadata as heureMeta } from '../app/nouvelle-rencontre/flamme-jumelle/[heure]/page';
+import { generateStaticParams as cheminParams, generateMetadata as cheminMeta } from '../app/chemin-de-vie/[number]/page';
 
 import sitemap from '../app/sitemap';
 import {
@@ -182,6 +184,18 @@ const NETWORKS: NetworkConfig<any>[] = [
     paramKey: 'heure',
     staticParams: heureParams(),
     generateMetadata: heureMeta,
+  },
+  {
+    name: 'chemin-de-vie',
+    basePath: '/chemin-de-vie/',
+    records: CHEMIN_DE_VIE_ENTRIES,
+    validate: (r: CheminDeVieEntry) => validateCheminDeVieRecord(r),
+    slugOf: (r: CheminDeVieEntry) => r.slug,
+    titleOf: (r: CheminDeVieEntry) => `Chemin de vie ${r.number} : ${r.titleSuffix}`,
+    bodyOf: (r: CheminDeVieEntry) => r.answerCapsule,
+    paramKey: 'number',
+    staticParams: cheminParams(),
+    generateMetadata: cheminMeta,
   },
 ];
 
