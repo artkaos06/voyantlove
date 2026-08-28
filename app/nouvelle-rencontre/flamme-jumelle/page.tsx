@@ -56,6 +56,7 @@ const config: ContentPageConfig = {
     },
   ],
   related: [
+    { href: '/nouvelle-rencontre/flamme-jumelle/test/', label: 'Test flamme jumelle gratuit par date de naissance' },
     { href: '/nouvelle-rencontre/', label: 'Nouvelle rencontre : toutes nos guidances' },
     { href: '/nouvelle-rencontre/signes-ame-soeur/', label: 'Les signes de l\'âme sœur : 15 indices infaillibles' },
     { href: '/nouvelle-rencontre/trouver-ame-soeur/', label: 'Trouver son âme sœur : guide complet' },
@@ -272,6 +273,19 @@ export default function FlammeJumellePage() {
         <p className="mt-6 text-gray-700">
           Aucune de ces heures ne constitue une preuve sur les sentiments d&apos;une autre personne, et aucune n&apos;annonce de date. Pour confronter ce que vous observez à votre situation réelle, <Link href="/voyance-gratuite-amour/" className="font-medium text-purple-700 underline hover:text-purple-900">une consultation de voyance gratuite en amour</Link> donne un premier éclairage immédiat, sans engagement.
         </p>
+      </section>
+
+      <section className="bg-gradient-to-br from-violet-50 to-purple-50 rounded-xl p-6 mb-8 border-2 border-purple-200">
+        <h3 className="font-bold text-lg text-gray-900 mb-2">Test flamme jumelle par date de naissance</h3>
+        <p className="text-gray-700 text-sm mb-3">
+          Comparez vos deux chemins de vie et d&eacute;couvrez si la num&eacute;rologie d&eacute;tecte une connexion au nombre 11 ou un effet miroir entre vos profils.
+        </p>
+        <Link
+          href="/nouvelle-rencontre/flamme-jumelle/test/"
+          className="inline-block bg-purple-700 text-white px-5 py-2.5 rounded-lg font-medium hover:bg-purple-800 transition text-sm"
+        >
+          Faire le test gratuit
+        </Link>
       </section>
 
       {/* Les 8 Étapes */}
