@@ -67,6 +67,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/nouvelle-rencontre/signes-ame-soeur',
     '/nouvelle-rencontre/nouvelle-relation-amoureuse',
     '/nouvelle-rencontre/flamme-jumelle',
+    '/nouvelle-rencontre/flamme-jumelle/test',
     '/nouvelle-rencontre/amour-apres-40-ans',
     '/nouvelle-rencontre/rencontre-amoureuse-en-ligne',
     '/nouvelle-rencontre/peur-de-aimer-a-nouveau',
