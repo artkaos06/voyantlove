@@ -8,7 +8,7 @@ import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 export const metadata: Metadata = {
   title: 'Voyance gratuite amour en ligne : tirage tarot',
   description: 'Voyance gratuite amour en ligne : tarot, oracle, tarot oui/non et horoscope amoureux. Voyance amoureuse gratuite immédiate, sans engagement ni carte bancaire.',
-  keywords: ['voyance gratuite amour', 'voyance amour gratuite', 'voyance amoureuse gratuite', 'voyance amoureuse gratuite immediate', 'voyance amoureuse gratuite en ligne', 'voyance amour gratuite en ligne', 'voyance gratuite amour en ligne', 'tarot amour gratuit', 'voyance amour gratuite immediate', 'voyance amoureuse', 'voyance en amour'],
+  keywords: ['voyance gratuite amour', 'voyance amour gratuite', 'oracle amour gratuit', 'oracle de l\'amour gratuit', 'voyance amoureuse gratuite', 'voyance amoureuse gratuite immediate', 'voyance amoureuse gratuite en ligne', 'voyance amour gratuite en ligne', 'voyance gratuite amour en ligne', 'tarot amour gratuit', 'voyance amour gratuite immediate', 'voyance amoureuse', 'voyance en amour'],
   alternates: { canonical: 'https://www.voyantlove.fr/voyance-gratuite-amour/' },
 };
 

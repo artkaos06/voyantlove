@@ -4,10 +4,10 @@ import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/C
 
 const config: ContentPageConfig = {
   railsTop: 'boule-de-cristal-amour-cards-top',
-  title: 'Boule de cristal amour : voyance et cristallomancie sentimentale',
-  description: 'Découvrez la boule de cristal appliquée à l\'amour : fonctionnement, symboles perçus, déroulement d\'une séance. Guide complet de la cristallomancie pour vos questions de cœur.',
+  title: 'Boule de cristal gratuite amour : voyance et cristallomancie sentimentale',
+  description: 'Boule de cristal gratuite amour : découvrez la cristallomancie appliquée aux questions sentimentales. Fonctionnement, symboles perçus, déroulement d\'une séance gratuite.',
   url: 'https://www.voyantlove.fr/methodes-voyance/boule-de-cristal-amour/',
-  keywords: ['boule de cristal amour', 'cristallomancie amour', 'voyance boule de cristal', 'voyant boule de cristal amoureux'],
+  keywords: ['boule de cristal gratuite amour', 'boule de cristal amour', 'cristallomancie amour', 'voyance boule de cristal gratuite', 'voyant boule de cristal amoureux'],
   datePublished: '2026-08-06',
   dateModified: '2026-08-06',
   breadcrumb: [
@@ -17,8 +17,8 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: '',
-    h1: 'Boule de cristal amour',
-    subtitle: 'La cristallomancie au service de vos questions sentimentales',
+    h1: 'Boule de cristal gratuite amour',
+    subtitle: 'Cristallomancie gratuite au service de vos questions sentimentales',
     gradient: 'from-blue-800 via-indigo-800 to-violet-900',
     backLink: { href: '/methodes-voyance/', label: 'Retour aux méthodes de voyance' },
     anchors: [

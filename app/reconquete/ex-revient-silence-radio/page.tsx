@@ -4,10 +4,10 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Il/elle me recontacte après le silence radio',
-  description: 'Il ou elle vous recontacte après le silence radio ? Signes qu\'un ex revient, comment réagir, quel message envoyer. Guide complet pour ne pas tout gâcher.',
+  title: 'Il me recontacte après 2 semaines de silence radio : que faire',
+  description: 'Il me recontacte après 2 semaines de silence radio ? Homme qui revient après silence, signes d\'un retour, comment réagir. Guide complet pour ne pas tout gâcher.',
   url: 'https://www.voyantlove.fr/reconquete/ex-revient-silence-radio/',
-  keywords: ['il me recontacte après silence radio', 'elle me recontacte après silence radio', 'ex qui revient après silence radio', 'homme qui revient après silence', 'silence radio reconquête'],
+  keywords: ['il me recontacte après 2 semaines silence', 'il me recontacte après silence radio', 'homme qui revient après silence', 'ex qui revient après silence radio', 'elle me recontacte après silence radio', 'silence radio reconquête'],
   datePublished: '2026-02-09',
   dateModified: '2026-02-09',
   breadcrumb: [
@@ -17,8 +17,8 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: '',
-    h1: 'Il/elle me recontacte après le silence radio',
-    subtitle: 'Signes qu\'un ex revient, comment réagir et quel premier message envoyer',
+    h1: 'Il me recontacte après 2 semaines de silence radio',
+    subtitle: 'Homme qui revient après silence : signes d\'un retour, comment réagir et quel premier message envoyer',
     gradient: 'from-purple-600 via-pink-500 to-rose-500',
     backLink: { href: '/reconquete/', label: 'Retour à la reconquête' },
     anchors: [
