@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: {
     absolute: 'Voyant ou Voyante Amour en Ligne | VoyantLove',
   },
-  description: 'Consultez un voyant ou une voyante spécialisé en amour : reconquête, sentiments, rencontre, rupture. Tarot et clairvoyance, 10 min offertes.',
+  description: 'Voyant amour en ligne : consultez un voyant ou une voyante spécialisé en amour. Reconquête, sentiments, rencontre, rupture. Tarot et clairvoyance, 10 min offertes.',
   alternates: { canonical: 'https://www.voyantlove.fr/' },
 };
 

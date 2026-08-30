@@ -4,10 +4,10 @@ import VoyantRecommendations from '@/components/VoyantRecommendations';
 import ContentPage, { contentMeta, type ContentPageConfig } from '@/components/ContentPage';
 
 const config: ContentPageConfig = {
-  title: 'Communication couple difficile : causes, solutions et guidance voyance',
-  description: 'Communication couple difficile ? Problème de communication dans le couple, dialogue impossible, incompréhension : causes profondes, solutions concrètes et guidance voyance.',
+  title: 'Blocage communication couple : causes, solutions et guidance',
+  description: 'Blocage communication couple ? Problème de communication dans le couple, dialogue impossible : causes profondes du blocage, solutions concrètes et guidance voyance.',
   url: 'https://www.voyantlove.fr/crise-couple/problemes-communication-couple/',
-  keywords: ['communication couple difficile', 'problème de communication couple', 'problème de communication dans le couple', 'dialogue couple', 'quand le dialogue devient impossible', 'améliorer communication couple'],
+  keywords: ['blocage communication couple', 'problème de communication couple', 'communication couple difficile', 'problème de communication dans le couple', 'dialogue couple', 'quand le dialogue devient impossible', 'améliorer communication couple'],
   datePublished: '2026-02-09',
   dateModified: '2026-02-09',
   breadcrumb: [
@@ -17,8 +17,8 @@ const config: ContentPageConfig = {
   ],
   header: {
     emoji: '',
-    h1: 'Communication couple difficile : solutions concrètes',
-    subtitle: 'Communication couple difficile ? Techniques pour reconstruire le dialogue et retrouver la compréhension mutuelle',
+    h1: 'Blocage communication couple : comprendre et débloquer',
+    subtitle: 'Blocage de communication dans le couple ? Techniques pour reconstruire le dialogue et retrouver la compréhension mutuelle',
     gradient: 'from-indigo-600 via-purple-600 to-pink-600',
     backLink: { href: '/crise-couple/', label: 'Retour aux crises de couple' },
     anchors: [

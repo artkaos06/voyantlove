@@ -7,9 +7,9 @@ import VoyantFinalCTA from '@/components/VoyantFinalCTA';
 import OracleDraw from '@/components/OracleDraw';
 
 export const metadata: Metadata = {
-  title: 'Oracle gratuit amour : belline, gé et guidance sentimentale',
-  description: 'Oracle amour gratuit : guidance sentimentale par Oracle Belline, Gé et des Anges. Quel oracle pour votre question amoureuse ?',
-  keywords: ['oracle gratuit amour', 'oracle amour gratuit', 'oracle belline amour gratuit'],
+  title: 'Oracle de l\'amour gratuit : tirage belline, gé et guidance sentimentale',
+  description: 'Oracle de l\'amour gratuit : tirage oracle amour gratuit par Belline, Gé et des Anges. Guidance sentimentale gratuite pour votre question de coeur.',
+  keywords: ['oracle de l\'amour gratuit', 'oracle amour gratuit', 'oracle gratuit amour', 'oracle de l\'amour tirage gratuit', 'oracle belline amour gratuit'],
   alternates: {
     canonical: 'https://www.voyantlove.fr/voyance-gratuite-amour/oracle-gratuit-amour/',
   },
@@ -17,12 +17,12 @@ export const metadata: Metadata = {
 
 export default function OracleGratuitAmourPage() {
   const articleSchema = getArticleSchema({
-    title: 'Oracle gratuit amour : belline, gé et guidance sentimentale',
-    description: 'Oracle amour gratuit : guidance sentimentale par Oracle Belline, Gé et des Anges. Quel oracle pour votre question amoureuse ?',
+    title: 'Oracle de l\'amour gratuit : tirage belline, gé et guidance sentimentale',
+    description: 'Oracle de l\'amour gratuit : tirage oracle amour gratuit par Belline, Gé et des Anges. Guidance sentimentale gratuite pour votre question de coeur.',
     url: 'https://www.voyantlove.fr/voyance-gratuite-amour/oracle-gratuit-amour/',
     datePublished: '2026-03-10',
     dateModified: '2026-03-10',
-    keywords: ['oracle gratuit amour', 'oracle amour gratuit', 'oracle belline amour gratuit'],
+    keywords: ['oracle de l\'amour gratuit', 'oracle amour gratuit', 'oracle gratuit amour', 'oracle de l\'amour tirage gratuit', 'oracle belline amour gratuit'],
   });
 
   const authorSchema = getAuthorSchema();
