@@ -93,7 +93,7 @@ export default function VoyanceDivorceSeparationPage() {
             <div className="bg-white rounded-lg p-6 border-l-4 border-slate-500">
               <h3 className="font-bold text-lg mb-2 text-slate-700">La perspective spirituelle sur la séparation</h3>
               <p className="text-gray-700">
-                Du point de vue spirituel, toutes les relations, y compris celles qui se terminent, ont une raison d'être. Un mariage terminé n'est pas un échec : c'est l'accomplissement d'un cycle, parfois douloureux, mais toujours porteur de croissance. La <strong>voyance séparation couple</strong> peut identifier si votre divorce marque la fin naturelle d'un contrat d'âme, ou s'il résulte d'un blocage karmique qui aurait pu être surmonté. Cette distinction est fondamentale pour votre paix intérieure et votre capacité à avancer sans porter le poids de la culpabilité ou de l'échec.
+                Du point de vue spirituel, toutes les relations, y compris celles qui se terminent, ont une raison d'être. Un mariage terminé n'est pas un échec : c'est l'accomplissement d'un cycle, parfois douloureux, mais toujours porteur de croissance. La <strong>voyance séparation couple</strong> peut identifier si votre divorce marque la fin naturelle d'un <Link href="/glossaire/contrat-ame/" className="text-slate-600 hover:text-slate-800 underline font-medium">contrat d'âme</Link>, ou s'il résulte d'un blocage karmique qui aurait pu être surmonté. Cette distinction est fondamentale pour votre paix intérieure et votre capacité à avancer sans porter le poids de la culpabilité ou de l'échec.
               </p>
             </div>
 

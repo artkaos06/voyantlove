@@ -186,7 +186,7 @@ export default function SauverSonCouplePage() {
             <div className="bg-white rounded-lg p-5 border-l-4 border-emerald-600">
               <h3 className="font-bold mb-2 text-emerald-700 text-lg">Étape 2 : Compréhension des Causes Profondes, La Lune</h3>
               <p className="text-gray-700 mb-2">
-                La Lune invite à explorer les <strong>zones d'ombre</strong> de votre relation. Cette étape consiste à identifier les causes profondes de la crise : besoins non exprimés, blessures d'enfance réactivées, schémas relationnels toxiques hérités, ou <strong>événements déclencheurs</strong> non traités.
+                La Lune invite à explorer les <Link href="/glossaire/ombre-shadow-work/" className="text-emerald-600 hover:text-emerald-800 underline font-medium">zones d'ombre</Link> de votre relation. Cette étape consiste à identifier les causes profondes de la crise : besoins non exprimés, blessures d'enfance réactivées, schémas relationnels toxiques hérités, ou <strong>événements déclencheurs</strong> non traités.
               </p>
               <p className="text-gray-700">
                 <strong>Questions essentielles :</strong> Quels besoins fondamentaux ne sont pas comblés dans cette relation ? Quels patterns familiaux reproduisez-vous inconsciemment ? Quel événement précis a déclenché la <strong>spirale de crise</strong> ? La voyance aide à révéler ces vérités enfouies que la raison seule ne peut atteindre.

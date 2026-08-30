@@ -116,7 +116,7 @@ export default function SignesAmeSoeurPage() {
           <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-lg">
             <h3 className="font-bold text-lg mb-3 text-blue-700">3. Synchronicités Troublantes et Répétées</h3>
             <p className="text-gray-700">
-              Les <strong>coïncidences impossibles</strong> se multiplient : vous pensez à eux et ils appellent, vous tombez sur les mêmes lieux par "hasard", vous découvrez des connexions passées étranges. Les chiffres 11:11, 22:22 apparaissent fréquemment autour de votre relation. Ces synchronicités sont des messages de l'univers confirmant que cette union est orchestrée spirituellement.
+              Les <strong>coïncidences impossibles</strong> se multiplient : vous pensez à eux et ils appellent, vous tombez sur les mêmes lieux par "hasard", vous découvrez des connexions passées étranges. Les chiffres 11:11, 22:22 apparaissent fréquemment autour de votre relation. Ces <Link href="/glossaire/synchronicite-amoureuse/" className="text-blue-600 hover:text-blue-800 underline font-medium">synchronicités</Link> sont des messages de l'univers confirmant que cette union est orchestrée spirituellement.
             </p>
           </div>
 
@@ -376,7 +376,7 @@ export default function SignesAmeSoeurPage() {
           <div className="bg-cyan-50 p-6 rounded-lg border-2 border-cyan-200">
             <h3 className="font-bold text-xl mb-3 text-cyan-700">Contrats d'Âmes et Vies Antérieures</h3>
             <p className="text-gray-700 mb-3">
-              Avant votre naissance, votre âme a passé des <strong>contrats avec d'autres âmes</strong> pour vous rencontrer à des moments précis de votre vie actuelle. Ces contrats définissent le type de relation (romantique, amicale, familiale), les leçons à apprendre, et la durée de l'union.
+              Avant votre naissance, votre âme a passé des <Link href="/glossaire/contrat-ame/" className="text-cyan-600 hover:text-cyan-800 underline font-medium">contrats avec d'autres âmes</Link> pour vous rencontrer à des moments précis de votre vie actuelle. Ces contrats définissent le type de relation (romantique, amicale, familiale), les leçons à apprendre, et la durée de l'union.
             </p>
             <p className="text-gray-700">
               Vos <strong>vies antérieures ensemble</strong> expliquent l'intensité de la reconnaissance instantanée. Vous avez peut-être été époux, parent/enfant, frères d'armes, ou maître/élève dans des incarnations passées. Ces liens persistent à travers les vies jusqu'à accomplissement de la mission commune.
