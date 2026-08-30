@@ -9,7 +9,7 @@ import TarotSpread from '@/components/TarotSpread';
 export const metadata: Metadata = {
   title: 'Tirage gratuit amour célibataire : votre avenir sentimental',
   description: 'Tirage gratuit amour pour célibataires : découvrez quand et comment vous rencontrerez l\'amour selon le tarot et l\'oracle.',
-  keywords: ['tirage gratuit amour celibataire', 'tarot celibataire gratuit', 'voyance gratuite celibataire'],
+  keywords: ['tirage gratuit amour celibataire', 'tirage célibataires', 'tarot celibataire gratuit', 'voyance gratuite celibataire'],
   alternates: {
     canonical: 'https://www.voyantlove.fr/voyance-gratuite-amour/tirage-gratuit-celibataire/',
   },
@@ -22,7 +22,7 @@ export default function TirageGratuitCelibatairePage() {
     url: 'https://www.voyantlove.fr/voyance-gratuite-amour/tirage-gratuit-celibataire/',
     datePublished: '2026-03-10',
     dateModified: '2026-03-10',
-    keywords: ['tirage gratuit amour celibataire', 'tarot celibataire gratuit', 'voyance gratuite celibataire'],
+    keywords: ['tirage gratuit amour celibataire', 'tirage célibataires', 'tarot celibataire gratuit', 'voyance gratuite celibataire'],
   });
 
   const authorSchema = getAuthorSchema();
