@@ -236,7 +236,7 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     terme: 'Contrat d’Âme',
     categorie: 'spiritualite',
     definitionCourte:
-      'Un accord que deux âmes auraient conclu avant leur incarnation pour se rencontrer dans cette vie et s’aider mutuellement à évoluer, en amour comme dans d’autres domaines.',
+      'Le contrat d’âme est un accord que deux âmes auraient conclu avant leur incarnation pour se rencontrer dans cette vie et s’aider mutuellement à évoluer, en amour comme dans d’autres domaines.',
     answerCapsule:
       'Un contrat d’âme désigne, dans les traditions spirituelles contemporaines, un accord conclu entre deux âmes avant même leur naissance, dans lequel elles conviendraient de se retrouver au cours de leur vie terrestre pour s’accompagner dans une évolution précise. En amour, ce concept sert souvent à donner du sens à des rencontres qui semblent trop précises, trop opportunes ou trop marquantes pour relever du seul hasard : une personne apparaît au moment exact où l’on en a besoin, déclenche une transformation profonde, puis parfois s’efface une fois son rôle joué. Un contrat d’âme n’implique pas forcément une histoire d’amour au sens romantique : il peut concerner un parent, un ami, un rival, dès lors que la rencontre a une fonction d’évolution personnelle. Il se distingue de l’amour karmique par son cadre plus large : le karma parle d’une dette à solder, le contrat d’âme d’un accord de collaboration librement consenti avant l’incarnation.',
     explication:
@@ -350,7 +350,7 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     terme: 'Synchronicité (en Amour)',
     categorie: 'spiritualite',
     definitionCourte:
-      'Une coïncidence chargée de sens, comme penser à quelqu’un juste avant qu’il n’appelle, que la voyance amoureuse lit comme un signe plutôt qu’un simple hasard.',
+      'La synchronicité amoureuse est une coïncidence chargée de sens (penser à quelqu’un juste avant qu’il appelle) que la voyance lit comme un signe plutôt qu’un simple hasard.',
     answerCapsule:
       'La synchronicité désigne, selon le concept forgé par le psychiatre Carl Gustav Jung, une coïncidence entre un événement extérieur et un état intérieur qui semble porteuse de sens, sans lien de cause à effet démontrable. En amour, on parle de synchronicité lorsqu’un événement extérieur semble « répondre » exactement à une pensée ou une émotion intime : penser intensément à une personne juste avant qu’elle n’appelle, croiser plusieurs fois par hasard quelqu’un dont on vient de rêver, ou voir se multiplier des signes liés à une personne ou une situation amoureuse précise. La voyance amoureuse s’intéresse à ces coïncidences comme à des indices à décoder plutôt qu’à ignorer, sans pour autant leur accorder une valeur de preuve absolue. Une synchronicité n’annonce pas mécaniquement un événement futur : elle attire l’attention sur quelque chose qui mérite d’être regardé de plus près, souvent une émotion ou une intuition que l’on avait tendance à minimiser.',
     explication:
@@ -1633,7 +1633,7 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     terme: 'Arcane Majeur',
     categorie: 'pratiques-divinatoires',
     definitionCourte:
-      'L’une des 22 cartes fondamentales du tarot, numérotées de 0 à 21, représentant les grands archétypes universels de l’existence humaine, de l’amour à la transformation.',
+      'Un arcane majeur est l’une des 22 cartes fondamentales du tarot, numérotées de 0 à 21, représentant les grands archétypes universels de l’existence humaine, de l’amour à la transformation.',
     answerCapsule:
       'Les arcanes majeurs désignent les vingt-deux premières cartes du tarot, numérotées de zéro (Le Mat) à vingt et un (Le Monde), qui se distinguent des cinquante-six arcanes mineurs par leur portée symbolique plus vaste et plus universelle. Chaque arcane majeur représente un archétype fondamental de l’expérience humaine, Le Bateleur pour le commencement et le potentiel, L’Impératrice pour la fécondité et l’abondance, La Tour pour la rupture brutale et la révélation, Le Monde pour l’accomplissement, que l’on retrouve, sous des formes variées, dans de nombreuses traditions symboliques et mythologiques à travers le monde. Dans un tirage, la présence d’un ou plusieurs arcanes majeurs signale généralement un enjeu de vie important, un tournant significatif, ou une énergie puissante à l’œuvre, tandis que les arcanes mineurs détaillent davantage les circonstances concrètes et quotidiennes. En amour, les arcanes majeurs marquent souvent les grands tournants d’une histoire : rencontre décisive, choix engageant, rupture transformatrice, plutôt que les nuances du quotidien relationnel.',
     explication:
@@ -1903,7 +1903,7 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     terme: 'Attachement Évitant',
     categorie: 'psychologie-amoureuse',
     definitionCourte:
-      'Un style relationnel marqué par une forte valorisation de l’indépendance et un inconfort face à l’intimité émotionnelle trop proche ou trop exigeante.',
+      'L’attachement évitant est un style relationnel marqué par une forte valorisation de l’indépendance et un inconfort face à l’intimité émotionnelle trop proche ou trop exigeante.',
     answerCapsule:
       'L’attachement évitant est l’un des quatre styles d’attachement décrits par la théorie de l’attachement, caractérisé par une forte valorisation de l’indépendance personnelle et un inconfort marqué face à une intimité émotionnelle trop proche ou trop exigeante. Une personne à l’attachement évitant tend à minimiser l’importance des relations affectives dans son discours, à se sentir étouffée par les demandes de proximité de son partenaire, et à prendre de la distance, parfois brutalement, dès qu’une relation devient trop intense ou engageante émotionnellement. Ce style se développerait à la suite d’une éducation où l’expression des besoins émotionnels aurait été peu accueillie ou découragée, amenant l’enfant à apprendre à se suffire à lui-même plutôt qu’à compter sur la disponibilité affective des autres. En amour, une personne évitante peut sembler distante ou peu investie alors même qu’elle éprouve des sentiments réels, sa stratégie de protection consistant précisément à limiter l’expression et la profondeur de cette vulnérabilité affective.',
     explication:
@@ -2018,7 +2018,7 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     terme: 'Pervers Narcissique',
     categorie: 'psychologie-amoureuse',
     definitionCourte:
-      'Une expression courante désignant une personne dont le fonctionnement relationnel repose sur la manipulation, la dévalorisation et le contrôle systématique de son partenaire.',
+      'Le pervers narcissique est une expression courante désignant une personne dont le fonctionnement relationnel repose sur la manipulation, la dévalorisation et le contrôle systématique de son partenaire.',
     answerCapsule:
       'L’expression « pervers narcissique » désigne, dans le langage courant et la littérature de vulgarisation psychologique francophone, une personne dont le fonctionnement relationnel reposerait de façon récurrente sur la manipulation, la dévalorisation progressive et le contrôle de son partenaire, généralement au service d’un besoin de domination et de valorisation de soi. Ce terme, popularisé en France notamment par les travaux du psychiatre Paul-Claude Racamier dans les années 1980 puis largement diffusé dans la culture populaire, ne correspond pas à un diagnostic psychiatrique officiel reconnu tel quel dans les classifications internationales, qui parlent plutôt de trouble de la personnalité narcissique ou de traits pervers manipulateurs. Le profil généralement décrit associe une phase initiale de séduction intense, proche du love bombing, à une dévalorisation progressive de l’estime de soi du partenaire, une inversion fréquente des responsabilités lors des conflits, et un isolement graduel et progressif de la victime vis-à-vis de son entourage familial et amical protecteur.',
     explication:
