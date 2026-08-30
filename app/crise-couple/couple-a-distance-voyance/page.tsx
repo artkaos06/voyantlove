@@ -108,7 +108,7 @@ export default function CoupleADistancePage() {
             <div className="bg-white border-l-4 border-indigo-500 p-5 rounded-lg">
               <h3 className="font-bold text-lg mb-2 text-indigo-700">Le Karma Commun</h3>
               <p className="text-gray-700">
-                Selon la lecture karmique, certains couples vivent leur séparation géographique comme une épreuve karmique délibérée, un test que leurs âmes ont choisi pour mesurer la profondeur de leur engagement. D&apos;autres ont un <strong>karma commun</strong> de voyages et de mobilité qui leur demande de développer une forme d&apos;amour plus libre et moins attaché à la présence physique permanente. Identifier la nature karmique de votre séparation aide à la vivre avec plus de sérénité.
+                Selon la lecture <Link href="/glossaire/amour-karmique/" className="text-indigo-600 hover:text-indigo-800 underline font-medium">karmique</Link>, certains couples vivent leur séparation géographique comme une épreuve karmique délibérée, un test que leurs âmes ont choisi pour mesurer la profondeur de leur engagement. D&apos;autres ont un <strong>karma commun</strong> de voyages et de mobilité qui leur demande de développer une forme d&apos;amour plus libre et moins attaché à la présence physique permanente. Identifier la nature karmique de votre séparation aide à la vivre avec plus de sérénité.
               </p>
             </div>
           </div>
