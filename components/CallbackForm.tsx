@@ -8,13 +8,7 @@ type SubmitState =
   | { kind: 'success'; message: string }
   /** Recoverable error, show inline message, user can edit and retry. */
   | { kind: 'error'; message: string }
-  /**
-   * Provider/API unavailable, show a graceful fallback panel with a
-   * prominent tappable tel: link, since the visitor's intent is clear
-   * (they wanted a callback) and the call path still works regardless
-   * of Goracash API status. Treats failure as a soft redirect, not an
-   * apology.
-   */
+  /** Provider/API unavailable, show a graceful fallback panel with a retry action. */
   | { kind: 'provider_down' };
 
 // Maps Goracash callback_status to French UI copy.
@@ -29,7 +23,7 @@ function successMessage(status: string): string {
     case 'we_try_later':
       return 'Demande enregistrée. Nous essayons à nouveau dans quelques instants.';
     case 'refused_by_provider':
-      return 'Nous n\'avons pas pu valider ce numéro. Merci d\'appeler directement le 01 75 75 45 82.';
+      return 'Nous n\'avons pas pu valider ce numéro. Merci de vérifier votre saisie et de réessayer.';
     default:
       return 'Demande enregistrée.';
   }
@@ -159,18 +153,7 @@ export default function CallbackForm({ source = 'lp-voyant-direct' }: CallbackFo
               Le rappel automatique est momentanément indisponible
             </strong>
             <br />
-            Nos voyants sont toujours disponibles, appelez gratuitement
-            maintenant et profitez de vos 10 minutes offertes.
-          </p>
-          <a
-            href="tel:0175754582"
-            className="inline-flex items-center justify-center gap-2 w-full bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-400 hover:to-emerald-400 text-white px-6 py-4 rounded-xl font-bold text-lg shadow-lg transition-all hover:scale-[1.02]"
-            data-analytics="callback-fallback-tel"
-          >
-            01 75 75 45 82
-          </a>
-          <p className="text-[11px] text-gray-500 mt-3 leading-snug">
-            Appel non surtaxé · 10 minutes offertes · 7j/7 de 9h à 21h
+            Merci de réessayer dans quelques instants.
           </p>
           <button
             type="button"
@@ -178,7 +161,7 @@ export default function CallbackForm({ source = 'lp-voyant-direct' }: CallbackFo
               setState({ kind: 'idle' });
               setPhone('');
             }}
-            className="text-xs text-gray-500 hover:text-gray-700 underline underline-offset-2 mt-3"
+            className="inline-flex items-center justify-center gap-2 w-full bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-500 hover:to-purple-600 text-white px-6 py-4 rounded-xl font-bold text-lg shadow-lg transition-all hover:scale-[1.02]"
           >
             Réessayer le formulaire
           </button>

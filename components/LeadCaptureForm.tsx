@@ -101,23 +101,12 @@ export default function LeadCaptureForm({ source, colorScheme, mode = 'full' }: 
               </div>
             </div>
 
-            {/* Phone CTA, primary */}
-            <div className="text-center mb-4">
-              <a
-                href="tel:0175754582"
-                className="inline-block w-full bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 text-white px-8 py-4 rounded-lg font-bold text-xl transition-all hover:scale-105 hover:shadow-xl text-center"
-              >
-                01 75 75 45 82
-              </a>
-              <p className="text-green-700 font-semibold mt-2 text-sm">10 minutes gratuites • Disponible maintenant</p>
-            </div>
-
-            {/* /consulter CTA with countdown */}
+            {/* /consulter CTA with countdown, primary */}
             <div className="text-center">
               <a
                 href={`/consulter/?ref=${source}-teaser`}
                 onClick={() => window.dataLayer?.push({ event: 'cta_click', cta_label: `consulter-teaser-${source}` })}
-                className={`inline-block ${btnClass} text-white px-6 py-3 rounded-lg font-semibold transition-all hover:scale-105`}
+                className={`inline-block w-full ${btnClass} text-white px-8 py-4 rounded-lg font-bold text-xl transition-all hover:scale-105 hover:shadow-xl text-center`}
               >
                 Choisir mon voyant en ligne →
               </a>
@@ -168,30 +157,15 @@ export default function LeadCaptureForm({ source, colorScheme, mode = 'full' }: 
                 Obtenez des réponses précises et personnalisées sur votre situation
               </p>
               <a
-                href="tel:0175754582"
-                className="inline-block bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 text-white px-8 py-4 rounded-lg font-bold text-xl transition-all hover:scale-105 hover:shadow-xl"
+                href={`/consulter/?ref=${source}-post-prediction`}
+                className={`inline-block ${btnClass} text-white px-8 py-4 rounded-lg font-bold text-xl transition-all hover:scale-105 hover:shadow-xl`}
               >
-                01 75 75 45 82
+                Choisir Mon Voyant en Ligne
               </a>
               <p className="text-green-700 font-semibold mt-3 text-sm">10 minutes gratuites, 1re consultation offerte</p>
-              <p className="text-xs text-gray-500 mt-1">Voyants disponibles maintenant, Appel confidentiel</p>
+              <p className="text-xs text-gray-500 mt-1">Voyants disponibles maintenant</p>
             </div>
           </div>
-        </div>
-
-        <div className="bg-white rounded-xl shadow-lg p-8 mb-8 text-center">
-          <h3 className="text-xl font-bold text-gray-900 mb-3">
-            Ou consultez en ligne
-          </h3>
-          <p className="text-gray-600 mb-4 max-w-xl mx-auto">
-            Choisissez un voyant pour une consultation par chat ou email.
-          </p>
-          <a
-            href={`/consulter/?ref=${source}-post-prediction`}
-            className={`inline-block ${btnClass} text-white px-8 py-3 rounded-lg font-bold transition-all hover:scale-105 hover:shadow-xl`}
-          >
-            Choisir Mon Voyant en Ligne
-          </a>
         </div>
       </div>
     );

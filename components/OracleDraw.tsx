@@ -147,23 +147,6 @@ export default function OracleDraw() {
               Tirer une autre carte
             </button>
           </div>
-
-          <div className="mt-6 rounded-xl border border-gray-200 bg-gray-50 p-5">
-            <p className="font-semibold text-gray-900">Une carte ne dit pas tout</p>
-            <p className="mt-1 text-sm leading-relaxed text-gray-600">
-              Pour une interprétation approfondie de votre situation, un voyant spécialisé en amour
-              reprend cette carte dans votre contexte.
-            </p>
-            <a
-              href="tel:0175754582"
-              data-analytics="oracle-draw-cta"
-              className="mt-4 inline-flex items-center gap-2 rounded-lg bg-purple-700 px-5 py-3 text-base font-semibold text-white transition hover:bg-purple-800"
-            >
-              <Icon name="phone" size={18} />
-              01 75 75 45 82
-            </a>
-            <p className="mt-2 text-xs text-gray-500">10 minutes offertes pour une première consultation</p>
-          </div>
         </div>
       )}
     </div>

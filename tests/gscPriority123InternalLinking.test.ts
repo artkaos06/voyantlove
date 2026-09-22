@@ -33,7 +33,9 @@ test('priority 1: hub links to voyance-amour-immediate with differentiated conte
 
   // Commercial plumbing / routing this task must not touch.
   assert.match(hub, /alternates: \{ canonical: 'https:\/\/www\.voyantlove\.fr\/voyance-gratuite-amour\/' \}/, 'hub canonical must be unchanged');
-  assert.match(hub, /tel:0175754582/, 'phone CTA number must be preserved');
+  // The Goracash phone number was made campaign-exclusive (removed from public
+  // pages) per Saiico's 2026-09-22 authorization; it must not reappear here.
+  assert.doesNotMatch(hub, /0175754582/, 'public phone CTA number must stay removed');
 });
 
 test('priority 1: voyance-amour-immediate opening answer covers immediacy, direct access and online availability without a new canonical or a separate "direct" page', () => {

@@ -197,19 +197,12 @@ export default function VoyanceGratuiteAmourHubPage() {
         </section>
 
         <section className="bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">Voyance amoureuse gratuite immédiate&nbsp;: trois canaux sans rendez-vous</h2>
-          <p className="text-lg font-semibold text-gray-800 mb-4">Une fois les tirages gratuits explorés, trois canaux permettent de consulter un voyant immédiatement, sans inscription&nbsp;: la consultation privée avec minutes offertes, l&apos;audiotel et le tchat SMS.</p>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Voyance amoureuse gratuite immédiate&nbsp;: deux canaux sans rendez-vous</h2>
+          <p className="text-lg font-semibold text-gray-800 mb-4">Une fois les tirages gratuits explorés, deux canaux permettent de consulter un voyant immédiatement, sans inscription&nbsp;: l&apos;audiotel et le tchat SMS.</p>
           <p className="text-gray-700 leading-relaxed mb-6">
-            Chaque canal a un fonctionnement et un tarif différents. Voici les trois options telles qu&apos;elles existent réellement, pour choisir en connaissance de cause. Pour un panorama complet des options de <Link href="/voyance-gratuite-amour/voyance-amour-immediate/" className="text-emerald-700 hover:text-emerald-900 underline font-semibold">voyance amour direct</Link>, des tirages automatiques à l&apos;accès aux voyants en ligne, consultez notre guide dédié.
+            Chaque canal a un fonctionnement et un tarif différents. Voici les options telles qu&apos;elles existent réellement, pour choisir en connaissance de cause. Pour un panorama complet des options de <Link href="/voyance-gratuite-amour/voyance-amour-immediate/" className="text-emerald-700 hover:text-emerald-900 underline font-semibold">voyance amour direct</Link>, des tirages automatiques à l&apos;accès aux voyants en ligne, consultez notre guide dédié.
           </p>
-          <div className="grid md:grid-cols-3 gap-6">
-            <div className="bg-emerald-50 border-2 border-emerald-300 rounded-lg p-6">
-              <h3 className="font-bold text-lg mb-2 text-emerald-800">Consultation Privée</h3>
-              <p className="text-2xl font-bold text-emerald-700 mb-1">10 min offertes</p>
-              <p className="text-gray-700 text-sm mb-3">Puis tarif à la consultation selon le voyant choisi. Numéro non surtaxé, sans inscription obligatoire pour le rappel.</p>
-              <a href="tel:0175754582" className="block text-center bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 rounded-lg transition mb-2">01 75 75 45 82</a>
-              <p className="text-gray-500 text-xs">7j/7 de 9h à 21h · téléphone, chat ou email</p>
-            </div>
+          <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-teal-50 border-2 border-teal-300 rounded-lg p-6">
               <h3 className="font-bold text-lg mb-2 text-teal-800">☎️ Audiotel</h3>
               <p className="text-2xl font-bold text-teal-700 mb-1">0,80&nbsp;€/min</p>

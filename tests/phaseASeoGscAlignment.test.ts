@@ -46,7 +46,9 @@ test('voyance-gratuite-amour: primary page targets the voyance amour / voyance a
   assert.match(source, /href="\/voyance-amour\/"[^>]*>voyance amoureuse<\/Link>/, 'must keep the differentiating internal link to the voyance-amour pillar page');
 
   // Commercial plumbing this task must not touch.
-  assert.match(source, /tel:0175754582/, 'phone CTA number must be preserved');
+  // The Goracash phone number was made campaign-exclusive (removed from public
+  // pages) per Saiico's 2026-09-22 authorization; it must not reappear here.
+  assert.doesNotMatch(source, /0175754582/, 'public phone CTA number must stay removed');
   assert.match(source, /<VoyantQuickCTA topic="voyance-gratuite"/, 'CTA component wiring must be preserved');
 });
 

@@ -61,7 +61,7 @@ export default function NouvelleRencontreHubPage() {
     },
     {
       question: 'Comment puis-je parler à une voyante gratuitement ?',
-      answer: 'VoyantLove propose 10 minutes offertes sur votre première consultation. L\'idée est simple : les voyants sérieux ont confiance en leur don et préfèrent le prouver plutôt que de vous demander de croire sur parole. Ces minutes gratuites vous permettent de tester la connexion et de juger la qualité des ressentis. Un avertissement : méfiez-vous de la voyance "entièrement gratuite sans limite", elle cache presque toujours un audiotel surtaxé ou une collecte de données. Une offre gratuite sérieuse est toujours limitée dans le temps et clairement annoncée. Appelez le 01 75 75 45 82 pour en profiter.',
+      answer: 'VoyantLove propose 10 minutes offertes sur votre première consultation. L\'idée est simple : les voyants sérieux ont confiance en leur don et préfèrent le prouver plutôt que de vous demander de croire sur parole. Ces minutes gratuites vous permettent de tester la connexion et de juger la qualité des ressentis. Un avertissement : méfiez-vous de la voyance "entièrement gratuite sans limite", elle cache presque toujours un audiotel surtaxé ou une collecte de données. Une offre gratuite sérieuse est toujours limitée dans le temps et clairement annoncée. Consultez en ligne pour en profiter.',
     },
     {
       question: 'Combien coûte une consultation avec un voyant ?',
@@ -296,7 +296,7 @@ export default function NouvelleRencontreHubPage() {
             </div>
             <div className="border-b border-gray-200 pb-6">
               <h3 className="text-xl font-bold text-gray-900 mb-3">Comment puis-je parler à une voyante gratuitement ?</h3>
-              <p className="text-gray-700 leading-relaxed"><strong>VoyantLove propose 10 minutes offertes</strong> sur votre première consultation. L'idée est simple : les voyants sérieux ont confiance en leur don et préfèrent le prouver plutôt que de vous demander de croire sur parole. Ces minutes gratuites vous permettent de tester la connexion et de juger la qualité des ressentis. Un avertissement : méfiez-vous de la voyance "entièrement gratuite sans limite", elle cache presque toujours un audiotel surtaxé ou une collecte de données. Une offre gratuite sérieuse est toujours limitée dans le temps. Appelez le <strong>01 75 75 45 82</strong> ou consultez en ligne via notre page <Link href="/consulter/" className="text-cyan-600 hover:text-cyan-800 underline font-medium">/consulter</Link> pour en profiter.</p>
+              <p className="text-gray-700 leading-relaxed"><strong>VoyantLove propose 10 minutes offertes</strong> sur votre première consultation. L'idée est simple : les voyants sérieux ont confiance en leur don et préfèrent le prouver plutôt que de vous demander de croire sur parole. Ces minutes gratuites vous permettent de tester la connexion et de juger la qualité des ressentis. Un avertissement : méfiez-vous de la voyance "entièrement gratuite sans limite", elle cache presque toujours un audiotel surtaxé ou une collecte de données. Une offre gratuite sérieuse est toujours limitée dans le temps. Consultez en ligne via notre page <Link href="/consulter/" className="text-cyan-600 hover:text-cyan-800 underline font-medium">/consulter</Link> pour en profiter.</p>
             </div>
             <div className="pb-6">
               <h3 className="text-xl font-bold text-gray-900 mb-3">Combien coûte une consultation avec un voyant ?</h3>
