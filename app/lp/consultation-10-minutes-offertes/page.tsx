@@ -6,7 +6,7 @@ export const dynamic = 'force-dynamic';
 
 export const metadata: Metadata = {
   title: 'Consultation par téléphone, 10 minutes offertes',
-  description: 'Échangez par téléphone avec un voyant pendant 10 minutes offertes, puis choisissez librement si vous souhaitez continuer.',
+  description: 'Voyance par téléphone : 10 minutes offertes, sans carte bancaire. Ensuite, vous choisissez librement de continuer à 3€/min par CB ou PayPal.',
   robots: {
     index: false,
     follow: false,
@@ -29,18 +29,9 @@ const QUESTIONS = [
 ];
 
 const STEPS = [
-  {
-    title: 'Vous appelez',
-    text: 'Lancez votre consultation directement par téléphone.',
-  },
-  {
-    title: 'Vous échangez pendant 10 minutes offertes',
-    text: 'Expliquez votre situation et posez les questions qui comptent pour vous.',
-  },
-  {
-    title: 'Vous choisissez',
-    text: 'À la fin des 10 minutes, vous décidez librement si vous souhaitez continuer.',
-  },
+  { title: 'Appelez et commencez votre consultation.' },
+  { title: 'Profitez de 10 minutes offertes, sans carte bancaire.' },
+  { title: 'À 10 minutes, arrêtez ou continuez à 3 €/min par CB ou PayPal.' },
 ];
 
 const STYLE = `
@@ -95,23 +86,22 @@ export default async function Consultation10MinutesOffertesPage({
       <section className="cpa68-hero" aria-labelledby="cpa68-title">
         <div className="cpa68-shell">
           <div className="cpa68-brand"><span className="cpa68-heart" aria-hidden="true"></span> VoyantLove</div>
-          <p className="cpa68-eyebrow">CONSULTATION PAR TÉLÉPHONE</p>
-          <h1 id="cpa68-title">Besoin d’y voir plus clair dans votre situation&nbsp;?</h1>
-          <p className="cpa68-lead">Parlez maintenant à un voyant pendant 10 minutes offertes.</p>
+          <p className="cpa68-eyebrow">CONSULTATION DE VOYANCE PAR TÉLÉPHONE</p>
+          <h1 id="cpa68-title">Voyance par téléphone&nbsp;: 10 minutes offertes</h1>
           <p className="cpa68-lead">
-            Bénéficiez de notre offre découverte&nbsp;: 10 premières minutes offertes, puis 3€/min
-            (paiement par CB ou PayPal). Créez votre compte afin d’être mis en relation avec l’un
-            de nos voyants par téléphone.
+            Parlez maintenant à un voyant. Aucune carte bancaire avant la fin des 10 minutes.
+            Ensuite, vous choisissez librement de continuer à 3&nbsp;€/min par CB ou PayPal.
           </p>
           <ul className="cpa68-reassure">
-            <li><span className="cpa68-check" aria-hidden="true">✓</span><span>10 minutes offertes</span></li>
+            <li><span className="cpa68-check" aria-hidden="true">✓</span><span>10 premières minutes offertes</span></li>
             <li><span className="cpa68-check" aria-hidden="true">✓</span><span>Aucune carte bancaire avant la fin des 10 minutes</span></li>
-            <li><span className="cpa68-check" aria-hidden="true">✓</span><span>Vous décidez ensuite si vous souhaitez continuer</span></li>
+            <li><span className="cpa68-check" aria-hidden="true">✓</span><span>Vous décidez librement si vous souhaitez continuer</span></li>
+            <li><span className="cpa68-check" aria-hidden="true">✓</span><span>Puis 3&nbsp;€/min, par CB ou PayPal</span></li>
           </ul>
           <a className="cpa68-cta cpa68-hero-cta" href={offer.telHref} data-cpa68-placement="hero">
-            Appeler maintenant, 10 min offertes
+            Appeler et profiter des 10 min offertes
           </a>
-          <p className="cpa68-micro">Appel téléphonique • Vous restez libre de ne pas continuer après les 10 minutes</p>
+          <p className="cpa68-micro">Sans CB pendant les 10 premières minutes.</p>
           <p className="cpa68-price"><PriceTerms priceDisclosure={offer.priceDisclosure} /></p>
         </div>
       </section>
@@ -137,7 +127,6 @@ export default async function Consultation10MinutesOffertesPage({
               <article className="cpa68-step" key={step.title}>
                 <span className="cpa68-step-number" aria-hidden="true">{index + 1}</span>
                 <h3>{step.title}</h3>
-                <p>{step.text}</p>
               </article>
             ))}
           </div>
