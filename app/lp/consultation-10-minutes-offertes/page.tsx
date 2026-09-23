@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from 'next';
+import Image from 'next/image';
 import AlternativeCpa68Tracker from '@/components/AlternativeCpa68Tracker';
 import { getAlternativeOfferConfig } from '@/lib/alternativeCpa68';
 
@@ -34,25 +35,34 @@ const STEPS = [
   { title: 'À 10 minutes, arrêtez ou continuez à 3 €/min par CB ou PayPal.' },
 ];
 
+const FEATURED_ADVISORS = [
+  { id: '8864', name: 'Sibylle', specialty: 'Voyance sentimentale' },
+  { id: '8062', name: 'Kalinda', specialty: 'Médium intuitive' },
+  { id: '11135', name: 'Ella', specialty: 'Guidance amoureuse' },
+];
+
 const STYLE = `
 .cpa68{--ink:#271943;--purple:#5d3588;--deep:#251441;--rose:#d65182;--cream:#fff9f5;
   overflow-x:hidden;background:var(--cream);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
 .cpa68 *{box-sizing:border-box}.cpa68-shell{width:min(100% - 32px,1080px);margin-inline:auto}
-.cpa68-hero{position:relative;isolation:isolate;padding:52px 0 46px;background:radial-gradient(circle at 85% 12%,rgba(239,176,199.32),transparent 28%),linear-gradient(145deg,#291648 0%,#563078 58%,#713c77 100%);color:#fff}
+.cpa68-hero{position:relative;isolation:isolate;padding:52px 0 46px;background:radial-gradient(circle at 85% 12%,rgba(239,176,199,.14),transparent 28%),linear-gradient(145deg,#291648 0%,#563078 58%,#713c77 100%);color:#fff}
 .cpa68-hero:after{content:'';position:absolute;z-index:-1;inset:auto -60px -90px auto;width:210px;height:210px;border:1px solid rgba(255,255,255.12);border-radius:50%}
 .cpa68-brand{display:flex;align-items:center;gap:8px;margin-bottom:34px;font-size:15px;font-weight:750;letter-spacing:.02em}.cpa68-heart{color:#f3a8c2}
+.cpa68-hero-layout{display:grid;gap:34px}.cpa68-hero-copy{min-width:0}
 .cpa68-eyebrow{margin:0 0 12px;color:#f5c2d4;font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
 .cpa68 h1{max-width:780px;margin:0;font-family:Georgia,'Times New Roman',serif;font-size:clamp(34px,8.7vw,62px);font-weight:600;line-height:1.05;letter-spacing:-.025em}
 .cpa68-lead{max-width:650px;margin:20px 0 26px;color:#f7effa;font-size:18px;line-height:1.55}
 .cpa68-reassure{display:grid;gap:10px;max-width:650px;margin:0 0 28px;padding:0;list-style:none}.cpa68-reassure li{display:flex;align-items:flex-start;gap:10px;font-size:14px;line-height:1.45}.cpa68-check{flex:0 0 22px;display:grid;place-items:center;width:22px;height:22px;border-radius:50%;background:rgba(255,255,255.14);color:#ffd7e5;font-weight:900}
 .cpa68-cta{display:inline-flex;align-items:center;justify-content:center;width:100%;min-height:58px;padding:14px 18px;border:0;border-radius:15px;background:linear-gradient(100deg,#e85c8e,#ed795d);box-shadow:0 10px 28px rgba(28,8,39.3);color:#fff;font-size:16px;font-weight:850;line-height:1.25;text-align:center;text-decoration:none;touch-action:manipulation;transition:transform .16s ease,filter .16s ease}.cpa68-cta:hover{filter:brightness(1.05);transform:translateY(-1px)}.cpa68-cta:focus-visible{outline:3px solid #fff;outline-offset:3px}
 .cpa68-hero-cta{max-width:510px}.cpa68-micro{max-width:560px;margin:11px 0 0;color:rgba(255,255,255.78);font-size:12px;line-height:1.5}.cpa68-price{max-width:610px;margin:14px 0 0;padding:12px 14px;border:1px solid rgba(255,255,255.19);border-radius:12px;background:rgba(20,7,39.2);font-size:12px;line-height:1.5}.cpa68-price strong{color:#fff}.cpa68-price a{color:#fff;text-underline-offset:3px}
+.cpa68-advisors{align-self:center}.cpa68-advisors-title{margin:0 0 12px;color:#f8eaf0;font-size:13px;font-weight:800;letter-spacing:.05em;text-align:center;text-transform:uppercase}.cpa68-advisor-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.cpa68-advisor-card{overflow:hidden;border:1px solid rgba(255,255,255,.25);border-radius:15px;background:rgba(29,12,48,.62);box-shadow:0 12px 30px rgba(20,7,35,.24);text-align:center}.cpa68-advisor-photo{position:relative;aspect-ratio:1/1;overflow:hidden;background:#d7c5df}.cpa68-advisor-photo img{object-fit:cover}.cpa68-advisor-info{padding:9px 5px 10px}.cpa68-advisor-name{display:block;color:#fff;font-size:13px;font-weight:850;line-height:1.2}.cpa68-advisor-specialty{display:block;margin-top:3px;color:#d9cce2;font-size:9px;line-height:1.25}.cpa68-advisors-note{margin:10px auto 0;max-width:290px;color:rgba(255,255,255,.68);font-size:10px;line-height:1.4;text-align:center}
 .cpa68-section{padding:56px 0}.cpa68-section h2{max-width:730px;margin:0 auto 12px;font-family:Georgia,'Times New Roman',serif;font-size:clamp(28px,7.5vw,44px);font-weight:600;line-height:1.12;text-align:center}.cpa68-intro{max-width:650px;margin:0 auto 34px;color:#695d77;line-height:1.65;text-align:center}
 .cpa68-problems{background:#fff}.cpa68-question-grid{display:grid;gap:12px;max-width:800px;margin:auto}.cpa68-question{display:flex;align-items:center;gap:13px;min-height:58px;padding:14px 16px;border:1px solid #eadfec;border-radius:14px;background:#fffcfa;box-shadow:0 5px 18px rgba(71,40,88.05);font-size:15px;font-weight:650}.cpa68-dot{flex:0 0 10px;width:10px;height:10px;border-radius:50%;background:#d65c88;box-shadow:0 0 0 5px #f9e1ea}
 .cpa68-how{background:linear-gradient(180deg,#fff9f5,#f6eff8)}.cpa68-steps{display:grid;gap:16px;max-width:900px;margin:auto}.cpa68-step{position:relative;padding:23px 20px 22px 68px;border:1px solid #e8dbe9;border-radius:18px;background:rgba(255,255,255.82)}.cpa68-step-number{position:absolute;top:20px;left:18px;display:grid;place-items:center;width:36px;height:36px;border-radius:50%;background:#603886;color:#fff;font-family:Georgia,serif;font-size:18px}.cpa68-step h3{margin:0 0 7px;font-size:17px}.cpa68-step p{margin:0;color:#6c6076;font-size:14px;line-height:1.6}
 .cpa68-final{padding:62px 0 96px;background:#2a1749;color:#fff;text-align:center}.cpa68-final h2{max-width:730px;margin:0 auto 14px;font-family:Georgia,'Times New Roman',serif;font-size:clamp(28px,7.5vw,44px);font-weight:600;line-height:1.12}.cpa68-final p{max-width:620px;margin:0 auto 27px;color:#e8ddec;line-height:1.65}.cpa68-final .cpa68-cta{max-width:510px}.cpa68-final-price{max-width:610px;margin:15px auto 0;color:#d9c9df;font-size:12px;line-height:1.55}.cpa68-final-price a{color:#fff;text-underline-offset:3px}.cpa68-legal{max-width:680px;margin:26px auto 0;color:#bbaac3;font-size:11px;line-height:1.55}
 .cpa68-sticky{display:none}
 @media(min-width:700px){.cpa68-shell{width:min(100% - 64px,1080px)}.cpa68-hero{padding:60px 0 64px}.cpa68-question-grid{grid-template-columns:1fr 1fr}.cpa68-question:last-child{grid-column:1/-1}.cpa68-steps{grid-template-columns:repeat(3,1fr)}.cpa68-step{padding:72px 22px 24px}.cpa68-step-number{top:22px;left:22px}}
+@media(min-width:900px){.cpa68-hero-layout{grid-template-columns:minmax(0,1fr) 320px;align-items:center;gap:54px}.cpa68 h1{font-size:clamp(40px,5vw,58px)}.cpa68-advisor-list{grid-template-columns:1fr;gap:11px}.cpa68-advisor-card{display:grid;grid-template-columns:92px 1fr;text-align:left}.cpa68-advisor-photo{aspect-ratio:1/1}.cpa68-advisor-info{display:flex;flex-direction:column;justify-content:center;padding:12px}.cpa68-advisor-name{font-size:15px}.cpa68-advisor-specialty{font-size:11px}.cpa68-advisors-note{text-align:left}}
 @media(max-width:699px){.cpa68{padding-bottom:126px}.cpa68-sticky{position:fixed;z-index:100;right:0;bottom:0;left:0;display:block;padding:8px 12px calc(8px + env(safe-area-inset-bottom));border-top:1px solid #decfe3;background:rgba(255,250,247.97);box-shadow:0 -8px 25px rgba(36,18,55.12);backdrop-filter:blur(10px)}.cpa68-sticky-inner{max-width:520px;margin:auto}.cpa68-sticky .cpa68-cta{min-height:50px;padding:11px 14px;font-size:15px}.cpa68-sticky-terms{display:block;margin:4px 3px 0;color:#594b64;font-size:10px;line-height:1.3;text-align:center;overflow-wrap:anywhere}.cpa68-sticky-terms a{display:inline-block;min-height:20px;padding:2px;color:#4f2f73;font-weight:700}}
 @media(max-width:340px){.cpa68-shell{width:min(100% - 24px,1080px)}.cpa68-hero{padding-top:38px}.cpa68 h1{font-size:32px}.cpa68-lead{font-size:16px}.cpa68-cta{font-size:15px}.cpa68-step{padding-left:62px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.cpa68-cta{transition:none}.cpa68-cta:hover{transform:none}}
@@ -86,23 +96,51 @@ export default async function Consultation10MinutesOffertesPage({
       <section className="cpa68-hero" aria-labelledby="cpa68-title">
         <div className="cpa68-shell">
           <div className="cpa68-brand"><span className="cpa68-heart" aria-hidden="true"></span> VoyantLove</div>
-          <p className="cpa68-eyebrow">CONSULTATION DE VOYANCE PAR TÉLÉPHONE</p>
-          <h1 id="cpa68-title">Voyance par téléphone&nbsp;: 10 minutes offertes</h1>
-          <p className="cpa68-lead">
-            Parlez maintenant à un voyant. Aucune carte bancaire avant la fin des 10 minutes.
-            Ensuite, vous choisissez librement de continuer à 3&nbsp;€/min par CB ou PayPal.
-          </p>
-          <ul className="cpa68-reassure">
-            <li><span className="cpa68-check" aria-hidden="true">✓</span><span>10 premières minutes offertes</span></li>
-            <li><span className="cpa68-check" aria-hidden="true">✓</span><span>Aucune carte bancaire avant la fin des 10 minutes</span></li>
-            <li><span className="cpa68-check" aria-hidden="true">✓</span><span>Vous décidez librement si vous souhaitez continuer</span></li>
-            <li><span className="cpa68-check" aria-hidden="true">✓</span><span>Puis 3&nbsp;€/min, par CB ou PayPal</span></li>
-          </ul>
-          <a className="cpa68-cta cpa68-hero-cta" href={offer.telHref} data-cpa68-placement="hero">
-            Appeler et profiter des 10 min offertes
-          </a>
-          <p className="cpa68-micro">Sans CB pendant les 10 premières minutes.</p>
-          <p className="cpa68-price"><PriceTerms priceDisclosure={offer.priceDisclosure} /></p>
+          <div className="cpa68-hero-layout">
+            <div className="cpa68-hero-copy">
+              <p className="cpa68-eyebrow">CONSULTATION DE VOYANCE PAR TÉLÉPHONE</p>
+              <h1 id="cpa68-title">Voyance par téléphone&nbsp;: 10 minutes offertes</h1>
+              <p className="cpa68-lead">
+                Parlez maintenant à un voyant. Aucune carte bancaire avant la fin des 10 minutes.
+                Ensuite, vous choisissez librement de continuer à 3&nbsp;€/min par CB ou PayPal.
+              </p>
+              <ul className="cpa68-reassure">
+                <li><span className="cpa68-check" aria-hidden="true">✓</span><span>10 premières minutes offertes</span></li>
+                <li><span className="cpa68-check" aria-hidden="true">✓</span><span>Aucune carte bancaire avant la fin des 10 minutes</span></li>
+                <li><span className="cpa68-check" aria-hidden="true">✓</span><span>Vous décidez librement si vous souhaitez continuer</span></li>
+                <li><span className="cpa68-check" aria-hidden="true">✓</span><span>Puis 3&nbsp;€/min, par CB ou PayPal</span></li>
+              </ul>
+              <a className="cpa68-cta cpa68-hero-cta" href={offer.telHref} data-cpa68-placement="hero">
+                Appeler et profiter des 10 min offertes
+              </a>
+              <p className="cpa68-micro">Sans CB pendant les 10 premières minutes.</p>
+              <p className="cpa68-price"><PriceTerms priceDisclosure={offer.priceDisclosure} /></p>
+            </div>
+
+            <aside className="cpa68-advisors" aria-label="Voyants partenaires">
+              <p className="cpa68-advisors-title">Nos voyants partenaires</p>
+              <div className="cpa68-advisor-list">
+                {FEATURED_ADVISORS.map((advisor, index) => (
+                  <article className="cpa68-advisor-card" key={advisor.id}>
+                    <div className="cpa68-advisor-photo">
+                      <Image
+                        src={`https://www.monsitevoyance.com/vignaff/${advisor.id}.jpg`}
+                        alt={`Portrait de ${advisor.name}`}
+                        fill
+                        sizes="(min-width: 900px) 92px, 30vw"
+                        priority={index === 0}
+                      />
+                    </div>
+                    <div className="cpa68-advisor-info">
+                      <span className="cpa68-advisor-name">{advisor.name}</span>
+                      <span className="cpa68-advisor-specialty">{advisor.specialty}</span>
+                    </div>
+                  </article>
+                ))}
+              </div>
+              <p className="cpa68-advisors-note">Profils de notre réseau. Le voyant qui répond dépend des disponibilités.</p>
+            </aside>
+          </div>
         </div>
       </section>
 
